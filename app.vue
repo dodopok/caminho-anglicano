@@ -1,8 +1,13 @@
 <template>
+  <Analytics />
   <div>
     <NuxtPage />
   </div>
 </template>
+
+<script setup lang="ts">
+import { Analytics } from '@vercel/analytics/vue';
+</script>
 
 <style>
 /* CSS crítico inline para prevenir FOUC */
