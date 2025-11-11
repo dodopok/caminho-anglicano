@@ -23,6 +23,12 @@ NUXT_PUBLIC_GOOGLE_MAPS_API_KEY=sua-chave-aqui
 3. Cole o conteúdo de `supabase-schema.sql`
 4. Clique em **RUN**
 
+**Opcional - Adicionar igrejas de teste:**
+
+5. Cole o conteúdo de `seed-churches.sql`
+6. Clique em **RUN**
+7. Agora você tem 10 igrejas de exemplo para testar!
+
 ## 3️⃣ Inicie o Servidor
 
 ```bash

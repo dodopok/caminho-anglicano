@@ -197,6 +197,7 @@ Configure o domínio `caminhoanglicano.com.br` nas configurações do seu proved
 - **IEAB**: Verde (#10B981)
 - **IECB**: Âmbar (#F59E0B)
 - **IARB**: Vermelho (#EF4444)
+- **REB**: Roxo (#8B5CF6)
 
 ## 🔮 Próximas Melhorias Sugeridas
 

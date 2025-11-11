@@ -56,6 +56,15 @@ Isso criará as seguintes tabelas:
 - `church_submissions` - Submissões individuais pendentes de revisão
 - `bulk_church_submissions` - Submissões em massa pendentes de revisão
 
+**Opcional - Adicionar dados de teste:**
+
+Para testar o sistema com 10 igrejas de exemplo, execute também:
+
+```sql
+-- No Supabase SQL Editor
+-- Cole o conteúdo de seed-churches.sql
+```
+
 ### 4. Configurar Google Maps API
 
 1. Acesse o [Google Cloud Console](https://console.cloud.google.com/)

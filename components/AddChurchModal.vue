@@ -20,6 +20,7 @@ const jurisdictions: { value: Jurisdiction | 'other'; label: string }[] = [
   { value: 'IEAB', label: 'IEAB - Igreja Episcopal Anglicana do Brasil' },
   { value: 'IECB', label: 'IECB - Igreja Episcopal Carismática do Brasil' },
   { value: 'IARB', label: 'IARB - Igreja Anglicana Reformada do Brasil' },
+  { value: 'REB', label: 'REB - Rede Evangélica Brasileira' },
   { value: 'other', label: 'Outra (especifique abaixo)' }
 ]
 

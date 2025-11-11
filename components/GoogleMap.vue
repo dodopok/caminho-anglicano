@@ -20,7 +20,8 @@ const jurisdictionColors: Record<Jurisdiction, string> = {
   IAB: '#3B82F6',
   IEAB: '#10B981',
   IECB: '#F59E0B',
-  IARB: '#EF4444'
+  IARB: '#EF4444',
+  REB: '#8B5CF6'
 }
 
 function loadGoogleMapsScript(): Promise<void> {

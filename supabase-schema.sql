@@ -8,7 +8,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE TABLE IF NOT EXISTS churches (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   name TEXT NOT NULL,
-  jurisdiction TEXT NOT NULL CHECK (jurisdiction IN ('IAB', 'IEAB', 'IECB', 'IARB')),
+  jurisdiction TEXT NOT NULL CHECK (jurisdiction IN ('IAB', 'IEAB', 'IECB', 'IARB', 'REB')),
   address TEXT NOT NULL,
   city TEXT NOT NULL,
   state TEXT NOT NULL,

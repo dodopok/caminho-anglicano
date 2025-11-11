@@ -1,4 +1,4 @@
-export type Jurisdiction = 'IAB' | 'IEAB' | 'IECB' | 'IARB'
+export type Jurisdiction = 'IAB' | 'IEAB' | 'IECB' | 'IARB' | 'REB'
 
 export interface ChurchSchedule {
   day: string
