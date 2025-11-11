@@ -1,10 +1,44 @@
 <script setup lang="ts">
 import type { Church, ChurchFilters } from '~/types/church'
 
+const siteUrl = 'https://caminhoanglicano.com.br' // Atualize com sua URL de produção
+
+useSeoMeta({
+  title: 'Localizador de Igrejas Anglicanas no Brasil - Caminho Anglicano',
+  description: 'Encontre igrejas anglicanas perto de você em todo o Brasil. Busque por localização, jurisdição ou endereço. Veja horários de culto, pastores e informações de contato.',
+  ogTitle: 'Localizador de Igrejas Anglicanas no Brasil - Caminho Anglicano',
+  ogDescription: 'Encontre igrejas anglicanas perto de você em todo o Brasil. Busque por localização, jurisdição ou endereço.',
+  ogImage: `${siteUrl}/og-image-localizador.png`,
+  ogUrl: `${siteUrl}/localizador`,
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Localizador de Igrejas Anglicanas no Brasil',
+  twitterDescription: 'Encontre igrejas anglicanas perto de você em todo o Brasil. Busque por localização, jurisdição ou endereço.',
+  twitterImage: `${siteUrl}/og-image-localizador.png`,
+})
+
 useHead({
-  title: 'Localizador de Igrejas - Caminho Anglicano',
-  meta: [
-    { name: 'description', content: 'Encontre igrejas anglicanas perto de você em todo o Brasil' }
+  link: [
+    { rel: 'canonical', href: `${siteUrl}/localizador` }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebApplication',
+        name: 'Localizador de Igrejas Anglicanas',
+        url: `${siteUrl}/localizador`,
+        description: 'Encontre igrejas anglicanas em todo o Brasil com mapa interativo, filtros por jurisdição e busca por proximidade.',
+        applicationCategory: 'LifestyleApplication',
+        operatingSystem: 'All',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'BRL'
+        }
+      })
+    }
   ]
 })
 

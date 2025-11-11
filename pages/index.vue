@@ -1,8 +1,40 @@
 <script setup lang="ts">
+const siteUrl = 'https://caminhoanglicano.com.br' // Atualize com sua URL de produção
+
+useSeoMeta({
+  title: 'Caminho Anglicano - Portal da Comunidade Anglicana Brasileira',
+  description: 'Encontre igrejas anglicanas em todo o Brasil. Portal de recursos, serviços e conexão para a comunidade anglicana brasileira.',
+  ogTitle: 'Caminho Anglicano - Portal da Comunidade Anglicana Brasileira',
+  ogDescription: 'Encontre igrejas anglicanas em todo o Brasil. Portal de recursos, serviços e conexão para a comunidade anglicana brasileira.',
+  ogImage: `${siteUrl}/og-image.png`,
+  ogUrl: siteUrl,
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Caminho Anglicano - Portal da Comunidade Anglicana Brasileira',
+  twitterDescription: 'Encontre igrejas anglicanas em todo o Brasil. Portal de recursos, serviços e conexão para a comunidade anglicana brasileira.',
+  twitterImage: `${siteUrl}/og-image.png`,
+})
+
 useHead({
-  title: 'Caminho Anglicano',
-  meta: [
-    { name: 'description', content: 'Portal de recursos e serviços para a comunidade anglicana brasileira' }
+  link: [
+    { rel: 'canonical', href: siteUrl }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Caminho Anglicano',
+        url: siteUrl,
+        description: 'Portal de recursos e serviços para a comunidade anglicana brasileira',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: `${siteUrl}/localizador?q={search_term_string}`,
+          'query-input': 'required name=search_term_string'
+        }
+      })
+    }
   ]
 })
 </script>
