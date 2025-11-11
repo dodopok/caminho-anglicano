@@ -1,74 +1,50 @@
 import type { Jurisdiction } from '~/types/church'
 
+// Estado global compartilhado
+const jurisdictions = ref<Jurisdiction[]>([])
+const isLoaded = ref(false)
+
 export function useJurisdictions() {
-  const { $supabase } = useNuxtApp()
-
   async function fetchJurisdictions(): Promise<Jurisdiction[]> {
+    // Se já carregou, retorna do cache
+    if (isLoaded.value && jurisdictions.value.length > 0) {
+      return jurisdictions.value
+    }
+
     try {
-      const { data, error } = await ($supabase as any)
-        .from('jurisdictions')
-        .select('*')
-        .eq('active', true)
-        .order('display_order')
-
-      if (error) {
-        throw error
-      }
-
-      return (data || []).map((row: any) => ({
-        id: row.id,
-        slug: row.slug,
-        name: row.name,
-        fullName: row.full_name,
-        color: row.color,
-        description: row.description,
-        website: row.website,
-        active: row.active,
-        displayOrder: row.display_order,
-        createdAt: row.created_at,
-        updatedAt: row.updated_at
-      }))
+      const data = await $fetch<Jurisdiction[]>('/api/jurisdictions')
+      jurisdictions.value = data
+      isLoaded.value = true
+      return data
     } catch (error) {
       console.error('Error fetching jurisdictions:', error)
       throw error
     }
   }
 
-  async function fetchJurisdictionById(id: string): Promise<Jurisdiction | null> {
-    try {
-      const { data, error } = await ($supabase as any)
-        .from('jurisdictions')
-        .select('*')
-        .eq('id', id)
-        .single()
+  function getJurisdictionById(id: string): Jurisdiction | undefined {
+    return jurisdictions.value.find(j => j.id === id)
+  }
 
-      if (error) {
-        throw error
-      }
+  function getJurisdictionBySlug(slug: string): Jurisdiction | undefined {
+    return jurisdictions.value.find(j => j.slug === slug)
+  }
 
-      if (!data) return null
+  function getJurisdictionColor(id: string): string {
+    return getJurisdictionById(id)?.color || '#6B7280'
+  }
 
-      return {
-        id: data.id,
-        slug: data.slug,
-        name: data.name,
-        fullName: data.full_name,
-        color: data.color,
-        description: data.description,
-        website: data.website,
-        active: data.active,
-        displayOrder: data.display_order,
-        createdAt: data.created_at,
-        updatedAt: data.updated_at
-      }
-    } catch (error) {
-      console.error('Error fetching jurisdiction:', error)
-      throw error
-    }
+  function getJurisdictionName(id: string): string {
+    return getJurisdictionById(id)?.name || ''
   }
 
   return {
+    jurisdictions: readonly(jurisdictions),
+    isLoaded: readonly(isLoaded),
     fetchJurisdictions,
-    fetchJurisdictionById
+    getJurisdictionById,
+    getJurisdictionBySlug,
+    getJurisdictionColor,
+    getJurisdictionName
   }
 }

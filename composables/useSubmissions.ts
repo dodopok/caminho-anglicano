@@ -15,34 +15,14 @@ interface ChurchSubmissionInput {
 }
 
 export function useSubmissions() {
-  const { $supabase } = useNuxtApp()
-
   async function submitChurch(data: ChurchSubmissionInput): Promise<ChurchSubmission> {
     try {
-      const { data: submission, error } = await ($supabase as any)
-        .from('church_submissions')
-        .insert({
-          jurisdiction: data.jurisdiction,
-          name: data.name,
-          address: data.address,
-          schedules: data.schedules,
-          description: data.description,
-          pastors: data.pastors,
-          responsible_email: data.responsibleEmail,
-          website: data.website,
-          instagram: data.instagram,
-          youtube: data.youtube,
-          spotify: data.spotify,
-          status: 'pending'
-        })
-        .select()
-        .single()
+      const response = await $fetch<{ success: boolean; data: ChurchSubmission }>('/api/submissions/church', {
+        method: 'POST',
+        body: data
+      })
 
-      if (error) {
-        throw error
-      }
-
-      return submission as ChurchSubmission
+      return response.data
     } catch (error) {
       console.error('Error submitting church:', error)
       throw error
@@ -51,20 +31,12 @@ export function useSubmissions() {
 
   async function submitBulkChurches(bulkData: string): Promise<BulkChurchSubmission> {
     try {
-      const { data: submission, error } = await ($supabase as any)
-        .from('bulk_church_submissions')
-        .insert({
-          bulk_data: bulkData,
-          status: 'pending'
-        })
-        .select()
-        .single()
+      const response = await $fetch<{ success: boolean; data: BulkChurchSubmission }>('/api/submissions/bulk', {
+        method: 'POST',
+        body: { bulkData }
+      })
 
-      if (error) {
-        throw error
-      }
-
-      return submission as BulkChurchSubmission
+      return response.data
     } catch (error) {
       console.error('Error submitting bulk churches:', error)
       throw error

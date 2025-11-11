@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Church, Jurisdiction, ChurchFilters } from '~/types/church'
+import type { Church, ChurchFilters } from '~/types/church'
 
 useHead({
   title: 'Localizador de Igrejas - Caminho Anglicano',
@@ -9,12 +9,17 @@ useHead({
 })
 
 const { fetchChurches } = useChurches()
-const { fetchJurisdictions } = useJurisdictions()
+const { 
+  jurisdictions, 
+  fetchJurisdictions, 
+  getJurisdictionById,
+  getJurisdictionColor,
+  getJurisdictionName 
+} = useJurisdictions()
 const { geocodePostalCode, geocodeAddress } = useGeocoding()
 
 const churches = ref<Church[]>([])
 const filteredChurches = ref<Church[]>([])
-const jurisdictions = ref<Jurisdiction[]>([])
 const selectedChurchId = ref<string | null>(null)
 const isLoading = ref(true)
 const errorMessage = ref('')
@@ -31,14 +36,6 @@ const isAddChurchTypeModalOpen = ref(false)
 const isAddChurchModalOpen = ref(false)
 const isAddBulkModalOpen = ref(false)
 const isSidebarOpen = ref(false)
-
-async function loadJurisdictions() {
-  try {
-    jurisdictions.value = await fetchJurisdictions()
-  } catch (error) {
-    console.error('Error loading jurisdictions:', error)
-  }
-}
 
 async function loadChurches() {
   isLoading.value = true
@@ -258,7 +255,7 @@ function formatSchedules(schedules: any[]): string {
 }
 
 function getJurisdictionBadgeClass(jurisdictionId: string): string {
-  const jurisdiction = jurisdictions.value.find(j => j.id === jurisdictionId)
+  const jurisdiction = getJurisdictionById(jurisdictionId)
   if (!jurisdiction) return 'bg-gray-100 text-gray-700'
 
   // Convert hex color to Tailwind classes
@@ -273,15 +270,11 @@ function getJurisdictionBadgeClass(jurisdictionId: string): string {
   return colorMap[jurisdiction.color] || 'bg-gray-100 text-gray-700'
 }
 
-function getJurisdictionName(jurisdictionId: string): string {
-  return jurisdictions.value.find(j => j.id === jurisdictionId)?.name || ''
-}
-
 watch(() => filters.value.jurisdictionId, applyFilters)
 watch(() => filters.value.searchQuery, applyFilters)
 
 onMounted(async () => {
-  await loadJurisdictions()
+  await fetchJurisdictions()
   await loadChurches()
 })
 </script>

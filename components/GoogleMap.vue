@@ -13,15 +13,12 @@ const emit = defineEmits<{
 }>()
 
 const config = useRuntimeConfig()
+const { getJurisdictionById, getJurisdictionColor } = useJurisdictions()
 const mapContainer = ref<HTMLElement | null>(null)
 const mapInstance = ref<any>(null)
 const markers = ref<any[]>([])
 const userMarker = ref<any>(null)
 const infoWindow = ref<any>(null)
-
-function getJurisdictionColor(church: Church): string {
-  return church.jurisdiction?.color || '#6B7280'
-}
 
 function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
   const earthRadiusKm = 6371
@@ -48,8 +45,9 @@ function formatSchedules(schedules: ChurchSchedule[]): string {
 }
 
 function createInfoWindowContent(church: Church): string {
-  const jurisdictionColor = getJurisdictionColor(church)
-  const jurisdictionName = church.jurisdiction?.name || ''
+  const jurisdiction = getJurisdictionById(church.jurisdictionId)
+  const jurisdictionColor = jurisdiction?.color || '#6B7280'
+  const jurisdictionName = jurisdiction?.name || ''
 
   let socialMediaHtml = ''
   if (church.socialMedia) {
@@ -266,7 +264,7 @@ function updateMarkers() {
       icon: {
         path: google.maps.SymbolPath.CIRCLE,
         scale: 8,
-        fillColor: getJurisdictionColor(church),
+        fillColor: getJurisdictionColor(church.jurisdictionId),
         fillOpacity: 0.9,
         strokeColor: '#ffffff',
         strokeWeight: 2
