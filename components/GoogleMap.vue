@@ -337,14 +337,10 @@ watch(() => props.selectedChurchId, (newId) => {
     const marker = markers.value[markerIndex]
 
     if (marker && infoWindow.value) {
-      // Open InfoWindow at the marker
+      // Open InfoWindow at the marker without panning or zooming
       infoWindow.value.setContent(createInfoWindowContent(church))
       infoWindow.value.open(mapInstance.value, marker)
     }
-
-    // Pan to church and zoom
-    mapInstance.value.panTo({ lat: church.latitude, lng: church.longitude })
-    mapInstance.value.setZoom(15)
   }
 })
 

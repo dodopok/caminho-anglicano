@@ -10,6 +10,34 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss'],
 
+  // Configuração do Tailwind
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tailwind.config',
+    exposeConfig: false,
+    viewer: true,
+  },
+
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'pt-BR'
+      },
+      link: [
+        // Preconnect para Google Fonts
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+      ]
+    }
+  },
+
+  // Otimizações de build para CSS
+  vite: {
+    css: {
+      devSourcemap: false
+    }
+  },
+
   runtimeConfig: {
     // Chaves privadas do servidor
     supabaseServiceKey: process.env.SUPABASE_SERVICE_KEY,
