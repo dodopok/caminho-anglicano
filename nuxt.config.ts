@@ -8,5 +8,13 @@ export default defineNuxtConfig({
     typeCheck: true
   },
 
-  modules: ['@nuxt/eslint']
+  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss'],
+
+  runtimeConfig: {
+    public: {
+      supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL,
+      supabaseAnonKey: process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY,
+      googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY
+    }
+  }
 })
