@@ -388,7 +388,7 @@ onMounted(async () => {
         <!-- Results Header -->
         <div class="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
           <span class="text-sm text-gray-600">
-            {{ filteredChurches.length }} igreja(s) encontrada(s)
+            {{ churches.length }} igreja(s) cadastrada(s)
           </span>
           <button
             type="button"
