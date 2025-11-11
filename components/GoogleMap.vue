@@ -56,7 +56,7 @@ function createInfoWindowContent(church: Church): string {
       links.push(`<a href="${church.socialMedia.website}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">Site</a>`)
     }
     if (church.socialMedia.instagram) {
-      links.push(`<a href="${church.socialMedia.instagram}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">Instagram</a>`)
+      links.push(`<a href="https://instagram.com/${church.socialMedia.instagram}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">Instagram</a>`)
     }
     if (church.socialMedia.youtube) {
       links.push(`<a href="${church.socialMedia.youtube}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">YouTube</a>`)
