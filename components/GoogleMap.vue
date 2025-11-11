@@ -15,7 +15,7 @@ const emit = defineEmits<{
 const config = useRuntimeConfig()
 const { getJurisdictionById, getJurisdictionColor } = useJurisdictions()
 const mapContainer = ref<HTMLElement | null>(null)
-const mapInstance = ref<any>(null)
+const mapInstance = shallowRef<any>(null)
 const markers = ref<any[]>([])
 const userMarker = ref<any>(null)
 const infoWindow = ref<any>(null)
@@ -210,8 +210,11 @@ async function initializeMap() {
       zoom: 4,
       mapTypeControl: false,
       streetViewControl: false,
-      fullscreenControl: true
+      fullscreenControl: true,
+      mapId: '15c5fc6af6a2c5bb28486504' // Using demo Map ID - AdvancedMarkerElement requires a valid Map ID
     })
+    
+    console.log('Map initialized with mapId:', 'DEMO_MAP_ID')
 
     // Create InfoWindow instance
     infoWindow.value = new google.maps.InfoWindow()
@@ -230,29 +233,26 @@ function updateUserMarker() {
 
   // Remove existing user marker
   if (userMarker.value) {
-    userMarker.value.setMap(null)
+    userMarker.value.map = null // AdvancedMarkerElement uses .map instead of .setMap()
     userMarker.value = null
   }
 
   // Add new user marker if location is provided
   if (props.userLocation) {
-    // Create a custom person icon using SVG path
-    const personIcon = {
-      // SVG path for a person icon
-      path: 'M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM12 7C14.2 7 16 8.8 16 11V14H8V11C8 8.8 9.8 7 12 7Z',
-      fillColor: '#4F46E5',
-      fillOpacity: 1,
-      strokeColor: '#ffffff',
-      strokeWeight: 2,
-      scale: 1.5,
-      anchor: new google.maps.Point(12, 16) // Center the icon
-    }
+    // Create a custom element for user marker
+    const userPin = document.createElement('div')
+    userPin.innerHTML = `
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="#4F46E5" stroke="#ffffff" stroke-width="2"/>
+        <path d="M12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8ZM12 13C14.2 13 16 14.8 16 17V18H8V17C8 14.8 9.8 13 12 13Z" fill="#ffffff"/>
+      </svg>
+    `
 
-    userMarker.value = new google.maps.Marker({
+    userMarker.value = new google.maps.marker.AdvancedMarkerElement({
       position: { lat: props.userLocation.lat, lng: props.userLocation.lng },
       map: mapInstance.value,
       title: 'Você está aqui',
-      icon: personIcon,
+      content: userPin,
       zIndex: 1000
     })
   }
@@ -264,11 +264,9 @@ function updateMarkers() {
   const google = (window as any).google
   if (!google?.maps) return
 
-  // Remove all existing markers more explicitly
+  // Remove all existing markers (AdvancedMarkerElement uses different API)
   markers.value.forEach((marker: any) => {
-    google.maps.event.clearInstanceListeners(marker)
-    marker.setVisible(false)
-    marker.setMap(null)
+    marker.map = null // Remove from map
   })
   markers.value.length = 0 // Clear the array
 
@@ -293,40 +291,75 @@ function updateMarkers() {
   }
 
   // Create markers only for filtered churches
-  props.churches.forEach((church) => {
-    const marker = new google.maps.Marker({
-      position: { lat: church.latitude, lng: church.longitude },
-      map: mapInstance.value,
-      title: church.name,
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        scale: 8,
-        fillColor: getJurisdictionColor(church.jurisdictionId),
-        fillOpacity: 0.9,
-        strokeColor: '#ffffff',
-        strokeWeight: 2
-      },
-      optimized: false // Force re-render
-    })
-
-    marker.addListener('click', () => {
-      // Open InfoWindow with church details
-      if (infoWindow.value) {
-        infoWindow.value.setContent(createInfoWindowContent(church))
-        infoWindow.value.open(mapInstance.value, marker)
+  console.log('Creating markers for', props.churches.length, 'churches')
+  console.log('Map instance:', mapInstance.value)
+  console.log('Google maps marker available:', google.maps.marker)
+  
+  props.churches.forEach((church, index) => {
+    try {
+      const lat = church.latitude
+      const lng = church.longitude
+      
+      // Validate coordinates
+      if (!lat || !lng || isNaN(lat) || isNaN(lng)) {
+        console.warn(`Invalid coordinates for ${church.name}:`, lat, lng)
+        return
       }
 
-      // Also emit selectChurch event for sidebar highlighting
-      emit('selectChurch', church.id)
-    })
+      // Create a custom pin element with color
+      const pinElement = new google.maps.marker.PinElement({
+        background: getJurisdictionColor(church.jurisdictionId),
+        borderColor: '#ffffff',
+        glyphColor: '#ffffff',
+        scale: 0.6,
+        glyph: ''
+      })
 
-    markers.value.push(marker)
+      const marker = new google.maps.marker.AdvancedMarkerElement({
+        position: { lat, lng },
+        map: mapInstance.value,
+        title: church.name,
+        content: pinElement.element,
+        gmpClickable: true
+      })
 
-    // Only extend bounds with churches if no user location (show all churches)
-    if (!props.userLocation) {
-      bounds.extend(marker.getPosition())
+      if (index === 0) {
+        console.log('First marker details:', {
+          position: marker.position,
+          map: marker.map,
+          content: marker.content,
+          title: marker.title
+        })
+      }
+
+      // Use google.maps.event.addListener for AdvancedMarkerElement
+      google.maps.event.addListener(marker, 'click', () => {
+        // Open InfoWindow with church details
+        if (infoWindow.value) {
+          infoWindow.value.setContent(createInfoWindowContent(church))
+          // For AdvancedMarkerElement, use position instead of anchor
+          infoWindow.value.open({
+            map: mapInstance.value,
+            anchor: marker
+          })
+        }
+
+        // Also emit selectChurch event for sidebar highlighting
+        emit('selectChurch', church.id)
+      })
+
+      markers.value.push(marker)
+
+      // Only extend bounds with churches if no user location (show all churches)
+      if (!props.userLocation) {
+        bounds.extend({ lat, lng })
+      }
+    } catch (error) {
+      console.error(`Error creating marker for ${church.name}:`, error)
     }
   })
+  
+  console.log('Total markers created:', markers.value.length)
 
   updateUserMarker()
 
