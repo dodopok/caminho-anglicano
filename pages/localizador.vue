@@ -30,6 +30,7 @@ const filters = ref<ChurchFilters>({
 const isAddChurchTypeModalOpen = ref(false)
 const isAddChurchModalOpen = ref(false)
 const isAddBulkModalOpen = ref(false)
+const isSidebarOpen = ref(false)
 
 async function loadJurisdictions() {
   try {
@@ -213,6 +214,12 @@ function degreesToRadians(degrees: number): number {
 
 function selectChurch(churchId: string) {
   selectedChurchId.value = churchId
+  // Close sidebar on mobile when selecting a church
+  isSidebarOpen.value = false
+}
+
+function toggleSidebar() {
+  isSidebarOpen.value = !isSidebarOpen.value
 }
 
 function handleSubmissionSuccess() {
@@ -290,9 +297,38 @@ onMounted(async () => {
     </header>
 
     <!-- Main Content -->
-    <div class="flex-1 flex overflow-hidden">
+    <div class="flex-1 flex overflow-hidden relative">
+      <!-- Mobile overlay -->
+      <Transition name="overlay">
+        <div
+          v-if="isSidebarOpen"
+          class="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"
+          @click="isSidebarOpen = false"
+        />
+      </Transition>
+
       <!-- Sidebar -->
-      <aside class="w-80 border-r border-gray-200 flex flex-col bg-white">
+      <aside
+        :class="[
+          'w-80 border-r border-gray-200 flex flex-col bg-white transition-transform duration-300 lg:relative lg:translate-x-0 z-40',
+          isSidebarOpen ? 'fixed inset-y-0 left-0 translate-x-0' : 'fixed inset-y-0 left-0 -translate-x-full'
+        ]"
+      >
+        <!-- Mobile close button -->
+        <div class="lg:hidden p-4 border-b border-gray-200 flex justify-between items-center">
+          <h2 class="text-lg font-semibold text-gray-900">Filtros</h2>
+          <button
+            type="button"
+            @click="isSidebarOpen = false"
+            class="text-gray-400 hover:text-gray-600 transition-colors"
+            aria-label="Fechar menu"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
         <!-- Filters Section -->
         <div class="p-4 space-y-3 border-b border-gray-200">
           <!-- Search -->
@@ -421,7 +457,19 @@ onMounted(async () => {
       </aside>
 
       <!-- Map -->
-      <main class="flex-1 bg-gray-100">
+      <main class="flex-1 bg-gray-100 relative">
+        <!-- Mobile menu button -->
+        <button
+          type="button"
+          class="lg:hidden fixed top-24 left-4 z-20 bg-white rounded-full shadow-lg p-3 hover:bg-gray-50 transition-colors"
+          @click="toggleSidebar"
+          aria-label="Abrir menu de filtros"
+        >
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
         <ClientOnly>
           <GoogleMap
             :churches="filteredChurches"
@@ -459,3 +507,15 @@ onMounted(async () => {
     />
   </div>
 </template>
+
+<style scoped>
+.overlay-enter-active,
+.overlay-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.overlay-enter-from,
+.overlay-leave-to {
+  opacity: 0;
+}
+</style>
