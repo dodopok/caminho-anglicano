@@ -140,14 +140,14 @@ watch(() => props.isOpen, (isOpen) => {
           aria-modal="true"
           aria-labelledby="modal-title"
         >
-          <div class="sticky top-0 bg-white border-b border-slate-200 px-6 py-4 flex justify-between items-center">
-            <h2 id="modal-title" class="text-2xl font-bold text-slate-900">
+          <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center">
+            <h2 id="modal-title" class="text-xl font-bold text-gray-900">
               Adicionar Igreja
             </h2>
             <button
               type="button"
               @click="handleClose"
-              class="text-slate-400 hover:text-slate-600 transition-colors"
+              class="text-gray-400 hover:text-gray-600 transition-colors"
               aria-label="Fechar modal"
             >
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -166,14 +166,14 @@ watch(() => props.isOpen, (isOpen) => {
             </div>
 
             <div>
-              <label for="jurisdiction" class="block text-sm font-medium text-slate-700 mb-1">
+              <label for="jurisdiction" class="block text-sm font-medium text-gray-700 mb-1">
                 Jurisdição <span class="text-red-500">*</span>
               </label>
               <select
                 id="jurisdiction"
                 v-model="formData.jurisdictionId"
                 required
-                class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
                 :disabled="isLoadingJurisdictions"
               >
                 <option value="" disabled>
@@ -189,7 +189,7 @@ watch(() => props.isOpen, (isOpen) => {
             </div>
 
             <div v-if="formData.jurisdictionId === 'other'">
-              <label for="customJurisdiction" class="block text-sm font-medium text-slate-700 mb-1">
+              <label for="customJurisdiction" class="block text-sm font-medium text-gray-700 mb-1">
                 Nome da Jurisdição <span class="text-red-500">*</span>
               </label>
               <input
@@ -197,13 +197,13 @@ watch(() => props.isOpen, (isOpen) => {
                 v-model="formData.customJurisdiction"
                 type="text"
                 required
-                class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
                 placeholder="Digite o nome da jurisdição"
               >
             </div>
 
             <div>
-              <label for="name" class="block text-sm font-medium text-slate-700 mb-1">
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
                 Nome da Igreja <span class="text-red-500">*</span>
               </label>
               <input
@@ -211,13 +211,13 @@ watch(() => props.isOpen, (isOpen) => {
                 v-model="formData.name"
                 type="text"
                 required
-                class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
                 placeholder="Ex: Igreja Anglicana São Paulo"
               >
             </div>
 
             <div>
-              <label for="address" class="block text-sm font-medium text-slate-700 mb-1">
+              <label for="address" class="block text-sm font-medium text-gray-700 mb-1">
                 Endereço Completo <span class="text-red-500">*</span>
               </label>
               <textarea
@@ -225,52 +225,52 @@ watch(() => props.isOpen, (isOpen) => {
                 v-model="formData.address"
                 required
                 rows="2"
-                class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
                 placeholder="Rua, número, bairro, cidade, estado, CEP"
               />
             </div>
 
             <div>
-              <label for="schedules" class="block text-sm font-medium text-slate-700 mb-1">
+              <label for="schedules" class="block text-sm font-medium text-gray-700 mb-1">
                 Horários de Culto
               </label>
               <textarea
                 id="schedules"
                 v-model="formData.schedules"
                 rows="3"
-                class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
                 placeholder="Ex: Domingo às 10h e 18h"
               />
             </div>
 
             <div>
-              <label for="description" class="block text-sm font-medium text-slate-700 mb-1">
+              <label for="description" class="block text-sm font-medium text-gray-700 mb-1">
                 Descrição
               </label>
               <textarea
                 id="description"
                 v-model="formData.description"
                 rows="3"
-                class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
                 placeholder="Informações adicionais sobre a igreja"
               />
             </div>
 
             <div>
-              <label for="pastors" class="block text-sm font-medium text-slate-700 mb-1">
+              <label for="pastors" class="block text-sm font-medium text-gray-700 mb-1">
                 Pastores Responsáveis
               </label>
               <input
                 id="pastors"
                 v-model="formData.pastors"
                 type="text"
-                class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
                 placeholder="Ex: Rev. João Silva, Rev. Maria Santos"
               >
             </div>
 
             <div>
-              <label for="responsibleEmail" class="block text-sm font-medium text-slate-700 mb-1">
+              <label for="responsibleEmail" class="block text-sm font-medium text-gray-700 mb-1">
                 E-mail do Responsável <span class="text-red-500">*</span>
               </label>
               <input
@@ -278,83 +278,83 @@ watch(() => props.isOpen, (isOpen) => {
                 v-model="formData.responsibleEmail"
                 type="email"
                 required
-                class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
                 placeholder="email@exemplo.com"
               >
             </div>
 
-            <div class="border-t border-slate-200 pt-4">
-              <h3 class="text-lg font-semibold text-slate-900 mb-3">
+            <div class="border-t border-gray-200 pt-4">
+              <h3 class="text-base font-semibold text-gray-900 mb-3">
                 Redes Sociais (Opcional)
               </h3>
 
               <div class="space-y-3">
                 <div>
-                  <label for="website" class="block text-sm font-medium text-slate-700 mb-1">
+                  <label for="website" class="block text-sm font-medium text-gray-700 mb-1">
                     Website
                   </label>
                   <input
                     id="website"
                     v-model="formData.website"
                     type="url"
-                    class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                    class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
                     placeholder="https://exemplo.com"
                   >
                 </div>
 
                 <div>
-                  <label for="instagram" class="block text-sm font-medium text-slate-700 mb-1">
+                  <label for="instagram" class="block text-sm font-medium text-gray-700 mb-1">
                     Instagram
                   </label>
                   <input
                     id="instagram"
                     v-model="formData.instagram"
                     type="text"
-                    class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                    class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
                     placeholder="@usuario ou https://instagram.com/usuario"
                   >
                 </div>
 
                 <div>
-                  <label for="youtube" class="block text-sm font-medium text-slate-700 mb-1">
+                  <label for="youtube" class="block text-sm font-medium text-gray-700 mb-1">
                     YouTube
                   </label>
                   <input
                     id="youtube"
                     v-model="formData.youtube"
                     type="text"
-                    class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                    class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
                     placeholder="https://youtube.com/@canal"
                   >
                 </div>
 
                 <div>
-                  <label for="spotify" class="block text-sm font-medium text-slate-700 mb-1">
+                  <label for="spotify" class="block text-sm font-medium text-gray-700 mb-1">
                     Spotify
                   </label>
                   <input
                     id="spotify"
                     v-model="formData.spotify"
                     type="text"
-                    class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                    class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
                     placeholder="https://open.spotify.com/..."
                   >
                 </div>
               </div>
             </div>
 
-            <div class="flex justify-end gap-3 pt-4 border-t border-slate-200">
+            <div class="flex justify-end gap-3 pt-4 border-t border-gray-200">
               <button
                 type="button"
                 @click="handleClose"
-                class="px-4 py-2 text-slate-700 hover:bg-slate-100 rounded-lg transition-colors"
+                class="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors"
               >
                 Cancelar
               </button>
               <button
                 type="submit"
                 :disabled="isSubmitting"
-                class="px-6 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-900 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                class="px-6 py-2 text-sm bg-indigo-600 text-white rounded hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 {{ isSubmitting ? 'Enviando...' : 'Enviar para Revisão' }}
               </button>

@@ -27,6 +27,7 @@ const filters = ref<ChurchFilters>({
   address: ''
 })
 
+const isAddChurchTypeModalOpen = ref(false)
 const isAddChurchModalOpen = ref(false)
 const isAddBulkModalOpen = ref(false)
 
@@ -218,6 +219,16 @@ function handleSubmissionSuccess() {
   loadChurches()
 }
 
+function handleSelectSingleChurch() {
+  isAddChurchTypeModalOpen.value = false
+  isAddChurchModalOpen.value = true
+}
+
+function handleSelectBulkChurches() {
+  isAddChurchTypeModalOpen.value = false
+  isAddBulkModalOpen.value = true
+}
+
 function formatSchedules(schedules: any[]): string {
   if (!schedules || schedules.length === 0) return ''
 
@@ -346,7 +357,7 @@ onMounted(async () => {
           <button
             type="button"
             class="px-3 py-1.5 text-sm text-white bg-indigo-600 hover:bg-indigo-700 rounded transition-colors"
-            @click="isAddChurchModalOpen = true"
+            @click="isAddChurchTypeModalOpen = true"
           >
             + Adicionar
           </button>
@@ -363,7 +374,7 @@ onMounted(async () => {
             <button
               type="button"
               class="text-sm text-indigo-600 hover:text-indigo-700 underline"
-              @click="isAddChurchModalOpen = true"
+              @click="isAddChurchTypeModalOpen = true"
             >
               Adicionar igreja
             </button>
@@ -428,6 +439,13 @@ onMounted(async () => {
     </div>
 
     <!-- Modals -->
+    <AddChurchTypeModal
+      :is-open="isAddChurchTypeModalOpen"
+      @close="isAddChurchTypeModalOpen = false"
+      @select-single="handleSelectSingleChurch"
+      @select-bulk="handleSelectBulkChurches"
+    />
+
     <AddChurchModal
       :is-open="isAddChurchModalOpen"
       @close="isAddChurchModalOpen = false"

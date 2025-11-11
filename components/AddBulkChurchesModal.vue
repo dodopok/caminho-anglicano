@@ -90,14 +90,14 @@ async function handleSubmit() {
           aria-modal="true"
           aria-labelledby="bulk-modal-title"
         >
-          <div class="sticky top-0 bg-white border-b border-slate-200 px-6 py-4 flex justify-between items-center">
-            <h2 id="bulk-modal-title" class="text-2xl font-bold text-slate-900">
-              Adicionar Múltiplas Igrejas
+          <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center">
+            <h2 id="bulk-modal-title" class="text-xl font-bold text-gray-900">
+              Adicionar Várias Igrejas
             </h2>
             <button
               type="button"
               @click="handleClose"
-              class="text-slate-400 hover:text-slate-600 transition-colors"
+              class="text-gray-400 hover:text-gray-600 transition-colors"
               aria-label="Fechar modal"
             >
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,24 +115,24 @@ async function handleSubmit() {
               {{ successMessage }}
             </div>
 
-            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
-              <h3 class="font-semibold text-slate-900 mb-2">
+            <div class="bg-gray-50 border border-gray-200 rounded p-4">
+              <h3 class="text-base font-semibold text-gray-900 mb-2">
                 Instruções
               </h3>
-              <p class="text-sm text-slate-600 mb-3">
+              <p class="text-sm text-gray-600 mb-3">
                 Cole abaixo as informações de múltiplas igrejas. Separe cada igreja com três traços (---).
                 Você pode usar o formato livre, mas tente incluir as informações principais de cada igreja.
               </p>
               <details class="text-sm">
-                <summary class="cursor-pointer text-slate-700 font-medium hover:text-slate-900">
+                <summary class="cursor-pointer text-gray-700 font-medium hover:text-gray-900">
                   Ver exemplo de formato
                 </summary>
-                <pre class="mt-2 text-xs bg-white border border-slate-200 rounded p-3 overflow-x-auto">{{ exampleText }}</pre>
+                <pre class="mt-2 text-xs bg-white border border-gray-200 rounded p-3 overflow-x-auto">{{ exampleText }}</pre>
               </details>
             </div>
 
             <div>
-              <label for="bulkData" class="block text-sm font-medium text-slate-700 mb-1">
+              <label for="bulkData" class="block text-sm font-medium text-gray-700 mb-1">
                 Dados das Igrejas <span class="text-red-500">*</span>
               </label>
               <textarea
@@ -140,26 +140,26 @@ async function handleSubmit() {
                 v-model="bulkData"
                 required
                 rows="15"
-                class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent font-mono text-sm"
+                class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400 font-mono"
                 placeholder="Cole aqui os dados das igrejas..."
               />
-              <p class="mt-1 text-xs text-slate-500">
+              <p class="mt-1 text-xs text-gray-500">
                 Dica: Quanto mais informações você fornecer, mais fácil será para aprovar as igrejas.
               </p>
             </div>
 
-            <div class="flex justify-end gap-3 pt-4 border-t border-slate-200">
+            <div class="flex justify-end gap-3 pt-4 border-t border-gray-200">
               <button
                 type="button"
                 @click="handleClose"
-                class="px-4 py-2 text-slate-700 hover:bg-slate-100 rounded-lg transition-colors"
+                class="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors"
               >
                 Cancelar
               </button>
               <button
                 type="submit"
                 :disabled="isSubmitting"
-                class="px-6 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-900 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                class="px-6 py-2 text-sm bg-indigo-600 text-white rounded hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 {{ isSubmitting ? 'Enviando...' : 'Enviar para Revisão' }}
               </button>
