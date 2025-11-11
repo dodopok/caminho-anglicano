@@ -14,18 +14,13 @@ const props = defineProps<Props>()
 const emit = defineEmits<Emits>()
 
 const { submitChurch } = useSubmissions()
+const { fetchJurisdictions } = useJurisdictions()
 
-const jurisdictions: { value: Jurisdiction | 'other'; label: string }[] = [
-  { value: 'IAB', label: 'IAB - Igreja Anglicana do Brasil' },
-  { value: 'IEAB', label: 'IEAB - Igreja Episcopal Anglicana do Brasil' },
-  { value: 'IECB', label: 'IECB - Igreja Episcopal Carismática do Brasil' },
-  { value: 'IARB', label: 'IARB - Igreja Anglicana Reformada do Brasil' },
-  { value: 'REB', label: 'REB - Rede Evangélica Brasileira' },
-  { value: 'other', label: 'Outra (especifique abaixo)' }
-]
+const jurisdictions = ref<Jurisdiction[]>([])
+const isLoadingJurisdictions = ref(false)
 
 const formData = ref({
-  jurisdiction: '' as Jurisdiction | 'other' | '',
+  jurisdictionId: '',
   customJurisdiction: '',
   name: '',
   address: '',
@@ -43,9 +38,20 @@ const isSubmitting = ref(false)
 const errorMessage = ref('')
 const successMessage = ref('')
 
+async function loadJurisdictions() {
+  isLoadingJurisdictions.value = true
+  try {
+    jurisdictions.value = await fetchJurisdictions()
+  } catch (error) {
+    console.error('Error loading jurisdictions:', error)
+  } finally {
+    isLoadingJurisdictions.value = false
+  }
+}
+
 function resetForm() {
   formData.value = {
-    jurisdiction: '',
+    jurisdictionId: '',
     customJurisdiction: '',
     name: '',
     address: '',
@@ -73,7 +79,7 @@ async function handleSubmit() {
     return
   }
 
-  if (!formData.value.jurisdiction) {
+  if (!formData.value.jurisdictionId && !formData.value.customJurisdiction) {
     errorMessage.value = 'Por favor, selecione uma jurisdição.'
     return
   }
@@ -82,9 +88,9 @@ async function handleSubmit() {
   errorMessage.value = ''
 
   try {
-    const jurisdictionValue = formData.value.jurisdiction === 'other'
+    const jurisdictionValue = formData.value.jurisdictionId === 'other'
       ? formData.value.customJurisdiction
-      : formData.value.jurisdiction
+      : jurisdictions.value.find(j => j.id === formData.value.jurisdictionId)?.name || ''
 
     await submitChurch({
       jurisdiction: jurisdictionValue,
@@ -112,6 +118,12 @@ async function handleSubmit() {
     isSubmitting.value = false
   }
 }
+
+watch(() => props.isOpen, (isOpen) => {
+  if (isOpen && jurisdictions.value.length === 0) {
+    loadJurisdictions()
+  }
+})
 </script>
 
 <template>
@@ -159,20 +171,24 @@ async function handleSubmit() {
               </label>
               <select
                 id="jurisdiction"
-                v-model="formData.jurisdiction"
+                v-model="formData.jurisdictionId"
                 required
                 class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+                :disabled="isLoadingJurisdictions"
               >
                 <option value="" disabled>
-                  Selecione uma jurisdição
+                  {{ isLoadingJurisdictions ? 'Carregando...' : 'Selecione uma jurisdição' }}
                 </option>
-                <option v-for="j in jurisdictions" :key="j.value" :value="j.value">
-                  {{ j.label }}
+                <option v-for="j in jurisdictions" :key="j.id" :value="j.id">
+                  {{ j.name }} - {{ j.fullName }}
+                </option>
+                <option value="other">
+                  Outra (especifique abaixo)
                 </option>
               </select>
             </div>
 
-            <div v-if="formData.jurisdiction === 'other'">
+            <div v-if="formData.jurisdictionId === 'other'">
               <label for="customJurisdiction" class="block text-sm font-medium text-slate-700 mb-1">
                 Nome da Jurisdição <span class="text-red-500">*</span>
               </label>

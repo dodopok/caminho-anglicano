@@ -62,8 +62,10 @@ Para testar o sistema com 10 igrejas de exemplo, execute também:
 
 ```sql
 -- No Supabase SQL Editor
--- Cole o conteúdo de seed-churches.sql
+-- Cole o conteúdo de seed-churches-updated.sql
 ```
+
+**Nota**: Use `seed-churches-updated.sql` (não o antigo `seed-churches.sql`)
 
 ### 4. Configurar Google Maps API
 

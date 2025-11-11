@@ -9,16 +9,20 @@ useHead({
 })
 
 const { fetchChurches } = useChurches()
+const { fetchJurisdictions } = useJurisdictions()
 const { geocodePostalCode, geocodeAddress } = useGeocoding()
 
 const churches = ref<Church[]>([])
 const filteredChurches = ref<Church[]>([])
+const jurisdictions = ref<Jurisdiction[]>([])
 const selectedChurchId = ref<string | null>(null)
 const isLoading = ref(true)
 const errorMessage = ref('')
+const isGettingLocation = ref(false)
+const userLocation = ref<{ lat: number; lng: number } | null>(null)
 
 const filters = ref<ChurchFilters>({
-  jurisdiction: undefined,
+  jurisdictionId: undefined,
   searchQuery: '',
   address: ''
 })
@@ -26,20 +30,20 @@ const filters = ref<ChurchFilters>({
 const isAddChurchModalOpen = ref(false)
 const isAddBulkModalOpen = ref(false)
 
-const jurisdictions: { value: Jurisdiction; label: string; color: string }[] = [
-  { value: 'IAB', label: 'IAB', color: 'bg-blue-500' },
-  { value: 'IEAB', label: 'IEAB', color: 'bg-green-500' },
-  { value: 'IECB', label: 'IECB', color: 'bg-amber-500' },
-  { value: 'IARB', label: 'IARB', color: 'bg-red-500' },
-  { value: 'REB', label: 'REB', color: 'bg-purple-500' }
-]
+async function loadJurisdictions() {
+  try {
+    jurisdictions.value = await fetchJurisdictions()
+  } catch (error) {
+    console.error('Error loading jurisdictions:', error)
+  }
+}
 
 async function loadChurches() {
   isLoading.value = true
   errorMessage.value = ''
 
   try {
-    churches.value = await fetchChurches()
+    churches.value = await fetchChurches(filters.value)
     applyFilters()
   } catch (error) {
     console.error('Error loading churches:', error)
@@ -52,8 +56,8 @@ async function loadChurches() {
 function applyFilters() {
   let result = [...churches.value]
 
-  if (filters.value.jurisdiction) {
-    result = result.filter(c => c.jurisdiction === filters.value.jurisdiction)
+  if (filters.value.jurisdictionId) {
+    result = result.filter(c => c.jurisdictionId === filters.value.jurisdictionId)
   }
 
   if (filters.value.searchQuery) {
@@ -65,7 +69,101 @@ function applyFilters() {
     )
   }
 
+  // Clear distances when filtering (not location-based)
+  if (!userLocation.value) {
+    churchesWithDistance.value.clear()
+  }
+
   filteredChurches.value = result
+}
+
+async function getUserLocation(): Promise<{ lat: number; lng: number }> {
+  return new Promise((resolve, reject) => {
+    if (!navigator.geolocation) {
+      reject(new Error('Geolocalização não é suportada pelo seu navegador'))
+      return
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        resolve({
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        })
+      },
+      (error) => {
+        let errorMsg = 'Erro ao obter localização'
+        switch (error.code) {
+          case error.PERMISSION_DENIED:
+            errorMsg = 'Permissão de localização negada'
+            break
+          case error.POSITION_UNAVAILABLE:
+            errorMsg = 'Localização indisponível'
+            break
+          case error.TIMEOUT:
+            errorMsg = 'Tempo esgotado ao obter localização'
+            break
+        }
+        reject(new Error(errorMsg))
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 0
+      }
+    )
+  })
+}
+
+const churchesWithDistance = ref<Map<string, number>>(new Map())
+
+function sortChurchesByDistance(location: { lat: number; lng: number }) {
+  const withDistances = churches.value
+    .map(church => {
+      const distance = calculateDistance(
+        location.lat,
+        location.lng,
+        church.latitude,
+        church.longitude
+      )
+      return { church, distance }
+    })
+    .sort((a, b) => a.distance - b.distance)
+
+  // Store distances
+  churchesWithDistance.value = new Map(
+    withDistances.map(item => [item.church.id, item.distance])
+  )
+
+  filteredChurches.value = withDistances.map(item => item.church)
+}
+
+function getChurchDistance(churchId: string): string | null {
+  const distance = churchesWithDistance.value.get(churchId)
+  if (!distance) return null
+
+  if (distance < 1) {
+    return `${Math.round(distance * 1000)}m`
+  }
+  return `${distance.toFixed(1)}km`
+}
+
+async function handleNearMe() {
+  isGettingLocation.value = true
+  errorMessage.value = ''
+
+  try {
+    const location = await getUserLocation()
+    userLocation.value = location
+
+    // Sort churches by distance
+    sortChurchesByDistance(location)
+  } catch (error) {
+    console.error('Error getting location:', error)
+    errorMessage.value = error instanceof Error ? error.message : 'Erro ao obter sua localização'
+  } finally {
+    isGettingLocation.value = false
+  }
 }
 
 async function handleAddressSearch() {
@@ -83,20 +181,8 @@ async function handleAddressSearch() {
       : await geocodeAddress(filters.value.address)
 
     if (result) {
-      const sortedByDistance = churches.value
-        .map(church => ({
-          church,
-          distance: calculateDistance(
-            result.latitude,
-            result.longitude,
-            church.latitude,
-            church.longitude
-          )
-        }))
-        .sort((a, b) => a.distance - b.distance)
-        .map(item => item.church)
-
-      filteredChurches.value = sortedByDistance
+      userLocation.value = { lat: result.latitude, lng: result.longitude }
+      sortChurchesByDistance(userLocation.value)
     } else {
       errorMessage.value = 'Não foi possível encontrar o endereço. Tente novamente.'
     }
@@ -132,177 +218,216 @@ function handleSubmissionSuccess() {
   loadChurches()
 }
 
-watch(() => filters.value.jurisdiction, applyFilters)
+function formatSchedules(schedules: any[]): string {
+  if (!schedules || schedules.length === 0) return ''
+
+  if (typeof schedules[0] === 'string') {
+    return schedules.join(', ')
+  }
+
+  const formatted = schedules.map(s => {
+    if (typeof s === 'object' && s.day && s.time) {
+      return `${s.day} às ${s.time}`
+    }
+    return String(s)
+  })
+
+  if (formatted.length <= 2) {
+    return formatted.join(' e ')
+  }
+
+  return formatted.slice(0, 2).join(', ') + ` +${formatted.length - 2}`
+}
+
+function getJurisdictionBadgeClass(jurisdictionId: string): string {
+  const jurisdiction = jurisdictions.value.find(j => j.id === jurisdictionId)
+  if (!jurisdiction) return 'bg-gray-100 text-gray-700'
+
+  // Convert hex color to Tailwind classes
+  const colorMap: Record<string, string> = {
+    '#3B82F6': 'bg-blue-100 text-blue-700',
+    '#10B981': 'bg-green-100 text-green-700',
+    '#F59E0B': 'bg-amber-100 text-amber-700',
+    '#EF4444': 'bg-red-100 text-red-700',
+    '#8B5CF6': 'bg-purple-100 text-purple-700'
+  }
+
+  return colorMap[jurisdiction.color] || 'bg-gray-100 text-gray-700'
+}
+
+function getJurisdictionName(jurisdictionId: string): string {
+  return jurisdictions.value.find(j => j.id === jurisdictionId)?.name || ''
+}
+
+watch(() => filters.value.jurisdictionId, applyFilters)
 watch(() => filters.value.searchQuery, applyFilters)
 
-onMounted(() => {
-  loadChurches()
+onMounted(async () => {
+  await loadJurisdictions()
+  await loadChurches()
 })
 </script>
 
 <template>
-  <div class="min-h-screen bg-white">
-    <nav class="bg-white border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-          <NuxtLink to="/" class="text-xl font-semibold text-slate-900 hover:text-slate-600 transition-colors">
-            Caminho Anglicano
-          </NuxtLink>
-        </div>
-      </div>
-    </nav>
+  <div class="h-screen flex flex-col bg-white">
+    <!-- Header -->
+    <header class="border-b border-gray-200 bg-white px-6 py-4">
+      <NuxtLink to="/" class="block">
+        <h1 class="text-2xl font-bold text-gray-900">Caminho Anglicano</h1>
+        <p class="text-sm text-gray-500">Localizador de Igrejas</p>
+      </NuxtLink>
+    </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-      <div v-if="errorMessage" class="mb-4 bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">
-        {{ errorMessage }}
-      </div>
-
-      <div class="grid lg:grid-cols-3 gap-6">
-        <div class="lg:col-span-1 space-y-4">
-          <div class="bg-white rounded-lg border border-slate-200 p-4">
-            <div class="space-y-4">
-              <div>
-                <label for="searchQuery" class="block text-sm font-medium text-slate-700 mb-1.5">
-                  Buscar por nome ou endereço
-                </label>
-                <input
-                  id="searchQuery"
-                  v-model="filters.searchQuery"
-                  type="text"
-                  class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-400 focus:border-transparent"
-                  placeholder="Ex: Catedral Anglicana"
-                >
-              </div>
-
-              <div>
-                <label class="block text-sm font-medium text-slate-700 mb-1.5">
-                  Perto de mim
-                </label>
-                <div class="flex gap-2">
-                  <input
-                    id="address"
-                    v-model="filters.address"
-                    type="text"
-                    class="flex-1 px-3 py-2 text-sm border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-400 focus:border-transparent"
-                    placeholder="CEP ou endereço"
-                    @keyup.enter="handleAddressSearch"
-                  >
-                  <button
-                    type="button"
-                    class="px-3 py-2 bg-slate-800 text-white rounded-md hover:bg-slate-700 transition-colors"
-                    aria-label="Buscar"
-                    @click="handleAddressSearch"
-                  >
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-              <div>
-                <label class="block text-sm font-medium text-slate-700 mb-1.5">
-                  Filtrar por jurisdição
-                </label>
-                <select
-                  v-model="filters.jurisdiction"
-                  class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-400 focus:border-transparent"
-                >
-                  <option :value="undefined">Todas</option>
-                  <option v-for="j in jurisdictions" :key="j.value" :value="j.value">
-                    {{ j.label }}
-                  </option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="lg:col-span-2 space-y-4">
-          <div class="bg-white rounded-lg border border-slate-200 overflow-hidden" style="height: 500px;">
-            <ClientOnly>
-              <GoogleMap
-                :churches="filteredChurches"
-                :selected-church-id="selectedChurchId"
-                @select-church="selectChurch"
-              />
-              <template #fallback>
-                <div class="w-full h-full flex items-center justify-center bg-slate-50">
-                  <p class="text-slate-500 text-sm">Carregando mapa...</p>
-                </div>
-              </template>
-            </ClientOnly>
-          </div>
-
-          <div class="bg-white rounded-lg border border-slate-200">
-            <div class="px-4 py-3 border-b border-slate-200 flex items-center justify-between">
-              <h2 class="text-base font-medium text-slate-900">
-                {{ filteredChurches.length }} igreja{{ filteredChurches.length !== 1 ? 's' : '' }} encontrada{{ filteredChurches.length !== 1 ? 's' : '' }}
-              </h2>
-            </div>
-
-            <div v-if="isLoading" class="p-4">
-              <p class="text-slate-500 text-sm">Carregando...</p>
-            </div>
-
-            <div v-else-if="filteredChurches.length === 0" class="p-8 text-center">
-              <p class="text-slate-500 text-sm mb-4">Nenhuma igreja encontrada.</p>
-              <button
-                type="button"
-                class="text-sm text-slate-600 hover:text-slate-900 underline"
-                @click="isAddChurchModalOpen = true"
+    <!-- Main Content -->
+    <div class="flex-1 flex overflow-hidden">
+      <!-- Sidebar -->
+      <aside class="w-80 border-r border-gray-200 flex flex-col bg-white">
+        <!-- Filters Section -->
+        <div class="p-4 space-y-3 border-b border-gray-200">
+          <!-- Search -->
+          <div>
+            <label for="searchQuery" class="block text-sm font-medium text-gray-700 mb-1">
+              Buscar por nome ou endereço
+            </label>
+            <div class="relative">
+              <input
+                id="searchQuery"
+                v-model="filters.searchQuery"
+                type="text"
+                class="w-full pl-9 pr-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
+                placeholder="Ex: Catedral Anglicana"
               >
-                Não encontrou a sua igreja aqui? Adicione.
-              </button>
+              <svg class="absolute left-3 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
             </div>
+          </div>
 
-            <div v-else class="divide-y divide-slate-200" style="max-height: 500px; overflow-y: auto;">
-              <button
-                v-for="church in filteredChurches"
-                :key="church.id"
-                type="button"
+          <!-- Jurisdiction Filter -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              Filtrar por jurisdição
+            </label>
+            <select
+              v-model="filters.jurisdictionId"
+              class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
+            >
+              <option :value="undefined">Todas</option>
+              <option v-for="j in jurisdictions" :key="j.id" :value="j.id">
+                {{ j.name }}
+              </option>
+            </select>
+          </div>
+
+          <!-- Near Me Button -->
+          <button
+            type="button"
+            class="w-full flex items-center justify-center gap-2 px-3 py-2 text-sm border border-gray-300 rounded hover:bg-gray-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            :disabled="isGettingLocation"
+            @click="handleNearMe"
+          >
+            <svg v-if="!isGettingLocation" class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <svg v-else class="w-4 h-4 text-gray-600 animate-spin" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            {{ isGettingLocation ? 'Obtendo localização...' : 'Perto de mim' }}
+          </button>
+        </div>
+
+        <!-- Results Header -->
+        <div class="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+          <span class="text-sm text-gray-600">
+            {{ filteredChurches.length }} igreja(s) encontrada(s)
+          </span>
+          <button
+            type="button"
+            class="px-3 py-1.5 text-sm text-white bg-indigo-600 hover:bg-indigo-700 rounded transition-colors"
+            @click="isAddChurchModalOpen = true"
+          >
+            + Adicionar
+          </button>
+        </div>
+
+        <!-- Churches List -->
+        <div class="flex-1 overflow-y-auto">
+          <div v-if="isLoading" class="p-4">
+            <p class="text-sm text-gray-500">Carregando...</p>
+          </div>
+
+          <div v-else-if="filteredChurches.length === 0" class="p-6 text-center">
+            <p class="text-sm text-gray-500 mb-3">Nenhuma igreja encontrada.</p>
+            <button
+              type="button"
+              class="text-sm text-indigo-600 hover:text-indigo-700 underline"
+              @click="isAddChurchModalOpen = true"
+            >
+              Adicionar igreja
+            </button>
+          </div>
+
+          <div v-else class="divide-y divide-gray-100">
+            <button
+              v-for="church in filteredChurches"
+              :key="church.id"
+              type="button"
+              :class="[
+                'w-full text-left p-4 hover:bg-gray-50 transition-colors relative',
+                selectedChurchId === church.id ? 'bg-gray-50' : ''
+              ]"
+              @click="selectChurch(church.id)"
+            >
+              <div class="pr-16">
+                <div class="flex items-start gap-2 mb-1">
+                  <h3 class="text-sm font-semibold text-gray-900 flex-1">
+                    {{ church.name }}
+                  </h3>
+                  <span v-if="getChurchDistance(church.id)" class="text-xs font-medium text-indigo-600 whitespace-nowrap">
+                    {{ getChurchDistance(church.id) }}
+                  </span>
+                </div>
+                <p class="text-xs text-gray-500 mb-2">
+                  {{ church.address }}, {{ church.city }} - {{ church.state }}
+                </p>
+                <p v-if="church.schedules.length > 0" class="text-xs text-gray-600">
+                  <span class="font-medium">Cultos:</span> {{ formatSchedules(church.schedules) }}
+                </p>
+              </div>
+              <span
                 :class="[
-                  'w-full text-left p-4 hover:bg-slate-50 transition-colors',
-                  selectedChurchId === church.id ? 'bg-slate-50' : ''
+                  'absolute top-4 right-4 px-2 py-0.5 text-xs font-medium rounded',
+                  getJurisdictionBadgeClass(church.jurisdictionId)
                 ]"
-                @click="selectChurch(church.id)"
               >
-                <div class="flex items-start gap-3">
-                  <div
-                    :class="`w-2 h-2 rounded-full mt-1.5 flex-shrink-0 ${
-                      jurisdictions.find(j => j.value === church.jurisdiction)?.color
-                    }`"
-                  />
-                  <div class="flex-1 min-w-0">
-                    <h3 class="text-sm font-medium text-slate-900 mb-0.5">
-                      {{ church.name }}
-                    </h3>
-                    <p class="text-xs text-slate-500 mb-2">
-                      {{ church.address }}, {{ church.city }} - {{ church.state }}
-                    </p>
-                    <div v-if="church.schedules.length > 0" class="text-xs text-slate-400">
-                      Cultos: {{ church.schedules[0] }}{{ church.schedules.length > 1 ? ` +${church.schedules.length - 1}` : '' }}
-                    </div>
-                  </div>
-                </div>
-              </button>
-              
-              <div class="p-4 bg-slate-50 text-center">
-                <button
-                  type="button"
-                  class="text-sm text-slate-600 hover:text-slate-900 underline"
-                  @click="isAddChurchModalOpen = true"
-                >
-                  Não encontrou a sua igreja aqui? Adicione.
-                </button>
-              </div>
-            </div>
+                {{ getJurisdictionName(church.jurisdictionId) }}
+              </span>
+            </button>
           </div>
         </div>
-      </div>
-    </main>
+      </aside>
 
+      <!-- Map -->
+      <main class="flex-1 bg-gray-100">
+        <ClientOnly>
+          <GoogleMap
+            :churches="filteredChurches"
+            :selected-church-id="selectedChurchId"
+            :user-location="userLocation"
+            @select-church="selectChurch"
+          />
+          <template #fallback>
+            <div class="w-full h-full flex items-center justify-center">
+              <p class="text-gray-500">Carregando mapa...</p>
+            </div>
+          </template>
+        </ClientOnly>
+      </main>
+    </div>
+
+    <!-- Modals -->
     <AddChurchModal
       :is-open="isAddChurchModalOpen"
       @close="isAddChurchModalOpen = false"

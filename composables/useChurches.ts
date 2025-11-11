@@ -7,11 +7,14 @@ export function useChurches() {
     try {
       let query = ($supabase as any)
         .from('churches')
-        .select('*')
+        .select(`
+          *,
+          jurisdiction:jurisdictions(*)
+        `)
         .order('name')
 
-      if (filters?.jurisdiction) {
-        query = query.eq('jurisdiction', filters.jurisdiction)
+      if (filters?.jurisdictionId) {
+        query = query.eq('jurisdiction_id', filters.jurisdictionId)
       }
 
       if (filters?.searchQuery) {
@@ -26,7 +29,37 @@ export function useChurches() {
         throw error
       }
 
-      return (data || []) as Church[]
+      return (data || []).map((row: any) => ({
+        id: row.id,
+        name: row.name,
+        jurisdictionId: row.jurisdiction_id,
+        jurisdiction: row.jurisdiction ? {
+          id: row.jurisdiction.id,
+          slug: row.jurisdiction.slug,
+          name: row.jurisdiction.name,
+          fullName: row.jurisdiction.full_name,
+          color: row.jurisdiction.color,
+          description: row.jurisdiction.description,
+          website: row.jurisdiction.website,
+          active: row.jurisdiction.active,
+          displayOrder: row.jurisdiction.display_order,
+          createdAt: row.jurisdiction.created_at,
+          updatedAt: row.jurisdiction.updated_at
+        } : undefined,
+        address: row.address,
+        city: row.city,
+        state: row.state,
+        postalCode: row.postal_code,
+        latitude: row.latitude,
+        longitude: row.longitude,
+        schedules: row.schedules || [],
+        description: row.description,
+        pastors: row.pastors || [],
+        responsibleEmail: row.responsible_email,
+        socialMedia: row.social_media || {},
+        createdAt: row.created_at,
+        updatedAt: row.updated_at
+      }))
     } catch (error) {
       console.error('Error fetching churches:', error)
       throw error

@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import type { Church, Jurisdiction } from '~/types/church'
+import type { Church } from '~/types/church'
 
 interface Props {
   churches: Church[]
   selectedChurchId?: string | null
+  userLocation?: { lat: number; lng: number } | null
 }
 
 const props = defineProps<Props>()
@@ -15,13 +16,10 @@ const config = useRuntimeConfig()
 const mapContainer = ref<HTMLElement | null>(null)
 const mapInstance = ref<any>(null)
 const markers = ref<any[]>([])
+const userMarker = ref<any>(null)
 
-const jurisdictionColors: Record<Jurisdiction, string> = {
-  IAB: '#3B82F6',
-  IEAB: '#10B981',
-  IECB: '#F59E0B',
-  IARB: '#EF4444',
-  REB: '#8B5CF6'
+function getJurisdictionColor(church: Church): string {
+  return church.jurisdiction?.color || '#6B7280'
 }
 
 function loadGoogleMapsScript(): Promise<void> {
@@ -72,6 +70,41 @@ async function initializeMap() {
   }
 }
 
+function updateUserMarker() {
+  if (!mapInstance.value || typeof window === 'undefined') return
+
+  const google = (window as any).google
+  if (!google?.maps) return
+
+  // Remove existing user marker
+  if (userMarker.value) {
+    userMarker.value.setMap(null)
+    userMarker.value = null
+  }
+
+  // Add new user marker if location is provided
+  if (props.userLocation) {
+    userMarker.value = new google.maps.Marker({
+      position: { lat: props.userLocation.lat, lng: props.userLocation.lng },
+      map: mapInstance.value,
+      title: 'Você está aqui',
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 10,
+        fillColor: '#4F46E5',
+        fillOpacity: 1,
+        strokeColor: '#ffffff',
+        strokeWeight: 3
+      },
+      zIndex: 1000
+    })
+
+    // Center map on user location
+    mapInstance.value.panTo({ lat: props.userLocation.lat, lng: props.userLocation.lng })
+    mapInstance.value.setZoom(13)
+  }
+}
+
 function updateMarkers() {
   if (!mapInstance.value || typeof window === 'undefined') return
 
@@ -83,6 +116,11 @@ function updateMarkers() {
 
   const bounds = new google.maps.LatLngBounds()
 
+  // Add user location to bounds if available
+  if (props.userLocation) {
+    bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng })
+  }
+
   props.churches.forEach(church => {
     const marker = new google.maps.Marker({
       position: { lat: church.latitude, lng: church.longitude },
@@ -91,7 +129,7 @@ function updateMarkers() {
       icon: {
         path: google.maps.SymbolPath.CIRCLE,
         scale: 8,
-        fillColor: jurisdictionColors[church.jurisdiction],
+        fillColor: getJurisdictionColor(church),
         fillOpacity: 0.9,
         strokeColor: '#ffffff',
         strokeWeight: 2
@@ -106,7 +144,10 @@ function updateMarkers() {
     bounds.extend(marker.getPosition())
   })
 
-  if (props.churches.length > 0) {
+  updateUserMarker()
+
+  // Only fit bounds if no user location (otherwise updateUserMarker handles centering)
+  if (props.churches.length > 0 && !props.userLocation) {
     mapInstance.value.fitBounds(bounds)
 
     // Prevent zooming in too much for single marker
@@ -120,6 +161,10 @@ function updateMarkers() {
 }
 
 watch(() => props.churches, updateMarkers, { deep: true })
+
+watch(() => props.userLocation, () => {
+  updateUserMarker()
+}, { deep: true })
 
 watch(() => props.selectedChurchId, (newId) => {
   if (!newId || !mapInstance.value) return
@@ -141,7 +186,7 @@ onMounted(() => {
 <template>
   <div
     ref="mapContainer"
-    class="w-full h-full min-h-[400px] rounded-lg"
+    class="w-full h-full"
     role="application"
     aria-label="Mapa interativo de igrejas anglicanas"
   />

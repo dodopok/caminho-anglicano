@@ -1,11 +1,52 @@
 export interface Database {
   public: {
     Tables: {
+      jurisdictions: {
+        Row: {
+          id: string
+          slug: string
+          name: string
+          full_name: string
+          color: string
+          description: string | null
+          website: string | null
+          active: boolean
+          display_order: number
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          slug: string
+          name: string
+          full_name: string
+          color: string
+          description?: string | null
+          website?: string | null
+          active?: boolean
+          display_order?: number
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          slug?: string
+          name?: string
+          full_name?: string
+          color?: string
+          description?: string | null
+          website?: string | null
+          active?: boolean
+          display_order?: number
+          created_at?: string
+          updated_at?: string
+        }
+      }
       churches: {
         Row: {
           id: string
           name: string
-          jurisdiction: string
+          jurisdiction_id: string
           address: string
           city: string
           state: string
@@ -23,7 +64,7 @@ export interface Database {
         Insert: {
           id?: string
           name: string
-          jurisdiction: string
+          jurisdiction_id: string
           address: string
           city: string
           state: string
@@ -41,7 +82,7 @@ export interface Database {
         Update: {
           id?: string
           name?: string
-          jurisdiction?: string
+          jurisdiction_id?: string
           address?: string
           city?: string
           state?: string

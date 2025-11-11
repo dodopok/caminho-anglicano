@@ -1,4 +1,16 @@
-export type Jurisdiction = 'IAB' | 'IEAB' | 'IECB' | 'IARB' | 'REB'
+export interface Jurisdiction {
+  id: string
+  slug: string
+  name: string
+  fullName: string
+  color: string
+  description?: string
+  website?: string
+  active: boolean
+  displayOrder: number
+  createdAt: string
+  updatedAt: string
+}
 
 export interface ChurchSchedule {
   day: string
@@ -15,7 +27,8 @@ export interface ChurchSocialMedia {
 export interface Church {
   id: string
   name: string
-  jurisdiction: Jurisdiction
+  jurisdictionId: string
+  jurisdiction?: Jurisdiction
   address: string
   city: string
   state: string
@@ -60,7 +73,7 @@ export interface BulkChurchSubmission {
 }
 
 export interface ChurchFilters {
-  jurisdiction?: Jurisdiction
+  jurisdictionId?: string
   searchQuery?: string
   address?: string
   postalCode?: string
