@@ -264,8 +264,13 @@ function updateMarkers() {
   const google = (window as any).google
   if (!google?.maps) return
 
-  markers.value.forEach((marker: any) => marker.setMap(null))
-  markers.value = []
+  // Remove all existing markers more explicitly
+  markers.value.forEach((marker: any) => {
+    google.maps.event.clearInstanceListeners(marker)
+    marker.setVisible(false)
+    marker.setMap(null)
+  })
+  markers.value.length = 0 // Clear the array
 
   const bounds = new google.maps.LatLngBounds()
   const MAX_DISTANCE_KM = 30 // Zoom to show 30km radius when user location is set
@@ -287,8 +292,8 @@ function updateMarkers() {
     bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng - radiusInDegrees / Math.cos(props.userLocation.lat * Math.PI / 180) })
   }
 
-  // Show all church markers
-  props.churches.forEach(church => {
+  // Create markers only for filtered churches
+  props.churches.forEach((church) => {
     const marker = new google.maps.Marker({
       position: { lat: church.latitude, lng: church.longitude },
       map: mapInstance.value,
@@ -300,7 +305,8 @@ function updateMarkers() {
         fillOpacity: 0.9,
         strokeColor: '#ffffff',
         strokeWeight: 2
-      }
+      },
+      optimized: false // Force re-render
     })
 
     marker.addListener('click', () => {
@@ -324,7 +330,7 @@ function updateMarkers() {
 
   updateUserMarker()
 
-  // Fit bounds to show appropriate area
+  // Fit bounds to show appropriate area only if we have churches or user location
   if (props.userLocation || props.churches.length > 0) {
     mapInstance.value.fitBounds(bounds)
 
@@ -353,7 +359,9 @@ function updateMarkers() {
   }
 }
 
-watch(() => props.churches, updateMarkers, { deep: true })
+watch(() => props.churches, () => {
+  updateMarkers()
+}, { deep: true })
 
 watch(() => props.userLocation, () => {
   updateMarkers()

@@ -18,6 +18,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import xml2js from 'xml2js';
 import dotenv from 'dotenv';
+import readline from 'readline';
 
 // ES modules não tem __dirname, precisamos criar
 const __filename = fileURLToPath(import.meta.url);
@@ -39,30 +40,53 @@ const JURISDICTION_MAP = {
   'IEAB': 'Igreja Episcopal Anglicana do Brasil',
   'IECB': 'Igreja Episcopal Carismática do Brasil',
   'IARB': 'Igreja Anglicana Reformada do Brasil',
-  'REB': 'Rede Evangélica Brasileira',
-  'TAC': 'TAC',
-  'ICEB': 'ICEB',
-  'IEUB': 'IEUB',
-  'Independente': 'Independente'
+  'REB': 'Rede Episcopal Brasileira'
 };
 
 // Delay entre requisições (para evitar rate limit)
 const DELAY_MS = 500;
+
+// Cores disponíveis para jurisdições
+const AVAILABLE_COLORS = [
+  '#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6',
+  '#EC4899', '#14B8A6', '#F97316', '#06B6D4', '#84CC16'
+];
 
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 /**
+ * Pergunta ao usuário pela jurisdição
+ */
+function askForJurisdiction(churchName) {
+  return new Promise((resolve) => {
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    console.log(`\n❓ Jurisdição não identificada para: "${churchName}"`);
+    console.log(`   Jurisdições conhecidas: ${Object.keys(JURISDICTION_MAP).join(', ')}`);
+    rl.question('   Digite a sigla da jurisdição (ou ENTER para pular): ', (answer) => {
+      rl.close();
+      const code = answer.trim().toUpperCase();
+      resolve(code || null);
+    });
+  });
+}
+
+/**
  * Extrai a jurisdição do nome da igreja
  */
 function extractJurisdiction(name) {
-  const match = name.match(/\s-\s([A-Z]+|Independente)$/);
+  // Aceita variações: " - CODE", "- CODE", " -CODE"
+  const match = name.match(/\s*-\s*([A-Z]+|Independente)$/);
   if (match) {
     const code = match[1];
     return {
       code,
-      cleanName: name.replace(/\s-\s[A-Z]+$/, '').trim()
+      cleanName: name.replace(/\s*-\s*[A-Z]+$/i, '').trim()
     };
   }
   return {
@@ -182,33 +206,86 @@ function extractSchedules(openingHours) {
  * Formata endereço do Google para componentes
  */
 function parseAddress(formattedAddress) {
+  if (!formattedAddress) {
+    return {
+      address: '',
+      city: 'Cidade',
+      state: 'UF',
+      postalCode: '00000-000'
+    };
+  }
+
   const parts = formattedAddress.split(',').map(p => p.trim());
-  
-  // Último item geralmente é "Brasil"
-  // Penúltimo é o CEP
-  // Antes disso: Cidade - Estado
   
   let postalCode = '';
   let state = '';
   let city = '';
   let address = '';
 
-  if (parts.length >= 2) {
-    const lastPart = parts[parts.length - 2]; // Ex: "Recife - PE, 50030-230"
-    
-    const cepMatch = lastPart.match(/(\d{5}-\d{3})/);
+  // Formato comum do Google: "Rua X, 123, Bairro, Cidade - UF, CEP, Brasil"
+  
+  // Procura CEP em qualquer parte
+  for (const part of parts) {
+    const cepMatch = part.match(/(\d{5}-?\d{3})/);
     if (cepMatch) {
-      postalCode = cepMatch[1];
+      postalCode = cepMatch[1].includes('-') ? cepMatch[1] : cepMatch[1].replace(/(\d{5})(\d{3})/, '$1-$2');
+      break;
     }
+  }
 
-    const cityStateMatch = lastPart.match(/^([^-]+)\s*-\s*([A-Z]{2})/);
+  // Procura por "Cidade - UF" em qualquer parte
+  let cityStateFound = false;
+  for (let i = 0; i < parts.length; i++) {
+    const part = parts[i];
+    const cityStateMatch = part.match(/^(.+?)\s*-\s*([A-Z]{2})$/);
+    
     if (cityStateMatch) {
       city = cityStateMatch[1].trim();
       state = cityStateMatch[2].trim();
+      cityStateFound = true;
+      
+      // Endereço são todas as partes antes desta
+      address = parts.slice(0, i).join(', ');
+      break;
     }
-
-    address = parts.slice(0, -2).join(', ');
   }
+
+  // Se não encontrou no formato "Cidade - UF", tenta outras estratégias
+  if (!cityStateFound && parts.length >= 3) {
+    // Penúltima ou antepenúltima parte pode ser a cidade
+    for (let i = parts.length - 1; i >= 0; i--) {
+      const part = parts[i];
+      
+      // Pula se for "Brasil" ou CEP
+      if (part.toLowerCase() === 'brasil' || /\d{5}-?\d{3}/.test(part)) {
+        continue;
+      }
+      
+      // Se tiver estado (2 letras maiúsculas) extraído
+      const stateMatch = part.match(/\b([A-Z]{2})\b/);
+      if (stateMatch && !state) {
+        state = stateMatch[1];
+      }
+      
+      // Se não tem hífen e não tem números, provavelmente é a cidade
+      if (!city && !/\d/.test(part) && !part.includes('-')) {
+        city = part.trim();
+      }
+      
+      if (city && state) {
+        // Endereço são todas as partes antes da cidade
+        const cityIndex = parts.indexOf(part);
+        address = parts.slice(0, cityIndex).join(', ');
+        break;
+      }
+    }
+  }
+
+  // Limpa endereço de CEP e Brasil se tiver
+  address = address
+    .replace(/,?\s*\d{5}-?\d{3}/, '')
+    .replace(/,?\s*Brasil\s*,?/i, '')
+    .trim();
 
   return {
     address: address || formattedAddress,
@@ -216,6 +293,27 @@ function parseAddress(formattedAddress) {
     state: state || 'UF',
     postalCode: postalCode || '00000-000'
   };
+}
+
+/**
+ * Gera SQL para criar uma jurisdição
+ */
+function generateJurisdictionSQL(slug, displayOrder) {
+  const randomColor = AVAILABLE_COLORS[Math.floor(Math.random() * AVAILABLE_COLORS.length)];
+  
+  return `
+-- Criando jurisdição: ${slug}
+INSERT INTO jurisdictions (slug, name, full_name, color, description, display_order)
+VALUES (
+  '${slug}',
+  '${slug}',
+  '${slug}',
+  '${randomColor}',
+  '',
+  ${displayOrder}
+)
+ON CONFLICT (slug) DO NOTHING;
+`;
 }
 
 /**
@@ -229,7 +327,7 @@ function generateSQL(church) {
   const state = church.state.replace(/'/g, "''");
   const postalCode = church.postalCode.replace(/'/g, "''");
   const description = church.description ? church.description.replace(/'/g, "''") : '';
-  const email = church.email || 'contato@exemplo.com';
+  const email = church.email || '';
   
   const schedulesJson = church.schedules.length > 0 
     ? JSON.stringify(church.schedules) 
@@ -242,8 +340,10 @@ function generateSQL(church) {
   const socialMediaJson = JSON.stringify(socialMedia);
 
   const jurisdictionClause = jurisdiction === 'NULL' 
-    ? 'NULL -- PREENCHER MANUALMENTE'
+    ? 'NULL'
     : `(SELECT id FROM jurisdictions WHERE slug = '${jurisdiction}')`;
+
+  const emailValue = email ? `'${email}'` : "''";
 
   return `
   -- ${name}
@@ -260,7 +360,7 @@ function generateSQL(church) {
     '${schedulesJson}'::jsonb,
     ${description ? `'${description}'` : 'NULL'},
     ARRAY[]::TEXT[],
-    '${email}',
+    ${emailValue},
     '${socialMediaJson}'::jsonb
   );`;
 }
@@ -268,7 +368,7 @@ function generateSQL(church) {
 /**
  * Processa o arquivo GPX
  */
-async function processGPX(gpxFilePath) {
+async function processGPX(gpxFilePath, outputDir) {
   console.log('📖 Lendo arquivo GPX...');
   
   const gpxContent = fs.readFileSync(gpxFilePath, 'utf8');
@@ -278,9 +378,67 @@ async function processGPX(gpxFilePath) {
   const waypoints = result.gpx.wpt || [];
   console.log(`✅ Encontrados ${waypoints.length} waypoints\n`);
 
-  const churches = [];
+  // Primeiro, identifica todas as jurisdições únicas
+  console.log('🔍 Identificando jurisdições...');
+  const foundJurisdictions = new Set();
+  const knownJurisdictions = new Set(Object.keys(JURISDICTION_MAP));
+  
+  for (const wpt of waypoints) {
+    const fullName = wpt.name[0];
+    const { code } = extractJurisdiction(fullName);
+    if (code) {
+      foundJurisdictions.add(code);
+    }
+  }
+  
+  // Identifica jurisdições novas (não conhecidas)
+  const newJurisdictions = Array.from(foundJurisdictions).filter(j => !knownJurisdictions.has(j));
+  
+  if (newJurisdictions.length > 0) {
+    console.log(`📝 Encontradas ${newJurisdictions.length} jurisdições novas: ${newJurisdictions.join(', ')}`);
+  } else {
+    console.log(`✅ Todas as jurisdições já são conhecidas`);
+  }
+  console.log('');
+
+  // Cria arquivos de saída
+  const withDetailsPath = path.join(outputDir, 'churches-with-details.sql');
+  const withoutDetailsPath = path.join(outputDir, 'churches-without-details.sql');
+  
+  // Inicializa arquivos com cabeçalho
+  let header = `-- SQL gerado automaticamente a partir de arquivo GPX
+-- Data: ${new Date().toISOString()}
+
+DO $$
+DECLARE
+`;
+
+  // Adiciona SQLs para criar jurisdições novas
+  if (newJurisdictions.length > 0) {
+    header += `\n-- ==========================================\n`;
+    header += `-- CRIANDO JURISDIÇÕES NOVAS\n`;
+    header += `-- ==========================================\n`;
+    
+    // Pega o último display_order (assumindo que começa em 1 e as conhecidas são 9)
+    let displayOrder = Object.keys(JURISDICTION_MAP).length + 1;
+    
+    for (const slug of newJurisdictions) {
+      header += generateJurisdictionSQL(slug, displayOrder);
+      displayOrder++;
+    }
+    
+    header += `\n-- ==========================================\n`;
+    header += `-- INSERINDO IGREJAS\n`;
+    header += `-- ==========================================\n\n`;
+  }
+
+  fs.writeFileSync(withDetailsPath, header, 'utf8');
+  fs.writeFileSync(withoutDetailsPath, header, 'utf8');
+
   let processed = 0;
   let withDetails = 0;
+  let withoutDetails = 0;
+  const notFoundWaypoints = []; // Para salvar waypoints não encontrados
 
   for (const wpt of waypoints) {
     processed++;
@@ -290,7 +448,15 @@ async function processGPX(gpxFilePath) {
     
     console.log(`[${processed}/${waypoints.length}] Processando: ${fullName}`);
 
-    const { code, cleanName } = extractJurisdiction(fullName);
+    let { code, cleanName } = extractJurisdiction(fullName);
+    
+    // Se não encontrou jurisdição, pergunta ao usuário
+    if (!code) {
+      code = await askForJurisdiction(fullName);
+      if (code) {
+        console.log(`   ✓ Jurisdição definida: ${code}`);
+      }
+    }
     
     // Busca detalhes no Google
     const placeDetails = await getPlaceDetails(cleanName, lat, lng);
@@ -311,57 +477,72 @@ async function processGPX(gpxFilePath) {
       email: null
     };
 
+    let hasDetails = false;
+
     if (placeDetails) {
-      withDetails++;
+      hasDetails = true;
       console.log(`   ✓ Detalhes encontrados`);
 
       const addressParts = parseAddress(placeDetails.formatted_address);
+      
+      let website = placeDetails.website || null;
+      let instagram = churchData.instagram;
+
+      // Se o website for Instagram, move para campo instagram
+      if (website && (website.includes('instagram.com') || website.includes('instagr.am'))) {
+        instagram = extractInstagram(website) || website;
+        website = null;
+        console.log(`   ✓ Website é Instagram: ${instagram}`);
+      }
       
       churchData = {
         ...churchData,
         ...addressParts,
         description: placeDetails.editorial_summary?.overview || '',
-        website: placeDetails.website || null,
+        website,
+        instagram,
         schedules: extractSchedules(placeDetails.opening_hours)
       };
+    } else {
+      console.log(`   ⚠️  Sem detalhes - salvando dados básicos`);
     }
 
     // Verifica se tem Instagram na descrição do GPX
     const description = wpt.extensions?.[0]?.['ogr:description']?.[0];
     if (description) {
       const instagram = extractInstagram(description);
-      if (instagram) {
+      if (instagram && !churchData.instagram) {
         churchData.instagram = instagram;
         console.log(`   ✓ Instagram: ${instagram}`);
       }
     }
 
-    churches.push(churchData);
+    // Se não tem jurisdição, considera como "sem detalhes"
+    if (!code) {
+      hasDetails = false;
+      console.log(`   ⚠️  Sem jurisdição identificada`);
+    }
+
+    // Conta separadamente
+    if (hasDetails) {
+      withDetails++;
+    } else {
+      withoutDetails++;
+      // Salva waypoint para GPX separado
+      notFoundWaypoints.push(wpt);
+    }
+
+    // Gera SQL e salva imediatamente no arquivo apropriado
+    const sql = generateSQL(churchData);
+    const targetFile = hasDetails ? withDetailsPath : withoutDetailsPath;
+    fs.appendFileSync(targetFile, sql + '\n', 'utf8');
+    console.log(`   💾 Salvo em: ${hasDetails ? 'with-details' : 'without-details'}`);
     
     // Delay entre igrejas
     await delay(DELAY_MS);
   }
 
-  console.log(`\n✅ Processamento concluído!`);
-  console.log(`   Total: ${processed} igrejas`);
-  console.log(`   Com detalhes: ${withDetails} (${Math.round(withDetails/processed*100)}%)`);
-  console.log(`   Sem detalhes: ${processed - withDetails}`);
-
-  return churches;
-}
-
-/**
- * Gera arquivo SQL
- */
-function generateSQLFile(churches, outputPath) {
-  const header = `-- SQL gerado automaticamente a partir de arquivo GPX
--- Data: ${new Date().toISOString()}
--- Total de igrejas: ${churches.length}
-
-DO $$
-BEGIN
-`;
-
+  // Adiciona footer nos dois arquivos
   const footer = `
 END $$;
 
@@ -375,11 +556,36 @@ GROUP BY j.slug
 ORDER BY j.slug;
 `;
 
-  const sqls = churches.map(generateSQL).join('\n');
-  const fullSQL = header + sqls + footer;
+  fs.appendFileSync(withDetailsPath, footer, 'utf8');
+  fs.appendFileSync(withoutDetailsPath, footer, 'utf8');
 
-  fs.writeFileSync(outputPath, fullSQL, 'utf8');
-  console.log(`\n📝 Arquivo SQL gerado: ${outputPath}`);
+  // Salva GPX com igrejas não encontradas
+  if (notFoundWaypoints.length > 0) {
+    const notFoundGpxPath = path.join(outputDir, 'churches-not-found.gpx');
+    const gpxBuilder = new xml2js.Builder();
+    const notFoundGpx = {
+      gpx: {
+        $: result.gpx.$, // Mantém atributos do GPX original
+        wpt: notFoundWaypoints
+      }
+    };
+    const gpxXml = gpxBuilder.buildObject(notFoundGpx);
+    fs.writeFileSync(notFoundGpxPath, gpxXml, 'utf8');
+    console.log(`\n📍 GPX com igrejas não encontradas: ${notFoundGpxPath}`);
+  }
+
+  console.log(`\n✅ Processamento concluído!`);
+  console.log(`   Total: ${processed} igrejas`);
+  console.log(`   Com detalhes: ${withDetails} (${Math.round(withDetails/processed*100)}%)`);
+  console.log(`   Sem detalhes: ${withoutDetails} (${Math.round(withoutDetails/processed*100)}%)`);
+  console.log(`\n📁 Arquivos gerados:`);
+  console.log(`   ✅ ${withDetailsPath}`);
+  console.log(`   ⚠️  ${withoutDetailsPath}`);
+  if (notFoundWaypoints.length > 0) {
+    console.log(`   📍 ${path.join(outputDir, 'churches-not-found.gpx')} (${notFoundWaypoints.length} igrejas)`);
+  }
+
+  return { withDetails, withoutDetails, total: processed };
 }
 
 // Main
@@ -401,20 +607,26 @@ async function main() {
   console.log('🚀 Iniciando processamento...\n');
 
   try {
-    const churches = await processGPX(gpxFilePath);
-    
     // Cria diretório output se não existir
     const outputDir = path.join(__dirname, '..', 'output');
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }
 
-    const outputPath = path.join(outputDir, 'churches-import.sql');
-    generateSQLFile(churches, outputPath);
+    // Processa GPX e salva em tempo real
+    const stats = await processGPX(gpxFilePath, outputDir);
 
     console.log('\n✅ Processamento concluído com sucesso!');
-    console.log('⚠️  Revise o arquivo SQL antes de executar no banco de dados');
-    console.log('⚠️  Preencha manualmente as jurisdições NULL e emails genéricos');
+    console.log('\n📊 Resumo:');
+    console.log(`   Total processado: ${stats.total} igrejas`);
+    console.log(`   ✅ Com detalhes completos: ${stats.withDetails}`);
+    console.log(`   ⚠️  Apenas dados básicos: ${stats.withoutDetails}`);
+    console.log('\n⚠️  Próximos passos:');
+    console.log('   1. Revise os arquivos SQL gerados');
+    console.log('   2. Preencha manualmente as jurisdições NULL');
+    console.log('   3. Substitua emails genéricos');
+    console.log('   4. Complete dados das igrejas sem detalhes');
+    console.log('   5. Execute os SQLs no Supabase');
   } catch (error) {
     console.error('❌ Erro:', error);
     process.exit(1);
