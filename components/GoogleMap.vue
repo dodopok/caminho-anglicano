@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Church } from '~/types/church'
+import type { Church, ChurchSchedule } from '~/types/church'
 
 interface Props {
   churches: Church[]
@@ -17,9 +17,128 @@ const mapContainer = ref<HTMLElement | null>(null)
 const mapInstance = ref<any>(null)
 const markers = ref<any[]>([])
 const userMarker = ref<any>(null)
+const infoWindow = ref<any>(null)
 
 function getJurisdictionColor(church: Church): string {
   return church.jurisdiction?.color || '#6B7280'
+}
+
+function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const earthRadiusKm = 6371
+  const dLat = degreesToRadians(lat2 - lat1)
+  const dLon = degreesToRadians(lon2 - lon1)
+
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(degreesToRadians(lat1)) * Math.cos(degreesToRadians(lat2)) *
+    Math.sin(dLon / 2) * Math.sin(dLon / 2)
+
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+  return earthRadiusKm * c
+}
+
+function degreesToRadians(degrees: number): number {
+  return degrees * (Math.PI / 180)
+}
+
+function formatSchedules(schedules: ChurchSchedule[]): string {
+  if (!schedules || schedules.length === 0) return 'Não informado'
+
+  return schedules.map(s => `${s.day} às ${s.time}`).join('<br>')
+}
+
+function createInfoWindowContent(church: Church): string {
+  const jurisdictionColor = getJurisdictionColor(church)
+  const jurisdictionName = church.jurisdiction?.name || ''
+
+  let socialMediaHtml = ''
+  if (church.socialMedia) {
+    const links = []
+    if (church.socialMedia.website) {
+      links.push(`<a href="${church.socialMedia.website}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">Site</a>`)
+    }
+    if (church.socialMedia.instagram) {
+      links.push(`<a href="${church.socialMedia.instagram}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">Instagram</a>`)
+    }
+    if (church.socialMedia.youtube) {
+      links.push(`<a href="${church.socialMedia.youtube}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">YouTube</a>`)
+    }
+    if (church.socialMedia.spotify) {
+      links.push(`<a href="${church.socialMedia.spotify}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">Spotify</a>`)
+    }
+    if (links.length > 0) {
+      socialMediaHtml = `
+        <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid #e5e7eb;">
+          <div style="font-weight: 600; color: #374151; margin-bottom: 4px;">Redes Sociais:</div>
+          <div>${links.join(' • ')}</div>
+        </div>
+      `
+    }
+  }
+
+  let pastorsHtml = ''
+  if (church.pastors && church.pastors.length > 0) {
+    pastorsHtml = `
+      <div style="margin-top: 8px;">
+        <span style="font-weight: 600; color: #374151;">Pastores:</span> ${church.pastors.join(', ')}
+      </div>
+    `
+  }
+
+  let descriptionHtml = ''
+  if (church.description) {
+    descriptionHtml = `
+      <div style="margin-top: 8px; color: #6b7280;">
+        ${church.description}
+      </div>
+    `
+  }
+
+  const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${church.latitude},${church.longitude}`
+
+  return `
+    <div style="max-width: 300px; padding: 4px; font-family: system-ui, -apple-system, sans-serif;">
+      <div style="display: flex; align-items: start; gap: 8px; margin-bottom: 8px;">
+        <h3 style="font-size: 16px; font-weight: 700; color: #111827; margin: 0; flex: 1;">
+          ${church.name}
+        </h3>
+        <span style="padding: 2px 8px; font-size: 11px; font-weight: 600; border-radius: 4px; background-color: ${jurisdictionColor}22; color: ${jurisdictionColor}; white-space: nowrap;">
+          ${jurisdictionName}
+        </span>
+      </div>
+
+      <div style="font-size: 13px; color: #6b7280; margin-bottom: 4px;">
+        📍 ${church.address}, ${church.city} - ${church.state}
+      </div>
+
+      ${descriptionHtml}
+
+      <div style="margin-top: 8px; font-size: 13px;">
+        <div style="font-weight: 600; color: #374151; margin-bottom: 4px;">Horários de Culto:</div>
+        <div style="color: #6b7280;">${formatSchedules(church.schedules)}</div>
+      </div>
+
+      ${pastorsHtml}
+      ${socialMediaHtml}
+
+      <div style="margin-top: 12px; padding-top: 8px; border-top: 1px solid #e5e7eb;">
+        <a
+          href="${mapsUrl}"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background-color: #4F46E5; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background-color 0.2s;"
+          onmouseover="this.style.backgroundColor='#4338CA'"
+          onmouseout="this.style.backgroundColor='#4F46E5'"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Como chegar
+        </a>
+      </div>
+    </div>
+  `
 }
 
 function loadGoogleMapsScript(): Promise<void> {
@@ -64,6 +183,9 @@ async function initializeMap() {
       fullscreenControl: true
     })
 
+    // Create InfoWindow instance
+    infoWindow.value = new google.maps.InfoWindow()
+
     updateMarkers()
   } catch (error) {
     console.error('Error loading Google Maps:', error)
@@ -84,24 +206,25 @@ function updateUserMarker() {
 
   // Add new user marker if location is provided
   if (props.userLocation) {
+    // Create a custom person icon using SVG path
+    const personIcon = {
+      // SVG path for a person icon
+      path: 'M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM12 7C14.2 7 16 8.8 16 11V14H8V11C8 8.8 9.8 7 12 7Z',
+      fillColor: '#4F46E5',
+      fillOpacity: 1,
+      strokeColor: '#ffffff',
+      strokeWeight: 2,
+      scale: 1.5,
+      anchor: new google.maps.Point(12, 16) // Center the icon
+    }
+
     userMarker.value = new google.maps.Marker({
       position: { lat: props.userLocation.lat, lng: props.userLocation.lng },
       map: mapInstance.value,
       title: 'Você está aqui',
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        scale: 10,
-        fillColor: '#4F46E5',
-        fillOpacity: 1,
-        strokeColor: '#ffffff',
-        strokeWeight: 3
-      },
+      icon: personIcon,
       zIndex: 1000
     })
-
-    // Center map on user location
-    mapInstance.value.panTo({ lat: props.userLocation.lat, lng: props.userLocation.lng })
-    mapInstance.value.setZoom(13)
   }
 }
 
@@ -115,12 +238,26 @@ function updateMarkers() {
   markers.value = []
 
   const bounds = new google.maps.LatLngBounds()
+  const MAX_DISTANCE_KM = 30 // Zoom to show 30km radius when user location is set
 
-  // Add user location to bounds if available
+  // If user location is set, create bounds for 30km radius around user
   if (props.userLocation) {
+    // Add user location to bounds
     bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng })
+
+    // Create a circle around user location to ensure proper bounds
+    // Calculate points around the user at 30km distance to ensure bounds include the full radius
+    const earthRadiusKm = 6371
+    const radiusInDegrees = (MAX_DISTANCE_KM / earthRadiusKm) * (180 / Math.PI)
+
+    // Add points at cardinal directions to ensure 30km radius is visible
+    bounds.extend({ lat: props.userLocation.lat + radiusInDegrees, lng: props.userLocation.lng })
+    bounds.extend({ lat: props.userLocation.lat - radiusInDegrees, lng: props.userLocation.lng })
+    bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng + radiusInDegrees / Math.cos(props.userLocation.lat * Math.PI / 180) })
+    bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng - radiusInDegrees / Math.cos(props.userLocation.lat * Math.PI / 180) })
   }
 
+  // Show all church markers
   props.churches.forEach(church => {
     const marker = new google.maps.Marker({
       position: { lat: church.latitude, lng: church.longitude },
@@ -137,33 +274,59 @@ function updateMarkers() {
     })
 
     marker.addListener('click', () => {
+      // Open InfoWindow with church details
+      if (infoWindow.value) {
+        infoWindow.value.setContent(createInfoWindowContent(church))
+        infoWindow.value.open(mapInstance.value, marker)
+      }
+
+      // Also emit selectChurch event for sidebar highlighting
       emit('selectChurch', church.id)
     })
 
     markers.value.push(marker)
-    bounds.extend(marker.getPosition())
+
+    // Only extend bounds with churches if no user location (show all churches)
+    if (!props.userLocation) {
+      bounds.extend(marker.getPosition())
+    }
   })
 
   updateUserMarker()
 
-  // Only fit bounds if no user location (otherwise updateUserMarker handles centering)
-  if (props.churches.length > 0 && !props.userLocation) {
+  // Fit bounds to show appropriate area
+  if (props.userLocation || props.churches.length > 0) {
     mapInstance.value.fitBounds(bounds)
 
-    // Prevent zooming in too much for single marker
-    const listener = google.maps.event.addListener(mapInstance.value, 'idle', () => {
-      if (props.churches.length === 1 && mapInstance.value.getZoom() > 15) {
-        mapInstance.value.setZoom(15)
-      }
-      google.maps.event.removeListener(listener)
-    })
+    // For user location, set a reasonable zoom level
+    if (props.userLocation) {
+      const listener = google.maps.event.addListener(mapInstance.value, 'idle', () => {
+        const zoom = mapInstance.value.getZoom()
+        // Limit zoom between 10 and 13 for 30km radius view
+        if (zoom > 13) {
+          mapInstance.value.setZoom(13)
+        } else if (zoom < 10) {
+          mapInstance.value.setZoom(10)
+        }
+        google.maps.event.removeListener(listener)
+      })
+    } else {
+      // For all churches view, prevent zooming in too much
+      const listener = google.maps.event.addListener(mapInstance.value, 'idle', () => {
+        const zoom = mapInstance.value.getZoom()
+        if (zoom > 15) {
+          mapInstance.value.setZoom(15)
+        }
+        google.maps.event.removeListener(listener)
+      })
+    }
   }
 }
 
 watch(() => props.churches, updateMarkers, { deep: true })
 
 watch(() => props.userLocation, () => {
-  updateUserMarker()
+  updateMarkers()
 }, { deep: true })
 
 watch(() => props.selectedChurchId, (newId) => {
@@ -171,6 +334,17 @@ watch(() => props.selectedChurchId, (newId) => {
 
   const church = props.churches.find(c => c.id === newId)
   if (church) {
+    // Find the marker for this church
+    const markerIndex = props.churches.findIndex(c => c.id === newId)
+    const marker = markers.value[markerIndex]
+
+    if (marker && infoWindow.value) {
+      // Open InfoWindow at the marker
+      infoWindow.value.setContent(createInfoWindowContent(church))
+      infoWindow.value.open(mapInstance.value, marker)
+    }
+
+    // Pan to church and zoom
     mapInstance.value.panTo({ lat: church.latitude, lng: church.longitude })
     mapInstance.value.setZoom(15)
   }
