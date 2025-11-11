@@ -134,6 +134,30 @@ async function getPlaceDetails(name, lat, lng) {
 }
 
 /**
+ * Busca endereço pela latitude e longitude (Reverse Geocoding)
+ */
+async function getAddressFromCoordinates(lat, lng) {
+  try {
+    const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&language=pt-BR&key=${GOOGLE_API_KEY}`;
+    
+    const response = await fetch(geocodeUrl);
+    const data = await response.json();
+
+    if (data.status !== 'OK' || !data.results || data.results.length === 0) {
+      console.log(`   ⚠️  Não foi possível obter endereço das coordenadas`);
+      return null;
+    }
+
+    // Pega o primeiro resultado (geralmente o mais específico)
+    const formattedAddress = data.results[0].formatted_address;
+    return formattedAddress;
+  } catch (error) {
+    console.error(`   ❌ Erro ao buscar endereço por coordenadas:`, error.message);
+    return null;
+  }
+}
+
+/**
  * Extrai Instagram de texto ou descrição
  */
 function extractInstagram(text) {
@@ -233,9 +257,9 @@ function parseAddress(formattedAddress) {
     }
   }
 
-  // Procura por "Cidade - UF" em qualquer parte
+  // Procura por "Cidade - UF" em qualquer parte (prioriza as últimas partes)
   let cityStateFound = false;
-  for (let i = 0; i < parts.length; i++) {
+  for (let i = parts.length - 1; i >= 0; i--) {
     const part = parts[i];
     const cityStateMatch = part.match(/^(.+?)\s*-\s*([A-Z]{2})$/);
     
@@ -244,8 +268,16 @@ function parseAddress(formattedAddress) {
       state = cityStateMatch[2].trim();
       cityStateFound = true;
       
-      // Endereço são todas as partes antes desta
-      address = parts.slice(0, i).join(', ');
+      // Endereço são todas as partes antes desta (exceto a que tem Cidade - UF e CEP/Brasil)
+      const addressParts = [];
+      for (let j = 0; j < i; j++) {
+        const addressPart = parts[j];
+        // Pula CEP e Brasil
+        if (!/\d{5}-?\d{3}/.test(addressPart) && addressPart.toLowerCase() !== 'brasil') {
+          addressParts.push(addressPart);
+        }
+      }
+      address = addressParts.join(', ');
       break;
     }
   }
@@ -405,12 +437,20 @@ async function processGPX(gpxFilePath, outputDir) {
   const withDetailsPath = path.join(outputDir, 'churches-with-details.sql');
   const withoutDetailsPath = path.join(outputDir, 'churches-without-details.sql');
   
+  // Limpa arquivos existentes (zera os arquivos)
+  console.log('🗑️  Limpando arquivos SQL anteriores...');
+  if (fs.existsSync(withDetailsPath)) {
+    fs.unlinkSync(withDetailsPath);
+  }
+  if (fs.existsSync(withoutDetailsPath)) {
+    fs.unlinkSync(withoutDetailsPath);
+  }
+  console.log('✅ Arquivos SQL zerados\n');
+  
   // Inicializa arquivos com cabeçalho
   let header = `-- SQL gerado automaticamente a partir de arquivo GPX
 -- Data: ${new Date().toISOString()}
 
-DO $$
-DECLARE
 `;
 
   // Adiciona SQLs para criar jurisdições novas
@@ -479,9 +519,21 @@ DECLARE
 
     let hasDetails = false;
 
-    if (placeDetails) {
+    // Verifica se tem endereço manual no GPX (tag <address>)
+    const manualAddress = wpt.address?.[0];
+    
+    if (manualAddress) {
+      console.log(`   ℹ️  Endereço manual encontrado no GPX`);
       hasDetails = true;
-      console.log(`   ✓ Detalhes encontrados`);
+      
+      const addressParts = parseAddress(manualAddress);
+      churchData = {
+        ...churchData,
+        ...addressParts
+      };
+    } else if (placeDetails) {
+      hasDetails = true;
+      console.log(`   ✓ Detalhes encontrados no Google`);
 
       const addressParts = parseAddress(placeDetails.formatted_address);
       
@@ -504,7 +556,21 @@ DECLARE
         schedules: extractSchedules(placeDetails.opening_hours)
       };
     } else {
-      console.log(`   ⚠️  Sem detalhes - salvando dados básicos`);
+      // Se não tem endereço manual nem Google Places, tenta geocoding reverso
+      console.log(`   ⚠️  Sem detalhes do Google - tentando obter endereço por coordenadas...`);
+      const geocodedAddress = await getAddressFromCoordinates(lat, lng);
+      
+      if (geocodedAddress) {
+        console.log(`   ✓ Endereço obtido por geocoding reverso`);
+        hasDetails = true;
+        const addressParts = parseAddress(geocodedAddress);
+        churchData = {
+          ...churchData,
+          ...addressParts
+        };
+      } else {
+        console.log(`   ⚠️  Sem detalhes - salvando apenas coordenadas`);
+      }
     }
 
     // Verifica se tem Instagram na descrição do GPX
