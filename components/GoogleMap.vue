@@ -38,6 +38,36 @@ function degreesToRadians(degrees: number): number {
   return degrees * (Math.PI / 180)
 }
 
+function normalizeInstagramUrl(instagram: string): string {
+  if (!instagram) return ''
+  
+  // Se já é uma URL completa, retorna como está
+  if (instagram.startsWith('http://') || instagram.startsWith('https://')) {
+    return instagram
+  }
+  
+  // Remove @ se tiver
+  const username = instagram.replace('@', '').trim()
+  
+  // Retorna URL completa do Instagram
+  return `https://www.instagram.com/${username}`
+}
+
+function normalizeYoutubeUrl(youtube: string): string {
+  if (!youtube) return ''
+  
+  // Se já é uma URL completa, retorna como está
+  if (youtube.startsWith('http://') || youtube.startsWith('https://')) {
+    return youtube
+  }
+  
+  // Remove @ se tiver
+  const handle = youtube.replace('@', '').trim()
+  
+  // Retorna URL completa do YouTube
+  return `https://www.youtube.com/@${handle}`
+}
+
 function formatSchedules(schedules: ChurchSchedule[]): string {
   if (!schedules || schedules.length === 0) return 'Não informado'
 
@@ -56,10 +86,12 @@ function createInfoWindowContent(church: Church): string {
       links.push(`<a href="${church.socialMedia.website}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">Site</a>`)
     }
     if (church.socialMedia.instagram) {
-      links.push(`<a href="https://instagram.com/${church.socialMedia.instagram}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">Instagram</a>`)
+      const instagramUrl = normalizeInstagramUrl(church.socialMedia.instagram)
+      links.push(`<a href="${instagramUrl}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">Instagram</a>`)
     }
     if (church.socialMedia.youtube) {
-      links.push(`<a href="${church.socialMedia.youtube}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">YouTube</a>`)
+      const youtubeUrl = normalizeYoutubeUrl(church.socialMedia.youtube)
+      links.push(`<a href="${youtubeUrl}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">YouTube</a>`)
     }
     if (church.socialMedia.spotify) {
       links.push(`<a href="${church.socialMedia.spotify}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">Spotify</a>`)
