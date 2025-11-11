@@ -70,6 +70,7 @@ const isAddChurchTypeModalOpen = ref(false)
 const isAddChurchModalOpen = ref(false)
 const isAddBulkModalOpen = ref(false)
 const isSidebarOpen = ref(false)
+const isJurisdictionDropdownOpen = ref(false)
 
 async function loadChurches() {
   isLoading.value = true
@@ -253,6 +254,12 @@ function toggleSidebar() {
   isSidebarOpen.value = !isSidebarOpen.value
 }
 
+function toggleJurisdictionDropdown() {
+  console.log('Toggling dropdown from:', isJurisdictionDropdownOpen.value)
+  isJurisdictionDropdownOpen.value = !isJurisdictionDropdownOpen.value
+  console.log('Toggled dropdown to:', isJurisdictionDropdownOpen.value)
+}
+
 function handleSubmissionSuccess() {
   loadChurches()
 }
@@ -310,6 +317,21 @@ watch(() => filters.value.searchQuery, applyFilters)
 onMounted(async () => {
   await fetchJurisdictions()
   await loadChurches()
+
+  // Close dropdown when clicking outside
+  const handleClickOutside = (e: MouseEvent) => {
+    const target = e.target as HTMLElement
+    if (!target.closest('.jurisdiction-dropdown-container')) {
+      isJurisdictionDropdownOpen.value = false
+    }
+  }
+
+  document.addEventListener('click', handleClickOutside)
+
+  // Cleanup on unmount
+  onBeforeUnmount(() => {
+    document.removeEventListener('click', handleClickOutside)
+  })
 })
 </script>
 
@@ -378,19 +400,58 @@ onMounted(async () => {
           </div>
 
           <!-- Jurisdiction Filter -->
-          <div>
+          <div class="jurisdiction-dropdown-container">
             <label class="block text-sm font-medium text-gray-700 mb-1">
               Filtrar por jurisdição
             </label>
-            <select
-              v-model="filters.jurisdictionId"
-              class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
-            >
-              <option :value="undefined">Todas</option>
-              <option v-for="j in jurisdictions" :key="j.id" :value="j.id">
-                {{ j.name }}
-              </option>
-            </select>
+            <div class="relative">
+              <button
+                type="button"
+                @click.stop="toggleJurisdictionDropdown"
+                class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white text-left flex items-center justify-between"
+              >
+                <span class="flex items-center gap-2">
+                  <span
+                    v-if="filters.jurisdictionId"
+                    class="w-3 h-3 rounded-full flex-shrink-0"
+                    :style="{ backgroundColor: getJurisdictionColor(filters.jurisdictionId) }"
+                  />
+                  <span>{{ filters.jurisdictionId ? getJurisdictionName(filters.jurisdictionId) : 'Todas' }}</span>
+                </span>
+                <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              
+              <!-- Dropdown -->
+              <Transition name="dropdown">
+                <div
+                  v-if="isJurisdictionDropdownOpen"
+                  class="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded shadow-lg max-h-60 overflow-auto"
+                >
+                  <button
+                    type="button"
+                    @click="filters.jurisdictionId = undefined; isJurisdictionDropdownOpen = false"
+                    class="w-full px-3 py-2 text-sm text-left hover:bg-gray-50 transition-colors flex items-center gap-2"
+                  >
+                    <span>Todas</span>
+                  </button>
+                  <button
+                    v-for="j in jurisdictions"
+                    :key="j.id"
+                    type="button"
+                    @click="filters.jurisdictionId = j.id; isJurisdictionDropdownOpen = false"
+                    class="w-full px-3 py-2 text-sm text-left hover:bg-gray-50 transition-colors flex items-center gap-2"
+                  >
+                    <span
+                      class="w-3 h-3 rounded-full flex-shrink-0"
+                      :style="{ backgroundColor: j.color }"
+                    />
+                    <span>{{ j.name }}</span>
+                  </button>
+                </div>
+              </Transition>
+            </div>
           </div>
 
           <!-- Near Me Button -->
@@ -544,5 +605,16 @@ onMounted(async () => {
 .overlay-enter-from,
 .overlay-leave-to {
   opacity: 0;
+}
+
+.dropdown-enter-active,
+.dropdown-leave-active {
+  transition: all 0.2s ease;
+}
+
+.dropdown-enter-from,
+.dropdown-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
 }
 </style>
