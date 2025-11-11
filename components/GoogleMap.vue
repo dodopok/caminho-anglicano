@@ -15,7 +15,6 @@ const config = useRuntimeConfig()
 const mapContainer = ref<HTMLElement | null>(null)
 const mapInstance = ref<any>(null)
 const markers = ref<any[]>([])
-const googleMaps = ref<any>(null)
 
 const jurisdictionColors: Record<Jurisdiction, string> = {
   IAB: '#3B82F6',
@@ -24,22 +23,22 @@ const jurisdictionColors: Record<Jurisdiction, string> = {
   IARB: '#EF4444'
 }
 
-async function loadGoogleMapsScript() {
-  if (typeof window === 'undefined') return
+function loadGoogleMapsScript(): Promise<void> {
+  if (typeof window === 'undefined') return Promise.reject()
 
   return new Promise((resolve, reject) => {
-    if ((window as any).google?.maps) {
-      resolve((window as any).google.maps)
+    if ((window as any).google?.maps?.Map) {
+      resolve()
       return
     }
 
     const script = document.createElement('script')
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${config.public.googleMapsApiKey}&v=weekly&loading=async`
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${config.public.googleMapsApiKey}&libraries=marker`
     script.async = true
     script.defer = true
     script.onload = () => {
-      if ((window as any).google?.maps) {
-        resolve((window as any).google.maps)
+      if ((window as any).google?.maps?.Map) {
+        resolve()
       } else {
         reject(new Error('Google Maps failed to load'))
       }
@@ -53,44 +52,49 @@ async function initializeMap() {
   if (!mapContainer.value || typeof window === 'undefined') return
 
   try {
-    const maps = await loadGoogleMapsScript()
-    googleMaps.value = maps
+    await loadGoogleMapsScript()
 
+    const google = (window as any).google
     const brazilCenter = { lat: -14.235004, lng: -51.92528 }
 
-    const { Map } = await (window as any).google.maps.importLibrary('maps')
-
-    mapInstance.value = new Map(mapContainer.value, {
+    mapInstance.value = new google.maps.Map(mapContainer.value, {
       center: brazilCenter,
       zoom: 4,
       mapTypeControl: false,
       streetViewControl: false,
-      fullscreenControl: true,
-      mapId: 'CAMINHO_ANGLICANO_MAP'
+      fullscreenControl: true
     })
 
-    await updateMarkers()
+    updateMarkers()
   } catch (error) {
     console.error('Error loading Google Maps:', error)
   }
 }
 
-async function updateMarkers() {
-  if (!mapInstance.value || !googleMaps.value || typeof window === 'undefined') return
+function updateMarkers() {
+  if (!mapInstance.value || typeof window === 'undefined') return
+
+  const google = (window as any).google
+  if (!google?.maps) return
 
   markers.value.forEach((marker: any) => marker.setMap(null))
   markers.value = []
 
-  const { LatLngBounds } = await (window as any).google.maps.importLibrary('core')
-  const { Marker } = await (window as any).google.maps.importLibrary('marker')
-
-  const bounds = new LatLngBounds()
+  const bounds = new google.maps.LatLngBounds()
 
   props.churches.forEach(church => {
-    const marker = new Marker({
+    const marker = new google.maps.Marker({
       position: { lat: church.latitude, lng: church.longitude },
       map: mapInstance.value,
-      title: church.name
+      title: church.name,
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 8,
+        fillColor: jurisdictionColors[church.jurisdiction],
+        fillOpacity: 0.9,
+        strokeColor: '#ffffff',
+        strokeWeight: 2
+      }
     })
 
     marker.addListener('click', () => {
@@ -98,14 +102,19 @@ async function updateMarkers() {
     })
 
     markers.value.push(marker)
-    const position = marker.getPosition()
-    if (position) {
-      bounds.extend(position)
-    }
+    bounds.extend(marker.getPosition())
   })
 
-  if (props.churches.length > 0 && !bounds.isEmpty()) {
+  if (props.churches.length > 0) {
     mapInstance.value.fitBounds(bounds)
+
+    // Prevent zooming in too much for single marker
+    const listener = google.maps.event.addListener(mapInstance.value, 'idle', () => {
+      if (props.churches.length === 1 && mapInstance.value.getZoom() > 15) {
+        mapInstance.value.setZoom(15)
+      }
+      google.maps.event.removeListener(listener)
+    })
   }
 }
 
