@@ -190,8 +190,9 @@ async function handleNearMe() {
     const location = await getUserLocation()
     userLocation.value = location
 
-    // Clear jurisdiction filter when using location
+    // Clear all filters when using location
     filters.value.jurisdictionId = undefined
+    filters.value.searchQuery = ''
 
     // Sort churches by distance
     sortChurchesByDistance(location)
@@ -422,7 +423,7 @@ onMounted(async () => {
         <!-- Results Header -->
         <div class="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
           <span class="text-sm text-gray-600">
-            {{ churches.length }} igreja(s) cadastrada(s)
+            {{ churches.length }} igrejas cadastradas
           </span>
           <button
             type="button"
