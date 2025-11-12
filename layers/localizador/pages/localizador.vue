@@ -335,12 +335,21 @@ onMounted(async () => {
 <template>
   <div class="h-screen flex flex-col bg-white">
     <!-- Header -->
-    <header class="border-b border-gray-200 bg-white px-6 py-4">
-      <NuxtLink to="/" class="block">
-        <h1 class="text-2xl font-bold text-gray-900">Caminho Anglicano</h1>
-        <p class="text-sm text-gray-500">Localizador de Igrejas</p>
-      </NuxtLink>
-    </header>
+    <nav class="bg-white shadow-sm border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <h1 class="text-2xl font-bold text-slate-800">
+            Localizador de igrejas
+          </h1>
+          <NuxtLink
+            to="/"
+            class="text-slate-600 hover:text-slate-900 transition-colors text-sm"
+          >
+            ← Voltar
+          </NuxtLink>
+        </div>
+      </div>
+    </nav>
 
     <!-- Main Content -->
     <div class="flex-1 flex overflow-hidden relative">
