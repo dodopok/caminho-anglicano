@@ -73,6 +73,7 @@ const isAddChurchTypeModalOpen = ref(false)
 const isAddChurchModalOpen = ref(false)
 const isAddBulkModalOpen = ref(false)
 const isSidebarOpen = ref(false)
+const isFeedbackModalOpen = ref(false)
 
 async function loadChurches() {
   isLoading.value = true
@@ -516,6 +517,20 @@ onMounted(async () => {
             </div>
           </template>
         </ClientOnly>
+
+        <!-- Floating Feedback Button -->
+        <button
+          type="button"
+          class="fixed bottom-6 right-6 z-20 bg-yellow-500 text-gray-900 rounded-lg shadow-lg px-4 py-3 hover:bg-yellow-600 transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 flex items-center gap-2 font-medium"
+          @click="isFeedbackModalOpen = true"
+          aria-label="Reportar problema ou atualização"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+          </svg>
+          <span class="hidden sm:inline">Reportar problema/atualização</span>
+          <span class="sm:hidden">Reportar</span>
+        </button>
       </main>
     </div>
 
@@ -537,6 +552,12 @@ onMounted(async () => {
       :is-open="isAddBulkModalOpen"
       @close="isAddBulkModalOpen = false"
       @success="handleSubmissionSuccess"
+    />
+
+    <FeedbackModal
+      :is-open="isFeedbackModalOpen"
+      @close="isFeedbackModalOpen = false"
+      @success="() => {}"
     />
   </div>
 </template>
