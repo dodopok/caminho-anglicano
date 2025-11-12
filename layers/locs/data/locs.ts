@@ -23,11 +23,11 @@ export const locs: Loc[] = [
     pdfUrl: '/locs/pdfs/locb-2008.pdf'
   },
   {
-    id: 'locb-2009',
+    id: 'loc-2009',
     title: 'Livro de Oração Comum - IARB - 2009',
     description: 'Adotado pela Igreja Anglicana Reformada do Brasil, na época que era parte da Free Church of England',
-    thumbnailUrl: '/locs/thumbs/locb-2009.png',
-    pdfUrl: '/locs/pdfs/locb-2009.pdf'
+    thumbnailUrl: '/locs/thumbs/loc-2009.png',
+    pdfUrl: '/locs/pdfs/loc-2009.pdf'
   },
   {
     id: 'loc-2015',

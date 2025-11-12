@@ -271,19 +271,19 @@ function updateMarkers() {
   markers.value.length = 0 // Clear the array
 
   const bounds = new google.maps.LatLngBounds()
-  const MAX_DISTANCE_KM = 30 // Zoom to show 30km radius when user location is set
+  const MAX_DISTANCE_KM = 20 // Zoom to show 20km radius when user location is set
 
-  // If user location is set, create bounds for 30km radius around user
+  // If user location is set, create bounds for 20km radius around user
   if (props.userLocation) {
     // Add user location to bounds
     bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng })
 
     // Create a circle around user location to ensure proper bounds
-    // Calculate points around the user at 30km distance to ensure bounds include the full radius
+    // Calculate points around the user at 20km distance to ensure bounds include the full radius
     const earthRadiusKm = 6371
     const radiusInDegrees = (MAX_DISTANCE_KM / earthRadiusKm) * (180 / Math.PI)
 
-    // Add points at cardinal directions to ensure 30km radius is visible
+    // Add points at cardinal directions to ensure 20km radius is visible
     bounds.extend({ lat: props.userLocation.lat + radiusInDegrees, lng: props.userLocation.lng })
     bounds.extend({ lat: props.userLocation.lat - radiusInDegrees, lng: props.userLocation.lng })
     bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng + radiusInDegrees / Math.cos(props.userLocation.lat * Math.PI / 180) })
@@ -371,11 +371,11 @@ function updateMarkers() {
     if (props.userLocation) {
       const listener = google.maps.event.addListener(mapInstance.value, 'idle', () => {
         const zoom = mapInstance.value.getZoom()
-        // Limit zoom between 10 and 13 for 30km radius view
-        if (zoom > 13) {
-          mapInstance.value.setZoom(13)
-        } else if (zoom < 10) {
-          mapInstance.value.setZoom(10)
+        // Limit zoom between 11 and 14 for 20km radius view
+        if (zoom > 14) {
+          mapInstance.value.setZoom(14)
+        } else if (zoom < 11) {
+          mapInstance.value.setZoom(11)
         }
         google.maps.event.removeListener(listener)
       })

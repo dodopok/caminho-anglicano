@@ -77,6 +77,46 @@
 <script setup lang="ts">
 import { locs } from '../data/locs'
 
+const siteUrl = 'https://caminhoanglicano.com.br'
+
+useSeoMeta({
+  title: 'Livro de Oração Comum - Caminho Anglicano',
+  description: 'Acesse diferentes versões do Livro de Oração Comum em português. Explore liturgias anglicanas tradicionais e contemporâneas.',
+  ogTitle: 'Livro de Oração Comum - Caminho Anglicano',
+  ogDescription: 'Acesse diferentes versões do Livro de Oração Comum em português. Explore liturgias anglicanas tradicionais e contemporâneas.',
+  ogImage: `${siteUrl}/og-image-locs.png`,
+  ogUrl: `${siteUrl}/locs`,
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Livro de Oração Comum - Caminho Anglicano',
+  twitterDescription: 'Acesse diferentes versões do Livro de Oração Comum em português. Explore liturgias anglicanas tradicionais e contemporâneas.',
+  twitterImage: `${siteUrl}/og-image-locs.png`,
+})
+
+useHead({
+  link: [
+    { rel: 'canonical', href: `${siteUrl}/locs` }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        name: 'Livro de Oração Comum',
+        url: `${siteUrl}/locs`,
+        description: 'Acesse diferentes versões do Livro de Oração Comum em português. Explore liturgias anglicanas tradicionais e contemporâneas.',
+        inLanguage: 'pt-BR',
+        isPartOf: {
+          '@type': 'WebSite',
+          name: 'Caminho Anglicano',
+          url: siteUrl
+        }
+      })
+    }
+  ]
+})
+
 const handleImageError = (event: Event) => {
   const target = event.target as HTMLImageElement
   target.style.display = 'none'

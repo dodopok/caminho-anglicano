@@ -7,7 +7,8 @@ export default defineNuxtConfig({
   extends: [
     './layers/base',
     './layers/localizador',
-    './layers/locs'
+    './layers/locs',
+    './layers/dashboard'
   ],
 
   typescript: {

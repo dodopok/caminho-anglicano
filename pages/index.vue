@@ -100,6 +100,37 @@ useHead({
         </NuxtLink>
 
         <NuxtLink
+          to="/dashboard"
+          class="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 border border-slate-200 hover:border-slate-300"
+          aria-label="Acessar o Dashboard de Estatísticas"
+        >
+          <div class="flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-slate-200 transition-colors">
+              <svg
+                class="w-8 h-8 text-slate-700"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">
+              Dashboard de Igrejas
+            </h3>
+            <p class="text-slate-600">
+              Visualize estatísticas e dados sobre igrejas anglicanas no Brasil
+            </p>
+          </div>
+        </NuxtLink>
+
+        <NuxtLink
           to="/locs"
           class="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 border border-slate-200 hover:border-slate-300"
           aria-label="Acessar o Livro de Oração Comum"
@@ -125,7 +156,7 @@ useHead({
               Livro de Oração Comum
             </h3>
             <p class="text-slate-600">
-              Acesse o Livro de Oração Comum e recursos de liturgia
+              Tenha acesso a várias edições do Livro de Oração Comum digitalmente
             </p>
           </div>
         </NuxtLink>
