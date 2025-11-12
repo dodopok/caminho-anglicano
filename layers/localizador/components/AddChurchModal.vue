@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Jurisdiction } from '~/types/church'
+import type { Jurisdiction } from '../types/church'
 
 interface Props {
   isOpen: boolean

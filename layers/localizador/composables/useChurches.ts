@@ -1,4 +1,4 @@
-import type { Church, ChurchFilters } from '~/types/church'
+import type { Church, ChurchFilters } from '../types/church'
 
 export function useChurches() {
   async function fetchChurches(filters?: ChurchFilters): Promise<Church[]> {

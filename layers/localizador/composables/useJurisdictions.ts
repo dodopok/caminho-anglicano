@@ -1,4 +1,4 @@
-import type { Jurisdiction } from '~/types/church'
+import type { Jurisdiction } from '../types/church'
 
 // Estado global compartilhado
 const jurisdictions = ref<Jurisdiction[]>([])

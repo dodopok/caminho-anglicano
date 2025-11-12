@@ -78,3 +78,7 @@ export interface ChurchFilters {
   address?: string
   postalCode?: string
 }
+
+export interface ChurchWithDistance extends Church {
+  distance?: number // Distance in kilometers
+}

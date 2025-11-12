@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Church, ChurchSchedule } from '~/types/church'
+import type { Church, ChurchSchedule } from '../types/church'
 
 interface Props {
   churches: Church[]

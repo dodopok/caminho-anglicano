@@ -3,6 +3,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
 
+  // Layers do projeto
+  extends: [
+    './layers/base',
+    './layers/localizador'
+  ],
+
   typescript: {
     strict: true,
     typeCheck: true
@@ -51,17 +57,11 @@ export default defineNuxtConfig({
   runtimeConfig: {
     // Chaves privadas do servidor
     supabaseServiceKey: process.env.SUPABASE_SERVICE_KEY,
-    
+
     public: {
       supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL,
       supabaseAnonKey: process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY,
       googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY
     }
-  },
-
-  // Cache da API
-  routeRules: {
-    '/api/churches': { swr: 60 }, // Cache de 60 segundos
-    '/api/jurisdictions': { swr: 3600 } // Cache de 1 hora
   }
 })

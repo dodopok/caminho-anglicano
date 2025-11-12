@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Church, ChurchFilters } from '~/types/church'
+import type { Church, ChurchWithDistance, ChurchFilters } from '../types/church'
 
 const siteUrl = 'https://caminhoanglicano.com.br' // Atualize com sua URL de produção
 
@@ -53,7 +53,7 @@ const {
 const { geocodePostalCode, geocodeAddress } = useGeocoding()
 
 const churches = ref<Church[]>([])
-const filteredChurches = ref<Church[]>([])
+const filteredChurches = ref<ChurchWithDistance[]>([])
 const selectedChurchId = ref<string | null>(null)
 const isLoading = ref(true)
 const errorMessage = ref('')
@@ -105,7 +105,10 @@ function applyFilters() {
 
   // Clear distances when filtering (not location-based)
   if (!userLocation.value) {
-    churchesWithDistance.value.clear()
+    result = result.map((church: Church | ChurchWithDistance) => {
+      const { distance, ...churchWithoutDistance } = church as ChurchWithDistance
+      return churchWithoutDistance as ChurchWithDistance
+    })
   }
 
   filteredChurches.value = result
@@ -149,31 +152,25 @@ async function getUserLocation(): Promise<{ lat: number; lng: number }> {
   })
 }
 
-const churchesWithDistance = ref<Map<string, number>>(new Map())
-
 function sortChurchesByDistance(location: { lat: number; lng: number }) {
-  const withDistances = churches.value
-    .map(church => {
+  const withDistances: ChurchWithDistance[] = churches.value
+    .map((church: Church) => {
       const distance = calculateDistance(
         location.lat,
         location.lng,
         church.latitude,
         church.longitude
       )
-      return { church, distance }
+      return { ...church, distance }
     })
-    .sort((a, b) => a.distance - b.distance)
+    .sort((a: ChurchWithDistance, b: ChurchWithDistance) => (a.distance ?? 0) - (b.distance ?? 0))
 
-  // Store distances
-  churchesWithDistance.value = new Map(
-    withDistances.map(item => [item.church.id, item.distance])
-  )
-
-  filteredChurches.value = withDistances.map(item => item.church)
+  filteredChurches.value = withDistances
 }
 
 function getChurchDistance(churchId: string): string | null {
-  const distance = churchesWithDistance.value.get(churchId)
+  const church = filteredChurches.value.find((c: ChurchWithDistance) => c.id === churchId)
+  const distance = church?.distance
   if (!distance) return null
 
   if (distance < 1) {

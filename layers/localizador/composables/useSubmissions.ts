@@ -1,4 +1,4 @@
-import type { ChurchSubmission, BulkChurchSubmission } from '~/types/church'
+import type { ChurchSubmission, BulkChurchSubmission } from '../types/church'
 
 interface ChurchSubmissionInput {
   jurisdiction: string
