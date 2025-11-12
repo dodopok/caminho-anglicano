@@ -314,9 +314,9 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="h-screen flex flex-col bg-white">
+  <div class="h-screen flex flex-col bg-white overflow-hidden">
     <!-- Header -->
-    <nav class="bg-white shadow-sm border-b border-slate-200">
+    <nav class="bg-white shadow-sm border-b border-slate-200 flex-shrink-0">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <h1 class="text-2xl font-bold text-slate-800">
@@ -543,5 +543,11 @@ onMounted(async () => {
 .overlay-enter-from,
 .overlay-leave-to {
   opacity: 0;
+}
+
+/* Fix para iOS Safari - previne scroll vertical */
+.h-screen {
+  height: 100vh;
+  height: 100dvh; /* Dynamic viewport height para iOS */
 }
 </style>
