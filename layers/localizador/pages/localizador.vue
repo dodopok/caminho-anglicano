@@ -18,6 +18,9 @@ useSeoMeta({
 })
 
 useHead({
+  meta: [
+    { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' }
+  ],
   link: [
     { rel: 'canonical', href: `${siteUrl}/localizador` }
   ],
@@ -294,11 +297,15 @@ function getJurisdictionBadgeClass(jurisdictionId: string): string {
 
   // Convert hex color to Tailwind classes
   const colorMap: Record<string, string> = {
-    '#3B82F6': 'bg-blue-100 text-blue-700',
-    '#10B981': 'bg-green-100 text-green-700',
-    '#F59E0B': 'bg-amber-100 text-amber-700',
-    '#EF4444': 'bg-red-100 text-red-700',
-    '#8B5CF6': 'bg-purple-100 text-purple-700'
+    '#3B82F6': 'bg-blue-100 text-blue-700',       // IAB - Blue
+    '#10B981': 'bg-green-100 text-green-700',     // IEAB - Green
+    '#8B5CF6': 'bg-purple-100 text-purple-700',   // REB - Purple
+    '#EF4444': 'bg-red-100 text-red-700',         // IARB - Red
+    '#EAB308': 'bg-yellow-100 text-yellow-700',   // ICEB - Yellow
+    '#EC4899': 'bg-pink-100 text-pink-700',       // IECB - Pink
+    '#06B6D4': 'bg-cyan-100 text-cyan-700',       // Independente - Cyan
+    '#92400E': 'bg-amber-100 text-amber-900',     // IEUB - Brown
+    '#F97316': 'bg-orange-100 text-orange-700'    // TAC - Orange
   }
 
   return colorMap[jurisdiction.color] || 'bg-gray-100 text-gray-700'
