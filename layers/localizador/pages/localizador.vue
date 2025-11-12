@@ -378,7 +378,7 @@ onMounted(async () => {
           <!-- Search -->
           <div>
             <label for="searchQuery" class="block text-sm font-medium text-gray-700 mb-1">
-              Buscar por nome ou endereço
+              Buscar por nome ou cidade
             </label>
             <div class="relative">
               <input

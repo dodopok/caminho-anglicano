@@ -213,8 +213,6 @@ async function initializeMap() {
       fullscreenControl: true,
       mapId: '15c5fc6af6a2c5bb28486504' // Using demo Map ID - AdvancedMarkerElement requires a valid Map ID
     })
-    
-    console.log('Map initialized with mapId:', 'DEMO_MAP_ID')
 
     // Create InfoWindow instance
     infoWindow.value = new google.maps.InfoWindow()
@@ -289,11 +287,6 @@ function updateMarkers() {
     bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng + radiusInDegrees / Math.cos(props.userLocation.lat * Math.PI / 180) })
     bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng - radiusInDegrees / Math.cos(props.userLocation.lat * Math.PI / 180) })
   }
-
-  // Create markers only for filtered churches
-  console.log('Creating markers for', props.churches.length, 'churches')
-  console.log('Map instance:', mapInstance.value)
-  console.log('Google maps marker available:', google.maps.marker)
   
   props.churches.forEach((church, index) => {
     try {
@@ -323,15 +316,6 @@ function updateMarkers() {
         gmpClickable: true
       })
 
-      if (index === 0) {
-        console.log('First marker details:', {
-          position: marker.position,
-          map: marker.map,
-          content: marker.content,
-          title: marker.title
-        })
-      }
-
       // Use google.maps.event.addListener for AdvancedMarkerElement
       google.maps.event.addListener(marker, 'click', () => {
         // Open InfoWindow with church details
@@ -358,8 +342,6 @@ function updateMarkers() {
       console.error(`Error creating marker for ${church.name}:`, error)
     }
   })
-  
-  console.log('Total markers created:', markers.value.length)
 
   updateUserMarker()
 
