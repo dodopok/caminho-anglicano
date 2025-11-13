@@ -307,7 +307,9 @@ function getJurisdictionBadgeClass(jurisdictionId: string): string {
     '#EC4899': 'bg-pink-100 text-pink-700',       // IECB - Pink
     '#06B6D4': 'bg-cyan-100 text-cyan-700',       // Independente - Cyan
     '#92400E': 'bg-amber-100 text-amber-900',     // IEUB - Brown
-    '#F97316': 'bg-orange-100 text-orange-700'    // TAC - Orange
+    '#F97316': 'bg-orange-100 text-orange-700',   // TAC - Orange
+    '#ADD8E6': 'bg-sky-100 text-sky-700',         // ICAB - Light Blue
+    '#90EE90': 'bg-lime-100 text-lime-700'        // IAEB - Light Green
   }
 
   return colorMap[jurisdiction.color] || 'bg-gray-100 text-gray-700'
