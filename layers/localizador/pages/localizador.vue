@@ -51,7 +51,7 @@ const {
   fetchJurisdictions, 
   getJurisdictionById,
   getJurisdictionColor,
-  getJurisdictionName 
+  getJurisdictionSlug 
 } = useJurisdictions()
 const { geocodePostalCode, geocodeAddress } = useGeocoding()
 
@@ -484,7 +484,7 @@ onMounted(async () => {
                   getJurisdictionBadgeClass(church.jurisdictionId)
                 ]"
               >
-                {{ getJurisdictionName(church.jurisdictionId) }}
+                {{ getJurisdictionSlug(church.jurisdictionId) }}
               </span>
             </button>
           </div>
