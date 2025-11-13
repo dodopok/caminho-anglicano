@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     './layers/base',
     './layers/localizador',
     './layers/locs',
-    './layers/dashboard'
+    './layers/dashboard',
+    './layers/admin'
   ],
 
   typescript: {
@@ -59,6 +60,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     // Chaves privadas do servidor
     supabaseServiceKey: process.env.SUPABASE_SERVICE_KEY,
+    adminEmail: process.env.ADMIN_EMAIL,
 
     public: {
       supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL,
