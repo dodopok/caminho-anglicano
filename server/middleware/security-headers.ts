@@ -18,9 +18,10 @@ export default defineEventHandler((event) => {
   headers.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin')
 
   // Permissions policy (restrict features)
+  // Allow geolocation for the localizador feature
   headers.setHeader(
     'Permissions-Policy',
-    'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+    'camera=(), microphone=(), geolocation=(self), interest-cohort=()',
   )
 
   // Strict Transport Security (HTTPS only)
