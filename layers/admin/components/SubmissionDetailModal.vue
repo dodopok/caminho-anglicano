@@ -366,7 +366,7 @@ async function handleSave() {
     }
 
     await $fetch(`/api/admin/submissions/${props.submission.id}`, {
-      method: 'PATCH',
+      method: 'PATCH' as any,
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -403,7 +403,7 @@ async function handleApprove() {
 
     // Save any changes first
     await $fetch(`/api/admin/submissions/${props.submission.id}`, {
-      method: 'PATCH',
+      method: 'PATCH' as any,
       headers: {
         Authorization: `Bearer ${token}`,
       },

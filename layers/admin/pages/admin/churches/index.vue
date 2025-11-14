@@ -1,6 +1,15 @@
 <template>
   <AdminLayout>
     <div>
+      <!-- Church Edit Modal -->
+      <ChurchEditModal
+        v-if="selectedChurch"
+        :is-open="isEditModalOpen"
+        :church="selectedChurch"
+        :jurisdictions="jurisdictions"
+        @close="closeEditModal"
+        @success="handleEditSuccess"
+      />
       <!-- Header -->
       <div class="mb-6 flex items-center justify-between">
         <div>
@@ -205,6 +214,10 @@ const searchQuery = ref('')
 const jurisdictionFilter = ref('')
 const stateFilter = ref('')
 
+// Edit modal state
+const isEditModalOpen = ref(false)
+const selectedChurch = ref<Church | null>(null)
+
 // Computed
 const filteredChurches = computed(() => {
   let result = churches.value
@@ -274,8 +287,18 @@ async function loadJurisdictions() {
 }
 
 function openEditModal(church: Church) {
-  // TODO: Implement edit modal
-  alert(`Editar igreja: ${church.name}\n\nFuncionalidade de edição será implementada em breve.`)
+  selectedChurch.value = church
+  isEditModalOpen.value = true
+}
+
+function closeEditModal() {
+  isEditModalOpen.value = false
+  selectedChurch.value = null
+}
+
+function handleEditSuccess() {
+  // Reload churches after successful edit
+  loadChurches()
 }
 
 async function handleExport() {
