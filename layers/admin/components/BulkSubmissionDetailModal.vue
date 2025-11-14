@@ -331,6 +331,15 @@
 
         <BaseButton
           v-if="submission.status === 'pending'"
+          variant="secondary"
+          :loading="isLoading"
+          @click="handleApproveNoInsert"
+        >
+          Aprovar Sem Criar Igrejas
+        </BaseButton>
+
+        <BaseButton
+          v-if="submission.status === 'pending'"
           variant="primary"
           :loading="isLoading"
           @click="handleSave"
@@ -673,7 +682,7 @@ async function handleApprove() {
     const result = await $fetch<{ success: boolean, insertedCount: number, totalCount: number, errors?: string[], message: string }>(
       `/api/admin/submissions/bulk/${props.submission.id}/approve`,
       {
-        method: 'POST',
+        method: 'post',
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -700,6 +709,46 @@ async function handleApprove() {
   }
 }
 
+async function handleApproveNoInsert() {
+  const reason = prompt('Por que você está aprovando esta submissão sem criar igrejas? (ex: atualizações manuais já feitas)')
+
+  if (!reason || reason.trim() === '') {
+    return
+  }
+
+  isLoading.value = true
+  errorMessage.value = ''
+
+  try {
+    const token = await getToken()
+    if (!token) {
+      throw new Error('Não autenticado')
+    }
+
+    await $fetch(`/api/admin/submissions/bulk/${props.submission.id}/approve-no-insert`, {
+      method: 'post',
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+      body: {
+        review_notes: reason,
+      },
+    })
+
+    alert('✅ Submissão aprovada sem criar igrejas!')
+    emit('success')
+    emit('close')
+  }
+  catch (error: unknown) {
+    const message = error instanceof Error ? error.message : 'Erro ao aprovar submissão'
+    errorMessage.value = message
+    console.error('Error approving bulk submission without insert:', error)
+  }
+  finally {
+    isLoading.value = false
+  }
+}
+
 async function handleReject() {
   const reason = prompt('Por que você está rejeitando esta submissão em lote?')
 
@@ -717,7 +766,7 @@ async function handleReject() {
     }
 
     await $fetch(`/api/admin/submissions/bulk/${props.submission.id}/reject`, {
-      method: 'POST',
+      method: 'post',
       headers: {
         Authorization: `Bearer ${token}`,
       },
