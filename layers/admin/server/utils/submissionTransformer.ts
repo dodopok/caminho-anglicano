@@ -88,13 +88,26 @@ function parseSchedules(schedulesString: string | null): any[] {
     return []
   }
 
-  // For now, store as simple array of strings
-  // Split by comma, semicolon, or line break
+  // Split by comma, semicolon, or line break (handles both \n and \r\n)
   const schedules = schedulesString
-    .split(/[,;]|\n/)
+    .split(/[,;]|[\r\n]+/)
     .map(s => s.trim())
     .filter(s => s.length > 0)
-    .map(s => ({ description: s }))
+    .map(s => {
+      // Try to parse "Day time" format (e.g., "Domingos às 10h", "Quartas 19h30")
+      // Match: word(s) + (optional "às"/"at") + time
+      const match = s.match(/^(.+?)(?:\s+às\s+|\s+at\s+|\s+)(.+)$/)
+      
+      if (match) {
+        return {
+          day: match[1].trim(),
+          time: match[2].trim(),
+        }
+      }
+      
+      // If no pattern matches, store as description
+      return { description: s }
+    })
 
   return schedules
 }
@@ -113,7 +126,7 @@ export async function findJurisdictionId(jurisdictionName: string): Promise<stri
 
   try {
     // Try exact match first
-    let { data, error } = await supabase
+    const { data, error } = await supabase
       .from('jurisdictions')
       .select('id')
       .ilike('name', jurisdictionName)

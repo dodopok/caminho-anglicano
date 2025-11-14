@@ -4,6 +4,9 @@ import type { Database } from '~/types/database'
 type ChurchSubmissionUpdate = Database['public']['Tables']['church_submissions']['Update']
 
 export default defineEventHandler(async (event) => {
+  // Ensure user is admin
+  await requireAdmin(event)
+
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
   const body = await readBody<ChurchSubmissionUpdate>(event)

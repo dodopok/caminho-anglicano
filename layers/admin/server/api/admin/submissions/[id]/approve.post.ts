@@ -5,9 +5,11 @@ type ChurchSubmission = Database['public']['Tables']['church_submissions']['Row'
 type Church = Database['public']['Tables']['churches']['Row']
 
 export default defineEventHandler(async (event) => {
+  // Ensure user is admin
+  await requireAdmin(event)
+
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
-  const body = await readBody(event)
 
   if (!id) {
     throw createError({
@@ -98,16 +100,16 @@ export default defineEventHandler(async (event) => {
       message: 'Submission approved and church created successfully',
     }
   }
-  catch (error: any) {
+  catch (error: unknown) {
     console.error('Error approving submission:', error)
 
-    if (error.statusCode) {
+    if (error && typeof error === 'object' && 'statusCode' in error) {
       throw error
     }
 
     throw createError({
       statusCode: 500,
-      message: error.message || 'Failed to approve submission',
+      message: error instanceof Error ? error.message : 'Failed to approve submission',
     })
   }
 })
