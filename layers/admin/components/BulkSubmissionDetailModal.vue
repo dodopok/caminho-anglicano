@@ -682,7 +682,7 @@ async function handleApprove() {
     const result = await $fetch<{ success: boolean, insertedCount: number, totalCount: number, errors?: string[], message: string }>(
       `/api/admin/submissions/bulk/${props.submission.id}/approve`,
       {
-        method: 'POST',
+        method: 'post',
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -766,7 +766,7 @@ async function handleReject() {
     }
 
     await $fetch(`/api/admin/submissions/bulk/${props.submission.id}/reject`, {
-      method: 'POST',
+      method: 'post',
       headers: {
         Authorization: `Bearer ${token}`,
       },
