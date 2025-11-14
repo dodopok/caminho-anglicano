@@ -158,8 +158,7 @@ export default defineEventHandler(async (event) => {
       .from('bulk_church_submissions')
       .update({
         status: 'approved' as const,
-        reviewed_at: new Date().toISOString(),
-        review_notes: body.review_notes || (errors.length > 0 ? `Partial success. Errors: ${errors.join('; ')}` : null),
+        reviewed_at: new Date().toISOString()
       } as never)
       .eq('id', id)
 
@@ -175,8 +174,8 @@ export default defineEventHandler(async (event) => {
       churches: insertedChurches,
       errors: errors.length > 0 ? errors : undefined,
       message: errors.length > 0
-        ? `Approved with ${insertedChurches.length}/${churchesData.length} churches created. Some failed.`
-        : `All ${insertedChurches.length} churches created successfully`,
+        ? `Aprovado com ${insertedChurches.length}/${churchesData.length} igrejas criadas. Algumas falharam.`
+        : `${insertedChurches.length} igrejas criadas!`,
     }
   }
   catch (error: any) {

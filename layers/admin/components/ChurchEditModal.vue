@@ -3,24 +3,12 @@
     :is-open="isOpen"
     title="Editar Igreja"
     max-width="6xl"
+    :loading="isLoading"
+    loading-text="Salvando alterações..."
     @close="handleClose"
   >
-    <!-- Error/Success Messages -->
-    <BaseAlert
-      v-model="showErrorMessage"
-      type="error"
-      :message="errorMessage"
-    />
-
-    <BaseAlert
-      v-model="showSuccessMessage"
-      type="success"
-      :message="successMessage"
-    />
-
-
     <!-- Form -->
-    <form @submit.prevent="handleSave" class="space-y-6">
+    <form class="space-y-6" @submit.prevent="handleSave">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <!-- Left Column - Form Fields -->
         <div class="lg:col-span-2 space-y-6">
@@ -192,23 +180,6 @@ const emit = defineEmits<{
 const { getToken } = useAdminAuth()
 
 const isLoading = ref(false)
-const errorMessage = ref('')
-const successMessage = ref('')
-
-// Computed for alert visibility
-const showErrorMessage = computed({
-  get: () => !!errorMessage.value,
-  set: (value: boolean) => {
-    if (!value) errorMessage.value = ''
-  },
-})
-
-const showSuccessMessage = computed({
-  get: () => !!successMessage.value,
-  set: (value: boolean) => {
-    if (!value) successMessage.value = ''
-  },
-})
 
 // Form data with all editable fields
 const formData = ref({
@@ -321,15 +292,10 @@ function initializeForm(church: Church) {
     youtube: sm.youtube || '',
     spotify: sm.spotify || '',
   }
-
-  errorMessage.value = ''
-  successMessage.value = ''
 }
 
 async function handleSave() {
   isLoading.value = true
-  errorMessage.value = ''
-  successMessage.value = ''
 
   try {
     const token = await getToken()
@@ -366,15 +332,13 @@ async function handleSave() {
       body: updateData,
     })
 
-    successMessage.value = 'Igreja atualizada com sucesso!'
-
-    setTimeout(() => {
-      emit('success')
-      emit('close')
-    }, 1500)
+    alert('✅ Igreja atualizada com sucesso!')
+    emit('success')
+    emit('close')
   }
-  catch (error: any) {
-    errorMessage.value = error.data?.message || error.message || 'Erro ao atualizar igreja'
+  catch (error: unknown) {
+    const message = error instanceof Error ? error.message : 'Erro ao atualizar igreja'
+    alert(`❌ ${message}`)
     console.error('Error updating church:', error)
   }
   finally {

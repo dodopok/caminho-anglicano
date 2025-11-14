@@ -22,7 +22,7 @@
           ? 'border-red-300 focus:ring-1 focus:ring-red-500 focus:border-red-500'
           : 'border-gray-300 focus:ring-1 focus:ring-blue-500 focus:border-blue-500',
         disabled || readonly ? 'bg-gray-50 text-gray-600' : 'bg-white',
-        disabled ? 'cursor-not-allowed' : ''
+        disabled ? 'cursor-text' : ''
       ]"
       @input="handleInput"
     />

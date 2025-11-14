@@ -61,6 +61,7 @@ export default defineNuxtConfig({
     // Chaves privadas do servidor
     supabaseServiceKey: process.env.SUPABASE_SERVICE_KEY,
     adminEmail: process.env.ADMIN_EMAIL,
+    googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY,
 
     public: {
       supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL,

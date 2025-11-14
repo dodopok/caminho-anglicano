@@ -3,6 +3,8 @@
     :is-open="isOpen"
     title="Detalhes da Submissão em Lote"
     max-width="7xl"
+    :loading="isLoading"
+    loading-text="Processando..."
     @close="handleClose"
   >
     <template #header>
@@ -13,142 +15,267 @@
           </h2>
           <div class="mt-1 flex items-center gap-3">
             <StatusBadge :status="submission.status" />
-            <span class="text-sm text-gray-600">
-              {{ churches.length }} igreja{{ churches.length === 1 ? '' : 's' }}
-            </span>
           </div>
         </div>
-        <button
-          @click="handleClose"
-          class="text-gray-400 hover:text-gray-500 transition-colors"
-        >
-          <span class="sr-only">Fechar</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+        <div class="flex items-center gap-2">
+          <button
+            class="px-3 py-2 text-sm font-medium text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg transition-colors flex items-center gap-2"
+            @click="showGoogleSearch = true"
+          >
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            Buscar no Google
+          </button>
+          <button
+            class="text-gray-400 hover:text-gray-500 transition-colors"
+            @click="handleClose"
+          >
+            <span class="sr-only">Fechar</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
     </template>
 
-    <!-- Error/Success Messages -->
+    <!-- Error Messages (keep only errors, remove success) -->
     <BaseAlert
       v-model="showErrorMessage"
       type="error"
       :message="errorMessage"
     />
 
-    <BaseAlert
-      v-model="showSuccessMessage"
-      type="success"
-      :message="successMessage"
-    />
+    <!-- Bulk Data Text -->
+    <div class="space-y-4">
+      <!-- Format Helper -->
+      <div class="bg-blue-50 border border-blue-200 rounded-lg overflow-hidden">
+        <button
+          type="button"
+          class="w-full flex items-center justify-between p-4 hover:bg-blue-100 transition-colors"
+          @click.prevent="isFormatHelperOpen = !isFormatHelperOpen"
+        >
+          <div class="flex items-center gap-3">
+            <svg class="h-5 w-5 text-blue-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h4 class="text-sm font-medium text-blue-900">Formato esperado (JSON)</h4>
+          </div>
+          <svg
+            class="h-5 w-5 text-blue-600 transition-transform"
+            :class="{ 'rotate-180': isFormatHelperOpen }"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <div
+          v-if="isFormatHelperOpen"
+          class="px-4 pb-4 border-t border-blue-200"
+        >
+          <pre class="text-xs bg-white border border-blue-200 rounded p-3 overflow-x-auto mt-3"><code>[
+  {
+    "name": "Nome da Igreja",
+    "jurisdiction": "ieab-recife",
+    "address": "Endereço completo",
+    "responsible_email": "email@exemplo.com",
+    "schedules": "Domingos às 10h",
+    "pastors": "Rev. Nome do Pastor",
+    "description": "Descrição opcional",
+    "website": "https://site.com",
+    "instagram": "https://instagram.com/...",
+    "youtube": "https://youtube.com/...",
+    "spotify": "https://spotify.com/..."
+  }
+]</code></pre>
+          <p class="text-xs text-blue-700 mt-2">
+            <strong>Campos obrigatórios:</strong> name, jurisdiction, address, responsible_email
+          </p>
+        </div>
+      </div>
 
-    <!-- Parse Error -->
-    <BaseAlert
-      v-if="parseError"
-      :model-value="true"
-      type="error"
-      title="Erro ao processar dados"
-      :message="parseError"
-    />
+      <!-- Side by side textareas -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <!-- Original Text from User -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">
+            📩 Texto Original do Usuário
+          </label>
+          <BaseTextarea
+            :model-value="originalText"
+            :rows="25"
+            disabled
+            placeholder="Texto original enviado pelo usuário..."
+            class="font-mono text-sm bg-gray-50"
+          />
+          <p class="mt-1 text-xs text-gray-500">
+            Texto original como referência
+          </p>
+        </div>
 
-    <!-- Churches List -->
-    <div v-if="!parseError" class="space-y-6">
-      <div
-                  v-for="(church, index) in churches"
-                  :key="index"
-                  class="border border-gray-200 rounded-lg p-4"
+        <!-- Editable JSON -->
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <label class="block text-sm font-medium text-gray-700">
+              ✏️ JSON Formatado
+            </label>
+            <button
+              type="button"
+              class="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1 disabled:opacity-50 disabled:cursor-not-allowed"
+              :disabled="isValidating || submission.status !== 'pending'"
+              @click="validateAndPreview"
+            >
+              <svg v-if="isValidating" class="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+              </svg>
+              <span>{{ isValidating ? 'Validando...' : '🔍 Validar' }}</span>
+            </button>
+          </div>
+          <BaseTextarea
+            v-model="bulkText"
+            :rows="25"
+            :disabled="submission.status !== 'pending'"
+            placeholder="Cole ou edite o JSON com os dados das igrejas aqui..."
+            class="font-mono text-sm"
+          />
+          <p class="mt-1 text-xs text-gray-500">
+            Este JSON será usado para criar as igrejas
+          </p>
+        </div>
+
+        <!-- Validation Result / Preview -->
+        <div class="flex flex-col">
+          <label class="block text-sm font-medium text-gray-700 mb-2">
+            📋 Resultado da Validação
+          </label>
+          
+          <!-- Validation Error -->
+          <div v-if="validationError" class="mb-3">
+            <div class="bg-red-50 border border-red-200 rounded-lg p-3">
+              <p class="text-sm font-medium text-red-800 mb-1">❌ Erro</p>
+              <p class="text-xs text-red-700">{{ validationError }}</p>
+            </div>
+          </div>
+
+          <!-- No validation yet -->
+          <div v-else-if="parsedChurches.length === 0 && !isValidating" class="flex-1 flex items-center justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-6">
+            <div class="text-center">
+              <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+              <p class="mt-2 text-sm text-gray-500">Clique em Validar para verificar o JSON</p>
+            </div>
+          </div>
+
+          <!-- Loading state -->
+          <div v-else-if="isValidating" class="flex-1 flex items-center justify-center bg-blue-50 border-2 border-blue-200 rounded-lg p-6">
+            <div class="text-center">
+              <svg class="animate-spin h-12 w-12 text-blue-600 mx-auto" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+              </svg>
+              <p class="mt-3 text-sm font-medium text-blue-900">Validando JSON...</p>
+              <p class="mt-1 text-xs text-blue-700">Processando dados</p>
+            </div>
+          </div>
+
+          <!-- Preview -->
+          <div v-else class="flex-1 overflow-y-auto border border-gray-200 rounded-lg">
+            <div class="sticky top-0 bg-white border-b border-gray-200 px-3 py-2">
+              <p class="text-sm font-medium text-gray-900">
+                {{ parsedChurches.length }} igreja{{ parsedChurches.length === 1 ? '' : 's' }}
+                <span
+                  class="ml-2 text-xs px-2 py-1 rounded"
+                  :class="parsedChurches.every(c => c._isValid) ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'"
                 >
-                  <!-- Church Header -->
-                  <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-lg font-medium text-gray-900">
-                      Igreja #{{ index + 1 }}
-                    </h3>
-                    <button
-                      v-if="submission.status === 'pending'"
-                      @click="removeChurch(index)"
-                      class="text-red-600 hover:text-red-700 text-sm transition-colors"
-                    >
-                      Remover
-                    </button>
+                  {{ parsedChurches.every(c => c._isValid) ? '✓ Todas válidas' : '⚠️ Com erros' }}
+                </span>
+              </p>
+            </div>
+            <div class="p-3 space-y-3">
+              <div
+                v-for="(church, index) in parsedChurches"
+                :key="index"
+                class="bg-white border rounded-lg p-3"
+                :class="church._isValid ? 'border-green-200' : 'border-red-200'"
+              >
+                <div class="flex items-start justify-between mb-2">
+                  <h4 class="text-sm font-medium text-gray-900">{{ index + 1 }}. {{ church.name }}</h4>
+                  <span
+                    class="text-xs px-2 py-0.5 rounded flex-shrink-0 ml-2"
+                    :class="church._isValid ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'"
+                  >
+                    {{ church._isValid ? '✓' : '✗' }}
+                  </span>
+                </div>
+                <dl class="space-y-1 text-xs">
+                  <div>
+                    <dt class="text-gray-500 inline">Jurisdição:</dt>
+                    <dd class="inline ml-1 font-medium" :class="church._jurisdictionInfo?.found ? 'text-green-700' : 'text-red-700'">
+                      {{ church.jurisdiction || '—' }}
+                      <span v-if="church._jurisdictionInfo?.found" class="text-gray-500 font-normal ml-1">
+                        ({{ church._jurisdictionInfo.fullName || church._jurisdictionInfo.name }})
+                      </span>
+                      <span v-else-if="church.jurisdiction" class="text-red-600 font-normal ml-1">
+                        ❌ Não encontrada
+                      </span>
+                    </dd>
                   </div>
-
-                  <!-- Church Fields -->
-                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <!-- Nome -->
-                    <BaseInput
-                      :id="`name-${index}`"
-                      v-model="church.name"
-                      label="Nome"
-                      :disabled="submission.status !== 'pending'"
-                      required
-                    />
-
-                    <!-- Jurisdição -->
-                    <BaseInput
-                      :id="`jurisdiction-${index}`"
-                      v-model="church.jurisdiction"
-                      label="Jurisdição"
-                      :disabled="submission.status !== 'pending'"
-                      required
-                    />
-
-                    <!-- Email -->
-                    <BaseInput
-                      :id="`email-${index}`"
-                      v-model="church.responsible_email"
-                      label="Email"
-                      type="email"
-                      :disabled="submission.status !== 'pending'"
-                      required
-                    />
-
-                    <!-- Endereço (full width) -->
-                    <div class="md:col-span-2 lg:col-span-3">
-                      <BaseTextarea
-                        :id="`address-${index}`"
-                        v-model="church.address"
-                        label="Endereço"
-                        :rows="2"
-                        :disabled="submission.status !== 'pending'"
-                        required
-                      />
-                    </div>
-
-                    <!-- Horários -->
-                    <BaseInput
-                      :id="`schedules-${index}`"
-                      v-model="church.schedules"
-                      label="Horários"
-                      :disabled="submission.status !== 'pending'"
-                    />
-
-                    <!-- Pastores -->
-                    <BaseInput
-                      :id="`pastors-${index}`"
-                      v-model="church.pastors"
-                      label="Pastores"
-                      :disabled="submission.status !== 'pending'"
-                    />
-
-                    <!-- Website -->
-                    <BaseInput
-                      :id="`website-${index}`"
-                      v-model="church.website"
-                      label="Website"
-                      type="url"
-                      :disabled="submission.status !== 'pending'"
-                    />
-
-          <!-- Descrição (full width) -->
-          <div class="md:col-span-2 lg:col-span-3">
-            <BaseTextarea
-              :id="`description-${index}`"
-              v-model="church.description"
-              label="Descrição"
-              :rows="2"
-              :disabled="submission.status !== 'pending'"
-            />
+                  <div>
+                    <dt class="text-gray-500 inline">Email:</dt>
+                    <dd class="text-gray-900 inline ml-1">{{ church.responsible_email || '—' }}</dd>
+                  </div>
+                  <div>
+                    <dt class="text-gray-500">Endereço:</dt>
+                    <dd class="text-gray-900">{{ church.address || '—' }}</dd>
+                  </div>
+                  <div v-if="church._parsedSchedules && church._parsedSchedules.length > 0">
+                    <dt class="text-gray-500">Horários (formatado):</dt>
+                    <dd class="text-gray-900">
+                      <ul class="list-disc list-inside space-y-0.5">
+                        <li v-for="(schedule, idx) in church._parsedSchedules" :key="idx">
+                          <span v-if="schedule.day && schedule.time">{{ schedule.day }} às {{ schedule.time }}</span>
+                          <span v-else-if="schedule.description">{{ schedule.description }}</span>
+                        </li>
+                      </ul>
+                    </dd>
+                  </div>
+                  <div v-if="church._parsedPastors && church._parsedPastors.length > 0">
+                    <dt class="text-gray-500">Pastores (formatado):</dt>
+                    <dd class="text-gray-900">{{ church._parsedPastors.join(', ') }}</dd>
+                  </div>
+                  <div v-if="church.description">
+                    <dt class="text-gray-500">Descrição:</dt>
+                    <dd class="text-gray-900">{{ church.description }}</dd>
+                  </div>
+                  <div v-if="church.website">
+                    <dt class="text-gray-500 inline">Website:</dt>
+                    <dd class="text-gray-900 inline ml-1 truncate">{{ church.website }}</dd>
+                  </div>
+                  <div v-if="church.instagram">
+                    <dt class="text-gray-500 inline">Instagram:</dt>
+                    <dd class="text-gray-900 inline ml-1 truncate">{{ church.instagram }}</dd>
+                  </div>
+                  <div v-if="church.youtube">
+                    <dt class="text-gray-500 inline">YouTube:</dt>
+                    <dd class="text-gray-900 inline ml-1 truncate">{{ church.youtube }}</dd>
+                  </div>
+                  <div v-if="church.spotify">
+                    <dt class="text-gray-500 inline">Spotify:</dt>
+                    <dd class="text-gray-900 inline ml-1 truncate">{{ church.spotify }}</dd>
+                  </div>
+                  <div v-if="!church._isValid" class="pt-2 border-t border-gray-200">
+                    <dt class="text-red-600 font-medium">Erros:</dt>
+                    <dd class="text-red-600">{{ church._errors?.join(', ') }}</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -217,31 +344,23 @@
           :loading="isLoading"
           @click="handleApprove"
         >
-          Aprovar e Criar Igrejas
+          Processar e Criar Igrejas
         </BaseButton>
       </div>
     </template>
   </BaseModal>
+
+  <!-- Google Places Search Modal -->
+  <GooglePlacesSearchModal
+    :is-open="showGoogleSearch"
+    @close="showGoogleSearch = false"
+  />
 </template>
 
 <script setup lang="ts">
 import type { Database } from '~/types/database'
 
 type BulkSubmission = Database['public']['Tables']['bulk_church_submissions']['Row']
-
-interface BulkChurchData {
-  name: string
-  jurisdiction: string
-  address: string
-  schedules?: string
-  description?: string
-  pastors?: string
-  responsible_email: string
-  website?: string
-  instagram?: string
-  youtube?: string
-  spotify?: string
-}
 
 interface Props {
   isOpen: boolean
@@ -258,8 +377,53 @@ const { getToken } = useAdminAuth()
 
 const isLoading = ref(false)
 const errorMessage = ref('')
-const successMessage = ref('')
-const parseError = ref('')
+const originalText = ref('')
+const bulkText = ref('')
+const isValidating = ref(false)
+const validationError = ref('')
+const isFormatHelperOpen = ref(false)
+const showGoogleSearch = ref(false)
+
+interface ParsedSchedule {
+  day?: string
+  time?: string
+  description?: string
+}
+
+interface ParsedChurch {
+  name: string
+  jurisdiction: string
+  address: string
+  responsible_email: string
+  schedules?: string
+  pastors?: string
+  description?: string
+  website?: string
+  instagram?: string
+  youtube?: string
+  spotify?: string
+  _parsedSchedules?: ParsedSchedule[]
+  _parsedPastors?: string[]
+  _jurisdictionInfo?: {
+    found: boolean
+    id?: string
+    name?: string
+    fullName?: string
+  }
+  _isValid?: boolean
+  _errors?: string[]
+}
+
+const parsedChurches = ref<ParsedChurch[]>([])
+
+interface JurisdictionData {
+  id: string
+  slug: string
+  name: string
+  fullName: string
+}
+
+const jurisdictionsCache = ref<JurisdictionData[]>([])
 
 // Computed for alert visibility
 const showErrorMessage = computed({
@@ -269,63 +433,167 @@ const showErrorMessage = computed({
   },
 })
 
-const showSuccessMessage = computed({
-  get: () => !!successMessage.value,
-  set: (value: boolean) => {
-    if (!value) successMessage.value = ''
-  },
-})
-
-const churches = ref<BulkChurchData[]>([])
-
-// Watch for submission changes and parse bulk_data
+// Watch for submission changes and load bulk_data
 watch(() => props.submission, (newSubmission) => {
   if (newSubmission) {
-    parseBulkData(newSubmission.bulk_data)
+    originalText.value = newSubmission.bulk_data || ''
+    // Only set bulkText if it's empty (first load)
+    if (!bulkText.value) {
+      bulkText.value = newSubmission.bulk_data || ''
+    }
   }
 }, { immediate: true })
 
-function parseBulkData(bulkData: string) {
-  parseError.value = ''
-  churches.value = []
-
+// Fetch jurisdictions on mount
+onMounted(async () => {
   try {
-    const data = JSON.parse(bulkData)
-
-    if (!Array.isArray(data)) {
-      parseError.value = 'Os dados devem ser um array de igrejas'
-      return
-    }
-
-    churches.value = data.map(church => ({
-      name: church.name || '',
-      jurisdiction: church.jurisdiction || '',
-      address: church.address || '',
-      schedules: church.schedules || '',
-      description: church.description || '',
-      pastors: church.pastors || '',
-      responsible_email: church.responsible_email || '',
-      website: church.website || '',
-      instagram: church.instagram || '',
-      youtube: church.youtube || '',
-      spotify: church.spotify || '',
-    }))
+    jurisdictionsCache.value = await $fetch<JurisdictionData[]>('/api/jurisdictions')
+  } catch (error) {
+    console.error('Error fetching jurisdictions:', error)
   }
-  catch (error: any) {
-    parseError.value = `Erro ao fazer parse do JSON: ${error.message}`
-  }
+})
+
+// Helper functions to parse pastors and schedules (same logic as server)
+function parsePastors(pastorsString: string | null): string[] {
+  if (!pastorsString) return []
+  
+  return pastorsString
+    .split(/[,;]|\se\s|\sand\s/i)
+    .map(p => p.trim())
+    .filter(p => p.length > 0)
 }
 
-function removeChurch(index: number) {
-  if (confirm('Tem certeza que deseja remover esta igreja da lista?')) {
-    churches.value.splice(index, 1)
+function parseSchedules(schedulesString: string | null): ParsedSchedule[] {
+  if (!schedulesString) return []
+  
+  return schedulesString
+    .split(/[,;]|[\r\n]+/)
+    .map(s => s.trim())
+    .filter(s => s.length > 0)
+    .map(s => {
+      const match = s.match(/^(.+?)(?:\s+às\s+|\s+at\s+|\s+)(.+)$/)
+      if (match) {
+        return { day: match[1].trim(), time: match[2].trim() }
+      }
+      return { description: s }
+    })
+}
+
+function findJurisdiction(jurisdictionInput: string) {
+  if (!jurisdictionInput || jurisdictionsCache.value.length === 0) {
+    return { found: false }
   }
+
+  const input = jurisdictionInput.toLowerCase().trim()
+
+  // Try exact match by slug
+  const bySlug = jurisdictionsCache.value.find(j => j.slug?.toLowerCase() === input)
+  if (bySlug) {
+    return { found: true, id: bySlug.id, name: bySlug.name, fullName: bySlug.fullName }
+  }
+
+  // Try exact match by name
+  const byName = jurisdictionsCache.value.find(j => j.name?.toLowerCase() === input)
+  if (byName) {
+    return { found: true, id: byName.id, name: byName.name, fullName: byName.fullName }
+  }
+
+  // Try partial match
+  const partial = jurisdictionsCache.value.find(j => 
+    j.name?.toLowerCase().includes(input) || 
+    j.fullName?.toLowerCase().includes(input) ||
+    input.includes(j.slug?.toLowerCase())
+  )
+  if (partial) {
+    return { found: true, id: partial.id, name: partial.name, fullName: partial.fullName }
+  }
+
+  return { found: false }
+}
+
+function validateAndPreview() {
+  validationError.value = ''
+  parsedChurches.value = []
+  isValidating.value = true
+
+  // Add a small delay to show loading state
+  setTimeout(() => {
+    try {
+      // Try to parse JSON
+      const data = JSON.parse(bulkText.value)
+
+      if (!Array.isArray(data)) {
+        validationError.value = 'O JSON deve ser um array de igrejas'
+        return
+      }
+
+      if (data.length === 0) {
+        validationError.value = 'O array não pode estar vazio'
+        return
+      }
+
+      // Validate each church
+      parsedChurches.value = data.map((church) => {
+        const errors: string[] = []
+        
+        if (!church.name || typeof church.name !== 'string' || church.name.trim() === '') {
+          errors.push('nome obrigatório')
+        }
+        if (!church.jurisdiction || typeof church.jurisdiction !== 'string' || church.jurisdiction.trim() === '') {
+          errors.push('jurisdição obrigatória')
+        }
+        if (!church.address || typeof church.address !== 'string' || church.address.trim() === '') {
+          errors.push('endereço obrigatório')
+        }
+        if (!church.responsible_email || typeof church.responsible_email !== 'string' || church.responsible_email.trim() === '') {
+          errors.push('email obrigatório')
+        }
+
+        // Validate jurisdiction only if it's filled
+        const jurisdictionInfo = findJurisdiction(church.jurisdiction)
+        if (church.jurisdiction && church.jurisdiction.trim() !== '' && !jurisdictionInfo.found) {
+          errors.push('jurisdição não encontrada')
+        }
+
+        // Parse and validate schedules format
+        const parsedSchedules = parseSchedules(church.schedules)
+        
+        // Parse and validate pastors format
+        const parsedPastors = parsePastors(church.pastors)
+
+        return {
+          ...church,
+          _parsedSchedules: parsedSchedules,
+          _parsedPastors: parsedPastors,
+          _jurisdictionInfo: jurisdictionInfo,
+          _isValid: errors.length === 0,
+          _errors: errors.length > 0 ? errors : undefined,
+        }
+      })
+
+      const invalidCount = parsedChurches.value.filter(c => !c._isValid).length
+      if (invalidCount > 0) {
+        const invalidChurches = parsedChurches.value.filter(c => !c._isValid)
+        const errorDetails = invalidChurches.map((c, idx) => 
+          `${idx + 1}. ${c.name || 'Igreja sem nome'}: ${c._errors?.join(', ')}`
+        ).join('\n')
+        validationError.value = `${invalidCount} igreja${invalidCount === 1 ? '' : 's'} com dados inválidos:\n\n${errorDetails}`
+      }
+    }
+    catch (error: unknown) {
+      validationError.value = error instanceof Error 
+        ? `Erro ao fazer parse do JSON: ${error.message}` 
+        : 'Erro ao fazer parse do JSON'
+    }
+    finally {
+      isValidating.value = false
+    }
+  }, 300) // 300ms delay for visual feedback
 }
 
 async function handleSave() {
   isLoading.value = true
   errorMessage.value = ''
-  successMessage.value = ''
 
   try {
     const token = await getToken()
@@ -333,15 +601,9 @@ async function handleSave() {
       throw new Error('Não autenticado')
     }
 
-    // Validate all churches have required fields
-    for (let i = 0; i < churches.value.length; i++) {
-      const church = churches.value[i]
-      if (!church.name || !church.address || !church.responsible_email || !church.jurisdiction) {
-        throw new Error(`Igreja #${i + 1} está com campos obrigatórios vazios`)
-      }
+    if (!bulkText.value.trim()) {
+      throw new Error('O texto não pode estar vazio')
     }
-
-    const bulkData = JSON.stringify(churches.value)
 
     await $fetch(`/api/admin/submissions/bulk/${props.submission.id}`, {
       method: 'PATCH',
@@ -349,14 +611,14 @@ async function handleSave() {
         Authorization: `Bearer ${token}`,
       },
       body: {
-        bulk_data: bulkData,
+        bulk_data: bulkText.value,
       },
     })
 
-    successMessage.value = 'Alterações salvas com sucesso!'
+    alert('✅ Alterações salvas com sucesso!')
   }
-  catch (error: any) {
-    errorMessage.value = error.data?.message || error.message || 'Erro ao salvar alterações'
+  catch (error: unknown) {
+    errorMessage.value = error instanceof Error ? error.message : 'Erro ao salvar alterações'
     console.error('Error saving bulk submission:', error)
   }
   finally {
@@ -365,8 +627,30 @@ async function handleSave() {
 }
 
 async function handleApprove() {
+  // First validate
+  validateAndPreview()
+
+  // Wait for validation to complete
+  await nextTick()
+
+  if (validationError.value) {
+    alert('Por favor, corrija os erros de validação antes de aprovar.')
+    return
+  }
+
+  const invalidChurches = parsedChurches.value.filter(c => !c._isValid)
+  if (invalidChurches.length > 0) {
+    alert(`Existem ${invalidChurches.length} igreja${invalidChurches.length === 1 ? '' : 's'} com dados inválidos. Por favor, corrija antes de aprovar.`)
+    return
+  }
+
+  // Show confirmation with preview
+  const churchList = parsedChurches.value
+    .map((c, i) => `${i + 1}. ${c.name} - ${c.jurisdiction}`)
+    .join('\n')
+
   const confirmed = confirm(
-    `Tem certeza que deseja aprovar esta submissão?\n\nIsso criará ${churches.value.length} igreja${churches.value.length === 1 ? '' : 's'} no sistema.`,
+    `Tem certeza que deseja processar e criar ${parsedChurches.value.length} igreja${parsedChurches.value.length === 1 ? '' : 's'}?\n\n${churchList}`,
   )
 
   if (!confirmed) {
@@ -406,8 +690,9 @@ async function handleApprove() {
     emit('success')
     emit('close')
   }
-  catch (error: any) {
-    errorMessage.value = error.data?.message || error.message || 'Erro ao aprovar submissão'
+  catch (error: unknown) {
+    const message = error instanceof Error ? error.message : 'Erro ao aprovar submissão'
+    errorMessage.value = message
     console.error('Error approving bulk submission:', error)
   }
   finally {
@@ -444,8 +729,9 @@ async function handleReject() {
     emit('success')
     emit('close')
   }
-  catch (error: any) {
-    errorMessage.value = error.data?.message || error.message || 'Erro ao rejeitar submissão'
+  catch (error: unknown) {
+    const message = error instanceof Error ? error.message : 'Erro ao rejeitar submissão'
+    errorMessage.value = message
     console.error('Error rejecting bulk submission:', error)
   }
   finally {
