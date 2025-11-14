@@ -1,6 +1,9 @@
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
 
+type ChurchSubmission = Database['public']['Tables']['church_submissions']['Row']
+type Church = Database['public']['Tables']['churches']['Row']
+
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
@@ -25,7 +28,7 @@ export default defineEventHandler(async (event) => {
       .from('church_submissions')
       .select('*')
       .eq('id', id)
-      .single()
+      .single<ChurchSubmission>()
 
     if (fetchError || !submission) {
       throw createError({
@@ -66,7 +69,7 @@ export default defineEventHandler(async (event) => {
       .from('churches')
       .insert(churchData as never)
       .select()
-      .single()
+      .single<Church>()
 
     if (insertError) {
       throw insertError
@@ -84,7 +87,9 @@ export default defineEventHandler(async (event) => {
 
     if (updateError) {
       // Rollback: delete the inserted church
-      await supabase.from('churches').delete().eq('id', newChurch!.id)
+      if (newChurch?.id) {
+        await supabase.from('churches').delete().eq('id', newChurch.id)
+      }
       throw updateError
     }
 

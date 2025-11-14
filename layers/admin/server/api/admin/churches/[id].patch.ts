@@ -6,7 +6,7 @@ type ChurchUpdate = Database['public']['Tables']['churches']['Update']
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
-  const body = await readBody<ChurchUpdate & { address?: string }>(event)
+  const body = await readBody(event)
 
   if (!id) {
     throw createError({
@@ -22,21 +22,27 @@ export default defineEventHandler(async (event) => {
   )
 
   try {
+    let updateData: ChurchUpdate = body
+
     // If address changed, re-geocode
     if (body.address) {
       const geocodeResult = await geocodeAddress(body.address)
 
-      body.latitude = geocodeResult.latitude
-      body.longitude = geocodeResult.longitude
-      body.city = geocodeResult.city
-      body.state = geocodeResult.state
-      body.postal_code = geocodeResult.postalCode
+      updateData = {
+        ...body,
+        address: body.address,
+        latitude: geocodeResult.latitude,
+        longitude: geocodeResult.longitude,
+        city: geocodeResult.city,
+        state: geocodeResult.state,
+        postal_code: geocodeResult.postalCode,
+      }
     }
 
     // Update the church
     const { data, error } = await supabase
       .from('churches')
-      .update(body as any)
+      .update(updateData as never)
       .eq('id', id)
       .select()
       .single()

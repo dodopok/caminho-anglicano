@@ -247,11 +247,11 @@ async function loadChurches() {
       throw new Error('Não autenticado')
     }
 
-    const data = await $fetch('/api/admin/churches', {
+    const data = await $fetch<{ churches: Church[] }>('/api/admin/churches', {
       headers: {
         Authorization: `Bearer ${token}`,
       },
-    }) as { churches: Church[] }
+    })
 
     churches.value = data.churches
   }
@@ -266,7 +266,7 @@ async function loadChurches() {
 
 async function loadJurisdictions() {
   try {
-    jurisdictions.value = await $fetch('/api/jurisdictions')
+    jurisdictions.value = await $fetch<Jurisdiction[]>('/api/jurisdictions')
   }
   catch (error) {
     console.error('Error loading jurisdictions:', error)

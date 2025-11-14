@@ -1,6 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
 
+type ChurchSubmission = Database['public']['Tables']['church_submissions']['Row']
+
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
@@ -32,7 +34,7 @@ export default defineEventHandler(async (event) => {
       .from('church_submissions')
       .select('status')
       .eq('id', id)
-      .single()
+      .single<Pick<ChurchSubmission, 'status'>>()
 
     if (fetchError || !submission) {
       throw createError({
