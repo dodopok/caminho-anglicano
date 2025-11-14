@@ -12,14 +12,21 @@ export default defineEventHandler(async (event) => {
   )
 
   try {
+    // Pagination parameters
+    const page = Number(query.page) || 1
+    const limit = Number(query.limit) || 10
+    const from = (page - 1) * limit
+    const to = from + limit - 1
+
     // Build query with jurisdiction join
     let queryBuilder = supabase
       .from('churches')
       .select(`
         *,
         jurisdiction:jurisdictions(id, name, slug, color)
-      `)
+      `, { count: 'exact' })
       .order('name', { ascending: true })
+      .range(from, to)
 
     // Filter by jurisdiction if provided
     if (query.jurisdiction_id) {
@@ -36,7 +43,7 @@ export default defineEventHandler(async (event) => {
       queryBuilder = queryBuilder.eq('state', query.state as string)
     }
 
-    const { data, error } = await queryBuilder
+    const { data, error, count } = await queryBuilder
 
     if (error) {
       throw error
@@ -44,7 +51,10 @@ export default defineEventHandler(async (event) => {
 
     return {
       churches: data || [],
-      count: data?.length || 0,
+      count: count || 0,
+      page,
+      limit,
+      totalPages: Math.ceil((count || 0) / limit),
     }
   }
   catch (error: any) {

@@ -105,7 +105,7 @@
       </div>
 
       <!-- Empty State -->
-      <div v-else-if="!filteredChurches.length" class="bg-white rounded-lg shadow-sm p-12 text-center">
+      <div v-else-if="!churches.length" class="bg-white rounded-lg shadow-sm p-12 text-center">
         <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
         </svg>
@@ -140,7 +140,7 @@
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
               <tr
-                v-for="church in filteredChurches"
+                v-for="church in churches"
                 :key="church.id"
                 class="hover:bg-gray-50 transition-colors"
               >
@@ -180,9 +180,35 @@
         </div>
       </div>
 
-      <!-- Summary -->
-      <div v-if="filteredChurches.length > 0" class="mt-4 text-sm text-gray-600 text-center">
-        Mostrando {{ filteredChurches.length }} igreja{{ filteredChurches.length === 1 ? '' : 's' }}
+      <!-- Pagination -->
+      <div v-if="churches.length > 0" class="mt-6 flex items-center justify-between">
+        <div class="text-sm text-gray-600">
+          Mostrando {{ churches.length }} de {{ totalCount }} igreja{{ totalCount === 1 ? '' : 's' }}
+        </div>
+        
+        <div v-if="totalPages > 1" class="flex gap-2">
+          <button
+            class="px-3 py-1 border border-gray-300 rounded-md text-sm hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+            :disabled="currentPage === 1"
+            @click="currentPage--; loadChurches()"
+          >
+            Anterior
+          </button>
+          
+          <div class="flex items-center gap-2">
+            <span class="text-sm text-gray-600">
+              Página {{ currentPage }} de {{ totalPages }}
+            </span>
+          </div>
+          
+          <button
+            class="px-3 py-1 border border-gray-300 rounded-md text-sm hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+            :disabled="currentPage === totalPages"
+            @click="currentPage++; loadChurches()"
+          >
+            Próxima
+          </button>
+        </div>
       </div>
     </div>
   </AdminLayout>
@@ -214,40 +240,40 @@ const searchQuery = ref('')
 const jurisdictionFilter = ref('')
 const stateFilter = ref('')
 
+// Pagination
+const currentPage = ref(1)
+const totalPages = ref(1)
+const totalCount = ref(0)
+const pageSize = ref(10)
+
 // Edit modal state
 const isEditModalOpen = ref(false)
 const selectedChurch = ref<Church | null>(null)
 
-// Computed
-const filteredChurches = computed(() => {
-  let result = churches.value
+// Unique states for filter (fetch from API)
+const uniqueStates = ref<string[]>([])
 
-  if (searchQuery.value) {
-    result = result.filter(c =>
-      c.name.toLowerCase().includes(searchQuery.value.toLowerCase()),
-    )
+let searchTimeout: NodeJS.Timeout | null = null
+
+// Watch filters and trigger search with debounce
+watch([searchQuery, jurisdictionFilter, stateFilter], () => {
+  // Reset to page 1 when filters change
+  currentPage.value = 1
+  
+  // Debounce search
+  if (searchTimeout) {
+    clearTimeout(searchTimeout)
   }
-
-  if (jurisdictionFilter.value) {
-    result = result.filter(c => c.jurisdiction_id === jurisdictionFilter.value)
-  }
-
-  if (stateFilter.value) {
-    result = result.filter(c => c.state === stateFilter.value)
-  }
-
-  return result
-})
-
-const uniqueStates = computed(() => {
-  const states = churches.value.map(c => c.state).filter(Boolean)
-  return Array.from(new Set(states)).sort()
+  searchTimeout = setTimeout(() => {
+    loadChurches()
+  }, 300)
 })
 
 // Load on mount
 onMounted(() => {
   loadChurches()
   loadJurisdictions()
+  loadStates()
 })
 
 async function loadChurches() {
@@ -260,20 +286,66 @@ async function loadChurches() {
       throw new Error('Não autenticado')
     }
 
-    const data = await $fetch<{ churches: Church[] }>('/api/admin/churches', {
+    const params: Record<string, string> = {
+      page: String(currentPage.value),
+      limit: String(pageSize.value),
+    }
+
+    if (searchQuery.value) {
+      params.search = searchQuery.value
+    }
+
+    if (jurisdictionFilter.value) {
+      params.jurisdiction_id = jurisdictionFilter.value
+    }
+
+    if (stateFilter.value) {
+      params.state = stateFilter.value
+    }
+
+    const data = await $fetch<{
+      churches: Church[]
+      count: number
+      page: number
+      totalPages: number
+    }>('/api/admin/churches', {
       headers: {
         Authorization: `Bearer ${token}`,
       },
+      query: params,
     })
 
     churches.value = data.churches
+    totalCount.value = data.count
+    totalPages.value = data.totalPages
   }
-  catch (error: any) {
-    errorMessage.value = error.message || 'Erro ao carregar igrejas'
+  catch (error: unknown) {
+    errorMessage.value = error instanceof Error ? error.message : 'Erro ao carregar igrejas'
     console.error('Error loading churches:', error)
   }
   finally {
     isLoading.value = false
+  }
+}
+
+async function loadStates() {
+  try {
+    const token = await getToken()
+    if (!token) return
+
+    // Fetch all unique states from the API without filters
+    const data = await $fetch<{ churches: Church[] }>('/api/admin/churches', {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+      query: { limit: '9999' }, // Get all for unique states
+    })
+
+    const states = data.churches.map(c => c.state).filter(Boolean)
+    uniqueStates.value = Array.from(new Set(states)).sort()
+  }
+  catch (error) {
+    console.error('Error loading states:', error)
   }
 }
 
@@ -334,8 +406,8 @@ async function handleExport() {
     window.URL.revokeObjectURL(url)
     document.body.removeChild(a)
   }
-  catch (error: any) {
-    alert(error.message || 'Erro ao exportar')
+  catch (error: unknown) {
+    alert(error instanceof Error ? error.message : 'Erro ao exportar')
   }
   finally {
     isExporting.value = false
