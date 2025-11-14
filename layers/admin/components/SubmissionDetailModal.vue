@@ -52,170 +52,93 @@
               <!-- Form -->
               <form @submit.prevent="handleSave" class="space-y-6">
                 <!-- Nome -->
-                <div>
-                  <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
-                    Nome da Igreja *
-                  </label>
-                  <input
-                    id="name"
-                    v-model="formData.name"
-                    type="text"
-                    required
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                  >
-                </div>
+                <BaseInput
+                  v-model="formData.name"
+                  label="Nome da Igreja"
+                  required
+                />
 
                 <!-- Jurisdição -->
-                <div>
-                  <label for="jurisdiction" class="block text-sm font-medium text-gray-700 mb-1">
-                    Jurisdição *
-                  </label>
-                  <input
-                    id="jurisdiction"
-                    v-model="formData.jurisdiction"
-                    type="text"
-                    required
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                  >
-                </div>
+                <BaseInput
+                  v-model="formData.jurisdiction"
+                  label="Jurisdição"
+                  required
+                />
 
                 <!-- Endereço -->
-                <div>
-                  <label for="address" class="block text-sm font-medium text-gray-700 mb-1">
-                    Endereço Completo *
-                  </label>
-                  <textarea
-                    id="address"
-                    v-model="formData.address"
-                    rows="2"
-                    required
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                  />
-                </div>
+                <BaseTextarea
+                  v-model="formData.address"
+                  label="Endereço Completo"
+                  :rows="2"
+                  required
+                />
 
                 <!-- Horários -->
-                <div>
-                  <label for="schedules" class="block text-sm font-medium text-gray-700 mb-1">
-                    Horários de Culto
-                  </label>
-                  <textarea
-                    id="schedules"
-                    v-model="formData.schedules"
-                    rows="2"
-                    placeholder="Ex: Domingos às 10h, Quartas às 19h30"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                  />
-                </div>
+                <BaseTextarea
+                  v-model="formData.schedules"
+                  label="Horários de Culto"
+                  :rows="2"
+                  placeholder="Ex: Domingos às 10h, Quartas às 19h30"
+                />
 
                 <!-- Descrição -->
-                <div>
-                  <label for="description" class="block text-sm font-medium text-gray-700 mb-1">
-                    Descrição
-                  </label>
-                  <textarea
-                    id="description"
-                    v-model="formData.description"
-                    rows="3"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                  />
-                </div>
+                <BaseTextarea
+                  v-model="formData.description"
+                  label="Descrição"
+                  :rows="3"
+                />
 
                 <!-- Pastores -->
-                <div>
-                  <label for="pastors" class="block text-sm font-medium text-gray-700 mb-1">
-                    Pastores Responsáveis
-                  </label>
-                  <input
-                    id="pastors"
-                    v-model="formData.pastors"
-                    type="text"
-                    placeholder="Ex: Rev. João Silva, Rev. Maria Santos"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                  >
-                </div>
+                <BaseInput
+                  v-model="formData.pastors"
+                  label="Pastores Responsáveis"
+                  placeholder="Ex: Rev. João Silva, Rev. Maria Santos"
+                />
 
                 <!-- Email -->
-                <div>
-                  <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
-                    Email do Responsável *
-                  </label>
-                  <input
-                    id="email"
-                    v-model="formData.responsible_email"
-                    type="email"
-                    required
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                  >
-                </div>
+                <BaseInput
+                  v-model="formData.responsible_email"
+                  label="Email do Responsável"
+                  type="email"
+                  required
+                />
 
                 <!-- Redes Sociais -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label for="website" class="block text-sm font-medium text-gray-700 mb-1">
-                      Website
-                    </label>
-                    <input
-                      id="website"
-                      v-model="formData.website"
-                      type="url"
-                      placeholder="https://..."
-                      class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                    >
-                  </div>
-
-                  <div>
-                    <label for="instagram" class="block text-sm font-medium text-gray-700 mb-1">
-                      Instagram
-                    </label>
-                    <input
-                      id="instagram"
-                      v-model="formData.instagram"
-                      type="url"
-                      placeholder="https://instagram.com/..."
-                      class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                    >
-                  </div>
-
-                  <div>
-                    <label for="youtube" class="block text-sm font-medium text-gray-700 mb-1">
-                      YouTube
-                    </label>
-                    <input
-                      id="youtube"
-                      v-model="formData.youtube"
-                      type="url"
-                      placeholder="https://youtube.com/..."
-                      class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                    >
-                  </div>
-
-                  <div>
-                    <label for="spotify" class="block text-sm font-medium text-gray-700 mb-1">
-                      Spotify
-                    </label>
-                    <input
-                      id="spotify"
-                      v-model="formData.spotify"
-                      type="url"
-                      placeholder="https://spotify.com/..."
-                      class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                    >
-                  </div>
+                  <BaseInput
+                    v-model="formData.website"
+                    label="Website"
+                    type="url"
+                    placeholder="https://..."
+                  />
+                  <BaseInput
+                    v-model="formData.instagram"
+                    label="Instagram"
+                    type="url"
+                    placeholder="https://instagram.com/..."
+                  />
+                  <BaseInput
+                    v-model="formData.youtube"
+                    label="YouTube"
+                    type="url"
+                    placeholder="https://youtube.com/..."
+                  />
+                  <BaseInput
+                    v-model="formData.spotify"
+                    label="Spotify"
+                    type="url"
+                    placeholder="https://spotify.com/..."
+                  />
                 </div>
 
                 <!-- Review Notes (for rejection) -->
-                <div v-if="submission.status !== 'pending'">
-                  <label for="review-notes" class="block text-sm font-medium text-gray-700 mb-1">
-                    Notas da Revisão
-                  </label>
-                  <textarea
-                    id="review-notes"
-                    :value="submission.review_notes"
-                    rows="2"
-                    disabled
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-gray-600"
-                  />
-                </div>
+                <BaseTextarea
+                  v-if="submission.status !== 'pending'"
+                  :model-value="submission.review_notes || ''"
+                  label="Notas da Revisão"
+                  :rows="2"
+                  disabled
+                />
               </form>
 
               <!-- Metadata -->

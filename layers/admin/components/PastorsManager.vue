@@ -9,18 +9,18 @@
       <div
         v-for="(pastor, index) in pastors"
         :key="index"
-        class="flex items-center gap-2"
+        class="flex items-start gap-2"
       >
-        <input
-          v-model="pastors[index]"
-          type="text"
-          placeholder="Nome do pastor (ex: Rev. João Silva)"
-          class="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-sm"
-        >
+        <div class="flex-1">
+          <BaseInput
+            v-model="pastors[index]"
+            placeholder="Nome do pastor (ex: Rev. João Silva)"
+          />
+        </div>
         <button
           type="button"
           @click="removePastor(index)"
-          class="p-2 text-red-600 hover:text-red-700 hover:bg-red-50 rounded-md transition-colors"
+          class="p-2 text-red-600 hover:text-red-700 hover:bg-red-50 rounded-md transition-colors mt-0.5"
           title="Remover pastor"
         >
           <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

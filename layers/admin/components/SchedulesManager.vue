@@ -9,24 +9,20 @@
       <div
         v-for="(schedule, index) in schedules"
         :key="index"
-        class="flex items-center gap-2"
+        class="flex items-start gap-2"
       >
-        <input
+        <BaseInput
           v-model="schedules[index].day"
-          type="text"
           placeholder="Dia (ex: Domingo)"
-          class="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-sm"
-        >
-        <input
+        />
+        <BaseInput
           v-model="schedules[index].time"
-          type="text"
           placeholder="Horário (ex: 10h00)"
-          class="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-sm"
-        >
+        />
         <button
           type="button"
           @click="removeSchedule(index)"
-          class="p-2 text-red-600 hover:text-red-700 hover:bg-red-50 rounded-md transition-colors"
+          class="p-2 text-red-600 hover:text-red-700 hover:bg-red-50 rounded-md transition-colors mt-0.5"
           title="Remover horário"
         >
           <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

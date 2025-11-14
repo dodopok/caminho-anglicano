@@ -51,208 +51,112 @@
                   <!-- Left Column - Form Fields -->
                   <div class="lg:col-span-2 space-y-6">
                     <!-- Nome -->
-                    <div>
-                      <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
-                        Nome da Igreja *
-                      </label>
-                      <input
-                        id="name"
-                        v-model="formData.name"
-                        type="text"
-                        required
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                      >
-                    </div>
+                    <BaseInput
+                      v-model="formData.name"
+                      label="Nome da Igreja"
+                      required
+                    />
 
                     <!-- Jurisdição -->
-                    <div>
-                      <label for="jurisdiction" class="block text-sm font-medium text-gray-700 mb-1">
-                        Jurisdição *
-                      </label>
-                      <select
-                        id="jurisdiction"
-                        v-model="formData.jurisdiction_id"
-                        required
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                      >
-                        <option value="">Selecione uma jurisdição</option>
-                        <option v-for="j in jurisdictions" :key="j.id" :value="j.id">
-                          {{ j.name }}
-                        </option>
-                      </select>
-                    </div>
+                    <BaseSelect
+                      v-model="formData.jurisdiction_id"
+                      label="Jurisdição"
+                      :options="jurisdictionOptions"
+                      placeholder="Selecione uma jurisdição"
+                      required
+                    />
 
                     <!-- Endereço -->
-                    <div>
-                      <label for="address" class="block text-sm font-medium text-gray-700 mb-1">
-                        Endereço Completo *
-                      </label>
-                      <textarea
-                        id="address"
-                        v-model="formData.address"
-                        rows="2"
-                        required
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                      />
-                      <p class="mt-1 text-xs text-gray-500">
-                        Ao salvar, as coordenadas serão atualizadas automaticamente no servidor
-                      </p>
-                    </div>
+                    <BaseTextarea
+                      v-model="formData.address"
+                      label="Endereço Completo"
+                      :rows="2"
+                      required
+                      hint="Ao salvar, as coordenadas serão atualizadas automaticamente no servidor"
+                    />
 
                     <!-- Cidade, Estado, CEP -->
                     <div class="grid grid-cols-3 gap-4">
-                      <div>
-                        <label for="city" class="block text-sm font-medium text-gray-700 mb-1">
-                          Cidade
-                        </label>
-                        <input
-                          id="city"
-                          v-model="formData.city"
-                          type="text"
-                          readonly
-                          class="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50"
-                        >
-                      </div>
-                      <div>
-                        <label for="state" class="block text-sm font-medium text-gray-700 mb-1">
-                          Estado
-                        </label>
-                        <input
-                          id="state"
-                          v-model="formData.state"
-                          type="text"
-                          readonly
-                          class="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50"
-                        >
-                      </div>
-                      <div>
-                        <label for="postal_code" class="block text-sm font-medium text-gray-700 mb-1">
-                          CEP
-                        </label>
-                        <input
-                          id="postal_code"
-                          v-model="formData.postal_code"
-                          type="text"
-                          readonly
-                          class="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50"
-                        >
-                      </div>
+                      <BaseInput
+                        v-model="formData.city"
+                        label="Cidade"
+                        readonly
+                      />
+                      <BaseInput
+                        v-model="formData.state"
+                        label="Estado"
+                        readonly
+                      />
+                      <BaseInput
+                        v-model="formData.postal_code"
+                        label="CEP"
+                        readonly
+                      />
                     </div>
 
                     <!-- Coordenadas -->
                     <div class="grid grid-cols-2 gap-4">
-                      <div>
-                        <label for="latitude" class="block text-sm font-medium text-gray-700 mb-1">
-                          Latitude
-                        </label>
-                        <input
-                          id="latitude"
-                          v-model.number="formData.latitude"
-                          type="number"
-                          step="any"
-                          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                        >
-                      </div>
-                      <div>
-                        <label for="longitude" class="block text-sm font-medium text-gray-700 mb-1">
-                          Longitude
-                        </label>
-                        <input
-                          id="longitude"
-                          v-model.number="formData.longitude"
-                          type="number"
-                          step="any"
-                          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                        >
-                      </div>
+                      <BaseInput
+                        v-model="formData.latitude"
+                        label="Latitude"
+                        type="number"
+                        step="any"
+                      />
+                      <BaseInput
+                        v-model="formData.longitude"
+                        label="Longitude"
+                        type="number"
+                        step="any"
+                      />
                     </div>
 
                     <!-- Horários -->
                     <SchedulesManager v-model="schedulesArray" />
 
                     <!-- Descrição -->
-                    <div>
-                      <label for="description" class="block text-sm font-medium text-gray-700 mb-1">
-                        Descrição
-                      </label>
-                      <textarea
-                        id="description"
-                        v-model="formData.description"
-                        rows="3"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                      />
-                    </div>
+                    <BaseTextarea
+                      v-model="formData.description"
+                      label="Descrição"
+                      :rows="3"
+                    />
 
                     <!-- Pastores -->
                     <PastorsManager v-model="formData.pastors" />
 
                     <!-- Email -->
-                    <div>
-                      <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
-                        Email do Responsável *
-                      </label>
-                      <input
-                        id="email"
-                        v-model="formData.responsible_email"
-                        type="email"
-                        required
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                      >
-                    </div>
+                    <BaseInput
+                      v-model="formData.responsible_email"
+                      label="Email do Responsável"
+                      type="email"
+                      required
+                    />
 
                     <!-- Redes Sociais -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <label for="website" class="block text-sm font-medium text-gray-700 mb-1">
-                          Website
-                        </label>
-                        <input
-                          id="website"
-                          v-model="socialMedia.website"
-                          type="url"
-                          placeholder="https://..."
-                          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                        >
-                      </div>
-
-                      <div>
-                        <label for="instagram" class="block text-sm font-medium text-gray-700 mb-1">
-                          Instagram
-                        </label>
-                        <input
-                          id="instagram"
-                          v-model="socialMedia.instagram"
-                          type="url"
-                          placeholder="https://instagram.com/..."
-                          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                        >
-                      </div>
-
-                      <div>
-                        <label for="youtube" class="block text-sm font-medium text-gray-700 mb-1">
-                          YouTube
-                        </label>
-                        <input
-                          id="youtube"
-                          v-model="socialMedia.youtube"
-                          type="url"
-                          placeholder="https://youtube.com/..."
-                          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                        >
-                      </div>
-
-                      <div>
-                        <label for="spotify" class="block text-sm font-medium text-gray-700 mb-1">
-                          Spotify
-                        </label>
-                        <input
-                          id="spotify"
-                          v-model="socialMedia.spotify"
-                          type="url"
-                          placeholder="https://spotify.com/..."
-                          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                        >
-                      </div>
+                      <BaseInput
+                        v-model="socialMedia.website"
+                        label="Website"
+                        type="url"
+                        placeholder="https://..."
+                      />
+                      <BaseInput
+                        v-model="socialMedia.instagram"
+                        label="Instagram"
+                        type="url"
+                        placeholder="https://instagram.com/..."
+                      />
+                      <BaseInput
+                        v-model="socialMedia.youtube"
+                        label="YouTube"
+                        type="url"
+                        placeholder="https://youtube.com/..."
+                      />
+                      <BaseInput
+                        v-model="socialMedia.spotify"
+                        label="Spotify"
+                        type="url"
+                        placeholder="https://spotify.com/..."
+                      />
                     </div>
                   </div>
 
@@ -354,6 +258,14 @@ interface Schedule {
   time: string
 }
 const schedulesArray = ref<Schedule[]>([])
+
+// Computed for jurisdiction options
+const jurisdictionOptions = computed(() => {
+  return props.jurisdictions.map(j => ({
+    value: j.id,
+    label: j.name,
+  }))
+})
 
 // Watch for church changes and initialize form
 watch(() => props.church, (newChurch) => {
@@ -462,7 +374,7 @@ async function handleSave() {
       responsible_email: formData.value.responsible_email,
       social_media: socialMedia.value,
     }
-
+    
     await $fetch(`/api/admin/churches/${props.church.id}`, {
       method: 'PATCH',
       headers: {

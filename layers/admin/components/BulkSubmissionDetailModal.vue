@@ -82,114 +82,78 @@
                   <!-- Church Fields -->
                   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <!-- Nome -->
-                    <div>
-                      <label :for="`name-${index}`" class="block text-sm font-medium text-gray-700 mb-1">
-                        Nome *
-                      </label>
-                      <input
-                        :id="`name-${index}`"
-                        v-model="church.name"
-                        type="text"
-                        :disabled="submission.status !== 'pending'"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-50"
-                      >
-                    </div>
+                    <BaseInput
+                      :id="`name-${index}`"
+                      v-model="church.name"
+                      label="Nome"
+                      :disabled="submission.status !== 'pending'"
+                      required
+                    />
 
                     <!-- Jurisdição -->
-                    <div>
-                      <label :for="`jurisdiction-${index}`" class="block text-sm font-medium text-gray-700 mb-1">
-                        Jurisdição *
-                      </label>
-                      <input
-                        :id="`jurisdiction-${index}`"
-                        v-model="church.jurisdiction"
-                        type="text"
-                        :disabled="submission.status !== 'pending'"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-50"
-                      >
-                    </div>
+                    <BaseInput
+                      :id="`jurisdiction-${index}`"
+                      v-model="church.jurisdiction"
+                      label="Jurisdição"
+                      :disabled="submission.status !== 'pending'"
+                      required
+                    />
 
                     <!-- Email -->
-                    <div>
-                      <label :for="`email-${index}`" class="block text-sm font-medium text-gray-700 mb-1">
-                        Email *
-                      </label>
-                      <input
-                        :id="`email-${index}`"
-                        v-model="church.responsible_email"
-                        type="email"
-                        :disabled="submission.status !== 'pending'"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-50"
-                      >
-                    </div>
+                    <BaseInput
+                      :id="`email-${index}`"
+                      v-model="church.responsible_email"
+                      label="Email"
+                      type="email"
+                      :disabled="submission.status !== 'pending'"
+                      required
+                    />
 
                     <!-- Endereço (full width) -->
                     <div class="md:col-span-2 lg:col-span-3">
-                      <label :for="`address-${index}`" class="block text-sm font-medium text-gray-700 mb-1">
-                        Endereço *
-                      </label>
-                      <textarea
+                      <BaseTextarea
                         :id="`address-${index}`"
                         v-model="church.address"
-                        rows="2"
+                        label="Endereço"
+                        :rows="2"
                         :disabled="submission.status !== 'pending'"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-50"
+                        required
                       />
                     </div>
 
                     <!-- Horários -->
-                    <div>
-                      <label :for="`schedules-${index}`" class="block text-sm font-medium text-gray-700 mb-1">
-                        Horários
-                      </label>
-                      <input
-                        :id="`schedules-${index}`"
-                        v-model="church.schedules"
-                        type="text"
-                        :disabled="submission.status !== 'pending'"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-50"
-                      >
-                    </div>
+                    <BaseInput
+                      :id="`schedules-${index}`"
+                      v-model="church.schedules"
+                      label="Horários"
+                      :disabled="submission.status !== 'pending'"
+                    />
 
                     <!-- Pastores -->
-                    <div>
-                      <label :for="`pastors-${index}`" class="block text-sm font-medium text-gray-700 mb-1">
-                        Pastores
-                      </label>
-                      <input
-                        :id="`pastors-${index}`"
-                        v-model="church.pastors"
-                        type="text"
-                        :disabled="submission.status !== 'pending'"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-50"
-                      >
-                    </div>
+                    <BaseInput
+                      :id="`pastors-${index}`"
+                      v-model="church.pastors"
+                      label="Pastores"
+                      :disabled="submission.status !== 'pending'"
+                    />
 
                     <!-- Website -->
-                    <div>
-                      <label :for="`website-${index}`" class="block text-sm font-medium text-gray-700 mb-1">
-                        Website
-                      </label>
-                      <input
-                        :id="`website-${index}`"
-                        v-model="church.website"
-                        type="url"
-                        :disabled="submission.status !== 'pending'"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-50"
-                      >
-                    </div>
+                    <BaseInput
+                      :id="`website-${index}`"
+                      v-model="church.website"
+                      label="Website"
+                      type="url"
+                      :disabled="submission.status !== 'pending'"
+                    />
 
                     <!-- Descrição (full width) -->
                     <div class="md:col-span-2 lg:col-span-3">
-                      <label :for="`description-${index}`" class="block text-sm font-medium text-gray-700 mb-1">
-                        Descrição
-                      </label>
-                      <textarea
+                      <BaseTextarea
                         :id="`description-${index}`"
                         v-model="church.description"
-                        rows="2"
+                        label="Descrição"
+                        :rows="2"
                         :disabled="submission.status !== 'pending'"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-50"
                       />
                     </div>
                   </div>
@@ -198,14 +162,11 @@
 
               <!-- Review Notes (for processed submissions) -->
               <div v-if="submission.status !== 'pending' && submission.review_notes" class="mt-6 pt-6 border-t border-gray-200">
-                <label class="block text-sm font-medium text-gray-700 mb-1">
-                  Notas da Revisão
-                </label>
-                <textarea
-                  :value="submission.review_notes"
-                  rows="3"
+                <BaseTextarea
+                  :model-value="submission.review_notes"
+                  label="Notas da Revisão"
+                  :rows="3"
                   disabled
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-gray-600"
                 />
               </div>
 
