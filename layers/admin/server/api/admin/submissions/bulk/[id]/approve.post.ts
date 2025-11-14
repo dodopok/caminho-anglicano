@@ -32,7 +32,6 @@ export default defineEventHandler(async (event) => {
 
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
-  const body = await readBody<{ review_notes?: string }>(event)
 
   if (!id) {
     throw createError({
@@ -185,7 +184,6 @@ export default defineEventHandler(async (event) => {
         inserted_count: insertedChurches.length,
         total_count: churchesData.length,
         error_count: errors.length,
-        review_notes: body.review_notes,
       },
     })
 
@@ -202,6 +200,8 @@ export default defineEventHandler(async (event) => {
   }
   catch (error: any) {
     console.error('Error approving bulk submission:', sanitizeForLog(error))
+
+    console.log(error)
 
     if (error.statusCode) {
       throw error

@@ -34,10 +34,10 @@ export const ChurchSubmissionSchema = z.object({
   schedules: z.string().max(1000).trim().optional().nullable(),
   description: z.string().max(2000).trim().optional().nullable(),
   pastors: z.string().max(500).trim().optional().nullable(),
-  website: urlSchema.nullable(),
-  instagram: urlSchema.nullable(),
-  youtube: urlSchema.nullable(),
-  spotify: urlSchema.nullable(),
+  website: z.string().optional().nullable(),
+  instagram: z.string().optional().nullable(),
+  youtube: z.string().optional().nullable(),
+  spotify: z.string().optional().nullable(),
 })
 
 /**
@@ -51,11 +51,17 @@ export const ChurchUpdateSchema = z.object({
   schedules: z.any().optional().nullable(), // Complex type, validated separately
   description: z.string().max(2000).trim().optional().nullable(),
   pastors: z.any().optional().nullable(), // Array type, validated separately
+  city: z.string().optional().nullable(),
+  state: z.string().optional().nullable(),
+  postal_code: z.string().optional().nullable(),
+  latitude: z.number().optional().nullable(),
+  longitude: z.number().optional().nullable(),
+  responsible_email: emailSchema.optional(),  
   social_media: z.object({
-    website: urlSchema.nullable(),
-    instagram: urlSchema.nullable(),
-    youtube: urlSchema.nullable(),
-    spotify: urlSchema.nullable(),
+    website: z.string().optional().nullable(),
+    instagram: z.string().optional().nullable(),
+    youtube: z.string().optional().nullable(),
+    spotify: z.string().optional().nullable(),
   }).optional(),
 }).strict() // Rejects any additional fields
 
@@ -70,10 +76,10 @@ export const SubmissionUpdateSchema = z.object({
   schedules: z.string().max(1000).trim().optional().nullable(),
   description: z.string().max(2000).trim().optional().nullable(),
   pastors: z.string().max(500).trim().optional().nullable(),
-  website: urlSchema.nullable().optional(),
-  instagram: urlSchema.nullable().optional(),
-  youtube: urlSchema.nullable().optional(),
-  spotify: urlSchema.nullable().optional(),
+  website: z.string().optional().nullable(),
+  instagram: z.string().optional().nullable(),
+  youtube: z.string().optional().nullable(),
+  spotify: z.string().optional().nullable(),
   status: z.enum(['pending', 'approved', 'rejected']).optional(),
   review_notes: z.string().max(2000).optional().nullable(),
 }).strict()
