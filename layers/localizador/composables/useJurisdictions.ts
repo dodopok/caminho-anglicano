@@ -38,6 +38,10 @@ export function useJurisdictions() {
     return getJurisdictionById(id)?.name || ''
   }
 
+  function getJurisdictionSlug(id: string): string {
+    return getJurisdictionById(id)?.slug || ''
+  }
+
   return {
     jurisdictions: readonly(jurisdictions),
     isLoaded: readonly(isLoaded),
@@ -45,6 +49,7 @@ export function useJurisdictions() {
     getJurisdictionById,
     getJurisdictionBySlug,
     getJurisdictionColor,
-    getJurisdictionName
+    getJurisdictionName,
+    getJurisdictionSlug
   }
 }
