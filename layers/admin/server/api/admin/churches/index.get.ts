@@ -2,6 +2,9 @@ import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
 
 export default defineEventHandler(async (event) => {
+  // Ensure user is admin
+  await requireAdmin(event)
+
   const config = useRuntimeConfig()
   const query = getQuery(event)
 
@@ -57,11 +60,11 @@ export default defineEventHandler(async (event) => {
       totalPages: Math.ceil((count || 0) / limit),
     }
   }
-  catch (error: any) {
+  catch (error: unknown) {
     console.error('Error fetching churches:', error)
     throw createError({
       statusCode: 500,
-      message: error.message || 'Failed to fetch churches',
+      message: error instanceof Error ? error.message : 'Failed to fetch churches',
     })
   }
 })

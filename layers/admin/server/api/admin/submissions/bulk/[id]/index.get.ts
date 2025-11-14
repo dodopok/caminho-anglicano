@@ -4,6 +4,9 @@ import type { Database } from '~/types/database'
 type BulkSubmission = Database['public']['Tables']['bulk_church_submissions']['Row']
 
 export default defineEventHandler(async (event) => {
+  // Ensure user is admin
+  await requireAdmin(event)
+
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
 

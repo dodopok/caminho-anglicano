@@ -2,6 +2,9 @@ import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
 
 export default defineEventHandler(async (event) => {
+  // Ensure user is admin
+  await requireAdmin(event)
+
   const config = useRuntimeConfig()
 
   // Create Supabase client
@@ -54,11 +57,11 @@ export default defineEventHandler(async (event) => {
       recentSubmissions: recentSubmissions || [],
     }
   }
-  catch (error: any) {
+  catch (error: unknown) {
     console.error('Error fetching stats:', error)
     throw createError({
       statusCode: 500,
-      message: error.message || 'Failed to fetch statistics',
+      message: error instanceof Error ? error.message : 'Failed to fetch stats',
     })
   }
 })

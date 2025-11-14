@@ -2,6 +2,9 @@ import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
 
 export default defineEventHandler(async (event) => {
+  // Ensure user is admin
+  await requireAdmin(event)
+
   const config = useRuntimeConfig()
 
   // Create Supabase client

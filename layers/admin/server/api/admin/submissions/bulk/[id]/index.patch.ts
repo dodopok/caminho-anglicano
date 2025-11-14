@@ -38,11 +38,11 @@ export default defineEventHandler(async (event) => {
 
     return data
   }
-  catch (error: any) {
+  catch (error: unknown) {
     console.error('Error updating bulk submission:', error)
     throw createError({
       statusCode: 500,
-      message: error.message || 'Failed to update bulk submission',
+      message: error instanceof Error ? error.message : 'Failed to update bulk submission',
     })
   }
 })
