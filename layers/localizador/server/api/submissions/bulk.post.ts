@@ -22,38 +22,6 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  // Validate and parse the JSON data
-  let parsedData: any
-  try {
-    parsedData = JSON.parse(body.bulkData)
-  }
-  catch (error) {
-    throw createError({
-      statusCode: 400,
-      message: 'JSON inválido',
-    })
-  }
-
-  // Validate the structure of bulk data
-  try {
-    BulkChurchDataSchema.parse(parsedData)
-  }
-  catch (error: any) {
-    throw createError({
-      statusCode: 400,
-      message: 'Estrutura de dados inválida',
-      data: error.errors,
-    })
-  }
-
-  // Limit bulk submissions to reasonable size (max 100 churches per submission)
-  if (Array.isArray(parsedData) && parsedData.length > 100) {
-    throw createError({
-      statusCode: 400,
-      message: 'Máximo de 100 igrejas por submissão em lote',
-    })
-  }
-
   const supabase = createClient(
     config.public.supabaseUrl as string,
     config.supabaseServiceKey as string,
