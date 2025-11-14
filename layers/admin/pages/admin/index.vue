@@ -40,7 +40,7 @@
           </div>
           <div class="mt-4">
             <NuxtLink
-              to="/admin/submissions?status=pending"
+              to="/portal-do-douglas/submissions?status=pending"
               class="text-sm text-yellow-100 hover:text-white transition-colors"
             >
               Ver todas →
@@ -105,7 +105,7 @@
           </div>
           <div class="mt-4">
             <NuxtLink
-              to="/admin/churches"
+              to="/portal-do-douglas/churches"
               class="text-sm text-blue-100 hover:text-white transition-colors"
             >
               Ver todas →
@@ -122,7 +122,7 @@
               Submissões Recentes
             </h2>
             <NuxtLink
-              to="/admin/submissions"
+              to="/portal-do-douglas/submissions"
               class="text-sm text-blue-600 hover:text-blue-700 transition-colors"
             >
               Ver todas
