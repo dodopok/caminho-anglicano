@@ -33,9 +33,9 @@
       <div class="mb-8">
         <nav class="flex space-x-4 border-b border-gray-200">
           <NuxtLink
-            to="/admin"
+            to="/portal-do-douglas"
             class="px-4 py-3 text-sm font-medium transition-colors"
-            :class="isActive('/admin', true) ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600 hover:text-gray-900'"
+            :class="isActive('/portal-do-douglas', true) ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600 hover:text-gray-900'"
           >
             Dashboard
           </NuxtLink>
