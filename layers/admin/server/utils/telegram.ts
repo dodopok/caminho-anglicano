@@ -1,5 +1,3 @@
-import TelegramBot from 'node-telegram-bot-api'
-
 /**
  * Tipos de notificação suportados pelo bot do Telegram
  */
@@ -30,6 +28,7 @@ interface BulkSubmissionData {
 
 /**
  * Envia uma notificação para o Telegram quando há uma nova submissão
+ * Usa a API HTTP do Telegram diretamente para melhor compatibilidade com serverless
  *
  * @param type - Tipo da notificação (church_submission ou bulk_submission)
  * @param data - Dados da submissão
@@ -50,14 +49,21 @@ export async function sendTelegramNotification(
   }
 
   try {
-    // Cria uma instância do bot (sem polling, apenas para enviar mensagens)
-    const bot = new TelegramBot(botToken, { polling: false })
-
     // Formata a mensagem de acordo com o tipo
     const message = formatMessage(type, data)
 
-    // Envia a mensagem
-    await bot.sendMessage(chatId, message, { parse_mode: 'HTML' })
+    // Envia a mensagem usando a API HTTP do Telegram
+    // Mais leve e compatível com ambientes serverless como Vercel
+    const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`
+
+    await $fetch(telegramApiUrl, {
+      method: 'POST',
+      body: {
+        chat_id: chatId,
+        text: message,
+        parse_mode: 'HTML'
+      }
+    })
 
     console.log(`✅ Notificação do Telegram enviada: ${type}`)
   } catch (error) {

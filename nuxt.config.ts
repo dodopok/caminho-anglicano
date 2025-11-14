@@ -57,6 +57,11 @@ export default defineNuxtConfig({
     }
   },
 
+  // Configuração do Nitro para deploy na Vercel
+  nitro: {
+    preset: 'vercel'
+  },
+
   runtimeConfig: {
     // Chaves privadas do servidor
     supabaseServiceKey: process.env.SUPABASE_SERVICE_KEY,
