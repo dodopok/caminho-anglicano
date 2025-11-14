@@ -108,7 +108,9 @@ function formatMessage(
 
   if (type === 'bulk_submission') {
     const bulkData = data as BulkSubmissionData
-    const preview = bulkData.bulk_data.substring(0, 100) + '...'
+    const preview = bulkData.bulk_data.length > 100
+      ? bulkData.bulk_data.substring(0, 100) + '...'
+      : bulkData.bulk_data
 
     return `
 📦 <b>Nova Submissão BULK!</b>
