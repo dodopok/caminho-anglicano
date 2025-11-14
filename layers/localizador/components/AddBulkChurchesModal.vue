@@ -15,8 +15,9 @@ const { submitBulkChurches } = useSubmissions()
 
 const bulkData = ref('')
 const isSubmitting = ref(false)
-const errorMessage = ref('')
-const successMessage = ref('')
+const showToast = ref(false)
+const toastType = ref<'success' | 'error'>('success')
+const toastMessage = ref('')
 
 const exampleText = `Exemplo de formato:
 
@@ -41,8 +42,9 @@ E-mail: contato@igrejarj.com.br
 
 function resetForm() {
   bulkData.value = ''
-  errorMessage.value = ''
-  successMessage.value = ''
+  showToast.value = false
+  toastType.value = 'success'
+  toastMessage.value = ''
 }
 
 function handleClose() {
@@ -52,24 +54,37 @@ function handleClose() {
 
 async function handleSubmit() {
   if (!bulkData.value.trim()) {
-    errorMessage.value = 'Por favor, insira os dados das igrejas.'
+    toastType.value = 'error'
+    toastMessage.value = 'Por favor, insira os dados das igrejas.'
+    showToast.value = true
     return
   }
 
   isSubmitting.value = true
-  errorMessage.value = ''
+  showToast.value = false
 
   try {
     await submitBulkChurches(bulkData.value)
 
-    successMessage.value = 'Igrejas submetidas com sucesso! Elas serão revisadas em breve.'
+    toastType.value = 'success'
+    toastMessage.value = 'Igrejas submetidas com sucesso! Elas serão revisadas em breve.'
+    showToast.value = true
     setTimeout(() => {
       emit('success')
       handleClose()
-    }, 2000)
-  } catch (error) {
+    }, 2500)
+  } catch (error: any) {
     console.error('Error submitting bulk churches:', error)
-    errorMessage.value = 'Erro ao enviar as igrejas. Por favor, tente novamente.'
+    toastType.value = 'error'
+    
+    // Check for rate limit error (429)
+    if (error?.response?.status === 429 || error?.statusCode === 429) {
+      toastMessage.value = 'Você enviou muitas solicitações. Por favor, aguarde alguns minutos antes de tentar novamente.'
+    } else {
+      toastMessage.value = 'Erro ao enviar as igrejas. Por favor, tente novamente.'
+    }
+    
+    showToast.value = true
   } finally {
     isSubmitting.value = false
   }
@@ -107,14 +122,6 @@ async function handleSubmit() {
           </div>
 
           <form @submit.prevent="handleSubmit" class="p-6 space-y-4">
-            <div v-if="errorMessage" class="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
-              {{ errorMessage }}
-            </div>
-
-            <div v-if="successMessage" class="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
-              {{ successMessage }}
-            </div>
-
             <div class="bg-gray-50 border border-gray-200 rounded p-4">
               <h3 class="text-base font-semibold text-gray-900 mb-2">
                 Instruções
@@ -169,6 +176,13 @@ async function handleSubmit() {
       </div>
     </Transition>
   </Teleport>
+
+  <BaseToast
+    :show="showToast"
+    :type="toastType"
+    :message="toastMessage"
+    @close="showToast = false"
+  />
 </template>
 
 <style scoped>

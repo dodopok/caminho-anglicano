@@ -17,15 +17,17 @@ const name = ref('')
 const email = ref('')
 const message = ref('')
 const isSubmitting = ref(false)
-const errorMessage = ref('')
-const successMessage = ref('')
+const showToast = ref(false)
+const toastType = ref<'success' | 'error'>('success')
+const toastMessage = ref('')
 
 function resetForm() {
   name.value = ''
   email.value = ''
   message.value = ''
-  errorMessage.value = ''
-  successMessage.value = ''
+  showToast.value = false
+  toastType.value = 'success'
+  toastMessage.value = ''
 }
 
 function handleClose() {
@@ -35,19 +37,23 @@ function handleClose() {
 
 async function handleSubmit() {
   if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
-    errorMessage.value = 'Por favor, preencha todos os campos.'
+    toastType.value = 'error'
+    toastMessage.value = 'Por favor, preencha todos os campos.'
+    showToast.value = true
     return
   }
 
   // Validação básica de email
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   if (!emailRegex.test(email.value)) {
-    errorMessage.value = 'Por favor, insira um e-mail válido.'
+    toastType.value = 'error'
+    toastMessage.value = 'Por favor, insira um e-mail válido.'
+    showToast.value = true
     return
   }
 
   isSubmitting.value = true
-  errorMessage.value = ''
+  showToast.value = false
 
   try {
     await submitFeedback({
@@ -56,14 +62,25 @@ async function handleSubmit() {
       message: message.value
     })
 
-    successMessage.value = 'Feedback enviado com sucesso! Obrigado pela colaboração.'
+    toastType.value = 'success'
+    toastMessage.value = 'Feedback enviado com sucesso! Obrigado pela colaboração.'
+    showToast.value = true
     setTimeout(() => {
       emit('success')
       handleClose()
-    }, 2000)
-  } catch (error) {
+    }, 2500)
+  } catch (error: any) {
     console.error('Error submitting feedback:', error)
-    errorMessage.value = 'Erro ao enviar feedback. Por favor, tente novamente.'
+    toastType.value = 'error'
+    
+    // Check for rate limit error (429)
+    if (error?.response?.status === 429 || error?.statusCode === 429) {
+      toastMessage.value = 'Você enviou muitas solicitações. Por favor, aguarde alguns minutos antes de tentar novamente.'
+    } else {
+      toastMessage.value = 'Erro ao enviar feedback. Por favor, tente novamente.'
+    }
+    
+    showToast.value = true
   } finally {
     isSubmitting.value = false
   }
@@ -101,14 +118,6 @@ async function handleSubmit() {
           </div>
 
           <form @submit.prevent="handleSubmit" class="p-6 space-y-4">
-            <div v-if="errorMessage" class="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg text-sm">
-              {{ errorMessage }}
-            </div>
-
-            <div v-if="successMessage" class="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg text-sm">
-              {{ successMessage }}
-            </div>
-
             <p class="text-sm text-gray-600">
               Encontrou algum erro nas informações de uma igreja ou tem informações atualizadas? Nos avise!
             </p>
@@ -179,6 +188,13 @@ async function handleSubmit() {
       </div>
     </Transition>
   </Teleport>
+
+  <BaseToast
+    :show="showToast"
+    :type="toastType"
+    :message="toastMessage"
+    @close="showToast = false"
+  />
 </template>
 
 <style scoped>

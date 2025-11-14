@@ -35,8 +35,9 @@ const formData = ref({
 })
 
 const isSubmitting = ref(false)
-const errorMessage = ref('')
-const successMessage = ref('')
+const showToast = ref(false)
+const toastType = ref<'success' | 'error'>('success')
+const toastMessage = ref('')
 
 async function loadJurisdictions() {
   isLoadingJurisdictions.value = true
@@ -64,8 +65,9 @@ function resetForm() {
     youtube: '',
     spotify: ''
   }
-  errorMessage.value = ''
-  successMessage.value = ''
+  showToast.value = false
+  toastType.value = 'success'
+  toastMessage.value = ''
 }
 
 function handleClose() {
@@ -75,17 +77,21 @@ function handleClose() {
 
 async function handleSubmit() {
   if (!formData.value.name || !formData.value.address || !formData.value.responsibleEmail) {
-    errorMessage.value = 'Por favor, preencha todos os campos obrigatórios.'
+    toastType.value = 'error'
+    toastMessage.value = 'Por favor, preencha todos os campos obrigatórios.'
+    showToast.value = true
     return
   }
 
   if (!formData.value.jurisdictionId && !formData.value.customJurisdiction) {
-    errorMessage.value = 'Por favor, selecione uma jurisdição.'
+    toastType.value = 'error'
+    toastMessage.value = 'Por favor, selecione uma jurisdição.'
+    showToast.value = true
     return
   }
 
   isSubmitting.value = true
-  errorMessage.value = ''
+  showToast.value = false
 
   try {
     const jurisdictionValue = formData.value.jurisdictionId === 'other'
@@ -106,14 +112,25 @@ async function handleSubmit() {
       spotify: formData.value.spotify
     })
 
-    successMessage.value = 'Igreja submetida com sucesso! Ela será revisada em breve.'
+    toastType.value = 'success'
+    toastMessage.value = 'Igreja submetida com sucesso! Ela será revisada em breve.'
+    showToast.value = true
     setTimeout(() => {
       emit('success')
       handleClose()
-    }, 2000)
-  } catch (error) {
+    }, 2500)
+  } catch (error: any) {
     console.error('Error submitting church:', error)
-    errorMessage.value = 'Erro ao enviar a igreja. Por favor, tente novamente.'
+    toastType.value = 'error'
+    
+    // Check for rate limit error (429)
+    if (error?.response?.status === 429 || error?.statusCode === 429) {
+      toastMessage.value = 'Você enviou muitas solicitações. Por favor, aguarde alguns minutos antes de tentar novamente.'
+    } else {
+      toastMessage.value = 'Erro ao enviar a igreja. Por favor, tente novamente.'
+    }
+    
+    showToast.value = true
   } finally {
     isSubmitting.value = false
   }
@@ -157,14 +174,6 @@ watch(() => props.isOpen, (isOpen) => {
           </div>
 
           <form @submit.prevent="handleSubmit" class="p-6 space-y-4">
-            <div v-if="errorMessage" class="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
-              {{ errorMessage }}
-            </div>
-
-            <div v-if="successMessage" class="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
-              {{ successMessage }}
-            </div>
-
             <div>
               <label for="jurisdiction" class="block text-sm font-medium text-gray-700 mb-1">
                 Jurisdição <span class="text-red-500">*</span>
@@ -364,6 +373,13 @@ watch(() => props.isOpen, (isOpen) => {
       </div>
     </Transition>
   </Teleport>
+
+  <BaseToast
+    :show="showToast"
+    :type="toastType"
+    :message="toastMessage"
+    @close="showToast = false"
+  />
 </template>
 
 <style scoped>
