@@ -2,6 +2,7 @@ import { createClient } from '@supabase/supabase-js'
 import { ChurchSubmissionSchema } from '~/layers/admin/server/utils/validation'
 import { rateLimit, RateLimits } from '~/layers/admin/server/utils/rateLimit'
 import { sanitizeForLog } from '~/layers/admin/server/utils/sanitization'
+import { sendTelegramNotification } from '~/layers/admin/server/utils/telegram'
 
 export default defineEventHandler(async (event) => {
   // Apply strict rate limiting for public submissions
@@ -52,6 +53,13 @@ export default defineEventHandler(async (event) => {
 
     if (error) {
       throw error
+    }
+
+    // Envia notificação para o Telegram (não bloqueia o fluxo principal)
+    if (data) {
+      sendTelegramNotification('church_submission', data as any).catch((err) => {
+        console.error('Erro ao enviar notificação do Telegram:', err)
+      })
     }
 
     return {
