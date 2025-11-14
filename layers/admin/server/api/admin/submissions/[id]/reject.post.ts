@@ -6,7 +6,7 @@ type ChurchSubmission = Database['public']['Tables']['church_submissions']['Row'
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
-  const body = await readBody<{ reviewNotes: string }>(event)
+  const body = await readBody(event)
 
   if (!id) {
     throw createError({
@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  if (!body.reviewNotes) {
+  if (!body.review_notes) {
     throw createError({
       statusCode: 400,
       message: 'Review notes are required for rejection',
@@ -57,7 +57,7 @@ export default defineEventHandler(async (event) => {
       .update({
         status: 'rejected' as const,
         reviewed_at: new Date().toISOString(),
-        review_notes: body.reviewNotes,
+        review_notes: body.review_notes,
       } as never)
       .eq('id', id)
       .select()

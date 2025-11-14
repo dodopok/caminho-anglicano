@@ -22,7 +22,7 @@ interface BulkChurchData {
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
-  const body = await readBody<{ reviewNotes?: string }>(event)
+  const body = await readBody<{ review_notes?: string }>(event)
 
   if (!id) {
     throw createError({
@@ -156,7 +156,7 @@ export default defineEventHandler(async (event) => {
       .update({
         status: 'approved' as const,
         reviewed_at: new Date().toISOString(),
-        review_notes: body.reviewNotes || (errors.length > 0 ? `Partial success. Errors: ${errors.join('; ')}` : null),
+        review_notes: body.review_notes || (errors.length > 0 ? `Partial success. Errors: ${errors.join('; ')}` : null),
       } as never)
       .eq('id', id)
 

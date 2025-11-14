@@ -1,56 +1,46 @@
 <template>
-  <Teleport to="body">
-    <Transition name="modal">
-      <div
-        v-if="isOpen"
-        class="fixed inset-0 z-50 overflow-y-auto"
-        @click.self="handleClose"
-      >
-        <div class="flex min-h-full items-center justify-center p-4">
-          <!-- Overlay -->
-          <div
-            class="fixed inset-0 bg-black bg-opacity-50 transition-opacity"
-            @click="handleClose"
-          />
+  <BaseModal
+    :is-open="isOpen"
+    title="Detalhes da Submissão"
+    @close="handleClose"
+  >
+    <template #header>
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-xl font-semibold text-gray-900">
+            Detalhes da Submissão
+          </h2>
+          <div class="mt-1">
+            <StatusBadge :status="submission.status" />
+          </div>
+        </div>
+        <button
+          @click="handleClose"
+          class="text-gray-400 hover:text-gray-500 transition-colors"
+        >
+          <span class="sr-only">Fechar</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </template>
 
-          <!-- Modal Content -->
-          <div class="relative bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] flex flex-col">
-            <!-- Header -->
-            <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 rounded-t-lg z-10">
-              <div class="flex items-center justify-between">
-                <div>
-                  <h2 class="text-xl font-semibold text-gray-900">
-                    Detalhes da Submissão
-                  </h2>
-                  <div class="mt-1">
-                    <StatusBadge :status="submission.status" />
-                  </div>
-                </div>
-                <button
-                  @click="handleClose"
-                  class="text-gray-400 hover:text-gray-500 transition-colors"
-                >
-                  <span class="sr-only">Fechar</span>
-                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            </div>
+    <!-- Error/Success Messages -->
+    <BaseAlert
+      v-model="showErrorMessage"
+      type="error"
+      :message="errorMessage"
+    />
 
-            <!-- Body (Scrollable) -->
-            <div class="flex-1 overflow-y-auto px-6 py-4">
-              <!-- Error/Success Messages -->
-              <div v-if="errorMessage" class="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
-                <p class="text-sm text-red-800">{{ errorMessage }}</p>
-              </div>
+    <BaseAlert
+      v-model="showSuccessMessage"
+      type="success"
+      :message="successMessage"
+    />
 
-              <div v-if="successMessage" class="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg">
-                <p class="text-sm text-green-800">{{ successMessage }}</p>
-              </div>
-
-              <!-- Form -->
-              <form @submit.prevent="handleSave" class="space-y-6">
+    <!-- Form -->
+    <form @submit.prevent="handleSave" class="space-y-6">
                 <!-- Nome -->
                 <BaseInput
                   v-model="formData.name"
@@ -133,81 +123,72 @@
 
                 <!-- Review Notes (for rejection) -->
                 <BaseTextarea
-                  v-if="submission.status !== 'pending'"
                   :model-value="submission.review_notes || ''"
                   label="Notas da Revisão"
                   :rows="2"
-                  disabled
-                />
-              </form>
+      />
+    </form>
 
-              <!-- Metadata -->
-              <div class="mt-6 pt-6 border-t border-gray-200">
-                <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <dt class="font-medium text-gray-500">Data da Submissão</dt>
-                    <dd class="mt-1 text-gray-900">
-                      {{ formatDate(submission.submitted_at) }}
-                    </dd>
-                  </div>
-                  <div v-if="submission.reviewed_at">
-                    <dt class="font-medium text-gray-500">Data da Revisão</dt>
-                    <dd class="mt-1 text-gray-900">
-                      {{ formatDate(submission.reviewed_at) }}
-                    </dd>
-                  </div>
-                </dl>
-              </div>
-            </div>
+    <!-- Metadata -->
+    <div class="mt-6 pt-6 border-t border-gray-200">
+      <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+        <div>
+          <dt class="font-medium text-gray-500">Data da Submissão</dt>
+          <dd class="mt-1 text-gray-900">
+            {{ formatDate(submission.submitted_at) }}
+          </dd>
+        </div>
+        <div v-if="submission.reviewed_at">
+          <dt class="font-medium text-gray-500">Data da Revisão</dt>
+          <dd class="mt-1 text-gray-900">
+            {{ formatDate(submission.reviewed_at) }}
+          </dd>
+        </div>
+      </dl>
+    </div>
 
-            <!-- Footer Actions -->
-            <div class="sticky bottom-0 bg-gray-50 border-t border-gray-200 px-6 py-4 rounded-b-lg flex justify-between gap-3">
-              <button
-                v-if="submission.status === 'pending'"
-                type="button"
-                @click="handleReject"
-                :disabled="isLoading"
-                class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                Rejeitar
-              </button>
+    <template #footer>
+      <div class="flex justify-between w-full gap-3">
+        <BaseButton
+          v-if="submission.status === 'pending'"
+          variant="danger"
+          :loading="isLoading"
+          @click="handleReject"
+        >
+          Rejeitar
+        </BaseButton>
 
-              <div class="flex gap-3 ml-auto">
-                <button
-                  type="button"
-                  @click="handleClose"
-                  :disabled="isLoading"
-                  class="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  Cancelar
-                </button>
+        <div class="flex gap-3 ml-auto">
+          <BaseButton
+            variant="secondary"
+            :disabled="isLoading"
+            @click="handleClose"
+          >
+            Cancelar
+          </BaseButton>
 
-                <button
-                  v-if="submission.status === 'pending'"
-                  type="button"
-                  @click="handleSave"
-                  :disabled="isLoading"
-                  class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  Salvar Alterações
-                </button>
+          <BaseButton
+            v-if="submission.status === 'pending'"
+            variant="primary"
+            :loading="isLoading"
+            @click="handleSave"
+          >
+            Salvar Alterações
+          </BaseButton>
 
-                <button
-                  v-if="submission.status === 'pending'"
-                  type="button"
-                  @click="handleApprove"
-                  :disabled="isLoading"
-                  class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {{ isLoading ? 'Aprovando...' : 'Aprovar' }}
-                </button>
-              </div>
-            </div>
-          </div>
+          <BaseButton
+            v-if="submission.status === 'pending'"
+            variant="success"
+            :loading="isLoading"
+            loading-text="Aprovando..."
+            @click="handleApprove"
+          >
+            Aprovar
+          </BaseButton>
         </div>
       </div>
-    </Transition>
-  </Teleport>
+    </template>
+  </BaseModal>
 </template>
 
 <script setup lang="ts">
@@ -247,6 +228,21 @@ const formData = ref({
 const isLoading = ref(false)
 const errorMessage = ref('')
 const successMessage = ref('')
+
+// Computed for alert visibility
+const showErrorMessage = computed({
+  get: () => !!errorMessage.value,
+  set: (value: boolean) => {
+    if (!value) errorMessage.value = ''
+  },
+})
+
+const showSuccessMessage = computed({
+  get: () => !!successMessage.value,
+  set: (value: boolean) => {
+    if (!value) successMessage.value = ''
+  },
+})
 
 // Watch for submission changes to update form
 watch(() => props.submission, (newSubmission) => {
@@ -338,7 +334,7 @@ async function handleApprove() {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${token}`,
-      },
+      }
     })
 
     successMessage.value = 'Submissão aprovada e igreja criada com sucesso!'
@@ -378,7 +374,7 @@ async function handleReject() {
         Authorization: `Bearer ${token}`,
       },
       body: {
-        reviewNotes: reason,
+        review_notes: reason,
       },
     })
 
@@ -396,15 +392,3 @@ async function handleReject() {
   }
 }
 </script>
-
-<style scoped>
-.modal-enter-active,
-.modal-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.modal-enter-from,
-.modal-leave-to {
-  opacity: 0;
-}
-</style>

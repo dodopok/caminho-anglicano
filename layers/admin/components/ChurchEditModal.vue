@@ -1,55 +1,29 @@
 <template>
-  <Teleport to="body">
-    <Transition name="modal">
-      <div
-        v-if="isOpen"
-        class="fixed inset-0 z-50 overflow-y-auto"
-        @click.self="handleClose"
-      >
-        <div class="flex min-h-full items-center justify-center p-4">
-          <!-- Overlay -->
-          <div
-            class="fixed inset-0 bg-black bg-opacity-50 transition-opacity"
-            @click="handleClose"
-          />
+  <BaseModal
+    :is-open="isOpen"
+    title="Editar Igreja"
+    max-width="6xl"
+    @close="handleClose"
+  >
+    <!-- Error/Success Messages -->
+    <BaseAlert
+      v-model="showErrorMessage"
+      type="error"
+      :message="errorMessage"
+    />
 
-          <!-- Modal Content -->
-          <div class="relative bg-white rounded-lg shadow-xl max-w-6xl w-full max-h-[90vh] flex flex-col">
-            <!-- Header -->
-            <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 rounded-t-lg z-10">
-              <div class="flex items-center justify-between">
-                <h2 class="text-xl font-semibold text-gray-900">
-                  Editar Igreja
-                </h2>
-                <button
-                  @click="handleClose"
-                  class="text-gray-400 hover:text-gray-500 transition-colors"
-                >
-                  <span class="sr-only">Fechar</span>
-                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <!-- Body (Scrollable) -->
-            <div class="flex-1 overflow-y-auto px-6 py-4">
-              <!-- Error/Success Messages -->
-              <div v-if="errorMessage" class="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
-                <p class="text-sm text-red-800">{{ errorMessage }}</p>
-              </div>
-
-              <div v-if="successMessage" class="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg">
-                <p class="text-sm text-green-800">{{ successMessage }}</p>
-              </div>
+    <BaseAlert
+      v-model="showSuccessMessage"
+      type="success"
+      :message="successMessage"
+    />
 
 
-              <!-- Form -->
-              <form @submit.prevent="handleSave" class="space-y-6">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                  <!-- Left Column - Form Fields -->
-                  <div class="lg:col-span-2 space-y-6">
+    <!-- Form -->
+    <form @submit.prevent="handleSave" class="space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Left Column - Form Fields -->
+        <div class="lg:col-span-2 space-y-6">
                     <!-- Nome -->
                     <BaseInput
                       v-model="formData.name"
@@ -173,34 +147,28 @@
                         placeholder="Geocodifique o endereço para ver o mapa"
                       />
                     </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-
-            <!-- Footer Actions -->
-            <div class="sticky bottom-0 bg-gray-50 border-t border-gray-200 px-6 py-4 rounded-b-lg flex justify-end gap-3">
-              <button
-                type="button"
-                @click="handleClose"
-                class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
-              >
-                Cancelar
-              </button>
-              <button
-                type="button"
-                @click="handleSave"
-                :disabled="isLoading"
-                class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {{ isLoading ? 'Salvando...' : 'Salvar Alterações' }}
-              </button>
-            </div>
-          </div>
         </div>
       </div>
-    </Transition>
-  </Teleport>
+    </form>
+
+    <template #footer>
+      <div class="flex justify-end gap-3">
+        <BaseButton
+          variant="secondary"
+          @click="handleClose"
+        >
+          Cancelar
+        </BaseButton>
+        <BaseButton
+          variant="primary"
+          :loading="isLoading"
+          @click="handleSave"
+        >
+          Salvar Alterações
+        </BaseButton>
+      </div>
+    </template>
+  </BaseModal>
 </template>
 
 <script setup lang="ts">
@@ -226,6 +194,21 @@ const { getToken } = useAdminAuth()
 const isLoading = ref(false)
 const errorMessage = ref('')
 const successMessage = ref('')
+
+// Computed for alert visibility
+const showErrorMessage = computed({
+  get: () => !!errorMessage.value,
+  set: (value: boolean) => {
+    if (!value) errorMessage.value = ''
+  },
+})
+
+const showSuccessMessage = computed({
+  get: () => !!successMessage.value,
+  set: (value: boolean) => {
+    if (!value) successMessage.value = ''
+  },
+})
 
 // Form data with all editable fields
 const formData = ref({
@@ -405,25 +388,3 @@ function handleClose() {
   }
 }
 </script>
-
-<style scoped>
-.modal-enter-active,
-.modal-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.modal-enter-from,
-.modal-leave-to {
-  opacity: 0;
-}
-
-.modal-enter-active .relative,
-.modal-leave-active .relative {
-  transition: transform 0.3s ease;
-}
-
-.modal-enter-from .relative,
-.modal-leave-to .relative {
-  transform: scale(0.95);
-}
-</style>

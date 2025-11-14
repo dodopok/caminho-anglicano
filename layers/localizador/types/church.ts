@@ -60,7 +60,7 @@ export interface ChurchSubmission {
   status: 'pending' | 'approved' | 'rejected'
   submittedAt: string
   reviewedAt?: string
-  reviewNotes?: string
+  review_notes?: string
 }
 
 export interface BulkChurchSubmission {
@@ -69,7 +69,7 @@ export interface BulkChurchSubmission {
   status: 'pending' | 'approved' | 'rejected'
   submittedAt: string
   reviewedAt?: string
-  reviewNotes?: string
+  review_notes?: string
 }
 
 export interface ChurchFilters {

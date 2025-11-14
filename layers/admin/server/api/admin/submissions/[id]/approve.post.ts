@@ -7,7 +7,7 @@ type Church = Database['public']['Tables']['churches']['Row']
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
-  const body = await readBody<{ reviewNotes?: string }>(event)
+  const body = await readBody(event)
 
   if (!id) {
     throw createError({
@@ -80,8 +80,7 @@ export default defineEventHandler(async (event) => {
       .from('church_submissions')
       .update({
         status: 'approved' as const,
-        reviewed_at: new Date().toISOString(),
-        review_notes: body.reviewNotes || null,
+        reviewed_at: new Date().toISOString()
       } as never)
       .eq('id', id)
 

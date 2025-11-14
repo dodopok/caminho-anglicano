@@ -1,66 +1,60 @@
 <template>
-  <Teleport to="body">
-    <Transition name="modal">
+  <BaseModal
+    :is-open="isOpen"
+    title="Detalhes da Submissão em Lote"
+    max-width="7xl"
+    @close="handleClose"
+  >
+    <template #header>
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-xl font-semibold text-gray-900">
+            Detalhes da Submissão em Lote
+          </h2>
+          <div class="mt-1 flex items-center gap-3">
+            <StatusBadge :status="submission.status" />
+            <span class="text-sm text-gray-600">
+              {{ churches.length }} igreja{{ churches.length === 1 ? '' : 's' }}
+            </span>
+          </div>
+        </div>
+        <button
+          @click="handleClose"
+          class="text-gray-400 hover:text-gray-500 transition-colors"
+        >
+          <span class="sr-only">Fechar</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </template>
+
+    <!-- Error/Success Messages -->
+    <BaseAlert
+      v-model="showErrorMessage"
+      type="error"
+      :message="errorMessage"
+    />
+
+    <BaseAlert
+      v-model="showSuccessMessage"
+      type="success"
+      :message="successMessage"
+    />
+
+    <!-- Parse Error -->
+    <BaseAlert
+      v-if="parseError"
+      :model-value="true"
+      type="error"
+      title="Erro ao processar dados"
+      :message="parseError"
+    />
+
+    <!-- Churches List -->
+    <div v-if="!parseError" class="space-y-6">
       <div
-        v-if="isOpen"
-        class="fixed inset-0 z-50 overflow-y-auto"
-        @click.self="handleClose"
-      >
-        <div class="flex min-h-full items-center justify-center p-4">
-          <!-- Overlay -->
-          <div
-            class="fixed inset-0 bg-black bg-opacity-50 transition-opacity"
-            @click="handleClose"
-          />
-
-          <!-- Modal Content -->
-          <div class="relative bg-white rounded-lg shadow-xl max-w-7xl w-full max-h-[90vh] flex flex-col">
-            <!-- Header -->
-            <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 rounded-t-lg z-10">
-              <div class="flex items-center justify-between">
-                <div>
-                  <h2 class="text-xl font-semibold text-gray-900">
-                    Detalhes da Submissão em Lote
-                  </h2>
-                  <div class="mt-1 flex items-center gap-3">
-                    <StatusBadge :status="submission.status" />
-                    <span class="text-sm text-gray-600">
-                      {{ churches.length }} igreja{{ churches.length === 1 ? '' : 's' }}
-                    </span>
-                  </div>
-                </div>
-                <button
-                  @click="handleClose"
-                  class="text-gray-400 hover:text-gray-500 transition-colors"
-                >
-                  <span class="sr-only">Fechar</span>
-                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <!-- Body (Scrollable) -->
-            <div class="flex-1 overflow-y-auto px-6 py-4">
-              <!-- Error/Success Messages -->
-              <div v-if="errorMessage" class="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
-                <p class="text-sm text-red-800">{{ errorMessage }}</p>
-              </div>
-
-              <div v-if="successMessage" class="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg">
-                <p class="text-sm text-green-800">{{ successMessage }}</p>
-              </div>
-
-              <!-- Parse Error -->
-              <div v-if="parseError" class="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
-                <p class="text-sm font-medium text-red-800">Erro ao processar dados:</p>
-                <p class="text-sm text-red-700 mt-1">{{ parseError }}</p>
-              </div>
-
-              <!-- Churches List -->
-              <div v-if="!parseError" class="space-y-6">
-                <div
                   v-for="(church, index) in churches"
                   :key="index"
                   class="border border-gray-200 rounded-lg p-4"
@@ -146,96 +140,88 @@
                       :disabled="submission.status !== 'pending'"
                     />
 
-                    <!-- Descrição (full width) -->
-                    <div class="md:col-span-2 lg:col-span-3">
-                      <BaseTextarea
-                        :id="`description-${index}`"
-                        v-model="church.description"
-                        label="Descrição"
-                        :rows="2"
-                        :disabled="submission.status !== 'pending'"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Review Notes (for processed submissions) -->
-              <div v-if="submission.status !== 'pending' && submission.review_notes" class="mt-6 pt-6 border-t border-gray-200">
-                <BaseTextarea
-                  :model-value="submission.review_notes"
-                  label="Notas da Revisão"
-                  :rows="3"
-                  disabled
-                />
-              </div>
-
-              <!-- Metadata -->
-              <div class="mt-6 pt-6 border-t border-gray-200">
-                <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <dt class="font-medium text-gray-500">Data da Submissão</dt>
-                    <dd class="mt-1 text-gray-900">
-                      {{ formatDate(submission.submitted_at) }}
-                    </dd>
-                  </div>
-                  <div v-if="submission.reviewed_at">
-                    <dt class="font-medium text-gray-500">Data da Revisão</dt>
-                    <dd class="mt-1 text-gray-900">
-                      {{ formatDate(submission.reviewed_at) }}
-                    </dd>
-                  </div>
-                </dl>
-              </div>
-            </div>
-
-            <!-- Footer Actions -->
-            <div class="sticky bottom-0 bg-gray-50 border-t border-gray-200 px-6 py-4 rounded-b-lg flex justify-between gap-3">
-              <button
-                v-if="submission.status === 'pending'"
-                type="button"
-                @click="handleReject"
-                :disabled="isLoading"
-                class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                Rejeitar
-              </button>
-
-              <div class="flex-1" />
-
-              <button
-                type="button"
-                @click="handleClose"
-                class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
-              >
-                Cancelar
-              </button>
-
-              <button
-                v-if="submission.status === 'pending'"
-                type="button"
-                @click="handleSave"
-                :disabled="isLoading"
-                class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                Salvar Alterações
-              </button>
-
-              <button
-                v-if="submission.status === 'pending'"
-                type="button"
-                @click="handleApprove"
-                :disabled="isLoading"
-                class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                Aprovar e Criar Igrejas
-              </button>
-            </div>
+          <!-- Descrição (full width) -->
+          <div class="md:col-span-2 lg:col-span-3">
+            <BaseTextarea
+              :id="`description-${index}`"
+              v-model="church.description"
+              label="Descrição"
+              :rows="2"
+              :disabled="submission.status !== 'pending'"
+            />
           </div>
         </div>
       </div>
-    </Transition>
-  </Teleport>
+    </div>
+
+    <!-- Review Notes (for processed submissions) -->
+    <div v-if="submission.status !== 'pending' && submission.review_notes" class="mt-6 pt-6 border-t border-gray-200">
+      <BaseTextarea
+        :model-value="submission.review_notes"
+        label="Notas da Revisão"
+        :rows="3"
+        disabled
+      />
+    </div>
+
+    <!-- Metadata -->
+    <div class="mt-6 pt-6 border-t border-gray-200">
+      <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+        <div>
+          <dt class="font-medium text-gray-500">Data da Submissão</dt>
+          <dd class="mt-1 text-gray-900">
+            {{ formatDate(submission.submitted_at) }}
+          </dd>
+        </div>
+        <div v-if="submission.reviewed_at">
+          <dt class="font-medium text-gray-500">Data da Revisão</dt>
+          <dd class="mt-1 text-gray-900">
+            {{ formatDate(submission.reviewed_at) }}
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <template #footer>
+      <div class="flex justify-between w-full gap-3">
+        <BaseButton
+          v-if="submission.status === 'pending'"
+          variant="danger"
+          :loading="isLoading"
+          @click="handleReject"
+        >
+          Rejeitar
+        </BaseButton>
+
+        <div class="flex-1" />
+
+        <BaseButton
+          variant="secondary"
+          @click="handleClose"
+        >
+          Cancelar
+        </BaseButton>
+
+        <BaseButton
+          v-if="submission.status === 'pending'"
+          variant="primary"
+          :loading="isLoading"
+          @click="handleSave"
+        >
+          Salvar Alterações
+        </BaseButton>
+
+        <BaseButton
+          v-if="submission.status === 'pending'"
+          variant="success"
+          :loading="isLoading"
+          @click="handleApprove"
+        >
+          Aprovar e Criar Igrejas
+        </BaseButton>
+      </div>
+    </template>
+  </BaseModal>
 </template>
 
 <script setup lang="ts">
@@ -274,6 +260,21 @@ const isLoading = ref(false)
 const errorMessage = ref('')
 const successMessage = ref('')
 const parseError = ref('')
+
+// Computed for alert visibility
+const showErrorMessage = computed({
+  get: () => !!errorMessage.value,
+  set: (value: boolean) => {
+    if (!value) errorMessage.value = ''
+  },
+})
+
+const showSuccessMessage = computed({
+  get: () => !!successMessage.value,
+  set: (value: boolean) => {
+    if (!value) successMessage.value = ''
+  },
+})
 
 const churches = ref<BulkChurchData[]>([])
 
@@ -436,7 +437,7 @@ async function handleReject() {
         Authorization: `Bearer ${token}`,
       },
       body: {
-        reviewNotes: reason,
+        review_notes: reason,
       },
     })
 
@@ -468,25 +469,3 @@ function formatDate(dateString: string) {
   })
 }
 </script>
-
-<style scoped>
-.modal-enter-active,
-.modal-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.modal-enter-from,
-.modal-leave-to {
-  opacity: 0;
-}
-
-.modal-enter-active .relative,
-.modal-leave-active .relative {
-  transition: transform 0.3s ease;
-}
-
-.modal-enter-from .relative,
-.modal-leave-to .relative {
-  transform: scale(0.95);
-}
-</style>
