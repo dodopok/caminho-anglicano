@@ -1,11 +1,18 @@
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
+import { BulkApprovalSchema } from '~/layers/admin/server/utils/validation'
+import { rateLimit, RateLimits } from '~/layers/admin/server/utils/rateLimit'
+import { logAudit, AuditAction, getAdminEmail } from '~/layers/admin/server/utils/auditLog'
+import { sanitizeForLog } from '~/layers/admin/server/utils/sanitization'
 
 type BulkSubmission = Database['public']['Tables']['bulk_church_submissions']['Row']
 
 export default defineEventHandler(async (event) => {
   // Ensure user is admin
   await requireAdmin(event)
+
+  // Apply rate limiting
+  await rateLimit(event, RateLimits.ADMIN_WRITE)
 
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
@@ -18,10 +25,16 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  if (!body.review_notes || body.review_notes.trim() === '') {
+  // Validate input
+  let validatedData: any
+  try {
+    validatedData = BulkApprovalSchema.parse(body)
+  }
+  catch (error: any) {
     throw createError({
       statusCode: 400,
-      message: 'review_notes é obrigatório',
+      message: 'Invalid input data',
+      data: error.errors,
     })
   }
 
@@ -60,7 +73,7 @@ export default defineEventHandler(async (event) => {
       .update({
         status: 'approved' as const,
         reviewed_at: new Date().toISOString(),
-        review_notes: body.review_notes,
+        review_notes: validatedData.review_notes,
       } as never)
       .eq('id', id)
 
@@ -71,13 +84,25 @@ export default defineEventHandler(async (event) => {
       })
     }
 
+    // Log audit trail
+    const adminEmail = await getAdminEmail(event)
+    await logAudit(event, {
+      action: AuditAction.BULK_SUBMISSION_APPROVED_NO_INSERT,
+      resource_type: 'bulk_submission',
+      resource_id: id,
+      admin_email: adminEmail,
+      metadata: {
+        review_notes: validatedData.review_notes,
+      },
+    })
+
     return {
       success: true,
       message: 'Submissão aprovada sem criar igrejas',
     }
   }
   catch (error: unknown) {
-    console.error('Error approving bulk submission:', error)
+    console.error('Error approving bulk submission:', sanitizeForLog(error))
 
     if (error && typeof error === 'object' && 'statusCode' in error) {
       throw error
@@ -85,7 +110,7 @@ export default defineEventHandler(async (event) => {
 
     throw createError({
       statusCode: 500,
-      message: error instanceof Error ? error.message : 'Failed to approve bulk submission',
+      message: 'Failed to approve bulk submission',
     })
   }
 })

@@ -1,5 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
+import { rateLimit, RateLimits } from '~/layers/admin/server/utils/rateLimit'
+import { logAudit, AuditAction, getAdminEmail } from '~/layers/admin/server/utils/auditLog'
+import { sanitizeForLog } from '~/layers/admin/server/utils/sanitization'
 
 type ChurchSubmission = Database['public']['Tables']['church_submissions']['Row']
 type Church = Database['public']['Tables']['churches']['Row']
@@ -7,6 +10,9 @@ type Church = Database['public']['Tables']['churches']['Row']
 export default defineEventHandler(async (event) => {
   // Ensure user is admin
   await requireAdmin(event)
+
+  // Apply rate limiting (geocoding is expensive)
+  await rateLimit(event, RateLimits.GEOCODING)
 
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
@@ -94,6 +100,19 @@ export default defineEventHandler(async (event) => {
       throw updateError
     }
 
+    // Log audit trail
+    const adminEmail = await getAdminEmail(event)
+    await logAudit(event, {
+      action: AuditAction.SUBMISSION_APPROVED,
+      resource_type: 'submission',
+      resource_id: id,
+      admin_email: adminEmail,
+      metadata: {
+        church_id: newChurch?.id,
+        church_name: submission.name,
+      },
+    })
+
     return {
       success: true,
       church: newChurch,
@@ -101,7 +120,7 @@ export default defineEventHandler(async (event) => {
     }
   }
   catch (error: unknown) {
-    console.error('Error approving submission:', error)
+    console.error('Error approving submission:', sanitizeForLog(error))
 
     if (error && typeof error === 'object' && 'statusCode' in error) {
       throw error
@@ -109,7 +128,7 @@ export default defineEventHandler(async (event) => {
 
     throw createError({
       statusCode: 500,
-      message: error instanceof Error ? error.message : 'Failed to approve submission',
+      message: 'Failed to approve submission',
     })
   }
 })

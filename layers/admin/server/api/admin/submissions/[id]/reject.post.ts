@@ -1,11 +1,17 @@
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
+import { rateLimit, RateLimits } from '~/layers/admin/server/utils/rateLimit'
+import { logAudit, AuditAction, getAdminEmail } from '~/layers/admin/server/utils/auditLog'
+import { sanitizeForLog } from '~/layers/admin/server/utils/sanitization'
 
 type ChurchSubmission = Database['public']['Tables']['church_submissions']['Row']
 
 export default defineEventHandler(async (event) => {
   // Ensure user is admin
   await requireAdmin(event)
+
+  // Apply rate limiting
+  await rateLimit(event, RateLimits.ADMIN_WRITE)
 
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
@@ -70,6 +76,18 @@ export default defineEventHandler(async (event) => {
       throw error
     }
 
+    // Log audit trail
+    const adminEmail = await getAdminEmail(event)
+    await logAudit(event, {
+      action: AuditAction.SUBMISSION_REJECTED,
+      resource_type: 'submission',
+      resource_id: id,
+      admin_email: adminEmail,
+      metadata: {
+        review_notes: body.review_notes,
+      },
+    })
+
     return {
       success: true,
       submission: data,
@@ -77,7 +95,7 @@ export default defineEventHandler(async (event) => {
     }
   }
   catch (error: any) {
-    console.error('Error rejecting submission:', error)
+    console.error('Error rejecting submission:', sanitizeForLog(error))
 
     if (error.statusCode) {
       throw error
@@ -85,7 +103,7 @@ export default defineEventHandler(async (event) => {
 
     throw createError({
       statusCode: 500,
-      message: error.message || 'Failed to reject submission',
+      message: 'Failed to reject submission',
     })
   }
 })
