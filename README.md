@@ -330,12 +330,13 @@ pnpm lint
 - [x] Design responsivo mobile/tablet/desktop
 - [x] SEO completo com Open Graph
 - [x] Analytics integrado
+- [x] Painel administrativo para revisar submissões
+- [x] Exportação de dados (CSV/Excel)
+- [x] Autenticação para admins
 
 ### Próximas Funcionalidades 🚀
-- [ ] Painel administrativo para revisar submissões
-- [ ] Autenticação para admins
+
 - [ ] Sistema de notificações por e-mail
-- [ ] Exportação de dados (CSV/Excel)
 - [ ] API pública REST
 - [ ] Sistema de favoritos para usuários
 - [ ] Comentários e avaliações de igrejas
