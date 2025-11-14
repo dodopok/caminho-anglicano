@@ -7,8 +7,13 @@ export default defineNuxtRouteMiddleware(async (to) => {
     return
   }
 
-  // Protect all /admin routes except login
-  if (to.path.startsWith('/admin') && to.path !== '/admin/login') {
+  // Block /admin routes - they should 404
+  if (to.path.startsWith('/admin')) {
+    return
+  }
+
+  // Protect all /portal-do-douglas routes except login
+  if (to.path.startsWith('/portal-do-douglas') && to.path !== '/portal-do-douglas/login') {
     const { user, initialize } = useAdminAuth()
 
     // Initialize auth state if not already done
@@ -18,12 +23,12 @@ export default defineNuxtRouteMiddleware(async (to) => {
 
     // Redirect to login if not authenticated
     if (!user.value) {
-      return navigateTo('/admin/login')
+      return navigateTo('/portal-do-douglas/login')
     }
   }
 
   // Redirect away from login if already authenticated
-  if (to.path === '/admin/login') {
+  if (to.path === '/portal-do-douglas/login') {
     const { user, initialize } = useAdminAuth()
 
     if (user.value === null) {
@@ -31,7 +36,7 @@ export default defineNuxtRouteMiddleware(async (to) => {
     }
 
     if (user.value) {
-      return navigateTo('/admin')
+      return navigateTo('/portal-do-douglas')
     }
   }
 })

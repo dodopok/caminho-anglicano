@@ -1,5 +1,9 @@
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
+import { BulkApprovalSchema } from '~/layers/admin/server/utils/validation'
+import { rateLimit, RateLimits } from '~/layers/admin/server/utils/rateLimit'
+import { logAudit, AuditAction, getAdminEmail } from '~/layers/admin/server/utils/auditLog'
+import { sanitizeForLog } from '~/layers/admin/server/utils/sanitization'
 
 type BulkSubmission = Database['public']['Tables']['bulk_church_submissions']['Row']
 
@@ -7,9 +11,12 @@ export default defineEventHandler(async (event) => {
   // Ensure user is admin
   await requireAdmin(event)
 
+  // Apply rate limiting
+  await rateLimit(event, RateLimits.ADMIN_WRITE)
+
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
-  const body = await readBody<{ review_notes: string }>(event)
+  const body = await readBody(event)
 
   if (!id) {
     throw createError({
@@ -18,10 +25,16 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  if (!body.review_notes) {
+  // Validate input
+  let validatedData: any
+  try {
+    validatedData = BulkApprovalSchema.parse(body)
+  }
+  catch (error: any) {
     throw createError({
       statusCode: 400,
-      message: 'Review notes are required for rejection',
+      message: 'Invalid input data',
+      data: error.errors,
     })
   }
 
@@ -60,7 +73,7 @@ export default defineEventHandler(async (event) => {
       .update({
         status: 'rejected' as const,
         reviewed_at: new Date().toISOString(),
-        review_notes: body.review_notes,
+        review_notes: validatedData.review_notes,
       } as never)
       .eq('id', id)
       .select()
@@ -70,6 +83,18 @@ export default defineEventHandler(async (event) => {
       throw error
     }
 
+    // Log audit trail
+    const adminEmail = await getAdminEmail(event)
+    await logAudit(event, {
+      action: AuditAction.BULK_SUBMISSION_REJECTED,
+      resource_type: 'bulk_submission',
+      resource_id: id,
+      admin_email: adminEmail,
+      metadata: {
+        review_notes: validatedData.review_notes,
+      },
+    })
+
     return {
       success: true,
       submission: data,
@@ -77,7 +102,7 @@ export default defineEventHandler(async (event) => {
     }
   }
   catch (error: any) {
-    console.error('Error rejecting bulk submission:', error)
+    console.error('Error rejecting bulk submission:', sanitizeForLog(error))
 
     if (error.statusCode) {
       throw error
@@ -85,7 +110,7 @@ export default defineEventHandler(async (event) => {
 
     throw createError({
       statusCode: 500,
-      message: error.message || 'Failed to reject bulk submission',
+      message: 'Failed to reject bulk submission',
     })
   }
 })

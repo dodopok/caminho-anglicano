@@ -1,38 +1,49 @@
 import { createClient } from '@supabase/supabase-js'
+import { ChurchSubmissionSchema } from '~/layers/admin/server/utils/validation'
+import { rateLimit, RateLimits } from '~/layers/admin/server/utils/rateLimit'
+import { sanitizeForLog } from '~/layers/admin/server/utils/sanitization'
 
 export default defineEventHandler(async (event) => {
+  // Apply strict rate limiting for public submissions
+  await rateLimit(event, RateLimits.PUBLIC_SUBMIT)
+
   const config = useRuntimeConfig()
   const body = await readBody(event)
 
-  // Validação básica
-  if (!body.name || !body.address || !body.responsibleEmail || !body.jurisdiction) {
+  // Validate input data with Zod schema
+  let validatedData: any
+  try {
+    validatedData = ChurchSubmissionSchema.parse(body)
+  }
+  catch (error: any) {
     throw createError({
       statusCode: 400,
-      message: 'Dados obrigatórios faltando'
+      message: 'Dados inválidos',
+      data: error.errors,
     })
   }
 
   const supabase = createClient(
     config.public.supabaseUrl as string,
-    config.supabaseServiceKey as string
+    config.supabaseServiceKey as string,
   )
 
   try {
     const result = await supabase
       .from('church_submissions')
       .insert({
-        jurisdiction: body.jurisdiction,
-        name: body.name,
-        address: body.address,
-        schedules: body.schedules || null,
-        description: body.description || null,
-        pastors: body.pastors || null,
-        responsible_email: body.responsibleEmail,
-        website: body.website || null,
-        instagram: body.instagram || null,
-        youtube: body.youtube || null,
-        spotify: body.spotify || null,
-        status: 'pending'
+        jurisdiction: validatedData.jurisdiction,
+        name: validatedData.name,
+        address: validatedData.address,
+        schedules: validatedData.schedules || null,
+        description: validatedData.description || null,
+        pastors: validatedData.pastors || null,
+        responsible_email: validatedData.responsibleEmail,
+        website: validatedData.website || null,
+        instagram: validatedData.instagram || null,
+        youtube: validatedData.youtube || null,
+        spotify: validatedData.spotify || null,
+        status: 'pending',
       })
       .select()
       .single()
@@ -45,13 +56,19 @@ export default defineEventHandler(async (event) => {
 
     return {
       success: true,
-      data
+      data,
     }
-  } catch (error) {
-    console.error('Error submitting church:', error)
+  }
+  catch (error) {
+    console.error('Error submitting church:', sanitizeForLog(error))
+
+    if (error && typeof error === 'object' && 'statusCode' in error) {
+      throw error
+    }
+
     throw createError({
       statusCode: 500,
-      message: 'Erro ao enviar submissão'
+      message: 'Erro ao enviar submissão',
     })
   }
 })

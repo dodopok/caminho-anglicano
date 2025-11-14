@@ -157,6 +157,13 @@
       </div>
     </template>
   </BaseModal>
+
+  <BaseToast
+    :show="showToast"
+    :type="toastType"
+    :message="toastMessage"
+    @close="showToast = false"
+  />
 </template>
 
 <script setup lang="ts">
@@ -180,6 +187,9 @@ const emit = defineEmits<{
 const { getToken } = useAdminAuth()
 
 const isLoading = ref(false)
+const showToast = ref(false)
+const toastType = ref<'success' | 'error'>('success')
+const toastMessage = ref('')
 
 // Form data with all editable fields
 const formData = ref({
@@ -332,13 +342,19 @@ async function handleSave() {
       body: updateData,
     })
 
-    alert('✅ Igreja atualizada com sucesso!')
-    emit('success')
-    emit('close')
+    toastType.value = 'success'
+    toastMessage.value = 'Igreja atualizada com sucesso!'
+    showToast.value = true
+    setTimeout(() => {
+      emit('success')
+      emit('close')
+    }, 1500)
   }
   catch (error: unknown) {
     const message = error instanceof Error ? error.message : 'Erro ao atualizar igreja'
-    alert(`❌ ${message}`)
+    toastType.value = 'error'
+    toastMessage.value = message
+    showToast.value = true
     console.error('Error updating church:', error)
   }
   finally {

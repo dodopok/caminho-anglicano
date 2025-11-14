@@ -364,6 +364,13 @@
     :is-open="showGoogleSearch"
     @close="showGoogleSearch = false"
   />
+
+  <BaseToast
+    :show="showToast"
+    :type="toastType"
+    :message="toastMessage"
+    @close="showToast = false"
+  />
 </template>
 
 <script setup lang="ts">
@@ -386,6 +393,9 @@ const { getToken } = useAdminAuth()
 
 const isLoading = ref(false)
 const errorMessage = ref('')
+const showToast = ref(false)
+const toastType = ref<'success' | 'error' | 'info'>('success')
+const toastMessage = ref('')
 const originalText = ref('')
 const bulkText = ref('')
 const isValidating = ref(false)
@@ -624,7 +634,9 @@ async function handleSave() {
       },
     })
 
-    alert('✅ Alterações salvas com sucesso!')
+    toastType.value = 'success'
+    toastMessage.value = 'Alterações salvas com sucesso!'
+    showToast.value = true
   }
   catch (error: unknown) {
     errorMessage.value = error instanceof Error ? error.message : 'Erro ao salvar alterações'
@@ -643,13 +655,17 @@ async function handleApprove() {
   await nextTick()
 
   if (validationError.value) {
-    alert('Por favor, corrija os erros de validação antes de aprovar.')
+    toastType.value = 'error'
+    toastMessage.value = 'Por favor, corrija os erros de validação antes de aprovar.'
+    showToast.value = true
     return
   }
 
   const invalidChurches = parsedChurches.value.filter(c => !c._isValid)
   if (invalidChurches.length > 0) {
-    alert(`Existem ${invalidChurches.length} igreja${invalidChurches.length === 1 ? '' : 's'} com dados inválidos. Por favor, corrija antes de aprovar.`)
+    toastType.value = 'error'
+    toastMessage.value = `Existem ${invalidChurches.length} igreja${invalidChurches.length === 1 ? '' : 's'} com dados inválidos. Por favor, corrija antes de aprovar.`
+    showToast.value = true
     return
   }
 
@@ -659,7 +675,7 @@ async function handleApprove() {
     .join('\n')
 
   const confirmed = confirm(
-    `Tem certeza que deseja processar e criar ${parsedChurches.value.length} igreja${parsedChurches.value.length === 1 ? '' : 's'}?\n\n${churchList}`,
+    `Tem certeza que deseja processar e criar as igrejas'}?`,
   )
 
   if (!confirmed) {
@@ -690,14 +706,20 @@ async function handleApprove() {
     )
 
     if (result.errors && result.errors.length > 0) {
-      alert(`Aprovado com avisos:\n\n${result.message}\n\nErros:\n${result.errors.join('\n')}`)
+      toastType.value = 'info'
+      toastMessage.value = `${result.message} - Alguns erros ocorreram durante o processo.`
+      showToast.value = true
     }
     else {
-      alert(result.message)
+      toastType.value = 'success'
+      toastMessage.value = result.message
+      showToast.value = true
     }
 
-    emit('success')
-    emit('close')
+    setTimeout(() => {
+      emit('success')
+      emit('close')
+    }, 2000)
   }
   catch (error: unknown) {
     const message = error instanceof Error ? error.message : 'Erro ao aprovar submissão'
@@ -735,9 +757,13 @@ async function handleApproveNoInsert() {
       },
     })
 
-    alert('✅ Submissão aprovada sem criar igrejas!')
-    emit('success')
-    emit('close')
+    toastType.value = 'success'
+    toastMessage.value = 'Submissão aprovada sem criar igrejas!'
+    showToast.value = true
+    setTimeout(() => {
+      emit('success')
+      emit('close')
+    }, 2000)
   }
   catch (error: unknown) {
     const message = error instanceof Error ? error.message : 'Erro ao aprovar submissão'

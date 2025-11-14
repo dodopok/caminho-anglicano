@@ -40,23 +40,23 @@
             Dashboard
           </NuxtLink>
           <NuxtLink
-            to="/admin/submissions"
+            to="/portal-do-douglas/submissions"
             class="px-4 py-3 text-sm font-medium transition-colors"
-            :class="isActive('/admin/submissions') ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600 hover:text-gray-900'"
+            :class="isActive('/portal-do-douglas/submissions') ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600 hover:text-gray-900'"
           >
             Submissões
           </NuxtLink>
           <NuxtLink
-            to="/admin/bulk-submissions"
+            to="/portal-do-douglas/bulk-submissions"
             class="px-4 py-3 text-sm font-medium transition-colors"
-            :class="isActive('/admin/bulk-submissions') ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600 hover:text-gray-900'"
+            :class="isActive('/portal-do-douglas/bulk-submissions') ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600 hover:text-gray-900'"
           >
             Submissões em Lote
           </NuxtLink>
           <NuxtLink
-            to="/admin/churches"
+            to="/portal-do-douglas/churches"
             class="px-4 py-3 text-sm font-medium transition-colors"
-            :class="isActive('/admin/churches') ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600 hover:text-gray-900'"
+            :class="isActive('/portal-do-douglas/churches') ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600 hover:text-gray-900'"
           >
             Igrejas
           </NuxtLink>

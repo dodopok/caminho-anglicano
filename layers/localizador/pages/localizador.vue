@@ -75,6 +75,10 @@ const isAddBulkModalOpen = ref(false)
 const isSidebarOpen = ref(false)
 const isFeedbackModalOpen = ref(false)
 
+const showToast = ref(false)
+const toastType = ref<'error' | 'info'>('error')
+const toastMessage = ref('')
+
 async function loadChurches() {
   isLoading.value = true
   errorMessage.value = ''
@@ -120,7 +124,13 @@ function applyFilters() {
 async function getUserLocation(): Promise<{ lat: number; lng: number }> {
   return new Promise((resolve, reject) => {
     if (!navigator.geolocation) {
-      reject(new Error('Geolocalização não é suportada pelo seu navegador'))
+      reject(new Error('Geolocalização não é suportada pelo seu navegador. Use a busca por endereço como alternativa.'))
+      return
+    }
+
+    // Check if running on HTTP (not localhost)
+    if (window.location.protocol === 'http:' && window.location.hostname !== 'localhost') {
+      reject(new Error('A geolocalização requer conexão segura (HTTPS). Use a busca por endereço como alternativa.'))
       return
     }
 
@@ -135,13 +145,13 @@ async function getUserLocation(): Promise<{ lat: number; lng: number }> {
         let errorMsg = 'Erro ao obter localização'
         switch (error.code) {
           case error.PERMISSION_DENIED:
-            errorMsg = 'Permissão de localização negada'
+            errorMsg = 'Permissão de localização negada. Clique no ícone de cadeado/localização na barra de endereço e permita o acesso à sua localização.'
             break
           case error.POSITION_UNAVAILABLE:
-            errorMsg = 'Localização indisponível'
+            errorMsg = 'Localização indisponível. Verifique se o GPS está ativado no seu dispositivo.'
             break
           case error.TIMEOUT:
-            errorMsg = 'Tempo esgotado ao obter localização'
+            errorMsg = 'Tempo esgotado ao obter localização. Tente novamente.'
             break
         }
         reject(new Error(errorMsg))
@@ -185,6 +195,7 @@ function getChurchDistance(churchId: string): string | null {
 async function handleNearMe() {
   isGettingLocation.value = true
   errorMessage.value = ''
+  showToast.value = false
 
   try {
     const location = await getUserLocation()
@@ -198,7 +209,9 @@ async function handleNearMe() {
     sortChurchesByDistance(location)
   } catch (error) {
     console.error('Error getting location:', error)
-    errorMessage.value = error instanceof Error ? error.message : 'Erro ao obter sua localização'
+    toastType.value = 'error'
+    toastMessage.value = error instanceof Error ? error.message : 'Erro ao obter sua localização'
+    showToast.value = true
   } finally {
     isGettingLocation.value = false
   }
@@ -561,6 +574,13 @@ onMounted(async () => {
       :is-open="isFeedbackModalOpen"
       @close="isFeedbackModalOpen = false"
       @success="() => {}"
+    />
+
+    <BaseToast
+      :show="showToast"
+      :type="toastType"
+      :message="toastMessage"
+      @close="showToast = false"
     />
   </div>
 </template>

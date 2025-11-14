@@ -81,7 +81,7 @@
                   Status
                 </th>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Quantidade
+                  Preview
                 </th>
                 <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Ações
@@ -103,13 +103,24 @@
                 <td class="px-6 py-4 whitespace-nowrap">
                   <StatusBadge :status="submission.status" />
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                  {{ getChurchCount(submission.bulk_data) }} igrejas
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <button
+                    type="button"
+                    class="px-3 py-1.5 text-xs font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded transition-colors flex items-center gap-1"
+                    @mouseenter="showPreview(submission.id, $event)"
+                    @mouseleave="hidePreview"
+                  >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    Ver dados
+                  </button>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                   <button
-                    @click="openDetailModal(submission)"
                     class="text-blue-600 hover:text-blue-700 transition-colors"
+                    @click="openDetailModal(submission)"
                   >
                     Ver Detalhes
                   </button>
@@ -125,6 +136,26 @@
         Mostrando {{ submissions.length }} submiss{{ submissions.length === 1 ? 'ão' : 'ões' }}
       </div>
     </div>
+
+    <!-- Preview Tooltip (outside table, fixed position) -->
+    <Teleport to="body">
+      <Transition name="fade">
+        <div
+          v-if="previewSubmissionId && previewData"
+          class="fixed z-[60] pointer-events-none"
+          :style="tooltipStyle"
+        >
+          <div class="bg-white border border-gray-200 rounded-lg shadow-2xl p-4 w-96 max-h-96 overflow-y-auto pointer-events-auto">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between border-b border-gray-200 pb-2">
+                <h4 class="text-sm font-semibold text-gray-900">Dados da Submissão</h4>
+              </div>
+              <pre class="text-xs text-gray-700 whitespace-pre-wrap break-words bg-gray-50 p-3 rounded border border-gray-200 font-mono">{{ previewData.formatted }}</pre>
+            </div>
+          </div>
+        </div>
+      </Transition>
+    </Teleport>
   </AdminLayout>
 </template>
 
@@ -147,6 +178,9 @@ const statusFilter = ref('pending')
 // Detail modal state
 const isDetailModalOpen = ref(false)
 const selectedSubmission = ref<BulkSubmission | null>(null)
+const previewSubmissionId = ref<string | null>(null)
+const previewData = ref<{ count: number; formatted: string } | null>(null)
+const tooltipStyle = ref({})
 
 // Watch for status filter changes
 watch(statusFilter, () => {
@@ -179,8 +213,8 @@ async function loadSubmissions() {
 
     submissions.value = data.submissions
   }
-  catch (error: any) {
-    errorMessage.value = error.message || 'Erro ao carregar submissões'
+  catch (error: unknown) {
+    errorMessage.value = error instanceof Error ? error.message : 'Erro ao carregar submissões'
     console.error('Error loading bulk submissions:', error)
   }
   finally {
@@ -213,13 +247,49 @@ function formatDate(dateString: string) {
   })
 }
 
-function getChurchCount(bulkData: string): number {
+function showPreview(submissionId: string, event: MouseEvent) {
+  const submission = submissions.value.find(s => s.id === submissionId)
+  if (!submission) return
+
+  // Get button position
+  const button = event.currentTarget as HTMLElement
+  const rect = button.getBoundingClientRect()
+
+  // Position tooltip below the button
+  tooltipStyle.value = {
+    top: `${rect.bottom + 8}px`,
+    left: `${rect.left}px`,
+  }
+
+  // Parse and format data
   try {
-    const data = JSON.parse(bulkData)
-    return Array.isArray(data) ? data.length : 0
+    const data = JSON.parse(submission.bulk_data)
+    const count = Array.isArray(data) ? data.length : 0
+    const formatted = JSON.stringify(data, null, 2)
+    
+    previewData.value = { count, formatted }
+    previewSubmissionId.value = submissionId
   }
   catch {
-    return 0
+    previewData.value = { count: 0, formatted: submission.bulk_data }
+    previewSubmissionId.value = submissionId
   }
 }
+
+function hidePreview() {
+  previewSubmissionId.value = null
+  previewData.value = null
+}
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

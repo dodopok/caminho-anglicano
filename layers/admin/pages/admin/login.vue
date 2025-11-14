@@ -107,7 +107,7 @@ async function handleSubmit() {
 
   if (result.success) {
     // Redirect is handled by middleware
-    await navigateTo('/admin')
+    await navigateTo('/portal-do-douglas')
   }
   else {
     errorMessage.value = result.error || 'Falha ao fazer login. Verifique suas credenciais.'

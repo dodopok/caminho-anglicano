@@ -1,4 +1,7 @@
 import { requireAdmin } from '~/layers/admin/server/utils/adminAuth'
+import { PlaceSearchSchema } from '~/layers/admin/server/utils/validation'
+import { rateLimit, RateLimits } from '~/layers/admin/server/utils/rateLimit'
+import { sanitizeForLog } from '~/layers/admin/server/utils/sanitization'
 
 interface PlaceResult {
   name: string
@@ -17,15 +20,25 @@ interface PlaceResult {
 export default defineEventHandler(async (event) => {
   await requireAdmin(event)
 
-  const body = await readBody(event)
-  const { query } = body
+  // Apply rate limiting (Google API calls are expensive)
+  await rateLimit(event, RateLimits.GEOCODING)
 
-  if (!query || typeof query !== 'string') {
+  const body = await readBody(event)
+
+  // Validate input
+  let validatedData: any
+  try {
+    validatedData = PlaceSearchSchema.parse(body)
+  }
+  catch (error: any) {
     throw createError({
       statusCode: 400,
-      message: 'Query is required',
+      message: 'Invalid input data',
+      data: error.errors,
     })
   }
+
+  const { query } = validatedData
 
   const config = useRuntimeConfig()
   const apiKey = config.googleMapsApiKey || config.public.googleMapsApiKey
@@ -131,12 +144,12 @@ export default defineEventHandler(async (event) => {
     return result
   }
   catch (error: unknown) {
-    console.error('Error searching place:', error)
-    
+    console.error('Error searching place:', sanitizeForLog(error))
+
     if (error && typeof error === 'object' && 'statusCode' in error) {
       throw error
     }
-    
+
     throw createError({
       statusCode: 500,
       message: 'Erro ao buscar informações no Google',

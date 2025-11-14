@@ -68,7 +68,7 @@ export function useAdminAuth() {
     try {
       await supabase.auth.signOut()
       user.value = null
-      await navigateTo('/admin/login')
+      await navigateTo('/portal-do-douglas/login')
     }
     catch (error) {
       console.error('Sign out error:', error)

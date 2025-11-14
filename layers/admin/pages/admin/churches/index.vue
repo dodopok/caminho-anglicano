@@ -167,12 +167,20 @@
                   {{ church.responsible_email }}
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                  <button
-                    @click="openEditModal(church)"
-                    class="text-blue-600 hover:text-blue-700 transition-colors"
-                  >
-                    Editar
-                  </button>
+                  <div class="flex items-center justify-end gap-3">
+                    <button
+                      class="text-blue-600 hover:text-blue-700 transition-colors"
+                      @click="openEditModal(church)"
+                    >
+                      Editar
+                    </button>
+                    <button
+                      class="text-red-600 hover:text-red-700 transition-colors"
+                      @click="handleDelete(church)"
+                    >
+                      Remover
+                    </button>
+                  </div>
                 </td>
               </tr>
             </tbody>
@@ -371,6 +379,39 @@ function closeEditModal() {
 function handleEditSuccess() {
   // Reload churches after successful edit
   loadChurches()
+}
+
+async function handleDelete(church: Church) {
+  const confirmed = confirm(
+    `Tem certeza que deseja remover a igreja "${church.name}"?\n\nEsta ação não pode ser desfeita.`
+  )
+
+  if (!confirmed) {
+    return
+  }
+
+  try {
+    const token = await getToken()
+    if (!token) {
+      throw new Error('Não autenticado')
+    }
+
+    await $fetch(`/api/admin/churches/${church.id}`, {
+      method: 'DELETE',
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
+
+    // Reload churches after successful deletion
+    await loadChurches()
+    
+    alert('✅ Igreja removida com sucesso!')
+  }
+  catch (error: unknown) {
+    alert(error instanceof Error ? `❌ Erro ao remover igreja: ${error.message}` : '❌ Erro ao remover igreja')
+    console.error('Error deleting church:', error)
+  }
 }
 
 async function handleExport() {

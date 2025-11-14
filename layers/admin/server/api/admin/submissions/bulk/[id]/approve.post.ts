@@ -1,5 +1,9 @@
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
+import { BulkChurchDataSchema } from '~/layers/admin/server/utils/validation'
+import { rateLimit, RateLimits } from '~/layers/admin/server/utils/rateLimit'
+import { logAudit, AuditAction, getAdminEmail } from '~/layers/admin/server/utils/auditLog'
+import { sanitizeForLog } from '~/layers/admin/server/utils/sanitization'
 
 type BulkSubmission = Database['public']['Tables']['bulk_church_submissions']['Row']
 type Church = Database['public']['Tables']['churches']['Row']
@@ -23,9 +27,11 @@ export default defineEventHandler(async (event) => {
   // Ensure user is admin
   await requireAdmin(event)
 
+  // Apply rate limiting (geocoding is very expensive for bulk)
+  await rateLimit(event, RateLimits.GEOCODING)
+
   const config = useRuntimeConfig()
   const id = getRouterParam(event, 'id')
-  const body = await readBody<{ review_notes?: string }>(event)
 
   if (!id) {
     throw createError({
@@ -63,18 +69,18 @@ export default defineEventHandler(async (event) => {
       })
     }
 
-    // 2. Parse bulk_data JSON
+    // 2. Parse and validate bulk_data JSON
     let churchesData: BulkChurchData[]
     try {
-      churchesData = JSON.parse(bulkSubmission.bulk_data)
-      if (!Array.isArray(churchesData)) {
-        throw new Error('bulk_data must be an array')
-      }
+      const parsedData = JSON.parse(bulkSubmission.bulk_data)
+      // Validate with Zod schema
+      churchesData = BulkChurchDataSchema.parse(parsedData)
     }
     catch (parseError: any) {
       throw createError({
         statusCode: 400,
-        message: `Invalid bulk_data format: ${parseError.message}`,
+        message: 'Invalid bulk_data format',
+        data: parseError.errors || parseError.message,
       })
     }
 
@@ -164,8 +170,22 @@ export default defineEventHandler(async (event) => {
 
     if (updateError) {
       // Don't rollback churches, but log the error
-      console.error('Failed to update bulk submission status:', updateError)
+      console.error('Failed to update bulk submission status:', sanitizeForLog(updateError))
     }
+
+    // Log audit trail
+    const adminEmail = await getAdminEmail(event)
+    await logAudit(event, {
+      action: AuditAction.BULK_SUBMISSION_APPROVED,
+      resource_type: 'bulk_submission',
+      resource_id: id,
+      admin_email: adminEmail,
+      metadata: {
+        inserted_count: insertedChurches.length,
+        total_count: churchesData.length,
+        error_count: errors.length,
+      },
+    })
 
     return {
       success: true,
@@ -179,7 +199,9 @@ export default defineEventHandler(async (event) => {
     }
   }
   catch (error: any) {
-    console.error('Error approving bulk submission:', error)
+    console.error('Error approving bulk submission:', sanitizeForLog(error))
+
+    console.log(error)
 
     if (error.statusCode) {
       throw error
@@ -187,7 +209,7 @@ export default defineEventHandler(async (event) => {
 
     throw createError({
       statusCode: 500,
-      message: error.message || 'Failed to approve bulk submission',
+      message: 'Failed to approve bulk submission',
     })
   }
 })
