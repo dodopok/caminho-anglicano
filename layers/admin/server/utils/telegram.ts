@@ -53,17 +53,25 @@ export async function sendTelegramNotification(
     const message = formatMessage(type, data)
 
     // Envia a mensagem usando a API HTTP do Telegram
-    // Mais leve e compatível com ambientes serverless como Vercel
+    // Usa fetch() nativo (Node.js 18+) para máxima compatibilidade com serverless
     const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`
 
-    await $fetch(telegramApiUrl, {
+    const response = await fetch(telegramApiUrl, {
       method: 'POST',
-      body: {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
         chat_id: chatId,
         text: message,
         parse_mode: 'HTML'
-      }
+      })
     })
+
+    if (!response.ok) {
+      const errorText = await response.text()
+      console.error(`Telegram API error (${response.status}): ${errorText}`)
+    }
 
     console.log(`✅ Notificação do Telegram enviada: ${type}`)
   } catch (error) {

@@ -5,7 +5,8 @@
       "Bash(mkdir:*)",
       "Bash(tree:*)",
       "Bash(cat:*)",
-      "Bash(pnpm remove:*)"
+      "Bash(pnpm remove:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []
