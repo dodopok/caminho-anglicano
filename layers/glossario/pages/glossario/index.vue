@@ -339,19 +339,25 @@ const clearSearch = () => {
 
 // Termos filtrados
 const filteredTerms = computed(() => {
-  // Sempre começar com uma cópia nova do array original
-  let terms = glossaryTerms.slice()
+  // Sempre criar uma nova cópia do array original para garantir imutabilidade
+  const originalTerms = glossaryTerms.map(t => t)
 
-  // Filtrar por busca
-  if (searchQuery.value) {
-    const query = searchQuery.value.toLowerCase()
-    terms = terms.filter(term =>
+  // Normalizar searchQuery (trim e verificar se realmente tem conteúdo)
+  const normalizedQuery = searchQuery.value.trim()
+  const hasSearchQuery = normalizedQuery.length > 0
+
+  // Caso 1: Busca ativa
+  if (hasSearchQuery) {
+    const query = normalizedQuery.toLowerCase()
+
+    // Filtrar termos que contêm a busca
+    const filtered = originalTerms.filter(term =>
       term.term.toLowerCase().includes(query) ||
       term.definition.toLowerCase().includes(query)
     )
 
-    // Ordenar com prioridade para matches quando há busca
-    terms = terms.slice().sort((a, b) => {
+    // Ordenar com priorização de matches
+    return filtered.sort((a, b) => {
       const aTermLower = a.term.toLowerCase()
       const bTermLower = b.term.toLowerCase()
 
@@ -372,18 +378,18 @@ const filteredTerms = computed(() => {
       // Caso contrário, ordenar alfabeticamente
       return a.term.localeCompare(b.term)
     })
-  } else if (selectedLetter.value) {
-    // Filtrar por letra e ordenar alfabeticamente
-    terms = terms.filter(term =>
-      term.term.charAt(0).toUpperCase() === selectedLetter.value
-    )
-    terms = terms.slice().sort((a, b) => a.term.localeCompare(b.term))
-  } else {
-    // Sem filtros: ordenar alfabeticamente
-    terms = terms.slice().sort((a, b) => a.term.localeCompare(b.term))
   }
 
-  return terms
+  // Caso 2: Filtro por letra
+  if (selectedLetter.value) {
+    const filtered = originalTerms.filter(term =>
+      term.term.charAt(0).toUpperCase() === selectedLetter.value
+    )
+    return filtered.sort((a, b) => a.term.localeCompare(b.term))
+  }
+
+  // Caso 3: Sem filtros - ordenação alfabética pura
+  return originalTerms.sort((a, b) => a.term.localeCompare(b.term))
 })
 
 // Paginação
