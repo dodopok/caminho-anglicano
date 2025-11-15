@@ -339,7 +339,8 @@ const clearSearch = () => {
 
 // Termos filtrados
 const filteredTerms = computed(() => {
-  let terms = [...glossaryTerms]
+  // Sempre começar com uma cópia nova do array original
+  let terms = glossaryTerms.slice()
 
   // Filtrar por busca
   if (searchQuery.value) {
@@ -348,19 +349,9 @@ const filteredTerms = computed(() => {
       term.term.toLowerCase().includes(query) ||
       term.definition.toLowerCase().includes(query)
     )
-  }
 
-  // Filtrar por letra
-  if (selectedLetter.value) {
-    terms = terms.filter(term =>
-      term.term.charAt(0).toUpperCase() === selectedLetter.value
-    )
-  }
-
-  // Criar uma cópia para ordenar (não modificar o array original)
-  const sortedTerms = [...terms].sort((a, b) => {
-    if (searchQuery.value) {
-      const query = searchQuery.value.toLowerCase()
+    // Ordenar com prioridade para matches quando há busca
+    terms = terms.slice().sort((a, b) => {
       const aTermLower = a.term.toLowerCase()
       const bTermLower = b.term.toLowerCase()
 
@@ -377,13 +368,22 @@ const filteredTerms = computed(() => {
 
       if (aStartsWith && !bStartsWith) return -1
       if (!aStartsWith && bStartsWith) return 1
-    }
 
-    // Caso contrário, ordenar alfabeticamente
-    return a.term.localeCompare(b.term)
-  })
+      // Caso contrário, ordenar alfabeticamente
+      return a.term.localeCompare(b.term)
+    })
+  } else if (selectedLetter.value) {
+    // Filtrar por letra e ordenar alfabeticamente
+    terms = terms.filter(term =>
+      term.term.charAt(0).toUpperCase() === selectedLetter.value
+    )
+    terms = terms.slice().sort((a, b) => a.term.localeCompare(b.term))
+  } else {
+    // Sem filtros: ordenar alfabeticamente
+    terms = terms.slice().sort((a, b) => a.term.localeCompare(b.term))
+  }
 
-  return sortedTerms
+  return terms
 })
 
 // Paginação
