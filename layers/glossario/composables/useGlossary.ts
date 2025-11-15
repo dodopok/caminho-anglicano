@@ -221,7 +221,7 @@ export const useGlossary = () => {
     }
   }
 
-  // Inicializar filtros a partir da URL
+  // Inicializar filtros a partir da URL (apenas na montagem inicial)
   const initializeFromURL = () => {
     // Não sobrescrever se usuário estiver digitando
     if (isUserTyping) return
@@ -230,25 +230,21 @@ export const useGlossary = () => {
     const letterParam = route.query.letra as string
     const pageParam = route.query.pagina as string
 
+    // Apenas atualizar se houver parâmetros na URL
+    // Não limpar valores existentes se não houver parâmetros
     if (queryParam) {
       searchQuery.value = queryParam
       debouncedSearchQuery.value = queryParam // Inicialização imediata
     } else if (letterParam && alphabet.includes(letterParam.toUpperCase())) {
       selectedLetter.value = letterParam.toUpperCase()
-    } else {
-      // Se não há query params, limpar os valores
-      searchQuery.value = ''
-      debouncedSearchQuery.value = ''
-      selectedLetter.value = null
     }
+    // Removido o 'else' que limpava valores - isso causava o bug
 
     if (pageParam) {
       const page = parseInt(pageParam)
       if (!isNaN(page) && page > 0) {
         currentPage.value = page
       }
-    } else {
-      currentPage.value = 1
     }
   }
 
