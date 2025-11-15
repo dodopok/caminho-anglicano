@@ -202,7 +202,7 @@
 </template>
 
 <script setup lang="ts">
-import { glossaryTerms } from '../data/terms'
+import { glossaryTerms } from '../../data/terms'
 import { computed, ref, onMounted, watch } from 'vue'
 
 const siteUrl = 'https://caminhoanglicano.com.br'
