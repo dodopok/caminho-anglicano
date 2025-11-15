@@ -16,12 +16,10 @@ test.describe('Glossário Page', () => {
     const searchInput = page.locator('input[type="text"], input[placeholder*="Buscar"], input[placeholder*="buscar"]')
 
     if (await searchInput.count() > 0) {
-      await searchInput.fill('bispo')
+      await searchInput.type('bispo')
 
-      // Wait for filtered results
       await page.waitForTimeout(500)
 
-      // URL should contain search query
       await expect(page).toHaveURL(/q=bispo/)
     }
   })
@@ -73,7 +71,7 @@ test.describe('Glossário Page', () => {
       await page.waitForTimeout(300)
 
       // Look for clear button
-      const clearButton = page.locator('button:has-text("Limpar"), button[aria-label*="limpar"]')
+      const clearButton = page.locator('button[aria-label*="limpar busca"]')
 
       if (await clearButton.count() > 0) {
         await clearButton.click()

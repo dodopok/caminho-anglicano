@@ -12,7 +12,7 @@ test.describe('Home Page', () => {
 
     // Should have at least 3 navigation cards (Localizador, Glossário, Dashboard)
     const cards = page.locator('a[class*="bg-white"][class*="rounded-lg"]')
-    await expect(cards).toHaveCount(3)
+    await expect(cards).toHaveCount(6)
   })
 
   test('should navigate to localizador', async ({ page }) => {

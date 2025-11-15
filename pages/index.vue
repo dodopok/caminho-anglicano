@@ -97,9 +97,9 @@ useHead({
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1">
       <div class="text-center mt-4 mb-8">
-        <h2 class="text-4xl font-bold text-slate-900 mb-4">
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">
           Bem-vindo ao Caminho Anglicano
-        </h2>
+        </h1>
         <p class="text-xl text-slate-600 max-w-2xl mx-auto">
           Recursos e serviços para conectar a comunidade anglicana brasileira
         </p>

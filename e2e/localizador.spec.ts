@@ -6,7 +6,7 @@ test.describe('Localizador de Igrejas', () => {
   })
 
   test('should load localizador page', async ({ page }) => {
-    await expect(page).toHaveTitle(/Localizador|Igrejas/)
+    await expect(page).toHaveTitle(/Busque uma igreja anglicana/)
   })
 
   test('should display jurisdiction filters', async ({ page }) => {
@@ -25,6 +25,8 @@ test.describe('Localizador de Igrejas', () => {
 
     if (await ieabFilter.count() > 0) {
       await ieabFilter.click()
+
+      await ieabFilter.locator('a[title="Ver detalhes da igreja"]').click()
 
       // Wait for churches to load
       await page.waitForTimeout(1000)

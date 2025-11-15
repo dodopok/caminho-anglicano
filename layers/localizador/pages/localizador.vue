@@ -508,19 +508,19 @@ onMounted(async () => {
                   >
                     {{ getJurisdictionSlug(church.jurisdictionId).toUpperCase() }}
                   </span>
-                </button>
 
-                <!-- Link para página de detalhes (ícone no canto inferior direito) -->
-                <NuxtLink
-                  :to="`/igrejas/${getJurisdictionSlug(church.jurisdictionId)}/${church.slug}`"
-                  class="absolute bottom-0 right-0 p-1.5 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded transition-colors opacity-0 group-hover:opacity-100"
-                  title="Ver detalhes da igreja"
-                  @click.stop
-                >
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </NuxtLink>
+                  <!-- Link para página de detalhes (ícone no canto inferior direito) -->
+                  <NuxtLink
+                    :to="`/igrejas/${getJurisdictionSlug(church.jurisdictionId)}/${church.slug}`"
+                    class="absolute bottom-0 right-0 p-1.5 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded transition-colors opacity-0 group-hover:opacity-100"
+                    title="Ver detalhes da igreja"
+                    @click.stop
+                  >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </NuxtLink>
+                </button>
               </div>
             </div>
           </div>
