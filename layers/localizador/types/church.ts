@@ -27,6 +27,7 @@ export interface ChurchSocialMedia {
 export interface Church {
   id: string
   name: string
+  slug: string
   jurisdictionId: string
   jurisdiction?: Jurisdiction
   address: string

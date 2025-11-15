@@ -46,6 +46,7 @@ export default defineEventHandler(async (event) => {
       return {
         id: church.id,
         name: church.name,
+        slug: church.slug,
         jurisdictionId: church.jurisdiction_id,
         address: church.address,
         city: church.city,

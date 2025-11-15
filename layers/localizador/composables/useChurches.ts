@@ -34,8 +34,19 @@ export function useChurches() {
     }
   }
 
+  async function fetchChurchBySlug(slug: string): Promise<Church | null> {
+    try {
+      const data = await $fetch<Church>(`/api/churches/slug/${slug}`)
+      return data
+    } catch (error) {
+      console.error('Error fetching church by slug:', error)
+      throw error
+    }
+  }
+
   return {
     fetchChurches,
-    fetchChurchById
+    fetchChurchById,
+    fetchChurchBySlug
   }
 }

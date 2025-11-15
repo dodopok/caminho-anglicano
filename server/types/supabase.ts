@@ -6,6 +6,7 @@
 export interface ChurchWithJurisdiction {
   id: string
   name: string
+  slug: string
   jurisdiction_id: string
   address: string
   city: string
@@ -26,6 +27,12 @@ export interface ChurchWithJurisdiction {
     name: string
     full_name: string
     color: string
+    description: string | null
+    website: string | null
+    active: boolean
+    display_order: number
+    created_at: string
+    updated_at: string
   } | null
 }
 
