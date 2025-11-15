@@ -110,7 +110,7 @@ function createInfoWindowContent(church: Church): string {
   if (church.pastors && church.pastors.length > 0) {
     pastorsHtml = `
       <div style="margin-top: 8px;">
-        <span style="font-weight: 600; color: #374151;">Pastores:</span> ${church.pastors.join(', ')}
+        <span style="font-weight: 600; color: #374151;">Responsáveis:</span> ${church.pastors.join(', ')}
       </div>
     `
   }
@@ -155,9 +155,9 @@ function createInfoWindowContent(church: Church): string {
       <div style="margin-top: 12px; padding-top: 8px; border-top: 1px solid #e5e7eb; display: flex; gap: 6px;">
         <a
           href="${churchPageUrl}"
-          style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; padding: 6px 10px; background-color: #059669; color: white; text-decoration: none; border-radius: 6px; font-size: 13px; font-weight: 600; transition: background-color 0.2s; flex: 1; white-space: nowrap;"
-          onmouseover="this.style.backgroundColor='#047857'"
-          onmouseout="this.style.backgroundColor='#059669'"
+          style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; padding: 6px 10px; background-color: #f3f4f6; color: #4b5563; text-decoration: none; border-radius: 6px; font-size: 13px; font-weight: 500; transition: background-color 0.2s; flex: 1; white-space: nowrap; border: 1px solid #e5e7eb;"
+          onmouseover="this.style.backgroundColor='#e5e7eb'"
+          onmouseout="this.style.backgroundColor='#f3f4f6'"
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
