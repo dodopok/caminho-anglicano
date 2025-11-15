@@ -669,11 +669,6 @@ async function handleApprove() {
     return
   }
 
-  // Show confirmation with preview
-  const _churchList = parsedChurches.value
-    .map((c, i) => `${i + 1}. ${c.name} - ${c.jurisdiction}`)
-    .join('\n')
-
   const confirmed = confirm(
     `Tem certeza que deseja processar e criar as igrejas'}?`,
   )
