@@ -34,7 +34,11 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    exclude: ['/admin/**', '/dashboard/**'],
+    exclude: [
+      '/admin/**',
+      '/dashboard/**',
+      '/igrejas/**/portal-do-douglas'
+    ],
     urls: async () => {
       // Importar dinamicamente os termos do glossário
       const { glossaryTerms } = await import('./layers/glossario/data/terms')
@@ -47,13 +51,29 @@ export default defineNuxtConfig({
         priority: 0.7 as const
       }))
 
+      // Rotas de jurisdições
+      const jurisdictionSlugs = [
+        'ieab',
+        'acab',
+        'ceab',
+        'inab'
+      ]
+
+      const jurisdictionRoutes = jurisdictionSlugs.map(slug => ({
+        loc: `/igrejas/${slug}`,
+        lastmod: new Date(),
+        changefreq: 'weekly' as const,
+        priority: 0.8 as const
+      }))
+
       // Rotas principais com maior prioridade
       const mainRoutes = [
         { loc: '/', lastmod: new Date(), changefreq: 'weekly' as const, priority: 1 as const },
-        { loc: '/glossario', lastmod: new Date(), changefreq: 'weekly' as const, priority: 0.9 as const }
+        { loc: '/glossario', lastmod: new Date(), changefreq: 'weekly' as const, priority: 0.9 as const },
+        { loc: '/localizador', lastmod: new Date(), changefreq: 'daily' as const, priority: 0.9 as const }
       ]
 
-      return [...mainRoutes, ...glossaryRoutes]
+      return [...mainRoutes, ...jurisdictionRoutes, ...glossaryRoutes]
     }
   },
 
