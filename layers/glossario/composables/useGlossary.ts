@@ -14,6 +14,7 @@ const currentPage = ref(1)
 // Debounce timer
 let searchDebounceTimer: ReturnType<typeof setTimeout> | null = null
 let urlUpdateTimer: ReturnType<typeof setTimeout> | null = null
+let isUserTyping = false // Flag para prevenir reset durante digitação
 
 export const useGlossary = () => {
   const route = useRoute()
@@ -109,8 +110,20 @@ export const useGlossary = () => {
 
   // Funções para gerenciar filtros
   const handleSearchInput = () => {
+    isUserTyping = true // Marcar que usuário está digitando
     selectedLetter.value = null
     currentPage.value = 1
+
+    // Se o input estiver vazio, limpar imediatamente sem debounce
+    if (searchQuery.value.trim() === '') {
+      if (searchDebounceTimer) {
+        clearTimeout(searchDebounceTimer)
+      }
+      debouncedSearchQuery.value = ''
+      isUserTyping = false
+      updateURL()
+      return
+    }
 
     // Debounce do searchQuery para debouncedSearchQuery
     if (searchDebounceTimer) {
@@ -119,11 +132,14 @@ export const useGlossary = () => {
 
     searchDebounceTimer = setTimeout(() => {
       debouncedSearchQuery.value = searchQuery.value
+      isUserTyping = false
       updateURL()
     }, 300)
   }
 
   const handleLetterClick = (letter: string) => {
+    isUserTyping = false // Reset da flag ao clicar em filtro
+
     if (selectedLetter.value === letter) {
       selectedLetter.value = null
     } else {
@@ -141,6 +157,8 @@ export const useGlossary = () => {
   }
 
   const handleRelatedTermClick = (term: string) => {
+    isUserTyping = false // Reset da flag ao clicar em termo relacionado
+
     searchQuery.value = term
     debouncedSearchQuery.value = term // Atualização imediata para termos relacionados
     selectedLetter.value = null
@@ -159,6 +177,7 @@ export const useGlossary = () => {
     debouncedSearchQuery.value = ''
     selectedLetter.value = null
     currentPage.value = 1
+    isUserTyping = false // Reset da flag
 
     // Limpar timers pendentes
     if (searchDebounceTimer) clearTimeout(searchDebounceTimer)
@@ -204,6 +223,9 @@ export const useGlossary = () => {
 
   // Inicializar filtros a partir da URL
   const initializeFromURL = () => {
+    // Não sobrescrever se usuário estiver digitando
+    if (isUserTyping) return
+
     const queryParam = route.query.q as string
     const letterParam = route.query.letra as string
     const pageParam = route.query.pagina as string
@@ -213,6 +235,11 @@ export const useGlossary = () => {
       debouncedSearchQuery.value = queryParam // Inicialização imediata
     } else if (letterParam && alphabet.includes(letterParam.toUpperCase())) {
       selectedLetter.value = letterParam.toUpperCase()
+    } else {
+      // Se não há query params, limpar os valores
+      searchQuery.value = ''
+      debouncedSearchQuery.value = ''
+      selectedLetter.value = null
     }
 
     if (pageParam) {
@@ -220,6 +247,8 @@ export const useGlossary = () => {
       if (!isNaN(page) && page > 0) {
         currentPage.value = page
       }
+    } else {
+      currentPage.value = 1
     }
   }
 
