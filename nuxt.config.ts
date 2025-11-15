@@ -60,7 +60,31 @@ export default defineNuxtConfig({
 
   // Configuração do Nitro para deploy na Vercel
   nitro: {
-    preset: 'vercel'
+    preset: 'vercel',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/glossario']
+    }
+  },
+
+  // Hooks para gerar rotas do glossário estaticamente
+  hooks: {
+    async 'nitro:config'(nitroConfig) {
+      // Importar dinamicamente os termos do glossário
+      const { glossaryTerms } = await import('./layers/glossario/data/terms')
+
+      // Adicionar todas as rotas dos termos ao prerender
+      const glossaryRoutes = glossaryTerms.map(term => `/glossario/${term.id}`)
+
+      if (!nitroConfig.prerender) {
+        nitroConfig.prerender = { routes: [] }
+      }
+      if (!nitroConfig.prerender.routes) {
+        nitroConfig.prerender.routes = []
+      }
+
+      nitroConfig.prerender.routes.push(...glossaryRoutes)
+    }
   },
 
   runtimeConfig: {

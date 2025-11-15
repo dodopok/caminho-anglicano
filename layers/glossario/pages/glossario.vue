@@ -30,22 +30,32 @@
               @input="handleSearchInput"
               type="text"
               placeholder="Buscar termos..."
-              class="w-full px-4 py-3 pr-12 rounded-lg border border-slate-300 focus:border-slate-500 focus:ring-2 focus:ring-slate-200 outline-none transition-all"
+              class="w-full px-4 py-3 pr-24 rounded-lg border border-slate-300 focus:border-slate-500 focus:ring-2 focus:ring-slate-200 outline-none transition-all"
               aria-label="Buscar termos do glossário"
             />
-            <svg
-              class="absolute right-4 top-3.5 w-5 h-5 text-slate-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
+            <div class="absolute right-2 top-2 flex items-center gap-2">
+              <button
+                v-if="searchQuery"
+                @click="clearSearch"
+                class="px-3 py-1.5 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded transition-colors"
+                aria-label="Limpar busca"
+              >
+                Limpar
+              </button>
+              <svg
+                class="w-5 h-5 text-slate-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </div>
           </div>
         </div>
 
@@ -91,9 +101,17 @@
           :key="term.id"
           class="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 p-6 border border-slate-200"
         >
-          <h3 class="text-xl font-semibold text-slate-900 mb-3">
-            {{ term.term }}
-          </h3>
+          <NuxtLink
+            :to="`/glossario/${term.id}`"
+            class="block group"
+          >
+            <h3 class="text-xl font-semibold text-slate-900 mb-3 group-hover:text-amber-700 transition-colors">
+              {{ term.term }}
+              <svg class="inline-block w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </h3>
+          </NuxtLink>
           <p class="text-slate-700 leading-relaxed mb-4">
             {{ term.definition }}
           </p>
@@ -206,6 +224,11 @@ const handleRelatedTermClick = (term: string) => {
 
   // Scroll para o topo para melhor UX
   window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+const clearSearch = () => {
+  searchQuery.value = ''
+  updateURL()
 }
 
 // Termos filtrados
