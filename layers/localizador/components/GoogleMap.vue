@@ -125,6 +125,7 @@ function createInfoWindowContent(church: Church): string {
   }
 
   const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${church.latitude},${church.longitude}`
+  const churchPageUrl = `/igrejas/${jurisdictionSlug}/${church.slug}`
 
   return `
     <div style="max-width: 300px; padding: 4px; font-family: system-ui, -apple-system, sans-serif;">
@@ -151,12 +152,25 @@ function createInfoWindowContent(church: Church): string {
       ${pastorsHtml}
       ${socialMediaHtml}
 
-      <div style="margin-top: 12px; padding-top: 8px; border-top: 1px solid #e5e7eb;">
+      <div style="margin-top: 12px; padding-top: 8px; border-top: 1px solid #e5e7eb; display: flex; gap: 8px;">
+        <a
+          href="${churchPageUrl}"
+          style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 16px; background-color: #059669; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background-color 0.2s; flex: 1;"
+          onmouseover="this.style.backgroundColor='#047857'"
+          onmouseout="this.style.backgroundColor='#059669'"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+            <polyline points="10 17 15 12 10 7"></polyline>
+            <line x1="15" y1="12" x2="3" y2="12"></line>
+          </svg>
+          Ver detalhes
+        </a>
         <a
           href="${mapsUrl}"
           target="_blank"
           rel="noopener noreferrer"
-          style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background-color: #4F46E5; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background-color 0.2s;"
+          style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 16px; background-color: #4F46E5; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background-color 0.2s; flex: 1;"
           onmouseover="this.style.backgroundColor='#4338CA'"
           onmouseout="this.style.backgroundColor='#4F46E5'"
         >

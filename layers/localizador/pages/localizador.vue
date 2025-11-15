@@ -467,41 +467,57 @@ onMounted(async () => {
           </div>
 
           <div v-else class="divide-y divide-gray-100">
-            <button
+            <div
               v-for="church in filteredChurches"
               :key="church.id"
-              type="button"
-              :class="[
-                'w-full text-left p-4 hover:bg-gray-50 transition-colors relative',
-                selectedChurchId === church.id ? 'bg-gray-50' : ''
-              ]"
-              @click="selectChurch(church.id)"
+              class="relative group"
             >
-              <div class="pr-16">
-                <div class="flex items-start gap-2 mb-1">
-                  <h3 class="text-sm font-semibold text-gray-900 flex-1">
-                    {{ church.name }}
-                  </h3>
-                  <span v-if="getChurchDistance(church.id)" class="text-xs font-medium text-indigo-600 whitespace-nowrap">
-                    {{ getChurchDistance(church.id) }}
-                  </span>
-                </div>
-                <p class="text-xs text-gray-500 mb-2">
-                  {{ church.address }}, {{ church.city }} - {{ church.state }}
-                </p>
-                <p v-if="church.schedules.length > 0" class="text-xs text-gray-600">
-                  <span class="font-medium">Cultos:</span> {{ formatSchedules(church.schedules) }}
-                </p>
-              </div>
-              <span
+              <button
+                type="button"
                 :class="[
-                  'absolute top-4 right-4 px-2 py-0.5 text-xs font-medium rounded',
-                  getJurisdictionBadgeClass(church.jurisdictionId)
+                  'w-full text-left p-4 hover:bg-gray-50 transition-colors relative',
+                  selectedChurchId === church.id ? 'bg-gray-50' : ''
                 ]"
+                @click="selectChurch(church.id)"
               >
-                {{ getJurisdictionSlug(church.jurisdictionId) }}
-              </span>
-            </button>
+                <div class="pr-24">
+                  <div class="flex items-start gap-2 mb-1">
+                    <h3 class="text-sm font-semibold text-gray-900 flex-1">
+                      {{ church.name }}
+                    </h3>
+                    <span v-if="getChurchDistance(church.id)" class="text-xs font-medium text-indigo-600 whitespace-nowrap">
+                      {{ getChurchDistance(church.id) }}
+                    </span>
+                  </div>
+                  <p class="text-xs text-gray-500 mb-2">
+                    {{ church.address }}, {{ church.city }} - {{ church.state }}
+                  </p>
+                  <p v-if="church.schedules.length > 0" class="text-xs text-gray-600">
+                    <span class="font-medium">Cultos:</span> {{ formatSchedules(church.schedules) }}
+                  </p>
+                </div>
+                <span
+                  :class="[
+                    'absolute top-4 right-12 px-2 py-0.5 text-xs font-medium rounded',
+                    getJurisdictionBadgeClass(church.jurisdictionId)
+                  ]"
+                >
+                  {{ getJurisdictionSlug(church.jurisdictionId) }}
+                </span>
+              </button>
+
+              <!-- Link para página de detalhes -->
+              <NuxtLink
+                :to="`/igrejas/${getJurisdictionSlug(church.jurisdictionId)}/${church.slug}`"
+                class="absolute top-4 right-4 p-1.5 text-gray-400 hover:text-green-600 hover:bg-green-50 rounded-md transition-all opacity-0 group-hover:opacity-100"
+                title="Ver detalhes da igreja"
+                @click.stop
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </NuxtLink>
+            </div>
           </div>
         </div>
       </aside>
