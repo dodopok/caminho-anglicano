@@ -470,17 +470,17 @@ onMounted(async () => {
             <div
               v-for="church in filteredChurches"
               :key="church.id"
-              class="relative group"
+              :class="[
+                'p-4 hover:bg-gray-50 transition-colors',
+                selectedChurchId === church.id ? 'bg-gray-50' : ''
+              ]"
             >
               <button
                 type="button"
-                :class="[
-                  'w-full text-left p-4 hover:bg-gray-50 transition-colors relative',
-                  selectedChurchId === church.id ? 'bg-gray-50' : ''
-                ]"
+                class="w-full text-left relative"
                 @click="selectChurch(church.id)"
               >
-                <div class="pr-24">
+                <div class="pr-16">
                   <div class="flex items-start gap-2 mb-1">
                     <h3 class="text-sm font-semibold text-gray-900 flex-1">
                       {{ church.name }}
@@ -498,7 +498,7 @@ onMounted(async () => {
                 </div>
                 <span
                   :class="[
-                    'absolute top-4 right-12 px-2 py-0.5 text-xs font-medium rounded',
+                    'absolute top-0 right-0 px-2 py-0.5 text-xs font-medium rounded',
                     getJurisdictionBadgeClass(church.jurisdictionId)
                   ]"
                 >
@@ -509,13 +509,13 @@ onMounted(async () => {
               <!-- Link para página de detalhes -->
               <NuxtLink
                 :to="`/igrejas/${getJurisdictionSlug(church.jurisdictionId)}/${church.slug}`"
-                class="absolute top-4 right-4 p-1.5 text-gray-400 hover:text-green-600 hover:bg-green-50 rounded-md transition-all opacity-0 group-hover:opacity-100"
-                title="Ver detalhes da igreja"
+                class="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-green-600 hover:text-green-700 hover:underline"
                 @click.stop
               >
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
+                Ver detalhes da igreja
               </NuxtLink>
             </div>
           </div>
