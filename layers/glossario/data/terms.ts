@@ -2226,5 +2226,341 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Compaixão',
     definition: 'O amor compassivo de Deus que se compadece da miséria humana e age para aliviá-la.',
     relatedTerms: ['Misericórdia', 'Amor', 'Cuidado']
+  },
+  {
+    id: 'antigo-testamento',
+    term: 'Antigo Testamento',
+    definition: 'A primeira parte da Bíblia cristã, contendo a Lei, os Profetas e os Escritos. Compartilhado com o judaísmo, revela a aliança de Deus com Israel.',
+    relatedTerms: ['Escrituras', 'Lei', 'Profetas']
+  },
+  {
+    id: 'novo-testamento',
+    term: 'Novo Testamento',
+    definition: 'A segunda parte da Bíblia cristã, contendo os Evangelhos, Atos, Epístolas e Apocalipse. Testemunha a nova aliança em Cristo.',
+    relatedTerms: ['Escrituras', 'Evangelho', 'Epístola']
+  },
+  {
+    id: 'alianca',
+    term: 'Aliança',
+    definition: 'O pacto ou acordo entre Deus e Seu povo. A antiga aliança com Israel e a nova aliança em Cristo.',
+    relatedTerms: ['Pacto', 'Promessa', 'Salvação']
+  },
+  {
+    id: 'redentor',
+    term: 'Redentor',
+    definition: 'Título de Cristo que redime (compra de volta) a humanidade do pecado através de Seu sacrifício.',
+    relatedTerms: ['Redenção', 'Salvador', 'Cristo']
+  },
+  {
+    id: 'redencao',
+    term: 'Redenção',
+    definition: 'A libertação da humanidade da escravidão do pecado através do sacrifício de Cristo.',
+    relatedTerms: ['Salvação', 'Redentor', 'Expiação']
+  },
+  {
+    id: 'expiacao',
+    term: 'Expiação',
+    definition: 'A reconciliação entre Deus e a humanidade realizada através da morte de Cristo na cruz.',
+    relatedTerms: ['Redenção', 'Sacrifício', 'Cruz']
+  },
+  {
+    id: 'propiciacao',
+    term: 'Propiciação',
+    definition: 'O ato de Cristo que satisfaz a justiça de Deus e desvia Sua ira do pecado.',
+    relatedTerms: ['Expiação', 'Sacrifício', 'Justiça']
+  },
+  {
+    id: 'mediador',
+    term: 'Mediador',
+    definition: 'Cristo como o único mediador entre Deus e a humanidade (1 Timóteo 2:5).',
+    relatedTerms: ['Cristo', 'Intercessão', 'Redenção']
+  },
+  {
+    id: 'sumo-sacerdote',
+    term: 'Sumo Sacerdote',
+    definition: 'Título de Cristo que intercede pela humanidade diante de Deus (Hebreus 4:14-16).',
+    relatedTerms: ['Mediador', 'Intercessão', 'Sacerdócio']
+  },
+  {
+    id: 'sacerdocio-real',
+    term: 'Sacerdócio Real',
+    definition: 'O sacerdócio de todos os crentes (1 Pedro 2:9), capacitados a oferecer sacrifícios espirituais a Deus.',
+    relatedTerms: ['Batismo', 'Povo de Deus', 'Ministério']
+  },
+  {
+    id: 'povo-deus',
+    term: 'Povo de Deus',
+    definition: 'A comunidade dos fiéis, chamados por Deus para ser Seu povo especial.',
+    relatedTerms: ['Igreja', 'Eleição', 'Comunidade']
+  },
+  {
+    id: 'corpo-cristo',
+    term: 'Corpo de Cristo',
+    definition: 'Metáfora de Paulo para a igreja, enfatizando a unidade e diversidade dos membros em Cristo.',
+    relatedTerms: ['Igreja', 'Comunhão', 'Unidade']
+  },
+  {
+    id: 'noiva-cristo',
+    term: 'Noiva de Cristo',
+    definition: 'Imagem bíblica da igreja como a noiva amada de Cristo, aguardando as bodas do Cordeiro.',
+    relatedTerms: ['Igreja', 'Amor', 'Escatologia']
+  },
+  {
+    id: 'reino-deus',
+    term: 'Reino de Deus',
+    definition: 'O governo soberano de Deus, já presente mas ainda não plenamente realizado. Central na pregação de Jesus.',
+    relatedTerms: ['Evangelho', 'Soberania', 'Escatologia']
+  },
+  {
+    id: 'palavra-deus',
+    term: 'Palavra de Deus',
+    definition: 'A auto-revelação de Deus, plenamente em Cristo (o Verbo encarnado) e nas Escrituras inspiradas.',
+    relatedTerms: ['Escrituras', 'Cristo', 'Revelação']
+  },
+  {
+    id: 'verbo',
+    term: 'Verbo',
+    definition: 'Título de Cristo do prólogo de João (João 1:1): "No princípio era o Verbo". A Palavra eterna de Deus feita carne.',
+    relatedTerms: ['Cristo', 'Encarnação', 'Logos']
+  },
+  {
+    id: 'logos',
+    term: 'Logos',
+    definition: 'Palavra grega para "palavra" ou "razão", usada para Cristo como a Palavra eterna de Deus.',
+    relatedTerms: ['Verbo', 'Cristo', 'Encarnação']
+  },
+  {
+    id: 'emanuel',
+    term: 'Emanuel',
+    definition: 'Nome profético de Cristo que significa "Deus conosco" (Mateus 1:23).',
+    relatedTerms: ['Cristo', 'Encarnação', 'Nomes de Jesus']
+  },
+  {
+    id: 'messias',
+    term: 'Messias',
+    definition: 'Do hebraico "ungido", equivalente ao grego "Cristo". O salvador prometido de Israel.',
+    relatedTerms: ['Cristo', 'Salvador', 'Unção']
+  },
+  {
+    id: 'filho-deus',
+    term: 'Filho de Deus',
+    definition: 'Título de Cristo que expressa Sua relação única e eterna com o Pai.',
+    relatedTerms: ['Cristo', 'Trindade', 'Filiação Divina']
+  },
+  {
+    id: 'filho-homem',
+    term: 'Filho do Homem',
+    definition: 'Título preferido de Jesus para Si mesmo, enfatizando Sua humanidade e papel messiânico (Daniel 7).',
+    relatedTerms: ['Cristo', 'Encarnação', 'Messias']
+  },
+  {
+    id: 'senhor',
+    term: 'Senhor',
+    definition: 'Título de Cristo que expressa Sua divindade e autoridade sobre toda a criação.',
+    relatedTerms: ['Cristo', 'Soberania', 'Ressurreição']
+  },
+  {
+    id: 'cordeiro-deus',
+    term: 'Cordeiro de Deus',
+    definition: 'Título de Cristo (João 1:29) como o sacrifício perfeito que tira o pecado do mundo.',
+    relatedTerms: ['Agnus Dei', 'Sacrifício', 'Redenção']
+  },
+  {
+    id: 'bom-pastor',
+    term: 'Bom Pastor',
+    definition: 'Imagem de Cristo (João 10) que dá a vida pelas ovelhas e as conhece pelo nome.',
+    relatedTerms: ['Cristo', 'Pastor', 'Cuidado']
+  },
+  {
+    id: 'videira-verdadeira',
+    term: 'Videira Verdadeira',
+    definition: 'Imagem de Cristo (João 15) como a fonte de vida para os ramos (discípulos).',
+    relatedTerms: ['Cristo', 'União', 'Frutificação']
+  },
+  {
+    id: 'pao-vida',
+    term: 'Pão da Vida',
+    definition: 'Título de Cristo (João 6) como o alimento espiritual essencial para a vida eterna.',
+    relatedTerms: ['Cristo', 'Eucaristia', 'Vida Eterna']
+  },
+  {
+    id: 'luz-mundo',
+    term: 'Luz do Mundo',
+    definition: 'Título de Cristo (João 8:12) como aquele que ilumina as trevas do pecado e ignorância.',
+    relatedTerms: ['Cristo', 'Revelação', 'Salvação']
+  },
+  {
+    id: 'caminho-verdade-vida',
+    term: 'Caminho, Verdade e Vida',
+    definition: 'Autodeclaração de Cristo (João 14:6) como o único caminho para o Pai.',
+    relatedTerms: ['Cristo', 'Salvação', 'Exclusividade']
+  },
+  {
+    id: 'rei-reis',
+    term: 'Rei dos Reis',
+    definition: 'Título de Cristo (Apocalipse 19:16) enfatizando Sua suprema autoridade sobre todos os governantes.',
+    relatedTerms: ['Cristo', 'Soberania', 'Glória']
+  },
+  {
+    id: 'nascimento-virginal',
+    term: 'Nascimento Virginal',
+    definition: 'A doutrina de que Jesus foi concebido pelo Espírito Santo e nasceu da Virgem Maria.',
+    relatedTerms: ['Encarnação', 'Maria', 'Espírito Santo']
+  },
+  {
+    id: 'virgem-maria',
+    term: 'Virgem Maria',
+    definition: 'A mãe de Jesus, venerada pelos anglicanos como exemplo de fé e obediência, mas não adorada.',
+    relatedTerms: ['Maria', 'Nascimento Virginal', 'Santos']
+  },
+  {
+    id: 'anjo',
+    term: 'Anjo',
+    definition: 'Espírito criado por Deus para servi-Lo e servir aos fiéis. Mensageiros de Deus.',
+    relatedTerms: ['Criação', 'Espírito', 'Mensageiro']
+  },
+  {
+    id: 'arcanjo',
+    term: 'Arcanjo',
+    definition: 'Anjo de alta hierarquia. Miguel, Gabriel e Rafael são arcanjos reconhecidos na tradição.',
+    relatedTerms: ['Anjo', 'Miguel', 'Gabriel']
+  },
+  {
+    id: 'satanas',
+    term: 'Satanás',
+    definition: 'O adversário, líder dos anjos caídos, inimigo de Deus e da humanidade.',
+    relatedTerms: ['Demônio', 'Mal', 'Tentação']
+  },
+  {
+    id: 'tentacao',
+    term: 'Tentação',
+    definition: 'Atração ou incitação ao pecado. Cristo foi tentado mas não pecou.',
+    relatedTerms: ['Pecado', 'Provação', 'Resistência']
+  },
+  {
+    id: 'pecado',
+    term: 'Pecado',
+    definition: 'Qualquer pensamento, palavra ou ação contrária à vontade de Deus. Separação de Deus.',
+    relatedTerms: ['Queda', 'Confissão', 'Arrependimento']
+  },
+  {
+    id: 'pecado-original',
+    term: 'Pecado Original',
+    definition: 'A condição decaída da humanidade herdada de Adão, inclinando todos ao pecado.',
+    relatedTerms: ['Queda', 'Adão', 'Natureza Humana']
+  },
+  {
+    id: 'queda',
+    term: 'Queda',
+    definition: 'A rebelião de Adão e Eva contra Deus (Gênesis 3), trazendo pecado e morte ao mundo.',
+    relatedTerms: ['Pecado Original', 'Adão', 'Eva']
+  },
+  {
+    id: 'criacao',
+    term: 'Criação',
+    definition: 'O ato de Deus de trazer o universo à existência do nada. Tudo que Deus criou é bom.',
+    relatedTerms: ['Gênesis', 'Deus Criador', 'Bondade']
+  },
+  {
+    id: 'imagem-deus',
+    term: 'Imagem de Deus (Imago Dei)',
+    definition: 'A humanidade criada à imagem e semelhança de Deus (Gênesis 1:27), com dignidade e propósito únicos.',
+    relatedTerms: ['Criação', 'Dignidade Humana', 'Antropologia']
+  },
+  {
+    id: 'livre-arbitrio',
+    term: 'Livre-Arbítrio',
+    definition: 'A capacidade humana de fazer escolhas. Enfraquecida mas não destruída pelo pecado original.',
+    relatedTerms: ['Graça', 'Responsabilidade', 'Escolha']
+  },
+  {
+    id: 'consciencia',
+    term: 'Consciência',
+    definition: 'A capacidade moral de discernir o certo do errado. Deve ser formada pela verdade.',
+    relatedTerms: ['Moral', 'Discernimento', 'Formação']
+  },
+  {
+    id: 'crucificacao',
+    term: 'Crucificação',
+    definition: 'A morte de Jesus na cruz, o ato supremo de amor que redime a humanidade.',
+    relatedTerms: ['Cruz', 'Paixão', 'Redenção']
+  },
+  {
+    id: 'ressurreicao-cristo',
+    term: 'Ressurreição de Cristo',
+    definition: 'A vitória de Cristo sobre a morte no terceiro dia, fundamento da fé cristã.',
+    relatedTerms: ['Páscoa', 'Vida Eterna', 'Vitória']
+  },
+  {
+    id: 'ascensao-cristo',
+    term: 'Ascensão de Cristo',
+    definition: 'A elevação corporal de Cristo ao céu quarenta dias após a Páscoa.',
+    relatedTerms: ['Ascensão', 'Glória', 'Sessão']
+  },
+  {
+    id: 'pentecostes-evento',
+    term: 'Pentecostes (Evento)',
+    definition: 'A descida do Espírito Santo sobre os apóstolos cinquenta dias após a Páscoa, nascimento da igreja.',
+    relatedTerms: ['Espírito Santo', 'Igreja', 'Pentecostes']
+  },
+  {
+    id: 'dons-espirito',
+    term: 'Dons do Espírito',
+    definition: 'Capacidades especiais dadas pelo Espírito Santo para edificação da igreja (1 Coríntios 12).',
+    relatedTerms: ['Espírito Santo', 'Ministério', 'Carismas']
+  },
+  {
+    id: 'frutos-espirito',
+    term: 'Frutos do Espírito',
+    definition: 'As virtudes produzidas pelo Espírito na vida do cristão: amor, alegria, paz, paciência, etc. (Gálatas 5:22-23).',
+    relatedTerms: ['Espírito Santo', 'Santificação', 'Virtudes']
+  },
+  {
+    id: 'carisma',
+    term: 'Carisma',
+    definition: 'Dom espiritual dado gratuitamente pelo Espírito Santo para o bem comum da igreja.',
+    relatedTerms: ['Dons do Espírito', 'Ministério', 'Graça']
+  },
+  {
+    id: 'batismo-espirito',
+    term: 'Batismo no Espírito Santo',
+    definition: 'A infusão do Espírito Santo no cristão, conferindo poder para testemunho e serviço.',
+    relatedTerms: ['Espírito Santo', 'Pentecostes', 'Poder']
+  },
+  {
+    id: 'benedicao',
+    term: 'Benediç ão',
+    definition: 'Invocação da graça e favor de Deus. Pode ser sobre pessoas, objetos ou lugares.',
+    relatedTerms: ['Graça', 'Favor', 'Oração']
+  },
+  {
+    id: 'gloria-deus',
+    term: 'Glória de Deus',
+    definition: 'A manifestação da perfeição e majestade de Deus. O fim principal da humanidade é glorificar a Deus.',
+    relatedTerms: ['Adoração', 'Majestade', 'Louvor']
+  },
+  {
+    id: 'shekinah',
+    term: 'Shekinah',
+    definition: 'A presença visível da glória de Deus, manifestada como nuvem ou luz brilhante.',
+    relatedTerms: ['Glória', 'Presença', 'Manifestação']
+  },
+  {
+    id: 'salvacao',
+    term: 'Salvação',
+    definition: 'A libertação do pecado e suas consequências através de Jesus Cristo. Passada (justificação), presente (santificação) e futura (glorificação).',
+    relatedTerms: ['Redenção', 'Justificação', 'Santificação']
+  },
+  {
+    id: 'graca',
+    term: 'Graça',
+    definition: 'O favor imerecido de Deus. A graça capacita, perdoa e transforma.',
+    relatedTerms: ['Misericórdia', 'Favor', 'Dom']
+  },
+  {
+    id: 'perdao',
+    term: 'Perdão',
+    definition: 'A remissão dos pecados oferecida por Deus através de Cristo. Também o perdão que devemos oferecer uns aos outros.',
+    relatedTerms: ['Misericórdia', 'Reconciliação', 'Absolvição']
   }
 ]

@@ -133,7 +133,7 @@ useHead({
   script: term.value ? [
     {
       type: 'application/ld+json',
-      children: JSON.stringify({
+      innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'DefinedTerm',
         name: term.value.term,
