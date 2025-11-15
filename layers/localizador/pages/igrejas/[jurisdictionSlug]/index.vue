@@ -288,6 +288,8 @@ useHead({
           </div>
         </div>
       </div>
+
+      <BaseFooter />
     </div>
   </div>
 </template>

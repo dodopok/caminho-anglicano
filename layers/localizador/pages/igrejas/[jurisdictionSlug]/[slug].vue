@@ -137,5 +137,7 @@ useHead({
     <div v-else class="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
       <ChurchDetails :church="church" />
     </div>
+
+    <BaseFooter />
   </div>
 </template>

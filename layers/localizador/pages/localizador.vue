@@ -600,6 +600,8 @@ onMounted(async () => {
       :message="toastMessage"
       @close="showToast = false"
     />
+
+    <BaseFooter />
   </div>
 </template>
 
