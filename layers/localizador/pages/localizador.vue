@@ -475,48 +475,50 @@ onMounted(async () => {
                 selectedChurchId === church.id ? 'bg-gray-50' : ''
               ]"
             >
-              <button
-                type="button"
-                class="w-full text-left relative"
-                @click="selectChurch(church.id)"
-              >
-                <div class="pr-16">
-                  <div class="flex items-start gap-2 mb-1">
-                    <h3 class="text-sm font-semibold text-gray-900 flex-1">
-                      {{ church.name }}
-                    </h3>
-                    <span v-if="getChurchDistance(church.id)" class="text-xs font-medium text-indigo-600 whitespace-nowrap">
-                      {{ getChurchDistance(church.id) }}
-                    </span>
-                  </div>
-                  <p class="text-xs text-gray-500 mb-2">
-                    {{ church.address }}, {{ church.city }} - {{ church.state }}
-                  </p>
-                  <p v-if="church.schedules.length > 0" class="text-xs text-gray-600">
-                    <span class="font-medium">Cultos:</span> {{ formatSchedules(church.schedules) }}
-                  </p>
-                </div>
-                <span
-                  :class="[
-                    'absolute top-0 right-0 px-2 py-0.5 text-xs font-medium rounded',
-                    getJurisdictionBadgeClass(church.jurisdictionId)
-                  ]"
+              <div class="relative">
+                <button
+                  type="button"
+                  class="w-full text-left"
+                  @click="selectChurch(church.id)"
                 >
-                  {{ getJurisdictionSlug(church.jurisdictionId) }}
-                </span>
-              </button>
+                  <div class="pr-16">
+                    <div class="flex items-start gap-2 mb-1">
+                      <h3 class="text-sm font-semibold text-gray-900 flex-1">
+                        {{ church.name }}
+                      </h3>
+                      <span v-if="getChurchDistance(church.id)" class="text-xs font-medium text-indigo-600 whitespace-nowrap">
+                        {{ getChurchDistance(church.id) }}
+                      </span>
+                    </div>
+                    <p class="text-xs text-gray-500 mb-2">
+                      {{ church.address }}, {{ church.city }} - {{ church.state }}
+                    </p>
+                    <p v-if="church.schedules.length > 0" class="text-xs text-gray-600">
+                      <span class="font-medium">Cultos:</span> {{ formatSchedules(church.schedules) }}
+                    </p>
+                  </div>
+                  <span
+                    :class="[
+                      'absolute top-0 right-0 px-2 py-0.5 text-xs font-medium rounded',
+                      getJurisdictionBadgeClass(church.jurisdictionId)
+                    ]"
+                  >
+                    {{ getJurisdictionSlug(church.jurisdictionId).toUpperCase() }}
+                  </span>
+                </button>
 
-              <!-- Link para página de detalhes -->
-              <NuxtLink
-                :to="`/igrejas/${getJurisdictionSlug(church.jurisdictionId)}/${church.slug}`"
-                class="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-green-600 hover:text-green-700 hover:underline"
-                @click.stop
-              >
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-                Ver detalhes da igreja
-              </NuxtLink>
+                <!-- Link para página de detalhes (ícone no canto inferior direito) -->
+                <NuxtLink
+                  :to="`/igrejas/${getJurisdictionSlug(church.jurisdictionId)}/${church.slug}`"
+                  class="absolute bottom-0 right-0 p-1.5 text-green-600 hover:text-green-700 hover:bg-green-50 rounded transition-colors"
+                  @click.stop
+                  title="Ver detalhes da igreja"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </NuxtLink>
+              </div>
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ onMounted(async () => {
   try {
     // Fetch all jurisdictions
     const jurisdictions = await fetchJurisdictions()
-    jurisdiction.value = jurisdictions.find(j => j.slug === jurisdictionSlug) || null
+    jurisdiction.value = jurisdictions.find(j => j.slug.toLowerCase() === jurisdictionSlug.toLowerCase()) || null
 
     if (!jurisdiction.value) {
       error.value = 'Jurisdição não encontrada'

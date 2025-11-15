@@ -18,7 +18,7 @@ onMounted(async () => {
     // Validate that the church belongs to the correct jurisdiction
     if (!church.value) {
       error.value = 'Igreja não encontrada'
-    } else if (church.value.jurisdiction?.slug !== jurisdictionSlug) {
+    } else if (church.value.jurisdiction?.slug.toLowerCase() !== jurisdictionSlug.toLowerCase()) {
       // Church exists but doesn't match jurisdiction in URL
       error.value = 'Igreja não encontrada nesta jurisdição'
       church.value = null

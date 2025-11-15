@@ -134,7 +134,7 @@ function createInfoWindowContent(church: Church): string {
           ${church.name}
         </h3>
         <span style="padding: 2px 8px; font-size: 11px; font-weight: 600; border-radius: 4px; background-color: ${jurisdictionColor}22; color: ${jurisdictionColor}; white-space: nowrap;">
-          ${jurisdictionSlug}
+          ${jurisdictionSlug.toUpperCase()}
         </span>
       </div>
 
