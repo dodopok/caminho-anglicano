@@ -3054,5 +3054,263 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Dossel',
     definition: 'Cortina que fica atrás do altar em algumas igrejas. As vezes é feito de madeira e recebe o nome de retábulo.',
     relatedTerms: ['Altar', 'Retábulo', 'Decoração']
+  },
+  {
+    id: 'efac',
+    term: 'EFAC',
+    definition: 'Sigla da associação chamada Evangelical fellowship in The Anglican Communion. Essa associação foi criada nos anos 60 por iniciativa do teólogo John Stott e que congrega as associações nacionais de Anglicanos evangelicais. No caso do Brasil, o mentor da formação da EFAC foi o Bispo Robinson Cavalcanti.',
+    relatedTerms: ['Evangelicalismo', 'John Stott', 'Comunhão Anglicana']
+  },
+  {
+    id: 'elevacao',
+    term: 'Elevação',
+    definition: 'Ato de elevar os elementos (Pão e Vinho) para a reverência e/ou adoração durante a Eucaristia.',
+    relatedTerms: ['Eucaristia', 'Exposição', 'Adoração']
+  },
+  {
+    id: 'encomenda',
+    term: 'Encomenda',
+    definition: 'É a parte conclusiva do Serviço Fúnebre que acontece ainda na igreja. Ela consiste em uma música, uma oração e uma bênção e/ou despedida da congregação.',
+    relatedTerms: ['Funeral', 'Sepultamento', 'Exéquias']
+  },
+  {
+    id: 'endoencas',
+    term: 'Endoenças',
+    definition: 'Nome dado à quinta-feira Santa, porque nesse dia Jesus começou sua paixão. Em séculos passados este era o dia em que os penitentes faziam reconciliação pública.',
+    relatedTerms: ['Semana Santa', 'Quinta-feira Santa', 'Paixão']
+  },
+  {
+    id: 'epiclesis',
+    term: 'Epiclesis',
+    definition: 'Do grego "invocação", é a parte da Anáfora em que se invoca a operação do Espírito Santo para a consagração do Pão e do Vinho.',
+    relatedTerms: ['Anáfora', 'Espírito Santo', 'Consagração']
+  },
+  {
+    id: 'erastianismo',
+    term: 'Erastianismo',
+    definition: 'Doutrina derivada do pensamento de Thomas Erastus (1524-1583), segundo quem, o Estado deve ter plena autoridade sobre a Igreja em todos os assuntos.',
+    relatedTerms: ['Igreja e Estado', 'Autoridade']
+  },
+  {
+    id: 'estalas',
+    term: 'Estalas',
+    definition: 'Assento para o clero, acólitos e, as vezes, para o coro.',
+    relatedTerms: ['Coro', 'Clero', 'Mobiliário Litúrgico']
+  },
+  {
+    id: 'estante',
+    term: 'Estante',
+    definition: 'Ver Ambão. Mesa da Palavra, é a estante de onde se proclama a Palavra de Deus.',
+    relatedTerms: ['Ambão', 'Atril', 'Púlpito']
+  },
+  {
+    id: 'evangelicalismo',
+    term: 'Evangelicalismo',
+    definition: 'Corrente ou partido interno do Anglicanismo, herdeira dos princípios puritanos do século XVII e do trabalho de John Wesley, que valoriza a "regeneração" ou o "novo nascimento" como resultado da obra do Espírito Santo sobre um indivíduo adulto e consciente de seus pecados e que precisa exercer fé em Cristo. A crença na autoridade plena das Escrituras e na necessidade de compartilhar sua fé aos demais que ainda não creem (evangelização), são duas das características mais marcantes desse grupo.',
+    relatedTerms: ['Igreja Baixa', 'John Wesley', 'Novo Nascimento']
+  },
+  {
+    id: 'ex-cathedra',
+    term: 'Ex-cathedra',
+    definition: 'Esta expressão vem do latim: "Do trono", e faz referência aos pronunciamentos papais feitos a partir "do trono" de Pedro, ou seja, como autoridade máxima e chefe da Igreja. Estes pronunciamentos são considerados infalíveis.',
+    relatedTerms: ['Papa', 'Infalibilidade Papal', 'Igreja Católica Romana']
+  },
+  {
+    id: 'ex-opere-operato',
+    term: 'Ex-Opere-Operato',
+    definition: 'Doutrina Romana segundo a qual a validade do Sacramento reside apenas no "trabalho realizado", e não em qualificações pessoais ou interiores daqueles que o recebem.',
+    relatedTerms: ['Sacramento', 'Igreja Católica Romana']
+  },
+  {
+    id: 'exposicao',
+    term: 'Exposição',
+    definition: 'Ver Elevação. Ato de elevar ou expor os elementos eucarísticos.',
+    relatedTerms: ['Elevação', 'Eucaristia', 'Ostensório']
+  },
+  {
+    id: 'finados',
+    term: 'Finados',
+    definition: 'Na tradição Romana, este é o dia em que toda a Igreja faz sufrágios por todas as almas que estão no purgatório e que é celebrado com Ofício e Missa próprios. Este dia foi introduzido para seguir o dia de Todos os Santos, pelo abade Odilon de Clugny em 998. No entanto, com o tempo, ela passou a ser uma festa universal.',
+    relatedTerms: ['Dia de todos os Santos', 'Purgatório', 'Oração pelos Mortos']
+  },
+  {
+    id: 'fistula',
+    term: 'Fístula',
+    definition: 'Um tubo fino feito de prata e com uma pequena alça, que era usada pelos fiéis para beberem o vinho na Comunhão. Depois da proibição da comunhão do cálice para os leigos, somente os papas, os diáconos e os sub-diáconos passaram a utilizar, em missas papais. Hodiernamente caiu em desuso.',
+    relatedTerms: ['Comunhão', 'Cálice', 'Liturgia']
+  },
+  {
+    id: 'fonte',
+    term: 'Fonte',
+    definition: 'Bacia cerimonial de onde flui água, ou onde se põe a água que será utilizada na administração do Batismo. Ela costuma estar situada na entrada do templo.',
+    relatedTerms: ['Batismo', 'Pia', 'Batistério']
+  },
+  {
+    id: 'forma',
+    term: 'Forma',
+    definition: 'As palavras essenciais autorizadas para a correta administração do Sacramento.',
+    relatedTerms: ['Sacramento', 'Matéria', 'Liturgia']
+  },
+  {
+    id: 'frontal',
+    term: 'Frontal',
+    definition: 'Ornamento amovível que cobre a frente da base do altar. Quando é feito de seda outro tecido comum, é comum orná-lo com bordados artísticos.',
+    relatedTerms: ['Altar', 'Antependium', 'Paramentos']
+  },
+  {
+    id: 'galhetas',
+    term: 'Galhetas',
+    definition: 'São dois recipientes contendo, respectivamente, a água e o vinho que serão utilizados na Eucaristia. Até o momento do ofertório, eles ficam sobre a Mesa das Credências.',
+    relatedTerms: ['Eucaristia', 'Credência', 'Vinho']
+  },
+  {
+    id: 'galicanismo',
+    term: 'Galicanismo',
+    definition: 'Doutrina abraçada por Bispos franceses durante os séculos XVII e XVIII que pregava e liberdade da Igreja em relação à influência de Roma. Na liturgia era expressa na rejeição dos livros aprovados pela Sé Romana.',
+    relatedTerms: ['França', 'Autonomia Eclesiástica']
+  },
+  {
+    id: 'genuflexorio',
+    term: 'Genuflexório',
+    definition: 'Móvel utilizado especialmente para que as pessoas possam se ajoelhar.',
+    relatedTerms: ['Oração', 'Liturgia', 'Mobiliário']
+  },
+  {
+    id: 'gloria-in-excelsis',
+    term: 'Glória in Exelsis',
+    definition: 'Um hino cristão primitivo também conhecido como a Grande Doxologia. Ele está baseado em Lucas 2:13, 14, e sua origem ligada ao Ofício Matutino Bizantino.',
+    relatedTerms: ['Doxologia', 'Hino', 'Liturgia']
+  },
+  {
+    id: 'gloria-patri',
+    term: 'Glória Patri',
+    definition: 'Também chamada de Doxologia Menor, expressa uma adoração à Santíssima Trindade. Ela é normalmente usada logo após à leitura do Salmo do dia.',
+    relatedTerms: ['Doxologia', 'Trindade', 'Salmos']
+  },
+  {
+    id: 'gloria-tibi',
+    term: 'Glória Tibi',
+    definition: 'Uma resposta relacionada à leitura dos Evangelhos. "Glória a ti...".',
+    relatedTerms: ['Evangelho', 'Liturgia da Palavra']
+  },
+  {
+    id: 'gradual',
+    term: 'Gradual',
+    definition: 'Livro litúrgico que antigamente continha apenas o gradual, aleluia e tractus, a ser cantado na celebração depois da epístola; mas hoje, contém todos os trechos que deverão ser cantados na celebração, pelo coro.',
+    relatedTerms: ['Livro Litúrgico', 'Canto', 'Coro']
+  },
+  {
+    id: 'grande-entrada',
+    term: 'Grande Entrada',
+    definition: 'Um solene ofertório processional utilizado nas liturgias Ortodoxas, durante o qual os elementos da Comunhão são trazidos do altar para o altar da preparação.',
+    relatedTerms: ['Igreja Ortodoxa', 'Ofertório', 'Procissão']
+  },
+  {
+    id: 'grande-oracao-eucaristica',
+    term: 'Grande Oração Eucarística',
+    definition: 'É a oração central da Eucaristia. Também chamada de Anáfora, Grande Ação de Graças e Oração de Consagração.',
+    relatedTerms: ['Anáfora', 'Eucaristia', 'Consagração']
+  },
+  {
+    id: 'hino',
+    term: 'Hino',
+    definition: 'Um texto métrico feito para ser cantado em adoração pela congregação.',
+    relatedTerms: ['Canto', 'Adoração', 'Hinário']
+  },
+  {
+    id: 'hooker-richard',
+    term: 'Hooker, Richard',
+    definition: 'Nascido c.1554 e falecido em 1600, um dos mais destacados teólogos e apologistas do Anglicanismo. Ele defendeu, brilhantemente, as posições da Igreja da Inglaterra tanto contra as ideias puritanas quanto contra as teses romanistas. Hooker contornou as acusações puritanas que se baseavam nas Escrituras, bem assim as acusações Romanas com base na tradição, apelando a fonte básica da autoridade: a lei natural. Sua principal obra foi: Laws of ecclesiastical polity.',
+    relatedTerms: ['Teologia Anglicana', 'Via Média', 'Reforma Inglesa']
+  },
+  {
+    id: 'hosana',
+    term: 'Hosana',
+    definition: 'Aclamação de júbilo, próprio do Sanctus, do Benedictus e de algumas antífonas do domingo de Ramos. No período bíblico, esta expressão era uma petição que se traduzia por: "salva-nos ó Senhor".',
+    relatedTerms: ['Sanctus', 'Domingo de Ramos', 'Aclamação']
+  },
+  {
+    id: 'iconastasis',
+    term: 'Iconastasis',
+    definition: 'Na tradição Ortodoxa, este é o nome dado a uma parede recoberta por ícones e que separa o santuário da nave da igreja.',
+    relatedTerms: ['Ícone', 'Igreja Ortodoxa', 'Santuário']
+  },
+  {
+    id: 'icone',
+    term: 'Ícone',
+    definition: 'Do grego "imagem". Na adoração Ortodoxa – que não utiliza esculturas -, é uma importantíssima representação de algum santo ou personalidade sagrada. Os ícones mais conhecidos são o Pantokrator e o Theotokos.',
+    relatedTerms: ['Igreja Ortodoxa', 'Arte Sacra', 'Veneração']
+  },
+  {
+    id: 'igreja-alta',
+    term: 'Igreja Alta',
+    definition: 'Designação do grupo da Igreja Anglicana que enfatiza a sucessão apostólica, a liturgia, a vida monástica, a presença de Cristo na Eucaristia e outros elementos mais próximos da Igreja Romana.',
+    relatedTerms: ['Anglo-católico', 'Movimento de Oxford', 'Liturgia']
+  },
+  {
+    id: 'igreja-baixa',
+    term: 'Igreja Baixa',
+    definition: 'Designação do grupo da Igreja Anglicana que é mais próxima das teses evangelicais de John Wesley e que enfatizam o "novo nascimento" como experiência pessoal.',
+    relatedTerms: ['Evangelicalismo', 'John Wesley', 'Novo Nascimento']
+  },
+  {
+    id: 'igreja-norte-india',
+    term: 'Igreja do Norte da Índia',
+    definition: 'Essa Igreja foi inaugurada em 1970 com a união de seis outras igrejas: a Anglicana, a Igreja Unida do Norte da Índia (Congregacionais e Presbiterianos), Metodistas, o Concílio da Igreja Batista do nordeste da Índia, a Igreja dos Irmãos na Índia e os Discípulos de Cristo.',
+    relatedTerms: ['Igrejas Unidas', 'Ecumenismo', 'Índia']
+  },
+  {
+    id: 'igreja-sul-india',
+    term: 'Igreja do Sul da Índia',
+    definition: 'Nome da Igreja formada em 1947 como o resultado da união entre as igrejas Anglicanas, Metodistas, Congregacionais e Presbiterianas.',
+    relatedTerms: ['Igrejas Unidas', 'Ecumenismo', 'Índia']
+  },
+  {
+    id: 'igreja-larga',
+    term: 'Igreja Larga',
+    definition: 'Designação antigamente utilizada para se referir à corrente mais racionalista e aberta dos Anglicanos. Esta postura estava muito relacionada aos valores e tendências que seriam chamados no século XVIII de Iluminismo.',
+    relatedTerms: ['Latitudinarismo', 'Razão', 'Iluminismo']
+  },
+  {
+    id: 'igreja-mar-thoma',
+    term: 'Igreja Mar Thoma',
+    definition: 'Também chamada de Igreja Síria Mar Thoma de Malabar, é uma igreja cristã estabelecida no sudoeste da Índia. Ela remonta até a implantação do cristianismo na Índia, feita pelo Apóstolo Tomé. Durante os séculos XVIII e XIX essa igreja recebeu influência de missionários Anglicanos, tendo, mais tarde, estabelecido a comunhão plena com a Igreja Unida da Índia.',
+    relatedTerms: ['Índia', 'Apóstolo Tomé', 'Igreja Ortodoxa']
+  },
+  {
+    id: 'igreja-vetero-catolica',
+    term: 'Igreja Vétero-Católica',
+    definition: 'Nome dado ao conjunto de comunidades que se separou da Igreja de Roma em razão do dogma estabelecido pelo Concílio do Vaticano I sobre a Infalibilidade Papal. Os Velhos-Católicos estão espalhados por muitos países, dentre os quais, Alemanha, Suíça, Áustria, Holanda, etc.',
+    relatedTerms: ['Infalibilidade Papal', 'Vaticano I', 'Cisma']
+  },
+  {
+    id: 'igrejas-unidas',
+    term: 'Igrejas Unidas',
+    definition: 'São quatro Igrejas formadas pela união entre os Anglicanos e outras comunidades cristãs. Estas Igrejas são membros plenos do CCA, da Conferência de Lambeth e da Reunião dos Primazes. Essas Igrejas são: as Igrejas do Norte da Índia, do Sul da Índia, de Bangladesh e do Paquistão.',
+    relatedTerms: ['Ecumenismo', 'Comunhão Anglicana', 'Índia']
+  },
+  {
+    id: 'igrejas-continuantes',
+    term: 'Igrejas Continuantes',
+    definition: 'Nome utilizado para designar um grupo de Igrejas que deixaram a Comunhão Anglicana em razão do movimento pela ordenação feminina em 1977, na Igreja Episcopal dos Estados Unidos. Desse encontro surge a Igreja Anglicana na América do Norte que, em três anos, se dividiu em três outras: a Igreja Católica Anglicana, a Província Anglicana de Cristo Rei e a Igreja Episcopal Unida da América do Norte.',
+    relatedTerms: ['Afirmação de Saint Louis', 'ACNA', 'Ordenação Feminina']
+  },
+  {
+    id: 'improperios',
+    term: 'Impropérios',
+    definition: 'Queixas sentidíssimas e comoventes que o Senhor teria dito, na cruz, contra o povo, e que aparecem em alguns Ritos litúrgicos. Os impropérios são cantados na sexta-feira Santa por cantores e coros.',
+    relatedTerms: ['Semana Santa', 'Sexta-feira Santa', 'Liturgia']
+  },
+  {
+    id: 'inri',
+    term: 'INRI',
+    definition: 'São as iniciais das palavras latinas que foram pregadas sobre a cruz de cristo. A frase latina diz: "Iesus Nazarenus Rex Iudaeorum", que significa: "Jesus, Nazareno, rei dos judeus" (Mateus 27: 37).',
+    relatedTerms: ['Crucificação', 'Cruz', 'Título']
+  },
+  {
+    id: 'iona',
+    term: 'Iona',
+    definition: 'Monastério que teve enorme importância para a formação espiritual dos monges escoceses, fundado por São Columba.',
+    relatedTerms: ['Columba S.', 'Escócia', 'Monasticismo']
   }
 ]
