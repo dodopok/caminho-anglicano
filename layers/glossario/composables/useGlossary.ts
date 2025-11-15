@@ -7,8 +7,13 @@ const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
 // Estados compartilhados globais
 const searchQuery = ref('')
+const debouncedSearchQuery = ref('') // Query com debounce para filtro
 const selectedLetter = ref<string | null>(null)
 const currentPage = ref(1)
+
+// Debounce timer
+let searchDebounceTimer: ReturnType<typeof setTimeout> | null = null
+let urlUpdateTimer: ReturnType<typeof setTimeout> | null = null
 
 export const useGlossary = () => {
   const route = useRoute()
@@ -19,9 +24,9 @@ export const useGlossary = () => {
     return terms.slice().sort((a, b) => a.term.localeCompare(b.term, 'pt-BR'))
   }
 
-  // Termos filtrados
+  // Termos filtrados (usa debouncedSearchQuery para performance)
   const filteredTerms = computed(() => {
-    const query = searchQuery.value.trim()
+    const query = debouncedSearchQuery.value.trim()
     const hasTextSearch = query.length > 0
     const hasLetterFilter = selectedLetter.value !== null
 
@@ -79,28 +84,43 @@ export const useGlossary = () => {
     return filteredTerms.value.slice(start, end)
   })
 
-  // Atualizar URL quando filtros mudarem
+  // Atualizar URL quando filtros mudarem (com debounce)
   const updateURL = () => {
-    const query: Record<string, string> = {}
-
-    if (searchQuery.value) {
-      query.q = searchQuery.value
-    } else if (selectedLetter.value) {
-      query.letra = selectedLetter.value
+    if (urlUpdateTimer) {
+      clearTimeout(urlUpdateTimer)
     }
 
-    if (currentPage.value > 1) {
-      query.pagina = currentPage.value.toString()
-    }
+    urlUpdateTimer = setTimeout(() => {
+      const query: Record<string, string> = {}
 
-    router.replace({ query })
+      if (debouncedSearchQuery.value) {
+        query.q = debouncedSearchQuery.value
+      } else if (selectedLetter.value) {
+        query.letra = selectedLetter.value
+      }
+
+      if (currentPage.value > 1) {
+        query.pagina = currentPage.value.toString()
+      }
+
+      router.replace({ query })
+    }, 300)
   }
 
   // Funções para gerenciar filtros
   const handleSearchInput = () => {
     selectedLetter.value = null
     currentPage.value = 1
-    updateURL()
+
+    // Debounce do searchQuery para debouncedSearchQuery
+    if (searchDebounceTimer) {
+      clearTimeout(searchDebounceTimer)
+    }
+
+    searchDebounceTimer = setTimeout(() => {
+      debouncedSearchQuery.value = searchQuery.value
+      updateURL()
+    }, 300)
   }
 
   const handleLetterClick = (letter: string) => {
@@ -109,29 +129,51 @@ export const useGlossary = () => {
     } else {
       selectedLetter.value = letter
       searchQuery.value = ''
+      debouncedSearchQuery.value = ''
     }
     currentPage.value = 1
+
+    // Limpar timers pendentes
+    if (searchDebounceTimer) clearTimeout(searchDebounceTimer)
+    if (urlUpdateTimer) clearTimeout(urlUpdateTimer)
+
     updateURL()
   }
 
   const handleRelatedTermClick = (term: string) => {
     searchQuery.value = term
+    debouncedSearchQuery.value = term // Atualização imediata para termos relacionados
     selectedLetter.value = null
     currentPage.value = 1
+
+    // Limpar timers pendentes
+    if (searchDebounceTimer) clearTimeout(searchDebounceTimer)
+    if (urlUpdateTimer) clearTimeout(urlUpdateTimer)
+
     updateURL()
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   const clearSearch = () => {
     searchQuery.value = ''
+    debouncedSearchQuery.value = ''
     selectedLetter.value = null
     currentPage.value = 1
+
+    // Limpar timers pendentes
+    if (searchDebounceTimer) clearTimeout(searchDebounceTimer)
+    if (urlUpdateTimer) clearTimeout(urlUpdateTimer)
+
     updateURL()
   }
 
   const clearLetterFilter = () => {
     selectedLetter.value = null
     currentPage.value = 1
+
+    // Limpar timers pendentes
+    if (urlUpdateTimer) clearTimeout(urlUpdateTimer)
+
     updateURL()
   }
 
@@ -139,6 +181,10 @@ export const useGlossary = () => {
   const goToPage = (page: number) => {
     if (page >= 1 && page <= totalPages.value) {
       currentPage.value = page
+
+      // Limpar timer pendente
+      if (urlUpdateTimer) clearTimeout(urlUpdateTimer)
+
       updateURL()
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
@@ -164,6 +210,7 @@ export const useGlossary = () => {
 
     if (queryParam) {
       searchQuery.value = queryParam
+      debouncedSearchQuery.value = queryParam // Inicialização imediata
     } else if (letterParam && alphabet.includes(letterParam.toUpperCase())) {
       selectedLetter.value = letterParam.toUpperCase()
     }
