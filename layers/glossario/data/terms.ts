@@ -776,12 +776,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Anglo-Católicos', 'Liturgia', 'Tradição']
   },
   {
-    id: 'anglo-catolicos',
-    term: 'Anglo-Católicos',
-    definition: 'Anglicanos que se identificam com o ensino católico e práticas litúrgicas elevadas, enfatizando a sucessão apostólica e os sacramentos.',
-    relatedTerms: ['Alta Igreja', 'Tradição Católica', 'Liturgia']
-  },
-  {
     id: 'artigos-religiao',
     term: '39 Artigos de Religião',
     definition: 'Declaração histórica da doutrina anglicana adotada em 1559, que apresenta uma posição equilibrada sobre diversos tópicos teológicos disputados.',
@@ -948,12 +942,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'IEAB',
     definition: 'Igreja Episcopal Anglicana do Brasil, província da Comunhão Anglicana no Brasil.',
     relatedTerms: ['Comunhão Anglicana', 'Província', 'Brasil']
-  },
-  {
-    id: 'iacb',
-    term: 'IACB',
-    definition: 'Igreja Anglicana do Cone Sul do Brasil, jurisdição anglicana no Brasil.',
-    relatedTerms: ['Comunhão Anglicana', 'Jurisdição', 'Brasil']
   },
   {
     id: 'ministro',
@@ -3297,13 +3285,13 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     id: 'klebe-john',
-    term: 'Klebe, John',
+    term: 'John Klebe',
     definition: 'Segundo missionário a ser enviado para trabalhar em Porto Alegre. O Reverendo Klebe chegou à capital gaúcha em 21 de setembro de 1890, com a missão de cuidar das colônias de língua alemã. Residiu em Santa Maria e em Cachoeira. Foi o responsável pela fundação de Missões em São João da Montanha, em 1891, e em Ijuí, em 1892. Retornou aos Estados Unidos em 1893.',
     relatedTerms: ['Missão', 'Porto Alegre', 'História Anglicana']
   },
   {
     id: 'kingsley-charles',
-    term: 'Kingsley, Charles',
+    term: 'Charles Kingsley',
     definition: 'Teólogo e romancista inglês (1819-1875), defensor do Socialismo Cristão e da Teologia Larga. Autor de obras como "Hypatia" e "Westward Ho!".',
     relatedTerms: ['Socialismo Cristão', 'Igreja Larga', 'Literatura']
   },
@@ -3321,7 +3309,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     id: 'laud-william',
-    term: 'Laud, William',
+    term: 'William Laud',
     definition: 'Arcebispo de Cantuária (1573-1645) durante o reinado de Carlos I. Defendeu a liturgia tradicional e a beleza no culto. Foi executado durante a Guerra Civil Inglesa.',
     relatedTerms: ['Arcebispo de Cantuária', 'Liturgia', 'Guerra Civil']
   },
@@ -3345,7 +3333,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     id: 'lewis-cs',
-    term: 'Lewis, C.S.',
+    term: 'C.S. Lewis',
     definition: 'Clive Staples Lewis (1898-1963), escritor e apologista cristão anglicano. Autor de "As Crônicas de Nárnia", "Cristianismo Puro e Simples" e outras obras influentes.',
     relatedTerms: ['Apologética', 'Literatura', 'Teologia']
   },
@@ -3476,8 +3464,8 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Laicato', 'Ministério Leigo', 'Missão']
   },
   {
-    id: 'oficio-divino',
-    term: 'Ofício Divino',
+    id: 'oficio-diario',
+    term: 'Ofício Diário',
     definition: 'Conjunto de orações litúrgicas distribuídas ao longo do dia, também conhecido como Liturgia das Horas. Inclui Matinas, Laudes, Vésperas, Completas, entre outras.',
     relatedTerms: ['Horas Canônicas', 'Matinas', 'Laudes', 'Vésperas']
   },
@@ -3556,8 +3544,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'rochete',
     term: 'Rochete',
-    definition: 'Veste branca semelhante à sobrepeliz, mas com mangas mais justas, usada por bispos sob a quimera.',
-    relatedTerms: ['Paramentos', 'Bispo', 'Quimera']
+    definition: 'Veste branca semelhante à sobrepeliz, mas com mangas mais justas, usada por bispos sob a chamarra.',
+    relatedTerms: ['Paramentos', 'Bispo', 'Chamarra']
   },
   {
     id: 'sacramentario',
@@ -3615,7 +3603,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     id: 'strachan-harry',
-    term: 'Strachan, Harry',
+    term: 'Harry Strachan',
     definition: 'Terceiro Bispo da Igreja Episcopal do Brasil (1925-1949). Contribuiu significativamente para o desenvolvimento da Igreja no país.',
     relatedTerms: ['Bispo', 'História Anglicana Brasileira', 'IEAB']
   },
@@ -3645,7 +3633,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     id: 'temple-william',
-    term: 'Temple, William',
+    term: 'William Temple',
     definition: 'Arcebispo de Cantuária (1881-1944), teólogo e líder ecumênico. Contribuiu significativamente para o movimento ecumênico e a teologia social.',
     relatedTerms: ['Arcebispo de Cantuária', 'Ecumenismo', 'Teologia Social']
   },
@@ -3657,7 +3645,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     id: 'tomé-apóstolo',
-    term: 'Tomé, Apóstolo',
+    term: 'Apóstolo Tomé',
     definition: 'Um dos doze apóstolos de Jesus, conhecido por sua dúvida inicial sobre a ressurreição. Segundo a tradição, levou o cristianismo à Índia.',
     relatedTerms: ['Apóstolos', 'Igreja Mar Thoma', 'Índia']
   },
@@ -3723,13 +3711,13 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     id: 'welby-justin-portal',
-    term: 'Welby, Justin Portal',
-    definition: 'Atual (105º) Arcebispo de Cantuária desde 2013, líder espiritual da Comunhão Anglicana.',
+    term: 'Justin Portal Welby',
+    definition: '(105º) Arcebispo de Cantuária desde 2013, foi líder espiritual da Comunhão Anglicana.',
     relatedTerms: ['Arcebispo de Cantuária', 'Comunhão Anglicana', 'Primaz']
   },
   {
     id: 'westcott-brooke-foss',
-    term: 'Westcott, Brooke Foss',
+    term: 'Brooke Foss Westcott',
     definition: 'Bispo e estudioso bíblico (1825-1901), conhecido por seu trabalho em crítica textual do Novo Testamento e teologia social.',
     relatedTerms: ['Bíblia', 'Teologia', 'Crítica Textual']
   },
@@ -3900,11 +3888,5 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Subcintório',
     definition: 'Cordão usado para prender a alva na cintura antes de colocar o cíngulo.',
     relatedTerms: ['Alva', 'Cíngulo', 'Paramentos']
-  },
-  {
-    id: 'rational',
-    term: 'Rational',
-    definition: 'Ornamento peitoral quadrado usado por alguns bispos, reminiscente do peitoral do sumo sacerdote hebraico.',
-    relatedTerms: ['Racional', 'Bispo', 'Sumo Sacerdote']
   }
 ]
