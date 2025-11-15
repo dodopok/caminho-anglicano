@@ -233,14 +233,102 @@
             d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
           />
         </svg>
-        <p class="text-slate-600 text-lg">
+        <p class="text-slate-600 text-lg mb-2">
           Nenhum termo encontrado
         </p>
-        <p class="text-slate-500 text-sm mt-2">
+        <p class="text-slate-500 text-sm mb-4">
           Tente ajustar sua busca ou filtro
         </p>
+        <button
+          v-if="searchQuery"
+          @click="openSuggestionModal"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition-colors font-medium"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+          </svg>
+          Sugerir este termo
+        </button>
       </div>
     </main>
+
+    <!-- Modal de Sugestão de Termo -->
+    <BaseModal
+      :is-open="showSuggestionModal"
+      title="Sugerir Novo Termo"
+      @close="closeSuggestionModal"
+    >
+      <form @submit.prevent="submitSuggestion" class="space-y-4">
+        <div>
+          <label for="term" class="block text-sm font-medium text-slate-700 mb-2">
+            Termo *
+          </label>
+          <input
+            id="term"
+            v-model="suggestion.term"
+            type="text"
+            required
+            class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+            placeholder="Ex: Primaz"
+          />
+        </div>
+
+        <div>
+          <label for="definition" class="block text-sm font-medium text-slate-700 mb-2">
+            Definição sugerida (opcional)
+          </label>
+          <textarea
+            id="definition"
+            v-model="suggestion.definition"
+            rows="4"
+            class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+            placeholder="Se souber, pode sugerir uma definição..."
+          />
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-slate-700 mb-2">
+            Seu e-mail (opcional)
+          </label>
+          <input
+            id="email"
+            v-model="suggestion.email"
+            type="email"
+            class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+            placeholder="seu@email.com"
+          />
+        </div>
+
+        <div class="flex gap-3 justify-end pt-4">
+          <button
+            type="button"
+            @click="closeSuggestionModal"
+            class="px-4 py-2 text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors"
+          >
+            Cancelar
+          </button>
+          <button
+            type="submit"
+            :disabled="isSubmitting || !suggestion.term"
+            class="px-4 py-2 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {{ isSubmitting ? 'Enviando...' : 'Enviar Sugestão' }}
+          </button>
+        </div>
+
+        <p v-if="submissionError" class="text-red-600 text-sm">
+          {{ submissionError }}
+        </p>
+      </form>
+    </BaseModal>
+
+    <!-- Toast de notificação -->
+    <BaseToast
+      :show="showToast"
+      :type="toastType"
+      :message="toastMessage"
+      @close="showToast = false"
+    />
 
     <BaseFooter />
   </div>
@@ -248,7 +336,7 @@
 
 <script setup lang="ts">
 import { glossaryTerms } from '../../data/terms'
-import { computed, ref, onMounted, watch } from 'vue'
+import { computed, ref, onMounted } from 'vue'
 
 const siteUrl = 'https://caminhoanglicano.com.br'
 const route = useRoute()
@@ -258,6 +346,22 @@ const router = useRouter()
 const searchQuery = ref('')
 const selectedLetter = ref<string | null>(null)
 const currentPage = ref(1)
+
+// Estado do modal de sugestão
+const showSuggestionModal = ref(false)
+const isSubmitting = ref(false)
+const submissionError = ref('')
+const submissionSuccess = ref(false)
+const suggestion = ref({
+  term: '',
+  definition: '',
+  email: ''
+})
+
+// Estado do toast
+const showToast = ref(false)
+const toastMessage = ref('')
+const toastType = ref<'success' | 'error' | 'info'>('success')
 
 // Paginação
 const ITEMS_PER_PAGE = 50
@@ -338,6 +442,70 @@ const clearSearch = () => {
   selectedLetter.value = null
   currentPage.value = 1
   updateURL()
+}
+
+// Funções do modal de sugestão
+const openSuggestionModal = () => {
+  suggestion.value = {
+    term: searchQuery.value,
+    definition: '',
+    email: ''
+  }
+  submissionError.value = ''
+  submissionSuccess.value = false
+  showSuggestionModal.value = true
+}
+
+const closeSuggestionModal = () => {
+  showSuggestionModal.value = false
+  suggestion.value = {
+    term: '',
+    definition: '',
+    email: ''
+  }
+  submissionError.value = ''
+  submissionSuccess.value = false
+}
+
+const displayToast = (message: string, type: 'success' | 'error' | 'info' = 'success') => {
+  toastMessage.value = message
+  toastType.value = type
+  showToast.value = true
+  setTimeout(() => {
+    showToast.value = false
+  }, 3000)
+}
+
+const submitSuggestion = async () => {
+  if (!suggestion.value.term) return
+
+  isSubmitting.value = true
+  submissionError.value = ''
+  submissionSuccess.value = false
+
+  try {
+    // Formatar dados como string para o campo bulk_data
+    const bulkDataString = `SUGESTÃO DE TERMO PARA O GLOSSÁRIO
+Termo: ${suggestion.value.term}
+${suggestion.value.definition ? `Definição sugerida: ${suggestion.value.definition}` : 'Sem definição sugerida'}
+${suggestion.value.email ? `Email: ${suggestion.value.email}` : 'Email não fornecido'}
+Data: ${new Date().toLocaleString('pt-BR')}`
+
+    await $fetch('/api/submissions/bulk', {
+      method: 'POST',
+      body: {
+        bulkData: bulkDataString
+      }
+    })
+
+    closeSuggestionModal()
+    displayToast('Sugestão enviada com sucesso! Obrigado pela contribuição.', 'success')
+  } catch (err) {
+    console.error('Erro ao enviar sugestão:', err)
+    submissionError.value = 'Erro ao enviar sugestão. Tente novamente.'
+  } finally {
+    isSubmitting.value = false
+  }
 }
 
 // Função auxiliar para ordenação alfabética
