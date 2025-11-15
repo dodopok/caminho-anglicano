@@ -13,8 +13,8 @@
         </a>
         -
         <button
-          @click="openSupportModal"
           class="text-purple-600 hover:text-purple-700 font-medium transition-colors underline decoration-dotted underline-offset-2"
+          @click="openSupportModal"
         >
           Apoie o projeto
         </button>

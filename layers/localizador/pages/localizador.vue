@@ -379,9 +379,9 @@ onMounted(async () => {
           <h2 class="text-lg font-semibold text-gray-900">Filtros</h2>
           <button
             type="button"
-            @click="isSidebarOpen = false"
             class="text-gray-400 hover:text-gray-600 transition-colors"
             aria-label="Fechar menu"
+            @click="isSidebarOpen = false"
           >
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -428,8 +428,8 @@ onMounted(async () => {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
             <svg v-else class="w-4 h-4 text-gray-600 animate-spin" fill="none" viewBox="0 0 24 24">
-              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
             </svg>
             {{ isGettingLocation ? 'Obtendo localização...' : 'Perto de mim' }}
           </button>
@@ -511,8 +511,8 @@ onMounted(async () => {
                 <NuxtLink
                   :to="`/igrejas/${getJurisdictionSlug(church.jurisdictionId)}/${church.slug}`"
                   class="absolute bottom-0 right-0 p-1.5 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded transition-colors opacity-0 group-hover:opacity-100"
-                  @click.stop
                   title="Ver detalhes da igreja"
+                  @click.stop
                 >
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -530,8 +530,8 @@ onMounted(async () => {
         <button
           type="button"
           class="lg:hidden fixed top-24 left-4 z-20 bg-white rounded-full shadow-lg p-3 hover:bg-gray-50 transition-colors"
-          @click="toggleSidebar"
           aria-label="Abrir menu de filtros"
+          @click="toggleSidebar"
         >
           <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -556,8 +556,8 @@ onMounted(async () => {
         <button
           type="button"
           class="fixed bottom-6 right-6 z-20 bg-yellow-500 text-gray-900 rounded-lg shadow-lg px-4 py-3 hover:bg-yellow-600 transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 flex items-center gap-2 font-medium"
-          @click="isFeedbackModalOpen = true"
           aria-label="Reportar problema ou atualização"
+          @click="isFeedbackModalOpen = true"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />

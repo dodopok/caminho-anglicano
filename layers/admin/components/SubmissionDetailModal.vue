@@ -15,8 +15,8 @@
           </div>
         </div>
         <button
-          @click="handleClose"
           class="text-gray-400 hover:text-gray-500 transition-colors"
+          @click="handleClose"
         >
           <span class="sr-only">Fechar</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -40,7 +40,7 @@
     />
 
     <!-- Form -->
-    <form @submit.prevent="handleSave" class="space-y-6">
+    <form class="space-y-6" @submit.prevent="handleSave">
                 <!-- Nome -->
                 <BaseInput
                   v-model="formData.name"

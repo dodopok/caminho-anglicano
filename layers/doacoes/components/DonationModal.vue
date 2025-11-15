@@ -142,7 +142,7 @@
       </div>
 
       <!-- Formulário de dados -->
-      <form @submit.prevent="handleSubmit" class="space-y-4">
+      <form class="space-y-4" @submit.prevent="handleSubmit">
         <div class="grid grid-cols-2 gap-4">
           <BaseInput
             v-model="formData.name"

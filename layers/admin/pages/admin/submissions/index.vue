@@ -125,8 +125,8 @@
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                   <button
-                    @click="openModal(submission)"
                     class="text-blue-600 hover:text-blue-700 transition-colors"
+                    @click="openModal(submission)"
                   >
                     Ver Detalhes
                   </button>

@@ -44,8 +44,8 @@
                   </h2>
                   <button
                     v-if="showClose"
-                    @click="handleClose"
                     class="text-gray-400 hover:text-gray-500 transition-colors"
+                    @click="handleClose"
                   >
                     <span class="sr-only">Fechar</span>
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

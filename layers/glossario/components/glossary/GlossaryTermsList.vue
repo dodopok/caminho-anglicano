@@ -24,9 +24,9 @@
         <button
           v-for="relatedTerm in term.relatedTerms"
           :key="relatedTerm"
-          @click="handleRelatedTermClick(relatedTerm)"
           class="text-xs px-2 py-1 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full transition-colors"
           :aria-label="`Buscar termo relacionado: ${relatedTerm}`"
+          @click="handleRelatedTermClick(relatedTerm)"
         >
           {{ relatedTerm }}
         </button>

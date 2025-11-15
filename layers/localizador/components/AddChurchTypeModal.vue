@@ -45,9 +45,9 @@ function handleSelectBulk() {
             </h2>
             <button
               type="button"
-              @click="handleClose"
               class="text-gray-400 hover:text-gray-600 transition-colors"
               aria-label="Fechar modal"
+              @click="handleClose"
             >
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -62,8 +62,8 @@ function handleSelectBulk() {
 
             <button
               type="button"
-              @click="handleSelectSingle"
               class="w-full p-4 border-2 border-gray-300 rounded-lg hover:border-indigo-600 hover:bg-indigo-50 transition-all group"
+              @click="handleSelectSingle"
             >
               <div class="flex items-start gap-4">
                 <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center group-hover:bg-indigo-600 transition-colors">
@@ -84,8 +84,8 @@ function handleSelectBulk() {
 
             <button
               type="button"
-              @click="handleSelectBulk"
               class="w-full p-4 border-2 border-gray-300 rounded-lg hover:border-indigo-600 hover:bg-indigo-50 transition-all group"
+              @click="handleSelectBulk"
             >
               <div class="flex items-start gap-4">
                 <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center group-hover:bg-indigo-600 transition-colors">
