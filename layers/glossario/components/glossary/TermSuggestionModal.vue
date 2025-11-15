@@ -1,5 +1,6 @@
 <template>
   <BaseModal
+    max-width="sm"
     :is-open="showSuggestionModal"
     title="Sugerir Novo Termo"
     @close="closeSuggestionModal"

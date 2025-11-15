@@ -16,10 +16,15 @@
       {{ letter }}
     </button>
     <button
-      v-if="selectedLetter"
+      :class="[
+        'px-3 py-1.5 rounded-md text-sm font-medium transition-all',
+        selectedLetter
+          ? 'bg-red-100 text-red-700 hover:bg-red-200 opacity-100 pointer-events-auto'
+          : 'bg-transparent text-transparent opacity-0 pointer-events-none border border-transparent'
+      ]"
+      :aria-label="selectedLetter ? 'Limpar filtro alfabético' : undefined"
+      :tabindex="selectedLetter ? 0 : -1"
       @click="clearLetterFilter"
-      class="px-3 py-1.5 rounded-md text-sm font-medium bg-red-100 text-red-700 hover:bg-red-200 transition-all"
-      aria-label="Limpar filtro alfabético"
     >
       Limpar
     </button>

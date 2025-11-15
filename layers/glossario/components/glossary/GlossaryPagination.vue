@@ -1,5 +1,5 @@
 <template>
-  <div v-if="totalPages > 1" class="mt-12 flex justify-center items-center gap-2">
+  <div v-if="totalPages > 1" class="my-6 flex justify-end items-center gap-2">
     <button
       @click="previousPage"
       :disabled="currentPage === 1"

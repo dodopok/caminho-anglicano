@@ -2,7 +2,7 @@ import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { glossaryTerms } from '../data/terms'
 
-const ITEMS_PER_PAGE = 50
+const ITEMS_PER_PAGE = 40
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
 // Estados compartilhados globais
