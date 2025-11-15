@@ -1,0 +1,44 @@
+<template>
+  <div v-if="totalPages > 1" class="mt-12 flex justify-center items-center gap-2">
+    <button
+      @click="previousPage"
+      :disabled="currentPage === 1"
+      class="px-4 py-2 rounded-lg border transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+      :class="currentPage === 1 ? 'bg-gray-100 text-gray-400 border-gray-200' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'"
+    >
+      ← Anterior
+    </button>
+
+    <div class="flex gap-1">
+      <button
+        v-for="page in totalPages"
+        :key="page"
+        v-show="page === 1 || page === totalPages || (page >= currentPage - 2 && page <= currentPage + 2)"
+        @click="goToPage(page)"
+        :class="[
+          'px-4 py-2 rounded-lg transition-colors',
+          page === currentPage
+            ? 'bg-amber-700 text-white'
+            : 'bg-white text-slate-700 border border-slate-300 hover:bg-slate-50'
+        ]"
+      >
+        {{ page }}
+      </button>
+    </div>
+
+    <button
+      @click="nextPage"
+      :disabled="currentPage === totalPages"
+      class="px-4 py-2 rounded-lg border transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+      :class="currentPage === totalPages ? 'bg-gray-100 text-gray-400 border-gray-200' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'"
+    >
+      Próxima →
+    </button>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { useGlossary } from '../../composables/useGlossary'
+
+const { currentPage, totalPages, goToPage, nextPage, previousPage } = useGlossary()
+</script>
