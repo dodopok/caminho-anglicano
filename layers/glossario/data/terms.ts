@@ -1096,7 +1096,223 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'vigario',
     term: 'Vigário',
-    definition: 'Um vigário é nomeado pelo bispo para auxiliar o decano da catedral.',
-    relatedTerms: ['Catedral', 'Decano', 'Bispo']
+    definition: 'Palavra de origem latina (vicarius) que significa "substituto". O vigário é aquele que faz as vezes de alguém, representando o bispo em cada paróquia.',
+    relatedTerms: ['Catedral', 'Decano', 'Bispo', 'Pároco']
+  },
+  {
+    id: 'via-media',
+    term: 'Via Média',
+    definition: 'Termo cunhado no século XVII para descrever as posições doutrinárias da Igreja Anglicana que evitam tanto o extremo romanista quanto o extremo protestante. Os anglicanos se consideram católicos, porém não romanos, e protestantes, mas não cismáticos.',
+    relatedTerms: ['Anglicanismo', 'Doutrina', 'Reforma']
+  },
+  {
+    id: 'quadrilatero-chicago-lambeth',
+    term: 'Quadrilátero Chicago-Lambeth',
+    definition: 'Declaração que serve de base fundamental da fé anglicana. Aceita em Chicago (1886) e adotada pela Conferência de Lambeth (1888), compõe-se de: (1) As Sagradas Escrituras como Palavra de Deus; (2) Os Credos Apostólico e Niceno; (3) Os dois sacramentos do Batismo e da Eucaristia; e (4) O Episcopado Histórico adaptado localmente.',
+    relatedTerms: ['Doutrina', 'Sacramentos', 'Sucessão Apostólica']
+  },
+  {
+    id: 'compreensividade',
+    term: 'Compreensividade',
+    definition: 'Característica fundamental do anglicanismo que permite a coexistência pacífica de tendências aparentemente contrárias dentro da mesma Comunhão. Aponta para a capacidade de compreender quem pensa diferente.',
+    relatedTerms: ['Anglicanismo', 'Via Média', 'Inclusividade']
+  },
+  {
+    id: 'lacos-afeicao',
+    term: 'Laços de Afeição',
+    definition: 'Quatro elementos institucionais que mantêm a Comunhão Anglicana unida: (1) Conferência de Lambeth (1867); (2) Conselho Consultivo Anglicano (1969); (3) Reunião dos Primazes (1978); e (4) O Arcebispo de Canterbury como foco de unidade.',
+    relatedTerms: ['Comunhão Anglicana', 'Conferência de Lambeth', 'Arcebispo']
+  },
+  {
+    id: 'kinsolving-lucien',
+    term: 'Lucien Lee Kinsolving',
+    definition: 'Primeiro Bispo Anglicano do Brasil (1862-1929). Chegou ao Brasil em 1889 com James Watson Morris para estabelecer a Igreja Episcopal. Fundou a Igreja em Porto Alegre (1890), foi eleito primeiro bispo em 1905 e serviu por 36 anos com grande zelo evangelístico.',
+    relatedTerms: ['Brasil', 'IEAB', 'Bispo', 'História']
+  },
+  {
+    id: 'morris-james',
+    term: 'James Watson Morris',
+    definition: 'Missionário anglicano (1857-1954) que veio ao Brasil com Kinsolving em 1889. Organizou a Casa da Missão em Porto Alegre, fundou as paróquias do Calvário e do Mediador (atual Catedral), e criou o jornal "O Estandarte Cristão". Reabriu o Seminário Teológico de Porto Alegre em 1908.',
+    relatedTerms: ['Brasil', 'IEAB', 'Missão', 'História']
+  },
+  {
+    id: 'brande-vicente',
+    term: 'Vicente Brande',
+    definition: 'Primeiro brasileiro ordenado ao ministério anglicano (1893), aos 33 anos, pelo Bispo Peterkin. De origem presbiteriana, recebeu os primeiros missionários e foi responsável pela fundação da Capela da Redenção em Porto Alegre. Faleceu em 1940.',
+    relatedTerms: ['Brasil', 'IEAB', 'Ordenação', 'História']
+  },
+  {
+    id: 'cabral-americo',
+    term: 'Américo Vespúcio Cabral',
+    definition: 'Ministro anglicano brasileiro (1870-1937) de Arroio Grande. Ordenado diácono em 1893 e presbítero em 1897, trabalhou em diversas regiões do Sul do Brasil. Segundo Kingsolving, era "o pregador mais eloquente que jamais ouvi em qualquer língua".',
+    relatedTerms: ['Brasil', 'IEAB', 'Pregação', 'História']
+  },
+  {
+    id: 'pithan-athalicio',
+    term: 'Athalício Theodoro Pithan',
+    definition: 'Primeiro Bispo Anglicano brasileiro (1898-1966). Natural de Santa Maria, formou-se em direito e teologia. Sagrado Bispo Sufragâneo em 1940, tornou-se Bispo da Diocese Meridional em 1950 quando o distrito missionário foi dividido em três dioceses.',
+    relatedTerms: ['Brasil', 'IEAB', 'Bispo', 'História']
+  },
+  {
+    id: 'hooker-richard',
+    term: 'Richard Hooker',
+    definition: 'Teólogo e apologista anglicano (c.1554-1600). Defendeu brilhantemente as posições da Igreja da Inglaterra contra puritanos e romanistas, apelando à lei natural. Autor de "Laws of Ecclesiastical Polity", obra fundamental da teologia anglicana.',
+    relatedTerms: ['Teologia', 'Via Média', 'Apologética']
+  },
+  {
+    id: 'newman-john-henry',
+    term: 'John Henry Newman',
+    definition: 'Líder do Movimento de Oxford (1801-1890). Autor de 24 dos "Tracts for the Times", incluindo o famoso Tract 90 sobre os 39 Artigos. Converteu-se ao catolicismo romano em 1845 e foi feito cardeal em 1870. Sua autobiografia é "Apologia Pro Vita Sua".',
+    relatedTerms: ['Movimento de Oxford', 'Tractarianismo', 'História']
+  },
+  {
+    id: 'wesley-john',
+    term: 'John Wesley',
+    definition: 'Ministro anglicano e pregador (1703-1791). Responsável, com seu irmão Charles Wesley, pela criação do movimento metodista e pelo reavivamento evangélico inglês do século XVIII. Sua ênfase na experiência do "novo nascimento" influenciou profundamente o evangelicalismo anglicano.',
+    relatedTerms: ['Metodismo', 'Evangelicalismo', 'Reavivamento']
+  },
+  {
+    id: 'latimer-hugh',
+    term: 'Hugh Latimer',
+    definition: 'Bispo anglicano e mártir (1485-1555). Excelente pregador e divulgador da teologia protestante. Morreu queimado na fogueira com Nicholas Ridley durante o reinado de Maria Tudor, dizendo: "Acenderemos na Inglaterra uma vela que nunca será apagada".',
+    relatedTerms: ['Mártir', 'Reforma', 'Inglaterra']
+  },
+  {
+    id: 'ridley-nicholas',
+    term: 'Nicholas Ridley',
+    definition: 'Bispo de Londres e mártir (c.1500-1555). Morreu queimado na fogueira durante as perseguições marianas por seus ensinamentos reformados e apoio a Lady Jane Grey. Lembrado em 16 de outubro no calendário anglicano.',
+    relatedTerms: ['Mártir', 'Reforma', 'Inglaterra']
+  },
+  {
+    id: 'seabury-samuel',
+    term: 'Samuel Seabury',
+    definition: 'Primeiro Bispo da Igreja Episcopal dos Estados Unidos (1729-1796). Eleito após a Independência americana, foi sagrado pelos bispos escoceses em 14 de novembro de 1784, já que não prestaria juramento ao Rei inglês.',
+    relatedTerms: ['Estados Unidos', 'Bispo', 'História']
+  },
+  {
+    id: 'gafcon',
+    term: 'GAFCON',
+    definition: 'Global Anglican Future Conference (Conferência Global sobre o Futuro Anglicano). Série de conferências iniciada em 2008 em Jerusalém reunindo anglicanos conservadores. Produziu a Declaração de Jerusalém e a Fellowship of Confessing Anglicans. Reuniões em 2008, 2013 e 2018.',
+    relatedTerms: ['Anglicanismo', 'Conservadorismo', 'Ortodoxia']
+  },
+  {
+    id: 'arcic',
+    term: 'ARCIC',
+    definition: 'Anglican Roman Catholic International Commission. Comissão bilateral de diálogo ecumênico estabelecida em 1967 pelo Arcebispo Michael Ramsey e Papa Paulo VI. Produziu documentos importantes sobre Eucaristia, ministério, autoridade e Maria.',
+    relatedTerms: ['Ecumenismo', 'Diálogo', 'Igreja Católica']
+  },
+  {
+    id: 'filioque',
+    term: 'Filioque',
+    definition: 'Expressão latina que significa "e do Filho". Acrescentada ao Credo Niceno no Ocidente (Concílio de Toledo, 598) afirmando que o Espírito Santo procede do Pai "e do Filho". Rejeitada pelo Oriente, foi uma das causas do Grande Cisma de 1054.',
+    relatedTerms: ['Credo Niceno', 'Espírito Santo', 'Cisma']
+  },
+  {
+    id: 'transubstanciacao',
+    term: 'Transubstanciação',
+    definition: 'Doutrina medieval romana baseada em Aristóteles, segundo a qual, na consagração, a substância do pão e vinho se torna o Corpo e Sangue de Cristo, embora os acidentes (aparências) permaneçam. Os anglicanos rejeitam esta formulação específica.',
+    relatedTerms: ['Eucaristia', 'Presença Real', 'Teologia']
+  },
+  {
+    id: 'baculo',
+    term: 'Báculo',
+    definition: 'Cajado pastoral utilizado pelo bispo diocesano, símbolo da presidência eclesiástica. Voltado para frente na própria diocese e para trás quando visitando outra diocese. Durante a celebração descansa sobre a Santa Mesa.',
+    relatedTerms: ['Bispo', 'Liturgia', 'Símbolos']
+  },
+  {
+    id: 'mitra',
+    term: 'Mitra',
+    definition: 'Cobertura litúrgica utilizada pelos bispos e alguns abades, simbolizando a chama do Espírito Santo sobre o pastor da diocese.',
+    relatedTerms: ['Bispo', 'Vestes Litúrgicas', 'Símbolos']
+  },
+  {
+    id: 'batina',
+    term: 'Batina',
+    definition: 'Veste longa usada sob a cota ou sobrepeliz branca. Geralmente preta para diáconos e presbíteros, vermelha para acólitos e roxa para bispos. Originalmente era a roupa de passeio dos clérigos.',
+    relatedTerms: ['Vestes Litúrgicas', 'Clero']
+  },
+  {
+    id: 'castiçal',
+    term: 'Castiçal',
+    definition: 'Utensílio que serve de suporte para velas, normalmente utilizado sobre o altar.',
+    relatedTerms: ['Altar', 'Liturgia']
+  },
+  {
+    id: 'cirio-pascal',
+    term: 'Círio Pascal',
+    definition: 'Grande vela de cera utilizada nos eventos da Páscoa. Marcada com o ano e grampos (referência à crucificação), é acesa em todos os ofícios desde a Páscoa até a Ascensão e colocada ao lado do altar.',
+    relatedTerms: ['Páscoa', 'Liturgia', 'Símbolos']
+  },
+  {
+    id: 'turibulo',
+    term: 'Turíbulo',
+    definition: 'Utensílio litúrgico usado em missas solenes para incensar o altar, o sacerdote, o evangelho e a congregação durante a celebração.',
+    relatedTerms: ['Incenso', 'Liturgia', 'Alta Igreja']
+  },
+  {
+    id: 'rosa-ventos',
+    term: 'Rosa dos Ventos',
+    definition: 'Emblema da Comunhão Anglicana, desenhado por Edward N. West (1954). No centro, a cruz de São Jorge rodeada por "A verdade vos libertará" em grego. Acima, a mitra episcopal. As pontas simbolizam a extensão da Igreja por toda parte.',
+    relatedTerms: ['Comunhão Anglicana', 'Símbolos', 'Identidade']
+  },
+  {
+    id: 'alfa-omega',
+    term: 'Alfa e Ômega',
+    definition: 'Primeira e última letra do alfabeto grego (Α Ω), aplicadas a Cristo como o princípio e o fim de todas as coisas.',
+    relatedTerms: ['Cristo', 'Símbolos', 'Apocalipse']
+  },
+  {
+    id: 'ichthys',
+    term: 'ICHTHYS',
+    definition: 'Acróstico das letras gregas iniciais de "Jesus Cristo, Filho de Deus, Salvador". Como ichthys significa "peixe" em grego, o peixe tornou-se um símbolo de Cristo desde muito cedo no cristianismo.',
+    relatedTerms: ['Cristo', 'Símbolos', 'Igreja Primitiva']
+  },
+  {
+    id: 'grande-cisma',
+    term: 'Grande Cisma',
+    definition: 'Divisão da Igreja Católica em 1054 entre a Igreja Católica Apostólica Romana e a Igreja Católica Apostólica Ortodoxa. Ocorreu quando o Bispo de Roma (Leão IX) excomungou o Patriarca de Constantinopla (Miguel Cerulário) e vice-versa.',
+    relatedTerms: ['História', 'Ortodoxia', 'Cisma']
+  },
+  {
+    id: 'uso-sarum',
+    term: 'Uso de Sarum',
+    definition: 'Rito Romano modificado segundo o uso da Catedral de Salisbury. Era o rito inglês antes da Reforma e serviu de base para o primeiro Livro de Oração Comum (1549) de Cranmer.',
+    relatedTerms: ['Liturgia', 'História', 'Livro de Oração Comum']
+  },
+  {
+    id: 'movimento-oxford',
+    term: 'Movimento de Oxford',
+    definition: 'Também chamado Tractarianismo, teve origem em 1833 quando John Keble pregou contra a ingerência do Estado na Igreja. Opunha-se ao liberalismo teológico e ao domínio estatal. Liderado por Newman, Keble e Pusey, enfatizou a sucessão apostólica e a tradição católica.',
+    relatedTerms: ['Anglo-Católicos', 'História', 'Tractarianismo']
+  },
+  {
+    id: 'puritanismo',
+    term: 'Puritanismo',
+    definition: 'Movimento calvinista do século XVI que buscava maior purificação na liturgia, governo, doutrina e vida da Igreja Anglicana. Deu origem aos congregacionais e presbiterianos.',
+    relatedTerms: ['Reforma', 'Calvinismo', 'História']
+  },
+  {
+    id: 'comunhao-porvoo',
+    term: 'Comunhão de Porvoo',
+    definition: 'Pacto estabelecido em 1992 (Porvoo Common Statement) unindo 15 Igrejas do nordeste da Europa e Península Ibérica em comunhão plena, incluindo igrejas anglicanas e luteranas.',
+    relatedTerms: ['Ecumenismo', 'Luteranos', 'Europa']
+  },
+  {
+    id: 'revolucao-gloriosa',
+    term: 'Revolução Gloriosa',
+    definition: 'Evento não violento (1688-1689) que removeu o Rei James II (católico) e colocou Guilherme III e Maria Stuart no trono. Resultou no fim do absolutismo monárquico e aumento do poder do parlamento na Inglaterra.',
+    relatedTerms: ['História', 'Inglaterra', 'Monarquia']
+  },
+  {
+    id: 'completas',
+    term: 'Completas',
+    definition: 'Última das Horas Litúrgicas de cada dia, formando a oração da noite. Seus elementos (Nunc Dimittis e a coleta "alivia nossa escuridão") foram inseridos na Oração Vespertina anglicana.',
+    relatedTerms: ['Liturgia das Horas', 'Oração', 'Ofício Divino']
+  },
+  {
+    id: 'horas-canonicas',
+    term: 'Horas Canônicas',
+    definition: 'Oito ofícios diários guardados pelos monges: Vigília/Matinas (meia-noite), Laudes (amanhecer), Prima (nascer do sol), Tércia (9h), Sexta (meio-dia), Nona (15h), Vésperas (18h) e Completas (21h). Cranmer as condensou nas Orações Matutina e Vespertina.',
+    relatedTerms: ['Liturgia das Horas', 'Monasticismo', 'Oração']
   }
 ]

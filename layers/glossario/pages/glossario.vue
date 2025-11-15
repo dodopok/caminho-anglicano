@@ -202,15 +202,15 @@ const filteredTerms = computed(() => {
 // SEO Meta Tags
 useSeoMeta({
   title: 'Glossário Anglicano - Termos e Conceitos da Tradição Anglicana',
-  description: 'Explore mais de 150 termos e conceitos importantes da tradição anglicana brasileira. Guia completo de liturgia, sacramentos, orações, estrutura eclesiástica e práticas da igreja anglicana.',
+  description: 'Explore mais de 200 termos e conceitos da tradição anglicana brasileira. Guia completo com liturgia, sacramentos, história, figuras importantes, teologia e práticas da igreja anglicana no Brasil e no mundo.',
   ogTitle: 'Glossário Anglicano - Caminho Anglicano',
-  ogDescription: 'Explore mais de 150 termos e conceitos importantes da tradição anglicana brasileira. Guia completo de liturgia, sacramentos, orações, estrutura eclesiástica e práticas da igreja anglicana.',
+  ogDescription: 'Explore mais de 200 termos e conceitos da tradição anglicana brasileira. Guia completo com liturgia, sacramentos, história, figuras importantes, teologia e práticas da igreja anglicana.',
   ogImage: `${siteUrl}/og-image-glossario.png`,
   ogUrl: `${siteUrl}/glossario`,
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Glossário Anglicano - Caminho Anglicano',
-  twitterDescription: 'Explore mais de 150 termos e conceitos importantes da tradição anglicana brasileira.',
+  twitterDescription: 'Explore mais de 200 termos da tradição anglicana brasileira com história, liturgia e teologia.',
   twitterImage: `${siteUrl}/og-image-glossario.png`,
 })
 
