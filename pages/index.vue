@@ -123,19 +123,19 @@ useHead({
         />
 
         <BaseNavigationCard
-          to="/locs"
-          icon="book"
-          title="Livro de Oração Comum"
-          description="Tenha acesso a várias edições do Livro de Oração Comum digitalmente"
-          ariaLabel="Acessar o Livro de Oração Comum"
-        />
-
-        <BaseNavigationCard
           to="/glossario"
           icon="book"
           title="Glossário Anglicano"
           description="Explore termos e conceitos da tradição anglicana"
           ariaLabel="Acessar o Glossário Anglicano"
+        />
+
+        <BaseNavigationCard
+          to="/locs"
+          icon="book"
+          title="Livro de Oração Comum"
+          description="Tenha acesso a várias edições do Livro de Oração Comum digitalmente"
+          ariaLabel="Acessar o Livro de Oração Comum"
         />
 
         <BaseNavigationCard
