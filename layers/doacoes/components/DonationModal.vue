@@ -142,7 +142,7 @@
       </div>
 
       <!-- Formulário de dados -->
-      <form @submit.prevent="handleSubmit" class="space-y-4">
+      <form class="space-y-4" @submit.prevent="handleSubmit">
         <div class="grid grid-cols-2 gap-4">
           <BaseInput
             v-model="formData.name"
@@ -277,7 +277,7 @@ const selectAmount = (value: number) => {
 
 const formatCurrency = (event: Event) => {
   const input = event.target as HTMLInputElement
-  let value = input.value.replace(/\D/g, '')
+  const value = input.value.replace(/\D/g, '')
 
   if (value === '') {
     customAmountCents.value = 0

@@ -109,7 +109,7 @@ useHead({
     <!-- Loading state -->
     <div v-if="loading" class="flex items-center justify-center min-h-screen">
       <div class="text-center">
-        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto mb-4"></div>
+        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto mb-4"/>
         <p class="text-gray-600">Carregando...</p>
       </div>
     </div>
@@ -158,7 +158,7 @@ useHead({
               <div
                 class="w-1 h-12 rounded mr-4"
                 :style="{ backgroundColor: jurisdiction.color }"
-              ></div>
+              />
               <div>
                 <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">
                   {{ jurisdiction.name }}
@@ -251,7 +251,7 @@ useHead({
                 class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden group"
               >
                 <!-- Color bar -->
-                <div class="h-2" :style="{ backgroundColor: jurisdiction.color }"></div>
+                <div class="h-2" :style="{ backgroundColor: jurisdiction.color }"/>
 
                 <div class="p-6">
                   <!-- Church name -->

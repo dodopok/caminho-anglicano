@@ -37,9 +37,9 @@
       <!-- Dismiss button -->
       <button
         v-if="dismissible"
-        @click="handleDismiss"
         class="ml-3 flex-shrink-0 inline-flex rounded-md p-1.5 focus:outline-none focus:ring-2 focus:ring-offset-2"
         :class="dismissClass"
+        @click="handleDismiss"
       >
         <span class="sr-only">Fechar</span>
         <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
@@ -61,6 +61,8 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   type: 'info',
+  title: '',
+  message: '',
   dismissible: false,
   modelValue: true,
 })

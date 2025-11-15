@@ -3,18 +3,18 @@
     <div class="relative">
       <input
         v-model="searchQuery"
-        @input="handleSearchInput"
         type="text"
         placeholder="Buscar termos..."
         class="w-full px-4 py-3 pr-24 rounded-lg border border-slate-300 focus:border-slate-500 focus:ring-2 focus:ring-slate-200 outline-none transition-all"
         aria-label="Buscar termos do glossário"
-      />
+        @input="handleSearchInput"
+      >
       <div class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-2">
         <button
           v-if="searchQuery"
-          @click="clearSearch"
           class="px-3 py-1.5 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded transition-colors"
           aria-label="Limpar busca"
+          @click="clearSearch"
         >
           Limpar
         </button>

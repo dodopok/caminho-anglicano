@@ -7,6 +7,11 @@
     "strict": false
   },
   "exclude": [
-    "scripts/**/*"
+    "scripts/**/*",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "e2e/**/*",
+    "vitest.config.ts",
+    "playwright.config.ts"
   ]
 }

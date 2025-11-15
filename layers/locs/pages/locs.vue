@@ -42,7 +42,7 @@
                 :alt="`Capa de ${loc.title}`"
                 class="w-full h-full object-cover"
                 @error="handleImageError"
-              />
+              >
               <svg
                 v-else
                 class="w-16 h-16 text-slate-400"

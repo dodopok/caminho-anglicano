@@ -18,8 +18,10 @@ onMounted(() => {
   // Check if script already exists
   if (document.querySelector('script[src*="instagram.com/embed.js"]')) {
     // If exists, just process the embeds
-    if ((window as any).instgrm) {
-      (window as any).instgrm.Embeds.process()
+    const instgrm = (window as unknown as Record<string, unknown>).instgrm as Record<string, unknown> | undefined
+    const embeds = instgrm?.Embeds as Record<string, unknown> | undefined
+    if (typeof embeds?.process === 'function') {
+      embeds.process()
     }
     return
   }

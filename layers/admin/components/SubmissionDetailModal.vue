@@ -15,8 +15,8 @@
           </div>
         </div>
         <button
-          @click="handleClose"
           class="text-gray-400 hover:text-gray-500 transition-colors"
+          @click="handleClose"
         >
           <span class="sr-only">Fechar</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -40,7 +40,7 @@
     />
 
     <!-- Form -->
-    <form @submit.prevent="handleSave" class="space-y-6">
+    <form class="space-y-6" @submit.prevent="handleSave">
                 <!-- Nome -->
                 <BaseInput
                   v-model="formData.name"
@@ -284,12 +284,13 @@ async function handleSave() {
       throw new Error('Não autenticado')
     }
 
-    await $fetch(`/api/admin/submissions/${props.submission.id}`, {
-      method: 'PATCH' as any,
+    await ($fetch as typeof fetch)(`/api/admin/submissions/${props.submission.id}`, {
+      method: 'PATCH',
       headers: {
         Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
       },
-      body: formData.value,
+      body: JSON.stringify(formData.value),
     })
 
     successMessage.value = 'Alterações salvas com sucesso!'
@@ -297,8 +298,9 @@ async function handleSave() {
       emit('success')
     }, 1000)
   }
-  catch (error: any) {
-    errorMessage.value = error.message || 'Erro ao salvar alterações'
+  catch (error: unknown) {
+    const { message } = parseError(error)
+    errorMessage.value = message || 'Erro ao salvar alterações'
   }
   finally {
     isLoading.value = false
@@ -321,12 +323,13 @@ async function handleApprove() {
     }
 
     // Save any changes first
-    await $fetch(`/api/admin/submissions/${props.submission.id}`, {
-      method: 'PATCH' as any,
+    await ($fetch as typeof fetch)(`/api/admin/submissions/${props.submission.id}`, {
+      method: 'PATCH',
       headers: {
         Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
       },
-      body: formData.value,
+      body: JSON.stringify(formData.value),
     })
 
     // Then approve
@@ -343,8 +346,8 @@ async function handleApprove() {
       handleClose()
     }, 1500)
   }
-  catch (error: any) {
-    errorMessage.value = error.data?.message || error.message || 'Erro ao aprovar submissão'
+  catch (error: unknown) {
+    errorMessage.value = getErrorMessage(error, 'Erro ao aprovar submissão')
   }
   finally {
     isLoading.value = false
@@ -384,8 +387,9 @@ async function handleReject() {
       handleClose()
     }, 1500)
   }
-  catch (error: any) {
-    errorMessage.value = error.message || 'Erro ao rejeitar submissão'
+  catch (error: unknown) {
+    const { message } = parseError(error)
+    errorMessage.value = message || 'Erro ao rejeitar submissão'
   }
   finally {
     isLoading.value = false

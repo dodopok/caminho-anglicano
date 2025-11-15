@@ -1,8 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
-import { BulkChurchDataSchema } from '~/layers/admin/server/utils/validation'
-import { rateLimit, RateLimits } from '~/layers/admin/server/utils/rateLimit'
+import { rateLimit } from '~/layers/admin/server/utils/rateLimit'
 import { sanitizeForLog } from '~/layers/admin/server/utils/sanitization'
-import { sendTelegramNotification } from '~/layers/admin/server/utils/telegram'
+import { sendTelegramNotification, type BulkSubmissionData } from '~/layers/admin/server/utils/telegram'
 
 export default defineEventHandler(async (event) => {
   // Apply strict rate limiting for public bulk submissions (even stricter)
@@ -46,7 +45,7 @@ export default defineEventHandler(async (event) => {
 
     // Envia notificação para o Telegram (não bloqueia o fluxo principal)
     if (data) {
-      sendTelegramNotification('bulk_submission', data as any).catch((err) => {
+      sendTelegramNotification('bulk_submission', data as BulkSubmissionData).catch((err) => {
         console.error('Erro ao enviar notificação do Telegram:', err)
       })
     }

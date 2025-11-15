@@ -119,17 +119,10 @@ async function handleSubmit() {
       emit('success')
       handleClose()
     }, 2500)
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Error submitting church:', error)
     toastType.value = 'error'
-    
-    // Check for rate limit error (429)
-    if (error?.response?.status === 429 || error?.statusCode === 429) {
-      toastMessage.value = 'Você enviou muitas solicitações. Por favor, aguarde alguns minutos antes de tentar novamente.'
-    } else {
-      toastMessage.value = 'Erro ao enviar a igreja. Por favor, tente novamente.'
-    }
-    
+    toastMessage.value = getErrorMessage(error, 'Erro ao enviar a igreja. Por favor, tente novamente.')
     showToast.value = true
   } finally {
     isSubmitting.value = false
@@ -163,9 +156,9 @@ watch(() => props.isOpen, (isOpen) => {
             </h2>
             <button
               type="button"
-              @click="handleClose"
               class="text-gray-400 hover:text-gray-600 transition-colors"
               aria-label="Fechar modal"
+              @click="handleClose"
             >
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -173,7 +166,7 @@ watch(() => props.isOpen, (isOpen) => {
             </button>
           </div>
 
-          <form @submit.prevent="handleSubmit" class="p-6 space-y-4">
+          <form class="p-6 space-y-4" @submit.prevent="handleSubmit">
             <div>
               <label for="jurisdiction" class="block text-sm font-medium text-gray-700 mb-1">
                 Jurisdição <span class="text-red-500">*</span>
@@ -355,8 +348,8 @@ watch(() => props.isOpen, (isOpen) => {
             <div class="flex justify-end gap-3 pt-4 border-t border-gray-200">
               <button
                 type="button"
-                @click="handleClose"
                 class="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors"
+                @click="handleClose"
               >
                 Cancelar
               </button>

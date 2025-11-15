@@ -82,7 +82,7 @@ const breadcrumbs = computed(() => {
     <div
       class="h-2"
       :style="{ backgroundColor: church.jurisdiction?.color || '#6366f1' }"
-    ></div>
+    />
 
     <!-- Breadcrumb -->
     <nav class="px-6 py-3 bg-gray-50 border-b border-gray-200">

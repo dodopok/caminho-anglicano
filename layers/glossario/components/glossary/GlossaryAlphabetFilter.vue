@@ -3,7 +3,6 @@
     <button
       v-for="letter in alphabet"
       :key="letter"
-      @click="handleLetterClick(letter)"
       :class="[
         'px-3 py-1.5 rounded-md text-sm font-medium transition-all',
         selectedLetter === letter
@@ -12,6 +11,7 @@
       ]"
       :aria-pressed="selectedLetter === letter"
       :aria-label="`Filtrar por letra ${letter}`"
+      @click="handleLetterClick(letter)"
     >
       {{ letter }}
     </button>

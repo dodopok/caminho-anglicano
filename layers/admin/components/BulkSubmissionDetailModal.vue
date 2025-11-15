@@ -639,7 +639,8 @@ async function handleSave() {
     showToast.value = true
   }
   catch (error: unknown) {
-    errorMessage.value = error instanceof Error ? error.message : 'Erro ao salvar alterações'
+    const { message } = parseError(error)
+    errorMessage.value = message || 'Erro ao salvar alterações'
     console.error('Error saving bulk submission:', error)
   }
   finally {
@@ -668,11 +669,6 @@ async function handleApprove() {
     showToast.value = true
     return
   }
-
-  // Show confirmation with preview
-  const churchList = parsedChurches.value
-    .map((c, i) => `${i + 1}. ${c.name} - ${c.jurisdiction}`)
-    .join('\n')
 
   const confirmed = confirm(
     `Tem certeza que deseja processar e criar as igrejas'}?`,
@@ -722,8 +718,8 @@ async function handleApprove() {
     }, 2000)
   }
   catch (error: unknown) {
-    const message = error instanceof Error ? error.message : 'Erro ao aprovar submissão'
-    errorMessage.value = message
+    const { message } = parseError(error)
+    errorMessage.value = message || 'Erro ao aprovar submissão'
     console.error('Error approving bulk submission:', error)
   }
   finally {
@@ -766,8 +762,8 @@ async function handleApproveNoInsert() {
     }, 2000)
   }
   catch (error: unknown) {
-    const message = error instanceof Error ? error.message : 'Erro ao aprovar submissão'
-    errorMessage.value = message
+    const { message } = parseError(error)
+    errorMessage.value = message || 'Erro ao aprovar submissão'
     console.error('Error approving bulk submission without insert:', error)
   }
   finally {
@@ -805,8 +801,8 @@ async function handleReject() {
     emit('close')
   }
   catch (error: unknown) {
-    const message = error instanceof Error ? error.message : 'Erro ao rejeitar submissão'
-    errorMessage.value = message
+    const { message } = parseError(error)
+    errorMessage.value = message || 'Erro ao rejeitar submissão'
     console.error('Error rejecting bulk submission:', error)
   }
   finally {

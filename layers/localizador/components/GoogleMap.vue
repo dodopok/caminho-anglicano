@@ -1,6 +1,30 @@
 <script setup lang="ts">
 import type { Church, ChurchSchedule } from '../types/church'
 
+// Google Maps type definitions (using unknown to avoid typing conflicts)
+interface GoogleMap {
+  fitBounds: (bounds: unknown) => void
+  setZoom: (zoom: number) => void
+  getZoom: () => number
+}
+
+interface GoogleMarker {
+  map: GoogleMap | null
+  position: { lat: number; lng: number }
+  title: string
+  content: HTMLElement
+  gmpClickable: boolean
+}
+
+interface GoogleInfoWindow {
+  setContent: (content: string) => void
+  open: (options: { map: GoogleMap; anchor: GoogleMarker } | GoogleMap, marker?: GoogleMarker) => void
+}
+
+interface GoogleBounds {
+  extend: (location: { lat: number; lng: number }) => void
+}
+
 interface Props {
   churches: Church[]
   selectedChurchId?: string | null
@@ -15,12 +39,12 @@ const emit = defineEmits<{
 const config = useRuntimeConfig()
 const { getJurisdictionById, getJurisdictionColor } = useJurisdictions()
 const mapContainer = ref<HTMLElement | null>(null)
-const mapInstance = shallowRef<any>(null)
-const markers = ref<any[]>([])
-const userMarker = ref<any>(null)
-const infoWindow = ref<any>(null)
+const mapInstance = shallowRef<GoogleMap | null>(null)
+const markers = ref<GoogleMarker[]>([])
+const userMarker = ref<GoogleMarker | null>(null)
+const infoWindow = ref<GoogleInfoWindow | null>(null)
 
-function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
+function _calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
   const earthRadiusKm = 6371
   const dLat = degreesToRadians(lat2 - lat1)
   const dLon = degreesToRadians(lon2 - lon1)
@@ -189,7 +213,7 @@ function loadGoogleMapsScript(): Promise<void> {
   if (typeof window === 'undefined') return Promise.reject()
 
   return new Promise((resolve, reject) => {
-    if ((window as any).google?.maps?.Map) {
+    if ((window as unknown as Record<string, unknown>).google) {
       resolve()
       return
     }
@@ -199,7 +223,7 @@ function loadGoogleMapsScript(): Promise<void> {
     script.async = true
     script.defer = true
     script.onload = () => {
-      if ((window as any).google?.maps?.Map) {
+      if ((window as unknown as Record<string, unknown>).google) {
         resolve()
       } else {
         reject(new Error('Google Maps failed to load'))
@@ -216,10 +240,14 @@ async function initializeMap() {
   try {
     await loadGoogleMapsScript()
 
-    const google = (window as any).google
+    const google = (window as unknown as Record<string, unknown>).google as Record<string, unknown>
     const brazilCenter = { lat: -14.235004, lng: -51.92528 }
 
-    mapInstance.value = new google.maps.Map(mapContainer.value, {
+    const googleMaps = google.maps as Record<string, unknown>
+    const MapConstructor = googleMaps.Map as new (...args: unknown[]) => GoogleMap
+    const InfoWindowConstructor = googleMaps.InfoWindow as new (...args: unknown[]) => GoogleInfoWindow
+
+    mapInstance.value = new MapConstructor(mapContainer.value, {
       center: brazilCenter,
       zoom: 4,
       mapTypeControl: false,
@@ -229,7 +257,7 @@ async function initializeMap() {
     })
 
     // Create InfoWindow instance
-    infoWindow.value = new google.maps.InfoWindow()
+    infoWindow.value = new InfoWindowConstructor()
 
     updateMarkers()
   } catch (error) {
@@ -240,8 +268,13 @@ async function initializeMap() {
 function updateUserMarker() {
   if (!mapInstance.value || typeof window === 'undefined') return
 
-  const google = (window as any).google
+  const windowWithGoogle = window as unknown as Record<string, unknown>
+  const google = windowWithGoogle.google as Record<string, unknown> | undefined
   if (!google?.maps) return
+
+  const googleMaps = google.maps as Record<string, unknown>
+  const markerNamespace = googleMaps.marker as Record<string, unknown>
+  const AdvancedMarkerElementConstructor = markerNamespace.AdvancedMarkerElement as new (...args: unknown[]) => GoogleMarker
 
   // Remove existing user marker
   if (userMarker.value) {
@@ -260,7 +293,7 @@ function updateUserMarker() {
       </svg>
     `
 
-    userMarker.value = new google.maps.marker.AdvancedMarkerElement({
+    userMarker.value = new AdvancedMarkerElementConstructor({
       position: { lat: props.userLocation.lat, lng: props.userLocation.lng },
       map: mapInstance.value,
       title: 'Você está aqui',
@@ -273,16 +306,25 @@ function updateUserMarker() {
 function updateMarkers() {
   if (!mapInstance.value || typeof window === 'undefined') return
 
-  const google = (window as any).google
+  const google = (window as unknown as Record<string, unknown>).google as Record<string, unknown> | undefined
   if (!google?.maps) return
 
+  const googleMaps = google.maps as Record<string, unknown>
+  const LatLngBoundsConstructor = googleMaps.LatLngBounds as new (...args: unknown[]) => GoogleBounds
+  const marker = googleMaps.marker as Record<string, unknown>
+  const PinElementConstructor = marker.PinElement as new (...args: unknown[]) => Record<string, unknown>
+  const AdvancedMarkerElementConstructor = marker.AdvancedMarkerElement as new (...args: unknown[]) => GoogleMarker
+  const googleEvent = googleMaps.event as Record<string, unknown>
+  const addListener = googleEvent.addListener as (...args: unknown[]) => unknown
+  const removeListener = googleEvent.removeListener as (...args: unknown[]) => void
+
   // Remove all existing markers (AdvancedMarkerElement uses different API)
-  markers.value.forEach((marker: any) => {
+  markers.value.forEach((marker) => {
     marker.map = null // Remove from map
   })
   markers.value.length = 0 // Clear the array
 
-  const bounds = new google.maps.LatLngBounds()
+  const bounds = new LatLngBoundsConstructor()
   const MAX_DISTANCE_KM = 20 // Zoom to show 20km radius when user location is set
 
   // If user location is set, create bounds for 20km radius around user
@@ -301,8 +343,8 @@ function updateMarkers() {
     bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng + radiusInDegrees / Math.cos(props.userLocation.lat * Math.PI / 180) })
     bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng - radiusInDegrees / Math.cos(props.userLocation.lat * Math.PI / 180) })
   }
-  
-  props.churches.forEach((church, index) => {
+
+  props.churches.forEach((church, _index) => {
     try {
       const lat = church.latitude
       const lng = church.longitude
@@ -314,7 +356,7 @@ function updateMarkers() {
       }
 
       // Create a custom pin element with color
-      const pinElement = new google.maps.marker.PinElement({
+      const pinElement = new PinElementConstructor({
         background: getJurisdictionColor(church.jurisdictionId),
         borderColor: '#ffffff',
         glyphColor: '#ffffff',
@@ -322,16 +364,16 @@ function updateMarkers() {
         glyph: ''
       })
 
-      const marker = new google.maps.marker.AdvancedMarkerElement({
+      const marker = new AdvancedMarkerElementConstructor({
         position: { lat, lng },
         map: mapInstance.value,
         title: church.name,
-        content: pinElement.element,
+        content: (pinElement as Record<string, unknown>).element,
         gmpClickable: true
       })
 
       // Use google.maps.event.addListener for AdvancedMarkerElement
-      google.maps.event.addListener(marker, 'click', () => {
+      addListener(marker, 'click', () => {
         // Open InfoWindow with church details
         if (infoWindow.value) {
           infoWindow.value.setContent(createInfoWindowContent(church))
@@ -365,24 +407,24 @@ function updateMarkers() {
 
     // For user location, set a reasonable zoom level
     if (props.userLocation) {
-      const listener = google.maps.event.addListener(mapInstance.value, 'idle', () => {
-        const zoom = mapInstance.value.getZoom()
+      const listener = addListener(mapInstance.value, 'idle', () => {
+        const zoom = mapInstance.value?.getZoom() ?? 0
         // Limit zoom between 11 and 14 for 20km radius view
         if (zoom > 14) {
-          mapInstance.value.setZoom(14)
+          mapInstance.value?.setZoom(14)
         } else if (zoom < 11) {
-          mapInstance.value.setZoom(11)
+          mapInstance.value?.setZoom(11)
         }
-        google.maps.event.removeListener(listener)
+        removeListener(listener)
       })
     } else {
       // For all churches view, prevent zooming in too much
-      const listener = google.maps.event.addListener(mapInstance.value, 'idle', () => {
-        const zoom = mapInstance.value.getZoom()
+      const listener = addListener(mapInstance.value, 'idle', () => {
+        const zoom = mapInstance.value?.getZoom() ?? 0
         if (zoom > 15) {
-          mapInstance.value.setZoom(15)
+          mapInstance.value?.setZoom(15)
         }
-        google.maps.event.removeListener(listener)
+        removeListener(listener)
       })
     }
   }

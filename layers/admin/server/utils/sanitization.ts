@@ -21,22 +21,22 @@ export function sanitizeHTML(input: string | null | undefined): string {
  * Sanitize object recursively
  * Applies sanitization to all string values
  */
-export function sanitizeObject<T extends Record<string, any>>(obj: T): T {
+export function sanitizeObject<T extends Record<string, unknown>>(obj: T): T {
   const sanitized = { ...obj }
 
   for (const key in sanitized) {
     const value = sanitized[key]
 
     if (typeof value === 'string') {
-      sanitized[key] = sanitizeHTML(value) as any
+      sanitized[key] = sanitizeHTML(value) as T[Extract<keyof T, string>]
     }
     else if (value && typeof value === 'object' && !Array.isArray(value)) {
-      sanitized[key] = sanitizeObject(value)
+      sanitized[key] = sanitizeObject(value as Record<string, unknown>) as T[Extract<keyof T, string>]
     }
     else if (Array.isArray(value)) {
       sanitized[key] = value.map(item =>
         typeof item === 'string' ? sanitizeHTML(item) : item,
-      ) as any
+      ) as T[Extract<keyof T, string>]
     }
   }
 
@@ -62,7 +62,7 @@ export function sanitizeError(error: unknown): string {
  * Sanitize log data to prevent sensitive information exposure
  * Removes common sensitive fields before logging
  */
-export function sanitizeForLog(data: any): any {
+export function sanitizeForLog(data: unknown): unknown {
   if (!data || typeof data !== 'object') {
     return data
   }
@@ -80,7 +80,8 @@ export function sanitizeForLog(data: any): any {
     'googleMapsApiKey',
   ]
 
-  const sanitized = Array.isArray(data) ? [...data] : { ...data }
+  const dataObj = data as Record<string, unknown>
+  const sanitized = Array.isArray(dataObj) ? [...dataObj] : { ...dataObj }
 
   for (const key in sanitized) {
     const lowerKey = key.toLowerCase()

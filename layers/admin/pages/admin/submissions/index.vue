@@ -125,8 +125,8 @@
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                   <button
-                    @click="openModal(submission)"
                     class="text-blue-600 hover:text-blue-700 transition-colors"
+                    @click="openModal(submission)"
                   >
                     Ver Detalhes
                   </button>
@@ -207,8 +207,9 @@ async function loadSubmissions() {
 
     submissions.value = data.submissions
   }
-  catch (error: any) {
-    errorMessage.value = error.message || 'Erro ao carregar submissões'
+  catch (error: unknown) {
+    const { message } = parseError(error)
+    errorMessage.value = message || 'Erro ao carregar submissões'
     console.error('Error loading submissions:', error)
   }
   finally {

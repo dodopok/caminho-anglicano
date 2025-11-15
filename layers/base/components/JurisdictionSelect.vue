@@ -5,9 +5,9 @@
     </label>
     <button
       type="button"
-      @click.stop="toggleDropdown"
       :class="buttonClass"
       class="w-full px-3 py-2 text-sm border rounded focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white text-left flex items-center justify-between transition-colors"
+      @click.stop="toggleDropdown"
     >
       <span class="flex items-center gap-2">
         <span
@@ -36,9 +36,9 @@
       >
         <button
           type="button"
-          @click="selectJurisdiction(null)"
           class="w-full px-3 py-2 text-sm text-left hover:bg-gray-50 transition-colors flex items-center gap-2"
           :class="{ 'bg-gray-50 font-medium': !modelValue }"
+          @click="selectJurisdiction(null)"
         >
           <span>Todas</span>
         </button>
@@ -46,9 +46,9 @@
           v-for="jurisdiction in jurisdictions"
           :key="jurisdiction.id"
           type="button"
-          @click="selectJurisdiction(jurisdiction.id)"
           class="w-full px-3 py-2 text-sm text-left hover:bg-gray-50 transition-colors flex items-center gap-2"
           :class="{ 'bg-gray-50 font-medium': modelValue === jurisdiction.id }"
+          @click="selectJurisdiction(jurisdiction.id)"
         >
           <span
             class="w-3 h-3 rounded-full flex-shrink-0"

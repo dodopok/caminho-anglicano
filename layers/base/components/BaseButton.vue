@@ -40,6 +40,7 @@ const props = withDefaults(defineProps<Props>(), {
   variant: 'primary',
   size: 'md',
   type: 'button',
+  text: '',
   disabled: false,
   loading: false,
   loadingText: 'Carregando...',

@@ -40,11 +40,11 @@ export default defineEventHandler(async (event) => {
       count: count || 0,
     }
   }
-  catch (error: any) {
+  catch (error: unknown) {
     console.error('Error fetching bulk submissions:', error)
     throw createError({
       statusCode: 500,
-      message: error.message || 'Failed to fetch bulk submissions',
+      message: error instanceof Error ? error.message : 'Failed to fetch bulk submissions',
     })
   }
 })

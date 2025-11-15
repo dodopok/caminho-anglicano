@@ -214,7 +214,8 @@ async function loadSubmissions() {
     submissions.value = data.submissions
   }
   catch (error: unknown) {
-    errorMessage.value = error instanceof Error ? error.message : 'Erro ao carregar submissões'
+    const { message } = parseError(error)
+    errorMessage.value = message || 'Erro ao carregar submissões'
     console.error('Error loading bulk submissions:', error)
   }
   finally {

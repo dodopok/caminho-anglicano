@@ -8,7 +8,7 @@ interface Emits {
   success: []
 }
 
-const props = defineProps<Props>()
+const _props = defineProps<Props>()
 const emit = defineEmits<Emits>()
 
 const { submitBulkChurches } = useSubmissions()
@@ -73,17 +73,10 @@ async function handleSubmit() {
       emit('success')
       handleClose()
     }, 2500)
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Error submitting bulk churches:', error)
     toastType.value = 'error'
-    
-    // Check for rate limit error (429)
-    if (error?.response?.status === 429 || error?.statusCode === 429) {
-      toastMessage.value = 'Você enviou muitas solicitações. Por favor, aguarde alguns minutos antes de tentar novamente.'
-    } else {
-      toastMessage.value = 'Erro ao enviar as igrejas. Por favor, tente novamente.'
-    }
-    
+    toastMessage.value = getErrorMessage(error, 'Erro ao enviar as igrejas. Por favor, tente novamente.')
     showToast.value = true
   } finally {
     isSubmitting.value = false
@@ -111,9 +104,9 @@ async function handleSubmit() {
             </h2>
             <button
               type="button"
-              @click="handleClose"
               class="text-gray-400 hover:text-gray-600 transition-colors"
               aria-label="Fechar modal"
+              @click="handleClose"
             >
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -121,7 +114,7 @@ async function handleSubmit() {
             </button>
           </div>
 
-          <form @submit.prevent="handleSubmit" class="p-6 space-y-4">
+          <form class="p-6 space-y-4" @submit.prevent="handleSubmit">
             <div class="bg-gray-50 border border-gray-200 rounded p-4">
               <h3 class="text-base font-semibold text-gray-900 mb-2">
                 Instruções
@@ -158,8 +151,8 @@ async function handleSubmit() {
             <div class="flex justify-end gap-3 pt-4 border-t border-gray-200">
               <button
                 type="button"
-                @click="handleClose"
                 class="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors"
+                @click="handleClose"
               >
                 Cancelar
               </button>

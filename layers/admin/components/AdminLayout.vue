@@ -17,8 +17,8 @@
               {{ user?.email }}
             </span>
             <button
-              @click="handleSignOut"
               class="text-sm text-red-600 hover:text-red-700 font-medium transition-colors"
+              @click="handleSignOut"
             >
               Sair
             </button>

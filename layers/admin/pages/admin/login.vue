@@ -92,7 +92,7 @@ definePageMeta({
   layout: false,
 })
 
-const { signIn, loading: authLoading } = useAdminAuth()
+const { signIn, loading: _authLoading } = useAdminAuth()
 
 const email = ref('')
 const password = ref('')

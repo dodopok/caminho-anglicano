@@ -30,8 +30,8 @@ const props = withDefaults(defineProps<Props>(), {
 
 const config = useRuntimeConfig()
 const mapContainer = ref<HTMLDivElement>()
-const map = ref<any>()
-const marker = ref<any>()
+const map = ref<unknown>()
+const marker = ref<unknown>()
 const isLoading = ref(false)
 
 // Initialize map when coordinates are available
@@ -51,7 +51,10 @@ function loadGoogleMapsScript(): Promise<void> {
   if (typeof window === 'undefined') return Promise.reject()
 
   return new Promise((resolve, reject) => {
-    if ((window as any).google?.maps?.Map) {
+    const win = window as unknown as Record<string, unknown>
+    const google = win.google as Record<string, unknown> | undefined
+    const maps = google?.maps as Record<string, unknown> | undefined
+    if (maps?.Map) {
       resolve()
       return
     }
@@ -61,7 +64,10 @@ function loadGoogleMapsScript(): Promise<void> {
     script.async = true
     script.defer = true
     script.onload = () => {
-      if ((window as any).google?.maps?.Map) {
+      const win = window as unknown as Record<string, unknown>
+      const google = win.google as Record<string, unknown> | undefined
+      const maps = google?.maps as Record<string, unknown> | undefined
+      if (maps?.Map) {
         resolve()
       } else {
         reject(new Error('Google Maps failed to load'))
@@ -89,13 +95,18 @@ async function initMap() {
 
     // Create or update map
     if (!map.value) {
-      const google = (window as any).google
-      if (!google || !google.maps) {
+      const win = window as unknown as Record<string, unknown>
+      const google = win.google as Record<string, unknown> | undefined
+      const maps = google?.maps as Record<string, unknown> | undefined
+      if (!google || !maps) {
         console.error('Google Maps not loaded')
         return
       }
 
-      map.value = new google.maps.Map(mapContainer.value, {
+      const Map = maps.Map as new (element: HTMLElement, options: Record<string, unknown>) => Record<string, unknown>
+      const Marker = maps.Marker as new (options: Record<string, unknown>) => Record<string, unknown>
+
+      map.value = new Map(mapContainer.value, {
         center: position,
         zoom: props.zoom,
         disableDefaultUI: true,
@@ -103,7 +114,7 @@ async function initMap() {
         gestureHandling: 'cooperative',
       })
 
-      marker.value = new google.maps.Marker({
+      marker.value = new Marker({
         position,
         map: map.value,
         title: 'Localização',
@@ -111,9 +122,15 @@ async function initMap() {
     }
     else {
       // Update existing map
-      map.value.setCenter(position)
+      const mapObj = map.value as Record<string, unknown>
+      if (typeof mapObj.setCenter === 'function') {
+        mapObj.setCenter(position)
+      }
       if (marker.value) {
-        marker.value.setPosition(position)
+        const markerObj = marker.value as Record<string, unknown>
+        if (typeof markerObj.setPosition === 'function') {
+          markerObj.setPosition(position)
+        }
       }
     }
   }

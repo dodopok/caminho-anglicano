@@ -201,11 +201,11 @@ const formData = ref({
   postal_code: '',
   latitude: 0,
   longitude: 0,
-  schedules: [] as any[],
+  schedules: [] as string[],
   description: '',
   pastors: [] as string[],
   responsible_email: '',
-  social_media: {} as Record<string, any>,
+  social_media: {} as Record<string, string>,
 })
 
 // Helper refs
@@ -248,11 +248,11 @@ function initializeForm(church: Church) {
     postal_code: church.postal_code,
     latitude: church.latitude,
     longitude: church.longitude,
-    schedules: (church.schedules || []) as any[],
+    schedules: (church.schedules || []) as string[],
     description: church.description || '',
     pastors: church.pastors || [],
     responsible_email: church.responsible_email,
-    social_media: church.social_media || {},
+    social_media: (church.social_media as Record<string, string>) || {},
   }
 
   // Parse pastors array
@@ -267,7 +267,7 @@ function initializeForm(church: Church) {
     }
     else {
       // If elements are strings, try to parse or use as-is
-      schedulesArray.value = church.schedules.map((s: any) => {
+      schedulesArray.value = church.schedules.map((s: string) => {
         if (typeof s === 'string') {
           // Try to split "Domingo 10h" format
           const parts = s.split(' ')
@@ -295,7 +295,7 @@ function initializeForm(church: Church) {
   }
 
   // Parse social media - handle both object and nested structure
-  const sm = (church.social_media as Record<string, any>) || {}
+  const sm = (church.social_media as Record<string, string>) || {}
   socialMedia.value = {
     website: sm.website || '',
     instagram: sm.instagram || '',
@@ -351,9 +351,9 @@ async function handleSave() {
     }, 1500)
   }
   catch (error: unknown) {
-    const message = error instanceof Error ? error.message : 'Erro ao atualizar igreja'
+    const { message } = parseError(error)
     toastType.value = 'error'
-    toastMessage.value = message
+    toastMessage.value = message || 'Erro ao atualizar igreja'
     showToast.value = true
     console.error('Error updating church:', error)
   }

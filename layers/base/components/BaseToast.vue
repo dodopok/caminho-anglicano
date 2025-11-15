@@ -21,6 +21,8 @@ const iconPath = computed(() => {
       return 'M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z'
     case 'info':
       return 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+    default:
+      return 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
   }
 })
 
@@ -31,6 +33,8 @@ const bgColor = computed(() => {
     case 'error':
       return 'bg-red-50 border-red-500'
     case 'info':
+      return 'bg-blue-50 border-blue-500'
+    default:
       return 'bg-blue-50 border-blue-500'
   }
 })
@@ -43,6 +47,8 @@ const iconColor = computed(() => {
       return 'text-red-600'
     case 'info':
       return 'text-blue-600'
+    default:
+      return 'text-blue-600'
   }
 })
 
@@ -53,6 +59,8 @@ const textColor = computed(() => {
     case 'error':
       return 'text-red-800'
     case 'info':
+      return 'text-blue-800'
+    default:
       return 'text-blue-800'
   }
 })
@@ -92,9 +100,9 @@ const textColor = computed(() => {
           </div>
           <button
             type="button"
-            @click="emit('close')"
             :class="['flex-shrink-0 hover:opacity-75 transition-opacity', iconColor]"
             aria-label="Fechar"
+            @click="emit('close')"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />

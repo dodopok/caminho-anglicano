@@ -73,20 +73,22 @@ export default defineEventHandler(async (event): Promise<DonationBillingResponse
     })
 
     return response
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('[Donation] Error creating billing:', error)
 
     // Melhor tratamento de erros
-    if (error.statusCode === 401) {
+    if (error && typeof error === 'object' && 'statusCode' in error && error.statusCode === 401) {
       throw createError({
         statusCode: 500,
         message: 'Erro de autenticação com o gateway de pagamento'
       })
     }
 
+    const { statusCode, message } = parseError(error)
+
     throw createError({
-      statusCode: error.statusCode || 500,
-      message: error.data?.message || 'Erro ao processar doação. Tente novamente.'
+      statusCode: statusCode || 500,
+      message: message || 'Erro ao processar doação. Tente novamente.'
     })
   }
 })

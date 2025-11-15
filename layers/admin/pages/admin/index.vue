@@ -233,7 +233,7 @@ async function loadStats() {
 
     stats.value = data
   }
-  catch (error: any) {
+  catch (error: unknown) {
     console.error('Error loading stats:', error)
   }
   finally {
