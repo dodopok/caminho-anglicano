@@ -3,7 +3,7 @@
     <div
       v-for="term in paginatedTerms"
       :key="term.id"
-      class="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 p-5 border border-slate-200 flex flex-col"
+      class="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 p-5 border border-slate-200 flex flex-col min-h-[240px]"
     >
       <NuxtLink
         :to="`/glossario/${term.id}`"
@@ -16,7 +16,7 @@
           </svg>
         </h3>
       </NuxtLink>
-      <p class="text-sm text-slate-700 leading-relaxed mb-3 flex-grow line-clamp-4">
+      <p class="text-sm text-slate-700 leading-relaxed mb-3 flex-grow">
         {{ term.definition }}
       </p>
       <div v-if="term.relatedTerms && term.relatedTerms.length > 0" class="flex flex-wrap gap-1.5 mt-auto">
