@@ -250,13 +250,7 @@ useSeoMeta({
   twitterTitle: 'Glossário Anglicano - Caminho Anglicano',
   twitterDescription: 'Explore mais de 400 termos da tradição anglicana brasileira com história, liturgia, teologia, doutrina e práticas.',
   twitterImage: `${siteUrl}/og-image-glossario.png`,
-  robots: {
-    index: true,
-    follow: true,
-    'max-image-preview': 'large',
-    'max-snippet': -1,
-    'max-video-preview': -1
-  }
+  robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
 })
 
 // Structured Data para SEO
