@@ -121,7 +121,7 @@
           </button>
           <button
             v-if="selectedLetter"
-            @click="selectedLetter = null"
+            @click="() => { selectedLetter = null; currentPage = 1; updateURL(); }"
             class="px-3 py-1.5 rounded-md text-sm font-medium bg-red-100 text-red-700 hover:bg-red-200 transition-all"
             aria-label="Limpar filtro alfabético"
           >
@@ -141,7 +141,7 @@
       </div>
 
       <!-- Lista de termos -->
-      <div class="space-y-4">
+      <div v-if="filteredTerms.length > 0" class="space-y-4">
         <div
           v-for="term in paginatedTerms"
           :key="term.id"
@@ -358,8 +358,8 @@ const filteredTerms = computed(() => {
     )
   }
 
-  // Ordenar com prioridade para matches exatos
-  return terms.sort((a, b) => {
+  // Criar uma cópia para ordenar (não modificar o array original)
+  const sortedTerms = [...terms].sort((a, b) => {
     if (searchQuery.value) {
       const query = searchQuery.value.toLowerCase()
       const aTermLower = a.term.toLowerCase()
@@ -383,6 +383,8 @@ const filteredTerms = computed(() => {
     // Caso contrário, ordenar alfabeticamente
     return a.term.localeCompare(b.term)
   })
+
+  return sortedTerms
 })
 
 // Paginação
