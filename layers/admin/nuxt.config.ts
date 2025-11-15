@@ -1,6 +1,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
-  
+
+  routeRules: {
+    '/portal-do-douglas/**': { prerender: false }
+  },
+
   hooks: {
     'pages:extend'(pages) {
       // Remove /admin routes and create only /portal-do-douglas routes

@@ -34,12 +34,12 @@ export default defineEventHandler((event) => {
   // This is a basic CSP - you may need to adjust based on your needs
   const cspDirectives = [
     "default-src 'self'",
-    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com https://maps.gstatic.com https://www.google.com https://www.gstatic.com https://fonts.googleapis.com",
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com https://maps.gstatic.com https://www.google.com https://www.gstatic.com https://fonts.googleapis.com https://www.instagram.com https://www.googletagmanager.com https://vercel.live",
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
     "img-src 'self' data: https: blob:",
     "font-src 'self' data: https://fonts.gstatic.com",
-    "connect-src 'self' https://maps.googleapis.com https://*.supabase.co wss://*.supabase.co",
-    "frame-src 'self' https://www.google.com",
+    "connect-src 'self' https://maps.googleapis.com https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://vercel.live",
+    "frame-src 'self' https://www.google.com https://www.instagram.com",
     "object-src 'none'",
     "base-uri 'self'",
     "form-action 'self'",
