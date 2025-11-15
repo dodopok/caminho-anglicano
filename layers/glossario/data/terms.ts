@@ -3888,5 +3888,125 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Subcintório',
     definition: 'Cordão usado para prender a alva na cintura antes de colocar o cíngulo.',
     relatedTerms: ['Alva', 'Cíngulo', 'Paramentos']
+  },
+  {
+    id: 'iecb',
+    term: 'IECB',
+    definition: 'Igreja Episcopal Carismática do Brasil. Jurisdição anglicana que enfatiza a renovação carismática e a experiência pentecostal dentro da tradição episcopal.',
+    relatedTerms: ['Anglicanismo', 'Renovação Carismática', 'Movimento Pentecostal', 'Jurisdição']
+  },
+  {
+    id: 'tac',
+    term: 'TAC',
+    definition: 'Traditional Anglican Church (Igreja Anglicana Tradicional). Jurisdição anglicana de tradição mais conservadora que mantém práticas litúrgicas tradicionais.',
+    relatedTerms: ['Anglicanismo', 'Liturgia Tradicional', 'Anglo-Catolicismo', 'Jurisdição']
+  },
+  {
+    id: 'iaeb',
+    term: 'IAEB',
+    definition: 'Igreja Anglicana Episcopal do Brasil. Uma das jurisdições anglicanas brasileiras que mantém a sucessão apostólica e a tradição episcopal.',
+    relatedTerms: ['Anglicanismo', 'Sucessão Apostólica', 'Episcopado', 'Jurisdição']
+  },
+  {
+    id: 'iarb',
+    term: 'IARB',
+    definition: 'Igreja Anglicana Reformada do Brasil. Jurisdição anglicana que enfatiza os princípios da Reforma Protestante dentro da tradição anglicana.',
+    relatedTerms: ['Anglicanismo', 'Reforma Protestante', 'Baixa Igreja', 'Jurisdição']
+  },
+  {
+    id: 'icab',
+    term: 'ICAB',
+    definition: 'Igreja Cristã Anglicana no Brasil. Jurisdição anglicana brasileira que busca manter os princípios históricos do anglicanismo.',
+    relatedTerms: ['Anglicanismo', 'Via Media', 'Tradição Anglicana', 'Jurisdição']
+  },
+  {
+    id: 'independente-jurisdicao',
+    term: 'Independente',
+    definition: 'Termo usado para designar igrejas ou comunidades anglicanas que não estão formalmente vinculadas a uma jurisdição específica, mantendo autonomia local.',
+    relatedTerms: ['Jurisdição', 'Autonomia Eclesial', 'Governança', 'Jurisdição']
+  },
+  {
+    id: 'reb',
+    term: 'REB',
+    definition: 'Rede Episcopal Brasileira. Uma comunhão de igrejas enraizadas na tradição cristã e comprometidas com a missão de Deus em um mundo em transformação.',
+    relatedTerms: ['Anglicanismo', 'Comunhão', 'Ecumenismo', 'Jurisdição']
+  },
+  {
+    id: 'ieab',
+    term: 'IEAB',
+    definition: 'Igreja Episcopal Anglicana do Brasil. Membro da Comunhão Anglicana mundial, em plena comunhão com a Sé de Cantuária, sendo a maior jurisdição anglicana do país.',
+    relatedTerms: ['Comunhão Anglicana', 'Cantuária', 'Anglicanismo', 'Jurisdição']
+  },
+  {
+    id: 'ieub',
+    term: 'IEUB',
+    definition: 'Igreja Episcopal Unida do Brasil. Jurisdição anglicana brasileira que mantém a tradição episcopal e litúrgica.',
+    relatedTerms: ['Anglicanismo', 'Episcopado', 'Liturgia', 'Jurisdição']
+  },
+  {
+    id: 'iceb',
+    term: 'ICEB',
+    definition: 'Igreja Cristã Episcopal do Brasil. Jurisdição anglicana que mantém a sucessão apostólica e a tradição episcopal no contexto brasileiro.',
+    relatedTerms: ['Anglicanismo', 'Sucessão Apostólica', 'Tradição Episcopal', 'Jurisdição']
+  },
+  {
+    id: 'iab',
+    term: 'IAB',
+    definition: 'Igreja Anglicana do Brasil. Jurisdição anglicana brasileira, parte da GAFCON. Sua origem está no cisma ocorrido em 2005 dentro da IEAB, com a então Diocese do Recife e Robinson Cavalcanti.',
+    relatedTerms: ['Anglicanismo', 'Tradição Anglicana', 'GAFCON', 'Fé Cristã', 'Robinson Cavalcanti', 'Jurisdição']
+  },
+  {
+    id: 'jurisdicao',
+    term: 'Jurisdição',
+    definition: 'Autoridade eclesiástica sobre uma área geográfica ou grupo de igrejas. No contexto anglicano brasileiro, refere-se às diferentes denominações ou províncias anglicanas autônomas que operam no país, cada uma com sua própria estrutura de governança e liderança episcopal.',
+    relatedTerms: ['Bispo', 'Diocese', 'Província', 'Governança']
+  },
+  {
+    id: 'robinson-cavalcanti',
+    term: 'Robinson Cavalcanti',
+    definition: 'Bispo anglicano brasileiro (1944-2012), teólogo, sociólogo e político. Foi bispo da Diocese do Recife da IEAB e liderou o cisma de 2005 que resultou na formação da Igreja Anglicana do Brasil (IAB). Conhecido por sua defesa da ortodoxia teológica e engajamento social cristão.',
+    relatedTerms: ['IAB', 'IEAB', 'Bispo', 'Teologia']
+  },
+  {
+    id: 'john-stott',
+    term: 'John Stott',
+    definition: 'Teólogo e pastor anglicano britânico (1921-2011), uma das figuras mais influentes do evangelicalismo mundial no século XX. Autor de mais de 50 livros, conhecido por sua pregação expositiva, compromisso com a autoridade das Escrituras e ênfase no discipulado cristão integral.',
+    relatedTerms: ['Evangelicalismo', 'Teologia', 'Pregação', 'Escrituras']
+  },
+  {
+    id: 'nt-wright',
+    term: 'N.T. Wright',
+    definition: 'Nicholas Thomas Wright, teólogo anglicano britânico contemporâneo, ex-bispo de Durham. Reconhecido estudioso do Novo Testamento, especialmente sobre Jesus histórico e São Paulo. Autor prolífico que contribui para o diálogo entre fé e razão, defendendo uma visão robusta da ressurreição e escatologia cristã.',
+    relatedTerms: ['Teologia', 'Novo Testamento', 'Ressurreição', 'Escatologia']
+  },
+  {
+    id: 'michael-bird',
+    term: 'Michael Bird',
+    definition: 'Teólogo e acadêmico anglicano australiano, especialista em Novo Testamento. Professor e autor conhecido por seus trabalhos sobre Jesus, Paulo, e teologia bíblica. Contribui ativamente para discussões sobre evangelicalismo, ecumenismo e interpretação das Escrituras.',
+    relatedTerms: ['Teologia', 'Novo Testamento', 'Evangelicalismo', 'Escrituras']
+  },
+  {
+    id: 'tish-warren',
+    term: 'Tish Harrison Warren',
+    definition: 'Pastora anglicana americana e escritora contemporânea. Conhecida por seus livros sobre espiritualidade no cotidiano, especialmente "Liturgy of the Ordinary". Contribui regularmente com reflexões sobre fé, vida litúrgica e formação espiritual na vida moderna.',
+    relatedTerms: ['Espiritualidade', 'Liturgia', 'Formação Espiritual', 'Vida Cristã']
+  },
+  {
+    id: 'sumio-takatsu',
+    term: 'Sumio Takatsu',
+    definition: 'Bispo anglicano brasileiro. Representou a diversidade multicultural do anglicanismo brasileiro e liderou a igreja em seu ministério e missão contemporâneos.',
+    relatedTerms: ['IEAB', 'Bispo', 'Primaz', 'Anglicanismo']
+  },
+  {
+    id: 'paulo-garcia',
+    term: 'Paulo Garcia',
+    definition: 'Bispo anglicano brasileiro, primaz da Igreja Episcopal Carismática do Brasil (IECB). Saiu da IEAB em 2002 e tem liderado a IECB em sua missão de integrar a tradição episcopal com a renovação carismática no contexto brasileiro.',
+    relatedTerms: ['IECB', 'Bispo', 'Primaz', 'Renovação Carismática', 'Anglicanismo']
+  },
+  {
+    id: 'miguel-uchoa',
+    term: 'Miguel Uchôa',
+    definition: 'Bispo anglicano brasileiro, primaz da Igreja Anglicana do Brasil (IAB) e Vice-Presidente da GAFCON. Teólogo, escritor e comunicador, tem contribuído significativamente para a formação teológica anglicana no Brasil e para o movimento anglicano global através de seus escritos, liderança e ministério de ensino.',
+    relatedTerms: ['IAB', 'GAFCON', 'Bispo', 'Primaz', 'Teologia', 'Anglicanismo']
   }
 ]
