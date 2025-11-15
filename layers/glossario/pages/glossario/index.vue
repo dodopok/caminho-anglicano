@@ -304,9 +304,8 @@ const updateURL = () => {
 
 // Funções para limpar filtros mutuamente exclusivos
 const handleSearchInput = () => {
-  if (searchQuery.value) {
-    selectedLetter.value = null
-  }
+  // Sempre limpar filtro de letra quando há mudança na busca
+  selectedLetter.value = null
   currentPage.value = 1 // Reset para primeira página
   updateURL()
 }
