@@ -4,6 +4,8 @@
   <div class="min-h-screen flex flex-col">
     <NuxtPage />
   </div>
+
+  <PwaInstallPrompt v-if="$pwa.showInstallPrompt"/>
 </template>
 
 <script setup lang="ts">
