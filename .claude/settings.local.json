@@ -6,7 +6,10 @@
       "Bash(tree:*)",
       "Bash(cat:*)",
       "Bash(pnpm remove:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(sort:*)",
+      "Bash(/tmp/detailed_duplicates.sh)",
+      "Bash(npx tsc:*)"
     ],
     "deny": [],
     "ask": []

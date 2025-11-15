@@ -136,8 +136,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'ano-liturgico',
     term: 'Ano Litúrgico',
-    definition: 'O ciclo anual de estações e festas da igreja, começando com o Advento e incluindo Natal, Epifania, Quaresma, Páscoa, Ascensão, Pentecostes e Tempo Comum.',
-    relatedTerms: ['Advento', 'Quaresma', 'Páscoa', 'Pentecostes']
+    definition: 'Também chamado de Ano Cristão ou Ano Eclesiástico. Ciclo anual de estações e festas da igreja, começando com o Advento e incluindo Natal, Epifania, Quaresma, Páscoa, Ascensão, Pentecostes e Tempo Comum. Composto por dois ciclos de festas e dias santos: um dependente da data móvel da Páscoa e outro dependente da data fixa do Natal (25 de dezembro).',
+    relatedTerms: ['Advento', 'Quaresma', 'Páscoa', 'Pentecostes', 'Natal']
   },
   {
     id: 'antifona',
@@ -454,14 +454,14 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'kyrie',
     term: 'Kyrie Eleison',
-    definition: 'Do grego "Senhor, tende piedade", uma antiga oração litúrgica de súplica usada na Eucaristia e outras liturgias.',
-    relatedTerms: ['Liturgia', 'Eucaristia', 'Súplica']
+    definition: 'Expressão grega que significa "Senhor, tem piedade". É uma das orações mais antigas da liturgia cristã, usada na Eucaristia e outras liturgias como oração de súplica.',
+    relatedTerms: ['Liturgia', 'Eucaristia', 'Súplica', 'Oração', 'Rito']
   },
   {
     id: 'leccionario',
     term: 'Lecionário',
-    definition: 'O livro ou tabela que lista as leituras bíblicas designadas para cada dia ou domingo do ano litúrgico.',
-    relatedTerms: ['Escrituras', 'Ano Litúrgico', 'Leitura']
+    definition: 'Livro litúrgico ou tabela que contém e organiza as leituras bíblicas designadas para cada dia ou domingo do ano litúrgico.',
+    relatedTerms: ['Escrituras', 'Ano Litúrgico', 'Leitura', 'Liturgia']
   },
   {
     id: 'leigo',
@@ -496,8 +496,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'matrimonio',
     term: 'Matrimônio',
-    definition: 'O sacramento do casamento, a união de um homem e uma mulher em aliança vitalícia.',
-    relatedTerms: ['Casamento', 'Sacramento', 'Aliança']
+    definition: 'O ato sacramental do casamento cristão, a união permanente entre um homem e uma mulher em aliança vitalícia perante Deus e a comunidade da fé.',
+    relatedTerms: ['Casamento', 'Sacramento', 'Aliança', 'Bênção Nupcial']
   },
   {
     id: 'mesa-senhor',
@@ -526,8 +526,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'ofertorio',
     term: 'Ofertório',
-    definition: 'A parte da Eucaristia quando o pão e o vinho são trazidos ao altar e as ofertas são recebidas.',
-    relatedTerms: ['Eucaristia', 'Dízimo', 'Oblação']
+    definition: 'A parte da liturgia eucarística quando o pão e o vinho (oblata) são trazidos e apresentados ao altar, juntamente com as ofertas e dons dos fiéis.',
+    relatedTerms: ['Eucaristia', 'Dízimo', 'Oblação', 'Oblata', 'Dons']
   },
   {
     id: 'oleo-santos',
@@ -538,20 +538,20 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'ordem',
     term: 'Ordem',
-    definition: 'Os três ministérios ordenados: bispo, presbítero (sacerdote) e diácono. Também refere-se a comunidades religiosas.',
-    relatedTerms: ['Ordenação', 'Bispo', 'Sacerdote', 'Diácono']
+    definition: 'Ato sacramental pelo qual são conferidos os três ministérios ordenados: bispo, presbítero (sacerdote) e diácono. Também se refere às comunidades religiosas (ordens religiosas).',
+    relatedTerms: ['Ordenação', 'Bispo', 'Sacerdote', 'Diácono', 'Ministério Ordenado', 'Sacramento']
   },
   {
     id: 'ordenacao',
     term: 'Ordenação',
-    definition: 'O rito sacramental pelo qual pessoas são admitidas nas ordens sagradas de bispo, sacerdote ou diácono.',
-    relatedTerms: ['Ordem', 'Imposição de Mãos', 'Ministério']
+    definition: 'O ato sacramental pelo qual um candidato é admitido ao ministério ordenado (bispo, presbítero ou diácono) pela imposição das mãos do bispo.',
+    relatedTerms: ['Ordem', 'Imposição de Mãos', 'Ministério', 'Ministério Ordenado']
   },
   {
     id: 'oracao-eucaristica',
     term: 'Oração Eucarística',
-    definition: 'A grande oração de ação de graças na Eucaristia, que inclui a narrativa da instituição e a invocação do Espírito Santo.',
-    relatedTerms: ['Eucaristia', 'Consagração', 'Anamnese']
+    definition: 'A grande oração de ação de graças que constitui o núcleo da celebração eucarística, incluindo a epiclese (invocação do Espírito Santo), as palavras da instituição (narrativa da instituição) e a anamnese (memória).',
+    relatedTerms: ['Eucaristia', 'Consagração', 'Anamnese', 'Anamnésis', 'Epiclesis', 'Grande Oração Eucarística']
   },
   {
     id: 'oracao-senhor',
@@ -568,85 +568,85 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'paroquia',
     term: 'Paróquia',
-    definition: 'Uma comunidade local de fiéis cristãos sob o cuidado de um pároco.',
-    relatedTerms: ['Igreja', 'Comunidade', 'Pároco']
+    definition: 'Comunidade local de fiéis cristãos sob os cuidados pastorais de um pároco, constituindo a unidade básica da organização diocesana.',
+    relatedTerms: ['Igreja', 'Comunidade', 'Pároco', 'Diocese']
   },
   {
     id: 'pascoa',
     term: 'Páscoa',
-    definition: 'A festa principal do ano cristão, celebrando a ressurreição de Jesus Cristo dos mortos.',
-    relatedTerms: ['Ressurreição', 'Ano Litúrgico', 'Tempo Pascal']
+    definition: 'A principal festa do ano litúrgico cristão, celebrando a Ressurreição de Jesus Cristo dos mortos. É o centro do ano litúrgico e determina as demais festas móveis.',
+    relatedTerms: ['Ressurreição', 'Ano Litúrgico', 'Tempo Pascal', 'Semana Santa']
   },
   {
     id: 'patena',
     term: 'Patena',
-    definition: 'O prato ou disco usado para segurar o pão na Eucaristia.',
-    relatedTerms: ['Eucaristia', 'Pão', 'Vaso Sagrado']
+    definition: 'Prato ou disco, geralmente de metal precioso, usado para segurar o pão (hóstia) na celebração eucarística.',
+    relatedTerms: ['Eucaristia', 'Pão', 'Vaso Sagrado', 'Hóstia', 'Vasos Sagrados']
   },
   {
     id: 'paz',
     term: 'Paz',
-    definition: 'A troca de cumprimento de paz entre os fiéis durante a Eucaristia, expressando a unidade em Cristo.',
-    relatedTerms: ['Eucaristia', 'Comunhão', 'Unidade']
+    definition: 'Gesto litúrgico de saudação fraterna e troca de cumprimento de paz entre os fiéis durante a celebração eucarística, geralmente realizado antes da comunhão, expressando a unidade em Cristo.',
+    relatedTerms: ['Eucaristia', 'Comunhão', 'Unidade', 'Liturgia']
   },
   {
     id: 'penitencia',
     term: 'Penitência',
-    definition: 'Arrependimento pelos pecados. Também se refere ao rito sacramental de confissão e absolvição.',
-    relatedTerms: ['Confissão', 'Absolvição', 'Arrependimento']
+    definition: 'Arrependimento pelos pecados. Também se refere ao ato sacramental da Reconciliação (confissão), pelo qual o fiel recebe o perdão dos pecados através da absolvição sacerdotal.',
+    relatedTerms: ['Confissão', 'Absolvição', 'Arrependimento', 'Sacramento']
   },
   {
     id: 'pentecostes',
     term: 'Pentecostes',
-    definition: 'A festa celebrada cinquenta dias após a Páscoa, comemorando a descida do Espírito Santo sobre os apóstolos.',
-    relatedTerms: ['Espírito Santo', 'Ano Litúrgico', 'Igreja']
+    definition: 'Festa cristã celebrada cinquenta dias após a Páscoa, comemorando a descida do Espírito Santo sobre os apóstolos.',
+    relatedTerms: ['Espírito Santo', 'Ano Litúrgico', 'Igreja', 'Atos dos Apóstolos']
   },
   {
     id: 'presbiterio',
     term: 'Presbitério',
-    definition: 'A área do santuário ao redor do altar, reservada ao clero. Também se refere coletivamente aos presbíteros.',
-    relatedTerms: ['Santuário', 'Altar', 'Sacerdote']
+    definition: 'A área elevada do santuário ao redor do altar, reservada ao clero celebrante. Também designa coletivamente o conjunto dos presbíteros de uma diocese.',
+    relatedTerms: ['Santuário', 'Altar', 'Sacerdote', 'Presbítero']
   },
   {
     id: 'presbitero',
     term: 'Presbítero',
-    definition: 'Do grego "ancião", um sacerdote ordenado. O segundo dos três ministérios ordenados.',
-    relatedTerms: ['Sacerdote', 'Ordem', 'Ministério']
+    definition: 'Do grego "ancião", um sacerdote ordenado. O segundo dos três graus do ministério ordenado, entre o diácono e o bispo. Também chamado de padre ou sacerdote.',
+    relatedTerms: ['Sacerdote', 'Ordem', 'Ministério', 'Ministério Ordenado', 'Ordenação', 'Sacerdócio']
   },
   {
     id: 'procissao',
     term: 'Procissão',
-    definition: 'Uma marcha ou caminhada formal e ordenada, especialmente em contexto litúrgico.',
-    relatedTerms: ['Liturgia', 'Entrada', 'Rito']
+    definition: 'Marcha ou caminhada religiosa formal e ordenada em contexto litúrgico, geralmente acompanhada de cânticos e orações, realizada em celebrações especiais.',
+    relatedTerms: ['Liturgia', 'Entrada', 'Rito', 'Devoção', 'Festa']
   },
   {
     id: 'pulpito',
     term: 'Púlpito',
-    definition: 'A plataforma elevada de onde o sermão é pregado e as Escrituras são proclamadas.',
-    relatedTerms: ['Pregação', 'Sermão', 'Ambão']
+    definition: 'Plataforma ou tribuna elevada de onde o sermão é pregado e as Escrituras (Palavra de Deus) são proclamadas.',
+    relatedTerms: ['Pregação', 'Sermão', 'Ambão', 'Atril']
   },
   {
     id: 'quaresma',
     term: 'Quaresma',
-    definition: 'Os quarenta dias de preparação para a Páscoa, começando na Quarta-feira de Cinzas, um tempo de jejum, oração e penitência.',
-    relatedTerms: ['Páscoa', 'Ano Litúrgico', 'Penitência']
+    definition: 'Tempo litúrgico de quarenta dias (excluindo domingos) que precede a Páscoa, começando na Quarta-feira de Cinzas, dedicado à penitência, jejum, oração e preparação espiritual.',
+    relatedTerms: ['Páscoa', 'Ano Litúrgico', 'Penitência', 'Cinzas']
   },
   {
     id: 'reconciliacao',
     term: 'Reconciliação',
-    definition: 'A restauração da relação com Deus através do perdão dos pecados. Outro nome para o sacramento da Penitência.',
+    definition: 'A restauração da relação com Deus através do perdão dos pecados. Outro nome para o ato sacramental da Penitência.',
     relatedTerms: ['Penitência', 'Confissão', 'Perdão']
   },
   {
     id: 'ressurreicao',
     term: 'Ressurreição',
-    definition: 'A vitória de Cristo sobre a morte, celebrada na Páscoa. Também refere-se à esperança da vida eterna de todos os fiéis.',
-    relatedTerms: ['Páscoa', 'Vida Eterna', 'Cristo']
+    definition: 'Evento central da fé cristã: a vitória de Cristo sobre a morte, celebrada na Páscoa. Também refere-se à esperança da vida eterna e salvação de todos os fiéis.',
+    relatedTerms: ['Páscoa', 'Vida Eterna', 'Cristo', 'Salvação']
   },
   {
     id: 'rito',
     term: 'Rito',
-    definition: 'Uma forma estabelecida de cerimônia religiosa. Também se refere a tradições litúrgicas distintas dentro da igreja.',
+    definition: 'Ordem ou forma estabelecida para a celebração de uma cerimônia religiosa. Também se refere a diferentes tradições litúrgicas distintas dentro da igreja (Rito Romano, Rito Bizantino, etc.).',
     relatedTerms: ['Liturgia', 'Cerimônia', 'Tradição']
   },
   {
@@ -664,7 +664,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'sacramento',
     term: 'Sacramento',
-    definition: 'Um sinal externo e visível de uma graça interna e espiritual. Os dois grandes sacramentos são Batismo e Eucaristia.',
+    definition: 'Sinal exterior e visível de uma graça interior e espiritual. Os anglicanos reconhecem sete sacramentos, sendo Batismo e Eucaristia os dois maiores (grandes sacramentos).',
     relatedTerms: ['Batismo', 'Eucaristia', 'Graça']
   },
   {
@@ -688,20 +688,20 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'sanctus',
     term: 'Sanctus',
-    definition: 'O hino "Santo, Santo, Santo" (Isaías 6:3) cantado ou recitado na Oração Eucarística.',
+    definition: 'Hino de louvor "Santo, Santo, Santo é o Senhor Deus do Universo" (Isaías 6:3) cantado ou recitado durante a Oração Eucarística.',
     relatedTerms: ['Eucaristia', 'Hino', 'Oração Eucarística']
   },
   {
     id: 'santuario',
     term: 'Santuário',
-    definition: 'A área ao redor do altar em uma igreja, também chamada de presbitério ou coro.',
-    relatedTerms: ['Altar', 'Presbitério', 'Igreja']
+    definition: 'A área mais sagrada do templo ao redor do altar em uma igreja, também chamada de presbitério ou coro. Também designa lugares de especial devoção.',
+    relatedTerms: ['Altar', 'Presbitério', 'Igreja', 'Templo']
   },
   {
     id: 'semana-santa',
     term: 'Semana Santa',
-    definition: 'A última semana da Quaresma, desde o Domingo de Ramos até o Sábado de Aleluia, comemorando a Paixão de Cristo.',
-    relatedTerms: ['Quaresma', 'Páscoa', 'Paixão']
+    definition: 'A última semana da Quaresma, começando no Domingo de Ramos e culminando na Páscoa, celebrando a Paixão, Morte e Ressurreição de Cristo.',
+    relatedTerms: ['Quaresma', 'Páscoa', 'Paixão', 'Tríduo Pascal']
   },
   {
     id: 'sermao',
@@ -712,8 +712,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'sucessao-apostolica',
     term: 'Sucessão Apostólica',
-    definition: 'A continuidade ininterrupta da ordenação episcopal desde os apóstolos até o presente.',
-    relatedTerms: ['Bispo', 'Ordenação', 'Apóstolo']
+    definition: 'Doutrina segundo a qual os bispos são sucessores diretos dos apóstolos através de uma cadeia ininterrupta de ordenações episcopais desde os apóstolos até o presente.',
+    relatedTerms: ['Bispo', 'Ordenação', 'Apóstolo', 'Apostolicidade']
   },
   {
     id: 'te-deum',
@@ -724,8 +724,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'tempo-comum',
     term: 'Tempo Comum',
-    definition: 'Os períodos do ano litúrgico que não são estações especiais, enfatizando o crescimento na vida cristã.',
-    relatedTerms: ['Ano Litúrgico', 'Estação', 'Crescimento']
+    definition: 'Períodos do ano litúrgico que não fazem parte das estações especiais (ciclos de Natal-Epifania ou Quaresma-Páscoa-Pentecostes), enfatizando o crescimento na vida cristã.',
+    relatedTerms: ['Ano Litúrgico', 'Estação', 'Crescimento', 'Calendário Litúrgico']
   },
   {
     id: 'trindade',
@@ -736,20 +736,20 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'uncao',
     term: 'Unção',
-    definition: 'O ato de aplicar óleo sagrado como sinal de consagração, bênção ou cura.',
-    relatedTerms: ['Óleo dos Enfermos', 'Cura', 'Bênção']
+    definition: 'Ato de aplicar óleo sagrado em pessoas ou objetos como sinal de consagração, bênção ou cura. Ministrado aos enfermos e usado em batismos, confirmações e ordenações.',
+    relatedTerms: ['Óleo dos Enfermos', 'Cura', 'Bênção', 'Óleos Santos', 'Sacramento', 'Unção dos Enfermos']
   },
   {
     id: 'uncao-enfermos',
     term: 'Unção dos Enfermos',
-    definition: 'O rito sacramental de ungir os doentes com óleo e oração pela cura.',
-    relatedTerms: ['Sacramento', 'Cura', 'Óleo dos Enfermos']
+    definition: 'Ato sacramental pelo qual a Igreja pede a cura e o conforto divino para os doentes através do rito de ungir com óleo sagrado e oração pela cura.',
+    relatedTerms: ['Sacramento', 'Cura', 'Óleo dos Enfermos', 'Óleos Santos', 'Oração']
   },
   {
     id: 'vesperas',
     term: 'Vésperas',
-    definition: 'A oração vespertina da Liturgia das Horas, também chamada de Oração Vespertina.',
-    relatedTerms: ['Liturgia das Horas', 'Oração', 'Ofício']
+    definition: 'Ofício da tarde, uma das principais Horas Canônicas do Ofício Divino, tradicionalmente celebrado ao pôr do sol. Também chamada de Oração Vespertina ou oração vespertina da Liturgia das Horas.',
+    relatedTerms: ['Liturgia das Horas', 'Oração', 'Ofício', 'Ofício Divino', 'Horas Canônicas', 'Laudes']
   },
   {
     id: 'vigilia-pascal',
@@ -976,20 +976,20 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'nave',
     term: 'Nave',
-    definition: 'O corpo principal da igreja onde os bancos ou cadeiras estão localizados e onde a congregação se senta durante os cultos.',
-    relatedTerms: ['Igreja', 'Congregação', 'Arquitetura']
+    definition: 'O corpo principal da igreja, a parte central entre a entrada e o presbitério, onde os bancos ou cadeiras estão localizados e onde a congregação se reúne e se senta durante os cultos.',
+    relatedTerms: ['Igreja', 'Congregação', 'Arquitetura', 'Presbitério', 'Basílica']
   },
   {
     id: 'ordens-sagradas',
     term: 'Ordens Sagradas',
-    definition: 'O sacramento da ordenação, que marca a entrada do candidato no ministério ordenado.',
+    definition: 'O ato sacramental da ordenação, que marca a entrada do candidato no ministério ordenado.',
     relatedTerms: ['Ordenação', 'Sacramento', 'Ministério']
   },
   {
     id: 'paroco',
     term: 'Pároco',
-    definition: 'Um sacerdote a quem o bispo designou o cuidado de uma paróquia.',
-    relatedTerms: ['Sacerdote', 'Paróquia', 'Pastoral']
+    definition: 'Presbítero (sacerdote) a quem o bispo designou o cuidado de uma paróquia, responsável pela vida pastoral, litúrgica e administrativa da comunidade.',
+    relatedTerms: ['Sacerdote', 'Paróquia', 'Pastoral', 'Presbítero']
   },
   {
     id: 'paroco-titular',
@@ -1006,14 +1006,14 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'pia-batismal',
     term: 'Pia Batismal',
-    definition: 'A bacia ou fonte que contém a água usada no batismo.',
-    relatedTerms: ['Batismo', 'Batistério', 'Sacramento']
+    definition: 'Bacia, fonte ou recipiente, geralmente em pedra ou metal, que contém a água usada no Sacramento do Batismo.',
+    relatedTerms: ['Batismo', 'Batistério', 'Sacramento', 'Fonte']
   },
   {
     id: 'postulante',
     term: 'Postulante',
-    definition: 'Uma pessoa admitida pelo bispo na preparação formal para o ministério ordenado.',
-    relatedTerms: ['Ordenação', 'Formação', 'Discernimento']
+    definition: 'Pessoa que solicita e é admitida pelo bispo na preparação formal para o ministério ordenado ou a uma ordem religiosa.',
+    relatedTerms: ['Ordenação', 'Formação', 'Discernimento', 'Candidato às Sagradas Ordens']
   },
   {
     id: 'presidente-celebrante',
@@ -1024,14 +1024,14 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'primaz',
     term: 'Primaz',
-    definition: 'O bispo principal ou presidente de uma igreja nacional.',
-    relatedTerms: ['Bispo', 'Igreja Nacional', 'Liderança']
+    definition: 'Título honorífico dado ao bispo principal ou presidente de uma igreja nacional ou província eclesiástica.',
+    relatedTerms: ['Bispo', 'Igreja Nacional', 'Liderança', 'Arcebispo', 'Metropolita', 'Província']
   },
   {
     id: 'provincia',
     term: 'Província',
-    definition: 'Agrupamento de dioceses ou uma igreja nacional dentro da Comunhão Anglicana.',
-    relatedTerms: ['Diocese', 'Comunhão Anglicana', 'Região']
+    definition: 'Agrupamento de dioceses sob a liderança de um arcebispo metropolita, constituindo uma unidade eclesiástica autônoma ou igreja nacional dentro da Comunhão Anglicana.',
+    relatedTerms: ['Diocese', 'Comunhão Anglicana', 'Região', 'Metropolita']
   },
   {
     id: 'reitor',
@@ -1066,8 +1066,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'sacristia',
     term: 'Sacristia',
-    definition: 'Sala onde o clero se veste e onde os vasos sagrados e vestes litúrgicas são guardados.',
-    relatedTerms: ['Vestes Litúrgicas', 'Clero', 'Preparação']
+    definition: 'Dependência da igreja (sala) onde se guardam os paramentos, vasos sagrados e vestes litúrgicas, e onde o clero se veste e prepara para as celebrações.',
+    relatedTerms: ['Vestes Litúrgicas', 'Clero', 'Preparação', 'Paramentos', 'Vasos Sagrados', 'Sacristão']
   },
   {
     id: 'seminario',
@@ -1078,8 +1078,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'sinodo',
     term: 'Sínodo',
-    definition: 'O corpo governante de uma diocese composto por todo o clero licenciado, representantes leigos de todas as paróquias, membros ex-officio e o bispo.',
-    relatedTerms: ['Diocese', 'Governança', 'Bispo']
+    definition: 'Assembleia eclesiástica e órgão governante de uma diocese ou província, composto por todo o clero licenciado, representantes leigos de todas as paróquias, membros ex-officio e o bispo, para tratar de assuntos doutrinários, pastorais e administrativos.',
+    relatedTerms: ['Diocese', 'Governança', 'Bispo', 'Província', 'Governo Eclesiástico']
   },
   {
     id: 'subdiacono',
@@ -1090,14 +1090,14 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'vestes-liturgicas',
     term: 'Vestes Litúrgicas',
-    definition: 'As roupas distintivas reservadas para uso na liturgia, usadas pelo clero e por aqueles que servem no altar.',
-    relatedTerms: ['Liturgia', 'Clero', 'Ritual']
+    definition: 'Conjunto de roupas distintivas reservadas para uso na liturgia, usadas pelos ministros ordenados, clero e acólitos que servem no altar durante as celebrações litúrgicas.',
+    relatedTerms: ['Liturgia', 'Clero', 'Ritual', 'Paramentos', 'Alva', 'Casula', 'Estola']
   },
   {
     id: 'vigario',
     term: 'Vigário',
-    definition: 'Palavra de origem latina (vicarius) que significa "substituto". O vigário é aquele que faz as vezes de alguém, representando o bispo em cada paróquia.',
-    relatedTerms: ['Catedral', 'Decano', 'Bispo', 'Pároco']
+    definition: 'Palavra de origem latina (vicarius) que significa "substituto". Presbítero que atua em nome de outro, representando o bispo em cada paróquia, como o vigário de uma paróquia ou o vigário episcopal.',
+    relatedTerms: ['Catedral', 'Decano', 'Bispo', 'Pároco', 'Presbítero', 'Paróquia', 'Delegação']
   },
   {
     id: 'via-media',
@@ -1120,8 +1120,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'lacos-afeicao',
     term: 'Laços de Afeição',
-    definition: 'Quatro elementos institucionais que mantêm a Comunhão Anglicana unida: (1) Conferência de Lambeth (1867); (2) Conselho Consultivo Anglicano (1969); (3) Reunião dos Primazes (1978); e (4) O Arcebispo de Canterbury como foco de unidade.',
-    relatedTerms: ['Comunhão Anglicana', 'Conferência de Lambeth', 'Arcebispo']
+    definition: 'Expressão utilizada para designar os vínculos que unem as diversas Províncias da Comunhão Anglicana. Estes laços incluem tanto elementos teológicos (comunhão com o Arcebispo de Cantuária, o Livro de Oração Comum, os Credos históricos e os ministérios ordenados reconhecidos mutuamente) quanto quatro instrumentos institucionais: (1) Conferência de Lambeth (1867); (2) Conselho Consultivo Anglicano (1969); (3) Reunião dos Primazes (1978); e (4) O Arcebispo de Canterbury como foco de unidade.',
+    relatedTerms: ['Comunhão Anglicana', 'Conferência de Lambeth', 'Arcebispo', 'Arcebispo de Cantuária', 'Livro de Oração Comum']
   },
   {
     id: 'kinsolving-lucien',
@@ -1210,8 +1210,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'transubstanciacao',
     term: 'Transubstanciação',
-    definition: 'Doutrina medieval romana baseada em Aristóteles, segundo a qual, na consagração, a substância do pão e vinho se torna o Corpo e Sangue de Cristo, embora os acidentes (aparências) permaneçam. Os anglicanos rejeitam esta formulação específica.',
-    relatedTerms: ['Eucaristia', 'Presença Real', 'Teologia']
+    definition: 'Doutrina católica romana sobre a Eucaristia, baseada em Aristóteles, que afirma a mudança da substância do pão e vinho no Corpo e Sangue de Cristo, embora os acidentes (aparências) permaneçam. Os anglicanos rejeitam esta formulação específica, preferindo não especificar o modo da Presença Real.',
+    relatedTerms: ['Eucaristia', 'Presença Real', 'Teologia', 'Doutrina']
   },
   {
     id: 'baculo',
@@ -1246,8 +1246,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'turibulo',
     term: 'Turíbulo',
-    definition: 'Utensílio litúrgico usado em missas solenes para incensar o altar, o sacerdote, o evangelho e a congregação durante a celebração.',
-    relatedTerms: ['Incenso', 'Liturgia', 'Alta Igreja']
+    definition: 'Recipiente de metal suspenso por correntes onde se queima incenso durante as celebrações litúrgicas. Usado em missas solenes para incensar o altar, o sacerdote, o evangelho e a congregação.',
+    relatedTerms: ['Incenso', 'Liturgia', 'Alta Igreja', 'Turiferário']
   },
   {
     id: 'rosa-ventos',
@@ -1348,7 +1348,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'reuniao-primazes',
     term: 'Reunião dos Primazes',
-    definition: 'Encontro dos primazes (arcebispos presidentes) de todas as províncias da Comunhão Anglicana, iniciado em 1978. Reúne-se a cada dois ou três anos. É um dos Laços de Afeição.',
+    definition: 'Encontro dos primazes (arcebispos presidentes/líderes) de todas as províncias da Comunhão Anglicana, iniciado em 1978. Reúne-se a cada dois ou três anos. É um dos quatro Instrumentos de Unidade (Laços de Afeição) do Anglicanismo.',
     relatedTerms: ['Comunhão Anglicana', 'Primaz', 'Laços de Afeição']
   },
   {
@@ -1384,8 +1384,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'sobrepeliz',
     term: 'Sobrepeliz',
-    definition: 'Veste branca ampla e de mangas largas, usada sobre a batina. Também chamada de Cota. Usada em ofícios que não sejam a Eucaristia e por ministros leigos.',
-    relatedTerms: ['Vestes Litúrgicas', 'Batina', 'Liturgia']
+    definition: 'Veste branca ampla de mangas largas usada sobre a batina por clérigos, acólitos e ministros leigos durante os ofícios litúrgicos. Também chamada de Cota. Usada em ofícios que não sejam a Eucaristia.',
+    relatedTerms: ['Vestes Litúrgicas', 'Batina', 'Liturgia', 'Paramentos']
   },
   {
     id: 'cota',
@@ -1402,13 +1402,13 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'pala',
     term: 'Pala',
-    definition: 'Pequeno quadrado de linho engomado usado para cobrir o cálice durante a Eucaristia.',
-    relatedTerms: ['Cálice', 'Eucaristia', 'Liturgia']
+    definition: 'Pequeno quadrado de linho engomado ou tecido rígido usado para cobrir o cálice durante a celebração eucarística.',
+    relatedTerms: ['Cálice', 'Eucaristia', 'Liturgia', 'Paramentos']
   },
   {
     id: 'purificador',
     term: 'Purificador',
-    definition: 'Pequeno pano de linho usado para limpar o cálice e a patena durante e após a Eucaristia.',
+    definition: 'Pequeno pano de linho usado para limpar o cálice e a patena durante e após a celebração eucarística.',
     relatedTerms: ['Cálice', 'Patena', 'Eucaristia']
   },
   {
@@ -1426,8 +1426,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'lavabo',
     term: 'Lavabo',
-    definition: 'Jarra e bacia usadas pelo celebrante para lavar as mãos durante a Eucaristia, após o ofertório. Do latim "lavarei".',
-    relatedTerms: ['Eucaristia', 'Liturgia', 'Purificação']
+    definition: 'Jarra e bacia (pequeno recipiente com água) usadas pelo celebrante para lavar as mãos durante a Eucaristia, após o ofertório. A palavra vem do latim "lavabo" (lavarei).',
+    relatedTerms: ['Eucaristia', 'Liturgia', 'Purificação', 'Rito']
   },
   {
     id: 'via-crucis',
@@ -1438,8 +1438,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'cores-liturgicas',
     term: 'Cores Litúrgicas',
-    definition: 'Sistema de cores usado nas vestes e paramentos conforme o tempo litúrgico: Branco (Natal, Páscoa, festas), Roxo (Advento, Quaresma), Vermelho (Pentecostes, mártires), Verde (Tempo Comum), Preto (luto, opcional).',
-    relatedTerms: ['Ano Litúrgico', 'Vestes Litúrgicas', 'Liturgia']
+    definition: 'Sistema de cores tradicionalmente utilizadas nas vestes e paramentos conforme as quadras do Ano Litúrgico: Roxo (Advento e Quaresma - períodos de preparação e penitência), Branco (Natal e Páscoa - períodos de festa), Vermelho (Pentecostes e festas de Apóstolos e Mártires), Verde (domingos comuns e períodos após Epifania e Pentecostes), Preto (Sexta-feira Santa e funerais - opcional). O azul pode substituir o roxo no Advento.',
+    relatedTerms: ['Ano Litúrgico', 'Vestes Litúrgicas', 'Liturgia', 'Paramentos', 'Advento', 'Quaresma']
   },
   {
     id: 'presenca-real',
@@ -1528,7 +1528,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'reverencia',
     term: 'Reverência',
-    definition: 'Inclinação respeitosa da cabeça ou genuflexão (ajoelhar-se brevemente) feita em direção ao altar ou ao Santíssimo Sacramento como sinal de adoração.',
+    definition: 'Inclinação respeitosa da cabeça ou genuflexão (ajoelhar-se brevemente) feita em direção ao altar ou ao Santíssimo Sacramento como sinal de reverência.',
     relatedTerms: ['Liturgia', 'Adoração', 'Ritual']
   },
   {
@@ -1552,8 +1552,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'tabernáculo',
     term: 'Tabernáculo',
-    definition: 'Receptáculo seguro no altar ou próximo a ele onde o Santíssimo Sacramento é reservado para comunhão dos enfermos e adoração. Comum em igrejas Anglo-Católicas.',
-    relatedTerms: ['Eucaristia', 'Reserva', 'Alta Igreja']
+    definition: 'Receptáculo seguro (pequeno armário ou cofre) no altar ou próximo a ele onde o Santíssimo Sacramento (hóstias consagradas) é reservado para comunhão dos enfermos e adoração. Sinônimo de sacrário. Comum em igrejas Anglo-Católicas.',
+    relatedTerms: ['Eucaristia', 'Reserva', 'Alta Igreja', 'Sacrário', 'Hóstia', 'Reserva Eucarística']
   },
   {
     id: 'ambry',
@@ -1570,7 +1570,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'retabulo',
     term: 'Retábulo',
-    definition: 'Estrutura decorativa, geralmente com imagens religiosas, colocada atrás e acima do altar.',
+    definition: 'Estrutura decorativa colocada atrás e acima do altar, geralmente contendo pinturas, esculturas, relevos ou imagens religiosas.',
     relatedTerms: ['Altar', 'Arte Sacra', 'Arquitetura']
   },
   {
@@ -1630,8 +1630,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'triduo-pascal',
     term: 'Tríduo Pascal',
-    definition: 'Os três dias santos mais importantes do ano litúrgico: Quinta-feira Santa, Sexta-feira Santa e Sábado Santo até a Vigília Pascal.',
-    relatedTerms: ['Semana Santa', 'Páscoa', 'Ano Litúrgico']
+    definition: 'Os três dias santos mais importantes do ano litúrgico que celebram a Paixão, Morte e Ressurreição de Cristo: Quinta-feira Santa, Sexta-feira Santa e Sábado Santo até a Vigília Pascal.',
+    relatedTerms: ['Semana Santa', 'Páscoa', 'Ano Litúrgico', 'Paixão']
   },
   {
     id: 'oitava-pascoa',
@@ -1936,8 +1936,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'vigilia',
     term: 'Vigília',
-    definition: 'Período prolongado de oração, geralmente durante a noite. A Vigília Pascal é a mais importante do ano litúrgico.',
-    relatedTerms: ['Oração', 'Vigília Pascal', 'Devoção']
+    definition: 'Período prolongado de oração, geralmente durante a noite. Celebração noturna que precede uma grande festa, especialmente a Vigília Pascal, que é a mais importante do ano litúrgico.',
+    relatedTerms: ['Oração', 'Vigília Pascal', 'Devoção', 'Páscoa', 'Liturgia', 'Festa']
   },
   {
     id: 'esmola',
@@ -2642,12 +2642,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Movimento de Oxford', 'Igreja Alta', 'Tractarianismo']
   },
   {
-    id: 'ano-liturgico',
-    term: 'Ano litúrgico',
-    definition: 'Também chamado de Ano Cristão ou Ano Eclesiástico. Calendário das estações, domingos e dias santos observados pela Igreja através do ano civil. Composto por dois ciclos de festas e dias santos: um dependente da data móvel da Páscoa e outro dependente da data fixa do Natal (25 de dezembro).',
-    relatedTerms: ['Advento', 'Quaresma', 'Páscoa', 'Pentecostes', 'Natal']
-  },
-  {
     id: 'anselmo-cantuaria',
     term: 'Anselmo de Cantuária',
     definition: 'Anselmo de Aosta (1033-1109), monge e teólogo medieval que assumiu a Sé de Cantuária entre 1093 e 1109. Contribuiu decisivamente no debate entre fé e razão, sendo considerado por muitos como o criador da escolástica. Desenvolveu o Argumento Ontológico para provar racionalmente a existência de Deus e a teoria da satisfação para explicar a morte de Cristo.',
@@ -2952,12 +2946,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Conselho de Missão',
     definition: 'Instância deliberativa dos aspectos administrativos, financeiros e patrimoniais de uma Missão.',
     relatedTerms: ['Missão', 'Administração', 'Junta Paroquial']
-  },
-  {
-    id: 'cores-liturgicas',
-    term: 'Cores litúrgicas',
-    definition: 'São as cores tradicionalmente utilizadas nas quadras do Ano Cristão. Elas são: roxo, nos períodos de preparação (Advento) e penitência (Quaresma); branco, nos períodos de festa – inclusive o Natal; vermelho, para o Pentecostes e festas de Apóstolos e Mártires; verde para os domingos comuns e para o período posterior à Epifania e o Pentecostes; e preto, para a sexta-feira Santa e funerais, lembrando que o azul pode substituir o roxo no Advento.',
-    relatedTerms: ['Ano Litúrgico', 'Paramentos', 'Advento', 'Quaresma']
   },
   {
     id: 'cranmer-thomas',
@@ -3338,12 +3326,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Missão', 'Porto Alegre', 'História Anglicana']
   },
   {
-    id: 'kyrie-eleison',
-    term: 'Kyrie Eleison',
-    definition: 'Expressão grega que significa "Senhor, tem piedade". É uma das orações mais antigas da liturgia cristã.',
-    relatedTerms: ['Liturgia', 'Oração', 'Rito']
-  },
-  {
     id: 'kingsley-charles',
     term: 'Kingsley, Charles',
     definition: 'Teólogo e romancista inglês (1819-1875), defensor do Socialismo Cristão e da Teologia Larga. Autor de obras como "Hypatia" e "Westward Ho!".',
@@ -3360,18 +3342,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Kuala Lumpur, Declaração de',
     definition: 'Documento produzido pela segunda reunião do Conselho Consultivo Anglicano (ACC-2), realizada em Kuala Lumpur, Malásia, em 1971.',
     relatedTerms: ['Conselho Consultivo Anglicano', 'Comunhão Anglicana']
-  },
-  {
-    id: 'lacos-afeicao',
-    term: 'Laços de Afeição',
-    definition: 'Expressão utilizada para designar os vínculos que unem as diversas Províncias da Comunhão Anglicana. Estes laços incluem a comunhão com o Arcebispo de Cantuária, o Livro de Oração Comum, os Credos históricos e os ministérios ordenados reconhecidos mutuamente.',
-    relatedTerms: ['Comunhão Anglicana', 'Arcebispo de Cantuária', 'Livro de Oração Comum']
-  },
-  {
-    id: 'lavabo',
-    term: 'Lavabo',
-    definition: 'Pequeno recipiente com água usado pelo celebrante para lavar as mãos durante a missa. A palavra vem do latim "lavabo" (lavarei).',
-    relatedTerms: ['Eucaristia', 'Rito', 'Purificação']
   },
   {
     id: 'latimer-hugh',
@@ -3396,12 +3366,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Laudes',
     definition: 'Uma das Horas Canônicas do Ofício Divino, tradicionalmente celebrada ao amanhecer. Consiste principalmente em salmos de louvor.',
     relatedTerms: ['Ofício Divino', 'Horas Canônicas', 'Salmos']
-  },
-  {
-    id: 'lecionario',
-    term: 'Lecionário',
-    definition: 'Livro litúrgico que contém as leituras bíblicas organizadas segundo o calendário litúrgico.',
-    relatedTerms: ['Liturgia', 'Leituras', 'Ano Litúrgico']
   },
   {
     id: 'lectorio',
@@ -3464,12 +3428,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Ofício Divino', 'Horas Canônicas', 'Laudes']
   },
   {
-    id: 'matrimonio',
-    term: 'Matrimônio',
-    definition: 'Sacramento do casamento cristão, união permanente entre um homem e uma mulher perante Deus e a comunidade da fé.',
-    relatedTerms: ['Sacramentos', 'Casamento', 'Bênção Nupcial']
-  },
-  {
     id: 'maurice-john-frederick-denison',
     term: 'Maurice, John Frederick Denison',
     definition: 'Teólogo anglicano (1805-1872), um dos fundadores do movimento do Socialismo Cristão. Defendeu a educação popular e a justiça social.',
@@ -3490,7 +3448,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'membro-confirmado',
     term: 'Membro Confirmado',
-    definition: 'Pessoa batizada que recebeu o Sacramento da Confirmação, confirmando publicamente sua fé.',
+    definition: 'Pessoa batizada que recebeu o ato sacramental da Confirmação, confirmando publicamente sua fé.',
     relatedTerms: ['Confirmação', 'Membresia', 'Iniciação Cristã']
   },
   {
@@ -3542,12 +3500,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Paramentos', 'Vestes Episcopais', 'Bispo']
   },
   {
-    id: 'nave',
-    term: 'Nave',
-    definition: 'Parte central de uma igreja, entre a entrada e o presbitério, onde se reúnem os fiéis para o culto.',
-    relatedTerms: ['Basílica', 'Arquitetura', 'Presbitério']
-  },
-  {
     id: 'newman-john-henry',
     term: 'Newman, John Henry',
     definition: 'Teólogo e cardeal (1801-1890), líder do Movimento de Oxford que posteriormente converteu-se ao catolicismo romano. Beatificado em 2010 e canonizado em 2019. Suas obras influenciaram profundamente a teologia anglicana.',
@@ -3572,12 +3524,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Laicato', 'Ministério Leigo', 'Missão']
   },
   {
-    id: 'ofertorio',
-    term: 'Ofertório',
-    definition: 'Parte da liturgia eucarística em que se apresentam os dons do pão e do vinho, juntamente com as ofertas dos fiéis.',
-    relatedTerms: ['Eucaristia', 'Oblata', 'Dons']
-  },
-  {
     id: 'oficio-divino',
     term: 'Ofício Divino',
     definition: 'Conjunto de orações litúrgicas distribuídas ao longo do dia, também conhecido como Liturgia das Horas. Inclui Matinas, Laudes, Vésperas, Completas, entre outras.',
@@ -3596,24 +3542,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Liturgia', 'Oração', 'Ano Litúrgico']
   },
   {
-    id: 'oracao-eucaristica',
-    term: 'Oração Eucarística',
-    definition: 'Grande oração de ação de graças que constitui o núcleo da celebração eucarística. Inclui a epiclese, as palavras da instituição e a anamnese.',
-    relatedTerms: ['Eucaristia', 'Anamnésis', 'Epiclesis', 'Grande Oração Eucarística']
-  },
-  {
-    id: 'ordem',
-    term: 'Ordem',
-    definition: 'Sacramento pelo qual são conferidos os ministérios ordenados de diácono, presbítero e bispo. Também se refere às comunidades religiosas (ordens religiosas).',
-    relatedTerms: ['Ordenação', 'Ministério Ordenado', 'Sacramento']
-  },
-  {
-    id: 'ordenacao',
-    term: 'Ordenação',
-    definition: 'Ato sacramental pelo qual um candidato é admitido ao ministério ordenado pela imposição das mãos do bispo.',
-    relatedTerms: ['Ordem', 'Imposição de Mãos', 'Ministério Ordenado']
-  },
-  {
     id: 'ordinario',
     term: 'Ordinário',
     definition: 'Título canônico dado ao Bispo Diocesano, que possui jurisdição ordinária sobre sua diocese.',
@@ -3626,70 +3554,10 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Arcebispo', 'Paramentos', 'Metropolita']
   },
   {
-    id: 'pala',
-    term: 'Pala',
-    definition: 'Pequeno quadrado de tecido rígido usado para cobrir o cálice durante a celebração eucarística.',
-    relatedTerms: ['Cálice', 'Eucaristia', 'Paramentos']
-  },
-  {
-    id: 'paroquia',
-    term: 'Paróquia',
-    definition: 'Comunidade local de fiéis sob os cuidados pastorais de um pároco, constituindo a unidade básica da organização diocesana.',
-    relatedTerms: ['Pároco', 'Diocese', 'Comunidade']
-  },
-  {
-    id: 'paroco',
-    term: 'Pároco',
-    definition: 'Presbítero encarregado de uma paróquia, responsável pela vida pastoral, litúrgica e administrativa da comunidade.',
-    relatedTerms: ['Paróquia', 'Presbítero', 'Pastoral']
-  },
-  {
-    id: 'pascoa',
-    term: 'Páscoa',
-    definition: 'Principal festa cristã que celebra a Ressurreição de Jesus Cristo. É o centro do ano litúrgico e determina as demais festas móveis.',
-    relatedTerms: ['Ressurreição', 'Ano Litúrgico', 'Semana Santa']
-  },
-  {
-    id: 'patena',
-    term: 'Patena',
-    definition: 'Pequeno prato, geralmente de metal precioso, usado para colocar a hóstia durante a celebração eucarística.',
-    relatedTerms: ['Hóstia', 'Eucaristia', 'Vasos Sagrados']
-  },
-  {
-    id: 'paz',
-    term: 'Paz',
-    definition: 'Gesto litúrgico de saudação fraterna entre os fiéis durante a celebração eucarística, geralmente realizado antes da comunhão.',
-    relatedTerms: ['Eucaristia', 'Liturgia', 'Comunhão']
-  },
-  {
-    id: 'penitencia',
-    term: 'Penitência',
-    definition: 'Sacramento da reconciliação, também chamado de confissão, pelo qual o fiel recebe o perdão dos pecados através da absolvição sacerdotal.',
-    relatedTerms: ['Sacramento', 'Confissão', 'Absolvição']
-  },
-  {
-    id: 'pentecostes',
-    term: 'Pentecostes',
-    definition: 'Festa cristã celebrada cinquenta dias após a Páscoa, comemorando a descida do Espírito Santo sobre os apóstolos.',
-    relatedTerms: ['Espírito Santo', 'Ano Litúrgico', 'Atos dos Apóstolos']
-  },
-  {
-    id: 'pia-batismal',
-    term: 'Pia Batismal',
-    definition: 'Recipiente, geralmente em pedra ou metal, que contém a água para o Sacramento do Batismo.',
-    relatedTerms: ['Batismo', 'Fonte', 'Sacramento']
-  },
-  {
     id: 'piscina',
     term: 'Piscina',
     definition: 'Pequena pia com drenagem direta para a terra, localizada na sacristia ou no presbitério, usada para purificação dos vasos sagrados.',
     relatedTerms: ['Sacristia', 'Vasos Sagrados', 'Purificação']
-  },
-  {
-    id: 'postulante',
-    term: 'Postulante',
-    definition: 'Pessoa que solicita admissão ao processo de ordenação ou a uma ordem religiosa.',
-    relatedTerms: ['Candidato às Sagradas Ordens', 'Ordenação', 'Discernimento']
   },
   {
     id: 'prebenda',
@@ -3704,64 +3572,16 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Ministério Leigo', 'Pregação', 'Licenciamento']
   },
   {
-    id: 'presbiterio',
-    term: 'Presbitério',
-    definition: 'Área elevada do templo onde se localiza o altar, reservada ao clero celebrante. Também designa o conjunto dos presbíteros de uma diocese.',
-    relatedTerms: ['Altar', 'Santuário', 'Presbítero']
-  },
-  {
-    id: 'presbitero',
-    term: 'Presbítero',
-    definition: 'Segundo grau do ministério ordenado, entre o diácono e o bispo. Também chamado de padre ou sacerdote.',
-    relatedTerms: ['Ministério Ordenado', 'Ordenação', 'Sacerdócio']
-  },
-  {
-    id: 'primaz',
-    term: 'Primaz',
-    definition: 'Título honorífico dado ao bispo principal de uma nação ou província eclesiástica.',
-    relatedTerms: ['Arcebispo', 'Metropolita', 'Província']
-  },
-  {
     id: 'prioste',
     term: 'Prioste',
     definition: 'Leigo responsável pela organização de festas religiosas e pelo cuidado dos objetos litúrgicos.',
     relatedTerms: ['Sacristão', 'Liturgia', 'Ministério Leigo']
   },
   {
-    id: 'procissao',
-    term: 'Procissão',
-    definition: 'Marcha religiosa ordenada, geralmente acompanhada de cânticos e orações, realizada em celebrações especiais.',
-    relatedTerms: ['Liturgia', 'Devoção', 'Festa']
-  },
-  {
-    id: 'provincia',
-    term: 'Província',
-    definition: 'Agrupamento de dioceses sob a liderança de um arcebispo metropolita, constituindo uma unidade eclesiástica autônoma na Comunhão Anglicana.',
-    relatedTerms: ['Diocese', 'Metropolita', 'Comunhão Anglicana']
-  },
-  {
-    id: 'pulpito',
-    term: 'Púlpito',
-    definition: 'Tribuna elevada de onde se proclama a Palavra de Deus e se faz a pregação.',
-    relatedTerms: ['Pregação', 'Ambão', 'Atril']
-  },
-  {
-    id: 'purificador',
-    term: 'Purificador',
-    definition: 'Pequeno pano de linho usado para limpar o cálice e a patena durante e após a celebração eucarística.',
-    relatedTerms: ['Cálice', 'Patena', 'Eucaristia']
-  },
-  {
     id: 'quadragesima',
     term: 'Quadragésima',
     definition: 'Período de quarenta dias que antecede a Páscoa, tempo de penitência e preparação conhecido como Quaresma.',
     relatedTerms: ['Quaresma', 'Páscoa', 'Ano Litúrgico']
-  },
-  {
-    id: 'quaresma',
-    term: 'Quaresma',
-    definition: 'Tempo litúrgico de quarenta dias (excluindo domingos) que precede a Páscoa, dedicado à penitência, jejum e preparação espiritual.',
-    relatedTerms: ['Páscoa', 'Cinzas', 'Ano Litúrgico']
   },
   {
     id: 'racional',
@@ -3782,34 +3602,10 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Relíquias', 'Santos', 'Devoção']
   },
   {
-    id: 'ressurreicao',
-    term: 'Ressurreição',
-    definition: 'Evento central da fé cristã: a vitória de Cristo sobre a morte, celebrada na Páscoa.',
-    relatedTerms: ['Páscoa', 'Cristo', 'Salvação']
-  },
-  {
-    id: 'retabulo',
-    term: 'Retábulo',
-    definition: 'Estrutura decorativa colocada atrás do altar, geralmente contendo pinturas, esculturas ou relevos religiosos.',
-    relatedTerms: ['Altar', 'Arquitetura', 'Arte Sacra']
-  },
-  {
-    id: 'reuniao-primazes',
-    term: 'Reunião dos Primazes',
-    definition: 'Encontro dos líderes das Províncias da Comunhão Anglicana, um dos quatro Instrumentos de Unidade do Anglicanismo.',
-    relatedTerms: ['Comunhão Anglicana', 'Primaz', 'Laços de Afeição']
-  },
-  {
     id: 'ridley-nicholas',
     term: 'Ridley, Nicholas',
     definition: 'Bispo de Londres (1500-1555), reformador inglês martirizado junto com Hugh Latimer em Oxford durante o reinado de Maria I.',
     relatedTerms: ['Reforma Inglesa', 'Mártires', 'Latimer Hugh', 'Cranmer Thomas']
-  },
-  {
-    id: 'rito',
-    term: 'Rito',
-    definition: 'Ordem estabelecida para a celebração de uma cerimônia religiosa. Também se refere às diferentes tradições litúrgicas (Rito Romano, Rito Bizantino, etc.).',
-    relatedTerms: ['Liturgia', 'Cerimônia', 'Tradição']
   },
   {
     id: 'rochete',
@@ -3824,12 +3620,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Liturgia', 'Sacramentos', 'Livro Litúrgico']
   },
   {
-    id: 'sacramento',
-    term: 'Sacramento',
-    definition: 'Sinal exterior e visível de uma graça interior e espiritual. Os anglicanos reconhecem sete sacramentos, sendo Batismo e Eucaristia os dois maiores.',
-    relatedTerms: ['Batismo', 'Eucaristia', 'Graça']
-  },
-  {
     id: 'sacrario',
     term: 'Sacrário',
     definition: 'Pequeno cofre ou armário onde se guardam as hóstias consagradas. Também chamado de tabernáculo.',
@@ -3842,34 +3632,10 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Sacristia', 'Paramentos', 'Ministério Leigo']
   },
   {
-    id: 'sacristia',
-    term: 'Sacristia',
-    definition: 'Dependência da igreja onde se guardam os paramentos, vasos sagrados e onde o clero se reveste para as celebrações.',
-    relatedTerms: ['Paramentos', 'Vasos Sagrados', 'Sacristão']
-  },
-  {
-    id: 'sanctus',
-    term: 'Sanctus',
-    definition: 'Hino de louvor cantado ou recitado durante a Oração Eucarística: "Santo, Santo, Santo é o Senhor Deus do Universo".',
-    relatedTerms: ['Eucaristia', 'Oração Eucarística', 'Hino']
-  },
-  {
-    id: 'santuario',
-    term: 'Santuário',
-    definition: 'Área mais sagrada do templo, onde se encontra o altar. Também designa lugares de especial devoção.',
-    relatedTerms: ['Altar', 'Presbitério', 'Templo']
-  },
-  {
     id: 'se',
     term: 'Sé',
     definition: 'Sede de uma diocese, onde está localizada a catedral do bispo.',
     relatedTerms: ['Diocese', 'Catedral', 'Bispo']
-  },
-  {
-    id: 'semana-santa',
-    term: 'Semana Santa',
-    definition: 'Última semana da Quaresma, que começa no Domingo de Ramos e culmina na Páscoa, celebrando a Paixão, Morte e Ressurreição de Cristo.',
-    relatedTerms: ['Páscoa', 'Quaresma', 'Tríduo Pascal']
   },
   {
     id: 'sidesman',
@@ -3888,18 +3654,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Sinais dos Tempos',
     definition: 'Expressão que se refere aos acontecimentos históricos e sociais através dos quais Deus se manifesta e desafia a Igreja.',
     relatedTerms: ['Profecia', 'Missão', 'Teologia']
-  },
-  {
-    id: 'sinodo',
-    term: 'Sínodo',
-    definition: 'Assembleia eclesiástica de uma diocese ou província para tratar de assuntos doutrinários, pastorais e administrativos.',
-    relatedTerms: ['Diocese', 'Província', 'Governo Eclesiástico']
-  },
-  {
-    id: 'sobrepeliz',
-    term: 'Sobrepeliz',
-    definition: 'Veste branca de mangas largas usada sobre a batina por clérigos e acólitos durante os ofícios litúrgicos.',
-    relatedTerms: ['Paramentos', 'Batina', 'Vestes Litúrgicas']
   },
   {
     id: 'socialismo-cristao',
@@ -3974,46 +3728,16 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Escritura', 'Razão', 'Teologia Anglicana']
   },
   {
-    id: 'transubstanciacao',
-    term: 'Transubstanciação',
-    definition: 'Doutrina católica romana sobre a Eucaristia que afirma a mudança da substância do pão e vinho no Corpo e Sangue de Cristo. Os anglicanos geralmente preferem não especificar o modo da Presença Real.',
-    relatedTerms: ['Eucaristia', 'Presença Real', 'Doutrina']
-  },
-  {
     id: 'trato',
     term: 'Trato',
     definition: 'Cântico que substitui o Aleluia durante a Quaresma e em outras ocasiões penitenciais.',
     relatedTerms: ['Quaresma', 'Liturgia', 'Aleluia']
   },
   {
-    id: 'triduo-pascal',
-    term: 'Tríduo Pascal',
-    definition: 'Os três dias santos que celebram a Paixão, Morte e Ressurreição de Cristo: Quinta-feira Santa, Sexta-feira Santa e Vigília Pascal.',
-    relatedTerms: ['Semana Santa', 'Páscoa', 'Paixão']
-  },
-  {
-    id: 'turibulo',
-    term: 'Turíbulo',
-    definition: 'Recipiente de metal suspenso por correntes onde se queima incenso durante as celebrações litúrgicas.',
-    relatedTerms: ['Incenso', 'Liturgia', 'Turiferário']
-  },
-  {
     id: 'turiferario',
     term: 'Turiferário',
     definition: 'Acólito que tem a função de conduzir o turíbulo durante as celebrações litúrgicas.',
     relatedTerms: ['Turíbulo', 'Acólito', 'Incenso']
-  },
-  {
-    id: 'uncao',
-    term: 'Unção',
-    definition: 'Ato de aplicar óleo sagrado em pessoas ou objetos. Sacramento ministrado aos enfermos e usado em batismos, confirmações e ordenações.',
-    relatedTerms: ['Óleos Santos', 'Sacramento', 'Unção dos Enfermos']
-  },
-  {
-    id: 'uncao-enfermos',
-    term: 'Unção dos Enfermos',
-    definition: 'Sacramento pelo qual a Igreja pede a cura e o conforto divino para os doentes através da unção com óleo sagrado.',
-    relatedTerms: ['Sacramento', 'Óleos Santos', 'Cura']
   },
   {
     id: 'vale',
@@ -4034,18 +3758,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Espírito Santo', 'Hino', 'Ordenação']
   },
   {
-    id: 'vesperas',
-    term: 'Vésperas',
-    definition: 'Ofício da tarde, uma das principais Horas Canônicas do Ofício Divino, tradicionalmente celebrado ao pôr do sol.',
-    relatedTerms: ['Ofício Divino', 'Horas Canônicas', 'Laudes']
-  },
-  {
-    id: 'vestes-liturgicas',
-    term: 'Vestes Litúrgicas',
-    definition: 'Conjunto de roupas especiais usadas pelos ministros ordenados e acólitos durante as celebrações litúrgicas.',
-    relatedTerms: ['Paramentos', 'Alva', 'Casula', 'Estola']
-  },
-  {
     id: 'veu-calice',
     term: 'Véu do Cálice',
     definition: 'Pano que cobre o cálice antes e depois da consagração, geralmente na mesma cor litúrgica do dia.',
@@ -4062,18 +3774,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Via Crúcis',
     definition: 'Também chamada Via Sacra, é uma devoção que medita sobre as catorze estações da Paixão de Cristo.',
     relatedTerms: ['Paixão', 'Devoção', 'Semana Santa']
-  },
-  {
-    id: 'vigario',
-    term: 'Vigário',
-    definition: 'Presbítero que atua em nome de outro, como o vigário de uma paróquia ou o vigário episcopal.',
-    relatedTerms: ['Presbítero', 'Paróquia', 'Delegação']
-  },
-  {
-    id: 'vigilia',
-    term: 'Vigília',
-    definition: 'Celebração noturna que precede uma grande festa, especialmente a Vigília Pascal.',
-    relatedTerms: ['Páscoa', 'Liturgia', 'Festa']
   },
   {
     id: 'visitacao-pastoral',
