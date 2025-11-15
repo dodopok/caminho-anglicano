@@ -37,7 +37,7 @@ export default defineNuxtConfig({
     exclude: [
       '/admin/**',
       '/dashboard/**',
-      '/portal-do-douglas'
+      '/portal-do-douglas/**'
     ],
     urls: async () => {
       // Importar dinamicamente os termos do glossário
