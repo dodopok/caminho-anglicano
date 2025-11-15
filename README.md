@@ -92,7 +92,79 @@ Acesso a 5 edições históricas do Livro de Oração Comum:
 - Descrição de cada edição
 - Design otimizado para leitura
 
-### 4. 🏠 Página Inicial (`/`)
+### 4. 📚 Glossário Anglicano (`/glossario`)
+
+#### Biblioteca de Termos
+- **200+ termos** teológicos e litúrgicos da tradição anglicana
+- Definições claras e contextualizadas
+- Referências bíblicas e históricas quando aplicável
+- Conteúdo curado e revisado
+
+#### Sistema de Busca e Filtros
+- **Busca em tempo real**: Digite para encontrar termos instantaneamente
+- **Filtro alfabético**: Navegue por letras A-Z
+- **Paginação inteligente**: 12 termos por página
+- **Sincronização com URL**: Compartilhe buscas específicas via link
+- **Contador de resultados**: Feedback visual de resultados encontrados
+
+#### Interface e Navegação
+- **Página principal** (`/glossario`):
+  - Lista completa de termos
+  - Barra de busca com destaque visual
+  - Filtros alfabéticos interativos
+  - Cards responsivos com preview das definições
+
+- **Páginas individuais** (`/glossario/[slug]`):
+  - Termo em destaque com definição completa
+  - Navegação para termo anterior/próximo
+  - Botão para voltar ao glossário
+  - SEO otimizado para cada termo
+  - Open Graph para compartilhamento em redes sociais
+
+#### Recursos Técnicos
+- **SSR (Server-Side Rendering)**: Páginas pré-renderizadas para SEO
+- **State Management**: Sincronização entre busca, filtros e URL
+- **Debounce**: Busca otimizada sem sobrecarga
+- **Permalinks**: URLs amigáveis para cada termo (ex: `/glossario/eucaristia`)
+- **Sitemap dinâmico**: Todos os termos indexados automaticamente
+
+#### Banner do Livro
+- Destaque para o livro "Caminho Anglicano" de Thomas McKenzie
+- Links diretos para compra (versões digital e física)
+- Design chamativo que não interfere na experiência de busca
+
+### 5. 💰 Sistema de Doações (`/doacao`)
+
+#### Integração com AbacatePay
+- Sistema completo de doações via PIX
+- Modal interativo com opções de valores pré-definidos
+- Opção de valor customizado
+- Suporte para doações únicas ou mensais (recorrentes)
+
+#### Funcionalidades
+- **Valores sugeridos**: R$ 5, R$ 10, R$ 25, R$ 50, R$ 100
+- **Valor personalizado**: Digite qualquer valor
+- **Métodos de pagamento**:
+  - PIX (disponível)
+  - Cartão de crédito (em breve)
+- **Tipos de doação**:
+  - Uma vez (doação única)
+  - Mensal (apoio recorrente)
+
+#### Interface
+- Botão "☕ Apoie o Projeto" no footer de todas as páginas
+- Botão flutuante na página inicial
+- Modal responsivo com formulário completo
+- Página de agradecimento personalizada (`/doacao/sucesso`)
+- Validação de CPF, celular e e-mail
+- Formatação automática de valores em reais
+
+#### Webhook
+- Endpoint `/api/donations/webhook` para receber notificações de status
+- Configurável no painel do AbacatePay
+- Suporte para eventos: PENDING, PAID, EXPIRED, CANCELLED
+
+### 6. 🏠 Página Inicial (`/`)
 
 #### Hub de Navegação
 - Cards de acesso rápido a todas as seções
@@ -100,7 +172,7 @@ Acesso a 5 edições históricas do Livro de Oração Comum:
 - Design moderno com gradientes e animações
 - SEO otimizado com Open Graph e Twitter Cards
 
-### 5. ✨ Recursos Gerais
+### 7. ✨ Recursos Gerais
 
 #### Design e UX
 - 📱 Mobile-first e totalmente responsivo
@@ -131,6 +203,7 @@ Acesso a 5 edições históricas do Livro de Oração Comum:
 - **Geocoding**:
   - ViaCEP (CEP brasileiro)
   - Nominatim (OpenStreetMap)
+- **Pagamentos**: AbacatePay (PIX e Cartão)
 - **Gráficos**: Chart.js
 - **Analytics**: Vercel Analytics
 
@@ -162,6 +235,7 @@ Preencha as seguintes variáveis:
 NUXT_PUBLIC_SUPABASE_URL=sua-url-do-supabase
 NUXT_PUBLIC_SUPABASE_ANON_KEY=sua-chave-anonima-do-supabase
 NUXT_PUBLIC_GOOGLE_MAPS_API_KEY=sua-chave-do-google-maps
+ABACATEPAY_API_KEY=sua-chave-do-abacatepay
 ```
 
 ### 3. Configurar o Banco de Dados Supabase
@@ -195,7 +269,22 @@ Para testar o sistema com 10 igrejas de exemplo, execute também:
 4. Crie credenciais (API Key)
 5. Configure restrições para sua API key (recomendado para produção)
 
-### 5. Executar em Desenvolvimento
+### 5. Configurar AbacatePay (Sistema de Doações)
+
+1. Acesse [AbacatePay](https://abacatepay.com) e crie uma conta
+2. Acesse o dashboard e copie sua API Key
+3. Adicione a chave no arquivo `.env`:
+   ```env
+   ABACATEPAY_API_KEY=sua-chave-aqui
+   ```
+4. **(Opcional)** Configure o webhook para receber notificações de pagamento:
+   - No painel do AbacatePay, vá em Configurações > Webhooks
+   - Adicione a URL: `https://seu-dominio.com/api/donations/webhook`
+   - Selecione os eventos: `billing.paid`, `billing.expired`, `billing.cancelled`
+
+**Nota**: O sistema de doações funciona com PIX imediatamente. Cartão de crédito estará disponível assim que o AbacatePay liberar para sua conta.
+
+### 6. Executar em Desenvolvimento
 
 ```bash
 pnpm dev
@@ -241,13 +330,30 @@ caminho-anglicano/
 │   │   └── pages/
 │   │       └── locs.vue                   # Biblioteca de LOCs
 │   │
-│   └── dashboard/                         # Layer do dashboard de estatísticas
+│   ├── dashboard/                         # Layer do dashboard de estatísticas
+│   │   ├── components/
+│   │   │   └── ChurchDistributionChart.vue # Gráficos (Pizza e Barras)
+│   │   ├── composables/
+│   │   │   └── useChurchStats.ts          # Cálculos de estatísticas
+│   │   └── pages/
+│   │       └── dashboard.vue              # Página do dashboard
+│   │
+│   └── doacoes/                           # Layer do sistema de doações
 │       ├── components/
-│       │   └── ChurchDistributionChart.vue # Gráficos (Pizza e Barras)
+│       │   ├── DonationModal.vue          # Modal de doação com formulário
+│       │   └── SupportButton.vue          # Botão "Apoie o Projeto"
 │       ├── composables/
-│       │   └── useChurchStats.ts          # Cálculos de estatísticas
-│       └── pages/
-│           └── dashboard.vue              # Página do dashboard
+│       │   └── useDonations.ts            # Gerenciar doações
+│       ├── pages/
+│       │   └── doacao/
+│       │       └── sucesso.vue            # Página de agradecimento
+│       ├── server/
+│       │   └── api/
+│       │       └── donations/
+│       │           ├── create.post.ts     # API: criar billing no AbacatePay
+│       │           └── webhook.post.ts    # API: webhook de notificações
+│       └── types/
+│           └── donation.ts                # Types para doações
 │
 ├── pages/
 │   └── index.vue                          # Página inicial (hub)

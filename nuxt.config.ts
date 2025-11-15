@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     './layers/locs',
     './layers/glossario',
     './layers/dashboard',
-    './layers/admin'
+    './layers/admin',
+    './layers/doacoes'
   ],
 
   typescript: {
@@ -145,6 +146,7 @@ export default defineNuxtConfig({
     googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY,
     telegramBotToken: process.env.TELEGRAM_BOT_TOKEN,
     telegramChatId: process.env.TELEGRAM_CHAT_ID,
+    abacatepayApiKey: process.env.ABACATEPAY_API_KEY,
 
     public: {
       supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL,

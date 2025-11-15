@@ -150,5 +150,8 @@ useHead({
     </main>
 
     <BaseFooter />
+
+    <!-- Botão flutuante de apoio -->
+    <SupportButton variant="floating" />
   </div>
 </template>
