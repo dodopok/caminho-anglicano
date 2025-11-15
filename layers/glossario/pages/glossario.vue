@@ -87,17 +87,20 @@
         </div>
       </div>
 
-      <!-- Contador de resultados -->
-      <div v-if="searchQuery || selectedLetter" class="text-center mb-6">
-        <p class="text-slate-600">
+      <!-- Contador de resultados e paginação -->
+      <div class="text-center mb-6">
+        <p class="text-slate-600 mb-2">
           {{ filteredTerms.length }} {{ filteredTerms.length === 1 ? 'termo encontrado' : 'termos encontrados' }}
+        </p>
+        <p v-if="totalPages > 1" class="text-sm text-slate-500">
+          Página {{ currentPage }} de {{ totalPages }}
         </p>
       </div>
 
       <!-- Lista de termos -->
       <div class="space-y-4">
         <div
-          v-for="term in filteredTerms"
+          v-for="term in paginatedTerms"
           :key="term.id"
           class="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 p-6 border border-slate-200"
         >
@@ -128,6 +131,45 @@
             </button>
           </div>
         </div>
+      </div>
+
+      <!-- Paginação -->
+      <div v-if="totalPages > 1" class="mt-12 flex justify-center items-center gap-2">
+        <button
+          @click="previousPage"
+          :disabled="currentPage === 1"
+          class="px-4 py-2 rounded-lg border transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          :class="currentPage === 1 ? 'bg-gray-100 text-gray-400 border-gray-200' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'"
+        >
+          ← Anterior
+        </button>
+
+        <!-- Páginas -->
+        <div class="flex gap-1">
+          <button
+            v-for="page in totalPages"
+            :key="page"
+            v-show="page === 1 || page === totalPages || (page >= currentPage - 2 && page <= currentPage + 2)"
+            @click="goToPage(page)"
+            :class="[
+              'px-4 py-2 rounded-lg transition-colors',
+              page === currentPage
+                ? 'bg-amber-700 text-white'
+                : 'bg-white text-slate-700 border border-slate-300 hover:bg-slate-50'
+            ]"
+          >
+            {{ page }}
+          </button>
+        </div>
+
+        <button
+          @click="nextPage"
+          :disabled="currentPage === totalPages"
+          class="px-4 py-2 rounded-lg border transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          :class="currentPage === totalPages ? 'bg-gray-100 text-gray-400 border-gray-200' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'"
+        >
+          Próxima →
+        </button>
       </div>
 
       <!-- Mensagem quando não há resultados -->
@@ -170,6 +212,10 @@ const router = useRouter()
 // Estado reativo
 const searchQuery = ref('')
 const selectedLetter = ref<string | null>(null)
+const currentPage = ref(1)
+
+// Paginação
+const ITEMS_PER_PAGE = 50
 
 // Alfabeto para filtros
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
@@ -178,11 +224,19 @@ const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 onMounted(() => {
   const queryParam = route.query.q as string
   const letterParam = route.query.letra as string
+  const pageParam = route.query.pagina as string
 
   if (queryParam) {
     searchQuery.value = queryParam
   } else if (letterParam && alphabet.includes(letterParam.toUpperCase())) {
     selectedLetter.value = letterParam.toUpperCase()
+  }
+
+  if (pageParam) {
+    const page = parseInt(pageParam)
+    if (!isNaN(page) && page > 0) {
+      currentPage.value = page
+    }
   }
 })
 
@@ -196,6 +250,10 @@ const updateURL = () => {
     query.letra = selectedLetter.value
   }
 
+  if (currentPage.value > 1) {
+    query.pagina = currentPage.value.toString()
+  }
+
   router.replace({ query })
 }
 
@@ -204,6 +262,7 @@ const handleSearchInput = () => {
   if (searchQuery.value) {
     selectedLetter.value = null
   }
+  currentPage.value = 1 // Reset para primeira página
   updateURL()
 }
 
@@ -214,12 +273,14 @@ const handleLetterClick = (letter: string) => {
     selectedLetter.value = letter
     searchQuery.value = ''
   }
+  currentPage.value = 1 // Reset para primeira página
   updateURL()
 }
 
 const handleRelatedTermClick = (term: string) => {
   searchQuery.value = term
   selectedLetter.value = null
+  currentPage.value = 1
   updateURL()
 
   // Scroll para o topo para melhor UX
@@ -228,6 +289,7 @@ const handleRelatedTermClick = (term: string) => {
 
 const clearSearch = () => {
   searchQuery.value = ''
+  currentPage.value = 1
   updateURL()
 }
 
@@ -254,6 +316,38 @@ const filteredTerms = computed(() => {
   // Ordenar alfabeticamente
   return terms.sort((a, b) => a.term.localeCompare(b.term))
 })
+
+// Paginação
+const totalPages = computed(() => {
+  return Math.ceil(filteredTerms.value.length / ITEMS_PER_PAGE)
+})
+
+const paginatedTerms = computed(() => {
+  const start = (currentPage.value - 1) * ITEMS_PER_PAGE
+  const end = start + ITEMS_PER_PAGE
+  return filteredTerms.value.slice(start, end)
+})
+
+// Funções de navegação de páginas
+const goToPage = (page: number) => {
+  if (page >= 1 && page <= totalPages.value) {
+    currentPage.value = page
+    updateURL()
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+}
+
+const nextPage = () => {
+  if (currentPage.value < totalPages.value) {
+    goToPage(currentPage.value + 1)
+  }
+}
+
+const previousPage = () => {
+  if (currentPage.value > 1) {
+    goToPage(currentPage.value - 1)
+  }
+}
 
 // Garantir renderização no servidor para crawlers
 definePageMeta({
