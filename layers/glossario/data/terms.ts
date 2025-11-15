@@ -932,16 +932,10 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Protestantismo', 'Escrituras', 'Reforma']
   },
   {
-    id: 'guilda-altar',
-    term: 'Guilda do Altar',
-    definition: 'Grupo responsável pela limpeza e preparação dos itens para a celebração da Eucaristia. Também chamada de Guilda do Chancel.',
+    id: 'sodalicio-altar',
+    term: 'Sodalício do Altar',
+    definition: 'Grupo responsável pela limpeza e preparação dos itens para a celebração da Eucaristia. Também chamada de Guilda do Altar.',
     relatedTerms: ['Altar', 'Eucaristia', 'Serviço']
-  },
-  {
-    id: 'ieab',
-    term: 'IEAB',
-    definition: 'Igreja Episcopal Anglicana do Brasil, província da Comunhão Anglicana no Brasil.',
-    relatedTerms: ['Comunhão Anglicana', 'Província', 'Brasil']
   },
   {
     id: 'ministro',
@@ -950,8 +944,8 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Batismo', 'Ministério', 'Serviço']
   },
   {
-    id: 'mordomo',
-    term: 'Mordomo',
+    id: 'guardiao',
+    term: 'Guardião',
     definition: 'Oficiais leigos seniores de uma congregação, responsáveis pela administração e cuidado da propriedade da igreja.',
     relatedTerms: ['Leigo', 'Administração', 'Paróquia']
   },
@@ -4008,5 +4002,149 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Miguel Uchôa',
     definition: 'Bispo anglicano brasileiro, primaz da Igreja Anglicana do Brasil (IAB) e Vice-Presidente da GAFCON. Teólogo, escritor e comunicador, tem contribuído significativamente para a formação teológica anglicana no Brasil e para o movimento anglicano global através de seus escritos, liderança e ministério de ensino.',
     relatedTerms: ['IAB', 'GAFCON', 'Bispo', 'Primaz', 'Teologia', 'Anglicanismo']
+  },
+    {
+    id: 'marinez-bassotto',
+    term: 'Marinez Rosa dos Santos Bassotto',
+    definition: 'Bispa Primaz da IEAB desde 2022 e Bispa da Diocese Anglicana da Amazônia desde 2018. Nascida em Canguçu, RS, em março de 1971, foi a primeira mulher eleita bispa na história da IEAB e a primeira primaz mulher na América Latina. Ordenada diácona em 1995 e presbítera em 1996, foi deã da Catedral da Diocese Meridional por 17 anos. Em 2022, recebeu a Cruz de Santo Agostinho do Arcebispo de Cantuária em reconhecimento ao seu trabalho pela justiça climática e povos indígenas.',
+    relatedTerms: ['IEAB', 'Bispo Primaz', 'Diocese da Amazônia', 'Bispo']
+  },
+  {
+    id: 'naudal-gomes',
+    term: 'Naudal Alves Gomes',
+    definition: 'Bispo Primaz da IEAB de 2018 a 2022 e Bispo da Diocese Anglicana do Paraná. Nascido em Santana do Livramento, RS, em 1953, foi ordenado diácono em 1979 e presbítero em 1980. Consagrado bispo sufragâneo da Diocese Sul-Ocidental em 2000, tornou-se bispo diocesano de Curitiba (atual Diocese do Paraná) em 2003. Atualmente é Bispo Emérito.',
+    relatedTerms: ['IEAB', 'Bispo Primaz', 'Diocese do Paraná', 'Bispo Emérito']
+  },
+  {
+    id: 'francisco-assis-silva',
+    term: 'Francisco de Assis da Silva',
+    definition: 'Bispo Primaz da IEAB de 2013 a 2018 e Bispo da Diocese Sul-Ocidental desde 2010. Natural de Olinda, é advogado e mestre em Ciências Políticas. Foi eleito Bispo da Diocese Sul-Ocidental em 25 de outubro de 2010 e Bispo Primaz no 32º Sínodo Geral em novembro de 2013, servindo por quatro anos nessa função.',
+    relatedTerms: ['IEAB', 'Bispo Primaz', 'Diocese Sul-Ocidental', 'Bispo']
+  },
+  {
+    id: 'mauricio-andrade',
+    term: 'Maurício José Araújo de Andrade',
+    definition: 'Bispo Primaz da IEAB de 2006 a 2013 e Bispo da Diocese Anglicana de Brasília desde 2003. Eleito Bispo Primaz no 30º Sínodo Geral em Curitiba (2006), sucedendo o Bispo Orlando Santos de Oliveira, serviu por dois mandatos. Foi o primeiro bispo não católico romano consagrado na Catedral Nacional Católica. Durante seu primazado, priorizou o ecumenismo e missionarismo, presidindo o Conselho Latino-Americano de Igrejas (CLAI) no Brasil.',
+    relatedTerms: ['IEAB', 'Bispo Primaz', 'Diocese de Brasília', 'Ecumenismo']
+  },
+  {
+    id: 'orlando-oliveira',
+    term: 'Orlando Santos de Oliveira',
+    definition: 'Bispo Primaz da IEAB de 2003 a 2006 e Bispo da Diocese Meridional até 2013. Foi sucedido como Primaz por Dom Maurício de Andrade no 30º Sínodo Geral em 2006. Também serviu como bispo interino da Diocese de Brasília de junho a agosto de 2003. Atualmente é Bispo Emérito.',
+    relatedTerms: ['IEAB', 'Bispo Primaz', 'Diocese Meridional', 'Bispo Emérito']
+  },
+  {
+    id: 'glauco-lima',
+    term: 'Glauco Soares de Lima',
+    definition: 'Bispo Primaz da IEAB de 1993 a 2003 e Bispo da Diocese Anglicana de São Paulo de 1990 a 2002. Nascido em Pelotas em 28 de janeiro de 1934, faleceu em São Paulo em 26 de dezembro de 2017. Ordenado diácono em 1956, obteve mestrado (1961) e doutorado da Episcopal Theological School, recebendo doutorado honorário de Harvard em 1991. Foi consagrado bispo em 1º de julho de 1989, sucedendo Dom Sumio Takatsu.',
+    relatedTerms: ['IEAB', 'Bispo Primaz', 'Diocese de São Paulo', 'Bispo']
+  },
+  {
+    id: 'olavo-luiz',
+    term: 'Olavo Ventura Luiz',
+    definition: 'Bispo Primaz da IEAB de 1986 a 1992 e Bispo da Diocese Sul-Ocidental de 1977 a 1984. Trabalhou com o Bispo Edmond Browning para renovar as relações entre as igrejas brasileira e episcopal. Faleceu em 1993.',
+    relatedTerms: ['IEAB', 'Bispo Primaz', 'Diocese Sul-Ocidental', 'Bispo']
+  },
+  {
+    id: 'arthur-kratz',
+    term: 'Arthur Rodolpho Kratz',
+    definition: 'Segundo Bispo Primaz da IEAB, servindo de 1972 a 1984. Sucedeu Dom Egmont Machado Krischke na liderança da província autônoma brasileira.',
+    relatedTerms: ['IEAB', 'Bispo Primaz', 'Bispo']
+  },
+  {
+    id: 'egmont-krischke',
+    term: 'Egmont Machado Krischke',
+    definition: 'Primeiro Bispo Primaz da IEAB, servindo de 1965 a 1971. Foi consagrado em 12 de março de 1950 como primeiro Bispo Missionário do Brasil Sul-Ocidental. Em 1965, quando a Igreja Episcopal Anglicana do Brasil foi separada da Igreja Episcopal dos Estados Unidos e tornou-se província autônoma da Comunhão Anglicana (a 19ª província), foi eleito seu primeiro Bispo Primaz. Seu mandato terminou com sua morte em 1971. O Seminário Teológico Dom Egmont Machado Krischke (SETEK) recebeu seu nome em sua homenagem.',
+    relatedTerms: ['IEAB', 'Bispo Primaz', 'Comunhão Anglicana', 'SETEK']
+  },
+  {
+    id: 'humberto-goncalves',
+    term: 'Humberto Maiztegui Gonçalves',
+    definition: 'Bispo da Diocese Anglicana Meridional desde 2013. Nascido em Montevidéu, Uruguai, em 6 de dezembro de 1964, é filho de mãe brasileira e pai uruguaio. Possui mestrado (1999-2001) e doutorado (2001-2005) em Teologia (Estudos Bíblicos) pela EST em São Leopoldo, RS. Foi docente do SETEK desde 1994 e reitor em 2010. Eleito Bispo Coadjutor em outubro de 2012, foi consagrado em dezembro de 2012 e instituído como Bispo Diocesano em maio de 2013.',
+    relatedTerms: ['Diocese Meridional', 'SETEK', 'Bispo', 'IEAB']
+  },
+  {
+    id: 'joao-peixoto',
+    term: 'João Câncio Peixoto Filho',
+    definition: 'Bispo da Diocese Anglicana do Recife desde 2013. Cirurgião-dentista de profissão, com especialização em Ortodontia e Implantodontia, ingressou na IEAB em 1983. Estudou no Seminário Anglicano de Estudos Teológicos em Recife (1999), foi ordenado diácono em 2003 e presbítero em 2005. Serviu como capelão do seminário (2005) e reitor desde 2007. Eleito bispo em novembro de 2013, foi consagrado em 14 de dezembro de 2013.',
+    relatedTerms: ['Diocese do Recife', 'Bispo', 'IEAB']
+  },
+  {
+    id: 'eduardo-grillo',
+    term: 'Eduardo Coelho Grillo',
+    definition: 'Bispo da Diocese Anglicana do Rio de Janeiro desde 2017. Nascido em Porto Alegre, RS, em 19 de novembro de 1964, em família anglicana, é bisneto de Naima Isaacson, primeira da família a adotar a Igreja Episcopal Anglicana no início do século XX. Eleito bispo coadjutor em 2 de novembro de 2016, foi consagrado em 8 de abril de 2017 e instituído como bispo diocesano em 29 de julho de 2017. É casado com a Reverenda Inamar de Souza.',
+    relatedTerms: ['Diocese do Rio de Janeiro', 'Bispo', 'IEAB']
+  },
+  {
+    id: 'meriglei-simim',
+    term: 'Meriglei Borges da Silva Simim',
+    definition: 'Bispa da Diocese Anglicana de Pelotas desde 2019. Foi a segunda mulher eleita ao episcopado na IEAB, em 27 de abril de 2019, tornando-se a quarta bispa da Diocese de Pelotas. A partir de julho de 2018, também serviu como Secretária Geral da IEAB. Sua diocese cobre a cidade de Pelotas e arredores, seguindo a linha costeira do Rio Grande do Sul.',
+    relatedTerms: ['Diocese de Pelotas', 'Bispa', 'IEAB']
+  },
+  {
+    id: 'francisco-alves',
+    term: 'Francisco Cézar Fernandes Alves',
+    definition: 'Bispo da Diocese Anglicana de São Paulo desde 2021. Natural de Quixeramobim, CE, foi ordenado diácono em julho de 1995 e presbítero em junho de 1996, servindo como reitor da Paróquia São João em São Paulo desde 2002. Possui especialização em estudos anglicanos pelo CEFACS em Birmingham, Inglaterra, MBA Executivo pela Universidade Cândido Mendes e pós-graduação em Mindfulness pela UNIFESP. Eleito Bispo Coadjutor em 9 de julho de 2019, foi consagrado em 25 de janeiro de 2020.',
+    relatedTerms: ['Diocese de São Paulo', 'Bispo', 'IEAB']
+  },
+  {
+    id: 'magda-pereira',
+    term: 'Magda Guedes Pereira',
+    definition: 'Bispa da Diocese Anglicana do Paraná. Nascida em Sant\'Ana do Livramento, RS, em 3 de setembro de 1967, possui formação em Teologia e Pedagogia. Estudou no Seminário Nacional Teológico da IEAB (SETEK) de 1992 a 1995, foi ordenada diácona em 24 de março de 1996 e presbítera em 21 de abril de 1997. Serviu nas dioceses Sul-Ocidental (1996-2006), Paraná (2007-2010) e Brasília (2011-2017). Eleita bispa coadjutora em 24 de abril de 2021, foi consagrada em 17 de outubro de 2021, tornando-se a terceira mulher consagrada ao episcopado da IEAB.',
+    relatedTerms: ['Diocese do Paraná', 'Bispa', 'IEAB']
+  },
+  {
+    id: 'clovis-rodrigues',
+    term: 'Clóvis Erli Rodrigues',
+    definition: 'Bispo Emérito da Diocese Anglicana do Recife. Sucedeu Dom Edmund Knox Sherrill como bispo do Recife. Durante seu episcopado, junto com o Rev. Marston Price, foi responsável pela formação dos primeiros seminaristas após a fundação do Núcleo Anglicano de Estudos Teológicos (NAET) em 1976. Em 1977, junto com o Rev. Jubal Pereira Neves, levou o trabalho missionário da IEAB ao Uruguai, trabalhando em Santana do Livramento.',
+    relatedTerms: ['Diocese do Recife', 'Bispo Emérito', 'IEAB']
+  },
+  {
+    id: 'almir-santos',
+    term: 'Almir dos Santos',
+    definition: 'Bispo Emérito da Diocese Anglicana de Brasília. Foi também presidente do ISAL (Igreja e Sociedade na América Latina) em 1962, quando presidiu a Conferência do Nordeste promovida pela CEB, demonstrando seu compromisso com movimentos ecumênicos.',
+    relatedTerms: ['Diocese de Brasília', 'Bispo Emérito', 'IEAB', 'Ecumenismo']
+  },
+  {
+    id: 'jubal-neves',
+    term: 'Jubal Pereira Neves',
+    definition: 'Bispo Emérito da Diocese Sul-Ocidental, onde serviu como bispo diocesano de 1993 a 2011. Em 1977, junto com o Rev. Clovis Erly Rodrigues, levou o trabalho missionário da IEAB ao Uruguai, trabalhando a partir de Santana do Livramento. A Diocese Sul-Ocidental tem sua sede episcopal na Catedral Anglicana do Mediador em Santa Maria, RS.',
+    relatedTerms: ['Diocese Sul-Ocidental', 'Bispo Emérito', 'IEAB']
+  },
+  {
+    id: 'celso-franco',
+    term: 'Celso Franco de Oliveira',
+    definition: 'Bispo Emérito da Diocese Anglicana do Rio de Janeiro. Possui formação em Teologia pelo Seminário Teológico Batista do Sul do Brasil, estudos em ecumenismo em Bossey, Genebra, Suíça, e em Patrística e História da Igreja no Episcopal Theological Seminary of the Southwest em Austin, Texas, onde recebeu o título de Doutor em Divindade. Também é formado em Direito pela Universidade Candido Mendes e em Psicologia pela Universidade Gama Filho. Antes de sua consagração episcopal, foi reitor de várias paróquias, incluindo São Lucas.',
+    relatedTerms: ['Diocese do Rio de Janeiro', 'Bispo Emérito', 'IEAB']
+  },
+  {
+    id: 'filadelfo-oliveira',
+    term: 'Filadelfo Oliveira Chaves Neto',
+    definition: 'Bispo Emérito da IEAB. Serviu como bispo da Diocese Anglicana do Rio de Janeiro e também como bispo sufragâneo na Diocese Anglicana do Recife. Foi membro do Tribunal de Justiça da IEAB. Atualmente serve como contato para a Missão aos Marítimos (Mission to Seafarers) na Diocese.',
+    relatedTerms: ['Diocese do Rio de Janeiro', 'Bispo Emérito', 'IEAB']
+  },
+  {
+    id: 'renato-raatz',
+    term: 'Renato da Cruz Raatz',
+    definition: 'Bispo Emérito da Diocese Anglicana de Pelotas. Foi eleito como terceiro bispo da Diocese em maio de 2007. Está associado à Paróquia do Salvador em Rio Grande, RS. Assinou diversas cartas pastorais oficiais da IEAB sobre democracia, dignidade humana e questões sociais no Brasil entre 2020 e 2023.',
+    relatedTerms: ['Diocese de Pelotas', 'Bispo Emérito', 'IEAB']
+  },
+  {
+    id: 'flavio-irala',
+    term: 'Flávio Augusto Borges Irala',
+    definition: 'Bispo Emérito da Diocese Anglicana de São Paulo, falecido em 9 de janeiro de 2025. Nascido em 21 de maio de 1954 em Bagé, RS, foi batizado e confirmado na IEAB. Eleito bispo em setembro de 2012, foi ordenado e consagrado em 13 de setembro de 2013. Tornou-se emérito em 2021, continuando a colaborar pastoralmente na Diocese de São Paulo. Durante seu episcopado, distinguiu-se pelo compromisso ecumênico, presidindo o CONIC (Conselho Nacional de Igrejas Cristãs do Brasil).',
+    relatedTerms: ['Diocese de São Paulo', 'Bispo Emérito', 'IEAB', 'CONIC', 'Ecumenismo']
+  },
+  {
+    id: 'saulo-barros',
+    term: 'Saulo Maurício de Barros',
+    definition: 'Bispo Emérito e primeiro bispo da Diocese Anglicana da Amazônia. Possui mestrado pela Universidade de Birmingham (1998) e doutorado honorário em Divindade pelo Huron University College. Em 16 de setembro de 2002, chegou a Belém com sua família, enviado pelo então Primaz Bispo Glauco Soares de Lima. Em 15 de outubro de 2006, a Diocese da Amazônia foi instalada com a consagração da Catedral de Santa Maria e sua investidura como primeiro bispo diocesano. Como educador, trabalhou com ensino a distância nas áreas de História da Religião, Religião e Movimentos Populares, e Missiologia.',
+    relatedTerms: ['Diocese da Amazônia', 'Bispo Emérito', 'IEAB']
+  },
+  {
+    id: 'edmund-sherrill',
+    term: 'Edmund Knox Sherrill',
+    definition: 'Bispo missionário americano da Igreja Episcopal que serviu no Brasil de 1959 a 1984. Filho do Bispo Primaz Henry Knox Sherrill, foi consagrado bispo em 25 de janeiro de 1959 no Rio de Janeiro, com seu pai como consagrante principal. Serviu inicialmente na Diocese Central (Rio de Janeiro) e foi pioneiro do trabalho anglicano no Nordeste, transferindo o Rev. Alfredo Rocha Fonseca para Recife em 1968 para administrar a Paróquia da Santíssima Trindade. Em junho de 1975, tornou-se o primeiro bispo da Diocese Setentrional (depois Diocese do Recife), instalada em 1976, onde a Paróquia da Trindade foi elevada a catedral. Foi sucedido por Dom Clóvis Erli Rodrigues. Faleceu em 2016.',
+    relatedTerms: ['Diocese do Recife', 'IEAB', 'Bispo Missionário', 'Clóvis Erli Rodrigues']
   }
 ]
