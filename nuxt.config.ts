@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     './layers/base',
     './layers/localizador',
     './layers/locs',
+    './layers/glossario',
     './layers/dashboard',
     './layers/admin'
   ],
@@ -17,7 +18,7 @@ export default defineNuxtConfig({
     typeCheck: true
   },
 
-  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxtjs/sitemap'],
 
   // Configuração do Tailwind
   tailwindcss: {
@@ -25,6 +26,57 @@ export default defineNuxtConfig({
     configPath: 'tailwind.config',
     exposeConfig: false,
     viewer: true,
+  },
+
+  // Configuração do Sitemap para SEO
+  site: {
+    url: 'https://caminhoanglicano.com.br'
+  },
+
+  sitemap: {
+    exclude: [
+      '/admin/**',
+      '/dashboard/**',
+      '/portal-do-douglas/**'
+    ],
+    urls: async () => {
+      // Importar dinamicamente os termos do glossário
+      const { glossaryTerms } = await import('./layers/glossario/data/terms')
+
+      // Criar URLs para cada termo do glossário
+      const glossaryRoutes = glossaryTerms.map(term => ({
+        loc: `/glossario/${term.id}`,
+        lastmod: new Date(),
+        changefreq: 'monthly' as const,
+        priority: 0.7 as const
+      }))
+
+      // Rotas de jurisdições
+      const jurisdictionSlugs = [
+        'ieab',
+        'reb',
+        'iecb',
+        'iarb',
+        'ieub',
+        'iab'
+      ]
+
+      const jurisdictionRoutes = jurisdictionSlugs.map(slug => ({
+        loc: `/igrejas/${slug}`,
+        lastmod: new Date(),
+        changefreq: 'weekly' as const,
+        priority: 0.8 as const
+      }))
+
+      // Rotas principais com maior prioridade
+      const mainRoutes = [
+        { loc: '/', lastmod: new Date(), changefreq: 'weekly' as const, priority: 1 as const },
+        { loc: '/glossario', lastmod: new Date(), changefreq: 'weekly' as const, priority: 0.9 as const },
+        { loc: '/localizador', lastmod: new Date(), changefreq: 'daily' as const, priority: 0.9 as const }
+      ]
+
+      return [...mainRoutes, ...jurisdictionRoutes, ...glossaryRoutes]
+    }
   },
 
   app: {
@@ -59,7 +111,31 @@ export default defineNuxtConfig({
 
   // Configuração do Nitro para deploy na Vercel
   nitro: {
-    preset: 'vercel'
+    preset: 'vercel',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/glossario']
+    }
+  },
+
+  // Hooks para gerar rotas do glossário estaticamente
+  hooks: {
+    async 'nitro:config'(nitroConfig) {
+      // Importar dinamicamente os termos do glossário
+      const { glossaryTerms } = await import('./layers/glossario/data/terms')
+
+      // Adicionar todas as rotas dos termos ao prerender
+      const glossaryRoutes = glossaryTerms.map(term => `/glossario/${term.id}`)
+
+      if (!nitroConfig.prerender) {
+        nitroConfig.prerender = { routes: [] }
+      }
+      if (!nitroConfig.prerender.routes) {
+        nitroConfig.prerender.routes = []
+      }
+
+      nitroConfig.prerender.routes.push(...glossaryRoutes)
+    }
   },
 
   runtimeConfig: {
