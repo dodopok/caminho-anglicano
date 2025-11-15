@@ -1,7 +1,7 @@
 <template>
   <Analytics />
-  <div>
-    <NuxtPage />
+  <div class="min-h-screen flex flex-col">
+    <NuxtPage class="flex-1" />
   </div>
 </template>
 
