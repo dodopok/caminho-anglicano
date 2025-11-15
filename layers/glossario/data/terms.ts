@@ -1314,5 +1314,287 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Horas Canônicas',
     definition: 'Oito ofícios diários guardados pelos monges: Vigília/Matinas (meia-noite), Laudes (amanhecer), Prima (nascer do sol), Tércia (9h), Sexta (meio-dia), Nona (15h), Vésperas (18h) e Completas (21h). Cranmer as condensou nas Orações Matutina e Vespertina.',
     relatedTerms: ['Liturgia das Horas', 'Monasticismo', 'Oração']
+  },
+  {
+    id: 'cranmer-thomas',
+    term: 'Thomas Cranmer',
+    definition: 'Arcebispo de Canterbury (1489-1556) e arquiteto da Reforma Anglicana. Compilou o Livro de Oração Comum (1549 e 1552), criou a liturgia anglicana e supervisionou a tradução da Bíblia para o inglês. Morreu queimado em 1556 durante a perseguição de Maria Tudor.',
+    relatedTerms: ['Livro de Oração Comum', 'Reforma', 'Mártir']
+  },
+  {
+    id: 'keble-john',
+    term: 'John Keble',
+    definition: 'Poeta e teólogo anglicano (1792-1866). Seu sermão "National Apostasy" (1833) é considerado o início do Movimento de Oxford. Autor do livro de poemas devocionais "The Christian Year". Um dos líderes tractarianos.',
+    relatedTerms: ['Movimento de Oxford', 'Tractarianismo', 'Poesia']
+  },
+  {
+    id: 'pusey-edward',
+    term: 'Edward Bouverie Pusey',
+    definition: 'Teólogo e líder do Movimento de Oxford (1800-1882). Professor de hebraico em Oxford, permaneceu anglicano após a conversão de Newman ao catolicismo. Defendeu a doutrina da Presença Real e a confissão auricular. O termo "puseyismo" era usado para o movimento tractariano.',
+    relatedTerms: ['Movimento de Oxford', 'Tractarianismo', 'Teologia']
+  },
+  {
+    id: 'conferencia-lambeth',
+    term: 'Conferência de Lambeth',
+    definition: 'Assembleia de todos os bispos da Comunhão Anglicana, convocada pelo Arcebispo de Canterbury. Realizada aproximadamente a cada dez anos desde 1867. Suas resoluções têm autoridade moral, mas não jurisdicional. É um dos Laços de Afeição da Comunhão.',
+    relatedTerms: ['Comunhão Anglicana', 'Arcebispo', 'Laços de Afeição']
+  },
+  {
+    id: 'conselho-consultivo-anglicano',
+    term: 'Conselho Consultivo Anglicano',
+    definition: 'Estabelecido em 1969 (ACC - Anglican Consultative Council), reúne clérigos e leigos de todas as províncias anglicanas. É um dos quatro Laços de Afeição da Comunhão Anglicana.',
+    relatedTerms: ['Comunhão Anglicana', 'Laços de Afeição', 'Governança']
+  },
+  {
+    id: 'reuniao-primazes',
+    term: 'Reunião dos Primazes',
+    definition: 'Encontro dos primazes (arcebispos presidentes) de todas as províncias da Comunhão Anglicana, iniciado em 1978. Reúne-se a cada dois ou três anos. É um dos Laços de Afeição.',
+    relatedTerms: ['Comunhão Anglicana', 'Primaz', 'Laços de Afeição']
+  },
+  {
+    id: 'tractarianismo',
+    term: 'Tractarianismo',
+    definition: 'Nome dado ao Movimento de Oxford devido aos "Tracts for the Times" (1833-1841), série de 90 panfletos publicados pelos líderes do movimento. Enfatizava a natureza católica da Igreja Anglicana e a sucessão apostólica.',
+    relatedTerms: ['Movimento de Oxford', 'Newman', 'Anglo-Católicos']
+  },
+  {
+    id: 'crisma',
+    term: 'Crisma',
+    definition: 'Óleo consagrado pelo bispo, mistura de azeite e bálsamo aromático, usado na confirmação, ordenação e consagração de igrejas. Simboliza o dom do Espírito Santo.',
+    relatedTerms: ['Confirmação', 'Espírito Santo', 'Sacramento']
+  },
+  {
+    id: 'alva',
+    term: 'Alva',
+    definition: 'Túnica branca de linho que vai até os pés, usada por todos os ministros ordenados e acólitos na celebração litúrgica. Simboliza a pureza batismal. Também chamada de Alba.',
+    relatedTerms: ['Vestes Litúrgicas', 'Liturgia', 'Batismo']
+  },
+  {
+    id: 'casula',
+    term: 'Casula',
+    definition: 'Veste litúrgica usada sobre a alva pelo celebrante da Eucaristia. Sua cor varia conforme o tempo litúrgico. Simboliza o jugo suave de Cristo.',
+    relatedTerms: ['Vestes Litúrgicas', 'Eucaristia', 'Cores Litúrgicas']
+  },
+  {
+    id: 'estola',
+    term: 'Estola',
+    definition: 'Faixa estreita de pano usada pelos ministros ordenados. Diáconos usam transversalmente, sacerdotes e bispos ao redor do pescoço. Símbolo do ministério ordenado.',
+    relatedTerms: ['Vestes Litúrgicas', 'Ordenação', 'Ministério']
+  },
+  {
+    id: 'sobrepeliz',
+    term: 'Sobrepeliz',
+    definition: 'Veste branca ampla e de mangas largas, usada sobre a batina. Também chamada de Cota. Usada em ofícios que não sejam a Eucaristia e por ministros leigos.',
+    relatedTerms: ['Vestes Litúrgicas', 'Batina', 'Liturgia']
+  },
+  {
+    id: 'cota',
+    term: 'Cota',
+    definition: 'Veste litúrgica branca semelhante à sobrepeliz, mas mais curta. Usada sobre a batina por acólitos e outros servidores do altar.',
+    relatedTerms: ['Sobrepeliz', 'Vestes Litúrgicas', 'Acólito']
+  },
+  {
+    id: 'corporal',
+    term: 'Corporal',
+    definition: 'Toalha quadrada de linho branco colocada sobre o altar, sobre a qual são colocados o cálice e a patena durante a celebração eucarística. Deriva de "corpus" (corpo).',
+    relatedTerms: ['Altar', 'Eucaristia', 'Liturgia']
+  },
+  {
+    id: 'pala',
+    term: 'Pala',
+    definition: 'Pequeno quadrado de linho engomado usado para cobrir o cálice durante a Eucaristia.',
+    relatedTerms: ['Cálice', 'Eucaristia', 'Liturgia']
+  },
+  {
+    id: 'purificador',
+    term: 'Purificador',
+    definition: 'Pequeno pano de linho usado para limpar o cálice e a patena durante e após a Eucaristia.',
+    relatedTerms: ['Cálice', 'Patena', 'Eucaristia']
+  },
+  {
+    id: 'sanguineo',
+    term: 'Sanguíneo',
+    definition: 'Pequeno pano usado para enxugar os lábios após comungar o vinho consagrado.',
+    relatedTerms: ['Eucaristia', 'Comunhão', 'Liturgia']
+  },
+  {
+    id: 'credencia',
+    term: 'Credência',
+    definition: 'Mesa lateral ou nicho no santuário onde são colocados os vasos sagrados, vinho, água e outros objetos litúrgicos antes e durante a celebração.',
+    relatedTerms: ['Santuário', 'Liturgia', 'Eucaristia']
+  },
+  {
+    id: 'lavabo',
+    term: 'Lavabo',
+    definition: 'Jarra e bacia usadas pelo celebrante para lavar as mãos durante a Eucaristia, após o ofertório. Do latim "lavarei".',
+    relatedTerms: ['Eucaristia', 'Liturgia', 'Purificação']
+  },
+  {
+    id: 'via-crucis',
+    term: 'Via Crucis',
+    definition: 'Também chamada Via Sacra ou Caminho da Cruz. Devoção que acompanha os 14 passos (estações) da Paixão de Cristo, desde a condenação até o sepultamento. Popular especialmente na Quaresma.',
+    relatedTerms: ['Paixão', 'Quaresma', 'Devoção']
+  },
+  {
+    id: 'cores-liturgicas',
+    term: 'Cores Litúrgicas',
+    definition: 'Sistema de cores usado nas vestes e paramentos conforme o tempo litúrgico: Branco (Natal, Páscoa, festas), Roxo (Advento, Quaresma), Vermelho (Pentecostes, mártires), Verde (Tempo Comum), Preto (luto, opcional).',
+    relatedTerms: ['Ano Litúrgico', 'Vestes Litúrgicas', 'Liturgia']
+  },
+  {
+    id: 'presenca-real',
+    term: 'Presença Real',
+    definition: 'Doutrina de que Cristo está verdadeiramente presente na Eucaristia. Os anglicanos afirmam a presença real sem definir precisamente o modo, rejeitando tanto a transubstanciação quanto o memorialismo puro.',
+    relatedTerms: ['Eucaristia', 'Teologia', 'Sacramento']
+  },
+  {
+    id: 'consubstanciacao',
+    term: 'Consubstanciação',
+    definition: 'Teoria luterana de que o corpo e sangue de Cristo coexistem com o pão e vinho na Eucaristia. Os anglicanos geralmente não adotam este termo específico.',
+    relatedTerms: ['Eucaristia', 'Presença Real', 'Teologia']
+  },
+  {
+    id: 'justificacao-fe',
+    term: 'Justificação pela Fé',
+    definition: 'Doutrina central da Reforma de que somos justificados (declarados justos) diante de Deus pela fé em Cristo, não pelas obras. Enfatizada nos 39 Artigos de Religião.',
+    relatedTerms: ['Reforma', 'Salvação', '39 Artigos de Religião']
+  },
+  {
+    id: 'graca-preveniente',
+    term: 'Graça Preveniente',
+    definition: 'A graça de Deus que precede e capacita a resposta humana. A graça que vem antes da conversão, preparando o coração.',
+    relatedTerms: ['Graça', 'Salvação', 'Teologia']
+  },
+  {
+    id: 'santificacao',
+    term: 'Santificação',
+    definition: 'O processo contínuo de crescimento em santidade e semelhança a Cristo após a justificação, pela obra do Espírito Santo.',
+    relatedTerms: ['Salvação', 'Espírito Santo', 'Crescimento']
+  },
+  {
+    id: 'predestinacao',
+    term: 'Predestinação',
+    definition: 'A doutrina de que Deus, em sua presciência, escolheu aqueles que serão salvos. Os 39 Artigos afirmam uma forma moderada de predestinação, evitando tanto o calvinismo extremo quanto o pelagianismo.',
+    relatedTerms: ['Salvação', 'Calvinismo', 'Doutrina']
+  },
+  {
+    id: 'scriptura-sola',
+    term: 'Sola Scriptura',
+    definit ion: 'Princípio reformado de que a Escritura é a autoridade suprema em matéria de fé. Os anglicanos interpretam isso junto com a tradição e a razão (o tripé anglicano).',
+    relatedTerms: ['Escrituras', 'Reforma', 'Autoridade']
+  },
+  {
+    id: 'tripe-anglicano',
+    term: 'Tripé Anglicano',
+    definition: 'O método teológico anglicano que usa três fontes: Escritura (primária), Tradição e Razão. Também chamado de "três pernas do banquinho" (three-legged stool). Atribuído a Richard Hooker.',
+    relatedTerms: ['Teologia', 'Hooker', 'Método']
+  },
+  {
+    id: 'liturgia-horas',
+    term: 'Liturgia das Horas',
+    definition: 'O ciclo diário de oração da igreja, também chamado Ofício Divino. No anglicanismo, consiste principalmente em Oração Matutina e Vespertina, baseadas nas antigas horas monásticas.',
+    relatedTerms: ['Oração', 'Horas Canônicas', 'Ofício Divino']
+  },
+  {
+    id: 'oracoes-diarias',
+    term: 'Orações Diárias',
+    definition: 'O sistema anglicano de oração pública regular, especialmente Oração Matutina (Matinas) e Oração Vespertina (Evensong), baseado no Livro de Oração Comum.',
+    relatedTerms: ['Liturgia das Horas', 'Livro de Oração Comum', 'Oração']
+  },
+  {
+    id: 'salterio',
+    term: 'Saltério',
+    definition: 'O Livro dos Salmos, especialmente quando organizado para uso litúrgico. O Livro de Oração Comum contém o Saltério completo dividido em ciclos de leitura.',
+    relatedTerms: ['Salmo', 'Oração', 'Liturgia']
+  },
+  {
+    id: 'lectio-divina',
+    term: 'Lectio Divina',
+    definition: 'Método contemplativo de leitura das Escrituras que envolve quatro passos: leitura (lectio), meditação (meditatio), oração (oratio) e contemplação (contemplatio).',
+    relatedTerms: ['Escrituras', 'Oração', 'Meditação']
+  },
+  {
+    id: 'santoral',
+    term: 'Santoral',
+    definition: 'O calendário de santos e heróis da fé comemorados ao longo do ano litúrgico. Inclui apóstolos, mártires, teólogos e missionários.',
+    relatedTerms: ['Ano Litúrgico', 'Santos', 'Calendário']
+  },
+  {
+    id: 'comunhao-santos',
+    term: 'Comunhão dos Santos',
+    definition: 'A comunhão espiritual de todos os fiéis, vivos e mortos, unidos em Cristo. Confessada no Credo dos Apóstolos.',
+    relatedTerms: ['Credo', 'Igreja', 'Santos']
+  },
+  {
+    id: 'reverencia',
+    term: 'Reverência',
+    definition: 'Inclinação respeitosa da cabeça ou genuflexão (ajoelhar-se brevemente) feita em direção ao altar ou ao Santíssimo Sacramento como sinal de adoração.',
+    relatedTerms: ['Liturgia', 'Adoração', 'Ritual']
+  },
+  {
+    id: 'genuflexao',
+    term: 'Genuflexão',
+    definition: 'Ato de dobrar o joelho direito até o chão em sinal de adoração, especialmente diante do Santíssimo Sacramento reservado.',
+    relatedTerms: ['Adoração', 'Eucaristia', 'Reverência']
+  },
+  {
+    id: 'sinal-cruz',
+    term: 'Sinal da Cruz',
+    definition: 'Gesto devocional traçando a cruz sobre si mesmo (testa, peito e ombros) invocando a Trindade. Usado em momentos de bênção e oração.',
+    relatedTerms: ['Cruz', 'Devoção', 'Trindade']
+  },
+  {
+    id: 'agua-benta',
+    term: 'Água Benta',
+    definition: 'Água abençoada pelo sacerdote ou bispo, usada para aspersão, bênçãos e recordação do batismo.',
+    relatedTerms: ['Bênção', 'Batismo', 'Aspersão']
+  },
+  {
+    id: 'tabernáculo',
+    term: 'Tabernáculo',
+    definition: 'Receptáculo seguro no altar ou próximo a ele onde o Santíssimo Sacramento é reservado para comunhão dos enfermos e adoração. Comum em igrejas Anglo-Católicas.',
+    relatedTerms: ['Eucaristia', 'Reserva', 'Alta Igreja']
+  },
+  {
+    id: 'ambry',
+    term: 'Ambry',
+    definition: 'Nicho ou armário na parede do santuário onde são guardados os santos óleos (crisma, óleo dos catecúmenos, óleo dos enfermos).',
+    relatedTerms: ['Óleos Santos', 'Santuário', 'Crisma']
+  },
+  {
+    id: 'lampada-santuario',
+    term: 'Lâmpada do Santuário',
+    definition: 'Vela ou lamparina que fica sempre acesa próxima ao altar ou tabernáculo, indicando a presença do Santíssimo Sacramento reservado.',
+    relatedTerms: ['Santuário', 'Eucaristia', 'Tabernáculo']
+  },
+  {
+    id: 'retabulo',
+    term: 'Retábulo',
+    definition: 'Estrutura decorativa, geralmente com imagens religiosas, colocada atrás e acima do altar.',
+    relatedTerms: ['Altar', 'Arte Sacra', 'Arquitetura']
+  },
+  {
+    id: 'vitral',
+    term: 'Vitral',
+    definition: 'Janela decorativa feita de pedaços coloridos de vidro, comum em igrejas, frequentemente retratando cenas bíblicas ou santos.',
+    relatedTerms: ['Arte Sacra', 'Arquitetura', 'Igreja']
+  },
+  {
+    id: 'roseta',
+    term: 'Rosácea',
+    definition: 'Janela circular com vitrais em padrão radial, comum em catedrais góticas.',
+    relatedTerms: ['Vitral', 'Catedral', 'Arquitetura']
+  },
+  {
+    id: 'campanario',
+    term: 'Campanário',
+    definition: 'Torre de igreja que abriga os sinos, usados para convocar os fiéis ao culto e marcar as horas.',
+    relatedTerms: ['Sino', 'Igreja', 'Arquitetura']
+  },
+  {
+    id: 'sino',
+    term: 'Sino',
+    definition: 'Instrumento de bronze tocado para convocar os fiéis ao culto, anunciar eventos litúrgicos ou marcar momentos importantes da Eucaristia.',
+    relatedTerms: ['Campanário', 'Liturgia', 'Tradição']
   }
 ]
