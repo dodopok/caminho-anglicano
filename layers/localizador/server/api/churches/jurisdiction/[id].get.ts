@@ -4,7 +4,14 @@ import type { ChurchWithJurisdiction } from '~/server/types/supabase'
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
-  const query = getQuery(event)
+  const jurisdictionId = getRouterParam(event, 'id')
+
+  if (!jurisdictionId) {
+    throw createError({
+      statusCode: 400,
+      message: 'ID da jurisdição é obrigatório'
+    })
+  }
 
   // Criar cliente Supabase no servidor
   const supabase = createClient<Database>(
@@ -13,24 +20,15 @@ export default defineEventHandler(async (event) => {
   )
 
   try {
-    // Construir query base (todas as igrejas)
-    let queryBuilder = supabase
+    // Buscar igrejas da jurisdição
+    const { data, error } = await supabase
       .from('churches')
       .select(`
         *,
         jurisdiction:jurisdictions(*)
       `)
+      .eq('jurisdiction_id', jurisdictionId)
       .order('name')
-
-    // Aplicar filtro de busca se fornecido
-    if (query.search) {
-      const searchTerm = query.search as string
-      queryBuilder = queryBuilder.or(
-        `name.ilike.%${searchTerm}%,city.ilike.%${searchTerm}%,address.ilike.%${searchTerm}%`
-      )
-    }
-
-    const { data, error } = await queryBuilder
 
     if (error) {
       throw error
@@ -71,10 +69,10 @@ export default defineEventHandler(async (event) => {
 
     return churches
   } catch (error) {
-    console.error('Error fetching churches:', error)
+    console.error('Error fetching churches by jurisdiction:', error)
     throw createError({
       statusCode: 500,
-      message: 'Erro ao buscar igrejas'
+      message: 'Erro ao buscar igrejas da jurisdição'
     })
   }
 })
