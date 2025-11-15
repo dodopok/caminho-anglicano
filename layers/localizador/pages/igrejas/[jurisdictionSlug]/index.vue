@@ -13,9 +13,6 @@ const churches = ref<Church[]>([])
 const loading = ref(true)
 const error = ref<string | null>(null)
 
-// Search filter
-const searchQuery = ref('')
-
 onMounted(async () => {
   try {
     // Fetch all jurisdictions
@@ -39,23 +36,11 @@ onMounted(async () => {
   }
 })
 
-// Filtered churches by search
-const filteredChurches = computed(() => {
-  if (!searchQuery.value) return churches.value
-
-  const query = searchQuery.value.toLowerCase()
-  return churches.value.filter(c =>
-    c.name.toLowerCase().includes(query) ||
-    c.city.toLowerCase().includes(query) ||
-    c.address.toLowerCase().includes(query)
-  )
-})
-
 // Group churches by state
 const churchesByState = computed(() => {
   const grouped = new Map<string, Church[]>()
 
-  filteredChurches.value.forEach(church => {
+  churches.value.forEach(church => {
     const state = church.state
     if (!grouped.has(state)) {
       grouped.set(state, [])
@@ -206,7 +191,7 @@ useHead({
           </div>
 
           <!-- Stats -->
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div class="bg-gray-50 rounded-lg p-4">
               <div class="text-3xl font-bold" :style="{ color: jurisdiction.color }">
                 {{ churches.length }}
@@ -225,27 +210,13 @@ useHead({
               </div>
             </div>
           </div>
-
-          <!-- Search -->
-          <div class="max-w-md">
-            <label for="search" class="block text-sm font-medium text-gray-700 mb-1">
-              Buscar igreja
-            </label>
-            <input
-              id="search"
-              v-model="searchQuery"
-              type="text"
-              placeholder="Nome, cidade ou endereço..."
-              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            >
-          </div>
         </div>
       </div>
 
       <!-- Churches list -->
       <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <!-- No results -->
-        <div v-if="filteredChurches.length === 0" class="text-center py-12">
+        <div v-if="churches.length === 0" class="text-center py-12">
           <svg class="w-16 h-16 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
@@ -253,7 +224,7 @@ useHead({
             Nenhuma igreja encontrada
           </h3>
           <p class="text-gray-600">
-            {{ searchQuery ? 'Tente buscar por outros termos' : 'Esta jurisdição ainda não possui igrejas cadastradas' }}
+            Esta jurisdição ainda não possui igrejas cadastradas
           </p>
         </div>
 

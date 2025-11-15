@@ -61,7 +61,7 @@ onMounted(() => {
       <div class="flex justify-center">
         <blockquote
           class="instagram-media"
-          data-instgrm-permalink="https://www.instagram.com/{{ cleanUsername }}/"
+          :data-instgrm-permalink="`https://www.instagram.com/${cleanUsername}/`"
           data-instgrm-version="14"
           style="max-width: 540px; width: 100%;"
         >
