@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     './layers/base',
     './layers/localizador',
     './layers/locs',
+    './layers/glossario',
     './layers/dashboard',
     './layers/admin'
   ],
