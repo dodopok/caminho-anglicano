@@ -84,6 +84,8 @@
         </NuxtLink>
       </div>
     </main>
+
+    <BaseFooter />
   </div>
 </template>
 

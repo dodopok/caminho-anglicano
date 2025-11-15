@@ -198,6 +198,8 @@
         </p>
       </div>
     </main>
+
+    <BaseFooter />
   </div>
 </template>
 

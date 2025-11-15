@@ -71,6 +71,8 @@
         </a>
       </div>
     </main>
+
+    <BaseFooter />
   </div>
 </template>
 

@@ -227,12 +227,6 @@ useHead({
       </div>
     </main>
 
-    <footer class="bg-white border-t border-slate-200 mt-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <p class="text-center text-slate-600">
-          © {{ new Date().getFullYear() }} Caminho Anglicano. Todos os direitos reservados.
-        </p>
-      </div>
-    </footer>
+    <BaseFooter />
   </div>
 </template>
