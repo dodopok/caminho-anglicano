@@ -133,7 +133,7 @@ async function main() {
         // Update church with slug
         const { error: updateError } = await supabase
           .from('churches')
-          .update({ slug })
+          .update({ slug } as any)
           .eq('id', church.id)
 
         if (updateError) {
