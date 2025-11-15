@@ -3650,12 +3650,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Arcebispo de Cantuária', 'Ecumenismo', 'Teologia Social']
   },
   {
-    id: 'tempo-comum',
-    term: 'Tempo Comum',
-    definition: 'Períodos do ano litúrgico que não fazem parte dos ciclos de Natal-Epifania ou Quaresma-Páscoa-Pentecostes.',
-    relatedTerms: ['Ano Litúrgico', 'Calendário Litúrgico']
-  },
-  {
     id: 'teologia',
     term: 'Teologia',
     definition: 'Estudo sistemático e reflexivo sobre Deus, sua revelação e sua relação com a humanidade e a criação.',
