@@ -131,9 +131,10 @@ async function main() {
         }
 
         // Update church with slug
+        // @ts-ignore - Type issue with Supabase update
         const { error: updateError } = await supabase
           .from('churches')
-          .update({ slug } as any)
+          .update({ slug })
           .eq('id', church.id)
 
         if (updateError) {

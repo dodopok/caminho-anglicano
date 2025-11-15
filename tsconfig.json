@@ -5,5 +5,8 @@
     "noImplicitAny": false,
     "strictNullChecks": false,
     "strict": false
-  }
+  },
+  "exclude": [
+    "scripts/**/*"
+  ]
 }
