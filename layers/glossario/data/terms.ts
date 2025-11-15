@@ -3750,5 +3750,185 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Purificador',
     definition: 'Pequeno pano de linho usado para limpar o cálice e a patena durante e após a celebração eucarística.',
     relatedTerms: ['Cálice', 'Patena', 'Eucaristia']
+  },
+  {
+    id: 'quadragesima',
+    term: 'Quadragésima',
+    definition: 'Período de quarenta dias que antecede a Páscoa, tempo de penitência e preparação conhecido como Quaresma.',
+    relatedTerms: ['Quaresma', 'Páscoa', 'Ano Litúrgico']
+  },
+  {
+    id: 'quaresma',
+    term: 'Quaresma',
+    definition: 'Tempo litúrgico de quarenta dias (excluindo domingos) que precede a Páscoa, dedicado à penitência, jejum e preparação espiritual.',
+    relatedTerms: ['Páscoa', 'Cinzas', 'Ano Litúrgico']
+  },
+  {
+    id: 'racional',
+    term: 'Racional',
+    definition: 'Peça ornamental usada pelos bispos sobre o peito, semelhante ao usado pelos sumos sacerdotes do Antigo Testamento.',
+    relatedTerms: ['Paramentos', 'Bispo', 'Vestes Episcopais']
+  },
+  {
+    id: 'razao',
+    term: 'Razão',
+    definition: 'Uma das três fontes da teologia anglicana, juntamente com a Escritura e a Tradição, formando o tripé metodológico anglicano.',
+    relatedTerms: ['Escritura', 'Tradição', 'Teologia Anglicana']
+  },
+  {
+    id: 'relicario',
+    term: 'Relicário',
+    definition: 'Recipiente ou cofre onde são guardadas relíquias de santos ou objetos sagrados.',
+    relatedTerms: ['Relíquias', 'Santos', 'Devoção']
+  },
+  {
+    id: 'ressurreicao',
+    term: 'Ressurreição',
+    definition: 'Evento central da fé cristã: a vitória de Cristo sobre a morte, celebrada na Páscoa.',
+    relatedTerms: ['Páscoa', 'Cristo', 'Salvação']
+  },
+  {
+    id: 'retabulo',
+    term: 'Retábulo',
+    definition: 'Estrutura decorativa colocada atrás do altar, geralmente contendo pinturas, esculturas ou relevos religiosos.',
+    relatedTerms: ['Altar', 'Arquitetura', 'Arte Sacra']
+  },
+  {
+    id: 'reuniao-primazes',
+    term: 'Reunião dos Primazes',
+    definition: 'Encontro dos líderes das Províncias da Comunhão Anglicana, um dos quatro Instrumentos de Unidade do Anglicanismo.',
+    relatedTerms: ['Comunhão Anglicana', 'Primaz', 'Laços de Afeição']
+  },
+  {
+    id: 'ridley-nicholas',
+    term: 'Ridley, Nicholas',
+    definition: 'Bispo de Londres (1500-1555), reformador inglês martirizado junto com Hugh Latimer em Oxford durante o reinado de Maria I.',
+    relatedTerms: ['Reforma Inglesa', 'Mártires', 'Latimer Hugh', 'Cranmer Thomas']
+  },
+  {
+    id: 'rito',
+    term: 'Rito',
+    definition: 'Ordem estabelecida para a celebração de uma cerimônia religiosa. Também se refere às diferentes tradições litúrgicas (Rito Romano, Rito Bizantino, etc.).',
+    relatedTerms: ['Liturgia', 'Cerimônia', 'Tradição']
+  },
+  {
+    id: 'rochete',
+    term: 'Rochete',
+    definition: 'Veste branca semelhante à sobrepeliz, mas com mangas mais justas, usada por bispos sob a quimera.',
+    relatedTerms: ['Paramentos', 'Bispo', 'Quimera']
+  },
+  {
+    id: 'sacramentario',
+    term: 'Sacramentário',
+    definition: 'Livro litúrgico que contém as orações presidenciais para a celebração dos sacramentos e da Eucaristia.',
+    relatedTerms: ['Liturgia', 'Sacramentos', 'Livro Litúrgico']
+  },
+  {
+    id: 'sacramento',
+    term: 'Sacramento',
+    definition: 'Sinal exterior e visível de uma graça interior e espiritual. Os anglicanos reconhecem sete sacramentos, sendo Batismo e Eucaristia os dois maiores.',
+    relatedTerms: ['Batismo', 'Eucaristia', 'Graça']
+  },
+  {
+    id: 'sacrario',
+    term: 'Sacrário',
+    definition: 'Pequeno cofre ou armário onde se guardam as hóstias consagradas. Também chamado de tabernáculo.',
+    relatedTerms: ['Hóstia', 'Eucaristia', 'Reserva Eucarística']
+  },
+  {
+    id: 'sacristao',
+    term: 'Sacristão',
+    definition: 'Pessoa responsável pela sacristia e pelo cuidado dos objetos litúrgicos e paramentos.',
+    relatedTerms: ['Sacristia', 'Paramentos', 'Ministério Leigo']
+  },
+  {
+    id: 'sacristia',
+    term: 'Sacristia',
+    definition: 'Dependência da igreja onde se guardam os paramentos, vasos sagrados e onde o clero se reveste para as celebrações.',
+    relatedTerms: ['Paramentos', 'Vasos Sagrados', 'Sacristão']
+  },
+  {
+    id: 'sanctus',
+    term: 'Sanctus',
+    definition: 'Hino de louvor cantado ou recitado durante a Oração Eucarística: "Santo, Santo, Santo é o Senhor Deus do Universo".',
+    relatedTerms: ['Eucaristia', 'Oração Eucarística', 'Hino']
+  },
+  {
+    id: 'santuario',
+    term: 'Santuário',
+    definition: 'Área mais sagrada do templo, onde se encontra o altar. Também designa lugares de especial devoção.',
+    relatedTerms: ['Altar', 'Presbitério', 'Templo']
+  },
+  {
+    id: 'se',
+    term: 'Sé',
+    definition: 'Sede de uma diocese, onde está localizada a catedral do bispo.',
+    relatedTerms: ['Diocese', 'Catedral', 'Bispo']
+  },
+  {
+    id: 'semana-santa',
+    term: 'Semana Santa',
+    definition: 'Última semana da Quaresma, que começa no Domingo de Ramos e culmina na Páscoa, celebrando a Paixão, Morte e Ressurreição de Cristo.',
+    relatedTerms: ['Páscoa', 'Quaresma', 'Tríduo Pascal']
+  },
+  {
+    id: 'sidesman',
+    term: 'Sidesman',
+    definition: 'Auxiliar leigo que ajuda na recepção dos fiéis e na organização do culto, especialmente na tradição anglicana britânica.',
+    relatedTerms: ['Ministério Leigo', 'Culto', 'Recepção']
+  },
+  {
+    id: 'simbolo',
+    term: 'Símbolo',
+    definition: 'Profissão de fé, credo. Os principais símbolos cristãos são o Apostólico, o Niceno e o Atanasiano.',
+    relatedTerms: ['Credo', 'Fé', 'Confissão']
+  },
+  {
+    id: 'sinais-tempo',
+    term: 'Sinais dos Tempos',
+    definition: 'Expressão que se refere aos acontecimentos históricos e sociais através dos quais Deus se manifesta e desafia a Igreja.',
+    relatedTerms: ['Profecia', 'Missão', 'Teologia']
+  },
+  {
+    id: 'sinodo',
+    term: 'Sínodo',
+    definition: 'Assembleia eclesiástica de uma diocese ou província para tratar de assuntos doutrinários, pastorais e administrativos.',
+    relatedTerms: ['Diocese', 'Província', 'Governo Eclesiástico']
+  },
+  {
+    id: 'sobrepeliz',
+    term: 'Sobrepeliz',
+    definition: 'Veste branca de mangas largas usada sobre a batina por clérigos e acólitos durante os ofícios litúrgicos.',
+    relatedTerms: ['Paramentos', 'Batina', 'Vestes Litúrgicas']
+  },
+  {
+    id: 'socialismo-cristao',
+    term: 'Socialismo Cristão',
+    definition: 'Movimento teológico e social do século XIX que buscava aplicar os princípios cristãos à questão social, enfatizando a justiça e a solidariedade.',
+    relatedTerms: ['Maurice John Frederick Denison', 'Kingsley Charles', 'Teologia Social']
+  },
+  {
+    id: 'solene',
+    term: 'Solene',
+    definition: 'Termo usado para descrever celebrações litúrgicas realizadas com maior pompa e cerimônia.',
+    relatedTerms: ['Liturgia', 'Festa', 'Solenidade']
+  },
+  {
+    id: 'strachan-harry',
+    term: 'Strachan, Harry',
+    definition: 'Terceiro Bispo da Igreja Episcopal do Brasil (1925-1949). Contribuiu significativamente para o desenvolvimento da Igreja no país.',
+    relatedTerms: ['Bispo', 'História Anglicana Brasileira', 'IEAB']
+  },
+  {
+    id: 'sucessao-apostolica',
+    term: 'Sucessão Apostólica',
+    definition: 'Doutrina segundo a qual os bispos são sucessores diretos dos apóstolos através de uma cadeia ininterrupta de ordenações.',
+    relatedTerms: ['Bispo', 'Ordenação', 'Apostolicidade']
+  },
+  {
+    id: 'sufraganeo',
+    term: 'Sufragâneo',
+    definition: 'Bispo auxiliar que não tem direito automático de sucessão ao bispo diocesano.',
+    relatedTerms: ['Bispo', 'Diocese', 'Bispo Coadjutor']
   }
 ]
