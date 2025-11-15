@@ -37,7 +37,7 @@ export default defineNuxtConfig({
     exclude: [
       '/admin/**',
       '/dashboard/**',
-      '/igrejas/**/portal-do-douglas'
+      '/portal-do-douglas'
     ],
     urls: async () => {
       // Importar dinamicamente os termos do glossário
@@ -54,9 +54,11 @@ export default defineNuxtConfig({
       // Rotas de jurisdições
       const jurisdictionSlugs = [
         'ieab',
-        'acab',
-        'ceab',
-        'inab'
+        'reb',
+        'iecb',
+        'iarb',
+        'ieub',
+        'iab'
       ]
 
       const jurisdictionRoutes = jurisdictionSlugs.map(slug => ({
