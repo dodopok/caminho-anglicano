@@ -4098,5 +4098,179 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Zona',
     definition: 'Subdivisão administrativa de uma diocese, geralmente composta por várias paróquias sob a coordenação de um vigário zonal.',
     relatedTerms: ['Diocese', 'Paróquia', 'Administração']
+  },
+  {
+    id: 'tippet',
+    term: 'Tippet',
+    definition: 'Faixa preta de tecido usada por ministros anglicanos sobre a sobrepeliz, pendurada ao redor do pescoço e caindo sobre o peito. Distintivo do clero anglicano.',
+    relatedTerms: ['Sobrepeliz', 'Vestes Litúrgicas', 'Clero Anglicano']
+  },
+  {
+    id: 'quimera',
+    term: 'Quimera',
+    definition: 'Veste de seda vermelha ou preta usada por bispos anglicanos sobre o rochete. Sem mangas ou com mangas abertas, é uma das insígnias episcopais anglicanas.',
+    relatedTerms: ['Rochete', 'Bispo', 'Vestes Episcopais']
+  },
+  {
+    id: 'manipulo',
+    term: 'Manípulo',
+    definition: 'Faixa ornamental usada sobre o braço esquerdo do celebrante, tradicional nas vestes católicas romanas. Pouco usado no anglicanismo contemporâneo.',
+    relatedTerms: ['Estola', 'Paramentos', 'Vestes Litúrgicas']
+  },
+  {
+    id: 'capa-pluvial',
+    term: 'Capa Pluvial',
+    definition: 'Capa semicircular ampla e ornamentada, usada em procissões e cerimônias solenes. Também chamada de Cope em inglês.',
+    relatedTerms: ['Cope', 'Procissão', 'Paramentos']
+  },
+  {
+    id: 'cope',
+    term: 'Cope',
+    definition: 'Nome inglês da capa pluvial. Veste cerimonial ampla usada em procissões, bênçãos e ofícios solenes.',
+    relatedTerms: ['Capa Pluvial', 'Vestes Litúrgicas', 'Solenidade']
+  },
+  {
+    id: 'cruz-peitoral',
+    term: 'Cruz Peitoral',
+    definition: 'Cruz usada sobre o peito, pendurada em uma corrente, como insígnia episcopal. Símbolo da autoridade e ministério do bispo.',
+    relatedTerms: ['Bispo', 'Insígnias Episcopais', 'Cruz']
+  },
+  {
+    id: 'zucheto',
+    term: 'Zucheto',
+    definition: 'Pequena cobertura redonda para a cabeça, também chamada de solidéu. Usada por bispos (roxa), cardeais (vermelha) e o papa (branca).',
+    relatedTerms: ['Solidéu', 'Bispo', 'Paramentos']
+  },
+  {
+    id: 'solideu',
+    term: 'Solidéu',
+    definition: 'Nome português do zucheto. Pequena calota que cobre o topo da cabeça, usada por prelados.',
+    relatedTerms: ['Zucheto', 'Bispo', 'Vestes Episcopais']
+  },
+  {
+    id: 'faixa',
+    term: 'Faixa',
+    definition: 'Cinto largo de tecido usado sobre a batina, geralmente em cor diferente conforme a posição eclesiástica: preta para padres, roxa para bispos, vermelha para cardeais.',
+    relatedTerms: ['Batina', 'Paramentos', 'Clero']
+  },
+  {
+    id: 'manteleta',
+    term: 'Manteleta',
+    definition: 'Veste curta sem mangas que cobre os ombros e desce até os joelhos, usada por alguns prelados.',
+    relatedTerms: ['Paramentos', 'Vestes Litúrgicas']
+  },
+  {
+    id: 'muceta',
+    term: 'Muceta',
+    definition: 'Pequena capa que cobre os ombros, geralmente com capuz vestigial, usada por bispos e certos cônegos.',
+    relatedTerms: ['Mozeta', 'Bispo', 'Paramentos']
+  },
+  {
+    id: 'veste-coral',
+    term: 'Veste Coral',
+    definition: 'Roupa usada pelos clérigos no coro durante os ofícios, normalmente composta de batina e sobrepeliz.',
+    relatedTerms: ['Batina', 'Sobrepeliz', 'Ofício Divino']
+  },
+  {
+    id: 'canterbury-cap',
+    term: 'Canterbury Cap',
+    definition: 'Chapéu quadrado de tecido macio, preto, tradicionalmente usado por clérigos anglicanos. Também chamado de "square cap".',
+    relatedTerms: ['Paramentos', 'Clero Anglicano', 'Vestes']
+  },
+  {
+    id: 'preaching-scarf',
+    term: 'Preaching Scarf',
+    definition: 'Tiras longas de tecido preto usadas por pregadores anglicanos, penduradas ao redor do pescoço. Também chamadas de "bands" ou "Geneva bands".',
+    relatedTerms: ['Bands', 'Pregação', 'Clero Anglicano']
+  },
+  {
+    id: 'bands',
+    term: 'Bands',
+    definition: 'Duas tiras brancas de linho que pendem do colarinho clerical, usadas especialmente por ministros protestantes e anglicanos durante a pregação.',
+    relatedTerms: ['Preaching Scarf', 'Geneva Bands', 'Pregação']
+  },
+  {
+    id: 'geneva-gown',
+    term: 'Geneva Gown',
+    definition: 'Toga acadêmica preta usada por ministros protestantes e anglicanos de tradição reformada para pregar e conduzir o culto.',
+    relatedTerms: ['Toga', 'Pregação', 'Tradição Reformada']
+  },
+  {
+    id: 'capelo-academico',
+    term: 'Capelo Acadêmico',
+    definition: 'Cobertura de ombros com cauda colorida que indica o grau acadêmico, frequentemente usada por clérigos sobre a veste coral.',
+    relatedTerms: ['Academic Hood', 'Vestes Acadêmicas', 'Graus']
+  },
+  {
+    id: 'academic-hood',
+    term: 'Academic Hood',
+    definition: 'Nome inglês do capelo acadêmico. Veste que indica o grau universitário através de suas cores e formato.',
+    relatedTerms: ['Capelo Acadêmico', 'Universidade', 'Graduação']
+  },
+  {
+    id: 'cotta',
+    term: 'Cotta',
+    definition: 'Versão curta da sobrepeliz, com mangas largas, usada especialmente por acólitos e coristas.',
+    relatedTerms: ['Sobrepeliz', 'Acólito', 'Vestes Litúrgicas']
+  },
+  {
+    id: 'ferraiolo',
+    term: 'Ferraiolo',
+    definition: 'Capa longa sem mangas usada por prelados sobre a batina, geralmente de seda preta ou colorida conforme a dignidade.',
+    relatedTerms: ['Capa', 'Prelados', 'Paramentos']
+  },
+  {
+    id: 'gremio',
+    term: 'Grêmio',
+    definition: 'Pano quadrado colocado sobre os joelhos do bispo durante certas cerimônias, especialmente ordenações.',
+    relatedTerms: ['Bispo', 'Ordenação', 'Paramentos']
+  },
+  {
+    id: 'gremial',
+    term: 'Gremial',
+    definition: 'Outro nome para o grêmio. Pano litúrgico usado sobre os joelhos do bispo.',
+    relatedTerms: ['Grêmio', 'Bispo', 'Liturgia']
+  },
+  {
+    id: 'mantelone',
+    term: 'Mantelone',
+    definition: 'Capa longa com capuz usada por bispos e prelados em viagens ou cerimônias externas.',
+    relatedTerms: ['Capa', 'Bispo', 'Vestes']
+  },
+  {
+    id: 'saia',
+    term: 'Saia',
+    definition: 'Veste inferior que vai da cintura aos pés, usada sob a alva ou batina.',
+    relatedTerms: ['Alva', 'Batina', 'Vestes']
+  },
+  {
+    id: 'tunicela',
+    term: 'Tunicela',
+    definition: 'Veste semelhante à dalmática mas mais simples, tradicionalmente usada pelo subdiácono em missas solenes.',
+    relatedTerms: ['Dalmática', 'Subdiácono', 'Missa Solene']
+  },
+  {
+    id: 'sandalia-liturgica',
+    term: 'Sandália Litúrgica',
+    definition: 'Calçado especial usado pelo bispo em missas pontificais solenes, geralmente bordado e ornamentado.',
+    relatedTerms: ['Bispo', 'Pontifical', 'Paramentos']
+  },
+  {
+    id: 'luvas-pontificais',
+    term: 'Luvas Pontificais',
+    definition: 'Luvas litúrgicas usadas pelo bispo em missas pontificais, geralmente bordadas e na cor litúrgica do dia.',
+    relatedTerms: ['Bispo', 'Pontifical', 'Cores Litúrgicas']
+  },
+  {
+    id: 'subcintorio',
+    term: 'Subcintório',
+    definition: 'Cordão usado para prender a alva na cintura antes de colocar o cíngulo.',
+    relatedTerms: ['Alva', 'Cíngulo', 'Paramentos']
+  },
+  {
+    id: 'rational',
+    term: 'Rational',
+    definition: 'Ornamento peitoral quadrado usado por alguns bispos, reminiscente do peitoral do sumo sacerdote hebraico.',
+    relatedTerms: ['Racional', 'Bispo', 'Sumo Sacerdote']
   }
 ]
