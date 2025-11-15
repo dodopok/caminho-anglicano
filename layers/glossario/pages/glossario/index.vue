@@ -313,8 +313,31 @@ const filteredTerms = computed(() => {
     )
   }
 
-  // Ordenar alfabeticamente
-  return terms.sort((a, b) => a.term.localeCompare(b.term))
+  // Ordenar com prioridade para matches exatos
+  return terms.sort((a, b) => {
+    if (searchQuery.value) {
+      const query = searchQuery.value.toLowerCase()
+      const aTermLower = a.term.toLowerCase()
+      const bTermLower = b.term.toLowerCase()
+
+      // Match exato tem prioridade máxima
+      const aExactMatch = aTermLower === query
+      const bExactMatch = bTermLower === query
+
+      if (aExactMatch && !bExactMatch) return -1
+      if (!aExactMatch && bExactMatch) return 1
+
+      // Match que começa com a query tem segunda prioridade
+      const aStartsWith = aTermLower.startsWith(query)
+      const bStartsWith = bTermLower.startsWith(query)
+
+      if (aStartsWith && !bStartsWith) return -1
+      if (!aStartsWith && bStartsWith) return 1
+    }
+
+    // Caso contrário, ordenar alfabeticamente
+    return a.term.localeCompare(b.term)
+  })
 })
 
 // Paginação
