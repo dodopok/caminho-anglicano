@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     typeCheck: true
   },
 
-  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxtjs/sitemap'],
+  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@vite-pwa/nuxt'],
 
   // Configuração do Tailwind
   tailwindcss: {
@@ -77,6 +77,44 @@ export default defineNuxtConfig({
       ]
 
       return [...mainRoutes, ...jurisdictionRoutes, ...glossaryRoutes]
+    }
+  },
+
+  // Configuração do PWA
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: 'Caminho Anglicano',
+      short_name: 'Caminho Anglicano',
+      description: 'Guia completo sobre o anglicanismo no Brasil',
+      theme_color: '#8B4513',
+      background_color: '#ffffff',
+      display: 'standalone',
+      start_url: '/',
+      icons: [
+        {
+          src: '/android-chrome-192x192.png',
+          sizes: '192x192',
+          type: 'image/png'
+        },
+        {
+          src: '/android-chrome-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable'
+        }
+      ]
+    },
+    workbox: {
+      navigateFallback: '/',
+      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+    },
+    client: {
+      installPrompt: true,
+    },
+    devOptions: {
+      enabled: true,
+      type: 'module'
     }
   },
 
