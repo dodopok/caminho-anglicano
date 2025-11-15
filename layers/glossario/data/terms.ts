@@ -1596,5 +1596,635 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Sino',
     definition: 'Instrumento de bronze tocado para convocar os fiéis ao culto, anunciar eventos litúrgicos ou marcar momentos importantes da Eucaristia.',
     relatedTerms: ['Campanário', 'Liturgia', 'Tradição']
+  },
+  {
+    id: 'tempo-pascal',
+    term: 'Tempo Pascal',
+    definition: 'O período de cinquenta dias entre a Páscoa e Pentecostes, celebrando a ressurreição de Cristo. É o tempo de maior alegria no ano litúrgico.',
+    relatedTerms: ['Páscoa', 'Pentecostes', 'Ano Litúrgico']
+  },
+  {
+    id: 'domingo-ramos',
+    term: 'Domingo de Ramos',
+    definition: 'O domingo que inicia a Semana Santa, comemorando a entrada triunfal de Jesus em Jerusalém. A liturgia inclui a bênção e procissão de palmas.',
+    relatedTerms: ['Semana Santa', 'Paixão', 'Procissão']
+  },
+  {
+    id: 'quinta-santa',
+    term: 'Quinta-feira Santa',
+    definition: 'Comemora a instituição da Eucaristia na Última Ceia. Tradicionalmente inclui o lava-pés e o despojamento do altar.',
+    relatedTerms: ['Semana Santa', 'Eucaristia', 'Paixão']
+  },
+  {
+    id: 'sexta-santa',
+    term: 'Sexta-feira Santa',
+    definition: 'Comemora a crucificação e morte de Jesus Cristo. Dia de jejum e abstinência, com liturgia solene da Paixão. Não há celebração eucarística.',
+    relatedTerms: ['Semana Santa', 'Paixão', 'Cruz']
+  },
+  {
+    id: 'sabado-santo',
+    term: 'Sábado Santo',
+    definition: 'Dia de silêncio e espera entre a morte e ressurreição de Cristo. Culmina com a Vigília Pascal na noite.',
+    relatedTerms: ['Semana Santa', 'Vigília Pascal', 'Páscoa']
+  },
+  {
+    id: 'triduo-pascal',
+    term: 'Tríduo Pascal',
+    definition: 'Os três dias santos mais importantes do ano litúrgico: Quinta-feira Santa, Sexta-feira Santa e Sábado Santo até a Vigília Pascal.',
+    relatedTerms: ['Semana Santa', 'Páscoa', 'Ano Litúrgico']
+  },
+  {
+    id: 'oitava-pascoa',
+    term: 'Oitava de Páscoa',
+    definition: 'Os oito dias após a Páscoa, celebrados como uma única grande festa. Estende a solenidade pascal.',
+    relatedTerms: ['Páscoa', 'Tempo Pascal', 'Solenidade']
+  },
+  {
+    id: 'solenidade',
+    term: 'Solenidade',
+    definition: 'O nível mais alto de celebração litúrgica, como Natal, Páscoa, Pentecostes e grandes festas. Tem precedência sobre outros dias.',
+    relatedTerms: ['Festa', 'Ano Litúrgico', 'Liturgia']
+  },
+  {
+    id: 'festa',
+    term: 'Festa',
+    definition: 'Celebração litúrgica de segundo nível, honrando eventos importantes da vida de Cristo, Maria ou santos principais.',
+    relatedTerms: ['Solenidade', 'Memória', 'Ano Litúrgico']
+  },
+  {
+    id: 'memoria',
+    term: 'Memória',
+    definition: 'Celebração litúrgica de terceiro nível, recordando santos e eventos menores. Pode ser obrigatória ou opcional.',
+    relatedTerms: ['Festa', 'Santoral', 'Ano Litúrgico']
+  },
+  {
+    id: 'ferula',
+    term: 'Férula',
+    definition: 'Bastão cerimonial alto com cruz usado pelo Papa e, ocasionalmente, por outros bispos em celebrações solenes. Diferente do báculo pastoral.',
+    relatedTerms: ['Báculo', 'Bispo', 'Liturgia']
+  },
+  {
+    id: 'anel-episcopal',
+    term: 'Anel Episcopal',
+    definition: 'Anel usado pelo bispo como sinal de sua união com a igreja diocesana, recebido na consagração episcopal.',
+    relatedTerms: ['Bispo', 'Ordenação', 'Símbolos']
+  },
+  {
+    id: 'peitoral',
+    term: 'Peitoral',
+    definition: 'Cruz usada sobre o peito pelos bispos, suspensa por uma corrente. Símbolo do ofício episcopal.',
+    relatedTerms: ['Bispo', 'Cruz', 'Vestes Litúrgicas']
+  },
+  {
+    id: 'paramentos',
+    term: 'Paramentos',
+    definition: 'Termo geral para as vestes litúrgicas e tecidos do altar (toalhas, corporais, palas) usados na liturgia.',
+    relatedTerms: ['Vestes Litúrgicas', 'Altar', 'Liturgia']
+  },
+  {
+    id: 'oleo-catecumenos',
+    term: 'Óleo dos Catecúmenos',
+    definition: 'Óleo consagrado usado na preparação para o batismo, ungindo os catecúmenos antes de receberem o sacramento.',
+    relatedTerms: ['Batismo', 'Catecúmeno', 'Óleos Santos']
+  },
+  {
+    id: 'sacramentais',
+    term: 'Sacramentais',
+    definition: 'Sinais sagrados (bênçãos, objetos, ações) que preparam para receber os frutos dos sacramentos. Incluem água benta, cinzas, palmas, rosários.',
+    relatedTerms: ['Sacramento', 'Bênção', 'Devoção']
+  },
+  {
+    id: 'exequias',
+    term: 'Exéquias',
+    definition: 'O rito funeral completo da igreja, incluindo vigília, liturgia funeral e sepultamento. Também chamado de Ofício dos Mortos.',
+    relatedTerms: ['Funeral', 'Sepultamento', 'Morte']
+  },
+  {
+    id: 'bencao-nupcial',
+    term: 'Bênção Nupcial',
+    definition: 'A oração solene de bênção sobre os noivos durante a celebração do matrimônio.',
+    relatedTerms: ['Matrimônio', 'Casamento', 'Bênção']
+  },
+  {
+    id: 'proclamacao',
+    term: 'Proclamação',
+    definition: 'A leitura pública das Escrituras na liturgia, especialmente do Evangelho, feita com solenidade.',
+    relatedTerms: ['Escrituras', 'Evangelho', 'Liturgia']
+  },
+  {
+    id: 'homiliario',
+    term: 'Homiliário',
+    definition: 'Coleção de homilias ou sermões, frequentemente dos Pais da Igreja, organizados para leitura no ano litúrgico.',
+    relatedTerms: ['Homilia', 'Sermão', 'Patrística']
+  },
+  {
+    id: 'missal',
+    term: 'Missal',
+    definition: 'Livro litúrgico contendo todas as orações e instruções para a celebração da Eucaristia ao longo do ano.',
+    relatedTerms: ['Eucaristia', 'Liturgia', 'Livro Litúrgico']
+  },
+  {
+    id: 'ritual',
+    term: 'Ritual',
+    definition: 'Livro litúrgico contendo os ritos para os sacramentos e sacramentais (batismo, matrimônio, unção, exéquias).',
+    relatedTerms: ['Sacramento', 'Liturgia', 'Livro Litúrgico']
+  },
+  {
+    id: 'pontifical',
+    term: 'Pontifical',
+    definition: 'Livro litúrgico contendo os ritos reservados ao bispo (ordenações, confirmação, consagração de igrejas).',
+    relatedTerms: ['Bispo', 'Ordenação', 'Liturgia']
+  },
+  {
+    id: 'baixa-igreja',
+    term: 'Baixa Igreja',
+    definition: 'Termo para anglicanos que enfatizam a simplicidade no culto, a pregação da Palavra e a herança protestante. Menos ênfase em ritual e sacramentos.',
+    relatedTerms: ['Evangélicos', 'Protestantismo', 'Alta Igreja']
+  },
+  {
+    id: 'igreja-ampla',
+    term: 'Igreja Ampla',
+    definition: 'Termo para anglicanos que ocupam a posição intermediária entre Alta e Baixa Igreja, enfatizando a compreensividade anglicana.',
+    relatedTerms: ['Compreensividade', 'Via Média', 'Anglicanismo']
+  },
+  {
+    id: 'liberalismo-teologico',
+    term: 'Liberalismo Teológico',
+    definition: 'Movimento teológico que enfatiza a razão, experiência e contexto cultural na interpretação da fé, frequentemente revisando doutrinas tradicionais.',
+    relatedTerms: ['Teologia', 'Modernismo', 'Razão']
+  },
+  {
+    id: 'patristica',
+    term: 'Patrística',
+    definition: 'O estudo dos Pais da Igreja (primeiros escritores e teólogos cristãos até aproximadamente o século VIII). Fonte importante da tradição anglicana.',
+    relatedTerms: ['Tradição', 'Teologia', 'História']
+  },
+  {
+    id: 'escolastica',
+    term: 'Escolástica',
+    definition: 'Método teológico e filosófico medieval que usava a lógica aristotélica. Influenciou teólogos como Tomás de Aquino e Anselmo.',
+    relatedTerms: ['Teologia', 'Filosofia', 'Idade Média']
+  },
+  {
+    id: 'apologetica',
+    term: 'Apologética',
+    definition: 'A defesa racional da fé cristã contra objeções e críticas. Richard Hooker foi um grande apologista anglicano.',
+    relatedTerms: ['Teologia', 'Hooker', 'Defesa da Fé']
+  },
+  {
+    id: 'catolicidade',
+    term: 'Catolicidade',
+    definition: 'A universalidade da igreja cristã em tempo e espaço. Uma das quatro marcas da igreja (una, santa, católica e apostólica).',
+    relatedTerms: ['Igreja', 'Credo Niceno', 'Universalidade']
+  },
+  {
+    id: 'apostolicidade',
+    term: 'Apostolicidade',
+    definition: 'A característica da igreja de estar fundamentada no ensinamento dos apóstolos e em continuidade com eles através da sucessão apostólica.',
+    relatedTerms: ['Sucessão Apostólica', 'Igreja', 'Apóstolo']
+  },
+  {
+    id: 'santidade',
+    term: 'Santidade',
+    definition: 'Uma das quatro marcas da igreja. A igreja é santa porque é consagrada a Deus e chamada a viver em santidade.',
+    relatedTerms: ['Igreja', 'Santificação', 'Consagração']
+  },
+  {
+    id: 'unidade',
+    term: 'Unidade',
+    definition: 'Uma das quatro marcas da igreja. A igreja é una apesar de sua diversidade, unida em Cristo e no Espírito Santo.',
+    relatedTerms: ['Igreja', 'Ecumenismo', 'Credo Niceno']
+  },
+  {
+    id: 'ecumenismo',
+    term: 'Ecumenismo',
+    definition: 'O movimento pela unidade dos cristãos e diálogo entre diferentes tradições. Os anglicanos têm forte compromisso ecumênico.',
+    relatedTerms: ['Unidade', 'Diálogo', 'Comunhão']
+  },
+  {
+    id: 'dialogo-inter-religioso',
+    term: 'Diálogo Inter-religioso',
+    definition: 'A conversa e cooperação respeitosa entre diferentes religiões, buscando entendimento mútuo e paz.',
+    relatedTerms: ['Ecumenismo', 'Diálogo', 'Respeito']
+  },
+  {
+    id: 'vocacao',
+    term: 'Vocação',
+    definition: 'O chamado de Deus para um modo particular de vida e serviço, seja ordenado, leigo, casado ou celibatário.',
+    relatedTerms: ['Chamado', 'Ministério', 'Discernimento']
+  },
+  {
+    id: 'celibato',
+    term: 'Celibato',
+    definition: 'O estado de não ser casado, voluntariamente abraçado por razões religiosas. No anglicanismo, não é obrigatório para o clero.',
+    relatedTerms: ['Vocação', 'Vida Religiosa', 'Clero']
+  },
+  {
+    id: 'voto',
+    term: 'Voto',
+    definition: 'Promessa solene feita a Deus. Membros de ordens religiosas fazem votos de pobreza, castidade e obediência.',
+    relatedTerms: ['Ordem Religiosa', 'Promessa', 'Vida Religiosa']
+  },
+  {
+    id: 'noviciado',
+    term: 'Noviciado',
+    definition: 'Período de formação e teste para aqueles que ingressam em uma ordem religiosa antes de fazer votos permanentes.',
+    relatedTerms: ['Ordem Religiosa', 'Formação', 'Voto']
+  },
+  {
+    id: 'clausura',
+    term: 'Clausura',
+    definition: 'A separação do mundo exterior praticada por algumas ordens contemplativas. Pode ser papal (estrita) ou constitucional (moderada).',
+    relatedTerms: ['Ordem Religiosa', 'Mosteiro', 'Vida Contemplativa']
+  },
+  {
+    id: 'vida-contemplativa',
+    term: 'Vida Contemplativa',
+    definition: 'Vocação religiosa centrada na oração, meditação e adoração, geralmente em clausura. Distinta da vida ativa.',
+    relatedTerms: ['Oração', 'Clausura', 'Monasticismo']
+  },
+  {
+    id: 'vida-ativa',
+    term: 'Vida Ativa',
+    definition: 'Vocação religiosa que combina oração com ministério apostólico (ensino, cura, serviço aos pobres).',
+    relatedTerms: ['Ministério', 'Serviço', 'Ordem Religiosa']
+  },
+  {
+    id: 'regra-religiosa',
+    term: 'Regra Religiosa',
+    definition: 'Conjunto de princípios e práticas que governa a vida de uma ordem religiosa. A Regra de São Bento é a mais conhecida.',
+    relatedTerms: ['Ordem Religiosa', 'Mosteiro', 'Disciplina']
+  },
+  {
+    id: 'regra-bento',
+    term: 'Regra de São Bento',
+    definition: 'Regra monástica escrita por São Bento de Núrsia (c.540), enfatizando oração, trabalho, estabilidade e obediência. Base de muitas ordens.',
+    relatedTerms: ['Monasticismo', 'Ordem Religiosa', 'Beneditinos']
+  },
+  {
+    id: 'ora-et-labora',
+    term: 'Ora et Labora',
+    definition: 'Lema beneditino que significa "reza e trabalha". Enfatiza o equilíbrio entre oração e trabalho na vida monástica.',
+    relatedTerms: ['Monasticismo', 'Regra de São Bento', 'Trabalho']
+  },
+  {
+    id: 'stabili tas',
+    term: 'Estabilidade',
+    definition: 'Voto monástico de permanecer em uma comunidade específica por toda a vida, cultivando raízes profundas e compromisso.',
+    relatedTerms: ['Monasticismo', 'Voto', 'Comunidade']
+  },
+  {
+    id: 'conversatio-morum',
+    term: 'Conversão de Vida',
+    definition: 'Voto monástico de buscar contínua transformação e crescimento em direção a Deus.',
+    relatedTerms: ['Monasticismo', 'Santificação', 'Voto']
+  },
+  {
+    id: 'obediencia',
+    term: 'Obediência',
+    definition: 'Voto religioso de submeter a própria vontade à autoridade do superior religioso e da regra, seguindo Cristo obediente.',
+    relatedTerms: ['Voto', 'Ordem Religiosa', 'Humildade']
+  },
+  {
+    id: 'espiritualidade-anglicana',
+    term: 'Espiritualidade Anglicana',
+    definition: 'A prática distintiva da fé anglicana, caracterizada por equilíbrio, beleza litúrgica, razão, tradição e ênfase na encarnação.',
+    relatedTerms: ['Anglicanismo', 'Liturgia', 'Via Média']
+  },
+  {
+    id: 'teologia-encarnacional',
+    term: 'Teologia Encarnacional',
+    definition: 'Ênfase anglicana na bondade da criação e na presença de Deus no mundo através da Encarnação de Cristo.',
+    relatedTerms: ['Encarnação', 'Criação', 'Teologia']
+  },
+  {
+    id: 'misterio',
+    term: 'Mistério',
+    definition: 'Verdade divina que transcende a compreensão humana completa, mas é revelada por Deus. Inclui a Trindade, Encarnação e Eucaristia.',
+    relatedTerms: ['Revelação', 'Fé', 'Doutrina']
+  },
+  {
+    id: 'discernimento',
+    term: 'Discernimento',
+    definition: 'O processo de buscar e reconhecer a vontade de Deus, especialmente em decisões vocacionais e espirituais.',
+    relatedTerms: ['Vocação', 'Oração', 'Direção Espiritual']
+  },
+  {
+    id: 'formacao-espiritual',
+    term: 'Formação Espiritual',
+    definition: 'O processo contínuo de crescimento na vida cristã através de disciplinas espirituais, oração e comunidade.',
+    relatedTerms: ['Santificação', 'Disciplinas Espirituais', 'Crescimento']
+  },
+  {
+    id: 'direcao-espiritual',
+    term: 'Direção Espiritual',
+    definition: 'O acompanhamento de um cristão por um diretor espiritual experiente para crescimento na vida de oração e discernimento.',
+    relatedTerms: ['Formação Espiritual', 'Discernimento', 'Oração']
+  },
+  {
+    id: 'retiro-espiritual',
+    term: 'Retiro Espiritual',
+    definition: 'Período de afastamento da rotina para oração intensiva, silêncio e renovação espiritual.',
+    relatedTerms: ['Oração', 'Silêncio', 'Renovação']
+  },
+  {
+    id: 'jejum',
+    term: 'Jejum',
+    definition: 'Abstinência de alimento como disciplina espiritual de penitência, oração e solidariedade com os necessitados. Tradicional na Quaresma e Sexta-feira Santa.',
+    relatedTerms: ['Quaresma', 'Penitência', 'Disciplina']
+  },
+  {
+    id: 'vigilia',
+    term: 'Vigília',
+    definition: 'Período prolongado de oração, geralmente durante a noite. A Vigília Pascal é a mais importante do ano litúrgico.',
+    relatedTerms: ['Oração', 'Vigília Pascal', 'Devoção']
+  },
+  {
+    id: 'esmola',
+    term: 'Esmola',
+    definition: 'Doação caritativa aos pobres e necessitados como expressão de amor cristão e justiça. Uma das três práticas quaresmais (oração, jejum, esmola).',
+    relatedTerms: ['Caridade', 'Quaresma', 'Justiça']
+  },
+  {
+    id: 'obras-misericordia',
+    term: 'Obras de Misericórdia',
+    definition: 'Ações de caridade cristã divididas em corporais (dar de comer, vestir, visitar doentes) e espirituais (ensinar, consolar, perdoar).',
+    relatedTerms: ['Caridade', 'Serviço', 'Amor']
+  },
+  {
+    id: 'beatitudes',
+    term: 'Beatitudes',
+    definition: 'As oito bem-aventuranças proclamadas por Jesus no Sermão da Montanha (Mateus 5:3-12), descrevendo o caráter do cristão.',
+    relatedTerms: ['Sermão da Montanha', 'Evangelho', 'Ética']
+  },
+  {
+    id: 'mandamentos',
+    term: 'Dez Mandamentos',
+    definition: 'As leis morais dadas por Deus a Moisés no Monte Sinai (Êxodo 20), resumidas por Jesus em amar a Deus e ao próximo.',
+    relatedTerms: ['Lei', 'Antigo Testamento', 'Ética']
+  },
+  {
+    id: 'pecados-capitais',
+    term: 'Pecados Capitais',
+    definition: 'Sete tendências fundamentais ao pecado: soberba, avareza, luxúria, ira, gula, inveja e preguiça. "Capitais" porque geram outros pecados.',
+    relatedTerms: ['Pecado', 'Vícios', 'Moral']
+  },
+  {
+    id: 'virtudes-teologais',
+    term: 'Virtudes Teologais',
+    definition: 'As três virtudes infundidas por Deus: Fé, Esperança e Caridade (Amor). Têm Deus como origem, motivo e objeto.',
+    relatedTerms: ['Fé', 'Esperança', 'Caridade']
+  },
+  {
+    id: 'virtudes-cardeais',
+    term: 'Virtudes Cardeais',
+    definition: 'Quatro virtudes morais fundamentais: Prudência, Justiça, Fortaleza e Temperança. "Cardeais" significa que são "dobradiças" de outras virtudes.',
+    relatedTerms: ['Moral', 'Ética', 'Caráter']
+  },
+  {
+    id: 'graca-santificante',
+    term: 'Graça Santificante',
+    definition: 'A graça habitual que santifica a alma, recebida no batismo e aumentada pelos sacramentos.',
+    relatedTerms: ['Graça', 'Santificação', 'Batismo']
+  },
+  {
+    id: 'graca-atual',
+    term: 'Graça Atual',
+    definition: 'Ajuda temporária de Deus para iluminar a mente e fortalecer a vontade em momentos específicos.',
+    relatedTerms: ['Graça', 'Providência', 'Auxílio']
+  },
+  {
+    id: 'escatologia',
+    term: 'Escatologia',
+    definition: 'O estudo das "últimas coisas": morte, juízo, céu, inferno, segunda vinda de Cristo e ressurreição dos mortos.',
+    relatedTerms: ['Segunda Vinda', 'Ressurreição', 'Juízo Final']
+  },
+  {
+    id: 'parusia',
+    term: 'Parusia',
+    definition: 'Do grego "presença" ou "vinda", refere-se à segunda vinda gloriosa de Cristo no fim dos tempos.',
+    relatedTerms: ['Segunda Vinda', 'Escatologia', 'Cristo']
+  },
+  {
+    id: 'juizo-final',
+    term: 'Juízo Final',
+    definition: 'O julgamento de toda a humanidade por Cristo no fim dos tempos, revelando definitivamente o triunfo da justiça de Deus.',
+    relatedTerms: ['Escatologia', 'Parusia', 'Ressurreição']
+  },
+  {
+    id: 'ressurreicao-mortos',
+    term: 'Ressurreição dos Mortos',
+    definition: 'A crença de que todos ressuscitarão corporalmente no último dia, seguindo o padrão da ressurreição de Cristo.',
+    relatedTerms: ['Ressurreição', 'Escatologia', 'Corpo']
+  },
+  {
+    id: 'vida-eterna',
+    term: 'Vida Eterna',
+    definition: 'A vida plena e eterna com Deus no céu, começando nesta vida pela graça e completada na glória.',
+    relatedTerms: ['Céu', 'Salvação', 'Glória']
+  },
+  {
+    id: 'ceu',
+    term: 'Céu',
+    definition: 'O estado de felicidade eterna na presença de Deus, a meta final da vida cristã.',
+    relatedTerms: ['Vida Eterna', 'Glória', 'Bem-aventurança']
+  },
+  {
+    id: 'exegese',
+    term: 'Exegese',
+    definition: 'A interpretação crítica e sistemática das Escrituras, buscando entender o significado original do texto.',
+    relatedTerms: ['Escrituras', 'Hermenêutica', 'Interpretação']
+  },
+  {
+    id: 'hermeneutica',
+    term: 'Hermenêutica',
+    definition: 'A teoria e métodos de interpretação das Escrituras, especialmente os princípios que guiam a exegese.',
+    relatedTerms: ['Exegese', 'Escrituras', 'Interpretação']
+  },
+  {
+    id: 'tipologia',
+    term: 'Tipologia',
+    definition: 'Método de interpretação que vê pessoas, eventos ou instituições do Antigo Testamento como "tipos" que prefiguram realidades do Novo Testamento.',
+    relatedTerms: ['Escrituras', 'Interpretação', 'Profecia']
+  },
+  {
+    id: 'alegoria',
+    term: 'Alegoria',
+    definition: 'Método de interpretação que busca significados espirituais ou simbólicos além do sentido literal do texto.',
+    relatedTerms: ['Interpretação', 'Escrituras', 'Simbolismo']
+  },
+  {
+    id: 'canon-biblico',
+    term: 'Cânon Bíblico',
+    definition: 'A lista oficial de livros reconhecidos como Escritura Sagrada. O cânon anglicano inclui os livros deuterocanônicos/apócrifos como leitura edificante.',
+    relatedTerms: ['Escrituras', 'Bíblia', 'Autoridade']
+  },
+  {
+    id: 'deuterocanonicos',
+    term: 'Deuterocanônicos',
+    definition: 'Livros do Antigo Testamento incluídos na Septuaginta grega mas não no cânon hebraico. Os anglicanos os leem para edificação, mas não para estabelecer doutrina.',
+    relatedTerms: ['Cânon Bíblico', 'Escrituras', 'Antigo Testamento']
+  },
+  {
+    id: 'septuaginta',
+    term: 'Septuaginta',
+    definition: 'Tradução grega do Antigo Testamento feita por 70 eruditos judeus (c.250 a.C.). Muito usada pelos apóstolos e igreja primitiva.',
+    relatedTerms: ['Antigo Testamento', 'Tradução', 'Grego']
+  },
+  {
+    id: 'vulgata',
+    term: 'Vulgata',
+    definition: 'Tradução latina da Bíblia por São Jerônimo (c.400 d.C.). Foi a Bíblia padrão da igreja ocidental por séculos.',
+    relatedTerms: ['Bíblia', 'Tradução', 'Latim']
+  },
+  {
+    id: 'king-james',
+    term: 'King James Bible',
+    definition: 'Tradução inglesa autorizada de 1611, encomendada pelo Rei Jaime I. Obra-prima literária que moldou o inglês e o anglicanismo.',
+    relatedTerms: ['Bíblia', 'Tradução', 'Inglaterra']
+  },
+  {
+    id: 'revelacao',
+    term: 'Revelação',
+    definition: 'A auto-manifestação de Deus à humanidade através da criação, história, profetas e plenamente em Jesus Cristo. Registrada nas Escrituras.',
+    relatedTerms: ['Escrituras', 'Cristo', 'Deus']
+  },
+  {
+    id: 'inspiracao',
+    term: 'Inspiração',
+    definition: 'A ação do Espírito Santo guiando os autores humanos da Escritura, fazendo da Bíblia a Palavra de Deus em palavras humanas.',
+    relatedTerms: ['Escrituras', 'Espírito Santo', 'Autoridade']
+  },
+  {
+    id: 'profecia',
+    term: 'Profecia',
+    definition: 'A palavra de Deus proclamada pelos profetas, tanto forth-telling (proclamação) quanto foretelling (predição).',
+    relatedTerms: ['Profeta', 'Revelação', 'Antigo Testamento']
+  },
+  {
+    id: 'profeta',
+    term: 'Profeta',
+    definition: 'Porta-voz de Deus que proclama Sua palavra, chama ao arrependimento e anuncia juízo e esperança.',
+    relatedTerms: ['Profecia', 'Antigo Testamento', 'Revelação']
+  },
+  {
+    id: 'evangelizacao',
+    term: 'Evangelização',
+    definition: 'A proclamação das boas novas de Jesus Cristo, chamando pessoas à fé, arrependimento e batismo.',
+    relatedTerms: ['Evangelho', 'Missão', 'Testemunho']
+  },
+  {
+    id: 'missao',
+    term: 'Missão',
+    definition: 'O envio da igreja ao mundo para proclamar o Evangelho, servir os necessitados e fazer discípulos de todas as nações.',
+    relatedTerms: ['Evangelização', 'Serviço', 'Grande Comissão']
+  },
+  {
+    id: 'testemunho',
+    term: 'Testemunho',
+    definition: 'O relato pessoal da fé e experiência cristã, compartilhado para edificação da igreja e evangelização.',
+    relatedTerms: ['Evangelização', 'Fé', 'Experiência']
+  },
+  {
+    id: 'conversao',
+    term: 'Conversão',
+    definition: 'A mudança fundamental de orientação de vida, voltando-se do pecado para Deus em arrependimento e fé.',
+    relatedTerms: ['Arrependimento', 'Fé', 'Novo Nascimento']
+  },
+  {
+    id: 'arrependimento',
+    term: 'Arrependimento',
+    definition: 'A mudança de mente e coração que reconhece o pecado, lamenta-o e volta-se para Deus pedindo perdão.',
+    relatedTerms: ['Conversão', 'Penitência', 'Confissão']
+  },
+  {
+    id: 'fe',
+    term: 'Fé',
+    definition: 'Confiança em Deus e aceitação de Sua revelação em Cristo. Dom de Deus que capacita a salvação.',
+    relatedTerms: ['Confiança', 'Crença', 'Salvação']
+  },
+  {
+    id: 'esperanca',
+    term: 'Esperança',
+    definition: 'Confiança firme nas promessas de Deus e na vida eterna. Uma das três virtudes teologais.',
+    relatedTerms: ['Virtudes Teologais', 'Promessa', 'Vida Eterna']
+  },
+  {
+    id: 'caridade',
+    term: 'Caridade',
+    definition: 'Amor a Deus acima de tudo e ao próximo por amor a Deus. A maior das virtudes teologais.',
+    relatedTerms: ['Amor', 'Virtudes Teologais', 'Mandamento']
+  },
+  {
+    id: 'amor-agape',
+    term: 'Amor (Ágape)',
+    definition: 'O amor divino sacrificial e incondicional, derramado em nossos corações pelo Espírito Santo.',
+    relatedTerms: ['Ágape', 'Caridade', 'Espírito Santo']
+  },
+  {
+    id: 'providencia',
+    term: 'Providência',
+    definition: 'O cuidado amoroso e governo de Deus sobre toda a criação, guiando todas as coisas para Seus propósitos.',
+    relatedTerms: ['Soberania', 'Cuidado', 'Governo Divino']
+  },
+  {
+    id: 'soberania',
+    term: 'Soberania de Deus',
+    definition: 'O governo supremo e autoridade absoluta de Deus sobre toda a criação.',
+    relatedTerms: ['Providência', 'Onipotência', 'Rei']
+  },
+  {
+    id: 'onipotencia',
+    term: 'Onipotência',
+    definition: 'O atributo de Deus de poder ilimitado, capaz de fazer tudo que é consistente com Sua natureza.',
+    relatedTerms: ['Atributos de Deus', 'Poder', 'Soberania']
+  },
+  {
+    id: 'onisciencia',
+    term: 'Onisciência',
+    definition: 'O atributo de Deus de conhecimento perfeito e completo de todas as coisas passadas, presentes e futuras.',
+    relatedTerms: ['Atributos de Deus', 'Conhecimento', 'Sabedoria']
+  },
+  {
+    id: 'onipresenca',
+    term: 'Onipresença',
+    definition: 'O atributo de Deus de estar presente em todos os lugares ao mesmo tempo.',
+    relatedTerms: ['Atributos de Deus', 'Presença', 'Imanência']
+  },
+  {
+    id: 'transcendencia',
+    term: 'Transcendência',
+    definition: 'O atributo de Deus de estar acima e além da criação, totalmente diferente e superior a ela.',
+    relatedTerms: ['Atributos de Deus', 'Santidade', 'Glória']
+  },
+  {
+    id: 'imanencia',
+    term: 'Imanência',
+    definition: 'A presença ativa de Deus dentro da criação, sustentando e agindo no mundo.',
+    relatedTerms: ['Onipresença', 'Providência', 'Encarnação']
+  },
+  {
+    id: 'santidade-deus',
+    term: 'Santidade de Deus',
+    definition: 'A perfeição moral absoluta e separação de Deus de tudo que é profano ou pecaminoso.',
+    relatedTerms: ['Atributos de Deus', 'Pureza', 'Transcendência']
+  },
+  {
+    id: 'justica-deus',
+    term: 'Justiça de Deus',
+    definition: 'O atributo de Deus de agir com perfeita retidão, recompensando o bem e punindo o mal.',
+    relatedTerms: ['Atributos de Deus', 'Retidão', 'Juízo']
+  },
+  {
+    id: 'misericordia',
+    term: 'Misericórdia',
+    definition: 'A compaixão de Deus que não nos dá o castigo que merecemos, manifestada supremamente em Cristo.',
+    relatedTerms: ['Compaixão', 'Perdão', 'Graça']
+  },
+  {
+    id: 'compaixao',
+    term: 'Compaixão',
+    definition: 'O amor compassivo de Deus que se compadece da miséria humana e age para aliviá-la.',
+    relatedTerms: ['Misericórdia', 'Amor', 'Cuidado']
   }
 ]

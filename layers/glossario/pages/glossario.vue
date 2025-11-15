@@ -143,9 +143,11 @@
 
 <script setup lang="ts">
 import { glossaryTerms } from '../data/terms'
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted, watch } from 'vue'
 
 const siteUrl = 'https://caminhoanglicano.com.br'
+const route = useRoute()
+const router = useRouter()
 
 // Estado reativo
 const searchQuery = ref('')
@@ -154,11 +156,37 @@ const selectedLetter = ref<string | null>(null)
 // Alfabeto para filtros
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
+// Inicializar filtros a partir da URL
+onMounted(() => {
+  const queryParam = route.query.q as string
+  const letterParam = route.query.letra as string
+
+  if (queryParam) {
+    searchQuery.value = queryParam
+  } else if (letterParam && alphabet.includes(letterParam.toUpperCase())) {
+    selectedLetter.value = letterParam.toUpperCase()
+  }
+})
+
+// Atualizar URL quando filtros mudarem
+const updateURL = () => {
+  const query: Record<string, string> = {}
+
+  if (searchQuery.value) {
+    query.q = searchQuery.value
+  } else if (selectedLetter.value) {
+    query.letra = selectedLetter.value
+  }
+
+  router.replace({ query })
+}
+
 // Funções para limpar filtros mutuamente exclusivos
 const handleSearchInput = () => {
   if (searchQuery.value) {
     selectedLetter.value = null
   }
+  updateURL()
 }
 
 const handleLetterClick = (letter: string) => {
@@ -168,11 +196,16 @@ const handleLetterClick = (letter: string) => {
     selectedLetter.value = letter
     searchQuery.value = ''
   }
+  updateURL()
 }
 
 const handleRelatedTermClick = (term: string) => {
   searchQuery.value = term
   selectedLetter.value = null
+  updateURL()
+
+  // Scroll para o topo para melhor UX
+  window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
 // Termos filtrados
@@ -199,19 +232,31 @@ const filteredTerms = computed(() => {
   return terms.sort((a, b) => a.term.localeCompare(b.term))
 })
 
+// Garantir renderização no servidor para crawlers
+definePageMeta({
+  layout: false
+})
+
 // SEO Meta Tags
 useSeoMeta({
   title: 'Glossário Anglicano - Termos e Conceitos da Tradição Anglicana',
-  description: 'Explore mais de 300 termos e conceitos da tradição anglicana brasileira. Guia completo com liturgia, sacramentos, história, figuras importantes, teologia, vestes litúrgicas e práticas da igreja anglicana no Brasil e no mundo.',
+  description: 'Explore mais de 400 termos e conceitos da tradição anglicana brasileira. Guia completo com liturgia, sacramentos, história, figuras importantes, teologia, doutrina, vestes litúrgicas, vida monástica e práticas da igreja anglicana no Brasil e no mundo.',
   ogTitle: 'Glossário Anglicano - Caminho Anglicano',
-  ogDescription: 'Explore mais de 300 termos e conceitos da tradição anglicana brasileira. Guia completo com liturgia, sacramentos, história, figuras importantes, teologia e práticas da igreja anglicana.',
+  ogDescription: 'Explore mais de 400 termos e conceitos da tradição anglicana brasileira. Guia completo com liturgia, sacramentos, história, figuras importantes, teologia, doutrina e práticas da igreja anglicana.',
   ogImage: `${siteUrl}/og-image-glossario.png`,
   ogUrl: `${siteUrl}/glossario`,
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Glossário Anglicano - Caminho Anglicano',
-  twitterDescription: 'Explore mais de 300 termos da tradição anglicana brasileira com história, liturgia, teologia e práticas.',
+  twitterDescription: 'Explore mais de 400 termos da tradição anglicana brasileira com história, liturgia, teologia, doutrina e práticas.',
   twitterImage: `${siteUrl}/og-image-glossario.png`,
+  robots: {
+    index: true,
+    follow: true,
+    'max-image-preview': 'large',
+    'max-snippet': -1,
+    'max-video-preview': -1
+  }
 })
 
 // Structured Data para SEO
