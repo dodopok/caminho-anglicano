@@ -1480,7 +1480,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'scriptura-sola',
     term: 'Sola Scriptura',
-    definit ion: 'Princípio reformado de que a Escritura é a autoridade suprema em matéria de fé. Os anglicanos interpretam isso junto com a tradição e a razão (o tripé anglicano).',
+    definition: 'Princípio reformado de que a Escritura é a autoridade suprema em matéria de fé. Os anglicanos interpretam isso junto com a tradição e a razão (o tripé anglicano).',
     relatedTerms: ['Escrituras', 'Reforma', 'Autoridade']
   },
   {
