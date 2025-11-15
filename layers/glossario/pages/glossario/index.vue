@@ -121,7 +121,7 @@
           </button>
           <button
             v-if="selectedLetter"
-            @click="selectedLetter = null"
+            @click="() => { selectedLetter = null; currentPage = 1; updateURL(); }"
             class="px-3 py-1.5 rounded-md text-sm font-medium bg-red-100 text-red-700 hover:bg-red-200 transition-all"
             aria-label="Limpar filtro alfabético"
           >
@@ -141,7 +141,7 @@
       </div>
 
       <!-- Lista de termos -->
-      <div class="space-y-4">
+      <div v-if="filteredTerms.length > 0" class="space-y-4">
         <div
           v-for="term in paginatedTerms"
           :key="term.id"
@@ -302,87 +302,101 @@ const updateURL = () => {
   router.replace({ query })
 }
 
-// Funções para limpar filtros mutuamente exclusivos
+// Funções para gerenciar filtros
 const handleSearchInput = () => {
-  if (searchQuery.value) {
-    selectedLetter.value = null
-  }
-  currentPage.value = 1 // Reset para primeira página
+  // Quando usuário digita, limpar filtro de letra
+  selectedLetter.value = null
+  currentPage.value = 1
   updateURL()
 }
 
 const handleLetterClick = (letter: string) => {
   if (selectedLetter.value === letter) {
+    // Clicar na mesma letra: desmarcar
     selectedLetter.value = null
   } else {
+    // Selecionar nova letra: limpar busca de texto
     selectedLetter.value = letter
     searchQuery.value = ''
   }
-  currentPage.value = 1 // Reset para primeira página
+  currentPage.value = 1
   updateURL()
 }
 
 const handleRelatedTermClick = (term: string) => {
+  // Clicar em termo relacionado: buscar esse termo
   searchQuery.value = term
   selectedLetter.value = null
   currentPage.value = 1
   updateURL()
-
-  // Scroll para o topo para melhor UX
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
 const clearSearch = () => {
+  // Limpar busca
   searchQuery.value = ''
+  selectedLetter.value = null
   currentPage.value = 1
   updateURL()
 }
 
-// Termos filtrados
-const filteredTerms = computed(() => {
-  let terms = [...glossaryTerms]
+// Função auxiliar para ordenação alfabética
+const sortAlphabetically = (terms: typeof glossaryTerms) => {
+  return terms.slice().sort((a, b) => a.term.localeCompare(b.term, 'pt-BR'))
+}
 
-  // Filtrar por busca
-  if (searchQuery.value) {
-    const query = searchQuery.value.toLowerCase()
-    terms = terms.filter(term =>
-      term.term.toLowerCase().includes(query) ||
-      term.definition.toLowerCase().includes(query)
+// Termos filtrados - REFATORADO DO ZERO
+const filteredTerms = computed(() => {
+  // 1. Normalizar inputs
+  const query = searchQuery.value.trim()
+  const hasTextSearch = query.length > 0
+  const hasLetterFilter = selectedLetter.value !== null
+
+  // 2. CASO 1: Busca por texto (prioridade sobre letra)
+  if (hasTextSearch) {
+    const queryLower = query.toLowerCase()
+
+    // Filtrar termos que contêm a busca (termo ou definição)
+    const matches = glossaryTerms.filter(term =>
+      term.term.toLowerCase().includes(queryLower) ||
+      term.definition.toLowerCase().includes(queryLower)
     )
+
+    // Ordenar com priorização:
+    // 1º - Match exato
+    // 2º - Começa com a busca
+    // 3º - Ordem alfabética
+    return matches.slice().sort((a, b) => {
+      const aLower = a.term.toLowerCase()
+      const bLower = b.term.toLowerCase()
+
+      // Prioridade 1: Match exato
+      const aExact = aLower === queryLower
+      const bExact = bLower === queryLower
+      if (aExact && !bExact) return -1
+      if (!aExact && bExact) return 1
+
+      // Prioridade 2: Começa com a busca
+      const aStarts = aLower.startsWith(queryLower)
+      const bStarts = bLower.startsWith(queryLower)
+      if (aStarts && !bStarts) return -1
+      if (!aStarts && bStarts) return 1
+
+      // Prioridade 3: Ordem alfabética
+      return a.term.localeCompare(b.term, 'pt-BR')
+    })
   }
 
-  // Filtrar por letra
-  if (selectedLetter.value) {
-    terms = terms.filter(term =>
+  // 3. CASO 2: Filtro por letra
+  if (hasLetterFilter) {
+    const filtered = glossaryTerms.filter(term =>
       term.term.charAt(0).toUpperCase() === selectedLetter.value
     )
+    return sortAlphabetically(filtered)
   }
 
-  // Ordenar com prioridade para matches exatos
-  return terms.sort((a, b) => {
-    if (searchQuery.value) {
-      const query = searchQuery.value.toLowerCase()
-      const aTermLower = a.term.toLowerCase()
-      const bTermLower = b.term.toLowerCase()
-
-      // Match exato tem prioridade máxima
-      const aExactMatch = aTermLower === query
-      const bExactMatch = bTermLower === query
-
-      if (aExactMatch && !bExactMatch) return -1
-      if (!aExactMatch && bExactMatch) return 1
-
-      // Match que começa com a query tem segunda prioridade
-      const aStartsWith = aTermLower.startsWith(query)
-      const bStartsWith = bTermLower.startsWith(query)
-
-      if (aStartsWith && !bStartsWith) return -1
-      if (!aStartsWith && bStartsWith) return 1
-    }
-
-    // Caso contrário, ordenar alfabeticamente
-    return a.term.localeCompare(b.term)
-  })
+  // 4. CASO 3: Sem filtros - ordem alfabética
+  return sortAlphabetically(glossaryTerms)
 })
 
 // Paginação
