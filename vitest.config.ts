@@ -14,9 +14,16 @@ export default defineConfig({
   test: {
     environment: 'happy-dom',
     globals: true,
+    exclude: [
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/.nuxt/**',
+      '**/e2e/**', // Exclude E2E tests from Vitest
+      '**/playwright.config.ts',
+    ],
     coverage: {
       provider: 'v8',
-      reporter: ['text', 'json', 'html'],
+      reporter: ['text', 'json', 'html', 'lcov'],
       exclude: [
         'node_modules/',
         '.nuxt/',
@@ -26,7 +33,15 @@ export default defineConfig({
         '**/*.test.*',
         '**/types/**',
         '**/*.d.ts',
+        'e2e/**',
+        'playwright.config.ts',
       ],
+      thresholds: {
+        lines: 60,
+        functions: 60,
+        branches: 55,
+        statements: 60,
+      },
     },
   },
   resolve: {

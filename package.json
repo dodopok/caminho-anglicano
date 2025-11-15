@@ -14,7 +14,12 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:chromium": "playwright test --project=chromium",
+    "test:all": "pnpm test:run && pnpm test:e2e"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.81.1",
@@ -31,10 +36,12 @@
     "zod": "^4.1.12"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
     "@nuxt/eslint": "^0.7.4",
     "@nuxt/test-utils": "^3.20.1",
     "@nuxtjs/sitemap": "^7.4.7",
     "@nuxtjs/tailwindcss": "^6.14.0",
+    "@playwright/test": "^1.56.1",
     "@testing-library/user-event": "^14.6.1",
     "@testing-library/vue": "^8.1.0",
     "@types/google.maps": "^3.58.1",
@@ -50,6 +57,7 @@
     "typescript": "^5.7.2",
     "unplugin-auto-import": "^20.2.0",
     "vitest": "^4.0.9",
+    "vitest-axe": "^0.1.0",
     "vue-tsc": "^2.1.10"
   }
 }
