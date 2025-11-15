@@ -3540,5 +3540,215 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Mozeta',
     definition: 'Pequena capa que cobre os ombros, usada por bispos e alguns cônegos sobre a sobrepeliz durante cerimônias litúrgicas.',
     relatedTerms: ['Paramentos', 'Vestes Episcopais', 'Bispo']
+  },
+  {
+    id: 'nave',
+    term: 'Nave',
+    definition: 'Parte central de uma igreja, entre a entrada e o presbitério, onde se reúnem os fiéis para o culto.',
+    relatedTerms: ['Basílica', 'Arquitetura', 'Presbitério']
+  },
+  {
+    id: 'newman-john-henry',
+    term: 'Newman, John Henry',
+    definition: 'Teólogo e cardeal (1801-1890), líder do Movimento de Oxford que posteriormente converteu-se ao catolicismo romano. Beatificado em 2010 e canonizado em 2019. Suas obras influenciaram profundamente a teologia anglicana.',
+    relatedTerms: ['Movimento de Oxford', 'Anglo-Catolicismo', 'Conversão']
+  },
+  {
+    id: 'niceno-credo',
+    term: 'Niceno, Credo',
+    definition: 'Também chamado de Símbolo Niceno-Constantinopolitano, é o credo formulado pelos Concílios de Nicéia (325) e Constantinopla (381). É usado na liturgia eucarística.',
+    relatedTerms: ['Credos', 'Concílio de Nicéia', 'Eucaristia']
+  },
+  {
+    id: 'oblata',
+    term: 'Oblata',
+    definition: 'Elementos do pão e do vinho que serão consagrados na Eucaristia. O termo vem do latim "oblatus" (oferecido).',
+    relatedTerms: ['Eucaristia', 'Ofertório', 'Elementos']
+  },
+  {
+    id: 'obreiro-leigo',
+    term: 'Obreiro Leigo',
+    definition: 'Pessoa leiga que dedica parte significativa de seu tempo ao trabalho pastoral e missionário da Igreja.',
+    relatedTerms: ['Laicato', 'Ministério Leigo', 'Missão']
+  },
+  {
+    id: 'ofertorio',
+    term: 'Ofertório',
+    definition: 'Parte da liturgia eucarística em que se apresentam os dons do pão e do vinho, juntamente com as ofertas dos fiéis.',
+    relatedTerms: ['Eucaristia', 'Oblata', 'Dons']
+  },
+  {
+    id: 'oficio-divino',
+    term: 'Ofício Divino',
+    definition: 'Conjunto de orações litúrgicas distribuídas ao longo do dia, também conhecido como Liturgia das Horas. Inclui Matinas, Laudes, Vésperas, Completas, entre outras.',
+    relatedTerms: ['Horas Canônicas', 'Matinas', 'Laudes', 'Vésperas']
+  },
+  {
+    id: 'oleos-santos',
+    term: 'Óleos Santos',
+    definition: 'Óleos consagrados pelo Bispo e usados em diversos sacramentos e ritos: óleo dos catecúmenos (batismo), crisma (confirmação) e óleo dos enfermos (unção).',
+    relatedTerms: ['Sacramentos', 'Unção', 'Confirmação']
+  },
+  {
+    id: 'oracao-coletiva',
+    term: 'Oração Coletiva',
+    definition: 'Oração própria de cada domingo ou festa litúrgica que resume o tema do dia. Também chamada de Coleta.',
+    relatedTerms: ['Liturgia', 'Oração', 'Ano Litúrgico']
+  },
+  {
+    id: 'oracao-eucaristica',
+    term: 'Oração Eucarística',
+    definition: 'Grande oração de ação de graças que constitui o núcleo da celebração eucarística. Inclui a epiclese, as palavras da instituição e a anamnese.',
+    relatedTerms: ['Eucaristia', 'Anamnésis', 'Epiclesis', 'Grande Oração Eucarística']
+  },
+  {
+    id: 'ordem',
+    term: 'Ordem',
+    definition: 'Sacramento pelo qual são conferidos os ministérios ordenados de diácono, presbítero e bispo. Também se refere às comunidades religiosas (ordens religiosas).',
+    relatedTerms: ['Ordenação', 'Ministério Ordenado', 'Sacramento']
+  },
+  {
+    id: 'ordenacao',
+    term: 'Ordenação',
+    definition: 'Ato sacramental pelo qual um candidato é admitido ao ministério ordenado pela imposição das mãos do bispo.',
+    relatedTerms: ['Ordem', 'Imposição de Mãos', 'Ministério Ordenado']
+  },
+  {
+    id: 'ordinario',
+    term: 'Ordinário',
+    definition: 'Título canônico dado ao Bispo Diocesano, que possui jurisdição ordinária sobre sua diocese.',
+    relatedTerms: ['Bispo Diocesano', 'Jurisdição', 'Diocese']
+  },
+  {
+    id: 'palio',
+    term: 'Pálio',
+    definition: 'Faixa de lã branca com cruzes negras usada pelos arcebispos sobre a casula. Símbolo de autoridade metropolitana conferido pelo Papa na tradição católica romana.',
+    relatedTerms: ['Arcebispo', 'Paramentos', 'Metropolita']
+  },
+  {
+    id: 'pala',
+    term: 'Pala',
+    definition: 'Pequeno quadrado de tecido rígido usado para cobrir o cálice durante a celebração eucarística.',
+    relatedTerms: ['Cálice', 'Eucaristia', 'Paramentos']
+  },
+  {
+    id: 'paroquia',
+    term: 'Paróquia',
+    definition: 'Comunidade local de fiéis sob os cuidados pastorais de um pároco, constituindo a unidade básica da organização diocesana.',
+    relatedTerms: ['Pároco', 'Diocese', 'Comunidade']
+  },
+  {
+    id: 'paroco',
+    term: 'Pároco',
+    definition: 'Presbítero encarregado de uma paróquia, responsável pela vida pastoral, litúrgica e administrativa da comunidade.',
+    relatedTerms: ['Paróquia', 'Presbítero', 'Pastoral']
+  },
+  {
+    id: 'pascoa',
+    term: 'Páscoa',
+    definition: 'Principal festa cristã que celebra a Ressurreição de Jesus Cristo. É o centro do ano litúrgico e determina as demais festas móveis.',
+    relatedTerms: ['Ressurreição', 'Ano Litúrgico', 'Semana Santa']
+  },
+  {
+    id: 'patena',
+    term: 'Patena',
+    definition: 'Pequeno prato, geralmente de metal precioso, usado para colocar a hóstia durante a celebração eucarística.',
+    relatedTerms: ['Hóstia', 'Eucaristia', 'Vasos Sagrados']
+  },
+  {
+    id: 'paz',
+    term: 'Paz',
+    definition: 'Gesto litúrgico de saudação fraterna entre os fiéis durante a celebração eucarística, geralmente realizado antes da comunhão.',
+    relatedTerms: ['Eucaristia', 'Liturgia', 'Comunhão']
+  },
+  {
+    id: 'penitencia',
+    term: 'Penitência',
+    definition: 'Sacramento da reconciliação, também chamado de confissão, pelo qual o fiel recebe o perdão dos pecados através da absolvição sacerdotal.',
+    relatedTerms: ['Sacramento', 'Confissão', 'Absolvição']
+  },
+  {
+    id: 'pentecostes',
+    term: 'Pentecostes',
+    definition: 'Festa cristã celebrada cinquenta dias após a Páscoa, comemorando a descida do Espírito Santo sobre os apóstolos.',
+    relatedTerms: ['Espírito Santo', 'Ano Litúrgico', 'Atos dos Apóstolos']
+  },
+  {
+    id: 'pia-batismal',
+    term: 'Pia Batismal',
+    definition: 'Recipiente, geralmente em pedra ou metal, que contém a água para o Sacramento do Batismo.',
+    relatedTerms: ['Batismo', 'Fonte', 'Sacramento']
+  },
+  {
+    id: 'piscina',
+    term: 'Piscina',
+    definition: 'Pequena pia com drenagem direta para a terra, localizada na sacristia ou no presbitério, usada para purificação dos vasos sagrados.',
+    relatedTerms: ['Sacristia', 'Vasos Sagrados', 'Purificação']
+  },
+  {
+    id: 'postulante',
+    term: 'Postulante',
+    definition: 'Pessoa que solicita admissão ao processo de ordenação ou a uma ordem religiosa.',
+    relatedTerms: ['Candidato às Sagradas Ordens', 'Ordenação', 'Discernimento']
+  },
+  {
+    id: 'prebenda',
+    term: 'Prebenda',
+    definition: 'Rendimentos ou benefícios ligados a determinado cargo eclesiástico, especialmente de cônegos em catedrais.',
+    relatedTerms: ['Cônego', 'Catedral', 'Benefício']
+  },
+  {
+    id: 'pregador-leigo',
+    term: 'Pregador Leigo',
+    definition: 'Leigo licenciado pelo bispo para exercer o ministério da pregação nas celebrações litúrgicas.',
+    relatedTerms: ['Ministério Leigo', 'Pregação', 'Licenciamento']
+  },
+  {
+    id: 'presbiterio',
+    term: 'Presbitério',
+    definition: 'Área elevada do templo onde se localiza o altar, reservada ao clero celebrante. Também designa o conjunto dos presbíteros de uma diocese.',
+    relatedTerms: ['Altar', 'Santuário', 'Presbítero']
+  },
+  {
+    id: 'presbitero',
+    term: 'Presbítero',
+    definition: 'Segundo grau do ministério ordenado, entre o diácono e o bispo. Também chamado de padre ou sacerdote.',
+    relatedTerms: ['Ministério Ordenado', 'Ordenação', 'Sacerdócio']
+  },
+  {
+    id: 'primaz',
+    term: 'Primaz',
+    definition: 'Título honorífico dado ao bispo principal de uma nação ou província eclesiástica.',
+    relatedTerms: ['Arcebispo', 'Metropolita', 'Província']
+  },
+  {
+    id: 'prioste',
+    term: 'Prioste',
+    definition: 'Leigo responsável pela organização de festas religiosas e pelo cuidado dos objetos litúrgicos.',
+    relatedTerms: ['Sacristão', 'Liturgia', 'Ministério Leigo']
+  },
+  {
+    id: 'procissao',
+    term: 'Procissão',
+    definition: 'Marcha religiosa ordenada, geralmente acompanhada de cânticos e orações, realizada em celebrações especiais.',
+    relatedTerms: ['Liturgia', 'Devoção', 'Festa']
+  },
+  {
+    id: 'provincia',
+    term: 'Província',
+    definition: 'Agrupamento de dioceses sob a liderança de um arcebispo metropolita, constituindo uma unidade eclesiástica autônoma na Comunhão Anglicana.',
+    relatedTerms: ['Diocese', 'Metropolita', 'Comunhão Anglicana']
+  },
+  {
+    id: 'pulpito',
+    term: 'Púlpito',
+    definition: 'Tribuna elevada de onde se proclama a Palavra de Deus e se faz a pregação.',
+    relatedTerms: ['Pregação', 'Ambão', 'Atril']
+  },
+  {
+    id: 'purificador',
+    term: 'Purificador',
+    definition: 'Pequeno pano de linho usado para limpar o cálice e a patena durante e após a celebração eucarística.',
+    relatedTerms: ['Cálice', 'Patena', 'Eucaristia']
   }
 ]
