@@ -3930,5 +3930,173 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Sufragâneo',
     definition: 'Bispo auxiliar que não tem direito automático de sucessão ao bispo diocesano.',
     relatedTerms: ['Bispo', 'Diocese', 'Bispo Coadjutor']
+  },
+  {
+    id: 'sursum-corda',
+    term: 'Sursum Corda',
+    definition: 'Expressão latina que significa "Corações ao alto", usada no início da Oração Eucarística.',
+    relatedTerms: ['Eucaristia', 'Oração Eucarística', 'Liturgia']
+  },
+  {
+    id: 'tabernaculo',
+    term: 'Tabernáculo',
+    definition: 'Pequeno armário ou cofre onde se guardam as hóstias consagradas. Sinônimo de sacrário.',
+    relatedTerms: ['Sacrário', 'Hóstia', 'Reserva Eucarística']
+  },
+  {
+    id: 'temple-william',
+    term: 'Temple, William',
+    definition: 'Arcebispo de Cantuária (1881-1944), teólogo e líder ecumênico. Contribuiu significativamente para o movimento ecumênico e a teologia social.',
+    relatedTerms: ['Arcebispo de Cantuária', 'Ecumenismo', 'Teologia Social']
+  },
+  {
+    id: 'tempo-comum',
+    term: 'Tempo Comum',
+    definition: 'Períodos do ano litúrgico que não fazem parte dos ciclos de Natal-Epifania ou Quaresma-Páscoa-Pentecostes.',
+    relatedTerms: ['Ano Litúrgico', 'Calendário Litúrgico']
+  },
+  {
+    id: 'teologia',
+    term: 'Teologia',
+    definition: 'Estudo sistemático e reflexivo sobre Deus, sua revelação e sua relação com a humanidade e a criação.',
+    relatedTerms: ['Doutrina', 'Fé', 'Razão']
+  },
+  {
+    id: 'tomé-apóstolo',
+    term: 'Tomé, Apóstolo',
+    definition: 'Um dos doze apóstolos de Jesus, conhecido por sua dúvida inicial sobre a ressurreição. Segundo a tradição, levou o cristianismo à Índia.',
+    relatedTerms: ['Apóstolos', 'Igreja Mar Thoma', 'Índia']
+  },
+  {
+    id: 'tradicao',
+    term: 'Tradição',
+    definition: 'Transmissão da fé cristã através dos séculos. Uma das três fontes da teologia anglicana, junto com Escritura e Razão.',
+    relatedTerms: ['Escritura', 'Razão', 'Teologia Anglicana']
+  },
+  {
+    id: 'transubstanciacao',
+    term: 'Transubstanciação',
+    definition: 'Doutrina católica romana sobre a Eucaristia que afirma a mudança da substância do pão e vinho no Corpo e Sangue de Cristo. Os anglicanos geralmente preferem não especificar o modo da Presença Real.',
+    relatedTerms: ['Eucaristia', 'Presença Real', 'Doutrina']
+  },
+  {
+    id: 'trato',
+    term: 'Trato',
+    definition: 'Cântico que substitui o Aleluia durante a Quaresma e em outras ocasiões penitenciais.',
+    relatedTerms: ['Quaresma', 'Liturgia', 'Aleluia']
+  },
+  {
+    id: 'triduo-pascal',
+    term: 'Tríduo Pascal',
+    definition: 'Os três dias santos que celebram a Paixão, Morte e Ressurreição de Cristo: Quinta-feira Santa, Sexta-feira Santa e Vigília Pascal.',
+    relatedTerms: ['Semana Santa', 'Páscoa', 'Paixão']
+  },
+  {
+    id: 'turibulo',
+    term: 'Turíbulo',
+    definition: 'Recipiente de metal suspenso por correntes onde se queima incenso durante as celebrações litúrgicas.',
+    relatedTerms: ['Incenso', 'Liturgia', 'Turiferário']
+  },
+  {
+    id: 'turiferario',
+    term: 'Turiferário',
+    definition: 'Acólito que tem a função de conduzir o turíbulo durante as celebrações litúrgicas.',
+    relatedTerms: ['Turíbulo', 'Acólito', 'Incenso']
+  },
+  {
+    id: 'uncao',
+    term: 'Unção',
+    definition: 'Ato de aplicar óleo sagrado em pessoas ou objetos. Sacramento ministrado aos enfermos e usado em batismos, confirmações e ordenações.',
+    relatedTerms: ['Óleos Santos', 'Sacramento', 'Unção dos Enfermos']
+  },
+  {
+    id: 'uncao-enfermos',
+    term: 'Unção dos Enfermos',
+    definition: 'Sacramento pelo qual a Igreja pede a cura e o conforto divino para os doentes através da unção com óleo sagrado.',
+    relatedTerms: ['Sacramento', 'Óleos Santos', 'Cura']
+  },
+  {
+    id: 'vale',
+    term: 'Vale',
+    definition: 'Faixa larga de tecido que pende da mitra episcopal, caindo sobre as costas do bispo.',
+    relatedTerms: ['Mitra', 'Bispo', 'Paramentos']
+  },
+  {
+    id: 'vasos-sagrados',
+    term: 'Vasos Sagrados',
+    definition: 'Objetos litúrgicos usados na celebração da Eucaristia: cálice, patena, cibório, âmbula.',
+    relatedTerms: ['Cálice', 'Patena', 'Cibório', 'Eucaristia']
+  },
+  {
+    id: 'veni-creator',
+    term: 'Veni Creator',
+    definition: 'Hino latino ao Espírito Santo que inicia com "Veni Creator Spiritus" (Vem, Criador Espírito Santo), usado em ordenações e outras ocasiões solenes.',
+    relatedTerms: ['Espírito Santo', 'Hino', 'Ordenação']
+  },
+  {
+    id: 'vesperas',
+    term: 'Vésperas',
+    definition: 'Ofício da tarde, uma das principais Horas Canônicas do Ofício Divino, tradicionalmente celebrado ao pôr do sol.',
+    relatedTerms: ['Ofício Divino', 'Horas Canônicas', 'Laudes']
+  },
+  {
+    id: 'vestes-liturgicas',
+    term: 'Vestes Litúrgicas',
+    definition: 'Conjunto de roupas especiais usadas pelos ministros ordenados e acólitos durante as celebrações litúrgicas.',
+    relatedTerms: ['Paramentos', 'Alva', 'Casula', 'Estola']
+  },
+  {
+    id: 'veu-calice',
+    term: 'Véu do Cálice',
+    definition: 'Pano que cobre o cálice antes e depois da consagração, geralmente na mesma cor litúrgica do dia.',
+    relatedTerms: ['Cálice', 'Paramentos', 'Cores Litúrgicas']
+  },
+  {
+    id: 'veu-umeral',
+    term: 'Véu Umeral',
+    definition: 'Longa faixa de tecido usada sobre os ombros para segurar o ostensório ou o cibório em procissões eucarísticas.',
+    relatedTerms: ['Ostensório', 'Cibório', 'Procissão']
+  },
+  {
+    id: 'via-crucis',
+    term: 'Via Crúcis',
+    definition: 'Também chamada Via Sacra, é uma devoção que medita sobre as catorze estações da Paixão de Cristo.',
+    relatedTerms: ['Paixão', 'Devoção', 'Semana Santa']
+  },
+  {
+    id: 'vigario',
+    term: 'Vigário',
+    definition: 'Presbítero que atua em nome de outro, como o vigário de uma paróquia ou o vigário episcopal.',
+    relatedTerms: ['Presbítero', 'Paróquia', 'Delegação']
+  },
+  {
+    id: 'vigilia',
+    term: 'Vigília',
+    definition: 'Celebração noturna que precede uma grande festa, especialmente a Vigília Pascal.',
+    relatedTerms: ['Páscoa', 'Liturgia', 'Festa']
+  },
+  {
+    id: 'visitacao-pastoral',
+    term: 'Visitação Pastoral',
+    definition: 'Visita oficial do bispo a uma paróquia ou região de sua diocese para administrar a confirmação e supervisionar a vida da Igreja.',
+    relatedTerms: ['Bispo', 'Diocese', 'Confirmação']
+  },
+  {
+    id: 'welby-justin-portal',
+    term: 'Welby, Justin Portal',
+    definition: 'Atual (105º) Arcebispo de Cantuária desde 2013, líder espiritual da Comunhão Anglicana.',
+    relatedTerms: ['Arcebispo de Cantuária', 'Comunhão Anglicana', 'Primaz']
+  },
+  {
+    id: 'westcott-brooke-foss',
+    term: 'Westcott, Brooke Foss',
+    definition: 'Bispo e estudioso bíblico (1825-1901), conhecido por seu trabalho em crítica textual do Novo Testamento e teologia social.',
+    relatedTerms: ['Bíblia', 'Teologia', 'Crítica Textual']
+  },
+  {
+    id: 'zona',
+    term: 'Zona',
+    definition: 'Subdivisão administrativa de uma diocese, geralmente composta por várias paróquias sob a coordenação de um vigário zonal.',
+    relatedTerms: ['Diocese', 'Paróquia', 'Administração']
   }
 ]
