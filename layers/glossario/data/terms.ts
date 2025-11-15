@@ -4106,12 +4106,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Sobrepeliz', 'Vestes Litúrgicas', 'Clero Anglicano']
   },
   {
-    id: 'quimera',
-    term: 'Quimera',
-    definition: 'Veste de seda vermelha ou preta usada por bispos anglicanos sobre o rochete. Sem mangas ou com mangas abertas, é uma das insígnias episcopais anglicanas.',
-    relatedTerms: ['Rochete', 'Bispo', 'Vestes Episcopais']
-  },
-  {
     id: 'manipulo',
     term: 'Manípulo',
     definition: 'Faixa ornamental usada sobre o braço esquerdo do celebrante, tradicional nas vestes católicas romanas. Pouco usado no anglicanismo contemporâneo.',
