@@ -340,14 +340,24 @@ const clearSearch = () => {
 // Termos filtrados
 const filteredTerms = computed(() => {
   // Sempre criar uma nova cópia do array original para garantir imutabilidade
-  const originalTerms = glossaryTerms.map(t => t)
+  // Usar Array.from para criar uma cópia totalmente nova e quebrar referências
+  const originalTerms = Array.from(glossaryTerms)
 
   // Normalizar searchQuery (trim e verificar se realmente tem conteúdo)
   const normalizedQuery = searchQuery.value.trim()
   const hasSearchQuery = normalizedQuery.length > 0
 
+  // Debug: log para verificar qual caminho está sendo executado
+  console.log('[Glossário] Recalculando filtros:', {
+    searchQuery: searchQuery.value,
+    normalizedQuery,
+    hasSearchQuery,
+    selectedLetter: selectedLetter.value
+  })
+
   // Caso 1: Busca ativa
   if (hasSearchQuery) {
+    console.log('[Glossário] Usando ordenação com priorização de matches')
     const query = normalizedQuery.toLowerCase()
 
     // Filtrar termos que contêm a busca
@@ -382,14 +392,23 @@ const filteredTerms = computed(() => {
 
   // Caso 2: Filtro por letra
   if (selectedLetter.value) {
+    console.log('[Glossário] Usando filtro por letra:', selectedLetter.value)
     const filtered = originalTerms.filter(term =>
       term.term.charAt(0).toUpperCase() === selectedLetter.value
     )
-    return filtered.sort((a, b) => a.term.localeCompare(b.term))
+    // Criar novo array antes de ordenar
+    const sorted = [...filtered].sort((a, b) => a.term.localeCompare(b.term))
+    console.log('[Glossário] Primeiro termo após ordenação por letra:', sorted[0]?.term)
+    return sorted
   }
 
   // Caso 3: Sem filtros - ordenação alfabética pura
-  return originalTerms.sort((a, b) => a.term.localeCompare(b.term))
+  console.log('[Glossário] SEM FILTROS - Usando ordenação alfabética pura')
+  // SEMPRE criar um array completamente novo para quebrar qualquer cache
+  const sorted = [...originalTerms].sort((a, b) => a.term.localeCompare(b.term))
+  console.log('[Glossário] Primeiro termo após ordenação alfabética:', sorted[0]?.term)
+  console.log('[Glossário] Primeiros 5 termos:', sorted.slice(0, 5).map(t => t.term))
+  return sorted
 })
 
 // Paginação
