@@ -1,4 +1,5 @@
 import type { Database } from '~/types/database'
+import { generateChurchSlug } from '~/layers/localizador/utils/slug'
 
 type ChurchSubmission = Database['public']['Tables']['church_submissions']['Row']
 type ChurchInsert = Database['public']['Tables']['churches']['Insert']
@@ -38,9 +39,13 @@ export async function transformSubmission(
     spotify: submission.spotify || null,
   }
 
+  // Generate slug for the church
+  const slug = generateChurchSlug(submission.name, geocodeResult.city, geocodeResult.state)
+
   // Create the church insert object
   const church: ChurchInsert = {
     name: submission.name,
+    slug,
     jurisdiction_id: jurisdictionId,
     address: submission.address,
     city: geocodeResult.city,

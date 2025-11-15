@@ -96,22 +96,24 @@ useSeoMeta({
 })
 
 // Structured data
+const structuredData = computed(() => {
+  if (!jurisdiction.value) return {}
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: jurisdiction.value.fullName,
+    description: jurisdiction.value.description,
+    url: `https://caminhoanglicano.com.br/igrejas/${jurisdiction.value.slug}`,
+    ...(jurisdiction.value.website && { sameAs: [jurisdiction.value.website] })
+  }
+})
+
 useHead({
   script: [
     {
       type: 'application/ld+json',
-      children: computed(() => {
-        if (!jurisdiction.value) return ''
-
-        return JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'Organization',
-          name: jurisdiction.value.fullName,
-          description: jurisdiction.value.description,
-          url: `https://caminhoanglicano.com.br/igrejas/${jurisdiction.value.slug}`,
-          ...(jurisdiction.value.website && { sameAs: [jurisdiction.value.website] })
-        })
-      })
+      innerHTML: () => JSON.stringify(structuredData.value)
     }
   ]
 })

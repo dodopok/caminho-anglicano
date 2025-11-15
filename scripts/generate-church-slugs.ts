@@ -63,6 +63,15 @@ async function main() {
       return
     }
 
+    // Type assertion for TypeScript
+    type ChurchRow = {
+      id: string
+      name: string
+      city: string
+      state: string
+      slug: string | null
+    }
+
     console.log(`✅ Found ${churches.length} churches\n`)
 
     // Track statistics
@@ -72,7 +81,7 @@ async function main() {
     const slugsUsed = new Map<string, number>()
 
     // Process each church
-    for (const church of churches) {
+    for (const church of churches as ChurchRow[]) {
       try {
         // Skip if already has slug
         if (church.slug) {

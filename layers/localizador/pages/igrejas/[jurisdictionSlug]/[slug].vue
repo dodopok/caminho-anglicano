@@ -67,41 +67,43 @@ useSeoMeta({
 })
 
 // Structured data for SEO (schema.org)
+const structuredData = computed(() => {
+  if (!church.value) return {}
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Church',
+    name: church.value.name,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: church.value.address,
+      addressLocality: church.value.city,
+      addressRegion: church.value.state,
+      postalCode: church.value.postalCode,
+      addressCountry: 'BR'
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: church.value.latitude,
+      longitude: church.value.longitude
+    },
+    description: church.value.description,
+    url: `https://caminhoanglicano.com.br/igrejas/${church.value.jurisdiction?.slug}/${church.value.slug}`,
+    ...(church.value.socialMedia?.website && {
+      sameAs: [
+        church.value.socialMedia.website,
+        ...(church.value.socialMedia.instagram ? [`https://instagram.com/${church.value.socialMedia.instagram.replace('@', '')}`] : []),
+        ...(church.value.socialMedia.youtube ? [church.value.socialMedia.youtube] : [])
+      ]
+    })
+  }
+})
+
 useHead({
   script: [
     {
       type: 'application/ld+json',
-      children: computed(() => {
-        if (!church.value) return ''
-
-        return JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'Church',
-          name: church.value.name,
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: church.value.address,
-            addressLocality: church.value.city,
-            addressRegion: church.value.state,
-            postalCode: church.value.postalCode,
-            addressCountry: 'BR'
-          },
-          geo: {
-            '@type': 'GeoCoordinates',
-            latitude: church.value.latitude,
-            longitude: church.value.longitude
-          },
-          description: church.value.description,
-          url: `https://caminhoanglicano.com.br/igrejas/${church.value.jurisdiction?.slug}/${church.value.slug}`,
-          ...(church.value.socialMedia?.website && {
-            sameAs: [
-              church.value.socialMedia.website,
-              ...(church.value.socialMedia.instagram ? [`https://instagram.com/${church.value.socialMedia.instagram.replace('@', '')}`] : []),
-              ...(church.value.socialMedia.youtube ? [church.value.socialMedia.youtube] : [])
-            ]
-          })
-        })
-      })
+      innerHTML: () => JSON.stringify(structuredData.value)
     }
   ]
 })
