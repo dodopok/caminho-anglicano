@@ -1,5 +1,5 @@
 <template>
-  <VitePwaManifest />
+  <ClientOnly><VitePwaManifest /></ClientOnly>
   <Analytics />
   <div class="min-h-screen flex flex-col">
     <NuxtPage />
