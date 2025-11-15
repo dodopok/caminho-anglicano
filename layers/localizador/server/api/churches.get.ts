@@ -6,6 +6,16 @@ export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
   const query = getQuery(event)
 
+  // Define cache headers baseado nos query params
+  // Se não há filtros, permite cache SWR de 60 segundos
+  // Se há filtros (jurisdiction ou search), desabilita cache
+  const hasFilters = query.jurisdiction || query.search
+  if (!hasFilters) {
+    setHeader(event, 'Cache-Control', 's-maxage=60, stale-while-revalidate=30')
+  } else {
+    setHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
+  }
+
   // Criar cliente Supabase no servidor
   const supabase = createClient<Database>(
     config.public.supabaseUrl,
@@ -48,6 +58,15 @@ export default defineEventHandler(async (event) => {
         name: church.name,
         slug: church.slug,
         jurisdictionId: church.jurisdiction_id,
+        jurisdiction: church.jurisdiction ? {
+          id: church.jurisdiction.id,
+          name: church.jurisdiction.name,
+          slug: church.jurisdiction.slug,
+          fullName: church.jurisdiction.full_name,
+          color: church.jurisdiction.color,
+          description: church.jurisdiction.description,
+          website: church.jurisdiction.website
+        } : undefined,
         address: church.address,
         city: church.city,
         state: church.state,
