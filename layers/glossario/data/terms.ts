@@ -2712,5 +2712,347 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Âmbula',
     definition: 'Recipiente utilizado para a conservação e a distribuição das hóstias aos fiéis.',
     relatedTerms: ['Hóstia', 'Eucaristia', 'Sacrário', 'Cibório']
+  },
+  {
+    id: 'berrete',
+    term: 'Berrete',
+    definition: 'Cobertura quadrangular utilizada pelos ministros ordenados, confeccionado de papelão e recoberto com seda ou lã, em uma disposição mais larga na parte de cima, com um gomo sobreposto e tendo, no meio da copa uma bola de retroz que será preta para os Diáconos ou Presbíteros, branca para os membros de alguma Ordem religiosa, roxa para Bispos e vermelha para os Cardeais.',
+    relatedTerms: ['Paramentos', 'Vestes Litúrgicas']
+  },
+  {
+    id: 'basilica',
+    term: 'Basílica',
+    definition: 'Modelo de construção retangular com, normalmente, três naves, separadas por fileiras de colunas separadas entre si por arcos. A nave do meio se eleva acima das demais. No fundo das basílicas romanas, existia a ábside, com o trono do Bispo e as cadeiras dos sacerdotes, tendo o altar à sua frente. Estas construções, comuns no Império Romano, foram transformadas em igrejas quando o cristianismo se transformou na religião oficial do Império.',
+    relatedTerms: ['Apse', 'Arquitetura', 'Nave']
+  },
+  {
+    id: 'bispo-coadjutor',
+    term: 'Bispo Coadjutor',
+    definition: 'Título dado ao Bispo que auxilia o Bispo titular e que terá direito à sucessão quando da saída deste.',
+    relatedTerms: ['Bispo', 'Bispo Sufragâneo', 'Diocese']
+  },
+  {
+    id: 'bispo-diocesano',
+    term: 'Bispo Diocesano',
+    definition: 'Nome dado ao Bispo titular de uma diocese. Também é chamado, nos documentos canônicos, de Ordinário.',
+    relatedTerms: ['Bispo', 'Diocese', 'Ordinário']
+  },
+  {
+    id: 'brande-vicente',
+    term: 'Brande, Vicente',
+    definition: 'De origem presbiteriana, Vicente Brande recebeu os missionários Kingsolving, Morris, o sr. Boaventura e esposa, em sua casa. Conseguiu alugar a casa da Missão que se tornaria o berço da Igreja Protestante Episcopal do Sul dos Estados Unidos do Brasil. Foi o primeiro brasileiro a ser ordenado ao ministério Anglicano, em 28 de agosto de 1893, pelo Bispo Peterkin. Foi responsável pela fundação da Capela da Redenção em Porto Alegre e em Jaraguão. Faleceu na cidade de Porto Alegre em 1940.',
+    relatedTerms: ['Kinsolving Lucien Lee', 'Morris James Watson', 'História Anglicana']
+  },
+  {
+    id: 'cabido-catedral',
+    term: 'Cabido da Catedral',
+    definition: 'Nome dado à instância maior da Catedral. O Cabido é normalmente composto pelo Bispo(s), o Deão, o Cônego(s), o Arcediago(s), se houver, e a Junta Paroquial da Igreja Catedral.',
+    relatedTerms: ['Catedral', 'Deão', 'Cônego', 'Bispo']
+  },
+  {
+    id: 'cabral-americo-vespucio',
+    term: 'Cabral, Américo Vespúcio',
+    definition: 'Natural de Arroio Grande, nasceu aos 27 de março de 1870. Ordenado diácono em 1893 e presbítero em 1897. Trabalhou em vários lugares, dentre os quais destacamos Viamão, Porto Alegre e a região de São Francisco de Paula, Santo Antônio da Patrulha, Taquará e Praia Grande, já em Santa Catarina. Faleceu aos 67 anos, em 1937. Segundo testifica Kingsolving, ele era "o pregador mais eloquente que jamais ouvi em qualquer língua".',
+    relatedTerms: ['Kinsolving Lucien Lee', 'História Anglicana Brasileira']
+  },
+  {
+    id: 'cca',
+    term: 'CCA',
+    definition: 'Conselho Consultivo Anglicano. Assembleia internacional criada em 1969, composta por representantes clérigos e leigos de diversas Províncias da Comunhão Anglicana que, a cada três anos se reúne para discutir temas relativos à missão, ecumenismo, teologia, etc.',
+    relatedTerms: ['Conselho Consultivo Anglicano', 'Comunhão Anglicana', 'Laços de Afeição']
+  },
+  {
+    id: 'caldeirinha',
+    term: 'Caldeirinha',
+    definition: 'Vasilha onde se coloca a água benta que será aspergida sobre pessoas ou objetos.',
+    relatedTerms: ['Aspersório', 'Água Benta', 'Bênção']
+  },
+  {
+    id: 'candelabro',
+    term: 'Candelabro',
+    definition: 'Grande castiçal com ramificações nas quais são colocadas velas.',
+    relatedTerms: ['Castiçal', 'Velas', 'Altar']
+  },
+  {
+    id: 'candidato-sagradas-ordens',
+    term: 'Candidato às Sagradas Ordens',
+    definition: 'Status concedido ao postulante que, vendo se aproximar a época de sua ordenação, cumpre as exigências canônicas e é inscrito, pelo Bispo, na lista oficial dos Candidatos.',
+    relatedTerms: ['Postulante', 'Ordenação', 'Ministério Ordenado']
+  },
+  {
+    id: 'canonizacao',
+    term: 'Canonização',
+    definition: 'Ato pelo qual o papa coloca no catálogo (cânon) dos santos alguém já, anteriormente, beatificado. Nas Igrejas Orientais a canonização é feita pelos Sínodos das Igrejas autocéfalas.',
+    relatedTerms: ['Santos', 'Beatificação', 'Igreja Católica Romana']
+  },
+  {
+    id: 'cantochao',
+    term: 'Cantochão',
+    definition: 'Também chamado de Canto Gregoriano ou canto plano, este tipo tradicional de canto cristão, caracteriza-se por ser monódico, diatônico e de ritmo livre. Em geral, ele é composto tendo por base um texto das Escrituras.',
+    relatedTerms: ['Canto Gregoriano', 'Liturgia', 'Música Sacra']
+  },
+  {
+    id: 'cantuaria',
+    term: 'Cantuária',
+    definition: 'Cidade a sudoeste de Londres e que é a sede da primeira diocese da Inglaterra.',
+    relatedTerms: ['Arcebispo de Cantuária', 'Inglaterra', 'Diocese']
+  },
+  {
+    id: 'canone',
+    term: 'Cânone',
+    definition: 'A palavra é derivada do grego "kanon", e significa "vara de medir" ou "regra". Na história da Igreja, a palavra tem assumido vários significados, dentre os quais destacamos dois: (1) as leis eclesiásticas estabelecidas pela autoridade apropriada e que normatizam uma Província ou uma diocese; (2) a lista dos livros considerados inspirados por Deus e, portanto, autoritativos como regra de fé e prática.',
+    relatedTerms: ['Escrituras', 'Lei Canônica', 'Bíblia']
+  },
+  {
+    id: 'capa-asperge',
+    term: 'Capa de asperge',
+    definition: 'Paramento longo que o sacerdote usa por sobre a sobrepeliz ou alva, nas procissões e para dar a bênção, aspergindo objetos ou pessoas, especialmente casais.',
+    relatedTerms: ['Aspersório', 'Paramentos', 'Pluvial']
+  },
+  {
+    id: 'capela',
+    term: 'Capela',
+    definition: 'Edifício ou qualquer outro recinto de pequena extensão, habitual ou transitoriamente destinado ao culto, com caráter de oratório público, semi-público ou privado, não de Igreja.',
+    relatedTerms: ['Igreja', 'Santuário', 'Oratório']
+  },
+  {
+    id: 'capela-mor',
+    term: 'Capela-mor',
+    definition: 'Lugar onde se encontra o altar-mor da igreja, formando um recinto distinto do corpo da mesma.',
+    relatedTerms: ['Altar', 'Santuário', 'Presbitério']
+  },
+  {
+    id: 'capelao',
+    term: 'Capelão',
+    definition: 'Sacerdote dedicado a auxiliar o serviço de pessoas (pe. Bispos), comunidades religiosas (seminários), comunidades civis (colégios, hospitais, forças armadas) ou de uma igreja com o encargo do coro e das funções sacras.',
+    relatedTerms: ['Presbítero', 'Ministério', 'Pastoral']
+  },
+  {
+    id: 'capelo',
+    term: 'Capêlo',
+    definition: 'Indumentária acadêmica utilizada pelo ministro, sobre a sobrepeliz, e que indica o grau e a área de formação de quem usa.',
+    relatedTerms: ['Sobrepeliz', 'Vestes', 'Acadêmico']
+  },
+  {
+    id: 'cardeal',
+    term: 'Cardeal',
+    definition: 'Membro do "Colégio Cardinalício", que forma o senado do Papa e lhe assiste no governo da Igreja. Diferentemente do que se pensa, mesmo um leigo pode ser nomeado Cardeal.',
+    relatedTerms: ['Papa', 'Igreja Católica Romana', 'Vaticano']
+  },
+  {
+    id: 'cassock',
+    term: 'Cassock',
+    definition: 'O mesmo que batina. Originalmente era a roupa de passeio dos clérigos e dos membros das ordens menores.',
+    relatedTerms: ['Batina', 'Sotaina', 'Vestes Clericais']
+  },
+  {
+    id: 'celebrante',
+    term: 'Celebrante',
+    definition: 'O clérigo que preside a Eucaristia e, por extensão, os outros ritos sacramentais.',
+    relatedTerms: ['Eucaristia', 'Presbítero', 'Bispo']
+  },
+  {
+    id: 'cerimonial',
+    term: 'Cerimonial',
+    definition: 'A palavra faz referências as posturas, ações e práticas da adoração pública e se distingue do "Ritual", que descreve as formas prescritas e as palavras usadas na adoração. Muito embora o Rito seja mais inflexível, a cerimônia tem mais flexibilidade.',
+    relatedTerms: ['Ritual', 'Liturgia', 'Rito']
+  },
+  {
+    id: 'chamarra',
+    term: 'Chamarra',
+    definition: 'Nome dado a um longo colete aberto e sem mangas, usado sobre o roquete como parte das vestes próprias do Bispo. Ela pode ser tanto preta quanto vermelha.',
+    relatedTerms: ['Roquete', 'Bispo', 'Paramentos Episcopais']
+  },
+  {
+    id: 'chambers-albert',
+    term: 'Chambers, D. Albert Arthur',
+    definition: 'Nascido em 22/06/1906 e falecido em 18/06/1993, foi o sétimo Bispo da Diocese de Springfield, onde serviu de 1962 até 1972. Levantou-se contra os erros cometidos pela Igreja Episcopal dos estados Unidos e foi um dos que convocou a Conferência de Saint Louis, que resultaria na criação do Movimento Anglicano Continuante. Depois que deixou a ECUSA ele foi o Primaz da Igreja Anglicana na América do Norte.',
+    relatedTerms: ['Igrejas Continuantes', 'Afirmação de Saint Louis', 'ACNA']
+  },
+  {
+    id: 'ciborio',
+    term: 'Cibório',
+    definition: 'Ver âmbula. Recipiente para conservação e distribuição das hóstias.',
+    relatedTerms: ['Âmbula', 'Píxide', 'Hóstia']
+  },
+  {
+    id: 'ciborio-altar',
+    term: 'Cibório do Altar',
+    definition: 'Pavilhão por cima do Altar, descansando sobre quatro ou seis colunas, entre as quais pendiam cortinas velando todo o Altar. Era muito utilizado nas basílicas.',
+    relatedTerms: ['Altar', 'Basílica', 'Dossel']
+  },
+  {
+    id: 'cingulo',
+    term: 'Cíngulo',
+    definition: 'Cordão com o qual se prende a alva ao redor da cintura do ministro.',
+    relatedTerms: ['Alva', 'Paramentos', 'Vestes Litúrgicas']
+  },
+  {
+    id: 'clero-secular',
+    term: 'Clero secular',
+    definition: 'Também chamado de clero diocesano, é o conjunto de clérigos que não pertencem a nenhuma comunidade ou ordem religiosas, estando sob a direção do Bispo diocesano.',
+    relatedTerms: ['Clero', 'Diocese', 'Bispo Diocesano']
+  },
+  {
+    id: 'columba',
+    term: 'Columba, S.',
+    definition: 'Missionário na Escócia, 557. Descendia de uma das famílias reais da Irlanda, mas o seu desejo de pregar o Evangelho o levou à Escócia. Estabeleceu-se na ilha de Iona, onde fundou um célebre mosteiro que se tornou para a Igreja escocesa o que a obra de S. Agostinho de Cantuária foi para os Ingleses. Modernamente Columba é reconhecido como um dos dois santos padroeiros da Escócia, ao lado de André.',
+    relatedTerms: ['Iona', 'Missão', 'Escócia']
+  },
+  {
+    id: 'conac',
+    term: 'CONAC',
+    definition: 'Comissão Nacional Anglicano-Católica Romana. Essa comissão foi formalmente criada em 1982 e já publicou um relatório sobre a condição do diálogo entre as duas Igrejas no Brasil.',
+    relatedTerms: ['ARCIC', 'Ecumenismo', 'Diálogo']
+  },
+  {
+    id: 'comungatoriο',
+    term: 'Comungatório',
+    definition: 'Nome do local adequado para que o fiel receba a comunhão.',
+    relatedTerms: ['Comunhão', 'Eucaristia', 'Altar']
+  },
+  {
+    id: 'concilio-diocesano',
+    term: 'Concílio Diocesano',
+    definition: 'É a Assembleia Geral da Diocese. Ela congrega regularmente o(s) Bispo, os clérigos e as representações leigas de cada comunidade diocesana. Sua finalidade é, além de ouvir os relatórios das diversas comissões e conhecer o estado da diocese, aproximar os leigos e clérigos e tratar de assuntos espirituais e materiais relativos à diocese.',
+    relatedTerms: ['Diocese', 'Sínodo', 'Assembleia']
+  },
+  {
+    id: 'conego',
+    term: 'Cônego',
+    definition: 'Cargo honorário confiado a clérigos – e eventualmente a leigos – em virtude de serviços prestados à diocese ou à igreja Catedral. O título é, geralmente, confiado pelo Bispo em resposta a uma requisição vinculada à Catedral ou à Instituição teológica diocesana.',
+    relatedTerms: ['Catedral', 'Título Honorário', 'Bispo']
+  },
+  {
+    id: 'confessionario',
+    term: 'Confessionário',
+    definition: 'Um local fechado, com um assento e um espaço na parede pelo qual o sacerdote ouve a confissão dos fiéis penitentes.',
+    relatedTerms: ['Confissão', 'Penitência', 'Sacramento']
+  },
+  {
+    id: 'confessor',
+    term: 'Confessor',
+    definition: 'Um clérigo, sacerdote ou Bispo, que ouve a confissão do penitente e pronuncia a absolvição. Ele normalmente oferece conselhos espirituais e estabelece uma penitência para ser realizada pelo pecador arrependido.',
+    relatedTerms: ['Confissão', 'Absolvição', 'Penitência']
+  },
+  {
+    id: 'confissoes-fe',
+    term: 'Confissões de Fé',
+    definition: 'São fórmulas doutrinárias destinadas à aceitação por parte de grupos, congregações ou Sínodos de Igrejas. Elas são basicamente oriundas da Reforma Protestante do século XVI. As principais Confissões de Fé reformadas são: a Confissão de Augsburgo (1530), a Confissão de Fé Fluminense (1558), a Confissão de Fé Galicana (1559), Confissão de Fé Escocesa (1560), a Confissão Belga (1661), o Catecismo de Heidelberg (1563), a Fórmula de Concórdia (1577), o Livro de Concórdia (1580), o documento do Sínodo de Dort (1619), e a Confissão de Fé de Westminster (1646).',
+    relatedTerms: ['Reforma Protestante', 'Doutrina', 'Símbolos de Fé']
+  },
+  {
+    id: 'conselho-executivo-sinodos',
+    term: 'Conselho Executivo dos Sínodos',
+    definition: 'É o grupo que representa o Sínodo de cada Província no interregno de suas reuniões, sob a presidência do Bispo Primaz.',
+    relatedTerms: ['Sínodo', 'Província', 'Primaz']
+  },
+  {
+    id: 'conselho-missao',
+    term: 'Conselho de Missão',
+    definition: 'Instância deliberativa dos aspectos administrativos, financeiros e patrimoniais de uma Missão.',
+    relatedTerms: ['Missão', 'Administração', 'Junta Paroquial']
+  },
+  {
+    id: 'cores-liturgicas',
+    term: 'Cores litúrgicas',
+    definition: 'São as cores tradicionalmente utilizadas nas quadras do Ano Cristão. Elas são: roxo, nos períodos de preparação (Advento) e penitência (Quaresma); branco, nos períodos de festa – inclusive o Natal; vermelho, para o Pentecostes e festas de Apóstolos e Mártires; verde para os domingos comuns e para o período posterior à Epifania e o Pentecostes; e preto, para a sexta-feira Santa e funerais, lembrando que o azul pode substituir o roxo no Advento.',
+    relatedTerms: ['Ano Litúrgico', 'Paramentos', 'Advento', 'Quaresma']
+  },
+  {
+    id: 'cranmer-thomas',
+    term: 'Cranmer, Thomas',
+    definition: 'Nascido em 1489 e martirizado em 1556, foi o principal articulador da Reforma Protestante na Inglaterra. Notabilizou-se como Arcebispo de Cantuária, responsável pela anulação do casamento de Henrique VIII com Catarina de Aragão, pela confecção dos "Dez Artigos" (1536), por promover nova tradução da Bíblia para o inglês, por publicar os 42 Artigos de Religião (1551) que se tornariam 39 no período elisabetano, o Livro das Homilias (1547), e acima de tudo por ter sido o responsável pelo primeiro Livro de Oração Comum (1549). Morreu martirizado na fogueira por ordem da Rainha Maria I.',
+    relatedTerms: ['Reforma Inglesa', 'Livro de Oração Comum', 'Mártires']
+  },
+  {
+    id: 'credo-apostolico',
+    term: 'Credo Apostólico',
+    definition: 'É a confissão de fé característica do Ocidente, elaborada em Roma ao redor do 3º século e profundamente associado ao Batismo.',
+    relatedTerms: ['Credo', 'Símbolos de Fé', 'Batismo']
+  },
+  {
+    id: 'credo-atanasiano',
+    term: 'Credo Atanasiano',
+    definition: 'É o último dos três grandes Credos ecumênicos que a cristandade ocidental utiliza como profissão de fé ortodoxa. Ele é composto por quarenta cláusulas divididas em duas seções, uma sobre a Trindade e a outra sobre a fé da Igreja na encarnação. Também conhecido como Symbolum Quicunque, só é utilizado – raramente - em liturgias Romanas e Anglicanas.',
+    relatedTerms: ['Credo', 'Trindade', 'Encarnação']
+  },
+  {
+    id: 'crucifixo',
+    term: 'Crucifixo',
+    definition: 'Uma cruz na qual podemos encontrar a figura do Cristo crucificado.',
+    relatedTerms: ['Cruz', 'Crucificação', 'Símbolo']
+  },
+  {
+    id: 'curia',
+    term: 'Cúria',
+    definition: 'Na antiga Roma, era o nome dado à sala onde se reunia o Senado. Hoje é o nome dado à instância que administra, juntamente com o Ordinário próprio, a diocese, Arquidiocese, ou mesmo a Igreja Romana.',
+    relatedTerms: ['Diocese', 'Ordinário', 'Administração']
+  },
+  {
+    id: 'custodio-loc',
+    term: 'Custódio do Livro de Oração Comum',
+    definition: 'É aquele que, eleito pela Câmara dos Bispos, ou pela instância adequada, tem sob sua responsabilidade autorizar a tradução, edição, publicação ou cópias de partes do LOC, zelando para que elas se conformem ao Livro-Padrão.',
+    relatedTerms: ['Livro de Oração Comum', 'Liturgia', 'Autoridade']
+  },
+  {
+    id: 'dalmatica',
+    term: 'Dalmática',
+    definition: 'Veste própria do diácono em uma celebração eucarística. Ela é utilizada sobre a alva e a estola.',
+    relatedTerms: ['Diácono', 'Paramentos', 'Eucaristia']
+  },
+  {
+    id: 'deao',
+    term: 'Deão',
+    definition: 'Designação do sacerdote que é reitor de uma igreja Catedral.',
+    relatedTerms: ['Catedral', 'Cabido da Catedral', 'Reitor']
+  },
+  {
+    id: 'decada-evangelizacao',
+    term: 'Década da evangelização',
+    definition: 'Designação empregada pela Conferência de Lambeth 88 para o esforço missionário que envolveria toda a Comunhão Anglicana entre 1991 e 2000. A missão da Igreja teria cinco bases fundamentais: (a) Proclamar as boas novas do Reino; (b) Ensinar, batizar e nutrir os novos convertidos; (c) Responder às necessidades humanas pelo serviço amoroso; (d) Procurar transformar as estruturas injustas da sociedade, e (e) Afirmar a integridade da criação.',
+    relatedTerms: ['Missão', 'Evangelização', 'Conferência de Lambeth']
+  },
+  {
+    id: 'decalogo',
+    term: 'Decálogo',
+    definition: 'Uma designação utilizada para se referir aos Dez Mandamentos. O termo vem do grego e significa "dez palavras".',
+    relatedTerms: ['Dez Mandamentos', 'Lei de Deus', 'Antigo Testamento']
+  },
+  {
+    id: 'dia-todos-santos',
+    term: 'Dia de todos os Santos',
+    definition: 'Uma das sete festas principais do Ano Cristão. Ela é observada em 1º de novembro ou, se preferir, no domingo seguinte. Ela é uma das quatro datas recomendadas para a administração do Santo Batismo, sendo as outras, a Páscoa, Pentecostes e o primeiro domingo depois da Epifania – a festa do Batismo de Nosso Senhor Jesus Cristo.',
+    relatedTerms: ['Santos', 'Ano Litúrgico', 'Batismo']
+  },
+  {
+    id: 'dom-autoridade',
+    term: 'Dom da autoridade',
+    definition: 'Declaração apresentada pela Comissão Internacional Anglicano-Católico Romano em 1998. Este texto trata da autoridade nas duas Igrejas e defende os temas relacionados à primazia e à sinodalidade. Os Anglicanos reconhecem que o Bispo de Roma é o primaz do Ocidente, ao mesmo tempo em que defende que essa autoridade seja desenvolvida em uma realidade mais sinodal.',
+    relatedTerms: ['ARCIC', 'Ecumenismo', 'Autoridade']
+  },
+  {
+    id: 'domingo',
+    term: 'Domingo',
+    definition: 'Vinda do latim "Domine", essa palavra significa "Senhor". Quando se fala em algum domingo em particular se usa o feminino dominga, por exemplo, a Segunda dominga do Advento. Este dia é dedicado à Trindade, vez que a Igreja vê nesse dia o primeiro dia da criação (Pai), o dia da ressurreição (Filho) e o dia de pentecostes (Espírito Santo).',
+    relatedTerms: ['Dia do Senhor', 'Ressurreição', 'Trindade']
+  },
+  {
+    id: 'domingo-pascoela',
+    term: 'Domingo da Pascoela',
+    definition: 'Primeiro domingo depois da Páscoa.',
+    relatedTerms: ['Páscoa', 'Tempo Pascal']
+  },
+  {
+    id: 'domingo-trindade',
+    term: 'Domingo da Trindade',
+    definition: 'É o domingo que segue imediatamente ao domingo de Pentecostes. A cor litúrgica é o branco.',
+    relatedTerms: ['Trindade', 'Pentecostes', 'Ano Litúrgico']
+  },
+  {
+    id: 'dossel',
+    term: 'Dossel',
+    definition: 'Cortina que fica atrás do altar em algumas igrejas. As vezes é feito de madeira e recebe o nome de retábulo.',
+    relatedTerms: ['Altar', 'Retábulo', 'Decoração']
   }
 ]
