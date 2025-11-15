@@ -21,7 +21,7 @@
       <GlossaryPagination />
     </main>
 
-    <TermSuggestionModal />
+    <GlossaryTermSuggestionModal />
 
     <BaseToast
       :show="showToast"
