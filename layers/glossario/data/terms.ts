@@ -3312,5 +3312,233 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Iona',
     definition: 'Monastério que teve enorme importância para a formação espiritual dos monges escoceses, fundado por São Columba.',
     relatedTerms: ['Columba S.', 'Escócia', 'Monasticismo']
+  },
+  {
+    id: 'jansenismo',
+    term: 'Jansenismo',
+    definition: 'Movimento teológico do século XVII que afirmava que a natureza humana era incapaz de qualquer bem, e que mesmo a graça de Deus era insuficiente para garantir a salvação. Cornelius Jansen, bispo de Ypres, na França, foi o principal divulgador das idéias de Santo Agostinho sobre a predestinação. O Jansenismo foi condenado pela Igreja Romana em 1653.',
+    relatedTerms: ['Agostinho', 'Predestinação', 'Graça']
+  },
+  {
+    id: 'junta-paroquial',
+    term: 'Junta Paroquial',
+    definition: 'Órgão administrativo de uma Paróquia, composto pelo Pároco e um conjunto de leigos eleitos pela Assembleia Paroquial.',
+    relatedTerms: ['Paróquia', 'Assembleia Paroquial', 'Governo Paroquial']
+  },
+  {
+    id: 'jus-liturgicum',
+    term: 'Jus Liturgicum',
+    definition: 'Direito litúrgico reconhecido a cada província da Comunhão Anglicana de ter o seu próprio Livro de Oração Comum.',
+    relatedTerms: ['Livro de Oração Comum', 'Liturgia', 'Autonomia Provincial']
+  },
+  {
+    id: 'klebe-john',
+    term: 'Klebe, John',
+    definition: 'Segundo missionário a ser enviado para trabalhar em Porto Alegre. O Reverendo Klebe chegou à capital gaúcha em 21 de setembro de 1890, com a missão de cuidar das colônias de língua alemã. Residiu em Santa Maria e em Cachoeira. Foi o responsável pela fundação de Missões em São João da Montanha, em 1891, e em Ijuí, em 1892. Retornou aos Estados Unidos em 1893.',
+    relatedTerms: ['Missão', 'Porto Alegre', 'História Anglicana']
+  },
+  {
+    id: 'kyrie-eleison',
+    term: 'Kyrie Eleison',
+    definition: 'Expressão grega que significa "Senhor, tem piedade". É uma das orações mais antigas da liturgia cristã.',
+    relatedTerms: ['Liturgia', 'Oração', 'Rito']
+  },
+  {
+    id: 'kingsley-charles',
+    term: 'Kingsley, Charles',
+    definition: 'Teólogo e romancista inglês (1819-1875), defensor do Socialismo Cristão e da Teologia Larga. Autor de obras como "Hypatia" e "Westward Ho!".',
+    relatedTerms: ['Socialismo Cristão', 'Igreja Larga', 'Literatura']
+  },
+  {
+    id: 'kinsolving-lucien-lee',
+    term: 'Kinsolving, Lucien Lee',
+    definition: 'Lucien Lee Kinsolving nasceu em 1862 e foi consagrado Bispo Missionário do Sul do Brasil em 1898. Permaneceu no Brasil até sua morte em 1929. Foi responsável pela fundação de diversas igrejas, escolas e obras sociais. Teve papel fundamental na consolidação da Igreja Episcopal do Brasil.',
+    relatedTerms: ['Bispo', 'Missão', 'História Anglicana', 'Brande Vicente']
+  },
+  {
+    id: 'kuala-lumpur-declaracao',
+    term: 'Kuala Lumpur, Declaração de',
+    definition: 'Documento produzido pela segunda reunião do Conselho Consultivo Anglicano (ACC-2), realizada em Kuala Lumpur, Malásia, em 1971.',
+    relatedTerms: ['Conselho Consultivo Anglicano', 'Comunhão Anglicana']
+  },
+  {
+    id: 'lacos-afeicao',
+    term: 'Laços de Afeição',
+    definition: 'Expressão utilizada para designar os vínculos que unem as diversas Províncias da Comunhão Anglicana. Estes laços incluem a comunhão com o Arcebispo de Cantuária, o Livro de Oração Comum, os Credos históricos e os ministérios ordenados reconhecidos mutuamente.',
+    relatedTerms: ['Comunhão Anglicana', 'Arcebispo de Cantuária', 'Livro de Oração Comum']
+  },
+  {
+    id: 'lavabo',
+    term: 'Lavabo',
+    definition: 'Pequeno recipiente com água usado pelo celebrante para lavar as mãos durante a missa. A palavra vem do latim "lavabo" (lavarei).',
+    relatedTerms: ['Eucaristia', 'Rito', 'Purificação']
+  },
+  {
+    id: 'latimer-hugh',
+    term: 'Latimer, Hugh',
+    definition: 'Bispo de Worcester (1485-1555), foi um dos principais pregadores da Reforma Inglesa. Foi martirizado junto com Nicholas Ridley em Oxford durante o reinado de Maria I.',
+    relatedTerms: ['Reforma Inglesa', 'Mártires', 'Cranmer Thomas']
+  },
+  {
+    id: 'latitudinarismo',
+    term: 'Latitudinarismo',
+    definition: 'Movimento teológico do século XVII que defendia a tolerância religiosa e uma abordagem racional da fé. Os latitudinários enfatizavam a ética cristã acima dos dogmas.',
+    relatedTerms: ['Igreja Larga', 'Razão', 'Tolerância']
+  },
+  {
+    id: 'laud-william',
+    term: 'Laud, William',
+    definition: 'Arcebispo de Cantuária (1573-1645) durante o reinado de Carlos I. Defendeu a liturgia tradicional e a beleza no culto. Foi executado durante a Guerra Civil Inglesa.',
+    relatedTerms: ['Arcebispo de Cantuária', 'Liturgia', 'Guerra Civil']
+  },
+  {
+    id: 'laudes',
+    term: 'Laudes',
+    definition: 'Uma das Horas Canônicas do Ofício Divino, tradicionalmente celebrada ao amanhecer. Consiste principalmente em salmos de louvor.',
+    relatedTerms: ['Ofício Divino', 'Horas Canônicas', 'Salmos']
+  },
+  {
+    id: 'lecionario',
+    term: 'Lecionário',
+    definition: 'Livro litúrgico que contém as leituras bíblicas organizadas segundo o calendário litúrgico.',
+    relatedTerms: ['Liturgia', 'Leituras', 'Ano Litúrgico']
+  },
+  {
+    id: 'lectorio',
+    term: 'Lectório',
+    definition: 'Suporte ou estante de onde são proclamadas as leituras da Sagrada Escritura durante o culto.',
+    relatedTerms: ['Ambão', 'Atril', 'Liturgia da Palavra']
+  },
+  {
+    id: 'leitor-leigo',
+    term: 'Leitor Leigo',
+    definition: 'Pessoa leiga autorizada a proclamar as leituras bíblicas e, em algumas tradições, a pregar durante o culto.',
+    relatedTerms: ['Ministério Leigo', 'Leituras', 'Licenciamento']
+  },
+  {
+    id: 'lewis-cs',
+    term: 'Lewis, C.S.',
+    definition: 'Clive Staples Lewis (1898-1963), escritor e apologista cristão anglicano. Autor de "As Crônicas de Nárnia", "Cristianismo Puro e Simples" e outras obras influentes.',
+    relatedTerms: ['Apologética', 'Literatura', 'Teologia']
+  },
+  {
+    id: 'lex-orandi-lex-credendi',
+    term: 'Lex orandi, lex credendi',
+    definition: 'Princípio teológico latino que significa "a lei da oração é a lei da crença". Expressa a ideia de que a liturgia molda e expressa a fé da Igreja.',
+    relatedTerms: ['Liturgia', 'Teologia', 'Oração']
+  },
+  {
+    id: 'licao',
+    term: 'Lição',
+    definition: 'Leitura bíblica proclamada durante o culto, geralmente do Antigo Testamento ou das Epístolas.',
+    relatedTerms: ['Leituras', 'Liturgia da Palavra', 'Lecionário']
+  },
+  {
+    id: 'liturgia-palavra',
+    term: 'Liturgia da Palavra',
+    definition: 'Primeira parte da celebração eucarística, que inclui as leituras bíblicas, o salmo, o evangelho e a pregação.',
+    relatedTerms: ['Eucaristia', 'Ante Comunhão', 'Leituras']
+  },
+  {
+    id: 'luneta',
+    term: 'Luneta',
+    definition: 'Pequeno suporte em forma de meia-lua usado para segurar a hóstia consagrada exposta para adoração.',
+    relatedTerms: ['Hóstia', 'Exposição', 'Adoração']
+  },
+  {
+    id: 'manustergio',
+    term: 'Manustérgio',
+    definition: 'Toalha usada pelo celebrante para secar as mãos após o lavabo durante a celebração eucarística.',
+    relatedTerms: ['Lavabo', 'Eucaristia', 'Paramentos']
+  },
+  {
+    id: 'materia',
+    term: 'Matéria',
+    definition: 'Elemento material utilizado na administração dos sacramentos. Por exemplo, a água no Batismo, o pão e o vinho na Eucaristia.',
+    relatedTerms: ['Sacramentos', 'Forma', 'Teologia Sacramental']
+  },
+  {
+    id: 'matinas',
+    term: 'Matinas',
+    definition: 'Uma das principais Horas Canônicas do Ofício Divino, tradicionalmente celebrada antes do amanhecer ou de madrugada.',
+    relatedTerms: ['Ofício Divino', 'Horas Canônicas', 'Laudes']
+  },
+  {
+    id: 'matrimonio',
+    term: 'Matrimônio',
+    definition: 'Sacramento do casamento cristão, união permanente entre um homem e uma mulher perante Deus e a comunidade da fé.',
+    relatedTerms: ['Sacramentos', 'Casamento', 'Bênção Nupcial']
+  },
+  {
+    id: 'maurice-john-frederick-denison',
+    term: 'Maurice, John Frederick Denison',
+    definition: 'Teólogo anglicano (1805-1872), um dos fundadores do movimento do Socialismo Cristão. Defendeu a educação popular e a justiça social.',
+    relatedTerms: ['Socialismo Cristão', 'Teologia Social', 'Kingsley Charles']
+  },
+  {
+    id: 'membro-batizado',
+    term: 'Membro Batizado',
+    definition: 'Pessoa que recebeu o Sacramento do Batismo e está incorporada à comunidade cristã.',
+    relatedTerms: ['Batismo', 'Membresia', 'Iniciação Cristã']
+  },
+  {
+    id: 'membro-comungante',
+    term: 'Membro Comungante',
+    definition: 'Membro batizado que comunga regularmente e está em boa posição na Igreja.',
+    relatedTerms: ['Eucaristia', 'Membresia', 'Comunhão']
+  },
+  {
+    id: 'membro-confirmado',
+    term: 'Membro Confirmado',
+    definition: 'Pessoa batizada que recebeu o Sacramento da Confirmação, confirmando publicamente sua fé.',
+    relatedTerms: ['Confirmação', 'Membresia', 'Iniciação Cristã']
+  },
+  {
+    id: 'membro-pleno',
+    term: 'Membro Pleno',
+    definition: 'Membro batizado e confirmado com plenos direitos e deveres na comunidade paroquial.',
+    relatedTerms: ['Membresia', 'Confirmação', 'Junta Paroquial']
+  },
+  {
+    id: 'mesa',
+    term: 'Mesa',
+    definition: 'Termo usado para designar o altar, enfatizando seu caráter de mesa da Ceia do Senhor.',
+    relatedTerms: ['Altar', 'Eucaristia', 'Santa Ceia']
+  },
+  {
+    id: 'mesa-palavra',
+    term: 'Mesa da Palavra',
+    definition: 'Outro nome para o ambão ou atril, de onde se proclama a Palavra de Deus.',
+    relatedTerms: ['Ambão', 'Atril', 'Liturgia da Palavra']
+  },
+  {
+    id: 'metropolita',
+    term: 'Metropolita',
+    definition: 'Arcebispo que preside uma província eclesiástica, exercendo autoridade sobre os bispos sufragâneos de sua província.',
+    relatedTerms: ['Arcebispo', 'Província', 'Primaz']
+  },
+  {
+    id: 'ministro-leigo',
+    term: 'Ministro Leigo',
+    definition: 'Pessoa não ordenada que exerce algum ministério litúrgico ou pastoral na Igreja, como leitor, acólito, catequista, etc.',
+    relatedTerms: ['Laicato', 'Ministério', 'Licenciamento']
+  },
+  {
+    id: 'misag',
+    term: 'MISAG',
+    definition: 'Missão da Igreja Anglicana no Sul do Brasil. Organização missionária que trabalhou na região sul do Brasil no final do século XIX e início do século XX.',
+    relatedTerms: ['Missão', 'História Anglicana', 'Sul do Brasil']
+  },
+  {
+    id: 'morris-james-watson',
+    term: 'Morris, James Watson',
+    definition: 'Primeiro missionário episcopal a ser enviado ao sul do Brasil. Chegou a Porto Alegre em 17 de julho de 1890, acompanhado de sua esposa Lucy Latane Coleman. Foi responsável pela organização da primeira congregação anglicana no Rio Grande do Sul.',
+    relatedTerms: ['Missão', 'Porto Alegre', 'História Anglicana', 'Brande Vicente', 'Kinsolving Lucien Lee']
+  },
+  {
+    id: 'mozeta',
+    term: 'Mozeta',
+    definition: 'Pequena capa que cobre os ombros, usada por bispos e alguns cônegos sobre a sobrepeliz durante cerimônias litúrgicas.',
+    relatedTerms: ['Paramentos', 'Vestes Episcopais', 'Bispo']
   }
 ]
