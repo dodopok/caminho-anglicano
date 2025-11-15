@@ -6,7 +6,7 @@ type NotificationType = 'church_submission' | 'bulk_submission'
 /**
  * Interface para os dados de submissão de igreja
  */
-interface ChurchSubmissionData {
+export interface ChurchSubmissionData {
   id: string
   name: string
   city?: string
@@ -20,7 +20,7 @@ interface ChurchSubmissionData {
 /**
  * Interface para os dados de submissão bulk
  */
-interface BulkSubmissionData {
+export interface BulkSubmissionData {
   id: string
   bulk_data: string
   created_at?: string

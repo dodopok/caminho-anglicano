@@ -11,7 +11,7 @@ interface WebhookPayload {
     name: string
     email: string
   }
-  metadata?: Record<string, any>
+  metadata?: Record<string, unknown>
 }
 
 export default defineEventHandler(async (event) => {

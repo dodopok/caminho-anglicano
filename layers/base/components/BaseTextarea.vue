@@ -54,6 +54,11 @@ const props = withDefaults(defineProps<Props>(), {
   required: false,
   disabled: false,
   readonly: false,
+  label: '',
+  hint: '',
+  error: '',
+  placeholder: '',
+  id: '',
 })
 
 const emit = defineEmits<{

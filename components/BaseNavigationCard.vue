@@ -5,7 +5,6 @@ interface Props {
   icon: string
   title: string
   description: string
-  ariaLabel: string
   external?: boolean
 }
 
@@ -26,7 +25,7 @@ const iconPaths: Record<string, string> = {
   <NuxtLink
     v-if="!isExternal"
     :to="linkTo"
-    :aria-label="ariaLabel"
+    :aria-label="`Acessar o ${title}`"
     class="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 border border-slate-200 hover:border-slate-300 block"
   >
     <div class="flex flex-col items-center text-center">
@@ -60,7 +59,7 @@ const iconPaths: Record<string, string> = {
     :href="linkTo"
     target="_blank"
     rel="noopener noreferrer"
-    :aria-label="ariaLabel"
+    :aria-label="`Acessar o ${title}`"
     class="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 border border-slate-200 hover:border-slate-300 block"
   >
     <div class="flex flex-col items-center text-center">

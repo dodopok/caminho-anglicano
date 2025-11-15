@@ -7,32 +7,46 @@ vi.mock('@supabase/supabase-js', () => ({
 }))
 
 // Mock Nuxt utilities
-global.defineCachedEventHandler = (handler: any) => handler
+global.defineEventHandler = <T>(handler: T) => handler
+global.defineCachedEventHandler = <T>(handler: T) => handler
 global.useRuntimeConfig = vi.fn(() => ({
   public: {
     supabaseUrl: 'https://test.supabase.co',
   },
   supabaseServiceKey: 'test-service-key',
 }))
-global.createError = (error: any) => error
+global.createError = (error: { statusCode: number; message: string }) => error
+
+interface MockQueryBuilder {
+  select: ReturnType<typeof vi.fn>
+  eq: ReturnType<typeof vi.fn>
+  order: ReturnType<typeof vi.fn>
+  or: ReturnType<typeof vi.fn>
+}
+
+interface MockSupabase {
+  from: ReturnType<typeof vi.fn>
+}
 
 describe('API: GET /api/jurisdictions', () => {
-  let mockSupabase: any
+  let mockSupabase: MockSupabase
 
   beforeEach(() => {
     vi.clearAllMocks()
 
-    const mockQueryBuilder = {
+    // Setup Supabase mock
+    const mockQueryBuilder: MockQueryBuilder = {
       select: vi.fn().mockReturnThis(),
       eq: vi.fn().mockReturnThis(),
       order: vi.fn().mockReturnThis(),
+      or: vi.fn().mockReturnThis(),
     }
 
     mockSupabase = {
       from: vi.fn(() => mockQueryBuilder),
     }
 
-    vi.mocked(createClient).mockReturnValue(mockSupabase as any)
+    vi.mocked(createClient).mockReturnValue(mockSupabase as ReturnType<typeof createClient>)
   })
 
   it('should fetch all active jurisdictions ordered by display_order', async () => {

@@ -1,6 +1,14 @@
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
 
+// Type for raw church data from Supabase (with snake_case and joined jurisdiction)
+type ChurchRow = Database['public']['Tables']['churches']['Row'] & {
+  jurisdiction: {
+    name: string
+    slug: string
+  } | null
+}
+
 export default defineEventHandler(async (event) => {
   // Ensure user is admin
   await requireAdmin(event)
@@ -51,9 +59,9 @@ export default defineEventHandler(async (event) => {
       'Spotify',
     ]
 
-    const rows = churches.map((church: any) => {
+    const rows = churches.map((church: ChurchRow) => {
       const jurisdiction = church.jurisdiction?.name || church.jurisdiction?.slug || 'N/A'
-      const socialMedia = church.social_media || {}
+      const socialMedia = (church.social_media || {}) as Record<string, string | undefined>
 
       return [
         escapeCSV(church.name),
@@ -81,16 +89,16 @@ export default defineEventHandler(async (event) => {
     // Add BOM for Excel UTF-8 support
     return '\uFEFF' + csv
   }
-  catch (error: any) {
+  catch (error: unknown) {
     console.error('Error exporting churches:', error)
 
-    if (error.statusCode) {
+    if (error && typeof error === 'object' && 'statusCode' in error) {
       throw error
     }
 
     throw createError({
       statusCode: 500,
-      message: error.message || 'Failed to export churches',
+      message: error instanceof Error ? error.message : 'Failed to export churches',
     })
   }
 })
@@ -98,7 +106,7 @@ export default defineEventHandler(async (event) => {
 /**
  * Escape CSV field (handle quotes and commas)
  */
-function escapeCSV(value: any): string {
+function escapeCSV(value: unknown): string {
   if (value === null || value === undefined) {
     return ''
   }

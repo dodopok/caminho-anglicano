@@ -1,3 +1,4 @@
+import { z } from 'zod'
 import { requireAdmin } from '~/layers/admin/server/utils/adminAuth'
 import { PlaceSearchSchema } from '~/layers/admin/server/utils/validation'
 import { rateLimit, RateLimits } from '~/layers/admin/server/utils/rateLimit'
@@ -26,15 +27,15 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event)
 
   // Validate input
-  let validatedData: any
+  let validatedData: z.infer<typeof PlaceSearchSchema>
   try {
     validatedData = PlaceSearchSchema.parse(body)
   }
-  catch (error: any) {
+  catch (error: unknown) {
     throw createError({
       statusCode: 400,
       message: 'Invalid input data',
-      data: error.errors,
+      data: error instanceof z.ZodError ? error.issues : undefined,
     })
   }
 
@@ -76,8 +77,7 @@ export default defineEventHandler(async (event) => {
       })
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const details = detailsResponse.result as Record<string, any>
+    const details = detailsResponse.result as Record<string, unknown>
 
     // Extract postal code from address_components
     let postalCode = ''
@@ -111,23 +111,29 @@ export default defineEventHandler(async (event) => {
     }
 
     // Parse opening hours
-    if (details.opening_hours && details.opening_hours.weekday_text) {
-      // Filter out closed days and clean up the text
-      const openDays = (details.opening_hours.weekday_text as string[])
-        .filter((day: string) => !day.toLowerCase().includes('fechado') && !day.toLowerCase().includes('closed'))
-        .map((day: string) => {
-          // Remove "Aberto 24 horas" redundancy if needed
-          return day.trim()
-        })
-      
-      if (openDays.length > 0) {
-        result.schedules = openDays.join(', ')
+    if (details.opening_hours && typeof details.opening_hours === 'object' && details.opening_hours !== null) {
+      const openingHours = details.opening_hours as Record<string, unknown>
+      if ('weekday_text' in openingHours && Array.isArray(openingHours.weekday_text)) {
+        // Filter out closed days and clean up the text
+        const openDays = (openingHours.weekday_text as string[])
+          .filter((day: string) => !day.toLowerCase().includes('fechado') && !day.toLowerCase().includes('closed'))
+          .map((day: string) => {
+            // Remove "Aberto 24 horas" redundancy if needed
+            return day.trim()
+          })
+        
+        if (openDays.length > 0) {
+          result.schedules = openDays.join(', ')
+        }
       }
     }
 
     // Add description
-    if (details.editorial_summary && details.editorial_summary.overview) {
-      result.description = details.editorial_summary.overview as string
+    if (details.editorial_summary && typeof details.editorial_summary === 'object' && details.editorial_summary !== null) {
+      const editorialSummary = details.editorial_summary as Record<string, unknown>
+      if ('overview' in editorialSummary && typeof editorialSummary.overview === 'string') {
+        result.description = editorialSummary.overview
+      }
     }
 
     // Add website

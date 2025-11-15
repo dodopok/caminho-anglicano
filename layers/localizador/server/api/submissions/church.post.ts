@@ -1,8 +1,9 @@
+import { z } from 'zod'
 import { createClient } from '@supabase/supabase-js'
 import { ChurchSubmissionSchema } from '~/layers/admin/server/utils/validation'
 import { rateLimit, RateLimits } from '~/layers/admin/server/utils/rateLimit'
 import { sanitizeForLog } from '~/layers/admin/server/utils/sanitization'
-import { sendTelegramNotification } from '~/layers/admin/server/utils/telegram'
+import { sendTelegramNotification, type ChurchSubmissionData } from '~/layers/admin/server/utils/telegram'
 
 export default defineEventHandler(async (event) => {
   // Apply strict rate limiting for public submissions
@@ -12,15 +13,15 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event)
 
   // Validate input data with Zod schema
-  let validatedData: any
+  let validatedData: z.infer<typeof ChurchSubmissionSchema>
   try {
     validatedData = ChurchSubmissionSchema.parse(body)
   }
-  catch (error: any) {
+  catch (error: unknown) {
     throw createError({
       statusCode: 400,
       message: 'Dados inválidos',
-      data: error.errors,
+      data: error instanceof z.ZodError ? error.issues : undefined,
     })
   }
 
@@ -57,7 +58,7 @@ export default defineEventHandler(async (event) => {
 
     // Envia notificação para o Telegram (não bloqueia o fluxo principal)
     if (data) {
-      sendTelegramNotification('church_submission', data as any).catch((err) => {
+      sendTelegramNotification('church_submission', data as ChurchSubmissionData).catch((err) => {
         console.error('Erro ao enviar notificação do Telegram:', err)
       })
     }

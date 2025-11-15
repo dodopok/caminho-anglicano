@@ -94,10 +94,10 @@ export default defineEventHandler(async (event) => {
       message: 'Submission rejected successfully',
     }
   }
-  catch (error: any) {
+  catch (error: unknown) {
     console.error('Error rejecting submission:', sanitizeForLog(error))
 
-    if (error.statusCode) {
+    if (error && typeof error === 'object' && 'statusCode' in error) {
       throw error
     }
 

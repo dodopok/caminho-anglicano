@@ -126,7 +126,7 @@ const { getToken } = useAdminAuth()
 const searchQuery = ref('')
 const isSearching = ref(false)
 const errorMessage = ref('')
-const placeResult = ref<any>(null)
+const placeResult = ref<Record<string, unknown> | null>(null)
 const jsonResult = ref('')
 const copied = ref(false)
 

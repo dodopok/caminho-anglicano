@@ -52,9 +52,10 @@ export function useAdminAuth() {
       user.value = data.user
       return { success: true, error: null }
     }
-    catch (error: any) {
+    catch (error: unknown) {
       console.error('Sign in error:', error)
-      return { success: false, error: error.message || 'Failed to sign in' }
+      const errorMessage = error instanceof Error ? error.message : 'Failed to sign in'
+      return { success: false, error: errorMessage }
     }
     finally {
       loading.value = false

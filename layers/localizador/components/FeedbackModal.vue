@@ -69,17 +69,10 @@ async function handleSubmit() {
       emit('success')
       handleClose()
     }, 2500)
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Error submitting feedback:', error)
     toastType.value = 'error'
-    
-    // Check for rate limit error (429)
-    if (error?.response?.status === 429 || error?.statusCode === 429) {
-      toastMessage.value = 'Você enviou muitas solicitações. Por favor, aguarde alguns minutos antes de tentar novamente.'
-    } else {
-      toastMessage.value = 'Erro ao enviar feedback. Por favor, tente novamente.'
-    }
-    
+    toastMessage.value = getErrorMessage(error, 'Erro ao enviar feedback. Por favor, tente novamente.')
     showToast.value = true
   } finally {
     isSubmitting.value = false

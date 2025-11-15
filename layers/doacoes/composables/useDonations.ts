@@ -15,9 +15,9 @@ export const useDonations = () => {
       })
 
       return response.data
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error('Erro ao criar doação:', err)
-      error.value = err?.data?.message || 'Erro ao processar doação. Tente novamente.'
+      error.value = getErrorMessage(err, 'Erro ao processar doação. Tente novamente.')
       return null
     } finally {
       isLoading.value = false

@@ -1,3 +1,4 @@
+import { z } from 'zod'
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
 import { ChurchUpdateSchema } from '~/layers/admin/server/utils/validation'
@@ -26,15 +27,15 @@ export default defineEventHandler(async (event) => {
   }
 
   // Validate and sanitize input - prevents mass assignment
-  let validatedData: any
+  let validatedData: z.infer<typeof ChurchUpdateSchema>
   try {
     validatedData = ChurchUpdateSchema.parse(body)
   }
-  catch (error: any) {
+  catch (error: unknown) {
     throw createError({
       statusCode: 400,
       message: 'Invalid input data',
-      data: error.errors,
+      data: error instanceof z.ZodError ? error.issues : undefined,
     })
   }
 
@@ -53,7 +54,7 @@ export default defineEventHandler(async (event) => {
     if (validatedData.schedules !== undefined) updateData.schedules = validatedData.schedules
     if (validatedData.description !== undefined) updateData.description = validatedData.description
     if (validatedData.pastors !== undefined) updateData.pastors = validatedData.pastors
-    if (validatedData.social_media !== undefined) updateData.social_media = validatedData.social_media as any
+    if (validatedData.social_media !== undefined) updateData.social_media = validatedData.social_media as Record<string, unknown>
 
     // If address changed, re-geocode
     if (validatedData.address) {

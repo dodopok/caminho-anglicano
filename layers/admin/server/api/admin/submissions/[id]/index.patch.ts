@@ -1,3 +1,4 @@
+import { z } from 'zod'
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
 import { SubmissionUpdateSchema } from '~/layers/admin/server/utils/validation'
@@ -26,15 +27,15 @@ export default defineEventHandler(async (event) => {
   }
 
   // Validate and sanitize input - prevents mass assignment
-  let validatedData: any
+  let validatedData: z.infer<typeof SubmissionUpdateSchema>
   try {
     validatedData = SubmissionUpdateSchema.parse(body)
   }
-  catch (error: any) {
+  catch (error: unknown) {
     throw createError({
       statusCode: 400,
       message: 'Invalid input data',
-      data: error.errors,
+      data: error instanceof z.ZodError ? error.issues : undefined,
     })
   }
 
@@ -59,7 +60,7 @@ export default defineEventHandler(async (event) => {
     if (validatedData.instagram !== undefined) updateData.instagram = validatedData.instagram
     if (validatedData.youtube !== undefined) updateData.youtube = validatedData.youtube
     if (validatedData.spotify !== undefined) updateData.spotify = validatedData.spotify
-    if (validatedData.status !== undefined) updateData.status = validatedData.status as any
+    if (validatedData.status !== undefined) updateData.status = validatedData.status as 'pending' | 'approved' | 'rejected'
     if (validatedData.review_notes !== undefined) updateData.review_notes = validatedData.review_notes
 
     const { data, error } = await supabase

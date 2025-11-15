@@ -1,3 +1,4 @@
+import { z } from 'zod'
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
 import { BulkChurchDataSchema } from '~/layers/admin/server/utils/validation'
@@ -75,11 +76,11 @@ export default defineEventHandler(async (event) => {
       // Validate with Zod schema
       churchesData = BulkChurchDataSchema.parse(parsedData)
     }
-    catch (parseError: any) {
+    catch (parseError: unknown) {
       throw createError({
         statusCode: 400,
         message: 'Invalid bulk_data format',
-        data: parseError.errors || parseError.message,
+        data: parseError instanceof z.ZodError ? parseError.issues : (parseError instanceof Error ? parseError.message : undefined),
       })
     }
 
@@ -108,21 +109,28 @@ export default defineEventHandler(async (event) => {
           continue
         }
 
-        // Transform submission to church format
+        const submissionData = {
+          name: churchData.name,
+          jurisdiction: churchData.jurisdiction,
+          address: churchData.address,
+          schedules: churchData.schedules || null,
+          description: churchData.description || null,
+          pastors: churchData.pastors || null,
+          responsible_email: churchData.responsible_email,
+          website: churchData.website || null,
+          instagram: churchData.instagram || null,
+          youtube: churchData.youtube || null,
+          spotify: churchData.spotify || null,
+
+          id: '',
+          status: 'pending' as const,
+          submitted_at: new Date().toISOString(),
+          reviewed_at: null,
+          review_notes: null,
+        }
+
         const transformedChurch = await transformSubmission(
-          {
-            name: churchData.name,
-            jurisdiction: churchData.jurisdiction,
-            address: churchData.address,
-            schedules: churchData.schedules || null,
-            description: churchData.description || null,
-            pastors: churchData.pastors || null,
-            responsible_email: churchData.responsible_email,
-            website: churchData.website || null,
-            instagram: churchData.instagram || null,
-            youtube: churchData.youtube || null,
-            spotify: churchData.spotify || null,
-          } as any,
+          submissionData,
           {
             geocodeResult,
             jurisdictionId,
@@ -145,8 +153,8 @@ export default defineEventHandler(async (event) => {
           insertedChurches.push(newChurch)
         }
       }
-      catch (error: any) {
-        errors.push(`Church #${i + 1} (${churchData.name || 'Unknown'}): ${error.message}`)
+      catch (error: unknown) {
+        errors.push(`Church #${i + 1} (${churchData.name || 'Unknown'}): ${error instanceof Error ? error.message : 'Unknown error'}`)
       }
     }
 
@@ -197,12 +205,12 @@ export default defineEventHandler(async (event) => {
         : `${insertedChurches.length} igrejas criadas!`,
     }
   }
-  catch (error: any) {
+  catch (error: unknown) {
     console.error('Error approving bulk submission:', sanitizeForLog(error))
 
     console.log(error)
 
-    if (error.statusCode) {
+    if (error && typeof error === 'object' && 'statusCode' in error) {
       throw error
     }
 

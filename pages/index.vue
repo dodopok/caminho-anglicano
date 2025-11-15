@@ -111,7 +111,6 @@ useHead({
           icon="location"
           title="Localizador de Igrejas"
           description="Encontre igrejas anglicanas perto de você em todo o Brasil"
-          aria-label="Acessar o Localizador de Igrejas"
         />
 
         <BaseNavigationCard
@@ -119,7 +118,6 @@ useHead({
           icon="chart"
           title="Dashboard de Igrejas"
           description="Visualize estatísticas e dados sobre igrejas anglicanas no Brasil"
-          aria-label="Acessar o Dashboard de Estatísticas"
         />
 
         <BaseNavigationCard
@@ -127,7 +125,6 @@ useHead({
           icon="book"
           title="Glossário Anglicano"
           description="Explore termos e conceitos da tradição anglicana"
-          aria-label="Acessar o Glossário Anglicano"
         />
 
         <BaseNavigationCard
@@ -135,7 +132,6 @@ useHead({
           icon="book"
           title="Livro de Oração Comum"
           description="Tenha acesso a várias edições do Livro de Oração Comum digitalmente"
-          aria-label="Acessar o Livro de Oração Comum"
         />
 
         <BaseNavigationCard
@@ -143,7 +139,6 @@ useHead({
           icon="clipboard"
           title="Teste de Espectro Anglicano"
           description="Descubra seu alinhamento teológico no Teste de Espectro Anglicano"
-          aria-label="Fazer o Teste de Espectro Anglicano"
           external
         />
       </div>

@@ -93,6 +93,7 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
+  title: '',
   maxWidth: '4xl',
   showHeader: true,
   showFooter: true,

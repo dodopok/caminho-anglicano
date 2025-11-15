@@ -61,6 +61,8 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   type: 'info',
+  title: '',
+  message: '',
   dismissible: false,
   modelValue: true,
 })

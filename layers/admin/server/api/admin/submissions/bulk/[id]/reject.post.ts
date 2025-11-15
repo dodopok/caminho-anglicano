@@ -1,3 +1,4 @@
+import { z } from 'zod'
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
 import { BulkApprovalSchema } from '~/layers/admin/server/utils/validation'
@@ -26,15 +27,15 @@ export default defineEventHandler(async (event) => {
   }
 
   // Validate input
-  let validatedData: any
+  let validatedData: z.infer<typeof BulkApprovalSchema>
   try {
     validatedData = BulkApprovalSchema.parse(body)
   }
-  catch (error: any) {
+  catch (error: unknown) {
     throw createError({
       statusCode: 400,
       message: 'Invalid input data',
-      data: error.errors,
+      data: error instanceof z.ZodError ? error.issues : undefined,
     })
   }
 
@@ -101,10 +102,10 @@ export default defineEventHandler(async (event) => {
       message: 'Bulk submission rejected successfully',
     }
   }
-  catch (error: any) {
+  catch (error: unknown) {
     console.error('Error rejecting bulk submission:', sanitizeForLog(error))
 
-    if (error.statusCode) {
+    if (error && typeof error === 'object' && 'statusCode' in error) {
       throw error
     }
 

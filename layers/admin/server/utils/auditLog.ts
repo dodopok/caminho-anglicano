@@ -24,7 +24,7 @@ interface AuditLogEntry {
   resource_type: string
   resource_id: string
   admin_email: string
-  metadata?: Record<string, any>
+  metadata?: Record<string, unknown>
   ip_address?: string
 }
 

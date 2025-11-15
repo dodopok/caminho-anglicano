@@ -67,5 +67,6 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
   icon: 'inbox',
+  message: '',
 })
 </script>

@@ -285,19 +285,22 @@ function handleSelectBulkChurches() {
   isAddBulkModalOpen.value = true
 }
 
-function formatSchedules(schedules: any[]): string {
+function formatSchedules(schedules: string[] | Array<{ day: string; time: string }> | null): string {
   if (!schedules || schedules.length === 0) return ''
 
   if (typeof schedules[0] === 'string') {
-    return schedules.join(', ')
+    return (schedules as string[]).join(', ')
   }
 
-  const formatted = schedules.map(s => {
-    if (typeof s === 'object' && s.day && s.time) {
-      return `${s.day} às ${s.time}`
-    }
-    return String(s)
-  })
+  const formatted = schedules
+    .filter(s => s !== null && s !== undefined)
+    .map(s => {
+      if (typeof s === 'object' && 'day' in s && 'time' in s) {
+        const schedule = s as { day: string; time: string }
+        return `${schedule.day} às ${schedule.time}`
+      }
+      return String(s)
+    })
 
   if (formatted.length <= 2) {
     return formatted.join(' e ')

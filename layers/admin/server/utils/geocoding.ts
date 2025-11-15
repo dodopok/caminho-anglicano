@@ -1,3 +1,21 @@
+interface GoogleGeocodingResponse {
+  status: string
+  results?: Array<{
+    geometry: {
+      location: {
+        lat: number
+        lng: number
+      }
+    }
+    formatted_address: string
+    address_components: Array<{
+      long_name: string
+      short_name: string
+      types: string[]
+    }>
+  }>
+}
+
 interface GeocodeResult {
   latitude: number
   longitude: number
@@ -25,7 +43,7 @@ export async function geocodeAddress(address: string): Promise<GeocodeResult> {
   const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(cleanAddress)}&region=br&key=${apiKey}`
 
   try {
-    const response = await $fetch<any>(url)
+    const response = await $fetch<GoogleGeocodingResponse>(url)
 
     if (response.status !== 'OK' || !response.results || response.results.length === 0) {
       throw new Error(`Geocoding failed: ${response.status || 'No results found'}`)
@@ -62,9 +80,10 @@ export async function geocodeAddress(address: string): Promise<GeocodeResult> {
       formattedAddress: result.formatted_address,
     }
   }
-  catch (error: any) {
+  catch (error: unknown) {
     console.error('Geocoding error:', error)
-    throw new Error(`Failed to geocode address: ${error.message}`)
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+    throw new Error(`Failed to geocode address: ${errorMessage}`)
   }
 }
 

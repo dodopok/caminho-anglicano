@@ -328,7 +328,8 @@ async function loadChurches() {
     totalPages.value = data.totalPages
   }
   catch (error: unknown) {
-    errorMessage.value = error instanceof Error ? error.message : 'Erro ao carregar igrejas'
+    const { message } = parseError(error)
+    errorMessage.value = message || 'Erro ao carregar igrejas'
     console.error('Error loading churches:', error)
   }
   finally {
@@ -409,7 +410,8 @@ async function handleDelete(church: Church) {
     alert('✅ Igreja removida com sucesso!')
   }
   catch (error: unknown) {
-    alert(error instanceof Error ? `❌ Erro ao remover igreja: ${error.message}` : '❌ Erro ao remover igreja')
+    const { message } = parseError(error)
+    alert(`❌ Erro ao remover igreja: ${message}`)
     console.error('Error deleting church:', error)
   }
 }
@@ -448,7 +450,8 @@ async function handleExport() {
     document.body.removeChild(a)
   }
   catch (error: unknown) {
-    alert(error instanceof Error ? error.message : 'Erro ao exportar')
+    const { message } = parseError(error)
+    alert(message || 'Erro ao exportar')
   }
   finally {
     isExporting.value = false

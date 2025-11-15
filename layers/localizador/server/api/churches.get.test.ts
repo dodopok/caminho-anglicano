@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { createClient } from '@supabase/supabase-js'
+import type { H3Event } from 'h3'
 
 // Mock Supabase
 vi.mock('@supabase/supabase-js', () => ({
@@ -7,7 +8,7 @@ vi.mock('@supabase/supabase-js', () => ({
 }))
 
 // Mock Nuxt utilities
-global.defineEventHandler = (handler: any) => handler
+global.defineEventHandler = <T>(handler: T) => handler
 global.useRuntimeConfig = vi.fn(() => ({
   public: {
     supabaseUrl: 'https://test.supabase.co',
@@ -15,16 +16,26 @@ global.useRuntimeConfig = vi.fn(() => ({
   supabaseServiceKey: 'test-service-key',
 }))
 global.getQuery = vi.fn()
-global.createError = (error: any) => error
+global.createError = (error: { statusCode: number; message: string }) => error
+
+interface MockQueryBuilder {
+  select: ReturnType<typeof vi.fn>
+  order: ReturnType<typeof vi.fn>
+  or: ReturnType<typeof vi.fn>
+}
+
+interface MockSupabase {
+  from: ReturnType<typeof vi.fn>
+}
 
 describe('API: GET /api/churches', () => {
-  let mockSupabase: any
+  let mockSupabase: MockSupabase
 
   beforeEach(() => {
     vi.clearAllMocks()
 
     // Setup Supabase mock
-    const mockQueryBuilder = {
+    const mockQueryBuilder: MockQueryBuilder = {
       select: vi.fn().mockReturnThis(),
       order: vi.fn().mockReturnThis(),
       or: vi.fn().mockReturnThis(),
@@ -34,7 +45,7 @@ describe('API: GET /api/churches', () => {
       from: vi.fn(() => mockQueryBuilder),
     }
 
-    vi.mocked(createClient).mockReturnValue(mockSupabase as any)
+    vi.mocked(createClient).mockReturnValue(mockSupabase as ReturnType<typeof createClient>)
   })
 
   it('should fetch all churches without search', async () => {
@@ -76,7 +87,7 @@ describe('API: GET /api/churches', () => {
     global.getQuery = vi.fn(() => ({}))
 
     const handler = (await import('./churches.get')).default
-    const result = await handler({} as any)
+    const result = await handler({} as H3Event)
 
     expect(result).toHaveLength(1)
     expect(result[0].name).toBe('Igreja Test 1')
@@ -116,7 +127,7 @@ describe('API: GET /api/churches', () => {
     global.getQuery = vi.fn(() => ({ search: 'Anglicana' }))
 
     const handler = (await import('./churches.get')).default
-    const result = await handler({} as any)
+    const result = await handler({} as H3Event)
 
     expect(result).toHaveLength(1)
     expect(result[0].name).toBe('Igreja Anglicana')
@@ -137,7 +148,7 @@ describe('API: GET /api/churches', () => {
 
     const handler = (await import('./churches.get')).default
 
-    await expect(handler({} as any)).rejects.toMatchObject({
+    await expect(handler({} as H3Event)).rejects.toMatchObject({
       statusCode: 500,
       message: 'Erro ao buscar igrejas',
     })
@@ -156,7 +167,7 @@ describe('API: GET /api/churches', () => {
     global.getQuery = vi.fn(() => ({}))
 
     const handler = (await import('./churches.get')).default
-    const result = await handler({} as any)
+    const result = await handler({} as H3Event)
 
     expect(result).toEqual([])
   })
@@ -200,7 +211,7 @@ describe('API: GET /api/churches', () => {
     global.getQuery = vi.fn(() => ({}))
 
     const handler = (await import('./churches.get')).default
-    const result = await handler({} as any)
+    const result = await handler({} as H3Event)
 
     expect(result[0]).toMatchObject({
       id: '123',

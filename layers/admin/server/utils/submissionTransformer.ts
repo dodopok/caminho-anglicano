@@ -1,6 +1,13 @@
 import type { Database } from '~/types/database'
 import { generateChurchSlug } from '~/layers/localizador/utils/slug'
 
+type ScheduleItem = {
+  day: string
+  time: string
+} | {
+  description: string
+}
+
 type ChurchSubmission = Database['public']['Tables']['church_submissions']['Row']
 type ChurchInsert = Database['public']['Tables']['churches']['Insert']
 
@@ -88,7 +95,7 @@ function parsePastors(pastorsString: string | null): string[] {
  * - "Domingos 10h, Quartas 19h30"
  * - "Sunday 10am, Wednesday 7pm"
  */
-function parseSchedules(schedulesString: string | null): any[] {
+function parseSchedules(schedulesString: string | null): ScheduleItem[] {
   if (!schedulesString) {
     return []
   }
