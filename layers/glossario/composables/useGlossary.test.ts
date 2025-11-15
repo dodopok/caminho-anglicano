@@ -114,7 +114,7 @@ describe('useGlossary', () => {
 
   it('should paginate results', async () => {
     const { useGlossary } = await import('./useGlossary')
-    const { paginatedTerms, currentPage, ITEMS_PER_PAGE } = useGlossary()
+    const { paginatedTerms, ITEMS_PER_PAGE } = useGlossary()
 
     // With only 5 terms, all should be on page 1
     expect(paginatedTerms.value.length).toBeLessThanOrEqual(ITEMS_PER_PAGE)

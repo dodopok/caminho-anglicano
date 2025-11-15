@@ -8,7 +8,7 @@ interface Emits {
   success: []
 }
 
-const props = defineProps<Props>()
+const _props = defineProps<Props>()
 const emit = defineEmits<Emits>()
 
 const { submitBulkChurches } = useSubmissions()

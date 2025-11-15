@@ -1,5 +1,4 @@
-import type { Church } from '../../localizador/types/church'
-import type { Jurisdiction } from '../../localizador/types/church'
+import type { Church, Jurisdiction } from '../../localizador/types/church'
 
 export interface ChurchStats {
   totalChurches: number

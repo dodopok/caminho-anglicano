@@ -7,7 +7,6 @@ import { sanitizeForLog } from '~/layers/admin/server/utils/sanitization'
 
 type BulkSubmission = Database['public']['Tables']['bulk_church_submissions']['Row']
 type Church = Database['public']['Tables']['churches']['Row']
-type ChurchInsert = Database['public']['Tables']['churches']['Insert']
 
 interface BulkChurchData {
   name: string

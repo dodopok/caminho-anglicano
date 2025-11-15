@@ -670,7 +670,7 @@ async function handleApprove() {
   }
 
   // Show confirmation with preview
-  const churchList = parsedChurches.value
+  const _churchList = parsedChurches.value
     .map((c, i) => `${i + 1}. ${c.name} - ${c.jurisdiction}`)
     .join('\n')
 

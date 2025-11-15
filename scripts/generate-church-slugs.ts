@@ -21,8 +21,8 @@ function slugify(text: string): string {
     .toLowerCase()
     .trim()
     .replace(/\s+/g, '-')
-    .replace(/[^\w\-]+/g, '')
-    .replace(/\-\-+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/-{2,}/g, '-')
     .replace(/^-+/, '')
     .replace(/-+$/, '')
 }
@@ -138,7 +138,7 @@ async function main() {
         }
 
         // Update church with slug
-        // @ts-ignore - Type issue with Supabase update
+        // @ts-expect-error - Type issue with Supabase update
         const { error: updateError } = await supabase
           .from('churches')
           .update({ slug })

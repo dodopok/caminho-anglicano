@@ -76,8 +76,6 @@ export function parseAddress(address: string): { city: string, state: string } {
   // Common pattern: "Street, Number - Neighborhood, City - State, CEP"
   // Try to extract city and state
 
-  const parts = address.split(',').map(p => p.trim())
-
   let city = ''
   let state = ''
 

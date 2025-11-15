@@ -277,7 +277,7 @@ const selectAmount = (value: number) => {
 
 const formatCurrency = (event: Event) => {
   const input = event.target as HTMLInputElement
-  let value = input.value.replace(/\D/g, '')
+  const value = input.value.replace(/\D/g, '')
 
   if (value === '') {
     customAmountCents.value = 0

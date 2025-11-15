@@ -47,11 +47,11 @@ useHead({
 
 const { fetchChurches } = useChurches()
 const { 
-  jurisdictions, 
-  fetchJurisdictions, 
+  jurisdictions,
+  fetchJurisdictions,
   getJurisdictionById,
-  getJurisdictionColor,
-  getJurisdictionSlug 
+  getJurisdictionColor: _getJurisdictionColor,
+  getJurisdictionSlug
 } = useJurisdictions()
 const { geocodePostalCode, geocodeAddress } = useGeocoding()
 
@@ -217,7 +217,7 @@ async function handleNearMe() {
   }
 }
 
-async function handleAddressSearch() {
+async function _handleAddressSearch() {
   if (!filters.value.address) {
     applyFilters()
     return

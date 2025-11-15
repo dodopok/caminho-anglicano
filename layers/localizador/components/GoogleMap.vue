@@ -20,7 +20,7 @@ const markers = ref<any[]>([])
 const userMarker = ref<any>(null)
 const infoWindow = ref<any>(null)
 
-function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
+function _calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
   const earthRadiusKm = 6371
   const dLat = degreesToRadians(lat2 - lat1)
   const dLon = degreesToRadians(lon2 - lon1)
@@ -301,8 +301,8 @@ function updateMarkers() {
     bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng + radiusInDegrees / Math.cos(props.userLocation.lat * Math.PI / 180) })
     bounds.extend({ lat: props.userLocation.lat, lng: props.userLocation.lng - radiusInDegrees / Math.cos(props.userLocation.lat * Math.PI / 180) })
   }
-  
-  props.churches.forEach((church, index) => {
+
+  props.churches.forEach((church, _index) => {
     try {
       const lat = church.latitude
       const lng = church.longitude
