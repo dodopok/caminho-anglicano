@@ -5,8 +5,12 @@
  * Run with: npx tsx scripts/generate-church-slugs.ts
  */
 
+import { config } from 'dotenv'
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '../types/database'
+
+// Load environment variables from .env file
+config()
 
 // Slugify function
 function slugify(text: string): string {
@@ -33,13 +37,16 @@ function generateChurchSlug(name: string, city: string, state: string): string {
 async function main() {
   console.log('🚀 Starting slug generation for churches...\n')
 
-  // Get environment variables
-  const supabaseUrl = process.env.NUXT_PUBLIC_SUPABASE_URL
-  const supabaseServiceKey = process.env.NUXT_SUPABASE_SERVICE_KEY
+  // Get environment variables (try both with and without NUXT_ prefix)
+  const supabaseUrl = process.env.NUXT_PUBLIC_SUPABASE_URL || process.env.PUBLIC_SUPABASE_URL
+  const supabaseServiceKey = process.env.NUXT_SUPABASE_SERVICE_KEY || process.env.SUPABASE_SERVICE_KEY
 
   if (!supabaseUrl || !supabaseServiceKey) {
     console.error('❌ Error: Missing environment variables')
-    console.error('Please ensure NUXT_PUBLIC_SUPABASE_URL and NUXT_SUPABASE_SERVICE_KEY are set')
+    console.error('Please ensure NUXT_PUBLIC_SUPABASE_URL and NUXT_SUPABASE_SERVICE_KEY are set in .env')
+    console.error('\nCurrent values:')
+    console.error(`  NUXT_PUBLIC_SUPABASE_URL: ${supabaseUrl || 'not set'}`)
+    console.error(`  NUXT_SUPABASE_SERVICE_KEY: ${supabaseServiceKey ? 'set' : 'not set'}`)
     process.exit(1)
   }
 
