@@ -157,9 +157,9 @@ Igreja 2, Endereço 2, REB, email2@test.com`
         success: true,
         data: {
           id: 'bulk-123',
-          bulk_data: bulkData,
+          bulkData: bulkData,
           status: 'pending',
-          created_at: '2025-01-01',
+          submittedAt: '2025-01-01',
         },
       }
 
@@ -184,8 +184,9 @@ Igreja 2, Endereço 2, REB, email2@test.com`
         success: true,
         data: {
           id: 'bulk-empty',
-          bulk_data: bulkData,
+          bulkData: bulkData,
           status: 'pending',
+          submittedAt: '2025-01-01',
         },
       }
 
@@ -226,8 +227,9 @@ Igreja 2, Endereço 2, REB, email2@test.com`
         success: true,
         data: {
           id: 'bulk-large',
-          bulk_data: bulkData,
+          bulkData: bulkData,
           status: 'pending',
+          submittedAt: '2025-01-01',
         },
       }
 
@@ -238,7 +240,7 @@ Igreja 2, Endereço 2, REB, email2@test.com`
 
       const result = await submitBulkChurches(bulkData)
 
-      expect(result.bulk_data).toBe(bulkData)
+      expect(result.bulkData).toBe(bulkData)
       expect(global.$fetch).toHaveBeenCalledTimes(1)
     })
   })
