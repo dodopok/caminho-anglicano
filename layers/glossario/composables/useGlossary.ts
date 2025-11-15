@@ -236,7 +236,6 @@ export const useGlossary = () => {
     // Não limpar valores existentes se não houver parâmetros
     if (queryParam) {
       searchQuery.value = queryParam
-      alert('popotao3')
       debouncedSearchQuery.value = queryParam // Inicialização imediata
     } else if (letterParam && alphabet.includes(letterParam.toUpperCase())) {
       selectedLetter.value = letterParam.toUpperCase()
