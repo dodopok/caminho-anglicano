@@ -76,7 +76,7 @@
               class="w-full px-4 py-3 pr-24 rounded-lg border border-slate-300 focus:border-slate-500 focus:ring-2 focus:ring-slate-200 outline-none transition-all"
               aria-label="Buscar termos do glossário"
             />
-            <div class="absolute right-2 top-2 flex items-center gap-2">
+            <div class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-2">
               <button
                 v-if="searchQuery"
                 @click="clearSearch"
