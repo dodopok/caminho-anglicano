@@ -9,7 +9,10 @@
       "Bash(npm run build:*)",
       "Bash(sort:*)",
       "Bash(/tmp/detailed_duplicates.sh)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(for name in \"D. Albert Arthur Chambers\" \"S. Columba\" \"Charles Kingsley\" \"John Klebe\" \"William Laud\" \"C.S. Lewis\" \"John Frederick Denison Maurice\" \"Harry Strachan\" \"William Temple\" \"Justin Portal Welby\" \"Brooke Foss Westcott\")",
+      "Bash(do echo \"=== Searching for: $name ===\")",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []

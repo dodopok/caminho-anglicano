@@ -1126,26 +1126,26 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'kinsolving-lucien',
     term: 'Lucien Lee Kinsolving',
-    definition: 'Primeiro Bispo Anglicano do Brasil (1862-1929). Chegou ao Brasil em 1889 com James Watson Morris para estabelecer a Igreja Episcopal. Fundou a Igreja em Porto Alegre (1890), foi eleito primeiro bispo em 1905 e serviu por 36 anos com grande zelo evangelístico.',
-    relatedTerms: ['Brasil', 'IEAB', 'Bispo', 'História']
+    definition: 'Primeiro Bispo Missionário do Sul do Brasil (1862-1929). Chegou ao Brasil em 1889 com James Watson Morris para estabelecer a Igreja Episcopal. Fundou a Igreja em Porto Alegre (1890) e foi consagrado Bispo Missionário em 1898. Permaneceu no Brasil até sua morte em 1929. Foi responsável pela fundação de diversas igrejas, escolas e obras sociais, tendo papel fundamental na consolidação da Igreja Episcopal do Brasil.',
+    relatedTerms: ['Brasil', 'IEAB', 'Bispo', 'História', 'Bispo', 'Missão', 'História Anglicana', 'Vicente Brande']
   },
   {
     id: 'morris-james',
     term: 'James Watson Morris',
-    definition: 'Missionário anglicano (1857-1954) que veio ao Brasil com Kinsolving em 1889. Organizou a Casa da Missão em Porto Alegre, fundou as paróquias do Calvário e do Mediador (atual Catedral), e criou o jornal "O Estandarte Cristão". Reabriu o Seminário Teológico de Porto Alegre em 1908.',
-    relatedTerms: ['Brasil', 'IEAB', 'Missão', 'História']
+    definition: 'Primeiro missionário episcopal a ser enviado ao sul do Brasil (1857-1954). Chegou a Porto Alegre em 17 de julho de 1890, acompanhado de sua esposa Lucy Latane Coleman, vindo com Kinsolving em 1889. Foi responsável pela organização da primeira congregação anglicana no Rio Grande do Sul, pela Casa da Missão em Porto Alegre, fundou as paróquias do Calvário e do Mediador (atual Catedral), criou o jornal "O Estandarte Cristão" e reabriu o Seminário Teológico de Porto Alegre em 1908.',
+    relatedTerms: ['Brasil', 'IEAB', 'Missão', 'História', 'Missão', 'Porto Alegre', 'História Anglicana', 'Vicente Brande', 'Lucien Lee Kinsolving']
   },
   {
     id: 'brande-vicente',
     term: 'Vicente Brande',
-    definition: 'Primeiro brasileiro ordenado ao ministério anglicano (1893), aos 33 anos, pelo Bispo Peterkin. De origem presbiteriana, recebeu os primeiros missionários e foi responsável pela fundação da Capela da Redenção em Porto Alegre. Faleceu em 1940.',
-    relatedTerms: ['Brasil', 'IEAB', 'Ordenação', 'História']
+    definition: 'Primeiro brasileiro ordenado ao ministério anglicano em 28 de agosto de 1893, aos 33 anos, pelo Bispo Peterkin. De origem presbiteriana, recebeu os missionários Kinsolving, Morris, o sr. Boaventura e esposa, em sua casa. Conseguiu alugar a casa da Missão que se tornaria o berço da Igreja Protestante Episcopal do Sul dos Estados Unidos do Brasil. Foi responsável pela fundação da Capela da Redenção em Porto Alegre e em Jaraguão. Faleceu na cidade de Porto Alegre em 1940.',
+    relatedTerms: ['Brasil', 'IEAB', 'Ordenação', 'História', 'Lucien Lee Kinsolving', 'James Watson Morris', 'História Anglicana']
   },
   {
     id: 'cabral-americo',
     term: 'Américo Vespúcio Cabral',
-    definition: 'Ministro anglicano brasileiro (1870-1937) de Arroio Grande. Ordenado diácono em 1893 e presbítero em 1897, trabalhou em diversas regiões do Sul do Brasil. Segundo Kingsolving, era "o pregador mais eloquente que jamais ouvi em qualquer língua".',
-    relatedTerms: ['Brasil', 'IEAB', 'Pregação', 'História']
+    definition: 'Ministro anglicano brasileiro, natural de Arroio Grande (nascido em 27 de março de 1870). Ordenado diácono em 1893 e presbítero em 1897, trabalhou em vários lugares, dentre os quais destacamos Viamão, Porto Alegre e a região de São Francisco de Paula, Santo Antônio da Patrulha, Taquará e Praia Grande, já em Santa Catarina. Faleceu aos 67 anos, em 1937. Segundo testifica Kinsolving, ele era "o pregador mais eloquente que jamais ouvi em qualquer língua".',
+    relatedTerms: ['Brasil', 'IEAB', 'Pregação', 'História', 'Lucien Lee Kinsolving', 'História Anglicana Brasileira']
   },
   {
     id: 'pithan-athalicio',
@@ -1156,14 +1156,14 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'hooker-richard',
     term: 'Richard Hooker',
-    definition: 'Teólogo e apologista anglicano (c.1554-1600). Defendeu brilhantemente as posições da Igreja da Inglaterra contra puritanos e romanistas, apelando à lei natural. Autor de "Laws of Ecclesiastical Polity", obra fundamental da teologia anglicana.',
-    relatedTerms: ['Teologia', 'Via Média', 'Apologética']
+    definition: 'Teólogo e apologista anglicano (c.1554-1600), um dos mais destacados do Anglicanismo. Defendeu brilhantemente as posições da Igreja da Inglaterra tanto contra as ideias puritanas quanto contra as teses romanistas, apelando à fonte básica da autoridade: a lei natural. Sua principal obra foi "Laws of Ecclesiastical Polity", fundamental para a teologia anglicana.',
+    relatedTerms: ['Teologia', 'Via Média', 'Apologética', 'Teologia Anglicana', 'Reforma Inglesa']
   },
   {
     id: 'newman-john-henry',
     term: 'John Henry Newman',
-    definition: 'Líder do Movimento de Oxford (1801-1890). Autor de 24 dos "Tracts for the Times", incluindo o famoso Tract 90 sobre os 39 Artigos. Converteu-se ao catolicismo romano em 1845 e foi feito cardeal em 1870. Sua autobiografia é "Apologia Pro Vita Sua".',
-    relatedTerms: ['Movimento de Oxford', 'Tractarianismo', 'História']
+    definition: 'Teólogo e líder do Movimento de Oxford (1801-1890). Autor de 24 dos "Tracts for the Times", incluindo o famoso Tract 90 sobre os 39 Artigos. Converteu-se ao catolicismo romano em 1845 e foi feito cardeal em 1870. Beatificado em 2010 e canonizado em 2019. Sua autobiografia é "Apologia Pro Vita Sua". Suas obras influenciaram profundamente a teologia anglicana.',
+    relatedTerms: ['Movimento de Oxford', 'Tractarianismo', 'História', 'Anglo-Catolicismo', 'Conversão']
   },
   {
     id: 'wesley-john',
@@ -1174,14 +1174,14 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'latimer-hugh',
     term: 'Hugh Latimer',
-    definition: 'Bispo anglicano e mártir (1485-1555). Excelente pregador e divulgador da teologia protestante. Morreu queimado na fogueira com Nicholas Ridley durante o reinado de Maria Tudor, dizendo: "Acenderemos na Inglaterra uma vela que nunca será apagada".',
-    relatedTerms: ['Mártir', 'Reforma', 'Inglaterra']
+    definition: 'Bispo de Worcester e mártir (1485-1555). Um dos principais pregadores da Reforma Inglesa e excelente divulgador da teologia protestante. Foi martirizado junto com Nicholas Ridley em Oxford durante o reinado de Maria I, dizendo: "Acenderemos na Inglaterra uma vela que nunca será apagada".',
+    relatedTerms: ['Mártir', 'Reforma', 'Inglaterra', 'Reforma Inglesa', 'Cranmer Thomas']
   },
   {
     id: 'ridley-nicholas',
     term: 'Nicholas Ridley',
-    definition: 'Bispo de Londres e mártir (c.1500-1555). Morreu queimado na fogueira durante as perseguições marianas por seus ensinamentos reformados e apoio a Lady Jane Grey. Lembrado em 16 de outubro no calendário anglicano.',
-    relatedTerms: ['Mártir', 'Reforma', 'Inglaterra']
+    definition: 'Bispo de Londres, reformador inglês e mártir (c.1500-1555). Morreu queimado na fogueira junto com Hugh Latimer em Oxford durante as perseguições marianas (reinado de Maria I) por seus ensinamentos reformados e apoio a Lady Jane Grey. Lembrado em 16 de outubro no calendário anglicano.',
+    relatedTerms: ['Mártir', 'Reforma', 'Inglaterra', 'Reforma Inglesa', 'Latimer Hugh', 'Cranmer Thomas']
   },
   {
     id: 'seabury-samuel',
@@ -1318,8 +1318,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: 'cranmer-thomas',
     term: 'Thomas Cranmer',
-    definition: 'Arcebispo de Canterbury (1489-1556) e arquiteto da Reforma Anglicana. Compilou o Livro de Oração Comum (1549 e 1552), criou a liturgia anglicana e supervisionou a tradução da Bíblia para o inglês. Morreu queimado em 1556 durante a perseguição de Maria Tudor.',
-    relatedTerms: ['Livro de Oração Comum', 'Reforma', 'Mártir']
+    definition: 'Arcebispo de Canterbury (1489-1556) e principal articulador da Reforma Anglicana. Responsável pela anulação do casamento de Henrique VIII com Catarina de Aragão, pela confecção dos Dez Artigos (1536), por promover nova tradução da Bíblia para o inglês, pela publicação dos 42 Artigos de Religião (1551) que se tornariam 39 Artigos no período elisabetano, pelo Livro das Homilias (1547), e acima de tudo por ter compilado o Livro de Oração Comum (1549 e 1552), criando a liturgia anglicana. Morreu martirizado na fogueira em 1556 por ordem da Rainha Maria I.',
+    relatedTerms: ['Livro de Oração Comum', 'Reforma', 'Mártir', 'Reforma Inglesa']
   },
   {
     id: 'keble-john',
@@ -2732,22 +2732,10 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Bispo', 'Diocese', 'Ordinário']
   },
   {
-    id: 'brande-vicente',
-    term: 'Brande, Vicente',
-    definition: 'De origem presbiteriana, Vicente Brande recebeu os missionários Kingsolving, Morris, o sr. Boaventura e esposa, em sua casa. Conseguiu alugar a casa da Missão que se tornaria o berço da Igreja Protestante Episcopal do Sul dos Estados Unidos do Brasil. Foi o primeiro brasileiro a ser ordenado ao ministério Anglicano, em 28 de agosto de 1893, pelo Bispo Peterkin. Foi responsável pela fundação da Capela da Redenção em Porto Alegre e em Jaraguão. Faleceu na cidade de Porto Alegre em 1940.',
-    relatedTerms: ['Kinsolving Lucien Lee', 'Morris James Watson', 'História Anglicana']
-  },
-  {
     id: 'cabido-catedral',
     term: 'Cabido da Catedral',
     definition: 'Nome dado à instância maior da Catedral. O Cabido é normalmente composto pelo Bispo(s), o Deão, o Cônego(s), o Arcediago(s), se houver, e a Junta Paroquial da Igreja Catedral.',
     relatedTerms: ['Catedral', 'Deão', 'Cônego', 'Bispo']
-  },
-  {
-    id: 'cabral-americo-vespucio',
-    term: 'Cabral, Américo Vespúcio',
-    definition: 'Natural de Arroio Grande, nasceu aos 27 de março de 1870. Ordenado diácono em 1893 e presbítero em 1897. Trabalhou em vários lugares, dentre os quais destacamos Viamão, Porto Alegre e a região de São Francisco de Paula, Santo Antônio da Patrulha, Taquará e Praia Grande, já em Santa Catarina. Faleceu aos 67 anos, em 1937. Segundo testifica Kingsolving, ele era "o pregador mais eloquente que jamais ouvi em qualquer língua".',
-    relatedTerms: ['Kinsolving Lucien Lee', 'História Anglicana Brasileira']
   },
   {
     id: 'cca',
@@ -2946,12 +2934,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Conselho de Missão',
     definition: 'Instância deliberativa dos aspectos administrativos, financeiros e patrimoniais de uma Missão.',
     relatedTerms: ['Missão', 'Administração', 'Junta Paroquial']
-  },
-  {
-    id: 'cranmer-thomas',
-    term: 'Cranmer, Thomas',
-    definition: 'Nascido em 1489 e martirizado em 1556, foi o principal articulador da Reforma Protestante na Inglaterra. Notabilizou-se como Arcebispo de Cantuária, responsável pela anulação do casamento de Henrique VIII com Catarina de Aragão, pela confecção dos "Dez Artigos" (1536), por promover nova tradução da Bíblia para o inglês, por publicar os 42 Artigos de Religião (1551) que se tornariam 39 no período elisabetano, o Livro das Homilias (1547), e acima de tudo por ter sido o responsável pelo primeiro Livro de Oração Comum (1549). Morreu martirizado na fogueira por ordem da Rainha Maria I.',
-    relatedTerms: ['Reforma Inglesa', 'Livro de Oração Comum', 'Mártires']
   },
   {
     id: 'credo-apostolico',
@@ -3206,12 +3188,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Canto', 'Adoração', 'Hinário']
   },
   {
-    id: 'hooker-richard',
-    term: 'Hooker, Richard',
-    definition: 'Nascido c.1554 e falecido em 1600, um dos mais destacados teólogos e apologistas do Anglicanismo. Ele defendeu, brilhantemente, as posições da Igreja da Inglaterra tanto contra as ideias puritanas quanto contra as teses romanistas. Hooker contornou as acusações puritanas que se baseavam nas Escrituras, bem assim as acusações Romanas com base na tradição, apelando a fonte básica da autoridade: a lei natural. Sua principal obra foi: Laws of ecclesiastical polity.',
-    relatedTerms: ['Teologia Anglicana', 'Via Média', 'Reforma Inglesa']
-  },
-  {
     id: 'hosana',
     term: 'Hosana',
     definition: 'Aclamação de júbilo, próprio do Sanctus, do Benedictus e de algumas antífonas do domingo de Ramos. No período bíblico, esta expressão era uma petição que se traduzia por: "salva-nos ó Senhor".',
@@ -3332,22 +3308,10 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Socialismo Cristão', 'Igreja Larga', 'Literatura']
   },
   {
-    id: 'kinsolving-lucien-lee',
-    term: 'Kinsolving, Lucien Lee',
-    definition: 'Lucien Lee Kinsolving nasceu em 1862 e foi consagrado Bispo Missionário do Sul do Brasil em 1898. Permaneceu no Brasil até sua morte em 1929. Foi responsável pela fundação de diversas igrejas, escolas e obras sociais. Teve papel fundamental na consolidação da Igreja Episcopal do Brasil.',
-    relatedTerms: ['Bispo', 'Missão', 'História Anglicana', 'Brande Vicente']
-  },
-  {
     id: 'kuala-lumpur-declaracao',
     term: 'Kuala Lumpur, Declaração de',
     definition: 'Documento produzido pela segunda reunião do Conselho Consultivo Anglicano (ACC-2), realizada em Kuala Lumpur, Malásia, em 1971.',
     relatedTerms: ['Conselho Consultivo Anglicano', 'Comunhão Anglicana']
-  },
-  {
-    id: 'latimer-hugh',
-    term: 'Latimer, Hugh',
-    definition: 'Bispo de Worcester (1485-1555), foi um dos principais pregadores da Reforma Inglesa. Foi martirizado junto com Nicholas Ridley em Oxford durante o reinado de Maria I.',
-    relatedTerms: ['Reforma Inglesa', 'Mártires', 'Cranmer Thomas']
   },
   {
     id: 'latitudinarismo',
@@ -3488,22 +3452,10 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Missão', 'História Anglicana', 'Sul do Brasil']
   },
   {
-    id: 'morris-james-watson',
-    term: 'Morris, James Watson',
-    definition: 'Primeiro missionário episcopal a ser enviado ao sul do Brasil. Chegou a Porto Alegre em 17 de julho de 1890, acompanhado de sua esposa Lucy Latane Coleman. Foi responsável pela organização da primeira congregação anglicana no Rio Grande do Sul.',
-    relatedTerms: ['Missão', 'Porto Alegre', 'História Anglicana', 'Brande Vicente', 'Kinsolving Lucien Lee']
-  },
-  {
     id: 'mozeta',
     term: 'Mozeta',
     definition: 'Pequena capa que cobre os ombros, usada por bispos e alguns cônegos sobre a sobrepeliz durante cerimônias litúrgicas.',
     relatedTerms: ['Paramentos', 'Vestes Episcopais', 'Bispo']
-  },
-  {
-    id: 'newman-john-henry',
-    term: 'Newman, John Henry',
-    definition: 'Teólogo e cardeal (1801-1890), líder do Movimento de Oxford que posteriormente converteu-se ao catolicismo romano. Beatificado em 2010 e canonizado em 2019. Suas obras influenciaram profundamente a teologia anglicana.',
-    relatedTerms: ['Movimento de Oxford', 'Anglo-Catolicismo', 'Conversão']
   },
   {
     id: 'niceno-credo',
@@ -3600,12 +3552,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Relicário',
     definition: 'Recipiente ou cofre onde são guardadas relíquias de santos ou objetos sagrados.',
     relatedTerms: ['Relíquias', 'Santos', 'Devoção']
-  },
-  {
-    id: 'ridley-nicholas',
-    term: 'Ridley, Nicholas',
-    definition: 'Bispo de Londres (1500-1555), reformador inglês martirizado junto com Hugh Latimer em Oxford durante o reinado de Maria I.',
-    relatedTerms: ['Reforma Inglesa', 'Mártires', 'Latimer Hugh', 'Cranmer Thomas']
   },
   {
     id: 'rochete',
