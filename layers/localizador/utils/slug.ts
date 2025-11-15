@@ -46,3 +46,12 @@ export function generateChurchSlug(name: string, city: string, state: string): s
 export function generateUniqueSlugVariation(baseSlug: string, counter: number): string {
   return `${baseSlug}-${counter}`
 }
+
+/**
+ * Ensures a slug is in lowercase (for URLs)
+ * @param slug - The slug to normalize
+ * @returns Lowercase slug
+ */
+export function normalizeSlugForUrl(slug: string | undefined | null): string {
+  return (slug || '').toLowerCase()
+}

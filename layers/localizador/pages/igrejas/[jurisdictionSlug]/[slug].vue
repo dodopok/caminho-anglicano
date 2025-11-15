@@ -88,7 +88,7 @@ const structuredData = computed(() => {
       longitude: church.value.longitude
     },
     description: church.value.description,
-    url: `https://caminhoanglicano.com.br/igrejas/${church.value.jurisdiction?.slug}/${church.value.slug}`,
+    url: `https://caminhoanglicano.com.br/igrejas/${church.value.jurisdiction?.slug.toLowerCase()}/${church.value.slug}`,
     ...(church.value.socialMedia?.website && {
       sameAs: [
         church.value.socialMedia.website,

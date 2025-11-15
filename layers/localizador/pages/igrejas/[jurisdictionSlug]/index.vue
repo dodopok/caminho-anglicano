@@ -104,7 +104,7 @@ const structuredData = computed(() => {
     '@type': 'Organization',
     name: jurisdiction.value.fullName,
     description: jurisdiction.value.description,
-    url: `https://caminhoanglicano.com.br/igrejas/${jurisdiction.value.slug}`,
+    url: `https://caminhoanglicano.com.br/igrejas/${jurisdiction.value.slug.toLowerCase()}`,
     ...(jurisdiction.value.website && { sameAs: [jurisdiction.value.website] })
   }
 })
@@ -276,7 +276,7 @@ useHead({
               <NuxtLink
                 v-for="church in stateChurches"
                 :key="church.id"
-                :to="`/igrejas/${jurisdiction.slug}/${church.slug}`"
+                :to="`/igrejas/${jurisdiction.slug.toLowerCase()}/${church.slug}`"
                 class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden group"
               >
                 <!-- Color bar -->

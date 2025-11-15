@@ -77,7 +77,7 @@ function formatSchedules(schedules: ChurchSchedule[]): string {
 function createInfoWindowContent(church: Church): string {
   const jurisdiction = getJurisdictionById(church.jurisdictionId)
   const jurisdictionColor = jurisdiction?.color || '#6B7280'
-  const jurisdictionSlug = jurisdiction?.slug || ''
+  const jurisdictionSlug = (jurisdiction?.slug || '').toLowerCase()
 
   let socialMediaHtml = ''
   if (church.socialMedia) {

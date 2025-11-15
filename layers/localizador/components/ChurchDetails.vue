@@ -54,11 +54,26 @@ const formattedSchedules = computed(() => {
 })
 
 // Breadcrumb
-const breadcrumbs = computed(() => [
-  { label: 'Início', to: '/' },
-  { label: 'Localizador', to: '/localizador' },
-  { label: props.church.name, to: `/igrejas/${props.church.jurisdiction?.slug}/${props.church.slug}` }
-])
+const breadcrumbs = computed(() => {
+  const crumbs = [
+    { label: 'Início', to: '/' },
+    { label: 'Localizador', to: '/localizador' }
+  ]
+
+  if (props.church.jurisdiction) {
+    crumbs.push({
+      label: props.church.jurisdiction.name,
+      to: `/igrejas/${props.church.jurisdiction.slug.toLowerCase()}`
+    })
+  }
+
+  crumbs.push({
+    label: props.church.name,
+    to: `/igrejas/${props.church.jurisdiction?.slug.toLowerCase()}/${props.church.slug}`
+  })
+
+  return crumbs
+})
 </script>
 
 <template>

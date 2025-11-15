@@ -105,7 +105,7 @@ useSeoMeta({
             <NuxtLink
               v-for="jurisdiction in jurisdictions"
               :key="jurisdiction.id"
-              :to="`/igrejas/${jurisdiction.slug}`"
+              :to="`/igrejas/${jurisdiction.slug.toLowerCase()}`"
               class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all overflow-hidden group border-l-4"
               :style="{ borderLeftColor: jurisdiction.color }"
             >
@@ -219,7 +219,7 @@ useSeoMeta({
         <NuxtLink
           v-for="church in filteredChurches"
           :key="church.id"
-          :to="`/igrejas/${church.jurisdiction?.slug}/${church.slug}`"
+          :to="`/igrejas/${church.jurisdiction?.slug.toLowerCase()}/${church.slug}`"
           class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden group"
         >
           <!-- Jurisdiction color bar -->

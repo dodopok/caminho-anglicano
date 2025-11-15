@@ -39,7 +39,8 @@ export function useJurisdictions() {
   }
 
   function getJurisdictionSlug(id: string): string {
-    return getJurisdictionById(id)?.slug || ''
+    const slug = getJurisdictionById(id)?.slug || ''
+    return slug.toLowerCase()
   }
 
   return {
