@@ -152,33 +152,33 @@ function createInfoWindowContent(church: Church): string {
       ${pastorsHtml}
       ${socialMediaHtml}
 
-      <div style="margin-top: 12px; padding-top: 8px; border-top: 1px solid #e5e7eb; display: flex; gap: 8px;">
+      <div style="margin-top: 12px; padding-top: 8px; border-top: 1px solid #e5e7eb; display: flex; gap: 6px;">
         <a
           href="${churchPageUrl}"
-          style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 16px; background-color: #059669; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background-color 0.2s; flex: 1;"
+          style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; padding: 6px 10px; background-color: #059669; color: white; text-decoration: none; border-radius: 6px; font-size: 13px; font-weight: 600; transition: background-color 0.2s; flex: 1; white-space: nowrap;"
           onmouseover="this.style.backgroundColor='#047857'"
           onmouseout="this.style.backgroundColor='#059669'"
         >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
             <polyline points="10 17 15 12 10 7"></polyline>
             <line x1="15" y1="12" x2="3" y2="12"></line>
           </svg>
-          Ver detalhes
+          Detalhes
         </a>
         <a
           href="${mapsUrl}"
           target="_blank"
           rel="noopener noreferrer"
-          style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 16px; background-color: #4F46E5; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background-color 0.2s; flex: 1;"
+          style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; padding: 6px 10px; background-color: #4F46E5; color: white; text-decoration: none; border-radius: 6px; font-size: 13px; font-weight: 600; transition: background-color 0.2s; flex: 1; white-space: nowrap;"
           onmouseover="this.style.backgroundColor='#4338CA'"
           onmouseout="this.style.backgroundColor='#4F46E5'"
         >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
             <circle cx="12" cy="10" r="3"></circle>
           </svg>
-          Como chegar
+          Rota
         </a>
       </div>
     </div>
