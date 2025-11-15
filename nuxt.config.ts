@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     typeCheck: true
   },
 
-  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxtjs/sitemap'],
 
   // Configuração do Tailwind
   tailwindcss: {
@@ -26,6 +26,35 @@ export default defineNuxtConfig({
     configPath: 'tailwind.config',
     exposeConfig: false,
     viewer: true,
+  },
+
+  // Configuração do Sitemap para SEO
+  sitemap: {
+    hostname: 'https://caminhoanglicano.com.br',
+    gzip: true,
+    exclude: [
+      '/admin/**',
+      '/dashboard/**'
+    ],
+    routes: async () => {
+      // Importar dinamicamente os termos do glossário
+      const { glossaryTerms } = await import('./layers/glossario/data/terms')
+
+      // Criar URLs para cada termo do glossário
+      const glossaryRoutes = glossaryTerms.map(term => ({
+        url: `/glossario/${term.id}`,
+        changefreq: 'monthly',
+        priority: 0.7
+      }))
+
+      // Rotas principais com maior prioridade
+      const mainRoutes = [
+        { url: '/', changefreq: 'weekly', priority: 1.0 },
+        { url: '/glossario', changefreq: 'weekly', priority: 0.9 }
+      ]
+
+      return [...mainRoutes, ...glossaryRoutes]
+    }
   },
 
   app: {
