@@ -8,6 +8,11 @@ dist
 seed
 output
 
+# Test outputs
+coverage
+test-results
+playwright-report
+
 # Node dependencies
 node_modules
 

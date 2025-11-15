@@ -1,5 +1,10 @@
 # Caminho Anglicano
 
+[![Tests & Type Check](https://github.com/dodopok/caminho-anglicano/actions/workflows/test.yml/badge.svg)](https://github.com/dodopok/caminho-anglicano/actions/workflows/test.yml)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Node Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen.svg)](https://nodejs.org)
+[![pnpm Version](https://img.shields.io/badge/pnpm-10.x-orange.svg)](https://pnpm.io)
+
 Portal completo de recursos e serviços para a comunidade anglicana brasileira.
 
 ## Funcionalidades
