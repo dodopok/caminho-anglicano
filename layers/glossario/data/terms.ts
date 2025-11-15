@@ -762,5 +762,341 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Viático',
     definition: 'A Eucaristia administrada a uma pessoa em perigo de morte, "alimento para a jornada" rumo à vida eterna.',
     relatedTerms: ['Eucaristia', 'Morte', 'Sacramento']
+  },
+  {
+    id: 'afusao',
+    term: 'Afusão',
+    definition: 'Um método de batismo onde a água é derramada sobre a cabeça da pessoa sendo batizada.',
+    relatedTerms: ['Batismo', 'Sacramento']
+  },
+  {
+    id: 'alta-igreja',
+    term: 'Alta Igreja',
+    definition: 'Termo usado para descrever anglicanos que enfatizam a continuidade católica da igreja, valorizam rituais litúrgicos elaborados e sacramentos. Também chamados de Anglo-Católicos.',
+    relatedTerms: ['Anglo-Católicos', 'Liturgia', 'Tradição']
+  },
+  {
+    id: 'anglo-catolicos',
+    term: 'Anglo-Católicos',
+    definition: 'Anglicanos que se identificam com o ensino católico e práticas litúrgicas elevadas, enfatizando a sucessão apostólica e os sacramentos.',
+    relatedTerms: ['Alta Igreja', 'Tradição Católica', 'Liturgia']
+  },
+  {
+    id: 'artigos-religiao',
+    term: '39 Artigos de Religião',
+    definition: 'Declaração histórica da doutrina anglicana adotada em 1559, que apresenta uma posição equilibrada sobre diversos tópicos teológicos disputados.',
+    relatedTerms: ['Doutrina', 'Confissão', 'Tradição Anglicana']
+  },
+  {
+    id: 'ascencao',
+    term: 'Ascensão',
+    definition: 'Festa que marca a ascensão do Cristo ressurreto ao céu, quarenta dias após a Páscoa.',
+    relatedTerms: ['Páscoa', 'Ano Litúrgico', 'Cristo']
+  },
+  {
+    id: 'bispo-auxiliar',
+    term: 'Bispo Auxiliar',
+    definition: 'Bispo assistente em uma diocese que recebe seu título de um lugar dentro da diocese. Também conhecido como Bispo Sufragâneo.',
+    relatedTerms: ['Bispo', 'Diocese', 'Bispo Sufragâneo']
+  },
+  {
+    id: 'bispo-sufraganeo',
+    term: 'Bispo Sufragâneo',
+    definition: 'Bispo auxiliar que assiste o bispo diocesano em tempo integral.',
+    relatedTerms: ['Bispo', 'Diocese', 'Bispo Auxiliar']
+  },
+  {
+    id: 'canterbury',
+    term: 'Canterbury',
+    definition: 'Sede do Arcebispo de Canterbury, primaz da Igreja da Inglaterra e figura central da Comunhão Anglicana.',
+    relatedTerms: ['Arcebispo', 'Comunhão Anglicana', 'Primaz']
+  },
+  {
+    id: 'cancao',
+    term: 'Cânon (título)',
+    definition: 'Um título honorário concedido a sacerdotes seniores ou leigos destacados. Também se refere às leis que governam a vida e disciplina da igreja.',
+    relatedTerms: ['Sacerdote', 'Lei Canônica', 'Honraria']
+  },
+  {
+    id: 'catecumenato',
+    term: 'Catecumenato',
+    definition: 'O período de preparação e instrução para aqueles que se preparam para o batismo.',
+    relatedTerms: ['Catecúmeno', 'Batismo', 'Formação']
+  },
+  {
+    id: 'catequese',
+    term: 'Catequese',
+    definition: 'A instrução sistemática na fé cristã, preparando pessoas para os sacramentos e aprofundando o conhecimento da doutrina.',
+    relatedTerms: ['Catecismo', 'Formação', 'Ensino']
+  },
+  {
+    id: 'chanceler',
+    term: 'Chanceler',
+    definition: 'Um advogado ou juiz que é o oficial leigo sênior do Sínodo, aconselhando o bispo e o Sínodo sobre direito canônico e civil.',
+    relatedTerms: ['Sínodo', 'Lei Canônica', 'Bispo']
+  },
+  {
+    id: 'chancel',
+    term: 'Chancel',
+    definition: 'A parte da igreja onde o coro está localizado, geralmente entre a nave e o santuário.',
+    relatedTerms: ['Nave', 'Santuário', 'Coro']
+  },
+  {
+    id: 'clerigo',
+    term: 'Clérigo',
+    definition: 'Qualquer membro do clero (bispos, sacerdotes e diáconos).',
+    relatedTerms: ['Clero', 'Ordem', 'Ministério']
+  },
+  {
+    id: 'clero',
+    term: 'Clero',
+    definition: 'Os membros ordenados da igreja (bispos, sacerdotes e diáconos).',
+    relatedTerms: ['Ordenação', 'Ministério', 'Ordem']
+  },
+  {
+    id: 'coadjutor',
+    term: 'Coadjutor',
+    definition: 'Um sacerdote nos primeiros dois anos de ministério ordenado, assistindo o pároco titular enquanto está em formação.',
+    relatedTerms: ['Sacerdote', 'Formação', 'Ministério']
+  },
+  {
+    id: 'comungante',
+    term: 'Comungante',
+    definition: 'Qualquer pessoa batizada que foi admitida à Eucaristia e normalmente participa do culto em uma igreja anglicana.',
+    relatedTerms: ['Batismo', 'Eucaristia', 'Comunhão']
+  },
+  {
+    id: 'conselho-paroquial',
+    term: 'Conselho Paroquial',
+    definition: 'O corpo decisório em uma paróquia, composto por membros eleitos da congregação.',
+    relatedTerms: ['Paróquia', 'Governança', 'Leigos']
+  },
+  {
+    id: 'conselho-sinodal',
+    term: 'Conselho Sinodal',
+    definition: 'O corpo representativo de clero e leigos, eleito no sínodo diocesano para supervisionar os assuntos da diocese entre os sínodos.',
+    relatedTerms: ['Sínodo', 'Diocese', 'Governança']
+  },
+  {
+    id: 'contribuicao-diocesana',
+    term: 'Contribuição Diocesana',
+    definition: 'Valor cobrado das congregações para financiar as despesas anuais diocesanas.',
+    relatedTerms: ['Diocese', 'Finanças', 'Paróquia']
+  },
+  {
+    id: 'coro',
+    term: 'Coro',
+    definition: 'O grupo de cantores que conduz a música litúrgica. Também se refere à área da igreja onde o coro se localiza.',
+    relatedTerms: ['Música', 'Liturgia', 'Chancel']
+  },
+  {
+    id: 'decanato',
+    term: 'Decanato',
+    definition: 'Uma região dentro de um arcediago na qual o clero e os leigos se consultam sobre assuntos que afetam a vida da igreja.',
+    relatedTerms: ['Arcediago', 'Diocese', 'Região']
+  },
+  {
+    id: 'decano',
+    term: 'Decano',
+    definition: 'Geralmente o reitor de uma paróquia catedral.',
+    relatedTerms: ['Catedral', 'Reitor', 'Administração']
+  },
+  {
+    id: 'decano-regional',
+    term: 'Decano Regional',
+    definition: 'Um sacerdote nomeado pelo bispo como presidente de um decanato regional, com responsabilidades administrativas e de liderança.',
+    relatedTerms: ['Decanato', 'Bispo', 'Liderança']
+  },
+  {
+    id: 'diaconato',
+    term: 'Diaconato',
+    definition: 'O ministério especial de serviço dos diáconos diretamente sob o bispo.',
+    relatedTerms: ['Diácono', 'Ministério', 'Serviço']
+  },
+  {
+    id: 'diocese-companh eira',
+    term: 'Diocese Companheira',
+    definition: 'Dioceses em diferentes partes do mundo anglicano que fazem uma aliança em um relacionamento especial de interesse mútuo e apoio.',
+    relatedTerms: ['Diocese', 'Comunhão Anglicana', 'Parceria']
+  },
+  {
+    id: 'episcopal',
+    term: 'Episcopal',
+    definition: 'Adjetivo que significa "relativo a bispos" ou "governado por bispos".',
+    relatedTerms: ['Bispo', 'Governança', 'Hierarquia']
+  },
+  {
+    id: 'estante-leitura',
+    term: 'Estante de Leitura',
+    definition: 'Um suporte que segura a Bíblia e do qual as leituras do dia são proclamadas.',
+    relatedTerms: ['Bíblia', 'Leitura', 'Liturgia']
+  },
+  {
+    id: 'evangelicos',
+    term: 'Evangélicos',
+    definition: 'Anglicanos que se identificam com os ensinamentos do protestantismo e da tradição reformada, enfatizando a autoridade das Escrituras.',
+    relatedTerms: ['Protestantismo', 'Escrituras', 'Reforma']
+  },
+  {
+    id: 'guilda-altar',
+    term: 'Guilda do Altar',
+    definition: 'Grupo responsável pela limpeza e preparação dos itens para a celebração da Eucaristia. Também chamada de Guilda do Chancel.',
+    relatedTerms: ['Altar', 'Eucaristia', 'Serviço']
+  },
+  {
+    id: 'ieab',
+    term: 'IEAB',
+    definition: 'Igreja Episcopal Anglicana do Brasil, província da Comunhão Anglicana no Brasil.',
+    relatedTerms: ['Comunhão Anglicana', 'Província', 'Brasil']
+  },
+  {
+    id: 'iacb',
+    term: 'IACB',
+    definition: 'Igreja Anglicana do Cone Sul do Brasil, jurisdição anglicana no Brasil.',
+    relatedTerms: ['Comunhão Anglicana', 'Jurisdição', 'Brasil']
+  },
+  {
+    id: 'ministro',
+    term: 'Ministro',
+    definition: 'Todos os membros batizados da igreja que estão exercendo seu ministério para adorar a Deus e servir aos outros.',
+    relatedTerms: ['Batismo', 'Ministério', 'Serviço']
+  },
+  {
+    id: 'mordomo',
+    term: 'Mordomo',
+    definition: 'Oficiais leigos seniores de uma congregação, responsáveis pela administração e cuidado da propriedade da igreja.',
+    relatedTerms: ['Leigo', 'Administração', 'Paróquia']
+  },
+  {
+    id: 'nao-remunerado',
+    term: 'Não Remunerado',
+    definition: 'Um clérigo que não recebe salário da igreja.',
+    relatedTerms: ['Clero', 'Ministério', 'Vocação']
+  },
+  {
+    id: 'nave',
+    term: 'Nave',
+    definition: 'O corpo principal da igreja onde os bancos ou cadeiras estão localizados e onde a congregação se senta durante os cultos.',
+    relatedTerms: ['Igreja', 'Congregação', 'Arquitetura']
+  },
+  {
+    id: 'ordens-sagradas',
+    term: 'Ordens Sagradas',
+    definition: 'O sacramento da ordenação, que marca a entrada do candidato no ministério ordenado.',
+    relatedTerms: ['Ordenação', 'Sacramento', 'Ministério']
+  },
+  {
+    id: 'paroco',
+    term: 'Pároco',
+    definition: 'Um sacerdote a quem o bispo designou o cuidado de uma paróquia.',
+    relatedTerms: ['Sacerdote', 'Paróquia', 'Pastoral']
+  },
+  {
+    id: 'paroco-titular',
+    term: 'Pároco Titular',
+    definition: 'Um clérigo a quem o bispo designou o cuidado de uma paróquia com responsabilidade total.',
+    relatedTerms: ['Pároco', 'Paróquia', 'Responsabilidade']
+  },
+  {
+    id: 'paroquiano',
+    term: 'Paroquiano',
+    definition: 'Uma pessoa batizada que adora em uma paróquia.',
+    relatedTerms: ['Paróquia', 'Batismo', 'Comunidade']
+  },
+  {
+    id: 'pia-batismal',
+    term: 'Pia Batismal',
+    definition: 'A bacia ou fonte que contém a água usada no batismo.',
+    relatedTerms: ['Batismo', 'Batistério', 'Sacramento']
+  },
+  {
+    id: 'postulante',
+    term: 'Postulante',
+    definition: 'Uma pessoa admitida pelo bispo na preparação formal para o ministério ordenado.',
+    relatedTerms: ['Ordenação', 'Formação', 'Discernimento']
+  },
+  {
+    id: 'presidente-celebrante',
+    term: 'Presidente/Celebrante',
+    definition: 'O sacerdote ou bispo que preside uma celebração da Santa Comunhão.',
+    relatedTerms: ['Sacerdote', 'Bispo', 'Eucaristia']
+  },
+  {
+    id: 'primaz',
+    term: 'Primaz',
+    definition: 'O bispo principal ou presidente de uma igreja nacional.',
+    relatedTerms: ['Bispo', 'Igreja Nacional', 'Liderança']
+  },
+  {
+    id: 'provincia',
+    term: 'Província',
+    definition: 'Agrupamento de dioceses ou uma igreja nacional dentro da Comunhão Anglicana.',
+    relatedTerms: ['Diocese', 'Comunhão Anglicana', 'Região']
+  },
+  {
+    id: 'reitor',
+    term: 'Reitor',
+    definition: 'Um sacerdote a quem o bispo designou o cuidado de uma paróquia, especialmente em uma catedral.',
+    relatedTerms: ['Sacerdote', 'Paróquia', 'Catedral']
+  },
+  {
+    id: 'reitoria',
+    term: 'Reitoria',
+    definition: 'A residência fornecida para o reitor ou pároco.',
+    relatedTerms: ['Reitor', 'Residência', 'Paróquia']
+  },
+  {
+    id: 'sacerdote-associado',
+    term: 'Sacerdote Associado',
+    definition: 'Um clérigo nomeado pelo bispo para auxiliar o pároco titular.',
+    relatedTerms: ['Sacerdote', 'Pároco', 'Assistência']
+  },
+  {
+    id: 'sacerdote-encarregado',
+    term: 'Sacerdote Encarregado',
+    definition: 'Um sacerdote encarregado de uma paróquia que exerce as funções de pároco titular pelo período de sua nomeação.',
+    relatedTerms: ['Sacerdote', 'Paróquia', 'Interino']
+  },
+  {
+    id: 'sacerdote-interino',
+    term: 'Sacerdote Interino',
+    definition: 'Um sacerdote contratado por um período específico de tempo enquanto uma busca por um novo sacerdote/pároco titular está sendo conduzida.',
+    relatedTerms: ['Sacerdote', 'Transição', 'Paróquia']
+  },
+  {
+    id: 'sacristia',
+    term: 'Sacristia',
+    definition: 'Sala onde o clero se veste e onde os vasos sagrados e vestes litúrgicas são guardados.',
+    relatedTerms: ['Vestes Litúrgicas', 'Clero', 'Preparação']
+  },
+  {
+    id: 'seminario',
+    term: 'Seminário',
+    definition: 'Uma escola ou colégio para a formação de clérigos.',
+    relatedTerms: ['Formação', 'Educação', 'Clero']
+  },
+  {
+    id: 'sinodo',
+    term: 'Sínodo',
+    definition: 'O corpo governante de uma diocese composto por todo o clero licenciado, representantes leigos de todas as paróquias, membros ex-officio e o bispo.',
+    relatedTerms: ['Diocese', 'Governança', 'Bispo']
+  },
+  {
+    id: 'subdiacono',
+    term: 'Subdiácono',
+    definition: 'Pessoa leiga que auxilia com deveres litúrgicos, lê a epístola e pode conduzir as orações de intercessão.',
+    relatedTerms: ['Leigo', 'Liturgia', 'Serviço']
+  },
+  {
+    id: 'vestes-liturgicas',
+    term: 'Vestes Litúrgicas',
+    definition: 'As roupas distintivas reservadas para uso na liturgia, usadas pelo clero e por aqueles que servem no altar.',
+    relatedTerms: ['Liturgia', 'Clero', 'Ritual']
+  },
+  {
+    id: 'vigario',
+    term: 'Vigário',
+    definition: 'Um vigário é nomeado pelo bispo para auxiliar o decano da catedral.',
+    relatedTerms: ['Catedral', 'Decano', 'Bispo']
   }
 ]

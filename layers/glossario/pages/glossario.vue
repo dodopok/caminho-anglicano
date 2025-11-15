@@ -27,6 +27,7 @@
           <div class="relative">
             <input
               v-model="searchQuery"
+              @input="handleSearchInput"
               type="text"
               placeholder="Buscar termos..."
               class="w-full px-4 py-3 pr-12 rounded-lg border border-slate-300 focus:border-slate-500 focus:ring-2 focus:ring-slate-200 outline-none transition-all"
@@ -53,7 +54,7 @@
           <button
             v-for="letter in alphabet"
             :key="letter"
-            @click="selectedLetter = selectedLetter === letter ? null : letter"
+            @click="handleLetterClick(letter)"
             :class="[
               'px-3 py-1.5 rounded-md text-sm font-medium transition-all',
               selectedLetter === letter
@@ -101,7 +102,7 @@
             <button
               v-for="relatedTerm in term.relatedTerms"
               :key="relatedTerm"
-              @click="searchQuery = relatedTerm"
+              @click="handleRelatedTermClick(relatedTerm)"
               class="text-sm px-3 py-1 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full transition-colors"
               :aria-label="`Buscar termo relacionado: ${relatedTerm}`"
             >
@@ -153,6 +154,27 @@ const selectedLetter = ref<string | null>(null)
 // Alfabeto para filtros
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
+// Funções para limpar filtros mutuamente exclusivos
+const handleSearchInput = () => {
+  if (searchQuery.value) {
+    selectedLetter.value = null
+  }
+}
+
+const handleLetterClick = (letter: string) => {
+  if (selectedLetter.value === letter) {
+    selectedLetter.value = null
+  } else {
+    selectedLetter.value = letter
+    searchQuery.value = ''
+  }
+}
+
+const handleRelatedTermClick = (term: string) => {
+  searchQuery.value = term
+  selectedLetter.value = null
+}
+
 // Termos filtrados
 const filteredTerms = computed(() => {
   let terms = [...glossaryTerms]
@@ -180,15 +202,15 @@ const filteredTerms = computed(() => {
 // SEO Meta Tags
 useSeoMeta({
   title: 'Glossário Anglicano - Termos e Conceitos da Tradição Anglicana',
-  description: 'Explore mais de 100 termos e conceitos importantes da tradição anglicana. Um guia completo de liturgia, sacramentos, orações e práticas da igreja anglicana.',
+  description: 'Explore mais de 150 termos e conceitos importantes da tradição anglicana brasileira. Guia completo de liturgia, sacramentos, orações, estrutura eclesiástica e práticas da igreja anglicana.',
   ogTitle: 'Glossário Anglicano - Caminho Anglicano',
-  ogDescription: 'Explore mais de 100 termos e conceitos importantes da tradição anglicana. Um guia completo de liturgia, sacramentos, orações e práticas da igreja anglicana.',
+  ogDescription: 'Explore mais de 150 termos e conceitos importantes da tradição anglicana brasileira. Guia completo de liturgia, sacramentos, orações, estrutura eclesiástica e práticas da igreja anglicana.',
   ogImage: `${siteUrl}/og-image-glossario.png`,
   ogUrl: `${siteUrl}/glossario`,
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Glossário Anglicano - Caminho Anglicano',
-  twitterDescription: 'Explore mais de 100 termos e conceitos importantes da tradição anglicana.',
+  twitterDescription: 'Explore mais de 150 termos e conceitos importantes da tradição anglicana brasileira.',
   twitterImage: `${siteUrl}/og-image-glossario.png`,
 })
 
