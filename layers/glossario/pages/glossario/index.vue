@@ -42,12 +42,16 @@ import { useTermSuggestion } from '../../composables/useTermSuggestion'
 const siteUrl = 'https://caminhoanglicano.com.br'
 
 // Composables
-const { filteredTerms } = useGlossary()
+const { filteredTerms, initializeFromURL } = useGlossary()
 const { showToast, toastMessage, toastType } = useTermSuggestion()
 
 // Garantir renderização no servidor para crawlers
 definePageMeta({
   layout: false
+})
+
+onMounted(() => {
+  initializeFromURL()
 })
 
 // SEO Meta Tags

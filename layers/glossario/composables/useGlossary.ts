@@ -1,4 +1,4 @@
-import { computed, ref, onMounted, watch } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { glossaryTerms } from '../data/terms'
 
@@ -98,6 +98,8 @@ export const useGlossary = () => {
         query.q = debouncedSearchQuery.value
       } else if (selectedLetter.value) {
         query.letra = selectedLetter.value
+      } else {
+        query.q = ''
       }
 
       if (currentPage.value > 1) {
@@ -234,6 +236,7 @@ export const useGlossary = () => {
     // Não limpar valores existentes se não houver parâmetros
     if (queryParam) {
       searchQuery.value = queryParam
+      alert('popotao3')
       debouncedSearchQuery.value = queryParam // Inicialização imediata
     } else if (letterParam && alphabet.includes(letterParam.toUpperCase())) {
       selectedLetter.value = letterParam.toUpperCase()
@@ -247,11 +250,6 @@ export const useGlossary = () => {
       }
     }
   }
-
-  // Auto-inicializar na montagem
-  onMounted(() => {
-    initializeFromURL()
-  })
 
   // Observar mudanças na URL e sincronizar (exceto quando usuário está digitando)
   watch(() => route.query, (newQuery) => {
@@ -302,6 +300,9 @@ export const useGlossary = () => {
     goToPage,
     nextPage,
     previousPage,
+
+    // Inicialização
+    initializeFromURL,
 
     // Constantes
     ITEMS_PER_PAGE
