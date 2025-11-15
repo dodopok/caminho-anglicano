@@ -2562,5 +2562,155 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Perdão',
     definition: 'A remissão dos pecados oferecida por Deus através de Cristo. Também o perdão que devemos oferecer uns aos outros.',
     relatedTerms: ['Misericórdia', 'Reconciliação', 'Absolvição']
+  },
+  {
+    id: 'acna',
+    term: 'ACNA',
+    definition: 'A Igreja Anglicana na América do Norte une 132.000 anglicanos em 1.004 congregações nos Estados Unidos, Canadá e México em uma única Igreja. Representa a vertente mais conservadora dos Anglicanos. Em 16 de abril de 2009, foi reconhecido como uma província pela Comunidade Global de Anglicanos Confessionais. O Rev. Dr. Foley Beach é o atual Arcebispo da Igreja.',
+    relatedTerms: ['Comunhão Anglicana', 'Igrejas Continuantes', 'GAFCON']
+  },
+  {
+    id: 'abstinencia',
+    term: 'Abstinência',
+    definition: 'Termo utilizado para a observação de certos atos especiais de disciplina como por exemplo, a privação de comer certos tipos de comida. Está normalmente associada a certos dias do Calendário Eclesiástico, tais como: a Quaresma, a quarta-feira de cinzas, os dias santos da Páscoa ou Semana Santa, ou ainda, todas as sextas-feiras do ano, excetuando-se o Natal e as Festas de nosso Senhor.',
+    relatedTerms: ['Quaresma', 'Jejum', 'Disciplina Espiritual']
+  },
+  {
+    id: 'administracao',
+    term: 'Administração',
+    definition: 'Nome dado ao momento de distribuição dos elementos consagrados aos comungantes na Eucaristia.',
+    relatedTerms: ['Eucaristia', 'Comunhão', 'Hóstia']
+  },
+  {
+    id: 'afirmacao-saint-louis',
+    term: 'Afirmação de Saint Louis',
+    definition: 'Declaração que contém as crenças e diretivas do Movimento Anglicano Continuante. Foi uma deliberação prolatada ao final do encontro da Sociedade dos Clérigos Zelosos, um grupo de clérigos conservadores que se reuniu na cidade de Saint Louis em 17 de setembro de 1977.',
+    relatedTerms: ['Igrejas Continuantes', 'Movimento Anglicano Continuante']
+  },
+  {
+    id: 'agenda',
+    term: 'Agenda',
+    definition: 'Nome dado aos livros que continham os Serviços Ocasionais que o Presbítero ministrava ao povo de Deus.',
+    relatedTerms: ['Livro de Oração Comum', 'Liturgia', 'Presbítero']
+  },
+  {
+    id: 'agostinho-cantuaria',
+    term: 'Agostinho de Cantuária',
+    definition: 'Primeiro Arcebispo de Cantuária que chegou à Inglaterra como missionário e morreu em 605. Era o prior de um convento em Roma, chamado de S. André, quando foi enviado pelo papa Gregório Magno para restabelecer a Igreja nas ilhas Britânicas após as invasões anglo-saxônicas. Estabeleceu residência na região de Cantuária em 597 juntamente com 40 monges.',
+    relatedTerms: ['Cantuária', 'Arcebispo de Cantuária', 'Missão']
+  },
+  {
+    id: 'amia',
+    term: 'AMIA',
+    definition: 'Anglican Mission in America. Grupo de bispos enviados – maiormente da África – para os Estados Unidos com a finalidade de pregar o Evangelho de Cristo, frente à apostasia apresentada pela Igreja Episcopal americana. Foi fundada em 2000 e atua como uma Igreja com tendências evangelicais, carismáticas e anglo-católicas. Sua sede está na Carolina do Sul.',
+    relatedTerms: ['ACNA', 'Igrejas Continuantes', 'Robinson Gene']
+  },
+  {
+    id: 'amie',
+    term: 'AMIE',
+    definition: 'Anglican Mission in England. Sociedade missionária na Inglaterra que procura promover o crescimento do Evangelho em áreas nas quais a Igreja da Inglaterra se revela incapaz. É resultado da GFCA (Global Fellowship of Confessing Anglican), que se tornaria a GAFCON. Seu início data de 2011.',
+    relatedTerms: ['GAFCON', 'Missão', 'Igreja da Inglaterra']
+  },
+  {
+    id: 'amito',
+    term: 'Amito',
+    definition: 'Tecido que é colocado ao redor do pescoço antes que se vista com os demais paramentos litúrgicos.',
+    relatedTerms: ['Alva', 'Paramentos', 'Liturgia']
+  },
+  {
+    id: 'ampula',
+    term: 'Ampula',
+    definition: 'Vaso utilizado para guardar os Santos óleos que foram consagrados pelo Bispo na Santa Eucaristia da quinta-feira santa.',
+    relatedTerms: ['Santos Óleos', 'Semana Santa', 'Quinta-feira Santa']
+  },
+  {
+    id: 'anafora',
+    term: 'Anáfora',
+    definition: 'Nome utilizado pelos cristãos Orientais para a Grande Oração Eucarística. A palavra vem do grego "oferta". Também conhecida como "Grande Ação de Graças", o Cânon da "Missa" e "Oração de Consagração". Composta do Sursum Corda, do Prefácio, do Sanctus, da Narrativa da Instituição, da Anamnésis, da Epiclésis, da Oblação e da Oração de Pós-Comunhão.',
+    relatedTerms: ['Eucaristia', 'Oração Eucarística', 'Epiclesis', 'Sursum Corda']
+  },
+  {
+    id: 'anamnesis',
+    term: 'Anamnésis',
+    definition: 'Do grego "memória" ou "lembrança". Parte da Grande Oração Eucarística na qual encontramos a narrativa da instituição em que o sacrifício único de Cristo é recordado ou lembrado.',
+    relatedTerms: ['Anáfora', 'Eucaristia', 'Memorial']
+  },
+  {
+    id: 'anglo-catolico',
+    term: 'Anglo-católico',
+    definition: 'Corrente ou partido dentro da Igreja Anglicana que tende a se aprofundar mais nos aspectos litúrgicos e se aproximar mais das práticas comuns à Igreja de Roma. Também são chamados de "Igreja Alta", "Tractarianos" ou membros do "Movimento de Oxford".',
+    relatedTerms: ['Movimento de Oxford', 'Igreja Alta', 'Tractarianismo']
+  },
+  {
+    id: 'ano-liturgico',
+    term: 'Ano litúrgico',
+    definition: 'Também chamado de Ano Cristão ou Ano Eclesiástico. Calendário das estações, domingos e dias santos observados pela Igreja através do ano civil. Composto por dois ciclos de festas e dias santos: um dependente da data móvel da Páscoa e outro dependente da data fixa do Natal (25 de dezembro).',
+    relatedTerms: ['Advento', 'Quaresma', 'Páscoa', 'Pentecostes', 'Natal']
+  },
+  {
+    id: 'anselmo-cantuaria',
+    term: 'Anselmo de Cantuária',
+    definition: 'Anselmo de Aosta (1033-1109), monge e teólogo medieval que assumiu a Sé de Cantuária entre 1093 e 1109. Contribuiu decisivamente no debate entre fé e razão, sendo considerado por muitos como o criador da escolástica. Desenvolveu o Argumento Ontológico para provar racionalmente a existência de Deus e a teoria da satisfação para explicar a morte de Cristo.',
+    relatedTerms: ['Cantuária', 'Escolástica', 'Teologia']
+  },
+  {
+    id: 'ante-comunhao',
+    term: 'Ante Comunhão',
+    definition: 'Primeira parte do Rito Eucarístico, também conhecida como Pró-Anáfora ou Liturgia da Palavra.',
+    relatedTerms: ['Eucaristia', 'Liturgia da Palavra']
+  },
+  {
+    id: 'antependium',
+    term: 'Antependium',
+    definition: 'Ornamento amovível que cobre a frente da base do altar. Quando feito de seda ou outro tecido, é comum orná-lo com bordados artísticos.',
+    relatedTerms: ['Frontal', 'Altar', 'Paramentos']
+  },
+  {
+    id: 'antifonal',
+    term: 'Antifonal',
+    definition: 'Do grego "voz contra voz". Método de recitação dos Salmos em que os versos são cantados ou lidos alternadamente entre dois grupos de cantores ou leitores.',
+    relatedTerms: ['Salmos', 'Canto', 'Liturgia']
+  },
+  {
+    id: 'apostolicae-curae',
+    term: 'Apostolicae Curae',
+    definition: 'Bula apresentada pelo papa Leão XIII em 13 de setembro de 1896, defendendo a tese de que as ordenações Anglicanas eram "totalmente inválidas" e "inteiramente vãs", por defeito de forma e intenção. A resposta foi apresentada pelos Arcebispos de Cantuária e York em 19 de fevereiro de 1897.',
+    relatedTerms: ['Sucessão Apostólica', 'Ordenação', 'Igreja Católica Romana']
+  },
+  {
+    id: 'apse',
+    term: 'Apse',
+    definition: 'Parte das estruturas arquitetônicas típicas das basílicas que se caracterizam usualmente por um semicírculo, no qual se encontram o altar e o santuário.',
+    relatedTerms: ['Basílica', 'Altar', 'Santuário']
+  },
+  {
+    id: 'arcebispo-cantuaria',
+    term: 'Arcebispo de Cantuária',
+    definition: 'Bispo da diocese de Cantuária, no sudoeste da Inglaterra. Arcebispo da província de Cantuária, Primaz de toda a Inglaterra e líder espiritual da Comunhão Anglicana. Convoca a Conferência de Lambeth e possui assento no Parlamento Britânico como membro da Câmara dos Lordes. O atual Arcebispo é Justin Welby.',
+    relatedTerms: ['Cantuária', 'Comunhão Anglicana', 'Primaz', 'Welby Justin Portal']
+  },
+  {
+    id: 'arcediagado',
+    term: 'Arcediagado',
+    definition: 'Sub-região eclesiástica sob a direção administrativa e pastoral de um Arcediago.',
+    relatedTerms: ['Arcediago', 'Diocese']
+  },
+  {
+    id: 'aspersorio',
+    term: 'Aspersório',
+    definition: 'Instrumento com o qual o ministro asperge água benta sobre pessoas ou objetos com a intenção de abençoá-los.',
+    relatedTerms: ['Água Benta', 'Bênção', 'Caldeirinha']
+  },
+  {
+    id: 'atril',
+    term: 'Atril',
+    definition: 'Mesa da Palavra, é a estante de onde se proclama a Palavra de Deus. Também pode servir de púlpito.',
+    relatedTerms: ['Ambão', 'Liturgia da Palavra', 'Púlpito']
+  },
+  {
+    id: 'ambula',
+    term: 'Âmbula',
+    definition: 'Recipiente utilizado para a conservação e a distribuição das hóstias aos fiéis.',
+    relatedTerms: ['Hóstia', 'Eucaristia', 'Sacrário', 'Cibório']
   }
 ]

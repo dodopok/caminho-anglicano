@@ -29,28 +29,28 @@ export default defineNuxtConfig({
   },
 
   // Configuração do Sitemap para SEO
+  site: {
+    url: 'https://caminhoanglicano.com.br'
+  },
+
   sitemap: {
-    hostname: 'https://caminhoanglicano.com.br',
-    gzip: true,
-    exclude: [
-      '/admin/**',
-      '/dashboard/**'
-    ],
-    routes: async () => {
+    exclude: ['/admin/**', '/dashboard/**'],
+    urls: async () => {
       // Importar dinamicamente os termos do glossário
       const { glossaryTerms } = await import('./layers/glossario/data/terms')
 
       // Criar URLs para cada termo do glossário
       const glossaryRoutes = glossaryTerms.map(term => ({
-        url: `/glossario/${term.id}`,
-        changefreq: 'monthly',
-        priority: 0.7
+        loc: `/glossario/${term.id}`,
+        lastmod: new Date(),
+        changefreq: 'monthly' as const,
+        priority: 0.7 as const
       }))
 
       // Rotas principais com maior prioridade
       const mainRoutes = [
-        { url: '/', changefreq: 'weekly', priority: 1.0 },
-        { url: '/glossario', changefreq: 'weekly', priority: 0.9 }
+        { loc: '/', lastmod: new Date(), changefreq: 'weekly' as const, priority: 1 as const },
+        { loc: '/glossario', lastmod: new Date(), changefreq: 'weekly' as const, priority: 0.9 as const }
       ]
 
       return [...mainRoutes, ...glossaryRoutes]
