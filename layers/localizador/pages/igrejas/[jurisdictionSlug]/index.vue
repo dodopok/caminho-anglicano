@@ -158,8 +158,8 @@ useHead({
               </li>
               <li class="text-gray-400">/</li>
               <li>
-                <NuxtLink to="/igrejas" class="text-blue-600 hover:text-blue-800 hover:underline">
-                  Igrejas
+                <NuxtLink to="/localizador" class="text-blue-600 hover:text-blue-800 hover:underline">
+                  Localizador
                 </NuxtLink>
               </li>
               <li class="text-gray-400">/</li>
