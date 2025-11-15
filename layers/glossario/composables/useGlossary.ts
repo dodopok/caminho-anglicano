@@ -1,4 +1,4 @@
-import { computed, ref, onMounted } from 'vue'
+import { computed, ref, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { glossaryTerms } from '../data/terms'
 
@@ -251,6 +251,32 @@ export const useGlossary = () => {
   // Auto-inicializar na montagem
   onMounted(() => {
     initializeFromURL()
+  })
+
+  // Observar mudanças na URL e sincronizar (exceto quando usuário está digitando)
+  watch(() => route.query, (newQuery) => {
+    // Se usuário está digitando, não sincronizar da URL
+    if (isUserTyping) return
+
+    const queryParam = newQuery.q as string
+    const letterParam = newQuery.letra as string
+
+    // Se não há nenhum parâmetro de busca/filtro na URL, limpar tudo
+    if (!queryParam && !letterParam) {
+      searchQuery.value = ''
+      debouncedSearchQuery.value = ''
+      selectedLetter.value = null
+    } else if (queryParam && queryParam !== debouncedSearchQuery.value) {
+      // Sincronizar apenas se o valor da URL for diferente do atual
+      searchQuery.value = queryParam
+      debouncedSearchQuery.value = queryParam
+      selectedLetter.value = null
+    } else if (letterParam && letterParam.toUpperCase() !== selectedLetter.value) {
+      // Sincronizar letra apenas se diferente
+      selectedLetter.value = letterParam.toUpperCase()
+      searchQuery.value = ''
+      debouncedSearchQuery.value = ''
+    }
   })
 
   return {
