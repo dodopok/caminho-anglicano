@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     typeCheck: true
   },
 
-  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxtjs/sitemap'],
+  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@vite-pwa/nuxt'],
 
   // Configuração do Tailwind
   tailwindcss: {
@@ -80,6 +80,50 @@ export default defineNuxtConfig({
     }
   },
 
+  // Configuração do PWA
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: 'Caminho Anglicano',
+      short_name: 'Caminho Anglicano',
+      description: 'Guia completo sobre o anglicanismo no Brasil',
+      theme_color: '#8B4513',
+      background_color: '#ffffff',
+      display: 'standalone',
+      start_url: '/',
+      icons: [
+        {
+          src: '/android-chrome-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+          purpose: 'any'
+        },
+        {
+          src: '/android-chrome-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any'
+        },
+        {
+          src: '/android-chrome-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable'
+        }
+      ]
+    },
+    workbox: {
+      navigateFallback: '/',
+      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+    },
+    client: {
+      installPrompt: true,
+    },
+    devOptions: {
+      enabled: true
+    }
+  },
+
   app: {
     head: {
       htmlAttrs: {
@@ -88,7 +132,12 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'format-detection', content: 'telephone=no' }
+        { name: 'format-detection', content: 'telephone=no' },
+        // PWA meta tags
+        { name: 'theme-color', content: '#8B4513' },
+        { name: 'apple-mobile-web-app-capable', content: 'yes' },
+        { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
+        { name: 'apple-mobile-web-app-title', content: 'Caminho Anglicano' }
       ],
       link: [
         // Favicon
