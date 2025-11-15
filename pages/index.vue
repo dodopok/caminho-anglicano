@@ -53,7 +53,7 @@ useHead({
 
     <!-- Banner do Livro -->
     <div class="bg-gradient-to-r from-amber-600 via-amber-700 to-orange-600 border-b-4 border-amber-900 shadow-lg">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
           <div class="flex flex-col sm:flex-row items-center gap-4 text-white text-center sm:text-left">
             <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
