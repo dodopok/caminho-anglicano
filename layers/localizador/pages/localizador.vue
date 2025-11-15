@@ -471,7 +471,7 @@ onMounted(async () => {
               v-for="church in filteredChurches"
               :key="church.id"
               :class="[
-                'p-4 hover:bg-gray-50 transition-colors',
+                'p-4 hover:bg-gray-50 transition-colors group',
                 selectedChurchId === church.id ? 'bg-gray-50' : ''
               ]"
             >
@@ -510,7 +510,7 @@ onMounted(async () => {
                 <!-- Link para página de detalhes (ícone no canto inferior direito) -->
                 <NuxtLink
                   :to="`/igrejas/${getJurisdictionSlug(church.jurisdictionId)}/${church.slug}`"
-                  class="absolute bottom-0 right-0 p-1.5 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded transition-colors"
+                  class="absolute bottom-0 right-0 p-1.5 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded transition-colors opacity-0 group-hover:opacity-100"
                   @click.stop
                   title="Ver detalhes da igreja"
                 >
