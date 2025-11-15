@@ -510,7 +510,7 @@ onMounted(async () => {
                 <!-- Link para página de detalhes (ícone no canto inferior direito) -->
                 <NuxtLink
                   :to="`/igrejas/${getJurisdictionSlug(church.jurisdictionId)}/${church.slug}`"
-                  class="absolute bottom-0 right-0 p-1.5 text-green-600 hover:text-green-700 hover:bg-green-50 rounded transition-colors"
+                  class="absolute bottom-0 right-0 p-1.5 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded transition-colors"
                   @click.stop
                   title="Ver detalhes da igreja"
                 >
