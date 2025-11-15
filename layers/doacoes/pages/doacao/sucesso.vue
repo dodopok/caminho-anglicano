@@ -29,14 +29,6 @@
           </div>
         </div>
 
-        <!-- Citação bíblica -->
-        <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-          <blockquote class="italic text-gray-700 dark:text-gray-300">
-            <p class="text-lg">"Cada um contribua segundo propôs no seu coração, não com tristeza ou por necessidade; porque Deus ama ao que dá com alegria."</p>
-            <footer class="mt-2 text-sm text-gray-500 dark:text-gray-400">— 2 Coríntios 9:7</footer>
-          </blockquote>
-        </div>
-
         <!-- Botões de ação -->
         <div class="mt-8 space-y-3 sm:space-y-0 sm:space-x-3 sm:flex sm:justify-center">
           <NuxtLink
@@ -63,20 +55,20 @@
       </div>
 
       <!-- Card de impacto -->
-      <div class="mt-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl shadow-xl p-6 text-white">
-        <h2 class="text-xl font-bold mb-3">Seu impacto</h2>
+      <div class="mt-8 bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Seu impacto</h2>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
           <div>
-            <div class="text-3xl font-bold">200+</div>
-            <div class="text-sm opacity-90">Igrejas cadastradas</div>
+            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">200+</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">Igrejas cadastradas</div>
           </div>
           <div>
-            <div class="text-3xl font-bold">5</div>
-            <div class="text-sm opacity-90">Livros digitais</div>
+            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">5</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">Livros digitais</div>
           </div>
           <div>
-            <div class="text-3xl font-bold">100%</div>
-            <div class="text-sm opacity-90">Gratuito e aberto</div>
+            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">100%</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">Gratuito e aberto</div>
           </div>
         </div>
       </div>

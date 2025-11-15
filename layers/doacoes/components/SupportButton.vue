@@ -5,14 +5,14 @@
         'inline-flex items-center justify-center space-x-2 font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5',
         sizeClasses,
         variant === 'floating'
-          ? 'fixed bottom-6 right-6 z-50 bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600'
+          ? 'fixed bottom-4 right-4 z-50 bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600'
           : variant === 'header'
           ? 'bg-purple-600 hover:bg-purple-700 text-white'
           : 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700'
       ]"
       @click="openModal"
     >
-      <span class="text-xl">☕</span>
+      <span :class="variant === 'floating' ? 'text-base' : 'text-xl'">☕</span>
       <span>{{ label }}</span>
     </button>
 
@@ -40,6 +40,10 @@ const props = withDefaults(
 const isModalOpen = ref(false)
 
 const sizeClasses = computed(() => {
+  if (props.variant === 'floating') {
+    return 'px-2 py-1.5 text-sm'
+  }
+  
   switch (props.size) {
     case 'sm':
       return 'px-4 py-2 text-sm'

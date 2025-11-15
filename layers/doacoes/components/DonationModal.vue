@@ -2,6 +2,7 @@
   <BaseModal
     :is-open="isOpen"
     title="Apoie o Caminho Anglicano"
+    max-width="2xl"
     @close="emit('close')"
   >
     <div class="space-y-6">
@@ -17,9 +18,9 @@
         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
           Escolha o valor da doação
         </label>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <div class="grid grid-cols-3 gap-3">
           <button
-            v-for="option in DONATION_OPTIONS"
+            v-for="option in DONATION_OPTIONS.slice(0, 3)"
             :key="option.value"
             type="button"
             :class="[
@@ -62,116 +63,118 @@
         </div>
       </div>
 
-      <!-- Tipo de doação -->
-      <div>
-        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
-          Frequência
-        </label>
-        <div class="grid grid-cols-2 gap-3">
-          <button
-            type="button"
-            :class="[
-              'p-4 border-2 rounded-lg transition-all duration-200 text-center',
-              frequency === 'ONE_TIME'
-                ? 'border-purple-600 bg-purple-50 dark:bg-purple-900/20'
-                : 'border-gray-300 dark:border-gray-600 hover:border-purple-400'
-            ]"
-            @click="frequency = 'ONE_TIME'"
-          >
-            <div class="font-semibold text-gray-900 dark:text-white">Uma vez</div>
-            <div class="text-xs text-gray-600 dark:text-gray-400 mt-1">Doação única</div>
-          </button>
-          <button
-            type="button"
-            :class="[
-              'p-4 border-2 rounded-lg transition-all duration-200 text-center',
-              frequency === 'MONTHLY'
-                ? 'border-purple-600 bg-purple-50 dark:bg-purple-900/20'
-                : 'border-gray-300 dark:border-gray-600 hover:border-purple-400'
-            ]"
-            @click="frequency = 'MONTHLY'"
-          >
-            <div class="font-semibold text-gray-900 dark:text-white">Mensal</div>
-            <div class="text-xs text-gray-600 dark:text-gray-400 mt-1">Apoio recorrente</div>
-          </button>
+      <div class="grid grid-cols-2 gap-6">
+        <!-- Tipo de doação -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
+            Frequência
+          </label>
+          <div class="space-y-2">
+            <button
+              type="button"
+              :class="[
+                'w-full p-3 border-2 rounded-lg transition-all duration-200 text-center',
+                frequency === 'ONE_TIME'
+                  ? 'border-purple-600 bg-purple-50 dark:bg-purple-900/20'
+                  : 'border-gray-300 dark:border-gray-600 hover:border-purple-400'
+              ]"
+              @click="frequency = 'ONE_TIME'"
+            >
+              <div class="font-semibold text-gray-900 dark:text-white text-sm">Uma vez</div>
+            </button>
+            <button
+              type="button"
+              :class="[
+                'w-full p-3 border-2 rounded-lg transition-all duration-200 text-center opacity-50 cursor-not-allowed',
+                'border-gray-300 dark:border-gray-600'
+              ]"
+              disabled
+              title="Em breve"
+            >
+              <div class="font-semibold text-gray-900 dark:text-white text-sm">Mensal</div>
+            </button>
+          </div>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+            * Mensal em breve
+          </p>
         </div>
-      </div>
 
-      <!-- Método de pagamento -->
-      <div>
-        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
-          Método de pagamento
-        </label>
-        <div class="grid grid-cols-2 gap-3">
-          <button
-            type="button"
-            :class="[
-              'p-4 border-2 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2',
-              paymentMethod === 'PIX'
-                ? 'border-purple-600 bg-purple-50 dark:bg-purple-900/20'
-                : 'border-gray-300 dark:border-gray-600 hover:border-purple-400'
-            ]"
-            @click="paymentMethod = 'PIX'"
-          >
-            <svg class="w-6 h-6" viewBox="0 0 512 512" fill="currentColor">
-              <path d="M242.4 292.5C247.8 287.1 257.1 287.1 262.5 292.5L339.5 369.5C353.7 383.7 372.6 391.5 392.6 391.5H407.7L310.6 488.6C280.3 518.1 231.1 518.1 200.8 488.6L103.3 391.5H112.6C132.6 391.5 151.5 383.7 165.7 369.5L242.4 292.5zM262.5 218.9C257.1 224.3 247.8 224.3 242.4 218.9L165.7 142.1C151.5 127.9 132.6 120.1 112.6 120.1H103.3L200.7 23.4C231.1-6.1 280.3-6.1 310.6 23.4L407.7 120.1H392.6C372.6 120.1 353.7 127.9 339.5 142.1L262.5 218.9zM112.6 142.1C126.4 142.1 139.1 148.3 149.3 158.5L226 235.2C247.6 256.8 281.4 256.8 303 235.2L379.7 158.5C389.9 148.3 402.6 142.1 416.4 142.1H421.2L514.3 235.2C542.6 263.5 542.6 308.5 514.3 336.8L421.2 429.9H416.4C402.6 429.9 389.9 423.7 379.7 413.5L303 336.8C281.4 315.2 247.6 315.2 226 336.8L149.3 413.5C139.1 423.7 126.4 429.9 112.6 429.9H107.8L14.7 336.8C-13.6 308.5-13.6 263.5 14.7 235.2L107.8 142.1H112.6z"/>
-            </svg>
-            <span class="font-semibold text-gray-900 dark:text-white">PIX</span>
-          </button>
-          <button
-            type="button"
-            :class="[
-              'p-4 border-2 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2 opacity-50 cursor-not-allowed',
-              'border-gray-300 dark:border-gray-600'
-            ]"
-            disabled
-            title="Em breve"
-          >
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
-            </svg>
-            <span class="font-semibold text-gray-900 dark:text-white">Cartão</span>
-          </button>
+        <!-- Método de pagamento -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
+            Método de pagamento
+          </label>
+          <div class="space-y-2">
+            <button
+              type="button"
+              :class="[
+                'w-full p-3 border-2 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2',
+                paymentMethod === 'PIX'
+                  ? 'border-purple-600 bg-purple-50 dark:bg-purple-900/20'
+                  : 'border-gray-300 dark:border-gray-600 hover:border-purple-400'
+              ]"
+              @click="paymentMethod = 'PIX'"
+            >
+              <svg class="w-5 h-5" viewBox="0 0 512 512" fill="currentColor">
+                <path d="M242.4 292.5C247.8 287.1 257.1 287.1 262.5 292.5L339.5 369.5C353.7 383.7 372.6 391.5 392.6 391.5H407.7L310.6 488.6C280.3 518.1 231.1 518.1 200.8 488.6L103.3 391.5H112.6C132.6 391.5 151.5 383.7 165.7 369.5L242.4 292.5zM262.5 218.9C257.1 224.3 247.8 224.3 242.4 218.9L165.7 142.1C151.5 127.9 132.6 120.1 112.6 120.1H103.3L200.7 23.4C231.1-6.1 280.3-6.1 310.6 23.4L407.7 120.1H392.6C372.6 120.1 353.7 127.9 339.5 142.1L262.5 218.9zM112.6 142.1C126.4 142.1 139.1 148.3 149.3 158.5L226 235.2C247.6 256.8 281.4 256.8 303 235.2L379.7 158.5C389.9 148.3 402.6 142.1 416.4 142.1H421.2L514.3 235.2C542.6 263.5 542.6 308.5 514.3 336.8L421.2 429.9H416.4C402.6 429.9 389.9 423.7 379.7 413.5L303 336.8C281.4 315.2 247.6 315.2 226 336.8L149.3 413.5C139.1 423.7 126.4 429.9 112.6 429.9H107.8L14.7 336.8C-13.6 308.5-13.6 263.5 14.7 235.2L107.8 142.1H112.6z"/>
+              </svg>
+              <span class="font-semibold text-gray-900 dark:text-white text-sm">PIX</span>
+            </button>
+            <button
+              type="button"
+              :class="[
+                'w-full p-3 border-2 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2 opacity-50 cursor-not-allowed',
+                'border-gray-300 dark:border-gray-600'
+              ]"
+              disabled
+              title="Em breve"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+              </svg>
+              <span class="font-semibold text-gray-900 dark:text-white text-sm">Cartão</span>
+            </button>
+          </div>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+            * Cartão em breve
+          </p>
         </div>
-        <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
-          * Pagamento com cartão estará disponível em breve
-        </p>
       </div>
 
       <!-- Formulário de dados -->
       <form @submit.prevent="handleSubmit" class="space-y-4">
-        <div>
+        <div class="grid grid-cols-2 gap-4">
           <BaseInput
             v-model="formData.name"
             label="Nome completo"
             required
             placeholder="Seu nome"
+            autocomplete="name"
           />
-        </div>
-        <div>
           <BaseInput
             v-model="formData.email"
             type="email"
             label="E-mail"
             required
             placeholder="seu@email.com"
+            autocomplete="email"
           />
         </div>
-        <div>
+        <div class="grid grid-cols-2 gap-4">
           <BaseInput
             v-model="formData.cellphone"
             label="Celular"
             required
             placeholder="(11) 99999-9999"
+            autocomplete="tel-national"
             @input="formatPhone"
           />
-        </div>
-        <div>
           <BaseInput
             v-model="formData.taxId"
             label="CPF"
             required
             placeholder="000.000.000-00"
+            autocomplete="off"
             @input="formatCPF"
           />
         </div>
@@ -203,6 +206,13 @@
         </div>
       </form>
     </div>
+
+    <BaseToast
+      :show="showToast"
+      :type="toastType"
+      :message="toastMessage"
+      @close="showToast = false"
+    />
   </BaseModal>
 </template>
 
@@ -220,6 +230,11 @@ const emit = defineEmits<{
 }>()
 
 const { createDonation, isLoading, error } = useDonations()
+
+// Toast state
+const showToast = ref(false)
+const toastType = ref<'success' | 'error' | 'info'>('success')
+const toastMessage = ref('')
 
 // State
 const selectedAmount = ref(2500) // R$ 25 default
@@ -333,8 +348,18 @@ const handleSubmit = async () => {
   const result = await createDonation(donationData)
 
   if (result?.url) {
-    // Redirecionar para a URL de pagamento
-    window.location.href = result.url
+    toastType.value = 'success'
+    toastMessage.value = 'Redirecionando para o pagamento...'
+    showToast.value = true
+    
+    // Aguardar um pouco antes de redirecionar para o usuário ver o toast
+    setTimeout(() => {
+      window.location.href = result.url
+    }, 1000)
+  } else if (error.value) {
+    toastType.value = 'error'
+    toastMessage.value = error.value
+    showToast.value = true
   }
 }
 

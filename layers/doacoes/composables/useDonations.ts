@@ -9,12 +9,12 @@ export const useDonations = () => {
     error.value = null
 
     try {
-      const response = await $fetch<DonationBillingResponse>('/api/donations/create', {
+      const response = await $fetch<{ data: DonationBillingResponse }>('/api/donations/create', {
         method: 'POST',
         body: data
       })
 
-      return response
+      return response.data
     } catch (err: any) {
       console.error('Erro ao criar doação:', err)
       error.value = err?.data?.message || 'Erro ao processar doação. Tente novamente.'
