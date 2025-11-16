@@ -197,6 +197,9 @@ export default defineNuxtConfig({
     telegramBotToken: process.env.TELEGRAM_BOT_TOKEN,
     telegramChatId: process.env.TELEGRAM_CHAT_ID,
     abacatepayApiKey: process.env.ABACATEPAY_API_KEY,
+    evolutionApiUrl: process.env.EVOLUTION_API_URL,
+    evolutionApiKey: process.env.EVOLUTION_API_KEY,
+    evolutionInstanceName: process.env.EVOLUTION_INSTANCE_NAME,
 
     public: {
       supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL,

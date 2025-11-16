@@ -114,14 +114,20 @@
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                 <button
-                  @click="editPerson(person)"
+                  class="text-blue-600 hover:text-blue-900 mr-4"
+                  @click="navigateTo(`/liturgia/pessoas/${person.id}/escalas`)"
+                >
+                  Ver Escalas
+                </button>
+                <button
                   class="text-purple-600 hover:text-purple-900 mr-4"
+                  @click="editPerson(person)"
                 >
                   Editar
                 </button>
                 <button
-                  @click="confirmDelete(person)"
                   class="text-red-600 hover:text-red-900"
+                  @click="confirmDelete(person)"
                 >
                   Excluir
                 </button>
