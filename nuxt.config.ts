@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     './layers/glossario',
     './layers/dashboard',
     './layers/admin',
-    './layers/doacoes'
+    './layers/doacoes',
+    './layers/liturgia'
   ],
 
   typescript: {
