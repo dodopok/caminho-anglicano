@@ -101,7 +101,7 @@
               <div class="flex gap-2">
                 <div
                   class="w-10 h-10 rounded border border-gray-300"
-                  :class="getLiturgicalColorClass(formData.liturgical_color || 'Verde')"
+                  :class="getLiturgicalColorClass((formData.liturgical_color || 'Verde') as LiturgicalColor)"
                 />
                 <input
                   v-model="formData.liturgical_color"
@@ -301,8 +301,8 @@
 </template>
 
 <script setup lang="ts">
-import type { LiturgyMinistry, LiturgyPerson, LiturgyServiceType, ServiceFormData } from '../types'
-import { getLiturgicalInfo, getLiturgicalColorClass } from '../utils/liturgical-calendar'
+import type { LiturgyMinistry, LiturgyPerson, LiturgyServiceType, ServiceFormData, LiturgicalColor } from '../../types'
+import { getLiturgicalInfo, getLiturgicalColorClass } from '../../utils/liturgical-calendar'
 
 const route = useRoute()
 const { createService } = useLiturgyServices()

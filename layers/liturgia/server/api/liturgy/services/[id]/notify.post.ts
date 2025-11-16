@@ -1,10 +1,13 @@
-import { serverSupabaseClient } from '#supabase/server'
+import { createClient } from '@supabase/supabase-js'
 import { sendWhatsAppBulk } from '../../../../utils/whatsapp'
 
 export default defineEventHandler(async (event) => {
-  const client = await serverSupabaseClient(event)
-  const id = getRouterParam(event, 'id')
   const config = useRuntimeConfig()
+  const client = createClient(
+    config.public.supabaseUrl as string,
+    config.supabaseServiceKey as string
+  )
+  const id = getRouterParam(event, 'id')
 
   // Get service with schedules and people
   const { data: service, error } = await client

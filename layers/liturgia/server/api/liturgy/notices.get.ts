@@ -1,7 +1,11 @@
-import { serverSupabaseClient } from '#supabase/server'
+import { createClient } from '@supabase/supabase-js'
 
 export default defineEventHandler(async (event) => {
-  const client = await serverSupabaseClient(event)
+  const config = useRuntimeConfig()
+  const client = createClient(
+    config.public.supabaseUrl as string,
+    config.supabaseServiceKey as string
+  )
   const query = getQuery(event)
 
   let queryBuilder = client

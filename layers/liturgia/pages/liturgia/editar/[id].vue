@@ -305,8 +305,8 @@
 </template>
 
 <script setup lang="ts">
-import type { LiturgyMinistry, LiturgyPerson, LiturgyService, LiturgyServiceType } from '../../types'
-import { getLiturgicalInfo } from '../../utils/liturgical-calendar'
+import type { LiturgyMinistry, LiturgyPerson, LiturgyService, LiturgyServiceType } from '../../../types'
+import { getLiturgicalInfo } from '../../../utils/liturgical-calendar'
 
 const route = useRoute()
 const serviceId = route.params.id as string

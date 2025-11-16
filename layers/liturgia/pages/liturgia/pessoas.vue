@@ -155,7 +155,7 @@
 </template>
 
 <script setup lang="ts">
-import type { LiturgyPerson } from '../types'
+import type { LiturgyPerson } from '../../types'
 
 const { people, fetchPeople, deletePerson } = useLiturgyPeople()
 

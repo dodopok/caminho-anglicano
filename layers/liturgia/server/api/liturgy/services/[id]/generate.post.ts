@@ -1,8 +1,12 @@
-import { serverSupabaseClient } from '#supabase/server'
-import { generateLiturgyHTML } from '../../../../utils/generate-liturgy-document'
+import { createClient } from '@supabase/supabase-js'
+import { generateLiturgyHTML } from '../../../../../utils/generate-liturgy-document'
 
 export default defineEventHandler(async (event) => {
-  const client = await serverSupabaseClient(event)
+  const config = useRuntimeConfig()
+  const client = createClient(
+    config.public.supabaseUrl as string,
+    config.supabaseServiceKey as string
+  )
   const id = getRouterParam(event, 'id')
   const body = await readBody(event)
 

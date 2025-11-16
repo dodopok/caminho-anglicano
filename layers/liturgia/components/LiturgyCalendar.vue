@@ -41,7 +41,7 @@
           <div
             v-if="day.service.liturgical_color"
             class="h-2 rounded-full"
-            :style="{ backgroundColor: getLiturgicalColorHex(day.service.liturgical_color) }"
+            :style="{ backgroundColor: getLiturgicalColorHex(day.service.liturgical_color as LiturgicalColor) }"
             :title="day.service.liturgical_color"
           />
 
@@ -97,7 +97,7 @@
 </template>
 
 <script setup lang="ts">
-import type { LiturgyService, MonthCalendarDay } from '../types'
+import type { LiturgyService, MonthCalendarDay, LiturgicalColor } from '../types'
 import { getLiturgicalColorHex } from '../utils/liturgical-calendar'
 
 interface Props {

@@ -181,7 +181,7 @@
 </template>
 
 <script setup lang="ts">
-import type { LiturgyPerson, LiturgySchedule } from '../../../types'
+import type { LiturgyPerson, LiturgySchedule } from '../../../../types'
 
 const route = useRoute()
 const personId = route.params.id as string

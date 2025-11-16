@@ -77,7 +77,7 @@
             <div class="flex items-center gap-2">
               <div
                 class="w-6 h-6 rounded border border-gray-300"
-                :class="getLiturgicalColorClass(service.liturgical_color || 'Verde')"
+                :class="getLiturgicalColorClass((service.liturgical_color || 'Verde') as LiturgicalColor)"
               />
               <p class="text-lg font-semibold text-gray-900">{{ service.liturgical_color }}</p>
             </div>
@@ -213,8 +213,8 @@
 </template>
 
 <script setup lang="ts">
-import type { LiturgyService } from '../types'
-import { getLiturgicalColorClass } from '../utils/liturgical-calendar'
+import type { LiturgyService, LiturgicalColor } from '../../types'
+import { getLiturgicalColorClass } from '../../utils/liturgical-calendar'
 
 const route = useRoute()
 const { sendNotifications } = useLiturgyServices()
