@@ -18,14 +18,37 @@ export function useAdminAuth() {
     loading.value = true
 
     try {
-      const { data } = await supabase.auth.getSession()
+      const { data, error } = await supabase.auth.getSession()
+
+      // If there's an error getting the session, the token is invalid
+      if (error) {
+        console.warn('Invalid session detected, clearing auth:', error)
+        await supabase.auth.signOut()
+        user.value = null
+        return
+      }
 
       if (data.session) {
+        // Verify the session is actually valid by checking the user
+        const { data: userData, error: userError } = await supabase.auth.getUser()
+
+        if (userError || !userData.user) {
+          console.warn('Session token is invalid, clearing auth')
+          await supabase.auth.signOut()
+          user.value = null
+          return
+        }
+
         user.value = data.session.user
+      }
+      else {
+        user.value = null
       }
     }
     catch (error) {
       console.error('Error initializing auth:', error)
+      // Clear any invalid session
+      await supabase.auth.signOut()
       user.value = null
     }
     finally {
