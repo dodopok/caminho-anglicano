@@ -68,13 +68,22 @@ const pastors = ref<string[]>([])
 // Initialize from props
 watch(() => props.modelValue, (newValue) => {
   if (newValue && Array.isArray(newValue)) {
-    pastors.value = [...newValue]
+    // Only update if the values are actually different
+    const isDifferent = newValue.length !== pastors.value.length ||
+      newValue.some((val, idx) => val !== pastors.value[idx])
+
+    if (isDifferent) {
+      pastors.value = [...newValue]
+    }
+  }
+  else if (!newValue || newValue.length === 0) {
+    pastors.value = []
   }
 }, { immediate: true })
 
 // Emit changes
 watch(pastors, (newValue) => {
-  emit('update:modelValue', newValue)
+  emit('update:modelValue', [...newValue])
 }, { deep: true })
 
 function addPastor() {

@@ -75,13 +75,25 @@ const schedules = ref<Schedule[]>([])
 // Initialize from props
 watch(() => props.modelValue, (newValue) => {
   if (newValue && Array.isArray(newValue)) {
-    schedules.value = [...newValue]
+    // Only update if the values are actually different
+    const isDifferent = newValue.length !== schedules.value.length ||
+      newValue.some((val, idx) =>
+        val.day !== schedules.value[idx]?.day ||
+        val.time !== schedules.value[idx]?.time
+      )
+
+    if (isDifferent) {
+      schedules.value = [...newValue]
+    }
+  }
+  else if (!newValue || newValue.length === 0) {
+    schedules.value = []
   }
 }, { immediate: true })
 
 // Emit changes
 watch(schedules, (newValue) => {
-  emit('update:modelValue', newValue)
+  emit('update:modelValue', [...newValue])
 }, { deep: true })
 
 function addSchedule() {
