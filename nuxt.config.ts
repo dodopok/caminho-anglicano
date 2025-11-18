@@ -114,7 +114,43 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: '/',
-      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+      // Apenas arquivos essenciais no precache (app shell)
+      globPatterns: ['**/*.{js,css,png,svg,ico}'],
+      // Não incluir HTML gerado estaticamente no precache
+      globIgnores: ['**/*.html'],
+      // Estratégias de cache por tipo de recurso
+      runtimeCaching: [
+        {
+          // Páginas HTML: Network First (prioriza rede, fallback para cache)
+          urlPattern: /^https?:\/\/[^/]+\/.*/i,
+          handler: 'NetworkFirst',
+          options: {
+            cacheName: 'pages-cache',
+            expiration: {
+              maxEntries: 50, // Limita a 50 páginas em cache
+              maxAgeSeconds: 30 * 24 * 60 * 60 // 30 dias
+            },
+            networkTimeoutSeconds: 3 // Se rede demorar >3s, usa cache
+          }
+        },
+        {
+          // Assets estáticos: Cache First (rápido, atualiza em background)
+          urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp|ico)$/i,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'images-cache',
+            expiration: {
+              maxEntries: 60,
+              maxAgeSeconds: 60 * 24 * 60 * 60 // 60 dias
+            }
+          }
+        },
+        {
+          // APIs do Supabase: Network Only (sempre busca dados frescos)
+          urlPattern: /^https:\/\/.*\.supabase\.co\/.*/i,
+          handler: 'NetworkOnly'
+        }
+      ]
     },
     client: {
       installPrompt: true,
