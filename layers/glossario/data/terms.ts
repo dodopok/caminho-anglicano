@@ -4146,5 +4146,17 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Edmund Knox Sherrill',
     definition: 'Bispo missionário americano da Igreja Episcopal que serviu no Brasil de 1959 a 1984. Filho do Bispo Primaz Henry Knox Sherrill, foi consagrado bispo em 25 de janeiro de 1959 no Rio de Janeiro, com seu pai como consagrante principal. Serviu inicialmente na Diocese Central (Rio de Janeiro) e foi pioneiro do trabalho anglicano no Nordeste, transferindo o Rev. Alfredo Rocha Fonseca para Recife em 1968 para administrar a Paróquia da Santíssima Trindade. Em junho de 1975, tornou-se o primeiro bispo da Diocese Setentrional (depois Diocese do Recife), instalada em 1976, onde a Paróquia da Trindade foi elevada a catedral. Foi sucedido por Dom Clóvis Erli Rodrigues. Faleceu em 2016.',
     relatedTerms: ['Diocese do Recife', 'IEAB', 'Bispo Missionário', 'Clóvis Erli Rodrigues']
+  },
+  {
+    id: 'yasoji-ito',
+    term: 'João Yasoji Ito',
+    definition: 'João Yasoji Ito foi um sacerdote e missionário dedicado da Igreja Episcopal Anglicana do Brasil (IEAB). Ele nasceu em 1899 e faleceu em 1969. Ito desempenhou um papel significativo na expansão do anglicanismo no Brasil, especialmente entre as comunidades nipônicas. Sua missão envolveu a tradução de textos religiosos para o japonês e o estabelecimento de igrejas e escolas para atender às necessidades espirituais e educacionais dos imigrantes japoneses no Brasil. Seu trabalho contribuiu para fortalecer os laços entre a IEAB e a comunidade japonesa, promovendo a fé cristã em um contexto multicultural.',
+    relatedTerms: ['IEAB', 'Missionário', 'Nipônico']
+  },
+  {
+    id: 'manipulo',
+    term: 'Manípulo',
+    definition: 'Manípulo é um veste litúrgica usada principalmente por alguns anglo-católicos. É uma faixa bordada com três cruzes, confeccionada de seda, ou de tecido semelhante, que é usada pendurada no braço esquerdo. É da mesma cor litúrgica como os outros paramentos.',
+    relatedTerms: ['Veste', 'Liturgia', 'Anglo-Católicos']
   }
 ]
