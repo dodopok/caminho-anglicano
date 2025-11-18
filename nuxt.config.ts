@@ -160,6 +160,19 @@ export default defineNuxtConfig({
     }
   },
 
+  // Configuração de prefetching mais conservadora
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        prefetch: false, // Desabilita prefetch por padrão
+        prefetchOn: {
+          visibility: false, // Não prefetch quando visível
+          interaction: true  // Apenas prefetch no hover/focus
+        }
+      }
+    }
+  },
+
   app: {
     head: {
       htmlAttrs: {

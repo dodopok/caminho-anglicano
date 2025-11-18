@@ -8,6 +8,7 @@
       <NuxtLink
         :to="`/glossario/${term.id}`"
         class="block group flex-shrink-0"
+        :prefetch="false"
       >
         <h3 class="text-lg font-semibold text-slate-900 mb-2 group-hover:text-amber-700 transition-colors">
           {{ term.term }}
