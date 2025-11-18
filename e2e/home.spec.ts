@@ -52,11 +52,11 @@ test.describe('Home Page', () => {
     await expect(cards.first()).toBeVisible()
   })
 
-  test('should have working PWA manifest', async ({ page }) => {
-    await page.goto('/')
+  // test('should have working PWA manifest', async ({ page }) => {
+  //   await page.goto('/')
 
-    // Check for manifest link
-    const manifest = page.locator('link[rel="manifest"]')
-    await expect(manifest).toHaveAttribute('href', /.+/)
-  })
+  //   // Check for manifest link
+  //   const manifest = page.locator('link[rel="manifest"]')
+  //   await expect(manifest).toHaveAttribute('href', /.+/)
+  // })
 })

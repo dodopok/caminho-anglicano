@@ -1,5 +1,4 @@
 <template>
-  <NuxtPwaManifest />
   <Analytics />
   <div class="min-h-screen flex flex-col">
     <NuxtPage />
@@ -8,6 +7,15 @@
 
 <script setup lang="ts">
 import { Analytics } from '@vercel/analytics/vue';
+
+if (import.meta.client && 'serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then((registrations) => {
+    for (const registration of registrations) {
+      registration.unregister()
+      console.log('Service worker desregistrado')
+    }
+  })
+}
 
 useHead({
   script: [

@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     typeCheck: true
   },
 
-  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@vite-pwa/nuxt'],
+  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxtjs/sitemap'],
 
   // Configuração do Tailwind
   tailwindcss: {
@@ -80,98 +80,6 @@ export default defineNuxtConfig({
     }
   },
 
-  // Configuração do PWA
-  pwa: {
-    registerType: 'autoUpdate',
-    manifest: {
-      name: 'Caminho Anglicano',
-      short_name: 'Caminho Anglicano',
-      description: 'Guia completo sobre o anglicanismo no Brasil',
-      theme_color: '#8B4513',
-      background_color: '#ffffff',
-      display: 'standalone',
-      start_url: '/',
-      icons: [
-        {
-          src: '/android-chrome-192x192.png',
-          sizes: '192x192',
-          type: 'image/png',
-          purpose: 'any'
-        },
-        {
-          src: '/android-chrome-512x512.png',
-          sizes: '512x512',
-          type: 'image/png',
-          purpose: 'any'
-        },
-        {
-          src: '/android-chrome-512x512.png',
-          sizes: '512x512',
-          type: 'image/png',
-          purpose: 'any maskable'
-        }
-      ]
-    },
-    workbox: {
-      navigateFallback: '/',
-      // Apenas arquivos essenciais no precache (app shell)
-      globPatterns: ['**/*.{js,css,png,svg,ico}'],
-      // Não incluir HTML gerado estaticamente no precache
-      globIgnores: ['**/*.html'],
-      // Estratégias de cache por tipo de recurso
-      runtimeCaching: [
-        {
-          // Páginas HTML: Network First (prioriza rede, fallback para cache)
-          urlPattern: /^https?:\/\/[^/]+\/.*/i,
-          handler: 'NetworkFirst',
-          options: {
-            cacheName: 'pages-cache',
-            expiration: {
-              maxEntries: 50, // Limita a 50 páginas em cache
-              maxAgeSeconds: 30 * 24 * 60 * 60 // 30 dias
-            },
-            networkTimeoutSeconds: 3 // Se rede demorar >3s, usa cache
-          }
-        },
-        {
-          // Assets estáticos: Cache First (rápido, atualiza em background)
-          urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp|ico)$/i,
-          handler: 'CacheFirst',
-          options: {
-            cacheName: 'images-cache',
-            expiration: {
-              maxEntries: 60,
-              maxAgeSeconds: 60 * 24 * 60 * 60 // 60 dias
-            }
-          }
-        },
-        {
-          // APIs do Supabase: Network Only (sempre busca dados frescos)
-          urlPattern: /^https:\/\/.*\.supabase\.co\/.*/i,
-          handler: 'NetworkOnly'
-        }
-      ]
-    },
-    client: {
-      installPrompt: true,
-    },
-    devOptions: {
-      enabled: true
-    }
-  },
-
-  // Configuração de prefetching mais conservadora
-  experimental: {
-    defaults: {
-      nuxtLink: {
-        prefetch: false, // Desabilita prefetch por padrão
-        prefetchOn: {
-          visibility: false, // Não prefetch quando visível
-          interaction: true  // Apenas prefetch no hover/focus
-        }
-      }
-    }
-  },
 
   app: {
     head: {
