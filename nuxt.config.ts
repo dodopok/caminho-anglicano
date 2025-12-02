@@ -122,6 +122,15 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       routes: ['/glossario']
+    },
+    routeRules: {
+      '/locs/**': {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type'
+        }
+      }
     }
   },
 
