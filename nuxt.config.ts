@@ -97,11 +97,15 @@ export default defineNuxtConfig({
         { name: 'apple-mobile-web-app-title', content: 'Caminho Anglicano' }
       ],
       link: [
-        // Favicon
+        // Favicon - Google Search requer mínimo 48x48
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/png', sizes: '48x48', href: '/favicon-48x48.png' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/android-chrome-192x192.png' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        // Web App Manifest
+        { rel: 'manifest', href: '/site.webmanifest' },
         // Preconnect para Google Fonts
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
