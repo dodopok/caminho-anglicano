@@ -4,9 +4,15 @@
  */
 export default defineEventHandler((event) => {
   const headers = event.node.res
+  const url = event.node.req.url || ''
 
-  // Prevent clickjacking attacks
-  headers.setHeader('X-Frame-Options', 'SAMEORIGIN')
+  // Allow widget pages to be embedded in iframes
+  if (url.startsWith('/widget/')) {
+    // Skip X-Frame-Options for widget routes
+  } else {
+    // Prevent clickjacking attacks for non-widget routes
+    headers.setHeader('X-Frame-Options', 'SAMEORIGIN')
+  }
 
   // Prevent MIME type sniffing
   headers.setHeader('X-Content-Type-Options', 'nosniff')
@@ -39,11 +45,12 @@ export default defineEventHandler((event) => {
     "img-src 'self' data: https: blob:",
     "font-src 'self' data: https://fonts.gstatic.com",
     "connect-src 'self' https://maps.googleapis.com https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://vercel.live https://va.vercel-scripts.com",
-    "frame-src 'self' https://www.google.com https://www.instagram.com",
+    "frame-src 'self' http://localhost:3000 https://caminhoanglicano.com.br https://www.google.com https://www.instagram.com",
     "object-src 'none'",
     "base-uri 'self'",
     "form-action 'self'",
-    "frame-ancestors 'self'",
+    // Allow widget pages to be embedded anywhere
+    url.startsWith('/widget/') ? "frame-ancestors *" : "frame-ancestors 'self'",
     'upgrade-insecure-requests',
   ]
 

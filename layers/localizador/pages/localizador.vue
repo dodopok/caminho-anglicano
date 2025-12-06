@@ -74,6 +74,7 @@ const isAddChurchModalOpen = ref(false)
 const isAddBulkModalOpen = ref(false)
 const isSidebarOpen = ref(false)
 const isFeedbackModalOpen = ref(false)
+const isWidgetCodeModalOpen = ref(false)
 
 const showToast = ref(false)
 const toastType = ref<'error' | 'info'>('error')
@@ -439,16 +440,28 @@ onMounted(async () => {
         </div>
 
         <!-- Results Header -->
-        <div class="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
-          <span class="text-sm text-gray-600">
-            {{ churches.length }} igrejas cadastradas
-          </span>
+        <div class="px-4 py-3 border-b border-gray-200">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-sm text-gray-600">
+              {{ churches.length }} igrejas cadastradas
+            </span>
+            <button
+              type="button"
+              class="px-3 py-1.5 text-sm text-white bg-indigo-600 hover:bg-indigo-700 rounded transition-colors"
+              @click="isAddChurchTypeModalOpen = true"
+            >
+              + Adicionar
+            </button>
+          </div>
           <button
             type="button"
-            class="px-3 py-1.5 text-sm text-white bg-indigo-600 hover:bg-indigo-700 rounded transition-colors"
-            @click="isAddChurchTypeModalOpen = true"
+            class="w-full px-3 py-1.5 text-sm text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded transition-colors flex items-center justify-center gap-2"
+            @click="isWidgetCodeModalOpen = true"
           >
-            + Adicionar
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+            Adicione o mapa em seu site
           </button>
         </div>
 
@@ -595,6 +608,12 @@ onMounted(async () => {
       :is-open="isFeedbackModalOpen"
       @close="isFeedbackModalOpen = false"
       @success="() => {}"
+    />
+
+    <WidgetCodeModal
+      :is-open="isWidgetCodeModalOpen"
+      :jurisdictions="jurisdictions as any"
+      @close="isWidgetCodeModalOpen = false"
     />
 
     <BaseToast
