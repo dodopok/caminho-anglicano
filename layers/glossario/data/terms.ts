@@ -722,6 +722,12 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ['Hino', 'Louvor', 'Ação de Graças']
   },
   {
+    id: 'temporas',
+    term: 'Têmporas',
+    definition: 'Dias tradicionais de jejum e oração observados quatro vezes ao ano, nas quartas, sextas e sábados próximos ao início de cada estação. No calendário anglicano, ocorrem após o Dia de Santa Luzia (13 de dezembro), após a Quarta-feira de Cinzas, após o Dia de Pentecostes e após o Dia da Santa Cruz (14 de setembro). Originadas na Igreja primitiva romana, as Têmporas eram ocasiões para ordenações e para consagrar as estações do ano a Deus, pedindo sua bênção sobre o trabalho e os frutos de cada período.',
+    relatedTerms: ['Jejum', 'Dias de Rogação', 'Ano Litúrgico', 'Ordenação', 'Livro de Oração Comum']
+  },
+  {
     id: 'tempo-comum',
     term: 'Tempo Comum',
     definition: 'Períodos do ano litúrgico que não fazem parte das estações especiais (ciclos de Natal-Epifania ou Quaresma-Páscoa-Pentecostes), enfatizando o crescimento na vida cristã.',
@@ -2976,6 +2982,12 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: 'Dia de todos os Santos',
     definition: 'Uma das sete festas principais do Ano Cristão. Ela é observada em 1º de novembro ou, se preferir, no domingo seguinte. Ela é uma das quatro datas recomendadas para a administração do Santo Batismo, sendo as outras, a Páscoa, Pentecostes e o primeiro domingo depois da Epifania – a festa do Batismo de Nosso Senhor Jesus Cristo.',
     relatedTerms: ['Santos', 'Ano Litúrgico', 'Batismo']
+  },
+  {
+    id: 'dias-de-rogacao',
+    term: 'Dias de Rogação',
+    definition: 'Dias tradicionais de oração e jejum observados na segunda-feira, terça-feira e quarta-feira antes do Dia da Ascensão. Originados no século V na Gália, foram estabelecidos para pedir a bênção de Deus sobre as colheitas e o trabalho humano. No Livro de Oração Comum, são dias de especial devoção com orações próprias, pedindo proteção contra calamidades, bênçãos sobre os frutos da terra e graça para usar os dons da criação com gratidão e para a glória de Deus.',
+    relatedTerms: ['Ascensão', 'Jejum', 'Têmporas', 'Ano Litúrgico', 'Livro de Oração Comum']
   },
   {
     id: 'dom-autoridade',
