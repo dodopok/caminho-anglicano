@@ -425,8 +425,23 @@ async function handleExport() {
       throw new Error('Não autenticado')
     }
 
-    // Fetch the CSV file
-    const response = await fetch('/api/admin/churches/export', {
+    // Build URL with current filters
+    const params = new URLSearchParams()
+    if (searchQuery.value) {
+      params.set('search', searchQuery.value)
+    }
+    if (jurisdictionFilter.value) {
+      params.set('jurisdiction_id', jurisdictionFilter.value)
+    }
+    if (stateFilter.value) {
+      params.set('state', stateFilter.value)
+    }
+
+    const queryString = params.toString()
+    const url = `/api/admin/churches/export${queryString ? `?${queryString}` : ''}`
+
+    // Fetch the CSV file with filters
+    const response = await fetch(url, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

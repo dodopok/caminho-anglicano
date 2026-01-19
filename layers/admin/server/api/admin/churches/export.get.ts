@@ -14,6 +14,7 @@ export default defineEventHandler(async (event) => {
   await requireAdmin(event)
 
   const config = useRuntimeConfig()
+  const query = getQuery(event)
 
   // Create Supabase client
   const supabase = createClient<Database>(
@@ -22,14 +23,29 @@ export default defineEventHandler(async (event) => {
   )
 
   try {
-    // Fetch all churches with jurisdiction info
-    const { data: churches, error } = await supabase
+    // Build query with filters
+    let queryBuilder = supabase
       .from('churches')
       .select(`
         *,
         jurisdiction:jurisdictions(name, slug)
       `)
       .order('name', { ascending: true })
+
+    // Apply filters (same as index.get.ts)
+    if (query.jurisdiction_id) {
+      queryBuilder = queryBuilder.eq('jurisdiction_id', query.jurisdiction_id as string)
+    }
+
+    if (query.search) {
+      queryBuilder = queryBuilder.ilike('name', `%${query.search}%`)
+    }
+
+    if (query.state) {
+      queryBuilder = queryBuilder.eq('state', query.state as string)
+    }
+
+    const { data: churches, error } = await queryBuilder
 
     if (error) {
       throw error
