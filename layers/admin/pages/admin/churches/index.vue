@@ -455,13 +455,13 @@ async function handleExport() {
     const blob = await response.blob()
 
     // Create download link
-    const url = window.URL.createObjectURL(blob)
+    const blobUrl = window.URL.createObjectURL(blob)
     const a = document.createElement('a')
-    a.href = url
+    a.href = blobUrl
     a.download = `igrejas-${new Date().toISOString().split('T')[0]}.csv`
     document.body.appendChild(a)
     a.click()
-    window.URL.revokeObjectURL(url)
+    window.URL.revokeObjectURL(blobUrl)
     document.body.removeChild(a)
   }
   catch (error: unknown) {
