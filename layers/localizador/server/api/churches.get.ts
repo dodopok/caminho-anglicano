@@ -22,6 +22,12 @@ export default defineEventHandler(async (event) => {
       `)
       .order('name')
 
+    // Aplicar filtro por IDs se fornecido
+    if (query.ids) {
+      const ids = (query.ids as string).split(',')
+      queryBuilder = queryBuilder.in('id', ids)
+    }
+
     // Aplicar filtro de busca se fornecido
     if (query.search) {
       const searchTerm = query.search as string

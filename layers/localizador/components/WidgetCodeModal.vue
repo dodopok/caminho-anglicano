@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Jurisdiction } from '../types/church'
+import type { Jurisdiction, Church } from '../types/church'
 
 interface Props {
   isOpen: boolean
@@ -11,7 +11,11 @@ const emit = defineEmits<{
   close: []
 }>()
 
+const selectionMode = ref<'jurisdiction' | 'churches'>('jurisdiction')
 const selectedJurisdictionId = ref<string>('')
+const selectedChurches = ref<Church[]>([])
+const isChurchModalOpen = ref(false)
+
 const widgetWidth = ref('100%')
 const widgetHeight = ref('600')
 const copiedToClipboard = ref(false)
@@ -25,16 +29,18 @@ const siteUrl = computed(() => {
 })
 
 const selectedJurisdiction = computed(() => {
-  if (!selectedJurisdictionId.value) return null
+  if (selectionMode.value !== 'jurisdiction' || !selectedJurisdictionId.value) return null
   return props.jurisdictions.find(j => j.id === selectedJurisdictionId.value)
 })
 
 const widgetUrl = computed(() => {
-  // Use friendly URL with jurisdiction slug
   let path = '/widget'
   
-  if (selectedJurisdiction.value) {
+  if (selectionMode.value === 'jurisdiction' && selectedJurisdiction.value) {
     path += `/${selectedJurisdiction.value.slug}`
+  } else if (selectionMode.value === 'churches' && selectedChurches.value.length > 0) {
+    const ids = selectedChurches.value.map(c => c.id).join(',')
+    path += `?ids=${ids}`
   }
   
   return `${siteUrl.value}${path}`
@@ -63,11 +69,17 @@ function handleClose() {
   emit('close')
   // Reset form after a delay to allow modal transition
   setTimeout(() => {
+    selectionMode.value = 'jurisdiction'
     selectedJurisdictionId.value = ''
+    selectedChurches.value = []
     widgetWidth.value = '100%'
     widgetHeight.value = '600'
     copiedToClipboard.value = false
   }, 300)
+}
+
+function handleChurchesConfirm(churches: Church[]) {
+  selectedChurches.value = churches
 }
 
 // Validate height input
@@ -102,16 +114,60 @@ function validateHeight() {
               Widget de Mapa Interativo
             </h3>
             <p class="text-sm text-blue-800">
-              Adicione o mapa de igrejas anglicanas ao seu site. Você pode filtrar por jurisdição e personalizar as dimensões do mapa.
+              Adicione o mapa de igrejas anglicanas ao seu site. Escolha mostrar uma jurisdição inteira ou selecione igrejas específicas.
             </p>
           </div>
         </div>
       </div>
 
       <!-- Configuration Form -->
-      <div class="space-y-4">
-        <!-- Jurisdiction Selection -->
+      <div class="space-y-6">
+        <!-- Selection Mode -->
         <div>
+          <label class="block text-sm font-medium text-gray-700 mb-3">
+            O que você deseja mostrar no mapa?
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <button
+              type="button"
+              class="flex items-center gap-3 p-3 border rounded-lg transition-all text-left"
+              :class="selectionMode === 'jurisdiction' ? 'border-indigo-600 bg-indigo-50 ring-1 ring-indigo-600' : 'border-gray-200 hover:border-gray-300'"
+              @click="selectionMode = 'jurisdiction'"
+            >
+              <div 
+                class="w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0"
+                :class="selectionMode === 'jurisdiction' ? 'border-indigo-600' : 'border-gray-300'"
+              >
+                <div v-if="selectionMode === 'jurisdiction'" class="w-2.5 h-2.5 bg-indigo-600 rounded-full"></div>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-gray-900">Por Jurisdição</p>
+                <p class="text-xs text-gray-500">Mostra todas as igrejas de uma jurisdição específica</p>
+              </div>
+            </button>
+
+            <button
+              type="button"
+              class="flex items-center gap-3 p-3 border rounded-lg transition-all text-left"
+              :class="selectionMode === 'churches' ? 'border-indigo-600 bg-indigo-50 ring-1 ring-indigo-600' : 'border-gray-200 hover:border-gray-300'"
+              @click="selectionMode = 'churches'"
+            >
+              <div 
+                class="w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0"
+                :class="selectionMode === 'churches' ? 'border-indigo-600' : 'border-gray-300'"
+              >
+                <div v-if="selectionMode === 'churches'" class="w-2.5 h-2.5 bg-indigo-600 rounded-full"></div>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-gray-900">Igrejas Específicas</p>
+                <p class="text-xs text-gray-500">Escolha manualmente quais igrejas exibir</p>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Jurisdiction Selection -->
+        <div v-if="selectionMode === 'jurisdiction'" class="animate-in fade-in slide-in-from-top-2 duration-200">
           <label for="widget-jurisdiction" class="block text-sm font-medium text-gray-700 mb-2">
             Jurisdição (opcional)
           </label>
@@ -134,6 +190,44 @@ function validateHeight() {
           <p class="mt-1 text-xs text-gray-500">
             Selecione uma jurisdição para mostrar apenas suas igrejas no mapa
           </p>
+        </div>
+
+        <!-- Specific Churches Selection -->
+        <div v-else class="animate-in fade-in slide-in-from-top-2 duration-200">
+          <label class="block text-sm font-medium text-gray-700 mb-2">
+            Igrejas Selecionadas
+          </label>
+          <div class="flex flex-wrap gap-2 mb-3">
+            <div 
+              v-for="church in selectedChurches" 
+              :key="church.id"
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium"
+            >
+              {{ church.name }}
+              <button 
+                type="button" 
+                class="hover:text-indigo-900"
+                @click="selectedChurches = selectedChurches.filter(c => c.id !== church.id)"
+              >
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div v-if="selectedChurches.length === 0" class="text-sm text-gray-500 italic py-1">
+              Nenhuma igreja selecionada. Clique no botão abaixo para escolher.
+            </div>
+          </div>
+          <button
+            type="button"
+            class="flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors"
+            @click="isChurchModalOpen = true"
+          >
+            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+            Selecionar Igrejas
+          </button>
         </div>
 
         <!-- Dimensions -->
@@ -183,8 +277,11 @@ function validateHeight() {
           <label class="block text-sm font-medium text-gray-700">
             Preview
           </label>
-          <span v-if="selectedJurisdiction" class="text-xs text-gray-500">
+          <span v-if="selectionMode === 'jurisdiction' && selectedJurisdiction" class="text-xs text-gray-500">
             Mostrando: {{ selectedJurisdiction.name }}
+          </span>
+          <span v-else-if="selectionMode === 'churches' && selectedChurches.length > 0" class="text-xs text-gray-500">
+            Mostrando {{ selectedChurches.length }} igrejas selecionadas
           </span>
         </div>
         <div class="border border-gray-300 rounded-lg overflow-hidden bg-gray-50" style="height: 300px;">
@@ -224,19 +321,6 @@ function validateHeight() {
           Cole este código no HTML do seu site onde deseja que o mapa apareça.
         </p>
       </div>
-
-      <!-- Instructions -->
-      <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
-        <h4 class="text-sm font-semibold text-gray-900 mb-2">
-          Como usar:
-        </h4>
-        <ol class="text-sm text-gray-700 space-y-1 list-decimal list-inside">
-          <li>Configure a jurisdição e dimensões desejadas</li>
-          <li>Copie o código HTML gerado acima</li>
-          <li>Cole o código no HTML do seu site</li>
-          <li>O mapa será exibido automaticamente!</li>
-        </ol>
-      </div>
     </div>
 
     <template #footer-actions>
@@ -261,5 +345,14 @@ function validateHeight() {
         {{ copiedToClipboard ? 'Copiado!' : 'Copiar Código' }}
       </button>
     </template>
+
+    <!-- Church Select Modal -->
+    <ChurchSelectModal
+      :is-open="isChurchModalOpen"
+      :jurisdictions="jurisdictions"
+      :initial-selected-ids="selectedChurches.map(c => c.id)"
+      @close="isChurchModalOpen = false"
+      @confirm="handleChurchesConfirm"
+    />
   </BaseModal>
 </template>

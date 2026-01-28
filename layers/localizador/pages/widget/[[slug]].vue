@@ -27,7 +27,8 @@ const jurisdiction = computed(() => {
 const filters = computed<ChurchFilters>(() => ({
   jurisdictionId: jurisdiction.value?.id,
   searchQuery: '',
-  address: ''
+  address: '',
+  ids: route.query.ids ? (route.query.ids as string).split(',') : undefined
 }))
 
 async function loadChurches() {
@@ -100,6 +101,7 @@ useSeoMeta({
           </svg>
           <span class="text-sm text-gray-700">
             <span v-if="jurisdiction" class="font-medium">{{ jurisdiction.name }}</span>
+            <span v-else-if="route.query.ids" class="font-medium">Igrejas selecionadas</span>
             <span v-else class="font-medium">Todas as jurisdições</span>
             <span class="hidden sm:inline"> • {{ filteredChurches.length }} {{ filteredChurches.length === 1 ? 'igreja' : 'igrejas' }}</span>
           </span>

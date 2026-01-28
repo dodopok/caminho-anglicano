@@ -25,6 +25,9 @@ export function useChurches() {
       if (filters?.searchQuery) {
         params.search = filters.searchQuery
       }
+      if (filters?.ids && filters.ids.length > 0) {
+        params.ids = filters.ids.join(',')
+      }
 
       const data = await $fetch<Church[]>('/api/churches', {
         params
