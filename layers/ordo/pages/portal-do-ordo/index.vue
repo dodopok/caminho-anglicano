@@ -135,54 +135,57 @@ const tabs = [
   <div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
     <!-- Header -->
     <nav class="bg-white shadow-sm border-b border-slate-200 sticky top-0 z-10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-          <div class="flex items-center space-x-3">
-            <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
-              <span class="text-white text-xl">📊</span>
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-14 sm:h-16">
+          <div class="flex items-center space-x-2 sm:space-x-3">
+            <div class="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
+              <span class="text-white text-lg sm:text-xl">📊</span>
             </div>
-            <h1 class="text-xl sm:text-2xl font-bold text-slate-800">Portal do Ordo</h1>
+            <h1 class="text-lg sm:text-xl lg:text-2xl font-bold text-slate-800">Portal do Ordo</h1>
           </div>
-          <div class="flex items-center gap-4">
-            <div class="text-right hidden sm:block">
-              <p class="text-sm font-medium text-slate-900">{{ user?.email }}</p>
+          <div class="flex items-center gap-2 sm:gap-4">
+            <div class="text-right hidden md:block">
+              <p class="text-sm font-medium text-slate-900 truncate max-w-[150px]">{{ user?.email }}</p>
               <p class="text-xs text-slate-600">Administrador</p>
             </div>
             <button
               @click="logout"
-              class="text-slate-600 hover:text-slate-900 transition-colors text-sm font-medium"
+              class="text-slate-600 hover:text-slate-900 transition-colors text-xs sm:text-sm font-medium px-2 py-1 sm:px-0"
             >
-              Sair →
+              <span class="hidden sm:inline">Sair →</span>
+              <span class="sm:hidden">🚪</span>
             </button>
           </div>
         </div>
       </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+    <main class="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 py-4 sm:py-6 lg:py-8">
       <!-- Filters -->
-      <div class="bg-gradient-to-r from-white to-blue-50 rounded-xl shadow-md p-4 sm:p-6 border border-blue-100 mb-6">
-        <div class="flex flex-col sm:flex-row gap-4 items-end">
-          <div class="flex-1">
-            <label class="text-sm font-semibold text-slate-700 mb-2 block">Data Início</label>
-            <input
-              v-model="startDate"
-              type="date"
-              class="w-full border-2 border-slate-200 hover:border-slate-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 transition-colors"
-            >
-          </div>
-          <div class="flex-1">
-            <label class="text-sm font-semibold text-slate-700 mb-2 block">Data Fim</label>
-            <input
-              v-model="endDate"
-              type="date"
-              class="w-full border-2 border-slate-200 hover:border-slate-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 transition-colors"
-            >
+      <div class="bg-gradient-to-r from-white to-blue-50 rounded-lg sm:rounded-xl shadow-md p-3 sm:p-4 lg:p-6 border border-blue-100 mb-4 sm:mb-6">
+        <div class="flex flex-col gap-3 sm:gap-4">
+          <div class="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:items-end">
+            <div class="flex-1">
+              <label class="text-xs sm:text-sm font-semibold text-slate-700 mb-1.5 sm:mb-2 block">Início</label>
+              <input
+                v-model="startDate"
+                type="date"
+                class="w-full border-2 border-slate-200 hover:border-slate-300 rounded-lg px-2 sm:px-4 py-1.5 sm:py-2 text-sm focus:outline-none focus:border-blue-500 transition-colors"
+              >
+            </div>
+            <div class="flex-1">
+              <label class="text-xs sm:text-sm font-semibold text-slate-700 mb-1.5 sm:mb-2 block">Fim</label>
+              <input
+                v-model="endDate"
+                type="date"
+                class="w-full border-2 border-slate-200 hover:border-slate-300 rounded-lg px-2 sm:px-4 py-1.5 sm:py-2 text-sm focus:outline-none focus:border-blue-500 transition-colors"
+              >
+            </div>
           </div>
           <button
             @click="loadDashboard"
             :disabled="loading"
-            class="px-6 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg font-medium hover:from-blue-600 hover:to-blue-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+            class="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-2.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg text-sm sm:text-base font-medium hover:from-blue-600 hover:to-blue-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {{ loading ? '⏳ Carregando...' : '🔄 Atualizar' }}
           </button>
@@ -205,13 +208,13 @@ const tabs = [
       </div>
 
       <!-- Dashboard Content -->
-      <div v-else-if="data" class="space-y-6">
+      <div v-else-if="data" class="space-y-4 sm:space-y-6">
         <!-- Tabs -->
         <OrdoTabs v-model="activeTab" :tabs="tabs" />
 
         <!-- Overview Tab -->
-        <div v-show="activeTab === 'overview'" class="space-y-6">
-          <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div v-show="activeTab === 'overview'" class="space-y-4 sm:space-y-6">
+          <div class="grid gap-3 sm:gap-4 grid-cols-2 lg:grid-cols-4">
             <OrdoMetricCard
             title="Total de Usuários"
             :value="formatNumber(data.overview.total_users)"
@@ -243,8 +246,8 @@ const tabs = [
 
           <!-- Engagement -->
           <div>
-            <h2 class="text-2xl font-bold text-slate-900 mb-4">📈 Engajamento</h2>
-            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-6">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">📈 Engajamento</h2>
+            <div class="grid gap-3 sm:gap-4 grid-cols-2 lg:grid-cols-4 mb-4 sm:mb-6">
               <OrdoMetricCard
                 title="DAU"
                 :value="formatNumber(data.engagement.dau)"
@@ -287,9 +290,9 @@ const tabs = [
         <!-- End Overview Tab -->
 
         <!-- Users Tab -->
-        <div v-show="activeTab === 'users'" class="space-y-6">
-          <h2 class="text-2xl font-bold text-slate-900 mb-4">👥 Usuários</h2>
-          <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-6">
+        <div v-show="activeTab === 'users'" class="space-y-4 sm:space-y-6">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">👥 Usuários</h2>
+          <div class="grid gap-3 sm:gap-4 grid-cols-2 lg:grid-cols-4 mb-4 sm:mb-6">
             <OrdoMetricCard
               title="Novos no Período"
               :value="formatNumber(data.users.new_users_in_period)"
@@ -323,9 +326,9 @@ const tabs = [
         <!-- End Users Tab -->
 
         <!-- Offices Tab -->
-        <div v-show="activeTab === 'offices'" class="space-y-6">
-          <h2 class="text-2xl font-bold text-slate-900 mb-4">📿 Ofícios Completados</h2>
-          <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 mb-6">
+        <div v-show="activeTab === 'offices'" class="space-y-4 sm:space-y-6">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">📿 Ofícios Completados</h2>
+          <div class="grid gap-3 sm:gap-4 grid-cols-2 mb-4 sm:mb-6">
             <OrdoMetricCard
               title="Total no Período"
               :value="formatNumber(data.completions.total_in_period)"
@@ -364,10 +367,10 @@ const tabs = [
         <!-- End Offices Tab -->
 
         <!-- Content Tab -->
-        <div v-show="activeTab === 'content'" class="space-y-6">
+        <div v-show="activeTab === 'content'" class="space-y-4 sm:space-y-6">
           <!-- Prayer Books -->
           <div>
-            <h2 class="text-2xl font-bold text-slate-900 mb-4">📖 Livros de Oração</h2>
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">📖 Livros de Oração</h2>
             <OrdoChartCard :title="`Mais usado: ${data.prayer_books.most_used.name}`" icon="📚" icon-color="blue">
               <OrdoBarChart
                 :labels="prayerBookLabels"
@@ -380,8 +383,8 @@ const tabs = [
 
           <!-- Journals -->
           <div>
-            <h2 class="text-2xl font-bold text-slate-900 mb-4">📔 Diários</h2>
-            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 mb-6">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">📔 Diários</h2>
+            <div class="grid gap-3 sm:gap-4 grid-cols-2 mb-4 sm:mb-6">
               <OrdoMetricCard
                 title="Total no Período"
                 :value="formatNumber(data.journals.total_in_period)"
@@ -403,84 +406,84 @@ const tabs = [
         <!-- End Content Tab -->
 
         <!-- System Tab -->
-        <div v-show="activeTab === 'system'" class="space-y-6">
+        <div v-show="activeTab === 'system'" class="space-y-4 sm:space-y-6">
           <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
           <!-- Audio -->
-          <div class="bg-white rounded-xl shadow-lg p-6 border border-slate-200">
-            <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <span class="text-2xl">🎵</span> Geração de Áudio
+          <div class="bg-white rounded-lg sm:rounded-xl shadow-lg p-4 sm:p-6 border border-slate-200">
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-3 sm:mb-4 flex items-center gap-2">
+              <span class="text-xl sm:text-2xl">🎵</span> <span class="truncate">Geração de Áudio</span>
             </h3>
-            <div class="space-y-3">
-              <div class="flex justify-between items-center">
-                <span class="text-slate-600">Cobertura</span>
-                <span class="font-bold text-slate-900">{{ formatPercent(data.audio.audio_coverage_percentage) }}</span>
+            <div class="space-y-2 sm:space-y-3">
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xs sm:text-sm text-slate-600">Cobertura</span>
+                <span class="font-bold text-sm sm:text-base text-slate-900">{{ formatPercent(data.audio.audio_coverage_percentage) }}</span>
               </div>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-600">Textos com áudio</span>
-                <span class="font-bold text-slate-900">{{ formatNumber(data.audio.texts_with_audio) }} / {{ formatNumber(data.audio.total_texts) }}</span>
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xs sm:text-sm text-slate-600">Textos com áudio</span>
+                <span class="font-bold text-sm sm:text-base text-slate-900 text-right">{{ formatNumber(data.audio.texts_with_audio) }} / {{ formatNumber(data.audio.total_texts) }}</span>
               </div>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-600">Sessões completas</span>
-                <span class="font-bold text-slate-900">{{ formatNumber(data.audio.completed_sessions) }}</span>
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xs sm:text-sm text-slate-600">Sessões completas</span>
+                <span class="font-bold text-sm sm:text-base text-slate-900">{{ formatNumber(data.audio.completed_sessions) }}</span>
               </div>
             </div>
           </div>
 
           <!-- Notifications -->
-          <div class="bg-white rounded-xl shadow-lg p-6 border border-slate-200">
-            <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <span class="text-2xl">🔔</span> Notificações
+          <div class="bg-white rounded-lg sm:rounded-xl shadow-lg p-4 sm:p-6 border border-slate-200">
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-3 sm:mb-4 flex items-center gap-2">
+              <span class="text-xl sm:text-2xl">🔔</span> <span class="truncate">Notificações</span>
             </h3>
-            <div class="space-y-3">
-              <div class="flex justify-between items-center">
-                <span class="text-slate-600">Total Enviadas</span>
-                <span class="font-bold text-slate-900">{{ formatNumber(data.notifications.total_in_period) }}</span>
+            <div class="space-y-2 sm:space-y-3">
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xs sm:text-sm text-slate-600">Total Enviadas</span>
+                <span class="font-bold text-sm sm:text-base text-slate-900">{{ formatNumber(data.notifications.total_in_period) }}</span>
               </div>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-600">Taxa de Sucesso</span>
-                <span class="font-bold text-green-600">{{ formatPercent(data.notifications.success_rate) }}</span>
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xs sm:text-sm text-slate-600">Taxa de Sucesso</span>
+                <span class="font-bold text-sm sm:text-base text-green-600">{{ formatPercent(data.notifications.success_rate) }}</span>
               </div>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-600">Falharam</span>
-                <span class="font-bold text-red-600">{{ formatNumber(data.notifications.failed) }}</span>
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xs sm:text-sm text-slate-600">Falharam</span>
+                <span class="font-bold text-sm sm:text-base text-red-600">{{ formatNumber(data.notifications.failed) }}</span>
               </div>
             </div>
           </div>
 
           <!-- Life Rules -->
-          <div class="bg-white rounded-xl shadow-lg p-6 border border-slate-200">
-            <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <span class="text-2xl">📜</span> Regras de Vida
+          <div class="bg-white rounded-lg sm:rounded-xl shadow-lg p-4 sm:p-6 border border-slate-200">
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-3 sm:mb-4 flex items-center gap-2">
+              <span class="text-xl sm:text-2xl">📜</span> <span class="truncate">Regras de Vida</span>
             </h3>
-            <div class="space-y-3">
-              <div class="flex justify-between items-center">
-                <span class="text-slate-600">Total de Regras</span>
-                <span class="font-bold text-slate-900">{{ formatNumber(data.life_rules.total_rules) }}</span>
+            <div class="space-y-2 sm:space-y-3">
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xs sm:text-sm text-slate-600">Total de Regras</span>
+                <span class="font-bold text-sm sm:text-base text-slate-900">{{ formatNumber(data.life_rules.total_rules) }}</span>
               </div>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-600">Públicas</span>
-                <span class="font-bold text-slate-900">{{ formatNumber(data.life_rules.public_rules) }}</span>
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xs sm:text-sm text-slate-600">Públicas</span>
+                <span class="font-bold text-sm sm:text-base text-slate-900">{{ formatNumber(data.life_rules.public_rules) }}</span>
               </div>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-600">Adoções</span>
-                <span class="font-bold text-slate-900">{{ formatNumber(data.life_rules.total_adoptions) }}</span>
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xs sm:text-sm text-slate-600">Adoções</span>
+                <span class="font-bold text-sm sm:text-base text-slate-900">{{ formatNumber(data.life_rules.total_adoptions) }}</span>
               </div>
             </div>
           </div>
 
           <!-- Shared Offices -->
-          <div class="bg-white rounded-xl shadow-lg p-6 border border-slate-200">
-            <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <span class="text-2xl">🔗</span> Ofícios Compartilhados
+          <div class="bg-white rounded-lg sm:rounded-xl shadow-lg p-4 sm:p-6 border border-slate-200">
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-3 sm:mb-4 flex items-center gap-2">
+              <span class="text-xl sm:text-2xl">🔗</span> <span class="truncate">Ofícios Compartilhados</span>
             </h3>
-            <div class="space-y-3">
-              <div class="flex justify-between items-center">
-                <span class="text-slate-600">Total Compartilhados</span>
-                <span class="font-bold text-slate-900">{{ formatNumber(data.shared_offices.total_in_period) }}</span>
+            <div class="space-y-2 sm:space-y-3">
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xs sm:text-sm text-slate-600">Total Compartilhados</span>
+                <span class="font-bold text-sm sm:text-base text-slate-900">{{ formatNumber(data.shared_offices.total_in_period) }}</span>
               </div>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-600">Usuários Compartilhando</span>
-                <span class="font-bold text-slate-900">{{ formatNumber(data.shared_offices.unique_users_sharing) }}</span>
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xs sm:text-sm text-slate-600">Usuários Compartilhando</span>
+                <span class="font-bold text-sm sm:text-base text-slate-900">{{ formatNumber(data.shared_offices.unique_users_sharing) }}</span>
               </div>
             </div>
           </div>

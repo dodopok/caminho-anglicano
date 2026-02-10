@@ -120,10 +120,22 @@ watch(() => [props.labels, props.data], () => {
 <style scoped>
 .doughnut-chart {
   position: relative;
-  height: 320px;
+  height: 220px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .doughnut-chart {
+    height: 270px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .doughnut-chart {
+    height: 320px;
+  }
 }
 </style>

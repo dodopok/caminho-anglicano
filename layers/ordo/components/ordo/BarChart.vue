@@ -143,7 +143,19 @@ watch(() => [props.labels, props.data], () => {
 <style scoped>
 .bar-chart {
   position: relative;
-  height: 300px;
+  height: 200px;
   width: 100%;
+}
+
+@media (min-width: 640px) {
+  .bar-chart {
+    height: 250px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bar-chart {
+    height: 300px;
+  }
 }
 </style>

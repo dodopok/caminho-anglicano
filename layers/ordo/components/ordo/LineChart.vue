@@ -154,7 +154,19 @@ watch(() => [props.labels, props.data], () => {
 <style scoped>
 .line-chart {
   position: relative;
-  height: 300px;
+  height: 200px;
   width: 100%;
+}
+
+@media (min-width: 640px) {
+  .line-chart {
+    height: 250px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .line-chart {
+    height: 300px;
+  }
 }
 </style>
