@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     './layers/glossario',
     './layers/dashboard',
     './layers/admin',
-    './layers/doacoes'
+    './layers/doacoes',
+    './layers/ordo'
   ],
 
   typescript: {
@@ -38,7 +39,8 @@ export default defineNuxtConfig({
     exclude: [
       '/admin/**',
       '/dashboard/**',
-      '/portal-do-douglas/**'
+      '/portal-do-douglas/**',
+      '/portal-do-ordo/**'
     ],
     urls: async () => {
       // Importar dinamicamente os termos do glossário
