@@ -25,6 +25,12 @@ export function useChurches() {
       if (filters?.searchQuery) {
         params.search = filters.searchQuery
       }
+      if (filters?.city) {
+        params.city = filters.city
+      }
+      if (filters?.state) {
+        params.state = filters.state
+      }
       if (filters?.ids && filters.ids.length > 0) {
         params.ids = filters.ids.join(',')
       }

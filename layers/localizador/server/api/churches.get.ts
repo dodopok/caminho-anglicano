@@ -36,6 +36,18 @@ export default defineEventHandler(async (event) => {
       )
     }
 
+    // Aplicar filtro de cidade se fornecido
+    if (query.city) {
+      const city = query.city as string
+      queryBuilder = queryBuilder.ilike('city', city)
+    }
+
+    // Aplicar filtro de estado se fornecido
+    if (query.state) {
+      const state = query.state as string
+      queryBuilder = queryBuilder.eq('state', state.toUpperCase())
+    }
+
     const { data, error } = await queryBuilder
 
     if (error) {

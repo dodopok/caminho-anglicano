@@ -1,4 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { createClient } from '@supabase/supabase-js'
+
+// Simple slugify for build-time use
+function slugify(text: string): string {
+  return text
+    .toString()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/-{2,}/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '')
+}
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
@@ -71,6 +88,51 @@ export default defineNuxtConfig({
         priority: 0.8 as const
       }))
 
+      // Rotas de cidades e estados (dinâmicas do banco)
+      const locationRoutes: any[] = []
+      const supabaseUrl = process.env.NUXT_PUBLIC_SUPABASE_URL
+      const supabaseKey = process.env.SUPABASE_SERVICE_KEY
+
+      if (supabaseUrl && supabaseKey) {
+        try {
+          const supabase = createClient(supabaseUrl, supabaseKey)
+          const { data: churches } = await supabase.from('churches').select('city, state')
+          
+          if (churches) {
+            const states = new Set<string>()
+            const cities = new Set<string>()
+
+            churches.forEach(c => {
+              if (c.state) {
+                const state = c.state.toLowerCase()
+                states.add(state)
+                locationRoutes.push({
+                  loc: `/igrejas/localidade/${state}`,
+                  lastmod: new Date(),
+                  changefreq: 'weekly',
+                  priority: 0.7
+                })
+
+                if (c.city) {
+                  cities.add(`${state}/${slugify(c.city)}`)
+                }
+              }
+            })
+
+            Array.from(cities).forEach(cityPath => {
+              locationRoutes.push({
+                loc: `/igrejas/localidade/${cityPath}`,
+                lastmod: new Date(),
+                changefreq: 'weekly',
+                priority: 0.6
+              })
+            })
+          }
+        } catch (e) {
+          console.error('Erro ao gerar rotas de localização para sitemap:', e)
+        }
+      }
+
       // Rotas principais com maior prioridade
       const mainRoutes = [
         { loc: '/', lastmod: new Date(), changefreq: 'weekly' as const, priority: 1 as const },
@@ -78,7 +140,7 @@ export default defineNuxtConfig({
         { loc: '/localizador', lastmod: new Date(), changefreq: 'daily' as const, priority: 0.9 as const }
       ]
 
-      return [...mainRoutes, ...jurisdictionRoutes, ...glossaryRoutes]
+      return [...mainRoutes, ...jurisdictionRoutes, ...glossaryRoutes, ...locationRoutes]
     }
   },
 
@@ -110,7 +172,8 @@ export default defineNuxtConfig({
         { rel: 'manifest', href: '/site.webmanifest' },
         // Preconnect para Google Fonts
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap' }
       ]
     }
   },
@@ -157,6 +220,36 @@ export default defineNuxtConfig({
       }
 
       nitroConfig.prerender.routes.push(...glossaryRoutes)
+
+      // Adicionar rotas de cidades e estados ao prerender
+      const supabaseUrl = process.env.NUXT_PUBLIC_SUPABASE_URL
+      const supabaseKey = process.env.SUPABASE_SERVICE_KEY
+
+      if (supabaseUrl && supabaseKey) {
+        try {
+          const supabase = createClient(supabaseUrl, supabaseKey)
+          const { data: churches } = await supabase.from('churches').select('city, state')
+          
+          if (churches) {
+            const stateRoutes = new Set<string>()
+            const cityRoutes = new Set<string>()
+
+            churches.forEach(c => {
+              if (c.state) {
+                stateRoutes.add(`/igrejas/localidade/${c.state.toLowerCase()}`)
+                if (c.city) {
+                  cityRoutes.add(`/igrejas/localidade/${c.state.toLowerCase()}/${slugify(c.city)}`)
+                }
+              }
+            })
+
+            nitroConfig.prerender.routes.push(...Array.from(stateRoutes))
+            nitroConfig.prerender.routes.push(...Array.from(cityRoutes))
+          }
+        } catch (e) {
+          console.error('Erro ao gerar rotas de localização para prerender:', e)
+        }
+      }
     }
   },
 
