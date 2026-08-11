@@ -394,6 +394,7 @@ body { margin: 0; background: #e7ece4; }
 }
 
 @media (max-width: 500px) {
+  .ordo-metrics-grid--four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .ordo-filter-bar__dates { grid-template-columns: minmax(0, 1fr); }
   .ordo-filter-bar__dates label { grid-column: 1; }
   .ordo-filter-bar__all-time { align-items: flex-start; }
