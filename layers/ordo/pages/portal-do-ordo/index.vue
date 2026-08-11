@@ -399,6 +399,7 @@ body { margin: 0; background: #e7ece4; }
   .ordo-period-toggle { width: 100%; box-sizing: border-box; }
   .ordo-period-toggle button { flex: 1 1 0; }
   .ordo-filter-bar__dates { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; }
+  .ordo-filter-bar__dates label:nth-of-type(2) { grid-column: auto; }
   .ordo-filter-bar__dates input { padding-right: 5px; padding-left: 5px; font-size: 10px; }
   .ordo-filter-bar__all-time { align-items: flex-start; }
   .ordo-filter-bar__actions { display: grid; grid-template-columns: auto minmax(0, 1fr); }
