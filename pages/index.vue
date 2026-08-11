@@ -1,11 +1,13 @@
 <script setup lang="ts">
 const siteUrl = 'https://caminhoanglicano.com.br'
+const ordoUrl = 'https://www.oficio.app'
+const englishOrdoUrl = 'https://www.daily-office.app'
 
 useSeoMeta({
   title: 'Caminho Anglicano - Portal da Comunidade Anglicana Brasileira',
-  description: 'O portal definitivo para a comunidade anglicana no Brasil. Localizador de igrejas, lecionário litúrgico, glossário de termos e recursos para sua jornada de fé.',
+  description: 'Portal da comunidade anglicana no Brasil: encontre igrejas, consulte o lecionário, explore o Livro de Oração Comum e conheça o Ordo, aplicativo de Ofício Diário.',
   ogTitle: 'Caminho Anglicano - Portal da Comunidade Anglicana Brasileira',
-  ogDescription: 'Encontre igrejas, explore nossa liturgia e conecte-se com a tradição anglicana em todo o Brasil.',
+  ogDescription: 'Encontre igrejas, explore a tradição anglicana e conheça o Ordo, um aplicativo de Ofício Diário para oração, salmos e leituras bíblicas.',
   ogImage: `${siteUrl}/screenshot-wide.png`,
   ogUrl: siteUrl,
   ogType: 'website',
@@ -24,15 +26,57 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
-        '@type': 'WebSite',
-        name: 'Caminho Anglicano',
-        url: siteUrl,
-        description: 'Portal de recursos e serviços para a comunidade anglicana brasileira',
-        potentialAction: {
-          '@type': 'SearchAction',
-          target: `${siteUrl}/localizador?q={search_term_string}`,
-          'query-input': 'required name=search_term_string'
-        }
+        '@graph': [
+          {
+            '@type': 'WebSite',
+            '@id': `${siteUrl}/#website`,
+            name: 'Caminho Anglicano',
+            url: siteUrl,
+            description: 'Portal de recursos e serviços para a comunidade anglicana brasileira',
+            publisher: { '@id': `${siteUrl}/#organization` },
+            hasPart: { '@id': `${ordoUrl}/#application` },
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: `${siteUrl}/localizador?q={search_term_string}`,
+              'query-input': 'required name=search_term_string'
+            }
+          },
+          {
+            '@type': 'Organization',
+            '@id': `${siteUrl}/#organization`,
+            name: 'Caminho Anglicano',
+            url: siteUrl,
+            sameAs: [
+              siteUrl,
+              ordoUrl,
+              englishOrdoUrl,
+              'https://instagram.com/caminhoanglicano'
+            ]
+          },
+          {
+            '@type': 'SoftwareApplication',
+            '@id': `${ordoUrl}/#application`,
+            name: 'Ordo',
+            alternateName: ['Ofício Diário', 'Daily Office'],
+            description: 'Aplicativo de Ofício Diário com oração, salmos, leituras bíblicas e calendário litúrgico.',
+            url: ordoUrl,
+            applicationCategory: 'LifestyleApplication',
+            applicationSubCategory: 'Prayer and spirituality',
+            operatingSystem: 'iOS, Android',
+            inLanguage: ['pt-BR', 'pt-PT', 'en', 'es'],
+            isAccessibleForFree: true,
+            offers: {
+              '@type': 'Offer',
+              price: 0,
+              priceCurrency: 'BRL'
+            },
+            downloadUrl: [
+              'https://apps.apple.com/br/app/ordo-of%C3%ADcio-di%C3%A1rio/id6756016908',
+              'https://play.google.com/store/apps/details?id=br.com.caminhoanglicano.ordo'
+            ],
+            publisher: { '@id': `${siteUrl}/#organization` }
+          }
+        ]
       })
     }
   ]
@@ -78,8 +122,9 @@ useHead({
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">Anglicano</span>
         </h1>
         <p class="text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed font-medium">
-          Um ecossistema digital de recursos e conexão para a Igreja no Brasil. 
-          Unindo tradição e ferramentas do futuro.
+          Um ecossistema digital de recursos e conexão para a Igreja no Brasil. Encontre igrejas,
+          consulte o lecionário e conheça o Ordo, aplicativo de Ofício Diário para oração, salmos
+          e leituras bíblicas.
         </p>
       </div>
 
@@ -107,6 +152,14 @@ useHead({
           icon="calendar"
           title="Lecionário"
           description="Calendário litúrgico e leituras."
+          external
+        />
+
+        <BaseNavigationCard
+          href="https://www.oficio.app/"
+          icon="sun"
+          title="Ofício Diário"
+          description="Orações, salmos e leituras para cada dia."
           external
         />
 
@@ -153,6 +206,17 @@ useHead({
             <p class="text-base sm:text-lg text-slate-500 mb-6 leading-relaxed">
               O Caminho Anglicano é um portal de convergência, facilitando o acesso a igrejas de todas as jurisdições.
             </p>
+            <p class="text-base sm:text-lg text-slate-500 mb-6 leading-relaxed">
+              O Ordo leva o Ofício Diário para o celular, com os textos e leituras organizados conforme o livro de oração escolhido.
+            </p>
+            <a
+              :href="ordoUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-sm font-bold text-amber-700 hover:text-amber-900 transition-colors mb-6"
+            >
+              Conheça o Ofício Diário no Ordo <span aria-hidden="true">↗</span>
+            </a>
             <div class="flex flex-wrap gap-2">
               <NuxtLink v-for="uf in ['SP', 'RJ', 'MG', 'DF', 'RS', 'PR', 'SC', 'BA', 'PE']" :key="uf" 
                 :to="`/igrejas/localidade/${uf.toLowerCase()}`"

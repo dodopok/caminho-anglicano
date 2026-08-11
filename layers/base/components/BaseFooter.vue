@@ -2,7 +2,7 @@
   <footer class="bg-white border-t border-slate-200 mt-6">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
       <div class="text-center text-sm text-slate-600">
-        © {{ new Date().getFullYear() }} Caminho Anglicano - Feito por
+        © {{ new Date().getFullYear() }} Caminho Anglicano · Feito por
         <a
           href="https://www.instagram.com/rev_douglasaraujo/"
           target="_blank"
@@ -11,7 +11,16 @@
         >
           Rev. Douglas Araujo
         </a>
-        -
+        ·
+        <a
+          href="https://www.oficio.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-slate-700 hover:text-slate-900 font-medium transition-colors"
+        >
+          Ofício Diário no Ordo
+        </a>
+        ·
         <button
           class="text-purple-600 hover:text-purple-700 font-medium transition-colors underline decoration-dotted underline-offset-2"
           @click="openSupportModal"
