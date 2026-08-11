@@ -5,45 +5,162 @@ interface Props {
   subtitle?: string
   color?: 'blue' | 'green' | 'purple' | 'orange' | 'pink' | 'indigo'
   icon?: string
+  eyebrow?: string
 }
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
+  subtitle: undefined,
+  icon: undefined,
+  eyebrow: undefined,
   color: 'blue'
 })
-
-const colorClasses = {
-  blue: 'from-blue-500 to-blue-600',
-  green: 'from-green-500 to-green-600',
-  purple: 'from-purple-500 to-purple-600',
-  orange: 'from-orange-500 to-orange-600',
-  pink: 'from-pink-500 to-pink-600',
-  indigo: 'from-indigo-500 to-indigo-600'
-}
-
-const iconBgClasses = {
-  blue: 'bg-white/20',
-  green: 'bg-white/20',
-  purple: 'bg-white/20',
-  orange: 'bg-white/20',
-  pink: 'bg-white/20',
-  indigo: 'bg-white/20'
-}
 </script>
 
 <template>
-  <div
-    class="rounded-lg sm:rounded-xl shadow-lg p-4 sm:p-6 text-white transform hover:scale-105 transition-transform bg-gradient-to-br"
-    :class="colorClasses[color]"
-  >
-    <div class="flex items-center justify-between gap-2 sm:gap-3">
-      <div class="flex-1 min-w-0">
-        <p class="text-white/80 text-xs sm:text-sm font-medium mb-1">{{ title }}</p>
-        <p class="text-2xl sm:text-3xl lg:text-4xl font-bold truncate">{{ value }}</p>
-        <p v-if="subtitle" class="text-white/70 text-xs sm:text-sm mt-1 sm:mt-2 truncate">{{ subtitle }}</p>
-      </div>
-      <div v-if="icon" class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-lg flex items-center justify-center" :class="iconBgClasses[color]">
-        <div class="text-2xl sm:text-3xl lg:text-4xl">{{ icon }}</div>
-      </div>
+  <article class="ordo-metric-card" :class="`ordo-metric-card--${color}`">
+    <div class="ordo-metric-card__topline">
+      <span class="ordo-metric-card__eyebrow">{{ eyebrow || 'Indicador' }}</span>
+      <span v-if="icon" class="ordo-metric-card__icon" aria-hidden="true">{{ icon }}</span>
     </div>
-  </div>
+    <p class="ordo-metric-card__title">{{ title }}</p>
+    <p class="ordo-metric-card__value">{{ value }}</p>
+    <p v-if="subtitle" class="ordo-metric-card__subtitle">{{ subtitle }}</p>
+  </article>
 </template>
+
+<style scoped>
+.ordo-metric-card {
+  --metric-accent: #496451;
+  --metric-tint: #eaf0e7;
+  position: relative;
+  min-height: 154px;
+  overflow: hidden;
+  padding: 18px 20px;
+  border: 1px solid rgba(50, 73, 56, 0.13);
+  border-radius: 20px;
+  background: #fbfcf8;
+  box-shadow: 0 10px 30px rgba(38, 55, 44, 0.07);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.ordo-metric-card::after {
+  position: absolute;
+  right: -30px;
+  bottom: -42px;
+  width: 120px;
+  height: 120px;
+  border: 18px solid var(--metric-tint);
+  border-radius: 50%;
+  content: '';
+  opacity: 0.7;
+}
+
+.ordo-metric-card:hover {
+  border-color: color-mix(in srgb, var(--metric-accent) 34%, transparent);
+  box-shadow: 0 16px 34px rgba(38, 55, 44, 0.12);
+  transform: translateY(-3px);
+}
+
+.ordo-metric-card--blue {
+  --metric-accent: #457180;
+  --metric-tint: #e4eff1;
+}
+
+.ordo-metric-card--green {
+  --metric-accent: #4d7159;
+  --metric-tint: #e7f0e5;
+}
+
+.ordo-metric-card--purple {
+  --metric-accent: #6d5e78;
+  --metric-tint: #eee9f1;
+}
+
+.ordo-metric-card--orange {
+  --metric-accent: #af7147;
+  --metric-tint: #f6eadc;
+}
+
+.ordo-metric-card--pink {
+  --metric-accent: #a65c64;
+  --metric-tint: #f5e5e6;
+}
+
+.ordo-metric-card--indigo {
+  --metric-accent: #58658a;
+  --metric-tint: #e8ebf5;
+}
+
+.ordo-metric-card__topline,
+.ordo-metric-card__title,
+.ordo-metric-card__value,
+.ordo-metric-card__subtitle {
+  position: relative;
+  z-index: 1;
+}
+
+.ordo-metric-card__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ordo-metric-card__eyebrow {
+  color: var(--metric-accent);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.ordo-metric-card__icon {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--metric-tint);
+  color: var(--metric-accent);
+  font-size: 16px;
+}
+
+.ordo-metric-card__title {
+  margin: 18px 0 4px;
+  color: #6e776c;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ordo-metric-card__value {
+  margin: 0;
+  color: #233328;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+}
+
+.ordo-metric-card__subtitle {
+  max-width: 85%;
+  margin: 10px 0 0;
+  overflow: hidden;
+  color: #879085;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .ordo-metric-card {
+    min-height: 136px;
+    padding: 15px;
+    border-radius: 16px;
+  }
+
+  .ordo-metric-card__title {
+    margin-top: 13px;
+  }
+}
+</style>
