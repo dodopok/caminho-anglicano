@@ -349,7 +349,7 @@ body { margin: 0; background: #e7ece4; }
 .ordo-filter-bar__period-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; }
 .ordo-filter-bar__dates { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: end; gap: 10px; min-width: 0; }
 .ordo-filter-bar__dates label { width: 100%; min-width: 0; }
-.ordo-filter-bar__dates input { flex: 1 1 auto; width: auto; max-width: 100%; box-sizing: border-box; }
+.ordo-filter-bar__dates input { flex: 1 1 auto; width: auto; max-width: 100%; min-width: 0; box-sizing: border-box; }
 .ordo-period-toggle { display: inline-flex; flex: 0 0 auto; gap: 3px; padding: 3px; border: 1px solid #d8e1d5; border-radius: 10px; background: #edf3eb; }
 .ordo-period-toggle button { padding: 6px 9px; border: 0; border-radius: 7px; background: transparent; color: #829082; cursor: pointer; font: inherit; font-size: 10px; font-weight: 800; }
 .ordo-period-toggle button.is-active { background: #fff; color: var(--moss-deep); box-shadow: 0 2px 6px rgba(38,55,44,.08); }
@@ -386,7 +386,7 @@ body { margin: 0; background: #e7ece4; }
 
 @media (max-width: 720px) {
   .ordo-filter-bar__period-header { align-items: flex-start; flex-wrap: wrap; }
-  .ordo-filter-bar__dates { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; }
+  .ordo-filter-bar__dates { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
   .ordo-filter-bar__dates label { display: grid; gap: 4px; }
   .ordo-filter-bar__dates input { width: 100%; }
   .ordo-filter-bar__dash { display: none; }
@@ -398,7 +398,7 @@ body { margin: 0; background: #e7ece4; }
   .ordo-filter-bar__period-header { align-items: stretch; flex-direction: column; }
   .ordo-period-toggle { width: 100%; box-sizing: border-box; }
   .ordo-period-toggle button { flex: 1 1 0; }
-  .ordo-filter-bar__dates { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; }
+  .ordo-filter-bar__dates { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
   .ordo-filter-bar__dates label:nth-of-type(2) { grid-column: auto; }
   .ordo-filter-bar__dates input { padding-right: 5px; padding-left: 5px; font-size: 10px; }
   .ordo-filter-bar__all-time { align-items: flex-start; }
