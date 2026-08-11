@@ -395,8 +395,11 @@ body { margin: 0; background: #e7ece4; }
 
 @media (max-width: 500px) {
   .ordo-metrics-grid--four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .ordo-filter-bar__dates { grid-template-columns: minmax(0, 1fr); }
-  .ordo-filter-bar__dates label { grid-column: 1; }
+  .ordo-filter-bar__period-header { align-items: stretch; flex-direction: column; }
+  .ordo-period-toggle { width: 100%; box-sizing: border-box; }
+  .ordo-period-toggle button { flex: 1 1 0; }
+  .ordo-filter-bar__dates { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; }
+  .ordo-filter-bar__dates input { padding-right: 5px; padding-left: 5px; font-size: 10px; }
   .ordo-filter-bar__all-time { align-items: flex-start; }
   .ordo-filter-bar__actions { display: grid; grid-template-columns: auto minmax(0, 1fr); }
   .ordo-filter-bar__actions .ordo-button { min-width: 0; }
