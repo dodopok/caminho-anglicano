@@ -1,23 +1,14 @@
-export default defineNuxtRouteMiddleware((to) => {
-  // Skip middleware on server
-  if (process.server) {
-    return
-  }
+export default defineNuxtRouteMiddleware(async (to) => {
+  if (import.meta.server) return
 
-  const { user, loading } = useFirebaseAuth()
+  const { user, waitForAuth } = useFirebaseAuth()
+  await waitForAuth()
 
-  // Wait for auth state to be determined
-  if (loading.value) {
-    return
-  }
-
-  // Redirect to login if not authenticated
   if (!user.value && to.path !== '/portal-do-ordo/login') {
-    return navigateTo('/portal-do-ordo/login')
+    return navigateTo('/portal-do-ordo/login', { replace: true })
   }
 
-  // Redirect to dashboard if already authenticated and trying to access login
   if (user.value && to.path === '/portal-do-ordo/login') {
-    return navigateTo('/portal-do-ordo')
+    return navigateTo('/portal-do-ordo', { replace: true })
   }
 })

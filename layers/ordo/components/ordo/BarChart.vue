@@ -19,14 +19,14 @@ const canvas = ref<HTMLCanvasElement | null>(null)
 let chart: Chart | null = null
 
 const colors = [
-  '#8B4513',
-  '#B8860B',
-  '#CD853F',
-  '#DAA520',
-  '#D2691E',
-  '#A0522D',
-  '#8B7355',
-  '#BC8F8F'
+  '#496451',
+  '#C9934D',
+  '#457180',
+  '#A65C64',
+  '#6D5E78',
+  '#AF7147',
+  '#718673',
+  '#899B8C'
 ]
 
 onMounted(() => {
@@ -55,20 +55,20 @@ onMounted(() => {
       maintainAspectRatio: false,
       plugins: {
         tooltip: {
-          backgroundColor: 'rgba(44, 24, 16, 0.95)',
-          titleColor: '#F5F0E6',
-          bodyColor: '#F5F0E6',
+          backgroundColor: 'rgba(35, 51, 40, 0.96)',
+          titleColor: '#F8FAF5',
+          bodyColor: '#F8FAF5',
           titleFont: {
-            family: 'Crimson Text',
+            family: 'Fraunces',
             size: 14,
             weight: 600
           },
           bodyFont: {
-            family: 'Manrope',
+            family: 'DM Sans',
             size: 13
           },
           padding: 12,
-          borderColor: 'rgba(139, 69, 19, 0.3)',
+          borderColor: 'rgba(201, 147, 77, 0.4)',
           borderWidth: 1,
           displayColors: true,
           caretSize: 8
@@ -84,9 +84,9 @@ onMounted(() => {
             color: 'rgba(139, 69, 19, 0.08)'
           },
           ticks: {
-            color: 'rgba(44, 24, 16, 0.6)',
+            color: 'rgba(50, 73, 56, 0.62)',
             font: {
-              family: 'Manrope',
+              family: 'DM Sans',
               size: 11
             }
           },
@@ -101,9 +101,9 @@ onMounted(() => {
             color: 'rgba(139, 69, 19, 0.08)'
           },
           ticks: {
-            color: 'rgba(44, 24, 16, 0.6)',
+            color: 'rgba(50, 73, 56, 0.62)',
             font: {
-              family: 'Manrope',
+              family: 'DM Sans',
               size: 11
             },
             padding: 8

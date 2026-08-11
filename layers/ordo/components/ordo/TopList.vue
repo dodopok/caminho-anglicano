@@ -8,53 +8,144 @@ interface ListItem {
 interface Props {
   items: ListItem[]
   max?: number
+  emptyMessage?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  max: 10
+  max: 10,
+  emptyMessage: 'Ainda não há registros para este período.'
 })
 
 const displayItems = computed(() => props.items.slice(0, props.max))
-const maxValue = computed(() => Math.max(...displayItems.value.map(i => i.value), 1))
+const maxValue = computed(() => Math.max(...displayItems.value.map(item => item.value), 1))
 </script>
 
 <template>
-  <div class="space-y-2 sm:space-y-3">
-    <div
-      v-for="(item, index) in displayItems"
-      :key="index"
-      class="bg-slate-50 hover:bg-slate-100 rounded-lg p-3 sm:p-4 transition-colors border border-slate-200"
-    >
-      <div class="flex items-start sm:items-center gap-2 sm:gap-3">
-        <div
-          class="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center font-bold text-white text-xs sm:text-sm shadow"
-          :class="{
-            'bg-gradient-to-br from-yellow-400 to-yellow-500': index === 0,
-            'bg-gradient-to-br from-slate-300 to-slate-400': index === 1,
-            'bg-gradient-to-br from-orange-400 to-orange-500': index === 2,
-            'bg-gradient-to-br from-blue-500 to-blue-600': index > 2
-          }"
-        >
-          {{ index + 1 }}
+  <div v-if="displayItems.length" class="ordo-top-list">
+    <div v-for="(item, index) in displayItems" :key="`${item.label}-${index}`" class="ordo-top-list__item">
+      <div class="ordo-top-list__rank" :class="{ 'ordo-top-list__rank--featured': index === 0 }">
+        {{ String(index + 1).padStart(2, '0') }}
+      </div>
+      <div class="ordo-top-list__content">
+        <div class="ordo-top-list__line">
+          <span class="ordo-top-list__label">{{ item.label }}</span>
+          <strong class="ordo-top-list__value">{{ item.value }}</strong>
         </div>
-        <div class="flex-1 min-w-0">
-          <div class="font-semibold text-slate-900 text-sm sm:text-base truncate">{{ item.label }}</div>
-          <div v-if="item.subtitle" class="text-xs text-slate-600 mt-0.5 truncate">{{ item.subtitle }}</div>
-          <div class="mt-1.5 sm:mt-2">
-            <div class="w-full bg-slate-200 rounded-full h-1.5 sm:h-2">
-              <div
-                class="bg-gradient-to-r from-blue-500 to-blue-600 h-1.5 sm:h-2 rounded-full transition-all duration-500"
-                :style="{ width: `${(item.value / maxValue) * 100}%` }"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="flex-shrink-0 text-right">
-          <div class="text-lg sm:text-xl lg:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            {{ item.value }}
-          </div>
+        <p v-if="item.subtitle" class="ordo-top-list__subtitle">{{ item.subtitle }}</p>
+        <div class="ordo-top-list__track" aria-hidden="true">
+          <span :style="{ width: `${(item.value / maxValue) * 100}%` }" />
         </div>
       </div>
     </div>
   </div>
+  <div v-else class="ordo-empty-inline">
+    <span class="ordo-empty-inline__mark">∅</span>
+    <span>{{ emptyMessage }}</span>
+  </div>
 </template>
+
+<style scoped>
+.ordo-top-list {
+  display: grid;
+  gap: 14px;
+}
+
+.ordo-top-list__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.ordo-top-list__rank {
+  display: grid;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid #dfe5dc;
+  border-radius: 11px;
+  background: #f3f6f0;
+  color: #899389;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.ordo-top-list__rank--featured {
+  border-color: #c9934d;
+  background: #f7ead9;
+  color: #a36d37;
+}
+
+.ordo-top-list__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.ordo-top-list__line {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ordo-top-list__label {
+  overflow: hidden;
+  color: #334538;
+  font-size: 13px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ordo-top-list__value {
+  color: #48614f;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ordo-top-list__subtitle {
+  margin: 3px 0 6px;
+  overflow: hidden;
+  color: #8a9489;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ordo-top-list__track {
+  height: 5px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #edf1eb;
+}
+
+.ordo-top-list__track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #557961, #c9934d);
+  transition: width 400ms ease;
+}
+
+.ordo-empty-inline {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 16px 0;
+  color: #8b958b;
+  font-size: 13px;
+}
+
+.ordo-empty-inline__mark {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 50%;
+  background: #edf1eb;
+  color: #758176;
+  font-weight: 800;
+}
+</style>
