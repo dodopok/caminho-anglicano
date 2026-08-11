@@ -10,6 +10,7 @@ const props = defineProps<{
   period?: DashboardPeriod | null
   startDate: string
   endDate: string
+  allTime: boolean
 }>()
 
 const {
@@ -21,14 +22,22 @@ const {
   mapItems,
   maxItemValue,
   createDateRange,
-  formatChartLabel
+  createMonthRange,
+  aggregateCountMapByMonth,
+  formatChartLabel,
+  formatMonthLabel
 } = useOrdoDashboardPresentation()
 
+const chartBuckets = computed(() => props.allTime
+  ? createMonthRange(props.startDate, props.endDate)
+  : createDateRange(props.startDate, props.endDate))
 const dailyNewUsers = computed(() => {
-  const values = props.dashboard.users?.daily_new_users || {}
-  return createDateRange(props.startDate, props.endDate).map(date => asNumber(values[date]))
+  const values = props.allTime
+    ? aggregateCountMapByMonth(props.dashboard.users?.daily_new_users)
+    : props.dashboard.users?.daily_new_users || {}
+  return chartBuckets.value.map(date => asNumber(values[date]))
 })
-const dailyNewUserLabels = computed(() => createDateRange(props.startDate, props.endDate).map(formatChartLabel))
+const dailyNewUserLabels = computed(() => chartBuckets.value.map(props.allTime ? formatMonthLabel : formatChartLabel))
 const onboardingChoiceItems = computed(() => mapItems(props.dashboard.onboarding?.choices?.prayer_books))
 const languageItems = computed(() => mapItems(props.dashboard.geography?.by_language))
 const countryItems = computed(() => mapItems(props.dashboard.geography?.by_country))
@@ -60,7 +69,7 @@ const onboardingSteps = computed(() => {
     </div>
 
     <div class="ordo-grid-2">
-      <OrdoChartCard v-if="dashboard.users" title="Chegadas ao longo dos dias" description="Dias sem registro são preenchidos com zero para manter a linha contínua." icon="＋" icon-color="blue" eyebrow="Novos usuários">
+      <OrdoChartCard v-if="dashboard.users" :title="allTime ? 'Chegadas ao longo dos meses' : 'Chegadas ao longo dos dias'" :description="allTime ? 'Histórico agrupado por mês para manter a leitura leve.' : 'Dias sem registro são preenchidos com zero para manter a linha contínua.'" icon="＋" icon-color="blue" eyebrow="Novos usuários">
         <OrdoLineChart :labels="dailyNewUserLabels" :data="dailyNewUsers" label="Novos usuários" color="#457180" />
       </OrdoChartCard>
       <OrdoChartCard v-if="dashboard.onboarding" title="Funil de primeiros passos" description="Contagens cumulativas para os usuários criados no intervalo." icon="↓" icon-color="orange" eyebrow="Onboarding">

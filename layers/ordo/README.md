@@ -35,8 +35,11 @@ Se a API retornar `401` (`AUTHENTICATION_REQUIRED` ou `AUTHENTICATION_FAILED`), 
 - Fila paginada de `GET /api/v1/admin/life_rules`.
 - Fila de `GET /api/v1/admin/custom_rosary_prayers`, detalhe expandido e ações de aprovar/rejeitar.
 - Premium, chaves de API, limites diários e desenvolvedores.
+- O filtro `Desde sempre` consulta o histórico desde `1970-01-01`; séries temporais são agrupadas por mês para manter a leitura responsiva.
 
 O painel trata `null` como estado válido, exibe o escopo efetivo de cada seção e não usa e-mail nos rankings. Séries esparsas são preenchidas com zero quando precisam formar uma linha contínua. O retorno da API pode ter até 10 minutos de cache.
+
+A fila de regras de vida é somente leitura no contrato atual: existe apenas o endpoint `GET /api/v1/admin/life_rules`, sem ação administrativa de aprovação. Rosários compartilhados possuem revisão detalhada e as ações `approve`/`reject` no modal editorial.
 
 ## Componentes
 

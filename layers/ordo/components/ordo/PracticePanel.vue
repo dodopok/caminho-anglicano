@@ -11,6 +11,7 @@ const props = defineProps<{
   dashboard: DashboardData
   startDate: string
   endDate: string
+  allTime: boolean
 }>()
 
 const {
@@ -20,14 +21,26 @@ const {
   mapItems,
   maxItemValue,
   createDateRange,
-  formatChartLabel
+  createMonthRange,
+  aggregateDailyCountsByMonth,
+  formatChartLabel,
+  formatMonthLabel
 } = useOrdoDashboardPresentation()
 
+const chartBuckets = computed(() => props.allTime
+  ? createMonthRange(props.startDate, props.endDate)
+  : createDateRange(props.startDate, props.endDate))
 const dailyCompletions = computed(() => {
-  const values = new Map((props.dashboard.completions?.daily_completions || []).map(item => [item.date, item.count]))
-  return createDateRange(props.startDate, props.endDate).map(date => asNumber(values.get(date)))
+  const dailyValues = props.dashboard.completions?.daily_completions || []
+  if (props.allTime) {
+    const values = aggregateDailyCountsByMonth(dailyValues)
+    return chartBuckets.value.map(month => asNumber(values[month]))
+  }
+
+  const values = new Map(dailyValues.map(item => [item.date, item.count]))
+  return chartBuckets.value.map(date => asNumber(values.get(date)))
 })
-const dailyCompletionLabels = computed(() => createDateRange(props.startDate, props.endDate).map(formatChartLabel))
+const dailyCompletionLabels = computed(() => chartBuckets.value.map(props.allTime ? formatMonthLabel : formatChartLabel))
 const officeTypeItems = computed(() => mapItems(props.dashboard.completions?.by_office_type))
 const hourlyItems = computed(() => Object.entries(props.dashboard.completions?.by_hour || {})
   .sort(([a], [b]) => Number(a) - Number(b))
@@ -59,7 +72,7 @@ const topWriters = computed(() => (props.dashboard.journals?.top_writers || []).
     </div>
 
     <div class="ordo-grid-2">
-      <OrdoChartCard v-if="dashboard.completions" title="Cadência de completions" description="Atribuição por date_reference; dias ausentes são completados com zero." icon="✦" icon-color="green" eyebrow="Série diária"><OrdoLineChart :labels="dailyCompletionLabels" :data="dailyCompletions" label="Completions" color="#496451" /></OrdoChartCard>
+      <OrdoChartCard v-if="dashboard.completions" title="Cadência de completions" :description="allTime ? 'Histórico agrupado por mês para manter a leitura leve.' : 'Atribuição por date_reference; dias ausentes são completados com zero.'" icon="✦" icon-color="green" :eyebrow="allTime ? 'Série mensal' : 'Série diária'"><OrdoLineChart :labels="dailyCompletionLabels" :data="dailyCompletions" label="Completions" color="#496451" /></OrdoChartCard>
       <OrdoChartCard v-if="dashboard.completions" title="Tipos de ofício" description="Distribuição do período selecionado." icon="◒" icon-color="purple" eyebrow="Distribuição"><OrdoDoughnutChart :labels="officeTypeItems.map(item => item.label)" :data="officeTypeItems.map(item => item.value)" /></OrdoChartCard>
     </div>
 

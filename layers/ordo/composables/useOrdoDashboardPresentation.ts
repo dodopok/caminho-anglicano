@@ -112,11 +112,48 @@ export const useOrdoDashboardPresentation = () => {
     return dates
   }
 
+  const createMonthRange = (start: string, end: string) => {
+    const months: string[] = []
+    const cursor = new Date(`${start.slice(0, 7)}-01T12:00:00`)
+    const finalDate = new Date(`${end.slice(0, 7)}-01T12:00:00`)
+    if (Number.isNaN(cursor.getTime()) || Number.isNaN(finalDate.getTime()) || cursor > finalDate) return months
+
+    while (cursor <= finalDate && months.length < 720) {
+      const year = cursor.getFullYear()
+      const month = String(cursor.getMonth() + 1).padStart(2, '0')
+      months.push(`${year}-${month}`)
+      cursor.setMonth(cursor.getMonth() + 1)
+    }
+
+    return months
+  }
+
+  const aggregateCountMapByMonth = (values?: CountMap) => Object.entries(values || {})
+    .reduce<Record<string, number>>((months, [date, value]) => {
+      const month = date.slice(0, 7)
+      months[month] = (months[month] || 0) + asNumber(value)
+      return months
+    }, {})
+
+  const aggregateDailyCountsByMonth = (items: Array<{ date: string; count?: number }> = []) => items
+    .reduce<Record<string, number>>((months, item) => {
+      const month = item.date.slice(0, 7)
+      months[month] = (months[month] || 0) + asNumber(item.count)
+      return months
+    }, {})
+
   const formatChartLabel = (value: string) => {
     const date = new Date(`${value}T12:00:00`)
     return Number.isNaN(date.getTime())
       ? value
       : date.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
+  }
+
+  const formatMonthLabel = (value: string) => {
+    const date = new Date(`${value}-01T12:00:00`)
+    return Number.isNaN(date.getTime())
+      ? value
+      : date.toLocaleDateString('pt-BR', { month: 'short', year: '2-digit' })
   }
 
   return {
@@ -132,6 +169,10 @@ export const useOrdoDashboardPresentation = () => {
     mapItems,
     maxItemValue,
     createDateRange,
-    formatChartLabel
+    createMonthRange,
+    aggregateCountMapByMonth,
+    aggregateDailyCountsByMonth,
+    formatChartLabel,
+    formatMonthLabel
   }
 }
