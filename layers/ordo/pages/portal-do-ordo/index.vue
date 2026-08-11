@@ -23,6 +23,7 @@ definePageMeta({
 })
 
 type DashboardTab = 'overview' | 'growth' | 'practice' | 'operations' | 'platform'
+type PeriodMode = 'range' | 'all'
 
 interface TabDefinition {
   id: DashboardTab
@@ -67,6 +68,7 @@ const getDateInput = (date: Date) => {
   return `${year}-${month}-${day}`
 }
 
+const ALL_TIME_START_DATE = '1970-01-01'
 const today = new Date()
 const thirtyDaysAgo = new Date(today)
 thirtyDaysAgo.setDate(today.getDate() - 30)
@@ -74,6 +76,7 @@ thirtyDaysAgo.setDate(today.getDate() - 30)
 const activeTab = ref<DashboardTab>('overview')
 const dashboard = ref<DashboardData>({})
 const period = ref<DashboardPeriod | null>(null)
+const periodMode = ref<PeriodMode>('range')
 const startDate = ref(getDateInput(thirtyDaysAgo))
 const endDate = ref(getDateInput(today))
 const loadedSections = ref<DashboardSectionName[]>([])
@@ -103,6 +106,15 @@ const strapiSlug = ref('')
 const rejectionReason = ref('')
 
 const activeTabDefinition = computed(() => tabDefinitions.find(tab => tab.id === activeTab.value) || tabDefinitions[0])
+const isAllTime = computed(() => periodMode.value === 'all')
+const dashboardStartDate = computed(() => isAllTime.value ? ALL_TIME_START_DATE : startDate.value)
+const dashboardEndDate = computed(() => isAllTime.value ? getDateInput(new Date()) : endDate.value)
+const periodLabel = computed(() => {
+  if (!period.value) return 'Preparando período'
+  return isAllTime.value
+    ? `Desde sempre — ${formatDate(period.value.end_date)}`
+    : `${formatDate(period.value.start_date)} — ${formatDate(period.value.end_date)}`
+})
 const isTabLoading = (tab: DashboardTab) => loadingTabs.value.includes(tab)
 const activeTabLoading = computed(() => isTabLoading(activeTab.value))
 const dashboardReady = computed(() => hasLoadedOnce.value || loadedSections.value.length > 0)
@@ -160,7 +172,7 @@ const loadTab = async (tab: DashboardTab, force = false) => {
 
   try {
     if (sections.length) {
-      const response = await fetchDashboard({ start_date: startDate.value, end_date: endDate.value, sections })
+      const response = await fetchDashboard({ start_date: dashboardStartDate.value, end_date: dashboardEndDate.value, sections })
       mergeDashboard(response)
     }
     if (tab === 'operations' && shouldLoadQueue) await Promise.all([loadLifeRules(), loadCustomRosaries()])
@@ -174,7 +186,7 @@ const loadTab = async (tab: DashboardTab, force = false) => {
 const refreshCurrentTab = () => loadTab(activeTab.value, true)
 
 const applyDateRange = async () => {
-  if (!startDate.value || !endDate.value || startDate.value > endDate.value) {
+  if (!isAllTime.value && (!startDate.value || !endDate.value || startDate.value > endDate.value)) {
     dashboardError.value = 'O início do período precisa ser anterior ao fim.'
     return
   }
@@ -280,17 +292,17 @@ watch([authReady, user], ([isReady, currentUser]) => {
       <aside class="ordo-sidebar"><div class="ordo-sidebar__caption">Navegação</div><nav class="ordo-sidebar__nav" aria-label="Seções do portal"><button v-for="tab in tabDefinitions" :key="tab.id" type="button" :class="{ 'is-active': activeTab === tab.id }" @click="activeTab = tab.id"><span class="ordo-sidebar__mark">{{ tab.mark }}</span><span>{{ tab.label }}</span><span v-if="tab.id === 'operations' && moderationSummary?.pending_now" class="ordo-sidebar__count">{{ moderationSummary.pending_now }}</span></button></nav><div class="ordo-sidebar__footer"><div class="ordo-sidebar__seal">⌁</div><p>Leitura responsável</p><span>O período é inclusivo e segue o fuso da API.</span></div></aside>
 
       <main class="ordo-main">
-        <section class="ordo-intro"><div><p class="ordo-kicker">{{ activeTabDefinition.shortLabel }} <span>·</span> visão administrativa</p><h1>{{ activeTabDefinition.title }}</h1><p class="ordo-intro__description">{{ activeTabDefinition.description }}</p></div><div class="ordo-intro__meta"><span class="ordo-scope-pill">{{ period ? `${formatDate(period.start_date)} — ${formatDate(period.end_date)}` : 'Preparando período' }}</span><span v-if="lastUpdatedAt" class="ordo-updated">Atualizado {{ formatTimestamp(lastUpdatedAt.toISOString()) }}</span></div></section>
+        <section class="ordo-intro"><div><p class="ordo-kicker">{{ activeTabDefinition.shortLabel }} <span>·</span> visão administrativa</p><h1>{{ activeTabDefinition.title }}</h1><p class="ordo-intro__description">{{ activeTabDefinition.description }}</p></div><div class="ordo-intro__meta"><span class="ordo-scope-pill">{{ periodLabel }}</span><span v-if="lastUpdatedAt" class="ordo-updated">Atualizado {{ formatTimestamp(lastUpdatedAt.toISOString()) }}</span></div></section>
 
-        <section class="ordo-filter-bar" aria-label="Filtros do dashboard"><div class="ordo-filter-bar__period"><span class="ordo-filter-bar__label">Período de leitura</span><label><span>De</span><input v-model="startDate" type="date" @keyup.enter="applyDateRange"></label><span class="ordo-filter-bar__dash">—</span><label><span>Até</span><input v-model="endDate" type="date" @keyup.enter="applyDateRange"></label></div><div class="ordo-filter-bar__actions"><span v-if="activeTabLoading" class="ordo-loading-note"><i /> lendo API…</span><button type="button" class="ordo-button ordo-button--quiet" :disabled="activeTabLoading" @click="refreshCurrentTab"><span>↻</span> Atualizar</button><button type="button" class="ordo-button ordo-button--primary" :disabled="activeTabLoading" @click="applyDateRange">Aplicar período <span>→</span></button></div></section>
+        <section class="ordo-filter-bar" aria-label="Filtros do dashboard"><div class="ordo-filter-bar__period"><div class="ordo-filter-bar__period-header"><span class="ordo-filter-bar__label">Período de leitura</span><div class="ordo-period-toggle" role="group" aria-label="Escopo do período"><button type="button" :class="{ 'is-active': periodMode === 'range' }" :aria-pressed="periodMode === 'range'" @click="periodMode = 'range'">Intervalo</button><button type="button" :class="{ 'is-active': periodMode === 'all' }" :aria-pressed="periodMode === 'all'" @click="periodMode = 'all'">Desde sempre</button></div></div><div v-if="!isAllTime" class="ordo-filter-bar__dates"><label><span>De</span><input v-model="startDate" type="date" @keyup.enter="applyDateRange"></label><span class="ordo-filter-bar__dash">—</span><label><span>Até</span><input v-model="endDate" type="date" @keyup.enter="applyDateRange"></label></div><div v-else class="ordo-filter-bar__all-time"><span class="ordo-filter-bar__all-time-mark">∞</span><div><strong>Todo o histórico disponível</strong><small>métricas de período agregadas desde o início do histórico</small></div></div></div><div class="ordo-filter-bar__actions"><span v-if="activeTabLoading" class="ordo-loading-note"><i /> lendo API…</span><button type="button" class="ordo-button ordo-button--quiet" :disabled="activeTabLoading" @click="refreshCurrentTab"><span>↻</span> Atualizar</button><button type="button" class="ordo-button ordo-button--primary" :disabled="activeTabLoading" @click="applyDateRange">{{ isAllTime ? 'Ver desde sempre' : 'Aplicar período' }} <span>→</span></button></div></section>
 
         <section v-if="dashboardError && !dashboardReady" class="ordo-state ordo-state--error"><span class="ordo-state__symbol">!</span><div><h2>Não foi possível abrir o painel</h2><p>{{ dashboardError }}</p><button type="button" class="ordo-button ordo-button--primary" @click="loadTab(activeTab, true)">Tentar novamente <span>↗</span></button></div></section>
         <section v-else-if="!dashboardReady" class="ordo-loading-panel"><div class="ordo-loading-panel__orb" /><p>Consultando os sinais do Ordo</p><span>Autenticando e preparando as seções necessárias…</span></section>
         <template v-else>
           <div v-if="dashboardError" class="ordo-inline-error"><span>!</span>{{ dashboardError }}</div>
           <OrdoOverviewPanel v-if="activeTab === 'overview'" :dashboard="dashboard" :period="period" />
-          <OrdoGrowthPanel v-else-if="activeTab === 'growth'" :dashboard="dashboard" :period="period" :start-date="startDate" :end-date="endDate" />
-          <OrdoPracticePanel v-else-if="activeTab === 'practice'" :dashboard="dashboard" :start-date="startDate" :end-date="endDate" />
+          <OrdoGrowthPanel v-else-if="activeTab === 'growth'" :dashboard="dashboard" :period="period" :start-date="dashboardStartDate" :end-date="dashboardEndDate" :all-time="isAllTime" />
+          <OrdoPracticePanel v-else-if="activeTab === 'practice'" :dashboard="dashboard" :start-date="dashboardStartDate" :end-date="dashboardEndDate" :all-time="isAllTime" />
           <OrdoOperationsPanel v-else-if="activeTab === 'operations'" :dashboard="dashboard" :life-rules="lifeRules" :life-rules-pagination="lifeRulesPagination" :life-rules-loading="lifeRulesLoading" :life-rules-error="lifeRulesError" :life-rule-status="lifeRuleStatus" :life-rule-search="lifeRuleSearch" :life-rule-current-page="lifeRuleCurrentPage" :life-rule-total-pages="lifeRuleTotalPages" :custom-rosaries="customRosaries" :custom-rosaries-loading="customRosariesLoading" :custom-rosaries-error="customRosariesError" :custom-rosary-status="customRosaryStatus" :selected-rosary-status-items="customRosaryStatusItems" @update:life-rule-status="lifeRuleStatus = $event" @update:life-rule-search="lifeRuleSearch = $event" @search-life-rules="searchLifeRules" @change-life-rule-page="changeLifeRulePage" @update:custom-rosary-status="customRosaryStatus = $event" @change-custom-rosary-status="loadCustomRosaries" @open-rosary="openRosary" />
           <OrdoPlatformPanel v-else :dashboard="dashboard" />
         </template>
@@ -328,4 +340,66 @@ body { margin: 0; background: #e7ece4; }
 @media (max-width:900px) { .ordo-layout { display: block; padding-top: 0; }.ordo-sidebar { display: none; }.ordo-mobile-nav { position: sticky; z-index: 3; top: 0; display: flex; gap: 5px; overflow-x: auto; padding: 8px 20px; border-top: 1px solid rgba(50,73,56,.08); border-bottom: 1px solid rgba(50,73,56,.1); background: rgba(231,236,228,.92); scrollbar-width: none; }.ordo-mobile-nav::-webkit-scrollbar { display: none; }.ordo-mobile-nav button { display: inline-flex; align-items: center; flex: 0 0 auto; gap: 6px; padding: 9px 11px; border: 1px solid transparent; border-radius: 10px; background: transparent; color: #7e8b80; cursor: pointer; font: inherit; font-size: 10px; font-weight: 800; white-space: nowrap; }.ordo-mobile-nav button.is-active { border-color: #d4dfd2; background: #f9fbf7; color: var(--moss-deep); }.ordo-main { padding-top: 12px; } }
 @media (max-width:720px) { .ordo-topbar { padding: 17px 18px 15px; }.ordo-brand__name { font-size: 18px; }.ordo-account__copy,.ordo-logout { display: none; }.ordo-layout { padding: 0 18px 40px; }.ordo-intro { display: block; padding: 22px 0 20px; }.ordo-intro h1 { font-size: 43px; }.ordo-intro__description { font-size: 12px; }.ordo-intro__meta { display: flex; align-items: center; justify-content: flex-start; margin-top: 17px; }.ordo-filter-bar { display: block; padding: 13px; }.ordo-filter-bar__period { display: grid; grid-template-columns: auto 1fr auto 1fr; gap: 7px; }.ordo-filter-bar__label { grid-column: 1/-1; margin-bottom: 2px; }.ordo-filter-bar label { display: grid; gap: 4px; }.ordo-filter-bar label span { font-size: 9px; }.ordo-filter-bar input { width: 100%; box-sizing: border-box; }.ordo-filter-bar__actions { margin-top: 12px; }.ordo-filter-bar__actions .ordo-button--primary { flex: 1; }.ordo-metrics-grid--four,.ordo-grid-2,.ordo-queue-grid { grid-template-columns: 1fr 1fr; }.ordo-section-intro { display: block; }.ordo-section-intro .ordo-scope-label { display: block; margin-top: 10px; }.ordo-highlight-grid { grid-template-columns: 1fr 1fr; }.ordo-queue-grid { gap: 12px; }.ordo-queue-card__header,.ordo-table-card__header { padding-right: 16px; padding-left: 16px; }.ordo-queue-card__filters { padding-right: 16px; padding-left: 16px; }.ordo-queue-item { padding-right: 16px; padding-left: 16px; }.ordo-mini-bars--compact { padding-right: 16px; padding-left: 16px; }.ordo-table-wrap { padding-right: 16px; padding-left: 16px; }.ordo-modal__form { grid-template-columns: 1fr; } }
 @media (max-width:500px) { .ordo-metrics-grid--four,.ordo-grid-2,.ordo-queue-grid { grid-template-columns: 1fr; }.ordo-intro h1 { font-size: 38px; }.ordo-filter-bar__period { grid-template-columns: auto 1fr; }.ordo-filter-bar__dash { display: none; }.ordo-filter-bar__period label:nth-of-type(2) { grid-column: 1/-1; }.ordo-filter-bar__actions { display: grid; grid-template-columns: auto 1fr; }.ordo-loading-note { grid-column: 1/-1; }.ordo-stat-banner { display: block; }.ordo-stat-banner span { margin-top: 4px; }.ordo-modal-backdrop { padding: 10px; }.ordo-modal { max-height: calc(100vh - 20px); border-radius: 17px; }.ordo-modal__header,.ordo-modal__facts,.ordo-modal__form { padding-right: 17px; padding-left: 17px; }.ordo-modal__description,.ordo-modal__sequence { margin-right: 17px; margin-left: 17px; }.ordo-modal__actions { padding-right: 17px; padding-left: 17px; } }
+
+/* Keep nested cards and native date controls inside their grid tracks. */
+.ordo-main, .ordo-content-stack, .ordo-filter-bar, .ordo-grid-2, .ordo-queue-grid { min-width: 0; }
+.ordo-main { overflow-x: hidden; }
+.ordo-filter-bar { box-sizing: border-box; }
+.ordo-filter-bar__period { display: grid; grid-template-columns: minmax(0, 1fr); flex: 1 1 auto; min-width: 0; gap: 10px; }
+.ordo-filter-bar__period-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; }
+.ordo-filter-bar__dates { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: end; gap: 10px; min-width: 0; }
+.ordo-filter-bar__dates label { width: 100%; min-width: 0; }
+.ordo-filter-bar__dates input { flex: 1 1 auto; width: auto; max-width: 100%; box-sizing: border-box; }
+.ordo-period-toggle { display: inline-flex; flex: 0 0 auto; gap: 3px; padding: 3px; border: 1px solid #d8e1d5; border-radius: 10px; background: #edf3eb; }
+.ordo-period-toggle button { padding: 6px 9px; border: 0; border-radius: 7px; background: transparent; color: #829082; cursor: pointer; font: inherit; font-size: 10px; font-weight: 800; }
+.ordo-period-toggle button.is-active { background: #fff; color: var(--moss-deep); box-shadow: 0 2px 6px rgba(38,55,44,.08); }
+.ordo-filter-bar__all-time { display: flex; align-items: center; min-width: 0; gap: 10px; padding: 8px 10px; border: 1px solid #e4dcc7; border-radius: 10px; background: #fbf7ed; }
+.ordo-filter-bar__all-time-mark { display: grid; flex: 0 0 auto; width: 25px; height: 25px; place-items: center; border-radius: 8px; background: #f0dfbd; color: #9b7541; font-family: Georgia,serif; font-size: 18px; }
+.ordo-filter-bar__all-time strong, .ordo-filter-bar__all-time small { display: block; }
+.ordo-filter-bar__all-time strong { color: #715d3f; font-size: 11px; }
+.ordo-filter-bar__all-time small { margin-top: 2px; overflow: hidden; color: #a4957d; font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+.ordo-filter-bar__actions { min-width: 0; flex-wrap: wrap; }
+.ordo-filter-bar input { box-sizing: border-box; max-width: 100%; }
+.ordo-grid-2 > *, .ordo-queue-grid > * { min-width: 0; }
+.ordo-table-card, .ordo-queue-card { box-sizing: border-box; max-width: 100%; min-width: 0; }
+.ordo-table-card__header, .ordo-queue-card__header { min-width: 0; }
+.ordo-table-card__header > div, .ordo-queue-card__header > div { min-width: 0; }
+.ordo-queue-card__filters { box-sizing: border-box; min-width: 0; }
+.ordo-queue-card__filters input, .ordo-queue-card__filters select { max-width: 100%; box-sizing: border-box; }
+.ordo-queue-item { box-sizing: border-box; max-width: 100%; min-width: 0; }
+.ordo-queue-item__copy, .ordo-queue-item__copy > div, .ordo-queue-item__copy strong, .ordo-queue-item__copy p, .ordo-queue-item__copy small { min-width: 0; }
+.ordo-queue-item__copy { max-width: 100%; }
+.ordo-queue-item__arrow { flex: 0 0 auto; }
+.ordo-highlight-grid > * { min-width: 0; }
+.ordo-note-box { grid-template-columns: auto minmax(0, 1fr); min-width: 0; }
+.ordo-note-box strong { justify-self: start; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ordo-note-box small { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ordo-info-callout { box-sizing: border-box; min-width: 0; }
+.ordo-info-callout p { min-width: 0; }
+.ordo-queue-help { display: flex; align-items: flex-start; gap: 8px; min-width: 0; margin: 0 24px 12px; padding: 9px 10px; border: 1px solid #e4ebe1; border-radius: 10px; background: #f4f8f2; color: #7f8d80; font-size: 10px; line-height: 1.45; }
+.ordo-queue-help > span { display: grid; flex: 0 0 auto; width: 18px; height: 18px; place-items: center; border-radius: 50%; background: #dfebdd; color: var(--moss); font-size: 11px; font-weight: 800; }
+.ordo-queue-help p { min-width: 0; margin: 1px 0 0; }
+.ordo-queue-help strong { color: var(--moss-deep); }
+.ordo-queue-help--warm { border-color: #e9dcc3; background: #fbf7ed; }
+.ordo-queue-help--warm > span { background: #f0dfbd; color: #9b7541; }
+.ordo-queue-item__action { flex: 0 0 auto; align-self: center; color: var(--moss); font-size: 10px; font-weight: 800; }
+
+@media (max-width: 720px) {
+  .ordo-filter-bar__period-header { align-items: flex-start; flex-wrap: wrap; }
+  .ordo-filter-bar__dates { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; }
+  .ordo-filter-bar__dates label { display: grid; gap: 4px; }
+  .ordo-filter-bar__dates input { width: 100%; }
+  .ordo-filter-bar__dash { display: none; }
+  .ordo-filter-bar__actions { display: flex; }
+}
+
+@media (max-width: 500px) {
+  .ordo-filter-bar__dates { grid-template-columns: minmax(0, 1fr); }
+  .ordo-filter-bar__dates label { grid-column: 1; }
+  .ordo-filter-bar__all-time { align-items: flex-start; }
+  .ordo-filter-bar__actions { display: grid; grid-template-columns: auto minmax(0, 1fr); }
+  .ordo-filter-bar__actions .ordo-button { min-width: 0; }
+  .ordo-queue-help { margin-right: 16px; margin-left: 16px; }
+  .ordo-queue-item__action { display: none; }
+}
 </style>
