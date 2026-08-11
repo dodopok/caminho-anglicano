@@ -406,4 +406,54 @@ body { margin: 0; background: #e7ece4; }
   .ordo-queue-help { margin-right: 16px; margin-left: 16px; }
   .ordo-queue-item__action { display: none; }
 }
+
+.ordo-empty-inline {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  padding: 18px 24px;
+  color: #8b958b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.ordo-empty-inline > span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.ordo-empty-inline__mark {
+  display: grid;
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 50%;
+  background: #edf2eb;
+  color: var(--moss);
+  font-weight: 800;
+}
+.ordo-queue-help {
+  box-sizing: border-box;
+}
+.ordo-queue-help > span {
+  margin-top: 1px;
+}
+.ordo-queue-help p {
+  overflow-wrap: anywhere;
+}
+.ordo-table-card__metrics {
+  margin: 0 24px 24px;
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .ordo-empty-inline {
+    padding: 16px;
+    font-size: 12px;
+  }
+  .ordo-table-card__metrics {
+    margin: 0 16px 16px;
+    gap: 10px;
+  }
+}
 </style>
