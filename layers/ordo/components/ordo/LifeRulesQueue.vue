@@ -18,6 +18,7 @@ const emit = defineEmits<{
   'update:search': [value: string]
   search: []
   'change-page': [direction: number]
+  'open-all': []
 }>()
 
 const { formatNumber, formatDate } = useOrdoDashboardPresentation()
@@ -32,7 +33,7 @@ const onSearchChange = (event: Event) => emit('update:search', (event.target as 
 
 <template>
   <section class="ordo-queue-card">
-    <div class="ordo-queue-card__header"><div><p class="ordo-kicker">Fila administrativa</p><h2>Regras de vida</h2><span>Somente leitura · públicas e mais antigas primeiro</span></div><span class="ordo-queue-card__count">{{ formatNumber(pagination?.total) }}</span></div>
+    <div class="ordo-queue-card__header"><div><p class="ordo-kicker">Fila administrativa</p><h2>Regras de vida</h2><span>Somente leitura · públicas e mais antigas primeiro</span></div><div class="ordo-table-card__header-actions"><button v-if="rules.length" type="button" class="ordo-card-action" @click="emit('open-all')">Abrir dados ↗</button><span class="ordo-queue-card__count">{{ formatNumber(pagination?.total) }}</span></div></div>
     <div class="ordo-queue-card__filters"><select :value="status" aria-label="Status das regras" @change="onStatusChange"><option value="pending">Pendentes</option><option value="approved">Aprovadas</option><option value="all">Todas</option></select><input :value="search" type="search" placeholder="Buscar título" @input="onSearchChange" @keyup.enter="emit('search')"><button type="button" class="ordo-button ordo-button--quiet" @click="emit('search')">Buscar</button></div>
     <div class="ordo-queue-help"><span>i</span><p>A API atual permite consultar a fila, mas ainda não disponibiliza uma ação administrativa para aprovar regras de vida.</p></div>
     <div v-if="loading" class="ordo-queue-loading">Carregando fila…</div>
