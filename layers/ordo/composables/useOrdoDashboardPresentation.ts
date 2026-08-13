@@ -156,6 +156,24 @@ export const useOrdoDashboardPresentation = () => {
       : date.toLocaleDateString('pt-BR', { month: 'short', year: '2-digit' })
   }
 
+  const formatExplorerValue = (value: unknown, key = '') => {
+    if (value === null || value === undefined || value === '') return '—'
+    if (typeof value === 'boolean') return value ? 'Sim' : 'Não'
+
+    if (typeof value === 'number') {
+      if (key.includes('coverage') || key.includes('percentage') || key.includes('rate')) return formatPercent(value)
+      if (key.includes('duration')) return formatDuration(value)
+      return formatNumber(value)
+    }
+
+    if (typeof value === 'string') {
+      if (key === 'date' || key === 'week_start' || key.endsWith('_date')) return formatDate(value)
+      if (key.endsWith('_at') || key.includes('timestamp')) return formatTimestamp(value)
+    }
+
+    return String(value)
+  }
+
   return {
     asNumber,
     formatNumber,
@@ -173,6 +191,7 @@ export const useOrdoDashboardPresentation = () => {
     aggregateCountMapByMonth,
     aggregateDailyCountsByMonth,
     formatChartLabel,
-    formatMonthLabel
+    formatMonthLabel,
+    formatExplorerValue
   }
 }

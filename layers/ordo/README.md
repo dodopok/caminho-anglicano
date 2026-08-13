@@ -33,8 +33,9 @@ Se a API retornar `401` (`AUTHENTICATION_REQUIRED` ou `AUTHENTICATION_FAILED`), 
 - Completions, atribuição real por prayer book, diários, favoritos, compartilhamentos e weekly prayers.
 - Áudio, notificações, saúde operacional, regras de vida e moderação.
 - Fila paginada de `GET /api/v1/admin/life_rules`.
-- Fila de `GET /api/v1/admin/custom_rosary_prayers`, detalhe expandido e ações de aprovar/rejeitar.
+- Fila paginada no front-end de `GET /api/v1/admin/custom_rosary_prayers`, detalhe expandido e ações de aprovar/rejeitar.
 - Premium, chaves de API, limites diários e desenvolvedores.
+- Modais de exploração para os arrays e mapas completos do dashboard, com busca, filtros e ordenação local.
 - O filtro `Desde sempre` consulta o histórico desde `1970-01-01`; séries temporais são agrupadas por mês para manter a leitura responsiva.
 
 O painel trata `null` como estado válido, exibe o escopo efetivo de cada seção e não usa e-mail nos rankings. Séries esparsas são preenchidas com zero quando precisam formar uma linha contínua. O retorno da API pode ter até 10 minutos de cache.
@@ -53,6 +54,7 @@ layers/ordo/
 │   ├── PlatformPanel.vue
 │   ├── LifeRulesQueue.vue
 │   ├── CustomRosaryQueue.vue
+│   ├── DataExplorerModal.vue
 │   ├── RosaryReviewModal.vue
 │   └── MetricCard / ChartCard / TopList / charts
 ├── composables/
@@ -63,7 +65,8 @@ layers/ordo/
 ├── pages/portal-do-ordo/
 │   ├── login.vue
 │   └── index.vue
-└── types/dashboard.ts
+├── types/dashboard.ts
+└── types/explorer.ts
 ```
 
 `pages/portal-do-ordo/index.vue` coordena autenticação, filtros, carregamento e navegação. As telas de domínio ficam nos componentes de painel, mantendo o admin responsivo sem concentrar todo o contrato da API em uma única página.
