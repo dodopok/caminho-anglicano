@@ -491,6 +491,35 @@ export interface LifeRulesResponse {
 
 export type CustomRosaryShareStatus = 'private' | 'pending_review' | 'approved' | 'rejected'
 
+export interface RosaryCategory {
+  documentId: string
+  slug: string
+  name: string
+  description?: string | null
+  icon?: string | null
+}
+
+export type RosaryCategorySelection =
+  | { mode: 'existing'; slug: string; documentId?: string }
+  | { mode: 'new'; slug: string; name: string; description?: string; icon?: string }
+
+export const isValidRosaryCategorySelection = (
+  selection: RosaryCategorySelection | null | undefined
+): selection is RosaryCategorySelection => {
+  if (!selection) return false
+
+  if (selection.mode === 'existing') {
+    return Boolean(selection.slug.trim() || selection.documentId?.trim())
+  }
+
+  return Boolean(selection.slug.trim() && selection.name.trim())
+}
+
+export interface CustomRosaryTranslation {
+  locale?: string | null
+  status?: string | null
+}
+
 export interface CustomRosaryAuthor {
   id: number | string
   name: string
@@ -532,6 +561,11 @@ export interface CustomRosaryPrayer {
   author?: CustomRosaryAuthor | null
   moderation_note?: string | null
   strapi_slug?: string | null
+  category?: RosaryCategory | RosaryCategorySelection | null
+  publication_status?: string | null
+  documentId?: string | null
+  translation_status?: string | null
+  translations?: CustomRosaryTranslation[]
   reviewed_at?: string | null
   moderation_reentry_count?: number
   last_moderation_reentry_at?: string | null
@@ -541,10 +575,64 @@ export interface CustomRosaryPrayer {
 
 export interface CustomRosaryListResponse {
   custom_rosary_prayers: CustomRosaryPrayer[]
+  pagination?: CustomRosaryPagination
+}
+
+export interface CustomRosaryPagination {
+  total: number
+  limit: number
+  offset: number
+  count: number
+  has_next?: boolean
 }
 
 export interface CustomRosaryDetailResponse {
   custom_rosary_prayer: CustomRosaryPrayer
+}
+
+export interface RosaryCategoriesResponse {
+  rosary_categories: RosaryCategory[]
+}
+
+/**
+ * Normalizes the compact Rails response before it reaches the dashboard.
+ * The category contract deliberately has no numeric `id` fallback.
+ */
+export const normalizeRosaryCategories = (payload: unknown): RosaryCategoriesResponse => {
+  const root = payload && typeof payload === 'object' ? payload as Record<string, unknown> : null
+  const rawCategories = Array.isArray(payload)
+    ? payload
+    : Array.isArray(root?.rosary_categories)
+      ? root.rosary_categories
+      : Array.isArray(root?.categories)
+        ? root.categories
+        : Array.isArray(root?.data)
+          ? root.data
+          : []
+
+  const rosary_categories = rawCategories.flatMap((item) => {
+    if (!item || typeof item !== 'object') return []
+
+    const record = item as Record<string, unknown>
+    const attributes = record.attributes && typeof record.attributes === 'object'
+      ? record.attributes as Record<string, unknown>
+      : record
+    const documentId = typeof attributes.documentId === 'string' ? attributes.documentId.trim() : ''
+    const slug = typeof attributes.slug === 'string' ? attributes.slug.trim() : ''
+    const name = typeof attributes.name === 'string' ? attributes.name.trim() : ''
+
+    if (!documentId || !slug || !name) return []
+
+    return [{
+      documentId,
+      slug,
+      name,
+      description: typeof attributes.description === 'string' ? attributes.description.trim() || null : null,
+      icon: typeof attributes.icon === 'string' ? attributes.icon.trim() || null : null
+    }]
+  })
+
+  return { rosary_categories }
 }
 
 export interface LifeRulesQuery {
@@ -556,6 +644,8 @@ export interface LifeRulesQuery {
 
 export interface CustomRosaryQuery {
   share_status?: Exclude<CustomRosaryShareStatus, 'private'>
+  limit?: number
+  offset?: number
 }
 
 export interface OrdoApiErrorPayload {

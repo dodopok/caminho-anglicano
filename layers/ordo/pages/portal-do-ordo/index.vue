@@ -8,8 +8,12 @@ import OrdoRosaryReviewModal from '../../components/ordo/RosaryReviewModal.vue'
 import { useOrdoDashboardPresentation } from '../../composables/useOrdoDashboardPresentation'
 import {
   isSessionError,
+  isValidRosaryCategorySelection,
   type CustomRosaryPrayer,
+  type CustomRosaryPagination,
   type CustomRosaryShareStatus,
+  type RosaryCategory,
+  type RosaryCategorySelection,
   type DashboardData,
   type DashboardPeriod,
   type DashboardSectionName,
@@ -40,6 +44,7 @@ const {
   fetchLifeRules,
   fetchCustomRosaries,
   fetchCustomRosary,
+  fetchRosaryCategories,
   approveCustomRosary,
   rejectCustomRosary
 } = useOrdoApi()
@@ -95,6 +100,7 @@ const lifeRuleOffset = ref(0)
 const lifeRuleLimit = 6
 
 const customRosaries = ref<CustomRosaryPrayer[]>([])
+const customRosaryPagination = ref<CustomRosaryPagination | null>(null)
 const customRosariesLoading = ref(false)
 const customRosariesError = ref<string | null>(null)
 const customRosaryStatus = ref<Exclude<CustomRosaryShareStatus, 'private'>>('pending_review')
@@ -104,6 +110,11 @@ const selectedRosary = ref<CustomRosaryPrayer | null>(null)
 const selectedRosaryLoading = ref(false)
 const rosaryActionLoading = ref(false)
 const rosaryActionError = ref<string | null>(null)
+const rosaryCategories = ref<RosaryCategory[]>([])
+const rosaryCategoriesLoading = ref(false)
+const rosaryCategoriesLoaded = ref(false)
+const rosaryCategoriesError = ref<string | null>(null)
+const rosaryCategorySelection = ref<RosaryCategorySelection | null>(null)
 const strapiSlug = ref('')
 const rejectionReason = ref('')
 
@@ -122,11 +133,34 @@ const activeTabLoading = computed(() => isTabLoading(activeTab.value))
 const dashboardReady = computed(() => hasLoadedOnce.value || loadedSections.value.length > 0)
 const lifeRuleTotalPages = computed(() => Math.max(1, Math.ceil((lifeRulesPagination.value?.total || 0) / lifeRuleLimit)))
 const lifeRuleCurrentPage = computed(() => Math.floor(lifeRuleOffset.value / lifeRuleLimit) + 1)
-const customRosaryTotalPages = computed(() => Math.max(1, Math.ceil(customRosaries.value.length / customRosaryPageSize)))
+const customRosaryTotalPages = computed(() => {
+  const total = customRosaryPagination.value?.total ?? customRosaries.value.length
+  return Math.max(1, Math.ceil(total / customRosaryPageSize))
+})
 const customRosaryCurrentPage = computed(() => Math.floor(customRosaryOffset.value / customRosaryPageSize) + 1)
 const moderationSummary = computed(() => dashboard.value.moderation?.custom_rosaries)
 const customRosaryStatusItems = computed(() => Object.entries(dashboard.value.custom_rosaries?.by_share_status || {})
   .map(([key, value]) => ({ key, label: humanizeKey(key), value: value || 0 })))
+
+const categorySelectionFromRosary = (category: CustomRosaryPrayer['category']): RosaryCategorySelection | null => {
+  if (!category?.slug) return null
+
+  if ('mode' in category && category.mode === 'new') {
+    return {
+      mode: 'new',
+      slug: category.slug,
+      name: category.name,
+      ...(category.description ? { description: category.description } : {}),
+      ...(category.icon ? { icon: category.icon } : {})
+    }
+  }
+
+  return {
+    mode: 'existing',
+    slug: category.slug,
+    ...('documentId' in category && category.documentId ? { documentId: category.documentId } : {})
+  }
+}
 
 const errorMessage = (error: unknown) => error instanceof Error ? error.message : 'Não foi possível carregar os dados.'
 
@@ -156,10 +190,31 @@ const loadCustomRosaries = async () => {
   customRosariesLoading.value = true
   customRosariesError.value = null
   try {
-    const response = await fetchCustomRosaries({ share_status: customRosaryStatus.value })
-    customRosaries.value = response.custom_rosary_prayers || []
-    if (customRosaryOffset.value >= customRosaries.value.length && customRosaryOffset.value > 0) {
-      customRosaryOffset.value = Math.max(0, (customRosaryTotalPages.value - 1) * customRosaryPageSize)
+    const requestedOffset = customRosaryOffset.value
+    const response = await fetchCustomRosaries({
+      share_status: customRosaryStatus.value,
+      limit: customRosaryPageSize,
+      offset: requestedOffset
+    })
+    const rosaries = response.custom_rosary_prayers || []
+    const pagination = response.pagination || null
+    const pageCount = pagination?.count ?? rosaries.length
+
+    customRosaries.value = rosaries
+    customRosaryPagination.value = pagination
+
+    // A decision can remove the last item from the current page. Move back to
+    // the previous real page and load it with the same status filter.
+    if (pageCount === 0 && requestedOffset > 0) {
+      const lastPageOffset = pagination
+        ? Math.max(0, (Math.ceil(pagination.total / customRosaryPageSize) - 1) * customRosaryPageSize)
+        : requestedOffset - customRosaryPageSize
+      const nextOffset = Math.min(requestedOffset - customRosaryPageSize, lastPageOffset)
+
+      if (nextOffset !== requestedOffset) {
+        customRosaryOffset.value = nextOffset
+        await loadCustomRosaries()
+      }
     }
   } catch (error) {
     if (!isSessionError(error)) customRosariesError.value = errorMessage(error)
@@ -168,10 +223,11 @@ const loadCustomRosaries = async () => {
   }
 }
 
-const changeCustomRosaryPage = (direction: number) => {
+const changeCustomRosaryPage = async (direction: number) => {
   const nextOffset = customRosaryOffset.value + direction * customRosaryPageSize
-  if (nextOffset < 0 || nextOffset >= customRosaries.value.length) return
+  if (nextOffset < 0 || nextOffset >= customRosaryTotalPages.value * customRosaryPageSize) return
   customRosaryOffset.value = nextOffset
+  await loadCustomRosaries()
 }
 
 const changeCustomRosaryStatus = async () => {
@@ -229,15 +285,19 @@ const changeLifeRulePage = async (direction: number) => {
 
 const openRosary = async (rosary: CustomRosaryPrayer) => {
   selectedRosary.value = rosary
+  rosaryCategorySelection.value = categorySelectionFromRosary(rosary.category)
   strapiSlug.value = rosary.strapi_slug || ''
   rejectionReason.value = rosary.moderation_note || ''
   rosaryActionError.value = null
+  rosaryCategoriesError.value = null
   selectedRosaryLoading.value = true
   try {
     const response = await fetchCustomRosary(rosary.id)
     selectedRosary.value = response.custom_rosary_prayer
+    rosaryCategorySelection.value = categorySelectionFromRosary(response.custom_rosary_prayer.category)
     strapiSlug.value = response.custom_rosary_prayer.strapi_slug || ''
     rejectionReason.value = response.custom_rosary_prayer.moderation_note || ''
+    await loadRosaryCategories()
   } catch (error) {
     if (!isSessionError(error)) rosaryActionError.value = errorMessage(error)
   } finally {
@@ -245,9 +305,27 @@ const openRosary = async (rosary: CustomRosaryPrayer) => {
   }
 }
 
+const loadRosaryCategories = async () => {
+  if (rosaryCategoriesLoaded.value || rosaryCategoriesLoading.value) return
+
+  rosaryCategoriesLoading.value = true
+  rosaryCategoriesError.value = null
+  try {
+    const response = await fetchRosaryCategories()
+    rosaryCategories.value = response.rosary_categories || []
+    rosaryCategoriesLoaded.value = true
+  } catch (error) {
+    if (!isSessionError(error)) rosaryCategoriesError.value = errorMessage(error)
+  } finally {
+    rosaryCategoriesLoading.value = false
+  }
+}
+
 const closeRosary = () => {
   if (!rosaryActionLoading.value) {
     selectedRosary.value = null
+    rosaryCategorySelection.value = null
+    strapiSlug.value = ''
     rosaryActionError.value = null
   }
 }
@@ -256,14 +334,31 @@ const replaceRosaryInList = (updated: CustomRosaryPrayer) => {
   customRosaries.value = customRosaries.value.map(item => item.id === updated.id ? updated : item)
 }
 
+const applyRosaryDecision = async (updated: CustomRosaryPrayer) => {
+  selectedRosary.value = updated
+
+  // The item no longer belongs to the active status filter after a normal
+  // approval/rejection. Reload the same offset so the page is filled from the
+  // server without losing the moderator's filter.
+  if (updated.share_status && updated.share_status !== customRosaryStatus.value) {
+    await loadCustomRosaries()
+    return
+  }
+
+  replaceRosaryInList(updated)
+}
+
 const approveSelectedRosary = async () => {
   if (!selectedRosary.value) return
+  if (!isValidRosaryCategorySelection(rosaryCategorySelection.value)) {
+    rosaryActionError.value = 'Selecione uma categoria válida antes de aprovar.'
+    return
+  }
   rosaryActionLoading.value = true
   rosaryActionError.value = null
   try {
-    const response = await approveCustomRosary(selectedRosary.value.id, strapiSlug.value)
-    selectedRosary.value = response.custom_rosary_prayer
-    replaceRosaryInList(response.custom_rosary_prayer)
+    const response = await approveCustomRosary(selectedRosary.value.id, rosaryCategorySelection.value, strapiSlug.value)
+    await applyRosaryDecision(response.custom_rosary_prayer)
   } catch (error) {
     if (!isSessionError(error)) rosaryActionError.value = errorMessage(error)
   } finally {
@@ -277,8 +372,7 @@ const rejectSelectedRosary = async () => {
   rosaryActionError.value = null
   try {
     const response = await rejectCustomRosary(selectedRosary.value.id, rejectionReason.value)
-    selectedRosary.value = response.custom_rosary_prayer
-    replaceRosaryInList(response.custom_rosary_prayer)
+    await applyRosaryDecision(response.custom_rosary_prayer)
   } catch (error) {
     if (!isSessionError(error)) rosaryActionError.value = errorMessage(error)
   } finally {
@@ -321,13 +415,13 @@ watch([authReady, user], ([isReady, currentUser]) => {
           <OrdoOverviewPanel v-if="activeTab === 'overview'" :dashboard="dashboard" :period="period" />
           <OrdoGrowthPanel v-else-if="activeTab === 'growth'" :dashboard="dashboard" :period="period" :start-date="dashboardStartDate" :end-date="dashboardEndDate" :all-time="isAllTime" />
           <OrdoPracticePanel v-else-if="activeTab === 'practice'" :dashboard="dashboard" :start-date="dashboardStartDate" :end-date="dashboardEndDate" :all-time="isAllTime" />
-          <OrdoOperationsPanel v-else-if="activeTab === 'operations'" :dashboard="dashboard" :life-rules="lifeRules" :life-rules-pagination="lifeRulesPagination" :life-rules-loading="lifeRulesLoading" :life-rules-error="lifeRulesError" :life-rule-status="lifeRuleStatus" :life-rule-search="lifeRuleSearch" :life-rule-current-page="lifeRuleCurrentPage" :life-rule-total-pages="lifeRuleTotalPages" :custom-rosaries="customRosaries" :custom-rosaries-loading="customRosariesLoading" :custom-rosaries-error="customRosariesError" :custom-rosary-status="customRosaryStatus" :custom-rosary-current-page="customRosaryCurrentPage" :custom-rosary-total-pages="customRosaryTotalPages" :selected-rosary-status-items="customRosaryStatusItems" @update:life-rule-status="lifeRuleStatus = $event" @update:life-rule-search="lifeRuleSearch = $event" @search-life-rules="searchLifeRules" @change-life-rule-page="changeLifeRulePage" @update:custom-rosary-status="customRosaryStatus = $event" @change-custom-rosary-status="changeCustomRosaryStatus" @change-custom-rosary-page="changeCustomRosaryPage" @open-rosary="openRosary" />
+          <OrdoOperationsPanel v-else-if="activeTab === 'operations'" :dashboard="dashboard" :life-rules="lifeRules" :life-rules-pagination="lifeRulesPagination" :life-rules-loading="lifeRulesLoading" :life-rules-error="lifeRulesError" :life-rule-status="lifeRuleStatus" :life-rule-search="lifeRuleSearch" :life-rule-current-page="lifeRuleCurrentPage" :life-rule-total-pages="lifeRuleTotalPages" :custom-rosaries="customRosaries" :custom-rosary-pagination="customRosaryPagination" :custom-rosaries-loading="customRosariesLoading" :custom-rosaries-error="customRosariesError" :custom-rosary-status="customRosaryStatus" :custom-rosary-current-page="customRosaryCurrentPage" :custom-rosary-total-pages="customRosaryTotalPages" :selected-rosary-status-items="customRosaryStatusItems" @update:life-rule-status="lifeRuleStatus = $event" @update:life-rule-search="lifeRuleSearch = $event" @search-life-rules="searchLifeRules" @change-life-rule-page="changeLifeRulePage" @update:custom-rosary-status="customRosaryStatus = $event" @change-custom-rosary-status="changeCustomRosaryStatus" @change-custom-rosary-page="changeCustomRosaryPage" @open-rosary="openRosary" />
           <OrdoPlatformPanel v-else :dashboard="dashboard" />
         </template>
       </main>
     </div>
 
-    <OrdoRosaryReviewModal v-if="selectedRosary" :rosary="selectedRosary" :loading="selectedRosaryLoading" :action-loading="rosaryActionLoading" :action-error="rosaryActionError" :strapi-slug="strapiSlug" :rejection-reason="rejectionReason" @close="closeRosary" @update:strapi-slug="strapiSlug = $event" @update:rejection-reason="rejectionReason = $event" @approve="approveSelectedRosary" @reject="rejectSelectedRosary" />
+    <OrdoRosaryReviewModal v-if="selectedRosary" :rosary="selectedRosary" :loading="selectedRosaryLoading" :action-loading="rosaryActionLoading" :action-error="rosaryActionError" :categories="rosaryCategories" :categories-loading="rosaryCategoriesLoading" :categories-error="rosaryCategoriesError" :category-selection="rosaryCategorySelection" :strapi-slug="strapiSlug" :rejection-reason="rejectionReason" @close="closeRosary" @update:category-selection="rosaryCategorySelection = $event" @update:strapi-slug="strapiSlug = $event" @update:rejection-reason="rejectionReason = $event" @approve="approveSelectedRosary" @reject="rejectSelectedRosary" />
   </div>
 </template>
 

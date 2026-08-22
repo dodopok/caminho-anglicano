@@ -7,6 +7,7 @@ import OrdoMetricCard from './MetricCard.vue'
 import { useOrdoDashboardPresentation } from '../../composables/useOrdoDashboardPresentation'
 import type {
   CustomRosaryPrayer,
+  CustomRosaryPagination,
   CustomRosaryShareStatus,
   DashboardData,
   LifeRule,
@@ -26,6 +27,7 @@ const props = defineProps<{
   lifeRuleCurrentPage: number
   lifeRuleTotalPages: number
   customRosaries: CustomRosaryPrayer[]
+  customRosaryPagination?: CustomRosaryPagination | null
   customRosariesLoading: boolean
   customRosariesError?: string | null
   customRosaryStatus: Exclude<CustomRosaryShareStatus, 'private'>
@@ -263,7 +265,7 @@ const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: 
 
     <div class="ordo-queue-grid">
       <OrdoLifeRulesQueue :rules="lifeRules" :pagination="lifeRulesPagination" :loading="lifeRulesLoading" :error="lifeRulesError" :status="lifeRuleStatus" :search="lifeRuleSearch" :current-page="lifeRuleCurrentPage" :total-pages="lifeRuleTotalPages" @update:status="emit('update:lifeRuleStatus', $event)" @update:search="emit('update:lifeRuleSearch', $event)" @search="emit('search-life-rules')" @change-page="emit('change-life-rule-page', $event)" @open-all="activeExplorer = 'lifeRules'" />
-      <OrdoCustomRosaryQueue :rosaries="customRosaries" :loading="customRosariesLoading" :error="customRosariesError" :status="customRosaryStatus" :current-page="customRosaryCurrentPage" :total-pages="customRosaryTotalPages" :summary="dashboard.custom_rosaries" :status-items="selectedRosaryStatusItems" @update:status="emit('update:customRosaryStatus', $event)" @change="emit('change-custom-rosary-status')" @change-page="emit('change-custom-rosary-page', $event)" @open="emit('open-rosary', $event)" @open-all="activeExplorer = 'customRosaries'" />
+      <OrdoCustomRosaryQueue :rosaries="customRosaries" :pagination="customRosaryPagination" :loading="customRosariesLoading" :error="customRosariesError" :status="customRosaryStatus" :current-page="customRosaryCurrentPage" :total-pages="customRosaryTotalPages" :summary="dashboard.custom_rosaries" :status-items="selectedRosaryStatusItems" @update:status="emit('update:customRosaryStatus', $event)" @change="emit('change-custom-rosary-status')" @change-page="emit('change-custom-rosary-page', $event)" @open="emit('open-rosary', $event)" @open-all="activeExplorer = 'customRosaries'" />
     </div>
 
     <div v-if="moderation" class="ordo-table-card"><div class="ordo-table-card__header"><div><p class="ordo-kicker">Decisões no período</p><h2>Qualidade da moderação</h2></div><div class="ordo-table-card__header-actions"><span class="ordo-scope-label">{{ formatPercent(moderation.approval_rate) }} de aprovação</span><button type="button" class="ordo-card-action" @click="activeExplorer = 'moderation'">Abrir métricas ↗</button></div></div><div class="ordo-highlight-grid ordo-highlight-grid--wide ordo-table-card__metrics"><div><span>Aprovadas</span><strong>{{ formatNumber(moderation.approved_in_period) }}</strong></div><div><span>Rejeitadas</span><strong>{{ formatNumber(moderation.rejected_in_period) }}</strong></div><div><span>Reentradas</span><strong>{{ formatNumber(moderation.reentries_in_period) }}</strong></div><div><span>Tempo médio</span><strong>{{ formatDuration(moderation.average_response_time_seconds) }}</strong></div></div></div>
@@ -275,5 +277,5 @@ const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: 
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'adoptions'" title="Adoção de regras de vida" description="Ranking completo de regras adotadas na base total." :columns="lifeRuleAdoptionColumns" :rows="lifeRuleAdoptionRows" default-sort-key="adoptions" search-placeholder="Buscar regra…" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'moderation'" title="Métricas de moderação" description="Pendências atuais, decisões no período, reentradas e idade das filas." :columns="moderationColumns" :rows="moderationRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'health'" title="Saúde operacional" description="Detalhamento de falhas, sessões travadas e chaves próximas do vencimento." :columns="healthColumns" :rows="healthRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
-  <OrdoDataExplorerModal v-else-if="activeExplorer === 'customRosaries'" title="Rosários compartilhados" description="Todos os itens carregados da fila, com busca, filtros e ordenação no front-end." :columns="customRosaryColumns" :rows="customRosaryRows" :filters="customRosaryFilters" default-sort-key="created_at" search-placeholder="Buscar título, autor ou descrição…" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
+  <OrdoDataExplorerModal v-else-if="activeExplorer === 'customRosaries'" title="Rosários compartilhados" description="Itens da página atual da fila, com busca, filtros e ordenação no front-end." :columns="customRosaryColumns" :rows="customRosaryRows" :filters="customRosaryFilters" default-sort-key="created_at" search-placeholder="Buscar título, autor ou descrição…" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
 </template>

@@ -1,5 +1,8 @@
 import {
   OrdoApiError,
+  normalizeRosaryCategories,
+  type RosaryCategoriesResponse,
+  type RosaryCategorySelection,
   type CustomRosaryDetailResponse,
   type CustomRosaryListResponse,
   type CustomRosaryQuery,
@@ -94,20 +97,33 @@ export const useOrdoApi = () => {
   const fetchCustomRosaries = async (query: CustomRosaryQuery = {}): Promise<CustomRosaryListResponse> => {
     const params = new URLSearchParams()
     if (query.share_status) params.set('share_status', query.share_status)
+    params.set('limit', String(Math.min(Math.max(query.limit || 20, 1), 100)))
+    params.set('offset', String(Math.max(query.offset || 0, 0)))
 
-    const queryString = params.toString()
     return request<CustomRosaryListResponse>(
-      `/api/v1/admin/custom_rosary_prayers${queryString ? `?${queryString}` : ''}`
+      `/api/v1/admin/custom_rosary_prayers?${params.toString()}`
     )
   }
 
   const fetchCustomRosary = async (id: number | string): Promise<CustomRosaryDetailResponse> =>
     request<CustomRosaryDetailResponse>(`/api/v1/admin/custom_rosary_prayers/${id}`)
 
-  const approveCustomRosary = async (id: number | string, strapiSlug?: string) =>
+  // Rails contract: this endpoint is admin-authenticated by the Firebase
+  // bearer token. It intentionally returns only compact category metadata.
+  const fetchRosaryCategories = async (): Promise<RosaryCategoriesResponse> => {
+    const payload = await request<unknown>('/api/v1/admin/rosary_categories')
+    return normalizeRosaryCategories(payload)
+  }
+
+  // Rails resolves an existing category by documentId/slug, or creates and
+  // assigns the new category from these editorial fields before publication.
+  const approveCustomRosary = async (id: number | string, category: RosaryCategorySelection, strapiSlug?: string) =>
     request<CustomRosaryDetailResponse>(`/api/v1/admin/custom_rosary_prayers/${id}/approve`, {
       method: 'POST',
-      body: strapiSlug?.trim() ? { strapi_slug: strapiSlug.trim() } : undefined
+      body: {
+        category,
+        ...(strapiSlug?.trim() ? { strapi_slug: strapiSlug.trim() } : {})
+      }
     })
 
   const rejectCustomRosary = async (id: number | string, reason?: string) =>
@@ -121,6 +137,7 @@ export const useOrdoApi = () => {
     fetchLifeRules,
     fetchCustomRosaries,
     fetchCustomRosary,
+    fetchRosaryCategories,
     approveCustomRosary,
     rejectCustomRosary,
     request,
