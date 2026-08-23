@@ -12,6 +12,8 @@ import {
   type CustomRosaryPrayer,
   type CustomRosaryPagination,
   type CustomRosaryShareStatus,
+  type CustomRosarySortDirection,
+  type CustomRosarySortKey,
   type RosaryCategory,
   type RosaryCategorySelection,
   type DashboardData,
@@ -104,8 +106,12 @@ const customRosaryPagination = ref<CustomRosaryPagination | null>(null)
 const customRosariesLoading = ref(false)
 const customRosariesError = ref<string | null>(null)
 const customRosaryStatus = ref<Exclude<CustomRosaryShareStatus, 'private'>>('pending_review')
+const customRosarySearch = ref('')
+const customRosarySort = ref<CustomRosarySortKey>('created_at')
+const customRosarySortDirection = ref<CustomRosarySortDirection>('desc')
 const customRosaryPageSize = 5
 const customRosaryOffset = ref(0)
+let customRosaryRequestId = 0
 const selectedRosary = ref<CustomRosaryPrayer | null>(null)
 const selectedRosaryLoading = ref(false)
 const rosaryActionLoading = ref(false)
@@ -187,15 +193,21 @@ const loadLifeRules = async () => {
 }
 
 const loadCustomRosaries = async () => {
+  const requestId = ++customRosaryRequestId
   customRosariesLoading.value = true
   customRosariesError.value = null
   try {
     const requestedOffset = customRosaryOffset.value
     const response = await fetchCustomRosaries({
       share_status: customRosaryStatus.value,
+      search: customRosarySearch.value,
+      sort: customRosarySort.value,
+      direction: customRosarySortDirection.value,
       limit: customRosaryPageSize,
       offset: requestedOffset
     })
+    if (requestId !== customRosaryRequestId) return
+
     const rosaries = response.custom_rosary_prayers || []
     const pagination = response.pagination || null
     const pageCount = pagination?.count ?? rosaries.length
@@ -217,9 +229,10 @@ const loadCustomRosaries = async () => {
       }
     }
   } catch (error) {
+    if (requestId !== customRosaryRequestId) return
     if (!isSessionError(error)) customRosariesError.value = errorMessage(error)
   } finally {
-    customRosariesLoading.value = false
+    if (requestId === customRosaryRequestId) customRosariesLoading.value = false
   }
 }
 
@@ -231,6 +244,18 @@ const changeCustomRosaryPage = async (direction: number) => {
 }
 
 const changeCustomRosaryStatus = async () => {
+  customRosaryOffset.value = 0
+  await loadCustomRosaries()
+}
+
+const searchCustomRosaries = async () => {
+  customRosaryOffset.value = 0
+  await loadCustomRosaries()
+}
+
+const changeCustomRosarySort = async (sort: CustomRosarySortKey, direction: CustomRosarySortDirection) => {
+  customRosarySort.value = sort
+  customRosarySortDirection.value = direction
   customRosaryOffset.value = 0
   await loadCustomRosaries()
 }
@@ -415,7 +440,7 @@ watch([authReady, user], ([isReady, currentUser]) => {
           <OrdoOverviewPanel v-if="activeTab === 'overview'" :dashboard="dashboard" :period="period" />
           <OrdoGrowthPanel v-else-if="activeTab === 'growth'" :dashboard="dashboard" :period="period" :start-date="dashboardStartDate" :end-date="dashboardEndDate" :all-time="isAllTime" />
           <OrdoPracticePanel v-else-if="activeTab === 'practice'" :dashboard="dashboard" :start-date="dashboardStartDate" :end-date="dashboardEndDate" :all-time="isAllTime" />
-          <OrdoOperationsPanel v-else-if="activeTab === 'operations'" :dashboard="dashboard" :life-rules="lifeRules" :life-rules-pagination="lifeRulesPagination" :life-rules-loading="lifeRulesLoading" :life-rules-error="lifeRulesError" :life-rule-status="lifeRuleStatus" :life-rule-search="lifeRuleSearch" :life-rule-current-page="lifeRuleCurrentPage" :life-rule-total-pages="lifeRuleTotalPages" :custom-rosaries="customRosaries" :custom-rosary-pagination="customRosaryPagination" :custom-rosaries-loading="customRosariesLoading" :custom-rosaries-error="customRosariesError" :custom-rosary-status="customRosaryStatus" :custom-rosary-current-page="customRosaryCurrentPage" :custom-rosary-total-pages="customRosaryTotalPages" :selected-rosary-status-items="customRosaryStatusItems" @update:life-rule-status="lifeRuleStatus = $event" @update:life-rule-search="lifeRuleSearch = $event" @search-life-rules="searchLifeRules" @change-life-rule-page="changeLifeRulePage" @update:custom-rosary-status="customRosaryStatus = $event" @change-custom-rosary-status="changeCustomRosaryStatus" @change-custom-rosary-page="changeCustomRosaryPage" @open-rosary="openRosary" />
+          <OrdoOperationsPanel v-else-if="activeTab === 'operations'" :dashboard="dashboard" :life-rules="lifeRules" :life-rules-pagination="lifeRulesPagination" :life-rules-loading="lifeRulesLoading" :life-rules-error="lifeRulesError" :life-rule-status="lifeRuleStatus" :life-rule-search="lifeRuleSearch" :life-rule-current-page="lifeRuleCurrentPage" :life-rule-total-pages="lifeRuleTotalPages" :custom-rosaries="customRosaries" :custom-rosary-pagination="customRosaryPagination" :custom-rosaries-loading="customRosariesLoading" :custom-rosaries-error="customRosariesError" :custom-rosary-status="customRosaryStatus" :custom-rosary-search="customRosarySearch" :custom-rosary-sort="customRosarySort" :custom-rosary-sort-direction="customRosarySortDirection" :custom-rosary-current-page="customRosaryCurrentPage" :custom-rosary-total-pages="customRosaryTotalPages" :selected-rosary-status-items="customRosaryStatusItems" @update:life-rule-status="lifeRuleStatus = $event" @update:life-rule-search="lifeRuleSearch = $event" @search-life-rules="searchLifeRules" @change-life-rule-page="changeLifeRulePage" @update:custom-rosary-status="customRosaryStatus = $event" @update:custom-rosary-search="customRosarySearch = $event" @search-custom-rosaries="searchCustomRosaries" @change-custom-rosary-sort="changeCustomRosarySort" @change-custom-rosary-status="changeCustomRosaryStatus" @change-custom-rosary-page="changeCustomRosaryPage" @open-rosary="openRosary" />
           <OrdoPlatformPanel v-else :dashboard="dashboard" />
         </template>
       </main>

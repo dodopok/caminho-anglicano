@@ -97,6 +97,9 @@ export const useOrdoApi = () => {
   const fetchCustomRosaries = async (query: CustomRosaryQuery = {}): Promise<CustomRosaryListResponse> => {
     const params = new URLSearchParams()
     if (query.share_status) params.set('share_status', query.share_status)
+    if (query.search?.trim()) params.set('search', query.search.trim())
+    if (query.sort) params.set('sort', query.sort)
+    if (query.direction) params.set('direction', query.direction)
     params.set('limit', String(Math.min(Math.max(query.limit || 20, 1), 100)))
     params.set('offset', String(Math.max(query.offset || 0, 0)))
 

@@ -4,7 +4,8 @@ import type {
   ExplorerColumn,
   ExplorerFilter,
   ExplorerRow,
-  ExplorerValue
+  ExplorerValue,
+  ExplorerRemotePagination
 } from '../../types/explorer'
 
 const props = withDefaults(defineProps<{
@@ -19,6 +20,12 @@ const props = withDefaults(defineProps<{
   defaultSortKey?: string
   defaultSortDirection?: 'asc' | 'desc'
   formatValue?: (value: ExplorerValue, key: string, row: ExplorerRow) => string
+  remote?: boolean
+  remoteSearch?: string
+  remoteSortKey?: string
+  remoteSortDirection?: 'asc' | 'desc'
+  remotePagination?: ExplorerRemotePagination | null
+  remoteLoading?: boolean
 }>(), {
   description: undefined,
   eyebrow: 'Dados completos',
@@ -27,11 +34,21 @@ const props = withDefaults(defineProps<{
   emptyMessage: 'Nenhum registro corresponde aos filtros atuais.',
   defaultSortKey: undefined,
   defaultSortDirection: 'desc',
-  formatValue: undefined
+  formatValue: undefined,
+  remote: false,
+  remoteSearch: '',
+  remoteSortKey: undefined,
+  remoteSortDirection: 'desc',
+  remotePagination: null,
+  remoteLoading: false
 })
 
 const emit = defineEmits<{
   close: []
+  'update:remote-search': [value: string]
+  'remote-search': []
+  'remote-sort': [key: string, direction: 'asc' | 'desc']
+  'remote-page': [direction: number]
 }>()
 
 const { formatExplorerValue } = useOrdoDashboardPresentation()
@@ -39,6 +56,10 @@ const search = ref('')
 const sortKey = ref(props.defaultSortKey || props.columns.find(column => column.sortable !== false)?.key || '')
 const sortDirection = ref<'asc' | 'desc'>(props.defaultSortDirection)
 const filterState = reactive<Record<string, string>>({})
+
+const activeSearch = computed(() => props.remote ? props.remoteSearch : search.value)
+const activeSortKey = computed(() => props.remote ? props.remoteSortKey || '' : sortKey.value)
+const activeSortDirection = computed(() => props.remote ? props.remoteSortDirection : sortDirection.value)
 
 for (const filter of props.filters) filterState[filter.key] = ''
 
@@ -56,7 +77,9 @@ const matchesFilters = (row: ExplorerRow) => props.filters.every(filter => {
 })
 
 const filteredRows = computed(() => {
-  const needle = normalize(search.value.trim())
+  if (props.remote) return props.rows
+
+  const needle = normalize(activeSearch.value.trim())
   return props.rows.filter(row => {
     if (!matchesFilters(row)) return false
     if (!needle) return true
@@ -70,12 +93,14 @@ const filteredRows = computed(() => {
 })
 
 const sortedRows = computed(() => {
+  if (props.remote) return props.rows
+
   const rows = [...filteredRows.value]
-  if (!sortKey.value) return rows
+  if (!activeSortKey.value) return rows
 
   return rows.sort((left, right) => {
-    const leftValue = left.values[sortKey.value]
-    const rightValue = right.values[sortKey.value]
+    const leftValue = left.values[activeSortKey.value]
+    const rightValue = right.values[activeSortKey.value]
     const leftNumber = typeof leftValue === 'number' ? leftValue : Number.NaN
     const rightNumber = typeof rightValue === 'number' ? rightValue : Number.NaN
     let comparison = 0
@@ -86,12 +111,21 @@ const sortedRows = computed(() => {
       comparison = normalize(leftValue).localeCompare(normalize(rightValue), 'pt-BR', { numeric: true })
     }
 
-    return sortDirection.value === 'asc' ? comparison : -comparison
+    return activeSortDirection.value === 'asc' ? comparison : -comparison
   })
 })
 
 const toggleSort = (column: ExplorerColumn) => {
   if (column.sortable === false) return
+
+  if (props.remote) {
+    const nextDirection = activeSortKey.value === column.key
+      ? (activeSortDirection.value === 'asc' ? 'desc' : 'asc')
+      : 'desc'
+    emit('remote-sort', column.key, nextDirection)
+    return
+  }
+
   if (sortKey.value === column.key) {
     sortDirection.value = sortDirection.value === 'asc' ? 'desc' : 'asc'
     return
@@ -102,8 +136,12 @@ const toggleSort = (column: ExplorerColumn) => {
 }
 
 const sortLabel = (column: ExplorerColumn) => {
-  if (sortKey.value !== column.key) return 'Ordenar'
-  return sortDirection.value === 'asc' ? 'Ordenado crescente' : 'Ordenado decrescente'
+  if (activeSortKey.value !== column.key) return 'Ordenar'
+  return activeSortDirection.value === 'asc' ? 'Ordenado crescente' : 'Ordenado decrescente'
+}
+
+const onRemoteSearchInput = (event: Event) => {
+  emit('update:remote-search', (event.target as HTMLInputElement).value)
 }
 
 const onKeydown = (event: KeyboardEvent) => {
@@ -129,8 +167,10 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
       <div class="ordo-data-modal__toolbar">
         <label class="ordo-data-modal__search">
           <span>Busca</span>
-          <input v-model="search" type="search" :placeholder="searchPlaceholder" autofocus>
+          <input v-if="remote" :value="remoteSearch" type="search" :placeholder="searchPlaceholder" autofocus @input="onRemoteSearchInput" @keyup.enter="emit('remote-search')">
+          <input v-else v-model="search" type="search" :placeholder="searchPlaceholder" autofocus>
         </label>
+        <button v-if="remote" type="button" class="ordo-button ordo-button--quiet" :disabled="remoteLoading" @click="emit('remote-search')">Buscar</button>
         <label v-for="filter in filters" :key="filter.key" class="ordo-data-modal__filter">
           <span>{{ filter.label }}</span>
           <select v-model="filterState[filter.key]" :aria-label="filter.label">
@@ -140,18 +180,20 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
         </label>
         <div class="ordo-data-modal__count">
           <strong>{{ sortedRows.length }}</strong>
-          <span>de {{ rows.length }} registros</span>
+          <span>de {{ remotePagination?.total ?? rows.length }} registros</span>
         </div>
       </div>
+
+      <div v-if="remoteLoading" class="ordo-data-modal__loading" role="status" aria-live="polite">Atualizando resultados…</div>
 
       <div v-if="sortedRows.length" class="ordo-data-modal__table-wrap">
         <table class="ordo-data-modal__table">
           <thead>
             <tr>
-              <th v-for="column in columns" :key="column.key" :class="{ 'is-right': column.align === 'right' }" :aria-sort="sortKey === column.key ? `${sortDirection}ending` : 'none'">
+              <th v-for="column in columns" :key="column.key" :class="{ 'is-right': column.align === 'right' }" :aria-sort="activeSortKey === column.key ? `${activeSortDirection}ending` : 'none'">
                 <button v-if="column.sortable !== false" type="button" :title="sortLabel(column)" @click="toggleSort(column)">
                   {{ column.label }}
-                  <span aria-hidden="true">{{ sortKey === column.key ? (sortDirection === 'asc' ? '↑' : '↓') : '↕' }}</span>
+                  <span aria-hidden="true">{{ activeSortKey === column.key ? (activeSortDirection === 'asc' ? '↑' : '↓') : '↕' }}</span>
                 </button>
                 <span v-else>{{ column.label }}</span>
               </th>
@@ -169,6 +211,12 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
       <div v-else class="ordo-empty-inline ordo-data-modal__empty">
         <span class="ordo-empty-inline__mark">∅</span>
         <span>{{ emptyMessage }}</span>
+      </div>
+
+      <div v-if="remotePagination && remotePagination.totalPages > 1" class="ordo-pagination ordo-data-modal__pagination">
+        <button type="button" :disabled="remotePagination.currentPage <= 1 || remoteLoading" @click="emit('remote-page', -1)">← Anterior</button>
+        <span>Página {{ remotePagination.currentPage }} de {{ remotePagination.totalPages }}</span>
+        <button type="button" :disabled="remotePagination.currentPage >= remotePagination.totalPages || remoteLoading" @click="emit('remote-page', 1)">Próxima →</button>
       </div>
 
       <div class="ordo-modal__actions">
@@ -238,6 +286,15 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
   font-family: 'Fraunces', Georgia, serif;
   font-size: 20px;
   font-weight: 600;
+}
+
+.ordo-data-modal__loading {
+  padding: 8px 26px 0;
+  color: #9a6c36;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
 }
 
 .ordo-data-modal__table-wrap {
@@ -312,6 +369,11 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
   padding: 28px 26px;
 }
 
+.ordo-data-modal__pagination {
+  margin: 0 26px;
+  border-top: 1px solid #edf1eb;
+}
+
 @media (max-width: 720px) {
   .ordo-data-modal__toolbar {
     align-items: stretch;
@@ -336,6 +398,11 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
   .ordo-data-modal__table-wrap {
     padding-right: 17px;
     padding-left: 17px;
+  }
+
+  .ordo-data-modal__pagination {
+    margin-right: 17px;
+    margin-left: 17px;
   }
 }
 </style>

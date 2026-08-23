@@ -23,3 +23,9 @@ export interface ExplorerFilter {
   label: string
   options: ExplorerFilterOption[]
 }
+
+export interface ExplorerRemotePagination {
+  currentPage: number
+  totalPages: number
+  total: number
+}

@@ -569,6 +569,7 @@ export interface CustomRosaryPrayer {
   reviewed_at?: string | null
   moderation_reentry_count?: number
   last_moderation_reentry_at?: string | null
+  expanded_steps_count?: number
   blocks?: CustomRosaryBlock[]
   expanded_steps?: CustomRosaryStep[]
 }
@@ -644,9 +645,28 @@ export interface LifeRulesQuery {
 
 export interface CustomRosaryQuery {
   share_status?: Exclude<CustomRosaryShareStatus, 'private'>
+  search?: string
+  sort?: CustomRosarySortKey
+  direction?: CustomRosarySortDirection
   limit?: number
   offset?: number
 }
+
+export type CustomRosarySortKey =
+  | 'created_at'
+  | 'updated_at'
+  | 'title'
+  | 'author'
+  | 'locale'
+  | 'status'
+  | 'publication_status'
+  | 'cycle_repeat'
+  | 'is_public'
+  | 'strapi_slug'
+  | 'reviewed_at'
+  | 'reentries'
+
+export type CustomRosarySortDirection = 'asc' | 'desc'
 
 export interface OrdoApiErrorPayload {
   error?: string
