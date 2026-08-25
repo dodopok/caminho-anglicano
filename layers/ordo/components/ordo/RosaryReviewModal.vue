@@ -71,6 +71,7 @@ const categorySelection = computed<RosaryCategorySelection | null>(() => {
 })
 
 const isCategoryValid = computed(() => isValidRosaryCategorySelection(categorySelection.value))
+const isStrapiSlugValid = computed(() => Boolean(props.strapiSlug.trim()))
 const selectedCategory = computed(() => props.categories.find(category => categoryKey(category) === selectedCategoryKey.value))
 
 const syncCategorySelection = () => {
@@ -158,7 +159,7 @@ watch(() => props.categorySelection, (selection) => {
           <div v-if="categoryMode === 'existing'" class="ordo-modal__category-fields">
             <label>
               Categoria existente
-              <select :value="selectedCategoryKey" :disabled="categoriesLoading" @change="onExistingCategoryChange">
+              <select :value="selectedCategoryKey" :disabled="categoriesLoading" required aria-required="true" @change="onExistingCategoryChange">
                 <option value="">{{ categoriesLoading ? 'Carregando categorias…' : 'Selecione uma categoria' }}</option>
                 <option v-for="category in categories" :key="categoryKey(category)" :value="categoryKey(category)">
                   {{ category.icon ? `${category.icon} ` : '' }}{{ category.name }} · {{ category.slug }}
@@ -173,19 +174,19 @@ watch(() => props.categorySelection, (selection) => {
           </div>
 
           <div v-else class="ordo-modal__category-fields ordo-modal__category-fields--new">
-            <label>Nome <input :value="newCategory.name" type="text" required placeholder="Ex.: Rosário pela criação" @input="onNewCategoryInput('name', $event)"></label>
-            <label>Slug <input :value="newCategory.slug" type="text" required placeholder="rosario-pela-criacao" @input="onNewCategoryInput('slug', $event)"></label>
+            <label>Nome <input :value="newCategory.name" type="text" required aria-required="true" placeholder="Ex.: Rosário pela criação" @input="onNewCategoryInput('name', $event)"></label>
+            <label>Slug <input :value="newCategory.slug" type="text" required aria-required="true" placeholder="rosario-pela-criacao" @input="onNewCategoryInput('slug', $event)"></label>
             <label class="ordo-modal__category-field-wide">Descrição <textarea :value="newCategory.description" rows="2" placeholder="Resumo curto para a organização editorial" @input="onNewCategoryInput('description', $event)" /></label>
             <label>Ícone <input :value="newCategory.icon" type="text" placeholder="✦ ou nome do ícone" @input="onNewCategoryInput('icon', $event)"></label>
           </div>
           <p v-if="!isCategoryValid" class="ordo-modal__category-error">Selecione uma categoria existente ou informe pelo menos nome e slug para criar uma nova.</p>
         </div>
 
-        <div class="ordo-modal__form"><label>Slug no Strapi (opcional)<input :value="strapiSlug" type="text" placeholder="rosario-pela-familia" @input="onSlugInput" /></label><label>Nota de rejeição (opcional)<textarea :value="rejectionReason" rows="2" placeholder="Motivo para o autor ou para o histórico editorial" @input="onReasonInput" /></label></div>
+        <div class="ordo-modal__form"><label>Slug no Strapi (obrigatório)<input :value="strapiSlug" type="text" required aria-required="true" :aria-invalid="!isStrapiSlugValid" placeholder="rosario-pela-familia" @input="onSlugInput"><small v-if="!isStrapiSlugValid" class="ordo-modal__field-error">Informe o slug que será usado na publicação.</small></label><label>Nota de rejeição (opcional)<textarea :value="rejectionReason" rows="2" placeholder="Motivo para o autor ou para o histórico editorial" @input="onReasonInput" /></label></div>
         <div v-if="actionError" class="ordo-modal__error">{{ actionError }}</div>
         <div class="ordo-modal__actions">
           <button type="button" class="ordo-button ordo-button--quiet" :disabled="actionLoading" @click="emit('reject')">Rejeitar</button>
-          <button type="button" class="ordo-button ordo-button--primary" :disabled="actionLoading || !isCategoryValid" @click="emit('approve')">
+          <button type="button" class="ordo-button ordo-button--primary" :disabled="actionLoading || !isCategoryValid || !isStrapiSlugValid" @click="emit('approve')">
             {{ actionLoading ? 'Salvando…' : 'Aprovar revisão' }} <span>↗</span>
           </button>
         </div>
@@ -372,6 +373,14 @@ watch(() => props.categorySelection, (selection) => {
   border-radius: 4px;
   background: #f7e8e4;
   font-size: 9px;
+}
+
+.ordo-modal__field-error {
+  margin-top: 1px;
+  color: #a15f57;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.35;
 }
 
 @media (max-width: 720px) {

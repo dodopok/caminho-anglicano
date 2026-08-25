@@ -20,12 +20,15 @@ const props = withDefaults(defineProps<{
   defaultSortKey?: string
   defaultSortDirection?: 'asc' | 'desc'
   formatValue?: (value: ExplorerValue, key: string, row: ExplorerRow) => string
+  rowActionKey?: string
+  rowActionLabel?: string
   remote?: boolean
   remoteSearch?: string
   remoteSortKey?: string
   remoteSortDirection?: 'asc' | 'desc'
   remotePagination?: ExplorerRemotePagination | null
   remoteLoading?: boolean
+  remoteError?: string | null
 }>(), {
   description: undefined,
   eyebrow: 'Dados completos',
@@ -35,12 +38,15 @@ const props = withDefaults(defineProps<{
   defaultSortKey: undefined,
   defaultSortDirection: 'desc',
   formatValue: undefined,
+  rowActionKey: undefined,
+  rowActionLabel: 'Abrir registro',
   remote: false,
   remoteSearch: '',
   remoteSortKey: undefined,
   remoteSortDirection: 'desc',
   remotePagination: null,
-  remoteLoading: false
+  remoteLoading: false,
+  remoteError: null
 })
 
 const emit = defineEmits<{
@@ -49,6 +55,7 @@ const emit = defineEmits<{
   'remote-search': []
   'remote-sort': [key: string, direction: 'asc' | 'desc']
   'remote-page': [direction: number]
+  'row-click': [row: ExplorerRow]
 }>()
 
 const { formatExplorerValue } = useOrdoDashboardPresentation()
@@ -56,6 +63,7 @@ const search = ref('')
 const sortKey = ref(props.defaultSortKey || props.columns.find(column => column.sortable !== false)?.key || '')
 const sortDirection = ref<'asc' | 'desc'>(props.defaultSortDirection)
 const filterState = reactive<Record<string, string>>({})
+const remoteSearchDraft = ref(props.remoteSearch)
 
 const activeSearch = computed(() => props.remote ? props.remoteSearch : search.value)
 const activeSortKey = computed(() => props.remote ? props.remoteSortKey || '' : sortKey.value)
@@ -141,7 +149,12 @@ const sortLabel = (column: ExplorerColumn) => {
 }
 
 const onRemoteSearchInput = (event: Event) => {
-  emit('update:remote-search', (event.target as HTMLInputElement).value)
+  remoteSearchDraft.value = (event.target as HTMLInputElement).value
+}
+
+const submitRemoteSearch = () => {
+  emit('update:remote-search', remoteSearchDraft.value)
+  emit('remote-search')
 }
 
 const onKeydown = (event: KeyboardEvent) => {
@@ -150,6 +163,9 @@ const onKeydown = (event: KeyboardEvent) => {
 
 onMounted(() => document.addEventListener('keydown', onKeydown))
 onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
+watch(() => props.remoteSearch, value => {
+  remoteSearchDraft.value = value
+})
 </script>
 
 <template>
@@ -167,10 +183,10 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
       <div class="ordo-data-modal__toolbar">
         <label class="ordo-data-modal__search">
           <span>Busca</span>
-          <input v-if="remote" :value="remoteSearch" type="search" :placeholder="searchPlaceholder" autofocus @input="onRemoteSearchInput" @keyup.enter="emit('remote-search')">
+          <input v-if="remote" :value="remoteSearchDraft" type="search" :placeholder="searchPlaceholder" autofocus @input="onRemoteSearchInput" @keydown.enter.prevent="submitRemoteSearch">
           <input v-else v-model="search" type="search" :placeholder="searchPlaceholder" autofocus>
         </label>
-        <button v-if="remote" type="button" class="ordo-button ordo-button--quiet" :disabled="remoteLoading" @click="emit('remote-search')">Buscar</button>
+        <button v-if="remote" type="button" class="ordo-button ordo-button--quiet" :disabled="remoteLoading" @click="submitRemoteSearch">Buscar</button>
         <label v-for="filter in filters" :key="filter.key" class="ordo-data-modal__filter">
           <span>{{ filter.label }}</span>
           <select v-model="filterState[filter.key]" :aria-label="filter.label">
@@ -185,6 +201,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
       </div>
 
       <div v-if="remoteLoading" class="ordo-data-modal__loading" role="status" aria-live="polite">Atualizando resultados…</div>
+      <div v-if="remoteError" class="ordo-data-modal__error" role="alert">{{ remoteError }}</div>
 
       <div v-if="sortedRows.length" class="ordo-data-modal__table-wrap">
         <table class="ordo-data-modal__table">
@@ -202,7 +219,17 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
           <tbody>
             <tr v-for="row in sortedRows" :key="row.id">
               <td v-for="column in columns" :key="column.key" :class="{ 'is-right': column.align === 'right' }">
-                {{ displayValue(row.values[column.key], column.key, row) }}
+                <button
+                  v-if="rowActionKey === column.key"
+                  type="button"
+                  class="ordo-data-modal__row-link"
+                  :aria-label="`${rowActionLabel}: ${displayValue(row.values[column.key], column.key, row)}`"
+                  @click="emit('row-click', row)"
+                >
+                  {{ displayValue(row.values[column.key], column.key, row) }}
+                  <span aria-hidden="true">↗</span>
+                </button>
+                <template v-else>{{ displayValue(row.values[column.key], column.key, row) }}</template>
               </td>
             </tr>
           </tbody>
@@ -297,6 +324,13 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
   text-transform: uppercase;
 }
 
+.ordo-data-modal__error {
+  margin: 8px 26px 0;
+  color: #a15f57;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
 .ordo-data-modal__table-wrap {
   max-height: min(500px, calc(100vh - 300px));
   overflow: auto;
@@ -360,6 +394,37 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
   vertical-align: top;
 }
 
+.ordo-data-modal__row-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  max-width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--moss-deep);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: rgba(73, 100, 81, .28);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.ordo-data-modal__row-link:hover,
+.ordo-data-modal__row-link:focus-visible {
+  color: #9a6c36;
+  text-decoration-color: currentColor;
+}
+
+.ordo-data-modal__row-link span {
+  color: #c19258;
+  font-size: 13px;
+  text-decoration: none;
+}
+
 .ordo-data-modal__table td:first-child {
   color: #233328;
   font-weight: 700;
@@ -401,6 +466,11 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
   }
 
   .ordo-data-modal__pagination {
+    margin-right: 17px;
+    margin-left: 17px;
+  }
+
+  .ordo-data-modal__error {
     margin-right: 17px;
     margin-left: 17px;
   }

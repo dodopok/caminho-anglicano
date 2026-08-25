@@ -46,6 +46,8 @@ describe('RosaryReviewModal category flow', () => {
     const wrapper = mountModal()
 
     await wrapper.get('select').setValue('cat_seasonal')
+    await wrapper.get('input[placeholder="rosario-pela-familia"]').setValue('rosario-de-teste')
+    await wrapper.setProps({ strapiSlug: 'rosario-de-teste' })
 
     expect(wrapper.emitted('update:categorySelection')?.at(-1)?.[0]).toEqual({
       mode: 'existing',
@@ -61,6 +63,8 @@ describe('RosaryReviewModal category flow', () => {
     await wrapper.get('input[value="new"]').setValue(true)
     await wrapper.get('input[placeholder="Ex.: Rosário pela criação"]').setValue('Orações sazonais')
     await wrapper.get('input[placeholder="rosario-pela-criacao"]').setValue('oracoes-sazonais')
+    await wrapper.get('input[placeholder="rosario-pela-familia"]').setValue('oracoes-sazonais')
+    await wrapper.setProps({ strapiSlug: 'oracoes-sazonais' })
 
     expect(wrapper.emitted('update:categorySelection')?.at(-1)?.[0]).toEqual({
       mode: 'new',
@@ -69,6 +73,20 @@ describe('RosaryReviewModal category flow', () => {
       description: '',
       icon: ''
     })
+    expect((wrapper.get('button.ordo-button--primary').element as HTMLButtonElement).disabled).toBe(false)
+  })
+
+  it('requires the Strapi slug before approval', async () => {
+    const wrapper = mountModal()
+
+    await wrapper.get('select').setValue('cat_seasonal')
+
+    expect((wrapper.get('button.ordo-button--primary').element as HTMLButtonElement).disabled).toBe(true)
+    expect(wrapper.text()).toContain('Informe o slug que será usado na publicação.')
+
+    await wrapper.get('input[placeholder="rosario-pela-familia"]').setValue('rosario-de-teste')
+    await wrapper.setProps({ strapiSlug: 'rosario-de-teste' })
+
     expect((wrapper.get('button.ordo-button--primary').element as HTMLButtonElement).disabled).toBe(false)
   })
 })

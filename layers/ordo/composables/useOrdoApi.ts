@@ -120,14 +120,18 @@ export const useOrdoApi = () => {
 
   // Rails resolves an existing category by documentId/slug, or creates and
   // assigns the new category from these editorial fields before publication.
-  const approveCustomRosary = async (id: number | string, category: RosaryCategorySelection, strapiSlug?: string) =>
-    request<CustomRosaryDetailResponse>(`/api/v1/admin/custom_rosary_prayers/${id}/approve`, {
+  const approveCustomRosary = async (id: number | string, category: RosaryCategorySelection, strapiSlug: string) => {
+    const normalizedStrapiSlug = strapiSlug.trim()
+    if (!normalizedStrapiSlug) throw new Error('O slug no Strapi é obrigatório para aprovar o rosário.')
+
+    return request<CustomRosaryDetailResponse>(`/api/v1/admin/custom_rosary_prayers/${id}/approve`, {
       method: 'POST',
       body: {
         category,
-        ...(strapiSlug?.trim() ? { strapi_slug: strapiSlug.trim() } : {})
+        strapi_slug: normalizedStrapiSlug
       }
     })
+  }
 
   const rejectCustomRosary = async (id: number | string, reason?: string) =>
     request<CustomRosaryDetailResponse>(`/api/v1/admin/custom_rosary_prayers/${id}/reject`, {

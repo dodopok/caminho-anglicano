@@ -16,7 +16,7 @@ import type {
   LifeRulePagination,
   LifeRuleStatus
 } from '../../types/dashboard'
-import type { ExplorerColumn, ExplorerFilter, ExplorerRow, ExplorerValue } from '../../types/explorer'
+import type { ExplorerColumn, ExplorerFilter, ExplorerRemotePagination, ExplorerRow, ExplorerValue } from '../../types/explorer'
 
 const props = defineProps<{
   dashboard: DashboardData
@@ -38,6 +38,15 @@ const props = defineProps<{
   customRosarySortDirection: CustomRosarySortDirection
   customRosaryCurrentPage: number
   customRosaryTotalPages: number
+  customRosaryExplorerRosaries: CustomRosaryPrayer[]
+  customRosaryExplorerPagination?: CustomRosaryPagination | null
+  customRosaryExplorerLoading: boolean
+  customRosaryExplorerError?: string | null
+  customRosaryExplorerSearch: string
+  customRosaryExplorerSort: CustomRosarySortKey
+  customRosaryExplorerSortDirection: CustomRosarySortDirection
+  customRosaryExplorerCurrentPage: number
+  customRosaryExplorerTotalPages: number
   selectedRosaryStatusItems: Array<{ key: string; label: string; value: number }>
 }>()
 
@@ -52,6 +61,11 @@ const emit = defineEmits<{
   'change-custom-rosary-sort': [key: CustomRosarySortKey, direction: CustomRosarySortDirection]
   'change-custom-rosary-status': []
   'change-custom-rosary-page': [direction: number]
+  'open-custom-rosary-explorer': []
+  'update:customRosaryExplorerSearch': [value: string]
+  'search-custom-rosary-explorer': []
+  'change-custom-rosary-explorer-sort': [key: CustomRosarySortKey, direction: CustomRosarySortDirection]
+  'change-custom-rosary-explorer-page': [direction: number]
   'open-rosary': [rosary: CustomRosaryPrayer]
 }>()
 
@@ -75,10 +89,10 @@ const activeExplorer = ref<ExplorerName>(null)
 const notificationStatusItems = computed(() => mapItems(props.dashboard.notifications?.delivery_status_counts))
 const estimatedMissingCharacters = computed(() => Object.values(props.dashboard.audio?.estimated_missing_characters || {}).reduce((total, value) => total + value, 0))
 const moderation = computed(() => props.dashboard.moderation?.custom_rosaries)
-const customRosaryExplorerPagination = computed(() => ({
-  currentPage: props.customRosaryCurrentPage,
-  totalPages: props.customRosaryTotalPages,
-  total: props.customRosaryPagination?.total ?? props.customRosaries.length
+const customRosaryExplorerRemotePagination = computed<ExplorerRemotePagination>(() => ({
+  currentPage: props.customRosaryExplorerCurrentPage,
+  totalPages: props.customRosaryExplorerTotalPages,
+  total: props.customRosaryExplorerPagination?.total ?? props.customRosaryExplorerRosaries.length
 }))
 
 const audioColumns: ExplorerColumn[] = [
@@ -223,9 +237,9 @@ const customRosaryColumns: ExplorerColumn[] = [
   { key: 'updated_at', label: 'Atualizado em', sortable: true },
   { key: 'reviewed_at', label: 'Revisado em', sortable: true }
 ]
-const customRosaryRows = computed<ExplorerRow[]>(() => props.customRosaries.map(item => ({
+const customRosaryRows = computed<ExplorerRow[]>(() => props.customRosaryExplorerRosaries.map(item => ({
   id: item.id,
-  searchable: `${item.title} ${item.description || ''} ${item.author?.name || ''}`,
+  searchable: `${item.title} ${item.description || ''} ${item.author?.name || ''} ${item.locale || ''} ${item.share_status || ''} ${item.strapi_slug || ''}`,
   values: {
     title: item.title,
     author: item.author?.name || '—',
@@ -258,10 +272,23 @@ const customRosarySortKeys: CustomRosarySortKey[] = [
   'reentries'
 ]
 
-const onCustomRosaryRemoteSort = (key: string, direction: 'asc' | 'desc') => {
+const onCustomRosaryExplorerRemoteSort = (key: string, direction: 'asc' | 'desc') => {
   if (customRosarySortKeys.includes(key as CustomRosarySortKey)) {
-    emit('change-custom-rosary-sort', key as CustomRosarySortKey, direction)
+    emit('change-custom-rosary-explorer-sort', key as CustomRosarySortKey, direction)
   }
+}
+
+const openCustomRosaryExplorer = () => {
+  activeExplorer.value = 'customRosaries'
+  emit('open-custom-rosary-explorer')
+}
+
+const openCustomRosaryFromExplorer = (row: ExplorerRow) => {
+  const rosary = props.customRosaryExplorerRosaries.find(item => String(item.id) === String(row.id))
+  if (!rosary) return
+
+  activeExplorer.value = null
+  emit('open-rosary', rosary)
 }
 
 const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: ExplorerRow) => {
@@ -295,7 +322,7 @@ const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: 
 
     <div class="ordo-queue-grid">
       <OrdoLifeRulesQueue :rules="lifeRules" :pagination="lifeRulesPagination" :loading="lifeRulesLoading" :error="lifeRulesError" :status="lifeRuleStatus" :search="lifeRuleSearch" :current-page="lifeRuleCurrentPage" :total-pages="lifeRuleTotalPages" @update:status="emit('update:lifeRuleStatus', $event)" @update:search="emit('update:lifeRuleSearch', $event)" @search="emit('search-life-rules')" @change-page="emit('change-life-rule-page', $event)" @open-all="activeExplorer = 'lifeRules'" />
-      <OrdoCustomRosaryQueue :rosaries="customRosaries" :pagination="customRosaryPagination" :loading="customRosariesLoading" :error="customRosariesError" :status="customRosaryStatus" :current-page="customRosaryCurrentPage" :total-pages="customRosaryTotalPages" :summary="dashboard.custom_rosaries" :status-items="selectedRosaryStatusItems" @update:status="emit('update:customRosaryStatus', $event)" @change="emit('change-custom-rosary-status')" @change-page="emit('change-custom-rosary-page', $event)" @open="emit('open-rosary', $event)" @open-all="activeExplorer = 'customRosaries'" />
+      <OrdoCustomRosaryQueue :rosaries="customRosaries" :pagination="customRosaryPagination" :loading="customRosariesLoading" :error="customRosariesError" :status="customRosaryStatus" :current-page="customRosaryCurrentPage" :total-pages="customRosaryTotalPages" :summary="dashboard.custom_rosaries" :status-items="selectedRosaryStatusItems" @update:status="emit('update:customRosaryStatus', $event)" @change="emit('change-custom-rosary-status')" @change-page="emit('change-custom-rosary-page', $event)" @open="emit('open-rosary', $event)" @open-all="openCustomRosaryExplorer" />
     </div>
 
     <div v-if="moderation" class="ordo-table-card"><div class="ordo-table-card__header"><div><p class="ordo-kicker">Decisões no período</p><h2>Qualidade da moderação</h2></div><div class="ordo-table-card__header-actions"><span class="ordo-scope-label">{{ formatPercent(moderation.approval_rate) }} de aprovação</span><button type="button" class="ordo-card-action" @click="activeExplorer = 'moderation'">Abrir métricas ↗</button></div></div><div class="ordo-highlight-grid ordo-highlight-grid--wide ordo-table-card__metrics"><div><span>Aprovadas</span><strong>{{ formatNumber(moderation.approved_in_period) }}</strong></div><div><span>Rejeitadas</span><strong>{{ formatNumber(moderation.rejected_in_period) }}</strong></div><div><span>Reentradas</span><strong>{{ formatNumber(moderation.reentries_in_period) }}</strong></div><div><span>Tempo médio</span><strong>{{ formatDuration(moderation.average_response_time_seconds) }}</strong></div></div></div>
@@ -307,5 +334,5 @@ const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: 
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'adoptions'" title="Adoção de regras de vida" description="Ranking completo de regras adotadas na base total." :columns="lifeRuleAdoptionColumns" :rows="lifeRuleAdoptionRows" default-sort-key="adoptions" search-placeholder="Buscar regra…" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'moderation'" title="Métricas de moderação" description="Pendências atuais, decisões no período, reentradas e idade das filas." :columns="moderationColumns" :rows="moderationRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'health'" title="Saúde operacional" description="Detalhamento de falhas, sessões travadas e chaves próximas do vencimento." :columns="healthColumns" :rows="healthRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
-  <OrdoDataExplorerModal v-else-if="activeExplorer === 'customRosaries'" title="Rosários compartilhados" description="Fila completa consultada pela API, sem carregar centenas de rosários de uma vez." :columns="customRosaryColumns" :rows="customRosaryRows" :remote="true" :remote-search="customRosarySearch" :remote-sort-key="customRosarySort" :remote-sort-direction="customRosarySortDirection" :remote-pagination="customRosaryExplorerPagination" :remote-loading="customRosariesLoading" search-placeholder="Buscar título, autor, descrição ou slug…" :format-value="formatOperationsExplorerValue" @update:remote-search="emit('update:customRosarySearch', $event)" @remote-search="emit('search-custom-rosaries')" @remote-sort="onCustomRosaryRemoteSort" @remote-page="emit('change-custom-rosary-page', $event)" @close="activeExplorer = null" />
+  <OrdoDataExplorerModal v-else-if="activeExplorer === 'customRosaries'" title="Rosários compartilhados" description="Fila completa isolada da tabela principal. Clique no nome para abrir a revisão e aprovar ou rejeitar." :columns="customRosaryColumns" :rows="customRosaryRows" :remote="true" :remote-search="customRosaryExplorerSearch" :remote-sort-key="customRosaryExplorerSort" :remote-sort-direction="customRosaryExplorerSortDirection" :remote-pagination="customRosaryExplorerRemotePagination" :remote-loading="customRosaryExplorerLoading" :remote-error="customRosaryExplorerError" row-action-key="title" row-action-label="Abrir revisão de" search-placeholder="Buscar título, autor, descrição ou slug…" :format-value="formatOperationsExplorerValue" @update:remote-search="emit('update:customRosaryExplorerSearch', $event)" @remote-search="emit('search-custom-rosary-explorer')" @remote-sort="onCustomRosaryExplorerRemoteSort" @remote-page="emit('change-custom-rosary-explorer-page', $event)" @row-click="openCustomRosaryFromExplorer" @close="activeExplorer = null" />
 </template>

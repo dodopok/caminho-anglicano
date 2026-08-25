@@ -12,7 +12,7 @@ const rows = [
   { id: 2, values: { title: 'Segundo', created_at: '2026-08-19' } }
 ]
 
-const mountRemoteModal = () => mount(DataExplorerModal, {
+const mountRemoteModal = (extraProps: Record<string, unknown> = {}) => mount(DataExplorerModal, {
   props: {
     title: 'Rosários compartilhados',
     columns,
@@ -22,7 +22,8 @@ const mountRemoteModal = () => mount(DataExplorerModal, {
     remoteSortKey: 'created_at',
     remoteSortDirection: 'desc' as const,
     remotePagination: { currentPage: 2, totalPages: 4, total: 20 },
-    remoteLoading: false
+    remoteLoading: false,
+    ...extraProps
   }
 })
 
@@ -32,6 +33,7 @@ describe('DataExplorerModal remote mode', () => {
     const input = wrapper.get('input[type="search"]')
 
     await input.setValue('segundo')
+    expect(wrapper.emitted('update:remote-search')).toBeUndefined()
     await wrapper.get('button.ordo-button--quiet').trigger('click')
 
     expect(wrapper.text()).toContain('Primeiro')
@@ -49,5 +51,13 @@ describe('DataExplorerModal remote mode', () => {
     expect(wrapper.emitted('remote-sort')?.at(-1)?.[0]).toBe('title')
     expect(wrapper.emitted('remote-sort')?.at(-1)?.[1]).toBe('desc')
     expect(wrapper.emitted('remote-page')?.at(-1)?.[0]).toBe(1)
+  })
+
+  it('emits the selected row when its action column is clicked', async () => {
+    const wrapper = mountRemoteModal({ rowActionKey: 'title' })
+
+    await wrapper.get('.ordo-data-modal__row-link').trigger('click')
+
+    expect(wrapper.emitted('row-click')?.at(-1)?.[0]).toEqual(rows[0])
   })
 })
