@@ -142,7 +142,7 @@ layers/admin/
 
 ## 🔧 Geocodificação
 
-O sistema usa a **Google Maps Geocoding API** para converter endereços em coordenadas.
+O sistema usa a **Geoapify Geocoding API** para converter endereços em coordenadas.
 
 ### Processo:
 
@@ -194,8 +194,8 @@ O arquivo é compatível com Excel (UTF-8 com BOM).
 
 ### Erro de geocodificação
 
-- Verifique se `GOOGLE_MAPS_SERVER_API_KEY` está configurado no servidor
-- Verifique se a chave privada tem permissão para Geocoding API
+- Verifique se `GEOAPIFY_API_KEY` está configurado no servidor
+- Verifique se a chave tem acesso à Geoapify Geocoding API
 - Verifique se você não excedeu a cota
 - Verifique se o endereço está completo e válido
 

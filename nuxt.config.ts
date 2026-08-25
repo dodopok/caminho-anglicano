@@ -257,6 +257,7 @@ export default defineNuxtConfig({
     // Chaves privadas do servidor
     supabaseServiceKey: process.env.SUPABASE_SERVICE_KEY,
     adminEmail: process.env.ADMIN_EMAIL,
+    geoapifyApiKey: process.env.GEOAPIFY_API_KEY,
     googleMapsServerApiKey: process.env.GOOGLE_MAPS_SERVER_API_KEY,
     telegramBotToken: process.env.TELEGRAM_BOT_TOKEN,
     telegramChatId: process.env.TELEGRAM_CHAT_ID,

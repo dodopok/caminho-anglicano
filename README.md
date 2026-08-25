@@ -240,6 +240,8 @@ Preencha as seguintes variáveis:
 NUXT_PUBLIC_SUPABASE_URL=sua-url-do-supabase
 NUXT_PUBLIC_SUPABASE_ANON_KEY=sua-chave-anonima-do-supabase
 NUXT_PUBLIC_GOOGLE_MAPS_API_KEY=sua-chave-publica-do-google-maps
+GEOAPIFY_API_KEY=sua-chave-do-geoapify
+# Opcional: necessário apenas para a busca legada de lugares no painel
 GOOGLE_MAPS_SERVER_API_KEY=sua-chave-privada-do-google-maps
 ABACATEPAY_API_KEY=sua-chave-do-abacatepay
 ```

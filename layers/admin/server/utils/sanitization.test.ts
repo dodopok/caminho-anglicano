@@ -174,6 +174,7 @@ describe('sanitization utils', () => {
         Access_Token: 'token123',
         GoogleMapsApiKey: 'key123',
         googleMapsServerApiKey: 'server-key123',
+        geoapifyApiKey: 'geoapify-key123',
         supabaseServiceKey: 'service123',
       }
 
@@ -182,6 +183,7 @@ describe('sanitization utils', () => {
       expect(result.Access_Token).toBe('[REDACTED]')
       expect(result.GoogleMapsApiKey).toBe('[REDACTED]')
       expect(result.googleMapsServerApiKey).toBe('[REDACTED]')
+      expect(result.geoapifyApiKey).toBe('[REDACTED]')
       expect(result.supabaseServiceKey).toBe('[REDACTED]')
     })
 

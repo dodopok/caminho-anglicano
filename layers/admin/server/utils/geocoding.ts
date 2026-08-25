@@ -1,18 +1,14 @@
-interface GoogleGeocodingResponse {
-  status: string
+interface GeoapifyGeocodingResponse {
+  error?: string
+  message?: string
   results?: Array<{
-    geometry: {
-      location: {
-        lat: number
-        lng: number
-      }
-    }
-    formatted_address: string
-    address_components: Array<{
-      long_name: string
-      short_name: string
-      types: string[]
-    }>
+    lat?: number
+    lon?: number
+    city?: string
+    state?: string
+    state_code?: string
+    postcode?: string
+    formatted?: string
   }>
 }
 
@@ -25,64 +21,58 @@ interface GeocodeResult {
   formattedAddress: string
 }
 
+function redactApiKey(value: string): string {
+  return value.replace(/([?&]apiKey=)[^&\s"]+/gi, '$1[REDACTED]')
+}
+
 /**
- * Geocode an address using Google Maps Geocoding API
+ * Geocode an address using the Geoapify Geocoding API.
  */
 export async function geocodeAddress(address: string): Promise<GeocodeResult> {
   const config = useRuntimeConfig()
-  const apiKey = config.googleMapsServerApiKey
+  const apiKey = typeof config.geoapifyApiKey === 'string' ? config.geoapifyApiKey : ''
 
   if (!apiKey) {
-    throw new Error('Google Maps server API key not configured')
+    throw new Error('Geoapify API key not configured')
   }
 
   // Clean up the address
   const cleanAddress = address.trim()
 
-  // Call Google Maps Geocoding API
-  const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(cleanAddress)}&region=br&key=${apiKey}`
+  // Restrict results to Brazil because all registered churches are in Brazil.
+  const params = new URLSearchParams({
+    text: cleanAddress,
+    filter: 'countrycode:br',
+    lang: 'pt',
+    limit: '1',
+    format: 'json',
+    apiKey,
+  })
+  const url = `https://api.geoapify.com/v1/geocode/search?${params.toString()}`
 
   try {
-    const response = await $fetch<GoogleGeocodingResponse>(url)
+    const response = await $fetch<GeoapifyGeocodingResponse>(url)
+    const result = response.results?.[0]
 
-    if (response.status !== 'OK' || !response.results || response.results.length === 0) {
-      throw new Error(`Geocoding failed: ${response.status || 'No results found'}`)
+    if (!result || typeof result.lat !== 'number' || typeof result.lon !== 'number') {
+      const reason = response.message || response.error || 'No results found'
+      throw new Error(`Geoapify geocoding failed: ${reason}`)
     }
 
-    const result = response.results[0]
-    const location = result.geometry.location
-
-    // Extract address components
-    let city = ''
-    let state = ''
-    let postalCode = ''
-
-    for (const component of result.address_components) {
-      const types = component.types
-
-      if (types.includes('locality') || types.includes('administrative_area_level_2')) {
-        city = component.long_name
-      }
-      else if (types.includes('administrative_area_level_1')) {
-        state = component.short_name // Gets "SP" instead of "São Paulo"
-      }
-      else if (types.includes('postal_code')) {
-        postalCode = component.long_name
-      }
-    }
+    const state = (result.state_code || result.state || '').replace(/^BR-/i, '')
 
     return {
-      latitude: location.lat,
-      longitude: location.lng,
-      city: city || '',
-      state: state || '',
-      postalCode: postalCode || '',
-      formattedAddress: result.formatted_address,
+      latitude: result.lat,
+      longitude: result.lon,
+      city: result.city || '',
+      state,
+      postalCode: result.postcode || '',
+      formattedAddress: result.formatted || cleanAddress,
     }
   }
   catch (error: unknown) {
-    console.error('Geocoding error:', error)
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+    const errorMessage = redactApiKey(error instanceof Error ? error.message : 'Unknown error')
+    console.error('Geoapify geocoding error:', errorMessage)
     throw new Error(`Failed to geocode address: ${errorMessage}`)
   }
 }

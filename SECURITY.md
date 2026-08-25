@@ -136,29 +136,33 @@ In Google Cloud Console, configure the following restrictions for your API key:
 - **Never** use `*` or allow all referrers
 
 **API restrictions:**
-- Restrict key to only required APIs:
-  - Maps JavaScript API
-  - Geocoding API
-  - Places API
+- Restrict the frontend Google key to Maps JavaScript API only
+- Configure the Geoapify server key separately for the Geocoding API
+- If the optional legacy Google Places search is used, restrict its server key to Places API only
 
 **2. Separate Keys (Recommended)**
 
 Use different API keys for:
-- **Frontend:** Restricted to your domain, limited to Maps JavaScript API only
-- **Backend:** Not exposed publicly, used for Geocoding and Places API
+- **Frontend:** Google key restricted to your domain, limited to Maps JavaScript API only
+- **Backend geocoding:** Geoapify key, not exposed publicly
+- **Optional admin place search:** Google server key, only if the legacy place-search feature is used
 
 Update `.env`:
 ```env
 # Frontend key (restricted to domain, minimal permissions)
 NUXT_PUBLIC_GOOGLE_MAPS_API_KEY=your-frontend-key
 
-# Backend key (server-side only, more permissions)
+# Backend geocoding key (server-side only)
+GEOAPIFY_API_KEY=your-geoapify-key
+
+# Optional legacy Google Places search key (server-side only)
 GOOGLE_MAPS_SERVER_API_KEY=your-backend-key
 ```
 
 Update `nuxt.config.ts`:
 ```typescript
 runtimeConfig: {
+  geoapifyApiKey: process.env.GEOAPIFY_API_KEY,
   googleMapsServerApiKey: process.env.GOOGLE_MAPS_SERVER_API_KEY,
   public: {
     googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY
@@ -194,6 +198,11 @@ SUPABASE_SERVICE_KEY=your-service-key  # NEVER expose to frontend
 
 # Google Maps
 NUXT_PUBLIC_GOOGLE_MAPS_API_KEY=your-public-maps-key
+
+# Geoapify geocoding
+GEOAPIFY_API_KEY=your-geoapify-key
+
+# Optional legacy Google Places search
 GOOGLE_MAPS_SERVER_API_KEY=your-server-key
 
 # Admin Configuration

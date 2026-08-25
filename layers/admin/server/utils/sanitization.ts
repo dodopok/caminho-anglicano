@@ -79,6 +79,7 @@ export function sanitizeForLog(data: unknown): unknown {
     'supabaseServiceKey',
     'googleMapsApiKey',
     'googleMapsServerApiKey',
+    'geoapifyApiKey',
   ]
 
   const dataObj = data as Record<string, unknown>
