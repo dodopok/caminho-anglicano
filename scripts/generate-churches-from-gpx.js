@@ -3,7 +3,7 @@
  * 
  * Uso:
  * 1. npm install xml2js dotenv
- * 2. Adicione GOOGLE_MAPS_API_KEY no .env
+ * 2. Adicione GOOGLE_MAPS_SERVER_API_KEY no .env
  * 3. node scripts/generate-churches-from-gpx.js caminho/para/arquivo.gpx
  * 
  * O script irá:
@@ -27,10 +27,10 @@ const __dirname = path.dirname(__filename);
 // Carrega variáveis de ambiente
 dotenv.config();
 
-const GOOGLE_API_KEY = process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+const GOOGLE_API_KEY = process.env.GOOGLE_MAPS_SERVER_API_KEY;
 
 if (!GOOGLE_API_KEY) {
-  console.error('❌ GOOGLE_MAPS_API_KEY não encontrada no .env');
+  console.error('❌ GOOGLE_MAPS_SERVER_API_KEY não encontrada no .env');
   process.exit(1);
 }
 

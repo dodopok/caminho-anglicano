@@ -173,6 +173,7 @@ describe('sanitization utils', () => {
         PASSWORD: 'secret',
         Access_Token: 'token123',
         GoogleMapsApiKey: 'key123',
+        googleMapsServerApiKey: 'server-key123',
         supabaseServiceKey: 'service123',
       }
 
@@ -180,6 +181,7 @@ describe('sanitization utils', () => {
       expect(result.PASSWORD).toBe('[REDACTED]')
       expect(result.Access_Token).toBe('[REDACTED]')
       expect(result.GoogleMapsApiKey).toBe('[REDACTED]')
+      expect(result.googleMapsServerApiKey).toBe('[REDACTED]')
       expect(result.supabaseServiceKey).toBe('[REDACTED]')
     })
 

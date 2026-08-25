@@ -17,7 +17,7 @@ Este script processa um arquivo GPX contendo waypoints de igrejas e gera SQLs de
 npm install xml2js
 ```
 
-Certifique-se de ter `NUXT_PUBLIC_GOOGLE_MAPS_API_KEY` no arquivo `.env`.
+Certifique-se de ter `GOOGLE_MAPS_SERVER_API_KEY` no arquivo `.env`.
 
 ## Como usar
 
@@ -119,10 +119,10 @@ Igrejas sem jurisdição no nome terão `jurisdiction_id = NULL` para preenchime
 
 ## Troubleshooting
 
-### Erro: "GOOGLE_MAPS_API_KEY não encontrada"
+### Erro: "GOOGLE_MAPS_SERVER_API_KEY não encontrada"
 Adicione a chave no `.env`:
 ```
-NUXT_PUBLIC_GOOGLE_MAPS_API_KEY=sua-chave-aqui
+GOOGLE_MAPS_SERVER_API_KEY=sua-chave-privada-aqui
 ```
 
 ### Erro: "xml2js não encontrado"

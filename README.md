@@ -239,7 +239,8 @@ Preencha as seguintes variáveis:
 ```env
 NUXT_PUBLIC_SUPABASE_URL=sua-url-do-supabase
 NUXT_PUBLIC_SUPABASE_ANON_KEY=sua-chave-anonima-do-supabase
-NUXT_PUBLIC_GOOGLE_MAPS_API_KEY=sua-chave-do-google-maps
+NUXT_PUBLIC_GOOGLE_MAPS_API_KEY=sua-chave-publica-do-google-maps
+GOOGLE_MAPS_SERVER_API_KEY=sua-chave-privada-do-google-maps
 ABACATEPAY_API_KEY=sua-chave-do-abacatepay
 ```
 

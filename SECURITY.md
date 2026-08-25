@@ -153,13 +153,13 @@ Update `.env`:
 NUXT_PUBLIC_GOOGLE_MAPS_API_KEY=your-frontend-key
 
 # Backend key (server-side only, more permissions)
-GOOGLE_MAPS_SERVER_KEY=your-backend-key
+GOOGLE_MAPS_SERVER_API_KEY=your-backend-key
 ```
 
 Update `nuxt.config.ts`:
 ```typescript
 runtimeConfig: {
-  googleMapsServerKey: process.env.GOOGLE_MAPS_SERVER_KEY,
+  googleMapsServerApiKey: process.env.GOOGLE_MAPS_SERVER_API_KEY,
   public: {
     googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY
   }
@@ -194,7 +194,7 @@ SUPABASE_SERVICE_KEY=your-service-key  # NEVER expose to frontend
 
 # Google Maps
 NUXT_PUBLIC_GOOGLE_MAPS_API_KEY=your-public-maps-key
-GOOGLE_MAPS_SERVER_KEY=your-server-key  # Optional but recommended
+GOOGLE_MAPS_SERVER_API_KEY=your-server-key
 
 # Admin Configuration
 ADMIN_EMAIL=admin@yourdomain.com  # Email of admin user

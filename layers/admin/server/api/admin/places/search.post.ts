@@ -42,12 +42,12 @@ export default defineEventHandler(async (event) => {
   const { query } = validatedData
 
   const config = useRuntimeConfig()
-  const apiKey = config.googleMapsApiKey || config.public.googleMapsApiKey
+  const apiKey = config.googleMapsServerApiKey
 
   if (!apiKey) {
     throw createError({
       statusCode: 500,
-      message: 'Google Maps API key not configured',
+      message: 'Google Maps server API key not configured',
     })
   }
 

@@ -194,8 +194,8 @@ O arquivo é compatível com Excel (UTF-8 com BOM).
 
 ### Erro de geocodificação
 
-- Verifique se `NUXT_PUBLIC_GOOGLE_MAPS_API_KEY` está configurado
-- Verifique se a API Key tem permissão para Geocoding API
+- Verifique se `GOOGLE_MAPS_SERVER_API_KEY` está configurado no servidor
+- Verifique se a chave privada tem permissão para Geocoding API
 - Verifique se você não excedeu a cota
 - Verifique se o endereço está completo e válido
 

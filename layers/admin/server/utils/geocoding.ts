@@ -30,10 +30,10 @@ interface GeocodeResult {
  */
 export async function geocodeAddress(address: string): Promise<GeocodeResult> {
   const config = useRuntimeConfig()
-  const apiKey = config.public.googleMapsApiKey
+  const apiKey = config.googleMapsServerApiKey
 
   if (!apiKey) {
-    throw new Error('Google Maps API key not configured')
+    throw new Error('Google Maps server API key not configured')
   }
 
   // Clean up the address
