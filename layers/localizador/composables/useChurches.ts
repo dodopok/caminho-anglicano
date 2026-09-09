@@ -20,6 +20,20 @@ export function useChurches() {
         return data
       }
 
+      // Filtro por estado usa rota específica baseada em path.
+      // Rotas com cache de borda são chaveadas pelo caminho, então filtrar
+      // por query string em uma rota cacheada retorna a lista inteira.
+      if (filters?.state) {
+        const data = await $fetch<Church[]>(`/api/churches/state/${filters.state.toUpperCase()}`)
+
+        if (filters.city) {
+          const city = filters.city.toLowerCase()
+          return data.filter(church => church.city.toLowerCase() === city)
+        }
+
+        return data
+      }
+
       // Se houver apenas busca ou nenhum filtro, usa rota geral
       const params: Record<string, string> = {}
       if (filters?.searchQuery) {
@@ -27,9 +41,6 @@ export function useChurches() {
       }
       if (filters?.city) {
         params.city = filters.city
-      }
-      if (filters?.state) {
-        params.state = filters.state
       }
       if (filters?.ids && filters.ids.length > 0) {
         params.ids = filters.ids.join(',')

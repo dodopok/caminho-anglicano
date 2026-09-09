@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { createClient } from '@supabase/supabase-js'
+import { isValidStateCode } from './layers/localizador/utils/states'
 
 // Simple slugify for build-time use
 function slugify(text: string): string {
@@ -235,10 +236,13 @@ export default defineNuxtConfig({
             const cityRoutes = new Set<string>()
 
             churches.forEach(c => {
-              if (c.state) {
-                stateRoutes.add(`/igrejas/localidade/${c.state.toLowerCase()}`)
+              // Ignora estados inválidos: as páginas de localidade respondem 404
+              // para siglas fora das 27 UFs.
+              if (c.state && isValidStateCode(c.state)) {
+                const state = c.state.trim().toLowerCase()
+                stateRoutes.add(`/igrejas/localidade/${state}`)
                 if (c.city) {
-                  cityRoutes.add(`/igrejas/localidade/${c.state.toLowerCase()}/${slugify(c.city)}`)
+                  cityRoutes.add(`/igrejas/localidade/${state}/${slugify(c.city)}`)
                 }
               }
             })
