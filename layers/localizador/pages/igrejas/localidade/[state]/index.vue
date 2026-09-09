@@ -311,7 +311,7 @@ useHead({
 
           <!-- Lista agrupada por cidade -->
           <div class="space-y-12 sm:space-y-16">
-            <section v-for="city in visibleCities" :key="city.slug" :id="city.slug" class="scroll-mt-24">
+            <section v-for="city in visibleCities" :id="city.slug" :key="city.slug" class="scroll-mt-24">
               <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-5 pb-3 border-b border-slate-100">
                 <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
                   {{ city.name }}
