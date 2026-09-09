@@ -1,6 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
-import { mapChurchRows } from '../../utils/mapChurch'
+import { mapChurchRows } from '../../../utils/mapChurch'
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
