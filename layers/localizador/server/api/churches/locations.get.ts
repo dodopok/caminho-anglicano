@@ -1,6 +1,12 @@
 import { createClient } from '@supabase/supabase-js'
 import type { Database } from '~/types/database'
+import { slugify } from '../../../utils/slug'
+import { getStateName, getStateRegion, isValidStateCode, normalizeStateCode } from '../../../utils/states'
 
+/**
+ * Diretório de localidades: estados e cidades que realmente possuem igrejas
+ * cadastradas, com contagens. Alimenta a navegação por localidade em /igrejas.
+ */
 export default defineEventHandler(async () => {
   const config = useRuntimeConfig()
 
@@ -18,35 +24,45 @@ export default defineEventHandler(async () => {
       throw error
     }
 
-    // Process unique states and cities
-    const states = new Set<string>()
-    const cityStateMap = new Map<string, Set<string>>()
+    const rows = (data || []) as Array<{ city: string | null, state: string | null }>
 
-    const churchData = (data || []) as Array<{ city: string | null, state: string | null }>
+    // Agrupa cidades por UF, contando igrejas em cada nível
+    const byState = new Map<string, { count: number, cities: Map<string, number> }>()
 
-    churchData.forEach(church => {
-      if (church.state) {
-        const state = church.state.toUpperCase()
-        states.add(state)
-        
-        if (church.city) {
-          if (!cityStateMap.has(state)) {
-            cityStateMap.set(state, new Set())
-          }
-          cityStateMap.get(state)!.add(church.city)
-        }
+    for (const row of rows) {
+      const code = normalizeStateCode(row.state)
+      if (!isValidStateCode(code)) continue
+
+      if (!byState.has(code)) {
+        byState.set(code, { count: 0, cities: new Map() })
       }
-    })
+      const entry = byState.get(code)!
+      entry.count++
 
-    const locations = {
-      states: Array.from(states).sort(),
-      cities: Array.from(cityStateMap.entries()).map(([state, cities]) => ({
-        state,
-        cities: Array.from(cities).sort()
-      }))
+      const city = row.city?.trim()
+      if (city) {
+        entry.cities.set(city, (entry.cities.get(city) || 0) + 1)
+      }
     }
 
-    return locations
+    const states = [...byState.entries()]
+      .map(([code, entry]) => ({
+        code,
+        name: getStateName(code),
+        region: getStateRegion(code),
+        count: entry.count,
+        cities: [...entry.cities.entries()]
+          .map(([name, count]) => ({ name, slug: slugify(name), count }))
+          .sort((a, b) => a.name.localeCompare(b.name, 'pt-BR'))
+      }))
+      .sort((a, b) => a.name.localeCompare(b.name, 'pt-BR'))
+
+    return {
+      states,
+      totalStates: states.length,
+      totalCities: states.reduce((sum, state) => sum + state.cities.length, 0),
+      totalChurches: states.reduce((sum, state) => sum + state.count, 0)
+    }
   } catch (error) {
     console.error('Error fetching church locations:', error)
     throw createError({

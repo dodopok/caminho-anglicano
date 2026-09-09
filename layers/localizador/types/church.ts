@@ -86,3 +86,24 @@ export interface ChurchFilters {
 export interface ChurchWithDistance extends Church {
   distance?: number // Distance in kilometers
 }
+
+export interface LocationCity {
+  name: string
+  slug: string
+  count: number
+}
+
+export interface LocationState {
+  code: string
+  name: string
+  region?: string
+  count: number
+  cities: LocationCity[]
+}
+
+export interface ChurchLocations {
+  states: LocationState[]
+  totalStates: number
+  totalCities: number
+  totalChurches: number
+}
