@@ -82,13 +82,16 @@ const {
   humanizeKey
 } = useOrdoDashboardPresentation()
 
-type ExplorerName = 'audio' | 'notifications' | 'lifeRules' | 'adoptions' | 'moderation' | 'health' | 'customRosaries' | null
+type ExplorerName = 'audio' | 'notifications' | 'lifeRules' | 'lifeRuleExams' | 'adoptions' | 'moderation' | 'health' | 'customRosaries' | null
 
 const activeExplorer = ref<ExplorerName>(null)
 
 const notificationStatusItems = computed(() => mapItems(props.dashboard.notifications?.delivery_status_counts))
 const estimatedMissingCharacters = computed(() => Object.values(props.dashboard.audio?.estimated_missing_characters || {}).reduce((total, value) => total + value, 0))
 const moderation = computed(() => props.dashboard.moderation?.custom_rosaries)
+const lifeRuleExams = computed(() => props.dashboard.life_rules?.exams)
+const lifeRuleExamBandItems = computed(() => mapItems(lifeRuleExams.value?.by_band))
+const formatOptionalNumber = (value: number | null | undefined) => value == null ? '—' : formatNumber(value)
 const customRosaryExplorerRemotePagination = computed<ExplorerRemotePagination>(() => ({
   currentPage: props.customRosaryExplorerCurrentPage,
   totalPages: props.customRosaryExplorerTotalPages,
@@ -176,6 +179,26 @@ const lifeRuleAdoptionRows = computed<ExplorerRow[]>(() => (props.dashboard.life
   id: item.id || item.title,
   values: { id: item.id || '—', title: item.title, adoptions: asNumber(item.adoptions) }
 })))
+
+const countMapRows = (category: string, values?: Record<string, number>): ExplorerRow[] =>
+  mapItems(values).map(item => ({
+    id: `${category}-${item.key}`,
+    values: { category, item: item.label, code: item.key, value: item.value }
+  }))
+
+const lifeRuleExamColumns: ExplorerColumn[] = [
+  { key: 'category', label: 'Grupo', sortable: true },
+  { key: 'item', label: 'Métrica', sortable: true },
+  { key: 'code', label: 'Código', sortable: true },
+  { key: 'value', label: 'Valor', sortable: true, align: 'right' }
+]
+const lifeRuleExamRows = computed<ExplorerRow[]>(() => [
+  { id: 'completed', values: { category: 'Resumo', item: 'Exames concluídos', code: 'completed_in_period', value: lifeRuleExams.value?.completed_in_period ?? null } },
+  { id: 'users', values: { category: 'Resumo', item: 'Usuários distintos com exame concluído', code: 'users_with_completed_exams', value: lifeRuleExams.value?.users_with_completed_exams ?? null } },
+  ...(lifeRuleExams.value?.average_score == null ? [] : [{ id: 'average-score', values: { category: 'Resumo', item: 'Score médio', code: 'average_score', value: lifeRuleExams.value.average_score, value_kind: 'decimal' } }]),
+  ...countMapRows('Período de conclusão', lifeRuleExams.value?.by_period),
+  ...countMapRows('Banda de score', lifeRuleExams.value?.by_band)
+])
 
 const moderationColumns: ExplorerColumn[] = [
   { key: 'category', label: 'Fila', sortable: true },
@@ -292,9 +315,11 @@ const openCustomRosaryFromExplorer = (row: ExplorerRow) => {
 }
 
 const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: ExplorerRow) => {
+  if (value == null) return '—'
   if (row.values.value_kind === 'percentage') return formatPercent(typeof value === 'number' ? value : Number(value))
   if (row.values.value_kind === 'duration') return formatDuration(typeof value === 'number' ? value : Number(value))
   if (row.values.value_kind === 'timestamp') return formatTimestamp(value == null ? null : String(value))
+  if (row.values.value_kind === 'decimal') return formatDecimal(typeof value === 'number' ? value : Number(value), 2)
   return formatExplorerValue(value, _key)
 }
 </script>
@@ -306,6 +331,9 @@ const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: 
     <div class="ordo-metrics-grid ordo-metrics-grid--four">
       <OrdoMetricCard v-if="moderation" title="Rosários em revisão" :value="formatNumber(moderation.pending_now)" :subtitle="`${formatNumber(moderation.approved_without_strapi)} aprovados sem Strapi`" color="orange" icon="◌" eyebrow="Moderação" />
       <OrdoMetricCard v-if="dashboard.life_rules" title="Regras pendentes" :value="formatNumber(dashboard.life_rules.pending_rules)" :subtitle="`${formatNumber(dashboard.life_rules.total_adoptions)} adoções históricas`" color="purple" icon="⌁" eyebrow="Regras de vida" />
+      <OrdoMetricCard v-if="lifeRuleExams" title="Exames concluídos" :value="formatOptionalNumber(lifeRuleExams.completed_in_period)" subtitle="no período por completed_at" color="blue" icon="✓" eyebrow="Regras de vida" />
+      <OrdoMetricCard v-if="lifeRuleExams" title="Usuários distintos" :value="formatOptionalNumber(lifeRuleExams.users_with_completed_exams)" subtitle="com exame concluído no período" color="green" icon="◎" eyebrow="Avaliação" />
+      <OrdoMetricCard v-if="lifeRuleExams?.average_score != null" title="Score médio" :value="formatDecimal(lifeRuleExams.average_score, 2)" subtitle="exames concluídos no período" color="orange" icon="⌁" eyebrow="Avaliação" />
       <OrdoMetricCard v-if="dashboard.health?.notifications" title="Falhas nas últimas 24h" :value="formatNumber(dashboard.health.notifications.failures_last_24_hours)" subtitle="notificações FCM" color="pink" icon="!" eyebrow="Saúde" />
       <OrdoMetricCard v-if="dashboard.health?.audio_sessions" title="Áudio travado" :value="formatNumber(dashboard.health.audio_sessions.stale_running)" :subtitle="`${formatNumber(dashboard.health.audio_sessions.failed)} falhas históricas`" color="blue" icon="◷" eyebrow="Geração" />
     </div>
@@ -316,7 +344,8 @@ const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: 
     </div>
 
     <div class="ordo-grid-2">
-      <OrdoChartCard v-if="dashboard.life_rules" title="Regras mais adotadas" description="Ranking completo de adoções históricas recebido pelo backend." icon="⌁" icon-color="purple" eyebrow="Regras de vida"><template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'lifeRules'">Ver ranking ↗</button></template><div class="ordo-mini-bars"><div v-for="item in dashboard.life_rules.top_adopted || []" :key="item.id || item.title"><span>{{ item.title }}</span><strong>{{ formatNumber(item.adoptions) }}</strong><i><b class="is-purple" :style="{ width: `${(Number(item.adoptions || 0) / Math.max(...(dashboard.life_rules?.top_adopted || []).map(rule => Number(rule.adoptions || 0)), 1)) * 100}%` }" /></i></div></div></OrdoChartCard>
+      <OrdoChartCard v-if="dashboard.life_rules" title="Regras mais adotadas" description="Ranking completo de adoções históricas recebido pelo backend." icon="⌁" icon-color="purple" eyebrow="Regras de vida"><template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'lifeRules'">Ver ranking ↗</button></template><div class="ordo-highlight-grid"><div><span>Total de regras</span><strong>{{ formatNumber(dashboard.life_rules.total_rules) }}</strong></div><div><span>Públicas</span><strong>{{ formatNumber(dashboard.life_rules.public_rules) }}</strong></div><div><span>Aprovadas</span><strong>{{ formatNumber(dashboard.life_rules.approved_rules) }}</strong></div><div><span>Adoções</span><strong>{{ formatNumber(dashboard.life_rules.total_adoptions) }}</strong></div></div><div class="ordo-mini-bars"><div v-for="item in dashboard.life_rules.top_adopted || []" :key="item.id || item.title"><span>{{ item.title }}</span><strong>{{ formatNumber(item.adoptions) }}</strong><i><b class="is-purple" :style="{ width: `${(Number(item.adoptions || 0) / Math.max(...(dashboard.life_rules?.top_adopted || []).map(rule => Number(rule.adoptions || 0)), 1)) * 100}%` }" /></i></div></div></OrdoChartCard>
+      <OrdoChartCard v-if="lifeRuleExams" title="Exames de Regras de Vida" description="Exames concluídos no período, agrupados por completed_at. Regras e adoções continuam na base total." icon="✓" icon-color="blue" eyebrow="Avaliação"><template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'lifeRuleExams'">Ver dados ↗</button></template><div class="ordo-highlight-grid"><div><span>Concluídos</span><strong>{{ formatOptionalNumber(lifeRuleExams.completed_in_period) }}</strong></div><div><span>Pessoas distintas</span><strong>{{ formatOptionalNumber(lifeRuleExams.users_with_completed_exams) }}</strong></div><div v-if="lifeRuleExams.average_score != null"><span>Score médio</span><strong>{{ formatDecimal(lifeRuleExams.average_score, 2) }}</strong></div></div><div v-if="lifeRuleExamBandItems.length" class="ordo-mini-bars"><div v-for="item in lifeRuleExamBandItems" :key="item.key"><span>{{ humanizeKey(item.key) }}</span><strong>{{ formatNumber(item.value) }}</strong><i><b :style="{ width: `${(item.value / maxItemValue(lifeRuleExamBandItems)) * 100}%` }" /></i></div></div><small v-else class="ordo-muted">O backend ainda não retornou bandas de score.</small></OrdoChartCard>
       <OrdoChartCard v-if="dashboard.health" title="Saúde operacional" description="Falhas, sessões travadas e chaves próximas do vencimento." icon="✓" icon-color="green" eyebrow="Health"><template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'health'">Ver detalhes ↗</button></template><div class="ordo-highlight-grid"><div><span>Falhas FCM 24h</span><strong>{{ formatNumber(dashboard.health.notifications?.failures_last_24_hours) }}</strong></div><div><span>Áudio travado</span><strong>{{ formatNumber(dashboard.health.audio_sessions?.stale_running) }}</strong></div><div><span>Áudio rodando</span><strong>{{ formatNumber(dashboard.health.audio_sessions?.running) }}</strong></div><div><span>Keys expirando</span><strong>{{ formatNumber(dashboard.health.api_keys?.expiring_next_30_days) }}</strong></div></div></OrdoChartCard>
     </div>
 
@@ -331,6 +360,7 @@ const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: 
   <OrdoDataExplorerModal v-if="activeExplorer === 'audio'" title="Cobertura de áudio" description="Detalhamento por prayer book e voz, incluindo textos processados e caracteres faltantes." :columns="audioColumns" :rows="audioRows" search-placeholder="Buscar prayer book ou voz…" default-sort-key="missing_characters" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'notifications'" title="Notificações" description="Resumo, tipos e status de entrega por plataforma; tokens individuais nunca são expostos." :columns="notificationColumns" :rows="notificationRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'lifeRules'" title="Regras de vida carregadas" description="Itens retornados para a página atual da fila, com todos os campos administrativos disponíveis nessa resposta." :columns="lifeRuleColumns" :rows="lifeRuleRows" :filters="lifeRuleFilters" default-sort-key="created_at" default-sort-direction="desc" search-placeholder="Buscar regra, autor ou descrição…" @close="activeExplorer = null" />
+  <OrdoDataExplorerModal v-else-if="activeExplorer === 'lifeRuleExams'" title="Exames de Regras de Vida" description="Exames concluídos no período por completed_at, com usuários distintos, score médio e distribuições quando retornadas." :columns="lifeRuleExamColumns" :rows="lifeRuleExamRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'adoptions'" title="Adoção de regras de vida" description="Ranking completo de regras adotadas na base total." :columns="lifeRuleAdoptionColumns" :rows="lifeRuleAdoptionRows" default-sort-key="adoptions" search-placeholder="Buscar regra…" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'moderation'" title="Métricas de moderação" description="Pendências atuais, decisões no período, reentradas e idade das filas." :columns="moderationColumns" :rows="moderationRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'health'" title="Saúde operacional" description="Detalhamento de falhas, sessões travadas e chaves próximas do vencimento." :columns="healthColumns" :rows="healthRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />

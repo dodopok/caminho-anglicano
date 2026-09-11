@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import OrdoChartCard from './ChartCard.vue'
+import OrdoCountryMap from './CountryMap.vue'
 import OrdoDataExplorerModal from './DataExplorerModal.vue'
 import OrdoLineChart from './LineChart.vue'
 import OrdoMetricCard from './MetricCard.vue'
@@ -46,7 +47,9 @@ const dailyNewUsers = computed(() => {
 const dailyNewUserLabels = computed(() => chartBuckets.value.map(props.allTime ? formatMonthLabel : formatChartLabel))
 const onboardingChoiceItems = computed(() => mapItems(props.dashboard.onboarding?.choices?.prayer_books))
 const languageItems = computed(() => mapItems(props.dashboard.geography?.by_language))
-const countryItems = computed(() => mapItems(props.dashboard.geography?.by_country))
+const geographyCoverage = computed(() => props.dashboard.geography?.coverage)
+const explicitCountryPercentage = computed(() => geographyCoverage.value?.explicit_country_percentage ?? props.dashboard.geography?.explicit_country_percentage ?? props.dashboard.geography?.country_coverage_percentage)
+const resolvedCountryPercentage = computed(() => geographyCoverage.value?.resolved_country_percentage ?? props.dashboard.geography?.resolved_country_coverage_percentage)
 const retentionRows = computed(() => props.dashboard.retention?.cohorts || [])
 const activeCohort = computed(() => retentionRows.value[retentionRows.value.length - 1])
 
@@ -144,12 +147,14 @@ const geographyFilters: ExplorerFilter[] = [
   }
 ]
 const geographyRows = computed<ExplorerRow[]>(() => [
-  { id: 'summary-total', values: { category: 'Resumo', item: 'Usuários totais', code: 'total_users', value: asNumber(props.dashboard.geography?.total_users) } },
-  { id: 'summary-explicit', values: { category: 'Resumo', item: 'País explícito', code: 'explicit_country_users', value: asNumber(props.dashboard.geography?.explicit_country_users) } },
-  { id: 'summary-coverage', values: { category: 'Resumo', item: 'Cobertura de país', code: 'country_coverage_percentage', value: asNumber(props.dashboard.geography?.country_coverage_percentage), value_kind: 'percentage' } },
+  { id: 'summary-total', values: { category: 'Resumo', item: 'Usuários totais', code: 'total_users', value: asNumber(geographyCoverage.value?.total_users ?? props.dashboard.geography?.total_users) } },
+  { id: 'summary-explicit', values: { category: 'Resumo', item: 'País declarado', code: 'explicit_country_users', value: asNumber(geographyCoverage.value?.explicit_country_users ?? props.dashboard.geography?.explicit_country_users) } },
+  { id: 'summary-explicit-percentage', values: { category: 'Resumo', item: 'Cobertura declarada', code: 'explicit_country_percentage', value: asNumber(explicitCountryPercentage.value), value_kind: 'percentage' } },
+  ...(resolvedCountryPercentage.value == null ? [] : [{ id: 'summary-resolved-percentage', values: { category: 'Resumo', item: 'Cobertura resolvida', code: 'resolved_country_percentage', value: asNumber(resolvedCountryPercentage.value), value_kind: 'percentage' } }]),
+  ...(geographyCoverage.value?.timezone_inferred_country_users == null && props.dashboard.geography?.derived_country_users == null ? [] : [{ id: 'summary-timezone-inferred', values: { category: 'Resumo', item: 'País inferido por timezone', code: 'timezone_inferred_country_users', value: asNumber(geographyCoverage.value?.timezone_inferred_country_users ?? props.dashboard.geography?.derived_country_users) } }]),
+  ...(geographyCoverage.value?.resolved_country_users == null ? [] : [{ id: 'summary-resolved-users', values: { category: 'Resumo', item: 'País resolvido', code: 'resolved_country_users', value: asNumber(geographyCoverage.value.resolved_country_users) } }]),
+  ...(geographyCoverage.value?.unresolved_country_users == null && props.dashboard.geography?.ambiguous_or_unknown_timezone_users == null ? [] : [{ id: 'summary-unresolved-users', values: { category: 'Resumo', item: 'Sem localização', code: 'unresolved_country_users', value: asNumber(geographyCoverage.value?.unresolved_country_users ?? props.dashboard.geography?.ambiguous_or_unknown_timezone_users) } }]),
   { id: 'summary-default-timezone', values: { category: 'Resumo', item: 'Timezone padrão', code: 'default_timezone_users', value: asNumber(props.dashboard.geography?.default_timezone_users) } },
-  { id: 'summary-derived', values: { category: 'Resumo', item: 'País derivado', code: 'derived_country_users', value: asNumber(props.dashboard.geography?.derived_country_users) } },
-  { id: 'summary-ambiguous', values: { category: 'Resumo', item: 'Timezone ambíguo/desconhecido', code: 'ambiguous_or_unknown_timezone_users', value: asNumber(props.dashboard.geography?.ambiguous_or_unknown_timezone_users) } },
   ...countMapRows('País', props.dashboard.geography?.by_country),
   ...countMapRows('Idioma', props.dashboard.geography?.by_language)
 ])
@@ -191,12 +196,9 @@ const formatGrowthExplorerValue = (value: ExplorerValue, key: string, row: Explo
       <div class="ordo-table-wrap"><table><thead><tr><th>Semana</th><th>Pessoas</th><th>D1</th><th>D7</th><th>D30</th></tr></thead><tbody><tr v-for="cohort in retentionRows" :key="cohort.week_start"><td>{{ formatDate(cohort.week_start) }}</td><td>{{ formatNumber(cohort.users) }}</td><td><strong>{{ formatPercent(cohort.d1?.rate) }}</strong><span>{{ formatNumber(cohort.d1?.users) }} pessoas</span></td><td><strong>{{ formatPercent(cohort.d7?.rate) }}</strong><span>{{ formatNumber(cohort.d7?.users) }} pessoas</span></td><td><strong>{{ formatPercent(cohort.d30?.rate) }}</strong><span>{{ formatNumber(cohort.d30?.users) }} pessoas</span></td></tr></tbody></table></div>
     </div>
 
+    <OrdoCountryMap v-if="dashboard.geography" :geography="dashboard.geography" />
+
     <div class="ordo-grid-2">
-      <OrdoChartCard v-if="dashboard.geography" title="Origem declarada" description="Cobertura explícita de país e idioma das preferências." icon="⌖" icon-color="green" eyebrow="Geografia">
-        <template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'geography'">Ver tudo ↗</button></template>
-        <div class="ordo-stat-banner"><strong>{{ formatPercent(dashboard.geography.country_coverage_percentage) }}</strong><span>de cobertura de país explícito</span></div>
-        <div class="ordo-mini-bars"><div v-for="item in countryItems.slice(0, 5)" :key="item.key"><span>{{ item.label }}</span><strong>{{ formatNumber(item.value) }}</strong><i><b :style="{ width: `${(item.value / maxItemValue(countryItems)) * 100}%` }" /></i></div></div>
-      </OrdoChartCard>
       <OrdoChartCard v-if="dashboard.prayer_books || dashboard.onboarding" title="Escolhas no onboarding" description="Preferências iniciais, separadas do uso real nas completions." icon="⌂" icon-color="purple" eyebrow="Preferências">
         <template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'onboarding'">Ver tudo ↗</button></template>
         <div class="ordo-mini-bars"><div v-for="item in onboardingChoiceItems.slice(0, 6)" :key="item.key"><span>{{ item.label }}</span><strong>{{ formatNumber(item.value) }}</strong><i><b :style="{ width: `${(item.value / maxItemValue(onboardingChoiceItems)) * 100}%` }" /></i></div><div v-for="item in languageItems.slice(0, 3)" :key="`lang-${item.key}`"><span>{{ item.label }}</span><strong>{{ formatNumber(item.value) }}</strong><i><b class="is-ochre" :style="{ width: `${(item.value / maxItemValue(languageItems)) * 100}%` }" /></i></div></div>
