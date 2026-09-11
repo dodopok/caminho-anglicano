@@ -316,7 +316,12 @@ export interface DashboardPremium extends DashboardSectionMeta {
 export interface DashboardGeography extends DashboardSectionMeta {
   total_users?: number
   explicit_country_users?: number
+  /** Preferred name for the declared-country percentage in the final Rails contract. */
+  explicit_country_percentage?: number
+  /** Backwards-compatible alias used by the current Rails response. */
   country_coverage_percentage?: number
+  /** Declared country plus uniquely derived country coverage, when available. */
+  resolved_country_coverage_percentage?: number
   default_timezone_users?: number
   derived_country_users?: number
   ambiguous_or_unknown_timezone_users?: number
