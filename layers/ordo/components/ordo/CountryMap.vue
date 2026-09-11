@@ -27,9 +27,25 @@ const nameForCode = (code: string, fallback?: string) => {
   return countryDisplayNames?.of(normalizedCode.toUpperCase()) || fallback || normalizedCode.toUpperCase()
 }
 
+const countryBreakdownCounts = computed(() => {
+  if (Array.isArray(props.geography.country_breakdown)) {
+    return props.geography.country_breakdown.reduce<Record<string, number>>((counts, item) => {
+      const rawCode = typeof item.country_code === 'string' ? item.country_code.trim().toLowerCase() : ''
+      const code = rawCode === 'other' ? rawCode : normalizeCountryCode(rawCode)
+      const users = Number(item.users)
+      if (!code || !Number.isFinite(users) || users <= 0) return counts
+
+      counts[code] = (counts[code] || 0) + users
+      return counts
+    }, {})
+  }
+
+  return props.geography.by_country
+})
+
 const countryData = computed<CountryMapDatum[]>(() => createCountryMapData(
-  props.geography.by_country,
-  props.geography.total_users,
+  countryBreakdownCounts.value,
+  props.geography.coverage?.total_users ?? props.geography.total_users,
   mapLocations,
   nameForCode
 ))
@@ -37,14 +53,17 @@ const countryData = computed<CountryMapDatum[]>(() => createCountryMapData(
 const dataByCode = computed(() => new Map(countryData.value.map(item => [item.code, item])))
 const mappedCountries = computed(() => countryData.value.filter(item => item.hasGeometry))
 const maximumCount = computed(() => Math.max(...mappedCountries.value.map(item => item.count), 0))
-const totalUsers = computed(() => Math.max(Number(props.geography.total_users) || 0, 0))
+const totalUsers = computed(() => Math.max(Number(props.geography.coverage?.total_users ?? props.geography.total_users) || 0, 0))
 const activeCode = computed(() => selectedCode.value || focusedCode.value || hoveredCode.value)
 const activeCountry = computed(() => activeCode.value ? dataByCode.value.get(activeCode.value) || null : null)
 const topCountries = computed(() => mappedCountries.value.slice(0, 6))
 const hasCountryData = computed(() => mappedCountries.value.length > 0)
 const hasCountryRows = computed(() => countryData.value.length > 0)
-const explicitCoverage = computed(() => props.geography.explicit_country_percentage ?? props.geography.country_coverage_percentage)
-const resolvedCoverage = computed(() => props.geography.resolved_country_coverage_percentage)
+const explicitCoverage = computed(() => props.geography.coverage?.explicit_country_percentage ?? props.geography.explicit_country_percentage ?? props.geography.country_coverage_percentage)
+const resolvedCoverage = computed(() => props.geography.coverage?.resolved_country_percentage ?? props.geography.resolved_country_coverage_percentage)
+const explicitCountryUsers = computed(() => props.geography.coverage?.explicit_country_users ?? props.geography.explicit_country_users)
+const timezoneInferredUsers = computed(() => props.geography.coverage?.timezone_inferred_country_users ?? props.geography.derived_country_users)
+const unresolvedCountryUsers = computed(() => props.geography.coverage?.unresolved_country_users ?? props.geography.ambiguous_or_unknown_timezone_users)
 
 const displayCount = (count: number | null | undefined) => new Intl.NumberFormat('pt-BR').format(Math.max(Number(count) || 0, 0))
 const displayPercent = (percent: number | null | undefined) => `${(Number(percent) || 0).toLocaleString('pt-BR', { maximumFractionDigits: 1 })}%`
@@ -78,9 +97,9 @@ const toggleSelected = (code: string) => {
     <div class="ordo-country-map__metrics" aria-label="Resumo da cobertura geográfica">
       <div><span>Cobertura declarada</span><strong>{{ explicitCoverage == null ? '—' : displayPercent(explicitCoverage) }}</strong><small>país informado pela pessoa</small></div>
       <div><span>Cobertura resolvida</span><strong>{{ resolvedCoverage == null ? '—' : displayPercent(resolvedCoverage) }}</strong><small>declarada + timezone unívoco</small></div>
-      <div><span>País explícito</span><strong>{{ displayCount(geography.explicit_country_users) }}</strong><small>pessoas na base</small></div>
-      <div><span>País derivado</span><strong>{{ displayCount(geography.derived_country_users) }}</strong><small>timezone unívoco</small></div>
-      <div><span>Ambíguo / desconhecido</span><strong>{{ displayCount(geography.ambiguous_or_unknown_timezone_users) }}</strong><small>sem localização inventada</small></div>
+      <div><span>País declarado</span><strong>{{ displayCount(explicitCountryUsers) }}</strong><small>pessoas na base</small></div>
+      <div><span>País inferido</span><strong>{{ displayCount(timezoneInferredUsers) }}</strong><small>timezone unívoco</small></div>
+      <div><span>Sem localização</span><strong>{{ displayCount(unresolvedCountryUsers) }}</strong><small>ambíguo ou desconhecido</small></div>
     </div>
 
     <div class="ordo-country-map__body">
@@ -151,7 +170,7 @@ const toggleSelected = (code: string) => {
             </button>
           </li>
         </ol>
-          <p v-else class="ordo-country-map__empty">Ainda não há países resolvidos para colorir nesta resposta.</p>
+        <p v-else class="ordo-country-map__empty">Ainda não há países resolvidos para colorir nesta resposta.</p>
       </aside>
     </div>
 

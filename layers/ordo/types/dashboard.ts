@@ -181,6 +181,14 @@ export interface TopAdoptedRule {
   adoptions?: number
 }
 
+export interface DashboardLifeRuleExams extends DashboardSectionMeta {
+  completed_in_period?: number
+  users_with_completed_exams?: number
+  average_score?: number | null
+  by_period?: CountMap
+  by_band?: CountMap
+}
+
 export interface DashboardLifeRules extends DashboardSectionMeta {
   total_rules?: number
   public_rules?: number
@@ -190,6 +198,7 @@ export interface DashboardLifeRules extends DashboardSectionMeta {
   oldest_pending_age_seconds?: number | null
   top_adopted?: TopAdoptedRule[]
   total_adoptions?: number
+  exams?: DashboardLifeRuleExams
 }
 
 export interface DailyShare {
@@ -313,20 +322,39 @@ export interface DashboardPremium extends DashboardSectionMeta {
   renewal_rate_note?: string | null
 }
 
+export interface CountryBreakdown {
+  country_code: string
+  users?: number
+  explicit_users?: number
+  timezone_inferred_users?: number
+}
+
+export interface GeographyCoverage {
+  total_users?: number
+  explicit_country_users?: number
+  timezone_inferred_country_users?: number
+  resolved_country_users?: number
+  unresolved_country_users?: number
+  explicit_country_percentage?: number
+  resolved_country_percentage?: number
+}
+
 export interface DashboardGeography extends DashboardSectionMeta {
   total_users?: number
   explicit_country_users?: number
-  /** Preferred name for the declared-country percentage in the final Rails contract. */
+  /** Declared-country percentage; it is not resolved coverage. */
   explicit_country_percentage?: number
-  /** Backwards-compatible alias used by the current Rails response. */
+  /** Final Rails contract name for the declared-country percentage. */
   country_coverage_percentage?: number
-  /** Declared country plus uniquely derived country coverage, when available. */
+  /** Legacy rollout alias for resolved country coverage. */
   resolved_country_coverage_percentage?: number
   default_timezone_users?: number
   derived_country_users?: number
   ambiguous_or_unknown_timezone_users?: number
   by_country?: CountMap
   by_language?: CountMap
+  country_breakdown?: CountryBreakdown[]
+  coverage?: GeographyCoverage
 }
 
 export interface DashboardCustomRosaries extends DashboardSectionMeta {
