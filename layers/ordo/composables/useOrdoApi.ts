@@ -9,6 +9,7 @@ import {
   type DashboardFilters,
   type DashboardResponse,
   type AudioCleanupPreview,
+  type AudioClip,
   type AudioClipFilters,
   type AudioClipsResponse,
   type AudioEstimateResponse,
@@ -99,7 +100,7 @@ export const useOrdoApi = () => {
   const audioFilterParams = (filters: AudioClipFilters = {}) => {
     const params = new URLSearchParams()
     const keys: Array<keyof AudioClipFilters> = [
-      'kind', 'provider', 'model', 'voice', 'language', 'speed', 'fingerprint',
+      'kind', 'provider', 'model', 'voice', 'language', 'speed', 'fingerprint', 'max_characters',
       'q', 'created_after', 'created_before', 'prayer_book_code', 'source_name',
       'profile_status', 'sort', 'direction', 'limit', 'offset'
     ]
@@ -140,8 +141,21 @@ export const useOrdoApi = () => {
       body: { generation }
     })
 
-  const regenerateAudioClip = async (id: number | string): Promise<AudioOperationResponse> =>
-    request<AudioOperationResponse>(`/api/v1/admin/audio/clips/${id}/regenerate`, { method: 'POST' })
+  const regenerateAudioClip = async (id: number | string, additionalInstructions?: string): Promise<AudioOperationResponse> =>
+    request<AudioOperationResponse>(`/api/v1/admin/audio/clips/${id}/regenerate`, {
+      method: 'POST',
+      body: additionalInstructions?.trim() ? { additional_instructions: additionalInstructions.trim() } : undefined
+    })
+
+  const acceptAudioClipCandidate = async (clipId: number | string, candidateId: number | string) =>
+    request<{ clip: AudioClip }>(`/api/v1/admin/audio/clips/${clipId}/candidates/${candidateId}/accept`, {
+      method: 'POST'
+    })
+
+  const rejectAudioClipCandidate = async (clipId: number | string, candidateId: number | string) =>
+    request<unknown>(`/api/v1/admin/audio/clips/${clipId}/candidates/${candidateId}`, {
+      method: 'DELETE'
+    })
 
   const previewAudioCleanup = async (filters: AudioClipFilters): Promise<AudioCleanupPreview> =>
     request<AudioCleanupPreview>('/api/v1/admin/audio/cleanup/preview', {
@@ -229,6 +243,8 @@ export const useOrdoApi = () => {
     estimateAudioGeneration,
     enqueueAudioGeneration,
     regenerateAudioClip,
+    acceptAudioClipCandidate,
+    rejectAudioClipCandidate,
     previewAudioCleanup,
     enqueueAudioCleanup,
     reindexAudioCatalog,

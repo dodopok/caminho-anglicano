@@ -6,6 +6,7 @@ import { useOrdoApi } from '../../composables/useOrdoApi'
 import type {
   AudioCleanupPreview,
   AudioClip,
+  AudioClipCandidate,
   AudioClipFilters,
   AudioEstimate,
   AudioGenerationRequest,
@@ -24,6 +25,8 @@ const {
   estimateAudioGeneration,
   enqueueAudioGeneration,
   regenerateAudioClip,
+  acceptAudioClipCandidate,
+  rejectAudioClipCandidate,
   previewAudioCleanup,
   enqueueAudioCleanup,
   reindexAudioCatalog,
@@ -72,9 +75,11 @@ const clipBookFilter = ref('')
 const clipProfileFilter = ref<'all' | AudioProfileStatus>('all')
 const clipProviderFilter = ref('')
 const clipVoiceFilter = ref('')
+const clipMaxCharacters = ref('')
 const clipOffset = ref(0)
 const clipSort = ref('created_at')
 const clipDirection = ref<'asc' | 'desc'>('desc')
+const clipInstructions = ref<Record<string, string>>({})
 
 const cleanupBookCode = ref('')
 const cleanupProfileStatus = ref<AudioProfileStatus>('legacy')
@@ -145,7 +150,8 @@ const clipFilters = (): AudioClipFilters => ({
   ...(clipBookFilter.value ? { prayer_book_code: clipBookFilter.value } : {}),
   ...(clipProfileFilter.value !== 'all' ? { profile_status: clipProfileFilter.value } : {}),
   ...(clipProviderFilter.value ? { provider: clipProviderFilter.value } : {}),
-  ...(clipVoiceFilter.value ? { voice: clipVoiceFilter.value } : {})
+  ...(clipVoiceFilter.value ? { voice: clipVoiceFilter.value } : {}),
+  ...(clipMaxCharacters.value ? { max_characters: clipMaxCharacters.value } : {})
 })
 
 const loadSummary = async () => {
@@ -177,6 +183,10 @@ const loadClips = async (quiet = false) => {
     const response = await fetchAudioClips(clipFilters())
     clips.value = response.clips || []
     clipsPagination.value = response.pagination || { total: 0, limit: CLIP_PAGE_SIZE, offset: clipOffset.value, count: 0 }
+    clips.value.forEach(clip => {
+      const id = String(clip.id)
+      if (!(id in clipInstructions.value)) clipInstructions.value[id] = clip.customization?.instructions || ''
+    })
   } catch (reason) {
     if (!quiet) clipsError.value = errorMessage(reason)
   } finally {
@@ -315,11 +325,12 @@ const refreshClipUrl = async (clip: AudioClip) => {
 
 const regenerateClip = async (clip: AudioClip) => {
   const id = String(clip.id)
-  if (!window.confirm(`Regenerar o áudio de “${clip.text.slice(0, 80)}”?`)) return
+  const instructions = (clipInstructions.value[id] ?? clip.customization?.instructions ?? '').trim()
+  if (!window.confirm(`Gerar uma nova tentativa para “${clip.text.slice(0, 80)}”? O áudio atual continuará intacto até você aprovar a tentativa.`)) return
 
   clipActionLoading.value = { ...clipActionLoading.value, [id]: true }
   try {
-    const response = await regenerateAudioClip(clip.id)
+    const response = await regenerateAudioClip(clip.id, instructions || undefined)
     operations.value = [response.operation, ...operations.value.filter(operation => operation.id !== response.operation.id)]
   } catch (reason) {
     clipsError.value = errorMessage(reason)
@@ -327,6 +338,44 @@ const regenerateClip = async (clip: AudioClip) => {
     clipActionLoading.value = { ...clipActionLoading.value, [id]: false }
   }
 }
+
+const candidateActionKey = (clip: AudioClip, candidate: AudioClipCandidate) => `${clip.id}:candidate:${candidate.id}`
+
+const acceptCandidate = async (clip: AudioClip, candidate: AudioClipCandidate) => {
+  if (!window.confirm('Aprovar esta tentativa? Ela substituirá o áudio oficial deste texto.')) return
+
+  const key = candidateActionKey(clip, candidate)
+  clipActionLoading.value = { ...clipActionLoading.value, [key]: true }
+  try {
+    await acceptAudioClipCandidate(clip.id, candidate.id)
+    await Promise.all([loadClips(true), loadSummary()])
+  } catch (reason) {
+    clipsError.value = errorMessage(reason)
+  } finally {
+    clipActionLoading.value = { ...clipActionLoading.value, [key]: false }
+  }
+}
+
+const rejectCandidate = async (clip: AudioClip, candidate: AudioClipCandidate) => {
+  if (!window.confirm('Descartar esta tentativa e apagar o arquivo gerado?')) return
+
+  const key = candidateActionKey(clip, candidate)
+  clipActionLoading.value = { ...clipActionLoading.value, [key]: true }
+  try {
+    await rejectAudioClipCandidate(clip.id, candidate.id)
+    await loadClips(true)
+  } catch (reason) {
+    clipsError.value = errorMessage(reason)
+  } finally {
+    clipActionLoading.value = { ...clipActionLoading.value, [key]: false }
+  }
+}
+
+const candidateStatusLabel = (status?: string) => ({
+  pending: 'aguardando revisão',
+  accepted: 'aprovada',
+  rejected: 'descartada'
+}[status || ''] || humanizeKey(status || 'desconhecida'))
 
 const cleanupFilters = (): AudioClipFilters => ({
   profile_status: cleanupProfileStatus.value,
@@ -501,6 +550,14 @@ onUnmounted(stopPolling)
             <option v-for="voice in voiceOptions" :key="voice" :value="voice">{{ voice }}</option>
           </select>
         </label>
+        <label>Textos curtos
+          <select v-model="clipMaxCharacters">
+            <option value="">Todos</option>
+            <option value="30">Até 30 caracteres</option>
+            <option value="60">Até 60 caracteres</option>
+            <option value="120">Até 120 caracteres</option>
+          </select>
+        </label>
         <button type="button" class="ordo-button ordo-button--primary" :disabled="clipsLoading" @click="applyClipFilters">{{ clipsLoading ? 'Buscando…' : 'Buscar' }}</button>
       </div>
 
@@ -522,6 +579,27 @@ onUnmounted(stopPolling)
               <span v-if="clip.usages.length > 4">+{{ clip.usages.length - 4 }} usos</span>
             </div>
             <small class="audio-ops__fingerprint">fingerprint {{ shortFingerprint(clip.configuration_fingerprint) }} · instruções {{ shortFingerprint(clip.instructions_sha256) }}</small>
+            <div class="audio-ops__customization">
+              <label>Observação específica deste áudio
+                <textarea v-model="clipInstructions[String(clip.id)]" maxlength="1000" rows="2" placeholder="Ex.: pronuncie “Efraim” com a tonicidade correta." />
+              </label>
+              <small>Usada só neste texto e nas próximas gerações dele; não altera o fingerprint global.</small>
+            </div>
+            <div v-if="clip.candidates?.length" class="audio-ops__candidates">
+              <div class="audio-ops__candidates-heading"><strong>Tentativas para revisar</strong><span>{{ clip.candidates.length }}</span></div>
+              <article v-for="candidate in clip.candidates" :key="candidate.id" class="audio-ops__candidate">
+                <div>
+                  <span class="audio-ops__badge" :class="`audio-ops__badge--${candidate.status || 'unknown'}`">{{ candidateStatusLabel(candidate.status) }}</span>
+                  <small>{{ formatDuration(candidate.duration) }} · {{ formatTimestamp(candidate.created_at) }}</small>
+                  <small v-if="candidate.custom_instructions">observação: {{ candidate.custom_instructions }}</small>
+                </div>
+                <div class="audio-ops__candidate-actions">
+                  <audio v-if="candidate.status === 'pending' && candidate.audio_url" :src="candidate.audio_url" controls preload="none" />
+                  <button v-if="candidate.status === 'pending'" type="button" class="audio-ops__link" :disabled="clipActionLoading[candidateActionKey(clip, candidate)]" @click="acceptCandidate(clip, candidate)">aprovar</button>
+                  <button v-if="candidate.status === 'pending'" type="button" class="audio-ops__link audio-ops__link--danger" :disabled="clipActionLoading[candidateActionKey(clip, candidate)]" @click="rejectCandidate(clip, candidate)">{{ clipActionLoading[candidateActionKey(clip, candidate)] ? 'descartando…' : 'descartar' }}</button>
+                </div>
+              </article>
+            </div>
           </div>
           <div class="audio-ops__clip-actions">
             <audio v-if="clip.audio_url" :src="clip.audio_url" controls preload="none" />
@@ -614,10 +692,12 @@ onUnmounted(stopPolling)
 .audio-ops__operation small { display: block; margin-top: 5px; color: #929d92; font-size: 10px; }
 .audio-ops__badge { display: inline-flex; align-items: center; padding: 4px 7px; border-radius: 99px; background: #eef2ed; color: #718073; font-size: 9px; font-weight: 800; white-space: nowrap; }
 .audio-ops__badge--current, .audio-ops__badge--completed { background: #e5f0e5; color: #4d7159; }
+.audio-ops__badge--accepted { background: #e5f0e5; color: #4d7159; }
 .audio-ops__badge--running { background: #e4eff1; color: #457180; }
 .audio-ops__badge--queued { background: #f6eadc; color: #af7147; }
+.audio-ops__badge--pending { background: #f6eadc; color: #af7147; }
 .audio-ops__badge--stale { background: #f6eadc; color: #9b6b3e; }
-.audio-ops__badge--legacy, .audio-ops__badge--failed { background: #f5e5e6; color: #a65c64; }
+.audio-ops__badge--legacy, .audio-ops__badge--failed, .audio-ops__badge--rejected { background: #f5e5e6; color: #a65c64; }
 .audio-ops__progress { height: 5px; margin-top: 10px; overflow: hidden; border-radius: 99px; background: #eaf0e8; }
 .audio-ops__progress i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #58775e, #adc39b); transition: width 300ms ease; }
 .audio-ops__operation-meta { margin-top: 6px; color: #8f9a90; font-size: 9px; }
@@ -625,7 +705,7 @@ onUnmounted(stopPolling)
 .audio-ops__link { padding: 0; border: 0; background: transparent; color: #54745d; cursor: pointer; font: inherit; font-size: 10px; font-weight: 800; }
 .audio-ops__link:disabled { cursor: not-allowed; opacity: .45; }
 .audio-ops__link--danger { margin-left: 10px; color: #a15f57; }
-.audio-ops__filters { display: grid; grid-template-columns: minmax(180px, 2fr) repeat(4, minmax(90px, 1fr)) auto; align-items: end; gap: 9px; margin-bottom: 15px; }
+.audio-ops__filters { display: grid; grid-template-columns: minmax(180px, 2fr) repeat(5, minmax(90px, 1fr)) auto; align-items: end; gap: 9px; margin-bottom: 15px; }
 .audio-ops__filter-wide { min-width: 0; }
 .audio-ops__empty { padding: 25px 8px; color: #8b978c; font-size: 11px; text-align: center; }
 .audio-ops__clips { display: grid; gap: 8px; }
@@ -637,6 +717,20 @@ onUnmounted(stopPolling)
 .audio-ops__usages { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 9px; }
 .audio-ops__usages span { padding: 4px 6px; border-radius: 6px; background: #f1f5ef; color: #6d7d6e; font-size: 9px; }
 .audio-ops__fingerprint { margin-top: 7px; color: #a0aaa0 !important; }
+.audio-ops__customization { display: grid; gap: 5px; margin-top: 12px; padding: 10px; border: 1px solid #dce7da; border-radius: 10px; background: #f8fbf6; }
+.audio-ops__customization label { display: grid; gap: 5px; color: #627365; font-size: 10px; font-weight: 800; }
+.audio-ops__customization textarea { width: 100%; box-sizing: border-box; resize: vertical; padding: 8px 9px; border: 1px solid #d5e0d3; border-radius: 8px; outline: 0; background: #fff; color: #334536; font: inherit; font-size: 11px; line-height: 1.4; }
+.audio-ops__customization textarea:focus { border-color: #8eaa91; box-shadow: 0 0 0 2px #e7f0e5; }
+.audio-ops__customization > small { color: #8b998c; font-size: 9px; line-height: 1.4; }
+.audio-ops__candidates { display: grid; gap: 7px; margin-top: 12px; padding-top: 10px; border-top: 1px solid #e7eee5; }
+.audio-ops__candidates-heading { display: flex; justify-content: space-between; gap: 8px; color: #536956; font-size: 10px; }
+.audio-ops__candidates-heading span { color: #8d9b8e; }
+.audio-ops__candidate { display: grid; grid-template-columns: minmax(0, 1fr) minmax(160px, 230px); align-items: center; gap: 9px; padding: 8px; border: 1px solid #e4ebe1; border-radius: 9px; background: #fff; }
+.audio-ops__candidate > div:first-child { display: grid; align-items: center; gap: 4px; }
+.audio-ops__candidate small { color: #8b988c; font-size: 9px; line-height: 1.4; }
+.audio-ops__candidate-actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-wrap: wrap; }
+.audio-ops__candidate-actions audio { width: 100%; height: 30px; }
+.audio-ops__candidate-actions .audio-ops__link--danger { margin-left: 0; }
 .audio-ops__clip-actions { display: grid; align-content: center; gap: 7px; min-width: 0; }
 .audio-ops__clip-actions audio { width: 100%; max-width: 260px; height: 34px; }
 .audio-ops__clip-actions > div { text-align: right; }
@@ -673,6 +767,8 @@ onUnmounted(stopPolling)
   .audio-ops__clip-actions { margin-top: 12px; }
   .audio-ops__clip-actions audio { max-width: none; }
   .audio-ops__clip-actions > div { text-align: left; }
+  .audio-ops__candidate { grid-template-columns: 1fr; }
+  .audio-ops__candidate-actions { justify-content: flex-start; }
   .audio-ops__pagination { display: block; }
   .audio-ops__pagination > div { margin-top: 9px; }
 }
