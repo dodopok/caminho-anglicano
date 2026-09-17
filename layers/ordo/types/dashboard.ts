@@ -151,6 +151,23 @@ export interface AudioClipUsage {
   source_key?: string
 }
 
+export interface AudioClipCustomization {
+  instructions?: string | null
+  instructions_sha256?: string | null
+  applied?: boolean
+}
+
+export interface AudioClipCandidate {
+  id: number | string
+  status?: 'pending' | 'accepted' | 'rejected' | string
+  duration?: number | null
+  character_count?: number | null
+  custom_instructions?: string | null
+  audio_url?: string | null
+  created_at?: string | null
+  updated_at?: string | null
+}
+
 export interface AudioClip {
   id: number | string
   text: string
@@ -166,11 +183,14 @@ export interface AudioClip {
   character_count?: number | null
   instructions_sha256?: string | null
   configuration_fingerprint?: string | null
+  custom_instructions_sha256?: string | null
+  customization?: AudioClipCustomization | null
   profile_status?: AudioProfileStatus | string
   created_at?: string | null
   updated_at?: string | null
   audio_url?: string | null
   usages?: AudioClipUsage[]
+  candidates?: AudioClipCandidate[]
 }
 
 export interface AudioClipPagination {
