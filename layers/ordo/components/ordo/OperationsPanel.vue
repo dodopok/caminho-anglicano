@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import OrdoAudioOperationsPanel from './AudioOperationsPanel.vue'
 import OrdoChartCard from './ChartCard.vue'
 import OrdoCustomRosaryQueue from './CustomRosaryQueue.vue'
 import OrdoDataExplorerModal from './DataExplorerModal.vue'
@@ -82,12 +83,11 @@ const {
   humanizeKey
 } = useOrdoDashboardPresentation()
 
-type ExplorerName = 'audio' | 'notifications' | 'lifeRules' | 'lifeRuleExams' | 'adoptions' | 'moderation' | 'health' | 'customRosaries' | null
+type ExplorerName = 'notifications' | 'lifeRules' | 'lifeRuleExams' | 'adoptions' | 'moderation' | 'health' | 'customRosaries' | null
 
 const activeExplorer = ref<ExplorerName>(null)
 
 const notificationStatusItems = computed(() => mapItems(props.dashboard.notifications?.delivery_status_counts))
-const estimatedMissingCharacters = computed(() => Object.values(props.dashboard.audio?.estimated_missing_characters || {}).reduce((total, value) => total + value, 0))
 const moderation = computed(() => props.dashboard.moderation?.custom_rosaries)
 const lifeRuleExams = computed(() => props.dashboard.life_rules?.exams)
 const lifeRuleExamBandItems = computed(() => mapItems(lifeRuleExams.value?.by_band))
@@ -97,26 +97,6 @@ const customRosaryExplorerRemotePagination = computed<ExplorerRemotePagination>(
   totalPages: props.customRosaryExplorerTotalPages,
   total: props.customRosaryExplorerPagination?.total ?? props.customRosaryExplorerRosaries.length
 }))
-
-const audioColumns: ExplorerColumn[] = [
-  { key: 'category', label: 'Grupo', sortable: true },
-  { key: 'prayer_book', label: 'Prayer book', sortable: true },
-  { key: 'voice', label: 'Voz', sortable: true },
-  { key: 'total_texts', label: 'Textos', sortable: true, align: 'right' },
-  { key: 'texts_with_audio', label: 'Com áudio', sortable: true, align: 'right' },
-  { key: 'coverage_percentage', label: 'Cobertura', sortable: true, align: 'right' },
-  { key: 'missing_characters', label: 'Caracteres faltantes', sortable: true, align: 'right' }
-]
-const audioRows = computed<ExplorerRow[]>(() => [
-  ...(props.dashboard.audio?.by_voice || []).map(item => ({
-    id: `all-${item.voice}`,
-    values: { category: 'Total por voz', prayer_book: 'Todos', voice: item.voice, total_texts: asNumber(item.total_texts), texts_with_audio: asNumber(item.texts_with_audio), coverage_percentage: asNumber(item.coverage_percentage), missing_characters: asNumber(item.missing_characters) }
-  })),
-  ...(props.dashboard.audio?.by_prayer_book || []).flatMap(book => (book.by_voice?.length ? book.by_voice : [{ voice: 'Todas', total_texts: book.total_texts, texts_with_audio: book.texts_with_audio, coverage_percentage: book.coverage_percentage, missing_characters: undefined }]).map(item => ({
-    id: `${book.code || book.prayer_book_id}-${item.voice}`,
-    values: { category: 'Por prayer book', prayer_book: book.code || String(book.prayer_book_id), voice: item.voice, total_texts: asNumber(item.total_texts), texts_with_audio: asNumber(item.texts_with_audio), coverage_percentage: asNumber(item.coverage_percentage), missing_characters: asNumber(item.missing_characters) }
-  })))
-])
 
 const notificationColumns: ExplorerColumn[] = [
   { key: 'category', label: 'Grupo', sortable: true },
@@ -328,6 +308,8 @@ const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: 
   <section class="ordo-content-stack">
     <div class="ordo-section-intro"><div><p class="ordo-kicker">Operação & moderação</p><h2>O que precisa de uma decisão humana.</h2></div><span class="ordo-scope-label">fila atual + métricas do período</span></div>
 
+    <OrdoAudioOperationsPanel />
+
     <div class="ordo-metrics-grid ordo-metrics-grid--four">
       <OrdoMetricCard v-if="moderation" title="Rosários em revisão" :value="formatNumber(moderation.pending_now)" :subtitle="`${formatNumber(moderation.approved_without_strapi)} aprovados sem Strapi`" color="orange" icon="◌" eyebrow="Moderação" />
       <OrdoMetricCard v-if="dashboard.life_rules" title="Regras pendentes" :value="formatNumber(dashboard.life_rules.pending_rules)" :subtitle="`${formatNumber(dashboard.life_rules.total_adoptions)} adoções históricas`" color="purple" icon="⌁" eyebrow="Regras de vida" />
@@ -339,7 +321,6 @@ const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: 
     </div>
 
     <div class="ordo-grid-2">
-      <OrdoChartCard v-if="dashboard.audio" title="Cobertura de áudio" description="Vozes conhecidas: male_1, female_1 e male_2." icon="◷" icon-color="blue" eyebrow="Áudio"><template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'audio'">Ver por livro ↗</button></template><div class="ordo-stat-banner"><strong>{{ formatPercent(dashboard.audio.audio_coverage_percentage) }}</strong><span>{{ formatNumber(dashboard.audio.texts_with_audio) }} de {{ formatNumber(dashboard.audio.total_texts) }} textos</span></div><div class="ordo-highlight-grid"><div><span>Concluídas</span><strong>{{ formatNumber(dashboard.audio.completed_sessions) }}</strong></div><div><span>Rodando</span><strong>{{ formatNumber(dashboard.audio.running_sessions) }}</strong></div><div><span>Falhas</span><strong>{{ formatNumber(dashboard.audio.failed_sessions) }}</strong></div><div><span>Processados</span><strong>{{ formatNumber(dashboard.audio.total_texts_processed) }}</strong></div><div><span>Falhos</span><strong>{{ formatNumber(dashboard.audio.total_texts_failed) }}</strong></div><div><span>Custo estimado</span><strong>{{ dashboard.audio.estimated_missing_cost == null ? '—' : `US$ ${formatDecimal(dashboard.audio.estimated_missing_cost, 2)}` }}</strong></div></div><div class="ordo-note-box"><span>Caracteres faltantes</span><strong>{{ formatNumber(estimatedMissingCharacters) }}</strong><small>estimativa somada por voz<span v-if="dashboard.audio.cost_per_1000_characters != null"> · US$ {{ formatDecimal(dashboard.audio.cost_per_1000_characters, 2) }}/1.000 caracteres</span></small></div></OrdoChartCard>
       <OrdoChartCard v-if="dashboard.notifications" title="Entrega de notificações" description="O token bruto nunca aparece no dashboard; status são agregados por hash." icon="⌁" icon-color="pink" eyebrow="Notificações"><template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'notifications'">Ver detalhes ↗</button></template><div class="ordo-highlight-grid"><div><span>Logs</span><strong>{{ formatNumber(dashboard.notifications.total_in_period) }}</strong></div><div><span>Enviadas</span><strong>{{ formatNumber(dashboard.notifications.sent) }}</strong></div><div><span>Falhas</span><strong>{{ formatNumber(dashboard.notifications.failed) }}</strong></div><div><span>Sucesso</span><strong>{{ formatPercent(dashboard.notifications.success_rate) }}</strong></div></div><div class="ordo-mini-bars"><div v-for="item in notificationStatusItems" :key="item.key"><span>{{ item.label }}</span><strong>{{ formatNumber(item.value) }}</strong><i><b class="is-pink" :style="{ width: `${(item.value / maxItemValue(notificationStatusItems)) * 100}%` }" /></i></div></div></OrdoChartCard>
     </div>
 
@@ -357,8 +338,7 @@ const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: 
     <div v-if="moderation" class="ordo-table-card"><div class="ordo-table-card__header"><div><p class="ordo-kicker">Decisões no período</p><h2>Qualidade da moderação</h2></div><div class="ordo-table-card__header-actions"><span class="ordo-scope-label">{{ formatPercent(moderation.approval_rate) }} de aprovação</span><button type="button" class="ordo-card-action" @click="activeExplorer = 'moderation'">Abrir métricas ↗</button></div></div><div class="ordo-highlight-grid ordo-highlight-grid--wide ordo-table-card__metrics"><div><span>Aprovadas</span><strong>{{ formatNumber(moderation.approved_in_period) }}</strong></div><div><span>Rejeitadas</span><strong>{{ formatNumber(moderation.rejected_in_period) }}</strong></div><div><span>Reentradas</span><strong>{{ formatNumber(moderation.reentries_in_period) }}</strong></div><div><span>Tempo médio</span><strong>{{ formatDuration(moderation.average_response_time_seconds) }}</strong></div></div></div>
   </section>
 
-  <OrdoDataExplorerModal v-if="activeExplorer === 'audio'" title="Cobertura de áudio" description="Detalhamento por prayer book e voz, incluindo textos processados e caracteres faltantes." :columns="audioColumns" :rows="audioRows" search-placeholder="Buscar prayer book ou voz…" default-sort-key="missing_characters" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
-  <OrdoDataExplorerModal v-else-if="activeExplorer === 'notifications'" title="Notificações" description="Resumo, tipos e status de entrega por plataforma; tokens individuais nunca são expostos." :columns="notificationColumns" :rows="notificationRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
+  <OrdoDataExplorerModal v-if="activeExplorer === 'notifications'" title="Notificações" description="Resumo, tipos e status de entrega por plataforma; tokens individuais nunca são expostos." :columns="notificationColumns" :rows="notificationRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'lifeRules'" title="Regras de vida carregadas" description="Itens retornados para a página atual da fila, com todos os campos administrativos disponíveis nessa resposta." :columns="lifeRuleColumns" :rows="lifeRuleRows" :filters="lifeRuleFilters" default-sort-key="created_at" default-sort-direction="desc" search-placeholder="Buscar regra, autor ou descrição…" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'lifeRuleExams'" title="Exames de Regras de Vida" description="Exames concluídos no período por completed_at, com usuários distintos, score médio e distribuições quando retornadas." :columns="lifeRuleExamColumns" :rows="lifeRuleExamRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'adoptions'" title="Adoção de regras de vida" description="Ranking completo de regras adotadas na base total." :columns="lifeRuleAdoptionColumns" :rows="lifeRuleAdoptionRows" default-sort-key="adoptions" search-placeholder="Buscar regra…" @close="activeExplorer = null" />

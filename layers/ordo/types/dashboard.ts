@@ -130,38 +130,199 @@ export interface DashboardJournals extends DashboardSectionMeta {
   users_with_journals?: number
 }
 
-export interface AudioVoiceCoverage {
-  voice: string
-  total_texts?: number
-  texts_with_audio?: number
-  coverage_percentage?: number
-  missing_characters?: number
+export type AudioProfileStatus = 'current' | 'stale' | 'legacy'
+
+export interface AudioProfile {
+  provider?: string | null
+  model?: string | null
+  voice?: string | null
+  language?: string | null
+  speed?: number | null
+  instructions_sha256?: string | null
+  configuration_fingerprint?: string | null
+  profile_status?: AudioProfileStatus | string
+  clips?: number
+  characters?: number
 }
 
-export interface AudioPrayerBookCoverage {
-  prayer_book_id: number | string
-  code?: string
-  total_texts?: number
-  texts_with_audio?: number
-  coverage_percentage?: number
-  by_voice?: AudioVoiceCoverage[]
+export interface AudioClipUsage {
+  prayer_book_code: string
+  source_name: string
+  source_key?: string
+}
+
+export interface AudioClip {
+  id: number | string
+  text: string
+  line_type?: string | null
+  kind?: string | null
+  filename?: string | null
+  provider?: string | null
+  voice?: string | null
+  model?: string | null
+  language?: string | null
+  speed?: number | null
+  duration?: number | null
+  character_count?: number | null
+  instructions_sha256?: string | null
+  configuration_fingerprint?: string | null
+  profile_status?: AudioProfileStatus | string
+  created_at?: string | null
+  updated_at?: string | null
+  audio_url?: string | null
+  usages?: AudioClipUsage[]
+}
+
+export interface AudioClipPagination {
+  total: number
+  limit: number
+  offset: number
+  count: number
+}
+
+export interface AudioClipsResponse {
+  clips: AudioClip[]
+  pagination: AudioClipPagination
+}
+
+export type AudioOperationKind = 'generate_office' | 'regenerate_clip' | 'cleanup_clips' | 'index_catalog' | string
+export type AudioOperationStatus = 'queued' | 'running' | 'completed' | 'failed' | 'cancelled' | string
+
+export interface AudioOperation {
+  id: number | string
+  kind: AudioOperationKind
+  status: AudioOperationStatus
+  active_job_id?: string | null
+  prayer_book_code?: string | null
+  parameters?: Record<string, unknown>
+  total_items?: number
+  processed_items?: number
+  progress_percentage?: number | null
+  generated_clips?: number
+  skipped_clips?: number
+  failed_items?: number
+  generated_characters?: number
+  error_message?: string | null
+  requested_by?: string | null
+  created_at?: string | null
+  started_at?: string | null
+  completed_at?: string | null
+}
+
+export interface AudioOperationsResponse {
+  operations: AudioOperation[]
+}
+
+export interface AudioOperationResponse {
+  operation: AudioOperation
+}
+
+export interface AudioActiveJob {
+  active_job_id?: string
+  class_name?: string
+  queue_name?: string
+  created_at?: string
+  claimed?: boolean
 }
 
 export interface DashboardAudio extends DashboardSectionMeta {
-  total_sessions?: number
-  completed_sessions?: number
-  failed_sessions?: number
-  running_sessions?: number
-  texts_with_audio?: number
-  total_texts?: number
-  audio_coverage_percentage?: number
-  total_texts_processed?: number
-  total_texts_failed?: number
-  by_prayer_book?: AudioPrayerBookCoverage[]
-  by_voice?: AudioVoiceCoverage[]
-  estimated_missing_characters?: CountMap
-  estimated_missing_cost?: number
-  cost_per_1000_characters?: number
+  scope?: DashboardScope
+  total_clips?: number
+  total_characters?: number
+  total_duration_seconds?: number
+  current_clips?: number
+  stale_clips?: number
+  legacy_clips?: number
+  active_operations?: number
+  profiles?: AudioProfile[]
+  recent_operations?: AudioOperation[]
+  active_jobs?: AudioActiveJob[]
+}
+
+export interface AudioPrayerBook {
+  id: string
+  code: string
+  name: string
+  full_name?: string
+  description?: string | null
+  language?: string | null
+  jurisdiction?: string | null
+  year?: number | null
+  is_recommended?: boolean
+  premium_required?: boolean
+  is_accessible?: boolean
+  available_offices?: string[]
+  supports_family_rite?: boolean
+}
+
+export interface AudioPrayerBooksResponse {
+  data: AudioPrayerBook[]
+}
+
+export interface AudioClipFilters {
+  kind?: string
+  provider?: string
+  model?: string
+  voice?: string
+  language?: string
+  speed?: number | string
+  fingerprint?: string
+  q?: string
+  created_after?: string
+  created_before?: string
+  prayer_book_code?: string
+  source_name?: string
+  profile_status?: AudioProfileStatus | string
+  sort?: string
+  direction?: 'asc' | 'desc' | string
+  limit?: number
+  offset?: number
+}
+
+export interface AudioGenerationRequest {
+  prayer_book_code: string
+  start_date: string
+  days: number
+  offices?: string[]
+  character_budget?: number
+  preferences?: Record<string, unknown>
+  variants?: Array<Record<string, unknown>>
+}
+
+export interface AudioEstimateRow {
+  date?: string
+  office_type?: string
+  ready_clips?: number
+  missing_clips?: number
+  missing_characters?: number
+  variant?: string
+}
+
+export interface AudioEstimate {
+  prayer_book_code?: string
+  start_date?: string
+  days?: number
+  offices?: string[]
+  variants?: number
+  provider?: AudioProfile
+  ready_clips?: number
+  missing_clips?: number
+  missing_characters?: number
+  estimated_cost?: number | null
+  rows?: AudioEstimateRow[]
+}
+
+export interface AudioEstimateResponse {
+  estimate: AudioEstimate
+}
+
+export interface AudioCleanupPreview {
+  filters?: Record<string, unknown>
+  profile_status?: AudioProfileStatus | string
+  total_clips?: number
+  total_characters?: number
+  total_duration_seconds?: number
+  sample?: AudioClip[]
 }
 
 export interface DashboardNotifications extends DashboardSectionMeta {

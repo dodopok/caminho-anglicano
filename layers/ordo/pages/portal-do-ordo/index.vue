@@ -64,7 +64,7 @@ const sectionGroups: Record<DashboardTab, DashboardSectionName[]> = {
   overview: ['overview', 'users', 'engagement'],
   growth: ['users', 'engagement', 'retention', 'onboarding', 'geography'],
   practice: ['completions', 'prayer_books', 'journals', 'shared_offices', 'weekly_prayers', 'favorites'],
-  operations: ['audio', 'notifications', 'life_rules', 'moderation', 'health', 'custom_rosaries'],
+  operations: ['notifications', 'life_rules', 'moderation', 'health', 'custom_rosaries'],
   platform: ['premium', 'api', 'developers', 'geography']
 }
 

@@ -8,6 +8,15 @@ import {
   type CustomRosaryQuery,
   type DashboardFilters,
   type DashboardResponse,
+  type AudioCleanupPreview,
+  type AudioClipFilters,
+  type AudioClipsResponse,
+  type AudioEstimateResponse,
+  type AudioGenerationRequest,
+  type AudioOperationResponse,
+  type AudioOperationsResponse,
+  type AudioPrayerBooksResponse,
+  type DashboardAudio,
   type LifeRulesQuery,
   type LifeRulesResponse,
   type OrdoApiErrorPayload
@@ -84,6 +93,77 @@ export const useOrdoApi = () => {
     return request<DashboardResponse>(`/api/v1/dashboard${query ? `?${query}` : ''}`)
   }
 
+  const fetchAudioSummary = async (): Promise<DashboardAudio> =>
+    request<DashboardAudio>('/api/v1/admin/audio/summary')
+
+  const audioFilterParams = (filters: AudioClipFilters = {}) => {
+    const params = new URLSearchParams()
+    const keys: Array<keyof AudioClipFilters> = [
+      'kind', 'provider', 'model', 'voice', 'language', 'speed', 'fingerprint',
+      'q', 'created_after', 'created_before', 'prayer_book_code', 'source_name',
+      'profile_status', 'sort', 'direction', 'limit', 'offset'
+    ]
+
+    keys.forEach(key => {
+      const value = filters[key]
+      if (value !== undefined && value !== null && String(value).trim() !== '') {
+        params.set(key, String(value))
+      }
+    })
+
+    return params
+  }
+
+  const fetchAudioClips = async (filters: AudioClipFilters = {}): Promise<AudioClipsResponse> => {
+    const query = audioFilterParams(filters).toString()
+    return request<AudioClipsResponse>(`/api/v1/admin/audio/clips${query ? `?${query}` : ''}`)
+  }
+
+  const fetchAudioClipUrl = async (id: number | string): Promise<{ id: number | string; url: string; expires_in: number }> =>
+    request<{ id: number | string; url: string; expires_in: number }>(`/api/v1/admin/audio/clips/${id}/url`)
+
+  const fetchAudioOperations = async (limit = 20): Promise<AudioOperationsResponse> =>
+    request<AudioOperationsResponse>(`/api/v1/admin/audio/operations?limit=${Math.min(Math.max(limit, 1), 100)}`)
+
+  const fetchAudioOperation = async (id: number | string): Promise<AudioOperationResponse> =>
+    request<AudioOperationResponse>(`/api/v1/admin/audio/operations/${id}`)
+
+  const estimateAudioGeneration = async (generation: AudioGenerationRequest): Promise<AudioEstimateResponse> =>
+    request<AudioEstimateResponse>('/api/v1/admin/audio/generations/estimate', {
+      method: 'POST',
+      body: { generation }
+    })
+
+  const enqueueAudioGeneration = async (generation: AudioGenerationRequest): Promise<AudioOperationResponse> =>
+    request<AudioOperationResponse>('/api/v1/admin/audio/generations', {
+      method: 'POST',
+      body: { generation }
+    })
+
+  const regenerateAudioClip = async (id: number | string): Promise<AudioOperationResponse> =>
+    request<AudioOperationResponse>(`/api/v1/admin/audio/clips/${id}/regenerate`, { method: 'POST' })
+
+  const previewAudioCleanup = async (filters: AudioClipFilters): Promise<AudioCleanupPreview> =>
+    request<AudioCleanupPreview>('/api/v1/admin/audio/cleanup/preview', {
+      method: 'POST',
+      body: { cleanup: filters }
+    })
+
+  const enqueueAudioCleanup = async (filters: AudioClipFilters): Promise<AudioOperationResponse> =>
+    request<AudioOperationResponse>('/api/v1/admin/audio/cleanup', {
+      method: 'POST',
+      body: { cleanup: filters }
+    })
+
+  const reindexAudioCatalog = async (prayerBookCode?: string): Promise<AudioOperationResponse> =>
+    request<AudioOperationResponse>('/api/v1/admin/audio/catalog/reindex', {
+      method: 'POST',
+      body: prayerBookCode ? { prayer_book_code: prayerBookCode } : undefined
+    })
+
+  const fetchAudioPrayerBooks = async (): Promise<AudioPrayerBooksResponse> =>
+    request<AudioPrayerBooksResponse>('/api/v1/prayer_books')
+
   const fetchLifeRules = async (query: LifeRulesQuery = {}): Promise<LifeRulesResponse> => {
     const params = new URLSearchParams()
     params.set('status', query.status || 'pending')
@@ -141,6 +221,18 @@ export const useOrdoApi = () => {
 
   return {
     fetchDashboard,
+    fetchAudioSummary,
+    fetchAudioClips,
+    fetchAudioClipUrl,
+    fetchAudioOperations,
+    fetchAudioOperation,
+    estimateAudioGeneration,
+    enqueueAudioGeneration,
+    regenerateAudioClip,
+    previewAudioCleanup,
+    enqueueAudioCleanup,
+    reindexAudioCatalog,
+    fetchAudioPrayerBooks,
     fetchLifeRules,
     fetchCustomRosaries,
     fetchCustomRosary,
