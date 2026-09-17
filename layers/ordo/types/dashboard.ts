@@ -287,6 +287,7 @@ export interface AudioClipFilters {
   language?: string
   speed?: number | string
   fingerprint?: string
+  max_characters?: number | string
   q?: string
   created_after?: string
   created_before?: string

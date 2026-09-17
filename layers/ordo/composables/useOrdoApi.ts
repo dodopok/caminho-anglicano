@@ -100,7 +100,7 @@ export const useOrdoApi = () => {
   const audioFilterParams = (filters: AudioClipFilters = {}) => {
     const params = new URLSearchParams()
     const keys: Array<keyof AudioClipFilters> = [
-      'kind', 'provider', 'model', 'voice', 'language', 'speed', 'fingerprint',
+      'kind', 'provider', 'model', 'voice', 'language', 'speed', 'fingerprint', 'max_characters',
       'q', 'created_after', 'created_before', 'prayer_book_code', 'source_name',
       'profile_status', 'sort', 'direction', 'limit', 'offset'
     ]

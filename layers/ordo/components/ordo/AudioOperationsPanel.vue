@@ -75,6 +75,7 @@ const clipBookFilter = ref('')
 const clipProfileFilter = ref<'all' | AudioProfileStatus>('all')
 const clipProviderFilter = ref('')
 const clipVoiceFilter = ref('')
+const clipMaxCharacters = ref('')
 const clipOffset = ref(0)
 const clipSort = ref('created_at')
 const clipDirection = ref<'asc' | 'desc'>('desc')
@@ -149,7 +150,8 @@ const clipFilters = (): AudioClipFilters => ({
   ...(clipBookFilter.value ? { prayer_book_code: clipBookFilter.value } : {}),
   ...(clipProfileFilter.value !== 'all' ? { profile_status: clipProfileFilter.value } : {}),
   ...(clipProviderFilter.value ? { provider: clipProviderFilter.value } : {}),
-  ...(clipVoiceFilter.value ? { voice: clipVoiceFilter.value } : {})
+  ...(clipVoiceFilter.value ? { voice: clipVoiceFilter.value } : {}),
+  ...(clipMaxCharacters.value ? { max_characters: clipMaxCharacters.value } : {})
 })
 
 const loadSummary = async () => {
@@ -548,6 +550,14 @@ onUnmounted(stopPolling)
             <option v-for="voice in voiceOptions" :key="voice" :value="voice">{{ voice }}</option>
           </select>
         </label>
+        <label>Textos curtos
+          <select v-model="clipMaxCharacters">
+            <option value="">Todos</option>
+            <option value="30">Até 30 caracteres</option>
+            <option value="60">Até 60 caracteres</option>
+            <option value="120">Até 120 caracteres</option>
+          </select>
+        </label>
         <button type="button" class="ordo-button ordo-button--primary" :disabled="clipsLoading" @click="applyClipFilters">{{ clipsLoading ? 'Buscando…' : 'Buscar' }}</button>
       </div>
 
@@ -695,7 +705,7 @@ onUnmounted(stopPolling)
 .audio-ops__link { padding: 0; border: 0; background: transparent; color: #54745d; cursor: pointer; font: inherit; font-size: 10px; font-weight: 800; }
 .audio-ops__link:disabled { cursor: not-allowed; opacity: .45; }
 .audio-ops__link--danger { margin-left: 10px; color: #a15f57; }
-.audio-ops__filters { display: grid; grid-template-columns: minmax(180px, 2fr) repeat(4, minmax(90px, 1fr)) auto; align-items: end; gap: 9px; margin-bottom: 15px; }
+.audio-ops__filters { display: grid; grid-template-columns: minmax(180px, 2fr) repeat(5, minmax(90px, 1fr)) auto; align-items: end; gap: 9px; margin-bottom: 15px; }
 .audio-ops__filter-wide { min-width: 0; }
 .audio-ops__empty { padding: 25px 8px; color: #8b978c; font-size: 11px; text-align: center; }
 .audio-ops__clips { display: grid; gap: 8px; }
