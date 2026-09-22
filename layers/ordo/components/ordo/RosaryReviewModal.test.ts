@@ -18,7 +18,7 @@ const categories = [{
   icon: '✦'
 }]
 
-const mountModal = () => mount(RosaryReviewModal, {
+const mountModal = (overrides: Record<string, unknown> = {}) => mount(RosaryReviewModal, {
   props: {
     rosary,
     loading: false,
@@ -28,7 +28,8 @@ const mountModal = () => mount(RosaryReviewModal, {
     categoriesError: null,
     categorySelection: null,
     strapiSlug: '',
-    rejectionReason: ''
+    rejectionReason: '',
+    ...overrides
   }
 })
 
@@ -88,5 +89,84 @@ describe('RosaryReviewModal category flow', () => {
     await wrapper.setProps({ strapiSlug: 'rosario-de-teste' })
 
     expect((wrapper.get('button.ordo-button--primary').element as HTMLButtonElement).disabled).toBe(false)
+  })
+})
+
+describe('RosaryReviewModal slug suggestion', () => {
+  it('suggests a slug from the title when the review opens empty', () => {
+    const wrapper = mountModal()
+
+    expect(wrapper.emitted('update:strapiSlug')?.at(0)?.[0]).toBe('rosario-de-teste')
+  })
+
+  it('leaves a slug the editor already wrote alone', () => {
+    const wrapper = mountModal({ strapiSlug: 'slug-escolhido-a-mao' })
+
+    expect(wrapper.emitted('update:strapiSlug')).toBeUndefined()
+  })
+
+  it('offers the title again when the slug drifted from it', async () => {
+    const wrapper = mountModal({ strapiSlug: 'outra-coisa' })
+    const suggestion = wrapper.get('button.ordo-slug-suggestion')
+
+    expect(suggestion.text()).toContain('rosario-de-teste')
+
+    await suggestion.trigger('click')
+    expect(wrapper.emitted('update:strapiSlug')?.at(-1)?.[0]).toBe('rosario-de-teste')
+  })
+
+  it('stops offering once the slug matches the title', () => {
+    const wrapper = mountModal({ strapiSlug: 'rosario-de-teste' })
+
+    expect(wrapper.find('button.ordo-slug-suggestion').exists()).toBe(false)
+    expect(wrapper.text()).toContain('sugerido a partir do título')
+  })
+})
+
+describe('RosaryReviewModal queue navigation', () => {
+  const queueProps = {
+    queuePosition: 2,
+    queueTotal: 5,
+    queuePage: 3,
+    queueTotalPages: 7,
+    hasPrevious: true,
+    hasNext: true
+  }
+
+  it('says where the review sits in the queue it was opened from', () => {
+    const wrapper = mountModal(queueProps)
+
+    expect(wrapper.text()).toContain('2 de 5 nesta página · página 3 de 7')
+  })
+
+  it('walks the queue without closing the review', async () => {
+    const wrapper = mountModal(queueProps)
+
+    await wrapper.get('button[aria-label="Revisar o próximo da fila"]').trigger('click')
+    await wrapper.get('button[aria-label="Revisar o anterior da fila"]').trigger('click')
+
+    expect(wrapper.emitted('next')).toHaveLength(1)
+    expect(wrapper.emitted('previous')).toHaveLength(1)
+  })
+
+  it('stops at the ends of the queue', () => {
+    const wrapper = mountModal({ ...queueProps, hasPrevious: false, hasNext: false })
+    const previous = wrapper.get('button[aria-label="Revisar o anterior da fila"]')
+    const next = wrapper.get('button[aria-label="Revisar o próximo da fila"]')
+
+    expect((previous.element as HTMLButtonElement).disabled).toBe(true)
+    expect((next.element as HTMLButtonElement).disabled).toBe(true)
+  })
+
+  it('hides the navigation when the review was not opened from a queue', () => {
+    const wrapper = mountModal()
+
+    expect(wrapper.find('.ordo-queue-nav').exists()).toBe(false)
+  })
+
+  it('reports the decision that was just taken', () => {
+    const wrapper = mountModal({ ...queueProps, decisionNotice: '“Rosário de teste” aprovado. Próximo da fila aberto.' })
+
+    expect(wrapper.get('.ordo-modal__notice').text()).toContain('aprovado')
   })
 })

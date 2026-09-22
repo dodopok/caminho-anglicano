@@ -124,6 +124,12 @@ const customRosaryExplorerOffset = ref(0)
 let customRosaryExplorerRequestId = 0
 const selectedRosary = ref<CustomRosaryPrayer | null>(null)
 const selectedRosaryLoading = ref(false)
+// Which list the open review came from. Approving used to drop the moderator
+// back on the dashboard with the queue modal closed and the filter lost; the
+// review now walks whichever list opened it.
+const rosaryReviewSource = ref<'queue' | 'explorer'>('queue')
+const rosaryNavigating = ref(false)
+const rosaryDecisionNotice = ref<string | null>(null)
 const rosaryActionLoading = ref(false)
 const rosaryActionError = ref<string | null>(null)
 const rosaryCategories = ref<RosaryCategory[]>([])
@@ -159,6 +165,16 @@ const customRosaryExplorerTotalPages = computed(() => {
   return Math.max(1, Math.ceil(total / customRosaryPageSize))
 })
 const customRosaryExplorerCurrentPage = computed(() => Math.floor(customRosaryExplorerOffset.value / customRosaryPageSize) + 1)
+const reviewFromExplorer = computed(() => rosaryReviewSource.value === 'explorer')
+const reviewList = computed(() => reviewFromExplorer.value ? customRosaryExplorerRosaries.value : customRosaries.value)
+const reviewStatus = computed(() => reviewFromExplorer.value ? customRosaryExplorerStatus.value : customRosaryStatus.value)
+const reviewPage = computed(() => reviewFromExplorer.value ? customRosaryExplorerCurrentPage.value : customRosaryCurrentPage.value)
+const reviewTotalPages = computed(() => reviewFromExplorer.value ? customRosaryExplorerTotalPages.value : customRosaryTotalPages.value)
+const reviewIndex = computed(() => reviewList.value.findIndex(item => String(item.id) === String(selectedRosary.value?.id)))
+const reviewPosition = computed(() => reviewIndex.value < 0 ? null : reviewIndex.value + 1)
+const hasPreviousReview = computed(() => reviewIndex.value > 0 || reviewPage.value > 1)
+const hasNextReview = computed(() =>
+  (reviewIndex.value >= 0 && reviewIndex.value < reviewList.value.length - 1) || reviewPage.value < reviewTotalPages.value)
 const moderationSummary = computed(() => dashboard.value.moderation?.custom_rosaries)
 const customRosaryStatusItems = computed(() => Object.entries(dashboard.value.custom_rosaries?.by_share_status || {})
   .map(([key, value]) => ({ key, label: humanizeKey(key), value: value || 0 })))
@@ -395,7 +411,9 @@ const changeLifeRulePage = async (direction: number) => {
   await loadLifeRules()
 }
 
-const openRosary = async (rosary: CustomRosaryPrayer) => {
+const openRosary = async (rosary: CustomRosaryPrayer, source: 'queue' | 'explorer' = 'queue') => {
+  rosaryReviewSource.value = source
+  rosaryDecisionNotice.value = null
   selectedRosary.value = rosary
   rosaryCategorySelection.value = categorySelectionFromRosary(rosary.category)
   strapiSlug.value = rosary.strapi_slug || ''
@@ -414,6 +432,52 @@ const openRosary = async (rosary: CustomRosaryPrayer) => {
     if (!isSessionError(error)) rosaryActionError.value = errorMessage(error)
   } finally {
     selectedRosaryLoading.value = false
+  }
+}
+
+const reloadReviewList = () => reviewFromExplorer.value ? loadCustomRosaryExplorer() : loadCustomRosaries()
+
+// Moves the active list one page and reports whether it actually moved, so the
+// caller knows there was somewhere left to go.
+const turnReviewPage = async (direction: number) => {
+  const nextPage = reviewPage.value + direction
+  if (nextPage < 1 || nextPage > reviewTotalPages.value) return false
+
+  if (reviewFromExplorer.value) await changeCustomRosaryExplorerPage(direction)
+  else await changeCustomRosaryPage(direction)
+
+  return reviewList.value.length > 0
+}
+
+// Opens the review at `index` of the active list, crossing into the next page
+// when the index runs past the end of this one.
+const reviewAt = async (index: number): Promise<boolean> => {
+  const list = reviewList.value
+  if (index >= 0 && index < list.length) {
+    await openRosary(list[index], rosaryReviewSource.value)
+    return true
+  }
+
+  const direction = index < 0 ? -1 : 1
+  if (!await turnReviewPage(direction)) return false
+
+  const page = reviewList.value
+  const target = direction > 0 ? page[0] : page[page.length - 1]
+  if (!target) return false
+
+  await openRosary(target, rosaryReviewSource.value)
+  return true
+}
+
+const stepRosary = async (direction: number) => {
+  if (rosaryNavigating.value || reviewIndex.value < 0) return
+
+  rosaryNavigating.value = true
+  rosaryDecisionNotice.value = null
+  try {
+    await reviewAt(reviewIndex.value + direction)
+  } finally {
+    rosaryNavigating.value = false
   }
 }
 
@@ -439,25 +503,34 @@ const closeRosary = () => {
     rosaryCategorySelection.value = null
     strapiSlug.value = ''
     rosaryActionError.value = null
+    rosaryDecisionNotice.value = null
   }
 }
 
 const replaceRosaryInList = (updated: CustomRosaryPrayer) => {
-  customRosaries.value = customRosaries.value.map(item => item.id === updated.id ? updated : item)
+  const replace = (items: CustomRosaryPrayer[]) => items.map(item => item.id === updated.id ? updated : item)
+  customRosaries.value = replace(customRosaries.value)
+  customRosaryExplorerRosaries.value = replace(customRosaryExplorerRosaries.value)
 }
 
-const applyRosaryDecision = async (updated: CustomRosaryPrayer) => {
+// After a decision the moderator wants the next prayer, not the dashboard.
+// A decision that takes the item out of the active filter leaves the next one
+// at the same index once the page refills; one that keeps it there moves on by
+// one. Either way the modal stays open on the queue it was walking.
+const applyRosaryDecision = async (updated: CustomRosaryPrayer, verb: string) => {
+  const index = reviewIndex.value
   selectedRosary.value = updated
 
-  // The item no longer belongs to the active status filter after a normal
-  // approval/rejection. Reload the same offset so the page is filled from the
-  // server without losing the moderator's filter.
-  if (updated.share_status && updated.share_status !== customRosaryStatus.value) {
-    await loadCustomRosaries()
-    return
-  }
+  const leftTheQueue = Boolean(updated.share_status) && updated.share_status !== reviewStatus.value
+  if (leftTheQueue) await reloadReviewList()
+  else replaceRosaryInList(updated)
 
-  replaceRosaryInList(updated)
+  const nextIndex = leftTheQueue ? index : index + 1
+  const moved = index < 0 ? false : await reviewAt(nextIndex)
+
+  rosaryDecisionNotice.value = moved
+    ? `“${updated.title}” ${verb}. Próximo da fila aberto.`
+    : `“${updated.title}” ${verb}. Não há mais nada nesta fila.`
 }
 
 const approveSelectedRosary = async () => {
@@ -474,7 +547,7 @@ const approveSelectedRosary = async () => {
   rosaryActionError.value = null
   try {
     const response = await approveCustomRosary(selectedRosary.value.id, rosaryCategorySelection.value, strapiSlug.value)
-    await applyRosaryDecision(response.custom_rosary_prayer)
+    await applyRosaryDecision(response.custom_rosary_prayer, 'aprovado')
   } catch (error) {
     if (!isSessionError(error)) rosaryActionError.value = errorMessage(error)
   } finally {
@@ -488,7 +561,7 @@ const rejectSelectedRosary = async () => {
   rosaryActionError.value = null
   try {
     const response = await rejectCustomRosary(selectedRosary.value.id, rejectionReason.value)
-    await applyRosaryDecision(response.custom_rosary_prayer)
+    await applyRosaryDecision(response.custom_rosary_prayer, 'rejeitado')
   } catch (error) {
     if (!isSessionError(error)) rosaryActionError.value = errorMessage(error)
   } finally {
@@ -584,7 +657,36 @@ watch([authReady, user], ([isReady, currentUser]) => {
       </main>
     </div>
 
-    <OrdoRosaryReviewModal v-if="selectedRosary" :rosary="selectedRosary" :loading="selectedRosaryLoading" :action-loading="rosaryActionLoading" :action-error="rosaryActionError" :categories="rosaryCategories" :categories-loading="rosaryCategoriesLoading" :categories-error="rosaryCategoriesError" :category-selection="rosaryCategorySelection" :strapi-slug="strapiSlug" :rejection-reason="rejectionReason" @close="closeRosary" @update:category-selection="rosaryCategorySelection = $event" @update:strapi-slug="strapiSlug = $event" @update:rejection-reason="rejectionReason = $event" @approve="approveSelectedRosary" @reject="rejectSelectedRosary" />
+    <OrdoRosaryReviewModal
+      v-if="selectedRosary"
+      :rosary="selectedRosary"
+      :loading="selectedRosaryLoading"
+      :action-loading="rosaryActionLoading"
+      :action-error="rosaryActionError"
+      :categories="rosaryCategories"
+      :categories-loading="rosaryCategoriesLoading"
+      :categories-error="rosaryCategoriesError"
+      :category-selection="rosaryCategorySelection"
+      :strapi-slug="strapiSlug"
+      :rejection-reason="rejectionReason"
+      :queue-position="reviewPosition"
+      :queue-total="reviewList.length"
+      :queue-page="reviewPage"
+      :queue-total-pages="reviewTotalPages"
+      :has-previous="hasPreviousReview"
+      :has-next="hasNextReview"
+      :navigating="rosaryNavigating"
+      :decision-notice="rosaryDecisionNotice"
+      :stacked="reviewFromExplorer"
+      @close="closeRosary"
+      @update:category-selection="rosaryCategorySelection = $event"
+      @update:strapi-slug="strapiSlug = $event"
+      @update:rejection-reason="rejectionReason = $event"
+      @approve="approveSelectedRosary"
+      @reject="rejectSelectedRosary"
+      @previous="stepRosary(-1)"
+      @next="stepRosary(1)"
+    />
   </div>
 </template>
 

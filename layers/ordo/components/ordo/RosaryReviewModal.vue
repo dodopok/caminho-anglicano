@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useOrdoDashboardPresentation } from '../../composables/useOrdoDashboardPresentation'
+import { slugify } from '../../utils/slug'
 import {
   isValidRosaryCategorySelection,
   type CustomRosaryPrayer,
@@ -19,6 +20,19 @@ const props = defineProps<{
   categorySelection: RosaryCategorySelection | null
   strapiSlug: string
   rejectionReason: string
+  // Where this review sits in the queue it was opened from, so a moderator can
+  // walk the fila without closing the modal and filtering again.
+  queuePosition?: number | null
+  queueTotal?: number | null
+  queuePage?: number | null
+  queueTotalPages?: number | null
+  hasPrevious?: boolean
+  hasNext?: boolean
+  navigating?: boolean
+  decisionNotice?: string | null
+  // True when the queue modal is still open underneath: one dimmed backdrop is
+  // enough, and two stacked blurs make the page unreadable.
+  stacked?: boolean
 }>()
 
 const emit = defineEmits<{
@@ -28,6 +42,8 @@ const emit = defineEmits<{
   'update:rejectionReason': [value: string]
   approve: []
   reject: []
+  previous: []
+  next: []
 }>()
 
 const { humanizeKey } = useOrdoDashboardPresentation()
@@ -72,6 +88,25 @@ const categorySelection = computed<RosaryCategorySelection | null>(() => {
 
 const isCategoryValid = computed(() => isValidRosaryCategorySelection(categorySelection.value))
 const isStrapiSlugValid = computed(() => Boolean(props.strapiSlug.trim()))
+const suggestedSlug = computed(() => slugify(props.rosary.title || ''))
+const slugMatchesTitle = computed(() => props.strapiSlug.trim() === suggestedSlug.value)
+const queueCaption = computed(() => {
+  if (!props.queueTotal) return ''
+
+  const position = props.queuePosition == null ? '?' : props.queuePosition
+  const page = props.queuePage && props.queueTotalPages && props.queueTotalPages > 1
+    ? ` · página ${props.queuePage} de ${props.queueTotalPages}`
+    : ''
+  return `${position} de ${props.queueTotal} nesta página${page}`
+})
+
+const applySuggestedSlug = () => emit('update:strapiSlug', suggestedSlug.value)
+
+// A fresh review arrives with no slug: the suggestion fills it so approving is
+// one click, and a slug the editor already wrote is never overwritten.
+watch(() => props.rosary.id, () => {
+  if (!props.strapiSlug.trim() && suggestedSlug.value) applySuggestedSlug()
+}, { immediate: true })
 const selectedCategory = computed(() => props.categories.find(category => categoryKey(category) === selectedCategoryKey.value))
 
 const syncCategorySelection = () => {
@@ -110,9 +145,24 @@ watch(() => props.categorySelection, (selection) => {
 </script>
 
 <template>
-  <div class="ordo-modal-backdrop" @click.self="emit('close')">
+  <div class="ordo-modal-backdrop" :class="{ 'ordo-modal-backdrop--stacked': stacked }" @click.self="emit('close')">
     <section class="ordo-modal" role="dialog" aria-modal="true" aria-labelledby="rosary-modal-title">
-      <div class="ordo-modal__header"><div><p class="ordo-kicker">Revisão editorial</p><h2 id="rosary-modal-title">{{ rosary.title }}</h2><span>{{ rosary.author?.name || 'Autor não informado' }} · {{ rosary.locale || 'locale não informado' }}</span></div><button type="button" class="ordo-modal__close" aria-label="Fechar revisão" @click="emit('close')">×</button></div>
+      <div class="ordo-modal__header">
+        <div>
+          <p class="ordo-kicker">Revisão editorial</p>
+          <h2 id="rosary-modal-title">{{ rosary.title }}</h2>
+          <span>{{ rosary.author?.name || 'Autor não informado' }} · {{ rosary.locale || 'locale não informado' }}</span>
+        </div>
+        <div class="ordo-modal__header-actions">
+          <div v-if="queueTotal" class="ordo-queue-nav">
+            <button type="button" :disabled="!hasPrevious || navigating || actionLoading" aria-label="Revisar o anterior da fila" @click="emit('previous')">←</button>
+            <span>{{ queueCaption }}</span>
+            <button type="button" :disabled="!hasNext || navigating || actionLoading" aria-label="Revisar o próximo da fila" @click="emit('next')">→</button>
+          </div>
+          <button type="button" class="ordo-modal__close" aria-label="Fechar revisão" @click="emit('close')">×</button>
+        </div>
+      </div>
+      <p v-if="decisionNotice" class="ordo-modal__notice">{{ decisionNotice }}</p>
       <div v-if="loading" class="ordo-queue-loading">Carregando sequência expandida…</div>
       <template v-else>
         <div class="ordo-modal__facts">
@@ -182,7 +232,15 @@ watch(() => props.categorySelection, (selection) => {
           <p v-if="!isCategoryValid" class="ordo-modal__category-error">Selecione uma categoria existente ou informe pelo menos nome e slug para criar uma nova.</p>
         </div>
 
-        <div class="ordo-modal__form"><label>Slug no Strapi (obrigatório)<input :value="strapiSlug" type="text" required aria-required="true" :aria-invalid="!isStrapiSlugValid" placeholder="rosario-pela-familia" @input="onSlugInput"><small v-if="!isStrapiSlugValid" class="ordo-modal__field-error">Informe o slug que será usado na publicação.</small></label><label>Nota de rejeição (opcional)<textarea :value="rejectionReason" rows="2" placeholder="Motivo para o autor ou para o histórico editorial" @input="onReasonInput" /></label></div>
+        <div class="ordo-modal__form">
+          <label>Slug no Strapi (obrigatório)
+            <input :value="strapiSlug" type="text" required aria-required="true" :aria-invalid="!isStrapiSlugValid" placeholder="rosario-pela-familia" @input="onSlugInput">
+            <small v-if="!isStrapiSlugValid" class="ordo-modal__field-error">Informe o slug que será usado na publicação.</small>
+            <button v-if="suggestedSlug && !slugMatchesTitle" type="button" class="ordo-slug-suggestion" @click="applySuggestedSlug">usar o título: <code>{{ suggestedSlug }}</code></button>
+            <small v-else-if="slugMatchesTitle" class="ordo-slug-hint">sugerido a partir do título</small>
+          </label>
+          <label>Nota de rejeição (opcional)<textarea :value="rejectionReason" rows="2" placeholder="Motivo para o autor ou para o histórico editorial" @input="onReasonInput" /></label>
+        </div>
         <div v-if="actionError" class="ordo-modal__error">{{ actionError }}</div>
         <div class="ordo-modal__actions">
           <button type="button" class="ordo-button ordo-button--quiet" :disabled="actionLoading" @click="emit('reject')">Rejeitar</button>
@@ -196,6 +254,83 @@ watch(() => props.categorySelection, (selection) => {
 </template>
 
 <style>
+.ordo-modal-backdrop--stacked {
+  background: rgba(25, 42, 31, .18);
+  backdrop-filter: none;
+}
+
+.ordo-modal__header-actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.ordo-queue-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 9px;
+  border: 1px solid #dde6da;
+  border-radius: 99px;
+  background: #f3f7f1;
+  color: #6f7d70;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.ordo-queue-nav button {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #d9e3d7;
+  border-radius: 7px;
+  background: #fff;
+  color: #58705e;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.ordo-queue-nav button:disabled {
+  color: #b4bfb4;
+  cursor: not-allowed;
+}
+
+.ordo-modal__notice {
+  margin: 14px 26px 0;
+  padding: 9px 11px;
+  border: 1px solid #cfe0d0;
+  border-radius: 10px;
+  background: #f2f8f1;
+  color: #4f7157;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.ordo-slug-suggestion {
+  justify-self: start;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--moss);
+  cursor: pointer;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.ordo-slug-suggestion code {
+  color: var(--ochre);
+  font-size: 10px;
+}
+
+.ordo-slug-hint {
+  color: #9aa59b;
+  font-size: 9px;
+  font-weight: 600;
+}
+
 .ordo-modal__category {
   margin: 18px 26px 0;
   padding: 16px;

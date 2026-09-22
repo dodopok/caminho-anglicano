@@ -205,7 +205,7 @@ export interface AudioClipsResponse {
   pagination: AudioClipPagination
 }
 
-export type AudioOperationKind = 'generate_office' | 'regenerate_clip' | 'cleanup_clips' | 'index_catalog' | string
+export type AudioOperationKind = 'generate_office' | 'generate_catalog' | 'regenerate_clip' | 'cleanup_clips' | 'index_catalog' | string
 export type AudioOperationStatus = 'queued' | 'running' | 'completed' | 'failed' | 'cancelled' | string
 
 export interface AudioOperation {
@@ -222,6 +222,7 @@ export interface AudioOperation {
   skipped_clips?: number
   failed_items?: number
   generated_characters?: number
+  result?: Record<string, unknown> | null
   error_message?: string | null
   requested_by?: string | null
   created_at?: string | null
@@ -237,12 +238,53 @@ export interface AudioOperationResponse {
   operation: AudioOperation
 }
 
+export type AudioJobState = 'running' | 'orphaned' | 'ready' | 'scheduled' | 'blocked' | 'failed' | string
+
 export interface AudioActiveJob {
+  id?: number | string
   active_job_id?: string
   class_name?: string
   queue_name?: string
   created_at?: string
+  scheduled_at?: string | null
+  state?: AudioJobState
   claimed?: boolean
+  purgeable?: boolean
+}
+
+export interface AudioWorkerQueue {
+  total?: number
+  by_state?: Record<string, number>
+  purgeable?: number
+  jobs?: AudioActiveJob[]
+}
+
+export type AudioWorkerQueuePurgeScope = 'dead' | 'all'
+
+export interface AudioWorkerQueuePurge {
+  scope?: AudioWorkerQueuePurgeScope | string
+  purged_jobs?: number
+  cancelled_operations?: number
+}
+
+export interface AudioRecentWindow {
+  window_days?: number
+  clips?: number
+  characters?: number
+  duration_seconds?: number | null
+}
+
+export interface AudioPrayerBookCoverage {
+  prayer_book_code?: string
+  clips?: number
+  sources?: number
+}
+
+export interface AudioOperationTotals {
+  by_status?: Record<string, number>
+  by_kind?: Record<string, number>
+  failed_last_24_hours?: number
+  last_completed_at?: string | null
 }
 
 export interface DashboardAudio extends DashboardSectionMeta {
@@ -253,9 +295,15 @@ export interface DashboardAudio extends DashboardSectionMeta {
   current_clips?: number
   stale_clips?: number
   legacy_clips?: number
+  silence_clips?: number
+  pending_candidates?: number
+  recent?: AudioRecentWindow
+  by_prayer_book?: AudioPrayerBookCoverage[]
+  operations?: AudioOperationTotals
   active_operations?: number
   profiles?: AudioProfile[]
   recent_operations?: AudioOperation[]
+  worker_queue?: AudioWorkerQueue
   active_jobs?: AudioActiveJob[]
 }
 
@@ -305,9 +353,17 @@ export interface AudioGenerationRequest {
   start_date: string
   days: number
   offices?: string[]
-  character_budget?: number
   preferences?: Record<string, unknown>
   variants?: Array<Record<string, unknown>>
+}
+
+// The fixed catalogue is not a window: it narrates everything the book can
+// ever say, so it takes no date. `dry_run` walks the same sources and reports
+// what a real run would have to buy.
+export interface AudioCatalogRequest {
+  prayer_book_code: string
+  dry_run?: boolean
+  translations?: string[]
 }
 
 export interface AudioEstimateRow {
