@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import OrdoAudioOperationsPanel from '../../components/ordo/AudioOperationsPanel.vue'
 import OrdoGrowthPanel from '../../components/ordo/GrowthPanel.vue'
 import OrdoOperationsPanel from '../../components/ordo/OperationsPanel.vue'
 import OrdoOverviewPanel from '../../components/ordo/OverviewPanel.vue'
@@ -28,7 +29,7 @@ definePageMeta({
   middleware: 'ordo-auth'
 })
 
-type DashboardTab = 'overview' | 'growth' | 'practice' | 'operations' | 'platform'
+type DashboardTab = 'overview' | 'growth' | 'practice' | 'operations' | 'audio' | 'platform'
 type PeriodMode = 'range' | 'all'
 
 interface TabDefinition {
@@ -57,6 +58,7 @@ const tabDefinitions: TabDefinition[] = [
   { id: 'growth', label: 'Pessoas & hábito', shortLabel: 'Pessoas', title: 'Pessoas que permanecem', description: 'Aquisição, primeiros passos e sinais de continuidade.', mark: '⌁' },
   { id: 'practice', label: 'Prática & conteúdo', shortLabel: 'Prática', title: 'O que está sendo rezado', description: 'Ofícios, livros, diários e conteúdo compartilhado.', mark: '✦' },
   { id: 'operations', label: 'Operação', shortLabel: 'Operação', title: 'Fila de cuidado', description: 'Saúde da plataforma e itens que precisam de decisão humana.', mark: '◌' },
+  { id: 'audio', label: 'Áudio', shortLabel: 'Áudio', title: 'Narração do ofício', description: 'Geração, revisão e manutenção do catálogo de clips narrados.', mark: '♪' },
   { id: 'platform', label: 'Negócio & API', shortLabel: 'Plataforma', title: 'A camada de plataforma', description: 'Premium, chaves e consumo das integrações.', mark: '＋' }
 ]
 
@@ -65,6 +67,8 @@ const sectionGroups: Record<DashboardTab, DashboardSectionName[]> = {
   growth: ['users', 'engagement', 'retention', 'onboarding', 'geography'],
   practice: ['completions', 'prayer_books', 'journals', 'shared_offices', 'weekly_prayers', 'favorites'],
   operations: ['notifications', 'life_rules', 'moderation', 'health', 'custom_rosaries'],
+  // The audio panel reads its own endpoints and ignores the reading period.
+  audio: [],
   platform: ['premium', 'api', 'developers', 'geography']
 }
 
@@ -141,6 +145,7 @@ const strapiSlug = ref('')
 const rejectionReason = ref('')
 
 const activeTabDefinition = computed(() => tabDefinitions.find(tab => tab.id === activeTab.value) || tabDefinitions[0])
+const activeTabUsesPeriod = computed(() => activeTab.value !== 'audio')
 const isAllTime = computed(() => periodMode.value === 'all')
 const dashboardStartDate = computed(() => isAllTime.value ? ALL_TIME_START_DATE : startDate.value)
 const dashboardEndDate = computed(() => isAllTime.value ? getDateInput(new Date()) : endDate.value)
@@ -593,11 +598,12 @@ watch([authReady, user], ([isReady, currentUser]) => {
       <aside class="ordo-sidebar"><div class="ordo-sidebar__caption">Navegação</div><nav class="ordo-sidebar__nav" aria-label="Seções do portal"><button v-for="tab in tabDefinitions" :key="tab.id" type="button" :class="{ 'is-active': activeTab === tab.id }" @click="activeTab = tab.id"><span class="ordo-sidebar__mark">{{ tab.mark }}</span><span>{{ tab.label }}</span><span v-if="tab.id === 'operations' && moderationSummary?.pending_now" class="ordo-sidebar__count">{{ moderationSummary.pending_now }}</span></button></nav><div class="ordo-sidebar__footer"><div class="ordo-sidebar__seal">⌁</div><p>Leitura responsável</p><span>O período é inclusivo e segue o fuso da API.</span></div></aside>
 
       <main class="ordo-main">
-        <section class="ordo-intro"><div><p class="ordo-kicker">{{ activeTabDefinition.shortLabel }} <span>·</span> visão administrativa</p><h1>{{ activeTabDefinition.title }}</h1><p class="ordo-intro__description">{{ activeTabDefinition.description }}</p></div><div class="ordo-intro__meta"><span class="ordo-scope-pill">{{ periodLabel }}</span><span v-if="lastUpdatedAt" class="ordo-updated">Atualizado {{ formatTimestamp(lastUpdatedAt.toISOString()) }}</span></div></section>
+        <section class="ordo-intro"><div><p class="ordo-kicker">{{ activeTabDefinition.shortLabel }} <span>·</span> visão administrativa</p><h1>{{ activeTabDefinition.title }}</h1><p class="ordo-intro__description">{{ activeTabDefinition.description }}</p></div><div v-if="activeTabUsesPeriod" class="ordo-intro__meta"><span class="ordo-scope-pill">{{ periodLabel }}</span><span v-if="lastUpdatedAt" class="ordo-updated">Atualizado {{ formatTimestamp(lastUpdatedAt.toISOString()) }}</span></div></section>
 
-        <section class="ordo-filter-bar" aria-label="Filtros do dashboard"><div class="ordo-filter-bar__period"><div class="ordo-filter-bar__period-header"><span class="ordo-filter-bar__label">Período de leitura</span><div class="ordo-period-toggle" role="group" aria-label="Escopo do período"><button type="button" :class="{ 'is-active': periodMode === 'range' }" :aria-pressed="periodMode === 'range'" @click="periodMode = 'range'">Intervalo</button><button type="button" :class="{ 'is-active': periodMode === 'all' }" :aria-pressed="periodMode === 'all'" @click="periodMode = 'all'">Desde sempre</button></div></div><div v-if="!isAllTime" class="ordo-filter-bar__dates"><label><span>De</span><input v-model="startDate" type="date" @keyup.enter="applyDateRange"></label><span class="ordo-filter-bar__dash">—</span><label><span>Até</span><input v-model="endDate" type="date" @keyup.enter="applyDateRange"></label></div><div v-else class="ordo-filter-bar__all-time"><span class="ordo-filter-bar__all-time-mark">∞</span><div><strong>Todo o histórico disponível</strong><small>métricas de período agregadas desde o início do histórico</small></div></div></div><div class="ordo-filter-bar__actions"><span v-if="activeTabLoading" class="ordo-loading-note"><i /> lendo API…</span><button type="button" class="ordo-button ordo-button--quiet" :disabled="activeTabLoading" @click="refreshCurrentTab"><span>↻</span> Atualizar</button><button type="button" class="ordo-button ordo-button--primary" :disabled="activeTabLoading" @click="applyDateRange">{{ isAllTime ? 'Ver desde sempre' : 'Aplicar período' }} <span>→</span></button></div></section>
+        <section v-if="activeTabUsesPeriod" class="ordo-filter-bar" aria-label="Filtros do dashboard"><div class="ordo-filter-bar__period"><div class="ordo-filter-bar__period-header"><span class="ordo-filter-bar__label">Período de leitura</span><div class="ordo-period-toggle" role="group" aria-label="Escopo do período"><button type="button" :class="{ 'is-active': periodMode === 'range' }" :aria-pressed="periodMode === 'range'" @click="periodMode = 'range'">Intervalo</button><button type="button" :class="{ 'is-active': periodMode === 'all' }" :aria-pressed="periodMode === 'all'" @click="periodMode = 'all'">Desde sempre</button></div></div><div v-if="!isAllTime" class="ordo-filter-bar__dates"><label><span>De</span><input v-model="startDate" type="date" @keyup.enter="applyDateRange"></label><span class="ordo-filter-bar__dash">—</span><label><span>Até</span><input v-model="endDate" type="date" @keyup.enter="applyDateRange"></label></div><div v-else class="ordo-filter-bar__all-time"><span class="ordo-filter-bar__all-time-mark">∞</span><div><strong>Todo o histórico disponível</strong><small>métricas de período agregadas desde o início do histórico</small></div></div></div><div class="ordo-filter-bar__actions"><span v-if="activeTabLoading" class="ordo-loading-note"><i /> lendo API…</span><button type="button" class="ordo-button ordo-button--quiet" :disabled="activeTabLoading" @click="refreshCurrentTab"><span>↻</span> Atualizar</button><button type="button" class="ordo-button ordo-button--primary" :disabled="activeTabLoading" @click="applyDateRange">{{ isAllTime ? 'Ver desde sempre' : 'Aplicar período' }} <span>→</span></button></div></section>
 
-        <section v-if="dashboardError && !dashboardReady" class="ordo-state ordo-state--error"><span class="ordo-state__symbol">!</span><div><h2>Não foi possível abrir o painel</h2><p>{{ dashboardError }}</p><button type="button" class="ordo-button ordo-button--primary" @click="loadTab(activeTab, true)">Tentar novamente <span>↗</span></button></div></section>
+        <OrdoAudioOperationsPanel v-if="activeTab === 'audio'" />
+        <section v-else-if="dashboardError && !dashboardReady" class="ordo-state ordo-state--error"><span class="ordo-state__symbol">!</span><div><h2>Não foi possível abrir o painel</h2><p>{{ dashboardError }}</p><button type="button" class="ordo-button ordo-button--primary" @click="loadTab(activeTab, true)">Tentar novamente <span>↗</span></button></div></section>
         <section v-else-if="!dashboardReady" class="ordo-loading-panel"><div class="ordo-loading-panel__orb" /><p>Consultando os sinais do Ordo</p><span>Autenticando e preparando as seções necessárias…</span></section>
         <template v-else>
           <div v-if="dashboardError" class="ordo-inline-error"><span>!</span>{{ dashboardError }}</div>

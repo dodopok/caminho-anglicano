@@ -42,9 +42,20 @@ O painel trata `null` como estado válido, exibe o escopo efetivo de cada seçã
 
 A fila de regras de vida é somente leitura no contrato atual: existe apenas o endpoint `GET /api/v1/admin/life_rules`, sem ação administrativa de aprovação. Rosários compartilhados possuem revisão detalhada e as ações `approve`/`reject` no modal editorial.
 
+## Operação e moderação
+
+A aba **Operação** começa pelas filas que pedem decisão — rosários compartilhados (acionáveis) e regras de vida (somente leitura) — e resume a pendência numa linha só na introdução, em vez de repetir as contagens em cartões. Abaixo vêm a qualidade da moderação no período e os sinais da plataforma (notificações, saúde operacional, regras de vida e exames) em listas compactas, com o detalhamento completo nos modais de exploração. O volume de rosários do período (criados, públicos, médias de blocos e passos, pessoas perto do limite) fica no modal **Abrir métricas**, não no cartão da fila.
+
 ## Operação de áudio
 
-O painel de áudio cobre as duas metades do pipeline de narração, que são operações distintas na API:
+O áudio tem aba própria, fora de Operação, e não depende do período de leitura (a barra de período fica oculta nela). O painel é dividido por tarefa:
+
+- **Visão geral**: só o que pede decisão aparece no topo (tentativas a revisar, jobs mortos, falhas nas últimas 24 horas); os números ficam em três listas — catálogo, qualidade e fila — com os clips por livro no rodapé; e as operações recentes ao lado da fila do worker, cuja lista de jobs fica recolhida atrás das contagens por estado.
+- **Gerar**: janela de datas e catálogo fixo. A operação enfileirada por último é acompanhada numa faixa no topo da seção que a pediu, sem voltar à visão geral.
+- **Clips**: cada clip é uma linha compacta (texto em até duas linhas, player e uso resumido). Tentativas pendentes continuam visíveis na linha, porque pedem decisão; perfil, fingerprints, todos os usos, a observação específica e a regeneração ficam em **Detalhes**. Provedor, voz e textos curtos ficam em **Mais filtros**, e os selects aplicam o filtro ao mudar.
+- **Manutenção**: limpeza de perfis antigos e reindexação, com o LOC escolhido no próprio cartão.
+
+O pipeline de narração tem duas metades, que são operações distintas na API:
 
 - **Catálogo fixo** (`POST /api/v1/admin/audio/catalog/generations`): todo texto, coleta, saltério e corpus bíblico que o livro pode ler, sem data. `dry_run` percorre as mesmas fontes e relata o que uma execução real teria que comprar. O catálogo é longo demais para uma requisição, então a simulação também roda no worker e o relatório volta em `operation.result`.
 - **Janela de datas** (`POST /api/v1/admin/audio/generations`): monta os ofícios reais de cada dia. `POST .../generations/estimate` continua síncrono. Nenhuma das duas aceita teto de caracteres: a operação gera o que falta.
@@ -74,7 +85,8 @@ layers/ordo/
 │   ├── CustomRosaryQueue.vue
 │   ├── DataExplorerModal.vue
 │   ├── RosaryReviewModal.vue
-│   └── MetricCard / ChartCard / TopList / charts
+│   ├── AudioOperationsPanel.vue
+│   └── MetricCard / StatList / ChartCard / TopList / charts
 ├── composables/
 │   ├── useFirebaseAuth.ts
 │   ├── useOrdoApi.ts
