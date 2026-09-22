@@ -51,10 +51,39 @@ const api = {
 
 vi.mock('../../composables/useOrdoApi', () => ({ useOrdoApi: () => api }))
 
+const clip = {
+  id: 11,
+  text: 'Pai nosso, que estás nos céus',
+  kind: 'prayer',
+  line_type: 'congregation',
+  provider: 'openai',
+  voice: 'sage',
+  language: 'pt-BR',
+  duration: 4,
+  character_count: 30,
+  profile_status: 'stale',
+  configuration_fingerprint: 'abcdef1234567890',
+  audio_url: 'https://storage.example/clip.mp3',
+  usages: [
+    { prayer_book_code: 'loc_2019', source_name: 'lords_prayer' },
+    { prayer_book_code: 'loc_2019', source_name: 'morning' },
+    { prayer_book_code: 'loc_2015', source_name: 'evening' }
+  ],
+  candidates: [
+    { id: 90, status: 'pending', duration: 5, audio_url: 'https://storage.example/candidate.mp3' },
+    { id: 89, status: 'rejected', duration: 5 }
+  ]
+}
+
 const mountPanel = async () => {
   const wrapper = mount(AudioOperationsPanel)
   await flushPromises()
   return wrapper
+}
+
+const openSection = async (wrapper: Awaited<ReturnType<typeof mountPanel>>, label: string) => {
+  await wrapper.findAll('[role="tab"]').find(tab => tab.text().startsWith(label))?.trigger('click')
+  await flushPromises()
 }
 
 describe('AudioOperationsPanel', () => {
@@ -74,6 +103,7 @@ describe('AudioOperationsPanel', () => {
 
   it('no longer asks for a character ceiling before estimating', async () => {
     const wrapper = await mountPanel()
+    await openSection(wrapper, 'Gerar')
 
     expect(wrapper.text()).not.toContain('Limite opcional de caracteres')
 
@@ -87,6 +117,7 @@ describe('AudioOperationsPanel', () => {
 
   it('enqueues the fixed catalogue of the selected book', async () => {
     const wrapper = await mountPanel()
+    await openSection(wrapper, 'Gerar')
 
     await wrapper.findAll('button').find(button => button.text().includes('Gerar catálogo'))?.trigger('click')
     await flushPromises()
@@ -97,6 +128,7 @@ describe('AudioOperationsPanel', () => {
 
   it('simulates the catalogue without buying anything', async () => {
     const wrapper = await mountPanel()
+    await openSection(wrapper, 'Gerar')
 
     await wrapper.findAll('button').find(button => button.text() === 'Simular catálogo')?.trigger('click')
     await flushPromises()
@@ -129,5 +161,94 @@ describe('AudioOperationsPanel', () => {
     expect(wrapper.text()).toContain('Jobs mortos')
     expect(wrapper.text()).toContain('Novos em 7 dias')
     expect(wrapper.text()).toContain('loc_2019')
+  })
+
+  it('opens on the overview with only what asks for a decision on top', async () => {
+    const wrapper = await mountPanel()
+
+    const attention = wrapper.find('.audio-ops__attention').text()
+    expect(attention).toContain('2 tentativas aguardam revisão')
+    expect(attention).toContain('2 jobs mortos na fila do worker')
+    expect(attention).toContain('1 operação falhou nas últimas 24 horas')
+    expect(wrapper.text()).not.toContain('Enfileirar geração')
+    expect(wrapper.find('.audio-ops__clips').exists()).toBe(false)
+  })
+
+  it('says so when nothing needs attention', async () => {
+    api.fetchAudioSummary.mockResolvedValue({
+      ...summary,
+      pending_candidates: 0,
+      operations: { ...summary.operations, failed_last_24_hours: 0 },
+      worker_queue: { total: 0, by_state: {}, purgeable: 0, jobs: [] }
+    })
+    const wrapper = await mountPanel()
+
+    expect(wrapper.find('.audio-ops__attention').text()).toContain('Nada pede atenção')
+  })
+
+  it('keeps the worker job list folded behind its state counts', async () => {
+    const wrapper = await mountPanel()
+
+    const details = wrapper.find('.audio-ops__queue-details')
+    expect(details.find('summary').text()).toBe('Ver 3 jobs')
+    expect(details.attributes('open')).toBeUndefined()
+  })
+
+  it('follows the operation it just enqueued from the section that asked for it', async () => {
+    const wrapper = await mountPanel()
+    await openSection(wrapper, 'Gerar')
+
+    await wrapper.findAll('button').find(button => button.text().includes('Gerar catálogo'))?.trigger('click')
+    await flushPromises()
+
+    const tracked = wrapper.find('.audio-ops__tracked')
+    expect(tracked.text()).toContain('Catálogo fixo')
+    expect(tracked.text()).toContain('Na fila')
+
+    await tracked.findAll('button').find(button => button.text().includes('Ver operações'))?.trigger('click')
+    await flushPromises()
+
+    expect(wrapper.find('.audio-ops__tracked').exists()).toBe(false)
+    expect(wrapper.find('.audio-ops__operations').text()).toContain('Catálogo fixo')
+  })
+
+  it('shows each clip as a compact row and folds its details', async () => {
+    api.fetchAudioClips.mockResolvedValue({ clips: [clip], pagination: { total: 1, limit: 20, offset: 0, count: 1 } })
+    const wrapper = await mountPanel()
+    await openSection(wrapper, 'Clips')
+
+    const row = wrapper.find('.audio-ops__clip')
+    expect(row.text()).toContain('Pai nosso')
+    expect(row.text()).toContain('1 tentativa a revisar')
+    expect(row.text()).toContain('loc_2019 / lords_prayer · loc_2019 / morning · +1 uso')
+    // The pending attempt is a decision, so it stays visible with the row folded.
+    expect(row.find('.audio-ops__candidates').text()).toContain('aprovar')
+    expect(row.find('textarea').exists()).toBe(false)
+    expect(row.text()).not.toContain('Tentativas anteriores')
+
+    await row.find('.audio-ops__toggle').trigger('click')
+
+    expect(row.find('textarea').exists()).toBe(true)
+    expect(row.text()).toContain('abcdef123456')
+    expect(row.text()).toContain('Tentativas anteriores')
+    expect(row.find('.audio-ops__toggle').attributes('aria-expanded')).toBe('true')
+  })
+
+  it('applies a clip filter as soon as it changes', async () => {
+    const wrapper = await mountPanel()
+    await openSection(wrapper, 'Clips')
+    api.fetchAudioClips.mockClear()
+
+    const select = wrapper.findAll('select').find(element => element.find('option[value="stale"]').exists())
+    await select?.setValue('stale')
+    await flushPromises()
+
+    expect(api.fetchAudioClips).toHaveBeenCalledWith(expect.objectContaining({ profile_status: 'stale', offset: 0 }))
+  })
+
+  it('counts the attempts waiting for review on the clips section', async () => {
+    const wrapper = await mountPanel()
+
+    expect(wrapper.findAll('[role="tab"]').find(tab => tab.text().startsWith('Clips'))?.text()).toBe('Clips2')
   })
 })

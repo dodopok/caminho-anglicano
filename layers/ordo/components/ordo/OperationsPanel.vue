@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import OrdoAudioOperationsPanel from './AudioOperationsPanel.vue'
 import OrdoChartCard from './ChartCard.vue'
 import OrdoCustomRosaryQueue from './CustomRosaryQueue.vue'
 import OrdoDataExplorerModal from './DataExplorerModal.vue'
 import OrdoLifeRulesQueue from './LifeRulesQueue.vue'
-import OrdoMetricCard from './MetricCard.vue'
-import { useOrdoDashboardPresentation } from '../../composables/useOrdoDashboardPresentation'
+import OrdoStatList from './StatList.vue'
+import { useOrdoDashboardPresentation, type DashboardStatItem } from '../../composables/useOrdoDashboardPresentation'
 import type {
   CustomRosaryPrayer,
   CustomRosaryPagination,
@@ -90,8 +89,57 @@ const activeExplorer = ref<ExplorerName>(null)
 const notificationStatusItems = computed(() => mapItems(props.dashboard.notifications?.delivery_status_counts))
 const moderation = computed(() => props.dashboard.moderation?.custom_rosaries)
 const lifeRuleExams = computed(() => props.dashboard.life_rules?.exams)
-const lifeRuleExamBandItems = computed(() => mapItems(lifeRuleExams.value?.by_band))
 const formatOptionalNumber = (value: number | null | undefined) => value == null ? '—' : formatNumber(value)
+const plural = (count: number, singular: string, pluralForm: string) => `${formatNumber(count)} ${count === 1 ? singular : pluralForm}`
+const attention = (value: number | null | undefined) => (value || 0) > 0 ? { tone: 'attention' as const } : {}
+
+// The queues answer "what needs a decision"; the intro says it in one line
+// instead of a row of cards repeating the queue counts.
+const pendingSummary = computed(() => {
+  const rosaries = moderation.value?.pending_now
+  const rules = props.dashboard.life_rules?.pending_rules ?? props.dashboard.moderation?.life_rules?.pending_now
+  const oldestRosary = moderation.value?.oldest_pending_age_seconds
+  const parts = [
+    ...(rosaries == null ? [] : [`${plural(rosaries, 'rosário em revisão', 'rosários em revisão')}${rosaries && oldestRosary ? ` · mais antigo há ${formatDuration(oldestRosary)}` : ''}`]),
+    ...(rules == null ? [] : [plural(rules, 'regra pendente', 'regras pendentes')])
+  ]
+  return parts.length ? parts.join(' · ') : 'fila atual + métricas do período'
+})
+
+const notificationStats = computed<DashboardStatItem[]>(() => {
+  const notifications = props.dashboard.notifications
+  return [
+    { key: 'success', label: 'Taxa de sucesso', value: formatPercent(notifications?.success_rate), hint: `${formatNumber(notifications?.total_in_period)} logs no período` },
+    { key: 'sent', label: 'Enviadas', value: formatNumber(notifications?.sent) },
+    { key: 'failed', label: 'Falhas no período', value: formatNumber(notifications?.failed) }
+  ]
+})
+
+const healthStats = computed<DashboardStatItem[]>(() => {
+  const health = props.dashboard.health
+  return [
+    { key: 'fcm', label: 'Falhas de notificação', value: formatNumber(health?.notifications?.failures_last_24_hours), hint: 'nas últimas 24 horas', ...attention(health?.notifications?.failures_last_24_hours) },
+    { key: 'stale', label: 'Sessões de áudio travadas', value: formatNumber(health?.audio_sessions?.stale_running), hint: `${formatNumber(health?.audio_sessions?.running)} rodando agora`, ...attention(health?.audio_sessions?.stale_running) },
+    { key: 'audio-failed', label: 'Sessões de áudio falhas', value: formatNumber(health?.audio_sessions?.failed), hint: 'histórico' },
+    { key: 'keys', label: 'Chaves de API expirando', value: formatNumber(health?.api_keys?.expiring_next_30_days), hint: 'nos próximos 30 dias', ...attention(health?.api_keys?.expiring_next_30_days) }
+  ]
+})
+
+const lifeRuleStats = computed<DashboardStatItem[]>(() => {
+  const rules = props.dashboard.life_rules
+  return [
+    { key: 'rules', label: 'Regras', value: formatNumber(rules?.total_rules), hint: `${formatNumber(rules?.public_rules)} públicas · ${formatNumber(rules?.approved_rules)} aprovadas` },
+    { key: 'adoptions', label: 'Adoções históricas', value: formatNumber(rules?.total_adoptions) },
+    ...(lifeRuleExams.value ? [
+      { key: 'exams', label: 'Exames concluídos', value: formatOptionalNumber(lifeRuleExams.value.completed_in_period), hint: `${formatOptionalNumber(lifeRuleExams.value.users_with_completed_exams)} pessoas distintas no período` },
+      ...(lifeRuleExams.value.average_score == null ? [] : [{ key: 'score', label: 'Score médio', value: formatDecimal(lifeRuleExams.value.average_score, 2), hint: 'exames concluídos no período' }])
+    ] : [])
+  ]
+})
+
+const topAdoptedRules = computed(() => (props.dashboard.life_rules?.top_adopted || []).slice(0, 3))
+const topAdoptedMax = computed(() => Math.max(...topAdoptedRules.value.map(rule => Number(rule.adoptions || 0)), 1))
+
 const customRosaryExplorerRemotePagination = computed<ExplorerRemotePagination>(() => ({
   currentPage: props.customRosaryExplorerCurrentPage,
   totalPages: props.customRosaryExplorerTotalPages,
@@ -188,6 +236,7 @@ const moderationColumns: ExplorerColumn[] = [
 const moderationRows = computed<ExplorerRow[]>(() => {
   const rosaries = props.dashboard.moderation?.custom_rosaries
   const rules = props.dashboard.moderation?.life_rules
+  const shared = props.dashboard.custom_rosaries
   return [
     ...[
       ['Pendentes agora', rosaries?.pending_now],
@@ -205,7 +254,16 @@ const moderationRows = computed<ExplorerRow[]>(() => {
       ['Pendentes agora', rules?.pending_now],
       ['Mais antiga em', rules?.oldest_pending_at, 'timestamp'],
       ['Idade da mais antiga', rules?.oldest_pending_age_seconds, 'duration']
-    ].map(([metric, value, value_kind], index) => ({ id: `rule-${index}`, values: { category: 'Regras de vida', metric, value: value ?? null, value_kind: value_kind || 'number' } }))
+    ].map(([metric, value, value_kind], index) => ({ id: `rule-${index}`, values: { category: 'Regras de vida', metric, value: value ?? null, value_kind: value_kind || 'number' } })),
+    // These used to crowd the queue card; they describe the period, not the queue.
+    ...[
+      ['Criados no período', shared?.created_in_period],
+      ['Públicos no período', shared?.public_in_period],
+      ['Média de blocos', shared?.average_blocks, 'decimal'],
+      ['Média de passos expandidos', shared?.average_expanded_steps, 'decimal'],
+      ['Pessoas perto do limite', shared?.users_near_limit]
+    ].map(([metric, value, value_kind], index) => ({ id: `shared-${index}`, values: { category: 'Rosários no período', metric, value: value ?? null, value_kind: value_kind || 'number' } })),
+    ...mapItems(shared?.by_share_status).map(item => ({ id: `share-status-${item.key}`, values: { category: 'Rosários por status', metric: humanizeKey(item.key), value: item.value, value_kind: 'number' } }))
   ]
 })
 
@@ -308,43 +366,81 @@ const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: 
 
 <template>
   <section class="ordo-content-stack">
-    <div class="ordo-section-intro"><div><p class="ordo-kicker">Operação & moderação</p><h2>O que precisa de uma decisão humana.</h2></div><span class="ordo-scope-label">fila atual + métricas do período</span></div>
-
-    <OrdoAudioOperationsPanel />
-
-    <div class="ordo-metrics-grid ordo-metrics-grid--four">
-      <OrdoMetricCard v-if="moderation" title="Rosários em revisão" :value="formatNumber(moderation.pending_now)" :subtitle="`${formatNumber(moderation.approved_without_strapi)} aprovados sem Strapi`" color="orange" icon="◌" eyebrow="Moderação" />
-      <OrdoMetricCard v-if="dashboard.life_rules" title="Regras pendentes" :value="formatNumber(dashboard.life_rules.pending_rules)" :subtitle="`${formatNumber(dashboard.life_rules.total_adoptions)} adoções históricas`" color="purple" icon="⌁" eyebrow="Regras de vida" />
-      <OrdoMetricCard v-if="lifeRuleExams" title="Exames concluídos" :value="formatOptionalNumber(lifeRuleExams.completed_in_period)" subtitle="no período por completed_at" color="blue" icon="✓" eyebrow="Regras de vida" />
-      <OrdoMetricCard v-if="lifeRuleExams" title="Usuários distintos" :value="formatOptionalNumber(lifeRuleExams.users_with_completed_exams)" subtitle="com exame concluído no período" color="green" icon="◎" eyebrow="Avaliação" />
-      <OrdoMetricCard v-if="lifeRuleExams?.average_score != null" title="Score médio" :value="formatDecimal(lifeRuleExams.average_score, 2)" subtitle="exames concluídos no período" color="orange" icon="⌁" eyebrow="Avaliação" />
-      <OrdoMetricCard v-if="dashboard.health?.notifications" title="Falhas nas últimas 24h" :value="formatNumber(dashboard.health.notifications.failures_last_24_hours)" subtitle="notificações FCM" color="pink" icon="!" eyebrow="Saúde" />
-      <OrdoMetricCard v-if="dashboard.health?.audio_sessions" title="Áudio travado" :value="formatNumber(dashboard.health.audio_sessions.stale_running)" :subtitle="`${formatNumber(dashboard.health.audio_sessions.failed)} falhas históricas`" color="blue" icon="◷" eyebrow="Geração" />
-    </div>
-
-    <div class="ordo-grid-2">
-      <OrdoChartCard v-if="dashboard.notifications" title="Entrega de notificações" description="O token bruto nunca aparece no dashboard; status são agregados por hash." icon="⌁" icon-color="pink" eyebrow="Notificações"><template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'notifications'">Ver detalhes ↗</button></template><div class="ordo-highlight-grid"><div><span>Logs</span><strong>{{ formatNumber(dashboard.notifications.total_in_period) }}</strong></div><div><span>Enviadas</span><strong>{{ formatNumber(dashboard.notifications.sent) }}</strong></div><div><span>Falhas</span><strong>{{ formatNumber(dashboard.notifications.failed) }}</strong></div><div><span>Sucesso</span><strong>{{ formatPercent(dashboard.notifications.success_rate) }}</strong></div></div><div class="ordo-mini-bars"><div v-for="item in notificationStatusItems" :key="item.key"><span>{{ item.label }}</span><strong>{{ formatNumber(item.value) }}</strong><i><b class="is-pink" :style="{ width: `${(item.value / maxItemValue(notificationStatusItems)) * 100}%` }" /></i></div></div></OrdoChartCard>
-    </div>
-
-    <div class="ordo-grid-2">
-      <OrdoChartCard v-if="dashboard.life_rules" title="Regras mais adotadas" description="Ranking completo de adoções históricas recebido pelo backend." icon="⌁" icon-color="purple" eyebrow="Regras de vida"><template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'lifeRules'">Ver ranking ↗</button></template><div class="ordo-highlight-grid"><div><span>Total de regras</span><strong>{{ formatNumber(dashboard.life_rules.total_rules) }}</strong></div><div><span>Públicas</span><strong>{{ formatNumber(dashboard.life_rules.public_rules) }}</strong></div><div><span>Aprovadas</span><strong>{{ formatNumber(dashboard.life_rules.approved_rules) }}</strong></div><div><span>Adoções</span><strong>{{ formatNumber(dashboard.life_rules.total_adoptions) }}</strong></div></div><div class="ordo-mini-bars"><div v-for="item in dashboard.life_rules.top_adopted || []" :key="item.id || item.title"><span>{{ item.title }}</span><strong>{{ formatNumber(item.adoptions) }}</strong><i><b class="is-purple" :style="{ width: `${(Number(item.adoptions || 0) / Math.max(...(dashboard.life_rules?.top_adopted || []).map(rule => Number(rule.adoptions || 0)), 1)) * 100}%` }" /></i></div></div></OrdoChartCard>
-      <OrdoChartCard v-if="lifeRuleExams" title="Exames de Regras de Vida" description="Exames concluídos no período, agrupados por completed_at. Regras e adoções continuam na base total." icon="✓" icon-color="blue" eyebrow="Avaliação"><template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'lifeRuleExams'">Ver dados ↗</button></template><div class="ordo-highlight-grid"><div><span>Concluídos</span><strong>{{ formatOptionalNumber(lifeRuleExams.completed_in_period) }}</strong></div><div><span>Pessoas distintas</span><strong>{{ formatOptionalNumber(lifeRuleExams.users_with_completed_exams) }}</strong></div><div v-if="lifeRuleExams.average_score != null"><span>Score médio</span><strong>{{ formatDecimal(lifeRuleExams.average_score, 2) }}</strong></div></div><div v-if="lifeRuleExamBandItems.length" class="ordo-mini-bars"><div v-for="item in lifeRuleExamBandItems" :key="item.key"><span>{{ humanizeKey(item.key) }}</span><strong>{{ formatNumber(item.value) }}</strong><i><b :style="{ width: `${(item.value / maxItemValue(lifeRuleExamBandItems)) * 100}%` }" /></i></div></div><small v-else class="ordo-muted">O backend ainda não retornou bandas de score.</small></OrdoChartCard>
-      <OrdoChartCard v-if="dashboard.health" title="Saúde operacional" description="Falhas, sessões travadas e chaves próximas do vencimento." icon="✓" icon-color="green" eyebrow="Health"><template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'health'">Ver detalhes ↗</button></template><div class="ordo-highlight-grid"><div><span>Falhas FCM 24h</span><strong>{{ formatNumber(dashboard.health.notifications?.failures_last_24_hours) }}</strong></div><div><span>Áudio travado</span><strong>{{ formatNumber(dashboard.health.audio_sessions?.stale_running) }}</strong></div><div><span>Áudio rodando</span><strong>{{ formatNumber(dashboard.health.audio_sessions?.running) }}</strong></div><div><span>Keys expirando</span><strong>{{ formatNumber(dashboard.health.api_keys?.expiring_next_30_days) }}</strong></div></div></OrdoChartCard>
-    </div>
+    <div class="ordo-section-intro"><div><p class="ordo-kicker">Operação & moderação</p><h2>O que precisa de uma decisão humana.</h2></div><span class="ordo-scope-label">{{ pendingSummary }}</span></div>
 
     <div class="ordo-queue-grid">
+      <OrdoCustomRosaryQueue :rosaries="customRosaries" :pagination="customRosaryPagination" :loading="customRosariesLoading" :error="customRosariesError" :status="customRosaryStatus" :current-page="customRosaryCurrentPage" :total-pages="customRosaryTotalPages" :summary="dashboard.custom_rosaries" @update:status="emit('update:customRosaryStatus', $event)" @change="emit('change-custom-rosary-status')" @change-page="emit('change-custom-rosary-page', $event)" @open="emit('open-rosary', $event, 'queue')" @open-all="openCustomRosaryExplorer" />
       <OrdoLifeRulesQueue :rules="lifeRules" :pagination="lifeRulesPagination" :loading="lifeRulesLoading" :error="lifeRulesError" :status="lifeRuleStatus" :search="lifeRuleSearch" :current-page="lifeRuleCurrentPage" :total-pages="lifeRuleTotalPages" @update:status="emit('update:lifeRuleStatus', $event)" @update:search="emit('update:lifeRuleSearch', $event)" @search="emit('search-life-rules')" @change-page="emit('change-life-rule-page', $event)" @open-all="activeExplorer = 'lifeRules'" />
-      <OrdoCustomRosaryQueue :rosaries="customRosaries" :pagination="customRosaryPagination" :loading="customRosariesLoading" :error="customRosariesError" :status="customRosaryStatus" :current-page="customRosaryCurrentPage" :total-pages="customRosaryTotalPages" :summary="dashboard.custom_rosaries" :status-items="selectedRosaryStatusItems" @update:status="emit('update:customRosaryStatus', $event)" @change="emit('change-custom-rosary-status')" @change-page="emit('change-custom-rosary-page', $event)" @open="emit('open-rosary', $event, 'queue')" @open-all="openCustomRosaryExplorer" />
     </div>
 
-    <div v-if="moderation" class="ordo-table-card"><div class="ordo-table-card__header"><div><p class="ordo-kicker">Decisões no período</p><h2>Qualidade da moderação</h2></div><div class="ordo-table-card__header-actions"><span class="ordo-scope-label">{{ formatPercent(moderation.approval_rate) }} de aprovação</span><button type="button" class="ordo-card-action" @click="activeExplorer = 'moderation'">Abrir métricas ↗</button></div></div><div class="ordo-highlight-grid ordo-highlight-grid--wide ordo-table-card__metrics"><div><span>Aprovadas</span><strong>{{ formatNumber(moderation.approved_in_period) }}</strong></div><div><span>Rejeitadas</span><strong>{{ formatNumber(moderation.rejected_in_period) }}</strong></div><div><span>Reentradas</span><strong>{{ formatNumber(moderation.reentries_in_period) }}</strong></div><div><span>Tempo médio</span><strong>{{ formatDuration(moderation.average_response_time_seconds) }}</strong></div></div></div>
+    <div v-if="moderation" class="ordo-table-card">
+      <div class="ordo-table-card__header"><div><p class="ordo-kicker">Decisões no período</p><h2>Qualidade da moderação</h2></div><div class="ordo-table-card__header-actions"><span class="ordo-scope-label">{{ formatPercent(moderation.approval_rate) }} de aprovação</span><button type="button" class="ordo-card-action" @click="activeExplorer = 'moderation'">Abrir métricas ↗</button></div></div>
+      <div class="ops-moderation">
+        <div class="ordo-highlight-grid ops-moderation__metrics"><div><span>Aprovadas</span><strong>{{ formatNumber(moderation.approved_in_period) }}</strong></div><div><span>Rejeitadas</span><strong>{{ formatNumber(moderation.rejected_in_period) }}</strong></div><div><span>Reentradas</span><strong>{{ formatNumber(moderation.reentries_in_period) }}</strong></div><div><span>Tempo médio</span><strong>{{ formatDuration(moderation.average_response_time_seconds) }}</strong></div></div>
+        <div v-if="selectedRosaryStatusItems.length" class="ops-moderation__status">
+          <p class="ops-caption">Rosários por status</p>
+          <div class="ordo-mini-bars"><div v-for="item in selectedRosaryStatusItems" :key="item.key"><span>{{ item.label }}</span><strong>{{ formatNumber(item.value) }}</strong><i><b class="is-ochre" :style="{ width: `${(item.value / maxItemValue(selectedRosaryStatusItems)) * 100}%` }" /></i></div></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="ordo-kicker ops-group-label">Sinais da plataforma</p>
+    <div class="ops-signals">
+      <OrdoChartCard v-if="dashboard.notifications" title="Notificações" description="Status agregados por hash; o token nunca aparece." icon="⌁" icon-color="pink" eyebrow="Entrega">
+        <template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'notifications'">Detalhes ↗</button></template>
+        <OrdoStatList :items="notificationStats" />
+        <div v-if="notificationStatusItems.length" class="ordo-mini-bars ops-bars"><div v-for="item in notificationStatusItems" :key="item.key"><span>{{ item.label }}</span><strong>{{ formatNumber(item.value) }}</strong><i><b class="is-pink" :style="{ width: `${(item.value / maxItemValue(notificationStatusItems)) * 100}%` }" /></i></div></div>
+      </OrdoChartCard>
+
+      <OrdoChartCard v-if="dashboard.health" title="Saúde operacional" description="Falhas, sessões travadas e chaves perto do vencimento." icon="✓" icon-color="green" eyebrow="Health">
+        <template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'health'">Detalhes ↗</button></template>
+        <OrdoStatList :items="healthStats" />
+      </OrdoChartCard>
+
+      <OrdoChartCard v-if="dashboard.life_rules" title="Regras de vida" description="Base total de regras e adoções; exames no período." icon="⌁" icon-color="purple" eyebrow="Adoção & exames">
+        <template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'adoptions'">Ranking ↗</button></template>
+        <OrdoStatList :items="lifeRuleStats" />
+        <div v-if="topAdoptedRules.length" class="ops-bars">
+          <p class="ops-caption">Mais adotadas</p>
+          <div class="ordo-mini-bars"><div v-for="item in topAdoptedRules" :key="item.id || item.title"><span>{{ item.title }}</span><strong>{{ formatNumber(item.adoptions) }}</strong><i><b class="is-purple" :style="{ width: `${(Number(item.adoptions || 0) / topAdoptedMax) * 100}%` }" /></i></div></div>
+        </div>
+        <button v-if="lifeRuleExams" type="button" class="ordo-card-action ops-card-link" @click="activeExplorer = 'lifeRuleExams'">Exames por período e banda ↗</button>
+      </OrdoChartCard>
+    </div>
   </section>
 
   <OrdoDataExplorerModal v-if="activeExplorer === 'notifications'" title="Notificações" description="Resumo, tipos e status de entrega por plataforma; tokens individuais nunca são expostos." :columns="notificationColumns" :rows="notificationRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'lifeRules'" title="Regras de vida carregadas" description="Itens retornados para a página atual da fila, com todos os campos administrativos disponíveis nessa resposta." :columns="lifeRuleColumns" :rows="lifeRuleRows" :filters="lifeRuleFilters" default-sort-key="created_at" default-sort-direction="desc" search-placeholder="Buscar regra, autor ou descrição…" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'lifeRuleExams'" title="Exames de Regras de Vida" description="Exames concluídos no período por completed_at, com usuários distintos, score médio e distribuições quando retornadas." :columns="lifeRuleExamColumns" :rows="lifeRuleExamRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'adoptions'" title="Adoção de regras de vida" description="Ranking completo de regras adotadas na base total." :columns="lifeRuleAdoptionColumns" :rows="lifeRuleAdoptionRows" default-sort-key="adoptions" search-placeholder="Buscar regra…" @close="activeExplorer = null" />
-  <OrdoDataExplorerModal v-else-if="activeExplorer === 'moderation'" title="Métricas de moderação" description="Pendências atuais, decisões no período, reentradas e idade das filas." :columns="moderationColumns" :rows="moderationRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
+  <OrdoDataExplorerModal v-else-if="activeExplorer === 'moderation'" title="Métricas de moderação" description="Pendências atuais, decisões no período, reentradas, idade das filas e o volume de rosários do período." :columns="moderationColumns" :rows="moderationRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'health'" title="Saúde operacional" description="Detalhamento de falhas, sessões travadas e chaves próximas do vencimento." :columns="healthColumns" :rows="healthRows" default-sort-key="value" :format-value="formatOperationsExplorerValue" @close="activeExplorer = null" />
   <OrdoDataExplorerModal v-else-if="activeExplorer === 'customRosaries'" title="Rosários compartilhados" description="Fila completa isolada da tabela principal. Clique no nome para abrir a revisão e aprovar ou rejeitar." :columns="customRosaryColumns" :rows="customRosaryRows" :remote="true" :remote-search="customRosaryExplorerSearch" :remote-sort-key="customRosaryExplorerSort" :remote-sort-direction="customRosaryExplorerSortDirection" :remote-pagination="customRosaryExplorerRemotePagination" :remote-loading="customRosaryExplorerLoading" :remote-error="customRosaryExplorerError" row-action-key="title" row-action-label="Abrir revisão de" search-placeholder="Buscar título, autor, descrição ou slug…" :format-value="formatOperationsExplorerValue" @update:remote-search="emit('update:customRosaryExplorerSearch', $event)" @remote-search="emit('search-custom-rosary-explorer')" @remote-sort="onCustomRosaryExplorerRemoteSort" @remote-page="emit('change-custom-rosary-explorer-page', $event)" @row-click="openCustomRosaryFromExplorer" @close="activeExplorer = null" />
 </template>
+
+<style scoped>
+.ops-group-label { margin: 8px 0 -8px; }
+.ops-caption { margin: 0 0 8px; color: #8b978b; font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.ops-moderation { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); align-items: start; gap: 24px; padding: 0 24px 22px; }
+.ops-moderation__metrics { margin: 0; }
+.ops-moderation__status .ordo-mini-bars { margin-top: 0; gap: 9px; }
+.ops-signals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 16px; }
+.ops-signals > * { min-width: 0; }
+.ops-bars { margin-top: 14px; padding-top: 12px; border-top: 1px solid #e8eee6; }
+.ops-bars.ordo-mini-bars { gap: 9px; }
+.ops-bars .ordo-mini-bars { margin-top: 0; gap: 9px; }
+.ops-card-link { margin-top: 14px; padding-left: 0; }
+
+@media (max-width: 1180px) {
+  .ops-signals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 900px) {
+  .ops-moderation { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+}
+
+@media (max-width: 720px) {
+  .ops-moderation { padding: 0 16px 16px; }
+  .ops-signals { grid-template-columns: minmax(0, 1fr); }
+}
+</style>

@@ -6,6 +6,16 @@ export interface DashboardMapItem {
   value: number
 }
 
+// One row of a compact stat list. `attention` marks a number that asks for an
+// action — it carries a flag and a label, never colour alone.
+export interface DashboardStatItem {
+  key: string
+  label: string
+  value: string
+  hint?: string
+  tone?: 'attention'
+}
+
 export const useOrdoDashboardPresentation = () => {
   const asNumber = (value: number | null | undefined) => value ?? 0
 
@@ -26,6 +36,19 @@ export const useOrdoDashboardPresentation = () => {
   const formatDuration = (seconds: number | null | undefined) => {
     const totalSeconds = asNumber(seconds)
     if (totalSeconds < 60) return `${Math.round(totalSeconds)} s`
+
+    // Hours of narration used to read as "529 min 59 s".
+    if (totalSeconds >= 86_400) {
+      const days = Math.floor(totalSeconds / 86_400)
+      const hours = Math.floor((totalSeconds % 86_400) / 3_600)
+      return hours ? `${days} d ${hours} h` : `${days} d`
+    }
+
+    if (totalSeconds >= 3_600) {
+      const hours = Math.floor(totalSeconds / 3_600)
+      const minutes = Math.floor((totalSeconds % 3_600) / 60)
+      return minutes ? `${hours} h ${minutes} min` : `${hours} h`
+    }
 
     const minutes = Math.floor(totalSeconds / 60)
     const remainingSeconds = Math.round(totalSeconds % 60)
