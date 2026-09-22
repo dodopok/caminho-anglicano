@@ -67,7 +67,7 @@ const emit = defineEmits<{
   'search-custom-rosary-explorer': []
   'change-custom-rosary-explorer-sort': [key: CustomRosarySortKey, direction: CustomRosarySortDirection]
   'change-custom-rosary-explorer-page': [direction: number]
-  'open-rosary': [rosary: CustomRosaryPrayer]
+  'open-rosary': [rosary: CustomRosaryPrayer, source: 'queue' | 'explorer']
 }>()
 
 const {
@@ -286,12 +286,14 @@ const openCustomRosaryExplorer = () => {
   emit('open-custom-rosary-explorer')
 }
 
+// The queue modal stays mounted underneath the review. Closing the review used
+// to drop the moderator back on the dashboard, so the fila had to be reopened
+// and re-filtered for every single approval.
 const openCustomRosaryFromExplorer = (row: ExplorerRow) => {
   const rosary = props.customRosaryExplorerRosaries.find(item => String(item.id) === String(row.id))
   if (!rosary) return
 
-  activeExplorer.value = null
-  emit('open-rosary', rosary)
+  emit('open-rosary', rosary, 'explorer')
 }
 
 const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: ExplorerRow) => {
@@ -332,7 +334,7 @@ const formatOperationsExplorerValue = (value: ExplorerValue, _key: string, row: 
 
     <div class="ordo-queue-grid">
       <OrdoLifeRulesQueue :rules="lifeRules" :pagination="lifeRulesPagination" :loading="lifeRulesLoading" :error="lifeRulesError" :status="lifeRuleStatus" :search="lifeRuleSearch" :current-page="lifeRuleCurrentPage" :total-pages="lifeRuleTotalPages" @update:status="emit('update:lifeRuleStatus', $event)" @update:search="emit('update:lifeRuleSearch', $event)" @search="emit('search-life-rules')" @change-page="emit('change-life-rule-page', $event)" @open-all="activeExplorer = 'lifeRules'" />
-      <OrdoCustomRosaryQueue :rosaries="customRosaries" :pagination="customRosaryPagination" :loading="customRosariesLoading" :error="customRosariesError" :status="customRosaryStatus" :current-page="customRosaryCurrentPage" :total-pages="customRosaryTotalPages" :summary="dashboard.custom_rosaries" :status-items="selectedRosaryStatusItems" @update:status="emit('update:customRosaryStatus', $event)" @change="emit('change-custom-rosary-status')" @change-page="emit('change-custom-rosary-page', $event)" @open="emit('open-rosary', $event)" @open-all="openCustomRosaryExplorer" />
+      <OrdoCustomRosaryQueue :rosaries="customRosaries" :pagination="customRosaryPagination" :loading="customRosariesLoading" :error="customRosariesError" :status="customRosaryStatus" :current-page="customRosaryCurrentPage" :total-pages="customRosaryTotalPages" :summary="dashboard.custom_rosaries" :status-items="selectedRosaryStatusItems" @update:status="emit('update:customRosaryStatus', $event)" @change="emit('change-custom-rosary-status')" @change-page="emit('change-custom-rosary-page', $event)" @open="emit('open-rosary', $event, 'queue')" @open-all="openCustomRosaryExplorer" />
     </div>
 
     <div v-if="moderation" class="ordo-table-card"><div class="ordo-table-card__header"><div><p class="ordo-kicker">Decisões no período</p><h2>Qualidade da moderação</h2></div><div class="ordo-table-card__header-actions"><span class="ordo-scope-label">{{ formatPercent(moderation.approval_rate) }} de aprovação</span><button type="button" class="ordo-card-action" @click="activeExplorer = 'moderation'">Abrir métricas ↗</button></div></div><div class="ordo-highlight-grid ordo-highlight-grid--wide ordo-table-card__metrics"><div><span>Aprovadas</span><strong>{{ formatNumber(moderation.approved_in_period) }}</strong></div><div><span>Rejeitadas</span><strong>{{ formatNumber(moderation.rejected_in_period) }}</strong></div><div><span>Reentradas</span><strong>{{ formatNumber(moderation.reentries_in_period) }}</strong></div><div><span>Tempo médio</span><strong>{{ formatDuration(moderation.average_response_time_seconds) }}</strong></div></div></div>

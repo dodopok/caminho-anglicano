@@ -8,6 +8,7 @@ import {
   type CustomRosaryQuery,
   type DashboardFilters,
   type DashboardResponse,
+  type AudioCatalogRequest,
   type AudioCleanupPreview,
   type AudioClip,
   type AudioClipFilters,
@@ -17,6 +18,9 @@ import {
   type AudioOperationResponse,
   type AudioOperationsResponse,
   type AudioPrayerBooksResponse,
+  type AudioWorkerQueue,
+  type AudioWorkerQueuePurge,
+  type AudioWorkerQueuePurgeScope,
   type DashboardAudio,
   type LifeRulesQuery,
   type LifeRulesResponse,
@@ -169,6 +173,21 @@ export const useOrdoApi = () => {
       body: { cleanup: filters }
     })
 
+  const enqueueAudioCatalog = async (catalog: AudioCatalogRequest): Promise<AudioOperationResponse> =>
+    request<AudioOperationResponse>('/api/v1/admin/audio/catalog/generations', {
+      method: 'POST',
+      body: { catalog }
+    })
+
+  const fetchAudioWorkerQueue = async (): Promise<AudioWorkerQueue> =>
+    request<AudioWorkerQueue>('/api/v1/admin/audio/worker_queue')
+
+  const purgeAudioWorkerQueue = async (scope: AudioWorkerQueuePurgeScope = 'dead'): Promise<AudioWorkerQueuePurge> =>
+    request<AudioWorkerQueuePurge>('/api/v1/admin/audio/worker_queue/purge', {
+      method: 'POST',
+      body: { scope }
+    })
+
   const reindexAudioCatalog = async (prayerBookCode?: string): Promise<AudioOperationResponse> =>
     request<AudioOperationResponse>('/api/v1/admin/audio/catalog/reindex', {
       method: 'POST',
@@ -247,6 +266,9 @@ export const useOrdoApi = () => {
     rejectAudioClipCandidate,
     previewAudioCleanup,
     enqueueAudioCleanup,
+    enqueueAudioCatalog,
+    fetchAudioWorkerQueue,
+    purgeAudioWorkerQueue,
     reindexAudioCatalog,
     fetchAudioPrayerBooks,
     fetchLifeRules,

@@ -4,6 +4,8 @@ import OrdoMetricCard from './MetricCard.vue'
 import { useOrdoDashboardPresentation } from '../../composables/useOrdoDashboardPresentation'
 import { useOrdoApi } from '../../composables/useOrdoApi'
 import type {
+  AudioActiveJob,
+  AudioCatalogRequest,
   AudioCleanupPreview,
   AudioClip,
   AudioClipCandidate,
@@ -13,6 +15,7 @@ import type {
   AudioOperation,
   AudioPrayerBook,
   AudioProfileStatus,
+  AudioWorkerQueuePurgeScope,
   DashboardAudio
 } from '../../types/dashboard'
 
@@ -29,6 +32,8 @@ const {
   rejectAudioClipCandidate,
   previewAudioCleanup,
   enqueueAudioCleanup,
+  enqueueAudioCatalog,
+  purgeAudioWorkerQueue,
   reindexAudioCatalog,
   fetchAudioPrayerBooks
 } = useOrdoApi()
@@ -70,6 +75,14 @@ const estimate = ref<AudioEstimate | null>(null)
 const generationLoading = ref(false)
 const generationError = ref<string | null>(null)
 
+const catalog = reactive<AudioCatalogRequest>({ prayer_book_code: 'loc_2015', dry_run: false })
+const catalogLoading = ref(false)
+const catalogError = ref<string | null>(null)
+
+const queueLoading = ref(false)
+const queueError = ref<string | null>(null)
+const queueNotice = ref<string | null>(null)
+
 const clipSearch = ref('')
 const clipBookFilter = ref('')
 const clipProfileFilter = ref<'all' | AudioProfileStatus>('all')
@@ -98,14 +111,27 @@ const officeOptions = computed(() => {
   return available.length ? available : DEFAULT_OFFICES
 })
 const profileOptions = computed(() => summary.value?.profiles || [])
+const workerQueue = computed(() => summary.value?.worker_queue || null)
+const queueJobs = computed<AudioActiveJob[]>(() => workerQueue.value?.jobs || summary.value?.active_jobs || [])
+const runningJobs = computed(() => queueJobs.value.filter(job => job.state === 'running').length)
+const deadJobs = computed(() => workerQueue.value?.purgeable ?? queueJobs.value.filter(job => job.purgeable).length)
+const queueStateItems = computed(() => Object.entries(workerQueue.value?.by_state || {})
+  .filter(([, count]) => count > 0)
+  .map(([state, count]) => ({ state, count })))
+const bookCoverage = computed(() => summary.value?.by_prayer_book || [])
+const recentWindow = computed(() => summary.value?.recent || null)
+const failedOperations = computed(() => summary.value?.operations?.failed_last_24_hours || 0)
 const providerOptions = computed(() => [...new Set(profileOptions.value.map(profile => profile.provider).filter(Boolean))] as string[])
 const voiceOptions = computed(() => [...new Set(profileOptions.value.map(profile => profile.voice).filter(Boolean))] as string[])
 const currentProfiles = computed(() => profileOptions.value.filter(profile => profile.profile_status === 'current'))
 const totalPages = computed(() => Math.max(1, Math.ceil(clipsPagination.value.total / CLIP_PAGE_SIZE)))
 const currentPage = computed(() => Math.floor(clipOffset.value / CLIP_PAGE_SIZE) + 1)
 const hasActiveOperations = computed(() => operations.value.some(operation => ['queued', 'running'].includes(operation.status)))
-const activeWorkerJobs = computed(() => summary.value?.active_jobs || [])
-const hasActiveWork = computed(() => hasActiveOperations.value || activeWorkerJobs.value.length > 0)
+// Only work a worker will still pick up justifies the 4-second poll. A queue
+// full of dead jobs used to keep the panel refreshing forever.
+const LIVE_JOB_STATES = ['running', 'ready', 'scheduled', 'blocked']
+const liveJobs = computed(() => queueJobs.value.filter(job => LIVE_JOB_STATES.includes(job.state || (job.claimed ? 'running' : 'ready'))).length)
+const hasActiveWork = computed(() => hasActiveOperations.value || liveJobs.value > 0)
 
 const statusLabel = (status?: string) => ({
   queued: 'Na fila',
@@ -115,8 +141,18 @@ const statusLabel = (status?: string) => ({
   cancelled: 'Cancelado'
 }[status || ''] || humanizeKey(status || 'desconhecido'))
 
+const jobStateLabel = (state?: string) => ({
+  running: 'em execução',
+  ready: 'na fila',
+  scheduled: 'agendado',
+  blocked: 'bloqueado',
+  failed: 'falhou',
+  orphaned: 'morto'
+}[state || ''] || humanizeKey(state || 'desconhecido'))
+
 const operationLabel = (kind?: string) => ({
   generate_office: 'Geração de ofícios',
+  generate_catalog: 'Catálogo fixo',
   regenerate_clip: 'Regeneração de áudio',
   cleanup_clips: 'Limpeza de clips',
   index_catalog: 'Indexação do catálogo'
@@ -137,7 +173,6 @@ const generationPayload = (): AudioGenerationRequest => ({
   start_date: generation.start_date,
   days: Math.min(Math.max(Number(generation.days) || 1, 1), 31),
   ...(generation.offices?.length ? { offices: [...generation.offices] } : {}),
-  ...(generation.character_budget ? { character_budget: Number(generation.character_budget) } : {}),
   preferences: generation.preferences || {}
 })
 
@@ -163,6 +198,9 @@ const loadPrayerBooks = async () => {
   prayerBooks.value = response.data || []
   if (!prayerBooks.value.some(book => book.code === generation.prayer_book_code)) {
     generation.prayer_book_code = prayerBooks.value.find(book => book.is_recommended)?.code || prayerBooks.value[0]?.code || generation.prayer_book_code
+  }
+  if (!prayerBooks.value.some(book => book.code === catalog.prayer_book_code)) {
+    catalog.prayer_book_code = generation.prayer_book_code
   }
   syncOffices()
 }
@@ -242,12 +280,65 @@ const enqueueGeneration = async () => {
   generationError.value = null
   try {
     const response = await enqueueAudioGeneration(generationPayload())
-    operations.value = [response.operation, ...operations.value.filter(operation => operation.id !== response.operation.id)]
+    trackOperation(response.operation)
     estimate.value = null
   } catch (reason) {
     generationError.value = errorMessage(reason)
   } finally {
     generationLoading.value = false
+  }
+}
+
+const trackOperation = (operation: AudioOperation) => {
+  operations.value = [operation, ...operations.value.filter(item => item.id !== operation.id)]
+}
+
+const enqueueCatalog = async (dryRun: boolean) => {
+  catalogLoading.value = true
+  catalogError.value = null
+  try {
+    const response = await enqueueAudioCatalog({ prayer_book_code: catalog.prayer_book_code, dry_run: dryRun })
+    trackOperation(response.operation)
+  } catch (reason) {
+    catalogError.value = errorMessage(reason)
+  } finally {
+    catalogLoading.value = false
+  }
+}
+
+const purgeQueue = async (scope: AudioWorkerQueuePurgeScope) => {
+  const confirmation = scope === 'all'
+    ? 'Apagar todos os jobs de áudio que ainda não rodaram? Os que já estão executando continuam.'
+    : `Apagar ${formatNumber(deadJobs.value)} jobs mortos da fila? As operações que esperavam por eles serão canceladas.`
+  if (!window.confirm(confirmation)) return
+
+  queueLoading.value = true
+  queueError.value = null
+  queueNotice.value = null
+  try {
+    const result = await purgeAudioWorkerQueue(scope)
+    queueNotice.value = `${formatNumber(result.purged_jobs)} jobs removidos · ${formatNumber(result.cancelled_operations)} operações canceladas.`
+    await Promise.all([loadSummary(), loadOperations(true)])
+  } catch (reason) {
+    queueError.value = errorMessage(reason)
+  } finally {
+    queueLoading.value = false
+  }
+}
+
+// A completed catalogue run — especially a dry run, whose only product is the
+// report — carries its totals in `result`.
+const catalogReport = (operation: AudioOperation) => {
+  const result = operation.result
+  if (!result || operation.kind !== 'generate_catalog') return null
+
+  const asCount = (value: unknown) => typeof value === 'number' ? value : null
+  return {
+    dryRun: result.generate === false,
+    ready: asCount(result.clips),
+    generated: asCount(result.generated),
+    missingCharacters: asCount(result.missing_characters),
+    sources: Array.isArray(result.sources) ? result.sources.length : null
   }
 }
 
@@ -331,7 +422,7 @@ const regenerateClip = async (clip: AudioClip) => {
   clipActionLoading.value = { ...clipActionLoading.value, [id]: true }
   try {
     const response = await regenerateAudioClip(clip.id, instructions || undefined)
-    operations.value = [response.operation, ...operations.value.filter(operation => operation.id !== response.operation.id)]
+    trackOperation(response.operation)
   } catch (reason) {
     clipsError.value = errorMessage(reason)
   } finally {
@@ -403,7 +494,7 @@ const enqueueCleanup = async () => {
   cleanupError.value = null
   try {
     const response = await enqueueAudioCleanup(cleanupFilters())
-    operations.value = [response.operation, ...operations.value.filter(operation => operation.id !== response.operation.id)]
+    trackOperation(response.operation)
     cleanupPreview.value = null
   } catch (reason) {
     cleanupError.value = errorMessage(reason)
@@ -417,7 +508,7 @@ const reindexCatalog = async () => {
   error.value = null
   try {
     const response = await reindexAudioCatalog(generation.prayer_book_code)
-    operations.value = [response.operation, ...operations.value.filter(operation => operation.id !== response.operation.id)]
+    trackOperation(response.operation)
   } catch (reason) {
     error.value = errorMessage(reason)
   } finally {
@@ -447,15 +538,43 @@ onUnmounted(stopPolling)
 
     <div v-if="error" class="audio-ops__alert audio-ops__alert--error">{{ error }}</div>
 
+    <p class="audio-ops__group-label">Catálogo</p>
     <div class="ordo-metrics-grid ordo-metrics-grid--four">
       <OrdoMetricCard title="Clips no catálogo" :value="formatNumber(summary?.total_clips)" :subtitle="`${formatNumber(summary?.total_characters)} caracteres`" color="blue" icon="◷" eyebrow="Áudio" />
+      <OrdoMetricCard title="Duração narrada" :value="formatDuration(summary?.total_duration_seconds)" :subtitle="`${formatNumber(summary?.silence_clips)} silêncios`" color="indigo" icon="≡" eyebrow="Áudio" />
+      <OrdoMetricCard v-if="recentWindow" :title="`Novos em ${recentWindow.window_days} dias`" :value="formatNumber(recentWindow.clips)" :subtitle="`${formatNumber(recentWindow.characters)} caracteres gerados`" color="green" icon="＋" eyebrow="Recente" />
+      <OrdoMetricCard title="Livros cobertos" :value="formatNumber(bookCoverage.length)" subtitle="com clips registrados no ledger de uso" color="blue" icon="◫" eyebrow="Alcance" />
+    </div>
+
+    <p class="audio-ops__group-label">Qualidade</p>
+    <div class="ordo-metrics-grid ordo-metrics-grid--four">
       <OrdoMetricCard title="Perfil atual" :value="formatNumber(summary?.current_clips)" :subtitle="`${formatNumber(summary?.stale_clips)} com prompt antigo`" color="green" icon="✓" eyebrow="Qualidade" />
       <OrdoMetricCard title="Legados" :value="formatNumber(summary?.legacy_clips)" subtitle="sem fingerprint de prompt" color="orange" icon="⌁" eyebrow="Manutenção" />
-      <OrdoMetricCard title="Operações ativas" :value="formatNumber(summary?.active_operations)" subtitle="Solid Queue no worker" color="purple" icon="↻" eyebrow="Fila" />
+      <OrdoMetricCard title="Tentativas a revisar" :value="formatNumber(summary?.pending_candidates)" subtitle="regenerações aguardando aprovação" color="pink" icon="◌" eyebrow="Revisão" />
+      <OrdoMetricCard title="Operações falhas" :value="formatNumber(failedOperations)" subtitle="nas últimas 24 horas" color="orange" icon="!" eyebrow="Saúde" />
+    </div>
+
+    <p class="audio-ops__group-label">Fila</p>
+    <div class="ordo-metrics-grid ordo-metrics-grid--four">
+      <OrdoMetricCard title="Operações ativas" :value="formatNumber(summary?.active_operations)" subtitle="enfileiradas ou executando" color="purple" icon="↻" eyebrow="Fila" />
+      <OrdoMetricCard title="Jobs em execução" :value="formatNumber(runningJobs)" subtitle="reivindicados por um worker vivo" color="blue" icon="▶" eyebrow="Worker" />
+      <OrdoMetricCard title="Jobs mortos" :value="formatNumber(deadJobs)" subtitle="nada os executará; podem ser apagados" color="orange" icon="⌫" eyebrow="Worker" />
+      <OrdoMetricCard title="Jobs na fila" :value="formatNumber(workerQueue?.total)" subtitle="total ainda sem conclusão" color="green" icon="≡" eyebrow="Worker" />
+    </div>
+
+    <div v-if="bookCoverage.length" class="audio-ops__coverage">
+      <div class="audio-ops__coverage-heading"><strong>Clips por livro</strong><span>ledger de uso</span></div>
+      <div class="audio-ops__coverage-list">
+        <div v-for="book in bookCoverage" :key="book.prayer_book_code">
+          <span>{{ book.prayer_book_code }}</span>
+          <strong>{{ formatNumber(book.clips) }}</strong>
+          <small>{{ formatNumber(book.sources) }} fontes</small>
+        </div>
+      </div>
     </div>
 
     <div class="audio-ops__grid">
-      <OrdoChartCard title="Gerar por data e LOC" description="Estime antes de enfileirar. O worker reaproveita clips existentes e só chama o provedor para os faltantes." icon="＋" icon-color="blue" eyebrow="Nova operação">
+      <OrdoChartCard title="Gerar por data e LOC" description="A janela de datas monta os ofícios reais de cada dia. Estime antes de enfileirar: o worker reaproveita os clips existentes e só chama o provedor pelo que falta — não há teto de caracteres, ele gera o que a janela precisa." icon="＋" icon-color="blue" eyebrow="Janela de datas">
         <div class="audio-ops__form">
           <label>Prayer Book
             <select v-model="generation.prayer_book_code" @change="syncOffices">
@@ -467,9 +586,6 @@ onUnmounted(stopPolling)
           </label>
           <label>Dias
             <input v-model.number="generation.days" type="number" min="1" max="31">
-          </label>
-          <label>Limite opcional de caracteres
-            <input v-model.number="generation.character_budget" type="number" min="1" placeholder="automático">
           </label>
         </div>
         <fieldset class="audio-ops__offices">
@@ -492,11 +608,25 @@ onUnmounted(stopPolling)
         </div>
       </OrdoChartCard>
 
-      <OrdoChartCard title="Operações recentes" description="Atualização automática a cada 4 segundos enquanto houver trabalho na fila." icon="↻" icon-color="purple" eyebrow="Acompanhamento">
-        <div v-if="activeWorkerJobs.length" class="audio-ops__worker-jobs">
-          <div class="audio-ops__worker-jobs-headline"><strong>Jobs ativos no worker</strong><span>{{ formatNumber(activeWorkerJobs.length) }}</span></div>
-          <small v-for="workerJob in activeWorkerJobs" :key="workerJob.active_job_id">{{ workerJob.class_name }} · {{ workerJob.active_job_id }} · {{ workerJob.claimed ? 'em execução' : 'na fila' }}</small>
+      <OrdoChartCard title="Catálogo fixo do LOC" description="Todo texto, coleta, saltério e corpus bíblico que o livro pode ler, independente de data. É o que faz o ofício de qualquer preferência já estar narrado." icon="◫" icon-color="green" eyebrow="Nova operação">
+        <div class="audio-ops__form">
+          <label>Prayer Book
+            <select v-model="catalog.prayer_book_code">
+              <option v-for="book in prayerBooks" :key="book.code" :value="book.code">{{ book.code }} · {{ book.name }}</option>
+            </select>
+          </label>
         </div>
+        <p class="audio-ops__note">O catálogo percorre corpora inteiros, então a contagem roda no worker e aparece nas operações abaixo. A simulação não compra nada: ela relata quantos clips faltariam.</p>
+        <div v-if="catalogError" class="audio-ops__alert audio-ops__alert--error">{{ catalogError }}</div>
+        <div class="audio-ops__actions">
+          <button type="button" class="ordo-button ordo-button--quiet" :disabled="catalogLoading || !prayerBooks.length" @click="enqueueCatalog(true)">{{ catalogLoading ? 'Enfileirando…' : 'Simular catálogo' }}</button>
+          <button type="button" class="ordo-button ordo-button--primary" :disabled="catalogLoading || !prayerBooks.length" @click="enqueueCatalog(false)">Gerar catálogo <span>→</span></button>
+        </div>
+      </OrdoChartCard>
+    </div>
+
+    <div class="audio-ops__grid">
+      <OrdoChartCard title="Operações recentes" description="Atualização automática a cada 4 segundos enquanto houver trabalho vivo na fila." icon="↻" icon-color="purple" eyebrow="Acompanhamento">
         <div v-if="!operations.length" class="audio-ops__empty">Nenhuma operação do catálogo novo foi registrada.</div>
         <div v-else class="audio-ops__operations">
           <article v-for="operation in operations.slice(0, 8)" :key="operation.id" class="audio-ops__operation">
@@ -510,11 +640,37 @@ onUnmounted(stopPolling)
               <span>{{ operation.progress_percentage == null ? 'aguardando início' : `${operation.progress_percentage}%` }}</span>
               <span v-if="operation.generated_clips">{{ formatNumber(operation.generated_clips) }} clips novos</span>
               <span v-if="operation.skipped_clips">{{ formatNumber(operation.skipped_clips) }} preservados</span>
-              <span v-if="operation.failed_items">{{ formatNumber(operation.failed_items) }} falhas</span>
+              <span v-if="operation.failed_items">{{ formatNumber(operation.failed_items) }} {{ operation.kind === 'generate_catalog' ? 'faltando' : 'falhas' }}</span>
+            </div>
+            <div v-if="catalogReport(operation)" class="audio-ops__operation-report">
+              <strong>{{ catalogReport(operation)?.dryRun ? 'Simulação do catálogo' : 'Catálogo gerado' }}</strong>
+              <span>{{ formatNumber(catalogReport(operation)?.ready) }} clips resolvidos · {{ formatNumber(catalogReport(operation)?.generated) }} gerados · {{ formatNumber(catalogReport(operation)?.missingCharacters) }} caracteres a gerar em {{ formatNumber(catalogReport(operation)?.sources) }} fontes</span>
             </div>
             <p v-if="operation.error_message" class="audio-ops__operation-error">{{ operation.error_message }}</p>
             <button v-if="['queued', 'running'].includes(operation.status)" type="button" class="audio-ops__link" @click="refreshOperation(operation)">Atualizar agora</button>
           </article>
+        </div>
+      </OrdoChartCard>
+
+      <OrdoChartCard title="Fila do worker" description="Cada job do Solid Queue com o estado que diz se algo ainda vai executá-lo. Um job sem execução registrada está morto: ninguém vai pegá-lo." icon="≡" icon-color="orange" eyebrow="Manutenção">
+        <div v-if="queueStateItems.length" class="audio-ops__queue-states">
+          <span v-for="item in queueStateItems" :key="item.state" class="audio-ops__badge" :class="`audio-ops__badge--job-${item.state}`">{{ jobStateLabel(item.state) }} · {{ formatNumber(item.count) }}</span>
+        </div>
+        <div v-if="queueError" class="audio-ops__alert audio-ops__alert--error">{{ queueError }}</div>
+        <div v-if="queueNotice" class="audio-ops__alert audio-ops__alert--ok">{{ queueNotice }}</div>
+        <div v-if="!queueJobs.length" class="audio-ops__empty">A fila está vazia.</div>
+        <div v-else class="audio-ops__queue-jobs">
+          <article v-for="workerJob in queueJobs" :key="workerJob.active_job_id || workerJob.id" class="audio-ops__queue-job">
+            <div>
+              <strong>{{ workerJob.class_name }}</strong>
+              <small>{{ workerJob.queue_name }} · {{ formatTimestamp(workerJob.created_at) }}</small>
+            </div>
+            <span class="audio-ops__badge" :class="`audio-ops__badge--job-${workerJob.state || 'unknown'}`">{{ jobStateLabel(workerJob.state || (workerJob.claimed ? 'running' : 'ready')) }}</span>
+          </article>
+        </div>
+        <div class="audio-ops__actions">
+          <button type="button" class="ordo-button ordo-button--quiet" :disabled="queueLoading || !deadJobs" @click="purgeQueue('dead')">{{ queueLoading ? 'Limpando…' : `Apagar ${formatNumber(deadJobs)} mortos` }}</button>
+          <button type="button" class="ordo-button ordo-button--danger" :disabled="queueLoading || !queueJobs.length" @click="purgeQueue('all')">Zerar fila</button>
         </div>
       </OrdoChartCard>
     </div>
@@ -670,6 +826,30 @@ onUnmounted(stopPolling)
 .audio-ops__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .audio-ops__alert { padding: 10px 12px; border-radius: 10px; font-size: 11px; line-height: 1.45; }
 .audio-ops__alert--error { border: 1px solid #edcfca; background: #fff4f1; color: #9d5d55; }
+.audio-ops__alert--ok { border: 1px solid #cfe0d0; background: #f2f8f1; color: #4f7157; }
+.audio-ops__group-label { margin: 6px 0 -8px; color: #8b978c; font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.audio-ops__note { margin: 13px 0 0; color: #7d8a7e; font-size: 10px; line-height: 1.5; }
+.audio-ops__coverage { padding: 14px; border: 1px solid #e2e8df; border-radius: 14px; background: #fbfdf9; }
+.audio-ops__coverage-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 11px; }
+.audio-ops__coverage-heading strong { color: #304735; font-size: 12px; }
+.audio-ops__coverage-heading span { color: #97a297; font-size: 9px; text-transform: uppercase; }
+.audio-ops__coverage-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+.audio-ops__coverage-list > div { padding: 9px 10px; border: 1px solid #e5ebe2; border-radius: 10px; background: #fff; }
+.audio-ops__coverage-list span { display: block; color: #8b988c; font-size: 9px; }
+.audio-ops__coverage-list strong { display: block; margin-top: 3px; color: #304735; font-family: 'Fraunces', Georgia, serif; font-size: 17px; }
+.audio-ops__coverage-list small { display: block; color: #9aa59b; font-size: 9px; }
+.audio-ops__operation-report { margin-top: 9px; padding: 9px 10px; border: 1px solid #dfe8dc; border-radius: 10px; background: #f4f9f2; }
+.audio-ops__operation-report strong { display: block; color: #3f6047; font-size: 10px; }
+.audio-ops__operation-report span { display: block; margin-top: 3px; color: #71806f; font-size: 10px; line-height: 1.45; }
+.audio-ops__queue-states { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 11px; }
+.audio-ops__queue-jobs { display: grid; gap: 7px; max-height: 260px; overflow: auto; margin-top: 10px; padding-right: 2px; }
+.audio-ops__queue-job { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 9px 10px; border: 1px solid #e4ebe1; border-radius: 10px; background: #fff; }
+.audio-ops__queue-job strong { display: block; color: #304735; font-size: 11px; }
+.audio-ops__queue-job small { display: block; margin-top: 2px; color: #9aa59b; font-size: 9px; }
+.audio-ops__badge--job-running { background: #e4eff1; color: #457180; }
+.audio-ops__badge--job-ready, .audio-ops__badge--job-scheduled { background: #f6eadc; color: #af7147; }
+.audio-ops__badge--job-blocked { background: #eceee9; color: #78827a; }
+.audio-ops__badge--job-orphaned, .audio-ops__badge--job-failed { background: #f5e5e6; color: #a65c64; }
 .audio-ops__form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
 .audio-ops__form label, .audio-ops__filters label { display: grid; gap: 5px; color: #718073; font-size: 10px; font-weight: 800; }
 .audio-ops__form input, .audio-ops__form select, .audio-ops__filters input, .audio-ops__filters select { width: 100%; box-sizing: border-box; min-width: 0; padding: 9px 10px; border: 1px solid #d8e2d6; border-radius: 9px; outline: 0; background: #fff; color: #2f4032; font: inherit; font-size: 11px; }
@@ -683,9 +863,6 @@ onUnmounted(stopPolling)
 .audio-ops__estimate strong { margin-top: 4px; color: #304735; font-family: 'Fraunces', Georgia, serif; font-size: 18px; }
 .audio-ops__actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 17px; }
 .audio-ops__operations { display: grid; gap: 9px; max-height: 335px; overflow: auto; padding-right: 2px; }
-.audio-ops__worker-jobs { display: grid; gap: 5px; margin-bottom: 10px; padding: 10px; border: 1px solid #dbe6e7; border-radius: 11px; background: #f4f9f9; color: #668085; font-size: 9px; }
-.audio-ops__worker-jobs-headline { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: #416771; font-size: 10px; }
-.audio-ops__worker-jobs small { overflow: hidden; color: #799197; font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
 .audio-ops__operation { padding: 12px; border: 1px solid #e2e8df; border-radius: 12px; background: #fff; }
 .audio-ops__operation-topline, .audio-ops__operation-meta, .audio-ops__clip-headline, .audio-ops__pagination { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .audio-ops__operation-topline strong { color: #304735; font-size: 12px; }

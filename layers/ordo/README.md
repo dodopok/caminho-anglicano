@@ -42,6 +42,24 @@ O painel trata `null` como estado válido, exibe o escopo efetivo de cada seçã
 
 A fila de regras de vida é somente leitura no contrato atual: existe apenas o endpoint `GET /api/v1/admin/life_rules`, sem ação administrativa de aprovação. Rosários compartilhados possuem revisão detalhada e as ações `approve`/`reject` no modal editorial.
 
+## Operação de áudio
+
+O painel de áudio cobre as duas metades do pipeline de narração, que são operações distintas na API:
+
+- **Catálogo fixo** (`POST /api/v1/admin/audio/catalog/generations`): todo texto, coleta, saltério e corpus bíblico que o livro pode ler, sem data. `dry_run` percorre as mesmas fontes e relata o que uma execução real teria que comprar. O catálogo é longo demais para uma requisição, então a simulação também roda no worker e o relatório volta em `operation.result`.
+- **Janela de datas** (`POST /api/v1/admin/audio/generations`): monta os ofícios reais de cada dia. `POST .../generations/estimate` continua síncrono. Nenhuma das duas aceita teto de caracteres: a operação gera o que falta.
+
+`GET /api/v1/admin/audio/worker_queue` classifica cada job do Solid Queue pelo que o sustenta — `running`, `ready`, `scheduled`, `blocked`, `failed` ou `orphaned`. Um job órfão não tem execução registrada e nunca será executado; `POST .../worker_queue/purge` apaga os mortos (`scope=dead`, padrão) ou tudo que ainda não começou (`scope=all`), cancelando as operações que esperavam por eles. O polling de 4 segundos só continua enquanto houver job vivo, e não mais enquanto houver job morto na lista.
+
+## Revisão de rosários
+
+O modal de revisão é o mesmo para a fila resumida e para a fila completa, mas guarda de qual das duas foi aberto:
+
+- a fila completa continua montada atrás do modal, então fechar a revisão devolve o moderador à lista com filtro, ordenação e página intactos;
+- o cabeçalho traz a posição na fila e navegação `←`/`→`, que vira de página sozinha ao chegar no fim da atual;
+- aprovar ou rejeitar abre o próximo item automaticamente. Quando a decisão tira a oração do filtro ativo, a página é recarregada e o item que ocupou o mesmo índice é o próximo;
+- o slug do Strapi é sugerido a partir do título (`utils/slug.ts`) quando a revisão abre sem um, e um slug escrito à mão nunca é sobrescrito.
+
 ## Componentes
 
 ```text
