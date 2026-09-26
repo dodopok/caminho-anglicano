@@ -112,8 +112,10 @@ const queueCaption = computed(() => {
 
 const applySuggestedSlug = () => emit('update:strapiSlug', suggestedSlug.value)
 
-// Every review starts with the title-derived slug. The field remains editable.
-watch(() => [props.rosary.id, props.rosary.title] as const, () => {
+// Every review starts with the title-derived slug after its detail has loaded.
+// The field remains editable once the review is ready.
+watch(() => [props.rosary.id, props.rosary.title, props.loading] as const, () => {
+  if (props.loading) return
   if (suggestedSlug.value) applySuggestedSlug()
 }, { immediate: true })
 const selectedCategory = computed(() => props.categories.find(category => categoryKey(category) === selectedCategoryKey.value))
@@ -123,9 +125,11 @@ const syncCategorySelection = () => {
 }
 
 const suggestPsalmsCategory = () => {
+  if (props.loading) return
+
   const reviewKey = `${props.rosary.id}:${props.rosary.title}`
   if (autoSuggestedReviewKey.value === reviewKey) return
-  if (props.categorySelection || !hasPsalmReference.value || !psalmsCategory.value) return
+  if (!hasPsalmReference.value || !psalmsCategory.value) return
 
   autoSuggestedReviewKey.value = reviewKey
   categoryMode.value = 'existing'
@@ -164,7 +168,7 @@ watch(() => props.categorySelection, (selection) => {
 }, { immediate: true })
 
 watch(
-  () => [props.rosary.id, props.rosary.title, props.categories, props.categorySelection] as const,
+  () => [props.rosary.id, props.rosary.title, props.categories, props.categorySelection, props.loading] as const,
   suggestPsalmsCategory,
   { immediate: true, flush: 'post' }
 )
@@ -219,7 +223,7 @@ watch(
             </div>
             <span class="ordo-modal__required">Obrigatória para aprovar</span>
           </div>
-          <p class="ordo-modal__category-help">A categoria organiza a oração publicada. Títulos com “Salmo X” sugerem automaticamente a categoria Salmos.</p>
+          <p class="ordo-modal__category-help">A categoria organiza a oração publicada. Títulos com “Salmo X” recebem Salmos como sugestão inicial.</p>
 
           <div class="ordo-category-mode" role="radiogroup" aria-label="Modo de categoria">
             <label :class="{ 'is-active': categoryMode === 'existing' }">
