@@ -70,6 +70,16 @@ const newCategory = reactive({
 })
 
 const categoryKey = (category: RosaryCategory) => category.documentId || category.slug
+const sortedCategories = computed(() => [...props.categories].sort((left, right) =>
+  left.name.localeCompare(right.name, 'pt-BR', { sensitivity: 'base', numeric: true })
+))
+const hasPsalmReference = computed(() => /\bsalmo\s+\d+\b/i.test(props.rosary.title))
+const psalmsCategory = computed(() => props.categories.find((category) => {
+  const name = category.name.trim().toLocaleLowerCase('pt-BR')
+  const slug = category.slug.trim().toLocaleLowerCase('pt-BR')
+  return name === 'salmos' || slug === 'salmos' || slug === 'psalms'
+}))
+const autoSuggestedRosaryId = ref<CustomRosaryPrayer['id'] | null>(null)
 
 const categorySelection = computed<RosaryCategorySelection | null>(() => {
   if (categoryMode.value === 'existing') {
@@ -105,12 +115,27 @@ const applySuggestedSlug = () => emit('update:strapiSlug', suggestedSlug.value)
 // A fresh review arrives with no slug: the suggestion fills it so approving is
 // one click, and a slug the editor already wrote is never overwritten.
 watch(() => props.rosary.id, () => {
+  autoSuggestedRosaryId.value = null
   if (!props.strapiSlug.trim() && suggestedSlug.value) applySuggestedSlug()
 }, { immediate: true })
 const selectedCategory = computed(() => props.categories.find(category => categoryKey(category) === selectedCategoryKey.value))
 
 const syncCategorySelection = () => {
   emit('update:categorySelection', categorySelection.value)
+}
+
+const suggestPsalmsCategory = () => {
+  if (autoSuggestedRosaryId.value === props.rosary.id) return
+  if (props.categorySelection) {
+    autoSuggestedRosaryId.value = props.rosary.id
+    return
+  }
+  if (!hasPsalmReference.value || !psalmsCategory.value) return
+
+  autoSuggestedRosaryId.value = props.rosary.id
+  categoryMode.value = 'existing'
+  selectedCategoryKey.value = categoryKey(psalmsCategory.value)
+  syncCategorySelection()
 }
 
 const onExistingCategoryChange = (event: Event) => {
@@ -142,6 +167,12 @@ watch(() => props.categorySelection, (selection) => {
 
   Object.assign(newCategory, selection)
 }, { immediate: true })
+
+watch(
+  () => [props.rosary.id, props.rosary.title, props.categories, props.categorySelection] as const,
+  suggestPsalmsCategory,
+  { immediate: true }
+)
 </script>
 
 <template>
@@ -193,7 +224,7 @@ watch(() => props.categorySelection, (selection) => {
             </div>
             <span class="ordo-modal__required">Obrigatória para aprovar</span>
           </div>
-          <p class="ordo-modal__category-help">A categoria organiza a oração publicada. Nenhuma categoria é escolhida automaticamente.</p>
+          <p class="ordo-modal__category-help">A categoria organiza a oração publicada. Títulos com “Salmo X” sugerem automaticamente a categoria Salmos.</p>
 
           <div class="ordo-category-mode" role="radiogroup" aria-label="Modo de categoria">
             <label :class="{ 'is-active': categoryMode === 'existing' }">
@@ -211,13 +242,12 @@ watch(() => props.categorySelection, (selection) => {
               Categoria existente
               <select :value="selectedCategoryKey" :disabled="categoriesLoading" required aria-required="true" @change="onExistingCategoryChange">
                 <option value="">{{ categoriesLoading ? 'Carregando categorias…' : 'Selecione uma categoria' }}</option>
-                <option v-for="category in categories" :key="categoryKey(category)" :value="categoryKey(category)">
-                  {{ category.icon ? `${category.icon} ` : '' }}{{ category.name }} · {{ category.slug }}
+                <option v-for="category in sortedCategories" :key="categoryKey(category)" :value="categoryKey(category)">
+                  {{ category.name }}
                 </option>
               </select>
             </label>
             <div v-if="selectedCategory" class="ordo-category-preview">
-              <span class="ordo-category-preview__icon">{{ selectedCategory.icon || '✦' }}</span>
               <div><strong>{{ selectedCategory.name }}</strong><small>{{ selectedCategory.description || selectedCategory.slug }}</small></div>
             </div>
             <p v-if="categoriesError" class="ordo-modal__category-error">Não foi possível carregar as categorias existentes. Rota esperada: <code>GET /api/v1/admin/rosary_categories</code>. Você ainda pode criar uma nova categoria.</p>
@@ -467,22 +497,10 @@ watch(() => props.categorySelection, (selection) => {
 .ordo-category-preview {
   display: flex;
   align-items: center;
-  gap: 9px;
   padding: 9px 10px;
   border: 1px dashed #c7d7c4;
   border-radius: 10px;
   background: rgba(255, 255, 255, .55);
-}
-
-.ordo-category-preview__icon {
-  display: grid;
-  width: 28px;
-  height: 28px;
-  place-items: center;
-  border-radius: 8px;
-  background: #e2ecdf;
-  color: var(--moss-deep);
-  font-size: 14px;
 }
 
 .ordo-category-preview strong {
