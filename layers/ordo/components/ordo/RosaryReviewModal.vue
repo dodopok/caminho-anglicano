@@ -79,7 +79,7 @@ const psalmsCategory = computed(() => props.categories.find((category) => {
   const slug = category.slug.trim().toLocaleLowerCase('pt-BR')
   return name === 'salmos' || slug === 'salmos' || slug === 'psalms'
 }))
-const autoSuggestedRosaryId = ref<CustomRosaryPrayer['id'] | null>(null)
+const autoSuggestedReviewKey = ref('')
 
 const categorySelection = computed<RosaryCategorySelection | null>(() => {
   if (categoryMode.value === 'existing') {
@@ -112,11 +112,9 @@ const queueCaption = computed(() => {
 
 const applySuggestedSlug = () => emit('update:strapiSlug', suggestedSlug.value)
 
-// A fresh review arrives with no slug: the suggestion fills it so approving is
-// one click, and a slug the editor already wrote is never overwritten.
-watch(() => props.rosary.id, () => {
-  autoSuggestedRosaryId.value = null
-  if (!props.strapiSlug.trim() && suggestedSlug.value) applySuggestedSlug()
+// Every review starts with the title-derived slug. The field remains editable.
+watch(() => [props.rosary.id, props.rosary.title] as const, () => {
+  if (suggestedSlug.value) applySuggestedSlug()
 }, { immediate: true })
 const selectedCategory = computed(() => props.categories.find(category => categoryKey(category) === selectedCategoryKey.value))
 
@@ -125,14 +123,11 @@ const syncCategorySelection = () => {
 }
 
 const suggestPsalmsCategory = () => {
-  if (autoSuggestedRosaryId.value === props.rosary.id) return
-  if (props.categorySelection) {
-    autoSuggestedRosaryId.value = props.rosary.id
-    return
-  }
-  if (!hasPsalmReference.value || !psalmsCategory.value) return
+  const reviewKey = `${props.rosary.id}:${props.rosary.title}`
+  if (autoSuggestedReviewKey.value === reviewKey) return
+  if (props.categorySelection || !hasPsalmReference.value || !psalmsCategory.value) return
 
-  autoSuggestedRosaryId.value = props.rosary.id
+  autoSuggestedReviewKey.value = reviewKey
   categoryMode.value = 'existing'
   selectedCategoryKey.value = categoryKey(psalmsCategory.value)
   syncCategorySelection()
@@ -171,7 +166,7 @@ watch(() => props.categorySelection, (selection) => {
 watch(
   () => [props.rosary.id, props.rosary.title, props.categories, props.categorySelection] as const,
   suggestPsalmsCategory,
-  { immediate: true }
+  { immediate: true, flush: 'post' }
 )
 </script>
 
