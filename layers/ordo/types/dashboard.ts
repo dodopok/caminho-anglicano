@@ -287,6 +287,19 @@ export interface AudioOperationTotals {
   last_completed_at?: string | null
 }
 
+export interface AudioUserUsageSummary {
+  unique_users?: number
+  used_assets?: number
+  total_accesses?: number
+  by_type?: CountMap
+  top_background_tracks?: Array<{
+    id: number
+    slug?: string | null
+    title?: string | null
+    accesses?: number
+  }>
+}
+
 export interface DashboardAudio extends DashboardSectionMeta {
   scope?: DashboardScope
   total_clips?: number
@@ -300,6 +313,7 @@ export interface DashboardAudio extends DashboardSectionMeta {
   recent?: AudioRecentWindow
   by_prayer_book?: AudioPrayerBookCoverage[]
   operations?: AudioOperationTotals
+  user_usage?: AudioUserUsageSummary
   active_operations?: number
   profiles?: AudioProfile[]
   recent_operations?: AudioOperation[]

@@ -131,6 +131,8 @@ const queueStateItems = computed(() => Object.entries(workerQueue.value?.by_stat
   .map(([state, count]) => ({ state, count })))
 const bookCoverage = computed(() => summary.value?.by_prayer_book || [])
 const recentWindow = computed(() => summary.value?.recent || null)
+const userUsage = computed(() => summary.value?.user_usage || null)
+const topBackgroundTracks = computed(() => userUsage.value?.top_background_tracks?.slice(0, 10) || [])
 const failedOperations = computed(() => summary.value?.operations?.failed_last_24_hours || 0)
 const providerOptions = computed(() => [...new Set(profileOptions.value.map(profile => profile.provider).filter(Boolean))] as string[])
 const voiceOptions = computed(() => [...new Set(profileOptions.value.map(profile => profile.voice).filter(Boolean))] as string[])
@@ -191,6 +193,27 @@ const queueStats = computed<DashboardStatItem[]>(() => [
   { key: 'dead', label: 'Jobs mortos', value: formatNumber(deadJobs.value), ...(deadJobs.value ? { tone: 'attention' as const, hint: 'nada os executará' } : {}) },
   { key: 'failed', label: 'Operações falhas', value: formatNumber(failedOperations.value), hint: 'nas últimas 24 horas', ...(failedOperations.value ? { tone: 'attention' as const } : {}) }
 ])
+
+const userUsageStats = computed<DashboardStatItem[]>(() => {
+  const usage = userUsage.value
+  if (!usage) return []
+
+  const uniqueUsers = usage.unique_users || 0
+  const totalAccesses = usage.total_accesses || 0
+  const byType = usage.by_type || {}
+
+  return [
+    { key: 'users', label: 'Pessoas que usaram áudio', value: formatNumber(uniqueUsers) },
+    { key: 'accesses', label: 'Acessos registrados', value: formatNumber(totalAccesses) },
+    { key: 'average', label: 'Acessos por pessoa', value: uniqueUsers ? formatDecimal(totalAccesses / uniqueUsers) : '—' },
+    { key: 'assets', label: 'Conteúdos distintos usados', value: formatNumber(usage.used_assets) },
+    { key: 'background', label: 'Música de fundo', value: formatNumber(byType.background_track) },
+    { key: 'office_narration', label: 'Narração nos ofícios', value: formatNumber(byType.audio_clip) },
+    { key: 'text_narration', label: 'Narração de textos', value: formatNumber(byType.liturgical_text) }
+  ]
+})
+
+const maxBackgroundTrackAccesses = computed(() => Math.max(...topBackgroundTracks.value.map(track => track.accesses || 0), 1))
 
 const statusLabel = (status?: string) => ({
   queued: 'Na fila',
@@ -658,6 +681,24 @@ onUnmounted(stopPolling)
         </div>
       </div>
 
+      <div v-if="userUsage" class="audio-ops__grid">
+        <OrdoChartCard title="Uso de áudio" description="Contagem agregada desde o início do registro de uso." icon="◖" icon-color="blue" eyebrow="Pessoas & consumo">
+          <OrdoStatList :items="userUsageStats" />
+          <p class="audio-ops__usage-note">A API registra a entrega dos clips nos ofícios e a solicitação de URLs de áudio. Isso não confirma que a reprodução foi concluída; estes números também não seguem o filtro de período do dashboard.</p>
+        </OrdoChartCard>
+
+        <OrdoChartCard title="Músicas de fundo mais acessadas" description="Faixas com mais solicitações registradas." icon="♫" icon-color="green" eyebrow="Preferências">
+          <div v-if="topBackgroundTracks.length" class="audio-ops__usage-list">
+            <div v-for="track in topBackgroundTracks" :key="track.id" class="audio-ops__usage-row">
+              <span>{{ track.title || track.slug || `Faixa ${track.id}` }}</span>
+              <strong>{{ formatNumber(track.accesses) }}</strong>
+              <i><b :style="{ width: `${((track.accesses || 0) / maxBackgroundTrackAccesses) * 100}%` }" /></i>
+            </div>
+          </div>
+          <div v-else class="audio-ops__empty">Ainda não há solicitações de músicas de fundo registradas.</div>
+        </OrdoChartCard>
+      </div>
+
       <div class="audio-ops__grid">
         <OrdoChartCard title="Operações recentes" description="Atualiza sozinha enquanto houver trabalho vivo na fila." icon="↻" icon-color="purple" eyebrow="Acompanhamento">
           <div v-if="!operations.length" class="audio-ops__empty">Nenhuma operação do catálogo novo foi registrada.</div>
@@ -978,6 +1019,13 @@ onUnmounted(stopPolling)
 .audio-ops__coverage-label { margin-right: 4px; color: #8b978b; font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .audio-ops__coverage-chip { padding: 4px 8px; border: 1px solid #e3eae0; border-radius: 99px; background: #fff; color: #7b887c; font-size: 10px; }
 .audio-ops__coverage-chip strong { color: #304735; }
+.audio-ops__usage-note { margin: 12px 0 0; color: #879387; font-size: 10px; line-height: 1.5; }
+.audio-ops__usage-list { display: grid; gap: 12px; }
+.audio-ops__usage-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 4px 12px; color: #566858; font-size: 11px; }
+.audio-ops__usage-row span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.audio-ops__usage-row strong { color: #304735; font-size: 11px; font-variant-numeric: tabular-nums; }
+.audio-ops__usage-row i { grid-column: 1 / -1; height: 5px; overflow: hidden; border-radius: 99px; background: #eaf0e8; }
+.audio-ops__usage-row i b { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #58775e, #adc39b); }
 
 .audio-ops__operation-report { margin-top: 9px; padding: 9px 10px; border: 1px solid #dfe8dc; border-radius: 10px; background: #f4f9f2; }
 .audio-ops__operation-report strong { display: block; color: #3f6047; font-size: 10px; }
