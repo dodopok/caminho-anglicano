@@ -1,7 +1,9 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: waite-hockin-stirling
 name: Waite Hockin Stirling
+full_name: Waite Hockin Stirling
 aliases:
+- Bp. Stirling (Falklands)
 - Waite Stirling
 wikidata: Q7960486
 biography: >-
@@ -13,6 +15,40 @@ sources:
     confirmed 159 members.
 - source: wd-q7960486
   quote: Waite Stirling | British Anglican bishop (1829–1923)
+ordinations:
+- order: episcopate
+  date: '1869-12-21'
+  place: Westminster
+  jurisdiction: church-of-england
+  office: missionary
+  principal_consecrator: john-jackson
+  co_consecrators:
+  - connop-thirlwall
+  - edward-harold-browne
+  - henry-philpott
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      The Falkland Islands. A.D. 1869, Dec. 21. Waite Hockin Stirling. Consecrated at Westminster by J. London,
+      C. S. David's, H. Worcester, E. H. Ely ; Reg. Tait.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Bispo
+    colonial das Ilhas Falkland. Mesma data e mesmos sagrantes de Frederick Temple: J. London = John Jackson; C.
+    S. David's = Connop Thirlwall; H. Worcester = Henry Philpott; E. H. Ely = Edward Harold Browne.
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-falkland-islands
+  start: '1869-12-21'
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: The Falkland Islands. A.D. 1869, Dec. 21. Waite Hockin Stirling.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
 events:
 - type: deposition
   date: '1897'

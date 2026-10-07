@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-north-carolina
+name: Diocese of North Carolina
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: On the death of Bishop Atkinson, his coadjutor became the bishop of the see.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Joseph Blount Cheshire]] | [[Theodore B. Lyman|103]] [[Alfred A. Watson|134]] [[Ellison Capres|169]] |
+      1893

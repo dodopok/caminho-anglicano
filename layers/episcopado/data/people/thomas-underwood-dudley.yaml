@@ -4,6 +4,7 @@ name: Thomas Underwood Dudley
 full_name: Thomas Underwood Dudley
 aliases:
 - Bishop Dudley
+- Bp. Dudley
 birth:
   date: '1837-09-26'
   sources:
@@ -21,3 +22,42 @@ sources:
   quote: Bishop Dudley, of Kentucky, presided
 - source: wd-q16931112
   quote: Thomas Underwood Dudley | second Bishop of Kentucky in The Episcopal Church (United States)
+ordinations:
+- order: episcopate
+  date: '1875-01-27'
+  place: Christ Church, Baltimore (igreja paroquial do eleito)
+  jurisdiction: tec
+  office: coadjutor
+  principal_consecrator: benjamin-bosworth-smith
+  co_consecrators:
+  - helmuth
+  - john-johns
+  - pinkney
+  - william-bacon-stevens
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      He was consecrated bishop coadjutor of Kentucky in his parish church in Baltimore, Jan. 27, 1875, by Bishops
+      Bosworth Smith, Johns, Stevens, and Pinkney, together with the bishop of Huron, Dr. Helmuth.
+  - source: perry-1895
+    quote: from 1869 to 1875 he was assistant minister and then rector of Christ Church, Baltimore.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Thomas Underwood Dudley]] | [[Benjamin B. Smith|27]] [[John Johns|39]] [[William Bacon Stevens|71]] |
+      1875
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte. Helmuth era bispo
+    de Huron (Canadá).
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-kentucky
+  start: '1875-01-27'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: In 1884, on the death of Bishop B. B. Smith, he became the diocesan of Kentucky.
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

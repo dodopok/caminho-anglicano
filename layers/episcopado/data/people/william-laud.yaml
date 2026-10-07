@@ -1,0 +1,98 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: william-laud
+name: William Laud
+full_name: William Laud
+aliases:
+- Archbishop Laud
+death:
+  date: '1645-01-10'
+  sources:
+  - source: stubbs-1897
+    quote: William Laud. S. David's ; Bath, 1626 ; London, 1628; Canterbury, 1633; d. 1645, Jan. 10.
+  - source: wikidata-api-2
+    quote: '"Q325408": enwiki "William Laud"'
+wikidata: Q325408
+biography: >-
+  Bispo de St David's (1621), Bath (1626), Londres (1628) e arcebispo de Cantuária (1633-1645); sagrante principal
+  de Duppa.
+sources:
+- source: stubbs-1897
+  quote: William Laud. S. David's ; Bath, 1626 ; London, 1628; Canterbury, 1633; d. 1645, Jan. 10.
+- source: wikidata-api-2
+  quote: '"Q325408": enwiki "William Laud"'
+ordinations:
+- order: episcopate
+  date: '1621-11-18'
+  place: London House
+  jurisdiction: church-of-england
+  principal_consecrator: george-montaigne
+  co_consecrators:
+  - george-carleton
+  - john-howson
+  - john-thornborough
+  - nicholas-felton
+  - theophilus-field
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1621, Nov. 18. John Davenant. Sarum ; d. 1641, Apr. 20. Valentine Carey. Exeter ; d. 1626, June 10 ;
+      and William Laud. S. David's ; Bath, 1626 ; London, 1628; Canterbury, 1633; d. 1645, Jan. 10. Consecrated
+      at London House by George of London, John of Worcester, Nicolas of Ely, George of Chichester, John of Oxford,
+      and Theophilus of Llandaff;
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Sagrado
+    bispo de St David's, junto com Davenant e Carey. Quem presidiu foi George (Montaigne), bispo de Londres, e não
+    o arcebispo Abbot. John of Worcester = John Thornborough; Nicolas of Ely = Nicholas Felton; George of Chichester
+    = George Carleton; John of Oxford = John Howson; Theophilus of Llandaff = Theophilus Field.
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-st-david-s
+  start: '1621-11-18'
+  end: '1626'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: William Laud. S. David's ; Bath, 1626 ; London, 1628; Canterbury, 1633; d. 1645, Jan. 10.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-bath-and-wells
+  start: '1626'
+  end: '1628'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: William Laud. S. David's ; Bath, 1626 ; London, 1628; Canterbury, 1633; d. 1645, Jan. 10.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-london
+  start: '1628'
+  end: '1633'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: William Laud. S. David's ; Bath, 1626 ; London, 1628; Canterbury, 1633; d. 1645, Jan. 10.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: archbishop
+  diocese: diocese-of-canterbury
+  start: '1633'
+  end: '1645-01-10'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: William Laud. S. David's ; Bath, 1626 ; London, 1628; Canterbury, 1633; d. 1645, Jan. 10.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.

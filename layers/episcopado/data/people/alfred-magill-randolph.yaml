@@ -1,6 +1,9 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: alfred-magill-randolph
 name: Alfred Magill Randolph
+full_name: Alfred Magill Randolph
+aliases:
+- Bp. Randolph
 wikidata: Q20735338
 biography: Bispo de Southern Virginia; participou da sagração de W. C. Brown (1914).
 sources:
@@ -10,3 +13,42 @@ sources:
     bishop Daniel S. Tuttle of Montana participated in the consecration.
 - source: wd-q20735338
   quote: Alfred Magill Randolph | (1836-1918)
+ordinations:
+- order: episcopate
+  date: '1883-10-21'
+  place: igreja paroquial do eleito, Baltimore
+  jurisdiction: tec
+  office: coadjutor
+  principal_consecrator: alfred-lee
+  co_consecrators:
+  - burgess
+  - george-william-peterkin
+  - perry
+  - thomas-underwood-dudley
+  - w-b-w-howe
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      He was consecrated in his parish church in Baltimore, Oct. 21, 1883, by Bishops Alfred Lee, W. B. W. Howe,
+      Dudley, Perry, Burgess, and Peterkin.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Alfred Magill Randolph]] | [[Alfred Lee (bishop)|38]] [[William Bell White Howe|98]] [[Thomas Underwood
+      Dudley|110]] | 1883
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-southern-virginia
+  start: '1894'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      In 1894 the diocese of Virginia was divided, and Bishop Randolph chose the new see of Southern Virginia as
+      his charge.
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

@@ -1,6 +1,9 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ethelbert-talbot
 name: Ethelbert Talbot
+full_name: Ethelbert Talbot
+aliases:
+- Bp. Talbot
 wikidata: Q5403253
 biography: >-
   Bispo de Central Pennsylvania (depois Bispo Presidente); impôs as mãos em Kinsolving (1899) e foi sagrante principal
@@ -14,3 +17,42 @@ sources:
     shire.
 - source: wd-q5403253
   quote: Ethelbert Talbot | Presiding Bishop of the Episcopal Church in the United States
+ordinations:
+- order: episcopate
+  date: '1887-05-27'
+  place: Christ Church, St. Louis
+  jurisdiction: tec
+  office: missionary
+  principal_consecrator: henry-benjamin-whipple
+  co_consecrators:
+  - burgess
+  - charles-todd-quintard
+  - daniel-tuttle
+  - perry
+  - seymour
+  - spalding
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      He was consecrated to the missionary episcopate of Wyoming and Idaho in Christ Church, St. Louis, May 27,
+      1887, by Bishops Whipple, Quintard, Tuttle, Spalding, Perry, Burgess, and Seymour.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Ethelbert Talbot]] | [[Henry Benjamin Whipple|68]] [[Thomas Hubbard Vail|73]] [[Daniel S. Tuttle|84]]
+      | 1887
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte. A lista da Wikipédia
+    dá como 2o e 3o Thomas Hubbard Vail e Tuttle; Perry dá Quintard e Tuttle. O principal (Whipple) coincide.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: missionary-district-of-wyoming-and-idaho
+  start: '1887-05-27'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: missionary episcopate of Wyoming and Idaho
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

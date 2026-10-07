@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jonathan-trelawny
+name: Jonathan Trelawny
+full_name: Jonathan Trelawny
+aliases:
+- Jonathan Trelawney
+- Sir Jonathan Trelawny, 3º baronete
+death:
+  date: '1721-07-19'
+  sources:
+  - source: stubbs-1897
+    quote: Jonathan Trelawney. Bristol ; Exeter, 1689 ; Winchester, 1707; d. 1721, July 19.
+  - source: wikidata-api-2
+    quote: '"Q1241459": enwiki "Sir Jonathan Trelawny, 3rd Baronet"'
+wikidata: Q1241459
+biography: >-
+  Bispo de Bristol (1685), Exeter (1689) e Winchester (1707-1721); como bispo de Winchester presidiu a sagração
+  de John Potter (1715).
+sources:
+- source: stubbs-1897
+  quote: Jonathan Trelawney. Bristol ; Exeter, 1689 ; Winchester, 1707; d. 1721, July 19.
+- source: wikidata-api-2
+  quote: '"Q1241459": enwiki "Sir Jonathan Trelawny, 3rd Baronet"'
+ordinations:
+- order: episcopate
+  date: '1685-11-08'
+  place: Lambeth
+  jurisdiction: church-of-england
+  principal_consecrator: william-sancroft
+  co_consecrators:
+  - francis-turner
+  - henry-compton
+  - john-dolben
+  - nathaniel-crew
+  - peter-mews
+  - thomas-lamplugh
+  - thomas-sprat
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1685, Nov. 8. Jonathan Trelawney. Bristol ; Exeter, 1689 ; Winchester, 1707; d. 1721, July 19. Consecrated
+      at Lambeth by Archbishop Sancroft, John of York, Henry of London, Nathaniel of Durham, Peter of Winchester,
+      Thomas of Exeter, Francis of Ely, and Thomas of Rochester; Reg. Sancroft, 142.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Sagrado
+    bispo de Bristol. John of York = John Dolben; Henry of London = Henry Compton; Nathaniel of Durham = Nathaniel
+    Crew(e); Peter of Winchester = Peter Mews; Thomas of Exeter = Thomas Lamplugh; Francis of Ely = Francis Turner;
+    Thomas of Rochester = Thomas Sprat(t).
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-bristol
+  start: '1685-11-08'
+  end: '1689'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Jonathan Trelawney. Bristol ; Exeter, 1689 ; Winchester, 1707; d. 1721, July 19.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-exeter
+  start: '1689'
+  end: '1707'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Jonathan Trelawney. Bristol ; Exeter, 1689 ; Winchester, 1707; d. 1721, July 19.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-winchester
+  start: '1707'
+  end: '1721-07-19'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Jonathan Trelawney. Bristol ; Exeter, 1689 ; Winchester, 1707; d. 1721, July 19.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.

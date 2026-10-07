@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-bristol
+name: Diocese of Bristol
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Jonathan Trelawney. Bristol ; Exeter, 1689 ; Winchester, 1707; d. 1721, July 19.

@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-worcester
+name: Diocese of Worcester
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: John Whitgift. Worcester; Canterbury, 1583; d. 1604, Feb. 29.

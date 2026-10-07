@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-falkland-islands
+name: Diocese of the Falkland Islands
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: The Falkland Islands. A.D. 1869, Dec. 21. Waite Hockin Stirling.

@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-moore
+name: John Moore
+full_name: John Moore
+aliases:
+- Archbishop Moore
+- Dr. John Moore
+death:
+  date: '1805-01-18'
+  sources:
+  - source: stubbs-1897
+    quote: John Moore. Bangor; Canterbury, 1783; d. 1805, Jan. 18.
+  - source: wikidata-api-2
+    quote: '"Q744064": enwiki "John Moore (archbishop of Canterbury)"'
+wikidata: Q744064
+biography: >-
+  Bispo de Bangor (1775) e arcebispo de Cantuária (1783-1805); sagrante principal de William White, Samuel Provoost
+  e James Madison.
+sources:
+- source: stubbs-1897
+  quote: John Moore. Bangor; Canterbury, 1783; d. 1805, Jan. 18.
+- source: wikidata-api-2
+  quote: '"Q744064": enwiki "John Moore (archbishop of Canterbury)"'
+ordinations:
+- order: episcopate
+  date: '1775-02-12'
+  place: Lambeth
+  jurisdiction: church-of-england
+  principal_consecrator: frederick-cornwallis
+  co_consecrators:
+  - edmund-keene
+  - john-thomas
+  - robert-lowth
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1775, Feb. 12. Richard Hurd. Lichfield; Worcester, 1781 ; d. 1808, May 28 ; and John Moore. Bangor;
+      Canterbury, 1783; d. 1805, Jan. 18. Consecrated at Lambeth by Archbishop Cornwallis, Edmund of Ely, Robert
+      of Oxford, and John of Rochester ; Reg. Cornwallis, 193, 204.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Sagrado
+    bispo de Bangor junto com Richard Hurd. Edmund of Ely = Edmund Keene; Robert of Oxford = Robert Lowth; John
+    of Rochester = John Thomas (Rochester).
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-bangor
+  start: '1775-02-12'
+  end: '1783'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: John Moore. Bangor; Canterbury, 1783; d. 1805, Jan. 18.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: archbishop
+  diocese: diocese-of-canterbury
+  start: '1783'
+  end: '1805-01-18'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: John Moore. Bangor; Canterbury, 1783; d. 1805, Jan. 18.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.

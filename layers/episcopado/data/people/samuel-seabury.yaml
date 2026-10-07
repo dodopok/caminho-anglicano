@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: samuel-seabury
+name: Samuel Seabury
+full_name: Samuel Seabury
+aliases:
+- Bp. Seabury
+death:
+  date: '1796-02-25'
+  sources:
+  - source: perry-1895
+    quote: Bishop Seabury died, suddenly on Feb. 25, 1796.
+  - source: wikidata-api-2
+    quote: '"Q327006": enwiki "Samuel Seabury"'
+wikidata: Q327006
+biography: >-
+  Primeiro bispo da TEC (Connecticut), sagrado em Aberdeen em 1784 por bispos da Igreja Episcopal Escocesa; depois
+  também bispo de Rhode Island e primeiro Presiding Bishop.
+sources:
+- source: perry-1895
+  quote: Bishop Seabury died, suddenly on Feb. 25, 1796.
+- source: wikidata-api-2
+  quote: '"Q327006": enwiki "Samuel Seabury"'
+ordinations:
+- order: episcopate
+  date: '1784-11-14'
+  place: Aberdeen ("upper room")
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: robert-kilgour
+  co_consecrators:
+  - arthur-petrie
+  - john-skinner
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      he was finally consecrated bishop of Connecticut, Nov. 14, 1784, in an " upper room " at Aberdeen. His consecrators
+      were Dr. Robert Kilgour, the primus, bishop of Aberdeen; Dr. Arthur Petrie, bishop of Ross and Moray; and
+      Dr. John Skinner, bishop coadjutor of Aberdeen.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Samuel Seabury (bishop)|Samuel Seabury]] | [[Robert Kilgour|KIL]] [[Arthur Petrie|PET]] [[John Skinner
+      (bishop)|SKI]]{{sfn|Perry|1895|page=[https://archive.org/stream/cu31924050995525#page/n103/mode/1up 2]}} |
+      1784
+  notes: >-
+    Sagrantes da Scottish Episcopal Church (Kilgour era o primus e bispo de Aberdeen). A Wikidata (Q327006) também
+    lista os três, sem papel. Data e sagrantes também no relatório Wikidata do projeto.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-connecticut
+  start: '1784-11-14'
+  end: '1796-02-25'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      Bishop Seabury died, suddenly on Feb. 25, 1796. For some years before his decease he had been bishop of Rhode
+      Island as well as Connecticut.
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

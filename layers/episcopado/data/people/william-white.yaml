@@ -4,6 +4,7 @@ name: William White
 full_name: William White
 aliases:
 - Bishop White
+- Bp. White
 birth:
   date: '1748-04-04'
   sources:
@@ -23,3 +24,48 @@ sources:
 - source: wp-white
   quote: >-
     | consecrated by = [[John Moore (archbishop of Canterbury)|John Moore]], ([[Archbishop of Canterbury|Canterbury]])
+ordinations:
+- order: episcopate
+  date: '1787-02-04'
+  place: Capela do Palácio de Lambeth, Londres
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: john-moore
+  co_consecrators:
+  - charles-moss
+  - john-hinchliffe
+  - william-markham
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      on the fourth day of February, 1787, at Lambeth Chapel, at the hands of the archbishop of Canterbury, Dr.
+      Moore, the archbishop of York, Dr. Markham, the bishop of Bath and Wells, Dr. Moss, and the bishop of Peterborough,
+      Dr. Hinchcliffe, William White and Samuel Provoost were duly and canonically, by the laying on of hands, made
+      bishops of the Church of God.
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1787, Feb. 4. William White. Pennsylvania ; d. 1836 ; and Samuel Provoost. New York ; d. 1815. Consecrated
+      at Lambeth by Archbishop Moore, William of York, Charles of Bath, and John of Peterborough ; Reg. Moore, 64.
+  - source: wp-en-histlist
+    quote: >-
+      | [[William White (Bishop of Pennsylvania)|William White]] | [[John Moore (archbishop of Canterbury)|MOO]]
+      [[William Markham (bishop)|MAR]] [[Charles Moss (bishop of Bath and Wells)|MOS]] [[John Hinchliffe|HIN]]{{sfn|Perry|1895|pages=[https://archive.org/stream/cu31924050995525#page/n113/mode/1up
+      6]–[https://archive.org/stream/cu31924050995525#page/n118/mode/1up 7]}} | 1787
+  notes: >-
+    Sagrado junto com Samuel Provoost. Sagrantes da Igreja da Inglaterra: o arcebispo de Cantuária (Moore), o de
+    York (Markham) e os bispos de Bath and Wells (Moss) e Peterborough (Hinchliffe). Stubbs remete ao registro de
+    Moore, fl. 64.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-pennsylvania
+  start: '1787-02-04'
+  end: '1836-07-17'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: William White. Pennsylvania ; d. 1836
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

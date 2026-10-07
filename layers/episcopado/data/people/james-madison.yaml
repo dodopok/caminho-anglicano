@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: james-madison
+name: James Madison
+full_name: James Madison
+aliases:
+- Bp. Madison (Virginia)
+wikidata: Q268217
+biography: >-
+  Primeiro bispo da Virgínia, sagrado em Lambeth em 1790 (o terceiro bispo da linha inglesa na TEC). Não confundir
+  com o presidente homônimo, seu primo.
+sources:
+- source: perry-1895
+  quote: crated bishop of Virginia in the chapel of Lambeth Palace, Sept. 19, 1790.
+- source: wikidata-api-2
+  quote: '"Q268217": enwiki "James Madison (bishop)"'
+ordinations:
+- order: episcopate
+  date: '1790-09-19'
+  place: Capela do Palácio de Lambeth, Londres
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: john-moore
+  co_consecrators:
+  - beilby-porteus
+  - john-thomas
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      The consecrators were the archbishop of Canterbury, Dr. John Moore, the bishop of London, Dr. Beilby Porteus,
+      and the bishop of Rochester, Dr. John Thomas.
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1790, Sept. 19. James Madison. Virginia; d. 1812. Consecrated at Lambeth by Archbishop Moore, Beilby
+      of London, and John of Rochester; Reg. Moore, 210.
+  - source: wp-en-histlist
+    quote: >-
+      | [[James Madison (bishop)|James Madison]] | [[John Moore (archbishop of Canterbury)|MOO]] [[Beilby Porteus|POR]]
+      [[John Thomas (bishop of Rochester)|THO]]{{sfn|Perry|1895|page=[https://archive.org/stream/cu31924050995525#page/n122/mode/1up
+      11]}} | 1790
+  notes: John Thomas aqui é o bispo de Rochester (1774-1793), não o homônimo de Winchester.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-virginia
+  start: '1790-09-19'
+  end: '1812'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: James Madison. Virginia; d. 1812.
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

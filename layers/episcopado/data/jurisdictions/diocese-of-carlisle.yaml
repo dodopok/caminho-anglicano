@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-carlisle
+name: Diocese of Carlisle
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Edward Venables Vernon (Harcourt). Carlisle ; York, 1808 ; d. 1847, Nov. 12.

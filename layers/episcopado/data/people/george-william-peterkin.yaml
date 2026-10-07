@@ -1,6 +1,9 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: george-william-peterkin
 name: George William Peterkin
+full_name: George William Peterkin
+aliases:
+- Bp. Peterkin
 wikidata: Q17421710
 biography: >-
   Bispo da Virgínia Ocidental; bispo provisório da missão brasileira; visitou o Brasil em 1893 e ordenou quatro
@@ -15,7 +18,44 @@ sources:
     were ordained to the diaconate.
 - source: wd-q17421710
   quote: George William Peterkin | episcopal Bishop of West Virginia (1841-1916)
+ordinations:
+- order: episcopate
+  date: '1878-05-30'
+  place: St. Matthew's Church, Wheeling (Virgínia Ocidental)
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: gregory-thurston-bedell
+  co_consecrators:
+  - francis-mcneece-whittle
+  - jaggar
+  - john-barrett-kerfoot
+  - thomas-underwood-dudley
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      He was consecrated in St. Matthew's Church, \\'heeling, W. Va., May 30, 1878, by Bishops Bedell, Kerfoot,
+      Whittle, Dudley, and Jaggar.
+  - source: wp-en-histlist
+    quote: >-
+      | [[George William Peterkin]] | [[Gregory T. Bedell|67]] [[John Barrett Kerfoot|78]] [[Francis McNeece Whittle|87]]
+      | 1878
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
 affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-west-virginia
+  start: '1878-05-30'
+  status: probable
+  sources:
+  - source: wp-en-histlist
+    quote: >-
+      | [[George William Peterkin]] | [[Gregory T. Bedell|67]] [[John Barrett Kerfoot|78]] [[Francis McNeece Whittle|87]]
+      | 1878
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.
 - jurisdiction: dmsb
   role: bishop
   diocese: provisorio-da-missao-no-brasil

@@ -1,3 +1,70 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: horatio-potter
 name: Horatio Potter
+full_name: Horatio Potter
+aliases:
+- Bp. H. Potter
+death:
+  date: '1887-01-02'
+  sources:
+  - source: perry-1895
+    quote: He died Jan. 2, 1887, his nephew, Dr. Henry Codman Potter
+  - source: wikidata-api-2
+    quote: '"Q15493141": enwiki "Horatio Potter"'
+wikidata: Q15493141
+biography: >-
+  Bispo provisório (1854) e depois bispo de Nova York; sagrante principal de Littlejohn, W. C. Doane e Scarborough.
+  Tio de Henry Codman Potter.
+sources:
+- source: perry-1895
+  quote: He died Jan. 2, 1887, his nephew, Dr. Henry Codman Potter
+- source: wikidata-api-2
+  quote: '"Q15493141": enwiki "Horatio Potter"'
+ordinations:
+- order: episcopate
+  date: '1854-11-22'
+  place: Trinity Church, Nova York
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: thomas-church-brownell
+  co_consecrators:
+  - alonzo-potter
+  - eastburn
+  - francis-fulford
+  - george-washington-doane
+  - h-w-lee
+  - john-henry-hopkins
+  - john-williams
+  - mccoskry
+  - whitehouse
+  - william-rollinson-whittingham
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      Potter was consecrated provisional bishop of New York in Trinity Church, Nov. 22, 1854. His consecrators were
+      Bishops Brownell, Hopkins, Doane, McCoskry, Whittingham, Eastburn, Alonzo Potter, Williams, Whitehouse, H,
+      W. Lee, and the bishop of Montreal, Dr. Fulford.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Horatio Potter]] | [[Thomas Church Brownell|19]] [[John Henry Hopkins|26]] [[George Washington Doane|29]]
+      | 1854
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte. Sagrado como bispo
+    provisório; diocesano a partir de 1861. 'Doane' = George Washington Doane segundo a lista da Wikipédia. Fulford
+    era bispo de Montreal (Igreja da Inglaterra no Canadá).
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-new-york
+  start: '1854-11-22'
+  end: '1887-01-02'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      On the decease of Onderdonk, in 1861, Potter became the diocesan bishop of New York. He died Jan. 2, 1887
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

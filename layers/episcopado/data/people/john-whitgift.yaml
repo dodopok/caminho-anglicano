@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-whitgift
+name: John Whitgift
+full_name: John Whitgift
+aliases:
+- Archbishop Whitgift
+death:
+  date: '1604-02-29'
+  sources:
+  - source: stubbs-1897
+    quote: John Whitgift. Worcester; Canterbury, 1583; d. 1604, Feb. 29.
+  - source: wikidata-api-2
+    quote: '"Q473302": enwiki "John Whitgift"'
+wikidata: Q473302
+biography: Bispo de Worcester (1577) e arcebispo de Cantuária (1583-1604); sagrante principal de Bancroft.
+sources:
+- source: stubbs-1897
+  quote: John Whitgift. Worcester; Canterbury, 1583; d. 1604, Feb. 29.
+- source: wikidata-api-2
+  quote: '"Q473302": enwiki "John Whitgift"'
+ordinations:
+- order: episcopate
+  date: '1577-04-21'
+  place: Lambeth
+  jurisdiction: church-of-england
+  principal_consecrator: edmund-grindal
+  co_consecrators:
+  - john-aylmer
+  - richard-curteys
+  - robert-horne
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      John Whitgift. Worcester; Canterbury, 1583; d. 1604, Feb. 29. Consecrated at Lambeth by Archbishop Grindal,
+      John of London, Robert of Winchester, and Richard of Chichester ; Reg. Grindal, 34.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Sagrado
+    bispo de Worcester em 21/4/1577. John of London = John Aylmer; Robert of Winchester = Robert Horne (OCR: 'Home');
+    Richard of Chichester = Richard Curteys.
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-worcester
+  start: '1577-04-21'
+  end: '1583'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: John Whitgift. Worcester; Canterbury, 1583; d. 1604, Feb. 29.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: archbishop
+  diocese: diocese-of-canterbury
+  start: '1583'
+  end: '1604-02-29'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: John Whitgift. Worcester; Canterbury, 1583; d. 1604, Feb. 29.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.

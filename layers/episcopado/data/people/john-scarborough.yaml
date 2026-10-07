@@ -1,6 +1,9 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: john-scarborough
 name: John Scarborough
+full_name: John Scarborough
+aliases:
+- Bp. Scarborough
 wikidata: Q6256840
 biography: Bispo de Nova Jersey; impôs as mãos na sagração de Kinsolving.
 sources:
@@ -9,3 +12,43 @@ sources:
     The other Bishops present and taking part in the laying-on of hands were Drs. Scarborough, of Hew; Jersey;
 - source: wd-q6256840
   quote: John Scarborough | American bishop (1831-1914)
+ordinations:
+- order: episcopate
+  date: '1875-02-02'
+  place: St. Mary's, Burlington (Nova Jersey)
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: horatio-potter
+  co_consecrators:
+  - abram-newkirk-littlejohn
+  - john-barrett-kerfoot
+  - m-a-de-wolfe-howe
+  - paddock
+  - william-bacon-stevens
+  - william-croswell-doane
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      His consecration took place in St. Mary's, Burlington, N. J., Feb. 2, 1875. His consecrators were Bishops
+      H. Potter, Stevens, Kerfoot, Littlejohn, Doane, M. A. De Wolfe Howe, and Paddock.
+  - source: wp-en-histlist
+    quote: >-
+      | [[John Scarborough]] | [[Horatio Potter|62]] [[William Bacon Stevens|71]] [[John Barrett Kerfoot|78]] |
+      1875
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-new-jersey
+  start: '1875-02-02'
+  status: probable
+  sources:
+  - source: wp-en-histlist
+    quote: >-
+      | [[John Scarborough]] | [[Horatio Potter|62]] [[William Bacon Stevens|71]] [[John Barrett Kerfoot|78]] |
+      1875
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

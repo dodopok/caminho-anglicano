@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: richard-bancroft
+name: Richard Bancroft
+full_name: Richard Bancroft
+aliases:
+- Archbishop Bancroft
+death:
+  date: '1610-11-02'
+  sources:
+  - source: stubbs-1897
+    quote: Richard Bancroft. London ; Canterbury, 1604 ; d. 1610, Nov. 2.
+  - source: wikidata-api-2
+    quote: '"Q651099": enwiki "Richard Bancroft"'
+wikidata: Q651099
+biography: Bispo de Londres (1597) e arcebispo de Cantuária (1604-1610); sagrante principal de George Abbot.
+sources:
+- source: stubbs-1897
+  quote: Richard Bancroft. London ; Canterbury, 1604 ; d. 1610, Nov. 2.
+- source: wikidata-api-2
+  quote: '"Q651099": enwiki "Richard Bancroft"'
+ordinations:
+- order: episcopate
+  date: '1597-05-08'
+  place: Lambeth
+  jurisdiction: church-of-england
+  principal_consecrator: john-whitgift
+  co_consecrators:
+  - anthony-rudd
+  - anthony-watson
+  - john-young
+  - richard-vaughan
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      Richard Bancroft. London ; Canterbury, 1604 ; d. 1610, Nov. 2. Consecrated at Lambeth by Archbishop Whitgift,
+      John of Rochester, Anthony of S. David's, Richard of Bangor, and Anthony of Chichester ; Reg. Whitgift, ii.
+      82.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Sagrado
+    bispo de Londres em 8 de maio de 1597 (cabeçalho em Stubbs: 'A. d. 1597, May 8'). John of Rochester = John Young;
+    Anthony of S. David's = Anthony Rudd; Richard of Bangor = Richard Vaughan; Anthony of Chichester = Anthony Watson.
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-london
+  start: '1597-05-08'
+  end: '1604'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Richard Bancroft. London ; Canterbury, 1604 ; d. 1610, Nov. 2.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: archbishop
+  diocese: diocese-of-canterbury
+  start: '1604'
+  end: '1610-11-02'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Richard Bancroft. London ; Canterbury, 1604 ; d. 1610, Nov. 2.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.

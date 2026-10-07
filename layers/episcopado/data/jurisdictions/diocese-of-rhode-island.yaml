@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-rhode-island
+name: Diocese of Rhode Island
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: confirmed
+  sources:
+  - source: tlc-1911-01-14
+    quote: as Bishop of Rhode Island, in St. John’s Church, Providence.

@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-long-island
+name: Diocese of Long Island
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: probable
+  sources:
+  - source: wp-en-histlist
+    quote: >-
+      | [[Abram Newkirk Littlejohn]] | [[Horatio Potter|62]] [[John Johns|39]] [[William Henry Odenheimer|66]] |
+      1869

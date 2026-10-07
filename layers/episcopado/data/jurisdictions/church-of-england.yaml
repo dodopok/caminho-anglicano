@@ -1,6 +1,16 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: church-of-england
+acronym: CofE
 name: Igreja da Inglaterra
+aliases:
+- Church of England
+- Church of England (Igreja da Inglaterra)
+- church-of-england
 type: province
 tradition: anglican
 country: GB
+website: https://www.churchofengland.org
+description: Igreja da Inglaterra (Cantuária).
+sources:
+- source: life-machray-1909
+  quote: was the youngest Bishop of the Church of England then alive

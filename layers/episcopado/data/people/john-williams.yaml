@@ -1,3 +1,53 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: john-williams
 name: John Williams
+full_name: John Williams
+aliases:
+- Bp. J. Williams
+- Bp. John Williams (Connecticut)
+wikidata: Q6264336
+biography: >-
+  Bispo coadjutor (1851) e depois bispo de Connecticut, Presiding Bishop; sagrante principal de William Lawrence.
+sources:
+- source: perry-1895
+  quote: RIGHT REVEREND JOHN WILLIAMS, D.D., LL.D.
+- source: wikidata-api-2
+  quote: '"Q6264336": enwiki "John Williams (bishop of Connecticut)"'
+ordinations:
+- order: episcopate
+  date: '1851-10-29'
+  place: St. John's Church, Hartford
+  jurisdiction: tec
+  office: coadjutor
+  principal_consecrator: thomas-church-brownell
+  co_consecrators:
+  - burgess
+  - carlton-chase
+  - eastburn
+  - henshaw
+  - john-henry-hopkins
+  - william-h-delancey
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      Williams was consecrated to the coadjutor bishopric of Connecticut, Oct. 29, 185 1, in St. John's Church,
+      Hartford, b\- Bishops Brownell, Hopkins, Eastburn, Henshaw, Carlton Chase, Burgess, and De Lancey.
+  - source: wp-en-histlist
+    quote: >-
+      | [[John Williams (bishop of Connecticut)|John Williams]] | [[Thomas Church Brownell|19]] [[John Henry Hopkins|26]]
+      [[William H. DeLancey|34]] | 1851
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-connecticut
+  start: '1851-10-29'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: He became bishop of Connecticut on the death of Brownell
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

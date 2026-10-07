@@ -4,6 +4,7 @@ name: Daniel Tuttle
 full_name: Daniel Sylvester Tuttle
 aliases:
 - Bishop Tuttle
+- Bp. Tuttle
 - Daniel S. Tuttle
 - Daniel Sylvester Tuttle
 birth:
@@ -35,9 +36,19 @@ ordinations:
   - henry-adams-neely
   - horatio-potter
   - john-barrett-kerfoot
+  - neely
+  - randall
   - william-henry-odenheimer
   status: confirmed
   sources:
+  - source: perry-1895
+    quote: >-
+      It was not until May I, 1867, that he was set apart for his work. The service took place in Trinity Chapel,
+      New York. The consecrators were Bishops Hopkins, Horatio Potter, Odenheimer, Randall, Kerfoot, and Neely.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Daniel S. Tuttle]] | [[John Henry Hopkins|26]] [[Horatio Potter|62]] [[William Henry Odenheimer|66]] |
+      1867
   - source: perry-episcopate-1895
     quote: >-
       It was not until May i, 1867, that he was set apart for his work. The service took place in Trinity Chapel,
@@ -55,8 +66,28 @@ ordinations:
   - source: iab-poster-linhagem-uchoa
     quote: além disso, também sagrou Daniel S. Tuttle em 1867 na Diocese Episcopal do Missouri (ver 155b).
   notes: >-
-    Pôster: Hopkins "sagrou Daniel S. Tuttle em 1867 na Diocese Episcopal do Missouri" — sagrante e ano CONFIRMADOS;
-    CORRIGIDO o cargo/local: Tuttle foi sagrado em Nova York como bispo missionário de Montana, Idaho e Utah (só
-    depois foi bispo do Missouri). Perry (1895) inclui Kerfoot entre os co-sagrantes. Nomes completos de Randall
-    e Neely inferidos dos sobrenomes. O pôster associa a sagração ao Missouri; Tuttle foi inicialmente bispo missionário
-    de Montana/Idaho/Utah — verificar.
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte. Já em pontes-estrangeiras.json;
+    aqui com Perry como fonte primária. Pôster: Hopkins "sagrou Daniel S. Tuttle em 1867 na Diocese Episcopal do
+    Missouri" — sagrante e ano CONFIRMADOS; CORRIGIDO o cargo/local: Tuttle foi sagrado em Nova York como bispo
+    missionário de Montana, Idaho e Utah (só depois foi bispo do Missouri). Perry (1895) inclui Kerfoot entre os
+    co-sagrantes. Nomes completos de Randall e Neely inferidos dos sobrenomes. O pôster associa a sagração ao Missouri;
+    Tuttle foi inicialmente bispo missionário de Montana/Idaho/Utah — verificar.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: missionary-district-of-montana-idaho-and-utah
+  start: '1867-05-01'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: missionary episcopate of Montana, Idaho, and Utah
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.
+- jurisdiction: tec
+  role: primate
+  status: confirmed
+  sources:
+  - source: tlc-1911-01-14
+    quote: Daniel Sylvester Tuttle, D.D., Bishop of Missouri and’ Presiding Bishop
+  notes: Presiding Bishop em janeiro de 1911 (cargo atestado nessa data).

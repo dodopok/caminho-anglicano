@@ -1,6 +1,9 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: william-croswell-doane
 name: William Croswell Doane
+full_name: William Croswell Doane
+aliases:
+- Bp. Doane (Albany)
 wikidata: Q8007323
 biography: Bispo de Albany; apresentante (e, segundo a lista da Wikipédia, co-sagrante) de Kinsolving.
 sources:
@@ -8,3 +11,41 @@ sources:
   quote: the presenters being Bishop Doane, of Albany, and Bishop Peterkin, of West Virginia
 - source: wd-q8007323
   quote: William Croswell Doane | American bishop (1832–1913)
+ordinations:
+- order: episcopate
+  date: '1869-02-02'
+  place: St. Peter's, Albany
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: horatio-potter
+  co_consecrators:
+  - abram-newkirk-littlejohn
+  - henry-a-neely
+  - robertson
+  - william-henry-odenheimer
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      Doane was consecrated in his own church, St. Peter's, Albany, Feb. 2, 1869, by Bishops H. Potter, Odenheimer,
+      Neely, Robertson, and Littlejohn.
+  - source: wp-en-histlist
+    quote: >-
+      | [[William Croswell Doane]] | [[Horatio Potter|62]] [[William Henry Odenheimer|66]] [[Henry A. Neely|83]]
+      | 1869
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-albany
+  start: '1869-02-02'
+  status: probable
+  sources:
+  - source: wp-en-histlist
+    quote: >-
+      | [[William Croswell Doane]] | [[Horatio Potter|62]] [[William Henry Odenheimer|66]] [[Henry A. Neely|83]]
+      | 1869
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

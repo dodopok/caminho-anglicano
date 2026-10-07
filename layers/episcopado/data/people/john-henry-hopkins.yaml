@@ -4,6 +4,7 @@ name: John Henry Hopkins
 full_name: John Henry Hopkins
 aliases:
 - Bishop Hopkins
+- Bp. Hopkins
 - John H. Hopkins
 birth:
   date: '1792-01-30'
@@ -32,6 +33,14 @@ ordinations:
   - nathaniel-bowen
   status: confirmed
   sources:
+  - source: perry-1895
+    quote: >-
+      His consecration took place in St. Paul's Chapel, New York, Oct. 31, 1832. His consecrators were Bishops White,
+      Griswold, and Bowen.
+  - source: wp-en-histlist
+    quote: >-
+      | [[John Henry Hopkins]] | [[William White (Bishop of Pennsylvania)|2]] [[Alexander Viets Griswold|12]] [[Nathaniel
+      Bowen|17]] | 1832
   - source: perry-episcopate-1895
     quote: >-
       His con secration took place in St. Paul's Chapel, New York, Oct. 31, 1832. His consecrators were Bishops
@@ -48,6 +57,19 @@ ordinations:
       153a. William White (1787-1836) que consagrou John Hopkins como o primeiro bispo de Vermont, na Igreja de
       São Paulo, em Nova York.
   notes: >-
-    Pôster: "William White ... consagrou John Hopkins como o primeiro bispo de Vermont" — CONFIRMADO. Co-sagrantes:
-    Griswold (Eastern Diocese) e Bowen (Carolina do Sul). Hopkins foi sagrado no mesmo dia que os bispos de Ohio,
-    Nova Jersey e Kentucky.
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte. Já está em pontes-estrangeiras.json;
+    repetido aqui como elo da cadeia, agora com Perry como fonte. Pôster: "William White ... consagrou John Hopkins
+    como o primeiro bispo de Vermont" — CONFIRMADO. Co-sagrantes: Griswold (Eastern Diocese) e Bowen (Carolina do
+    Sul). Hopkins foi sagrado no mesmo dia que os bispos de Ohio, Nova Jersey e Kentucky.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-vermont
+  start: '1832-10-31'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: Hopkins was chosen bishop of Vermont
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: samuel-provoost
+name: Samuel Provoost
+full_name: Samuel Provoost
+aliases:
+- Bp. Provoost
+wikidata: Q3471212
+biography: Primeiro bispo de Nova York, sagrado em Lambeth com William White em 1787.
+sources:
+- source: perry-1895
+  quote: He was consecrated bishop of New York at Lambeth Palace chapel, Feb. 4, 1787
+- source: wikidata-api-2
+  quote: '"Q3471212": enwiki "Samuel Provoost"'
+ordinations:
+- order: episcopate
+  date: '1787-02-04'
+  place: Capela do Palácio de Lambeth, Londres
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: john-moore
+  co_consecrators:
+  - charles-moss
+  - john-hinchliffe
+  - william-markham
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      He was consecrated bishop of New York at Lambeth Palace chapel, Feb. 4, 1787, by the two archbishops and the
+      bishops of Bath and Wells and Peterborough, at the same time with White.
+  - source: stubbs-1897
+    quote: >-
+      Consecrated at Lambeth by Archbishop Moore, William of York, Charles of Bath, and John of Peterborough ; Reg.
+      Moore, 64.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Samuel Provoost]] | [[John Moore (archbishop of Canterbury)|MOO]] [[William Markham (bishop)|MAR]] [[Charles
+      Moss (bishop of Bath and Wells)|MOS]] [[John Hinchliffe|HIN]]{{sfn|Perry|1895|pages=[https://archive.org/stream/cu31924050995525#page/n113/mode/1up
+      6]–[https://archive.org/stream/cu31924050995525#page/n118/mode/1up 7], [https://archive.org/stream/cu31924050995525#page/n120/mode/1up
+      9]}} | 1787
+  notes: Mesma cerimônia de William White.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-new-york
+  start: '1787-02-04'
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Samuel Provoost. New York ; d. 1815.
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

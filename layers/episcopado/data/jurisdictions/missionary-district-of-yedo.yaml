@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: missionary-district-of-yedo
+name: Missionary District of Yedo
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: see of Yedo, Japan

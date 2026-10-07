@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: edward-venables-vernon-harcourt
+name: Edward Venables-Vernon-Harcourt
+full_name: Edward Venables-Vernon-Harcourt
+aliases:
+- Archbishop Harcourt
+- Edward Venables Vernon
+death:
+  date: '1847-11-12'
+  sources:
+  - source: stubbs-1897
+    quote: Edward Venables Vernon (Harcourt). Carlisle ; York, 1808 ; d. 1847, Nov. 12.
+  - source: wikidata-api-2
+    quote: '"Q3048710": enwiki "Edward Venables-Vernon-Harcourt"'
+wikidata: Q3048710
+biography: >-
+  Bispo de Carlisle (1791) e arcebispo de York (1808-1847); sagrante principal de John Bird Sumner e de Charles
+  Thomas Longley.
+sources:
+- source: stubbs-1897
+  quote: Edward Venables Vernon (Harcourt). Carlisle ; York, 1808 ; d. 1847, Nov. 12.
+- source: wikidata-api-2
+  quote: '"Q3048710": enwiki "Edward Venables-Vernon-Harcourt"'
+ordinations:
+- order: episcopate
+  date: '1791-11-06'
+  place: Whitehall
+  jurisdiction: church-of-england
+  principal_consecrator: william-markham
+  co_consecrators:
+  - beilby-porteus
+  - john-douglas
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1791, Nov. 6. Edward Venables Vernon (Harcourt). Carlisle ; York, 1808 ; d. 1847, Nov. 12. Consecrated
+      at Whitehall by Archbishop Markham of York, Beilby of London, and John of Sarum ; Reg. Moore, 238.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Sagrado
+    bispo de Carlisle. John of Sarum = John Douglas.
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-carlisle
+  start: '1791-11-06'
+  end: '1808'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Edward Venables Vernon (Harcourt). Carlisle ; York, 1808 ; d. 1847, Nov. 12.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: archbishop
+  diocese: diocese-of-york
+  start: '1808'
+  end: '1847-11-12'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Edward Venables Vernon (Harcourt). Carlisle ; York, 1808 ; d. 1847, Nov. 12.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.

@@ -4,6 +4,7 @@ name: Henry Knox Sherrill
 full_name: Henry Knox Sherrill
 aliases:
 - Bishop Sherrill
+- Bp. Sherrill
 - Henry K. Sherrill
 birth:
   date: '1890-11-06'
@@ -36,10 +37,21 @@ ordinations:
   office: diocesan
   principal_consecrator: james-de-wolf-perry
   co_consecrators:
+  - alexander-mann
   - logan-herbert-roots
   - william-lawrence
   status: contested
   sources:
+  - source: tlc-1930-10-25
+    quote: >-
+      Fourteen bishops joined in the laying on of hands: Bishop James DeWolf Perry, consecrator; Bishop William
+      Lawrence and Bishop Alexander Mann, co-consecrators ;
+  - source: tlc-1930-10-25
+    quote: Bishops Alexander Mann and Lawrence, co-consecrators ; The Presiding Bishop, consecrator.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Henry Knox Sherrill]] | [[James De Wolf Perry|247]] [[William Lawrence (bishop)|171]] [[Logan H. Roots
+      (bishop)|221]] | 1930
   - source: witness-1930-10-16
     quote: >-
       Bishop Henry K. Sherrill was con­ secrated Bishop of Massachusetts at Trinity, Boston, on October 14th. Bishop
@@ -63,7 +75,21 @@ ordinations:
       quote: >-
         158c. Henry St. George Tucker (1912-1958) que, em 1930, sagrou Henry Knox Sherrill como bispo de Massachusetts.
   notes: >-
-    CORRIGIDO: o pôster diz que Henry St. George Tucker sagrou Sherrill em 1930; a Wikipédia (artigo e lista de
-    sucessão) dá James De Wolf Perry (então Presiding Bishop) como sagrante principal, com William Lawrence e Logan
-    H. Roots. Data e local confirmados por fonte primária (The Witness, 16/10/1930), que não nomeia o sagrante;
-    por isso o sagrante fica "provavel". Tucker não aparece em nenhuma fonte desta sagração.
+    CORRIGE pontes-estrangeiras.json, que marcava o sagrante como 'provavel'. A fonte primária (The Living Church,
+    25/10/1930) dá Perry como 'consecrator' e Lawrence e Alexander Mann como co-sagrantes. A Wikipédia põe Logan
+    H. Roots no lugar de Mann; Roots só impôs as mãos. CORRIGIDO: o pôster diz que Henry St. George Tucker sagrou
+    Sherrill em 1930; a Wikipédia (artigo e lista de sucessão) dá James De Wolf Perry (então Presiding Bishop) como
+    sagrante principal, com William Lawrence e Logan H. Roots. Data e local confirmados por fonte primária (The
+    Witness, 16/10/1930), que não nomeia o sagrante; por isso o sagrante fica "provavel". Tucker não aparece em
+    nenhuma fonte desta sagração.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-massachusetts
+  start: '1930-10-14'
+  status: confirmed
+  sources:
+  - source: tlc-1930-10-25
+    quote: Dr. Henry Knox Sherrill Consecrated Ninth Bishop of Massachusetts
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

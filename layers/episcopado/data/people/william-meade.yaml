@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: william-meade
+name: William Meade
+full_name: William Meade
+aliases:
+- Bp. Meade
+wikidata: Q8015522
+biography: >-
+  Bispo assistente e depois bispo da Virgínia, sagrado em 1829; sagrante principal de Gregory T. Bedell.
+sources:
+- source: perry-1895
+  quote: RIGHT REVEREND WILLIAM MEADE, D.D.
+- source: wikidata-api-2
+  quote: '"Q8015522": enwiki "William Meade"'
+ordinations:
+- order: episcopate
+  date: '1829-08-19'
+  place: St. James's Church, Filadélfia
+  jurisdiction: tec
+  office: auxiliary
+  principal_consecrator: william-white
+  co_consecrators:
+  - alexander-viets-griswold
+  - channing-moore
+  - croes
+  - h-u-onderdonk
+  - john-henry-hobart
+  - thomas-church-brownell
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      He was consecrated in St. James's Church, Philadelphia, Aug. 19, 1829, by Bishops White, Hobart, Griswold,
+      Channijig Moore, Croes, Brownell, and H. U. Onderdonk.
+  - source: wp-en-histlist
+    quote: >-
+      | [[William Meade]] | [[William White (Bishop of Pennsylvania)|2]] [[John Henry Hobart|11]] [[Alexander Viets
+      Griswold|12]] | 1829
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte. Eleito bispo assistente
+    da Virgínia ('assistant bishopric'). 'Channijig' é erro de OCR de 'Channing'.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-virginia
+  start: '1829-08-19'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: On the death of Moore he became, without opposition, bishop of Virginia
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

@@ -1,6 +1,9 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: francis-mcneece-whittle
 name: Francis McNeece Whittle
+full_name: Francis McNeece Whittle
+aliases:
+- Bp. Whittle
 wikidata: Q16030708
 biography: Bispo da Virgínia; ordenou Kinsolving e Morris (1889) e W. C. Brown (1891).
 sources:
@@ -10,3 +13,36 @@ sources:
     Watson Morris deacons in June and priests in August, 1889
 - source: wd-q16030708
   quote: Francis McNeece Whittle | American bishop
+ordinations:
+- order: episcopate
+  date: '1868-04-30'
+  place: St. Paul's, Alexandria (Virgínia)
+  jurisdiction: tec
+  office: coadjutor
+  principal_consecrator: john-johns
+  co_consecrators:
+  - alfred-lee
+  - gregory-thurston-bedell
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      His consecration took place at St. Paul's, Alexandria, Va., April 30, 1868. His consecrators were Bishops
+      Johns, Alfred Lee, and Bedell.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Francis McNeece Whittle]] | [[John Johns|39]] [[Alfred Lee (bishop)|38]] [[Gregory T. Bedell|67]] | 1868
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-virginia
+  start: '1868-04-30'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: On the death of Bishop Johns, in 1876, he became the diocesan.
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

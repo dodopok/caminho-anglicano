@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-potter
+name: John Potter
+full_name: John Potter
+aliases:
+- Archbishop Potter
+death:
+  date: '1747-10-10'
+  sources:
+  - source: stubbs-1897
+    quote: John Potter. Oxford; Canterbury, 1737; d. 1747, Oct. 10.
+  - source: wikidata-api-2
+    quote: '"Q336868": enwiki "John Potter (bishop)"'
+wikidata: Q336868
+biography: Bispo de Oxford (1715) e arcebispo de Cantuária (1737-1747); sagrante principal de Thomas Herring.
+sources:
+- source: stubbs-1897
+  quote: John Potter. Oxford; Canterbury, 1737; d. 1747, Oct. 10.
+- source: wikidata-api-2
+  quote: '"Q336868": enwiki "John Potter (bishop)"'
+ordinations:
+- order: episcopate
+  date: '1715-05-15'
+  place: Lambeth
+  jurisdiction: church-of-england
+  principal_consecrator: jonathan-trelawny
+  co_consecrators:
+  - john-evans
+  - richard-willis
+  - william-wake
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1715, May 15. John Potter. Oxford; Canterbury, 1737; d. 1747, Oct. 10. Consecrated at Lambeth by Jonathan
+      of Winchester, John of Bangor, William of Lincoln, and Richard of Gloucester ; Reg. Tenison, ii. 176.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Sagrado
+    bispo de Oxford. O arcebispo Tenison não presidiu: o primeiro sagrante foi Jonathan (Trelawny), bispo de Winchester.
+    John of Bangor = John Evans; William of Lincoln = William Wake; Richard of Gloucester = Richard Willis. Aqui
+    a linha de sagrantes DIVERGE da lista de ocupantes de Cantuária.
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-oxford
+  start: '1715-05-15'
+  end: '1737'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: John Potter. Oxford; Canterbury, 1737; d. 1747, Oct. 10.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: archbishop
+  diocese: diocese-of-canterbury
+  start: '1737'
+  end: '1747-10-10'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: John Potter. Oxford; Canterbury, 1737; d. 1747, Oct. 10.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.

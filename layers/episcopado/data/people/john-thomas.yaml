@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-thomas
+name: John Thomas
+full_name: John Thomas
+aliases:
+- John Thomas (bispo de Rochester)
+death:
+  date: '1793-08-22'
+  sources:
+  - source: stubbs-1897
+    quote: John Thomas. Rochester; d. 1793, Aug. 22.
+  - source: wikidata-api-2
+    quote: '"Q6260502": enwiki "John Thomas (bishop of Rochester)"'
+wikidata: Q6260502
+biography: >-
+  Bispo de Rochester (1774-1793); co-sagrante de John Moore (1775) e de James Madison (1790). Não confundir com
+  o homônimo bispo de Winchester.
+sources:
+- source: stubbs-1897
+  quote: John Thomas. Rochester; d. 1793, Aug. 22.
+- source: wikidata-api-2
+  quote: '"Q6260502": enwiki "John Thomas (bishop of Rochester)"'
+ordinations:
+- order: episcopate
+  date: '1774-11-13'
+  place: Lambeth
+  jurisdiction: church-of-england
+  principal_consecrator: frederick-cornwallis
+  co_consecrators:
+  - philip-yonge
+  - richard-terrick
+  - shute-barrington
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1774, Nov. 13. John Thomas. Rochester; d. 1793, Aug. 22. Consecrated at Lambeth by Archbishop Cornwallis,
+      Richard of London, Philip of Norwich, and Shute of Llandaff; Reg. Cornwallis, 170.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data).
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-rochester
+  start: '1774-11-13'
+  end: '1793-08-22'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: John Thomas. Rochester; d. 1793, Aug. 22.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.

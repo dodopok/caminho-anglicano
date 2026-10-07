@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-west-virginia
+name: Diocese of West Virginia
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: probable
+  sources:
+  - source: wp-en-histlist
+    quote: >-
+      | [[George William Peterkin]] | [[Gregory T. Bedell|67]] [[John Barrett Kerfoot|78]] [[Francis McNeece Whittle|87]]
+      | 1878

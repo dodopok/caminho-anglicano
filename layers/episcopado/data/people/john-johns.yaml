@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-johns
+name: John Johns
+full_name: John Johns
+aliases:
+- Bp. Johns
+wikidata: Q6241907
+biography: Bispo assistente (1842) e depois bispo da Virgínia; sagrante principal de Francis M. Whittle.
+sources:
+- source: perry-1895
+  quote: RIGHT REVEREND JOHN JOHNS, D.D., LL.D.
+- source: wikidata-api-2
+  quote: '"Q6241907": enwiki "John Johns"'
+ordinations:
+- order: episcopate
+  date: '1842-10-13'
+  place: Monumental Church, Richmond
+  jurisdiction: tec
+  office: auxiliary
+  principal_consecrator: alexander-viets-griswold
+  co_consecrators:
+  - levi-silliman-ives
+  - william-meade
+  - william-rollinson-whittingham
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      Johns was consecrated assistant bishop of Virginia, in the Monumental Church, Richmond, Oct. 13, 1842. His
+      consecrators were Bishops Griswold, Meade, Ives, and Whittingham.
+  - source: wp-en-histlist
+    quote: >-
+      | [[John Johns]] | [[Alexander Viets Griswold|12]] [[William Meade|22]] [[Levi Silliman Ives|25]] | 1842
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-virginia
+  start: '1842-10-13'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: On the death of Meade (1862) he became bishop of Virginia.
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

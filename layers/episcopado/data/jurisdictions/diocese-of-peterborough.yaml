@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-peterborough
+name: Diocese of Peterborough
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: John Hinchcliffe. Peterborough; d. 1794, Jan. 11.

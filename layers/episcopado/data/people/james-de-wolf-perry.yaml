@@ -4,7 +4,9 @@ name: James De Wolf Perry
 full_name: James De Wolf Perry
 aliases:
 - Bishop Perry
+- Bp. Perry (Rhode Island)
 - James DeWolf Perry
+- James DeWolf Perry Jr.
 birth:
   date: '1871-10-03'
   sources:
@@ -29,14 +31,29 @@ sources:
 ordinations:
 - order: episcopate
   date: '1911-01-06'
+  place: St. John's Church, Providence (Rhode Island)
   jurisdiction: tec
   office: diocesan
   principal_consecrator: daniel-tuttle
   co_consecrators:
+  - alexander-h-vinton
+  - edwin-s-lines
   - leigh-richmond-brewer
   - william-lawrence
-  status: probable
+  status: confirmed
   sources:
+  - source: tlc-1911-01-14
+    quote: >-
+      the consecration of the Rey. James DeWolfe Perry, Jr., as Bishop of Rhode Island, in St. John’s Church, Providence.
+  - source: tlc-1911-01-14
+    quote: >-
+      Assembled in the chancel were the following Bishops: the Rt. Rey. Daniel Sylvester Tuttle, D.D., Bishop of
+      Missouri and’ Presiding Bishop; Rt. Rev. Edwin S. Lines, D.D., Bishop of Newark, Rt. Rey. Alexander H. Vinton,
+      D.D., Bishop of Western Massachusetts, acting as consecrators;
+  - source: wp-en-histlist
+    quote: >-
+      | [[James De Wolf Perry]] | [[Daniel S. Tuttle|84]] [[Leigh Raymond Brewer|126]] [[William Lawrence (bishop)|171]]
+      | 1911
   - source: wp-perry
     quote: >-
       and was consecrated on January 6, 1911, by Bishops [[Daniel Sylvester Tuttle]], [[Leigh R. Brewer]], and [[William
@@ -47,5 +64,26 @@ ordinations:
       [[William Lawrence (bishop)|171]] | 1911 | [[Episcopal Diocese of Rhode Island|VII Rhode Island]] | [[List
       of presiding bishops of the Episcopal Church in the United States of America|PB18]]
   notes: >-
-    Elo não citado nos pôsteres, mas necessário: é Perry (sagrado por Tuttle), e não Tucker, quem sagra Henry Knox
-    Sherrill em 1930. Bispo de Rhode Island; Presiding Bishop 1930–1937.
+    CORRIGE pontes-estrangeiras.json, onde o elo estava 'provavel' só com Wikipédia. A fonte primária (The Living
+    Church) confirma Tuttle, então Presiding Bishop, como sagrante principal. Os co-sagrantes, porém, foram Lines
+    (Newark) e Vinton (Western Massachusetts). Brewer e Lawrence, que a Wikipédia dá como co-sagrantes, estavam
+    presentes: Lawrence foi o pregador. Elo não citado nos pôsteres, mas necessário: é Perry (sagrado por Tuttle),
+    e não Tucker, quem sagra Henry Knox Sherrill em 1930. Bispo de Rhode Island; Presiding Bishop 1930–1937.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-rhode-island
+  start: '1911-01-06'
+  status: confirmed
+  sources:
+  - source: tlc-1911-01-14
+    quote: as Bishop of Rhode Island, in St. John’s Church, Providence.
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.
+- jurisdiction: tec
+  role: primate
+  status: confirmed
+  sources:
+  - source: tlc-1930-10-25
+    quote: The Presiding Bishop, the Most Rev. Dr. James De Wolf Perry
+  notes: Presiding Bishop em outubro de 1930 (cargo atestado nessa data, sem início e fim aqui).

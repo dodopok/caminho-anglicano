@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-skinner
+name: John Skinner
+full_name: John Skinner
+aliases:
+- Dr. John Skinner
+wikidata: Q6258094
+biography: Bispo coadjutor de Aberdeen (Igreja Episcopal Escocesa); co-sagrante de Seabury (1784).
+sources:
+- source: perry-1895
+  quote: Dr. John Skinner, bishop coadjutor of Aberdeen
+- source: wikidata-api-2
+  quote: '"Q6258094": enwiki "John Skinner (bishop)"'
+affiliations:
+- jurisdiction: scottish-episcopal-church
+  role: bishop
+  diocese: diocese-of-aberdeen
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: Dr. John Skinner, bishop coadjutor of Aberdeen
+  notes: 'Local: coadjutor. Cargo atestado em 14/11/1784 (sagração de Seabury); início e fim não registrados.'

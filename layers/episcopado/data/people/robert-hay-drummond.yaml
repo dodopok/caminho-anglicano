@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: robert-hay-drummond
+name: Robert Hay Drummond
+full_name: Robert Hay Drummond
+aliases:
+- Archbishop Drummond
+death:
+  date: '1776-12-10'
+  sources:
+  - source: stubbs-1897
+    quote: Robert Hay Drummond. S. Asaph ; Sarum, 1761 ; York, 1761 ; d. 1776, Dec. 10.
+  - source: wikidata-api-2
+    quote: '"Q772812": enwiki "Robert Hay Drummond"'
+wikidata: Q772812
+biography: >-
+  Bispo de St Asaph (1748), Salisbury e arcebispo de York (1761-1776); sagrante principal de William Markham.
+sources:
+- source: stubbs-1897
+  quote: Robert Hay Drummond. S. Asaph ; Sarum, 1761 ; York, 1761 ; d. 1776, Dec. 10.
+- source: wikidata-api-2
+  quote: '"Q772812": enwiki "Robert Hay Drummond"'
+ordinations:
+- order: episcopate
+  date: '1748-04-24'
+  place: Kensington Church
+  jurisdiction: church-of-england
+  principal_consecrator: thomas-herring
+  co_consecrators:
+  - john-gilbert
+  - joseph-wilcocks
+  - martin-benson
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      a. D. 1748, Apr. 24. Robert Hay Drummond. S. Asaph ; Sarum, 1761 ; York, 1761 ; d. 1776, Dec. 10. Consecrated
+      in Kensington Church by Archbishop Herring, Joseph of Rochester, Martin of Gloucester, and John of Llandaff
+      ;
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Sagrado
+    bispo de St Asaph. John of Llandaff = John Gilbert. Herring era então arcebispo de Cantuária (1747).
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-st-asaph
+  start: '1748-04-24'
+  end: '1761'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Robert Hay Drummond. S. Asaph ; Sarum, 1761 ; York, 1761 ; d. 1776, Dec. 10.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: archbishop
+  diocese: diocese-of-york
+  start: '1761'
+  end: '1776-12-10'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Robert Hay Drummond. S. Asaph ; Sarum, 1761 ; York, 1761 ; d. 1776, Dec. 10.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
