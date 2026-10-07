@@ -24,7 +24,8 @@
         @focus="open = true"
         @keydown.down.prevent="move(1)"
         @keydown.up.prevent="move(-1)"
-        @keydown.enter.prevent="choose(results[active]?.node)"
+        @keydown.enter.exact.prevent="choose(results[active]?.node)"
+        @keydown.shift.enter.prevent="choose(results[active]?.node, true)"
         @keydown.esc="open = false"
       >
       <kbd v-if="size === 'lg'" class="hidden sm:inline text-xs text-stone-400 border border-stone-200 rounded px-1.5 py-0.5">/</kbd>
@@ -78,7 +79,11 @@ const props = withDefaults(defineProps<{
   shortcut: false
 })
 
-const emit = defineEmits<{ select: [node: GraphNode] }>()
+const emit = defineEmits<{
+  select: [node: GraphNode]
+  /** Shift+Enter: abrir a ficha em vez de selecionar no grafo. */
+  open: [node: GraphNode]
+}>()
 
 const uid = useId()
 const inputId = `busca-${uid}`
@@ -100,9 +105,10 @@ function move(step: number) {
   active.value = (active.value + step + results.value.length) % results.value.length
 }
 
-function choose(node: GraphNode | undefined) {
+function choose(node: GraphNode | undefined, openSheet = false) {
   if (!node) return
-  emit('select', node)
+  if (openSheet) emit('open', node)
+  else emit('select', node)
   query.value = ''
   open.value = false
   input.value?.blur()
