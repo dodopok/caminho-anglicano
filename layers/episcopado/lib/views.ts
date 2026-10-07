@@ -1,3 +1,12 @@
+import {
+  EVENT_LABEL,
+  FIELD_LABEL,
+  ORDER_LABEL,
+  RELATION_LABEL,
+  ROLE_LABEL,
+  formatDate,
+  formatPeriod
+} from './labels'
 import type {
   Base,
   TAffiliation,
@@ -443,4 +452,175 @@ export function jurisdictionView(index: BaseIndex, id: string): JurisdictionView
     members,
     footnotes: notes.list
   }
+}
+
+// ---------------------------------------------------------------------------
+// Fontes: tudo o que uma fonte sustenta, e a bibliografia com contagens.
+// ---------------------------------------------------------------------------
+
+export type EntityKind = 'person' | 'jurisdiction'
+
+export interface EntityRef {
+  kind: EntityKind
+  id: string
+  name: string
+}
+
+/** Seção da ficha onde a afirmação aparece (vira âncora no link). */
+export type ClaimSection =
+  | 'resumo'
+  | 'ordenacoes'
+  | 'trajetoria'
+  | 'eventos'
+  | 'origem'
+
+export interface SupportedClaim {
+  entity: EntityRef
+  section: ClaimSection
+  /** Descrição curta da afirmação ("Episcopado, 8 dez. 2012"). */
+  claim: string
+  /** Complemento (local, descrição do evento...). */
+  detail?: string
+  status: TOrdination['status'] | null
+  quote?: string
+  page?: string
+  /** Quando a fonte sustenta uma versão divergente, qual ("data: 8 dez. 2018"). */
+  discrepancy?: string
+}
+
+export interface SourceView {
+  source: TSource
+  claims: SupportedClaim[]
+  /** Quantas entidades distintas a fonte sustenta. */
+  entities: number
+}
+
+export interface SourceListItem extends SourceSummary {
+  accessed?: string | null
+  language?: string
+  claims: number
+  entities: number
+}
+
+interface Citation {
+  ref: TSourceRef
+  claim: Omit<SupportedClaim, 'quote' | 'page'>
+}
+
+function discrepancyText(index: BaseIndex, d: { field: string; value?: string | string[] | null }): string {
+  const label = FIELD_LABEL[d.field] ?? d.field
+  if (d.value === null || d.value === undefined) return `${label}: não informado`
+  const values = Array.isArray(d.value) ? d.value : [d.value]
+  const text = values
+    .map((v) => {
+      if (PERSON_FIELDS.has(d.field)) return personRef(index, v).name
+      if (JURISDICTION_FIELDS.has(d.field)) return jurisdictionRef(index, v).acronym ?? jurisdictionRef(index, v).name
+      return /^(c\.)?\d{4}/.test(v) ? formatDate(v) : v
+    })
+    .join(', ')
+  return `${label}: ${text}`
+}
+
+/** Percorre todas as citações da base, com uma descrição legível da afirmação citada. */
+function* citations(index: BaseIndex): Generator<Citation> {
+  const emit = function* (
+    refs: TSourceRef[] | undefined,
+    claim: Citation['claim'],
+    discrepancies?: NonNullable<TOrdination['discrepancies']>
+  ): Generator<Citation> {
+    for (const ref of refs ?? []) yield { ref, claim }
+    for (const d of discrepancies ?? []) {
+      const discrepancy = discrepancyText(index, d)
+      for (const ref of d.sources) yield { ref, claim: { ...claim, discrepancy } }
+    }
+  }
+  const jname = (id: string | null | undefined) => {
+    if (!id) return ''
+    const j = jurisdictionRef(index, id)
+    return j.acronym ?? j.name
+  }
+
+  for (const p of index.people.values()) {
+    const entity: EntityRef = { kind: 'person', id: p.id, name: p.name }
+    yield* emit(p.sources, { entity, section: 'resumo', claim: 'Biografia', status: null })
+    if (p.birth) yield* emit(p.birth.sources, { entity, section: 'resumo', claim: `Nascimento${p.birth.date ? `, ${formatDate(p.birth.date)}` : ''}`, detail: p.birth.place ?? undefined, status: null })
+    if (p.death) yield* emit(p.death.sources, { entity, section: 'resumo', claim: `Falecimento${p.death.date ? `, ${formatDate(p.death.date)}` : ''}`, detail: p.death.place ?? undefined, status: null })
+    for (const o of p.ordinations ?? []) {
+      const who = o.order === 'episcopate' ? o.principal_consecrator : o.ordained_by
+      const detail = [o.jurisdiction ? jname(o.jurisdiction) : '', who ? `por ${personRef(index, who).name}` : ''].filter(Boolean).join(' · ')
+      yield* emit(
+        o.sources,
+        { entity, section: 'ordenacoes', claim: `${ORDER_LABEL[o.order]}${o.date ? `, ${formatDate(o.date)}` : ''}`, detail: detail || undefined, status: o.status },
+        o.discrepancies
+      )
+    }
+    for (const a of p.affiliations ?? []) {
+      const role = a.role === 'other' && a.role_description ? a.role_description : ROLE_LABEL[a.role]
+      const period = formatPeriod(a.start, a.end)
+      yield* emit(
+        a.sources,
+        { entity, section: 'trajetoria', claim: `${role} — ${jname(a.diocese ?? a.jurisdiction)}${period ? `, ${period}` : ''}`, status: a.status },
+        a.discrepancies
+      )
+    }
+    for (const e of p.events ?? []) {
+      yield* emit(
+        e.sources,
+        { entity, section: 'eventos', claim: `${EVENT_LABEL[e.type]}${e.date ? `, ${formatDate(e.date)}` : ''}`, detail: e.description, status: e.status },
+        e.discrepancies
+      )
+    }
+  }
+
+  for (const j of index.jurisdictions.values()) {
+    const entity: EntityRef = { kind: 'jurisdiction', id: j.id, name: j.acronym ?? j.name }
+    yield* emit(j.sources, { entity, section: 'resumo', claim: 'Descrição', status: null })
+    if (j.founded) yield* emit(j.founded.sources, { entity, section: 'resumo', claim: `Fundação${j.founded.date ? `, ${formatDate(j.founded.date)}` : ''}`, detail: j.founded.place ?? undefined, status: null })
+    if (j.dissolved) yield* emit(j.dissolved.sources, { entity, section: 'resumo', claim: `Extinção${j.dissolved.date ? `, ${formatDate(j.dissolved.date)}` : ''}`, status: null })
+    for (const r of j.relations ?? []) {
+      const period = formatPeriod(r.date, r.end).replace(/^desde /, '')
+      yield* emit(
+        r.sources,
+        { entity, section: 'origem', claim: `${RELATION_LABEL[r.type]} ${jname(r.target)}${period ? `, ${period}` : ''}`, status: r.status },
+        r.discrepancies
+      )
+    }
+  }
+}
+
+/** Ficha de uma fonte: metadados e cada afirmação que ela sustenta, com o trecho citado. */
+export function sourceView(index: BaseIndex, id: string): SourceView | null {
+  const source = index.sources.get(id)
+  if (!source) return null
+  const claims: SupportedClaim[] = []
+  const entities = new Set<string>()
+  for (const { ref, claim } of citations(index)) {
+    if (ref.source !== id) continue
+    claims.push({ ...claim, quote: ref.quote, page: ref.page })
+    entities.add(`${claim.entity.kind}:${claim.entity.id}`)
+  }
+  // Pessoas antes de jurisdições; dentro de cada entidade, a ordem do arquivo.
+  const rank = (k: EntityKind) => (k === 'person' ? 0 : 1)
+  claims.sort((a, b) => rank(a.entity.kind) - rank(b.entity.kind) || a.entity.name.localeCompare(b.entity.name, 'pt-BR'))
+  return { source, claims, entities: entities.size }
+}
+
+/** Bibliografia: toda fonte com quantas afirmações e entidades sustenta. */
+export function sourceList(index: BaseIndex): SourceListItem[] {
+  const counts = new Map<string, { claims: number; entities: Set<string> }>()
+  for (const { ref, claim } of citations(index)) {
+    const c = counts.get(ref.source) ?? { claims: 0, entities: new Set<string>() }
+    c.claims++
+    c.entities.add(`${claim.entity.kind}:${claim.entity.id}`)
+    counts.set(ref.source, c)
+  }
+  return [...index.sources.values()]
+    .map((s) => ({
+      ...summarize(s),
+      accessed: s.accessed,
+      language: s.language,
+      claims: counts.get(s.id)?.claims ?? 0,
+      entities: counts.get(s.id)?.entities.size ?? 0
+    }))
+    .sort((a, b) => b.claims - a.claims || a.title.localeCompare(b.title, 'pt-BR'))
 }

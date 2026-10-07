@@ -20,11 +20,18 @@ export interface GraphNode {
   startYear?: number
   endYear?: number
   color?: string
-  /** Pessoa: ordem mais alta registrada. */
+  /** Pessoa: ordem mais alta registrada (ou inferida, ver `inferredOrder`). */
   order?: TOrdination['order']
+  /**
+   * Pessoa sem ordenação cadastrada, mas que sagrou ou ordenou alguém: é bispo
+   * por implicação. Marcado para a interface poder dizer "bispo (inferido)".
+   */
+  inferredOrder?: boolean
   /** Jurisdição: tipo (igreja nacional, diocese...). */
   jurisdictionType?: TJurisdiction['type']
   country?: string
+  /** Faz parte do núcleo brasileiro: jurisdição no Brasil ou pessoa vinculada a uma. */
+  brazil?: boolean
 }
 
 export interface GraphEdge {
@@ -51,6 +58,15 @@ export function buildGraph(base: Base): Graph {
   const nodes: GraphNode[] = []
   const edges: GraphEdge[] = []
 
+  // Quem sagrou ou ordenou alguém é bispo, mesmo sem ordenação própria cadastrada.
+  const ordainers = new Set<string>()
+  for (const p of base.people) {
+    for (const o of p.ordinations ?? []) {
+      for (const id of compact([o.ordained_by, o.principal_consecrator, ...(o.co_consecrators ?? [])])) ordainers.add(id)
+    }
+  }
+  const brazilianJurisdictions = new Set(base.jurisdictions.filter((j) => j.country === 'BR').map((j) => j.id))
+
   for (const j of base.jurisdictions) {
     nodes.push({
       id: nodeId('jurisdiction', j.id),
@@ -61,7 +77,8 @@ export function buildGraph(base: Base): Graph {
       endYear: j.dissolved?.date ? yearOf(j.dissolved.date) : undefined,
       color: j.color,
       jurisdictionType: j.type,
-      country: j.country ?? undefined
+      country: j.country ?? undefined,
+      brazil: brazilianJurisdictions.has(j.id) || undefined
     })
     for (const r of j.relations ?? []) {
       edges.push({
@@ -77,6 +94,8 @@ export function buildGraph(base: Base): Graph {
   for (const p of base.people) {
     const ordinations = p.ordinations ?? []
     const first = compact(ordinations.map((o) => o.date)).sort()[0]
+    const recorded = (['episcopate', 'presbyterate', 'diaconate'] as const).find((o) => ordinations.some((x) => x.order === o))
+    const inferred = recorded !== 'episcopate' && ordainers.has(p.id)
     nodes.push({
       id: nodeId('person', p.id),
       kind: 'person',
@@ -84,7 +103,9 @@ export function buildGraph(base: Base): Graph {
       search: compact([p.name, p.full_name, ...(p.aliases ?? [])]),
       startYear: first ? yearOf(first) : p.birth?.date ? yearOf(p.birth.date) : undefined,
       endYear: p.death?.date ? yearOf(p.death.date) : undefined,
-      order: (['episcopate', 'presbyterate', 'diaconate'] as const).find((o) => ordinations.some((x) => x.order === o))
+      order: inferred ? 'episcopate' : recorded,
+      inferredOrder: inferred || undefined,
+      brazil: (p.affiliations ?? []).some((a) => brazilianJurisdictions.has(a.jurisdiction) || (!!a.diocese && brazilianJurisdictions.has(a.diocese))) || undefined
     })
 
     const to = nodeId('person', p.id)

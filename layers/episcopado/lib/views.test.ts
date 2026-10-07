@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { Base } from './schemas'
-import { indexBase, jurisdictionView, personView } from './views'
+import { indexBase, jurisdictionView, personView, sourceList, sourceView } from './views'
 
 const s1 = [{ source: 's', quote: 'trecho um' }]
 const s2 = [{ source: 's', quote: 'trecho dois' }]
@@ -61,6 +61,38 @@ describe('personView', () => {
 
   it('retorna null para id desconhecido', () => {
     expect(personView(index, 'x')).toBeNull()
+  })
+})
+
+describe('sourceView', () => {
+  it('lista tudo o que a fonte sustenta, inclusive versões divergentes, com o trecho', () => {
+    const v = sourceView(index, 's')!
+    expect(v.source.title).toBe('Notícia')
+    expect(v.entities).toBe(3)
+    expect(v.claims).toContainEqual({
+      entity: { kind: 'person', id: 'b', name: 'Bento' },
+      section: 'ordenacoes',
+      claim: 'Episcopado, 8 dez. 2012',
+      detail: 'IN · por Ana',
+      status: 'contested',
+      quote: 'trecho um',
+      page: undefined
+    })
+    expect(v.claims).toContainEqual(expect.objectContaining({ claim: 'Episcopado, 8 dez. 2012', discrepancy: 'data: 8 dez. 2018', quote: 'trecho dois' }))
+    expect(v.claims).toContainEqual(expect.objectContaining({ entity: expect.objectContaining({ id: 'b' }), section: 'trajetoria', claim: 'Primaz — IN, desde 2018', status: 'probable' }))
+    expect(v.claims).toContainEqual(expect.objectContaining({ entity: { kind: 'jurisdiction', id: 'nova', name: 'IN' }, section: 'origem', claim: 'Cisma de Igreja Velha, 2005' }))
+    // Pessoas primeiro, depois jurisdições.
+    expect(v.claims.map((c) => c.entity.kind)).toEqual(['person', 'person', 'person', 'person', 'jurisdiction'])
+  })
+
+  it('retorna null para fonte desconhecida', () => {
+    expect(sourceView(index, 'x')).toBeNull()
+  })
+})
+
+describe('sourceList', () => {
+  it('conta afirmações e entidades por fonte', () => {
+    expect(sourceList(index)).toMatchObject([{ id: 's', claims: 5, entities: 3, level: 'secondary' }])
   })
 })
 

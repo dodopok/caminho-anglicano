@@ -126,6 +126,75 @@ export const STATUS_LABEL = {
   contested: 'Contestado'
 } as const
 
+/** O que cada selo de status significa (tooltip e legenda). */
+export const STATUS_DESCRIPTION: Record<keyof typeof STATUS_LABEL, string> = {
+  confirmed: 'Sustentado por fonte primária ou por fontes independentes que concordam entre si.',
+  probable: 'Sustentado por uma única fonte secundária, por testemunho ou por dedução; ainda falta confirmação documental.',
+  contested: 'As fontes divergem. Todas as versões estão registradas, cada uma com suas próprias fontes.'
+}
+
+export const SOURCE_LEVEL_LABEL: Record<TSource['level'], string> = {
+  primary: 'Fonte primária',
+  secondary: 'Fonte secundária',
+  tertiary: 'Fonte terciária'
+}
+
+export const SOURCE_LEVEL_DESCRIPTION: Record<TSource['level'], string> = {
+  primary: 'Documento produzido por quem participou do fato: ata, comunicado oficial, carta pastoral, registro da própria igreja.',
+  secondary: 'Relato de terceiros sobre o fato: notícia, livro, artigo, tese ou testemunho.',
+  tertiary: 'Compilação de outras fontes, como Wikipédia ou Wikidata.'
+}
+
+/** Campos que podem aparecer em `discrepancies`. */
+export const FIELD_LABEL: Record<string, string> = {
+  date: 'data',
+  start: 'início',
+  end: 'fim',
+  place: 'local',
+  jurisdiction: 'jurisdição',
+  diocese: 'diocese',
+  principal_consecrator: 'sagrante principal',
+  co_consecrators: 'co-sagrantes',
+  ordained_by: 'ordenante',
+  office: 'cargo',
+  mode: 'modo',
+  role: 'função',
+  end_reason: 'motivo do fim',
+  led_by: 'liderada por',
+  target: 'jurisdição',
+  type: 'tipo',
+  description: 'descrição'
+}
+
+/** Nome em pt-BR do país a partir do código ISO 3166-1 (os que aparecem na base). */
+export const COUNTRY_LABEL: Record<string, string> = {
+  BR: 'Brasil',
+  US: 'Estados Unidos',
+  GB: 'Reino Unido',
+  CA: 'Canadá',
+  AR: 'Argentina',
+  PT: 'Portugal',
+  NG: 'Nigéria',
+  KE: 'Quênia',
+  FK: 'Ilhas Malvinas',
+  UG: 'Uganda',
+  RW: 'Ruanda',
+  AU: 'Austrália',
+  ZA: 'África do Sul',
+  CL: 'Chile',
+  UY: 'Uruguai',
+  PY: 'Paraguai',
+  BO: 'Bolívia',
+  PE: 'Peru',
+  MX: 'México',
+  ES: 'Espanha',
+  IE: 'Irlanda'
+}
+
+export function countryName(code: string | null | undefined): string {
+  return code ? COUNTRY_LABEL[code] ?? code : ''
+}
+
 export const EDGE_LABEL: Record<EdgeKind, string> = {
   consecration: 'Sagração (principal)',
   co_consecration: 'Co-sagração',

@@ -67,3 +67,27 @@ export function nodeRoute(nodeId: string): string {
   const [kind, id] = [nodeId.slice(0, 1), nodeId.slice(2)]
   return kind === 'p' ? `/episcopado/pessoa/${id}` : `/episcopado/jurisdicao/${id}`
 }
+
+/** Rota da ficha de uma fonte. */
+export const sourceRoute = (id: string) => `/episcopado/fonte/${id}`
+
+/** Cores dos selos de status (texto/fundo em Tailwind) e do traço no grafo. */
+export const STATUS_STYLE = {
+  confirmed: { badge: 'bg-emerald-50 text-emerald-800 ring-emerald-200', dot: '#059669', glyph: '✓' },
+  probable: { badge: 'bg-amber-50 text-amber-800 ring-amber-200', dot: '#d97706', glyph: '~' },
+  contested: { badge: 'bg-red-50 text-red-800 ring-red-200', dot: '#dc2626', glyph: '!' }
+} as const
+
+/** Halo vermelho desenhado por baixo das arestas contestadas. */
+export const CONTESTED_HALO = '#dc262655'
+
+/**
+ * Aparência de uma aresta no grafo conforme o status: a cor diz o tipo, o status
+ * entra como transparência (provável) ou como halo vermelho (contestada, ver `EpiscopadoGraph`).
+ */
+export function edgeAppearance(kind: EdgeKind, status: 'confirmed' | 'probable' | 'contested'): { color: string; label: string; halo: boolean } {
+  const base = edgeColor(kind)
+  if (status === 'probable') return { color: `${base}88`, label: 'provável', halo: false }
+  if (status === 'contested') return { color: base, label: 'contestada', halo: true }
+  return { color: base, label: '', halo: false }
+}
