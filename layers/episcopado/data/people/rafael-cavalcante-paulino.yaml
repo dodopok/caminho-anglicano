@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rafael-cavalcante-paulino
+name: Rafael Cavalcante Paulino
+ordinations:
+- order: diaconate
+  date: '2025-04-26'
+  place: Paróquia Anglicana das Boas Novas, Caaporã (PB)
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: confirmed
+  sources:
+  - source: dar-2025-paulino-conv
+    quote: >-
+      convida Vossa Senhoria, famílias e comunidades, para participarem do Rito de Ordenação Diaconal de Rafael
+      Cavalcante Paulino.
+  - source: dar-2025-paulino-conv
+    quote: 'Data: 26 de abril 2025'
+  - source: dar-2025-paulino-diac
+    quote: >-
+      o Bispo Diocesano João C. Peixoto Filho, no 11º ano de sua Sagração Episcopal, ordenou o agora Diácono e Reverendo
+      Rafael Paulino Cavalcante.
+  notes: >-
+    Diocese Anglicana do Recife. Data e local segundo o convite; a notícia de 2025-05-11 confirma a ordenação sem
+    repetir a data.
+- order: presbyterate
+  date: '2026-10-03'
+  place: Comunidade/Missão Anglicana Bom Pastor, Campina Grande (PB)
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: confirmed
+  sources:
+  - source: dar-2026-paulino-presb
+    quote: viveu um momento histórico no último dia 3 de outubro. Em celebração realizada pela
+  - source: dar-2026-paulino-presb
+    quote: Comunidade Anglicana Bom Pastor, o Rev. Rafael Paulino foi ordenado ao ministério
+  - source: dar-2026-paulino-presb
+    quote: A celebração foi presidida pelo bispo Dom João Peixoto, da Diocese Anglicana do Recife (DAR),
+  notes: Diocese Anglicana do Recife. Primeiro presbítero da IEAB em Campina Grande.

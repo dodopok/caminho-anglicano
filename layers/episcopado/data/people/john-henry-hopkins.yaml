@@ -1,16 +1,53 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: john-henry-hopkins
 name: John Henry Hopkins
+full_name: John Henry Hopkins
+aliases:
+- Bishop Hopkins
+- John H. Hopkins
+birth:
+  date: '1792-01-30'
+  sources:
+  - source: perry-episcopate-1895
+    quote: His consecrators were Bishops White, Griswold, and Bowen.
+death:
+  date: '1868-01-09'
+  sources:
+  - source: perry-episcopate-1895
+    quote: His consecrators were Bishops White, Griswold, and Bowen.
+wikidata: Q6238831
+biography: Primeiro bispo de Vermont (1832) e 8º Presiding Bishop da Igreja Episcopal.
+sources:
+- source: perry-episcopate-1895
+  quote: His consecrators were Bishops White, Griswold, and Bowen.
 ordinations:
 - order: episcopate
-  date: '1832'
+  date: '1832-10-31'
   place: St. Paul's Chapel, Nova York
   jurisdiction: tec
   office: diocesan
   principal_consecrator: william-white
-  status: probable
+  co_consecrators:
+  - alexander-viets-griswold
+  - nathaniel-bowen
+  status: confirmed
   sources:
+  - source: perry-episcopate-1895
+    quote: >-
+      His con secration took place in St. Paul's Chapel, New York, Oct. 31, 1832. His consecrators were Bishops
+      White, Griswold, and Bowen.
+  - source: wp-hopkins
+    quote: Hopkins was consecrated on October 31, 1832, in Saint Paul's Church, New York.
+  - source: wp-lista-bispos-tec
+    quote: >-
+      bgcolor="#D4B1BB" | 26 | [[John Henry Hopkins]] | [[William White (Bishop of Pennsylvania)|2]] [[Alexander
+      Viets Griswold|12]] [[Nathaniel Bowen|17]] | 1832 | [[Episcopal Diocese of Vermont|I Vermont]] | [[List of
+      presiding bishops of the Episcopal Church in the United States of America|PB8]]
   - source: iab-poster-linhagem-uchoa
     quote: >-
       153a. William White (1787-1836) que consagrou John Hopkins como o primeiro bispo de Vermont, na Igreja de
       São Paulo, em Nova York.
+  notes: >-
+    Pôster: "William White ... consagrou John Hopkins como o primeiro bispo de Vermont" — CONFIRMADO. Co-sagrantes:
+    Griswold (Eastern Diocese) e Bowen (Carolina do Sul). Hopkins foi sagrado no mesmo dia que os bispos de Ohio,
+    Nova Jersey e Kentucky.

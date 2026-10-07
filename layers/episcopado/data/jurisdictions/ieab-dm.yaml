@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-dm
+acronym: IEAB-DM
+name: Diocese Meridional (Diocese Anglicana Meridional)
+type: diocese
+country: BR
+founded:
+  date: '1950'
+  sources:
+  - source: ieab-dioceses
+    quote: Área 1- formada pelas Dioceses Meridional, Sul Ocidental e de Pelotas.
+  - source: wp-pt-dioc-meridional
+    quote: A sede diocesana está localizada na cidade de Porto Alegre.
+website: https://diocesemeridional.org.br/
+description: >-
+  Se em Porto Alegre (Catedral Nacional da Santissima Trindade). Uma das tres dioceses da divisao de 1949/1950.
+  Area 1.
+sources:
+- source: ieab-dioceses
+  quote: Área 1- formada pelas Dioceses Meridional, Sul Ocidental e de Pelotas.
+- source: wp-pt-dioc-meridional
+  quote: A sede diocesana está localizada na cidade de Porto Alegre.
+relations:
+- type: part_of
+  target: ieab
+  date: null
+  status: confirmed
+  sources:
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'

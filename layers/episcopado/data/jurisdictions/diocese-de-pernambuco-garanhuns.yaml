@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-pernambuco-garanhuns
+name: Diocese de Pernambuco (Garanhuns)
+type: diocese
+relations:
+- type: part_of
+  target: iatb
+  status: confirmed
+  sources:
+  - source: iatb-home
+    quote: † Dom José da Santa Cruz BISPO DIOCESANO E ABADE.

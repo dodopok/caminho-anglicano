@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: herlon-alves-bezerra
+name: Herlon Alves Bezerra
+ordinations:
+- order: diaconate
+  date: '2022-12-10'
+  place: Auditório da Gerência Regional de Educação do Sertão do Médio São Francisco, Petrolina (PE)
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: confirmed
+  sources:
+  - source: dar-2022-herlon
+    quote: O Revmo. Bispo Diocesano, Dom João Câncio Peixoto Filho, esteve no dia 10/12 na cidade de Petrolina
+  - source: dar-2022-herlon
+    quote: Nessa data, foi ordenado ao Diaconato, o Candidato às Sagradas Ordens, Herlon Bezerra.
+  notes: Diocese Anglicana do Recife; Missão Anglicana São Francisco (Petrolina).
+- order: presbyterate
+  date: '2023-11-11'
+  place: Auditório do Senac, Petrolina (PE)
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: confirmed
+  sources:
+  - source: dar-2023-herlon-presb
+    quote: >-
+      Nesse último sábado (11/11), o Bispo Diocesano Dom João C. Peixoto esteve em Petrolina, sertão de Pernambuco,
+      para uma intensa agenda que envolveu
+  - source: dar-2023-herlon-presb
+    quote: além da ordenação presbiteral do Revdo. Herlon Alves Bezerra.
+  - source: dar-2023-herlon-presb-conv
+    quote: >-
+      Ordenação Presbiteral do Revdo. Herlon Bezerra, confirmação e recebimento de novos membros e Instituições
+      ao Mistério Pastoral, no dia 11 de novembro de 2023, às 19h, no Auditório do Senac em Petrolina – PE.
+  notes: Diocese Anglicana do Recife. Local vem do convite.

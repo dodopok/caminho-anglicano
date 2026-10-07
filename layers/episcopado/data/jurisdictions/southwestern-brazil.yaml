@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: southwestern-brazil
+name: Southwestern Brazil
+type: diocese
+relations:
+- type: part_of
+  target: dmsob
+  status: confirmed
+  sources:
+  - source: wit-1955-09-29
+    quote: the Rev. Plimio L. Simoes to be bishop of Southwestern Brazil. He will replace Bishop Krischke
+  - source: ens-xxvi-8
+    quote: >-
+      Bishop Plinio Simoes of Southwestern Brazil and Bishop Edmund Knox Sherrill of Central Brazil expressed their
+      thanks to the House

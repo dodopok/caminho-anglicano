@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: dmcb
+name: DMCB
+events:
+- type: other
+  date: '1949'
+  description: >-
+    Convenção Geral de 1949 (San Francisco) divide o Sul do Brasil em três distritos; Krischke eleito para o terceiro
+    bispo; Pithan eleito bispo de um dos novos distritos.
+  status: confirmed
+  sources:
+  - source: wit-1949-10-27
+    quote: >-
+      it was decided to divide the district of South- ern Brazil into three dioceses. In Brazil at present there
+      are two bishops, one diocesan and a coadjutor. Election of the Rev. E. M. Krische as the third bish­ op will
+      place the Brazilian Church on an independent basis, able to consecrate its own bish­ ops
+  - source: wit-1949-10-20
+    quote: >-
+      The missionary district of Southern Brazil, having been di­ vided by General Convention in­ to three parts,
+      will have the Rev. Egmont M. Krischke as the

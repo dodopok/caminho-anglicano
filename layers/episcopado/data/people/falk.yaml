@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: falk
+name: FALK
+events:
+- type: deposition
+  date: '1897'
+  description: >-
+    Visita do bispo Waite H. Stirling (Falkland Islands) em 1897: ordenação dos três primeiros presbíteros brasileiros
+    (um quarto diácono havia sido deposto por Peterkin).
+  status: probable
+  sources:
+  - source: wp-en-kinsolving
+    quote: >-
+      Bishop Stirling ordained three of the Brazilian deacons to the priesthood (Peterkin having deposed the fourth).
+  - source: wp-pt-ieab
+    quote: >-
+      foi a vez da comunidade receber Waite Hockin Stirling, bispo das Ilhas Falkland, que ordenou os três primeiros
+      presbíteros nacionais

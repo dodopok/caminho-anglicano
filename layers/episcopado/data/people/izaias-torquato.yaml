@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: izaias-torquato
+name: Izaias Torquato
+ordinations:
+- order: diaconate
+  date: 2017-08
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: confirmed
+  sources:
+  - source: dab-2017-izaias
+    quote: >-
+      O reverendo é oriundo da Diocese Anglicana do Recife, ordenado diácono (Agosto, 2017), pelas mãos do Revmo.
+      Bispo Dom João Cancio.
+  notes: >-
+    Ordenado na Diocese Anglicana do Recife; transferido para a Diocese Anglicana de Brasília (Paróquia São Felipe/São
+    Filipe, Goiânia) em 2017.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-diocese-recife
+  start: 2017-08
+  end: 2017-10
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: dab-2017-izaias
+    quote: O reverendo é oriundo da Diocese Anglicana do Recife
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-diocese-brasilia
+  start: 2017-10
+  status: confirmed
+  sources:
+  - source: dab-2017-izaias
+    quote: Izaias Torquato, nordestino, da terra dos Altos Coqueiros, periferia da cidade de Recife-PE
+  - source: dab-2017-izaias
+    quote: chega a Goiânia acompanhado de sua esposa
+  notes: >-
+    Instalado como ministro encarregado da Paróquia Anglicana São Felipe (Goiânia); listado como presbítero da DAB
+    em 2025.

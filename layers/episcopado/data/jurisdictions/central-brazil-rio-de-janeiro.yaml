@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: central-brazil-rio-de-janeiro
+name: Central Brazil (Rio de Janeiro)
+type: diocese
+relations:
+- type: part_of
+  target: dmcb
+  status: confirmed
+  sources:
+  - source: ens-xxxvi-7
+    quote: He then became Bishop of Central Brazil, a position he occupied until his retirement in 1958.
+  - source: wit-1950-03-30
+    quote: Bishop Louis C. Melcher of Cen- tral Brazil.
+  - source: wit-1958-12-25
+    quote: who was elected at the General Convention to succeed Bishop Melcher
+  - source: ens-xxvi-8
+    quote: Bishop Edmund Knox Sherrill of Central Brazil

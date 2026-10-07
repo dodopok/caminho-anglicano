@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: e-s-yuba
+name: E. S. Yuba
+biography: Diácono em St. Mark's, Aliança (SP), ordenado presbítero em 15/04/1940 em Porto Alegre.
+sources:
+- source: wit-1940-04-18
+  quote: >-
+    The Rev. E. S. Yuba, deacon at St. Mark's, Al- ianca, in the State of Sao Paulo, and the Rev. Curtis Fletcher,
+    Jr., deacon at the Ascension, were advanced to the priesthood.
+ordinations:
+- order: presbyterate
+  date: '1940-04-15'
+  place: Igreja da Ascensão, Porto Alegre
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: wit-1940-04-18
+    quote: >-
+      Celebration of the 50th anniversary of the founding of Brazilian Episco­ pal Church began April 15 with an
+      ordination service in the Church of the Ascension, Porto Alegre.
+  notes: >-
+    A nota diz em seguida 'Following the ordina­tion, Bishop Thomas dedicated the new building of the Theological
+    Semi­nary', sugerindo Thomas como ordenante, mas não o declara.

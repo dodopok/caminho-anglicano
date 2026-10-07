@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: tac-natal
+acronym: TAC-Natal
+name: Diocese Anglicana do Natal (Traditional Anglican Church in Brazil)
+type: diocese
+country: BR
+founded:
+  date: 2019-07
+  sources:
+  - source: tac-natal-5anos
+    quote: >-
+      The Primate has sent the following message of congratulations to Bishop Albertino Barreiros, his clergy and
+      people on the Fifth Anniversary of the founding of the Anglican Diocese of Natal (TAC)
+  - source: tac-adclerum-2025
+    quote: Christmas Mass (Parish of the Nativity of the Blessed Virgin Mary, Natal - RN)
+website: https://traditionalanglicanchurch.com/tag/brazil
+description: >-
+  Diocese continuante com sede na Paróquia da Natividade da Bem-Aventurada Virgem Maria (Natal-RN); missões em Parnamirim,
+  Macaíba, São José de Mipibu, São Gonçalo do Amarante (RN) e Olinda (PE). Antes da TAC, figurava na Igreja Anglicana
+  de Confissão Continuante (IACC), segundo o site desta.
+sources:
+- source: tac-natal-5anos
+  quote: >-
+    The Primate has sent the following message of congratulations to Bishop Albertino Barreiros, his clergy and
+    people on the Fifth Anniversary of the founding of the Anglican Diocese of Natal (TAC)
+- source: tac-adclerum-2025
+  quote: Christmas Mass (Parish of the Nativity of the Blessed Virgin Mary, Natal - RN)
+relations:
+- type: part_of
+  target: tac
+  date: '2025'
+  led_by:
+  - albertino-de-sousa-barreiros
+  status: confirmed
+  sources:
+  - source: tac-adclerum-2025
+    quote: >-
+      This year was full of achievements, especially the definitive entry into the TAC which occurred at the General
+      Synod in Columbus, Georgia - USA.
+  - source: tac-adclerum-2025
+    quote: >-
+      During the General Synod of the TAC in Columbus, Georgia - USA, the Dioceses of Brazil were officially received
+      unanimously.
+  notes: >-
+    Recepção 'definitiva' em 2025; o primaz da TAC já tratava a diocese como 'Anglican Diocese of Natal (TAC)' em
+    julho de 2024, o que indica relação anterior (provisória).
+- type: part_of
+  target: iacc
+  date: null
+  end: '2025'
+  led_by:
+  - albertino-de-sousa-barreiros
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      Todas essas Dioceses, com a primeira, a Diocese Anglicana do Japí-Jundiaí, formam atualmente a Igreja Anglicana
+      de Confissão Continuante
+  notes: Página da IACC sem data; data de saída para a TAC inferida (no máximo 2025).

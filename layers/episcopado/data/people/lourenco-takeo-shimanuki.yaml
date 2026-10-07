@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: lourenco-takeo-shimanuki
+name: Lourenço Takeo Shimanuki
+biography: >-
+  Presbítero nipo-brasileiro formado no Colégio Cruzeiro do Sul e no seminário de Porto Alegre, ordenado presbítero
+  em janeiro de 1934; enviado ao Japão em 1963.
+sources:
+- source: ens-xi-12
+  quote: >-
+    In January of 1934, he was ordained priest in the Episcopal Church of Brazil, and has since served the Church
+    in the state of Sao Paulo.
+ordinations:
+- order: presbyterate
+  date: 1934-01
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: ens-xi-12
+    quote: In January of 1934, he was ordained priest in the Episcopal Church of Brazil
+  notes: Ordenante não informado; o bispo diocesano à época era W. M. M. Thomas.
+affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: 1934-01
+  status: probable
+  sources:
+  - source: ens-xi-12
+    quote: has since served the Church in the state of Sao Paulo.

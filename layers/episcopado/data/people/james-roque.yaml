@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: james-roque
+name: James Roque
+biography: >-
+  Primeiro brasileiro sagrado bispo pelo arcebispo colombiano Victor Manuel Cruz-Blanco (2013, Barranquilla); fundador
+  da Diocese Anglicana do Japí (Jundiaí-SP); metropolita da Igreja Anglicana de Confissão Continuante.
+sources:
+- source: iacc-continuante
+  quote: >-
+    O primeiro brasileiro a ser sagrado Bispo por ††Victor Manuel Cruz-Blanco, em cerimônia ocorrida em 2013, foi
+    o paulista dom †James Roque
+ordinations:
+- order: episcopate
+  date: '2013'
+  place: Pró-Catedral, Barranquilla (Colômbia)
+  jurisdiction: iacc
+  principal_consecrator: victor-manuel-cruz-blanco
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      Dom †James Roque foi ordenado e sagrado pelo citado arcebispo assistido por mais quatro bispos, na Pró-Catedral
+      da Sé Metropolitana.
+  notes: >-
+    Fonte é o próprio site da IACC, assinado por James Roque (autodeclaração). Quatro co-sagrantes não nomeados.
+    Sucessão declarada: Chambers/Pagtakhan/Pae (St. Louis 1977) via Cruz-Blanco. Registro neutro do que a jurisdição
+    declara.
+affiliations:
+- jurisdiction: iacc
+  role: primate
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      cujo Moderador e Metropolita, eleito pelos demais, é o primeiro bispo anglicano continuante no País, dom †James
+      Roque.
+events:
+- type: other
+  date: null
+  description: >-
+    Bispos brasileiros que, segundo a IACC, receberam a linhagem episcopal de James Roque: José Kennedy de Freitas,
+    Marcos Mattos, Albertino de Sousa Barreiros (Natal), Claudinei Rodrigo Ferreira (Santa Catarina), Itabira Jonas
+    (São Paulo e Paraná), Francisco de Assis Coelho e Pinho (Amazonas, eleito) e José Barbosa da Silva (Portugal)
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      Após, houve a transmissão da sua linhagem episcopal para poucas pessoas. Podem ser citadas como as mais atuantes
+      no anglicanismo continuante brasileiro os bispos: dom †José Kennedy de Freitas

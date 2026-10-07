@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: southern-brazil-coadjutor-1948-49-diocesano-1949-50
+name: Southern Brazil (coadjutor 1948-49, diocesano 1949-50)
+type: diocese
+relations:
+- type: part_of
+  target: dmsb
+  status: probable
+  sources:
+  - source: ens-xxxvi-7
+    quote: In 1948 he was consecrated Bishop Coadjutor of Southern Brazil and was Diocesan from 1949-50.

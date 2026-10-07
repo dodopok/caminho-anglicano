@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iacc
+acronym: IACC
+name: Igreja Anglicana de Confissão Continuante
+type: national_church
+country: BR
+founded:
+  date: '2013'
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      Todas essas Dioceses, com a primeira, a Diocese Anglicana do Japí-Jundiaí, formam atualmente a Igreja Anglicana
+      de Confissão Continuante, cujo Moderador e Metropolita, eleito pelos demais, é o primeiro bispo anglicano
+      continuante no País, dom †James Roque.
+website: https://dasc-iacc.webnode.page/
+description: >-
+  Rede continuante brasileira cujo metropolita é Dom James Roque (Jundiaí-SP), primeiro brasileiro sagrado (2013,
+  Barranquilla, Colômbia) pelo arcebispo colombiano Victor Manuel Cruz-Blanco; declara sucessão de Chambers/Pagtakhan/Pae
+  (Congresso de St. Louis, 1977). Primeira diocese: Diocese Anglicana do Japí (Jundiaí). Segundo o próprio site
+  (sem data), incluía as dioceses de Natal, Santa Catarina, São Paulo e Paraná, Amazonas (pró-diocese) e Portugal.
+sources:
+- source: iacc-continuante
+  quote: >-
+    Todas essas Dioceses, com a primeira, a Diocese Anglicana do Japí-Jundiaí, formam atualmente a Igreja Anglicana
+    de Confissão Continuante, cujo Moderador e Metropolita, eleito pelos demais, é o primeiro bispo anglicano continuante
+    no País, dom †James Roque.

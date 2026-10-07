@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-dar
+acronym: IEAB-DAR
+name: Diocese Anglicana do Recife (ex-Diocese Setentrional)
+type: diocese
+country: BR
+founded:
+  date: '1975'
+  sources:
+  - source: ieab-serie-dar
+    quote: Comemorando 45 anos de presença 17/04/1975
+  - source: costa2021
+    quote: >-
+      Já a Diocese Setentrional foi criada em 1975 e instalada em 1976, sendo desmembrada da Diocese Central.
+  - source: wp-pt-dioc-recife
+    quote: Foi criada em 1975 e instalada em 1976.
+website: https://dioceseanglicanaderecife.com.br/
+description: >-
+  Criada pelo Sinodo em 1975 (17/04/1975 segundo a IEAB), instalada em 1976; abrangia Norte e Nordeste ate a criacao
+  da Amazonia (2006).
+sources:
+- source: ieab-serie-dar
+  quote: Comemorando 45 anos de presença 17/04/1975
+- source: costa2021
+  quote: >-
+    Já a Diocese Setentrional foi criada em 1975 e instalada em 1976, sendo desmembrada da Diocese Central.
+- source: wp-pt-dioc-recife
+  quote: Foi criada em 1975 e instalada em 1976.
+relations:
+- type: part_of
+  target: ieab
+  date: null
+  status: confirmed
+  sources:
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'

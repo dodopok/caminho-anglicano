@@ -1,14 +1,73 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: henry-st-george-tucker
 name: Henry St. George Tucker
+full_name: Henry St. George Tucker
+aliases:
+- Bishop Tucker
+- H. St. George Tucker
+birth:
+  date: '1874-07-16'
+  sources:
+  - source: wp-tucker
+    quote: >-
+      {{succession box|title=[[List of presiding bishops in the Episcopal Church in the United States of America|19th
+      Presiding Bishop]]|before=[[James DeWolf Perry]]|after=[[Henry Knox Sherrill]]|years=1938–1946}}
+death:
+  date: '1959-08-08'
+  sources:
+  - source: wp-tucker
+    quote: >-
+      {{succession box|title=[[List of presiding bishops in the Episcopal Church in the United States of America|19th
+      Presiding Bishop]]|before=[[James DeWolf Perry]]|after=[[Henry Knox Sherrill]]|years=1938–1946}}
+wikidata: Q3785003
+biography: Bispo missionário de Kyoto (1912), depois bispo da Virgínia e 19º Presiding Bishop (1938–1946).
+sources:
+- source: wp-tucker
+  quote: >-
+    {{succession box|title=[[List of presiding bishops in the Episcopal Church in the United States of America|19th
+    Presiding Bishop]]|before=[[James DeWolf Perry]]|after=[[Henry Knox Sherrill]]|years=1938–1946}}
 ordinations:
 - order: episcopate
-  date: '1912'
+  date: '1912-03-25'
+  place: Holy Trinity Church, Kyoto, Japão
   jurisdiction: tec
   office: missionary
-  principal_consecrator: frederick-foote-johnson
-  status: probable
+  principal_consecrator: john-mckim
+  co_consecrators:
+  - andrews-de-hokkaido
+  - cecil-de-south-tokyo
+  - foss-de-osaka
+  status: contested
   sources:
+  - source: som-1912-06
+    quote: last of all coming Bishop McKim, of Tokyo, the presiding bishop and consecrator.
+  - source: som-1912-06
+    quote: >-
+      we assembled on the Feast of the Annunciation just before ten o’clock, for the consecration of the Rev. Dr.
+      Henry St. George Tucker, elected bishop of the District of Kyoto.
+  - source: wp-tucker
+    quote: '| consecrated_by   = [[John McKim]]'
+  - source: wp-lista-bispos-tec
+    quote: >-
+      bgcolor="#D4B1BB " | 258 | [[Henry St. George Tucker (bishop)|Henry St. George Tucker]] | [[John McKim|167]]
+      [[Rollestone S. Fyffe|FYF]] [[Arthur Lea (bishop)|LEA]] | 1912 | [[Missionary Bishop|Missionary]], [[Nippon
+      Sei Ko Kai|II Kyoto]]; [[Episcopal Diocese of Virginia|VIII Virginia]] | <ref group="N" name="tucker" /> [[List
+      of presiding bishops of the Episcopal Church in the United States of Am
   - source: iab-poster-linhagem-uchoa
     quote: >-
       157c. Frederick Foote Johnson (1905-1932) que, em 1912, sagrou Henry St. George Tucker como bispo de Kyoto.
+  discrepancies:
+  - field: principal_consecrator
+    value: frederick-foote-johnson
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        157c. Frederick Foote Johnson (1905-1932) que, em 1912, sagrou Henry St. George Tucker como bispo de Kyoto.
+  notes: >-
+    CORRIGIDO: o pôster diz que Frederick Foote Johnson sagrou Tucker em 1912; as fontes dizem que o sagrante principal
+    foi John McKim, bispo de Tóquio, em Kyoto, na festa da Anunciação (25/03/1912). Johnson não aparece. Co-sagrantes
+    divergem: a Spirit of Missions menciona os bispos Cecil (South Tokyo), Foss (Osaka) e Andrews (Hokkaido) participando
+    do rito e "the laying-on of hands by the four bishops present"; a lista da Wikipédia dá McKim, Rollestone Fyffe
+    (Rangoon) e Arthur Lea (Kyushu). Os co_sagrantes aqui (Cecil, Foss, Andrews, só com os sobrenomes dados pela
+    fonte) são inferência de que os "four bishops present" foram McKim + esses três, que tiveram papéis no rito;
+    ver dúvidas.

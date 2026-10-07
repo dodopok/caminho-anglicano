@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: porto-alegre
+name: Porto Alegre
+type: diocese
+relations:
+- type: part_of
+  target: dmsb
+  status: probable
+  sources:
+  - source: wit-1941-12-04
+    quote: for their 35 years' service in the ministry.
+  - source: wp-en-ieab
+    quote: >-
+      They established themselves in a rented house later known as the Mission House (Casa da Missão) in Porto Alegre,
+      where they held the first Anglican Mass in Portuguese on 1 June 1890.

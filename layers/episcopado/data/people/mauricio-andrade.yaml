@@ -1,7 +1,41 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: mauricio-andrade
 name: Mauricio Jose Araujo de Andrade
+aliases:
+- Bispo Maurício
+- Dom Maurício Andrade
+- Mauricio Andrade
+- Maurício José de Araújo Andrade
+birth:
+  date: '1962-03-07'
+  sources:
+  - source: dab-bispo-mauricio
+    quote: Este é Maurício José de Araújo Andrade, ou simplesmente Bispo Maurício.
+  - source: dab-bispo-mauricio
+    quote: Nascido em 7 de março de 1962, no Rio de Janeiro
+biography: Bispo diocesano de Brasília (IEAB) desde 2003 e primaz da IEAB de 2006 a 2013.
+sources:
+- source: dab-bispo-mauricio
+  quote: Este é Maurício José de Araújo Andrade, ou simplesmente Bispo Maurício.
+- source: dab-bispo-mauricio
+  quote: Nascido em 7 de março de 1962, no Rio de Janeiro
 ordinations:
+- order: diaconate
+  date: '1988'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: dab-bispo-mauricio
+    quote: Ordenado diácono em 1988 e presbítero em 1989
+  notes: Ordenante não informado.
+- order: presbyterate
+  date: '1989'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: dab-bispo-mauricio
+    quote: Ordenado diácono em 1988 e presbítero em 1989
+  notes: Ordenante não informado.
 - order: episcopate
   date: '2003-08-31'
   place: Catedral Metropolitana de Brasilia (catolica)
@@ -29,12 +63,16 @@ affiliations:
     quote: Maurício José Araújo de Andrade - setembro de 2003 até o presente.
   - source: ieab-dioceses
     quote: Bispo Diocesano – Revmo. Maurício José Araújo de Andrade
+  - source: dab-bispo-mauricio
+    quote: À frente da Diocese Anglicana de Brasília desde 2003
 - jurisdiction: ieab
   role: primate
   start: 2006-07
   end: 2013-11
   status: confirmed
   sources:
+  - source: dab-bispo-mauricio
+    quote: Durante sua liderança como bispo primaz da IEAB (2006-2013)
   - source: wp-en-ieab
     quote: Maurício José Araújo de Andrade, 2006—2013
   - source: costa2021
@@ -55,3 +93,29 @@ affiliations:
       Atualmente o bispo da Diocese Anglicana de Brasília também e o responsável pelo Distrito Missionário do Oeste.
   notes: >-
     Responsavel ja em 2011 (Costa: "responsável pelo Distrito Missionário e então Primaz"). Fim aproximado.
+events:
+- type: other
+  date: '2004-09-16'
+  description: >-
+    Decreto de Supervisao Episcopal Especial sobre a Diocese Anglicana do Recife (16/09/2004), com supervisao do
+    bispo Mauricio Andrade (DAB) e do sufraganeo Filadelfo Oliveira; Robinson Cavalcanti recusa acatar.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      a recusa do Bispo Diocesano, Dom Edward Robinson de Barros Cavalcanti, em acatar o Decreto de Supervisão Episcopal
+      Especial de 16 de setembro de 2004
+- type: other
+  date: '2005-02-22'
+  description: >-
+    Resolucao 001/2005 (18/02/2005) suspende preventivamente Robinson Cavalcanti; Resolucao 002/2005 (22/02/2005)
+    nomeia Filadelfo Oliveira Neto Autoridade Eclesiastica da Diocese do Recife; Mauricio Andrade instituido "bispo
+    interventor" em marco de 2005.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      foi emitida a Resolução 001/2005, em 18 de fevereiro de 2005208, suspendendo o bispo diocesano em caráter
+      preventivo.
+  - source: costa2021
+    quote: No mês seguinte, o bispo Maurício Andrade, foi instituído como “bispo interventor”

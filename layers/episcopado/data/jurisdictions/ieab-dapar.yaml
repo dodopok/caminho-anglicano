@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-dapar
+acronym: IEAB-DAPAR
+name: Diocese Anglicana do Parana (ex-Diocese Anglicana de Curitiba)
+type: diocese
+country: BR
+founded:
+  date: '2003'
+  sources:
+  - source: ieab-parana-20
+    quote: Ela foi organizada em 2003, partindo das sementes plantadas por décadas
+  - source: costa2021
+    quote: >-
+      impulsionando a criação da Diocese de Curitiba, em 2003, sendo eleito como seu primeiro bispo Naudal Alves
+      Gomes
+website: http://dapar.org/
+description: >-
+  Organizada em 2003 a partir da DASP; primeiro bispo Naudal Alves Gomes; se Catedral de Sao Tiago, Curitiba.
+sources:
+- source: ieab-parana-20
+  quote: Ela foi organizada em 2003, partindo das sementes plantadas por décadas
+- source: costa2021
+  quote: >-
+    impulsionando a criação da Diocese de Curitiba, em 2003, sendo eleito como seu primeiro bispo Naudal Alves Gomes
+relations:
+- type: part_of
+  target: ieab
+  date: null
+  status: confirmed
+  sources:
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'

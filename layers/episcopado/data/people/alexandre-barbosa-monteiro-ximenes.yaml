@@ -5,15 +5,18 @@ ordinations:
 - order: episcopate
   date: '2007-04-14'
   jurisdiction: iecb
-  status: probable
+  principal_consecrator: randolph-austin-adler
+  status: confirmed
   sources:
   - source: ptwiki-iecb
     quote: >-
       Em 14 de abril de 2007, foram sagrados dois novos bispos: Alexandre Barbosa Monteiro Ximenes, responsável
       pela Diocese do Litoral Sul e Alagoas
+  - source: enwiki-iccec-bispos
+    quote: '|54||14 April 2007||1||Alexandre Barbosa Monteiro Ximenes||Aux. Bp. Brazil||'
   notes: >-
-    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
-    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso.
+    Lista da ICCEC (Wikipédia EN) dá como sagrante o nº 1, Austin Randolph Adler (patriarca da ICCEC). A Wikipédia
+    PT dá a mesma data. Sucessão: ICCEC.
 affiliations:
 - jurisdiction: iecb
   role: bishop

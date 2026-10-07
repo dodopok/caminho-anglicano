@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: reitor-da-igreja-do-crucificado-bage
+name: Reitor da Igreja do Crucificado, Bagé
+type: diocese
+relations:
+- type: part_of
+  target: dmsb
+  status: probable
+  sources:
+  - source: wit-1940-02-22
+    quote: >-
+      KRISCHKE, E. M., rector of Ascension Church in Porto Alegre, Brazil, has been appointed to succeed Suffragan
+      Bishop-elect Pithan at the Church of the Crucified in Bage by Bishop Thomas of Southern Brazil.
+  - source: wit-1940-02-22
+    quote: >-
+      KRISCHKE, E. M., rector of Ascension Church in Porto Alegre, Brazil, has been appointed to succeed Suffragan
+      Bishop-elect Pithan at the Church of the Crucified in Bage

@@ -2,6 +2,7 @@
 id: ieab-diocese-recife
 name: Diocese Anglicana do Recife (IEAB)
 aliases:
+- Diocese Anglicana do Recife
 - Diocese do Recife
 type: diocese
 tradition: anglican
@@ -9,8 +10,12 @@ country: BR
 relations:
 - type: part_of
   target: ieab
-  status: probable
+  status: confirmed
   sources:
+  - source: dar-2023-peixoto10
+    quote: >-
+      nos alegramos com toda a Igreja pelos 10 anos de episcopado do Bispo João Câncio Peixoto Filho, à frente da
+      Diocese Anglicana do Recife.
   - source: wp-en-uchoa
     quote: >-
       Uchôa joined two-thirds of the clergy and roughly 95 percent of the laity in disaffiliating from the IEAB
@@ -30,6 +35,30 @@ relations:
       dos Guararapes
   - source: queiroz-2004-ufpe
     quote: De lá pra cá, eu sou o reitor dessa paróquia
+  - source: dar-2023-oldair-presb
+    quote: O Revdo. Oldair Pena foi instituído como novo Pároco da Paróquia da Virgem Maria.
+  - source: dar-2023-martorelli
+    quote: >-
+      Após a Eucaristia, o Bispo instalou o Rev. Martorelli Dantas como novo pároco da Paróquia Anglicana da Santíssima
+      Trindade
+  - source: dab-2017-izaias
+    quote: O reverendo é oriundo da Diocese Anglicana do Recife
+  - source: dar-2026-osiel
+    quote: que passa oficialmente a ser parte do clero ordenado da Diocese Anglicana do Recife.
+  - source: dar-2026-madalena
+    quote: em março de 2026, o diácono Anderson Soares tornou-se ministro encarregado.
+  - source: dar-2026-gilson
+    quote: >-
+      é presbítero da Diocese Anglicana do Recife e deão da Catedral Anglicana do Bom Samaritano, ministério que
+      exerce de forma voluntária e vocacional há mais de duas décadas.
+  - source: dar-2026-gilson
+    quote: Essa busca o conduziu ao Recife em 1999, ano decisivo em sua vida.
+  - source: dar-2026-gilson
+    quote: Entre 2002 e 2008, Gustavo foi reitor do SAET
+  - source: dar-2020-barbetta-diac
+    quote: >-
+      receberá Alfredo Barbetta, Diácono da Igreja Episcopal Anglicana. Ele é coordenador da Missão Episcopal Anglicana
+      Amor Fraterno, em São Luís.
   - source: ciceb-betania-nossaigreja
     quote: >-
       Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom Clóvis

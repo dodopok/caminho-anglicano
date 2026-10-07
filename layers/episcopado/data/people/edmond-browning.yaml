@@ -1,8 +1,27 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: edmond-browning
 name: Edmond Browning
+full_name: Edmond Lee Browning
 aliases:
+- Bishop Browning
+- Edmond L. Browning
 - Edmond Lee Browning
+birth:
+  date: '1929-03-11'
+  sources:
+  - source: ens-1968-01-08
+    quote: The Rt. Rev. Edmond Lee Browning was consecrated Bishop of Okinawa, Jan. 5.
+death:
+  date: '2016-07-11'
+  sources:
+  - source: ens-1968-01-08
+    quote: The Rt. Rev. Edmond Lee Browning was consecrated Bishop of Okinawa, Jan. 5.
+wikidata: Q1285685
+biography: >-
+  Primeiro bispo missionário de Okinawa (1968), depois bispo do Havaí e 24º Presiding Bishop (1986–1997).
+sources:
+- source: ens-1968-01-08
+  quote: The Rt. Rev. Edmond Lee Browning was consecrated Bishop of Okinawa, Jan. 5.
 ordinations:
 - order: episcopate
   date: '1959'

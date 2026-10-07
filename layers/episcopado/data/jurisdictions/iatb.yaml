@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iatb
+acronym: IATB
+name: Igreja Anglicana Tradicional do Brasil
+type: national_church
+country: BR
+website: https://www.anglicanatradicional.com.br/
+description: >-
+  Igreja anglo-católica continuante ligada à Anglican Episcopal Church International (AECI); bispo primaz Dom Rui
+  Costa Barbosa; outros bispos: José da Santa Cruz (Diocese de Pernambuco, abade em Garanhuns), Cristiano Alves,
+  Jefferson Nilson (Curitiba). NÃO é a TAC (apesar do nome em português coincidir com o usado pela TAC no Brasil).
+  Declara intercomunhão com a AECI e com a 'Igreja Ortodoxa Ucraniana no México'.
+sources:
+- source: iatb-home
+  quote: >-
+    Nós, Dom Rui Costa Barbosa, Dom José da Santa Cruz, Dom Cristiano Alves, presbíteros, diáconos e leigos da Igreja
+    Anglicana Tradicional do Brasil, reunidos na Cidade de Nova Iguaçu-RJ, no mês de novembro de 2025
+- source: iatb-intercomunhoes
+  quote: Comunhões e Igrejas com Intercomunhão com IATB The Anglican Episcopal Church—International
+relations:
+- type: in_communion_with
+  target: aeci
+  date: null
+  led_by:
+  - rui-costa-barbosa
+  status: confirmed
+  sources:
+  - source: iatb-intercomunhoes
+    quote: Comunhões e Igrejas com Intercomunhão com IATB The Anglican Episcopal Church—International

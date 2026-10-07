@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-dap
+acronym: IEAB-DAP
+name: Diocese Anglicana de Pelotas
+type: diocese
+country: BR
+founded:
+  date: 1988-10
+  sources:
+  - source: ieab-pelotas-35
+    quote: cuja implantação aconteceu no dia 12 de março de 1989
+  - source: wp-pt-dioc-pelotas
+    quote: Foi criada em outubro de 1988 e instalada em abril de 1989.
+website: http://dapsul.com.br/
+description: Desmembrada da Meridional; criada em 1988, implantada em 12/03/1989.
+sources:
+- source: ieab-pelotas-35
+  quote: cuja implantação aconteceu no dia 12 de março de 1989
+- source: wp-pt-dioc-pelotas
+  quote: Foi criada em outubro de 1988 e instalada em abril de 1989.
+relations:
+- type: part_of
+  target: ieab
+  date: null
+  status: confirmed
+  sources:
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'

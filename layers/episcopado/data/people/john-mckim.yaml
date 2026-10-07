@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-mckim
+name: John McKim
+full_name: John McKim
+aliases:
+- Bishop McKim
+birth:
+  date: '1852-07-17'
+  sources:
+  - source: som-1912-06
+    quote: last of all coming Bishop McKim, of Tokyo, the presiding bishop and consecrator.
+death:
+  date: '1936-04-04'
+  sources:
+  - source: som-1912-06
+    quote: last of all coming Bishop McKim, of Tokyo, the presiding bishop and consecrator.
+wikidata: Q6248014
+biography: Bispo missionário de Tóquio (1893); sagrante principal de Henry St. George Tucker em Kyoto (1912).
+sources:
+- source: som-1912-06
+  quote: last of all coming Bishop McKim, of Tokyo, the presiding bishop and consecrator.

@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: dmcb
+acronym: DMCB
+name: Distrito Missionário do Brasil Central (Missionary District of Central Brazil)
+type: diocese
+country: BR
+founded:
+  date: '1949'
+  sources:
+  - source: ens-xxvi-24
+    quote: >-
+      The third district "Central Brazil" includes all the rest of the nation, although at the time there were no
+      missions north of Rio de Janeiro.
+  - source: wit-1952-03-20
+    quote: Central Brazil; Rio de Janeiro; Rt. Rev. Louis C. Melcher, D.D., 18 clergy; 4 parishes;
+description: >-
+  Criado em 1949 cobrindo o restante do país a partir do Rio de Janeiro; bispos Louis C. Melcher (até 1958) e Edmund
+  K. Sherrill (1959-).
+sources:
+- source: ens-xxvi-24
+  quote: >-
+    The third district "Central Brazil" includes all the rest of the nation, although at the time there were no
+    missions north of Rio de Janeiro.
+- source: wit-1952-03-20
+  quote: Central Brazil; Rio de Janeiro; Rt. Rev. Louis C. Melcher, D.D., 18 clergy; 4 parishes;
+relations:
+- type: part_of
+  target: tec
+  date: '1949'
+  end: '1965'
+  led_by:
+  - edmund-knox-sherrill
+  - louis-chester-melcher
+  status: confirmed
+  sources:
+  - source: ens-xvi-1
+    quote: >-
+      It is comprised of three districts--Central Brazil, Southern Brazil, and Southwestern Brazil--and has a combined
+      membership of 31,000.

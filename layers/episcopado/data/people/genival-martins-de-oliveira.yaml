@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: genival-martins-de-oliveira
+name: Genival Martins de Oliveira
+biography: >-
+  Sagrado por José Kennedy de Freitas; primeiro arcebispo metropolitano da Igreja Anglicana Continuante do Brasil.
+sources:
+- source: iacc-continuante
+  quote: >-
+    um dos seus bispos por ele sagrados, ††Genival Martins de Oliveira, foi eleito como o primeiro arcebispo metropolitano
+    da Igreja
+affiliations:
+- jurisdiction: iacb
+  role: archbishop
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      foi eleito como o primeiro arcebispo metropolitano da Igreja, ficando dom †José Kennedy de Freitas como o
+      bispo coadjutor da Jurisdição.

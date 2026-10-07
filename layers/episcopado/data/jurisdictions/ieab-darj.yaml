@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-darj
+acronym: IEAB-DARJ
+name: Diocese Anglicana do Rio de Janeiro (ex-Diocese Central)
+type: diocese
+country: BR
+founded:
+  date: '1950'
+  sources:
+  - source: ieab-serie-darj
+    quote: >-
+      Foi fundada em 1950 e consiste na porção territorial os estados do Rio de Janeiro, Espírito Santo e a maior
+      parte de Minas Gerais
+  - source: wp-pt-dioc-sulocidental
+    quote: Diocese Central (hoje denominada Diocese Anglicana do Rio de Janeiro), com sé na ex-capital federal.
+website: http://www.darj.ieab.org.br
+description: >-
+  Antiga Diocese Central, se no Rio de Janeiro (Catedral do Redentor). Dela foram desmembradas Sul Central (SP,
+  1969/70), Setentrional (Recife, 1975/76) e Brasilia (1982/84).
+sources:
+- source: ieab-serie-darj
+  quote: >-
+    Foi fundada em 1950 e consiste na porção territorial os estados do Rio de Janeiro, Espírito Santo e a maior
+    parte de Minas Gerais
+- source: wp-pt-dioc-sulocidental
+  quote: Diocese Central (hoje denominada Diocese Anglicana do Rio de Janeiro), com sé na ex-capital federal.
+relations:
+- type: part_of
+  target: ieab
+  date: null
+  status: confirmed
+  sources:
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'

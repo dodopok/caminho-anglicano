@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-gaw-meem
+name: John Gaw Meem
+aliases:
+- John Meem
+- Rev. John G. Meem
+biography: >-
+  Missionário norte-americano chegado em 1891; representou a convocação brasileira na Convenção Geral de 1898; responsável
+  pela obra no Rio até sua morte (1924).
+sources:
+- source: wp-en-kinsolving
+  quote: with Meem designated as their representatives to carry the news to the General Convention
+- source: som-1898-11
+  quote: the Bev. John G. Meem, of Brazil
+affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: '1891'
+  end: '1924'
+  end_reason: death
+  status: probable
+  sources:
+  - source: wit-1952-03-20
+    quote: the Rev. John Meem and Miss Mary Packard, daughter of the Seminary's Dean.
+  - source: wp-en-kinsolving
+    quote: Meem assumed primary responsibility for that geographic area until his death in 1924

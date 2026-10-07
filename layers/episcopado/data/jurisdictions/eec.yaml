@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: eec
+acronym: EEC
+name: Evangelical Episcopal Communion
+type: communion
+country: US
+founded:
+  date: '1995'
+  sources:
+  - source: geec-ourstory
+    quote: The immediate origins of the EEC trace to convergence discussions in 1994–1995.
+wikidata: Q124077677
+website: https://www.globaleec.org/
+description: >-
+  Comunhão de convergência liderada pelo patriarca Russell McClanahan; separou-se da CEEC em 2021 (segundo a Wikipédia).
+sources:
+- source: geec-ourstory
+  quote: The immediate origins of the EEC trace to convergence discussions in 1994–1995.
+relations:
+- type: schism_from
+  target: ceec
+  date: '2021'
+  led_by:
+  - russell-mcclanahan
+  status: probable
+  sources:
+  - source: enwiki-ceec
+    quote: >-
+      separations=[[Continuing Evangelical Episcopal Communion]] (2019); [[Union of Charismatic Orthodox Churches]]
+      (2019); [[Evangelical Episcopal Communion]] (2021)
+  notes: Trecho do infobox da Wikipédia EN.

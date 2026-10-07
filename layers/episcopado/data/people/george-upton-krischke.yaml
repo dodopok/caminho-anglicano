@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: george-upton-krischke
+name: George Upton Krischke
+aliases:
+- Jorge Upton Krischke
+- Rev. George U. Krischke
+biography: >-
+  Presbítero brasileiro em Porto Alegre, pai de Egmont M. Krischke; homenageado em 1941 por 35 anos de ministério.
+sources:
+- source: wit-1941-12-04
+  quote: >-
+    Two prominent Brazilian rectors, Rev. Joao Baptista Barcellos and Rev. George U. Krischke, both of Port Alegre,
+    were honored at a special service in the Pro-Cathedral of the Ascension in Port Alegre, Brazil, for their 35
+    years' service in the ministry.
+- source: wit-1950-03-30
+  quote: Bishop-elect Krischke had as his . attending . presbyters his father, the Rev. George U. Krischke
+affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  diocese: porto-alegre
+  start: c.1906
+  status: probable
+  sources:
+  - source: wit-1941-12-04
+    quote: for their 35 years' service in the ministry.
+  notes: 35 anos de ministério em dez. 1941 implica ordenação c. 1906 (inferência).

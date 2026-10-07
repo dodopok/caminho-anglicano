@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ilcae
+acronym: ILCAE
+name: Igreja Lusitana Católica Apostólica Evangélica (Igreja Episcopal em Portugal)
+type: national_church
+country: PT
+description: Igreja anglicana/episcopal portuguesa cujo primeiro bispo foi sagrado em 1958 por Plínio L. Simões.
+sources:
+- source: wit-1958-07-10
+  quote: >-
+    The Rev. Antonio F. Finador, pastor of St. John's, Oporto, Portugal, w a s consecrated as the first bishop of
+    the Episcopal Church in Portugal.

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: joao-baptista-barcellos
+name: João Baptista Barcellos
+aliases:
+- Rev. João Batista Barcelos
+biography: Presbítero brasileiro em Porto Alegre, homenageado em 1941 por 35 anos de ministério.
+sources:
+- source: wit-1941-12-04
+  quote: Rev. Joao Baptista Barcellos and Rev. George U. Krischke, both of Port Alegre
+affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  diocese: porto-alegre
+  start: c.1906
+  status: probable
+  sources:
+  - source: wit-1941-12-04
+    quote: for their 35 years' service in the ministry.

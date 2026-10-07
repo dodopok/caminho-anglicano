@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-dasp
+acronym: IEAB-DASP
+name: Diocese Anglicana de Sao Paulo (ex-Diocese Sul Central)
+type: diocese
+country: BR
+founded:
+  date: '1969'
+  sources:
+  - source: wp-pt-dioc-saopaulo
+    quote: Foi criada em 1969 e instalada em 1970.
+  - source: costa2021
+    quote: A primeira a ser criada foi a Diocese Sul Central, em 1970 (com sede na cidade de São Paulo).
+website: https://www.dioceseanglicanasp.org.br/
+description: 'Criada em 1969, instalada em 1970 (Costa: criada 1970); inicialmente SP, PR e MS.'
+sources:
+- source: wp-pt-dioc-saopaulo
+  quote: Foi criada em 1969 e instalada em 1970.
+- source: costa2021
+  quote: A primeira a ser criada foi a Diocese Sul Central, em 1970 (com sede na cidade de São Paulo).
+relations:
+- type: part_of
+  target: ieab
+  date: null
+  status: confirmed
+  sources:
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'

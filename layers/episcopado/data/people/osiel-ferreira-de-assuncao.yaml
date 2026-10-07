@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: osiel-ferreira-de-assuncao
+name: Osiel Ferreira de Assunção
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-diocese-recife
+  start: '2026-08-08'
+  status: confirmed
+  sources:
+  - source: dar-2026-osiel
+    quote: que passa oficialmente a ser parte do clero ordenado da Diocese Anglicana do Recife.
+  notes: Recebido como membro da IEAB em 2020-11-28; ordens de origem não informadas.
+events:
+- type: other
+  date: '2020-11-28'
+  description: >-
+    Recepção do Rev. Osiel Assunção (Batalha, PI) na IEAB, com acolhimento da Missão Anglicana São Paulo Apóstolo,
+    primeira comunidade anglicana do Piauí
+  status: confirmed
+  sources:
+  - source: dar-2020-barbetta
+    quote: >-
+      destacamos o Reverendo Osiel Assunção, da cidade de Batalha no Piauí, que aproveitou a celebração para oficializar
+      a sua entrada para a Igreja Episcopal Anglicana do Brasil
+- type: other
+  date: '2026-08-08'
+  description: >-
+    Reconhecimento (previsto) das ordens sacerdotais do Rev. Osiel Ferreira de Assunção pelo bispo João Peixoto,
+    na capela da Missão São Paulo Apóstolo, Batalha (PI)
+  status: probable
+  sources:
+  - source: dar-2026-osiel-conv
+    quote: >-
+      No sábado (8/8), em celebração na capela da Missão, será reconhecida as ordens sacerdotais do Rev. Osiel Ferreira
+      de Assunção.
+- type: other
+  date: '2026-08-08'
+  description: >-
+    Reconhecimento das ordens do Rev. Osiel Ferreira de Assunção pelo bispo João Peixoto em Batalha (PI); passa
+    a integrar o clero da Diocese Anglicana do Recife
+  status: confirmed
+  sources:
+  - source: dar-2026-osiel
+    quote: >-
+      A celebração foi marcada pelo Reconhecimento das Ordens do Rev. Osiel Ferreira de Assunção, que passa oficialmente
+      a ser parte do clero ordenado da Diocese Anglicana do Recife.
+  - source: dar-2026-osiel
+    quote: >-
+      No final de semana do dia dos pais, o Bispo João C. Peixoto, esteve em visita pastoral ao Piauí, na cidade
+      de Batalha

@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: martorelli-dantas-da-silva
+name: Martorelli Dantas da Silva
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-diocese-recife
+  start: '2023-06-04'
+  status: confirmed
+  sources:
+  - source: dar-2023-martorelli
+    quote: >-
+      Após a Eucaristia, o Bispo instalou o Rev. Martorelli Dantas como novo pároco da Paróquia Anglicana da Santíssima
+      Trindade
+  notes: Ordens de origem não informadas na fonte.
+events:
+- type: other
+  date: '2023-06-04'
+  description: >-
+    Reconhecimento das sagradas ordens do Rev. Martorelli Dantas da Silva pelo bispo João Peixoto (Diocese Anglicana
+    do Recife, IEAB), que o instalou como pároco da Paróquia Anglicana da Santíssima Trindade
+  status: confirmed
+  sources:
+  - source: dar-2023-martorelli
+    quote: >-
+      No último dia 04 de junho, o nosso Bispo Diocesano Dom João Cancio Peixoto Filho, em solenidade celebrada
+      nas dependências do Hotel Villa D’Oro, onde se reúne a Paróquia Anglicana da Santíssima Trindade, reconheceu
+      as sagradas ordens do Rev. Martorelli Dantas, vindo este a se tornar um presbítero de nossa Diocese
+  - source: dar-2023-martorelli-conv
+    quote: o Reconhecimento das Sagradas Ordens do Revdo. Martorelli Dantas da Silva.

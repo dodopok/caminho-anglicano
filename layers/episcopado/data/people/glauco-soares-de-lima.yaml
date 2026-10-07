@@ -36,6 +36,18 @@ ordinations:
     Conflita com Costa 2021 (eleito coadjutor em julho, sagrado em 1o de outubro).
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '1989'
+  end: '2013'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: wp-pt-glauco
+    quote: >-
+      Em 2013, juntou-se ao movimento liderado pelo então Bispo da Diocese Anglicana de São Paulo, Dom Roger Douglas
+      Bird, e o Reverendo Aldo Quintão, tornando-se um dos fundadores do Movimento Anglicano no Brasil, que rompeu
+      com a IEAB
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
   start: 1990-01
@@ -70,3 +82,12 @@ affiliations:
   sources:
   - source: wp-pt-dioc-brasilia
     quote: Glauco Soares de Lima (Interino) - janeiro a maio de 2003;
+- jurisdiction: manb
+  role: founder
+  start: '2013'
+  end: '2017-12-26'
+  end_reason: death
+  status: probable
+  sources:
+  - source: wp-pt-glauco
+    quote: Morreu em São Paulo no dia 26 de dezembro de 2017.

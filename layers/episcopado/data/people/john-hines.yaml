@@ -1,8 +1,32 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: john-hines
 name: John Hines
+full_name: John Elbridge Hines
 aliases:
+- Bishop Hines
+- John E. Hines
 - John Elbridge Hines
+birth:
+  date: '1910-10-03'
+  sources:
+  - source: witness-1945-11-01
+    quote: >-
+      The Rev. John E. Hines was consecrated bishop coadjutor of Texas on October 18th at Christ Church here where
+      he was formerly rector.
+death:
+  date: '1997-07-19'
+  sources:
+  - source: witness-1945-11-01
+    quote: >-
+      The Rev. John E. Hines was consecrated bishop coadjutor of Texas on October 18th at Christ Church here where
+      he was formerly rector.
+wikidata: Q1699958
+biography: Bispo coadjutor (1945) e depois bispo do Texas; 22º Presiding Bishop.
+sources:
+- source: witness-1945-11-01
+  quote: >-
+    The Rev. John E. Hines was consecrated bishop coadjutor of Texas on October 18th at Christ Church here where
+    he was formerly rector.
 ordinations:
 - order: episcopate
   date: '1945'
@@ -14,3 +38,20 @@ ordinations:
   - source: iab-poster-linhagem-uchoa
     quote: >-
       159c. Henry Knox Sherrill (1930-1958) que, em 1945, sagrou John Elbridge Hines como bispo coadjutor do Texas.
+events:
+- type: other
+  date: '1965-04-25'
+  description: >-
+    Autonomia: a Igreja Episcopal Brasileira torna-se a 19a provincia da Comunhao Anglicana; proclamacao pelo Bispo
+    Presidente John E. Hines no Sinodo de Porto Alegre (25/04/1965) e investidura de Egmont Machado Krischke como
+    primeiro primaz.
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      O projeto do Sínodo foi levado à votação na 61ª Convenção Geral, realizada de 11 a 23 de outubro do mesmo
+      ano, na cidade de St. Louis, no Missouri, sendo aprovada a autonomia plena da Igreja Brasileira.
+  - source: wp-en-ieab
+    quote: >-
+      The Anglican community of Brazil was a missionary district of the Episcopal Church until 1965, when it gained
+      its ecclesiastical independence and became a separate province of the Anglican Communion.

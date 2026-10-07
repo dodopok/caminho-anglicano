@@ -1,15 +1,151 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: athalicio-pithan
 name: Athalício Pithan
+full_name: Athalício Theodoro Pithan
 aliases:
+- A. T. Pithan
+- Athalicio T. Pithan
+- Athalico Pithan
 - Athalício Theodoro Pithan
+birth:
+  date: '1898-09-20'
+  sources:
+  - source: wit-1939-11-16
+    quote: The Rev. Athalicio T. Pithan, native of Brazil, was elected suffragan bishop of Southern Brazil
+  - source: wp-en-pithan
+    quote: >-
+      Athalício Theodoro Pithan (1898–1966) was the first native bishop of the Anglican Episcopal Church of Brazil.
+  - source: wd-q19559990
+    quote: Athalicio T. Pithan | bishop of the Anglican Episcopal Church of Brazil
+death:
+  date: '1966-08-29'
+  sources:
+  - source: wit-1939-11-16
+    quote: The Rev. Athalicio T. Pithan, native of Brazil, was elected suffragan bishop of Southern Brazil
+  - source: wp-en-pithan
+    quote: >-
+      Athalício Theodoro Pithan (1898–1966) was the first native bishop of the Anglican Episcopal Church of Brazil.
+  - source: wd-q19559990
+    quote: Athalicio T. Pithan | bishop of the Anglican Episcopal Church of Brazil
+wikidata: Q19559990
+biography: >-
+  Primeiro bispo nascido no Brasil; reitor em Bagé, eleito sufragâneo do Sul do Brasil em 1939, sagrado em 21/04/1940;
+  bispo do Sul do Brasil após a divisão de 1949; aposentou-se por doença em 1955.
+sources:
+- source: wit-1939-11-16
+  quote: The Rev. Athalicio T. Pithan, native of Brazil, was elected suffragan bishop of Southern Brazil
+- source: wp-en-pithan
+  quote: >-
+    Athalício Theodoro Pithan (1898–1966) was the first native bishop of the Anglican Episcopal Church of Brazil.
+- source: wd-q19559990
+  quote: Athalicio T. Pithan | bishop of the Anglican Episcopal Church of Brazil
 ordinations:
 - order: episcopate
-  date: '1940'
-  jurisdiction: ieab
-  status: probable
+  date: '1940-04-21'
+  place: Porto Alegre (provável; a nota anuncia a sagração como clímax das celebrações em Porto Alegre)
+  jurisdiction: dmsb
+  office: suffragan
+  principal_consecrator: william-matthews-merrick-thomas
+  co_consecrators:
+  - efrain-salinas-y-velasco
+  - hugo-blankingship
+  status: contested
   sources:
+  - source: wit-1940-04-18
+    quote: >-
+      The climax of the celebration will be the consecration on April 21 of the Rev. A. T. Pithan, suffragan- bishop-elect,
+      with Bishop Thomas as consecrator, and the Bishops of Cuba and Mexico as co-consecrators.
+  - source: wp-en-histlist
+    quote: '[[William M. M. Thomas|348]] [[Efraín Salinas|380]] [[Hugo Blankingship|415]]'
+  - source: calvani-2005
+    quote: O primeiro bispo brasileiro (Athalicio Theodoro Pithan) só foi sagrado em 1940
   - source: iab-poster-linhagem-meira
     quote: >-
       Em 1940, Athalício Theodoro Pithan foi consagrado como o primeiro bispo brasileiro, marcando a transição para
       uma liderança nacional.
+  discrepancies:
+  - field: jurisdiction
+    value: ieab
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Em 1940, Athalício Theodoro Pithan foi consagrado como o primeiro bispo brasileiro, marcando a transição
+        para uma liderança nacional.
+  notes: >-
+    The Witness (18/04/1940) anuncia a sagração para 21/04; não localizei relato posterior confirmando realização
+    na data. Local exato (Igreja da Ascensão/Pró-Catedral?) não declarado.
+affiliations:
+- jurisdiction: dmsb
+  role: bishop
+  diocese: southern-brazil-sufraganeo
+  start: '1940-04-21'
+  end: '1949'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: wit-1942-03-12
+    quote: Ninety-one Brazilians were con- firmed by the suffragan bishop of Brazil, Athalicio Pithan
+  - source: wit-1949-10-27
+    quote: >-
+      The present suff­ ragan bishop, the Rt. Rev. Ath- alicio T. Pithan, was elected bishop, to be in charge of
+      the third of the newly set up dio­ ceses.
+- jurisdiction: dmsb
+  role: diocesan_bishop
+  diocese: southern-brazil
+  start: '1949'
+  end: '1955'
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: wit-1952-03-20
+    quote: >-
+      Southern Brazil; Porto Alegre, the oldest field includes Theological Seminary; Southern Cross School, 800
+      boys; St. Margaret's School, 225 girls; Rt. Rev. Athalico Pithan;
+  - source: wit-1955-09-29
+    quote: >-
+      He will replace Bishop Krischke who is transferring to Southern Brazil to replace Bishop Pithan who is retiring
+      because of illness.
+  notes: >-
+    Início: eleito em 1949 (Witness 27/10/1949); Melcher foi diocesano do Sul de 1949 a 1950 segundo ENS — possível
+    sobreposição/transição; ver dúvidas.
+- jurisdiction: dmsb
+  role: clergy
+  diocese: reitor-da-igreja-do-crucificado-bage
+  end: '1940'
+  status: probable
+  sources:
+  - source: wit-1940-02-22
+    quote: >-
+      KRISCHKE, E. M., rector of Ascension Church in Porto Alegre, Brazil, has been appointed to succeed Suffragan
+      Bishop-elect Pithan at the Church of the Crucified in Bage by Bishop Thomas of Southern Brazil.
+events:
+- type: other
+  date: 1939-11
+  description: >-
+    Pedido de bispo sufragâneo por Thomas (1939) e eleição de Pithan pela Câmara dos Bispos (St. Louis, nov. 1939).
+  status: confirmed
+  sources:
+  - source: wit-1939-10-19
+    quote: >-
+      Thomas of Southern Brazil had asked for a Suffragan Bishop, to be elected at the meeting of the House of Bish­
+      ops to be held November 8-9 in St. Louis
+  - source: ens-xxvi-24
+    quote: >-
+      The hope of many Brazilian Episcopalians was realized in 1939 when Athalicio Theodoro Pithan, a Brazilian,
+      was elected Suffragan Bishop.
+- type: other
+  date: '1949'
+  description: >-
+    Convenção Geral de 1949 (San Francisco) divide o Sul do Brasil em três distritos; Krischke eleito para o terceiro
+    bispo; Pithan eleito bispo de um dos novos distritos.
+  status: confirmed
+  sources:
+  - source: wit-1949-10-27
+    quote: >-
+      it was decided to divide the district of South- ern Brazil into three dioceses. In Brazil at present there
+      are two bishops, one diocesan and a coadjutor. Election of the Rev. E. M. Krische as the third bish­ op will
+      place the Brazilian Church on an independent basis, able to consecrate its own bish­ ops
+  - source: wit-1949-10-20
+    quote: >-
+      The missionary district of Southern Brazil, having been di­ vided by General Convention in­ to three parts,
+      will have the Rev. Egmont M. Krischke as the

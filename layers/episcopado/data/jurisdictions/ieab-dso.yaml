@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-dso
+acronym: IEAB-DSO
+name: Diocese Sul-Ocidental (Diocese Anglicana Sul-Ocidental)
+type: diocese
+country: BR
+founded:
+  date: '1950-03-22'
+  sources:
+  - source: ieab-serie-dso
+    quote: >-
+      Foi fundada em 22 de março de 1950 e consiste na porção territorial sul-ocidental dos estados de Santa Catarina
+      e Rio Grande do Sul.
+description: Se em Santa Maria (RS), Catedral do Mediador.
+sources:
+- source: ieab-serie-dso
+  quote: >-
+    Foi fundada em 22 de março de 1950 e consiste na porção territorial sul-ocidental dos estados de Santa Catarina
+    e Rio Grande do Sul.
+relations:
+- type: part_of
+  target: ieab
+  date: null
+  status: confirmed
+  sources:
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'

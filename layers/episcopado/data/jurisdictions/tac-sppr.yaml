@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: tac-sppr
+acronym: TAC-SPPR
+name: Diocese Anglicana de São Paulo e Paraná (Traditional Anglican Church — Igreja Anglicana Tradicional)
+type: diocese
+country: BR
+website: https://santamarialondrina.wixsite.com/anglicanos
+description: >-
+  Diocese continuante com catedral na Paróquia da Anunciação da Virgem Maria (Ipiranga, São Paulo) e paróquias/missões
+  em Londrina, Sorocaba e Alto Tietê; bispo Itabira Jonas.
+sources:
+- source: tac-sppr-diocese
+  quote: >-
+    A Paróquia da Anunciação da Virgem Maria é a Igreja sede da Diocese Anglicana de São Paulo e Paraná, símbolo
+    de unidade de todo o presbitério ao seu Bispo Diocesano.
+relations:
+- type: part_of
+  target: tac
+  date: '2025'
+  led_by:
+  - itabira-jonas
+  status: probable
+  sources:
+  - source: tac-adclerum-2025
+    quote: the Dioceses of Brazil were officially received unanimously.
+  - source: tac-sppr-diocese
+    quote: É um dos 2 Bispos da Igreja Anglicana Tradicional – TAC no Brasil
+  notes: >-
+    O Ad Clerum fala das 'Dioceses of Brazil' no plural, sem nomeá-las; a inclusão de São Paulo e Paraná é inferência.
+- type: part_of
+  target: iacc
+  date: null
+  end: '2025'
+  led_by:
+  - itabira-jonas
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      Todas essas Dioceses, com a primeira, a Diocese Anglicana do Japí-Jundiaí, formam atualmente a Igreja Anglicana
+      de Confissão Continuante
+  notes: Idem.

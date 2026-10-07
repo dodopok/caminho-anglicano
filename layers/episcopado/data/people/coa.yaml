@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: coa
+name: COA
+events:
+- type: other
+  date: 1965-05
+  description: Início efetivo da província autônoma (maio de 1965).
+  status: probable
+  sources:
+  - source: ens-41-5
+    quote: >-
+      The Episcopal Church in Brazil is the newest province in the Anglican Communion, having come into existence
+      only last May.

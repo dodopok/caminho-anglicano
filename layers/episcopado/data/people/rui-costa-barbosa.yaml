@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rui-costa-barbosa
+name: Rui Costa Barbosa
+full_name: Rui Costa Barbosa
+aliases:
+- Dom Rui Costa
+biography: Bispo primaz da Igreja Anglicana Tradicional do Brasil (IATB/AECI), São Paulo.
+sources:
+- source: iatb-comunidades
+  quote: sob a direção do Bispo Primaz do Brasil, Dom Rui Costa Barbosa.
+affiliations:
+- jurisdiction: iatb
+  role: primate
+  status: confirmed
+  sources:
+  - source: iatb-comunidades
+    quote: sob a direção do Bispo Primaz do Brasil, Dom Rui Costa Barbosa.
+  - source: iatb-clerigos
+    quote: Dom Rui Costa - São Paulo
+events:
+- type: other
+  date: '2025-11-16'
+  description: Sínodo da IATB em Nova Iguaçu-RJ e 'Carta de Nova Iguaçu' (16/11/2025)
+  status: confirmed
+  sources:
+  - source: iatb-home
+    quote: Nova Iguaçu-RJ, 16 de novembro de 2025

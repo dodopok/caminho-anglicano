@@ -1,8 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: peter-beckwith
 name: Peter Beckwith
+full_name: Peter Hess Beckwith
 aliases:
+- Peter H. Beckwith
 - Peter Hess Beckwith
+birth:
+  date: '1939-09-08'
+  sources:
+  - source: wp-beckwith
+    quote: '''''''Peter Hess Beckwith'''''' (September 8, 1939 – October 4, 2019)'
+death:
+  date: '2019-10-04'
+  sources:
+  - source: wp-beckwith
+    quote: '''''''Peter Hess Beckwith'''''' (September 8, 1939 – October 4, 2019)'
+wikidata: Q23008592
+biography: 10º bispo de Springfield (TEC), 1992–2010; depois recebido na Casa dos Bispos da ACNA (2014).
+sources:
+- source: wp-beckwith
+  quote: '''''''Peter Hess Beckwith'''''' (September 8, 1939 – October 4, 2019)'
 ordinations:
 - order: episcopate
   date: '1992'

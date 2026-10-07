@@ -1,7 +1,29 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: arthur-rodolpho-kratz
 name: Arthur Rodolpho Kratz
+aliases:
+- Arthur R. Kratz
+- Dom Arthur Kratz
+birth:
+  date: '1922'
+  sources:
+  - source: ens-72149
+    quote: >-
+      He was ordained a priest in 1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
+biography: >-
+  Nascido em Pelotas (1922), ordenado presbítero em 1948; bispo do Sul do Brasil em 1971 e segundo primaz (1972).
+sources:
+- source: ens-72149
+  quote: >-
+    He was ordained a priest in 1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
 ordinations:
+- order: presbyterate
+  date: '1948'
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: ens-72149
+    quote: He was ordained a priest in 1948
 - order: episcopate
   date: '1971'
   place: Catedral da Santissima Trindade, Porto Alegre

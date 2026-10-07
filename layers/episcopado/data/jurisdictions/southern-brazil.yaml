@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: southern-brazil
+name: Southern Brazil
+type: diocese
+relations:
+- type: part_of
+  target: dmsb
+  status: confirmed
+  sources:
+  - source: wp-en-thomas
+    quote: >-
+      Bishop William Thomas, missionary bishop of Southern Brazil from 1928 to 1949, when he retired, died at Bethesda,
+      Maryland, September 18.
+  - source: wit-1952-03-20
+    quote: Bishop Kinsolving retired in 1928 and was succeeded by Bishop William M. M. Thomas
+  - source: wit-1951-10-04
+    quote: >-
+      Bishop William Thomas, missionary bishop of Southern Brazil from 1928 to 1949 when he retired, died at Bethesda,
+      Maryland, September 18.
+  - source: wit-1952-03-20
+    quote: >-
+      Southern Brazil; Porto Alegre, the oldest field includes Theological Seminary; Southern Cross School, 800
+      boys; St. Margaret's School, 225 girls; Rt. Rev. Athalico Pithan;
+  - source: wit-1955-09-29
+    quote: >-
+      He will replace Bishop Krischke who is transferring to Southern Brazil to replace Bishop Pithan who is retiring
+      because of illness.

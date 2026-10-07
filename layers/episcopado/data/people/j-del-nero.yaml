@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: j-del-nero
+name: J. Del Nero
+biography: Presbítero ordenado por Pithan em 22/09/1940 em Porto Alegre.
+sources:
+- source: wit-1940-11-07
+  quote: >-
+    DEL NERO, J., was ordained priest by Bishop Pithan of Southern Brazil, at the Pro-Cathedral of the Ascension,
+    Porto Alegre, Brazil, on September 22.
+ordinations:
+- order: presbyterate
+  date: '1940-09-22'
+  place: Pró-Catedral da Ascensão, Porto Alegre
+  jurisdiction: dmsb
+  ordained_by: athalicio-pithan
+  status: probable
+  sources:
+  - source: wit-1940-11-07
+    quote: >-
+      DEL NERO, J., was ordained priest by Bishop Pithan of Southern Brazil, at the Pro-Cathedral of the Ascension,
+      Porto Alegre, Brazil, on September 22.

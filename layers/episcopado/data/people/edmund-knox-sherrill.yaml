@@ -1,20 +1,95 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: edmund-knox-sherrill
 name: Edmund Knox Sherrill
+aliases:
+- Dom Edmund Sherrill
+- Edmund K. Sherrill
+- Edmund Sherrill
+- Ned Sherrill
+death:
+  date: '2016'
+  sources:
+  - source: wit-1958-12-25
+    quote: >-
+      The Rev. Edmund K. Sherrill, bishop elect of the missionary district of Central Brazil, will be consecrated
+      bishop in Christ Church, Rio de Janeiro, on January 25.
+  - source: wp-en-esherrill
+    quote: >-
+      Edmund Knox Sherrill (died 2016) was a missionary bishop in The Episcopal Church who served in Brazil.
+  - source: wd-q114103052
+    quote: Edmund Knox Sherrill | American Episcopal Church bishop
+wikidata: Q114103052
+biography: >-
+  Filho do bispo presidente Henry Knox Sherrill; eleito na Convenção Geral de 1958 para suceder Melcher no Brasil
+  Central; sagrado no Rio em 25/01/1959.
+sources:
+- source: wit-1958-12-25
+  quote: >-
+    The Rev. Edmund K. Sherrill, bishop elect of the missionary district of Central Brazil, will be consecrated
+    bishop in Christ Church, Rio de Janeiro, on January 25.
+- source: wp-en-esherrill
+  quote: >-
+    Edmund Knox Sherrill (died 2016) was a missionary bishop in The Episcopal Church who served in Brazil.
+- source: wd-q114103052
+  quote: Edmund Knox Sherrill | American Episcopal Church bishop
 ordinations:
 - order: episcopate
-  date: '1959'
-  place: Rio de Janeiro
-  jurisdiction: tec
+  date: '1959-01-25'
+  place: Christ Church, Rio de Janeiro
+  jurisdiction: dmcb
   office: missionary
   principal_consecrator: henry-knox-sherrill
-  status: probable
+  co_consecrators:
+  - egmont-krischke
+  - plinio-lauer-simoes
+  status: contested
   sources:
+  - source: wit-1958-12-25
+    quote: >-
+      Bishop Sherrill, who retired on Novem- ber 15 as Presiding Bishop, will act as his son's consecrator.
+  - source: wit-1958-12-25
+    quote: >-
+      Other participating in the con- secration will be the bishops of Southern Brazil and Southwest- ern Brazil,
+      Egmont M. Krischke and Plinio L. Simoes as co-con- secrators and as presenting bishops.
+  - source: wp-en-esherrill
+    quote: >-
+      He was ordained a bishop on 25 January 1959 in Rio de Janeiro, with his father, retired Presiding Bishop Henry
+      Knox Sherrill, serving as chief consecrator.
+  - source: wp-en-histlist
+    quote: '[[Henry Knox Sherrill|372]] [[Egmont M. Kirschke|495]] [[Plinio Lauer Simões|542]]'
   - source: iab-poster-linhagem-meira
     quote: >-
       Henry Knox Sherrill, Presiding Bishop dos EUA (1947-1958), teve papel decisivo ao consagrar missionários como
       Louis Chester Melcher e, em 1959, seu próprio filho, Edmund Knox Sherrill, no Rio de Janeiro.
+  discrepancies:
+  - field: place
+    value: Rio de Janeiro
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Henry Knox Sherrill, Presiding Bishop dos EUA (1947-1958), teve papel decisivo ao consagrar missionários
+        como Louis Chester Melcher e, em 1959, seu próprio filho, Edmund Knox Sherrill, no Rio de Janeiro.
+  - field: jurisdiction
+    value: tec
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Henry Knox Sherrill, Presiding Bishop dos EUA (1947-1958), teve papel decisivo ao consagrar missionários
+        como Louis Chester Melcher e, em 1959, seu próprio filho, Edmund Knox Sherrill, no Rio de Janeiro.
+  notes: >-
+    Christ Church do Rio era a capela anglicana inglesa (Botafogo). Presbíteros assistentes: Rev. Henry W. Sherrill
+    e Rev. Franklin G. Sherrill (irmãos); pregador: Krischke; litanista: G. Vergara dos Santos.
 affiliations:
+- jurisdiction: dmcb
+  role: diocesan_bishop
+  diocese: central-brazil-rio-de-janeiro
+  start: '1959-01-25'
+  status: confirmed
+  sources:
+  - source: wit-1958-12-25
+    quote: who was elected at the General Convention to succeed Bishop Melcher
+  - source: ens-xxvi-8
+    quote: Bishop Edmund Knox Sherrill of Central Brazil
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: diocese-anglicana-do-rio-de-janeiro-ex-diocese-central
@@ -64,3 +139,20 @@ affiliations:
       Em 1985, quando Sherrill era o primaz em exercício da IEAB (1984-1986), ele recebeu um coadjutor, Clovis Erly
       Rodrigues, que o sucedeu no ano seguinte.
   notes: Primaz em exercicio/interino (bispo mais antigo).
+events:
+- type: other
+  date: 1964-10
+  description: >-
+    61ª Convenção Geral (St. Louis, out. 1964) concede autonomia à Igreja Episcopal Brasileira, 19ª igreja da Comunhão
+    Anglicana; os três bispos brasileiros (Krischke, Simões, Sherrill) recebem assento na Câmara dos Bispos dos
+    EUA.
+  status: confirmed
+  sources:
+  - source: ens-xxvi-8
+    quote: >-
+      The House of Bishops approved by a standing vote the resolution granting autonomy to the Brazilian Episcopal
+      Church.
+  - source: ens-xxvi-1
+    quote: >-
+      For Brazil: Independence - In action pointing the way for greater impact of MRI proposals on the life of the
+      Church, the Brazilian Episcopal Church became the 19th independent church in the world-wide Anglican Communion.

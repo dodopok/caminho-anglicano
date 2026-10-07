@@ -2,8 +2,92 @@
 id: egmont-krischke
 name: Egmont Krischke
 aliases:
+- Dom Egmont
+- E. M. Krischke
+- Edmont Machado Krischke
+- Egmont M. Krischke
 - Egmont Machado Krischke
+- Most Rev. Egmont Machado Krischke
+wikidata: Q23585620
+biography: >-
+  Filho do Rev. George U. Krischke; reitor em Porto Alegre e Bagé; sagrado em 12/03/1950 em Bagé primeiro bispo
+  do Sudoeste do Brasil; transferido ao Sul do Brasil em 1955; bispo sênior em 1964 e primeiro primaz da IEAB (1965-1971/72).
+sources:
+- source: wit-1950-03-30
+  quote: >-
+    The Rev. Edmont Machado Krischke was c o n s e c r a t e d Bishop to be head of the newly-formed Missionary
+    District of Southwestern Brazil on Sunday, March 12, at the Church of the Crucified in Bage.
+- source: wp-en-krischke
+  quote: >-
+    Egmont Machado Krischke was first primate of the Anglican Episcopal Church of Brazil, serving from 1965 to 1971.
+- source: wd-q23585620
+  quote: Egmont M. Krischke | Anglican bishop in Brazil
+ordinations:
+- order: episcopate
+  date: '1950-03-12'
+  place: Igreja do Crucificado (Church of the Crucified), Bagé, RS
+  jurisdiction: dmsob
+  office: missionary
+  principal_consecrator: louis-chester-melcher
+  co_consecrators:
+  - athalicio-pithan
+  - john-boyd-bentley
+  status: confirmed
+  sources:
+  - source: wit-1950-03-30
+    quote: >-
+      The chief consecrator, acting for the Presiding Bishop, was Bishop Louis C. Melcher of Cen- tral Brazil.
+  - source: wit-1950-03-30
+    quote: >-
+      Bishop John B. Bentley of New York, vice- president of the National Coun- cil and director of the overseas
+      department, was a oo-consecra- tor and presenter, with Bishop Pithan.
+  - source: wit-1950-03-02
+    quote: >-
+      Krischke is to be consecrated at the Church of the Crucified, Bage, Brazil, March 12th, with Bishop Melcher
+      the consecrator and Bishop Bentley and Bishop Pithan the co-consecrators.
+  - source: wp-en-krischke
+    quote: >-
+      Egmont Machado Krischke was consecrated on March 12, 1950, by: Louis Chester Melcher (475), I Missionary Bishop
+      of Southern Brazil; John Boyd Bentley (379), retired Missionary Bishop of Alaska; and, Athalicio Theodore
+      Pithan (422)
+  notes: >-
+    Primeira sagração no próprio Brasil segundo a nota ('the first consecra­tion to be held in Brazil in two years'
+    — i.e., há dois anos não havia; a de Pithan em 1940 foi no Brasil). Presbíteros assistentes: Rev. George U.
+    Krischke (pai) e Rev. N. Duval da Silva; Pithan foi litanista e pregador.
 affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  diocese: reitor-da-igreja-do-crucificado-bage
+  start: '1940'
+  end: '1950'
+  status: probable
+  sources:
+  - source: wit-1940-02-22
+    quote: >-
+      KRISCHKE, E. M., rector of Ascension Church in Porto Alegre, Brazil, has been appointed to succeed Suffragan
+      Bishop-elect Pithan at the Church of the Crucified in Bage
+- jurisdiction: dmsob
+  role: diocesan_bishop
+  diocese: southwestern-brazil-santa-maria
+  start: '1950-03-12'
+  end: '1955'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: wit-1950-03-30
+    quote: Bishop to be head of the newly-formed Missionary District of Southwestern Brazil
+  - source: wit-1955-09-29
+    quote: He will replace Bishop Krischke who is transferring to Southern Brazil
+- jurisdiction: dmsb
+  role: diocesan_bishop
+  diocese: southern-brazil-porto-alegre
+  start: '1955'
+  status: confirmed
+  sources:
+  - source: wit-1955-09-29
+    quote: Krischke who is transferring to Southern Brazil to replace Bishop Pithan
+  - source: ens-xxvi-8
+    quote: The Rt. Rev. Egmont M. Krischke, Bishop of Southern Brazil and senior bishop in the Brazilian Church
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: diocese-meridional
@@ -37,3 +121,59 @@ affiliations:
       vindo a falecer no exercício do cargo, em 28 de
   - source: wp-en-ieab
     quote: Egmont Machado Krischke, 1965—1971
+  - source: wp-en-ieab
+    quote: electing Egmont Machado Krischke, son of an early missionary, as its Primate Bishop.
+  - source: ens-72149
+    quote: He succeeded the Most Rev. Egmont Machado Krischke, who died a few months ago.
+  notes: >-
+    Wikipédia: primaz 1965–1971; ENS (out. 1972) diz que morreu 'a few months ago' — data da morte (1971 ou 1972)
+    a verificar.
+events:
+- type: other
+  date: '1949'
+  description: >-
+    Convenção Geral de 1949 (San Francisco) divide o Sul do Brasil em três distritos; Krischke eleito para o terceiro
+    bispo; Pithan eleito bispo de um dos novos distritos.
+  status: confirmed
+  sources:
+  - source: wit-1949-10-27
+    quote: >-
+      it was decided to divide the district of South- ern Brazil into three dioceses. In Brazil at present there
+      are two bishops, one diocesan and a coadjutor. Election of the Rev. E. M. Krische as the third bish­ op will
+      place the Brazilian Church on an independent basis, able to consecrate its own bish­ ops
+  - source: wit-1949-10-20
+    quote: >-
+      The missionary district of Southern Brazil, having been di­ vided by General Convention in­ to three parts,
+      will have the Rev. Egmont M. Krischke as the
+- type: other
+  date: 1964-10
+  description: >-
+    61ª Convenção Geral (St. Louis, out. 1964) concede autonomia à Igreja Episcopal Brasileira, 19ª igreja da Comunhão
+    Anglicana; os três bispos brasileiros (Krischke, Simões, Sherrill) recebem assento na Câmara dos Bispos dos
+    EUA.
+  status: confirmed
+  sources:
+  - source: ens-xxvi-8
+    quote: >-
+      The House of Bishops approved by a standing vote the resolution granting autonomy to the Brazilian Episcopal
+      Church.
+  - source: ens-xxvi-1
+    quote: >-
+      For Brazil: Independence - In action pointing the way for greater impact of MRI proposals on the life of the
+      Church, the Brazilian Episcopal Church became the 19th independent church in the world-wide Anglican Communion.
+- type: other
+  date: '1965-04-25'
+  description: >-
+    Autonomia: a Igreja Episcopal Brasileira torna-se a 19a provincia da Comunhao Anglicana; proclamacao pelo Bispo
+    Presidente John E. Hines no Sinodo de Porto Alegre (25/04/1965) e investidura de Egmont Machado Krischke como
+    primeiro primaz.
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      O projeto do Sínodo foi levado à votação na 61ª Convenção Geral, realizada de 11 a 23 de outubro do mesmo
+      ano, na cidade de St. Louis, no Missouri, sendo aprovada a autonomia plena da Igreja Brasileira.
+  - source: wp-en-ieab
+    quote: >-
+      The Anglican community of Brazil was a missionary district of the Episcopal Church until 1965, when it gained
+      its ecclesiastical independence and became a separate province of the Anglican Communion.

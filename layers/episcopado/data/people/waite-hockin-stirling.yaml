@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: waite-hockin-stirling
+name: Waite Hockin Stirling
+aliases:
+- Waite Stirling
+wikidata: Q7960486
+biography: >-
+  Bispo das Ilhas Falkland (Igreja da Inglaterra); em 1897 ordenou os três primeiros presbíteros brasileiros.
+sources:
+- source: wp-en-ieab
+  quote: >-
+    Four years later, the Brazilian mission was visited by Waite Hockin Stirling, who ordained three priests and
+    confirmed 159 members.
+- source: wd-q7960486
+  quote: Waite Stirling | British Anglican bishop (1829–1923)
+events:
+- type: deposition
+  date: '1897'
+  description: >-
+    Visita do bispo Waite H. Stirling (Falkland Islands) em 1897: ordenação dos três primeiros presbíteros brasileiros
+    (um quarto diácono havia sido deposto por Peterkin).
+  status: probable
+  sources:
+  - source: wp-en-kinsolving
+    quote: >-
+      Bishop Stirling ordained three of the Brazilian deacons to the priesthood (Peterkin having deposed the fourth).
+  - source: wp-pt-ieab
+    quote: >-
+      foi a vez da comunidade receber Waite Hockin Stirling, bispo das Ilhas Falkland, que ordenou os três primeiros
+      presbíteros nacionais

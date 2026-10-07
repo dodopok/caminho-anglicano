@@ -1,3 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: william-white
 name: William White
+full_name: William White
+aliases:
+- Bishop White
+birth:
+  date: '1748-04-04'
+  sources:
+  - source: wp-white
+    quote: >-
+      | consecrated by = [[John Moore (archbishop of Canterbury)|John Moore]], ([[Archbishop of Canterbury|Canterbury]])
+death:
+  date: '1836-07-17'
+  sources:
+  - source: wp-white
+    quote: >-
+      | consecrated by = [[John Moore (archbishop of Canterbury)|John Moore]], ([[Archbishop of Canterbury|Canterbury]])
+wikidata: Q3569025
+biography: >-
+  Bispo da Pensilvânia, sagrado em Lambeth em 1787; primeiro e quarto Presiding Bishop da Igreja Episcopal (EUA).
+sources:
+- source: wp-white
+  quote: >-
+    | consecrated by = [[John Moore (archbishop of Canterbury)|John Moore]], ([[Archbishop of Canterbury|Canterbury]])

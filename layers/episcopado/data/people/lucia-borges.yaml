@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: lucia-borges
+name: Lúcia Borges
+ordinations:
+- order: diaconate
+  date: '2001'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: dab-2017-lucia
+    quote: >-
+      Mas foi em 1996 que a irmã Lucia foi recebida na Comunhão Anglicana pelo Bispo Dom Almir, na Catedral da Ressurreição
+      em Brasília. Foi ordenada Diácona em 2001 e Presbítera em 2006
+  notes: >-
+    Diocese Anglicana de Brasília. Ex-religiosa franciscana (Irmãs Franciscanas dos Pobres). Ordenante não informado
+    (bispo diocesano em 2001: Almir dos Santos, segundo a galeria de bispos da DAB — não confirmado como ordenante).
+- order: presbyterate
+  date: '2006'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: dab-2017-lucia
+    quote: Foi ordenada Diácona em 2001 e Presbítera em 2006
+  notes: >-
+    Diocese Anglicana de Brasília. Ordenante não informado (bispo diocesano desde 2003: Maurício Andrade).
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-diocese-brasilia
+  start: '2001'
+  status: confirmed
+  sources:
+  - source: dab-2017-lucia
+    quote: serviu nas comunidades do Paranoá, Ceilandia e, atualmente, está em Anápolis.
+  - source: dab-2017-lucia
+    quote: a instituição da Revda. Lucia Borges como Cônega da Catedral da Ressurreição.
+  notes: >-
+    Cônega titular da Catedral da Ressurreição desde 2017-06-04; listada em 2025 na Missão Mãe de Deus, Aliança
+    do Tocantins (TO).

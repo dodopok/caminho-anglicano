@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: icab
+acronym: ICAB
+name: Igreja Católica Apostólica Brasileira
+type: national_church
+country: BR
+founded:
+  date: '1945'
+  sources:
+  - source: enwiki-iccec
+    quote: >-
+      In 1997, the ICCEC sought and acquired consecration and ordination of all of its clergy by the Brazilian Catholic
+      Apostolic Church through the episcopal genealogy of Carlos Duarte Costa.
+wikidata: Q1702628
+description: >-
+  Igreja fundada em 1945 por Carlos Duarte Costa; fonte da sucessão 'brasileira' recebida pela ICCEC em 1997.
+sources:
+- source: enwiki-iccec
+  quote: >-
+    In 1997, the ICCEC sought and acquired consecration and ordination of all of its clergy by the Brazilian Catholic
+    Apostolic Church through the episcopal genealogy of Carlos Duarte Costa.

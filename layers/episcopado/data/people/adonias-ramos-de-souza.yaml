@@ -3,15 +3,21 @@ id: adonias-ramos-de-souza
 name: Adonias Ramos de Souza
 ordinations:
 - order: episcopate
-  date: '2007'
+  date: '2007-11-30'
   jurisdiction: iecb
+  principal_consecrator: paulo-garcia
+  co_consecrators:
+  - alexandre-barbosa-monteiro-ximenes
+  - frederico-carneiro-rego-bastos
   status: probable
   sources:
   - source: ptwiki-iecb
     quote: Adonias Ramos de Souza (2007)
+  - source: enwiki-iccec-bispos
+    quote: '|57||30 November 2007||42 54 55||Adonias Ramos de Sousa||Bp. Paulista, Brazil||'
   notes: >-
-    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
-    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso.
+    Lista da ICCEC (Wikipédia EN): sagrantes nº 42 (Paulo Garcia), 54 (Ximenes), 55 (Bastos); a ordem sugere Garcia
+    como principal, mas a fonte não o diz explicitamente.
 affiliations:
 - jurisdiction: iecb
   role: bishop

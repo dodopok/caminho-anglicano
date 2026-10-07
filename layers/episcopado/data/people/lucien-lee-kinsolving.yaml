@@ -1,13 +1,156 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: lucien-lee-kinsolving
 name: Lucien Lee Kinsolving
+aliases:
+- Bishop Kinsolving
+birth:
+  date: '1862-05-14'
+  sources:
+  - source: wp-en-kinsolving
+    quote: >-
+      Lucien Lee Kinsolving (May 14, 1862 – December 18, 1929) was first bishop of the missionary diocese that eventually
+      became the Anglican Episcopal Church of Brazil.
+  - source: som-1899-02
+    quote: The consecration of the Rev. Lncien Lee Kinsolving as Bishop for Brazil
+  - source: wd-q22018805
+    quote: Lucien Lee Kinsolving | American Episcopal bishop
+death:
+  date: '1929-12-18'
+  sources:
+  - source: wp-en-kinsolving
+    quote: >-
+      Lucien Lee Kinsolving (May 14, 1862 – December 18, 1929) was first bishop of the missionary diocese that eventually
+      became the Anglican Episcopal Church of Brazil.
+  - source: som-1899-02
+    quote: The consecration of the Rev. Lncien Lee Kinsolving as Bishop for Brazil
+  - source: wd-q22018805
+    quote: Lucien Lee Kinsolving | American Episcopal bishop
+wikidata: Q22018805
+biography: >-
+  Missionário norte-americano (VTS) que chegou ao Brasil em 1889/1890 com James W. Morris; sagrado em 1899 primeiro
+  bispo episcopal para o Brasil; bispo missionário do Sul do Brasil até 1928.
+sources:
+- source: wp-en-kinsolving
+  quote: >-
+    Lucien Lee Kinsolving (May 14, 1862 – December 18, 1929) was first bishop of the missionary diocese that eventually
+    became the Anglican Episcopal Church of Brazil.
+- source: som-1899-02
+  quote: The consecration of the Rev. Lncien Lee Kinsolving as Bishop for Brazil
+- source: wd-q22018805
+  quote: Lucien Lee Kinsolving | American Episcopal bishop
 ordinations:
-- order: episcopate
-  date: '1899-01-06'
+- order: diaconate
+  date: 1889-06
   jurisdiction: tec
-  office: missionary
+  ordained_by: francis-mcneece-whittle
   status: probable
   sources:
+  - source: wp-en-kinsolving
+    quote: >-
+      Virginia's bishop, Francis McNeece Whittle, ordained Kinsolving and fellow Virginia Seminary graduate James
+      Watson Morris deacons in June and priests in August, 1889
+  notes: 'Wikipédia cita ''Our Overseas Missions: Brazil'' (National Council, 1964, datilografado).'
+- order: presbyterate
+  date: 1889-08
+  jurisdiction: tec
+  ordained_by: francis-mcneece-whittle
+  status: probable
+  sources:
+  - source: wp-en-kinsolving
+    quote: >-
+      ordained Kinsolving and fellow Virginia Seminary graduate James Watson Morris deacons in June and priests
+      in August, 1889
+- order: episcopate
+  date: '1899-01-06'
+  place: St. Bartholomew's Church, Nova York
+  jurisdiction: dmsb
+  office: missionary
+  principal_consecrator: thomas-underwood-dudley
+  co_consecrators:
+  - ethelbert-talbot
+  - george-herbert-kinsolving
+  - george-william-peterkin
+  - henry-codman-potter
+  - john-scarborough
+  - lemuel-henry-wells
+  - william-croswell-doane
+  - william-david-walker
+  - william-lawrence
+  - william-neilson-mcvickar
+  status: contested
+  sources:
+  - source: som-1899-02
+    quote: >-
+      The consecration of the Rev. Lncien Lee Kinsolving as Bishop for Brazil, to which office and work he was elected
+      b j the House of Bishops at its meeting in Washington last October, took place in St. Bartholomew's Church,
+      Hew York, on the Feast of the Epiphany. Bishop Dudley, of Kentucky, presided, imme­ diately assisted by Bishop
+      Potter, of Hew York, and Bishop Lawrence, of Mass­ achusetts
+  - source: wp-en-histlist
+    quote: '[[Thomas Underwood Dudley|110]] [[William Croswell Doane|92]] [[John Scarborough|111]]'
+  - source: wp-en-kinsolving
+    quote: >-
+      Twelve bishops participated in Kinsolving's consecration as bishop for a foreign country at St. Bartholomew's
+      Church in New York City on January 6, 1899
   - source: iab-poster-linhagem-meira
     quote: >-
       Lucien Lee Kinsolving, que foi consagrado em 6 de janeiro de 1899 como o primeiro bispo missionário no país.
+  discrepancies:
+  - field: jurisdiction
+    value: tec
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Lucien Lee Kinsolving, que foi consagrado em 6 de janeiro de 1899 como o primeiro bispo missionário no país.
+  notes: >-
+    Fonte primária (Spirit of Missions, fev. 1899): Dudley presidiu; Potter e Lawrence 'imediatamente' assistentes
+    (co-sagrantes formais); Doane e Peterkin apresentantes; G. H. Kinsolving pregador; Scarborough, Walker, Talbot,
+    Wells e McVickar 'taking part in the laying-on of hands'. A lista da Wikipédia dá Dudley, Doane e Scarborough
+    como sagrantes. Kinsolving foi eleito 'Bishop for the United States of Brazil' sob o Art. X da Constituição
+    (bispo para igreja estrangeira), não para distrito missionário (criado só em 1907).
+affiliations:
+- jurisdiction: dmsb
+  role: diocesan_bishop
+  diocese: for-brazil-1899-missionary-of-southern-brazil-1907-1928
+  start: '1899-01-06'
+  end: '1928'
+  end_reason: resignation
+  status: confirmed
+  sources:
+  - source: wit-1952-03-20
+    quote: >-
+      Bishop Kinsolving retired in 1928 and was succeeded by Bishop William M. M. Thomas who had come out to Brazil
+      as a missionary in 1904.
+  - source: som-1898-12
+    quote: >-
+      the Rev. Lucien Lee Kinsolving had been duly elected, in accordance with Article X. of the Constitution, a
+      Bishop for the United States of Brazil.
+  notes: >-
+    Eleito pela convocação de Porto Alegre em 30/05/1898 e pela Câmara dos Bispos em out. 1898; reeleito bispo missionário
+    do Sul do Brasil em 1907 (Wikipédia). Voltou aos EUA por saúde em out. 1926, renúncia aceita em 1928.
+events:
+- type: other
+  date: '1890-06-01'
+  description: >-
+    Chegada de Kinsolving e Morris (com quatro brasileiros) a Porto Alegre em 21/04/1890 e primeiro culto público
+    em 1/06/1890 (domingo da Trindade).
+  status: probable
+  sources:
+  - source: wp-en-kinsolving
+    quote: The young Americans arrived at Porto Alegre on April 21, 1890, accompanied by four Brazilians
+  - source: wp-en-ieab
+    quote: where they held the first Anglican Mass in Portuguese on 1 June 1890.
+- type: other
+  date: 1898-10
+  description: >-
+    Eleição de Kinsolving: convocação em Porto Alegre (30/05/1898) e Câmara dos Bispos (out. 1898) como 'Bishop
+    for the United States of Brazil' (Art. X da Constituição).
+  status: confirmed
+  sources:
+  - source: som-1898-11
+    quote: >-
+      Also, that the Bev. Lucien Lee Kinsolving has been duly elected, in accordance with Article X. of the Constitution,
+      a Bishop for the United States of Brazil.
+  - source: wp-en-kinsolving
+    quote: >-
+      On May 30, 1898, pursuant to Bishop Peterkin's advice, clergy and laity gathered in Porto Alegre and elected
+      Kinsolving to become their bishop

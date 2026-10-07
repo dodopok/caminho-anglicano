@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: southwestern-brazil-santa-maria
+name: Southwestern Brazil (Santa Maria)
+type: diocese
+relations:
+- type: part_of
+  target: dmsob
+  status: confirmed
+  sources:
+  - source: wit-1950-03-30
+    quote: Bishop to be head of the newly-formed Missionary District of Southwestern Brazil
+  - source: wit-1955-09-29
+    quote: He will replace Bishop Krischke who is transferring to Southern Brazil

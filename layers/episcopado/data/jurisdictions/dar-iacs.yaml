@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: dar-iacs
+acronym: DAR-IACS
+name: Igreja Anglicana - Diocese do Recife (dissidente, 2005)
+type: diocese
+country: BR
+founded:
+  date: '2005'
+  sources:
+  - source: costa2021
+    quote: >-
+      O grupo, fiel às posições de seu bispo, formou uma nova denominação, chamada de Igreja Anglicana no Brasil
+      (IAB), atualmente uma Província da GAFCON/FCA.
+description: >-
+  Grupo de Robinson Cavalcanti apos a deposicao; sob a Igreja Anglicana do Cone Sul a partir de 23/09/2005; origem
+  da Igreja Anglicana no Brasil (IAB, 2018).
+sources:
+- source: costa2021
+  quote: >-
+    O grupo, fiel às posições de seu bispo, formou uma nova denominação, chamada de Igreja Anglicana no Brasil (IAB),
+    atualmente uma Província da GAFCON/FCA.
+relations:
+- type: schism_from
+  target: ieab
+  date: '2005'
+  led_by:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: Robinson levou consigo cerca de 90% dos clérigos, membros e templos.
+  - source: wp-en-ieab
+    quote: The Diocese of Recife, led by Bishop Robinson Cavalcanti, withdrew from IEAB in 2005
+  notes: Grupo que formou a "Igreja Anglicana - Diocese do Recife", depois Igreja Anglicana no Brasil (IAB).
+- type: part_of
+  target: iacs
+  date: '2005-09-23'
+  led_by:
+  - gregory-venables
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Todavia, em 23 de setembro de 2005, a Igreja Anglicana do Cone Sul, por meio do seu Primaz, o bispo Gregory
+      Venables, aceitou o pedido

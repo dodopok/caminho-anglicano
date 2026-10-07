@@ -1,6 +1,33 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: henry-knox-sherrill
 name: Henry Knox Sherrill
+full_name: Henry Knox Sherrill
+aliases:
+- Bishop Sherrill
+- Henry K. Sherrill
+birth:
+  date: '1890-11-06'
+  sources:
+  - source: witness-1930-10-16
+    quote: >-
+      Bishop Henry K. Sherrill was con­ secrated Bishop of Massachusetts at Trinity, Boston, on October 14th.
+death:
+  date: '1980-05-11'
+  sources:
+  - source: witness-1930-10-16
+    quote: >-
+      Bishop Henry K. Sherrill was con­ secrated Bishop of Massachusetts at Trinity, Boston, on October 14th.
+wikidata: Q15441875
+biography: >-
+  Bispo Presidente da TEC (1947-1958); sagrante principal de Melcher (1948) e de seu filho Edmund K. Sherrill (1959).
+sources:
+- source: wit-1948-01-29
+  quote: The Presiding Bishop will be the consecrator
+- source: wit-1958-12-25
+  quote: >-
+    Bishop Sherrill, who retired on Novem- ber 15 as Presiding Bishop, will act as his son's consecrator.
+- source: wd-q15441875
+  quote: Henry Knox Sherrill | American bishop
 ordinations:
 - order: episcopate
   date: '1930'

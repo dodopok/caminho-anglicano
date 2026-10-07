@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-de-sao-paulo-e-parana
+name: Diocese Anglicana de São Paulo e Paraná
+type: diocese
+relations:
+- type: part_of
+  target: tac
+  status: confirmed
+  sources:
+  - source: tac-londrina-home
+    quote: Reverendíssimo Bispo Itabira Jonas Ordinário da Dioces e de São Paulo e Paraná
+  - source: tac-sppr-diocese
+    quote: 'Bispo Diocesano: Dom Itabira Jonas'
+- type: part_of
+  target: iacc
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: dom †Itabira Jonas, Bispo da Diocese Anglicana de São Paulo e Paraná

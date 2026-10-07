@@ -1,6 +1,42 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: plinio-lauer-simoes
-name: Plinio Lauer Simoes
+name: Plínio Lauer Simões
+aliases:
+- Bishop Simoes
+- Plinio L. Simoes
+- Plínio L. Simões
+wikidata: Q112707967
+biography: >-
+  Eleito em 1955 bispo do Sudoeste do Brasil (sucedendo Krischke), sagrado em 04/03/1956 no Rio de Janeiro; em 1958
+  sagrou o primeiro bispo da Igreja Lusitana.
+sources:
+- source: wit-1955-09-29
+  quote: Also elected a bishop was the Rev. Plimio L. Simoes to be bishop of Southwestern Brazil.
+- source: wit-1956-01-26
+  quote: The Rev. Plinio Lauer Simoes will be consecrated bishop of Southwe'stern Brazil
+- source: wd-q112707967
+  quote: Plinio Lauer Simões | episcopal Bishop
+ordinations:
+- order: episcopate
+  date: '1956-03-04'
+  place: Igreja do Redentor (Church of the Redeemer), Rio de Janeiro
+  jurisdiction: dmsob
+  office: missionary
+  principal_consecrator: louis-chester-melcher
+  co_consecrators:
+  - egmont-krischke
+  - john-boyd-bentley
+  status: confirmed
+  sources:
+  - source: wit-1956-01-26
+    quote: >-
+      The Rev. Plinio Lauer Simoes will be consecrated bishop of Southwe'stern Brazil on March 4th at the Church
+      of the Redeemer, Rio de Janeiro. Bishop Melcher of Central Brazil will be consecrator and Bishop Bentley,
+      vice president of the National Council, and Bishop Krischke of Southern Brazil will be co-consecrators.
+  - source: wp-en-histlist
+    quote: '[[Louis C. Melcher|475]] [[John Boyd Bentley|379]] [[Egmont M. Kirschke|495]]'
+  notes: >-
+    The Witness anuncia (26/01/1956); lista da Wikipédia confirma sagrantes e ano 1956. Relato pós-evento não localizado.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
@@ -13,6 +49,18 @@ affiliations:
     quote: 1956-1975 – Plínio Lauer Simões
   - source: wp-pt-dioc-sulocidental
     quote: Plínio Lauer Simões - 1956 a 1975
+- jurisdiction: dmsob
+  role: diocesan_bishop
+  diocese: southwestern-brazil
+  start: '1956-03-04'
+  status: confirmed
+  sources:
+  - source: wit-1955-09-29
+    quote: the Rev. Plimio L. Simoes to be bishop of Southwestern Brazil. He will replace Bishop Krischke
+  - source: ens-xxvi-8
+    quote: >-
+      Bishop Plinio Simoes of Southwestern Brazil and Bishop Edmund Knox Sherrill of Central Brazil expressed their
+      thanks to the House
 - jurisdiction: ieab
   role: primate
   start: '1971'
@@ -22,3 +70,20 @@ affiliations:
   - source: costa2021
     quote: 1971-1972 – Plínio Lauer Simões (interino)
   notes: Primaz interino (Anexo E de Costa 2021); nao consta das listas oficiais de primazes.
+events:
+- type: other
+  date: 1964-10
+  description: >-
+    61ª Convenção Geral (St. Louis, out. 1964) concede autonomia à Igreja Episcopal Brasileira, 19ª igreja da Comunhão
+    Anglicana; os três bispos brasileiros (Krischke, Simões, Sherrill) recebem assento na Câmara dos Bispos dos
+    EUA.
+  status: confirmed
+  sources:
+  - source: ens-xxvi-8
+    quote: >-
+      The House of Bishops approved by a standing vote the resolution granting autonomy to the Brazilian Episcopal
+      Church.
+  - source: ens-xxvi-1
+    quote: >-
+      For Brazil: Independence - In action pointing the way for greater impact of MRI proposals on the life of the
+      Church, the Brazilian Episcopal Church became the 19th independent church in the world-wide Anglican Communion.

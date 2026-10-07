@@ -33,18 +33,15 @@ ordinations:
     não informado. Formado no Seminário Teológico Anglicano de São Paulo.
 - order: episcopate
   date: '2003-09-08'
-  place: Teatro Guararapes, Centro de Convenções, Olinda (PE)
+  place: Teatro Guararapes, Olinda (PE)
   jurisdiction: iecb
-  office: diocesan
+  office: primate
   principal_consecrator: randolph-austin-adler
+  co_consecrators:
+  - dale-f-howard
+  - loren-thomas-hines
   status: contested
   sources:
-  - source: queiroz-2004-ufpe
-    quote: >-
-      O evento aconteceu no dia 08 de setembro de 2003, às 20h no Teatro Guararapes, Centro de Convenções – Olinda.
-  - source: queiroz-2004-ufpe
-    quote: >-
-      a vinculação do Pr. Paulo à Igreja Episcopal Carismática, na qual ele foi sagrado o primeiro Bispo do Brasil.
   - source: ptwiki-iecb
     quote: >-
       o qual foi sagrado o seu primeiro Bispo, pelo então Patriarca Randolph Austin Adler, em uma grande cerimônia
@@ -52,33 +49,42 @@ ordinations:
   - source: ptwiki-iecb
     quote: >-
       A consagração episcopal de Paulo Garcia ocorreu em 8 de setembro de 2003, no Teatro Guararapes, em Olinda.
+  - source: enwiki-iccec-bispos
+    quote: '|42||8 September 2003||1 4 6||Paulo Ruiz Garcia||Abp. and Primate Brazil|| Resigned'
+  - source: queiroz-2004-ufpe
+    quote: >-
+      O evento aconteceu no dia 08 de setembro de 2003, às 20h no Teatro Guararapes, Centro de Convenções – Olinda.
+  - source: queiroz-2004-ufpe
+    quote: >-
+      a vinculação do Pr. Paulo à Igreja Episcopal Carismática, na qual ele foi sagrado o primeiro Bispo do Brasil.
   discrepancies:
   - field: place
-    value: Teatro Guararapes, Olinda (PE)
+    value: Teatro Guararapes, Centro de Convenções, Olinda (PE)
     sources:
-    - source: ptwiki-iecb
+    - source: queiroz-2004-ufpe
       quote: >-
-        o qual foi sagrado o seu primeiro Bispo, pelo então Patriarca Randolph Austin Adler, em uma grande cerimônia
-        realizada na cidade do Recife, em 08 de setembro de 2003.
-    - source: ptwiki-iecb
+        O evento aconteceu no dia 08 de setembro de 2003, às 20h no Teatro Guararapes, Centro de Convenções – Olinda.
+    - source: queiroz-2004-ufpe
       quote: >-
-        A consagração episcopal de Paulo Garcia ocorreu em 8 de setembro de 2003, no Teatro Guararapes, em Olinda.
+        a vinculação do Pr. Paulo à Igreja Episcopal Carismática, na qual ele foi sagrado o primeiro Bispo do Brasil.
   - field: office
-    value: primate
+    value: diocesan
     sources:
-    - source: ptwiki-iecb
+    - source: queiroz-2004-ufpe
       quote: >-
-        o qual foi sagrado o seu primeiro Bispo, pelo então Patriarca Randolph Austin Adler, em uma grande cerimônia
-        realizada na cidade do Recife, em 08 de setembro de 2003.
-    - source: ptwiki-iecb
+        O evento aconteceu no dia 08 de setembro de 2003, às 20h no Teatro Guararapes, Centro de Convenções – Olinda.
+    - source: queiroz-2004-ufpe
       quote: >-
-        A consagração episcopal de Paulo Garcia ocorreu em 8 de setembro de 2003, no Teatro Guararapes, em Olinda.
+        a vinculação do Pr. Paulo à Igreja Episcopal Carismática, na qual ele foi sagrado o primeiro Bispo do Brasil.
   notes: >-
-    Sagrantes não nomeados; a fonte diz apenas que houve "vários pastores que vieram dos Estados Unidos, exclusivamente
-    para este fim". Testemunho ocular da autora. Sucessão declarada: ICCEC (Randolph Adler). A própria Wikipédia
-    diz 'Recife' e 'Teatro Guararapes, em Olinda' em trechos diferentes (o Centro de Convenções/Teatro Guararapes
-    fica em Olinda). Co-sagrantes não informados. Fonte primária citada: GARCIA, Paulo Ruiz. Cerimonial Eclesiástico
-    e Liturgia de Sagração. Recife: Comunigraf, 2004.
+    Sucessão declarada: ICCEC (Randolph Adler). A própria Wikipédia diz 'Recife' e 'Teatro Guararapes, em Olinda'
+    em trechos diferentes (o Centro de Convenções/Teatro Guararapes fica em Olinda). Co-sagrantes não informados.
+    Fonte primária citada: GARCIA, Paulo Ruiz. Cerimonial Eclesiástico e Liturgia de Sagração. Recife: Comunigraf,
+    2004. A lista de bispos da ICCEC (Wikipédia EN) dá como sagrantes os nº 1 (Austin Randolph Adler), 4 (Dale F.
+    Howard, Abp. Southeast Province) e 6 (Loren Thomas Hines, Primate Asia), e anota 'Resigned' (deixou a ICCEC;
+    data não informada). Status 'confirmado' pela concordância de duas fontes terciárias independentes quanto a
+    data e sagrante principal. Sagrantes não nomeados; a fonte diz apenas que houve "vários pastores que vieram
+    dos Estados Unidos, exclusivamente para este fim". Testemunho ocular da autora.
 affiliations:
 - jurisdiction: ieab
   role: clergy

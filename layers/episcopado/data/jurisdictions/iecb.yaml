@@ -15,6 +15,7 @@ founded:
   - source: ptwiki-iecb
     quote: A sede da IECB se encontra na Catedral da Trindade (Recife), localizada nos Aflitos (Recife).
 locator_slug: iecb
+wikidata: Q138547121
 website: https://novo.iecbrasil.com.br/
 description: >-
   Igreja de convergência (evangélica, carismática e sacramental) com sede na Catedral da Trindade (Aflitos, Recife).
@@ -36,6 +37,10 @@ relations:
   - paulo-garcia
   status: probable
   sources:
+  - source: costa2021
+    quote: >-
+      Em setembro de 2002, ocorreu o que chamamos de “Pequena Crise do Recife”105, quando o reverendo Paulo Garcia,
+      então deão da Catedral da Santíssima Trindade, rompeu com a Diocese e a Província.
   - source: queiroz-2004-ufpe
     quote: >-
       O templo que está sendo disputado na justiça é o mesmo que o Pr. Paulo Garcia transformou na Igreja Episcopal
@@ -55,6 +60,7 @@ relations:
       Em 2002, o deão Paulo Garcia, então líder da catedral em Recife, rompeu com a IEAB por divergências teológicas
       e fundou a Igreja Episcopal Carismática do Brasil (IECB)
   notes: >-
+    Fundou a Igreja Episcopal Carismatica do Brasil (ICCEC). Fora do escopo episcopal da IEAB; registrado como contexto.
     A comunidade da Catedral da Santíssima Trindade (Recife) seguiu Paulo Garcia para a Igreja Episcopal Carismática.
     A sigla IECB designa a Igreja Episcopal Carismática do Brasil. A data do rompimento (2002) confirma os pôsteres
     da IAB quanto ao ano; a organização formal da IECB e a sagração de Garcia são de 2003. Ambas as fontes são Wikipédia
@@ -65,7 +71,7 @@ relations:
   date: 2002/2003
   led_by:
   - paulo-garcia
-  status: probable
+  status: contested
   sources:
   - source: ptwiki-iecb
     quote: >-
@@ -76,9 +82,20 @@ relations:
       Este acabou fundando a Igreja Episcopal Carismática do Brasil (IECB) – parte da Comunhão Internacional da
       Igreja Episcopal Carismática (em inglês, International Communion of the Charismatic Episcopal Church - ICCEC)
       – no final de 2002
+  - source: enwiki-iccec-bispos
+    quote: '|42||8 September 2003||1 4 6||Paulo Ruiz Garcia||Abp. and Primate Brazil|| Resigned'
   notes: >-
     Data de saída da ICCEC não encontrada; a Wikipédia descreve a IECB 'atualmente' como igreja nacional autônoma
     organizada em torno da CEI, o que sugere desligamento ou autonomia posterior. Não confirmado em fonte da ICCEC.
+    Na lista oficial reproduzida pela Wikipédia EN, Garcia figura como 'Abp. and Primate Brazil' da ICCEC, com a
+    nota 'Resigned'. As sagrações brasileiras até 16/11/2009 constam da lista; depois disso não aparecem, o que
+    sugere saída da IECB da ICCEC após 2009 (data não encontrada). O site atual da ICCEC não menciona o Brasil.
+  discrepancies:
+  - field: date
+    value: '2003-09-08'
+    sources:
+    - source: enwiki-iccec-bispos
+      quote: '|42||8 September 2003||1 4 6||Paulo Ruiz Garcia||Abp. and Primate Brazil|| Resigned'
 - type: member_of
   target: cei
   date: '2019'

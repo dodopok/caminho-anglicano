@@ -1,5 +1,5 @@
 import { yearOf } from './dates'
-import type { Base, TRelation } from './schemas'
+import type { Base, TJurisdiction, TOrdination, TRelation } from './schemas'
 
 export type NodeKind = 'person' | 'jurisdiction'
 
@@ -20,6 +20,11 @@ export interface GraphNode {
   startYear?: number
   endYear?: number
   color?: string
+  /** Pessoa: ordem mais alta registrada. */
+  order?: TOrdination['order']
+  /** Jurisdição: tipo (igreja nacional, diocese...). */
+  jurisdictionType?: TJurisdiction['type']
+  country?: string
 }
 
 export interface GraphEdge {
@@ -54,7 +59,9 @@ export function buildGraph(base: Base): Graph {
       search: compact([j.name, j.acronym, ...(j.aliases ?? [])]),
       startYear: j.founded?.date ? yearOf(j.founded.date) : undefined,
       endYear: j.dissolved?.date ? yearOf(j.dissolved.date) : undefined,
-      color: j.color
+      color: j.color,
+      jurisdictionType: j.type,
+      country: j.country ?? undefined
     })
     for (const r of j.relations ?? []) {
       edges.push({
@@ -76,7 +83,8 @@ export function buildGraph(base: Base): Graph {
       label: p.name,
       search: compact([p.name, p.full_name, ...(p.aliases ?? [])]),
       startYear: first ? yearOf(first) : p.birth?.date ? yearOf(p.birth.date) : undefined,
-      endYear: p.death?.date ? yearOf(p.death.date) : undefined
+      endYear: p.death?.date ? yearOf(p.death.date) : undefined,
+      order: (['episcopate', 'presbyterate', 'diaconate'] as const).find((o) => ordinations.some((x) => x.order === o))
     })
 
     const to = nodeId('person', p.id)

@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: antonio-m-de-fraga
+name: Antonio M. de Fraga
+aliases:
+- Antônio Machado de Fraga
+biography: Um dos brasileiros que acompanharam os missionários a Porto Alegre em 1890.
+sources:
+- source: wp-en-kinsolving
+  quote: >-
+    of whom Vicente Brande, Antonio M. de Fraga and Americo V. Cabral would all serve the church for many years
+events:
+- type: other
+  date: '1890-06-01'
+  description: >-
+    Chegada de Kinsolving e Morris (com quatro brasileiros) a Porto Alegre em 21/04/1890 e primeiro culto público
+    em 1/06/1890 (domingo da Trindade).
+  status: probable
+  sources:
+  - source: wp-en-kinsolving
+    quote: The young Americans arrived at Porto Alegre on April 21, 1890, accompanied by four Brazilians
+  - source: wp-en-ieab
+    quote: where they held the first Anglican Mass in Portuguese on 1 June 1890.

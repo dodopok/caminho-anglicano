@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: itabira-jonas
+name: Itabira Jonas
+biography: >-
+  Bispo ordinário da Diocese Anglicana de São Paulo e Paraná (TAC); recebido no anglicanismo em 1997, diácono e
+  padre no Movimento Anglicano Continuante, sagrado bispo em 11/1/2018.
+sources:
+- source: tac-sppr-diocese
+  quote: >-
+    Dom Itabira Jonas foi recebido no anglicanismo em 1997; Tornou-se Diácono e Sacerdote no Movimento Anglicano
+    Continuante, e foi Sagrado Bispo em 11 de janeiro de 2018.
+ordinations:
+- order: episcopate
+  date: '2018-01-11'
+  jurisdiction: tac-sppr
+  status: probable
+  sources:
+  - source: tac-sppr-diocese
+    quote: >-
+      e foi Sagrado Bispo em 11 de janeiro de 2018.  É um dos 2 Bispos da Igreja Anglicana Tradicional – TAC no
+      Brasil
+  notes: >-
+    Sagrantes não informados. O site da IACC lista Itabira Jonas entre os bispos que receberam a 'linhagem episcopal'
+    de James Roque (sucessão declarada: Cruz-Blanco → Roque). Em 2018 ainda não era TAC (as dioceses brasileiras
+    foram recebidas na TAC em 2025); jurisdição na data provavelmente IACC.
+affiliations:
+- jurisdiction: tac
+  role: diocesan_bishop
+  diocese: diocese-anglicana-de-sao-paulo-e-parana
+  status: confirmed
+  sources:
+  - source: tac-londrina-home
+    quote: Reverendíssimo Bispo Itabira Jonas Ordinário da Dioces e de São Paulo e Paraná
+  - source: tac-sppr-diocese
+    quote: 'Bispo Diocesano: Dom Itabira Jonas'
+- jurisdiction: iacc
+  role: diocesan_bishop
+  diocese: diocese-anglicana-de-sao-paulo-e-parana
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: dom †Itabira Jonas, Bispo da Diocese Anglicana de São Paulo e Paraná
+  notes: Página da IACC sem data.
+events:
+- type: other
+  date: null
+  description: >-
+    Bispos brasileiros que, segundo a IACC, receberam a linhagem episcopal de James Roque: José Kennedy de Freitas,
+    Marcos Mattos, Albertino de Sousa Barreiros (Natal), Claudinei Rodrigo Ferreira (Santa Catarina), Itabira Jonas
+    (São Paulo e Paraná), Francisco de Assis Coelho e Pinho (Amazonas, eleito) e José Barbosa da Silva (Portugal)
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      Após, houve a transmissão da sua linhagem episcopal para poucas pessoas. Podem ser citadas como as mais atuantes
+      no anglicanismo continuante brasileiro os bispos: dom †José Kennedy de Freitas

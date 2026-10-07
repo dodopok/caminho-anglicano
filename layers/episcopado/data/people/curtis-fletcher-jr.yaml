@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: curtis-fletcher-jr
+name: Curtis Fletcher Jr.
+biography: Diácono na Igreja da Ascensão (Porto Alegre), ordenado presbítero em 15/04/1940.
+sources:
+- source: wit-1940-04-18
+  quote: the Rev. Curtis Fletcher, Jr., deacon at the Ascension, were advanced to the priesthood.
+ordinations:
+- order: presbyterate
+  date: '1940-04-15'
+  place: Igreja da Ascensão, Porto Alegre
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: wit-1940-04-18
+    quote: the Rev. Curtis Fletcher, Jr., deacon at the Ascension, were advanced to the priesthood.
+  notes: Ordenante provavelmente W. M. M. Thomas (não declarado).

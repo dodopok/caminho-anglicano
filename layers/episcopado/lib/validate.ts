@@ -1,4 +1,5 @@
 import { definitelyBefore } from './dates'
+import { normalizeName } from './text'
 import type { Base, TOrdination, TPerson, TSource, TSourceRef } from './schemas'
 
 export interface Finding {
@@ -30,21 +31,12 @@ const EPISCOPAL_ROLES = new Set([
 
 const ORDER_SEQUENCE = ['diaconate', 'presbyterate', 'episcopate'] as const
 
+export { normalizeName }
+
 const ORDER_LABEL: Record<TOrdination['order'], string> = {
   diaconate: 'diaconato',
   presbyterate: 'presbiterato',
   episcopate: 'episcopado'
-}
-
-export function normalizeName(name: string): string {
-  return name
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
-    .replace(/\b(dom|d\.|rev\.?|revmo\.?|rvmo\.?|rt\.? rev\.?|the|most|right|reverend|bispo|bishop|arcebispo|archbishop|padre|pe\.|frei)\s+/g, '')
-    .replace(/[^a-z0-9 ]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
 }
 
 /** Ordenação "principal" de uma pessoa numa ordem (ignora condicionais/reordenações). */

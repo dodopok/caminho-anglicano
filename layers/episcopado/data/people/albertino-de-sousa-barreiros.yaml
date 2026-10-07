@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: albertino-de-sousa-barreiros
+name: Albertino de Sousa Barreiros
+full_name: Albertino de Sousa Barreiros
+aliases:
+- Bishop Albertino Barreiros
+- Dom Albertino Barreiros
+biography: >-
+  Bispo ordinário da Diocese Anglicana do Natal (TAC no Brasil), fundada em 2019; antes padre (segundo blog local,
+  ordenado presbítero católico romano em 1994 — não verificado). Em 2025 enfrentava tratamento de câncer.
+sources:
+- source: tac-natal-5anos
+  quote: >-
+    The Right Reverend Albertino Barreiros Bishop Ordinary of the Diocese of Natal Traditional Anglican Church in
+    Brazil
+- source: tac-natal-noticias
+  quote: uma oração e uma bênção do nosso bispo diocesano, Dom Albertino De Sousa Barreiros.
+affiliations:
+- jurisdiction: tac
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-natal
+  start: '2019'
+  status: confirmed
+  sources:
+  - source: tac-natal-5anos
+    quote: Bishop Ordinary of the Diocese of Natal
+  - source: tac-adclerum-2025
+    quote: >-
+      We pray to Divine Providence in the life of our Right Reverend Bishop Albertino de Sousa Barreiros and all
+      our clergy.
+  notes: >-
+    Data de sua sagração e sagrantes não encontrados. Um blog local (aryramalho.com, abril de 2019) noticiou sua
+    eleição como primeiro bispo da recém-criada Diocese do Natal — não pude abrir a página. O site da IACC o lista
+    como bispo na linha de James Roque.
+- jurisdiction: iacc
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-natal
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      dom †Albertino de Sousa Barreiros, Bispo da Diocese Anglicana do Natal, Estado do Rio Grande do Norte
+  notes: Página da IACC sem data.
+events:
+- type: other
+  date: null
+  description: >-
+    Bispos brasileiros que, segundo a IACC, receberam a linhagem episcopal de James Roque: José Kennedy de Freitas,
+    Marcos Mattos, Albertino de Sousa Barreiros (Natal), Claudinei Rodrigo Ferreira (Santa Catarina), Itabira Jonas
+    (São Paulo e Paraná), Francisco de Assis Coelho e Pinho (Amazonas, eleito) e José Barbosa da Silva (Portugal)
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      Após, houve a transmissão da sua linhagem episcopal para poucas pessoas. Podem ser citadas como as mais atuantes
+      no anglicanismo continuante brasileiro os bispos: dom †José Kennedy de Freitas

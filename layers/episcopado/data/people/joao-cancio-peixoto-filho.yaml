@@ -1,20 +1,65 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: joao-cancio-peixoto-filho
 name: Joao Cancio Peixoto Filho
+aliases:
+- Bispo Peixoto
+- Dom João Peixoto
+- João C. Peixoto Filho
+- João Peixoto
+biography: >-
+  Bispo diocesano da Diocese Anglicana do Recife (IEAB) desde 2013; ordenado diácono em 2003 e presbítero em 2005;
+  ex-reitor do SAET.
+sources:
+- source: dar-2023-peixoto10
+  quote: >-
+    Ordenado ao diaconato no ano de 2003 e ao presbiterato em 2005, João Peixoto também foi reitor do Seminário
+    Anglicano de Estudos Teológicos (SAET).
 ordinations:
+- order: diaconate
+  date: '2003'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: dar-2023-peixoto10
+    quote: >-
+      Ordenado ao diaconato no ano de 2003 e ao presbiterato em 2005, João Peixoto também foi reitor do Seminário
+      Anglicano de Estudos Teológicos (SAET).
+  - source: dar-2026-peixoto-traj
+    quote: até chegar à ordenação como diácono, em 2003, e posteriormente como presbítero.
+  notes: >-
+    Diocese do Recife (IEAB), então sob o bispo Robinson Cavalcanti. Ordenante não informado. | Segunda fonte (mesmo
+    publicador) para o diaconato de 2003.
+- order: presbyterate
+  date: '2005'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: dar-2023-peixoto10
+    quote: Ordenado ao diaconato no ano de 2003 e ao presbiterato em 2005
+  notes: >-
+    Ano da separação da Diocese do Recife; ordenante não informado (verificar se foi antes ou depois da divisão
+    de 2005).
 - order: episcopate
   date: '2013-12-14'
-  place: Catedral da Santissima Trindade, Recife (bairro do Espinheiro)
+  place: Catedral Anglicana da Santíssima Trindade, Espinheiro, Recife (PE)
   jurisdiction: ieab
   office: diocesan
   principal_consecrator: francisco-de-assis-da-silva
   co_consecrators:
+  - filadelfo-oliveira
   - filadelfo-oliveira-neto
   - mauricio-andrade
+  - saulo-barros
   - saulo-mauricio-de-barros
   - sebastiao-gameleira
-  status: probable
+  status: contested
   sources:
+  - source: dar-2023-peixoto10
+    quote: >-
+      A cerimônia de sagração aconteceu no dia 14 de dezembro de 2013, na Catedral Anglicana da Santíssima Trindade,
+      no bairro do Espinheiro. Estiveram presentes o Primaz da Igreja Episcopal Anglicana do Brasil, Dom Francisco
+      de Assis da Silva, que presidiu a liturgia. Os demais co-sagrantes foram os bispos Sebastião Gameleira, Maurício
+      Andrade, Saulo Barros e Filadelfo Oliveira.
   - source: costa2021
     quote: >-
       A cerimônia foi presidida pelo Bispo Primaz, Francisco de Assis da Silva, e os demais co-sagrantes foram os
@@ -25,7 +70,25 @@ ordinations:
   - source: wp-pt-joao-cancio
     quote: >-
       Em novembro de 2013 foi eleito Bispo da Diocese Anglicana do Recife, sendo sagrado em 14 de dezembro de 2013
-  notes: Eleito em 16/11/2013 no 32o Sinodo Geral (Rio de Janeiro).
+  discrepancies:
+  - field: place
+    value: Catedral da Santissima Trindade, Recife (bairro do Espinheiro)
+    sources:
+    - source: costa2021
+      quote: >-
+        A cerimônia foi presidida pelo Bispo Primaz, Francisco de Assis da Silva, e os demais co-sagrantes foram
+        os bispos Sebastião Gameleira, Maurício Andrade, Saulo de Barros e Filadelfo Oliveira.
+    - source: costa2021
+      quote: >-
+        sagração ocorreu na noite de 14 de dezembro de 2013, na Catedral da Santíssima Trindade, na capital pernambucana
+    - source: wp-pt-joao-cancio
+      quote: >-
+        Em novembro de 2013 foi eleito Bispo da Diocese Anglicana do Recife, sendo sagrado em 14 de dezembro de
+        2013
+  notes: >-
+    Bispo diocesano da Diocese Anglicana do Recife (IEAB). Co-sagrantes na forma curta dada pela fonte (exceto Maurício
+    Andrade, cujo nome completo consta da página de dioceses da IEAB); nomes completos a confirmar. Eleito em 16/11/2013
+    no 32o Sinodo Geral (Rio de Janeiro).
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
@@ -37,3 +100,66 @@ affiliations:
     quote: Bispo Diocesano – Revmo. João Cancio Peixoto Filho
   - source: ieab-serie-dar
     quote: Bispo Diocesano – Revmo. João Cancio Peixoto Filho.
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-diocese-recife
+  start: '2013-12-14'
+  status: confirmed
+  sources:
+  - source: dar-2023-peixoto10
+    quote: >-
+      nos alegramos com toda a Igreja pelos 10 anos de episcopado do Bispo João Câncio Peixoto Filho, à frente da
+      Diocese Anglicana do Recife.
+events:
+- type: other
+  date: '2026-08-08'
+  description: >-
+    Reconhecimento (previsto) das ordens sacerdotais do Rev. Osiel Ferreira de Assunção pelo bispo João Peixoto,
+    na capela da Missão São Paulo Apóstolo, Batalha (PI)
+  status: probable
+  sources:
+  - source: dar-2026-osiel-conv
+    quote: >-
+      No sábado (8/8), em celebração na capela da Missão, será reconhecida as ordens sacerdotais do Rev. Osiel Ferreira
+      de Assunção.
+- type: other
+  date: '2023-06-04'
+  description: >-
+    Reconhecimento das sagradas ordens do Rev. Martorelli Dantas da Silva pelo bispo João Peixoto (Diocese Anglicana
+    do Recife, IEAB), que o instalou como pároco da Paróquia Anglicana da Santíssima Trindade
+  status: confirmed
+  sources:
+  - source: dar-2023-martorelli
+    quote: >-
+      No último dia 04 de junho, o nosso Bispo Diocesano Dom João Cancio Peixoto Filho, em solenidade celebrada
+      nas dependências do Hotel Villa D’Oro, onde se reúne a Paróquia Anglicana da Santíssima Trindade, reconheceu
+      as sagradas ordens do Rev. Martorelli Dantas, vindo este a se tornar um presbítero de nossa Diocese
+  - source: dar-2023-martorelli-conv
+    quote: o Reconhecimento das Sagradas Ordens do Revdo. Martorelli Dantas da Silva.
+- type: other
+  date: '2026-08-08'
+  description: >-
+    Reconhecimento das ordens do Rev. Osiel Ferreira de Assunção pelo bispo João Peixoto em Batalha (PI); passa
+    a integrar o clero da Diocese Anglicana do Recife
+  status: confirmed
+  sources:
+  - source: dar-2026-osiel
+    quote: >-
+      A celebração foi marcada pelo Reconhecimento das Ordens do Rev. Osiel Ferreira de Assunção, que passa oficialmente
+      a ser parte do clero ordenado da Diocese Anglicana do Recife.
+  - source: dar-2026-osiel
+    quote: >-
+      No final de semana do dia dos pais, o Bispo João C. Peixoto, esteve em visita pastoral ao Piauí, na cidade
+      de Batalha
+- type: other
+  date: '2013'
+  description: >-
+    Dom João Peixoto descreve a Diocese do Recife (IEAB) recebida em 2013 como fragilizada após o cisma: sem patrimônio,
+    com poucos clérigos e em crise financeira, seguida de batalhas judiciais
+  status: confirmed
+  sources:
+  - source: dar-2026-peixoto-traj
+    quote: >-
+      “Recebemos uma Diocese fragilizada, sem patrimônio, com poucos clérigos e em crise financeira. Foi um período
+      muito difícil”, afirma. A partir daí, iniciou-se um processo de reconstrução institucional que envolveu batalhas
+      judiciais

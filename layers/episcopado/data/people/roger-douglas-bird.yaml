@@ -29,6 +29,15 @@ ordinations:
     A Wikipedia PT cita o Estandarte Cristao jul-ago/2007 (fonte primaria, nao aberta aqui) para a lista de co-sagrantes.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '2007'
+  end: '2013'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: costa2021
+    quote: romperam com a Província, fundando o Movimento Anglicano no Brasil (MAnB).
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
   start: '2007-09-07'
@@ -43,3 +52,14 @@ affiliations:
       Em 21 de novembro de 2012, o então bispo Roger Bird apresentou sua carta de resignação do cargo de bispo da
       DASP
   notes: Depois uniu-se ao Movimento Anglicano no Brasil (fora da IEAB).
+- jurisdiction: manb
+  role: founder
+  start: '2013'
+  end: '2023-02-13'
+  end_reason: death
+  status: probable
+  sources:
+  - source: wp-pt-roger-bird
+    quote: >-
+      Diante das disputas, eles romperam com a IEAB e fundaram o Movimento Anglicano no Brasil, tomando como sede
+      a Catedral Anglicana de São Paulo, que passou para a supervisão episcopal dos dois bispos.

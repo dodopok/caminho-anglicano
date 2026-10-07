@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: oldair-pena
+name: Oldair Pena
+ordinations:
+- order: diaconate
+  date: '2021-11-14'
+  place: Paróquia da Virgem Maria, Natal (RN)
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: confirmed
+  sources:
+  - source: dar-2021-oldair-conv
+    quote: >-
+      tem a alegria de convidar Vossa Senhoria, Exma. Família e Comunidade, para participarem da Cerimônia de Ordenação
+      Diaconal do Ministro Pastoral Leigo Oldair Pena. A se realizar na Paróquia da Virgem Maria, Av. Sen. Carlos
+      Alberto, 629 – Nossa Senhora da Apresentação, Natal – RN, no dia 14 de novembro de 2021
+  - source: dar-2021-oldair-diac
+    quote: >-
+      No último domingo (14/11), o Reverendíssimo Bispo João Câncio Peixoto esteve no Rio Grande do Norte, em visita
+      pastoral à Paróquia Anglicana da Virgem Maria (Natal/RN), para realizar a ordenação ao diaconato do Candidato
+      às Sagradas Ordens Oldair Pena.
+  - source: dar-2021-oldair-diac
+    quote: >-
+      Que Deus abençoe o ministério do novo diácono da IEAB, que foi instalado pelo Bispo Diocesano como coadjutor
+      da Paróquia.
+  notes: >-
+    Diocese Anglicana do Recife. Fonte é convite (antes do evento); a ordenação presbiteral posterior como "Diácono
+    Oldair Pena" confirma indiretamente que ocorreu. | Diocese Anglicana do Recife. Duplica a afirmação baseada
+    no convite (dar-2021-oldair-conv), agora com relato posterior ao evento.
+- order: presbyterate
+  date: '2023-01-22'
+  place: Paróquia Anglicana da Virgem Maria, Natal (RN)
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: confirmed
+  sources:
+  - source: dar-2023-oldair-presb
+    quote: >-
+      No último dia 22 de janeiro, na Paróquia Anglicana da Virgem Maria, Natal/RN, o Bispo João C. Peixoto ordenou
+      ao Presbiterado o Revdo. Oldair Pena.
+  notes: >-
+    Diocese Anglicana do Recife. O convite (dar-2022-oldair-presb-conv) anunciava a data de 14 de janeiro de 2023;
+    a notícia posterior registra 22 de janeiro.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-diocese-recife
+  start: '2021-11-14'
+  status: probable
+  sources:
+  - source: dar-2023-oldair-presb
+    quote: O Revdo. Oldair Pena foi instituído como novo Pároco da Paróquia da Virgem Maria.
+  notes: Pároco da Paróquia da Virgem Maria (Natal) a partir de 2023-01-22.
