@@ -1,6 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: frederico-carneiro-rego-bastos
 name: Frederico Carneiro Rêgo Bastos
+full_name: Frederico Carneiro Rêgo Bastos
+aliases:
+- Dom Frederico Bastos
+biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
+sources:
+- source: ptwiki-iecb
+  quote: e Frederico Carneiro Rêgo Bastos, da Diocese de Vitória de Santo Antão
 ordinations:
 - order: episcopate
   date: '2007-04-14'

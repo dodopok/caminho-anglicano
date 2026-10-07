@@ -1,3 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: charles-longley
-name: Charles Longley
+name: Charles Thomas Longley
+full_name: Charles Thomas Longley
+aliases:
+- Charles Longley
+- Dr. Longley
+birth:
+  date: '1794-07-28'
+  sources:
+  - source: life-machray-1909
+    quote: the Archbishop of Canterbury (Dr. Longley)
+death:
+  date: '1868-10-27'
+  sources:
+  - source: life-machray-1909
+    quote: the Archbishop of Canterbury (Dr. Longley)
+wikidata: Q1145542
+biography: Arcebispo da Cantuária (1862–1868).
+sources:
+- source: life-machray-1909
+  quote: the Archbishop of Canterbury (Dr. Longley)

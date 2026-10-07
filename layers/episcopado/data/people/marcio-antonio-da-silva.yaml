@@ -1,6 +1,15 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcio-antonio-da-silva
 name: Márcio Antônio da Silva
+birth:
+  date: '1980-12-20'
+  sources:
+  - source: dar-2020-marcio
+    quote: Márcio Antônio da Silva, nascido no dia 20 de Dezembro de 1980, em Caruaru- PE.
+biography: Diácono permanente da Diocese Anglicana do Recife (Caruaru), ordenado em 2020.
+sources:
+- source: dar-2020-marcio
+  quote: Márcio Antônio da Silva, nascido no dia 20 de Dezembro de 1980, em Caruaru- PE.
 ordinations:
 - order: diaconate
   date: '2020-10-18'
@@ -17,3 +26,14 @@ ordinations:
   - source: dar-2020-marcio-conv
     quote: estará ordenando ao Diaconato Permanente, o Ministro Pastoral Márcio Antônio da Silva.
   notes: Diocese Anglicana do Recife. Diaconato permanente.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-diocese-recife
+  status: confirmed
+  sources:
+  - source: dar-clero-diocesano
+    quote: CLERO DIOCESANO
+  - source: dar-clero-diocesano
+    quote: Revdo. Márcio Antônio da Silva
+  notes: Listado no clero diocesano da DAR (página consultada em 2026-10).

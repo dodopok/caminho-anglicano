@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: carlos-jose-de-araujo
+name: Carlos José de Araújo
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-diocese-recife
+  status: confirmed
+  sources:
+  - source: dar-clero-diocesano
+    quote: CLERO DIOCESANO
+  - source: dar-clero-diocesano
+    quote: Revdo. Carlos José de Araújo
+  notes: Listado no clero diocesano da DAR (página consultada em 2026-10).

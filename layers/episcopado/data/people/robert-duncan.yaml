@@ -1,8 +1,24 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: robert-duncan
 name: Robert Duncan
+full_name: Robert William Duncan
 aliases:
+- Abp. Robert Duncan
+- Bob Duncan
 - Robert William Duncan
+birth:
+  date: '1948-07-05'
+  sources:
+  - source: wp-duncan
+    quote: >-
+      He was installed on June 25, 2009, at [[Christ Church (Plano, Texas)|Christ Church]] in [[Plano, Texas]].
+wikidata: Q553866
+biography: >-
+  Bispo de Pittsburgh (TEC; sagrado coadjutor em 1996), depois primeiro arcebispo e primaz da ACNA (2009–2014).
+sources:
+- source: wp-duncan
+  quote: >-
+    He was installed on June 25, 2009, at [[Christ Church (Plano, Texas)|Christ Church]] in [[Plano, Texas]].
 ordinations:
 - order: episcopate
   date: '1996-04-27'
@@ -35,11 +51,29 @@ ordinations:
 affiliations:
 - jurisdiction: acna
   role: primate
-  start: '2008'
-  status: probable
+  start: '2009-06-25'
+  status: contested
   sources:
+  - source: wp-duncan
+    quote: >-
+      On June 21, 2009, the bishops of the Anglican Church in North America elected Duncan as the first archbishop
+      and primate of North America. He was installed on June 25, 2009
+  - source: wp-duncan
+    quote: >-
+      At the ceremony, conservative Anglicans in the developing world were represented by [[Benjamin Nzimbi]]
   - source: iab-poster-linhagem-meira
     quote: >-
       que, em 2008, se tornou o primeiro arcebispo e primaz da Igreja Anglicana na América do Norte. Foi entronizado
       na Christ Church, em Plano (Texas), pelo arcebispo Benjamin Nzimbi, primaz do Quênia
-  notes: Datas da ACNA (fundação 2009) divergem — verificar.
+  notes: >-
+    CORRIGIDO: o pôster põe a eleição/entronização em 2008; a Wikipédia dá eleição em 21/06/2009 e instalação em
+    25/06/2009 em Christ Church, Plano (Texas), com Nzimbi presente representando os anglicanos do Sul Global (o
+    pôster diz que Nzimbi o entronizou). Datas da ACNA (fundação 2009) divergem — verificar.
+  discrepancies:
+  - field: start
+    value: '2008'
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        que, em 2008, se tornou o primeiro arcebispo e primaz da Igreja Anglicana na América do Norte. Foi entronizado
+        na Christ Church, em Plano (Texas), pelo arcebispo Benjamin Nzimbi, primaz do Quênia

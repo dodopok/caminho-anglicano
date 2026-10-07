@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: elias-valentim
+name: Elias Valentim
+ordinations:
+- order: presbyterate
+  date: 2025-10
+  jurisdiction: reb
+  status: confirmed
+  sources:
+  - source: ig-reb-2025-10-25-presbiteros
+    quote: celebramos as ordenações presbiterais realizadas em nosso Sínodo Diocesano.
+  - source: ig-reb-2025-10-25-presbiteros
+    quote: "Dêmos graças aos novos presbíteros da Rede Episcopal Brasileira. \n\n- Reverendo Douglas Araújo (SP)\n\
+      - Reverenda Cynthia Soares (SP)\n- Reverendo Elias Valentim (ES)\n- Reverenda Joyce Baiense (ES)"
+  notes: O post não nomeia o bispo ordenante. Data = mês do Sínodo Diocesano (post de 25/10/2025).
+affiliations:
+- jurisdiction: reb
+  role: priest
+  start: 2025-10
+  status: confirmed
+  sources:
+  - source: ig-reb-2025-10-25-presbiteros
+    quote: "Dêmos graças aos novos presbíteros da Rede Episcopal Brasileira. \n\n- Reverendo Douglas Araújo (SP)\n\
+      - Reverenda Cynthia Soares (SP)\n- Reverendo Elias Valentim (ES)\n- Reverenda Joyce Baiense (ES)"
+  notes: Listado com a UF ES.

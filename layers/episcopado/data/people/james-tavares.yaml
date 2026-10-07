@@ -1,6 +1,12 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: james-tavares
 name: James Tavares
+biography: Bispo/clérigo ligado à jurisdição DAV; ver afirmações.
+sources:
+- source: costa-2021-tese
+  quote: >-
+    Durante o 2º Concílio da Diocese, James Tavares foi escolhido como o bispo sucessor, sendo ordenado ao episcopado
+    em 14 de outubro de 2018, na Catedral da Santa Mãe de Deus, em Votorantim.
 ordinations:
 - order: episcopate
   date: '2018-10-14'

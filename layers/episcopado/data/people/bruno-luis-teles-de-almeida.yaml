@@ -1,6 +1,15 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: bruno-luis-teles-de-almeida
 name: Bruno Luís Teles de Almeida
+aliases:
+- Bruno Luiz Teles de Almeida
+- Revdo. Bruno Almeida
+biography: >-
+  Clérigo (OSF) da Diocese Anglicana do Recife desde ao menos 2004; pároco do Bom Pastor (Salvador) e arcediago
+  da Região Sul da DAR.
+sources:
+- source: ieab-2004-decreto-recife
+  quote: Rev. Bruno Luís Teles de Almeida,
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -11,7 +20,12 @@ affiliations:
     quote: 'Considerando a solicitação dos clérigos e clérigas a seguir relacionados:'
   - source: ieab-2004-decreto-recife
     quote: Rev. Bruno Luís Teles de Almeida,
+  - source: dar-clero-diocesano
+    quote: CLERO DIOCESANO
+  - source: dar-clero-diocesano
+    quote: Revdo. Bruno Luiz Teles de Almeida
   notes: >-
     Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
     por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. Paróquia do Bom Pastor
-    e Capela Cristo o Salvador; OSF. Depois pároco do Bom Pastor (Salvador) e arcediago da Região Sul da DAR
+    e Capela Cristo o Salvador; OSF. Depois pároco do Bom Pastor (Salvador) e arcediago da Região Sul da DAR Listado
+    no clero diocesano da DAR (página consultada em 2026-10). A página grafa "Luiz"; o decreto de 2004, "Luís".

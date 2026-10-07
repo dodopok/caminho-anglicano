@@ -1,6 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: luis-fernando-lopes-da-silveira
 name: Luis Fernando Lopes da Silveira
+full_name: Luis Fernando Lopes da Silveira
+aliases:
+- Dom Luis Silveira
+biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
+sources:
+- source: ptwiki-iecb
+  quote: Luis Fernando Lopes da Silveira (2023)
 ordinations:
 - order: episcopate
   date: '2023'

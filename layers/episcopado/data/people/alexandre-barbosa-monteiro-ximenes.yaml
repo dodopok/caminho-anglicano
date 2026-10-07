@@ -1,6 +1,15 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: alexandre-barbosa-monteiro-ximenes
 name: Alexandre Barbosa Monteiro Ximenes
+full_name: Alexandre Barbosa Monteiro Ximenes
+aliases:
+- Dom Alexandre Ximenes
+biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
+sources:
+- source: ptwiki-iecb
+  quote: >-
+    Em 14 de abril de 2007, foram sagrados dois novos bispos: Alexandre Barbosa Monteiro Ximenes, responsável pela
+    Diocese do Litoral Sul e Alagoas
 ordinations:
 - order: episcopate
   date: '2007-04-14'

@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: douglas-araujo
+name: Douglas Araújo
+ordinations:
+- order: diaconate
+  date: '2025-03-09'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: ig-anglicanaporto-2025-03-10-diaconato-1
+    quote: 09 de março de 2025, o dia em que nossos pastores foram ordenados ao diaconato.
+  - source: ig-anglicanaporto-2025-03-10-diaconato-2
+    quote: 09 de março de 2025, o dia em que nossos pastores foram ordenados ao diaconato.
+  notes: >-
+    Os posts da Igreja Anglicana Porto citam o perfil @rev_douglasaraujo; a identificação com 'Douglas Araújo' do
+    post da REB é inferência editorial. Jurisdição e bispo ordenante não informados.
+- order: presbyterate
+  date: 2025-10
+  jurisdiction: reb
+  status: confirmed
+  sources:
+  - source: ig-reb-2025-10-25-presbiteros
+    quote: celebramos as ordenações presbiterais realizadas em nosso Sínodo Diocesano.
+  - source: ig-reb-2025-10-25-presbiteros
+    quote: "Dêmos graças aos novos presbíteros da Rede Episcopal Brasileira. \n\n- Reverendo Douglas Araújo (SP)\n\
+      - Reverenda Cynthia Soares (SP)\n- Reverendo Elias Valentim (ES)\n- Reverenda Joyce Baiense (ES)"
+  notes: O post não nomeia o bispo ordenante. Data = mês do Sínodo Diocesano (post de 25/10/2025).
+affiliations:
+- jurisdiction: reb
+  role: priest
+  start: 2025-10
+  status: confirmed
+  sources:
+  - source: ig-reb-2025-10-25-presbiteros
+    quote: "Dêmos graças aos novos presbíteros da Rede Episcopal Brasileira. \n\n- Reverendo Douglas Araújo (SP)\n\
+      - Reverenda Cynthia Soares (SP)\n- Reverendo Elias Valentim (ES)\n- Reverenda Joyce Baiense (ES)"
+  notes: Listado com a UF SP.

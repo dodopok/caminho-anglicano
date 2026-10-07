@@ -1,17 +1,63 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: joseph-adetiloye
 name: Joseph Adetiloye
+full_name: Joseph Abiodun Adetiloye
 aliases:
+- Abiodun Adetiloye
+- J. Abiodun Adetiloye
 - Joseph Abiodun Adetiloye
+birth:
+  date: '1929-12-25'
+  sources:
+  - source: con-adetiloye-2012
+    quote: >-
+      He was consecrated Bishop and enthroned on the see of Ekiti in 1970 succeeding the late Bishop H.A. Osanyin.
+death:
+  date: '2012-12-14'
+  sources:
+  - source: con-adetiloye-2012
+    quote: >-
+      He was consecrated Bishop and enthroned on the see of Ekiti in 1970 succeeding the late Bishop H.A. Osanyin.
+wikidata: Q6104550
+biography: Bispo de Ekiti (1970), bispo de Lagos (1985) e 2º primaz da Igreja da Nigéria (1986/88–1999).
+sources:
+- source: con-adetiloye-2012
+  quote: >-
+    He was consecrated Bishop and enthroned on the see of Ekiti in 1970 succeeding the late Bishop H.A. Osanyin.
 ordinations:
 - order: episcopate
   date: '1970'
-  jurisdiction: church-of-nigeria
+  jurisdiction: igreja-da-nigeria-provincia-da-africa-ocidental
+  office: diocesan
   principal_consecrator: moses-scott
-  status: probable
+  status: contested
   sources:
+  - source: con-adetiloye-2012
+    quote: >-
+      He was consecrated Bishop and enthroned on the see of Ekiti in 1970 succeeding the late Bishop H.A. Osanyin.
+  - source: dacb-adetiloye
+    quote: >-
+      Adetiloye became the second bishop of the Ekiti Diocese in 1970 and served until 1985 when he became the sixth
+      bishop of Lagos.
+  - source: wp-adetiloye
+    quote: >-
+      In August 1970, he was elected and nominated bishop of the Diocese of Ekiti, latter being transferred to the
+      Diocese of Lagos, of which he was bishop from 1985 to 1999.
   - source: iab-poster-linhagem-uchoa
     quote: >-
       163d. Moses Nathanael Christopher Omobiala Scott (1961-1981) que consagrou Joseph Abiodun Adetiloye como bispo
       da diocese da Lagos, da Igreja da Nigéria.
-  notes: Ano inferido do início do episcopado indicado no pôster (1970); verificar.
+  discrepancies:
+  - field: jurisdiction
+    value: church-of-nigeria
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        163d. Moses Nathanael Christopher Omobiala Scott (1961-1981) que consagrou Joseph Abiodun Adetiloye como
+        bispo da diocese da Lagos, da Igreja da Nigéria.
+  notes: >-
+    CORRIGIDO: o pôster diz que Moses Scott "consagrou Joseph Abiodun Adetiloye como bispo da diocese da Lagos";
+    Adetiloye foi sagrado em 1970 como bispo de EKITI (só foi transladado para Lagos em 1985). O SAGRANTE NÃO FOI
+    ENCONTRADO: nenhuma fonte (Igreja da Nigéria, DACB, Wikipédia, Wikidata) nomeia quem o sagrou. Scott era arcebispo
+    da África Ocidental em 1970 (1969–1981, cf. wp-scott), o que torna a afirmação do pôster plausível, mas não
+    comprovada. Ano inferido do início do episcopado indicado no pôster (1970); verificar.

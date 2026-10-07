@@ -1,17 +1,49 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: kevin-allen
 name: Kevin Allen
+full_name: Kevin Bond Allen
 aliases:
 - Kevin Bond Allen
+birth:
+  date: '1954'
+  sources:
+  - source: wp-cascadia
+    quote: >-
+      Kevin Allen was consecrated the first bishop of the Diocese of Cascadia by [[Robert Duncan (bishop)|Robert
+      Duncan]] (as archbishop of the ACNA) on September 30, 2011, in Seattle, Washington.
+wikidata: Q6395856
+biography: Primeiro bispo da Diocese of Cascadia (ACNA), 2011–2024.
+sources:
+- source: wp-cascadia
+  quote: >-
+    Kevin Allen was consecrated the first bishop of the Diocese of Cascadia by [[Robert Duncan (bishop)|Robert Duncan]]
+    (as archbishop of the ACNA) on September 30, 2011, in Seattle, Washington.
 ordinations:
 - order: episcopate
-  date: '2011'
+  date: '2011-09-30'
+  place: Seattle, Washington
   jurisdiction: acna
   office: diocesan
   principal_consecrator: robert-duncan
   status: probable
   sources:
+  - source: wp-cascadia
+    quote: >-
+      Kevin Allen was consecrated the first bishop of the Diocese of Cascadia by [[Robert Duncan (bishop)|Robert
+      Duncan]] (as archbishop of the ACNA) on September 30, 2011, in Seattle, Washington.
+  - source: wp-allen
+    quote: >-
+      In 2011, the diocese was fully recognized in the ACNA and Allen was elected and consecrated as its first diocesan
+      bishop by ACNA Archbishop Robert Duncan.
+  - source: wp-acnalist
+    quote: '[[Kevin Bond Allen]]
+
+      | 2011'
   - source: iab-poster-linhagem-uchoa
     quote: >-
       Em 2011, também consagrou Roger Copeland Ames como primeiro bispo da Diocese Anglicana dos Grandes Lagos (ver
       162a) e Kevin Bond Allen bispo Diocese de Cascadia (ver 163b) da ACNA.
+  notes: >-
+    Pôster: Duncan sagrou "Kevin Bond Allen bispo Diocese de Cascadia" (2011) — CONFIRMADO pela Wikipédia (dois
+    artigos). Co-sagrantes não encontrados. Um aviso da ACNA (anglicanchurch.net/?p=1069, hoje fora do ar) citado
+    em buscas indicaria "First Lutheran Church of West Seattle" como local, mas não consegui abrir a página.

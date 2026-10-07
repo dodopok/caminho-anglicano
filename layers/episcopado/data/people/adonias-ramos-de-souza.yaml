@@ -1,6 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: adonias-ramos-de-souza
 name: Adonias Ramos de Souza
+full_name: Adonias Ramos de Souza
+aliases:
+- Dom Adonias Souza
+biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
+sources:
+- source: ptwiki-iecb
+  quote: Adonias Ramos de Souza (2007)
 ordinations:
 - order: episcopate
   date: '2007-11-30'

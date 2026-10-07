@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: david-craig-anderson
+name: David Craig Anderson
+ordinations:
+- order: episcopate
+  date: '2007-12-09'
+  place: Church of the Epiphany, Herndon, Virgínia
+  jurisdiction: igreja-da-nigeria-cana
+  office: suffragan
+  principal_consecrator: peter-akinola
+  status: probable
+  sources:
+  - source: wp-anderson
+    quote: '| consecrated_by = [[Peter Akinola]]'
+  - source: ta-2007-12-10-cana
+    quote: Four additional suffragan bishops were consecrated for CANA by Archbishop Peter Akinola .
+  notes: >-
+    Incluído só como controle: mesma cerimônia de Ames; a Wikipédia de Anderson dá Akinola como sagrante, o que
+    reforça Akinola (e não Duncan) como sagrante principal de Ames.

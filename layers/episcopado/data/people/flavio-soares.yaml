@@ -41,7 +41,7 @@ ordinations:
   date: '2012-03-17'
   jurisdiction: diocese-anglicana-recife
   office: auxiliary
-  status: probable
+  status: contested
   sources:
   - source: iab-regiao-missionaria
     quote: Eleito ao Episcopado em 04/06/2011 , Ordenado e Sagrado em 17/03/2012.
@@ -49,6 +49,14 @@ ordinations:
     quote: >-
       que, em 2012 foi sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson Cavalcanti, sem
       sucessores diretos. Embora não existam registros públicos detalhando os consagrantes
+  discrepancies:
+  - field: jurisdiction
+    value: iacs
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        que, em 2012 foi sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson Cavalcanti,
+        sem sucessores diretos. Embora não existam registros públicos detalhando os consagrantes
   notes: >-
     Eleito em 04/06/2011, ainda no episcopado de Robinson Cavalcanti (a Living Church diz que em junho [de 2011]
     Cavalcanti pediu a eleição de um coadjutor, planejando aposentar-se em 2014); sagrado 3 semanas após a morte

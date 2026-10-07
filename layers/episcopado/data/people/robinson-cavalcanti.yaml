@@ -33,7 +33,7 @@ ordinations:
   date: '1997-10-05'
   place: Teatro Guararapes, Centro de Convencoes de Pernambuco (Olinda/Recife)
   jurisdiction: ieab
-  office: coadjutor
+  office: diocesan
   principal_consecrator: glauco-soares-de-lima
   co_consecrators:
   - almir-dos-santos
@@ -41,6 +41,14 @@ ordinations:
   - edmund-knox-sherrill
   status: contested
   sources:
+  - source: ultimato-robinson-bio
+    quote: Em 1997 foi eleito, sagrado e instituído Bispo da Diocese Anglicana do Recife
+  - source: tlc-2012-02-27
+    quote: Cavalcanti was consecrated as Bishop of Recife in 1997.
+  - source: wp-en-cavalcanti
+    quote: >-
+      In 1997 he was elected and consecrated Bishop of the Diocese of Recife, attending the Lambeth Conference of
+      1998
   - source: costa2021
     quote: >-
       O novo bispo coadjutor foi sagrado no dia 05 de outubro de 1997, em cerimônia realizada no Teatro Guararapes183,
@@ -54,24 +62,29 @@ ordinations:
     quote: >-
       Em 1997, Edmund participou da consagração de Edward Robinson de Barros Cavalcanti como bispo coadjutor, que
       depois se tornaria diocesano.
-  - source: wp-en-cavalcanti
-    quote: >-
-      In 1997 he was elected and consecrated Bishop of the Diocese of Recife, attending the Lambeth Conference of
-      1998
   discrepancies:
   - field: office
-    value: diocesan
+    value: coadjutor
     sources:
-    - source: wp-en-cavalcanti
+    - source: costa2021
       quote: >-
-        In 1997 he was elected and consecrated Bishop of the Diocese of Recife, attending the Lambeth Conference
-        of 1998
+        O novo bispo coadjutor foi sagrado no dia 05 de outubro de 1997, em cerimônia realizada no Teatro Guararapes183,
+        do Centro de Convenções de Pernambuco, pelo Primaz, Glauco Soares de Lima, tendo como co-sagrantes os bispos
+        Edmund Sherrill, Almir dos Santos e Clovis Erly Rodrigues.
+    - source: costa2021
+      quote: >-
+        No dia 05 de outubro de 1997, Edward Robinson de Barros Cavalcanti95 foi sagrado pelo Primaz em cerimônia
+        realizada no Centro de Convenções de Pernambuco
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Em 1997, Edmund participou da consagração de Edward Robinson de Barros Cavalcanti como bispo coadjutor,
+        que depois se tornaria diocesano.
   notes: >-
-    Confirma a pista dos posteres (participacao de Edmund Sherrill). Eleito coadjutor em 28/06/1997 no Concilio
-    Extraordinario em Vera Cruz, Ilha de Itaparica (BA); instalado como bispo diocesano em 19/10/1997. Uma nota
-    da mesma tese (n. 225) cita "Teatro Beberibe". O pôster só diz que Sherrill 'participou'; sagrante principal
-    desconhecido por esta fonte. O pôster da IAB (Meira) diz 'bispo coadjutor, que depois se tornaria diocesano'.
-    Data exata e sagrantes não encontrados ainda.
+    O pôster da IAB (Meira) diz 'bispo coadjutor, que depois se tornaria diocesano'. Data exata e sagrantes não
+    encontrados ainda. Confirma a pista dos posteres (participacao de Edmund Sherrill). Eleito coadjutor em 28/06/1997
+    no Concilio Extraordinario em Vera Cruz, Ilha de Itaparica (BA); instalado como bispo diocesano em 19/10/1997.
+    Uma nota da mesma tese (n. 225) cita "Teatro Beberibe". O pôster só diz que Sherrill 'participou'; sagrante
+    principal desconhecido por esta fonte.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop

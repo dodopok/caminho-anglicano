@@ -1,6 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: alexandre-lins-da-silva
 name: Alexandre Lins da Silva
+full_name: Alexandre Lins da Silva
+aliases:
+- Dom Alexandre Silva
+biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
+sources:
+- source: ptwiki-iecb
+  quote: Alexandre Lins da Silva (2014)
 ordinations:
 - order: episcopate
   date: '2014-10-02'

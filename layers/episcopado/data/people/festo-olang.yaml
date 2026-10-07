@@ -1,15 +1,81 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: festo-olang
-name: Festo Olang'
+name: Festo Habakkuk Olang'
+full_name: Festo Habakkuk Olang'
+aliases:
+- Festo Olang'
+- Festus Olang
+birth:
+  date: c.1914
+  sources:
+  - source: ack-nairobi-history
+    quote: >-
+      In 1955 the first African Bishop of the Anglican Church in Kenya, Festo Olang’ and Obadiah Kariuki were consecrated
+      by the Archbishop of Canterbury in Uganda.
+death:
+  date: '2004-02-03'
+  sources:
+  - source: ack-nairobi-history
+    quote: >-
+      In 1955 the first African Bishop of the Anglican Church in Kenya, Festo Olang’ and Obadiah Kariuki were consecrated
+      by the Archbishop of Canterbury in Uganda.
+wikidata: Q18389909
+biography: >-
+  Um dos dois primeiros bispos africanos no Quênia (bispo assistente, 1955); primeiro arcebispo africano do Quênia
+  (1970–1980).
+sources:
+- source: ack-nairobi-history
+  quote: >-
+    In 1955 the first African Bishop of the Anglican Church in Kenya, Festo Olang’ and Obadiah Kariuki were consecrated
+    by the Archbishop of Canterbury in Uganda.
 ordinations:
 - order: episcopate
-  date: '1955'
-  jurisdiction: church-of-england
+  date: '1955-03-15'
+  place: Catedral de Namirembe, Kampala, Uganda
+  jurisdiction: igreja-da-inglaterra-diocese-de-mombasa
+  office: auxiliary
   principal_consecrator: geoffrey-fisher
-  status: probable
+  co_consecrators:
+  - aberi-balya
+  - alfred-stanway
+  - cyril-stuart
+  - ebenezer-dimieari
+  - festo-lutaya
+  - jim-brazier
+  - leonard-beecher
+  - leslie-brown
+  - lucian-usher-wilson
+  - oliver-allison
+  - stephen-tomusange
+  - william-baker
+  status: contested
   sources:
+  - source: ack-nairobi-history
+    quote: >-
+      In 1955 the first African Bishop of the Anglican Church in Kenya, Festo Olang’ and Obadiah Kariuki were consecrated
+      by the Archbishop of Canterbury in Uganda.
+  - source: wp-olang
+    quote: >-
+      Olang' and Obadiah Kariuki were consecrated the first two African assistant bishops in Kenya by the Archbishop
+      of Canterbury, [[Geoffrey Fisher]], at Namirembe Cathedral, in [[Kampala]], [[Uganda]], on 15 March 1955.
+  - source: wp-olang
+    quote: >-
+      | co-consecrators              = [[Oliver Allison]], [[Leonard Beecher]], [[Alfred Stanway]], [[Leslie Brown
+      (bishop)|Leslie Brown]], [[Lucian Usher-Wilson]], [[Ebenezer Dimieari]], [[William Baker (bishop of Zanzibar)|William
+      Baker]], [[Aberi Balya]], [[Jim Brazier]], [[Festo Lutaya]], [[Stephen Tomusange]], and [[Cyril Stuart]]
   - source: iab-poster-linhagem-meira
     quote: >-
       163e. Geoffrey Fisher (1945-1961) que, em 1955, consagrou Festo Olang' como bispo da Diocese de Maseno, esta
       linhagem irá até a CEEC, e por fim, a Igreja Cristã Episcopal Betânia, no Recife.
-  notes: Olang' foi bispo assistente (Maseno) em 1955 — verificar cargo.
+  discrepancies:
+  - field: jurisdiction
+    value: church-of-england
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        163e. Geoffrey Fisher (1945-1961) que, em 1955, consagrou Festo Olang' como bispo da Diocese de Maseno,
+        esta linhagem irá até a CEEC, e por fim, a Igreja Cristã Episcopal Betânia, no Recife.
+  notes: >-
+    Pôster: Geoffrey Fisher "em 1955, consagrou Festo Olang' como bispo da Diocese de Maseno" — sagrante e ano CONFIRMADOS;
+    CORRIGIDO o cargo: foi sagrado bispo ASSISTENTE (Diocese de Mombasa); só em 1960/61 passou a bispo de Maseno.
+    Co-sagrantes apenas pela infobox da Wikipédia. Olang' foi bispo assistente (Maseno) em 1955 — verificar cargo.

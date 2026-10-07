@@ -1,17 +1,42 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: peter-akinola
 name: Peter Akinola
+full_name: Peter Jasper Akinola
 aliases:
+- Peter J. Akinola
 - Peter Jasper Akinola
+birth:
+  date: '1944-01-27'
+  sources:
+  - source: wp-akinola
+    quote: >-
+      He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later,
+      at the inauguration of the new Diocese of Abuja on 26 November 1989.
+wikidata: Q1754450
+biography: Primeiro bispo de Abuja (1989), arcebispo e primaz da Igreja da Nigéria (2000–2010).
+sources:
+- source: wp-akinola
+  quote: >-
+    He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later, at
+    the inauguration of the new Diocese of Abuja on 26 November 1989.
 ordinations:
 - order: episcopate
-  date: '1989'
+  date: '1989-11-16'
   jurisdiction: church-of-nigeria
+  office: diocesan
   principal_consecrator: joseph-adetiloye
   status: probable
   sources:
+  - source: wp-akinola
+    quote: >-
+      He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later,
+      at the inauguration of the new Diocese of Abuja on 26 November 1989.
   - source: iab-poster-linhagem-uchoa
     quote: >-
       164d. Joseph Abiodun Adetiloye (1970-1999) que consagrou Peter Jasper Akinola como bispo da Diocese de Abuja,
       da Província de Abuja.
-  notes: Ano inferido do pôster (1989-2010); verificar.
+  notes: >-
+    Pôster: Adetiloye "consagrou Peter Jasper Akinola como bispo da Diocese de Abuja" — data (16/11/1989) e sé confirmadas
+    pela Wikipédia (que cita a tese de S. G. Kwashang, 2006, p. 35, não acessível daqui); SAGRANTE NÃO ENCONTRADO
+    em fonte. Adetiloye era o primaz da Nigéria em 1989, o que torna o pôster plausível. Ano inferido do pôster
+    (1989-2010); verificar.

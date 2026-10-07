@@ -1,6 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: raniere-ribeiro-campos
 name: Raniere Ribeiro Campos
+full_name: Raniere Ribeiro Campos
+aliases:
+- Dom Raniere Campos
+biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
+sources:
+- source: ptwiki-iecb
+  quote: Raniere Ribeiro Campos (2010)
 ordinations:
 - order: episcopate
   date: '2010-06-10'

@@ -91,6 +91,20 @@ ordinations:
       quote: Em Junho acontecerá a  Sagração Episcopal
     - source: djp-meira
       quote: Foi consagrado bispo em 2021
+  - field: office
+    value: auxiliary
+    sources:
+    - source: iab-dois-novos-bispos
+      quote: 'elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.'
+    - source: iab-dois-novos-bispos
+      quote: Em Junho acontecerá a  Sagração Episcopal
+    - source: djp-meira
+      quote: Foi consagrado bispo em 2021
+  - field: date
+    value: '2021'
+    sources:
+    - source: djp-meira
+      quote: Foi consagrado bispo em 2021
   notes: >-
     Fonte é anúncio PRÉVIO do GAFCON (cerimônia conjunta com Márcio Simões, sábado 10/06/2017); o site da Diocese
     de Vitória confirma que a de Simões ocorreu em 10/06/2017. O pôster da IAB dá 11/06/2017 (domingo) na PAES,
@@ -106,7 +120,7 @@ affiliations:
   role: diocesan_bishop
   diocese: iab-diocese-joao-pessoa
   start: '2018'
-  status: confirmed
+  status: contested
   sources:
   - source: iab-comunicado-oficial-2018
     quote: Márcio Meira Bispo da Diocese de João Pessoa PB
@@ -114,6 +128,12 @@ affiliations:
     quote: Bishop Marcio Meira – Diocese of Joao Pessoa
   - source: iab-poster-linhagem-meira
     quote: como o primeiro bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+  discrepancies:
+  - field: start
+    value: '2017-06-11'
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: como o primeiro bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-diocese-recife

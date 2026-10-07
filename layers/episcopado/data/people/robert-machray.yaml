@@ -1,14 +1,57 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: robert-machray
 name: Robert Machray
+full_name: Robert Machray
+aliases:
+- Archbishop Machray
+- Bishop Machray
+birth:
+  date: '1831-05-17'
+  sources:
+  - source: dcb-machray
+    quote: On 24 June 1865 he was ordained at Lambeth Palace.
+death:
+  date: '1904-03-09'
+  sources:
+  - source: dcb-machray
+    quote: On 24 June 1865 he was ordained at Lambeth Palace.
+wikidata: Q7347251
+biography: Bispo de Rupert's Land (1865), metropolita e primeiro primaz da Igreja da Inglaterra no Canadá.
+sources:
+- source: dcb-machray
+  quote: On 24 June 1865 he was ordained at Lambeth Palace.
 ordinations:
 - order: episcopate
-  date: '1865'
+  date: '1865-06-24'
+  place: Capela do Palácio de Lambeth, Londres
   jurisdiction: church-of-england
+  office: diocesan
   principal_consecrator: charles-longley
-  status: probable
+  co_consecrators:
+  - archibald-campbell-tait
+  - david-anderson
+  - edward-harold-browne
+  - thomas-george-suther
+  status: confirmed
   sources:
+  - source: life-machray-1909
+    quote: >-
+      The Consecration took place in the chapel of Lambeth Palace on Saturday, June 24, the day being the Festival
+      of St. John the Baptist. At eleven o'clock in the morning a procession, which had been formed in the Palace,
+      entered the chapel ; it consisted of the consecrating prelates, who were the Archbishop of Canterbury (Dr.
+      Longley), the Bishops of London (Dr. Tait) and Ely (Dr. Browne), the Bishop of Aber- deen (Dr. Suther), and
+      Bishop Anderson
+  - source: life-machray-1909
+    quote: >-
+      Dr. Machray was presented to the Archbishop by the Bishops of London and Ely, and duly and canonically consecrated
+      Bishop of Rupert's Land.
+  - source: dcb-machray
+    quote: On 24 June 1865 he was ordained at Lambeth Palace.
   - source: iab-poster-linhagem-uchoa
     quote: >-
       156d. Charles Longley (1862-1868) que, em 1865, sagrou Robert Machray como bispo da Igreja Anglicana do Canadá.
-  notes: Machray foi bispo de Rupert's Land.
+  notes: >-
+    Pôster: Longley "em 1865, sagrou Robert Machray como bispo da Igreja Anglicana do Canadá" — CONFIRMADO; precisão:
+    bispo de Rupert's Land (então sob a metropolia de Cantuária). Nomes completos dos co-sagrantes inferidos dos
+    sobrenomes/sés (Tait de Londres, Browne de Ely, Suther de Aberdeen, Anderson ex-bispo de Rupert's Land). Machray
+    foi bispo de Rupert's Land.

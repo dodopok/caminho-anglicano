@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: anglican-diocese-of-great-lakes
+name: Anglican Diocese of the Great Lakes
+type: diocese
+relations:
+- type: part_of
+  target: acna
+  status: probable
+  sources:
+  - source: wp-ames
+    quote: >-
+      with Ames being installed as their first bishop at 30 April 2011, at the diocese annual convention in Akron.
+      He would be in office until 2016

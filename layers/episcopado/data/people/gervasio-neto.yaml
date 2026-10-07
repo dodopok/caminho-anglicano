@@ -1,6 +1,10 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: gervasio-neto
 name: Gervásio Neto
+biography: Bispo/clérigo ligado à jurisdição ICEB; ver afirmações.
+sources:
+- source: ciceb-quemsomos
+  quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo. Gervásio Neto)
 affiliations:
 - jurisdiction: iceb
   role: diocesan_bishop

@@ -1,6 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jorge-luiz-paes-siqueira
 name: Jorge Luiz Paes Siqueira
+full_name: Jorge Luiz Paes Siqueira
+aliases:
+- Dom Jorge Siqueira
+biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
+sources:
+- source: ptwiki-iecb
+  quote: Jorge Luiz Paes Siqueira (2022)
 ordinations:
 - order: episcopate
   date: '2022'

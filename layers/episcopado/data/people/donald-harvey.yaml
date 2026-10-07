@@ -1,5 +1,48 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: donald-harvey
 name: Donald Harvey
+full_name: Donald Frederick Harvey
 aliases:
+- Don Harvey
 - Donald Frederick Harvey
+birth:
+  date: '1939-09-13'
+  sources:
+  - source: wp-harvey
+    quote: '''''''Donald Frederick Harvey'''''' (born 13 September 1939) is a Canadian Anglican bishop.'
+wikidata: Q5292755
+biography: >-
+  Bispo de Eastern Newfoundland and Labrador (Igreja Anglicana do Canadá) 1993–2004; em 2007 recebido no Cone Sul
+  sob Venables; moderador da ANiC/ACNA.
+sources:
+- source: wp-harvey
+  quote: '''''''Donald Frederick Harvey'''''' (born 13 September 1939) is a Canadian Anglican bishop.'
+ordinations:
+- order: episcopate
+  date: '1993'
+  jurisdiction: igreja-anglicana-do-canada
+  office: diocesan
+  principal_consecrator: michael-peers
+  status: probable
+  sources:
+  - source: wp-harvey
+    quote: '| consecrated_by = [[Michael Peers]]'
+  - source: wp-harvey
+    quote: >-
+      He was elevated to the ACC episcopate in 1993 as [[Anglican Diocese of Eastern Newfoundland and Labrador|Bishop
+      of Eastern Newfoundland and Labrador]].
+  notes: >-
+    Michael Peers era o primaz do Canadá em 1993. Só a infobox da Wikipédia nomeia o sagrante; data exata e co-sagrantes
+    não encontrados.
+affiliations:
+- jurisdiction: iacs
+  role: bishop
+  start: 2007-11
+  status: probable
+  sources:
+  - source: wp-harvey
+    quote: >-
+      In November 2007, Harvey relinquished his ministry in the Anglican Church of Canada pursuant to Canon XIX
+  notes: >-
+    and was received into the [[Anglican Church of the Southern Cone of America|Anglican Church of the Southern
+    Cone]] under its primate, [[Gregory Venables]]

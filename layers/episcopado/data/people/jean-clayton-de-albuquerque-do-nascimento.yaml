@@ -1,6 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jean-clayton-de-albuquerque-do-nascimento
 name: Jean Clayton de Albuquerque do Nascimento
+full_name: Jean Clayton de Albuquerque do Nascimento
+aliases:
+- Dom Jean Nascimento
+biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
+sources:
+- source: ptwiki-iecb
+  quote: Jean Clayton de Albuquerque do Nascimento (2020)
 ordinations:
 - order: episcopate
   date: '2020-02-06'
