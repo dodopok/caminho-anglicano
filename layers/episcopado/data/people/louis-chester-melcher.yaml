@@ -159,7 +159,7 @@ ordinations:
 affiliations:
 - jurisdiction: dmsb
   role: bishop
-  diocese: southern-brazil-coadjutor-1948-49-diocesano-1949-50
+  diocese: southern-brazil
   start: '1948-02-05'
   end: '1950'
   end_reason: transfer
@@ -171,9 +171,9 @@ affiliations:
     quote: >-
       Bishop of the third diocese will be the Rt. Rev. Louis C. Melcher, who suc- seeded Bishop Thomas as diocesan
       a few Jays earlier upon the acceptance of Bish- yp Thomas' resignation by the House of Bishops.
+  notes: 'Local: coadjutor 1948-49, diocesano 1949-50.'
 - jurisdiction: dmcb
   role: diocesan_bishop
-  diocese: central-brazil-rio-de-janeiro
   start: '1950'
   end: '1958-10-06'
   end_reason: retirement
@@ -194,6 +194,7 @@ affiliations:
     quote: Bishop Louis C. Melcher of Cen- tral Brazil.
   - source: ieab-sobre
     quote: Em um primeiro momento, dom Melcher assumiu a Diocese Central e dom Pithan, a Diocese Meridional.
+  notes: 'Local: Rio de Janeiro.'
 events:
 - type: other
   date: 1947-11

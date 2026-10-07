@@ -2,13 +2,50 @@
 id: miguel-neto
 name: Miguel Neto
 aliases:
+- '@bispomiguelneto'
 - Bp. Miguel Neto
+- Miguel Netto
+- Pr. Miguel Neto
+- Revdo. Miguel Neto
 biography: >-
   Eleito bispo auxiliar da IAB em 13/03/2023; listado em 2023 como bispo assistente da Diocese de João Pessoa. Nome
   completo não encontrado.
 sources:
 - source: anglicanismo-eleicao-2023
   quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues
+ordinations:
+- order: presbyterate
+  date: c.2016
+  jurisdiction: diocese-anglicana-recife
+  status: probable
+  sources:
+  - source: ac-boqueirao-2020
+    quote: Com apenas 4 anos de ordenação presbiteral ele sonha em consolidar a igreja a qual dirige
+  notes: >-
+    Ano deduzido: página capturada pelo Wayback em 27/09/2020 diz "4 anos de ordenação presbiteral" (o texto pode
+    ser anterior à captura). Jurisdição em c.2016 = Igreja Anglicana – Diocese do Recife (pré-IAB). Ordenante não
+    informado.
+- order: episcopate
+  date: null
+  jurisdiction: iab
+  office: auxiliary
+  status: probable
+  sources:
+  - source: anglicanismo-eleicao-2023
+    quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues
+  - source: djp-bispos-aux-2024
+    quote: >-
+      Atualmente, está comissionado para exercer o Episcopado e coordenar uma região de igrejas na Paraíba e no
+      Ceará.
+  - source: yt-campina-lista-2023
+    quote: CRESCER NA MORDOMIA - PR. MIGUEL NETO - 26/03/2023
+  - source: yt-campina-lista-2023
+    quote: CULTO LAVA PÉS - BISPO MIGUEL NETO - 06/04/2023
+  notes: >-
+    Data, local e sagrantes NÃO encontrados. Eleito em 13/03/2023 (Diocese de João Pessoa). Indício: os títulos
+    do canal Comunhão Campina passam de "PR. MIGUEL NETO" (26/03/2023) a "BISPO MIGUEL NETO" (06/04/2023 e 09/04/2023),
+    o que sugere sagração entre 27/03 e 06/04/2023 (pode ser apenas uso do título de bispo eleito). Não foi sagrado
+    junto com Eric Rodrigues em 08/05/2023 (as notícias daquela sagração não o mencionam).
 affiliations:
 - jurisdiction: iab
   role: bishop
@@ -26,6 +63,71 @@ affiliations:
     quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues.
   notes: >-
     Data/local da sagração não encontrados. Início = eleição (13/03/2023); data de sagração desconhecida.
+- jurisdiction: iab
+  role: auxiliary_bishop
+  diocese: iab-diocese-joao-pessoa
+  start: '2023-03-13'
+  end: '2026-06-19'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: djp-bispo-miguel-neto
+    quote: >-
+      Com o coração voltado para a missão, o Bispo Miguel supervisiona as regiões do interior da Paraíba e do Ceará
+  - source: iab-jornada-pbce-2025
+    quote: Junto com os Bispos Márcio Meira (Diocesano da DJP) e Miguel Neto (Bispo Auxiliar da DJP)
+  notes: >-
+    Início = data da eleição. Fim = posse como bispo diocesano da Diocese Anglicana Comunhão (jun/2026); o site
+    da DJP ainda o apresentava como auxiliar em out/2026 (página modificada em 23/10/2025).
+- jurisdiction: iab
+  role: diocesan_bishop
+  diocese: iab-diocese-comunhao
+  start: '2026-06-19'
+  status: confirmed
+  sources:
+  - source: ig-daf-2026-06-21
+    quote: Regozijamo-nos com a posse do @bispomiguelneto  como primeiro Bispo Diocesano desta nova diocese
+  - source: yt-fundacao-dioc-comunhao
+    quote: CULTO DE FUNDAÇÃO DIOCESSE COMUNHÃO ANGLICANA | 19/06/2026 |
+  notes: Data de posse assumida = culto de fundação (19/06/2026); o post oficial é de 21/06/2026.
+- jurisdiction: iab
+  role: clergy
+  diocese: iab-diocese-joao-pessoa
+  status: confirmed
+  sources:
+  - source: iab-jornada-pbce-2025
+    quote: Junto com os Bispos Márcio Meira (Diocesano da DJP) e Miguel Neto (Bispo Auxiliar da DJP)
+  - source: iab-jornada-pbce-2025
+    quote: >-
+      A Igreja Anglicana Comunhão tem como líderes o Bispo Miguel Neto e sua esposa Revda. Priscilla Abrantes auxiliados
+      pelo Post. Adylson.
+  - source: djp-igrejas-2025
+    quote: Comunhão Patos – PB Bispo Miguel Neto Revda. Priscilla
+  - source: spotify-juliane
+    quote: >-
+      Essa é a história do Bispo auxiliar da Igreja Anglicana no Brasil, Miguel Neto. Neste episódio o Bispo Miguel,
+      que está a frente da Igreja Anglicana Comunhão Campina Grande
+  - source: ac-boqueirao-2020
+    quote: 'Pastor: Revdo. Miguel Neto'
+  - source: yt-cc-2022-12-08
+    quote: SEMANA DA VIRADA - DIA 04 | REV. MIGUEL NETO | 08.12.2022 - 20h
+  notes: >-
+    Local: Igreja Anglicana Comunhão, Campina Grande-PB e Patos-PB. Bispo auxiliar da Diocese de João Pessoa em
+    2023–2025; antes, à frente da Igreja Anglicana Comunhão Campina Grande (podcast de jul/2023) e, em 2025, da
+    Comunhão Patos. Data e sagrantes da sagração episcopal (eleito em 13/03/2023) NÃO encontrados. Trajetória: 'De
+    mecânico a um Pastor plantador de Igrejas' (podcast). Presbítero na DJP antes do episcopado; pastor da Comunhão
+    Boqueirão (igreja nascida em jan/2018), depois da Igreja Anglicana Comunhão em Patos.
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  end: '2018-05-12'
+  status: probable
+  sources:
+  - source: adr-pastores-2017
+    quote: Miguel Horacio de Mello (83) 99941-5423 miguelnettto@gmail.com
+  notes: >-
+    Local: Paraíba, DDD 83. Identificação PROVÁVEL, não confirmada: o único 'Miguel' paraibano na lista de pastores(as)
+    de 2017 é 'Miguel Horacio de Mello', com e-mail 'miguelnettto'. Se correta, o nome civil do bispo Miguel Neto
+    seria Miguel Horácio de Mello (ou de Mello Neto).
 events:
 - type: other
   date: '2023-03-13'
@@ -36,6 +138,39 @@ events:
     quote: >-
       Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
       Miguel Neto e Bp. Eric Rodrigues.
+  - source: eshoje-eric-2023
+    quote: >-
+      No dia 13 de março deste ano, a Igreja Anglicana no Brasil (IAB) elegeu, em seu primeiro Sínodo Extraordinário
+      Online, dois novos bispos auxiliares
+- type: other
+  date: '2026-06-19'
+  description: >-
+    Fundação da Diocese Anglicana Comunhão por desmembramento ("multiplicação") da Diocese Anglicana Família (ex-Diocese
+    de João Pessoa): culto de fundação transmitido ao vivo em 19/06/2026 pela Catedral Anglicana Comunhão de Patos-PB;
+    posse de Miguel Neto como primeiro bispo diocesano e elevação da Igreja Anglicana Comunhão em Patos a Catedral
+    Diocesana. O post oficial que anuncia a posse foi publicado em 21/06/2026 ("Hoje é um dia histórico").
+  status: confirmed
+  sources:
+  - source: yt-fundacao-dioc-comunhao
+    quote: CULTO DE FUNDAÇÃO DIOCESSE COMUNHÃO ANGLICANA | 19/06/2026 |
+  - source: yt-fundacao-dioc-comunhao
+    quote: Transmitido ao vivo em 19 de jun. de 2026
+  - source: ig-daf-2026-06-21
+    quote: >-
+      Regozijamo-nos com a posse do @bispomiguelneto  como primeiro Bispo Diocesano desta nova diocese e com a elevação
+      da Igreja Anglicana Comunhão, em Patos-PB, à condição de Catedral Diocesana.
+- type: other
+  date: '2023-03-13'
+  description: >-
+    Primeiro Sínodo Extraordinário Online da IAB (Diocese de João Pessoa) elege dois bispos auxiliares: Miguel Neto
+    e Eric Rodrigues.
+  status: confirmed
+  sources:
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
+      Miguel Neto e Bp. Eric Rodrigues. A eleição aconteceu em um evento histórico, O Primeiro Sínodo Extraordinário
+      Online da IAB.
   - source: eshoje-eric-2023
     quote: >-
       No dia 13 de março deste ano, a Igreja Anglicana no Brasil (IAB) elegeu, em seu primeiro Sínodo Extraordinário

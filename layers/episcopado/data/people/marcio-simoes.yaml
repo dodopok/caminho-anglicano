@@ -27,40 +27,50 @@ ordinations:
 - order: episcopate
   date: '2017-06-10'
   jurisdiction: diocese-anglicana-recife
-  office: auxiliary
+  office: missionary
   principal_consecrator: miguel-uchoa
-  status: contested
+  status: confirmed
   sources:
   - source: dv-bispo
     quote: foi sagrado ao episcopado no dia 10 de junho de 2017
   - source: iab-dois-novos-bispos
     quote: 'elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira'
-  - source: dv-bispo
-    quote: O Bispo Márcio José de Sousa Simões foi sagrado ao episcopado no dia 10 de junho de 2017
+  - source: gafcon-2017-two-bishops
+    quote: >-
+      The Anglican Church in Brazil and the Diocese of Recife have announced that Revd. Márcio Simões and Revd.
+      Márcio Medeiros Meira are to be ordained and consecrated as missionary bishops.
   - source: gafcon-2017-two-bishops
     quote: >-
       The ceremony will be conducted by The Right Revd. Miguel Uchôa Cavalcanti, Bishop of Recife, with proceedings
       due to begin at 10am, Saturday June 10th 2017.
+  - source: dv-bispo
+    quote: O Bispo Márcio José de Sousa Simões foi sagrado ao episcopado no dia 10 de junho de 2017
   - source: iab-dois-novos-bispos
     quote: Em Junho acontecerá a  Sagração Episcopal
-  discrepancies:
-  - field: office
-    value: missionary
-    sources:
-    - source: dv-bispo
-      quote: O Bispo Márcio José de Sousa Simões foi sagrado ao episcopado no dia 10 de junho de 2017
-    - source: gafcon-2017-two-bishops
-      quote: >-
-        The ceremony will be conducted by The Right Revd. Miguel Uchôa Cavalcanti, Bishop of Recife, with proceedings
-        due to begin at 10am, Saturday June 10th 2017.
-    - source: iab-dois-novos-bispos
-      quote: Em Junho acontecerá a  Sagração Episcopal
   notes: >-
-    Eleito bispo auxiliar em 06/05/2017; diocesano de Vitória a partir da criação da província (2018). Eleito bispo
-    auxiliar em 06/05/2017 (o GAFCON chama-os de 'missionary bishops'); tornou-se bispo da Diocese de Vitória com
-    a formação da província. Sagrante principal = quem 'conduz' a cerimônia segundo o anúncio prévio do GAFCON;
-    co-sagrantes não informados por fonte independente. Data confirmada (anúncio GAFCON + site da Diocese de Vitória).
+    Eleito bispo auxiliar em 06/05/2017; sagração conjunta com Márcio Meira. Sagrante principal segundo o anúncio
+    prévio do GAFCON ('conducted by ... Miguel Uchôa Cavalcanti'); co-sagrantes não confirmados. Diocesano de Vitória
+    a partir da criação da província (2018). Eleito bispo auxiliar em 06/05/2017 (o GAFCON chama-os de 'missionary
+    bishops'); tornou-se bispo da Diocese de Vitória com a formação da província. Sagrante principal = quem 'conduz'
+    a cerimônia segundo o anúncio prévio do GAFCON; co-sagrantes não informados por fonte independente. Data confirmada
+    (anúncio GAFCON + site da Diocese de Vitória).
 affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  start: '2008'
+  end: 2017-06
+  status: confirmed
+  sources:
+  - source: dar-sagracao-2012
+    quote: >-
+      O Venerável Arcediago e Presidente do Conselho Diocesano, Rev. Márcio Simões , conduziu a celebração, com
+      admirável maestria, como Mestre de Cerimônia.
+  - source: dar-2013-pombos
+    quote: Márcio Simões (Paróquia da Ressurreição - Vitória de S anto Antão -PE )
+  - source: dar-2012-eleicao-uchoa
+    quote: O Presidente do Conselho Diocesano, Rev. Márcio Simões , fez a abertura solene do Sínodo
+  notes: >-
+    Arcediago e presidente do Conselho Diocesano em 2012. Início = ano da ordenação (2008, já registrada).
 - jurisdiction: iab
   role: diocesan_bishop
   diocese: iab-diocese-vitoria
@@ -69,10 +79,26 @@ affiliations:
   sources:
   - source: iab-church-planting-bishops
     quote: Bishop Marcio Simoes – Diocese of Vittoria
-  - source: iab-comunicado-oficial-2018
-    quote: Márcio Simões Bispo da Diocese de Vitória PE
   - source: dv-bispo
     quote: Bispo diocesano Bispo Márcio Simões
+  - source: iab-carta-nacao-2022
+    quote: Revmo. + Marcio Simões Bispo Diocesano de Vitória PE
+  - source: iab-comunicado-oficial-2018
+    quote: Márcio Simões Bispo da Diocese de Vitória PE
+  notes: Diocese com sé em Vitória de Santo Antão (PE).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: postulante
+  end: '2008'
+  status: confirmed
+  sources:
+  - source: dar-postulantes-2007
+    quote: >-
+      Márcio José de Sousa Simões Aniversário: 09/01 R. Prof. João C. Oliveira, 128 - Centro Vitória de Santo Antão-PE
+  notes: >-
+    Local: Vitória de Santo Antão-PE. Postulante ao ministério ordenado na captura de out/2007; ordenado diácono
+    e presbítero em 2008 (já registrado). Também eram postulantes Márcia Maria da Silva Coelho, Maria das Dores
+    Câmara de Brito, José Fernandes Filho, Josean da Silva e Ivaldo Sales.
 events:
 - type: other
   date: '2017-05-06'

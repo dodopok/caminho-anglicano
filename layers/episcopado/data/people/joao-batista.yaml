@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: joao-batista
+name: João Batista
+full_name: João Batista Almeida
+aliases:
+- João Batista Almeida
+biography: Ordenado presbítero por Evilásio Tenório em 22/05/2016 na Igreja Anglicana Betesda (Belo Horizonte).
+sources:
+- source: adr-ord-mg-2016
+  quote: >-
+    No último domingo,  22 de Maio, na Igreja Anglicana Betesda em Belo Horizonte – MG, o Rev. João Batista Recebeu
+    a Ordem Presbiteral pelas mãos do Bispo Auxiliar, Revmo. Evilásio Tenório
+ordinations:
+- order: presbyterate
+  date: '2016-05-22'
+  place: Igreja Anglicana Betesda, Belo Horizonte-MG
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: evilasio-tenorio
+  status: confirmed
+  sources:
+  - source: adr-ord-mg-2016
+    quote: >-
+      No último domingo,  22 de Maio, na Igreja Anglicana Betesda em Belo Horizonte – MG, o Rev. João Batista Recebeu
+      a Ordem Presbiteral pelas mãos do Bispo Auxiliar, Revmo. Evilásio Tenório
+  - source: adr-pastores-2017
+    quote: João Batista Almeida
+  notes: >-
+    Notícia de 24/05/2016 ('último domingo, 22 de Maio'). Em 2013 era aspirante às Sagradas Ordens (BH). Ministro
+    auxiliar da Igreja Betesda. Nome completo na lista do clero de 2017: 'João Batista Almeida'.

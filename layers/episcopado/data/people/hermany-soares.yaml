@@ -22,14 +22,23 @@ affiliations:
 - jurisdiction: iaob
   role: clergy
   start: '2006'
+  end: '2007-12-28'
+  end_reason: transfer
   status: confirmed
   sources:
   - source: ultimato-manifesto-2006
     quote: Rev. Hermany Soares+ (Paróquia Cristo Redentor)
-  notes: Signatário (30/11/2006) pela IAOB – Distrito Missionário.
+  - source: blog-josue-2006-11
+    quote: >-
+      Igreja Anglicana Ortodoxa – IAO (Comunhão Anglicana Ortodoxa): Rev. Hermany Soares, Rev. Adriano Oliveira
+  - source: blog-joaodeca-2007-05
+    quote: Rev. Hermany Soares+ (Paróquia Cristo Redentor)
+  notes: >-
+    Signatário (30/11/2006) pela IAOB – Distrito Missionário. Local: Paróquia Cristo Redentor. Em nov/2006 e mai/2007
+    é listado como "Rev." da IAO/IAOB (duas fontes independentes). Ver vínculo como bispo abaixo.
 - jurisdiction: iacs
   role: clergy
-  diocese: diocese-do-recife-secretario-administrativo
+  diocese: diocese-anglicana-recife
   start: '2007-12-28'
   end: '2018'
   status: probable
@@ -41,18 +50,24 @@ affiliations:
   - source: fandom-iaob
     quote: terem se transferido para a Diocese do Recife - Cone Sul, em 28/12/2007
   notes: >-
-    Início = data da transferência (Fandom); primeira menção como clérigo da diocese: out/2009. Fim = constituição
-    da IAB (2018); a diocese passou para a IAB.
+    Local: secretário administrativo. Início = data da transferência (Fandom); primeira menção como clérigo da diocese:
+    out/2009. Fim = constituição da IAB (2018); a diocese passou para a IAB.
 - jurisdiction: diocese-anglicana-recife
   role: clergy
-  diocese: diocese-anglicana-recife
   start: '2009'
   status: confirmed
   sources:
   - source: betesda-2009-10
     quote: >-
       Dom Robinson Cavalcanti veio acompanhado do secretário administrativo da diocese, Rev. Hermany Soares
-  notes: Secretário administrativo da diocese em out/2009.
+  - source: dar-clero-presbiteros-2010
+    quote: Rev. Hermany Silva Soares
+  - source: dar-2010-jorge-torres
+    quote: >-
+      Funcionou como Mestre de Cerimônia o Rev. Hermany Soares . Na madrugada desta terça-feira o Bispo e o Rev.
+      Hermany estarão viajando para Ribeirão Preto (SP).
+  notes: >-
+    Secretário administrativo da diocese em out/2009. Presbítero na lista do clero da Diocese do Recife (2009/2010).
 - jurisdiction: iab
   role: clergy
   diocese: iab-diocese-recife
@@ -115,21 +130,6 @@ affiliations:
   notes: >-
     Texto sem data (cópia de 2015, antes da morte de Robinson em 2012). Não se encontrou registro de sagração episcopal
     de Hermany; "Dom Hermany" pode ser título dentro da IAOB. Identidade com Hermany Silva Soares provável.
-- jurisdiction: iaob
-  role: clergy
-  diocese: paroquia-cristo-redentor
-  end: '2007-12-28'
-  end_reason: transfer
-  status: confirmed
-  sources:
-  - source: blog-josue-2006-11
-    quote: >-
-      Igreja Anglicana Ortodoxa – IAO (Comunhão Anglicana Ortodoxa): Rev. Hermany Soares, Rev. Adriano Oliveira
-  - source: blog-joaodeca-2007-05
-    quote: Rev. Hermany Soares+ (Paróquia Cristo Redentor)
-  notes: >-
-    Em nov/2006 e mai/2007 é listado como "Rev." da IAO/IAOB (duas fontes independentes). Ver vínculo como bispo
-    abaixo.
 - jurisdiction: iaob
   role: bishop
   end: '2007-12-28'

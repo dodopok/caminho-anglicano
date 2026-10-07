@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: benedita-rodrigues
+name: Benedita Rodrigues
+aliases:
+- Revda. Benedita Rodrigues
+biography: >-
+  Ordenada presbítera em 17/09/2016 na Paróquia Anglicana São Paulo (Recife); pároca ali na IAB em 2019.
+sources:
+- source: adr-ord-sp-2016
+  quote: >-
+    No sábado 17 de Setembro, no templo da Paróquia Anglicana São Paulo, em Recife (PE), foram ordenados ao diaconato
+    o irmão Nilton Sales, ao Presbiterado a Revda. Benedita Rodrigues, e instituído ao ministério Local o irmão
+    Melquias Santos pelos Bispos Auxiliares da nossa Diocese, Revmo. Evilásio Tenório e Revmo. Flávio Adair.
+ordinations:
+- order: presbyterate
+  date: '2016-09-17'
+  place: Paróquia Anglicana São Paulo, Recife-PE
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: evilasio-tenorio
+  status: confirmed
+  sources:
+  - source: adr-ord-sp-2016
+    quote: >-
+      No sábado 17 de Setembro, no templo da Paróquia Anglicana São Paulo, em Recife (PE), foram ordenados ao diaconato
+      o irmão Nilton Sales, ao Presbiterado a Revda. Benedita Rodrigues, e instituído ao ministério Local o irmão
+      Melquias Santos pelos Bispos Auxiliares da nossa Diocese, Revmo. Evilásio Tenório e Revmo. Flávio Adair.
+  notes: >-
+    Ordenação conjunta pelos bispos auxiliares Evilásio Tenório e Flávio Adair (a fonte não distingue qual presidiu).
+    Presbítera ordenada na Diocese do Recife sob GAFCON/Cone Sul.
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  diocese: iab-diocese-recife
+  start: '2019'
+  status: confirmed
+  sources:
+  - source: dr-igrejas-2019
+    quote: 'PARÓQUIA ANGLICANA SÃO PAULO Pároca: Revda. Benedita Rodrigues'
+  notes: >-
+    Local: Paróquia Anglicana São Paulo, Nova Descoberta, Recife. Ordenada presbítera em 17/09/2016 na mesma paróquia
+    (Diocese do Recife sob GAFCON); pároca na IAB em 2019.

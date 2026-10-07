@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: sinodo-do-brasil-comunidade-da-reconciliacao
+name: Sínodo do Brasil; Comunidade da Reconciliação
+type: diocese
+relations:
+- type: part_of
+  target: iau
+  status: confirmed
+  sources:
+  - source: iau-clero
+    quote: >-
+      Dom Virgilio Cezar Henrique Pereira Torres Bispo Moderador da IGREJA ANGLICANA UNIDA - PROVÍNCIA DA AMÉRICA
+      DO SUL e Bispo do Sínodo do Brasil Reitor da Comunidade da Reconciliação em Ribeirão Preto - SP
+  - source: yt-iau-canal
+    quote: É o Bispo Presidente da Igreja Anglicana Unida - Provincia da América do Sul

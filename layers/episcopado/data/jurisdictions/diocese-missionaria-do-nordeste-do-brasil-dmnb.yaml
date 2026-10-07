@@ -1,8 +1,6 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-missionaria-do-nordeste-do-brasil-dmnb
-name: Diocese Missionária do Nordeste do Brasil (DMNB)
-aliases:
-- Diocese Missionária do Nordeste do Brasil (DMNB), Catedral Betânia
+name: Diocese Missionária do Nordeste do Brasil (DMNB), Catedral Betânia
 type: diocese
 relations:
 - type: part_of
@@ -11,5 +9,3 @@ relations:
   sources:
   - source: ciceb-quemsomos
     quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo. Gervásio Neto)
-  - source: ciceb-betania-historia
-    quote: e o Rev. Leonides foi sagrado Bispo dessa diocese.

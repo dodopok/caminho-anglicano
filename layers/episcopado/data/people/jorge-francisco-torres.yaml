@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jorge-francisco-torres
+name: Jorge Francisco Torres
+aliases:
+- Rev. Jorge Torres
+biography: Ordenado presbítero por Robinson Cavalcanti em 16/08/2010 em São José do Rio Preto-SP.
+sources:
+- source: dar-2010-jorge-torres-convite
+  quote: >-
+    Culto Solene de Ordenação Presbiteral do Diácono : Jorge Francisco Torres Local: Igreja Metodista Livre Rua
+    São João, 1440 – VL Zilda - São José do Rio Preto – SP Data: 16 de agosto de 2010
+ordinations:
+- order: presbyterate
+  date: '2010-08-16'
+  place: Igreja Metodista Livre, São José do Rio Preto-SP
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: dar-2010-jorge-torres-convite
+    quote: >-
+      Culto Solene de Ordenação Presbiteral do Diácono : Jorge Francisco Torres Local: Igreja Metodista Livre Rua
+      São João, 1440 – VL Zilda - São José do Rio Preto – SP Data: 16 de agosto de 2010
+  - source: dar-2010-jorge-torres
+    quote: >-
+      o Bispo Robinson Cavalcanti em apenas um mês Ordenou o segundo Presbítero no Arcediagado sul-sudeste: Rev.
+      Jorge Francisco Torres , tendo como local, o templo da Igreja Metodista Livre.
+  notes: 'Mestre de cerimônia: Rev. Hermany Soares. Dirige o Ponto Missionário Anglicano Deus Conduz.'

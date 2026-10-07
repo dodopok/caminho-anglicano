@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: pedro-muniz
+name: Pedro Muniz
+biography: >-
+  Diácono (antes de 2018) na Comunidade Anglicana Âncora (Vitória-ES); em 2025 à frente da Igreja Anglicana Trindade
+  (Vitória-ES), que ficou na IAB.
+sources:
+- source: ancorabh-lideranca-2018
+  quote: >-
+    Rev. Pedro Muniz e Lorraine Muniz Ele é diácono ordenado pela Igreja Anglicana no Brasil, pastor coadjutor da
+    C. A. A. em Vitória - ES
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  status: confirmed
+  sources:
+  - source: ancorabh-lideranca-2018
+    quote: >-
+      Rev. Pedro Muniz e Lorraine Muniz Ele é diácono ordenado pela Igreja Anglicana no Brasil, pastor coadjutor
+      da C. A. A. em Vitória - ES
+  notes: >-
+    Local: Comunidade Anglicana Âncora, Vitória-ES. Diácono antes de jan/2018. Em jul/2025 está à frente da Igreja
+    Anglicana Trindade (Vitória-ES), que permaneceu na IAB (Diocese de João Pessoa), com a 'Revda. Lorrayne' — não
+    seguiu Eric Rodrigues para a REB.
+- jurisdiction: iab
+  role: clergy
+  diocese: iab-diocese-joao-pessoa
+  status: confirmed
+  sources:
+  - source: djp-igrejas-2025
+    quote: Igreja Anglicana Trindade – ES Rev. Pedro Muniz Revda. Lorrayne
+  notes: 'Local: Igreja Anglicana Trindade, Vitória-ES.'
