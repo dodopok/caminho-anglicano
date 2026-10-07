@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: claudio-norberto-da-silva
 name: Cláudio Norberto da Silva
+aliases:
+- Cláudio Norberto Melo da Silva
 ordinations:
 - order: presbyterate
   date: '2003-04-12'
@@ -15,3 +17,17 @@ ordinations:
   notes: >-
     Notícia antecipada. Em jan/2002 "Cláudio Norberto da Silva, OSF" era postulante. Fora do recorte 2005+, registrado
     como contexto do clero que seguiu Robinson (destino posterior não verificado).
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: ieab-2004-decreto-recife
+    quote: 'Considerando a solicitação dos clérigos e clérigas a seguir relacionados:'
+  - source: ieab-2004-decreto-recife
+    quote: Cláudio Norberto Melo da Silva, osf (Paróquia da Reconciliação)
+  notes: >-
+    Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
+    por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. Paróquia da Reconciliação;
+    OSF

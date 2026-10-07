@@ -91,6 +91,11 @@ describe('validateBase', () => {
     expect(messages(r.warnings)).toContain('possível duplicata')
   })
 
+  it('avisa quando só o primeiro e o último nome coincidem', () => {
+    const r = validateBase(base([person('joyce-baiense', { name: 'Joyce Baiense' }), person('joyce-k', { name: 'Joyce Karolina Ribeiro Baiense' })]))
+    expect(messages(r.warnings)).toContain('possível duplicata ("joyce baiense")')
+  })
+
   it('avisa sobre jurisdições duplicadas por nome ou sigla', () => {
     const b = base([])
     b.jurisdictions.push({ id: 'ack', acronym: 'J', name: 'Outra', type: 'province' })

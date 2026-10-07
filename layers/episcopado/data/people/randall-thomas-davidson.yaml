@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: randall-thomas-davidson
+name: Randall Thomas Davidson
+ordinations:
+- order: episcopate
+  date: '1891-04-25'
+  place: Abadia de Westminster
+  jurisdiction: church-of-england
+  office: diocesan
+  principal_consecrator: edward-white-benson
+  status: probable
+  sources:
+  - source: wp-en-davidson
+    quote: In [[Westminster Abbey]] on 25 April 1891 Benson consecrated Davidson as a bishop.
+  notes: >-
+    Bispo de Rochester. A Wikipédia cita 'Consecration of New Bishops', The Times, 27/04/1891, p. 6 (não consultado).
+    Linha alternativa de Cantuária no séc. XX (Davidson -> Benson -> Tait -> J. B. Sumner).

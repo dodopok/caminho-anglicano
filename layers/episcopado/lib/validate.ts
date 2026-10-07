@@ -253,7 +253,12 @@ export function validateBase(base: Base): Report {
       if (ids.size > 1) warnings.push({ entity: `${kind}:${[...ids][0]}`, message: `possível duplicata ("${name}"): ${[...ids].join(', ')}` })
     }
   }
-  findDuplicates('person', base.people.map((p) => ({ id: p.id, names: [p.name, p.full_name, ...(p.aliases ?? [])] })))
+  findDuplicates('person', base.people.map((p) => {
+    const names = [p.name, p.full_name, ...(p.aliases ?? [])].filter((n): n is string => !!n)
+    // Também compara só primeiro e último nome: "Joyce Baiense" × "Joyce Karolina Ribeiro Baiense".
+    const firstLast = names.map((n) => normalizeName(n).split(' ')).filter((t) => t.length > 2).map((t) => `${t[0]} ${t.at(-1)}`)
+    return { id: p.id, names: [...names, ...firstLast] }
+  }))
   findDuplicates('jurisdiction', base.jurisdictions.map((j) => ({ id: j.id, names: [j.name, j.acronym, ...(j.aliases ?? [])] })))
 
   // --- Fontes ---------------------------------------------------------------

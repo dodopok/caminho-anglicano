@@ -26,8 +26,12 @@ ordinations:
   jurisdiction: church-of-england
   office: suffragan
   principal_consecrator: frederick-temple
-  status: probable
+  status: confirmed
   sources:
+  - source: henson-1921-01-25
+    quote: >-
+      It was observed that Archbishop Temple had consecrated Lang, & now Archbishop Lang had consecrated Temple
+      .
   - source: wp-lang
     quote: >-
       He was [[Consecration#Various Christian churches|consecrated]] bishop by the Archbishop of Canterbury, [[Frederick
@@ -35,7 +39,11 @@ ordinations:
   - source: wp-lang
     quote: '| consecration = 1 May 1901 | consecrated_by = [[Frederick Temple]]'
   notes: >-
-    Bispo sufragâneo de Stepney. Só a Wikipédia, que cita Lockhart, p. 147. Co-sagrantes não identificados.
+    Reforço independente da afirmação já existente em sucessao-historica.json (que tinha só a Wikipédia, citando
+    Lockhart p. 147; status 'provavel'). Com o diário de Henson (fonte primária de 1921, que registra o comentário
+    corrente), o elo Frederick Temple -> Lang passa a ter duas fontes independentes. Data e local vêm da afirmação
+    anterior (Wikipédia). Bispo sufragâneo de Stepney. Só a Wikipédia, que cita Lockhart, p. 147. Co-sagrantes não
+    identificados.
 affiliations:
 - jurisdiction: church-of-england
   role: bishop

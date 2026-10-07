@@ -122,21 +122,23 @@
             <!-- Bispos -->
             <section v-if="bishops.length" id="bispos" class="mt-10 scroll-mt-24">
               <h2 class="ep-section-title mb-1">Bispos, primazes e fundadores</h2>
-              <p class="mb-4 text-sm text-stone-500">Em ordem de início do vínculo.</p>
+              <p class="mb-4 text-sm text-stone-500">Uma entrada por pessoa, em ordem de início do vínculo.</p>
               <ol class="relative ml-3 border-l-2 border-teal-200 sm:ml-4">
-                <li v-for="(m, i) in bishops" :key="i" class="relative pb-5 pl-7 last:pb-0 sm:pl-9">
-                  <span class="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full ring-4 ring-white" :class="m.end ? 'bg-stone-300' : 'bg-teal-600'" aria-hidden="true" />
-                  <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm">
-                    <NuxtLink :to="`/episcopado/pessoa/${m.person.id}`" class="ep-link font-semibold">{{ m.person.name }}</NuxtLink>
-                    <span class="text-stone-700">{{ m.roleDescription && m.role === 'other' ? m.roleDescription : ROLE_LABEL[m.role] }}</span>
-                    <NuxtLink v-if="m.diocese" :to="`/episcopado/jurisdicao/${m.diocese.id}`" class="text-stone-500 hover:underline">· {{ m.diocese.acronym ?? m.diocese.name }}</NuxtLink>
-                    <EpiscopadoStatus :status="m.status" :show-confirmed="false" />
-                    <EpiscopadoCites :cites="m.cites" />
-                  </div>
-                  <p class="mt-0.5 text-sm text-stone-500">
-                    {{ formatPeriod(m.start, m.end) || 'período não registrado' }}<span v-if="m.endReason"> · {{ END_REASON_LABEL[m.endReason] }}</span>
-                  </p>
-                  <EpiscopadoDiscrepancies :items="m.discrepancies" />
+                <li v-for="g in bishops" :key="g.person.id" class="relative pb-5 pl-7 last:pb-0 sm:pl-9">
+                  <span class="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full ring-4 ring-white" :class="g.current ? 'bg-teal-600' : 'bg-stone-300'" aria-hidden="true" />
+                  <NuxtLink :to="`/episcopado/pessoa/${g.person.id}`" class="ep-link text-sm font-semibold">{{ g.person.name }}</NuxtLink>
+                  <ul class="mt-0.5 space-y-1">
+                    <li v-for="(l, k) in g.lines" :key="k" class="text-sm">
+                      <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                        <span class="text-stone-700">{{ rolesLabel(l) }}</span>
+                        <NuxtLink v-if="l.diocese" :to="`/episcopado/jurisdicao/${l.diocese.id}`" class="text-stone-500 hover:underline">· {{ l.diocese.acronym ?? l.diocese.name }}</NuxtLink>
+                        <span class="text-stone-500">· {{ formatPeriod(l.start, l.end) || 'período não registrado' }}<span v-if="l.endReason"> ({{ END_REASON_LABEL[l.endReason] }})</span></span>
+                        <EpiscopadoStatus :status="l.status" :show-confirmed="false" />
+                        <EpiscopadoCites :cites="l.cites" />
+                      </div>
+                      <EpiscopadoDiscrepancies :items="l.discrepancies" />
+                    </li>
+                  </ul>
                 </li>
               </ol>
             </section>
@@ -145,14 +147,18 @@
             <section v-if="clergy.length" id="clero" class="mt-10 scroll-mt-24">
               <h2 class="ep-section-title mb-4">Clero e membros</h2>
               <ul class="divide-y divide-stone-100 rounded-lg border border-stone-100">
-                <li v-for="(m, i) in clergy" :key="i" class="flex flex-wrap items-baseline gap-x-2 px-3 py-2 text-sm">
-                  <NuxtLink :to="`/episcopado/pessoa/${m.person.id}`" class="ep-link font-medium">{{ m.person.name }}</NuxtLink>
-                  <span class="text-stone-600">{{ m.roleDescription && m.role === 'other' ? m.roleDescription : ROLE_LABEL[m.role] }}</span>
-                  <NuxtLink v-if="m.diocese" :to="`/episcopado/jurisdicao/${m.diocese.id}`" class="text-stone-500 hover:underline">· {{ m.diocese.acronym ?? m.diocese.name }}</NuxtLink>
-                  <span class="text-stone-500">{{ formatPeriod(m.start, m.end) }}</span>
-                  <span v-if="m.endReason" class="text-stone-500">({{ END_REASON_LABEL[m.endReason] }})</span>
-                  <EpiscopadoStatus :status="m.status" :show-confirmed="false" />
-                  <EpiscopadoCites :cites="m.cites" />
+                <li v-for="g in clergy" :key="g.person.id" class="px-3 py-2 text-sm">
+                  <NuxtLink :to="`/episcopado/pessoa/${g.person.id}`" class="ep-link font-medium">{{ g.person.name }}</NuxtLink>
+                  <ul class="mt-0.5 space-y-0.5">
+                    <li v-for="(l, k) in g.lines" :key="k" class="flex flex-wrap items-baseline gap-x-2">
+                      <span class="text-stone-600">{{ rolesLabel(l) }}</span>
+                      <NuxtLink v-if="l.diocese" :to="`/episcopado/jurisdicao/${l.diocese.id}`" class="text-stone-500 hover:underline">· {{ l.diocese.acronym ?? l.diocese.name }}</NuxtLink>
+                      <span class="text-stone-500">{{ formatPeriod(l.start, l.end) }}</span>
+                      <span v-if="l.endReason" class="text-stone-500">({{ END_REASON_LABEL[l.endReason] }})</span>
+                      <EpiscopadoStatus :status="l.status" :show-confirmed="false" />
+                      <EpiscopadoCites :cites="l.cites" />
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </section>
@@ -182,7 +188,7 @@ import {
   formatDate,
   formatPeriod
 } from '../../../lib/labels'
-import type { JurisdictionView, RelationView } from '../../../lib/views'
+import { groupMembers, type JurisdictionView, type MemberRoleLine, type RelationView } from '../../../lib/views'
 import type { TocItem } from '../../../components/episcopado/EpiscopadoToc.vue'
 
 definePageMeta({ layout: false })
@@ -201,11 +207,19 @@ if (notFound.value && import.meta.server) setResponseStatus(useRequestEvent()!, 
 const j = computed(() => (data.value && !('redirect' in data.value) ? data.value : null))
 provideEpiscopadoFootnotes(computed(() => j.value?.footnotes ?? []))
 
-const EPISCOPAL = new Set(['bishop', 'diocesan_bishop', 'coadjutor_bishop', 'suffragan_bishop', 'auxiliary_bishop', 'missionary_bishop', 'primate', 'archbishop', 'founder'])
 const ORIGIN_TYPES = new Set(['schism_from', 'successor_of', 'part_of', 'merged_with'])
 
-const bishops = computed(() => (j.value?.members ?? []).filter((m) => EPISCOPAL.has(m.role)))
-const clergy = computed(() => (j.value?.members ?? []).filter((m) => !EPISCOPAL.has(m.role)))
+// Uma entrada por pessoa: quem teve algum papel episcopal aparece só entre os bispos, com toda a trajetória.
+const memberGroups = computed(() => groupMembers(j.value?.members ?? []))
+const bishops = computed(() => memberGroups.value.filter((g) => g.episcopal))
+const clergy = computed(() => memberGroups.value.filter((g) => !g.episcopal))
+
+/** "Fundador e bispo diocesano" a partir dos papéis de uma linha. */
+function rolesLabel(line: MemberRoleLine): string {
+  const labels = line.roles.map((r) => (r.role === 'other' && r.roleDescription ? r.roleDescription : ROLE_LABEL[r.role]))
+  const text = labels.length > 1 ? `${labels.slice(0, -1).join(', ')} e ${labels.at(-1)!.toLowerCase()}` : labels[0]
+  return text.charAt(0).toUpperCase() + text.slice(1)
+}
 
 /** A relação que explica de onde a jurisdição veio (cisma, sucessão...). */
 const origin = computed(() => j.value?.relations.find((r) => r.type === 'schism_from' || r.type === 'successor_of') ?? null)

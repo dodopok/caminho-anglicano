@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { Base } from './schemas'
-import { indexBase, jurisdictionView, personView, sourceList, sourceView } from './views'
+import { groupMembers, indexBase, jurisdictionView, personView, sourceList, sourceView, type MemberView } from './views'
 
 const s1 = [{ source: 's', quote: 'trecho um' }]
 const s2 = [{ source: 's', quote: 'trecho dois' }]
@@ -103,5 +103,34 @@ describe('jurisdictionView', () => {
     const nova = jurisdictionView(index, 'nova')!
     expect(nova.relations).toMatchObject([{ type: 'schism_from', other: { id: 'velha', name: 'Igreja Velha' } }])
     expect(nova.members).toMatchObject([{ person: { id: 'b' }, role: 'primate' }])
+  })
+})
+
+describe('groupMembers', () => {
+  const m = (id: string, role: MemberView['role'], start: string | null, extra: Partial<MemberView> = {}): MemberView => ({
+    person: { id, name: id.toUpperCase() }, role, diocese: null, start, status: 'confirmed', cites: [1], discrepancies: [], ...extra
+  })
+
+  it('junta papéis da mesma pessoa no mesmo período numa linha só', () => {
+    const [eric] = groupMembers([
+      m('eric', 'diocesan_bishop', '2024-12-20', { cites: [18, 19] }),
+      m('eric', 'founder', '2024-12-20', { cites: [22], status: 'probable' })
+    ])
+    expect(eric.lines).toHaveLength(1)
+    expect(eric.lines[0].roles.map((r) => r.role)).toEqual(['diocesan_bishop', 'founder'])
+    expect(eric.lines[0].cites).toEqual([18, 19, 22])
+    expect(eric.lines[0].status).toBe('probable')
+    expect(eric).toMatchObject({ episcopal: true, current: true })
+  })
+
+  it('mantém períodos diferentes como linhas separadas e ordena por início', () => {
+    const groups = groupMembers([
+      m('b', 'priest', '2010', { end: '2015' }),
+      m('a', 'priest', '2005'),
+      m('b', 'bishop', '2015')
+    ])
+    expect(groups.map((g) => g.person.id)).toEqual(['a', 'b'])
+    expect(groups[1].lines.map((l) => l.start)).toEqual(['2010', '2015'])
+    expect(groups[1].episcopal).toBe(true)
   })
 })

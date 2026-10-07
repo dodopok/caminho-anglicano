@@ -147,6 +147,75 @@ export interface MemberView extends ClaimView {
   endReason?: TAffiliation['end_reason']
 }
 
+/** Papéis de uma pessoa que compartilham o mesmo período (ex.: "Fundador e bispo diocesano, desde 2024"). */
+export interface MemberRoleLine extends ClaimView {
+  roles: { role: TAffiliation['role']; roleDescription?: string }[]
+  diocese: JurisdictionRef | null
+  start?: string | null
+  end?: string | null
+  endReason?: TAffiliation['end_reason']
+}
+
+export interface MemberGroup {
+  person: PersonRef
+  /** Tem algum papel episcopal (bispo, primaz, fundador...) nesta jurisdição. */
+  episcopal: boolean
+  /** Algum vínculo sem data de fim. */
+  current: boolean
+  lines: MemberRoleLine[]
+}
+
+const EPISCOPAL_ROLES = new Set<TAffiliation['role']>([
+  'bishop', 'diocesan_bishop', 'coadjutor_bishop', 'suffragan_bishop', 'auxiliary_bishop',
+  'missionary_bishop', 'primate', 'archbishop', 'founder'
+])
+
+const STATUS_WEIGHT: Record<ClaimView['status'], number> = { confirmed: 0, probable: 1, contested: 2 }
+
+/**
+ * Junta os vínculos de cada pessoa numa entrada só. Papéis com o mesmo período
+ * (início, fim, motivo e diocese) viram uma linha; o status da linha é o mais fraco.
+ */
+export function groupMembers(members: MemberView[]): MemberGroup[] {
+  const groups = new Map<string, MemberGroup>()
+  for (const m of members) {
+    let group = groups.get(m.person.id)
+    if (!group) {
+      group = { person: m.person, episcopal: false, current: false, lines: [] }
+      groups.set(m.person.id, group)
+    }
+    group.episcopal ||= EPISCOPAL_ROLES.has(m.role)
+    group.current ||= !m.end
+    const line = group.lines.find(
+      (l) => l.start === m.start && l.end === m.end && l.endReason === m.endReason && l.diocese?.id === m.diocese?.id
+    )
+    if (line) {
+      if (!line.roles.some((r) => r.role === m.role && r.roleDescription === m.roleDescription)) {
+        line.roles.push({ role: m.role, roleDescription: m.roleDescription })
+      }
+      line.cites = [...new Set([...line.cites, ...m.cites])].sort((a, b) => a - b)
+      line.discrepancies = [...line.discrepancies, ...m.discrepancies]
+      line.notes = [line.notes, m.notes].filter(Boolean).join(' ') || undefined
+      if (STATUS_WEIGHT[m.status] > STATUS_WEIGHT[line.status]) line.status = m.status
+    } else {
+      group.lines.push({
+        roles: [{ role: m.role, roleDescription: m.roleDescription }],
+        diocese: m.diocese,
+        start: m.start,
+        end: m.end,
+        endReason: m.endReason,
+        status: m.status,
+        cites: [...m.cites],
+        notes: m.notes,
+        discrepancies: [...m.discrepancies]
+      })
+    }
+  }
+  const first = (g: MemberGroup) => g.lines.map((l) => l.start ?? '9999').sort()[0]
+  for (const g of groups.values()) g.lines.sort(byStart)
+  return [...groups.values()].sort((a, b) => first(a).localeCompare(first(b)) || a.person.name.localeCompare(b.person.name, 'pt-BR'))
+}
+
 export interface JurisdictionView {
   id: string
   acronym?: string | null

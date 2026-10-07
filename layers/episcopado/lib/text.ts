@@ -4,7 +4,7 @@ export function normalizeName(name: string): string {
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '')
     .toLowerCase()
-    .replace(/\b(dom|d\.|rev\.?|revmo\.?|rvmo\.?|rt\.? rev\.?|the|most|right|reverend|bispo|bishop|arcebispo|archbishop|padre|pe\.|frei)\s+/g, '')
+    .replace(/\b(dom|d\.|rev\.?|revd[ao]\.?|revmo\.?|rvmo\.?|rt\.? rev\.?|the|most|right|reverend|bispo|bishop|arcebispo|archbishop|padre|pe\.|frei)\s+/g, '')
     .replace(/[^a-z0-9 ]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
