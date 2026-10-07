@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: sierra-leone
+name: Sierra Leone
+type: diocese
+relations:
+- type: part_of
+  target: province-of-west-africa
+  status: confirmed
+  sources:
+  - source: whoswho-1962
+    quote: SIERRA  LEONE,  Bishop  of,  since  1961;
+  - source: wp-scott
+    quote: '{{S-ttl|title=[[Bishop of Sierra Leone]]|years=1961&ndash;1981}}'

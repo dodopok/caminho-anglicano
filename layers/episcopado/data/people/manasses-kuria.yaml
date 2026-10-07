@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: manasses-kuria
+name: Manasses Kuria
+full_name: Manasses Kuria
+birth:
+  date: '1929-07-22'
+  sources:
+  - source: wikidata-api
+    quote: 'Q15457071 Manasses Kuria {''enwiki'': ''Manasses Kuria''}'
+  - source: wp-en-kuria
+    quote: '| term             = 1980&ndash;1994'
+death:
+  date: '2005-09-19'
+  sources:
+  - source: wikidata-api
+    quote: 'Q15457071 Manasses Kuria {''enwiki'': ''Manasses Kuria''}'
+  - source: wp-en-kuria
+    quote: '| term             = 1980&ndash;1994'
+wikidata: Q15457071
+biography: Arcebispo do Quênia e bispo de Nairóbi (1980-1994).
+sources:
+- source: wikidata-api
+  quote: 'Q15457071 Manasses Kuria {''enwiki'': ''Manasses Kuria''}'
+- source: wp-en-kuria
+  quote: '| term             = 1980&ndash;1994'
+affiliations:
+- jurisdiction: anglican-church-of-kenya
+  role: archbishop
+  diocese: nairobi
+  start: '1980'
+  end: '1994'
+  status: probable
+  sources:
+  - source: wp-en-kuria
+    quote: '| term             = 1980&ndash;1994'
+  notes: >-
+    Registrado só para mostrar quem era o arcebispo/primaz do Quênia em 1985 (ano da sagração de Nzimbi). A Wikipédia
+    diz que Kuria foi sagrado bispo assistente de Nakuru em 25/04/1970 por Leonard Beecher; não registrei como ordenação
+    porque o elo Kuria -> Nzimbi não tem fonte.

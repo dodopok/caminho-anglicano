@@ -37,6 +37,27 @@
         A cadeia segue só os sagrantes principais; os co-sagrantes aparecem em cada ficha.
       </span>
     </p>
+
+    <!-- Linha alternativa: quando a principal para, outro caminho pode ir mais longe. -->
+    <div v-if="alt && alt.length > 1" class="mt-6 rounded-xl border border-teal-200 bg-teal-50/40 p-4">
+      <p class="text-sm text-stone-700">
+        Por outros sagrantes, a linha chega a <strong>{{ alt[alt.length - 1].person.name }}</strong>
+        <template v-if="alt[alt.length - 1].date">({{ formatDate(alt[alt.length - 1].date) }})</template>
+        em {{ alt.length - 1 }} passos:
+      </p>
+      <ol class="mt-3 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-sm">
+        <li v-for="(s, i) in alt" :key="s.person.id" class="flex items-center gap-1.5">
+          <span v-if="i > 0" class="text-xs text-stone-400" :title="s.via === 'co' ? 'como co-sagrante' : 'como sagrante principal'">
+            ← <span v-if="s.via === 'co'" class="rounded bg-teal-100 px-1 text-[10px] font-medium uppercase tracking-wide text-teal-800">co</span>
+          </span>
+          <NuxtLink v-if="i > 0" :to="`/episcopado/pessoa/${s.person.id}`" class="ep-link">{{ s.person.name }}</NuxtLink>
+          <span v-else class="font-medium text-stone-900">{{ s.person.name }}</span>
+          <span v-if="s.date && i > 0" class="text-xs text-stone-400">{{ s.date.slice(0, 4) }}</span>
+          <EpiscopadoStatus v-if="s.status && i > 0" :status="s.status" :show-confirmed="false" />
+        </li>
+      </ol>
+      <p class="mt-2 text-xs text-stone-500"><span class="rounded bg-teal-100 px-1 font-medium uppercase text-teal-800">co</span> = a ligação é por co-sagração; os demais passos são por sagrante principal.</p>
+    </div>
   </div>
 </template>
 
@@ -45,7 +66,7 @@ import { formatDate } from '../../lib/labels'
 import type { PersonView, SuccessionStep } from '../../lib/views'
 
 /** Linha de sucessão: da pessoa até o sagrante principal mais antigo conhecido. */
-const props = defineProps<{ steps: SuccessionStep[]; end: PersonView['successionEnd'] }>()
+const props = defineProps<{ steps: SuccessionStep[]; end: PersonView['successionEnd']; alt?: SuccessionStep[] }>()
 
 const last = computed(() => props.steps[props.steps.length - 1]?.person.name ?? '')
 </script>

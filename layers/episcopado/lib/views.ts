@@ -99,6 +99,8 @@ export interface SuccessionStep {
   /** Data da sagração desta pessoa. */
   date: string | null
   status?: TOrdination['status']
+  /** Como esta pessoa sagrou o passo anterior (só na linha alternativa). */
+  via?: 'principal' | 'co'
 }
 
 export interface DatedView {
@@ -126,6 +128,11 @@ export interface PersonView {
   succession: SuccessionStep[]
   /** Por que a linha de sucessão parou. */
   successionEnd: 'unknown_consecrator' | 'no_episcopate' | 'cycle' | null
+  /**
+   * Quando a linha principal para, o caminho mais curto (por sagrantes principais
+   * ou co-sagrantes) até a sagração mais antiga alcançável. Vazio se não for mais longe.
+   */
+  successionAlt: SuccessionStep[]
   footnotes: Footnote[]
 }
 
@@ -341,6 +348,45 @@ function mainEpiscopate(p: TPerson): TOrdination | undefined {
 const byDate = <T extends { date?: string | null }>(a: T, b: T) => (a.date ?? '9999').localeCompare(b.date ?? '9999')
 const byStart = <T extends { start?: string | null }>(a: T, b: T) => (a.start ?? '9999').localeCompare(b.start ?? '9999')
 
+/**
+ * Sobe por todos os sagrantes (principais e co-sagrantes) a partir de `startId` e
+ * devolve o caminho mais curto até a sagração mais antiga alcançável.
+ */
+export function oldestReachableLine(index: BaseIndex, startId: string, limit = 5000): SuccessionStep[] {
+  const parent = new Map<string, { from: string; via: 'principal' | 'co' }>()
+  const seen = new Set([startId])
+  const queue = [startId]
+  let oldest: { id: string; date: string } | null = null
+  while (queue.length && seen.size < limit) {
+    const id = queue.shift()!
+    const person = index.people.get(id)
+    const consecration = person ? mainEpiscopate(person) : undefined
+    if (!consecration) continue
+    if (consecration.date && id !== startId && (!oldest || consecration.date < oldest.date)) oldest = { id, date: consecration.date }
+    const next: [string | null | undefined, 'principal' | 'co'][] = [
+      [consecration.principal_consecrator, 'principal'],
+      ...(consecration.co_consecrators ?? []).map((c): [string, 'co'] => [c, 'co'])
+    ]
+    for (const [c, via] of next) {
+      if (!c || seen.has(c)) continue
+      seen.add(c)
+      parent.set(c, { from: id, via })
+      queue.push(c)
+    }
+  }
+  if (!oldest) return []
+  const path: SuccessionStep[] = []
+  let cur: string | undefined = oldest.id
+  while (cur) {
+    const person = index.people.get(cur)
+    const consecration = person ? mainEpiscopate(person) : undefined
+    const link = parent.get(cur)
+    path.unshift({ person: personRef(index, cur), date: consecration?.date ?? null, status: consecration?.status, via: link?.via })
+    cur = link?.from
+  }
+  return path
+}
+
 export function personView(index: BaseIndex, id: string): PersonView | null {
   const p = index.people.get(id)
   if (!p) return null
@@ -436,6 +482,15 @@ export function personView(index: BaseIndex, id: string): PersonView | null {
   // Quem nem é bispo não tem linha de sucessão a mostrar.
   if (succession.length === 1 && successionEnd === 'no_episcopate') succession.length = 0
 
+  // Linha alternativa: só quando a principal para e outro caminho vai mais longe no tempo.
+  let successionAlt: SuccessionStep[] = []
+  if (successionEnd && succession.length) {
+    const alt = oldestReachableLine(index, p.id)
+    const principalOldest = succession.map((s) => s.date).filter((d): d is string => !!d).sort()[0]
+    const altOldest = alt.at(-1)?.date
+    if (alt.length > 1 && altOldest && (!principalOldest || altOldest < principalOldest)) successionAlt = alt
+  }
+
   return {
     id: p.id,
     name: p.name,
@@ -453,6 +508,7 @@ export function personView(index: BaseIndex, id: string): PersonView | null {
     events,
     succession,
     successionEnd,
+    successionAlt,
     footnotes: notes.list
   }
 }

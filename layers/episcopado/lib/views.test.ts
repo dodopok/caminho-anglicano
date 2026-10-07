@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { Base } from './schemas'
-import { groupMembers, indexBase, jurisdictionView, personView, sourceList, sourceView, type MemberView } from './views'
+import { groupMembers, indexBase, oldestReachableLine, jurisdictionView, personView, sourceList, sourceView, type MemberView } from './views'
 
 const s1 = [{ source: 's', quote: 'trecho um' }]
 const s2 = [{ source: 's', quote: 'trecho dois' }]
@@ -132,5 +132,34 @@ describe('groupMembers', () => {
     expect(groups.map((g) => g.person.id)).toEqual(['a', 'b'])
     expect(groups[1].lines.map((l) => l.start)).toEqual(['2010', '2015'])
     expect(groups[1].episcopal).toBe(true)
+  })
+})
+
+describe('linha alternativa de sucessão', () => {
+  const ep = (date: string, principal: string | null, co: string[] = []) => ({
+    order: 'episcopate' as const, date, jurisdiction: 'velha', principal_consecrator: principal, co_consecrators: co, status: 'confirmed' as const, sources: s1
+  })
+  const b: Base = {
+    ...base,
+    people: [
+      { id: 'raiz', name: 'Raiz', ordinations: [ep('1559', null)] },
+      { id: 'meio', name: 'Meio', ordinations: [ep('1700', 'raiz')] },
+      { id: 'sem-linha', name: 'Sem Linha', ordinations: [ep('1976', null)] },
+      { id: 'alvo', name: 'Alvo', ordinations: [ep('1997', 'sem-linha', ['meio'])] }
+    ]
+  }
+  const idx = indexBase(b)
+
+  it('sobe por co-sagrantes até a sagração mais antiga alcançável', () => {
+    expect(oldestReachableLine(idx, 'alvo').map((s) => [s.person.id, s.via])).toEqual([
+      ['alvo', undefined], ['meio', 'co'], ['raiz', 'principal']
+    ])
+  })
+
+  it('só aparece na ficha quando a linha principal para e a alternativa vai mais longe', () => {
+    const v = personView(idx, 'alvo')!
+    expect(v.successionEnd).toBe('unknown_consecrator')
+    expect(v.successionAlt.map((s) => s.person.id)).toEqual(['alvo', 'meio', 'raiz'])
+    expect(personView(idx, 'meio')!.successionAlt).toEqual([])
   })
 })

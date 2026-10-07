@@ -115,7 +115,7 @@
             <section v-if="person.succession.length > 1 || person.successionEnd === 'unknown_consecrator'" id="sucessao" class="mt-10 scroll-mt-24">
               <h2 class="ep-section-title">Linha de sucessão</h2>
               <p class="mb-4 mt-1 text-sm text-stone-500">Pelos sagrantes principais, do mais recente ao mais antigo registrado.</p>
-              <EpiscopadoSuccession :steps="person.succession" :end="person.successionEnd" />
+              <EpiscopadoSuccession :steps="person.succession" :end="person.successionEnd" :alt="person.successionAlt" />
             </section>
 
             <!-- Quem ordenou/sagrou -->

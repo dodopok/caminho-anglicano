@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: stewart-payne
+name: Payne
+full_name: Sidney Stewart Payne
+aliases:
+- Most Rev'd Stewart Payne
+- Sidney Stewart Payne
+- Stewart Payne
+birth:
+  date: '1932-06-06'
+  sources:
+  - source: wikidata-api
+    quote: Stewart Payne -> [('Q7615912', 'Stewart Payne', 'Anglican bishop')]
+  - source: wp-en-payne
+    quote: >-
+      ''' (Sidney) Stewart Payne ''' was [[Anglican]] [[Archbishop]] of [[Newfoundland and Labrador]] and  [[Ecclesiastical
+      Province of Canada|Metropolitan of Canada]] in the late 20th century.
+wikidata: Q7615912
+biography: >-
+  Bispo de Western Newfoundland (1978-1997), arcebispo e metropolita da Província Eclesiástica do Canadá; sagrante
+  principal de Donald Harvey (1993).
+sources:
+- source: wikidata-api
+  quote: Stewart Payne -> [('Q7615912', 'Stewart Payne', 'Anglican bishop')]
+- source: wp-en-payne
+  quote: >-
+    ''' (Sidney) Stewart Payne ''' was [[Anglican]] [[Archbishop]] of [[Newfoundland and Labrador]] and  [[Ecclesiastical
+    Province of Canada|Metropolitan of Canada]] in the late 20th century.

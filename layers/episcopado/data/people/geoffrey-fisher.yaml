@@ -4,6 +4,7 @@ name: Geoffrey Francis Fisher
 full_name: Geoffrey Francis Fisher
 aliases:
 - Geoffrey Fisher
+- Lord Fisher of Lambeth
 birth:
   date: '1887-05-05'
   sources:
@@ -30,9 +31,18 @@ ordinations:
   sources:
   - source: wp-fisher
     quote: on 21 September 1932 Temple consecrated Fisher bishop in [[York Minster]]
+  - source: hein-2007-fisher
+    quote: York Minster, Geoffrey Fisher was consecrated bishop of Chester.
+  - source: barrow-1980
+    quote: >-
+      On September 21, the consecration of the short and stocky Dr. Geoffrey Fisher as Bishop of Chester took
   notes: >-
     Bispo de Chester. William Temple era então arcebispo de York. Só a Wikipédia, que cita The Times de 22/9/1932,
-    p. 13. Co-sagrantes não identificados.
+    p. 13. Co-sagrantes não identificados. Reforço da afirmação já existente (sucessao-historica.json). DATA e LOCAL
+    agora têm duas fontes secundárias independentes (Hein 2007; Barrow 1980), lidas como trechos da busca de texto
+    completo do Internet Archive (livros de empréstimo controlado; não foi possível abrir o volume inteiro). O SAGRANTE
+    (William Temple, então arcebispo de York, a quem cabia sagrar na York Minster os bispos da província) continua
+    só pela Wikipédia, que cita The Times de 22/09/1932, p. 13. Por isso 'provavel'.
 affiliations:
 - jurisdiction: church-of-england
   role: diocesan_bishop

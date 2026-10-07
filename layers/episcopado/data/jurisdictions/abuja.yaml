@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: abuja
+name: Abuja
+type: diocese
+relations:
+- type: part_of
+  target: church-of-nigeria
+  status: confirmed
+  sources:
+  - source: kwashang-2006
+    quote: >-
+      November 1989 Peter J. Akinnola (Canon) was consecrated and was enthroned the bishop of the Abuja diocese
+      during the inaugural service ofthe diocese on 26
+  - source: ens-90114
+    quote: >-
+      Abuja, the site of the consecrations, is itself a new missionary diocese created last year. Abuja's bishop,
+      the Right Rev. Peter Akinola

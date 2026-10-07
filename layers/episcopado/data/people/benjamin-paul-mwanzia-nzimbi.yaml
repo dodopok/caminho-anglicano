@@ -33,7 +33,31 @@ ordinations:
     quote: >-
       The Diocese of Machakos was formed by subdivision of the Diocese of Nairobi in 1985, with its headquarters
       in Machakos town. The first Bishop was The Most Rev. Benjamin Nzimbi.
+  - source: wp-nzimbi
+    quote: '|consecration = 1985
+
+      |consecrated_by = [[Festo Olang'']]'
   notes: >-
     Ano 1985 (primeiro bispo de Machakos) apoiado pela ACK. O sagrante dado pela infobox da Wikipédia (Festo Olang')
     é duvidoso: Olang' se aposentou como arcebispo em 1980 (o arcebispo em 1985 era Manasses Kuria). Nenhuma fonte
-    primária sobre o sagrante foi achada.
+    primária sobre o sagrante foi achada. VERSÃO DA WIKIPÉDIA (infobox, sem nota). Contestada por incoerência cronológica
+    com a própria Wikipédia: Festo Olang' foi arcebispo do Quênia até 1980, e o arcebispo em 1985 era Manasses Kuria
+    (1980-1994, segundo wp-en-kuria). Não há fonte que nomeie Kuria (ou outro) como sagrante: não registrei versão
+    alternativa com sagrante. Ver dúvidas.
+affiliations:
+- jurisdiction: anglican-church-of-kenya
+  role: diocesan_bishop
+  diocese: machakos
+  start: '1985'
+  end: '1995'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: ky-house-2004
+    quote: Bishop Nzimbi was first ordained in 1985 as Bishop of Machakos, before moving to Kitue;
+  - source: wp-nzimbi
+    quote: >-
+      Nzimbi was elected as the first bishop of the new Diocese of Machakos, which he served from 1985 to 1995.
+  notes: >-
+    O ano 1985 também é dado pela ACK (ver pontes-estrangeiras.json, chave ack-machakos). Fim em 1995 (transferência
+    para Kitui) só pela Wikipédia.
