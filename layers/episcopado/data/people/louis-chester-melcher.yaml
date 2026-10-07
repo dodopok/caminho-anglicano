@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: louis-chester-melcher
 name: Louis Chester Melcher
+full_name: Louis Chester Melcher
 aliases:
 - Bishop Melcher
 - Louis C. Melcher
@@ -44,14 +45,18 @@ ordinations:
 - order: episcopate
   date: '1948-02-05'
   place: Trinity Church, Columbia, Carolina do Sul (EUA)
-  jurisdiction: dmsb
+  jurisdiction: tec
   office: missionary
   principal_consecrator: henry-knox-sherrill
   co_consecrators:
+  - edmund-p-dandridge
   - edmund-pendleton-dandridge
+  - john-j-gravatt
   - john-james-gravatt
   status: contested
   sources:
+  - source: iab-poster-linhagem-meira
+    quote: teve papel decisivo ao consagrar missionários como Louis Chester Melcher
   - source: wit-1948-02-12
     quote: >-
       Bishop Middle- ton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be the
@@ -69,19 +74,90 @@ ordinations:
       The Rt. Rey. Louis Chester Melcher was consecrated Bishop Coadjutor of Southern Brazil on February 5th at
       Trinity Church, Columbia, §. C. The Presiding Bishop was the consecrator, assisted by Bishops Gravatt of Upper
       South Carolina and Dandridge of Ten- nessee as co-consecrators.
-  - source: iab-poster-linhagem-meira
-    quote: teve papel decisivo ao consagrar missionários como Louis Chester Melcher
+  - source: wit-1948-02-12
+    quote: >-
+      Bishop Middleton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be the
+      bishop coadju­ tor of Southern Brazil
+  - source: wp-en-melcher
+    quote: He had been consecrated there as coadjutor bishop of Southern Brazil on February 5, 1948.
+  - source: wp-lista-bispos-tec
+    quote: >-
+      | 475 | [[Louis C. Melcher]]<!--Louis Chester MELCHER--> | [[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]]
+      [[John J. Gravatt|417]] | 1948 | [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|I Central
+      Brazil (Rio de Janeiro)]] |
   discrepancies:
   - field: jurisdiction
-    value: tec
+    value: dmsb
     sources:
-    - source: iab-poster-linhagem-meira
-      quote: teve papel decisivo ao consagrar missionários como Louis Chester Melcher
+    - source: wit-1948-02-12
+      quote: >-
+        Bishop Middle- ton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be
+        the bishop coadju­ tor of Southern Brazil, said that it is the task of Christians
+    - source: wit-1948-02-12
+      quote: The service was held at Trinity Church here on February 5th.
+    - source: wit-1948-01-29
+      quote: >-
+        The Presiding Bishop will be the consecrator, assisted by Bishop Gra- vatt of Upper South Carolina and Bishop
+        Dandridge of Tennessee.
+    - source: wp-en-histlist
+      quote: '[[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]] [[John J. Gravatt|417]]'
+    - source: lc-1948-02-15
+      quote: >-
+        The Rt. Rey. Louis Chester Melcher was consecrated Bishop Coadjutor of Southern Brazil on February 5th at
+        Trinity Church, Columbia, §. C. The Presiding Bishop was the consecrator, assisted by Bishops Gravatt of
+        Upper South Carolina and Dandridge of Ten- nessee as co-consecrators.
+    - source: wit-1948-02-12
+      quote: >-
+        Bishop Middleton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be the
+        bishop coadju­ tor of Southern Brazil
+    - source: wp-en-melcher
+      quote: He had been consecrated there as coadjutor bishop of Southern Brazil on February 5, 1948.
+    - source: wp-lista-bispos-tec
+      quote: >-
+        | 475 | [[Louis C. Melcher]]<!--Louis Chester MELCHER--> | [[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]]
+        [[John J. Gravatt|417]] | 1948 | [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|I
+        Central Brazil (Rio de Janeiro)]] |
+  - field: place
+    value: Trinity Church, Columbia, Carolina do Sul
+    sources:
+    - source: wit-1948-02-12
+      quote: >-
+        Bishop Middleton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be the
+        bishop coadju­ tor of Southern Brazil
+    - source: wit-1948-02-12
+      quote: The service was held at Trinity Church here on February 5th.
+    - source: wp-en-melcher
+      quote: He had been consecrated there as coadjutor bishop of Southern Brazil on February 5, 1948.
+    - source: wp-lista-bispos-tec
+      quote: >-
+        | 475 | [[Louis C. Melcher]]<!--Louis Chester MELCHER--> | [[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]]
+        [[John J. Gravatt|417]] | 1948 | [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|I
+        Central Brazil (Rio de Janeiro)]] |
+  - field: office
+    value: coadjutor
+    sources:
+    - source: wit-1948-02-12
+      quote: >-
+        Bishop Middleton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be the
+        bishop coadju­ tor of Southern Brazil
+    - source: wit-1948-02-12
+      quote: The service was held at Trinity Church here on February 5th.
+    - source: wp-en-melcher
+      quote: He had been consecrated there as coadjutor bishop of Southern Brazil on February 5, 1948.
+    - source: wp-lista-bispos-tec
+      quote: >-
+        | 475 | [[Louis C. Melcher]]<!--Louis Chester MELCHER--> | [[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]]
+        [[John J. Gravatt|417]] | 1948 | [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|I
+        Central Brazil (Rio de Janeiro)]] |
   notes: >-
     Sagrado bispo coadjutor do Sul do Brasil. Apresentantes: bispos Jackson (Louisiana) e Carruthers (South Carolina);
     litanista Keeler (Minnesota); epistoleiro Phillips (SW Virginia); evangelista Wright (East Carolina); pregador
     Middleton Barnwell (Georgia) — Living Church 15/02/1948. A Wikipédia EN (artigo Melcher) cita Living Church
-    de '15/02/1947' — erro de ano.
+    de '15/02/1947' — erro de ano. Pôster: Henry Knox Sherrill "teve papel decisivo ao consagrar missionários como
+    Louis Chester Melcher" — data, local e cargo CONFIRMADOS por fonte primária (The Witness, 12/02/1948), que não
+    nomeia o sagrante; Sherrill como sagrante principal (com Dandridge e Gravatt) só pela lista de sucessão da Wikipédia
+    — PROVÁVEL. Sherrill era Presiding Bishop em 1948. Observação: a lista da Wikipédia o põe como "I Central Brazil",
+    mas na sagração era coadjutor do Sul do Brasil.
 affiliations:
 - jurisdiction: dmsb
   role: bishop

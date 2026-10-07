@@ -1,22 +1,31 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: douglas-araujo
-name: Douglas Araújo
+name: Douglas de Araujo Silva
+full_name: Douglas de Araujo Silva
+aliases:
+- Douglas Araújo
 ordinations:
 - order: diaconate
   date: '2025-03-09'
-  jurisdiction: null
+  jurisdiction: reb
+  ordained_by: eric-rodrigues
   status: probable
   sources:
   - source: ig-anglicanaporto-2025-03-10-diaconato-1
     quote: 09 de março de 2025, o dia em que nossos pastores foram ordenados ao diaconato.
   - source: ig-anglicanaporto-2025-03-10-diaconato-2
     quote: 09 de março de 2025, o dia em que nossos pastores foram ordenados ao diaconato.
+  - source: testemunho-mantenedor-2026-10-07-reb
+    quote: Foi ordenado Douglas de Araujo Silva e Cynthia Muniz Soares, pelo bispo Eric Rodrigues, da REB
   notes: >-
     Os posts da Igreja Anglicana Porto citam o perfil @rev_douglasaraujo; a identificação com 'Douglas Araújo' do
-    post da REB é inferência editorial. Jurisdição e bispo ordenante não informados.
+    post da REB é inferência editorial. Jurisdição e bispo ordenante não informados. Bispo ordenante informado por
+    testemunho do mantenedor do projeto (a mensagem não distingue diaconato e presbiterato; a REB tinha um único
+    bispo).
 - order: presbyterate
   date: 2025-10
   jurisdiction: reb
+  ordained_by: eric-rodrigues
   status: confirmed
   sources:
   - source: ig-reb-2025-10-25-presbiteros
@@ -24,8 +33,24 @@ ordinations:
   - source: ig-reb-2025-10-25-presbiteros
     quote: "Dêmos graças aos novos presbíteros da Rede Episcopal Brasileira. \n\n- Reverendo Douglas Araújo (SP)\n\
       - Reverenda Cynthia Soares (SP)\n- Reverendo Elias Valentim (ES)\n- Reverenda Joyce Baiense (ES)"
-  notes: O post não nomeia o bispo ordenante. Data = mês do Sínodo Diocesano (post de 25/10/2025).
+  - source: testemunho-mantenedor-2026-10-07-reb
+    quote: Foi ordenado Douglas de Araujo Silva e Cynthia Muniz Soares, pelo bispo Eric Rodrigues, da REB
+  notes: >-
+    O post não nomeia o bispo ordenante. Data = mês do Sínodo Diocesano (post de 25/10/2025). Bispo ordenante informado
+    por testemunho do mantenedor do projeto (a mensagem não distingue diaconato e presbiterato; a REB tinha um único
+    bispo).
 affiliations:
+- jurisdiction: reb
+  role: other
+  role_description: postulante
+  start: '2024-12-20'
+  status: confirmed
+  sources:
+  - source: reb-portaria-01-2024
+    quote: Douglas de Araujo Silva
+  notes: >-
+    Postulante em 20/12/2024; em 2026 a página "Estrutura" da REB já o(a) lista entre os clérigos (Rev./Revda.)
+    — ordenação 2025–2026 pelo bispo Eric Rodrigues provável, mas sem notícia/data encontrada.
 - jurisdiction: reb
   role: priest
   start: 2025-10
