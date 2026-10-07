@@ -26,8 +26,55 @@ ordinations:
   jurisdiction: tec
   office: diocesan
   principal_consecrator: edmond-browning
+  co_consecrators:
+  - frank-tracy-griswold-iii
+  - herbert-thompson-jr
   status: probable
   sources:
+  - source: ens-1991-10-04
+    quote: The Rev. Peter H. Beckwith, 52, was elected bishop of the Diocese of Springfield on September 14.
+  - source: ens-1991-10-04
+    quote: If Beckwith accepts the election, he will be consecrated on February 29, 1992.
+  - source: ens-rip-beckwith-2019
+    quote: >-
+      The Rt. Rev. Peter Beckwith, who served as bishop of the Diocese of Springfield in Illinois from 1992 to 2010,
+      died on Oct. 4 at the age of 80
+  - source: wp-lista-bispos-tec
+    quote: >-
+      | 872 | [[Peter H. Beckwith]] | [[Edmond L. Browning|630]] [[Herbert Thompson Jr.|829]] [[Frank T. Griswold|794]]
+      | 1991 | [[Episcopal Diocese of Springfield|X Springfield]] |
   - source: iab-poster-linhagem-uchoa
     quote: >-
       161c. Edmond Lee Browning (1959-1997) que, em 1992, sagrou Peter Hess Beckwith como bispo de Springfield.
+  notes: >-
+    Pôster: Browning "em 1992, sagrou Peter Hess Beckwith como bispo de Springfield". Ano 1992 apoiado pela ENS
+    (sagração marcada para 29/02/1992; episcopado 1992–2010); a lista da Wikipédia põe "1991" (ano da eleição).
+    Sagrante principal Browning (Presiding Bishop) só pela lista da Wikipédia — PROVÁVEL, não confirmado por fonte
+    primária.
+affiliations:
+- jurisdiction: tec
+  role: diocesan_bishop
+  diocese: diocese-of-springfield
+  start: '1992'
+  end: '2010'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: ens-rip-beckwith-2019
+    quote: served as bishop of the Diocese of Springfield in Illinois from 1992 to 2010
+  - source: anglicanink-beckwith-acna-2014
+    quote: most notably leading the Episcopal Diocese of Springfield from 1992 to 2010
+  notes: motivo_fim não explicitado nas fontes (2010 = fim do episcopado).
+- jurisdiction: acna
+  role: bishop
+  diocese: anglican-diocese-of-great-lakes-assistente
+  start: '2014-10-10'
+  status: probable
+  sources:
+  - source: anglicanink-beckwith-acna-2014
+    quote: >-
+      At their October 10, 2014, meeting in Atlanta, Georgia, the College of Bishops of the Anglican Church in North
+      America received the Rt. Rev. Dr. Peter Beckwith.
+  notes: >-
+    Relevante para a cronologia: Beckwith só passou à ACNA em 2014; em 2007 era bispo diocesano de Springfield na
+    TEC.

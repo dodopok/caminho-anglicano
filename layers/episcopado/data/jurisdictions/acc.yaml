@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: acc
+acronym: ACC
+name: Anglican Catholic Church (Igreja Católica Anglicana) — Diocese de Nova Granada
+type: communion
+founded:
+  date: '1977'
+  sources:
+  - source: acc-administration
+    quote: 'Location: Colombia, Venezuela, Chile, Brazil'
+  - source: acc-newgranada-site
+    quote: >-
+      Paróquia Bom Pastor ACC Direção: Rua TG 05. Qd 10. Lt 20A Residencial Teresinha Glória Itapuranga-GO. Brasil
+wikidata: Q2714390
+website: https://anglicancatholic.org/
+description: >-
+  Principal corpo continuante saído do Congresso de St. Louis (1977). No Brasil, aparece apenas via Diocese de Nova
+  Granada (sede em Pereira, Colômbia; bispo Germán Orrego-Hurtado), cuja área declarada inclui o Brasil; o site
+  da diocese lista uma 'Paróquia Bom Pastor ACC' em Itapuranga-GO (Rev. Pe. Fernando Carlos da Silva).
+sources:
+- source: acc-administration
+  quote: 'Location: Colombia, Venezuela, Chile, Brazil'
+- source: acc-newgranada-site
+  quote: >-
+    Paróquia Bom Pastor ACC Direção: Rua TG 05. Qd 10. Lt 20A Residencial Teresinha Glória Itapuranga-GO. Brasil

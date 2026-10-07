@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: boaventura-de-souza-oliveira
+name: Boaventura de Souza Oliveira
+aliases:
+- Boaventura
+- Bonaventura de Souza Oliveira
+biography: >-
+  Catequista brasileiro da primeira geração; designado a Santa Rita (1892); ordenado diácono por Peterkin em 1893
+  segundo Kickhofel; um dos seis pioneiros brasileiros comemorados pela TEC/IEAB.
+sources:
+- source: kickhofel
+  quote: >-
+    Ordenação de quatro diáconos: Vicente Brande, Américo Vespúcio Cabral, Antônio Machado Fraga e Boaventura de
+    Souza Oliveira.
+- source: satucket-pioneers
+  quote: >-
+    six Brazilians (Vicente Brande, Américo Vespúcio Cabral, Antônio Machado Fraga, Bonaventura de Souza Oliveira,
+    Júlio de Almeida Coelho, and Carl Henry Clement Sergel)
+ordinations:
+- order: diaconate
+  date: '1893'
+  jurisdiction: dmsb
+  ordained_by: george-william-peterkin
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: >-
+      Ordenação de quatro diáconos: Vicente Brande, Américo Vespúcio Cabral, Antônio Machado Fraga e Boaventura
+      de Souza Oliveira.
+  - source: wit-1952-03-20
+    quote: >-
+      the visit of Bishop Peterkin in 1893 when almost one hun- dred and fifty persons were confirmed and four Brazilians
+      were ordained to the diaconate.
+  - source: wp-en-kinsolving
+    quote: >-
+      West Virginia's bishop George Peterkin made an episcopal visit in 1893, during which he ordained four Brazilians
+      as deacons
+  notes: >-
+    Fato (4 diáconos por Peterkin em 1893) confirmado por várias fontes; o nome deste ordenando consta só em Kickhofel.
+events:
+- type: other
+  date: '1893'
+  description: >-
+    Visita do bispo George W. Peterkin (Virgínia Ocidental) em 1893, enviado pelo Bispo Presidente: 142 confirmações,
+    ordenação dos quatro primeiros diáconos brasileiros, nomeação de comissões e designações das capelas.
+  status: confirmed
+  sources:
+  - source: wit-1952-03-20
+    quote: >-
+      the visit of Bishop Peterkin in 1893 when almost one hun- dred and fifty persons were confirmed and four Brazilians
+      were ordained to the diaconate.
+  - source: calvani-2005
+    quote: Em 1893 foram ordenados os quatro primeiros diáconos brasileiros.
+  - source: som-1893-11
+    quote: >-
+      The Presiding Bishop has sent one of our number, the Bishop of West Virginia, to visit the missions of this
+      Church in the Republic of Brazil
+  - source: wp-pt-ieab
+    quote: >-
+      No mesmo ano, a comunidade recebeu o bispo norte-americano George William Peterkin, que ordenou quatro diáconos.
+- type: other
+  date: '1892-05-23'
+  description: >-
+    Primeira convocação (não autorizada) da missão, Casa da Missão, Porto Alegre, 23-26/05/1892: presentes os revs.
+    Morris, Brown, Meem e Kinsolving e os catequistas Boaventura, Brande e Cabral.
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: >-
+      Presentes: reverendos Morris, Brown, Meem e Kinsolving, e catequistas Boaventura, Brande e Cabral. Presidida
+      por Kinsolving e secretariada por Cabral.

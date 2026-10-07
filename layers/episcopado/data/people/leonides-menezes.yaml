@@ -4,19 +4,18 @@ name: Leônides de Menezes
 full_name: Leonides de Menezes
 aliases:
 - Cônego Leonides de Menezes
+- Dom Leônides
 - Leonides Menezes
 - Leônides Menezes
 biography: >-
-  Ministro auxiliar da IEAB que liderou a Missão (depois Paróquia) Betânia no Recife desde 1996; levou a paróquia
-  para fora da IEAB em 2002; cônego da CEEC (2004), sagrado bispo em dezembro de 2006; arcebispo primaz da Província
-  das Igrejas Cristãs Episcopais do Brasil desde dezembro de 2021.
+  Líder (ministro auxiliar, depois reverendo) da Missão/Paróquia Betânia da Diocese do Recife (IEAB) desde 1996;
+  levou a comunidade para fora da IEAB em 2002, foi sagrado bispo em 2006 na comunhão CEEC e eleito arcebispo primaz
+  da província das Igrejas Cristãs Episcopais do Brasil em 2021.
 sources:
-- source: ciceb-betania-nossaigreja
+- source: ciceb-betania-historia
   quote: >-
-    a Missão Betânia foi instalada em 11/07/1996, na Av. Caxangá 1107, no bairro do Cordeiro, sob a liderança do
-    Ministro Auxiliar Leonides de Menezes.
-- source: ciceb-quemsomos
-  quote: Eleito Arcebispo, Dom Leonides de Menezes tornou-se o bispo primaz da CICEB
+    Em dezembro de 2006, a Paróquia Betânia foi elevada à Catedral da Diocese Missionária do Nordeste do Brasil
+    (DMNB), e o Rev. Leonides foi sagrado Bispo dessa diocese.
 ordinations:
 - order: episcopate
   date: '2007'
@@ -36,7 +35,7 @@ ordinations:
       Em dezembro de 2006, em cerimônia oficiada pelos bispos William Paul Mikler, Hermes Carvalho Fernandes e Francisco
       Buzzo, O Rev. Leonides foi sagrado bispo diocesano e o 1º Distrito Missionário foi alçado à condição de Diocese
       Missionária.
-  - source: ciceb-betania-nossaigreja
+  - source: ciceb-betania-historia
     quote: >-
       Em dezembro de 2006, a Paróquia Betânia foi elevada à Catedral da Diocese Missionária do Nordeste do Brasil
       (DMNB), e o Rev. Leonides foi sagrado Bispo dessa diocese.
@@ -53,7 +52,7 @@ ordinations:
         Em dezembro de 2006, em cerimônia oficiada pelos bispos William Paul Mikler, Hermes Carvalho Fernandes e
         Francisco Buzzo, O Rev. Leonides foi sagrado bispo diocesano e o 1º Distrito Missionário foi alçado à condição
         de Diocese Missionária.
-    - source: ciceb-betania-nossaigreja
+    - source: ciceb-betania-historia
       quote: >-
         Em dezembro de 2006, a Paróquia Betânia foi elevada à Catedral da Diocese Missionária do Nordeste do Brasil
         (DMNB), e o Rev. Leonides foi sagrado Bispo dessa diocese.
@@ -69,7 +68,7 @@ ordinations:
         Em dezembro de 2006, em cerimônia oficiada pelos bispos William Paul Mikler, Hermes Carvalho Fernandes e
         Francisco Buzzo, O Rev. Leonides foi sagrado bispo diocesano e o 1º Distrito Missionário foi alçado à condição
         de Diocese Missionária.
-    - source: ciceb-betania-nossaigreja
+    - source: ciceb-betania-historia
       quote: >-
         Em dezembro de 2006, a Paróquia Betânia foi elevada à Catedral da Diocese Missionária do Nordeste do Brasil
         (DMNB), e o Rev. Leonides foi sagrado Bispo dessa diocese.
@@ -89,19 +88,34 @@ affiliations:
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-diocese-recife
-  start: '1996'
-  end: '2002'
-  end_reason: schism
-  status: probable
+  start: '1996-07-11'
+  end: '2002-07-08'
+  end_reason: left
+  status: contested
   sources:
-  - source: ciceb-betania-nossaigreja
+  - source: ciceb-betania-historia
     quote: >-
       Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom Clóvis
       Erly, a Missão Betânia foi instalada em 11/07/1996, na Av. Caxangá 1107, no bairro do Cordeiro, sob a liderança
       do Ministro Auxiliar Leonides de Menezes.
+  - source: ciceb-betania-historia
+    quote: >-
+      Em 8 de julho de 2002, a então Paróquia Betânia, da Igreja Episcopal Anglicana do Brasil, decidiu, em assembleia,
+      desligar-se da Igreja Anglicana, passando a ser chamada Igreja Evangélica Betânia.
   notes: >-
+    Em 1996 era "Ministro Auxiliar" (não está claro se já ordenado); depois "Rev." como líder da Paróquia Betânia
+    (Cordeiro, Recife). Data/ordenante de suas ordenações na IEAB não encontrados. Saída com a paróquia em 2002.
     Em 1996 era 'Ministro Auxiliar'; os pôsteres da IAB e a Wikipédia o chamam de reverendo/presbítero ao tempo
     da saída.
+  discrepancies:
+  - field: end_reason
+    value: schism
+    sources:
+    - source: ciceb-betania-historia
+      quote: >-
+        Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom
+        Clóvis Erly, a Missão Betânia foi instalada em 11/07/1996, na Av. Caxangá 1107, no bairro do Cordeiro, sob
+        a liderança do Ministro Auxiliar Leonides de Menezes.
 - jurisdiction: ceec
   role: clergy
   start: 2004-03
@@ -117,7 +131,7 @@ affiliations:
   end: 2021-12
   status: probable
   sources:
-  - source: ciceb-betania-nossaigreja
+  - source: ciceb-betania-historia
     quote: e o Rev. Leonides foi sagrado Bispo dessa diocese.
   notes: 'Fim presumido: hoje o bispo diocesano da DMNB é Gervásio Neto.'
 - jurisdiction: iceb
@@ -129,7 +143,7 @@ affiliations:
     quote: >-
       Em Dezembro de 2021, foi constituída a Província das Igrejas Cristãs Episcopais do Brasil. Eleito Arcebispo,
       Dom Leonides de Menezes tornou-se o bispo primaz da CICEB
-  - source: ciceb-betania-nossaigreja
+  - source: ciceb-betania-historia
     quote: >-
       quando em dezembro de 2021 foi constituída a Província das Igrejas Cristãs Episcopais do Brasil, sendo eleito
       o Arcebispo Leonides de Menezes, para nos dirigir como bispo Primaz do Brasil.
@@ -149,6 +163,21 @@ affiliations:
     quote: >-
       Após sair da IEAB como presbítero, Leônides Menezes fundou a Igreja Cristã Episcopal Betânia em Recife.
 events:
+- type: other
+  date: '2002'
+  description: >-
+    A Paróquia Betânia (Cordeiro, Recife), da Diocese do Recife da IEAB, liderada por Leônides de Menezes, decide
+    em assembleia desligar-se da IEAB e filia-se à Communion of Evangelical Episcopal Churches (CEEC)
+  status: probable
+  sources:
+  - source: ciceb-betania-historia
+    quote: >-
+      Em 8 de julho de 2002, a então Paróquia Betânia, da Igreja Episcopal Anglicana do Brasil, decidiu, em assembleia,
+      desligar-se da Igreja Anglicana
+  - source: ciceb-betania-historia
+    quote: >-
+      Em 8 de junho de 2002, em oração e busca sincera de direção de Deus, a comunidade filiou-se à Communio Evangelical
+      Episcopal Churches (CECC)
 - type: other
   date: '2008'
   description: 'Primeiro Concílio Diocesano (2008): Paróquia Betânia escolhida catedral e comunhão renomeada CICEB'

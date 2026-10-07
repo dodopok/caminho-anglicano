@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: antonio-jose-lopes-guimaraes
+name: Antônio José Lopes Guimarães
+biography: Clérigo pioneiro brasileiro, fundador da obra em Bagé (1903).
+sources:
+- source: ieab-sobre
+  quote: Antônio José Lopes Guimarães, fundador da igreja em Bagé
+- source: kickhofel
+  quote: Início do trabalho em Bagé pelo rev. Antônio José Lopes Guimarães.
+affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  diocese: bage
+  start: '1903'
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: Início do trabalho em Bagé pelo rev. Antônio José Lopes Guimarães.

@@ -3,10 +3,10 @@ id: claudio-vinicius-de-senna-gastal
 name: Claudio Vinicius de Senna Gastal
 ordinations:
 - order: episcopate
-  date: '1984'
+  date: 1984-03
   place: Catedral da Santissima Trindade, Porto Alegre
   jurisdiction: ieab
-  office: diocesan
+  office: coadjutor
   status: probable
   sources:
   - source: costa2021
@@ -15,7 +15,13 @@ ordinations:
       da Santíssima Trindade, em Porto Alegre.
   - source: costa2021
     quote: Atuou como Bispo Diocesano da Diocese Meridional de 1984 a 1998.
-  notes: Eleito em outubro de 1983; data exata da sagracao nao informada (provavelmente inicio de 1984).
+  - source: ens-84063
+    quote: >-
+      The Very Rev. Claudio Gastal, Dean of Holy Trinity Cathedral in Porto Alegre, was elected to that position,
+      and his consecration is slated for the end of March.
+  notes: >-
+    Eleito bispo coadjutor (Kratz pediu coadjutor por saude); ENS de 22/03/1984 diz sagracao prevista para o fim
+    de marco de 1984. Data exata nao confirmada.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop

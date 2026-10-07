@@ -21,16 +21,31 @@ ordinations:
 - order: presbyterate
   date: '1970'
   jurisdiction: ieab
-  status: probable
+  status: contested
   sources:
   - source: queiroz-2004-ufpe
     quote: Foi Ordenado Ministro da Igreja Episcopal Anglicana do Brasil em 1970.
   - source: queiroz-2004-ufpe
     quote: “31 anos de Pastorado 1970 – 2001”
+  - source: folhape-2025-garcia-jubileu
+    quote: >-
+      No último dia 28 de fevereiro de 2025, celebrou-se o Jubileu de Ouro do Pastor Paulo Garcia, líder e servo
+      incansável da Igreja Episcopal Carismática. Ao longo de 50 anos de sacerdócio
+  discrepancies:
+  - field: date
+    value: c.1975
+    sources:
+    - source: folhape-2025-garcia-jubileu
+      quote: >-
+        No último dia 28 de fevereiro de 2025, celebrou-se o Jubileu de Ouro do Pastor Paulo Garcia, líder e servo
+        incansável da Igreja Episcopal Carismática. Ao longo de 50 anos de sacerdócio
   notes: >-
     A fonte diz apenas "Ordenado Ministro" em 1970, sem especificar se diaconato ou presbiterato; registrado como
     presbiterato por ser o início do "pastorado" contado a partir de 1970, mas pode tratar-se do diaconato. Ordenante
-    não informado. Formado no Seminário Teológico Anglicano de São Paulo.
+    não informado. Formado no Seminário Teológico Anglicano de São Paulo. Data inferida do jubileu de 50 anos de
+    "sacerdócio" celebrado em 28/02/2025 (artigo de opinião); a fonte não dá a data da ordenação. Diverge do "Ordenado
+    Ministro ... em 1970" da dissertação de Queiroz (2004) — possivelmente 1970 = diaconato e c.1975 = presbiterato,
+    mas nenhuma fonte diz isso.
 - order: episcopate
   date: '2003-09-08'
   place: Teatro Guararapes, Olinda (PE)
@@ -118,8 +133,12 @@ affiliations:
   start: 1975-03
   end: 2002-09
   end_reason: schism
-  status: probable
+  status: confirmed
   sources:
+  - source: ciceb-betania-historia
+    quote: >-
+      Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom Clóvis
+      Erly
   - source: queiroz-2004-ufpe
     quote: >-
       desde março do mesmo ano, o bispo Edmund Sherrill havia enviado para Recife o Rev. Paulo Garcia com a finalidade
@@ -128,9 +147,10 @@ affiliations:
     quote: >-
       setembro de 2002, o Pr. Paulo Garcia declarou, oficialmente, a sua ruptura da Igreja Episcopal Anglicana.
   notes: >-
-    Antes de Recife serviu em São Paulo (Paróquia Cristo Salvador, ABC) e no Rio de Janeiro (Morro Dona Marta, São
-    Lucas-Botafogo, Redentor-Tijuca, Cristo Rei-Cidade de Deus). Liderou a Catedral da Santíssima Trindade (Espinheiro),
-    da qual é chamado "Deão".
+    Reitor da Catedral (Santíssima Trindade, Recife) em 1996, sob o bispo Clóvis Erly Rodrigues. Complementa o vínculo
+    1975–2002. Antes de Recife serviu em São Paulo (Paróquia Cristo Salvador, ABC) e no Rio de Janeiro (Morro Dona
+    Marta, São Lucas-Botafogo, Redentor-Tijuca, Cristo Rei-Cidade de Deus). Liderou a Catedral da Santíssima Trindade
+    (Espinheiro), da qual é chamado "Deão".
 - jurisdiction: iecb
   role: primate
   diocese: diocese-do-recife-catedral-da-trindade
@@ -142,6 +162,19 @@ affiliations:
     Reconhecido como arcebispo e primaz em 2007, após as sagrações de Ximenes e Bastos; instituído arcebispo do
     Recife e primaz da CEI em 14/9/2019. A lista da Wikipédia dá '(2005-)' para o cargo de arcebispo do Recife.
 events:
+- type: other
+  date: 2002-10
+  description: >-
+    Saida do Rev. Paulo Garcia, deao da Catedral da Santissima Trindade do Recife (2002); o bispo Robinson nomeia
+    Filadelfo Oliveira deao interino.
+  status: confirmed
+  sources:
+  - source: ens-2002-241-15
+    quote: >-
+      the bishop of the Anglican Diocese of Recife, Robinson Cavalcanti, has appointed the Rev. Filadelfo Oliveira
+      as acting dean of the cathedral
+  - source: costa2021
+    quote: Em setembro de 2002, ocorreu o que chamamos de “Pequena Crise do Recife”105
 - type: other
   date: 2002-09
   description: >-
@@ -174,7 +207,7 @@ events:
   description: Jubileu de Ouro (50 anos de sacerdócio) de Paulo Garcia celebrado em 28/2/2025
   status: probable
   sources:
-  - source: folhape-2025-garcia
+  - source: folhape-2025-garcia-jubileu
     quote: >-
       No último dia 28 de fevereiro de 2025, celebrou-se o Jubileu de Ouro do Pastor Paulo Garcia, líder e servo
       incansável da Igreja Episcopal Carismática.

@@ -5,8 +5,8 @@ events:
 - type: other
   date: '1893'
   description: >-
-    Visita do bispo George W. Peterkin (Virgínia Ocidental) em 1893: ordenação dos quatro primeiros diáconos brasileiros
-    (nomes não identificados nas fontes abertas).
+    Visita do bispo George W. Peterkin (Virgínia Ocidental) em 1893, enviado pelo Bispo Presidente: 142 confirmações,
+    ordenação dos quatro primeiros diáconos brasileiros, nomeação de comissões e designações das capelas.
   status: confirmed
   sources:
   - source: wit-1952-03-20
@@ -15,6 +15,10 @@ events:
       were ordained to the diaconate.
   - source: calvani-2005
     quote: Em 1893 foram ordenados os quatro primeiros diáconos brasileiros.
+  - source: som-1893-11
+    quote: >-
+      The Presiding Bishop has sent one of our number, the Bishop of West Virginia, to visit the missions of this
+      Church in the Republic of Brazil
   - source: wp-pt-ieab
     quote: >-
       No mesmo ano, a comunidade recebeu o bispo norte-americano George William Peterkin, que ordenou quatro diáconos.
@@ -32,6 +36,48 @@ events:
     quote: >-
       foi a vez da comunidade receber Waite Hockin Stirling, bispo das Ilhas Falkland, que ordenou os três primeiros
       presbíteros nacionais
+- type: other
+  date: '1892-05-23'
+  description: >-
+    Primeira convocação (não autorizada) da missão, Casa da Missão, Porto Alegre, 23-26/05/1892: presentes os revs.
+    Morris, Brown, Meem e Kinsolving e os catequistas Boaventura, Brande e Cabral.
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: >-
+      Presentes: reverendos Morris, Brown, Meem e Kinsolving, e catequistas Boaventura, Brande e Cabral. Presidida
+      por Kinsolving e secretariada por Cabral.
+- type: other
+  date: '1898-05-31'
+  description: >-
+    Convocação extraordinária de 31/05/1898 elege Kinsolving bispo (eleição brasileira como indicação, validada
+    pela igreja americana).
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: >-
+      Assunto: eleição de Kinsolving. A eleição dos brasileiros era apenas um indicação. Kinsolving foi oficialmente
+      eleito pela igreja americana.
+- type: other
+  date: '1936'
+  description: Destituição do Rev. Salomão Ferraz (1936) após a 'controvérsia cerimonialista'.
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: provocando uma crise que culminou na sua destituição em 1936.
+- type: other
+  date: '1907'
+  description: >-
+    Pedido do concílio de Bagé (1907) para integrar a missão à igreja americana; criação do distrito missionário
+    vinculado à Convenção Geral.
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: O Departamento de Missão cria o distrito missionário vinculado a Convenção Geral.
+  - source: kickhofel
+    quote: >-
+      Isso foi feito por um pedido, enviado em 1907, pela igreja brasileira, por decisão de um concílio realizado
+      em Bagé.
 - type: other
   date: '1907'
   description: Criação do Distrito Missionário (do Sul) do Brasil pela Convenção Geral de 1907.

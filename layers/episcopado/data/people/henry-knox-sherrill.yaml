@@ -30,12 +30,40 @@ sources:
   quote: Henry Knox Sherrill | American bishop
 ordinations:
 - order: episcopate
-  date: '1930'
+  date: '1930-10-14'
+  place: Trinity Church, Boston
   jurisdiction: tec
   office: diocesan
-  principal_consecrator: henry-st-george-tucker
-  status: probable
+  principal_consecrator: james-de-wolf-perry
+  co_consecrators:
+  - logan-herbert-roots
+  - william-lawrence
+  status: contested
   sources:
+  - source: witness-1930-10-16
+    quote: >-
+      Bishop Henry K. Sherrill was con­ secrated Bishop of Massachusetts at Trinity, Boston, on October 14th. Bishop
+      Lawrence was the preacher.
+  - source: wp-hksherrill
+    quote: '| consecrated_by = [[James De Wolf Perry]]'
+  - source: wp-lista-bispos-tec
+    quote: >-
+      bgcolor="#D4B1BB " | 372 | [[Henry Knox Sherrill]] | [[James De Wolf Perry|247]] [[William Lawrence (bishop)|171]]
+      [[Logan H. Roots (bishop)|221]] | 1930 | [[Episcopal Diocese of Massachusetts|IX Massachusetts]] | <ref group="N"
+      name="sherrill">Henry Knox Sherrill (372 & PB20) was the principal consecrator of his son Edmund Sherrill
+      (560).</ref> [[List of presiding bishops of the Episcopal Church
   - source: iab-poster-linhagem-uchoa
     quote: >-
       158c. Henry St. George Tucker (1912-1958) que, em 1930, sagrou Henry Knox Sherrill como bispo de Massachusetts.
+  discrepancies:
+  - field: principal_consecrator
+    value: henry-st-george-tucker
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        158c. Henry St. George Tucker (1912-1958) que, em 1930, sagrou Henry Knox Sherrill como bispo de Massachusetts.
+  notes: >-
+    CORRIGIDO: o pôster diz que Henry St. George Tucker sagrou Sherrill em 1930; a Wikipédia (artigo e lista de
+    sucessão) dá James De Wolf Perry (então Presiding Bishop) como sagrante principal, com William Lawrence e Logan
+    H. Roots. Data e local confirmados por fonte primária (The Witness, 16/10/1930), que não nomeia o sagrante;
+    por isso o sagrante fica "provavel". Tucker não aparece em nenhuma fonte desta sagração.

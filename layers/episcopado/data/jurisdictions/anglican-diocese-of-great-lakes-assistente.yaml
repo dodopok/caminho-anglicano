@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: anglican-diocese-of-great-lakes-assistente
+name: Anglican Diocese of the Great Lakes (bispo assistente)
+type: diocese
+relations:
+- type: part_of
+  target: acna
+  status: probable
+  sources:
+  - source: anglicanink-beckwith-acna-2014
+    quote: >-
+      At their October 10, 2014, meeting in Atlanta, Georgia, the College of Bishops of the Anglican Church in North
+      America received the Rt. Rev. Dr. Peter Beckwith.

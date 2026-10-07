@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: salomao-ferraz
+name: Salomão Ferraz
+biography: >-
+  Presbítero em São Paulo (Capela do Salvador); protagonista da 'controvérsia cerimonialista', destituído em 1936.
+sources:
+- source: kickhofel
+  quote: >-
+    em 1926, Salomão Ferraz começou a celebrar a santa comunhão todos os domingos na Capela do Salvador, em São
+    Paulo
+- source: kickhofel
+  quote: >-
+    Ferraz também começou a usar textos litúrgicos não autorizados, provocando uma crise que culminou na sua destituição
+    em 1936.
+events:
+- type: other
+  date: '1936'
+  description: Destituição do Rev. Salomão Ferraz (1936) após a 'controvérsia cerimonialista'.
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: provocando uma crise que culminou na sua destituição em 1936.

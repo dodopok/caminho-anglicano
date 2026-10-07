@@ -1,12 +1,48 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: vicente-brande
 name: Vicente Brande
-biography: Um dos quatro brasileiros que acompanharam Kinsolving e Morris a Porto Alegre em 1890.
+biography: >-
+  Catequista brasileiro que acompanhou Kinsolving e Morris a Porto Alegre em 1890; um dos quatro primeiros diáconos
+  (1893) e três primeiros presbíteros (1897) brasileiros.
 sources:
 - source: wp-en-kinsolving
   quote: >-
     accompanied by four Brazilians, of whom Vicente Brande, Antonio M. de Fraga and Americo V. Cabral would all
     serve the church for many years
+ordinations:
+- order: diaconate
+  date: '1893'
+  jurisdiction: dmsb
+  ordained_by: george-william-peterkin
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: >-
+      Ordenação de quatro diáconos: Vicente Brande, Américo Vespúcio Cabral, Antônio Machado Fraga e Boaventura
+      de Souza Oliveira.
+  - source: wit-1952-03-20
+    quote: >-
+      the visit of Bishop Peterkin in 1893 when almost one hun- dred and fifty persons were confirmed and four Brazilians
+      were ordained to the diaconate.
+  - source: wp-en-kinsolving
+    quote: >-
+      West Virginia's bishop George Peterkin made an episcopal visit in 1893, during which he ordained four Brazilians
+      as deacons
+  notes: >-
+    Fato (4 diáconos por Peterkin em 1893) confirmado por várias fontes; o nome deste ordenando consta só em Kickhofel.
+- order: presbyterate
+  date: '1897'
+  jurisdiction: dmsb
+  ordained_by: waite-hockin-stirling
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: 'Ordenação dos três primeiros presbíteros: Cabral, Brande e Fraga.'
+  - source: wp-en-kinsolving
+    quote: >-
+      Bishop Stirling ordained three of the Brazilian deacons to the priesthood (Peterkin having deposed the fourth).
+  notes: >-
+    Stirling, bispo das Falkland (Igreja da Inglaterra), agiu a pedido de Peterkin. Nomes só em Kickhofel.
 events:
 - type: other
   date: '1890-06-01'
@@ -19,3 +55,34 @@ events:
     quote: The young Americans arrived at Porto Alegre on April 21, 1890, accompanied by four Brazilians
   - source: wp-en-ieab
     quote: where they held the first Anglican Mass in Portuguese on 1 June 1890.
+- type: other
+  date: '1893'
+  description: >-
+    Visita do bispo George W. Peterkin (Virgínia Ocidental) em 1893, enviado pelo Bispo Presidente: 142 confirmações,
+    ordenação dos quatro primeiros diáconos brasileiros, nomeação de comissões e designações das capelas.
+  status: confirmed
+  sources:
+  - source: wit-1952-03-20
+    quote: >-
+      the visit of Bishop Peterkin in 1893 when almost one hun- dred and fifty persons were confirmed and four Brazilians
+      were ordained to the diaconate.
+  - source: calvani-2005
+    quote: Em 1893 foram ordenados os quatro primeiros diáconos brasileiros.
+  - source: som-1893-11
+    quote: >-
+      The Presiding Bishop has sent one of our number, the Bishop of West Virginia, to visit the missions of this
+      Church in the Republic of Brazil
+  - source: wp-pt-ieab
+    quote: >-
+      No mesmo ano, a comunidade recebeu o bispo norte-americano George William Peterkin, que ordenou quatro diáconos.
+- type: other
+  date: '1892-05-23'
+  description: >-
+    Primeira convocação (não autorizada) da missão, Casa da Missão, Porto Alegre, 23-26/05/1892: presentes os revs.
+    Morris, Brown, Meem e Kinsolving e os catequistas Boaventura, Brande e Cabral.
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: >-
+      Presentes: reverendos Morris, Brown, Meem e Kinsolving, e catequistas Boaventura, Brande e Cabral. Presidida
+      por Kinsolving e secretariada por Cabral.

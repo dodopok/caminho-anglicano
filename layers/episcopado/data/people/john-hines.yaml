@@ -29,15 +29,45 @@ sources:
     he was formerly rector.
 ordinations:
 - order: episcopate
-  date: '1945'
+  date: '1945-10-18'
+  place: Christ Church, Houston, Texas
   jurisdiction: tec
   office: coadjutor
-  principal_consecrator: henry-knox-sherrill
-  status: probable
+  principal_consecrator: henry-st-george-tucker
+  co_consecrators:
+  - clinton-simon-quin
+  - karl-morgan-block
+  status: contested
   sources:
+  - source: witness-1945-11-01
+    quote: >-
+      The Presiding Bishop was the consecrator with Bishop Quin of Texas and Bishop Block of California the co-consecrators.
+  - source: witness-1945-11-01
+    quote: >-
+      The Rev. John E. Hines was consecrated bishop coadjutor of Texas on October 18th at Christ Church here where
+      he was formerly rector.
+  - source: wp-hines
+    quote: '| consecrated_by      = [[Henry St. George Tucker (bishop)|Henry St. George Tucker]]'
+  - source: wp-lista-bispos-tec
+    quote: >-
+      bgcolor="#D4B1BB " | 461 | [[John E. Hines]] | [[Henry St. George Tucker (bishop)|258]] [[Clinton S. Quin|297]]
+      [[Karl M. Block|411]] | 1945 | [[Episcopal Diocese of Texas|IV Texas]] | [[List of presiding bishops of the
+      Episcopal Church in the United States of America|PB22]]
   - source: iab-poster-linhagem-uchoa
     quote: >-
       159c. Henry Knox Sherrill (1930-1958) que, em 1945, sagrou John Elbridge Hines como bispo coadjutor do Texas.
+  discrepancies:
+  - field: principal_consecrator
+    value: henry-knox-sherrill
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        159c. Henry Knox Sherrill (1930-1958) que, em 1945, sagrou John Elbridge Hines como bispo coadjutor do Texas.
+  notes: >-
+    CORRIGIDO: o pôster diz que Henry Knox Sherrill sagrou Hines em 1945; a fonte primária (The Witness, 1/11/1945)
+    diz que o sagrante foi "The Presiding Bishop" — em outubro de 1945 o Presiding Bishop era Henry St. George Tucker
+    (1938–1946, cf. wp-tucker) —, com Quin (Texas) e Block (Califórnia) como co-sagrantes. A Wikipédia nomeia Tucker
+    explicitamente. Sherrill não aparece.
 events:
 - type: other
   date: '1965-04-25'

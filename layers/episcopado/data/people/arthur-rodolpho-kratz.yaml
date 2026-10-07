@@ -29,12 +29,15 @@ ordinations:
   place: Catedral da Santissima Trindade, Porto Alegre
   jurisdiction: ieab
   office: diocesan
-  status: probable
+  status: confirmed
   sources:
   - source: costa2021
     quote: >-
       o reverendo Arthur Rodolpho Kratz72 foi eleito bispo para a Diocese Meridional, sendo sagrado na Catedral
       da Santíssima Trindade, em Porto Alegre.
+  - source: ens-72149
+    quote: >-
+      He was ordained a priest in 1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
   notes: Ano inferido de "No mesmo ano" (1971, morte de Krischke). Sagrantes nao informados.
 affiliations:
 - jurisdiction: ieab
@@ -55,7 +58,8 @@ affiliations:
 - jurisdiction: ieab
   role: primate
   start: '1972'
-  end: '1984'
+  end: 1984-03
+  end_reason: death
   status: confirmed
   sources:
   - source: costa2021
@@ -64,3 +68,12 @@ affiliations:
       do Brasil.
   - source: wp-en-ieab
     quote: Arthur Rodolpho Kratz, 1972—1984
+  - source: ens-72149
+    quote: >-
+      has been elected the second Primate of the Episcopal Church of Brazil (Igreja Episcopal do Brasil). He succeeded
+      the Most Rev. Egmont Machado Krischke, who died a few months ago.
+  - source: ens-84063
+    quote: >-
+      The Most Rev. Arthur Kratz, Bispo Primaz of the Episcopal Church of Brazil since 1972, died here after a series
+      of heart attacks. He was 62.
+  notes: Morreu no cargo (noticia ENS de 22/03/1984).

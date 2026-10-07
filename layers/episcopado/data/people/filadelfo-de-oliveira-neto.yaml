@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: filadelfo-de-oliveira-neto
+name: Filadelfo de Oliveira Neto
+affiliations:
+- jurisdiction: ieab
+  role: bishop
+  diocese: ieab-diocese-recife
+  start: 2005-02
+  status: probable
+  sources:
+  - source: alc-2005-03-06
+    quote: Bishop Oliveira Neto, recognized by the hierarchy as the head of Recife
+  notes: >-
+    Autoridade eclesiástica nomeada pelo primaz para a Diocese do Recife durante a crise de 2005; depois bispo emérito
+    ativo na diocese (pregou em ordenações de 2020–2023). Fim do papel: eleição de Sebastião Gameleira (data não
+    verificada aqui).
+events:
+- type: other
+  date: 2005-02
+  description: >-
+    O primaz da IEAB, Orlando Santos de Oliveira, suspende preventivamente o bispo Robinson Cavalcanti e nomeia
+    o bispo Filadelfo de Oliveira Neto autoridade eclesiástica da Diocese do Recife; em 26/02/2005 um concílio extraordinário
+    da diocese (38 presbíteros presentes) reconhece Cavalcanti como diocesano em pleno exercício
+  status: probable
+  sources:
+  - source: alc-2005-03-06
+    quote: >-
+      An Extraordinary Council Session of the Anglican Diocese of Recife, meeting in this capital in the state of
+      Pernambuco last February 26, unanimously agreed to recognize Edward Robinson de Barros Cavalcanti as diocesan
+      bishop in full exercise of his ministry.
+  - source: alc-2005-03-06
+    quote: >-
+      to preventively suspend Cavalcanti, adopted four days earlier in an Extraordinary Council and to name Bishop
+      Filadelfo de Oliveira Neto as Church authority for this diocese in eastern Brazil.
+  - source: alc-2005-03-06
+    quote: A total of 38 priests, 58 lay delegates and 15 observers participated in the Extraordinary Council

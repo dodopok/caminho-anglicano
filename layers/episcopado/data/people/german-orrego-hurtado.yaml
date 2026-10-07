@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: german-orrego-hurtado
+name: Germán Orrego-Hurtado
+biography: >-
+  Bispo ordinário da Diocese de Nova Granada (ACC), cuja área inclui o Brasil; sagrado em 17/10/2010 segundo a ACC
+  (10º aniversário em 2020).
+sources:
+- source: acc-administration
+  quote: The Right Reverend German Orrego-Hurtado, Bishop Ordinary
+- source: acc-newgranada-25anos
+  quote: Bishop Orrego, who will be celebrating the 10th anniversary of his consecration on October 17th.
+ordinations:
+- order: episcopate
+  date: '2010-10-17'
+  jurisdiction: acc
+  status: probable
+  sources:
+  - source: acc-newgranada-25anos
+    quote: >-
+      This growth has in large part been due to the leadership of Bishop Orrego, who will be celebrating the 10th
+      anniversary of his consecration on October 17th.
+  notes: 'Data inferida: 10º aniversário em 17/10/2020 ⇒ sagração em 17/10/2010. Sagrantes não informados.'
+affiliations:
+- jurisdiction: acc
+  role: diocesan_bishop
+  diocese: diocese-of-new-granada-colombia-venezuela-chile-brasil
+  status: confirmed
+  sources:
+  - source: acc-administration
+    quote: Diocese of New Granada The Right Reverend German Orrego-Hurtado, Bishop Ordinary
