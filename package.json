@@ -19,7 +19,10 @@
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:headed": "playwright test --headed",
     "test:e2e:chromium": "playwright test --project=chromium",
-    "test:all": "pnpm test:run && pnpm test:e2e"
+    "test:all": "pnpm test:run && pnpm test:e2e",
+    "episcopado:validate": "tsx layers/episcopado/scripts/validate.ts",
+    "episcopado:search": "tsx layers/episcopado/scripts/search.ts",
+    "episcopado:schemas": "tsx layers/episcopado/scripts/schemas.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.81.1",
@@ -35,6 +38,7 @@
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
     "xml2js": "^0.6.2",
+    "yaml": "^2.9.1",
     "zod": "^4.1.12"
   },
   "devDependencies": {
@@ -56,6 +60,7 @@
     "happy-dom": "^20.0.10",
     "playwright-core": "^1.56.1",
     "tailwindcss": "^3.4.18",
+    "tsx": "^4.23.15",
     "typescript": "^5.7.2",
     "unplugin-auto-import": "^20.2.0",
     "vitest": "^4.0.9",

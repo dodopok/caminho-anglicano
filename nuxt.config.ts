@@ -30,7 +30,8 @@ export default defineNuxtConfig({
     './layers/dashboard',
     './layers/admin',
     './layers/doacoes',
-    './layers/ordo'
+    './layers/ordo',
+    './layers/episcopado'
   ],
 
   typescript: {
