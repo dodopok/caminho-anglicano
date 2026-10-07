@@ -1,14 +1,19 @@
 <template>
-  <span
-    v-if="status !== 'confirmed'"
-    class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium"
-    :class="status === 'contested' ? 'bg-red-50 text-red-700 ring-1 ring-red-200' : 'bg-stone-100 text-stone-600 ring-1 ring-stone-200'"
-    :title="status === 'contested' ? 'As fontes divergem; veja as versões abaixo.' : 'Sustentado por uma única fonte secundária ou testemunho.'"
-  >{{ STATUS_LABEL[status] }}</span>
+  <EpiscopadoTip v-if="status !== 'confirmed' || showConfirmed" :title="STATUS_LABEL[status]" :text="STATUS_DESCRIPTION[status]">
+    <span
+      class="inline-flex items-center gap-1 rounded-full px-1.5 py-px text-[11px] font-medium leading-4 ring-1 whitespace-nowrap cursor-help"
+      :class="STATUS_STYLE[status].badge"
+    >
+      <span aria-hidden="true" class="font-bold">{{ STATUS_STYLE[status].glyph }}</span>
+      <span>{{ STATUS_LABEL[status] }}</span>
+    </span>
+  </EpiscopadoTip>
 </template>
 
 <script setup lang="ts">
-import { STATUS_LABEL } from '../../lib/labels'
+import { STATUS_DESCRIPTION, STATUS_LABEL } from '../../lib/labels'
+import { STATUS_STYLE } from '../../lib/style'
 
-defineProps<{ status: keyof typeof STATUS_LABEL }>()
+/** Selo de status de uma afirmação, com explicação ao passar o mouse ou focar. */
+withDefaults(defineProps<{ status: keyof typeof STATUS_LABEL; showConfirmed?: boolean }>(), { showConfirmed: true })
 </script>
