@@ -68,12 +68,23 @@ relations:
     quote: André Novaes de Albuquerque Cavalcanti (2009)
 - type: part_of
   target: iacs
-  status: probable
+  date: c.2007
+  status: contested
   sources:
-  - source: blog-betesda-2009-10
+  - source: tlc-2012-02-27
     quote: >-
-      Dom Robinson Cavalcanti veio acompanhado do secretário administrativo da diocese, Rev. Hermany Soares e do
-      presidente do Conselho Diocesano, Rev. Maurício Amazonas.
+      Two years later, the Southern Cone province designated the Anglican Diocese of Recife as an extra-territorial
+      diocese of the Church of the Province of the Southern Cone.
+  - source: acl-2010-01-10-doubles
+    quote: >-
+      the Diocese of Recife, under the Primatial Authority of the Anglican Church of the Southern Cone of America,
+      continues to grow.
+  - source: ta-2008-04-10-ieab-bishops
+    quote: >-
+      What at the beginning of those regrettable events of the schism in Recife was seen as a pastoral care provision
+      for the deposed bishop and those who followed him, has become a formal primatial reception of those deposed.
+  - source: aac-2015-12-08
+    quote: One of the new Deacons is Eric.
   - source: iab-poster-linhagem-uchoa
     quote: >-
       163f. Evilásio Tenório da Silva Júnior (2012) que, em 2012, assumiu como primaz interino da Diocese do Recife
@@ -82,7 +93,24 @@ relations:
     quote: >-
       Em 2005, Robinson Cavalcanti liderou a separação definitiva da Diocese do Recife da IEAB, vinculando-se ao
       Cone Sul.
-  date: '2005'
+  notes: >-
+    Data só aproximada ('two years later' após 2005). Fontes posteriores divergem sobre o vínculo ter sido de fato
+    provincial: pt-wiki diz que Robinson 'tentou filiar' a diocese ao Cone Sul; Atwood (dez/2015) diz 'Lacking a
+    Provincial affiliation'.
+  discrepancies:
+  - field: date
+    value: '2005'
+    sources:
+    - source: aac-2015-12-08
+      quote: One of the new Deacons is Eric.
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        163f. Evilásio Tenório da Silva Júnior (2012) que, em 2012, assumiu como primaz interino da Diocese do Recife
+        - Cone Sul, até a eleição de Miguel Uchoa
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Em 2005, Robinson Cavalcanti liderou a separação definitiva da Diocese do Recife da IEAB, vinculando-se
+        ao Cone Sul.
 - type: schism_from
   target: ieab
   date: '2005'
@@ -98,7 +126,7 @@ relations:
     quote: >-
       In 2004 the Diocese of Recife led by its bishop, the Rt. Rev. Robinson Cavalcanti, withdrew from the Anglican
       Episcopal Church of Brazil
-  - source: wp-en-acb
+  - source: wp-en-iab
     quote: >-
       The church had its origin in a 2005 split in which the Diocese of Recife, led by Robinson Cavalcanti, left
       the Anglican Episcopal Church of Brazil
@@ -111,26 +139,34 @@ relations:
     em 2005 (declaração 25/01/2005, exclusão 10/06/2005).
 - type: recognized_by
   target: iacs
-  date: '2005'
-  end: '2018-05-12'
+  date: '2005-09-24'
   led_by:
   - gregory-venables
-  status: probable
+  status: confirmed
   sources:
+  - source: acns-4040-2005-venables
+    quote: >-
+      I am issuing this statement of support to continue to recognize these ordinations and ministries, and provide
+      a special status of extra-provincial recognition by my office as Primate of the Southern Cone
+  - source: tlc-2012-02-27
+    quote: >-
+      In 2005, Presiding Bishop Gregory Venables of the Anglican Church of the Southern Cone extended his personal
+      primatial oversight to Bishop Cavalcanti and 40 priests of the Diocese of Recife after they were deposed.
   - source: ai-recife-forms-iab
     quote: >-
       The Primate of the Anglican Church of the Southern Cone, the Most Rev. Gregory Venables provided archiepiscopal
-      oversight for the diocese, and in 2008 the newly formed GAFCON movement extended its oversight to the diocese.
-  - source: virtueonline-2026-08-25
-    quote: placed himself under the primatial oversight of Archbishop Gregory Venables of the Southern Cone.
+      oversight for the diocese
   notes: >-
-    Natureza exata do vínculo com o Cone Sul (supervisão primacial pessoal vs. diocese extraterritorial da província)
-    ainda a precisar; ver dúvidas.
+    Carta de Venables de 24/09/2005 (ACNS 4040, 03/10/2005): 'extra-provincial recognition' pelo seu ofício de primaz,
+    provisória ('until such time as the Panel of Reference ... has ... addressed this crisis'). A Living Church
+    (2012) diz que 'two years later' (c. 2007) o Cone Sul designou a diocese como 'extra-territorial diocese'; ver
+    vínculo seguinte. Fim do vínculo não documentado: em dez/2015 Atwood escreve que a diocese estava sem filiação
+    provincial, sob o Conselho de Primazes do GAFCON.
 - type: recognized_by
   target: gafcon
   date: '2008'
   end: '2018-05-12'
-  status: confirmed
+  status: contested
   sources:
   - source: ai-recife-received-gafcon
     quote: >-
@@ -138,5 +174,27 @@ relations:
       2008.
   - source: ai-recife-forms-iab
     quote: in 2008 the newly formed GAFCON movement extended its oversight to the diocese.
+  - source: aac-2015-12-08
+    quote: >-
+      Lacking a Provincial affiliation after being booted from IEAB, the Diocese is under the oversight of the GAFCON
+      Primates Council.
+  - source: gafcon-2017-anglican-renewal
+    quote: >-
+      The GAFCON Primates have authorized Bishop Miguel Uchoa to provide episcopal oversight throughout central
+      and northern South America for Anglican churches who are unable to continue as part of revisionist dioceses.
   notes: >-
     A frase entre aspas na Anglican Ink de 21/04/2018 é citação do comunicado dos primazes do GAFCON (Entebbe).
+    Complementa a relação de 2008: em dez/2015 a diocese estava sob supervisão do Conselho de Primazes do GAFCON,
+    sem filiação provincial (registra o fim prático do vínculo com o Cone Sul, data não documentada).
+  discrepancies:
+  - field: date
+    value: '2015'
+    sources:
+    - source: aac-2015-12-08
+      quote: >-
+        Lacking a Provincial affiliation after being booted from IEAB, the Diocese is under the oversight of the
+        GAFCON Primates Council.
+    - source: gafcon-2017-anglican-renewal
+      quote: >-
+        The GAFCON Primates have authorized Bishop Miguel Uchoa to provide episcopal oversight throughout central
+        and northern South America for Anglican churches who are unable to continue as part of revisionist dioceses.

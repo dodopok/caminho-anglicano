@@ -5,7 +5,10 @@ type: diocese
 relations:
 - type: part_of
   target: iaob
-  status: probable
+  status: confirmed
   sources:
+  - source: blog-josue-2006-11
+    quote: >-
+      Igreja Anglicana Ortodoxa – IAO (Comunhão Anglicana Ortodoxa): Rev. Hermany Soares, Rev. Adriano Oliveira
   - source: blog-joaodeca-2007-05
     quote: Rev. Hermany Soares+ (Paróquia Cristo Redentor)

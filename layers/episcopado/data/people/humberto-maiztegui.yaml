@@ -1,5 +1,56 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: humberto-maiztegui
 name: Humberto Maiztegui
+full_name: Humberto Eugenio Maiztegui Gonçalves
 aliases:
+- Humberto Eugenio Maiztegui Goncalves
+- Humberto Eugenio Maiztegui Gonçalves
 - Humberto Maiztegui Gonçalves
+birth:
+  date: '1964-12-06'
+  sources:
+  - source: costa2021
+    quote: Humberto Eugenio Maiztegui Gonçalves nasceu em Montevideu, Uruguai, em 6 de dezembro de
+wikidata: Q113718052
+biography: Nascido em Montevideu; coadjutor (2012) e bispo da Diocese Meridional (2013-).
+sources:
+- source: costa2021
+  quote: Humberto Eugenio Maiztegui Gonçalves nasceu em Montevideu, Uruguai, em 6 de dezembro de
+ordinations:
+- order: episcopate
+  date: '2012-12-09'
+  place: Catedral Nacional da Santissima Trindade, Porto Alegre
+  jurisdiction: ieab
+  office: coadjutor
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Sua sagração ocorreu no dia 09 de dezembro de 2012, na Catedral Nacional da Santíssima Trindade de Porto Alegre,
+      que contou com a participação de inúmeros bispos nacionais e de outros países.
+  notes: >-
+    Eleito bispo coadjutor da Diocese Meridional em 20/10/2012 (120o Concilio); primeiro nativo do Uruguai bispo
+    na IEAB.
+affiliations:
+- jurisdiction: ieab
+  role: coadjutor_bishop
+  diocese: diocese-meridional
+  start: '2012-12-09'
+  end: '2013-05-05'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      No dia 20 de outubro de 2012, durante a reunião do 120º Concílio da Diocese Meridional, foi eleito o novo
+      bispo coadjutor
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-meridional
+  start: '2013-05-05'
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      A instituição como Bispo Diocesano aconteceu no dia 05 de maio de 2013, no encerramento do 121º Concílio Diocesano.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. Humberto Maiztegui Gonçalves

@@ -1,11 +1,11 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: josep-rossello-ferrer
 name: Josep Rosselló Ferrer
-full_name: Josep M. Rosselló-Ferrer
+full_name: Josep Miquel Rosselló Ferrer
 aliases:
 - +Josep
 - Bp Josep Rossello
-- Josep M. Rosselló-Ferrer
+- Josep Miquel Rosselló Ferrer
 - Josep Rosello
 - Josep Rossello
 - Joseph Rosselo
@@ -13,7 +13,9 @@ aliases:
 biography: >-
   Bispo espanhol (natural de Benissa) que serviu 12 anos no Brasil, supervisionando a IARB e depois a Diocese da
   América do Sul da FCE; primaz eleito da IARB em 2012; depois Servant General da NAMS (2023) e ligado à Anglican
-  Convocation in Europe (2025).
+  Convocation in Europe (2025). Segundo Costa (2021), começou na IERE (Igreja Espanhola Reformada Episcopal, Comunhão
+  Anglicana) e foi sagrado bispo missionário na 'Igreja Evangélica Episcopal' (aparentemente o ambiente CEEC/EEC);
+  a FCE o sagrou (de novo) em 28/9/2014.
 sources:
 - source: ai-2021-fce-withdraw
   quote: >-
@@ -22,17 +24,59 @@ sources:
   quote: >-
     having served for 12 years in Brazil where they planted a diocese that began with 2 couples and grew to include
     28 churches and missions in Brazil and Venezuela
+- source: costa-2021-tese
+  quote: >-
+    Posteriormente saiu da IERE, filiandose à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
+ordinations:
+- order: episcopate
+  date: '2014-09-28'
+  jurisdiction: ceec
+  office: missionary
+  principal_consecrator: john-fenwick
+  co_consecrators:
+  - gerhard-meyer
+  - paul-nigel-hunt
+  status: contested
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      Posteriormente saiu da IERE, filiandose à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
+  - source: enwiki-rec-bispos
+    quote: >-
+      |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
+      Diocese|South America]]||
+  discrepancies:
+  - field: jurisdiction
+    value: fce
+    sources:
+    - source: enwiki-rec-bispos
+      quote: >-
+        |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
+        Diocese|South America]]||
+  notes: >-
+    Data não informada; o site da CICEB já o chama 'Bispo Joseph Rosselo' em jan/2004, o que sugere sagração até
+    2004. 'Igreja Evangélica Episcopal' é o nome que Costa e Cavalcanti também usam para a comunhão à qual Leonides
+    se filiou (CEEC), mas a identidade exata não está estabelecida. Na lista, nº 68 = John R. K. Fenwick (Bishop
+    Primus da FCE), 67 = Paul Nigel Hunt (FCE), 69 = Gerhard Meyer (REC, Alemanha). A ordem dos números sugere Fenwick
+    como principal, sem confirmação. A fonte citada pela Wikipédia é o Journal do 55º Conselho Geral da REC (2017),
+    não consultado. Há sagração anterior na 'Igreja Evangélica Episcopal' (Costa 2021); a de 2014 seria ressagração
+    ou sagração sub conditione, mas nenhuma fonte usa esse termo.
 affiliations:
 - jurisdiction: iarb
   role: primate
   start: 2012-04
-  end: '2021'
+  end: 2021-05
+  end_reason: resignation
   status: probable
   sources:
   - source: ptwiki-iarb
     quote: sendo eleito assim Josep Rossello, como o novo bispo primaz da IARB.
   - source: christiantoday-2014-fce
     quote: The Right Reverend Josep Rossello, the bishop overseeing the IARB
+  - source: costa-2021-tese
+    quote: Em abril de 2012, o bispo missionário Josep Rossello foi eleito como o novo bispo da instituição.
+  - source: costa-2021-tese
+    quote: permanecendo no cargo até maio de 2021, quando apresentou a sua renúncia como bispo e membro da FCE.
   notes: >-
     Data e sagrantes de sua sagração episcopal não encontrados; o site da CICEB já o chama de 'Bispo' em jan/2004.
     Após 2021 seguiu em outros ministérios (NAMS, Inglaterra, Espanha).

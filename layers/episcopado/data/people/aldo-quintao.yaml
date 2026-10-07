@@ -1,3 +1,11 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: aldo-quintao
 name: Aldo Quintao
+affiliations:
+- jurisdiction: manb
+  role: clergy
+  start: '2013'
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: a Catedral Anglicana de São Paulo continua sendo liderada pelo seu deão, o reverendo Aldo

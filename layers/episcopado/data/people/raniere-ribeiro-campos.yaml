@@ -3,12 +3,25 @@ id: raniere-ribeiro-campos
 name: Raniere Ribeiro Campos
 ordinations:
 - order: episcopate
-  date: '2010'
+  date: '2010-06-10'
   jurisdiction: iecb
-  status: probable
+  status: confirmed
   sources:
   - source: ptwiki-iecb
     quote: Raniere Ribeiro Campos (2010)
+  - source: costa-2021-tese
+    quote: Raniere Ribeiro Campos, em 10 de junho de 2010
   notes: >-
-    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
-    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso.
+    Data completa segundo Costa (2021, p. 245); ano confirmado pela Wikipédia PT. Sagrantes não informados; sucessão
+    via Paulo Garcia/ICCEC.
+affiliations:
+- jurisdiction: iecb
+  role: bishop
+  end_reason: left
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      alguns bispos saíram da denominação por divergências com a liderança de Paulo, como Raniere Campos, Marcos
+      Cephas e Roberto Schuller, que se filiaram a outras igrejas.
+  notes: Data de saída não informada (antes de 2021).

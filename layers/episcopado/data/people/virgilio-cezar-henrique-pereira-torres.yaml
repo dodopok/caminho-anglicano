@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: virgilio-cezar-henrique-pereira-torres
+name: Virgílio Cezar Henrique Pereira Torres
+full_name: Virgílio Cezar Henrique Pereira Torres
+aliases:
+- Dom Virgílio Cezar Torres
+- Dom Virgílio Torres
+- Rev. Virgílio Torres
+- Virgilio Cezar
+- Virgílio Cezar
+- Virgílio César
+biography: >-
+  Clérigo nascido em Santos/SP, residente em Ribeirão Preto/SP, professor de Português/Literatura. Em 2006-2007
+  aparece como "colaborador fraterno" da IAOB (com Hermany Soares); foi clérigo da Igreja Anglicana Reformada do
+  Brasil (IARB), da qual saiu para fundar a Igreja Episcopal Protestante (dez/2011, ligada a uma "PECUSA"); hoje
+  é Bispo Moderador (Presidente) da Igreja Anglicana Unida – Província da América do Sul e Bispo do Sínodo do Brasil,
+  vinculada à Free Protestant Episcopal Church of England, e reitor da Comunidade da Reconciliação (Ribeirão Preto).
+sources:
+- source: iau-clero
+  quote: >-
+    Dom Virgilio Cezar Henrique Pereira Torres Bispo Moderador da IGREJA ANGLICANA UNIDA - PROVÍNCIA DA AMÉRICA
+    DO SUL e Bispo do Sínodo do Brasil
+- source: iau-clero
+  quote: Dom Virgilio nasceu em Santos - SP, mas mora no interior desde criança. Tem 33 anos de ministério
+- source: yt-iau-canal
+  quote: Dom Virgílio Cezar Torres é Teólogo, Bispo, Pregador e Reitor da Comunidade da Reconciliação
+affiliations:
+- jurisdiction: iaob
+  role: other
+  role_description: colaborador fraterno
+  start: '2006'
+  end: '2007'
+  status: confirmed
+  sources:
+  - source: blog-josue-2006-11
+    quote: 'Reverendos: Flávio Conti e Virgílio Torres (cooperadores fraternos)'
+  - source: blog-joaodeca-2007-05
+    quote: Rev. Virgílio Torres+ (colaborador fraterno)
+  notes: >-
+    Identificação "Rev. Virgílio Torres" = Virgílio Cezar Henrique Pereira Torres é provável (mesmo nome e meio
+    anglicano independente), não comprovada literalmente. Já era "Rev." em 2006; ordenante e data não encontrados.
+- jurisdiction: iep
+  role: founder
+  start: 2011-12
+  end: 2012-03
+  status: contested
+  sources:
+  - source: blog-iep-2013
+    quote: >-
+      A Igreja Episcopal Protestante teve um breve vida entre dezembro de 2011 e Março de 2012, estando afiliada
+      a PECUSA.
+  notes: >-
+    Contestado: a fonte (perfil "Igreja Anglicana Reformada") diz que a IEP acabou em mar/2012, mas um site Google
+    "Sínodo do Brasil" (visto só em snippet; hoje privado) o chamava de "Bispo Moderador (Presidente) da Igreja
+    Episcopal Protestante", sugerindo que a IEP continuou e depois virou o Sínodo do Brasil da IAU.
+- jurisdiction: iarb
+  role: clergy
+  end: 2011-12
+  end_reason: left
+  status: probable
+  sources:
+  - source: blog-iep-2013
+    quote: >-
+      A igreja foi foi fundada pelo Rev. Virgílio Cezar Henrique Pereira Torres quando saio da Igreja Anglicana
+      Reformada do Brasil.
+  notes: Fonte única, postada por perfil ligado à IARB.
+- jurisdiction: iau
+  role: primate
+  diocese: sinodo-do-brasil-comunidade-da-reconciliacao-ribeirao-preto-sp
+  status: confirmed
+  sources:
+  - source: iau-clero
+    quote: >-
+      Dom Virgilio Cezar Henrique Pereira Torres Bispo Moderador da IGREJA ANGLICANA UNIDA - PROVÍNCIA DA AMÉRICA
+      DO SUL e Bispo do Sínodo do Brasil Reitor da Comunidade da Reconciliação em Ribeirão Preto - SP
+  - source: yt-iau-canal
+    quote: É o Bispo Presidente da Igreja Anglicana Unida - Provincia da América do Sul
+  notes: >-
+    Papel: "Bispo Moderador"/"Bispo Presidente". Sagração episcopal (data, sagrantes) NÃO encontrada; candidato
+    óbvio seria a FPEC (Ricardo Lorite de Lima), mas sem fonte.

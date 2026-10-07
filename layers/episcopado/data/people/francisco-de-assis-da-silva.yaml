@@ -1,12 +1,44 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: francisco-de-assis-da-silva
 name: Francisco de Assis da Silva
+full_name: Francisco de Assis da Silva
+aliases:
+- Dom Francisco de Assis
+- Francisco Silva
+- Francisco de Assis Silva
+birth:
+  date: '1959-09-05'
+  sources:
+  - source: costa2021
+    quote: Natural de Olinda, Francisco de Assis da Silva nasceu em 05 de setembro de 1959.
+wikidata: Q21020053
+biography: Secretario-geral (2006-2011); bispo da Diocese Sul-Ocidental (2011-); primaz (2013-2018).
+sources:
+- source: costa2021
+  quote: Natural de Olinda, Francisco de Assis da Silva nasceu em 05 de setembro de 1959.
 ordinations:
+- order: diaconate
+  date: 1991-01
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: ihu-2017-francisco
+    quote: Em janeiro de 1991 foi ordenado diácono e, em dezembro do mesmo ano, presbítero.
+  notes: >-
+    Natural de Olinda; formado no Seminário Batista do Nordeste e no Seminário Anglicano de Recife — presumivelmente
+    ordenado na Diocese do Recife (não dito). Depois bispo da Diocese Sul-Ocidental (2011) e primaz da IEAB (2013).
+- order: presbyterate
+  date: 1991-12
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: ihu-2017-francisco
+    quote: Em janeiro de 1991 foi ordenado diácono e, em dezembro do mesmo ano, presbítero.
 - order: episcopate
   date: '2011-03-20'
-  place: Catedral do Mediador, Santa Maria (RS)
+  place: Catedral Anglicana do Mediador, Santa Maria (RS)
   jurisdiction: ieab
-  office: coadjutor
+  office: suffragan
   principal_consecrator: mauricio-andrade
   co_consecrators:
   - almir-dos-santos
@@ -19,19 +51,60 @@ ordinations:
   - orlando-santos-de-oliveira
   - renato-da-cruz-raatz
   - roger-douglas-bird
-  - saulo-mauricio-de-barros
+  - saulo-barros
   - sebastiao-gameleira
-  status: probable
+  status: contested
   sources:
+  - source: dap-2011-francisco-sagr
+    quote: >-
+      Os sinos da Catedral Anglicana do Mediador, em Santa Maria, anunciaram na manhã do dia 20 de março que mais
+      um Bispo estava sendo sagrado para servir a Diocese Sul Ocidental
+  - source: dap-2011-francisco-sagr
+    quote: O Bispo Primaz da IEAB, Dom Maurício Andrade, presidiu a Cerimônia de Sagração
   - source: costa2021
     quote: >-
       O ofício de sagração ocorreu no dia 20 de março de 2011, na Catedral do Mediador, em Santa Maria, com a presença
       de todos os bispos em atividade no Brasil e outros convidados111.
   - source: costa2021
     quote: Estiveram presentes Maurício Andrade, Bispo Primaz e da Diocese de Brasília, que presidiu a
+  - source: ihu-francisco-2011
+    quote: >-
+      A cerimônia de sagração, presidida pelo primaz da Igreja Episcopal Anglicana do Brasil (IEAB), dom Maurício
+      Andrade , contou com a presença do presidente do Conselho Latino-Americano de Igrejas (Clai), bispo panamenho
+      Julio Murray
+  discrepancies:
+  - field: place
+    value: Catedral do Mediador, Santa Maria (RS)
+    sources:
+    - source: costa2021
+      quote: >-
+        O ofício de sagração ocorreu no dia 20 de março de 2011, na Catedral do Mediador, em Santa Maria, com a
+        presença de todos os bispos em atividade no Brasil e outros convidados111.
+    - source: costa2021
+      quote: Estiveram presentes Maurício Andrade, Bispo Primaz e da Diocese de Brasília, que presidiu a
+    - source: ihu-francisco-2011
+      quote: >-
+        A cerimônia de sagração, presidida pelo primaz da Igreja Episcopal Anglicana do Brasil (IEAB), dom Maurício
+        Andrade , contou com a presença do presidente do Conselho Latino-Americano de Igrejas (Clai), bispo panamenho
+        Julio Murray
+  - field: office
+    value: coadjutor
+    sources:
+    - source: costa2021
+      quote: >-
+        O ofício de sagração ocorreu no dia 20 de março de 2011, na Catedral do Mediador, em Santa Maria, com a
+        presença de todos os bispos em atividade no Brasil e outros convidados111.
+    - source: costa2021
+      quote: Estiveram presentes Maurício Andrade, Bispo Primaz e da Diocese de Brasília, que presidiu a
+    - source: ihu-francisco-2011
+      quote: >-
+        A cerimônia de sagração, presidida pelo primaz da Igreja Episcopal Anglicana do Brasil (IEAB), dom Maurício
+        Andrade , contou com a presença do presidente do Conselho Latino-Americano de Igrejas (Clai), bispo panamenho
+        Julio Murray
   notes: >-
-    Eleito bispo coadjutor da Diocese Sul-Ocidental em 25/10/2010. A tese lista os bispos "presentes" (nao necessariamente
-    todos impuseram as maos).
+    Eleito bispo coadjutor da Diocese Sul-Ocidental em 25/10/2010 (sucessor de Jubal Neves). Ano 2011 pela data/URL
+    da publicação (uploads/2011/03). Eleito bispo coadjutor da Diocese Sul-Ocidental em 25/10/2010. A tese lista
+    os bispos "presentes" (nao necessariamente todos impuseram as maos).
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
@@ -69,3 +142,16 @@ affiliations:
   - source: costa2021
     quote: 2017-2018 – Francisco de Assis da Silva (Interino)
   notes: So Costa Anexo D; a IEAB diz que Irala ficou ate 2021.
+- jurisdiction: ieab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: ieab-2004-carta-aberta-primaz
+    quote: Rev. Francisco de Assis da Silva
+  - source: ihu-2017-francisco
+    quote: >-
+      Foi o responsável pela Paróquia de Santa Maria em Belém do Pará (atual Catedral) e pela Paróquia de Todos
+      os Santos em Novo Hamburgo.
+  notes: >-
+    Presbítero, membro da Comissão Especial da IEAB (junho de 2004); sagrado bispo em 2011. Pároco em Belém (Diocese
+    da Amazônia) e Novo Hamburgo (Diocese Meridional) antes do episcopado; datas não informadas.

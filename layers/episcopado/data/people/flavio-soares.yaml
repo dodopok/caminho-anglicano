@@ -50,11 +50,25 @@ ordinations:
       que, em 2012 foi sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson Cavalcanti, sem
       sucessores diretos. Embora não existam registros públicos detalhando os consagrantes
   notes: >-
-    Eleito em 04/06/2011, ainda no episcopado de Robinson Cavalcanti; sagrado 3 semanas após a morte dele. Sagrantes
-    não informados pela fonte. O pôster da IAB diz 'sagrado bispo auxiliar por bispos do Cone-Sul, após a morte
-    de Dom Robinson'. Sagrantes não informados. Pôster da IAB diz apenas "em 2012 foi sagrado bispo auxiliar por
-    bispos do Cone-Sul".
+    Eleito em 04/06/2011, ainda no episcopado de Robinson Cavalcanti (a Living Church diz que em junho [de 2011]
+    Cavalcanti pediu a eleição de um coadjutor, planejando aposentar-se em 2014); sagrado 3 semanas após a morte
+    dele, no MESMO DIA da sagração de Evilásio Tenório (17/03/2012, segundo Wikipédia PT: Peter Beckwith com Alexander
+    Barroso e Martin Morrison) — provavelmente cerimônia conjunta, mas nenhuma fonte nomeia os sagrantes de Flávio.
+    O pôster da IAB diz 'sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson'. Sagrantes
+    não informados. Pôster da IAB diz apenas "em 2012 foi sagrado bispo auxiliar por bispos do Cone-Sul".
 affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: bishop
+  diocese: diocese-anglicana-do-recife-sufraganeo-auxiliar
+  start: '2012-03-17'
+  end: '2018-05-12'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: gafcon-2017-anglican-renewal
+    quote: Bishop Flavio Adair Torres Soares, a suffragan bishop of the Anglican Church of Recife
+  - source: g1-2012-02-29-velorio
+    quote: pelos dois bispos auxiliares Flávio Aldair e Evilásio Tenório
 - jurisdiction: iab
   role: bishop
   diocese: iab-regiao-missionaria
@@ -72,6 +86,15 @@ affiliations:
       Mora em João Pessoa onde lidera uma igreja local, mas atua também como Bispo na região Missionaria da Província.
   notes: >-
     Bispo missionário; mora em João Pessoa. Em 2019 listado como "Bispo Auxliar" no clero da Diocese de Recife.
+- jurisdiction: iab
+  role: clergy
+  diocese: diocese-de-recife-paroquia-anglicana-agua-viva-olinda
+  start: '2019'
+  status: confirmed
+  sources:
+  - source: dr-igrejas-2019
+    quote: 'Reitor: Revmo. Flávio Adair Torres Soares'
+  notes: Reitor de paróquia em Olinda em 2019; em 2018 morava em João Pessoa.
 events:
 - type: other
   date: '2011-06-04'
@@ -81,9 +104,36 @@ events:
   - source: iab-regiao-missionaria
     quote: Eleito ao Episcopado em 04/06/2011
 - type: other
+  date: 2018-05
+  description: >-
+    Flávio Soares participa de ordenação diaconal no México com o bispo Mark Zimmerman (Caminemos Juntos)
+  status: probable
+  sources:
+  - source: cj-flavio-2018
+    quote: >-
+      I had the honor of meeting a very special local leader, Bishop Mark Zimmerman, with whom I participated in
+      the ordination of a Deacon.
+- type: other
   date: '2011-06-04'
   description: Flávio Adair Torres Soares é eleito ao episcopado (Diocese Anglicana do Recife).
   status: probable
   sources:
   - source: iab-regiao-missionaria
     quote: Eleito ao Episcopado em 04/06/2011
+- type: other
+  date: '2012-02-29'
+  description: >-
+    Na véspera do sepultamento de Robinson Cavalcanti, o G1 informa que Evilásio Tenório substituirá interinamente
+    o bispo até a escolha do novo líder; o culto fúnebre foi celebrado pelo presidente do Conselho Diocesano, Márcio
+    Simões, e pelos 'bispos auxiliares' Flávio Adair e Evilásio Tenório.
+  status: confirmed
+  sources:
+  - source: g1-2012-02-29-velorio
+    quote: >-
+      O culto foi celebrado pelo presidente do Conselho Diocesano, Márcio Simões, e pelos dois bispos auxiliares
+      Flávio Aldair e Evilásio Tenório. Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo
+      líder da igreja, o que deve ocorrer no dia 19 de maio.
+  - source: wp-pt-evilasio
+    quote: >-
+      Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
+      bispo diocesano, até a eleição do novo líder da Igreja Anglicana

@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-do-recife-interino
+name: Diocese Anglicana do Recife (interino)
+type: diocese
+relations:
+- type: part_of
+  target: ieab
+  status: probable
+  sources:
+  - source: ptwp-dar
+    quote: Filadelfo Oliveira Neto (Interino) - 2005 a 2006;
+  - source: ta-2005-10-01-ieab-recife
+    quote: under the ecclesiastical authority of the suffragan bishop Filadelfo Oliveira

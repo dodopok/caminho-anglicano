@@ -1,11 +1,30 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: edmund-knox-sherrill
 name: Edmund Knox Sherrill
+full_name: Edmund Knox Sherrill
 aliases:
 - Dom Edmund Sherrill
+- Edmond Sherrill
 - Edmund K. Sherrill
 - Edmund Sherrill
 - Ned Sherrill
+- Rt. Rev. Edmund K. Sherrill
+birth:
+  date: '1925'
+  sources:
+  - source: wit-1958-12-25
+    quote: >-
+      The Rev. Edmund K. Sherrill, bishop elect of the missionary district of Central Brazil, will be consecrated
+      bishop in Christ Church, Rio de Janeiro, on January 25.
+  - source: wp-en-esherrill
+    quote: >-
+      Edmund Knox Sherrill (died 2016) was a missionary bishop in The Episcopal Church who served in Brazil.
+  - source: lc-1958-10-26
+    quote: >-
+      Edmund K. Sherrill, who is rector of Holy Trinity Church, Sao Paulo, Brazil, was born in Boston, Mass., in
+      1925, the son of Presiding Bishop and Mrs. Sherrill.
+  - source: wd-q114103052
+    quote: Edmund Knox Sherrill | American Episcopal Church bishop
 death:
   date: '2016'
   sources:
@@ -16,6 +35,10 @@ death:
   - source: wp-en-esherrill
     quote: >-
       Edmund Knox Sherrill (died 2016) was a missionary bishop in The Episcopal Church who served in Brazil.
+  - source: lc-1958-10-26
+    quote: >-
+      Edmund K. Sherrill, who is rector of Holy Trinity Church, Sao Paulo, Brazil, was born in Boston, Mass., in
+      1925, the son of Presiding Bishop and Mrs. Sherrill.
   - source: wd-q114103052
     quote: Edmund Knox Sherrill | American Episcopal Church bishop
 wikidata: Q114103052
@@ -30,9 +53,31 @@ sources:
 - source: wp-en-esherrill
   quote: >-
     Edmund Knox Sherrill (died 2016) was a missionary bishop in The Episcopal Church who served in Brazil.
+- source: lc-1958-10-26
+  quote: >-
+    Edmund K. Sherrill, who is rector of Holy Trinity Church, Sao Paulo, Brazil, was born in Boston, Mass., in 1925,
+    the son of Presiding Bishop and Mrs. Sherrill.
 - source: wd-q114103052
   quote: Edmund Knox Sherrill | American Episcopal Church bishop
 ordinations:
+- order: diaconate
+  date: '1951'
+  jurisdiction: tec
+  ordained_by: henry-knox-sherrill
+  status: probable
+  sources:
+  - source: lc-1958-10-26
+    quote: >-
+      He received the B.D. degree from Episcopal Theological School] in 1951, and was ordained deacon and priest
+      later in that year by his father.
+- order: presbyterate
+  date: '1951'
+  jurisdiction: tec
+  ordained_by: henry-knox-sherrill
+  status: probable
+  sources:
+  - source: lc-1958-10-26
+    quote: and was ordained deacon and priest later in that year by his father.
 - order: episcopate
   date: '1959-01-25'
   place: Christ Church, Rio de Janeiro
@@ -55,6 +100,10 @@ ordinations:
     quote: >-
       He was ordained a bishop on 25 January 1959 in Rio de Janeiro, with his father, retired Presiding Bishop Henry
       Knox Sherrill, serving as chief consecrator.
+  - source: lc-1959-02-08
+    quote: >-
+      The Rev. Edmund Knox Sherrill was consecrated bishop of Central Brazil by the Most Rev. Henry Knox Sherrill,
+      his father and retired Pre- siding Bishop, on Sunday, January 25, in Rio de Janeiro.
   - source: wp-en-histlist
     quote: '[[Henry Knox Sherrill|372]] [[Egmont M. Kirschke|495]] [[Plinio Lauer Simões|542]]'
   - source: ieab-sobre
@@ -92,6 +141,10 @@ affiliations:
   sources:
   - source: wit-1958-12-25
     quote: who was elected at the General Convention to succeed Bishop Melcher
+  - source: lc-1958-10-26
+    quote: >-
+      Two new missionary bishops were se- lected on October 13 by the House of Bishops: The Rev. Benito GC. Cabanban
+      to serve as suffragan of the Philippines and the Rev. Edmund Knox Sherrill as Bishop of Central Brazil.
   - source: ens-xxvi-8
     quote: Bishop Edmund Knox Sherrill of Central Brazil
 - jurisdiction: ieab
@@ -117,7 +170,7 @@ affiliations:
   sources:
   - source: costa2021
     quote: 1976-1985 – Edmund Knox Sherrill
-  - source: wp-pt-dioc-recife
+  - source: ptwp-dar
     quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
   notes: Datas divergem (1975/1976 a 1985/1986).
 - jurisdiction: ieab

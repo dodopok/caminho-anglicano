@@ -64,21 +64,43 @@ relations:
 - type: member_of
   target: gsfa
   date: 2018-05
-  status: probable
+  led_by:
+  - miguel-uchoa
+  status: contested
   sources:
   - source: iab-comunicado-oficial-2018
     quote: >-
       Imediatamente, fomos reconhecidos e recebidos no Movimento Sul Global, também parte da Comunhão Anglicana.
-  - source: wp-en-acb
+  - source: wp-en-iab
     quote: >-
       is in full communion with other provinces of the Global Fellowship of Confessing Anglicans and the Global
       South Fellowship of Anglican Churches.
+  - source: gsfa-2026-01-communique
+    quote: The Most Rev Miguel Uchoa Primate of the Anglican Church in Brazil
+  - source: iarccum-gsfa
+    quote: >-
+      Ordinary members of the GSFA not part of the Anglican Communion: Anglican Church in North America (ACNA) Anglican
+      Church in Brazil
+  discrepancies:
+  - field: date
+    value: 2026-01
+    sources:
+    - source: gsfa-2026-01-communique
+      quote: The Most Rev Miguel Uchoa Primate of the Anglican Church in Brazil
+    - source: iarccum-gsfa
+      quote: >-
+        Ordinary members of the GSFA not part of the Anglican Communion: Anglican Church in North America (ACNA)
+        Anglican Church in Brazil
+  notes: >-
+    Uchôa assina como primaz o comunicado dos Primazes do GSFA (Seychelles, jan/2026). IARCCUM lista a IAB como
+    'ordinary member' não pertencente à Comunhão. A data de início como membro pleno não foi encontrada (o comunicado
+    da IAB de 02/06/2018 diz que foram 'recebidos no Movimento Sul Global').
 - type: in_communion_with
   target: acna
   date: '2018'
   status: probable
   sources:
-  - source: wp-en-acb
+  - source: wp-en-iab
     quote: >-
       It is in full communion with all the Global South (Anglican) and the Global Anglican Future Conference provinces,
       including those who are not members of the Anglican Communion, such as the Anglican Church in North America.
@@ -93,3 +115,42 @@ relations:
   sources:
   - source: iab-comunicado-oficial-2018
     quote: Desde 2005, não temos nenhum tipo de relacionamento com essa instituição religiosa
+- type: broke_communion_with
+  target: coa
+  date: '2018-05-12'
+  status: confirmed
+  sources:
+  - source: iab-comunicado-oficial-2018
+    quote: >-
+      A Igreja Anglicana no Brasil não é reconhecida pela Sé da Cantuária como parte da Comunhão Anglicana “oficial”.
+  - source: wp-en-iab
+    quote: It is not a member of the Anglican Communion,[1]
+  notes: >-
+    Não é propriamente 'ruptura': a IAB nunca foi membro reconhecido da Comunhão (ACC/Cantuária). Ajustar o tipo
+    de relação na consolidação, se houver tipo 'nao_reconhecida_por'.
+- type: member_of
+  target: gafcon
+  date: '2018-05-12'
+  led_by:
+  - miguel-uchoa
+  status: confirmed
+  sources:
+  - source: gafcon-2018-installs-primate
+    quote: >-
+      This has led to the formation of a new Biblically orthodox Province which has been recognized by the Gafcon
+      Primates Council not only as part of Gafcon, but also as a Province of the Anglican Communion.
+  - source: ai-recife-received-gafcon
+    quote: We look forward to his membership of the Primates Council.
+- type: in_communion_with
+  target: gsfa
+  date: 2019-10
+  led_by:
+  - miguel-uchoa
+  status: contested
+  sources:
+  - source: ai-2019-10-15-seventh-trumpet
+    quote: >-
+      We also welcomed the Most Revd. Miguel Uchoa Cavalcanti of the Anglican Church in Brazil as a Mission Partner.
+  notes: >-
+    No 7º Encontro do Sul Global (Cairo, out/2019) Uchôa foi recebido como 'Mission Partner'. A Wikipédia EN (GSFA)
+    afirma que a IAB foi recebida como 'member Province' citando este mesmo comunicado — o texto não diz isso.

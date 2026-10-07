@@ -1,10 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: plinio-lauer-simoes
 name: Plínio Lauer Simões
+full_name: Plínio Lauer Simões
 aliases:
 - Bishop Simoes
+- Dom Plínio Simões
 - Plinio L. Simoes
 - Plínio L. Simões
+birth:
+  date: '1915'
+  sources:
+  - source: wit-1955-09-29
+    quote: Also elected a bishop was the Rev. Plimio L. Simoes to be bishop of Southwestern Brazil.
+  - source: wit-1956-01-26
+    quote: The Rev. Plinio Lauer Simoes will be consecrated bishop of Southwe'stern Brazil
+  - source: lc-1955-09-25
+    quote: >-
+      Fr. Simoes was born in Cachoeira, Rio Grande de Sul, Brazil, in 1915. A grad- uate of the Porto Alegre Theological
+      School, he was ordained priest in 1943
+  - source: wd-q112707967
+    quote: Plinio Lauer Simões | episcopal Bishop
 wikidata: Q112707967
 biography: >-
   Eleito em 1955 bispo do Sudoeste do Brasil (sucedendo Krischke), sagrado em 04/03/1956 no Rio de Janeiro; em 1958
@@ -14,9 +29,21 @@ sources:
   quote: Also elected a bishop was the Rev. Plimio L. Simoes to be bishop of Southwestern Brazil.
 - source: wit-1956-01-26
   quote: The Rev. Plinio Lauer Simoes will be consecrated bishop of Southwe'stern Brazil
+- source: lc-1955-09-25
+  quote: >-
+    Fr. Simoes was born in Cachoeira, Rio Grande de Sul, Brazil, in 1915. A grad- uate of the Porto Alegre Theological
+    School, he was ordained priest in 1943
 - source: wd-q112707967
   quote: Plinio Lauer Simões | episcopal Bishop
 ordinations:
+- order: presbyterate
+  date: '1943'
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: lc-1955-09-25
+    quote: A grad- uate of the Porto Alegre Theological School, he was ordained priest in 1943
+  notes: 'Ordenante não informado (bispo diocesano: W. M. M. Thomas; sufragâneo: Pithan).'
 - order: episcopate
   date: '1956-03-04'
   place: Igreja do Redentor (Church of the Redeemer), Rio de Janeiro
@@ -35,12 +62,22 @@ ordinations:
       vice president of the National Council, and Bishop Krischke of Southern Brazil will be co-consecrators.
   - source: wp-en-histlist
     quote: '[[Louis C. Melcher|475]] [[John Boyd Bentley|379]] [[Egmont M. Kirschke|495]]'
+  - source: lc-1956-04-01
+    quote: >-
+      On March 4th the Rey. Plinio Lauer Simoes became the third, at a con- secration service at the Church of the
+      Redeemer, Rio de Janeiro, where he had served as rector since 1950.
+  - source: lc-1956-04-01
+    quote: >-
+      By appointment of the Presiding Bish- op, the consecrator was Bishop Melcher of Central Brazil. 'The co-consecrators
+      were Bishop Bentley, Vice President of National Council, and Bishop Krischke of Southern Brazil.
   - source: ieab-sobre
     quote: >-
       A aposentadoria do bispo Pithan e a resignação do bispo Melcher levaram à sagração de mais dois bispos: o
       revmo. Plínio Lauer Simões, em 1956 e o revmo. Edmund Knox Sherrill, em 1959.
   notes: >-
-    The Witness anuncia (26/01/1956); lista da Wikipédia confirma sagrantes e ano 1956. Relato pós-evento não localizado.
+    Anúncio (Witness 26/01/1956) e relato pós-evento (Living Church 01/04/1956) concordam. Apresentantes: Daniel
+    Ivor Evans (bispo anglicano da Argentina e Falklands) e Krischke (substituindo Pithan, doente); Krischke também
+    pregador. Presbíteros assistentes: J. Timóteo da Silva e Nemésio de Almeida; Edmund K. Sherrill foi registrador-adjunto.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop

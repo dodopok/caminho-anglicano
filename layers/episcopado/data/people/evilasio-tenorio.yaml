@@ -4,23 +4,61 @@ name: Evilásio Tenório
 full_name: Evilásio Tenório da Silva Júnior
 aliases:
 - Evilasio Tenorio Silva
+- Evilásio Tenório da Silva
 - Evilásio Tenório da Silva Junior
 - Evilásio Tenório da Silva Júnior
 biography: >-
-  Bispo auxiliar da Diocese do Recife (IAB) e pároco da Paróquia Anglicana do Mediador (Tejipió, Recife).
+  Bispo auxiliar da Diocese de Recife (IAB), pároco da Paróquia Anglicana do Mediador (Recife) em 2019.
 sources:
-- source: dr-pastores-2019
-  quote: Evilásio Tenório da Silva Junior (Bispo Auxiliar)
+- source: ptwp-iab
+  quote: como bispo auxiliar o Revmo. Evilásio Tenório da Silva Júnior
 ordinations:
 - order: episcopate
-  date: '2012'
-  jurisdiction: iacs
+  date: '2012-03-17'
+  place: Paróquia Anglicana do Espírito Santo (PAES), Jaboatão dos Guararapes
+  jurisdiction: diocese-anglicana-recife
+  office: suffragan
   principal_consecrator: peter-beckwith
-  status: probable
+  co_consecrators:
+  - alexander-barroso
+  - martin-morrison
+  status: contested
   sources:
+  - source: wp-pt-evilasio
+    quote: >-
+      Finalmente, no dia 17 de março de 2012, foi sagrado bispo sufragâneo, na Paróquia Anglicana do Espirito Santo
+      pelo bispo Peter Beckwith, da Igreja Anglicana na América do Norte, e teve como co-sagrantes o bispo Alexander
+      Barroso, da Igreja Anglicana Carismática da Venezuela e o bispo Martin Marrison, da Igreja da Inglaterra na
+      África do Sul.
+  - source: mu-blog-2012-07-22
+    quote: o Revmo Evilásio Tenório, Bispo sufraganeo (auxiliar) da DR
   - source: iab-poster-linhagem-uchoa
     quote: em 2012, sagrou Dom Evilásio Tenório da Silva Júnior como bispo (ver 162c).
+  discrepancies:
+  - field: jurisdiction
+    value: iacs
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: em 2012, sagrou Dom Evilásio Tenório da Silva Júnior como bispo (ver 162c).
+  notes: >-
+    Única fonte para data/sagrantes é a Wikipédia PT (cuja nota de rodapé é a notícia do G1 sobre o velório, que
+    não trata da sagração). Mesmo dia da sagração de Flávio Adair (17/03/2012, site da IAB) — provavelmente cerimônia
+    conjunta. O pôster da IAB também dá Beckwith (2012). 'Martin Marrison' (grafia da fonte) provavelmente = Martin
+    Morrison, bispo da Church of England in South Africa (CESA) — identificar. Em julho/2012 Uchôa já o chama 'Bispo
+    sufraganeo (auxiliar)'.
 affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: postulante
+  diocese: ieab-diocese-recife
+  start: '2002'
+  status: probable
+  sources:
+  - source: ieabrecife-clero-2002
+    quote: EVILÁSIO TENÓRIO DA SILVA (02/10) - Postulante
+  notes: >-
+    Lista de 2002 traz "Evilásio Tenório da Silva" (sem "Júnior") entre postulantes ao ministério ordenado e ministros
+    leigos; identidade com o futuro bispo é provável mas não confirmada.
 - jurisdiction: iacs
   role: primate
   diocese: diocese-anglicana-recife
@@ -33,6 +71,30 @@ affiliations:
       163f. Evilásio Tenório da Silva Júnior (2012) que, em 2012, assumiu como primaz interino da Diocese do Recife
       - Cone Sul, até a eleição de Miguel Uchoa
   notes: '''primaz interino'' da diocese no texto; papel real provavelmente administrador/bispo interino.'
+- jurisdiction: diocese-anglicana-recife
+  role: bishop
+  diocese: diocese-anglicana-do-recife-administrador-interino
+  start: 2012-02
+  end: '2012-12-08'
+  status: probable
+  sources:
+  - source: g1-2012-02-29-velorio
+    quote: Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo líder da igreja
+  notes: >-
+    O pôster chama o cargo de 'primaz interino da Diocese do Recife - Cone Sul'; fontes jornalísticas falam em substituição
+    interina. Fim = posse de Uchôa (inferido).
+- jurisdiction: diocese-anglicana-recife
+  role: bishop
+  diocese: diocese-anglicana-do-recife-sufraganeo-auxiliar-2-regiao-eclesiastica
+  start: '2012-03-17'
+  end: '2018-05-12'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: wp-pt-evilasio
+    quote: responsável pela 2ª Região Eclesiástica (de Pernambuco ao Rio Grande do Sul)
+  - source: mu-blog-2012-07-22
+    quote: o Revmo Evilásio Tenório, Bispo sufraganeo (auxiliar) da DR
 - jurisdiction: iab
   role: bishop
   diocese: iab-diocese-recife
@@ -46,3 +108,45 @@ affiliations:
   - source: iab-comunicado-oficial-2018
     quote: Evilásio Tenório Bispo Auxiliar de Recife
   notes: Bispo auxiliar/assistente da Diocese de Recife (2018–2019, pelo menos).
+- jurisdiction: iab
+  role: clergy
+  diocese: diocese-de-recife-paroquia-anglicana-do-mediador-tejipio
+  start: '2018'
+  status: confirmed
+  sources:
+  - source: dr-igrejas-2019
+    quote: 'Pároco: Bispo Evilásio Tenório'
+  - source: adr-instalacao-2018
+    quote: 'Diocese de Recife, Diocesano:Bispo Miguel Uchoa e Auxiliar: Bispo Evilásio tenório'
+events:
+- type: other
+  date: '2012-07-21'
+  description: >-
+    Retiro do clero da Igreja Anglicana–Diocese de Recife (21/07/2012): candidatam-se à sucessão de Robinson Cavalcanti
+    o Revmo. Evilásio Tenório (bispo sufragâneo) e o Rev. Miguel Uchôa (reitor da PAES); eleição marcada para 15/09/2012
+    por voto do clero e de delegados leigos.
+  status: probable
+  sources:
+  - source: mu-blog-2012-07-22
+    quote: >-
+      Nesse momento colocaram seus nomes a disposição o Revmo Evilásio Tenório, Bispo sufraganeo (auxiliar) da DR
+      e esse que vos escreve, Rev Miguel Uchôa, Reitor da PAES,(Paróquia Anglicana Espírito Santo) .
+  - source: mu-blog-2012-07-22
+    quote: será decidido no dia 15 de Setembro, pelo voto do clero e dos leigos.
+- type: other
+  date: '2012-02-29'
+  description: >-
+    Na véspera do sepultamento de Robinson Cavalcanti, o G1 informa que Evilásio Tenório substituirá interinamente
+    o bispo até a escolha do novo líder; o culto fúnebre foi celebrado pelo presidente do Conselho Diocesano, Márcio
+    Simões, e pelos 'bispos auxiliares' Flávio Adair e Evilásio Tenório.
+  status: confirmed
+  sources:
+  - source: g1-2012-02-29-velorio
+    quote: >-
+      O culto foi celebrado pelo presidente do Conselho Diocesano, Márcio Simões, e pelos dois bispos auxiliares
+      Flávio Aldair e Evilásio Tenório. Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo
+      líder da igreja, o que deve ocorrer no dia 19 de maio.
+  - source: wp-pt-evilasio
+    quote: >-
+      Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
+      bispo diocesano, até a eleição do novo líder da Igreja Anglicana

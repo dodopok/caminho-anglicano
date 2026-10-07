@@ -1,6 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: clovis-erly-rodrigues
 name: Clovis Erly Rodrigues
+full_name: Clóvis Erly Rodrigues
+aliases:
+- Clovis Rodrigues
+- Clóvis Erli Rodrigues
+birth:
+  date: '1935-09-18'
+  sources:
+  - source: costa2021
+    quote: Natural da cidade de Jaguarão, no extremo sul do Brasil, Clovis Erly Rodrigues nasceu em 18 de
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Clóvis Erli Rodrigues, Emérito
+biography: >-
+  Bispo do Recife (coadjutor 1985, diocesano 1986-1997); presidiu o Tribunal Superior Eclesiastico no processo de
+  Robinson Cavalcanti; emerito vivo em 2026 segundo a IEAB.
+sources:
+- source: costa2021
+  quote: Natural da cidade de Jaguarão, no extremo sul do Brasil, Clovis Erly Rodrigues nasceu em 18 de
+- source: ieab-secretaria
+  quote: Revmo. Bispo Clóvis Erli Rodrigues, Emérito
 ordinations:
 - order: episcopate
   date: '1985-03-17'
@@ -33,7 +52,7 @@ affiliations:
   sources:
   - source: costa2021
     quote: 1986-1997 – Clovis Erly Rodrigues
-  - source: wp-pt-dioc-recife
+  - source: ptwp-dar
     quote: Clóvis Erly Rodrigues - 1986 a 1997;
 events:
 - type: other

@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: justino-sa
+name: Justino Sa
+ordinations:
+- order: presbyterate
+  date: 2021-09
+  place: Bafatá, Guiné-Bissau
+  jurisdiction: iab
+  ordained_by: marcio-meira
+  status: probable
+  sources:
+  - source: anglicanismo-guine-2021
+    quote: Em sua visita episcopal, o Bispo ordenou Justino Sa, o primeiro reverendo anglicano em Guiné-Bissau.
+  notes: >-
+    Ordem não especificada ("reverendo"); presença do bispo Henry Okeke (Nigéria) representando o GAFCON.

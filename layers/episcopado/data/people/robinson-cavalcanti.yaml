@@ -8,25 +8,26 @@ aliases:
 birth:
   date: '1944-06-21'
   sources:
-  - source: wp-en-cavalcanti
-    quote: >-
-      Edward Robinson de Barros Cavalcanti (Recife, 21 June 1944 – Olinda, 26 February 2012) was a Brazilian Anglican
-      bishop.
+  - source: costa2021
+    quote: Edward Robinson de Barros Cavalcanti nasceu no Recife, em 21 de junho de 1944.
+  - source: costa2021
+    quote: Faleceu na cidade de Olinda, em 26 de fevereiro de 2012.
 death:
   date: '2012-02-26'
   sources:
-  - source: wp-en-cavalcanti
-    quote: >-
-      Edward Robinson de Barros Cavalcanti (Recife, 21 June 1944 – Olinda, 26 February 2012) was a Brazilian Anglican
-      bishop.
+  - source: costa2021
+    quote: Edward Robinson de Barros Cavalcanti nasceu no Recife, em 21 de junho de 1944.
+  - source: costa2021
+    quote: Faleceu na cidade de Olinda, em 26 de fevereiro de 2012.
+wikidata: Q10363490
 biography: >-
-  Bispo da Diocese do Recife da IEAB eleito e sagrado em 1997; em 2005 rompeu com a IEAB, foi deposto/excluído e
-  passou à supervisão do primaz do Cone Sul, Gregory Venables. Assassinado com a esposa em Olinda em 26/02/2012.
+  Cientista politico; bispo coadjutor (1997) e diocesano do Recife (1997-2005); deposto pela IEAB em 2005; liderou
+  a diocese dissidente ligada ao Cone Sul.
 sources:
-- source: wp-en-cavalcanti
-  quote: >-
-    Edward Robinson de Barros Cavalcanti (Recife, 21 June 1944 – Olinda, 26 February 2012) was a Brazilian Anglican
-    bishop.
+- source: costa2021
+  quote: Edward Robinson de Barros Cavalcanti nasceu no Recife, em 21 de junho de 1944.
+- source: costa2021
+  quote: Faleceu na cidade de Olinda, em 26 de fevereiro de 2012.
 ordinations:
 - order: episcopate
   date: '1997-10-05'
@@ -97,7 +98,7 @@ affiliations:
       Em 19 de outubro do mesmo ano, Robinson foi instalado como terceiro bispo da Diocese Anglicana do Recife.
   - source: costa2021
     quote: 1997-2005 – Edward Robinson de Barros Cavalcanti (Deposto)
-  - source: wp-pt-dioc-recife
+  - source: ptwp-dar
     quote: Edward Robinson de Barros Cavalcanti - 1997 a 2005 (deposto);
   - source: ens-102306-1-a
     quote: Finally, in June 2005, Cavalcanti was deposed on the grounds that he broke communion with the IEAB
@@ -166,7 +167,7 @@ events:
     quote: >-
       em carta publicada em 25 de janeiro de 2005, o bispo declarou a suspensão do relacionamento da Diocese Anglicana
       do Recife com a IEAB
-  - source: wp-pt-dioc-recife
+  - source: ptwp-dar
     quote: >-
       Em 25 de janeiro de 2005, Robinson Cavalcanti, então bispo da Diocese Anglicana do Recife, opondo-se à predominância
       da ala liberal na igreja, promoveu um cisma na IEAB.
@@ -200,7 +201,7 @@ events:
     quote: >-
       Tendo em vista os fatos articulados acima, e que o Tribunal Superior Eclesiástico, por unanimidade de seus
       membros, reconhece a culpabilidade do Bispo Dom Edward Robinson de Barros Cavalcanti, o Bispo Primaz decreta
-  - source: wp-pt-dioc-recife
+  - source: ptwp-dar
     quote: >-
       Apesar de constituir ato raro e extremo, o bispo foi expulso da IEAB em 10 de junho de 2005 pelo Tribunal
       Superior Eclesiástico.
@@ -329,6 +330,52 @@ events:
     quote: deposto e um grupo de clérigos depostos que pertenceram à Diocese Anglicana do Recife.
   - source: ieab-2005-carta-venables
     quote: foi condenado pelo Tribunal Superior Eclesiástico
+- type: other
+  date: '2004-09-16'
+  description: >-
+    Decreto da Câmara dos Bispos da IEAB institui supervisão episcopal especial para clérigos e comunidades da Diocese
+    Anglicana do Recife em dissenso com o bispo Robinson Cavalcanti, nomeando o bispo Maurício Andrade (Brasília)
+    supervisor; o bispo sufragâneo Filadelfo Oliveira continua seu ministério na diocese
+  status: confirmed
+  sources:
+  - source: ieab-2004-decreto-recife
+    quote: >-
+      1. Decretar a supervisão episcopal especial das comunidades e clérigos e clérigas da Diocese Anglicana do
+      Recife que se
+  - source: ieab-2004-decreto-recife
+    quote: >-
+      2. Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília para desempenhar a função de supervisor
+  - source: ieab-2004-decreto-recife
+    quote: >-
+      A Câmara dos Bispos acolheu a solicitação do Bispo Sufragâneo, de 14 clérigos, 9 paróquias e 6 missões, todos
+- type: other
+  date: '2005'
+  description: >-
+    A Câmara dos Bispos da IEAB declara que 32 clérigos da Diocese do Recife, solidários com Robinson Cavalcanti,
+    incorreram em abandono da comunhão da Igreja segundo os cânones provinciais, e protesta contra seu acolhimento
+    pelo arcebispo Gregory Venables (Cone Sul)
+  status: confirmed
+  sources:
+  - source: ieab-2005-cbispos-cantuaria
+    quote: >-
+      Quanto aos 32 clérigos que foram alegadamente condenados sem julgamento prévio, alertamos para o fato de que
+      nossos Cânones
+  - source: ieab-2005-cbispos-cantuaria
+    quote: Provinciais prevêem o abandono da comunhão da Igreja.
+  - source: ieab-2005-cbispos-cantuaria
+    quote: >-
+      Recebemos uma resposta coletiva de que todos estavam solidários com a atitude de Robinson Cavalcanti.
+  - source: ieab-2005-cbispos-cantuaria
+    quote: Brasil recebendo Robinson Cavalcanti e os 32 clérigos dissidentes, de forma unilateral.
+- type: other
+  date: 2005-10
+  description: >-
+    Câmara dos Bispos da IEAB registra que o arcebispo de Cantuária encontrou Robinson Cavalcanti e Miguel Uchôa
+    no 3º South to South Encounter (Egito, outubro de 2005), presentes "em nome" da IEAB (aspas no original)
+  status: confirmed
+  sources:
+  - source: ieab-2005-cbispos-cantuaria
+    quote: mente que lá encontrou Robinson Cavalcanti e Miguel Uchôa, “em nome” da IEAB.
 - type: death
   date: '2012'
   description: Robinson Cavalcanti assassinado em 2012
@@ -359,6 +406,38 @@ events:
       In 2005, the Bishop of Recife, The Rt. Rev. Robinson Cavalcanti, and ninety percent of the clergy of the diocese
       were excommunicated by the liberal Episcopal Church of Brazil.
 - type: other
+  date: '2004-09-16'
+  description: >-
+    Câmara dos Bispos da IEAB (Porto Alegre, 16/09/2004) decreta supervisão episcopal especial para o clero e comunidades
+    da Diocese do Recife em dissidência com o bispo Robinson Cavalcanti, nomeando o bispo Maurício Andrade (Brasília),
+    e mantém o bispo sufragâneo Filadelfo Oliveira em funções.
+  status: confirmed
+  sources:
+  - source: acns-3885-2004
+    quote: >-
+      Appoint the Rt Revd Dom Mauricio Andrade, the diocesan bishop of Brasilia, to perform the task of special
+      episcopal oversight
+  - source: acns-3885-2004
+    quote: >-
+      the Suffragan Bishop Dom Filadelfo Oliveira, according to his canonical prerogatives, continues to exert his
+      pastoral ministry to the communities of the Anglican Diocese of Recife.
+- type: deposition
+  date: '2005-10-01'
+  description: >-
+    Comissão Permanente da Diocese do Recife fiel à IEAB publica carta aberta: Robinson Cavalcanti foi julgado e
+    deposto das Ordens Sagradas; o sínodo diocesano sob o bispo sufragâneo Filadelfo Oliveira foi considerado válido
+    pela justiça; o grupo que permaneceu na IEAB corresponde a um terço da diocese.
+  status: confirmed
+  sources:
+  - source: ta-2005-10-01-ieab-recife
+    quote: >-
+      He was, consequently, tried and condemned, and after all the right proceedings were fulfilled, he was deposed
+      form Holy Orders from the Episcopal Anglican Church of Brazil.
+  - source: ta-2005-10-01-ieab-recife
+    quote: >-
+      The diocesan synod, under the ecclesiastical authority of the suffragan bishop Filadelfo Oliveira as well
+      as the decisions and resolutions taken there were considered legitimate and valid by the court.
+- type: other
   date: '2012-02-26'
   description: Robinson Cavalcanti e a esposa, Miriam, são mortos a facadas em casa, em Olinda, pelo filho adotivo.
   status: probable
@@ -371,3 +450,20 @@ events:
     quote: >-
       On the night of February 26, 2012, Robinson Cavalcanti and his wife, Miriam, were stabbed to death in their
       home in Olinda by their adopted son
+- type: other
+  date: '2012-02-29'
+  description: >-
+    Na véspera do sepultamento de Robinson Cavalcanti, o G1 informa que Evilásio Tenório substituirá interinamente
+    o bispo até a escolha do novo líder; o culto fúnebre foi celebrado pelo presidente do Conselho Diocesano, Márcio
+    Simões, e pelos 'bispos auxiliares' Flávio Adair e Evilásio Tenório.
+  status: confirmed
+  sources:
+  - source: g1-2012-02-29-velorio
+    quote: >-
+      O culto foi celebrado pelo presidente do Conselho Diocesano, Márcio Simões, e pelos dois bispos auxiliares
+      Flávio Aldair e Evilásio Tenório. Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo
+      líder da igreja, o que deve ocorrer no dia 19 de maio.
+  - source: wp-pt-evilasio
+    quote: >-
+      Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
+      bispo diocesano, até a eleição do novo líder da Igreja Anglicana

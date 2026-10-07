@@ -1,6 +1,32 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: orlando-santos-de-oliveira
 name: Orlando Santos de Oliveira
+full_name: Orlando Santos de Oliveira
+aliases:
+- Dom Orlando Oliveira
+- Orlando dos Santos Oliveira
+birth:
+  date: '1945-01-08'
+  sources:
+  - source: costa2021
+    quote: Natural da cidade de São Francisco de Paula, Orlando dos Santos Oliveira nasceu em 08 de
+  - source: wp-pt-orlando
+    quote: Orlando Santos de Oliveira (São Francisco de Paula, 8 de janeiro de 1945 - 16 de março de 2023)
+death:
+  date: '2023-03-16'
+  sources:
+  - source: costa2021
+    quote: Natural da cidade de São Francisco de Paula, Orlando dos Santos Oliveira nasceu em 08 de
+  - source: wp-pt-orlando
+    quote: Orlando Santos de Oliveira (São Francisco de Paula, 8 de janeiro de 1945 - 16 de março de 2023)
+wikidata: Q139008639
+biography: >-
+  Bispo da Diocese Meridional (1998-2013) e primaz (2003-2006); decretou a deposicao de Robinson Cavalcanti.
+sources:
+- source: costa2021
+  quote: Natural da cidade de São Francisco de Paula, Orlando dos Santos Oliveira nasceu em 08 de
+- source: wp-pt-orlando
+  quote: Orlando Santos de Oliveira (São Francisco de Paula, 8 de janeiro de 1945 - 16 de março de 2023)
 ordinations:
 - order: episcopate
   date: '1997-11-30'
@@ -116,7 +142,7 @@ events:
     quote: >-
       Tendo em vista os fatos articulados acima, e que o Tribunal Superior Eclesiástico, por unanimidade de seus
       membros, reconhece a culpabilidade do Bispo Dom Edward Robinson de Barros Cavalcanti, o Bispo Primaz decreta
-  - source: wp-pt-dioc-recife
+  - source: ptwp-dar
     quote: >-
       Apesar de constituir ato raro e extremo, o bispo foi expulso da IEAB em 10 de junho de 2005 pelo Tribunal
       Superior Eclesiástico.

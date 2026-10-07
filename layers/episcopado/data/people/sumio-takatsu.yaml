@@ -1,6 +1,28 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: sumio-takatsu
 name: Sumio Takatsu
+full_name: Sumio Takatsu
+birth:
+  date: '1927-01-03'
+  sources:
+  - source: costa2021
+    quote: Sumio Takatsu nasceu na cidade de Sapporo, Japão, em 03 de janeiro de 1927
+  - source: costa2021
+    quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
+death:
+  date: '2004-01-23'
+  sources:
+  - source: costa2021
+    quote: Sumio Takatsu nasceu na cidade de Sapporo, Japão, em 03 de janeiro de 1927
+  - source: costa2021
+    quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
+wikidata: Q138963123
+biography: Nipo-brasileiro; segundo bispo de Sao Paulo (1977-1989); fundador do IAET.
+sources:
+- source: costa2021
+  quote: Sumio Takatsu nasceu na cidade de Sapporo, Japão, em 03 de janeiro de 1927
+- source: costa2021
+  quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
 ordinations:
 - order: episcopate
   date: '1977-06-12'

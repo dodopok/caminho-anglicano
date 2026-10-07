@@ -1,6 +1,30 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: claudio-vinicius-de-senna-gastal
 name: Claudio Vinicius de Senna Gastal
+full_name: Cláudio Vinícius de Senna Gastal
+aliases:
+- Claudio Gastal
+- Dom Cláudio Gastal
+birth:
+  date: '1937-09-21'
+  sources:
+  - source: costa2021
+    quote: Cláudio Vinícius de Senna Gastal nasceu em 21 de setembro de 1937, na cidade do Rio de
+  - source: costa2021
+    quote: Faleceu em 23 de fevereiro de 2000.
+death:
+  date: '2000-02-23'
+  sources:
+  - source: costa2021
+    quote: Cláudio Vinícius de Senna Gastal nasceu em 21 de setembro de 1937, na cidade do Rio de
+  - source: costa2021
+    quote: Faleceu em 23 de fevereiro de 2000.
+biography: Bispo da Diocese Meridional (1984-1998); primaz interino (1993-1994).
+sources:
+- source: costa2021
+  quote: Cláudio Vinícius de Senna Gastal nasceu em 21 de setembro de 1937, na cidade do Rio de
+- source: costa2021
+  quote: Faleceu em 23 de fevereiro de 2000.
 ordinations:
 - order: episcopate
   date: 1984-03

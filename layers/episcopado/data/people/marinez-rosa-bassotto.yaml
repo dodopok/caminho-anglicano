@@ -1,3 +1,40 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marinez-rosa-bassotto
 name: Marinez Rosa Bassotto
+ordinations:
+- order: diaconate
+  date: 1995-05
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: wp-en-bassotto
+    quote: She was ordained as deacon in 1995 after studying at the IEAB's seminary in Porto Alegre.
+  - source: wp-en-bassotto
+    quote: May 1995 (deacon)
+  notes: Wikipedia cita ACNS (24/01/2018), não acessível nesta sessão.
+- order: presbyterate
+  date: '1996'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: wp-en-bassotto
+    quote: 1996 (priest)
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-da-amazonia
+  start: '2018'
+  status: confirmed
+  sources:
+  - source: daa-clero
+    quote: Bispa diocesana da Diocese Anglicana da Amazônia (2018). Bispa Primaz da IEAB (2022).
+- jurisdiction: ieab
+  role: primate
+  start: '2022-11-13'
+  status: confirmed
+  sources:
+  - source: ieab-nova-primaz
+    quote: >-
+      Neste domingo, 13 de novembro, penúltimo dia do 35° Sínodo da Igreja Episcopal Anglicana do Brasil, a bispa
+      Marinez Bassotto (foto acima, ao centro), atual bispa da Diocese Anglicana da Amazônia, foi eleita a nova
+      primaz da Igreja.

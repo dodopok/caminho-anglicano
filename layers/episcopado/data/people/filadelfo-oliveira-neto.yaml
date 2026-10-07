@@ -1,6 +1,26 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: filadelfo-oliveira-neto
 name: Filadelfo Oliveira Neto
+full_name: Filadelfo Oliveira Neto
+aliases:
+- Dom Filadelfo Oliveira
+- Filadelfo Neto
+- Filadelfo Oliveira
+birth:
+  date: '1954-05-30'
+  sources:
+  - source: costa2021
+    quote: Natural de Garanhuns (PE), Filadelfo Oliveira Neto nasceu em 30 de maio de 1954.
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Filadelfo Oliveira, Emérito
+biography: >-
+  Sufraganeo do Recife (2002), autoridade eclesiastica/bispo interino do Recife (2005-2006) apos a crise; bispo
+  do Rio de Janeiro (2008-2016/17); emerito.
+sources:
+- source: costa2021
+  quote: Natural de Garanhuns (PE), Filadelfo Oliveira Neto nasceu em 30 de maio de 1954.
+- source: ieab-secretaria
+  quote: Revmo. Bispo Filadelfo Oliveira, Emérito
 ordinations:
 - order: episcopate
   date: '2002-04-28'
@@ -27,6 +47,18 @@ affiliations:
   - source: costa2021
     quote: A missão do novo epíscopo era auxiliar o seu bispo diocesano, Robinson Cavalcanti
 - jurisdiction: ieab
+  role: bishop
+  diocese: diocese-anglicana-do-recife-interino
+  start: '2005'
+  end: '2006'
+  status: probable
+  sources:
+  - source: ptwp-dar
+    quote: Filadelfo Oliveira Neto (Interino) - 2005 a 2006;
+  - source: ta-2005-10-01-ieab-recife
+    quote: under the ecclesiastical authority of the suffragan bishop Filadelfo Oliveira
+  notes: Lado IEAB da cisão (continuidade da Diocese do Recife na IEAB).
+- jurisdiction: ieab
   role: other
   role_description: bispo_interino
   diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
@@ -40,7 +72,7 @@ affiliations:
       resolução, DOM FILADELFO OLIVEIRA NETO
   - source: costa2021
     quote: 2005-2006 – Filadelfo Oliveira Neto (Interino)
-  - source: wp-pt-dioc-recife
+  - source: ptwp-dar
     quote: Filadelfo Oliveira Neto (Interino) - 2005 a 2006;
   notes: Autoridade eclesiastica / bispo interino.
 - jurisdiction: ieab
@@ -108,3 +140,35 @@ events:
       as acting dean of the cathedral
   - source: costa2021
     quote: Em setembro de 2002, ocorreu o que chamamos de “Pequena Crise do Recife”105
+- type: other
+  date: '2004-09-16'
+  description: >-
+    Câmara dos Bispos da IEAB (Porto Alegre, 16/09/2004) decreta supervisão episcopal especial para o clero e comunidades
+    da Diocese do Recife em dissidência com o bispo Robinson Cavalcanti, nomeando o bispo Maurício Andrade (Brasília),
+    e mantém o bispo sufragâneo Filadelfo Oliveira em funções.
+  status: confirmed
+  sources:
+  - source: acns-3885-2004
+    quote: >-
+      Appoint the Rt Revd Dom Mauricio Andrade, the diocesan bishop of Brasilia, to perform the task of special
+      episcopal oversight
+  - source: acns-3885-2004
+    quote: >-
+      the Suffragan Bishop Dom Filadelfo Oliveira, according to his canonical prerogatives, continues to exert his
+      pastoral ministry to the communities of the Anglican Diocese of Recife.
+- type: deposition
+  date: '2005-10-01'
+  description: >-
+    Comissão Permanente da Diocese do Recife fiel à IEAB publica carta aberta: Robinson Cavalcanti foi julgado e
+    deposto das Ordens Sagradas; o sínodo diocesano sob o bispo sufragâneo Filadelfo Oliveira foi considerado válido
+    pela justiça; o grupo que permaneceu na IEAB corresponde a um terço da diocese.
+  status: confirmed
+  sources:
+  - source: ta-2005-10-01-ieab-recife
+    quote: >-
+      He was, consequently, tried and condemned, and after all the right proceedings were fulfilled, he was deposed
+      form Holy Orders from the Episcopal Anglican Church of Brazil.
+  - source: ta-2005-10-01-ieab-recife
+    quote: >-
+      The diocesan synod, under the ecclesiastical authority of the suffragan bishop Filadelfo Oliveira as well
+      as the decisions and resolutions taken there were considered legitimate and valid by the court.

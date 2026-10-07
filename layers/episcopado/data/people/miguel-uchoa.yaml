@@ -19,6 +19,30 @@ sources:
 - source: wp-en-uchoa
   quote: Miguel Uchôa Cavalcanti is a Brazilian Anglican bishop and author.
 ordinations:
+- order: diaconate
+  date: '1993-05-08'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: mu-blog-20anos
+    quote: Mas hoje havia algo mais, os 20 anos de ministério ordenado.
+  - source: mu-blog-20anos
+    quote: Esse homem, Bispo Anglicano, pregador em minha ordenação diaconal
+  notes: >-
+    Data deduzida: post de 8/5/2013 ("hoje ... os 20 anos de ministério ordenado"). O bispo Edmund K. Sherrill foi
+    o PREGADOR da ordenação diaconal, não necessariamente o ordenante. Ordenante não informado (bispo do Recife
+    em 1993: Clóvis Erly Rodrigues — não confirmado por fonte).
+- order: presbyterate
+  date: null
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: mu-blog-20anos
+    quote: >-
+      Ele se chamava Robinson Cavalcanti. foi ele quem me apresentou ao \bispo n min há ordenação presbiteral.
+  notes: >-
+    Robinson Cavalcanti foi o APRESENTANTE na ordenação presbiteral (texto do blog truncado no original). Data e
+    ordenante não informados; anterior a jan/2002, quando já constava como "Rev." na lista do clero.
 - order: episcopate
   date: '2012-12-08'
   place: Paróquia Anglicana Espírito Santo (PAES), Jaboatão dos Guararapes (Grande Recife)
@@ -34,16 +58,27 @@ ordinations:
   - kevin-allen
   status: contested
   sources:
+  - source: g1-2012-12-08-uchoa-posse
+    quote: >-
+      O bispo Miguel Uchôa, escolhido para ser o novo líder da Diocese da Igreja Aglicana no Recife, toma posse
+      neste sábado (8). A sagração acontece na Paróquia Anglicana do Espírito Santo, no bairro de Piedade, em Jaboatão
+      dos Guararapes, na Região Metroplitana.
+  - source: gafcon-2018-installs-primate
+    quote: On December 8, 2012, The Rt. Rev. Miguel Uchoa was consecrated as Diocesan Bishop.
   - source: ai-2018-05-15-uchoa-installed
     quote: On December 8, 2012, The Rt. Rev. Miguel Uchoa was consecrated as Diocesan Bishop.
+  - source: gafcon-2018-jensen-acb-ac
+    quote: >-
+      Because this was an issue of basic theology, the Gafcon movement recognised the Diocese and arranged for the
+      consecration of the present Archbishop.
   - source: virtueonline-2026-08-25
     quote: Elected to succeed the martyred bishop later in 2012 and consecrated that December
   - source: wp-en-uchoa
-    quote: 'Consecration
-
-      December 8, 2012
-
-      by Roger Ames'
+    quote: Consecration December 8, 2012 by Roger Ames
+  - source: wp-pt-uchoa
+    quote: >-
+      Em dezembro de 2012, foi consagrado e empossado como bispo de Recife. Sua sagração episcopal aconteceu na
+      PAES.
   - source: ai-new-province-backed
     quote: On December 8, 2012, The Rt. Rev. Miguel Uchoa was consecrated as Diocesan Bishop.
   - source: wp-en-uchoa
@@ -83,28 +118,25 @@ ordinations:
         163a. Miguel Ângelo de Andrade Uchôa (2012-atualmente) que, em 2012, foi sagrado bispo por Roger Ames e
         se tornou o primaz do que viria a ser, seis anos depois, uma nova província: a Igreja Anglicana do Brasil.
   notes: >-
-    DATA: 2012-12-08 confirmada pelo comunicado do GAFCON de 2018 (primário) e por VirtueOnline; a data '8 de dezembro
-    de 2018' do rodapé do pôster da IAB é erro (em 12/05/2018 ele já foi instalado primaz como bispo). SAGRANTE
-    PRINCIPAL: Roger Ames só na Wikipédia EN (infobox) e no pôster. CO-SAGRANTES: não confirmados por fonte independente.
-    LOCAL: só no pôster ('Catedral PAES'), não confirmado. Data confirmada por Anglican Ink e Wikipedia; sagrante
-    principal (Roger Ames) apenas pela Wikipedia (terciária) e pelo pôster da IAB. Os dois pôsteres da IAB dão 2012
-    nos ramos; o rodapé do pôster de Uchoa dá 8/12/2018. Hipótese editorial (ainda sem fonte): 2018 seria a investidura
-    de Uchoa como arcebispo/primaz da nova província ligada à GAFCON, quando nasceu o nome Igreja Anglicana no Brasil
-    — o pôster de Márcio Meira diz que ele 'se tornou o primaz do que viria a ser, seis anos depois, uma nova província'.
+    DATA e LOCAL confirmados: G1 Pernambuco de 08/12/2012 (publicado às 12h40 do próprio dia; 'sábado (8)') + comunicado
+    do GAFCON de maio/2018. A data '8 de dezembro de 2018' do rodapé do pôster é erro: 8/12/2012 e 8/12/2018 caíram
+    ambos num sábado, o que favorece um erro de digitação no ano. SAGRANTE PRINCIPAL: Roger Ames só na infobox da
+    Wikipédia EN (sem nota) e no pôster; o GAFCON diz apenas que 'arranged for the consecration'. CO-SAGRANTES (Kevin
+    Allen, Bill Atwood, David Onuoha, Donald Harvey, Evilásio Tenório, Flávio Soares): não confirmados por fonte
+    independente. Data confirmada por Anglican Ink e Wikipedia; sagrante principal (Roger Ames) apenas pela Wikipedia
+    (terciária) e pelo pôster da IAB. Os dois pôsteres da IAB dão 2012 nos ramos; o rodapé do pôster de Uchoa dá
+    8/12/2018. Hipótese editorial (ainda sem fonte): 2018 seria a investidura de Uchoa como arcebispo/primaz da
+    nova província ligada à GAFCON, quando nasceu o nome Igreja Anglicana no Brasil — o pôster de Márcio Meira diz
+    que ele 'se tornou o primaz do que viria a ser, seis anos depois, uma nova província'.
 affiliations:
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-diocese-recife
   start: 1996-08
-  end: '2004'
+  end: '2005'
   end_reason: schism
-  status: probable
+  status: contested
   sources:
-  - source: wp-en-uchoa
-    quote: >-
-      Uchôa joined two-thirds of the clergy and roughly 95 percent of the laity in disaffiliating from the IEAB
-  - source: iab-primaz
-    quote: É fundador da PAES (Paróquia Anglicana Espírito Santo) em 1996
   - source: queiroz-2004-ufpe
     quote: >-
       Ao se desvincular da Catedral Anglicana do Espinheiro, o Pr. Miguel e mais um grupo de 30 a 40 pessoas, com
@@ -112,11 +144,50 @@ affiliations:
       dos Guararapes
   - source: queiroz-2004-ufpe
     quote: De lá pra cá, eu sou o reitor dessa paróquia
+  - source: ieabrecife-clero-2002
+    quote: Miguel Â. de A Uchôa Cavalcanti (29.12)
+  - source: ieabrecife-franco
+    quote: Juntamente com o Rev. Miguel Uchoa, formalizamos essa indicação no processo Sucessório
+  - source: wp-en-uchoa
+    quote: >-
+      Uchôa joined two-thirds of the clergy and roughly 95 percent of the laity in disaffiliating from the IEAB
+  - source: iab-primaz
+    quote: É fundador da PAES (Paróquia Anglicana Espírito Santo) em 1996
   notes: >-
-    Data de ordenação diaconal/presbiteral NÃO encontrada em nenhuma fonte acessível; fundou a PAES em 1996, ainda
-    na IEAB. Reitor da Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes) desde agosto de 1996; antes
-    "pastor da juventude" e coadjutor de Paulo Garcia por 5 anos na Catedral do Espinheiro. Fim do vínculo com a
-    IEAB não coberto por esta fonte (provavelmente 2005, com a separação da diocese).
+    Reitor da Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes) desde agosto de 1996; antes "pastor
+    da juventude" e coadjutor de Paulo Garcia por 5 anos na Catedral do Espinheiro. Fim do vínculo com a IEAB não
+    coberto por esta fonte (provavelmente 2005, com a separação da diocese). "Rev." na lista do clero de jan/2002;
+    já "Rev." no processo sucessório que elegeu Robinson Cavalcanti (Concílio de junho de 1997). Data de ordenação
+    diaconal/presbiteral NÃO encontrada em nenhuma fonte acessível; fundou a PAES em 1996, ainda na IEAB.
+  discrepancies:
+  - field: start
+    value: '1993'
+    sources:
+    - source: ieabrecife-clero-2002
+      quote: Miguel Â. de A Uchôa Cavalcanti (29.12)
+    - source: ieabrecife-franco
+      quote: Juntamente com o Rev. Miguel Uchoa, formalizamos essa indicação no processo Sucessório
+    - source: wp-en-uchoa
+      quote: >-
+        Uchôa joined two-thirds of the clergy and roughly 95 percent of the laity in disaffiliating from the IEAB
+    - source: iab-primaz
+      quote: É fundador da PAES (Paróquia Anglicana Espírito Santo) em 1996
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  diocese: paroquia-anglicana-espirito-santo-reitor-fundador
+  start: '1996-08-22'
+  status: probable
+  sources:
+  - source: portal-catedral-30anos
+    quote: >-
+      As atividades marcam a trajetória iniciada em 22 de agosto de 1996, quando a comunidade ainda era denominada
+      Paróquia Anglicana Espírito Santo (PAES).
+  - source: g1-2012-12-08-uchoa-posse
+    quote: >-
+      Miguel Uchôa continuará como reitor da Paróquia Anglicana do Espírito Santo, em Jaboatão dos Guararapes.
+  notes: >-
+    Em 1996 a PAES era da Diocese do Recife da IEAB; jurisdição posta como DAR por simplificação — ajustar (IEAB
+    1996–2005, DAR 2005–2018, IAB 2018–). Deixou a reitoria em 23/08/2026 (filho Gabriel instalado deão).
 - jurisdiction: diocese-anglicana-recife
   role: clergy
   diocese: diocese-anglicana-recife
@@ -179,6 +250,35 @@ events:
       Sábado,  06/05/2017, na Paróquia Anglicana Emanuel, em Olinda-PE, nossa Igreja, liderada pelo Bispo Miguel
       Uchoa no Sínodo extraordinário, elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.
 - type: other
+  date: '2012-12-08'
+  description: Miguel Uchoa eleito bispo do Recife e sagrado/empossado na PAES
+  status: confirmed
+  sources:
+  - source: g1-2012-uchoa
+    quote: >-
+      A sagração acontece na Paróquia Anglicana do Espírito Santo, no bairro de Piedade, em Jaboatão dos Guararapes
+  - source: g1-2012-uchoa
+    quote: >-
+      O novo líder tem 55 anos e será responsável por conduzir o trabalho missionário de 55 pastores e pastoras.
+- type: other
+  date: '2013-05-08'
+  description: Diocese do Recife sob o Cone Sul/GAFCON mantém clero feminino ("pastores e pastoras")
+  status: confirmed
+  sources:
+  - source: mu-blog-20anos
+    quote: supervisiono 60 pastores e pastoras
+  - source: g1-2012-uchoa
+    quote: 55 pastores e pastoras
+- type: other
+  date: 2005-10
+  description: >-
+    Câmara dos Bispos da IEAB registra que o arcebispo de Cantuária encontrou Robinson Cavalcanti e Miguel Uchôa
+    no 3º South to South Encounter (Egito, outubro de 2005), presentes "em nome" da IEAB (aspas no original)
+  status: confirmed
+  sources:
+  - source: ieab-2005-cbispos-cantuaria
+    quote: mente que lá encontrou Robinson Cavalcanti e Miguel Uchôa, “em nome” da IEAB.
+- type: other
   date: 2024-01
   description: >-
     Bispos da IAB (Miguel Uchôa e Márcio Meira) presentes à sagração de Ivan Rocha na IECB (jan. 2024) — indício
@@ -189,14 +289,38 @@ events:
     quote: >-
       Mais de 15 Bispos estiveram presentes, inclusive dois da Igreja Anglicana (Dom Miguel Uchôa e Dom Márcio Meira).
 - type: other
-  date: '2012'
-  description: Miguel Uchôa é eleito bispo do Recife para suceder Robinson Cavalcanti.
-  status: confirmed
+  date: '2012-07-21'
+  description: >-
+    Retiro do clero da Igreja Anglicana–Diocese de Recife (21/07/2012): candidatam-se à sucessão de Robinson Cavalcanti
+    o Revmo. Evilásio Tenório (bispo sufragâneo) e o Rev. Miguel Uchôa (reitor da PAES); eleição marcada para 15/09/2012
+    por voto do clero e de delegados leigos.
+  status: probable
   sources:
+  - source: mu-blog-2012-07-22
+    quote: >-
+      Nesse momento colocaram seus nomes a disposição o Revmo Evilásio Tenório, Bispo sufraganeo (auxiliar) da DR
+      e esse que vos escreve, Rev Miguel Uchôa, Reitor da PAES,(Paróquia Anglicana Espírito Santo) .
+  - source: mu-blog-2012-07-22
+    quote: será decidido no dia 15 de Setembro, pelo voto do clero e dos leigos.
+- type: other
+  date: '2012-09-15'
+  description: >-
+    Miguel Uchôa é eleito bispo diocesano do Recife (Igreja Anglicana–Diocese do Recife) para suceder Robinson Cavalcanti;
+    ele se apresenta como '4º Bispo Diocesano Eleito'.
+  status: probable
+  sources:
+  - source: mu-blog-2012-09-18
+    quote: >-
+      Escrevo a vocês como seu 4º Bispo Diocesano Eleito, mas, acima de tudo, como pastor que sou e amante da obra
+      de Deus nesse mundo.
+  - source: mu-blog-2012-07-22
+    quote: será decidido no dia 15 de Setembro, pelo voto do clero e dos leigos.
+  - source: g1-2012-12-08-uchoa-posse
+    quote: >-
+      Miguel Uchôa foi escolhido por meio de uma eleição para substituir o bispo Robinson Cavalcanti, assassinado
+      em fevereiro deste ano.
   - source: ai-2018-05-15-uchoa-installed
     quote: their leaders worked with the Gafcon Primates to organize the election of a new Bishop.
-  - source: virtueonline-2026-08-25
-    quote: Elected to succeed the martyred bishop later in 2012 and consecrated that December
   - source: wp-en-uchoa
     quote: In October 2012, after Cavalcanti's murder, Uchôa was elected to succeed him.
 - type: other
@@ -239,21 +363,6 @@ events:
       On 12 May 2018 Archbishop-elect Uchoa will be installed as primate at a special service set for the Church
       of the Holy Spirit in Pernambuco.
 - type: other
-  date: '2026-08-23'
-  description: >-
-    Gabriel Moreira Uchôa Cavalcanti, filho de Miguel Uchôa, é instituído deão da Catedral Anglicana do Espírito
-    Santo (Jaboatão), nos 30 anos da PAES.
-  status: probable
-  sources:
-  - source: portal-catedral-30anos
-    quote: >-
-      O encerramento ocorrerá no domingo, às 10h, com um culto solene que marcará a instituição do reverendo Gabriel
-      Uchoa como novo deão
-  - source: virtueonline-2026-08-25
-    quote: >-
-      Its purpose was to install the Very Rev. Gabriel Moreira Uchôa Cavalcanti as Dean of the Catedral Anglicana
-      do Espírito Santo.
-- type: other
   date: 2026-03
   description: >-
     Miguel Uchôa é eleito vice-presidente do Conselho Anglicano Global (Global Anglican Council, sucessor institucional
@@ -264,3 +373,112 @@ events:
     quote: Miguel foi eleito vice-presidente do Conselho Anglicano Global em março de 2026.
   - source: virtueonline-2026-08-25
     quote: Today he sits as Vice-Chairman of the Global Anglican Council
+- type: other
+  date: '2015-09-08'
+  description: >-
+    Tribunal de Justiça de Pernambuco confirma (08/09/2015) a decisão da 29ª Vara Cível do Recife que reconheceu
+    a facção ligada à IEAB como a verdadeira Diocese do Recife e dona do patrimônio; Uchôa anuncia a perda de quatro
+    igrejas.
+  status: confirmed
+  sources:
+  - source: ai-2015-09-11-property
+    quote: >-
+      On 8 Sept 2015 the Pernambuco Court of Appeal upheld the decision by the 29th Civil Circuit Court of Recife
+      holding the IAEB faction was the true diocese and owner of the its assets.
+  - source: ai-2015-09-11-property
+    quote: >-
+      the Bishop of Recife, the Rt. Rev. Miguel Uchoa,  (pictured) said the immediate effect of the ruling would
+      be the loss of four churches.
+  - source: mu-2016-03-new-birth
+    quote: In 2015 the court decided in favor of the IEAB
+- type: other
+  date: '2016-03-12'
+  description: >-
+    Fundação jurídica (assembleia) da 'Igreja Anglicana – Diocese do Recife' como nova pessoa jurídica, na Paróquia
+    do Espírito Santo, com 63 pastores e mais de 40 congregações, após perder o registro anterior por decisão judicial.
+  status: confirmed
+  sources:
+  - source: mu-2016-03-new-birth
+    quote: >-
+      So on Saturday 12 March 2016, it happened the Assembly of legal foundation of the Anglican Church – Diocese
+      of Recife.
+  - source: gafcon-2017-two-bishops
+    quote: >-
+      The Diocese of Recife is part of the Gafcon movement, and was launched on 12 March 2016 with over 60 pastors
+      and more than 45 congregations.
+  - source: gafcon-2017-anglican-renewal
+    quote: >-
+      on 12 March 2016, the new Anglican Diocese of Recife was launched as a new church recognized under Brazilian
+      law with over 60 pastors and more than 45 congregations
+- type: other
+  date: '2023-04-21'
+  description: >-
+    No GAFCON IV (Kigali, 17–21/04/2023), Miguel Uchôa é escolhido vice-presidente do GAFCON (sucedendo Laurent
+    Mbanda), com Kanishka Raffel como co-vice-presidente.
+  status: confirmed
+  sources:
+  - source: ai-2023-04-22-gafcon-chair
+    quote: >-
+      Archbishop Mbanda, who served as GAFCON vice-chairman, will be succeeded by the Primate of the Anglican Church
+      of Brazil, the Most Rev.
+  - source: ai-2023-04-22-gafcon-chair
+    quote: >-
+      Hands were laid upon Archbishops Uchoa and Raffel in prayer for their new ministries by the other primates.
+  - source: wp-en-uchoa
+    quote: >-
+      At the fourth quinquennial GAFCON event in Kigali in April 2023, Uchôa was elected vice chairman of GAFCON.
+- type: other
+  date: '2023-03-13'
+  description: >-
+    1º Sínodo Extraordinário Online da IAB, conduzido pelo bispo Márcio Meira com abertura e encerramento do primaz
+    Miguel Uchôa, elege dois bispos auxiliares: Miguel Neto e Eric Rodrigues.
+  status: probable
+  sources:
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
+      Miguel Neto e Bp. Eric Rodrigues.
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      O evento foi conduzido pelo Bispo Marcio Meira, contando com a participação especial do Bispo Primaz, Miguel
+      Uchoa, que abriu e fechou a cerimônia.
+- type: other
+  date: '2018-05-12'
+  description: >-
+    Cobertura independente da instalação de 12/05/2018 (testemunho e imprensa): Phil Ashey (AAC) escreve de Recife
+    no lançamento da IAB e na instalação do arcebispo; Christian Today e Premier/IHU noticiam a instalação 'no sábado'.
+  status: confirmed
+  sources:
+  - source: aac-2018-05-11-ashey
+    quote: >-
+      I am writing from Recife, Brazil at the launching of the new Anglican Church in Brazil and the installation
+      of its first Archbishop, The Most Rev. Miguel Uchoa.
+  - source: christiantoday-2018-05-14
+    quote: >-
+      Miguel Uchoa Cavalcanti was on Saturday appointed the first archbishop and primate of the Anglican Church
+      of Brazil
+  - source: ihu-2018-05-16-premier
+    quote: >-
+      Uma nova denominação anglicana foi lançada no Brasil e marcou seu início com a instalação de seu primeiro
+      arcebispo.
+  - source: gafcon-2018-installs-primate
+    quote: >-
+      On Saturday, 12 May 2018, Brazilians  packed the Paróquia Anglicana do Espírito Santo (Anglican Church of
+      the Holy Spirit) to celebrate the launch of the Anglican Church in Brazil and the installation of The Most
+      Rev. Miguel Uchoa Cavalcanti as their first Archbishop and Primate.
+- type: other
+  date: '2026-08-23'
+  description: >-
+    Miguel Uchôa instala o filho, Gabriel Moreira Uchôa Cavalcanti, como deão da Catedral Anglicana do Espírito
+    Santo, em cerimônia com Laurent Mbanda (presidente do Global Anglican Council).
+  status: confirmed
+  sources:
+  - source: ai-2026-08-24-mbanda
+    quote: >-
+      It has been a great joy to gather this weekend in Recife, Brazil, with leaders of the Global Anglican Communion
+      to celebrate the installation of the Very Revd Gabriel Moreira Uchoa Cavalcanti as Dean of the Catedral Anglicana
+      do Espírito Santo.
+  - source: portal-catedral-30anos
+    quote: >-
+      O encerramento ocorrerá no domingo, às 10h, com um culto solene que marcará a instituição do reverendo Gabriel
+      Uchoa como novo deão

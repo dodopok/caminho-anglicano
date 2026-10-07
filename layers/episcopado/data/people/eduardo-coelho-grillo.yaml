@@ -1,6 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: eduardo-coelho-grillo
 name: Eduardo Coelho Grillo
+full_name: Eduardo Coelho Grillo
+aliases:
+- Dom Eduardo Grillo
+birth:
+  date: '1964-11-19'
+  sources:
+  - source: costa2021
+    quote: Eduardo Coelho Grillo nasceu em 19 de novembro de 1964, na cidade de Porto Alegre.
+biography: Coadjutor (2017) e bispo da Diocese Anglicana do Rio de Janeiro (2017-).
+sources:
+- source: costa2021
+  quote: Eduardo Coelho Grillo nasceu em 19 de novembro de 1964, na cidade de Porto Alegre.
 ordinations:
 - order: episcopate
   date: '2017-04-08'

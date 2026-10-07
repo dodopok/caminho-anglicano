@@ -1,15 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: francisco-cezar-fernandes-alves
 name: Francisco Cezar Fernandes Alves
+full_name: Francisco Cézar Fernandes Alves
 aliases:
 - Bispo Cézar Alves
 - Cezar Fernandes Alves
+- Cézar Fernandes
 - Dom Cézar Alves
 - Francisco Cézar F. Alves
-biography: Presbítero da IEAB desde 1996; bispo diocesano da Diocese Anglicana de São Paulo, investido em 2021.
+wikidata: Q138978371
+biography: >-
+  Coadjutor (2020) e bispo de Sao Paulo (2021-); primeiro bispo abertamente homoafetivo da IEAB segundo a Wikipedia
+  PT.
 sources:
-- source: dasp-2026-cezar30
-  quote: fui Ordenado Sacerdote da Igreja Una, Santa, Católica e Apostólica de Cristo.
+- source: wp-pt-cezar
+  quote: Natural de Quixeramobim, Francisco Cézar cursou o Instituto Anglicano de Estudos Teológicos (IAET).
 ordinations:
 - order: presbyterate
   date: '1996-06-06'

@@ -1,8 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marinez-bassotto
 name: Marinez Bassotto
+full_name: Marinez Rosa dos Santos Bassotto
 aliases:
+- Bispa Marinez Bassotto
+- Dom Marinez
 - Marinez Rosa dos Santos Bassotto
+- Marinez Santos Bassotto
+birth:
+  date: '1971-03-09'
+  sources:
+  - source: costa2021
+    quote: Natural de Canguçu, no Rio Grande do Sul, Marinez Rosa dos Santos Bassotto nasceu em 09 de
+wikidata: Q117285973
+biography: Primeira bispa da IEAB (2018), bispa da Amazonia e primeira mulher primaz (2022-).
+sources:
+- source: costa2021
+  quote: Natural de Canguçu, no Rio Grande do Sul, Marinez Rosa dos Santos Bassotto nasceu em 09 de
 ordinations:
 - order: episcopate
   date: '2018-04-21'

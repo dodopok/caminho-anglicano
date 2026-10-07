@@ -1,18 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: magda-guedes-pereira
 name: Magda Guedes Pereira
+full_name: Magda Guedes Pereira
 aliases:
 - Bispa Magda Guedes
+- Magda Cristina Guedes Pereira (?)
 - Magda Guedes
 - Revma. Magda Guedes
-biography: >-
-  Clériga da IEAB desde 1996; terceira mulher eleita ao episcopado da IEAB (2021), bispa da Diocese Anglicana do
-  Paraná e ex-secretária-geral da IEAB.
+birth:
+  date: '1967-09-03'
+  sources:
+  - source: costa2021
+    quote: Magda Guedes     Pereira nasceu em Sant’Ana do Livramento, Rio Grande do Sul, fronteira com
+  - source: ieab-3a-bispa
+    quote: É clériga da Igreja Episcopal Anglicana do Brasil (IEAB) desde 1996.
+biography: Secretaria-geral da IEAB (2018-); terceira bispa; bispa do Parana (2021-).
 sources:
+- source: costa2021
+  quote: Magda Guedes     Pereira nasceu em Sant’Ana do Livramento, Rio Grande do Sul, fronteira com
 - source: ieab-3a-bispa
-  quote: >-
-    Nasceu em Sant’Ana do Livramento, Rio Grande do Sul, fronteira com Uruguai. É clériga da Igreja Episcopal Anglicana
-    do Brasil (IEAB) desde 1996.
+  quote: É clériga da Igreja Episcopal Anglicana do Brasil (IEAB) desde 1996.
 ordinations:
 - order: episcopate
   date: '2021-10-17'

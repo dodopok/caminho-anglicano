@@ -1,6 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: celso-franco-de-oliveira
 name: Celso Franco de Oliveira
+full_name: Celso Franco de Oliveira
+aliases:
+- Dom Celso Franco
+birth:
+  date: '1940-07-11'
+  sources:
+  - source: costa2021
+    quote: Celso Franco de Oliveira nasceu em 11 de julho de 1940, na cidade de Cabo Frio, Rio de Janeiro.
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Celso Franco, Emérito
+biography: Bispo da Diocese Anglicana do Rio de Janeiro (2000-2008); emerito.
+sources:
+- source: costa2021
+  quote: Celso Franco de Oliveira nasceu em 11 de julho de 1940, na cidade de Cabo Frio, Rio de Janeiro.
+- source: ieab-secretaria
+  quote: Revmo. Bispo Celso Franco, Emérito
 ordinations:
 - order: episcopate
   date: '2000-02-27'

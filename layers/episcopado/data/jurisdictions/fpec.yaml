@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: fpec
+acronym: FPEC
+name: Free Protestant Episcopal Church of England
+type: communion
+country: GB
+founded:
+  date: '1897-11-02'
+  sources:
+  - source: iau-historia
+    quote: >-
+      O momento decisivo ocorreu em 2 de novembro de 1897, quando representantes dessas diferentes comunidades reuniram-se
+      na Igreja de Santo Estêvão (St. Stephen's Church), em East Ham, Londres.
+  - source: iau-historia
+    quote: a FPEC não integra a Comunhão Anglicana vinculada ao Arcebispo de Canterbury
+description: >-
+  Comunhão episcopal independente fundada em Londres em 1897 (primeiro primaz Leon Chechemian, segundo o site da
+  IAU); fora da Comunhão Anglicana. Atual Arcebispo Primus (segundo a IAU): Ricardo Lorite de Lima.
+sources:
+- source: iau-historia
+  quote: >-
+    O momento decisivo ocorreu em 2 de novembro de 1897, quando representantes dessas diferentes comunidades reuniram-se
+    na Igreja de Santo Estêvão (St. Stephen's Church), em East Ham, Londres.
+- source: iau-historia
+  quote: a FPEC não integra a Comunhão Anglicana vinculada ao Arcebispo de Canterbury

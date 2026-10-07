@@ -1,6 +1,30 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: luiz-osorio-pires-prado
 name: Luiz Osorio Pires Prado
+full_name: Luiz Osório Pires Prado
+aliases:
+- Dom Luiz Prado
+- Luis Prado
+birth:
+  date: '1943-03-27'
+  sources:
+  - source: costa2021
+    quote: Natural da cidade de Porto Alegre, Luiz Osório Pires Prado nasceu em 27 de março de 1943.
+  - source: costa2021
+    quote: Faleceu em 2009.
+death:
+  date: '2009'
+  sources:
+  - source: costa2021
+    quote: Natural da cidade de Porto Alegre, Luiz Osório Pires Prado nasceu em 27 de março de 1943.
+  - source: costa2021
+    quote: Faleceu em 2009.
+biography: Bispo sufraganeo da Meridional (1987) e primeiro bispo de Pelotas (1989-1999/2000).
+sources:
+- source: costa2021
+  quote: Natural da cidade de Porto Alegre, Luiz Osório Pires Prado nasceu em 27 de março de 1943.
+- source: costa2021
+  quote: Faleceu em 2009.
 ordinations:
 - order: episcopate
   date: '1987'

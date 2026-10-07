@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: rede-episcopal-brasileira-sede-igreja-catedral-ancora-vitoria-es
+name: 'Rede Episcopal Brasileira (sede: Igreja/Catedral Âncora, Vitória/ES)'
+type: diocese
+relations:
+- type: part_of
+  target: reb
+  status: confirmed
+  sources:
+  - source: reb-quaresma-2025
+    quote: Mensagem do Bispo Diocesano para Quaresma de 2025
+  - source: reb-portaria-01-2025
+    quote: Eu, Dom Eric Rodrigues, Bispo da Igreja de Deus na Rede Episcopal Brasileira
+  - source: reb-estrutura
+    quote: Bispo da Rede Episcopal Brasileira

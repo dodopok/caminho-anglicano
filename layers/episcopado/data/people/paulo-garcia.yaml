@@ -48,13 +48,22 @@ ordinations:
     mas nenhuma fonte diz isso.
 - order: episcopate
   date: '2003-09-08'
-  place: Teatro Guararapes, Olinda (PE)
+  place: Teatro Guararapes, Centro de Convenções, Olinda (PE)
   jurisdiction: iecb
   office: primate
   principal_consecrator: randolph-austin-adler
   co_consecrators:
-  - dale-f-howard
+  - antonio-raposo
+  - craig-w-bates
+  - dale-franklin-howard
+  - douglas-kessler
+  - elmer-belmont
+  - frank-constantino
+  - john-holloway
+  - kenneth-myers
   - loren-thomas-hines
+  - michael-davidson
+  - randolph-w-sly
   status: contested
   sources:
   - source: ptwiki-iecb
@@ -66,6 +75,14 @@ ordinations:
       A consagração episcopal de Paulo Garcia ocorreu em 8 de setembro de 2003, no Teatro Guararapes, em Olinda.
   - source: enwiki-iccec-bispos
     quote: '|42||8 September 2003||1 4 6||Paulo Ruiz Garcia||Abp. and Primate Brazil|| Resigned'
+  - source: costa-2021-tese
+    quote: >-
+      Os bispos sagrantes foram os seguintes: Austin Randolph Adler (Patriarca e Primaz), Douglas Kessler, Randolph
+      Sly, Dale Franklin Howard, Loren Thomas Hines, Kenneth Myers, Craig Bates, Elmer Belmont, John Holloway, Michael
+      Davidson, Frank Constantino e Antônio Raposo.
+  - source: costa-2021-tese
+    quote: >-
+      O evento aconteceu no dia 08 de setembro de 2003, às 20h, no Teatro Guararapes, Centro de Convenções – Olinda.
   - source: queiroz-2004-ufpe
     quote: >-
       O evento aconteceu no dia 08 de setembro de 2003, às 20h no Teatro Guararapes, Centro de Convenções – Olinda.
@@ -73,15 +90,6 @@ ordinations:
     quote: >-
       a vinculação do Pr. Paulo à Igreja Episcopal Carismática, na qual ele foi sagrado o primeiro Bispo do Brasil.
   discrepancies:
-  - field: place
-    value: Teatro Guararapes, Centro de Convenções, Olinda (PE)
-    sources:
-    - source: queiroz-2004-ufpe
-      quote: >-
-        O evento aconteceu no dia 08 de setembro de 2003, às 20h no Teatro Guararapes, Centro de Convenções – Olinda.
-    - source: queiroz-2004-ufpe
-      quote: >-
-        a vinculação do Pr. Paulo à Igreja Episcopal Carismática, na qual ele foi sagrado o primeiro Bispo do Brasil.
   - field: office
     value: diocesan
     sources:
@@ -98,8 +106,9 @@ ordinations:
     2004. A lista de bispos da ICCEC (Wikipédia EN) dá como sagrantes os nº 1 (Austin Randolph Adler), 4 (Dale F.
     Howard, Abp. Southeast Province) e 6 (Loren Thomas Hines, Primate Asia), e anota 'Resigned' (deixou a ICCEC;
     data não informada). Status 'confirmado' pela concordância de duas fontes terciárias independentes quanto a
-    data e sagrante principal. Sagrantes não nomeados; a fonte diz apenas que houve "vários pastores que vieram
-    dos Estados Unidos, exclusivamente para este fim". Testemunho ocular da autora.
+    data e sagrante principal. Costa (2021, nota 192, p. 200-201) lista 12 bispos sagrantes, com Adler à frente;
+    a lista ICCEC da Wikipédia dá só três (Adler, Howard, Hines). Sagrantes não nomeados; a fonte diz apenas que
+    houve "vários pastores que vieram dos Estados Unidos, exclusivamente para este fim". Testemunho ocular da autora.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -218,3 +227,15 @@ events:
   sources:
   - source: ptwiki-iecb
     quote: Com isso, Paulo Garcia foi reconhecido como Arcebispo e Primaz da denominação.
+- type: other
+  date: '2002'
+  description: >-
+    Paulo Garcia deixa a IEAB acompanhado dos reverendos Célio Spineli, Edgar Ferreira e Frederico Bastos, ficando
+    com o templo da Catedral (Rua Carneiro Vilela) e as missões Bem-Aventuranças e Pedra Viva
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      Primeiro aconteceu a saída do rev. Paulo Garcia, acompanhado dos reverendos Célio Spineli, Edgar Ferreira
+      e Frederico Bastos, que ficaram na posse do templo da Catedral Episcopal Anglicana, na Rua Carneiro Vilela,
+      e as missões Bem-Aventuranças e Pedra Viva.

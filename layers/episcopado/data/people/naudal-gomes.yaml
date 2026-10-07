@@ -1,7 +1,41 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: naudal-gomes
 name: Naudal Alves Gomes
+full_name: Naudal Alves Gomes
+aliases:
+- Dom Naudal Gomes
+- Naudal Gomez
+birth:
+  date: '1953-06-19'
+  sources:
+  - source: costa2021
+    quote: Naudal Alves Gomes nasceu na cidade de Sant’Ana do Livramento, Rio Grande do Sul, em 19 de
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Naudal Alves Gomes, Emérito
+wikidata: Q138993092
+biography: >-
+  Sufraganeo da Sul-Ocidental (2000), primeiro bispo de Curitiba/Parana (2003-2021), primaz (2018-2022); em 2024
+  bispo missionario na Diocese Episcopal de Los Angeles.
+sources:
+- source: costa2021
+  quote: Naudal Alves Gomes nasceu na cidade de Sant’Ana do Livramento, Rio Grande do Sul, em 19 de
+- source: ieab-secretaria
+  quote: Revmo. Bispo Naudal Alves Gomes, Emérito
 ordinations:
+- order: diaconate
+  date: '1979'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: stmarks-naudal
+    quote: Following his graduation from seminary, Bishop Naudal was ordained a Deacon in 1979.
+- order: presbyterate
+  date: '1980'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: stmarks-naudal
+    quote: A year later, he was ordained to the presbyterate in 1980.
 - order: episcopate
   date: '2000-04-08'
   place: Catedral (catolica) de Nossa Senhora da Conceicao, Santa Maria (RS)
@@ -71,3 +105,15 @@ affiliations:
     quote: 'Durante o 34º Sínodo também foi eleito o novo Primaz da IEAB: o bispo Naudal Alves Gomes.'
   - source: wp-en-ieab
     quote: Naudal Alves Gomes, 2018–2022
+  - source: stmarks-naudal
+    quote: Prior to that he served as primate of the Episcopal Anglican Church in Brazil from 2018 to 2022.
+- jurisdiction: tec
+  role: clergy
+  diocese: st-mark-s-episcopal-church-van-nuys-diocese-of-los-angeles
+  status: probable
+  sources:
+  - source: stmarks-naudal
+    quote: The Most Rev. Naudal Alves Gomes is the interim bishop in-charge of St. Mark’s.
+  notes: >-
+    Bispo emérito da IEAB servindo como bispo interino encarregado de uma paróquia da Episcopal Church (EUA); data
+    não informada na página.

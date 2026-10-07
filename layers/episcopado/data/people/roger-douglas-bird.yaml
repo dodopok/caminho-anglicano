@@ -1,6 +1,24 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: roger-douglas-bird
 name: Roger Douglas Bird
+full_name: Roger Douglas Bird
+aliases:
+- Dom Roger Bird
+birth:
+  date: '1945-03-16'
+  sources:
+  - source: wp-pt-roger-bird
+    quote: Roger Douglas Bird (São Paulo, 16 de março de 1945 – 13 de fevereiro de 2023)
+death:
+  date: '2023-02-13'
+  sources:
+  - source: wp-pt-roger-bird
+    quote: Roger Douglas Bird (São Paulo, 16 de março de 1945 – 13 de fevereiro de 2023)
+wikidata: Q138963106
+biography: Quinto bispo de Sao Paulo (2007-2012); resignou e cofundou o Movimento Anglicano no Brasil.
+sources:
+- source: wp-pt-roger-bird
+  quote: Roger Douglas Bird (São Paulo, 16 de março de 1945 – 13 de fevereiro de 2023)
 ordinations:
 - order: episcopate
   date: '2007-09-07'
@@ -63,3 +81,10 @@ affiliations:
     quote: >-
       Diante das disputas, eles romperam com a IEAB e fundaram o Movimento Anglicano no Brasil, tomando como sede
       a Catedral Anglicana de São Paulo, que passou para a supervisão episcopal dos dois bispos.
+- jurisdiction: manb
+  role: bishop
+  start: '2013'
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: Atualmente ela possui apenas um bispo, Roger Bird

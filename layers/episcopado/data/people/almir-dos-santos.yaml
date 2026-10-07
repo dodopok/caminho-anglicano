@@ -1,6 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: almir-dos-santos
 name: Almir dos Santos
+full_name: Almir dos Santos
+birth:
+  date: '1942-04-18'
+  sources:
+  - source: costa2021
+    quote: Almir dos Santos nasceu em 18 de abril de 1942, na cidade de Bagé.
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Almir dos Santos, Emérito
+biography: >-
+  Bispo de Brasilia (1989-2002); encarregado do Distrito Missionario do Oeste; co-sagrante de Robinson Cavalcanti;
+  emerito.
+sources:
+- source: costa2021
+  quote: Almir dos Santos nasceu em 18 de abril de 1942, na cidade de Bagé.
+- source: ieab-secretaria
+  quote: Revmo. Bispo Almir dos Santos, Emérito
 ordinations:
 - order: episcopate
   date: '1989-04-09'

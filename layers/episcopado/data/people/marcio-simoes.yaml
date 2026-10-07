@@ -28,7 +28,8 @@ ordinations:
   date: '2017-06-10'
   jurisdiction: diocese-anglicana-recife
   office: auxiliary
-  status: confirmed
+  principal_consecrator: miguel-uchoa
+  status: contested
   sources:
   - source: dv-bispo
     quote: foi sagrado ao episcopado no dia 10 de junho de 2017
@@ -36,12 +37,29 @@ ordinations:
     quote: 'elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira'
   - source: dv-bispo
     quote: O Bispo Márcio José de Sousa Simões foi sagrado ao episcopado no dia 10 de junho de 2017
+  - source: gafcon-2017-two-bishops
+    quote: >-
+      The ceremony will be conducted by The Right Revd. Miguel Uchôa Cavalcanti, Bishop of Recife, with proceedings
+      due to begin at 10am, Saturday June 10th 2017.
   - source: iab-dois-novos-bispos
     quote: Em Junho acontecerá a  Sagração Episcopal
+  discrepancies:
+  - field: office
+    value: missionary
+    sources:
+    - source: dv-bispo
+      quote: O Bispo Márcio José de Sousa Simões foi sagrado ao episcopado no dia 10 de junho de 2017
+    - source: gafcon-2017-two-bishops
+      quote: >-
+        The ceremony will be conducted by The Right Revd. Miguel Uchôa Cavalcanti, Bishop of Recife, with proceedings
+        due to begin at 10am, Saturday June 10th 2017.
+    - source: iab-dois-novos-bispos
+      quote: Em Junho acontecerá a  Sagração Episcopal
   notes: >-
     Eleito bispo auxiliar em 06/05/2017; diocesano de Vitória a partir da criação da província (2018). Eleito bispo
-    auxiliar em 06/05/2017; tornou-se bispo da Diocese de Vitória com a formação da província. Sagrantes não informados
-    pelas fontes.
+    auxiliar em 06/05/2017 (o GAFCON chama-os de 'missionary bishops'); tornou-se bispo da Diocese de Vitória com
+    a formação da província. Sagrante principal = quem 'conduz' a cerimônia segundo o anúncio prévio do GAFCON;
+    co-sagrantes não informados por fonte independente. Data confirmada (anúncio GAFCON + site da Diocese de Vitória).
 affiliations:
 - jurisdiction: iab
   role: diocesan_bishop
@@ -77,3 +95,20 @@ events:
     quote: >-
       Sábado,  06/05/2017, na Paróquia Anglicana Emanuel, em Olinda-PE, nossa Igreja, liderada pelo Bispo Miguel
       Uchoa no Sínodo extraordinário, elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.
+- type: other
+  date: '2012-02-29'
+  description: >-
+    Na véspera do sepultamento de Robinson Cavalcanti, o G1 informa que Evilásio Tenório substituirá interinamente
+    o bispo até a escolha do novo líder; o culto fúnebre foi celebrado pelo presidente do Conselho Diocesano, Márcio
+    Simões, e pelos 'bispos auxiliares' Flávio Adair e Evilásio Tenório.
+  status: confirmed
+  sources:
+  - source: g1-2012-02-29-velorio
+    quote: >-
+      O culto foi celebrado pelo presidente do Conselho Diocesano, Márcio Simões, e pelos dois bispos auxiliares
+      Flávio Aldair e Evilásio Tenório. Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo
+      líder da igreja, o que deve ocorrer no dia 19 de maio.
+  - source: wp-pt-evilasio
+    quote: >-
+      Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
+      bispo diocesano, até a eleição do novo líder da Igreja Anglicana

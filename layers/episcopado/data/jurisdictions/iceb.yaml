@@ -18,7 +18,7 @@ founded:
   - source: ciceb-quemsomos
     quote: >-
       No mesmo evento, a Comunhão foi denominada “Comunhão das Igrejas Cristãs Episcopais do Brasil (CICEB)”.
-  - source: wp-pt-dioc-recife
+  - source: ptwp-dar
     quote: >-
       fundando a Igreja Cristã Episcopal. Na época a nova denominação recebeu o nome de Igreja Episcopal Evangélica
       Betânia.
@@ -38,7 +38,7 @@ sources:
 - source: ciceb-quemsomos
   quote: >-
     No mesmo evento, a Comunhão foi denominada “Comunhão das Igrejas Cristãs Episcopais do Brasil (CICEB)”.
-- source: wp-pt-dioc-recife
+- source: ptwp-dar
   quote: >-
     fundando a Igreja Cristã Episcopal. Na época a nova denominação recebeu o nome de Igreja Episcopal Evangélica
     Betânia.
@@ -54,7 +54,7 @@ relations:
     quote: >-
       resolveu em assembleia com todos os membros, por unanimidade de votos, desligar-se da Igreja Anglicana. Sendo
       assim, a partir desta data passou a ser chamada Igreja Episcopal Evangélica Betânia.
-  - source: wp-pt-dioc-recife
+  - source: ptwp-dar
     quote: >-
       Em outubro de 2002, os membros da então Paróquia Betânia da Diocese Anglicana do Recife, liderados pelo reverendo
       Leônides Menezes, decidiram por assembleia se separar da Igreja Episcopal Anglicana do Brasil
@@ -70,7 +70,7 @@ relations:
   sources:
   - source: iab-poster-linhagem-meira
     quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC
-  - source: wp-pt-dioc-recife
+  - source: ptwp-dar
     quote: >-
       Em 8 de junho de 2003, a então Igreja Episcopal Evangélica Betânia, filiou-se à Comunhão das Igrejas Episcopais
       Evangélicas (em inglês, The Communion of Evangelical Episcopal Churches - CEEC)
@@ -89,7 +89,7 @@ relations:
   - field: date
     value: '2003-06-08'
     sources:
-    - source: wp-pt-dioc-recife
+    - source: ptwp-dar
       quote: >-
         Em 8 de junho de 2003, a então Igreja Episcopal Evangélica Betânia, filiou-se à Comunhão das Igrejas Episcopais
         Evangélicas (em inglês, The Communion of Evangelical Episcopal Churches - CEEC)
@@ -105,7 +105,7 @@ relations:
   - leonides-menezes
   status: probable
   sources:
-  - source: wp-pt-dioc-recife
+  - source: ptwp-dar
     quote: >-
       e de onde se originou a atual Comunhão Internacional Cristã (em inglês, The Christian Communion Internacional
       - CCI), com sede no Estado da Flórida, EUA.
@@ -118,3 +118,18 @@ relations:
     of Convergence Churches USA) estava em 'co-comunhão' com a CEEC desde 2006 e fundiu-se à Província EUA em 2012.
     O sagrante William Paul Mikler e o co-sagrante Hermes Fernandes ligam-se a esse ambiente (CCI). Data de 2006
     é aproximada.
+- type: broke_communion_with
+  target: ceec
+  date: null
+  led_by:
+  - leonides-menezes
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      Inicialmente, este grupo se filiou à Comunhão das Igrejas Episcopais Evangélicas (CEEC) e, posteriormente,
+      tornou-se uma Igreja independente, com a sagração de Leonides como o bispo da “Comunhão das Igrejas Cristãs
+      Episcopais do Brasil” (CICEB).
+  notes: >-
+    Costa trata a ICEB como independente desde a sagração/renomeação (2006-2008); o site da CICEB ainda cita a comunhão
+    norte-americana como 'hoje chamada Communio Christiana Churches (CCC)'. Data de desligamento não precisa.

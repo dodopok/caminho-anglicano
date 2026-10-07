@@ -1,13 +1,23 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: egmont-krischke
 name: Egmont Krischke
+full_name: Egmont Valle Machado Krischke
 aliases:
 - Dom Egmont
 - E. M. Krischke
 - Edmont Machado Krischke
 - Egmont M. Krischke
 - Egmont Machado Krischke
+- Egmont Valle Machado Krischke
 - Most Rev. Egmont Machado Krischke
+- Rt. Rev. Egmont Machado Krischke
+death:
+  date: '1971-06-28'
+  sources:
+  - source: costa2021
+    quote: >-
+      Devido a motivos de saúde, o bispo Krischke resignou como diocesano, mas permaneceu como Primaz do Brasil,
+      vindo a falecer no exercício do cargo, em 28 de
 wikidata: Q23585620
 biography: >-
   Filho do Rev. George U. Krischke; reitor em Porto Alegre e Bagé; sagrado em 12/03/1950 em Bagé primeiro bispo
@@ -45,6 +55,8 @@ ordinations:
     quote: >-
       Krischke is to be consecrated at the Church of the Crucified, Bage, Brazil, March 12th, with Bishop Melcher
       the consecrator and Bishop Bentley and Bishop Pithan the co-consecrators.
+  - source: lc-1950-04-02
+    quote: Consecrated Bishop of Southwestern Brazil, March 12th, by ops Melcher, Pithan, and Bentley.
   - source: wp-en-krischke
     quote: >-
       Egmont Machado Krischke was consecrated on March 12, 1950, by: Louis Chester Melcher (475), I Missionary Bishop
@@ -76,6 +88,10 @@ affiliations:
   sources:
   - source: wit-1950-03-30
     quote: Bishop to be head of the newly-formed Missionary District of Southwestern Brazil
+  - source: lc-1949-10-30
+    quote: >-
+      The third district will be that o Southwestern Brazil and will consist of the western half of the states of
+      Grande do Sul and Santa Caterina. new bishop will be the Rev. Egmonte Machado Krischke.
   - source: wit-1955-09-29
     quote: He will replace Bishop Krischke who is transferring to Southern Brazil
 - jurisdiction: dmsb
@@ -125,6 +141,11 @@ affiliations:
     quote: electing Egmont Machado Krischke, son of an early missionary, as its Primate Bishop.
   - source: kickhofel
     quote: '1965 - Bispo primaz: Egmont Machado Krischke.'
+  - source: ens-43-9
+    quote: >-
+      the Presiding Bishop of the Church in Brazil, the Most Rev. Egmont M. Krischke, and the recently elected Archbishop
+      of the Church of the Province of Uganda, Rwanda and Burundi, the Most Rev. Erica Sabiti, were also installed
+      as episcopal canons.
   - source: ieab-sobre
     quote: >-
       Em 1965, veio a autonomia administrativa, quando a Igreja brasileira se transformou na  19ª Província da Comunhão

@@ -1,6 +1,30 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: olavo-ventura-luiz
 name: Olavo Ventura Luiz
+full_name: Olavo Ventura Luiz
+aliases:
+- Olavo Ventura Ruiz (grafia em Costa 2021)
+birth:
+  date: '1938-12-28'
+  sources:
+  - source: costa2021
+    quote: Olavo Ventura Luiz nasceu em Bagé, em 28 de dezembro de 1938.
+  - source: costa2021
+    quote: Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária
+death:
+  date: '1993-03-09'
+  sources:
+  - source: costa2021
+    quote: Olavo Ventura Luiz nasceu em Bagé, em 28 de dezembro de 1938.
+  - source: costa2021
+    quote: Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária
+biography: >-
+  Bispo da Diocese Sul-Ocidental (sagrado 1976) e primaz (1986-1993); morreu de malaria contraida em Mocambique.
+sources:
+- source: costa2021
+  quote: Olavo Ventura Luiz nasceu em Bagé, em 28 de dezembro de 1938.
+- source: costa2021
+  quote: Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária
 ordinations:
 - order: episcopate
   date: '1976-11-28'

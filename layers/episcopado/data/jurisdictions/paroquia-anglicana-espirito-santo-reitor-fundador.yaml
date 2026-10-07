@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: paroquia-anglicana-espirito-santo-reitor-fundador
+name: Paróquia Anglicana Espírito Santo (reitor/fundador)
+type: diocese
+relations:
+- type: part_of
+  target: diocese-anglicana-recife
+  status: probable
+  sources:
+  - source: portal-catedral-30anos
+    quote: >-
+      As atividades marcam a trajetória iniciada em 22 de agosto de 1996, quando a comunidade ainda era denominada
+      Paróquia Anglicana Espírito Santo (PAES).
+  - source: g1-2012-12-08-uchoa-posse
+    quote: >-
+      Miguel Uchôa continuará como reitor da Paróquia Anglicana do Espírito Santo, em Jaboatão dos Guararapes.

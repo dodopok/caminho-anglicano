@@ -2,19 +2,63 @@
 id: iaob
 acronym: IAOB
 name: Igreja Anglicana Ortodoxa do Brasil
-type: national_church
+type: other
 country: BR
 dissolved:
   date: '2007-12-28'
   sources:
   - source: blog-joaodeca-2007-05
     quote: Igreja Anglicana Ortodoxa do Brasil (IAOB) – Distrito Missionário Comunhão Anglicana Ortodoxa
+  - source: blog-josue-2006-11
+    quote: Igreja Anglicana Ortodoxa – IAO (Comunhão Anglicana Ortodoxa)
+  - source: fandom-iaob
+    quote: >-
+      A Igreja Anglicana Ortodoxa deixou de existir no Brasil, em virtude de seus membros (igrejas e clérigos) terem
+      se transferido para a Diocese do Recife - Cone Sul, em 28/12/2007
 description: >-
-  Distrito missionário brasileiro da Comunhão Anglicana Ortodoxa (Orthodox Anglican Communion), ativo em Pernambuco
-  por volta de 2007, ao qual pertencia Hermany Soares. Segundo resumo de mecanismo de busca do verbete do wiki Cristianismo
-  (Fandom), não aberto, seus membros passaram à Diocese do Recife – Cone Sul em 28/12/2007. ATENÇÃO: não confundir
-  com a "Igreja Anglicana Ortodoxa no Brasil" surgida em 2013 em Corumbá de Goiás (bispos Dirceu Falcão Ibaldo e
-  Adolfo Batista Teodoro Júnior).
+  Pequena jurisdição anglicana independente ("Comunhão Anglicana Ortodoxa") cujo primaz, Dom Hermany, negociou fusão
+  com a Diocese do Recife de Robinson Cavalcanti (data não informada, antes de 2012).
 sources:
-- source: blog-joaodeca-2007-05
-  quote: Igreja Anglicana Ortodoxa do Brasil (IAOB) – Distrito Missionário Comunhão Anglicana Ortodoxa
+- source: ultimato-manifesto-2006
+  quote: Igreja Anglicana Ortodoxa do Brasil (IAOB) – Distrito Missionário
+- source: iaob-site-2015
+  quote: >-
+    Sua Excelência Dom Robinson Cavalcanti, está mantendo reuniões com nosso Primaz Dom Hermany no sentido de haver
+    uma fusão completa entre a IGREJA ANGLICANA ORTODOXA DO BRASIL e a DIOCESE DO RECIFE.
+relations:
+- type: merged_with
+  target: diocese-anglicana-recife
+  date: null
+  led_by:
+  - hermany-soares
+  - robinson-cavalcanti
+  status: probable
+  sources:
+  - source: iaob-site-2015
+    quote: >-
+      no sentido de haver uma fusão completa entre a IGREJA ANGLICANA ORTODOXA DO BRASIL e a DIOCESE DO RECIFE
+  notes: Fusão em negociação ("vai ser concretizado muito brevemente"); conclusão e data não confirmadas.
+- type: merged_with
+  target: iacs
+  date: '2007-12-28'
+  led_by:
+  - hermany-soares
+  - robinson-cavalcanti
+  status: probable
+  sources:
+  - source: fandom-iaob
+    quote: terem se transferido para a Diocese do Recife - Cone Sul, em 28/12/2007
+  notes: >-
+    Incorporação da IAOB à Diocese do Recife (então sob a Igreja Anglicana do Cone Sul). Antes disso, ambas integravam
+    o movimento "Por uma Causa Comum" (2006).
+- type: member_of
+  target: comunhao-anglicana-ortodoxa-orthodox-anglican-communion
+  date: '2006'
+  end: '2007-12-28'
+  status: confirmed
+  sources:
+  - source: blog-josue-2006-11
+    quote: Igreja Anglicana Ortodoxa – IAO (Comunhão Anglicana Ortodoxa)
+  - source: blog-joaodeca-2007-05
+    quote: Igreja Anglicana Ortodoxa do Brasil (IAOB) – Distrito Missionário Comunhão Anglicana Ortodoxa
+  notes: Datas = período em que as fontes a mostram ativa.

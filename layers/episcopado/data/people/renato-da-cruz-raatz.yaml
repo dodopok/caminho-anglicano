@@ -1,6 +1,23 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: renato-da-cruz-raatz
 name: Renato da Cruz Raatz
+full_name: Renato da Cruz Raatz
+aliases:
+- Dom Renato Raatz
+- Renato Raatz
+birth:
+  date: '1951-11-25'
+  sources:
+  - source: costa2021
+    quote: Renato da Cruz Raatz nasceu em 25 de novembro de 1951, na cidade de Canguçu (RS).
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Renato da Cruz Raatz, Emérito
+biography: Bispo de Pelotas (2007-2019); emerito.
+sources:
+- source: costa2021
+  quote: Renato da Cruz Raatz nasceu em 25 de novembro de 1951, na cidade de Canguçu (RS).
+- source: ieab-secretaria
+  quote: Revmo. Bispo Renato da Cruz Raatz, Emérito
 ordinations:
 - order: episcopate
   date: '2007-04-15'

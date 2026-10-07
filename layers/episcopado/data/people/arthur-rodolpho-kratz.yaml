@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: arthur-rodolpho-kratz
 name: Arthur Rodolpho Kratz
+full_name: Arthur Rodolpho Kratz
 aliases:
 - Arthur R. Kratz
 - Dom Arthur Kratz
@@ -10,6 +11,15 @@ birth:
   - source: ens-72149
     quote: >-
       He was ordained a priest in 1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
+death:
+  date: 1984-03
+  sources:
+  - source: costa2021
+    quote: Arthur Rodolpho Kratz nasceu em Pelotas, em 19 de dezembro de 1920.
+  - source: ens-84063
+    quote: >-
+      The Most Rev. Arthur Kratz, Bispo Primaz of the Episcopal Church of Brazil since 1972, died here after a series
+      of heart attacks. He was 62.
 biography: >-
   Nascido em Pelotas (1922), ordenado presbítero em 1948; bispo do Sul do Brasil em 1971 e segundo primaz (1972).
 sources:

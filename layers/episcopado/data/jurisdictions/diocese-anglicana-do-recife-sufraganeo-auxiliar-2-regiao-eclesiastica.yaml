@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-do-recife-sufraganeo-auxiliar-2-regiao-eclesiastica
+name: Diocese Anglicana do Recife (sufragâneo/auxiliar; 2ª Região Eclesiástica)
+type: diocese
+relations:
+- type: part_of
+  target: diocese-anglicana-recife
+  status: probable
+  sources:
+  - source: wp-pt-evilasio
+    quote: responsável pela 2ª Região Eclesiástica (de Pernambuco ao Rio Grande do Sul)
+  - source: mu-blog-2012-07-22
+    quote: o Revmo Evilásio Tenório, Bispo sufraganeo (auxiliar) da DR

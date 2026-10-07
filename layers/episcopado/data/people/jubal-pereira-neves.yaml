@@ -1,6 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jubal-pereira-neves
 name: Jubal Pereira Neves
+full_name: Jubal Pereira Neves
+aliases:
+- Dom Jubal Neves
+birth:
+  date: '1943-03-29'
+  sources:
+  - source: costa2021
+    quote: Jubal Pereira Neves nasceu em Santa Maria, Rio Grande do Sul, em 29 de março de 1943.
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Jubal Neves, Emérito
+biography: Secretario-geral (1983-1993) e bispo da Diocese Sul-Ocidental (1993-2011); emerito.
+sources:
+- source: costa2021
+  quote: Jubal Pereira Neves nasceu em Santa Maria, Rio Grande do Sul, em 29 de março de 1943.
+- source: ieab-secretaria
+  quote: Revmo. Bispo Jubal Neves, Emérito
 ordinations:
 - order: episcopate
   date: '1993-09-19'

@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ricardo-lorite-de-lima
+name: Ricardo Lorite de Lima
+full_name: Ricardo Lorite de Lima
+aliases:
+- Arcebispo Primus Dom Ricardo Lorite de Lima
+- Bispo Ricardo Lorite
+- Ricardo Lorite
+biography: >-
+  Ex-membro da Diocese Anglicana de São Paulo (IEAB), bispo fundador da 'Igreja Anglicana do Brasil' (encerrada
+  em 2017); depois fundou a Igreja Protestante Unida, filiada à Aliança de Batistas do Brasil.
+sources:
+- source: costa-2021-tese
+  quote: >-
+    Após isto, o bispo Ricardo Lorite reorganizou o grupo e fundou a Igreja Protestante Unida, filiando-se à Aliança
+    de Batistas do Brasil.
+ordinations:
+- order: episcopate
+  date: null
+  jurisdiction: iadb-lorite
+  co_consecrators:
+  - frank-peachey
+  - iranildo-macieira-da-silva
+  - norman-dutton
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      Após receberem as ordens do diaconato e do presbiterato por bispos independentes, Ricardo Lorite e Rui Barbosa
+      tiveram sua ordenação episcopal através dos bispos Norman Dutton, Frank Peachey e Iranildo Macieira da Silva
+      (Igreja Episcopal Latina do Brasil).
+  notes: >-
+    Data e sagrante principal não informados; a fonte lista três bispos sagrantes sem hierarquia. Iranildo Macieira
+    da Silva é da 'Igreja Episcopal Latina do Brasil'.

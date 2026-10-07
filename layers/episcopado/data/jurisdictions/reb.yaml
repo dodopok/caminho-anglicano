@@ -11,33 +11,21 @@ founded:
     quote: >-
       considerando a fundação da Rede Episcopal Brasileira e a decisão tomada na reunião de fundação, conforme a
       Ata de Fundação datada de 20 de Dezembro 2024
-  - source: reb-portaria-01-2024
-    quote: >-
-      Dado e passado na Igreja Âncora, sede episcopal da Rede Episcopal Brasileira, em Vitória, ES, aos 20 dias
-      do mês de dezembro do ano de 2024.
-  - source: reb-home
-    quote: A REB é uma rede de igrejas de tradição anglicana.
-  - source: reb-blog-eric
-    quote: como bispo de uma diocese fora da Comunhão Anglicana
+  - source: reb-estrutura
+    quote: Bispo da Rede Episcopal Brasileira, artista visual, Casado com Elionai Rodrigues
 locator_slug: reb
 website: https://redeepiscopalbrasileira.com.br/
 description: >-
-  Rede de igrejas de tradição anglicana fundada em 20/12/2024 (Ata de Fundação) com sede episcopal na Igreja Âncora,
-  Vitória/ES; bispo: Eric Rodrigues. Declara-se fora da Comunhão Anglicana. Presente no ES, SP, MG, AM, PR e DF
-  (site, 2026).
+  Rede de igrejas de tradição anglicana fundada em 20/12/2024, com sede episcopal na Igreja (Catedral) Anglicana
+  Âncora em Vitória (ES), liderada pelo bispo Eric Rodrigues, ex-bispo auxiliar da IAB; ordena mulheres a todas
+  as ordens.
 sources:
 - source: reb-portaria-01-2024
   quote: >-
     considerando a fundação da Rede Episcopal Brasileira e a decisão tomada na reunião de fundação, conforme a Ata
     de Fundação datada de 20 de Dezembro 2024
-- source: reb-portaria-01-2024
-  quote: >-
-    Dado e passado na Igreja Âncora, sede episcopal da Rede Episcopal Brasileira, em Vitória, ES, aos 20 dias do
-    mês de dezembro do ano de 2024.
-- source: reb-home
-  quote: A REB é uma rede de igrejas de tradição anglicana.
-- source: reb-blog-eric
-  quote: como bispo de uma diocese fora da Comunhão Anglicana
+- source: reb-estrutura
+  quote: Bispo da Rede Episcopal Brasileira, artista visual, Casado com Elionai Rodrigues
 relations:
 - type: schism_from
   target: iab
@@ -48,11 +36,36 @@ relations:
   sources:
   - source: reb-portaria-01-2024
     quote: >-
+      Dado e passado na Igreja Âncora, sede episcopal da Rede Episcopal Brasileira, em Vitória, ES, aos 20 dias
+      do mês de dezembro do ano de 2024.
+  - source: reb-mulheres
+    quote: homens e mulheres são ordenados ao Diaconato (transitório ou permanente), Presbiterato e Episcopado
+  - source: reb-portaria-01-2024
+    quote: >-
       considerando a fundação da Rede Episcopal Brasileira e a decisão tomada na reunião de fundação, conforme a
       Ata de Fundação datada de 20 de Dezembro 2024
-  - source: eshoje-2023-05-15
+  - source: eshoje-eric-2023
     quote: afirma novo Bispo da IAB, atuante em Vitória
   notes: >-
-    A REB foi fundada por um bispo da IAB e tem sede na antiga paróquia IAB dele (Âncora, Vitória). Nenhuma fonte
-    aberta usa a palavra "cisma" nem descreve o processo de saída; a relação é inferida da trajetória do fundador.
-    Também pode ser lida como fundação nova (não cisma formal).
+    Nenhuma fonte usa a palavra cisma/saída: inferido de Eric Rodrigues (bispo auxiliar da IAB em 2023) e da Igreja
+    Âncora (IAB em 2018) estarem na REB fundada em 20/12/2024. A REB ordena mulheres ao episcopado; a IAB não (ptwp-iab).
+    Igrejas da antiga Região Missionária da IAB (Âncora/Vitória, Família/Jacareí, Francisco Beltrão-PR) aparecem
+    na REB. A REB foi fundada por um bispo da IAB e tem sede na antiga paróquia IAB dele (Âncora, Vitória). Nenhuma
+    fonte aberta usa a palavra "cisma" nem descreve o processo de saída; a relação é inferida da trajetória do fundador.
+    Pode também ser lida como fundação nova, não cisma formal.
+- type: in_communion_with
+  target: ieub
+  date: '2026-01-27'
+  led_by:
+  - eric-rodrigues
+  - hermany-soares
+  status: probable
+  sources:
+  - source: ivoox-planando
+    quote: Planando como águias | Bispo Hermany Soares
+  notes: >-
+    Declaração de comunhão vista APENAS em snippet de busca de post do Instagram @redeepiscopalbrasileira de 27/01/2026:
+    "Atendendo ao chamado de nosso Senhor Jesus Cristo à unidade da Igreja, a Rede Episcopal Brasileira e a Igreja
+    Episcopal Unida do Brasil afirmam, em comunhão, o compromisso com o testemunho do Evangelho...". A fonte citada
+    aqui só comprova a participação de Hermany no sínodo da REB (out/2025). Outro snippet (16/06/2026) chama a IEUB
+    de "igreja irmã".

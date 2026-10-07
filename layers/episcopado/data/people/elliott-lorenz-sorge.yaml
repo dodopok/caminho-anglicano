@@ -1,6 +1,33 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: elliott-lorenz-sorge
 name: Elliott Lorenz Sorge
+full_name: Elliott Lorenz Sorge
+aliases:
+- Elliot Sorge
+- Rt. Rev. Elliott L. Sorge
+birth:
+  date: '1929-01-31'
+  sources:
+  - source: costa2021
+    quote: Elliott Lorenz Sorge nasceu em 31 de janeiro de 1929 na cidade de Michigan, Indiana.
+  - source: costa2021
+    quote: Faleceu em 06 de dezembro de 2011.
+death:
+  date: '2011-12-06'
+  sources:
+  - source: costa2021
+    quote: Elliott Lorenz Sorge nasceu em 31 de janeiro de 1929 na cidade de Michigan, Indiana.
+  - source: costa2021
+    quote: Faleceu em 06 de dezembro de 2011.
+wikidata: Q21598002
+biography: >-
+  Missionario norte-americano; primeiro bispo da Diocese Sul Central/Sao Paulo (1971-1977); depois bispo de Easton
+  (TEC, 1983-1993).
+sources:
+- source: costa2021
+  quote: Elliott Lorenz Sorge nasceu em 31 de janeiro de 1929 na cidade de Michigan, Indiana.
+- source: costa2021
+  quote: Faleceu em 06 de dezembro de 2011.
 ordinations:
 - order: episcopate
   date: '1971'

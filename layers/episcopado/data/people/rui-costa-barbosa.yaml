@@ -4,10 +4,35 @@ name: Rui Costa Barbosa
 full_name: Rui Costa Barbosa
 aliases:
 - Dom Rui Costa
-biography: Bispo primaz da Igreja Anglicana Tradicional do Brasil (IATB/AECI), São Paulo.
+biography: >-
+  Bispo primaz da Igreja Anglicana Tradicional do Brasil (IATB/AECI), São Paulo. Ex-membro da Diocese Anglicana
+  de São Paulo (IEAB); sagrado por Norman Dutton, Frank Peachey e Iranildo Macieira da Silva (Costa 2021); fundador
+  da 'Diocese Anglicana Católica do Brasil', depois IATB (Santo André).
 sources:
 - source: iatb-comunidades
   quote: sob a direção do Bispo Primaz do Brasil, Dom Rui Costa Barbosa.
+- source: costa-2021-tese
+  quote: >-
+    Ricardo Lorite e Rui Barbosa tiveram sua ordenação episcopal através dos bispos Norman Dutton, Frank Peachey
+    e Iranildo Macieira da Silva (Igreja Episcopal Latina do Brasil).
+ordinations:
+- order: episcopate
+  date: null
+  jurisdiction: iadb-lorite
+  co_consecrators:
+  - frank-peachey
+  - iranildo-macieira-da-silva
+  - norman-dutton
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      Após receberem as ordens do diaconato e do presbiterato por bispos independentes, Ricardo Lorite e Rui Barbosa
+      tiveram sua ordenação episcopal através dos bispos Norman Dutton, Frank Peachey e Iranildo Macieira da Silva
+      (Igreja Episcopal Latina do Brasil).
+  notes: >-
+    Data e sagrante principal não informados; a fonte lista três bispos sagrantes sem hierarquia. Iranildo Macieira
+    da Silva é da 'Igreja Episcopal Latina do Brasil'.
 affiliations:
 - jurisdiction: iatb
   role: primate
@@ -17,6 +42,18 @@ affiliations:
     quote: sob a direção do Bispo Primaz do Brasil, Dom Rui Costa Barbosa.
   - source: iatb-clerigos
     quote: Dom Rui Costa - São Paulo
+- jurisdiction: ieab
+  role: member
+  diocese: ieab-diocese-sao-paulo
+  end_reason: left
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      originada a partir de um grupo formado por ex-membros da Diocese Anglicana de São Paulo (DASP), Ricardo Lorite
+      de Lima, Rui Costa Barbosa
+  notes: >-
+    A fonte não diz se era clérigo ou leigo na IEAB; recebeu diaconato e presbiterato 'por bispos independentes'.
 events:
 - type: other
   date: '2025-11-16'

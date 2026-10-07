@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: theodoro-a-c-de-oliveira
+name: Theodoro A. C. de Oliveira
+aliases:
+- Dom Theodoro de Oliveira
+- Monsenhor Theodoro A. C. de Oliveira
+biography: >-
+  Ex-padre greco-melquita; primeiro bispo da Diocese Anglicana Santa Mãe de Deus, de Votorantim (SP), sagrado em
+  fevereiro de 2015.
+sources:
+- source: costa-2021-tese
+  quote: No início de 2015 ocorreu o rompimento do padre Theodoro A. C. de Oliveira com a comunhão com Roma
+ordinations:
+- order: episcopate
+  date: '2015-02-09'
+  place: Santuário Theodoro Mártir, Barra Funda, Votorantim (SP)
+  jurisdiction: dav
+  principal_consecrator: victor-manuel-cruz-blanco
+  co_consecrators:
+  - james-roque
+  - rafael-ribeiro-campos
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      O Monsenhor Theodoro A. C. de Oliveira foi ordenado na noite da última segunda-feira (9) bispo da Diocese
+      Anglicana Santa Mãe de Deus Votorantim.
+  - source: costa-2021-tese
+    quote: >-
+      Participaram da ordenação o Arcebispo Metropolitano da Província Católica de Rito Anglicano da Colômbia Dom
+      Victor Manuel Cruz-Blanco, o Bispo da Diocese Anglicana do Japi, da cidade de Jundiaí, Dom James Roque e o
+      Abade Nullius da Abadia Cistercience S. Raphael, de Aparecida de Goiânia/ GO Dom Rafael Ribeiro Campos.
+  notes: >-
+    Costa cita reportagem (GOUVEA, 18 fev. 2015). 'Segunda-feira (9)' em fevereiro de 2015 = 9/2/2015. A fonte diz
+    que os três 'participaram'; a ordem sugere Cruz-Blanco como principal, sem confirmação. 'Rafael Ribeiro Campos'
+    pode ter relação com Raniere Ribeiro Campos, ex-bispo da IECB — NÃO verificado.
+affiliations:
+- jurisdiction: dav
+  role: diocesan_bishop
+  start: 2015-02
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: o sacerdote foi sagrado como o seu primeiro bispo diocesano.

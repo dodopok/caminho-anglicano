@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: mauricio-andrade
 name: Mauricio Jose Araujo de Andrade
+full_name: Maurício José Araújo de Andrade
 aliases:
 - Bispo Maurício
 - Dom Maurício Andrade
@@ -9,16 +10,14 @@ aliases:
 birth:
   date: '1962-03-07'
   sources:
-  - source: dab-bispo-mauricio
-    quote: Este é Maurício José de Araújo Andrade, ou simplesmente Bispo Maurício.
-  - source: dab-bispo-mauricio
-    quote: Nascido em 7 de março de 1962, no Rio de Janeiro
-biography: Bispo diocesano de Brasília (IEAB) desde 2003 e primaz da IEAB de 2006 a 2013.
+  - source: costa2021
+    quote: Nascido em 07 de março de 1962, na capital pernambucana, Maurício José Araújo de
+wikidata: Q25419326
+biography: >-
+  Secretario-geral (1994-2003), bispo de Brasilia (2003-), primaz (2006-2013), bispo interventor no Recife (2005).
 sources:
-- source: dab-bispo-mauricio
-  quote: Este é Maurício José de Araújo Andrade, ou simplesmente Bispo Maurício.
-- source: dab-bispo-mauricio
-  quote: Nascido em 7 de março de 1962, no Rio de Janeiro
+- source: costa2021
+  quote: Nascido em 07 de março de 1962, na capital pernambucana, Maurício José Araújo de
 ordinations:
 - order: diaconate
   date: '1988'
@@ -81,6 +80,10 @@ affiliations:
       o 30º Sínodo Geral (Curitiba, 26 a 30 de julho de 2006).
   - source: ens-102306-1-a
     quote: The newly elected primate of Brazil, the Most Rev. Mauricio Andrade, presided over the investiture
+  - source: ens-060710-03
+    quote: >-
+      Earlier in the synod, delegates and provincial bishops elected Andrade by acclamation to a second term as
+      primate
 - jurisdiction: ieab
   role: other
   role_description: bispo_encarregado
@@ -132,3 +135,37 @@ events:
     quote: >-
       The House of Bishops of the Episcopal Anglican Church of Brazil gathered in Curitiba unanimously express their
       strong repudiation of the recent visit by the Archbishop of the Southern Cone to the city of Recife
+- type: other
+  date: '2004-09-16'
+  description: >-
+    Decreto da Câmara dos Bispos da IEAB institui supervisão episcopal especial para clérigos e comunidades da Diocese
+    Anglicana do Recife em dissenso com o bispo Robinson Cavalcanti, nomeando o bispo Maurício Andrade (Brasília)
+    supervisor; o bispo sufragâneo Filadelfo Oliveira continua seu ministério na diocese
+  status: confirmed
+  sources:
+  - source: ieab-2004-decreto-recife
+    quote: >-
+      1. Decretar a supervisão episcopal especial das comunidades e clérigos e clérigas da Diocese Anglicana do
+      Recife que se
+  - source: ieab-2004-decreto-recife
+    quote: >-
+      2. Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília para desempenhar a função de supervisor
+  - source: ieab-2004-decreto-recife
+    quote: >-
+      A Câmara dos Bispos acolheu a solicitação do Bispo Sufragâneo, de 14 clérigos, 9 paróquias e 6 missões, todos
+- type: other
+  date: '2004-09-16'
+  description: >-
+    Câmara dos Bispos da IEAB (Porto Alegre, 16/09/2004) decreta supervisão episcopal especial para o clero e comunidades
+    da Diocese do Recife em dissidência com o bispo Robinson Cavalcanti, nomeando o bispo Maurício Andrade (Brasília),
+    e mantém o bispo sufragâneo Filadelfo Oliveira em funções.
+  status: confirmed
+  sources:
+  - source: acns-3885-2004
+    quote: >-
+      Appoint the Rt Revd Dom Mauricio Andrade, the diocesan bishop of Brasilia, to perform the task of special
+      episcopal oversight
+  - source: acns-3885-2004
+    quote: >-
+      the Suffragan Bishop Dom Filadelfo Oliveira, according to his canonical prerogatives, continues to exert his
+      pastoral ministry to the communities of the Anglican Diocese of Recife.

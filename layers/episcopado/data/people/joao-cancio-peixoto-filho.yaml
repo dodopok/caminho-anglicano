@@ -1,19 +1,24 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: joao-cancio-peixoto-filho
 name: Joao Cancio Peixoto Filho
+full_name: João Câncio Peixoto Filho
 aliases:
 - Bispo Peixoto
 - Dom João Peixoto
+- Joao Peixoto
 - João C. Peixoto Filho
+- João Cancio Peixoto
 - João Peixoto
-biography: >-
-  Bispo diocesano da Diocese Anglicana do Recife (IEAB) desde 2013; ordenado diácono em 2003 e presbítero em 2005;
-  ex-reitor do SAET.
+birth:
+  date: '1961-05-17'
+  sources:
+  - source: costa2021
+    quote: João Câncio Peixoto Filho nasceu em Recife, em 17 de maio de 1961.
+wikidata: Q47537839
+biography: Bispo da Diocese Anglicana do Recife (2013-).
 sources:
-- source: dar-2023-peixoto10
-  quote: >-
-    Ordenado ao diaconato no ano de 2003 e ao presbiterato em 2005, João Peixoto também foi reitor do Seminário
-    Anglicano de Estudos Teológicos (SAET).
+- source: costa2021
+  quote: João Câncio Peixoto Filho nasceu em Recife, em 17 de maio de 1961.
 ordinations:
 - order: diaconate
   date: '2003'
@@ -46,11 +51,9 @@ ordinations:
   office: diocesan
   principal_consecrator: francisco-de-assis-da-silva
   co_consecrators:
-  - filadelfo-oliveira
   - filadelfo-oliveira-neto
   - mauricio-andrade
   - saulo-barros
-  - saulo-mauricio-de-barros
   - sebastiao-gameleira
   status: contested
   sources:
@@ -110,6 +113,19 @@ affiliations:
     quote: >-
       nos alegramos com toda a Igreja pelos 10 anos de episcopado do Bispo João Câncio Peixoto Filho, à frente da
       Diocese Anglicana do Recife.
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-diocese-recife
+  status: confirmed
+  sources:
+  - source: ieab-2004-decreto-recife
+    quote: 'Considerando a solicitação dos clérigos e clérigas a seguir relacionados:'
+  - source: ieab-2004-decreto-recife
+    quote: Rev. João C.
+  notes: >-
+    Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
+    por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. Futuro bispo diocesano
+    do Recife (2013)
 events:
 - type: other
   date: '2026-08-08'

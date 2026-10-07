@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-recife-paroquia-anglicana-agua-viva-olinda
+name: Diocese de Recife (Paróquia Anglicana Água Viva, Olinda)
+type: diocese
+relations:
+- type: part_of
+  target: iab
+  status: confirmed
+  sources:
+  - source: dr-igrejas-2019
+    quote: 'Reitor: Revmo. Flávio Adair Torres Soares'

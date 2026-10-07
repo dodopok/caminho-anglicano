@@ -1,8 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: gregory-venables
 name: Gregory Venables
+full_name: Gregory James Venables
 aliases:
+- Greg Venables
+- Gregorio J. Venables
 - Gregory James Venables
+- The Most Rev. Gregory J. Venables
+biography: >-
+  Primaz (Presiding Bishop) da Igreja Anglicana do Cone Sul da América; em 24/09/2005 concedeu 'extra-provincial
+  recognition' ao bispo e clero do Recife depostos pela IEAB.
+sources:
+- source: acns-4040-2005-venables
+  quote: The Most Rev. Gregory J. Venables Presiding Bishop of the Southern Cone of South America
 events:
 - type: other
   date: '2008-04-03'
@@ -29,3 +39,37 @@ events:
     quote: deposto e um grupo de clérigos depostos que pertenceram à Diocese Anglicana do Recife.
   - source: ieab-2005-carta-venables
     quote: foi condenado pelo Tribunal Superior Eclesiástico
+- type: other
+  date: '2005'
+  description: >-
+    A Câmara dos Bispos da IEAB declara que 32 clérigos da Diocese do Recife, solidários com Robinson Cavalcanti,
+    incorreram em abandono da comunhão da Igreja segundo os cânones provinciais, e protesta contra seu acolhimento
+    pelo arcebispo Gregory Venables (Cone Sul)
+  status: confirmed
+  sources:
+  - source: ieab-2005-cbispos-cantuaria
+    quote: >-
+      Quanto aos 32 clérigos que foram alegadamente condenados sem julgamento prévio, alertamos para o fato de que
+      nossos Cânones
+  - source: ieab-2005-cbispos-cantuaria
+    quote: Provinciais prevêem o abandono da comunhão da Igreja.
+  - source: ieab-2005-cbispos-cantuaria
+    quote: >-
+      Recebemos uma resposta coletiva de que todos estavam solidários com a atitude de Robinson Cavalcanti.
+  - source: ieab-2005-cbispos-cantuaria
+    quote: Brasil recebendo Robinson Cavalcanti e os 32 clérigos dissidentes, de forma unilateral.
+- type: other
+  date: '2008-03-27'
+  description: >-
+    Venables visita a Diocese do Recife (27/03–01/04/2008); a Câmara dos Bispos da IEAB, em Curitiba (declaração
+    de 09/04/2008), repudia a visita como violação da autonomia provincial e do Relatório de Windsor.
+  status: confirmed
+  sources:
+  - source: acl-2008-04-07-venables-visit
+    quote: >-
+      Between March 27 and April 1, Archbishop of the Southern Cone, Greg Venables, visited the Diocese of Recife
+      in Brazil.
+  - source: ta-2008-04-10-ieab-bishops
+    quote: >-
+      The House of Bishops of the Episcopal Anglican Church of Brazil gathered in Curitiba unanimously express their
+      strong repudiation of the recent visit by the Archbishop of the Southern Cone to the city of Recife

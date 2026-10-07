@@ -1,6 +1,21 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: meriglei-borges-silva-simim
 name: Meriglei Borges Silva Simim
+full_name: Meriglei Borges Silva Simim
+aliases:
+- Bispa Meriglei Simim
+- Mariglei Borges Silva Simin
+- Meriglei Borges Simin da Silva
+- Meriglei Borges da Silva Simim
+birth:
+  date: '1967-06-29'
+  sources:
+  - source: costa2021
+    quote: Meriglei Borges Silva Simin nasceu em 29 de junho de 1967, na cidade de Canguçu (RS).
+biography: Segunda bispa da IEAB; bispa de Pelotas (2020-).
+sources:
+- source: costa2021
+  quote: Meriglei Borges Silva Simin nasceu em 29 de junho de 1967, na cidade de Canguçu (RS).
 ordinations:
 - order: episcopate
   date: '2019-11-17'

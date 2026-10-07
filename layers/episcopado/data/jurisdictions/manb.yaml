@@ -2,6 +2,8 @@
 id: manb
 acronym: MAnB
 name: Movimento Anglicano no Brasil
+aliases:
+- Movimento Anglicano no Brasil / Diocese Anglicana no Brasil (Catedral Anglicana de São Paulo)
 type: national_church
 country: BR
 founded:
@@ -23,7 +25,7 @@ sources:
 relations:
 - type: schism_from
   target: ieab
-  date: '2013'
+  date: '2013-04-06'
   led_by:
   - aldo-quintao
   - glauco-soares-de-lima
@@ -38,4 +40,9 @@ relations:
     quote: >-
       Em 2012, sofreu um cisma da IEAB, em que a Catedral Anglicana de São Paulo, com outras paróquias e missões,
       desligaram-se da diocese e da IEAB
-  notes: 'Data: 2012 (Wikipedia PT) ou 2013 (Costa; Glauco aderiu em 2013).'
+  - source: costa-2021-tese
+    quote: >-
+      Após realizar uma assembleia, foi votada a modificação dos estatutos da Catedral, em 06 de abril de 2013.
+  notes: >-
+    Data: 2012 (Wikipedia PT) ou 2013 (Costa; Glauco aderiu em 2013). Possível sobreposição com a frente IEAB; incluído
+    por ser jurisdição menor independente.

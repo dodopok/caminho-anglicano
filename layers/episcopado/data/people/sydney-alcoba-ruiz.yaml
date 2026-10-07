@@ -1,6 +1,29 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: sydney-alcoba-ruiz
 name: Sydney Alcoba Ruiz
+full_name: Sydney Alcoba Ruiz
+aliases:
+- Dom Sydney Ruiz
+birth:
+  date: '1932-10-20'
+  sources:
+  - source: costa2021
+    quote: Sydney Alcoba Ruiz nasceu em Vera Cruz, São Paulo, em 20 de outubro de 1932.
+  - source: costa2021
+    quote: Faleceu em 14 de novembro de
+death:
+  date: '2001-11-14'
+  sources:
+  - source: costa2021
+    quote: Sydney Alcoba Ruiz nasceu em Vera Cruz, São Paulo, em 20 de outubro de 1932.
+  - source: costa2021
+    quote: Faleceu em 14 de novembro de
+biography: Bispo da Diocese Central/Rio de Janeiro (1985-1998/2000).
+sources:
+- source: costa2021
+  quote: Sydney Alcoba Ruiz nasceu em Vera Cruz, São Paulo, em 20 de outubro de 1932.
+- source: costa2021
+  quote: Faleceu em 14 de novembro de
 ordinations:
 - order: episcopate
   date: '1985-03-24'

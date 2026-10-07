@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iadb-lorite
+acronym: IAdB-Lorite
+name: Igreja Anglicana do Brasil (de Ricardo Lorite; não confundir com a IAB)
+type: national_church
+country: BR
+dissolved:
+  date: '2017-10-30'
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      Em 30 de outubro de 2017, a Igreja Anglicana do Brasil encerrou suas atividades, deixando uma mensagem em
+      seu site
+  - source: costa-2021-tese
+    quote: >-
+      temos a “Igreja Anglicana do Brasil” originada a partir de um grupo formado por ex-membros da Diocese Anglicana
+      de São Paulo (DASP), Ricardo Lorite de Lima, Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres.
+description: >-
+  Igreja independente formada por ex-membros da Diocese Anglicana de São Paulo (IEAB): Ricardo Lorite de Lima, Rui
+  Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres. Encerrou suas atividades em 30/10/2017, por decisão
+  do Sínodo de abril de 2017.
+sources:
+- source: costa-2021-tese
+  quote: >-
+    Em 30 de outubro de 2017, a Igreja Anglicana do Brasil encerrou suas atividades, deixando uma mensagem em seu
+    site
+- source: costa-2021-tese
+  quote: >-
+    temos a “Igreja Anglicana do Brasil” originada a partir de um grupo formado por ex-membros da Diocese Anglicana
+    de São Paulo (DASP), Ricardo Lorite de Lima, Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres.

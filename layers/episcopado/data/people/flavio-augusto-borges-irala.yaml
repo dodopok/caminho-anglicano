@@ -1,9 +1,11 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: flavio-augusto-borges-irala
 name: Flavio Augusto Borges Irala
+full_name: Flávio Augusto Borges Irala
 aliases:
 - Bispo Flávio Irala
 - Dom Flávio Irala
+- Flávio Borges Irala
 birth:
   date: '1954-05-21'
   sources:
@@ -18,9 +20,8 @@ death:
     quote: Nascido em 21 de maio de 1954, em Bagé, Rio Grande do Sul
   - source: ieab-irala-falecimento
     quote: ocorrido em 9 de janeiro de 2025.
-biography: >-
-  Bispo da Diocese Anglicana de São Paulo (IEAB) de 2013 a 2021; antes, deão da Catedral de São Tiago em Curitiba.
-  Liturgista e compositor.
+wikidata: Q138971594
+biography: Bispo de Sao Paulo (2013-2021); presidente do CONIC.
 sources:
 - source: ieab-irala-falecimento
   quote: Nascido em 21 de maio de 1954, em Bagé, Rio Grande do Sul

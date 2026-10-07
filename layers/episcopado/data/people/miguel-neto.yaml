@@ -1,7 +1,51 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: miguel-neto
 name: Miguel Neto
+aliases:
+- Bp. Miguel Neto
+biography: >-
+  Eleito bispo auxiliar da IAB em 13/03/2023; listado em 2023 como bispo assistente da Diocese de João Pessoa. Nome
+  completo não encontrado.
+sources:
+- source: anglicanismo-eleicao-2023
+  quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues
+affiliations:
+- jurisdiction: iab
+  role: bishop
+  diocese: iab-diocese-joao-pessoa
+  start: '2023'
+  status: probable
+  sources:
+  - source: wp-en-iab
+    quote: Miguel Neto, Eric Rodrigues (assistant)
+  - source: anglicanismo-eleicao-2023
+    quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues
+  notes: Data/local da sagração não encontrados.
+- jurisdiction: iab
+  role: bishop
+  diocese: diocese-de-joao-pessoa-auxiliar
+  start: '2023'
+  status: probable
+  sources:
+  - source: wp-en-iab
+    quote: Márcio Meira (diocesan) Miguel Neto, Eric Rodrigues (assistant)
+  - source: anglicanismo-eleicao-2023
+    quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues.
+  notes: Início = eleição (13/03/2023); data de sagração desconhecida.
 events:
+- type: other
+  date: '2023-03-13'
+  description: Sínodo Extraordinário Online da IAB elege Miguel Neto e Eric Rodrigues bispos auxiliares
+  status: confirmed
+  sources:
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
+      Miguel Neto e Bp. Eric Rodrigues.
+  - source: eshoje-eric-2023
+    quote: >-
+      No dia 13 de março deste ano, a Igreja Anglicana no Brasil (IAB) elegeu, em seu primeiro Sínodo Extraordinário
+      Online, dois novos bispos auxiliares
 - type: other
   date: '2023-03-13'
   description: >-
@@ -9,11 +53,26 @@ events:
     conduzido pelo bispo Márcio Meira.
   status: confirmed
   sources:
-  - source: anglicanismo-2023-03-14
+  - source: anglicanismo-eleicao-2023
     quote: >-
       Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
       Miguel Neto e Bp. Eric Rodrigues.
-  - source: eshoje-2023-05-15
+  - source: eshoje-eric-2023
     quote: >-
       No dia 13 de março deste ano, a Igreja Anglicana no Brasil (IAB) elegeu, em seu primeiro Sínodo Extraordinário
       Online, dois novos bispos auxiliares
+- type: other
+  date: '2023-03-13'
+  description: >-
+    1º Sínodo Extraordinário Online da IAB, conduzido pelo bispo Márcio Meira com abertura e encerramento do primaz
+    Miguel Uchôa, elege dois bispos auxiliares: Miguel Neto e Eric Rodrigues.
+  status: probable
+  sources:
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
+      Miguel Neto e Bp. Eric Rodrigues.
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      O evento foi conduzido pelo Bispo Marcio Meira, contando com a participação especial do Bispo Primaz, Miguel
+      Uchoa, que abriu e fechou a cerimônia.

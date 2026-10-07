@@ -1,61 +1,171 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: hermany-soares
-name: Hermany Soares
+name: Hermany Silva Soares
 aliases:
+- Bispo Hermany Soares
 - Dom Hermany
+- Dom Hermany Soares
+- Hermany Soares
+- Hermany Soares+
+- Rev. Hermany Soares
+- Revmo. Hermany Soares
 biography: >-
-  Clérigo pernambucano. Em 2007 aparece como reverendo da Igreja Anglicana Ortodoxa do Brasil (IAOB, ligada à Comunhão
-  Anglicana Ortodoxa); a partir de 2009 aparece como secretário administrativo da Diocese do Recife (sob o Cone
-  Sul) e depois como reverendo da IAB. Associado pelo site Caminho Anglicano/usuário à fundação da IEUB.
+  Presbítero; em 2006 ligado à Igreja Anglicana Ortodoxa do Brasil (IAOB), depois secretário administrativo da Diocese
+  do Recife (2009) e clérigo da Diocese de Recife da IAB (2019). Um site paroquial da IAOB o chama de "nosso Primaz
+  Dom Hermany".
 sources:
-- source: blog-joaodeca-2007-05
-  quote: Igreja Anglicana Ortodoxa do Brasil (IAOB) – Distrito Missionário
-- source: blog-betesda-2009-10
-  quote: >-
-    Dom Robinson Cavalcanti veio acompanhado do secretário administrativo da diocese, Rev. Hermany Soares
-- source: iab-autor-hermany
-  quote: Rev. Hermany Soares | Igreja Anglicana no Brasil
+- source: dr-pastores-2019
+  quote: Hermany Silva Soares
+- source: betesda-2009-10
+  quote: secretário administrativo da diocese, Rev. Hermany Soares
 affiliations:
+- jurisdiction: iaob
+  role: clergy
+  start: '2006'
+  status: confirmed
+  sources:
+  - source: ultimato-manifesto-2006
+    quote: Rev. Hermany Soares+ (Paróquia Cristo Redentor)
+  notes: Signatário (30/11/2006) pela IAOB – Distrito Missionário.
 - jurisdiction: iacs
   role: clergy
-  diocese: diocese-anglicana-recife
-  start: 2009-10
+  diocese: diocese-do-recife-secretario-administrativo
+  start: '2007-12-28'
   end: '2018'
   status: probable
   sources:
-  - source: blog-betesda-2009-10
+  - source: betesda-2009-10
     quote: >-
       Dom Robinson Cavalcanti veio acompanhado do secretário administrativo da diocese, Rev. Hermany Soares e do
       presidente do Conselho Diocesano, Rev. Maurício Amazonas.
+  - source: fandom-iaob
+    quote: terem se transferido para a Diocese do Recife - Cone Sul, em 28/12/2007
   notes: >-
-    Início = primeira menção encontrada (out/2009), não a data de recepção. Fim = constituição da IAB (2018); a
-    diocese passou para a IAB.
+    Início = data da transferência (Fandom); primeira menção como clérigo da diocese: out/2009. Fim = constituição
+    da IAB (2018); a diocese passou para a IAB.
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  diocese: diocese-anglicana-recife
+  start: '2009'
+  status: confirmed
+  sources:
+  - source: betesda-2009-10
+    quote: >-
+      Dom Robinson Cavalcanti veio acompanhado do secretário administrativo da diocese, Rev. Hermany Soares
+  notes: Secretário administrativo da diocese em out/2009.
 - jurisdiction: iab
   role: clergy
-  diocese: diocese-do-recife-igreja-anglicana-graca
+  diocese: diocese-do-recife-igreja-anglicana-graca-pina-recife
   start: '2018'
+  end_reason: left
   status: probable
   sources:
   - source: iab-autor-hermany
     quote: por Rev. Hermany Soares | 17 mar 2020
-  - source: iab-dr-igrejas
+  - source: dr-igrejas-2019
     quote: IGREJA ANGLICANA GRAÇA (PARÓQUIA) Rev. Hermany Soares
   - source: diss-amazonas-2018
     quote: >-
       Aos pastores, pastoras da Província Anglicana no Brasil: Luiz Souza de França, Gorete Marques, Ivo Oliveira
       e Hermany Soares.
   notes: >-
-    Publica no site da IAB como "Rev." entre 2018 e mar/2020; listado na Igreja Anglicana Graça (Pina, Recife) na
-    página de igrejas da Diocese do Recife (sem data). Data de saída da IAB não encontrada.
+    Publica no site da IAB como "Rev." de 2018 a mar/2020. Data e motivo da saída da IAB NÃO encontrados (fim desconhecido;
+    antes de mar/2024, quando já aparece como bispo da IEUB em snippet de busca).
+- jurisdiction: iab
+  role: clergy
+  diocese: diocese-de-recife-igreja-anglicana-graca-pina
+  start: '2019'
+  status: confirmed
+  sources:
+  - source: dr-pastores-2019
+    quote: Hermany Silva Soares
+  - source: dr-igrejas-2019
+    quote: 'IGREJA ANGLICANA GRAÇA (PARÓQUIA)
+
+      Rev. Hermany Soares'
+- jurisdiction: ieub
+  role: diocesan_bishop
+  start: 2024-03
+  status: probable
+  sources:
+  - source: yt-casa-feed
+    quote: Igreja Episcopal Casa - Bispo Hermany Soares
+  - source: ivoox-planando
+    quote: Planando como águias | Bispo Hermany Soares
+  notes: >-
+    As fontes abertas o chamam de "Bispo" (2025-2026) mas não nomeiam a IEUB; a ligação com a IEUB vem de posts
+    do Instagram vistos apenas em snippets de busca: @episcopal.unidabr em 02/03/2024 ("Quem somos? .. Bispo Hermany
+    Soares"), 10/06/2024 ("com a Presença do Bispo Diocesano, Revmo. Hermany Soares") e 24/11/2024 (confirmações
+    "pelo Bispo Hermany Soares ... na Igreja Episcopal Unida Jesus Salvador na cidade Paulista"); @episcopalrestauracao
+    em 06/07/2025 ("nosso Bispo Diocesano Dom Hermany Soares"). Início = primeira menção. Sagração (data, sagrantes)
+    NÃO encontrada; não se sabe se houve nova sagração ou retomada do episcopado da IAOB.
+- jurisdiction: iaob
+  role: primate
+  status: probable
+  sources:
+  - source: iaob-site-2015
+    quote: >-
+      nosso afeto a Dom Hermany, nosso primaz, pelo equilíbrio e lucidez com que vêm conduzindo as reuniões
+  notes: >-
+    Texto sem data (cópia de 2015, antes da morte de Robinson em 2012). Não se encontrou registro de sagração episcopal
+    de Hermany; "Dom Hermany" pode ser título dentro da IAOB. Identidade com Hermany Silva Soares provável.
 - jurisdiction: iaob
   role: clergy
   diocese: paroquia-cristo-redentor
   end: '2007-12-28'
   end_reason: transfer
-  status: probable
+  status: confirmed
   sources:
+  - source: blog-josue-2006-11
+    quote: >-
+      Igreja Anglicana Ortodoxa – IAO (Comunhão Anglicana Ortodoxa): Rev. Hermany Soares, Rev. Adriano Oliveira
   - source: blog-joaodeca-2007-05
     quote: Rev. Hermany Soares+ (Paróquia Cristo Redentor)
   notes: >-
-    Em maio de 2007 é listado como "Rev." (sinal + após o nome) da IAOB – Distrito Missionário da Comunhão Anglicana
-    Ortodoxa. A data de fim vem de resumo de busca do wiki Cristianismo (Fandom), não aberto; ver duvidas.
+    Em nov/2006 e mai/2007 é listado como "Rev." da IAO/IAOB (duas fontes independentes). Ver vínculo como bispo
+    abaixo.
+- jurisdiction: iaob
+  role: bishop
+  end: '2007-12-28'
+  end_reason: resignation
+  status: probable
+  sources:
+  - source: fandom-iaob
+    quote: por decisão de seu então bispo Hermany Soares, o qual no mesmo ato renunciou ao episcopado.
+  notes: >-
+    Fonte única terciária (wiki Fandom, revisão única criada em 31/12/2007 pelo usuário "Anglicanalivre", sem referências).
+    Quando e por quem foi sagrado: NÃO encontrado. Contradiz em parte as listas de nov/2006 e mai/2007 que o chamam
+    de "Rev." – ver duvidas.
+- jurisdiction: ieub
+  role: founder
+  status: probable
+  sources:
+  - source: yt-iaob2000
+    quote: '"vanityChannelUrl":"http://www.youtube.com/@episcopalunida"'
+  notes: >-
+    Papel de fundador é a afirmação do usuário; nenhuma fonte aberta diz literalmente que Hermany fundou a IEUB.
+    Indício: o canal oficial da IEUB é o antigo canal "iaob2000" (IAOB, igreja que Hermany liderava), criado em
+    22/10/2007.
+events:
+- type: resignation
+  date: '2007-12-28'
+  description: >-
+    Extinção da Igreja Anglicana Ortodoxa (IAOB) no Brasil: igrejas e clérigos transferidos para a Diocese do Recife
+    – Cone Sul por decisão do bispo Hermany Soares, que no mesmo ato renunciou ao episcopado ("abandono do episcopado"
+    referido pelo usuário).
+  status: probable
+  sources:
+  - source: fandom-iaob
+    quote: >-
+      A Igreja Anglicana Ortodoxa deixou de existir no Brasil, em virtude de seus membros (igrejas e clérigos) terem
+      se transferido para a Diocese do Recife - Cone Sul, em 28/12/2007, por decisão de seu então bispo Hermany
+      Soares, o qual no mesmo ato renunciou ao episcopado.
+- type: other
+  date: '2025-10-24'
+  description: >-
+    Hermany Soares, como bispo, prega na abertura do 1º Sínodo Diocesano Ordinário da Rede Episcopal Brasileira
+    (24/10/2025, Vitória/ES) – sinal de relação fraterna IEUB–REB.
+  status: confirmed
+  sources:
+  - source: ivoox-planando
+    quote: Sermão de abertura do 1º Sínodo Diocesano Ordinário (24/10/25), 29ª Semana do Tempo Comum.

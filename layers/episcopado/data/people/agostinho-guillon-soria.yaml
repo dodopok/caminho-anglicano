@@ -1,6 +1,32 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: agostinho-guillon-soria
 name: Agostinho Guillon Soria
+full_name: Agostinho Guillon Sória
+aliases:
+- Agostino Soria
+- Dom Agostinho Sória
+birth:
+  date: '1922-08-28'
+  sources:
+  - source: costa2021
+    quote: Agostinho Guillon Sória nasceu na cidade de Bagé em 28 de agosto de 1922.
+  - source: costa2021
+    quote: Faleceu em 27 de junho de 1996.
+death:
+  date: '1996-06-27'
+  sources:
+  - source: costa2021
+    quote: Agostinho Guillon Sória nasceu na cidade de Bagé em 28 de agosto de 1922.
+  - source: costa2021
+    quote: Faleceu em 27 de junho de 1996.
+wikidata: Q97180655
+biography: >-
+  Deao em Porto Alegre; bispo da Diocese Central/Rio (1977-1984) e primeiro bispo de Brasilia (1985-1988).
+sources:
+- source: costa2021
+  quote: Agostinho Guillon Sória nasceu na cidade de Bagé em 28 de agosto de 1922.
+- source: costa2021
+  quote: Faleceu em 27 de junho de 1996.
 ordinations:
 - order: episcopate
   date: '1977-04-24'

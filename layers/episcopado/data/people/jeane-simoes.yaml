@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jeane-simoes
+name: Jeane Simões
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  diocese: iab-diocese-vitoria
+  start: '2026'
+  status: confirmed
+  sources:
+  - source: dv-pastores
+    quote: Revda. Jeane Simões
+  - source: dv-bispo
+    quote: O Bispo Márcio casou-se com Jeane Simões – atualmente Revda. na Catedral Ressurreição
+  notes: Esposa do bispo Márcio Simões; ordenação não datada.
