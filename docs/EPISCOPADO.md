@@ -188,7 +188,8 @@ Com sucessão completa estimamos de alguns milhares a ~20 mil pessoas: viável c
 | `/episcopado/sucessao/[id]` | **Linha de sucessão:** cadeia vertical de sagrantes principais até o ponto mais antigo conhecido; os co-sagrantes expandem como ramos |
 | `/episcopado/arvore` | **Árvore das jurisdições:** linha do tempo horizontal com uma faixa por jurisdição; cismas aparecem como ramificações e filiações a comunhões como chaves |
 | `/episcopado/caminho?de=X&para=Y` | **Como X e Y se ligam:** caminho mais curto (ex.: um bispo brasileiro → Arcebispo de Cantuária) |
-| `/episcopado/fontes` | Bibliografia completa, filtrável |
+| `/episcopado/fontes` | Bibliografia completa, filtrável por texto, nível e tipo, com quantas afirmações cada fonte sustenta |
+| `/episcopado/fonte/[id]` | **Ficha da fonte:** metadados, links (original e arquivo) e tudo o que ela sustenta, por ficha, com o trecho citado e as versões divergentes |
 | `/episcopado/lacunas` | (admin/beta) O que falta pesquisar, priorizado |
 
 Todo estado relevante (nó selecionado, filtros, profundidade, ano) fica na URL, então qualquer visão é compartilhável.
