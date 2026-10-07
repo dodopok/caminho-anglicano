@@ -16,7 +16,8 @@
         >{{ item.label }}</NuxtLink>
       </nav>
 
-      <div v-if="nodes" class="ml-auto min-w-0 flex-1 md:max-w-md">
+      <!-- No celular a busca vive no menu: espremida ao lado do título ela fica ilegível. -->
+      <div v-if="nodes" class="ml-auto hidden min-w-0 flex-1 sm:block md:max-w-md">
         <EpiscopadoSearch :nodes="nodes" shortcut @select="(n) => navigateTo(nodeRoute(n.id))" />
       </div>
 
@@ -24,8 +25,8 @@
 
       <button
         type="button"
-        class="ml-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md text-stone-600 hover:bg-stone-100 md:hidden"
-        :class="{ 'ml-auto': !nodes }"
+        class="ml-auto inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md text-stone-600 hover:bg-stone-100 sm:ml-1 md:hidden"
+        :class="{ 'sm:ml-auto': !nodes }"
         :aria-expanded="menuOpen"
         aria-controls="episcopado-menu"
         aria-label="Abrir menu"
@@ -39,6 +40,9 @@
     </div>
 
     <nav v-show="menuOpen" id="episcopado-menu" aria-label="Seções da rede (menu)" class="border-t border-stone-100 bg-white px-4 py-2 md:hidden">
+      <div v-if="nodes" class="py-2 sm:hidden">
+        <EpiscopadoSearch :nodes="nodes" @select="(n) => { menuOpen = false; navigateTo(nodeRoute(n.id)) }" />
+      </div>
       <NuxtLink
         v-for="item in [...NAV, { to: '/', label: '← Início do site' }]"
         :key="item.to"
