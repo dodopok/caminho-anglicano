@@ -48,13 +48,15 @@ ordinations:
       13 de setembro de 2013.
   - source: wp-pt-irala
     quote: Finalmente, Irala foi ordenado e sagrado bispo da DASP em 13 de setembro de 2013.
+  - source: ec-2017-01
+    quote: Já em 2013, foi sagrado o Revmo. Flávio Irala como bispo de São Paulo, em meio a momentos de crise.
   notes: >-
     Eleicao (08/09/2012) contestada judicialmente pelo grupo que formou o Movimento Anglicano no Brasil. Diocese
     Anglicana de São Paulo. Sagrantes não informados nesta fonte.
 affiliations:
 - jurisdiction: ieab
   role: clergy
-  diocese: ieab-diocese-parana
+  diocese: ieab-dapar
   start: '2008'
   status: confirmed
   sources:
@@ -64,7 +66,7 @@ affiliations:
     Deão da Catedral de São Tiago (Curitiba) a partir de 2008; antes pároco em Londrina (início dos anos 2000).
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  diocese: ieab-dasp
   start: '2013-09-13'
   end: '2021-10-31'
   end_reason: retirement
@@ -76,13 +78,15 @@ affiliations:
     quote: a celebração de Ação de Graças pela vida, ministério e início da emerência do bispo Flávio Irala
   notes: >-
     Costa Anexo D da 2012-2017 com interinos Francisco de Assis (2017-18) e Naudal (2018-20) - conflito com IEAB.
-- jurisdiction: ieab
-  role: diocesan_bishop
-  diocese: ieab-diocese-sao-paulo
-  start: '2013-09-13'
-  end: '2021'
-  end_reason: retirement
-  status: confirmed
+events:
+- type: other
+  date: '2012-09-08'
+  description: >-
+    Eleicao de Flavio Irala para bispo da DASP em 08/09/2012, por 19 a 18 votos na ordem leiga e 15 a 13 na clerical
+    (segundo Glauco); anulada pelo bispo Roger Bird e contestada, o que levou ao cisma.
+  status: probable
   sources:
-  - source: ieab-irala-falecimento
-    quote: Em 2021, tornou-se bispo emérito
+  - source: glauco-testemunho-2013
+    quote: >-
+      No dia 08/09/12 recebi a notícia que em Concílio da DASP o Rev. Flávio Irala havia sido eleito Bispo da mesma
+      por 19 a 18 votos na ordem leiga e 15 a 13 votos na ordem clerical.

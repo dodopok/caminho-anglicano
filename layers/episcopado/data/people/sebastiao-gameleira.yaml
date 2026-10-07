@@ -35,7 +35,7 @@ ordinations:
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-de-pelotas
+  diocese: ieab-dap
   start: '2000-07-23'
   end: '2006'
   end_reason: transfer
@@ -49,7 +49,7 @@ affiliations:
     quote: who has been bishop of the Diocese of Pelotas in southern Brazil since February 2000
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  diocese: ieab-dar
   start: '2006-10-11'
   end: 2013-12
   end_reason: retirement
@@ -62,14 +62,6 @@ affiliations:
   - source: ens-102306-1-a
     quote: >-
       with the installation on October 11 of its fourth bishop, the Rt. Rev. Sebastiao Armando Gameleira Soares.
-  notes: Eleito no Sinodo Geral de 2006; aposentadoria compulsoria em 2013.
-- jurisdiction: ieab
-  role: diocesan_bishop
-  diocese: ieab-diocese-recife
-  start: '2006-10-11'
-  end: '2013'
-  status: probable
-  sources:
   - source: ens-102306-1-a
     quote: >-
       The Diocese of Recife in Brazil celebrated the start of a new chapter in its complicated life with the installation
@@ -77,5 +69,6 @@ affiliations:
   - source: ptwp-dar
     quote: Sebastião Armando Gameleira Soares - 2006 a 2013;
   notes: >-
-    Lado IEAB. Eleito no Sínodo Geral de julho/2006; instalado pelo primaz Maurício Andrade. Note-se que tanto a
-    IEAB (Sebastião, 2006) quanto a DAR (Uchôa, 2012) contam seu bispo como 'quarto bispo' do Recife.
+    Eleito no Sinodo Geral de 2006; aposentadoria compulsoria em 2013. Lado IEAB. Eleito no Sínodo Geral de julho/2006;
+    instalado pelo primaz Maurício Andrade. Note-se que tanto a IEAB (Sebastião, 2006) quanto a DAR (Uchôa, 2012)
+    contam seu bispo como 'quarto bispo' do Recife.

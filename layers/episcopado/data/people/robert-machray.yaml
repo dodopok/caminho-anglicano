@@ -24,7 +24,7 @@ ordinations:
 - order: episcopate
   date: '1865-06-24'
   place: Capela do Palácio de Lambeth, Londres
-  jurisdiction: church-of-england
+  jurisdiction: cofe
   office: diocesan
   principal_consecrator: charles-longley
   co_consecrators:
@@ -32,7 +32,7 @@ ordinations:
   - david-anderson
   - edward-harold-browne
   - thomas-george-suther
-  status: confirmed
+  status: contested
   sources:
   - source: life-machray-1909
     quote: >-
@@ -50,6 +50,14 @@ ordinations:
   - source: iab-poster-linhagem-uchoa
     quote: >-
       156d. Charles Longley (1862-1868) que, em 1865, sagrou Robert Machray como bispo da Igreja Anglicana do Canadá.
+  discrepancies:
+  - field: jurisdiction
+    value: church-of-england
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        156d. Charles Longley (1862-1868) que, em 1865, sagrou Robert Machray como bispo da Igreja Anglicana do
+        Canadá.
   notes: >-
     Pôster: Longley "em 1865, sagrou Robert Machray como bispo da Igreja Anglicana do Canadá" — CONFIRMADO; precisão:
     bispo de Rupert's Land (então sob a metropolia de Cantuária). Nomes completos dos co-sagrantes inferidos dos

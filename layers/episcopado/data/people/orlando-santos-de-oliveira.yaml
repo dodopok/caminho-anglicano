@@ -57,7 +57,7 @@ ordinations:
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-meridional
+  diocese: ieab-dm
   start: '1998'
   end: '2013-05-05'
   end_reason: retirement
@@ -82,7 +82,7 @@ affiliations:
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino
-  diocese: ieab-diocese-brasilia
+  diocese: ieab-dab
   start: 2003-06
   end: 2003-08
   status: probable
@@ -176,6 +176,43 @@ events:
     quote: >-
       Santos de Oliveira expressed "strong disapproval" of Cavalcanti's participation, saying that in doing so he
       had violated the constitution and canons of the church in Brazil and in the United States.
+- type: other
+  date: 2004-09
+  description: >-
+    Decreto da Camara dos Bispos (set/2004) acolhe pedido do bispo sufraganeo do Recife (Filadelfo Oliveira Neto),
+    de 14 clerigos, 9 paroquias e 6 missoes por supervisao episcopal alternativa a Robinson Cavalcanti.
+  status: confirmed
+  sources:
+  - source: ieab-esclarecimento-2004
+    quote: >-
+      A Câmara dos Bispos acolheu a solicitação do Bispo Sufragâneo, de 14 clérigos, 9 paróquias e 6 missões, todos
+      evangélicos, para uma supervisão alternativa
+  - source: costa2021
+    quote: >-
+      a recusa do Bispo Diocesano, Dom Edward Robinson de Barros Cavalcanti, em acatar o Decreto de Supervisão Episcopal
+      Especial de 16 de setembro de 2004
+- type: deposition
+  date: '2005-10-12'
+  description: >-
+    O primaz Orlando Santos de Oliveira protesta junto ao primaz do Cone Sul, Gregory Venables, contra o acolhimento
+    do "bispo deposto" e de clerigos depostos da Diocese do Recife (carta de 12/10/2005).
+  status: confirmed
+  sources:
+  - source: orlando-venables-2005
+    quote: >-
+      Lamento profundamente vossa carta, reconhecendo e acolhendo para supervisão o bispo deposto e um grupo de
+      clérigos depostos que pertenceram à Diocese Anglicana do Recife.
+- type: other
+  date: '2005-01-15'
+  description: >-
+    Comunicado do primaz (15/01/2005): a IEAB e a unica igreja da Comunhao Anglicana no Brasil; lista igrejas "episcopais/anglicanas"
+    que nao estao em comunhao (ex.: Igreja Episcopal Carismatica do Brasil, Igreja Episcopal Reformada do Brasil).
+  status: confirmed
+  sources:
+  - source: ieab-comunicado-2005
+    quote: >-
+      No Brasil, a única igreja que é parte da Comunhão Anglicana, como uma de suas Províncias, devida e formalmente
+      reconhecida, é a **Igreja Episcopal Anglicana do Brasil**
 - type: other
   date: 2005-02
   description: >-

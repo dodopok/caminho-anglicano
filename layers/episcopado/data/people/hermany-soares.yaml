@@ -55,11 +55,17 @@ affiliations:
   notes: Secretário administrativo da diocese em out/2009.
 - jurisdiction: iab
   role: clergy
-  diocese: diocese-do-recife-igreja-anglicana-graca-pina-recife
-  start: '2018'
+  diocese: iab-diocese-recife
+  start: '2019'
   end_reason: left
-  status: probable
+  status: contested
   sources:
+  - source: dr-pastores-2019
+    quote: Hermany Silva Soares
+  - source: dr-igrejas-2019
+    quote: 'IGREJA ANGLICANA GRAÇA (PARÓQUIA)
+
+      Rev. Hermany Soares'
   - source: iab-autor-hermany
     quote: por Rev. Hermany Soares | 17 mar 2020
   - source: dr-igrejas-2019
@@ -68,21 +74,21 @@ affiliations:
     quote: >-
       Aos pastores, pastoras da Província Anglicana no Brasil: Luiz Souza de França, Gorete Marques, Ivo Oliveira
       e Hermany Soares.
+  discrepancies:
+  - field: start
+    value: '2018'
+    sources:
+    - source: iab-autor-hermany
+      quote: por Rev. Hermany Soares | 17 mar 2020
+    - source: dr-igrejas-2019
+      quote: IGREJA ANGLICANA GRAÇA (PARÓQUIA) Rev. Hermany Soares
+    - source: diss-amazonas-2018
+      quote: >-
+        Aos pastores, pastoras da Província Anglicana no Brasil: Luiz Souza de França, Gorete Marques, Ivo Oliveira
+        e Hermany Soares.
   notes: >-
     Publica no site da IAB como "Rev." de 2018 a mar/2020. Data e motivo da saída da IAB NÃO encontrados (fim desconhecido;
     antes de mar/2024, quando já aparece como bispo da IEUB em snippet de busca).
-- jurisdiction: iab
-  role: clergy
-  diocese: diocese-de-recife-igreja-anglicana-graca-pina
-  start: '2019'
-  status: confirmed
-  sources:
-  - source: dr-pastores-2019
-    quote: Hermany Silva Soares
-  - source: dr-igrejas-2019
-    quote: 'IGREJA ANGLICANA GRAÇA (PARÓQUIA)
-
-      Rev. Hermany Soares'
 - jurisdiction: ieub
   role: diocesan_bishop
   start: 2024-03

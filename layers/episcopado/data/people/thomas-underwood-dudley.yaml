@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: thomas-underwood-dudley
 name: Thomas Underwood Dudley
+full_name: Thomas Underwood Dudley
+aliases:
+- Bishop Dudley
+birth:
+  date: '1837-09-26'
+  sources:
+  - source: som-1899-02
+    quote: Bishop Dudley, of Kentucky, presided
+death:
+  date: '1904-01-22'
+  sources:
+  - source: som-1899-02
+    quote: Bishop Dudley, of Kentucky, presided
 wikidata: Q16931112
 biography: Bispo de Kentucky; presidiu a sagração de L. L. Kinsolving (1899).
 sources:

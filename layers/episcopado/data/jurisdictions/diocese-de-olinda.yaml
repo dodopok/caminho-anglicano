@@ -1,12 +1,16 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-de-olinda
-name: Diocese de Olinda
+name: Diocese de Olinda (Catedral Betesda)
+aliases:
+- Diocese de Olinda
 type: diocese
 relations:
 - type: part_of
   target: iecb
   status: probable
   sources:
+  - source: ptwiki-iecb
+    quote: Francisco Rubem da Silva (2022)
   - source: ptwiki-iecb
     quote: Rubem Marcel Sarmento da Silva (2025)
   - source: costa-2021-tese

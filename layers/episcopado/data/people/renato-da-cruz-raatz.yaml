@@ -21,20 +21,25 @@ sources:
 ordinations:
 - order: episcopate
   date: '2007-04-15'
+  place: Catedral do Redentor, Pelotas
   jurisdiction: ieab
   office: diocesan
   principal_consecrator: mauricio-andrade
-  status: probable
+  status: confirmed
   sources:
   - source: costa2021
     quote: >-
       A sagração ocorreu no dia 15 de abril de 2007, em cerimônia presidida pelo bispo Primaz, Maurício Andrade.
       O pregador foi o bispo Naudal Gomes, seu colega de seminário.
+  - source: ec-2007-03
+    quote: >-
+      A cerimônia, presidida pelo bispo Primaz, dom Maurício de Andrade, aconteceu na Cate- dral do Redentor, no
+      dia 15 de abril.
   notes: Bispo da Diocese Anglicana de Pelotas. "Presidida" pelo primaz = sagrante principal presumido.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-de-pelotas
+  diocese: ieab-dap
   start: '2007-04-15'
   end: '2019'
   end_reason: retirement

@@ -29,7 +29,7 @@ ordinations:
   principal_consecrator: edmund-knox-sherrill
   co_consecrators:
   - david-leake
-  status: probable
+  status: confirmed
   sources:
   - source: costa2021
     quote: O novo bispo foi sagrado no dia 17 de março de 1985, na Catedral da Santíssima
@@ -38,13 +38,15 @@ ordinations:
       Trindade, em Porto Alegre, pelo próprio Sherrill, na época o Primaz em exercício. Participaram como co-sagrantes
       os bispos brasileiros e o bispo argentino David Leake, Primaz da Província Anglicana do Cone Sul, que também
       foi o pregador.
+  - source: sinopse-2003
+    quote: 1985 - Clóvis Erly Rodrigues
   notes: >-
     Eleito bispo coadjutor da Diocese Setentrional (Recife) pelo Sinodo de 1984. Co-sagrantes: "os bispos brasileiros"
     (nao nomeados) e David Leake.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  diocese: ieab-dar
   start: '1986'
   end: '1997'
   end_reason: retirement
@@ -70,3 +72,12 @@ events:
     quote: >-
       época, a Suprema Corte da Igreja Episcopal Anglicana do Brasil era presidida pelo bispo emérito, Clovis Erly
       Rodrigues.
+- type: other
+  date: 2017-04
+  description: >-
+    A Camara Episcopal em abril de 2017 (reuniao no Rio de Janeiro) inclui como emeritos Clovis Rodrigues, Almir
+    dos Santos e Celso Franco.
+  status: confirmed
+  sources:
+  - source: ec-2017-04
+    quote: Clóvis Ro- drigues, Almir dos Santos e Celso Franco (eméritos)

@@ -155,7 +155,7 @@ ordinations:
 affiliations:
 - jurisdiction: ieab
   role: clergy
-  diocese: ieab-diocese-recife
+  diocese: ieab-dar
   start: 1996-08
   end: '2005'
   end_reason: schism
@@ -236,14 +236,20 @@ affiliations:
   role: diocesan_bishop
   diocese: diocese-anglicana-recife
   start: '2012-12-08'
-  end: '2018-05-12'
-  end_reason: transfer
   status: confirmed
   sources:
   - source: ai-new-province-backed
     quote: On December 8, 2012, The Rt. Rev. Miguel Uchoa was consecrated as Diocesan Bishop.
   - source: dr-historia
     quote: sob a liderança do arcebispo primaz Miguel Uchôa Cavalcanti
+- jurisdiction: diocese-anglicana-recife
+  role: diocesan_bishop
+  diocese: ieab-dar
+  start: '2012-12-08'
+  end: '2018-05-12'
+  end_reason: transfer
+  status: confirmed
+  sources:
   - source: ai-2018-05-15-uchoa-installed
     quote: On December 8, 2012, The Rt. Rev. Miguel Uchoa was consecrated as Diocesan Bishop.
   - source: ai-recife-received-gafcon

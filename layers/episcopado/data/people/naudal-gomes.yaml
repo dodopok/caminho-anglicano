@@ -57,7 +57,7 @@ ordinations:
 affiliations:
 - jurisdiction: ieab
   role: suffragan_bishop
-  diocese: ieab-diocese-sul-ocidental
+  diocese: ieab-dso
   start: '2000-04-08'
   end: '2003'
   end_reason: transfer
@@ -67,7 +67,7 @@ affiliations:
     quote: Foi eleito bispo sufragâneo da Diocese Anglicana Sul-Ocidental, em Santa Maria, em 2000.
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-do-parana-ex-diocese-de-curitiba
+  diocese: ieab-dapar
   start: '2003'
   end: 2021-12
   end_reason: retirement
@@ -83,7 +83,7 @@ affiliations:
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino
-  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  diocese: ieab-dasp
   start: '2018'
   end: '2020'
   status: contested

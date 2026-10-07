@@ -1,11 +1,15 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-de-paulista
-name: Diocese de Paulista
+name: Diocese de Paulista (Catedral do Calvário)
+aliases:
+- Diocese de Paulista
 type: diocese
 relations:
 - type: part_of
   target: iecb
   status: probable
   sources:
+  - source: ptwiki-iecb
+    quote: Adonias Ramos de Souza (2007)
   - source: ptwiki-iecb
     quote: Uziel José dos Santos (2022)

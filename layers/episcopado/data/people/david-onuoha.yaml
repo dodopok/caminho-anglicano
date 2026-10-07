@@ -18,7 +18,7 @@ ordinations:
   jurisdiction: church-of-nigeria
   office: diocesan
   principal_consecrator: peter-akinola
-  status: probable
+  status: contested
   sources:
   - source: iab-poster-linhagem-uchoa
     quote: >-
@@ -28,6 +28,14 @@ ordinations:
     quote: He was enthroned as Bishop of Okigwe South in 2004.
   - source: wp-okigwes
     quote: '[[Caleb Maduoma]] became its second Bishop in 2004. The current bishop is [[David Onuoha]]'
+  discrepancies:
+  - field: jurisdiction
+    value: con
+    sources:
+    - source: wp-onuoha
+      quote: He was enthroned as Bishop of Okigwe South in 2004.
+    - source: wp-okigwes
+      quote: '[[Caleb Maduoma]] became its second Bishop in 2004. The current bishop is [[David Onuoha]]'
   notes: >-
     Ano inferido do pôster (2004-hoje); verificar. Pôster: Akinola "consagrou David O. C. Onuoha como bispo da Diocese
     de Okigwe South". Data e sagrante NÃO ENCONTRADOS. As próprias fontes divergem: o artigo de Onuoha diz que foi

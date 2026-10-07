@@ -240,17 +240,21 @@ export function validateBase(base: Base): Report {
   for (const id of consecrated.keys()) if (!state.has(id)) visit(id, [])
 
   // --- Possíveis duplicatas -------------------------------------------------
-  const byName = new Map<string, Set<string>>()
-  for (const p of base.people) {
-    for (const name of [p.name, p.full_name, ...(p.aliases ?? [])]) {
-      if (!name) continue
-      const key = normalizeName(name)
-      byName.set(key, new Set([...(byName.get(key) ?? []), p.id]))
+  const findDuplicates = (kind: 'person' | 'jurisdiction', items: { id: string; names: (string | null | undefined)[] }[]) => {
+    const byName = new Map<string, Set<string>>()
+    for (const item of items) {
+      for (const name of item.names) {
+        if (!name) continue
+        const key = normalizeName(name)
+        byName.set(key, new Set([...(byName.get(key) ?? []), item.id]))
+      }
+    }
+    for (const [name, ids] of byName) {
+      if (ids.size > 1) warnings.push({ entity: `${kind}:${[...ids][0]}`, message: `possível duplicata ("${name}"): ${[...ids].join(', ')}` })
     }
   }
-  for (const [name, ids] of byName) {
-    if (ids.size > 1) warnings.push({ entity: `person:${[...ids][0]}`, message: `possível duplicata ("${name}"): ${[...ids].join(', ')}` })
-  }
+  findDuplicates('person', base.people.map((p) => ({ id: p.id, names: [p.name, p.full_name, ...(p.aliases ?? [])] })))
+  findDuplicates('jurisdiction', base.jurisdictions.map((j) => ({ id: j.id, names: [j.name, j.acronym, ...(j.aliases ?? [])] })))
 
   // --- Fontes ---------------------------------------------------------------
   for (const s of base.sources) {

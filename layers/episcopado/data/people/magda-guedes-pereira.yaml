@@ -68,7 +68,7 @@ ordinations:
 affiliations:
 - jurisdiction: ieab
   role: clergy
-  diocese: ieab-diocese-sul-ocidental
+  diocese: ieab-dso
   start: '1996'
   end: '2006'
   end_reason: transfer
@@ -80,7 +80,7 @@ affiliations:
       (2011 – março 2017).
 - jurisdiction: ieab
   role: clergy
-  diocese: ieab-diocese-parana
+  diocese: ieab-dapar
   start: '2007'
   end: '2010'
   end_reason: transfer
@@ -92,7 +92,7 @@ affiliations:
       (2011 – março 2017).
 - jurisdiction: ieab
   role: clergy
-  diocese: ieab-diocese-brasilia
+  diocese: ieab-dab
   start: '2011'
   end: 2017-03
   end_reason: transfer
@@ -113,7 +113,7 @@ affiliations:
   notes: Cargo de secretária-geral da IEAB; término não informado nesta fonte.
 - jurisdiction: ieab
   role: coadjutor_bishop
-  diocese: diocese-anglicana-do-parana-ex-diocese-de-curitiba
+  diocese: ieab-dapar
   start: '2021-10-17'
   end: '2021-12-12'
   status: confirmed
@@ -122,18 +122,7 @@ affiliations:
     quote: a reverenda Magda Guedes Pereira como bispa coadjutora.
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: ieab-diocese-parana
-  start: 2021-12
-  status: probable
-  sources:
-  - source: ieab-magda-sagrada
-    quote: >-
-      Magda irá auxiliar o atual bispo diocesano, Naudal Alves Gomes, até dezembro. A partir daí, ela assume oficialmente
-      como bispa diocesana em todo o estado.
-  notes: Início previsto na notícia da sagração.
-- jurisdiction: ieab
-  role: diocesan_bishop
-  diocese: diocese-anglicana-do-parana-ex-diocese-de-curitiba
+  diocese: ieab-dapar
   start: '2021-12-12'
   status: confirmed
   sources:
@@ -141,6 +130,11 @@ affiliations:
     quote: A nova bispa da DAPAR foi instalada na manhã de 12 de dezembro de 2021, na Catedral diocesana.
   - source: ieab-dioceses
     quote: Bispo Diocesano – Revma. Magda Guedes
+  - source: ieab-magda-sagrada
+    quote: >-
+      Magda irá auxiliar o atual bispo diocesano, Naudal Alves Gomes, até dezembro. A partir daí, ela assume oficialmente
+      como bispa diocesana em todo o estado.
+  notes: Início previsto na notícia da sagração.
 events:
 - type: other
   date: '2022-12-11'

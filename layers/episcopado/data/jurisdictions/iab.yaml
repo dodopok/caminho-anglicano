@@ -42,14 +42,21 @@ relations:
     quote: >-
       Em 2018, a Diocese do Recife formou uma nova província anglicana, a Igreja Anglicana no Brasil, agora com
       três dioceses (Recife, João Pessoa e Vitória)
-  - source: iab-poster-linhagem-meira
-    quote: >-
-      se tornou o primaz do que viria a ser, seis anos depois, uma nova província: a Igreja Anglicana do Brasil.
   - source: ai-2018-05-15-uchoa-installed
     quote: >-
       On Saturday, 12 May 2018, Brazilians packed the Paróquia Anglicana do Espírito Santo (Anglican Church of the
       Holy Spirit) to celebrate the launch of the Anglican Church in Brazil
   notes: A DAR continua existindo como diocese da IAB.
+- type: successor_of
+  target: ieab-dar
+  date: '2018'
+  led_by:
+  - miguel-uchoa
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      se tornou o primaz do que viria a ser, seis anos depois, uma nova província: a Igreja Anglicana do Brasil.
 - type: recognized_by
   target: gafcon
   date: 2018-04
@@ -116,7 +123,7 @@ relations:
   - source: iab-comunicado-oficial-2018
     quote: Desde 2005, não temos nenhum tipo de relacionamento com essa instituição religiosa
 - type: broke_communion_with
-  target: coa
+  target: anglican-communion
   date: '2018-05-12'
   status: confirmed
   sources:

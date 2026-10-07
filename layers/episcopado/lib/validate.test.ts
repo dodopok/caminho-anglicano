@@ -90,6 +90,12 @@ describe('validateBase', () => {
     ]))
     expect(messages(r.warnings)).toContain('possível duplicata')
   })
+
+  it('avisa sobre jurisdições duplicadas por nome ou sigla', () => {
+    const b = base([])
+    b.jurisdictions.push({ id: 'ack', acronym: 'J', name: 'Outra', type: 'province' })
+    expect(messages(validateBase(b).warnings)).toContain('possível duplicata ("j"): j, ack')
+  })
 })
 
 describe('normalizeName', () => {

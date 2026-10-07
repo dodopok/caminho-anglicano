@@ -24,10 +24,10 @@ ordinations:
 - order: episcopate
   date: '1942-02-02'
   place: Catedral de São Paulo, Londres
-  jurisdiction: church-of-england
+  jurisdiction: cofe
   office: auxiliary
   principal_consecrator: cosmo-gordon-lang
-  status: probable
+  status: contested
   sources:
   - source: wp-patterson
     quote: >-
@@ -40,6 +40,14 @@ ordinations:
     quote: >-
       161d. Cosmo Gordon Lang (1928-1942) que, em 1942, sagrou Cecil John Patterson como bispo da Diocese da Nigéria,
       à época parte da Província da África Ocidental.
+  discrepancies:
+  - field: jurisdiction
+    value: church-of-england
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        161d. Cosmo Gordon Lang (1928-1942) que, em 1942, sagrou Cecil John Patterson como bispo da Diocese da Nigéria,
+        à época parte da Província da África Ocidental.
   notes: >-
     Pôster: Lang "em 1942, sagrou Cecil John Patterson como bispo da Diocese da Nigéria" — sagrante e ano confirmados
     pela Wikipédia (que cita Church Times, 6/02/1942, p. 87, não aberto). Cargo CORRIGIDO: bispo ASSISTENTE (on

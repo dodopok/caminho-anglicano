@@ -115,9 +115,9 @@ affiliations:
   notes: Reitor da Âncora antes da sagração.
 - jurisdiction: iab
   role: bishop
-  diocese: diocese-de-joao-pessoa-regiao-sudeste
+  diocese: iab-diocese-joao-pessoa
   start: '2023-05-08'
-  end: '2024'
+  end: 2024-12
   end_reason: left
   status: probable
   sources:
@@ -125,23 +125,12 @@ affiliations:
     quote: O Rev. Eric Rodrigues é agora bispo auxiliar da Diocese de João Pessoa.
   - source: anglicanismo-eleicao-2023
     quote: Eric Rodrigues será responsável pela Região Sudeste do Brasil, pela Diocese de João Pessoa.
-  notes: >-
-    Fim inferido da fundação da REB (20/12/2024) sob sua liderança; nenhuma fonte descreve a saída da IAB.
-- jurisdiction: iab
-  role: bishop
-  diocese: diocese-de-joao-pessoa-auxiliar-regiao-sudeste
-  start: '2023-05-08'
-  end: 2024-12
-  end_reason: left
-  status: probable
-  sources:
-  - source: anglicanismo-eleicao-2023
-    quote: Eric Rodrigues será responsável pela Região Sudeste do Brasil, pela Diocese de João Pessoa.
   - source: wp-en-iab
     quote: Miguel Neto, Eric Rodrigues (assistant)
   notes: >-
-    Fim inferido: em 20/12/2024 já assina como bispo da REB. Data exata e motivo da saída da IAB NÃO encontrados
-    em fonte aberta; ver duvidas.
+    Fim inferido da fundação da REB (20/12/2024) sob sua liderança; nenhuma fonte descreve a saída da IAB. Fim inferido:
+    em 20/12/2024 já assina como bispo da REB. Data exata e motivo da saída da IAB NÃO encontrados em fonte aberta;
+    ver duvidas.
 - jurisdiction: reb
   role: diocesan_bishop
   start: '2024-12-20'

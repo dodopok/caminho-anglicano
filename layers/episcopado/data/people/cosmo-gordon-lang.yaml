@@ -1,3 +1,21 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: cosmo-gordon-lang
 name: Cosmo Gordon Lang
+full_name: Cosmo Gordon Lang
+aliases:
+- Cosmo Lang
+birth:
+  date: '1864-10-31'
+  sources:
+  - source: wp-patterson
+    quote: He was ordained and consecrated a bishop by [[Cosmo Lang]], [[Archbishop of Canterbury]]
+death:
+  date: '1945-12-05'
+  sources:
+  - source: wp-patterson
+    quote: He was ordained and consecrated a bishop by [[Cosmo Lang]], [[Archbishop of Canterbury]]
+wikidata: Q336344
+biography: Arcebispo da Cantuária (1928–1942).
+sources:
+- source: wp-patterson
+  quote: He was ordained and consecrated a bishop by [[Cosmo Lang]], [[Archbishop of Canterbury]]

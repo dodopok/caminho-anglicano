@@ -1,6 +1,16 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: anglican-church-of-kenya
+acronym: ACK
 name: Igreja Anglicana do Quênia
+aliases:
+- Anglican Church of Kenya
 type: province
 tradition: anglican
 country: KE
+website: https://www.ackenya.org/
+description: Igreja Anglicana do Quênia.
+sources:
+- source: ack-nzimbi
+  quote: >-
+    he was elected and consecrated as the 4th Archbishop of the Anglican Church of Kenya and Bishop of All Saints
+    Cathedral Diocese

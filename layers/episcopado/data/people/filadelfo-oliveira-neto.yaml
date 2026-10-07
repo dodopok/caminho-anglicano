@@ -39,7 +39,7 @@ ordinations:
 affiliations:
 - jurisdiction: ieab
   role: suffragan_bishop
-  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  diocese: ieab-dar
   start: '2002-04-28'
   end: '2005-02-22'
   status: probable
@@ -48,7 +48,7 @@ affiliations:
     quote: A missão do novo epíscopo era auxiliar o seu bispo diocesano, Robinson Cavalcanti
 - jurisdiction: ieab
   role: bishop
-  diocese: diocese-anglicana-do-recife-interino
+  diocese: ieab-dar
   start: '2005'
   end: '2006'
   status: probable
@@ -61,7 +61,7 @@ affiliations:
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino
-  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  diocese: ieab-dar
   start: '2005-02-22'
   end: '2006'
   status: probable
@@ -77,7 +77,7 @@ affiliations:
   notes: Autoridade eclesiastica / bispo interino.
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-do-rio-de-janeiro-ex-diocese-central
+  diocese: ieab-darj
   start: '2008-08-29'
   end: '2017'
   end_reason: resignation
@@ -140,6 +140,21 @@ events:
       as acting dean of the cathedral
   - source: costa2021
     quote: Em setembro de 2002, ocorreu o que chamamos de “Pequena Crise do Recife”105
+- type: other
+  date: 2004-09
+  description: >-
+    Decreto da Camara dos Bispos (set/2004) acolhe pedido do bispo sufraganeo do Recife (Filadelfo Oliveira Neto),
+    de 14 clerigos, 9 paroquias e 6 missoes por supervisao episcopal alternativa a Robinson Cavalcanti.
+  status: confirmed
+  sources:
+  - source: ieab-esclarecimento-2004
+    quote: >-
+      A Câmara dos Bispos acolheu a solicitação do Bispo Sufragâneo, de 14 clérigos, 9 paróquias e 6 missões, todos
+      evangélicos, para uma supervisão alternativa
+  - source: costa2021
+    quote: >-
+      a recusa do Bispo Diocesano, Dom Edward Robinson de Barros Cavalcanti, em acatar o Decreto de Supervisão Episcopal
+      Especial de 16 de setembro de 2004
 - type: other
   date: '2004-09-16'
   description: >-

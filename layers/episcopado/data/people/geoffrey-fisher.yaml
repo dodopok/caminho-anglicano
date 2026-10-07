@@ -1,3 +1,21 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: geoffrey-fisher
-name: Geoffrey Fisher
+name: Geoffrey Francis Fisher
+full_name: Geoffrey Francis Fisher
+aliases:
+- Geoffrey Fisher
+birth:
+  date: '1887-05-05'
+  sources:
+  - source: wp-olang
+    quote: by the Archbishop of Canterbury, [[Geoffrey Fisher]]
+death:
+  date: '1972-09-15'
+  sources:
+  - source: wp-olang
+    quote: by the Archbishop of Canterbury, [[Geoffrey Fisher]]
+wikidata: Q335473
+biography: Arcebispo da Cantuária (1945–1961).
+sources:
+- source: wp-olang
+  quote: by the Archbishop of Canterbury, [[Geoffrey Fisher]]

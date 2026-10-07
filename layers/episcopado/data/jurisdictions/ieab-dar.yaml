@@ -1,7 +1,16 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: ieab-dar
 acronym: IEAB-DAR
-name: Diocese Anglicana do Recife (ex-Diocese Setentrional)
+name: Diocese do Recife
+aliases:
+- Diocese Anglicana do Recife
+- Diocese Anglicana do Recife (administrador/bispo interino)
+- Diocese Anglicana do Recife (ex-Diocese Setentrional)
+- Diocese Anglicana do Recife (interino)
+- Diocese Anglicana do Recife (sufragâneo/auxiliar)
+- Diocese Anglicana do Recife (sufragâneo/auxiliar; 2ª Região Eclesiástica)
+- Diocese do Recife (Setentrional)
+- Diocese do Recife – Catedral da Trindade
 type: diocese
 country: BR
 founded:
@@ -29,8 +38,303 @@ sources:
 relations:
 - type: part_of
   target: ieab
-  date: null
   status: confirmed
   sources:
+  - source: ieabrecife-clero-2002
+    quote: Miguel Â. de A Uchôa Cavalcanti (29.12)
+  - source: ieabrecife-franco
+    quote: Juntamente com o Rev. Miguel Uchoa, formalizamos essa indicação no processo Sucessório
+  - source: wp-en-uchoa
+    quote: >-
+      Uchôa joined two-thirds of the clergy and roughly 95 percent of the laity in disaffiliating from the IEAB
+  - source: iab-primaz
+    quote: É fundador da PAES (Paróquia Anglicana Espírito Santo) em 1996
+  - source: ieabrecife-clero-2002
+    quote: Márcio Medeiros Meira, OSE (28/03)
+  - source: ieabrecife-clero-2002
+    quote: EVILÁSIO TENÓRIO DA SILVA (02/10) - Postulante
+  - source: ieabrecife-clero-2002
+    quote: Leonides de Menezes Ferreira (06.09)
+  - source: ptwp-dar
+    quote: >-
+      liderados pelo reverendo Leônides Menezes, decidiram por assembleia se separar da Igreja Episcopal Anglicana
+      do Brasil
+  - source: costa2021
+    quote: 1976-1985 – Edmund Knox Sherrill
+  - source: ptwp-dar
+    quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
+  - source: costa2021
+    quote: 1986-1997 – Clovis Erly Rodrigues
+  - source: ptwp-dar
+    quote: Clóvis Erly Rodrigues - 1986 a 1997;
+  - source: costa2021
+    quote: >-
+      Em 19 de outubro do mesmo ano, Robinson foi instalado como terceiro bispo da Diocese Anglicana do Recife.
+  - source: costa2021
+    quote: 1997-2005 – Edward Robinson de Barros Cavalcanti (Deposto)
+  - source: ptwp-dar
+    quote: Edward Robinson de Barros Cavalcanti - 1997 a 2005 (deposto);
+  - source: ens-102306-1-a
+    quote: Finally, in June 2005, Cavalcanti was deposed on the grounds that he broke communion with the IEAB
+  - source: costa2021
+    quote: A missão do novo epíscopo era auxiliar o seu bispo diocesano, Robinson Cavalcanti
+  - source: costa2021
+    quote: >-
+      NOMEIO, COMO AUTORIDADE ECLESIÁSTICA DA DIOCESE ANGLICANA DO RECIFE, enquanto durar os efeitos da supra-citada
+      resolução, DOM FILADELFO OLIVEIRA NETO
+  - source: costa2021
+    quote: 2005-2006 – Filadelfo Oliveira Neto (Interino)
+  - source: ptwp-dar
+    quote: Filadelfo Oliveira Neto (Interino) - 2005 a 2006;
+  - source: costa2021
+    quote: O novo bispo foi instalado em 11 de outubro de 2006
+  - source: costa2021
+    quote: 2006-2013 – Sebastião Armando Gameleira Soares
+  - source: ens-102306-1-a
+    quote: >-
+      with the installation on October 11 of its fourth bishop, the Rt. Rev. Sebastiao Armando Gameleira Soares.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. João Cancio Peixoto Filho
+  - source: ieab-serie-dar
+    quote: Bispo Diocesano – Revmo. João Cancio Peixoto Filho.
   - source: ieab-dioceses
     quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'
+  - source: queiroz-2004-ufpe
+    quote: >-
+      desde março do mesmo ano, o bispo Edmund Sherrill havia enviado para Recife o Rev. Paulo Garcia com a finalidade
+      de incrementar o crescimento da igreja naquela região.
+  - source: queiroz-2004-ufpe
+    quote: >-
+      setembro de 2002, o Pr. Paulo Garcia declarou, oficialmente, a sua ruptura da Igreja Episcopal Anglicana.
+  - source: queiroz-2004-ufpe
+    quote: >-
+      Ao se desvincular da Catedral Anglicana do Espinheiro, o Pr. Miguel e mais um grupo de 30 a 40 pessoas, com
+      o apoio do Pr. Paulo Garcia, fundaram, em agosto de 1996, a Paróquia Anglicana do Espírito Santo, em Jaboatão
+      dos Guararapes
+  - source: queiroz-2004-ufpe
+    quote: De lá pra cá, eu sou o reitor dessa paróquia
+  - source: dar-2023-peixoto10
+    quote: >-
+      nos alegramos com toda a Igreja pelos 10 anos de episcopado do Bispo João Câncio Peixoto Filho, à frente da
+      Diocese Anglicana do Recife.
+  - source: dar-2023-oldair-presb
+    quote: O Revdo. Oldair Pena foi instituído como novo Pároco da Paróquia da Virgem Maria.
+  - source: dar-2023-martorelli
+    quote: >-
+      Após a Eucaristia, o Bispo instalou o Rev. Martorelli Dantas como novo pároco da Paróquia Anglicana da Santíssima
+      Trindade
+  - source: dab-2017-izaias
+    quote: O reverendo é oriundo da Diocese Anglicana do Recife
+  - source: dar-2026-osiel
+    quote: que passa oficialmente a ser parte do clero ordenado da Diocese Anglicana do Recife.
+  - source: dar-2026-madalena
+    quote: em março de 2026, o diácono Anderson Soares tornou-se ministro encarregado.
+  - source: dar-2026-gilson
+    quote: >-
+      é presbítero da Diocese Anglicana do Recife e deão da Catedral Anglicana do Bom Samaritano, ministério que
+      exerce de forma voluntária e vocacional há mais de duas décadas.
+  - source: dar-2026-gilson
+    quote: Essa busca o conduziu ao Recife em 1999, ano decisivo em sua vida.
+  - source: dar-2026-gilson
+    quote: Entre 2002 e 2008, Gustavo foi reitor do SAET
+  - source: dar-2020-barbetta-diac
+    quote: >-
+      receberá Alfredo Barbetta, Diácono da Igreja Episcopal Anglicana. Ele é coordenador da Missão Episcopal Anglicana
+      Amor Fraterno, em São Luís.
+  - source: alc-2005-03-06
+    quote: Bishop Oliveira Neto, recognized by the hierarchy as the head of Recife
+  - source: ciceb-betania-historia
+    quote: >-
+      Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom Clóvis
+      Erly, a Missão Betânia foi instalada em 11/07/1996, na Av. Caxangá 1107, no bairro do Cordeiro, sob a liderança
+      do Ministro Auxiliar Leonides de Menezes.
+  - source: ciceb-betania-historia
+    quote: >-
+      Em 8 de julho de 2002, a então Paróquia Betânia, da Igreja Episcopal Anglicana do Brasil, decidiu, em assembleia,
+      desligar-se da Igreja Anglicana, passando a ser chamada Igreja Evangélica Betânia.
+  - source: ciceb-betania-historia
+    quote: >-
+      Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom Clóvis
+      Erly
+  - source: dar-2025-paulino-diac
+    quote: principalmente após a transferência da Revda. Eliane Cristina para a Diocese Anglicana da Amazônia.
+  - source: dar-2021-joaopessoa
+    quote: Ministra Encarregada, Revda. Eliane Cristina.
+  - source: ieab-2004-decreto-recife
+    quote: 'Considerando a solicitação dos clérigos e clérigas a seguir relacionados:'
+  - source: ieab-2004-decreto-recife
+    quote: Revmo. Sérgio L. Andrade (Deão da Catedral
+  - source: ieab-2004-decreto-recife
+    quote: Rev. Gustavo Gilson S. de Oliveira, ose (Reitor do Seminário Anglicano de Estudos Teológicos)
+  - source: ieab-2004-decreto-recife
+    quote: Rev. Fábio Vasconcelos (Paróquia do Mediador e Capelão do Seminário Anglicano de Estudos Teológicos)
+  - source: ieab-2004-decreto-recife
+    quote: Rev. Edmar
+  - source: ieab-2004-decreto-recife
+    quote: Rev. Cláudio Linhares, osf, (Paróquia da Reconciliação)
+  - source: ieab-2004-decreto-recife
+    quote: Revda. Lílian Linhares, osf,
+  - source: ieab-2004-decreto-recife
+    quote: Rev. Israel Pereira C. da Silva, osf, (Paróquia Boas Novas)
+  - source: ieab-2004-decreto-recife
+    quote: Rev. Bruno Luís Teles de Almeida,
+  - source: ieab-2004-decreto-recife
+    quote: Rev. Severino Abel da Silva, ose (Paróquia Jesus de Nazaré)
+  - source: ieab-2004-decreto-recife
+    quote: Cláudio Norberto Melo da Silva, osf (Paróquia da Reconciliação)
+  - source: ieab-2004-decreto-recife
+    quote: Rev. Francisco Sales de Melo Silva, osf,
+  - source: ieab-2004-decreto-recife
+    quote: Rev. João C.
+  - source: ieab-2004-decreto-recife
+    quote: Rev. Josafá Batista dos Santos
+  - source: ieab-2004-decreto-recife
+    quote: supõe que o Bispo Sufragâneo Dom Filadelfo Oliveira, de acordo com sua prerrogativas
+  - source: ieab-2005-cbispos-cantuaria
+    quote: Dom Filadelfo Oliveira Neto
+  - source: dar-clero-diocesano
+    quote: CLERO DIOCESANO
+  - source: dar-clero-diocesano
+    quote: Revdo. Adriano Portela dos Santos
+  - source: dar-clero-diocesano
+    quote: Revdo. Anderson Bruno Costa
+  - source: dar-clero-diocesano
+    quote: Revdo. Anderson Soares
+  - source: dar-clero-diocesano
+    quote: Revda. Bianca Daebs Seixas Almeida
+  - source: dar-clero-diocesano
+    quote: Revdo. Bruno Luiz Teles de Almeida
+  - source: dar-clero-diocesano
+    quote: Revdo. Carlos José de Araújo
+  - source: dar-clero-diocesano
+    quote: Revda. Cícera Josefa Rodrigues (Santinha)
+  - source: dar-clero-diocesano
+    quote: Revdo. Claudio de Souza Linhares
+  - source: dar-clero-diocesano
+    quote: Revdo. Edson Alves Pimentel
+  - source: dar-clero-diocesano
+    quote: Revdo. Esdras Gusmão de Holanda Peixoto
+  - source: dar-clero-diocesano
+    quote: Revdo. Francisco Sales
+  - source: dar-clero-diocesano
+    quote: Revdmo. Deão Gustavo Gilson
+  - source: dar-clero-diocesano
+    quote: Revdo. Herlon Alves Bezerra
+  - source: dar-clero-diocesano
+    quote: Revdo. Ivaldo Isaías Panta
+  - source: dar-clero-diocesano
+    quote: Revda. Janice Gonçalves dos Santos
+  - source: dar-clero-diocesano
+    quote: Revdo. José Damião de Medeiros
+  - source: dar-clero-diocesano
+    quote: Revdo. José Jairy Vieira Alves
+  - source: dar-clero-diocesano
+    quote: Revda. Lílian Pereira da Costa Linhares
+  - source: dar-clero-diocesano
+    quote: Revdo. Márcio Antônio da Silva
+  - source: dar-clero-diocesano
+    quote: Revdo. Martorelli Dantas da Silva
+  - source: dar-clero-diocesano
+    quote: Revdo. Oldair Manoel de Lima Pena
+  - source: dar-clero-diocesano
+    quote: Revdo. Osiel Ferreira de Assunção
+  - source: dar-clero-diocesano
+    quote: Revdo. Rafael Cavalcante Paulino
+  - source: dar-clero-diocesano
+    quote: Revda. Rosimary Cunha
+  - source: dar-clero-diocesano
+    quote: Revdo. Severino Abel da Silva
+  - source: dar-clero-diocesano
+    quote: Revdo. Wellington Pinheiro dos Santos
+  - source: dar-clero-diocesano
+    quote: Revdo. Elias Leôncio de Brito (Emérito)
+  - source: dar-clero-diocesano
+    quote: Revdo. Josafá Batista dos Santos (Emérito)
+  - source: dar-clero-diocesano
+    quote: Revda. Eliane Cristina Vieira (Em disponibilidade para a Diocese da Amazônia)
+  - source: dar-clero-diocesano
+    quote: Revdmo. Dom Filadelfo Oliveira (Bispo Colaborador)
+  - source: ieab-2021-eliane
+    quote: >-
+      sou Eliane Cristina Vieira, professora e presbítera da Igreja Episcopal Anglicana do Brasil, servindo na Paróquia
+      Anglicana Boas Novas, em Caaporã/PB, e à Missão Maria Madalena, em João Pessoa/PB.
+  - source: ieab-2022-portela
+    quote: >-
+      “Na IEAB, sou presbítero da Diocese Anglicana do Recife, atuando como ministro encarregado da Missão Anglicana
+      Ressurreição do Senhor, em Feira de Santana, que é a segunda maior cidade da Bahia”
+  - source: dar-2026-feira
+    quote: >-
+      o rev. Adriano Portela , à época em processo de reconhecimento de ordens, desse início a um trabalho missionário
+      em Feira de Santana.
+  - source: ptwiki-iecb
+    quote: Garcia havia atuado na Igreja Presbiteriana antes de ingressar na Igreja Episcopal do Brasil em 1970
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Edmund serviu no Distrito Missionário Central e, em 1975, tornou-se o primeiro bispo da recém-criada Diocese
+      do Recife
+  - source: wp-en-cavalcanti
+    quote: In 1997 he was elected and consecrated Bishop of the Diocese of Recife
+  - source: wp-en-cavalcanti
+    quote: he was expelled from the IEAB on 10 June 2005, by decision of the Superior Ecclesiastical Court.
+  - source: ta-2005-10-01-ieab-recife
+    quote: under the ecclesiastical authority of the suffragan bishop Filadelfo Oliveira
+  - source: ens-102306-1-a
+    quote: >-
+      The Diocese of Recife in Brazil celebrated the start of a new chapter in its complicated life with the installation
+      on October 11 of its fourth bishop, the Rt. Rev. Sebastiao Armando Gameleira Soares.
+  - source: ptwp-dar
+    quote: Sebastião Armando Gameleira Soares - 2006 a 2013;
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: A IECB segue a forma de governo episcopal, tendo como Bispo Primaz, o Arcebispo Paulo Ruiz Garcia.
+  - source: ptwiki-iecb
+    quote: André Novaes de Albuquerque Cavalcanti (2009)
+- type: schism_from
+  target: ieab
+  date: '2005'
+  led_by:
+  - robinson-cavalcanti
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Em 2005, Robinson Cavalcanti liderou a separação definitiva da Diocese do Recife da IEAB, vinculando-se ao
+      Cone Sul.
+- type: part_of
+  target: iacs
+  date: '2005'
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Em 2005, Robinson Cavalcanti liderou a separação definitiva da Diocese do Recife da IEAB, vinculando-se ao
+      Cone Sul.
+- type: part_of
+  target: diocese-anglicana-recife
+  status: confirmed
+  sources:
+  - source: ai-2018-05-15-uchoa-installed
+    quote: On December 8, 2012, The Rt. Rev. Miguel Uchoa was consecrated as Diocesan Bishop.
+  - source: ai-recife-received-gafcon
+    quote: the work undertaken by the Rt. Rev. Robinson Cavalcanti and his successor, the Rt. Rev. Miguel Uchoa
+  - source: ai-recife-received-gafcon
+    quote: >-
+      the GAFCON primates reviewed the history of the Brazil schism and the work undertaken by the Rt. Rev. Robinson
+      Cavalcanti and his successor, the Rt. Rev. Miguel Uchoa
+  - source: virtueonline-2026-08-25
+    quote: >-
+      He took with him roughly two-thirds of the diocese’s clergy and the overwhelming majority of its laity, and
+      placed himself under the primatial oversight of Archbishop Gregory Venables of the Southern Cone.
+  - source: g1-2012-02-29-velorio
+    quote: Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo líder da igreja
+  - source: wp-pt-evilasio
+    quote: responsável pela 2ª Região Eclesiástica (de Pernambuco ao Rio Grande do Sul)
+  - source: mu-blog-2012-07-22
+    quote: o Revmo Evilásio Tenório, Bispo sufraganeo (auxiliar) da DR
+  - source: gafcon-2017-anglican-renewal
+    quote: Bishop Flavio Adair Torres Soares, a suffragan bishop of the Anglican Church of Recife
+  - source: g1-2012-02-29-velorio
+    quote: pelos dois bispos auxiliares Flávio Aldair e Evilásio Tenório

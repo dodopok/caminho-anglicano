@@ -28,7 +28,7 @@ ordinations:
   - agostinho-guillon-soria
   - clovis-erly-rodrigues
   - edmund-knox-sherrill
-  status: probable
+  status: confirmed
   sources:
   - source: costa2021
     quote: >-
@@ -36,13 +36,15 @@ ordinations:
       tendo como cosagrantes, os bispos Clovis Erly Rodrigues, Agostinho Sória e Edmund Sherrill.
   - source: ens-88234d
     quote: The consecration of Bishop-elect Almir dos Santos will take place in Brasilia in March 1989.
+  - source: sinopse-2003
+    quote: 1989 - Almir dos Santos (Brasília)
   notes: >-
     Eleito em 12/10/1988 pelo 23o Sinodo (4o escrutinio) para a diocese missionaria de Brasilia. ENS previa sagracao
     em marco de 1989 em Brasilia; Costa da 09/04/1989.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: ieab-diocese-brasilia
+  diocese: ieab-dab
   start: 1988-04
   end: 2002-12
   status: probable
@@ -59,9 +61,19 @@ affiliations:
 - jurisdiction: ieab
   role: other
   role_description: bispo_encarregado
-  diocese: distrito-missionario-do-oeste-distrito-missionario-anglicano
+  diocese: ieab-dmo
   status: probable
   sources:
   - source: costa2021
     quote: Distrito Missionário do Oeste, do qual Almir ficou encarregado durante três anos.
   notes: Datas nao informadas.
+events:
+- type: other
+  date: 2017-04
+  description: >-
+    A Camara Episcopal em abril de 2017 (reuniao no Rio de Janeiro) inclui como emeritos Clovis Rodrigues, Almir
+    dos Santos e Celso Franco.
+  status: confirmed
+  sources:
+  - source: ec-2017-04
+    quote: Clóvis Ro- drigues, Almir dos Santos e Celso Franco (eméritos)

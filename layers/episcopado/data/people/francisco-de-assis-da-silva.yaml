@@ -36,9 +36,9 @@ ordinations:
     quote: Em janeiro de 1991 foi ordenado diácono e, em dezembro do mesmo ano, presbítero.
 - order: episcopate
   date: '2011-03-20'
-  place: Catedral Anglicana do Mediador, Santa Maria (RS)
+  place: Catedral do Mediador, Santa Maria (RS)
   jurisdiction: ieab
-  office: suffragan
+  office: coadjutor
   principal_consecrator: mauricio-andrade
   co_consecrators:
   - almir-dos-santos
@@ -55,12 +55,6 @@ ordinations:
   - sebastiao-gameleira
   status: contested
   sources:
-  - source: dap-2011-francisco-sagr
-    quote: >-
-      Os sinos da Catedral Anglicana do Mediador, em Santa Maria, anunciaram na manhã do dia 20 de março que mais
-      um Bispo estava sendo sagrado para servir a Diocese Sul Ocidental
-  - source: dap-2011-francisco-sagr
-    quote: O Bispo Primaz da IEAB, Dom Maurício Andrade, presidiu a Cerimônia de Sagração
   - source: costa2021
     quote: >-
       O ofício de sagração ocorreu no dia 20 de março de 2011, na Catedral do Mediador, em Santa Maria, com a presença
@@ -72,43 +66,43 @@ ordinations:
       A cerimônia de sagração, presidida pelo primaz da Igreja Episcopal Anglicana do Brasil (IEAB), dom Maurício
       Andrade , contou com a presença do presidente do Conselho Latino-Americano de Igrejas (Clai), bispo panamenho
       Julio Murray
+  - source: ec-2017-01
+    quote: >-
+      Em março de 2011, foi sagrado o Revmo. Francisco de Assis da Silva, eleito bispo para a Diocese Sul-Ocidental,
+      cuja sé é Santa Maria/RS.
+  - source: dap-2011-francisco-sagr
+    quote: >-
+      Os sinos da Catedral Anglicana do Mediador, em Santa Maria, anunciaram na manhã do dia 20 de março que mais
+      um Bispo estava sendo sagrado para servir a Diocese Sul Ocidental
+  - source: dap-2011-francisco-sagr
+    quote: O Bispo Primaz da IEAB, Dom Maurício Andrade, presidiu a Cerimônia de Sagração
   discrepancies:
   - field: place
-    value: Catedral do Mediador, Santa Maria (RS)
+    value: Catedral Anglicana do Mediador, Santa Maria (RS)
     sources:
-    - source: costa2021
+    - source: dap-2011-francisco-sagr
       quote: >-
-        O ofício de sagração ocorreu no dia 20 de março de 2011, na Catedral do Mediador, em Santa Maria, com a
-        presença de todos os bispos em atividade no Brasil e outros convidados111.
-    - source: costa2021
-      quote: Estiveram presentes Maurício Andrade, Bispo Primaz e da Diocese de Brasília, que presidiu a
-    - source: ihu-francisco-2011
-      quote: >-
-        A cerimônia de sagração, presidida pelo primaz da Igreja Episcopal Anglicana do Brasil (IEAB), dom Maurício
-        Andrade , contou com a presença do presidente do Conselho Latino-Americano de Igrejas (Clai), bispo panamenho
-        Julio Murray
+        Os sinos da Catedral Anglicana do Mediador, em Santa Maria, anunciaram na manhã do dia 20 de março que mais
+        um Bispo estava sendo sagrado para servir a Diocese Sul Ocidental
+    - source: dap-2011-francisco-sagr
+      quote: O Bispo Primaz da IEAB, Dom Maurício Andrade, presidiu a Cerimônia de Sagração
   - field: office
-    value: coadjutor
+    value: suffragan
     sources:
-    - source: costa2021
+    - source: dap-2011-francisco-sagr
       quote: >-
-        O ofício de sagração ocorreu no dia 20 de março de 2011, na Catedral do Mediador, em Santa Maria, com a
-        presença de todos os bispos em atividade no Brasil e outros convidados111.
-    - source: costa2021
-      quote: Estiveram presentes Maurício Andrade, Bispo Primaz e da Diocese de Brasília, que presidiu a
-    - source: ihu-francisco-2011
-      quote: >-
-        A cerimônia de sagração, presidida pelo primaz da Igreja Episcopal Anglicana do Brasil (IEAB), dom Maurício
-        Andrade , contou com a presença do presidente do Conselho Latino-Americano de Igrejas (Clai), bispo panamenho
-        Julio Murray
+        Os sinos da Catedral Anglicana do Mediador, em Santa Maria, anunciaram na manhã do dia 20 de março que mais
+        um Bispo estava sendo sagrado para servir a Diocese Sul Ocidental
+    - source: dap-2011-francisco-sagr
+      quote: O Bispo Primaz da IEAB, Dom Maurício Andrade, presidiu a Cerimônia de Sagração
   notes: >-
-    Eleito bispo coadjutor da Diocese Sul-Ocidental em 25/10/2010 (sucessor de Jubal Neves). Ano 2011 pela data/URL
-    da publicação (uploads/2011/03). Eleito bispo coadjutor da Diocese Sul-Ocidental em 25/10/2010. A tese lista
-    os bispos "presentes" (nao necessariamente todos impuseram as maos).
+    Eleito bispo coadjutor da Diocese Sul-Ocidental em 25/10/2010. A tese lista os bispos "presentes" (nao necessariamente
+    todos impuseram as maos). Eleito bispo coadjutor da Diocese Sul-Ocidental em 25/10/2010 (sucessor de Jubal Neves).
+    Ano 2011 pela data/URL da publicação (uploads/2011/03).
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: ieab-diocese-sul-ocidental
+  diocese: ieab-dso
   start: '2011'
   status: confirmed
   sources:
@@ -134,7 +128,7 @@ affiliations:
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino
-  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  diocese: ieab-dasp
   start: '2017'
   end: '2018'
   status: contested

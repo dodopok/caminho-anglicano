@@ -46,7 +46,7 @@ ordinations:
     de 2005).
 - order: episcopate
   date: '2013-12-14'
-  place: Catedral Anglicana da Santíssima Trindade, Espinheiro, Recife (PE)
+  place: Catedral da Santissima Trindade, Recife (bairro do Espinheiro)
   jurisdiction: ieab
   office: diocesan
   principal_consecrator: francisco-de-assis-da-silva
@@ -57,12 +57,6 @@ ordinations:
   - sebastiao-gameleira
   status: contested
   sources:
-  - source: dar-2023-peixoto10
-    quote: >-
-      A cerimônia de sagração aconteceu no dia 14 de dezembro de 2013, na Catedral Anglicana da Santíssima Trindade,
-      no bairro do Espinheiro. Estiveram presentes o Primaz da Igreja Episcopal Anglicana do Brasil, Dom Francisco
-      de Assis da Silva, que presidiu a liturgia. Os demais co-sagrantes foram os bispos Sebastião Gameleira, Maurício
-      Andrade, Saulo Barros e Filadelfo Oliveira.
   - source: costa2021
     quote: >-
       A cerimônia foi presidida pelo Bispo Primaz, Francisco de Assis da Silva, e os demais co-sagrantes foram os
@@ -73,29 +67,35 @@ ordinations:
   - source: wp-pt-joao-cancio
     quote: >-
       Em novembro de 2013 foi eleito Bispo da Diocese Anglicana do Recife, sendo sagrado em 14 de dezembro de 2013
+  - source: ec-2017-01
+    quote: >-
+      No XXXII Sínodo Geral, foi eleito o Revmo. João Cancio Peixoto bispo coadjutor do Recife, sendo sagrado em
+      dezembro de 2013.
+  - source: dar-2023-peixoto10
+    quote: >-
+      A cerimônia de sagração aconteceu no dia 14 de dezembro de 2013, na Catedral Anglicana da Santíssima Trindade,
+      no bairro do Espinheiro. Estiveram presentes o Primaz da Igreja Episcopal Anglicana do Brasil, Dom Francisco
+      de Assis da Silva, que presidiu a liturgia. Os demais co-sagrantes foram os bispos Sebastião Gameleira, Maurício
+      Andrade, Saulo Barros e Filadelfo Oliveira.
   discrepancies:
   - field: place
-    value: Catedral da Santissima Trindade, Recife (bairro do Espinheiro)
+    value: Catedral Anglicana da Santíssima Trindade, Espinheiro, Recife (PE)
     sources:
-    - source: costa2021
+    - source: dar-2023-peixoto10
       quote: >-
-        A cerimônia foi presidida pelo Bispo Primaz, Francisco de Assis da Silva, e os demais co-sagrantes foram
-        os bispos Sebastião Gameleira, Maurício Andrade, Saulo de Barros e Filadelfo Oliveira.
-    - source: costa2021
-      quote: >-
-        sagração ocorreu na noite de 14 de dezembro de 2013, na Catedral da Santíssima Trindade, na capital pernambucana
-    - source: wp-pt-joao-cancio
-      quote: >-
-        Em novembro de 2013 foi eleito Bispo da Diocese Anglicana do Recife, sendo sagrado em 14 de dezembro de
-        2013
+        A cerimônia de sagração aconteceu no dia 14 de dezembro de 2013, na Catedral Anglicana da Santíssima Trindade,
+        no bairro do Espinheiro. Estiveram presentes o Primaz da Igreja Episcopal Anglicana do Brasil, Dom Francisco
+        de Assis da Silva, que presidiu a liturgia. Os demais co-sagrantes foram os bispos Sebastião Gameleira,
+        Maurício Andrade, Saulo Barros e Filadelfo Oliveira.
   notes: >-
-    Bispo diocesano da Diocese Anglicana do Recife (IEAB). Co-sagrantes na forma curta dada pela fonte (exceto Maurício
-    Andrade, cujo nome completo consta da página de dioceses da IEAB); nomes completos a confirmar. Eleito em 16/11/2013
-    no 32o Sinodo Geral (Rio de Janeiro).
+    Eleito em 16/11/2013 no 32o Sinodo Geral (Rio de Janeiro). O Estandarte (jan/2017) diz que foi eleito "bispo
+    coadjutor do Recife"; Costa e Wikipedia dizem bispo diocesano. Bispo diocesano da Diocese Anglicana do Recife
+    (IEAB). Co-sagrantes na forma curta dada pela fonte (exceto Maurício Andrade, cujo nome completo consta da página
+    de dioceses da IEAB); nomes completos a confirmar.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  diocese: ieab-dar
   start: '2013-12-14'
   status: confirmed
   sources:
@@ -103,19 +103,13 @@ affiliations:
     quote: Bispo Diocesano – Revmo. João Cancio Peixoto Filho
   - source: ieab-serie-dar
     quote: Bispo Diocesano – Revmo. João Cancio Peixoto Filho.
-- jurisdiction: ieab
-  role: diocesan_bishop
-  diocese: ieab-diocese-recife
-  start: '2013-12-14'
-  status: confirmed
-  sources:
   - source: dar-2023-peixoto10
     quote: >-
       nos alegramos com toda a Igreja pelos 10 anos de episcopado do Bispo João Câncio Peixoto Filho, à frente da
       Diocese Anglicana do Recife.
 - jurisdiction: ieab
   role: clergy
-  diocese: ieab-diocese-recife
+  diocese: ieab-dar
   status: confirmed
   sources:
   - source: ieab-2004-decreto-recife

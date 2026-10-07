@@ -20,19 +20,23 @@ ordinations:
   jurisdiction: ieab
   office: coadjutor
   principal_consecrator: francisco-de-assis-da-silva
-  status: probable
+  status: confirmed
   sources:
   - source: costa2021
     quote: >-
       Na manhã do dia 08 de abril de 2017, ocorreu a cerimônia de sagração episcopal na Catedral do Redentor, que
       ficou lotada para a cerimônia, sendo o principal sagrante o Bispo Primaz, Francisco de Assis da Silva, e co-sagrantes
       os demais bispos da Província.
+  - source: ec-2017-04
+    quote: >-
+      Essa reunião culminou com uma celebração de sagração do novo Bispo Coadjutor do Rio de Janeiro, D. Eduardo
+      Coelho Grillo, na Catedral do Redentor, reali- zada na manhã do dia 08 de abril.
   notes: >-
     Eleito bispo coadjutor da DARJ em 02/11/2016; co-sagrantes = "os demais bispos da Provincia" (nao nomeados).
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-do-rio-de-janeiro-ex-diocese-central
+  diocese: ieab-darj
   start: '2017-07-29'
   status: confirmed
   sources:

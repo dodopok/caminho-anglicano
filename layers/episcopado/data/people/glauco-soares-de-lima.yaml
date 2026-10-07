@@ -67,16 +67,18 @@ affiliations:
   start: '1989'
   end: '2013'
   end_reason: schism
-  status: probable
+  status: confirmed
   sources:
   - source: wp-pt-glauco
     quote: >-
       Em 2013, juntou-se ao movimento liderado pelo então Bispo da Diocese Anglicana de São Paulo, Dom Roger Douglas
       Bird, e o Reverendo Aldo Quintão, tornando-se um dos fundadores do Movimento Anglicano no Brasil, que rompeu
       com a IEAB
+  - source: glauco-testemunho-2013
+    quote: Como consequência de tudo isso, decidi apoiar os dissidentes
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  diocese: ieab-dasp
   start: 1990-01
   end: '2002'
   end_reason: retirement
@@ -86,6 +88,8 @@ affiliations:
     quote: Assumiu a Diocese em janeiro do ano seguinte
   - source: costa2021
     quote: 1990-2002 – Glauco Soares de Lima
+  - source: glauco-testemunho-2013
+    quote: Bispo da Diocese Anglicana de São Paulo de 1990 - 2002
 - jurisdiction: ieab
   role: primate
   start: '1993'
@@ -98,11 +102,15 @@ affiliations:
       permanecendo no cargo por dez anos.
   - source: wp-en-ieab
     quote: Glauco Soares de Lima, 1993—2003
+  - source: glauco-testemunho-2013
+    quote: Bispo Primaz do Brasil de 1993 – 2003.
+  - source: sinopse-2003
+    quote: '**1994** - Novo Primaz: Glauco Soares de Lima.'
   notes: Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94).
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino
-  diocese: ieab-diocese-brasilia
+  diocese: ieab-dab
   start: 2003-01
   end: 2003-05
   status: probable
@@ -127,3 +135,25 @@ affiliations:
   sources:
   - source: costa-2021-tese
     quote: O bispo Glauco Soares de Lima faleceu no dia 27 de dezembro de 2017 na cidade de São Paulo
+events:
+- type: death
+  date: 2017-12
+  description: >-
+    Morte do bispo emerito Glauco Soares de Lima (dezembro de 2017), noticiada pelo orgao oficial da IEAB.
+  status: confirmed
+  sources:
+  - source: ec-2018-04
+    quote: Faleceu em dezembro de 2017 o Bispo Glauco Soares de Lima, emérito de São Paulo.
+  - source: costa2021
+    quote: Faleceu em 26 de dezembro de 2017.
+- type: other
+  date: '2012-09-08'
+  description: >-
+    Eleicao de Flavio Irala para bispo da DASP em 08/09/2012, por 19 a 18 votos na ordem leiga e 15 a 13 na clerical
+    (segundo Glauco); anulada pelo bispo Roger Bird e contestada, o que levou ao cisma.
+  status: probable
+  sources:
+  - source: glauco-testemunho-2013
+    quote: >-
+      No dia 08/09/12 recebi a notícia que em Concílio da DASP o Rev. Flávio Irala havia sido eleito Bispo da mesma
+      por 19 a 18 votos na ordem leiga e 15 a 13 votos na ordem clerical.

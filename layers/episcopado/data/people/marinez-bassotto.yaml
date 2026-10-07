@@ -33,13 +33,19 @@ ordinations:
   - source: wp-pt-marinez
     quote: >-
       Sua sagração episcopal aconteceu em 21 de abril de 2018, na Catedral de Santa Maria, em Belém do Pará.
+  - source: ec-2018-04
+    quote: >-
+      Belém, do outro lado do país foi o lugar onde aconteceu a histó- rica sagração de nossa primeira bispa: Marinez
+      Bassotto.
+  - source: ec-2018-04
+    quote: Em destaque, as bispas Linda Nichols (de Huron, Canadá) e Griselda del Cappio (de Cuba)
   notes: >-
     Primeira bispa da IEAB e da America do Sul. Eleita em 20/01/2018. Sagrante principal nao explicitado nas fontes
     lidas (primaz da epoca: Francisco de Assis da Silva).
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-da-amazonia
+  diocese: ieab-daa
   start: '2018-04-22'
   status: confirmed
   sources:
@@ -63,7 +69,7 @@ affiliations:
 - jurisdiction: ieab
   role: other
   role_description: bispo_encarregado
-  diocese: distrito-missionario-do-oeste-distrito-missionario-anglicano
+  diocese: ieab-dmo
   status: confirmed
   sources:
   - source: ieab-dioceses

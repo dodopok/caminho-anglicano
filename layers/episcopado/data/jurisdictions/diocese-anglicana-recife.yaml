@@ -61,15 +61,9 @@ relations:
     Anglican Ink (2018-04-17) e Wikipedia datam a saída em 2004; IAB e Anglican Ink (2018-05-15) falam em excomunhão
     em 2005.
 - type: part_of
-  target: iecb
-  status: probable
-  sources:
-  - source: ptwiki-iecb
-    quote: André Novaes de Albuquerque Cavalcanti (2009)
-- type: part_of
   target: iacs
   date: c.2007
-  status: contested
+  status: probable
   sources:
   - source: tlc-2012-02-27
     quote: >-
@@ -89,28 +83,10 @@ relations:
     quote: >-
       163f. Evilásio Tenório da Silva Júnior (2012) que, em 2012, assumiu como primaz interino da Diocese do Recife
       - Cone Sul, até a eleição de Miguel Uchoa
-  - source: iab-poster-linhagem-meira
-    quote: >-
-      Em 2005, Robinson Cavalcanti liderou a separação definitiva da Diocese do Recife da IEAB, vinculando-se ao
-      Cone Sul.
   notes: >-
     Data só aproximada ('two years later' após 2005). Fontes posteriores divergem sobre o vínculo ter sido de fato
     provincial: pt-wiki diz que Robinson 'tentou filiar' a diocese ao Cone Sul; Atwood (dez/2015) diz 'Lacking a
     Provincial affiliation'.
-  discrepancies:
-  - field: date
-    value: '2005'
-    sources:
-    - source: aac-2015-12-08
-      quote: One of the new Deacons is Eric.
-    - source: iab-poster-linhagem-uchoa
-      quote: >-
-        163f. Evilásio Tenório da Silva Júnior (2012) que, em 2012, assumiu como primaz interino da Diocese do Recife
-        - Cone Sul, até a eleição de Miguel Uchoa
-    - source: iab-poster-linhagem-meira
-      quote: >-
-        Em 2005, Robinson Cavalcanti liderou a separação definitiva da Diocese do Recife da IEAB, vinculando-se
-        ao Cone Sul.
 - type: schism_from
   target: ieab
   date: '2005'
@@ -130,10 +106,6 @@ relations:
     quote: >-
       The church had its origin in a 2005 split in which the Diocese of Recife, led by Robinson Cavalcanti, left
       the Anglican Episcopal Church of Brazil
-  - source: iab-poster-linhagem-meira
-    quote: >-
-      Em 2005, Robinson Cavalcanti liderou a separação definitiva da Diocese do Recife da IEAB, vinculando-se ao
-      Cone Sul.
   notes: >-
     Anglican Ink (2018-04-17) e Wikipédia EN (Uchôa) datam a saída em 2004; IAB, GAFCON e Wikipédia (Cavalcanti/IAB)
     em 2005 (declaração 25/01/2005, exclusão 10/06/2005).

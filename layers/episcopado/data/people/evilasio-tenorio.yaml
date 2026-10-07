@@ -50,7 +50,7 @@ affiliations:
 - jurisdiction: ieab
   role: other
   role_description: postulante
-  diocese: ieab-diocese-recife
+  diocese: ieab-dar
   start: '2002'
   status: probable
   sources:
@@ -73,28 +73,32 @@ affiliations:
   notes: '''primaz interino'' da diocese no texto; papel real provavelmente administrador/bispo interino.'
 - jurisdiction: diocese-anglicana-recife
   role: bishop
-  diocese: diocese-anglicana-do-recife-administrador-interino
-  start: 2012-02
-  end: '2012-12-08'
-  status: probable
-  sources:
-  - source: g1-2012-02-29-velorio
-    quote: Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo líder da igreja
-  notes: >-
-    O pôster chama o cargo de 'primaz interino da Diocese do Recife - Cone Sul'; fontes jornalísticas falam em substituição
-    interina. Fim = posse de Uchôa (inferido).
-- jurisdiction: diocese-anglicana-recife
-  role: bishop
-  diocese: diocese-anglicana-do-recife-sufraganeo-auxiliar-2-regiao-eclesiastica
+  diocese: ieab-dar
   start: '2012-03-17'
   end: '2018-05-12'
   end_reason: transfer
-  status: probable
+  status: contested
   sources:
   - source: wp-pt-evilasio
     quote: responsável pela 2ª Região Eclesiástica (de Pernambuco ao Rio Grande do Sul)
   - source: mu-blog-2012-07-22
     quote: o Revmo Evilásio Tenório, Bispo sufraganeo (auxiliar) da DR
+  - source: g1-2012-02-29-velorio
+    quote: Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo líder da igreja
+  discrepancies:
+  - field: start
+    value: 2012-02
+    sources:
+    - source: g1-2012-02-29-velorio
+      quote: Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo líder da igreja
+  - field: end
+    value: '2012-12-08'
+    sources:
+    - source: g1-2012-02-29-velorio
+      quote: Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo líder da igreja
+  notes: >-
+    O pôster chama o cargo de 'primaz interino da Diocese do Recife - Cone Sul'; fontes jornalísticas falam em substituição
+    interina. Fim = posse de Uchôa (inferido).
 - jurisdiction: iab
   role: bishop
   diocese: iab-diocese-recife
@@ -110,7 +114,7 @@ affiliations:
   notes: Bispo auxiliar/assistente da Diocese de Recife (2018–2019, pelo menos).
 - jurisdiction: iab
   role: clergy
-  diocese: diocese-de-recife-paroquia-anglicana-do-mediador-tejipio
+  diocese: iab-diocese-recife
   start: '2018'
   status: confirmed
   sources:

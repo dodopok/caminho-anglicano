@@ -127,22 +127,11 @@ affiliations:
   notes: 'Datas aproximadas: de 1970 (ordenação) até a ida a Recife em março de 1975.'
 - jurisdiction: ieab
   role: clergy
-  diocese: diocese-do-recife-setentrional
-  start: '1970'
+  diocese: ieab-dar
+  start: 1975-03
   end: '2002-09-20'
   end_reason: schism
-  status: probable
-  sources:
-  - source: ptwiki-iecb
-    quote: Garcia havia atuado na Igreja Presbiteriana antes de ingressar na Igreja Episcopal do Brasil em 1970
-  notes: Reitor/deão da Igreja/Catedral da Trindade, Recife, desde março de 1975.
-- jurisdiction: ieab
-  role: clergy
-  diocese: ieab-diocese-recife
-  start: 1975-03
-  end: 2002-09
-  end_reason: schism
-  status: confirmed
+  status: contested
   sources:
   - source: ciceb-betania-historia
     quote: >-
@@ -155,14 +144,22 @@ affiliations:
   - source: queiroz-2004-ufpe
     quote: >-
       setembro de 2002, o Pr. Paulo Garcia declarou, oficialmente, a sua ruptura da Igreja Episcopal Anglicana.
+  - source: ptwiki-iecb
+    quote: Garcia havia atuado na Igreja Presbiteriana antes de ingressar na Igreja Episcopal do Brasil em 1970
   notes: >-
     Reitor da Catedral (Santíssima Trindade, Recife) em 1996, sob o bispo Clóvis Erly Rodrigues. Complementa o vínculo
     1975–2002. Antes de Recife serviu em São Paulo (Paróquia Cristo Salvador, ABC) e no Rio de Janeiro (Morro Dona
     Marta, São Lucas-Botafogo, Redentor-Tijuca, Cristo Rei-Cidade de Deus). Liderou a Catedral da Santíssima Trindade
-    (Espinheiro), da qual é chamado "Deão".
+    (Espinheiro), da qual é chamado "Deão". Reitor/deão da Igreja/Catedral da Trindade, Recife, desde março de 1975.
+  discrepancies:
+  - field: start
+    value: '1970'
+    sources:
+    - source: ptwiki-iecb
+      quote: Garcia havia atuado na Igreja Presbiteriana antes de ingressar na Igreja Episcopal do Brasil em 1970
 - jurisdiction: iecb
   role: primate
-  diocese: diocese-do-recife-catedral-da-trindade
+  diocese: ieab-dar
   status: probable
   sources:
   - source: ptwiki-iecb

@@ -33,7 +33,7 @@ ordinations:
   date: '1997-10-05'
   place: Teatro Guararapes, Centro de Convencoes de Pernambuco (Olinda/Recife)
   jurisdiction: ieab
-  office: diocesan
+  office: coadjutor
   principal_consecrator: glauco-soares-de-lima
   co_consecrators:
   - almir-dos-santos
@@ -41,14 +41,6 @@ ordinations:
   - edmund-knox-sherrill
   status: contested
   sources:
-  - source: ultimato-robinson-bio
-    quote: Em 1997 foi eleito, sagrado e instituído Bispo da Diocese Anglicana do Recife
-  - source: tlc-2012-02-27
-    quote: Cavalcanti was consecrated as Bishop of Recife in 1997.
-  - source: wp-en-cavalcanti
-    quote: >-
-      In 1997 he was elected and consecrated Bishop of the Diocese of Recife, attending the Lambeth Conference of
-      1998
   - source: costa2021
     quote: >-
       O novo bispo coadjutor foi sagrado no dia 05 de outubro de 1997, em cerimônia realizada no Teatro Guararapes183,
@@ -58,49 +50,45 @@ ordinations:
     quote: >-
       No dia 05 de outubro de 1997, Edward Robinson de Barros Cavalcanti95 foi sagrado pelo Primaz em cerimônia
       realizada no Centro de Convenções de Pernambuco
+  - source: robinson-meninos
+    quote: >-
+      Com ele fui “leitor” (ministro leigo), postulante, candidato, diácono e presbítero (e ele seria um dos co-sagrantes
+      do meu episcopado).
   - source: iab-poster-linhagem-meira
     quote: >-
       Em 1997, Edmund participou da consagração de Edward Robinson de Barros Cavalcanti como bispo coadjutor, que
       depois se tornaria diocesano.
+  - source: ultimato-robinson-bio
+    quote: Em 1997 foi eleito, sagrado e instituído Bispo da Diocese Anglicana do Recife
+  - source: tlc-2012-02-27
+    quote: Cavalcanti was consecrated as Bishop of Recife in 1997.
+  - source: wp-en-cavalcanti
+    quote: >-
+      In 1997 he was elected and consecrated Bishop of the Diocese of Recife, attending the Lambeth Conference of
+      1998
   discrepancies:
   - field: office
-    value: coadjutor
+    value: diocesan
     sources:
-    - source: costa2021
+    - source: ultimato-robinson-bio
+      quote: Em 1997 foi eleito, sagrado e instituído Bispo da Diocese Anglicana do Recife
+    - source: tlc-2012-02-27
+      quote: Cavalcanti was consecrated as Bishop of Recife in 1997.
+    - source: wp-en-cavalcanti
       quote: >-
-        O novo bispo coadjutor foi sagrado no dia 05 de outubro de 1997, em cerimônia realizada no Teatro Guararapes183,
-        do Centro de Convenções de Pernambuco, pelo Primaz, Glauco Soares de Lima, tendo como co-sagrantes os bispos
-        Edmund Sherrill, Almir dos Santos e Clovis Erly Rodrigues.
-    - source: costa2021
-      quote: >-
-        No dia 05 de outubro de 1997, Edward Robinson de Barros Cavalcanti95 foi sagrado pelo Primaz em cerimônia
-        realizada no Centro de Convenções de Pernambuco
-    - source: iab-poster-linhagem-meira
-      quote: >-
-        Em 1997, Edmund participou da consagração de Edward Robinson de Barros Cavalcanti como bispo coadjutor,
-        que depois se tornaria diocesano.
+        In 1997 he was elected and consecrated Bishop of the Diocese of Recife, attending the Lambeth Conference
+        of 1998
   notes: >-
-    O pôster da IAB (Meira) diz 'bispo coadjutor, que depois se tornaria diocesano'. Data exata e sagrantes não
-    encontrados ainda. Confirma a pista dos posteres (participacao de Edmund Sherrill). Eleito coadjutor em 28/06/1997
-    no Concilio Extraordinario em Vera Cruz, Ilha de Itaparica (BA); instalado como bispo diocesano em 19/10/1997.
-    Uma nota da mesma tese (n. 225) cita "Teatro Beberibe". O pôster só diz que Sherrill 'participou'; sagrante
-    principal desconhecido por esta fonte.
+    Confirma a pista dos posteres (participacao de Edmund Sherrill). Eleito coadjutor em 28/06/1997 no Concilio
+    Extraordinario em Vera Cruz, Ilha de Itaparica (BA); instalado como bispo diocesano em 19/10/1997. Uma nota
+    da mesma tese (n. 225) cita "Teatro Beberibe". O proprio Robinson, em testemunho de 2004 hospedado no Projeto
+    Cantuaria, confirma que Sherrill foi um dos seus co-sagrantes. O pôster só diz que Sherrill 'participou'; sagrante
+    principal desconhecido por esta fonte. O pôster da IAB (Meira) diz 'bispo coadjutor, que depois se tornaria
+    diocesano'. Data exata e sagrantes não encontrados ainda.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: ieab-diocese-recife
-  start: '1997'
-  end: '2005'
-  end_reason: deposition
-  status: probable
-  sources:
-  - source: wp-en-cavalcanti
-    quote: In 1997 he was elected and consecrated Bishop of the Diocese of Recife
-  - source: wp-en-cavalcanti
-    quote: he was expelled from the IEAB on 10 June 2005, by decision of the Superior Ecclesiastical Court.
-- jurisdiction: ieab
-  role: diocesan_bishop
-  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  diocese: ieab-dar
   start: '1997-10-19'
   end: '2005-06-10'
   end_reason: deposition
@@ -115,9 +103,13 @@ affiliations:
     quote: Edward Robinson de Barros Cavalcanti - 1997 a 2005 (deposto);
   - source: ens-102306-1-a
     quote: Finally, in June 2005, Cavalcanti was deposed on the grounds that he broke communion with the IEAB
+  - source: wp-en-cavalcanti
+    quote: In 1997 he was elected and consecrated Bishop of the Diocese of Recife
+  - source: wp-en-cavalcanti
+    quote: he was expelled from the IEAB on 10 June 2005, by decision of the Superior Ecclesiastical Court.
 - jurisdiction: diocese-anglicana-recife
   role: diocesan_bishop
-  diocese: diocese-anglicana-recife
+  diocese: ieab-dar
   start: '2005'
   end: '2012-02-26'
   end_reason: death
@@ -279,6 +271,43 @@ events:
       as acting dean of the cathedral
   - source: costa2021
     quote: Em setembro de 2002, ocorreu o que chamamos de “Pequena Crise do Recife”105
+- type: other
+  date: 2004-09
+  description: >-
+    Decreto da Camara dos Bispos (set/2004) acolhe pedido do bispo sufraganeo do Recife (Filadelfo Oliveira Neto),
+    de 14 clerigos, 9 paroquias e 6 missoes por supervisao episcopal alternativa a Robinson Cavalcanti.
+  status: confirmed
+  sources:
+  - source: ieab-esclarecimento-2004
+    quote: >-
+      A Câmara dos Bispos acolheu a solicitação do Bispo Sufragâneo, de 14 clérigos, 9 paróquias e 6 missões, todos
+      evangélicos, para uma supervisão alternativa
+  - source: costa2021
+    quote: >-
+      a recusa do Bispo Diocesano, Dom Edward Robinson de Barros Cavalcanti, em acatar o Decreto de Supervisão Episcopal
+      Especial de 16 de setembro de 2004
+- type: deposition
+  date: '2005-10-12'
+  description: >-
+    O primaz Orlando Santos de Oliveira protesta junto ao primaz do Cone Sul, Gregory Venables, contra o acolhimento
+    do "bispo deposto" e de clerigos depostos da Diocese do Recife (carta de 12/10/2005).
+  status: confirmed
+  sources:
+  - source: orlando-venables-2005
+    quote: >-
+      Lamento profundamente vossa carta, reconhecendo e acolhendo para supervisão o bispo deposto e um grupo de
+      clérigos depostos que pertenceram à Diocese Anglicana do Recife.
+- type: other
+  date: '1997'
+  description: Robinson Cavalcanti toma posse como bispo do Recife (1997), primeiro bispo anglicano nordestino.
+  status: confirmed
+  sources:
+  - source: sinopse-2003
+    quote: >-
+      Toma posse como bispo do Recife - Edward Robinson de Barros Cavalcanti, primeiro bispo anglicano nordestino
+  - source: costa2021
+    quote: >-
+      Em 19 de outubro do mesmo ano, Robinson foi instalado como terceiro bispo da Diocese Anglicana do Recife.
 - type: other
   date: 2002-09
   description: >-

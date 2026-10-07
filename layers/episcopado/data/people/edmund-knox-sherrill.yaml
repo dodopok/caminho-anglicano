@@ -225,7 +225,7 @@ affiliations:
     quote: Bishop Edmund Knox Sherrill of Central Brazil
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-do-rio-de-janeiro-ex-diocese-central
+  diocese: ieab-darj
   start: '1959-01-25'
   end: '1976'
   end_reason: transfer
@@ -238,7 +238,7 @@ affiliations:
   notes: Costa Anexo D da 1956 (erro; sagrado em 1959).
 - jurisdiction: ieab
   role: diocesan_bishop
-  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  diocese: ieab-dar
   start: '1975'
   end: '1986'
   end_reason: retirement
@@ -248,17 +248,11 @@ affiliations:
     quote: 1976-1985 – Edmund Knox Sherrill
   - source: ptwp-dar
     quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
-  notes: Datas divergem (1975/1976 a 1985/1986).
-- jurisdiction: ieab
-  role: diocesan_bishop
-  diocese: ieab-diocese-recife
-  start: '1975'
-  status: probable
-  sources:
   - source: iab-poster-linhagem-meira
     quote: >-
       Edmund serviu no Distrito Missionário Central e, em 1975, tornou-se o primeiro bispo da recém-criada Diocese
       do Recife
+  notes: Datas divergem (1975/1976 a 1985/1986).
 - jurisdiction: ieab
   role: primate
   start: '1984'
@@ -274,6 +268,8 @@ affiliations:
   - source: ens-84185
     quote: >-
       The acting Primate of the Church of Brazil is the Rt. Rev. Edmond Sherrill, bishop of the Northern Diocese.
+  - source: robinson-meninos
+    quote: era, então, primaz em exercício, com a morte do Bispo Kratz
   notes: Primaz em exercicio/interino (bispo mais antigo).
 events:
 - type: other

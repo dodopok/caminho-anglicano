@@ -1,10 +1,12 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: iab-diocese-vitoria
 acronym: IAB-Vitoria
-name: Diocese de Vitória (IAB)
+name: Diocese de Vitória de Santo Antão (IAB)
 aliases:
 - Diocese de Vitória
 - Diocese de Vitória (Igreja Anglicana no Brasil)
+- Diocese de Vitória de Santo Antão
+- Diocese de Vitória de Santo Antão (Catedral Pedra Viva)
 type: diocese
 tradition: anglican
 country: BR
@@ -40,3 +42,13 @@ relations:
   - source: iab-comunicado-oficial-2018
     quote: tivemos o privilégio de formar a Província da Igreja Anglicana no Brasil, com 3 dioceses
   date: '2018-05-12'
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: e Frederico Carneiro Rêgo Bastos, da Diocese de Vitória de Santo Antão
+  - source: ptwiki-iecb
+    quote: Jean Clayton de Albuquerque do Nascimento (2020)
+  - source: ptwiki-iecb
+    quote: Felipe Alves da Silva (2024)
