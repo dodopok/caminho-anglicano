@@ -1,5 +1,5 @@
 <template>
-  <div class="episcopado min-h-screen bg-stone-50">
+  <div class="episcopado flex min-h-screen flex-col bg-stone-50">
     <EpiscopadoHeader :nodes="graph.nodes" />
 
     <EpiscopadoNotFound v-if="notFound" :id="id" kind="Pessoa" :nodes="graph.nodes" only="person" />
@@ -48,8 +48,7 @@
             <p v-if="person.fullName && person.fullName !== person.name" class="mt-1 text-lg text-stone-600">{{ person.fullName }}</p>
             <p v-if="lifeDates" class="mt-1 text-sm text-stone-500">
               {{ lifeDates }}
-              <EpiscopadoCites v-if="person.birth" :cites="person.birth.cites" />
-              <EpiscopadoCites v-if="person.death" :cites="person.death.cites" />
+              <EpiscopadoCites :cites="lifeCites" />
             </p>
             <p v-if="person.aliases.length" class="mt-2 text-xs text-stone-500">
               Também: <span v-for="(a, i) in person.aliases" :key="a">{{ a }}<template v-if="i < person.aliases.length - 1"> · </template></span>
@@ -238,6 +237,9 @@ const lifeDates = computed(() => {
   if (birth) return `Nascimento: ${birth}${p.birth?.place ? `, ${p.birth.place}` : ''}`
   return `Falecimento: ${death}${p.death?.place ? `, ${p.death.place}` : ''}`
 })
+
+/** Notas de nascimento e falecimento, sem repetir número. */
+const lifeCites = computed(() => [...new Set([...(person.value?.birth?.cites ?? []), ...(person.value?.death?.cites ?? [])])])
 
 /** Vínculos sem data de fim, do mais alto para o mais baixo. */
 const currentRoles = computed(() =>

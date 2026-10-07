@@ -1,8 +1,8 @@
 <template>
-  <div class="episcopado min-h-screen bg-stone-50">
+  <div class="episcopado flex min-h-screen flex-col bg-stone-50">
     <EpiscopadoHeader :nodes="graph.nodes" />
 
-    <main v-if="notFound" class="mx-auto max-w-2xl px-4 py-16 text-center">
+    <main v-if="notFound" class="mx-auto w-full max-w-2xl flex-1 px-4 py-16 text-center">
       <p class="text-xs font-semibold uppercase tracking-wide text-stone-500">Fonte</p>
       <h1 class="mt-2 font-serif text-4xl font-semibold text-stone-900">Não encontramos “{{ id }}”</h1>
       <p class="mt-3 text-stone-600">Essa fonte não está na base, ou o link mudou.</p>

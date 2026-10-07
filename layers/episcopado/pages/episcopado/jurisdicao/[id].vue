@@ -1,5 +1,5 @@
 <template>
-  <div class="episcopado min-h-screen bg-stone-50">
+  <div class="episcopado flex min-h-screen flex-col bg-stone-50">
     <EpiscopadoHeader :nodes="graph.nodes" />
 
     <EpiscopadoNotFound v-if="notFound" :id="id" kind="Jurisdição" :nodes="graph.nodes" only="jurisdiction" />
