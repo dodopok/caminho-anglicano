@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: maria-do-carmo-farias-brito
+name: Maria do Carmo Farias Brito
+biography: Diácona em 08/12/2006 (Conde-PB).
+sources:
+- source: dar-2006-convite-diaconal
+  quote: >-
+    convida V.Sa. para o Culto Solene de Ordenação Diaconal dos Candidatos : José Roseno da Silva Irmão Keyla Maria
+    Pereira Camargo Maria do Carmo Farias Brito Michael La Cagnina Local: Chácara Porta da Fonte  Município de Conde-PB
+    Data: 08 de dezembro de 2006
+ordinations:
+- order: diaconate
+  date: '2006-12-08'
+  place: Chácara Porta da Fonte, Conde-PB
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: dar-2006-convite-diaconal
+    quote: >-
+      convida V.Sa. para o Culto Solene de Ordenação Diaconal dos Candidatos : José Roseno da Silva Irmão Keyla
+      Maria Pereira Camargo Maria do Carmo Farias Brito Michael La Cagnina Local: Chácara Porta da Fonte  Município
+      de Conde-PB Data: 08 de dezembro de 2006
+  - source: dar-diaconos-2007
+    quote: Maria do Carmo Farias Brito
+  notes: 'Fonte: convite publicado em 29/11/2006 e lista de diáconos(as) de out/2007 que já o(a) inclui.'

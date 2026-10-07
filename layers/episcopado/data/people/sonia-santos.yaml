@@ -17,10 +17,11 @@ sources:
 ordinations:
 - order: presbyterate
   date: '2010-12-04'
-  place: Culto de encerramento do XXX Concílio Ordinário da Diocese do Recife
+  place: >-
+    Culto de encerramento do XXX Concílio da Diocese do Recife (Colônia dos Salesianos, Jaboatão dos Guararapes-PE)
   jurisdiction: diocese-anglicana-recife
   ordained_by: robinson-cavalcanti
-  status: probable
+  status: confirmed
   sources:
   - source: dar-2010-centesimo
     quote: >-
@@ -28,11 +29,21 @@ ordinations:
       Grande, Paraíba, estará ordenando o centésimo clérigo do seu ministério episcopal de treze anos. Na mesma
       ocasião a Revda. Sônia Santos , de Goianinha, Rio Grande do Norte, será a 86ª a receber a Ordem Presbiteral.
   - source: dar-2013-rn
-    quote: Estas duas comunidades têm a sua frente a Revª Sônia Santos.
+    quote: têm a sua frente a Revª Sônia Santos
+  - source: dar-2010-sermao-xxx-concilio
+    quote: A Ordenação Diaconal de Davi Amado registra a centésima Ordenação do nosso Episcopado.
+  - source: dar-2010-sermao-xxx-concilio
+    quote: >-
+      A Ordenação Diaconal de Davi , a Ordenação Presbiteral de Sônia e a instituição como Evangelista de Williams
+      se dão dentro de um espírito eminentemente missionário.
+  - source: dar-2010-xxx-concilio
+    quote: >-
+      a Diocese do Recife – Comunhão Anglicana se reunirá de 02 a 04.12, tendo como local a Colônia dos Salesianos,
+      em Jaboatão dos Guararapes-PE, para o seu 30º. Concílio
   notes: >-
     Anúncio prévio: seria a 86ª pessoa ordenada presbítero(a) por Robinson Cavalcanti. De Goianinha-RN. Em 2013
     aparece como 'Revª Sônia Santos', à frente da Paróquia Anglicana da Restauração (Goianinha-RN) e do PMA Água
-    Viva (Arês-RN).
+    Viva (Arês-RN). Confirmada pelo sermão de encerramento de 04/12/2010.
 affiliations:
 - jurisdiction: iab
   role: clergy

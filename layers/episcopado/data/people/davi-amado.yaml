@@ -14,10 +14,11 @@ sources:
 ordinations:
 - order: diaconate
   date: '2010-12-04'
-  place: Culto de encerramento do XXX Concílio Ordinário da Diocese do Recife
+  place: >-
+    Culto de encerramento do XXX Concílio da Diocese do Recife (Colônia dos Salesianos, Jaboatão dos Guararapes-PE)
   jurisdiction: diocese-anglicana-recife
   ordained_by: robinson-cavalcanti
-  status: probable
+  status: confirmed
   sources:
   - source: dar-2010-centesimo
     quote: >-
@@ -26,9 +27,19 @@ ordinations:
       ocasião a Revda. Sônia Santos , de Goianinha, Rio Grande do Norte, será a 86ª a receber a Ordem Presbiteral.
   - source: adr-pastores-2017
     quote: Davi Amado de Souza
+  - source: dar-2010-sermao-xxx-concilio
+    quote: A Ordenação Diaconal de Davi Amado registra a centésima Ordenação do nosso Episcopado.
+  - source: dar-2010-sermao-xxx-concilio
+    quote: >-
+      A Ordenação Diaconal de Davi , a Ordenação Presbiteral de Sônia e a instituição como Evangelista de Williams
+      se dão dentro de um espírito eminentemente missionário.
+  - source: dar-2010-xxx-concilio
+    quote: >-
+      a Diocese do Recife – Comunhão Anglicana se reunirá de 02 a 04.12, tendo como local a Colônia dos Salesianos,
+      em Jaboatão dos Guararapes-PE, para o seu 30º. Concílio
   notes: >-
     Anúncio prévio (23/11/2010): seria o 100º clérigo ordenado por Robinson Cavalcanti. Nome completo na lista do
-    clero de 2017: 'Davi Amado de Souza'.
+    clero de 2017: 'Davi Amado de Souza'. Confirmada pelo sermão de encerramento de 04/12/2010.
 - order: presbyterate
   date: 2011-08
   jurisdiction: diocese-anglicana-recife
