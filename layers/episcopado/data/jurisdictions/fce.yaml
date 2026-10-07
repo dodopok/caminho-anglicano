@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: fce
+acronym: FCE
+name: Free Church of England
+type: national_church
+country: GB
+founded:
+  date: '1844'
+  sources:
+  - source: ai-2014-fce-brazil
+    quote: >-
+      The first congregations of the FCE were formed in 1844 and came together under a common constitution in 1863.
+website: https://fcofe.org.uk/
+description: >-
+  Igreja episcopal reformada inglesa (congregações desde 1844, constituição comum de 1863), em comunhão com a REC;
+  teve uma Diocese da América do Sul formada pelas igrejas da IARB entre 2014 e 2021.
+sources:
+- source: ai-2014-fce-brazil
+  quote: >-
+    The first congregations of the FCE were formed in 1844 and came together under a common constitution in 1863.

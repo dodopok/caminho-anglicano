@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-barrett-kerfoot
+name: John Barrett Kerfoot
+ordinations:
+- order: episcopate
+  date: '1866'
+  place: Trinity Church, Pittsburgh
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: john-henry-hopkins
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      154a. John H. Hopkins (1832-1868) que sagrou John Kerfoot como o primeiro bispo de Pittsburgh, na Igreja da
+      Trindade, em Pittsburgh

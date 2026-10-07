@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: reb
+acronym: REB
+name: Rede Episcopal Brasileira
+type: national_church
+country: BR
+founded:
+  date: '2024-12-20'
+  sources:
+  - source: reb-portaria-01-2024
+    quote: >-
+      considerando a fundação da Rede Episcopal Brasileira e a decisão tomada na reunião de fundação, conforme a
+      Ata de Fundação datada de 20 de Dezembro 2024
+  - source: reb-portaria-01-2024
+    quote: >-
+      Dado e passado na Igreja Âncora, sede episcopal da Rede Episcopal Brasileira, em Vitória, ES, aos 20 dias
+      do mês de dezembro do ano de 2024.
+  - source: reb-home
+    quote: A REB é uma rede de igrejas de tradição anglicana.
+  - source: reb-blog-eric
+    quote: como bispo de uma diocese fora da Comunhão Anglicana
+locator_slug: reb
+website: https://redeepiscopalbrasileira.com.br/
+description: >-
+  Rede de igrejas de tradição anglicana fundada em 20/12/2024 (Ata de Fundação) com sede episcopal na Igreja Âncora,
+  Vitória/ES; bispo: Eric Rodrigues. Declara-se fora da Comunhão Anglicana. Presente no ES, SP, MG, AM, PR e DF
+  (site, 2026).
+sources:
+- source: reb-portaria-01-2024
+  quote: >-
+    considerando a fundação da Rede Episcopal Brasileira e a decisão tomada na reunião de fundação, conforme a Ata
+    de Fundação datada de 20 de Dezembro 2024
+- source: reb-portaria-01-2024
+  quote: >-
+    Dado e passado na Igreja Âncora, sede episcopal da Rede Episcopal Brasileira, em Vitória, ES, aos 20 dias do
+    mês de dezembro do ano de 2024.
+- source: reb-home
+  quote: A REB é uma rede de igrejas de tradição anglicana.
+- source: reb-blog-eric
+  quote: como bispo de uma diocese fora da Comunhão Anglicana
+relations:
+- type: schism_from
+  target: iab
+  date: '2024-12-20'
+  led_by:
+  - eric-rodrigues
+  status: probable
+  sources:
+  - source: reb-portaria-01-2024
+    quote: >-
+      considerando a fundação da Rede Episcopal Brasileira e a decisão tomada na reunião de fundação, conforme a
+      Ata de Fundação datada de 20 de Dezembro 2024
+  - source: eshoje-2023-05-15
+    quote: afirma novo Bispo da IAB, atuante em Vitória
+  notes: >-
+    A REB foi fundada por um bispo da IAB e tem sede na antiga paróquia IAB dele (Âncora, Vitória). Nenhuma fonte
+    aberta usa a palavra "cisma" nem descreve o processo de saída; a relação é inferida da trajetória do fundador.
+    Também pode ser lida como fundação nova (não cisma formal).

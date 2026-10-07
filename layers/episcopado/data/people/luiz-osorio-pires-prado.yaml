@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: luiz-osorio-pires-prado
+name: Luiz Osorio Pires Prado
+ordinations:
+- order: episcopate
+  date: '1987'
+  place: Catedral da Santissima Trindade, Porto Alegre
+  jurisdiction: ieab
+  office: suffragan
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Três anos depois, o reverendo Luiz Osório Pires Prado85 foi eleito no primeiro escrutínio – fato inédito nas
+      eleições de bispos na Igreja. Foi sagrado bispo sufragâneo da Meridional, na Catedral de Santíssima Trindade,
+      em Porto Alegre.
+  - source: wp-pt-dioc-pelotas
+    quote: >-
+      Em 1987 o reverendo Luiz Osório Pires Prado foi eleito e sagrado para ser bispo sufragâneo da Diocese Meridional.
+affiliations:
+- jurisdiction: ieab
+  role: suffragan_bishop
+  diocese: diocese-meridional
+  start: '1987'
+  end: '1989'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Foi sagrado bispo sufragâneo da Meridional, na Catedral de Santíssima Trindade, em Porto Alegre.
+  notes: Depois primeiro diocesano de Pelotas.
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-de-pelotas
+  start: '1989-03-12'
+  end: '1999'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: wp-pt-dioc-pelotas
+    quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
+  - source: costa2021
+    quote: 1988-2000 – Luiz Osório Pires Prado
+  notes: Fim em 1999 (Wikipedia/dapsul) ou 2000 (Costa).

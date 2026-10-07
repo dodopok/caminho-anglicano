@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-olinda-catedral-betesda
+name: Diocese de Olinda (Catedral Betesda)
+type: diocese
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Francisco Rubem da Silva (2022)

@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marcio-simoes
+name: Márcio Simões
+full_name: Márcio José de Sousa Simões
+aliases:
+- Márcio José de Sousa Simões
+biography: Bispo diocesano da Diocese de Vitória (PE) da IAB; diácono e presbítero em 2008, bispo em 2017.
+sources:
+- source: dv-bispo
+  quote: O Bispo Márcio José de Sousa Simões foi sagrado ao episcopado no dia 10 de junho de 2017
+ordinations:
+- order: diaconate
+  date: '2008'
+  jurisdiction: diocese-anglicana-recife
+  status: confirmed
+  sources:
+  - source: dv-bispo
+    quote: ordenado diácono e presbítero em 2008
+  notes: 'Ordenante não informado (bispo diocesano em 2008: Robinson Cavalcanti).'
+- order: presbyterate
+  date: '2008'
+  jurisdiction: diocese-anglicana-recife
+  status: confirmed
+  sources:
+  - source: dv-bispo
+    quote: ordenado diácono e presbítero em 2008
+- order: episcopate
+  date: '2017-06-10'
+  jurisdiction: diocese-anglicana-recife
+  office: auxiliary
+  status: confirmed
+  sources:
+  - source: dv-bispo
+    quote: foi sagrado ao episcopado no dia 10 de junho de 2017
+  - source: iab-dois-novos-bispos
+    quote: 'elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira'
+  - source: dv-bispo
+    quote: O Bispo Márcio José de Sousa Simões foi sagrado ao episcopado no dia 10 de junho de 2017
+  - source: iab-dois-novos-bispos
+    quote: Em Junho acontecerá a  Sagração Episcopal
+  notes: >-
+    Eleito bispo auxiliar em 06/05/2017; diocesano de Vitória a partir da criação da província (2018). Eleito bispo
+    auxiliar em 06/05/2017; tornou-se bispo da Diocese de Vitória com a formação da província. Sagrantes não informados
+    pelas fontes.
+affiliations:
+- jurisdiction: iab
+  role: diocesan_bishop
+  diocese: iab-diocese-vitoria
+  start: '2018'
+  status: confirmed
+  sources:
+  - source: iab-church-planting-bishops
+    quote: Bishop Marcio Simoes – Diocese of Vittoria
+  - source: iab-comunicado-oficial-2018
+    quote: Márcio Simões Bispo da Diocese de Vitória PE
+  - source: dv-bispo
+    quote: Bispo diocesano Bispo Márcio Simões
+events:
+- type: other
+  date: '2017-05-06'
+  description: >-
+    Sínodo extraordinário da Diocese de Recife em Olinda elege Márcio Simões e Márcio Meira bispos auxiliares
+  status: confirmed
+  sources:
+  - source: iab-dois-novos-bispos
+    quote: >-
+      Sábado,  06/05/2017, na Paróquia Anglicana Emanuel, em Olinda-PE, nossa Igreja, liderada pelo Bispo Miguel
+      Uchoa no Sínodo extraordinário, elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.
+- type: other
+  date: '2017-05-06'
+  description: >-
+    Sínodo extraordinário da Diocese de Recife, na Paróquia Anglicana Emanuel (Olinda), elege dois bispos auxiliares:
+    Márcio Simões e Márcio Meira.
+  status: confirmed
+  sources:
+  - source: iab-dois-novos-bispos
+    quote: >-
+      Sábado,  06/05/2017, na Paróquia Anglicana Emanuel, em Olinda-PE, nossa Igreja, liderada pelo Bispo Miguel
+      Uchoa no Sínodo extraordinário, elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.

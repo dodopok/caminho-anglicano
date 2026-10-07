@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: michael-owen
+name: Michael Owen
+biography: Primeiro bispo presidente da CEEC (1995); sagrante principal de Russell McClanahan em 3/10/1995.
+sources:
+- source: ceec-history
+  quote: Bishop Michael Owen served as the first Presiding Bishop.
+ordinations:
+- order: episcopate
+  date: '1995'
+  jurisdiction: ceec
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Michael Owen, primeiro primaz da CEEC, foi consagrado em 1995 por um colégio misto de bispos dessas tradições.

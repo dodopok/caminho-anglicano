@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-vitoria-de-santo-antao
+name: Diocese de Vitória de Santo Antão
+type: diocese
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Jean Clayton de Albuquerque do Nascimento (2020)
+  - source: ptwiki-iecb
+    quote: Felipe Alves da Silva (2024)

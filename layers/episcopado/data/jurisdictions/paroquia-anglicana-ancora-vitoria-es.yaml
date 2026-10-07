@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: paroquia-anglicana-ancora-vitoria-es
+name: Paróquia Anglicana Âncora (Vitória/ES)
+type: diocese
+relations:
+- type: part_of
+  target: iab
+  status: confirmed
+  sources:
+  - source: eshoje-2023-05-15
+    quote: Eric Rodrigues, Reverendo e Reitor da Paróquia Anglicana Âncora
+  - source: anglicanismo-2023-03-14
+    quote: Eric é pastor da Igreja Ancora, localizada na região central de Vitória, ES.

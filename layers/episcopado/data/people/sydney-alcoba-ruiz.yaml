@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sydney-alcoba-ruiz
+name: Sydney Alcoba Ruiz
+ordinations:
+- order: episcopate
+  date: '1985-03-24'
+  place: Igreja do Redentor, Rio de Janeiro
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: edmund-knox-sherrill
+  co_consecrators:
+  - agostinho-guillon-soria
+  - claudio-vinicius-de-senna-gastal
+  - clovis-erly-rodrigues
+  - sumio-takatsu
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Sydney foi sagrado em 24 de março de 1985, na Igreja do Redentor, sendo sagrante principal o bispo Edmund
+      Knox Sherrill – na época o Primaz em exercício –, e co-sagrantes Agostinho Guillon Sória, Cláudio Vinícius
+      de Senna Gastal, Clovis Erly Rodrigues e Sumio Takatsu.
+  notes: Eleito no Concilio da Diocese Central de novembro de 1984.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-rio-de-janeiro-ex-diocese-central
+  start: '1985-03-24'
+  end: '2000'
+  status: contested
+  sources:
+  - source: costa2021
+    quote: 1985-2000 – Sydney Alcoba Ruiz
+  - source: costa2021
+    quote: 1985-1998 – Sydney Alcoba Ruiz
+  notes: 'Anexo D: 1985-2000; Anexo C: 1985-1998. Faleceu em 14/11/2001.'

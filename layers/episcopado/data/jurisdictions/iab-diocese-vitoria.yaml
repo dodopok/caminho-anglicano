@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iab-diocese-vitoria
+acronym: IAB-Vitoria
+name: Diocese de Vitória (IAB)
+aliases:
+- Diocese de Vitória
+- Diocese de Vitória (Igreja Anglicana no Brasil)
+type: diocese
+tradition: anglican
+country: BR
+founded:
+  date: '2018-05-12'
+  sources:
+  - source: iab-church-planting-bishops
+    quote: Bishop Marcio Simoes – Diocese of Vittoria
+website: https://www.dv.anglicananobrasil.com/
+description: >-
+  Diocese da IAB com sé em Vitória de Santo Antão (PE) (agreste e sertão de Pernambuco); catedral Anglicana Ressurreição;
+  bispo Márcio Simões.
+sources:
+- source: iab-church-planting-bishops
+  quote: Bishop Marcio Simoes – Diocese of Vittoria
+relations:
+- type: part_of
+  target: iab
+  status: confirmed
+  sources:
+  - source: iab-church-planting-bishops
+    quote: Bishop Marcio Simoes – Diocese of Vittoria
+  - source: iab-comunicado-oficial-2018
+    quote: Márcio Simões Bispo da Diocese de Vitória PE
+  - source: dv-bispo
+    quote: Bispo diocesano Bispo Márcio Simões
+  - source: dr-historia
+    quote: a Igreja Anglicana no Brasil, agora com três dioceses (Recife, João Pessoa e Vitória)
+  - source: iab-comunicado-oficial-2018
+    quote: tivemos o privilégio de formar a Província da Igreja Anglicana no Brasil, com 3 dioceses
+  date: '2018-05-12'

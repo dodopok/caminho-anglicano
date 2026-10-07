@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-hines
+name: John Hines
+aliases:
+- John Elbridge Hines
+ordinations:
+- order: episcopate
+  date: '1945'
+  jurisdiction: tec
+  office: coadjutor
+  principal_consecrator: henry-knox-sherrill
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      159c. Henry Knox Sherrill (1930-1958) que, em 1945, sagrou John Elbridge Hines como bispo coadjutor do Texas.

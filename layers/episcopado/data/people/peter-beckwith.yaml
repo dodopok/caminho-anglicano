@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: peter-beckwith
+name: Peter Beckwith
+aliases:
+- Peter Hess Beckwith
+ordinations:
+- order: episcopate
+  date: '1992'
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: edmond-browning
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      161c. Edmond Lee Browning (1959-1997) que, em 1992, sagrou Peter Hess Beckwith como bispo de Springfield.

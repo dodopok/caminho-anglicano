@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: olavo-ventura-luiz
+name: Olavo Ventura Luiz
+ordinations:
+- order: episcopate
+  date: '1976-11-28'
+  jurisdiction: ieab
+  office: diocesan
+  status: contested
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi eleito pelo Concílio para ser o terceiro bispo da Diocese Sul-Ocidental, sendo sagrado em 28 de novembro
+      de 1976.
+  notes: >-
+    A mesma tese diz no corpo do texto "No início do ano de 1976 foi sagrado o novo bispo da Diocese Sul-Ocidental,
+    o reverendo Olavo Ventura Luiz"; a nota de rodape da 28/11/1976. Ver duvidas.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-diocese-sul-ocidental
+  start: '1976'
+  end: '1993-03-09'
+  end_reason: death
+  status: contested
+  sources:
+  - source: costa2021
+    quote: 1977-1992 – Olavo Ventura Luiz
+  - source: wp-pt-dioc-sulocidental
+    quote: Olavo Ventura Luiz - 1977 a 1984
+  - source: costa2021
+    quote: >-
+      Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária, contraída em Moçambique durante uma
+      visita à Diocese dos Libombos.
+  notes: >-
+    Fim divergente: 1984 (Wikipedia PT), 1992 (Costa Anexo D) ou morte em 1993 (Costa texto: Jubal eleito em 1993
+    para suceder Olavo, que faleceu).
+- jurisdiction: ieab
+  role: primate
+  start: '1986'
+  end: '1993-03-09'
+  end_reason: death
+  status: contested
+  sources:
+  - source: costa2021
+    quote: O Sínodo de 1986 o elegeu como Bispo Primaz, cargo que ocupou por dois anos.
+  - source: costa2021
+    quote: 1986-1988 – Olavo Ventura Ruiz (interino)
+  - source: wp-en-ieab
+    quote: Olavo Ventura Luiz, 1986—1992
+  notes: >-
+    Fontes divergem: lista oficial (via Wikipedia EN) 1986-1992; Costa (Anexo E) interino 1986-1988 e titular 1988-1993
+    (grafado "Ventura Ruiz"); morreu em 09/03/1993.

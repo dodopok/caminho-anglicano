@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: mauricio-andrade
+name: Mauricio Jose Araujo de Andrade
+ordinations:
+- order: episcopate
+  date: '2003-08-31'
+  place: Catedral Metropolitana de Brasilia (catolica)
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: glauco-soares-de-lima
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Sua sagração teve um fato peculiar, pois ocorreu na Catedral Metropolitana de Brasília, em 31 de agosto de
+      2003, e teve como sagrante o Primaz, Glauco Soares de Lima.
+  - source: wp-pt-mauricio
+    quote: >-
+      Em 2003, foi eleito bispo diocesano da Diocese Anglicana de Brasília, sendo então o primeiro bispo não-católico
+      a ser sagrado na Catedral de Brasília.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-diocese-brasilia
+  start: 2003-09
+  status: confirmed
+  sources:
+  - source: wp-pt-dioc-brasilia
+    quote: Maurício José Araújo de Andrade - setembro de 2003 até o presente.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. Maurício José Araújo de Andrade
+- jurisdiction: ieab
+  role: primate
+  start: 2006-07
+  end: 2013-11
+  status: confirmed
+  sources:
+  - source: wp-en-ieab
+    quote: Maurício José Araújo de Andrade, 2006—2013
+  - source: costa2021
+    quote: >-
+      eleição do bispo diocesano de Brasília, Maurício José de Araújo Andrade, como o 6º Bispo Primaz da IEAB, durante
+      o 30º Sínodo Geral (Curitiba, 26 a 30 de julho de 2006).
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_encarregado
+  diocese: distrito-missionario-do-oeste-distrito-missionario-anglicano
+  end: '2020'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Já o Distrito Missionário do Oeste atualmente é pastoreado pelo Bispo Maurício Andrade.
+  - source: wp-pt-dioc-brasilia
+    quote: >-
+      Atualmente o bispo da Diocese Anglicana de Brasília também e o responsável pelo Distrito Missionário do Oeste.
+  notes: >-
+    Responsavel ja em 2011 (Costa: "responsável pelo Distrito Missionário e então Primaz"). Fim aproximado.

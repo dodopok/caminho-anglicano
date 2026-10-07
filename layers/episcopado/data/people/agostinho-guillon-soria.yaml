@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: agostinho-guillon-soria
+name: Agostinho Guillon Soria
+ordinations:
+- order: episcopate
+  date: '1977-04-24'
+  place: Christ Church, Rio de Janeiro
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: arthur-rodolpho-kratz
+  co_consecrators:
+  - edmund-knox-sherrill
+  - elliott-lorenz-sorge
+  - olavo-ventura-luiz
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      eleito em 11 de novembro de 1976 e sagrado ao episcopado em 24 de abril de 1977, na Christ Church, pelo Bispo
+      Primaz Arthur Rodolpho Kratz, tendo como co-sagrantes os bispos Edmund Sherrill, Elliott Sorge e Olavo Ventura
+      Luiz.
+  notes: Bispo da Diocese Central (Rio de Janeiro), sucedendo Sherrill.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-rio-de-janeiro-ex-diocese-central
+  start: '1977'
+  end: '1984'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1977-1984 – Agostinho Guillon Sória
+  - source: costa2021
+    quote: para substituir o bispo Agostinho Guillon Sória que foi transferido para a Diocese de Brasília.
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-diocese-brasilia
+  start: '1985'
+  end: '1988'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1985-1988 – Agostinho Guillon Sória
+  - source: wp-pt-dioc-brasilia
+    quote: Agostinho Sória (1º bispo diocesano) - 1985 a abril de 1988;
+  notes: Costa diz tambem que assumiu Brasilia "em 1982" (conflito).

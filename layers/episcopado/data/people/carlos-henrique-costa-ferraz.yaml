@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: carlos-henrique-costa-ferraz
+name: Carlos Henrique Costa Ferraz
+ordinations:
+- order: episcopate
+  date: '2023'
+  jurisdiction: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Carlos Henrique Costa Ferraz (2023)
+  notes: >-
+    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
+    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso.
+affiliations:
+- jurisdiction: iecb
+  role: bishop
+  diocese: diocese-de-limoeiro-catedral-da-redencao
+  start: '2023'
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Carlos Henrique Costa Ferraz (2023)
+  notes: 2º bispo diocesano (2025-)

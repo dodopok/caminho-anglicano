@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: robert-machray
+name: Robert Machray
+ordinations:
+- order: episcopate
+  date: '1865'
+  jurisdiction: church-of-england
+  principal_consecrator: charles-longley
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      156d. Charles Longley (1862-1868) que, em 1865, sagrou Robert Machray como bispo da Igreja Anglicana do Canadá.
+  notes: Machray foi bispo de Rupert's Land.

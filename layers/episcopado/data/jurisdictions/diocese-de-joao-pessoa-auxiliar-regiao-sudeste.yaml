@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-joao-pessoa-auxiliar-regiao-sudeste
+name: Diocese de João Pessoa (bispo auxiliar, Região Sudeste)
+type: diocese
+relations:
+- type: part_of
+  target: iab
+  status: probable
+  sources:
+  - source: anglicanismo-2023-03-14
+    quote: Eric Rodrigues será responsável pela Região Sudeste do Brasil, pela Diocese de João Pessoa.
+  - source: wp-en-acb
+    quote: Miguel Neto, Eric Rodrigues (assistant)

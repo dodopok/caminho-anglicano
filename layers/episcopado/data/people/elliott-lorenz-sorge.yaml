@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: elliott-lorenz-sorge
+name: Elliott Lorenz Sorge
+ordinations:
+- order: episcopate
+  date: '1971'
+  place: Paroquia da Santissima Trindade, Sao Paulo
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: plinio-lauer-simoes
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      primeiro bispo da Diocese do Centro-Sul do Brasil, sendo consagrado em 1971, pelo bispo Plinio Lauer Simões.
+  - source: costa2021
+    quote: o norte-americano Elliott Lorenz Sorge73, sagrado na Paróquia da Santíssima Trindade.
+  - source: wp-pt-sorge
+    quote: >-
+      Sorge foi eleito o primeiro bispo da Diocese Sul Central do Brasil em 31 de janeiro de 1970 e foi consagrado
+      em 1971.
+  notes: Eleito em 31/01/1970; primeiro bispo eleito por uma diocese brasileira apos a autonomia.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  start: '1971'
+  end: '1977'
+  end_reason: resignation
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1971-1977 – Elliott Lorenz Sorge
+  - source: wp-pt-sorge
+    quote: >-
+      Diante disso, Dom Elliot renunciou a sua sé e foi sucedido como segundo bispo diocesano por Dom Sumio Takatsu.
+  notes: >-
+    Renunciou ao ser nomeado oficial no Centro da Igreja Episcopal (Nova York); depois bispo de Easton (TEC) 1983-1993.

@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-missionaria-do-nordeste-do-brasil-dmnb-catedral-betania
+name: Diocese Missionária do Nordeste do Brasil (DMNB), Catedral Betânia
+type: diocese
+relations:
+- type: part_of
+  target: iceb
+  status: confirmed
+  sources:
+  - source: ciceb-quemsomos
+    quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo. Gervásio Neto)

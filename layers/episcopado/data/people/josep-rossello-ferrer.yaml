@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: josep-rossello-ferrer
+name: Josep Rosselló Ferrer
+full_name: Josep M. Rosselló-Ferrer
+aliases:
+- +Josep
+- Bp Josep Rossello
+- Josep M. Rosselló-Ferrer
+- Josep Rosello
+- Josep Rossello
+- Joseph Rosselo
+- Rt Rev Josep M Rossello-Ferrer
+biography: >-
+  Bispo espanhol (natural de Benissa) que serviu 12 anos no Brasil, supervisionando a IARB e depois a Diocese da
+  América do Sul da FCE; primaz eleito da IARB em 2012; depois Servant General da NAMS (2023) e ligado à Anglican
+  Convocation in Europe (2025).
+sources:
+- source: ai-2021-fce-withdraw
+  quote: >-
+    the Rt Rev Josep M Rossello-Ferrer, that has served the diocese faithfully and sacrificially for twelve years.
+- source: ai-2025-rossello-ace
+  quote: >-
+    having served for 12 years in Brazil where they planted a diocese that began with 2 couples and grew to include
+    28 churches and missions in Brazil and Venezuela
+affiliations:
+- jurisdiction: iarb
+  role: primate
+  start: 2012-04
+  end: '2021'
+  status: probable
+  sources:
+  - source: ptwiki-iarb
+    quote: sendo eleito assim Josep Rossello, como o novo bispo primaz da IARB.
+  - source: christiantoday-2014-fce
+    quote: The Right Reverend Josep Rossello, the bishop overseeing the IARB
+  notes: >-
+    Data e sagrantes de sua sagração episcopal não encontrados; o site da CICEB já o chama de 'Bispo' em jan/2004.
+    Após 2021 seguiu em outros ministérios (NAMS, Inglaterra, Espanha).
+- jurisdiction: fce
+  role: bishop
+  diocese: diocese-da-america-do-sul-south-american-diocese
+  start: '2014'
+  end: 2021-05
+  status: probable
+  sources:
+  - source: ai-2021-fce-withdraw
+    quote: Our prayers and support go to our beloved brother and bishop, the Rt Rev Josep M Rossello-Ferrer
+  notes: >-
+    O comunicado diz que Fenwick passou a ser 'nosso novo bispo' pouco antes da saída, indicando que Rosselló deixou
+    a função em 2021.
+events:
+- type: other
+  date: 2004-01
+  description: >-
+    Visita do bispo 'Joseph Rosselo' à Paróquia Betânia em janeiro de 2004 para confirmações e ordenações
+  status: probable
+  sources:
+  - source: ciceb-quemsomos
+    quote: >-
+      Em janeiro de 2004 a Betânia recebeu o Bispo Joseph Rosselo, para a realização das confirmações e ordenações.
+- type: other
+  date: '2021-05-05'
+  description: >-
+    Sínodo extraordinário da Diocese da América do Sul da FCE (IARB) aprova por unanimidade deixar a Free Church
+    of England
+  status: confirmed
+  sources:
+  - source: ai-2021-fce-withdraw
+    quote: >-
+      the Synod of the Diocese of South America unanimously approved a motion and resolution to leave the Free Church
+      of England.

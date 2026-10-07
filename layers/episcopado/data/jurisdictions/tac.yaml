@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: tac
+acronym: TAC
+name: Traditional Anglican Communion
+aliases:
+- tac
+type: communion
+tradition: continuing_anglican
+locator_slug: tac

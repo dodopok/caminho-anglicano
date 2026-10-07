@@ -1,0 +1,92 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iecb
+acronym: IECB
+name: Igreja Episcopal Carismática do Brasil
+type: national_church
+tradition: charismatic_episcopal
+country: BR
+founded:
+  date: 2002/2003
+  sources:
+  - source: ptwiki-iecb
+    quote: >-
+      No Brasil, a Igreja Episcopal Carismática organiza-se em 2003, a partir da saída do Reverendo Paulo Ruiz Garcia
+      da Igreja Episcopal Anglicana do Brasil
+  - source: ptwiki-iecb
+    quote: A sede da IECB se encontra na Catedral da Trindade (Recife), localizada nos Aflitos (Recife).
+locator_slug: iecb
+website: https://novo.iecbrasil.com.br/
+description: >-
+  Igreja de convergência (evangélica, carismática e sacramental) com sede na Catedral da Trindade (Aflitos, Recife).
+  Origem na saída do Rev. Paulo Ruiz Garcia e da paróquia da Trindade da IEAB em setembro de 2002; Garcia foi sagrado
+  bispo em 8/9/2003 pelo patriarca Randolph Adler (ICCEC). Hoje se apresenta como igreja nacional autônoma organizada
+  em torno da Comunhão Episcopal Internacional (CEI).
+sources:
+- source: ptwiki-iecb
+  quote: >-
+    No Brasil, a Igreja Episcopal Carismática organiza-se em 2003, a partir da saída do Reverendo Paulo Ruiz Garcia
+    da Igreja Episcopal Anglicana do Brasil
+- source: ptwiki-iecb
+  quote: A sede da IECB se encontra na Catedral da Trindade (Recife), localizada nos Aflitos (Recife).
+relations:
+- type: schism_from
+  target: ieab
+  date: '2002-09-20'
+  led_by:
+  - paulo-garcia
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: >-
+      O templo que está sendo disputado na justiça é o mesmo que o Pr. Paulo Garcia transformou na Igreja Episcopal
+      Carismática.
+  - source: queiroz-2004-ufpe
+    quote: só foi trocar
+  - source: queiroz-2004-ufpe
+    quote: “episcopal anglicana” por “episcopal carismática”.
+  - source: ptwiki-iecb
+    quote: >-
+      Em 20 de setembro de 2002, durante um culto noturno, Paulo Garcia anunciou seu rompimento com a IEAB. Por
+      meio de uma assembleia paroquial, a comunidade aprovou a desvinculação da Comunhão Anglicana.
+  - source: wp-pt-dioc-recife
+    quote: A primeira divisão ocorreu com o então deão da Catedral Anglicana do Recife, reverendo Paulo Garcia.
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Em 2002, o deão Paulo Garcia, então líder da catedral em Recife, rompeu com a IEAB por divergências teológicas
+      e fundou a Igreja Episcopal Carismática do Brasil (IECB)
+  notes: >-
+    A comunidade da Catedral da Santíssima Trindade (Recife) seguiu Paulo Garcia para a Igreja Episcopal Carismática.
+    A sigla IECB designa a Igreja Episcopal Carismática do Brasil. A data do rompimento (2002) confirma os pôsteres
+    da IAB quanto ao ano; a organização formal da IECB e a sagração de Garcia são de 2003. Ambas as fontes são Wikipédia
+    (terciárias), apoiadas em Queiroz (2004) e Costa (2025). Paulo Garcia era o deão/reitor da Catedral da Trindade
+    (Diocese do Recife).
+- type: member_of
+  target: iccec
+  date: 2002/2003
+  led_by:
+  - paulo-garcia
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: >-
+      Posteriormente, ele se filiou à Comunhão Internacional da Igreja Episcopal Carismática e fundou, no Recife,
+      a Igreja Episcopal Carismática do Brasil (IECB).
+  - source: wp-pt-dioc-recife
+    quote: >-
+      Este acabou fundando a Igreja Episcopal Carismática do Brasil (IECB) – parte da Comunhão Internacional da
+      Igreja Episcopal Carismática (em inglês, International Communion of the Charismatic Episcopal Church - ICCEC)
+      – no final de 2002
+  notes: >-
+    Data de saída da ICCEC não encontrada; a Wikipédia descreve a IECB 'atualmente' como igreja nacional autônoma
+    organizada em torno da CEI, o que sugere desligamento ou autonomia posterior. Não confirmado em fonte da ICCEC.
+- type: member_of
+  target: cei
+  date: '2019'
+  led_by:
+  - paulo-garcia
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: >-
+      Atualmente, a Igreja Episcopal Carismática do Brasil é uma Igreja nacional autônoma, que se organiza em torno
+      da Comunhão Episcopal Internacional (CEI).

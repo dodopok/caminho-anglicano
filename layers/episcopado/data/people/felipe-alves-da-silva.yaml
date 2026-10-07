@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: felipe-alves-da-silva
+name: Felipe Alves da Silva
+ordinations:
+- order: episcopate
+  date: '2024'
+  jurisdiction: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Felipe Alves da Silva (2024)
+  notes: >-
+    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
+    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso.
+affiliations:
+- jurisdiction: iecb
+  role: bishop
+  diocese: diocese-de-vitoria-de-santo-antao
+  start: '2024'
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Felipe Alves da Silva (2024)
+  notes: bispo diocesano (2025-)

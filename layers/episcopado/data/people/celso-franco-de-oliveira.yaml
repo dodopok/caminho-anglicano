@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: celso-franco-de-oliveira
+name: Celso Franco de Oliveira
+ordinations:
+- order: episcopate
+  date: '2000-02-27'
+  place: Christ Church, Rio de Janeiro
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: glauco-soares-de-lima
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Sua sagração ocorreu na Christ Church, no dia 27 de fevereiro de 2000, pelas mãos do Bispo Primaz, Glauco
+      Soares de Lima, e dos demais bispos
+  notes: Eleito em Concilio Extraordinario de 06/11/1999 para a Diocese Anglicana do Rio de Janeiro.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-rio-de-janeiro-ex-diocese-central
+  start: '2000-02-27'
+  end: '2008'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 2000-2008 – Celso Franco de Oliveira
+  - source: costa2021
+    quote: >-
+      Em 2008, o bispo Filadelfo Oliveira foi eleito como o novo diocesano para a Diocese Anglicana do Rio de Janeiro,
+      substituindo o bispo Celso Franco.

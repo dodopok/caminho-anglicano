@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-limoeiro-diocese-de-petrolina
+name: Diocese de Limoeiro / Diocese de Petrolina
+type: diocese
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: João Humberto do Rêgo Vasconcelos (2024)

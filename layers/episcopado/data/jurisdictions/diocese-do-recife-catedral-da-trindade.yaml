@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-do-recife-catedral-da-trindade
+name: Diocese do Recife – Catedral da Trindade
+type: diocese
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: A IECB segue a forma de governo episcopal, tendo como Bispo Primaz, o Arcebispo Paulo Ruiz Garcia.

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: edmund-knox-sherrill
+name: Edmund Knox Sherrill
+ordinations:
+- order: episcopate
+  date: '1959'
+  place: Rio de Janeiro
+  jurisdiction: tec
+  office: missionary
+  principal_consecrator: henry-knox-sherrill
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Henry Knox Sherrill, Presiding Bishop dos EUA (1947-1958), teve papel decisivo ao consagrar missionários como
+      Louis Chester Melcher e, em 1959, seu próprio filho, Edmund Knox Sherrill, no Rio de Janeiro.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-rio-de-janeiro-ex-diocese-central
+  start: '1959-01-25'
+  end: '1976'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1956-1976 – Edmund Knox Sherrill
+  - source: wp-pt-sherrill
+    quote: Eleito em 1958 pela Convenção Geral da igreja americana para ser o novo bispo da Diocese Central
+  notes: Costa Anexo D da 1956 (erro; sagrado em 1959).
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  start: '1975'
+  end: '1986'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1976-1985 – Edmund Knox Sherrill
+  - source: wp-pt-dioc-recife
+    quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
+  notes: Datas divergem (1975/1976 a 1985/1986).
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-diocese-recife
+  start: '1975'
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Edmund serviu no Distrito Missionário Central e, em 1975, tornou-se o primeiro bispo da recém-criada Diocese
+      do Recife
+- jurisdiction: ieab
+  role: primate
+  start: '1984'
+  end: '1986'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1984-1986 – Edmund Knox Sherrill (interino)
+  - source: wp-pt-sherrill
+    quote: >-
+      Em 1985, quando Sherrill era o primaz em exercício da IEAB (1984-1986), ele recebeu um coadjutor, Clovis Erly
+      Rodrigues, que o sucedeu no ano seguinte.
+  notes: Primaz em exercicio/interino (bispo mais antigo).

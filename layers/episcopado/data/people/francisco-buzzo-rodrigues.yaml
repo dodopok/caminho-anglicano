@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: francisco-buzzo-rodrigues
+name: Francisco Buzzo Rodrigues
+full_name: Francisco Buzzo Rodrigues
+aliases:
+- Dom Francisco Buzzo
+- Francisco Buzzo
+biography: >-
+  Fundador da IARB (2005, Bragança Paulista-SP); bispo diocesano em 2009; emérito em 2012; reassumiu o episcopado
+  em 2021 após a saída da FCE e renunciou à primazia em 2023. Aparece como co-sagrante de Leonides de Menezes (CEEC)
+  em dez/2006.
+sources:
+- source: loc-iarb-2009
+  quote: + Revmo. Dom Francisco Buzzo Rodrigues Bispo Diocesano
+- source: ptwiki-iarb
+  quote: Em abril de 2012, o bispo Francisco Buzzo tornou-se bispo emérito
+affiliations:
+- jurisdiction: iarb
+  role: founder
+  start: '2005'
+  status: probable
+  sources:
+  - source: ptwiki-iarb
+    quote: >-
+      Foi fundada em 2005 pelo bispo Francisco Buzzo Rodrigues a partir de uma paróquia anglicana em Bragança Paulista
+- jurisdiction: iarb
+  role: diocesan_bishop
+  start: '2009'
+  end: 2012-04
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: loc-iarb-2009
+    quote: + Revmo. Dom Francisco Buzzo Rodrigues Bispo Diocesano
+  - source: ptwiki-iarb
+    quote: >-
+      Em abril de 2012, o bispo Francisco Buzzo tornou-se bispo emérito, sendo eleito assim Josep Rossello, como
+      o novo bispo primaz da IARB.
+  notes: >-
+    Data e sagrantes da sagração episcopal de Buzzo NÃO encontrados. Ele já era bispo em dez/2006, quando co-sagrou
+    Leonides de Menezes (CEEC), segundo o site da CICEB.
+- jurisdiction: iarb
+  role: primate
+  start: '2021'
+  end: '2023'
+  end_reason: resignation
+  status: probable
+  sources:
+  - source: ptwiki-iarb
+    quote: >-
+      No ano de 2021, a IARB separou-se da Igreja Livre da Inglaterra, voltando a funcionar como denominação independente.
+      Desde então, o bispo emérito Francisco Buzzo voltou a exercer seu episcopado.
+  - source: ptwiki-iarb
+    quote: >-
+      Em 2023 o bispo Francisco Buzzo renunciou à primazia da Igreja voltando a condição de bispo emérito enquanto
+      continua pastoreando a Paróquia de Bragança Paulista.
+events:
+- type: other
+  date: 2009-10
+  description: Primeiro Sínodo da IARB (2009) e constituição formal como denominação nacional em outubro de 2009
+  status: probable
+  sources:
+  - source: ai-2014-fce-brazil
+    quote: The IARB held its first Synod in 2009. It has grown strongly since then.
+  - source: ptwiki-iarb
+    quote: >-
+      Todavia, em outubro de 2009, a Igreja Anglicana Reformada no Brasil foi formalmente constituída, como uma
+      denominação nacional.

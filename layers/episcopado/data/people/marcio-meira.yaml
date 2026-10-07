@@ -1,0 +1,118 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marcio-meira
+name: Márcio Meira
+full_name: Márcio Medeiros Meira
+aliases:
+- Márcio Medeiros Meira
+biography: >-
+  Eleito bispo auxiliar no sínodo extraordinário de 06/05/2017 e sagrado em junho de 2017; primeiro bispo da Diocese
+  de João Pessoa da IAB.
+sources:
+- source: iab-dois-novos-bispos
+  quote: 'elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.'
+ordinations:
+- order: episcopate
+  date: '2017-06-11'
+  place: Catedral PAES, Recife
+  jurisdiction: diocese-anglicana-recife
+  office: auxiliary
+  principal_consecrator: miguel-uchoa
+  co_consecrators:
+  - bill-atwood
+  - evilasio-tenorio
+  - flavio-soares
+  - leonides-menezes
+  status: contested
+  sources:
+  - source: iab-dois-novos-bispos
+    quote: >-
+      elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.  A Igreja Anglicana no Brasil
+      – Diocese de Recife está em plena expansão, implantando igrejas em todo o Brasil, obedecendo ao IDE de Cristo.
+      Em Junho acontecerá a  Sagração Episcopal
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Em 11 de junho de 2017, na Catedral PAES, em Recife, o arcebispo Miguel Uchoa, juntamente com os bispos Bill
+      Atwood, Flávio Soares, Evilásio Tenório e Leônides Menezes, sagraram: Márcio Medeiros Meira como o primeiro
+      bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+  discrepancies:
+  - field: jurisdiction
+    value: iab
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Em 11 de junho de 2017, na Catedral PAES, em Recife, o arcebispo Miguel Uchoa, juntamente com os bispos
+        Bill Atwood, Flávio Soares, Evilásio Tenório e Leônides Menezes, sagraram: Márcio Medeiros Meira como o
+        primeiro bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+  - field: office
+    value: diocesan
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Em 11 de junho de 2017, na Catedral PAES, em Recife, o arcebispo Miguel Uchoa, juntamente com os bispos
+        Bill Atwood, Flávio Soares, Evilásio Tenório e Leônides Menezes, sagraram: Márcio Medeiros Meira como o
+        primeiro bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+  notes: >-
+    O pôster da IAB dá 11/06/2017 na PAES, sagrante Uchoa com Atwood, Soares, Tenório e Leônides Menezes; o site
+    da Diocese de Vitória dá 10/06/2017 para Márcio Simões (eleito no mesmo sínodo) — provavelmente a mesma cerimônia;
+    dia exato e sagrantes não confirmados. O pôster chama Uchoa de 'arcebispo' em 2017; a IAB como província é de
+    2018 — verificar a jurisdição exata na data (Diocese do Recife / Cone Sul?).
+affiliations:
+- jurisdiction: iab
+  role: diocesan_bishop
+  diocese: iab-diocese-joao-pessoa
+  start: '2018'
+  status: confirmed
+  sources:
+  - source: iab-comunicado-oficial-2018
+    quote: Márcio Meira Bispo da Diocese de João Pessoa PB
+  - source: iab-church-planting-bishops
+    quote: Bishop Marcio Meira – Diocese of Joao Pessoa
+  - source: iab-poster-linhagem-meira
+    quote: como o primeiro bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+events:
+- type: other
+  date: '2017-05-06'
+  description: >-
+    Sínodo extraordinário da Diocese de Recife em Olinda elege Márcio Simões e Márcio Meira bispos auxiliares
+  status: confirmed
+  sources:
+  - source: iab-dois-novos-bispos
+    quote: >-
+      Sábado,  06/05/2017, na Paróquia Anglicana Emanuel, em Olinda-PE, nossa Igreja, liderada pelo Bispo Miguel
+      Uchoa no Sínodo extraordinário, elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.
+- type: other
+  date: 2024-01
+  description: >-
+    Bispos da IAB (Miguel Uchôa e Márcio Meira) presentes à sagração de Ivan Rocha na IECB (jan. 2024) — indício
+    de relações cordiais IAB-IECB
+  status: probable
+  sources:
+  - source: jc-2024-ivan-rocha
+    quote: >-
+      Mais de 15 Bispos estiveram presentes, inclusive dois da Igreja Anglicana (Dom Miguel Uchôa e Dom Márcio Meira).
+- type: other
+  date: '2023-03-13'
+  description: >-
+    Eleição de Eric Rodrigues e Miguel Neto como bispos auxiliares da IAB no Primeiro Sínodo Extraordinário Online,
+    conduzido pelo bispo Márcio Meira.
+  status: confirmed
+  sources:
+  - source: anglicanismo-2023-03-14
+    quote: >-
+      Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
+      Miguel Neto e Bp. Eric Rodrigues.
+  - source: eshoje-2023-05-15
+    quote: >-
+      No dia 13 de março deste ano, a Igreja Anglicana no Brasil (IAB) elegeu, em seu primeiro Sínodo Extraordinário
+      Online, dois novos bispos auxiliares
+- type: other
+  date: '2017-05-06'
+  description: >-
+    Sínodo extraordinário da Diocese de Recife, na Paróquia Anglicana Emanuel (Olinda), elege dois bispos auxiliares:
+    Márcio Simões e Márcio Meira.
+  status: confirmed
+  sources:
+  - source: iab-dois-novos-bispos
+    quote: >-
+      Sábado,  06/05/2017, na Paróquia Anglicana Emanuel, em Olinda-PE, nossa Igreja, liderada pelo Bispo Miguel
+      Uchoa no Sínodo extraordinário, elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.

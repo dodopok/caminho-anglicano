@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-da-amazonia
+name: Diocese Anglicana da Amazonia
+type: diocese
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: No dia seguinte, Marinez foi instalada como bispa diocesana.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revma. Marinez Bassotto
+  - source: wp-pt-dioc-amazonia
+    quote: com a investidura e instalação de seu primeiro pastor bispo Saulo Maurício de Barros
+  - source: wp-pt-dioc-amazonia
+    quote: Sua eleição se deu na Diocese Anglicana da Amazônia por ocasião da resignação do bispo Saulo Barros.
+  - source: costa2021
+    quote: 2006-2017 – Saulo Maurício de Barros

@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: helena-lamego-gastal-de-castro-ramos
+name: Helena Lamego Gastal de Castro Ramos
+ordinations:
+- order: diaconate
+  date: '2018-12-16'
+  place: Catedral Nacional da Santíssima Trindade, Porto Alegre (RS)
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: ieab-2021-helena
+    quote: >-
+      além da Catedral Nacional da Santíssima Trindade, onde foi ordenada diácona no dia 16 de dezembro de 2018.
+  notes: Diocese Meridional. Ordenante não informado na fonte.
+- order: presbyterate
+  date: '2021-12-12'
+  place: Paróquia do Redentor, Porto Alegre (RS)
+  jurisdiction: ieab
+  ordained_by: humberto-maiztegui
+  status: confirmed
+  sources:
+  - source: ieab-2021-helena
+    quote: >-
+      No dia 12 de dezembro, 3º Domingo do Advento, a Igreja Episcopal Anglicana do Brasil, IEAB, ganhou mais uma
+      presbítera: Helena Lamego Gastal de Castro Ramos. A ordenação ocorreu na Paróquia do Redentor, em Porto Alegre.
+  - source: ieab-2021-helena
+    quote: A liturgia, presidida pelo bispo da Diocese Meridional, Humberto Maiztegui Gonçalves
+  notes: >-
+    Diocese Meridional. Filha de Cláudio Gastal, ex-bispo da Diocese Meridional, segundo a mesma notícia.

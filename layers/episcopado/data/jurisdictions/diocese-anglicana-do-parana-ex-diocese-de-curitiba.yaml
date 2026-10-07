@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-do-parana-ex-diocese-de-curitiba
+name: Diocese Anglicana do Parana (ex-Diocese de Curitiba)
+type: diocese
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: wp-pt-naudal
+    quote: Tornou-se bispo diocesano da Diocese Anglicana do Paraná em 2003.
+  - source: ieab-magda-sagrara
+    quote: >-
+      Na prática, a coadjutora auxiliará o atual bispo diocesano, Naudal Alves Gomes, na Diocese até dezembro, que
+      é quando este se tornará bispo emérito.
+  - source: costa2021
+    quote: A nova bispa da DAPAR foi instalada na manhã de 12 de dezembro de 2021, na Catedral diocesana.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revma. Magda Guedes
+  - source: ieab-magda-sagrada
+    quote: a reverenda Magda Guedes Pereira como bispa coadjutora.

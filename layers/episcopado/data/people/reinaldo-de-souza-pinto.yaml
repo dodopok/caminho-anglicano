@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: reinaldo-de-souza-pinto
+name: Reinaldo de Souza Pinto
+affiliations:
+- jurisdiction: reb
+  role: clergy
+  start: '2024-12-20'
+  status: confirmed
+  sources:
+  - source: reb-portaria-01-2024
+    quote: Ficam reconhecidos as ordens sagradas dos seguintes clérigos
+  notes: Ordens (presbitero) reconhecidas na fundação; origem das ordens não informada.
+events:
+- type: other
+  date: '2024-12-20'
+  description: >-
+    Fundação da Rede Episcopal Brasileira (Ata de Fundação) e reconhecimento das ordens de Cícero Miranda Pontara,
+    Elionai Lisboa de Aguiar Rodrigues e Reinaldo de Souza Pinto (presbíteros) e Weiden de Morais Mendes (diácono);
+    instituição de seis postulantes.
+  status: confirmed
+  sources:
+  - source: reb-portaria-01-2024
+    quote: >-
+      1. Rev. Cícero Miranda Pontara– Presbítero. 2. Rev. Elionai Lisboa de Aguiar Rodrigues – Presbítero. 3. Rev.
+      Reinaldo de Souza Pinto – Presbítero. 4. Rev. Weiden de Morais Mendes – Diácono.

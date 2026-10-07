@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+name: Diocese Anglicana de Sao Paulo (ex-Diocese Sul Central)
+type: diocese
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: ieab-irala-falecimento
+    quote: Em 2021, tornou-se bispo emérito
+  - source: ieab-cezar-investidura
+    quote: a celebração de Ação de Graças pela vida, ministério e início da emerência do bispo Flávio Irala
+  - source: costa2021
+    quote: 1971-1977 – Elliott Lorenz Sorge
+  - source: wp-pt-sorge
+    quote: >-
+      Diante disso, Dom Elliot renunciou a sua sé e foi sucedido como segundo bispo diocesano por Dom Sumio Takatsu.
+  - source: costa2021
+    quote: 1977-1989 – Sumio Takatsu
+  - source: wp-pt-sumio
+    quote: Permaneceu no cargo até sua renúncia, no final de 1989.
+  - source: costa2021
+    quote: Assumiu a Diocese em janeiro do ano seguinte
+  - source: costa2021
+    quote: 1990-2002 – Glauco Soares de Lima
+  - source: costa2021
+    quote: 2002-2006 – Hiroshi Ito
+  - source: costa2021
+    quote: 2007-2012 – Roger Douglas Bird
+  - source: wp-pt-dioc-saopaulo
+    quote: >-
+      Em 21 de novembro de 2012, o então bispo Roger Bird apresentou sua carta de resignação do cargo de bispo da
+      DASP
+  - source: ieab-cezar-investidura
+    quote: a cerimônia de Investidura do bispo Cézar Alves como bispo diocesano da DASP
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. Bispo Cezar Fernandes Alves
+  - source: ieab-serie-dasp
+    quote: 'Bispo Coadjutor: Bispo Cézar Alves'
+  - source: costa2021
+    quote: 2017-2018 – Francisco de Assis da Silva (Interino)
+  - source: costa2021
+    quote: 2018-2020 – Naudal Alves Gomes (Interino)

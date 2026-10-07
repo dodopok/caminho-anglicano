@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iab-regiao-missionaria
+acronym: IAB-RegiaoMissionaria
+name: Região Missionária (IAB)
+aliases:
+- Diocese de Recife (auxiliar) / Região Missionária (bispo missionário)
+- Região Missionária
+- Região Missionária (Igreja Anglicana no Brasil)
+type: missionary_district
+tradition: anglican
+country: BR
+website: https://www.anglicananobrasil.com/on/regiao-missionaria/
+description: >-
+  Área missionária da IAB fora das três dioceses (sul/sudeste do Brasil e congregações no Panamá e na Colômbia),
+  sob o bispo missionário Flávio A. T. Soares.
+sources:
+- source: iab-regiao-missionaria
+  quote: >-
+    Chamamos Região Missionaria, prioritariamente os Estados que pertencem ao sul e sudeste brasileiro onde já possuímos
+    algumas igrejas, porém se você está localizado fora de nossas 3 Dioceses, considere-se parte de nossa missão.
+relations:
+- type: part_of
+  target: iab
+  status: confirmed
+  sources:
+  - source: iab-regiao-missionaria
+    quote: atua também como Bispo na região Missionaria da Província
+  - source: iab-church-planting-bishops
+    quote: Bishop Flavio Soares – Missionary Bishop of the Diocese of Recife
+  - source: iab-comunicado-oficial-2018
+    quote: Flavio Adair Bispo Auxiliar de Recife
+  - source: iab-regiao-missionaria
+    quote: >-
+      Mora em João Pessoa onde lidera uma igreja local, mas atua também como Bispo na região Missionaria da Província.

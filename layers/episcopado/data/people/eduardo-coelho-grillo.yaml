@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: eduardo-coelho-grillo
+name: Eduardo Coelho Grillo
+ordinations:
+- order: episcopate
+  date: '2017-04-08'
+  place: Catedral do Redentor, Rio de Janeiro
+  jurisdiction: ieab
+  office: coadjutor
+  principal_consecrator: francisco-de-assis-da-silva
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Na manhã do dia 08 de abril de 2017, ocorreu a cerimônia de sagração episcopal na Catedral do Redentor, que
+      ficou lotada para a cerimônia, sendo o principal sagrante o Bispo Primaz, Francisco de Assis da Silva, e co-sagrantes
+      os demais bispos da Província.
+  notes: >-
+    Eleito bispo coadjutor da DARJ em 02/11/2016; co-sagrantes = "os demais bispos da Provincia" (nao nomeados).
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-rio-de-janeiro-ex-diocese-central
+  start: '2017-07-29'
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: Em 29 de julho de 2017, Eduardo foi instituído como o novo diocesano.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. Eduardo Grillo

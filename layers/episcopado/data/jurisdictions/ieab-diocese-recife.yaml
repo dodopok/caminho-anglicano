@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-diocese-recife
+name: Diocese Anglicana do Recife (IEAB)
+aliases:
+- Diocese do Recife
+type: diocese
+tradition: anglican
+country: BR
+relations:
+- type: part_of
+  target: ieab
+  status: probable
+  sources:
+  - source: wp-en-uchoa
+    quote: >-
+      Uchôa joined two-thirds of the clergy and roughly 95 percent of the laity in disaffiliating from the IEAB
+  - source: iab-primaz
+    quote: É fundador da PAES (Paróquia Anglicana Espírito Santo) em 1996
+  - source: queiroz-2004-ufpe
+    quote: >-
+      desde março do mesmo ano, o bispo Edmund Sherrill havia enviado para Recife o Rev. Paulo Garcia com a finalidade
+      de incrementar o crescimento da igreja naquela região.
+  - source: queiroz-2004-ufpe
+    quote: >-
+      setembro de 2002, o Pr. Paulo Garcia declarou, oficialmente, a sua ruptura da Igreja Episcopal Anglicana.
+  - source: queiroz-2004-ufpe
+    quote: >-
+      Ao se desvincular da Catedral Anglicana do Espinheiro, o Pr. Miguel e mais um grupo de 30 a 40 pessoas, com
+      o apoio do Pr. Paulo Garcia, fundaram, em agosto de 1996, a Paróquia Anglicana do Espírito Santo, em Jaboatão
+      dos Guararapes
+  - source: queiroz-2004-ufpe
+    quote: De lá pra cá, eu sou o reitor dessa paróquia
+  - source: ciceb-betania-nossaigreja
+    quote: >-
+      Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom Clóvis
+      Erly, a Missão Betânia foi instalada em 11/07/1996, na Av. Caxangá 1107, no bairro do Cordeiro, sob a liderança
+      do Ministro Auxiliar Leonides de Menezes.
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Edmund serviu no Distrito Missionário Central e, em 1975, tornou-se o primeiro bispo da recém-criada Diocese
+      do Recife
+  - source: wp-en-cavalcanti
+    quote: In 1997 he was elected and consecrated Bishop of the Diocese of Recife
+  - source: wp-en-cavalcanti
+    quote: he was expelled from the IEAB on 10 June 2005, by decision of the Superior Ecclesiastical Court.

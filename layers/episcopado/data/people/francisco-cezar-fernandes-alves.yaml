@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: francisco-cezar-fernandes-alves
+name: Francisco Cezar Fernandes Alves
+ordinations:
+- order: episcopate
+  date: '2020-01-25'
+  place: Paroquia da Santissima Trindade, Sao Paulo
+  jurisdiction: ieab
+  office: coadjutor
+  principal_consecrator: naudal-gomes
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      cerimônia de sagração ocorreu no dia 25 de janeiro de 2020 – festa de São Paulo, Apóstolo –, na Paróquia da
+      Santíssima Trindade, na capital paulista
+  - source: wp-pt-cezar
+    quote: >-
+      Ele foi sagrado bispo em 25 de janeiro de 2020, na Paróquia da Santíssima Trindade, por Dom Naudal Alves Gomes,
+      Primaz da IEAB.
+  notes: Eleito bispo coadjutor da DASP em 09/07/2019. Sagrante principal so pela Wikipedia PT.
+affiliations:
+- jurisdiction: ieab
+  role: coadjutor_bishop
+  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  start: '2020-01-25'
+  end: '2021-10-31'
+  status: confirmed
+  sources:
+  - source: ieab-serie-dasp
+    quote: 'Bispo Coadjutor: Bispo Cézar Alves'
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  start: '2021-10-31'
+  status: confirmed
+  sources:
+  - source: ieab-cezar-investidura
+    quote: a cerimônia de Investidura do bispo Cézar Alves como bispo diocesano da DASP
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. Bispo Cezar Fernandes Alves
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-diocese-sao-paulo
+  start: '2021-10-31'
+  status: probable
+  sources:
+  - source: ieab-cezar-investidura
+    quote: >-
+      A celebração do início da emerência do bispo Flávio Irala e investidura do bispo Cézar Alves como bispo diocesano
+      da Diocese Anglicana de São Paulo acontecerá no templo da Paróquia de São João, dia 31 de outubro
+  notes: Data prevista (notícia publicada antes da cerimônia).

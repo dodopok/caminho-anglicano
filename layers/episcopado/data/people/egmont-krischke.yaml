@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: egmont-krischke
+name: Egmont Krischke
+aliases:
+- Egmont Machado Krischke
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-meridional
+  start: '1956'
+  end: '1971'
+  end_reason: resignation
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1950-1971 – Egmont Valle Machado Krischke
+  - source: costa2021
+    quote: >-
+      Em 1956, quando o Bispo Pithan se aposentou, a Câmara dos Bispos transferiu o Bispo Krischke para a Diocese
+      Meridional
+  notes: Renunciou como diocesano por saude, permanecendo primaz.
+- jurisdiction: ieab
+  role: primate
+  start: '1965-04-25'
+  end: '1971-06-28'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      Durante o histórico Sínodo realizado em Porto Alegre, no dia 25 de abril de 1965, o Bispo Presidente da Igreja
+      Episcopal dos Estados Unidos, o Reverendíssimo John Elbridge Hines, realizou a solene proclamação67 e a investidura
+      de Egmont Machado Krischke68 como o primeiro Bispo Primaz69
+  - source: costa2021
+    quote: >-
+      Devido a motivos de saúde, o bispo Krischke resignou como diocesano, mas permaneceu como Primaz do Brasil,
+      vindo a falecer no exercício do cargo, em 28 de
+  - source: wp-en-ieab
+    quote: Egmont Machado Krischke, 1965—1971

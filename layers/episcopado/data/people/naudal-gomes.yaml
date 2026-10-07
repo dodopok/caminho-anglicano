@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: naudal-gomes
+name: Naudal Alves Gomes
+ordinations:
+- order: episcopate
+  date: '2000-04-08'
+  place: Catedral (catolica) de Nossa Senhora da Conceicao, Santa Maria (RS)
+  jurisdiction: ieab
+  office: suffragan
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Na cidade de Santa Maria, Naudal Alves Gomes98 foi eleito bispo sufragâneo da Diocese Sul-Ocidental. A cerimônia
+      aconteceu na manhã do dia 08 de abril de 2000, sendo realizada na Catedral de Nossa Senhora da Conceição da
+      Diocese de Santa Maria da Igreja Católica Romana
+  - source: wp-pt-naudal
+    quote: >-
+      Sua sagração episcopal, em 8 de abril de 2000, ocorreu na Catedral Metropolitana de Santa Maria, cedida por
+      Dom Ivo Lorscheiter.
+  notes: >-
+    Presenca da bispa Barbara Harris (TEC) registrada; sagrante principal nao informado nas fontes lidas.
+affiliations:
+- jurisdiction: ieab
+  role: suffragan_bishop
+  diocese: ieab-diocese-sul-ocidental
+  start: '2000-04-08'
+  end: '2003'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: wp-pt-naudal
+    quote: Foi eleito bispo sufragâneo da Diocese Anglicana Sul-Ocidental, em Santa Maria, em 2000.
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-parana-ex-diocese-de-curitiba
+  start: '2003'
+  end: 2021-12
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: wp-pt-naudal
+    quote: Tornou-se bispo diocesano da Diocese Anglicana do Paraná em 2003.
+  - source: ieab-magda-sagrara
+    quote: >-
+      Na prática, a coadjutora auxiliará o atual bispo diocesano, Naudal Alves Gomes, na Diocese até dezembro, que
+      é quando este se tornará bispo emérito.
+  notes: Primeiro bispo da Diocese de Curitiba (depois Diocese Anglicana do Parana).
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_interino
+  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  start: '2018'
+  end: '2020'
+  status: contested
+  sources:
+  - source: costa2021
+    quote: 2018-2020 – Naudal Alves Gomes (Interino)
+  notes: So Costa Anexo D; conflita com Irala ate 2021.
+- jurisdiction: ieab
+  role: primate
+  start: '2018-06-02'
+  end: '2022-11-13'
+  status: confirmed
+  sources:
+  - source: wp-pt-naudal
+    quote: >-
+      Dom Naudal foi eleito primaz da Igreja Episcopal Anglicana do Brasil durante o 34º Sínodo Geral da denominação,
+      em 2 de junho de 2018
+  - source: costa2021
+    quote: 'Durante o 34º Sínodo também foi eleito o novo Primaz da IEAB: o bispo Naudal Alves Gomes.'
+  - source: wp-en-ieab
+    quote: Naudal Alves Gomes, 2018–2022

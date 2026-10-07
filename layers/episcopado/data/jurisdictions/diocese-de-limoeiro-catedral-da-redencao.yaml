@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-limoeiro-catedral-da-redencao
+name: Diocese de Limoeiro (Catedral da Redenção)
+type: diocese
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Carlos Henrique Costa Ferraz (2023)

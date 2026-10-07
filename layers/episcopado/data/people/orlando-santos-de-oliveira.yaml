@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: orlando-santos-de-oliveira
+name: Orlando Santos de Oliveira
+ordinations:
+- order: episcopate
+  date: '1997-11-30'
+  place: Catedral da Santissima Trindade, Porto Alegre
+  jurisdiction: ieab
+  office: coadjutor
+  principal_consecrator: glauco-soares-de-lima
+  co_consecrators:
+  - william-godfrey
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi sagrante o entao Primaz, Bispo Glauco Soares de Lima, e co-sagrantes os bispos do episcopado brasileiro
+      da época, mais o bispo William Godfrey, do Uruguai.
+  - source: costa2021
+    quote: >-
+      Já na Diocese Meridional, em 30 de novembro de 1997, Orlando Santos de Oliveira96 foi sagrado na Catedral
+      da Santíssima Trindade, em Porto Alegre, pelas mãos do Bispo Primaz, Glauco Soares de Lima
+  - source: wp-pt-orlando
+    quote: >-
+      Três meses depois, em 30 de novembro, Dom Orlando foi consagrado bispo na Catedral da Santíssima Trindade,
+      em Porto Alegre, pelo Primaz Glauco Soares de Lima, acompanhado pelos bispos da IEAB, mais o bispo William
+      Godfrey, do Uruguai.
+  notes: >-
+    Eleito em 30/08/1997 como 7o bispo da Diocese Meridional; sucedeu Gastal em 1998. Co-sagrantes brasileiros nao
+    nomeados. Wikipedia PT deriva de Costa.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-meridional
+  start: '1998'
+  end: '2013-05-05'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1998-2013 – Orlando Santos de Oliveira
+  - source: wp-pt-orlando
+    quote: se tornou seu coadjutor na Diocese Anglicana Meridional, que o sucedeu em 5 de maio do ano seguinte.
+- jurisdiction: ieab
+  role: primate
+  start: '2003'
+  end: 2006-07
+  status: confirmed
+  sources:
+  - source: wp-en-ieab
+    quote: Orlando Santos de Oliveira, 2003—2006
+  - source: costa2021
+    quote: >-
+      a primazia passou das mãos do bispo Glauco para o bispo Orlando Santos de Oliveira, da Diocese Meridional,
+      que ficou no cargo entre
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_interino
+  diocese: ieab-diocese-brasilia
+  start: 2003-06
+  end: 2003-08
+  status: probable
+  sources:
+  - source: wp-pt-dioc-brasilia
+    quote: Orlando Santos de Oliveira (Interino) - junho a agosto de 2003;

@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iab-diocese-joao-pessoa
+acronym: IAB-JoaoPessoa
+name: Diocese de João Pessoa (IAB)
+aliases:
+- Diocese de João Pessoa
+- Diocese de João Pessoa (Igreja Anglicana no Brasil)
+type: diocese
+tradition: anglican
+country: BR
+founded:
+  date: '2018-05-12'
+  sources:
+  - source: iab-church-planting-bishops
+    quote: Bishop Marcio Meira – Diocese of Joao Pessoa
+website: https://www.djp.anglicananobrasil.com/
+description: Diocese da IAB com sé em João Pessoa (PB); primeiro bispo Márcio Meira.
+sources:
+- source: iab-church-planting-bishops
+  quote: Bishop Marcio Meira – Diocese of Joao Pessoa
+relations:
+- type: part_of
+  target: iab
+  status: confirmed
+  sources:
+  - source: iab-church-planting-bishops
+    quote: Bishop Marcio Meira – Diocese of Joao Pessoa
+  - source: iab-poster-linhagem-meira
+    quote: como o primeiro bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+  - source: iab-comunicado-oficial-2018
+    quote: Márcio Meira Bispo da Diocese de João Pessoa PB
+  - source: dr-historia
+    quote: a Igreja Anglicana no Brasil, agora com três dioceses (Recife, João Pessoa e Vitória)
+  - source: iab-comunicado-oficial-2018
+    quote: tivemos o privilégio de formar a Província da Igreja Anglicana no Brasil, com 3 dioceses
+  date: '2018-05-12'

@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: gleidson-oliveira
+name: Gleidson Oliveira
+biography: Bispo missionário da IARB (Câmara dos Bispos), segundo a Wikipédia.
+sources:
+- source: ptwiki-iarb
+  quote: Gleidson Oliveira - Bispo missionário.
+affiliations:
+- jurisdiction: iarb
+  role: bishop
+  status: probable
+  sources:
+  - source: ptwiki-iarb
+    quote: Gleidson Oliveira - Bispo missionário.

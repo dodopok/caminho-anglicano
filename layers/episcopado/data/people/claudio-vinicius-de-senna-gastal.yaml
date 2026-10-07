@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: claudio-vinicius-de-senna-gastal
+name: Claudio Vinicius de Senna Gastal
+ordinations:
+- order: episcopate
+  date: '1984'
+  place: Catedral da Santissima Trindade, Porto Alegre
+  jurisdiction: ieab
+  office: diocesan
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      reverendo Cláudio Vinícius de Senna Gastal81, que foi sagrado como novo bispo da Diocese Meridional, na Catedral
+      da Santíssima Trindade, em Porto Alegre.
+  - source: costa2021
+    quote: Atuou como Bispo Diocesano da Diocese Meridional de 1984 a 1998.
+  notes: Eleito em outubro de 1983; data exata da sagracao nao informada (provavelmente inicio de 1984).
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-meridional
+  start: '1984'
+  end: '1998'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Atuou como Bispo Diocesano da Diocese Meridional de 1984 a 1998.
+  - source: costa2021
+    quote: substituindo o bispo Cláudio Gastal, que se aposentou no ano seguinte.
+  notes: Faleceu em 23/02/2000.
+- jurisdiction: ieab
+  role: primate
+  start: '1993'
+  end: '1994'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1993-1994 – Cláudio Vinícius de Senna Gastal (interino)
+  - source: costa2021
+    quote: E durante dois anos exerceu o cargo de Primaz da Igreja como interino.

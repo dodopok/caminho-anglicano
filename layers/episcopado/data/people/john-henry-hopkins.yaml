@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-henry-hopkins
+name: John Henry Hopkins
+ordinations:
+- order: episcopate
+  date: '1832'
+  place: St. Paul's Chapel, Nova York
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: william-white
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      153a. William White (1787-1836) que consagrou John Hopkins como o primeiro bispo de Vermont, na Igreja de
+      São Paulo, em Nova York.

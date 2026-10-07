@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: francisco-de-assis-da-silva
+name: Francisco de Assis da Silva
+ordinations:
+- order: episcopate
+  date: '2011-03-20'
+  place: Catedral do Mediador, Santa Maria (RS)
+  jurisdiction: ieab
+  office: coadjutor
+  principal_consecrator: mauricio-andrade
+  co_consecrators:
+  - almir-dos-santos
+  - clovis-erly-rodrigues
+  - filadelfo-oliveira-neto
+  - gilberto-porcal
+  - julio-murray
+  - miguel-tamayo
+  - naudal-gomes
+  - orlando-santos-de-oliveira
+  - renato-da-cruz-raatz
+  - roger-douglas-bird
+  - saulo-mauricio-de-barros
+  - sebastiao-gameleira
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O ofício de sagração ocorreu no dia 20 de março de 2011, na Catedral do Mediador, em Santa Maria, com a presença
+      de todos os bispos em atividade no Brasil e outros convidados111.
+  - source: costa2021
+    quote: Estiveram presentes Maurício Andrade, Bispo Primaz e da Diocese de Brasília, que presidiu a
+  notes: >-
+    Eleito bispo coadjutor da Diocese Sul-Ocidental em 25/10/2010. A tese lista os bispos "presentes" (nao necessariamente
+    todos impuseram as maos).
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-diocese-sul-ocidental
+  start: '2011'
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: 2011-       – Francisco de Assis da Silva
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. Francisco de Assis da Silva
+  - source: ieab-serie-dso
+    quote: Seu atual Bispo Diocesano é o Revmo. Bispo Francisco de Assis da Silva.
+- jurisdiction: ieab
+  role: primate
+  start: 2013-11
+  end: 2018-06
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      Durante a assembleia geral, o bispo Francisco de Assis da Silva – da Diocese Sul-Ocidental – foi eleito o
+      7º Bispo Primaz da IEAB
+  - source: wp-en-ieab
+    quote: Francisco de Assis da Silva, 2013—2018
+  notes: Eleito no 32o Sinodo (Rio de Janeiro, 14-17/11/2013); ENS 19/11/2013 noticiou a eleicao.
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_interino
+  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  start: '2017'
+  end: '2018'
+  status: contested
+  sources:
+  - source: costa2021
+    quote: 2017-2018 – Francisco de Assis da Silva (Interino)
+  notes: So Costa Anexo D; a IEAB diz que Irala ficou ate 2021.

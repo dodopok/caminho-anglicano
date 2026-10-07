@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: plinio-lauer-simoes
+name: Plinio Lauer Simoes
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-diocese-sul-ocidental
+  start: '1956'
+  end: '1975'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1956-1975 – Plínio Lauer Simões
+  - source: wp-pt-dioc-sulocidental
+    quote: Plínio Lauer Simões - 1956 a 1975
+- jurisdiction: ieab
+  role: primate
+  start: '1971'
+  end: '1972'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1971-1972 – Plínio Lauer Simões (interino)
+  notes: Primaz interino (Anexo E de Costa 2021); nao consta das listas oficiais de primazes.

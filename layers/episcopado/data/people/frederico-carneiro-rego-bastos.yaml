@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: frederico-carneiro-rego-bastos
+name: Frederico Carneiro Rêgo Bastos
+ordinations:
+- order: episcopate
+  date: '2007-04-14'
+  jurisdiction: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: e Frederico Carneiro Rêgo Bastos, da Diocese de Vitória de Santo Antão
+  notes: >-
+    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
+    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso.
+affiliations:
+- jurisdiction: iecb
+  role: bishop
+  diocese: diocese-de-vitoria-de-santo-antao-catedral-pedra-viva
+  start: '2007'
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: e Frederico Carneiro Rêgo Bastos, da Diocese de Vitória de Santo Antão
+  notes: 1º bispo diocesano de Vitória de Santo Antão (2007-2025); bispo coadjutor do Recife (2025-)

@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: henry-knox-sherrill
+name: Henry Knox Sherrill
+ordinations:
+- order: episcopate
+  date: '1930'
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: henry-st-george-tucker
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      158c. Henry St. George Tucker (1912-1958) que, em 1930, sagrou Henry Knox Sherrill como bispo de Massachusetts.

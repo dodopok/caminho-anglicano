@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: roger-douglas-bird
+name: Roger Douglas Bird
+ordinations:
+- order: episcopate
+  date: '2007-09-07'
+  place: Catedral Anglicana de Sao Paulo (se diocesana)
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: mauricio-andrade
+  co_consecrators:
+  - celso-franco-de-oliveira
+  - glauco-soares-de-lima
+  - hiroshi-ito
+  - nathan-baxter
+  - naudal-gomes
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      A sagração aconteceu na sé diocesana, no feriado nacional de 07 de setembro do mesmo ano, tendo como sagrante
+      principal o Bispo Primaz da IEAB, Maurício Andrade, e como co-sagrantes os bispos Hiroshi Ito, Celso Franco,
+      Naudal Alves Gomes, Glauco Soares de Lima, e Nathan Baxter, da Diocese da Pensilvânia Central
+  - source: wp-pt-roger-bird
+    quote: >-
+      Bird foi eleito quinto bispo da Diocese Anglicana de São Paulo (DASP) no concílio extraordinário de 7 de junho
+      de 2007 em São Paulo e foi consagrado no dia 7 de setembro do mesmo ano.
+  notes: >-
+    A Wikipedia PT cita o Estandarte Cristao jul-ago/2007 (fonte primaria, nao aberta aqui) para a lista de co-sagrantes.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  start: '2007-09-07'
+  end: '2012-11-21'
+  end_reason: resignation
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 2007-2012 – Roger Douglas Bird
+  - source: wp-pt-dioc-saopaulo
+    quote: >-
+      Em 21 de novembro de 2012, o então bispo Roger Bird apresentou sua carta de resignação do cargo de bispo da
+      DASP
+  notes: Depois uniu-se ao Movimento Anglicano no Brasil (fora da IEAB).

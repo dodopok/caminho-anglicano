@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-diocese-sul-ocidental
+name: Diocese Sul-Ocidental (IEAB)
+aliases:
+- Diocese Sul-Ocidental
+type: diocese
+tradition: anglican
+country: BR
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: 2011-       – Francisco de Assis da Silva
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. Francisco de Assis da Silva
+  - source: ieab-serie-dso
+    quote: Seu atual Bispo Diocesano é o Revmo. Bispo Francisco de Assis da Silva.
+  - source: costa2021
+    quote: 1956-1975 – Plínio Lauer Simões
+  - source: wp-pt-dioc-sulocidental
+    quote: Plínio Lauer Simões - 1956 a 1975
+  - source: costa2021
+    quote: 1977-1992 – Olavo Ventura Luiz
+  - source: wp-pt-dioc-sulocidental
+    quote: Olavo Ventura Luiz - 1977 a 1984
+  - source: costa2021
+    quote: >-
+      Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária, contraída em Moçambique durante uma
+      visita à Diocese dos Libombos.
+  - source: costa2021
+    quote: 1993-2011 – Jubal Pereira Neves
+  - source: wp-pt-dioc-sulocidental
+    quote: Jubal Pereira Neves - 1993 a 2011
+  - source: wp-pt-naudal
+    quote: Foi eleito bispo sufragâneo da Diocese Anglicana Sul-Ocidental, em Santa Maria, em 2000.
+  - source: ieab-3a-bispa
+    quote: >-
+      desde sua ordenação atuou nas Dioceses anglicanas Sul-Ocidental (1996-2006), Paraná (2007-2010 ) e Brasília
+      (2011 – março 2017).

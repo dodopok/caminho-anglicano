@@ -1,0 +1,102 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iarb
+acronym: IARB
+name: Igreja Anglicana Reformada do Brasil
+aliases:
+- Igreja Anglicana Reformada do Brasil (também 'no Brasil')
+type: national_church
+tradition: reformed_episcopal
+country: BR
+founded:
+  date: '2005'
+  sources:
+  - source: ptwiki-iarb
+    quote: >-
+      Foi fundada em 2005 pelo bispo Francisco Buzzo Rodrigues a partir de uma paróquia anglicana em Bragança Paulista,
+      Estado de São Paulo.
+  - source: ai-2014-fce-brazil
+    quote: The IARB held its first Synod in 2009.
+locator_slug: iarb
+website: https://www.igrejaanglicana.com.br/
+description: >-
+  Igreja anglicana reformada/evangélica originada em 2005 numa paróquia de Bragança Paulista (SP) liderada por Francisco
+  Buzzo Rodrigues; ligada inicialmente à Reformed Episcopal Church (segundo a Wikipédia); primeiro Sínodo em 2009;
+  filiou-se à Free Church of England a partir da Páscoa de 2014 (Diocese da América do Sul da FCE, bispo Josep Rosselló);
+  deixou a FCE em 5/5/2021 e voltou a ser independente; primaz atual Diógenes Monteiro (desde 2023). Sede atual
+  de fato no Nordeste (Catedral da Santa Cruz, Santa Cruz do Capibaribe-PE). O domínio igrejaanglicana.com.br não
+  resolvia em out/2026.
+sources:
+- source: ptwiki-iarb
+  quote: >-
+    Foi fundada em 2005 pelo bispo Francisco Buzzo Rodrigues a partir de uma paróquia anglicana em Bragança Paulista,
+    Estado de São Paulo.
+- source: ai-2014-fce-brazil
+  quote: The IARB held its first Synod in 2009.
+relations:
+- type: member_of
+  target: rec
+  date: '2005'
+  led_by:
+  - francisco-buzzo-rodrigues
+  status: probable
+  sources:
+  - source: ptwiki-iarb
+    quote: >-
+      Após a fundação, a paróquia integrou-se à Igreja Episcopal Reformada, uma denominação anglicana norte-americana.
+  notes: >-
+    Única fonte encontrada é a Wikipédia (citando a página 'Nossa história' do site da IARB, hoje fora do ar). Não
+    achei confirmação em rechurch.org nem data de saída da REC. A capa do LOC da IARB de 2009 traz 'FREE CHURCH
+    OF ENGLAND (EVANGELICAL CONNEXION)', o que indica que em 2009 a IARB se apresentava ligada à Evangelical Connexion
+    — corpo distinto da FCE que é parceira da REC. A afirmação do usuário (IARB ⊂ REC) só tem apoio terciário até
+    aqui.
+- type: in_communion_with
+  target: fce-ec
+  date: '2009'
+  led_by:
+  - francisco-buzzo-rodrigues
+  status: probable
+  sources:
+  - source: loc-iarb-2009
+    quote: IGREJA ANGLICANA REFORMADA NO BRASIL FREE CHURCH OF ENGLAND (EVANGELICAL CONNEXION)
+  notes: >-
+    Inferido apenas do cabeçalho da capa do LOC de 2009 (fonte primária). Natureza exata do vínculo não descrita.
+    O próprio site Caminho Anglicano descreve este LOC como 'Adotado pela Igreja Anglicana Reformada do Brasil,
+    na época que era parte da Free Church of England'.
+- type: member_of
+  target: fce
+  date: '2014-04-20'
+  end: '2021-05-05'
+  led_by:
+  - josep-rossello-ferrer
+  status: confirmed
+  sources:
+  - source: ai-2014-fce-brazil
+    quote: >-
+      The first Brazilian congregations were received on Easter Sunday 2014, and others are expected to be received
+      during the course of the year.
+  - source: christiantoday-2014-fce
+    quote: >-
+      They are the first wave of a group of churches from the group Igreja Anglicana Reformada (IARB) to officially
+      join, having established their support and alignment with the constitution and canons of the FCE.
+  - source: ai-2021-fce-withdraw
+    quote: >-
+      At the Extraordinary Synod that took place yesterday, May 5, 2021, the Synod of the Diocese of South America
+      unanimously approved a motion and resolution to leave the Free Church of England.
+  notes: >-
+    Páscoa de 2014 = 20/4/2014. Conversas informais desde 2011; o Sínodo Nacional da IARB aprovou a filiação em
+    2012; a Convocação da FCE acolheu em 2013. As igrejas formaram depois a 'South American Diocese' da FCE (Brasil
+    e Venezuela).
+- type: broke_communion_with
+  target: fce
+  date: '2021-03-28'
+  led_by:
+  - regis-domingues
+  status: confirmed
+  sources:
+  - source: ai-2021-fce-impaired
+    quote: >-
+      In response to the above there was no option other than for the Synod of the South American Diocese to declare
+      itself to be in IMPAIRED COMMUNION with Bishop Primus John Fenwick
+  notes: >-
+    Declaração de 'comunhão prejudicada' com o Primaz John Fenwick, aprovada pelo Sínodo da Diocese da América do
+    Sul em 28/3/2021; saída formal em 5/5/2021.

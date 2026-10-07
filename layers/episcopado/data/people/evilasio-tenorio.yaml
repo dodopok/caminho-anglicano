@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: evilasio-tenorio
+name: Evilásio Tenório
+full_name: Evilásio Tenório da Silva Júnior
+aliases:
+- Evilasio Tenorio Silva
+- Evilásio Tenório da Silva Junior
+- Evilásio Tenório da Silva Júnior
+biography: >-
+  Bispo auxiliar da Diocese do Recife (IAB) e pároco da Paróquia Anglicana do Mediador (Tejipió, Recife).
+sources:
+- source: dr-pastores-2019
+  quote: Evilásio Tenório da Silva Junior (Bispo Auxiliar)
+ordinations:
+- order: episcopate
+  date: '2012'
+  jurisdiction: iacs
+  principal_consecrator: peter-beckwith
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-uchoa
+    quote: em 2012, sagrou Dom Evilásio Tenório da Silva Júnior como bispo (ver 162c).
+affiliations:
+- jurisdiction: iacs
+  role: primate
+  diocese: diocese-anglicana-recife
+  start: '2012'
+  end: '2012'
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      163f. Evilásio Tenório da Silva Júnior (2012) que, em 2012, assumiu como primaz interino da Diocese do Recife
+      - Cone Sul, até a eleição de Miguel Uchoa
+  notes: '''primaz interino'' da diocese no texto; papel real provavelmente administrador/bispo interino.'
+- jurisdiction: iab
+  role: bishop
+  diocese: iab-diocese-recife
+  start: '2018'
+  status: confirmed
+  sources:
+  - source: iab-church-planting-bishops
+    quote: Bishop Evilasio Tenorio Silva – Assistant Bishop for Diocese of Recife
+  - source: dr-pastores-2019
+    quote: Evilásio Tenório da Silva Junior (Bispo Auxiliar)
+  - source: iab-comunicado-oficial-2018
+    quote: Evilásio Tenório Bispo Auxiliar de Recife
+  notes: Bispo auxiliar/assistente da Diocese de Recife (2018–2019, pelo menos).

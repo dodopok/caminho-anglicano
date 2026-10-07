@@ -1,0 +1,142 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-recife
+acronym: DAR
+name: Diocese Anglicana do Recife (Cone Sul / IAB)
+aliases:
+- Diocese Anglicana do Recife
+- Diocese Anglicana do Recife (Igreja Anglicana – Diocese do Recife)
+- Diocese de Recife
+- Diocese do Recife
+type: diocese
+tradition: anglican
+country: BR
+founded:
+  date: '2005'
+  sources:
+  - source: wp-en-cavalcanti
+    quote: >-
+      Expelled from the Anglican Episcopal Church of Brazil, Robinson Cavalcanti created the Diocese of Recife,
+      which tried to join the Anglican Church of the Southern Cone of America.
+  - source: ai-recife-received-gafcon
+    quote: >-
+      “The Anglican Diocese of Recife, Brazil has been a diocese that has related extra-provincially to GAFCON since
+      2008.
+dissolved:
+  date: '2018-05-12'
+  sources:
+  - source: wp-en-cavalcanti
+    quote: >-
+      Expelled from the Anglican Episcopal Church of Brazil, Robinson Cavalcanti created the Diocese of Recife,
+      which tried to join the Anglican Church of the Southern Cone of America.
+  - source: ai-recife-received-gafcon
+    quote: >-
+      “The Anglican Diocese of Recife, Brazil has been a diocese that has related extra-provincially to GAFCON since
+      2008.
+website: https://www.dr.anglicananobrasil.com/
+description: >-
+  Diocese que rompeu com a IEAB em 2004/2005 sob Robinson Cavalcanti, ficou sob supervisão extraprovincial do Cone
+  Sul e depois do GAFCON, e em 2018 originou a IAB, da qual segue como diocese.
+sources:
+- source: dr-historia
+  quote: O clero e membros dessa diocese foram excomungados em 2005 pela Igreja Episcopal Anglicana do Brasil
+- source: iab-quem-somos
+  quote: >-
+    Depois disso, durante 14 anos a Diocese Anglicana do Recife funcionou como uma diocese sem uma Província a que
+    filiar-se.
+relations:
+- type: broke_communion_with
+  target: ieab
+  date: '2005'
+  led_by:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: iab-quem-somos
+    quote: que foram excomungadas da Igreja Episcopal Anglicana do Brasil em 2005
+  - source: ai-new-province-backed
+    quote: >-
+      In 2005, the Bishop of Recife, The Rt. Rev. Robinson Cavalcanti, and ninety percent of the clergy of the diocese
+      were excommunicated by the liberal Episcopal Church of Brazil.
+  notes: >-
+    Anglican Ink (2018-04-17) e Wikipedia datam a saída em 2004; IAB e Anglican Ink (2018-05-15) falam em excomunhão
+    em 2005.
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: André Novaes de Albuquerque Cavalcanti (2009)
+- type: part_of
+  target: iacs
+  status: probable
+  sources:
+  - source: blog-betesda-2009-10
+    quote: >-
+      Dom Robinson Cavalcanti veio acompanhado do secretário administrativo da diocese, Rev. Hermany Soares e do
+      presidente do Conselho Diocesano, Rev. Maurício Amazonas.
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      163f. Evilásio Tenório da Silva Júnior (2012) que, em 2012, assumiu como primaz interino da Diocese do Recife
+      - Cone Sul, até a eleição de Miguel Uchoa
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Em 2005, Robinson Cavalcanti liderou a separação definitiva da Diocese do Recife da IEAB, vinculando-se ao
+      Cone Sul.
+  date: '2005'
+- type: schism_from
+  target: ieab
+  date: '2005'
+  led_by:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: iab-comunicado-oficial-2018
+    quote: >-
+      nasce a partir das comunidades, pastores e pastoras que foram excomungadas da Igreja Episcopal Anglicana do
+      Brasil em 2005
+  - source: ai-recife-forms-iab
+    quote: >-
+      In 2004 the Diocese of Recife led by its bishop, the Rt. Rev. Robinson Cavalcanti, withdrew from the Anglican
+      Episcopal Church of Brazil
+  - source: wp-en-acb
+    quote: >-
+      The church had its origin in a 2005 split in which the Diocese of Recife, led by Robinson Cavalcanti, left
+      the Anglican Episcopal Church of Brazil
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Em 2005, Robinson Cavalcanti liderou a separação definitiva da Diocese do Recife da IEAB, vinculando-se ao
+      Cone Sul.
+  notes: >-
+    Anglican Ink (2018-04-17) e Wikipédia EN (Uchôa) datam a saída em 2004; IAB, GAFCON e Wikipédia (Cavalcanti/IAB)
+    em 2005 (declaração 25/01/2005, exclusão 10/06/2005).
+- type: recognized_by
+  target: iacs
+  date: '2005'
+  end: '2018-05-12'
+  led_by:
+  - gregory-venables
+  status: probable
+  sources:
+  - source: ai-recife-forms-iab
+    quote: >-
+      The Primate of the Anglican Church of the Southern Cone, the Most Rev. Gregory Venables provided archiepiscopal
+      oversight for the diocese, and in 2008 the newly formed GAFCON movement extended its oversight to the diocese.
+  - source: virtueonline-2026-08-25
+    quote: placed himself under the primatial oversight of Archbishop Gregory Venables of the Southern Cone.
+  notes: >-
+    Natureza exata do vínculo com o Cone Sul (supervisão primacial pessoal vs. diocese extraterritorial da província)
+    ainda a precisar; ver dúvidas.
+- type: recognized_by
+  target: gafcon
+  date: '2008'
+  end: '2018-05-12'
+  status: confirmed
+  sources:
+  - source: ai-recife-received-gafcon
+    quote: >-
+      “The Anglican Diocese of Recife, Brazil has been a diocese that has related extra-provincially to GAFCON since
+      2008.
+  - source: ai-recife-forms-iab
+    quote: in 2008 the newly formed GAFCON movement extended its oversight to the diocese.
+  notes: >-
+    A frase entre aspas na Anglican Ink de 21/04/2018 é citação do comunicado dos primazes do GAFCON (Entebbe).

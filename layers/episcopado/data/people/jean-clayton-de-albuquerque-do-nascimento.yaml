@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jean-clayton-de-albuquerque-do-nascimento
+name: Jean Clayton de Albuquerque do Nascimento
+ordinations:
+- order: episcopate
+  date: '2020'
+  jurisdiction: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Jean Clayton de Albuquerque do Nascimento (2020)
+  notes: >-
+    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
+    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso.
+affiliations:
+- jurisdiction: iecb
+  role: bishop
+  diocese: diocese-de-vitoria-de-santo-antao
+  start: '2020'
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Jean Clayton de Albuquerque do Nascimento (2020)
+  notes: bispo auxiliar (2020-)

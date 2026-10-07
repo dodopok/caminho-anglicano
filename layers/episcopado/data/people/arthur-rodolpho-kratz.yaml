@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: arthur-rodolpho-kratz
+name: Arthur Rodolpho Kratz
+ordinations:
+- order: episcopate
+  date: '1971'
+  place: Catedral da Santissima Trindade, Porto Alegre
+  jurisdiction: ieab
+  office: diocesan
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      o reverendo Arthur Rodolpho Kratz72 foi eleito bispo para a Diocese Meridional, sendo sagrado na Catedral
+      da Santíssima Trindade, em Porto Alegre.
+  notes: Ano inferido de "No mesmo ano" (1971, morte de Krischke). Sagrantes nao informados.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-meridional
+  start: '1971'
+  end: '1984'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1971-1884 – Arthur Rodolpho Kratz
+  - source: wp-pt-dioc-meridional
+    quote: Terceiro bispo da Diocese Meridional e segundo primaz da IEAB
+  notes: >-
+    Costa grafa "1971-1884" (erro tipografico por 1984); Anexo C de Costa da 1971-1977 (conflito). Motivo do fim
+    nao explicitado.
+- jurisdiction: ieab
+  role: primate
+  start: '1972'
+  end: '1984'
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      Durante a reunião extraordinária do Sínodo, no ano seguinte, foi eleito o segundo Bispo Primaz da Igreja Episcopal
+      do Brasil.
+  - source: wp-en-ieab
+    quote: Arthur Rodolpho Kratz, 1972—1984

@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: diogenes-monteiro-da-silva
+name: Diógenes Monteiro da Silva
+full_name: Diógenes Monteiro da Silva
+aliases:
+- Diógenes Monteiro
+- Dom Diógenes Monteiro
+- Pr. Diógenes Monteiro
+- Rev. Diógenes Monteiro
+biography: >-
+  Pastor e fundador da igreja anglicana reformada em Santa Cruz do Capibaribe (PE); sagrado bispo em 19/11/2021;
+  primaz da IARB desde 2023.
+sources:
+- source: neylima-2021-diogenes
+  quote: >-
+    o Reverendo Diógenes Monteiro, pastor e fundador da igreja em Santa Cruz do Capibaribe-PE, que foi eleito bispo
+    esse ano e será ordenado nesta sexta (19) em Culto Solene no Teatro Municipal.
+ordinations:
+- order: episcopate
+  date: '2021-11-19'
+  place: Teatro Municipal, Santa Cruz do Capibaribe (PE)
+  jurisdiction: iarb
+  office: diocesan
+  status: confirmed
+  sources:
+  - source: neylima-2021-diogenes
+    quote: foi eleito bispo esse ano e será ordenado nesta sexta (19) em Culto Solene no Teatro Municipal.
+  - source: ptwiki-iarb
+    quote: 'Em 2021 foram sagrados dois novos bispos: Diógenes Monteiro e Magnael de Andrade.'
+  notes: >-
+    Notícia prévia (anúncio do evento no mesmo dia). Sagrantes não informados; provavelmente Francisco Buzzo, então
+    único bispo ativo da IARB independente — não confirmado.
+affiliations:
+- jurisdiction: iarb
+  role: primate
+  start: '2023'
+  status: probable
+  sources:
+  - source: ptwiki-iarb
+    quote: Como seu sucessor, a Câmara dos Bispos elegeu o bispo Diógenes Monteiro da Silva como novo primaz.

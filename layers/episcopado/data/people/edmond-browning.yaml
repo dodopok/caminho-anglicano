@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: edmond-browning
+name: Edmond Browning
+aliases:
+- Edmond Lee Browning
+ordinations:
+- order: episcopate
+  date: '1959'
+  jurisdiction: tec
+  office: missionary
+  principal_consecrator: john-hines
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      160c. John Elbridge Hines (1945-1974) que, em 1959, sagrou Edmond Lee Browning como bispo de Okinawa.

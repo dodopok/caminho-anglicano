@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: hermany-soares
+name: Hermany Soares
+aliases:
+- Dom Hermany
+biography: >-
+  Clérigo pernambucano. Em 2007 aparece como reverendo da Igreja Anglicana Ortodoxa do Brasil (IAOB, ligada à Comunhão
+  Anglicana Ortodoxa); a partir de 2009 aparece como secretário administrativo da Diocese do Recife (sob o Cone
+  Sul) e depois como reverendo da IAB. Associado pelo site Caminho Anglicano/usuário à fundação da IEUB.
+sources:
+- source: blog-joaodeca-2007-05
+  quote: Igreja Anglicana Ortodoxa do Brasil (IAOB) – Distrito Missionário
+- source: blog-betesda-2009-10
+  quote: >-
+    Dom Robinson Cavalcanti veio acompanhado do secretário administrativo da diocese, Rev. Hermany Soares
+- source: iab-autor-hermany
+  quote: Rev. Hermany Soares | Igreja Anglicana no Brasil
+affiliations:
+- jurisdiction: iacs
+  role: clergy
+  diocese: diocese-anglicana-recife
+  start: 2009-10
+  end: '2018'
+  status: probable
+  sources:
+  - source: blog-betesda-2009-10
+    quote: >-
+      Dom Robinson Cavalcanti veio acompanhado do secretário administrativo da diocese, Rev. Hermany Soares e do
+      presidente do Conselho Diocesano, Rev. Maurício Amazonas.
+  notes: >-
+    Início = primeira menção encontrada (out/2009), não a data de recepção. Fim = constituição da IAB (2018); a
+    diocese passou para a IAB.
+- jurisdiction: iab
+  role: clergy
+  diocese: diocese-do-recife-igreja-anglicana-graca
+  start: '2018'
+  status: probable
+  sources:
+  - source: iab-autor-hermany
+    quote: por Rev. Hermany Soares | 17 mar 2020
+  - source: iab-dr-igrejas
+    quote: IGREJA ANGLICANA GRAÇA (PARÓQUIA) Rev. Hermany Soares
+  - source: diss-amazonas-2018
+    quote: >-
+      Aos pastores, pastoras da Província Anglicana no Brasil: Luiz Souza de França, Gorete Marques, Ivo Oliveira
+      e Hermany Soares.
+  notes: >-
+    Publica no site da IAB como "Rev." entre 2018 e mar/2020; listado na Igreja Anglicana Graça (Pina, Recife) na
+    página de igrejas da Diocese do Recife (sem data). Data de saída da IAB não encontrada.
+- jurisdiction: iaob
+  role: clergy
+  diocese: paroquia-cristo-redentor
+  end: '2007-12-28'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: blog-joaodeca-2007-05
+    quote: Rev. Hermany Soares+ (Paróquia Cristo Redentor)
+  notes: >-
+    Em maio de 2007 é listado como "Rev." (sinal + após o nome) da IAOB – Distrito Missionário da Comunhão Anglicana
+    Ortodoxa. A data de fim vem de resumo de busca do wiki Cristianismo (Fandom), não aberto; ver duvidas.

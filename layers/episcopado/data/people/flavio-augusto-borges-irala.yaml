@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: flavio-augusto-borges-irala
+name: Flavio Augusto Borges Irala
+aliases:
+- Bispo Flávio Irala
+- Dom Flávio Irala
+birth:
+  date: '1954-05-21'
+  sources:
+  - source: ieab-irala-falecimento
+    quote: Nascido em 21 de maio de 1954, em Bagé, Rio Grande do Sul
+  - source: ieab-irala-falecimento
+    quote: ocorrido em 9 de janeiro de 2025.
+death:
+  date: '2025-01-09'
+  sources:
+  - source: ieab-irala-falecimento
+    quote: Nascido em 21 de maio de 1954, em Bagé, Rio Grande do Sul
+  - source: ieab-irala-falecimento
+    quote: ocorrido em 9 de janeiro de 2025.
+biography: >-
+  Bispo da Diocese Anglicana de São Paulo (IEAB) de 2013 a 2021; antes, deão da Catedral de São Tiago em Curitiba.
+  Liturgista e compositor.
+sources:
+- source: ieab-irala-falecimento
+  quote: Nascido em 21 de maio de 1954, em Bagé, Rio Grande do Sul
+- source: ieab-irala-falecimento
+  quote: ocorrido em 9 de janeiro de 2025.
+ordinations:
+- order: diaconate
+  date: null
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: ieab-irala-falecimento
+    quote: Após sua ordenação ao diaconato, foi designado para a Missão em Cubatão, no litoral paulista
+  notes: Data não informada; ocorreu após estudos no IAET em São Paulo (a partir de 1979).
+- order: episcopate
+  date: '2013-09-13'
+  jurisdiction: ieab
+  office: diocesan
+  status: confirmed
+  sources:
+  - source: ieab-irala-falecimento
+    quote: >-
+      Em setembro de 2012, foi eleito bispo da Diocese Anglicana de São Paulo, sendo Ordenado e Sagrado bispo em
+      13 de setembro de 2013.
+  - source: wp-pt-irala
+    quote: Finalmente, Irala foi ordenado e sagrado bispo da DASP em 13 de setembro de 2013.
+  notes: >-
+    Eleicao (08/09/2012) contestada judicialmente pelo grupo que formou o Movimento Anglicano no Brasil. Diocese
+    Anglicana de São Paulo. Sagrantes não informados nesta fonte.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-diocese-parana
+  start: '2008'
+  status: confirmed
+  sources:
+  - source: ieab-irala-falecimento
+    quote: Em 2008, tornou-se Deão da Catedral Anglicana de São Tiago, em Curitiba, Paraná
+  notes: >-
+    Deão da Catedral de São Tiago (Curitiba) a partir de 2008; antes pároco em Londrina (início dos anos 2000).
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  start: '2013-09-13'
+  end: '2021-10-31'
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: ieab-irala-falecimento
+    quote: Em 2021, tornou-se bispo emérito
+  - source: ieab-cezar-investidura
+    quote: a celebração de Ação de Graças pela vida, ministério e início da emerência do bispo Flávio Irala
+  notes: >-
+    Costa Anexo D da 2012-2017 com interinos Francisco de Assis (2017-18) e Naudal (2018-20) - conflito com IEAB.
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-diocese-sao-paulo
+  start: '2013-09-13'
+  end: '2021'
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: ieab-irala-falecimento
+    quote: Em 2021, tornou-se bispo emérito

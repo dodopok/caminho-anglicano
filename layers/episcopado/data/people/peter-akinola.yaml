@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: peter-akinola
+name: Peter Akinola
+aliases:
+- Peter Jasper Akinola
+ordinations:
+- order: episcopate
+  date: '1989'
+  jurisdiction: church-of-nigeria
+  principal_consecrator: joseph-adetiloye
+  status: probable
+  sources:
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      164d. Joseph Abiodun Adetiloye (1970-1999) que consagrou Peter Jasper Akinola como bispo da Diocese de Abuja,
+      da Província de Abuja.
+  notes: Ano inferido do pôster (1989-2010); verificar.

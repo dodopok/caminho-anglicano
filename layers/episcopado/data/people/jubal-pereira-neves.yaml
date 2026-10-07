@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jubal-pereira-neves
+name: Jubal Pereira Neves
+ordinations:
+- order: episcopate
+  date: '1993-09-19'
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: sumio-takatsu
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      A sagração aconteceu em 19 de setembro de 1993, pelas mãos do bispo Sumio Takatsu e outros bispos da época.
+  notes: Eleito no 45o Concilio Extraordinario da Diocese Sul-Ocidental para suceder Olavo Ventura Luiz.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-diocese-sul-ocidental
+  start: '1993-09-19'
+  end: '2011'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1993-2011 – Jubal Pereira Neves
+  - source: wp-pt-dioc-sulocidental
+    quote: Jubal Pereira Neves - 1993 a 2011

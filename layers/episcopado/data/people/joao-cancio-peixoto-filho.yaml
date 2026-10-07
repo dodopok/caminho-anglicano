@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: joao-cancio-peixoto-filho
+name: Joao Cancio Peixoto Filho
+ordinations:
+- order: episcopate
+  date: '2013-12-14'
+  place: Catedral da Santissima Trindade, Recife (bairro do Espinheiro)
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: francisco-de-assis-da-silva
+  co_consecrators:
+  - filadelfo-oliveira-neto
+  - mauricio-andrade
+  - saulo-mauricio-de-barros
+  - sebastiao-gameleira
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      A cerimônia foi presidida pelo Bispo Primaz, Francisco de Assis da Silva, e os demais co-sagrantes foram os
+      bispos Sebastião Gameleira, Maurício Andrade, Saulo de Barros e Filadelfo Oliveira.
+  - source: costa2021
+    quote: >-
+      sagração ocorreu na noite de 14 de dezembro de 2013, na Catedral da Santíssima Trindade, na capital pernambucana
+  - source: wp-pt-joao-cancio
+    quote: >-
+      Em novembro de 2013 foi eleito Bispo da Diocese Anglicana do Recife, sendo sagrado em 14 de dezembro de 2013
+  notes: Eleito em 16/11/2013 no 32o Sinodo Geral (Rio de Janeiro).
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  start: '2013-12-14'
+  status: confirmed
+  sources:
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. João Cancio Peixoto Filho
+  - source: ieab-serie-dar
+    quote: Bispo Diocesano – Revmo. João Cancio Peixoto Filho.

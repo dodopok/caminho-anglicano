@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: carmen-etel-alves-gomes
+name: Carmen Etel Alves Gomes
+aliases:
+- Carmem Etel
+- Revda. Carmem Etel
+biography: >-
+  Primeira mulher ordenada na IEAB (diaconato, 1985). Presbítera; atuou no Centro de Estudos Anglicanos em Porto
+  Alegre e como pároca em Novo Hamburgo.
+sources:
+- source: ieab-2021-carmen
+  quote: Carmen Etel Alves Gomes nasceu em Santana do Livramento, Rio Grande do Sul.
+ordinations:
+- order: diaconate
+  date: '1985-05-05'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: ieab-2021-carmen
+    quote: >-
+      em 05 de maio de 1985, a IEAB realiza a primeira ordenação feminina ao diaconato, sendo ordenada Carmen
+  - source: ieab-3a-bispa
+    quote: a primeira mulher ordenada foi a Revda. Carmen Etel Alves Gomes, em 1985.
+  notes: Primeira mulher ordenada na IEAB. Ordenante e local não informados nestas fontes.

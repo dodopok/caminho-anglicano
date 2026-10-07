@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rubem-marcel-sarmento-da-silva
+name: Rubem Marcel Sarmento da Silva
+ordinations:
+- order: episcopate
+  date: '2025'
+  jurisdiction: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Rubem Marcel Sarmento da Silva (2025)
+  notes: >-
+    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
+    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso.
+affiliations:
+- jurisdiction: iecb
+  role: bishop
+  diocese: diocese-de-olinda
+  start: '2025'
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Rubem Marcel Sarmento da Silva (2025)
+  notes: bispo coadjutor (2025-)

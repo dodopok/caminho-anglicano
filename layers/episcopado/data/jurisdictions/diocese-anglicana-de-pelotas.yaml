@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-de-pelotas
+name: Diocese Anglicana de Pelotas
+type: diocese
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: A posse como a nova diocesana de Pelotas aconteceu em 14 de março de 2020, na Catedral do Redentor.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revma. Meriglei Borges Silva Simin
+  - source: wp-pt-dioc-pelotas
+    quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
+  - source: costa2021
+    quote: 1988-2000 – Luiz Osório Pires Prado
+  - source: wp-pt-dioc-pelotas
+    quote: Sebastião Armando Gameleira Soares - 2000 a 2006;
+  - source: costa2021
+    quote: 2000-2006 – Sebastião Armando Gameleira Soares
+  - source: wp-pt-dioc-pelotas
+    quote: Renato da Cruz Raatz - 2007 a 2019;
+  - source: costa2021
+    quote: >-
+      que substituiu o bispo Renato da Cruz Raatz, que havia atingido a idade da aposentadoria compulsória.

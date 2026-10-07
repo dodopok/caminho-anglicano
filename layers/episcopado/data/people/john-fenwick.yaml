@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-fenwick
+name: John Fenwick
+full_name: John Fenwick
+aliases:
+- Bishop Primus John Fenwick
+biography: Bispo Primaz da Free Church of England; supervisionou as congregações da IARB a partir de 2014.
+sources:
+- source: christiantoday-2014-fce
+  quote: The Right Reverend John Fenwick, the Bishop Primus of the Free Church of England
+affiliations:
+- jurisdiction: fce
+  role: primate
+  start: '2014'
+  status: confirmed
+  sources:
+  - source: ai-2014-fce-brazil
+    quote: >-
+      In the meantime, the local congregations of the IARB are under the oversight of the Bishop Primus, in accordance
+      with the existing Canons.
+events:
+- type: other
+  date: '2021-05-05'
+  description: >-
+    Sínodo extraordinário da Diocese da América do Sul da FCE (IARB) aprova por unanimidade deixar a Free Church
+    of England
+  status: confirmed
+  sources:
+  - source: ai-2021-fce-withdraw
+    quote: >-
+      the Synod of the Diocese of South America unanimously approved a motion and resolution to leave the Free Church
+      of England.

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: tony-belo-pereira
+name: Tony Belo Pereira
+ordinations:
+- order: episcopate
+  date: '2022'
+  jurisdiction: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Tony Belo Pereira (2022)
+  notes: >-
+    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
+    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso.
+affiliations:
+- jurisdiction: iecb
+  role: bishop
+  diocese: diocese-de-petrolina-diocese-de-paulista
+  start: '2022'
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Tony Belo Pereira (2022)
+  notes: 1º bispo diocesano de Petrolina (2022-2025); bispo coadjutor de Paulista (2025-)

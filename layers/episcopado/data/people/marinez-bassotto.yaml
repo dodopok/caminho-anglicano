@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marinez-bassotto
+name: Marinez Bassotto
+aliases:
+- Marinez Rosa dos Santos Bassotto
+ordinations:
+- order: episcopate
+  date: '2018-04-21'
+  place: Catedral de Santa Maria, Belem (PA)
+  jurisdiction: ieab
+  office: diocesan
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      A cerimônia de ordenação e sagração episcopal ocorreu no dia 21 de abril, nas dependências da Catedral de
+      Santa Maria, em Belém do Pará, com a presença maciça do clero feminino da Igreja, dos bispos da Câmara Episcopal,
+      e das bispas Griselda (Cuba) e Linda Nicholls (Canadá), que fez a homilia.
+  - source: wp-pt-marinez
+    quote: >-
+      Sua sagração episcopal aconteceu em 21 de abril de 2018, na Catedral de Santa Maria, em Belém do Pará.
+  notes: >-
+    Primeira bispa da IEAB e da America do Sul. Eleita em 20/01/2018. Sagrante principal nao explicitado nas fontes
+    lidas (primaz da epoca: Francisco de Assis da Silva).
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-da-amazonia
+  start: '2018-04-22'
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: No dia seguinte, Marinez foi instalada como bispa diocesana.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revma. Marinez Bassotto
+- jurisdiction: ieab
+  role: primate
+  start: '2022-11-13'
+  status: confirmed
+  sources:
+  - source: ieab-nova-primaz
+    quote: >-
+      Neste domingo, 13 de novembro, penúltimo dia do 35° Sínodo da Igreja Episcopal Anglicana do Brasil, a bispa
+      Marinez Bassotto (foto acima, ao centro), atual bispa da Diocese Anglicana da Amazônia, foi eleita a nova
+      primaz da Igreja.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Bispa Primaz Revma. Marinez Bassotto
+  notes: Primeira mulher primaz da IEAB. Wikipedia EN data o mandato de 2023.
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_encarregado
+  diocese: distrito-missionario-do-oeste-distrito-missionario-anglicano
+  status: confirmed
+  sources:
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Bispa Primaz Revma. Marinez Bassotto
+  notes: Em 2026 o site da IEAB lista a primaz como bispa do Distrito Missionario Anglicano (DMA).

@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: filadelfo-oliveira-neto
+name: Filadelfo Oliveira Neto
+ordinations:
+- order: episcopate
+  date: '2002-04-28'
+  jurisdiction: ieab
+  office: suffragan
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Filadelfo foi escolhido e a sua sagração ocorreu em 28 de abril de 2002.
+  - source: costa2021
+    quote: >-
+      eleito Bispo Sufragâneo da Diocese Anglicana do Recife. Sua sagração aconteceu em 28 de abril de 2002.
+  notes: >-
+    Eleito sufraganeo da Diocese Anglicana do Recife em 07/12/2001 (Concilio de Paripueira-AL), contra o Rev. Mitsuo
+    Noyama.
+affiliations:
+- jurisdiction: ieab
+  role: suffragan_bishop
+  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  start: '2002-04-28'
+  end: '2005-02-22'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: A missão do novo epíscopo era auxiliar o seu bispo diocesano, Robinson Cavalcanti
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_interino
+  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  start: '2005-02-22'
+  end: '2006'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      NOMEIO, COMO AUTORIDADE ECLESIÁSTICA DA DIOCESE ANGLICANA DO RECIFE, enquanto durar os efeitos da supra-citada
+      resolução, DOM FILADELFO OLIVEIRA NETO
+  - source: costa2021
+    quote: 2005-2006 – Filadelfo Oliveira Neto (Interino)
+  - source: wp-pt-dioc-recife
+    quote: Filadelfo Oliveira Neto (Interino) - 2005 a 2006;
+  notes: Autoridade eclesiastica / bispo interino.
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-rio-de-janeiro-ex-diocese-central
+  start: '2008-08-29'
+  end: '2017'
+  end_reason: resignation
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Sua instalação aconteceu na Catedral do Redentor em 29 de agosto do mesmo ano.
+  - source: costa2021
+    quote: >-
+      foi eleito bispo coadjutor pelo Concílio extraordinário da DARJ, após a resignação do bispo Filadelfo Oliveira.

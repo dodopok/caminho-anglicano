@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-missionaria-do-nordeste-do-brasil-dmnb
+name: Diocese Missionária do Nordeste do Brasil (DMNB)
+type: diocese
+relations:
+- type: part_of
+  target: iceb
+  status: probable
+  sources:
+  - source: ciceb-betania-nossaigreja
+    quote: e o Rev. Leonides foi sagrado Bispo dessa diocese.

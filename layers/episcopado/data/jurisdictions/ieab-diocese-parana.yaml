@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-diocese-parana
+name: Diocese Anglicana do Paraná (IEAB)
+aliases:
+- Diocese Anglicana do Paraná
+type: diocese
+tradition: anglican
+country: BR
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: ieab-3a-bispa
+    quote: >-
+      desde sua ordenação atuou nas Dioceses anglicanas Sul-Ocidental (1996-2006), Paraná (2007-2010 ) e Brasília
+      (2011 – março 2017).
+  - source: ieab-magda-sagrada
+    quote: >-
+      Magda irá auxiliar o atual bispo diocesano, Naudal Alves Gomes, até dezembro. A partir daí, ela assume oficialmente
+      como bispa diocesana em todo o estado.
+  - source: ieab-irala-falecimento
+    quote: Em 2008, tornou-se Deão da Catedral Anglicana de São Tiago, em Curitiba, Paraná

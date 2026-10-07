@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ceec
+acronym: CEEC
+name: Communion of Evangelical Episcopal Churches
+type: communion
+tradition: other
+country: US
+founded:
+  date: '1995'
+  sources:
+  - source: ceec-history
+    quote: >-
+      October of 1995, in Fredericksburg, Virginia, approximately 300 people gathered for the consecration of the
+      CEEC’s first two bishops and the ordination of 25 pastors and 7 deacons by bishops in apostolic succession
+      from the Anglican, Orthodox and Old Catholic jurisdictions, who were committed to ecumenism.
+  - source: ceec-history
+    quote: Bishop Michael Owen served as the first Presiding Bishop.
+website: https://www.ceec.org/
+description: >-
+  Comunhão de convergência fundada nos EUA em outubro de 1995 (Fredericksburg, Virginia), com primeiros bispos sagrados
+  por bispos de sucessão anglicana, ortodoxa e vétero-católica independentes; Michael Owen foi o primeiro bispo
+  presidente. Absorveu a EECI (1999) e a Christian Communion International (2012).
+sources:
+- source: ceec-history
+  quote: >-
+    October of 1995, in Fredericksburg, Virginia, approximately 300 people gathered for the consecration of the
+    CEEC’s first two bishops and the ordination of 25 pastors and 7 deacons by bishops in apostolic succession from
+    the Anglican, Orthodox and Old Catholic jurisdictions, who were committed to ecumenism.
+- source: ceec-history
+  quote: Bishop Michael Owen served as the first Presiding Bishop.

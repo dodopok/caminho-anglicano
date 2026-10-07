@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sebastiao-gameleira
+name: Sebastiao Armando Gameleira Soares
+ordinations:
+- order: episcopate
+  date: '2000-07-23'
+  place: Paroquia (catolica) Nossa Senhora da Luz, Pelotas
+  jurisdiction: ieab
+  office: diocesan
+  status: probable
+  sources:
+  - source: costa2021
+    quote: A cerimônia de sagração ocorreu em Pelotas, em 23 de julho de 2000, na Paróquia Nossa Senhora
+  - source: costa2021
+    quote: >-
+      foi eleito bispo da Diocese Anglicana de Pelotas, para substituir o primeiro ordinário, Luiz Osório Pires
+      Prado, sendo sagrado em 23 de julho de 2000.
+  notes: 'Local: a nota 225 da mesma tese diz "Catedral do Redentor, em Pelotas". Sagrantes nao informados.'
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-de-pelotas
+  start: '2000-07-23'
+  end: '2006'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: wp-pt-dioc-pelotas
+    quote: Sebastião Armando Gameleira Soares - 2000 a 2006;
+  - source: costa2021
+    quote: 2000-2006 – Sebastião Armando Gameleira Soares
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  start: '2006-10-11'
+  end: 2013-12
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa2021
+    quote: O novo bispo foi instalado em 11 de outubro de 2006
+  - source: costa2021
+    quote: 2006-2013 – Sebastião Armando Gameleira Soares
+  notes: Eleito no Sinodo Geral de 2006; aposentadoria compulsoria em 2013.

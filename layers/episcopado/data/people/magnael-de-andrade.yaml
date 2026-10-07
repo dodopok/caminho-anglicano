@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: magnael-de-andrade
+name: Magnael de Andrade
+biography: Sagrado bispo da IARB em 2021, segundo a Wikipédia.
+sources:
+- source: ptwiki-iarb
+  quote: 'Em 2021 foram sagrados dois novos bispos: Diógenes Monteiro e Magnael de Andrade.'
+ordinations:
+- order: episcopate
+  date: '2021'
+  jurisdiction: iarb
+  status: probable
+  sources:
+  - source: ptwiki-iarb
+    quote: 'Em 2021 foram sagrados dois novos bispos: Diógenes Monteiro e Magnael de Andrade.'
+  notes: Sem detalhes.

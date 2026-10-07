@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-do-recife-ex-diocese-setentrional
+name: Diocese Anglicana do Recife (ex-Diocese Setentrional)
+type: diocese
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. João Cancio Peixoto Filho
+  - source: ieab-serie-dar
+    quote: Bispo Diocesano – Revmo. João Cancio Peixoto Filho.
+  - source: costa2021
+    quote: >-
+      Em 19 de outubro do mesmo ano, Robinson foi instalado como terceiro bispo da Diocese Anglicana do Recife.
+  - source: costa2021
+    quote: 1997-2005 – Edward Robinson de Barros Cavalcanti (Deposto)
+  - source: wp-pt-dioc-recife
+    quote: Edward Robinson de Barros Cavalcanti - 1997 a 2005 (deposto);
+  - source: costa2021
+    quote: 1976-1985 – Edmund Knox Sherrill
+  - source: wp-pt-dioc-recife
+    quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
+  - source: costa2021
+    quote: 1986-1997 – Clovis Erly Rodrigues
+  - source: wp-pt-dioc-recife
+    quote: Clóvis Erly Rodrigues - 1986 a 1997;
+  - source: costa2021
+    quote: A missão do novo epíscopo era auxiliar o seu bispo diocesano, Robinson Cavalcanti
+  - source: costa2021
+    quote: >-
+      NOMEIO, COMO AUTORIDADE ECLESIÁSTICA DA DIOCESE ANGLICANA DO RECIFE, enquanto durar os efeitos da supra-citada
+      resolução, DOM FILADELFO OLIVEIRA NETO
+  - source: costa2021
+    quote: 2005-2006 – Filadelfo Oliveira Neto (Interino)
+  - source: wp-pt-dioc-recife
+    quote: Filadelfo Oliveira Neto (Interino) - 2005 a 2006;
+  - source: costa2021
+    quote: O novo bispo foi instalado em 11 de outubro de 2006
+  - source: costa2021
+    quote: 2006-2013 – Sebastião Armando Gameleira Soares

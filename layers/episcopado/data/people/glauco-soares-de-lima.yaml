@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: glauco-soares-de-lima
+name: Glauco Soares de Lima
+ordinations:
+- order: episcopate
+  date: '1989-10-01'
+  place: St. Paul's Church, Sao Paulo
+  jurisdiction: ieab
+  office: coadjutor
+  principal_consecrator: olavo-ventura-luiz
+  status: contested
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi elevado ao episcopado em 1º de outubro no histórico templo da capital paulista, pelas mãos do Bispo Primaz,
+      Olavo Ventura Luiz, tendo como co-sagrantes mais sete bispos.
+  - source: wp-pt-glauco
+    quote: >-
+      Em 1° de julho de 1989, Lima foi sagrado bispo na Catedral Anglicana de São Paulo, sucedendo Dom Sumio Takatsu.
+  discrepancies:
+  - field: date
+    value: '1989-07-01'
+    sources:
+    - source: wp-pt-glauco
+      quote: >-
+        Em 1° de julho de 1989, Lima foi sagrado bispo na Catedral Anglicana de São Paulo, sucedendo Dom Sumio Takatsu.
+  - field: place
+    value: Catedral Anglicana de Sao Paulo
+    sources:
+    - source: wp-pt-glauco
+      quote: >-
+        Em 1° de julho de 1989, Lima foi sagrado bispo na Catedral Anglicana de São Paulo, sucedendo Dom Sumio Takatsu.
+  notes: >-
+    Versao de Costa 2021: 01/10/1989, St. Paul's Church, eleito coadjutor em julho de 1989. Wikipedia PT diz 01/07/1989
+    na Catedral Anglicana de Sao Paulo (ver afirmacao contestada seguinte). Versao Wikipedia PT (sem fonte especifica).
+    Conflita com Costa 2021 (eleito coadjutor em julho, sagrado em 1o de outubro).
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  start: 1990-01
+  end: '2002'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Assumiu a Diocese em janeiro do ano seguinte
+  - source: costa2021
+    quote: 1990-2002 – Glauco Soares de Lima
+- jurisdiction: ieab
+  role: primate
+  start: '1993'
+  end: '2003'
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 1993 o então bispo da Diocese Anglicana de São Paulo, Glauco Soares de Lima, foi eleito o novo Primaz,
+      permanecendo no cargo por dez anos.
+  - source: wp-en-ieab
+    quote: Glauco Soares de Lima, 1993—2003
+  notes: Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94).
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_interino
+  diocese: ieab-diocese-brasilia
+  start: 2003-01
+  end: 2003-05
+  status: probable
+  sources:
+  - source: wp-pt-dioc-brasilia
+    quote: Glauco Soares de Lima (Interino) - janeiro a maio de 2003;

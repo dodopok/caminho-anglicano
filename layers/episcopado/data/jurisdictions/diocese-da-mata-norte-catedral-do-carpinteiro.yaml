@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-da-mata-norte-catedral-do-carpinteiro
+name: Diocese da Mata Norte (Catedral do Carpinteiro)
+type: diocese
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Edgar Batista Ferreira Neto (2019)

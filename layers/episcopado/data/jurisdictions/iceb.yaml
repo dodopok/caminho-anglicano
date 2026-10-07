@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iceb
+acronym: ICEB
+name: Igreja Cristã Episcopal Betânia
+aliases:
+- >-
+  Igreja Cristã Episcopal — Comunhão (hoje Província) de Igrejas Cristãs Episcopais do Brasil (CICEB/PICEB)
+type: national_church
+country: BR
+founded:
+  date: '2002'
+  sources:
+  - source: ciceb-quemsomos
+    quote: >-
+      A história da Comunhão de Igrejas Cristãs Episcopais do Brasil(CICEB) começa em outubro de 2002, quando a
+      Paróquia Betânia da Diocese Anglicana do Recife, pertencente à Igreja Episcopal Anglicana do Brasil, resolveu
+      em assembleia com todos os membros, por unanimidade de votos, desligar-se da Igreja Anglicana.
+  - source: ciceb-quemsomos
+    quote: >-
+      No mesmo evento, a Comunhão foi denominada “Comunhão das Igrejas Cristãs Episcopais do Brasil (CICEB)”.
+  - source: wp-pt-dioc-recife
+    quote: >-
+      fundando a Igreja Cristã Episcopal. Na época a nova denominação recebeu o nome de Igreja Episcopal Evangélica
+      Betânia.
+website: https://www.ciceb.com.br/
+description: >-
+  Nasce da Paróquia Betânia (Cordeiro, Recife), da Diocese do Recife da IEAB, que em 2002 se desligou da IEAB sob
+  a liderança do Rev. Leônides de Menezes, adotando o nome Igreja Episcopal Evangélica Betânia; filiou-se à CEEC
+  (EUA); Menezes foi sagrado bispo em dezembro de 2006; a comunhão passou a chamar-se CICEB em 2008 e tornou-se
+  província (PICEB) em dezembro de 2021, com três dioceses. Os templos usam o nome 'Igreja Cristã Episcopal'. Sede:
+  Catedral Betânia, Recife.
+sources:
+- source: ciceb-quemsomos
+  quote: >-
+    A história da Comunhão de Igrejas Cristãs Episcopais do Brasil(CICEB) começa em outubro de 2002, quando a Paróquia
+    Betânia da Diocese Anglicana do Recife, pertencente à Igreja Episcopal Anglicana do Brasil, resolveu em assembleia
+    com todos os membros, por unanimidade de votos, desligar-se da Igreja Anglicana.
+- source: ciceb-quemsomos
+  quote: >-
+    No mesmo evento, a Comunhão foi denominada “Comunhão das Igrejas Cristãs Episcopais do Brasil (CICEB)”.
+- source: wp-pt-dioc-recife
+  quote: >-
+    fundando a Igreja Cristã Episcopal. Na época a nova denominação recebeu o nome de Igreja Episcopal Evangélica
+    Betânia.
+relations:
+- type: schism_from
+  target: ieab
+  date: '2002'
+  led_by:
+  - leonides-menezes
+  status: confirmed
+  sources:
+  - source: ciceb-quemsomos
+    quote: >-
+      resolveu em assembleia com todos os membros, por unanimidade de votos, desligar-se da Igreja Anglicana. Sendo
+      assim, a partir desta data passou a ser chamada Igreja Episcopal Evangélica Betânia.
+  - source: wp-pt-dioc-recife
+    quote: >-
+      Em outubro de 2002, os membros da então Paróquia Betânia da Diocese Anglicana do Recife, liderados pelo reverendo
+      Leônides Menezes, decidiram por assembleia se separar da Igreja Episcopal Anglicana do Brasil
+  notes: >-
+    Mês divergente no próprio site: 'outubro de 2002' (Quem Somos da CICEB) vs '8 de julho de 2002' (Nossa Igreja
+    da Catedral Betânia). A Wikipédia acompanha 'outubro de 2002'.
+- type: member_of
+  target: ceec
+  date: '2007'
+  led_by:
+  - leonides-menezes
+  status: contested
+  sources:
+  - source: iab-poster-linhagem-meira
+    quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC
+  - source: wp-pt-dioc-recife
+    quote: >-
+      Em 8 de junho de 2003, a então Igreja Episcopal Evangélica Betânia, filiou-se à Comunhão das Igrejas Episcopais
+      Evangélicas (em inglês, The Communion of Evangelical Episcopal Churches - CEEC)
+  - source: ciceb-quemsomos
+    quote: >-
+      Em 8 de junho de 2002, após oito meses de oração em busca de resposta de Deus, resolveu em assembleia geral
+      extraordinária, também por unanimidade de votos, filiar-se à Comunion of Evangelical Episcopal Churches (CECC),
+      com sede nos EUA e hoje chamada Communio Christiana Churches (CCC).
+  notes: >-
+    Filiação inferida da sagração; verificar. O site oficial dá 8/6/2002, mas diz que a filiação veio 'após oito
+    meses' da saída (out. 2002), o que só fecha com 8/6/2003, data dada pela Wikipédia. Provável erro de digitação
+    no site. O site diz que a comunhão é 'hoje chamada Communio Christiana Churches (CCC)'; a Wikipédia fala em
+    Christian Communion International (CCI). Data de eventual saída da CEEC não encontrada (a Wikipédia descreve
+    a ligação com a CCI, com sede na Flórida).
+  discrepancies:
+  - field: date
+    value: '2003-06-08'
+    sources:
+    - source: wp-pt-dioc-recife
+      quote: >-
+        Em 8 de junho de 2003, a então Igreja Episcopal Evangélica Betânia, filiou-se à Comunhão das Igrejas Episcopais
+        Evangélicas (em inglês, The Communion of Evangelical Episcopal Churches - CEEC)
+    - source: ciceb-quemsomos
+      quote: >-
+        Em 8 de junho de 2002, após oito meses de oração em busca de resposta de Deus, resolveu em assembleia geral
+        extraordinária, também por unanimidade de votos, filiar-se à Comunion of Evangelical Episcopal Churches
+        (CECC), com sede nos EUA e hoje chamada Communio Christiana Churches (CCC).

@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sumio-takatsu
+name: Sumio Takatsu
+ordinations:
+- order: episcopate
+  date: '1977-06-12'
+  place: St. Paul's Church (Igreja de Sao Paulo), Sao Paulo
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: arthur-rodolpho-kratz
+  co_consecrators:
+  - agostinho-guillon-soria
+  - elliott-lorenz-sorge
+  - olavo-ventura-luiz
+  - plinio-lauer-simoes
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      sendo sagrado no dia 12 de junho do mesmo ano, na Igreja de São Paulo (St. Paul’s Church), pelo Bispo Primaz,
+      Arthur Rodolpho Kratz, e pelo co-sagrantes os bispos Olavo Ventura Luiz, Plínio Simões, Elliott Sorge e Agostinho
+      Sória (KICKHÖFEL, 1995, p. 288).
+  - source: wp-pt-sumio
+    quote: Prevalecendo sua eleição, ele foi consagrado bispo em 12 de junho daquele ano.
+  notes: >-
+    Costa cita Kickhofel 1995. Eleito em 30/04/1977 (Costa) ou 20/04/1977 (Wikipedia PT, citando Kickhofel 2006).
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-de-sao-paulo-ex-diocese-sul-central
+  start: '1977-06-12'
+  end: '1989'
+  end_reason: resignation
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1977-1989 – Sumio Takatsu
+  - source: wp-pt-sumio
+    quote: Permaneceu no cargo até sua renúncia, no final de 1989.

@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: clovis-erly-rodrigues
+name: Clovis Erly Rodrigues
+ordinations:
+- order: episcopate
+  date: '1985-03-17'
+  place: Catedral da Santissima Trindade, Porto Alegre
+  jurisdiction: ieab
+  office: coadjutor
+  principal_consecrator: edmund-knox-sherrill
+  co_consecrators:
+  - david-leake
+  status: probable
+  sources:
+  - source: costa2021
+    quote: O novo bispo foi sagrado no dia 17 de março de 1985, na Catedral da Santíssima
+  - source: costa2021
+    quote: >-
+      Trindade, em Porto Alegre, pelo próprio Sherrill, na época o Primaz em exercício. Participaram como co-sagrantes
+      os bispos brasileiros e o bispo argentino David Leake, Primaz da Província Anglicana do Cone Sul, que também
+      foi o pregador.
+  notes: >-
+    Eleito bispo coadjutor da Diocese Setentrional (Recife) pelo Sinodo de 1984. Co-sagrantes: "os bispos brasileiros"
+    (nao nomeados) e David Leake.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-do-recife-ex-diocese-setentrional
+  start: '1986'
+  end: '1997'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1986-1997 – Clovis Erly Rodrigues
+  - source: wp-pt-dioc-recife
+    quote: Clóvis Erly Rodrigues - 1986 a 1997;
