@@ -4,6 +4,7 @@ const dataDir = fileURLToPath(new URL('./data', import.meta.url))
 
 // Rede do Episcopado Histórico (beta). Ver docs/EPISCOPADO.md.
 export default defineNuxtConfig({
+  css: [fileURLToPath(new URL('./assets/css/episcopado.css', import.meta.url))],
   hooks: {
     // Os YAML da base viajam com o servidor como server assets (funciona na Vercel).
     // Registrado via hook, e só uma vez: declarado direto em `nitro.serverAssets`

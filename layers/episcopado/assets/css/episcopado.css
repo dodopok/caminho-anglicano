@@ -1,0 +1,74 @@
+/* Rede do Episcopado Histórico: estilos compartilhados pelas páginas da layer. */
+
+.episcopado :focus-visible {
+  outline: 2px solid #b45309;
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* Link de entidade dentro do texto corrido. */
+.episcopado .ep-link {
+  color: #92400e;
+  text-decoration: underline;
+  text-decoration-color: #fde68a;
+  text-underline-offset: 2px;
+  transition: color 120ms, text-decoration-color 120ms;
+}
+.episcopado .ep-link:hover {
+  color: #451a03;
+  text-decoration-color: #d97706;
+}
+
+/* Títulos de seção das fichas. */
+.episcopado .ep-section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.625rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #1c1917;
+  scroll-margin-top: 5rem;
+}
+
+/* Botões. */
+.episcopado .ep-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  transition: background-color 120ms, color 120ms, border-color 120ms;
+}
+.episcopado .ep-btn-primary {
+  background: #b45309;
+  color: #fff;
+}
+.episcopado .ep-btn-primary:hover {
+  background: #92400e;
+}
+.episcopado .ep-btn-secondary {
+  background: #fff;
+  color: #44403c;
+  border: 1px solid #d6d3d1;
+}
+.episcopado .ep-btn-secondary:hover {
+  background: #fafaf9;
+  border-color: #a8a29e;
+  color: #1c1917;
+}
+
+/* Nota de rodapé apontada pela URL (#nota-3) ganha destaque. */
+.episcopado .ep-footnote:target {
+  background: #fffbeb;
+  box-shadow: 0 0 0 4px #fffbeb;
+}
+
+/* Respeita quem prefere menos movimento. */
+@media (prefers-reduced-motion: reduce) {
+  .episcopado * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
