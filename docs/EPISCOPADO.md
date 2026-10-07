@@ -251,13 +251,29 @@ Os resultados vêm agrupados em Pessoas / Jurisdições / Fontes. Enter abre o n
 
 Recebe uma pessoa ou jurisdição, lê o relatório de lacunas, busca fontes públicas pro que falta e entrega pelo mesmo fluxo de PR.
 
-### 4.3 Importador Wikidata (`layers/episcopado/scripts/import-wikidata.ts`)
+### 4.3 Wikidata: o que a sondagem mostrou (out/2026)
 
-- Para cada bispo com `wikidata`, sobe recursivamente pelas propriedades de sagrante/co-sagrante até a profundidade configurada.
-- Grava em `data/people/historical/` com fonte `wikidata` e status `probable`.
-- É idempotente: rodar de novo atualiza sem duplicar e nunca sobrescreve o que foi curado à mão.
-- Antes da implementação, vou confirmar os ids exatos das propriedades da Wikidata (sagrante, co-sagrante, cargo).
-- ⚠️ **Rede:** este ambiente cloud bloqueia `query.wikidata.org` (e provavelmente `web.archive.org`). Pra rodar aqui, adicione esses domínios em *Allowed domains* nas configurações de rede do ambiente (https://code.claude.com/docs/en/cloud-environments#network-access). A alternativa é rodar o importador localmente ou via GitHub Action.
+A ideia original era subir a sucessão histórica com um importador da Wikidata. A sondagem mostrou que, para a linha anglicana, isso quase não funciona:
+
+- **Cobertura:** nenhum dos 78 bispos da base que têm QID tem sagrante (P1598) na Wikidata. A TEC do século XIX (White, Provoost, Hopkins, Tuttle, Dudley…) também não tem. Seabury tem os três sagrantes escoceses, mas sem papel e sem continuação.
+- **O que existe:**
+  - a linha **católica**, bem coberta: sobe ~20–26 passos até Scipione Rebiba;
+  - os **arcebispos de Cantuária recentes**, até Randall Davidson ou Vernon-Harcourt;
+  - Cranmer, que sobe 6 passos.
+
+  Matthew Parker não tem sagrante, então não há ponte da Reforma até os anglicanos modernos.
+- **Modelagem:**
+  - Nos católicos, o sagrante vem em `P1598` com o papel no qualificador `P3831`: `Q18442817` é o sagrante principal e `Q18442822` o co-sagrante.
+  - Nos anglicanos ingleses, o sagrante aparece como qualificador de um evento `P793 = Q125375` (sagração).
+  - Data e lugar quase nunca estão no `P1598`; ficam no evento (`P585` e `P276`).
+  - Nunca case itens pelo nome. Exemplo: "Gilbert Sheldon" (Q119207) é um bispo católico do século XX, e o arcebispo é Q584403.
+- **Estratégia:** busca nível a nível com `wbgetentities` (50 itens por chamada), lendo `P1598` tanto como declaração quanto como qualificador. Um protótipo validado está no scratchpad da sessão, e vira `scripts/import-wikidata.ts` quando for útil.
+- **Decisão:** a sucessão histórica vem **principalmente por curadoria**. Fontes:
+  - as listas numeradas de bispos da TEC, que trazem os sagrantes de cada bispo;
+  - Perry (1895), Spirit of Missions e Living Church, no Internet Archive;
+  - Lambeth e Crockford's.
+
+  A Wikidata entra como complemento para a linha de Cantuária recente e, se quisermos, para pontes com Roma.
 
 ### 4.4 Fontes recomendadas
 
