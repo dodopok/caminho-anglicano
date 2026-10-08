@@ -20,10 +20,15 @@ sources:
 ordinations:
 - order: diaconate
   date: '2025-03-09'
+  place: IPI Tatuapé, São Paulo (SP)
   jurisdiction: reb
   ordained_by: eric-rodrigues
-  status: probable
+  status: confirmed
   sources:
+  - source: testemunho-mantenedor-2026-10-08-porto
+    quote: >-
+      Ordenacao diaconal de douglas e cynthia foi realizada na IPI Tatuapé, e a presbiteral em vitória no sínodo
+      que você já tem informação
   - source: ig-anglicanaporto-2025-03-10-diaconato-1
     quote: 09 de março de 2025, o dia em que nossos pastores foram ordenados ao diaconato.
   - source: ig-anglicanaporto-2025-03-10-diaconato-2
@@ -33,9 +38,10 @@ ordinations:
   - source: reb-calendario-2026
     quote: 09/03/2025 – Aniversário de Ordenação • Revda. Cynthia
   notes: >-
-    Os posts da Igreja Anglicana Porto citam o perfil @cynthilant; a identificação com 'Cynthia Soares' do post
-    da REB é inferência editorial. Jurisdição e bispo ordenante não informados. Bispo ordenante informado por testemunho
-    do mantenedor do projeto (a mensagem não distingue diaconato e presbiterato; a REB tinha um único bispo).
+    Celebrada no templo da Igreja Presbiteriana Independente do Tatuapé. Os posts da Igreja Anglicana Porto citam
+    o perfil @cynthilant; a identificação com 'Cynthia Soares' do post da REB é inferência editorial. Jurisdição
+    e bispo ordenante não informados. Bispo ordenante informado por testemunho do mantenedor do projeto (a mensagem
+    não distingue diaconato e presbiterato; a REB tinha um único bispo).
 - order: presbyterate
   date: '2025-10-24'
   place: Vitória (ES)
@@ -54,6 +60,10 @@ ordinations:
     quote: E um sínodo diocesano ordinário presencial, realizado em Vitória, Espírito Santo.
   - source: ecs-eric-blog-10meses
     quote: Nosso primeiro Sínodo acabou de acontecer
+  - source: testemunho-mantenedor-2026-10-08-porto
+    quote: >-
+      Ordenacao diaconal de douglas e cynthia foi realizada na IPI Tatuapé, e a presbiteral em vitória no sínodo
+      que você já tem informação
   - source: testemunho-mantenedor-2026-10-08-reb-sinodo-2025
     quote: Elias e Joyce foram ordenados presbíteros junto comigo e Cynthia, pelo bispo Eric, mesmo dia
   - source: testemunho-mantenedor-2026-10-08-reb-sinodo-2025
@@ -65,9 +75,9 @@ ordinations:
     por testemunho do mantenedor do projeto (a mensagem não distingue diaconato e presbiterato; a REB tinha um único
     bispo). Local inferido: a REB informa que as ordenações presbiterais ocorreram "em nosso Sínodo Diocesano" e
     o blog do bispo (28/10/2025) diz que o primeiro sínodo ordinário foi presencial, em Vitória (ES). A data (24/10/2025)
-    e o ordenante constam de outras fontes já reunidas; a fonte aqui só sustenta o local. Ordenações no Sínodo Diocesano
-    da REB; o calendário da REB dá 24/10/2025 para as ordenações diaconais da mesma celebração. Post da REB sobre
-    a celebração: https://www.instagram.com/p/DQSr0ENjmrg/ (publicado em 26/10/2025).
+    e o ordenante constam de outras fontes já reunidas; a fonte aqui só sustenta o local. No Sínodo Diocesano da
+    REB. Ordenações no Sínodo Diocesano da REB; o calendário da REB dá 24/10/2025 para as ordenações diaconais da
+    mesma celebração. Post da REB sobre a celebração: https://www.instagram.com/p/DQSr0ENjmrg/ (publicado em 26/10/2025).
 affiliations:
 - jurisdiction: igreja-anglicana-porto
   role: founder
