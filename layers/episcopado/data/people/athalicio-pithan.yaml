@@ -5,6 +5,7 @@ full_name: Athalício Theodoro Pithan
 aliases:
 - A. T. Pithan
 - Athalicio T. Pithan
+- Athalicio Theodoro Pithan
 - Athalico Pithan
 - Athalício Theodoro Pithan
 - Theodoro Athalício Pithan
@@ -75,14 +76,34 @@ ordinations:
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
     A frase pode atribuir a Kinsolving apenas o presbiterato; diaconato sob o mesmo bispo é leitura provável.
 - order: presbyterate
-  date: '1926'
+  date: 1926-04
   jurisdiction: dmsb
   ordained_by: lucien-lee-kinsolving
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: sendo ordenado ao diaconato em 1924 e, dois anos depois, ao presbiterato pelo bispo Kinsolving.
     page: '69'
+  - source: ieablac-cd1950
+    quote: D—Oct., 1924, Bp. L. L. Kinsolving ; P— Apr., 1926, Bp. W. M. M. Thomas.
+  - source: ieablac-cd1953
+    quote: D—Oct., 1924, Bp. L. L. Kinsolving ; P— cae 1926, Bp. W. M. M. Thomas.
+  - source: ieablac-cd1956
+    quote: D—Oct., 1924, Bp. Lae Kinsolving ; P— Apr., 1926, Bp. W. M. M. Thomas;
+  discrepancies:
+  - field: ordained_by
+    value: william-matthews-merrick-thomas
+    sources:
+    - source: ieablac-cd1950
+      quote: D—Oct., 1924, Bp. L. L. Kinsolving ; P— Apr., 1926, Bp. W. M. M. Thomas.
+    - source: ieablac-cd1953
+      quote: D—Oct., 1924, Bp. L. L. Kinsolving ; P— cae 1926, Bp. W. M. M. Thomas.
+    - source: ieablac-cd1956
+      quote: D—Oct., 1924, Bp. Lae Kinsolving ; P— Apr., 1926, Bp. W. M. M. Thomas;
+  notes: >-
+    CONFLITO com a base, que dá Lucien Lee Kinsolving como ordenante do presbiterato (1926). Os três diretórios
+    (1950, 1953, 1956) trazem Thomas para o presbiterato e Kinsolving só para o diaconato. As três edições não são
+    independentes entre si (mesma coleta de dados). Ver duvidas.
 - order: episcopate
   date: '1940-04-21'
   place: Catedral da Santíssima Trindade, Porto Alegre
