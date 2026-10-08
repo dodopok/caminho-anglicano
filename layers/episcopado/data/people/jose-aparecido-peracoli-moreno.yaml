@@ -21,36 +21,27 @@ ordinations:
   date: '2004'
   place: Belo Horizonte (MG)
   jurisdiction: ieal
-  status: contested
+  status: confirmed
   sources:
   - source: nigweb-moreno-sucessao-2012
     quote: >-
       eu havia sido ordenado ao episcopado em Belo Horizonte por um único bispo, em 2004, o que é considerado irregular
+  notes: >-
+    Relato do próprio ordenado (fonte primária, autodeclaração). O sagrante único não é nomeado no texto. Segundo
+    o mesmo texto, a jurisdição exigiu nova sagração sub conditione porque os cânones exigiriam ao menos três bispos.
+- order: episcopate
+  date: '2009'
+  place: Salta (Argentina)
+  jurisdiction: ieal
+  mode: conditional
+  status: confirmed
+  sources:
   - source: nigweb-moreno-sucessao-2012
     quote: A nova sagração deu-se em Salta, na Argentina, em 2009, através de três bispos
   - source: nigweb-moreno-sucessao-2012
     quote: >-
       A minha própria jurisdição, a Anglican Church of the Americas, requereu de mim uma nova sagração, sub conditione
-  discrepancies:
-  - field: date
-    value: '2009'
-    sources:
-    - source: nigweb-moreno-sucessao-2012
-      quote: A nova sagração deu-se em Salta, na Argentina, em 2009, através de três bispos
-    - source: nigweb-moreno-sucessao-2012
-      quote: >-
-        A minha própria jurisdição, a Anglican Church of the Americas, requereu de mim uma nova sagração, sub conditione
-  - field: place
-    value: Salta (Argentina)
-    sources:
-    - source: nigweb-moreno-sucessao-2012
-      quote: A nova sagração deu-se em Salta, na Argentina, em 2009, através de três bispos
-    - source: nigweb-moreno-sucessao-2012
-      quote: >-
-        A minha própria jurisdição, a Anglican Church of the Americas, requereu de mim uma nova sagração, sub conditione
   notes: >-
-    Relato do próprio ordenado (fonte primária, autodeclaração). O sagrante único não é nomeado no texto. Segundo
-    o mesmo texto, a jurisdição exigiu nova sagração sub conditione porque os cânones exigiriam ao menos três bispos.
     Segunda sagração, condicional (sub conditione), relatada pelo próprio bispo. Os três sagrantes não são nomeados.
 affiliations:
 - jurisdiction: ieal

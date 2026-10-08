@@ -9,11 +9,16 @@ sources:
   page: '76'
 ordinations:
 - order: episcopate
-  date: '2019'
-  jurisdiction: da-japi
+  date: '2019-07-26'
+  jurisdiction: iacc
+  office: diocesan
   principal_consecrator: james-antonio-roque
   status: probable
   sources:
+  - source: cont-wacbr-clerigos
+    quote: >-
+      Dom Claudinei Rodrigo Ferreira Bispo da Cidade: Florianópolis - SC Contato: +55 (48) 98844-7000 Ordenação:
+      Presbiteral: Sagração Episcopal: 26/07/2019
   - source: cant-novas-igrejas-2024
     quote: >-
       Como seus primeiros atos litúrgicos episcopais, o bispo James Roque, ordenou outros clérigos ao episcopado,
@@ -40,11 +45,33 @@ ordinations:
       Silva.
     page: '138'
   notes: >-
-    Data não informada; entre os 'primeiros atos' episcopais de James Roque (após 2013), no contexto da Diocese
-    Anglicana do Japi. O livro não informa jurisdição nem sagrantes. 'da Diocese Anglicana de Santa Catarina'. Data
-    não informada. Datas não informadas; a Diocese do Japí foi depois extinta e esses bispos fundaram igrejas anglicanas
-    independentes.
+    DATA NOVA: o site da WAC-BR dá 26/07/2019 para a sagração de Claudinei; Cant (2024) diz apenas 'desde 2019'
+    e que foi ordenado por James Roque (Japi). Jurisdição do ato: o site da diocese (dasc.iacc) diz que ela era
+    ligada à Igreja Anglicana Continuante em 2017-2019. Sagrante não informado nesta página. Data não informada;
+    entre os 'primeiros atos' episcopais de James Roque (após 2013), no contexto da Diocese Anglicana do Japi. O
+    livro não informa jurisdição nem sagrantes. 'da Diocese Anglicana de Santa Catarina'. Data não informada. Datas
+    não informadas; a Diocese do Japí foi depois extinta e esses bispos fundaram igrejas anglicanas independentes.
 affiliations:
+- jurisdiction: wac-br
+  role: diocesan_bishop
+  start: '2024'
+  status: confirmed
+  sources:
+  - source: cont-iacc-santacatarina
+    quote: >-
+      No ano de 2024, Dom Ferreira, solicitou a incardinação na Igreja Anglicana Mundial - WAC Brasil, atualmente
+      presidida por Dom Paulo Sergio Ferreira, arcebispo Primaz da WAC - Brasil.
+  - source: cont-iacc-santacatarina
+    quote: >-
+      A Diocese Anglicana Mundial de Santa Catarina, iniciou seus trabalhos no ano de 2017, época em que era ligada
+      a Igreja Anglicana Continuante, foi designado como bispo eleito Monsenhor Dom Claudinei Rodrigo Ferreira,
+      que assumiu o episcopado no ano de 2019.
+  - source: cont-wacbr-clerigos
+    quote: 'Dom Claudinei Rodrigo Ferreira Bispo da Cidade: Florianópolis - SC'
+  notes: >-
+    Local: Diocese Anglicana (Mundial) de Santa Catarina (São Teófilo). Duas fontes primárias concordam (site da
+    diocese e da WAC-BR). O site 'dasc-iacc.webnode.page', citado como site da IACC, hoje é o site da Diocese de
+    Santa Catarina já em WAC-BR (parte do conteúdo do site é texto institucional da WAC).
 - jurisdiction: wac-br
   role: bishop
   diocese: florianopolis

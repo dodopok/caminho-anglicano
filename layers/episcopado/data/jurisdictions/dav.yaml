@@ -53,6 +53,23 @@ sources:
     A nova denominação apresenta-se como parte do Movimento Anglicano Continuante, filiada à Província Anglicana
     Cristo Salvador.
 relations:
+- type: part_of
+  target: pcra-al
+  date: '2015-08-15'
+  led_by:
+  - theodoro-a-c-de-oliveira
+  - victor-manuel-cruz-blanco
+  status: probable
+  sources:
+  - source: cont-pciacng-theodoro
+    quote: >-
+      La Sede Metropolitana De La Provincia Catolica De Rito Anglicano De America Latina, Elevo Al Obispo Monseñor
+      Theodoro Oliveira A Obispo Ordinario De La Diócesis Catolica Anglicana Santa Madre De Dios.
+  notes: >-
+    Segundo o site da província de Cruz-Blanco, a Diocese Católica Anglicana Santa Mãe de Deus (Votorantim, DAV)
+    foi instalada por ela como diocese ordinária em agosto de 2015, desmembrada da Diocese do Japi (James Roque).
+    O livro de Cant (2024, p.78) diz que a DAV 'não está canonicamente filiada a alguma de suas jurisdições' — ver
+    dúvidas.
 - type: member_of
   target: pacsalvador
   date: null

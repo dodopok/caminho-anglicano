@@ -1,17 +1,57 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: pcra-al
-acronym: PCRA-AL
-name: Província Católica de Rito Anglicano da América Latina
+acronym: IACNG
+name: >-
+  Iglesia Anglicana del Caribe y la Nueva Granada (Diocese/Provincia Anglicana del Caribe y La Nueva Granada)
 aliases:
+- PCRA-AL
 - Província Católica de Rito Anglicano (América Latina / Colômbia), de Victor Manuel Cruz-Blanco
-type: province
+- Província Católica de Rito Anglicano da América Latina
+type: diocese
 country: CO
 description: >-
-  Província vinculada à Igreja Católica de Rito Anglicano (Quakertown, Pensilvânia), liderada pelo arcebispo colombiano
-  Victor Manuel Cruz-Blanco; por ela o episcopado do Movimento Contínuo chegou ao Brasil.
+  Jurisdição continuante colombiana com sede em Barranquilla, liderada por Victor Manuel Cruz-Blanco (bispo ordinário
+  a partir de 1994, ACC; depois HCCAR/'Província Católica de Rito Anglicano da América Latina'); local declarado
+  da sagração de James Roque em 2013. Não confundir com a Diocese de New Granada da ACC (bispo German Orrego-Hurtado),
+  que é outra jurisdição.
 sources:
-- source: cant-novas-igrejas-2024
+- source: iacc-continuante
   quote: >-
-    À época, ele estava vinculado à Província Católica de Rito Anglicano da América Latina, sediada em Quakertown,
-    Pensilvânia.
-  page: '76'
+    na sede metropolitana da Igreja Anglicana Continuante da República da Colômbia (Diocese Anglicana del Caribe
+    y La Nueva Granada), na cidade de Barranquilla
+- source: cont-cruzblanco-resume
+  quote: President, Anglican Church in the Caribbean and New Granada
+relations:
+- type: part_of
+  target: hccar
+  date: null
+  led_by:
+  - victor-manuel-cruz-blanco
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      arcebispo colombiano ††Victor Manuel Cruz-Blanco, da Província Católica de Rito Anglicano da América Latina,
+      então vinculada à Igreja Católica de Rito Anglicano, com sede em Quakertown, Pensilvânia, nos Estados Unidos
+      da América, que tinha como Primaz o arcebispo ††Thomas Justin Kleppinger
+  notes: >-
+    Declaração do site da IACC ('então vinculada'); o vínculo era passado no momento em que o site foi escrito,
+    o que sugere que a vinculação pode ter mudado depois de 2013 — ver dúvidas.
+- type: in_communion_with
+  target: aeci
+  date: '2011-08-23'
+  led_by:
+  - norman-dutton
+  - victor-manuel-cruz-blanco
+  status: confirmed
+  sources:
+  - source: cont-aeci-news
+    quote: >-
+      The Anglican Episcopal Church International and The Holy Catholic Church -Western Rite (The Anglican Province
+      of the Caribbean and New Granada) was agreed and signed on 23rd August 2011 by the respective Archbishops
+      Most Rev'd Norman S Dutton and Most Rev'd Victor Manuel Cruz-Blanco.
+  notes: >-
+    Em 2011 a jurisdição de Cruz-Blanco aparece na AECI como 'The Holy Catholic Church - Western Rite (The Anglican
+    Province of the Caribbean and New Granada)'. Concordato de comunhão plena. A Wikipédia (HCCAR) informa que em
+    março de 2010 a HCC-Western Rite e a HCC-Anglican Rite entraram em plena comunhão como uma só igreja ('Anglican
+    Rite Catholic Church, Original Province').

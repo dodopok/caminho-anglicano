@@ -51,13 +51,23 @@ sources:
 relations:
 - type: in_communion_with
   target: aeci
-  date: null
+  date: '2011'
   led_by:
+  - norman-dutton
   - rui-costa-barbosa
   status: confirmed
   sources:
   - source: iatb-intercomunhoes
     quote: Comunhões e Igrejas com Intercomunhão com IATB The Anglican Episcopal Church—International
+  - source: cont-aeci-news
+    quote: >-
+      A CONCORDAT OF FULL COMMUNION has been agreed and signed by the respective spiritual leaders of The Anglican
+      Episcopal Church International (Archbishop Norman S Dutton) and The Traditional Anglican Church of Brazil
+      (Archbishop Rui Costa Barbosa).
+  notes: >-
+    A página de notícias da AECI lista o concordato sob o cabeçalho '2011' (a data exata não é dada; pode ser anterior).
+    Concordato de comunhão plena e 'intercomunhão fraterna' entre as duas igrejas; a AECI aceita os princípios da
+    Afirmação de St. Louis.
 - type: member_of
   target: aeci
   date: null

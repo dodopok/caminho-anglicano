@@ -8,7 +8,46 @@ sources:
 - source: cant-novas-igrejas-2024
   quote: Um deles foi dom Ricardo Vicente dos Anjos, que se tornou primaz da ICA-Brasil.
   page: '139'
+ordinations:
+- order: episcopate
+  date: '2012-07-15'
+  place: São Paulo (SP)
+  jurisdiction: iatb
+  office: diocesan
+  principal_consecrator: rui-costa-barbosa
+  status: probable
+  sources:
+  - source: cont-aeci-news
+    quote: >-
+      Reverend Ricardo Vicente Dos Anjos of whose pious, sober and honest life and conversation, competent learning
+      and knowledge of Holy Scriptures, and soundness in the Faith we have been assured, being Consecrated and Appointed
+      as a Bishop in The Traditional Anglican Church of Brazil to serve in the Diocese in the State of Para (North).
+  - source: cont-aeci-news
+    quote: Archbishop Primate of Brazil, The Most Rev’d. Dr. Rui CostaBarbosa.
+  - source: cont-aeci-news
+    quote: >-
+      The said Consecration will take place at Sao Paulo-SP, Brazil on the Fifteenth day of July in the Blessed
+      year of our Lord 2012.
+  notes: >-
+    Trata-se de um MANDATO de sagração emitido pelo arcebispo metropolitano eleito da AECI, Melvyn John Langley
+    (a página diz 'will take place'): confirma o plano e a data, não a realização. Diocese do Estado do Pará (Norte)
+    da 'Traditional Anglican Church of Brazil' (= IATB, hoje de Rui Costa Barbosa). Ricardo Vicente dos Anjos foi
+    depois cofundador da Igreja Católica Anglicana (2017) e primaz da ICA-Brasil (2023) — dados já na base.
 affiliations:
+- jurisdiction: iatb
+  role: diocesan_bishop
+  start: '2012-07-15'
+  end: '2017'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cont-aeci-news
+    quote: >-
+      being Consecrated and Appointed as a Bishop in The Traditional Anglican Church of Brazil to serve in the Diocese
+      in the State of Para (North).
+  notes: >-
+    Local: Diocese do Pará (Norte). Início segundo o mandato de sagração; fim em 2017 conforme outras fontes (saída
+    com grupo de clérigos para fundar a ICA).
 - jurisdiction: ica
   role: founder
   start: '2017'

@@ -6,6 +6,34 @@ sources:
 - source: cant-novas-igrejas-2024
   quote: Dom Paulo Sérgio Ferreira, Arcebispo Primaz da Igreja Anglicana Mundial no Brasil
   page: '129'
+ordinations:
+- order: diaconate
+  date: '2012-06-09'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: cont-wacbr-clerigos
+    quote: Ordenação Diaconal 09/06/2012 Ordenação Presbiteral 28/01/2018 Sagração Episcopal 15/12/2018
+- order: presbyterate
+  date: '2018-01-28'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: cont-wacbr-clerigos
+    quote: Ordenação Diaconal 09/06/2012 Ordenação Presbiteral 28/01/2018 Sagração Episcopal 15/12/2018
+- order: episcopate
+  date: '2018-12-15'
+  jurisdiction: wac-br
+  office: primate
+  status: probable
+  sources:
+  - source: cont-wacbr-clerigos
+    quote: Ordenação Diaconal 09/06/2012 Ordenação Presbiteral 28/01/2018 Sagração Episcopal 15/12/2018
+  notes: >-
+    Datas de diaconato (09/06/2012), presbiterato (28/01/2018) e episcopado (15/12/2018) do arcebispo primaz da
+    WAC no Brasil, autodeclaradas pelo site da província. Sagrante/jurisdição da época não informados (outras fontes
+    o põem na IATB c.2016, sem datas). Uma ordenação/sagração em 2018 antecede a fundação da província brasileira
+    (27/11/2020).
 affiliations:
 - jurisdiction: wac-br
   role: founder

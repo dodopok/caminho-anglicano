@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: hccar
+acronym: HCCAR
+name: >-
+  Holy Catholic Church Anglican Rite (Anglican Rite Catholic Church; Igreja Católica de Rito Anglicano)
+type: national_church
+country: US
+founded:
+  date: '1999'
+  sources:
+  - source: cont-wiki-hccar
+    quote: >-
+      The Holy Catholic Church Anglican Rite (HCCAR), also known as the Anglican Rite Catholic Church, is a body
+      of Christians in the Continuing Anglican movement.
+  - source: cont-wiki-hccar
+    quote: >-
+      By 1999, the dissenting bishops had separated into groups forming two new churches, the Holy Catholic Church
+      Western Rite
+website: https://holycatholicanglican.org
+description: >-
+  Corpo continuante anglo-católico dos EUA (Quakertown, PA), surgido da disputa sucessória de 1997 na ACC-OP; segundo
+  o site da IACC, tinha uma 'Província Católica de Rito Anglicano da América Latina' liderada por Cruz-Blanco, de
+  onde veio a sagração de James Roque. Distinta da TAC e da ACC.
+sources:
+- source: cont-wiki-hccar
+  quote: >-
+    The Holy Catholic Church Anglican Rite (HCCAR), also known as the Anglican Rite Catholic Church, is a body of
+    Christians in the Continuing Anglican movement.
+- source: cont-wiki-hccar
+  quote: >-
+    By 1999, the dissenting bishops had separated into groups forming two new churches, the Holy Catholic Church
+    Western Rite
+relations:
+- type: schism_from
+  target: acc
+  date: '1997'
+  led_by:
+  - thomas-justin-kleppinger
+  status: probable
+  sources:
+  - source: cont-wiki-hccar
+    quote: >-
+      In 1997, a succession dispute arose among the bishops of the ACC-OP, which led to the formation of the Holy
+      Catholic Church Anglican Rite.
+  - source: cont-wiki-hccar
+    quote: >-
+      the five dissenting bishops, Bishop Thomas J. Kleppinger, Bishop McNeley, Bishop Seeland, Bishop Leslie Hamlett
+      and Bishop Victor Cruz-Blanco, met as another synod in Allentown, Pennsylvania
+  notes: >-
+    Wikipédia (terciária) data a origem em 1997–1999 (infobox: 1999). Sigla ACC aqui = Anglican Catholic Church
+    (Província Original / ACC-OP).

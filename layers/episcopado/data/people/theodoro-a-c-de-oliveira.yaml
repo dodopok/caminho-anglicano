@@ -17,14 +17,29 @@ ordinations:
 - order: episcopate
   date: '2015-02-09'
   place: Santuário Theodoro Mártir, Barra Funda, Votorantim (SP)
-  jurisdiction: dav
+  jurisdiction: pcra-al
   office: diocesan
   principal_consecrator: victor-manuel-cruz-blanco
   co_consecrators:
   - james-antonio-roque
   - rafael-ribeiro-campos
-  status: contested
+  status: confirmed
   sources:
+  - source: cont-gazeta-votorantim-2015-02-09
+    quote: >-
+      O Ordenante principal será Dom Victor Manuel Cruz-Blanco, Arcebispo Metropolitano da Província Católica de
+      Rito Anglicano da Colômbia; e os Co-ordenantes serão Dom James Roque, Bispo Diocesano da Diocese Anglicana
+      do Japi, de Jundiaí, e Dom Rafael Ribeiro Campos, Abade Nullius da Abadia Cistercience S. Raphael, de Aparecida
+      de Goiânia/ GO.
+  - source: cont-gazeta-votorantim-2015-02-18
+    quote: >-
+      O Monsenhor Theodoro A.C. de Oliveira foi ordenado na noite da última segunda-feira (9) bispo da Diocese Anglicana
+      Santa Mãe de Deus Votorantim.
+  - source: cont-gazeta-votorantim-2015-02-18
+    quote: >-
+      Participaram da ordenação o Arcebispo Metropolitano da Província Católica de Rito Anglicano da Colômbia Dom
+      Victor Manuel Cruz-Blanco, o Bispo da Diocese Anglicana do Japi, da cidade de Jundiaí, Dom James Roque e o
+      Abade Nullius da Abadia Cistercience S. Raphael, de Aparecida de Goiânia/ GO Dom Rafael Ribeiro Campos.
   - source: costa2021
     quote: >-
       O Monsenhor Theodoro A. C. de Oliveira foi ordenado na noite da última segunda-feira (9) bispo da Diocese
@@ -97,6 +112,11 @@ ordinations:
         Campos, abade da Abadia Cisterciense S. Raphael.
       page: '154'
   notes: >-
+    Imprensa local de época (Gazeta de Votorantim, 09/02/2015 e 18/02/2015): o anúncio identifica Cruz-Blanco como
+    'Ordenante principal' e Roque e Campos como co-ordenantes; o relato posterior diz que eles 'participaram'. O
+    título: 'Bispo Titular de Julinensis e Bispo da Diocese Anglicana Santa Mãe de Deus Votorantim'. A imprensa
+    descreve Cruz-Blanco como 'Arcebispo Metropolitano da Província Católica de Rito Anglicano da Colômbia' — mesma
+    'Província Católica de Rito Anglicano' que, segundo o site da IACC e o da província, sagrou Roque em 2013 (PCRA-AL).
     Costa cita reportagem (GOUVEA, 18 fev. 2015). 'Segunda-feira (9)' em fevereiro de 2015 = 9/2/2015. A fonte diz
     que os três 'participaram'; a ordem sugere Cruz-Blanco como principal, sem confirmação. 'Rafael Ribeiro Campos'
     pode ter relação com Raniere Ribeiro Campos, ex-bispo da IECB — NÃO verificado. CONTESTADO: jurisdicoes-menores.json
@@ -149,6 +169,30 @@ affiliations:
       primaz dom Theodoro Oliveira.
     page: '77'
 events:
+- type: other
+  date: '2015-08-15'
+  description: >-
+    Decreto de 15/08/2015 da Província Católica de Rito Anglicano de América Latina (Iglesia Anglicana del Caribe
+    y la Nueva Granada), assinado por Victor Manuel Cruz Blanco (Barranquilla) e pelo chanceler Enrique Jiménez
+    Sarta, que desmembra da diocese do JAPI-Jundiaí/SP o território da 'Diocese Católica Anglicana Santa Mãe de
+    Deus' (Votorantim/SP), com Theodoro Oliveira como bispo ordinário do Brasil. A página do site da província diz
+    que o decreto elevou Theodoro a bispo ordinário e que 'Brasil ya cuenta con dos diócesis ordinarias y dos obispos
+    ordinarios con el obispo James Roque, ordinario de Jundiá'.
+  status: probable
+  sources:
+  - source: cont-pciacng-theodoro
+    quote: >-
+      La Sede Metropolitana De La Provincia Catolica De Rito Anglicano De America Latina, Elevo Al Obispo Monseñor
+      Theodoro Oliveira A Obispo Ordinario De La Diócesis Catolica Anglicana Santa Madre De Dios.
+  - source: cont-pciacng-theodoro
+    quote: >-
+      El Decrero Correspondinte Fue Emirido Por El Arzobispo Metropolitano , Su Gracia Victor Cruz Blanco Y Fue
+      Notarizado Por La Curia Metropolitana Con La Firma Del Canciller De La Provincia De America Latina , Obispo
+      Enrique Jiménez Sarta.
+  - source: cont-pciacng-theodoro
+    quote: >-
+      Con Esta Nueva Situación Brasil Ya Cuenta Con Dos Diócesis Ordinaria Y Y Dos Obispos Ordinarios Con El Obispo
+      James Roque, Ordinario De Jundia, Sao Paulo. Brasil.
 - type: other
   date: '2015'
   description: >-
