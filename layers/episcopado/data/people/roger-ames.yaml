@@ -23,7 +23,7 @@ ordinations:
   jurisdiction: cana
   office: suffragan
   principal_consecrator: peter-akinola
-  status: contested
+  status: probable
   sources:
   - source: ta-2007-09-13-cana
     quote: >-
@@ -47,32 +47,6 @@ ordinations:
     quote: >-
       In December 2007, [[Roger Ames]], the rector of St. Luke's Anglican Church in [[Akron, Ohio]], received his
       ordination and consecration as suffragan bishop of CANA.
-  - source: iab-poster-linhagem-uchoa
-    quote: >-
-      Em 2011, também consagrou Roger Copeland Ames como primeiro bispo da Diocese Anglicana dos Grandes Lagos (ver
-      162a)
-  discrepancies:
-  - field: date
-    value: '2011'
-    sources:
-    - source: iab-poster-linhagem-uchoa
-      quote: >-
-        Em 2011, também consagrou Roger Copeland Ames como primeiro bispo da Diocese Anglicana dos Grandes Lagos
-        (ver 162a)
-  - field: jurisdiction
-    value: acna
-    sources:
-    - source: iab-poster-linhagem-uchoa
-      quote: >-
-        Em 2011, também consagrou Roger Copeland Ames como primeiro bispo da Diocese Anglicana dos Grandes Lagos
-        (ver 162a)
-  - field: principal_consecrator
-    value: robert-duncan
-    sources:
-    - source: iab-poster-linhagem-uchoa
-      quote: >-
-        Em 2011, também consagrou Roger Copeland Ames como primeiro bispo da Diocese Anglicana dos Grandes Lagos
-        (ver 162a)
   notes: >-
     CORRIGIDO: o pôster diz que Duncan "em 2011 também consagrou Roger Copeland Ames como primeiro bispo da Diocese
     Anglicana dos Grandes Lagos". Ames já era bispo desde 9/12/2007 (sufragâneo da CANA, Igreja da Nigéria); em
@@ -93,4 +67,10 @@ affiliations:
     quote: >-
       with Ames being installed as their first bishop at 30 April 2011, at the diocese annual convention in Akron.
       He would be in office until 2016
-  notes: Instalação, não sagração.
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      Em 2011, também consagrou Roger Copeland Ames como primeiro bispo da Diocese Anglicana dos Grandes Lagos (ver
+      162a)
+  notes: >-
+    Instalação, não sagração. O pôster diz que Duncan o 'consagrou' em 2011, mas Ames já era bispo desde 9/12/2007
+    (sufragâneo da CANA); em 2011 foi instalado como primeiro bispo diocesano dos Grandes Lagos (ACNA).

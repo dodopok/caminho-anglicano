@@ -185,7 +185,7 @@ relations:
   date: 2018-05
   led_by:
   - miguel-uchoa
-  status: contested
+  status: probable
   sources:
   - source: iab-comunicado-oficial-2018
     quote: >-
@@ -200,20 +200,11 @@ relations:
     quote: >-
       Ordinary members of the GSFA not part of the Anglican Communion: Anglican Church in North America (ACNA) Anglican
       Church in Brazil
-  discrepancies:
-  - field: date
-    value: 2026-01
-    sources:
-    - source: gsfa-2026-01-communique
-      quote: The Most Rev Miguel Uchoa Primate of the Anglican Church in Brazil
-    - source: iarccum-gsfa
-      quote: >-
-        Ordinary members of the GSFA not part of the Anglican Communion: Anglican Church in North America (ACNA)
-        Anglican Church in Brazil
   notes: >-
     Uchôa assina como primaz o comunicado dos Primazes do GSFA (Seychelles, jan/2026). IARCCUM lista a IAB como
     'ordinary member' não pertencente à Comunhão. A data de início como membro pleno não foi encontrada (o comunicado
-    da IAB de 02/06/2018 diz que foram 'recebidos no Movimento Sul Global').
+    da IAB de 02/06/2018 diz que foram 'recebidos no Movimento Sul Global'). As fontes de 2026 só atestam a condição
+    de membro naquela data; não dão o início.
 - type: in_communion_with
   target: acna
   date: '2018'
@@ -252,7 +243,7 @@ relations:
   date: 2019-10
   led_by:
   - miguel-uchoa
-  status: contested
+  status: probable
   sources:
   - source: ai-2019-10-15-seventh-trumpet
     quote: >-

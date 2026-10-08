@@ -23,52 +23,12 @@ ordinations:
   date: '2014'
   jurisdiction: icf
   principal_consecrator: emmanuel-milingo
-  status: contested
+  status: probable
   sources:
   - source: cant-novas-igrejas-2024
     quote: >-
       Em 2014, Ronaldo foi sagrado bispo por dom Emmanuel Milingo – bispo católico independente –, servindo na Igreja
       da Fé.
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      A primeira ocorreu dois anos após a sagração de Ronaldo Melo, em 18 de novembro de 2018, para ser o novo bispo
-      da então Diocese Anglicana no Brasil
-    page: '96'
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      Em 18 de novembro de 2018, o bispo Ronaldo Melo foi elevado ao episcopado da então criada Diocese Anglicana
-      no Brasil, a nova jurisdição da Catedral Anglicana de São Paulo.
-    page: '103'
-  discrepancies:
-  - field: date
-    value: '2018-11-18'
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        A primeira ocorreu dois anos após a sagração de Ronaldo Melo, em 18 de novembro de 2018, para ser o novo
-        bispo da então Diocese Anglicana no Brasil
-      page: '96'
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Em 18 de novembro de 2018, o bispo Ronaldo Melo foi elevado ao episcopado da então criada Diocese Anglicana
-        no Brasil, a nova jurisdição da Catedral Anglicana de São Paulo.
-      page: '103'
-  - field: jurisdiction
-    value: danb
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        A primeira ocorreu dois anos após a sagração de Ronaldo Melo, em 18 de novembro de 2018, para ser o novo
-        bispo da então Diocese Anglicana no Brasil
-      page: '96'
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Em 18 de novembro de 2018, o bispo Ronaldo Melo foi elevado ao episcopado da então criada Diocese Anglicana
-        no Brasil, a nova jurisdição da Catedral Anglicana de São Paulo.
-      page: '103'
-  notes: >-
-    O livro fala em 'sagração' (p. 96) e 'elevado ao episcopado' (p. 103), embora Ronaldo já tivesse sido sagrado
-    em 2014 por Milingo; sagrantes não citados. Pode ter sido sagração sub conditione ou apenas posse.
 affiliations:
 - jurisdiction: danb
   role: bishop
@@ -79,12 +39,24 @@ affiliations:
   sources:
   - source: cant-novas-igrejas-2024
     quote: >-
+      A primeira ocorreu dois anos após a sagração de Ronaldo Melo, em 18 de novembro de 2018, para ser o novo bispo
+      da então Diocese Anglicana no Brasil
+    page: '96'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 18 de novembro de 2018, o bispo Ronaldo Melo foi elevado ao episcopado da então criada Diocese Anglicana
+      no Brasil, a nova jurisdição da Catedral Anglicana de São Paulo.
+    page: '103'
+  - source: cant-novas-igrejas-2024
+    quote: >-
       O bispo Ronaldo atuou nas paróquias Nossa Senhora da Rosa Mística e Nossa Senhora Desatadora dos Nós, no Sul
       de Minas, em Machado e Poços de Caldas.
     page: '103'
   notes: >-
-    'pouco tempo depois de sagrado, e meses antes do início da Pandemia, dom Ronaldo saiu da Catedral Anglicana
-    de São Paulo' (p. 103).
+    O livro fala em 'sagração' (p. 96) e 'elevado ao episcopado da então criada Diocese' (p. 103), mas Ronaldo já
+    fora sagrado em 2014 por Milingo; tratado como posse como bispo da DAnB. Não há fonte para uma sagração sub
+    conditione nem sagrantes em 2018. 'pouco tempo depois de sagrado, e meses antes do início da Pandemia, dom Ronaldo
+    saiu da Catedral Anglicana de São Paulo' (p. 103).
 - jurisdiction: icf
   role: founder
   start: c.2014
