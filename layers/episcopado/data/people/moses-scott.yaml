@@ -30,10 +30,10 @@ sources:
 ordinations:
 - order: episcopate
   date: '1961-11-12'
-  place: Cathedral Church of St. George, Freetown (Serra Leoa)
+  place: Catedral de São Jorge (Cathedral Church of St. George), Freetown, Serra Leoa
   jurisdiction: province-of-west-africa
   office: diocesan
-  status: contested
+  status: confirmed
   sources:
   - source: ia-gc-journal-1964
     quote: >-
@@ -52,19 +52,6 @@ ordinations:
     quote: The Venerable Moses Nathan- iel Christopher Omobiala Scott, former Archdeacon of Bonthe and Bo
   - source: whoswho-1962
     quote: SIERRA  LEONE,  Bishop  of,  since  1961; Rt.  Rev.  Moses  Natfianael  Christopher Otnobiala  Scott
-  discrepancies:
-  - field: place
-    value: Catedral de São Jorge (Cathedral Church of St. George), Freetown, Serra Leoa
-    sources:
-    - source: gc-journal-1964
-      quote: >-
-        June 1, 1964—Received notice from Cecil John, Archbishop of West Africa, of the consecration of: the Ven.
-        Moses Nathaniel Christophe Omobiala Scott, Dip. Th., as Bishop of Sierra Leone, on November 12, 1961, in
-        the Cathedral Church of St. George, Freetown, Sierra Leone;
-    - source: anglican-digest-1961-winter
-      quote: The Venerable Moses Nathan- iel Christopher Omobiala Scott, former Archdeacon of Bonthe and Bo
-    - source: whoswho-1962
-      quote: SIERRA  LEONE,  Bishop  of,  since  1961; Rt.  Rev.  Moses  Natfianael  Christopher Otnobiala  Scott
   notes: >-
     Reconfirma data e local (já em sucessao-lacunas.json). O sagrante continua não nomeado nas fontes vistas (Journal
     1964, obituário no Church Times 1988, Times 20/09/1961 "No date has been fixed for the consecration"). DATA

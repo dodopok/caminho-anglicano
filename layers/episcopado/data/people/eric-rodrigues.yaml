@@ -88,10 +88,8 @@ ordinations:
   - flavio-soares
   - marcio-simoes
   - miguel-uchoa
-  status: contested
+  status: confirmed
   sources:
-  - source: reb-calendario-2026
-    quote: 08/05/2023 – Sagração Episcopal • Bispo Eric
   - source: eshoje-eric-2023
     quote: O rito de sagração do Bispo Eric Rodrigues aconteceu no último dia 8 de maio, em Vitória
   - source: anglicanismo-visita-2023
@@ -106,20 +104,8 @@ ordinations:
     quote: Sagração Bispo Eric Rodrigues
   - source: eshoje-eric-2023
     quote: teve seu rito de sagração a Bispo Auxiliar realizado no último dia 8 de maio
-  discrepancies:
-  - field: place
-    value: Vitória, ES
-    sources:
-    - source: anglicanismo-visita-2023
-      quote: >-
-        A sagração foi conduzida pelo Bispo Márcio Meira, em conjunto com o Bispo Primaz Miguel Uchoa e os bispos
-        Márcio Simões e Claudio Adair.
-    - source: eshoje-eric-2023
-      quote: O rito de sagração do Bispo Eric Rodrigues aconteceu no último dia 8 de maio, em Vitória
-    - source: gafconpt-eric-2023
-      quote: >-
-        A Igreja Anglicana no Brasil consagrou um novo bispo na semana passada. O Rev. Eric Rodrigues é agora bispo
-        auxiliar da Diocese de João Pessoa.
+  - source: reb-calendario-2026
+    quote: 08/05/2023 – Sagração Episcopal • Bispo Eric
   notes: >-
     Data e local confirmados por 2 fontes independentes; sagrantes por uma só (anglicanismo.com.br, que escreve
     "Claudio Adair" — quase certamente Flávio Adair). O GAFCON (23/05/2023) diz "na semana passada", o que não bate
