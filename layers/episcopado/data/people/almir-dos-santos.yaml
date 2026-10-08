@@ -70,6 +70,12 @@ affiliations:
   end: 2002-12
   status: probable
   sources:
+  - source: lib-aj-1999-06
+    quote: The bishop, Almir dos Santos, a gentle, gracious man, says his priorities are ecumenism and mission.
+  - source: ieab-brasilia-40
+    quote: >-
+      homenageou os primeiros bispos, Agostinho Soria e Almir dos Santos, pela dedicação à instalação e expansão
+      missionária da Diocese.
   - source: wp-pt-dioc-brasilia
     quote: Almir dos Santos - abril de 1988 a dezembro de 2002;
   - source: costa2021
@@ -87,7 +93,10 @@ affiliations:
   - source: costa2021
     quote: Diocese Anglicana de Brasília, sucedendo a Almir dos Santos.
     page: '107'
-  notes: Sagrado so em 09/04/1989. Anexo D da tese (bispos por diocese).
+  notes: >-
+    Em reportagem de junho de 1999 o Anglican Journal o descreve como bispo de Brasília (diocese com duas paróquias,
+    dez missões e cinco presbíteros, sendo apenas dois em tempo integral). Em 2025 a Diocese o homenageou, com Agostinho
+    Sória, como um dos primeiros bispos. Sagrado so em 09/04/1989. Anexo D da tese (bispos por diocese).
   discrepancies:
   - field: start
     value: '1989'
@@ -134,6 +143,17 @@ affiliations:
     quote: Distrito Missionário do Oeste, do qual Almir ficou encarregado durante três anos.
   notes: Datas nao informadas.
 - jurisdiction: ieab
+  role: other
+  role_description: bispo_emerito
+  diocese: ieab-dab
+  status: probable
+  sources:
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Almir dos Santos, Emérito
+  notes: >-
+    Página da Secretaria Geral, atualizada em 13 de março de 2026, que o lista entre os eméritos sem indicação de
+    falecimento.
+- jurisdiction: ieab
   role: bishop
   diocese: ieab-dmo
   status: probable
@@ -152,6 +172,37 @@ events:
   sources:
   - source: ec-2017-04
     quote: Clóvis Ro- drigues, Almir dos Santos e Celso Franco (eméritos)
+- type: other
+  date: '1988-10-12'
+  description: >-
+    Eleição de Almir dos Santos, reitor da Paróquia de Jesus Cristo (Erechim), como bispo da Diocese Missionária
+    de Brasília pelo 23º Sínodo da Igreja Episcopal do Brasil, reunido em Porto Alegre, na quarta votação. Outros
+    candidatos: Patricia Ann Powers, Jorge Macedo e Glauco Soares de Lima, então reitor de uma igreja em São Paulo.
+    A sagração era prevista para março de 1989 em Brasília.
+  status: probable
+  sources:
+  - source: ens-88234d
+    quote: >-
+      On October 12, the 23rd Synod of the Episcopal Church of Brazil, meeting at Porto Allegre, elected the Rev.
+      Almir dos Santos, rector of Jesus Christ parish in Erechim, Brazil, bishop of the missionary diocese of Brasilia.
+  - source: ens-88234d
+    quote: >-
+      The other candidates were the Rev. Patricia Ann Powers, a missionary from the United States working in Brasilia,
+      the Rev. Jorge Macedo, rector of a church in Rio de Janeiro, and the Rev. Glauco Soares de Lima, rector of
+      a church in Sao Paulo.
+  - source: ens-88234d
+    quote: The consecration of Bishop-elect Almir dos Santos will take place in Brasilia in March 1989.
+- type: other
+  date: '1973'
+  description: >-
+    O Rev. Almir dos Santos integrou a Comissão de Estudos da Ordenação Feminina criada pelo Sínodo de 1973 (presidida
+    pelo bispo primaz Arthur Rodolpho Kratz); depois foi substituído pelo deão Marçal Lopes de Oliveira.
+  status: probable
+  sources:
+  - source: lib-kick-minfem
+    quote: >-
+      A comissão era formada por Dom Arthur R. Kratz, bispo primaz, Rev. Henrique Todt Jr, Rev. Laudelino Correia
+      Gusmão, Rev. Almir dos Santos (depois substituído pelo Deão Marçal Lopes de Oliveira)
 - type: other
   date: '1988'
   description: Eleito pelo Sínodo bispo missionário de Brasília, na quarta votação

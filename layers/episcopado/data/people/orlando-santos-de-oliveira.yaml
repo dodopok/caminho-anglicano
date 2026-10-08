@@ -141,50 +141,6 @@ affiliations:
     foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
     pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab
-  role: primate
-  start: '2003'
-  end: 2006-07
-  status: confirmed
-  sources:
-  - source: drv-pronunciamento-ieab-2005
-    quote: Dom Orlando Santos de Oliveira, Primaz
-  - source: wp-en-ieab
-    quote: Orlando Santos de Oliveira, 2003—2006
-  - source: costa2021
-    quote: >-
-      a primazia passou das mãos do bispo Glauco para o bispo Orlando Santos de Oliveira, da Diocese Meridional,
-      que ficou no cargo entre
-  - source: costa2021
-    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 2003-2006 – Orlando Santos de Oliveira
-    page: 523-524
-  - source: costa2021
-    quote: >-
-      primazia passou das mãos do bispo Glauco para o bispo Orlando Santos de Oliveira, da Diocese Meridional, que
-      ficou no cargo entre 2003 e 2006.
-    page: '107'
-  - source: costa2021
-    quote: O bispo Orlando também foi Primaz da IEAB de 2003 a 2009
-    page: '104'
-  - source: costa2021
-    quote: o Bispo Primaz da IEAB – Orlando Santos de Oliveira –
-    page: '214'
-  - source: costa2021
-    quote: D. Orlando Santos de Oliveira Bispo Primaz
-    page: '224'
-  notes: >-
-    Signatário da carta da Câmara dos Bispos da IEAB ao arcebispo de Cantuária (Brasília, 14/11/2005); data de início
-    do cargo não é informada. Citado nesse cargo em documento de 14/11/2005. Anexo E da tese (primazes da IEAB).
-    A nota 96 diz Primaz 'de 2003 a 2009'; o texto (p. 107) diz 2003-2006 e Maurício Andrade foi eleito Primaz em
-    julho de 2006. Versão da nota 96; ver afirmação 2003-2006. Primaz em 2004-2005; decretou a deposição de Robinson
-    em Porto Alegre, 10/06/2005.
-  discrepancies:
-  - field: end
-    value: '2009'
-    sources:
-    - source: costa2021
-      quote: O bispo Orlando também foi Primaz da IEAB de 2003 a 2009
-      page: '104'
-- jurisdiction: ieab
   role: other
   role_description: bispo diocesano interino
   diocese: ieab-dab
@@ -206,6 +162,60 @@ affiliations:
   sources:
   - source: wp-pt-dioc-brasilia
     quote: Orlando Santos de Oliveira (Interino) - junho a agosto de 2003;
+- jurisdiction: ieab
+  role: primate
+  start: '2003-06-01'
+  end: 2006-07
+  status: confirmed
+  sources:
+  - source: drv-pronunciamento-ieab-2005
+    quote: Dom Orlando Santos de Oliveira, Primaz
+  - source: wp-en-ieab
+    quote: Orlando Santos de Oliveira, 2003—2006
+  - source: costa2021
+    quote: >-
+      a primazia passou das mãos do bispo Glauco para o bispo Orlando Santos de Oliveira, da Diocese Meridional,
+      que ficou no cargo entre
+  - source: lib-acns-3459
+    quote: >-
+      The General Synod of the Anglican Episcopal Church of Brazil elected the Rt Revd Orlando Oliveira, bishop
+      of Southern Diocese as its new Primate Bishop, succeeding the Most Revd Glauco Soares de Lima.
+  - source: lib-acns-3459
+    quote: >-
+      The enthronement of new archbishop took place on 1 June 2003 at the National Cathedral in Porto Alegre, which
+      is also the see City of Southern Diocese.
+  - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 2003-2006 – Orlando Santos de Oliveira
+    page: 523-524
+  - source: costa2021
+    quote: >-
+      primazia passou das mãos do bispo Glauco para o bispo Orlando Santos de Oliveira, da Diocese Meridional, que
+      ficou no cargo entre 2003 e 2006.
+    page: '107'
+  - source: costa2021
+    quote: O bispo Orlando também foi Primaz da IEAB de 2003 a 2009
+    page: '104'
+  - source: costa2021
+    quote: o Bispo Primaz da IEAB – Orlando Santos de Oliveira –
+    page: '214'
+  - source: costa2021
+    quote: D. Orlando Santos de Oliveira Bispo Primaz
+    page: '224'
+  notes: >-
+    Signatário da carta da Câmara dos Bispos da IEAB ao arcebispo de Cantuária (Brasília, 14/11/2005); data de início
+    do cargo não é informada. Citado nesse cargo em documento de 14/11/2005. Data da entronização como primaz (1º
+    de junho de 2003), anunciada pelo ACNS em 4 de junho de 2003. Em 20 de maio de 2003 o ACNS já o descrevia como
+    bispo da Diocese Meridional, anfitrião da Reunião dos Primazes. Anexo E da tese (primazes da IEAB). A nota 96
+    diz Primaz 'de 2003 a 2009'; o texto (p. 107) diz 2003-2006 e Maurício Andrade foi eleito Primaz em julho de
+    2006. Versão da nota 96; ver afirmação 2003-2006. Primaz em 2004-2005; decretou a deposição de Robinson em Porto
+    Alegre, 10/06/2005.
+  discrepancies:
+  - field: end
+    value: '2009'
+    sources:
+    - source: costa2021
+      quote: O bispo Orlando também foi Primaz da IEAB de 2003 a 2009
+      page: '104'
 events:
 - type: other
   date: '2004-09-16'

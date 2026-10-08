@@ -8,6 +8,7 @@ aliases:
 - Dom Glauco Soares
 - Glauco Soares
 - Glauco Soares Lima
+- Glauco Soares di Lima
 - LIMA, GLAUCO SOARES de
 - bispo Glauco
 - dom Glauco
@@ -248,7 +249,8 @@ affiliations:
 - jurisdiction: ieab
   role: primate
   start: '1993'
-  end: '2003'
+  end: 2003-06
+  end_reason: retirement
   status: confirmed
   sources:
   - source: costa2021
@@ -261,6 +263,10 @@ affiliations:
     quote: Bispo Primaz do Brasil de 1993 – 2003.
   - source: sinopse-2003
     quote: '**1994** - Novo Primaz: Glauco Soares de Lima.'
+  - source: lib-acns-3444
+    quote: they have come in particular to honour the retiring Primate, the Most Revd Glauco Soares di Lima.
+  - source: lib-acns-3459
+    quote: after the retirement of Archbishop Glauco, who served for ten years as primate
   - source: kickhofel-1995
     quote: >-
       O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1994 - Glauco Soares
@@ -273,9 +279,10 @@ affiliations:
     quote: pelo Primaz, Glauco Soares de Lima
     page: '186'
   notes: >-
-    Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94). O livro dá só o início de cada primado; o fim é
-    o início do primado seguinte. Anexo E da tese (primazes da IEAB). Primaz em outubro de 1997. Também foi um dos
-    interinos à frente da DAR (2004-2006).
+    Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94). Em maio de 2003 a Reunião dos Primazes, em Gramado
+    (RS), homenageou o primaz que se aposentava; a entronização do sucessor ocorreu em 1º de junho de 2003. O livro
+    dá só o início de cada primado; o fim é o início do primado seguinte. Anexo E da tese (primazes da IEAB). Primaz
+    em outubro de 1997. Também foi um dos interinos à frente da DAR (2004-2006).
   discrepancies:
   - field: start
     value: '1994'
@@ -467,6 +474,26 @@ events:
     quote: >-
       o ex-Primaz Glauco Soares de Lima, afirmou que a Sentença de Deposição não foi uma decisão objetiva do Superior
       Tribunal Eclesiástico, mas o resultado da influência de um “discurso inflamado” do Bispo Sufragâneo do Recife
+- type: other
+  date: '1988-10-12'
+  description: >-
+    Eleição de Almir dos Santos, reitor da Paróquia de Jesus Cristo (Erechim), como bispo da Diocese Missionária
+    de Brasília pelo 23º Sínodo da Igreja Episcopal do Brasil, reunido em Porto Alegre, na quarta votação. Outros
+    candidatos: Patricia Ann Powers, Jorge Macedo e Glauco Soares de Lima, então reitor de uma igreja em São Paulo.
+    A sagração era prevista para março de 1989 em Brasília.
+  status: probable
+  sources:
+  - source: ens-88234d
+    quote: >-
+      On October 12, the 23rd Synod of the Episcopal Church of Brazil, meeting at Porto Allegre, elected the Rev.
+      Almir dos Santos, rector of Jesus Christ parish in Erechim, Brazil, bishop of the missionary diocese of Brasilia.
+  - source: ens-88234d
+    quote: >-
+      The other candidates were the Rev. Patricia Ann Powers, a missionary from the United States working in Brasilia,
+      the Rev. Jorge Macedo, rector of a church in Rio de Janeiro, and the Rev. Glauco Soares de Lima, rector of
+      a church in Sao Paulo.
+  - source: ens-88234d
+    quote: The consecration of Bishop-elect Almir dos Santos will take place in Brasilia in March 1989.
 - type: other
   date: '2013-04-19'
   description: >-

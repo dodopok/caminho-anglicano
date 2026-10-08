@@ -70,10 +70,18 @@ ordinations:
     quote: >-
       Sua sagração episcopal, em 8 de abril de 2000, ocorreu na Catedral Metropolitana de Santa Maria, cedida por
       Dom Ivo Lorscheiter.
+  - source: lib-aj-2000-09
+    quote: >-
+      One sign of ecumenical co-operation was the recent consecration of a new suffragan bishop in Santa Maria.
+      At the invitation of the Roman Catholic bishop, the new bishop was consecrated in front of 1,000 people at
+      the much larger Catholic cathedral.
   notes: >-
-    Presenca da bispa Barbara Harris (TEC) registrada; sagrante principal nao informado nas fontes lidas. A tese
-    NÃO nomeia sagrante principal nem co-sagrantes; menciona a participação de representantes de outras Províncias,
-    'como a bispa Barbara Harris' (Igreja Episcopal dos EUA), sem dizer que impôs as mãos.
+    Presenca da bispa Barbara Harris (TEC) registrada; sagrante principal nao informado nas fontes lidas. O Anglican
+    Journal de setembro de 2000 não nomeia o consagrado; a identificação com Naudal Alves Gomes (sufragâneo da Diocese
+    Sul-Ocidental, Santa Maria, 2000) decorre de outras fontes sobre a diocese. A matéria confirma o local (catedral
+    católica, com cerca de mil pessoas, a convite do bispo católico) porque a catedral anglicana comporta apenas
+    150. A tese NÃO nomeia sagrante principal nem co-sagrantes; menciona a participação de representantes de outras
+    Províncias, 'como a bispa Barbara Harris' (Igreja Episcopal dos EUA), sem dizer que impôs as mãos.
 affiliations:
 - jurisdiction: ieab
   role: bishop
@@ -215,3 +223,26 @@ affiliations:
   notes: >-
     Local: St. Mark's Episcopal Church, Van Nuys, Diocese of Los Angeles. Bispo emérito da IEAB servindo como bispo
     interino encarregado de uma paróquia da Episcopal Church (EUA); data não informada na página.
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_emerito
+  diocese: ieab-dapar
+  status: probable
+  sources:
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Naudal Alves Gomes, Emérito
+  notes: >-
+    Página da Secretaria Geral, atualizada em 13 de março de 2026, que o lista entre os eméritos sem indicação de
+    falecimento.
+events:
+- type: other
+  date: 1985-05
+  description: >-
+    Naudal Alves Gomes, então presbítero, foi o apresentador de sua irmã Carmen Etel Alves Gomes na ordenação como
+    primeira diácona da IEAB, em Santana do Livramento (RS), com mais de 300 presentes.
+  status: probable
+  sources:
+  - source: lib-ens-85197
+    quote: her brother, Naudal, is a priest and was her presenter. More than 300 people attended the ceremony.
+  - source: lib-diakoneo-1986
+    quote: She was ordained last May by Bishop Olavo Ventura Luiz of South Occidental diocese

@@ -58,9 +58,16 @@ ordinations:
       A sagração aconteceu em 19 de setembro de 1993, pelas mãos do bispo Sumio Takatsu e outros bispos da época.
   - source: sinopse-2003
     quote: '**1993** - Jubal Alves Neves (bispo de Santa Maria)'
+  - source: lib-aj-1994-01
+    quote: Recently | was in Brazil for the consecration of Jubal Neves as bishop of the diocese of the South
+  - source: lib-aj-2000-09
+    quote: Since he became bishop in 1993, about 20 new communities of Anglicans have sprung up
   notes: >-
-    Eleito no 45o Concilio Extraordinario da Diocese Sul-Ocidental para suceder Olavo Ventura Luiz. Co-sagrantes
-    descritos apenas como 'outros bispos da época'. Local não informado.
+    Eleito no 45o Concilio Extraordinario da Diocese Sul-Ocidental para suceder Olavo Ventura Luiz. Fontes canadenses
+    confirmam a sagração em 1993 (a coluna de janeiro de 1994 é de autor não identificado no trecho consultado,
+    que esteve presente à cerimônia); não informam dia, local nem sagrantes. Fontes brasileiras já indicam 19 de
+    setembro de 1993 e o bispo Sumio Takatsu como sagrante. Co-sagrantes descritos apenas como 'outros bispos da
+    época'. Local não informado.
 affiliations:
 - jurisdiction: ieab
   role: other
@@ -114,6 +121,33 @@ affiliations:
   notes: >-
     Anexo D da tese (bispos por diocese). Fim aproximado: coadjutor Francisco de Assis da Silva eleito em out. 2010
     e sagrado em mar. 2011.
+- jurisdiction: ieab
+  role: other
+  role_description: secretario_geral
+  end: '1993'
+  status: probable
+  sources:
+  - source: lib-ens-92126
+    quote: according to the Rev. Canon Jubal Pereira Neves, the church's provincial secretary
+  - source: lib-veja-1993-07
+    quote: diz o reverendo Jubal Neves, secretário-geral da Igreja no Brasil
+  - source: lib-wcc-handbook-1982
+    quote: 'General Secretary: Rev. Jubal Pereira Neves.'
+  notes: >-
+    Cônego e secretário provincial em maio de 1992; ainda secretário-geral em julho de 1993, dois meses antes da
+    sagração. A edição de 1982 do manual do Conselho Mundial de Igrejas já o lista como General Secretary, o que
+    sugere início anterior a 1983 (ano que outras fontes indicam) ou ano-base de coleta diferente.
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_emerito
+  diocese: ieab-dso
+  status: probable
+  sources:
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Jubal Neves, Emérito
+  notes: >-
+    Página da Secretaria Geral, atualizada em 13 de março de 2026, que o lista entre os eméritos sem indicação de
+    falecimento.
 events:
 - type: other
   date: '2010-10-25'
