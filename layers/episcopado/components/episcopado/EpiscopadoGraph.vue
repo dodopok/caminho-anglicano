@@ -48,7 +48,7 @@
 <script setup lang="ts">
 import type Graphology from 'graphology'
 import type Sigma from 'sigma'
-import type { Graph, GraphNode } from '../../lib/graph'
+import type { Graph, GraphEdge, GraphNode } from '../../lib/graph'
 import { EDGE_LABEL, JURISDICTION_TYPE_LABEL, ORDER_LABEL } from '../../lib/labels'
 import { CONTESTED_HALO, edgeAppearance, edgeGroup, nodeColor, type EdgeGroup } from '../../lib/style'
 
@@ -63,6 +63,8 @@ const props = withDefaults(defineProps<{
   groups: Record<EdgeGroup, boolean>
   showPeople: boolean
   showJurisdictions: boolean
+  /** false = só igrejas, províncias e comunhões; as ligações das dioceses sobem para a igreja. */
+  showDioceses: boolean
   /** 'brazil' = jurisdições brasileiras e seus bispos; 'all' = rede inteira. */
   scope: 'brazil' | 'all'
   /** Mostra zoom/enquadrar e a contagem sobre o grafo (o explorador os põe na barra de estado). */
@@ -167,9 +169,10 @@ function computeFocus() {
       // (diocese → província), senão a vizinhança vira a rede inteira.
       const hub = step > 0 && graph.getNodeAttribute(node, 'kind') === 'jurisdiction'
       graph.forEachEdge(node, (_edge, attrs, source, target) => {
-        if (attrs.halo || !props.groups[attrs.group as EdgeGroup]) return
+        if (attrs.halo || !props.groups[attrs.group as EdgeGroup] || !levelShown(attrs)) return
         if (hub && !(attrs.kind === 'part_of' && source === node)) return
         const other = source === node ? target : source
+        if (other !== props.selected && hiddenDiocese(graph.getNodeAttributes(other))) return
         if (!seen.has(other)) {
           seen.add(other)
           next.push(other)
@@ -181,10 +184,21 @@ function computeFocus() {
   focus = seen
 }
 
+/** Diocese escondida pelo interruptor "Dioceses". */
+function hiddenDiocese(attrs: Record<string, unknown>): boolean {
+  return !props.showDioceses && attrs.kind === 'jurisdiction' && !!attrs.diocesan
+}
+
+/** As cópias levadas para a igreja só valem com as dioceses ocultas (no lugar das originais). */
+function levelShown(data: Record<string, unknown>): boolean {
+  return !data.rollup || !props.showDioceses
+}
+
 function baseVisible(id: string, attrs: Record<string, unknown>): boolean {
   if (id === props.selected) return true
   if (attrs.kind === 'person' && !props.showPeople) return false
   if (attrs.kind === 'jurisdiction' && !props.showJurisdictions) return false
+  if (hiddenDiocese(attrs)) return false
   if (props.year !== null && typeof attrs.startYear === 'number' && attrs.startYear > props.year) return false
   if (focus) return focus.has(id)
   // Núcleo brasileiro: jurisdições no Brasil e os bispos ligados a elas.
@@ -195,7 +209,7 @@ function baseVisible(id: string, attrs: Record<string, unknown>): boolean {
 }
 
 function edgeShown(data: Record<string, unknown>, source: string, target: string): boolean {
-  if (!props.groups[data.group as EdgeGroup]) return false
+  if (!props.groups[data.group as EdgeGroup] || !levelShown(data)) return false
   if (props.year !== null && typeof data.year === 'number' && data.year > props.year) return false
   return visible.has(source) && visible.has(target)
 }
@@ -246,7 +260,7 @@ function relayout(animate: boolean) {
       sub.addNode(id, { x: o.x, y: o.y, size: graph.getNodeAttribute(id, 'size') })
     }
     graph.forEachEdge((_e, attrs, s, t) => {
-      if (!attrs.halo && visible.has(s) && visible.has(t) && !sub.hasEdge(s, t) && !sub.hasEdge(t, s)) sub.addEdge(s, t, { weight: LAYOUT_WEIGHT[attrs.group as EdgeGroup] ?? 1 })
+      if (!attrs.halo && levelShown(attrs) && visible.has(s) && visible.has(t) && !sub.hasEdge(s, t) && !sub.hasEdge(t, s)) sub.addEdge(s, t, { weight: LAYOUT_WEIGHT[attrs.group as EdgeGroup] ?? 1 })
     })
     if (sub.size > 0 && visible.size > WIDE_VIEW) {
       // Vista ampla (núcleo brasileiro): LinLog separa os aglomerados (igrejas e suas linhas de
@@ -341,6 +355,7 @@ onMounted(async () => {
   const graph: Graphology = new GraphCtorImport({ multi: true, type: 'directed' })
   const degree = new Map<string, number>()
   for (const e of props.graph.edges) {
+    if (e.rollup) continue
     degree.set(e.from, (degree.get(e.from) ?? 0) + 1)
     degree.set(e.to, (degree.get(e.to) ?? 0) + 1)
   }
@@ -364,6 +379,7 @@ onMounted(async () => {
         startYear: n.startYear,
         brazil: !!n.brazil,
         isolated: deg === 0,
+        diocesan: !!n.diocesan,
         info: nodeInfo(n),
         size: Math.min(18, (n.kind === 'jurisdiction' ? 5.5 : 3) + Math.sqrt(deg) * 1.4)
       })
@@ -371,7 +387,7 @@ onMounted(async () => {
   ring(jurisdictions, 60)
   ring(people, 140)
 
-  props.graph.edges.forEach((e, i) => {
+  const addEdge = (e: GraphEdge, i: number) => {
     if (!graph.hasNode(e.from) || !graph.hasNode(e.to)) return
     const group = edgeGroup(e.kind)
     const look = edgeAppearance(e.kind, e.status)
@@ -379,7 +395,7 @@ onMounted(async () => {
     const key = `e${i}`
     const label = [EDGE_SHORT[e.kind] ?? EDGE_LABEL[e.kind].toLowerCase(), e.year ? String(e.year) : '', look.label ? `· ${look.label}` : ''].filter(Boolean).join(' ')
     if (look.halo) {
-      graph.addEdgeWithKey(`h${i}`, e.from, e.to, { halo: true, parent: key, group, year: e.year, color: CONTESTED_HALO, size: size + HALO_EXTRA, type: 'line', zIndex: 0 })
+      graph.addEdgeWithKey(`h${i}`, e.from, e.to, { halo: true, parent: key, group, year: e.year, rollup: e.rollup, color: CONTESTED_HALO, size: size + HALO_EXTRA, type: 'line', zIndex: 0 })
     }
     graph.addEdgeWithKey(key, e.from, e.to, {
       kind: e.kind,
@@ -390,8 +406,13 @@ onMounted(async () => {
       size,
       label,
       type: group === 'affiliations' ? 'line' : 'arrow',
+      rollup: e.rollup,
       zIndex: 1
     })
+  }
+  // As cópias levadas para a igreja entram depois do layout global, para não puxar os nós duas vezes.
+  props.graph.edges.forEach((e, i) => {
+    if (!e.rollup) addEdge(e, i)
   })
 
   // Layout global: LinLog separa os aglomerados; a segunda passada evita sobreposição.
@@ -403,6 +424,9 @@ onMounted(async () => {
   fa2.assign(graph, {
     iterations: 120,
     settings: { ...inferred, barnesHutOptimize: false, scalingRatio: 20, gravity: 0.6, linLogMode: true, adjustSizes: true, edgeWeightInfluence: 0 }
+  })
+  props.graph.edges.forEach((e, i) => {
+    if (e.rollup) addEdge(e, i)
   })
   let minX = Infinity
   let minY = Infinity
@@ -541,7 +565,7 @@ onMounted(async () => {
 })
 
 watch(
-  () => [props.depth, props.year, props.showPeople, props.showJurisdictions, props.scope, props.groups.ordinations, props.groups.affiliations, props.groups.relations, props.selected],
+  () => [props.depth, props.year, props.showPeople, props.showJurisdictions, props.showDioceses, props.scope, props.groups.ordinations, props.groups.affiliations, props.groups.relations, props.selected],
   () => refresh(true)
 )
 

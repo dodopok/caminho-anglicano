@@ -3,6 +3,8 @@ import type { EdgeGroup } from '../lib/style'
 export interface ExplorerFilters {
   showPeople: boolean
   showJurisdictions: boolean
+  /** false = só igrejas, províncias e comunhões (as dioceses somem e suas ligações sobem para a igreja). */
+  showDioceses: boolean
   groups: Record<EdgeGroup, boolean>
   /** 'brazil' = só o núcleo brasileiro; 'all' = rede inteira. */
   scope: 'brazil' | 'all'
@@ -11,6 +13,7 @@ export interface ExplorerFilters {
 export const DEFAULT_FILTERS: ExplorerFilters = {
   showPeople: true,
   showJurisdictions: true,
+  showDioceses: true,
   groups: { ordinations: true, affiliations: true, relations: true },
   scope: 'brazil'
 }

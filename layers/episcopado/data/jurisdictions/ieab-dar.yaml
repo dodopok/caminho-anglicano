@@ -5,16 +5,12 @@ name: Diocese do Recife
 aliases:
 - Diocese Anglicana do Recife
 - Diocese Anglicana do Recife (IEAB)
-- Diocese Anglicana do Recife (administrador/bispo interino)
 - Diocese Anglicana do Recife (ex-Diocese Setentrional)
 - Diocese Anglicana do Recife (interino)
-- Diocese Anglicana do Recife (sufragâneo/auxiliar)
-- Diocese Anglicana do Recife (sufragâneo/auxiliar; 2ª Região Eclesiástica)
 - Diocese Setentrional
 - Diocese Setentrional (Recife)
 - Diocese Setentrional, Recife
 - Diocese do Recife (Setentrional)
-- Diocese do Recife – Catedral da Trindade
 type: diocese
 country: BR
 founded:
@@ -931,23 +927,3 @@ relations:
   - source: costa2021
     quote: Alguns meses depois, ocorreu a saída da reverenda Giselle Gomes, que auxiliava o deão.
     page: '247'
-- type: part_of
-  target: iecb
-  status: probable
-  sources:
-  - source: ptwiki-iecb
-    quote: A IECB segue a forma de governo episcopal, tendo como Bispo Primaz, o Arcebispo Paulo Ruiz Garcia.
-- type: part_of
-  target: diocese-anglicana-recife
-  status: probable
-  sources:
-  - source: wp-pt-evilasio
-    quote: responsável pela 2ª Região Eclesiástica (de Pernambuco ao Rio Grande do Sul)
-  - source: mu-blog-2012-07-22
-    quote: o Revmo Evilásio Tenório, Bispo sufraganeo (auxiliar) da DR
-  - source: g1-2012-02-29-velorio
-    quote: Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo líder da igreja
-  - source: gafcon-2017-anglican-renewal
-    quote: Bishop Flavio Adair Torres Soares, a suffragan bishop of the Anglican Church of Recife
-  - source: g1-2012-02-29-velorio
-    quote: pelos dois bispos auxiliares Flávio Aldair e Evilásio Tenório
