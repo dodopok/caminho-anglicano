@@ -1,6 +1,26 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jeane-simoes
 name: Jeane Simões
+aliases:
+- Jeane de Lima Simões
+biography: >-
+  Diácona ordenada em 19/05/2023 na Catedral Ressurreição (Vitória de Santo Antão-PE); esposa do bispo Márcio Simões.
+sources:
+- source: iabord-yt-nudrgezuuho
+  quote: ORDENAÇÃO DIACONAL || 19/05
+ordinations:
+- order: diaconate
+  date: '2023-05-19'
+  place: Catedral Anglicana Ressurreição, Vitória de Santo Antão (PE)
+  jurisdiction: iab
+  status: confirmed
+  sources:
+  - source: iabord-yt-nudrgezuuho
+    quote: 'Ordenação Diaconal de: JEANE DE LIMA SIMÕES FERNANDO ZARZAR PINHEIRO'
+  notes: >-
+    Completa a lacuna ('ordenação não datada'): Jeane Simões, hoje Revda. na Catedral Ressurreição e esposa do bispo
+    Márcio Simões, foi ordenada diácona em 19/05/2023 (data no título; transmissão ao vivo de 19/05/2023). Ordenante
+    não nomeado.
 affiliations:
 - jurisdiction: iab
   role: clergy

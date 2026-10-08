@@ -19,14 +19,19 @@ sources:
 ordinations:
 - order: diaconate
   date: '2015-12-04'
-  place: Sínodo da Diocese do Recife (Recife/Jaboatão dos Guararapes-PE)
-  jurisdiction: iacs
-  status: probable
+  place: Paróquia Anglicana Jardim das Oliveiras, Boa Viagem, Recife (PE) - Sínodo da Diocese do Recife
+  jurisdiction: iab
+  status: contested
   sources:
-  - source: reb-calendario-2026
-    quote: 04/12/2015 -BISPO ERIC (ORDENAÇÃO)
-  - source: reb-calendario-2026
-    quote: 04/12/2015 – Ordenação Episcopal • Bispo Eric
+  - source: iabord-ancora-sinodo-2015
+    quote: >-
+      Neste mesmo evento o nosso pastor Eric (peruca) foi ordenado Diácono, e o nosso pastor Pedro Muniz foi instituído
+      Ministro Local, cerimonia presidida pelos Bispos + Miguel Uchoa, +Evilásio e + Flávio Adair, e Bill Atwood
+      (Acna/Gafcon).
+  - source: iabord-ancora-sinodo-2015
+    quote: >-
+      o Sínodo da Igreja Anglicana Diocese do Recife aconteceu no inicio de Dezembro na Paróquia Anglicana Jardim
+      das Oliveiras, em Boa Viagem.
   - source: aac-2015-recife
     quote: One of the new Deacons is Eric. He is a person of many surprises.
   - source: aac-2015-recife
@@ -37,15 +42,43 @@ ordinations:
       on one of the four Deacons. they also ordained three priests and licensed a number of lay ministers.
   - source: aac-2015-recife
     quote: participated in the Ordination, laying hands on one of the four Deacons
+  - source: reb-calendario-2026
+    quote: 04/12/2015 -BISPO ERIC (ORDENAÇÃO)
+  - source: reb-calendario-2026
+    quote: 04/12/2015 – Ordenação Episcopal • Bispo Eric
+  discrepancies:
+  - field: place
+    value: Sínodo da Diocese do Recife (Recife/Jaboatão dos Guararapes-PE)
+    sources:
+    - source: aac-2015-recife
+      quote: One of the new Deacons is Eric. He is a person of many surprises.
+    - source: aac-2015-recife
+      quote: The (just about to be) Rev. Eric rodrigues
+    - source: aac-2015-recife
+      quote: >-
+        On Friday, I preached at the Eucharist that opened the Synod and participated in the Ordination, laying
+        hands on one of the four Deacons. they also ordained three priests and licensed a number of lay ministers.
+  - field: place
+    value: Recife/Jaboatão dos Guararapes (Sínodo da Diocese do Recife)
+    sources:
+    - source: aac-2015-recife
+      quote: One of the new Deacons is Eric. He is a person of many surprises.
+    - source: aac-2015-recife
+      quote: The (just about to be) Rev. Eric rodrigues
+    - source: aac-2015-recife
+      quote: participated in the Ordination, laying hands on one of the four Deacons
   notes: >-
-    O calendário rotula a data como 'Ordenação Episcopal' num trecho e só 'Ordenação' noutro; a sagração foi em
-    08/05/2023. A data bate com o diaconato de dez/2015 registrado por outra fonte. Ordenação na sexta-feira de
-    abertura do Sínodo Diocesano, dias antes de 08/12/2015 (data do post). O bispo ordenante não é nomeado (bispo
-    diocesano: Miguel Uchoa); Bill Atwood (ACNA) impôs as mãos sobre um dos quatro diáconos. Presbiterato de Eric
-    Rodrigues: data e ordenante NÃO encontrados (já era 'Rev.' e reitor da Âncora antes de 2023). Ordenação no Sínodo
-    da Diocese do Recife, dias antes de 08/12/2015 (data do post). Bill Atwood (ACNA) impôs as mãos sobre um dos
-    quatro diáconos. O bispo ordenante não é nomeado. Em 2015 a diocese já era extra-provincial ligada à GAFCON;
-    IACS é aproximação. Presbiterato: data e ordenante NÃO encontrados.
+    Fonte primária nova (blog da própria Âncora) para o diaconato de Eric Rodrigues, dado como 04/12/2015 por fontes
+    secundárias. A cerimônia foi 'presidida' pelos bispos Miguel Uchôa, Evilásio Tenório e Flávio Adair e por Bill
+    Atwood (ACNA/GAFCON); o post não diz quem impôs as mãos (ordenante principal não identificado). Ordenação na
+    sexta-feira de abertura do Sínodo Diocesano, dias antes de 08/12/2015 (data do post). O bispo ordenante não
+    é nomeado (bispo diocesano: Miguel Uchoa); Bill Atwood (ACNA) impôs as mãos sobre um dos quatro diáconos. Presbiterato
+    de Eric Rodrigues: data e ordenante NÃO encontrados (já era 'Rev.' e reitor da Âncora antes de 2023). Ordenação
+    no Sínodo da Diocese do Recife, dias antes de 08/12/2015 (data do post). Bill Atwood (ACNA) impôs as mãos sobre
+    um dos quatro diáconos. O bispo ordenante não é nomeado. Em 2015 a diocese já era extra-provincial ligada à
+    GAFCON; IACS é aproximação. Presbiterato: data e ordenante NÃO encontrados. O calendário rotula a data como
+    'Ordenação Episcopal' num trecho e só 'Ordenação' noutro; a sagração foi em 08/05/2023. A data bate com o diaconato
+    de dez/2015 registrado por outra fonte.
 - order: presbyterate
   date: null
   jurisdiction: diocese-anglicana-recife
@@ -293,6 +326,29 @@ events:
     quote: >-
       No dia 13 de março deste ano, a Igreja Anglicana no Brasil (IAB) elegeu, em seu primeiro Sínodo Extraordinário
       Online, dois novos bispos auxiliares
+- type: other
+  date: 2022-11
+  description: >-
+    Culto de ordenação pastoral na Igreja Âncora (Vitória-ES) em nov/2022: Cícero (Âncora), Elionai (Âncora), Lorrayne
+    (Trindade) e Weiden (Metamorfose); sermão do Rev. Eric Rodrigues.
+  status: confirmed
+  sources:
+  - source: iabord-yt-juqrsmo82ny
+    quote: >-
+      Sermão ministrado na Ordenação Pastoral do Rev. Cícero (Igreja Âncora), Revª. Elionai (Igreja Âncora), Revª.
+      Lorrayne (Anglicana Trindade) e Rev. Weiden (Anglicana Metamorfose).
+- type: other
+  date: 2015-12
+  description: >-
+    Pedro Muniz instituído Ministro Local no Sínodo da Diocese do Recife (Paróquia Anglicana Jardim das Oliveiras,
+    Boa Viagem, Recife), dez/2015 - antes do diaconato de 01/12/2017.
+  status: confirmed
+  sources:
+  - source: iabord-ancora-sinodo-2015
+    quote: >-
+      Neste mesmo evento o nosso pastor Eric (peruca) foi ordenado Diácono, e o nosso pastor Pedro Muniz foi instituído
+      Ministro Local, cerimonia presidida pelos Bispos + Miguel Uchoa, +Evilásio e + Flávio Adair, e Bill Atwood
+      (Acna/Gafcon).
 - type: other
   date: '2026-10-16'
   description: Sínodo Diocesano da REB na Catedral Anglicana Âncora (Vitória/ES), de 16 a 18 de outubro de 2026.
