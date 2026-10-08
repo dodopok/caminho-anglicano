@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: gabriel-marrafao
+name: Gabriel Marrafão
+biography: Ministro local da REB (lista da página "Estrutura", 06/2026).
+sources:
+- source: reb-estrutura
+  quote: Gabriel Marrafão
+affiliations:
+- jurisdiction: reb
+  role: other
+  role_description: ministro local
+  status: confirmed
+  sources:
+  - source: reb-estrutura
+    quote: Ministros locais
+  - source: reb-estrutura
+    quote: Gabriel Marrafão
+  notes: Listado em 29/06/2026 sob o título "Ministros locais". Comunidade e data de início não informadas.
