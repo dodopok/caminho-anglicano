@@ -403,6 +403,35 @@ events:
       No dia 08/09/12 recebi a notícia que em Concílio da DASP o Rev. Flávio Irala havia sido eleito Bispo da mesma
       por 19 a 18 votos na ordem leiga e 15 a 13 votos na ordem clerical.
 - type: other
+  date: '2013-03-17'
+  description: >-
+    Em 17/03/2013 a Junta Paroquial da Catedral Anglicana de São Paulo declara que a catedral volta ao status de
+    capelania anterior a 1975, fora da supervisão da IEAB, permanecendo sob o oversight dos bispos Roger Bird e
+    Glauco Soares de Lima. A imprensa anglicana noticia que o bispo de São Paulo e o ex-primaz deixaram a IEAB.
+  status: confirmed
+  sources:
+  - source: lbd-anglicanink-2013
+    quote: >-
+      On 17 March 2013 parish council of St. Paul’s Cathedral in São Paulo stated that while they remained in the
+      Anglican Communion they were reverting to their pre-1975 status as a Church of England chaplaincy and were
+      no longer under the oversight of the IEAB.
+  - source: lbd-geo-tag
+    quote: >-
+      The congregation also announced that it would remain under the spiritual oversight of Bishop Roger Bird of
+      São Paulo and retired Archbishop Glauco Soares de Lima.
+  - source: lbd-catedral-sobre
+    quote: >-
+      confirma os Bispos anglicanos Dom Roger Douglas Bird e Dom Glauco Soares de Lima como seus líderes espirituais.
+- type: other
+  date: '2013'
+  description: >-
+    Glauco Soares de Lima (bispo emérito, ex-primaz) escreve que o bispo diocesano Roger Bird resolveu anular a
+    eleição de 2012, 'decisão com a qual eu concordei'.
+  status: probable
+  sources:
+  - source: glauco-testemunho-2013
+    quote: O bispo diocesano (Roger Bird) resolveu anular a eleição, decisão com a qual eu concordei.
+- type: other
   date: 1989-07
   description: Eleito bispo coadjutor da Diocese Sul Central, com direito à sucessão, no segundo escrutínio
   status: probable
