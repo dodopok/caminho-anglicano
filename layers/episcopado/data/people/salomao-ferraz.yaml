@@ -36,57 +36,45 @@ ordinations:
   date: '1945'
   jurisdiction: icab
   ordained_by: carlos-duarte-costa
-  status: contested
+  mode: reordination
+  status: probable
   sources:
   - source: cant-temas-anglicanismo-2024
     quote: >-
       o então Reverendo Salomão Ferraz foi reordenado ao sacerdócio por Dom Carlos, doze dias após a fundação da
       Igreja Brasileira.
+  notes: >-
+    Reordenação (já era presbítero episcopal). Ano inferido de "doze dias após a fundação da Igreja Brasileira"
+    (ICAB, 1945).
+- order: presbyterate
+  date: '1917'
+  jurisdiction: dmsb
+  ordained_by: lucien-lee-kinsolving
+  status: probable
+  sources:
   - source: costa2021
     quote: ingressou na Igreja Episcopal, sendo recebido pelo bispo Kinsolving e
     page: '64'
   - source: costa2021
     quote: ordenado ao presbiterado em 1917.
     page: '65'
-  discrepancies:
-  - field: date
-    value: '1917'
-    sources:
-    - source: costa2021
-      quote: ingressou na Igreja Episcopal, sendo recebido pelo bispo Kinsolving e
-      page: '64'
-    - source: costa2021
-      quote: ordenado ao presbiterado em 1917.
-      page: '65'
-  - field: jurisdiction
-    value: dmsb
-    sources:
-    - source: costa2021
-      quote: ingressou na Igreja Episcopal, sendo recebido pelo bispo Kinsolving e
-      page: '64'
-    - source: costa2021
-      quote: ordenado ao presbiterado em 1917.
-      page: '65'
-  - field: ordained_by
-    value: lucien-lee-kinsolving
-    sources:
-    - source: costa2021
-      quote: ingressou na Igreja Episcopal, sendo recebido pelo bispo Kinsolving e
-      page: '64'
-    - source: costa2021
-      quote: ordenado ao presbiterado em 1917.
-      page: '65'
   notes: >-
-    Reordenação (já era presbítero episcopal). Ano inferido de "doze dias após a fundação da Igreja Brasileira"
-    (ICAB, 1945). A tese diz 'recebido pelo bispo Kinsolving e ordenado ao presbiterado em 1917'; ordenante inferido
-    da construção da frase.
+    A tese diz 'recebido pelo bispo Kinsolving e ordenado ao presbiterado em 1917'; ordenante inferido da construção
+    da frase.
 - order: episcopate
   date: '1945-08-15'
   place: Igreja Cristã de São Paulo, rua Baronesa de Itu, 48, São Paulo
   jurisdiction: icab
   principal_consecrator: carlos-duarte-costa
-  status: contested
+  status: confirmed
   sources:
+  - source: testemunho-mantenedor-2026-10-08-ferraz
+    quote: Salomão Ferraz foi sagrado bispo em 1945 por Duarte Costa na ICAB
+  - source: clarke-2006-enrm
+    quote: >-
+      The Brazilian Apostolic Catholic Church was founded in 1945, by the former Roman Catholic bishop Don Carlos
+      Duarte Costa
+    page: '294'
   - source: cant-ferraz-ecumenismo-1995
     quote: >-
       Realizou-se hoje, dia quinze de agosto de mil novecentos e quarenta e cinco, Festa da Assunção de Nossa Senhora,
@@ -100,19 +88,13 @@ ordinations:
     quote: >-
       Em 1945 recebeu a consagração episcopal pelas mãos de Carlos Duarte Costa, após o seu rompimento com Roma.
     page: '66'
-  discrepancies:
-  - field: jurisdiction
-    value: iclivre
-    sources:
-    - source: costa2021
-      quote: >-
-        Em 1945 recebeu a consagração episcopal pelas mãos de Carlos Duarte Costa, após o seu rompimento com Roma.
-      page: '66'
   notes: >-
-    Ex-presbítero da Igreja Episcopal Brasileira; sagrado como "Bispo Eleito de São Paulo" da Igreja Católica Livre
-    / ICAB. O livro de 1995 transcreve a ata da sagração. Sigla ICAB = Igreja Católica Apostólica Brasileira (criar
-    se necessário). A tese diz depois que ele foi nomeado bispo titular de Eleutherna ao ser recebido na Igreja
-    Católica Romana (1959) sem reordenação.
+    Sagração pela ICAB, fundada por Duarte Costa no mesmo ano (confirmado pelo mantenedor). Ferraz vinha da Igreja
+    Católica Livre, que fundara em 1936; Costa (2021) não diz por qual igreja foi a sagração. Ex-presbítero da Igreja
+    Episcopal Brasileira; sagrado como "Bispo Eleito de São Paulo" da Igreja Católica Livre / ICAB. O livro de 1995
+    transcreve a ata da sagração. Sigla ICAB = Igreja Católica Apostólica Brasileira (criar se necessário). A tese
+    diz depois que ele foi nomeado bispo titular de Eleutherna ao ser recebido na Igreja Católica Romana (1959)
+    sem reordenação.
 affiliations:
 - jurisdiction: dmsb
   role: clergy

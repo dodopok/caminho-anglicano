@@ -102,6 +102,16 @@ affiliations:
   sources:
   - source: costa2021
     quote: A missão do novo epíscopo era auxiliar o seu bispo diocesano, Robinson Cavalcanti
+  - source: costa2021
+    quote: Filadelfo foi escolhido e a sua sagração ocorreu em 28 de abril de 2002.
+    page: '190'
+  - source: costa2021
+    quote: Dom Filadelfo Oliveira Neto, ose (Bispo Sufragâneo da DAR)
+    page: '217'
+  notes: >-
+    (sufragâneo) Bispo sufragâneo. Permaneceu na IEAB: assinou 'Não sairemos' (01/09/2004); manteve seu ministério
+    sob a supervisão especial (16/09/2004); nomeado Autoridade Eclesiástica da diocese (Resolução 002/2005, 22/02/2005).
+    Fim do vínculo com a diocese não informado; em 2017 'retornou ao Recife' para assumir a Paróquia da Trindade.
 - jurisdiction: ieab
   role: other
   role_description: bispo diocesano interino
@@ -121,7 +131,7 @@ affiliations:
   diocese: ieab-dar
   start: 2005-02
   end: '2006'
-  status: contested
+  status: confirmed
   sources:
   - source: ieab-2004-decreto-recife
     quote: supõe que o Bispo Sufragâneo Dom Filadelfo Oliveira, de acordo com sua prerrogativas
@@ -135,36 +145,12 @@ affiliations:
     quote: Filadelfo Oliveira Neto (Interino) - 2005 a 2006;
   - source: ta-2005-10-01-ieab-recife
     quote: under the ecclesiastical authority of the suffragan bishop Filadelfo Oliveira
-  - source: costa2021
-    quote: A missão do novo epíscopo era auxiliar o seu bispo diocesano, Robinson Cavalcanti
-    page: '106'
-  - source: costa2021
-    quote: Filadelfo foi escolhido e a sua sagração ocorreu em 28 de abril de 2002.
-    page: '190'
-  - source: costa2021
-    quote: Dom Filadelfo Oliveira Neto, ose (Bispo Sufragâneo da DAR)
-    page: '217'
   notes: >-
     Bispo sufragâneo da Diocese Anglicana do Recife em 2004; signatário da carta da Câmara dos Bispos de 14/11/2005.
     Autoridade eclesiástica nomeada pelo primaz para a Diocese do Recife durante a crise de 2005; depois bispo emérito
     ativo na diocese (pregou em ordenações de 2020–2023). Fim do papel: eleição de Sebastião Gameleira (data não
     verificada aqui). Bispo colaborador da DAR (2026). Lado IEAB da cisão (continuidade da Diocese do Recife na
-    IEAB). (sufragâneo) Bispo sufragâneo. Permaneceu na IEAB: assinou 'Não sairemos' (01/09/2004); manteve seu ministério
-    sob a supervisão especial (16/09/2004); nomeado Autoridade Eclesiástica da diocese (Resolução 002/2005, 22/02/2005).
-    Fim do vínculo com a diocese não informado; em 2017 'retornou ao Recife' para assumir a Paróquia da Trindade.
-  discrepancies:
-  - field: start
-    value: '2002-04-28'
-    sources:
-    - source: costa2021
-      quote: A missão do novo epíscopo era auxiliar o seu bispo diocesano, Robinson Cavalcanti
-      page: '106'
-    - source: costa2021
-      quote: Filadelfo foi escolhido e a sua sagração ocorreu em 28 de abril de 2002.
-      page: '190'
-    - source: costa2021
-      quote: Dom Filadelfo Oliveira Neto, ose (Bispo Sufragâneo da DAR)
-      page: '217'
+    IEAB).
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino
