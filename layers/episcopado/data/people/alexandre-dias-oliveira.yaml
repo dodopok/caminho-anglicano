@@ -1,12 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: alexandre-dias-oliveira
 name: Alexandre Dias Oliveira
-biography: Diácono(a) da Igreja Anglicana Continuante.
+full_name: Alexandre Dias Oliveira
+biography: Listado no clero da Igreja Anglicana Continuante (diácono) no blog da igreja.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: junto com os diáconos Alexandre Dias Oliveira, Maurício Pereira da Silva e Leila Bruno Fernandes.
-  page: '108'
+- source: lpq-iac-diaconos
+  quote: Diácono Alexandre Dias Oliveira
 affiliations:
+- jurisdiction: iac
+  role: deacon
+  status: confirmed
+  sources:
+  - source: lpq-iac-diaconos
+    quote: Diácono Alexandre Dias Oliveira
+  notes: Lista sem datas de ordenação nem ordenantes.
 - jurisdiction: iac
   role: clergy
   status: probable

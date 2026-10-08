@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcos-fradique-bezerra
 name: Marcos Fradique Bezerra
+full_name: Marcos Fradique Bezerra
 aliases:
 - Dom Marcos Fradique
 - Marcos Fradique
@@ -46,11 +47,18 @@ affiliations:
     Thomas Cranmer'. Citado nesse cargo em documento de 30/09/2006.
 - jurisdiction: iamr
   role: primate
-  status: probable
+  status: confirmed
   sources:
+  - source: ultimato-manifesto-2006
+    quote: Igreja Anglicana Missionária do Redentor(IAMR) Revmo. Dom Marcos Fradique Bezerra – Bispo Primaz
+  - source: lpq-deca-2007
+    quote: Igreja Anglicana Missionária do Redentor(IAMR) Revmo. Dom Marcos Fradique Bezerra – Bispo Primaz
   - source: cant-novas-igrejas-2024
     quote: fundou a comunidade, sendo eleito bispo primaz do grupo.
     page: '126'
+  notes: >-
+    Cargo registrado em 30/11/2006 (data do manifesto); o blog de João d'Eça (maio de 2007) repete a mesma lista.
+    A data de início no cargo não foi encontrada.
 - jurisdiction: iamr
   role: bishop
   status: probable
@@ -61,6 +69,19 @@ affiliations:
       liderança do bispo Marcos Fradique
     page: '174'
 events:
+- type: other
+  date: '2006-11-30'
+  description: >-
+    A IAMR (primaz Marcos Fradique Bezerra e auxiliar Antônio Pessoa Leite) figura entre as igrejas signatárias
+    do Manifesto Anglicano contra o projeto de lei da criminalização da homofobia, assinado em Recife em 30/11/2006
+    junto com a Diocese do Recife, a Igreja Anglicana do Brasil, a Igreja Episcopal Reformada, a IAOB, a IABRA,
+    a IALAB e a IEEP.
+  status: confirmed
+  sources:
+  - source: ultimato-manifesto-2006
+    quote: Recife (PE), 30 de novembro de 2006.
+  - source: ultimato-manifesto-2006
+    quote: Igreja Anglicana Missionária do Redentor(IAMR)
 - type: other
   date: 2014-06
   description: >-

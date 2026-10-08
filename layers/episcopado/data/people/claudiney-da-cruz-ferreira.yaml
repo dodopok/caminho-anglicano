@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: claudiney-da-cruz-ferreira
+name: Claudiney da Cruz Ferreira
+full_name: Claudiney da Cruz Ferreira
+aliases:
+- Ir. Cadmon de Nínive, O.S.C.
+biography: >-
+  Clérigo da SICB (nome religioso Cadmon de Nínive, O.S.C.): ordenado diácono em 10/01/2026 por Basílio da Santa
+  Cruz, em Cascavel (CE).
+sources:
+- source: lvc-sicb-n-diac-2026
+  quote: do irmão Claudiney da Cruz Ferreira, cujo nome religioso é Irmão Cadmon de Nínive, O.S.C.
+ordinations:
+- order: diaconate
+  date: '2026-01-10'
+  place: Cascavel (CE)
+  jurisdiction: sicb
+  ordained_by: basilio-da-santa-cruz
+  status: probable
+  sources:
+  - source: lvc-sicb-n-diac-2026
+    quote: >-
+      ORDENAÇÃO DIACONAL realizada no dia 10 de janeiro de 2026, na cidade de Cascavel/CE do irmão Claudiney da
+      Cruz Ferreira, cujo nome religioso é Irmão Cadmon de Nínive, O.S.C.
+  - source: lvc-sicb-n-diac-2026
+    quote: A Cerimônia foi celebrada por Dom Basílio da Santa Cruz, Bispo Provincial para a região Nordeste.

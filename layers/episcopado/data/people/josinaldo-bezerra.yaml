@@ -1,27 +1,45 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: josinaldo-bezerra
-name: Josinaldo Bezerra
+name: Josinaldo Bezerra de Lima
 full_name: Josinaldo Bezerra
+aliases:
+- Dom Josinaldo Bezerra
+- Josinaldo Bezerra
 biography: >-
-  Bispo da WAC em Belo Jardim (PE), à frente da Diocese de Pernambuco da WAC no Brasil. O site da província dá sua
-  sagração episcopal em 03/03/2024, sem sagrantes nem local; a data de presbiterato está em branco.
+  Bispo diocesano para Belo Jardim (PE), consagrado por José Fernando de Faria em 03/03/2024 em Feira Nova (PB),
+  segundo a IVCM.
 sources:
-- source: lwac-wacbr-clerigos
-  quote: Dom Josinaldo Bezerra Bispo da Cidade:Belo Jardim - PE
+- source: lvc-ivcm-site
+  quote: Josinaldo Bezerra de Lima, bispo diocesano para a cidade de Belo Jardim
 ordinations:
 - order: episcopate
   date: '2024-03-03'
-  jurisdiction: wac-br
+  place: Capela da Comunidade do Bom Pastor, Feira Nova (PB)
+  jurisdiction: ivcmb
   office: diocesan
-  status: probable
+  principal_consecrator: jose-fernando-de-faria
+  status: contested
   sources:
+  - source: lvc-ivcm-site
+    quote: >-
+      Em 03/03/2024 na Capela da Comunidade do Bom Pastor na cidade de Feira Nova – PB, José Fernando de Faria consagrou;
+  - source: lvc-ivcm-site
+    quote: Josinaldo Bezerra de Lima, bispo diocesano para a cidade de Belo Jardim
   - source: lwac-wacbr-clerigos
     quote: >-
       Dom Josinaldo Bezerra Bispo da Cidade:Belo Jardim - PE Contato: +55 (81) 9425-7756 Ordenação: Presbiteral:
       Sagração Episcopal: 03/03/2024
+  discrepancies:
+  - field: jurisdiction
+    value: wac-br
+    sources:
+    - source: lwac-wacbr-clerigos
+      quote: >-
+        Dom Josinaldo Bezerra Bispo da Cidade:Belo Jardim - PE Contato: +55 (81) 9425-7756 Ordenação: Presbiteral:
+        Sagração Episcopal: 03/03/2024
   notes: >-
-    Data informada pelo site da WAC-BR, que deixa em branco o presbiterato. Sagrantes e local não informados nas
-    fontes consultadas; o ato é anterior ao Sínodo de julho de 2024.
+    Fonte única (site da IVCM). Data informada pelo site da WAC-BR, que deixa em branco o presbiterato. Sagrantes
+    e local não informados nas fontes consultadas; o ato é anterior ao Sínodo de julho de 2024.
 affiliations:
 - jurisdiction: wac-br
   role: diocesan_bishop

@@ -1,16 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: sebastiao-edilson-de-alencar
 name: Sebastião Edilson de Alencar
-biography: Bispo de Brasília na Igreja Anglicana Continuante.
+full_name: Sebastião Edilson de Alencar
+biography: Bispo de Brasília na Igreja Anglicana Continuante, segundo o site da própria igreja.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: >-
-    O clero da Igreja Anglicana Continuante (IAC) é formado por dom Valdiley Abadia da Silva (bispo primaz e presidente),
-    monsenhor Gleidson Antônio do Nascimento Alves (bispo e vice-presidente), dom Sebastião Edilson de Alencar (bispo
-    de Brasília), dom Emival Silva Ribeiro (emérito de Gôiania-GO), dom Éric Massaro Baptista (secretário geral,
-    de Cachoeirinha-SP).
-  page: '108'
+- source: lpq-iac-bispos
+  quote: Dom Sebastião Edilson de Alencar (Bispo de Brasília)
 affiliations:
+- jurisdiction: iac
+  role: bishop
+  status: confirmed
+  sources:
+  - source: lpq-iac-bispos
+    quote: Dom Sebastião Edilson de Alencar (Bispo de Brasília)
+  notes: 'Local: Brasília.'
 - jurisdiction: iac
   role: diocesan_bishop
   status: probable

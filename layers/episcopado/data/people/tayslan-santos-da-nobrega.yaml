@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: tayslan-santos-da-nobrega
+name: Tayslan Santos da Nóbrega
+full_name: Tayslan Santos da Nóbrega
+aliases:
+- Diácono João Crisóstomo
+- Ir. João Crisóstomo da Anunciação, O.S.C.
+biography: >-
+  Clérigo da SICB (nome religioso João Crisóstomo da Anunciação, O.S.C.): ordenado diácono em 08/02/2025 e presbítero
+  em 10/01/2026 por Basílio da Santa Cruz, em Cascavel (CE).
+sources:
+- source: lvc-sicb-n-presb-2026
+  quote: o irmão Tayslan Santos da Nóbrega, nome religioso Ir. João Crisóstomo da Anunciação, O.S.C.
+ordinations:
+- order: diaconate
+  date: '2025-02-08'
+  place: Cascavel (CE)
+  jurisdiction: sicb
+  ordained_by: basilio-da-santa-cruz
+  status: probable
+  sources:
+  - source: lvc-sicb-n-diac-2025-02
+    quote: >-
+      No dia 08 de fevereiro de 2025, em Cascavel/CE, aconteceu a Cerimônia de Ordenação Diaconal do irmão João
+      Crisóstomo, ministrada pelo nosso amado Bispo Dom Basílio da Santa Cruz.
+  notes: A notícia de 2025 cita só 'irmão João Crisóstomo'; o nome civil vem da notícia de 26/01/2026.
+- order: presbyterate
+  date: '2026-01-10'
+  place: Cascavel (CE)
+  jurisdiction: sicb
+  ordained_by: basilio-da-santa-cruz
+  status: probable
+  sources:
+  - source: lvc-sicb-n-presb-2026
+    quote: >-
+      Em uma belíssima Celebração realizada no dia 10 de janeiro de 2026, na cidade de Cascavel/CE, o irmão Tayslan
+      Santos da Nóbrega, nome religioso Ir. João Crisóstomo da Anunciação, O.S.C. e o irmão João de Sousa Brito,
+      nome religioso Ir. Paládio do Getsêmani, O.S.C. receberam a ORDENAÇÃO PRESBITERAL pelas consagradas mãos de
+      Dom Basílio da Santa Cruz, Bispo Provincial para a região Nordeste.

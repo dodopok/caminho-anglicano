@@ -3,13 +3,15 @@ id: rosimael-losasi
 name: Rosimael Losasi
 aliases:
 - Rosimael
-biography: Fundador da Igreja Episcopal do Brasil (PE, 2017), que mais tarde passou a se denominar arcebispo.
+biography: >-
+  Fundador da Igreja Episcopal do Brasil (PE). Nos vídeos de 2018 do canal da igreja é apresentado como "Arcebispo
+  Rosimael Losasi" (série "Oficina da Palavra"). Seu canal pessoal de YouTube (@Rosimaellosasi) o descreve como
+  empresário, professor e jornalista.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: >-
-    A Igreja Episcopal do Brasil foi fundada pelo bispo Rosimael Losasi, no Estado de Pernambuco, sendo organizada
-    juridicamente em 13 de novembro de 2017.
-  page: '165'
+- source: lpq-yt-iebr
+  quote: Apresentação da Oficina da Palavra - Arcebispo  Rosimael Losasi
+- source: lpq-yt-losasi
+  quote: Empresário Professor Jornalista
 affiliations:
 - jurisdiction: ieb-losasi
   role: founder
@@ -26,14 +28,18 @@ affiliations:
 - jurisdiction: ieb-losasi
   role: archbishop
   end: '2022-06-07'
-  status: probable
+  status: confirmed
   sources:
+  - source: lpq-yt-iebr
+    quote: Apresentação da Oficina da Palavra - Arcebispo  Rosimael Losasi
   - source: cant-novas-igrejas-2024
     quote: >-
       Posteriormente, o bispo Rosimael passou a se denominar Arcebispo, porém, sem angariar nem clero, nem novas
       comunidades
     page: '165'
-  notes: Título autoatribuído posteriormente.
+  notes: >-
+    O título "Arcebispo" já aparece em vídeos de maio de 2018, antes da ruptura de Gleidson Oliveira (2019). Título
+    autoatribuído posteriormente.
 events:
 - type: other
   date: '2017-02-06'

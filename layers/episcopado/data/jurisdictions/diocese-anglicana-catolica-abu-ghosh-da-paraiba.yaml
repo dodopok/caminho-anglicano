@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-catolica-abu-ghosh-da-paraiba
+name: Diocese Anglicana Católica Abu Ghosh da Paraíba
+type: diocese
+relations:
+- type: part_of
+  target: ivcib
+  status: probable
+  sources:
+  - source: lvc-ivcib-jethro
+    quote: agora é Bispo Anglicano Católico da recém-criada
+  - source: lvc-ivcib-jethro
+    quote: >-
+      Decreto que nomeia Dom Eddie Ferreira como Chanceler da Igreja Vetero Católica Independente no Brasil é oficial.

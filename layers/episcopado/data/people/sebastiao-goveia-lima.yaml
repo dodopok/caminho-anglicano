@@ -1,12 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: sebastiao-goveia-lima
 name: Sebastião Goveia Lima
-biography: Presbítero da Igreja Anglicana Continuante.
+full_name: Sebastião Goveia Lima
+biography: Listado no clero da Igreja Anglicana Continuante (presbítero) no blog da igreja.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Como presbíteros a Igreja possui os reverendos Francisco de Assis Linhares e Sebastião Goveia Lima
-  page: '108'
+- source: lpq-iac-presbiteros
+  quote: Reverendo Pr. Sebastião Goveia Lima
 affiliations:
+- jurisdiction: iac
+  role: priest
+  status: confirmed
+  sources:
+  - source: lpq-iac-presbiteros
+    quote: Reverendo Pr. Sebastião Goveia Lima
+  notes: Lista sem datas de ordenação nem ordenantes.
 - jurisdiction: iac
   role: clergy
   status: probable

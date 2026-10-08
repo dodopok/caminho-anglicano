@@ -42,7 +42,7 @@ ordinations:
   jurisdiction: pcra-al
   office: diocesan
   principal_consecrator: victor-manuel-cruz-blanco
-  status: confirmed
+  status: contested
   sources:
   - source: iacc-continuante
     quote: >-
@@ -56,6 +56,11 @@ ordinations:
     quote: Em 2013, Dom James Roque recebeu o episcopado pelas mãos de Dom Victor Manuel Cruz-Blanco
   - source: cant-novas-igrejas-2024
     quote: A sua sagração aconteceu na cidade de Barranquila, na Colômbia.
+  - source: lvc-ivcm-site
+    quote: >-
+      Rogério Ribeiro Campos, bispo da diocese de São João Batista no Brasil, posteriormente bispo do Centro-Oeste
+      do Brasil da Comunhão Independente Anglicana, após primeiro Abade do Mosteiro Cisterciense de São Rafael,
+      em Aparecida de Goiânia, Estado de Goiás, Brasil que em 31 de janeiro de 2014 consagrou;
   - source: iacc-continuante
     quote: >-
       O primeiro brasileiro a ser sagrado Bispo por ††Victor Manuel Cruz-Blanco, em cerimônia ocorrida em 2013,
@@ -76,22 +81,40 @@ ordinations:
       em 2013, foi ordenado e sagrado o primeiro bispo brasileiro do Movimento Anglicano Contínuo no Brasil. A sua
       sagração aconteceu na cidade de Barranquila, na Colômbia.
     page: '154'
+  discrepancies:
+  - field: date
+    value: '2014-01-31'
+    sources:
+    - source: lvc-ivcm-site
+      quote: >-
+        Rogério Ribeiro Campos, bispo da diocese de São João Batista no Brasil, posteriormente bispo do Centro-Oeste
+        do Brasil da Comunhão Independente Anglicana, após primeiro Abade do Mosteiro Cisterciense de São Rafael,
+        em Aparecida de Goiânia, Estado de Goiás, Brasil que em 31 de janeiro de 2014 consagrou;
+  - field: principal_consecrator
+    value: rafael-ribeiro-campos
+    sources:
+    - source: lvc-ivcm-site
+      quote: >-
+        Rogério Ribeiro Campos, bispo da diocese de São João Batista no Brasil, posteriormente bispo do Centro-Oeste
+        do Brasil da Comunhão Independente Anglicana, após primeiro Abade do Mosteiro Cisterciense de São Rafael,
+        em Aparecida de Goiânia, Estado de Goiás, Brasil que em 31 de janeiro de 2014 consagrou;
   notes: >-
     Fonte é o próprio site da IACC, assinado por James Roque (autodeclaração). Quatro co-sagrantes não nomeados.
     Sucessão declarada: Chambers/Pagtakhan/Pae (St. Louis 1977) via Cruz-Blanco. Registro neutro do que a jurisdição
     declara. Costa (2021) confirma a data e o sagrante, e também que Roque 'ordenou muitas pessoas ao episcopado'
     (Kennedy de Freitas, Mattos, Barreiros, Ferreira, Itabira Jonas, Pinho, Barbosa da Silva). Já registrado em
     jurisdicoes-menores.json; aqui com fonte Costa. Jurisdição: Movimento Contínuo (Província Católica de Rito Anglicano
-    da América Latina); sigla TAC é aproximada. RESPOSTA À DÚVIDA 'por qual igreja': segundo o próprio site da IACC
-    (assinado por James Roque), a sagração foi na sede da 'Igreja Anglicana Continuante da República da Colômbia
-    (Diocese Anglicana del Caribe y La Nueva Granada)' e Cruz-Blanco agia como arcebispo da 'Província Católica
-    de Rito Anglicano da América Latina', 'então vinculada à Igreja Católica de Rito Anglicano' (= Holy Catholic
-    Church Anglican Rite / Anglican Rite Catholic Church, Quakertown, PA; primaz Thomas Justin Kleppinger). Portanto
-    NÃO foi a IACC (criada depois pelo próprio Roque), NÃO foi a TAC (nenhuma fonte liga Cruz-Blanco à TAC), e a
-    jurisdição mais precisa é PCRA-AL/HCCAR. Quatro co-sagrantes não nomeados. Ano 2013 sem dia. Jurisdição do sagrante;
-    Roque organizou em seguida a Diocese Anglicana do Japi. O livro não informa sagrantes nem a jurisdição sagrante
-    nesta parte. Atenção: a criação jurídica da Diocese do Japi pelo 'bispo' Roque é datada de 14/10/2012, antes
-    da sagração de 2013.
+    da América Latina); sigla TAC é aproximada. Versão da lista de sucessão da IVCM. Fontes do movimento anglicano
+    continuante dizem que Roque foi sagrado em 2013, em Barranquilla (Colômbia), por Victor Manuel Cruz-Blanco;
+    ver dúvidas. RESPOSTA À DÚVIDA 'por qual igreja': segundo o próprio site da IACC (assinado por James Roque),
+    a sagração foi na sede da 'Igreja Anglicana Continuante da República da Colômbia (Diocese Anglicana del Caribe
+    y La Nueva Granada)' e Cruz-Blanco agia como arcebispo da 'Província Católica de Rito Anglicano da América Latina',
+    'então vinculada à Igreja Católica de Rito Anglicano' (= Holy Catholic Church Anglican Rite / Anglican Rite
+    Catholic Church, Quakertown, PA; primaz Thomas Justin Kleppinger). Portanto NÃO foi a IACC (criada depois pelo
+    próprio Roque), NÃO foi a TAC (nenhuma fonte liga Cruz-Blanco à TAC), e a jurisdição mais precisa é PCRA-AL/HCCAR.
+    Quatro co-sagrantes não nomeados. Ano 2013 sem dia. Jurisdição do sagrante; Roque organizou em seguida a Diocese
+    Anglicana do Japi. O livro não informa sagrantes nem a jurisdição sagrante nesta parte. Atenção: a criação jurídica
+    da Diocese do Japi pelo 'bispo' Roque é datada de 14/10/2012, antes da sagração de 2013.
 affiliations:
 - jurisdiction: da-japi
   role: diocesan_bishop

@@ -1,21 +1,26 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: eric-massaro-baptista
 name: Éric Massaro Baptista
+full_name: Éric Massaro Baptista
+aliases:
+- Capelão Massaro
+- Eric Massaro Batista
+- Éric M. Baptista
 biography: >-
-  Bispo e secretário geral da Igreja Anglicana Continuante (Cachoeirinha-SP), conhecido como celebrante de casamentos.
+  Secretário geral da Igreja Anglicana Continuante, listado como bispo no site da igreja. Um canal de YouTube chamado
+  "CapelãoMassaro" publicou entrevistas com o "Bispo Eric Massaro Baptista" e vídeos de celebrante de casamentos.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: >-
-    O clero da Igreja Anglicana Continuante (IAC) é formado por dom Valdiley Abadia da Silva (bispo primaz e presidente),
-    monsenhor Gleidson Antônio do Nascimento Alves (bispo e vice-presidente), dom Sebastião Edilson de Alencar (bispo
-    de Brasília), dom Emival Silva Ribeiro (emérito de Gôiania-GO), dom Éric Massaro Baptista (secretário geral,
-    de Cachoeirinha-SP).
-  page: '108'
+- source: lpq-iac-bispos
+  quote: Bispo Éric M. Baptista (Secretário Geral)
+- source: lpq-yt-massaro
+  quote: Entrevista com o Bispo Eric Massaro Baptista 2.1
 affiliations:
 - jurisdiction: iac
   role: bishop
-  status: probable
+  status: confirmed
   sources:
+  - source: lpq-iac-bispos
+    quote: Bispo Éric M. Baptista (Secretário Geral)
   - source: cant-novas-igrejas-2024
     quote: >-
       O clero da Igreja Anglicana Continuante (IAC) é formado por dom Valdiley Abadia da Silva (bispo primaz e presidente),
@@ -23,4 +28,4 @@ affiliations:
       (bispo de Brasília), dom Emival Silva Ribeiro (emérito de Gôiania-GO), dom Éric Massaro Baptista (secretário
       geral, de Cachoeirinha-SP).
     page: '108'
-  notes: Secretário geral.
+  notes: Secretário geral. O livro de Costa (2024) o situa em Cachoeirinha (SP). Secretário geral.

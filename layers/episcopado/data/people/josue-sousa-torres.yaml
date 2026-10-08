@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: josue-sousa-torres
 name: Josué Sousa Torres
+full_name: Josué Souza Torres
 aliases:
 - Dom Josué Torres
 - Josué Souza Torres
@@ -61,16 +62,26 @@ ordinations:
     Marin-Saavedra (Anglican Independent Communion Worldwide).
 - order: episcopate
   date: '2006-01-15'
+  place: Taboão da Serra (SP)
   jurisdiction: ieep
   office: primate
   principal_consecrator: barry-frank-peachey
   status: probable
   sources:
+  - source: lac-cnbp-sucessao
+    quote: >-
+      Josué Souza Torres (Brasileiro) – Em 15/01/2006 foi sagrado ao Bispado por Dom Barry Frank Peachey em Taboão
+      da Serra, São Paulo (SP), Brasil.
+  - source: lpq-cefip-sagracoes
+    quote: >-
+      Josué Souza Torres, Bispo Primaz da Igreja Episcopal do Evangelho Pleno e Arcebispo Emérito do Conselho Nacional
+      de Bispos Protestantes do Brasil, 2006.
   - source: cant-novas-igrejas-2024
     quote: >-
       quando em 15 de janeiro de 2006 Josué Torres foi sagrado ao episcopado pelo bispo Barry Frank Peachey, filiado
       à The Anglican Independent Communion Worldwide, com sede na Inglaterra.
   notes: >-
+    Acrescenta o local (Taboão da Serra) à data e ao sagrante já conhecidos; o blog da CEFIP dá só o ano (2006).
     Fundador da Igreja Episcopal do Evangelho Pleno (IEEP). Mesma data da sagração de Ricardo Lorite e Rui Barbosa
     (p. 118), na qual Peachey também atuou.
 affiliations:
@@ -91,15 +102,23 @@ affiliations:
 - jurisdiction: ieep
   role: primate
   start: '2006'
-  status: probable
+  status: confirmed
   sources:
+  - source: lpq-cefip-sagracoes
+    quote: >-
+      Josué Souza Torres, Bispo Primaz da Igreja Episcopal do Evangelho Pleno e Arcebispo Emérito do Conselho Nacional
+      de Bispos Protestantes do Brasil
+  - source: lpq-iaob-clero
+    quote: Dom Josué Sousa Torres - Bispo Primás da IEEP Comunhão Plena com a IAOB
   - source: cant-novas-igrejas-2024
     quote: o Bispo Primaz da Igreja Episcopal do Evangelho Pleno (IEEP), Bispo Josué Souza Torres
     page: '146'
   - source: cant-novas-igrejas-2024
     quote: Bispo Josué Souza Torres, Primaz da Igreja Episcopal do Evangelho Pleno
     page: '131'
-  notes: Citado como primaz em 2006 (p. 146) e em 2013 (p. 131).
+  notes: >-
+    Também chamado de arcebispo emérito do CNBP no blog da CEFIP. Citado como primaz em 2006 (p. 146) e em 2013
+    (p. 131).
 - jurisdiction: ieep
   role: other
   role_description: bispo_primaz
@@ -148,17 +167,17 @@ events:
     Costa Barbosa.
   status: probable
   sources:
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       Pedro A. Compton-Caputo (1993) – Arcebispo Primaz da Comunhão Anglicana Independente nas Américas. Norman
       Sydney Dutton (1999)
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: Barry Frank Peachey (2005)
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       JOSUÉ SOUZA TORRES (15/01/2006) – ARCEBISPO PRIMAZ DA IGREJA EPISCOPAL DO EVANGELHO PLENO, BRASIL. ADOLFO
       BATISTA TEODORO JUNIOR (12/01/2013) BISPO PRIMAZ DA IGREJA ANGLICANA ORTODOXA NO BRASIL.
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       (146) Tau Iranildo Macieira da Silva, 2004. (147) Dom Josué Douza Torres (148) 2006. (148) Dom Adolfo Batista
       Teodoro Junior 2013.

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iefip
+acronym: IEFIP
+name: Igreja Episcopal Filhos da Promessa
+type: national_church
+country: BR
+description: >-
+  Igreja do bispo-primaz Elias Batista Nogueira, com bispo-missionário Roberto Avelar, em Engenheiro Pedreira, Japeri
+  (RJ). Está ligada à Convenção Eclesiástica Filhos da Promessa (CEFIP, estatuto de 05/03/2011), à Ordem Anglicana
+  Filhos da Promessa (OAFIP, 22/08/2012) e ao Conselho Nacional de Bispos Protestantes; a CEFIP congrega também
+  ministérios de tradição pentecostal (Assembleia de Deus etc.). O canal da igreja no YouTube existe pelo menos
+  desde 2025.
+sources:
+- source: lpq-yt-iefip
+  quote: >-
+    IGREJA EPISCOPAL FILHOS DA PROMESSA - IEFIP Bispo-Primaz - Elias Batista Nogueira Bispo-Missionário - Roberto
+    Avelar Engenheiro Pedreira - Japeri - RJ - Brasil
+- source: lpq-cefip-estatuto
+  quote: Rio de Janeiro, 05 de Março de 2011. Rev. Elias Batista Nogueira Diretor Presidente

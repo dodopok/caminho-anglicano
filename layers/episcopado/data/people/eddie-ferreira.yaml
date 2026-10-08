@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: eddie-ferreira
+name: Eddie Ferreira
+biography: >-
+  Capelão da Jethro International, sagrado bispo (reportado em 25/06/2025) para a Diocese Anglicana Católica Abu
+  Ghosh da Paraíba, ligada à Igreja Vetero-Católica Independente do Brasil, em cerimônia presidida por Nildemar
+  Andrade em João Pessoa (PB); nomeado Chanceler da IVCIB.
+sources:
+- source: lvc-ivcib-jethro
+  quote: agora é Bispo Anglicano Católico da recém-criada
+- source: lvc-ivcib-jethro
+  quote: >-
+    Decreto que nomeia Dom Eddie Ferreira como Chanceler da Igreja Vetero Católica Independente no Brasil é oficial.
+ordinations:
+- order: episcopate
+  date: '2025'
+  place: Capela Ecumênica da UFPB, João Pessoa (PB)
+  jurisdiction: ivcib
+  office: diocesan
+  principal_consecrator: nildemar-andrade-santos
+  co_consecrators:
+  - gregorius-magnum
+  status: probable
+  sources:
+  - source: lvc-ivcib-jethro
+    quote: >-
+      A consagração foi presidida por Dom Nildemar Andrade, Primaz da Igreja Vetero Católica Independente, com co-sagrações
+      dos bispos Dom Gregórius Magnum, da Igreja Russa Ucraniana no Brasil, e Dom Basílio.
+  - source: lvc-ivcib-jethro
+    quote: Capela Ecumênica da UFPB, em João Pessoa, Paraíba.
+  notes: >-
+    Matéria da Jethro International publicada em 25/06/2025, sem data da cerimônia. 'Dom Basílio' não é identificado
+    (pode ou não ser Basílio da Santa Cruz, da SICB). A diocese criada na ocasião é a Diocese Anglicana Católica
+    Abu Ghosh da Paraíba, com a Região Eclesiástica do Bom Samaritano (AL, PE, RN, CE e PR). Um 'Dom Basílio' também
+    participou; não se sabe se é Basílio da Santa Cruz (SICB).
+affiliations:
+- jurisdiction: ivcib
+  role: bishop
+  diocese: diocese-anglicana-catolica-abu-ghosh-da-paraiba
+  start: '2025'
+  status: probable
+  sources:
+  - source: lvc-ivcib-jethro
+    quote: agora é Bispo Anglicano Católico da recém-criada
+  - source: lvc-ivcib-jethro
+    quote: >-
+      Decreto que nomeia Dom Eddie Ferreira como Chanceler da Igreja Vetero Católica Independente no Brasil é oficial.
+  notes: Também chanceler da IVCIB.
+events:
+- type: other
+  date: '2025'
+  description: >-
+    Criação da Diocese Anglicana Católica Abu Ghosh da Paraíba e da Região Eclesiástica do Bom Samaritano (AL, PE,
+    RN, CE e PR), ligadas à IVCIB, durante a sagração de Eddie Ferreira em João Pessoa. É o único ponto de contato
+    localizado entre a IVCIB e a rede anglicana (uso do termo 'anglicano católico').
+  status: probable
+  sources:
+  - source: lvc-ivcib-jethro
+    quote: >-
+      Durante a cerimônia, foi emitido o Decreto de Criação da Diocese Anglicana Católica Abu Ghosh e da Região
+      Eclesiástica do Bom Samaritano

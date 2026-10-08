@@ -4,10 +4,47 @@ acronym: SICB
 name: Santa Igreja Celta do Brasil
 type: other
 country: BR
+founded:
+  date: '2015-12-09'
+  sources:
+  - source: lvc-sicb-cnpj
+    quote: '"data_inicio_atividade":"2015-12-09"'
+  - source: lvc-sicb-quem-somos
+    quote: Nossa igreja pertence à União Internacional das Igrejas Ortodoxas Autocéfalas.
+  - source: lvc-sicb-quem-somos
+    quote: Em nossa Igreja o celibato é opcional. Aceitamos homens e mulheres
+  - source: lvc-sicb-sucessao
+    quote: >-
+      A Linhagem Sucessória da Santa Igreja Celta do Brasil vem de Dom Bernardo da Ressurreição, O.S.C., sendo uma
+      Sucessão pela LINHA D'ESTOUTEVILLE, que remonta a 1440.
+website: https://www.igrejacelta.org/
 description: >-
-  Igreja independente cujos bispos Bernardo da Ressurreição e Rafael de Emaús participaram da sagração de Dionísio
-  Aílton Pereira.
+  Igreja católica independente, de espiritualidade celta e 'ortodoxa ocidental', sem estrutura diocesana (hesicastérios
+  e províncias), com sede em Feira de Santana (BA) segundo o CNPJ, aberto em 09/12/2015. Diz-se autocéfala e membro
+  da União Internacional das Igrejas Ortodoxas Autocéfalas; ordena mulheres. A linhagem declarada vem de Eduardo
+  Quintella, de Emmanuel Milingo e de Paulo VI. O primaz é Raphael de Emaús desde 27/04/2025; Bernardo da Ressurreição,
+  que implantou a igreja no Brasil, é primaz emérito.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: dom Bernardo da Ressurreição e dom Rafael de Emaús, bispos da Santa Igreja Celta do Brasil
-  page: '103'
+- source: lvc-sicb-cnpj
+  quote: '"data_inicio_atividade":"2015-12-09"'
+- source: lvc-sicb-quem-somos
+  quote: Nossa igreja pertence à União Internacional das Igrejas Ortodoxas Autocéfalas.
+- source: lvc-sicb-quem-somos
+  quote: Em nossa Igreja o celibato é opcional. Aceitamos homens e mulheres
+- source: lvc-sicb-sucessao
+  quote: >-
+    A Linhagem Sucessória da Santa Igreja Celta do Brasil vem de Dom Bernardo da Ressurreição, O.S.C., sendo uma
+    Sucessão pela LINHA D'ESTOUTEVILLE, que remonta a 1440.
+relations:
+- type: member_of
+  target: uiioa
+  date: null
+  led_by:
+  - rafael-de-emaus
+  status: probable
+  sources:
+  - source: lvc-sicb-faq
+    quote: SIM, somos ligados à União Internacional das Igrejas Ortodoxas Autocéfalas, com sede na Itália.
+  - source: lvc-sicb-quem-somos
+    quote: Nossa igreja pertence à União Internacional das Igrejas Ortodoxas Autocéfalas.
+  notes: A SICB afirma não ter ligação canônica com Roma nem com os patriarcados ortodoxos.

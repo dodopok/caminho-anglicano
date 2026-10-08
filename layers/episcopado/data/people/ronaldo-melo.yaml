@@ -18,10 +18,11 @@ sources:
 ordinations:
 - order: episcopate
   date: '2014'
+  place: Paróquia São José, Confins (MG)
   jurisdiction: danb
   office: missionary
   principal_consecrator: emmanuel-milingo
-  status: probable
+  status: contested
   sources:
   - source: cant-novas-igrejas-2024
     quote: >-
@@ -33,12 +34,40 @@ ordinations:
     quote: >-
       ambos incumbidos de cuidar da missão religiosa dessa Igreja na região de Poços de Caldas e Machado, no Sul
       de Minas Gerais.
+  - source: lvc-quintella-2016-04
+    quote: >-
+      Fotos da Sagração Episcopal do Padre Ronaldo Melo - Sagrado Por Dom Eduardo Rocha Quintella - Bispo Diocesano
+      Belo Horizonte - MG. dia 05/04/2016 - Paróquia São José. - Confins - MG
+  discrepancies:
+  - field: date
+    value: '2016-04-05'
+    sources:
+    - source: lvc-quintella-2016-04
+      quote: >-
+        Fotos da Sagração Episcopal do Padre Ronaldo Melo - Sagrado Por Dom Eduardo Rocha Quintella - Bispo Diocesano
+        Belo Horizonte - MG. dia 05/04/2016 - Paróquia São José. - Confins - MG
+  - field: jurisdiction
+    value: icam
+    sources:
+    - source: lvc-quintella-2016-04
+      quote: >-
+        Fotos da Sagração Episcopal do Padre Ronaldo Melo - Sagrado Por Dom Eduardo Rocha Quintella - Bispo Diocesano
+        Belo Horizonte - MG. dia 05/04/2016 - Paróquia São José. - Confins - MG
+  - field: principal_consecrator
+    value: eduardo-rocha-quintella
+    sources:
+    - source: lvc-quintella-2016-04
+      quote: >-
+        Fotos da Sagração Episcopal do Padre Ronaldo Melo - Sagrado Por Dom Eduardo Rocha Quintella - Bispo Diocesano
+        Belo Horizonte - MG. dia 05/04/2016 - Paróquia São José. - Confins - MG
   notes: >-
     O decreto episcopal de Roger Bird (29/05/2019) trata a 'ordenação e sagração episcopal' de Ronaldo Robster de
     Melo como ato realizado no âmbito da Diocese Anglicana no Brasil – Catedral Anglicana de São Paulo e o declara
     nulo ex tunc. A data (18/11/2018 no livro de Costa) e os sagrantes não constam do decreto; uma notícia de vídeo
     da TV Poços (título 'Igreja Anglicana Padre Ronaldo') indicaria a cerimônia na Catedral num domingo (18), mas
-    a descrição não pôde ser aberta.
+    a descrição não pôde ser aberta. Postagem do blog de Quintella (06/04/2016). Obra de 2024 sobre as novas igrejas
+    anglicanas dá outra versão: sagração em 2014 por Emmanuel Milingo. Pode haver duas cerimônias (nova sagração
+    ou ratificação) ou erro de uma das fontes; ver dúvidas. O blog traz apenas links de fotos, sem relato.
 affiliations:
 - jurisdiction: icf
   role: founder
@@ -51,6 +80,10 @@ affiliations:
     quote: Mas em maio deste ano, ele decidiu pedir seu desligamento da igreja.
   - source: lq-pocosja-2015
     quote: foi excomungado pela Igreja Católica neste sábado (19)
+  - source: lvc-poscja-ronaldo
+    quote: >-
+      a criação da Igreja Católica Apostólica da Fé, em Machado (MG), foi caracterizada como cisma, separação completa
+      da Igreja Católica Apostólica Romana.
   - source: cant-novas-igrejas-2024
     quote: >-
       Na mesma época, outro sacerdote católico, padre Ronaldo Melo, da cidade de Machado, também deixou o sacerdócio,
@@ -58,7 +91,9 @@ affiliations:
     page: '103'
   notes: >-
     Local: Machado, MG. Reportagem de 26/12/2015: ICAF criada cerca de três meses antes (c. setembro/2015). Em 19/12/2015
-    a Diocese de Guaxupé a considerou cisma; Ronaldo afirma que o desligamento foi pedido por ele.
+    a Diocese de Guaxupé a considerou cisma; Ronaldo afirma que o desligamento foi pedido por ele. A notícia não
+    diz que ele fundou a igreja, apenas que foi excomungado pela criação dela; a autoria vem da frase do bispo de
+    Guaxupé citada pelo portal.
   discrepancies:
   - field: start
     value: c.2014
@@ -158,3 +193,19 @@ events:
       Igreja Católica neste sábado (19).
   - source: lq-g1-ronaldo-2015
     quote: O bispo de Guaxupé, dom José Lanza Neto, não aceitou o desligamento, e então, ele deixou a igreja.
+- type: other
+  date: '2015-12-19'
+  description: >-
+    A Diocese de Guaxupé (MG), por seu bispo Dom José Lanza, comunicou a excomunhão do padre Ronaldo Melo, ex-pároco
+    de Nossa Senhora Aparecida em Poços de Caldas, e declarou que a criação da Igreja Católica Apostólica da Fé,
+    em Machado, era um cisma.
+  status: probable
+  sources:
+  - source: lvc-poscja-ronaldo
+    quote: >-
+      O padre Ronaldo Melo, que esteve em Poços de Caldas na Paróquia Nossa Senhora Aparecida, foi excomungado pela
+      Igreja Católica neste sábado (19).
+  - source: lvc-poscja-ronaldo
+    quote: >-
+      os católicos não podem e nem devem participar de qualquer culto e ou receber os sacramentos realizados em
+      tal igreja

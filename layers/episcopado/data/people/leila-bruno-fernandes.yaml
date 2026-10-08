@@ -1,12 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: leila-bruno-fernandes
 name: Leila Bruno Fernandes
-biography: Diácono(a) da Igreja Anglicana Continuante.
+full_name: Leila Bruno Fernandes
+biography: Listado no clero da Igreja Anglicana Continuante (diaconisa) no blog da igreja.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: junto com os diáconos Alexandre Dias Oliveira, Maurício Pereira da Silva e Leila Bruno Fernandes.
-  page: '108'
+- source: lpq-iac-diaconos
+  quote: Diaconisa Leila Bruno Fernandes
 affiliations:
+- jurisdiction: iac
+  role: other
+  role_description: diaconisa
+  status: confirmed
+  sources:
+  - source: lpq-iac-diaconos
+    quote: Diaconisa Leila Bruno Fernandes
+  notes: Lista sem datas de ordenação nem ordenantes.
 - jurisdiction: iac
   role: clergy
   status: probable

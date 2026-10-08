@@ -4,10 +4,53 @@ acronym: ICALib
 name: ICAL
 aliases:
 - Igreja Católica Apostólica Libertadora
+- Igreja Católica Apostólica Libertadora (ICAL)
 type: other
 country: BR
-description: Igreja católica independente do bispo Osiel Luiz Santos.
+founded:
+  date: '1989-02-03'
+  sources:
+  - source: lvc-icalib-blog-2011
+    quote: >-
+      Em 3 de fevereiro de 1989 celebrei a primeira missa e fundei a Igreja Católica Apostólica Libertadora, que
+      só em 9 de agosto de 2009 foi registrada oficialmente em cartório
+  - source: lvc-icalib-cnpj
+    quote: '"data_inicio_atividade":"2009-09-04"'
+  - source: lvc-icalib-cnpj
+    quote: '"descricao_situacao_cadastral":"INAPTA"'
+  - source: lvc-icalib-blog-2009
+    quote: A Igreja Católica Apostólica Libertadora além de ecumênica é também política
+description: >-
+  Igreja de padres casados fundada, segundo Osiel Luiz Santos, em 03/02/1989 em Goiânia, registrada em cartório
+  em 2009 (CNPJ 11.176.954/0001-76, aberto em 04/09/2009; situação 'inapta' desde 18/10/2018). Declara-se 'Sé Primacial
+  Apostólica no Brasil' e filha da Igreja Romana, com celibato opcional e ordenação de mulheres. Mantinha comunhão
+  plena com a Igreja Anglicana Ortodoxa no Brasil (2014).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Osiel Luiz Santos da Igreja Católica Apostólica Libertadora
-  page: '131'
+- source: lvc-icalib-blog-2011
+  quote: >-
+    Em 3 de fevereiro de 1989 celebrei a primeira missa e fundei a Igreja Católica Apostólica Libertadora, que só
+    em 9 de agosto de 2009 foi registrada oficialmente em cartório
+- source: lvc-icalib-cnpj
+  quote: '"data_inicio_atividade":"2009-09-04"'
+- source: lvc-icalib-cnpj
+  quote: '"descricao_situacao_cadastral":"INAPTA"'
+- source: lvc-icalib-blog-2009
+  quote: A Igreja Católica Apostólica Libertadora além de ecumênica é também política
+relations:
+- type: in_communion_with
+  target: iaob-2013
+  date: '2014'
+  led_by:
+  - adolfo-batista
+  - osiel-luiz-santos
+  status: confirmed
+  sources:
+  - source: lvc-iaob-blog-2014
+    quote: 'Alem destes Ministérios  da IAOB Temos comunhão Plena com as seguintes Igrejas:'
+  - source: lvc-iaob-blog-2014
+    quote: >-
+      ICAL Igreja Católica Apostólica Libertadora de Goiânia GO sob a direção do Revmo Dom Osiel Luiz Santos (Dom
+      João Paulo)
+  notes: >-
+    Declaração da IAOB em blog de 25/10/2014 (que também lista a Igreja Episcopal do Evangelho Pleno e uma igreja
+    católica do México de tradição anglicana). O site atual da IAOB repete a comunhão plena com a ICAL e a IEEP.

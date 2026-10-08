@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: simeao-pereira-de-lima
+name: Simeão Pereira de Lima
+birth:
+  date: '1971-05-08'
+  sources:
+  - source: lvc-ivcm-site
+    quote: Simeão Pereira de Lima, bispo diocesano para toda Região Sudeste de Minas Gerais
+biography: >-
+  Bispo diocesano para a Região Sudeste de Minas Gerais, consagrado por José Fernando de Faria em 07/01/2024, segundo
+  a IVCM.
+sources:
+- source: lvc-ivcm-site
+  quote: Simeão Pereira de Lima, bispo diocesano para toda Região Sudeste de Minas Gerais
+ordinations:
+- order: episcopate
+  date: '2024-01-07'
+  place: Espaço do Anfiteatro da Faculdade de Medicina, Pouso Alegre (MG)
+  jurisdiction: ivcmb
+  office: diocesan
+  principal_consecrator: jose-fernando-de-faria
+  status: probable
+  sources:
+  - source: lvc-ivcm-site
+    quote: >-
+      Em 07/01/2024 na Espaço do Anfiteatro da Faculdade de Medicina na cidade de Pouso Alegre – MG, José Fernando
+      de Faria consagrou;
+  - source: lvc-ivcm-site
+    quote: Simeão Pereira de Lima, bispo diocesano para toda Região Sudeste de Minas Gerais
+  notes: Fonte única (site da IVCM).
