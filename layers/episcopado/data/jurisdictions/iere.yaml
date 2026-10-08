@@ -4,8 +4,20 @@ acronym: IERE
 name: Igreja Espanhola Reformada Episcopal
 type: national_church
 country: ES
-description: Igreja ligada à Comunhão Anglicana na Espanha.
+founded:
+  date: '1880'
+  sources:
+  - source: fund-wp-en-iere
+    quote: >-
+      It was founded in 1880 and since 1980 has been an extra-provincial church under the metropolitan authority
+      of the Archbishop of Canterbury.
+  - source: fund-wp-en-iere
+    quote: The IERE considers its origin to be in 1868
+description: A própria IERE considera sua origem em 1868; organizada oficialmente em 1880 (sínodo de Sevilha).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Igreja Espanhola Reformada Episcopal, ligada à Comunhão Anglicana na Espanha
-  page: '133'
+- source: fund-wp-en-iere
+  quote: >-
+    It was founded in 1880 and since 1980 has been an extra-provincial church under the metropolitan authority of
+    the Archbishop of Canterbury.
+- source: fund-wp-en-iere
+  quote: The IERE considers its origin to be in 1868

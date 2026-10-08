@@ -1,7 +1,22 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-de-garanhuns
+acronym: diocese-de-garanhuns
 name: Diocese de Garanhuns
 type: diocese
+country: BR
+founded:
+  date: '2024-10-13'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: também foi instalada em 13 de outubro de 2024, sendo liderada pelo bispo Thúlio Luna.
+    page: '62'
+description: >-
+  Instalação da diocese (IECB) em 13/10/2024 (a frase do livro refere-se à diocese local de Garanhuns, derivada
+  da Paróquia Monte Sinai).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: também foi instalada em 13 de outubro de 2024, sendo liderada pelo bispo Thúlio Luna.
+  page: '62'
 relations:
 - type: part_of
   target: iecb

@@ -1,7 +1,11 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: sierra-leone
-name: Sierra Leone
+name: Diocese of Sierra Leone
+aliases:
+- Sierra Leone
 type: diocese
+tradition: anglican
+country: SL
 relations:
 - type: part_of
   target: province-of-west-africa

@@ -1,7 +1,11 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: eastern-newfoundland-and-labrador
-name: Eastern Newfoundland and Labrador
+name: Diocese of Eastern Newfoundland and Labrador
+aliases:
+- Eastern Newfoundland and Labrador
 type: diocese
+tradition: anglican
+country: CA
 relations:
 - type: part_of
   target: anglican-church-of-canada

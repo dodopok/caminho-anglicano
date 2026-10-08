@@ -4,15 +4,43 @@ acronym: IERB
 name: Igreja Episcopal Reformada do Brasil (missão brasileira da Reformed Episcopal Church)
 type: national_church
 country: BR
+founded:
+  date: '2001-07-29'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A Igreja Episcopal Reformada tem origem em 29 de julho de 2001, na cidade de São Paulo
+    page: '168'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Episcopal Reformada [2001] (Extinta em 2009, com a criação da IARB)
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: Na Parte V existe um capítulo sobre a história da Igreja Episcopal Reformada.
+    page: '133'
+dissolved:
+  date: '2009'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A Igreja Episcopal Reformada tem origem em 29 de julho de 2001, na cidade de São Paulo
+    page: '168'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Episcopal Reformada [2001] (Extinta em 2009, com a criação da IARB)
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: Na Parte V existe um capítulo sobre a história da Igreja Episcopal Reformada.
+    page: '133'
 description: >-
-  Missão brasileira da Reformed Episcopal Church (REC), de orientação calvinista e evangelical, liderada por Sebastião
-  Mendes de Freitas; dela saiu em 2005 a Igreja Anglicana Reformada do Brasil (Francisco Buzzo).
+  IERB parece ser a mesma jurisdição que a base já registra como "ier" (Igreja Episcopal Reformada, Brasil; fundada
+  2001-07-29, extinta 2009). A nota 39 do livro remete ao capítulo da "Igreja Episcopal Reformada" ao falar de Sebastião
+  Mendes de Freitas, o mesmo da IERB. Sugere-se mesclar/duplicata.
 sources:
 - source: cant-novas-igrejas-2024
-  quote: a missão brasileira da Igreja Episcopal Reformada (Reformed Episcopal Church – REC)
-  page: '117'
+  quote: A Igreja Episcopal Reformada tem origem em 29 de julho de 2001, na cidade de São Paulo
+  page: '168'
 - source: cant-novas-igrejas-2024
-  quote: até então ligada à Igreja Episcopal Reformada do Brasil.
+  quote: Igreja Episcopal Reformada [2001] (Extinta em 2009, com a criação da IARB)
+  page: '172'
+- source: cant-novas-igrejas-2024
+  quote: Na Parte V existe um capítulo sobre a história da Igreja Episcopal Reformada.
   page: '133'
 relations:
 - type: part_of
