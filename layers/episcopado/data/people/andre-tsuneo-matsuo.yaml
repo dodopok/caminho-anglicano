@@ -23,7 +23,7 @@ sources:
 ordinations:
 - order: diaconate
   date: 1960-11
-  jurisdiction: ieab
+  jurisdiction: nskk
   status: contested
   sources:
   - source: cd1965
@@ -38,11 +38,17 @@ ordinations:
     - source: kickhofel-1995
       quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1962 - … André Tsuneo Matsuo *
       page: '371'
+  - field: jurisdiction
+    value: ieab
+    sources:
+    - source: kickhofel-1995
+      quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1962 - … André Tsuneo Matsuo *
+      page: '371'
   notes: >-
-    Ordenante no diretório: 'Bp of Kobe'. Ordenado por bispo fora dos distritos brasileiros; jurisdição não atribuída.
-    Ordenante no diretório: "Bp Bp of Kobe" (bispo de fora do Brasil, não identificado na base). Ano tirado da lista
-    do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado. No livro o
-    nome traz a marca "*", cuja nota explicativa não foi fotografada.
+    Ordenante no diretório: 'Bp of Kobe'. Ordenado pelo bispo Bp of Kobe, da igreja de origem, antes de servir no
+    Brasil; nome completo do bispo não identificado. Ano tirado da lista do clero nacional por ordem de ordenação
+    ao diaconato (Kickhöfel, 1995); ordenante não informado. No livro o nome traz a marca "*", cuja nota explicativa
+    não foi fotografada.
 - order: presbyterate
   date: 1964-01
   jurisdiction: dmcb

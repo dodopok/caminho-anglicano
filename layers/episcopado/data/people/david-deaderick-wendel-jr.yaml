@@ -23,24 +23,24 @@ sources:
 ordinations:
 - order: diaconate
   date: 1959-06
-  jurisdiction: null
+  jurisdiction: tec
   status: confirmed
   sources:
   - source: cd1965
     quote: D Jun 59 Bp Murray P Jun 60 Bp Chilton for Ala
   notes: >-
-    Ordenante no diretório: 'Bp Murray'. Ordenado por bispo fora dos distritos brasileiros; jurisdição não atribuída.
-    Ordenante no diretório: "Bp Murray" (bispo de fora do Brasil, não identificado na base).
+    Ordenante no diretório: 'Bp Murray'. Ordenado pelo bispo Murray, da igreja de origem, antes de servir no Brasil;
+    nome completo do bispo não identificado.
 - order: presbyterate
   date: 1960-06
-  jurisdiction: null
+  jurisdiction: tec
   status: confirmed
   sources:
   - source: cd1965
     quote: D Jun 59 Bp Murray P Jun 60 Bp Chilton for Ala
   notes: >-
-    Ordenante no diretório: 'Bp Chilton for Ala for Ala'. Ordenado por bispo fora dos distritos brasileiros; jurisdição
-    não atribuída. Ordenante no diretório: "Bp Chilton" (bispo de fora do Brasil, não identificado na base).
+    Ordenante no diretório: 'Bp Chilton for Ala for Ala'. Ordenado pelo bispo Chilton, da igreja de origem, antes
+    de servir no Brasil; nome completo do bispo não identificado.
 affiliations:
 - jurisdiction: dmcb
   role: clergy
