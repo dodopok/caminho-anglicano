@@ -316,7 +316,15 @@ function zoom(factor: number) {
   camera?.animate({ ratio: camera.ratio * factor }, { duration: 250 })
 }
 
-defineExpose({ fit: (animate = true) => fit(animate), zoom, resize: () => sigma?.resize() })
+defineExpose({
+  fit: (animate = true) => fit(animate),
+  zoom,
+  // resize() só ajusta os canvases (e os limpa); sem refresh() o grafo fica em branco até a próxima interação.
+  resize: () => {
+    sigma?.resize()
+    sigma?.refresh()
+  }
+})
 
 onMounted(async () => {
   const [{ default: SigmaClass }, { default: GraphCtorImport }, { default: fa2 }, utils] = await Promise.all([

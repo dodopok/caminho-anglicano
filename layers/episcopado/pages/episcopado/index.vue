@@ -123,9 +123,22 @@
       <!-- Painel do nó selecionado -->
       <aside
         v-if="selectedNode"
-        class="flex h-[45%] flex-none flex-col overflow-hidden border-t border-ep-rule bg-ep-card min-[1000px]:h-auto min-[1000px]:w-[380px] min-[1000px]:border-l min-[1000px]:border-t-0 min-[1000px]:border-ep-line"
+        class="ep-node-sheet flex flex-none flex-col overflow-hidden border-t border-ep-rule bg-ep-card min-[1000px]:h-auto min-[1000px]:w-[380px] min-[1000px]:border-l min-[1000px]:border-t-0 min-[1000px]:border-ep-line"
+        :class="{ 'ep-node-sheet--dragging': panelDrag }"
+        :style="{ '--panel-h': `${panelHeight}%` }"
         aria-label="Mini-ficha do nó selecionado"
       >
+        <!-- Alça para arrastar (só no celular/tablet): puxe para cima para ver a mini-ficha inteira. -->
+        <button
+          type="button"
+          class="flex h-6 w-full flex-none touch-none items-center justify-center bg-ep-card min-[1000px]:hidden"
+          :aria-label="panelHeight >= PANEL_SNAPS[PANEL_SNAPS.length - 1] ? 'Recolher a mini-ficha' : 'Expandir a mini-ficha'"
+          :aria-expanded="panelHeight >= PANEL_SNAPS[PANEL_SNAPS.length - 1]"
+          @pointerdown="startPanelDrag"
+          @click="togglePanel"
+        >
+          <span class="h-1 w-10 rounded-full bg-ep-rule" aria-hidden="true" />
+        </button>
         <EpiscopadoNodePanel
           :node="selectedNode"
           :graph="graph"
@@ -221,6 +234,52 @@ const { filters, trail, visit } = useEpiscopadoExplorer()
 const graphRef = ref<{ fit: (animate?: boolean) => void; zoom: (factor: number) => void; resize: () => void } | null>(null)
 const graphWrap = ref<HTMLElement | null>(null)
 const sheet = ref<HTMLElement | null>(null)
+
+// --- Mini-ficha no celular: folha inferior que se arrasta entre três alturas (% da área do grafo).
+const PANEL_SNAPS = [45, 70, 94]
+const panelHeight = ref(PANEL_SNAPS[0])
+const panelDrag = ref(false)
+let dragMoved = false
+
+function startPanelDrag(event: PointerEvent) {
+  const handle = event.currentTarget as HTMLElement
+  const area = handle.closest('aside')?.parentElement
+  if (!area) return
+  const box = area.getBoundingClientRect()
+  const startY = event.clientY
+  const startH = panelHeight.value
+  dragMoved = false
+  panelDrag.value = true
+  handle.setPointerCapture(event.pointerId)
+  const move = (e: PointerEvent) => {
+    if (Math.abs(e.clientY - startY) > 4) dragMoved = true
+    const h = startH + ((startY - e.clientY) / box.height) * 100
+    panelHeight.value = Math.min(PANEL_SNAPS[PANEL_SNAPS.length - 1], Math.max(20, h))
+  }
+  const end = () => {
+    handle.removeEventListener('pointermove', move)
+    handle.removeEventListener('pointerup', end)
+    handle.removeEventListener('pointercancel', end)
+    panelDrag.value = false
+    // Encaixa na altura mais próxima.
+    panelHeight.value = PANEL_SNAPS.reduce((a, b) => (Math.abs(b - panelHeight.value) < Math.abs(a - panelHeight.value) ? b : a))
+  }
+  handle.addEventListener('pointermove', move)
+  handle.addEventListener('pointerup', end)
+  handle.addEventListener('pointercancel', end)
+}
+
+/** Toque na alça: alterna entre recolhida e expandida (arrastar não conta como toque). */
+function togglePanel() {
+  if (dragMoved) {
+    dragMoved = false
+    return
+  }
+  const top = PANEL_SNAPS[PANEL_SNAPS.length - 1]
+  panelHeight.value = panelHeight.value >= top ? PANEL_SNAPS[0] : top
+}
+
+// O ResizeObserver da área do grafo (mais abaixo) redimensiona e reenquadra o Sigma quando a folha muda de altura.
 const counts = ref<[number, number] | undefined>(undefined)
 const legendOpen = ref(false)
 /** "Como explorar" começa aberto, exceto em telas pequenas (ver onMounted). */
@@ -444,6 +503,19 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+.ep-node-sheet {
+  height: var(--panel-h, 45%);
+  transition: height 0.2s ease;
+}
+.ep-node-sheet--dragging {
+  transition: none;
+}
+@media (min-width: 1000px) {
+  .ep-node-sheet {
+    height: auto;
+    transition: none;
+  }
+}
 .ep-sheet-enter-active,
 .ep-sheet-leave-active {
   transition: transform 220ms ease, opacity 220ms ease;
