@@ -134,6 +134,18 @@ affiliations:
     page: '117'
   notes: 'Local: Paróquia de São Lucas, Rio de Janeiro.'
 - jurisdiction: ieab
+  role: bishop
+  start: '2017'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2017- – Eduardo Coelho Grillo
+    page: 518-520
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+- jurisdiction: ieab
   role: coadjutor_bishop
   diocese: ieab-darj
   start: '2017-04-08'
@@ -164,10 +176,14 @@ affiliations:
   - source: ieab-dioceses
     quote: Bispo Diocesano – Revmo. Eduardo Grillo
   - source: costa2021
+    quote: Diocese Anglicana do Rio de Janeiro … 2017- – Eduardo Coelho Grillo
+    page: '521'
+  - source: costa2021
     quote: >-
       devido à eleição do bispo Eduardo Grillo para a Diocese Anglicana do Rio de Janeiro, em setembro de 2017.
     page: '247'
-  notes: Instituído pelo primaz Francisco de Assis da Silva. Data é da eleição.
+  notes: >-
+    Instituído pelo primaz Francisco de Assis da Silva. Anexo D da tese (bispos por diocese). Data é da eleição.
   discrepancies:
   - field: start
     value: 2017-09

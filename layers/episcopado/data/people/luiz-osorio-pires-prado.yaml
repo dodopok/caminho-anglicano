@@ -156,6 +156,20 @@ affiliations:
         de Pelotas.
       page: '311'
 - jurisdiction: ieab
+  role: bishop
+  start: '1987'
+  end: '2000'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1987-2000 – Luiz Osório Pires Prado
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. O Anexo
+    D dá início em 1988 em Pelotas.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dap
   start: '1988'
@@ -174,6 +188,9 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Anglicana de Pelotas … 1988 - Luiz Osório Pires Prado
     page: '368'
+  - source: costa2021
+    quote: Diocese Anglicana de Pelotas … 1988-2000 – Luiz Osório Pires Prado
+    page: '522'
   - source: costa2021
     quote: Posteriormente, o bispo Prado foi eleito para ser o primeiro diocesano de Pelotas.
     page: '98'
@@ -212,8 +229,8 @@ affiliations:
       quote: tornou-se o segundo bispo da Diocese Anglicana de Pelotas, após a aposentadoria do bispo Prado.
       page: '105'
   notes: >-
-    Fim em 1999 (Wikipedia/dapsul) ou 2000 (Costa). Primeiro ordinário de Pelotas, substituído por Sebastião Gameleira
-    em 2000.
+    Fim em 1999 (Wikipedia/dapsul) ou 2000 (Costa). Anexo D da tese (bispos por diocese). Primeiro ordinário de
+    Pelotas, substituído por Sebastião Gameleira em 2000.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dm

@@ -108,6 +108,20 @@ affiliations:
     page: '284'
   notes: Missionário em Belém do Pará (Missão de Santa Maria) e depois em Itariri e Santos.
 - jurisdiction: ieab
+  role: bishop
+  start: '1971'
+  end: '1984'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1971-1984 – Elliott Lorenz Sorge
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. O Anexo
+    D dá 1971-1977 em São Paulo.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dasp
   start: 1971-01
@@ -134,10 +148,14 @@ affiliations:
       da maioria do clero, provocando sua renúncia em 19 de junho de 1977.
     page: '287'
   - source: costa2021
+    quote: Diocese Anglicana de São Paulo … 1971-1977 – Elliott Lorenz Sorge
+    page: '521'
+  - source: costa2021
     quote: Após sua renúncia em 1977, voltou aos Estados Unidos, sendo eleito bispo de Easton
     page: '86'
   notes: >-
     Renunciou ao ser nomeado oficial no Centro da Igreja Episcopal (Nova York); depois bispo de Easton (TEC) 1983-1993.
+    Anexo D da tese (bispos por diocese).
   discrepancies:
   - field: end
     value: '1976'

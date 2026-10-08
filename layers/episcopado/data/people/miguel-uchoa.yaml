@@ -6,8 +6,10 @@ aliases:
 - Miguel Angelo Uchoa Cavalcanti
 - Miguel Uchoa Cavalcanti
 - Miguel Uchôa Cavalcanti
+- Miguel Ângelo de A. Uchôa Cavalcanti
 - Miguel Ângelo de Andrade Uchôa Cavalcanti
 - Pr. Miguel Uchôa
+- Rev. Miguel Uchoa Cavalcanti
 - Revmo. Dr. Miguel Uchoa
 - The Most Rev. Miguel Uchoa Cavalcanti
 - arcebispo Miguel Uchôa Cavalcanti
@@ -151,8 +153,8 @@ affiliations:
   role: clergy
   diocese: ieab-dar
   start: '1993'
-  end: '2005'
-  end_reason: schism
+  end: '2005-08-23'
+  end_reason: deposition
   status: contested
   sources:
   - source: ieabrecife-clero-2002
@@ -172,6 +174,12 @@ affiliations:
   - source: queiroz-2004-ufpe
     quote: De lá pra cá, eu sou o reitor dessa paróquia
   - source: costa2021
+    quote: >-
+      Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+      Ordens, os clérigos a seguir mencionados: … Rev. Miguel Ângelo de A. Uchôa Cavalcanti … Recife, 23 de agosto
+      de 2005.
+    page: 560-561
+  - source: costa2021
     quote: Paróquia Anglicana do Espírito Santo, liderada pelo reverendo Miguel Uchôa
     page: '193'
   notes: >-
@@ -179,9 +187,14 @@ affiliations:
     de junho de 1997). Data de ordenação diaconal/presbiteral NÃO encontrada em nenhuma fonte acessível; fundou
     a PAES em 1996, ainda na IEAB. Reitor da Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes) desde
     agosto de 1996; antes "pastor da juventude" e coadjutor de Paulo Garcia por 5 anos na Catedral do Espinheiro.
-    Fim do vínculo com a IEAB não coberto por esta fonte (provavelmente 2005, com a separação da diocese). Reitor
-    da Paróquia Anglicana do Espírito Santo (Jaboatão). Em 2005 alinhado a Robinson (convidado com ele ao Encontro
-    Sul-Sul por Akinola); a tese não o lista nominalmente entre os 32 desligados (lista no Anexo R, fora do capítulo).
+    Fim do vínculo com a IEAB não coberto por esta fonte (provavelmente 2005, com a separação da diocese). Anexo
+    R: Decreto Diocesano nº 01/2005 (Recife, 23/08/2005) de Dom Filadelfo Oliveira Neto, Autoridade Eclesiástica
+    da Diocese Anglicana do Recife (IEAB), exclui o(a) clérigo(a) 'da Comunhão da Igreja Episcopal Anglicana do
+    Brasil e, conseqüentemente, das Sagradas Ordens' por abandono de comunhão. motivo_fim 'deposicao' porque o efeito
+    é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
+    adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado. Reitor da Paróquia Anglicana
+    do Espírito Santo (Jaboatão). Em 2005 alinhado a Robinson (convidado com ele ao Encontro Sul-Sul por Akinola);
+    a tese não o lista nominalmente entre os 32 desligados (lista no Anexo R, fora do capítulo).
   discrepancies:
   - field: end
     value: '2004'
@@ -221,11 +234,20 @@ affiliations:
   - source: g1-2012-12-08-uchoa-posse
     quote: >-
       Miguel Uchôa continuará como reitor da Paróquia Anglicana do Espírito Santo, em Jaboatão dos Guararapes.
+  - source: costa2021
+    quote: >-
+      Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+      Ordens, os clérigos a seguir mencionados: … Rev. Miguel Ângelo de A. Uchôa Cavalcanti … Os clérigos não atenderam
+      à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
+      mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+    page: 560-562
   notes: >-
     Wikipedia (terciária). Antes disso era clérigo da IEAB (Diocese do Recife), reitor da PAES desde 1996. Local:
     Paróquia Anglicana Espírito Santo, reitor/fundador. Em 1996 a PAES era da Diocese do Recife da IEAB; jurisdição
     posta como DAR por simplificação — ajustar (IEAB 1996–2005, DAR 2005–2018, IAB 2018–). Deixou a reitoria em
-    23/08/2026 (filho Gabriel instalado deão).
+    23/08/2026 (filho Gabriel instalado deão). Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005,
+    manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como
+    ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
   discrepancies:
   - field: start
     value: '1996-08-22'
@@ -237,6 +259,16 @@ affiliations:
     - source: g1-2012-12-08-uchoa-posse
       quote: >-
         Miguel Uchôa continuará como reitor da Paróquia Anglicana do Espírito Santo, em Jaboatão dos Guararapes.
+  - field: start
+    value: '2005'
+    sources:
+    - source: costa2021
+      quote: >-
+        Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+        Ordens, os clérigos a seguir mencionados: … Rev. Miguel Ângelo de A. Uchôa Cavalcanti … Os clérigos não
+        atenderam à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos
+        votos de ordenação, mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+      page: 560-562
 - jurisdiction: diocese-anglicana-recife
   role: diocesan_bishop
   start: '2012-12-08'
@@ -652,6 +684,21 @@ events:
     quote: >-
       O encerramento ocorrerá no domingo, às 10h, com um culto solene que marcará a instituição do reverendo Gabriel
       Uchoa como novo deão
+- type: other
+  date: '2005-05-26'
+  description: >-
+    O Arcediago Rev. Miguel Uchoa Cavalcanti, em nome da Diocese Anglicana do Recife de Robinson Cavalcanti, discursa
+    numa reunião do grupo inglês 'Anglican Mainstream', criticando a IEAB e seu Primaz.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 26 de maio de 2005, o Arcediago Rev. Miguel Uchoa Cavalcanti, representando conforme sua expressão “toda
+      a Diocese Anglicana do Recife”
+    page: '558'
+  - source: costa2021
+    quote: profere palestra na reunião de uma entidade da Inglaterra chamada “Anglican Mainstream”
+    page: '558'
 - type: other
   date: '2005-11-14'
   description: >-

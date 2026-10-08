@@ -69,6 +69,19 @@ ordinations:
     Noyama. A tese NÃO informa local nem sagrantes. Bispo sufragâneo da Diocese Anglicana do Recife (IEAB), eleito
     no Concílio de Paripueira (AL) em dezembro de 2001. A tese não informa local nem sagrantes.
 affiliations:
+- jurisdiction: ieab
+  role: bishop
+  start: '1998'
+  end: '2017'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1998-2017 – Filadelfo Oliveira Neto
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab-dar
   role: other
   role_description: secretário executivo e arcediago
@@ -89,6 +102,20 @@ affiliations:
   sources:
   - source: costa2021
     quote: A missão do novo epíscopo era auxiliar o seu bispo diocesano, Robinson Cavalcanti
+- jurisdiction: ieab
+  role: other
+  role_description: bispo diocesano interino
+  diocese: ieab-dar
+  start: '2005'
+  end: '2006'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Diocese Anglicana do Recife … 2005-2006 – Filadelfo Oliveira Neto (Interino)
+    page: '522'
+  notes: >-
+    Anexo D da tese (bispos por diocese). Nomeado Autoridade Eclesiástica da DAR pela Resolução 002/2005 de 22/02/2005
+    (Anexo O).
 - jurisdiction: ieab
   role: bishop
   diocese: ieab-dar
@@ -164,14 +191,23 @@ affiliations:
   status: probable
   sources:
   - source: costa2021
+    quote: >-
+      NOMEIO, COMO AUTORIDADE ECLESIÁSTICA DA DIOCESE ANGLICANA DO RECIFE, enquanto durar os efeitos da supra-citada
+      resolução, DOM FILADELFO OLIVEIRA NETO
+    page: '554'
+  - source: costa2021
+    quote: Porto Alegre, 22 de fevereiro de 2005.
+    page: '554'
+  - source: costa2021
     quote: Ato contínuo, a Resolução 002/2005, de 22 de fevereiro
     page: '223'
   - source: costa2021
     quote: nomeou o bispo Filadelfo Oliveira como Autoridade Eclesiástica da Diocese Anglicana do Recife.
     page: '223'
   notes: >-
-    Fim = instalação de Sebastião Gameleira (inferido; a tese diz que os interinos ocuparam os postos entre 2004
-    e 2006).
+    Anexo O: nomeado Autoridade Eclesiástica da Diocese Anglicana do Recife pelo Primaz. O Anexo D o lista como
+    bispo interino do Recife em 2005-2006 (sucedido por Sebastião Armando Gameleira Soares em 2006). Fim = instalação
+    de Sebastião Gameleira (inferido; a tese diz que os interinos ocuparam os postos entre 2004 e 2006).
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-darj
@@ -186,11 +222,15 @@ affiliations:
     quote: >-
       foi eleito bispo coadjutor pelo Concílio extraordinário da DARJ, após a resignação do bispo Filadelfo Oliveira.
   - source: costa2021
+    quote: Diocese Anglicana do Rio de Janeiro … 2008-2017 – Filadelfo Oliveira Neto
+    page: '521'
+  - source: costa2021
     quote: Sua instalação aconteceu na Catedral do Redentor em 29 de agosto do
     page: '111'
   - source: costa2021
     quote: após a resignação do bispo Filadelfo Oliveira.
     page: '117'
+  notes: Anexo D da tese (bispos por diocese).
   discrepancies:
   - field: end
     value: '2016'
@@ -224,6 +264,23 @@ affiliations:
   notes: >-
     Pároco da Paróquia da Santíssima Trindade (Recife). A frase sugere que ele estava antes ligado ao Rio de Janeiro
     (ver dúvidas).
+- jurisdiction: ieab
+  role: other
+  role_description: bispo sufragâneo
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      3. A presente decisão, naturalmente supõe que o Bispo Sufragâneo, Dom Filadelfo Oliveira, de acordo com suas
+      prerrogativas canônicas, continua seu ministério pastoral junto às comunidades da Diocese Anglicana do Recife.
+    page: '546'
+  - source: costa2021
+    quote: Porto Alegre, 16 de setembro de 2004.
+    page: '546'
+  notes: >-
+    Anexo K: em 16/09/2004 era o Bispo Sufragâneo da Diocese Anglicana do Recife. Início e fim não informados nos
+    anexos.
 events:
 - type: other
   date: '2004-09-16'
@@ -360,6 +417,103 @@ events:
     quote: >-
       The diocesan synod, under the ecclesiastical authority of the suffragan bishop Filadelfo Oliveira as well
       as the decisions and resolutions taken there were considered legitimate and valid by the court.
+- type: other
+  date: '2004-09-16'
+  description: >-
+    Decreto da Câmara dos Bispos da IEAB (reunião extraordinária em Porto Alegre, presidida pelo Primaz Orlando
+    Santos de Oliveira): institui supervisão episcopal especial para as comunidades e o clero da Diocese Anglicana
+    do Recife em dissenso com o bispo diocesano Robinson Cavalcanti, nomeia Dom Maurício Andrade (bispo de Brasília)
+    supervisor episcopal especial e mantém o ministério do bispo sufragâneo Dom Filadelfo Oliveira. Atendeu a pedido
+    de 13 clérigos e clérigas da diocese.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      A Câmara dos Bispos, reunida extraordinariamente na cidade de Porto Alegre, sob a Presidência do Bispo Primaz,
+      diante da solicitação de clérigos e clérigas da Diocese Anglicana do Recife
+    page: '545'
+  - source: costa2021
+    quote: >-
+      1. Decretar a supervisão episcopal especial das comunidades e clérigos e clérigas da Diocese Anglicana do
+      Recife que se sentem pastoralmente desassistidos por seu Bispo diocesano, face a divergências teológicas e
+      pastorais.
+    page: '546'
+  - source: costa2021
+    quote: >-
+      2. Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília para desempenhar a função de supervisor
+      episcopal especial
+    page: '546'
+  - source: costa2021
+    quote: >-
+      3. A presente decisão, naturalmente supõe que o Bispo Sufragâneo, Dom Filadelfo Oliveira, de acordo com suas
+      prerrogativas canônicas, continua seu ministério pastoral junto às comunidades da Diocese Anglicana do Recife.
+    page: '546'
+  - source: costa2021
+    quote: Porto Alegre, 16 de setembro de 2004.
+    page: '546'
+- type: other
+  date: '2005-02-22'
+  description: >-
+    Resolução 002/2005 do Primaz Orlando Santos de Oliveira: nomeia Dom Filadelfo Oliveira Neto Autoridade Eclesiástica
+    da Diocese Anglicana do Recife enquanto durar a suspensão de Robinson Cavalcanti.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      NOMEIO, COMO AUTORIDADE ECLESIÁSTICA DA DIOCESE ANGLICANA DO RECIFE, enquanto durar os efeitos da supra-citada
+      resolução, DOM FILADELFO OLIVEIRA NETO
+    page: '554'
+  - source: costa2021
+    quote: Porto Alegre, 22 de fevereiro de 2005.
+    page: '554'
+- type: other
+  date: '2005-02-25'
+  description: >-
+    Resolução Diocesana da DAR 001/2005, de Dom Filadelfo Oliveira Neto como Autoridade Eclesiástica: declara nulos
+    os atos do Concílio Extraordinário convocado por Robinson Cavalcanti (suspenso) para 26/02/2005 em Recife e
+    qualifica a participação como insubordinação gravíssima.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Declarar nulo de fato e de direito qualquer decisão, deliberação e atos normativos e administrativos emanados
+      do Concílio Extraordinário convocado para ser realizado no dia 26 de fevereiro de 2005, na Cidade de Recife,
+      pelo Bispo Robinson Cavalcanti, que se encontra suspenso do Ofício e do Ministério.
+    page: '555'
+  - source: costa2021
+    quote: Recife, 25 de Fevereiro de 2005.
+    page: '555'
+- type: deposition
+  date: '2005-08-23'
+  description: >-
+    Decreto Diocesano nº 01 de 2005 da Autoridade Eclesiástica da Diocese Anglicana do Recife (IEAB), Dom Filadelfo
+    Oliveira Neto: exclui da comunhão da IEAB e, consequentemente, das Sagradas Ordens 32 clérigos e clérigas da
+    diocese, por abandono de comunhão, por declararem plena comunhão com o bispo deposto Robinson Cavalcanti. Acompanhado
+    de Exposição de Motivos ao Primaz e à Câmara dos Bispos, da mesma data.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+      Ordens, os clérigos a seguir mencionados:
+    page: '560'
+  - source: costa2021
+    quote: Recife, 23 de agosto de 2005. Dom Filadelfo Oliveira Neto Autoridade Eclesiástica da DAR
+    page: '561'
+  - source: costa2021
+    quote: >-
+      decreta a exclusão dos clérigos da Diocese Anglicana do Recife, por abandono de Comunhão, arrolados em anexo.
+    page: '562'
+  - source: costa2021
+    quote: >-
+      Em 4 de julho do ano em curso, este expositor de motivos, no uso da sua autoridade eclesiástica, convocou
+      por carta (anexo II), os clérigos citados no anexo 1
+    page: '562'
+  - source: costa2021
+    quote: >-
+      Os clérigos não atenderam à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar
+      os nossos votos de ordenação, mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+    page: '562'
 - type: other
   date: '2001-12-07'
   description: Filadelfo Oliveira Neto eleito bispo sufragâneo da Diocese Anglicana do Recife

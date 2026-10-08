@@ -4,6 +4,7 @@ name: Olavo Ventura Luiz
 full_name: Olavo Ventura Luiz
 aliases:
 - Olavo Ventura
+- Olavo Ventura Ruiz
 - Olavo Ventura Ruiz (grafia em Costa 2021)
 birth:
   date: '1938-12-28'
@@ -126,6 +127,19 @@ ordinations:
     76 dá 28/11/1976. Local e sagrantes não informados. Nota 138: nº 03.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '1976'
+  end: '1993'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1976-1993 – Olavo Ventura Luiz
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dso
   start: '1976-11-28'
@@ -150,6 +164,9 @@ affiliations:
       aos trinta e sete anos no segundo concílio extraordinário (193) realizado em 4 de setembro de 1976 e sagrado
       ao episcopado em 28 de novembro do mesmo ano como o terceiro bispo daquela diocese (194).
     page: '260'
+  - source: costa2021
+    quote: Diocese Anglicana Sul-Ocidental (Santa Maria-RS) … 1977-1992 – Olavo Ventura Luiz
+    page: '521'
   - source: costa2021
     quote: >-
       Foi eleito pelo Concílio para ser o terceiro bispo da Diocese Sul-Ocidental, sendo sagrado em 28 de novembro
@@ -180,9 +197,15 @@ affiliations:
       quote: >-
         para suceder ao bispo Olavo Ventura Luiz na Diocese Sul-Ocidental, que faleceu durante uma missão em Moçambique.
       page: '101'
+  - field: start
+    value: '1977'
+    sources:
+    - source: costa2021
+      quote: Diocese Anglicana Sul-Ocidental (Santa Maria-RS) … 1977-1992 – Olavo Ventura Luiz
+      page: '521'
   notes: >-
     Fim divergente: 1984 (Wikipedia PT), 1992 (Costa Anexo D) ou morte em 1993 (Costa texto: Jubal eleito em 1993
-    para suceder Olavo, que faleceu).
+    para suceder Olavo, que faleceu). Anexo D da tese (bispos por diocese).
 - jurisdiction: ieab
   role: primate
   start: '1984'
@@ -213,6 +236,9 @@ affiliations:
       Luiz (interino) 1986 - Olavo Ventura Luiz 1988 - Olavo Ventura Luiz 1990 - Olavo Ventura Luiz
     page: '367'
   - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 1988-1993 – Olavo Ventura Ruiz
+    page: 523-524
+  - source: costa2021
     quote: com a presença do novo Primaz, o bispo Olavo Ventura Luiz.
     page: '98'
   - source: costa2021
@@ -224,8 +250,9 @@ affiliations:
     (grafado "Ventura Ruiz"); morreu em 09/03/1993. ENS (17/03/1993) diz que morreu em 8 de marco (Costa: 9 de marco)
     e que se tornou primaz em 1984 (provavel confusao; Sherrill era primaz em exercicio em 1984). O livro dá só
     o início de cada primado; o fim é o início do primado seguinte. Primeiro interino (1986), depois eleito em 1986
-    e reeleito em 1988 e 1990. A nota 76 diz 'por dois anos', mas o texto o chama Primaz em março, abril e outubro
-    de 1989; fim incerto. Primaz em fevereiro de 1990.
+    e reeleito em 1988 e 1990. Anexo E da tese (primazes da IEAB). A tese grafa 'Olavo Ventura Ruiz' (= Olavo Ventura
+    Luiz). A nota 76 diz 'por dois anos', mas o texto o chama Primaz em março, abril e outubro de 1989; fim incerto.
+    Primaz em fevereiro de 1990.
   discrepancies:
   - field: start
     value: '1986'
@@ -265,6 +292,25 @@ affiliations:
         on March 8.
     - source: sinopse-2003
       quote: 1986 - Novo primaz, Olavo Ventura Luiz
+  - field: start
+    value: '1988'
+    sources:
+    - source: costa2021
+      quote: Primazes da Igreja Episcopal Anglicana do Brasil … 1988-1993 – Olavo Ventura Ruiz
+      page: 523-524
+- jurisdiction: ieab
+  role: other
+  role_description: primaz interino
+  start: '1986'
+  end: '1988'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 1986-1988 – Olavo Ventura Ruiz (interino)
+    page: 523-524
+  notes: >-
+    Anexo E da tese (primazes da IEAB). A tese grafa 'Olavo Ventura Ruiz', evidente troca por 'Luiz' (Olavo Ventura
+    Luiz nos Anexos C e D).
 - jurisdiction: ieab
   role: clergy
   status: probable

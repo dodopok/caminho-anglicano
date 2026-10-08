@@ -95,6 +95,19 @@ ordinations:
     (Costa) ou 20/04/1977 (Wikipedia PT, citando Kickhofel 2006). A tese cita KICKHÖFEL (1995, p. 288) para o fato.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '1977'
+  end: '1989'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1977-1989 – Sumio Takatsu
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dasp
   start: '1977-06-12'
@@ -112,6 +125,9 @@ affiliations:
   - source: kickhofel-1995
     quote: O bispo Takatsu efetivamente se aposentou no final de 1989.
     page: '290'
+  - source: costa2021
+    quote: Diocese Anglicana de São Paulo … 1977-1989 – Sumio Takatsu
+    page: 521-522
   - source: costa2021
     quote: Foi eleito e sagrado bispo da Diocese Anglicana de São Paulo em
     page: '87'
@@ -134,6 +150,7 @@ affiliations:
     - source: costa2021
       quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
       page: '87'
+  notes: Anexo D da tese (bispos por diocese).
 events:
 - type: other
   date: '1977-04-30'

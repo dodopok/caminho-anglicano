@@ -86,6 +86,20 @@ ordinations:
   notes: Eleito no Concilio da Diocese Central de novembro de 1984.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '1985'
+  end: '1998'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1985-1998 – Sydney Alcoba Ruiz
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. O Anexo
+    D dá 1985-2000 no Rio de Janeiro.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-darj
   start: '1985-03-24'
@@ -100,10 +114,14 @@ affiliations:
   - source: costa2021
     quote: 1985-1998 – Sydney Alcoba Ruiz
   - source: costa2021
+    quote: Diocese Anglicana do Rio de Janeiro … 1985-2000 – Sydney Alcoba Ruiz
+    page: '521'
+  - source: costa2021
     quote: Sydney foi sagrado em 24 de março de 1985, na Igreja do Redentor
     page: '96'
   notes: >-
-    Anexo D: 1985-2000; Anexo C: 1985-1998. Faleceu em 14/11/2001. Fim não informado; Celso Franco eleito em 6/11/1999.
+    Anexo D: 1985-2000; Anexo C: 1985-1998. Faleceu em 14/11/2001. Anexo D da tese (bispos por diocese). Fim não
+    informado; Celso Franco eleito em 6/11/1999.
 - jurisdiction: ieab-darj
   role: diocesan_bishop
   status: probable

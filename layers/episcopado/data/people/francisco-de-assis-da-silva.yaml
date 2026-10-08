@@ -4,6 +4,7 @@ name: Francisco de Assis da Silva
 full_name: Francisco de Assis da Silva
 aliases:
 - Dom Francisco de Assis
+- Francisco Assis da Silva
 - Francisco Silva
 - Francisco de Assis Silva
 birth:
@@ -110,6 +111,19 @@ ordinations:
     inferência.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '2011'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2011 – Francisco Assis da Silva
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. Só o ano
+    de início é dado (sem traço de período aberto).
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dso
   start: '2011-03-20'
@@ -122,9 +136,12 @@ affiliations:
   - source: ieab-serie-dso
     quote: Seu atual Bispo Diocesano é o Revmo. Bispo Francisco de Assis da Silva.
   - source: costa2021
+    quote: Diocese Anglicana Sul-Ocidental (Santa Maria-RS) … 2011- – Francisco de Assis da Silva
+    page: '521'
+  - source: costa2021
     quote: a Diocese Sul-Ocidental, pastoreada pelo Bispo Francisco de Assis da
     page: '120'
-  notes: Coadjutor desde a sagração; diocesano em 2021.
+  notes: Anexo D da tese (bispos por diocese). Coadjutor desde a sagração; diocesano em 2021.
 - jurisdiction: ieab
   role: primate
   start: '2013-11-16'
@@ -141,6 +158,9 @@ affiliations:
     quote: foram lidas declarações do então Bispo Primaz da IEAB, Francisco de Assis da Silva.
     page: '96'
   - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 2013-2018 – Francisco de Assis da Silva
+    page: 523-524
+  - source: costa2021
     quote: >-
       o bispo Francisco de Assis da Silva – da Diocese Sul-Ocidental – foi eleito o 7º Bispo Primaz da IEAB
     page: '114'
@@ -151,9 +171,9 @@ affiliations:
     page: '243'
   notes: >-
     Eleito no 32o Sinodo (Rio de Janeiro, 14-17/11/2013); ENS 19/11/2013 noticiou a eleicao. Primaz em dezembro
-    de 2017. Eleito no 32º Sínodo (Rio, 14-17/11/2013); sucedido por Naudal Gomes no 34º Sínodo (maio-jun. 2018).
-    Eleito Primaz no 32º Sínodo Geral (Rio de Janeiro). Antes: primeiro reitor do Núcleo Anglicano de Estudos Teológicos
-    (Recife) e Secretário-geral da IEAB (2006).
+    de 2017. Anexo E da tese (primazes da IEAB). Eleito no 32º Sínodo (Rio, 14-17/11/2013); sucedido por Naudal
+    Gomes no 34º Sínodo (maio-jun. 2018). Eleito Primaz no 32º Sínodo Geral (Rio de Janeiro). Antes: primeiro reitor
+    do Núcleo Anglicano de Estudos Teológicos (Recife) e Secretário-geral da IEAB (2006).
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino
@@ -165,6 +185,18 @@ affiliations:
   - source: costa2021
     quote: 2017-2018 – Francisco de Assis da Silva (Interino)
   notes: So Costa Anexo D; a IEAB diz que Irala ficou ate 2021.
+- jurisdiction: ieab
+  role: other
+  role_description: bispo diocesano interino
+  diocese: ieab-dasp
+  start: '2017'
+  end: '2018'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Diocese Anglicana de São Paulo … 2017-2018 – Francisco de Assis da Silva (Interino)
+    page: 521-522
+  notes: Anexo D da tese (bispos por diocese).
 - jurisdiction: ieab
   role: clergy
   status: confirmed

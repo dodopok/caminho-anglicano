@@ -114,6 +114,19 @@ ordinations:
     não nomeia sagrantes. Bispo da Diocese Central (Rio de Janeiro), sucedendo Sherrill.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '1977'
+  end: '1988'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1977-1988 – Agostinho Guillon Sória
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-darj
   start: '1977-04-24'
@@ -129,13 +142,16 @@ affiliations:
     quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1977-1984 - Agostinho Guillon Sória
     page: '368'
   - source: costa2021
+    quote: Diocese Anglicana do Rio de Janeiro … 1977-1984 – Agostinho Guillon Sória
+    page: '521'
+  - source: costa2021
     quote: >-
       Edmund Knox Sherrill foi eleito bispo missionário para o Nordeste, sendo substituído, no Rio de Janeiro, por
       Agostinho Guillon Sória.
     page: '173'
   notes: >-
-    Transferido para Brasília; a p. 98 diz que assumiu Brasília 'em 1982' e a p. 96 situa a transferência na eleição
-    do sucessor (nov. 1984).
+    Anexo D da tese (bispos por diocese). Transferido para Brasília; a p. 98 diz que assumiu Brasília 'em 1982'
+    e a p. 96 situa a transferência na eleição do sucessor (nov. 1984).
   discrepancies:
   - field: start
     value: '1976'
@@ -167,6 +183,9 @@ affiliations:
       no dia nove de junho de 1985 e instituído seu primeiro bispo
     page: '305'
   - source: costa2021
+    quote: Diocese Anglicana de Brasília … 1985-1988 – Agostinho Guillon Sória
+    page: '522'
+  - source: costa2021
     quote: >-
       Após assumir a Diocese de Brasília, em 1982, o bispo Agostinho Sória se aposentou por motivos de saúde.
     page: '98'
@@ -174,8 +193,8 @@ affiliations:
     quote: Missionária de Brasília, tornando-se o seu primeiro bispo residente.
     page: '88'
   notes: >-
-    Costa diz tambem que assumiu Brasilia "em 1982" (conflito). Fim aproximado: sucessão discutida em 1988 (Almir
-    eleito, sagrado em abril de 1989).
+    Costa diz tambem que assumiu Brasilia "em 1982" (conflito). Anexo D da tese (bispos por diocese). Fim aproximado:
+    sucessão discutida em 1988 (Almir eleito, sagrado em abril de 1989).
   discrepancies:
   - field: end
     value: '1989'

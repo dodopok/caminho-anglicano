@@ -2,6 +2,8 @@
 id: ipu
 acronym: IPU
 name: Igreja Protestante Unida
+aliases:
+- IPU-Lorite
 type: other
 country: BR
 description: >-
@@ -24,6 +26,9 @@ relations:
   - source: cant-novas-igrejas-2024
     quote: Após isto, o bispo Ricardo Lorite reorganizou o grupo e fundou a Igreja Protestante Unida
     page: '120'
+  - source: costa2021
+    quote: Após isto, o bispo Ricardo Lorite reorganizou o grupo e fundou a Igreja Protestante Unida
+    page: '145'
   notes: O livro diz que Lorite 'reorganizou o grupo' após o encerramento de 30/10/2017.
 - type: member_of
   target: abb

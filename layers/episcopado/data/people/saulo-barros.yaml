@@ -47,6 +47,19 @@ ordinations:
     138: nº 21 no registro da IEAB.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '2006'
+  end: '2017'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2006-2017 – Saulo Maurício de Barros
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-daa
   start: '2006-10-15'
@@ -69,13 +82,16 @@ affiliations:
       No dia 15 de outubro de 2006, a Diocese Anglicana da Amazônia foi instalada solenemente, com a consagração
       da Catedral de Santa Maria e com a investidura e instalação de seu primeiro bispo Dom Saulo Maurício de Barros.
   - source: costa2021
+    quote: Diocese Anglicana da Amazônia … 2006-2017 – Saulo Maurício de Barros
+    page: '523'
+  - source: costa2021
     quote: >-
       A cerimônia de instalação da Diocese e do seu novo pastor ocorreu no dia 15 de outubro de 2006, na Igreja
       de Santa Maria, em Belém do Pará.
     page: '110'
   notes: >-
-    Data da sagracao episcopal de Saulo nao encontrada (provavelmente 15/10/2006, junto com a instalacao). Fim inferido:
-    Marinez Bassotto eleita e instalada em abril de 2018.
+    Data da sagracao episcopal de Saulo nao encontrada (provavelmente 15/10/2006, junto com a instalacao). Anexo
+    D da tese (bispos por diocese). Fim inferido: Marinez Bassotto eleita e instalada em abril de 2018.
   discrepancies:
   - field: end
     value: '2018'

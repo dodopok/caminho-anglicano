@@ -103,6 +103,18 @@ ordinations:
     listadas como co-sagrantes por inferência.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '2018'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2018- – Marinez Rosa dos Santos Bassotto
+    page: 518-520
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-daa
   start: '2018-04-22'
@@ -114,6 +126,10 @@ affiliations:
     quote: Bispo Diocesano – Revma. Marinez Bassotto
   - source: daa-clero
     quote: Bispa diocesana da Diocese Anglicana da Amazônia (2018). Bispa Primaz da IEAB (2022).
+  - source: costa2021
+    quote: Diocese Anglicana da Amazônia … 2018- – Marinez Rosa dos Santos Bassotto
+    page: '523'
+  notes: Anexo D da tese (bispos por diocese).
 - jurisdiction: ieab
   role: primate
   start: '2022-11-13'

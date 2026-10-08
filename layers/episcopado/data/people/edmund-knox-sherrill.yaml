@@ -285,6 +285,12 @@ affiliations:
       Edmund serviu no Distrito Missionário Central e, em 1975, tornou-se o primeiro bispo da recém-criada Diocese
       do Recife
   - source: costa2021
+    quote: Diocese Anglicana do Recife … 1976-1985 – Edmund Knox Sherrill
+    page: '522'
+  - source: costa2021
+    quote: 'CLÉRIGOS: Dom Edmund Knox Sherrill, bispo da Diocese Setentrional e presidente do concílio'
+    page: '529'
+  - source: costa2021
     quote: O bispo Edmund Sherrill optou pela nova Diocese e
     page: '88'
   - source: costa2021
@@ -305,10 +311,11 @@ affiliations:
     page: '178'
   notes: >-
     Datas divergem (1975/1976 a 1985/1986). O livro diz que ele optou pela nova diocese e se mudou para Recife em
-    1977; aposentou-se em 1985 (p. 298). Sucedido por Clóvis Erly Rodrigues (coadjutor sagrado em 1985). Local:
-    depois Diocese Anglicana do Recife. 1º bispo da Diocese Setentrional (criada no Sínodo de 1975; 1º concílio
-    em junho de 1976). Renunciou no início de 1986 (ano seguinte a 1985); a citação de Kickhöfel diz que 'se aposentou
-    em 1985'.
+    1977; aposentou-se em 1985 (p. 298). Anexo D da tese (bispos por diocese). Em 1976 a diocese chamava-se Diocese
+    Setentrional (Anexo G: Sherrill como 'bispo da Diocese Setentrional'). Sucedido por Clóvis Erly Rodrigues (coadjutor
+    sagrado em 1985). Local: depois Diocese Anglicana do Recife. 1º bispo da Diocese Setentrional (criada no Sínodo
+    de 1975; 1º concílio em junho de 1976). Renunciou no início de 1986 (ano seguinte a 1985); a citação de Kickhöfel
+    diz que 'se aposentou em 1985'.
   discrepancies:
   - field: start
     value: '1976'
@@ -316,6 +323,12 @@ affiliations:
     - source: kickhofel-1995
       quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1976-1985 - Edmund Knox Sherrill
       page: '368'
+    - source: costa2021
+      quote: Diocese Anglicana do Recife … 1976-1985 – Edmund Knox Sherrill
+      page: '522'
+    - source: costa2021
+      quote: 'CLÉRIGOS: Dom Edmund Knox Sherrill, bispo da Diocese Setentrional e presidente do concílio'
+      page: '529'
     - source: costa2021
       quote: O bispo Edmund Sherrill optou pela nova Diocese e
       page: '88'
@@ -346,6 +359,12 @@ affiliations:
         com a diferença de que o bispo Sherrill que como diocesano tinha o direito de opção, optou pela nova diocese,
         transferindo-se para Recife em 1977.
       page: '296'
+    - source: costa2021
+      quote: Diocese Anglicana do Recife … 1976-1985 – Edmund Knox Sherrill
+      page: '522'
+    - source: costa2021
+      quote: 'CLÉRIGOS: Dom Edmund Knox Sherrill, bispo da Diocese Setentrional e presidente do concílio'
+      page: '529'
   - field: start
     value: '1977'
     sources:
@@ -432,6 +451,17 @@ affiliations:
     - source: costa2021
       quote: do Primaz, Arthur Rodolpho Kratz, ele exerceu as funções da Primazia da Igreja como interino.
       page: '178'
+- jurisdiction: ieab
+  role: other
+  role_description: primaz interino
+  start: '1984'
+  end: '1986'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 1984-1986 – Edmund Knox Sherrill (interino)
+    page: 523-524
+  notes: Anexo E da tese (primazes da IEAB).
 events:
 - type: other
   date: '1985'
@@ -477,6 +507,33 @@ events:
       no Brasil como missionário junto à comunidade americana e como coadjutor e depois como pároco da Igreja da
       Santíssima Trindade em São Paulo.
     page: '274'
+- type: other
+  date: '1976-06-25'
+  description: >-
+    Primeiro Concílio da Diocese Setentrional da Igreja Episcopal do Brasil, em Recife, de 25 a 27 de junho de 1976,
+    convocado e presidido pelo bispo diocesano Edmund Knox Sherrill, com representantes da Paróquia da SS. Trindade
+    (Recife), da Paróquia de Santa Maria (Belém) e da Missão Cristo Redentor (Salvador). Participaram cinco clérigos
+    (Sherrill, Anselmo João Stein, Joselino Lobato de Souza, Paulo Ruiz Garcia, Stuart Roger Broughton), quatro
+    delegados leigos e dois suplentes. Aprovou-se proposta de orçamento para 1977; o culto de encerramento foi pregado
+    pelo Rev. Stuart Broughton.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Teve lugar em Recife, Pernambuco, do período de 25 a 27 de junho passado, o primeiro concílio da Diocese Setentrional
+      da Igreja Episcopal do Brasil.
+    page: '528'
+  - source: costa2021
+    quote: '(Fonte: Estandarte Cristão, nº 1595, 1976, p. 8)'
+    page: '528'
+  - source: costa2021
+    quote: em boa hora convocado pelo bispo diocesano Edmund Knox Sherrill
+    page: '528'
+  - source: costa2021
+    quote: >-
+      Participaram do histórico concílio cinco clérigos, quatro delegados leigos, dois suplentes e diversos membros
+      da congregação local e da Missão do Salvador.
+    page: '529'
 - type: other
   date: '1958'
   description: Convenção Geral elege Edmund Knox Sherrill bispo da Diocese Central

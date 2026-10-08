@@ -67,6 +67,20 @@ ordinations:
     e local não informados; Naudal Gomes foi o pregador.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '2007'
+  end: '2020'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2007-2020 – Renato da Cruz Raatz
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. O Anexo
+    D dá 2006-2019 em Pelotas.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dap
   start: '2007-04-15'
@@ -80,9 +94,18 @@ affiliations:
     quote: >-
       que substituiu o bispo Renato da Cruz Raatz, que havia atingido a idade da aposentadoria compulsória.
   - source: costa2021
+    quote: Diocese Anglicana de Pelotas … 2006-2019 – Renato da Cruz Raatz
+    page: '522'
+  - source: costa2021
     quote: então deão da Catedral do Redentor, foi eleito o novo bispo diocesano.
     page: '110'
   discrepancies:
+  - field: start
+    value: '2006'
+    sources:
+    - source: costa2021
+      quote: Diocese Anglicana de Pelotas … 2006-2019 – Renato da Cruz Raatz
+      page: '522'
   - field: end
     value: '2020-03-14'
     sources:
@@ -93,4 +116,4 @@ affiliations:
       quote: >-
         que substituiu o bispo Renato da Cruz Raatz, que havia atingido a idade da aposentadoria compulsória.
       page: '119'
-  notes: Fim = posse de Meriglei (14/3/2020).
+  notes: Anexo D da tese (bispos por diocese). Fim = posse de Meriglei (14/3/2020).

@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: solange-cristina-pereira
+name: Solange Cristina Pereira
+biography: >-
+  Clérigo(a) da Diocese Anglicana do Recife excluído(a) da IEAB e das Sagradas Ordens em 23/08/2005 (Decreto Diocesano
+  nº 01/2005) por abandono de comunhão, por ter seguido Robinson Cavalcanti.
+sources:
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Revda. Solange Cristina Pereira … Recife, 23 de agosto de 2005.
+  page: 560-561
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  start: '2005'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+      Ordens, os clérigos a seguir mencionados: … Revda. Solange Cristina Pereira … Os clérigos não atenderam à
+      convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
+      mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+    page: 560-562
+  notes: >-
+    Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson
+    Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005
+    é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  end: '2005-08-23'
+  end_reason: deposition
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+      Ordens, os clérigos a seguir mencionados: … Revda. Solange Cristina Pereira … Recife, 23 de agosto de 2005.
+    page: 560-561
+  notes: >-
+    Anexo R: Decreto Diocesano nº 01/2005 (Recife, 23/08/2005) de Dom Filadelfo Oliveira Neto, Autoridade Eclesiástica
+    da Diocese Anglicana do Recife (IEAB), exclui o(a) clérigo(a) 'da Comunhão da Igreja Episcopal Anglicana do
+    Brasil e, conseqüentemente, das Sagradas Ordens' por abandono de comunhão. motivo_fim 'deposicao' porque o efeito
+    é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
+    adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado.

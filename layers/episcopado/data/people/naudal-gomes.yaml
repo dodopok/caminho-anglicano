@@ -76,6 +76,19 @@ ordinations:
     'como a bispa Barbara Harris' (Igreja Episcopal dos EUA), sem dizer que impôs as mãos.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '2000'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2000- – Naudal Alves Gomes
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. Período
+    aberto (em exercício em 2021).
+- jurisdiction: ieab
   role: suffragan_bishop
   diocese: ieab-dso
   start: '2000-04-08'
@@ -112,6 +125,9 @@ affiliations:
       Na prática, a coadjutora auxiliará o atual bispo diocesano, Naudal Alves Gomes, na Diocese até dezembro, que
       é quando este se tornará bispo emérito.
   - source: costa2021
+    quote: Diocese Anglicana do Paraná … 2003- – Naudal Alves Gomes
+    page: '522'
+  - source: costa2021
     quote: >-
       quando foi eleito o primeiro bispo da Diocese Anglicana do Paraná, quando assumiu a Catedral de São Tiago,
       na cidade de Curitiba.
@@ -127,10 +143,11 @@ affiliations:
       processo eleitoral, Sebastião declinou a indicação e Naudal foi eleito para a sé de Curitiba.
     page: '238'
   notes: >-
-    Primeiro bispo da Diocese de Curitiba (depois Diocese Anglicana do Parana). Fim = instalação de Magda Guedes
-    (12/12/2021). A tese também diz que a sagração dele como bispo de Curitiba (sic, instalação) foi na catedral
-    católica da cidade. Local: Paraná. Antes bispo auxiliar da Diocese Sul-Ocidental. Data inferida do contexto
-    (eleição contemporânea à de Sebastião para o Recife, 2006).
+    Primeiro bispo da Diocese de Curitiba (depois Diocese Anglicana do Parana). Anexo D da tese (bispos por diocese).
+    O anexo deixa o período aberto, embora liste Magda Guedes Pereira a partir de 2021; o fim do mandato de Naudal
+    no Paraná não é informado. Fim = instalação de Magda Guedes (12/12/2021). A tese também diz que a sagração dele
+    como bispo de Curitiba (sic, instalação) foi na catedral católica da cidade. Local: Paraná. Antes bispo auxiliar
+    da Diocese Sul-Ocidental. Data inferida do contexto (eleição contemporânea à de Sebastião para o Recife, 2006).
   discrepancies:
   - field: start
     value: c.2006
@@ -152,6 +169,18 @@ affiliations:
     quote: 2018-2020 – Naudal Alves Gomes (Interino)
   notes: So Costa Anexo D; conflita com Irala ate 2021.
 - jurisdiction: ieab
+  role: other
+  role_description: bispo diocesano interino
+  diocese: ieab-dasp
+  start: '2018'
+  end: '2020'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Diocese Anglicana de São Paulo … 2018-2020 – Naudal Alves Gomes (Interino)
+    page: 521-522
+  notes: Anexo D da tese (bispos por diocese).
+- jurisdiction: ieab
   role: primate
   start: '2018-06-02'
   end: '2022-11-13'
@@ -168,8 +197,12 @@ affiliations:
   - source: stmarks-naudal
     quote: Prior to that he served as primate of the Episcopal Anglican Church in Brazil from 2018 to 2022.
   - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 2018- – Naudal Alves Gomes
+    page: 523-524
+  - source: costa2021
     quote: 'Durante o 34º Sínodo também foi eleito o novo Primaz da IEAB: o bispo Naudal Alves Gomes. 121'
     page: '119'
+  notes: Anexo E da tese (primazes da IEAB).
 - jurisdiction: tec
   role: clergy
   diocese: st-mark-s-episcopal-church-van-nuys

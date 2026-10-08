@@ -71,6 +71,34 @@ affiliations:
   notes: >-
     Lista de 2002 traz "Evilásio Tenório da Silva" (sem "Júnior") entre postulantes ao ministério ordenado e ministros
     leigos; identidade com o futuro bispo é provável mas não confirmada.
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  start: '2005'
+  end: '2012-03-17'
+  status: confirmed
+  sources:
+  - source: dar-clero-presbiteros-2007
+    quote: Ven. Arced. Rev. Evilásio Tenório da Silva
+  - source: dar-clero-presbiteros-2010
+    quote: Ven. Arc. Rev. Evilásio Tenório da Silva Junior
+  - source: dar-2011-evilasio-eleicoes
+    quote: >-
+      Rev. Evilásio Tenório Junior é Presbítero na Diocese do Recife; Deão Pró-Têmpore da Catedral Anglicana do
+      Bom Samaritano ; Pároco da Paróquia Anglicana do Mediador , em Recife-PE, Arcediago Centro da Diocese e Reitor
+      do Seminário Anglicano Teológico (SAT-PE)
+  - source: costa2021
+    quote: >-
+      Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+      Ordens, os clérigos a seguir mencionados: … Rev. Evilásio Tenório da Silva Junior … Os clérigos não atenderam
+      à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
+      mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+    page: 560-562
+  notes: >-
+    Presbítero e arcediago da Diocese do Recife (listas do clero de 2007 e 2010; artigo de 2011). Data e ordenante
+    do diaconato/presbiterato não encontrados. Postulante em 2002 (vínculo IEAB já registrado). Anexo R: o(a) clérigo(a)
+    declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja,
+    estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela
+    IEAB, e a adesão à DAR é anterior, sem data exata.
 - jurisdiction: iacs
   role: primate
   diocese: diocese-anglicana-recife
@@ -166,23 +194,6 @@ affiliations:
     quote: 'Pároco: Bispo Evilásio Tenório'
   - source: adr-instalacao-2018
     quote: 'Diocese de Recife, Diocesano:Bispo Miguel Uchoa e Auxiliar: Bispo Evilásio tenório'
-- jurisdiction: diocese-anglicana-recife
-  role: clergy
-  end: '2012-03-17'
-  status: confirmed
-  sources:
-  - source: dar-clero-presbiteros-2007
-    quote: Ven. Arced. Rev. Evilásio Tenório da Silva
-  - source: dar-clero-presbiteros-2010
-    quote: Ven. Arc. Rev. Evilásio Tenório da Silva Junior
-  - source: dar-2011-evilasio-eleicoes
-    quote: >-
-      Rev. Evilásio Tenório Junior é Presbítero na Diocese do Recife; Deão Pró-Têmpore da Catedral Anglicana do
-      Bom Samaritano ; Pároco da Paróquia Anglicana do Mediador , em Recife-PE, Arcediago Centro da Diocese e Reitor
-      do Seminário Anglicano Teológico (SAT-PE)
-  notes: >-
-    Presbítero e arcediago da Diocese do Recife (listas do clero de 2007 e 2010; artigo de 2011). Data e ordenante
-    do diaconato/presbiterato não encontrados. Postulante em 2002 (vínculo IEAB já registrado).
 - jurisdiction: iab
   role: auxiliary_bishop
   diocese: iab-diocese-recife
@@ -198,6 +209,25 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: enquanto o bispo auxiliar, Evilásio Tenório, substituiu interinamente Robinson no comando.
     page: '30'
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  end: '2005-08-23'
+  end_reason: deposition
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+      Ordens, os clérigos a seguir mencionados: … Rev. Evilásio Tenório da Silva Junior … Recife, 23 de agosto de
+      2005.
+    page: 560-561
+  notes: >-
+    Anexo R: Decreto Diocesano nº 01/2005 (Recife, 23/08/2005) de Dom Filadelfo Oliveira Neto, Autoridade Eclesiástica
+    da Diocese Anglicana do Recife (IEAB), exclui o(a) clérigo(a) 'da Comunhão da Igreja Episcopal Anglicana do
+    Brasil e, conseqüentemente, das Sagradas Ordens' por abandono de comunhão. motivo_fim 'deposicao' porque o efeito
+    é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
+    adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado.
 events:
 - type: other
   date: '2012-09-15'

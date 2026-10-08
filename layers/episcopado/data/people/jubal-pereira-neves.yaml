@@ -74,6 +74,19 @@ affiliations:
     page: '101'
   notes: 'Cargo: Secretário-geral da IEAB.'
 - jurisdiction: ieab
+  role: bishop
+  start: '1993'
+  end: '2011'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1993-2011 – Jubal Pereira Neves
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dso
   start: '1993-09-19'
@@ -89,9 +102,14 @@ affiliations:
     quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1993 - Jubal Pereira Neves
     page: '368'
   - source: costa2021
+    quote: Diocese Anglicana Sul-Ocidental (Santa Maria-RS) … 1993-2011 – Jubal Pereira Neves
+    page: '521'
+  - source: costa2021
     quote: eleição de novo bispo coadjutor que iria suceder Jubal Neves, o qual estava no cargo desde 1993.
     page: '112'
-  notes: 'Fim aproximado: coadjutor Francisco de Assis da Silva eleito em out. 2010 e sagrado em mar. 2011.'
+  notes: >-
+    Anexo D da tese (bispos por diocese). Fim aproximado: coadjutor Francisco de Assis da Silva eleito em out. 2010
+    e sagrado em mar. 2011.
 events:
 - type: other
   date: '1977'

@@ -126,7 +126,7 @@ affiliations:
   start: '1989'
   end: '2013'
   end_reason: schism
-  status: confirmed
+  status: contested
   sources:
   - source: wp-pt-glauco
     quote: >-
@@ -135,6 +135,20 @@ affiliations:
       com a IEAB
   - source: glauco-testemunho-2013
     quote: Como consequência de tudo isso, decidi apoiar os dissidentes
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1989-2003 – Glauco Soares de Lima
+    page: 518-519
+  discrepancies:
+  - field: end
+    value: '2003'
+    sources:
+    - source: costa2021
+      quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1989-2003 – Glauco Soares de Lima
+      page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab
   role: coadjutor_bishop
   diocese: ieab-dasp
@@ -172,9 +186,14 @@ affiliations:
       da diocese em janeiro de 1990.
     page: '291'
   - source: costa2021
+    quote: Diocese Anglicana de São Paulo … 1990-2002 – Glauco Soares de Lima
+    page: 521-522
+  - source: costa2021
     quote: 1989 Glauco foi eleito bispo da Diocese Anglicana de São Paulo, quando atuou de 1990 a 2002,
     page: '99'
-  notes: Coadjutor desde 1/10/1989; sucedido por Hiroshi Ito. Motivo do fim não explicitado.
+  notes: >-
+    Anexo D da tese (bispos por diocese). Coadjutor desde 1/10/1989; sucedido por Hiroshi Ito. Motivo do fim não
+    explicitado.
 - jurisdiction: ieab
   role: primate
   start: '1993'
@@ -197,11 +216,15 @@ affiliations:
       de Lima
     page: '367'
   - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 1994-2003 – Glauco Soares de Lima
+    page: 523-524
+  - source: costa2021
     quote: pelo Primaz, Glauco Soares de Lima
     page: '186'
   notes: >-
     Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94). O livro dá só o início de cada primado; o fim é
-    o início do primado seguinte. Primaz em outubro de 1997. Também foi um dos interinos à frente da DAR (2004-2006).
+    o início do primado seguinte. Anexo E da tese (primazes da IEAB). Primaz em outubro de 1997. Também foi um dos
+    interinos à frente da DAR (2004-2006).
   discrepancies:
   - field: start
     value: '1994'
@@ -211,6 +234,21 @@ affiliations:
         O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1994 - Glauco Soares
         de Lima
       page: '367'
+    - source: costa2021
+      quote: Primazes da Igreja Episcopal Anglicana do Brasil … 1994-2003 – Glauco Soares de Lima
+      page: 523-524
+- jurisdiction: ieab
+  role: other
+  role_description: bispo diocesano interino
+  diocese: ieab-dab
+  start: '2003'
+  end: '2003'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Diocese Anglicana de Brasília … 2003-2003 – Glauco Soares de Lima (Interino)
+    page: '522'
+  notes: Anexo D da tese (bispos por diocese).
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino

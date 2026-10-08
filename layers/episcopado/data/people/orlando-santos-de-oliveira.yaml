@@ -4,7 +4,9 @@ name: Orlando Santos de Oliveira
 full_name: Orlando Santos de Oliveira
 aliases:
 - Dom Orlando Oliveira
+- Dom Orlando S. de Oliveira
 - Orlando Oliveira
+- Orlando Santos Oliveira
 - Orlando de Oliveira
 - Orlando dos Santos Oliveira
 birth:
@@ -111,8 +113,13 @@ affiliations:
   - source: wp-pt-orlando
     quote: se tornou seu coadjutor na Diocese Anglicana Meridional, que o sucedeu em 5 de maio do ano seguinte.
   - source: costa2021
+    quote: Diocese Anglicana Meridional (Porto Alegre-RS) … 1998-2013 – Orlando Santos de Oliveira
+    page: '521'
+  - source: costa2021
     quote: substituindo o bispo Cláudio Gastal, que se aposentou no ano seguinte.
     page: '104'
+  notes: >-
+    Anexo D da tese (bispos por diocese). Fim inferido da instituição de Humberto Maiztegui como diocesano (5/5/2013).
   discrepancies:
   - field: start
     value: '1997-11-30'
@@ -120,7 +127,19 @@ affiliations:
     - source: costa2021
       quote: substituindo o bispo Cláudio Gastal, que se aposentou no ano seguinte.
       page: '104'
-  notes: Fim inferido da instituição de Humberto Maiztegui como diocesano (5/5/2013).
+- jurisdiction: ieab
+  role: bishop
+  start: '1998'
+  end: '2013'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1998-2013 – Orlando Santos de Oliveira
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab
   role: primate
   start: '2003'
@@ -133,6 +152,9 @@ affiliations:
     quote: >-
       a primazia passou das mãos do bispo Glauco para o bispo Orlando Santos de Oliveira, da Diocese Meridional,
       que ficou no cargo entre
+  - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 2003-2006 – Orlando Santos de Oliveira
+    page: 523-524
   - source: costa2021
     quote: >-
       primazia passou das mãos do bispo Glauco para o bispo Orlando Santos de Oliveira, da Diocese Meridional, que
@@ -148,9 +170,9 @@ affiliations:
     quote: D. Orlando Santos de Oliveira Bispo Primaz
     page: '224'
   notes: >-
-    A nota 96 diz Primaz 'de 2003 a 2009'; o texto (p. 107) diz 2003-2006 e Maurício Andrade foi eleito Primaz em
-    julho de 2006. Versão da nota 96; ver afirmação 2003-2006. Primaz em 2004-2005; decretou a deposição de Robinson
-    em Porto Alegre, 10/06/2005.
+    Anexo E da tese (primazes da IEAB). A nota 96 diz Primaz 'de 2003 a 2009'; o texto (p. 107) diz 2003-2006 e
+    Maurício Andrade foi eleito Primaz em julho de 2006. Versão da nota 96; ver afirmação 2003-2006. Primaz em 2004-2005;
+    decretou a deposição de Robinson em Porto Alegre, 10/06/2005.
   discrepancies:
   - field: end
     value: '2009'
@@ -158,6 +180,18 @@ affiliations:
     - source: costa2021
       quote: O bispo Orlando também foi Primaz da IEAB de 2003 a 2009
       page: '104'
+- jurisdiction: ieab
+  role: other
+  role_description: bispo diocesano interino
+  diocese: ieab-dab
+  start: '2003'
+  end: '2003'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Diocese Anglicana de Brasília … 2003-2003 – Orlando Santos de Oliveira (Interino)
+    page: '522'
+  notes: Anexo D da tese (bispos por diocese).
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino
@@ -325,6 +359,168 @@ events:
     quote: deposto e um grupo de clérigos depostos que pertenceram à Diocese Anglicana do Recife.
   - source: ieab-2005-carta-venables
     quote: foi condenado pelo Tribunal Superior Eclesiástico
+- type: other
+  date: null
+  description: >-
+    Carta do Primaz da IEAB, Orlando Santos de Oliveira, ao Bispo Presidente da ECUSA, Frank T. Griswold, desaprovando
+    a participação de Robinson Cavalcanti nas confirmações em Ohio e pedindo desculpas em nome da IEAB.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Dom Frank T. Griswold Revmo. Bispo Presidente da Igreja Episcopal dos Estados Unidos
+    page: '542'
+  - source: costa2021
+    quote: >-
+      Foi com surpresa, tristeza e preocupação que recebemos a notícia da participação do Bispo Robinson Cavalcanti,
+      Diocesano da Diocese Anglicana do Recife, da Província da Igreja Episcopal Anglicana do Brasil, em um Ofício
+      de Confirmação de 110 pessoas em Ohio
+    page: '542'
+  - source: costa2021
+    quote: >-
+      informo que tal assunto será examinado em nossa próxima reunião da Câmara dos Bispos, em 22 e 23 de março
+      de 2004.
+    page: '543'
+  - source: costa2021
+    quote: Revmo. Orlando Santos de Oliveira Bispo Primaz da IEAB
+    page: '544'
+- type: other
+  date: '2004-09-16'
+  description: >-
+    Decreto da Câmara dos Bispos da IEAB (reunião extraordinária em Porto Alegre, presidida pelo Primaz Orlando
+    Santos de Oliveira): institui supervisão episcopal especial para as comunidades e o clero da Diocese Anglicana
+    do Recife em dissenso com o bispo diocesano Robinson Cavalcanti, nomeia Dom Maurício Andrade (bispo de Brasília)
+    supervisor episcopal especial e mantém o ministério do bispo sufragâneo Dom Filadelfo Oliveira. Atendeu a pedido
+    de 13 clérigos e clérigas da diocese.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      A Câmara dos Bispos, reunida extraordinariamente na cidade de Porto Alegre, sob a Presidência do Bispo Primaz,
+      diante da solicitação de clérigos e clérigas da Diocese Anglicana do Recife
+    page: '545'
+  - source: costa2021
+    quote: >-
+      1. Decretar a supervisão episcopal especial das comunidades e clérigos e clérigas da Diocese Anglicana do
+      Recife que se sentem pastoralmente desassistidos por seu Bispo diocesano, face a divergências teológicas e
+      pastorais.
+    page: '546'
+  - source: costa2021
+    quote: >-
+      2. Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília para desempenhar a função de supervisor
+      episcopal especial
+    page: '546'
+  - source: costa2021
+    quote: >-
+      3. A presente decisão, naturalmente supõe que o Bispo Sufragâneo, Dom Filadelfo Oliveira, de acordo com suas
+      prerrogativas canônicas, continua seu ministério pastoral junto às comunidades da Diocese Anglicana do Recife.
+    page: '546'
+  - source: costa2021
+    quote: Porto Alegre, 16 de setembro de 2004.
+    page: '546'
+- type: other
+  date: '2004-11-26'
+  description: >-
+    Decreto Episcopal nº 001/2004 do Primaz Orlando Santos de Oliveira (aprovado pelo Conselho Executivo do Sínodo):
+    suspende o Concílio Diocesano da Diocese Anglicana do Recife convocado para 2 a 4 de dezembro de 2004, declara
+    insubordinação gravíssima a sua não observância e nulos os atos contrários. Considera a recusa de Robinson Cavalcanti
+    em acatar o decreto de supervisão de 16/09/2004.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      a recusa do Bispo Diocesano, Dom Edward Robinson de Barros Cavalcanti , em acatar o Decreto de Supervisão
+      Episcopal Especial de 16 de setembro de 2004
+    page: '551'
+  - source: costa2021
+    quote: >-
+      1. Determinar a suspensão da realização do Concílio Diocesano da Diocese Anglicana do Recife, convocado para
+      os dias 02, 03 e 04 de dezembro de 2004
+    page: '552'
+  - source: costa2021
+    quote: Porto Alegre, 26 de novembro de 2004.
+    page: '552'
+- type: other
+  date: '2005-02-18'
+  description: >-
+    Resolução 001/2005 do Primaz Orlando Santos de Oliveira: suspensão preventiva de Dom Edward Robinson de Barros
+    Cavalcanti do exercício do ofício e ministério, para garantir o processo nº 001/2004 instaurado pela Câmara
+    dos Bispos.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Pela Suspensão do exercício do Ofício e Ministério, em caráter preventivo, de Dom Edward Robinson de Barros
+      Cavalcanti, medida indispensável à garantir o andamento adequado e a imparcialidade do processo nº 001/2004
+      instaurado pela Câmara dos Bispos
+    page: '553'
+  - source: costa2021
+    quote: Porto Alegre, 18 de fevereiro de 2005.
+    page: '553'
+- type: other
+  date: '2005-02-22'
+  description: >-
+    Resolução 002/2005 do Primaz Orlando Santos de Oliveira: nomeia Dom Filadelfo Oliveira Neto Autoridade Eclesiástica
+    da Diocese Anglicana do Recife enquanto durar a suspensão de Robinson Cavalcanti.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      NOMEIO, COMO AUTORIDADE ECLESIÁSTICA DA DIOCESE ANGLICANA DO RECIFE, enquanto durar os efeitos da supra-citada
+      resolução, DOM FILADELFO OLIVEIRA NETO
+    page: '554'
+  - source: costa2021
+    quote: Porto Alegre, 22 de fevereiro de 2005.
+    page: '554'
+- type: deposition
+  date: '2005-06-10'
+  description: >-
+    Deposição de Dom Edward Robinson de Barros Cavalcanti do exercício do ministério ordenado da IEAB (Processo
+    Canônico nº 001/2005): decretada pelo Primaz Orlando Santos de Oliveira, na presença da Câmara dos Bispos reunida
+    extraordinariamente em Porto Alegre, após o Tribunal Superior Eclesiástico reconhecer por unanimidade sua culpa
+    (Cap. IV, Cân. 1, art. 1º, §1º, alíneas f e i). Cessam todos os seus vínculos canônicos com a IEAB.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O BISPO PRIMAZ DA IGREJA EPISCOPAL ANGLICANA DO BRASIL, na presença da Câmara dos Bispos reunida extraordinariamente
+      na cidade de Porto Alegre, no dia 10 de junho do ano de dois mil e cinco
+    page: '556'
+  - source: costa2021
+    quote: >-
+      o Tribunal Superior Eclesiástico, por unanimidade de seus membros, reconhece a culpabilidade do Bispo Dom
+      Edward Robinson de Barros Cavalcanti
+    page: '558'
+  - source: costa2021
+    quote: >-
+      o Bispo Primaz decreta, na forma do Capítulo IV, Cânon 4, Artigo 1º, alínea D, dos Cânones Gerais da Igreja
+      Episcopal Anglicana do Brasil, a sua deposição do exercício do ministério ordenado desta Igreja.
+    page: '558'
+  - source: costa2021
+    quote: >-
+      Dado e passado sob nosso selo e assinatura, na cidade de Porto Alegre, no dia 10 de junho de 2005, Anno Domini.
+    page: '559'
+- type: deposition
+  date: '2005-10-12'
+  description: >-
+    Carta do Primaz da IEAB, Orlando Santos de Oliveira, ao Primaz do Cone Sul, Gregory Venables, em nome da Câmara
+    dos Bispos e do clero e laicato da IEAB, protestando contra a carta em que Venables reconheceu e acolheu para
+    supervisão o bispo deposto Robinson Cavalcanti e um grupo de clérigos depostos da Diocese Anglicana do Recife.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Revmo. Bispo Gregory Venables DD. Primaz da Província Anglicana do Cone Sul
+    page: '563'
+  - source: costa2021
+    quote: >-
+      Lamento profundamente vossa carta, reconhecendo e acolhendo para supervisão o bispo deposto e um grupo de
+      clérigos depostos que pertenceram à Diocese Anglicana do Recife.
+    page: '563'
+  - source: costa2021
+    quote: Porto Alegre, 12 de outubro de 2005.
+    page: '563'
+  - source: costa2021
+    quote: oficialmente protestamos e repudiamos essa ação de ingerência em nossa jurisdição.
+    page: '565'
 - type: other
   date: '1997-08-30'
   description: Orlando Santos de Oliveira eleito 7º bispo da Diocese Meridional

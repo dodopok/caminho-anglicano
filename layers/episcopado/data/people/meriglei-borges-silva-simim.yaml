@@ -9,6 +9,7 @@ aliases:
 - Meriglei Borges Silva Simin
 - Meriglei Borges Simin da Silva
 - Meriglei Borges da Silva Simim
+- Meriglei Borges da Silva Simin
 - Meriglei Simin
 birth:
   date: '1967-06-29'
@@ -76,6 +77,19 @@ ordinations:
     PT por fonte autoral (Costa). Co-sagrantes não informados.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '2019'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2019- – Meriglei Borges Silva Simin
+    page: 518-520
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. Tese grafa
+    'Simin'.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dap
   start: '2020-03-14'
@@ -85,6 +99,17 @@ affiliations:
     quote: A posse como a nova diocesana de Pelotas aconteceu em 14 de março de 2020, na Catedral do Redentor.
   - source: ieab-dioceses
     quote: Bispo Diocesano – Revma. Meriglei Borges Silva Simin
+  - source: costa2021
+    quote: Diocese Anglicana de Pelotas … 2019- – Meriglei Borges da Silva Simin
+    page: '522'
+  discrepancies:
+  - field: start
+    value: '2019'
+    sources:
+    - source: costa2021
+      quote: Diocese Anglicana de Pelotas … 2019- – Meriglei Borges da Silva Simin
+      page: '522'
+  notes: Anexo D da tese (bispos por diocese). Tese grafa 'Meriglei Borges da Silva Simin' aqui.
 events:
 - type: other
   date: '2019-04-27'

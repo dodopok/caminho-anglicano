@@ -4,6 +4,8 @@ name: Robinson Cavalcanti
 full_name: Edward Robinson de Barros Cavalcanti
 aliases:
 - Bishop Robinson
+- Dom Edward Robinson de Barros Cavalcanti
+- Edward Robinson Cavalcanti
 - Edward Robinson de Barros Cavalcanti
 - Robinson
 - Robinson Cavancati
@@ -190,9 +192,23 @@ ordinations:
     Recife' — divergência de local (ver dúvidas).
 affiliations:
 - jurisdiction: ieab
-  role: clergy
+  role: member
   diocese: ieab-dar
   start: '1976-06-21'
+  end: '1984'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi recebido na Catedral da Santíssima Trindade pelas mãos do bispo Sherrill, em 21 de junho de 1976.
+    page: '187'
+  notes: >-
+    Local: depois Diocese Anglicana do Recife. Recebido na Igreja Episcopal por Sherrill (vindo da Igreja Evangélica
+    Luterana do Brasil); membro leigo até o diaconato (1984).
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  start: '1984'
   end: '1997-10-05'
   status: probable
   sources:
@@ -201,8 +217,28 @@ affiliations:
       Foi recebido na Catedral da Santíssima Trindade pelas mãos do bispo Sherrill, em 21 de junho de 1976.
     page: '187'
   notes: >-
-    Local: depois Diocese Anglicana do Recife. Recebido (vindo da Igreja Evangélica Luterana do Brasil) por Sherrill;
-    diácono 1984, presbítero 1985; fim = sagração episcopal.
+    Local: depois Diocese Anglicana do Recife. Diácono em 1984, presbítero em 1985; fim = sagração episcopal.
+- jurisdiction: ieab
+  role: bishop
+  start: '1997'
+  end: '2005-06-10'
+  end_reason: deposition
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1997-2005 – Edward Robinson de Barros Cavalcanti
+      (Deposto)
+    page: 518-519
+  - source: costa2021
+    quote: >-
+      Dado e passado sob nosso selo e assinatura, na cidade de Porto Alegre, no dia 10 de junho de 2005, Anno Domini.
+    page: '559'
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. Anexo
+    C dá 1997-2005 com '(Deposto)'; dia exato da deposição (10/06/2005) vem do Anexo Q.
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dar
@@ -229,6 +265,18 @@ affiliations:
     quote: In 1997 he was elected and consecrated Bishop of the Diocese of Recife
   - source: wp-en-cavalcanti
     quote: he was expelled from the IEAB on 10 June 2005, by decision of the Superior Ecclesiastical Court.
+  - source: costa2021
+    quote: Diocese Anglicana do Recife … 1997-2005 – Edward Robinson de Barros Cavalcanti (Deposto)
+    page: '522'
+  - source: costa2021
+    quote: >-
+      o Bispo Primaz decreta, na forma do Capítulo IV, Cânon 4, Artigo 1º, alínea D, dos Cânones Gerais da Igreja
+      Episcopal Anglicana do Brasil, a sua deposição do exercício do ministério ordenado desta Igreja.
+    page: '558'
+  - source: costa2021
+    quote: >-
+      Dado e passado sob nosso selo e assinatura, na cidade de Porto Alegre, no dia 10 de junho de 2005, Anno Domini.
+    page: '559'
   - source: costa2021
     quote: >-
       tornando-se o quinto bispo da Diocese Anglicana do Recife, substituindo a Clovis Erly Rodrigues no ofício.
@@ -270,10 +318,12 @@ affiliations:
         do ofício episcopal, acusando-o de insubordinação e quebra da comunhão eclesiástica.
       page: '26'
   notes: >-
-    Robinson considerou a deposição nula e manteve-se como bispo da maioria das paróquias. Eleito bispo coadjutor
-    em 28/06/1997 (Concílio Extraordinário em Vera Cruz, Itaparica), sagrado 05/10/1997, instalado 19/10/1997. Suspenso
-    preventivamente em 18/02/2005 (Resolução 001/2005); deposto em 10/06/2005 pelo Primaz Orlando Santos de Oliveira
-    após o Tribunal Superior Eclesiástico reconhecer sua culpabilidade (Processo Canônico 001/2005).
+    Robinson considerou a deposição nula e manteve-se como bispo da maioria das paróquias. Anexo D da tese (bispos
+    por diocese). Anexo D marca "(Deposto)"; o dia 10/06/2005 vem do Anexo Q (Processo Canônico nº 001/2005). Antes
+    disso: suspensão preventiva em 18/02/2005 (Anexo N). Eleito bispo coadjutor em 28/06/1997 (Concílio Extraordinário
+    em Vera Cruz, Itaparica), sagrado 05/10/1997, instalado 19/10/1997. Suspenso preventivamente em 18/02/2005 (Resolução
+    001/2005); deposto em 10/06/2005 pelo Primaz Orlando Santos de Oliveira após o Tribunal Superior Eclesiástico
+    reconhecer sua culpabilidade (Processo Canônico 001/2005).
 - jurisdiction: diocese-anglicana-recife
   role: founder
   start: '2005'
@@ -321,6 +371,18 @@ affiliations:
     page: '150'
   - source: costa2021
     quote: >-
+      O acusado, de forma deliberada, fez declarações unilaterais de suspensão do relacionamento da Diocese Anglicana
+      do Recife com a Província do Brasil, proclamando a Diocese Anglicana de Recife como uma Diocese autônoma da
+      Comunhão Anglicana, sem mais vínculos com a Igreja Episcopal Anglicana do Brasil conforme carta de sua autoria,
+      datada de 25 de janeiro de 2005.
+    page: '556'
+  - source: costa2021
+    quote: >-
+      reconhecendo e acolhendo para supervisão o bispo deposto e um grupo de clérigos depostos que pertenceram à
+      Diocese Anglicana do Recife
+    page: '563'
+  - source: costa2021
+    quote: >-
       Desde setembro de 2005, reconhecidas nossas Ordens e Ministérios, estamos sob a Autoridade Primacial da Igreja
       Anglicana do Cone Sul da América, na pessoa do Revmo. Gregory J. Venables (CAVALCANTI, 2009, p. 121).
     page: '225'
@@ -330,9 +392,11 @@ affiliations:
       do casal
     page: '251'
   notes: >-
-    Em 25/01/2005 declarou suspenso o relacionamento da Diocese com a IEAB; em 23/09/2005 o Cone Sul (Venables)
-    aceitou o pedido de supervisão primacial. Início pode ser datado de 25/01/2005 (ruptura) ou 23/09/2005 (acolhida
-    pelo Cone Sul).
+    Bispo da Diocese Anglicana do Recife dissidente desde 2005: carta de 25/01/2005 proclamando a diocese autônoma
+    (Anexo Q) e acolhida pelo Primaz do Cone Sul antes de 12/10/2005 (Anexo S). Início dado apenas como ano porque
+    a ruptura foi gradual (concílio de dez/2004, carta de jan/2005, concílio extraordinário de 26/02/2005). Em 25/01/2005
+    declarou suspenso o relacionamento da Diocese com a IEAB; em 23/09/2005 o Cone Sul (Venables) aceitou o pedido
+    de supervisão primacial. Início pode ser datado de 25/01/2005 (ruptura) ou 23/09/2005 (acolhida pelo Cone Sul).
 - jurisdiction: ieab-dar
   role: diocesan_bishop
   end: '2005'
@@ -345,6 +409,24 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: com o segundo cisma, promovido pelo próprio Robinson, em 2005
     page: '111'
+- jurisdiction: ieab
+  role: clergy
+  end: '2005-06-10'
+  end_reason: deposition
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      o Bispo Primaz decreta, na forma do Capítulo IV, Cânon 4, Artigo 1º, alínea D, dos Cânones Gerais da Igreja
+      Episcopal Anglicana do Brasil, a sua deposição do exercício do ministério ordenado desta Igreja.
+    page: '558'
+  - source: costa2021
+    quote: >-
+      Dado e passado sob nosso selo e assinatura, na cidade de Porto Alegre, no dia 10 de junho de 2005, Anno Domini.
+    page: '559'
+  notes: >-
+    Anexo Q: a deposição faz cessar 'todos os seus vínculos canônicos, sacramentais, pastorais e litúrgicos' com
+    a IEAB.
 events:
 - type: other
   date: '1985'
@@ -919,6 +1001,323 @@ events:
     quote: >-
       Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
       bispo diocesano, até a eleição do novo líder da Igreja Anglicana
+- type: other
+  date: 2004-03
+  description: >-
+    Robinson Cavalcanti, bispo diocesano do Recife, participa de confirmações (110 pessoas) na Diocese de Ohio (Igreja
+    Episcopal dos EUA) com cinco bispos aposentados da ECUSA, sem permissão do bispo de Ohio nem do Primaz da IEAB.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O acusado, além disso, participou em Confirmações na diocese de Ohio, da Igreja Episcopal dos Estados Unidos
+      da América (ECUSA), nos Estados Unidos, sem o conhecimento do bispo diocesano local, bem como do Bispo Primaz
+      e da Câmara dos Bispos da igreja brasileira, em março de 2004
+    page: '557'
+  - source: costa2021
+    quote: >-
+      Foi com surpresa, tristeza e preocupação que recebemos a notícia da participação do Bispo Robinson Cavalcanti,
+      Diocesano da Diocese Anglicana do Recife, da Província da Igreja Episcopal Anglicana do Brasil, em um Ofício
+      de Confirmação de 110 pessoas em Ohio
+    page: '542'
+- type: other
+  date: null
+  description: >-
+    Carta do Primaz da IEAB, Orlando Santos de Oliveira, ao Bispo Presidente da ECUSA, Frank T. Griswold, desaprovando
+    a participação de Robinson Cavalcanti nas confirmações em Ohio e pedindo desculpas em nome da IEAB.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Dom Frank T. Griswold Revmo. Bispo Presidente da Igreja Episcopal dos Estados Unidos
+    page: '542'
+  - source: costa2021
+    quote: >-
+      Foi com surpresa, tristeza e preocupação que recebemos a notícia da participação do Bispo Robinson Cavalcanti,
+      Diocesano da Diocese Anglicana do Recife, da Província da Igreja Episcopal Anglicana do Brasil, em um Ofício
+      de Confirmação de 110 pessoas em Ohio
+    page: '542'
+  - source: costa2021
+    quote: >-
+      informo que tal assunto será examinado em nossa próxima reunião da Câmara dos Bispos, em 22 e 23 de março
+      de 2004.
+    page: '543'
+  - source: costa2021
+    quote: Revmo. Orlando Santos de Oliveira Bispo Primaz da IEAB
+    page: '544'
+- type: other
+  date: '2004-09-16'
+  description: >-
+    Decreto da Câmara dos Bispos da IEAB (reunião extraordinária em Porto Alegre, presidida pelo Primaz Orlando
+    Santos de Oliveira): institui supervisão episcopal especial para as comunidades e o clero da Diocese Anglicana
+    do Recife em dissenso com o bispo diocesano Robinson Cavalcanti, nomeia Dom Maurício Andrade (bispo de Brasília)
+    supervisor episcopal especial e mantém o ministério do bispo sufragâneo Dom Filadelfo Oliveira. Atendeu a pedido
+    de 13 clérigos e clérigas da diocese.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      A Câmara dos Bispos, reunida extraordinariamente na cidade de Porto Alegre, sob a Presidência do Bispo Primaz,
+      diante da solicitação de clérigos e clérigas da Diocese Anglicana do Recife
+    page: '545'
+  - source: costa2021
+    quote: >-
+      1. Decretar a supervisão episcopal especial das comunidades e clérigos e clérigas da Diocese Anglicana do
+      Recife que se sentem pastoralmente desassistidos por seu Bispo diocesano, face a divergências teológicas e
+      pastorais.
+    page: '546'
+  - source: costa2021
+    quote: >-
+      2. Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília para desempenhar a função de supervisor
+      episcopal especial
+    page: '546'
+  - source: costa2021
+    quote: >-
+      3. A presente decisão, naturalmente supõe que o Bispo Sufragâneo, Dom Filadelfo Oliveira, de acordo com suas
+      prerrogativas canônicas, continua seu ministério pastoral junto às comunidades da Diocese Anglicana do Recife.
+    page: '546'
+  - source: costa2021
+    quote: Porto Alegre, 16 de setembro de 2004.
+    page: '546'
+- type: other
+  date: null
+  description: >-
+    Nota de esclarecimento 'A Verdade Canônica na DAR', do advogado Senomar Teixeira Júnior, defendendo a base canônica
+    da supervisão episcopal decretada para a Diocese Anglicana do Recife e afirmando que quem estiver fora da comunhão
+    com a IEAB está fora da Comunhão Anglicana.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      o Dr. Senomar Teixeira, que está acompanhando juridicamente a situação vivida na DAR, divulgou a seguinte
+      nota de esclarecimento
+    page: '547'
+  - source: costa2021
+    quote: >-
+      Após ser cientificado da decisão, o Bispo Diocesano, Dom Robinson Cavalcanti, expressou não reconhecer a sua
+      validade, “por falta de amparo canônico”
+    page: '547'
+  - source: costa2021
+    quote: >-
+      Fonte: Bel. Senomar Teixeira Júnior (Advogado, OAB-PE – DF – SP, especialista em Direito Processual Civil,
+      seminarista do SAET)
+    page: '550'
+- type: other
+  date: '2004-11-26'
+  description: >-
+    Decreto Episcopal nº 001/2004 do Primaz Orlando Santos de Oliveira (aprovado pelo Conselho Executivo do Sínodo):
+    suspende o Concílio Diocesano da Diocese Anglicana do Recife convocado para 2 a 4 de dezembro de 2004, declara
+    insubordinação gravíssima a sua não observância e nulos os atos contrários. Considera a recusa de Robinson Cavalcanti
+    em acatar o decreto de supervisão de 16/09/2004.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      a recusa do Bispo Diocesano, Dom Edward Robinson de Barros Cavalcanti , em acatar o Decreto de Supervisão
+      Episcopal Especial de 16 de setembro de 2004
+    page: '551'
+  - source: costa2021
+    quote: >-
+      1. Determinar a suspensão da realização do Concílio Diocesano da Diocese Anglicana do Recife, convocado para
+      os dias 02, 03 e 04 de dezembro de 2004
+    page: '552'
+  - source: costa2021
+    quote: Porto Alegre, 26 de novembro de 2004.
+    page: '552'
+- type: other
+  date: 2004-12
+  description: >-
+    Robinson Cavalcanti realiza o Concílio Diocesano da Diocese Anglicana do Recife em dezembro de 2004, apesar
+    da proibição do Primaz; o processo canônico registra também carta de Robinson ao Arcebispo de Cantuária e aos
+    Primazes pedindo o desligamento da diocese da Província brasileira.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O acusado, apesar da inibição do exercício de sua jurisdição, realizou um Concílio Diocesano, apesar da proibição
+      do Bispo Primaz, em dezembro de 2004.
+    page: '557'
+  - source: costa2021
+    quote: >-
+      de carta de Dom Robinson ao Arcebispo de Cantuária e aos Primazes solicitando o desligamento da diocese Anglicana
+      do Recife da Província brasileira.
+    page: '558'
+- type: other
+  date: '2005-01-25'
+  description: >-
+    Carta de Robinson Cavalcanti declarando unilateralmente a suspensão do relacionamento da Diocese Anglicana do
+    Recife com a IEAB e proclamando-a diocese autônoma da Comunhão Anglicana; ele também alterou o selo da diocese,
+    retirando a referência à IEAB.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O acusado, de forma deliberada, fez declarações unilaterais de suspensão do relacionamento da Diocese Anglicana
+      do Recife com a Província do Brasil, proclamando a Diocese Anglicana de Recife como uma Diocese autônoma da
+      Comunhão Anglicana, sem mais vínculos com a Igreja Episcopal Anglicana do Brasil conforme carta de sua autoria,
+      datada de 25 de janeiro de 2005.
+    page: '556'
+  - source: costa2021
+    quote: >-
+      O bispo acusado também fez alteração do selo original da Diocese Anglicana do Recife, de onde retirou a referência
+      à Igreja Episcopal Anglicana do Brasil.
+    page: '556'
+- type: other
+  date: '2005-02-18'
+  description: >-
+    Resolução 001/2005 do Primaz Orlando Santos de Oliveira: suspensão preventiva de Dom Edward Robinson de Barros
+    Cavalcanti do exercício do ofício e ministério, para garantir o processo nº 001/2004 instaurado pela Câmara
+    dos Bispos.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Pela Suspensão do exercício do Ofício e Ministério, em caráter preventivo, de Dom Edward Robinson de Barros
+      Cavalcanti, medida indispensável à garantir o andamento adequado e a imparcialidade do processo nº 001/2004
+      instaurado pela Câmara dos Bispos
+    page: '553'
+  - source: costa2021
+    quote: Porto Alegre, 18 de fevereiro de 2005.
+    page: '553'
+- type: other
+  date: '2005-02-22'
+  description: >-
+    Resolução 002/2005 do Primaz Orlando Santos de Oliveira: nomeia Dom Filadelfo Oliveira Neto Autoridade Eclesiástica
+    da Diocese Anglicana do Recife enquanto durar a suspensão de Robinson Cavalcanti.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      NOMEIO, COMO AUTORIDADE ECLESIÁSTICA DA DIOCESE ANGLICANA DO RECIFE, enquanto durar os efeitos da supra-citada
+      resolução, DOM FILADELFO OLIVEIRA NETO
+    page: '554'
+  - source: costa2021
+    quote: Porto Alegre, 22 de fevereiro de 2005.
+    page: '554'
+- type: other
+  date: '2005-02-25'
+  description: >-
+    Resolução Diocesana da DAR 001/2005, de Dom Filadelfo Oliveira Neto como Autoridade Eclesiástica: declara nulos
+    os atos do Concílio Extraordinário convocado por Robinson Cavalcanti (suspenso) para 26/02/2005 em Recife e
+    qualifica a participação como insubordinação gravíssima.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Declarar nulo de fato e de direito qualquer decisão, deliberação e atos normativos e administrativos emanados
+      do Concílio Extraordinário convocado para ser realizado no dia 26 de fevereiro de 2005, na Cidade de Recife,
+      pelo Bispo Robinson Cavalcanti, que se encontra suspenso do Ofício e do Ministério.
+    page: '555'
+  - source: costa2021
+    quote: Recife, 25 de Fevereiro de 2005.
+    page: '555'
+- type: other
+  date: '2005-04-15'
+  description: >-
+    Ação movida por Robinson Cavalcanti na Justiça civil contra a IEAB para preservar seus direitos como titular
+    da Diocese Anglicana do Recife, julgada improcedente em 1ª e 2ª instâncias.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Tal ação foi julgada improcedente em 1ª e 2ª instâncias nos Tribunais da Justiça Civil, conforme sentença
+      lavrada em 1ª e 2ª instâncias, em 15 de abril de 2005.
+    page: '557'
+- type: other
+  date: '2005-05-26'
+  description: >-
+    O Arcediago Rev. Miguel Uchoa Cavalcanti, em nome da Diocese Anglicana do Recife de Robinson Cavalcanti, discursa
+    numa reunião do grupo inglês 'Anglican Mainstream', criticando a IEAB e seu Primaz.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 26 de maio de 2005, o Arcediago Rev. Miguel Uchoa Cavalcanti, representando conforme sua expressão “toda
+      a Diocese Anglicana do Recife”
+    page: '558'
+  - source: costa2021
+    quote: profere palestra na reunião de uma entidade da Inglaterra chamada “Anglican Mainstream”
+    page: '558'
+- type: deposition
+  date: '2005-06-10'
+  description: >-
+    Deposição de Dom Edward Robinson de Barros Cavalcanti do exercício do ministério ordenado da IEAB (Processo
+    Canônico nº 001/2005): decretada pelo Primaz Orlando Santos de Oliveira, na presença da Câmara dos Bispos reunida
+    extraordinariamente em Porto Alegre, após o Tribunal Superior Eclesiástico reconhecer por unanimidade sua culpa
+    (Cap. IV, Cân. 1, art. 1º, §1º, alíneas f e i). Cessam todos os seus vínculos canônicos com a IEAB.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O BISPO PRIMAZ DA IGREJA EPISCOPAL ANGLICANA DO BRASIL, na presença da Câmara dos Bispos reunida extraordinariamente
+      na cidade de Porto Alegre, no dia 10 de junho do ano de dois mil e cinco
+    page: '556'
+  - source: costa2021
+    quote: >-
+      o Tribunal Superior Eclesiástico, por unanimidade de seus membros, reconhece a culpabilidade do Bispo Dom
+      Edward Robinson de Barros Cavalcanti
+    page: '558'
+  - source: costa2021
+    quote: >-
+      o Bispo Primaz decreta, na forma do Capítulo IV, Cânon 4, Artigo 1º, alínea D, dos Cânones Gerais da Igreja
+      Episcopal Anglicana do Brasil, a sua deposição do exercício do ministério ordenado desta Igreja.
+    page: '558'
+  - source: costa2021
+    quote: >-
+      Dado e passado sob nosso selo e assinatura, na cidade de Porto Alegre, no dia 10 de junho de 2005, Anno Domini.
+    page: '559'
+- type: deposition
+  date: '2005-08-23'
+  description: >-
+    Decreto Diocesano nº 01 de 2005 da Autoridade Eclesiástica da Diocese Anglicana do Recife (IEAB), Dom Filadelfo
+    Oliveira Neto: exclui da comunhão da IEAB e, consequentemente, das Sagradas Ordens 32 clérigos e clérigas da
+    diocese, por abandono de comunhão, por declararem plena comunhão com o bispo deposto Robinson Cavalcanti. Acompanhado
+    de Exposição de Motivos ao Primaz e à Câmara dos Bispos, da mesma data.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+      Ordens, os clérigos a seguir mencionados:
+    page: '560'
+  - source: costa2021
+    quote: Recife, 23 de agosto de 2005. Dom Filadelfo Oliveira Neto Autoridade Eclesiástica da DAR
+    page: '561'
+  - source: costa2021
+    quote: >-
+      decreta a exclusão dos clérigos da Diocese Anglicana do Recife, por abandono de Comunhão, arrolados em anexo.
+    page: '562'
+  - source: costa2021
+    quote: >-
+      Em 4 de julho do ano em curso, este expositor de motivos, no uso da sua autoridade eclesiástica, convocou
+      por carta (anexo II), os clérigos citados no anexo 1
+    page: '562'
+  - source: costa2021
+    quote: >-
+      Os clérigos não atenderam à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar
+      os nossos votos de ordenação, mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+    page: '562'
+- type: deposition
+  date: '2005-10-12'
+  description: >-
+    Carta do Primaz da IEAB, Orlando Santos de Oliveira, ao Primaz do Cone Sul, Gregory Venables, em nome da Câmara
+    dos Bispos e do clero e laicato da IEAB, protestando contra a carta em que Venables reconheceu e acolheu para
+    supervisão o bispo deposto Robinson Cavalcanti e um grupo de clérigos depostos da Diocese Anglicana do Recife.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Revmo. Bispo Gregory Venables DD. Primaz da Província Anglicana do Cone Sul
+    page: '563'
+  - source: costa2021
+    quote: >-
+      Lamento profundamente vossa carta, reconhecendo e acolhendo para supervisão o bispo deposto e um grupo de
+      clérigos depostos que pertenceram à Diocese Anglicana do Recife.
+    page: '563'
+  - source: costa2021
+    quote: Porto Alegre, 12 de outubro de 2005.
+    page: '563'
+  - source: costa2021
+    quote: oficialmente protestamos e repudiamos essa ação de ingerência em nossa jurisdição.
+    page: '565'
 - type: other
   date: '1976-06-21'
   description: >-

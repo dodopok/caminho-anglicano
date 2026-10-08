@@ -91,6 +91,36 @@ ordinations:
     co-sagrantes do pôster não confirmados; 10/06/2017 é mais provável. Diocese de João Pessoa (catedral 'Anglicana
     Comunhão'); eleito em maio de 2017. Data exata, local e sagrantes não informados.
 affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  start: '2005'
+  end: 2017-06
+  status: confirmed
+  sources:
+  - source: dar-clero-presbiteros-2007
+    quote: Rev. Márcio Medeiros Meira
+  - source: dar-2011-meira-sobre-flavio
+    quote: >-
+      Rev. Márcio Medeiros Meira ; é Presbítero da Diocese do Recife; Reitor no SAT-PB; Reitor da Paróquia Anglicana
+      Comunhão , no Arcediagado Paraíba/Rio Grande Norte; Secretário Diocesano de Evangelismo.
+  - source: dar-2013-diaconos-mogi
+    quote: o rev. Marcio Meira continuou a reflexão
+  - source: dar-2013-assembleia-pbrn
+    quote: Após a abertura oficial da Assembleia Arcediagal com as boas vindas do Arcediago rev. Marcio Meira
+  - source: costa2021
+    quote: >-
+      Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+      Ordens, os clérigos a seguir mencionados: … Rev. Márcio Medeiros Meira … Os clérigos não atenderam à convocação
+      e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo
+      plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+    page: 560-562
+  notes: >-
+    Local: Paróquia Anglicana Comunhão, João Pessoa-PB. Presbítero da Diocese do Recife sob o Cone Sul até a sagração
+    episcopal (2017). No artigo de 2011 diz ter sido 'o primeiro paraibano a concluir o Curso Bacharel em Teologia,
+    e, consequentemente, a ser Ordenado na Igreja Anglicana aqui na Paraíba' (data não informada). Arcediago da
+    Paraíba/Rio Grande do Norte em 2013. Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005,
+    manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como
+    ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
 - jurisdiction: iab
   role: diocesan_bishop
   diocese: iab-diocese-joao-pessoa
@@ -153,35 +183,25 @@ affiliations:
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
-  end: '2005'
-  end_reason: schism
+  end: '2005-08-23'
+  end_reason: deposition
   status: confirmed
   sources:
   - source: ieabrecife-clero-2002
     quote: Márcio Medeiros Meira, OSE (28/03)
+  - source: costa2021
+    quote: >-
+      Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+      Ordens, os clérigos a seguir mencionados: … Rev. Márcio Medeiros Meira … Recife, 23 de agosto de 2005.
+    page: 560-561
   notes: >-
     Listado como "Rev." no clero da Diocese do Recife (IEAB) em jan/2002, endereço no Bessa (João Pessoa). Data/ordenante
-    de diaconato e presbiterato não encontrados.
-- jurisdiction: diocese-anglicana-recife
-  role: clergy
-  end: 2017-06
-  status: confirmed
-  sources:
-  - source: dar-clero-presbiteros-2007
-    quote: Rev. Márcio Medeiros Meira
-  - source: dar-2011-meira-sobre-flavio
-    quote: >-
-      Rev. Márcio Medeiros Meira ; é Presbítero da Diocese do Recife; Reitor no SAT-PB; Reitor da Paróquia Anglicana
-      Comunhão , no Arcediagado Paraíba/Rio Grande Norte; Secretário Diocesano de Evangelismo.
-  - source: dar-2013-diaconos-mogi
-    quote: o rev. Marcio Meira continuou a reflexão
-  - source: dar-2013-assembleia-pbrn
-    quote: Após a abertura oficial da Assembleia Arcediagal com as boas vindas do Arcediago rev. Marcio Meira
-  notes: >-
-    Local: Paróquia Anglicana Comunhão, João Pessoa-PB. Presbítero da Diocese do Recife sob o Cone Sul até a sagração
-    episcopal (2017). No artigo de 2011 diz ter sido 'o primeiro paraibano a concluir o Curso Bacharel em Teologia,
-    e, consequentemente, a ser Ordenado na Igreja Anglicana aqui na Paraíba' (data não informada). Arcediago da
-    Paraíba/Rio Grande do Norte em 2013.
+    de diaconato e presbiterato não encontrados. Anexo R: Decreto Diocesano nº 01/2005 (Recife, 23/08/2005) de Dom
+    Filadelfo Oliveira Neto, Autoridade Eclesiástica da Diocese Anglicana do Recife (IEAB), exclui o(a) clérigo(a)
+    'da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas Ordens' por abandono
+    de comunhão. motivo_fim 'deposicao' porque o efeito é a perda das ordens na IEAB e a carta do Anexo S chama
+    o grupo de 'clérigos depostos'; o fato de fundo é a adesão ao cisma de Robinson Cavalcanti. Início do vínculo
+    com a IEAB não informado.
 - jurisdiction: iab
   role: diocesan_bishop
   diocese: iab-diocese-familia

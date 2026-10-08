@@ -203,6 +203,20 @@ affiliations:
       quote: sendo eleito pároco da Igreja do Redentor em Pelotas, em 1968.
       page: '85'
 - jurisdiction: ieab
+  role: bishop
+  start: '1971'
+  end: '1977'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1971-1977 – Arthur Rodolpho Kratz
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. Divergência
+    interna: o Anexo D dá 1971-'1884' (sic) na Diocese Meridional e o Anexo E o dá como primaz 1972-1984.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dm
   start: '1971-07-25'
@@ -223,11 +237,16 @@ affiliations:
       de julho de 1971 … Faleceu em 1984 e foi sucedido na Diocese Meridional por Cláudio Vinicius de Senna Gastal.
     page: '250'
   - source: costa2021
+    quote: Diocese Anglicana Meridional (Porto Alegre-RS) … 1971-1884 – Arthur Rodolpho Kratz
+    page: '521'
+  - source: costa2021
     quote: o reverendo Arthur Rodolpho Kratz 72 foi eleito bispo para a Diocese Meridional
     page: '85'
   notes: >-
     Costa grafa "1971-1884" (erro tipografico por 1984); Anexo C de Costa da 1971-1977 (conflito). Motivo do fim
-    nao explicitado. Sucedido por Cláudio Gastal (eleito em out. 1983; diocesano a partir de 1984).
+    nao explicitado. Anexo D da tese (bispos por diocese). O texto traz '1971-1884', erro tipográfico evidente (o
+    sucessor Gastal começa em 1984, o que sugere 1984); fim deixado nulo por não constar corretamente. Sucedido
+    por Cláudio Gastal (eleito em out. 1983; diocesano a partir de 1984).
   discrepancies:
   - field: end
     value: '1983'
@@ -284,9 +303,12 @@ affiliations:
       No Sínodo de 1972, Kratz foi eleito bispo primaz, sendo o segundo na ordem dos primazes. Exerceu cumulativamente
       as funções de primaz e diocesano.
     page: '251'
+  - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 1972-1984 – Arthur Rodolpho Kratz
+    page: 523-524
   notes: >-
     Morreu no cargo (noticia ENS de 22/03/1984). O livro dá só o início de cada primado; o fim é o início do primado
-    seguinte.
+    seguinte. Anexo E da tese (primazes da IEAB).
 events:
 - type: other
   date: '1984'

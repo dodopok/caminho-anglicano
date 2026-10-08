@@ -146,6 +146,18 @@ affiliations:
     page: '120'
   notes: 'Cargo: Secretária-geral da IEAB.'
 - jurisdiction: ieab
+  role: bishop
+  start: '2021'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2021- – Magda Guedes Pereira
+    page: 518-520
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+- jurisdiction: ieab
   role: coadjutor_bishop
   diocese: ieab-dapar
   start: '2021-10-17'
@@ -168,7 +180,10 @@ affiliations:
     quote: >-
       Magda irá auxiliar o atual bispo diocesano, Naudal Alves Gomes, até dezembro. A partir daí, ela assume oficialmente
       como bispa diocesana em todo o estado.
-  notes: Início previsto na notícia da sagração.
+  - source: costa2021
+    quote: Diocese Anglicana do Paraná … 2021- – Magda Guedes Pereira
+    page: '522'
+  notes: Início previsto na notícia da sagração. Anexo D da tese (bispos por diocese).
 events:
 - type: other
   date: '2022-12-11'

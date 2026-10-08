@@ -77,6 +77,19 @@ affiliations:
     quote: Em 2008, tornou-se Deão da Catedral Anglicana de São Tiago, em Curitiba, Paraná
   notes: >-
     Deão da Catedral de São Tiago (Curitiba) a partir de 2008; antes pároco em Londrina (início dos anos 2000).
+- jurisdiction: ieab
+  role: bishop
+  start: '2012'
+  end: '2017'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2012-2017 – Flávio Augusto Borges Irala
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab-dasp
   role: diocesan_bishop
   start: '2013'
@@ -92,12 +105,15 @@ affiliations:
   start: '2013-09-13'
   end: '2021-10-31'
   end_reason: retirement
-  status: confirmed
+  status: contested
   sources:
   - source: ieab-irala-falecimento
     quote: Em 2021, tornou-se bispo emérito
   - source: ieab-cezar-investidura
     quote: a celebração de Ação de Graças pela vida, ministério e início da emerência do bispo Flávio Irala
+  - source: costa2021
+    quote: Diocese Anglicana de São Paulo … 2012-2017 – Flávio Augusto Borges Irala
+    page: 521-522
   - source: costa2021
     quote: >-
       Do mesmo modo, somente com a eleição de um novo epíscopo, após o mandato do bispo Flávio Irala, seria possível
@@ -105,7 +121,21 @@ affiliations:
     page: '147'
   notes: >-
     Costa Anexo D da 2012-2017 com interinos Francisco de Assis (2017-18) e Naudal (2018-20) - conflito com IEAB.
-    Fim não informado; Francisco Cézar Fernandes Alves eleito coadjutor em 2019 e diocesano em 2021.
+    Anexo D da tese (bispos por diocese). Fim não informado; Francisco Cézar Fernandes Alves eleito coadjutor em
+    2019 e diocesano em 2021.
+  discrepancies:
+  - field: start
+    value: '2012'
+    sources:
+    - source: costa2021
+      quote: Diocese Anglicana de São Paulo … 2012-2017 – Flávio Augusto Borges Irala
+      page: 521-522
+  - field: end
+    value: '2017'
+    sources:
+    - source: costa2021
+      quote: Diocese Anglicana de São Paulo … 2012-2017 – Flávio Augusto Borges Irala
+      page: 521-522
 - jurisdiction: ieab
   role: other
   role_description: deão

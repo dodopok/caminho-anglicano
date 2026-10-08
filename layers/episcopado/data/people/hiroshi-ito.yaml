@@ -100,6 +100,19 @@ ordinations:
   notes: Eleito em 06/04/2002.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '2002'
+  end: '2006'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2002-2006 – Hiroshi Ito
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dasp
   start: '2002-07-28'
@@ -109,8 +122,12 @@ affiliations:
   - source: costa2021
     quote: 2002-2006 – Hiroshi Ito
   - source: costa2021
+    quote: Diocese Anglicana de São Paulo … 2002-2006 – Hiroshi Ito
+    page: 521-522
+  - source: costa2021
     quote: sendo substituído pelo bispo Hiroshi Ito.
     page: '99'
+  notes: Anexo D da tese (bispos por diocese). Sucedido por Roger Bird (eleito em 7/6/2007).
   discrepancies:
   - field: end
     value: '2007'
@@ -118,7 +135,6 @@ affiliations:
     - source: costa2021
       quote: sendo substituído pelo bispo Hiroshi Ito.
       page: '99'
-  notes: Sucedido por Roger Bird (eleito em 7/6/2007).
 - jurisdiction: ieab-dasp
   role: diocesan_bishop
   end: '2007'

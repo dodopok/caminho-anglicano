@@ -120,7 +120,24 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1984 - Cláudio Vinicius de Senna Gastal
     page: '368'
-  notes: Faleceu em 23/02/2000.
+  - source: costa2021
+    quote: Diocese Anglicana Meridional (Porto Alegre-RS) … 1984-1998 – Cláudio Vinicius de Senna Gastal
+    page: '521'
+  notes: Faleceu em 23/02/2000. Anexo D da tese (bispos por diocese).
+- jurisdiction: ieab
+  role: bishop
+  start: '1984'
+  end: '1998'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1984-1998 – Cláudio Vinícius de Senna Gastal
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab
   role: coadjutor_bishop
   diocese: ieab-dm
@@ -151,6 +168,18 @@ affiliations:
   notes: >-
     O livro dá só o início de cada primado; o fim é o início do primado seguinte. Primaz interino (bispo sênior).
     Interino por dois anos; datas não informadas.
+- jurisdiction: ieab
+  role: other
+  role_description: primaz interino
+  start: '1993'
+  end: '1994'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Primazes da Igreja Episcopal Anglicana do Brasil … 1993-1994 – Cláudio Vinícius de Senna Gastal (interino)
+    page: 523-524
+  notes: Anexo E da tese (primazes da IEAB).
 events:
 - type: other
   date: 1984-03

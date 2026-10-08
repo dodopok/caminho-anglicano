@@ -4,6 +4,7 @@ name: Maurício José Araújo de Andrade
 full_name: Maurício José Araújo de Andrade
 aliases:
 - Bispo Maurício
+- Dom Mauricio Andrade
 - Dom Maurício Andrade
 - Mauricio Andrade
 - Maurício Andrade
@@ -79,6 +80,19 @@ affiliations:
     page: '106'
   notes: 'Cargo: Secretário-geral da IEAB.'
 - jurisdiction: ieab
+  role: bishop
+  start: '2003'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2003- – Maurício José Araújo de Andrade
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. Período
+    aberto (em exercício em 2021).
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dab
   start: 2003-09
@@ -91,6 +105,9 @@ affiliations:
   - source: dab-bispo-mauricio
     quote: À frente da Diocese Anglicana de Brasília desde 2003
   - source: costa2021
+    quote: Diocese Anglicana de Brasília … 2003- – Maurício José Araújo de Andrade
+    page: '522'
+  - source: costa2021
     quote: >-
       Em 2003, o reverendo Maurício José Araújo de Andrade 103, que tinha servido como Secretário-Geral da Igreja,
       de 1994 até então, foi eleito o novo bispo da
@@ -98,6 +115,7 @@ affiliations:
   - source: costa2021
     quote: Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília
     page: '218'
+  notes: Anexo D da tese (bispos por diocese). Bispo diocesano de Brasília em 2004.
   discrepancies:
   - field: start
     value: '2003-08-31'
@@ -107,7 +125,6 @@ affiliations:
         Em 2003, o reverendo Maurício José Araújo de Andrade 103, que tinha servido como Secretário-Geral da Igreja,
         de 1994 até então, foi eleito o novo bispo da
       page: '106'
-  notes: Bispo diocesano de Brasília em 2004.
 - jurisdiction: ieab
   role: other
   role_description: supervisor episcopal especial
@@ -117,11 +134,21 @@ affiliations:
   sources:
   - source: costa2021
     quote: >-
+      2. Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília para desempenhar a função de supervisor
+      episcopal especial
+    page: '546'
+  - source: costa2021
+    quote: Porto Alegre, 16 de setembro de 2004.
+    page: '546'
+  - source: costa2021
+    quote: >-
       Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília para desempenhar a função de supervisor
       episcopal especial para o clero e as comunidades em dissenso
     page: '218'
   notes: >-
-    Decreto da Câmara Episcopal (16/09/2004), a pedido de 13 clérigos. Em março de 2005 instituído 'bispo interventor'.
+    Anexo K: nomeado pela Câmara dos Bispos supervisor episcopal especial do clero e das comunidades da Diocese
+    Anglicana do Recife em dissenso com o bispo diocesano. Fim não informado. Decreto da Câmara Episcopal (16/09/2004),
+    a pedido de 13 clérigos. Em março de 2005 instituído 'bispo interventor'.
 - jurisdiction: ieab
   role: primate
   start: 2006-07
@@ -146,6 +173,9 @@ affiliations:
     quote: assim como o primaz da IEAB à época, Maurício Andrade
     page: '30'
   - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 2006-2013 – Maurício José Araújo de Andrade
+    page: 523-524
+  - source: costa2021
     quote: >-
       eleição do bispo diocesano de Brasília, Maurício José de Araújo Andrade, como o 6º Bispo Primaz da IEAB, durante
       o 30º Sínodo Geral (Curitiba, 26 a 30 de julho de
@@ -156,7 +186,9 @@ affiliations:
   - source: costa2021
     quote: substituindo o bispo Maurício Andrade, que estava no cargo desde 2006.
     page: '243'
-  notes: Primaz em fevereiro de 2012. Primaz da IEAB 2006-2013; substituído por Francisco de Assis da Silva.
+  notes: >-
+    Primaz em fevereiro de 2012. Anexo E da tese (primazes da IEAB). Primaz da IEAB 2006-2013; substituído por Francisco
+    de Assis da Silva.
 - jurisdiction: ieab
   role: other
   role_description: bispo_encarregado
@@ -270,6 +302,40 @@ events:
     quote: >-
       the Suffragan Bishop Dom Filadelfo Oliveira, according to his canonical prerogatives, continues to exert his
       pastoral ministry to the communities of the Anglican Diocese of Recife.
+- type: other
+  date: '2004-09-16'
+  description: >-
+    Decreto da Câmara dos Bispos da IEAB (reunião extraordinária em Porto Alegre, presidida pelo Primaz Orlando
+    Santos de Oliveira): institui supervisão episcopal especial para as comunidades e o clero da Diocese Anglicana
+    do Recife em dissenso com o bispo diocesano Robinson Cavalcanti, nomeia Dom Maurício Andrade (bispo de Brasília)
+    supervisor episcopal especial e mantém o ministério do bispo sufragâneo Dom Filadelfo Oliveira. Atendeu a pedido
+    de 13 clérigos e clérigas da diocese.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      A Câmara dos Bispos, reunida extraordinariamente na cidade de Porto Alegre, sob a Presidência do Bispo Primaz,
+      diante da solicitação de clérigos e clérigas da Diocese Anglicana do Recife
+    page: '545'
+  - source: costa2021
+    quote: >-
+      1. Decretar a supervisão episcopal especial das comunidades e clérigos e clérigas da Diocese Anglicana do
+      Recife que se sentem pastoralmente desassistidos por seu Bispo diocesano, face a divergências teológicas e
+      pastorais.
+    page: '546'
+  - source: costa2021
+    quote: >-
+      2. Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília para desempenhar a função de supervisor
+      episcopal especial
+    page: '546'
+  - source: costa2021
+    quote: >-
+      3. A presente decisão, naturalmente supõe que o Bispo Sufragâneo, Dom Filadelfo Oliveira, de acordo com suas
+      prerrogativas canônicas, continua seu ministério pastoral junto às comunidades da Diocese Anglicana do Recife.
+    page: '546'
+  - source: costa2021
+    quote: Porto Alegre, 16 de setembro de 2004.
+    page: '546'
 - type: other
   date: 2006-07
   description: >-
