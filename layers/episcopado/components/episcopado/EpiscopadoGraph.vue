@@ -65,6 +65,8 @@ const props = withDefaults(defineProps<{
   showJurisdictions: boolean
   /** false = só igrejas, províncias e comunhões; as ligações das dioceses sobem para a igreja. */
   showDioceses: boolean
+  /** Das pessoas, só os bispos (a vizinhança de um nó selecionado mostra todo o clero). */
+  onlyBishops: boolean
   /** 'brazil' = jurisdições brasileiras e seus bispos; 'all' = rede inteira. */
   scope: 'brazil' | 'all'
   /** Mostra zoom/enquadrar e a contagem sobre o grafo (o explorador os põe na barra de estado). */
@@ -204,8 +206,9 @@ function baseVisible(id: string, attrs: Record<string, unknown>, ignoreYear = fa
   // Com o filtro de ano, quem não tem nenhuma data fica de fora: não dá para situá-lo no tempo.
   if (!ignoreYear && props.year !== null && (typeof attrs.startYear !== 'number' || attrs.startYear > props.year)) return false
   if (focus) return focus.has(id)
-  // Núcleo brasileiro: jurisdições no Brasil e os bispos ligados a elas.
-  if (props.scope === 'brazil' && (!attrs.brazil || (attrs.kind === 'person' && attrs.order !== 'episcopate'))) return false
+  // Núcleo brasileiro: jurisdições no Brasil e as pessoas ligadas a elas.
+  if (props.scope === 'brazil' && !attrs.brazil) return false
+  if (props.onlyBishops && attrs.kind === 'person' && attrs.order !== 'episcopate') return false
   // Nós sem nenhuma ligação só aparecem quando selecionados.
   if (attrs.isolated) return false
   return true
@@ -573,7 +576,7 @@ onMounted(async () => {
 })
 
 watch(
-  () => [props.depth, props.year, props.showPeople, props.showJurisdictions, props.showDioceses, props.scope, props.groups.ordinations, props.groups.affiliations, props.groups.relations, props.selected],
+  () => [props.depth, props.year, props.showPeople, props.showJurisdictions, props.showDioceses, props.onlyBishops, props.scope, props.groups.ordinations, props.groups.affiliations, props.groups.relations, props.selected],
   () => refresh(true)
 )
 
