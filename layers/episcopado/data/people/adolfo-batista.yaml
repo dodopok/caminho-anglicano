@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: adolfo-batista
+name: Adolfo Batista
+ordinations:
+- order: episcopate
+  date: '2013-01-12'
+  jurisdiction: null
+  principal_consecrator: josue-sousa-torres
+  co_consecrators:
+  - dirceu-falcao-ibaldo
+  - osiel-luiz-santos
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A fundação da Igreja foi precedida pela sagração ao episcopado do bispo Adolfo Batista, ocorrida em 12 de
+      Janeiro de 2013, através da imposição das mãos do Bispo Josué Souza Torres, Primaz da Igreja Episcopal do
+      Evangelho Pleno, tendo como cosagrantes os bispos Osiel Luiz Santos da Igreja Católica Apostólica Libertadora
+      e Dirceu Falcão Ibaldo

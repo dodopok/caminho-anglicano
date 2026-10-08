@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: fernando-nobile
+name: Fernando Nobile
+ordinations:
+- order: episcopate
+  date: '2018-11-20'
+  jurisdiction: null
+  principal_consecrator: josue-sousa-torres
+  co_consecrators:
+  - cassio-prado
+  - josue-augusto
+  - ricardo-lorite-de-lima
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A sua consagração episcopal ocorreu em 20 de novembro de 2018. A cerimônia foi presidida pelo bispo Josué
+      Sousa Torres, com a presença de outros bispos da Igreja Episcopal do Evangelho Pleno (IEEP), dom Ricardo Lorite,
+      da Igreja Anglicana do Brasil, dom Josué Augusto, da Igreja Anglicana Unida do Brasil e dom Cassio Prado
+  - source: cant-anglo-catolicismo-2026
+    quote: >-
+      foi consagrado bispo em 20 de novembro de 2018 por Dom Josué Sousa Torres, com participação de Dom Ricardo
+      Lorite, Dom Josué Augusto e Dom Cassio Prado.
+  notes: >-
+    Ex-IEAB, depois Diocese Anglicana do Recife; hoje bispo da Diocese Sul/Sudeste da Igreja Anglicana Episcopal
+    do Brasil (IAEB, ligada à Igreja chilena de Patricio Viveros).

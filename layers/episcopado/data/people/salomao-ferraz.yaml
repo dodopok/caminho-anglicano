@@ -12,6 +12,40 @@ sources:
   quote: >-
     Ferraz também começou a usar textos litúrgicos não autorizados, provocando uma crise que culminou na sua destituição
     em 1936.
+ordinations:
+- order: presbyterate
+  date: '1945'
+  jurisdiction: icab
+  ordained_by: carlos-duarte-costa
+  status: probable
+  sources:
+  - source: cant-temas-anglicanismo-2024
+    quote: >-
+      o então Reverendo Salomão Ferraz foi reordenado ao sacerdócio por Dom Carlos, doze dias após a fundação da
+      Igreja Brasileira.
+  notes: >-
+    Reordenação (já era presbítero episcopal). Ano inferido de "doze dias após a fundação da Igreja Brasileira"
+    (ICAB, 1945).
+- order: episcopate
+  date: '1945-08-15'
+  place: Igreja Cristã de São Paulo, rua Baronesa de Itu, 48, São Paulo
+  jurisdiction: icab
+  principal_consecrator: carlos-duarte-costa
+  status: probable
+  sources:
+  - source: cant-ferraz-ecumenismo-1995
+    quote: >-
+      Realizou-se hoje, dia quinze de agosto de mil novecentos e quarenta e cinco, Festa da Assunção de Nossa Senhora,
+      às dez horas e trinta minutos, no templo da Igreja Cristã de São Paulo à rua Baronesa de Itu, número quarenta
+      e oito, nesta cidade de São Paulo, a Sagração Episcopal de S. Excia. Revm°, Dom Salomão Ferraz, Bispo Eleito
+      de São Paulo. Transmitiu a herança apostólica ao eleito, S. Excia. Revm° Dom Carlos Duarte Costa – Bispo do
+      Rio de Janeiro
+  - source: cant-temas-anglicanismo-2024
+    quote: Dom Salomão Ferraz foi consagrado bispo por Dom Carlos Duarte Costa, em 1945.
+  notes: >-
+    Ex-presbítero da Igreja Episcopal Brasileira; sagrado como "Bispo Eleito de São Paulo" da Igreja Católica Livre
+    / ICAB. O livro de 1995 transcreve a ata da sagração. Sigla ICAB = Igreja Católica Apostólica Brasileira (criar
+    se necessário).
 events:
 - type: other
   date: '1936'

@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: albert-arthur-chambers
+name: Albert Arthur Chambers
+events:
+- type: other
+  date: '1978-01-28'
+  description: >-
+    Em 28 de janeiro de 1978 o bispo Albert A. Chambers (aposentado, TEC) foi o sagrante principal de quatro bispos
+    da "Anglican Church in North America" (Movimento Contínuo); depois declarou retorno ao status de aposentado.
+  status: confirmed
+  sources:
+  - source: ia-gc-journal-1979
+    quote: >-
+      On January 28, 1978, he was the chief consecrator of four bishops for the Anglican Church in North America.

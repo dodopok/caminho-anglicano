@@ -13,7 +13,9 @@ sources:
 ordinations:
 - order: diaconate
   date: '1985-05-05'
+  place: Matriz do Nazareno, Santana do Livramento (RS)
   jurisdiction: ieab
+  ordained_by: olavo-ventura-luiz
   status: confirmed
   sources:
   - source: ieab-2021-carmen
@@ -21,7 +23,15 @@ ordinations:
       em 05 de maio de 1985, a IEAB realiza a primeira ordenação feminina ao diaconato, sendo ordenada Carmen
   - source: ieab-3a-bispa
     quote: a primeira mulher ordenada foi a Revda. Carmen Etel Alves Gomes, em 1985.
-  notes: Primeira mulher ordenada na IEAB. Ordenante e local não informados nestas fontes.
+  - source: cant-identidades-numeros-2024
+    quote: >-
+      No ano seguinte, em 05 de maio, a Igreja realizou a primeira ordenação de uma mulher, quando a reverenda Carmen
+      Etel Alves Gomes foi elevada ao diaconato na Matriz do Nazareno, na cidade de Livramento. O rito foi presidido
+      pelo Bispo Primaz, Olavo Ventura Luiz, e contou com a participação dos bispos Cláudio Vinícius de Senna Gastal
+      e Plínio Lauer Simões
+  notes: >-
+    Primeira mulher ordenada na IEAB. Ordenante e local não informados nestas fontes. Participaram os bispos Cláudio
+    Gastal e Plínio Simões. O texto chama Olavo de "Bispo Primaz" em 1985 (era primaz interino após a morte de Kratz).
 events:
 - type: other
   date: '2022-11-12'

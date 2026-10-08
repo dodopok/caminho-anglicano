@@ -1,3 +1,17 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: antonio-bessa
 name: Antônio Bessa
+ordinations:
+- order: episcopate
+  date: '2019'
+  place: Fortaleza (CE)
+  jurisdiction: null
+  principal_consecrator: leonardo-marin-saavedra
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2019, o arcebispo Leonardo Marin-Saavedra da Igreja Anglicana Latino-Americana realizou algumas visitas
+      ao Brasil, consagrando novos bispos para o continente, ratificando as Ordens de clérigos com sucessão apostólica
+      considerada duvidosa, e ordenando novos diáconos e presbíteros para diferentes Igrejas. Uma dessas sagrações
+      episcopais realizadas foi a de Antônio Bessa, na cidade de Fortaleza.

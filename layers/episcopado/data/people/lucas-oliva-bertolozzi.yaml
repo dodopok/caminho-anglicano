@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: lucas-oliva-bertolozzi
+name: Lucas Oliva Bertolozzi
+ordinations:
+- order: episcopate
+  date: '2011'
+  jurisdiction: null
+  principal_consecrator: josue-sousa-torres
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A sua sagração episcopal foi feita por dom Josué Torres.
+  - source: cant-novas-igrejas-2024
+    quote: tendo sido sagrado bispo em 2011 pela Província Brasileira de Confissão Anglicana.

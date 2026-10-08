@@ -17,11 +17,15 @@ sources:
     Mora em Vitória/ES.
 ordinations:
 - order: diaconate
-  date: 2015-12
+  date: '2015-12-04'
   place: Sínodo da Diocese do Recife (Recife/Jaboatão dos Guararapes-PE)
   jurisdiction: diocese-anglicana-recife
   status: contested
   sources:
+  - source: reb-calendario-2026
+    quote: 04/12/2015 -BISPO ERIC (ORDENAÇÃO)
+  - source: reb-calendario-2026
+    quote: 04/12/2015 – Ordenação Episcopal • Bispo Eric
   - source: aac-2015-recife
     quote: One of the new Deacons is Eric. He is a person of many surprises.
   - source: aac-2015-recife
@@ -52,12 +56,14 @@ ordinations:
     - source: aac-2015-recife
       quote: participated in the Ordination, laying hands on one of the four Deacons
   notes: >-
-    Ordenação na sexta-feira de abertura do Sínodo Diocesano, dias antes de 08/12/2015 (data do post). O bispo ordenante
-    não é nomeado (bispo diocesano: Miguel Uchoa); Bill Atwood (ACNA) impôs as mãos sobre um dos quatro diáconos.
-    Presbiterato de Eric Rodrigues: data e ordenante NÃO encontrados (já era 'Rev.' e reitor da Âncora antes de
-    2023). Ordenação no Sínodo da Diocese do Recife, dias antes de 08/12/2015 (data do post). Bill Atwood (ACNA)
-    impôs as mãos sobre um dos quatro diáconos. O bispo ordenante não é nomeado. Em 2015 a diocese já era extra-provincial
-    ligada à GAFCON; IACS é aproximação. Presbiterato: data e ordenante NÃO encontrados.
+    O calendário rotula a data como 'Ordenação Episcopal' num trecho e só 'Ordenação' noutro; a sagração foi em
+    08/05/2023. A data bate com o diaconato de dez/2015 registrado por outra fonte. Ordenação na sexta-feira de
+    abertura do Sínodo Diocesano, dias antes de 08/12/2015 (data do post). O bispo ordenante não é nomeado (bispo
+    diocesano: Miguel Uchoa); Bill Atwood (ACNA) impôs as mãos sobre um dos quatro diáconos. Presbiterato de Eric
+    Rodrigues: data e ordenante NÃO encontrados (já era 'Rev.' e reitor da Âncora antes de 2023). Ordenação no Sínodo
+    da Diocese do Recife, dias antes de 08/12/2015 (data do post). Bill Atwood (ACNA) impôs as mãos sobre um dos
+    quatro diáconos. O bispo ordenante não é nomeado. Em 2015 a diocese já era extra-provincial ligada à GAFCON;
+    IACS é aproximação. Presbiterato: data e ordenante NÃO encontrados.
 - order: presbyterate
   date: null
   jurisdiction: diocese-anglicana-recife
@@ -84,6 +90,8 @@ ordinations:
   - miguel-uchoa
   status: contested
   sources:
+  - source: reb-calendario-2026
+    quote: 08/05/2023 – Sagração Episcopal • Bispo Eric
   - source: eshoje-eric-2023
     quote: O rito de sagração do Bispo Eric Rodrigues aconteceu no último dia 8 de maio, em Vitória
   - source: anglicanismo-visita-2023
@@ -218,6 +226,10 @@ affiliations:
     quote: Eu, Dom Eric Rodrigues, Bispo da Igreja de Deus na Rede Episcopal Brasileira
   - source: reb-estrutura
     quote: Bispo da Rede Episcopal Brasileira
+  - source: reb-calendario-2026
+    quote: 'Bispo Diocesano
+
+      Eric Rodrigues'
   notes: 'Local: sede: Igreja/Catedral Âncora, Vitória/ES.'
 - jurisdiction: reb
   role: founder

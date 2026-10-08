@@ -40,6 +40,10 @@ ordinations:
   - olavo-ventura-luiz
   status: confirmed
   sources:
+  - source: ia-gc-journal-1979
+    quote: >-
+      The Presiding Bishop received notice of the conscration of the following foreign bishops, Brazil April 24,
+      1977 — The Rt. Rev. Agostino Guillon Soria, Central Brazil
   - source: costa2021
     quote: >-
       eleito em 11 de novembro de 1976 e sagrado ao episcopado em 24 de abril de 1977, na Christ Church, pelo Bispo
@@ -47,7 +51,9 @@ ordinations:
       Luiz.
   - source: sinopse-2003
     quote: 1977 - Agostinho Guillón Sória (Rio de Janeiro)
-  notes: Bispo da Diocese Central (Rio de Janeiro), sucedendo Sherrill.
+  notes: >-
+    Confirma, por fonte primária da TEC, a data já registrada em ieab-1965-hoje.json (24/04/1977). A notificação
+    não nomeia sagrantes. Bispo da Diocese Central (Rio de Janeiro), sucedendo Sherrill.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop

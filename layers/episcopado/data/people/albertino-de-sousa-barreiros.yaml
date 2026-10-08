@@ -17,18 +17,37 @@ sources:
   quote: uma oração e uma bênção do nosso bispo diocesano, Dom Albertino De Sousa Barreiros.
 ordinations:
 - order: episcopate
-  date: null
+  date: '2019-07-15'
+  place: Capela da Universidade Federal do Rio Grande do Norte, Natal (RN)
   jurisdiction: iacc
-  principal_consecrator: james-roque
-  status: probable
+  principal_consecrator: james-antonio-roque
+  status: contested
   sources:
+  - source: cant-anglo-catolicismo-2026
+    quote: >-
+      sendo sagrado em 15 de julho de 2019 na capela da Universidade Federal do Rio Grande do Norte. A cerimônia
+      foi presidida por Dom James Antônio Roque, que também coordenou a instalação oficial da Diocese.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo ordinante principal e bispo responsável pela coordenação dos trabalhos de criação e instalação da
+      Diocese foi dom James Roque.
   - source: costa-2021-tese
     quote: >-
       em seguida, ordenou muitas pessoas ao episcopado, a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino
       de Sousa Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa
       da Silva.
+  discrepancies:
+  - field: principal_consecrator
+    value: james-roque
+    sources:
+    - source: costa-2021-tese
+      quote: >-
+        em seguida, ordenou muitas pessoas ao episcopado, a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino
+        de Sousa Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José
+        Barbosa da Silva.
   notes: >-
-    Costa (2021) e o site da IACC dizem que James Roque 'ordenou' estes bispos. Para Itabira Jonas, a data de 11/1/2018
+    Fecha a data (jurisdicoes-menores.json tinha data nula). Diocese Anglicana do Natal (hoje ligada à TAC). Costa
+    (2021) e o site da IACC dizem que James Roque 'ordenou' estes bispos. Para Itabira Jonas, a data de 11/1/2018
     vem do site da diocese (registro separado); para Barreiros, c. 2019. Pode tratar-se do mesmo evento já registrado.
 affiliations:
 - jurisdiction: tac

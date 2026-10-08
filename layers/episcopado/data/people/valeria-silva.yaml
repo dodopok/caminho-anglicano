@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: valeria-silva
+name: Valéria Silva
+ordinations:
+- order: presbyterate
+  date: '2007-05-12'
+  jurisdiction: ieab
+  ordained_by: hiroshi-ito
+  status: confirmed
+  sources:
+  - source: cant-ec-2007-03
+    quote: A revda. Valéria Silva foi ordenada presbítera, pelo bispo Hiroshi Ito, no dia 12 de maio.
+  notes: >-
+    Ano inferido da edição (Estandarte Cristão mar-abr/2007, publicada depois de maio). Diocese Anglicana de São
+    Paulo.

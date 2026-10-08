@@ -30,8 +30,18 @@ ordinations:
   date: '1976-11-28'
   jurisdiction: ieab
   office: diocesan
-  status: contested
+  status: confirmed
   sources:
+  - source: ia-ens-1993-03-17
+    quote: bishop of southwestern Brazil, for which he was consecrated in 1976.
+  - source: ia-episcopal-life-1993-04
+    quote: >-
+      Luiz was consecrated bishop of the Dio- cese of South Western Brazil in 1976 and elected primate of Brazil
+      in 1984.
+  - source: ia-wmn-1986-12
+    quote: Seminary at Sao Paulo, was conse- crated bishop in 1976.
+  - source: ia-whoswho-lambeth-1988
+    quote: Episcopal Church of Brazil (1986) and Bp of Southwestern Brazil (1976)
   - source: costa2021
     quote: >-
       Foi eleito pelo Concílio para ser o terceiro bispo da Diocese Sul-Ocidental, sendo sagrado em 28 de novembro
@@ -43,8 +53,12 @@ ordinations:
   - source: sinopse-2003
     quote: 1976 - Olavo Ventura Luiz (Santa Maria)
   notes: >-
-    A mesma tese diz no corpo do texto "No início do ano de 1976 foi sagrado o novo bispo da Diocese Sul-Ocidental,
-    o reverendo Olavo Ventura Luiz"; a nota de rodape da 28/11/1976. Ver duvidas.
+    Sagrante principal NÃO encontrado. Os Journals da Convenção Geral abertos no Internet Archive (1979, Denver)
+    começam a lista de notificações de sagrações estrangeiras em setembro de 1976 e não trazem Olavo; a notificação
+    (se houve) deve estar no Journal de 1976 (Minneapolis), que não está no Internet Archive. Trechos do Internet
+    Archive vêm da busca de texto completo (OCR; itens de empréstimo controlado). A mesma tese diz no corpo do texto
+    "No início do ano de 1976 foi sagrado o novo bispo da Diocese Sul-Ocidental, o reverendo Olavo Ventura Luiz";
+    a nota de rodape da 28/11/1976. Ver duvidas.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
@@ -88,3 +102,12 @@ affiliations:
     Fontes divergem: lista oficial (via Wikipedia EN) 1986-1992; Costa (Anexo E) interino 1986-1988 e titular 1988-1993
     (grafado "Ventura Ruiz"); morreu em 09/03/1993. ENS (17/03/1993) diz que morreu em 8 de marco (Costa: 9 de marco)
     e que se tornou primaz em 1984 (provavel confusao; Sherrill era primaz em exercicio em 1984).
+events:
+- type: death
+  date: '1993-03-09'
+  description: Morte de Olavo Ventura Luiz, primaz da IEAB, em 9 de março de 1993 (malária cerebral).
+  status: probable
+  sources:
+  - source: ia-church-times-1993-03-26
+    quote: >-
+      DEATH of the Anglican Primate of Brazil, Bishop Olavo Ventura Luiz, on 9 March was caused by cerebral

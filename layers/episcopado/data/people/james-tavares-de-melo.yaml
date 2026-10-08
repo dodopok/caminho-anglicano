@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: james-tavares-de-melo
+name: James Tavares de Melo
+ordinations:
+- order: presbyterate
+  date: 2016-05
+  place: Votorantim (SP)
+  jurisdiction: null
+  ordained_by: theodoro-a-c-de-oliveira
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: No mesmo mês, o frei James Tavares de Melo, OFS, foi ordenado por dom Theodoro em Votorantim.
+  notes: >-
+    O trecho diz "ordenado" sem especificar a ordem; registrado como presbiterato por suposição — conferir.
+- order: episcopate
+  date: '2018-10-14'
+  place: Catedral da Santa Mãe de Deus, Votorantim (SP)
+  jurisdiction: null
+  principal_consecrator: james-antonio-roque
+  co_consecrators:
+  - frederick-haas
+  - rafael-ribeiro-campos
+  - theodoro-a-c-de-oliveira
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Dom James Roque também foi responsável por presidir a sagração episcopal de dom James Tavares de Melo
+  - source: cant-anglo-catolicismo-2026
+    quote: >-
+      Sua sagração ocorreu em 14 de outubro de 2018, na Catedral Santa Mãe de Deus, tendo como 171 sagrantes Dom
+      Theodoro Oliveira, Dom James Antônio Roque, Dom Frederick Haas e Dom Rafael Ribeiro Campos.
+  notes: >-
+    Fecha a lacuna de sagrante (jurisdicoes-menores.json tinha SP nulo). Província Anglicana de Cristo Salvador
+    / Diocese Anglicana de Votorantim.

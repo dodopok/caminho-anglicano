@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: james-antonio-roque
+name: James Antônio Roque
+ordinations:
+- order: episcopate
+  date: '2013'
+  place: Barranquilla (Colômbia)
+  jurisdiction: tac
+  principal_consecrator: victor-manuel-cruz-blanco
+  status: probable
+  sources:
+  - source: cant-anglo-catolicismo-2026
+    quote: Em 2013, Dom James Roque recebeu o episcopado pelas mãos de Dom Victor Manuel Cruz-Blanco
+  - source: cant-novas-igrejas-2024
+    quote: A sua sagração aconteceu na cidade de Barranquila, na Colômbia.
+  notes: >-
+    Já registrado em jurisdicoes-menores.json; aqui com fonte Costa. Jurisdição: Movimento Contínuo (Província Católica
+    de Rito Anglicano da América Latina); sigla TAC é aproximada.
