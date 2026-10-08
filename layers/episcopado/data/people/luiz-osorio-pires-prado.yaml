@@ -70,6 +70,12 @@ ordinations:
   - source: wp-pt-dioc-pelotas
     quote: >-
       Em 1987 o reverendo Luiz Osório Pires Prado foi eleito e sagrado para ser bispo sufragâneo da Diocese Meridional.
+  - source: kickhofel-1995
+    quote: >-
+      Antes de sua sagração ao episcopado em julho de 1987, o bispo Prado trabalhou como pároco em São Leopoldo
+      e como professor no Seminário Teológico, na Universidade Federal do Rio Grande do Sul, na UNISINOS e na Faculdade
+      Lassalista de Canoas.
+    page: '312'
   notes: >-
     Novo dado: mês (julho de 1987) e cidade (Porto Alegre). Sagrante não nomeado. World Mission News (jan/1988)
     diz que ele tinha a tarefa de criar a nova diocese no extremo sul (Pelotas); o Who's who de Lambeth 1988 o dá
@@ -94,7 +100,7 @@ affiliations:
   start: '1987'
   end: '1989'
   end_reason: transfer
-  status: probable
+  status: contested
   sources:
   - source: ame-54-1987
     quote: >-
@@ -103,7 +109,26 @@ affiliations:
     page: '2'
   - source: costa2021
     quote: Foi sagrado bispo sufragâneo da Meridional, na Catedral de Santíssima Trindade, em Porto Alegre.
-  notes: Depois primeiro diocesano de Pelotas.
+  - source: kickhofel-1995
+    quote: >-
+      Quando, em 1987, a Diocese Meridional elegeu e sagrou o rev. Luiz Osório Pires Prado como bispo sufragâneo,
+      numa das mais rápidas eleições já realizadas na diocese, duas tarefas aguardavam o novo bispo: auxiliar o
+      bispo diocesano Cláudio Gastal nas atividades pastorais e organizar uma nova diocese com sede na cidade de
+      Pelotas.
+    page: '311'
+  notes: >-
+    Depois primeiro diocesano de Pelotas. Encarregado de organizar a futura Diocese Anglicana de Pelotas.
+  discrepancies:
+  - field: end
+    value: '1988'
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        Quando, em 1987, a Diocese Meridional elegeu e sagrou o rev. Luiz Osório Pires Prado como bispo sufragâneo,
+        numa das mais rápidas eleições já realizadas na diocese, duas tarefas aguardavam o novo bispo: auxiliar
+        o bispo diocesano Cláudio Gastal nas atividades pastorais e organizar uma nova diocese com sede na cidade
+        de Pelotas.
+      page: '311'
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dap
@@ -146,6 +171,20 @@ affiliations:
     - source: costa2021
       quote: 1988-2000 – Luiz Osório Pires Prado
   notes: Fim em 1999 (Wikipedia/dapsul) ou 2000 (Costa).
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dm
+  end: 1987-07
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Antes de sua sagração ao episcopado em julho de 1987, o bispo Prado trabalhou como pároco em São Leopoldo
+      e como professor no Seminário Teológico
+    page: '312'
+  notes: >-
+    Pároco em São Leopoldo; professor no Seminário Teológico, na UFRGS, na UNISINOS e na Faculdade Lassalista de
+    Canoas.
 events:
 - type: death
   date: 2009-12
