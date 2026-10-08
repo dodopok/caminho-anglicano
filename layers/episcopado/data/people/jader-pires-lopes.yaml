@@ -4,9 +4,53 @@ name: Jader Pires Lopes
 affiliations:
 - jurisdiction: reb
   role: other
+  role_description: plantador de igreja
+  start: '2026-08-01'
+  status: confirmed
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-jader
+    quote: >-
+      27 de junho de 2026 a Estação Casa e Jaime sairam da REB, Jader continuou na REB e está agora (desde 1 de
+      agosto de 2026) plantando a Igreja Anglicana Caminho em BH (site da REB tem ela)
+  - source: reb-igrejas
+    quote: Igreja Anglicana Caminho
+  notes: >-
+    Local: Igreja Anglicana Caminho, Belo Horizonte (MG), Rua Dom Cabral, 156, Ipiranga; listada no site da REB.
+- jurisdiction: reb
+  role: other
   role_description: outro
   status: confirmed
   sources:
   - source: reb-calendario-2026
     quote: "Postulante \nMarcela Freitas Coelho\nJader Pires Lopes\nleonardo Morais"
   notes: Consta na lista do clero do Calendário REB 2026.
+- jurisdiction: iab
+  role: other
+  role_description: postulante
+  end: 2024-12
+  end_reason: left
+  status: confirmed
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-jader
+    quote: >-
+      Ele era postulante da Trindade sob o Pedro Muniz, saiu pra REB e estava na Estação Casa como postulante do
+      Jaime Sepulcro
+  notes: >-
+    Postulante na Igreja Anglicana Trindade, sob o Rev. Pedro Muniz; saiu para a REB (fim aproximado: formação da
+    REB, dez/2024).
+- jurisdiction: reb
+  role: other
+  role_description: postulante
+  status: confirmed
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-jader
+    quote: >-
+      Ele era postulante da Trindade sob o Pedro Muniz, saiu pra REB e estava na Estação Casa como postulante do
+      Jaime Sepulcro
+  - source: testemunho-mantenedor-2026-10-08-jader
+    quote: >-
+      27 de junho de 2026 a Estação Casa e Jaime sairam da REB, Jader continuou na REB e está agora (desde 1 de
+      agosto de 2026) plantando a Igreja Anglicana Caminho em BH (site da REB tem ela)
+  notes: >-
+    Postulante na Estação Casa, sob o Rev. Jaime Sepulcro Jr.; continuou na REB quando Jaime e a Estação Casa saíram
+    (27/06/2026).
