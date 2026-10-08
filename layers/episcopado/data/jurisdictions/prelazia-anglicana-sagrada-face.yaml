@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: prelazia-anglicana-sagrada-face
+name: Prelazia Anglicana Sagrada Face
+type: diocese
+relations:
+- type: part_of
+  target: dac
+  status: confirmed
+  sources:
+  - source: lielb-dacb-api-clero
+    quote: >-
+      "nome": "João de Deus da Silva", "nome_civil": "João de Deus da Silva", "cargo": "Bispo Prelado / Abade",
+      "prelazia": "Prelazia Anglicana Sagrada Face"

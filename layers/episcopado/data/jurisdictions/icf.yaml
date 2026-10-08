@@ -1,13 +1,25 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: icf
-acronym: ICF
-name: Igreja Católica da Fé
+acronym: ICAF
+name: Igreja Católica Apostólica da Fé
+aliases:
+- ICF
+- Igreja Católica da Fé
 type: other
 country: BR
+founded:
+  date: '2015'
+  sources:
+  - source: lq-g1-ronaldo-2015
+    quote: A Igreja Católica Apostólica da Fé, a ICAF, foi criada há três meses pelo padre Ronaldo Melo
+  - source: lq-pocosja-2015
+    quote: a criação da Igreja Católica Apostólica da Fé, em Machado (MG), foi caracterizada como cisma
 description: >-
-  Igreja católica independente criada em Pouso Alegre (MG) pelos ex-padres Ronaldo Melo e Dionísio Aílton Pereira.
+  Igreja independente criada em Machado (MG) em 2015 pelo então padre Ronaldo Melo, após seu desligamento da Diocese
+  de Guaxupé. A Diocese de Guaxupé considerou o ato um cisma. Em Pouso Alegre, a Paróquia São Jorge é conhecida
+  como 'Igreja da Fé'.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: >-
-    também deixou o sacerdócio, e junto com Dionísio criaram a Igreja Católica da Fé, na cidade de Pouso Alegre.
-  page: '103'
+- source: lq-g1-ronaldo-2015
+  quote: A Igreja Católica Apostólica da Fé, a ICAF, foi criada há três meses pelo padre Ronaldo Melo
+- source: lq-pocosja-2015
+  quote: a criação da Igreja Católica Apostólica da Fé, em Machado (MG), foi caracterizada como cisma

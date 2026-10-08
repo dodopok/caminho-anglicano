@@ -99,8 +99,9 @@ ordinations:
     O ano e o ordenante constam da nota de falecimento da Diocese Anglicana de São Paulo (2023) e da nota da Diocese
     Anglicana no Brasil, que reproduz o mesmo texto 'extraído dos arquivos' da DASP. Dia e local não aparecem nas
     fontes consultadas. Formação teológica no Instituto Anglicano de Estudos Teológicos (IAET), sob coordenação
-    do bispo Takatsu, e na Episcopal Divinity School (EUA). Ano tirado da lista do clero nacional por ordem de ordenação
-    ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    do bispo Takatsu, e na Episcopal Divinity School (EUA). Nota de falecimento publicada pela Diocese Anglicana
+    no Brasil. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante
+    não informado.
 - order: presbyterate
   date: '1990'
   jurisdiction: ieab
@@ -161,6 +162,11 @@ ordinations:
     quote: >-
       Sagrado no dia 7 de setembro do mesmo ano, exerceu o episcopado na Diocese Anglicana de São Paulo até 2012,
       sucedendo o Bispo Hiroshi Ito.
+  - source: lbd-danb-falecimento
+    quote: >-
+      quando foi eleito bispo, no concílio extraordinário (da Igreja Episcopal Anglicana do Brasil - IEAB) de 7
+      de junho de 2007 em São Paulo. Sagrado no dia 7 de setembro do mesmo ano, exerceu o episcopado na Diocese
+      Anglicana de São Paulo (IEAB) até 2012, sucedendo o Bispo Hiroshi Ito.
   - source: cant-novas-igrejas-2024
     quote: >-
       Sagrado no dia 7 de setembro do mesmo ano, exerceu o episcopado na Diocese Anglicana de São Paulo (IEAB) até
@@ -178,8 +184,10 @@ ordinations:
     O Estandarte Cristão (jul-ago/2007), publicação oficial da IEAB, confirma data (7 de setembro de 2007), local
     (Catedral de São Paulo) e os seis bispos presentes; a identificação do Primaz Maurício Andrade como sagrante
     principal vem da Wikipédia PT e da tese de Costa (2021), não do trecho do Estandarte. Eleito no Concílio Extraordinário
-    de 7 de junho de 2007; Bird era deão da Igreja de São Paulo (Saint Paul's Church). Eleito no concílio extraordinário
-    de 07/06/2007 em São Paulo; o livro não cita os sagrantes.
+    de 7 de junho de 2007; Bird era deão da Igreja de São Paulo (Saint Paul's Church). Eleição em 07/06/2007; sagração
+    em 07/09/2007 (sagrantes não indicados nesta nota). Nota da Diocese Anglicana no Brasil diz que exerceu o episcopado
+    em SP até 2012; a IEAB registra aposentadoria compulsória em 16/03/2013. Eleito no concílio extraordinário de
+    07/06/2007 em São Paulo; o livro não cita os sagrantes.
 affiliations:
 - jurisdiction: ieab-dasp
   role: clergy
@@ -246,6 +254,13 @@ affiliations:
     quote: >-
       Em 21 de novembro de 2012, o então bispo Roger Bird apresentou sua carta de resignação do cargo de bispo da
       DASP
+  - source: lq-ieab-acoes
+    quote: >-
+      venho, em caráter irrevogável e irretratável e observando todas as formalidades canônicas, renunciar ao cargo
+      de Bispo Emérito da Diocese Anglicana de São Paulo-DASP e de membro da Câmara de Bispos da IEAB, bem como
+      requerer minha desvinculação da qualidade de clero e membro da DASP.
+  - source: lq-ieab-acoes
+    quote: 17 de março de 2013- Bispo Primaz Dom Maurício Andrade assume a Diocese Anglicana de São Paulo.
   - source: costa2021
     quote: Diocese Anglicana de São Paulo … 2007-2012 – Roger Douglas Bird
     page: 521-522
@@ -259,7 +274,8 @@ affiliations:
     e ao clero da IEAB, citada na cronologia oficial da IEAB. Nas fontes consultadas não há registro de deposição
     concluída; o Tribunal Eclesiástico de Bispos tinha o caso em exame e fixou 11/05/2013 como prazo final de defesa.
     A IEAB lista a saída como pedido do próprio bispo. Depois uniu-se ao Movimento Anglicano no Brasil (fora da
-    IEAB). Anexo D da tese (bispos por diocese).
+    IEAB). Compulsória em 16/03/2013 (68 anos); em 10/05/2013 carta de desvinculação da IEAB. Anexo D da tese (bispos
+    por diocese).
   discrepancies:
   - field: end
     value: '2012-11-21'
@@ -358,7 +374,7 @@ affiliations:
       a Catedral Anglicana de São Paulo, que passou para a supervisão episcopal dos dois bispos.
 - jurisdiction: manb
   role: bishop
-  start: 2013-03
+  start: '2013-03-03'
   end: '2016'
   end_reason: transfer
   status: confirmed
@@ -378,6 +394,13 @@ affiliations:
       (IEAB), taking with them the largest Anglican congregation in South America.
   - source: costa2021
     quote: Atualmente ela possui apenas um bispo, Roger Bird
+  - source: lq-ieab-acoes
+    quote: >-
+      03 de março de 2013- Dia da Assembleia Geral Extraordinária da Catedral Anglicana de São Paulo na qual ocorre
+      a Eleição de Dom Roger Douglas Bird como Bispo da Congregação e de Dom Glauco Soares de Lima.
+  - source: lq-cat-carta-aberta
+    quote: >-
+      confirma os Bispos anglicanos Dom Roger Douglas Bird e Dom Glauco Soares de Lima como seus líderes espirituais.
   - source: cant-novas-igrejas-2024
     quote: >-
       Os dois bispos passaram a exercer supervisão episcopal sobre o reverendo e a comunidade através do Movimento
@@ -388,7 +411,8 @@ affiliations:
     (fonte IEAB). Em 06/04/2013 os dois bispos assinaram declarações de supervisão episcopal sobre Aldo Quintão
     e outros seis clérigos. A IEAB registra em 01/05/2013 a criação da 'Diocese do Movimento Anglicano'. Em 2016
     o MAnB passou a se chamar Diocese Anglicana no Brasil. Fim=2016 indica a mudança de nome da jurisdição, não
-    saída do bispo.
+    saída do bispo. Versão da IEAB para a assembleia de 03/03/2013 da Catedral; a carta aberta de 19/04/2013 menciona
+    a confirmação dos dois bispos por nova Assembleia Geral.
   discrepancies:
   - field: start
     value: '2013-04-06'
@@ -409,9 +433,17 @@ affiliations:
       2016 passaria a ser a nossa "Diocese Anglicana no Brasil"
   - source: cant-novas-igrejas-2024
     quote: enquanto o bispo Roger atuava como bispo diocesano.
+  - source: lbd-danb-falecimento
+    quote: >-
+      integrou o "Movimento Anglicano no Brasil", que em 2016 passaria a ser a nossa "Diocese Anglicana no Brasil"
+      - com sede em Pouso Alegre Minas Gerais, passando a ser nosso bispo diocesano.
+  - source: lbd-danb-falecimento
+    quote: que faleceu nessa segunda-feira, dia 13.
   notes: >-
     A nota de falecimento da própria DAnB diz que Bird 'passou a ser nosso bispo diocesano'. A nota mistura, na
     mesma frase, a sede em Pouso Alegre (MG), que é posterior (sede da DAnB sob Dionísio Aílton Pereira após 2023).
+    A nota, publicada em 14/02/2023, é da Diocese Anglicana no Brasil e usa informações de arquivos da DASP e da
+    DAnB.
 - jurisdiction: ieab-dasp
   role: other
   role_description: deao
@@ -587,6 +619,142 @@ events:
     quote: ORDENAÇÃO DIACONAL- MARCOS JOSÉ ZANETTI - CATEDRAL ANGLICANA DE SÃO PAULO 2015
   - source: lbd-yt-visita2016
     quote: 3A VISITA PASTORAL DE DOM ROGER DOUGLAS BIRD - JANEIRO 2016
+- type: other
+  date: '2012-09-08'
+  description: >-
+    Concílio Extraordinário da Diocese Anglicana de São Paulo elege o deão Flávio Borges Irala como bispo diocesano.
+    Em 13/09/2012 o bispo Roger Bird emite declaração de nulidade da eleição; em 17/09/2012 a Comissão Nacional
+    de Constituição e Cânones da IEAB emite parecer favorável à validade; em 20/09/2012 Bird comunica que acata
+    o parecer.
+  status: confirmed
+  sources:
+  - source: lq-ieab-acoes
+    quote: 08 de setembro de 2012- Concílio Extraordinário para Eleição de Bispo de São Paulo.
+  - source: lq-ieab-acoes
+    quote: >-
+      13 de setembro de 2012- Bispo Diocesano Dom Roger Douglas Bird emite uma Declaração de Nulidade do Concílio
+      Extraordinário de Eleição do Bispo.
+  - source: lq-ieab-acoes
+    quote: >-
+      enviarei a documentação canônica junto com esta carta para nosso Bispo Primaz, informando que o DEÃO FLÁVIO
+      BORGES IRALA foi eleito nas eleições do Concílio Extraordinário para ser o meu sucessor.
+- type: resignation
+  date: '2012-11-21'
+  description: >-
+    Roger Bird submete ao Bispo Primaz Maurício Andrade sua resignação do cargo de bispo diocesano a partir de 31/12/2012;
+    em 14/12/2012, por carta registrada em cartório, decide não mais resignar nessa data.
+  status: confirmed
+  sources:
+  - source: lbd-carta-resignacao
+    quote: submeter minha resignação do cargo de bispo diocesano a partir de 31 de dezembro do corrente ano.
+  - source: lq-ieab-acoes
+    quote: >-
+      14 de dezembro de 2012- Bispo Dom Roger Bird em Carta Registrada em Cartório direcionado ao Bispo Primaz que
+      resolve não mais resignar no dia 31/12/2012
+- type: other
+  date: '2012-12-02'
+  description: >-
+    Assembleia Geral Extraordinária da Catedral Anglicana de São Paulo, convocada pelo deão Aldo Quintão e por Roger
+    Bird, aprova alteração do estatuto da Igreja Anglicana Episcopal de São Paulo (artigos 1º, 2º, 3º, 5º, 6º, 7º
+    e 13º, entre outros). A IEAB afirma que a assembleia foi realizada sem respaldo canônico e que visava extinguir
+    o vínculo legal/canônico com a Diocese e a IEAB.
+  status: probable
+  sources:
+  - source: lq-ieab-acoes
+    quote: >-
+      02 de dezembro de 2012- Realização da Assembleia Geral Extraordinária da Catedral Anglicana de São Paulo,
+      sem a ciência do Bispo Primaz, convocada pelo Deão Aldo Quintão e pelo Bispo Dom Roger Bird
+  - source: lbd-snieab-sinais
+    quote: realiza sua Assembléia sem o respaldo canônico e altera os artigos centrais dos seus Estatutos
+- type: other
+  date: '2013-04-19'
+  description: >-
+    Junta Paroquial da Catedral Anglicana de São Paulo publica carta aberta: afirma que a filiação à igreja nacional
+    desde 1975 é espiritual e não patrimonial; que a Assembleia Geral ratifica por unanimidade ter sempre prioritariamente
+    um Bispo da Comunhão Anglicana como líder espiritual; e confirma Dom Roger Douglas Bird e Dom Glauco Soares
+    de Lima como líderes espirituais.
+  status: confirmed
+  sources:
+  - source: lq-cat-carta-aberta
+    quote: terá sempre prioritariamente um Bispo da Comunhão Anglicana como líder espiritual
+  - source: lq-cat-carta-aberta
+    quote: com ênfase na existência de laços espirituais, mas não patrimoniais
+- type: other
+  date: '2013-05-01'
+  description: >-
+    Segundo a cronologia da IEAB, cria-se a 'Diocese do Movimento Anglicano', reunindo clérigos disciplinados pela
+    IEAB e apoiados por Roger Bird e Glauco Soares de Lima.
+  status: confirmed
+  sources:
+  - source: lq-ieab-acoes
+    quote: >-
+      01 de maio de 2013- Criação da Diocese do Movimento Anglicano que inclui um grupo de clérigos disciplinados
+      pela IEAB e apoiados pelos Bispos Dom Roger Bird e Dom Glauco Soares.
+- type: resignation
+  date: '2013-05-10'
+  description: >-
+    Roger Douglas Bird, em carta de 10/05/2013, anuncia 'em caráter irrevogável e irretratável' sua renúncia ao
+    cargo de bispo emérito da DASP e à Câmara de Bispos da IEAB e pede desvinculação do clero da DASP. A IEAB informa
+    que seu caso tramitava no Tribunal Eclesiástico.
+  status: confirmed
+  sources:
+  - source: lq-ieab-acoes
+    quote: >-
+      10 de maio de 2013- Bispo Roger anuncia em carta sua saída definitiva da Igreja Episcopal Anglicana do Brasil
+  - source: lbd-snieab-sinais
+    quote: >-
+      Atualmente o Tribunal Eclesiástico da IEAB está julgando o caso do Bispo Dom Roger e que até o presente momento
+      não apresentou sua defesa perante as instâncias da IEAB.
+- type: other
+  date: '2019-05-29'
+  description: >-
+    Decreto Episcopal ex-tunc do bispo diocesano Roger Douglas Bird (São Paulo, 29/05/2019) declarando nulas a ordenação
+    e sagração episcopal de Ronaldo Robster de Melo e a ordenação presbiteral de André Luiz dos Santos Firmino,
+    depois de eles afirmarem em rede social que eram independentes e não reconheciam Bird como superior; publicado
+    na Gazeta Machadense em 12/06/2019.
+  status: confirmed
+  sources:
+  - source: lq-gazeta-machadense-2019
+    quote: São Paulo, 29 de maio de 2019.
+  - source: lq-gazeta-machadense-2019
+    quote: >-
+      Declaro nula a ordenação e sagração episcopal do bispo Ronaldo Robster de Melo e a ordenação presbiteral do
+      reverendo André Luiz dos Santos Firmino, conferindo a esta decisão o efeito EX-TUNC.
+- type: death
+  date: '2023-02-13'
+  description: Falecimento do bispo Roger Douglas Bird (nota da Diocese Anglicana no Brasil, 14/02/2023).
+  status: confirmed
+  sources:
+  - source: lbd-danb-falecimento
+    quote: que faleceu nessa segunda-feira, dia 13.
+- type: other
+  date: '2013-10-02'
+  description: >-
+    Em outubro de 2013 um blog de congregação em Curitiba se apresenta como 'Movimento Anglicano no Brasil — Ministério
+    da Catedral Anglicana de São Paulo fundada em 1873', com os bispos Glauco Soares de Lima e Roger Bird, e descreve
+    Glauco como 'Bispo no Movimento Anglicano do Brasil sediado na Catedral Anglicana de São Paulo juntamente com
+    Dom Roger Bird'.
+  status: probable
+  sources:
+  - source: lq-blog-curitiba-2013
+    quote: >-
+      Bispo no Movimento Anglicano do Brasil sediado na Catedral Anglicana de São Paulo juntamente com Dom Roger
+      Bird.
+  - source: lq-blog-curitiba-2013
+    quote: Ministério da Catedral Anglicana de São Paulo
+- type: other
+  date: 2015-05
+  description: >-
+    Os bispos Roger Douglas Bird e Glauco Soares de Lima presidem ordenação de André Ocampos (São Manuel/Botucatu)
+    na Catedral Anglicana de São Paulo (reportagem de 16/05/2015); a reportagem a descreve como liderada por Aldo
+    Quintão.
+  status: probable
+  sources:
+  - source: lq-botucatu-2015
+    quote: >-
+      André Ocampos foi ordenado reverendo anglicano em cerimonial realizado na Catedral Anglicana de São Paulo,
+      que tem como maior líder o reverendo Aldo Quintão. A ordenação foi feita pelos bispos Roger Douglas Bird e
+      Glauco Soares de Lima.
 - type: other
   date: '2013'
   description: >-

@@ -1,8 +1,11 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: anthony-chadwick
 name: Anthony Chadwick
-biography: Arcebispo francês de tradição vétero-católica; um dos sagrantes de Lucas Macieira (2004).
+biography: >-
+  Citado como "Arcebispo da França"/"Bispo da França" e co-sagrante da sagração de Lucas Macieira em 2004. Identidade
+  e título episcopal não confirmados em fonte independente (ver dúvidas).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: o arcebispo francês Anthony Chadwick
-  page: '101'
+- source: lielb-ig-sagracao
+  quote: Bispo Anthony Chadwick da França
+- source: pasc-arcebispo-primaz
+  quote: também o Senhor Arcebispo da França bishop Anthony Chadwick

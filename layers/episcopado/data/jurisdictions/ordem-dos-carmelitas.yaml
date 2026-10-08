@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ordem-dos-carmelitas
+acronym: Ordem dos Carmelitas
+name: Ordem dos Carmelitas (frades carmelitas)
+type: religious_order
+country: BR
+description: Ordem religiosa em que Aldo Quintão se tornou frade antes de ingressar na Igreja Anglicana.
+sources:
+- source: lq-cat-aldo
+  quote: tornando-se frade carmelita.

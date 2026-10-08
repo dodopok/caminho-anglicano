@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: paulo-roberto-campos-oliveira
+name: Paulo Roberto Campos Oliveira
+ordinations:
+- order: episcopate
+  date: '2026-07-04'
+  place: Anagé (BA), Prelazia Anglicana São Jorge Guerreiro
+  jurisdiction: dac
+  office: suffragan
+  principal_consecrator: iranildo-macieira-da-silva
+  co_consecrators:
+  - alexander-danilo-felix-sani
+  - isaias-dutra
+  status: probable
+  sources:
+  - source: lielb-gaz-paulo
+    quote: >-
+      O responsável principal por conduzir a sagração e conferir a dignidade episcopal ao ordenando será o Bispo
+      Primaz da Diocese, Dom Lucas Macieira
+  - source: lielb-dacb-api-clero
+    quote: '"sagracao_episcopal": "04/07/2026 às 19h"'
+  notes: >-
+    Fontes anunciam a cerimônia (sábado, 4 de julho de 2026, 19h); realização não confirmada por relato posterior.
+    Co-celebrantes anunciados: Isaías Dutra (chanceler) e Alexsander (Prelazia Jesus Bom Pastor).

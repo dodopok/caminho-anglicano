@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: andre-luiz-dos-santos-firmino
+name: André Luiz dos Santos Firmino
+events:
+- type: other
+  date: '2019-05-29'
+  description: >-
+    Decreto Episcopal ex-tunc do bispo diocesano Roger Douglas Bird (São Paulo, 29/05/2019) declarando nulas a ordenação
+    e sagração episcopal de Ronaldo Robster de Melo e a ordenação presbiteral de André Luiz dos Santos Firmino,
+    depois de eles afirmarem em rede social que eram independentes e não reconheciam Bird como superior; publicado
+    na Gazeta Machadense em 12/06/2019.
+  status: confirmed
+  sources:
+  - source: lq-gazeta-machadense-2019
+    quote: São Paulo, 29 de maio de 2019.
+  - source: lq-gazeta-machadense-2019
+    quote: >-
+      Declaro nula a ordenação e sagração episcopal do bispo Ronaldo Robster de Melo e a ordenação presbiteral do
+      reverendo André Luiz dos Santos Firmino, conferindo a esta decisão o efeito EX-TUNC.

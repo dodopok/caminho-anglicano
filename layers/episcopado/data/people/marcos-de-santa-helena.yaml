@@ -1,22 +1,49 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcos-de-santa-helena
 name: Marcos de Santa Helena
-biography: Listado como bispo da Igreja Episcopal Latina do Brasil após sua fundação.
+aliases:
+- Dom Marcos de Santa Helena, OSC
+biography: >-
+  Listado como bispo da IELB. Uma página da "Comunhão Anglicana Independente" o apresenta como "Archbishop Primate"
+  no Brasil e sagrado em 15/01/2006 por Barry Frank Peachey, com Lucas Macieira como co-sagrante; a identificação
+  com o ex-padre de Caçapava do Sul (RS), fundador da Ordem de Santa Cecília, não está confirmada por fonte direta
+  (ver dúvidas).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: >-
-    Após a sua fundação, a Igreja Episcopal Latina do Brasil teve como bispos o bispo Ricardo Lorite de Lima, como
-    o Arcebispo Primaz e Metropolitano, Lorite de Lima, dom Rogério Belmiro Tampellini, dom Marcos de Santa Helena
-    e dom Adauto Pereira.
-  page: '167'
+- source: lielb-arquiabadia
+  quote: Consecrated as Bishop in 15th January 2006
+ordinations:
+- order: episcopate
+  date: '2006-01-15'
+  jurisdiction: null
+  principal_consecrator: barry-frank-peachey
+  co_consecrators:
+  - iranildo-macieira-da-silva
+  - norman-dutton
+  status: probable
+  sources:
+  - source: lielb-arquiabadia
+    quote: Consecrated as Bishop in 15th January 2006
+  - source: lielb-arquiabadia
+    quote: >-
+      The Most Rev’d. Iranildo Macieira da Silva (Dom Lucas) Metropolitan Primate Archbishop of The Latin Episcopal
+      Church of Brazil
+  notes: >-
+    A página replica os dados da sagração de Ricardo Lorite de Lima (mesma data, sagrante e co-sagrantes); pode
+    ter sido copiada do modelo de Lorite. Ver dúvidas.
 affiliations:
 - jurisdiction: ielb
   role: bishop
   status: probable
   sources:
+  - source: lielb-arquiabadia
+    quote: >-
+      Installed Archbishop of The Communion of Evangelical Episcopal Churches for Brazil in 20th Octuber 2007
   - source: cant-novas-igrejas-2024
     quote: >-
       Após a sua fundação, a Igreja Episcopal Latina do Brasil teve como bispos o bispo Ricardo Lorite de Lima,
       como o Arcebispo Primaz e Metropolitano, Lorite de Lima, dom Rogério Belmiro Tampellini, dom Marcos de Santa
       Helena e dom Adauto Pereira.
     page: '167'
+  notes: >-
+    A página o descreve também como Arcebispo Primaz da "Anglican Church of Brazil" e da Comunhão Anglicana Independente
+    para o Brasil (2010). Vínculo com a IELB vem do livro "Novas igrejas" (listado entre bispos da IELB).

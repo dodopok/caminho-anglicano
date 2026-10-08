@@ -20,16 +20,25 @@ sources:
 ordinations:
 - order: diaconate
   date: '2005-03-26'
-  place: Ribeirão Preto (SP)
+  place: Ribeirão Preto (SP), Casa da Meditação Cristã "Disciplina Pacis"
   jurisdiction: iadb-lorite
+  ordained_by: iranildo-macieira-da-silva
   status: probable
   sources:
+  - source: lielb-iab-historia
+    quote: >-
+      No dia 26 de março de 2005, Sábado Santo, os ministros licenciados Ricardo Lorite de Lima, Rui Costa Barbosa,
+      Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Diaconal da Igreja de Cristo, Una,
+      Santa, Católica e Apostólica, através da imposição das mãos do bispo vetero-católico Dom Iranildo Macieira
+      das Silva (Dom Lucas).
   - source: cant-novas-igrejas-2024
     quote: >-
       No dia 26 de março de 2005, na cidade de Ribeirão Preto (SP), os ministros licenciados Ricardo Lorite de Lima,
       Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Diaconal
     page: '118'
-  notes: O livro não nomeia o ordenante.
+  notes: >-
+    Ordenante identificado como "Bispo Primaz Metropolitano da Igreja Episcopal Latina do Brasil (vetero-católica)".
+    Fonte: história da Igreja Anglicana do Brasil (Ricardo Lorite de Lima). O livro não nomeia o ordenante.
 - order: presbyterate
   date: '2005-03-27'
   place: Igreja Evangélica Congregacional de Ribeirão Preto (SP)
@@ -37,19 +46,24 @@ ordinations:
   ordained_by: iranildo-macieira-da-silva
   status: probable
   sources:
+  - source: lielb-iab-historia
+    quote: >-
+      Na data de 27 de março de 2005, Domingo de Páscoa, os Rev. Diáconos Ricardo Lorite de Lima, Rui Costa Barbosa,
+      Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Presbiteral da Igreja de Cristo, Una,
+      Santa, Católica e Apostólica, através da imposição das mãos de Dom Iranildo Macieira das Silva (Dom Lucas).
+  - source: cant-novas-igrejas-2024
+    quote: e no dia 27 de março, os quatro diáconos foram ordenados presbíteros por bispos independentes.
+    page: '118'
   - source: ig-josue-2025-03-28-presbiterato-2005
     quote: >-
       Na data de 27 de março de 2005, Domingo de Páscoa, os Rev. Diáconos Ricardo Lorite de Lima, Rui Costa Barbosa,
       Luis Fernando Salgado e Josué Souza Torres foram elevados ao Ministério Presbiteral da Igreja de Cristo, Una,
       Santa, Católica e Apostólica, através da imposição das mãos de Dom Iranildo Macieira das Silva (Dom Lucas).
       A cerimônia de Ordenação ocorreu na Igreja Evangélica Congregacional de Ribeirão Preto.
-  - source: cant-novas-igrejas-2024
-    quote: e no dia 27 de março, os quatro diáconos foram ordenados presbíteros por bispos independentes.
-    page: '118'
   notes: >-
-    Também impuseram as mãos os padres Manuel (Igreja Antigo-Católica), João Ripoli e Mário Palumbo (Igreja Católica
-    Romana). Ordenações autorizadas por Leonardo Marin-Saavedra (Anglican Independent Communion Worldwide). O livro
-    diz apenas 'por bispos independentes', sem nomeá-los.
+    O livro diz apenas 'por bispos independentes', sem nomeá-los. Também impuseram as mãos os padres Manuel (Igreja
+    Antigo-Católica), João Ripoli e Mário Palumbo (Igreja Católica Romana). Ordenações autorizadas por Leonardo
+    Marin-Saavedra (Anglican Independent Communion Worldwide).
 - order: episcopate
   date: '2006-01-15'
   jurisdiction: ieep

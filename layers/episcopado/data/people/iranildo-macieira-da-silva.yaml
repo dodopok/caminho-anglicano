@@ -5,10 +5,13 @@ full_name: Iranildo Macieira da Silva
 aliases:
 - Dom Lucas
 - Dom Lucas Macieira
+- Frei Lucas Macieira
+- Iranildo Lukas Macieira da Silva
 - Iranildo Macieira da Silva
 - Iranildo Macieira das Silva
 - Lucas Macieira
 - Macieira
+- Mons. Dr. Dom Lucas Macieira da Silva
 - bispo Macieira
 - dom Lucas Macieira
 birth:
@@ -18,6 +21,16 @@ birth:
     quote: >-
       Nascido Iranildo Macieira da Silva, (Fortaleza, 17 de abril de 1974) é um bispo da Igreja Episcopal Latina
       do Brasil.
+  - source: pasc-arcebispo-primaz
+    quote: >-
+      Nascido Iranildo Macieira da Silva, ( Fortaleza , 17 de abril de 1974 ) é um bispo da Igreja Episcopal Latina
+      do Brasil
+  - source: lielb-dae-provincial
+    quote: >-
+      Nasce em Fortaleza em uma família muito humilde, neste mesmo ano é batizado e recebe o nome de Iranildo Macieira
+      da Silva.
+  - source: lielb-dacb-api-clero
+    quote: '"titulo": "Dom Frei", "nome": "Lucas Macieira da Silva", "nome_civil": "Iranildo Macieira da Silva"'
 biography: >-
   Ex-seminarista da Arquidiocese de Fortaleza e diácono da ICAB (até 2000); bispo vétero-católico (2004) e fundador
   da Igreja Episcopal Latina do Brasil.
@@ -28,10 +41,17 @@ sources:
     Brasil.
 ordinations:
 - order: diaconate
-  date: null
+  date: '1999-01-23'
   jurisdiction: icab
-  status: probable
+  ordained_by: fernando-cabral-de-barros
+  status: confirmed
   sources:
+  - source: lielb-dae-provincial
+    quote: >-
+      1999 , dia 23 de janeiro deste ano, porém em sua bula constando 24, recebe o diaconato na igreja Católica
+      Brasileira, pelas mãos do Bispo Diocesano Dom Fernando Cabral de Barros.
+  - source: lielb-dacb-api-clero
+    quote: '"ordenacao_diaconal": "23/01/1999"'
   - source: pasc-arcebispo-primaz
     quote: >-
       Foi seminarista da Arquidiocese de Fortaleza e mais tarde tornou-se diácono da Igreja Católica Apostólica
@@ -39,15 +59,35 @@ ordinations:
   - source: cant-novas-igrejas-2024
     quote: tornou-se diácono da Igreja Católica Apostólica Brasileira, de onde retirou-se em 2000
     page: '101'
-  notes: O livro não informa data nem ordenante.
+  notes: >-
+    A bula consta como 24/01; o próprio site da diocese registra 23/01/1999 como data da ordenação. Ordenante: Fernando
+    Cabral de Barros, bispo diocesano da Igreja Católica Apostólica Brasileira (ICAB). O livro não informa data
+    nem ordenante.
+- order: presbyterate
+  date: '2003-05-05'
+  place: Vila Milani
+  jurisdiction: icame
+  ordained_by: dirceu-milani
+  status: probable
+  sources:
+  - source: lielb-dae-provincial
+    quote: >-
+      em 2003 no dia 05 de maio recebeu a confirmação presbiteral em Vila Milani, pelo próprio Dom Dirceu Milani,
+      Por Dom Darci Milani e outros bispos presentes
+  notes: >-
+    Biografia publicada no site da Diocese Anglicana de Esmeraldas (autobiográfica). Ordenante: Dirceu Milani, arcebispo
+    da Igreja Católica Apostólica Missionária de Evangelização, com Darci Milani e outros bispos presentes. O site
+    fala em "confirmação presbiteral", sem data de uma eventual ordenação presbiteral anterior.
 - order: episcopate
   date: '2004-10-24'
-  place: Portugal
-  jurisdiction: ivc-macieira
+  place: Capela do Lar Santa Clara, Murgeira/Mafra, Portugal
+  jurisdiction: ielb
+  office: primate
   principal_consecrator: antonio-jose-da-costa-raposo
   co_consecrators:
   - anthony-chadwick
   - antonin-jelinek
+  - jose-moises-moncada-quevedo
   status: contested
   sources:
   - source: pasc-arcebispo-primaz
@@ -68,6 +108,40 @@ ordinations:
     quote: >-
       A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
       Apostólica Episcopal Portuguesa
+  - source: lielb-ig-sagracao
+    quote: >-
+      Dom Lucas Macieira ao lado de Dom Antônio Raposo, seu Bispo Sagrante Principal, junto com Dom Frei José Moisés
+      Moncada Quevedo da Colômbia, Dom Antonin Jelinek da República Checa e Bispo Anthony Chadwick da França. Há
+      20 anos, em 24 de outubro de 2004
+  - source: lielb-plwiki-raposo
+    quote: 24 października 2004
+  - source: pasc-arcebispo-primaz
+    quote: >-
+      Foi co-celebrante da sagração episcopal Dom Antonin Jelinek Bispo Primaz da República Checa e também o Senhor
+      Arcebispo da França bishop Anthony Chadwick.
+  - source: lielb-dacb-api-clero
+    quote: >-
+      "sagracao_episcopal": "25/10/2004", "local_sagracao": "Capela do Lar Santa Clara, Murgeira/Mafra, Portugal",
+      "bispos_consagrantes": "Dom José António da Costa Raposo (consagrante principal), Dom Antonín Jelínek e Dom
+      Anthony Chadwick (co-consagrantes)"
+  - source: lielb-blog-historico
+    quote: >-
+      D.António José da Costa Raposo sagrou Dom Iranildo Macieira da Silva (Dom Lucas Macieira da Silva) em 25 de
+      Outubro de 2004 em Portugal.
+  - source: lielb-anglocatolicos
+    quote: >-
+      D.António José da Costa Raposo sagrou Dom Iranildo Macieira da Silva (Dom Lucas Macieira da Silva) em 25 de
+      Outubro de 2004 em Portugal.
+  - source: lielb-netministries
+    quote: Archbishop Ferreira De Souza consecrated Iranildo Macieira da Silva on September 26,2004.
+  - source: lielb-anglocatolicos
+    quote: >-
+      Arcebispo José Ricardo Ferreira de Souza sagrou Iranildo Macieira da Silva (Dom Lucas Macieira da Silva) em
+      26 de Setembro de 2004 Arcebispo Primaz da Igreja Episcopal Latina do Brasil.
+  - source: lielb-scribd-old
+    quote: >-
+      Dom Paulo Pereira, que Sagrou S. Ex.cia. Revma. Cícero Cruz de Souza que Sagrou S. Ex.cia. Dom Iranildo Macieira
+      da Silva (Dom Lucas Macieira da Silva).
   - source: lwac-diego-bio
     quote: >-
       2004, 26 de setembro – Arcebispo José Ricardo Ferreira de Souza sagrou Iranildo Macieira da Silva (Dom Lucas
@@ -100,6 +174,12 @@ ordinations:
       quote: >-
         A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
         Apostólica Episcopal Portuguesa
+    - source: lielb-netministries
+      quote: Archbishop Ferreira De Souza consecrated Iranildo Macieira da Silva on September 26,2004.
+    - source: lielb-anglocatolicos
+      quote: >-
+        Arcebispo José Ricardo Ferreira de Souza sagrou Iranildo Macieira da Silva (Dom Lucas Macieira da Silva)
+        em 26 de Setembro de 2004 Arcebispo Primaz da Igreja Episcopal Latina do Brasil.
     - source: lwac-diego-bio
       quote: >-
         2004, 26 de setembro – Arcebispo José Ricardo Ferreira de Souza sagrou Iranildo Macieira da Silva (Dom Lucas
@@ -109,33 +189,116 @@ ordinations:
         A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
         Apostólica Episcopal Portuguesa.
       page: '166'
-  - field: principal_consecrator
-    value: jose-ricardo-ferreira-de-souza
-    sources:
-    - source: lwac-diego-bio
-      quote: >-
-        2004, 26 de setembro – Arcebispo José Ricardo Ferreira de Souza sagrou Iranildo Macieira da Silva (Dom Lucas
-        Macieira da Silva), Arcebispo Primaz da Igreja Episcopal Latina do Brasil.
   - field: date
     value: '2004-10-25'
     sources:
+    - source: lielb-dacb-api-clero
+      quote: >-
+        "sagracao_episcopal": "25/10/2004", "local_sagracao": "Capela do Lar Santa Clara, Murgeira/Mafra, Portugal",
+        "bispos_consagrantes": "Dom José António da Costa Raposo (consagrante principal), Dom Antonín Jelínek e
+        Dom Anthony Chadwick (co-consagrantes)"
+    - source: lielb-blog-historico
+      quote: >-
+        D.António José da Costa Raposo sagrou Dom Iranildo Macieira da Silva (Dom Lucas Macieira da Silva) em 25
+        de Outubro de 2004 em Portugal.
+    - source: lielb-anglocatolicos
+      quote: >-
+        D.António José da Costa Raposo sagrou Dom Iranildo Macieira da Silva (Dom Lucas Macieira da Silva) em 25
+        de Outubro de 2004 em Portugal.
     - source: lwac-diego-bio
       quote: >-
         2004, 25 de outubro – Dom António José da Costa Raposo sagrou Dom Iranildo Macieira da Silva (Dom Lucas
         Macieira da Silva) em Portugal.
+  - field: place
+    value: Brasil (local não informado)
+    sources:
+    - source: lielb-netministries
+      quote: Archbishop Ferreira De Souza consecrated Iranildo Macieira da Silva on September 26,2004.
+    - source: lielb-anglocatolicos
+      quote: >-
+        Arcebispo José Ricardo Ferreira de Souza sagrou Iranildo Macieira da Silva (Dom Lucas Macieira da Silva)
+        em 26 de Setembro de 2004 Arcebispo Primaz da Igreja Episcopal Latina do Brasil.
+  - field: principal_consecrator
+    value: jose-ricardo-ferreira-de-souza
+    sources:
+    - source: lielb-netministries
+      quote: Archbishop Ferreira De Souza consecrated Iranildo Macieira da Silva on September 26,2004.
+    - source: lielb-anglocatolicos
+      quote: >-
+        Arcebispo José Ricardo Ferreira de Souza sagrou Iranildo Macieira da Silva (Dom Lucas Macieira da Silva)
+        em 26 de Setembro de 2004 Arcebispo Primaz da Igreja Episcopal Latina do Brasil.
+    - source: lwac-diego-bio
+      quote: >-
+        2004, 26 de setembro – Arcebispo José Ricardo Ferreira de Souza sagrou Iranildo Macieira da Silva (Dom Lucas
+        Macieira da Silva), Arcebispo Primaz da Igreja Episcopal Latina do Brasil.
+  - field: principal_consecrator
+    value: cicero-cruz-de-souza
+    sources:
+    - source: lielb-scribd-old
+      quote: >-
+        Dom Paulo Pereira, que Sagrou S. Ex.cia. Revma. Cícero Cruz de Souza que Sagrou S. Ex.cia. Dom Iranildo
+        Macieira da Silva (Dom Lucas Macieira da Silva).
+  - field: jurisdiction
+    value: ivc-macieira
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Neste mesmo ano ingressou em uma Igreja Vétero-Católica local, onde foi sagrado bispo no Brasil, em 2004.
+        Porém, neste mesmo período teve a sua sagração contestada
+      page: '101'
   notes: >-
     O site chama Jelinek e Chadwick ("Arcebispo da França") de co-celebrantes da sagração. CONTESTADO: o mesmo livro
     (cap. Igreja Episcopal Latina do Brasil) diz "A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro
     de 2004 em Portugal, por bispos da Igreja Apostólica Episcopal Portuguesa". Houve também uma sagração anterior
     no Brasil (2004), contestada. A lista de sagrantes no trecho continua (truncada). Versão do capítulo "Igreja
-    Episcopal Latina do Brasil" do mesmo livro. Linhagem declarada no site de Diego Peral (primeira linha). Outra
-    fonte (a segunda linha do mesmo site) dá a sagração de Macieira em Portugal em 25/10/2004 por António José da
-    Costa Raposo. Registrado como contestado por haver duas sagrações distintas no mesmo ano. Linhagem declarada
+    Episcopal Latina do Brasil" do mesmo livro. Data de 24/10/2004 (Instagram do próprio sagrado, Wikipédia polonesa,
+    livro "Novas igrejas..." citado em outras fichas). O cadastro oficial da DAC e blogs da IELB trazem 25/10/2004
+    (afirmação separada). A Wikipédia polonesa lista Macieira entre os consagrados por Raposo em 24/10/2004, no
+    mesmo dia que Célio Spinelli e José Moisés Moncada Quevedo (sagração múltipla). O Instagram nomeia ainda Moncada
+    Quevedo (Colômbia) na foto da cerimônia; não se sabe se foi co-sagrante. Versão com 25/10/2004, do cadastro
+    oficial da DAC (que informa também o local exato: Capela do Lar Santa Clara) e de blogs da IELB de 2008-2012.
+    Mesma cerimônia da afirmação de 24/10/2004; a divergência é só de um dia. Primeira sagração, anterior à de Portugal,
+    por José Ricardo Ferreira de Souza (primaz da Iglesia Viejo Católica en América, linha argentina Mascolo-Morizio
+    Dominguez-Tenca Rusconi, derivada de Duarte Costa). Sagrado em 05/05/2002 por Tenca Rusconi segundo as mesmas
+    páginas. Parece ser a sagração "no Brasil" depois contestada e repetida em Portugal; o livro "Novas igrejas"
+    cita 26/09/2004 mas atribui-a a Portugal. Outra linha de sucessão divulgada por Macieira: Old Catholic Church
+    (EUA), Jas F. A. Lashley -> Wanderley Gonçalves de Almeida -> Rafael Linuesa Peres -> José Carlos Teodoro ->
+    Paulo Pereira -> Cícero Cruz de Souza -> Iranildo Macieira. Não informa data nem local; a linha da IAOB (Cícero
+    Cruz de Souza, 2001 -> Iranildo, 2004) coincide. Linhagem declarada no site de Diego Peral (primeira linha).
+    Outra fonte (a segunda linha do mesmo site) dá a sagração de Macieira em Portugal em 25/10/2004 por António
+    José da Costa Raposo. Registrado como contestado por haver duas sagrações distintas no mesmo ano. Linhagem declarada
     no site de Diego Peral (segunda linha). Outros registros datam a mesma sagração de 24/10/2004; diferença de
     um dia entre fontes. Primeira sagração, no Brasil, contestada; sagrantes não citados. Seguiu-se nova sagração
     em Portugal (24/10/2004). O livro não distingue o sagrante principal entre os três bispos de tradição vétero-católica.
     Sagrantes não nomeados ('por bispos da Igreja Apostólica Episcopal Portuguesa').
 affiliations:
+- jurisdiction: icab
+  role: clergy
+  start: '1998'
+  end: '2001'
+  end_reason: left
+  status: probable
+  sources:
+  - source: lielb-dae-provincial
+    quote: ingressa na Igreja Católica Apostólica Brasileira, após muito sofrimento, pela opção do casamento
+  - source: lielb-dae-provincial
+    quote: >-
+      deixa a jurisdição da Igreja Brasileira, e passa a ser membro da Igreja Vétero Católica, juntamente com Dom
+      Reginaldo Barroca
+  - source: cant-novas-igrejas-2024
+    quote: mais tarde tornou-se diácono da Igreja Católica Apostólica Brasileira, de onde retirou-se em 2000.
+    page: '101'
+  notes: >-
+    Diácono da ICAB (Ceará). O site da DAE dá saída em 2001; o site da PASC diz que "retirou-se em 2000". Passou
+    então a membro de uma Igreja Vétero-Católica, junto com Dom Reginaldo Barroca (arcebispo), que deixou em 2002
+    "por motivos de perseguições". Diácono.
+  discrepancies:
+  - field: end
+    value: '2000'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: mais tarde tornou-se diácono da Igreja Católica Apostólica Brasileira, de onde retirou-se em 2000.
+      page: '101'
 - jurisdiction: ivc-macieira
   role: clergy
   start: '2000'
@@ -146,12 +309,34 @@ affiliations:
       Neste mesmo ano ingressou em uma Igreja Vétero-Católica local, onde foi sagrado bispo no Brasil, em 2004.
     page: '101'
   notes: Ingressou em 2000 numa Igreja Vétero-Católica local (o livro não dá o nome).
+- jurisdiction: icame
+  role: clergy
+  start: '2002'
+  end: '2004'
+  status: probable
+  sources:
+  - source: lielb-dae-provincial
+    quote: >-
+      Ingressa na Igreja Católica Apostólica Missionária de Evangelização do senhor Arcebispo Dom Dirceu Milani,
+      no final de 2002 foi transferido para São Miguel do Oeste, Santa Catarina
+  notes: >-
+    Presbítero missionário no Paraná, Santa Catarina, Rio Grande do Sul e regiões de fronteira. O fim do vínculo
+    não é datado na fonte; a próxima etapa narrada é a sagração de 2004.
 - jurisdiction: ielb
   role: founder
   start: 2004-12
   end_reason: left
-  status: probable
+  status: confirmed
   sources:
+  - source: lielb-blog-quem
+    quote: >-
+      no sínodo de 2004 se elegeu arcebispo o reverendo Lucas Macieira, então bispo da igreja vétero-católica
+  - source: lielb-blog-missao
+    quote: >-
+      qual tem o Mons. Dr. Dom Lucas Macieira da Silva como fundador e Arcebispo Primaz e eu o Rev. Frei Antonio
+      Santana Neto, mielb/ose, como có-fundador
+  - source: pasc-arcebispo-primaz
+    quote: Já em dezembro do mesmo ano o mesmo funda a Igreja Episcopal Latina do Brasil
   - source: pasc-arcebispo-primaz
     quote: >-
       Já em dezembro do mesmo ano o mesmo funda a Igreja Episcopal Latina do Brasil, uma Igreja de corrente Anglo-Católica
@@ -171,6 +356,7 @@ affiliations:
       organizando também a Província Anglicana “Sagrado Coração”, com a sede jurídica da Igreja se estabelecendo
       na cidade de Belo Horizonte.
     page: '166'
+  notes: Arcebispo Primaz e Metropolita (primeiro) e presidente da IELB.
 - jurisdiction: ielb
   role: primate
   start: 2004-12
@@ -215,25 +401,33 @@ affiliations:
     quote: >-
       Foi seminarista da Arquidiocese de Fortaleza e mais tarde tornou-se diácono da Igreja Católica Apostólica
       Brasileira, de onde retirou-se em 2000.
-- jurisdiction: icab
-  role: clergy
-  end: '2000'
-  end_reason: left
-  status: probable
+- jurisdiction: dae
+  role: bishop
+  status: confirmed
   sources:
-  - source: cant-novas-igrejas-2024
-    quote: mais tarde tornou-se diácono da Igreja Católica Apostólica Brasileira, de onde retirou-se em 2000.
-    page: '101'
-  notes: Diácono.
+  - source: lielb-dae-clero
+    quote: Sé Primacial do Brasil Arcebispo Anglicano de Minas Gerais Mons.Dr. Dom Lucas Macieira da Silva
+  notes: >-
+    Local: Sé Primacial do Brasil, Esmeraldas, MG. Titular da Sé Primacial e da Província Anglicana Nossa Senhora
+    de Guadalupe, em Esmeraldas (MG).
 - jurisdiction: dac
   role: primate
-  status: probable
+  status: confirmed
   sources:
+  - source: lielb-dacb-api-clero
+    quote: >-
+      "cargo": "Arcebispo Primaz", "prelazia": "Sé Primacial", "comunidade": "Paróquia Santo Expedito e Nossa Senhora
+      Desatadora dos Nós", "cidade": "Esmeraldas", "uf": "MG"
+  - source: lielb-fb-video
+    quote: >-
+      Dom Lucas Macieira da Silva é o bispo responsável pela Diocese Anglicana Católica do Brasil, integrante da
+      Comunhão Anglicana Livre Internacional, com sede na cidade de Esmeraldas, Minas Gerais.
   - source: cant-novas-igrejas-2024
     quote: 'Atualmente, a DAC possui três bispos: dom Lucas Macieira (Arcebispo e Primaz)'
     page: '102'
   notes: >-
-    Arcebispo e Primaz; o livro diz que a fundação da DAC 'remonta à sagração do bispo Lucas Macieira da Silva'.
+    Local: Sé Primacial, Esmeraldas, MG. Arcebispo e Primaz; o livro diz que a fundação da DAC 'remonta à sagração
+    do bispo Lucas Macieira da Silva'.
 - jurisdiction: dac
   role: founder
   status: probable
@@ -264,6 +458,16 @@ events:
       Neste mesmo ano ingressa na Igreja Vétero-Católica, onde foi sagrado Bispo no Brasil, em 2004, porém neste
       mesmo período tem sua sagração contestada e é novamente sagrado em Portugal pelas mãos dos bispos Vétero Católicos
       Dom Antônio José da Costa Raposo (de Portugal) e Dom Antonin Jelinek, bispo primaz da República Checa.
+- type: other
+  date: '2012'
+  description: >-
+    Estudo da própria DAC (fev. 2026) data a fase anglicana da IELB como consolidada em 2012 com o "Sínodo da Bolívia"
+    da Comunhão Episcopal Anglicana Livre Internacional, dando origem à atual Diocese Anglicana Católica do Brasil;
+    diz também que Dom João de Deus foi "um dos seis bispos diretamente consagrados por Dom Frei Lucas".
+  status: probable
+  sources:
+  - source: lielb-scribd-jdd
+    quote: consolidada em 2012 com o Sínodo da Bolívia
 - type: other
   date: '2013-01-12'
   description: >-

@@ -5,6 +5,7 @@ full_name: Glauco Soares de Lima
 aliases:
 - Dom Glauco
 - Dom Glauco Lima
+- Dom Glauco Soares
 - Glauco Soares
 - Glauco Soares Lima
 - LIMA, GLAUCO SOARES de
@@ -330,11 +331,18 @@ affiliations:
     quote: Morreu em São Paulo no dia 26 de dezembro de 2017.
 - jurisdiction: manb
   role: bishop
-  start: '2013-04-06'
+  start: '2013-03-03'
   end: '2017-12-27'
   end_reason: death
   status: probable
   sources:
+  - source: lq-ieab-acoes
+    quote: >-
+      03 de março de 2013- Dia da Assembleia Geral Extraordinária da Catedral Anglicana de São Paulo na qual ocorre
+      a Eleição de Dom Roger Douglas Bird como Bispo da Congregação e de Dom Glauco Soares de Lima.
+  - source: lq-cat-carta-aberta
+    quote: >-
+      confirma os Bispos anglicanos Dom Roger Douglas Bird e Dom Glauco Soares de Lima como seus líderes espirituais.
   - source: costa2021
     quote: O bispo Glauco Soares de Lima faleceu no dia 27 de dezembro de 2017 na cidade de São Paulo
   - source: cant-novas-igrejas-2024
@@ -347,6 +355,15 @@ affiliations:
       Os dois bispos passaram a exercer supervisão episcopal sobre o reverendo e a comunidade através do Movimento
       Anglicano no Brasil.
     page: '147'
+  discrepancies:
+  - field: start
+    value: '2013-04-06'
+    sources:
+    - source: costa2021
+      quote: >-
+        Os dois bispos passaram a exercer supervisão episcopal sobre o reverendo e a comunidade através do Movimento
+        Anglicano no Brasil.
+      page: '147'
   notes: Emérito da DASP; desligou-se formalmente da IEAB com a Catedral de São Paulo.
 - jurisdiction: ieab
   role: clergy
@@ -431,6 +448,58 @@ events:
   sources:
   - source: glauco-testemunho-2013
     quote: O bispo diocesano (Roger Bird) resolveu anular a eleição, decisão com a qual eu concordei.
+- type: other
+  date: '2013-04-19'
+  description: >-
+    Junta Paroquial da Catedral Anglicana de São Paulo publica carta aberta: afirma que a filiação à igreja nacional
+    desde 1975 é espiritual e não patrimonial; que a Assembleia Geral ratifica por unanimidade ter sempre prioritariamente
+    um Bispo da Comunhão Anglicana como líder espiritual; e confirma Dom Roger Douglas Bird e Dom Glauco Soares
+    de Lima como líderes espirituais.
+  status: confirmed
+  sources:
+  - source: lq-cat-carta-aberta
+    quote: terá sempre prioritariamente um Bispo da Comunhão Anglicana como líder espiritual
+  - source: lq-cat-carta-aberta
+    quote: com ênfase na existência de laços espirituais, mas não patrimoniais
+- type: other
+  date: '2013-05-01'
+  description: >-
+    Segundo a cronologia da IEAB, cria-se a 'Diocese do Movimento Anglicano', reunindo clérigos disciplinados pela
+    IEAB e apoiados por Roger Bird e Glauco Soares de Lima.
+  status: confirmed
+  sources:
+  - source: lq-ieab-acoes
+    quote: >-
+      01 de maio de 2013- Criação da Diocese do Movimento Anglicano que inclui um grupo de clérigos disciplinados
+      pela IEAB e apoiados pelos Bispos Dom Roger Bird e Dom Glauco Soares.
+- type: other
+  date: '2013-10-02'
+  description: >-
+    Em outubro de 2013 um blog de congregação em Curitiba se apresenta como 'Movimento Anglicano no Brasil — Ministério
+    da Catedral Anglicana de São Paulo fundada em 1873', com os bispos Glauco Soares de Lima e Roger Bird, e descreve
+    Glauco como 'Bispo no Movimento Anglicano do Brasil sediado na Catedral Anglicana de São Paulo juntamente com
+    Dom Roger Bird'.
+  status: probable
+  sources:
+  - source: lq-blog-curitiba-2013
+    quote: >-
+      Bispo no Movimento Anglicano do Brasil sediado na Catedral Anglicana de São Paulo juntamente com Dom Roger
+      Bird.
+  - source: lq-blog-curitiba-2013
+    quote: Ministério da Catedral Anglicana de São Paulo
+- type: other
+  date: 2015-05
+  description: >-
+    Os bispos Roger Douglas Bird e Glauco Soares de Lima presidem ordenação de André Ocampos (São Manuel/Botucatu)
+    na Catedral Anglicana de São Paulo (reportagem de 16/05/2015); a reportagem a descreve como liderada por Aldo
+    Quintão.
+  status: probable
+  sources:
+  - source: lq-botucatu-2015
+    quote: >-
+      André Ocampos foi ordenado reverendo anglicano em cerimonial realizado na Catedral Anglicana de São Paulo,
+      que tem como maior líder o reverendo Aldo Quintão. A ordenação foi feita pelos bispos Roger Douglas Bird e
+      Glauco Soares de Lima.
 - type: other
   date: 1989-07
   description: Eleito bispo coadjutor da Diocese Sul Central, com direito à sucessão, no segundo escrutínio

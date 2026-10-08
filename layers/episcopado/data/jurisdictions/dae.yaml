@@ -7,15 +7,62 @@ country: BR
 founded:
   date: '2010'
   sources:
+  - source: lielb-dae-sucessao
+    quote: Copyright 2010 © Igreja Episcopal Latina do Brasil - Anglicana
+  - source: lielb-dae-provincias
+    quote: Província Anglicana Nossa Senhora de Guadalupe
+  - source: lielb-dae-clero
+    quote: Sé Primacial do Brasil
+  - source: lielb-dae-quem
+    quote: A IELB é........
   - source: cant-novas-igrejas-2024
     quote: >-
       O estabelecimento da DAC se deu a partir da chamada Diocese Anglicana de Esmeraldas, organizada em 2010, em
       Minas Gerais.
     page: '101'
-description: Diocese organizada em 2010 em Minas Gerais, origem da Diocese Anglicana Católica do Brasil.
+website: https://dioceseanglicanadeesmeraldas.weebly.com/
+description: >-
+  Estrutura da IELB sediada em Esmeraldas (MG), apresentada em seu site como "Diocese Anglicana de Esmeraldas -
+  Igreja Anglo-Católica", com Sé Primacial do Brasil sob Lucas Macieira e a Província Anglicana Nossa Senhora de
+  Guadalupe (Rua Santo Expedito, 650, Monte Sinai). O site (c. 2010-2015) reproduz o texto institucional e o rodapé
+  "Copyright 2010 © Igreja Episcopal Latina do Brasil - Anglicana" e exibe o selo "Comunhão Anglicana Livre".
 sources:
-- source: cant-novas-igrejas-2024
-  quote: >-
-    O estabelecimento da DAC se deu a partir da chamada Diocese Anglicana de Esmeraldas, organizada em 2010, em
-    Minas Gerais.
-  page: '101'
+- source: lielb-dae-sucessao
+  quote: Copyright 2010 © Igreja Episcopal Latina do Brasil - Anglicana
+- source: lielb-dae-provincias
+  quote: Província Anglicana Nossa Senhora de Guadalupe
+- source: lielb-dae-clero
+  quote: Sé Primacial do Brasil
+- source: lielb-dae-quem
+  quote: A IELB é........
+relations:
+- type: part_of
+  target: ielb
+  date: '2010'
+  led_by:
+  - iranildo-macieira-da-silva
+  status: probable
+  sources:
+  - source: lielb-dae-sucessao
+    quote: Copyright 2010 © Igreja Episcopal Latina do Brasil - Anglicana
+  - source: lielb-dae-sucessao
+    quote: A Sucessão da IELB é ininterrupta
+  - source: lielb-dae-quem
+    quote: A IELB é........
+  notes: >-
+    O site da DAE reproduz a apresentação, a sucessão apostólica e o copyright da IELB. Em 2008 o endereço de Lucas
+    Macieira ainda era "Arquidiocese" em Belo Horizonte/Contagem.
+- type: member_of
+  target: afci
+  date: null
+  led_by:
+  - iranildo-macieira-da-silva
+  status: probable
+  sources:
+  - source: lielb-dae-clero
+    quote: Comunhão Anglicana Livre
+  - source: lielb-dae-comunhao
+    quote: Dom Frei Lucas Macieira com bispo da Comunhão
+  notes: >-
+    Páginas da DAE listam "Bispo da Comunhão" (Edwin Duane Follick, Ricardo Lorite de Lima, Lucas Macieira etc.)
+    e o selo "Comunhão Anglicana Livre".
