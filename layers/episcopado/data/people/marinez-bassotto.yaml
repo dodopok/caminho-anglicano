@@ -31,6 +31,10 @@ ordinations:
   jurisdiction: ieab
   status: confirmed
   sources:
+  - source: lic-livro35
+    quote: >-
+      Fui ordenada como diácona no dia 14 de maio de 1995, e presbítera no dia 17 de março de 1996, ambas as ordenações
+      na Catedral Nacional da Santíssima Trindade, em Porto Alegre/RS.
   - source: acns-2018-01-marinez-eleita
     quote: >-
       foi ordenada diácona em maio de 1995 quando tinha 24 anos e no ano seguinte foi ordenada presbítera. As duas
@@ -46,13 +50,14 @@ ordinations:
     quote: Foi ordenada ao diaconato, em 14 de maio de 1995, e ao presbiterato, em 17 de março de 1996.
     page: '117'
   notes: >-
-    Wikipedia cita ACNS (24/01/2018), não acessível nesta sessão. Ano tirado da lista do clero nacional por ordem
-    de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Relato da própria bispa. O texto não nomeia o bispo ordenante. Wikipedia cita ACNS (24/01/2018), não acessível
+    nesta sessão. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante
+    não informado.
 - order: presbyterate
   date: '1996-03-17'
   place: Catedral Nacional da Santíssima Trindade, Porto Alegre (RS)
   jurisdiction: ieab
-  status: confirmed
+  status: contested
   sources:
   - source: acns-2018-01-marinez-eleita
     quote: >-
@@ -60,9 +65,24 @@ ordinations:
       ordenações aconteceram na Catedral Nacional da Santíssima Trindade em Porto Alegre
   - source: wp-en-bassotto
     quote: 1996 (priest)
+  - source: lic-livro35
+    quote: >-
+      Fui ordenada como diácona no dia 14 de maio de 1995, e presbítera no dia 17 de março de 1996, ambas as ordenações
+      na Catedral Nacional da Santíssima Trindade, em Porto Alegre/RS.
+  - source: lic-livro35
+    quote: 'Diaconato: 14 de maio de 1995. Presbiterado: 15 de março de 1996. Episcopado: 21 de abril de 2018.'
   - source: costa2021
     quote: Foi ordenada ao diaconato, em 14 de maio de 1995, e ao presbiterato, em 17 de março de 1996.
     page: '117'
+  discrepancies:
+  - field: date
+    value: '1996-03-15'
+    sources:
+    - source: lic-livro35
+      quote: 'Diaconato: 14 de maio de 1995. Presbiterado: 15 de março de 1996. Episcopado: 21 de abril de 2018.'
+  notes: >-
+    Texto da autobiografia: 17 de março de 1996. Cabeçalho da mesma biografia: 15 de março de 1996 (sexta-feira;
+    17 de março de 1996 foi domingo).
 - order: episcopate
   date: '2018-04-21'
   place: Quadra esportiva do complexo da Catedral Anglicana de Santa Maria, Belém (PA)
@@ -106,6 +126,17 @@ ordinations:
     quote: >-
       A ordenação e sagração foi presidida pelo Bispo Francisco de Assis da Silva, da Diocese Sul Ocidental (com
       sé em Santa Maria, Rio Grande do Sul).
+  - source: lic-psj-marinez-2018
+    quote: >-
+      Em 21 de abril, sábado, foi ordenada e sagrada ao episcopado a Reverenda Cônega Marinez Rosa Bassotto, na
+      cidade de Belém do Pará.
+  - source: lic-psj-marinez-2018
+    quote: >-
+      A cerimônia que se deu na Catedral Anglicana de Santa Maria, teve a presença de bispos, irmãos e irmãs das
+      várias dioceses da Igreja Episcopal Anglicana do Brasil (IEAB), assim como a presença da Bispa Griselda Delgado
+      del Carpio, da Diocese Episcopal de Cuba e da Bispa Linda Nicholls, da Igreja Anglicana do Canadá.
+  - source: lic-livro35
+    quote: Fui Ordenada e Sagrada bispa em 21 de abril de 2018, na Catedral de Santa maria, em Belém/PA.
   - source: costa2021
     quote: >-
       A cerimônia de ordenação e sagração episcopal ocorreu no dia 21 de abril, nas dependências da Catedral de
@@ -119,9 +150,10 @@ ordinations:
     lidas (primaz da epoca: Francisco de Assis da Silva). Sábado de Tiradentes (21/04/2018). A bispa de Cuba, Griselda
     Delgado del Carpio, esteve presente; a notícia não diz se foi co-sagrante. Fecha a lacuna de sagrante (ieab-1965-hoje.json
     tinha SP nulo). Os dois livros são do mesmo autor (Costa), por isso "provavel". Pregadora: bispa Linda Nicholls
-    (Huron, Canadá); presente a bispa Griselda Delgado del Carpio (Cuba). A tese NÃO nomeia o sagrante principal;
-    fala na presença 'dos bispos da Câmara Episcopal' e das bispas Griselda (Cuba) e Linda Nicholls (Canadá, pregadora),
-    listadas como co-sagrantes por inferência.
+    (Huron, Canadá); presente a bispa Griselda Delgado del Carpio (Cuba). Francisco de Assis da Silva, primaz, esteve
+    na instalação em 22 de abril. A ACNS descreve o local como a quadra esportiva do complexo da catedral. A tese
+    NÃO nomeia o sagrante principal; fala na presença 'dos bispos da Câmara Episcopal' e das bispas Griselda (Cuba)
+    e Linda Nicholls (Canadá, pregadora), listadas como co-sagrantes por inferência.
 affiliations:
 - jurisdiction: ieab
   role: other
@@ -185,6 +217,18 @@ affiliations:
   notes: Em 2026 o site da IEAB lista a primaz como bispa do Distrito Missionario Anglicano (DMA).
 - jurisdiction: ieab
   role: other
+  role_description: pároca_e_ministra_encarregada
+  diocese: ieab-dm
+  end: '2018'
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: >-
+      sendo após nomeada Pároca da Paróquia São Paulo, em Cachoeirinha/RS, e Ministra Encarregada da Missão do Natal,
+      em Glorinha (Diocese Meridional).
+  notes: Depois de 17 anos à frente da Catedral Nacional (como deã).
+- jurisdiction: ieab
+  role: other
   role_description: deã
   end: '2018'
   status: probable
@@ -207,3 +251,47 @@ events:
     quote: >-
       A Revda. Canon Marinez Santos Bassoto foi eleita no dia 20 de janeiro (sábado) de 2018 como a próxima Bispa
       da Diocese da Amazônia durante o Concílio em Belém, no estado do Pará.
+- type: other
+  date: '2018-04-22'
+  description: >-
+    Instalação de Marinez Rosa Bassotto como bispa da Diocese Anglicana da Amazônia, às 9h do domingo 22 de abril
+    de 2018, com a presença do primaz Francisco de Assis da Silva.
+  status: confirmed
+  sources:
+  - source: lic-psj-marinez-2018
+    quote: >-
+      A cerimônia de instalação como Bispa da Diocese Anglicana da Amazônia, momento em que efetivamente toma posse
+      em seu novo cargo, foi às 9h de domingo, dia 22 de abril.
+  - source: lic-psj-marinez-2018
+    quote: >-
+      Bispa Marinez Rosa Bassotto e Bispo Francisco de Assis, Primaz da IEAB, na cerimônia de instalação em 22 de
+      abril
+- type: other
+  date: '2018-01-20'
+  description: >-
+    Marinez Bassotto concorreu ao episcopado em 2012 (Diocese Meridional) e em 2017 (Diocese Anglicana da Amazônia);
+    em ambos os concílios extraordinários houve empate nas primeiras sessões, e ela foi eleita bispa da Amazônia
+    no primeiro escrutínio da segunda sessão, em 20 de janeiro de 2018.
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: >-
+      Em ambas as Dioceses houve empate nas primeiras sessões dos Concílios Extraordinários, mas fui eleita bispa
+      diocesana, em primeiro escrutínio, na Segunda Sessão do Concílio Extraordinário da Diocese Anglicana da Amazônia,
+      em 20 de janeiro de 2018
+  - source: lic-livro35
+    quote: no ano de 2012, concorri ao episcopado com dois clérigos
+- type: other
+  date: '2025-06-01'
+  description: >-
+    Em 1º de junho de 2025, a IEAB celebrou 135 anos de existência e 40 anos da ordenação feminina na Catedral Nacional
+    (Porto Alegre), em celebração presidida pela bispa primaz Marinez Bassotto, com a bispa Jo Bailey Wells como
+    pregadora; o encontro "Mulheres Tecendo Justiça" reuniu cerca de 45 mulheres de todas as dioceses (29-31 de
+    maio).
+  status: confirmed
+  sources:
+  - source: lic-ieab-135anos-2025
+    quote: >-
+      Presidida pela bispa primaz Marinez Bassotto , a celebração teve como pregadora a bispa Jo Bailey Wells
+  - source: lic-ieab-135anos-2025
+    quote: Esse encontro reuniu, também em Porto Alegre, cerca de 45 mulheres de todas as dioceses da IEAB

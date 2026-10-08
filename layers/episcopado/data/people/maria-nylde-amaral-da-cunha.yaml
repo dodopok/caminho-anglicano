@@ -1,24 +1,46 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: maria-nylde-amaral-da-cunha
 name: Maria Nylde Amaral da Cunha
+full_name: Maria Nylde Amaral da Cunha
 aliases:
 - Irmã Maria
+- Irmã Maria Nylde
 - Maria Nilde Cunha
+- Revda. Irmã Maria
+birth:
+  date: '1918-12-24'
+  sources:
+  - source: lic-livro35
+    quote: A Rev. Irmã Maria Nylde Amaral da Cunha nasceu no dia 24 de dezembro de 1918, em Bagé/RS.
+  - source: lic-livro35
+    quote: Faleceu no dia 02 abril de 2002, aos oitenta e três anos de idade.
+death:
+  date: '2002-04-02'
+  sources:
+  - source: lic-livro35
+    quote: A Rev. Irmã Maria Nylde Amaral da Cunha nasceu no dia 24 de dezembro de 1918, em Bagé/RS.
+  - source: lic-livro35
+    quote: Faleceu no dia 02 abril de 2002, aos oitenta e três anos de idade.
 biography: >-
-  Única integrante da Ordem de Santa Maria; diácona (1981) e presbítera (1990), atuou na Diocese de Pelotas.
+  Primeira freira da Ordem de Santa Maria (votos em 18/5/1980); ordenada diácona em 7/5/1989 e presbítera em 10/5/1990
+  na Diocese Anglicana de Pelotas.
 sources:
-- source: costa2021
-  quote: >-
-    Das cinco candidatas que fizeram o teste vocacional, apenas uma senhora, Maria Nylde Amaral da Cunha, deu continuidade
-    ao projeto.
-  page: '93'
+- source: lic-livro35
+  quote: A Rev. Irmã Maria Nylde Amaral da Cunha nasceu no dia 24 de dezembro de 1918, em Bagé/RS.
+- source: lic-livro35
+  quote: Faleceu no dia 02 abril de 2002, aos oitenta e três anos de idade.
 ordinations:
 - order: diaconate
-  date: '1989'
+  date: '1989-05-07'
+  place: Diocese Anglicana de Pelotas
   jurisdiction: ieab
   ordained_by: luiz-osorio-pires-prado
-  status: contested
+  status: confirmed
   sources:
+  - source: lic-livro35
+    quote: >-
+      No dia 07 de maio de 1989 foi ordenada ao diaconato pelo bispo Luiz Osório Prado, na Diocese Anglicana de
+      Pelotas
   - source: cant-identidades-numeros-2024
     quote: >-
       A Ordem foi dissolvida e a Irmã Nylde foi ordenada ao diaconato e ao presbiterato pelo bispo Prado, exercendo
@@ -49,15 +71,19 @@ ordinations:
         o seu ministério na Diocese de Pelotas.
       page: '94'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
-    Data de 1981 conflita com a aprovação da ordenação feminina (1984) e com Carmen Etel ser a primeira mulher ordenada
-    (1985) — ver dúvidas.
+    Texto do livro dos 35 anos (biografia póstuma; Maria Nylde nasceu em 1918 e faleceu em 2002). Ela havia feito
+    votos na Ordem de Santa Maria em 1980. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado. Data de 1981 conflita com a aprovação da ordenação feminina (1984)
+    e com Carmen Etel ser a primeira mulher ordenada (1985) — ver dúvidas.
 - order: presbyterate
-  date: '1990'
+  date: '1990-05-10'
+  place: Diocese Anglicana de Pelotas
   jurisdiction: ieab
   ordained_by: luiz-osorio-pires-prado
-  status: probable
+  status: confirmed
   sources:
+  - source: lic-livro35
+    quote: e no dia 10 de maio do ano seguinte recebeu a ordem de presbítera.
   - source: cant-identidades-numeros-2024
     quote: >-
       A Ordem foi dissolvida e a Irmã Nylde foi ordenada ao diaconato e ao presbiterato pelo bispo Prado, exercendo
@@ -75,6 +101,7 @@ ordinations:
       nome religioso pelo qual era conhecida –, foi ordenada ao diaconato em 1981 e ao presbiterato em 1990, exercendo
       o seu ministério na Diocese de Pelotas.
     page: '94'
+  notes: 'Data de 10 de maio de 1990 também no cabeçalho da biografia (Presbiterado: 10 de maio de 1990).'
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -90,6 +117,22 @@ affiliations:
       de Pelotas, onde passou a exercer o seu ministério regular.
     page: '318'
 events:
+- type: other
+  date: '1980-03-02'
+  description: >-
+    Em 2 de março de 1980, na Diocese Meridional, o bispo Arthur Kratz deu a Maria Nylde Amaral da Cunha a primeira
+    ordem religiosa feminina, a Comunidade de Santa Maria; em 18 de maio de 1980, na Paróquia da Ascensão (Porto
+    Alegre), ela professou os votos como primeira freira da Ordem de Santa Maria.
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: >-
+      Em 2 de março de 1980 na Diocese Meridional, pelo Bispo Arthur Kratz, recebeu a primeira ordem religiosa feminina:
+      a Comunidade de
+  - source: lic-livro35
+    quote: >-
+      No dia 18 de maio de 1980, na Paróquia da Ascensão, em Porto Alegre/RS, proferiu seus votos, tornando-se a
+      primeira freira da Ordem de Santa Maria.
 - type: other
   date: null
   description: >-

@@ -32,11 +32,13 @@ sources:
   page: '94'
 ordinations:
 - order: diaconate
-  date: '1990'
+  date: '1990-02-04'
   jurisdiction: ieab
   ordained_by: olavo-ventura-luiz
-  status: probable
+  status: confirmed
   sources:
+  - source: lic-livro35
+    quote: 'Diaconato: 04 de fevereiro de 1990.'
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1990 - … Dione Guindo dos Santos
     page: '373'
@@ -45,7 +47,9 @@ ordinations:
       sendo ordenada ao diaconato pelo bispo Olavo Ventura Luiz e como diácona permaneceu durante toda a sua vida
     page: '94'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Biografia do livro dos 35 anos; viúva, radiologista aposentada, coadjutora da Paróquia da Redenção, São Gabriel
+    (RS). Nasceu em 1918 e faleceu em 2008. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
 affiliations:
 - jurisdiction: ieab
   role: clergy

@@ -27,25 +27,42 @@ ordinations:
 - order: diaconate
   date: '1996-03-24'
   place: Matriz do Nazareno, Sant’Ana do Livramento
-  jurisdiction: ieab-dso
-  status: probable
+  jurisdiction: ieab
+  status: confirmed
   sources:
+  - source: lic-livro35
+    quote: Fui ordenada Diácona no dia 24 de março de 1996, em Sant’Ana do Livramento/RS
   - source: costa2021
     quote: >-
       Em 24 de março de 1996 foi ordenada ao diaconato, em sua cidade natal, na Matriz do Nazareno, e em 21 de dezembro
       de 1997, ao presbiterato, na Paróquia de Jesus Cristo, em Erechim (RS).
     page: '120'
+  notes: Relato da própria bispa; o texto não nomeia o ordenante.
 - order: presbyterate
   date: '1997-12-21'
-  place: Paróquia de Jesus Cristo, Erechim
-  jurisdiction: ieab-dso
-  status: probable
+  place: Paróquia de Jesus Cristo, Erechim (RS)
+  jurisdiction: ieab
+  status: contested
   sources:
   - source: costa2021
     quote: >-
       Em 24 de março de 1996 foi ordenada ao diaconato, em sua cidade natal, na Matriz do Nazareno, e em 21 de dezembro
       de 1997, ao presbiterato, na Paróquia de Jesus Cristo, em Erechim (RS).
     page: '120'
+  - source: lic-livro35
+    quote: 'Diaconato: 24 de março de 1996. Presbiterado: 21 de dezembro de 1997.'
+  - source: lic-livro35
+    quote: e Presbítera no dia 21 de abril de 1997, em Erechim/RS.
+  discrepancies:
+  - field: date
+    value: '1997-04-21'
+    sources:
+    - source: lic-livro35
+      quote: e Presbítera no dia 21 de abril de 1997, em Erechim/RS.
+  notes: >-
+    Cabeçalho da biografia: 21 de dezembro de 1997. O corpo do texto diz "Presbítera no dia 21 de abril de 1997,
+    em Erechim/RS" e que foi coadjutora na Paróquia de Jesus Cristo, em Erechim, de fevereiro de 1996 a fevereiro
+    de 2000.
 - order: episcopate
   date: '2021-10-17'
   place: Catedral Anglicana de São Tiago, Curitiba (PR)
@@ -74,8 +91,10 @@ ordinations:
   notes: >-
     Terceira bispa da IEAB; eleita em 24/04/2021; instalada 12/12/2021. Bispa coadjutora da Diocese Anglicana do
     Paraná, sucedendo Naudal Alves Gomes como diocesana a partir de dezembro de 2021. A notícia não nomeia sagrante
-    principal nem co-sagrantes. A tese diz 'pelo Bispo Primaz e Diocesano de Curitiba' — Naudal Alves Gomes era
-    ambos (Primaz desde 2018, diocesano do Paraná). Co-sagrantes não informados.
+    principal nem co-sagrantes. A notícia da IEAB não nomeia o sagrante principal nem os co-sagrantes; a homilia
+    foi da reverenda Anésia Nascimento de Jesus Cook (Paróquia St. Peter and St. Oswald, Diocese de Sheffield) e
+    o primaz Naudal Alves Gomes agradeceu ao final. A tese diz 'pelo Bispo Primaz e Diocesano de Curitiba' — Naudal
+    Alves Gomes era ambos (Primaz desde 2018, diocesano do Paraná). Co-sagrantes não informados.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -126,13 +145,45 @@ affiliations:
   notes: 'Cargo: Deã (Diocese de Brasília).'
 - jurisdiction: ieab
   role: other
+  role_description: dea
+  diocese: ieab-dab
+  start: 2011-03
+  end: 2017-02
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: >-
+      Em março de 2011, assumi, como Deã, a Catedral da Ressurreição, Diocese Anglicana de Brasília, onde fiquei
+      até fevereiro de 2017
+  notes: >-
+    Depois, pároca das Paróquias São João Batista e Santíssima Trindade, da Diocese Anglicana de Pelotas (2017).
+- jurisdiction: ieab
+  role: other
+  role_description: paroca
+  diocese: ieab-dap
+  start: 2017-02
+  end: '2018'
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: >-
+      quando fui eleita Pároca das Paróquias São João Batista e Santíssima Trindade, da Diocese Anglicana de Pelotas
+  notes: 'Fim aproximado: nomeada secretária-geral da IEAB no Sínodo Geral de 2018.'
+- jurisdiction: ieab
+  role: other
   role_description: secretaria_geral
   start: 2018-07
   status: confirmed
   sources:
   - source: ieab-3a-bispa
     quote: A partir de julho de 2018 exerce a função Secretaria Geral da IEAB.
-  notes: Cargo de secretária-geral da IEAB; término não informado nesta fonte.
+  - source: lic-ieab-magda-secgeral-2022
+    quote: Desde de 2018, estou à frente da Secretaria Geral da IEAB.
+  - source: lic-livro35
+    quote: Fui nomeada Secretária Geral da IEAB no Sínodo Geral de 2018.
+  notes: >-
+    Cargo de secretária-geral da IEAB; término não informado nesta fonte. Acumula a Secretaria Geral com o episcopado
+    diocesano (em 2022).
 - jurisdiction: ieab
   role: other
   role_description: secretária-geral
@@ -184,6 +235,21 @@ affiliations:
     quote: Diocese Anglicana do Paraná … 2021- – Magda Guedes Pereira
     page: '522'
   notes: Início previsto na notícia da sagração. Anexo D da tese (bispos por diocese).
+- jurisdiction: conic
+  role: other
+  role_description: presidenta
+  start: 2023-06
+  status: confirmed
+  sources:
+  - source: lic-ieab-magda-conic-2023
+    quote: >-
+      Pela primeira vez em sua história, uma mulher foi eleita para a presidência . E essa mulher é, para a nossa
+      alegria, a nossa bispa Magda Guedes, da Diocese Anglicana do Paraná.
+  - source: lic-ieab-magda-conic-2023
+    quote: Brasília foi sede, nos dias 15, 16 e 17 de junho (2023), da XX Assembleia Geral Ordinária
+  notes: >-
+    Primeira mulher a presidir o Conselho Nacional de Igrejas Cristãs do Brasil. Em 2022 era secretária da diretoria
+    do CONIC (entrevista de março de 2022).
 events:
 - type: other
   date: '2022-12-11'

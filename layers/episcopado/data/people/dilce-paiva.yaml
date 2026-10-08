@@ -4,15 +4,26 @@ name: Dilce Paiva
 full_name: Dilce Paiva
 ordinations:
 - order: diaconate
-  date: '1995'
+  date: '1995-04-23'
   jurisdiction: ieab
-  status: probable
+  status: confirmed
   sources:
+  - source: lic-livro35
+    quote: fui ordenada ao Diaconato em 23 de abril de 1995 e ao Presbiterado em 20 de outubro de 1996.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1995 - … Dilce Paiva
     page: '374'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Aparece no livro como Dilce Regina Paiva de Oliveira; nasceu em Arroio Grande (RS) e foi paroquiana em Jaguarão,
+    onde assistiu à ordenação presbiteral de Carmen Etel. Ano tirado da lista do clero nacional por ordem de ordenação
+    ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1996-10-20'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: fui ordenada ao Diaconato em 23 de abril de 1995 e ao Presbiterado em 20 de outubro de 1996.
 affiliations:
 - jurisdiction: ieab
   role: clergy

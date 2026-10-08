@@ -4,15 +4,49 @@ name: Taís Feldens
 full_name: Taís Feldens
 ordinations:
 - order: diaconate
-  date: '1991'
+  date: 1991-07
   jurisdiction: ieab
-  status: probable
+  status: contested
   sources:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1991 - … Taís Feldens
     page: '373'
+  - source: lic-livro35
+    quote: 'Diaconato: julho de 1991. Presbiterado: março de 1992.'
+  - source: lic-livro35
+    quote: >-
+      Em abril de 1991 fui ordenada ao diaconato junto com a colega Anésia Nascimento de Jesus, e ao presbiterado
+      junto com os colegas de turma Aubri e Humberto, em junho de 1992.
+  discrepancies:
+  - field: date
+    value: 1991-04
+    sources:
+    - source: lic-livro35
+      quote: >-
+        Em abril de 1991 fui ordenada ao diaconato junto com a colega Anésia Nascimento de Jesus, e ao presbiterado
+        junto com os colegas de turma Aubri e Humberto, em junho de 1992.
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Versão do cabeçalho da biografia; o corpo do texto diz "Em abril de 1991 fui ordenada ao diaconato junto com
+    a colega Anésia Nascimento de Jesus" (a mesma biografia). Anésia, contudo, tem diaconato registrado em 12 de
+    abril de 1992. Versão do corpo do texto. Provável erro de ano (1991/1992), pois a biografia de Anésia e a de
+    Humberto Maiztegui indicam abril de 1992 para o diaconato de Anésia e para o presbiterado de Humberto, Taís
+    e Aubri.
+- order: presbyterate
+  date: '1992-04-12'
+  place: Paróquia da Bênção Divina, São Francisco de Paula (RS)
+  jurisdiction: ieab
+  ordained_by: claudio-vinicius-de-senna-gastal
+  status: confirmed
+  sources:
+  - source: lic-dm-bispo-maiztegui
+    quote: >-
+      no dia 12 de Abril de 1992, foi ordenado ao presbiterado por Dom Cláudio Vinícius de Senna Gastal. Na mesma
+      ocasião e cerimônia, foram também ordenados ao presbiterado Tais Soares Feldens e Aubri de Oliveira Ecotem,
+      e ao diaconato Anésia do Nascimento de Jesus.
+  notes: >-
+    Biografia oficial de Humberto Maiztegui, no site da Diocese Meridional. A biografia de Taís no livro dos 35
+    anos dá "março de 1992" (cabeçalho) e "junho de 1992" (texto).
 affiliations:
 - jurisdiction: ieab
   role: clergy

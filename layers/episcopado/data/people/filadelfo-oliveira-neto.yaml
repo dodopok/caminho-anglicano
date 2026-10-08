@@ -256,6 +256,23 @@ affiliations:
     (ver dúvidas).
 - jurisdiction: ieab
   role: other
+  role_description: bispo_colaborador
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dar-clero-diocesano
+    quote: Revdmo. Dom Filadelfo Oliveira (Bispo Colaborador)
+  notes: Consta no clero diocesano do Recife em 2026.
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_emerito
+  status: confirmed
+  sources:
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Filadelfo Oliveira, Emérito
+  notes: Listado entre os bispos eméritos na Câmara Episcopal (página consultada em 2026).
+- jurisdiction: ieab
+  role: other
   role_description: bispo sufragâneo
   diocese: ieab-dar
   status: probable
