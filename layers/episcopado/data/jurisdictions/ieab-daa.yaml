@@ -1,8 +1,9 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: ieab-daa
 acronym: IEAB-DAA
-name: Diocese Anglicana da Amazonia
+name: Diocese da Amazônia
 aliases:
+- Diocese Anglicana da Amazonia
 - Diocese Anglicana da Amazônia
 type: diocese
 country: BR
@@ -41,10 +42,8 @@ relations:
   target: ieab
   status: confirmed
   sources:
-  - source: costa2021
-    quote: No dia seguinte, Marinez foi instalada como bispa diocesana.
-  - source: ieab-dioceses
-    quote: Bispo Diocesano – Revma. Marinez Bassotto
+  - source: acns-2018-01-marinez-eleita
+    quote: Ela vai suceder o Bispo Saulo Maurício Barros, que se aposentou em Novembro de 2017.
   - source: wp-pt-dioc-amazonia
     quote: com a investidura e instalação de seu primeiro pastor bispo Saulo Maurício de Barros
   - source: wp-pt-dioc-amazonia
@@ -59,6 +58,10 @@ relations:
     quote: >-
       No dia 15 de outubro de 2006, a Diocese Anglicana da Amazônia foi instalada solenemente, com a consagração
       da Catedral de Santa Maria e com a investidura e instalação de seu primeiro bispo Dom Saulo Maurício de Barros.
+  - source: costa2021
+    quote: No dia seguinte, Marinez foi instalada como bispa diocesana.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revma. Marinez Bassotto
   - source: ieab-dioceses
     quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'
   - source: daa-clero

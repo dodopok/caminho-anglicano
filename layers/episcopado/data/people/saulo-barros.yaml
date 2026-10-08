@@ -63,10 +63,12 @@ affiliations:
   role: diocesan_bishop
   diocese: ieab-daa
   start: '2006-10-15'
-  end: 2017-12
-  end_reason: resignation
-  status: probable
+  end: 2017-11
+  end_reason: retirement
+  status: confirmed
   sources:
+  - source: acns-2018-01-marinez-eleita
+    quote: Ela vai suceder o Bispo Saulo Maurício Barros, que se aposentou em Novembro de 2017.
   - source: wp-pt-dioc-amazonia
     quote: com a investidura e instalação de seu primeiro pastor bispo Saulo Maurício de Barros
   - source: wp-pt-dioc-amazonia
@@ -89,10 +91,43 @@ affiliations:
       A cerimônia de instalação da Diocese e do seu novo pastor ocorreu no dia 15 de outubro de 2006, na Igreja
       de Santa Maria, em Belém do Pará.
     page: '110'
-  notes: >-
-    Data da sagracao episcopal de Saulo nao encontrada (provavelmente 15/10/2006, junto com a instalacao). Anexo
-    D da tese (bispos por diocese). Fim inferido: Marinez Bassotto eleita e instalada em abril de 2018.
   discrepancies:
+  - field: end
+    value: 2017-12
+    sources:
+    - source: wp-pt-dioc-amazonia
+      quote: com a investidura e instalação de seu primeiro pastor bispo Saulo Maurício de Barros
+    - source: wp-pt-dioc-amazonia
+      quote: Sua eleição se deu na Diocese Anglicana da Amazônia por ocasião da resignação do bispo Saulo Barros.
+    - source: costa2021
+      quote: 2006-2017 – Saulo Maurício de Barros
+    - source: ec-2018-04
+      quote: >-
+        Em 2017, Dom Saulo Barros anunciou sua resignação e que abriu o processo eleitoral para a escolha de um(a)
+        novo(a) pastor(a).
+    - source: ec-2018-04
+      quote: >-
+        No dia 15 de outubro de 2006, a Diocese Anglicana da Amazônia foi instalada solenemente, com a consagração
+        da Catedral de Santa Maria e com a investidura e instalação de seu primeiro bispo Dom Saulo Maurício de
+        Barros.
+  - field: end_reason
+    value: resignation
+    sources:
+    - source: wp-pt-dioc-amazonia
+      quote: com a investidura e instalação de seu primeiro pastor bispo Saulo Maurício de Barros
+    - source: wp-pt-dioc-amazonia
+      quote: Sua eleição se deu na Diocese Anglicana da Amazônia por ocasião da resignação do bispo Saulo Barros.
+    - source: costa2021
+      quote: 2006-2017 – Saulo Maurício de Barros
+    - source: ec-2018-04
+      quote: >-
+        Em 2017, Dom Saulo Barros anunciou sua resignação e que abriu o processo eleitoral para a escolha de um(a)
+        novo(a) pastor(a).
+    - source: ec-2018-04
+      quote: >-
+        No dia 15 de outubro de 2006, a Diocese Anglicana da Amazônia foi instalada solenemente, com a consagração
+        da Catedral de Santa Maria e com a investidura e instalação de seu primeiro bispo Dom Saulo Maurício de
+        Barros.
   - field: end
     value: '2018'
     sources:
@@ -101,7 +136,21 @@ affiliations:
         A cerimônia de instalação da Diocese e do seu novo pastor ocorreu no dia 15 de outubro de 2006, na Igreja
         de Santa Maria, em Belém do Pará.
       page: '110'
+  notes: >-
+    Data da sagracao episcopal de Saulo nao encontrada (provavelmente 15/10/2006, junto com a instalacao). Anexo
+    D da tese (bispos por diocese). Fim inferido: Marinez Bassotto eleita e instalada em abril de 2018.
 events:
+- type: other
+  date: '2018-01-20'
+  description: >-
+    Marinez Santos Bassotto é eleita bispa da Diocese da Amazônia no Concílio em Belém, primeira mulher eleita bispa
+    na IEAB, para suceder Saulo Maurício de Barros.
+  status: confirmed
+  sources:
+  - source: acns-2018-01-marinez-eleita
+    quote: >-
+      A Revda. Canon Marinez Santos Bassoto foi eleita no dia 20 de janeiro (sábado) de 2018 como a próxima Bispa
+      da Diocese da Amazônia durante o Concílio em Belém, no estado do Pará.
 - type: other
   date: 2006-07
   description: 30º Sínodo elege Saulo Maurício de Barros primeiro bispo da Diocese Anglicana da Amazônia

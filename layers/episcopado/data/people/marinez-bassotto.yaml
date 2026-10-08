@@ -27,9 +27,14 @@ sources:
 ordinations:
 - order: diaconate
   date: '1995-05-14'
+  place: Catedral Nacional da Santíssima Trindade, Porto Alegre (RS)
   jurisdiction: ieab
-  status: probable
+  status: confirmed
   sources:
+  - source: acns-2018-01-marinez-eleita
+    quote: >-
+      foi ordenada diácona em maio de 1995 quando tinha 24 anos e no ano seguinte foi ordenada presbítera. As duas
+      ordenações aconteceram na Catedral Nacional da Santíssima Trindade em Porto Alegre
   - source: wp-en-bassotto
     quote: She was ordained as deacon in 1995 after studying at the IEAB's seminary in Porto Alegre.
   - source: wp-en-bassotto
@@ -45,9 +50,14 @@ ordinations:
     de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
   date: '1996-03-17'
+  place: Catedral Nacional da Santíssima Trindade, Porto Alegre (RS)
   jurisdiction: ieab
-  status: probable
+  status: confirmed
   sources:
+  - source: acns-2018-01-marinez-eleita
+    quote: >-
+      foi ordenada diácona em maio de 1995 quando tinha 24 anos e no ano seguinte foi ordenada presbítera. As duas
+      ordenações aconteceram na Catedral Nacional da Santíssima Trindade em Porto Alegre
   - source: wp-en-bassotto
     quote: 1996 (priest)
   - source: costa2021
@@ -55,7 +65,7 @@ ordinations:
     page: '117'
 - order: episcopate
   date: '2018-04-21'
-  place: Catedral de Santa Maria, Belem (PA)
+  place: Quadra esportiva do complexo da Catedral Anglicana de Santa Maria, Belém (PA)
   jurisdiction: ieab
   office: diocesan
   principal_consecrator: francisco-de-assis-da-silva
@@ -78,6 +88,16 @@ ordinations:
       Bassotto.
   - source: ec-2018-04
     quote: Em destaque, as bispas Linda Nichols (de Huron, Canadá) e Griselda del Cappio (de Cuba)
+  - source: acns-2018-04-marinez-sagrada
+    quote: >-
+      Thousands of people from Brazil and around the world attended the service at the sports court of St Mary’s
+      Anglican Cathedral compound in Belém do Pará.
+  - source: acns-2018-04-marinez-sagrada
+    quote: >-
+      The Primate of Brazil, Bishop Francisco de Assis da Silva, presided at the service; and the Bishop of Huron
+      from the Anglican Church of Canada, Linda Nicholls, preached a sermon.
+  - source: acns-2018-04-marinez-sagrada
+    quote: Bishop Marinez’ consecration, on Saturday, was on Tiradentes Day
   - source: cant-identidades-numeros-2024
     quote: >-
       No dia 21 de abril de 2018, Marinez foi ordenada e sagrada na Catedral de Santa Maria, em Belém do Pará, em
@@ -96,12 +116,23 @@ ordinations:
     page: '118'
   notes: >-
     Primeira bispa da IEAB e da America do Sul. Eleita em 20/01/2018. Sagrante principal nao explicitado nas fontes
-    lidas (primaz da epoca: Francisco de Assis da Silva). Fecha a lacuna de sagrante (ieab-1965-hoje.json tinha
-    SP nulo). Os dois livros são do mesmo autor (Costa), por isso "provavel". Pregadora: bispa Linda Nicholls (Huron,
-    Canadá); presente a bispa Griselda Delgado del Carpio (Cuba). A tese NÃO nomeia o sagrante principal; fala na
-    presença 'dos bispos da Câmara Episcopal' e das bispas Griselda (Cuba) e Linda Nicholls (Canadá, pregadora),
+    lidas (primaz da epoca: Francisco de Assis da Silva). Sábado de Tiradentes (21/04/2018). A bispa de Cuba, Griselda
+    Delgado del Carpio, esteve presente; a notícia não diz se foi co-sagrante. Fecha a lacuna de sagrante (ieab-1965-hoje.json
+    tinha SP nulo). Os dois livros são do mesmo autor (Costa), por isso "provavel". Pregadora: bispa Linda Nicholls
+    (Huron, Canadá); presente a bispa Griselda Delgado del Carpio (Cuba). A tese NÃO nomeia o sagrante principal;
+    fala na presença 'dos bispos da Câmara Episcopal' e das bispas Griselda (Cuba) e Linda Nicholls (Canadá, pregadora),
     listadas como co-sagrantes por inferência.
 affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: outro
+  diocese: ieab-dm
+  start: '1999'
+  status: confirmed
+  sources:
+  - source: acns-2018-01-marinez-eleita
+    quote: onde em 1999 ela se tornou Deã, quando tinha apenas 29 anos
+  notes: Deã da Catedral Nacional da Santíssima Trindade (Porto Alegre) por 17 anos.
 - jurisdiction: ieab
   role: bishop
   start: '2018'
@@ -164,3 +195,15 @@ affiliations:
       por vários mandatos, sendo a sua primeira deã.
     page: '117'
   notes: 'Cargo: Deã da Catedral Nacional da Santíssima Trindade, Porto Alegre.'
+events:
+- type: other
+  date: '2018-01-20'
+  description: >-
+    Marinez Santos Bassotto é eleita bispa da Diocese da Amazônia no Concílio em Belém, primeira mulher eleita bispa
+    na IEAB, para suceder Saulo Maurício de Barros.
+  status: confirmed
+  sources:
+  - source: acns-2018-01-marinez-eleita
+    quote: >-
+      A Revda. Canon Marinez Santos Bassoto foi eleita no dia 20 de janeiro (sábado) de 2018 como a próxima Bispa
+      da Diocese da Amazônia durante o Concílio em Belém, no estado do Pará.
