@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: giovanni-battista-scanaroli
+name: Giovanni Battista Scanaroli
+ordinations:
+- order: episcopate
+  date: '1630-10-07'
+  place: Roma, capela do Palácio de Montecavallo
+  jurisdiction: null
+  principal_consecrator: luigi-caetani
+  co_consecrators:
+  - antonio-ricciulli
+  - benedetto-landi
+  status: probable
+  sources:
+  - source: lin-ch-bscang
+    quote: 7 Oct 1630 51.7 Ordained Bishop
+  - source: lin-ch-bscang
+    quote: Ordained Bishop Montecavallo Palace, Chapel, Roma, Diocese of Roma {Rome}, Italy
+  - source: lin-ch-bscang
+    quote: >-
+      Principal Consecrator: Luigi Cardinal Caetani† Cardinal-Priest of Santa Pudenziana Principal Co-Consecrators:
+      Bishop Antonio Ricciulli† Bishop Emeritus of Belcastro Bishop Benedetto Landi† Bishop of Fossombrone
+  notes: >-
+    Bispo titular de Sidon. Só Catholic-Hierarchy. A partir de Luigi Caetani a cadeia coincide com a de Carlos Duarte
+    Costa (Caetani - Ludovisi - Sanvitale - Bernerio - Santorio - Rebiba).

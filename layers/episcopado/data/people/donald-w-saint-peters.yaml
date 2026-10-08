@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: donald-w-saint-peters
+name: Donald W. Saint Peters
+ordinations:
+- order: presbyterate
+  date: '1983-08-28'
+  place: Saint Louis, Missouri (EUA)
+  jurisdiction: null
+  ordained_by: charles-david-luther
+  status: probable
+  sources:
+  - source: lin-tjb-saint-peters
+    quote: >-
+      Ordained a priest on 08/28/1983 at Saint Louis, Missouri, by Charles David Luther, a bishop of the Western
+      Orthodox Church in America.
+  notes: Data no formato mês/dia/ano da fonte.
+- order: episcopate
+  date: '1989-09-10'
+  place: Portage, Indiana (EUA)
+  jurisdiction: null
+  principal_consecrator: richard-james-ingram
+  co_consecrators:
+  - patrick-michael-cronin
+  - timothy-w-christopher-browning
+  status: probable
+  sources:
+  - source: lin-tjb-saint-peters
+    quote: >-
+      Consecrated a bishop on 09/10/1989 at Portage, Indiana, by Richard James Ingram, a bishop of the Western Orthodox
+      Church in America, assisted by Patrick Michael Cronin, a bishop of the Independent Catholic Church of America,
+      and by Timothy W. Christopher Browning, a bishop of the Byzantine Orthodox Catholic Church.
+  - source: lia-aeci-succession
+    quote: Donald St. Peters c.1988
+  notes: >-
+    Boyle dá 10/09/1989 (mês/dia/ano: 10 de setembro); a AECI dá c.1988 em uma lista e "c 1989" em outra.

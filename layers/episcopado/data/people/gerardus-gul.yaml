@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: gerardus-gul
+name: Gerardus Gul
+ordinations:
+- order: episcopate
+  date: '1892-05-11'
+  place: Utrecht
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: gaspardus-johannes-rinkel
+  co_consecrators:
+  - cornelius-diependaal
+  - eduard-herzog
+  - joseph-hubert-reinkens
+  status: confirmed
+  sources:
+  - source: lin-wp-en-gul
+    quote: >-
+      Gul was consecrated Archbishop of Utrecht on 11 May 1892 by Bishop Gaspardus Johannes Rinkel of Haarlem, Bishop
+      Cornelius Diependaal of Deventer, and Bishop Joseph Hubert Reinkens of Bonn.
+  - source: lin-ms-gul
+    quote: >-
+      11th May 1892 18920511 Consecrated by Gaspart Johannes Rinkel Assisted by Bishops Cornelius Diependaal, Josef
+      Hubert Reinkens and Eduard Herzog
+  notes: >-
+    Arcebispo de Utrecht (1892-1920). Wikipédia EN lista três consagrantes; Morningstar acrescenta Eduard Herzog.

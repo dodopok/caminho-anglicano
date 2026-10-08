@@ -1,13 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: lowell-paul-wadle
-name: Lowell P. Wadle
+name: Lowell Paul Wadle
 aliases:
-- Lowell Paul Wadle
+- Lowell P. Wadle
 ordinations:
 - order: episcopate
   date: '1957-04-07'
   jurisdiction: null
   principal_consecrator: wallace-davis-de-ortega-maxey
+  mode: conditional
   status: probable
   sources:
   - source: rtb-ceec-succession
@@ -16,4 +17,15 @@ ordinations:
       Lowell P. Wadle
   notes: >-
     Linha de sucessão autodeclarada pela CEEC (tabela 'Anglican Succession – Table One'); a página lista só o sagrante
-    principal e a data. Não verificada por fonte independente.
+    principal e a data. Não verificada por fonte independente. Wadle já era bispo desde 1940 (por Justin Boyle)
+    e sagrou Hampton em 1945; a sagração de 1957 por Maxey só pode ter sido uma nova sagração.
+- order: episcopate
+  date: '1940'
+  jurisdiction: null
+  principal_consecrator: justin-boyle
+  status: probable
+  sources:
+  - source: rcc-our-history
+    quote: Lowel Paul Wadle, 1940. Consecrated by Boyle as Bishop.
+  - source: ccc-apostolic-succession
+    quote: Justin Boyle, in 1927; Lowel Paul Wadle, in1940;

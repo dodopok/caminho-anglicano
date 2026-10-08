@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: benedito-pereira-lima
+name: Benedito Pereira Lima
+ordinations:
+- order: episcopate
+  date: '1965'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: lia-aeci-succession
+    quote: Benedito Pereira Lima   c.1965
+  - source: lin-cefip-sagr
+    quote: (247) Benedito Pereira Lima, 1965;
+  notes: >-
+    As listas de sucessão (AECI, CEFIP e o blog arquiabadia) posicionam Benedito Pereira Lima (1965) logo depois
+    de Manoel Ceia Laranjeira (1951) e antes de José Marcolino Machado (1966), mas nenhuma das três diz explicitamente
+    quem o sagrou.

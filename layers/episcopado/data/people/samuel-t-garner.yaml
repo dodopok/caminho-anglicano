@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: samuel-t-garner
+name: Samuel T. Garner
+ordinations:
+- order: episcopate
+  date: '1976-01-17'
+  place: Igreja de São Leonardo, Brooklyn, Nova York (EUA)
+  jurisdiction: null
+  principal_consecrator: james-f-a-lashley
+  co_consecrators:
+  - ernest-parris
+  status: probable
+  sources:
+  - source: lin-aoci-hayes
+    quote: >-
+      Who on the 17th of January, 1976, in Saint Leonard’s Church, Brooklyn, New York with the assistance of Bishop
+      Ernest Parris, consecrated Samuel T. Garner
+  notes: Fonte única (AOCI).

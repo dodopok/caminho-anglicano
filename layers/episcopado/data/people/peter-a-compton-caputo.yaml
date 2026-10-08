@@ -6,17 +6,88 @@ aliases:
 - Bishop Peter Compton Caputo
 - Peter Anthony Compton-Caputo
 - Peter Compton Caputo
+- Peter Compton-Caputo
 biography: >-
-  Bispo da Anglican Independent Communion (Presiding Bishop of the Americas), sagrante de Norman Dutton (AECI);
-  segundo a AECI, Cruz-Blanco foi um dos seus co-sagrantes. Listado como sagrado c.1993 na linhagem publicada pela
-  AECI.
+  Bispo ordinário da Anglican Independent Communion (Annapolis, Maryland); sagrou Norman Dutton. Segundo a lista
+  de sucessão de Thomas Boyle (TJB), foi ordenado presbítero em 06/09/1980 e sagrado bispo em 31/10/1993 em Crownsville
+  (Maryland).
 sources:
-- source: lia-aeci-news
+- source: lin-tjb-compton-caputo
   quote: >-
-    Archbishop Victor Manuel Cruz-Blanco was one of the consecrators of Bishop Peter Compton Caputo who in turn
-    was Consecrator of Norman S Dutton.
-- source: lia-aeci-succession
-  quote: Peter A. Compton-Caputo c.1993
+    Bp. Compton-Caputo is the bishop ordinary for the Anglican Independent Communion, based in Annapolis, Maryland
+ordinations:
+- order: presbyterate
+  date: '1980-09-06'
+  jurisdiction: null
+  ordained_by: charles-dale-doren
+  status: probable
+  sources:
+  - source: lin-tjb-compton-caputo
+    quote: >-
+      Ordained a priest on 09/06/1980 at xxxxx by Charles Dale David Doren, a bishop of the United Episcopal Church
+      of the United States of America.
+  notes: >-
+    Data no formato mês/dia/ano da fonte. Fonte única (lista de sucessão de Thomas Boyle, snapshot de 2001).
+- order: episcopate
+  date: '1993-10-31'
+  place: Crownsville, Maryland (EUA)
+  jurisdiction: null
+  principal_consecrator: donald-wharton
+  co_consecrators:
+  - e-j-michel-laroque
+  - herbert-monroe-groce
+  - victor-manuel-cruz-blanco
+  status: probable
+  sources:
+  - source: lin-tjb-compton-caputo
+    quote: >-
+      Consecrated a bishop on 10/31/1993 at Crownsville, Maryland by Donald Wharton, a bishop of the Byzantine Orthodox
+      Catholic Church, by E. J. Michel LaRoque, a bishop of the Holy Catholic Church, Anglican Rite Jurisdiction
+      of America.
+  - source: lin-tjb-wharton
+    quote: 1) xx/xx/19xx Peter Compton-Caputo
+  - source: lia-aeci-succession
+    quote: Donald Wharton c.1989 Peter A. Compton-Caputo c.1993
+  - source: lia-aeci-news
+    quote: >-
+      Archbishop Victor Manuel Cruz-Blanco was one of the consecrators of Bishop Peter Compton Caputo who in turn
+      was Consecrator of Norman S Dutton.
+  - source: lin-tjb-compton-caputo
+    quote: >-
+      Later blessed with the form of co-consecration on 01/25/1997 at Wharton, New Jersey, by Larry E. Shaver, a
+      bishop of the Holy Catholic Church, Anglican Rite Jurisdiction of America, and by Herbert Monroe Groce, a
+      bishop of the Holy Catholic Church, Anglican Rite Jurisdiction of America
+  discrepancies:
+  - field: date
+    value: '1997-01-25'
+    sources:
+    - source: lin-tjb-compton-caputo
+      quote: >-
+        Later blessed with the form of co-consecration on 01/25/1997 at Wharton, New Jersey, by Larry E. Shaver,
+        a bishop of the Holy Catholic Church, Anglican Rite Jurisdiction of America, and by Herbert Monroe Groce,
+        a bishop of the Holy Catholic Church, Anglican Rite Jurisdiction of America
+  - field: place
+    value: Wharton, New Jersey (EUA)
+    sources:
+    - source: lin-tjb-compton-caputo
+      quote: >-
+        Later blessed with the form of co-consecration on 01/25/1997 at Wharton, New Jersey, by Larry E. Shaver,
+        a bishop of the Holy Catholic Church, Anglican Rite Jurisdiction of America, and by Herbert Monroe Groce,
+        a bishop of the Holy Catholic Church, Anglican Rite Jurisdiction of America
+  - field: principal_consecrator
+    value: larry-lee-shaver
+    sources:
+    - source: lin-tjb-compton-caputo
+      quote: >-
+        Later blessed with the form of co-consecration on 01/25/1997 at Wharton, New Jersey, by Larry E. Shaver,
+        a bishop of the Holy Catholic Church, Anglican Rite Jurisdiction of America, and by Herbert Monroe Groce,
+        a bishop of the Holy Catholic Church, Anglican Rite Jurisdiction of America
+  notes: >-
+    Boyle lista Wharton e LaRoque como consagrantes (sem distinguir o principal; Wharton é o primeiro citado e a
+    lista de sucessão da AECI põe Wharton imediatamente antes de Compton-Caputo). A AECI acrescenta Cruz-Blanco
+    como um dos consagrantes. Fontes: Boyle (snapshot 2001) e AECI (listas autodeclaradas). Em ambas as listas de
+    Boyle e AECI, ele é "Presiding Bishop" da Anglican Independent Communion nas Américas. Segunda cerimônia (forma
+    de co-consagração), segundo Boyle; a primeira é a de 31/10/1993.
 events:
 - type: other
   date: '2013-01-12'

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: johannes-bon
+name: Johannes Bon
+ordinations:
+- order: episcopate
+  date: '1819-04-25'
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: willibrord-van-os
+  status: probable
+  sources:
+  - source: lin-neale
+    quote: 5 John Bon April 25, 1819 June 25, 1841 Van Os, Archbishop of Utrecht.
+  - source: lin-ms-bon
+    quote: 22th April 1819 18190422 Consecrated by Willibrord van Os
+  notes: >-
+    Bispo de Haarlem. Neale dá 25/04/1819 e Morningstar 22/04/1819 (mesmo sagrante). Segundo Morningstar, foi o
+    primeiro bispo holandês nessa linha a não ser excomungado por Roma.

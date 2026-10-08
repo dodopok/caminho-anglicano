@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ulderico-carpegna
+name: Ulderico Carpegna
+ordinations:
+- order: episcopate
+  date: '1630-10-07'
+  place: Roma, Capela Paolina do Quirinal
+  jurisdiction: null
+  principal_consecrator: luigi-caetani
+  co_consecrators:
+  - antonio-ricciulli
+  - benedetto-landi
+  status: probable
+  sources:
+  - source: lin-ch-bcarp
+    quote: 7 Oct 1630 35.2 Ordained Bishop
+  - source: lin-ch-bcarp
+    quote: Ordained Bishop Pauline du Quirinal, Chapel, Roma, Diocese of Roma {Rome}, Italy
+  - source: lin-ch-bcarp
+    quote: >-
+      Principal Consecrator: Luigi Cardinal Caetani† Cardinal-Priest of Santa Pudenziana Principal Co-Consecrators:
+      Bishop Antonio Ricciulli† Bishop Emeritus of Belcastro Bishop Benedetto Landi† Bishop of Fossombrone
+  notes: Bispo de Gubbio. Só Catholic-Hierarchy consultada.

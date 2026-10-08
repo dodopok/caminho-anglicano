@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: pietro-francesco-galleffi
+name: Pietro Francesco Galleffi
+ordinations:
+- order: episcopate
+  date: '1819-09-12'
+  place: Roma, igreja dos Ss. Domenico e Sisto
+  jurisdiction: null
+  principal_consecrator: alessandro-mattei
+  co_consecrators:
+  - francesco-alberini
+  - geraldo-macioti
+  status: probable
+  sources:
+  - source: lin-ch-bgalef
+    quote: 12 Sep 1819 48.8 Ordained Bishop
+  - source: lin-ch-bgalef
+    quote: Ordained Bishop Ss. Domenico e Sisto, Church, Roma, Diocese of Roma {Rome}, Italy
+  - source: lin-ch-bgalef
+    quote: >-
+      Principal Consecrator: Alessandro Cardinal Mattei† Cardinal-Bishop of Ostia (e Velletri) Principal Co-Consecrators:
+      Bishop Geraldo Macioti† Titular Bishop of Elusa Bishop Francesco Alberini† Bishop of Terracina, Priverno e
+      Sezze
+  notes: Arcebispo titular de Damasco; já era cardeal desde 1803. Só Catholic-Hierarchy consultada.

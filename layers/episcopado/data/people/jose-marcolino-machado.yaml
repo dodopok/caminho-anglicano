@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jose-marcolino-machado
+name: José Marcolino Machado
+ordinations:
+- order: episcopate
+  date: '1966-08-01'
+  place: local não informado
+  jurisdiction: null
+  principal_consecrator: benedito-pereira-lima
+  status: probable
+  sources:
+  - source: lin-tjb-machado
+    quote: >-
+      Consecrated a bishop on 08/01/1966 at xxxxx by Benedito Pereira-Lima, a bishop of the Igreja Católica Apostólica
+      Independente, Patriarcardo do Brasil, assisted by xxxx, a bishop of xxxxx.
+  - source: lia-aeci-succession
+    quote: Dom Jose M Machado c.1966

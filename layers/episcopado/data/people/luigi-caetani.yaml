@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: luigi-caetani
+name: Luigi Caetani
+ordinations:
+- order: episcopate
+  date: '1622-06-12'
+  place: Roma, Basílica de Santa Maria Maggiore
+  jurisdiction: null
+  principal_consecrator: ludovico-ludovisi
+  co_consecrators:
+  - galeazzo-sanvitale
+  - ulpiano-volpi
+  status: probable
+  sources:
+  - source: lin-ch-bcaet
+    quote: 12 Jun 1622 26.9 Ordained Bishop
+  - source: lin-ch-bcaet
+    quote: Ordained Bishop Sainte Marie Majeure, Basilica, Roma, Diocese of Roma {Rome}
+  - source: lin-ch-bcaet
+    quote: >-
+      Principal Consecrator: Ludovico Cardinal Ludovisi† Archbishop of Bologna Principal Co-Consecrators: Archbishop
+      Galeazzo Sanvitale† Archbishop Emeritus of Bari (-Canosa) Archbishop Ulpiano (Volpiano) Volpi† Bishop of Novara
+  notes: Patriarca titular de Antioquia e coadjutor de Cápua. Só Catholic-Hierarchy consultada.

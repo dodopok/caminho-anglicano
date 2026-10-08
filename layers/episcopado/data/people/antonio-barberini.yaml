@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: antonio-barberini
+name: Antonio Barberini
+ordinations:
+- order: episcopate
+  date: '1655-10-24'
+  place: Roma, igreja do Noviciado dos Jesuítas
+  jurisdiction: null
+  principal_consecrator: giovanni-battista-scanaroli
+  co_consecrators:
+  - lorenzo-gavotti
+  - marco-antonio-bottoni
+  status: probable
+  sources:
+  - source: lin-ch-bbarbj
+    quote: 24 Oct 1655 48.2 Ordained Bishop
+  - source: lin-ch-bbarbj
+    quote: Ordained Bishop Novitiate of the Jesuits, Church, Roma, Diocese of Roma {Rome}, Italy
+  - source: lin-ch-bbarbj
+    quote: >-
+      Principal Consecrator: Bishop Giovanni Battista Scanaroli (Scannaroli)† Titular Bishop of Sidon Principal
+      Co-Consecrators: Bishop Lorenzo Gavotti, C.R.† Bishop Emeritus of Ventimiglia Bishop Marco Antonio Bottoni
+      (Bettoni), T.O.R.† Titular Bishop of Coronea
+  notes: Cardeal-bispo de Palestrina. Só Catholic-Hierarchy.

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: james-ingall-wedgwood
+name: James Ingall Wedgwood
+ordinations:
+- order: episcopate
+  date: '1916-02-13'
+  jurisdiction: null
+  principal_consecrator: frederick-samuel-willoughby
+  co_consecrators:
+  - robert-king
+  - rupert-gauntlett
+  status: confirmed
+  sources:
+  - source: lin-wp-en-wedgwood
+    quote: Wedgwood received from Willoughby, King and Gauntlett the apostolic succession on 13 February 1916.
+  - source: lin-ms-wedgwood
+    quote: >-
+      13th February 1916 19160213 Consecrated by Frederick Samuel Willoughby Assisted by Bernard Edward Rupert and
+      Robert King
+  - source: lin-wp-en-mathew
+    quote: >-
+      In 1916 Frederick Samuel Willoughby , who had been consecrated by Mathew, consecrated Gauntlett, King, and
+      Wedgwood.
+  notes: >-
+    Wikipédia EN e Morningstar concordam em data (13/02/1916) e sagrante; Morningstar grafa os co-sagrantes como
+    "Bernard Edward Rupert and Robert King" (provável confusão com Rupert Gauntlett/Robert King). Willoughby, King
+    e Gauntlett consagraram também a King e Gauntlett no mesmo dia.

@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: thomas-cameron
+name: Thomas Cameron
+ordinations:
+- order: episcopate
+  date: '1950-09-21'
+  place: Igreja de São João, Tottington, Bury, Lancashire (Inglaterra)
+  jurisdiction: fce
+  office: diocesan
+  principal_consecrator: frank-vaughan
+  co_consecrators:
+  - g-w-macleavy
+  - george-w-forbes-smith
+  - john-christie-magee
+  status: confirmed
+  sources:
+  - source: lin-fce-lista
+    quote: >-
+      30. THOMAS CAMERON was consecrated by Bishops Vaughan, Magee, Forbes Smith and G. W. MacLeavy MA BD (Bishop
+      of the Moravian Church) assisted by several Presbyters in St John’s Church, Tottington, Bury, Lancs., on 21
+      September 1950. Retired 1975. Died 1977.
+  notes: Entre os sagrantes, G. W. MacLeavy era bispo da Igreja Morávia.

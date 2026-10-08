@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jacques-benigne-bossuet
+name: Jacques-Bénigne Bossuet
+ordinations:
+- order: episcopate
+  date: '1670-09-21'
+  jurisdiction: null
+  principal_consecrator: charles-maurice-le-tellier
+  co_consecrators:
+  - armand-de-monchy-d-hocquincourt
+  - gabriel-de-roquette
+  status: probable
+  sources:
+  - source: lin-ch-bbossu
+    quote: 21 Sep 1670 42.9 Ordained Bishop
+  - source: lin-ch-bbossu
+    quote: >-
+      Principal Consecrator: Archbishop Charles-Maurice Le Tellier† Titular Archbishop of Nazianzus Principal Co-Consecrators:
+      Bishop Armand de Monchy d’Hocquincourt† Bishop of Verdun Bishop Gabriel de Roquette† Bishop of Autun
+  notes: Bispo de Condom. Só Catholic-Hierarchy.

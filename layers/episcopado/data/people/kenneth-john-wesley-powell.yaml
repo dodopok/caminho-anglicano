@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: kenneth-john-wesley-powell
+name: Kenneth John Wesley Powell
+ordinations:
+- order: episcopate
+  date: '1986-10-01'
+  place: Christ Church, Teddington, Middlesex (Inglaterra)
+  jurisdiction: fce
+  office: diocesan
+  principal_consecrator: cyril-milner
+  co_consecrators:
+  - arthur-ward
+  status: confirmed
+  sources:
+  - source: lin-fce-lista
+    quote: >-
+      37. KENNETH JOHN WESLEY POWELL was consecrated by Bishops Milner and Ward, assisted by the Rev’d Rowland Graves,
+      President of the Wesleyan Reform Union, and several Presbyters, at Christ Church, Teddington, Middlesex on
+      1 October 1986. Retired 2007. Died 2020.
+  notes: >-
+    Co-assistente: Rowland Graves (presidente da Wesleyan Reform Union). Aposentou-se em 2007; morreu em 2020.

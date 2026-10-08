@@ -33,7 +33,7 @@ sources:
 ordinations:
 - order: episcopate
   date: '2014-09-28'
-  place: St. Andrew's Church, Bentley, West Midlands (Reino Unido)
+  place: Igreja de Santo André, Bentley (Inglaterra)
   jurisdiction: fce
   office: missionary
   principal_consecrator: john-fenwick
@@ -42,17 +42,11 @@ ordinations:
   - paul-nigel-hunt
   status: contested
   sources:
-  - source: cont-rec-journal-2017
+  - source: lin-fce-lista
     quote: >-
-      BISHOP JOSEP MIQUEL ROSSELLO FERRER was consecrated (for Brazil) by the Rt. Rev. John Fenwick, the Rt. Rev.
-      Paul Hunt and the Rt. Rev. Gerhard Meyer in St. Andrew’s Church, Bentley, West Midlands, United Kingdom on
-      September 28, 2014.
-  - source: cont-cafe-quemsou
-    quote: Foi bispo da Free Church of England entre 2014 e 2021.
-  - source: rtb-iarb-nosso-bispo
-    quote: >-
-      Foi consagrado bispo em 2003. Sendo Bispo da Igreja Evangélica Episcopal (IEVE) até 2009 quando se transferiu
-      canonicamente à Igreja Anglicana Reformada do Brasil.
+      43. JOSEP MIQUEL ROSSELLO FERRER BA MDiv was consecrated (for Brazil) by Bishops Fenwick, Hunt and Gerhard
+      Meyer of the Reformierte Episcopalkirche in Germany, assisted by several Presbyters, at St Andrew’s Church,
+      Bentley, on 28 September 2014. Resigned 2021.
   - source: costa2021
     quote: >-
       Posteriormente saiu da IERE, filiandose à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
@@ -60,6 +54,17 @@ ordinations:
     quote: >-
       |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
       Diocese|South America]]||
+  - source: rtb-iarb-nosso-bispo
+    quote: >-
+      Foi consagrado bispo em 2003. Sendo Bispo da Igreja Evangélica Episcopal (IEVE) até 2009 quando se transferiu
+      canonicamente à Igreja Anglicana Reformada do Brasil.
+  - source: cont-rec-journal-2017
+    quote: >-
+      BISHOP JOSEP MIQUEL ROSSELLO FERRER was consecrated (for Brazil) by the Rt. Rev. John Fenwick, the Rt. Rev.
+      Paul Hunt and the Rt. Rev. Gerhard Meyer in St. Andrew’s Church, Bentley, West Midlands, United Kingdom on
+      September 28, 2014.
+  - source: cont-cafe-quemsou
+    quote: Foi bispo da Free Church of England entre 2014 e 2021.
   - source: cant-novas-igrejas-2024
     quote: filiando-se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário
     page: '133'
@@ -68,37 +73,6 @@ ordinations:
       Posteriormente saiu da IERE, filiando- se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
     page: '152'
   discrepancies:
-  - field: date
-    value: '2003'
-    sources:
-    - source: rtb-iarb-nosso-bispo
-      quote: >-
-        Foi consagrado bispo em 2003. Sendo Bispo da Igreja Evangélica Episcopal (IEVE) até 2009 quando se transferiu
-        canonicamente à Igreja Anglicana Reformada do Brasil.
-    - source: costa2021
-      quote: >-
-        Posteriormente saiu da IERE, filiandose à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
-    - source: enwiki-rec-bispos
-      quote: >-
-        |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
-        Diocese|South America]]||
-  - field: jurisdiction
-    value: ieve
-    sources:
-    - source: rtb-iarb-nosso-bispo
-      quote: >-
-        Foi consagrado bispo em 2003. Sendo Bispo da Igreja Evangélica Episcopal (IEVE) até 2009 quando se transferiu
-        canonicamente à Igreja Anglicana Reformada do Brasil.
-    - source: costa2021
-      quote: >-
-        Posteriormente saiu da IERE, filiandose à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
-    - source: enwiki-rec-bispos
-      quote: >-
-        |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
-        Diocese|South America]]||
-    - source: cant-novas-igrejas-2024
-      quote: filiando-se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário
-      page: '133'
   - field: jurisdiction
     value: ceec
     sources:
@@ -109,6 +83,33 @@ ordinations:
       quote: >-
         |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
         Diocese|South America]]||
+  - field: date
+    value: '2003'
+    sources:
+    - source: rtb-iarb-nosso-bispo
+      quote: >-
+        Foi consagrado bispo em 2003. Sendo Bispo da Igreja Evangélica Episcopal (IEVE) até 2009 quando se transferiu
+        canonicamente à Igreja Anglicana Reformada do Brasil.
+  - field: jurisdiction
+    value: ieve
+    sources:
+    - source: rtb-iarb-nosso-bispo
+      quote: >-
+        Foi consagrado bispo em 2003. Sendo Bispo da Igreja Evangélica Episcopal (IEVE) até 2009 quando se transferiu
+        canonicamente à Igreja Anglicana Reformada do Brasil.
+    - source: cant-novas-igrejas-2024
+      quote: filiando-se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário
+      page: '133'
+  - field: place
+    value: St. Andrew's Church, Bentley, West Midlands (Reino Unido)
+    sources:
+    - source: cont-rec-journal-2017
+      quote: >-
+        BISHOP JOSEP MIQUEL ROSSELLO FERRER was consecrated (for Brazil) by the Rt. Rev. John Fenwick, the Rt. Rev.
+        Paul Hunt and the Rt. Rev. Gerhard Meyer in St. Andrew’s Church, Bentley, West Midlands, United Kingdom
+        on September 28, 2014.
+    - source: cont-cafe-quemsou
+      quote: Foi bispo da Free Church of England entre 2014 e 2021.
   - field: jurisdiction
     value: eec
     sources:
@@ -118,21 +119,23 @@ ordinations:
         missionário.
       page: '152'
   notes: >-
+    Sagrado "for Brazil"; a lista oficial da FCE o dá como renunciado em 2021 e traz a lista dos três sagrantes
+    (Fenwick, Hunt e Gerhard Meyer da Reformierte Episkopalkirche na Alemanha). Data não informada; o site da CICEB
+    já o chama 'Bispo Joseph Rosselo' em jan/2004, o que sugere sagração até 2004. 'Igreja Evangélica Episcopal'
+    é o nome que Costa e Cavalcanti também usam para a comunhão à qual Leonides se filiou (CEEC), mas a identidade
+    exata não está estabelecida. Na lista, nº 68 = John R. K. Fenwick (Bishop Primus da FCE), 67 = Paul Nigel Hunt
+    (FCE), 69 = Gerhard Meyer (REC, Alemanha). A ordem dos números sugere Fenwick como principal, sem confirmação.
+    A fonte citada pela Wikipédia é o Journal do 55º Conselho Geral da REC (2017), não consultado. Há sagração anterior
+    na 'Igreja Evangélica Episcopal' (Costa 2021); a de 2014 seria ressagração ou sagração sub conditione, mas nenhuma
+    fonte usa esse termo. Biografia no site da IARB (autodescrição); não informa data exata, local nem sagrantes.
     Fonte primária (REC Journal 2017, p. 210 do apêndice 'Consecrations of Bishops') — é a fonte que a Wikipédia
     cita. Resolve local (Bentley, West Midlands), data e os três sagrantes; a ordem de citação (Fenwick, Hunt, Meyer)
     não declara quem é o principal; Fenwick era Bishop Primus da FCE. 'for Brazil' = sagração para a Diocese da
     América do Sul/IARB. Gerhard Meyer é bispo REC (Alemanha, sagrado 22/10/2006). A jurisdição é a FCE (Free Church
     of England) em sucessão REC, e não a 'Igreja Evangélica Episcopal': A PRIMEIRA sagração (antes da FCE) não tem
-    fonte primária localizada — ver dúvidas. Biografia no site da IARB (autodescrição); não informa data exata,
-    local nem sagrantes. Data não informada; o site da CICEB já o chama 'Bispo Joseph Rosselo' em jan/2004, o que
-    sugere sagração até 2004. 'Igreja Evangélica Episcopal' é o nome que Costa e Cavalcanti também usam para a comunhão
-    à qual Leonides se filiou (CEEC), mas a identidade exata não está estabelecida. Na lista, nº 68 = John R. K.
-    Fenwick (Bishop Primus da FCE), 67 = Paul Nigel Hunt (FCE), 69 = Gerhard Meyer (REC, Alemanha). A ordem dos
-    números sugere Fenwick como principal, sem confirmação. A fonte citada pela Wikipédia é o Journal do 55º Conselho
-    Geral da REC (2017), não consultado. Há sagração anterior na 'Igreja Evangélica Episcopal' (Costa 2021); a de
-    2014 seria ressagração ou sagração sub conditione, mas nenhuma fonte usa esse termo. O livro não informa data
-    nem sagrantes. A tese diz 'Igreja Evangélica Episcopal' — identificação com a EEC (Evangelical Episcopal Communion)
-    da base é incerta. Data e sagrantes não informados.
+    fonte primária localizada — ver dúvidas. O livro não informa data nem sagrantes. A tese diz 'Igreja Evangélica
+    Episcopal' — identificação com a EEC (Evangelical Episcopal Communion) da base é incerta. Data e sagrantes não
+    informados.
 affiliations:
 - jurisdiction: ieve
   role: bishop

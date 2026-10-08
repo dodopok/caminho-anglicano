@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: giacomo-filippo-fransoni
+name: Giacomo Filippo Fransoni
+ordinations:
+- order: episcopate
+  date: '1822-12-08'
+  jurisdiction: null
+  principal_consecrator: pietro-francesco-galleffi
+  co_consecrators:
+  - giovanni-francesco-falzacappa
+  - giuseppe-della-porta-rodiani
+  status: probable
+  sources:
+  - source: lin-ch-bfrans
+    quote: 8 Dec 1822 46.9 Ordained Bishop
+  - source: lin-ch-bfrans
+    quote: >-
+      Principal Consecrator: Pietro Francesco Cardinal Galleffi† Cardinal-Bishop of Albano Principal Co-Consecrators:
+      Archbishop Giovanni Francesco Falzacappa† Titular Archbishop of Athenae Archbishop Giuseppe della Porta Rodiani†
+      Titular Archbishop of Damascus
+  notes: >-
+    Arcebispo titular de Nazianzo e núncio em Portugal. Só Catholic-Hierarchy consultada para esta sagração.

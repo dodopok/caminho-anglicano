@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: johannes-jacobus-van-rhijn
+name: Johannes Jacobus van Rhijn
+ordinations:
+- order: episcopate
+  date: '1797-07-05'
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: adrianus-johannes-broekman
+  status: probable
+  sources:
+  - source: lin-neale
+    quote: 6 John Jacob Van Rhijn July 5, 1797 June 24, 1808 Adrian John Broekman, Bishop of Haarlem.
+  notes: Arcebispo de Utrecht. Fonte única (Neale, 1858).

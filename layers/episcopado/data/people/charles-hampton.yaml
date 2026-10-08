@@ -1,3 +1,58 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: charles-hampton
 name: Charles Hampton
+ordinations:
+- order: presbyterate
+  date: '1917-08-17'
+  jurisdiction: null
+  ordained_by: james-ingall-wedgwood
+  status: probable
+  sources:
+  - source: lin-ms-hampton
+    quote: >-
+      Hampton was ordained a priest on the 17th August 1917 by James Ingall Wedgwood of the Liberal Catholic Church.
+  notes: Fonte única (Morningstar, página de síntese de linhagens).
+- order: episcopate
+  date: '1931-07-13'
+  place: Los Angeles, Califórnia (EUA)
+  jurisdiction: null
+  office: auxiliary
+  principal_consecrator: irving-steiger-cooper
+  co_consecrators:
+  - george-sydney-arundale
+  - ray-marshall-wardall
+  status: probable
+  sources:
+  - source: lin-ms-hampton
+    quote: >-
+      Hampton was consecrated in Los Angeles, California in 1931 by Irving Cooper of the Liberal Catholic Church.
+  - source: lin-ms-hampton
+    quote: >-
+      13th July 1931 19310713 Consecrated by Irving Steiger Cooper Assisted by George S. Arundale and Ray M. Wardall.
+  - source: lin-ms-cooper
+    quote: 13th July 1931 19310713 Consecrated Charles Hampton Assisted by George S. Arundale, Ray M. Wardall
+  notes: >-
+    Data completa (13/07/1931) e co-sagrantes só em Morningstar; o local (Los Angeles) vem da mesma página. Hampton
+    tornou-se bispo auxiliar da Liberal Catholic Church para os EUA.
+- order: episcopate
+  date: '1945-08-23'
+  jurisdiction: null
+  principal_consecrator: lowell-paul-wadle
+  co_consecrators:
+  - anthony-joseph-aneed
+  - henry-joseph-kleefisch
+  - wallace-davis-de-ortega-maxey
+  mode: conditional
+  status: probable
+  sources:
+  - source: lin-ms-hampton
+    quote: >-
+      Upon his consecration in 1945 by Lowell P. Wadle et al., Hampton left the Liberal Catholic Church and joined
+      the Old Roman Catholic Church, where he stayed until his death.
+  - source: lin-ms-hampton
+    quote: 23rd August 1945 19450823 Mutual consecration Lowell Paul Wadle Mar Paulos
+  notes: >-
+    Segunda consagração de Hampton ("mutual consecration" em 23/08/1945, segundo Morningstar, que lista Ortega-Maxey,
+    Kleefisch, Wadle e Aneed como participantes). Lowell P. Wadle, aqui sagrante, tem sagração registrada em 1957
+    por Ortega Maxey. Papel principal de Wadle inferido do texto "by Lowell P. Wadle et al."; Morningstar não distingue
+    sagrante principal.

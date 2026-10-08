@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: james-f-a-lashley
+name: James F. A. Lashley
+ordinations:
+- order: episcopate
+  date: '1932-10-02'
+  jurisdiction: null
+  principal_consecrator: william-p-tyarks
+  status: probable
+  sources:
+  - source: lin-aoci-hayes
+    quote: Who on the 2nd of October, 1932, consecrated James F.A. Lashley
+  notes: Fonte única (AOCI).

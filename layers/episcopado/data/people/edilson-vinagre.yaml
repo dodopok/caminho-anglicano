@@ -1,3 +1,28 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: edilson-vinagre
 name: Edilson Vinagre
+full_name: Edilson José Vinagre
+aliases:
+- Dom Edilson José Vinagre
+- Edilson José Vinagre
+biography: >-
+  Arcebispo primaz da Igreja Católica Carismática (ICC), de Belém (PA). Nome completo "Edilson José Vinagre" na
+  imprensa de 2024. Sagrante principal de Orvandil Moreira Barbosa (27/07/2008). Sua própria sagração episcopal
+  não foi encontrada.
+sources:
+- source: lin-correiodeminas-2024
+  quote: Dom Edilson José Vinagre, o Prinaz da ICC
+- source: lin-icc-domomb-2008
+  quote: 'Bispo Sagrante/Ordenante : EDILSON VINAGRE ( Primaz da Igreja).'
+events:
+- type: other
+  date: null
+  description: >-
+    Visita de Emmanuel Milingo e sua esposa Maria Sung à Igreja Católica Carismática de Belém (fotos no blog oficial
+    da ICC, sem data); o blog chama de "Irmão Alberto" o "Fundador da Igreja Católica Carismática".
+  status: probable
+  sources:
+  - source: lin-icc-milingo
+    quote: Dom Emmanuel Milingo e sua esposa Maria Sung
+  - source: lin-icc-milingo
+    quote: Irmão Alberto- Fundador da Igreja Católica Carismática

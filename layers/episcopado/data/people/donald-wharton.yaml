@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: donald-wharton
+name: Donald Wharton
+ordinations:
+- order: episcopate
+  date: null
+  jurisdiction: null
+  principal_consecrator: donald-w-saint-peters
+  co_consecrators:
+  - frank-vandeventer
+  - timothy-w-christopher-browning
+  status: probable
+  sources:
+  - source: lin-tjb-wharton
+    quote: >-
+      Consecrated a bishop on xx/xx/19xx at xxxxx, by Donald W. Saint Peters, a bishop of xxxx assisted by Frank
+      VanDeventer, S.F.D., a bishop of the Christ Catholic Orthodox Church, and by Timothy W. Christopher Browning,
+      O.S.B., a bishop of xxxx
+  - source: lin-tjb-wharton
+    quote: Bp. Wharton is a bishop of the Byzantine Orthodox Catholic Church.
+  - source: lia-aeci-succession
+    quote: Donald Wharton c 1989
+  notes: Data e local não preenchidos por Boyle; a lista da AECI dá "c 1989".

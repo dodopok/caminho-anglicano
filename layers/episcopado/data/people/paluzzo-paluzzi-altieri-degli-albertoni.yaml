@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: paluzzo-paluzzi-altieri-degli-albertoni
+name: Paluzzo Paluzzi Altieri degli Albertoni
+ordinations:
+- order: episcopate
+  date: '1666-05-02'
+  place: Roma, igreja de S. Silvestro in Capite
+  jurisdiction: null
+  principal_consecrator: ulderico-carpegna
+  co_consecrators:
+  - giovanni-tommaso-pinelli
+  - stefano-ugolini
+  status: probable
+  sources:
+  - source: lin-ch-bpalu
+    quote: 2 May 1666 42.9 Ordained Bishop
+  - source: lin-ch-bpalu
+    quote: Ordained Bishop Saint Sylvestre in Capite, Church, Roma, Diocese of Roma {Rome}
+  - source: lin-ch-bpalu
+    quote: >-
+      Principal Consecrator: Ulderico Cardinal Carpegna† Cardinal-Priest of Santa Maria in Trastevere Principal
+      Co-Consecrators: Archbishop Stefano Ugolini† Titular Archbishop of Corinthus Bishop Giovanni Tommaso Pinelli,
+      C.R.† Bishop of Albenga
+  notes: Bispo de Corneto e Montefiascone. Só Catholic-Hierarchy consultada.

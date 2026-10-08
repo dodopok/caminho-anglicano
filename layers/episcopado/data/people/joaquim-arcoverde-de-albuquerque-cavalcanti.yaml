@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: joaquim-arcoverde-de-albuquerque-cavalcanti
+name: Joaquim Arcoverde de Albuquerque Cavalcanti
+ordinations:
+- order: episcopate
+  date: '1890-10-26'
+  place: Roma, Pontifício Colégio Pio Latino-Americano
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: mariano-rampolla-del-tindaro
+  co_consecrators:
+  - antonio-de-macedo-costa
+  - domenico-ferrata
+  status: confirmed
+  sources:
+  - source: lin-ch-barcoverd
+    quote: 26 Oct 1890 40.7 Ordained Bishop
+  - source: lin-ch-barcoverd
+    quote: Ordained Bishop College Pio Latino, Roma, Diocese of Roma {Rome}, Italy
+  - source: lin-ch-barcoverd
+    quote: >-
+      Principal Consecrator: Mariano Cardinal Rampolla del Tindaro† Cardinal-Priest of Santa Cecilia Principal Co-Consecrators:
+      Archbishop Antônio de Macedo Costa† Archbishop of São Salvador da Bahia Archbishop Domenico Ferrata† Titular
+      Archbishop of Thessalonica
+  - source: lin-fiu-1905
+    quote: >-
+      consecrated, October 26, 1890, Rome, by Cardinal Mariano Rampolla del Tindaro, secretary of State, assisted
+      by António de Macedo Costa, archbishop of São Salvador da Bahia, and by Domenico Ferrata, titular archbishop
+      of Tessalonica
+  notes: >-
+    Sagração como bispo de Goiás. Catholic-Hierarchy e Miranda concordam em data, sagrante e co-sagrantes.

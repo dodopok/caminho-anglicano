@@ -3,9 +3,88 @@ id: carlos-duarte-costa
 name: Carlos Duarte Costa
 aliases:
 - Bispo de Maura
-biography: Bispo católico rompido com Roma (fundador da ICAB); sagrou Salomão Ferraz em 1945.
+birth:
+  date: '1888-07-21'
+  sources:
+  - source: lin-ch-bduco
+    quote: Born 21 Jul 1888
+  - source: lin-ch-bduco
+    quote: 26 Mar 1961 72.6 Died
+death:
+  date: '1961-03-26'
+  sources:
+  - source: lin-ch-bduco
+    quote: Born 21 Jul 1888
+  - source: lin-ch-bduco
+    quote: 26 Mar 1961 72.6 Died
+biography: >-
+  Bispo católico romano de Botucatu (1924-1937), excomungado em 1945; fundador da Igreja Católica Apostólica Brasileira.
+  Nasceu em 21/07/1888 e morreu em 26/03/1961 (Rio de Janeiro).
 sources:
-- source: costa2021
-  quote: >-
-    Em 1945 recebeu a consagração episcopal pelas mãos de Carlos Duarte Costa, após o seu rompimento com Roma.
-  page: '66'
+- source: lin-ch-bduco
+  quote: Born 21 Jul 1888
+- source: lin-ch-bduco
+  quote: 26 Mar 1961 72.6 Died
+ordinations:
+- order: presbyterate
+  date: '1911-04-01'
+  jurisdiction: null
+  ordained_by: eduardo-duarte-da-silva
+  status: contested
+  sources:
+  - source: lin-ch-bduco
+    quote: 1 Apr 1911 22.6 Ordained Priest Priest of São Sebastião do Rio de Janeiro, Brazil
+  - source: lin-wp-en-costa
+    quote: >-
+      Duarte Costa served in the cathedral church of Uberaba under his uncle, Dom Eduardo Duarte da Silva, who,
+      on April 1, 1911, ordained Duarte Costa to the priesthood.
+  - source: lin-wp-pt-costa
+    quote: Dom Eduardo Duarte da Silva, que, em 1 de abril de 1911, ordenou Duarte Costa ao sacerdócio.
+  - source: lin-wp-en-costa
+    quote: >-
+      "ordination":{"wt":"4 May 1911"},"ordained_by":{"wt":"[[Joaquim Arcoverde de Albuquerque Cavalcanti]]"}
+  discrepancies:
+  - field: date
+    value: '1911-05-04'
+    sources:
+    - source: lin-wp-en-costa
+      quote: >-
+        "ordination":{"wt":"4 May 1911"},"ordained_by":{"wt":"[[Joaquim Arcoverde de Albuquerque Cavalcanti]]"}
+  - field: ordained_by
+    value: joaquim-arcoverde-de-albuquerque-cavalcanti
+    sources:
+    - source: lin-wp-en-costa
+      quote: >-
+        "ordination":{"wt":"4 May 1911"},"ordained_by":{"wt":"[[Joaquim Arcoverde de Albuquerque Cavalcanti]]"}
+  notes: >-
+    Catholic-Hierarchy dá 1 abr 1911 sem ordenante; o texto da Wikipédia (EN e PT) dá a mesma data e o tio, Eduardo
+    Duarte da Silva, como ordenante. A caixa de informações da Wikipédia EN traz outra versão (4/05/1911, por Joaquim
+    Arcoverde), registrada em separado. Versão da caixa de informações da Wikipédia EN, que diverge do corpo do
+    mesmo artigo (1/04/1911, por Eduardo Duarte da Silva).
+- order: episcopate
+  date: '1924-12-08'
+  place: Rio de Janeiro (catedral)
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: sebastiao-leme-da-silveira-cintra
+  co_consecrators:
+  - alberto-jose-goncalves
+  - benedito-paulo-alves-de-souza
+  status: confirmed
+  sources:
+  - source: lin-ch-bduco
+    quote: 8 Dec 1924 36.3 Ordained Bishop
+  - source: lin-ch-bduco
+    quote: Ordained Bishop Cathedral, Rio de Janeiro, Archdiocese of São Sebastião do Rio de Janeiro, Brazil
+  - source: lin-ch-bduco
+    quote: >-
+      Principal Consecrator: Archbishop Sebastião Leme da Silveira Cintra† Titular Archbishop of Pharsalus Principal
+      Co-Consecrators: Bishop Alberto José Gonçalves† Bishop of Ribeirão Preto Bishop Benedito Paulo Alves de Souza†
+      Bishop of Espírito Santo
+  - source: lin-wp-en-costa
+    quote: >-
+      Episcopal consecration Principal consecrator Sebastião da Silveira Cintra Co-consecrators Alberto José Gonçalves
+      Benedito Paulo Alves de Souza Date 8 December 1924 Place Rio de Janeiro
+  notes: >-
+    Sagração como bispo de Botucatu (nomeado em 4/07/1924). Catholic-Hierarchy e Wikipédia EN concordam em data,
+    local, sagrante e co-sagrantes.

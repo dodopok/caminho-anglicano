@@ -8,6 +8,7 @@ sources:
 ordinations:
 - order: episcopate
   date: '1995-02-26'
+  place: Igreja do Espírito Santo, Oklahoma City, Oklahoma (EUA)
   jurisdiction: ceec
   principal_consecrator: michael-rivers-milner-jr
   status: probable
@@ -16,12 +17,29 @@ ordinations:
     quote: >-
       Michael Rivers Milner Jr. Bishop of The International Free Catholic Communion, who on the 26th of February,
       1995, consecrated Michael D. Owen
+  - source: lin-aoci-hayes
+    quote: >-
+      Primate Garner did on the 5th of January, 1989, in St. Augustine’s American Catholic Church, Brooklyn, New
+      York consecrate Owen J. Augustine Who on the 26th of February, 1995, in the Church of the Holy Spirit, Oklahoma
+      City, Oklahoma, consecrated Michael Owen Bishop of The Communion of Evangelical Episcopal Churches
   - source: iab-poster-linhagem-meira
     quote: >-
       Michael Owen, primeiro primaz da CEEC, foi consagrado em 1995 por um colégio misto de bispos dessas tradições.
+  discrepancies:
+  - field: principal_consecrator
+    value: owen-augustine
+    sources:
+    - source: lin-aoci-hayes
+      quote: >-
+        Primate Garner did on the 5th of January, 1989, in St. Augustine’s American Catholic Church, Brooklyn, New
+        York consecrate Owen J. Augustine Who on the 26th of February, 1995, in the Church of the Holy Spirit, Oklahoma
+        City, Oklahoma, consecrated Michael Owen Bishop of The Communion of Evangelical Episcopal Churches
   notes: >-
     Linha de sucessão autodeclarada pela CEEC (tabela 'Anglican Succession – Table One'); a página lista só o sagrante
-    principal e a data. Não verificada por fonte independente.
+    principal e a data. Não verificada por fonte independente. Versão da lista de sucessão da Apostolic Orthodox
+    Church International (AOCI): Owen Augustine seria o sagrante, com local e data (26/02/1995, Oklahoma City).
+    A própria CEEC (página de sucessão de Russell McClanahan) atribui a sagração de Owen à mesma data a Michael
+    Rivers Milner Jr. Os dois relatos coincidem na data.
 affiliations:
 - jurisdiction: ceec
   role: bishop

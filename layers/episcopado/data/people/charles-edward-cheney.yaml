@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: charles-edward-cheney
+name: Charles Edward Cheney
+ordinations:
+- order: episcopate
+  date: '1873-12-14'
+  place: Christ Church, Chicago, Illinois (EUA)
+  jurisdiction: rec
+  office: diocesan
+  principal_consecrator: george-david-cummins
+  status: confirmed
+  sources:
+  - source: lin-fce-lista
+    quote: >-
+      5. CHARLES EDWARD CHENEY DD STD was consecrated by Bishop Cummins assisted by five Presbyters in Christ Church,
+      Chicago, Illinois, 14 December 1873. Died 1916.
+  notes: Assistido por cinco presbíteros.

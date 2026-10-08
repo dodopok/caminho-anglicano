@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: cyril-milner
+name: Cyril Milner
+ordinations:
+- order: episcopate
+  date: '1973-08-29'
+  place: Igreja de São Paulo, Fleetwood, Lancashire (Inglaterra)
+  jurisdiction: fce
+  office: diocesan
+  principal_consecrator: thomas-cameron
+  co_consecrators:
+  - james-dudley-burrell
+  - william-charles-watkins
+  status: confirmed
+  sources:
+  - source: lin-fce-lista
+    quote: >-
+      35. CYRIL MILNER FTh DD was consecrated by Bishops Cameron, Burrell and Watkins, assisted by several Presbyters,
+      at St Paul’s Church, Fleetwood, Lancs., on 29 August 1973. Died 1998.
+  notes: Morreu em 1998.
