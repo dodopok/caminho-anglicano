@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ilma-oliveira-rios
+name: Ilma Oliveira Rios
+ordinations:
+- order: diaconate
+  date: 2010-05
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: maio de 2010.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+- order: presbyterate
+  date: '2017-06-11'
+  jurisdiction: null
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Presbiterado: 11 de junho de 2017.'
+  - source: rta-livro35
+    quote: fui ordenada Presbítera a 11 de junho de 2017
+  notes: >-
+    Ordenação presbiteral ocorrida na Igreja Lusitana (Portugal), segundo a própria clériga, que havia sido ordenada
+    diácona na IEAB. Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres
+    na IEAB' (2021).

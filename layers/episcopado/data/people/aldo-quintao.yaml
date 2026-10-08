@@ -75,6 +75,10 @@ affiliations:
       secretário‑geral da entidade.
   - source: lq-vejasp-2016
     quote: Aldo Quintão comemora que seis colegas o acompanharam na cisão
+  - source: rta-alesp-2018-integra
+    quote: Narra sua chegada à Igreja Anglicana, há 23 anos.
+  - source: rta-alesp-2018-integra
+    quote: Entrando na Igreja Anglicana, e já ordenado sacerdote, estudou e morou em Toronto, no Canadá.
   notes: >-
     A IEAB descreve o desligamento como 'abandono de comunhão' declarado pelo Bispo Primaz em 17/04/2013. A Catedral,
     por sua vez, afirma em carta aberta de 19/04/2013 que sua filiação à igreja nacional era apenas espiritual e
@@ -82,7 +86,18 @@ affiliations:
     datam o desligamento formal em 06/04/2013 (alteração de estatutos). Local: Catedral Anglicana de São Paulo.
     Segundo a Veja São Paulo (16/12/2016), Aldo assumiu a paróquia (Catedral, Alto da Boa Vista) em 1998, depois
     de um curso no Canadá, e rompeu com a IEAB quinze anos depois. Esta data de 1998 contrasta com a fala de Aldo
-    na Alesp em 2018, noticiada como 'cerca de 23 anos' de Igreja Anglicana (c. 1995), página não verificada.
+    na Alesp em 2018, noticiada como 'cerca de 23 anos' de Igreja Anglicana (c. 1995), página não verificada. Em
+    19/03/2018 Quintão, então pároco da Catedral Anglicana de São Paulo, diz ter chegado à Igreja Anglicana 'há
+    23 anos' (c. 1995) e menciona que o reverendo César foi ordenado na mesma época com sermão de Monsenhor Tarcísio
+    Loro. A Veja SP (2016) indica que assumiu a paróquia da Zona Sul em 1998.
+  discrepancies:
+  - field: start
+    value: c.1995
+    sources:
+    - source: rta-alesp-2018-integra
+      quote: Narra sua chegada à Igreja Anglicana, há 23 anos.
+    - source: rta-alesp-2018-integra
+      quote: Entrando na Igreja Anglicana, e já ordenado sacerdote, estudou e morou em Toronto, no Canadá.
 - jurisdiction: ieab-dasp
   role: clergy
   start: '1998'
@@ -171,6 +186,17 @@ affiliations:
       Com o acirramento das tensões entre o bispo diocesano e a Diocese, em 13 de março de 2013 a Catedral Anglicana
       de São Paulo, junto com outras comunidades, organizou o Movimento Anglicano no Brasil (MAnB).
     page: '147'
+- jurisdiction: manb
+  role: other
+  role_description: deão da Catedral Anglicana de São Paulo
+  status: confirmed
+  sources:
+  - source: rta-alesp-2015-ementa
+    quote: Deão da Catedral e presidente do Instituto Anglicano, saúda os presentes.
+  notes: >-
+    Local: Diocese Anglicana de São Paulo. Na sessão solene da Alesp de 07/12/2015, em homenagem à Catedral Anglicana
+    de São Paulo e à Diocese do Movimento Anglicano no Brasil, Quintão é identificado como deão da Catedral e presidente
+    do Instituto Anglicano; na de 19/03/2018 aparece como pároco.
 events:
 - type: other
   date: 2012-12

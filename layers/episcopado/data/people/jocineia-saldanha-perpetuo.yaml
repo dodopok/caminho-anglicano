@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jocineia-saldanha-perpetuo
+name: Jocinéia Saldanha Perpetuo
+ordinations:
+- order: diaconate
+  date: '2002-12-08'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 8 de dezembro de 2002.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+- order: presbyterate
+  date: '2003-11-30'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Presbiterado: 30 de novembro de 2003.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).

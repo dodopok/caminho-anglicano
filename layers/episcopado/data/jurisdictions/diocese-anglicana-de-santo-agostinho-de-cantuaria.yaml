@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-de-santo-agostinho-de-cantuaria
+name: Diocese Anglicana de Santo Agostinho de Cantuária
+type: diocese
+relations:
+- type: part_of
+  target: iaab
+  status: probable
+  sources:
+  - source: rta-abulense-historia
+    quote: O Bispo Maia, ordenado e sagrado pela CCC
+  - source: rta-abulense-historia
+    quote: Tendo por meio dele chegado ao Brasil, governada no ano de 2005 pelo Bispo Maia

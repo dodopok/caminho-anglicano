@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rafael-paz
+name: Rafael Paz
+biography: >-
+  Presbítero listado(a) na equipe pastoral da diocese liderada por Márcio Simões (IAB), vinculado(a) à Igreja Anglicana
+  Família.
+sources:
+- source: dv-pastores
+  quote: Rev. Rafael Paz Igreja Anglicana Família
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: dv-pastores
+    quote: Rev. Rafael Paz Igreja Anglicana Família
+  notes: 'Local: Igreja Anglicana Família. Lista da equipe pastoral no site da diocese; sem datas.'

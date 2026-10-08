@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: bruce-coker-causey
+name: Bruce Coker Causey
+biography: >-
+  Clérigo dos distritos missionários do Brasil na edição de 1956 do anuário do clero (Brasil Central (Porto Alegre)).
+sources:
+- source: rta-ecd1956
+  quote: CAUSEY, Bruce Coker (C.Bra.)
+ordinations:
+- order: diaconate
+  date: 1951-06
+  jurisdiction: tec
+  status: confirmed
+  sources:
+  - source: rta-ecd1956
+    quote: D—June, 1951, P—Feb., 1952, Bp. N. C. Powell
+  notes: Datas do verbete do anuário; o bispo ordenante aparece abreviado no texto.
+- order: presbyterate
+  date: 1952-02
+  jurisdiction: tec
+  status: confirmed
+  sources:
+  - source: rta-ecd1956
+    quote: D—June, 1951, P—Feb., 1952, Bp. N. C. Powell
+  notes: Datas do verbete do anuário; o bispo ordenante aparece abreviado no texto.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: rta-ecd1956
+    quote: CAUSEY, Bruce Coker (C.Bra.)
+  notes: 'Local: Brasil Central, Porto Alegre. Verbete da edição de 1956.'

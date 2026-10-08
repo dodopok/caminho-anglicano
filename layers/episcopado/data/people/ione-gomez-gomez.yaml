@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ione-gomez-gomez
+name: Ione Gomez Gomez
+ordinations:
+- order: diaconate
+  date: '2012-03-03'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 3 de março de 2012.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).

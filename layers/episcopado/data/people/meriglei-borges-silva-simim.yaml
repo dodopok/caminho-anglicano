@@ -90,6 +90,12 @@ ordinations:
     quote: >-
       Devido às proporções do acontecimento, a cerimônia ocorreu no Ginásio do Esporte Clube Cruzeiro. Meriglei
       foi sagrada pelo Bispo Primaz, Naudal Alves Gomes
+  - source: rta-dpopular-meriglei
+    quote: Cerimônia será no domingo
+  - source: rta-dpopular-meriglei
+    quote: no domingo, 13 bispos estarão reunidos em Canguçu juntamente com Meriglei
+  - source: rta-dpopular-meriglei
+    quote: Serão nove brasileiros, dois eméritos e uma bispa dos Estados Unidos, Catherine Waynick
   discrepancies:
   - field: place
     value: Ginásio do Esporte Clube Cruzeiro, Canguçu (RS)
@@ -112,6 +118,12 @@ ordinations:
   - field: place
     value: Canguçu (RS)
     sources:
+    - source: rta-dpopular-meriglei
+      quote: Cerimônia será no domingo
+    - source: rta-dpopular-meriglei
+      quote: no domingo, 13 bispos estarão reunidos em Canguçu juntamente com Meriglei
+    - source: rta-dpopular-meriglei
+      quote: Serão nove brasileiros, dois eméritos e uma bispa dos Estados Unidos, Catherine Waynick
     - source: costa2021
       quote: >-
         Meriglei foi sagrada pelo Bispo Primaz, Naudal Gomes, em 17 de novembro de 2019, na sua cidade natal, Canguçu.
@@ -120,7 +132,10 @@ ordinations:
     O cabeçalho da mesma biografia diz "Episcopado: 19 de novembro de 2019" e a legenda de uma fotografia do livro
     diz "15 de novembro, 2019"; o texto e a notícia de 2019 indicam 17 de novembro (domingo). Eleita em 27/04/2019;
     posse em 14/03/2020. Grafias: Simim / Simin / Mariglei. Confirma o sagrante da Wikipedia PT por fonte autoral
-    (Costa). Co-sagrantes não informados.
+    (Costa). Reportagem publicada na quarta-feira 13/11/2019 anuncia a sagração para o domingo seguinte (17/11/2019),
+    com 13 bispos presentes, entre eles nove brasileiros, dois eméritos e a bispa norte-americana Catherine Waynick;
+    diz também que, em abril de 2019, Meriglei foi eleita para a diocese de Pelotas com mais de 95% dos votos. Texto
+    obtido por OCR de recorte de jornal. Co-sagrantes não informados.
 affiliations:
 - jurisdiction: ieab
   role: clergy

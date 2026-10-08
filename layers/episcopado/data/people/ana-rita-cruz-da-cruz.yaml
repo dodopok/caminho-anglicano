@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ana-rita-cruz-da-cruz
+name: Ana Rita Cruz da Cruz
+ordinations:
+- order: diaconate
+  date: '2008-09-28'
+  place: Paróquia do Espírito Santo, Montenegro (Diocese Meridional)
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 28 de setembro de 2008.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+- order: presbyterate
+  date: '2011-10-30'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Presbiterado: 30 de outubro de 2011.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).

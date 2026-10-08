@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: zoar-coimbra-goncalves
+name: Zoar Coimbra Gonçalves
+ordinations:
+- order: diaconate
+  date: '2003-11-22'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 22 de novembro de 2003.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).

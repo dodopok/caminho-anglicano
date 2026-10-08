@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: albino-alfredo-winkler
+name: Albino Alfredo Winkler
+full_name: Albino Alfredo Winkler
+birth:
+  date: '1912-06-15'
+  sources:
+  - source: rta-ecd1962
+    quote: b RGS Braz 15 June 12
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Meridional, nascido no Rio Grande do Sul em 1912; ordenado diácono em
+  dez/1941 e presbítero em fev/1943 pelo bispo W. M. M. Thomas.
+sources:
+- source: rta-ecd1962
+  quote: b RGS Braz 15 June 12
+ordinations:
+- order: diaconate
+  date: 1941-12
+  jurisdiction: ieab
+  ordained_by: william-morris-morrison-thomas
+  status: probable
+  sources:
+  - source: rta-ecd1962
+    quote: D Dec 41 P Feb 43 Bp W M M Thomas
+  notes: '''Bp W M M Thomas'' vale para as duas ordenações no diretório.'
+- order: presbyterate
+  date: 1943-02
+  jurisdiction: ieab
+  ordained_by: william-morris-morrison-thomas
+  status: probable
+  sources:
+  - source: rta-ecd1962
+    quote: D Dec 41 P Feb 43 Bp W M M Thomas
+  notes: Ver nota do diaconato.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1941'
+  status: probable
+  sources:
+  - source: rta-ecd1962
+    quote: WINKLER, ALBINO ALFREDO (SBra) Caixa Postal 965, Porto Alegre, RGS
+  notes: >-
+    Local: Brasil Meridional, Rio Grande do Sul. Sigla do distrito 'SBra'. Atuou em Jaguarão (1942-47), Pelotas
+    (1951-52), Colônia Ramos (1953-54, 1957), Porto Alegre e Viamão.

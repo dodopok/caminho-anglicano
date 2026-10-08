@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: djalson-bezerra-de-albuquerque
+name: Djalson Bezerra de Albuquerque
+birth:
+  date: '1968-08-28'
+  sources:
+  - source: rta-ivcm-clerigos
+    quote: >-
+      Djalson Bezerra de Albuquerque Nasc. 28/08/1968 Grau/Ordem Presbítero Missão Cidade da Esperança Acolhido
+      em 24/09/2026 Ofício Vigário Paroquial
+biography: >-
+  Presbítero da Igreja Veterocatólica Missionária (missão: Cidade da Esperança), acolhido em 2026-09-24.
+sources:
+- source: rta-ivcm-clerigos
+  quote: >-
+    Djalson Bezerra de Albuquerque Nasc. 28/08/1968 Grau/Ordem Presbítero Missão Cidade da Esperança Acolhido em
+    24/09/2026 Ofício Vigário Paroquial
+affiliations:
+- jurisdiction: ivcmb
+  role: clergy
+  start: '2026-09-24'
+  status: confirmed
+  sources:
+  - source: rta-ivcm-clerigos
+    quote: >-
+      Djalson Bezerra de Albuquerque Nasc. 28/08/1968 Grau/Ordem Presbítero Missão Cidade da Esperança Acolhido
+      em 24/09/2026 Ofício Vigário Paroquial
+  notes: 'Local: Cidade da Esperança. Ofício informado: Vigário Paroquial.'

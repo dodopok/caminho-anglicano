@@ -1,38 +1,62 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: paulo-dalfollo
-name: Paulo Dalfollo
+name: Paulo Dallfollo
 full_name: Paulo Dallfollo
 aliases:
 - DALLFOLLO, PAULO
-- Paulo Dallfollo
+- Paulo Dalfollo
+- Paulo Dalfolo
+birth:
+  date: '1926-09-18'
+  sources:
+  - source: rta-ecd1962
+    quote: b Santa Maria Braz 18 Sep 26
 biography: >-
-  Clérigo listado na relação de depostos do Clerical Directory de 1965 (período 1962-set. 1964), deposto pelo Bispo
-  E. K. Sherrill em 27/08/1962. O verbete não indica jurisdição; a identificação com o diácono brasileiro Paulo
-  Dalfollo (1950) é provável pelo nome e pelo bispo.
+  Clérigo do Distrito Missionário do Brasil Central, nascido em Santa Maria (RS) em 1926; ordenado diácono em 1950
+  e presbítero em 1951 pelo bispo Krischke; reitor em São Gabriel e no Rio de Janeiro.
 sources:
-- source: cd1965
-  quote: DALLFOLLO, PAULO, by Rt Rev E K Sherrill, 27 Aug 62
+- source: rta-ecd1962
+  quote: b Santa Maria Braz 18 Sep 26
 ordinations:
 - order: diaconate
-  date: '1950'
+  date: 1950-03
   jurisdiction: ieab
+  ordained_by: egmont-krischke
   status: probable
   sources:
+  - source: rta-ecd1962
+    quote: D Mar 50 P Feb 51 Bp Krischke
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1950 - … Paulo Dalfollo
     page: '370'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    O diretório lista 'Bp Krischke' como bispo para ambas as ordenações (o diaconato em mar/1950 e o presbiterato
+    em fev/1951). Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante
+    não informado.
+- order: presbyterate
+  date: 1951-02
+  jurisdiction: ieab
+  ordained_by: egmont-krischke
+  status: probable
+  sources:
+  - source: rta-ecd1962
+    quote: D Mar 50 P Feb 51 Bp Krischke
+  notes: Ver nota do diaconato.
 affiliations:
 - jurisdiction: ieab
   role: clergy
   start: '1950'
   status: probable
   sources:
+  - source: rta-ecd1962
+    quote: DALLFOLLO, PAULO (CBra) Real Grandeza 99, Botafogo, Braz
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1950 - … Paulo Dalfollo
     page: '370'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Local: Brasil Central, Rio de Janeiro. Sigla do distrito 'CBra' (Brasil Central). Atuou em Bagé (1950-51), São
+    Gabriel (1951-56) e Rio de Janeiro (1956-60). Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início
+    = ano do diaconato.
 events:
 - type: other
   date: '1962-08-27'

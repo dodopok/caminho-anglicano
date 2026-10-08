@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: claudia-paes
+name: Cláudia Paes
+aliases:
+- Revda. Cláudia Paes
+biography: >-
+  Presbítera listado(a) na equipe pastoral da diocese liderada por Márcio Simões (IAB), vinculado(a) à Igreja Anglicana
+  Família.
+sources:
+- source: dv-pastores
+  quote: Revda. Cláudia Paes Igreja Anglicana Família
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: dv-pastores
+    quote: Revda. Cláudia Paes Igreja Anglicana Família
+  notes: 'Local: Igreja Anglicana Família. Lista da equipe pastoral no site da diocese; sem datas.'

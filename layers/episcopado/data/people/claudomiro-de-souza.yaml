@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: claudomiro-de-souza
+name: Claudomiro de Souza
+birth:
+  date: '1969-11-15'
+  sources:
+  - source: rta-ivcm-clerigos
+    quote: >-
+      Claudomiro de Souza Nasc. 15/11/1969 Grau/Ordem Presbítero Missão Assis Acolhido em 01/08/2023 Ofício Pároco
+biography: 'Presbítero da Igreja Veterocatólica Missionária (missão: Assis), acolhido em 2023-08-01.'
+sources:
+- source: rta-ivcm-clerigos
+  quote: >-
+    Claudomiro de Souza Nasc. 15/11/1969 Grau/Ordem Presbítero Missão Assis Acolhido em 01/08/2023 Ofício Pároco
+affiliations:
+- jurisdiction: ivcmb
+  role: clergy
+  start: '2023-08-01'
+  status: confirmed
+  sources:
+  - source: rta-ivcm-clerigos
+    quote: >-
+      Claudomiro de Souza Nasc. 15/11/1969 Grau/Ordem Presbítero Missão Assis Acolhido em 01/08/2023 Ofício Pároco
+  notes: 'Local: Assis. Ofício informado: Pároco.'

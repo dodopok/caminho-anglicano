@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jesse-krebs-appel
+name: Jesse Krebs Appel
+birth:
+  date: '1909-01-13'
+  sources:
+  - source: rta-ecd1950
+    quote: APPEL, Jesse Krebs (S.Bra.), Caixa 1499, Porto Alegre
+  - source: rta-ecd1962
+    quote: APPEL, JESSE KREBS (SBra) born 13 Jan 09—died 29 Jul 60
+death:
+  date: '1960-07-29'
+  sources:
+  - source: rta-ecd1950
+    quote: APPEL, Jesse Krebs (S.Bra.), Caixa 1499, Porto Alegre
+  - source: rta-ecd1962
+    quote: APPEL, JESSE KREBS (SBra) born 13 Jan 09—died 29 Jul 60
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Meridional, reitor da Igreja da Trindade em Porto Alegre (1936-); ordenado
+  diácono em nov/1930 e presbítero em ago/1933 pelo bispo Thomas; falecido em 29/07/1960.
+sources:
+- source: rta-ecd1950
+  quote: APPEL, Jesse Krebs (S.Bra.), Caixa 1499, Porto Alegre
+- source: rta-ecd1962
+  quote: APPEL, JESSE KREBS (SBra) born 13 Jan 09—died 29 Jul 60
+ordinations:
+- order: diaconate
+  date: 1930-11
+  jurisdiction: ieab
+  ordained_by: william-morris-morrison-thomas
+  status: confirmed
+  sources:
+  - source: rta-ecd1950
+    quote: D— Nov., 1930, P—Aug., 1933, Bp. Thomas
+  notes: Datas e bispo do verbete do anuário de 1950; 'Bp. Thomas' vale para as duas ordenações.
+- order: presbyterate
+  date: 1933-08
+  jurisdiction: ieab
+  ordained_by: william-morris-morrison-thomas
+  status: confirmed
+  sources:
+  - source: rta-ecd1950
+    quote: D— Nov., 1930, P—Aug., 1933, Bp. Thomas
+  notes: Datas e bispo do verbete do anuário de 1950; 'Bp. Thomas' vale para as duas ordenações.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1930'
+  end: '1960-07-29'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: rta-ecd1950
+    quote: APPEL, Jesse Krebs (S.Bra.), Caixa 1499, Porto Alegre
+  notes: 'Local: Brasil Meridional, Porto Alegre. Verbete de 1950.'

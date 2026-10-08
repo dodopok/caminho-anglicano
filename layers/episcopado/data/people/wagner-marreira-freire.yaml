@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: wagner-marreira-freire
+name: Wagner Marreira Freire
+birth:
+  date: '1979-07-19'
+  sources:
+  - source: rta-ivcm-clerigos
+    quote: >-
+      Wagner Marreira Freire Nasc. 19/07/1979 Grau/Ordem Presbítero Missão Floramar / BH Acolhido em 09/01/2024
+      Ofício Monsenhor
+biography: 'Presbítero da Igreja Veterocatólica Missionária (missão: Floramar / BH), acolhido em 2024-01-09.'
+sources:
+- source: rta-ivcm-clerigos
+  quote: >-
+    Wagner Marreira Freire Nasc. 19/07/1979 Grau/Ordem Presbítero Missão Floramar / BH Acolhido em 09/01/2024 Ofício
+    Monsenhor
+affiliations:
+- jurisdiction: ivcmb
+  role: clergy
+  start: '2024-01-09'
+  status: confirmed
+  sources:
+  - source: rta-ivcm-clerigos
+    quote: >-
+      Wagner Marreira Freire Nasc. 19/07/1979 Grau/Ordem Presbítero Missão Floramar / BH Acolhido em 09/01/2024
+      Ofício Monsenhor
+  notes: 'Local: Floramar / BH. Ofício informado: Monsenhor.'

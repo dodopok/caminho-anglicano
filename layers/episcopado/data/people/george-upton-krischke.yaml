@@ -19,16 +19,37 @@ sources:
     his father, the Rev. George -Upt Krischke, was one of the first native so of the Brazilian Church to be ordained.
 ordinations:
 - order: diaconate
-  date: '1906'
-  jurisdiction: null
-  status: probable
+  date: '1906-09-09'
+  jurisdiction: ieab
+  ordained_by: lucien-lee-kinsolving
+  status: confirmed
   sources:
+  - source: rta-ecd1941
+    quote: D—Sept. 9, 1906, P—July 14, 1907, Bp. L. L. Kinsolving
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1906 - … George Upton Krischke
     page: '369'
   notes: >-
+    Datas e bispo do verbete do anuário; 'Bp.' no verbete vale para as duas ordenações quando citado uma só vez.
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1907-07-14'
+  jurisdiction: ieab
+  ordained_by: lucien-lee-kinsolving
+  status: confirmed
+  sources:
+  - source: rta-ecd1941
+    quote: D—Sept. 9, 1906, P—July 14, 1907, Bp. L. L. Kinsolving
+  notes: >-
+    Datas e bispo do verbete do anuário; 'Bp.' no verbete vale para as duas ordenações quando citado uma só vez.
 affiliations:
+- jurisdiction: ieab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: rta-ecd1941
+    quote: KRISCHKE, George Upton (S.Bra.)
+  notes: 'Local: Brasil Meridional, São Leopoldo, RS. Verbete da edição de 1941.'
 - jurisdiction: dmsb
   role: clergy
   start: c.1906

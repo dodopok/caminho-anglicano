@@ -3,14 +3,18 @@ id: gessi-datsch-rodio
 name: Gessi Datsch Rodio
 ordinations:
 - order: diaconate
-  date: '2019'
+  date: '2019-10-13'
   place: Paróquia Agnus Dei, Santa Catarina
   jurisdiction: ieab
-  status: probable
+  status: confirmed
   sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 13 de outubro de 2019.'
   - source: ieab-2024-gessi
     quote: Em 2019 eu fui ordenada Diácona na paróquia Agnus Dei, Santa Catarina, Diocese Sul Ocidental.
-  notes: Diocese Sul-Ocidental. Relato pessoal publicado pela IEAB; ordenante não informado.
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+    Diocese Sul-Ocidental. Relato pessoal publicado pela IEAB; ordenante não informado.
 - order: presbyterate
   date: '2024-04-13'
   place: Paróquia da Anunciação, Campo Verde (MT)

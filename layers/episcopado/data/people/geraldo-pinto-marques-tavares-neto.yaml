@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: geraldo-pinto-marques-tavares-neto
+name: Geraldo Pinto Marques Tavares Neto
+biography: Clérigo da Igreja Anglicana Mundial (WAC), Província do Brasil, em São José do Rio Preto (SP).
+sources:
+- source: rta-wacbr-cleros
+  quote: >-
+    Reverendo Geraldo Pinto Marques Tavares Neto Cidade: São José do Rio Preto - SP Ordenação: Diaconal: 03/12/2011
+    Ordenação Presbiteral: 30/07/2023
+ordinations:
+- order: diaconate
+  date: '2011-12-03'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Geraldo Pinto Marques Tavares Neto Cidade: São José do Rio Preto - SP Ordenação: Diaconal: 03/12/2011
+      Ordenação Presbiteral: 30/07/2023
+  notes: Data informada na lista de clérigos do site da própria província; sem ordenante nem local.
+- order: presbyterate
+  date: '2023-07-30'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Geraldo Pinto Marques Tavares Neto Cidade: São José do Rio Preto - SP Ordenação: Diaconal: 03/12/2011
+      Ordenação Presbiteral: 30/07/2023
+  notes: Data informada na lista de clérigos do site da própria província; sem ordenante nem local.
+affiliations:
+- jurisdiction: wac-br
+  role: clergy
+  status: confirmed
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Geraldo Pinto Marques Tavares Neto Cidade: São José do Rio Preto - SP Ordenação: Diaconal: 03/12/2011
+      Ordenação Presbiteral: 30/07/2023
+  notes: 'Local: São José do Rio Preto, SP. Consta na lista de clérigos do site da WAC-BR.'

@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: miguel-fama
+name: Miguel Fama
+aliases:
+- Reverendo Miguel Fama
+birth:
+  date: '1968'
+  sources:
+  - source: rta-bompastor-cerquilho
+    quote: Foi ordenado Sacerdote na cidade de Sorocaba.
+biography: >-
+  Sacerdote em Cerquilho (SP), nascido em 1968 em São Miguel Arcanjo; segundo seu site, foi ordenado sacerdote em
+  Sorocaba em 1999 e hoje administra a Igreja Anglicana Bom Pastor e preside o Conselho de Presbíteros da Diocese
+  Anglicana do Brasil.
+sources:
+- source: rta-bompastor-cerquilho
+  quote: Foi ordenado Sacerdote na cidade de Sorocaba.
+ordinations:
+- order: presbyterate
+  date: '1999'
+  place: Sorocaba (SP)
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: rta-bompastor-cerquilho
+    quote: 1999 Foi ordenado Sacerdote na cidade de Sorocaba.
+  notes: >-
+    Cronologia da página; não informa em que igreja nem por quem foi ordenado (a mesma cronologia diz que em 1982
+    entrou para o seminário e fez Filosofia em Sorocaba e Teologia em São Paulo).
+affiliations:
+- jurisdiction: danb
+  role: clergy
+  status: probable
+  sources:
+  - source: rta-bompastor-cerquilho
+    quote: >-
+      é o administrador da Igreja Anglicana Bom Pastor de Cerquilho, Presidente do Conselho de Presbítero da Diocese
+      Anglicana do Brasil e Presidente do Instituto Anglicano Bom Pastor
+  notes: >-
+    A página diz que a Igreja Anglicana Bom Pastor de Cerquilho foi 'Fundada em 2022'. Não cita Megino Carneiro
+    Souza nem faz referência a bispo.

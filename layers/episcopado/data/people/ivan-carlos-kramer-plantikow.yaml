@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ivan-carlos-kramer-plantikow
+name: Ivan Carlos Kramer Plantikow
+birth:
+  date: '1988-12-05'
+  sources:
+  - source: rta-ivcm-clerigos
+    quote: >-
+      Ivan Carlos Kramer Plantikow Nasc. 05/12/1988 Grau/Ordem Presbítero Missão Rondônia Acolhido em 24/07/2024
+      Ofício Capelão
+biography: 'Presbítero da Igreja Veterocatólica Missionária (missão: Rondônia), acolhido em 2024-07-24.'
+sources:
+- source: rta-ivcm-clerigos
+  quote: >-
+    Ivan Carlos Kramer Plantikow Nasc. 05/12/1988 Grau/Ordem Presbítero Missão Rondônia Acolhido em 24/07/2024 Ofício
+    Capelão
+affiliations:
+- jurisdiction: ivcmb
+  role: clergy
+  start: '2024-07-24'
+  status: confirmed
+  sources:
+  - source: rta-ivcm-clerigos
+    quote: >-
+      Ivan Carlos Kramer Plantikow Nasc. 05/12/1988 Grau/Ordem Presbítero Missão Rondônia Acolhido em 24/07/2024
+      Ofício Capelão
+  notes: 'Local: Rondônia. Ofício informado: Capelão.'

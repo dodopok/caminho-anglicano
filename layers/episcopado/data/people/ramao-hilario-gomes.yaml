@@ -22,25 +22,40 @@ sources:
   quote: GOMES, RAMAO HILARIO (SwBra) born 31 Aug 92-died 9 May
 ordinations:
 - order: diaconate
-  date: '1944'
-  jurisdiction: dmsb
-  status: probable
+  date: 1944-04
+  jurisdiction: ieab
+  status: confirmed
   sources:
+  - source: rta-ecd1956
+    quote: D—Apr., 1944, Bp. W. M. M. Thomas, P—Nov., 1946, Bp. Pithan
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1944 - … Ramão Hilário Gomes
     page: '370'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Datas do verbete do anuário; o bispo ordenante aparece abreviado no texto. Ano tirado da lista do clero nacional
+    por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1946-11
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-ecd1956
+    quote: D—Apr., 1944, Bp. W. M. M. Thomas, P—Nov., 1946, Bp. Pithan
+  notes: Datas do verbete do anuário; o bispo ordenante aparece abreviado no texto.
 affiliations:
 - jurisdiction: ieab
   role: clergy
   start: '1944'
-  status: probable
+  status: confirmed
   sources:
+  - source: rta-ecd1956
+    quote: GOMES, Ramao Hilario (Sw.Bra.)
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1944 - … Ramão Hilário Gomes
     page: '370'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Local: Brasil Sudoeste, Porto Alegre. Verbete da edição de 1956. Consta da lista do clero nacional da IEAB (Kickhöfel,
+    1995); início = ano do diaconato.
 - jurisdiction: dmsob
   role: clergy
   end: '1964-05-09'
