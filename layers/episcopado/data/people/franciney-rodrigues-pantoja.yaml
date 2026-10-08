@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: franciney-rodrigues-pantoja
+name: Franciney Rodrigues Pantoja
+biography: Bispo da Diocese Católica Anglicana do Baixo Tocantins (ICA).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Diocese Católica Anglicana do Baixo Tocantins, com o bispo Franciney
+  page: '138'
+affiliations:
+- jurisdiction: ica
+  role: bishop
+  diocese: diocese-catolica-anglicana-do-baixo-tocantins
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Católica Anglicana do Baixo Tocantins, com o bispo Franciney
+    page: '138'

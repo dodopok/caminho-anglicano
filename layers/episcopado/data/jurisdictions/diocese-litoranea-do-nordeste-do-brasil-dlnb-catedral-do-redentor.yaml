@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-litoranea-do-nordeste-do-brasil-dlnb-catedral-do-redentor
+name: Diocese Litorânea do Nordeste do Brasil (DLNB), Catedral do Redentor
+type: diocese
+relations:
+- type: part_of
+  target: iceb
+  status: confirmed
+  sources:
+  - source: ciceb-quemsomos
+    quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo Helson Paulo Cruz)

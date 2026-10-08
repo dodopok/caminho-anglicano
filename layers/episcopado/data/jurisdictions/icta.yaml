@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: icta
+acronym: ICTA
+name: Igreja Católica de Tradição Anglicana no Brasil
+type: national_church
+country: BR
+description: >-
+  Igreja independente liderada pelo primaz Lucas Oliva Bertolozzi, sediada no Oratório de Nossa Senhora das Almas
+  (São Paulo, SP).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja Católica de Tradição Anglicana no Brasil tem origem na figura do bispo Lucas Oliva Bertolozzi, que
+    atua como seu Primaz
+  page: '142'

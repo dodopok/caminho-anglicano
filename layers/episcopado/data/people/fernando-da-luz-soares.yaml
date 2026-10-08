@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: fernando-da-luz-soares
+name: Fernando da Luz Soares
+aliases:
+- Fernando Soares
+biography: Bispo da Igreja Lusitana (Portugal); co-sagrante de Hiroshi Ito (2002).
+sources:
+- source: costa2021
+  quote: Fernando Soares (Igreja Lusitana, Portugal)
+ordinations:
+- order: episcopate
+  date: '1980-05-01'
+  jurisdiction: null
+  office: auxiliary
+  status: confirmed
+  sources:
+  - source: ia-gc-journal-1982
+    quote: The Rt. Rev. Fernando da Luz Soares, as Auxiliary Bishop of the Lusitanian Church, Portugal.
+  notes: >-
+    Notificação ao Presiding Bishop (data, sem sagrante). Fernando Soares foi co-sagrante de Hiroshi Ito (2002).
+events:
+- type: other
+  date: '2008'
+  description: >-
+    Comemoração em Lisboa (2008) dos 50 anos da sagração do primeiro bispo da Igreja Lusitana, Antonio Ferreira
+    Fiandor, "que teve como bispo sagrante dom Plínio Lauer Simões".
+  status: confirmed
+  sources:
+  - source: cant-ec-2008-05
+    quote: >-
+      das atividades comemorativas dos 50 anos de sagração do primeiro bispo em Portugal, dom Luiz Fiandor, que
+      teve como bispo sagrante dom Plínio Lauer Simões.

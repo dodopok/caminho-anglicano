@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: luiz-coelho
+name: Luiz Coelho
+biography: Reitor da Paróquia São Lucas (DARJ) após a saída do templo de Botafogo.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Depois da saída da comunidade do templo de Botafogo, tem como atual reitor o reverendo Luiz Coelho.
+  page: '100'
+affiliations:
+- jurisdiction: ieab-darj
+  role: other
+  role_description: reitor
+  start: '2016'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Depois da saída da comunidade do templo de Botafogo, tem como atual reitor o reverendo Luiz Coelho.
+    page: '100'
+  notes: 'Local: Paróquia São Lucas, Rio de Janeiro.'

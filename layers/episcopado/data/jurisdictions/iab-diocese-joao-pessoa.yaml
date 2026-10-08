@@ -1,0 +1,165 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iab-diocese-joao-pessoa
+name: Diocese de João Pessoa (IAB)
+aliases:
+- Diocese de João Pessoa
+- Diocese de João Pessoa (Catedral Comunhão)
+- Diocese de João Pessoa (Igreja Anglicana no Brasil)
+- Diocese de João Pessoa (Região Sudeste)
+- Diocese de João Pessoa (auxiliar)
+- Diocese de João Pessoa (bispo auxiliar, Região Sudeste)
+type: diocese
+tradition: anglican
+country: BR
+founded:
+  date: '2018-04-27'
+  sources:
+  - source: djp-sobre-nos
+    quote: >-
+      A Diocese de João Pessoa é fruto da multiplicação da Diocese de Recife. No dia 27 de abril de 2018, na época
+      com apenas dezenove igrejas, vinte e cinco clérigos
+  - source: djp-sobre-nos
+    quote: >-
+      na Paraíba, que se expandiu para o Rio Grande do Norte, Ceará e, hoje, com as igrejas na região sudeste, já
+      somos mais de 30 igrejas que compõem a Diocese de João Pessoa
+  - source: djp-home-2026
+    quote: Rua André Dias, S/N – Aeroclube Bessa – João Pessoa PB
+  discrepancies:
+  - field: date
+    value: '2018-05-12'
+    sources:
+    - source: iab-church-planting-bishops
+      quote: Bishop Marcio Meira – Diocese of Joao Pessoa
+website: https://djpanglicananobrasil.com/
+description: >-
+  Diocese desmembrada da Diocese de Recife em 27/04/2018, com sé na Catedral Anglicana Comunhão (Bessa, João Pessoa-PB);
+  bispo diocesano Márcio Meira. Abrangia PB, RN, CE e igrejas no Sudeste. Em 2026 passou a ser chamada, nas redes
+  oficiais, "Diocese Anglicana Família" (ver IAB-Familia); o site djpanglicananobrasil.com ainda usava "Diocese
+  de João Pessoa" em out/2026.
+sources:
+- source: djp-sobre-nos
+  quote: >-
+    A Diocese de João Pessoa é fruto da multiplicação da Diocese de Recife. No dia 27 de abril de 2018, na época
+    com apenas dezenove igrejas, vinte e cinco clérigos
+- source: djp-sobre-nos
+  quote: >-
+    na Paraíba, que se expandiu para o Rio Grande do Norte, Ceará e, hoje, com as igrejas na região sudeste, já
+    somos mais de 30 igrejas que compõem a Diocese de João Pessoa
+- source: djp-home-2026
+  quote: Rua André Dias, S/N – Aeroclube Bessa – João Pessoa PB
+relations:
+- type: part_of
+  target: iab
+  status: contested
+  sources:
+  - source: wp-en-iab
+    quote: Márcio Meira (diocesan) Miguel Neto, Eric Rodrigues (assistant)
+  - source: anglicanismo-eleicao-2023
+    quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues.
+  - source: iab-church-planting-bishops
+    quote: Bishop Marcio Meira – Diocese of Joao Pessoa
+  - source: gafconpt-eric-2023
+    quote: O Rev. Eric Rodrigues é agora bispo auxiliar da Diocese de João Pessoa.
+  - source: anglicanismo-eleicao-2023
+    quote: Eric Rodrigues será responsável pela Região Sudeste do Brasil, pela Diocese de João Pessoa.
+  - source: wp-en-iab
+    quote: Miguel Neto, Eric Rodrigues (assistant)
+  - source: anglicanismo-eleicao-2023
+    quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues
+  - source: catedral-comunhao-lideranca
+    quote: Presbítera da Igreja Anglicana no Brasil, a Pastora Clarissa Hartwig é natural de Pelotas/RS.
+  - source: djp-igrejas-2025
+    quote: Revda. Veronica de Lourdes da Silva Pereira
+  - source: iab-jornada-pbce-2025
+    quote: Junto com os Bispos Márcio Meira (Diocesano da DJP) e Miguel Neto (Bispo Auxiliar da DJP)
+  - source: iab-jornada-pbce-2025
+    quote: >-
+      A Igreja Anglicana Comunhão tem como líderes o Bispo Miguel Neto e sua esposa Revda. Priscilla Abrantes auxiliados
+      pelo Post. Adylson.
+  - source: djp-igrejas-2025
+    quote: Comunhão Patos – PB Bispo Miguel Neto Revda. Priscilla
+  - source: spotify-juliane
+    quote: >-
+      Essa é a história do Bispo auxiliar da Igreja Anglicana no Brasil, Miguel Neto. Neste episódio o Bispo Miguel,
+      que está a frente da Igreja Anglicana Comunhão Campina Grande
+  - source: djp-igrejas-2025
+    quote: Catedral Anglicana Comunhão – PB Bispo Márcio Medeiros Meira Revda. Linda Meira
+  - source: ancorabh-lideranca-2018
+    quote: >-
+      Somos supervisionados pelo bispo Marcio Meira e Revda. Linda Meira da Paroquia Anglicana Comunhão em João
+      Pessoa - PB
+  - source: djp-igrejas-2025
+    quote: Igreja Anglicana Videira – PB Rev. Valdolirio Junior
+  - source: djp-igrejas-2025
+    quote: >-
+      Igreja Anglicana Salvação – PB Revda. Eliane Freire de Almeida Chacon Assentamento Antônio Conselheiro
+  - source: djp-igrejas-2025
+    quote: Igreja Anglicana do Amor Goianinha – RN Revda. Sônia Maria dos Santos
+  - source: djp-igrejas-2025
+    quote: >-
+      Igreja Anglicana Trindade – ES Rev. Pedro Muniz Revda. Lorrayne Rua Pres. Nilo Peçanha, n. 2 – Bairro República
+      – Vitória – ES
+  - source: ancorabh-lideranca-2018
+    quote: Rev. Pedro Muniz e Lorraine Muniz
+  - source: djp-igrejas-2025
+    quote: Igreja Anglicana Trindade – ES Rev. Pedro Muniz Revda. Lorrayne
+  - source: djp-sobre-nos
+    quote: Como parte da Igreja Anglicana no Brasil, Província ligada ao FCA
+  - source: djp-bispo-miguel-neto
+    quote: >-
+      Com o coração voltado para a missão, o Bispo Miguel supervisiona as regiões do interior da Paraíba e do Ceará
+  - source: ac-boqueirao-2020
+    quote: 'Pastor: Revdo. Miguel Neto'
+  - source: yt-cc-2022-12-08
+    quote: SEMANA DA VIRADA - DIA 04 | REV. MIGUEL NETO | 08.12.2022 - 20h
+  - source: iab-carta-nacao-2022
+    quote: Revmo. + Marcio Meira Bispo Diocesano de João Pessoa PB
+  - source: iab-jornada-pbce-2025
+    quote: Márcio Meira (Diocesano da DJP)
+  - source: catedral-comunhao-lideranca
+    quote: >-
+      Márcio Meira é o Bispo da Diocese de João Pessoa na Igreja Anglicana no Brasil e pastor da Catedral Anglicana
+      Comunhão
+  - source: djp-bispos-aux-2024
+    quote: >-
+      Atualmente, está comissionado para exercer o Episcopado e coordenar uma região de igrejas no Sudeste do Brasil,
+      nos estados do Espírito Santo, Minas Gerais, São Paulo e Rio de Janeiro.
+  - source: djp-bispos-aux-2025
+    quote: Bispo Miguel Neto
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      sob a liderança do então pastor Márcio Meira. Em 10 de junho de 2017, o clérigo foi sagrado ao episcopado
+      para liderar uma nova unidade diocesana da denominação: a Diocese de João Pessoa.
+    page: '32'
+  - source: cant-novas-igrejas-2024
+    quote: Miguel Neto (auxiliar para a Diocese de João Pessoa)
+    page: '34'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo Eric atuava como bispo auxiliar na Diocese de João Pessoa, juntamente com o bispo Miguel Neto.
+    page: '151'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Eric Rodrigues formalizou a saída da Província da GAFCON, através de uma carta publicada nas redes sociais,
+      em 21 de novembro de 2024.
+    page: '151'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após discordâncias com a política eclesiástica e de identidade do seu diocesano, o bispo Márcio Meira
+    page: '151'
+  - source: iab-poster-linhagem-meira
+    quote: como o primeiro bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+  - source: iab-comunicado-oficial-2018
+    quote: Márcio Meira Bispo da Diocese de João Pessoa PB
+  - source: dr-historia
+    quote: a Igreja Anglicana no Brasil, agora com três dioceses (Recife, João Pessoa e Vitória)
+  - source: iab-comunicado-oficial-2018
+    quote: tivemos o privilégio de formar a Província da Igreja Anglicana no Brasil, com 3 dioceses
+  discrepancies:
+  - field: date
+    value: '2018-05-12'
+    sources:
+    - source: dr-historia
+      quote: a Igreja Anglicana no Brasil, agora com três dioceses (Recife, João Pessoa e Vitória)
+    - source: iab-comunicado-oficial-2018
+      quote: tivemos o privilégio de formar a Província da Igreja Anglicana no Brasil, com 3 dioceses

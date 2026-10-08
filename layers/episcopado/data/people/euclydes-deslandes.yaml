@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: euclydes-deslandes
+name: Euclydes Deslandes
+full_name: Euclydes Deslandes
+ordinations:
+- order: diaconate
+  date: '1926'
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1926 - … Euclydes Deslandes
+    page: '369'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1926'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1926 - … Euclydes Deslandes
+    page: '369'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

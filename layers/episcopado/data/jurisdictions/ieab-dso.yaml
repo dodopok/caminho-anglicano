@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-dso
+acronym: IEAB-DSO
+name: Diocese Sul-Ocidental (Diocese Anglicana Sul-Ocidental)
+aliases:
+- Diocese Sul-Ocidental
+type: diocese
+country: BR
+founded:
+  date: '1950-03-22'
+  sources:
+  - source: ieab-serie-dso
+    quote: >-
+      Foi fundada em 22 de março de 1950 e consiste na porção territorial sul-ocidental dos estados de Santa Catarina
+      e Rio Grande do Sul.
+description: Se em Santa Maria (RS), Catedral do Mediador.
+sources:
+- source: ieab-serie-dso
+  quote: >-
+    Foi fundada em 22 de março de 1950 e consiste na porção territorial sul-ocidental dos estados de Santa Catarina
+    e Rio Grande do Sul.
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: 2011-       – Francisco de Assis da Silva
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. Francisco de Assis da Silva
+  - source: ieab-serie-dso
+    quote: Seu atual Bispo Diocesano é o Revmo. Bispo Francisco de Assis da Silva.
+  - source: costa2021
+    quote: 1956-1975 – Plínio Lauer Simões
+  - source: wp-pt-dioc-sulocidental
+    quote: Plínio Lauer Simões - 1956 a 1975
+  - source: costa2021
+    quote: 1977-1992 – Olavo Ventura Luiz
+  - source: wp-pt-dioc-sulocidental
+    quote: Olavo Ventura Luiz - 1977 a 1984
+  - source: costa2021
+    quote: >-
+      Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária, contraída em Moçambique durante uma
+      visita à Diocese dos Libombos.
+  - source: costa2021
+    quote: 1993-2011 – Jubal Pereira Neves
+  - source: wp-pt-dioc-sulocidental
+    quote: Jubal Pereira Neves - 1993 a 2011
+  - source: wp-pt-naudal
+    quote: Foi eleito bispo sufragâneo da Diocese Anglicana Sul-Ocidental, em Santa Maria, em 2000.
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'
+  - source: ieab-3a-bispa
+    quote: >-
+      desde sua ordenação atuou nas Dioceses anglicanas Sul-Ocidental (1996-2006), Paraná (2007-2010 ) e Brasília
+      (2011 – março 2017).
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1956-1975 - Plínio Lauer Simões
+    page: '368'
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1976-1992 - Olavo Ventura Luiz
+    page: '368'
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1993 - Jubal Pereira Neves
+    page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      O bispo Simões assumiu o governo da diocese em 1956, tendo 16 clérigos em atividade, 11 paróquias, 7 congregações
+      e 19 missões. Quando resignou ao episcopado diocesano em dezembro de 1976
+    page: '257'
+  - source: kickhofel-1995
+    quote: >-
+      O sucessor do bispo Plínio Lauer Simões no governo da Diocese Sul Ocidental foi Olavo Ventura Luiz, eleito
+      aos trinta e sete anos no segundo concílio extraordinário (193) realizado em 4 de setembro de 1976 e sagrado
+      ao episcopado em 28 de novembro do mesmo ano como o terceiro bispo daquela diocese (194).
+    page: '260'
+  - source: kickhofel-1995
+    quote: >-
+      Em 1965, foi fundada a Cidade de Meninos em Jaguarão pelo rev. Helondino Alves de Oliveira, com quarenta e
+      três internos iniciais.
+    page: '258'
+  - source: kickhofel-1995
+    quote: >-
+      Em 1965, foi transferido para Bagé para assumir o pastorado da Paróquia da Crucifixão e as missões de São
+      Marcos e São Felipe … Em 1980, transferiu-se para Santa Maria (RS) para assumir a direção da histórica Catedral
+      do Mediador, fundada em 1900, e assessorar o bispo na secretaria do bispado.
+    page: '300'

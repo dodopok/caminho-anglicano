@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: rec
+acronym: REC
+name: Reformed Episcopal Church
+type: national_church
+tradition: reformed_episcopal
+country: US
+founded:
+  date: '1873'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Igreja Episcopal Reformada (Reformed Episcopal Church) – fundada em 1873, nos Estados Unidos e no Canadá
+    page: '84'
+wikidata: Q828393
+website: https://rechurch.org/
+description: Igreja Episcopal Reformada, fundada em 1873 nos Estados Unidos e no Canadá.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Igreja Episcopal Reformada (Reformed Episcopal Church) – fundada em 1873, nos Estados Unidos e no Canadá
+  page: '84'

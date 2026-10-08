@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jackson-kemper
+name: Jackson Kemper
+full_name: Jackson Kemper
+aliases:
+- Bp. Kemper
+wikidata: Q6117197
+biography: >-
+  Primeiro bispo missionário da TEC (1835, Missouri e Indiana); sagrante principal de Henry B. Whipple.
+sources:
+- source: perry-1895
+  quote: RIGHT REVEREND JACKSON KEMPER, D.D.
+- source: wikidata-api-2
+  quote: '"Q6117197": enwiki "Jackson Kemper"'
+ordinations:
+- order: episcopate
+  date: '1835-09-25'
+  place: St. Peter's Church, Filadélfia
+  jurisdiction: tec
+  office: missionary
+  principal_consecrator: william-white
+  co_consecrators:
+  - b-t-onderdonk
+  - doane
+  - h-u-onderdonk
+  - philander-chase
+  - richard-channing-moore
+  - smith
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      He was consecrated, Sept. 25, 1835, missionary bishop for Missouri and Indiana, in St. Peter's Church, Philadelphia,
+      by Bishops White, Moore, Chase, the two Onderdonks, Smith, and Doane, — the last consecration in which the
+      venerable White took part.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Jackson Kemper]] | [[William White (Bishop of Pennsylvania)|2]] [[Richard Channing Moore|14]] [[Philander
+      Chase|18]] | 1835
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte. Perry diz 'Moore,
+    Chase, the two Onderdonks, Smith, and Doane'; os prenomes de Moore e Chase vêm da lista da Wikipédia (Richard
+    Channing Moore, Philander Chase). 'the two Onderdonks' foram lidos como H. U. e B. T. Onderdonk, os dois bispos
+    desse sobrenome que Perry menciona em outras sagrações; isso é inferência e deve ser conferido. Smith e Doane
+    ficam só com o sobrenome.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: missionary-bishop
+  start: '1835-09-25'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: missionary bishop for Missouri and Indiana
+  notes: >-
+    Local: Missouri e Indiana. Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa
+    que o episcopado continua.

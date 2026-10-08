@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jackeline
+name: Jackeline
+ordinations:
+- order: presbyterate
+  date: '2021-09-19'
+  place: Catedral Anglicana Comunhão, João Pessoa (provável)
+  jurisdiction: iab
+  status: probable
+  sources:
+  - source: catedral-comunhao-lideranca
+    quote: Casado com a Pastora Jackeline, que também foi ordenada na mesma data.
+  - source: catedral-comunhao-lideranca
+    quote: O Pastor Marcelo foi ordenado no dia 19 de setembro de 2021.
+  notes: >-
+    Ordem não especificada ("ordenada"; hoje "Revda."). Ordenação de mulher na IAB (Diocese de João Pessoa). Sobrenome
+    não informado.

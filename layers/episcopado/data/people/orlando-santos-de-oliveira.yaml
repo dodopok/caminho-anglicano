@@ -1,0 +1,258 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: orlando-santos-de-oliveira
+name: Orlando Santos de Oliveira
+full_name: Orlando Santos de Oliveira
+aliases:
+- Dom Orlando Oliveira
+- Orlando dos Santos Oliveira
+birth:
+  date: '1945-01-08'
+  sources:
+  - source: costa2021
+    quote: Natural da cidade de São Francisco de Paula, Orlando dos Santos Oliveira nasceu em 08 de
+  - source: wp-pt-orlando
+    quote: Orlando Santos de Oliveira (São Francisco de Paula, 8 de janeiro de 1945 - 16 de março de 2023)
+death:
+  date: '2023-03-16'
+  sources:
+  - source: costa2021
+    quote: Natural da cidade de São Francisco de Paula, Orlando dos Santos Oliveira nasceu em 08 de
+  - source: wp-pt-orlando
+    quote: Orlando Santos de Oliveira (São Francisco de Paula, 8 de janeiro de 1945 - 16 de março de 2023)
+wikidata: Q139008639
+biography: >-
+  Bispo da Diocese Meridional (1998-2013) e primaz (2003-2006); decretou a deposicao de Robinson Cavalcanti.
+sources:
+- source: costa2021
+  quote: Natural da cidade de São Francisco de Paula, Orlando dos Santos Oliveira nasceu em 08 de
+- source: wp-pt-orlando
+  quote: Orlando Santos de Oliveira (São Francisco de Paula, 8 de janeiro de 1945 - 16 de março de 2023)
+ordinations:
+- order: diaconate
+  date: '1969'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1969 - … Orlando Santos de Oliveira
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: episcopate
+  date: '1997-11-30'
+  place: Catedral da Santissima Trindade, Porto Alegre
+  jurisdiction: ieab
+  office: coadjutor
+  principal_consecrator: glauco-soares-de-lima
+  co_consecrators:
+  - william-godfrey
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi sagrante o entao Primaz, Bispo Glauco Soares de Lima, e co-sagrantes os bispos do episcopado brasileiro
+      da época, mais o bispo William Godfrey, do Uruguai.
+  - source: costa2021
+    quote: >-
+      Já na Diocese Meridional, em 30 de novembro de 1997, Orlando Santos de Oliveira96 foi sagrado na Catedral
+      da Santíssima Trindade, em Porto Alegre, pelas mãos do Bispo Primaz, Glauco Soares de Lima
+  - source: wp-pt-orlando
+    quote: >-
+      Três meses depois, em 30 de novembro, Dom Orlando foi consagrado bispo na Catedral da Santíssima Trindade,
+      em Porto Alegre, pelo Primaz Glauco Soares de Lima, acompanhado pelos bispos da IEAB, mais o bispo William
+      Godfrey, do Uruguai.
+  notes: >-
+    Eleito em 30/08/1997 como 7o bispo da Diocese Meridional; sucedeu Gastal em 1998. Co-sagrantes brasileiros nao
+    nomeados. Wikipedia PT deriva de Costa.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dm
+  start: '1998'
+  end: '2013-05-05'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1998-2013 – Orlando Santos de Oliveira
+  - source: wp-pt-orlando
+    quote: se tornou seu coadjutor na Diocese Anglicana Meridional, que o sucedeu em 5 de maio do ano seguinte.
+- jurisdiction: ieab
+  role: primate
+  start: '2003'
+  end: 2006-07
+  status: confirmed
+  sources:
+  - source: wp-en-ieab
+    quote: Orlando Santos de Oliveira, 2003—2006
+  - source: costa2021
+    quote: >-
+      a primazia passou das mãos do bispo Glauco para o bispo Orlando Santos de Oliveira, da Diocese Meridional,
+      que ficou no cargo entre
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_interino
+  diocese: ieab-dab
+  start: 2003-06
+  end: 2003-08
+  status: probable
+  sources:
+  - source: wp-pt-dioc-brasilia
+    quote: Orlando Santos de Oliveira (Interino) - junho a agosto de 2003;
+events:
+- type: other
+  date: '2004-09-16'
+  description: >-
+    Decreto de Supervisao Episcopal Especial sobre a Diocese Anglicana do Recife (16/09/2004), com supervisao do
+    bispo Mauricio Andrade (DAB) e do sufraganeo Filadelfo Oliveira; Robinson Cavalcanti recusa acatar.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      a recusa do Bispo Diocesano, Dom Edward Robinson de Barros Cavalcanti, em acatar o Decreto de Supervisão Episcopal
+      Especial de 16 de setembro de 2004
+- type: other
+  date: '2004-11-26'
+  description: >-
+    Decreto Episcopal 001/2004 do primaz Orlando Santos de Oliveira (26/11/2004) suspende o Concilio da Diocese
+    do Recife marcado para 2-4/12/2004.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 26 de novembro de 2004 o Bispo Primaz emitiu um Decreto Episcopal suspendendo a realização do Concílio
+      da Diocese Anglicana do Recife que estava marcado para acontecer em dezembro.
+- type: other
+  date: '2005-02-22'
+  description: >-
+    Resolucao 001/2005 (18/02/2005) suspende preventivamente Robinson Cavalcanti; Resolucao 002/2005 (22/02/2005)
+    nomeia Filadelfo Oliveira Neto Autoridade Eclesiastica da Diocese do Recife; Mauricio Andrade instituido "bispo
+    interventor" em marco de 2005.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      foi emitida a Resolução 001/2005, em 18 de fevereiro de 2005208, suspendendo o bispo diocesano em caráter
+      preventivo.
+  - source: costa2021
+    quote: No mês seguinte, o bispo Maurício Andrade, foi instituído como “bispo interventor”
+- type: deposition
+  date: '2005-06-10'
+  description: >-
+    Deposicao de Edward Robinson de Barros Cavalcanti do ministerio ordenado da IEAB (Processo Canonico 001/2005),
+    decretada pelo primaz Orlando Santos de Oliveira perante a Camara dos Bispos em Porto Alegre, apos decisao unanime
+    do Tribunal Superior Eclesiastico.
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      Como consequência do contínuo enfrentamento às decisões da Câmara Episcopal, em 10 de junho de 2005, Edward
+      Robinson de Barros Cavalcanti foi deposto de todos os seus cargos na Igreja Episcopal Anglicana do Brasil
+  - source: costa2021
+    quote: >-
+      Tendo em vista os fatos articulados acima, e que o Tribunal Superior Eclesiástico, por unanimidade de seus
+      membros, reconhece a culpabilidade do Bispo Dom Edward Robinson de Barros Cavalcanti, o Bispo Primaz decreta
+  - source: ptwp-dar
+    quote: >-
+      Apesar de constituir ato raro e extremo, o bispo foi expulso da IEAB em 10 de junho de 2005 pelo Tribunal
+      Superior Eclesiástico.
+  - source: ens-102306-1-a
+    quote: was elected as bishop of Recife to replace Robinson Cavalcanti, who was deposed on June 10, 2005.
+  - source: ens-040908-04
+    quote: >-
+      As it is known by all the Anglican Communion, Mr. Cavalcanti was deposed through a lawful and canonical process
+      due to his breaking of ordination vows.
+- type: deposition
+  date: '2005-06-17'
+  description: >-
+    Versao divergente da data da deposicao: o ENS (citando ACNS) diz que o primaz e um comite da Camara dos Bispos
+    depuseram Robinson Cavalcanti "por contumacia" em 17 de junho [2005], determinando que o sufraganeo Filadelfo
+    Oliveira Neto assumisse a autoridade eclesiastica.
+  status: contested
+  sources:
+  - source: ens-100705-2-a
+    quote: >-
+      The Primate of Brazil, the Most Rev. Orlando de Oliveira, and a House of Bishops' committee deposed Robinson
+      Cavalcanti for contumacy (resistance to authority) June 17, directing his suffragan, the Rt. Rev. Filadelfo
+      Oliveira Neto, to assume ecclesiastical authority for the diocese.
+- type: other
+  date: '2004-03-16'
+  description: >-
+    Primaz Orlando Santos de Oliveira reprova (carta de 16/03/2004) a participacao do bispo Robinson Cavalcanti
+    em confirmacoes irregulares em Ohio (EUA) sem permissao do bispo local.
+  status: confirmed
+  sources:
+  - source: ens-032204-2
+    quote: >-
+      Santos de Oliveira expressed "strong disapproval" of Cavalcanti's participation, saying that in doing so he
+      had violated the constitution and canons of the church in Brazil and in the United States.
+- type: other
+  date: 2004-09
+  description: >-
+    Decreto da Camara dos Bispos (set/2004) acolhe pedido do bispo sufraganeo do Recife (Filadelfo Oliveira Neto),
+    de 14 clerigos, 9 paroquias e 6 missoes por supervisao episcopal alternativa a Robinson Cavalcanti.
+  status: confirmed
+  sources:
+  - source: ieab-esclarecimento-2004
+    quote: >-
+      A Câmara dos Bispos acolheu a solicitação do Bispo Sufragâneo, de 14 clérigos, 9 paróquias e 6 missões, todos
+      evangélicos, para uma supervisão alternativa
+  - source: costa2021
+    quote: >-
+      a recusa do Bispo Diocesano, Dom Edward Robinson de Barros Cavalcanti, em acatar o Decreto de Supervisão Episcopal
+      Especial de 16 de setembro de 2004
+- type: deposition
+  date: '2005-10-12'
+  description: >-
+    O primaz Orlando Santos de Oliveira protesta junto ao primaz do Cone Sul, Gregory Venables, contra o acolhimento
+    do "bispo deposto" e de clerigos depostos da Diocese do Recife (carta de 12/10/2005).
+  status: confirmed
+  sources:
+  - source: orlando-venables-2005
+    quote: >-
+      Lamento profundamente vossa carta, reconhecendo e acolhendo para supervisão o bispo deposto e um grupo de
+      clérigos depostos que pertenceram à Diocese Anglicana do Recife.
+- type: other
+  date: '2005-01-15'
+  description: >-
+    Comunicado do primaz (15/01/2005): a IEAB e a unica igreja da Comunhao Anglicana no Brasil; lista igrejas "episcopais/anglicanas"
+    que nao estao em comunhao (ex.: Igreja Episcopal Carismatica do Brasil, Igreja Episcopal Reformada do Brasil).
+  status: confirmed
+  sources:
+  - source: ieab-comunicado-2005
+    quote: >-
+      No Brasil, a única igreja que é parte da Comunhão Anglicana, como uma de suas Províncias, devida e formalmente
+      reconhecida, é a **Igreja Episcopal Anglicana do Brasil**
+- type: other
+  date: 2005-02
+  description: >-
+    O primaz da IEAB, Orlando Santos de Oliveira, suspende preventivamente o bispo Robinson Cavalcanti e nomeia
+    o bispo Filadelfo de Oliveira Neto autoridade eclesiástica da Diocese do Recife; em 26/02/2005 um concílio extraordinário
+    da diocese (38 presbíteros presentes) reconhece Cavalcanti como diocesano em pleno exercício
+  status: probable
+  sources:
+  - source: alc-2005-03-06
+    quote: >-
+      An Extraordinary Council Session of the Anglican Diocese of Recife, meeting in this capital in the state of
+      Pernambuco last February 26, unanimously agreed to recognize Edward Robinson de Barros Cavalcanti as diocesan
+      bishop in full exercise of his ministry.
+  - source: alc-2005-03-06
+    quote: >-
+      to preventively suspend Cavalcanti, adopted four days earlier in an Extraordinary Council and to name Bishop
+      Filadelfo de Oliveira Neto as Church authority for this diocese in eastern Brazil.
+  - source: alc-2005-03-06
+    quote: A total of 38 priests, 58 lay delegates and 15 observers participated in the Extraordinary Council
+- type: deposition
+  date: '2005-10-12'
+  description: >-
+    Carta oficial do primaz da IEAB a Gregory Venables (Cone Sul) protestando contra a acolhida, sob supervisão
+    do Cone Sul, do bispo deposto Robinson Cavalcanti e de um grupo de clérigos depostos da Diocese do Recife; afirma
+    que a deposição se deu por processo canônico no Tribunal Superior Eclesiástico
+  status: confirmed
+  sources:
+  - source: ieab-2005-carta-venables
+    quote: Lamento profundamente vossa carta, reconhecendo e acolhendo para supervisão o bispo
+  - source: ieab-2005-carta-venables
+    quote: deposto e um grupo de clérigos depostos que pertenceram à Diocese Anglicana do Recife.
+  - source: ieab-2005-carta-venables
+    quote: foi condenado pelo Tribunal Superior Eclesiástico

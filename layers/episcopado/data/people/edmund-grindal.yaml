@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: edmund-grindal
+name: Edmund Grindal
+full_name: Edmund Grindal
+aliases:
+- Archbishop Grindal
+death:
+  date: '1583-07-06'
+  sources:
+  - source: stubbs-1897
+    quote: Edmund Grindal. London ; York, 1570 ; Canterbury, 1576 ; d. 1583, July 6.
+  - source: wikidata-api-2
+    quote: '"Q655212": enwiki "Edmund Grindal"'
+wikidata: Q655212
+biography: >-
+  Bispo de Londres (1559), arcebispo de York (1570) e de Cantuária (1576-1583); sagrado por Parker; sagrante principal
+  de Whitgift.
+sources:
+- source: stubbs-1897
+  quote: Edmund Grindal. London ; York, 1570 ; Canterbury, 1576 ; d. 1583, July 6.
+- source: wikidata-api-2
+  quote: '"Q655212": enwiki "Edmund Grindal"'
+ordinations:
+- order: episcopate
+  date: '1559-12-21'
+  place: Lambeth
+  jurisdiction: church-of-england
+  principal_consecrator: matthew-parker
+  co_consecrators:
+  - john-hodgkins
+  - john-scory
+  - william-barlow
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: a. d. 1559, Dec. 21. Edmund Grindal. London ; York, 1570 ; Canterbury, 1576 ; d. 1583, July 6.
+  - source: stubbs-1897
+    quote: >-
+      Consecrated at Lambeth by Archbishop Parker, William of Chichester, John of Hereford, John of Bedford ; Reg.
+      Parker, 18, 22, 32, 39.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Sagrado
+    bispo de Londres, junto com Richard Cox (Ely), Rowland Meyrick (Bangor) e Edwin Sandys (Worcester), quatro dias
+    depois de Parker. William of Chichester = Barlow; John of Hereford = Scory; John of Bedford = Hodgkins (os mesmos
+    que sagraram Parker). A Catholic Encyclopedia diz que essa sagração foi em Bow Church; Stubbs diz Lambeth.
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-london
+  start: '1559-12-21'
+  end: '1570'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Edmund Grindal. London ; York, 1570 ; Canterbury, 1576 ; d. 1583, July 6.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: archbishop
+  diocese: diocese-of-york
+  start: '1570'
+  end: '1576'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Edmund Grindal. London ; York, 1570 ; Canterbury, 1576 ; d. 1583, July 6.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: archbishop
+  diocese: diocese-of-canterbury
+  start: '1576'
+  end: '1583-07-06'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Edmund Grindal. London ; York, 1570 ; Canterbury, 1576 ; d. 1583, July 6.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.

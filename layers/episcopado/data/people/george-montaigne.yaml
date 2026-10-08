@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: george-montaigne
+name: George Montaigne
+full_name: George Montaigne
+aliases:
+- George Monteigne
+- George Mountain
+death:
+  date: '1628-11-06'
+  sources:
+  - source: stubbs-1897
+    quote: George Monteigne. Lincoln ; London, 1621 ; Durham, 1628 ; York, 1628 ; d. 1628, Nov. 6.
+  - source: wikidata-api-2
+    quote: '"Q3101772": enwiki "George Montaigne"'
+wikidata: Q3101772
+biography: >-
+  Bispo de Lincoln (1617), Londres (1621), Durham e York (1628); como bispo de Londres presidiu a sagração de Laud
+  (1621).
+sources:
+- source: stubbs-1897
+  quote: George Monteigne. Lincoln ; London, 1621 ; Durham, 1628 ; York, 1628 ; d. 1628, Nov. 6.
+- source: wikidata-api-2
+  quote: '"Q3101772": enwiki "George Montaigne"'
+ordinations:
+- order: episcopate
+  date: '1617-12-14'
+  place: Lambeth
+  jurisdiction: church-of-england
+  principal_consecrator: george-abbot
+  co_consecrators:
+  - john-buckeridge
+  - john-king
+  - john-overall
+  - lancelot-andrewes
+  - marco-antonio-de-dominis
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1617, Dec. 14. Nicolas Felton. Bristol ; Ely, 1619 ; d. 1626, Oct. 5 ; and George Monteigne. Lincoln
+      ; London, 1621 ; Durham, 1628 ; York, 1628 ; d. 1628, Nov. 6. Consecrated at Lambeth by Archbishop Abbot,
+      Marco Antonio of Spalato, John of London, Launcelot of Ely, John of Rochester, and John of Lichfield; Reg.
+      Abbot, 96, 105 ;
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Sagrado
+    bispo de Lincoln, junto com Nicholas Felton. Co-sagrante notável: Marco Antonio (de Dominis), arcebispo católico
+    de Spalato, então na Inglaterra. John of London = John King; Launcelot of Ely = Lancelot Andrewes; John of Rochester
+    = John Buckeridge; John of Lichfield = John Overall.
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-lincoln
+  start: '1617-12-14'
+  end: '1621'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: George Monteigne. Lincoln ; London, 1621 ; Durham, 1628 ; York, 1628 ; d. 1628, Nov. 6.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+    Stubbs diz 'Durham, 1628; York, 1628': Montaigne passou por Durham no mesmo ano (vínculo omitido).
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-london
+  start: '1621'
+  end: '1628'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: George Monteigne. Lincoln ; London, 1621 ; Durham, 1628 ; York, 1628 ; d. 1628, Nov. 6.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+    Stubbs diz 'Durham, 1628; York, 1628': Montaigne passou por Durham no mesmo ano (vínculo omitido).
+- jurisdiction: church-of-england
+  role: archbishop
+  diocese: diocese-of-york
+  start: '1628'
+  end: '1628-11-06'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: George Monteigne. Lincoln ; London, 1621 ; Durham, 1628 ; York, 1628 ; d. 1628, Nov. 6.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+    Stubbs diz 'Durham, 1628; York, 1628': Montaigne passou por Durham no mesmo ano (vínculo omitido).

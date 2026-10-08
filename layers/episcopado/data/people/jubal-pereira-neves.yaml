@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jubal-pereira-neves
+name: Jubal Pereira Neves
+full_name: Jubal Pereira Neves
+aliases:
+- Dom Jubal Neves
+birth:
+  date: '1943-03-29'
+  sources:
+  - source: costa2021
+    quote: Jubal Pereira Neves nasceu em Santa Maria, Rio Grande do Sul, em 29 de março de 1943.
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Jubal Neves, Emérito
+biography: Secretario-geral (1983-1993) e bispo da Diocese Sul-Ocidental (1993-2011); emerito.
+sources:
+- source: costa2021
+  quote: Jubal Pereira Neves nasceu em Santa Maria, Rio Grande do Sul, em 29 de março de 1943.
+- source: ieab-secretaria
+  quote: Revmo. Bispo Jubal Neves, Emérito
+ordinations:
+- order: diaconate
+  date: '1966'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1966 - … Jubal Pereira Neves
+    page: '371'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: episcopate
+  date: '1993-09-19'
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: sumio-takatsu
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      A sagração aconteceu em 19 de setembro de 1993, pelas mãos do bispo Sumio Takatsu e outros bispos da época.
+  - source: sinopse-2003
+    quote: '**1993** - Jubal Alves Neves (bispo de Santa Maria)'
+  notes: Eleito no 45o Concilio Extraordinario da Diocese Sul-Ocidental para suceder Olavo Ventura Luiz.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dso
+  start: '1993-09-19'
+  end: '2011'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1993-2011 – Jubal Pereira Neves
+  - source: wp-pt-dioc-sulocidental
+    quote: Jubal Pereira Neves - 1993 a 2011
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1993 - Jubal Pereira Neves
+    page: '368'

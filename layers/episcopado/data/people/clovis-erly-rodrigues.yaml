@@ -1,0 +1,220 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: clovis-erly-rodrigues
+name: Clóvis Erly Rodrigues
+full_name: Clóvis Erly Rodrigues
+aliases:
+- Clovis Rodrigues
+- Clóvis Erli Rodrigues
+birth:
+  date: '1935-09-18'
+  sources:
+  - source: costa2021
+    quote: Natural da cidade de Jaguarão, no extremo sul do Brasil, Clovis Erly Rodrigues nasceu em 18 de
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Clóvis Erli Rodrigues, Emérito
+  - source: kickhofel-1995
+    quote: >-
+      Filho de tradicional família episcopaliana, Clóvis Erly Rodrigues nasceu em Jaguarão, no extremo sul do Brasil,
+      em 18 de setembro de 1935
+    page: '299'
+biography: >-
+  Bispo do Recife (coadjutor 1985, diocesano 1986-1997); presidiu o Tribunal Superior Eclesiastico no processo de
+  Robinson Cavalcanti; emerito vivo em 2026 segundo a IEAB.
+sources:
+- source: costa2021
+  quote: Natural da cidade de Jaguarão, no extremo sul do Brasil, Clovis Erly Rodrigues nasceu em 18 de
+- source: ieab-secretaria
+  quote: Revmo. Bispo Clóvis Erli Rodrigues, Emérito
+ordinations:
+- order: diaconate
+  date: '1960'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1960 - … Clóvis Erly Rodrigues
+    page: '371'
+  - source: kickhofel-1995
+    quote: Formou-se em teologia em 1960, sendo ordenado ao diaconato e ao presbiterado no ano seguinte.
+    page: '299'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    A frase é ambígua: pode ler-se diaconato em 1960 e presbiterato em 1961, ou ambos em 1961. A lista do clero
+    nacional (p. 371) dá o diaconato em 1960.
+- order: presbyterate
+  date: '1961'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: Formou-se em teologia em 1960, sendo ordenado ao diaconato e ao presbiterado no ano seguinte.
+    page: '299'
+- order: episcopate
+  date: '1985-03-17'
+  place: Catedral da Santissima Trindade, Porto Alegre
+  jurisdiction: ieab
+  office: coadjutor
+  principal_consecrator: edmund-knox-sherrill
+  co_consecrators:
+  - david-leake
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: O novo bispo foi sagrado no dia 17 de março de 1985, na Catedral da Santíssima
+  - source: costa2021
+    quote: >-
+      Trindade, em Porto Alegre, pelo próprio Sherrill, na época o Primaz em exercício. Participaram como co-sagrantes
+      os bispos brasileiros e o bispo argentino David Leake, Primaz da Província Anglicana do Cone Sul, que também
+      foi o pregador.
+  - source: sinopse-2003
+    quote: 1985 - Clóvis Erly Rodrigues
+  - source: kickhofel-1995
+    quote: >-
+      Foi sagrado na Igreja do Redentor (rua Haddock Lobo, 258 - Tijuca) no dia 24 de março de 1985 pelo bispo Edmund
+      Knox Sherrill, da Diocese de Recife e primaz em exercício, tendo atuado como co-sagrantes os bispos Agostinho
+      Sória, Sumio Takatsu, Clóvis Rodrigues (sagrado uma semana antes em Porto Alegre) e Cláudio Vinicius de Senna
+      Gastal, que foi o pregador.
+    page: '278'
+  - source: kickhofel-1995
+    quote: >-
+      Rodrigues foi elevado ao episcopado no dia 17 de março de 1985, na Catedral da SS.Trindade, em Porto Alegre,
+      pelo primaz em exercício, Edmund Knox Sherrill, tendo participado como co-sagrantes os demais bispos brasileiros
+      e o bispo argentino David Leake, primaz da Provínica Anglicana do Cone Sul, com sede em Salta, Argentina.
+    page: '300'
+  notes: >-
+    Eleito bispo coadjutor da Diocese Setentrional (Recife) pelo Sinodo de 1984. Co-sagrantes: "os bispos brasileiros"
+    (nao nomeados) e David Leake. O livro diz que os "demais bispos brasileiros" foram co-sagrantes, sem nomeá-los.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dso
+  start: '1965'
+  end: '1985'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Em 1965, foi transferido para Bagé para assumir o pastorado da Paróquia da Crucifixão e as missões de São
+      Marcos e São Felipe … Em 1980, transferiu-se para Santa Maria (RS) para assumir a direção da histórica Catedral
+      do Mediador, fundada em 1900, e assessorar o bispo na secretaria do bispado.
+    page: '300'
+  notes: >-
+    Pároco da Crucifixão em Bagé (1965), missionário em Moçambique (1971-1974), pároco do Nazareno em Santana do
+    Livramento (1974) e deão da Catedral do Mediador em Santa Maria (1980). O fim em 1985 é a sagração.
+- jurisdiction: ieab
+  role: coadjutor_bishop
+  diocese: ieab-dar
+  start: '1985-03-17'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Rodrigues foi elevado ao episcopado no dia 17 de março de 1985, na Catedral da SS.Trindade, em Porto Alegre,
+      pelo primaz em exercício, Edmund Knox Sherrill, tendo participado como co-sagrantes os demais bispos brasileiros
+      e o bispo argentino David Leake, primaz da Provínica Anglicana do Cone Sul, com sede em Salta, Argentina.
+    page: '300'
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dar
+  start: '1986'
+  end: '1997'
+  end_reason: retirement
+  status: contested
+  sources:
+  - source: costa2021
+    quote: 1986-1997 – Clovis Erly Rodrigues
+  - source: ptwp-dar
+    quote: Clóvis Erly Rodrigues - 1986 a 1997;
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1985 - Clóvis Erly Rodrigues
+    page: '368'
+  discrepancies:
+  - field: start
+    value: '1985'
+    sources:
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1985 - Clóvis Erly Rodrigues
+      page: '368'
+events:
+- type: other
+  date: '1985'
+  description: >-
+    Robinson Cavalcanti, então diácono da Diocese Setentrional, foi "apresentador" na sagração do novo bispo (Clóvis
+    Erly Rodrigues) em Porto Alegre e afirma que Edmund Sherrill seria um dos co-sagrantes do seu próprio episcopado
+    (1997).
+  status: probable
+  sources:
+  - source: cant-meninos-eu-vi-2004
+    quote: Eu vi – e fui “apresentador” (de quem não conhecia) na sagração do novo Bispo, em Porto Alegre
+  - source: cant-meninos-eu-vi-2004
+    quote: (e ele seria um dos co-sagrantes do meu episcopado)
+  - source: cant-resgatando-2006
+    quote: >-
+      Tive, por determinação do Bispo Sherrill, juntamente com a irmã Dalila, da Paróquia Anglicana do Bom Samaritano,
+      de me deslocar para a cerimônia de Sagração na Catedral de Porto Alegre (não havia qualquer clima para que
+      a mesma se desse aqui) e saudar o consagrado na festa que se seguiu no Teresópolis Tênis Clube.
+- type: other
+  date: '2006-04-26'
+  description: >-
+    Segundo Robinson Cavalcanti (2006), foram ordenados no período do bispo Clóvis Erly Rodrigues (1986–1997) apenas:
+    presbíteros Washington Franco, Siméa Meldrum, Maurício Andrade, Sebastião Gameleira, Alberto Blandon, Francisco
+    de Assis, Raimundo Nonato, Alberto Pires e Evanilza Loureiro; e só ao diaconato Luiz Souza de França, Abimael
+    Rodrigues e Josafá Batista
+  status: probable
+  sources:
+  - source: dar-resgatando-historia-3
+    quote: >-
+      Foram ordenados, durante o seu período os seguintes reverendos: Washington Franco e Siméa Meldrum (os únicos
+      dos seus Presbíteros que continuam conosco), Maurício Andrade (Bispo de Brasília), Sebastião Gameleira (Bispo
+      de Pelotas)
+  - source: dar-resgatando-historia-3
+    quote: 'e, apenas ao Diaconato: Luiz Souza de França'
+- type: other
+  date: '2004-10-11'
+  description: >-
+    Abertura de processo canonico contra Robinson Cavalcanti no Superior Tribunal Eclesiastico (denuncia recebida
+    em 11/10/2004); o tribunal era presidido pelo bispo emerito Clovis Erly Rodrigues.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      a abertura de um processo canônico contra o bispo no Superior Tribunal Eclesiástico, recebida no dia 11 de
+      outubro de 2004.
+  - source: costa2021
+    quote: >-
+      época, a Suprema Corte da Igreja Episcopal Anglicana do Brasil era presidida pelo bispo emérito, Clovis Erly
+      Rodrigues.
+- type: other
+  date: 2017-04
+  description: >-
+    A Camara Episcopal em abril de 2017 (reuniao no Rio de Janeiro) inclui como emeritos Clovis Rodrigues, Almir
+    dos Santos e Celso Franco.
+  status: confirmed
+  sources:
+  - source: ec-2017-04
+    quote: Clóvis Ro- drigues, Almir dos Santos e Celso Franco (eméritos)
+- type: other
+  date: 1984-07
+  description: >-
+    Eleito pelo Sínodo bispo coadjutor da Diocese Setentrional, com direito à sucessão, no terceiro escrutínio,
+    contrariando a expectativa de Sherrill, que esperava a indicação de Paulo Ruiz Garcia
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Quando em 1984 o bispo anunciou sua intenção de se aposentar no final de 1985, o Sínodo realizado em julho
+      de 1984, em Porto Alegre, elegeu o deão da Catedral do Mediador de Santa Maria, Clóvis Erly Rodrigues, para
+      ser bispo coadjutor da Diocese Setentrional com direito a sucessão.
+    page: '299'
+- type: other
+  date: '1971'
+  description: >-
+    Primeiro brasileiro a trabalhar como missionário na África: quatro anos em Moçambique, na educação teológica
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Em 1971, tomou uma decisão que modificou o curso de sua vida: aceitou um convite para trabalhar como missionário
+      em Moçambique. Foi o primeiro brasileiro a trabalhar na longínqua África, onde atuou por quatro anos no campo
+      da educação teológica e nas relações de companheirismo.
+    page: '300'

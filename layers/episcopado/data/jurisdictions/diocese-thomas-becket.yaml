@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-thomas-becket
+name: Diocese Thomas Becket
+type: diocese
+relations:
+- type: part_of
+  target: iatb
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após a saída de dom Cristiano da Província, este bispo foi convidado por dom Rui Barbosa para retornar para
+      a Igreja Anglicana Tradicional do Brasil (IATB).
+    page: '106'
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Thomas Becket (São Paulo), sob o episcopado e primazia de dom Rui Costa Barbosa
+    page: '136'

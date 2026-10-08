@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: george-upton-krischke
+name: George Upton Krischke
+aliases:
+- Jorge Upton Krischke
+- Rev. George U. Krischke
+biography: >-
+  Presbítero brasileiro em Porto Alegre, pai de Egmont M. Krischke; homenageado em 1941 por 35 anos de ministério.
+sources:
+- source: wit-1941-12-04
+  quote: >-
+    Two prominent Brazilian rectors, Rev. Joao Baptista Barcellos and Rev. George U. Krischke, both of Port Alegre,
+    were honored at a special service in the Pro-Cathedral of the Ascension in Port Alegre, Brazil, for their 35
+    years' service in the ministry.
+- source: wit-1950-03-30
+  quote: Bishop-elect Krischke had as his . attending . presbyters his father, the Rev. George U. Krischke
+- source: lc-1949-10-30
+  quote: >-
+    his father, the Rev. George -Upt Krischke, was one of the first native so of the Brazilian Church to be ordained.
+ordinations:
+- order: diaconate
+  date: '1906'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1906 - … George Upton Krischke
+    page: '369'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  diocese: porto-alegre
+  start: c.1906
+  status: probable
+  sources:
+  - source: wit-1941-12-04
+    quote: for their 35 years' service in the ministry.
+  notes: 35 anos de ministério em dez. 1941 implica ordenação c. 1906 (inferência).
+events:
+- type: other
+  date: '1934'
+  description: >-
+    Assinou o memorial do concílio de 1934 (Paróquia do Salvador, Rio Grande) pedindo que o novo bispo fosse escolhido
+    entre o clero nativo
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Assinaram o histórico memorial os reverendos Salomão Ferraz, George Upton Krischke, Nemésio de Almeida, João
+      Batista Barcellos da Cunha, Orlando Batista e Athalício Theodoro Pithan e os leigos Frontino Peixoto da Silveira
+      e José Luiz Albuquerque.
+    page: '188'
+- type: other
+  date: '1936'
+  description: >-
+    Assinou o memorial aprovado pelo concílio de 1936 pedindo um bispo sufragâneo escolhido segundo a vontade dos
+    brasileiros
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Os brasileiros, entretanto, não estavam dispostos a deixar o assunto morrer e voltaram ao tema de 1936. O
+      concílio daquele ano recebeu e aprovou outro memorial assinado por quatro clérigos (146), pedindo um bispo
+      sufragâneo.
+    page: '189'
+  - source: kickhofel-1995
+    quote: >-
+      Este segundo memorial foi assinado pelos reverendos George Upton Krischke, Orlando Batista, Athalício Theodoro
+      Pithan e Martin Samuel Firth. Destes, três haviam assinado o memorial de 1934.
+    page: '189'
+- type: other
+  date: '1936'
+  description: >-
+    Mais votado no escrutínio secreto de 1936 para a lista tríplice ao episcopado (empatado entre Krischke e Pithan,
+    abaixo da metade necessária); os envelopes só foram abertos em 1939 e Thomas indicou Pithan
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      A polêmica proposta foi finalmente aprovada por 16 votos a 6. Feita a votação, os envelopes fechados foram
+      entregues ao bispo que manteve o segredo até 1939.
+    page: '190'
+  - source: kickhofel-1995
+    quote: >-
+      George Upton Krischke e Athalício Theodoro Pithan tinham recebido cada um o mesmo número de votos, mas menos
+      da metade necessária para a eleição. Embora não fosse esse o modo de proceder, o bispo se considerou suficientemente
+      orientado para escolher Pithan.
+    page: '191'

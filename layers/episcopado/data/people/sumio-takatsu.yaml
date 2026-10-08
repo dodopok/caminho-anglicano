@@ -1,0 +1,137 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sumio-takatsu
+name: Sumio Takatsu
+full_name: Sumio Takatsu
+aliases:
+- Bispo Takatsu
+birth:
+  date: '1927-01-03'
+  sources:
+  - source: costa2021
+    quote: Sumio Takatsu nasceu na cidade de Sapporo, Japão, em 03 de janeiro de 1927
+  - source: costa2021
+    quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
+death:
+  date: '2004-01-23'
+  sources:
+  - source: costa2021
+    quote: Sumio Takatsu nasceu na cidade de Sapporo, Japão, em 03 de janeiro de 1927
+  - source: costa2021
+    quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
+wikidata: Q138963123
+biography: Nipo-brasileiro; segundo bispo de Sao Paulo (1977-1989); fundador do IAET.
+sources:
+- source: costa2021
+  quote: Sumio Takatsu nasceu na cidade de Sapporo, Japão, em 03 de janeiro de 1927
+- source: costa2021
+  quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
+ordinations:
+- order: diaconate
+  date: '1955'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1955 - … Sumio Takatsu
+    page: '370'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: episcopate
+  date: '1977-06-12'
+  place: St. Paul's Church (Igreja de Sao Paulo), Sao Paulo
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: arthur-rodolpho-kratz
+  co_consecrators:
+  - agostinho-guillon-soria
+  - elliott-lorenz-sorge
+  - olavo-ventura-luiz
+  - plinio-lauer-simoes
+  status: confirmed
+  sources:
+  - source: ia-gc-journal-1979
+    quote: June 12, 1977 — The Rt. Rev. Sumio Takatsu, South Central Brazil
+  - source: costa2021
+    quote: >-
+      sendo sagrado no dia 12 de junho do mesmo ano, na Igreja de São Paulo (St. Paul’s Church), pelo Bispo Primaz,
+      Arthur Rodolpho Kratz, e pelo co-sagrantes os bispos Olavo Ventura Luiz, Plínio Simões, Elliott Sorge e Agostinho
+      Sória (KICKHÖFEL, 1995, p. 288).
+  - source: wp-pt-sumio
+    quote: Prevalecendo sua eleição, ele foi consagrado bispo em 12 de junho daquele ano.
+  - source: ens-77198
+    quote: >-
+      The Rev. Sumio Takatsu, 50, has been elected Bishop of South Central Diocese of the Episcopal Church in Brasil
+      in Apostolic succession to the Rt. Rev. Elliott Sorge who resigned the see
+  - source: sinopse-2003
+    quote: 1977 - Sumio Takatsu (São Paulo)
+  - source: kickhofel-1995
+    quote: >-
+      Sumio Takatsu foi sagrado no dia 12 de junho de 1977, na Igreja de São Paulo (Saint Paul's Church), em São
+      Paulo, pelo bispo primaz Arthur Rodolpho Kratz, sendo co-sagrantes os bispos Olavo Ventura Luiz, Plínio Lauer
+      Simões, Elliot Lorenz Sorge e Agostinho Guilhon Sória.
+    page: '288'
+  notes: >-
+    Confirma a data (12/06/1977) por fonte primária da TEC (notificação ao Presiding Bishop). Não nomeia sagrantes;
+    o sagrante principal Kratz continua dependendo só de Costa (2021). Costa cita Kickhofel 1995. Eleito em 30/04/1977
+    (Costa) ou 20/04/1977 (Wikipedia PT, citando Kickhofel 2006).
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dasp
+  start: '1977-06-12'
+  end: '1989'
+  end_reason: resignation
+  status: contested
+  sources:
+  - source: costa2021
+    quote: 1977-1989 – Sumio Takatsu
+  - source: wp-pt-sumio
+    quote: Permaneceu no cargo até sua renúncia, no final de 1989.
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1977-1989 - Sumio Takatsu
+    page: '368'
+  - source: kickhofel-1995
+    quote: O bispo Takatsu efetivamente se aposentou no final de 1989.
+    page: '290'
+  discrepancies:
+  - field: end_reason
+    value: retirement
+    sources:
+    - source: kickhofel-1995
+      quote: O bispo Takatsu efetivamente se aposentou no final de 1989.
+      page: '290'
+events:
+- type: other
+  date: '1977-04-30'
+  description: Eleito bispo da Diocese Sul Central na quinta votação; primeiro bispo celibatário da igreja
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Novo concílio foi realizado em 30 de abril de 1977, tendo desta vez sido eleito o reverendo Sumio Takatsu,
+      que veio a ser o primeiro bispo celibatário (209) e que disputou o cargo com os dois candidatos mais votados
+      no concílio anterior. O número de votos necessários saiu na quinta votação.
+    page: '287'
+- type: other
+  date: '1979'
+  description: Recebeu o título de Doutor Honoris Causa do Seminário da Virgínia
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      (210) Em 1979, recebeu o titulo de Doutor Honoris Causa do Seminário de Virginia por sua dedicação aos estudos
+      teológicos e interesse na educação teológica no Brasil.
+    page: '288'
+- type: other
+  date: 1984-07
+  description: >-
+    Apresentou ao Sínodo de 1984 a proposta de ordenação feminina às três ordens, aprovada por unanimidade na Câmara
+    dos Bispos
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Kratz faleceu em 4 de março de 1984, quatro meses antes do Sínodo aprovar a proposta da ordenação feminina,
+      apresentada ao plenário sinodal pelo bispo Sumio Takatsu, por unanimidade na Câmara dos Bispos e com apenas
+      dois votos contrários na Câmara dos Presbíteros e Leigos.
+    page: '318'

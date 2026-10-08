@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: reinaldo-de-souza-pinto
+name: Reinaldo de Souza Pinto
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  diocese: iab-regiao-missionaria
+  start: '2018'
+  end: '2024'
+  end_reason: left
+  status: probable
+  sources:
+  - source: iab-regiao-missionaria
+    quote: 'Ministro Encarregado: Ministro Local: Reinaldo de Souza'
+  notes: >-
+    Local: Igreja Anglicana Família, Jacareí-SP. Em 2018 ministro local (leigo) na IAB; em 20/12/2024 presbítero
+    reconhecido pela REB. Identidade "Reinaldo de Souza" = "Reinaldo de Souza Pinto" provável (mesma igreja, Família/Jacareí,
+    presente na REB). Logo, foi ordenado diácono e presbítero entre 2018 e 2024, provavelmente na IAB.
+- jurisdiction: reb
+  role: clergy
+  start: '2024-12-20'
+  status: confirmed
+  sources:
+  - source: reb-portaria-01-2024
+    quote: Rev. Reinaldo de Souza Pinto – Presbítero.
+  - source: reb-portaria-01-2024
+    quote: Ficam reconhecidos as ordens sagradas dos seguintes clérigos
+  notes: >-
+    Ordens (presbítero) reconhecidas na fundação da REB pela Portaria 01/2024 — ordenação anterior, em jurisdição
+    não informada (provavelmente IAB). Ordens (presbitero) reconhecidas na fundação; origem das ordens não informada.
+- jurisdiction: reb
+  role: priest
+  status: confirmed
+  sources:
+  - source: reb-calendario-2026
+    quote: "Presbíteros \nElias Valentim Nunes\nDouglas de Araujo Silva\nJoyce Karolina Ribeiro Baiense\nCynthia\
+      \ Muniz\nReinaldo De Souza Pinto\nElionai lisboa de aguiar Rodrigues\nCícero Miranda Pontara"
+  notes: >-
+    Presbítero(a) na lista do clero do Calendário REB 2026. Consta na lista do clero do Calendário REB 2026.
+events:
+- type: other
+  date: '2024-12-20'
+  description: >-
+    Fundação da Rede Episcopal Brasileira (Ata de Fundação) e reconhecimento das ordens de Cícero Miranda Pontara,
+    Elionai Lisboa de Aguiar Rodrigues e Reinaldo de Souza Pinto (presbíteros) e Weiden de Morais Mendes (diácono);
+    instituição de seis postulantes.
+  status: confirmed
+  sources:
+  - source: reb-portaria-01-2024
+    quote: >-
+      1. Rev. Cícero Miranda Pontara– Presbítero. 2. Rev. Elionai Lisboa de Aguiar Rodrigues – Presbítero. 3. Rev.
+      Reinaldo de Souza Pinto – Presbítero. 4. Rev. Weiden de Morais Mendes – Diácono.
+- type: other
+  date: '2019-06-21'
+  description: Aniversário de ordenação registrado no calendário da REB (ordem não especificada).
+  status: probable
+  sources:
+  - source: reb-calendario-2026
+    quote: 21/06/2019 – Aniversário de Ordenação • Rev. Reinaldo

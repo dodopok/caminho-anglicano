@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: juliano-bernardino-godoy
+name: Juliano Bernardino Godoy
+aliases:
+- Reverendo Juliano
+biography: >-
+  Reverendo; seminarista da IEAB (2012), fundador da Igreja Anglicana Episcopal de São Jorge (Rio Claro, SP); ordenado
+  sacerdote em 2014 na Catedral Anglicana de São Paulo; incardinado na Diocese Anglicana de Votorantim (2016–2017);
+  desde agosto de 2017 no clero da Igreja Episcopal Anglicana do Chile.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: sob a liderança do reverendo Juliano Bernardino Godoy
+  page: '124'
+ordinations:
+- order: presbyterate
+  date: '2014'
+  place: Catedral Anglicana de São Paulo
+  jurisdiction: casp
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Prosseguiu sua formação na Catedral Anglicana de São Paulo, onde foi ordenado ao sacerdócio em 2014, exercendo
+      seu ministério até 2016.
+    page: '124'
+  notes: >-
+    O livro não nomeia o ordenante; em 2014 a Catedral estava no Movimento Anglicano no Brasil (bispos Roger Douglas
+    Bird e Glauco Soares de Lima).
+affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: seminarista
+  start: '2012'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O clérigo iniciou sua trajetória ministerial como seminarista na Igreja Episcopal Anglicana do Brasil em 2012
+    page: '124'
+- jurisdiction: casp
+  role: clergy
+  start: '2014'
+  end: '2016'
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: onde foi ordenado ao sacerdócio em 2014, exercendo seu ministério até 2016.
+    page: '124'
+- jurisdiction: dav
+  role: clergy
+  start: '2016'
+  end: '2017'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Também atuou como clérigo incardinado na Diocese Anglicana de Votorantim entre 2016 e 2017.
+    page: '124'
+- jurisdiction: ieach
+  role: clergy
+  start: 2017-08
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: a partir de agosto de 2017, passou a integrar o clero da Igreja Episcopal Anglicana do Chile.
+    page: '124'
+  notes: >-
+    Lidera a Paróquia Anglicana de São Jorge (Rio Claro, SP, fundada em 2012), ligada à Igreja Anglicana Episcopal
+    do Brasil (IAEB).

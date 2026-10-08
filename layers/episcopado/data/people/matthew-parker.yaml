@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: matthew-parker
+name: Matthew Parker
+full_name: Matthew Parker
+aliases:
+- Archbishop Parker
+death:
+  date: '1575-05-17'
+  sources:
+  - source: stubbs-1897
+    quote: Matthew Parker. Canterbury; d. 1575, May 17.
+  - source: wikidata-api-2
+    quote: '"Q711332": enwiki "Matthew Parker"'
+wikidata: Q711332
+biography: >-
+  Arcebispo de Cantuária sagrado em 17/12/1559, em Lambeth. É o elo de que descende toda a sucessão anglicana posterior.
+  A validade da sua sagração foi contestada por autores católicos; ver o evento e as dúvidas.
+sources:
+- source: stubbs-1897
+  quote: Matthew Parker. Canterbury; d. 1575, May 17.
+- source: wikidata-api-2
+  quote: '"Q711332": enwiki "Matthew Parker"'
+ordinations:
+- order: episcopate
+  date: '1559-12-17'
+  place: Capela do Palácio de Lambeth
+  jurisdiction: church-of-england
+  office: primate
+  principal_consecrator: william-barlow
+  co_consecrators:
+  - john-hodgkins
+  - john-scory
+  - miles-coverdale
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1559, Dec. 17. Matthew Parker. Canterbury; d. 1575, May 17. Consecrated at Lambeth by William Barlow,
+      elect of Chichester, late Bishop of Bath and Wells, John, elect of Hereford, late Bishop of Rochester, John
+      of Bedford, and Miles, late Bishop of Exeter ; Reg. Parker, 10.
+  - source: ce-anglican-orders
+    quote: >-
+      To Barlow was given the lead, and he, with the others as his assistants, consecrated Parker, 17 December,
+      1559, in the private chapel at Lambeth, using the Edwardine Ordinal.
+  - source: wp-matthew-parker
+    quote: >-
+      | consecrated by = [[William Barlow (bishop of Chichester)|William Barlow]] | co-consecrators = [[John Hodgkins]]{{br}}[[John
+      Scory]]{{br}}[[Myles Coverdale]] | date of consecration = 17 December 1559 | place of consecration = [[Lambeth
+      Palace Chapel]]
+  notes: >-
+    Fato (quem impôs as mãos, quando e onde) confirmado por fonte anglicana (Stubbs, que cita o Registro de Parker,
+    fl. 10) e por fonte católica (Catholic Encyclopedia, 1907), que aceita o Registro como documento contemporâneo.
+    O que se discute é a VALIDADE sacramental (rito eduardino; a sagração do próprio Barlow), e não a ocorrência.
+    Ver o evento e as dúvidas.
+affiliations:
+- jurisdiction: church-of-england
+  role: archbishop
+  diocese: diocese-of-canterbury
+  start: '1559-12-17'
+  end: '1575-05-17'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Matthew Parker. Canterbury; d. 1575, May 17.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+events:
+- type: other
+  date: '1559-12-17'
+  description: >-
+    Controvérsia sobre a sagração de Matthew Parker (1559) e o Registro de Lambeth. Fatos que as duas partes aceitam:
+    em 17/12/1559, na capela de Lambeth, Barlow (que presidiu), Scory, Coverdale e Hodgkins sagraram Parker pelo
+    Ordinal eduardino; o Registro de Parker é documento contemporâneo; a história do Nag's Head (sagração numa taverna)
+    é tida como lenda. Pontos em disputa: (1) a autenticidade do Registro, posta em dúvida por autores católicos
+    do século XVII (ex.: Champney, 1616); (2) se o próprio Barlow foi sagrado, pois não há registro da sua sagração;
+    (3) se o rito eduardino bastava em forma e intenção. Em 1896 a bula Apostolicae Curae (Leão XIII) declarou as
+    ordens anglicanas nulas pelo defeito de forma e intenção, independentemente das questões (1) e (2). Os arcebispos
+    de Cantuária e York responderam em 1897 com Saepius Officio.
+  status: confirmed
+  sources:
+  - source: ce-anglican-orders
+    quote: >-
+      Mason in his "Vindiciae Ecclesiae Anglicanae" replied on the Anglican side, in 1613, and was the first to
+      call attention, at all events effectively, to the entry in Parker's "Register" of his consecration on 17 December,
+      1559, in the private chapel at Lambeth.
+  - source: ce-anglican-orders
+    quote: >-
+      Champney, who wrote in 1616, suggests, what was clearly the general opinion of the Catholics at the time,
+      that the entry in question was a forgery.
+  - source: ce-anglican-orders
+    quote: >-
+      there can be no question, to us who know all the lines of converging evidence that tell in its favour, but
+      that his consecration did take place on the day and in the manner described in the "Register", and that the
+      latter was a contemporary document.
+  - source: ce-anglican-orders
+    quote: >-
+      (1) the truth of the Nag's Head story; (2) the spuriousness of the Lambeth "Register"; (3) the want of episcopal
+      character in Barlow, Parker's chief consecrator; (4) the insecurity of the rite used, in view of its many
+      omissions; (5) the probability that it does not contain the essentials of a valid Ordinal.
+  - source: ce-anglican-orders
+    quote: >-
+      they are of the most fundamental kind, and are independent of any defects that may be thought to arise out
+      of the omission in the Ordinal of a tradition of the instruments, or of the doubt about Barlow's consecration.
+  - source: wp-matthew-parker
+    quote: >-
+      The Church of England archbishops of Canterbury and York rejected the pontiff's arguments in ''Saepius Officio''
+      in 1897.
+  - source: wp-nags-head
+    quote: >-
+      This story was later discredited, as a full eyewitness description was found of the consecration of Parker,
+      in [[Lambeth Palace Chapel]], by bishops [[John Scory]], [[William Barlow (bishop of Chichester)|William Barlow]]
+      (chief consecrator), [[Myles Coverdale]], and [[John Hodgkins]].
+  - source: stubbs-1897
+    quote: >-
+      Consecrated at Lambeth by William Barlow, elect of Chichester, late Bishop of Bath and Wells, John, elect
+      of Hereford, late Bishop of Rochester, John of Bedford, and Miles, late Bishop of Exeter ; Reg. Parker, 10.

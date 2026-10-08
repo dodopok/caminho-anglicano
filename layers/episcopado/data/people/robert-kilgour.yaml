@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: robert-kilgour
+name: Robert Kilgour
+full_name: Robert Kilgour
+aliases:
+- Dr. Robert Kilgour
+wikidata: Q7346347
+biography: >-
+  Bispo de Aberdeen e primus da Igreja Episcopal Escocesa; sagrante principal de Samuel Seabury (1784).
+sources:
+- source: perry-1895
+  quote: Dr. Robert Kilgour, the primus, bishop of Aberdeen
+- source: wikidata-api-2
+  quote: '"Q7346347": enwiki "Robert Kilgour"'
+affiliations:
+- jurisdiction: scottish-episcopal-church
+  role: primate
+  diocese: diocese-of-aberdeen
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: Dr. Robert Kilgour, the primus, bishop of Aberdeen
+  notes: Cargo atestado em 14/11/1784 (sagração de Seabury); início e fim não registrados.

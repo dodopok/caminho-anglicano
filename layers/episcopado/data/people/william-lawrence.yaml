@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: william-lawrence
+name: William Lawrence
+full_name: William Lawrence
+aliases:
+- Bishop Lawrence of Massachusetts
+- Bp. Lawrence (Massachusetts)
+wikidata: Q8014355
+biography: Bispo de Massachusetts; co-sagrante de Kinsolving (1899).
+sources:
+- source: som-1899-02
+  quote: and Bishop Lawrence, of Mass­achusetts
+- source: wd-q8014355
+  quote: William Lawrence | Episcopal Bishop of Massachusetts (1850–1941)
+ordinations:
+- order: episcopate
+  date: '1893-10-05'
+  place: Trinity Church, Boston
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: john-williams
+  co_consecrators:
+  - courtney
+  - henry-benjamin-whipple
+  - henry-codman-potter
+  - huntington
+  - neely
+  - niles
+  - thomas-marsh-clark
+  - william-croswell-doane
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      Elected bishop on May 4, 1893, lie was consecrated on October 5th, in Trinity, Boston, by Bishops Williams,
+      Doane, Clark, \\'hipple, Huntington, Neely, Niles, Potter, and Dr. Courtne)-, bisliop of No\a Scotia.
+  - source: wp-en-histlist
+    quote: >-
+      | [[William Lawrence (bishop)|William Lawrence]] | [[John Williams (bishop of Connecticut)|54]] [[Thomas Marsh
+      Clark|63]] [[Henry A. Neely|83]] | 1893
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte. Courtney era bispo
+    da Nova Escócia (Canadá).
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-massachusetts
+  start: '1893-10-05'
+  status: probable
+  sources:
+  - source: wp-en-histlist
+    quote: >-
+      | [[William Lawrence (bishop)|William Lawrence]] | [[John Williams (bishop of Connecticut)|54]] [[Thomas Marsh
+      Clark|63]] [[Henry A. Neely|83]] | 1893
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

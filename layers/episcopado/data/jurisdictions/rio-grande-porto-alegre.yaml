@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: rio-grande-porto-alegre
+name: Rio Grande / Porto Alegre
+type: diocese
+relations:
+- type: part_of
+  target: dmsb
+  status: confirmed
+  sources:
+  - source: wit-1951-10-04
+    quote: >-
+      For six years he was a professor in the theological school at Rio Grande do Sul, and from 1907 to 1911 was
+      also rector of the Church of the Saviour there. In 1912 he founded the Southern Cross School at Porte Alegre,
+      of which he was headmaster until his election and consecration as suffragan bishop in 1925.

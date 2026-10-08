@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ialab
+acronym: IALAB
+name: Igreja Anglicana Latino Americana no Brasil
+aliases:
+- Igreja Anglicana Latino Americana do Brasil
+type: national_church
+country: BR
+founded:
+  date: '2006-11-14'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana Latino Americana do Brasil (também chamada por sua sigla IALAB) teve origem na figura do
+      bispo Geraldo Santos de Magela Neto. Nos registros jurídicos ela foi aberta em 14 de novembro de 2006 e teve
+      as suas atividades encerradas em 06 de novembro de 2018.
+    page: '158'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Localizada em São Luis, do Maranhão, esta Igreja Anglicana Independente, teve um breve trabalho desenvolvido
+      na capital do estado.
+    page: '158'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana Latino Americana no Brasil (Extinta em 2018)
+    page: '172'
+dissolved:
+  date: '2018-11-06'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana Latino Americana do Brasil (também chamada por sua sigla IALAB) teve origem na figura do
+      bispo Geraldo Santos de Magela Neto. Nos registros jurídicos ela foi aberta em 14 de novembro de 2006 e teve
+      as suas atividades encerradas em 06 de novembro de 2018.
+    page: '158'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Localizada em São Luis, do Maranhão, esta Igreja Anglicana Independente, teve um breve trabalho desenvolvido
+      na capital do estado.
+    page: '158'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana Latino Americana no Brasil (Extinta em 2018)
+    page: '172'
+description: >-
+  Igreja anglicana independente signatária da Declaração da Boa Viagem (2006), pelo bispo Geraldo Santos de Magela
+  Neto.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: a Igreja Anglicana Latino Americana no Brasil (IALAB), pelo bispo Geraldo Santos de Magela Neto
+  page: '119'

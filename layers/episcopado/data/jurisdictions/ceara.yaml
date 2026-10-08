@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ceara
+name: Ceará
+type: diocese
+relations:
+- type: part_of
+  target: pacst
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Província Anglo-Católica da Santíssima Trindade também continuou com o bispo Antônio Bessa como seu primaz.
+    page: '162'

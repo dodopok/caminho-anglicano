@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: cecil-john-patterson
+name: Cecil John Patterson
+full_name: Cecil John Patterson
+aliases:
+- Cecil John, Archbishop of West Africa
+- Cecil Patterson
+birth:
+  date: '1908-01-09'
+  sources:
+  - source: wp-patterson
+    quote: In 1961 he became [[Archbishop]] of the [[Church of the Province of West Africa]].
+  - source: wikidata-api
+    quote: 'Q5056257 Cecil Patterson {''enwiki'': ''Cecil Patterson (bishop)''}'
+  - source: gc-journal-1964
+    quote: 'Received notice from Cecil John, Archbishop of West Africa, of the consecration of:'
+death:
+  date: '1992-04-11'
+  sources:
+  - source: wp-patterson
+    quote: In 1961 he became [[Archbishop]] of the [[Church of the Province of West Africa]].
+  - source: wikidata-api
+    quote: 'Q5056257 Cecil Patterson {''enwiki'': ''Cecil Patterson (bishop)''}'
+  - source: gc-journal-1964
+    quote: 'Received notice from Cecil John, Archbishop of West Africa, of the consecration of:'
+wikidata: Q5056257
+biography: >-
+  Bispo assistente (1942) e depois bispo on the Niger (1945); arcebispo da África Ocidental a partir de 1961.
+sources:
+- source: wp-patterson
+  quote: In 1961 he became [[Archbishop]] of the [[Church of the Province of West Africa]].
+ordinations:
+- order: episcopate
+  date: '1942-02-02'
+  place: Catedral de São Paulo, Londres
+  jurisdiction: church-of-england
+  office: auxiliary
+  principal_consecrator: cosmo-gordon-lang
+  status: probable
+  sources:
+  - source: wp-patterson
+    quote: >-
+      He was ordained and consecrated a bishop by [[Cosmo Lang]], [[Archbishop of Canterbury]], at [[St Paul's Cathedral]],
+      on [[Candlemas]] (2 February) 1942.
+  - source: wp-patterson
+    quote: >-
+      before his appointment to the [[episcopate]] as [[Assistant Bishop]] (1942) then [[Bishop on the Niger]] (1945)
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      161d. Cosmo Gordon Lang (1928-1942) que, em 1942, sagrou Cecil John Patterson como bispo da Diocese da Nigéria,
+      à época parte da Província da África Ocidental.
+  notes: >-
+    Pôster: Lang "em 1942, sagrou Cecil John Patterson como bispo da Diocese da Nigéria" — sagrante e ano confirmados
+    pela Wikipédia (que cita Church Times, 6/02/1942, p. 87, não aberto). Cargo CORRIGIDO: bispo ASSISTENTE (on
+    the Niger), não bispo diocesano "da Nigéria". O elo Patterson → Moses Scott (1961), que seria necessário para
+    a linha nigeriana do pôster, não foi verificado.

@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: daniel-tuttle
+name: Daniel Tuttle
+full_name: Daniel Sylvester Tuttle
+aliases:
+- Bishop Tuttle
+- Bp. Tuttle
+- Daniel S. Tuttle
+- Daniel Sylvester Tuttle
+birth:
+  date: '1837-01-26'
+  sources:
+  - source: wp-tuttle
+    quote: '''''''Daniel Sylvester Tuttle'''''' (January 26, 1837 – April 17, 1923)'
+death:
+  date: '1923-04-17'
+  sources:
+  - source: wp-tuttle
+    quote: '''''''Daniel Sylvester Tuttle'''''' (January 26, 1837 – April 17, 1923)'
+wikidata: Q5218670
+biography: Bispo Presidente; sagrante de W. C. Brown (1914).
+sources:
+- source: wp-en-brown
+  quote: consecrated_by   = [[Daniel S. Tuttle]]
+- source: wd-q5218670
+  quote: Daniel Sylvester Tuttle | American Episcopal bishop (1837-1923)
+ordinations:
+- order: episcopate
+  date: '1867-05-01'
+  place: Trinity Chapel, Nova York
+  jurisdiction: tec
+  office: missionary
+  principal_consecrator: john-henry-hopkins
+  co_consecrators:
+  - george-maxwell-randall
+  - henry-adams-neely
+  - horatio-potter
+  - john-barrett-kerfoot
+  - neely
+  - randall
+  - william-henry-odenheimer
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      It was not until May I, 1867, that he was set apart for his work. The service took place in Trinity Chapel,
+      New York. The consecrators were Bishops Hopkins, Horatio Potter, Odenheimer, Randall, Kerfoot, and Neely.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Daniel S. Tuttle]] | [[John Henry Hopkins|26]] [[Horatio Potter|62]] [[William Henry Odenheimer|66]] |
+      1867
+  - source: perry-episcopate-1895
+    quote: >-
+      It was not until May i, 1867, that he was set apart for his work. The service took place in Trinity Chapel,
+      New York. The consecrators were Bishops Hopkins, Horatio Potter, Odenheimer, Randall, Kerfoot, and Neely.
+  - source: wp-tuttle
+    quote: >-
+      Presiding Bishop [[John Henry Hopkins]] of Vermont, along with bishops [[Horatio Potter]] of New York and
+      [[William Henry Odenheimer]] of New Jersey consecrated their young colleague.
+  - source: wp-lista-bispos-tec
+    quote: >-
+      bgcolor="#D4B1BB" | 84 | [[Daniel S. Tuttle]] | [[John Henry Hopkins|26]] [[Horatio Potter|62]] [[William
+      Henry Odenheimer|66]] | 1867 | [[Missionary Bishop|Missionary]], [[Montana Territory|I Montana]], [[Idaho
+      Territory|I Boise (Idaho)]], and [[Episcopal Diocese of Utah|I Utah]], [[Episcopal Diocese of Missouri|III
+      Missouri]] | [[List of presiding bishops of the Episcopal Church in the United St
+  - source: iab-poster-linhagem-uchoa
+    quote: além disso, também sagrou Daniel S. Tuttle em 1867 na Diocese Episcopal do Missouri (ver 155b).
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte. Já em pontes-estrangeiras.json;
+    aqui com Perry como fonte primária. Pôster: Hopkins "sagrou Daniel S. Tuttle em 1867 na Diocese Episcopal do
+    Missouri" — sagrante e ano CONFIRMADOS; CORRIGIDO o cargo/local: Tuttle foi sagrado em Nova York como bispo
+    missionário de Montana, Idaho e Utah (só depois foi bispo do Missouri). Perry (1895) inclui Kerfoot entre os
+    co-sagrantes. Nomes completos de Randall e Neely inferidos dos sobrenomes. O pôster associa a sagração ao Missouri;
+    Tuttle foi inicialmente bispo missionário de Montana/Idaho/Utah — verificar.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: missionary-district-of-montana-idaho-and-utah
+  start: '1867-05-01'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: missionary episcopate of Montana, Idaho, and Utah
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.
+- jurisdiction: tec
+  role: primate
+  status: confirmed
+  sources:
+  - source: tlc-1911-01-14
+    quote: Daniel Sylvester Tuttle, D.D., Bishop of Missouri and’ Presiding Bishop
+  notes: Presiding Bishop em janeiro de 1911 (cargo atestado nessa data).

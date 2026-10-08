@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: albert-arthur-chambers
+name: Albert Arthur Chambers
+aliases:
+- Albert Chambers
+- Chambres
+biography: >-
+  Bispo emérito da Diocese Episcopal de Springfield; principal liderança do Movimento Contínuo; em 1978 sagrou quatro
+  bispos com Francisco Pagtakhan.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A principal liderança do Movimento Contínuo foi o bispo emérito da Diocese Episcopal de Springfield, Albert
+    Arthur Chambers.
+  page: '70'
+affiliations:
+- jurisdiction: tec
+  role: diocesan_bishop
+  diocese: diocese-de-springfield
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o bispo emérito da Diocese Episcopal de Springfield, Albert Arthur Chambers.
+    page: '70'
+  notes: Bispo emérito à época do Congresso de Saint Louis (1977).
+events:
+- type: other
+  date: '1978-01-28'
+  description: >-
+    Em 28 de janeiro de 1978 o bispo Albert A. Chambers (aposentado, TEC) foi o sagrante principal de quatro bispos
+    da "Anglican Church in North America" (Movimento Contínuo); depois declarou retorno ao status de aposentado.
+  status: confirmed
+  sources:
+  - source: ia-gc-journal-1979
+    quote: >-
+      On January 28, 1978, he was the chief consecrator of four bishops for the Anglican Church in North America.
+- type: other
+  date: '1978'
+  description: >-
+    Mark Pae (Igreja Anglicana da Coreia) consente in absentia nas sagrações de 1978 do Movimento Contínuo.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Mark Pae, que, embora não pôde participar presencialmente das sagrações, deu o seu consentimento para os atos
+      litúrgicos in absentia.
+    page: '71'

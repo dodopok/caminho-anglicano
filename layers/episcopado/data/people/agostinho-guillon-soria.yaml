@@ -1,0 +1,190 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: agostinho-guillon-soria
+name: Agostinho Guillon Sória
+full_name: Agostinho Guillon Sória
+aliases:
+- Agostino Soria
+- Dom Agostinho Sória
+birth:
+  date: '1922-08-28'
+  sources:
+  - source: costa2021
+    quote: Agostinho Guillon Sória nasceu na cidade de Bagé em 28 de agosto de 1922.
+  - source: costa2021
+    quote: Faleceu em 27 de junho de 1996.
+  - source: kickhofel-1995
+    quote: Agostinho Sória nasceu em Bagé (RS), em 1922 e fez seus primeiros estudos na terra natal.
+    page: '277'
+death:
+  date: '1996-06-27'
+  sources:
+  - source: costa2021
+    quote: Agostinho Guillon Sória nasceu na cidade de Bagé em 28 de agosto de 1922.
+  - source: costa2021
+    quote: Faleceu em 27 de junho de 1996.
+wikidata: Q97180655
+biography: >-
+  Deao em Porto Alegre; bispo da Diocese Central/Rio (1977-1984) e primeiro bispo de Brasilia (1985-1988).
+sources:
+- source: costa2021
+  quote: Agostinho Guillon Sória nasceu na cidade de Bagé em 28 de agosto de 1922.
+- source: costa2021
+  quote: Faleceu em 27 de junho de 1996.
+ordinations:
+- order: diaconate
+  date: '1947-02-09'
+  place: Trinity Church (Igreja da Santíssima Trindade), Porto Alegre
+  jurisdiction: ieab
+  ordained_by: william-matthews-merrick-thomas
+  status: probable
+  sources:
+  - source: ia-living-church-1947-03-02
+    quote: >-
+      Kratz, and Agestinho Soria were ordained to the diaconate by Bishop Thomas of Southern Brazil on February
+      9th at Trinity Church, Porto Alegre, R. G. S.
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1947 - … Agostinho Guillon Sória
+    page: '370'
+  - source: kickhofel-1995
+    quote: Foi ordenado ao diaconato em 1947 e ao presbiterado no ano seguinte.
+    page: '277'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1948-04-11'
+  place: Igreja do Redentor (Church of the Redeemer), Pelotas
+  jurisdiction: ieab
+  ordained_by: athalicio-pithan
+  status: probable
+  sources:
+  - source: ia-living-church-1948-05-02
+    quote: >-
+      and Agostinho Soria were ordained to the priesthood on April 11th at the Church of the Redeemer, Pelotas
+  - source: ia-living-church-1948-05-02
+    quote: >-
+      Frs. Bueno, Rocha, and Séria were ordained by Bishop Pit- han, Suffragan of Brazil; Frs. Kainuma, Kratz, and
+      de Mattos, by Bishop Thomas of Southern Brazil.
+  - source: kickhofel-1995
+    quote: Foi ordenado ao diaconato em 1947 e ao presbiterado no ano seguinte.
+    page: '277'
+  notes: OCR grafa "Séria".
+- order: episcopate
+  date: '1977-04-24'
+  place: Christ Church, Rio de Janeiro
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: arthur-rodolpho-kratz
+  co_consecrators:
+  - edmund-knox-sherrill
+  - elliott-lorenz-sorge
+  - olavo-ventura-luiz
+  status: confirmed
+  sources:
+  - source: ia-gc-journal-1979
+    quote: >-
+      The Presiding Bishop received notice of the conscration of the following foreign bishops, Brazil April 24,
+      1977 — The Rt. Rev. Agostino Guillon Soria, Central Brazil
+  - source: costa2021
+    quote: >-
+      eleito em 11 de novembro de 1976 e sagrado ao episcopado em 24 de abril de 1977, na Christ Church, pelo Bispo
+      Primaz Arthur Rodolpho Kratz, tendo como co-sagrantes os bispos Edmund Sherrill, Elliott Sorge e Olavo Ventura
+      Luiz.
+  - source: sinopse-2003
+    quote: 1977 - Agostinho Guillón Sória (Rio de Janeiro)
+  - source: kickhofel-1995
+    quote: >-
+      O bispo Edmund Knox Sherrill optou pela nova diocese e foi sucedido na Diocese Central pelo deão Agostinho
+      Guilhon Sória, eleito para o episcopado em 11 de novembro de 1976 e sagrado em 24 de abril de 1977, na Igreja
+      de Cristo (Christ Church), no Rio de Janeiro, sendo sagrante o bispo primaz Arthur Rodolpho Kratz e co-sagrantes
+      os bispos Edmund Knox Sherril, Olavo Ventura Luiz e Elliot Lorenz Sorge.
+    page: '277'
+  notes: >-
+    Confirma, por fonte primária da TEC, a data já registrada em ieab-1965-hoje.json (24/04/1977). A notificação
+    não nomeia sagrantes. Bispo da Diocese Central (Rio de Janeiro), sucedendo Sherrill.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-darj
+  start: '1977'
+  end: '1984'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 1977-1984 – Agostinho Guillon Sória
+  - source: costa2021
+    quote: para substituir o bispo Agostinho Guillon Sória que foi transferido para a Diocese de Brasília.
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1977-1984 - Agostinho Guillon Sória
+    page: '368'
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dab
+  start: '1985-06-09'
+  end: '1988'
+  end_reason: retirement
+  status: contested
+  sources:
+  - source: costa2021
+    quote: 1985-1988 – Agostinho Guillon Sória
+  - source: wp-pt-dioc-brasilia
+    quote: Agostinho Sória (1º bispo diocesano) - 1985 a abril de 1988;
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Missionária de Brasília … 1985-1988 - Agostinho Guillon Sória
+    page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      Como bispo da diocese que originou a nova região eclesiástica, Agostinho Sória optou pela nova diocese que
+      compreendia o Distrito Federal, Mato Grosso, Goiás, Tocantins e o triângulo mineiro. … Oficialmente instalada
+      no dia nove de junho de 1985 e instituído seu primeiro bispo
+    page: '305'
+  notes: Costa diz tambem que assumiu Brasilia "em 1982" (conflito).
+  discrepancies:
+  - field: end
+    value: '1989'
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        Como bispo da diocese que originou a nova região eclesiástica, Agostinho Sória optou pela nova diocese que
+        compreendia o Distrito Federal, Mato Grosso, Goiás, Tocantins e o triângulo mineiro. … Oficialmente instalada
+        no dia nove de junho de 1985 e instituído seu primeiro bispo
+      page: '305'
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dm
+  end: '1976'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Exerceu o pastorado em Santana do Livramento, São Gabriel, São Paulo, Rio Grande e Porto Alegre, onde foi
+      deão da Catedral da Santíssima Trindade durante 15 anos, deixando o cargo em 1976, quando foi eleito bispo
+      para a Diocese Central, transferindo-se para o Rio de Janeiro.
+    page: '277'
+  notes: Deão da Catedral da Santíssima Trindade, Porto Alegre, por 15 anos.
+events:
+- type: other
+  date: 1976-11
+  description: >-
+    Eleito bispo da Diocese Central (Rio de Janeiro) em concílio extraordinário; a data diverge dentro do próprio
+    livro (11 de novembro na p. 277; 13 de novembro na nota 193, p. 259)
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      O bispo Edmund Knox Sherrill optou pela nova diocese e foi sucedido na Diocese Central pelo deão Agostinho
+      Guilhon Sória, eleito para o episcopado em 11 de novembro de 1976 e sagrado em 24 de abril de 1977, na Igreja
+      de Cristo (Christ Church), no Rio de Janeiro, sendo sagrante o bispo primaz Arthur Rodolpho Kratz e co-sagrantes
+      os bispos Edmund Knox Sherril, Olavo Ventura Luiz e Elliot Lorenz Sorge.
+    page: '277'
+- type: other
+  date: '1989'
+  description: Aposentou-se por motivos de saúde, depois de 41 anos de ministério ordenado, doze como bispo
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Aposentou-se em 1989 por motivos de saúde, depois de quarenta e um anos de ministério ordenado, dos quais
+      doze como bispo.
+    page: '306'

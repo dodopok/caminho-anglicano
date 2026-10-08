@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: paulo-sergio-iatb
+name: Paulo Sérgio (IATB)
+aliases:
+- bispo Paulo Sérgio
+biography: >-
+  Bispo responsável pela Diocese Anglicana de Anápolis (IATB) por volta de 2016; o livro não dá o sobrenome.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: que à época estava sob os cuidados do padre Bertoni Martins e do bispo Paulo Sérgio.
+  page: '105'
+affiliations:
+- jurisdiction: iatb
+  role: bishop
+  diocese: diocese-anglicana-de-anapolis
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: que à época estava sob os cuidados do padre Bertoni Martins e do bispo Paulo Sérgio.
+    page: '105'
+  notes: 'Local: GO. c. 2016.'

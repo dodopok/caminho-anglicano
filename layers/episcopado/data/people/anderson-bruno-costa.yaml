@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: anderson-bruno-costa
+name: Anderson Bruno Costa
+ordinations:
+- order: diaconate
+  date: '2023-05-21'
+  place: Paróquia Anglicana da Ascensão, Recife (PE)
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: dar-2023-anderson-diac
+    quote: >-
+      a celebração de ordenação do Revdo. Anderson Bruno Costa, na tarde do último domingo (21/5), na Paróquia Anglicana
+      da Ascensão
+  notes: >-
+    Diocese Anglicana do Recife. A notícia não diz a ordem nem o ordenante, mas o título fala em "Novo diácono";
+    ordenante presumível: João Peixoto.
+- order: presbyterate
+  date: '2025-10-11'
+  place: >-
+    Capela Santa Maria Mãe de Deus (Capela da Virgem Maria), Cemitério dos Ingleses, Santo Amaro, Recife (PE)
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: confirmed
+  sources:
+  - source: dar-2025-anderson-presb-conv
+    quote: >-
+      tem a alegria de convidar a Vossa Senhoria, familiares e comunidade para a Ordenação Presbiteral do Rev. Anderson
+      Bruno Costa.
+  - source: dar-2025-anderson-presb-conv
+    quote: 'Data: 11 de outubro de 2025'
+  - source: dar-2025-anderson-presb
+    quote: >-
+      o clero e o povo da diocese testemunharam a ordenação presbiteral que aconteceu na Capela da Virgem Maria
+      – Cemitério dos Ingleses, situado na Av. Cruz Cabugá, 876 no bairro Santo Amaro.
+  notes: Diocese Anglicana do Recife. Ordenante segundo o convite (bispo João Peixoto).
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dar-clero-diocesano
+    quote: CLERO DIOCESANO
+  - source: dar-clero-diocesano
+    quote: Revdo. Anderson Bruno Costa
+  notes: Listado no clero diocesano da DAR (página consultada em 2026-10).

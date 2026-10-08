@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: justino-sa
+name: Justino Sa
+ordinations:
+- order: diaconate
+  date: 2021-09
+  place: Bafatá, Guiné-Bissau
+  jurisdiction: iab
+  ordained_by: marcio-meira
+  status: confirmed
+  sources:
+  - source: anglicanismo-guine-2021
+    quote: Em sua visita episcopal, o Bispo ordenou Justino Sa, o primeiro reverendo anglicano em Guiné-Bissau.
+  - source: ai-guine-bissau-2021
+    quote: >-
+      Recently, Bishop Marcio Meira was sent from Brazil to view the work on the field and to ordain Rev Justino,
+      the first-ever native of Guinea-Bissau to the diaconate.
+  notes: >-
+    Ordem esclarecida pela Anglican Ink (diaconato); a notícia em português diz apenas 'primeiro reverendo'. Presença
+    do bispo Henry Okeke (Nigéria), secretário regional do GAFCON para a África Ocidental; culto 'under a cashew
+    tree'.

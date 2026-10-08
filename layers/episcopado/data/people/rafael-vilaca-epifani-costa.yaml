@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rafael-vilaca-epifani-costa
+name: Rafael Vilaça Epifani Costa
+ordinations:
+- order: diaconate
+  date: '2020-12-12'
+  place: Catedral Anglicana do Bom Samaritano, Boa Viagem, Recife (PE)
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: confirmed
+  sources:
+  - source: dar-2020-vilaca
+    quote: >-
+      Na noite deste sábado, 12 de dezembro de 2020, a Diocese Anglicana do Recife esteve em festa, durante a Celebração
+      Eucarística ocorrida na Catedral Anglicana do Bom Samaritano, quando Rafael Vilaça Epifani Costa recebeu a
+      Ordem do Diaconato pela imposição das mãos do bispo diocesano, João Câncio Peixoto Filho.
+  notes: 'Diocese Anglicana do Recife. Pregador: bispo Filadelfo Oliveira.'
+- order: presbyterate
+  date: '2022-04-23'
+  place: Paróquia Anglicana da Ascensão, Várzea, Recife (PE)
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: contested
+  sources:
+  - source: dar-2022-vilaca-presb
+    quote: >-
+      Ao cair da tarde do sábado, 23 de abril de 2022, a Diocese Anglicana do Recife se reuniu na Paróquia Anglicana
+      da Ascensão, localizada no bairro da Várzea, cidade do Recife, para a Ordenação Presbiteral do Reverendo Rafael
+      Vilaça.
+  - source: dar-2022-vilaca-presb
+    quote: >-
+      todos os presbíteros e presbíteras presentes se juntaram ao Bispo Diocesano João Câncio Peixoto, levando suas
+      mãos sobre a cabeça do ordinando
+  - source: cant-temas-anglicanismo-2024
+    quote: >-
+      No dia 23 de abril, Festa de São Jorge, a Paróquia da Ascensão acolheu a ordenação presbiteral do Reverendo
+      Rafael Vilaça. A Missa Solene contou com a presença de muitos clérigos da Igreja e presença ecumênica de católicos
+      e ortodoxos. O Bispo sagrante foi Dom João Câncio Peixoto Filho, e o sermão ficou a cargo do Bispo Emérito
+      da Diocese Anglicana do Recife, Dom Clovis Erly Rodrigues.
+  discrepancies:
+  - field: place
+    value: Paróquia Anglicana da Ascensão, Recife (PE)
+    sources:
+    - source: cant-temas-anglicanismo-2024
+      quote: >-
+        No dia 23 de abril, Festa de São Jorge, a Paróquia da Ascensão acolheu a ordenação presbiteral do Reverendo
+        Rafael Vilaça. A Missa Solene contou com a presença de muitos clérigos da Igreja e presença ecumênica de
+        católicos e ortodoxos. O Bispo sagrante foi Dom João Câncio Peixoto Filho, e o sermão ficou a cargo do Bispo
+        Emérito da Diocese Anglicana do Recife, Dom Clovis Erly Rodrigues.
+  notes: >-
+    Diocese Anglicana do Recife. Pregador: bispo emérito Clovis Erly Rodrigues. Dia 23 de abril; o ano não está
+    explícito no trecho (o contexto, após a reabertura da paróquia em 2021 e antes das chuvas de maio no Recife,
+    sugere 2022).
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '2020-12-12'
+  end: '2025-11-19'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-vilaca
+    quote: 19/11/2025 o Vilaça saiu da IEAB e foi pra IECB, soube diretamente dele no dia
+  notes: Início = diaconato. O mantenedor soube da saída pelo próprio Rafael Vilaça, no dia.
+- jurisdiction: iecb
+  role: clergy
+  start: '2025-11-19'
+  status: probable
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-vilaca
+    quote: 19/11/2025 o Vilaça saiu da IEAB e foi pra IECB, soube diretamente dele no dia

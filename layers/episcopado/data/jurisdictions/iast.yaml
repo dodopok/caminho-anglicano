@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iast
+acronym: IAST
+name: Igreja Anglicana da Santíssima Trindade (Recife)
+type: other
+country: BR
+founded:
+  date: '2017'
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      Após a saída do grupo ligado ao reverendo Sérgio, foi assumido o nome de “Igreja Anglicana da Santíssima Trindade”,
+      e eles passaram a apresentar-se como uma continuação da “Igrejinha dos Ingleses”
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Atualmente, sob a liderança do reverendo Sérgio Andrade, a comunidade se tornou uma Igreja Anglicana independente,
+      após a mesma ter rompido com a Igreja Episcopal Anglicana do Brasil, no ano de 2017, deixando de ser a Catedral
+      diocesana da Província da Comunhão Anglicana no Recife.
+    page: '109'
+  - source: cant-novas-igrejas-2024
+    quote: deu continuidade às raízes do grupo, sendo renomeada de Igreja Anglicana da Santíssima Trindade.
+    page: '112'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana da Santíssima Trindade (Recife) [2017]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Origem como catedral da Diocese Anglicana do Recife até o cisma; hoje independente
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: a Igreja Anglicana da Santíssima Trindade, independente, pastoreada pelo reverendo Sérgio Andrade
+    page: '174'
+description: >-
+  Congregação independente formada em 2017 pelo grupo do Rev. Sérgio Andrade, que deixou a então catedral diocesana
+  da IEAB no Recife; apresenta-se como continuação da Holy Trinity Church; sem filiação.
+sources:
+- source: costa-2021-tese
+  quote: >-
+    Após a saída do grupo ligado ao reverendo Sérgio, foi assumido o nome de “Igreja Anglicana da Santíssima Trindade”,
+    e eles passaram a apresentar-se como uma continuação da “Igrejinha dos Ingleses”
+relations:
+- type: schism_from
+  target: ieab
+  date: '2017'
+  led_by:
+  - sergio-l-andrade
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: Isso levou a um racha na então catedral diocesana, a Catedral da Santíssima Trindade.
+- type: schism_from
+  target: ieab-dar
+  date: '2017'
+  led_by:
+  - sergio-l-andrade
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: após a mesma ter rompido com a Igreja Episcopal Anglicana do Brasil, no ano de 2017
+    page: '109'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Entretanto, alguns desses clérigos, sobretudo aqueles que se relacionavam ao staff da catedral diocesana,
+      decidiram partir e romper a comunhão com nossa Igreja
+    page: '111'
+  notes: >-
+    Ruptura motivada pela oposição às propostas de casamento entre pessoas do mesmo sexo ('Aliança de Comunidades
+    Anglicanas').

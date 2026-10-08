@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: tac
+acronym: TAC
+name: Traditional Anglican Communion
+aliases:
+- >-
+  Traditional Anglican Church (ex-Traditional Anglican Communion) — no Brasil: Igreja Anglicana Tradicional / Traditional
+  Anglican Church in Brazil
+- >-
+  Traditional Anglican Communion / Traditional Anglican Church (Comunhão Anglicana Tradicional / Igreja Anglicana
+  Tradicional)
+type: communion
+tradition: continuing_anglican
+founded:
+  date: '1991'
+  sources:
+  - source: tac-adclerum-2025
+    quote: >-
+      During the General Synod of the TAC in Columbus, Georgia - USA, the Dioceses of Brazil were officially received
+      unanimously.
+  - source: enwiki-tac
+    quote: '*Diocese of São Paulo e Paraná (TAC in Brazil) [https://santamarialondrina.wixsite.com/anglicanos]'
+  - source: costa-2021-tese
+    quote: >-
+      A Comunhão Anglicana Tradicional surgiu em 1991, a partir da separação de clérigos e comunidades da Comunhão
+      Anglicana
+  - source: cant-novas-igrejas-2024
+    quote: A Comunhão Anglicana Tradicional surgiu em 1991
+    page: '72'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      culminando na fundação da Traditional Anglican Communion (TAC) em 1991. Ele se tornou o primeiro Primaz da
+      TAC, cargo que exerceu até 2002.
+    page: '79'
+locator_slug: tac
+wikidata: Q105580850
+website: https://traditionalanglicanchurch.com/
+description: >-
+  Comunhão anglicana continuante anglo-católica (primaz atual Shane B. Janzen, Canadá). No Brasil tem a Diocese
+  Anglicana do Natal (fundada em julho de 2019; bispo Albertino de Sousa Barreiros) e a Diocese Anglicana de São
+  Paulo e Paraná (bispo Itabira Jonas, sagrado em 11/1/2018). As dioceses brasileiras foram recebidas oficialmente
+  e por unanimidade no Sínodo Geral da TAC em Columbus, Geórgia (EUA), em 2025.
+sources:
+- source: tac-adclerum-2025
+  quote: >-
+    During the General Synod of the TAC in Columbus, Georgia - USA, the Dioceses of Brazil were officially received
+    unanimously.
+- source: enwiki-tac
+  quote: '*Diocese of São Paulo e Paraná (TAC in Brazil) [https://santamarialondrina.wixsite.com/anglicanos]'
+- source: costa-2021-tese
+  quote: >-
+    A Comunhão Anglicana Tradicional surgiu em 1991, a partir da separação de clérigos e comunidades da Comunhão
+    Anglicana

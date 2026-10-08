@@ -1,0 +1,163 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: donald-harvey
+name: Donald Harvey
+full_name: Donald Frederick Harvey
+aliases:
+- Bishop Harvey
+- Don Harvey
+- Donald Frederick Harvey
+birth:
+  date: '1939-09-13'
+  sources:
+  - source: wp-harvey
+    quote: '''''''Donald Frederick Harvey'''''' (born 13 September 1939) is a Canadian Anglican bishop.'
+wikidata: Q5292755
+biography: >-
+  Bispo de Eastern Newfoundland and Labrador (Igreja Anglicana do Canadá) 1993–2004; em 2007 recebido no Cone Sul
+  sob Venables; moderador da ANiC/ACNA.
+sources:
+- source: wp-harvey
+  quote: '''''''Donald Frederick Harvey'''''' (born 13 September 1939) is a Canadian Anglican bishop.'
+ordinations:
+- order: episcopate
+  date: '1993-01-25'
+  place: Catedral Anglicana de São João Batista, St. John's, Terra Nova
+  jurisdiction: acc
+  office: diocesan
+  principal_consecrator: michael-peers
+  co_consecrators:
+  - a-bruce-stavert
+  - andrew-hutchison
+  - arthur-g-peters
+  - edward-f-marsh
+  - george-c-lemmon
+  - harold-a-nutter
+  - james-p-allen
+  - mark-genge
+  - martin-mate
+  status: contested
+  sources:
+  - source: wp-harvey
+    quote: '| consecrated_by = [[Michael Peers]]'
+  - source: wp-harvey
+    quote: >-
+      He was elevated to the ACC episcopate in 1993 as [[Anglican Diocese of Eastern Newfoundland and Labrador|Bishop
+      of Eastern Newfoundland and Labrador]].
+  - source: nlchurchman-1993-02
+    quote: >-
+      Chief Consecrator was the Metropolitan, Most Rev'd Stewart Payne, Archbishop of Western Newfoundland, who
+      was assisted by Bishops
+  - source: nlchurchman-1993-02
+    quote: >-
+      G. Peters and James P. Allen of Nova Scotia, Bishop George C. Le~mon of Fredericto~ Bishop Andrew S. Hutchison
+      of Montreal, Bi hop Edward F. Marsh of Central Newfoundland, Bishop A.
+  - source: nlchurchman-1993-02
+    quote: >-
+      Bruce Stavert of Quebec, Archbishop Harold A. Nutter (retired), Bishop Mark Genge (retired), and Bishop Harvey's
+      predecessor, Bishop Mate.
+  - source: nlchurchman-1993-02
+    quote: >-
+      On Monday, January 25, the Feast of the Conversion of St Paul, Donald Frederick Harvey stood on the steps
+      of The Anglican Cathedral of St. John the Baptist
+  - source: nlchurchman-1993-02
+    quote: >-
+      the Bishopelect knelt with the ten ordaining Bishops surrounding him. The Archbishop offered up prayer for
+      the ordinand, culminating with all of the Bishops laying their hands on him
+  discrepancies:
+  - field: jurisdiction
+    value: anglican-church-of-canada
+    sources:
+    - source: nlchurchman-1993-02
+      quote: >-
+        Chief Consecrator was the Metropolitan, Most Rev'd Stewart Payne, Archbishop of Western Newfoundland, who
+        was assisted by Bishops
+    - source: nlchurchman-1993-02
+      quote: >-
+        G. Peters and James P. Allen of Nova Scotia, Bishop George C. Le~mon of Fredericto~ Bishop Andrew S. Hutchison
+        of Montreal, Bi hop Edward F. Marsh of Central Newfoundland, Bishop A.
+    - source: nlchurchman-1993-02
+      quote: >-
+        Bruce Stavert of Quebec, Archbishop Harold A. Nutter (retired), Bishop Mark Genge (retired), and Bishop
+        Harvey's predecessor, Bishop Mate.
+    - source: nlchurchman-1993-02
+      quote: >-
+        On Monday, January 25, the Feast of the Conversion of St Paul, Donald Frederick Harvey stood on the steps
+        of The Anglican Cathedral of St. John the Baptist
+    - source: nlchurchman-1993-02
+      quote: >-
+        the Bishopelect knelt with the ten ordaining Bishops surrounding him. The Archbishop offered up prayer for
+        the ordinand, culminating with all of the Bishops laying their hands on him
+    - source: wp-harvey
+      quote: '| consecrated_by = [[Michael Peers]]'
+  - field: principal_consecrator
+    value: stewart-payne
+    sources:
+    - source: nlchurchman-1993-02
+      quote: >-
+        Chief Consecrator was the Metropolitan, Most Rev'd Stewart Payne, Archbishop of Western Newfoundland, who
+        was assisted by Bishops
+    - source: nlchurchman-1993-02
+      quote: >-
+        G. Peters and James P. Allen of Nova Scotia, Bishop George C. Le~mon of Fredericto~ Bishop Andrew S. Hutchison
+        of Montreal, Bi hop Edward F. Marsh of Central Newfoundland, Bishop A.
+    - source: nlchurchman-1993-02
+      quote: >-
+        Bruce Stavert of Quebec, Archbishop Harold A. Nutter (retired), Bishop Mark Genge (retired), and Bishop
+        Harvey's predecessor, Bishop Mate.
+    - source: nlchurchman-1993-02
+      quote: >-
+        On Monday, January 25, the Feast of the Conversion of St Paul, Donald Frederick Harvey stood on the steps
+        of The Anglican Cathedral of St. John the Baptist
+    - source: nlchurchman-1993-02
+      quote: >-
+        the Bishopelect knelt with the ten ordaining Bishops surrounding him. The Archbishop offered up prayer for
+        the ordinand, culminating with all of the Bishops laying their hands on him
+  notes: >-
+    Michael Peers era o primaz do Canadá em 1993. Só a infobox da Wikipédia nomeia o sagrante; data exata e co-sagrantes
+    não encontrados. VERSÃO A (fonte primária, jornal diocesano do mês seguinte, testemunho): sagrante principal
+    Stewart Payne, arcebispo de Western Newfoundland e metropolita da Província Eclesiástica do Canadá; nove co-sagrantes,
+    todos impuseram as mãos. O OCR traz 'Le~mon of Fredericto~' (= George C. Lemmon, de Fredericton) e quebra 'Bishop
+    A. / Arthur / Bruce Stavert' (= Bishops Arthur G. Peters ... e A. Bruce Stavert). Michael Peers (primaz do Canadá)
+    NÃO aparece entre os bispos citados. Contradiz a Wikipédia (versão B). VERSÃO B (só a infobox da Wikipédia,
+    sem nota): Michael Peers, primaz do Canadá. O relato primário do Newfoundland Churchman (versão A) dá Stewart
+    Payne como 'Chief Consecrator' e não cita Peers; a versão B é provavelmente um palpite pela função de primaz.
+    Já registrada em pontes-estrangeiras.json como 'provavel'; recomenda-se rebaixar.
+affiliations:
+- jurisdiction: anglican-church-of-canada
+  role: diocesan_bishop
+  diocese: eastern-newfoundland-and-labrador
+  start: '1993-01-25'
+  status: confirmed
+  sources:
+  - source: nlchurchman-1993-02
+    quote: >-
+      witness the Episcopal Ordination and Enthronement of Dean Harvey as a Bishop of the Church of Christ, and
+      third Bishop of the Diocese of Eastern Newfoundland and Labrador.
+  notes: >-
+    Fim (2004, segundo a Wikipédia) não verificado nesta frente. Sigla 'anglican-church-of-canada' criada aqui (Igreja
+    Anglicana do Canadá); pontes-estrangeiras.json usa 'ACC'.
+- jurisdiction: iacs
+  role: bishop
+  start: 2007-11
+  status: probable
+  sources:
+  - source: wp-harvey
+    quote: >-
+      In November 2007, Harvey relinquished his ministry in the Anglican Church of Canada pursuant to Canon XIX
+  notes: >-
+    and was received into the [[Anglican Church of the Southern Cone of America|Anglican Church of the Southern
+    Cone]] under its primate, [[Gregory Venables]]
+events:
+- type: other
+  date: 2008-12
+  description: >-
+    XXVIII Concílio da Diocese do Recife: por unanimidade, exclui dos Cânones o dispositivo que permitia eleger
+    bispas (herança da IEAB), mantendo a ordenação de mulheres ao diaconato e presbiterato; a diocese tinha 14 'reverendas'
+  status: confirmed
+  sources:
+  - source: dar-2008-pastoras-nao-bispas
+    quote: >-
+      A Diocese do Recife, que conta com 14 reverendas (pastoras), ao nível de Presbíteras e Diáconas, ocupando
+      todos os tipos de cargos e funções, deliberou, por unanimidade do plenário do seu XXVIII Concílio, excluir
+      o dispositivo canônico que permitia a eleição de Bispas (Episcopisas), como um gesto de maior integração à
+      maioria ortodoxa do Anglicanismo (o dispositivo era uma herança da IEAB).

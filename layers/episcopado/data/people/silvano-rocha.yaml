@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: silvano-rocha
+name: Silvano Rocha
+aliases:
+- Silvano Rocha Filho
+ordinations:
+- order: diaconate
+  date: '1947'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1947 - … Silvano Rocha Filho
+    page: '370'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1948-04-11'
+  place: Igreja do Redentor (Church of the Redeemer), Pelotas
+  jurisdiction: ieab
+  ordained_by: athalicio-pithan
+  status: probable
+  sources:
+  - source: ia-living-church-1948-05-02
+    quote: >-
+      Frs. Bueno, Rocha, and Séria were ordained by Bishop Pit- han, Suffragan of Brazil; Frs. Kainuma, Kratz, and
+      de Mattos, by Bishop Thomas of Southern Brazil.
+  notes: >-
+    Nomes completos segundo outro trecho do mesmo número ("Bueno, Samuel Kumpei Kainuma, Arthur Rodolpho Kratz,
+    Nadir Simées de Mattos, Silvano Rocha, and Agostinho [Soria]"); "Diamantino Ferraira Bueno" no OCR.

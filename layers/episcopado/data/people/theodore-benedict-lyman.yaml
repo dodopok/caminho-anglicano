@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: theodore-benedict-lyman
+name: Theodore Benedict Lyman
+full_name: Theodore Benedict Lyman
+aliases:
+- Bp. Lyman
+- Theodore B. Lyman
+wikidata: Q7781686
+biography: >-
+  Bispo coadjutor (1873) e depois bispo da Carolina do Norte; sagrante principal de Joseph Blount Cheshire.
+sources:
+- source: perry-1895
+  quote: RIGHT REVEREND THEODORE BENEDICT LYMAN, D.D.
+- source: wikidata-api-2
+  quote: '"Q7781686": enwiki "Theodore B. Lyman"'
+ordinations:
+- order: episcopate
+  date: '1873-12-11'
+  place: Christ Church, Raleigh
+  jurisdiction: tec
+  office: coadjutor
+  principal_consecrator: william-rollinson-whittingham
+  co_consecrators:
+  - henry-c-lay
+  - thomas-atkinson
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      He was consecrated bishop coadjutor of North Carolina in Christ Church, Raleigh, Dec. 11, 1873. The consecrators
+      were Bishops Whittingham, Atkinson, and Lay.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Theodore B. Lyman]] | [[William Rollinson Whittingham|36]] [[Thomas Atkinson (bishop)|58]] [[Henry C.
+      Lay|69]] | 1873
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-north-carolina
+  start: '1873-12-11'
+  end: '1893'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: On the death of Bishop Atkinson, his coadjutor became the bishop of the see.
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

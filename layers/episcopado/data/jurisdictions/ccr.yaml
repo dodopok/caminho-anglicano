@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ccr
+acronym: CCR
+name: Christ Church Rio
+type: other
+country: BR
+founded:
+  date: '1819'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Fundada em 1819, durante o reinado de Dom João VI, ela é a mais antiga Igreja Anglicana em atividade no país.
+    page: '98'
+  - source: cant-novas-igrejas-2024
+    quote: o que faz dela uma Igreja Anglicana Independente na cidade do Rio de Janeiro.
+    page: '100'
+website: http://www.christchurchrio.org.br/
+description: >-
+  Capelania inglesa fundada em 1819 no Rio de Janeiro (templo atual de 1944, Botafogo); arrolada como paróquia da
+  Diocese Central (hoje DARJ) em 1985; a partir de 2016 deixou de partilhar o templo com a Paróquia São Lucas (IEAB)
+  e passou a funcionar como Igreja Anglicana Independente de governo congregacional, com capelães nomeados com ajuda
+  da Intercontinental Church Society.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Fundada em 1819, durante o reinado de Dom João VI, ela é a mais antiga Igreja Anglicana em atividade no país.
+  page: '98'
+- source: cant-novas-igrejas-2024
+  quote: o que faz dela uma Igreja Anglicana Independente na cidade do Rio de Janeiro.
+  page: '100'
+relations:
+- type: part_of
+  target: church-of-england
+  date: '1819'
+  end: '1955'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Desde a sua fundação ela serve como capelania inglesa, atendendo à comunidade britânica local.
+    page: '98'
+- type: part_of
+  target: tec
+  date: '1955'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Uma vez que, em 1955, a Igreja da Inglaterra transferiu a administração de todas as capelanias no Brasil para
+      a Igreja Episcopal dos Estados Unidos, estas passaram a ser supervisionadas por bispos brasileiros do Distrito
+      Missionário.
+    page: '98'
+- type: part_of
+  target: ieab-darj
+  date: '1985'
+  end: '2016'
+  led_by:
+  - sydney-alcoba-ruiz
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 1985, por iniciativa do bispo Sydney Alcoba Ruiz, ela foi arrolada como uma das paróquias da Diocese Central
+      (hoje Diocese Anglicana do Rio de Janeiro), após decisão do Concílio Diocesano.
+    page: '98'
+  notes: >-
+    O patrimônio nunca foi incorporado à Província. Em junho de 2016 a Junta Paroquial excluiu a Paróquia São Lucas
+    (IEAB) do templo; desde então a Christ Church Rio não pertence à IEAB.
+- type: broke_communion_with
+  target: ieab
+  date: 2016-06
+  led_by:
+  - mark-simpson
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em junho de 2016, o reverendo Mark Simpson (que era membro da DARJ), informou aos clérigos da São Lucas que,
+      por decisão da Junta Paroquial, a Paróquia da IEAB não mais utilizaria o histórico templo
+    page: '99'
+  - source: cant-novas-igrejas-2024
+    quote: Embora não pertença à IEAB, a Christ Church Rio não nega sua origem anglicana
+    page: '100'

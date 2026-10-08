@@ -1,0 +1,167 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: magda-guedes-pereira
+name: Magda Guedes Pereira
+full_name: Magda Guedes Pereira
+aliases:
+- Bispa Magda Guedes
+- Magda Cristina Guedes Pereira (?)
+- Magda Guedes
+- Revma. Magda Guedes
+birth:
+  date: '1967-09-03'
+  sources:
+  - source: costa2021
+    quote: Magda Guedes     Pereira nasceu em Sant’Ana do Livramento, Rio Grande do Sul, fronteira com
+  - source: ieab-3a-bispa
+    quote: É clériga da Igreja Episcopal Anglicana do Brasil (IEAB) desde 1996.
+biography: Secretaria-geral da IEAB (2018-); terceira bispa; bispa do Parana (2021-).
+sources:
+- source: costa2021
+  quote: Magda Guedes     Pereira nasceu em Sant’Ana do Livramento, Rio Grande do Sul, fronteira com
+- source: ieab-3a-bispa
+  quote: É clériga da Igreja Episcopal Anglicana do Brasil (IEAB) desde 1996.
+ordinations:
+- order: episcopate
+  date: '2021-10-17'
+  place: Catedral Anglicana de São Tiago, Curitiba (PR)
+  jurisdiction: ieab
+  office: suffragan
+  principal_consecrator: naudal-gomes
+  status: contested
+  sources:
+  - source: ieab-magda-sagrada
+    quote: >-
+      A Igreja Episcopal Anglicana do Brasil (IEAB) sagrou no domingo, 17 de outubro, na Diocese Anglicana do Paraná,
+      a reverenda Magda Guedes Pereira como bispa coadjutora.
+  - source: ieab-magda-sagrada
+    quote: Sediado na Catedral Anglicana de São Tiago, em Curitiba
+  - source: costa2021
+    quote: >-
+      A bispa Magda foi sagrada no dia 17 de outubro de 2021, pelo Bispo Primaz e Diocesano de Curitiba, na Catedral
+      de São Tiago.
+  - source: wp-pt-naudal
+    quote: >-
+      Em 17 de outubro de 2021, Dom Naudal consagrou a reverenda Magda Guedes Pereira como sua bispa coadjutora.
+  - source: cant-identidades-numeros-2024
+    quote: >-
+      A nova bispa foi sagrada no dia 17 de outubro de 2021, pelo bispo Naudal Alves Gomes Primaz, 128 Igreja Episcopal
+      Anglicana do Brasil: Identidades e(m) números Primaz da IEAB e Diocesano do Paraná.
+  discrepancies:
+  - field: office
+    value: coadjutor
+    sources:
+    - source: ieab-magda-sagrada
+      quote: >-
+        A Igreja Episcopal Anglicana do Brasil (IEAB) sagrou no domingo, 17 de outubro, na Diocese Anglicana do
+        Paraná, a reverenda Magda Guedes Pereira como bispa coadjutora.
+    - source: costa2021
+      quote: >-
+        A bispa Magda foi sagrada no dia 17 de outubro de 2021, pelo Bispo Primaz e Diocesano de Curitiba, na Catedral
+        de São Tiago.
+    - source: wp-pt-naudal
+      quote: >-
+        Em 17 de outubro de 2021, Dom Naudal consagrou a reverenda Magda Guedes Pereira como sua bispa coadjutora.
+    - source: cant-identidades-numeros-2024
+      quote: >-
+        A nova bispa foi sagrada no dia 17 de outubro de 2021, pelo bispo Naudal Alves Gomes Primaz, 128 Igreja
+        Episcopal Anglicana do Brasil: Identidades e(m) números Primaz da IEAB e Diocesano do Paraná.
+  - field: place
+    value: Catedral de São Tiago, Curitiba (PR)
+    sources:
+    - source: cant-identidades-numeros-2024
+      quote: >-
+        A nova bispa foi sagrada no dia 17 de outubro de 2021, pelo bispo Naudal Alves Gomes Primaz, 128 Igreja
+        Episcopal Anglicana do Brasil: Identidades e(m) números Primaz da IEAB e Diocesano do Paraná.
+  - field: office
+    value: diocesan
+    sources:
+    - source: cant-identidades-numeros-2024
+      quote: >-
+        A nova bispa foi sagrada no dia 17 de outubro de 2021, pelo bispo Naudal Alves Gomes Primaz, 128 Igreja
+        Episcopal Anglicana do Brasil: Identidades e(m) números Primaz da IEAB e Diocesano do Paraná.
+  notes: >-
+    Bispa coadjutora da Diocese Anglicana do Paraná, sucedendo Naudal Alves Gomes como diocesana a partir de dezembro
+    de 2021. A notícia não nomeia sagrante principal nem co-sagrantes. Terceira bispa da IEAB; eleita em 24/04/2021;
+    instalada 12/12/2021.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dso
+  start: '1996'
+  end: '2006'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: ieab-3a-bispa
+    quote: >-
+      desde sua ordenação atuou nas Dioceses anglicanas Sul-Ocidental (1996-2006), Paraná (2007-2010 ) e Brasília
+      (2011 – março 2017).
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dapar
+  start: '2007'
+  end: '2010'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: ieab-3a-bispa
+    quote: >-
+      desde sua ordenação atuou nas Dioceses anglicanas Sul-Ocidental (1996-2006), Paraná (2007-2010 ) e Brasília
+      (2011 – março 2017).
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dab
+  start: '2011'
+  end: 2017-03
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: ieab-3a-bispa
+    quote: >-
+      desde sua ordenação atuou nas Dioceses anglicanas Sul-Ocidental (1996-2006), Paraná (2007-2010 ) e Brasília
+      (2011 – março 2017).
+- jurisdiction: ieab
+  role: other
+  role_description: secretaria_geral
+  start: 2018-07
+  status: confirmed
+  sources:
+  - source: ieab-3a-bispa
+    quote: A partir de julho de 2018 exerce a função Secretaria Geral da IEAB.
+  notes: Cargo de secretária-geral da IEAB; término não informado nesta fonte.
+- jurisdiction: ieab
+  role: coadjutor_bishop
+  diocese: ieab-dapar
+  start: '2021-10-17'
+  end: '2021-12-12'
+  status: confirmed
+  sources:
+  - source: ieab-magda-sagrada
+    quote: a reverenda Magda Guedes Pereira como bispa coadjutora.
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dapar
+  start: '2021-12-12'
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: A nova bispa da DAPAR foi instalada na manhã de 12 de dezembro de 2021, na Catedral diocesana.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revma. Magda Guedes
+  - source: ieab-magda-sagrada
+    quote: >-
+      Magda irá auxiliar o atual bispo diocesano, Naudal Alves Gomes, até dezembro. A partir daí, ela assume oficialmente
+      como bispa diocesana em todo o estado.
+  notes: Início previsto na notícia da sagração.
+events:
+- type: other
+  date: '2022-12-11'
+  description: >-
+    Reconhecimento, pela Diocese Anglicana do Paraná (IEAB), das ordens recebidas na Igreja Ortodoxa pelo Rev. Nilo
+    Silva Júnior, na Catedral Anglicana de Curitiba, sob a presidência da bispa Magda Guedes
+  status: confirmed
+  sources:
+  - source: ieab-2022-nilo
+    quote: >-
+      Foi realizado, no dia 11 de dezembro, na Catedral Anglicana de Curitiba, o reconhecimento das Sagradas Ordens
+      do nosso irmão Nilo Silva Júnior. A celebração ocorreu sob a presidência da bispa diocesana, Magda Guedes.

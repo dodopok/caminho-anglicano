@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: nova-friburgo
+name: Nova Friburgo
+type: diocese
+relations:
+- type: part_of
+  target: pacst
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Esta segunda Província a ser organizada, foi intitulada Província Anglo-Católica da Santíssima Trindade, sendo
+      era formada pelos bispos dom Antônio Bessa (bispo do Ceará) e dom Rafael Moraes (hoje bispo da Província Anglo-Católica
+      da Santíssima Trindade, em Nova Friburgo), dom Cristiano Alves (hoje bispo da Diocese Anglo-Católica Cristo
+      Bom Pastor, no Rio de Janeiro, ligada à Igreja Anglicana Tradicional do Brasil - IATB) e dom Rafael Mendes
+      (hoje bispo da Diocese Anglo-Católica de Minas Gerais, como uma igreja autocéfala local).
+    page: '162'

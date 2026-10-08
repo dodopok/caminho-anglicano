@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rubem-marcel-sarmento-da-silva
+name: Rubem Marcel Sarmento da Silva
+full_name: Rubem Marcel Sarmento da Silva
+aliases:
+- Dom Rubem Silva
+biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
+sources:
+- source: ptwiki-iecb
+  quote: Rubem Marcel Sarmento da Silva (2025)
+ordinations:
+- order: episcopate
+  date: '2025-06-19'
+  jurisdiction: iecb
+  office: auxiliary
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Rubem Marcel Sarmento da Silva (2025)
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Rubem Marcel Sarmento da Silva – filho do bispo Francisco Rubem –, em 19 de junho de 2025 (Auxiliar da Diocese
+      de Olinda).
+    page: '58'
+  notes: >-
+    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
+    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso. Sagrantes não nomeados.
+affiliations:
+- jurisdiction: iecb
+  role: bishop
+  diocese: diocese-de-olinda
+  start: '2025'
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Rubem Marcel Sarmento da Silva (2025)
+  notes: bispo coadjutor (2025-)

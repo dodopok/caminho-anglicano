@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-canterbury
+name: Diocese of Canterbury
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: John Moore. Bangor; Canterbury, 1783; d. 1805, Jan. 18.
+  - source: stubbs-1897
+    quote: Frederick Cornwallis. Lichfield ; Canterbury, 1768; d. 1783, March 19.
+  - source: stubbs-1897
+    quote: Thomas Herring. Bangor ; York, 1743 ; Canterbury, 1747; d. 1757, March 13.
+  - source: stubbs-1897
+    quote: John Potter. Oxford; Canterbury, 1737; d. 1747, Oct. 10.
+  - source: stubbs-1897
+    quote: William Sancroft. Canterbury; dep. 1690, Feb. 1; d. 1693, Nov. 24
+  - source: stubbs-1897
+    quote: Gilbert Sheldon. London ; Canterbury, 1663 ; d. 1677, Nov. 9.
+  - source: stubbs-1897
+    quote: William Laud. S. David's ; Bath, 1626 ; London, 1628; Canterbury, 1633; d. 1645, Jan. 10.
+  - source: stubbs-1897
+    quote: George Abbot. Lichfield ; London, 1610 ; Canterbury, 161 1 ; d. 1633, Aug. 4
+  - source: stubbs-1897
+    quote: Richard Bancroft. London ; Canterbury, 1604 ; d. 1610, Nov. 2.
+  - source: stubbs-1897
+    quote: John Whitgift. Worcester; Canterbury, 1583; d. 1604, Feb. 29.
+  - source: stubbs-1897
+    quote: Edmund Grindal. London ; York, 1570 ; Canterbury, 1576 ; d. 1583, July 6.
+  - source: stubbs-1897
+    quote: Matthew Parker. Canterbury; d. 1575, May 17.
+  - source: stubbs-1897
+    quote: Thomas Cranmer. Canterbury; d. 1556, March 21.
+  - source: stubbs-1897
+    quote: John Bird Sumner. Chester ; Canterbury, 1848 ; d. Sept. 6, 1862.
+  - source: stubbs-1897
+    quote: Charles Thomas Longley. Ripon ; Durham, 1856 ; York, i860 ; Canterbury, 1862 ; d. 1868, Oct. 27.
+  - source: stubbs-1897
+    quote: Archibald Campbell Tait. London ; Canterbury, 1868 ; d. 1882, Sept. 3.
+  - source: stubbs-1897
+    quote: Frederick Temple. Exeter ; London, 1885 ; Canterbury, 1896

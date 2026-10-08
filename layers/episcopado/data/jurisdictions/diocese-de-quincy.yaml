@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-quincy
+name: Diocese de Quincy
+type: diocese
+relations:
+- type: part_of
+  target: acna
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      mantém fortes laços com a Diocese de Quincy, da Igreja Anglicana na América do Norte (ACNA), mantendo uma
+      boa relação com o bispo, Juan Alberto Morales.
+    page: '78'

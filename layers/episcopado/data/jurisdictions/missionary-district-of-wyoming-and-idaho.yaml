@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: missionary-district-of-wyoming-and-idaho
+name: Missionary District of Wyoming and Idaho
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: missionary episcopate of Wyoming and Idaho

@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iacc
+acronym: IACC
+name: Igreja Anglicana de Confissão Continuante
+type: national_church
+country: BR
+founded:
+  date: '2013'
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      Todas essas Dioceses, com a primeira, a Diocese Anglicana do Japí-Jundiaí, formam atualmente a Igreja Anglicana
+      de Confissão Continuante, cujo Moderador e Metropolita, eleito pelos demais, é o primeiro bispo anglicano
+      continuante no País, dom †James Roque.
+dissolved:
+  date: '2022'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana de Confissão Continuante (IACC) é uma denominação que teve origem na primeira onda de sagrações
+      de bispos de linhagem sucessória que estão ligados ao Movimento Contínuo.
+    page: '157'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Na IACC, um dos primeiros atos de dom José Kennedy foi a sagração de Genival Martins de Oliveira, eleito como
+      o primeiro bispo primaz da Igreja, enquanto dom José Kennedy permaneceria como coadjutor.
+    page: '157'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo José Kennedy faleceu em 2021, encerrando junto com a sua caminhada neste mundo, a caminhada de sua
+      Igreja.
+    page: '157'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana de Confissão Continuante (IACC) (Extinta em 2022)
+    page: '172'
+website: https://dasc-iacc.webnode.page/
+description: >-
+  Rede continuante brasileira cujo metropolita é Dom James Roque (Jundiaí-SP), primeiro brasileiro sagrado (2013,
+  Barranquilla, Colômbia) pelo arcebispo colombiano Victor Manuel Cruz-Blanco; declara sucessão de Chambers/Pagtakhan/Pae
+  (Congresso de St. Louis, 1977). Primeira diocese: Diocese Anglicana do Japí (Jundiaí). Segundo o próprio site
+  (sem data), incluía as dioceses de Natal, Santa Catarina, São Paulo e Paraná, Amazonas (pró-diocese) e Portugal.
+sources:
+- source: iacc-continuante
+  quote: >-
+    Todas essas Dioceses, com a primeira, a Diocese Anglicana do Japí-Jundiaí, formam atualmente a Igreja Anglicana
+    de Confissão Continuante, cujo Moderador e Metropolita, eleito pelos demais, é o primeiro bispo anglicano continuante
+    no País, dom †James Roque.

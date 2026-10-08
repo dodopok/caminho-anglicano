@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-lincoln
+name: Diocese of Lincoln
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: George Monteigne. Lincoln ; London, 1621 ; Durham, 1628 ; York, 1628 ; d. 1628, Nov. 6.
+  - source: stubbs-1897
+    quote: John Jackson. Lincoln; London, 1869; d. 1885, Jan. 6.

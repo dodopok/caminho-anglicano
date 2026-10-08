@@ -1,0 +1,152 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: william-barlow
+name: William Barlow
+full_name: William Barlow
+aliases:
+- Barlowe
+death:
+  date: '1569-12-10'
+  sources:
+  - source: stubbs-1897
+    quote: William Barlow. S. David's; Bath, 1 549-1554 ; Chichester, 1559 ; d. 1569, Dec. 10.
+  - source: wikidata-api-2
+    quote: '"Q8005070": enwiki "William Barlow (bishop of Chichester)"'
+wikidata: Q8005070
+biography: >-
+  Bispo de St David's (1536), Bath and Wells (1549-1554) e Chichester (1559); sagrante principal de Parker. O registro
+  da sua própria sagração não foi encontrado.
+sources:
+- source: stubbs-1897
+  quote: William Barlow. S. David's; Bath, 1 549-1554 ; Chichester, 1559 ; d. 1569, Dec. 10.
+- source: wikidata-api-2
+  quote: '"Q8005070": enwiki "William Barlow (bishop of Chichester)"'
+ordinations:
+- order: episcopate
+  date: 1536-06
+  jurisdiction: church-of-england
+  status: contested
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      Record not forthcoming ; the date is fixed, by collateral proof, to June 1 1, 18, or 26. Barlow's precedence
+      is between Norwich (Repps) and S. Asaph (Parfew);
+  - source: ce-anglican-orders
+    quote: >-
+      In regard to Barlow's episcopal character, the Anglican case is that although there is no record of his consecration
+      in the "Archiepiscopal Register", this only proves that the "Register" was very negligently kept;
+  - source: wp-barlow
+    quote: '| consecration = February 1535<ref name="DNB"/> or June 1536'
+  notes: >-
+    Não há registro da sagração de Barlow (bispo de St David's, 1536). Stubbs fixa a data por prova indireta em
+    11, 18 ou 26 de junho de 1536. A Wikipédia dá 'fevereiro de 1535 ou junho de 1536' e aponta Cranmer como sagrante,
+    mas citando um documento particular (pelagios.net); por isso o sagrante fica nulo aqui. Ver dúvidas.
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-st-david-s
+  start: '1536'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: William Barlow. S. David's; Bath, 1 549-1554 ; Chichester, 1559 ; d. 1569, Dec. 10.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-bath-and-wells
+  start: '1549'
+  end: '1554'
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: William Barlow. S. David's; Bath, 1 549-1554 ; Chichester, 1559 ; d. 1569, Dec. 10.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+    Bath and Wells 1549-1554: fim por privação no reinado de Maria (motivo não dito na fonte).
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-chichester
+  start: '1559'
+  end: '1569-12-10'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: William Barlow. S. David's; Bath, 1 549-1554 ; Chichester, 1559 ; d. 1569, Dec. 10.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+events:
+- type: other
+  date: '1559-12-17'
+  description: >-
+    Controvérsia sobre a sagração de Matthew Parker (1559) e o Registro de Lambeth. Fatos que as duas partes aceitam:
+    em 17/12/1559, na capela de Lambeth, Barlow (que presidiu), Scory, Coverdale e Hodgkins sagraram Parker pelo
+    Ordinal eduardino; o Registro de Parker é documento contemporâneo; a história do Nag's Head (sagração numa taverna)
+    é tida como lenda. Pontos em disputa: (1) a autenticidade do Registro, posta em dúvida por autores católicos
+    do século XVII (ex.: Champney, 1616); (2) se o próprio Barlow foi sagrado, pois não há registro da sua sagração;
+    (3) se o rito eduardino bastava em forma e intenção. Em 1896 a bula Apostolicae Curae (Leão XIII) declarou as
+    ordens anglicanas nulas pelo defeito de forma e intenção, independentemente das questões (1) e (2). Os arcebispos
+    de Cantuária e York responderam em 1897 com Saepius Officio.
+  status: confirmed
+  sources:
+  - source: ce-anglican-orders
+    quote: >-
+      Mason in his "Vindiciae Ecclesiae Anglicanae" replied on the Anglican side, in 1613, and was the first to
+      call attention, at all events effectively, to the entry in Parker's "Register" of his consecration on 17 December,
+      1559, in the private chapel at Lambeth.
+  - source: ce-anglican-orders
+    quote: >-
+      Champney, who wrote in 1616, suggests, what was clearly the general opinion of the Catholics at the time,
+      that the entry in question was a forgery.
+  - source: ce-anglican-orders
+    quote: >-
+      there can be no question, to us who know all the lines of converging evidence that tell in its favour, but
+      that his consecration did take place on the day and in the manner described in the "Register", and that the
+      latter was a contemporary document.
+  - source: ce-anglican-orders
+    quote: >-
+      (1) the truth of the Nag's Head story; (2) the spuriousness of the Lambeth "Register"; (3) the want of episcopal
+      character in Barlow, Parker's chief consecrator; (4) the insecurity of the rite used, in view of its many
+      omissions; (5) the probability that it does not contain the essentials of a valid Ordinal.
+  - source: ce-anglican-orders
+    quote: >-
+      they are of the most fundamental kind, and are independent of any defects that may be thought to arise out
+      of the omission in the Ordinal of a tradition of the instruments, or of the doubt about Barlow's consecration.
+  - source: wp-matthew-parker
+    quote: >-
+      The Church of England archbishops of Canterbury and York rejected the pontiff's arguments in ''Saepius Officio''
+      in 1897.
+  - source: wp-nags-head
+    quote: >-
+      This story was later discredited, as a full eyewitness description was found of the consecration of Parker,
+      in [[Lambeth Palace Chapel]], by bishops [[John Scory]], [[William Barlow (bishop of Chichester)|William Barlow]]
+      (chief consecrator), [[Myles Coverdale]], and [[John Hodgkins]].
+  - source: stubbs-1897
+    quote: >-
+      Consecrated at Lambeth by William Barlow, elect of Chichester, late Bishop of Bath and Wells, John, elect
+      of Hereford, late Bishop of Rochester, John of Bedford, and Miles, late Bishop of Exeter ; Reg. Parker, 10.
+- type: other
+  date: '1536'
+  description: >-
+    Falta o registro da sagração de William Barlow (sagrante principal de Parker) no registro de Cranmer. Stubbs
+    fixa a data por prova indireta em junho de 1536 (dia 11, 18 ou 26), pela precedência de Barlow entre os bispos
+    de Norwich (Repps) e St Asaph (Parfew). Autores anglicanos atribuem a falta ao registro malcuidado. Autores
+    católicos apontam que falta todo um conjunto de documentos, mas não afirmam que a sagração com certeza não ocorreu.
+  status: contested
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      Record not forthcoming ; the date is fixed, by collateral proof, to June 1 1, 18, or 26. Barlow's precedence
+      is between Norwich (Repps) and S. Asaph (Parfew);
+  - source: ce-anglican-orders
+    quote: >-
+      The Catholic writers, on the other hand, point out that it is not merely the absence of just a single entry
+      in Cranmer's "Register" which stands against him, but the absence of an entire set of documents which should
+      have borne reference to his consecration if it occurred;
+  - source: ce-anglican-orders
+    quote: >-
+      Still the Catholic writers do not maintain on these grounds that it is certain he was not consecrated,
+  - source: wp-barlow
+    quote: >-
+      However, that register does record his election as bishop, the royal assent to it and his confirmation.

@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iab-diocese-familia
+name: Diocese Anglicana Família (IAB)
+aliases:
+- Diocese Anglicana Família
+- Diocese Anglicana Família (Igreja Anglicana no Brasil)
+type: diocese
+tradition: anglican
+country: BR
+website: https://www.instagram.com/daf.anglicananobrasil/
+description: >-
+  Nome em uso desde 2026 (entre fev e jun) pela antiga Diocese de João Pessoa, ligada à Catedral Anglicana Comunhão
+  (João Pessoa) e ao bispo Márcio Meira. Perfil oficial @daf.anglicananobrasil ("Diocese Anglicana Família"). Em
+  jun/2026 gerou, por desmembramento, a Diocese Anglicana Comunhão. Ato formal (sínodo/decreto) e data exata da
+  mudança de nome não encontrados.
+sources:
+- source: ig-daf-perfil
+  quote: '"full_name":"Diocese Anglicana Família"'
+- source: ig-daf-2026-06-21
+  quote: >-
+    celebramos a multiplicação da ação missionária da Diocese Anglicana Família através do nascimento da Diocese
+    Anglicana Comunhão
+- source: catedral-comunhao-lideranca
+  quote: Igreja Anglicana no Brasil | Diocese Família
+relations:
+- type: part_of
+  target: iab
+  date: '2026'
+  status: confirmed
+  sources:
+  - source: ig-daf-2026-06-21
+    quote: Hoje é um dia histórico para a Igreja Anglicana no Brasil!
+  - source: ig-daf-perfil
+    quote: '"coauthor_producers":[{"id":"181853493","username":"bispomarciomeira"'
+  - source: catedral-comunhao-lideranca
+    quote: Igreja Anglicana no Brasil | Diocese Família
+- type: successor_of
+  target: iab-diocese-joao-pessoa
+  date: '2026'
+  led_by:
+  - marcio-meira
+  status: probable
+  sources:
+  - source: cc-home-wb-2026-02
+    quote: Diocese de João Pessoa
+  - source: catedral-comunhao-lideranca
+    quote: Igreja Anglicana no Brasil | Diocese Família
+  - source: ig-daf-perfil
+    quote: '"full_name":"Diocese Anglicana Família"'
+  - source: ig-djp-perfil-removido
+    quote: The link to this profile may be broken, or the profile may have been removed.
+  notes: >-
+    Mudança de nome inferida de fontes oficiais convergentes: (1) o rodapé do site da Catedral Anglicana Comunhão
+    (sé da DJP) dizia "Diocese de João Pessoa" na cópia Wayback de 07/02/2026 e diz "Diocese Família" (link para
+    djpanglicananobrasil.com) em out/2026; (2) o perfil @djp.anglicananobrasil (linkado no site da DJP) não existe
+    mais, e existe @daf.anglicananobrasil = "Diocese Anglicana Família", com 968 posts e posts em colaboração com
+    @catedralcomunhao e @bispomarciomeira; (3) o post de 21/06/2026 trata a nova Diocese Comunhão como multiplicação
+    da "Diocese Anglicana Família". Data entre 07/02/2026 e 21/06/2026; ato formal (sínodo/decreto) não encontrado.
+    A sé e o endereço (Catedral Comunhão, Bessa, João Pessoa) aparentemente não mudaram; o território perdeu a região
+    do sertão PB/CE para a Diocese Comunhão.

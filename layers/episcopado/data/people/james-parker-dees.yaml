@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: james-parker-dees
+name: James Parker Dees
+biography: Bispo fundador da Comunhão Anglicana Ortodoxa (16/11/1963).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Esta surgiu em 16 de novembro de 1963, pelo trabalho do bispo James Parker Dees
+  page: '130'
+affiliations:
+- jurisdiction: comunhao-anglicana-ortodoxa-orthodox-anglican-communion
+  role: founder
+  start: '1963-11-16'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Esta surgiu em 16 de novembro de 1963, pelo trabalho do bispo James Parker Dees, que, rejeitando o liberalismo
+      teológico que começava a se difundir dentro da Comunhão Anglicana, organizou uma nova jurisdição eclesiástica.
+    page: '130'

@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: joseph-blount-cheshire
+name: Joseph Blount Cheshire
+full_name: Joseph Blount Cheshire
+aliases:
+- Bp. Cheshire
+- Joseph Blount Cheshire Jr.
+wikidata: Q19874753
+biography: Bispo da Carolina do Norte; co-sagrante de W. M. M. Thomas (1925).
+sources:
+- source: som-1926-01
+  quote: by Bishops. Talbot, Kinsolving and Che­ shire.
+- source: wd-q19874753
+  quote: Joseph Blount Cheshire, Jr. | bishop of the Episcopal Diocese of North Carolina.
+ordinations:
+- order: episcopate
+  date: '1893-10-15'
+  place: Calvary Chapel, Tarborough (Carolina do Norte)
+  jurisdiction: tec
+  office: coadjutor
+  principal_consecrator: theodore-benedict-lyman
+  co_consecrators:
+  - alfred-a-watson
+  - ellison-capers
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      He was consecrated bishop coadjutor in Calvary Chapel, Tarborough, Oct. 15, 1893, by Bishops Lyman, Watson,
+      and Capers. Bishops Quintard, Dudley, Weed, and Sessums were also present, and assisted in the imposition
+      of hands.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Joseph Blount Cheshire]] | [[Theodore B. Lyman|103]] [[Alfred A. Watson|134]] [[Ellison Capres|169]] |
+      1893
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte. Quintard, Dudley,
+    Weed e Sessums também impuseram as mãos.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-north-carolina
+  start: '1893-10-15'
+  status: probable
+  sources:
+  - source: wp-en-histlist
+    quote: >-
+      | [[Joseph Blount Cheshire]] | [[Theodore B. Lyman|103]] [[Alfred A. Watson|134]] [[Ellison Capres|169]] |
+      1893
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

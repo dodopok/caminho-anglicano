@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: southern-brazil
+name: Southern Brazil
+type: diocese
+relations:
+- type: part_of
+  target: dmsb
+  status: confirmed
+  sources:
+  - source: som-1926-01
+    quote: The Right Rev. William M. M. Thomas, Suffragan for Southern Brazil
+  - source: wp-en-thomas
+    quote: >-
+      Bishop William Thomas, missionary bishop of Southern Brazil from 1928 to 1949, when he retired, died at Bethesda,
+      Maryland, September 18.
+  - source: wit-1952-03-20
+    quote: Bishop Kinsolving retired in 1928 and was succeeded by Bishop William M. M. Thomas
+  - source: wit-1951-10-04
+    quote: >-
+      Bishop William Thomas, missionary bishop of Southern Brazil from 1928 to 1949 when he retired, died at Bethesda,
+      Maryland, September 18.
+  - source: wit-1942-03-12
+    quote: Ninety-one Brazilians were con- firmed by the suffragan bishop of Brazil, Athalicio Pithan
+  - source: wit-1949-10-27
+    quote: >-
+      The present suff­ ragan bishop, the Rt. Rev. Ath- alicio T. Pithan, was elected bishop, to be in charge of
+      the third of the newly set up dio­ ceses.
+  - source: wit-1952-03-20
+    quote: >-
+      Southern Brazil; Porto Alegre, the oldest field includes Theological Seminary; Southern Cross School, 800
+      boys; St. Margaret's School, 225 girls; Rt. Rev. Athalico Pithan;
+  - source: lc-1949-10-30
+    quote: >-
+      The district of Southern Brazil will, in-the future, embrace the eastern half of the states of Rio Grande
+      do Sul and Santa Caterina.
+  - source: lc-1955-09-25
+    quote: >-
+      Bishop Krischke of Southwestern Bra- zil was transferred to the district of Southern Brazil succeeding Bishop
+      Pit- han, who has resigned because of ill health.
+  - source: wit-1955-09-29
+    quote: >-
+      He will replace Bishop Krischke who is transferring to Southern Brazil to replace Bishop Pithan who is retiring
+      because of illness.
+  - source: ieab-sobre
+    quote: Em um primeiro momento, dom Melcher assumiu a Diocese Central e dom Pithan, a Diocese Meridional.
+  - source: ens-xxxvi-7
+    quote: In 1948 he was consecrated Bishop Coadjutor of Southern Brazil and was Diocesan from 1949-50.
+  - source: lc-1949-10-16
+    quote: >-
+      Bishop of the third diocese will be the Rt. Rev. Louis C. Melcher, who suc- seeded Bishop Thomas as diocesan
+      a few Jays earlier upon the acceptance of Bish- yp Thomas' resignation by the House of Bishops.
+  - source: wit-1955-09-29
+    quote: Krischke who is transferring to Southern Brazil to replace Bishop Pithan
+  - source: ens-xxvi-8
+    quote: The Rt. Rev. Egmont M. Krischke, Bishop of Southern Brazil and senior bishop in the Brazilian Church
+  - source: kickhofel-1995
+    quote: BISPOS MISSIONÁRIOS … 1925-1949 - William Mathew Merrick Thomas
+    page: '368'
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1950-1955 - Athalício Theodoro Pithan
+    page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      Antes de se aposentar em 30 de setembro de 1949, Thomas transferiu a jurisdição da igreja brasileira ao bispo
+      Melcher, em maio daquele ano
+    page: '200'

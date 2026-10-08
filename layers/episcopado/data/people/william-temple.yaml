@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: william-temple
+name: William Temple
+full_name: William Temple
+aliases:
+- Abp. William Temple
+- Bishop of Manchester
+birth:
+  date: '1881-10-15'
+  sources:
+  - source: wikidata-api
+    quote: 'Q336315 William Temple {''enwiki'': ''William Temple (bishop)'', ''ptwiki'': ''William Temple (religioso)''}'
+  - source: wp-william-temple
+    quote: >-
+      '''William Temple''' (15 October 1881 – 26 October 1944) was an English [[Anglican]] priest who served as
+      [[Bishop of Manchester]] (1921–1929), [[Archbishop of York]] (1929–1942) and [[Archbishop of Canterbury]]
+      (1942–1944).
+death:
+  date: '1944-10-26'
+  sources:
+  - source: wikidata-api
+    quote: 'Q336315 William Temple {''enwiki'': ''William Temple (bishop)'', ''ptwiki'': ''William Temple (religioso)''}'
+  - source: wp-william-temple
+    quote: >-
+      '''William Temple''' (15 October 1881 – 26 October 1944) was an English [[Anglican]] priest who served as
+      [[Bishop of Manchester]] (1921–1929), [[Archbishop of York]] (1929–1942) and [[Archbishop of Canterbury]]
+      (1942–1944).
+wikidata: Q336315
+biography: >-
+  Bispo de Manchester (1921), arcebispo de York e de Cantuária (1942-1944); sagrou Geoffrey Fisher (1932). Quem
+  o sagrou NÃO foi encontrado (lacuna).
+sources:
+- source: wp-william-temple
+  quote: Temple was consecrated bishop at [[York Minster]] on 25 January 1921
+- source: wikidata-api-2
+  quote: '"Q336315": enwiki "William Temple (bishop)"'
+ordinations:
+- order: episcopate
+  date: '1921-01-25'
+  place: Coro da York Minster, York
+  jurisdiction: church-of-england
+  office: diocesan
+  principal_consecrator: cosmo-gordon-lang
+  status: confirmed
+  sources:
+  - source: henson-1921-01-25
+    quote: >-
+      The consecration of William Temple to be Bishop of Manchester took place in the Choir of York Minster . There
+      was a very large gathering of Bishops. The Archbishop was vested in a white cope, and performed his central
+      function with characteristic dignity.
+  - source: henson-1921-01-25
+    quote: >-
+      It was observed that Archbishop Temple had consecrated Lang, & now Archbishop Lang had consecrated Temple
+      .
+  - source: henson-1921-01-25
+    quote: The Bishop–elect was presented by the Bishops of Ripon and Southwark.
+  - source: wp-william-temple
+    quote: >-
+      Temple was consecrated bishop at [[York Minster]] on 25 January 1921 and enthroned at [[Manchester Cathedral]]
+      on 15 February.
+  notes: >-
+    Fonte primária: diário de Herbert Hensley Henson, bispo de Durham, testemunha presente (leu o Evangelho). Cosmo
+    Gordon Lang era arcebispo de York (1909-1928). Os bispos de Ripon (Thomas Wortley Drury) e de Southwark (Cyril
+    Garbett) apresentaram o eleito; havia 'a very large gathering of Bishops', mas o diário não lista quem impôs
+    as mãos, por isso não registrei co-sagrantes. A Wikipédia deixa 'consecrated_by' vazio. Fecha a lacuna Fisher
+    -> W. Temple -> Lang -> F. Temple -> Jackson -> Sumner -> ... -> Parker.

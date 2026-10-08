@@ -1,0 +1,223 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: luiz-osorio-pires-prado
+name: Luiz Osório Pires Prado
+full_name: Luiz Osório Pires Prado
+aliases:
+- Dom Luiz Prado
+- Luis Prado
+birth:
+  date: '1943-03-27'
+  sources:
+  - source: costa2021
+    quote: Natural da cidade de Porto Alegre, Luiz Osório Pires Prado nasceu em 27 de março de 1943.
+  - source: costa2021
+    quote: Faleceu em 2009.
+death:
+  date: 2009-12
+  sources:
+  - source: costa2021
+    quote: Natural da cidade de Porto Alegre, Luiz Osório Pires Prado nasceu em 27 de março de 1943.
+  - source: costa2021
+    quote: Faleceu em 2009.
+  - source: cant-ec-2009-11
+    quote: que exerceu até sua morte em dezembro de 2009.
+  - source: cant-ec-2009-11
+    quote: Alegre, capital do Estado do Rio Grande o Sul, no dia 11 de março de 1943
+biography: Bispo sufraganeo da Meridional (1987) e primeiro bispo de Pelotas (1989-1999/2000).
+sources:
+- source: costa2021
+  quote: Natural da cidade de Porto Alegre, Luiz Osório Pires Prado nasceu em 27 de março de 1943.
+- source: costa2021
+  quote: Faleceu em 2009.
+ordinations:
+- order: diaconate
+  date: 1966-12
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: cant-ec-2009-11
+    quote: >-
+      Bacharelou-se em te- ologia em São Paulo no final de 1966 e foi ordenado ao diaconato em dezembro do mesmo
+      ano.
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1966 - … Luiz Osório Pires Prado
+    page: '371'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1967'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: cant-ec-2009-11
+    quote: Ordenado ao presbiterado no ano seguinte
+- order: episcopate
+  date: 1987-07
+  place: Catedral da Santissima Trindade, Porto Alegre
+  jurisdiction: ieab
+  office: suffragan
+  status: probable
+  sources:
+  - source: ia-wmn-1988-01
+    quote: Bishop Prado, who was consecrated in July in Pérto Alegre, has the task of creating
+  - source: ia-whoswho-lambeth-1988
+    quote: 'PRADO PIRES: LUIZ OSORIO Born: 1943 Diocese: Southern Brazil (Suffragan 1987) Province: Brazil'
+  - source: costa2021
+    quote: >-
+      Três anos depois, o reverendo Luiz Osório Pires Prado85 foi eleito no primeiro escrutínio – fato inédito nas
+      eleições de bispos na Igreja. Foi sagrado bispo sufragâneo da Meridional, na Catedral de Santíssima Trindade,
+      em Porto Alegre.
+  - source: wp-pt-dioc-pelotas
+    quote: >-
+      Em 1987 o reverendo Luiz Osório Pires Prado foi eleito e sagrado para ser bispo sufragâneo da Diocese Meridional.
+  - source: kickhofel-1995
+    quote: >-
+      Antes de sua sagração ao episcopado em julho de 1987, o bispo Prado trabalhou como pároco em São Leopoldo
+      e como professor no Seminário Teológico, na Universidade Federal do Rio Grande do Sul, na UNISINOS e na Faculdade
+      Lassalista de Canoas.
+    page: '312'
+  notes: >-
+    Novo dado: mês (julho de 1987) e cidade (Porto Alegre). Sagrante não nomeado. World Mission News (jan/1988)
+    diz que ele tinha a tarefa de criar a nova diocese no extremo sul (Pelotas); o Who's who de Lambeth 1988 o dá
+    como sufragâneo da Diocese Meridional (1987).
+affiliations:
+- jurisdiction: ieab
+  role: bishop
+  diocese: ieab-dm
+  start: '1987'
+  end: '1988'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cant-ec-2009-11
+    quote: >-
+      Em 1987, foi eleito bispo sufragâneo da Diocese Meridional e encarregado de organi- zar a futura diocese de
+      Pelotas. Um ano de- pois, foi eleito seu primeiro bispo diocesano.
+  notes: 'Local: sufragâneo.'
+- jurisdiction: ieab
+  role: suffragan_bishop
+  diocese: ieab-dm
+  start: '1987'
+  end: '1989'
+  end_reason: transfer
+  status: contested
+  sources:
+  - source: ame-54-1987
+    quote: >-
+      O Rev. Luis Osório Pires Prado é o novo bispo sufragâneo da Diocese Meridional da Igreja Episcopal do Brasil.
+      Ele foi eleito pelo Concílio Extraordinário da Diocese, reunido no dia 28 de março em Porto Alegre/RS.
+    page: '2'
+  - source: costa2021
+    quote: Foi sagrado bispo sufragâneo da Meridional, na Catedral de Santíssima Trindade, em Porto Alegre.
+  - source: kickhofel-1995
+    quote: >-
+      Quando, em 1987, a Diocese Meridional elegeu e sagrou o rev. Luiz Osório Pires Prado como bispo sufragâneo,
+      numa das mais rápidas eleições já realizadas na diocese, duas tarefas aguardavam o novo bispo: auxiliar o
+      bispo diocesano Cláudio Gastal nas atividades pastorais e organizar uma nova diocese com sede na cidade de
+      Pelotas.
+    page: '311'
+  notes: >-
+    Depois primeiro diocesano de Pelotas. Encarregado de organizar a futura Diocese Anglicana de Pelotas.
+  discrepancies:
+  - field: end
+    value: '1988'
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        Quando, em 1987, a Diocese Meridional elegeu e sagrou o rev. Luiz Osório Pires Prado como bispo sufragâneo,
+        numa das mais rápidas eleições já realizadas na diocese, duas tarefas aguardavam o novo bispo: auxiliar
+        o bispo diocesano Cláudio Gastal nas atividades pastorais e organizar uma nova diocese com sede na cidade
+        de Pelotas.
+      page: '311'
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dap
+  start: '1988'
+  end: 2000-01
+  end_reason: resignation
+  status: contested
+  sources:
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Anglicana de Pelotas … 1988 - Luiz Osório Pires Prado
+    page: '368'
+  - source: cant-ec-2009-11
+    quote: >-
+      Um ano de- pois, foi eleito seu primeiro bispo diocesano. Resignou a Diocese Anglicana de Pelotas em janeiro
+      de 2000.
+  - source: wp-pt-dioc-pelotas
+    quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
+  - source: costa2021
+    quote: 1988-2000 – Luiz Osório Pires Prado
+  discrepancies:
+  - field: start
+    value: '1989-03-12'
+    sources:
+    - source: wp-pt-dioc-pelotas
+      quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
+    - source: costa2021
+      quote: 1988-2000 – Luiz Osório Pires Prado
+  - field: end
+    value: '1999'
+    sources:
+    - source: wp-pt-dioc-pelotas
+      quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
+    - source: costa2021
+      quote: 1988-2000 – Luiz Osório Pires Prado
+  - field: end_reason
+    value: retirement
+    sources:
+    - source: wp-pt-dioc-pelotas
+      quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
+    - source: costa2021
+      quote: 1988-2000 – Luiz Osório Pires Prado
+  notes: Fim em 1999 (Wikipedia/dapsul) ou 2000 (Costa).
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dm
+  end: 1987-07
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Antes de sua sagração ao episcopado em julho de 1987, o bispo Prado trabalhou como pároco em São Leopoldo
+      e como professor no Seminário Teológico
+    page: '312'
+  notes: >-
+    Pároco em São Leopoldo; professor no Seminário Teológico, na UFRGS, na UNISINOS e na Faculdade Lassalista de
+    Canoas.
+events:
+- type: death
+  date: 2009-12
+  description: >-
+    Luiz Osório Pires Prado (n. Porto Alegre, 11/03/1943) morreu em dezembro de 2009, como reitor do Seminário Teológico
+    da IEAB.
+  status: confirmed
+  sources:
+  - source: cant-ec-2009-11
+    quote: que exerceu até sua morte em dezembro de 2009.
+  - source: cant-ec-2009-11
+    quote: Alegre, capital do Estado do Rio Grande o Sul, no dia 11 de março de 1943
+- type: other
+  date: '1987-03-28'
+  description: >-
+    Eleito bispo sufragâneo da Diocese Meridional pelo Concílio Extraordinário da Diocese, em Porto Alegre
+  status: confirmed
+  sources:
+  - source: ame-54-1987
+    quote: >-
+      O Rev. Luis Osório Pires Prado é o novo bispo sufragâneo da Diocese Meridional da Igreja Episcopal do Brasil.
+      Ele foi eleito pelo Concílio Extraordinário da Diocese, reunido no dia 28 de março em Porto Alegre/RS.
+    page: '2'
+- type: other
+  date: '1988'
+  description: >-
+    Eleito em concílio primeiro bispo diocesano da Diocese Anglicana de Pelotas, desmembrada da Diocese Meridional
+    (aprovada pelo Sínodo em 1988), que ele mesmo fora encarregado de organizar dois anos antes, como bispo sufragâneo
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      solicitou ao Sínodo que autorizasse a eleição de um bispo para a nova diocese vacante que, em concílio, elegeu
+      o então bispo sufragâneo Luiz Osório Pires Prado para bispo diocesano da diocese que ele mesmo fora encarregado
+      de organizar dois anos antes.
+    page: '252'

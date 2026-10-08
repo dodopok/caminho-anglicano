@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: cei
+acronym: CEI
+name: Comunhão Episcopal Internacional
+type: communion
+country: BR
+founded:
+  date: '2019-09-14'
+  sources:
+  - source: ptwiki-iecb
+    quote: >-
+      foi instituído como Arcebispo do Recife e Primaz da Comunhão Episcopal Internacional (CEI), uma organização
+      criada para reunir as comunidades ligadas à IECB
+  - source: costa-2021-tese
+    quote: >-
+      para administrar as missões da Igreja que estão se estabelecendo em outros países lusófonos, como Angola e
+      Portugal.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      E, no dia 14 de setembro de 2019, foi celebrado o culto em ação de graças pelos 80 anos de idade e 50 anos
+      de ministério de Paulo
+    page: '61'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      quando ele foi instituído como Arcebispo do Recife e Primaz da Comunhão Episcopal Internacional (CEI), organização
+      criada para abrigar as comunidades que congregam em torno da IECB.
+    page: '62'
+description: >-
+  Organização criada para reunir as comunidades ligadas à IECB; Paulo Garcia instituído seu primaz em 14/9/2019
+  (segundo a Wikipédia).
+sources:
+- source: ptwiki-iecb
+  quote: >-
+    foi instituído como Arcebispo do Recife e Primaz da Comunhão Episcopal Internacional (CEI), uma organização
+    criada para reunir as comunidades ligadas à IECB
+- source: costa-2021-tese
+  quote: >-
+    para administrar as missões da Igreja que estão se estabelecendo em outros países lusófonos, como Angola e Portugal.

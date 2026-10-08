@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: dmsob
+acronym: DMSOB
+name: Distrito Missionário do Sudoeste do Brasil (Missionary District of Southwestern Brazil)
+aliases:
+- Diocese do Brasil Sul-Ocidental
+type: diocese
+country: BR
+founded:
+  date: '1949'
+  sources:
+  - source: ens-xxvi-24
+    quote: the western, which became "Southwestern Brazil.
+  - source: wit-1950-03-30
+    quote: >-
+      Bishop Krischke has named Santa Maria his see city, and plans to rpake the Church of the Mediator there his
+      cathedral.
+description: >-
+  Criado pela Convenção Geral de 1949 (parte oeste do RS), sé em Santa Maria; primeiro bispo Egmont M. Krischke
+  (1950).
+sources:
+- source: ens-xxvi-24
+  quote: the western, which became "Southwestern Brazil.
+- source: wit-1950-03-30
+  quote: >-
+    Bishop Krischke has named Santa Maria his see city, and plans to rpake the Church of the Mediator there his
+    cathedral.
+relations:
+- type: part_of
+  target: tec
+  date: '1949'
+  end: '1965'
+  led_by:
+  - egmont-krischke
+  - plinio-lauer-simoes
+  status: confirmed
+  sources:
+  - source: wit-1949-10-27
+    quote: it was decided to divide the district of South- ern Brazil into three dioceses.

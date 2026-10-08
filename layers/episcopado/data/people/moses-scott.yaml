@@ -1,0 +1,101 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: moses-scott
+name: Moses Scott
+full_name: Moses Nathanael Christopher Omobiala Scott
+aliases:
+- M. N. C. O. Scott
+- Moses Nathanael Christopher Omobiala Scott
+- Moses Nathaniel Christopher Omobiala Scott
+birth:
+  date: '1911-08-18'
+  sources:
+  - source: wp-scott
+    quote: >-
+      '''Moses Nathanael Christopher Omobiala Scott'''  [[Order of the British Empire|CBE]] (18 August 1911 – 9
+      May 1988)
+  - source: wikidata-api
+    quote: 'Q6915936 Moses Scott {''enwiki'': ''Moses Scott''}'
+  - source: gc-journal-1964
+    quote: >-
+      the Ven. Moses Nathaniel Christophe Omobiala Scott, Dip. Th., as Bishop of Sierra Leone, on November 12, 1961
+death:
+  date: '1988-05-09'
+  sources:
+  - source: wp-scott
+    quote: >-
+      '''Moses Nathanael Christopher Omobiala Scott'''  [[Order of the British Empire|CBE]] (18 August 1911 – 9
+      May 1988)
+  - source: wikidata-api
+    quote: 'Q6915936 Moses Scott {''enwiki'': ''Moses Scott''}'
+  - source: gc-journal-1964
+    quote: >-
+      the Ven. Moses Nathaniel Christophe Omobiala Scott, Dip. Th., as Bishop of Sierra Leone, on November 12, 1961
+wikidata: Q6915936
+biography: Bispo de Serra Leoa (1961–1981) e arcebispo da Província da África Ocidental (1969–1981).
+sources:
+- source: wp-scott
+  quote: >-
+    '''Moses Nathanael Christopher Omobiala Scott'''  [[Order of the British Empire|CBE]] (18 August 1911 – 9 May
+    1988)
+ordinations:
+- order: episcopate
+  date: '1961-11-12'
+  place: Catedral de São Jorge (Cathedral Church of St. George), Freetown, Serra Leoa
+  jurisdiction: province-of-west-africa
+  office: diocesan
+  status: confirmed
+  sources:
+  - source: ia-gc-journal-1964
+    quote: >-
+      Christophe Omobiala Scott, Dip. Th., as Bishop of Sierra Leone, on November 12, 1961, in the Cathedral Church
+      of St. George, Freetown, Sierra Leone
+  - source: ia-church-times-1988-05-13
+    quote: >-
+      He was Archdeacon of Bonthe and Bo from 1959 to 1961, when he was consecrated to be Bishop of Sierra Leone
+      in succession to the Most Rev. J. L. C. Horstead.
+  - source: gc-journal-1964
+    quote: >-
+      June 1, 1964—Received notice from Cecil John, Archbishop of West Africa, of the consecration of: the Ven.
+      Moses Nathaniel Christophe Omobiala Scott, Dip. Th., as Bishop of Sierra Leone, on November 12, 1961, in the
+      Cathedral Church of St. George, Freetown, Sierra Leone;
+  - source: anglican-digest-1961-winter
+    quote: The Venerable Moses Nathan- iel Christopher Omobiala Scott, former Archdeacon of Bonthe and Bo
+  - source: whoswho-1962
+    quote: SIERRA  LEONE,  Bishop  of,  since  1961; Rt.  Rev.  Moses  Natfianael  Christopher Otnobiala  Scott
+  notes: >-
+    Reconfirma data e local (já em sucessao-lacunas.json). O sagrante continua não nomeado nas fontes vistas (Journal
+    1964, obituário no Church Times 1988, Times 20/09/1961 "No date has been fixed for the consecration"). DATA
+    (12/11/1961) e LOCAL (catedral de São Jorge, Freetown) agora têm fonte primária: o registro oficial da Convenção
+    Geral da TEC (1964) transcreve a notificação formal enviada por 'Cecil John, Archbishop of West Africa' (= Cecil
+    John Patterson, arcebispo metropolitano da África Ocidental 1961-1969). O SAGRANTE PRINCIPAL NÃO É NOMEADO.
+    Pela praxe, a notificação de sagração é enviada pelo metropolita que a presidiu, o que torna Patterson o sagrante
+    provável, mas a fonte não o diz: por isso sagrante_principal fica null. Ver dúvidas. Também foram sagrados na
+    mesma série (notificados juntos): Agori Iwe (Benin, 30/11/1961) e Rogers Nathaniel Bara Hart (Niger Delta, 10/12/1961).
+affiliations:
+- jurisdiction: province-of-west-africa
+  role: diocesan_bishop
+  diocese: sierra-leone
+  start: '1961-11-12'
+  end: '1981'
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: whoswho-1962
+    quote: SIERRA  LEONE,  Bishop  of,  since  1961;
+  - source: wp-scott
+    quote: '{{S-ttl|title=[[Bishop of Sierra Leone]]|years=1961&ndash;1981}}'
+  notes: >-
+    Fim em 1981 só pela Wikipédia. Também arcebispo da Província da África Ocidental 1969-1981 (Wikipédia; não verificado
+    aqui).
+events:
+- type: other
+  date: '1961'
+  description: >-
+    Moses Scott foi sagrado bispo de Serra Leoa em 1961, em sucessão a J. L. C. Horstead; arcebispo da África Ocidental
+    de 1969 a 1981.
+  status: probable
+  sources:
+  - source: ia-church-times-1988-05-13
+    quote: >-
+      He was Archdeacon of Bonthe and Bo from 1959 to 1961, when he was consecrated to be Bishop of Sierra Leone
+      in succession to the Most Rev. J. L. C. Horstead.

@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: esdras-gusmao-de-holanda-peixoto
+name: Esdras Gusmão de Holanda Peixoto
+birth:
+  date: '1978'
+  sources:
+  - source: dar-2023-esdras-presb
+    quote: >-
+      O Reverendo Esdras Gusmão de Holanda Peixoto, nascido em Maceió, Alagoas, em 1978, foi ordenado Diácono em
+      24 de setembro de 2022.
+biography: >-
+  Presbítero da DAR (diácono 2022, presbítero 2023), professo TSSF, coadjutor da Catedral do Bom Samaritano.
+sources:
+- source: dar-2023-esdras-presb
+  quote: >-
+    O Reverendo Esdras Gusmão de Holanda Peixoto, nascido em Maceió, Alagoas, em 1978, foi ordenado Diácono em 24
+    de setembro de 2022.
+ordinations:
+- order: diaconate
+  date: '2022-09-24'
+  place: Catedral Anglicana do Bom Samaritano, Boa Viagem, Recife (PE)
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: dar-2022-esdras-diac
+    quote: >-
+      No último sábado, dia 24/9, recebeu a ordem diaconal na Catedral Anglicana do Bom Samaritano (Boa Viagem –
+      Recife/PE) o agora Reverendo Esdras Gusmão de Holanda Peixoto.
+  notes: >-
+    Diocese Anglicana do Recife. Ordenante não nomeado explicitamente (presentes bispo Maurício (DAB) e bispa Marinez
+    (DAA)); presumivelmente o diocesano João Peixoto.
+- order: presbyterate
+  date: '2023-09-30'
+  place: Catedral Anglicana do Bom Samaritano, Boa Viagem, Recife (PE)
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: confirmed
+  sources:
+  - source: dar-2023-esdras-presb
+    quote: >-
+      Foi ordenado Presbítero no último dia 30 de setembro, Festa de São Jerônimo, o Revdo. Esdras Gusmão de Holanda
+      Peixoto.
+  - source: dar-2023-esdras-presb
+    quote: ordenação presidida pelo Bispo diocesano Revmo. João Câncio Peixoto.
+  notes: 'Diocese Anglicana do Recife. Pregador: deão Gustavo Gilson de Oliveira.'
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dar-clero-diocesano
+    quote: CLERO DIOCESANO
+  - source: dar-clero-diocesano
+    quote: Revdo. Esdras Gusmão de Holanda Peixoto
+  notes: Listado no clero diocesano da DAR (página consultada em 2026-10).

@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: eastern-diocese
+name: Eastern Diocese
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: probable
+  sources:
+  - source: wp-en-histlist
+    quote: >-
+      | [[Alexander Viets Griswold]] | [[William White (Bishop of Pennsylvania)|2]] [[Samuel Provoost|3]] [[Abraham
+      Jarvis|8]]{{sfn|Perry|1895|page=[https://archive.org/stream/cu31924050995525#page/n140/mode/1up 29]}} | 1811

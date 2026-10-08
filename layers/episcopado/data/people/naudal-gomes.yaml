@@ -1,0 +1,124 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: naudal-gomes
+name: Naudal Alves Gomes
+full_name: Naudal Alves Gomes
+aliases:
+- Dom Naudal Gomes
+- Naudal Gomez
+birth:
+  date: '1953-06-19'
+  sources:
+  - source: costa2021
+    quote: Naudal Alves Gomes nasceu na cidade de Sant’Ana do Livramento, Rio Grande do Sul, em 19 de
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Naudal Alves Gomes, Emérito
+wikidata: Q138993092
+biography: >-
+  Sufraganeo da Sul-Ocidental (2000), primeiro bispo de Curitiba/Parana (2003-2021), primaz (2018-2022); em 2024
+  bispo missionario na Diocese Episcopal de Los Angeles.
+sources:
+- source: costa2021
+  quote: Naudal Alves Gomes nasceu na cidade de Sant’Ana do Livramento, Rio Grande do Sul, em 19 de
+- source: ieab-secretaria
+  quote: Revmo. Bispo Naudal Alves Gomes, Emérito
+ordinations:
+- order: diaconate
+  date: '1979'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: stmarks-naudal
+    quote: Following his graduation from seminary, Bishop Naudal was ordained a Deacon in 1979.
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1979 - … Naudal Alves Gomes
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1980'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: stmarks-naudal
+    quote: A year later, he was ordained to the presbyterate in 1980.
+- order: episcopate
+  date: '2000-04-08'
+  place: Catedral (catolica) de Nossa Senhora da Conceicao, Santa Maria (RS)
+  jurisdiction: ieab
+  office: suffragan
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Na cidade de Santa Maria, Naudal Alves Gomes98 foi eleito bispo sufragâneo da Diocese Sul-Ocidental. A cerimônia
+      aconteceu na manhã do dia 08 de abril de 2000, sendo realizada na Catedral de Nossa Senhora da Conceição da
+      Diocese de Santa Maria da Igreja Católica Romana
+  - source: wp-pt-naudal
+    quote: >-
+      Sua sagração episcopal, em 8 de abril de 2000, ocorreu na Catedral Metropolitana de Santa Maria, cedida por
+      Dom Ivo Lorscheiter.
+  notes: >-
+    Presenca da bispa Barbara Harris (TEC) registrada; sagrante principal nao informado nas fontes lidas.
+affiliations:
+- jurisdiction: ieab
+  role: suffragan_bishop
+  diocese: ieab-dso
+  start: '2000-04-08'
+  end: '2003'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: wp-pt-naudal
+    quote: Foi eleito bispo sufragâneo da Diocese Anglicana Sul-Ocidental, em Santa Maria, em 2000.
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dapar
+  start: '2003'
+  end: 2021-12
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: wp-pt-naudal
+    quote: Tornou-se bispo diocesano da Diocese Anglicana do Paraná em 2003.
+  - source: ieab-magda-sagrara
+    quote: >-
+      Na prática, a coadjutora auxiliará o atual bispo diocesano, Naudal Alves Gomes, na Diocese até dezembro, que
+      é quando este se tornará bispo emérito.
+  notes: Primeiro bispo da Diocese de Curitiba (depois Diocese Anglicana do Parana).
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_interino
+  diocese: ieab-dasp
+  start: '2018'
+  end: '2020'
+  status: contested
+  sources:
+  - source: costa2021
+    quote: 2018-2020 – Naudal Alves Gomes (Interino)
+  notes: So Costa Anexo D; conflita com Irala ate 2021.
+- jurisdiction: ieab
+  role: primate
+  start: '2018-06-02'
+  end: '2022-11-13'
+  status: confirmed
+  sources:
+  - source: wp-pt-naudal
+    quote: >-
+      Dom Naudal foi eleito primaz da Igreja Episcopal Anglicana do Brasil durante o 34º Sínodo Geral da denominação,
+      em 2 de junho de 2018
+  - source: costa2021
+    quote: 'Durante o 34º Sínodo também foi eleito o novo Primaz da IEAB: o bispo Naudal Alves Gomes.'
+  - source: wp-en-ieab
+    quote: Naudal Alves Gomes, 2018–2022
+  - source: stmarks-naudal
+    quote: Prior to that he served as primate of the Episcopal Anglican Church in Brazil from 2018 to 2022.
+- jurisdiction: tec
+  role: clergy
+  diocese: st-mark-s-episcopal-church-van-nuys
+  status: probable
+  sources:
+  - source: stmarks-naudal
+    quote: The Most Rev. Naudal Alves Gomes is the interim bishop in-charge of St. Mark’s.
+  notes: >-
+    Local: Diocese of Los Angeles. Bispo emérito da IEAB servindo como bispo interino encarregado de uma paróquia
+    da Episcopal Church (EUA); data não informada na página.

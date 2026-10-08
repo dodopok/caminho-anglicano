@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jose-geraldo-alves-dos-santos
+name: José Geraldo Alves dos Santos
+biography: Ex-clérigo da Igreja Anglicana Tradicional do Brasil.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja já teve como clérigos os reverendos o frei J. Milton, Franciel Wille, Fabiano de Oliveira Ribeiro,
+    Lucas Schumacher
+  page: '136'
+affiliations:
+- jurisdiction: iatb
+  role: clergy
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja já teve como clérigos os reverendos o frei J. Milton, Franciel Wille, Fabiano de Oliveira Ribeiro,
+      Lucas Schumacher, José Paulo Gomes Davidson Leandro, José Geraldo Alves dos Santos, Luiz Evandro Wathier,
+      Adriano Caldas Damasceno, e Hiago de Barros Pereira.
+    page: '136'
+  notes: O livro diz que a IATB 'já teve' esses clérigos (vínculo passado, sem datas).

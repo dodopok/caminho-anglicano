@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: lauro-borba-da-silva
+name: Lauro Borba da Silva
+full_name: Lauro Borba da Silva
+ordinations:
+- order: diaconate
+  date: '1950'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1950 - … Lauro Borba da Silva
+    page: '370'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1950'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1950 - … Lauro Borba da Silva
+    page: '370'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: dmsob
+  role: clergy
+  diocese: southwestern-brazil
+  start: '1951'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      em Passo Fundo, onde o rev. Lauro Borba da Silva fundou oficialmente a Missão da Ressurreição em 19 de outubro
+      de 1951.
+    page: '254'
+  notes: Fundou a Missão da Ressurreição em Passo Fundo (1951).
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  start: '1977-05-13'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Em treze de maio de 1977, o bispo Sherrill instituiu o rev. Lauro Borba da Silva como ministro encarregado
+      da Missão do Cristo Redentor, enquanto o rev. Broughton permanecia no pastorado da comunidade inglesa.
+    page: '297'
+  notes: Ministro encarregado da Missão do Cristo Redentor (depois Bom Pastor), Salvador.

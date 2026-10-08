@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ica
+acronym: ICA
+name: Igreja Católica Anglicana
+type: national_church
+country: BR
+founded:
+  date: '2017'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A Igreja, fundada em 2017, já esteve organizada em quatro Dioceses
+    page: '138'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Católica Anglicana (ICA) [2017]
+    page: '172'
+website: https://catolicaanglicana.wordpress.com/
+description: >-
+  Igreja fundada em 2017 por clérigos saídos da IATB (grupo de Ricardo Vicente dos Anjos e Orvandil Moreira Barbosa);
+  dioceses em Goiás, Bahia e Pará; forte influência da Teologia da Libertação; em 2023 sofreu a saída do grupo que
+  formou a ICA-Brasil.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: A Igreja, fundada em 2017, já esteve organizada em quatro Dioceses
+  page: '138'
+relations:
+- type: schism_from
+  target: iatb
+  date: '2017'
+  led_by:
+  - orvandil-moreira-barbosa
+  - ricardo-vicente-dos-anjos
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Parte desse grupo, liderados por Ricardo Vicente dos Anjos e Orvandil Moreira Barbosa, fundaram a Igreja Católica
+      Anglicana.
+    page: '137'
+  notes: >-
+    Grupo de clérigos que deixou a IATB (época do primaz Alfredo Dórea); a ICA no Pará 'teve origem da saída de
+    clérigos da IATB' (p. 139).

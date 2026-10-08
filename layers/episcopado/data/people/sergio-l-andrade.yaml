@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sergio-l-andrade
+name: Sérgio L. Andrade
+aliases:
+- Rev. Sérgio Andrade
+- Sérgio Andrade
+- reverendo Sérgio
+- reverendo Sérgio Andrade
+biography: >-
+  Clérigo que permaneceu na IEAB após o cisma de 2002; instituído deão da Catedral Anglicana do Recife em 17/08/2003
+  por Robinson Cavalcanti; rompeu com a IEAB em 2017 e lidera a Igreja Anglicana da Santíssima Trindade.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    em 17 de agosto do mesmo ano, o reverendo Sérgio Andrade foi oficialmente instituído como deão, pelo bispo do
+    Recife, dom Robinson Cavancati
+  page: '110'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Já a Igreja Anglicana da Santíssima Trindade continua sua história sob a liderança do reverendo Sérgio Andrade
+  page: '113'
+affiliations:
+- jurisdiction: ieab-dar
+  role: other
+  role_description: deao
+  start: '2003-08-17'
+  end: '2017'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em 17 de agosto do mesmo ano, o reverendo Sérgio Andrade foi oficialmente instituído como deão, pelo bispo
+      do Recife, dom Robinson Cavancati
+    page: '110'
+  - source: cant-novas-igrejas-2024
+    quote: a liderança do reverendo Sérgio Andrade foi fortalecida como deão
+    page: '111'
+  notes: 'Local: Catedral Anglicana da Santíssima Trindade, Recife.'
+- jurisdiction: iast
+  role: founder
+  start: '2017'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Já a Igreja Anglicana da Santíssima Trindade continua sua história sob a liderança do reverendo Sérgio Andrade
+    page: '113'
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: ieab-2004-decreto-recife
+    quote: 'Considerando a solicitação dos clérigos e clérigas a seguir relacionados:'
+  - source: ieab-2004-decreto-recife
+    quote: Revmo. Sérgio L. Andrade (Deão da Catedral
+  notes: >-
+    Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
+    por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. Deão da Catedral Anglicana
+    da SS. Trindade
+- jurisdiction: iast
+  role: clergy
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Igreja Anglicana da Santíssima Trindade, independente, pastoreada pelo reverendo Sérgio Andrade, cuja comunidade
+      se reúne em auditório do Shopping ETC, no Recife
+    page: '174'
+  notes: Pastor da comunidade; situação em 2025.

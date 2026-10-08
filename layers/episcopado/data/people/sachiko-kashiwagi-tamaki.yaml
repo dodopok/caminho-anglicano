@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sachiko-kashiwagi-tamaki
+name: Sachiko Kashiwagi Tamaki
+ordinations:
+- order: diaconate
+  date: '2022-12-03'
+  place: Catedral Anglicana da Santíssima Trindade, São Paulo (SP)
+  jurisdiction: ieab
+  ordained_by: francisco-cezar-fernandes-alves
+  status: confirmed
+  sources:
+  - source: ieab-2022-diac-dasp
+    quote: >-
+      foram ordenados ao diaconato Enilson Vasconcelos da Silva, José Torrente Gonçales, e Sachiko Kashiwagi Tamaki,
+      sendo ordinante o revmo. bispo Francisco Cézar F. Alves, bispo diocesano da DASP.
+  - source: ieab-2022-diac-dasp
+    quote: >-
+      a Diocese Anglicana de São Paulo (DASP) testemunha o ingresso de três pessoas à ordem clerical no último sábado,
+      dia 3 de dezembro.
+  notes: Diocese Anglicana de São Paulo (DASP).

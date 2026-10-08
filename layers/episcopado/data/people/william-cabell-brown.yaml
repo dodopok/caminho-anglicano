@@ -1,0 +1,113 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: william-cabell-brown
+name: William Cabell Brown
+aliases:
+- Bishop Brown of Virginia
+- Rev. William C. Brown
+birth:
+  date: '1861-11-22'
+  sources:
+  - source: wp-en-brown
+    quote: >-
+      William Cabell Brown (November 22, 1861 – July 25, 1927) was an Episcopal missionary in Brazil who returned
+      to his native Virginia to become the seventh bishop of Virginia.
+  - source: wd-q10393674
+    quote: William Cabell Brown | American Episcopal missionary in Brazil and bishop
+death:
+  date: '1927-07-25'
+  sources:
+  - source: wp-en-brown
+    quote: >-
+      William Cabell Brown (November 22, 1861 – July 25, 1927) was an Episcopal missionary in Brazil who returned
+      to his native Virginia to become the seventh bishop of Virginia.
+  - source: wd-q10393674
+    quote: William Cabell Brown | American Episcopal missionary in Brazil and bishop
+wikidata: Q10393674
+biography: >-
+  Missionário no RS a partir de 1891, tradutor da Bíblia e do Livro de Oração Comum para o português; fundou a obra
+  no Rio (1908); sagrado em 1914 bispo assistente da Virgínia, depois 7º bispo da Virgínia.
+sources:
+- source: wp-en-brown
+  quote: >-
+    William Cabell Brown (November 22, 1861 – July 25, 1927) was an Episcopal missionary in Brazil who returned
+    to his native Virginia to become the seventh bishop of Virginia.
+- source: wd-q10393674
+  quote: William Cabell Brown | American Episcopal missionary in Brazil and bishop
+ordinations:
+- order: diaconate
+  date: '1891-06-26'
+  jurisdiction: tec
+  ordained_by: francis-mcneece-whittle
+  status: probable
+  sources:
+  - source: wp-en-brown
+    quote: >-
+      Brown was ordained as a deacon by bishop Francis McNeece Whittle on June 26, 1891, and advanced to the priesthood
+      on August 2, 1891.
+- order: presbyterate
+  date: '1891-08-02'
+  jurisdiction: tec
+  ordained_by: francis-mcneece-whittle
+  status: probable
+  sources:
+  - source: wp-en-brown
+    quote: advanced to the priesthood on August 2, 1891.
+  notes: >-
+    A Wikipédia não diz explicitamente quem o ordenou presbítero; o infobox traz 'ordained_by = Francis McNeece
+    Whittle'.
+- order: episcopate
+  date: '1914-10-28'
+  place: Richmond, Virgínia
+  jurisdiction: tec
+  office: auxiliary
+  principal_consecrator: daniel-tuttle
+  co_consecrators:
+  - alfred-magill-randolph
+  - robert-atkinson-gibson
+  status: probable
+  sources:
+  - source: wp-en-brown
+    quote: consecration     = October 28, 1914
+  - source: wp-en-histlist
+    quote: '[[Daniel S. Tuttle|84]] [[Alfred Magill Randolph|132]] [[Robert Atkinson Gibson|184]]'
+  notes: >-
+    Sagrado bispo assistente (suffragan/assistant) da Virgínia, já fora do Brasil. Duas fontes terciárias (mesma
+    Wikipédia).
+affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: '1891'
+  end: '1914'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: wp-en-ieab
+    quote: >-
+      Three other American missionaries followed in 1891: Rev. William Cabell Brown (who would leave in 1914 to
+      become bishop in his native Virginia
+  - source: wit-1952-03-20
+    quote: >-
+      In 1891 Kinsolving and Morris were re-en- forced by the arrival from Virginia of the Rev. and Mrs. William
+      Cabell Brown, the Rev. John Meem and Miss Mary Packard
+events:
+- type: other
+  date: '1892-05-23'
+  description: >-
+    Primeira convocação (não autorizada) da missão, Casa da Missão, Porto Alegre, 23-26/05/1892: presentes os revs.
+    Morris, Brown, Meem e Kinsolving e os catequistas Boaventura, Brande e Cabral.
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: >-
+      Presentes: reverendos Morris, Brown, Meem e Kinsolving, e catequistas Boaventura, Brande e Cabral. Presidida
+      por Kinsolving e secretariada por Cabral.
+- type: other
+  date: '1898'
+  description: >-
+    Recebeu dois votos na ordem clerical na eleição do primeiro bispo (convocação extraordinária de 1898), estando
+    de licença nos Estados Unidos
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: Brown teve dois votos na ordem clerical e nunhum na ordem leiga.
+    page: '93'

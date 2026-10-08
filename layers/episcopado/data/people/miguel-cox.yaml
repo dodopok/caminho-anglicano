@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: miguel-cox
+name: Miguel Cox
+biography: >-
+  Reverendo designado primeiro ministro responsável pela missão do Calvário (Paulista), então ligada à IEAB; citado
+  também como liderança clerical influente junto à Igreja Cristã Episcopal.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: O reverendo Miguel Cox foi designado como primeiro ministro responsável
+  page: '57'
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O reverendo Miguel Cox foi designado como primeiro ministro responsável, sendo sucedido, pelo ministro leigo
+      Adonias Ramos de Souza.
+    page: '57'
+  notes: 'Local: Missão do Calvário, Paulista.'

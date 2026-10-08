@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: daniel-araujo
+name: Daniel Araújo
+biography: Bispo da Diocese Anglicana Católica do Brasil.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Atualmente, a DAC possui três bispos: dom Lucas Macieira (Arcebispo e Primaz), dom João de Deus da Silva, Dom
+    Antônio Santana Neto e dom Daniel Araújo.
+  page: '102'
+affiliations:
+- jurisdiction: dac
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Atualmente, a DAC possui três bispos: dom Lucas Macieira (Arcebispo e Primaz), dom João de Deus da Silva,
+      Dom Antônio Santana Neto e dom Daniel Araújo.
+    page: '102'
+  notes: O livro diz 'três bispos' mas lista quatro nomes (incluindo Lucas Macieira).

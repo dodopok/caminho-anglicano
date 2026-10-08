@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: gessi-datsch-rodio
+name: Gessi Datsch Rodio
+ordinations:
+- order: diaconate
+  date: '2019'
+  place: Paróquia Agnus Dei, Santa Catarina
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: ieab-2024-gessi
+    quote: Em 2019 eu fui ordenada Diácona na paróquia Agnus Dei, Santa Catarina, Diocese Sul Ocidental.
+  notes: Diocese Sul-Ocidental. Relato pessoal publicado pela IEAB; ordenante não informado.
+- order: presbyterate
+  date: '2024-04-13'
+  place: Paróquia da Anunciação, Campo Verde (MT)
+  jurisdiction: ieab
+  ordained_by: marinez-bassotto
+  status: confirmed
+  sources:
+  - source: ieab-2024-gessi
+    quote: >-
+      A comunidade anglicana de Campo Verde testemunhou, no dia 13 de abril, um momento de grande significado e
+      importância: a Ordenação Presbiteral da reverenda Gessi Datsch Rodio.
+  - source: ieab-2024-gessi
+    quote: >-
+      A cerimônia de ordenação foi conduzida pela bispa primaz, Marinez Bassotto, com a presença do bispo Mauricio
+      Andrade.
+  notes: >-
+    Distrito Missionário Anglicano (DMA). Nome da paróquia (Anunciação) vem do relato da própria ordenada na mesma
+    página.

@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-ely
+name: Diocese of Ely
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: reverendo Valmor Pimenta (Padre Valmor), da Diocese de Ely, Igreja da Inglaterra
+    page: '124'

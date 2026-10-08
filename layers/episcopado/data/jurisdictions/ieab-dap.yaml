@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-dap
+acronym: IEAB-DAP
+name: Diocese Anglicana de Pelotas
+type: diocese
+country: BR
+founded:
+  date: 1988-10
+  sources:
+  - source: ieab-pelotas-35
+    quote: cuja implantação aconteceu no dia 12 de março de 1989
+  - source: wp-pt-dioc-pelotas
+    quote: Foi criada em outubro de 1988 e instalada em abril de 1989.
+  - source: kickhofel-1995
+    quote: >-
+      Assim, a Diocese Anglicana de Pelotas surgiu do desmembramento da parte mais ao sul da Diocese Meridional
+      … Criada em outubro de 1988 e instalada efetivamente em abril do ano seguinte
+    page: '311'
+website: http://dapsul.com.br/
+description: Desmembrada da Meridional; criada em 1988, implantada em 12/03/1989.
+sources:
+- source: ieab-pelotas-35
+  quote: cuja implantação aconteceu no dia 12 de março de 1989
+- source: wp-pt-dioc-pelotas
+  quote: Foi criada em outubro de 1988 e instalada em abril de 1989.
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: cant-ec-2009-11
+    quote: >-
+      Um ano de- pois, foi eleito seu primeiro bispo diocesano. Resignou a Diocese Anglicana de Pelotas em janeiro
+      de 2000.
+  - source: darj-episcopado
+    quote: >-
+      Logo após sua ordenação diaconal, em 1989, foi nomeado ministro encarregado da Paróquia do Divino Semeador,
+      na cidade de Pelotas, por 4 anos.
+  - source: wp-pt-dioc-pelotas
+    quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
+  - source: costa2021
+    quote: 1988-2000 – Luiz Osório Pires Prado
+  - source: wp-pt-dioc-pelotas
+    quote: Sebastião Armando Gameleira Soares - 2000 a 2006;
+  - source: costa2021
+    quote: 2000-2006 – Sebastião Armando Gameleira Soares
+  - source: ens-102306-1-a
+    quote: who has been bishop of the Diocese of Pelotas in southern Brazil since February 2000
+  - source: wp-pt-dioc-pelotas
+    quote: Renato da Cruz Raatz - 2007 a 2019;
+  - source: costa2021
+    quote: >-
+      que substituiu o bispo Renato da Cruz Raatz, que havia atingido a idade da aposentadoria compulsória.
+  - source: costa2021
+    quote: A posse como a nova diocesana de Pelotas aconteceu em 14 de março de 2020, na Catedral do Redentor.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revma. Meriglei Borges Silva Simin
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Anglicana de Pelotas … 1988 - Luiz Osório Pires Prado
+    page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      Das cinco candidatas que fizeram o teste vocacional, apenas a senhora Nilde Cunha, viúva e presidente, na
+      época, da diretoria diocesana e nacional da Sociedade Auxiliadora de Senhoras, perseverou, tornando-se a primeira
+      e única freira da Igreja Episcopal. Sem novas candidatas, a Comunidade não poderia vingar, e irmã Maria, mais
+      tarde foi ordenada ao diaconato e ao presbiterado pelo bispo Luiz Osório Pires Prado, da Diocese Anglicana
+      de Pelotas, onde passou a exercer o seu ministério regular.
+    page: '318'

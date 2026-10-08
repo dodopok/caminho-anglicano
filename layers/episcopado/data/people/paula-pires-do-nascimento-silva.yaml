@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: paula-pires-do-nascimento-silva
+name: Paula Pires do Nascimento Silva
+ordinations:
+- order: diaconate
+  date: '2025-10-24'
+  jurisdiction: reb
+  status: probable
+  sources:
+  - source: reb-calendario-2026
+    quote: 24/10/2025 – Aniversário de Ordenação • Revda. Paula
+  - source: reb-calendario-2026
+    quote: "Diáconos \nWeiden de Morais Mendes\nAndreia Rodrigues Nogueira Pinto\nPaula Pires do Nascimento Silva\n\
+      Rafael Santos Rodrigues"
+  notes: >-
+    No Sínodo Diocesano de outubro/2025; ainda diácono(a) em 2026, logo a ordenação é diaconal. Ordenante não informado.
+affiliations:
+- jurisdiction: reb
+  role: other
+  role_description: postulante
+  start: '2024-12-20'
+  status: confirmed
+  sources:
+  - source: reb-portaria-01-2024
+    quote: Paula Pires do Nascimento Silva
+  notes: >-
+    Postulante em 20/12/2024; em 2026 a página "Estrutura" da REB já o(a) lista entre os clérigos (Rev./Revda.)
+    — ordenação 2025–2026 pelo bispo Eric Rodrigues provável, mas sem notícia/data encontrada.
+- jurisdiction: reb
+  role: clergy
+  start: '2026'
+  status: probable
+  sources:
+  - source: reb-estrutura
+    quote: Revda. Paula Silva
+- jurisdiction: reb
+  role: deacon
+  status: confirmed
+  sources:
+  - source: reb-calendario-2026
+    quote: "Diáconos \nWeiden de Morais Mendes\nAndreia Rodrigues Nogueira Pinto\nPaula Pires do Nascimento Silva\n\
+      Rafael Santos Rodrigues"
+  notes: >-
+    Diácono(a) na lista do clero do Calendário REB 2026. Consta na lista do clero do Calendário REB 2026.

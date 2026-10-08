@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: 1-distrito-missionario-do-brasil
+name: 1º Distrito Missionário do Brasil
+type: diocese
+relations:
+- type: part_of
+  target: ceec
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Para a supervisão daquele Distrito, foi instituído o Cônego Rev. Leonides de Menezes.
+    page: '66'

@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: francisco-pagtakhan
+name: Francisco Pagtakhan
+biography: Bispo da Igreja Filipina Independente; co-sagrante dos quatro bispos do Movimento Contínuo em 1978.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: O Movimento foi endossado com o apoio do bispo Francisco Pagtakhan, da Igreja Filipina Independente
+  page: '71'
+events:
+- type: other
+  date: '1978'
+  description: >-
+    Mark Pae (Igreja Anglicana da Coreia) consente in absentia nas sagrações de 1978 do Movimento Contínuo.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Mark Pae, que, embora não pôde participar presencialmente das sagrações, deu o seu consentimento para os atos
+      litúrgicos in absentia.
+    page: '71'

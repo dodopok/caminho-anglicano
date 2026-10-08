@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-moray-and-ross
+name: Diocese of Moray and Ross
+type: diocese
+relations:
+- type: part_of
+  target: scottish-episcopal-church
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: Dr. Arthur Petrie, bishop of Ross and Moray

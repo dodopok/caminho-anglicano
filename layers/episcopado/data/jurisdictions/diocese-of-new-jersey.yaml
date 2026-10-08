@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-new-jersey
+name: Diocese of New Jersey
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: probable
+  sources:
+  - source: wp-en-histlist
+    quote: >-
+      | [[John Scarborough]] | [[Horatio Potter|62]] [[William Bacon Stevens|71]] [[John Barrett Kerfoot|78]] |
+      1875

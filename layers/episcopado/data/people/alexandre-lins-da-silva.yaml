@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: alexandre-lins-da-silva
+name: Alexandre Lins da Silva
+full_name: Alexandre Lins da Silva
+aliases:
+- Dom Alexandre Silva
+biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
+sources:
+- source: ptwiki-iecb
+  quote: Alexandre Lins da Silva (2014)
+ordinations:
+- order: episcopate
+  date: '2014-10-02'
+  jurisdiction: iecb
+  office: auxiliary
+  status: confirmed
+  sources:
+  - source: ptwiki-iecb
+    quote: Alexandre Lins da Silva (2014)
+  - source: costa-2021-tese
+    quote: >-
+      Alexandre Lins da Silva (Auxiliar para Missões no Estado do Rio Grande do Norte), em 02 de outubro de 2014
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Alexandre Lins da Silva (Auxiliar para Missões no Estado do Rio Grande do Norte), em 02 de outubro de 2014
+    page: '57'
+  notes: >-
+    Data completa segundo Costa (2021, p. 245); ano confirmado pela Wikipédia PT. Sagrantes não informados; sucessão
+    via Paulo Garcia/ICCEC. Sagrantes não nomeados.
+affiliations:
+- jurisdiction: iecb
+  role: bishop
+  diocese: diocese-do-natal
+  start: '2014'
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Alexandre Lins da Silva (2014)
+  notes: 'Local: Catedral Betânia. bispo diocesano (2019-)'

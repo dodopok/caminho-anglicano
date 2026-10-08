@@ -1,0 +1,227 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: albertino-de-sousa-barreiros
+name: Albertino de Sousa Barreiros
+full_name: Albertino de Sousa Barreiros
+aliases:
+- Albertino Barreiros
+- Albertino Souza
+- Albertino de Sousa
+- Albertino de Souza
+- Bishop Albertino Barreiros
+- Dom Albertino
+- Dom Albertino Barreiros
+birth:
+  date: '1966-05-03'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Albertino de Sousa Barreiros nasceu em 03 de maio de 1966, na cidade de Nova Olinda, no sertão paraibano.
+    page: '80'
+biography: >-
+  Bispo ordinário da Diocese Anglicana do Natal (TAC no Brasil), fundada em 2019; antes padre (segundo blog local,
+  ordenado presbítero católico romano em 1994 — não verificado). Em 2025 enfrentava tratamento de câncer.
+sources:
+- source: tac-natal-5anos
+  quote: >-
+    The Right Reverend Albertino Barreiros Bishop Ordinary of the Diocese of Natal Traditional Anglican Church in
+    Brazil
+- source: tac-natal-noticias
+  quote: uma oração e uma bênção do nosso bispo diocesano, Dom Albertino De Sousa Barreiros.
+ordinations:
+- order: presbyterate
+  date: '1994-05-28'
+  place: Nova Olinda (PB)
+  jurisdiction: null
+  ordained_by: gerardo-andrade-ponte
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Foi ordenado presbítero em 28 de maio de 1994, em sua terra natal, pelas mãos de Dom Gerardo Andrade Ponte,
+      então bispo da Diocese de Patos (PB).
+    page: '80'
+  notes: Ordenação na Igreja Católica Romana (Diocese de Patos).
+- order: episcopate
+  date: '2019-07-15'
+  place: Capela da Universidade Federal do Rio Grande do Norte, Natal (RN)
+  jurisdiction: tac-natal
+  office: diocesan
+  principal_consecrator: james-antonio-roque
+  status: contested
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Entre os bispos ordenados por James estavam: Dom José Kennedy de Freitas, organizador da Igreja Anglicana
+      de Confissão Continuante; Dom Marcos Mattos, nomeado bispo da Diocese Anglicana Continuante do Rio de Janeiro
+      (falecido prematuramente, antes da consolidação da diocese); Dom Albertino de Sousa Barreiros, da Diocese
+      Anglicana do Natal; Dom Claudinei Rodrigo Ferreira, da Diocese Anglicana de Santa Catarina; Dom Itabira Jonas,
+      da Diocese Anglicana de São Paulo e Paraná; Dom Francisco de Assis Coelho e Pinho, bispo eleito e delegado
+      episcopal da Pró-Diocese Anglicana do Amazonas; e dom José Barbosa da Silva, da Diocese Anglicana de Portugal,
+      na União Europeia.
+    page: '157'
+  - source: cant-anglo-catolicismo-2026
+    quote: >-
+      sendo sagrado em 15 de julho de 2019 na capela da Universidade Federal do Rio Grande do Norte. A cerimônia
+      foi presidida por Dom James Antônio Roque, que também coordenou a instalação oficial da Diocese.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo ordinante principal e bispo responsável pela coordenação dos trabalhos de criação e instalação da
+      Diocese foi dom James Roque.
+  - source: costa-2021-tese
+    quote: >-
+      em seguida, ordenou muitas pessoas ao episcopado, a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino
+      de Sousa Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa
+      da Silva.
+  - source: cant-novas-igrejas-2024
+    quote: A cerimônia de sagração de dom
+    page: '80'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Albertino aconteceu em 15 de julho de 2019, na Capela do Campus da Universidade Federal do Rio Grande do Norte,
+      quando também ocorreu a instalação oficial da recém-criada Diocese. O bispo ordinante principal e bispo responsável
+      pela coordenação dos trabalhos de criação e instalação da Diocese foi dom James Roque.
+    page: '81'
+  discrepancies:
+  - field: jurisdiction
+    value: iacc
+    sources:
+    - source: cant-anglo-catolicismo-2026
+      quote: >-
+        sendo sagrado em 15 de julho de 2019 na capela da Universidade Federal do Rio Grande do Norte. A cerimônia
+        foi presidida por Dom James Antônio Roque, que também coordenou a instalação oficial da Diocese.
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        O bispo ordinante principal e bispo responsável pela coordenação dos trabalhos de criação e instalação da
+        Diocese foi dom James Roque.
+    - source: costa-2021-tese
+      quote: >-
+        em seguida, ordenou muitas pessoas ao episcopado, a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino
+        de Sousa Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José
+        Barbosa da Silva.
+    - source: cant-novas-igrejas-2024
+      quote: A cerimônia de sagração de dom
+      page: '80'
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Albertino aconteceu em 15 de julho de 2019, na Capela do Campus da Universidade Federal do Rio Grande do
+        Norte, quando também ocorreu a instalação oficial da recém-criada Diocese. O bispo ordinante principal e
+        bispo responsável pela coordenação dos trabalhos de criação e instalação da Diocese foi dom James Roque.
+      page: '81'
+  - field: place
+    value: Capela do Campus da Universidade Federal do Rio Grande do Norte, Natal (RN)
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: A cerimônia de sagração de dom
+      page: '80'
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Albertino aconteceu em 15 de julho de 2019, na Capela do Campus da Universidade Federal do Rio Grande do
+        Norte, quando também ocorreu a instalação oficial da recém-criada Diocese. O bispo ordinante principal e
+        bispo responsável pela coordenação dos trabalhos de criação e instalação da Diocese foi dom James Roque.
+      page: '81'
+  notes: >-
+    'da Diocese Anglicana do Natal'. Data não informada. Fecha a data (jurisdicoes-menores.json tinha data nula).
+    Diocese Anglicana do Natal (hoje ligada à TAC). Costa (2021) e o site da IACC dizem que James Roque 'ordenou'
+    estes bispos. Para Itabira Jonas, a data de 11/1/2018 vem do site da diocese (registro separado); para Barreiros,
+    c. 2019. Pode tratar-se do mesmo evento já registrado. Co-sagrantes não nomeados. A p. 76 inclui Albertino na
+    lista de bispos ordenados por James Roque entre seus 'primeiros atos' episcopais (contexto do Japi, extinto
+    em 2016) — ver dúvidas.
+affiliations:
+- jurisdiction: tac
+  role: diocesan_bishop
+  diocese: tac-natal
+  start: '2019'
+  status: confirmed
+  sources:
+  - source: tac-natal-5anos
+    quote: Bishop Ordinary of the Diocese of Natal
+  - source: tac-adclerum-2025
+    quote: >-
+      We pray to Divine Providence in the life of our Right Reverend Bishop Albertino de Sousa Barreiros and all
+      our clergy.
+  notes: >-
+    Data de sua sagração e sagrantes não encontrados. Um blog local (aryramalho.com, abril de 2019) noticiou sua
+    eleição como primeiro bispo da recém-criada Diocese do Natal — não pude abrir a página. O site da IACC o lista
+    como bispo na linha de James Roque.
+- jurisdiction: tac-natal
+  role: diocesan_bishop
+  start: '2019-07-15'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Nesta reunião estavam presentes o Bispo Primaz, Shane Janzen (metropolita do Canadá), o Arcebispo Michael
+      Gill da África do Sul (Secretário do Colégio dos Bispos), o Arcebispo Juan Garcia (ACA), o Bispo de Natal,
+      dom Albertino
+    page: '81'
+- jurisdiction: iacc
+  role: diocesan_bishop
+  diocese: tac-natal
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      dom †Albertino de Sousa Barreiros, Bispo da Diocese Anglicana do Natal, Estado do Rio Grande do Norte
+  notes: Página da IACC sem data.
+- jurisdiction: dav
+  role: clergy
+  end: '2018'
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2018, um grupo de clérigos da cidade do Natal24, ligados à Diocese Anglicana de Votorantim, deixou esta
+      Igreja
+    page: '80'
+- jurisdiction: tac-natal
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Entre os bispos ordenados por James estavam: Dom José Kennedy de Freitas, organizador da Igreja Anglicana
+      de Confissão Continuante; Dom Marcos Mattos, nomeado bispo da Diocese Anglicana Continuante do Rio de Janeiro
+      (falecido prematuramente, antes da consolidação da diocese); Dom Albertino de Sousa Barreiros, da Diocese
+      Anglicana do Natal; Dom Claudinei Rodrigo Ferreira, da Diocese Anglicana de Santa Catarina; Dom Itabira Jonas,
+      da Diocese Anglicana de São Paulo e Paraná; Dom Francisco de Assis Coelho e Pinho, bispo eleito e delegado
+      episcopal da Pró-Diocese Anglicana do Amazonas; e dom José Barbosa da Silva, da Diocese Anglicana de Portugal,
+      na União Europeia.
+    page: '157'
+events:
+- type: other
+  date: null
+  description: >-
+    Bispos brasileiros que, segundo a IACC, receberam a linhagem episcopal de James Roque: José Kennedy de Freitas,
+    Marcos Mattos, Albertino de Sousa Barreiros (Natal), Claudinei Rodrigo Ferreira (Santa Catarina), Itabira Jonas
+    (São Paulo e Paraná), Francisco de Assis Coelho e Pinho (Amazonas, eleito) e José Barbosa da Silva (Portugal)
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      Após, houve a transmissão da sua linhagem episcopal para poucas pessoas. Podem ser citadas como as mais atuantes
+      no anglicanismo continuante brasileiro os bispos: dom †José Kennedy de Freitas
+- type: other
+  date: null
+  description: >-
+    Segundo Costa (2021), a Diocese Anglicana do Japí (James Roque) foi extinta, e os bispos sagrados por Roque
+    seguiram caminhos distintos, fundando igrejas anglicanas independentes
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      Anos mais tarde, a Diocese Anglicana do Japí foi extinta e estes novos bispos seguiram caminhos distintos,
+      fundando Igrejas Anglicanas Independentes, sem vínculos com alguma instância associativa, nem com o Movimento
+      Continuante.
+- type: other
+  date: '2021'
+  description: >-
+    Contato do clero de Natal (Rodson e Melque) com o arcebispo Michael Gill e início do diálogo com a TAC; reunião
+    com o primaz Shane Janzen.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Junto com o reverendo Melque, em 2021 foi feito contato com o Arcebispo da África do Sul, Michael Gill, de
+      Joanesburgo, e assim, iniciou-se o diálogo com a TAC.
+    page: '81'

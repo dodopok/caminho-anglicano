@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-de-anapolis-go-paroquia-cristo-rei
+name: Diocese Anglicana de Anápolis (GO) – Paróquia Cristo Rei
+type: diocese
+relations:
+- type: part_of
+  target: iatb
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Paróquia Cristo Rei, localizada nesta cidade, era liderada pelos reverendos Rafael Mendes e Eudlon Junior.
+    page: '105'

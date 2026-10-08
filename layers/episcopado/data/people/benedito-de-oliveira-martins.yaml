@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: benedito-de-oliveira-martins
+name: Benedito de Oliveira Martins
+biography: Bispo da Igreja Católica Anglicana do Brasil (São Paulo).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Dom Benedito de Oliveira Martins, bispo de São Paulo
+  page: '139'
+affiliations:
+- jurisdiction: ica-brasil
+  role: bishop
+  diocese: sao-paulo
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Dom Benedito de Oliveira Martins, bispo de São Paulo
+    page: '139'

@@ -1,0 +1,131 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: gregory-venables
+name: Gregory Venables
+full_name: Gregory James Venables
+aliases:
+- Greg Venables
+- Gregorio J. Venables
+- Gregory James Venables
+- The Most Rev. Gregory J. Venables
+birth:
+  date: '1949-12-06'
+  sources:
+  - source: ink-venables-2016
+    quote: >-
+      He returned to South America in 1993 and was consecrated Assistant Bishop of Peru and Bolivia in November
+      of that year.
+wikidata: Q5607196
+biography: >-
+  Primaz da Igreja Anglicana do Cone Sul; deu supervisão primacial à Diocese do Recife de Robinson Cavalcanti.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: sob a supervisão primacial do bispo Gregory Venables, da Igreja Anglicana do Cone Sul
+  page: '27'
+ordinations:
+- order: episcopate
+  date: 1993-11
+  jurisdiction: iacs
+  office: auxiliary
+  status: probable
+  sources:
+  - source: ink-venables-2016
+    quote: >-
+      He returned to South America in 1993 and was consecrated Assistant Bishop of Peru and Bolivia in November
+      of that year.
+  - source: wp-venables
+    quote: >-
+      He was ordained to the [[episcopate]] in 1993 and returned to South America as Assistant Bishop of Peru and
+      Bolivia, being consecrated the first Bishop of Bolivia in 1995.
+  notes: >-
+    Pergunta da frente: "Venables, quem o sagrou?" — NÃO ENCONTRADO. Nenhuma fonte consultada (Wikipédia, Anglican
+    Ink, Wikidata) nomeia o sagrante. A Wikipédia diz "being consecrated the first Bishop of Bolivia in 1995", mas
+    trata-se de nova posse/eleição, não de nova sagração.
+affiliations:
+- jurisdiction: iacs
+  role: primate
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o bispo Gregory Venables, primaz anglicano do Cone Sul
+    page: '73'
+  notes: Primaz citado em referência a 2009.
+events:
+- type: other
+  date: '2008-04-03'
+  description: >-
+    Camara dos Bispos da IEAB (Curitiba, carta de 03/04/2008, divulgada 09/04/2008) repudia visita do arcebispo
+    Gregory Venables (Cone Sul) ao Recife.
+  status: confirmed
+  sources:
+  - source: ens-040908-04
+    quote: >-
+      The House of Bishops of the Episcopal Anglican Church of Brazil gathered in Curitiba unanimously express their
+      strong repudiation of the recent visit by the Archbishop of the Southern Cone to the city of Recife
+- type: deposition
+  date: '2005-10-12'
+  description: >-
+    O primaz Orlando Santos de Oliveira protesta junto ao primaz do Cone Sul, Gregory Venables, contra o acolhimento
+    do "bispo deposto" e de clerigos depostos da Diocese do Recife (carta de 12/10/2005).
+  status: confirmed
+  sources:
+  - source: orlando-venables-2005
+    quote: >-
+      Lamento profundamente vossa carta, reconhecendo e acolhendo para supervisão o bispo deposto e um grupo de
+      clérigos depostos que pertenceram à Diocese Anglicana do Recife.
+- type: deposition
+  date: '2005-10-12'
+  description: >-
+    Carta oficial do primaz da IEAB a Gregory Venables (Cone Sul) protestando contra a acolhida, sob supervisão
+    do Cone Sul, do bispo deposto Robinson Cavalcanti e de um grupo de clérigos depostos da Diocese do Recife; afirma
+    que a deposição se deu por processo canônico no Tribunal Superior Eclesiástico
+  status: confirmed
+  sources:
+  - source: ieab-2005-carta-venables
+    quote: Lamento profundamente vossa carta, reconhecendo e acolhendo para supervisão o bispo
+  - source: ieab-2005-carta-venables
+    quote: deposto e um grupo de clérigos depostos que pertenceram à Diocese Anglicana do Recife.
+  - source: ieab-2005-carta-venables
+    quote: foi condenado pelo Tribunal Superior Eclesiástico
+- type: other
+  date: '2005'
+  description: >-
+    A Câmara dos Bispos da IEAB declara que 32 clérigos da Diocese do Recife, solidários com Robinson Cavalcanti,
+    incorreram em abandono da comunhão da Igreja segundo os cânones provinciais, e protesta contra seu acolhimento
+    pelo arcebispo Gregory Venables (Cone Sul)
+  status: confirmed
+  sources:
+  - source: ieab-2005-cbispos-cantuaria
+    quote: >-
+      Quanto aos 32 clérigos que foram alegadamente condenados sem julgamento prévio, alertamos para o fato de que
+      nossos Cânones
+  - source: ieab-2005-cbispos-cantuaria
+    quote: Provinciais prevêem o abandono da comunhão da Igreja.
+  - source: ieab-2005-cbispos-cantuaria
+    quote: >-
+      Recebemos uma resposta coletiva de que todos estavam solidários com a atitude de Robinson Cavalcanti.
+  - source: ieab-2005-cbispos-cantuaria
+    quote: Brasil recebendo Robinson Cavalcanti e os 32 clérigos dissidentes, de forma unilateral.
+- type: other
+  date: 2005-09
+  description: Venables estende sua supervisão arquiepiscopal à Diocese do Recife após a saída desta da IEAB
+  status: probable
+  sources:
+  - source: ink-venables-2016
+    quote: >-
+      in September 2005 extended his archiepiscopal oversight to the Diocese of Recife after it withdrew from the
+      Anglican Episcopal Church of Brazil.
+- type: other
+  date: '2008-03-27'
+  description: >-
+    Venables visita a Diocese do Recife (27/03–01/04/2008); a Câmara dos Bispos da IEAB, em Curitiba (declaração
+    de 09/04/2008), repudia a visita como violação da autonomia provincial e do Relatório de Windsor.
+  status: confirmed
+  sources:
+  - source: acl-2008-04-07-venables-visit
+    quote: >-
+      Between March 27 and April 1, Archbishop of the Southern Cone, Greg Venables, visited the Diocese of Recife
+      in Brazil.
+  - source: ta-2008-04-10-ieab-bishops
+    quote: >-
+      The House of Bishops of the Episcopal Anglican Church of Brazil gathered in Curitiba unanimously express their
+      strong repudiation of the recent visit by the Archbishop of the Southern Cone to the city of Recife

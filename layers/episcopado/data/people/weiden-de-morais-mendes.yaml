@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: weiden-de-morais-mendes
+name: Weiden de Morais Mendes
+ordinations:
+- order: diaconate
+  date: '2022-11-12'
+  place: Igreja Anglicana Âncora, Vitória (ES)
+  jurisdiction: iab
+  ordained_by: marcio-meira
+  status: confirmed
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-ancora-2022
+    quote: >-
+      o Cícero também foi ordenado diácono nesse dia, eu estava lá. Weiden também. E a Lorrayne Muniz (esposa do
+      Rev. Pedro Muniz) também
+  - source: reb-calendario-2026
+    quote: 12/11/2022 – Aniversário de Ordenação • Rev. Weidem
+  - source: testemunho-mantenedor-2026-10-08-ordenante-ancora
+    quote: Quem ordenou lorrayne, cícero e weiden foi marcio meira
+  - source: reb-calendario-2026
+    quote: "Diáconos \nWeiden de Morais Mendes"
+  notes: >-
+    Ordenações diaconais no mesmo culto de 12/11/2022 na Âncora (Elionai Rodrigues, Cícero Pontara, Weiden Mendes
+    e Lorrayne Muniz), segundo testemunho presencial do mantenedor. Bispo ordenante: Márcio Meira, segundo o mantenedor.
+    Diácono em 2026, logo a ordenação de 12/11/2022 é diaconal. Anterior à fundação da REB (dez/2024); jurisdição
+    da época não informada.
+affiliations:
+- jurisdiction: reb
+  role: clergy
+  start: '2024-12-20'
+  status: confirmed
+  sources:
+  - source: reb-portaria-01-2024
+    quote: Rev. Weiden de Morais Mendes – Diácono.
+  - source: reb-portaria-01-2024
+    quote: Ficam reconhecidos as ordens sagradas dos seguintes clérigos
+  notes: >-
+    Ordens (diácono) reconhecidas na fundação da REB pela Portaria 01/2024 — ordenação anterior, em jurisdição não
+    informada (provavelmente IAB). Ordens (diacono) reconhecidas na fundação; origem das ordens não informada.
+- jurisdiction: reb
+  role: deacon
+  status: confirmed
+  sources:
+  - source: reb-calendario-2026
+    quote: "Diáconos \nWeiden de Morais Mendes\nAndreia Rodrigues Nogueira Pinto\nPaula Pires do Nascimento Silva\n\
+      Rafael Santos Rodrigues"
+  notes: >-
+    Diácono(a) na lista do clero do Calendário REB 2026. Consta na lista do clero do Calendário REB 2026.
+events:
+- type: other
+  date: '2024-12-20'
+  description: >-
+    Fundação da Rede Episcopal Brasileira (Ata de Fundação) e reconhecimento das ordens de Cícero Miranda Pontara,
+    Elionai Lisboa de Aguiar Rodrigues e Reinaldo de Souza Pinto (presbíteros) e Weiden de Morais Mendes (diácono);
+    instituição de seis postulantes.
+  status: confirmed
+  sources:
+  - source: reb-portaria-01-2024
+    quote: >-
+      1. Rev. Cícero Miranda Pontara– Presbítero. 2. Rev. Elionai Lisboa de Aguiar Rodrigues – Presbítero. 3. Rev.
+      Reinaldo de Souza Pinto – Presbítero. 4. Rev. Weiden de Morais Mendes – Diácono.

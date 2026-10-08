@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-london
+name: Diocese of London
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Beilby Porteus. Chester; London, 1787; d. 1809, May 14.
+  - source: stubbs-1897
+    quote: Henry Compton. Oxford; London, 1675; d. 17 13, July 7-
+  - source: stubbs-1897
+    quote: Gilbert Sheldon. London ; Canterbury, 1663 ; d. 1677, Nov. 9.
+  - source: stubbs-1897
+    quote: William Laud. S. David's ; Bath, 1626 ; London, 1628; Canterbury, 1633; d. 1645, Jan. 10.
+  - source: stubbs-1897
+    quote: George Monteigne. Lincoln ; London, 1621 ; Durham, 1628 ; York, 1628 ; d. 1628, Nov. 6.
+  - source: stubbs-1897
+    quote: George Abbot. Lichfield ; London, 1610 ; Canterbury, 161 1 ; d. 1633, Aug. 4
+  - source: stubbs-1897
+    quote: Richard Bancroft. London ; Canterbury, 1604 ; d. 1610, Nov. 2.
+  - source: stubbs-1897
+    quote: Edmund Grindal. London ; York, 1570 ; Canterbury, 1576 ; d. 1583, July 6.
+  - source: stubbs-1897
+    quote: John Jackson. Lincoln; London, 1869; d. 1885, Jan. 6.
+  - source: stubbs-1897
+    quote: Archibald Campbell Tait. London ; Canterbury, 1868 ; d. 1882, Sept. 3.
+  - source: stubbs-1897
+    quote: Frederick Temple. Exeter ; London, 1885 ; Canterbury, 1896

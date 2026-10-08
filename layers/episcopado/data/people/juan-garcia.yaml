@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: juan-garcia
+name: Juan Garcia
+biography: Arcebispo da Anglican Church in America (ACA).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: o Arcebispo Juan Garcia (ACA)
+  page: '81'
+affiliations:
+- jurisdiction: aca
+  role: archbishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o Arcebispo Juan Garcia (ACA)
+    page: '81'

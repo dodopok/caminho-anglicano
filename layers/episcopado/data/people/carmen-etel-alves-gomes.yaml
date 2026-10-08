@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: carmen-etel-alves-gomes
+name: Carmen Etel Alves Gomes
+aliases:
+- Carmem Etel
+- Carmem Etel Alves Gomes
+- Revda. Carmem Etel
+biography: >-
+  Primeira mulher ordenada na IEAB (diaconato, 1985). Presbítera; atuou no Centro de Estudos Anglicanos em Porto
+  Alegre e como pároca em Novo Hamburgo.
+sources:
+- source: ieab-2021-carmen
+  quote: Carmen Etel Alves Gomes nasceu em Santana do Livramento, Rio Grande do Sul.
+ordinations:
+- order: diaconate
+  date: '1985-05-05'
+  place: Matriz do Nazareno, Santana do Livramento (RS)
+  jurisdiction: ieab
+  ordained_by: olavo-ventura-luiz
+  status: confirmed
+  sources:
+  - source: ieab-2021-carmen
+    quote: >-
+      em 05 de maio de 1985, a IEAB realiza a primeira ordenação feminina ao diaconato, sendo ordenada Carmen
+  - source: ieab-3a-bispa
+    quote: a primeira mulher ordenada foi a Revda. Carmen Etel Alves Gomes, em 1985.
+  - source: cant-identidades-numeros-2024
+    quote: >-
+      No ano seguinte, em 05 de maio, a Igreja realizou a primeira ordenação de uma mulher, quando a reverenda Carmen
+      Etel Alves Gomes foi elevada ao diaconato na Matriz do Nazareno, na cidade de Livramento. O rito foi presidido
+      pelo Bispo Primaz, Olavo Ventura Luiz, e contou com a participação dos bispos Cláudio Vinícius de Senna Gastal
+      e Plínio Lauer Simões
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1985 - … Carmem Etel Alves Gomes
+    page: '373'
+  - source: kickhofel-1995
+    quote: >-
+      Quase um ano depois, a Igreja Episcopal ordenou a primeira mulher ao ministério sagrado, no dia 5 de maio
+      de 1985, na matriz do Nazareno em Livramento, quando Carmem Etel Alves Gomes, 30 anos e primeira estudante
+      feminina a frequentar o curso regular no Seminário, recebeu a ordem de diácono, abrindo assim novas perspectivas
+      para o trabalho da mulher na igreja. O ato foi presidido pelo bispo Olavo Ventura Luiz e teve a participação
+      dos colegas Cláudio Vinicius de Senna Gastal e Plínio Lauer Simões
+    page: '319'
+  notes: >-
+    Primeira mulher ordenada na IEAB. Ordenante e local não informados nestas fontes. Participaram os bispos Cláudio
+    Gastal e Plínio Simões. O texto chama Olavo de "Bispo Primaz" em 1985 (era primaz interino após a morte de Kratz).
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Primeira mulher ordenada na IEAB. Participaram também os bispos Cláudio Gastal e Plínio Lauer Simões.
+- order: presbyterate
+  date: '1986'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: No ano seguinte, Carmem Etel foi ordenada ao presbiterado.
+    page: '319'
+events:
+- type: other
+  date: '2022-11-12'
+  description: >-
+    A Revda. Carmen Etel Alves Gomes, primeira mulher ordenada da IEAB, é eleita presidenta da Câmara de Clérigos
+    e Leigos no 35º Sínodo
+  status: confirmed
+  sources:
+  - source: ieab-2022-carmen-presid
+    quote: >-
+      Ontem, 12/11, no transcorrer do 35° Sínodo da IEAB, a reverenda Carmen Etel foi eleita presidenta da Câmara
+      de Clérigos e Leigos.

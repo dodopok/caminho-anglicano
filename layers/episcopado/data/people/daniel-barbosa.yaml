@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: daniel-barbosa
+name: Daniel Barbosa
+aliases:
+- cônego Daniel Barbosa
+- reverendo cônego Daniel Barbosa
+biography: >-
+  Reverendo, secretário de Robinson Cavalcanti por muitos anos; deixou a IAB em 2014 e ingressou na IAOB em 2017.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Entre eles, estava o reverendo Daniel Barbosa, que foi secretário de Robinson por muitos anos.
+  page: '34'
+affiliations:
+- jurisdiction: iaob-2013
+  role: clergy
+  start: '2017-11-25'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 25 de novembro de 2017, em cerimônia realizada no templo da Igreja Evangélica Pernambucana (Congregacional),
+      eles ingressaram na Igreja Anglicana Ortodoxa no Brasil
+    page: '34'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A partir de então, a Igreja agregou alguns clérigos, como os reverendos Cleiton Nerys, João Malheiros, Calebe
+      Malheiros, Samuel Stanley, Helder Marcelino, Frei Amaro e Daniel Barbosa, Conêgo para o Nordeste
+    page: '132'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Igreja Anglicana Ortodoxa no Brasil (IAOB), com a Comunidade Anglicana da Paz, com o reverendo cônego Daniel
+      Barbosa
+    page: '174'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana Ortodoxa no Brasil (IAOB) [2014]
+    page: '172'
+  notes: >-
+    O livro diz que 'alguns deles' vieram da Diocese Anglicana do Recife, ordenados por dom Robinson Cavalcanti,
+    sem dizer quais. Local: Comunidade Anglicana da Paz. Sigla escolhida pela coincidência do nome 'Igreja Anglicana
+    Ortodoxa no Brasil' com o registro IAOB-2013 da base; ver dúvidas.
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  end: '2014'
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Na primeira delas, em 2014, um grupo de clérigos se desligou da denominação, por não concordar com a forma
+      de condução da Diocese pelo novo bispo. Entre eles, estava o reverendo Daniel Barbosa
+    page: '34'
+events:
+- type: other
+  date: '2017-11-25'
+  description: >-
+    Clérigos saídos da IAB em 2014 (entre eles Daniel Barbosa) ingressam na IAOB, que reconhece suas ordens, em
+    cerimônia no templo da Igreja Evangélica Pernambucana (Congregacional).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 25 de novembro de 2017, em cerimônia realizada no templo da Igreja Evangélica Pernambucana (Congregacional),
+      eles ingressaram na Igreja Anglicana Ortodoxa no Brasil e suas ordens foram reconhecidas pelo então Bispo
+      Primaz da IAOB, Dom Adolfo Batista Teodoro Júnior.
+    page: '34'

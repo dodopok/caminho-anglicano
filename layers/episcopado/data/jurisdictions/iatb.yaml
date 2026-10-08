@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iatb
+acronym: IATB
+name: Igreja Anglicana Tradicional do Brasil
+type: national_church
+country: BR
+founded:
+  date: '2006'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana Tradicional do Brasil (IATB) tem origem em 2006, após a sagração do bispo e atual primaz,
+      Rui Costa Barbosa. Ela possui um vínculo no estrangeiro com a The Anglican Episcopal Church International.
+    page: '136'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      o bispo Rui Costa Barbosa, em parceria com outros clérigos, criou a Diocese Anglicana Católica do Brasil,
+      que sequer saiu do papel e, posteriormente, foi renomeada Igreja Anglicana Tradicional do Brasil, em Santo
+      André
+    page: '118'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana Tradicional do Brasil (IATB) tem origem em 2006, após a sagração do bispo e atual primaz,
+      Rui Costa Barbosa.
+    page: '136'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana Tradicional do Brasil (IATB) [2006]
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: The Anglican Episcopal Church International (AECI)
+    page: '172'
+website: https://www.anglicanatradicional.com.br/
+description: >-
+  Igreja anglo-católica continuante ligada à Anglican Episcopal Church International (AECI); bispo primaz Dom Rui
+  Costa Barbosa; outros bispos: José da Santa Cruz (Diocese de Pernambuco, abade em Garanhuns), Cristiano Alves,
+  Jefferson Nilson (Curitiba). NÃO é a TAC (apesar do nome em português coincidir com o usado pela TAC no Brasil).
+  Declara intercomunhão com a AECI e com a 'Igreja Ortodoxa Ucraniana no México'. Origem, segundo Costa (2021):
+  'Diocese Anglicana Católica do Brasil', de Rui Costa Barbosa (ex-membro da Diocese Anglicana de São Paulo da IEAB),
+  depois renomeada IATB, com sede em Santo André-SP.
+sources:
+- source: iatb-home
+  quote: >-
+    Nós, Dom Rui Costa Barbosa, Dom José da Santa Cruz, Dom Cristiano Alves, presbíteros, diáconos e leigos da Igreja
+    Anglicana Tradicional do Brasil, reunidos na Cidade de Nova Iguaçu-RJ, no mês de novembro de 2025
+- source: iatb-intercomunhoes
+  quote: Comunhões e Igrejas com Intercomunhão com IATB The Anglican Episcopal Church—International
+- source: costa-2021-tese
+  quote: >-
+    o bispo Rui Costa Barbosa, em parceria com outros clérigos, criou a Diocese Anglicana Católica do Brasil, que
+    sequer saiu do papel e, posteriormente, foi renomeada Igreja Anglicana Tradicional do Brasil, em Santo André.
+relations:
+- type: in_communion_with
+  target: aeci
+  date: null
+  led_by:
+  - rui-costa-barbosa
+  status: confirmed
+  sources:
+  - source: iatb-intercomunhoes
+    quote: Comunhões e Igrejas com Intercomunhão com IATB The Anglican Episcopal Church—International
+- type: member_of
+  target: aeci
+  date: null
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Ela possui um vínculo no estrangeiro com a The Anglican Episcopal Church International.
+    page: '136'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana Tradicional do Brasil (IATB) [2006]
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: The Anglican Episcopal Church International (AECI)
+    page: '172'
+  notes: O livro diz apenas 'possui um vínculo no estrangeiro'; natureza exata do vínculo não informada.

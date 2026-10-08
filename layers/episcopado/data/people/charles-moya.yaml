@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: charles-moya
+name: Charles Moya
+affiliations:
+- jurisdiction: dmcb
+  role: clergy
+  start: '1960'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: Foi substituído pelo colega Charles Moya.
+    page: '298'
+  notes: Sucedeu Stivers em Belém.

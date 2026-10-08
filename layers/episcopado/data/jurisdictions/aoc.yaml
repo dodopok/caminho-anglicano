@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: aoc
+acronym: AOC
+name: African Orthodox Church
+type: national_church
+founded:
+  date: '1921'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: tem suas raízes na African Orthodox Church, fundada em 1921 e renomeada em 2017
+    page: '128'
+dissolved:
+  date: '2017'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: tem suas raízes na African Orthodox Church, fundada em 1921 e renomeada em 2017
+    page: '128'
+description: Igreja fundada em 1921, renomeada em 2017 Igreja Anglicana Mundial (Worldwide Anglican Church).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: tem suas raízes na African Orthodox Church, fundada em 1921 e renomeada em 2017
+  page: '128'

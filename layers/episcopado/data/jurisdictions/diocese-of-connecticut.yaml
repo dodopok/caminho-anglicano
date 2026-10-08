@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-connecticut
+name: Diocese of Connecticut
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      Bishop Seabury died, suddenly on Feb. 25, 1796. For some years before his decease he had been bishop of Rhode
+      Island as well as Connecticut.
+  - source: perry-1895
+    quote: The successor of Seabury and Jarvis in the episcopate of Connecticut
+  - source: perry-1895
+    quote: He became bishop of Connecticut on the death of Brownell

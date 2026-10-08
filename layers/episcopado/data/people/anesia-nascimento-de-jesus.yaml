@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: anesia-nascimento-de-jesus
+name: Anésia Nascimento de Jesus
+full_name: Anésia Nascimento de Jesus
+ordinations:
+- order: diaconate
+  date: '1992'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1992 - … Anésia Nascimento de Jesus
+    page: '373'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1992'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1992 - … Anésia Nascimento de Jesus
+    page: '373'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

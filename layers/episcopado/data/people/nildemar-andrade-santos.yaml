@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: nildemar-andrade-santos
+name: Nildemar Andrade Santos
+biography: >-
+  Arcebispo primaz da Igreja Vétero-Católica Independente do Brasil, ex-membro da IEAB; ordenou Luciano Alves Campelo
+  presbítero (23/04/2025).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Arcebispo Primaz da Igreja Vétero-Católica Independente do Brasil, dom Nildemar Andrade Santos, ambos ex-membros
+    da IEAB
+  page: '140'
+affiliations:
+- jurisdiction: ivcib
+  role: primate
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Arcebispo Primaz da Igreja Vétero-Católica Independente do Brasil, dom Nildemar Andrade Santos
+    page: '140'
+- jurisdiction: ieab
+  role: member
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: dom Nildemar Andrade Santos, ambos ex-membros da IEAB
+    page: '140'

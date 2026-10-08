@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-hinchliffe
+name: John Hinchliffe
+full_name: John Hinchliffe
+aliases:
+- John Hinchcliffe
+death:
+  date: '1794-01-11'
+  sources:
+  - source: stubbs-1897
+    quote: John Hinchcliffe. Peterborough; d. 1794, Jan. 11.
+  - source: wikidata-api-2
+    quote: '"Q6239338": enwiki "John Hinchliffe"'
+wikidata: Q6239338
+biography: Bispo de Peterborough (1769-1794); co-sagrante de White e Provoost (1787).
+sources:
+- source: stubbs-1897
+  quote: John Hinchcliffe. Peterborough; d. 1794, Jan. 11.
+- source: wikidata-api-2
+  quote: '"Q6239338": enwiki "John Hinchliffe"'
+ordinations:
+- order: episcopate
+  date: '1769-12-17'
+  place: Lambeth
+  jurisdiction: church-of-england
+  principal_consecrator: frederick-cornwallis
+  co_consecrators:
+  - john-thomas-de-winchester
+  - philip-yonge
+  - richard-terrick
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1769, Dec. 17. John Hinchcliffe. Peterborough; d. 1794, Jan. 11. Consecrated at Lambeth by Archbishop
+      Cornwallis, Richard of London, John of Winchester, and Philip of Norwich ; Reg. Cornwallis, 93.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Philip
+    of Norwich = Philip Yonge (Stubbs: Young).
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-peterborough
+  start: '1769-12-17'
+  end: '1794-01-11'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: John Hinchcliffe. Peterborough; d. 1794, Jan. 11.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.

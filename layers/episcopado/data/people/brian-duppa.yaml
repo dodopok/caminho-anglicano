@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: brian-duppa
+name: Brian Duppa
+full_name: Brian Duppa
+death:
+  date: '1662-03-26'
+  sources:
+  - source: stubbs-1897
+    quote: Brian Duppa. Chichester; Sarum, 1641 ; Winchester, 1660 ; d. 1662, March 26.
+  - source: wikidata-api-2
+    quote: '"Q4963639": enwiki "Brian Duppa"'
+wikidata: Q4963639
+biography: >-
+  Bispo de Chichester (1638), Salisbury (1641) e Winchester (1660); sobrevivente do episcopado anterior à Restauração,
+  presidiu a sagração de Sheldon (1660).
+sources:
+- source: stubbs-1897
+  quote: Brian Duppa. Chichester; Sarum, 1641 ; Winchester, 1660 ; d. 1662, March 26.
+- source: wikidata-api-2
+  quote: '"Q4963639": enwiki "Brian Duppa"'
+ordinations:
+- order: episcopate
+  date: '1638-06-17'
+  place: Lambeth
+  jurisdiction: church-of-england
+  principal_consecrator: william-laud
+  co_consecrators:
+  - john-bancroft
+  - matthew-wren
+  - robert-wright
+  - thomas-morton
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1638, June 17. Brian Duppa. Chichester; Sarum, 1641 ; Winchester, 1660 ; d. 1662, March 26. Consecrated
+      at Lambeth by Archbishop Laud, Thomas of Durham, Robert of Lichfield, John of Oxford, and Matthew of Ely ;
+      Reg. Laud, ii. 46.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Sagrado
+    bispo de Chichester. Thomas of Durham = Thomas Morton; Robert of Lichfield = Robert Wright; John of Oxford =
+    John Bancroft; Matthew of Ely = Matthew Wren.
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-chichester
+  start: '1638-06-17'
+  end: '1641'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Brian Duppa. Chichester; Sarum, 1641 ; Winchester, 1660 ; d. 1662, March 26.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-salisbury
+  start: '1641'
+  end: '1660'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Brian Duppa. Chichester; Sarum, 1641 ; Winchester, 1660 ; d. 1662, March 26.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-winchester
+  start: '1660'
+  end: '1662-03-26'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Brian Duppa. Chichester; Sarum, 1641 ; Winchester, 1660 ; d. 1662, March 26.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.

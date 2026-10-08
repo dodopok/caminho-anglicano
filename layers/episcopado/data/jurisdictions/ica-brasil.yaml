@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ica-brasil
+acronym: ICA-Brasil
+name: Igreja Católica Anglicana do Brasil
+type: national_church
+country: BR
+founded:
+  date: '2023'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Católica Anglicana do Brasil (ICA-Brasil) tem origem em um grupo de clérigos que saiu da Igreja Católica
+      Anglicana (ICA) em 2023.
+    page: '139'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Católica Anglicana do Brasil (ICA-Brasil) [2023]
+    page: '172'
+website: https://www.icabrasil.net/
+description: >-
+  Igreja formada em 2023 por clérigos saídos da Igreja Católica Anglicana; arcebispo primaz Ricardo Vicente dos
+  Anjos; bispos em MG, SP e RS.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja Católica Anglicana do Brasil (ICA-Brasil) tem origem em um grupo de clérigos que saiu da Igreja Católica
+    Anglicana (ICA) em 2023.
+  page: '139'
+relations:
+- type: schism_from
+  target: ica
+  date: '2023'
+  led_by:
+  - ricardo-vicente-dos-anjos
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Católica Anglicana do Brasil (ICA-Brasil) tem origem em um grupo de clérigos que saiu da Igreja Católica
+      Anglicana (ICA) em 2023.
+    page: '139'

@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: tac-sppr
+acronym: TAC-SPPR
+name: Diocese Anglicana de São Paulo e Paraná (Traditional Anglican Church — Igreja Anglicana Tradicional)
+aliases:
+- Diocese Anglicana de São Paulo e Paraná
+- Diocese Anglicana de São Paulo e Paraná (TAC)
+type: diocese
+country: BR
+founded:
+  date: '2019'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana Tradicional (TAC) [Filiação à TAC em 2025]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Anglicana do Natal e Diocese Anglicana de São Paulo e Paraná [2019]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Entre os bispos ordenados por James estavam: Dom José Kennedy de Freitas, organizador da Igreja Anglicana
+      de Confissão Continuante; Dom Marcos Mattos, nomeado bispo da Diocese Anglicana Continuante do Rio de Janeiro
+      (falecido prematuramente, antes da consolidação da diocese); Dom Albertino de Sousa Barreiros, da Diocese
+      Anglicana do Natal; Dom Claudinei Rodrigo Ferreira, da Diocese Anglicana de Santa Catarina; Dom Itabira Jonas,
+      da Diocese Anglicana de São Paulo e Paraná; Dom Francisco de Assis Coelho e Pinho, bispo eleito e delegado
+      episcopal da Pró-Diocese Anglicana do Amazonas; e dom José Barbosa da Silva, da Diocese Anglicana de Portugal,
+      na União Europeia.
+    page: '157'
+website: https://santamarialondrina.wixsite.com/anglicanos
+description: >-
+  Diocese continuante com catedral na Paróquia da Anunciação da Virgem Maria (Ipiranga, São Paulo) e paróquias/missões
+  em Londrina, Sorocaba e Alto Tietê; bispo Itabira Jonas.
+sources:
+- source: tac-sppr-diocese
+  quote: >-
+    A Paróquia da Anunciação da Virgem Maria é a Igreja sede da Diocese Anglicana de São Paulo e Paraná, símbolo
+    de unidade de todo o presbitério ao seu Bispo Diocesano.
+relations:
+- type: part_of
+  target: tac
+  status: confirmed
+  sources:
+  - source: tac-londrina-home
+    quote: Reverendíssimo Bispo Itabira Jonas Ordinário da Dioces e de São Paulo e Paraná
+  - source: tac-sppr-diocese
+    quote: 'Bispo Diocesano: Dom Itabira Jonas'
+  - source: tac-adclerum-2025
+    quote: the Dioceses of Brazil were officially received unanimously.
+  - source: tac-sppr-diocese
+    quote: É um dos 2 Bispos da Igreja Anglicana Tradicional – TAC no Brasil
+  date: '2025'
+  led_by:
+  - itabira-jonas
+  notes: >-
+    O Ad Clerum fala das 'Dioceses of Brazil' no plural, sem nomeá-las; a inclusão de São Paulo e Paraná é inferência.
+- type: part_of
+  target: iacc
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: dom †Itabira Jonas, Bispo da Diocese Anglicana de São Paulo e Paraná
+  - source: iacc-continuante
+    quote: >-
+      Todas essas Dioceses, com a primeira, a Diocese Anglicana do Japí-Jundiaí, formam atualmente a Igreja Anglicana
+      de Confissão Continuante
+  end: '2025'
+  led_by:
+  - itabira-jonas
+  notes: Idem.
+- type: member_of
+  target: tac
+  date: 2025-05
+  led_by:
+  - itabira-jonas
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o bispo dom Itabira, representando a Diocese de São Paulo e Paraná
+    page: '81'
+  - source: cant-novas-igrejas-2024
+    quote: A filiação definitiva das Dioceses brasileiras na TAC se concretizou durante o Sínodo Geral.
+    page: '81'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana Tradicional (TAC) [Filiação à TAC em 2025]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Anglicana do Natal e Diocese Anglicana de São Paulo e Paraná [2019]
+    page: '171'
+  notes: Sínodo Geral da TAC em Columbus, Geórgia (EUA), 19–23/05/2025.

@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: lucas-oliva-bertolozzi
+name: Lucas Oliva Bertolozzi
+aliases:
+- Dom Lucas
+- Reverendo Lucas
+biography: >-
+  Ex-cerimonialista na Abadia de Santa Maria (SP); seminarista na IEAB (época do bispo Glauco); diácono e presbítero
+  por Josué Torres (IEEP); reordenado sob condição por James Roque (Diocese do Japi); sagrado bispo em 2011 por
+  Josué Torres (Província Brasileira de Confissão Anglicana); primaz da Igreja Católica de Tradição Anglicana.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja Católica de Tradição Anglicana no Brasil tem origem na figura do bispo Lucas Oliva Bertolozzi
+  page: '142'
+ordinations:
+- order: diaconate
+  date: null
+  jurisdiction: ieep
+  ordained_by: josue-sousa-torres
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Depois saiu da Igreja e foi ordenado diácono e presbítero por dom Josué Torres (IEEP).
+    page: '142'
+- order: presbyterate
+  date: null
+  jurisdiction: ieep
+  ordained_by: josue-sousa-torres
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Depois saiu da Igreja e foi ordenado diácono e presbítero por dom Josué Torres (IEEP).
+    page: '142'
+- order: episcopate
+  date: '2011'
+  jurisdiction: pbca
+  office: primate
+  principal_consecrator: josue-sousa-torres
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A sua sagração episcopal foi feita por dom Josué Torres.
+  - source: cant-novas-igrejas-2024
+    quote: tendo sido sagrado bispo em 2011 pela Província Brasileira de Confissão Anglicana.
+  - source: cant-novas-igrejas-2024
+    quote: tendo sido sagrado bispo em 2011 pela Província Brasileira de Confissão Anglicana
+    page: '142'
+affiliations:
+- jurisdiction: ieab-dasp
+  role: other
+  role_description: seminarista
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Depois ele foi para a Igreja Episcopal Anglicana do Brasil, na época do bispo Glauco, sendo um dos presentes
+      na organização da Ordem de São Bento da Igreja Anglicana no estado de São Paulo. Passou um tempo como seminarista.
+      Depois saiu da Igreja
+    page: '142'
+  notes: Na época do bispo Glauco Soares de Lima (DASP).
+- jurisdiction: icta
+  role: primate
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: tem origem na figura do bispo Lucas Oliva Bertolozzi, que atua como seu Primaz
+    page: '142'
+events:
+- type: other
+  date: null
+  description: >-
+    Lucas Oliva Bertolozzi passou pela Diocese do Japi, onde dom James Roque o ordenou sob condição (ordem não especificada).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Após esse tempo, passou pela Diocese do Japi, onde dom James Roque o ordenou sob condição.
+    page: '142'

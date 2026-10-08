@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-garanhuns
+name: Diocese de Garanhuns
+type: diocese
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Thúlio Emanuel Cassimiro Luna (2024)
+  - source: cant-novas-igrejas-2024
+    quote: também foi instalada em 13 de outubro de 2024, sendo liderada pelo bispo Thúlio Luna.
+    page: '62'

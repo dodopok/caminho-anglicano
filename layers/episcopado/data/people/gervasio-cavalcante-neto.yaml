@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: gervasio-cavalcante-neto
+name: Gervásio Cavalcante Neto
+aliases:
+- Dom Gervásio Neto
+- Gervásio Neto
+biography: Bispo/clérigo ligado à jurisdição ICEB; ver afirmações.
+sources:
+- source: ciceb-quemsomos
+  quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo. Gervásio Neto)
+ordinations:
+- order: episcopate
+  date: 2014-12
+  place: Catedral Betânia, Recife (PE)
+  jurisdiction: iceb
+  office: auxiliary
+  co_consecrators:
+  - evilasio-tenorio
+  - leonides-de-menezes-ferreira
+  - william-paul-mikler
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em dezembro de 2014, ocorreu a sagração episcopal do reverendo Gervásio Cavalcante Neto, como bispo auxiliar,
+      com a presença do bispo William Paul Mikler – bispo presidente da CEEB –, junto com dom Leonides de Menezes
+      Ferreira e dom Evilásio Tenório.
+  notes: >-
+    CEEB/Catedral Betânia. A fonte diz "com a presença" dos bispos, sem indicar o principal; o local é inferido
+    do capítulo (Catedral Betânia). O livro diz 'com a presença' desses bispos, sem identificar o sagrante principal;
+    listados como co-sagrantes por inferência do contexto.
+affiliations:
+- jurisdiction: iceb
+  role: diocesan_bishop
+  diocese: diocese-missionaria-do-nordeste-do-brasil-dmnb
+  status: confirmed
+  sources:
+  - source: ciceb-quemsomos
+    quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo. Gervásio Neto)
+  notes: Data e sagrantes não informados no site.

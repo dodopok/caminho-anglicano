@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: benjamin-paul-mwanzia-nzimbi
+name: Benjamin Paul Mwanzia Nzimbi
+full_name: Benjamin Paul Mwanzia Nzimbi
+aliases:
+- Abp. Benjamin Nzimbi
+- Benjamin Nzimbi
+birth:
+  date: '1945'
+  sources:
+  - source: ack-nzimbi
+    quote: >-
+      The Most Rev. Benjamin Paul Mwanzia Nzimbi was born in 1945 in Kitui County in a family of 8 children.
+  - source: wikidata-api
+    quote: 'Q16107068 Benjamin Nzimbi {''enwiki'': ''Benjamin Nzimbi''}'
+  - source: ky-house-2004
+    quote: Bishop Nzimbi was first ordained in 1985 as Bishop of Machakos
+wikidata: Q16107068
+biography: >-
+  Primeiro bispo de Machakos (1985), depois de Kitui (1995) e 4º arcebispo e primaz da Igreja Anglicana do Quênia
+  (2002–2009).
+sources:
+- source: ack-nzimbi
+  quote: >-
+    The Most Rev. Benjamin Paul Mwanzia Nzimbi was born in 1945 in Kitui County in a family of 8 children.
+ordinations:
+- order: episcopate
+  date: '1985-04-14'
+  jurisdiction: anglican-church-of-kenya
+  office: diocesan
+  principal_consecrator: festo-olang
+  status: probable
+  sources:
+  - source: wp-nzimbi
+    quote: '|consecrated_by = [[Festo Olang'']]'
+  - source: ack-machakos
+    quote: >-
+      The Diocese of Machakos was formed by subdivision of the Diocese of Nairobi in 1985, with its headquarters
+      in Machakos town. The first Bishop was The Most Rev. Benjamin Nzimbi.
+  - source: ia-called-to-serve-2009
+    quote: >-
+      the Diocese of Machakos was formerly created and Archbishop Nzimbi was consecrated as its first bishop on
+      14th April 1985.
+  - source: ia-called-to-serve-2009
+    quote: >-
+      as the vicar before leaving to become the bishop of Machakos Diocese. He was consecrated on 14th April 1985.
+  - source: wp-nzimbi
+    quote: '|consecration = 1985
+
+      |consecrated_by = [[Festo Olang'']]'
+  notes: >-
+    Ano 1985 (primeiro bispo de Machakos) apoiado pela ACK. O sagrante dado pela infobox da Wikipédia (Festo Olang')
+    é duvidoso: Olang' se aposentou como arcebispo em 1980 (o arcebispo em 1985 era Manasses Kuria). Nenhuma fonte
+    primária sobre o sagrante foi achada. NOVO: data exata 14/04/1985 (antes só "1985"). Sagrante principal continua
+    não encontrado. O arcebispo do Quênia em 1985 era Manasses Kuria (eleito em 1980, segundo o mesmo livro e o
+    Journal da Convenção Geral de 1982, que registra sua instalação em 29/06/1980) — o que torna improvável a infobox
+    da Wikipédia (Festo Olang', já aposentado). Os trechos vêm da busca de texto completo do Internet Archive (livro
+    de empréstimo controlado). VERSÃO DA WIKIPÉDIA (infobox, sem nota). Contestada por incoerência cronológica com
+    a própria Wikipédia: Festo Olang' foi arcebispo do Quênia até 1980, e o arcebispo em 1985 era Manasses Kuria
+    (1980-1994, segundo wp-en-kuria). Não há fonte que nomeie Kuria (ou outro) como sagrante: não registrei versão
+    alternativa com sagrante. Ver dúvidas.
+affiliations:
+- jurisdiction: anglican-church-of-kenya
+  role: diocesan_bishop
+  diocese: machakos
+  start: '1985'
+  end: '1995'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: ky-house-2004
+    quote: Bishop Nzimbi was first ordained in 1985 as Bishop of Machakos, before moving to Kitue;
+  - source: wp-nzimbi
+    quote: >-
+      Nzimbi was elected as the first bishop of the new Diocese of Machakos, which he served from 1985 to 1995.
+  notes: >-
+    O ano 1985 também é dado pela ACK (ver pontes-estrangeiras.json, chave ack-machakos). Fim em 1995 (transferência
+    para Kitui) só pela Wikipédia.

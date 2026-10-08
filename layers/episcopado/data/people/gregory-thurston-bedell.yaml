@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: gregory-thurston-bedell
+name: Gregory Thurston Bedell
+full_name: Gregory Thurston Bedell
+aliases:
+- Bp. Bedell
+- Gregory T. Bedell
+wikidata: Q5607181
+biography: Bispo coadjutor (1859) e depois bispo de Ohio; sagrante principal de George W. Peterkin.
+sources:
+- source: perry-1895
+  quote: RIGHT REVEREND GREGORY THURSTON BEDELL, D.D.
+- source: wikidata-api-2
+  quote: '"Q5607181": enwiki "Gregory T. Bedell"'
+ordinations:
+- order: episcopate
+  date: '1859-10-13'
+  place: St. Paul's Church, Richmond
+  jurisdiction: tec
+  office: coadjutor
+  principal_consecrator: william-meade
+  co_consecrators:
+  - charles-pettit-mcilvaine
+  - eastburn
+  - horatio-potter
+  - john-johns
+  - rutledge
+  - stewart-payne
+  - upfold
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      His consecration as coadjutor bishop of Ohio took place in St. Paul's Church, Richmond, Va., Oct. 13, 1859.
+      The consecrators were Bishops Meade, Mcllvaine, Johns, Eastburn, Upfold, Rutledge, Horatio Potter, and Payne.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Gregory T. Bedell]] | [[William Meade|22]] [[Charles Pettit McIlvaine|28]] [[John Johns|39]] | 1859
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-ohio
+  start: '1859-10-13'
+  end: 1889-10
+  end_reason: resignation
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: Upon the death of Mcllvaine his coadjutor became the diocesan of Ohio.
+  - source: perry-1895
+    quote: In October, 1889, he resigned his jurisdiction
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: cicera-josefa-rodrigues
+name: Cícera Josefa Rodrigues
+ordinations:
+- order: diaconate
+  date: '2025-11-16'
+  place: Associação das Mulheres Rendeiras, Petrolina (PE)
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: confirmed
+  sources:
+  - source: dar-2025-cicera-conv
+    quote: >-
+      participarem do Rito Ordenação Diaconal da Candidata às Sagradas Ordens Cícera Josefa Rodrigues (Santinha)
+      que acontecerá no domingo, dia 16 de novembro de 2025, às 10 horas, na Associação das Mulheres Rendeiras
+  - source: dar-2025-santinha
+    quote: >-
+      o Bispo João C. Peixoto, recebeu cinco novos membros para a Missão, instituiu dois irmãos ao Ministério Leigo
+      Pastoral: Delcides Marques e Francisco Leite da Silva, além de ordenar a mais nova diácona da Diocese Anglicana
+      do Recife, a Revda. Santinha.
+  - source: dar-2025-santinha
+    quote: >-
+      na paramentação da nova diácona, ela utilizou a mesma estola diaconal utilizada pela primeira mulher ordenada
+      na IEAB – a Revda. Carmen Etel.
+  notes: >-
+    Diocese Anglicana do Recife. Só há convite (anterior ao evento); realização não confirmada. | Diocese Anglicana
+    do Recife. Relato posterior que confirma o convite (dar-2025-cicera-conv): "Santinha" é o apelido de Cícera
+    Josefa Rodrigues indicado no convite. A data vem do convite.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dar-clero-diocesano
+    quote: CLERO DIOCESANO
+  - source: dar-clero-diocesano
+    quote: Revda. Cícera Josefa Rodrigues (Santinha)
+  notes: Listado no clero diocesano da DAR (página consultada em 2026-10).

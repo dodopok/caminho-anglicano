@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jose-da-santa-cruz
+name: José da Santa Cruz
+aliases:
+- Dom José de Santa Cruz
+biography: >-
+  Bispo diocesano da Diocese de Pernambuco da IATB e abade da Abadia Beneditina Anglicana Nossa Senhora da Imaculada
+  Conceição (Garanhuns-PE).
+sources:
+- source: iatb-home
+  quote: >-
+    Bispo Diocesano da Diocese de Pernambuco e Abade da Abadia Beneditina Anglicana Nossa Senhora da Imaculada Conceição
+affiliations:
+- jurisdiction: iatb
+  role: diocesan_bishop
+  diocese: diocese-de-pernambuco
+  status: confirmed
+  sources:
+  - source: iatb-home
+    quote: † Dom José da Santa Cruz BISPO DIOCESANO E ABADE.
+  notes: 'Local: Garanhuns.'
+- jurisdiction: iatb
+  role: clergy
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A IATB possui um pequeno mosteiro na cidade de Garanhuns, sob a liderança de dom frei José da Santa Cruz
+    page: '136'
+  notes: Líder do mosteiro de Garanhuns; chamado 'dom frei' (o livro não diz explicitamente se é bispo).
+events:
+- type: other
+  date: '2025-11-16'
+  description: Sínodo da IATB em Nova Iguaçu-RJ e 'Carta de Nova Iguaçu' (16/11/2025)
+  status: confirmed
+  sources:
+  - source: iatb-home
+    quote: Nova Iguaçu-RJ, 16 de novembro de 2025

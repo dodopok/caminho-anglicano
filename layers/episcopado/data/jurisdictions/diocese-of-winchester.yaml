@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-winchester
+name: Diocese of Winchester
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Jonathan Trelawney. Bristol ; Exeter, 1689 ; Winchester, 1707; d. 1721, July 19.
+  - source: stubbs-1897
+    quote: Brian Duppa. Chichester; Sarum, 1641 ; Winchester, 1660 ; d. 1662, March 26.

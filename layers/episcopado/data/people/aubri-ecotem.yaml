@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: aubri-ecotem
+name: Aubri Ecotem
+aliases:
+- Aubri de Oliveira Ecotem
+ordinations:
+- order: diaconate
+  date: '1991'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1991 - … Aubri de Oliveira Ecotem
+    page: '373'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dab
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: dab-ministerio-ordenado
+    quote: Pessoas ordenadas – Aposentadas
+  notes: Listado como presbítero aposentado da DAB (Catedral Anglicana da Ressurreição) em 2025-04.

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: carlos-ayres-santos-fonseca
+name: Carlos Ayres Santos Fonseca
+biography: Padre incardinado na Igreja Anglicana de Comunhão Livre em 22/01/2019 e desligado em 12/10/2019.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja ainda havia incardinado um clérigo, o padre Carlos Ayres Santos Fonseca, no dia 22 de janeiro de 2019.
+  page: '115'
+affiliations:
+- jurisdiction: iacl
+  role: clergy
+  start: '2019-01-22'
+  end: '2019-10-12'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja ainda havia incardinado um clérigo, o padre Carlos Ayres Santos Fonseca, no dia 22 de janeiro de
+      2019.
+    page: '115'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Porém, em 12 de outubro do mesmo ano, os bispos Ezequiel e Wellington, comunicaram o desligamento do padre
+      da jurisdição.
+    page: '115'
+  notes: '''Desligamento'' comunicado pelos bispos; motivo não informado.'

@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: reginald-heber-weller
+name: Reginald Heber Weller
+ordinations:
+- order: episcopate
+  date: '1900-11-08'
+  place: Catedral de São Paulo, Fond du Lac (EUA)
+  jurisdiction: tec
+  principal_consecrator: charles-chapman-grafton
+  co_consecrators:
+  - anthony-kozlowski
+  status: probable
+  sources:
+  - source: cant-temas-anglicanismo-2024
+    quote: >-
+      O reverendo Weller foi sagrado em 08 de novembro de 1900 na Catedral de São Paulo Apóstolo da Igreja Episcopal,
+      sendo o sagrante o bispo Charles Chapman Grafton, segundo diocesano de Fond Du Lac, sendo auxiliado pelos
+      bispos Anthony Kozlowski
+  notes: >-
+    "O Circo de Fond du Lac". A lista de co-sagrantes continua no original (Tikhon, bispo ortodoxo russo, presente
+    segundo o livro Anglo-Catolicismo).

@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: frederick-foote-johnson
+name: Frederick Foote Johnson
+full_name: Frederick Foote Johnson
+aliases:
+- Bishop Johnson
+- F. F. Johnson
+birth:
+  date: '1866-04-23'
+  sources:
+  - source: som-1905-12
+    quote: >-
+      the Rev. Frederick Foote Johnson, to be a missionary bishop, as assistant to the Bishop of South Dakota
+death:
+  date: '1943-05-09'
+  sources:
+  - source: som-1905-12
+    quote: >-
+      the Rev. Frederick Foote Johnson, to be a missionary bishop, as assistant to the Bishop of South Dakota
+wikidata: Q23020795
+biography: Bispo assistente de Dakota do Sul (1905), depois coadjutor e bispo do Missouri.
+sources:
+- source: som-1905-12
+  quote: >-
+    the Rev. Frederick Foote Johnson, to be a missionary bishop, as assistant to the Bishop of South Dakota
+ordinations:
+- order: episcopate
+  date: '1905-11-02'
+  place: Trinity Church, Newtown, Connecticut
+  jurisdiction: tec
+  office: auxiliary
+  principal_consecrator: daniel-tuttle
+  co_consecrators:
+  - alexander-hamilton-vinton
+  - ozi-william-whitaker
+  status: confirmed
+  sources:
+  - source: som-1905-12
+    quote: >-
+      The Presiding Bishop, the Right Rev. Dr. Tuttle, of Missouri, was the consecrator, together with the Right
+      Rev. Dr. Whitaker, Bishop of Pennsylvania, and T the Right Rev. Dr. Vinton, Bishop of Western Massachusetts.
+  - source: wp-ffjohnson
+    quote: >-
+      and was consecrated on November 2, 1905 with Presiding Bishop [[Daniel S. Tuttle]] as chief consecrator.
+  - source: wp-lista-bispos-tec
+    quote: >-
+      | 227 | [[Frederick Foote Johnson]] | [[Daniel S. Tuttle|84]] [[Ozi William Whitaker|94]] [[Thomas A. Jaggar|113]]
+      | 1905 | [[Episcopal Diocese of South Dakota|II South Dakota]], [[Episcopal Diocese of Missouri|IV Missouri]]
+      |
+  notes: >-
+    Elo que os pôsteres omitem ("…"): Tuttle → F. F. Johnson. Bispo assistente (missionário) de Dakota do Sul. A
+    lista da Wikipédia dá Jaggar como 3º sagrante; a Spirit of Missions (testemunho de 1905) dá Vinton como co-sagrante
+    e Jaggar como pregador; "all the bishops ... united in the laying-on of hands". Nome completo de Vinton inferido.

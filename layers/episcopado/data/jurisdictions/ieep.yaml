@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieep
+acronym: IEEP
+name: Igreja Episcopal do Evangelho Pleno
+type: national_church
+country: BR
+founded:
+  date: '1997'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Josué Torres fundou a Igreja Episcopal do Evangelho Pleno, em Taboão da Serra
+    page: '118'
+  - source: cant-novas-igrejas-2024
+    quote: surgiu como ministério evangélico, em 1997, sob a liderança do pastor Josué Souza Torres
+    page: '145'
+  discrepancies:
+  - field: date
+    value: '2006'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: Igreja Episcopal do Evangelho Pleno (IEEP) [2006]
+      page: '172'
+website: http://reverendojosue.blogspot.com/
+description: Igreja independente fundada por Josué (Sousa) Torres em Taboão da Serra (SP).
+sources:
+- source: costa-2021-tese
+  quote: Josué Torres fundou a Igreja Episcopal do Evangelho Pleno, em Taboão da Serra

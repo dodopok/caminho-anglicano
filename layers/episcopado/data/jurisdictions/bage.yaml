@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: bage
+name: Bagé
+type: diocese
+relations:
+- type: part_of
+  target: dmsb
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: Início do trabalho em Bagé pelo rev. Antônio José Lopes Guimarães.

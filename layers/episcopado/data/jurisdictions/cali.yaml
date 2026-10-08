@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: cali
+acronym: CALI
+name: Comunhão Anglicana Livre Internacional
+type: communion
+website: https://theanglicanfreecommunion.com/
+description: >-
+  Comunhão independente (The Free International Anglican Communion / The Anglican Free Communion International)
+  que se apresenta como sucessora legal da Igreja Episcopal Protestante Livre (1897); cisma em 2020 com a remoção
+  do arcebispo Richard Arthur Palmer; arcebispos presidentes Ronald Lee Firestone (2020–2021) e Raul E. Toro Jr.
+  (desde 2022).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: A Comunhão Anglicana Livre Internacional é a sucessora legal da Igreja Episcopal Protestante Livre
+  page: '101'
+- source: cant-novas-igrejas-2024
+  quote: Arcebispo Ronald Lee Firestone (2020-2021); Dom Raul E. Toro Jr. (desde 2022)”.
+  page: '101'
+relations:
+- type: successor_of
+  target: fpec
+  date: '2020'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A Comunhão Anglicana Livre Internacional é a sucessora legal da Igreja Episcopal Protestante Livre
+    page: '101'
+  notes: >-
+    Segundo o site da própria comunhão, citado no livro; o cisma de 2020 partiu de um grupo de bispos majoritariamente
+    latino-americanos que removeu o arcebispo Richard Arthur Palmer.

@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: j-yasoji-ito
+name: J. Yasoji Ito
+aliases:
+- João Yasoji Ito
+biography: >-
+  Japonês que iniciou em 1923 a obra entre imigrantes japoneses em SP; ordenado diácono por Kinsolving em 1926.
+sources:
+- source: ens-xxvi-24
+  quote: >-
+    in 1923 a new missionary work, among Japanese immigrants to Brazil, was begun by the Rev. J. Yasoji Ito, a Japanese
+    who had followed his people to minister to them.
+- source: wp-en-kinsolving
+  quote: Bishop Kinsolving ordained him to the diaconate in 1926
+ordinations:
+- order: diaconate
+  date: '1926'
+  jurisdiction: dmsb
+  ordained_by: lucien-lee-kinsolving
+  status: probable
+  sources:
+  - source: wp-en-kinsolving
+    quote: Bishop Kinsolving ordained him to the diaconate in 1926
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1926 - … João Yasoji Ito
+    page: '369'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: '1923'
+  status: probable
+  sources:
+  - source: ens-xxvi-24
+    quote: >-
+      in 1923 a new missionary work, among Japanese immigrants to Brazil, was begun by the Rev. J. Yasoji Ito

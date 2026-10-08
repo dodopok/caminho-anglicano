@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marcos-cefas-lopes-de-barros
+name: Marcos Cefas Lopes de Barros
+full_name: Marcos Cefas Lopes de Barros
+aliases:
+- Dom Marcos Barros
+biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
+sources:
+- source: ptwiki-iecb
+  quote: Marcos Cefas Lopes de Barros (2011)
+ordinations:
+- order: episcopate
+  date: '2011-04-05'
+  jurisdiction: iecb
+  status: confirmed
+  sources:
+  - source: ptwiki-iecb
+    quote: Marcos Cefas Lopes de Barros (2011)
+  - source: costa-2021-tese
+    quote: Marcos Cefas Lopes de Barros, em 05 de abril de 2011
+  - source: cant-novas-igrejas-2024
+    quote: Marcos Cefas Lopes de Barros, em 05 de abril de 2011
+    page: '57'
+  notes: >-
+    Data completa segundo Costa (2021, p. 245); ano confirmado pela Wikipédia PT. Sagrantes não informados; sucessão
+    via Paulo Garcia/ICCEC. Cargo e sagrantes não informados.
+affiliations:
+- jurisdiction: iecb
+  role: bishop
+  end_reason: left
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: como Raniere Campos, Marcos Cephas e Roberto Schuller, que se filiaram a outras igrejas.
+  notes: Data de saída não informada (antes de 2021).

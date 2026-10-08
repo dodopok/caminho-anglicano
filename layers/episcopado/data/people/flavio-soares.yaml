@@ -1,0 +1,295 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: flavio-soares
+name: Flávio Soares
+full_name: Flávio Adair Torres Soares
+aliases:
+- Bispo Flávio A. T. Soares
+- Bispo Flávio Adair
+- Claudio Adair
+- Claudio Adair (grafia de anglicanismo.com.br, provável erro)
+- Dom Flávio Adair
+- Flavio Adair
+- Flavio Adair Torres
+- Flávio A. T. Soares
+- Flávio Adair
+- Flávio Adair Torres Soares
+biography: >-
+  Natural de Passo Fundo (RS), radicado em João Pessoa; diácono 2005, presbítero 2006, bispo 2012; bispo missionário/auxiliar
+  na Diocese do Recife e na IAB.
+sources:
+- source: iab-regiao-missionaria
+  quote: Flávio é um gaúcho, natural de  Passo Fundo
+ordinations:
+- order: diaconate
+  date: '2005-05-18'
+  jurisdiction: diocese-anglicana-recife
+  status: contested
+  sources:
+  - source: iab-regiao-missionaria
+    quote: Foi ordenado ao Diaconato em 18/05/2005 quando já era Ministro encarregado de uma Igreja (Missão)
+  - source: dar-2011-meira-sobre-flavio
+    quote: >-
+      Por isso, no dia 18 de junho, fui testemunha da sua Ordenação Diaconal, quando o vi, diante do Bispo, afirmar
+      sua convicção e disponibilidade em servir ao Senhor da Igreja e Igreja do Senhor.
+  - source: dar-2011-meira-sobre-flavio
+    quote: ali ele estava como um dos formandos no ano de 2005. Neste mesmo ano, presidido pelo Rev. Souza
+  discrepancies:
+  - field: date
+    value: '2005-06-18'
+    sources:
+    - source: dar-2011-meira-sobre-flavio
+      quote: >-
+        Por isso, no dia 18 de junho, fui testemunha da sua Ordenação Diaconal, quando o vi, diante do Bispo, afirmar
+        sua convicção e disponibilidade em servir ao Senhor da Igreja e Igreja do Senhor.
+    - source: dar-2011-meira-sobre-flavio
+      quote: ali ele estava como um dos formandos no ano de 2005. Neste mesmo ano, presidido pelo Rev. Souza
+  notes: >-
+    Jurisdição inferida pela data (já após a ruptura de jan/2005); a fonte não a nomeia nem o ordenante. Ordenante
+    não informado pela fonte (em 2005 o bispo diocesano era Robinson Cavalcanti). Data coincide com o período de
+    ruptura com a IEAB. CONTESTADO: artigo de Márcio Meira (2011) dá 18 de junho de 2005 ('no dia 18 de junho, fui
+    testemunha da sua Ordenação Diaconal'). Versão do artigo de Márcio Meira (2011): '18 de junho' do mesmo ano
+    da formatura (2005). O site da IAB dá 18/05/2005. Outro clérigo (Raimundo Figueiredo) é dado como 'ordenado
+    em 18/06/2005', o que sugere uma cerimônia de ordenação nessa data. O artigo acrescenta: 'Um ano depois, nós,
+    os Presbíteros, impomos nossas mãos sobre ele consagrando-o para o ministério presbiteral.' Bispo não nomeado
+    (diocesano: Robinson Cavalcanti).
+- order: presbyterate
+  date: '2006-04-08'
+  jurisdiction: diocese-anglicana-recife
+  status: confirmed
+  sources:
+  - source: iab-regiao-missionaria
+    quote: Presbítero em 08/04/2006
+  notes: >-
+    Ordenante não informado pela fonte. Ordenante não informado (provavelmente Robinson Cavalcanti, não confirmado).
+- order: episcopate
+  date: '2012-03-17'
+  place: Paróquia Anglicana Espírito Santo (PAES), Piedade, Jaboatão dos Guararapes-PE
+  jurisdiction: diocese-anglicana-recife
+  office: auxiliary
+  principal_consecrator: peter-beckwith
+  co_consecrators:
+  - alexander-barroso
+  - martin-morrison
+  status: contested
+  sources:
+  - source: iab-regiao-missionaria
+    quote: Eleito ao Episcopado em 04/06/2011 , Ordenado e Sagrado em 17/03/2012.
+  - source: dar-sagracao-2012
+    quote: >-
+      O Bispo Sagrante foi o Revmo. Dom Peter Beckwith (TEC – Estados Unidos) que presidiu a Cerimônia e proferiu
+      o Sermão; os Bispos Co-Sagrantes foram: Revmo. Dom Alexander Barroso (Igreja Anglicana Carismática – Venezuela)
+      e Dom Martin Morrinson (Igreja da Inglaterra na África do Sul)
+  - source: dar-sagracao-2012
+    quote: >-
+      a Sagração dos Bispos Sufragâneos da Diocese do Recife no último sábado (17/03/2012), na Paróquia Anglicana
+      Espírito Santo (PAES), no bairro de Piedade, em Jaboatão dos Guararapes (PE)
+  - source: dar-sagracao-2012-quadro
+    quote: >-
+      Bispo Sagrante e Pregador: Revmo. Bispo Peter Beckwith Igreja Episcopal (Estados Unidos) Bispos Co-Sagrantes:
+      Revmo. Bispo Alexander Barroso Igreja Anglicana Carismática (Venezuela) Revmo. Bispo Martin Morrison Igreja
+      da Inglaterra na África do Sul
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      que, em 2012 foi sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson Cavalcanti, sem
+      sucessores diretos. Embora não existam registros públicos detalhando os consagrantes
+  discrepancies:
+  - field: office
+    value: suffragan
+    sources:
+    - source: iab-regiao-missionaria
+      quote: Eleito ao Episcopado em 04/06/2011 , Ordenado e Sagrado em 17/03/2012.
+    - source: dar-sagracao-2012
+      quote: >-
+        O Bispo Sagrante foi o Revmo. Dom Peter Beckwith (TEC – Estados Unidos) que presidiu a Cerimônia e proferiu
+        o Sermão; os Bispos Co-Sagrantes foram: Revmo. Dom Alexander Barroso (Igreja Anglicana Carismática – Venezuela)
+        e Dom Martin Morrinson (Igreja da Inglaterra na África do Sul)
+    - source: dar-sagracao-2012
+      quote: >-
+        a Sagração dos Bispos Sufragâneos da Diocese do Recife no último sábado (17/03/2012), na Paróquia Anglicana
+        Espírito Santo (PAES), no bairro de Piedade, em Jaboatão dos Guararapes (PE)
+    - source: dar-sagracao-2012-quadro
+      quote: >-
+        Bispo Sagrante e Pregador: Revmo. Bispo Peter Beckwith Igreja Episcopal (Estados Unidos) Bispos Co-Sagrantes:
+        Revmo. Bispo Alexander Barroso Igreja Anglicana Carismática (Venezuela) Revmo. Bispo Martin Morrison Igreja
+        da Inglaterra na África do Sul
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        que, em 2012 foi sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson Cavalcanti,
+        sem sucessores diretos. Embora não existam registros públicos detalhando os consagrantes
+  - field: jurisdiction
+    value: iacs
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        que, em 2012 foi sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson Cavalcanti,
+        sem sucessores diretos. Embora não existam registros públicos detalhando os consagrantes
+  notes: >-
+    Eleito em 04/06/2011, ainda no episcopado de Robinson Cavalcanti (a Living Church diz que em junho [de 2011]
+    Cavalcanti pediu a eleição de um coadjutor, planejando aposentar-se em 2014); sagrado 3 semanas após a morte
+    dele, no MESMO DIA da sagração de Evilásio Tenório (17/03/2012, segundo Wikipédia PT: Peter Beckwith com Alexander
+    Barroso e Martin Morrison) — provavelmente cerimônia conjunta, mas nenhuma fonte nomeia os sagrantes de Flávio.
+    O pôster da IAB diz 'sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson'. Sagração
+    conjunta com Evilásio Tenório. Sagrante e co-sagrantes segundo o site da Diocese do Recife (mar/2012). Bispos
+    visitantes (não co-sagrantes): Antônio José da Costa Raposo (Igreja Apostólica Episcopal, Portugal), Antônio
+    Pessoa Leite (Igreja Anglicana Missionária do Redentor), Francisco Buzzo Rodrigues e Josep Rosselo (Igreja Anglicana
+    Reformada). A fonte grafa 'Morrinson' no texto e 'Morrison' no quadro. Sobre o título: 'Bispo Sufragâneo, 1ª
+    Região Eclesiástica'.
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  start: '2005'
+  end: '2012-03-17'
+  status: confirmed
+  sources:
+  - source: dar-clero-presbiteros-2007
+    quote: Rev. Flávio Adair Torres Soares
+  - source: dar-clero-presbiteros-2010
+    quote: Rev. Flávio Adair Torres Soares
+  - source: dar-2011-gustavo
+    quote: O pregador foi o Bispo-Eleito Flávio Adair
+  notes: >-
+    Local: Paraíba; Paróquia Anglicana Cristo Libertador, João Pessoa. Diácono em 2005 e presbítero em 2006 na Diocese
+    do Recife (já fora da IEAB); liderou a Paróquia Cristo Libertador (Valentina, João Pessoa) segundo Márcio Meira
+    (2011). Eleito bispo em 04/06/2011.
+- jurisdiction: diocese-anglicana-recife
+  role: bishop
+  start: '2012-03-17'
+  end: '2018'
+  status: confirmed
+  sources:
+  - source: dar-sagracao-2012-quadro
+    quote: DOM FLÁVIO ADAIR BISPO SUFRAGÂNEO 1ª REGIÃO ECLESIÁSTICA
+  - source: adr-bispos-2017
+    quote: Bispo Sufragâneo Revmo. Flávio Adair Torres Soares
+  notes: >-
+    Local: 1ª Região Eclesiástica. Bispo sufragâneo até a criação da IAB (2018), quando passa à Região Missionária
+    (vínculo já registrado).
+- jurisdiction: diocese-anglicana-recife
+  role: bishop
+  diocese: ieab-dar
+  start: '2012-03-17'
+  end: '2018-05-12'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: gafcon-2017-anglican-renewal
+    quote: Bishop Flavio Adair Torres Soares, a suffragan bishop of the Anglican Church of Recife
+  - source: g1-2012-02-29-velorio
+    quote: pelos dois bispos auxiliares Flávio Aldair e Evilásio Tenório
+- jurisdiction: iab
+  role: bishop
+  diocese: iab-regiao-missionaria
+  start: '2018'
+  status: confirmed
+  sources:
+  - source: iab-regiao-missionaria
+    quote: atua também como Bispo na região Missionaria da Província
+  - source: iab-church-planting-bishops
+    quote: Bishop Flavio Soares – Missionary Bishop of the Diocese of Recife
+  - source: iab-comunicado-oficial-2018
+    quote: Flavio Adair Bispo Auxiliar de Recife
+  - source: iab-regiao-missionaria
+    quote: >-
+      Mora em João Pessoa onde lidera uma igreja local, mas atua também como Bispo na região Missionaria da Província.
+  notes: >-
+    Bispo missionário; mora em João Pessoa. Em 2019 listado como "Bispo Auxliar" no clero da Diocese de Recife.
+- jurisdiction: iab
+  role: clergy
+  diocese: iab-diocese-recife
+  start: '2019'
+  status: confirmed
+  sources:
+  - source: dr-igrejas-2019
+    quote: 'Reitor: Revmo. Flávio Adair Torres Soares'
+  notes: Reitor de paróquia em Olinda em 2019; em 2018 morava em João Pessoa.
+- jurisdiction: gafcon
+  role: other
+  role_description: secretario_regional
+  start: '2024'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: foi empossado como Secretário Regional do GAFCON para a America Latina
+    page: '34'
+- jurisdiction: iab
+  role: auxiliary_bishop
+  diocese: iab-diocese-recife
+  status: confirmed
+  sources:
+  - source: iab-carta-nacao-2022
+    quote: Revmo. + Flavio Adair Bispo Auxiliar de Recife Norte
+  - source: gafcon-2026-01-02-sa
+    quote: The Rt Revd Flavio Adair Torres, Bishop of Recife in the Anglican Church in Brazil
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2024, o bispo Flávio Adair, Auxiliar da Diocese de Recife, foi empossado como Secretário Regional do GAFCON
+      para a America Latina
+    page: '34'
+  notes: >-
+    Em 2022 assina como "Bispo Auxiliar de Recife Norte"; o GAFCON (2026) o chama "Bishop of Recife" e Secretário
+    Regional para a América do Sul. Também bispo missionário da Região Missionária (página de 2018).
+- jurisdiction: iab
+  role: missionary_bishop
+  diocese: iab-regiao-missionaria
+  status: probable
+  sources:
+  - source: iab-regiao-missionaria
+    quote: >-
+      Mora em João Pessoa onde lidera uma igreja local, mas atua também como Bispo na região Missionaria da Província.
+  notes: >-
+    Página publicada em 26/10/2018 e modificada em 10/12/2018; não há confirmação posterior de que continue nesse
+    cargo.
+events:
+- type: other
+  date: '2011-06-04'
+  description: Flávio Adair Torres Soares eleito ao episcopado
+  status: confirmed
+  sources:
+  - source: iab-regiao-missionaria
+    quote: Eleito ao Episcopado em 04/06/2011
+- type: other
+  date: 2018-05
+  description: >-
+    Flávio Soares participa de ordenação diaconal no México com o bispo Mark Zimmerman (Caminemos Juntos)
+  status: probable
+  sources:
+  - source: cj-flavio-2018
+    quote: >-
+      I had the honor of meeting a very special local leader, Bishop Mark Zimmerman, with whom I participated in
+      the ordination of a Deacon.
+- type: other
+  date: '2026-08-08'
+  description: >-
+    GAFCON anuncia que a IAB se prepara para passar de "três dioceses e uma diocese missionária" para "quatro dioceses
+    e duas dioceses missionárias", pela multiplicação da Diocese de Recife (novas dioceses ainda não nomeadas na
+    fonte).
+  status: probable
+  sources:
+  - source: gafcon-2026-08-08-recife
+    quote: >-
+      as the Anglican Church in Brazil prepares to grow from three dioceses and one missionary diocese to four dioceses
+      and two missionary dioceses
+- type: other
+  date: '2011-06-04'
+  description: Flávio Adair Torres Soares é eleito ao episcopado (Diocese Anglicana do Recife).
+  status: probable
+  sources:
+  - source: iab-regiao-missionaria
+    quote: Eleito ao Episcopado em 04/06/2011
+- type: other
+  date: '2012-02-29'
+  description: >-
+    Na véspera do sepultamento de Robinson Cavalcanti, o G1 informa que Evilásio Tenório substituirá interinamente
+    o bispo até a escolha do novo líder; o culto fúnebre foi celebrado pelo presidente do Conselho Diocesano, Márcio
+    Simões, e pelos 'bispos auxiliares' Flávio Adair e Evilásio Tenório.
+  status: confirmed
+  sources:
+  - source: g1-2012-02-29-velorio
+    quote: >-
+      O culto foi celebrado pelo presidente do Conselho Diocesano, Márcio Simões, e pelos dois bispos auxiliares
+      Flávio Aldair e Evilásio Tenório. Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo
+      líder da igreja, o que deve ocorrer no dia 19 de maio.
+  - source: wp-pt-evilasio
+    quote: >-
+      Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
+      bispo diocesano, até a eleição do novo líder da Igreja Anglicana

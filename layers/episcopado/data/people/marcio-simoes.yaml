@@ -1,0 +1,180 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marcio-simoes
+name: Márcio Simões
+full_name: Márcio José de Sousa Simões
+aliases:
+- Márcio José de Sousa Simões
+biography: Bispo diocesano da Diocese de Vitória (PE) da IAB; diácono e presbítero em 2008, bispo em 2017.
+sources:
+- source: dv-bispo
+  quote: O Bispo Márcio José de Sousa Simões foi sagrado ao episcopado no dia 10 de junho de 2017
+ordinations:
+- order: diaconate
+  date: '2008'
+  jurisdiction: diocese-anglicana-recife
+  status: confirmed
+  sources:
+  - source: dv-bispo
+    quote: ordenado diácono e presbítero em 2008
+  - source: cant-novas-igrejas-2024
+    quote: Antes disso, já servia como ministro local desde 2002 e foi ordenado diácono e presbítero em 2008.
+    page: '33'
+  notes: 'Ordenante não informado (bispo diocesano em 2008: Robinson Cavalcanti).'
+- order: presbyterate
+  date: '2008'
+  jurisdiction: diocese-anglicana-recife
+  status: confirmed
+  sources:
+  - source: dv-bispo
+    quote: ordenado diácono e presbítero em 2008
+  - source: cant-novas-igrejas-2024
+    quote: Antes disso, já servia como ministro local desde 2002 e foi ordenado diácono e presbítero em 2008.
+    page: '33'
+- order: episcopate
+  date: '2017-06-10'
+  jurisdiction: diocese-anglicana-recife
+  office: missionary
+  principal_consecrator: miguel-uchoa
+  status: contested
+  sources:
+  - source: dv-bispo
+    quote: O Bispo Márcio José de Sousa Simões foi sagrado ao episcopado no dia 10 de junho de 2017
+  - source: gafcon-2017-two-bishops
+    quote: >-
+      The ceremony will be conducted by The Right Revd. Miguel Uchôa Cavalcanti, Bishop of Recife, with proceedings
+      due to begin at 10am, Saturday June 10th 2017.
+  - source: iab-dois-novos-bispos
+    quote: Em Junho acontecerá a  Sagração Episcopal
+  - source: dv-bispo
+    quote: foi sagrado ao episcopado no dia 10 de junho de 2017
+  - source: iab-dois-novos-bispos
+    quote: 'elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira'
+  - source: gafcon-2017-two-bishops
+    quote: >-
+      The Anglican Church in Brazil and the Diocese of Recife have announced that Revd. Márcio Simões and Revd.
+      Márcio Medeiros Meira are to be ordained and consecrated as missionary bishops.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2017, foram sagrados dois bispos para liderar novas dioceses: Márcio Simões, para a Diocese de Vitória
+      de Santo Antão e Márcio Meira, para a Diocese de João Pessoa.
+    page: '31'
+  - source: cant-novas-igrejas-2024
+    quote: O bispo Márcio Simões foi sagrado em 10 de junho de 2017.
+    page: '33'
+  discrepancies:
+  - field: office
+    value: diocesan
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Em 2017, foram sagrados dois bispos para liderar novas dioceses: Márcio Simões, para a Diocese de Vitória
+        de Santo Antão e Márcio Meira, para a Diocese de João Pessoa.
+      page: '31'
+    - source: cant-novas-igrejas-2024
+      quote: O bispo Márcio Simões foi sagrado em 10 de junho de 2017.
+      page: '33'
+  notes: >-
+    Eleito bispo auxiliar em 06/05/2017 (o GAFCON chama-os de 'missionary bishops'); tornou-se bispo da Diocese
+    de Vitória com a formação da província. Sagrante principal = quem 'conduz' a cerimônia segundo o anúncio prévio
+    do GAFCON; co-sagrantes não informados por fonte independente. Data confirmada (anúncio GAFCON + site da Diocese
+    de Vitória). Eleito bispo auxiliar em 06/05/2017; sagração conjunta com Márcio Meira. Sagrante principal segundo
+    o anúncio prévio do GAFCON ('conducted by ... Miguel Uchôa Cavalcanti'); co-sagrantes não confirmados. Diocesano
+    de Vitória a partir da criação da província (2018). Diocese de Vitória de Santo Antão. Sagrantes não nomeados.
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  start: '2008'
+  end: 2017-06
+  status: confirmed
+  sources:
+  - source: dar-sagracao-2012
+    quote: >-
+      O Venerável Arcediago e Presidente do Conselho Diocesano, Rev. Márcio Simões , conduziu a celebração, com
+      admirável maestria, como Mestre de Cerimônia.
+  - source: dar-2013-pombos
+    quote: Márcio Simões (Paróquia da Ressurreição - Vitória de S anto Antão -PE )
+  - source: dar-2012-eleicao-uchoa
+    quote: O Presidente do Conselho Diocesano, Rev. Márcio Simões , fez a abertura solene do Sínodo
+  - source: cant-novas-igrejas-2024
+    quote: O presidente do Conselho Diocesano, reverendo Márcio Simões, ficou encarregado do processo
+    page: '30'
+  notes: >-
+    Arcediago e presidente do Conselho Diocesano em 2012. Início = ano da ordenação (2008, já registrada). Presidente
+    do Conselho Diocesano em 2012.
+- jurisdiction: iab
+  role: diocesan_bishop
+  diocese: iab-diocese-vitoria
+  start: '2018'
+  status: contested
+  sources:
+  - source: iab-comunicado-oficial-2018
+    quote: Márcio Simões Bispo da Diocese de Vitória PE
+  - source: dv-bispo
+    quote: Bispo diocesano Bispo Márcio Simões
+  - source: iab-church-planting-bishops
+    quote: Bishop Marcio Simoes – Diocese of Vittoria
+  - source: iab-carta-nacao-2022
+    quote: Revmo. + Marcio Simões Bispo Diocesano de Vitória PE
+  - source: cant-novas-igrejas-2024
+    quote: Diocese de Vitória de Santo Antão, a qual está sob a liderança do bispo Márcio José de Sousa Simões.
+    page: '33'
+  discrepancies:
+  - field: start
+    value: '2017-06-10'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: Diocese de Vitória de Santo Antão, a qual está sob a liderança do bispo Márcio José de Sousa Simões.
+      page: '33'
+  notes: Diocese com sé em Vitória de Santo Antão (PE).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: postulante
+  end: '2008'
+  status: confirmed
+  sources:
+  - source: dar-postulantes-2007
+    quote: >-
+      Márcio José de Sousa Simões Aniversário: 09/01 R. Prof. João C. Oliveira, 128 - Centro Vitória de Santo Antão-PE
+  notes: >-
+    Local: Vitória de Santo Antão-PE. Postulante ao ministério ordenado na captura de out/2007; ordenado diácono
+    e presbítero em 2008 (já registrado). Também eram postulantes Márcia Maria da Silva Coelho, Maria das Dores
+    Câmara de Brito, José Fernandes Filho, Josean da Silva e Ivaldo Sales.
+events:
+- type: other
+  date: '2017-05-06'
+  description: >-
+    Sínodo extraordinário da Diocese de Recife em Olinda elege Márcio Simões e Márcio Meira bispos auxiliares
+  status: confirmed
+  sources:
+  - source: iab-dois-novos-bispos
+    quote: >-
+      Sábado,  06/05/2017, na Paróquia Anglicana Emanuel, em Olinda-PE, nossa Igreja, liderada pelo Bispo Miguel
+      Uchoa no Sínodo extraordinário, elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.
+- type: other
+  date: '2017-05-06'
+  description: >-
+    Sínodo extraordinário da Diocese de Recife, na Paróquia Anglicana Emanuel (Olinda), elege dois bispos auxiliares:
+    Márcio Simões e Márcio Meira.
+  status: confirmed
+  sources:
+  - source: iab-dois-novos-bispos
+    quote: >-
+      Sábado,  06/05/2017, na Paróquia Anglicana Emanuel, em Olinda-PE, nossa Igreja, liderada pelo Bispo Miguel
+      Uchoa no Sínodo extraordinário, elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.
+- type: other
+  date: '2012-02-29'
+  description: >-
+    Na véspera do sepultamento de Robinson Cavalcanti, o G1 informa que Evilásio Tenório substituirá interinamente
+    o bispo até a escolha do novo líder; o culto fúnebre foi celebrado pelo presidente do Conselho Diocesano, Márcio
+    Simões, e pelos 'bispos auxiliares' Flávio Adair e Evilásio Tenório.
+  status: confirmed
+  sources:
+  - source: g1-2012-02-29-velorio
+    quote: >-
+      O culto foi celebrado pelo presidente do Conselho Diocesano, Márcio Simões, e pelos dois bispos auxiliares
+      Flávio Aldair e Evilásio Tenório. Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo
+      líder da igreja, o que deve ocorrer no dia 19 de maio.
+  - source: wp-pt-evilasio
+    quote: >-
+      Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
+      bispo diocesano, até a eleição do novo líder da Igreja Anglicana

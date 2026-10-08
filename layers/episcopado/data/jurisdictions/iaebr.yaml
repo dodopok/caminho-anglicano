@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iaebr
+acronym: IAEBr
+name: Igreja Anglicana Episcopal Brasileira
+type: national_church
+country: BR
+founded:
+  date: '2023'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A IAEBr iniciou suas atividades no ano de 2023
+    page: '122'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana Episcopal Brasileira [2023]
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: Diocese de Muzambinho-MG
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: Posteriormente o bispo ingressou na Igreja Anglicana Episcopal Brasileira (IAEBr).
+    page: '160'
+description: >-
+  Igreja anglicana independente sediada em Muzambinho (MG), iniciada em 2023, de teologia progressista e inclusiva;
+  primaz Welington Souza (Diocese de Muzambinho); em janeiro de 2025 firmou inter-comunhão com a Comunhão Anglicana
+  do Caribe e Nova Granada; seis comunidades em MG, SP e ES.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: A IAEBr iniciou suas atividades no ano de 2023
+  page: '122'
+relations:
+- type: in_communion_with
+  target: pacng
+  date: 2025-01
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em janeiro de 2025, a IAEBr estabeleceu um acordo de inter-comunhão com a Comunhão Anglicana do Caribe e Nova
+      Granada
+    page: '122'
+  notes: >-
+    'Comunhão Anglicana do Caribe e Nova Granada' — que, segundo o livro, não está ligada à Comunhão Anglicana;
+    mesma jurisdição chamada PACNG no arquivo B.

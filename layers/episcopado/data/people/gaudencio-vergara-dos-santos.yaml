@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: gaudencio-vergara-dos-santos
+name: Gaudêncio Vergara dos Santos
+full_name: Gaudêncio Vergara dos Santos
+biography: Reitor da Paróquia São Lucas (IEAB, Rio de Janeiro) durante a partilha do templo da Christ Church.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    a São Lucas teve como reitores os reverendos Osborn, Custis Fletcher Jr., Gaudêncio Vergara dos Santos, Diamantino
+    Bueno, os cônegos Jorge Macedo e Celso Franco de Oliveira (hoje bispo emérito da DARJ), e os reverendos Eduardo
+    Coelho Grillo (atual bispo diocesano) e Luiz Caetano Grecco Teixeira.
+  page: '100'
+ordinations:
+- order: diaconate
+  date: '1929'
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1929 - … Gaudêncio Vergara dos Santos
+    page: '369'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1929'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1929 - … Gaudêncio Vergara dos Santos
+    page: '369'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: ieab-darj
+  role: other
+  role_description: reitor
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a São Lucas teve como reitores os reverendos Osborn, Custis Fletcher Jr., Gaudêncio Vergara dos Santos, Diamantino
+      Bueno, os cônegos Jorge Macedo e Celso Franco de Oliveira (hoje bispo emérito da DARJ), e os reverendos Eduardo
+      Coelho Grillo (atual bispo diocesano) e Luiz Caetano Grecco Teixeira.
+    page: '100'
+  notes: >-
+    Local: Paróquia São Lucas, Rio de Janeiro. Reitor da Paróquia São Lucas no período de partilha do templo da
+    Christ Church (1955–2016); datas individuais não informadas.

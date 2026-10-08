@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-thomas-becket
+name: Diocese Anglicana Thomas Becket
+type: diocese
+relations:
+- type: part_of
+  target: iadb-lorite
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Célio França Spinelli, como bispo da Diocese Anglicana Thomas Becket e vigário geral da Arquidiocese Thomas
+      Cranmer
+    page: '119'

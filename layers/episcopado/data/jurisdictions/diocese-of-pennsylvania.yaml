@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-pennsylvania
+name: Diocese of Pennsylvania
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: William White. Pennsylvania ; d. 1836

@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-petrolina-diocese-de-paulista
+name: Diocese de Petrolina / Diocese de Paulista
+type: diocese
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Tony Belo Pereira (2022)

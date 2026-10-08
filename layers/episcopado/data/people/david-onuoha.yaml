@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: david-onuoha
+name: David Onuoha
+aliases:
+- David O. C. Onuoha
+- Most Rev. Dr. David Onuoha
+wikidata: Q99671062
+biography: >-
+  Bispo de Okigwe South (Igreja da Nigéria) e arcebispo da Província de Owerri (eleito em 2020, reeleito em 2025).
+sources:
+- source: con-onuoha-2025
+  quote: >-
+    Archbishop David Onuoha, who is the Bishop of Okigwe South is also the President of the Christian Council of
+    Nigeria
+ordinations:
+- order: episcopate
+  date: '2004'
+  jurisdiction: church-of-nigeria
+  office: diocesan
+  principal_consecrator: peter-akinola
+  status: contested
+  sources:
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      165d. Peter Jasper Akinola (1989-2010) que consagrou David O. C. Onuoha como bispo da Diocese de Okigwe South,
+      da Província de Owerri.
+  - source: wp-onuoha
+    quote: He was enthroned as Bishop of Okigwe South in 2004.
+  - source: wp-okigwes
+    quote: '[[Caleb Maduoma]] became its second Bishop in 2004. The current bishop is [[David Onuoha]]'
+  discrepancies:
+  - field: jurisdiction
+    value: con
+    sources:
+    - source: wp-onuoha
+      quote: He was enthroned as Bishop of Okigwe South in 2004.
+    - source: wp-okigwes
+      quote: '[[Caleb Maduoma]] became its second Bishop in 2004. The current bishop is [[David Onuoha]]'
+  notes: >-
+    Ano inferido do pôster (2004-hoje); verificar. Pôster: Akinola "consagrou David O. C. Onuoha como bispo da Diocese
+    de Okigwe South". Data e sagrante NÃO ENCONTRADOS. As próprias fontes divergem: o artigo de Onuoha diz que foi
+    entronizado em Okigwe South em 2004; o artigo da diocese diz que Caleb Maduoma se tornou o 2º bispo em 2004
+    (e Onuoha seria posterior). Akinola foi primaz de 2000 a 2010; se a sagração caiu nesse intervalo, a afirmação
+    é plausível, mas não comprovada.

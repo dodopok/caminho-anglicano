@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: joseph-adetiloye
+name: Joseph Adetiloye
+full_name: Joseph Abiodun Adetiloye
+aliases:
+- Abiodun Adetiloye
+- J. Abiodun Adetiloye
+- Joseph Abiodun Adetiloye
+birth:
+  date: '1929-12-25'
+  sources:
+  - source: con-adetiloye-2012
+    quote: >-
+      He was consecrated Bishop and enthroned on the see of Ekiti in 1970 succeeding the late Bishop H.A. Osanyin.
+  - source: wikidata-api
+    quote: 'Q6104550 J. Abiodun Adetiloye {''enwiki'': ''Joseph Abiodun Adetiloye''}'
+  - source: ens-90114
+    quote: The Most Rev. Joseph Abiodun Adetiloye, Archbishop of Nigeria,
+death:
+  date: '2012-12-14'
+  sources:
+  - source: con-adetiloye-2012
+    quote: >-
+      He was consecrated Bishop and enthroned on the see of Ekiti in 1970 succeeding the late Bishop H.A. Osanyin.
+  - source: wikidata-api
+    quote: 'Q6104550 J. Abiodun Adetiloye {''enwiki'': ''Joseph Abiodun Adetiloye''}'
+  - source: ens-90114
+    quote: The Most Rev. Joseph Abiodun Adetiloye, Archbishop of Nigeria,
+wikidata: Q6104550
+biography: Bispo de Ekiti (1970), bispo de Lagos (1985) e 2º primaz da Igreja da Nigéria (1986/88–1999).
+sources:
+- source: con-adetiloye-2012
+  quote: >-
+    He was consecrated Bishop and enthroned on the see of Ekiti in 1970 succeeding the late Bishop H.A. Osanyin.
+ordinations:
+- order: episcopate
+  date: '1970'
+  jurisdiction: con
+  office: diocesan
+  principal_consecrator: moses-scott
+  status: contested
+  sources:
+  - source: con-adetiloye-2012
+    quote: >-
+      He was consecrated Bishop and enthroned on the see of Ekiti in 1970 succeeding the late Bishop H.A. Osanyin.
+  - source: dacb-adetiloye
+    quote: >-
+      Adetiloye became the second bishop of the Ekiti Diocese in 1970 and served until 1985 when he became the sixth
+      bishop of Lagos.
+  - source: wp-adetiloye
+    quote: >-
+      In August 1970, he was elected and nominated bishop of the Diocese of Ekiti, latter being transferred to the
+      Diocese of Lagos, of which he was bishop from 1985 to 1999.
+  - source: ia-arb-1970-10
+    quote: >-
+      NIGERIA Bishop Consecrated The Reverend J. A. Adetiloye has been B 1913 consecrated as Bishop of the Ekiti
+      Anglican diocese by the Archbishop of the Province of West Africa, the Right Reverend M.N.S. Scott. (NSP 4/10)
+  - source: ia-whoswho-lambeth-1988
+    quote: 'Ordained: 1954 for Lagos Consecrated: 1970 for Ekiti'
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      163d. Moses Nathanael Christopher Omobiala Scott (1961-1981) que consagrou Joseph Abiodun Adetiloye como bispo
+      da diocese da Lagos, da Igreja da Nigéria.
+  discrepancies:
+  - field: jurisdiction
+    value: church-of-nigeria
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        163d. Moses Nathanael Christopher Omobiala Scott (1961-1981) que consagrou Joseph Abiodun Adetiloye como
+        bispo da diocese da Lagos, da Igreja da Nigéria.
+  notes: >-
+    CORRIGIDO: o pôster diz que Moses Scott "consagrou Joseph Abiodun Adetiloye como bispo da diocese da Lagos";
+    Adetiloye foi sagrado em 1970 como bispo de EKITI (só foi transladado para Lagos em 1985). O SAGRANTE NÃO FOI
+    ENCONTRADO: nenhuma fonte (Igreja da Nigéria, DACB, Wikipédia, Wikidata) nomeia quem o sagrou. Scott era arcebispo
+    da África Ocidental em 1970 (1969–1981, cf. wp-scott), o que torna a afirmação do pôster plausível, mas não
+    comprovada. FECHA A LACUNA: sagrante principal = arcebispo da Província da África Ocidental M. N. (C. O.) Scott,
+    isto é, Moses Scott. Fonte: Africa Research Bulletin, out/1970, p. 30 (resumo de imprensa que cita "NSP 4/10"
+    — jornal nigeriano de 4/10/1970). Lido como trecho da busca de texto completo do Internet Archive (OCR; "B 1913"
+    é ruído de OCR, provavelmente o número da página do boletim). A data exata não está no trecho: a notícia é de
+    outubro de 1970 e a fonte citada é de 4 de outubro; a pista de "18 de outubro de 1970" (sucessao-lacunas) fica
+    em dúvida. Jurisdição: Igreja da Nigéria (Província da África Ocidental em 1970). Confirma a pista do pôster
+    da IAB (Scott -> Adetiloye). Ano inferido do início do episcopado indicado no pôster (1970); verificar.

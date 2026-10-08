@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-aberdeen
+name: Diocese of Aberdeen
+type: diocese
+relations:
+- type: part_of
+  target: scottish-episcopal-church
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: Dr. Robert Kilgour, the primus, bishop of Aberdeen
+  - source: perry-1895
+    quote: Dr. John Skinner, bishop coadjutor of Aberdeen

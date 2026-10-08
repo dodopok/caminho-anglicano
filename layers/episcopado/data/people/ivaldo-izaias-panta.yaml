@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ivaldo-izaias-panta
+name: Ivaldo Izaías Panta
+aliases:
+- Ivaldo Isaías Panta
+- Revdo. Ivaldo Panta
+birth:
+  date: '1963-07-28'
+  sources:
+  - source: dar-2020-panta
+    quote: Ivaldo Izaías Panta nascido no dia 28 de julho de 1963, em Lajedo-PE
+biography: Presbítero da Diocese Anglicana do Recife, ordenado em 2020 em Lajedo (PE).
+sources:
+- source: dar-2020-panta
+  quote: Ivaldo Izaías Panta nascido no dia 28 de julho de 1963, em Lajedo-PE
+ordinations:
+- order: presbyterate
+  date: '2020-10-17'
+  place: Missão Anglicana São Francisco de Assis, Lajedo (PE)
+  jurisdiction: ieab
+  ordained_by: joao-cancio-peixoto-filho
+  status: confirmed
+  sources:
+  - source: dar-2020-panta
+    quote: >-
+      No sábado, 17 de outubro de 2020, o Bispo João Câncio Peixoto Filho, ordenou ao Presbiterado, na Missão Anglicana
+      São Francisco de Assis, em Lajedo/PE, o Revdo. Ivaldo Izaías Panta.
+  - source: dar-2020-panta-conv
+    quote: >-
+      o Bispo da Diocese Anglicana do Recife, Dom João C. Peixoto Filho, estará realizando a ordenação presbiteral
+      do Revdo. Ivaldo Izaías Panta.
+  notes: Diocese Anglicana do Recife.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dar-clero-diocesano
+    quote: CLERO DIOCESANO
+  - source: dar-clero-diocesano
+    quote: Revdo. Ivaldo Isaías Panta
+  notes: >-
+    Listado no clero diocesano da DAR (página consultada em 2026-10). A página grafa "Isaías"; a notícia da ordenação,
+    "Izaías".

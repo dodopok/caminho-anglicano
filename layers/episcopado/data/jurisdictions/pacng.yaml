@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: pacng
+acronym: PACNG
+name: Província Anglicana del Caribe y la Nueva Granada
+type: province
+country: CO
+description: >-
+  Jurisdição com sede na Colômbia (também 'Comunhão Anglicana do Caribe e Nova Granada'), não ligada à Comunhão
+  Anglicana, à qual se associam a IAC e a IAEBr.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Província Anglicana del Caribe y la Nueva Granada, com sede na Colômbia
+  page: '108'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Comunhão Anglicana do Caribe e Nova Granada – que, apesar do nome, não está ligada à Comunhão Anglicana.
+  page: '122'

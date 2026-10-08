@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: nairobi
+name: Nairobi
+type: diocese
+relations:
+- type: part_of
+  target: anglican-church-of-kenya
+  status: probable
+  sources:
+  - source: wp-en-kuria
+    quote: '| term             = 1980&ndash;1994'

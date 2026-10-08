@@ -1,0 +1,241 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: james-antonio-roque
+name: James Antônio Roque
+aliases:
+- +Dom James Roque
+- Conde Roque de Japi
+- Dom James Roque
+- James Roque
+- dom James
+biography: >-
+  Primeiro brasileiro sagrado bispo pelo arcebispo colombiano Victor Manuel Cruz-Blanco (2013, Barranquilla); fundador
+  da Diocese Anglicana do Japí (Jundiaí-SP); metropolita da Igreja Anglicana de Confissão Continuante.
+sources:
+- source: iacc-continuante
+  quote: >-
+    O primeiro brasileiro a ser sagrado Bispo por ††Victor Manuel Cruz-Blanco, em cerimônia ocorrida em 2013, foi
+    o paulista dom †James Roque
+ordinations:
+- order: diaconate
+  date: '2008'
+  place: Araraquara (SP)
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Em 2008 foi ordenado ao diaconato em Araraquara (SP)
+    page: '154'
+  notes: Ordenante e jurisdição não informados pelo livro (nota de rodapé 42).
+- order: presbyterate
+  date: '2010'
+  place: Bandeirantes (PR)
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: em 2010 foi ordenado presbítero na cidade de Bandeirantes (PR)
+    page: '154'
+  notes: Ordenante e jurisdição não informados pelo livro.
+- order: episcopate
+  date: '2013'
+  place: Pró-Catedral, Barranquilla (Colômbia)
+  jurisdiction: pcra-al
+  principal_consecrator: victor-manuel-cruz-blanco
+  status: contested
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em 2013, foi ordenado e sagrado o primeiro bispo brasileiro do Movimento Anglicano Contínuo no Brasil. A sua
+      sagração aconteceu na cidade de Barranquila, na Colômbia.
+    page: '154'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O primeiro brasileiro a ser sagrado dentro do Movimento Contínuo foi o bispo James Antônio Roque, em cerimônia
+      ocorrida em 2013, tendo recebido a sagração episcopal pelas mãos do bispo Victor Manuel Cruz-Blanco.
+    page: '76'
+  - source: iacc-continuante
+    quote: >-
+      Dom †James Roque foi ordenado e sagrado pelo citado arcebispo assistido por mais quatro bispos, na Pró-Catedral
+      da Sé Metropolitana.
+  - source: costa-2021-tese
+    quote: >-
+      O primeiro brasileiro a ser sagrado dentro do Movimento Continuante foi o bispo James Roque, em cerimônia
+      ocorrida em 2013, tendo recebido a sagração episcopal pelas mãos do bispo colombiano Victor Manuel Cruz-Blanco.
+  - source: cant-anglo-catolicismo-2026
+    quote: Em 2013, Dom James Roque recebeu o episcopado pelas mãos de Dom Victor Manuel Cruz-Blanco
+  - source: cant-novas-igrejas-2024
+    quote: A sua sagração aconteceu na cidade de Barranquila, na Colômbia.
+  discrepancies:
+  - field: jurisdiction
+    value: iacc
+    sources:
+    - source: iacc-continuante
+      quote: >-
+        Dom †James Roque foi ordenado e sagrado pelo citado arcebispo assistido por mais quatro bispos, na Pró-Catedral
+        da Sé Metropolitana.
+    - source: costa-2021-tese
+      quote: >-
+        O primeiro brasileiro a ser sagrado dentro do Movimento Continuante foi o bispo James Roque, em cerimônia
+        ocorrida em 2013, tendo recebido a sagração episcopal pelas mãos do bispo colombiano Victor Manuel Cruz-Blanco.
+    - source: cant-anglo-catolicismo-2026
+      quote: Em 2013, Dom James Roque recebeu o episcopado pelas mãos de Dom Victor Manuel Cruz-Blanco
+    - source: cant-novas-igrejas-2024
+      quote: A sua sagração aconteceu na cidade de Barranquila, na Colômbia.
+  - field: jurisdiction
+    value: tac
+    sources:
+    - source: cant-anglo-catolicismo-2026
+      quote: Em 2013, Dom James Roque recebeu o episcopado pelas mãos de Dom Victor Manuel Cruz-Blanco
+    - source: cant-novas-igrejas-2024
+      quote: A sua sagração aconteceu na cidade de Barranquila, na Colômbia.
+  notes: >-
+    O livro não informa sagrantes nem a jurisdição sagrante nesta parte. Atenção: a criação jurídica da Diocese
+    do Japi pelo 'bispo' Roque é datada de 14/10/2012, antes da sagração de 2013. Jurisdição do sagrante; Roque
+    organizou em seguida a Diocese Anglicana do Japi. Fonte é o próprio site da IACC, assinado por James Roque (autodeclaração).
+    Quatro co-sagrantes não nomeados. Sucessão declarada: Chambers/Pagtakhan/Pae (St. Louis 1977) via Cruz-Blanco.
+    Registro neutro do que a jurisdição declara. Costa (2021) confirma a data e o sagrante, e também que Roque 'ordenou
+    muitas pessoas ao episcopado' (Kennedy de Freitas, Mattos, Barreiros, Ferreira, Itabira Jonas, Pinho, Barbosa
+    da Silva). Já registrado em jurisdicoes-menores.json; aqui com fonte Costa. Jurisdição: Movimento Contínuo (Província
+    Católica de Rito Anglicano da América Latina); sigla TAC é aproximada.
+affiliations:
+- jurisdiction: da-japi
+  role: diocesan_bishop
+  start: '2012-10-14'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      tendo como administrador seu antigo bispo diocesano, atualmente seu emérito e bispo sênior (o primeiro sagrado)
+      do Movimento Anglicano Contínuo no Brasil
+    page: '154'
+  - source: cant-novas-igrejas-2024
+    quote: dom James Roque, já na qualidade de Emérito da Diocese
+    page: '154'
+  notes: >-
+    O livro diz que depois da conversão em diocese titular (2016) ele permanece como administrador e emérito; data
+    de início do episcopado diocesano não explicitada (a sagração foi em 2013).
+- jurisdiction: da-japi
+  role: founder
+  start: '2013'
+  end: '2016'
+  status: contested
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O novo bispo, por sua vez, organizou a chamada Diocese Anglicana do Japi22, na cidade de Jundiaí, em São Paulo.
+    page: '76'
+  - source: cant-novas-igrejas-2024
+    quote: Ela foi juridicamente criada em 14 de outubro de 2012, pelo bispo James Antônio Roque
+    page: '154'
+  notes: Diocese extinta em 2016.
+  discrepancies:
+  - field: start
+    value: '2012-10-14'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: Ela foi juridicamente criada em 14 de outubro de 2012, pelo bispo James Antônio Roque
+      page: '154'
+- jurisdiction: iacc
+  role: primate
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      cujo Moderador e Metropolita, eleito pelos demais, é o primeiro bispo anglicano continuante no País, dom †James
+      Roque.
+- jurisdiction: dav
+  role: other
+  role_description: bispo_emerito
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Dom James Roque, bispo emérito de Votorantim, foi autor da tradução do Livro Culto Divino
+    page: '78'
+events:
+- type: other
+  date: null
+  description: >-
+    Bispos brasileiros que, segundo a IACC, receberam a linhagem episcopal de James Roque: José Kennedy de Freitas,
+    Marcos Mattos, Albertino de Sousa Barreiros (Natal), Claudinei Rodrigo Ferreira (Santa Catarina), Itabira Jonas
+    (São Paulo e Paraná), Francisco de Assis Coelho e Pinho (Amazonas, eleito) e José Barbosa da Silva (Portugal)
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: >-
+      Após, houve a transmissão da sua linhagem episcopal para poucas pessoas. Podem ser citadas como as mais atuantes
+      no anglicanismo continuante brasileiro os bispos: dom †José Kennedy de Freitas
+- type: other
+  date: null
+  description: >-
+    Segundo Costa (2021), a Diocese Anglicana do Japí (James Roque) foi extinta, e os bispos sagrados por Roque
+    seguiram caminhos distintos, fundando igrejas anglicanas independentes
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      Anos mais tarde, a Diocese Anglicana do Japí foi extinta e estes novos bispos seguiram caminhos distintos,
+      fundando Igrejas Anglicanas Independentes, sem vínculos com alguma instância associativa, nem com o Movimento
+      Continuante.
+- type: other
+  date: '2016'
+  description: Extinção da Diocese Anglicana do Japi; os bispos sagrados por James Roque seguem caminhos distintos.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2016, a Diocese Anglicana do Japi foi extinta e estes novos bispos seguiram caminhos distintos, fundando
+      Igrejas Anglicanas Independentes ou ligadas ao Movimento Contínuo.
+    page: '76'
+- type: other
+  date: null
+  description: >-
+    Lucas Oliva Bertolozzi passou pela Diocese do Japi, onde dom James Roque o ordenou sob condição (ordem não especificada).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Após esse tempo, passou pela Diocese do Japi, onde dom James Roque o ordenou sob condição.
+    page: '142'
+- type: other
+  date: '2016-10-01'
+  description: >-
+    Diocese Anglicana do Japi convertida em Diocese Titular do Movimento Anglicano Contínuo e extinta como diocese
+    ordinária
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      sendo extinta em 1º de outubro de 2016, após passar à condição de uma Diocese Titular no seio do Movimento
+      Anglicano Contínuo brasileiro
+    page: '154'
+- type: other
+  date: null
+  description: James Roque traduziu o Livro Culto Divino, usado na Diocese Anglicana de Votorantim
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Dom James Roque também foi o responsável pela tradução do Livro Culto Divino, utilizado na Diocese Anglicana
+      de Votorantim.
+    page: '155'
+- type: other
+  date: '2017'
+  description: >-
+    James Roque (emérito do Japi) e Theodoro Oliveira recebem o bispo Frederick Haas, da Alemanha, ordinário da
+    Anglican Catholic Diocese of Christ the Redeemer, em encontro da Igreja no Brasil
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2017, dom James Roque, já na qualidade de Emérito da Diocese, juntamente com dom Theodoro Oliveira receberam
+      o bispo Frederick Haas da Alemanha
+    page: '154'
+- type: other
+  date: '2017'
+  description: >-
+    James Antônio Roque recebe o título nobiliárquico de 'Conde Roque de Japi', concedido por 'dom Rosário de Saxe
+    Coburgo e Bragança'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: concedeu o título nobiliárquico de Conde Roque de Japi para dom James
+    page: '155'

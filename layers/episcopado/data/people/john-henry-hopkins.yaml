@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-henry-hopkins
+name: John Henry Hopkins
+full_name: John Henry Hopkins
+aliases:
+- Bishop Hopkins
+- Bp. Hopkins
+- John H. Hopkins
+birth:
+  date: '1792-01-30'
+  sources:
+  - source: perry-episcopate-1895
+    quote: His consecrators were Bishops White, Griswold, and Bowen.
+death:
+  date: '1868-01-09'
+  sources:
+  - source: perry-episcopate-1895
+    quote: His consecrators were Bishops White, Griswold, and Bowen.
+wikidata: Q6238831
+biography: Primeiro bispo de Vermont (1832) e 8º Presiding Bishop da Igreja Episcopal.
+sources:
+- source: perry-episcopate-1895
+  quote: His consecrators were Bishops White, Griswold, and Bowen.
+ordinations:
+- order: episcopate
+  date: '1832-10-31'
+  place: St. Paul's Chapel, Nova York
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: william-white
+  co_consecrators:
+  - alexander-viets-griswold
+  - nathaniel-bowen
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      His consecration took place in St. Paul's Chapel, New York, Oct. 31, 1832. His consecrators were Bishops White,
+      Griswold, and Bowen.
+  - source: wp-en-histlist
+    quote: >-
+      | [[John Henry Hopkins]] | [[William White (Bishop of Pennsylvania)|2]] [[Alexander Viets Griswold|12]] [[Nathaniel
+      Bowen|17]] | 1832
+  - source: perry-episcopate-1895
+    quote: >-
+      His con secration took place in St. Paul's Chapel, New York, Oct. 31, 1832. His consecrators were Bishops
+      White, Griswold, and Bowen.
+  - source: wp-hopkins
+    quote: Hopkins was consecrated on October 31, 1832, in Saint Paul's Church, New York.
+  - source: wp-lista-bispos-tec
+    quote: >-
+      bgcolor="#D4B1BB" | 26 | [[John Henry Hopkins]] | [[William White (Bishop of Pennsylvania)|2]] [[Alexander
+      Viets Griswold|12]] [[Nathaniel Bowen|17]] | 1832 | [[Episcopal Diocese of Vermont|I Vermont]] | [[List of
+      presiding bishops of the Episcopal Church in the United States of America|PB8]]
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      153a. William White (1787-1836) que consagrou John Hopkins como o primeiro bispo de Vermont, na Igreja de
+      São Paulo, em Nova York.
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte. Já está em pontes-estrangeiras.json;
+    repetido aqui como elo da cadeia, agora com Perry como fonte. Pôster: "William White ... consagrou John Hopkins
+    como o primeiro bispo de Vermont" — CONFIRMADO. Co-sagrantes: Griswold (Eastern Diocese) e Bowen (Carolina do
+    Sul). Hopkins foi sagrado no mesmo dia que os bispos de Ohio, Nova Jersey e Kentucky.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-vermont
+  start: '1832-10-31'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: Hopkins was chosen bishop of Vermont
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

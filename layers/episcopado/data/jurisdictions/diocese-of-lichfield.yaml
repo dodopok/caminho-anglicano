@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-lichfield
+name: Diocese of Lichfield
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Frederick Cornwallis. Lichfield ; Canterbury, 1768; d. 1783, March 19.
+  - source: stubbs-1897
+    quote: George Abbot. Lichfield ; London, 1610 ; Canterbury, 161 1 ; d. 1633, Aug. 4

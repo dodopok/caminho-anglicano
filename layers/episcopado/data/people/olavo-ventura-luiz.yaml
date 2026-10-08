@@ -1,0 +1,256 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: olavo-ventura-luiz
+name: Olavo Ventura Luiz
+full_name: Olavo Ventura Luiz
+aliases:
+- Olavo Ventura Ruiz (grafia em Costa 2021)
+birth:
+  date: '1938-12-28'
+  sources:
+  - source: costa2021
+    quote: Olavo Ventura Luiz nasceu em Bagé, em 28 de dezembro de 1938.
+  - source: costa2021
+    quote: Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária
+  - source: kickhofel-1995
+    quote: Olavo Ventura Luiz nasceu em Bagé no dia 28 de dezembro de 1938
+    page: '260'
+death:
+  date: '1993-03-09'
+  sources:
+  - source: costa2021
+    quote: Olavo Ventura Luiz nasceu em Bagé, em 28 de dezembro de 1938.
+  - source: costa2021
+    quote: Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária
+  - source: ia-church-times-1993-03-26
+    quote: >-
+      DEATH of the Anglican Primate of Brazil, Bishop Olavo Ventura Luiz, on 9 March was caused by cerebral
+  - source: kickhofel-1995
+    quote: >-
+      Olavo Ventura faleceu em 9 de março de 1993, aos 54 anos de idade, vítima de malária cerebral contraída em
+      Moçambique, onde esteve em janeiro de 1993 em visita a Diocese dos Lobombos.
+    page: '260'
+  discrepancies:
+  - field: date
+    value: '1993-03-08'
+    sources:
+    - source: ens-93049m
+      quote: >-
+        Archbishop Olavo Ventura Luiz, primate of the Anglican Episcopal Church of Brazil, died from cerebral malaria
+        on March 8.
+biography: >-
+  Bispo da Diocese Sul-Ocidental (sagrado 1976) e primaz (1986-1993); morreu de malaria contraida em Mocambique.
+sources:
+- source: costa2021
+  quote: Olavo Ventura Luiz nasceu em Bagé, em 28 de dezembro de 1938.
+- source: costa2021
+  quote: Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária
+ordinations:
+- order: diaconate
+  date: '1969'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1969 - … Olavo Ventura Luiz
+    page: '372'
+  - source: kickhofel-1995
+    quote: >-
+      Foi ordenado ao diaconato em 1969 e ao presbiterado em 1970. Foi pároco em Jaguarão e diretor da Cidade de
+      Meninos naquela cidade gaúcha.
+    page: '260'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1970'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Foi ordenado ao diaconato em 1969 e ao presbiterado em 1970. Foi pároco em Jaguarão e diretor da Cidade de
+      Meninos naquela cidade gaúcha.
+    page: '260'
+- order: episcopate
+  date: '1976-11-28'
+  jurisdiction: ieab
+  office: diocesan
+  status: confirmed
+  sources:
+  - source: ia-ens-1993-03-17
+    quote: bishop of southwestern Brazil, for which he was consecrated in 1976.
+  - source: ia-episcopal-life-1993-04
+    quote: >-
+      Luiz was consecrated bishop of the Dio- cese of South Western Brazil in 1976 and elected primate of Brazil
+      in 1984.
+  - source: ia-wmn-1986-12
+    quote: Seminary at Sao Paulo, was conse- crated bishop in 1976.
+  - source: ia-whoswho-lambeth-1988
+    quote: Episcopal Church of Brazil (1986) and Bp of Southwestern Brazil (1976)
+  - source: ens-93049m
+    quote: >-
+      Luiz became primate in 1984 following his service as bishop of southwestern Brazil, for which he was consecrated
+      in 1976.
+  - source: costa2021
+    quote: >-
+      Foi eleito pelo Concílio para ser o terceiro bispo da Diocese Sul-Ocidental, sendo sagrado em 28 de novembro
+      de 1976.
+  - source: sinopse-2003
+    quote: 1976 - Olavo Ventura Luiz (Santa Maria)
+  - source: kickhofel-1995
+    quote: >-
+      O sucessor do bispo Plínio Lauer Simões no governo da Diocese Sul Ocidental foi Olavo Ventura Luiz, eleito
+      aos trinta e sete anos no segundo concílio extraordinário (193) realizado em 4 de setembro de 1976 e sagrado
+      ao episcopado em 28 de novembro do mesmo ano como o terceiro bispo daquela diocese (194).
+    page: '260'
+  notes: >-
+    Sagrante principal NÃO encontrado. Os Journals da Convenção Geral abertos no Internet Archive (1979, Denver)
+    começam a lista de notificações de sagrações estrangeiras em setembro de 1976 e não trazem Olavo; a notificação
+    (se houve) deve estar no Journal de 1976 (Minneapolis), que não está no Internet Archive. Trechos do Internet
+    Archive vêm da busca de texto completo (OCR; itens de empréstimo controlado). A mesma tese diz no corpo do texto
+    "No início do ano de 1976 foi sagrado o novo bispo da Diocese Sul-Ocidental, o reverendo Olavo Ventura Luiz";
+    a nota de rodape da 28/11/1976. Ver duvidas.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dso
+  start: '1976-11-28'
+  end: '1992'
+  end_reason: death
+  status: contested
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      O sucessor do bispo Plínio Lauer Simões no governo da Diocese Sul Ocidental foi Olavo Ventura Luiz, eleito
+      aos trinta e sete anos no segundo concílio extraordinário (193) realizado em 4 de setembro de 1976 e sagrado
+      ao episcopado em 28 de novembro do mesmo ano como o terceiro bispo daquela diocese (194).
+    page: '260'
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1976-1992 - Olavo Ventura Luiz
+    page: '368'
+  - source: costa2021
+    quote: 1977-1992 – Olavo Ventura Luiz
+  - source: wp-pt-dioc-sulocidental
+    quote: Olavo Ventura Luiz - 1977 a 1984
+  - source: costa2021
+    quote: >-
+      Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária, contraída em Moçambique durante uma
+      visita à Diocese dos Libombos.
+  discrepancies:
+  - field: end
+    value: '1993-03-09'
+    sources:
+    - source: costa2021
+      quote: 1977-1992 – Olavo Ventura Luiz
+    - source: wp-pt-dioc-sulocidental
+      quote: Olavo Ventura Luiz - 1977 a 1984
+    - source: costa2021
+      quote: >-
+        Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária, contraída em Moçambique durante
+        uma visita à Diocese dos Libombos.
+  notes: >-
+    Fim divergente: 1984 (Wikipedia PT), 1992 (Costa Anexo D) ou morte em 1993 (Costa texto: Jubal eleito em 1993
+    para suceder Olavo, que faleceu).
+- jurisdiction: ieab
+  role: primate
+  start: '1986'
+  end: '1993-03-08'
+  end_reason: death
+  status: contested
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1986 - Olavo Ventura
+      Luiz (interino) 1986 - Olavo Ventura Luiz 1988 - Olavo Ventura Luiz 1990 - Olavo Ventura Luiz
+    page: '367'
+  - source: ens-93049m
+    quote: >-
+      Luiz became primate in 1984 following his service as bishop of southwestern Brazil, for which he was consecrated
+      in 1976. … Archbishop Olavo Ventura Luiz, primate of the Anglican Episcopal Church of Brazil, died from cerebral
+      malaria on March 8.
+  - source: costa2021
+    quote: O Sínodo de 1986 o elegeu como Bispo Primaz, cargo que ocupou por dois anos.
+  - source: costa2021
+    quote: 1986-1988 – Olavo Ventura Ruiz (interino)
+  - source: wp-en-ieab
+    quote: Olavo Ventura Luiz, 1986—1992
+  - source: ens-93049m
+    quote: >-
+      Archbishop Olavo Ventura Luiz , primate of the Anglican Episcopal Church of Brazil, died from cerebral malaria
+      on March 8.
+  - source: sinopse-2003
+    quote: 1986 - Novo primaz, Olavo Ventura Luiz
+  notes: >-
+    O livro dá só o início de cada primado; o fim é o início do primado seguinte. Primeiro interino (1986), depois
+    eleito em 1986 e reeleito em 1988 e 1990. O ENS dá 1984 como início do primado; as fontes brasileiras dizem
+    interino em 1986 e eleito no Sínodo de 1986. Fontes divergem: lista oficial (via Wikipedia EN) 1986-1992; Costa
+    (Anexo E) interino 1986-1988 e titular 1988-1993 (grafado "Ventura Ruiz"); morreu em 09/03/1993. ENS (17/03/1993)
+    diz que morreu em 8 de marco (Costa: 9 de marco) e que se tornou primaz em 1984 (provavel confusao; Sherrill
+    era primaz em exercicio em 1984).
+  discrepancies:
+  - field: start
+    value: '1984'
+    sources:
+    - source: ens-93049m
+      quote: >-
+        Luiz became primate in 1984 following his service as bishop of southwestern Brazil, for which he was consecrated
+        in 1976. … Archbishop Olavo Ventura Luiz, primate of the Anglican Episcopal Church of Brazil, died from
+        cerebral malaria on March 8.
+    - source: costa2021
+      quote: O Sínodo de 1986 o elegeu como Bispo Primaz, cargo que ocupou por dois anos.
+    - source: costa2021
+      quote: 1986-1988 – Olavo Ventura Ruiz (interino)
+    - source: wp-en-ieab
+      quote: Olavo Ventura Luiz, 1986—1992
+    - source: ens-93049m
+      quote: >-
+        Archbishop Olavo Ventura Luiz , primate of the Anglican Episcopal Church of Brazil, died from cerebral malaria
+        on March 8.
+    - source: sinopse-2003
+      quote: 1986 - Novo primaz, Olavo Ventura Luiz
+  - field: end
+    value: '1993-03-09'
+    sources:
+    - source: costa2021
+      quote: O Sínodo de 1986 o elegeu como Bispo Primaz, cargo que ocupou por dois anos.
+    - source: costa2021
+      quote: 1986-1988 – Olavo Ventura Ruiz (interino)
+    - source: wp-en-ieab
+      quote: Olavo Ventura Luiz, 1986—1992
+    - source: ens-93049m
+      quote: >-
+        Archbishop Olavo Ventura Luiz , primate of the Anglican Episcopal Church of Brazil, died from cerebral malaria
+        on March 8.
+    - source: sinopse-2003
+      quote: 1986 - Novo primaz, Olavo Ventura Luiz
+events:
+- type: death
+  date: '1993-03-09'
+  description: Morte de Olavo Ventura Luiz, primaz da IEAB, em 9 de março de 1993 (malária cerebral).
+  status: probable
+  sources:
+  - source: ia-church-times-1993-03-26
+    quote: >-
+      DEATH of the Anglican Primate of Brazil, Bishop Olavo Ventura Luiz, on 9 March was caused by cerebral
+- type: other
+  date: '1976-09-04'
+  description: Eleito bispo da Diocese Sul-Ocidental no segundo concílio extraordinário, no primeiro escrutínio
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      O sucessor do bispo Plínio Lauer Simões no governo da Diocese Sul Ocidental foi Olavo Ventura Luiz, eleito
+      aos trinta e sete anos no segundo concílio extraordinário (193) realizado em 4 de setembro de 1976 e sagrado
+      ao episcopado em 28 de novembro do mesmo ano como o terceiro bispo daquela diocese (194).
+    page: '259'
+- type: death
+  date: '1993-03-09'
+  description: >-
+    Morte de Olavo Ventura Luiz, primaz da IEAB, de malária cerebral contraída em Moçambique (visita à Diocese dos
+    Libombos)
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Olavo Ventura faleceu em 9 de março de 1993, aos 54 anos de idade, vítima de malária cerebral contraída em
+      Moçambique, onde esteve em janeiro de 1993 em visita a Diocese dos Lobombos.
+    page: '260'

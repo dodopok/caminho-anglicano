@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: arthur-petrie
+name: Arthur Petrie
+full_name: Arthur Petrie
+aliases:
+- Dr. Arthur Petrie
+wikidata: Q4799968
+biography: Bispo de Ross e Moray (Igreja Episcopal Escocesa); co-sagrante de Seabury (1784).
+sources:
+- source: perry-1895
+  quote: Dr. Arthur Petrie, bishop of Ross and Moray
+- source: wikidata-api-2
+  quote: '"Q4799968": enwiki "Arthur Petrie"'
+affiliations:
+- jurisdiction: scottish-episcopal-church
+  role: bishop
+  diocese: diocese-of-moray-and-ross
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: Dr. Arthur Petrie, bishop of Ross and Moray
+  notes: Cargo atestado em 14/11/1784 (sagração de Seabury); início e fim não registrados.

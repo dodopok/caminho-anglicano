@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-virginia
+name: Diocese of Virginia
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: James Madison. Virginia; d. 1812.
+  - source: perry-1895
+    quote: On the death of Moore he became, without opposition, bishop of Virginia
+  - source: perry-1895
+    quote: On the death of Meade (1862) he became bishop of Virginia.
+  - source: perry-1895
+    quote: On the death of Bishop Johns, in 1876, he became the diocesan.

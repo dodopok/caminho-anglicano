@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iep
+acronym: IEP
+name: Igreja Episcopal Protestante
+type: national_church
+country: BR
+founded:
+  date: 2011-12
+  sources:
+  - source: blog-iep-2013
+    quote: >-
+      A Igreja Episcopal Protestante teve um breve vida entre dezembro de 2011 e Março de 2012, estando afiliada
+      a PECUSA. A igreja foi foi fundada pelo Rev. Virgílio Cezar Henrique Pereira Torres quando saio da Igreja
+      Anglicana Reformada do Brasil.
+dissolved:
+  date: 2012-03
+  sources:
+  - source: blog-iep-2013
+    quote: >-
+      A Igreja Episcopal Protestante teve um breve vida entre dezembro de 2011 e Março de 2012, estando afiliada
+      a PECUSA. A igreja foi foi fundada pelo Rev. Virgílio Cezar Henrique Pereira Torres quando saio da Igreja
+      Anglicana Reformada do Brasil.
+website: https://episcopaisprotestantes.blogspot.com/
+description: >-
+  Igreja fundada por Virgílio Cezar Henrique Pereira Torres ao sair da IARB; segundo blog postado pelo perfil "Igreja
+  Anglicana Reformada" (2013), durou de dez/2011 a mar/2012 e era afiliada a uma "PECUSA". Um site Google "Sínodo
+  do Brasil" (hoje privado) chamava Virgílio de "Bispo Moderador (Presidente) da Igreja Episcopal Protestante",
+  sugerindo continuidade sob outro nome (IAU). Datas contestáveis.
+sources:
+- source: blog-iep-2013
+  quote: >-
+    A Igreja Episcopal Protestante teve um breve vida entre dezembro de 2011 e Março de 2012, estando afiliada a
+    PECUSA. A igreja foi foi fundada pelo Rev. Virgílio Cezar Henrique Pereira Torres quando saio da Igreja Anglicana
+    Reformada do Brasil.
+relations:
+- type: schism_from
+  target: iarb
+  date: 2011-12
+  led_by:
+  - virgilio-cezar-henrique-pereira-torres
+  status: probable
+  sources:
+  - source: blog-iep-2013
+    quote: >-
+      A igreja foi foi fundada pelo Rev. Virgílio Cezar Henrique Pereira Torres quando saio da Igreja Anglicana
+      Reformada do Brasil.

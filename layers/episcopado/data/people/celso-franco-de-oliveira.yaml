@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: celso-franco-de-oliveira
+name: Celso Franco de Oliveira
+full_name: Celso Franco de Oliveira
+aliases:
+- Dom Celso Franco
+birth:
+  date: '1940-07-11'
+  sources:
+  - source: costa2021
+    quote: Celso Franco de Oliveira nasceu em 11 de julho de 1940, na cidade de Cabo Frio, Rio de Janeiro.
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Celso Franco, Emérito
+biography: Bispo da Diocese Anglicana do Rio de Janeiro (2000-2008); emerito.
+sources:
+- source: costa2021
+  quote: Celso Franco de Oliveira nasceu em 11 de julho de 1940, na cidade de Cabo Frio, Rio de Janeiro.
+- source: ieab-secretaria
+  quote: Revmo. Bispo Celso Franco, Emérito
+ordinations:
+- order: diaconate
+  date: '1974'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1974 - … Celso Franco de Oliveira
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: episcopate
+  date: '2000-02-27'
+  place: Christ Church, Rio de Janeiro
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: glauco-soares-de-lima
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Sua sagração ocorreu na Christ Church, no dia 27 de fevereiro de 2000, pelas mãos do Bispo Primaz, Glauco
+      Soares de Lima, e dos demais bispos
+  notes: Eleito em Concilio Extraordinario de 06/11/1999 para a Diocese Anglicana do Rio de Janeiro.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-darj
+  start: '2000-02-27'
+  end: '2008'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: 2000-2008 – Celso Franco de Oliveira
+  - source: costa2021
+    quote: >-
+      Em 2008, o bispo Filadelfo Oliveira foi eleito como o novo diocesano para a Diocese Anglicana do Rio de Janeiro,
+      substituindo o bispo Celso Franco.
+- jurisdiction: ieab-darj
+  role: diocesan_bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o então reverendo Celso Franco de Oliveira – posteriormente eleito bispo do Rio de Janeiro –
+    page: '40'
+  notes: Datas não informadas.
+- jurisdiction: ieab-darj
+  role: other
+  role_description: reitor
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a São Lucas teve como reitores os reverendos Osborn, Custis Fletcher Jr., Gaudêncio Vergara dos Santos, Diamantino
+      Bueno, os cônegos Jorge Macedo e Celso Franco de Oliveira (hoje bispo emérito da DARJ), e os reverendos Eduardo
+      Coelho Grillo (atual bispo diocesano) e Luiz Caetano Grecco Teixeira.
+    page: '100'
+  notes: >-
+    Local: Paróquia São Lucas, Rio de Janeiro. Reitor da Paróquia São Lucas no período de partilha do templo da
+    Christ Church (1955–2016); datas individuais não informadas.
+- jurisdiction: ieab-darj
+  role: other
+  role_description: bispo_emerito
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Celso Franco de Oliveira (hoje bispo emérito da DARJ)
+    page: '100'
+events:
+- type: other
+  date: 2017-04
+  description: >-
+    A Camara Episcopal em abril de 2017 (reuniao no Rio de Janeiro) inclui como emeritos Clovis Rodrigues, Almir
+    dos Santos e Celso Franco.
+  status: confirmed
+  sources:
+  - source: ec-2017-04
+    quote: Clóvis Ro- drigues, Almir dos Santos e Celso Franco (eméritos)

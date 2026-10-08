@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: zilda-torres
+name: Zilda Torres
+aliases:
+- Episcopisa Zilda Torres
+- Zinda Torres
+biography: Esposa de Josué Sousa Torres; bispa (episcopisa) da Igreja Episcopal do Evangelho Pleno.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    com a presença não apenas do bispo Josué, mas também de sua esposa Zinda Torres, a qual também é bispa na denominação.
+  page: '146'
+affiliations:
+- jurisdiction: ieep
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: sua esposa Zinda Torres, a qual também é bispa na denominação.
+    page: '146'
+  notes: O livro não informa data nem sagrantes da sua sagração.
+events:
+- type: other
+  date: '2024-11-24'
+  description: >-
+    Nos 28 anos da IEEP (24/11/2024, Taboão da Serra) foram ordenadas as diaconisas Lurdes e Márcia e as presbíteras
+    Maria Neves, Maria Rita, Patrícia e Ilza, em celebração presidida por Josué Torres com o auxílio da episcopisa
+    Zilda Torres e de dom Isaías Dutra (representando a DAC de Lucas Macieira).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      realizaram-se as ordenações das novas diaconisas Lurdes e Márcia, bem como das novas presbíteras reverendas
+      Maria Neves, Maria Rita, Patrícia e Ilza. A celebração foi presidida por Dom Josué Torres, com o auxílio da
+      episcopisa Zilda Torres e de Dom Isaías Dutra
+    page: '146'

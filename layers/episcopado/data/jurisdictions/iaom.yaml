@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iaom
+acronym: IAOM
+name: Igreja Anglicana Ortodoxa Missionária
+aliases:
+- IAO-2023
+- Igreja Anglicana Ortodoxa do Brasil
+- Igreja Anglicana Ortodoxa do Brasil (2023, Comunhão Anglicana Ortodoxa)
+type: national_church
+country: BR
+founded:
+  date: '2023'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 08 de setembro de 2023, o bispo Thomas Gordon, na qualidade de primaz da Comunhão Anglicana Ortodoxa, reconheceu
+      a Igreja Anglicana Ortodoxa do Brasil como um membro da comunhão internacional.
+    page: '130'
+description: Jurisdição anglicana independente do bispo Jonas Santana Moreira.
+sources:
+- source: testemunho-mantenedor-2026-10-08-aquino
+  quote: Hoje aquino está na IGREJA ANGLICANA ORTODOXA MISSIONÁRIA, do Bispo Jonas Santana Moreira
+relations:
+- type: recognized_by
+  target: comunhao-anglicana-ortodoxa-orthodox-anglican-communion
+  date: '2023-09-08'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 08 de setembro de 2023, o bispo Thomas Gordon, na qualidade de primaz da Comunhão Anglicana Ortodoxa, reconheceu
+      a Igreja Anglicana Ortodoxa do Brasil como um membro da comunhão internacional.
+    page: '130'
+- type: member_of
+  target: comunhao-anglicana-ortodoxa-orthodox-anglican-communion
+  date: '2023-09-08'
+  led_by:
+  - jonas-santana-moreira
+  - tony-carlos-ribeiro
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: reconheceu a Igreja Anglicana Ortodoxa do Brasil como um membro da comunhão internacional.
+    page: '130'

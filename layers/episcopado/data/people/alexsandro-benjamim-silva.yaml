@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: alexsandro-benjamim-silva
+name: Alexsandro Benjamim Silva
+aliases:
+- Alexsandro Benjamim
+- Bispo Alexsandro
+biography: >-
+  Reverendo da IECB, fundador (com a esposa Ana Janaina Tavares) da Igreja Episcopal Monte Moriá (Camaragibe, PE);
+  após romper com a IECB/CEI em 2021 passou a ser chamado bispo da comunidade, embora nunca tenha sido sagrado.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: sob a liderança do então reverendo Alexsandro Benjamim Silva, hoje bispo Alexsandro
+  page: '148'
+affiliations:
+- jurisdiction: iemm
+  role: founder
+  start: '2006-11-16'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A história da Igreja tem origem com o casal Alexsandro Benjamim e Ana Janaina Tavares, que abriram seu lar
+      iniciando um grupo familiar no dia 16 de novembro de 2006.
+    page: '148'
+- jurisdiction: iecb
+  role: clergy
+  start: '2007'
+  end: '2021'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Até o ano de 2021 esteve vinculada à Igreja Episcopal Carismática do Brasil, como paróquia na região.
+    page: '148'
+  notes: >-
+    Pároco da comunidade Monte Moriá enquanto ligada à IECB (início estimado pela fundação da comunidade em 2007).
+- jurisdiction: iemm
+  role: bishop
+  start: '2021'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      sendo renomeado como bispo da comunidade. Entretanto, o mesmo nunca foi sagrado ao episcopado, possuindo apenas
+      o título e o reconhecimento como seu pastor por parte desta.
+    page: '148'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      no município de Camaragibe, em Aldeia, a Igreja Episcopal Monte Moriá, através do bispo Alexsandro Benjamim
+      Silva
+    page: '174'
+  notes: Título de bispo sem sagração episcopal (o livro afirma que nunca foi sagrado).

@@ -1,0 +1,381 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: eric-rodrigues
+name: Eric Rodrigues
+aliases:
+- Bispo Eric
+- Bp. Eric Rodrigues
+- Erick Rodrigues
+- Erik Rodrigues
+biography: >-
+  Reitor da Igreja Anglicana Âncora (Vitória/ES); eleito bispo auxiliar da IAB (Diocese de João Pessoa, Região Sudeste)
+  em 13/03/2023 e sagrado em 08/05/2023; desde dez/2024 bispo da Rede Episcopal Brasileira (REB).
+sources:
+- source: eshoje-eric-2023
+  quote: Eric Rodrigues, Reverendo e Reitor da Paróquia Anglicana Âncora
+- source: reb-estrutura
+  quote: >-
+    Bispo da Rede Episcopal Brasileira, artista visual, Casado com Elionai Rodrigues e pai da Maria, José e da Ana.
+    Mora em Vitória/ES.
+ordinations:
+- order: diaconate
+  date: '2015-12-04'
+  place: Sínodo da Diocese do Recife (Recife/Jaboatão dos Guararapes-PE)
+  jurisdiction: diocese-anglicana-recife
+  status: contested
+  sources:
+  - source: reb-calendario-2026
+    quote: 04/12/2015 -BISPO ERIC (ORDENAÇÃO)
+  - source: reb-calendario-2026
+    quote: 04/12/2015 – Ordenação Episcopal • Bispo Eric
+  - source: aac-2015-recife
+    quote: One of the new Deacons is Eric. He is a person of many surprises.
+  - source: aac-2015-recife
+    quote: The (just about to be) Rev. Eric rodrigues
+  - source: aac-2015-recife
+    quote: >-
+      On Friday, I preached at the Eucharist that opened the Synod and participated in the Ordination, laying hands
+      on one of the four Deacons. they also ordained three priests and licensed a number of lay ministers.
+  - source: aac-2015-recife
+    quote: participated in the Ordination, laying hands on one of the four Deacons
+  discrepancies:
+  - field: place
+    value: Recife/Jaboatão dos Guararapes (Sínodo da Diocese do Recife)
+    sources:
+    - source: aac-2015-recife
+      quote: One of the new Deacons is Eric. He is a person of many surprises.
+    - source: aac-2015-recife
+      quote: The (just about to be) Rev. Eric rodrigues
+    - source: aac-2015-recife
+      quote: participated in the Ordination, laying hands on one of the four Deacons
+  - field: jurisdiction
+    value: iacs
+    sources:
+    - source: aac-2015-recife
+      quote: One of the new Deacons is Eric. He is a person of many surprises.
+    - source: aac-2015-recife
+      quote: The (just about to be) Rev. Eric rodrigues
+    - source: aac-2015-recife
+      quote: participated in the Ordination, laying hands on one of the four Deacons
+  notes: >-
+    O calendário rotula a data como 'Ordenação Episcopal' num trecho e só 'Ordenação' noutro; a sagração foi em
+    08/05/2023. A data bate com o diaconato de dez/2015 registrado por outra fonte. Ordenação na sexta-feira de
+    abertura do Sínodo Diocesano, dias antes de 08/12/2015 (data do post). O bispo ordenante não é nomeado (bispo
+    diocesano: Miguel Uchoa); Bill Atwood (ACNA) impôs as mãos sobre um dos quatro diáconos. Presbiterato de Eric
+    Rodrigues: data e ordenante NÃO encontrados (já era 'Rev.' e reitor da Âncora antes de 2023). Ordenação no Sínodo
+    da Diocese do Recife, dias antes de 08/12/2015 (data do post). Bill Atwood (ACNA) impôs as mãos sobre um dos
+    quatro diáconos. O bispo ordenante não é nomeado. Em 2015 a diocese já era extra-provincial ligada à GAFCON;
+    IACS é aproximação. Presbiterato: data e ordenante NÃO encontrados.
+- order: presbyterate
+  date: null
+  jurisdiction: diocese-anglicana-recife
+  status: probable
+  sources:
+  - source: ancorabh-lideranca-2018
+    quote: >-
+      Somos pastoreados pelo Rev. Eric Rodrigues (Peruca) e sua esposa Leo Rodrigues - Ele é Presbítero ordenado
+      pela Igreja Anglicana no Brasil e o Pastor responsável pela Comunidade Anglicana Ancora (C.A.A)
+  notes: >-
+    Data e ordenante não informados. Diácono em dez/2015; já 'Presbítero ordenado pela Igreja Anglicana no Brasil'
+    na página publicada em 11/01/2018 — logo, ordenado entre dez/2015 e jan/2018, quando a diocese se chamava 'Igreja
+    Anglicana no Brasil – Diocese de Recife' (bispo diocesano Miguel Uchoa).
+- order: episcopate
+  date: '2023-05-08'
+  place: Vitória (ES)
+  jurisdiction: iab
+  office: auxiliary
+  principal_consecrator: marcio-meira
+  co_consecrators:
+  - flavio-soares
+  - marcio-simoes
+  - miguel-uchoa
+  status: confirmed
+  sources:
+  - source: eshoje-eric-2023
+    quote: O rito de sagração do Bispo Eric Rodrigues aconteceu no último dia 8 de maio, em Vitória
+  - source: anglicanismo-visita-2023
+    quote: >-
+      A sagração foi conduzida pelo Bispo Márcio Meira, em conjunto com o Bispo Primaz Miguel Uchoa e os bispos
+      Márcio Simões e Claudio Adair.
+  - source: gafconpt-eric-2023
+    quote: >-
+      A Igreja Anglicana no Brasil consagrou um novo bispo na semana passada. O Rev. Eric Rodrigues é agora bispo
+      auxiliar da Diocese de João Pessoa.
+  - source: yt-sagracao-eric
+    quote: Sagração Bispo Eric Rodrigues
+  - source: eshoje-eric-2023
+    quote: teve seu rito de sagração a Bispo Auxiliar realizado no último dia 8 de maio
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Câmara dos Bispos ganhou novos membros com a ordenação dos bispos Miguel Neto (auxiliar para a Diocese de
+      João Pessoa) e Eric Rodrigues (para o Estado do Espírito Santo e a região Sudeste).
+    page: '34'
+  - source: reb-calendario-2026
+    quote: 08/05/2023 – Sagração Episcopal • Bispo Eric
+  - source: testemunho-mantenedor-2026-10-08-adair
+    quote: Claudio Adair em Eric Rodrigues tá errado, é o Flávio Adair Torres Soares
+  notes: >-
+    Data e local confirmados por 2 fontes independentes; sagrantes por uma só (anglicanismo.com.br, que escreve
+    "Claudio Adair" — quase certamente Flávio Adair). O GAFCON (23/05/2023) diz "na semana passada", o que não bate
+    exatamente com 08/05. Data e local confirmados por duas fontes independentes (ES Hoje; anglicanismo.com.br;
+    GAFCON-pt diz "na semana passada" em 22/05/2023). Sagrantes apenas pelo anglicanismo.com.br, que grafa "Claudio
+    Adair" — quase certamente Flávio Adair (Torres Soares). Data não informada. Data e local confirmados por duas
+    fontes independentes (ES Hoje e anglicanismo.com.br) e pelo Gafcon; sagrantes só em anglicanismo.com.br. "Claudio
+    Adair" pode ser erro por Flávio Adair Torres Soares (bispo missionário da IAB) – não verificado. O "Claudio
+    Adair" do anglicanismo.com.br é Flávio Adair Torres Soares, segundo o mantenedor.
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  start: 2015-12
+  end: '2018-05-12'
+  status: confirmed
+  sources:
+  - source: ancorabh-lideranca-2018
+    quote: >-
+      Somos pastoreados pelo Rev. Eric Rodrigues (Peruca) e sua esposa Leo Rodrigues - Ele é Presbítero ordenado
+      pela Igreja Anglicana no Brasil e o Pastor responsável pela Comunidade Anglicana Ancora (C.A.A)
+  - source: adr-pastores-2017
+    quote: Eric Rodrigues perucarodrigues@hotmail.com
+  notes: >-
+    Local: Comunidade Anglicana Âncora, Vitória-ES; supervisão de Márcio Meira. Supervisionado pelo bispo Márcio
+    Meira (página de jan/2018). Continua na IAB após 12/05/2018 (vínculo já registrado).
+- jurisdiction: iacs
+  role: clergy
+  diocese: diocese-anglicana-recife
+  start: 2015-12
+  end: '2018'
+  status: probable
+  sources:
+  - source: aac-2015-recife
+    quote: One of the new Deacons is Eric.
+  notes: Diácono desde 2015; a diocese tornou-se a IAB em 2018.
+- jurisdiction: iab
+  role: clergy
+  diocese: iab-regiao-missionaria
+  start: '2018'
+  end: '2023-05-08'
+  status: confirmed
+  sources:
+  - source: iab-regiao-missionaria
+    quote: Ministro Encarregado:Rev. Eric Rodrigues
+  - source: wp-en-iab
+    quote: Miguel Neto, Eric Rodrigues (assistant)
+  notes: >-
+    Local: Igreja Anglicana Âncora, Vitória-ES. Em 2018 "Rev." encarregado da Igreja Anglicana Âncora em Vitória-ES
+    (também listado em BH como "Erik Rodrigues"). Ordenação diaconal/presbiteral não encontrada.
+- jurisdiction: iab
+  role: clergy
+  start: '2018'
+  end: '2023-05-08'
+  status: confirmed
+  sources:
+  - source: eshoje-eric-2023
+    quote: Eric Rodrigues, Reverendo e Reitor da Paróquia Anglicana Âncora
+  - source: anglicanismo-eleicao-2023
+    quote: Eric é pastor da Igreja Ancora, localizada na região central de Vitória, ES.
+  notes: 'Local: Paróquia Anglicana Âncora, Vitória/ES. Reitor da Âncora antes da sagração.'
+- jurisdiction: iab
+  role: bishop
+  diocese: iab-diocese-joao-pessoa
+  start: '2023-05-08'
+  end: 2024-12
+  end_reason: left
+  status: probable
+  sources:
+  - source: gafconpt-eric-2023
+    quote: O Rev. Eric Rodrigues é agora bispo auxiliar da Diocese de João Pessoa.
+  - source: anglicanismo-eleicao-2023
+    quote: Eric Rodrigues será responsável pela Região Sudeste do Brasil, pela Diocese de João Pessoa.
+  - source: wp-en-iab
+    quote: Miguel Neto, Eric Rodrigues (assistant)
+  notes: >-
+    Fim inferido da fundação da REB (20/12/2024) sob sua liderança; nenhuma fonte descreve a saída da IAB. Fim inferido:
+    em 20/12/2024 já assina como bispo da REB. Data exata e motivo da saída da IAB NÃO encontrados em fonte aberta;
+    ver duvidas.
+- jurisdiction: iab
+  role: auxiliary_bishop
+  diocese: iab-diocese-joao-pessoa
+  start: '2023-05-08'
+  end: '2024-11-21'
+  end_reason: left
+  status: contested
+  sources:
+  - source: djp-bispos-aux-2024
+    quote: >-
+      Atualmente, está comissionado para exercer o Episcopado e coordenar uma região de igrejas no Sudeste do Brasil,
+      nos estados do Espírito Santo, Minas Gerais, São Paulo e Rio de Janeiro.
+  - source: djp-bispos-aux-2025
+    quote: Bispo Miguel Neto
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo Eric atuava como bispo auxiliar na Diocese de João Pessoa, juntamente com o bispo Miguel Neto.
+    page: '151'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Eric Rodrigues formalizou a saída da Província da GAFCON, através de uma carta publicada nas redes sociais,
+      em 21 de novembro de 2024.
+    page: '151'
+  notes: >-
+    Fim entre 24/06/2024 (ainda listado) e 18/02/2025 (só Miguel Neto listado); coerente com a fundação da REB em
+    20/12/2024 sob sua liderança (ver iab-clero.json).
+  discrepancies:
+  - field: end_reason
+    value: schism
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        O bispo Eric atuava como bispo auxiliar na Diocese de João Pessoa, juntamente com o bispo Miguel Neto.
+      page: '151'
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Eric Rodrigues formalizou a saída da Província da GAFCON, através de uma carta publicada nas redes sociais,
+        em 21 de novembro de 2024.
+      page: '151'
+- jurisdiction: reb
+  role: bishop
+  start: 2024-12
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      saída da Igreja Anglicana Âncora – liderada pelo bispo Eric Rodrigues –, que formou a atual Rede Episcopal
+      Brasileira (REB).
+    page: '151'
+- jurisdiction: reb
+  role: diocesan_bishop
+  start: '2024-12-20'
+  status: confirmed
+  sources:
+  - source: reb-portaria-01-2024
+    quote: o Bispo Presidente, Revmo. Eric Rodrigues
+  - source: reb-quaresma-2025
+    quote: Mensagem do Bispo Diocesano para Quaresma de 2025
+  - source: reb-portaria-01-2025
+    quote: Eu, Dom Eric Rodrigues, Bispo da Igreja de Deus na Rede Episcopal Brasileira
+  - source: reb-estrutura
+    quote: Bispo da Rede Episcopal Brasileira
+  - source: reb-calendario-2026
+    quote: 'Bispo Diocesano
+
+      Eric Rodrigues'
+  notes: 'Local: sede: Igreja/Catedral Âncora, Vitória/ES.'
+- jurisdiction: reb
+  role: founder
+  start: '2024-12-20'
+  status: confirmed
+  sources:
+  - source: reb-portaria-01-2024
+    quote: o Bispo Presidente, Revmo. Eric Rodrigues , assumirá a responsabilidade exclusiva
+  - source: eric-blog-10meses
+    quote: A Rede Episcopal Brasileira nasceu em 20 de dezembro de 2024.
+  - source: cant-novas-igrejas-2024
+    quote: e em 2024, com a Rede Episcopal Brasileira (REB), pela saída do bispo Eric Rodrigues.
+    page: '35'
+  notes: >-
+    Fonte primária (portaria de fundação assinada por ele). Usa os títulos "Bispo Presidente" e "Bispo Diocesano".
+- jurisdiction: iab
+  role: bishop
+  diocese: espirito-santo-e-regiao-sudeste
+  end: '2024'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: e em 2024, com a Rede Episcopal Brasileira (REB), pela saída do bispo Eric Rodrigues.
+    page: '35'
+events:
+- type: other
+  date: '2023-03-13'
+  description: Sínodo Extraordinário Online da IAB elege Miguel Neto e Eric Rodrigues bispos auxiliares
+  status: confirmed
+  sources:
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
+      Miguel Neto e Bp. Eric Rodrigues.
+  - source: eshoje-eric-2023
+    quote: >-
+      No dia 13 de março deste ano, a Igreja Anglicana no Brasil (IAB) elegeu, em seu primeiro Sínodo Extraordinário
+      Online, dois novos bispos auxiliares
+- type: other
+  date: 2015-12
+  description: >-
+    Sínodo da Diocese do Recife (dez/2015): ordenação de quatro diáconos (entre eles Eric Rodrigues) e três presbíteros,
+    com participação do bispo Bill Atwood (ACNA)
+  status: probable
+  sources:
+  - source: aac-2015-recife
+    quote: >-
+      On Friday, I preached at the Eucharist that opened the Synod and participated in the Ordination, laying hands
+      on one of the four Deacons. they also ordained three priests and licensed a number of lay ministers.
+  - source: aac-2015-recife
+    quote: One of the new Deacons is Eric. He is a person of many surprises.
+- type: other
+  date: '2023-03-13'
+  description: >-
+    Primeiro Sínodo Extraordinário Online da IAB (Diocese de João Pessoa) elege dois bispos auxiliares: Miguel Neto
+    e Eric Rodrigues.
+  status: confirmed
+  sources:
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
+      Miguel Neto e Bp. Eric Rodrigues. A eleição aconteceu em um evento histórico, O Primeiro Sínodo Extraordinário
+      Online da IAB.
+  - source: eshoje-eric-2023
+    quote: >-
+      No dia 13 de março deste ano, a Igreja Anglicana no Brasil (IAB) elegeu, em seu primeiro Sínodo Extraordinário
+      Online, dois novos bispos auxiliares
+- type: other
+  date: '2025-10-24'
+  description: >-
+    Hermany Soares, como bispo, prega na abertura do 1º Sínodo Diocesano Ordinário da Rede Episcopal Brasileira
+    (24/10/2025, Vitória/ES) – sinal de relação fraterna IEUB–REB.
+  status: confirmed
+  sources:
+  - source: ivoox-planando
+    quote: Sermão de abertura do 1º Sínodo Diocesano Ordinário (24/10/25), 29ª Semana do Tempo Comum.
+- type: other
+  date: '2023-03-13'
+  description: >-
+    Eleição de Eric Rodrigues e Miguel Neto como bispos auxiliares da IAB no Primeiro Sínodo Extraordinário Online,
+    conduzido pelo bispo Márcio Meira.
+  status: confirmed
+  sources:
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
+      Miguel Neto e Bp. Eric Rodrigues.
+  - source: eshoje-eric-2023
+    quote: >-
+      No dia 13 de março deste ano, a Igreja Anglicana no Brasil (IAB) elegeu, em seu primeiro Sínodo Extraordinário
+      Online, dois novos bispos auxiliares
+- type: other
+  date: '2024-12-20'
+  description: >-
+    Fundação da Rede Episcopal Brasileira (Ata de Fundação) e reconhecimento das ordens de Cícero Miranda Pontara,
+    Elionai Lisboa de Aguiar Rodrigues e Reinaldo de Souza Pinto (presbíteros) e Weiden de Morais Mendes (diácono);
+    instituição de seis postulantes.
+  status: confirmed
+  sources:
+  - source: reb-portaria-01-2024
+    quote: >-
+      1. Rev. Cícero Miranda Pontara– Presbítero. 2. Rev. Elionai Lisboa de Aguiar Rodrigues – Presbítero. 3. Rev.
+      Reinaldo de Souza Pinto – Presbítero. 4. Rev. Weiden de Morais Mendes – Diácono.
+- type: other
+  date: 2025-10
+  description: >-
+    Primeiro Sínodo Diocesano Ordinário presencial da REB em Vitória/ES (out/2025), precedido de sínodo extraordinário
+    online para eleger comissões.
+  status: confirmed
+  sources:
+  - source: eric-blog-10meses
+    quote: E um sínodo diocesano ordinário presencial, realizado em Vitória, Espírito Santo.
+- type: other
+  date: '2026-03-26'
+  description: >-
+    A REB se declara fora da Comunhão Anglicana (Eric Rodrigues escreve "como bispo de uma diocese fora da Comunhão
+    Anglicana").
+  status: confirmed
+  sources:
+  - source: reb-blog-eric
+    quote: Mesmo à distância (como bispo de uma diocese fora da Comunhão Anglicana)

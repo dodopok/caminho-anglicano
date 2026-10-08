@@ -1,0 +1,115 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: george-william-peterkin
+name: George William Peterkin
+full_name: George William Peterkin
+aliases:
+- Bp. Peterkin
+wikidata: Q17421710
+biography: >-
+  Bispo da Virgínia Ocidental; bispo provisório da missão brasileira; visitou o Brasil em 1893 e ordenou quatro
+  diáconos; apresentante de Kinsolving em 1899.
+sources:
+- source: som-1898-11
+  quote: >-
+    The Right Rev. D r. Peterkin, who has been the provisional Bishop of the missions of this Church in Brazil
+- source: wit-1952-03-20
+  quote: >-
+    the visit of Bishop Peterkin in 1893 when almost one hun- dred and fifty persons were confirmed and four Brazilians
+    were ordained to the diaconate.
+- source: wd-q17421710
+  quote: George William Peterkin | episcopal Bishop of West Virginia (1841-1916)
+ordinations:
+- order: episcopate
+  date: '1878-05-30'
+  place: St. Matthew's Church, Wheeling (Virgínia Ocidental)
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: gregory-thurston-bedell
+  co_consecrators:
+  - francis-mcneece-whittle
+  - jaggar
+  - john-barrett-kerfoot
+  - thomas-underwood-dudley
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      He was consecrated in St. Matthew's Church, \\'heeling, W. Va., May 30, 1878, by Bishops Bedell, Kerfoot,
+      Whittle, Dudley, and Jaggar.
+  - source: wp-en-histlist
+    quote: >-
+      | [[George William Peterkin]] | [[Gregory T. Bedell|67]] [[John Barrett Kerfoot|78]] [[Francis McNeece Whittle|87]]
+      | 1878
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-west-virginia
+  start: '1878-05-30'
+  status: probable
+  sources:
+  - source: wp-en-histlist
+    quote: >-
+      | [[George William Peterkin]] | [[Gregory T. Bedell|67]] [[John Barrett Kerfoot|78]] [[Francis McNeece Whittle|87]]
+      | 1878
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.
+- jurisdiction: dmsb
+  role: bishop
+  diocese: provisorio-da-missao-no-brasil
+  end: '1899'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: som-1898-11
+    quote: >-
+      The Right Rev. D r. Peterkin, who has been the provisional Bishop of the missions of this Church in Brazil
+  notes: Bispo da Virgínia Ocidental com supervisão provisória da missão até a sagração de Kinsolving.
+events:
+- type: other
+  date: '1893'
+  description: >-
+    Visita do bispo George W. Peterkin (Virgínia Ocidental) em 1893, enviado pelo Bispo Presidente: 142 confirmações,
+    ordenação dos quatro primeiros diáconos brasileiros, nomeação de comissões e designações das capelas.
+  status: confirmed
+  sources:
+  - source: wit-1952-03-20
+    quote: >-
+      the visit of Bishop Peterkin in 1893 when almost one hun- dred and fifty persons were confirmed and four Brazilians
+      were ordained to the diaconate.
+  - source: calvani-2005
+    quote: Em 1893 foram ordenados os quatro primeiros diáconos brasileiros.
+  - source: som-1893-11
+    quote: >-
+      The Presiding Bishop has sent one of our number, the Bishop of West Virginia, to visit the missions of this
+      Church in the Republic of Brazil
+  - source: wp-pt-ieab
+    quote: >-
+      No mesmo ano, a comunidade recebeu o bispo norte-americano George William Peterkin, que ordenou quatro diáconos.
+- type: deposition
+  date: '1897'
+  description: >-
+    Visita do bispo Waite H. Stirling (Falkland Islands) em 1897: ordenação dos três primeiros presbíteros brasileiros
+    (um quarto diácono havia sido deposto por Peterkin).
+  status: probable
+  sources:
+  - source: wp-en-kinsolving
+    quote: >-
+      Bishop Stirling ordained three of the Brazilian deacons to the priesthood (Peterkin having deposed the fourth).
+  - source: wp-pt-ieab
+    quote: >-
+      foi a vez da comunidade receber Waite Hockin Stirling, bispo das Ilhas Falkland, que ordenou os três primeiros
+      presbíteros nacionais
+- type: other
+  date: '1893'
+  description: Bispo visitante da igreja episcopal no Brasil (1893)
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: BISPOS VISITANTES 1893 - George William Peterkin
+    page: '368'
+  - source: kickhofel-1995
+    quote: '- 1893 - George William Peterkin, bispo visitante'
+    page: '366'

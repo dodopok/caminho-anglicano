@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: cci
+acronym: CCI
+name: Christian Communion International (Communion of Convergence Churches USA)
+aliases:
+- Christian Communion International (Comunhão Cristã Internacional)
+type: communion
+country: US
+founded:
+  date: '2005'
+  sources:
+  - source: ceec-history
+    quote: >-
+      In March, 2012 The Christian Communion International was received into full communion with the Communion of
+      Evangelical Episcopal Churches™, after a “co-communion” relationship. The CCI became the Province USA
+description: >-
+  Comunhão norte-americana (Flórida) em 'co-comunhão' com a CEEC desde 2006 e absorvida pela CEEC Província EUA
+  em março de 2012; o site da CICEB refere-se à comunhão como 'Communio Christiana Churches (CCC)'.
+sources:
+- source: ceec-history
+  quote: >-
+    In March, 2012 The Christian Communion International was received into full communion with the Communion of
+    Evangelical Episcopal Churches™, after a “co-communion” relationship. The CCI became the Province USA
+relations:
+- type: merged_with
+  target: ceec
+  date: 2012-03
+  status: confirmed
+  sources:
+  - source: ceec-history
+    quote: >-
+      In March, 2012 The Christian Communion International was received into full communion with the Communion of
+      Evangelical Episcopal Churches™

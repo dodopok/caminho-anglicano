@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: kevin-allen
+name: Kevin Allen
+full_name: Kevin Bond Allen
+aliases:
+- Kevin Bond Allen
+birth:
+  date: '1954'
+  sources:
+  - source: wp-cascadia
+    quote: >-
+      Kevin Allen was consecrated the first bishop of the Diocese of Cascadia by [[Robert Duncan (bishop)|Robert
+      Duncan]] (as archbishop of the ACNA) on September 30, 2011, in Seattle, Washington.
+wikidata: Q6395856
+biography: Primeiro bispo da Diocese of Cascadia (ACNA), 2011–2024.
+sources:
+- source: wp-cascadia
+  quote: >-
+    Kevin Allen was consecrated the first bishop of the Diocese of Cascadia by [[Robert Duncan (bishop)|Robert Duncan]]
+    (as archbishop of the ACNA) on September 30, 2011, in Seattle, Washington.
+ordinations:
+- order: episcopate
+  date: '2011-09-30'
+  place: First Lutheran Church of West Seattle, Seattle, Washington
+  jurisdiction: acna
+  office: diocesan
+  principal_consecrator: robert-duncan
+  status: probable
+  sources:
+  - source: stbarnabas-seattle-2011
+    quote: >-
+      Held on September 30, 2011 this is the complete footage of the ceremony: http://vimeo.com/30388556 Bishops,
+      clergy, and members across the Anglican Church of North America were present at 1st Lutheran Church of West
+      Seattle to participate in the liturgy.
+  - source: vimeo-30388556
+    quote: >-
+      The Ordination and Consecration of The Reverend Kevin Bond Allen as Bishop of the Anglican Diocese of Cascadia.  Sept
+      30th, 2011
+  - source: wp-allen
+    quote: Allen was elected and consecrated as its first diocesan bishop by ACNA Archbishop Robert Duncan.
+  - source: wp-cascadia
+    quote: >-
+      Kevin Allen was consecrated the first bishop of the Diocese of Cascadia by [[Robert Duncan (bishop)|Robert
+      Duncan]] (as archbishop of the ACNA) on September 30, 2011, in Seattle, Washington.
+  - source: wp-allen
+    quote: >-
+      In 2011, the diocese was fully recognized in the ACNA and Allen was elected and consecrated as its first diocesan
+      bishop by ACNA Archbishop Robert Duncan.
+  - source: wp-acnalist
+    quote: '[[Kevin Bond Allen]]
+
+      | 2011'
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      Em 2011, também consagrou Roger Copeland Ames como primeiro bispo da Diocese Anglicana dos Grandes Lagos (ver
+      162a) e Kevin Bond Allen bispo Diocese de Cascadia (ver 163b) da ACNA.
+  notes: >-
+    Reforço da afirmação de pontes-estrangeiras.json. DATA (30/09/2011) e LOCAL (First Lutheran Church of West Seattle,
+    que o rascunho anterior só conhecia por um aviso da ACNA fora do ar) agora confirmados por duas fontes independentes
+    (post da paróquia St. Barnabas e metadados do vídeo integral da cerimônia, publicado pela St. Charles Anglican
+    Church). O SAGRANTE PRINCIPAL (Robert Duncan, arcebispo da ACNA) continua só pela Wikipédia; o vídeo (104 min)
+    permitiria confirmar, mas não foi assistido. Co-sagrantes não identificados. Pôster: Duncan sagrou "Kevin Bond
+    Allen bispo Diocese de Cascadia" (2011) — CONFIRMADO pela Wikipédia (dois artigos). Co-sagrantes não encontrados.
+    Um aviso da ACNA (anglicanchurch.net/?p=1069, hoje fora do ar) citado em buscas indicaria "First Lutheran Church
+    of West Seattle" como local, mas não consegui abrir a página.

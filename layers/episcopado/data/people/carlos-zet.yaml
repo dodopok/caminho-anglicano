@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: carlos-zet
+name: Carlos Zet
+biography: Bispo da TAC (Guatemala) sagrado em 2023.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Em 2023 ocorreu a sagração do bispo Carlos Zet (Guatemala)
+  page: '81'
+ordinations:
+- order: episcopate
+  date: '2023'
+  jurisdiction: tac
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2023 ocorreu a sagração do bispo Carlos Zet (Guatemala) e o Primaz convidou o reverendo Melque e o bispo
+      Albertino para a sagração.
+    page: '81'
+  notes: Guatemala. Sagrantes não nomeados; Albertino e Melque foram convidados.

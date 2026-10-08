@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: waite-hockin-stirling
+name: Waite Hockin Stirling
+full_name: Waite Hockin Stirling
+aliases:
+- Bp. Stirling (Falklands)
+- Waite Stirling
+wikidata: Q7960486
+biography: >-
+  Bispo das Ilhas Falkland (Igreja da Inglaterra); em 1897 ordenou os três primeiros presbíteros brasileiros.
+sources:
+- source: wp-en-ieab
+  quote: >-
+    Four years later, the Brazilian mission was visited by Waite Hockin Stirling, who ordained three priests and
+    confirmed 159 members.
+- source: wd-q7960486
+  quote: Waite Stirling | British Anglican bishop (1829–1923)
+ordinations:
+- order: episcopate
+  date: '1869-12-21'
+  place: Westminster
+  jurisdiction: church-of-england
+  office: missionary
+  principal_consecrator: john-jackson
+  co_consecrators:
+  - connop-thirlwall
+  - edward-harold-browne
+  - henry-philpott
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      The Falkland Islands. A.D. 1869, Dec. 21. Waite Hockin Stirling. Consecrated at Westminster by J. London,
+      C. S. David's, H. Worcester, E. H. Ely ; Reg. Tait.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Bispo
+    colonial das Ilhas Falkland. Mesma data e mesmos sagrantes de Frederick Temple: J. London = John Jackson; C.
+    S. David's = Connop Thirlwall; H. Worcester = Henry Philpott; E. H. Ely = Edward Harold Browne.
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-falkland-islands
+  start: '1869-12-21'
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: The Falkland Islands. A.D. 1869, Dec. 21. Waite Hockin Stirling.
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+events:
+- type: deposition
+  date: '1897'
+  description: >-
+    Visita do bispo Waite H. Stirling (Falkland Islands) em 1897: ordenação dos três primeiros presbíteros brasileiros
+    (um quarto diácono havia sido deposto por Peterkin).
+  status: probable
+  sources:
+  - source: wp-en-kinsolving
+    quote: >-
+      Bishop Stirling ordained three of the Brazilian deacons to the priesthood (Peterkin having deposed the fourth).
+  - source: wp-pt-ieab
+    quote: >-
+      foi a vez da comunidade receber Waite Hockin Stirling, bispo das Ilhas Falkland, que ordenou os três primeiros
+      presbíteros nacionais
+- type: other
+  date: '1897'
+  description: Bispo visitante da igreja episcopal no Brasil (1897)
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: BISPOS VISITANTES 1897 - Waite Hockin Stirling
+    page: '368'
+  - source: kickhofel-1995
+    quote: '- 1897 - Waite Hockin Stirling, bispo visitante'
+    page: '366'

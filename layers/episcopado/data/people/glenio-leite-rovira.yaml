@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: glenio-leite-rovira
+name: Glênio Leite Rovira
+full_name: Glênio Leite Rovira
+ordinations:
+- order: diaconate
+  date: '1969'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1969 - … Glênio Leite Rovira
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1969'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1969 - … Glênio Leite Rovira
+    page: '372'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+events:
+- type: resignation
+  date: null
+  description: >-
+    Coordenador da Comissão Central Executiva de Pastoral Diocesana (CCEPD) da Diocese Sul Central, criada em 1977;
+    mais tarde renunciou ao ministério ordenado
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Seu principal coordenador foi o reverendo Glênio Leite Rovira, que mais tarde renunciou ao ministério ordenado.
+    page: '289'

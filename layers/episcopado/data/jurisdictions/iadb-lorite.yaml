@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iadb-lorite
+acronym: IAdB-Lorite
+name: Igreja Anglicana do Brasil (de Ricardo Lorite; não confundir com a IAB)
+aliases:
+- Igreja Anglicana do Brasil (de Ricardo Lorite)
+type: national_church
+country: BR
+founded:
+  date: '2005-03-27'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Neste dia, após as ordenações, foi oficialmente fundada a Igreja Anglicana do Brasil.
+    page: '118'
+  - source: cant-novas-igrejas-2024
+    quote: Em 30 de outubro de 2017, a Igreja Anglicana do Brasil encerrou suas atividades
+    page: '120'
+  - source: cant-novas-igrejas-2024
+    quote: retoma suas atividades a partir de 1º de Julho de 2023
+    page: '121'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana do Brasil [2005]
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: Reorganizada como Igreja Protestante Unida, e depois novamente recriada [2023]
+    page: '172'
+  - source: ig-josue-2025-03-28-presbiterato-2005
+    quote: >-
+      Na data de 27 de março de 2005, Domingo de Páscoa, os Rev. Diáconos Ricardo Lorite de Lima, Rui Costa Barbosa,
+      Luis Fernando Salgado e Josué Souza Torres foram elevados ao Ministério Presbiteral da Igreja de Cristo, Una,
+      Santa, Católica e Apostólica, através da imposição das mãos de Dom Iranildo Macieira das Silva (Dom Lucas).
+      A cerimônia de Ordenação ocorreu na Igreja Evangélica Congregacional de Ribeirão Preto. … Foi um momento de
+      muita alegria para todos, pois tal acontecimento iniciou as atividades da Igreja Anglicana do Brasil
+dissolved:
+  date: '2017-10-30'
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      Em 30 de outubro de 2017, a Igreja Anglicana do Brasil encerrou suas atividades, deixando uma mensagem em
+      seu site
+  - source: costa-2021-tese
+    quote: >-
+      originada a partir de um grupo formado por ex-membros da Diocese Anglicana de São Paulo (DASP), Ricardo Lorite
+      de Lima, Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres.
+website: https://anglicanchurch.weebly.com/
+description: >-
+  Igreja independente formada por ex-membros da Diocese Anglicana de São Paulo (IEAB): Ricardo Lorite de Lima, Rui
+  Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres. Encerrou suas atividades em 30/10/2017, por decisão
+  do Sínodo de abril de 2017.
+sources:
+- source: costa-2021-tese
+  quote: >-
+    Em 30 de outubro de 2017, a Igreja Anglicana do Brasil encerrou suas atividades, deixando uma mensagem em seu
+    site
+- source: costa-2021-tese
+  quote: >-
+    originada a partir de um grupo formado por ex-membros da Diocese Anglicana de São Paulo (DASP), Ricardo Lorite
+    de Lima, Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres.
+relations:
+- type: part_of
+  target: icala
+  date: '2005'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: a Paróquia Anglicana Thomas Cranmer
+    page: '117'
+  - source: cant-novas-igrejas-2024
+    quote: recebeu apoio institucional e foi elevada à condição de Diocese Missionária.
+    page: '118'
+  notes: >-
+    A Paróquia Anglicana Thomas Cranmer foi elevada a Diocese Missionária (Diocese Missionária Thomas Cranmer) pela
+    Província da América Latina da Comunhão Anglicana Independente (Leonardo Marin-Saavedra), antes da fundação
+    formal da IAdB em 27/03/2005.
+- type: in_communion_with
+  target: icala
+  date: '2023-07-01'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Este retorno das atividades da Igreja foi fomentado após contato com a Igreja Católico Anglicana Latino Americana.
+    page: '120'
+  - source: cant-novas-igrejas-2024
+    quote: Grupo Anglicano que originou as Igrejas, agora fundidas em suas tradições, história e doutrinas.
+    page: '121'
+  notes: >-
+    O comunicado fala em igrejas 'agora fundidas em suas tradições, história e doutrinas'; a natureza jurídica da
+    ligação não é clara (comunhão ou fusão).

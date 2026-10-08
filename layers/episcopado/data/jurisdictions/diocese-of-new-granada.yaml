@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-new-granada
+name: Diocese of New Granada
+type: diocese
+relations:
+- type: part_of
+  target: acc
+  status: confirmed
+  sources:
+  - source: acc-administration
+    quote: Diocese of New Granada The Right Reverend German Orrego-Hurtado, Bishop Ordinary

@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: regional-sul
+name: Regional Sul
+type: diocese
+relations:
+- type: part_of
+  target: ielb
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      À época da fundação, a IELB teve como arcebispo provincial Lucas Macieira da Silva, juntamente com dom Antonio
+      Rodrigues, como bispo auxiliar da Arquidiocese Nossa Senhora de Guadalupe, e dom João de Deus como Bispo da
+      Regional Sul.
+    page: '167'

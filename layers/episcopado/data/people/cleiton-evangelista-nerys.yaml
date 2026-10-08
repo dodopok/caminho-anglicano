@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: cleiton-evangelista-nerys
+name: Cleiton Evangelista Nerys
+aliases:
+- Cleiton Nerys
+biography: >-
+  Ex-pastor da Assembleia de Deus (Ministério de Anápolis) em Corumbá; cofundador e clérigo da Igreja Anglicana
+  Ortodoxa no Brasil.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: o pastor Cleiton Evangelista Nerys
+  page: '131'
+affiliations:
+- jurisdiction: iaob-2013
+  role: founder
+  start: '2012'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      ocorreu um encontro de dois ministros que deram início à IAOB: o reverendo Adolfo Batista Teodoro Junior e
+      o pastor Cleiton Evangelista Nerys.
+    page: '131'
+- jurisdiction: iaob-2013
+  role: clergy
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A partir de então, a Igreja agregou alguns clérigos, como os reverendos Cleiton Nerys
+    page: '132'

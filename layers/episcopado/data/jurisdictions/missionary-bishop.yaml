@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: missionary-bishop
+name: Missionary bishop
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: missionary bishop for Missouri and Indiana

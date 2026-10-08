@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: james-watson-morris
+name: James Watson Morris
+aliases:
+- J. W. Morris
+- Rev. James W. Morris
+biography: >-
+  Missionário norte-americano (VTS), companheiro de Kinsolving na fundação da missão em Porto Alegre (1890); reabriu
+  o seminário teológico em 1920.
+sources:
+- source: wp-en-ieab
+  quote: >-
+    In 1890, the priests Lucien Lee Kinsolving and James Watson Morris were sent to Brazil from the Virginia Theological
+    Seminary.
+- source: wp-en-kinsolving
+  quote: >-
+    Morris upon his return to Brazil in 1920 (after 18 years in the United States for family heath reasons) reopened
+    the theological seminary in Porto Alegre
+ordinations:
+- order: diaconate
+  date: 1889-06
+  jurisdiction: tec
+  ordained_by: francis-mcneece-whittle
+  status: probable
+  sources:
+  - source: wp-en-kinsolving
+    quote: >-
+      ordained Kinsolving and fellow Virginia Seminary graduate James Watson Morris deacons in June and priests
+      in August, 1889
+- order: presbyterate
+  date: 1889-08
+  jurisdiction: tec
+  ordained_by: francis-mcneece-whittle
+  status: probable
+  sources:
+  - source: wp-en-kinsolving
+    quote: >-
+      ordained Kinsolving and fellow Virginia Seminary graduate James Watson Morris deacons in June and priests
+      in August, 1889
+affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  diocese: porto-alegre
+  start: '1890'
+  status: probable
+  sources:
+  - source: wp-en-ieab
+    quote: >-
+      They established themselves in a rented house later known as the Mission House (Casa da Missão) in Porto Alegre,
+      where they held the first Anglican Mass in Portuguese on 1 June 1890.
+events:
+- type: other
+  date: '1890-06-01'
+  description: >-
+    Chegada de Kinsolving e Morris (com quatro brasileiros) a Porto Alegre em 21/04/1890 e primeiro culto público
+    em 1/06/1890 (domingo da Trindade).
+  status: probable
+  sources:
+  - source: wp-en-kinsolving
+    quote: The young Americans arrived at Porto Alegre on April 21, 1890, accompanied by four Brazilians
+  - source: wp-en-ieab
+    quote: where they held the first Anglican Mass in Portuguese on 1 June 1890.
+- type: other
+  date: '1892-05-23'
+  description: >-
+    Primeira convocação (não autorizada) da missão, Casa da Missão, Porto Alegre, 23-26/05/1892: presentes os revs.
+    Morris, Brown, Meem e Kinsolving e os catequistas Boaventura, Brande e Cabral.
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: >-
+      Presentes: reverendos Morris, Brown, Meem e Kinsolving, e catequistas Boaventura, Brande e Cabral. Presidida
+      por Kinsolving e secretariada por Cabral.

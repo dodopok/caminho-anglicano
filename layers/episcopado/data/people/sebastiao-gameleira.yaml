@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sebastiao-gameleira
+name: Sebastião Armando Gameleira Soares
+full_name: Sebastião Armando Gameleira Soares
+aliases:
+- Dom Sebastião Gameleira
+- Gamaleira
+- Sebastiao Gamaleira
+- Sebastião Gameleira
+- bispo Sebastião
+- dom Sebastião Gameleira
+birth:
+  date: '1945-05-19'
+  sources:
+  - source: costa2021
+    quote: Nascido no município de São Miguel dos Campos, em Alagoas, Sebastião nasceu em 19 de maio
+wikidata: Q113828068
+biography: >-
+  Ex-teologo catolico (ITER); recebido na IEAB em 1993; bispo de Pelotas (2000-2006) e do Recife (2006-2013).
+sources:
+- source: costa2021
+  quote: Nascido no município de São Miguel dos Campos, em Alagoas, Sebastião nasceu em 19 de maio
+ordinations:
+- order: episcopate
+  date: '2000-07-23'
+  place: Paroquia (catolica) Nossa Senhora da Luz, Pelotas
+  jurisdiction: ieab
+  office: diocesan
+  status: probable
+  sources:
+  - source: costa2021
+    quote: A cerimônia de sagração ocorreu em Pelotas, em 23 de julho de 2000, na Paróquia Nossa Senhora
+  - source: costa2021
+    quote: >-
+      foi eleito bispo da Diocese Anglicana de Pelotas, para substituir o primeiro ordinário, Luiz Osório Pires
+      Prado, sendo sagrado em 23 de julho de 2000.
+  notes: 'Local: a nota 225 da mesma tese diz "Catedral do Redentor, em Pelotas". Sagrantes nao informados.'
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dap
+  start: '2000-07-23'
+  end: '2006'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: wp-pt-dioc-pelotas
+    quote: Sebastião Armando Gameleira Soares - 2000 a 2006;
+  - source: costa2021
+    quote: 2000-2006 – Sebastião Armando Gameleira Soares
+  - source: ens-102306-1-a
+    quote: who has been bishop of the Diocese of Pelotas in southern Brazil since February 2000
+- jurisdiction: ieab-dar
+  role: diocesan_bishop
+  start: '2005'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Sob o episcopado de dom Sebastião Gameleira, que substituiu Robinson após sua ruptura com a IEAB
+    page: '111'
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dar
+  start: '2006-10-11'
+  end: 2013-12
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: O novo bispo foi instalado em 11 de outubro de 2006
+  - source: costa2021
+    quote: 2006-2013 – Sebastião Armando Gameleira Soares
+  - source: ens-102306-1-a
+    quote: >-
+      with the installation on October 11 of its fourth bishop, the Rt. Rev. Sebastiao Armando Gameleira Soares.
+  - source: ens-102306-1-a
+    quote: >-
+      The Diocese of Recife in Brazil celebrated the start of a new chapter in its complicated life with the installation
+      on October 11 of its fourth bishop, the Rt. Rev. Sebastiao Armando Gameleira Soares.
+  - source: ptwp-dar
+    quote: Sebastião Armando Gameleira Soares - 2006 a 2013;
+  notes: >-
+    Eleito no Sinodo Geral de 2006; aposentadoria compulsoria em 2013. Lado IEAB. Eleito no Sínodo Geral de julho/2006;
+    instalado pelo primaz Maurício Andrade. Note-se que tanto a IEAB (Sebastião, 2006) quanto a DAR (Uchôa, 2012)
+    contam seu bispo como 'quarto bispo' do Recife.
+- jurisdiction: iast
+  role: other
+  role_description: bispo_visitador
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A presença de Gameleira como um bispo visitador da comunidade
+    page: '113'

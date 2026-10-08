@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marwin-collier-perry
+name: Marwin Collier Perry
+full_name: Marwin Collier Perry
+ordinations:
+- order: diaconate
+  date: '1973'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1973 - … Marwin Collier Perry
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1973'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1973 - … Marwin Collier Perry
+    page: '372'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: lindiane-meira
+name: Lindiane Meira
+aliases:
+- Linda Meira
+- Revda. Linda Meira
+- Revda. Lindiane Meira
+biography: >-
+  Diácona ordenada em 01/05/2013 na Paraíba; ligada à Paróquia/Catedral Anglicana Comunhão (João Pessoa), sede do
+  bispo Márcio Meira.
+sources:
+- source: dar-2013-ordenacoes-1maio
+  quote: >-
+    deu-se inicio o Culto de ordenação dos novos 04 Diáconos de nossa Diocese, por ordem: Rev. Elton Roney, Revda.
+    Lindiane Meira, Revda Rosemary Gomes e Rev. Valdolírio Junior.
+ordinations:
+- order: diaconate
+  date: '2013-05-01'
+  place: Paraíba (após a Assembleia Arcediagal)
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: miguel-uchoa
+  status: confirmed
+  sources:
+  - source: dar-2013-ordenacoes-1maio
+    quote: >-
+      deu-se inicio o Culto de ordenação dos novos 04 Diáconos de nossa Diocese, por ordem: Rev. Elton Roney, Revda.
+      Lindiane Meira, Revda Rosemary Gomes e Rev. Valdolírio Junior.
+  - source: dar-2013-ordenacoes-1maio
+    quote: o culto de ordenação Presidido pelo nosso Bispo Diocesano
+  - source: dar-2013-ordenacoes-1maio
+    quote: sermão proferido pelo Nosso Bispo Diocesano, Revmo. Miguel Uchoa
+  notes: >-
+    Data do título da notícia ('Ordenações, ainda em 1º de Maio na Paraíba'); texto assinado por '+Bispo Flávio
+    Adair'. Duas das quatro ordenadas são mulheres.
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  diocese: iab-diocese-joao-pessoa
+  status: probable
+  sources:
+  - source: djp-igrejas-2025
+    quote: Catedral Anglicana Comunhão – PB Bispo Márcio Medeiros Meira Revda. Linda Meira
+  - source: ancorabh-lideranca-2018
+    quote: >-
+      Somos supervisionados pelo bispo Marcio Meira e Revda. Linda Meira da Paroquia Anglicana Comunhão em João
+      Pessoa - PB
+  notes: >-
+    Local: Catedral Anglicana Comunhão. Identificação 'Revda. Linda Meira' (2025) = 'Revda. Lindiane Meira' (diácona
+    em 01/05/2013) é provável, não confirmada. Atua na catedral do bispo Márcio Meira (parentesco não informado
+    pelas fontes).

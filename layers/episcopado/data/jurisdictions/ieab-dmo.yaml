@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-dmo
+acronym: IEAB-DMO
+name: Distrito Missionario do Oeste (hoje Distrito Missionario Anglicano)
+aliases:
+- Distrito Missionario do Oeste / Distrito Missionario Anglicano
+type: diocese
+country: BR
+description: >-
+  Rondonia, Mato Grosso e Mato Grosso do Sul; supervisionado por bispos de Brasilia e, em 2026, pela primaz. Data
+  de criacao nao encontrada.
+sources:
+- source: ieab-dioceses
+  quote: Área coberta – os estados de Rondônia, Mato Grosso e Mato Grosso do Sul
+- source: ieab-serie-dmo
+  quote: >-
+    O Distrito Missionário é parte da Igreja Episcopal Anglicana do Brasil – 19ª Província da Comunhão Anglicana.
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Bispa Primaz Revma. Marinez Bassotto
+  - source: costa2021
+    quote: Distrito Missionário do Oeste, do qual Almir ficou encarregado durante três anos.
+  - source: costa2021
+    quote: Já o Distrito Missionário do Oeste atualmente é pastoreado pelo Bispo Maurício Andrade.
+  - source: wp-pt-dioc-brasilia
+    quote: >-
+      Atualmente o bispo da Diocese Anglicana de Brasília também e o responsável pelo Distrito Missionário do Oeste.
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'

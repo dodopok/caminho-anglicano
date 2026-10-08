@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: antonio-pessoa-leite
+name: Antônio Pessoa Leite
+biography: Bispo da Igreja Anglicana Missionária do Redentor, eleito para auxiliar o primaz Marcos Fradique.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Antonio Pessoa Leite também foi eleito bispo para auxiliar no governo da Igreja do Redentor.
+  page: '126'
+affiliations:
+- jurisdiction: iamr
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Juntamente com o bispo Marcos, Antonio Pessoa Leite também foi eleito bispo para auxiliar no governo da Igreja
+      do Redentor.
+    page: '126'
+events:
+- type: other
+  date: 2014-06
+  description: >-
+    Em junho de 2014 o arcebispo católico de Olinda e Recife, dom Fernando Saburido, recebeu na Cúria três bispos
+    da IAMR (Marcos Fradique Bezerra, Antônio Pessoa Leite e Carlos Augusto Alves de Souza), na preparação da Semana
+    de Oração pela Unidade dos Cristãos.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No mês de junho de 2014, o arcebispo católico de Olinda e Recife recebeu, dom Fernando Saburido, recebeu na
+      Cúria Metropolitana, uma visita de três bispos da Igreja IAMR
+    page: '126'

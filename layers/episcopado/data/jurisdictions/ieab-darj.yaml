@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-darj
+acronym: IEAB-DARJ
+name: Diocese Anglicana do Rio de Janeiro
+aliases:
+- Diocese Anglicana do Rio de Janeiro (ex-Diocese Central)
+- Diocese Central, Rio de Janeiro
+type: diocese
+country: BR
+founded:
+  date: '1950'
+  sources:
+  - source: ieab-serie-darj
+    quote: >-
+      Foi fundada em 1950 e consiste na porção territorial os estados do Rio de Janeiro, Espírito Santo e a maior
+      parte de Minas Gerais
+  - source: wp-pt-dioc-sulocidental
+    quote: Diocese Central (hoje denominada Diocese Anglicana do Rio de Janeiro), com sé na ex-capital federal.
+website: http://www.darj.ieab.org.br
+description: >-
+  Antiga Diocese Central, se no Rio de Janeiro (Catedral do Redentor). Dela foram desmembradas Sul Central (SP,
+  1969/70), Setentrional (Recife, 1975/76) e Brasilia (1982/84).
+sources:
+- source: ieab-serie-darj
+  quote: >-
+    Foi fundada em 1950 e consiste na porção territorial os estados do Rio de Janeiro, Espírito Santo e a maior
+    parte de Minas Gerais
+- source: wp-pt-dioc-sulocidental
+  quote: Diocese Central (hoje denominada Diocese Anglicana do Rio de Janeiro), com sé na ex-capital federal.
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: darj-episcopado
+    quote: >-
+      Em 2000, recebeu um convite do Bispo Celso Franco de Oliveira para se transferir para a Diocese Anglicana
+      do Rio de Janeiro e substituí-lo como reitor na Paróquia de São Lucas, o que aconteceu de março de 2001 e
+      setembro de 2017.
+  - source: darj-episcopado
+    quote: >-
+      Eduardo foi eleito bispo coadjutor em 02 de novembro de 2016, pelo Concílio extraordinário da Diocese Anglicana
+      do Rio de Janeiro e, posteriormente, sagrado ao episcopado na IEAB, em 08 de abril de 2017, na Igreja Catedral
+      do Redentor, na Tijuca, cidade do Rio de Janeiro, RJ.
+  - source: darj-episcopado
+    quote: >-
+      Em 29 de julho de 2017, Eduardo foi instituído bispo diocesano da Diocese Anglicana do Rio de Janeiro, pelo
+      Bispo Primaz da IEAB, à época, o Revmo Francisco de Assis da Silva.
+  - source: costa2021
+    quote: 1956-1976 – Edmund Knox Sherrill
+  - source: wp-pt-sherrill
+    quote: Eleito em 1958 pela Convenção Geral da igreja americana para ser o novo bispo da Diocese Central
+  - source: costa2021
+    quote: 1977-1984 – Agostinho Guillon Sória
+  - source: costa2021
+    quote: para substituir o bispo Agostinho Guillon Sória que foi transferido para a Diocese de Brasília.
+  - source: costa2021
+    quote: 1985-2000 – Sydney Alcoba Ruiz
+  - source: costa2021
+    quote: 1985-1998 – Sydney Alcoba Ruiz
+  - source: costa2021
+    quote: 2000-2008 – Celso Franco de Oliveira
+  - source: costa2021
+    quote: >-
+      Em 2008, o bispo Filadelfo Oliveira foi eleito como o novo diocesano para a Diocese Anglicana do Rio de Janeiro,
+      substituindo o bispo Celso Franco.
+  - source: costa2021
+    quote: Sua instalação aconteceu na Catedral do Redentor em 29 de agosto do mesmo ano.
+  - source: costa2021
+    quote: >-
+      foi eleito bispo coadjutor pelo Concílio extraordinário da DARJ, após a resignação do bispo Filadelfo Oliveira.
+  - source: costa2021
+    quote: Em 29 de julho de 2017, Eduardo foi instituído como o novo diocesano.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. Eduardo Grillo
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1959-1976 - Edmund Knox Sherrill
+    page: '368'
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1977-1984 - Agostinho Guillon Sória
+    page: '368'
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1985 - Sydney Alcoba Ruiz
+    page: '368'

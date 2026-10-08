@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: hermes-carvalho-fernandes
+name: Hermes Carvalho Fernandes
+full_name: Hermes Carvalho Fernandes
+aliases:
+- Bispo Hermes C. Fernandes
+- Hermes Fernandes
+biography: >-
+  Psicólogo, teólogo, ativista e autor; fundador e presidente do colégio episcopal da REINA; declara-se bispo sagrado
+  pela International Christian Communion (CCI); co-sagrante de Leonides de Menezes (dez/2006). Segundo seu próprio
+  blog (não acessível), sagrado em 25/3/2005 na Crossroads Cathedral Church, Sparta (Tennessee).
+sources:
+- source: ciceb-quemsomos
+  quote: em cerimônia oficiada pelos bispos William Paul Mikler, Hermes Carvalho Fernandes e Francisco Buzzo
+- source: tiagolinno-hermes
+  quote: >-
+    presidente do colégio episcopal da REINA-Igreja do Futuro, bispo consagrado pela International Christian Communion
+    (comunhão que reúne bispos de tradição anglicana/episcopal dos cinco continentes)
+ordinations:
+- order: episcopate
+  date: c.2005
+  place: Catedral em Sparta, Tennessee (EUA)
+  jurisdiction: cci
+  status: probable
+  sources:
+  - source: fb-hermes-20-anos-sagracao
+    quote: >-
+      Vinte anos atrás, fui sagrado bispo com sucessão apostólica pela International Christian Communion—comunhão
+      que reúne bispos de tradição anglicana/episcopal dos cinco continentes—em um lindo rito celta realizado na
+      catedral em Sparta, Tennessee (EUA).
+  notes: >-
+    Post de março de 2025 ("vinte anos atrás"); Lorite comenta que foi sagrado "um ano depois", em 15/01/2006. Sagrantes
+    não informados.
+affiliations:
+- jurisdiction: reina
+  role: bishop
+  start: 2001-04
+  end: 2023-07
+  end_reason: resignation
+  status: probable
+  sources:
+  - source: fb-hermes-20-anos-sagracao
+    quote: >-
+      Servi como bispo da Igreja de Cristo, liderando a Igreja Reina de Abril de 2001 até julho de 2023, quando
+      abdiquei da posição para me dedicar integralmente ao ministério pastoral virtual
+- jurisdiction: reina
+  role: founder
+  status: probable
+  sources:
+  - source: neipies-hermes
+    quote: fundador da REINA (Rede Internacional de Amigos)
+- jurisdiction: cci
+  role: bishop
+  status: probable
+  sources:
+  - source: tiagolinno-hermes
+    quote: >-
+      bispo consagrado pela International Christian Communion (comunhão que reúne bispos de tradição anglicana/episcopal
+      dos cinco continentes)
+  notes: >-
+    Autodeclaração. Data (25/3/2005) e local (Crossroads Cathedral Church, Sparta, TN) aparecem em resultados de
+    busca do blog pessoal hermesfernandes.blogspot.com, que não pude abrir (bloqueado).

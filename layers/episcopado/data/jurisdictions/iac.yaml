@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iac
+acronym: IAC
+name: >-
+  Igreja Anglicana Continuante (Igreja Episcopal Anglicana de Orientação Continuante e Rito Anglo-Católico no Brasil)
+type: national_church
+country: BR
+founded:
+  date: '2022'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana Continuante (IAC) é uma Igreja Anglicana Independente, localizada na cidade de Brasília,
+      fundada em 2022
+    page: '108'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O nome completo da Igreja é Igreja Episcopal Anglicana de Orientação Continuante e Rito Anglo-Católico no
+      Brasil.
+    page: '108'
+website: https://gazetadaiac.blogspot.com/
+description: >-
+  Igreja anglicana independente fundada em 2022 em Brasília; primaz Valdiley Abadia da Silva; afirma associação
+  à Província Anglicana del Caribe y la Nueva Granada (Colômbia) e à The Anglican Apostolic Communion in the Americas
+  (Flórida); subscreve os 39 Artigos e a Afirmação de St. Louis; não ordena mulheres ao presbiterato/episcopado,
+  mas ordena diaconisas.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja Anglicana Continuante (IAC) é uma Igreja Anglicana Independente, localizada na cidade de Brasília,
+    fundada em 2022
+  page: '108'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    O nome completo da Igreja é Igreja Episcopal Anglicana de Orientação Continuante e Rito Anglo-Católico no Brasil.
+  page: '108'
+relations:
+- type: member_of
+  target: pacng
+  date: null
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A Igreja afirma estar associada à Província Anglicana del Caribe y la Nueva Granada
+    page: '108'
+  notes: >-
+    Associação declarada pela própria Igreja; 'não possui ligação canônica com nenhuma outra instância reconhecida
+    do Anglicanismo Contínuo'.
+- type: member_of
+  target: aaca
+  date: null
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      e também à The Anglican Apostolic Communion in the Americas, com sede na Flórida, nos Estados Unidos.
+    page: '108'
+  notes: Associação declarada pela própria Igreja.

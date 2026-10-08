@@ -1,0 +1,222 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iab
+acronym: IAB
+name: Igreja Anglicana no Brasil
+type: province
+tradition: anglican
+country: BR
+founded:
+  date: '2018-05-12'
+  sources:
+  - source: ai-new-province-backed
+    quote: >-
+      On Saturday, 12 May 2018, Brazilians packed the Paróquia Anglicana do Espírito Santo (Anglican Church of the
+      Holy Spirit) to celebrate the launch of the Anglican Church in Brazil
+  - source: iab-quem-somos
+    quote: >-
+      Em 12 de Maio deste ano de 2018, devido ao crescimento da nossa Igreja no Brasil, tivemos o privilégio de
+      formar a Província da Igreja Anglicana no Brasil, com 3 dioceses, 74 clérigos (as) e 54 comunidades.
+  - source: iab-home-2026
+    quote: DIOCESES RECIFE JOÃO PESSOA VÍTORIA REGIÃO MISSIONÁRIA
+  - source: gafcon-2025-07-16-iab
+    quote: it became a province with three dioceses, 54 communities, and roughly 74 clergy
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana no Brasil (IAB), anteriormente conhecida como Diocese do Recife, é uma das principais denominações
+      anglicanas brasileiras, tendo surgido a partir de um dos cismas mais significativos da história da Igreja
+      Episcopal Anglicana do Brasil
+    page: '25'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia 12 de maio de 2018, Miguel Uchôa foi instalado como primeiro Arcebispo e Primaz da Igreja Anglicana
+      no Brasil.
+    page: '31'
+  - source: cant-novas-igrejas-2024
+    quote: até o ano de 2018, quando esta se tornou a Igreja Anglicana no Brasil (IAB), a Província da GAFCON.
+    page: '124'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A propriedade do templo da Catedral Anglicana do Recife foi adquirido pela Igreja Anglicana no Brasil (IAB)
+    page: '112'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana no Brasil (IAB) [2018]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Clero originário da IEAB, reorganizado como Diocese do Recife após o cisma [2005]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Realinhamento com o Sul Global, como diocese extra-provincial da Igreja Anglicana da América do Sul (com supervisão
+      episcopal do bispo Gregory Venables) [2005-2018]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Criada como Província da GAFCON – Fellowship of Confessing Anglicans (FCA) [2018]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      hoje liderada pelo arcebispo Miguel Uchôa Cavalcanti, como Província da GAFCON, com sede na Paróquia Anglicana
+      do Espírito Santo (PAES)
+    page: '174'
+  - source: iab-comunicado-oficial-2018
+    quote: >-
+      Em 12 de Maio deste ano de 2018, devido ao crescimento da nossa Igreja no Brasil, tivemos o privilégio de
+      formar a Província da Igreja Anglicana no Brasil, com 3 dioceses, 74 clérigos (as) e 54 comunidades.
+  - source: wp-en-iab
+    quote: >-
+      It is not a member of the Anglican Communion,[1] but is in full communion with other provinces of the Global
+      Fellowship of Confessing Anglicans and the Global South Fellowship of Anglican Churches.
+locator_slug: iab
+website: https://www.anglicananobrasil.com/on/
+description: >-
+  Província anglicana ligada ao GAFCON, formada em 2018 a partir da Diocese Anglicana do Recife, com dioceses de
+  Recife, João Pessoa e Vitória e uma Região Missionária.
+sources:
+- source: ai-new-province-backed
+  quote: >-
+    On Saturday, 12 May 2018, Brazilians packed the Paróquia Anglicana do Espírito Santo (Anglican Church of the
+    Holy Spirit) to celebrate the launch of the Anglican Church in Brazil
+- source: iab-quem-somos
+  quote: >-
+    Em 12 de Maio deste ano de 2018, devido ao crescimento da nossa Igreja no Brasil, tivemos o privilégio de formar
+    a Província da Igreja Anglicana no Brasil, com 3 dioceses, 74 clérigos (as) e 54 comunidades.
+relations:
+- type: successor_of
+  target: diocese-anglicana-recife
+  date: '2018-05-12'
+  led_by:
+  - miguel-uchoa
+  status: confirmed
+  sources:
+  - source: dr-historia
+    quote: >-
+      Em 2018, a Diocese do Recife formou uma nova província anglicana, a Igreja Anglicana no Brasil, agora com
+      três dioceses (Recife, João Pessoa e Vitória)
+  - source: cant-novas-igrejas-2024
+    quote: A Igreja Anglicana no Brasil (IAB), anteriormente conhecida como Diocese do Recife
+    page: '25'
+  - source: cant-novas-igrejas-2024
+    quote: Criada como Província da GAFCON – Fellowship of Confessing Anglicans (FCA) [2018]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Igreja Anglicana no Brasil (IAB), reorganizada pelo bispo Robinson Cavalcanti a partir da Diocese do Recife
+    page: '174'
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      se tornou o primaz do que viria a ser, seis anos depois, uma nova província: a Igreja Anglicana do Brasil.
+  - source: ai-2018-05-15-uchoa-installed
+    quote: >-
+      On Saturday, 12 May 2018, Brazilians packed the Paróquia Anglicana do Espírito Santo (Anglican Church of the
+      Holy Spirit) to celebrate the launch of the Anglican Church in Brazil
+  notes: A DAR continua existindo como diocese da IAB.
+- type: member_of
+  target: gafcon
+  date: '2018-05-12'
+  led_by:
+  - miguel-uchoa
+  status: confirmed
+  sources:
+  - source: gafcon-2018-installs-primate
+    quote: >-
+      This has led to the formation of a new Biblically orthodox Province which has been recognized by the Gafcon
+      Primates Council not only as part of Gafcon, but also as a Province of the Anglican Communion.
+  - source: ai-recife-received-gafcon
+    quote: We look forward to his membership of the Primates Council.
+  - source: cant-novas-igrejas-2024
+    quote: e atualmente estruturada como Província brasileira da GAFCON
+    page: '11'
+  - source: cant-novas-igrejas-2024
+    quote: Criada como Província da GAFCON – Fellowship of Confessing Anglicans (FCA) [2018]
+    page: '171'
+  notes: Província da GAFCON – Fellowship of Confessing Anglicans (FCA).
+- type: recognized_by
+  target: gafcon
+  date: 2018-04
+  status: confirmed
+  sources:
+  - source: ai-recife-received-gafcon
+    quote: We recognise them as a province in the Anglican Communion
+  - source: ai-2018-05-15-uchoa-installed
+    quote: >-
+      has been recognized by the Gafcon Primates Council not only as part of Gafcon, but also as a Province of the
+      Anglican Communion.
+- type: member_of
+  target: gsfa
+  date: 2018-05
+  led_by:
+  - miguel-uchoa
+  status: contested
+  sources:
+  - source: iab-comunicado-oficial-2018
+    quote: >-
+      Imediatamente, fomos reconhecidos e recebidos no Movimento Sul Global, também parte da Comunhão Anglicana.
+  - source: wp-en-iab
+    quote: >-
+      is in full communion with other provinces of the Global Fellowship of Confessing Anglicans and the Global
+      South Fellowship of Anglican Churches.
+  - source: gsfa-2026-01-communique
+    quote: The Most Rev Miguel Uchoa Primate of the Anglican Church in Brazil
+  - source: iarccum-gsfa
+    quote: >-
+      Ordinary members of the GSFA not part of the Anglican Communion: Anglican Church in North America (ACNA) Anglican
+      Church in Brazil
+  discrepancies:
+  - field: date
+    value: 2026-01
+    sources:
+    - source: gsfa-2026-01-communique
+      quote: The Most Rev Miguel Uchoa Primate of the Anglican Church in Brazil
+    - source: iarccum-gsfa
+      quote: >-
+        Ordinary members of the GSFA not part of the Anglican Communion: Anglican Church in North America (ACNA)
+        Anglican Church in Brazil
+  notes: >-
+    Uchôa assina como primaz o comunicado dos Primazes do GSFA (Seychelles, jan/2026). IARCCUM lista a IAB como
+    'ordinary member' não pertencente à Comunhão. A data de início como membro pleno não foi encontrada (o comunicado
+    da IAB de 02/06/2018 diz que foram 'recebidos no Movimento Sul Global').
+- type: in_communion_with
+  target: acna
+  date: '2018'
+  status: probable
+  sources:
+  - source: wp-en-iab
+    quote: >-
+      It is in full communion with all the Global South (Anglican) and the Global Anglican Future Conference provinces,
+      including those who are not members of the Anglican Communion, such as the Anglican Church in North America.
+  - source: ai-recife-received-gafcon
+    quote: >-
+      The ACB will join the Anglican Church in North America (ACNA) as provinces recognized by the GAFCON archbishops
+      as Anglican Provinces, but who have not yet been elected to membership in the Anglican Consultative Council.
+- type: broke_communion_with
+  target: ieab
+  date: '2005'
+  status: confirmed
+  sources:
+  - source: iab-comunicado-oficial-2018
+    quote: Desde 2005, não temos nenhum tipo de relacionamento com essa instituição religiosa
+- type: broke_communion_with
+  target: anglican-communion
+  date: '2018-05-12'
+  status: confirmed
+  sources:
+  - source: iab-comunicado-oficial-2018
+    quote: >-
+      A Igreja Anglicana no Brasil não é reconhecida pela Sé da Cantuária como parte da Comunhão Anglicana “oficial”.
+  - source: wp-en-iab
+    quote: It is not a member of the Anglican Communion,[1]
+  notes: >-
+    Não é propriamente 'ruptura': a IAB nunca foi membro reconhecido da Comunhão (ACC/Cantuária). Ajustar o tipo
+    de relação na consolidação, se houver tipo 'nao_reconhecida_por'.
+- type: in_communion_with
+  target: gsfa
+  date: 2019-10
+  led_by:
+  - miguel-uchoa
+  status: contested
+  sources:
+  - source: ai-2019-10-15-seventh-trumpet
+    quote: >-
+      We also welcomed the Most Revd. Miguel Uchoa Cavalcanti of the Anglican Church in Brazil as a Mission Partner.
+  notes: >-
+    No 7º Encontro do Sul Global (Cairo, out/2019) Uchôa foi recebido como 'Mission Partner'. A Wikipédia EN (GSFA)
+    afirma que a IAB foi recebida como 'member Province' citando este mesmo comunicado — o texto não diz isso.

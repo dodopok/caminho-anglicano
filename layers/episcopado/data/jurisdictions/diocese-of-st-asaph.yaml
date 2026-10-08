@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-st-asaph
+name: Diocese of St Asaph
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Robert Hay Drummond. S. Asaph ; Sarum, 1761 ; York, 1761 ; d. 1776, Dec. 10.

@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: roger-ames
+name: Roger Ames
+full_name: Roger Copeland Ames
+aliases:
+- Roger Copeland Ames
+birth:
+  date: '1942-12-07'
+  sources:
+  - source: wp-ames
+    quote: In December 2007, Ames was consecrated as a suffragan bishop of the CANA.
+wikidata: Q7357798
+biography: >-
+  Sagrado bispo sufragâneo da CANA (Igreja da Nigéria) em dezembro de 2007; primeiro bispo da Anglican Diocese of
+  the Great Lakes (ACNA), 2011–2016.
+sources:
+- source: wp-ames
+  quote: In December 2007, Ames was consecrated as a suffragan bishop of the CANA.
+ordinations:
+- order: episcopate
+  date: '2007-12-09'
+  place: Church of the Epiphany, Herndon, Virgínia
+  jurisdiction: cana
+  office: suffragan
+  principal_consecrator: peter-akinola
+  status: contested
+  sources:
+  - source: ta-2007-09-13-cana
+    quote: >-
+      After the meeting, the Primate, the Most Rev’d Peter J. Akinola, announced the election of four suffragan
+      bishops and appointed them to serve in the USA. The bishops-elect are the Rev’d Canon Roger Ames (Akron, OH)
+  - source: ta-2007-11-03-cana
+    quote: >-
+      Now, it has been announced that the consecration of those four is scheduled for December 9, a Sunday afternoon,
+      at 2 PM at the Church of the Epiphany in Herndon, Virginia.
+  - source: ta-2007-12-10-cana
+    quote: Four additional suffragan bishops were consecrated for CANA by Archbishop Peter Akinola .
+  - source: ta-2007-12-10-cana
+    quote: >-
+      Bishop Frank Lyons of the Province of the Southern Cone, Bishop John Guernsey, Missionary Bishop for the Province
+      of Uganda, and Bishop Bob Duncan, Episcopal Bishop of the Diocese of Pittsburgh and Moderator of the Anglican
+      Communion Network, Bishop John Ball, Diocese of Chelmsford, Church of England, Bishop Ben Kawshi and many
+      other bishops from the Province of Nigeria, and other bishops all took part in the consecrations
+  - source: wp-ames
+    quote: In December 2007, Ames was consecrated as a suffragan bishop of the CANA.
+  - source: wp-greatlakes
+    quote: >-
+      In December 2007, [[Roger Ames]], the rector of St. Luke's Anglican Church in [[Akron, Ohio]], received his
+      ordination and consecration as suffragan bishop of CANA.
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      Em 2011, também consagrou Roger Copeland Ames como primeiro bispo da Diocese Anglicana dos Grandes Lagos (ver
+      162a)
+  discrepancies:
+  - field: date
+    value: '2011'
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        Em 2011, também consagrou Roger Copeland Ames como primeiro bispo da Diocese Anglicana dos Grandes Lagos
+        (ver 162a)
+  - field: jurisdiction
+    value: acna
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        Em 2011, também consagrou Roger Copeland Ames como primeiro bispo da Diocese Anglicana dos Grandes Lagos
+        (ver 162a)
+  - field: principal_consecrator
+    value: robert-duncan
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        Em 2011, também consagrou Roger Copeland Ames como primeiro bispo da Diocese Anglicana dos Grandes Lagos
+        (ver 162a)
+  - field: office
+    value: diocesan
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        Em 2011, também consagrou Roger Copeland Ames como primeiro bispo da Diocese Anglicana dos Grandes Lagos
+        (ver 162a)
+  notes: >-
+    CORRIGIDO: o pôster diz que Duncan "em 2011 também consagrou Roger Copeland Ames como primeiro bispo da Diocese
+    Anglicana dos Grandes Lagos". Ames já era bispo desde 9/12/2007 (sufragâneo da CANA, Igreja da Nigéria); em
+    2011 (30/04) foi apenas instalado como primeiro bispo diocesano dos Grandes Lagos. A infobox da Wikipédia ("consecration
+    2011, consecrated_by Robert Duncan") contradiz o próprio texto do artigo. Akinola sagrou as quatro sagrações
+    de 9/12/2007 (Ames, Anderson, Fagbamiye, Kanu); Duncan (então bispo da TEC) "took part" nelas — logo Duncan
+    pode ter sido co-sagrante de Ames, mas nenhuma fonte diz quem impôs as mãos sobre Ames especificamente. Data/local
+    vêm do anúncio prévio (scheduled) + relato do dia seguinte.
+affiliations:
+- jurisdiction: acna
+  role: diocesan_bishop
+  diocese: anglican-diocese-of-great-lakes
+  start: '2011-04-30'
+  end: '2016'
+  status: probable
+  sources:
+  - source: wp-ames
+    quote: >-
+      with Ames being installed as their first bishop at 30 April 2011, at the diocese annual convention in Akron.
+      He would be in office until 2016
+  notes: Instalação, não sagração.

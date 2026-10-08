@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ivan-barreto-de-lima-rocha
+name: Ivan Barreto de Lima Rocha
+full_name: Ivan Barreto de Lima Rocha
+aliases:
+- Dom Ivan Rocha
+- Ivan Rocha
+biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
+sources:
+- source: ptwiki-iecb
+  quote: Ivan Barreto de Lima Rocha (2024)
+ordinations:
+- order: episcopate
+  date: '2024-01-19'
+  place: Catedral da Reconciliação
+  jurisdiction: iecb
+  office: auxiliary
+  principal_consecrator: paulo-garcia
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Ivan Barreto de Lima Rocha (2024)
+  - source: jc-2024-ivan-rocha
+    quote: >-
+      A Sagração de Dom Ivan Rocha aconteceu em solenidade das mais prestigiadas e presidida pelo arcebispo da Igreja
+      Episcopal Carismática do Brasil dom Paulo Garcia há pouco dias. Mais de 15 Bispos estiveram presentes, inclusive
+      dois da Igreja Anglicana (Dom Miguel Uchôa e Dom Márcio Meira).
+  - source: cant-novas-igrejas-2024
+    quote: Ivan Barreto de Lima Rocha (Auxiliar da Diocese da Zona Sul), em 19 de janeiro de 2024
+    page: '58'
+  notes: >-
+    Jornal do Commercio (28/1/2024) diz que a sagração foi 'há pouco dias', presidida por Paulo Garcia, com mais
+    de 15 bispos presentes, inclusive Miguel Uchôa e Márcio Meira (IAB). A fonte não diz se os bispos da IAB impuseram
+    as mãos. Sagrantes não nomeados.
+affiliations:
+- jurisdiction: iecb
+  role: bishop
+  diocese: diocese-da-zona-sul
+  start: '2024'
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Ivan Barreto de Lima Rocha (2024)
+  notes: 'Local: Catedral da Reconciliação. 2º bispo diocesano (2025-)'
+- jurisdiction: iecb
+  role: auxiliary_bishop
+  diocese: diocese-da-zona-sul
+  start: '2024-01-19'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Ivan Barreto de Lima Rocha (Auxiliar da Diocese da Zona Sul)
+    page: '58'
+  notes: 'Local: Catedral da Reconciliação.'

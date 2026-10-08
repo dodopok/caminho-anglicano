@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: salomao-ferraz
+name: Salomão Ferraz
+aliases:
+- Salomão Barbosa Ferraz
+biography: >-
+  Presbítero em São Paulo (Capela do Salvador); protagonista da 'controvérsia cerimonialista', destituído em 1936.
+sources:
+- source: kickhofel
+  quote: >-
+    em 1926, Salomão Ferraz começou a celebrar a santa comunhão todos os domingos na Capela do Salvador, em São
+    Paulo
+- source: kickhofel
+  quote: >-
+    Ferraz também começou a usar textos litúrgicos não autorizados, provocando uma crise que culminou na sua destituição
+    em 1936.
+ordinations:
+- order: diaconate
+  date: '1917'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1917 - … Salomão Barbosa Ferraz
+    page: '369'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1945'
+  jurisdiction: icab
+  ordained_by: carlos-duarte-costa
+  status: probable
+  sources:
+  - source: cant-temas-anglicanismo-2024
+    quote: >-
+      o então Reverendo Salomão Ferraz foi reordenado ao sacerdócio por Dom Carlos, doze dias após a fundação da
+      Igreja Brasileira.
+  notes: >-
+    Reordenação (já era presbítero episcopal). Ano inferido de "doze dias após a fundação da Igreja Brasileira"
+    (ICAB, 1945).
+- order: episcopate
+  date: '1945-08-15'
+  place: Igreja Cristã de São Paulo, rua Baronesa de Itu, 48, São Paulo
+  jurisdiction: icab
+  principal_consecrator: carlos-duarte-costa
+  status: probable
+  sources:
+  - source: cant-ferraz-ecumenismo-1995
+    quote: >-
+      Realizou-se hoje, dia quinze de agosto de mil novecentos e quarenta e cinco, Festa da Assunção de Nossa Senhora,
+      às dez horas e trinta minutos, no templo da Igreja Cristã de São Paulo à rua Baronesa de Itu, número quarenta
+      e oito, nesta cidade de São Paulo, a Sagração Episcopal de S. Excia. Revm°, Dom Salomão Ferraz, Bispo Eleito
+      de São Paulo. Transmitiu a herança apostólica ao eleito, S. Excia. Revm° Dom Carlos Duarte Costa – Bispo do
+      Rio de Janeiro
+  - source: cant-temas-anglicanismo-2024
+    quote: Dom Salomão Ferraz foi consagrado bispo por Dom Carlos Duarte Costa, em 1945.
+  notes: >-
+    Ex-presbítero da Igreja Episcopal Brasileira; sagrado como "Bispo Eleito de São Paulo" da Igreja Católica Livre
+    / ICAB. O livro de 1995 transcreve a ata da sagração. Sigla ICAB = Igreja Católica Apostólica Brasileira (criar
+    se necessário).
+events:
+- type: other
+  date: '1936'
+  description: Destituição do Rev. Salomão Ferraz (1936) após a 'controvérsia cerimonialista'.
+  status: probable
+  sources:
+  - source: kickhofel
+    quote: provocando uma crise que culminou na sua destituição em 1936.
+- type: other
+  date: '1934'
+  description: >-
+    Assinou o memorial do concílio de 1934 (Paróquia do Salvador, Rio Grande) pedindo que o novo bispo fosse escolhido
+    entre o clero nativo
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Assinaram o histórico memorial os reverendos Salomão Ferraz, George Upton Krischke, Nemésio de Almeida, João
+      Batista Barcellos da Cunha, Orlando Batista e Athalício Theodoro Pithan e os leigos Frontino Peixoto da Silveira
+      e José Luiz Albuquerque.
+    page: '188'

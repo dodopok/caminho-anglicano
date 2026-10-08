@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: edward-white-benson
+name: Edward White Benson
+full_name: Edward White Benson
+aliases:
+- Edward Benson
+birth:
+  date: '1829-07-14'
+  sources:
+  - source: wikidata-api
+    quote: 'Q336433 Edward Benson {''enwiki'': ''Edward White Benson'', ''ptwiki'': ''Edward White Benson''}'
+  - source: wp-en-benson
+    quote: >-
+      He was consecrated bishop by [[Archibald Campbell Tait]], [[Archbishop of Canterbury]], on [[St Mark]]'s day,
+      25 April 1877 at [[St Paul's Cathedral]].
+death:
+  date: '1896-10-11'
+  sources:
+  - source: wikidata-api
+    quote: 'Q336433 Edward Benson {''enwiki'': ''Edward White Benson'', ''ptwiki'': ''Edward White Benson''}'
+  - source: wp-en-benson
+    quote: >-
+      He was consecrated bishop by [[Archibald Campbell Tait]], [[Archbishop of Canterbury]], on [[St Mark]]'s day,
+      25 April 1877 at [[St Paul's Cathedral]].
+wikidata: Q336433
+biography: >-
+  Primeiro bispo de Truro (1877) e arcebispo de Cantuária (1883-1896). Sagrado por Archibald Campbell Tait em 1877.
+sources:
+- source: wikidata-api
+  quote: 'Q336433 Edward Benson {''enwiki'': ''Edward White Benson'', ''ptwiki'': ''Edward White Benson''}'
+- source: wp-en-benson
+  quote: >-
+    He was consecrated bishop by [[Archibald Campbell Tait]], [[Archbishop of Canterbury]], on [[St Mark]]'s day,
+    25 April 1877 at [[St Paul's Cathedral]].
+ordinations:
+- order: episcopate
+  date: '1877-04-25'
+  place: Catedral de São Paulo, Londres
+  jurisdiction: church-of-england
+  office: diocesan
+  principal_consecrator: archibald-campbell-tait
+  status: probable
+  sources:
+  - source: wp-en-benson
+    quote: >-
+      He was consecrated bishop by [[Archibald Campbell Tait]], [[Archbishop of Canterbury]], on [[St Mark]]'s day,
+      25 April 1877 at [[St Paul's Cathedral]].
+  notes: >-
+    Primeiro bispo de Truro. A Wikipédia cita Church Times, 27/04/1877, p. 245 ('Consecration of the Bishop of Truro'),
+    não consultado. Tait já está na base (sagrado por J. B. Sumner em 1856).

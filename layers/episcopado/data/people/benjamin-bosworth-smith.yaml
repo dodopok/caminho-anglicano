@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: benjamin-bosworth-smith
+name: Benjamin Bosworth Smith
+full_name: Benjamin Bosworth Smith
+aliases:
+- B. B. Smith
+- Benjamin B. Smith
+- Bp. Bosworth Smith
+wikidata: Q4889238
+biography: >-
+  Primeiro bispo do Kentucky (1832) e Presiding Bishop; sagrante principal de Thomas Underwood Dudley e Henry Codman
+  Potter.
+sources:
+- source: perry-1895
+  quote: RIGHT REVEREND BENJAMIN BOSWORTH SMITH, D.D., LL.D.
+- source: wikidata-api-2
+  quote: '"Q4889238": enwiki "Benjamin B. Smith"'
+ordinations:
+- order: episcopate
+  date: '1832-10-31'
+  place: St. Paul's Chapel, Nova York
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: william-white
+  co_consecrators:
+  - henry-u-onderdonk
+  - thomas-church-brownell
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      was consecrated bishop of the diocese in St. Paul's Chapel, New York, Oct. 31, 1832, by Bishops White, Brownell,
+      and H. U. Onderdonk.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Benjamin B. Smith]] | [[William White (Bishop of Pennsylvania)|2]] [[Thomas Church Brownell|19]] [[Henry
+      U. Onderdonk|21]] | 1832
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-kentucky
+  start: '1832-10-31'
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: was consecrated bishop of the diocese in St. Paul's Chapel, New York, Oct. 31, 1832
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

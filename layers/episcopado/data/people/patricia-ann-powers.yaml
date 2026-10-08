@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: patricia-ann-powers
+name: Patricia Ann Powers
+full_name: Patricia Ann Powers
+aliases:
+- Patrícia Powers
+ordinations:
+- order: diaconate
+  date: '1986'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1986 - … Patricia Ann Powers
+    page: '373'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1986'
+  status: contested
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1986 - … Patricia Ann Powers
+    page: '373'
+  - source: kickhofel-1995
+    quote: >-
+      O primeiro bispo missionário de Brasília foi substituído pelo rev. Almir dos Santos, eleito pelo Sínodo de
+      1988, numa votação por ordens que foi interrompida por falta de consenso que perdurou por três escrutínios,
+      só sendo eleito na quarta votação, depois de disputar o cargo com a reverenda Patrícia Powers, uma missionária
+      americana que trabalhava no Brasil desde 1979.
+    page: '307'
+  notes: >-
+    Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato. Missionária americana
+    no Brasil desde 1979.
+  discrepancies:
+  - field: start
+    value: '1979'
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        O primeiro bispo missionário de Brasília foi substituído pelo rev. Almir dos Santos, eleito pelo Sínodo
+        de 1988, numa votação por ordens que foi interrompida por falta de consenso que perdurou por três escrutínios,
+        só sendo eleito na quarta votação, depois de disputar o cargo com a reverenda Patrícia Powers, uma missionária
+        americana que trabalhava no Brasil desde 1979.
+      page: '307'
+events:
+- type: other
+  date: '1988'
+  description: Disputou com Almir dos Santos a eleição do bispo missionário de Brasília no Sínodo de 1988
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      O primeiro bispo missionário de Brasília foi substituído pelo rev. Almir dos Santos, eleito pelo Sínodo de
+      1988, numa votação por ordens que foi interrompida por falta de consenso que perdurou por três escrutínios,
+      só sendo eleito na quarta votação, depois de disputar o cargo com a reverenda Patrícia Powers, uma missionária
+      americana que trabalhava no Brasil desde 1979.
+    page: '307'

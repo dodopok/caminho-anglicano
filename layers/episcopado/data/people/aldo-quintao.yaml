@@ -1,0 +1,109 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: aldo-quintao
+name: Aldo Quintão
+aliases:
+- reverendo Aldo
+birth:
+  date: '1962'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Aldo Quintão nasceu em Brasília, em 1962, e entrou para o seminário carmelita da
+    page: '92'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Tornou-se deão da Catedral Anglicana de São Paulo quando da eleição do bispo Roger Douglas Bird, em 2009.
+    page: '92'
+biography: Bispo/clérigo ligado à jurisdição MAnB; ver afirmações.
+sources:
+- source: costa-2021-tese
+  quote: a Catedral Anglicana de São Paulo continua sendo liderada pelo seu deão, o reverendo Aldo
+affiliations:
+- jurisdiction: ieab-dasp
+  role: clergy
+  start: '1998'
+  end: '2013'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Depois de fazer um curso no Canadá, assumiu o cargo de pároco da igreja da Zona Sul em 1998. Quinze anos depois,
+      rompeu com a Igreja Episcopal Anglicana do Brasil
+    page: '94'
+  notes: Citação da Veja São Paulo (01/06/2017) reproduzida no livro.
+- jurisdiction: ieab-dasp
+  role: other
+  role_description: deao
+  start: '2009'
+  end: '2013-04-06'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Tornou-se deão da Catedral Anglicana de São Paulo quando da eleição do bispo Roger Douglas Bird, em 2009.
+    page: '92'
+  notes: >-
+    O livro data a posse como deão da eleição de Roger Bird 'em 2009' (a nota 32 dá a eleição de Bird em 2007).
+- jurisdiction: manb
+  role: clergy
+  start: '2013'
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: a Catedral Anglicana de São Paulo continua sendo liderada pelo seu deão, o reverendo Aldo
+- jurisdiction: casp
+  role: other
+  role_description: deao
+  start: '2013'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: a Catedral Anglicana de São Paulo continua sendo liderada pelo seu deão, o reverendo Aldo.
+    page: '96'
+- jurisdiction: manb
+  role: founder
+  start: '2013-03-13'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Assim, a comunidade, junto com o reverendo Aldo Quintão e os bispos Roger Douglas Bird – então diocesano –
+      e Glauco Soares de Lima – emérito da DASP –, se desligaram formalmente da Igreja Episcopal Anglicana do Brasil.
+    page: '93'
+events:
+- type: other
+  date: '2013'
+  description: >-
+    47º Concílio da Diocese Anglicana de São Paulo (2013): Flávio Augusto Borges Irala eleito sexto bispo diocesano
+    (19 a 18 votos na ordem leiga e 15 a 13 na clerical) contra Francisco Cézar Fernandes Alves (apoiado pela Catedral);
+    o bispo Roger Douglas Bird considerou a eleição irregular e declarou o cancelamento do Concílio.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A comunidade da Catedral – liderada pelo reverendo Aldo Quintão –, apoiava a candidatura do reverendo Francisco
+      Cézar Fernandes Alves, e os demais delegados conciliares, a candidatura do reverendo Flávio Augusto Borges
+      Irala.
+    page: '93'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a eleição foi considera irregular pelo bispo Roger Douglas Bird 30, declarando o cancelamento do Concílio.
+    page: '93'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Durante o 47º Concílio da DASP o reverendo Flávio Irala foi eleito bispo desta diocese por 19 a 18 votos na
+      ordem leiga e 15 a 13 votos na ordem clerical.
+    page: '93'
+- type: other
+  date: '2023-02-13'
+  description: >-
+    Falecimento do bispo Roger Douglas Bird; em 17/02/2024 uma nova creche da rede administrada por Aldo Quintão
+    recebeu seu nome.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 13 de fevereiro de 2023 o bispo Roger Bird faleceu.32 Em 17 de Fevereiro de 2024, foi inaugurada uma nova
+      creche
+    page: '96'

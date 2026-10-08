@@ -1,0 +1,114 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: douglas-araujo
+name: Douglas de Araujo Silva
+full_name: Douglas de Araujo Silva
+aliases:
+- Douglas Araujo
+- Douglas Araújo
+biography: >-
+  Reverendo da Rede Episcopal Brasileira, presidente da sua Comissão de Liturgia (o livro o chama 'Douglas Araújo').
+sources:
+- source: cant-novas-igrejas-2024
+  quote: reverendo Douglas Araújo, está trabalhando na edição própria do LOC da REB
+  page: '151'
+ordinations:
+- order: diaconate
+  date: '2025-03-09'
+  jurisdiction: reb
+  ordained_by: eric-rodrigues
+  status: probable
+  sources:
+  - source: ig-anglicanaporto-2025-03-10-diaconato-1
+    quote: 09 de março de 2025, o dia em que nossos pastores foram ordenados ao diaconato.
+  - source: ig-anglicanaporto-2025-03-10-diaconato-2
+    quote: 09 de março de 2025, o dia em que nossos pastores foram ordenados ao diaconato.
+  - source: testemunho-mantenedor-2026-10-07-reb
+    quote: Foi ordenado Douglas de Araujo Silva e Cynthia Muniz Soares, pelo bispo Eric Rodrigues, da REB
+  - source: reb-calendario-2026
+    quote: 09/03/2025 – Aniversário de Ordenação • Rev. Douglas
+  notes: >-
+    Os posts da Igreja Anglicana Porto citam o perfil @rev_douglasaraujo; a identificação com 'Douglas Araújo' do
+    post da REB é inferência editorial. Jurisdição e bispo ordenante não informados. Bispo ordenante informado por
+    testemunho do mantenedor do projeto (a mensagem não distingue diaconato e presbiterato; a REB tinha um único
+    bispo).
+- order: presbyterate
+  date: 2025-10
+  jurisdiction: reb
+  ordained_by: eric-rodrigues
+  status: confirmed
+  sources:
+  - source: ig-reb-2025-10-25-presbiteros
+    quote: celebramos as ordenações presbiterais realizadas em nosso Sínodo Diocesano.
+  - source: ig-reb-2025-10-25-presbiteros
+    quote: "Dêmos graças aos novos presbíteros da Rede Episcopal Brasileira. \n\n- Reverendo Douglas Araújo (SP)\n\
+      - Reverenda Cynthia Soares (SP)\n- Reverendo Elias Valentim (ES)\n- Reverenda Joyce Baiense (ES)"
+  - source: testemunho-mantenedor-2026-10-07-reb
+    quote: Foi ordenado Douglas de Araujo Silva e Cynthia Muniz Soares, pelo bispo Eric Rodrigues, da REB
+  notes: >-
+    O post não nomeia o bispo ordenante. Data = mês do Sínodo Diocesano (post de 25/10/2025). Bispo ordenante informado
+    por testemunho do mantenedor do projeto (a mensagem não distingue diaconato e presbiterato; a REB tinha um único
+    bispo).
+affiliations:
+- jurisdiction: reb
+  role: clergy
+  start: 2024-12
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Seus clérigos têm um perfil jovem e boa formação teológica, a exemplo dos reverendos Jaime Sepulcro Jr., Douglas
+      Araújo e Cynthia Muniz.
+    page: '151'
+- jurisdiction: reb
+  role: other
+  role_description: postulante
+  start: '2024-12-20'
+  status: confirmed
+  sources:
+  - source: reb-portaria-01-2024
+    quote: Douglas de Araujo Silva
+  notes: >-
+    Postulante em 20/12/2024; em 2026 a página "Estrutura" da REB já o(a) lista entre os clérigos (Rev./Revda.)
+    — ordenação 2025–2026 pelo bispo Eric Rodrigues provável, mas sem notícia/data encontrada.
+- jurisdiction: reb
+  role: priest
+  start: 2025-10
+  status: confirmed
+  sources:
+  - source: ig-reb-2025-10-25-presbiteros
+    quote: "Dêmos graças aos novos presbíteros da Rede Episcopal Brasileira. \n\n- Reverendo Douglas Araújo (SP)\n\
+      - Reverenda Cynthia Soares (SP)\n- Reverendo Elias Valentim (ES)\n- Reverenda Joyce Baiense (ES)"
+  - source: reb-calendario-2026
+    quote: "Presbíteros \nElias Valentim Nunes\nDouglas de Araujo Silva\nJoyce Karolina Ribeiro Baiense\nCynthia\
+      \ Muniz\nReinaldo De Souza Pinto\nElionai lisboa de aguiar Rodrigues\nCícero Miranda Pontara"
+  notes: >-
+    Listado com a UF SP. Presbítero(a) na lista do clero do Calendário REB 2026. Consta na lista do clero do Calendário
+    REB 2026.
+- jurisdiction: iab
+  role: other
+  role_description: aspirante
+  end: 2024-12
+  end_reason: left
+  status: probable
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-douglas-iab
+    quote: Douglas foi aspirante e postulante na IAB
+  - source: testemunho-mantenedor-2026-10-08-douglas-cynthia
+    quote: >-
+      Sobre Douglas Araujo e Cynthia Muniz, existem um só, eram da IAB, saíram no fim de 2024 e foram ordenados
+      na REB em 2025
+  notes: Saiu da IAB no fim de 2024, com a formação da REB; datas de início não informadas.
+- jurisdiction: iab
+  role: other
+  role_description: postulante
+  end: 2024-12
+  end_reason: left
+  status: probable
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-douglas-iab
+    quote: Douglas foi aspirante e postulante na IAB
+  - source: testemunho-mantenedor-2026-10-08-douglas-cynthia
+    quote: >-
+      Sobre Douglas Araujo e Cynthia Muniz, existem um só, eram da IAB, saíram no fim de 2024 e foram ordenados
+      na REB em 2025
+  notes: Saiu da IAB no fim de 2024, com a formação da REB; datas de início não informadas.

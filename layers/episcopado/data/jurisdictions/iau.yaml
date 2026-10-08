@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iau
+acronym: IAU
+name: Igreja Anglicana Unida – Província da América do Sul
+type: province
+country: BR
+website: https://sites.google.com/view/igreja-anglicana-unida
+description: >-
+  Jurisdição anglicana independente e progressista (ordena mulheres e pessoas LGBTQIA+), com Sínodo do Brasil (Ribeirão
+  Preto/SP, Presidente Prudente, Franca) e Sínodo do Chile; bispo moderador Virgílio Cezar Henrique Pereira Torres.
+  Vinculada à Free Protestant Episcopal Church of England (FPEC), cujo Arcebispo Primus é o brasileiro Ricardo Lorite
+  de Lima. O Sínodo do Brasil parece ter usado antes o nome "Igreja Episcopal Protestante".
+sources:
+- source: iau-clero
+  quote: Bispo Moderador da IGREJA ANGLICANA UNIDA - PROVÍNCIA DA AMÉRICA DO SUL e Bispo do Sínodo do Brasil
+- source: iau-faq
+  quote: Ordenamos mulheres e LGBTQUIA+ em todos os níveis de nossos ministérios.
+- source: iau-historia
+  quote: A Igreja Anglicana Unida (IAU) é uma jurisdição episcopal de tradição anglicana
+relations:
+- type: member_of
+  target: fpec
+  date: null
+  led_by:
+  - ricardo-lorite-de-lima
+  - virgilio-cezar-henrique-pereira-torres
+  status: probable
+  sources:
+  - source: iau-clero
+    quote: Arcebispo Primus da The Free Episcopal Protestante Church in England - Worldwide Communion
+  notes: >-
+    O site da IAU lista o Primus da FPEC entre seus bispos; snippet de busca do artigo "Anglicanos da Alta igreja"
+    do mesmo site diz: "A 'Free Protestant Episcopal Church of England' - Comunhão a que a 'Igreja Anglicana Unida
+    - Província da América do Sul' está vinculada".
+- type: part_of
+  target: fpec
+  date: null
+  status: probable
+  sources:
+  - source: ig-iau-2025-12-18
+    quote: >-
+      A Igreja Anglicana Unida (IAU) é a Província Sul-Americana da The Free Episcopal Protestant Church of England
+      (FPEC). Com 128 anos de história contínua, cujo o líder éo Arcebispo Primaz, Revmo. Dom Ricardo Lorite de
+      Lima. A IAU tem como Bispo moderador o Revmo. Dom Virgílio Cezar Henrique Pereira Torres.
+  notes: >-
+    A IAU se apresenta como Província Sul-Americana da FPEC, com sedes em Ribeirão Preto (Brasil) e Concepción (Chile).

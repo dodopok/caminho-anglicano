@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: randolph-austin-adler
+name: Randolph Austin Adler
+full_name: Randolph Austin Adler
+aliases:
+- Austin Randolph Adler
+- Patriarca Randolph Adler
+- Randolph Adler
+- Randy Adler
+wikidata: Q4823251
+biography: >-
+  Primeiro bispo e primaz da Charismatic Episcopal Church (sagrado 26/6/1992), patriarca da ICCEC (1996-2007); sagrante
+  principal de Paulo Garcia (2003) e de Ximenes e Bastos (2007). Aposentou-se em out/2007 e morreu em dez/2016 (segundo
+  a Wikipédia).
+sources:
+- source: ptwiki-iecb
+  quote: o qual foi sagrado o seu primeiro Bispo, pelo então Patriarca Randolph Austin Adler
+- source: enwiki-iccec-bispos
+  quote: On 26 June 1992, Austin Randolph Adler was consecrated the first bishop and primate of the CEC
+ordinations:
+- order: episcopate
+  date: '1992-06-26'
+  jurisdiction: iccec
+  office: primate
+  principal_consecrator: timothy-michael-barker
+  status: probable
+  sources:
+  - source: enwiki-iccec-bispos
+    quote: >-
+      On 26 June 1992, Austin Randolph Adler was consecrated the first bishop and primate of the CEC with Timothy
+      Michael Barker of the International Free Catholic Communion (who was consecrated by Archbishop-Patriarch Herman
+      Adrian Spruit) functioning as the principal consecrator.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 26 de junho de 1992 Randolph Adler foi consagrado o primeiro bispo e primaz da Igreja Episcopal Carismática,
+      pela imposição de mãos de Timothy Michael Barker, arcebispo da Comunhão Católica Internacional Livre.
+    page: '44'
+  notes: >-
+    Sucessão declarada inicialmente pela International Free Catholic Communion (linha de Herman Adrian Spruit);
+    em 1997 a ICCEC recebeu sucessão da ICAB (Carlos Duarte Costa).
+affiliations:
+- jurisdiction: iccec
+  role: primate
+  start: '1992-06-26'
+  end: '2007'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      Com a aposentadoria de Adler, em 2007, a liderança da Comunhão Internacional da Igreja Episcopal Carismática
+      passou para as mãos do bispo Craig W. Bates
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 26 de junho de 1992 Randolph Adler foi consagrado o primeiro bispo e primaz da Igreja Episcopal Carismática
+    page: '44'
+  notes: >-
+    Patriarca desde 1997 segundo Costa; 1996 segundo a Wikipédia EN. Instituído primeiro Patriarca em 1997.
+- jurisdiction: iccec
+  role: other
+  role_description: patriarca
+  start: '1997'
+  end: '2007'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: instituindo, em 1997, Adler como o seu primeiro Patriarca.
+    page: '44'
+events:
+- type: other
+  date: '1997'
+  description: >-
+    A ICCEC determina a reordenação de todos os seus clérigos por acordo bilateral com bispos da ICAB (nova linha
+    de sucessão apostólica), para afastar-se das posições de Timothy Michael Barker; o acordo logo foi quebrado
+    pela ICCEC.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Comunhão Episcopal Carismática determinou a reordenação de todos os seus clérigos, através de um acordo
+      bilateral com os bispos da Igreja Católica Apostólica Brasileira, estabelecendo uma nova linha de sucessão
+      apostólica a partir da ICAB
+    page: '44'
+  - source: cant-novas-igrejas-2024
+    quote: Porém, este acordo logo foi quebrado por parte da ICCEC.
+    page: '44'

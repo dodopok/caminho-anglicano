@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: meriglei-borges-silva-simim
+name: Meriglei Borges Silva Simim
+full_name: Meriglei Borges Silva Simim
+aliases:
+- Bispa Meriglei Simim
+- Mariglei Borges Silva Simin
+- Meriglei Borges
+- Meriglei Borges Simin da Silva
+- Meriglei Borges da Silva Simim
+birth:
+  date: '1967-06-29'
+  sources:
+  - source: costa2021
+    quote: Meriglei Borges Silva Simin nasceu em 29 de junho de 1967, na cidade de Canguçu (RS).
+biography: Segunda bispa da IEAB; bispa de Pelotas (2020-).
+sources:
+- source: costa2021
+  quote: Meriglei Borges Silva Simin nasceu em 29 de junho de 1967, na cidade de Canguçu (RS).
+ordinations:
+- order: diaconate
+  date: '1995'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1995 - … Meriglei Borges
+    page: '374'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: episcopate
+  date: '2019-11-17'
+  place: Ginásio do Esporte Clube Cruzeiro, Canguçu (RS)
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: naudal-gomes
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Meriglei foi sagrada pelo Bispo Primaz, Naudal Gomes, em 17 de novembro de 2019, na sua cidade natal, Canguçu.
+  - source: ieab-magda-sagrada
+    quote: >-
+      Isso permitiu que outra mulher, a reverenda Mariglei Borges Silva Simin, fosse sagrada bispa na Diocese Anglicana
+      de Pelotas, em 2019.
+  - source: cant-temas-anglicanismo-2024
+    quote: >-
+      Meriglei foi sagrada pelo Bispo Primaz, Naudal Gomes, em sua cidade natal, Canguçu, no dia 17 de novembro
+      de 2019.
+  - source: cant-identidades-numeros-2024
+    quote: >-
+      Devido às proporções do acontecimento, a cerimônia ocorreu no Ginásio do Esporte Clube Cruzeiro. Meriglei
+      foi sagrada pelo Bispo Primaz, Naudal Alves Gomes
+  notes: >-
+    Eleita em 27/04/2019; posse em 14/03/2020. Grafias: Simim / Simin / Mariglei. Confirma o sagrante da Wikipedia
+    PT por fonte autoral (Costa).
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dap
+  start: '2020-03-14'
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: A posse como a nova diocesana de Pelotas aconteceu em 14 de março de 2020, na Catedral do Redentor.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revma. Meriglei Borges Silva Simin

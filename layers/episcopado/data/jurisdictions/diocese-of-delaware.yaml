@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-delaware
+name: Diocese of Delaware
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: He was consecrated bishop of Delaware
+  - source: perry-1895
+    quote: He died at Wilmington, April 12, 1887

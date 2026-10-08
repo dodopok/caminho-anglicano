@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: mark-simpson
+name: Mark Simpson
+aliases:
+- reverendo Mark
+biography: >-
+  Capelão da Christ Church Rio, então membro da DARJ; em 2016 comunicou a saída da Paróquia São Lucas do templo.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: o reverendo Mark Simpson (que era membro da DARJ)
+  page: '99'
+affiliations:
+- jurisdiction: ieab-darj
+  role: clergy
+  end: '2016'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o reverendo Mark Simpson (que era membro da DARJ)
+    page: '99'
+- jurisdiction: ccr
+  role: other
+  role_description: capelao
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Diferente do perfil de Aldo Quintão, o reverendo Mark está voltado para o modelo de Igreja Worship
+    page: '99'
+  notes: Capelão por volta de 2016.

@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieach
+acronym: IEACH
+name: Igreja Episcopal Anglicana do Chile
+aliases:
+- Iglesia Episcopal Anglicana de Chile
+type: national_church
+country: CL
+founded:
+  date: '2006'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2006, a IEACH obteve sua autonomia como uma Igreja Nacional, elegendo como seu primeiro arcebispo, Patricio
+      Viveros Robles.
+    page: '123'
+website: https://www.igrejaanglicanaepiscopal.com/
+description: >-
+  Igreja anglo-católica independente originada de comunidades chilenas que desde 1991 buscavam supervisão episcopal;
+  acolhida pela Província Anglicana de Cristo Bom Pastor (EUA); autônoma como Igreja Nacional em 2006, com Patricio
+  Viveros Robles como primeiro arcebispo; dioceses no Chile, Filipinas, Peru, Europa, Colômbia e Brasil.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Em 2006, a IEACH obteve sua autonomia como uma Igreja Nacional, elegendo como seu primeiro arcebispo, Patricio
+    Viveros Robles.
+  page: '123'
+relations:
+- type: part_of
+  target: pacbp
+  date: null
+  end: '2006'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Posteriormente, a Província Anglicana de Cristo Bom Pastor, com sede nos Estados Unidos, acolheu essas comunidades
+      e conferiu existência canônica à nova igreja.
+    page: '123'
+  notes: Até a autonomia como Igreja Nacional em 2006.

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: joao-victorino-fernandes-fortes
+name: João Victorino Fernandes Fortes
+full_name: João Victorino Fernandes Fortes
+ordinations:
+- order: diaconate
+  date: '1966'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1966 - … João Victorino Fernandes Fortes
+    page: '371'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1966'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1966 - … João Victorino Fernandes Fortes
+    page: '371'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

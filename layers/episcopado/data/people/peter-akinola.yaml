@@ -1,0 +1,122 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: peter-akinola
+name: Peter Akinola
+full_name: Peter Jasper Akinola
+aliases:
+- Peter J. Akinnola
+- Peter J. Akinola
+- Peter Jasper Akinola
+birth:
+  date: '1944-01-27'
+  sources:
+  - source: wp-akinola
+    quote: >-
+      He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later,
+      at the inauguration of the new Diocese of Abuja on 26 November 1989.
+  - source: wikidata-api
+    quote: 'Q1754450 Peter Akinola {''enwiki'': ''Peter Akinola'', ''ptwiki'': ''Peter Akinola''}'
+  - source: kwashang-2006
+    quote: Peter J. Akinnola (Canon) was consecrated and was enthroned the
+wikidata: Q1754450
+biography: Primeiro bispo de Abuja (1989), arcebispo e primaz da Igreja da Nigéria (2000–2010).
+sources:
+- source: wp-akinola
+  quote: >-
+    He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later, at
+    the inauguration of the new Diocese of Abuja on 26 November 1989.
+ordinations:
+- order: episcopate
+  date: '1989-11-16'
+  jurisdiction: church-of-nigeria
+  office: diocesan
+  principal_consecrator: joseph-adetiloye
+  status: contested
+  sources:
+  - source: kwashang-2006
+    quote: >-
+      November 1989 Peter J. Akinnola (Canon) was consecrated and was enthroned the bishop of the Abuja diocese
+      during the inaugural service ofthe diocese on 26
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      164d. Joseph Abiodun Adetiloye (1970-1999) que consagrou Peter Jasper Akinola como bispo da Diocese de Abuja,
+      da Província de Abuja.
+  - source: ia-transformation-2014-04
+    quote: >-
+      It was not until 1989 that the missioner, Canon Peter J. Akinola, was elected and consecrated bishop of the
+      diocese of Abuja when the area
+  - source: wp-akinola
+    quote: >-
+      He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later,
+      at the inauguration of the new Diocese of Abuja on 26 November 1989.
+  discrepancies:
+  - field: office
+    value: missionary
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        164d. Joseph Abiodun Adetiloye (1970-1999) que consagrou Peter Jasper Akinola como bispo da Diocese de Abuja,
+        da Província de Abuja.
+    - source: ia-transformation-2014-04
+      quote: >-
+        It was not until 1989 that the missioner, Canon Peter J. Akinola, was elected and consecrated bishop of
+        the diocese of Abuja when the area
+    - source: wp-akinola
+      quote: >-
+        He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later,
+        at the inauguration of the new Diocese of Abuja on 26 November 1989.
+  - field: jurisdiction
+    value: con
+    sources:
+    - source: ia-transformation-2014-04
+      quote: >-
+        It was not until 1989 that the missioner, Canon Peter J. Akinola, was elected and consecrated bishop of
+        the diocese of Abuja when the area
+    - source: wp-akinola
+      quote: >-
+        He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later,
+        at the inauguration of the new Diocese of Abuja on 26 November 1989.
+  notes: >-
+    Data com fonte secundária acadêmica que se apoia em documento primário (carta sinodal de Ogbonyomi, 1990); a
+    Wikipédia repete a mesma data. Sagrante não nomeado em nenhuma fonte aberta. Adetiloye era o primaz da Nigéria
+    em 1989, o que torna plausível o pôster da IAB (Adetiloye -> Akinola), mas não comprovado. Ano inferido do pôster
+    (1989-2010); verificar. Só confirma o ano (1989) e a diocese (Abuja). Sagrante principal continua NÃO encontrado.
+    Pela praxe seria o arcebispo da Nigéria, Joseph Adetiloye (o ENS de 26/04/1990 mostra Adetiloye sagrando bispos
+    em Abuja), mas nenhuma fonte o diz. Pôster: Adetiloye "consagrou Peter Jasper Akinola como bispo da Diocese
+    de Abuja" — data (16/11/1989) e sé confirmadas pela Wikipédia (que cita a tese de S. G. Kwashang, 2006, p. 35,
+    não acessível daqui); SAGRANTE NÃO ENCONTRADO em fonte. Adetiloye era o primaz da Nigéria em 1989, o que torna
+    o pôster plausível.
+affiliations:
+- jurisdiction: church-of-nigeria
+  role: diocesan_bishop
+  diocese: abuja
+  start: '1989-11-26'
+  status: confirmed
+  sources:
+  - source: kwashang-2006
+    quote: >-
+      November 1989 Peter J. Akinnola (Canon) was consecrated and was enthroned the bishop of the Abuja diocese
+      during the inaugural service ofthe diocese on 26
+  - source: ens-90114
+    quote: >-
+      Abuja, the site of the consecrations, is itself a new missionary diocese created last year. Abuja's bishop,
+      the Right Rev. Peter Akinola
+  notes: >-
+    Kwashang (2006, p. 35, citando a carta do bispo Ogbonyomi ao sínodo de Kaduna de 1990) é a fonte que a Wikipédia
+    cita: sagração em 16/11/1989 e entronização em 26/11/1989. NENHUMA das duas fontes nomeia o sagrante de Akinola.
+    O ENS de 1990 mostra Adetiloye, como arcebispo da Nigéria, sagrando bispos em Abuja em abril de 1990 (contexto;
+    não é prova para 1989).
+events:
+- type: other
+  date: '2006'
+  description: >-
+    Após a sagração de 2006, os novos bispos da Igreja Anglicana do Brasil receberam cartas do arcebispo Peter Akinola
+    (Nigéria), do bispo Robinson Cavalcanti (Diocese do Recife, então ligada ao Cone Sul) e do arcebispo Frank Retief,
+    entre outros.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      os novos bispos receberam cartas do arcebispo Peter Akinola (Primaz da Igreja Anglicana da Nigéria), do bispo
+      Robinson Cavalcanti (Diocese do Recife, então ligada à Igreja do Cone Sul), do arcebispo Frank Retief (Igreja
+      da Inglaterra na África do Sul) e muitos outros.
+    page: '118'

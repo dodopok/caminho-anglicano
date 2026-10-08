@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-centro-oeste
+name: Diocese Centro Oeste
+type: diocese
+relations:
+- type: part_of
+  target: ica
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Centro Oeste, com o bispo Orvandil
+    page: '138'

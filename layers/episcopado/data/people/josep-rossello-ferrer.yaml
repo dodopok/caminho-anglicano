@@ -1,0 +1,197 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: josep-rossello-ferrer
+name: Josep Rosselló Ferrer
+full_name: Josep Miquel Rosselló Ferrer
+aliases:
+- +Josep
+- Bp Josep Rossello
+- Dom Josep Rossello
+- Josep Miquel Rosselló Ferrer
+- Josep Rosello
+- Josep Rossello
+- Josep Rosselo
+- Joseph Rosselo
+- Rt Rev Josep M Rossello-Ferrer
+- bispo Josep Rosselo
+biography: >-
+  Bispo espanhol (natural de Benissa) que serviu 12 anos no Brasil, supervisionando a IARB e depois a Diocese da
+  América do Sul da FCE; primaz eleito da IARB em 2012; depois Servant General da NAMS (2023) e ligado à Anglican
+  Convocation in Europe (2025). Segundo Costa (2021), começou na IERE (Igreja Espanhola Reformada Episcopal, Comunhão
+  Anglicana) e foi sagrado bispo missionário na 'Igreja Evangélica Episcopal' (aparentemente o ambiente CEEC/EEC);
+  a FCE o sagrou (de novo) em 28/9/2014.
+sources:
+- source: ai-2021-fce-withdraw
+  quote: >-
+    the Rt Rev Josep M Rossello-Ferrer, that has served the diocese faithfully and sacrificially for twelve years.
+- source: ai-2025-rossello-ace
+  quote: >-
+    having served for 12 years in Brazil where they planted a diocese that began with 2 couples and grew to include
+    28 churches and missions in Brazil and Venezuela
+- source: costa-2021-tese
+  quote: >-
+    Posteriormente saiu da IERE, filiandose à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
+ordinations:
+- order: episcopate
+  date: '2014-09-28'
+  jurisdiction: ieve
+  office: missionary
+  principal_consecrator: john-fenwick
+  co_consecrators:
+  - gerhard-meyer
+  - paul-nigel-hunt
+  status: contested
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: filiando-se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário
+    page: '133'
+  - source: costa-2021-tese
+    quote: >-
+      Posteriormente saiu da IERE, filiandose à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
+  - source: enwiki-rec-bispos
+    quote: >-
+      |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
+      Diocese|South America]]||
+  discrepancies:
+  - field: jurisdiction
+    value: ceec
+    sources:
+    - source: costa-2021-tese
+      quote: >-
+        Posteriormente saiu da IERE, filiandose à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
+    - source: enwiki-rec-bispos
+      quote: >-
+        |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
+        Diocese|South America]]||
+  - field: jurisdiction
+    value: fce
+    sources:
+    - source: enwiki-rec-bispos
+      quote: >-
+        |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
+        Diocese|South America]]||
+  notes: >-
+    O livro não informa data nem sagrantes. Data não informada; o site da CICEB já o chama 'Bispo Joseph Rosselo'
+    em jan/2004, o que sugere sagração até 2004. 'Igreja Evangélica Episcopal' é o nome que Costa e Cavalcanti também
+    usam para a comunhão à qual Leonides se filiou (CEEC), mas a identidade exata não está estabelecida. Na lista,
+    nº 68 = John R. K. Fenwick (Bishop Primus da FCE), 67 = Paul Nigel Hunt (FCE), 69 = Gerhard Meyer (REC, Alemanha).
+    A ordem dos números sugere Fenwick como principal, sem confirmação. A fonte citada pela Wikipédia é o Journal
+    do 55º Conselho Geral da REC (2017), não consultado. Há sagração anterior na 'Igreja Evangélica Episcopal' (Costa
+    2021); a de 2014 seria ressagração ou sagração sub conditione, mas nenhuma fonte usa esse termo.
+affiliations:
+- jurisdiction: iarb
+  role: primate
+  start: 2012-04
+  end: 2021-05
+  end_reason: resignation
+  status: contested
+  sources:
+  - source: ptwiki-iarb
+    quote: sendo eleito assim Josep Rossello, como o novo bispo primaz da IARB.
+  - source: christiantoday-2014-fce
+    quote: The Right Reverend Josep Rossello, the bishop overseeing the IARB
+  - source: costa-2021-tese
+    quote: Em abril de 2012, o bispo missionário Josep Rossello foi eleito como o novo bispo da instituição.
+  - source: costa-2021-tese
+    quote: permanecendo no cargo até maio de 2021, quando apresentou a sua renúncia como bispo e membro da FCE.
+  - source: cant-novas-igrejas-2024
+    quote: Josep Rossello tornou-se seu Bispo Primaz, permanecendo no cargo
+    page: '133'
+  - source: cant-novas-igrejas-2024
+    quote: até maio de 2021, quando apresentou a sua renúncia como bispo e membro da FCE.
+    page: '134'
+  notes: >-
+    Data e sagrantes de sua sagração episcopal não encontrados; o site da CICEB já o chama de 'Bispo' em jan/2004.
+    Após 2021 seguiu em outros ministérios (NAMS, Inglaterra, Espanha).
+  discrepancies:
+  - field: start
+    value: 2014-02
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: Josep Rossello tornou-se seu Bispo Primaz, permanecendo no cargo
+      page: '133'
+    - source: cant-novas-igrejas-2024
+      quote: até maio de 2021, quando apresentou a sua renúncia como bispo e membro da FCE.
+      page: '134'
+- jurisdiction: iarb
+  role: bishop
+  start: 2012-04
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Em abril de 2012, o bispo missionário Josep Rossello foi eleito como o novo bispo da instituição.
+    page: '133'
+- jurisdiction: fce
+  role: bishop
+  diocese: diocese-da-america-do-sul
+  start: '2014'
+  end: 2021-05
+  status: probable
+  sources:
+  - source: ai-2021-fce-withdraw
+    quote: Our prayers and support go to our beloved brother and bishop, the Rt Rev Josep M Rossello-Ferrer
+  notes: >-
+    Local: South American Diocese. O comunicado diz que Fenwick passou a ser 'nosso novo bispo' pouco antes da saída,
+    indicando que Rosselló deixou a função em 2021.
+- jurisdiction: fce
+  role: bishop
+  start: 2014-02
+  end: 2021-05
+  end_reason: resignation
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: até maio de 2021, quando apresentou a sua renúncia como bispo e membro da FCE.
+    page: '134'
+- jurisdiction: iere
+  role: clergy
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Posteriormente saiu da IERE, filiando-se à Igreja Evangélica Episcopal
+    page: '133'
+events:
+- type: other
+  date: 2004-01
+  description: >-
+    Visita do bispo 'Joseph Rosselo' à Paróquia Betânia em janeiro de 2004 para confirmações e ordenações
+  status: probable
+  sources:
+  - source: ciceb-quemsomos
+    quote: >-
+      Em janeiro de 2004 a Betânia recebeu o Bispo Joseph Rosselo, para a realização das confirmações e ordenações.
+- type: other
+  date: '2021-05-05'
+  description: >-
+    Sínodo extraordinário da Diocese da América do Sul da FCE (IARB) aprova por unanimidade deixar a Free Church
+    of England
+  status: confirmed
+  sources:
+  - source: ai-2021-fce-withdraw
+    quote: >-
+      the Synod of the Diocese of South America unanimously approved a motion and resolution to leave the Free Church
+      of England.
+- type: other
+  date: 2004-01
+  description: O bispo Joseph Rosselo (Josep Rosselló Ferrer) visita a Betânia para confirmações e ordenações.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em janeiro de 2004 a Betânia recebeu o Bispo Joseph Rosselo, para a realização das confirmações e ordenações.
+    page: '66'
+- type: other
+  date: null
+  description: >-
+    Estabelecimento da missão da Free Church of England no Brasil, com a chegada do bispo Josep Rosselló; extinção
+    da Igreja Episcopal Reformada por falta de comunidades e de clero
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja acabou sendo extinta, por falta de comunidades e de clero, uma vez que, ocorreu o estabelecimento
+      da missão da Free Church of England no Brasil, a partir da chegada do bispo Josep Rosselo no Brasil.
+    page: '168'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Episcopal Reformada [2001] (Extinta em 2009, com a criação da IARB)
+    page: '172'

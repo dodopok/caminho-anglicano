@@ -1,0 +1,122 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab
+acronym: IEAB
+name: Igreja Episcopal Anglicana do Brasil
+aliases:
+- IEB
+- Igreja Episcopal do Brasil / Igreja Episcopal Brasileira (hoje Igreja Episcopal Anglicana do Brasil)
+type: province
+tradition: anglican
+country: BR
+founded:
+  date: '1890'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Episcopal Anglicana do Brasil (IEAB) [1890]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: 19ª Província da Comunhão Anglicana [1965]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Até então a IEAB se chamava Igreja Episcopal do Brasil, nomenclatura que ainda consta em seus Estatutos e
+      Cânones Gerais.
+    page: '165'
+  discrepancies:
+  - field: date
+    value: '1965-04-25'
+    sources:
+    - source: ens-xxvi-24
+      quote: >-
+        In the 1950's the Brazilian Church took the name "Igreja Episcopal Brasileira" (Brazilian Episcopal Church)
+        and, while still under the jurisdiction of the Episcopal Church in the United States, assumed much of the
+        responsibility for its own affairs.
+    - source: ens-41-5
+      quote: >-
+        The Episcopal Church in Brazil is the newest province in the Anglican Communion, having come into existence
+        only last May.
+    - source: ieab-dioceses
+      quote: A IEAB é composta por nove Dioceses e um Distrito Missionário, sendo pastoreadas por bispos.
+locator_slug: ieab
+website: https://www.ieab.org.br
+description: >-
+  Nome adotado nos anos 1950 pela igreja formada pelos três distritos; Conselho Nacional criado em 1950, primeiro
+  Sínodo em 1952; autonomia aprovada pela Convenção Geral da TEC em 1964 e província autônoma (19ª da Comunhão Anglicana)
+  a partir de 1965.
+sources:
+- source: ens-xxvi-24
+  quote: >-
+    In the 1950's the Brazilian Church took the name "Igreja Episcopal Brasileira" (Brazilian Episcopal Church)
+    and, while still under the jurisdiction of the Episcopal Church in the United States, assumed much of the responsibility
+    for its own affairs.
+- source: ens-41-5
+  quote: >-
+    The Episcopal Church in Brazil is the newest province in the Anglican Communion, having come into existence
+    only last May.
+relations:
+- type: successor_of
+  target: dmsb
+  date: '1965'
+  led_by:
+  - egmont-krischke
+  status: confirmed
+  sources:
+  - source: ens-xxvi-8
+    quote: >-
+      voted autonomy for the 45,000 member Brazilian Episcopal Church and, by the same decision, created the 19th
+      independent church in the world-wide Anglican Communion.
+  notes: Os três distritos (Sul, Sudoeste, Central) passaram a formar a igreja autônoma.
+- type: member_of
+  target: anglican-communion
+  date: '1965'
+  status: confirmed
+  sources:
+  - source: ens-41-5
+    quote: >-
+      The Episcopal Church in Brazil is the newest province in the Anglican Communion, having come into existence
+      only last May.
+  - source: wp-en-ieab
+    quote: >-
+      In 1965, the Anglican Episcopal Church of Brazil (Igreja Episcopal Anglicana do Brasil; IEAB) gained its autonomy,
+      becoming the 19th ecclesiastical province of the Anglican Communion
+  - source: wp-en-ieab
+    quote: is the 19th province of the Anglican Communion, covering the country of Brazil.
+  - source: cant-novas-igrejas-2024
+    quote: 19ª Província da Comunhão Anglicana [1965]
+    page: '171'
+  notes: >-
+    Aprovada pela Convenção Geral da TEC em out. 1964; existência como província a partir de maio de 1965 (ENS).
+    Calvani (2005) data a autonomia em 1964. Como 19ª Província.
+- type: in_communion_with
+  target: tec
+  date: '1965'
+  status: probable
+  sources:
+  - source: ens-xxvi-8
+    quote: they were granted seats in the U. S. House of Bishops "whenever they wish to attend" its meetings.
+- type: successor_of
+  target: tec
+  date: '1965-04-25'
+  led_by:
+  - egmont-krischke
+  status: confirmed
+  sources:
+  - source: wp-en-ieab
+    quote: The Anglican community of Brazil was a missionary district of the Episcopal Church until 1965
+  notes: >-
+    Emancipacao do Distrito Missionario (dividido em 3 dioceses desde 1949/1950) da Igreja Episcopal dos EUA.
+- type: broke_communion_with
+  target: iacs
+  date: '2005'
+  led_by:
+  - gregory-venables
+  - orlando-santos-de-oliveira
+  status: probable
+  sources:
+  - source: ens-100705-2-a
+    quote: In his letter, Venables refuses to accept Oliveira's decision
+  - source: ens-040908-04
+    quote: >-
+      is another element of discord caused by the Archbishop of the Province of the Southern Cone since the ecclesiastical
+      court hearing and deposition of Robinson Cavalcanti.
+  notes: Tensao/protesto formal, nao ruptura declarada de comunhao. Usar com cautela.

@@ -1,0 +1,92 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: cristiano-alves
+name: Cristiano Alves
+aliases:
+- dom Cristiano
+- monsenhor Cristiano Alves
+biography: >-
+  Bispo no Rio de Janeiro; sagrado em 2022 por Rafael Moraes e Rafael Mendes; integrou a Província Anglo-Católica
+  da Santíssima Trindade e voltou à IATB a convite de Rui Barbosa; bispo da Diocese Anglo-Católica Cristo Bom Pastor
+  (IATB).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Dom Cristiano Alves, no Rio de Janeiro (RJ)
+  page: '105'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    No Rio de Janeiro, a IATB está representada pelo bispo dom Cristiano Alves, sagrado em 2022, por dom Rafael
+    Moraes e dom Rafael Mendes.
+  page: '136'
+ordinations:
+- order: episcopate
+  date: '2022'
+  jurisdiction: null
+  principal_consecrator: rafael-moraes
+  co_consecrators:
+  - rafael-mendes-martins
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Em 2022, o monsenhor Cristiano Alves também foi sagrado, por dom Rafael Moraes e dom Rafael Mendes.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No Rio de Janeiro, a IATB está representada pelo bispo dom Cristiano Alves, sagrado em 2022, por dom Rafael
+      Moraes e dom Rafael Mendes.
+    page: '136'
+  notes: >-
+    Hoje bispo da Diocese Anglo-Católica Cristo Bom Pastor (IATB), Rio de Janeiro. O livro não distingue o sagrante
+    principal. O livro diz 'por dom Rafael Moraes e dom Rafael Mendes' sem indicar quem foi o sagrante principal;
+    Moraes posto como principal por ser citado primeiro.
+affiliations:
+- jurisdiction: pacst
+  role: bishop
+  start: '2021'
+  end: c.2022
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Dom Cristiano Alves, no Rio de Janeiro (RJ)
+    page: '105'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após a saída de dom Cristiano da Província, este bispo foi convidado por dom Rui Barbosa para retornar para
+      a Igreja Anglicana Tradicional do Brasil (IATB).
+    page: '106'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Esta segunda Província a ser organizada, foi intitulada Província Anglo-Católica da Santíssima Trindade, sendo
+      era formada pelos bispos dom Antônio Bessa (bispo do Ceará) e dom Rafael Moraes (hoje bispo da Província Anglo-Católica
+      da Santíssima Trindade, em Nova Friburgo), dom Cristiano Alves (hoje bispo da Diocese Anglo-Católica Cristo
+      Bom Pastor, no Rio de Janeiro, ligada à Igreja Anglicana Tradicional do Brasil - IATB) e dom Rafael Mendes
+      (hoje bispo da Diocese Anglo-Católica de Minas Gerais, como uma igreja autocéfala local).
+    page: '162'
+  notes: Membro na formação da província; hoje na Diocese Anglo-Católica Cristo Bom Pastor (IATB).
+- jurisdiction: iatb
+  role: diocesan_bishop
+  diocese: dacbp
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      este bispo foi convidado por dom Rui Barbosa para retornar para a Igreja Anglicana Tradicional do Brasil (IATB).
+    page: '106'
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Anglo-Católica Cristo Bom Pastor (Rio de Janeiro), com dom Cristiano Alves
+    page: '136'
+  notes: >-
+    Local: Rio de Janeiro. 'retornar' indica vínculo anterior com a IATB; sede na Paróquia Anglo-Católica Santa
+    Mãe de Deus (RJ).
+- jurisdiction: dacbp
+  role: diocesan_bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Esta segunda Província a ser organizada, foi intitulada Província Anglo-Católica da Santíssima Trindade, sendo
+      era formada pelos bispos dom Antônio Bessa (bispo do Ceará) e dom Rafael Moraes (hoje bispo da Província Anglo-Católica
+      da Santíssima Trindade, em Nova Friburgo), dom Cristiano Alves (hoje bispo da Diocese Anglo-Católica Cristo
+      Bom Pastor, no Rio de Janeiro, ligada à Igreja Anglicana Tradicional do Brasil - IATB) e dom Rafael Mendes
+      (hoje bispo da Diocese Anglo-Católica de Minas Gerais, como uma igreja autocéfala local).
+    page: '162'
+  notes: Situação na data do livro.

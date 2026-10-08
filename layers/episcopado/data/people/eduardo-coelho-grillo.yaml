@@ -1,0 +1,194 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: eduardo-coelho-grillo
+name: Eduardo Coelho Grillo
+full_name: Eduardo Coelho Grillo
+aliases:
+- Dom Eduardo Grillo
+- Eduardo Grillo
+birth:
+  date: '1964-11-19'
+  sources:
+  - source: darj-episcopado
+    quote: >-
+      Eduardo nasceu em Porto Alegre, Rio Grande do Sul, Brasil, em 19 de novembro de 1964, no seio de uma família
+      anglicana
+  - source: costa2021
+    quote: Eduardo Coelho Grillo nasceu em 19 de novembro de 1964, na cidade de Porto Alegre.
+biography: Coadjutor (2017) e bispo da Diocese Anglicana do Rio de Janeiro (2017-).
+sources:
+- source: costa2021
+  quote: Eduardo Coelho Grillo nasceu em 19 de novembro de 1964, na cidade de Porto Alegre.
+ordinations:
+- order: diaconate
+  date: '1989-01-08'
+  place: Porto Alegre
+  jurisdiction: ieab
+  ordained_by: claudio-vinicius-de-senna-gastal
+  status: confirmed
+  sources:
+  - source: darj-episcopado
+    quote: >-
+      Foi ordenado diácono em 08 de janeiro de 1989 (em Porto Alegre) pelo Cláudio Vinicius de Senna Gastal, na
+      Diocese Meridional
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1989 - … Eduardo Coelho Grillo
+    page: '373'
+  notes: >-
+    Diocese Meridional. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995);
+    ordenante não informado.
+- order: presbyterate
+  date: '1989-08-20'
+  place: Pelotas
+  jurisdiction: ieab
+  ordained_by: luiz-osorio-pires-prado
+  status: confirmed
+  sources:
+  - source: darj-episcopado
+    quote: >-
+      Foi ordenado presbítero sete meses depois, em 20 de agosto de 1989, na Diocese Anglicana de Pelotas, pelo
+      Revmo Bispo Luiz Osório Pires Prado.
+  notes: Diocese Anglicana de Pelotas.
+- order: episcopate
+  date: '2017-04-08'
+  place: Catedral do Redentor, Rio de Janeiro
+  jurisdiction: ieab
+  office: coadjutor
+  principal_consecrator: francisco-de-assis-da-silva
+  status: confirmed
+  sources:
+  - source: darj-episcopado
+    quote: >-
+      Eduardo foi eleito bispo coadjutor em 02 de novembro de 2016, pelo Concílio extraordinário da Diocese Anglicana
+      do Rio de Janeiro e, posteriormente, sagrado ao episcopado na IEAB, em 08 de abril de 2017, na Igreja Catedral
+      do Redentor, na Tijuca, cidade do Rio de Janeiro, RJ.
+  - source: costa2021
+    quote: >-
+      Na manhã do dia 08 de abril de 2017, ocorreu a cerimônia de sagração episcopal na Catedral do Redentor, que
+      ficou lotada para a cerimônia, sendo o principal sagrante o Bispo Primaz, Francisco de Assis da Silva, e co-sagrantes
+      os demais bispos da Província.
+  - source: ec-2017-04
+    quote: >-
+      Essa reunião culminou com uma celebração de sagração do novo Bispo Coadjutor do Rio de Janeiro, D. Eduardo
+      Coelho Grillo, na Catedral do Redentor, reali- zada na manhã do dia 08 de abril.
+  notes: >-
+    Eleito bispo coadjutor da DARJ em 02/11/2016; co-sagrantes = "os demais bispos da Provincia" (nao nomeados).
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dap
+  start: '1989'
+  end: '1993'
+  status: confirmed
+  sources:
+  - source: darj-episcopado
+    quote: >-
+      Logo após sua ordenação diaconal, em 1989, foi nomeado ministro encarregado da Paróquia do Divino Semeador,
+      na cidade de Pelotas, por 4 anos.
+  notes: Ministro encarregado da Paróquia do Divino Semeador, Pelotas.
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dm
+  start: '1993'
+  end: '2001'
+  status: confirmed
+  sources:
+  - source: darj-episcopado
+    quote: >-
+      Em 1993, retornou à Diocese Meridional, onde foi Pároco da Paróquia da Ressurreição, em Porto Alegre, RS,
+      por oito anos.
+  notes: Pároco da Paróquia da Ressurreição, Porto Alegre.
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-darj
+  start: 2001-03
+  end: 2017-09
+  status: confirmed
+  sources:
+  - source: darj-episcopado
+    quote: >-
+      Em 2000, recebeu um convite do Bispo Celso Franco de Oliveira para se transferir para a Diocese Anglicana
+      do Rio de Janeiro e substituí-lo como reitor na Paróquia de São Lucas, o que aconteceu de março de 2001 e
+      setembro de 2017.
+  notes: Reitor da Paróquia de São Lucas, sucedendo Celso Franco de Oliveira.
+- jurisdiction: ieab
+  role: coadjutor_bishop
+  diocese: ieab-darj
+  start: '2017-04-08'
+  end: '2017-07-29'
+  status: confirmed
+  sources:
+  - source: darj-episcopado
+    quote: >-
+      Eduardo foi eleito bispo coadjutor em 02 de novembro de 2016, pelo Concílio extraordinário da Diocese Anglicana
+      do Rio de Janeiro e, posteriormente, sagrado ao episcopado na IEAB, em 08 de abril de 2017, na Igreja Catedral
+      do Redentor, na Tijuca, cidade do Rio de Janeiro, RJ.
+  - source: darj-episcopado
+    quote: >-
+      Em 29 de julho de 2017, Eduardo foi instituído bispo diocesano da Diocese Anglicana do Rio de Janeiro, pelo
+      Bispo Primaz da IEAB, à época, o Revmo Francisco de Assis da Silva.
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-darj
+  start: '2017-07-29'
+  status: confirmed
+  sources:
+  - source: darj-episcopado
+    quote: >-
+      Em 29 de julho de 2017, Eduardo foi instituído bispo diocesano da Diocese Anglicana do Rio de Janeiro, pelo
+      Bispo Primaz da IEAB, à época, o Revmo Francisco de Assis da Silva.
+  - source: costa2021
+    quote: Em 29 de julho de 2017, Eduardo foi instituído como o novo diocesano.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. Eduardo Grillo
+  notes: Instituído pelo primaz Francisco de Assis da Silva.
+- jurisdiction: ieab-darj
+  role: other
+  role_description: reitor
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a São Lucas teve como reitores os reverendos Osborn, Custis Fletcher Jr., Gaudêncio Vergara dos Santos, Diamantino
+      Bueno, os cônegos Jorge Macedo e Celso Franco de Oliveira (hoje bispo emérito da DARJ), e os reverendos Eduardo
+      Coelho Grillo (atual bispo diocesano) e Luiz Caetano Grecco Teixeira.
+    page: '100'
+  notes: >-
+    Local: Paróquia São Lucas, Rio de Janeiro. Reitor da Paróquia São Lucas no período de partilha do templo da
+    Christ Church (1955–2016); datas individuais não informadas.
+- jurisdiction: ieab-darj
+  role: diocesan_bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Eduardo Coelho Grillo (atual bispo diocesano)
+    page: '100'
+  - source: cant-novas-igrejas-2024
+    quote: o bispo Eduardo Grillo, da Diocese Anglicana do Rio de Janeiro
+    page: '89'
+  notes: Bispo diocesano em 2021 e na data do livro.
+events:
+- type: other
+  date: '2016-11-02'
+  description: Eleito bispo coadjutor pelo Concílio extraordinário da Diocese Anglicana do Rio de Janeiro
+  status: confirmed
+  sources:
+  - source: darj-episcopado
+    quote: >-
+      Eduardo foi eleito bispo coadjutor em 02 de novembro de 2016, pelo Concílio extraordinário da Diocese Anglicana
+      do Rio de Janeiro e, posteriormente, sagrado ao episcopado na IEAB, em 08 de abril de 2017, na Igreja Catedral
+      do Redentor, na Tijuca, cidade do Rio de Janeiro, RJ.
+- type: other
+  date: 2021-05
+  description: >-
+    Em maio de 2021 um padre da Diocese Católica Apostólica de Confissão Anglicana foi preso em Nova Friburgo (RJ);
+    o bispo Eduardo Coelho Grillo (DARJ/IEAB) esclareceu publicamente que o sacerdote e o grupo não pertencem à
+    IEAB.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia seguinte, o bispo Eduardo Grillo, da Diocese Anglicana do Rio de Janeiro, veio a público esclarecer
+    page: '89'
+  - source: cant-novas-igrejas-2024
+    quote: que o referido sacerdote não fazia parte da Igreja Episcopal Anglicana do Brasil.
+    page: '89'

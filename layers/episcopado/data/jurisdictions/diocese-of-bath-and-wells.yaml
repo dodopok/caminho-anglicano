@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-bath-and-wells
+name: Diocese of Bath and Wells
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Charles Moss. S. David's; Bath, 1774; d. 1802, Apr. 13.
+  - source: stubbs-1897
+    quote: William Laud. S. David's ; Bath, 1626 ; London, 1628; Canterbury, 1633; d. 1645, Jan. 10.
+  - source: stubbs-1897
+    quote: William Barlow. S. David's; Bath, 1 549-1554 ; Chichester, 1559 ; d. 1569, Dec. 10.

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: noilves-rosa-da-silva
+name: Noilves Rosa da Silva
+full_name: Noilves Rosa da Silva
+ordinations:
+- order: diaconate
+  date: '1995'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1995 - … Noilves Rosa da Silva
+    page: '374'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1995'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1995 - … Noilves Rosa da Silva
+    page: '374'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

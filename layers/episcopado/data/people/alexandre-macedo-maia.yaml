@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: alexandre-macedo-maia
+name: Alexandre Macedo Maia
+aliases:
+- Maia
+biography: Bispo da Igreja Anglicana Brasileira (IABRA), signatário da Declaração da Boa Viagem (2006).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: a Igreja Anglicana Brasileira (IABRA), pelo bispo Alexandre Macedo Maia
+  page: '119'
+affiliations:
+- jurisdiction: iabra
+  role: bishop
+  start: '2006'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: a Igreja Anglicana Brasileira (IABRA), pelo bispo Alexandre Macedo Maia
+    page: '119'
+- jurisdiction: iabra
+  role: founder
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana Brasileira (IABRA) teve como fundador o bispo Alexandre Macedo Maia, intitulado como Arcebispo
+      Primaz do Brasil.
+    page: '156'
+- jurisdiction: iabra
+  role: primate
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana Brasileira (IABRA) teve como fundador o bispo Alexandre Macedo Maia, intitulado como Arcebispo
+      Primaz do Brasil.
+    page: '156'
+  notes: Intitulado 'Arcebispo Primaz do Brasil'.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: oblato (leigo)
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Alexandre Macedo Maia foi convidado pelo mesmo para ingressar na Igreja Anglicana – Diocese do Recife, porém,
+      abrindo mão das ordens episcopais (à semelhança do que aconteceu com o bispo Hermany Soares).
+    page: '156'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Maia se tornou um oblato da Ordem de São Bento da denominação recifense, posteriormente deixando o Anglicanismo
+    page: '156'
+  notes: >-
+    Ingressou abrindo mão das ordens episcopais, durante o episcopado de Robinson Cavalcanti; tornou-se oblato da
+    Ordem de São Bento; depois deixou o Anglicanismo. Datas não informadas.
+events:
+- type: other
+  date: null
+  description: >-
+    Alexandre Macedo Maia deixa o Anglicanismo e ingressa na Igreja Siríaca Ortodoxa de Antioquia, onde é iniciado
+    na vida monástica e ordenado sacerdote, exercendo até o início da década de 2020
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      ingressando na Igreja Sirian Ortodoxa de Antioquia, sendo iniciado na vida monástica e ordenado sacerdote,
+      exercendo o mesmo até o início da década de 2020
+    page: '156'

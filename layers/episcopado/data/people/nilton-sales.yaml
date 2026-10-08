@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: nilton-sales
+name: Nilton Sales
+biography: >-
+  Ordenado diácono em 17/09/2016 na Paróquia Anglicana São Paulo (Recife) pelos bispos Evilásio Tenório e Flávio
+  Adair.
+sources:
+- source: adr-ord-sp-2016
+  quote: >-
+    No sábado 17 de Setembro, no templo da Paróquia Anglicana São Paulo, em Recife (PE), foram ordenados ao diaconato
+    o irmão Nilton Sales, ao Presbiterado a Revda. Benedita Rodrigues, e instituído ao ministério Local o irmão
+    Melquias Santos pelos Bispos Auxiliares da nossa Diocese, Revmo. Evilásio Tenório e Revmo. Flávio Adair.
+ordinations:
+- order: diaconate
+  date: '2016-09-17'
+  place: Paróquia Anglicana São Paulo, Recife-PE
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: evilasio-tenorio
+  status: confirmed
+  sources:
+  - source: adr-ord-sp-2016
+    quote: >-
+      No sábado 17 de Setembro, no templo da Paróquia Anglicana São Paulo, em Recife (PE), foram ordenados ao diaconato
+      o irmão Nilton Sales, ao Presbiterado a Revda. Benedita Rodrigues, e instituído ao ministério Local o irmão
+      Melquias Santos pelos Bispos Auxiliares da nossa Diocese, Revmo. Evilásio Tenório e Revmo. Flávio Adair.
+  notes: >-
+    Ordenação conjunta pelos bispos auxiliares Evilásio Tenório e Flávio Adair (a fonte não distingue qual presidiu).

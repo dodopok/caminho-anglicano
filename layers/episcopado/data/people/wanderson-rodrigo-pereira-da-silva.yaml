@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: wanderson-rodrigo-pereira-da-silva
+name: Wanderson Rodrigo Pereira da Silva
+biography: >-
+  Ex-membro da Paróquia da Virgem Maria (IEAB, Natal); ordenado na IATB, que pastoreou no Rio Grande do Norte; saiu
+  com um grupo de clérigos quando o primaz era Alfredo Dórea; fundou a Diocese Anglicana do Rio Grande do Norte
+  (Diocese São Paulo Apóstolo), igreja 'Anglicana Tradicional' sem vínculo com a IATB.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    No Rio Grande do Norte a IATB foi pastoreada por um tempo pelo bispo Wanderson Rodrigo Pereira da Silva.
+  page: '136'
+affiliations:
+- jurisdiction: ieab
+  role: member
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Ele foi membro da Paróquia da Virgem Maria, em Natal, ligada à Igreja Episcopal Anglicana do Brasil (IEAB).
+    page: '136'
+- jurisdiction: iatb
+  role: bishop
+  diocese: rio-grande-do-norte
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Após ingressar na IATB, foi ordenado, mas atualmente não faz mais parte da Igreja, após deixar a
+    page: '136'
+  - source: cant-novas-igrejas-2024
+    quote: denominação junto com um grupo de clérigos, na época quando o primaz era dom Alfredo Dórea.
+    page: '137'
+  notes: O livro diz que foi 'ordenado' na IATB sem especificar a ordem nem a data.
+- jurisdiction: darn-spa
+  role: founder
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Este fundou a Diocese Anglicana do Rio Grande do Norte (Diocese São Paulo Apóstolo)
+    page: '137'

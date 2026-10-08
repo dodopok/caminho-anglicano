@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: max-broussard
+name: Max Broussard
+biography: >-
+  Arcebispo da Província Anglicana de Cristo Bom Pastor (EUA), primeiro bispo ordinário da IEACH; participou da
+  sagração de Patricio Viveros Robles (2004).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: O arcebispo Max Broussard tornou-se o primeiro bispo ordinário da nova província.
+  page: '123'
+affiliations:
+- jurisdiction: ieach
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: O arcebispo Max Broussard tornou-se o primeiro bispo ordinário da nova província.
+    page: '123'
+  notes: Primeiro bispo ordinário da nova província (antes da autonomia de 2006).
+- jurisdiction: pacbp
+  role: archbishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: O arcebispo Max Broussard tornou-se o primeiro bispo ordinário da nova província.
+    page: '123'

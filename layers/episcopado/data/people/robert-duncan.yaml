@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: robert-duncan
+name: Robert Duncan
+full_name: Robert William Duncan
+aliases:
+- Abp. Robert Duncan
+- Bob Duncan
+- Robert William Duncan
+birth:
+  date: '1948-07-05'
+  sources:
+  - source: wp-duncan
+    quote: >-
+      He was installed on June 25, 2009, at [[Christ Church (Plano, Texas)|Christ Church]] in [[Plano, Texas]].
+wikidata: Q553866
+biography: >-
+  Bispo da Diocese de Pittsburgh, eleito primeiro arcebispo da ACNA em 2009; deixou a primazia em 2014.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Nesta reunião, Robert Duncan, bispo da Diocese de Pittsburgh, foi eleito o seu primeiro arcebispo
+  page: '21'
+ordinations:
+- order: episcopate
+  date: '1996-04-27'
+  place: St. Paul's Cathedral, Pittsburgh
+  jurisdiction: tec
+  office: coadjutor
+  principal_consecrator: edmond-browning
+  co_consecrators:
+  - alden-moinet-hathaway
+  - peter-james-lee
+  status: probable
+  sources:
+  - source: wp-duncan
+    quote: '| consecrated by              = [[Edmond L. Browning]]'
+  - source: wp-duncan
+    quote: >-
+      | place of consecration       = [[Saint Paul Cathedral (Pittsburgh, Pennsylvania)|St. Paul's Cathedral, Pittsburgh]]
+  - source: wp-lista-bispos-tec
+    quote: >-
+      | 916 | [[Robert Duncan (bishop)|Robert Duncan]] | [[Edmond L. Browning|630]] [[Alden Hathaway|761]] [[Peter
+      James Lee|785]] | 1996 | [[Episcopal Diocese of Pittsburgh (Episcopal Church)|VII Pittsburgh]] |
+  - source: ens-1995-12-12
+    quote: >-
+      The Rev. Canon Robert William Duncan was elected bishop coadjutor of the Diocese of Pittsburgh on the third
+      ballot.
+  notes: >-
+    Pergunta da frente: "Duncan, sagrado em 1996 por quem?" — por Edmond L. Browning (Presiding Bishop), com Alden
+    Hathaway (bispo de Pittsburgh) e Peter James Lee (Virgínia), segundo a Wikipédia. A eleição como coadjutor (dez.
+    1995) tem fonte primária (ENS); a sagração em si não foi achada no arquivo da ENS.
+affiliations:
+- jurisdiction: acna
+  role: archbishop
+  start: '2009-06-22'
+  end: '2014'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Nesta reunião, Robert Duncan, bispo da Diocese de Pittsburgh, foi eleito o seu primeiro arcebispo
+    page: '21'
+- jurisdiction: acna
+  role: primate
+  start: '2009-06-25'
+  status: contested
+  sources:
+  - source: wp-duncan
+    quote: >-
+      On June 21, 2009, the bishops of the Anglican Church in North America elected Duncan as the first archbishop
+      and primate of North America. He was installed on June 25, 2009
+  - source: wp-duncan
+    quote: >-
+      At the ceremony, conservative Anglicans in the developing world were represented by [[Benjamin Nzimbi]]
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      que, em 2008, se tornou o primeiro arcebispo e primaz da Igreja Anglicana na América do Norte. Foi entronizado
+      na Christ Church, em Plano (Texas), pelo arcebispo Benjamin Nzimbi, primaz do Quênia
+  notes: >-
+    CORRIGIDO: o pôster põe a eleição/entronização em 2008; a Wikipédia dá eleição em 21/06/2009 e instalação em
+    25/06/2009 em Christ Church, Plano (Texas), com Nzimbi presente representando os anglicanos do Sul Global (o
+    pôster diz que Nzimbi o entronizou). Datas da ACNA (fundação 2009) divergem — verificar.
+  discrepancies:
+  - field: start
+    value: '2008'
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        que, em 2008, se tornou o primeiro arcebispo e primaz da Igreja Anglicana na América do Norte. Foi entronizado
+        na Christ Church, em Plano (Texas), pelo arcebispo Benjamin Nzimbi, primaz do Quênia

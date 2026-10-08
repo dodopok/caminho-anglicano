@@ -1,0 +1,119 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-dm
+acronym: IEAB-DM
+name: Diocese Meridional
+aliases:
+- Diocese Meridional (Diocese Anglicana Meridional)
+type: diocese
+country: BR
+founded:
+  date: '1950'
+  sources:
+  - source: ieab-dioceses
+    quote: Área 1- formada pelas Dioceses Meridional, Sul Ocidental e de Pelotas.
+  - source: wp-pt-dioc-meridional
+    quote: A sede diocesana está localizada na cidade de Porto Alegre.
+website: https://diocesemeridional.org.br/
+description: >-
+  Se em Porto Alegre (Catedral Nacional da Santissima Trindade). Uma das tres dioceses da divisao de 1949/1950.
+  Area 1.
+sources:
+- source: ieab-dioceses
+  quote: Área 1- formada pelas Dioceses Meridional, Sul Ocidental e de Pelotas.
+- source: wp-pt-dioc-meridional
+  quote: A sede diocesana está localizada na cidade de Porto Alegre.
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: cant-ec-2009-11
+    quote: >-
+      Em 1987, foi eleito bispo sufragâneo da Diocese Meridional e encarregado de organi- zar a futura diocese de
+      Pelotas. Um ano de- pois, foi eleito seu primeiro bispo diocesano.
+  - source: darj-episcopado
+    quote: >-
+      Em 1993, retornou à Diocese Meridional, onde foi Pároco da Paróquia da Ressurreição, em Porto Alegre, RS,
+      por oito anos.
+  - source: ame-54-1987
+    quote: >-
+      O Rev. Luis Osório Pires Prado é o novo bispo sufragâneo da Diocese Meridional da Igreja Episcopal do Brasil.
+      Ele foi eleito pelo Concílio Extraordinário da Diocese, reunido no dia 28 de março em Porto Alegre/RS.
+    page: '2'
+  - source: costa2021
+    quote: 1950-1971 – Egmont Valle Machado Krischke
+  - source: costa2021
+    quote: >-
+      Em 1956, quando o Bispo Pithan se aposentou, a Câmara dos Bispos transferiu o Bispo Krischke para a Diocese
+      Meridional
+  - source: costa2021
+    quote: 1971-1884 – Arthur Rodolpho Kratz
+  - source: wp-pt-dioc-meridional
+    quote: Terceiro bispo da Diocese Meridional e segundo primaz da IEAB
+  - source: costa2021
+    quote: Atuou como Bispo Diocesano da Diocese Meridional de 1984 a 1998.
+  - source: costa2021
+    quote: substituindo o bispo Cláudio Gastal, que se aposentou no ano seguinte.
+  - source: costa2021
+    quote: 1998-2013 – Orlando Santos de Oliveira
+  - source: wp-pt-orlando
+    quote: se tornou seu coadjutor na Diocese Anglicana Meridional, que o sucedeu em 5 de maio do ano seguinte.
+  - source: costa2021
+    quote: >-
+      A instituição como Bispo Diocesano aconteceu no dia 05 de maio de 2013, no encerramento do 121º Concílio Diocesano.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. Humberto Maiztegui Gonçalves
+  - source: costa2021
+    quote: >-
+      No dia 20 de outubro de 2012, durante a reunião do 120º Concílio da Diocese Meridional, foi eleito o novo
+      bispo coadjutor
+  - source: costa2021
+    quote: Foi sagrado bispo sufragâneo da Meridional, na Catedral de Santíssima Trindade, em Porto Alegre.
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'
+  - source: ieab-2022-paulo-duarte
+    quote: conceder o título de cidadania honorária ao reverendo Paulo Roberto da Costa Duarte
+  - source: ieab-2022-paulo-duarte
+    quote: >-
+      até que, em 2008, seu caminho se cruzou com a Cidade das Avenidas, se assentando neste município e se tornando
+      posteriormente pároco da Paróquia Cristo Redentor, onde manteve residência até 2020.
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1956-1970 - Egmont Machado Krischke
+    page: '368'
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1971-1983 - Arthur Rodolpho Kratz
+    page: '368'
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1984 - Cláudio Vinicius de Senna Gastal
+    page: '368'
+  - source: kickhofel-1995
+    quote: Krischke adoeceu em 1970 e resignou a diocese, mas permaneceu como primaz até 1971, quando faleceu.
+    page: '249'
+  - source: kickhofel-1995
+    quote: >-
+      O bispo Arthur R.Kratz assumiu a direção da Diocese Meridional logo após a sua sagração ao episcopado em 25
+      de julho de 1971 … Faleceu em 1984 e foi sucedido na Diocese Meridional por Cláudio Vinicius de Senna Gastal.
+    page: '250'
+  - source: kickhofel-1995
+    quote: >-
+      Gastal foi eleito em outubro de 1983 e sagrado em março de 1984 para ser inicialmente bispo coadjutor com
+      direito a sucessão.
+    page: '251'
+  - source: kickhofel-1995
+    quote: >-
+      Exerceu o pastorado em Santana do Livramento, São Gabriel, São Paulo, Rio Grande e Porto Alegre, onde foi
+      deão da Catedral da Santíssima Trindade durante 15 anos, deixando o cargo em 1976, quando foi eleito bispo
+      para a Diocese Central, transferindo-se para o Rio de Janeiro.
+    page: '277'
+  - source: kickhofel-1995
+    quote: >-
+      Quando, em 1987, a Diocese Meridional elegeu e sagrou o rev. Luiz Osório Pires Prado como bispo sufragâneo,
+      numa das mais rápidas eleições já realizadas na diocese, duas tarefas aguardavam o novo bispo: auxiliar o
+      bispo diocesano Cláudio Gastal nas atividades pastorais e organizar uma nova diocese com sede na cidade de
+      Pelotas.
+    page: '311'
+  - source: kickhofel-1995
+    quote: >-
+      Antes de sua sagração ao episcopado em julho de 1987, o bispo Prado trabalhou como pároco em São Leopoldo
+      e como professor no Seminário Teológico
+    page: '312'

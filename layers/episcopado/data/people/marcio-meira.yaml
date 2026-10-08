@@ -1,0 +1,393 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marcio-meira
+name: Márcio Meira
+full_name: Márcio Medeiros Meira
+aliases:
+- '@bispomarciomeira'
+- Bp. Marcio
+- Márcio Medeiros Meira
+- Rev. Márcio Medeiros Meira, OSE
+biography: >-
+  Natural de Fortaleza; presbítero na Diocese do Recife (IEAB) já em 2002; fundador da Igreja (Catedral) Anglicana
+  Comunhão em João Pessoa; bispo auxiliar sagrado em 2017 e primeiro bispo diocesano de João Pessoa na IAB.
+sources:
+- source: djp-meira
+  quote: >-
+    O Bispo Márcio Meira é o primeiro bispo da Diocese de João Pessoa da Igreja Anglicana no Brasil. Natural de
+    Fortaleza (CE)
+- source: ieabrecife-clero-2002
+  quote: Márcio Medeiros Meira, OSE (28/03)
+ordinations:
+- order: episcopate
+  date: '2017-06-10'
+  place: Catedral PAES, Recife
+  jurisdiction: diocese-anglicana-recife
+  office: missionary
+  principal_consecrator: miguel-uchoa
+  co_consecrators:
+  - bill-atwood
+  - evilasio-tenorio
+  - flavio-soares
+  - leonides-de-menezes-ferreira
+  status: contested
+  sources:
+  - source: gafcon-2017-two-bishops
+    quote: >-
+      The Anglican Church in Brazil and the Diocese of Recife have announced that Revd. Márcio Simões and Revd.
+      Márcio Medeiros Meira are to be ordained and consecrated as missionary bishops.
+  - source: gafcon-2017-two-bishops
+    quote: >-
+      The ceremony will be conducted by The Right Revd. Miguel Uchôa Cavalcanti, Bishop of Recife, with proceedings
+      due to begin at 10am, Saturday June 10th 2017.
+  - source: iab-dois-novos-bispos
+    quote: Em Junho acontecerá a  Sagração Episcopal
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Em 11 de junho de 2017, na Catedral PAES, em Recife, o arcebispo Miguel Uchoa, juntamente com os bispos Bill
+      Atwood, Flávio Soares, Evilásio Tenório e Leônides Menezes, sagraram: Márcio Medeiros Meira como o primeiro
+      bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 10 de junho de 2017, o clérigo foi sagrado ao episcopado para liderar uma nova unidade diocesana da denominação:
+      a Diocese de João Pessoa.
+    page: '32'
+  - source: iab-dois-novos-bispos
+    quote: 'elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.'
+  - source: djp-meira
+    quote: Foi consagrado bispo em 2021
+  discrepancies:
+  - field: date
+    value: '2017-06-11'
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Em 11 de junho de 2017, na Catedral PAES, em Recife, o arcebispo Miguel Uchoa, juntamente com os bispos
+        Bill Atwood, Flávio Soares, Evilásio Tenório e Leônides Menezes, sagraram: Márcio Medeiros Meira como o
+        primeiro bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Em 10 de junho de 2017, o clérigo foi sagrado ao episcopado para liderar uma nova unidade diocesana da denominação:
+        a Diocese de João Pessoa.
+      page: '32'
+    - source: iab-dois-novos-bispos
+      quote: 'elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.'
+    - source: iab-dois-novos-bispos
+      quote: Em Junho acontecerá a  Sagração Episcopal
+    - source: gafcon-2017-two-bishops
+      quote: >-
+        The Anglican Church in Brazil and the Diocese of Recife have announced that Revd. Márcio Simões and Revd.
+        Márcio Medeiros Meira are to be ordained and consecrated as missionary bishops.
+    - source: gafcon-2017-two-bishops
+      quote: >-
+        The ceremony will be conducted by The Right Revd. Miguel Uchôa Cavalcanti, Bishop of Recife, with proceedings
+        due to begin at 10am, Saturday June 10th 2017.
+    - source: djp-meira
+      quote: Foi consagrado bispo em 2021
+  - field: jurisdiction
+    value: iab
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Em 11 de junho de 2017, na Catedral PAES, em Recife, o arcebispo Miguel Uchoa, juntamente com os bispos
+        Bill Atwood, Flávio Soares, Evilásio Tenório e Leônides Menezes, sagraram: Márcio Medeiros Meira como o
+        primeiro bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Em 10 de junho de 2017, o clérigo foi sagrado ao episcopado para liderar uma nova unidade diocesana da denominação:
+        a Diocese de João Pessoa.
+      page: '32'
+    - source: iab-dois-novos-bispos
+      quote: 'elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.'
+    - source: iab-dois-novos-bispos
+      quote: Em Junho acontecerá a  Sagração Episcopal
+    - source: gafcon-2017-two-bishops
+      quote: >-
+        The Anglican Church in Brazil and the Diocese of Recife have announced that Revd. Márcio Simões and Revd.
+        Márcio Medeiros Meira are to be ordained and consecrated as missionary bishops.
+    - source: gafcon-2017-two-bishops
+      quote: >-
+        The ceremony will be conducted by The Right Revd. Miguel Uchôa Cavalcanti, Bishop of Recife, with proceedings
+        due to begin at 10am, Saturday June 10th 2017.
+    - source: djp-meira
+      quote: Foi consagrado bispo em 2021
+  - field: office
+    value: diocesan
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Em 11 de junho de 2017, na Catedral PAES, em Recife, o arcebispo Miguel Uchoa, juntamente com os bispos
+        Bill Atwood, Flávio Soares, Evilásio Tenório e Leônides Menezes, sagraram: Márcio Medeiros Meira como o
+        primeiro bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Em 10 de junho de 2017, o clérigo foi sagrado ao episcopado para liderar uma nova unidade diocesana da denominação:
+        a Diocese de João Pessoa.
+      page: '32'
+    - source: iab-dois-novos-bispos
+      quote: 'elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.'
+    - source: iab-dois-novos-bispos
+      quote: Em Junho acontecerá a  Sagração Episcopal
+    - source: gafcon-2017-two-bishops
+      quote: >-
+        The Anglican Church in Brazil and the Diocese of Recife have announced that Revd. Márcio Simões and Revd.
+        Márcio Medeiros Meira are to be ordained and consecrated as missionary bishops.
+    - source: gafcon-2017-two-bishops
+      quote: >-
+        The ceremony will be conducted by The Right Revd. Miguel Uchôa Cavalcanti, Bishop of Recife, with proceedings
+        due to begin at 10am, Saturday June 10th 2017.
+    - source: djp-meira
+      quote: Foi consagrado bispo em 2021
+  - field: date
+    value: '2021'
+    sources:
+    - source: djp-meira
+      quote: Foi consagrado bispo em 2021
+  notes: >-
+    Fonte é anúncio PRÉVIO do GAFCON (cerimônia conjunta com Márcio Simões, sábado 10/06/2017); o site da Diocese
+    de Vitória confirma que a de Simões ocorreu em 10/06/2017. O pôster da IAB dá 11/06/2017 (domingo) na PAES,
+    sagrante Uchoa com Atwood, Soares, Tenório e Leônides Menezes — data e co-sagrantes do pôster não confirmados;
+    10/06/2017 é mais provável. O pôster chama Uchoa de 'arcebispo' em 2017; a IAB como província é de 2018 — verificar
+    a jurisdição exata na data (Diocese do Recife / Cone Sul?). Sagrantes não nomeados. Eleito bispo auxiliar em
+    06/05/2017. O anúncio do GAFCON marca a sagração conjunta com Márcio Simões para 10/06/2017, conduzida por Miguel
+    Uchoa (anúncio prévio; nenhum relato posterior encontrado). O pôster da IAB dá 11/06/2017 e co-sagrantes Bill
+    Atwood, Flávio Adair, Evilásio Tenório e Leônides Menezes (não confirmados). O site da Diocese de João Pessoa
+    diz 'consagrado bispo em 2021' (ver afirmação contestada). Diverge de todas as demais fontes (eleição em 2017,
+    presença como bispo na GAFCON 2018, ordenação em Guiné-Bissau em set/2021 já como bispo diocesano). Provável
+    erro do site ou confusão com outra data; mantido como contestado.
+affiliations:
+- jurisdiction: iab
+  role: diocesan_bishop
+  diocese: iab-diocese-joao-pessoa
+  start: '2018'
+  status: contested
+  sources:
+  - source: iab-comunicado-oficial-2018
+    quote: Márcio Meira Bispo da Diocese de João Pessoa PB
+  - source: iab-church-planting-bishops
+    quote: Bishop Marcio Meira – Diocese of Joao Pessoa
+  - source: iab-poster-linhagem-meira
+    quote: como o primeiro bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após discordâncias com a política eclesiástica e de identidade do seu diocesano, o bispo Márcio Meira
+    page: '151'
+  - source: iab-carta-nacao-2022
+    quote: Revmo. + Marcio Meira Bispo Diocesano de João Pessoa PB
+  - source: iab-jornada-pbce-2025
+    quote: Márcio Meira (Diocesano da DJP)
+  - source: catedral-comunhao-lideranca
+    quote: >-
+      Márcio Meira é o Bispo da Diocese de João Pessoa na Igreja Anglicana no Brasil e pastor da Catedral Anglicana
+      Comunhão
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      sob a liderança do então pastor Márcio Meira. Em 10 de junho de 2017, o clérigo foi sagrado ao episcopado
+      para liderar uma nova unidade diocesana da denominação: a Diocese de João Pessoa.
+    page: '32'
+  discrepancies:
+  - field: start
+    value: '2017-06-11'
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: como o primeiro bispo da Diocese de João Pessoa, da Igreja Anglicana no Brasil.
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Após discordâncias com a política eclesiástica e de identidade do seu diocesano, o bispo Márcio Meira
+      page: '151'
+    - source: iab-church-planting-bishops
+      quote: Bishop Marcio Meira – Diocese of Joao Pessoa
+    - source: iab-carta-nacao-2022
+      quote: Revmo. + Marcio Meira Bispo Diocesano de João Pessoa PB
+    - source: iab-jornada-pbce-2025
+      quote: Márcio Meira (Diocesano da DJP)
+    - source: catedral-comunhao-lideranca
+      quote: >-
+        Márcio Meira é o Bispo da Diocese de João Pessoa na Igreja Anglicana no Brasil e pastor da Catedral Anglicana
+        Comunhão
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        sob a liderança do então pastor Márcio Meira. Em 10 de junho de 2017, o clérigo foi sagrado ao episcopado
+        para liderar uma nova unidade diocesana da denominação: a Diocese de João Pessoa.
+      page: '32'
+  - field: start
+    value: '2018-04-27'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Após discordâncias com a política eclesiástica e de identidade do seu diocesano, o bispo Márcio Meira
+      page: '151'
+    - source: iab-church-planting-bishops
+      quote: Bishop Marcio Meira – Diocese of Joao Pessoa
+    - source: iab-carta-nacao-2022
+      quote: Revmo. + Marcio Meira Bispo Diocesano de João Pessoa PB
+    - source: iab-jornada-pbce-2025
+      quote: Márcio Meira (Diocesano da DJP)
+    - source: catedral-comunhao-lideranca
+      quote: >-
+        Márcio Meira é o Bispo da Diocese de João Pessoa na Igreja Anglicana no Brasil e pastor da Catedral Anglicana
+        Comunhão
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        sob a liderança do então pastor Márcio Meira. Em 10 de junho de 2017, o clérigo foi sagrado ao episcopado
+        para liderar uma nova unidade diocesana da denominação: a Diocese de João Pessoa.
+      page: '32'
+  - field: start
+    value: '2017-06-10'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        sob a liderança do então pastor Márcio Meira. Em 10 de junho de 2017, o clérigo foi sagrado ao episcopado
+        para liderar uma nova unidade diocesana da denominação: a Diocese de João Pessoa.
+      page: '32'
+  notes: >-
+    Início = criação da diocese (27/04/2018). Se a mudança de nome para Diocese Anglicana Família for confirmada,
+    o mesmo vínculo continua sob o novo nome (ver relação sucessora_de).
+- jurisdiction: iab
+  role: diocesan_bishop
+  diocese: iab-diocese-familia
+  start: '2026'
+  status: probable
+  sources:
+  - source: ig-daf-perfil
+    quote: '"coauthor_producers":[{"id":"181853493","username":"bispomarciomeira"'
+  - source: catedral-comunhao-lideranca
+    quote: Igreja Anglicana no Brasil | Diocese Família
+  notes: >-
+    Nenhuma fonte diz literalmente "Márcio Meira, bispo da Diocese Anglicana Família"; inferido da continuidade
+    DJP→Família (mesma catedral, mesmo site, posts conjuntos @daf.anglicananobrasil/@bispomarciomeira).
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  end: '2005'
+  end_reason: schism
+  status: confirmed
+  sources:
+  - source: ieabrecife-clero-2002
+    quote: Márcio Medeiros Meira, OSE (28/03)
+  notes: >-
+    Listado como "Rev." no clero da Diocese do Recife (IEAB) em jan/2002, endereço no Bessa (João Pessoa). Data/ordenante
+    de diaconato e presbiterato não encontrados.
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  end: 2017-06
+  status: confirmed
+  sources:
+  - source: dar-clero-presbiteros-2007
+    quote: Rev. Márcio Medeiros Meira
+  - source: dar-2011-meira-sobre-flavio
+    quote: >-
+      Rev. Márcio Medeiros Meira ; é Presbítero da Diocese do Recife; Reitor no SAT-PB; Reitor da Paróquia Anglicana
+      Comunhão , no Arcediagado Paraíba/Rio Grande Norte; Secretário Diocesano de Evangelismo.
+  - source: dar-2013-diaconos-mogi
+    quote: o rev. Marcio Meira continuou a reflexão
+  - source: dar-2013-assembleia-pbrn
+    quote: Após a abertura oficial da Assembleia Arcediagal com as boas vindas do Arcediago rev. Marcio Meira
+  notes: >-
+    Local: Paróquia Anglicana Comunhão, João Pessoa-PB. Presbítero da Diocese do Recife sob o Cone Sul até a sagração
+    episcopal (2017). No artigo de 2011 diz ter sido 'o primeiro paraibano a concluir o Curso Bacharel em Teologia,
+    e, consequentemente, a ser Ordenado na Igreja Anglicana aqui na Paraíba' (data não informada). Arcediago da
+    Paraíba/Rio Grande do Norte em 2013.
+events:
+- type: other
+  date: '2017-05-06'
+  description: >-
+    Sínodo extraordinário da Diocese de Recife em Olinda elege Márcio Simões e Márcio Meira bispos auxiliares
+  status: confirmed
+  sources:
+  - source: iab-dois-novos-bispos
+    quote: >-
+      Sábado,  06/05/2017, na Paróquia Anglicana Emanuel, em Olinda-PE, nossa Igreja, liderada pelo Bispo Miguel
+      Uchoa no Sínodo extraordinário, elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.
+- type: other
+  date: '2023-03-13'
+  description: Sínodo Extraordinário Online da IAB elege Miguel Neto e Eric Rodrigues bispos auxiliares
+  status: confirmed
+  sources:
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
+      Miguel Neto e Bp. Eric Rodrigues.
+  - source: eshoje-eric-2023
+    quote: >-
+      No dia 13 de março deste ano, a Igreja Anglicana no Brasil (IAB) elegeu, em seu primeiro Sínodo Extraordinário
+      Online, dois novos bispos auxiliares
+- type: other
+  date: '2023-11-27'
+  description: >-
+    Inauguração do novo templo da Catedral Anglicana Comunhão, catedral da Diocese de João Pessoa, em 27/11/2023.
+  status: confirmed
+  sources:
+  - source: gafcon-2024-01-23-catedral
+    quote: >-
+      The Anglican Church in Brazil inaugurated a new cathedral in the diocese of João Pessoa on November 27.
+  - source: cc-sobre
+    quote: >-
+      Em 2023, a Catedral Anglicana Comunhão alcançou um de seus marcos mais significativos com a inauguração do
+      novo templo.
+- type: other
+  date: '2023-03-13'
+  description: >-
+    Primeiro Sínodo Extraordinário Online da IAB (Diocese de João Pessoa) elege dois bispos auxiliares: Miguel Neto
+    e Eric Rodrigues.
+  status: confirmed
+  sources:
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
+      Miguel Neto e Bp. Eric Rodrigues. A eleição aconteceu em um evento histórico, O Primeiro Sínodo Extraordinário
+      Online da IAB.
+  - source: eshoje-eric-2023
+    quote: >-
+      No dia 13 de março deste ano, a Igreja Anglicana no Brasil (IAB) elegeu, em seu primeiro Sínodo Extraordinário
+      Online, dois novos bispos auxiliares
+- type: other
+  date: 2024-01
+  description: >-
+    Bispos da IAB (Miguel Uchôa e Márcio Meira) presentes à sagração de Ivan Rocha na IECB (jan. 2024) — indício
+    de relações cordiais IAB-IECB
+  status: probable
+  sources:
+  - source: jc-2024-ivan-rocha
+    quote: >-
+      Mais de 15 Bispos estiveram presentes, inclusive dois da Igreja Anglicana (Dom Miguel Uchôa e Dom Márcio Meira).
+- type: other
+  date: '2023-03-13'
+  description: >-
+    Eleição de Eric Rodrigues e Miguel Neto como bispos auxiliares da IAB no Primeiro Sínodo Extraordinário Online,
+    conduzido pelo bispo Márcio Meira.
+  status: confirmed
+  sources:
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
+      Miguel Neto e Bp. Eric Rodrigues.
+  - source: eshoje-eric-2023
+    quote: >-
+      No dia 13 de março deste ano, a Igreja Anglicana no Brasil (IAB) elegeu, em seu primeiro Sínodo Extraordinário
+      Online, dois novos bispos auxiliares
+- type: other
+  date: '2017-05-06'
+  description: >-
+    Sínodo extraordinário da Diocese de Recife, na Paróquia Anglicana Emanuel (Olinda), elege dois bispos auxiliares:
+    Márcio Simões e Márcio Meira.
+  status: confirmed
+  sources:
+  - source: iab-dois-novos-bispos
+    quote: >-
+      Sábado,  06/05/2017, na Paróquia Anglicana Emanuel, em Olinda-PE, nossa Igreja, liderada pelo Bispo Miguel
+      Uchoa no Sínodo extraordinário, elegeu dois novos Bispos auxiliares: Rev. Márcio Simões e Rev. Márcio Meira.
+- type: other
+  date: '2023-03-13'
+  description: >-
+    1º Sínodo Extraordinário Online da IAB, conduzido pelo bispo Márcio Meira com abertura e encerramento do primaz
+    Miguel Uchôa, elege dois bispos auxiliares: Miguel Neto e Eric Rodrigues.
+  status: probable
+  sources:
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      Na última terça-feira, 13 de março, a Igreja Anglicana no Brasil elegeu dois novos bispos auxiliares, Bp.
+      Miguel Neto e Bp. Eric Rodrigues.
+  - source: anglicanismo-eleicao-2023
+    quote: >-
+      O evento foi conduzido pelo Bispo Marcio Meira, contando com a participação especial do Bispo Primaz, Miguel
+      Uchoa, que abriu e fechou a cerimônia.

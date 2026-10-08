@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: alexander-viets-griswold
+name: Alexander Viets Griswold
+full_name: Alexander Viets Griswold
+aliases:
+- Bp. Griswold
+wikidata: Q1678303
+biography: >-
+  Bispo da Eastern Diocese (Nova Inglaterra), sagrado em 1811; elo entre White e vários bispos do Sul (Johns, Lee,
+  Whittingham).
+sources:
+- source: perry-1895
+  quote: >-
+    Griswold was consecrated in Trinity Church, New York, May 29, 181 1, by Bishops White, Provoost, and Jarvis
+- source: wikidata-api-2
+  quote: '"Q1678303": enwiki "Alexander Viets Griswold"'
+ordinations:
+- order: episcopate
+  date: '1811-05-29'
+  place: Trinity Church, Nova York
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: william-white
+  co_consecrators:
+  - abraham-jarvis
+  - samuel-provoost
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      Griswold was consecrated in Trinity Church, New York, May 29, 181 1, by Bishops White, Provoost, and Jarvis,
+      at the same time with Hobart.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Alexander Viets Griswold]] | [[William White (Bishop of Pennsylvania)|2]] [[Samuel Provoost|3]] [[Abraham
+      Jarvis|8]]{{sfn|Perry|1895|page=[https://archive.org/stream/cu31924050995525#page/n140/mode/1up 29]}} | 1811
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte. Sagrado junto
+    com John Henry Hobart.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: eastern-diocese
+  start: '1811-05-29'
+  status: probable
+  sources:
+  - source: wp-en-histlist
+    quote: >-
+      | [[Alexander Viets Griswold]] | [[William White (Bishop of Pennsylvania)|2]] [[Samuel Provoost|3]] [[Abraham
+      Jarvis|8]]{{sfn|Perry|1895|page=[https://archive.org/stream/cu31924050995525#page/n140/mode/1up 29]}} | 1811
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

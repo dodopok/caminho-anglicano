@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jose-fernando-de-faria
+name: José Fernando de Faria
+biography: Bispo que propôs a criação da Província Anglicana Católica do Espírito Santo (hoje extinta).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: através do bispo José Fernando de Faria, à época, auxiliado por dom Antônio Bessa.
+  page: '105'
+ordinations:
+- order: episcopate
+  date: null
+  jurisdiction: null
+  principal_consecrator: leonardo-marin-saavedra
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
+      Unidos.
+  notes: Primaz da extinta Província Anglicana Católica do Espírito Santo.
+affiliations:
+- jurisdiction: paces
+  role: founder
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Essa jurisdição diocesana tem origem na proposta de criação da Província Anglicana Católica do Espírito Santo
+      (hoje extinta) através do bispo José Fernando de Faria
+    page: '105'
+- jurisdiction: paces
+  role: archbishop
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Esta Igreja era liderada por dom José Fernando de Faria, seu arcebispo metropolitano e primaz para a América
+      do Sul.
+    page: '161'
+  notes: Arcebispo metropolitano e primaz para a América do Sul; depois deixou o anglicanismo independente.
+- jurisdiction: ivcmb
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      este último, anos depois, deixou o Anglicanismo independente e ingressou na Igreja Vétero-Católica Missionária
+      do Brasil
+    page: '161'
+  notes: O livro diz apenas que 'ingressou'; papel não especificado.

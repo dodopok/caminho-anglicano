@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: rio-grande-do-sul
+name: Rio Grande do Sul
+type: diocese
+relations:
+- type: part_of
+  target: ica-brasil
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Dom Agostinho de Jesus, bispo do Rio Grande do Sul
+    page: '139'

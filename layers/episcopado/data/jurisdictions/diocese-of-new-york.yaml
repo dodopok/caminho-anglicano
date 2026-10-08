@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-new-york
+name: Diocese of New York
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Samuel Provoost. New York ; d. 1815.
+  - source: perry-1895
+    quote: >-
+      On the decease of Onderdonk, in 1861, Potter became the diocesan bishop of New York. He died Jan. 2, 1887
+  - source: perry-1895
+    quote: He became ■diocesan in 1887.

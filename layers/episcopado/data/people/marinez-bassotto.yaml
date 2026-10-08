@@ -1,0 +1,114 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marinez-bassotto
+name: Marinez Bassotto
+full_name: Marinez Rosa dos Santos Bassotto
+aliases:
+- Bispa Marinez Bassotto
+- Dom Marinez
+- Marinez Rosa Bassotto
+- Marinez Rosa dos Santos Bassotto
+- Marinez Rosa dos Santos Coelho Grillo
+- Marinez Santos Bassotto
+birth:
+  date: '1971-03-09'
+  sources:
+  - source: costa2021
+    quote: Natural de Canguçu, no Rio Grande do Sul, Marinez Rosa dos Santos Bassotto nasceu em 09 de
+wikidata: Q117285973
+biography: Primeira bispa da IEAB (2018), bispa da Amazonia e primeira mulher primaz (2022-).
+sources:
+- source: costa2021
+  quote: Natural de Canguçu, no Rio Grande do Sul, Marinez Rosa dos Santos Bassotto nasceu em 09 de
+ordinations:
+- order: diaconate
+  date: 1995-05
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: wp-en-bassotto
+    quote: She was ordained as deacon in 1995 after studying at the IEAB's seminary in Porto Alegre.
+  - source: wp-en-bassotto
+    quote: May 1995 (deacon)
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1995 - … Marinez Rosa dos Santos Coelho Grillo
+    page: '374'
+  notes: >-
+    Wikipedia cita ACNS (24/01/2018), não acessível nesta sessão. Ano tirado da lista do clero nacional por ordem
+    de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1996'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: wp-en-bassotto
+    quote: 1996 (priest)
+- order: episcopate
+  date: '2018-04-21'
+  place: Catedral de Santa Maria, Belem (PA)
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: francisco-de-assis-da-silva
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      A cerimônia de ordenação e sagração episcopal ocorreu no dia 21 de abril, nas dependências da Catedral de
+      Santa Maria, em Belém do Pará, com a presença maciça do clero feminino da Igreja, dos bispos da Câmara Episcopal,
+      e das bispas Griselda (Cuba) e Linda Nicholls (Canadá), que fez a homilia.
+  - source: wp-pt-marinez
+    quote: >-
+      Sua sagração episcopal aconteceu em 21 de abril de 2018, na Catedral de Santa Maria, em Belém do Pará.
+  - source: ec-2018-04
+    quote: >-
+      Belém, do outro lado do país foi o lugar onde aconteceu a histó- rica sagração de nossa primeira bispa: Marinez
+      Bassotto.
+  - source: ec-2018-04
+    quote: Em destaque, as bispas Linda Nichols (de Huron, Canadá) e Griselda del Cappio (de Cuba)
+  - source: cant-identidades-numeros-2024
+    quote: >-
+      No dia 21 de abril de 2018, Marinez foi ordenada e sagrada na Catedral de Santa Maria, em Belém do Pará, em
+      celebração transmitida para todo o país. O rito foi presidido pelo Bispo Primaz, Francisco de Assis da Silva
+  - source: cant-temas-anglicanismo-2024
+    quote: >-
+      A ordenação e sagração foi presidida pelo Bispo Francisco de Assis da Silva, da Diocese Sul Ocidental (com
+      sé em Santa Maria, Rio Grande do Sul).
+  notes: >-
+    Primeira bispa da IEAB e da America do Sul. Eleita em 20/01/2018. Sagrante principal nao explicitado nas fontes
+    lidas (primaz da epoca: Francisco de Assis da Silva). Fecha a lacuna de sagrante (ieab-1965-hoje.json tinha
+    SP nulo). Os dois livros são do mesmo autor (Costa), por isso "provavel". Pregadora: bispa Linda Nicholls (Huron,
+    Canadá); presente a bispa Griselda Delgado del Carpio (Cuba).
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-daa
+  start: '2018-04-22'
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: No dia seguinte, Marinez foi instalada como bispa diocesana.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revma. Marinez Bassotto
+  - source: daa-clero
+    quote: Bispa diocesana da Diocese Anglicana da Amazônia (2018). Bispa Primaz da IEAB (2022).
+- jurisdiction: ieab
+  role: primate
+  start: '2022-11-13'
+  status: confirmed
+  sources:
+  - source: ieab-nova-primaz
+    quote: >-
+      Neste domingo, 13 de novembro, penúltimo dia do 35° Sínodo da Igreja Episcopal Anglicana do Brasil, a bispa
+      Marinez Bassotto (foto acima, ao centro), atual bispa da Diocese Anglicana da Amazônia, foi eleita a nova
+      primaz da Igreja.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Bispa Primaz Revma. Marinez Bassotto
+  notes: Primeira mulher primaz da IEAB. Wikipedia EN data o mandato de 2023.
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_encarregado
+  diocese: ieab-dmo
+  status: confirmed
+  sources:
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Bispa Primaz Revma. Marinez Bassotto
+  notes: Em 2026 o site da IEAB lista a primaz como bispa do Distrito Missionario Anglicano (DMA).

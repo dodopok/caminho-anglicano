@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jonas-santana-moreira
+name: Jonas Santana Moreira
+biography: >-
+  Frade da Ordem dos Irmãos de Jesus, ministro provincial em Criciúma (SC); eleito bispo primaz do Brasil por Fortunato
+  Vargas (Santa Cruz de la Sierra, Bolívia) em 2018; hoje bispo da Igreja Anglicana Ortodoxa Missionária.
+sources:
+- source: icc-documentos-jonas
+  quote: >-
+    Fortunato, Bispo, Servo de Deus,pela sua infinita bondade e misericórdia, ao querido filho Jonas Santana Moreira,
+    membro da Ordem dos Irmãos de Jesus, até o presente momento, Ministro provincial da Província Sagrado Coração
+    de Jesus, na cidade de Criciúma, estado de Santa Catarina no Brasil, eleito Bispo Primaz do Brasil, saúde e
+    Bênção Apostólica.
+affiliations:
+- jurisdiction: iaom
+  role: bishop
+  start: '2023'
+  status: probable
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-aquino
+    quote: Hoje aquino está na IGREJA ANGLICANA ORTODOXA MISSIONÁRIA, do Bispo Jonas Santana Moreira
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Desde 2023, a Igreja está sendo liderada por dois bispos: Jonas Santana Moreira e Tony Carlos Ribeiro.
+    page: '130'
+  notes: O livro não informa quando nem por quem foi sagrado.
+events:
+- type: other
+  date: '2018-09-16'
+  description: >-
+    Mandato apostólico de Fortunato Vargas (Santa Cruz de la Sierra, Bolívia) que o elege bispo primaz do Brasil
+    e autoriza sua ordenação episcopal por qualquer bispo
+  status: probable
+  sources:
+  - source: icc-documentos-jonas
+    quote: >-
+      Fortunato, Bispo, Servo de Deus,pela sua infinita bondade e misericórdia, ao querido filho Jonas Santana Moreira,
+      membro da Ordem dos Irmãos de Jesus, até o presente momento, Ministro provincial da Província Sagrado Coração
+      de Jesus, na cidade de Criciúma, estado de Santa Catarina no Brasil, eleito Bispo Primaz do Brasil, saúde
+      e Bênção Apostólica. … Fora da Cidade Arquiepiscopal de Santa Cruz de La Sierra - Bolívia , recebe a Ordenação
+      episcopal onde desejares, por qualquer Bispo, observando as normas litúrgicas estabelecidas. … Dado em Santa
+      Cruz de La Sierra - Bolívia , junto a São Pedro, no dia 16 de setembro do ano do Senhor de 2018, primeiro
+      ano do nosso Arcebispado. ++ Fortunato Vargas
+- type: other
+  date: '2018-11-01'
+  description: Provisão canônica de Fortunato Vargas nomeando-o bispo primaz da Igreja do Brasil
+  status: probable
+  sources:
+  - source: icc-documentos-jonas
+    quote: >-
+      consideradas as qualidades e aptidões do Revmo. Frei Jonas Santana Moreira., e sendo de nosso interesse de
+      Pastor, houvemos por bem nomeá-lo como Bispo Primaz da referida Igreja do Brasil. … DADO e PASSADO em Nossa
+      Cúria Arquidiocesana, ao primeiro dia do mês de novembro do ano do Senhor de 2018

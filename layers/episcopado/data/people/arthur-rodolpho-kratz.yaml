@@ -1,0 +1,307 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: arthur-rodolpho-kratz
+name: Arthur Rodolpho Kratz
+full_name: Arthur Rodolpho Kratz
+aliases:
+- Arthur Kratz
+- Arthur R. Kratz
+- Dom Arthur Kratz
+birth:
+  date: '1920-12-19'
+  sources:
+  - source: ame-21-1984
+    quote: >-
+      Faleceu o Bispo Primaz da Igreja Episcopal do Brasil, Dom Arthur Rodolpho Kratz, dia 4 de março, em Porto
+      Alegre, RS. Dom Arthur Kratz nasceu em Pelotas em 19 de dezembro de 1920
+    page: '4'
+  - source: costa2021
+    quote: Arthur Rodolpho Kratz nasceu em Pelotas, em 19 de dezembro de 1920.
+  - source: ens-84063
+    quote: >-
+      The Most Rev. Arthur Kratz, Bispo Primaz of the Episcopal Church of Brazil since 1972, died here after a series
+      of heart attacks. He was 62.
+  - source: kickhofel-1995
+    quote: Kratz nasceu em Pelotas no dia 19 de dezembro de 1920.
+    page: '250'
+  discrepancies:
+  - field: date
+    value: '1922'
+    sources:
+    - source: ens-72149
+      quote: >-
+        Born in Pelotas, R.S., Brazil in 1922, he graduated from Pelotense College in 1937, and received his B.D.
+        degree from the theological seminary at Porto Alegre, R.S., Brazil, in 1946. He was ordained a priest in
+        1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
+    - source: ens-72149
+      quote: >-
+        He was ordained a priest in 1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
+death:
+  date: '1984-03-04'
+  sources:
+  - source: ame-21-1984
+    quote: >-
+      Faleceu o Bispo Primaz da Igreja Episcopal do Brasil, Dom Arthur Rodolpho Kratz, dia 4 de março, em Porto
+      Alegre, RS. Dom Arthur Kratz nasceu em Pelotas em 19 de dezembro de 1920
+    page: '4'
+  - source: costa2021
+    quote: Arthur Rodolpho Kratz nasceu em Pelotas, em 19 de dezembro de 1920.
+  - source: ens-84063
+    quote: >-
+      The Most Rev. Arthur Kratz, Bispo Primaz of the Episcopal Church of Brazil since 1972, died here after a series
+      of heart attacks. He was 62.
+  - source: cant-identidades-numeros-2024
+    quote: >-
+      Em 04 de março de 1984, o bispo Kratz faleceu, quando faltavam quatro meses para a reunião do Sínodo seguinte.
+  - source: ia-ens-1984-03-22
+    quote: >-
+      Claudio Gastal, Dean of Holy Trinity Cathedral in Porto Alegre, was elected to that position, and his consecration
+  - source: ia-ens-1984-03-22
+    quote: consecration is slated for the end of March.
+  - source: kickhofel-1995
+    quote: Foi então eleito Dom Arthur Rodolpho Kratz que exerceu o cargo até 1984, quando faleceu.
+    page: '260'
+biography: >-
+  Nascido em Pelotas (1922), ordenado presbítero em 1948; bispo do Sul do Brasil em 1971 e segundo primaz (1972).
+sources:
+- source: ens-72149
+  quote: >-
+    He was ordained a priest in 1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
+ordinations:
+- order: diaconate
+  date: '1947-02-09'
+  place: Trinity Church (Igreja da Santíssima Trindade), Porto Alegre
+  jurisdiction: ieab
+  ordained_by: william-matthews-merrick-thomas
+  status: probable
+  sources:
+  - source: ia-living-church-1947-03-02
+    quote: >-
+      Kratz, and Agestinho Soria were ordained to the diaconate by Bishop Thomas of Southern Brazil on February
+      9th at Trinity Church, Porto Alegre, R. G. S.
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1947 - … Arthur Rodolpho Kratz
+    page: '370'
+  - source: kickhofel-1995
+    quote: >-
+      No ano seguinte, foi ordenado ao diaconato pelo bispo Thomas que o designou coadjutor da Paróquia do Redentor
+      em Pelotas.
+    page: '250'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1948-04-11'
+  place: Igreja do Redentor (Church of the Redeemer), Pelotas
+  jurisdiction: dmsb
+  ordained_by: william-matthews-merrick-thomas
+  status: contested
+  sources:
+  - source: kickhofel-1995
+    quote: Em 1948, foi elevado ao presbiterado e designado pároco em Santa Rita dos Sinos.
+    page: '250'
+  - source: ens-72149
+    quote: He was ordained a priest in 1948
+  - source: ia-living-church-1948-05-02
+    quote: >-
+      and Agostinho Soria were ordained to the priesthood on April 11th at the Church of the Redeemer, Pelotas
+  - source: ia-living-church-1948-05-02
+    quote: >-
+      Frs. Bueno, Rocha, and Séria were ordained by Bishop Pit- han, Suffragan of Brazil; Frs. Kainuma, Kratz, and
+      de Mattos, by Bishop Thomas of Southern Brazil.
+  discrepancies:
+  - field: jurisdiction
+    value: ieab
+    sources:
+    - source: ia-living-church-1948-05-02
+      quote: >-
+        and Agostinho Soria were ordained to the priesthood on April 11th at the Church of the Redeemer, Pelotas
+    - source: ia-living-church-1948-05-02
+      quote: >-
+        Frs. Bueno, Rocha, and Séria were ordained by Bishop Pit- han, Suffragan of Brazil; Frs. Kainuma, Kratz,
+        and de Mattos, by Bishop Thomas of Southern Brazil.
+  notes: Ordenação conjunta de seis presbíteros; três por Pithan e três por Thomas.
+- order: episcopate
+  date: '1971-07-25'
+  place: Catedral da Santissima Trindade, Porto Alegre
+  jurisdiction: ieab
+  office: diocesan
+  status: confirmed
+  sources:
+  - source: ia-christian-century-1971-09-08
+    quote: >-
+      Elected to serve the Episcopal diocese of the south, Arthur Rodolph Kratz has been consecrated a bishop of
+      the au- tonomous Brazilian Episcopal Church in Pdérto Alegre
+  - source: ia-wmn-1984-04
+    quote: and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
+  - source: ia-living-church-1972-11-19
+    quote: >-
+      The Rt. Rev. Arthur R. Kratz, Bish- op of Southern Brazil since 1971, has been elected the second Primate
+  - source: ens-72149
+    quote: >-
+      Born in Pelotas, R.S., Brazil in 1922, he graduated from Pelotense College in 1937, and received his B.D.
+      degree from the theological seminary at Porto Alegre, R.S., Brazil, in 1946. He was ordained a priest in 1948
+      and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
+  - source: costa2021
+    quote: >-
+      o reverendo Arthur Rodolpho Kratz72 foi eleito bispo para a Diocese Meridional, sendo sagrado na Catedral
+      da Santíssima Trindade, em Porto Alegre.
+  - source: ens-72149
+    quote: >-
+      He was ordained a priest in 1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
+  - source: kickhofel-1995
+    quote: >-
+      O bispo Arthur R.Kratz assumiu a direção da Diocese Meridional logo após a sua sagração ao episcopado em 25
+      de julho de 1971
+    page: '250'
+  notes: >-
+    Sagrante principal NÃO encontrado. A Christian Century de 08/09/1971 noticia a sagração como recente, o que
+    confirma 1971 (contra a hipótese de 1972) e o local (Porto Alegre). Costa (2021) dá a morte de Krischke em 28/06/1971;
+    a sagração de Kratz seria, então, entre julho e agosto de 1971 — dedução, não dado de fonte. Ano inferido de
+    "No mesmo ano" (1971, morte de Krischke). Sagrantes nao informados.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1961'
+  end: '1968'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Dez anos depois veio para Porto Alegre, onde pastoreou a Igreja da Ascensão e foi redator chefe do Estandarte
+      Cristão até 1968, quando voltou a Pelotas para ser pároco da Igreja do Redentor.
+    page: '250'
+  notes: Pároco da Igreja da Ascensão, Porto Alegre, e redator-chefe do Estandarte Cristão.
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dm
+  start: '1971-07-25'
+  end: '1984'
+  end_reason: death
+  status: contested
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      O bispo Arthur R.Kratz assumiu a direção da Diocese Meridional logo após a sua sagração ao episcopado em 25
+      de julho de 1971 … Faleceu em 1984 e foi sucedido na Diocese Meridional por Cláudio Vinicius de Senna Gastal.
+    page: '250'
+  - source: costa2021
+    quote: 1971-1884 – Arthur Rodolpho Kratz
+  - source: wp-pt-dioc-meridional
+    quote: Terceiro bispo da Diocese Meridional e segundo primaz da IEAB
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1971-1983 - Arthur Rodolpho Kratz
+    page: '368'
+  discrepancies:
+  - field: end_reason
+    value: retirement
+    sources:
+    - source: costa2021
+      quote: 1971-1884 – Arthur Rodolpho Kratz
+    - source: wp-pt-dioc-meridional
+      quote: Terceiro bispo da Diocese Meridional e segundo primaz da IEAB
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1971-1983 - Arthur Rodolpho Kratz
+      page: '368'
+  - field: end
+    value: '1983'
+    sources:
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1971-1983 - Arthur Rodolpho Kratz
+      page: '368'
+  notes: >-
+    Costa grafa "1971-1884" (erro tipografico por 1984); Anexo C de Costa da 1971-1977 (conflito). Motivo do fim
+    nao explicitado.
+- jurisdiction: ieab
+  role: primate
+  start: '1972'
+  end: '1984-03-04'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: ens-72149
+    quote: >-
+      The Rt. Rev. Arthur R. Kratz, Bishop of the Diocese of Southern Brazil since 1971, has been elected the second
+      Primate of the Episcopal Church of Brazil (Igreja Episcopal do Brasil).
+  - source: ame-21-1984
+    quote: >-
+      Faleceu o Bispo Primaz da Igreja Episcopal do Brasil, Dom Arthur Rodolpho Kratz, dia 4 de março, em Porto
+      Alegre, RS. Dom Arthur Kratz nasceu em Pelotas em 19 de dezembro de 1920
+    page: '4'
+  - source: costa2021
+    quote: >-
+      Durante a reunião extraordinária do Sínodo, no ano seguinte, foi eleito o segundo Bispo Primaz da Igreja Episcopal
+      do Brasil.
+  - source: wp-en-ieab
+    quote: Arthur Rodolpho Kratz, 1972—1984
+  - source: ens-72149
+    quote: >-
+      has been elected the second Primate of the Episcopal Church of Brazil (Igreja Episcopal do Brasil). He succeeded
+      the Most Rev. Egmont Machado Krischke, who died a few months ago.
+  - source: ens-84063
+    quote: >-
+      The Most Rev. Arthur Kratz, Bispo Primaz of the Episcopal Church of Brazil since 1972, died here after a series
+      of heart attacks. He was 62.
+  - source: kickhofel-1995
+    quote: >-
+      O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1972 - Arthur Rodolpho
+      Kratz
+    page: '367'
+  - source: kickhofel-1995
+    quote: >-
+      No Sínodo de 1972, Kratz foi eleito bispo primaz, sendo o segundo na ordem dos primazes. Exerceu cumulativamente
+      as funções de primaz e diocesano.
+    page: '251'
+  notes: >-
+    Morreu no cargo (noticia ENS de 22/03/1984). O livro dá só o início de cada primado; o fim é o início do primado
+    seguinte.
+events:
+- type: other
+  date: '1984'
+  description: >-
+    Arthur Rodolpho Kratz, primaz da Igreja Episcopal do Brasil desde 1972, morre em 1984 (World Mission News, abr/1984).
+  status: probable
+  sources:
+  - source: ia-wmn-1984-04
+    quote: >-
+      ALEGRE, Brazil — The Most Rev. Arthur A. Kratz, Bispo Primaz of the Episcopal Church of Brazil since 1972
+- type: death
+  date: '1984-03-04'
+  description: >-
+    Morte do bispo Arthur Rodolpho Kratz em 4 de março de 1984, quatro meses antes do Sínodo que aprovou a ordenação
+    feminina.
+  status: probable
+  sources:
+  - source: cant-identidades-numeros-2024
+    quote: >-
+      Em 04 de março de 1984, o bispo Kratz faleceu, quando faltavam quatro meses para a reunião do Sínodo seguinte.
+- type: death
+  date: 1984-03
+  description: >-
+    Morte do primaz Arthur Kratz (março de 1984); Cláudio Gastal, deão da Catedral da Santíssima Trindade (Porto
+    Alegre), já eleito bispo coadjutor, com sagração prevista para o fim de março de 1984.
+  status: probable
+  sources:
+  - source: ia-ens-1984-03-22
+    quote: >-
+      Claudio Gastal, Dean of Holy Trinity Cathedral in Porto Alegre, was elected to that position, and his consecration
+  - source: ia-ens-1984-03-22
+    quote: consecration is slated for the end of March.
+- type: other
+  date: '1971-06-19'
+  description: >-
+    Eleito bispo da Diocese Meridional em concílio extraordinário na Paróquia da Ascensão, Porto Alegre, no quarto
+    escrutínio; primeira eleição diocesana sem autorização da Convenção Geral americana
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Kratz foi eleito ao episcopado no dia 19 de junho de 1971, na Paróquia da Ascensão em Porto Alegre, em concílio
+      extraordinariamente convocado, tendo obtido os votos necessários no quarto escrutínio.
+    page: '251'
+- type: death
+  date: '1984'
+  description: Morte de Arthur Rodolpho Kratz, primaz da IEAB
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: Foi então eleito Dom Arthur Rodolpho Kratz que exerceu o cargo até 1984, quando faleceu.
+    page: '260'

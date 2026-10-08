@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: eastern-newfoundland-and-labrador
+name: Eastern Newfoundland and Labrador
+type: diocese
+relations:
+- type: part_of
+  target: anglican-church-of-canada
+  status: confirmed
+  sources:
+  - source: nlchurchman-1993-02
+    quote: >-
+      witness the Episcopal Ordination and Enthronement of Dean Harvey as a Bishop of the Church of Christ, and
+      third Bishop of the Diocese of Eastern Newfoundland and Labrador.

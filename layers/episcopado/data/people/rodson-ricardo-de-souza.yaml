@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rodson-ricardo-de-souza
+name: Rodson Ricardo de Souza
+aliases:
+- Rev. Rodson
+- Rodson Ricardo
+biography: >-
+  Reverendo; liderou a Missão Anglicana da Natividade (RN) da Diocese de Votorantim (2016); integrou o grupo que
+  formou a Diocese Anglicana do Natal (2018) e buscou contato com a TAC (2021).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: com a Missão Anglicana da Natividade, sob a liderança do reverendo Rodson Ricardo de Souza.
+  page: '77'
+affiliations:
+- jurisdiction: dav
+  role: clergy
+  start: 2016-05
+  end: '2018'
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em maio de 2016, a Diocese Anglicana de Votorantim iniciou seus trabalhos no Rio Grande do Norte, com a Missão
+      Anglicana da Natividade, sob a liderança do reverendo Rodson Ricardo de Souza.
+    page: '77'
+- jurisdiction: tac-natal
+  role: clergy
+  start: '2018'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Clérigos como os Reverendos Rodson Ricardo e Melque Ambrósio, em Natal
+    page: '82'
+events:
+- type: other
+  date: '2021'
+  description: >-
+    Contato do clero de Natal (Rodson e Melque) com o arcebispo Michael Gill e início do diálogo com a TAC; reunião
+    com o primaz Shane Janzen.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Junto com o reverendo Melque, em 2021 foi feito contato com o Arcebispo da África do Sul, Michael Gill, de
+      Joanesburgo, e assim, iniciou-se o diálogo com a TAC.
+    page: '81'

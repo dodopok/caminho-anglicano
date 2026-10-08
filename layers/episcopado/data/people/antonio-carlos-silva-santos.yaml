@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: antonio-carlos-silva-santos
+name: Antônio Carlos Silva Santos
+biography: >-
+  Sagrado bispo da Igreja Anglicana Mundial no Brasil no encerramento do Sínodo de Imbituba (julho de 2024); bispo
+  auxiliar de São Paulo.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    os novos bispos Antônio Carlos Silva Santos e Wilson Limeira Dias foram consagrados para o Estado de São Paulo.
+  page: '129'
+ordinations:
+- order: episcopate
+  date: 2024-07
+  place: Imbituba (SC)
+  jurisdiction: wac-br
+  office: auxiliary
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      encerramento do Sínodo, ocorreram duas sagrações episcopais: os novos bispos Antônio Carlos Silva Santos e
+      Wilson Limeira Dias foram consagrados para o Estado de São Paulo.
+    page: '129'
+  notes: >-
+    No encerramento do Sínodo (11–14/07/2024); o livro não nomeia os sagrantes (estava presente o arcebispo Felix
+    Nzeyimana, representando o patriarca).
+affiliations:
+- jurisdiction: wac-br
+  role: auxiliary_bishop
+  diocese: sao-paulo
+  start: 2024-07
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Dom Antônio Carlos Silva Santos, bispo auxiliar de São Paulo
+    page: '129'

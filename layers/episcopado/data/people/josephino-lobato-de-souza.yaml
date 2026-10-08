@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: josephino-lobato-de-souza
+name: Josephino Lobato de Souza
+ordinations:
+- order: diaconate
+  date: '1974'
+  jurisdiction: ieab
+  ordained_by: elliott-lorenz-sorge
+  status: probable
+  sources:
+  - source: cant-amazonia
+    quote: >-
+      conato o primeiro paraense, Rev. Josephino Lobato de Souza, por Elliot Sorge, na época bispo da Diocese de
+      Ohio Estados Unidos, atendendo solicitação do bispo Sherrill
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1974 - … Josephino Lobato de Souza
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1975-12-04'
+  jurisdiction: ieab
+  ordained_by: edmund-knox-sherrill
+  status: probable
+  sources:
+  - source: cant-amazonia
+    quote: O Rev. Lobato vai ser ordenado ao presbiterado, pelo bispo Sherril, em 04 de dezembro de 1975.
+  notes: >-
+    O diaconato foi conferido por Elliott Sorge (então bispo na Diocese de Ohio, EUA) a pedido de Sherrill; data
+    do diaconato não está no trecho.

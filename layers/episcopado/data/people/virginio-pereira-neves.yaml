@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: virginio-pereira-neves
+name: Virgínio Pereira Neves
+full_name: Virgínio Pereira Neves
+ordinations:
+- order: diaconate
+  date: '1938'
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1938 - … Virgínio Pereira Neves
+    page: '370'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1938'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1938 - … Virgínio Pereira Neves
+    page: '370'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: dmsob
+  role: other
+  role_description: arcediago
+  diocese: southwestern-brazil
+  start: '1952'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Ainda em 1952, foram criadas missões em Júlio de Castilhos, Tupanciretã e Ijuí pelo arcediago Virgínio Pereira
+      Neves
+    page: '255'
+  notes: Arcediago; criou missões em Júlio de Castilhos, Tupanciretã e Ijuí (1952).
+events:
+- type: other
+  date: '1949'
+  description: >-
+    Entre os mais votados (quinze votos) na indicação de nomes para o episcopado na sessão suplementar do concílio
+    de 1949
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Os mais votados foram Egmont Machado Krischke com quarenta e oito votos, Plínio Lauer Simões com vinte, Orlando
+      Batista com dezesseis votos, Virgínio Pereira Neves com quinze votos e Henrique Todt Junior com treze votos.
+    page: '199'

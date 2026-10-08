@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-barrett-kerfoot
+name: John Barrett Kerfoot
+full_name: John Barrett Kerfoot
+aliases:
+- Bishop Kerfoot
+- John Kerfoot
+birth:
+  date: '1816'
+  sources:
+  - source: perry-episcopate-1895
+    quote: He died at Myersville, Somerset County, Pa., July 10, 1881.
+death:
+  date: '1881-07-10'
+  sources:
+  - source: perry-episcopate-1895
+    quote: He died at Myersville, Somerset County, Pa., July 10, 1881.
+wikidata: Q6220864
+biography: Primeiro bispo de Pittsburgh (1866).
+sources:
+- source: perry-episcopate-1895
+  quote: He died at Myersville, Somerset County, Pa., July 10, 1881.
+ordinations:
+- order: episcopate
+  date: '1866-01-25'
+  place: Trinity Church, Pittsburgh
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: john-henry-hopkins
+  co_consecrators:
+  - arthur-cleveland-coxe
+  - charles-pettit-mcilvaine
+  - john-williams
+  - joseph-cruikshank-talbot
+  - robert-harper-clarkson
+  - william-rollinson-whittingham
+  status: confirmed
+  sources:
+  - source: perry-episcopate-1895
+    quote: >-
+      His consecration took place in Trinity Church, Pittsburg, Jan. 25, 1866. His consecrators were Bishops Hopkins,
+      Mcllvaine, Whit- tingham, John Williams, J. C. Talbot, Coxe, and Clarkson.
+  - source: wp-kerfoot
+    quote: Kerfoot was consecrated on the feast of the Conversion of St. Paul, January 25, 1866, in Pittsburgh.
+  - source: wp-lista-bispos-tec
+    quote: >-
+      | 78 | [[John Barrett Kerfoot]] | [[John Henry Hopkins|26]] [[Charles Pettit McIlvaine|28]] [[William Rollinson
+      Whittingham|36]] | 1866 | [[Episcopal Diocese of Pittsburgh (Episcopal Church)|I Pittsburgh]] |
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      154a. John H. Hopkins (1832-1868) que sagrou John Kerfoot como o primeiro bispo de Pittsburgh, na Igreja da
+      Trindade, em Pittsburgh
+  notes: >-
+    Pôster: Hopkins "sagrou John Kerfoot como o primeiro bispo de Pittsburgh, na Igreja da Trindade" — CONFIRMADO.
+    Nomes completos dos co-sagrantes inferidos dos sobrenomes dados por Perry (1895): McIlvaine (Ohio), Whittingham
+    (Maryland), John Williams (Connecticut), J. C. Talbot, A. C. Coxe (Western New York), Clarkson (Nebraska).

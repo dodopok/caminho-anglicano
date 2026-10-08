@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rosimary-cunha
+name: Rosimary Cunha
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dar-clero-diocesano
+    quote: CLERO DIOCESANO
+  - source: dar-clero-diocesano
+    quote: Revda. Rosimary Cunha
+  notes: Listado no clero diocesano da DAR (página consultada em 2026-10).

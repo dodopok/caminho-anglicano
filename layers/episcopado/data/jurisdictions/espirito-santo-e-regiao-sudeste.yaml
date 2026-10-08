@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: espirito-santo-e-regiao-sudeste
+name: Espírito Santo e região Sudeste
+type: diocese
+relations:
+- type: part_of
+  target: iab
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: e em 2024, com a Rede Episcopal Brasileira (REB), pela saída do bispo Eric Rodrigues.
+    page: '35'

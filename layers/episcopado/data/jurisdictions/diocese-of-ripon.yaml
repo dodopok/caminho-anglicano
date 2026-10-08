@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-ripon
+name: Diocese of Ripon
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Charles Thomas Longley. Ripon ; Durham, 1856 ; York, i860 ; Canterbury, 1862 ; d. 1868, Oct. 27.

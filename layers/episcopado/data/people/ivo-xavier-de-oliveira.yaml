@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ivo-xavier-de-oliveira
+name: Ivo Xavier de Oliveira
+aliases:
+- Ivo Oliveira
+- Rev. Ivo Oliveira
+- Rev. Ivo de Oliveira
+biography: Ordenado diácono em 06/01/2008 em Maceió-AL (Diocese do Recife); presbítero na lista de 2010.
+sources:
+- source: dar-2008-sermao-ivo
+  quote: >-
+    Sermão de Ordenação Diaconal de Ivo Xavier de Oliveira Ponto Missionário Anglicano da Santíssima Trindade Maceió
+    (AL), 06 de janeiro de 2008 Festa da Epifania
+- source: dar-clero-presbiteros-2010
+  quote: Rev. Ivo Xavier de Oliveira
+ordinations:
+- order: diaconate
+  date: '2008-01-06'
+  place: Ponto Missionário Anglicano da Santíssima Trindade, Maceió-AL
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: dar-2008-sermao-ivo
+    quote: >-
+      Sermão de Ordenação Diaconal de Ivo Xavier de Oliveira Ponto Missionário Anglicano da Santíssima Trindade
+      Maceió (AL), 06 de janeiro de 2008 Festa da Epifania
+  notes: >-
+    Sermão do bispo diocesano Robinson Cavalcanti publicado na seção 'Bispo – Sermões' do site da Diocese; presidência
+    da ordenação inferida do sermão episcopal.
+affiliations:
+- jurisdiction: iab
+  role: other
+  role_description: arcediago
+  diocese: arcediagado-do-sul-sudeste
+  end: '2018'
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O Arcediagado do Sul/Sudeste foi dissolvido, com a saída do arcediago Ivo Oliveira, de Mogi das Cruzes (SP)
+    page: '124'
+  notes: >-
+    Saída por ocasião da transformação da IA-DR em IAB (2018); também saíram os reverendos Jorge e Haroldo (Rio
+    Preto) e Luis Fernando (RS).

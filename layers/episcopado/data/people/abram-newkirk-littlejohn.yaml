@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: abram-newkirk-littlejohn
+name: Abram Newkirk Littlejohn
+full_name: Abram Newkirk Littlejohn
+aliases:
+- Bp. Littlejohn
+wikidata: Q4669375
+biography: Primeiro bispo de Long Island (1869); sagrante principal de John McKim.
+sources:
+- source: perry-1895
+  quote: RIGHT REVEREND ABRAM NEWKIRK LITTLEJOHN, D.D.
+- source: wikidata-api-2
+  quote: '"Q4669375": enwiki "Abram Newkirk Littlejohn"'
+ordinations:
+- order: episcopate
+  date: '1869-01-27'
+  place: igreja paroquial do eleito ("in his church")
+  jurisdiction: tec
+  office: diocesan
+  principal_consecrator: horatio-potter
+  co_consecrators:
+  - clarkson
+  - coxe
+  - john-barrett-kerfoot
+  - john-johns
+  - morris
+  - neely
+  - randall
+  - william-henry-odenheimer
+  status: confirmed
+  sources:
+  - source: perry-1895
+    quote: >-
+      He was consecrated in his church, Jan. 27, 1869, by Bishops H. Potter, Johns, Odenheimer, Coxe, Clarkson,
+      Randall, Kerfoot, Neely, and Morris.
+  - source: wp-en-histlist
+    quote: >-
+      | [[Abram Newkirk Littlejohn]] | [[Horatio Potter|62]] [[John Johns|39]] [[William Henry Odenheimer|66]] |
+      1869
+  notes: >-
+    Perry (1895) lista os sagrantes começando pelo que presidiu; a lista da Wikipédia (que cita Perry) põe o mesmo
+    bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
+affiliations:
+- jurisdiction: tec
+  role: bishop
+  diocese: diocese-of-long-island
+  start: '1869-01-27'
+  status: probable
+  sources:
+  - source: wp-en-histlist
+    quote: >-
+      | [[Abram Newkirk Littlejohn]] | [[Horatio Potter|62]] [[John Johns|39]] [[William Henry Odenheimer|66]] |
+      1869
+  notes: >-
+    Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.

@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marcelo
+name: Marcelo
+ordinations:
+- order: presbyterate
+  date: '2021-09-19'
+  jurisdiction: iab
+  status: probable
+  sources:
+  - source: catedral-comunhao-lideranca
+    quote: O Pastor Marcelo foi ordenado no dia 19 de setembro de 2021.
+  notes: Ordem não especificada; sobrenome não informado. Diocese de João Pessoa.

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: colyn-bazley
+name: Colyn Bazley
+biography: >-
+  Bispo da Igreja Anglicana do Chile que recusou supervisão episcopal às comunidades anglo-católicas (anos 1990).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: o então bispo Colyn Bazley recusou-se a lhes conceder tal supervisão
+  page: '123'
+affiliations:
+- jurisdiction: iach
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Inicialmente, essas comunidades se dirigiram à Igreja Anglicana do Chile (IACH), mas o então bispo Colyn Bazley
+      recusou-se a lhes conceder tal supervisão
+    page: '123'

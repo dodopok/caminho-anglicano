@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: foley-beach
+name: Foley Beach
+biography: Segundo arcebispo da ACNA (2014–2024).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Em 2014, Robert Duncan deixou a primazia, sendo escolhido Foley Beach para assumir o cargo como o segundo arcebispo
+    da denominação.
+  page: '22'
+affiliations:
+- jurisdiction: acna
+  role: archbishop
+  start: '2014'
+  end: 2024-06
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2014, Robert Duncan deixou a primazia, sendo escolhido Foley Beach para assumir o cargo como o segundo
+      arcebispo da denominação.
+    page: '22'
+  notes: Cumpriu o limite de dois mandatos de cinco anos.

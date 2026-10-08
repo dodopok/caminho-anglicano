@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-petrolina
+name: Diocese de Petrolina
+type: diocese
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: O seu bispo diocesano é dom Tony Bello, que lidera a jurisdição
+    page: '63'

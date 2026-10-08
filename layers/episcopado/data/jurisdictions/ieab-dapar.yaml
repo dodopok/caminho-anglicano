@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-dapar
+acronym: IEAB-DAPAR
+name: Diocese Anglicana do Parana (ex-Diocese Anglicana de Curitiba)
+aliases:
+- Diocese Anglicana do Parana (ex-Diocese de Curitiba)
+- Diocese Anglicana do Paraná
+type: diocese
+country: BR
+founded:
+  date: '2003'
+  sources:
+  - source: ieab-parana-20
+    quote: Ela foi organizada em 2003, partindo das sementes plantadas por décadas
+  - source: costa2021
+    quote: >-
+      impulsionando a criação da Diocese de Curitiba, em 2003, sendo eleito como seu primeiro bispo Naudal Alves
+      Gomes
+website: http://dapar.org/
+description: >-
+  Organizada em 2003 a partir da DASP; primeiro bispo Naudal Alves Gomes; se Catedral de Sao Tiago, Curitiba.
+sources:
+- source: ieab-parana-20
+  quote: Ela foi organizada em 2003, partindo das sementes plantadas por décadas
+- source: costa2021
+  quote: >-
+    impulsionando a criação da Diocese de Curitiba, em 2003, sendo eleito como seu primeiro bispo Naudal Alves Gomes
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: wp-pt-naudal
+    quote: Tornou-se bispo diocesano da Diocese Anglicana do Paraná em 2003.
+  - source: ieab-magda-sagrara
+    quote: >-
+      Na prática, a coadjutora auxiliará o atual bispo diocesano, Naudal Alves Gomes, na Diocese até dezembro, que
+      é quando este se tornará bispo emérito.
+  - source: costa2021
+    quote: A nova bispa da DAPAR foi instalada na manhã de 12 de dezembro de 2021, na Catedral diocesana.
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revma. Magda Guedes
+  - source: ieab-magda-sagrada
+    quote: a reverenda Magda Guedes Pereira como bispa coadjutora.
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'
+  - source: ieab-3a-bispa
+    quote: >-
+      desde sua ordenação atuou nas Dioceses anglicanas Sul-Ocidental (1996-2006), Paraná (2007-2010 ) e Brasília
+      (2011 – março 2017).
+  - source: ieab-magda-sagrada
+    quote: >-
+      Magda irá auxiliar o atual bispo diocesano, Naudal Alves Gomes, até dezembro. A partir daí, ela assume oficialmente
+      como bispa diocesana em todo o estado.
+  - source: ieab-irala-falecimento
+    quote: Em 2008, tornou-se Deão da Catedral Anglicana de São Tiago, em Curitiba, Paraná

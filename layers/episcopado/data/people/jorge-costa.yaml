@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jorge-costa
+name: Jorge Costa
+biography: Dom Jorge Costa, bispo da Igreja Católica Anglicana.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: dom Jorge Costa
+  page: '138'
+affiliations:
+- jurisdiction: ica
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      que funcionam sob os cuidados de dom Orvandil Moreira Barbosa, dom Jorge Costa, dom Ricardo Vicente dos Anjos
+      e dom Franciney Rodrigues Pantoja
+    page: '138'

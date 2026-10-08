@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: almir-dos-santos
+name: Almir dos Santos
+full_name: Almir dos Santos
+birth:
+  date: '1942-04-18'
+  sources:
+  - source: costa2021
+    quote: Almir dos Santos nasceu em 18 de abril de 1942, na cidade de Bagé.
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Almir dos Santos, Emérito
+biography: >-
+  Bispo de Brasilia (1989-2002); encarregado do Distrito Missionario do Oeste; co-sagrante de Robinson Cavalcanti;
+  emerito.
+sources:
+- source: costa2021
+  quote: Almir dos Santos nasceu em 18 de abril de 1942, na cidade de Bagé.
+- source: ieab-secretaria
+  quote: Revmo. Bispo Almir dos Santos, Emérito
+ordinations:
+- order: diaconate
+  date: '1969'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1969 - … Almir dos Santos
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: episcopate
+  date: '1989-04-09'
+  place: Brasilia (previsto)
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: olavo-ventura-luiz
+  co_consecrators:
+  - agostinho-guillon-soria
+  - clovis-erly-rodrigues
+  - edmund-knox-sherrill
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      A sua sagração aconteceu em 09 de abril de 1989, pelas mãos do Bispo Primaz da época, Olavo Ventura Luiz,
+      tendo como cosagrantes, os bispos Clovis Erly Rodrigues, Agostinho Sória e Edmund Sherrill.
+  - source: ens-88234d
+    quote: The consecration of Bishop-elect Almir dos Santos will take place in Brasilia in March 1989.
+  - source: sinopse-2003
+    quote: 1989 - Almir dos Santos (Brasília)
+  notes: >-
+    Eleito em 12/10/1988 pelo 23o Sinodo (4o escrutinio) para a diocese missionaria de Brasilia. ENS previa sagracao
+    em marco de 1989 em Brasilia; Costa da 09/04/1989.
+affiliations:
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dab
+  start: 1988-04
+  end: 2002-12
+  status: contested
+  sources:
+  - source: wp-pt-dioc-brasilia
+    quote: Almir dos Santos - abril de 1988 a dezembro de 2002;
+  - source: costa2021
+    quote: 1988-2002 – Almir dos Santos
+  - source: ens-88234d
+    quote: >-
+      elected the Rev. Almir dos Santos, rector of Jesus Christ parish in Erechim, Brazil, bishop of the missionary
+      diocese of Brasilia. He will succeed the Rt. Rev. Agostino S6ria who has announced his resignation for December.
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Missionária de Brasília … 1989 - Almir dos Santos
+    page: '368'
+  notes: Sagrado so em 09/04/1989.
+  discrepancies:
+  - field: start
+    value: '1989'
+    sources:
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Missionária de Brasília … 1989 - Almir dos Santos
+      page: '368'
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_encarregado
+  diocese: ieab-dmo
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Distrito Missionário do Oeste, do qual Almir ficou encarregado durante três anos.
+  notes: Datas nao informadas.
+events:
+- type: other
+  date: 2017-04
+  description: >-
+    A Camara Episcopal em abril de 2017 (reuniao no Rio de Janeiro) inclui como emeritos Clovis Rodrigues, Almir
+    dos Santos e Celso Franco.
+  status: confirmed
+  sources:
+  - source: ec-2017-04
+    quote: Clóvis Ro- drigues, Almir dos Santos e Celso Franco (eméritos)
+- type: other
+  date: '1988'
+  description: Eleito pelo Sínodo bispo missionário de Brasília, na quarta votação
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      O primeiro bispo missionário de Brasília foi substituído pelo rev. Almir dos Santos, eleito pelo Sínodo de
+      1988, numa votação por ordens que foi interrompida por falta de consenso que perdurou por três escrutínios,
+      só sendo eleito na quarta votação, depois de disputar o cargo com a reverenda Patrícia Powers, uma missionária
+      americana que trabalhava no Brasil desde 1979.
+    page: '307'

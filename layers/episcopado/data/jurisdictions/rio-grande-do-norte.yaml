@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: rio-grande-do-norte
+name: Rio Grande do Norte
+type: diocese
+relations:
+- type: part_of
+  target: iatb
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Após ingressar na IATB, foi ordenado, mas atualmente não faz mais parte da Igreja, após deixar a
+    page: '136'
+  - source: cant-novas-igrejas-2024
+    quote: denominação junto com um grupo de clérigos, na época quando o primaz era dom Alfredo Dórea.
+    page: '137'

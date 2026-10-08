@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-catolica-anglicana-do-baixo-tocantins
+name: Diocese Católica Anglicana do Baixo Tocantins
+type: diocese
+relations:
+- type: part_of
+  target: ica
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Católica Anglicana do Baixo Tocantins, com o bispo Franciney
+    page: '138'

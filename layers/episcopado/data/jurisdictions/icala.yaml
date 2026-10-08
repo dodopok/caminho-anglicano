@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: icala
+acronym: ICALA
+name: >-
+  Igreja Católico Anglicana Latino Americana (Província da América Latina da Comunhão Anglicana Independente)
+type: province
+description: >-
+  Província latino-americana da Comunhão Anglicana Independente, também chamada Igreja Anglicana Latina / Igreja
+  Católico Anglicana Latina Americana; arcebispo Leonardo Marin-Saavedra; em 2023 fomentou a reativação da Igreja
+  Anglicana do Brasil.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    então arcebispo da Província da América Latina da Comunhão Anglicana Independente (também conhecida como Igreja
+    Católico Anglicana Latina Americana)
+  page: '117'
+relations:
+- type: part_of
+  target: cai
+  date: null
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      então arcebispo da Província da América Latina da Comunhão Anglicana Independente (também conhecida como Igreja
+      Católico Anglicana Latina Americana)
+    page: '117'

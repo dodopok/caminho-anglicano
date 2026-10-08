@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: eeci
+acronym: EECI
+name: Evangelical Episcopal Churches International
+type: communion
+description: Comunhão à qual a CEEC se uniu em 1999.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: em 1999, uniu-se à Evangelical Episcopal Churches International
+  page: '48'

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: izaias-ica
+name: Izaias (ICA)
+aliases:
+- Bispo Izaias
+biography: Bispo Izaias, da Diocese de São Paulo da Igreja Católica Anglicana.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Diocese de São Paulo, com o bispo Izaias
+  page: '138'
+affiliations:
+- jurisdiction: ica
+  role: bishop
+  diocese: diocese-de-sao-paulo
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Diocese de São Paulo, com o bispo Izaias
+    page: '138'

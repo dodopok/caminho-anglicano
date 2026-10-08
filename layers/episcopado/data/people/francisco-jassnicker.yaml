@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: francisco-jassnicker
+name: Francisco Jassnicker
+full_name: Francisco Jassnicker
+ordinations:
+- order: diaconate
+  date: '1938'
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1938 - … Francisco Jassnicker
+    page: '370'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1938'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1938 - … Francisco Jassnicker
+    page: '370'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

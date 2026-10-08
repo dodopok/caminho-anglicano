@@ -1,0 +1,444 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: paulo-garcia
+name: Paulo Garcia
+full_name: Paulo Ruiz Garcia
+aliases:
+- Deão Paulo Garcia
+- Garcia
+- Pastor Paulo Garcia
+- Paulo Ruiz Garcia
+- Pr. Paulo
+- Pr. Paulo Garcia
+- arcebispo Paulo Ruiz Garcia
+- reverendo Paulo Garcia
+biography: >-
+  Clérigo da IEAB ordenado em 1970; enviado a Recife em 1975, onde liderou a Catedral da Santíssima Trindade (Espinheiro)
+  e fundou várias paróquias. Rompeu com a IEAB em setembro de 2002 e foi sagrado em 2003 primeiro bispo brasileiro
+  da Igreja Episcopal Carismática.
+sources:
+- source: queiroz-2004-ufpe
+  quote: >-
+    Paulo Ruiz Garcia é natural de Presidente Prudente (SP), filho de Manoel Ruiz Garcia e Ana Lourenço Ruiz
+- source: queiroz-2004-ufpe
+  quote: Paulo Garcia não é Anglicano de origem, mas Presbiteriano.
+ordinations:
+- order: diaconate
+  date: '1970'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1970 - … Paulo Ruiz Garcia
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1970'
+  jurisdiction: ieab
+  status: contested
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: Foi Ordenado Ministro da Igreja Episcopal Anglicana do Brasil em 1970.
+  - source: queiroz-2004-ufpe
+    quote: “31 anos de Pastorado 1970 – 2001”
+  - source: folhape-2025-garcia-jubileu
+    quote: >-
+      No último dia 28 de fevereiro de 2025, celebrou-se o Jubileu de Ouro do Pastor Paulo Garcia, líder e servo
+      incansável da Igreja Episcopal Carismática. Ao longo de 50 anos de sacerdócio
+  discrepancies:
+  - field: date
+    value: c.1975
+    sources:
+    - source: folhape-2025-garcia-jubileu
+      quote: >-
+        No último dia 28 de fevereiro de 2025, celebrou-se o Jubileu de Ouro do Pastor Paulo Garcia, líder e servo
+        incansável da Igreja Episcopal Carismática. Ao longo de 50 anos de sacerdócio
+  notes: >-
+    A fonte diz apenas "Ordenado Ministro" em 1970, sem especificar se diaconato ou presbiterato; registrado como
+    presbiterato por ser o início do "pastorado" contado a partir de 1970, mas pode tratar-se do diaconato. Ordenante
+    não informado. Formado no Seminário Teológico Anglicano de São Paulo. Data inferida do jubileu de 50 anos de
+    "sacerdócio" celebrado em 28/02/2025 (artigo de opinião); a fonte não dá a data da ordenação. Diverge do "Ordenado
+    Ministro ... em 1970" da dissertação de Queiroz (2004) — possivelmente 1970 = diaconato e c.1975 = presbiterato,
+    mas nenhuma fonte diz isso.
+- order: episcopate
+  date: '2003-09-08'
+  place: Teatro Guararapes, Centro de Convenções – Olinda (PE)
+  jurisdiction: iecb
+  office: diocesan
+  principal_consecrator: randolph-austin-adler
+  co_consecrators:
+  - antonio-jose-da-costa-raposo
+  - craig-w-bates
+  - dale-franklin-howard
+  - douglas-kessler
+  - elmer-belmont
+  - frank-constantino
+  - john-holloway
+  - kenneth-myers
+  - loren-thomas-hines
+  - michael-davidson
+  - randolph-w-sly
+  status: contested
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O evento aconteceu no dia 08 de setembro de 2003, às 20h, no Teatro Guararapes, Centro de Convenções – Olinda.
+    page: '54'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após uma longa e tradicional cerimônia com vários pastores que vieram dos Estados Unidos exclusivamente para
+      este fim
+    page: '54'
+  - source: ptwiki-iecb
+    quote: >-
+      o qual foi sagrado o seu primeiro Bispo, pelo então Patriarca Randolph Austin Adler, em uma grande cerimônia
+      realizada na cidade do Recife, em 08 de setembro de 2003.
+  - source: ptwiki-iecb
+    quote: >-
+      A consagração episcopal de Paulo Garcia ocorreu em 8 de setembro de 2003, no Teatro Guararapes, em Olinda.
+  - source: enwiki-iccec-bispos
+    quote: '|42||8 September 2003||1 4 6||Paulo Ruiz Garcia||Abp. and Primate Brazil|| Resigned'
+  - source: costa-2021-tese
+    quote: >-
+      Os bispos sagrantes foram os seguintes: Austin Randolph Adler (Patriarca e Primaz), Douglas Kessler, Randolph
+      Sly, Dale Franklin Howard, Loren Thomas Hines, Kenneth Myers, Craig Bates, Elmer Belmont, John Holloway, Michael
+      Davidson, Frank Constantino e Antônio Raposo.
+  - source: costa-2021-tese
+    quote: >-
+      O evento aconteceu no dia 08 de setembro de 2003, às 20h, no Teatro Guararapes, Centro de Convenções – Olinda.
+  - source: queiroz-2004-ufpe
+    quote: >-
+      O evento aconteceu no dia 08 de setembro de 2003, às 20h no Teatro Guararapes, Centro de Convenções – Olinda.
+  - source: queiroz-2004-ufpe
+    quote: >-
+      a vinculação do Pr. Paulo à Igreja Episcopal Carismática, na qual ele foi sagrado o primeiro Bispo do Brasil.
+  discrepancies:
+  - field: office
+    value: primate
+    sources:
+    - source: ptwiki-iecb
+      quote: >-
+        o qual foi sagrado o seu primeiro Bispo, pelo então Patriarca Randolph Austin Adler, em uma grande cerimônia
+        realizada na cidade do Recife, em 08 de setembro de 2003.
+    - source: ptwiki-iecb
+      quote: >-
+        A consagração episcopal de Paulo Garcia ocorreu em 8 de setembro de 2003, no Teatro Guararapes, em Olinda.
+    - source: enwiki-iccec-bispos
+      quote: '|42||8 September 2003||1 4 6||Paulo Ruiz Garcia||Abp. and Primate Brazil|| Resigned'
+    - source: costa-2021-tese
+      quote: >-
+        Os bispos sagrantes foram os seguintes: Austin Randolph Adler (Patriarca e Primaz), Douglas Kessler, Randolph
+        Sly, Dale Franklin Howard, Loren Thomas Hines, Kenneth Myers, Craig Bates, Elmer Belmont, John Holloway,
+        Michael Davidson, Frank Constantino e Antônio Raposo.
+    - source: costa-2021-tese
+      quote: >-
+        O evento aconteceu no dia 08 de setembro de 2003, às 20h, no Teatro Guararapes, Centro de Convenções – Olinda.
+    - source: queiroz-2004-ufpe
+      quote: >-
+        O evento aconteceu no dia 08 de setembro de 2003, às 20h no Teatro Guararapes, Centro de Convenções – Olinda.
+    - source: queiroz-2004-ufpe
+      quote: >-
+        a vinculação do Pr. Paulo à Igreja Episcopal Carismática, na qual ele foi sagrado o primeiro Bispo do Brasil.
+  notes: >-
+    Primeiro bispo brasileiro da Igreja Episcopal Carismática (ICCEC). Sagrantes não nomeados; o livro menciona
+    apenas 'ministros estrangeiros' / pastores vindos dos EUA. Sucessão declarada: ICCEC (Randolph Adler). A própria
+    Wikipédia diz 'Recife' e 'Teatro Guararapes, em Olinda' em trechos diferentes (o Centro de Convenções/Teatro
+    Guararapes fica em Olinda). Co-sagrantes não informados. Fonte primária citada: GARCIA, Paulo Ruiz. Cerimonial
+    Eclesiástico e Liturgia de Sagração. Recife: Comunigraf, 2004. A lista de bispos da ICCEC (Wikipédia EN) dá
+    como sagrantes os nº 1 (Austin Randolph Adler), 4 (Dale F. Howard, Abp. Southeast Province) e 6 (Loren Thomas
+    Hines, Primate Asia), e anota 'Resigned' (deixou a ICCEC; data não informada). Status 'confirmado' pela concordância
+    de duas fontes terciárias independentes quanto a data e sagrante principal. Costa (2021, nota 192, p. 200-201)
+    lista 12 bispos sagrantes, com Adler à frente; a lista ICCEC da Wikipédia dá só três (Adler, Howard, Hines).
+    Sagrantes não nomeados; a fonte diz apenas que houve "vários pastores que vieram dos Estados Unidos, exclusivamente
+    para este fim". Testemunho ocular da autora.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-distrito-rio-sao-paulo
+  start: '1970'
+  end: '1975'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: >-
+      Antes de chegar ao Recife, Paulo Garcia serviu como pastor na Paróquia Cristo Salvador, (região paulista do
+      ABC); no Rio de Janeiro, na Missão Episcopal Morro Dona Marta; na Paróquia de São Lucas (Botafogo); na Paróquia
+      do Redentor (Tijuca); e na Paróquia Cristo Rei (Cidade de Deus, subúrbio carioca de Jacarepaguá), da qual
+      também foi fundador. De volta a São Paulo, em 1973, auxiliou na Paróquia Episcopal da Trindade
+  notes: 'Datas aproximadas: de 1970 (ordenação) até a ida a Recife em março de 1975.'
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  start: 1975-03
+  end: 2002-10
+  end_reason: left
+  status: contested
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Como deão da Catedral Anglicana do Recife, o reverendo Paulo Garcia gozava de grande prestígio local
+    page: '51'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A ruptura de Paulo Garcia com a Igreja Episcopal Anglicana do Brasil foi formalizada em outubro de 2002
+    page: '54'
+  - source: kickhofel-1995
+    quote: >-
+      até março de 1975, quando o bispo Sherrill determinou a transferência para Recife do rev. Paulo Luiz Garcia
+      para assumir a reitoria da paróquia. Essa transferência significou o início do projeto que deu origem a nova
+      unidade eclesiástica, que recebeu o complicado nome de Diocese Setentrional.
+    page: '295'
+  - source: ciceb-betania-historia
+    quote: >-
+      Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom Clóvis
+      Erly
+  - source: queiroz-2004-ufpe
+    quote: >-
+      desde março do mesmo ano, o bispo Edmund Sherrill havia enviado para Recife o Rev. Paulo Garcia com a finalidade
+      de incrementar o crescimento da igreja naquela região.
+  - source: queiroz-2004-ufpe
+    quote: >-
+      setembro de 2002, o Pr. Paulo Garcia declarou, oficialmente, a sua ruptura da Igreja Episcopal Anglicana.
+  - source: ptwiki-iecb
+    quote: Garcia havia atuado na Igreja Presbiteriana antes de ingressar na Igreja Episcopal do Brasil em 1970
+  notes: >-
+    Local: deão da Catedral da Santíssima Trindade. Antes, clérigo da IEAB no Rio de Janeiro na década de 1970 (p.
+    55). Reitor da Paróquia da Santíssima Trindade, Recife. O livro grafa "Paulo Luiz Garcia" aqui e "Paulo Ruiz
+    Garcia" nas pp. 278 e 300. Reitor da Catedral (Santíssima Trindade, Recife) em 1996, sob o bispo Clóvis Erly
+    Rodrigues. Complementa o vínculo 1975–2002. Antes de Recife serviu em São Paulo (Paróquia Cristo Salvador, ABC)
+    e no Rio de Janeiro (Morro Dona Marta, São Lucas-Botafogo, Redentor-Tijuca, Cristo Rei-Cidade de Deus). Liderou
+    a Catedral da Santíssima Trindade (Espinheiro), da qual é chamado "Deão". Reitor/deão da Igreja/Catedral da
+    Trindade, Recife, desde março de 1975.
+  discrepancies:
+  - field: end
+    value: '2002-09-20'
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        até março de 1975, quando o bispo Sherrill determinou a transferência para Recife do rev. Paulo Luiz Garcia
+        para assumir a reitoria da paróquia. Essa transferência significou o início do projeto que deu origem a
+        nova unidade eclesiástica, que recebeu o complicado nome de Diocese Setentrional.
+      page: '295'
+    - source: ciceb-betania-historia
+      quote: >-
+        Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom
+        Clóvis Erly
+    - source: queiroz-2004-ufpe
+      quote: >-
+        desde março do mesmo ano, o bispo Edmund Sherrill havia enviado para Recife o Rev. Paulo Garcia com a finalidade
+        de incrementar o crescimento da igreja naquela região.
+    - source: queiroz-2004-ufpe
+      quote: >-
+        setembro de 2002, o Pr. Paulo Garcia declarou, oficialmente, a sua ruptura da Igreja Episcopal Anglicana.
+    - source: ptwiki-iecb
+      quote: Garcia havia atuado na Igreja Presbiteriana antes de ingressar na Igreja Episcopal do Brasil em 1970
+  - field: end_reason
+    value: schism
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        até março de 1975, quando o bispo Sherrill determinou a transferência para Recife do rev. Paulo Luiz Garcia
+        para assumir a reitoria da paróquia. Essa transferência significou o início do projeto que deu origem a
+        nova unidade eclesiástica, que recebeu o complicado nome de Diocese Setentrional.
+      page: '295'
+    - source: ciceb-betania-historia
+      quote: >-
+        Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom
+        Clóvis Erly
+    - source: queiroz-2004-ufpe
+      quote: >-
+        desde março do mesmo ano, o bispo Edmund Sherrill havia enviado para Recife o Rev. Paulo Garcia com a finalidade
+        de incrementar o crescimento da igreja naquela região.
+    - source: queiroz-2004-ufpe
+      quote: >-
+        setembro de 2002, o Pr. Paulo Garcia declarou, oficialmente, a sua ruptura da Igreja Episcopal Anglicana.
+    - source: ptwiki-iecb
+      quote: Garcia havia atuado na Igreja Presbiteriana antes de ingressar na Igreja Episcopal do Brasil em 1970
+  - field: start
+    value: '1970'
+    sources:
+    - source: ptwiki-iecb
+      quote: Garcia havia atuado na Igreja Presbiteriana antes de ingressar na Igreja Episcopal do Brasil em 1970
+- jurisdiction: iecb
+  role: founder
+  start: 2002-10
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      este estabeleceu, na mesma cidade, a Igreja Episcopal Carismática do Brasil (IECB), sendo eleito o seu primeiro
+      bispo.
+    page: '46'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Com a ruptura de Garcia, em 2002, sua saída da Comunhão Anglicana e a fundação da Igreja Episcopal Carismática
+      do Brasil
+    page: '109'
+- jurisdiction: iecb
+  role: primate
+  start: '2007'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Com isso, Paulo Ruiz Garcia foi reconhecido como Arcebispo e Primaz da IECB.
+    page: '55'
+  notes: Em 2024 anunciou Frederico Bastos como seu sucessor na primazia.
+- jurisdiction: cei
+  role: primate
+  start: '2019-09-14'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      quando ele foi instituído como Arcebispo do Recife e Primaz da Comunhão Episcopal Internacional (CEI)
+    page: '62'
+- jurisdiction: iecb
+  role: primate
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: A IECB segue a forma de governo episcopal, tendo como Bispo Primaz, o Arcebispo Paulo Ruiz Garcia.
+  notes: >-
+    Reconhecido como arcebispo e primaz em 2007, após as sagrações de Ximenes e Bastos; instituído arcebispo do
+    Recife e primaz da CEI em 14/9/2019. A lista da Wikipédia dá '(2005-)' para o cargo de arcebispo do Recife.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: deao
+  end: '2002'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: sendo pastoreada pelo seu deão, o então reverendo Paulo Garcia.
+    page: '109'
+  notes: 'Local: Catedral da Trindade, Recife.'
+- jurisdiction: iecb
+  role: archbishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: a Igreja Episcopal Carismática do Brasil (IECB), estabelecida através do
+    page: '173'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      arcebispo Paulo Ruiz Garcia, antes filiada à ICCEC, hoje à Comunhão Episcopal Internacional (CEI), com sé
+      na Catedral da Trindade
+    page: '174'
+  notes: '''estabelecida através do arcebispo Paulo Ruiz Garcia''; situação em 2025.'
+events:
+- type: other
+  date: 2002-10
+  description: >-
+    Saida do Rev. Paulo Garcia, deao da Catedral da Santissima Trindade do Recife (2002); o bispo Robinson nomeia
+    Filadelfo Oliveira deao interino.
+  status: confirmed
+  sources:
+  - source: ens-2002-241-15
+    quote: >-
+      the bishop of the Anglican Diocese of Recife, Robinson Cavalcanti, has appointed the Rev. Filadelfo Oliveira
+      as acting dean of the cathedral
+  - source: costa2021
+    quote: Em setembro de 2002, ocorreu o que chamamos de “Pequena Crise do Recife”105
+- type: other
+  date: 2002-09
+  description: >-
+    Paulo Garcia declara oficialmente a ruptura com a IEAB; disputa judicial pelo templo da Catedral da Santíssima
+    Trindade (Rua Carneiro Vilela, Espinheiro, Recife) entre a comunidade dele e a Diocese do Recife liderada por
+    Robinson Cavalcanti
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: >-
+      em setembro de 2002, o Pr. Paulo Garcia declarou, oficialmente, a sua ruptura da Igreja Episcopal Anglicana.
+  - source: queiroz-2004-ufpe
+    quote: >-
+      De um lado, a comunidade liderada pelo Pastor Paulo Garcia. Do outro, a Diocese local da Igreja Episcopal
+      Anglicana do Brasil (IEAB), liderada por Dom Robinson Cavalcanti.
+- type: other
+  date: '2019-09-14'
+  description: >-
+    Paulo Garcia instituído Arcebispo do Recife e Primaz da Comunhão Episcopal Internacional (CEI), em culto pelos
+    seus 80 anos de vida e 50 de ministério
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: >-
+      No mesmo ano, em 14 de setembro, foi realizado um culto em ação de graças pelos 80 anos de vida e 50 anos
+      de ministério de Paulo Garcia, quando ele foi instituído como Arcebispo do Recife e Primaz da Comunhão Episcopal
+      Internacional (CEI)
+- type: other
+  date: '2025-02-28'
+  description: Jubileu de Ouro (50 anos de sacerdócio) de Paulo Garcia celebrado em 28/2/2025
+  status: probable
+  sources:
+  - source: folhape-2025-garcia-jubileu
+    quote: >-
+      No último dia 28 de fevereiro de 2025, celebrou-se o Jubileu de Ouro do Pastor Paulo Garcia, líder e servo
+      incansável da Igreja Episcopal Carismática.
+- type: other
+  date: '2007-04-14'
+  description: Paulo Garcia reconhecido como Arcebispo e Primaz da IECB após as sagrações de 14/4/2007
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: Com isso, Paulo Garcia foi reconhecido como Arcebispo e Primaz da denominação.
+- type: other
+  date: '2002'
+  description: >-
+    Paulo Garcia deixa a IEAB acompanhado dos reverendos Célio Spineli, Edgar Ferreira e Frederico Bastos, ficando
+    com o templo da Catedral (Rua Carneiro Vilela) e as missões Bem-Aventuranças e Pedra Viva
+  status: probable
+  sources:
+  - source: costa-2021-tese
+    quote: >-
+      Primeiro aconteceu a saída do rev. Paulo Garcia, acompanhado dos reverendos Célio Spineli, Edgar Ferreira
+      e Frederico Bastos, que ficaram na posse do templo da Catedral Episcopal Anglicana, na Rua Carneiro Vilela,
+      e as missões Bem-Aventuranças e Pedra Viva.
+- type: other
+  date: '1984-11-24'
+  description: Candidato na eleição episcopal da Diocese Central (Rio de Janeiro) vencida por Sydney Alcoba Ruiz
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Sydney Alcoba Ruiz, que foi eleito para o episcopado na segunda sessão do concílio extraordinário especialmente
+      convocado para o dia 24 de novembro de 1984, na Paróquia da SS.Trindade (rua Carolina Mayer, 61). Ruiz alcançou
+      o número de votos necessários nas duas ordens (clérigos e leigos) no terceiro escrutínio, tendo disputado
+      a eleição com os colegas Jaci Correia Maraschin e Paulo Ruiz Garcia.
+    page: '278'
+- type: other
+  date: 1984-07
+  description: >-
+    Era tido por Sherrill e pela delegação de Recife como certo para bispo coadjutor da Diocese Setentrional, mas
+    o Sínodo de 1984 elegeu Clóvis Erly Rodrigues
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      O resultado da eleição, que saiu no terceiro escrutínio, sob forte emoção, contrariou a vontade e os planos
+      do bispo Sherrill e da delegação, que tinham como certa a indicação do reverendo Paulo Ruiz Garcia, pároco
+      na capital pernambucana e líder espiritual naquela região.
+    page: '300'
+- type: other
+  date: '1984'
+  description: Paulo Garcia é preterido na eleição de bispo coadjutor da Diocese do Recife (IEAB).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em 1984, Paulo Garcia foi preterido na eleição de bispo coadjutor, favorecendo um clérigo identificado com
+      posição liberal.
+    page: '52'
+- type: other
+  date: '2024'
+  description: >-
+    Paulo Garcia anuncia a escolha do bispo Frederico Bastos para sucedê-lo na primazia e na liderança plena da
+    IECB, assumindo a Catedral da Trindade.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em 2024, dom Paulo Garcia anunciou a escolha do bispo Frederico Bastos para sucedê-lo na primazia da Igreja
+      e na liderança plena da IECB, passando a assumir a Catedral da Trindade.
+    page: '63'

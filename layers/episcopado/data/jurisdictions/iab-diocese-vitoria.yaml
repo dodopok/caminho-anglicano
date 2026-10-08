@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iab-diocese-vitoria
+name: Diocese de Vitória de Santo Antão (IAB)
+aliases:
+- Diocese de Vitória
+- Diocese de Vitória (Igreja Anglicana no Brasil)
+- Diocese de Vitória de Santo Antão
+- Diocese de Vitória de Santo Antão (Catedral Pedra Viva)
+type: diocese
+tradition: anglican
+country: BR
+founded:
+  date: '2018-05-12'
+  sources:
+  - source: iab-church-planting-bishops
+    quote: Bishop Marcio Simoes – Diocese of Vittoria
+website: https://www.dv.anglicananobrasil.com/
+description: >-
+  Diocese do interior de Pernambuco com sé na Catedral da Ressurreição, em Vitória de Santo Antão (PE) — não confundir
+  com Vitória (ES). Bispo diocesano: Márcio José de Sousa Simões.
+sources:
+- source: dv-quem-somos-2026
+  quote: >-
+    A Igreja Anglicana no Brasil – Diocese de Vitória abrange a área geográfica do interior do Estado de Pernambuco
+- source: dv-quem-somos-2026
+  quote: >-
+    Sede da diocese Catedral da Ressurreição Rua Professor José Augusto Tibúrcio de Melo, 542, Bela Vista, Vitória
+    de Santo Antão/PE.
+relations:
+- type: part_of
+  target: iab
+  status: confirmed
+  sources:
+  - source: iab-church-planting-bishops
+    quote: Bishop Marcio Simoes – Diocese of Vittoria
+  - source: dv-pastores
+    quote: Revda. Jeane Simões
+  - source: dv-bispo
+    quote: O Bispo Márcio casou-se com Jeane Simões – atualmente Revda. na Catedral Ressurreição
+  - source: iab-carta-nacao-2022
+    quote: Revmo. + Marcio Simões Bispo Diocesano de Vitória PE
+  - source: dv-bispo
+    quote: Bispo diocesano Bispo Márcio Simões
+  - source: cant-novas-igrejas-2024
+    quote: Diocese de Vitória de Santo Antão, a qual está sob a liderança do bispo Márcio José de Sousa Simões.
+    page: '33'
+  - source: iab-comunicado-oficial-2018
+    quote: Márcio Simões Bispo da Diocese de Vitória PE
+  - source: dr-historia
+    quote: a Igreja Anglicana no Brasil, agora com três dioceses (Recife, João Pessoa e Vitória)
+  - source: iab-comunicado-oficial-2018
+    quote: tivemos o privilégio de formar a Província da Igreja Anglicana no Brasil, com 3 dioceses
+  date: '2018-05-12'
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: e Frederico Carneiro Rêgo Bastos, da Diocese de Vitória de Santo Antão
+  - source: ptwiki-iecb
+    quote: Jean Clayton de Albuquerque do Nascimento (2020)
+  - source: ptwiki-iecb
+    quote: Felipe Alves da Silva (2024)
+  - source: cant-novas-igrejas-2024
+    quote: Frederico Carneiro Rêgo Bastos (Diocesano de Vitória de Santo Antão)
+    page: '55'
+  - source: cant-novas-igrejas-2024
+    quote: Jean Clayton de Albuquerque do Nascimento (Auxiliar da Diocese de Vitória de Santo Antão)
+    page: '57'

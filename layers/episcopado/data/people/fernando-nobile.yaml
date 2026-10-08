@@ -1,0 +1,195 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: fernando-nobile
+name: Fernando Nobile
+full_name: Luiz Fernando Salgado
+aliases:
+- Luis Fernando Salgado
+- Luiz Fernando Salgado
+biography: >-
+  Nome religioso de Luiz Fernando Salgado. Ex-seminarista da IEAB (IAET); diácono e presbítero (2005) por Lucas
+  Macieira; clérigo da Igreja Anglicana – Diocese do Recife (2006–2018); sagrado bispo em 20/11/2018 (sagrante Josué
+  Sousa Torres); bispo diocesano da Diocese Sul/Sudeste da Igreja Anglicana Episcopal do Brasil (IEACH), com catedral
+  em Ribeirão Preto.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    dom Fernando Nobile (nome religioso de Luiz Fernando Salgado), cuja catedral é a Igreja Anglicana Cristo Redentor,
+    localizada na cidade de Ribeirão Preto
+  page: '124'
+ordinations:
+- order: diaconate
+  date: '2005-03-26'
+  place: Ribeirão Preto (SP)
+  jurisdiction: iadb-lorite
+  ordained_by: iranildo-macieira-da-silva
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia 26 de março de 2005, na cidade de Ribeirão Preto (SP), os ministros licenciados Ricardo Lorite de Lima,
+      Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Diaconal
+    page: '118'
+  - source: cant-novas-igrejas-2024
+    quote: sendo ordenado diácono e presbítero pelo bispo Lucas Macieira.
+    page: '124'
+  notes: >-
+    A p. 124 diz que Nobile foi ordenado diácono e presbítero por Lucas Macieira; a data e o local vêm da p. 118
+    (ordenação coletiva dos quatro). A combinação é inferência.
+- order: presbyterate
+  date: '2005-03-27'
+  place: Igreja Evangélica Congregacional de Ribeirão Preto (SP)
+  jurisdiction: iadb-lorite
+  ordained_by: iranildo-macieira-da-silva
+  status: probable
+  sources:
+  - source: ig-josue-2025-03-28-presbiterato-2005
+    quote: >-
+      Na data de 27 de março de 2005, Domingo de Páscoa, os Rev. Diáconos Ricardo Lorite de Lima, Rui Costa Barbosa,
+      Luis Fernando Salgado e Josué Souza Torres foram elevados ao Ministério Presbiteral da Igreja de Cristo, Una,
+      Santa, Católica e Apostólica, através da imposição das mãos de Dom Iranildo Macieira das Silva (Dom Lucas).
+      A cerimônia de Ordenação ocorreu na Igreja Evangélica Congregacional de Ribeirão Preto.
+  - source: cant-novas-igrejas-2024
+    quote: e no dia 27 de março, os quatro diáconos foram ordenados presbíteros por bispos independentes.
+    page: '118'
+  - source: cant-novas-igrejas-2024
+    quote: sendo ordenado diácono e presbítero pelo bispo Lucas Macieira.
+    page: '124'
+  notes: >-
+    Também impuseram as mãos os padres Manuel (Igreja Antigo-Católica), João Ripoli e Mário Palumbo (Igreja Católica
+    Romana). Ordenações autorizadas por Leonardo Marin-Saavedra (Anglican Independent Communion Worldwide). A p.
+    124 diz que Nobile foi ordenado diácono e presbítero por Lucas Macieira; a data e o local vêm da p. 118 (ordenação
+    coletiva dos quatro). A combinação é inferência.
+- order: episcopate
+  date: '2018-11-20'
+  jurisdiction: null
+  principal_consecrator: josue-sousa-torres
+  co_consecrators:
+  - cassio-prado
+  - josue-augusto
+  - ricardo-lorite-de-lima
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A sua consagração episcopal ocorreu em 20 de novembro de 2018. A cerimônia foi presidida pelo bispo Josué
+      Sousa Torres, com a presença de outros bispos da Igreja Episcopal do Evangelho Pleno (IEEP), dom Ricardo Lorite,
+      da Igreja Anglicana do Brasil, dom Josué Augusto, da Igreja Anglicana Unida do Brasil e dom Cassio Prado
+  - source: cant-anglo-catolicismo-2026
+    quote: >-
+      foi consagrado bispo em 20 de novembro de 2018 por Dom Josué Sousa Torres, com participação de Dom Ricardo
+      Lorite, Dom Josué Augusto e Dom Cassio Prado.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A sua consagração episcopal ocorreu em 20 de novembro de 2018. A cerimônia foi presidida pelo bispo Josué
+      Sousa Torres, com a presença de outros bispos da Igreja Episcopal do Evangelho Pleno (IEEP), dom Ricardo Lorite,
+      da Igreja Anglicana do Brasil, dom Josué Augusto, da Igreja Anglicana Unida do Brasil e dom Cassio Prado (com
+      linha sucessória da Igreja Galicana).
+    page: '125'
+  notes: >-
+    Ex-IEAB, depois Diocese Anglicana do Recife; hoje bispo da Diocese Sul/Sudeste da Igreja Anglicana Episcopal
+    do Brasil (IAEB, ligada à Igreja chilena de Patricio Viveros). Presidida por Josué Sousa Torres; o livro diz
+    que os demais bispos estavam 'presentes' (outros bispos da IEEP não nomeados, Ricardo Lorite, Josué Augusto
+    da Igreja Anglicana Unida do Brasil, e Cassio Prado, 'com linha sucessória da Igreja Galicana'); registrados
+    como co-sagrantes. Nobile era então clérigo independente (Igreja Anglicana Cristo Redentor, Ribeirão Preto).
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  start: '2006'
+  end: '2018'
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      o reverendo Fernando Nobile ingressou na Igreja Anglicana – Diocese do Recife – em 2006, a convite de dom
+      Robinson
+    page: '124'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Fernando Nobile permaneceu como clérigo nesta denominação até o ano de 2018, quando esta se tornou a Igreja
+      Anglicana no Brasil (IAB), a Província da GAFCON.
+    page: '124'
+  notes: >-
+    Ordens reconhecidas pela IA-DR (então sob supervisão de Gregory Venables, Cone Sul). Arcediagado do Sul/Sudeste
+    dissolvido em 2018; a Igreja Anglicana Cristo Redentor (Ribeirão Preto) voltou a ser independente.
+- jurisdiction: iaeb
+  role: bishop
+  start: '2020'
+  end: 2023-07
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Seguindo os Cânones da Igreja da Inglaterra ele foi recebido como um bispo sacramental, responsável por administrar
+      os sacramentos.
+    page: '125'
+  notes: >-
+    Recebido em 2020 como 'bispo sacramental' porque Patricio Robles não pôde vir ao Brasil durante a pandemia.
+- jurisdiction: iaeb
+  role: diocesan_bishop
+  diocese: diocese-sul-sudeste
+  start: 2023-07
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Somente em julho de 2023, na Paróquia Anglicana de São Jorge, o bispo Patricio Robles e o bispo James Tavares
+      estiveram na instituição de dom Fernando Nobile como diocesano da Diocese Sul/Sudeste, da IAEB.
+    page: '125'
+  - source: cant-novas-igrejas-2024
+    quote: O bispo diocesano que atende à IAEB é dom Fernando Nobile
+    page: '124'
+  notes: >-
+    Instituído na Paróquia Anglicana de São Jorge (Rio Claro, SP) por Patricio Viveros Robles, com James Tavares;
+    catedral: Igreja Anglicana Cristo Redentor, Ribeirão Preto.
+- jurisdiction: ieab-dasp
+  role: member
+  end: c.2004
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O atual quadro complexo tem origem a partir da saída de membros da Diocese Anglicana de São Paulo da Igreja
+      Episcopal Anglicana do Brasil (IEAB). Dentre eles estavam Ricardo Lorite de Lima, Rui Costa Barbosa, Luis
+      Fernando Salgado e Josué Sousa Torres.
+    page: '117'
+  notes: >-
+    O livro diz que saíram da DASP/IEAB antes da aproximação com a REC (abril de 2004); na p. 145 são chamados de
+    'seminaristas'. Data de saída não informada.
+- jurisdiction: ieab
+  role: other
+  role_description: seminarista
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Nobile iniciou a sua caminhada no Anglicanismo como membro da IEAB, realizando seus estudos seminarísticos
+      no IAET de São Paulo, quando o bispo Hiroshi Ito era o diocesano.
+    page: '124'
+  notes: Durante o episcopado de Hiroshi Ito na DASP.
+events:
+- type: other
+  date: 2023-07
+  description: >-
+    Em julho de 2023, na Paróquia Anglicana de São Jorge (Rio Claro, SP), Fernando Nobile foi instituído bispo diocesano
+    da Diocese Sul/Sudeste da IAEB, com a presença do arcebispo Patricio Viveros Robles e do bispo James Tavares.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Somente em julho de 2023, na Paróquia Anglicana de São Jorge, o bispo Patricio Robles e o bispo James Tavares
+      estiveram na instituição de dom Fernando Nobile como diocesano da Diocese Sul/Sudeste, da IAEB.
+    page: '125'
+- type: other
+  date: null
+  description: >-
+    Sagração de Fernando Nobile, da Igreja Anglicana Cristo Redentor (Ribeirão Preto), com a presença de Josué Augusto
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Também foi possível constatar a presença do bispo Josué Augusto na sagração de dom Fernando Nobile da Igreja
+      Anglicana Cristo Redentor, em Ribeirão Preto.
+    page: '160'

@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: maria-nylde-amaral-da-cunha
+name: Maria Nylde Amaral da Cunha
+aliases:
+- Maria Nilde Cunha
+ordinations:
+- order: diaconate
+  date: '1989'
+  jurisdiction: ieab
+  ordained_by: luiz-osorio-pires-prado
+  status: probable
+  sources:
+  - source: cant-identidades-numeros-2024
+    quote: >-
+      A Ordem foi dissolvida e a Irmã Nylde foi ordenada ao diaconato e ao presbiterato pelo bispo Prado, exercendo
+      seu ministério na Diocese de Pelotas.
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1989 - … Maria Nilde Cunha
+    page: '373'
+  - source: kickhofel-1995
+    quote: >-
+      Das cinco candidatas que fizeram o teste vocacional, apenas a senhora Nilde Cunha, viúva e presidente, na
+      época, da diretoria diocesana e nacional da Sociedade Auxiliadora de Senhoras, perseverou, tornando-se a primeira
+      e única freira da Igreja Episcopal. Sem novas candidatas, a Comunidade não poderia vingar, e irmã Maria, mais
+      tarde foi ordenada ao diaconato e ao presbiterado pelo bispo Luiz Osório Pires Prado, da Diocese Anglicana
+      de Pelotas, onde passou a exercer o seu ministério regular.
+    page: '318'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: null
+  jurisdiction: ieab
+  ordained_by: luiz-osorio-pires-prado
+  status: probable
+  sources:
+  - source: cant-identidades-numeros-2024
+    quote: >-
+      A Ordem foi dissolvida e a Irmã Nylde foi ordenada ao diaconato e ao presbiterato pelo bispo Prado, exercendo
+      seu ministério na Diocese de Pelotas.
+  - source: kickhofel-1995
+    quote: >-
+      Das cinco candidatas que fizeram o teste vocacional, apenas a senhora Nilde Cunha, viúva e presidente, na
+      época, da diretoria diocesana e nacional da Sociedade Auxiliadora de Senhoras, perseverou, tornando-se a primeira
+      e única freira da Igreja Episcopal. Sem novas candidatas, a Comunidade não poderia vingar, e irmã Maria, mais
+      tarde foi ordenada ao diaconato e ao presbiterado pelo bispo Luiz Osório Pires Prado, da Diocese Anglicana
+      de Pelotas, onde passou a exercer o seu ministério regular.
+    page: '318'
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dap
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Das cinco candidatas que fizeram o teste vocacional, apenas a senhora Nilde Cunha, viúva e presidente, na
+      época, da diretoria diocesana e nacional da Sociedade Auxiliadora de Senhoras, perseverou, tornando-se a primeira
+      e única freira da Igreja Episcopal. Sem novas candidatas, a Comunidade não poderia vingar, e irmã Maria, mais
+      tarde foi ordenada ao diaconato e ao presbiterado pelo bispo Luiz Osório Pires Prado, da Diocese Anglicana
+      de Pelotas, onde passou a exercer o seu ministério regular.
+    page: '318'
+events:
+- type: other
+  date: null
+  description: >-
+    Primeira e única freira da Igreja Episcopal (irmã Maria), na Comunidade de Santa Maria fundada por Kratz
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Das cinco candidatas que fizeram o teste vocacional, apenas a senhora Nilde Cunha, viúva e presidente, na
+      época, da diretoria diocesana e nacional da Sociedade Auxiliadora de Senhoras, perseverou, tornando-se a primeira
+      e única freira da Igreja Episcopal. Sem novas candidatas, a Comunidade não poderia vingar, e irmã Maria, mais
+      tarde foi ordenada ao diaconato e ao presbiterado pelo bispo Luiz Osório Pires Prado, da Diocese Anglicana
+      de Pelotas, onde passou a exercer o seu ministério regular.
+    page: '318'

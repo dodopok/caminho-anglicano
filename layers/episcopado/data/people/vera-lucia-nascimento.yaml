@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: vera-lucia-nascimento
+name: Vera Lúcia Nascimento
+aliases:
+- Revda. Vera Nascimento
+- Vera Lúcia Melo do Nascimento
+biography: >-
+  Presbítera ordenada em 2003 na Paróquia Anglicana Emanuel (Olinda), ainda na IEAB; seguiu com a Diocese do Recife
+  e em 2019 era coadjutora da Igreja Anglicana Emanuel (IAB).
+sources:
+- source: ieabrecife-noticias-2003-08
+  quote: a Ordenação ao Presbiterado da Revda. Vera Nascimento
+- source: dr-igrejas-2019
+  quote: 'Coadjutora: Revda. Vera Nascimento'
+ordinations:
+- order: presbyterate
+  date: '2003-08-09'
+  place: Paróquia Anglicana Emanuel (Olinda-PE)
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: ieabrecife-noticias-2003-08
+    quote: >-
+      Será no sábado, dia 09/08, às 18h, na Paróquia Anglicana Emanuel, a Ordenação ao Presbiterado da Revda. Vera
+      Nascimento.
+  notes: >-
+    Notícia antecipada (evento anunciado). Ordenante não informado (bispo diocesano: Robinson Cavalcanti; sufragâneo:
+    Filadelfo Oliveira). Ordenação de mulher na Diocese do Recife antes do cisma.
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  diocese: iab-diocese-recife
+  start: '2019'
+  status: confirmed
+  sources:
+  - source: dr-igrejas-2019
+    quote: 'Coadjutora: Revda. Vera Nascimento'

@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-rogan-payne
+name: John Rogan Payne
+full_name: John Rogan Payne
+ordinations:
+- order: diaconate
+  date: '1980'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1980 - … John Rogan Payne
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1980'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1980 - … John Rogan Payne
+    page: '372'
+  - source: kickhofel-1995
+    quote: >-
+      Mais tarde, o missionário Blankley foi substituído pelo leigo John Payne, que foi ordenado pela igreja brasileira.
+    page: '297'
+  notes: >-
+    Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato. Sucedeu Blankley em
+    Salvador; ordenado pela igreja brasileira.

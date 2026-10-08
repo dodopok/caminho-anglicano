@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: henry-compton
+name: Henry Compton
+full_name: Henry Compton
+death:
+  date: '1713-07-07'
+  sources:
+  - source: stubbs-1897
+    quote: Henry Compton. Oxford; London, 1675; d. 17 13, July 7-
+  - source: wikidata-api-2
+    quote: '"Q2347142": enwiki "Henry Compton (bishop)"'
+wikidata: Q2347142
+biography: >-
+  Bispo de Oxford (1674) e de Londres (1675-1713); como bispo de Londres presidiu a sagração de Sancroft (1678).
+sources:
+- source: stubbs-1897
+  quote: Henry Compton. Oxford; London, 1675; d. 17 13, July 7-
+- source: wikidata-api-2
+  quote: '"Q2347142": enwiki "Henry Compton (bishop)"'
+ordinations:
+- order: episcopate
+  date: '1674-12-06'
+  place: Lambeth
+  jurisdiction: church-of-england
+  principal_consecrator: gilbert-sheldon
+  co_consecrators:
+  - george-morley
+  - john-dolben
+  - joseph-henshaw
+  - peter-gunning
+  - seth-ward
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: >-
+      a. d. 1674, Dec. 6. Henry Compton. Oxford; London, 1675; d. 17 13, July 7- Consecrated at Lambeth by Archbishop
+      Sheldon, George of Winchester, Seth of Sarum, John of Rochester, Joseph of Peterborough, and Peter of Chichester
+      ; Reg. Sheldon, 123.
+  notes: >-
+    Stubbs (Registrum Sacrum Anglicanum, 1897) segue os registros dos arcebispos (citados no fim de cada verbete)
+    e nomeia o sagrante que presidiu primeiro. Os co-sagrantes aparecem só como 'Prenome of Sé'; a identificação
+    dos nomes completos foi feita cruzando com os próprios verbetes de Stubbs (quem ocupava a sé na data). Sagrado
+    bispo de Oxford. George of Winchester = George Morley; Peter of Chichester = Peter Gunning (Chichester antes
+    de Ely).
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-oxford
+  start: '1674-12-06'
+  end: '1675'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Henry Compton. Oxford; London, 1675; d. 17 13, July 7-
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-london
+  start: '1675'
+  end: '1713-07-07'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: Henry Compton. Oxford; London, 1675; d. 17 13, July 7-
+  notes: >-
+    Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.

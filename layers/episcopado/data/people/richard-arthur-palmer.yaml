@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: richard-arthur-palmer
+name: Richard Arthur Palmer
+aliases:
+- Arcebispo Palmer
+biography: Arcebispo da Igreja Episcopal Protestante Livre, destituído em 2020 por um grupo de bispos.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    aceita a validade de todos os bispos dessa Igreja até a destituição do Arcebispo Richard Arthur Palmer em 2020.
+  page: '101'
+affiliations:
+- jurisdiction: fpec
+  role: archbishop
+  end: '2020'
+  end_reason: deposition
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      aceita a validade de todos os bispos dessa Igreja até a destituição do Arcebispo Richard Arthur Palmer em
+      2020.
+    page: '101'

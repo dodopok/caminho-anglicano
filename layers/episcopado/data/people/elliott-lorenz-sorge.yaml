@@ -1,0 +1,149 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: elliott-lorenz-sorge
+name: Elliott Lorenz Sorge
+full_name: Elliott Lorenz Sorge
+aliases:
+- Elliot Lorenz Sorge
+- Elliot Sorge
+- Rt. Rev. Elliott L. Sorge
+birth:
+  date: '1929-01-31'
+  sources:
+  - source: costa2021
+    quote: Elliott Lorenz Sorge nasceu em 31 de janeiro de 1929 na cidade de Michigan, Indiana.
+  - source: costa2021
+    quote: Faleceu em 06 de dezembro de 2011.
+death:
+  date: '2011-12-06'
+  sources:
+  - source: costa2021
+    quote: Elliott Lorenz Sorge nasceu em 31 de janeiro de 1929 na cidade de Michigan, Indiana.
+  - source: costa2021
+    quote: Faleceu em 06 de dezembro de 2011.
+wikidata: Q21598002
+biography: >-
+  Missionario norte-americano; primeiro bispo da Diocese Sul Central/Sao Paulo (1971-1977); depois bispo de Easton
+  (TEC, 1983-1993).
+sources:
+- source: costa2021
+  quote: Elliott Lorenz Sorge nasceu em 31 de janeiro de 1929 na cidade de Michigan, Indiana.
+- source: costa2021
+  quote: Faleceu em 06 de dezembro de 2011.
+ordinations:
+- order: episcopate
+  date: '1971-01-31'
+  place: Paroquia da Santissima Trindade, Sao Paulo
+  jurisdiction: ieab
+  office: diocesan
+  principal_consecrator: plinio-lauer-simoes
+  co_consecrators:
+  - daniel-de-pina-cabral
+  - edmund-knox-sherrill
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      primeiro bispo da Diocese do Centro-Sul do Brasil, sendo consagrado em 1971, pelo bispo Plinio Lauer Simões.
+  - source: costa2021
+    quote: o norte-americano Elliott Lorenz Sorge73, sagrado na Paróquia da Santíssima Trindade.
+  - source: wp-pt-sorge
+    quote: >-
+      Sorge foi eleito o primeiro bispo da Diocese Sul Central do Brasil em 31 de janeiro de 1970 e foi consagrado
+      em 1971.
+  - source: kickhofel-1995
+    quote: >-
+      Sorge foi sagrado ao episcopado na Paróquia da SS. Trindade, em São Paulo, no dia 31 de janeiro de 1971. Na
+      ausência do bispo primaz, por motivos de saúde, foi sagrante por delegação o bispo Plínio Lauer Simões e co-sagrantes
+      os bispos Edmund Knox Sherrill e Daniel da Pina Cabral, da Diocese dos Libombos, Moçambique, que foi também
+      o pregador.
+    page: '284'
+  notes: >-
+    Eleito em 31/01/1970; primeiro bispo eleito por uma diocese brasileira apos a autonomia. Simões foi sagrante
+    por delegação, na ausência do primaz Krischke, doente.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1965'
+  end: 1971-01
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      um missionário americano que começou a trabalhar no Brasil em 1965, em Belém do Pará … Na época da eleição,
+      era ministro encarregado das paróquias de São Marcos e da Trindade, em Itariri, e da Paróquia de Todos os
+      Santos, em Santos, onde residia.
+    page: '284'
+  notes: Missionário em Belém do Pará (Missão de Santa Maria) e depois em Itariri e Santos.
+- jurisdiction: ieab
+  role: diocesan_bishop
+  diocese: ieab-dasp
+  start: 1971-01
+  end: '1977-06-19'
+  end_reason: resignation
+  status: contested
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      O bispo Sorge, que dirigiu a diocese de janeiro de 1971 a junho de 1977, tentou implantar um programa integrado,
+      envolvendo a maioria das paróquias e missões, mas não conseguiu neutralizar o descontentamento e forte oposição
+      da maioria do clero, provocando sua renúncia em 19 de junho de 1977.
+    page: '287'
+  - source: costa2021
+    quote: 1971-1977 – Elliott Lorenz Sorge
+  - source: wp-pt-sorge
+    quote: >-
+      Diante disso, Dom Elliot renunciou a sua sé e foi sucedido como segundo bispo diocesano por Dom Sumio Takatsu.
+  - source: ens-77198
+    quote: >-
+      in Apostolic succession to the Rt. Rev. Elliott Sorge who resigned the see to become the staff officer to
+      the Council on the Development of Ministry of the Episcopal Church.
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1971-1976 - Elliot Lorenz Sorge
+    page: '368'
+  discrepancies:
+  - field: end
+    value: '1976'
+    sources:
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1971-1976 - Elliot Lorenz Sorge
+      page: '368'
+  notes: >-
+    Renunciou ao ser nomeado oficial no Centro da Igreja Episcopal (Nova York); depois bispo de Easton (TEC) 1983-1993.
+events:
+- type: other
+  date: '1977'
+  description: >-
+    O bispo Elliott Lorenz Sorge, "recentemente regressado do Brasil por razões de estratégia missionária", recebe
+    status colegial na Câmara dos Bispos da TEC (reunião especial de 1977).
+  status: confirmed
+  sources:
+  - source: ia-gc-journal-1979
+    quote: >-
+      to give collegial status to the Rt. Rev. Elliott Sorge, recently returned from Brazil for reasons of missionary
+      strategy, who will continue to serve his episcopate in connection with the Executive Council office of the
+      Episcopal Church.
+- type: other
+  date: '1970'
+  description: >-
+    Eleito bispo pela Diocese Sul Central (São Paulo), a primeira vez que uma diocese brasileira elegeu o próprio
+    bispo
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      (190) A primeira vez que isso aconteceu foi em São Paulo, em 1970, quando a Diocese Sul Central elegeu o missionário
+      Elliot Lorenz Sorge para bispo daquela diocese.
+    page: '251'
+- type: other
+  date: 1970-10
+  description: >-
+    Eleito primeiro bispo da Diocese Sul Central no sexto escrutínio do concílio extraordinário convocado por Sherrill;
+    primeira eleição de bispo depois de 1965 sem autorização do exterior
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Em outubro de 1970, Sherrill convocou um concílio extraordinário para escolher o primeiro bispo da Diocese
+      Sul Central. … No sexto escrutínio, foi eleito o reverendo Elliot Lorenz Sorge, um missionário americano que
+      começou a trabalhar no Brasil em 1965, em Belém do Pará
+    page: '284'

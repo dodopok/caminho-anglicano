@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieub
+acronym: IEUB
+name: Igreja Episcopal Unida do Brasil
+type: national_church
+country: BR
+founded:
+  date: '2023'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      aconteceram, respectivamente, em 2023, com o surgimento da Igreja Episcopal Unida do Brasil (IEUB), através
+      do reverendo – hoje bispo –
+    page: '34'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No ano de 2023, alguns clérigos da IAB, discordando de posturas da denominação e de seu Primaz, Miguel Uchôa,
+      romperam com a Província da GAFCON, fundando uma nova denominação, a Igreja Episcopal Unida do Brasil
+    page: '150'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Episcopal Unida do Brasil (IEUB)
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: Origem na Igreja Anglicana no Brasil, hoje independente [2023]
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      da Igreja Episcopal Unida do Brasil (IEUB), fundada como uma igreja independente e liderada pelo bispo Hermany
+      Soares
+    page: '174'
+locator_slug: ieub
+website: https://www.youtube.com/@episcopalunida
+description: >-
+  Igreja de tradição anglicana/reformada conhecida apenas pelo canal no YouTube; liderança, fundação e origem não
+  encontradas.
+sources:
+- source: yt-ieub
+  quote: >-
+    O canal da Igreja Episcopal Unida do Brasil  tem como objetivo levar a palavra de Deus, Teologia Reformada e
+    Anglicana.
+relations:
+- type: schism_from
+  target: iab
+  date: '2023'
+  led_by:
+  - hermany-soares
+  status: probable
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-cismas
+    quote: IEUB e REB foram cisma sim, eu sei IEMM pode colocar tbm
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Outras divisões no seio da Igreja Anglicana no Brasil aconteceram, respectivamente, em 2023, com o surgimento
+      da Igreja Episcopal Unida do Brasil (IEUB)
+    page: '34'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No ano de 2023, alguns clérigos da IAB, discordando de posturas da denominação e de seu Primaz, Miguel Uchôa,
+      romperam com a Província da GAFCON, fundando uma nova denominação, a Igreja Episcopal Unida do Brasil
+    page: '150'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Episcopal Unida do Brasil (IEUB)
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: Origem na Igreja Anglicana no Brasil, hoje independente [2023]
+    page: '172'
+  notes: >-
+    O livro diz 'Origem na Igreja Anglicana no Brasil, hoje independente' — 'cisma_de' é a categoria mais próxima;
+    liderança de Hermany inferida do Apêndice 2.

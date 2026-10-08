@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: antonio-ferreira-fiandor
+name: Antonio Ferreira Fiandor
+aliases:
+- Antonio F. Finador
+biography: >-
+  Pastor de S. João, Porto; sagrado em 1958 primeiro bispo da Igreja Lusitana, tendo Plínio L. Simões como sagrante.
+sources:
+- source: wit-1958-07-10
+  quote: >-
+    The Rev. Antonio F. Finador, pastor of St. John's, Oporto, Portugal, w a s consecrated as the first bishop of
+    the Episcopal Church in Portugal.
+ordinations:
+- order: episcopate
+  date: '1958'
+  place: St. Paul's, Lisboa
+  jurisdiction: ilcae
+  office: diocesan
+  principal_consecrator: plinio-lauer-simoes
+  co_consecrators:
+  - james-mccann
+  - norman-burdett-nash
+  status: probable
+  sources:
+  - source: wit-1958-07-10
+    quote: >-
+      The service was held at St. Paul's, Lisbon, with Bishop L. L. Simoes of South- west Brazil the consecrator
+      and Bishop Norman Nash, in charge of the convocation of American churches in Europe, and Bishop James McCann
+      of Meath, Ire- land, the co-consecrators.
+  notes: >-
+    Fora do Brasil, mas é sagração feita por bispo brasileiro (linha IEAB → Igreja Lusitana). The Witness escreve
+    'Finador' e 'L. L. Simoes'. Data exata não informada (nota de 10/07/1958).
+events:
+- type: other
+  date: '2008'
+  description: >-
+    Comemoração em Lisboa (2008) dos 50 anos da sagração do primeiro bispo da Igreja Lusitana, Antonio Ferreira
+    Fiandor, "que teve como bispo sagrante dom Plínio Lauer Simões".
+  status: confirmed
+  sources:
+  - source: cant-ec-2008-05
+    quote: >-
+      das atividades comemorativas dos 50 anos de sagração do primeiro bispo em Portugal, dom Luiz Fiandor, que
+      teve como bispo sagrante dom Plínio Lauer Simões.

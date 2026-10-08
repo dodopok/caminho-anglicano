@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-bangor
+name: Diocese of Bangor
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: confirmed
+  sources:
+  - source: stubbs-1897
+    quote: John Moore. Bangor; Canterbury, 1783; d. 1805, Jan. 18.
+  - source: stubbs-1897
+    quote: Thomas Herring. Bangor ; York, 1743 ; Canterbury, 1747; d. 1757, March 13.

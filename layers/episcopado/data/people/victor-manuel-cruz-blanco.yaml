@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: victor-manuel-cruz-blanco
+name: Victor Manuel Cruz-Blanco
+aliases:
+- Victor Cruz-Blanca
+biography: >-
+  Arcebispo colombiano, da Província Católica de Rito Anglicano da América Latina (ligada à Igreja Católica de Rito
+  Anglicano, Quakertown, EUA); declarado precursor do continuismo na América Latina e co-sagrante de Mark Haverland
+  (ACC).
+sources:
+- source: iacc-continuante
+  quote: >-
+    através do arcebispo colombiano ††Victor Manuel Cruz-Blanco, da Província Católica de Rito Anglicano da América
+    Latina, então vinculada à Igreja Católica de Rito Anglicano
+affiliations:
+- jurisdiction: pcra-al
+  role: archbishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O estabelecimento do Movimento Contínuo entre as Igrejas latino-americanas foi liderado pelo arcebispo colombiano
+      Victor Manuel Cruz-Blanco, da Província Católica de Rito Anglicano da América Latina
+    page: '71'
+- jurisdiction: acc
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: No início de seu ministério episcopal, esteve ligado à Anglican Catholic Church
+    page: '76'

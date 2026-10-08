@@ -30,7 +30,8 @@ export default defineNuxtConfig({
     './layers/dashboard',
     './layers/admin',
     './layers/doacoes',
-    './layers/ordo'
+    './layers/ordo',
+    './layers/episcopado'
   ],
 
   typescript: {
@@ -58,7 +59,10 @@ export default defineNuxtConfig({
       '/admin/**',
       '/dashboard/**',
       '/portal-do-douglas/**',
-      '/portal-do-ordo/**'
+      '/portal-do-ordo/**',
+      // Rede do Episcopado Histórico: beta escondido (ver docs/EPISCOPADO.md)
+      '/episcopado',
+      '/episcopado/**'
     ],
     urls: async () => {
       // Importar dinamicamente os termos do glossário

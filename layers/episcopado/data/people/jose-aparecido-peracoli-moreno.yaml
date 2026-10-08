@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jose-aparecido-peracoli-moreno
+name: José Aparecido Peraçoli Moreno
+aliases:
+- José Moreno
+- bispo Moreno
+biography: >-
+  Ex-pastor da Igreja Pentecostal de Nova Vida; fundador e bispo da Igreja Episcopal Anglicana Livre / Igreja Anglicana
+  das Américas (1999); psicanalista.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Foi organizada em 1999, pelo bispo José Aparecido Peraçoli Moreno, que havia sido pastor da Igreja Pentecostal
+    de Nova Vida, do bispo Robert McAlister.
+  page: '114'
+affiliations:
+- jurisdiction: ieal
+  role: founder
+  start: '1999'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Foi organizada em 1999, pelo bispo José Aparecido Peraçoli Moreno
+    page: '114'
+events:
+- type: other
+  date: null
+  description: >-
+    A IEAL passou a ser intitulada Igreja Anglicana das Américas por causa do vínculo do bispo José Moreno com o
+    Conselho Anglicano Americano (ACC), ligado à Igreja Anglicana da América Latina (EUA).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo José Moreno também foi membro do Conselho Anglicano Americano (ACC), ligado à Igreja Anglicana da
+      América Latina (EUA). Por causa deste vínculo, a denominação foi intitulada Igreja Anglicana das Américas.
+    page: '114'

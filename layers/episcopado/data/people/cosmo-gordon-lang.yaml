@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: cosmo-gordon-lang
+name: Cosmo Gordon Lang
+full_name: Cosmo Gordon Lang
+aliases:
+- Abp. Lang
+- Cosmo Lang
+birth:
+  date: '1864-10-31'
+  sources:
+  - source: wp-patterson
+    quote: He was ordained and consecrated a bishop by [[Cosmo Lang]], [[Archbishop of Canterbury]]
+  - source: wikidata-api
+    quote: 'Q336344 Cosmo Gordon Lang {''enwiki'': ''Cosmo Gordon Lang'', ''ptwiki'': ''Cosmo Lang''}'
+  - source: henson-1921-01-25
+    quote: now Archbishop Lang had consecrated Temple
+death:
+  date: '1945-12-05'
+  sources:
+  - source: wp-patterson
+    quote: He was ordained and consecrated a bishop by [[Cosmo Lang]], [[Archbishop of Canterbury]]
+  - source: wikidata-api
+    quote: 'Q336344 Cosmo Gordon Lang {''enwiki'': ''Cosmo Gordon Lang'', ''ptwiki'': ''Cosmo Lang''}'
+  - source: henson-1921-01-25
+    quote: now Archbishop Lang had consecrated Temple
+wikidata: Q336344
+biography: Arcebispo da Cantuária (1928–1942).
+sources:
+- source: wp-patterson
+  quote: He was ordained and consecrated a bishop by [[Cosmo Lang]], [[Archbishop of Canterbury]]
+ordinations:
+- order: episcopate
+  date: '1901-05-01'
+  place: Catedral de São Paulo, Londres
+  jurisdiction: church-of-england
+  office: suffragan
+  principal_consecrator: frederick-temple
+  status: confirmed
+  sources:
+  - source: henson-1921-01-25
+    quote: >-
+      It was observed that Archbishop Temple had consecrated Lang, & now Archbishop Lang had consecrated Temple
+      .
+  - source: wp-lang
+    quote: >-
+      He was [[Consecration#Various Christian churches|consecrated]] bishop by the Archbishop of Canterbury, [[Frederick
+      Temple]], in St Paul's Cathedral, on 1 May;
+  - source: wp-lang
+    quote: '| consecration = 1 May 1901 | consecrated_by = [[Frederick Temple]]'
+  notes: >-
+    Reforço independente da afirmação já existente em sucessao-historica.json (que tinha só a Wikipédia, citando
+    Lockhart p. 147; status 'provavel'). Com o diário de Henson (fonte primária de 1921, que registra o comentário
+    corrente), o elo Frederick Temple -> Lang passa a ter duas fontes independentes. Data e local vêm da afirmação
+    anterior (Wikipédia). Bispo sufragâneo de Stepney. Só a Wikipédia, que cita Lockhart, p. 147. Co-sagrantes não
+    identificados.
+affiliations:
+- jurisdiction: church-of-england
+  role: bishop
+  diocese: of-stepney
+  start: '1901'
+  status: probable
+  sources:
+  - source: wp-lang
+    quote: In March 1901 Lang was appointed [[suffragan]] [[Bishop of Stepney]]
+  notes: 'Local: sufragâneo, Diocese of London. Só a Wikipédia.'

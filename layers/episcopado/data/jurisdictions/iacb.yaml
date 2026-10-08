@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iacb
+acronym: IACB
+name: Igreja Anglicana Continuante do Brasil
+type: national_church
+country: BR
+description: >-
+  Jurisdição continuante organizada por Dom José Kennedy de Freitas (sagrado na linha de James Roque); seu primeiro
+  arcebispo metropolitano foi Genival Martins de Oliveira; depois adotou o título de Bispo Primaz.
+sources:
+- source: iacc-continuante
+  quote: dom †José Kennedy de Freitas, organizador da Igreja Anglicana Continuante do Brasil
+relations:
+- type: successor_of
+  target: iacc
+  date: null
+  led_by:
+  - jose-kennedy-de-freitas
+  status: probable
+  sources:
+  - source: iacc-continuante
+    quote: Na vertente liderada por dom †José Kennedy de Freitas
+  notes: Mais propriamente 'vertente' derivada da linhagem de James Roque; não há data.

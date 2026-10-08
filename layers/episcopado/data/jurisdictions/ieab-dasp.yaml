@@ -1,0 +1,115 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieab-dasp
+acronym: IEAB-DASP
+name: Diocese Anglicana de Sao Paulo (ex-Diocese Sul Central)
+aliases:
+- Diocese Anglicana de São Paulo
+- Diocese Sul Central
+- Diocese Sul Central, São Paulo
+type: diocese
+country: BR
+founded:
+  date: '1969'
+  sources:
+  - source: wp-pt-dioc-saopaulo
+    quote: Foi criada em 1969 e instalada em 1970.
+  - source: costa2021
+    quote: A primeira a ser criada foi a Diocese Sul Central, em 1970 (com sede na cidade de São Paulo).
+  - source: kickhofel-1995
+    quote: >-
+      O bem sucedido plano de divisão de 1950 foi novamente repetido na Diocese Central que, por desmembramento,
+      deu origem a três dioceses: Diocese Sul Central, com sede em São Paulo, criada em 1969; Diocese Setentrional,
+      com sede em Recife, criada em 1975; e Diocese Missionária de Brasília, criada em 1982 e instalada em 1985.
+    page: '283'
+website: https://www.dioceseanglicanasp.org.br/
+description: 'Criada em 1969, instalada em 1970 (Costa: criada 1970); inicialmente SP, PR e MS.'
+sources:
+- source: wp-pt-dioc-saopaulo
+  quote: Foi criada em 1969 e instalada em 1970.
+- source: costa2021
+  quote: A primeira a ser criada foi a Diocese Sul Central, em 1970 (com sede na cidade de São Paulo).
+relations:
+- type: part_of
+  target: ieab
+  status: confirmed
+  sources:
+  - source: ieab-irala-falecimento
+    quote: Em 2021, tornou-se bispo emérito
+  - source: ieab-cezar-investidura
+    quote: a celebração de Ação de Graças pela vida, ministério e início da emerência do bispo Flávio Irala
+  - source: costa2021
+    quote: Assumiu a Diocese em janeiro do ano seguinte
+  - source: costa2021
+    quote: 1990-2002 – Glauco Soares de Lima
+  - source: glauco-testemunho-2013
+    quote: Bispo da Diocese Anglicana de São Paulo de 1990 - 2002
+  - source: costa2021
+    quote: 1971-1977 – Elliott Lorenz Sorge
+  - source: wp-pt-sorge
+    quote: >-
+      Diante disso, Dom Elliot renunciou a sua sé e foi sucedido como segundo bispo diocesano por Dom Sumio Takatsu.
+  - source: ens-77198
+    quote: >-
+      in Apostolic succession to the Rt. Rev. Elliott Sorge who resigned the see to become the staff officer to
+      the Council on the Development of Ministry of the Episcopal Church.
+  - source: costa2021
+    quote: 1977-1989 – Sumio Takatsu
+  - source: wp-pt-sumio
+    quote: Permaneceu no cargo até sua renúncia, no final de 1989.
+  - source: costa2021
+    quote: 2002-2006 – Hiroshi Ito
+  - source: costa2021
+    quote: 2007-2012 – Roger Douglas Bird
+  - source: wp-pt-dioc-saopaulo
+    quote: >-
+      Em 21 de novembro de 2012, o então bispo Roger Bird apresentou sua carta de resignação do cargo de bispo da
+      DASP
+  - source: ieab-cezar-investidura
+    quote: a cerimônia de Investidura do bispo Cézar Alves como bispo diocesano da DASP
+  - source: ieab-dioceses
+    quote: Bispo Diocesano – Revmo. Bispo Cezar Fernandes Alves
+  - source: ieab-serie-dasp
+    quote: 'Bispo Coadjutor: Bispo Cézar Alves'
+  - source: costa2021
+    quote: 2017-2018 – Francisco de Assis da Silva (Interino)
+  - source: costa2021
+    quote: 2018-2020 – Naudal Alves Gomes (Interino)
+  - source: ieab-dioceses
+    quote: 'Atualmente, as Dioceses e o Distrito estão distribuídos nas chamadas áreas provinciais, a saber:'
+  - source: ieab-cezar-investidura
+    quote: >-
+      A celebração do início da emerência do bispo Flávio Irala e investidura do bispo Cézar Alves como bispo diocesano
+      da Diocese Anglicana de São Paulo acontecerá no templo da Paróquia de São João, dia 31 de outubro
+  - source: costa-2021-tese
+    quote: >-
+      originada a partir de um grupo formado por ex-membros da Diocese Anglicana de São Paulo (DASP), Ricardo Lorite
+      de Lima, Rui Costa Barbosa
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1971-1976 - Elliot Lorenz Sorge
+    page: '368'
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1977-1989 - Sumio Takatsu
+    page: '368'
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1990 - Glauco Soares de Lima
+    page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      O bispo Sorge, que dirigiu a diocese de janeiro de 1971 a junho de 1977, tentou implantar um programa integrado,
+      envolvendo a maioria das paróquias e missões, mas não conseguiu neutralizar o descontentamento e forte oposição
+      da maioria do clero, provocando sua renúncia em 19 de junho de 1977.
+    page: '287'
+  - source: kickhofel-1995
+    quote: O bispo Takatsu efetivamente se aposentou no final de 1989.
+    page: '290'
+  - source: kickhofel-1995
+    quote: >-
+      Exercia seu pastorado na capital paulista como pároco da Igreja de São Paulo (Saint Paul's Church), numa comunidade
+      internacional frequentada por brasileiros, americanos, ingleses e outras nacionalidades.
+    page: '290'
+  - source: kickhofel-1995
+    quote: >-
+      Foi elevado ao episcopado no dia primeiro de outubro de 1989 na mesma igreja que pastoreava na época de sua
+      eleição. Foi sagrante o bispo primaz Olavo Ventura Luiz e co-sagrantes mais sete colegas. Assumiu o governo
+      da diocese em janeiro de 1990.
+    page: '291'

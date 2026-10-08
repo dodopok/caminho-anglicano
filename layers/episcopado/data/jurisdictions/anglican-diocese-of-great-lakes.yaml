@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: anglican-diocese-of-great-lakes
+name: Anglican Diocese of the Great Lakes (bispo assistente)
+aliases:
+- Anglican Diocese of the Great Lakes
+type: diocese
+relations:
+- type: part_of
+  target: acna
+  status: probable
+  sources:
+  - source: anglicanink-beckwith-acna-2014
+    quote: >-
+      At their October 10, 2014, meeting in Atlanta, Georgia, the College of Bishops of the Anglican Church in North
+      America received the Rt. Rev. Dr. Peter Beckwith.
+  - source: wp-ames
+    quote: >-
+      with Ames being installed as their first bishop at 30 April 2011, at the diocese annual convention in Akron.
+      He would be in office until 2016

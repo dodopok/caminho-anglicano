@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: bill-atwood
+name: Bill Atwood
+full_name: William Atwood
+aliases:
+- Bp. Bill Atwood
+- William Atwood
+wikidata: Q85515490
+biography: >-
+  Sufragâneo da Diocese de All Saints Cathedral (Igreja Anglicana do Quênia), sagrado em Nairóbi em 2007; depois
+  bispo da International Diocese da ACNA (2009–2024).
+sources:
+- source: aac-atwood-2016
+  quote: Then, in 2007, I was consecrated as a Suffragan Bishop in All Saints Cathedral Diocese.
+ordinations:
+- order: episcopate
+  date: '2007-08-30'
+  place: All Saints Cathedral, Nairóbi, Quênia
+  jurisdiction: anglican-church-of-kenya
+  office: suffragan
+  principal_consecrator: benjamin-paul-mwanzia-nzimbi
+  status: contested
+  sources:
+  - source: ta-2007-08-30-kenya
+    quote: >-
+      William Atwood and William Murdoch were today ordained bishops by Kenya’s Archbishop Benjamin Nzimbi (and,
+      one assumes, at least two other bishops).
+  - source: mg-2007-08-31
+    quote: >-
+      Bernard Nzimbi, head of the Anglican Church in Kenya, entrenched his anti-gay position by consecrating Anglican
+      clerics Bill Atwood and Bill Murdoch as bishops last Thursday in Kenya.
+  - source: ta-2007-08-kenya-sched
+    quote: Consecrations are scheduled for August 30th in Nairobi.
+  - source: nbc-ap-2007-08-30
+    quote: >-
+      American Bishops Will Atwood, right, and William Murdoch, left, are ordained at All Saints Cathedral in Nairobi,
+      Kenya on Thursday.
+  - source: aac-atwood-2016
+    quote: Then, in 2007, I was consecrated as a Suffragan Bishop in All Saints Cathedral Diocese.
+  - source: wp-atwood
+    quote: '| consecrated_by   = [[Benjamin Nzimbi]]'
+  - source: ia-called-to-serve-2009
+    quote: Bisho; Bill wood (right) from America who wer consecrated by Archbishop Nzimbi.
+  - source: iab-poster-linhagem-uchoa
+    quote: >-
+      162c. Peter Hess Beckwith (1992-2010) que, em 2007, sagrou Bill Atwood como bispo sufragâneo da Diocese de
+      All Saints' e, em 2012, sagrou Dom Evilásio Tenório da Silva Júnior como bispo (ver 162c).
+  discrepancies:
+  - field: principal_consecrator
+    value: peter-beckwith
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        162c. Peter Hess Beckwith (1992-2010) que, em 2007, sagrou Bill Atwood como bispo sufragâneo da Diocese
+        de All Saints' e, em 2012, sagrou Dom Evilásio Tenório da Silva Júnior como bispo (ver 162c).
+  notes: >-
+    CORRIGIDO: o pôster diz que Peter Hess Beckwith sagrou Atwood em 2007; todas as fontes dão o arcebispo Benjamin
+    Nzimbi (primaz do Quênia) como sagrante principal ("presided over", segundo texto do site da ACK citado em comentário
+    no Thinking Anglicans). O Mail & Guardian erra o prenome ("Bernard"). Nenhuma fonte cita Beckwith — que em 2007
+    era bispo diocesano de Springfield na TEC — como participante. Um comentário de leitor no Thinking Anglicans
+    (31/08/2007) pergunta "why were +Duncan and +Iker happy to consecrate them?", sugerindo que Robert Duncan e
+    Jack Iker participaram como co-sagrantes; isso não foi confirmado (ver dúvidas). Bispos das Índias Ocidentais,
+    Uganda, RCA, Ruanda e Nigéria estavam presentes (M&G). Legenda de foto (OCR truncado: "Bill wood" = Bill Atwood,
+    provavelmente). Corrobora pontes-estrangeiras.json (Atwood <- Nzimbi, 2007). O pôster põe Beckwith como sagrante
+    principal; na sagração de Atwood no Quênia (2007) o sagrante principal provavelmente foi o arcebispo Benjamin
+    Nzimbi — verificar.
+events:
+- type: other
+  date: 2015-12
+  description: >-
+    Sínodo da Diocese do Recife (dez/2015): ordenação de quatro diáconos (entre eles Eric Rodrigues) e três presbíteros,
+    com participação do bispo Bill Atwood (ACNA)
+  status: probable
+  sources:
+  - source: aac-2015-recife
+    quote: >-
+      On Friday, I preached at the Eucharist that opened the Synod and participated in the Ordination, laying hands
+      on one of the four Deacons. they also ordained three priests and licensed a number of lay ministers.
+  - source: aac-2015-recife
+    quote: One of the new Deacons is Eric. He is a person of many surprises.
