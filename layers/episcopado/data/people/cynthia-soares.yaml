@@ -5,11 +5,18 @@ full_name: Cynthia Muniz Soares
 aliases:
 - Cynthia Muniz
 - Cynthia Soares
-biography: Reverenda da Rede Episcopal Brasileira (o livro a chama 'Cynthia Muniz').
+- Revda. Cynthia Muniz
+biography: >-
+  Pastora da Igreja Anglicana Porto (São Paulo, SP), presbítera da REB e presidente da Comissão de Teologia da REB;
+  bacharela em Teologia pela FTSA, especialista em Novo Testamento, mestranda em Estudos Bíblicos e Teológicos do
+  Novo Testamento (STJE); palestrante da 1ª Conferência Teológica e do 1º Sínodo da REB.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: dos reverendos Jaime Sepulcro Jr., Douglas Araújo e Cynthia Muniz
-  page: '151'
+- source: rbc-yt-1conf-anuncio
+  quote: >-
+    É pastora da Igreja Anglicana Porto, em São Paulo, e presidente da Comissão de Teologia da Rede Episcopal Brasileira
+    (REB).
+- source: rbc-reb-doc-instituicoes
+  quote: Revda. Cynthia Muniz Soares
 ordinations:
 - order: diaconate
   date: '2025-03-09'
@@ -31,6 +38,7 @@ ordinations:
     do mantenedor do projeto (a mensagem não distingue diaconato e presbiterato; a REB tinha um único bispo).
 - order: presbyterate
   date: '2025-10-24'
+  place: Vitória (ES)
   jurisdiction: reb
   ordained_by: eric-rodrigues
   status: confirmed
@@ -42,6 +50,10 @@ ordinations:
       - Reverenda Cynthia Soares (SP)\n- Reverendo Elias Valentim (ES)\n- Reverenda Joyce Baiense (ES)"
   - source: testemunho-mantenedor-2026-10-07-reb
     quote: Foi ordenado Douglas de Araujo Silva e Cynthia Muniz Soares, pelo bispo Eric Rodrigues, da REB
+  - source: ecs-eric-blog-10meses
+    quote: E um sínodo diocesano ordinário presencial, realizado em Vitória, Espírito Santo.
+  - source: ecs-eric-blog-10meses
+    quote: Nosso primeiro Sínodo acabou de acontecer
   - source: testemunho-mantenedor-2026-10-08-reb-sinodo-2025
     quote: Elias e Joyce foram ordenados presbíteros junto comigo e Cynthia, pelo bispo Eric, mesmo dia
   - source: testemunho-mantenedor-2026-10-08-reb-sinodo-2025
@@ -51,9 +63,11 @@ ordinations:
   notes: >-
     O post não nomeia o bispo ordenante. Data = mês do Sínodo Diocesano (post de 25/10/2025). Bispo ordenante informado
     por testemunho do mantenedor do projeto (a mensagem não distingue diaconato e presbiterato; a REB tinha um único
-    bispo). Ordenações no Sínodo Diocesano da REB; o calendário da REB dá 24/10/2025 para as ordenações diaconais
-    da mesma celebração. Post da REB sobre a celebração: https://www.instagram.com/p/DQSr0ENjmrg/ (publicado em
-    26/10/2025).
+    bispo). Local inferido: a REB informa que as ordenações presbiterais ocorreram "em nosso Sínodo Diocesano" e
+    o blog do bispo (28/10/2025) diz que o primeiro sínodo ordinário foi presencial, em Vitória (ES). A data (24/10/2025)
+    e o ordenante constam de outras fontes já reunidas; a fonte aqui só sustenta o local. Ordenações no Sínodo Diocesano
+    da REB; o calendário da REB dá 24/10/2025 para as ordenações diaconais da mesma celebração. Post da REB sobre
+    a celebração: https://www.instagram.com/p/DQSr0ENjmrg/ (publicado em 26/10/2025).
 affiliations:
 - jurisdiction: reb
   role: clergy
@@ -93,6 +107,35 @@ affiliations:
   notes: >-
     Listado com a UF SP. Presbítero(a) na lista do clero do Calendário REB 2026. Consta na lista do clero do Calendário
     REB 2026.
+- jurisdiction: reb
+  role: other
+  role_description: presbitera (Igreja Anglicana Porto, São Paulo/SP)
+  status: confirmed
+  sources:
+  - source: rbc-yt-1conf-anuncio
+    quote: É pastora da Igreja Anglicana Porto, em São Paulo
+  - source: porto-lideranca
+    quote: Rev. Cynthia Muniz
+  notes: >-
+    Pastora da Igreja Anglicana Porto, São Paulo (SP); a página de liderança da Porto a lista sob o título "Pastores"
+    (como "Rev. Cynthia Muniz") e a descrição do vídeo da 1ª Conferência Teológica da REB (21/09/2025) a chama "Revda."
+- jurisdiction: reb
+  role: other
+  role_description: presidente da Comissão de Teologia
+  status: confirmed
+  sources:
+  - source: rbc-yt-1conf-anuncio
+    quote: presidente da Comissão de Teologia da Rede Episcopal Brasileira (REB)
+  - source: rbc-reb-doc-instituicoes
+    quote: Revda. Cynthia Muniz Soares
+  - source: rbc-reb-doc-instituicoes
+    quote: Presidente da Comissão de Teologia
+  notes: >-
+    Assina como presidente da Comissão de Teologia o documento "Indicação oficial de instituições para formação
+    teológica" (FLAM e FTSA recomendadas aos membros da REB, sobretudo aos que almejam o ministério ordenado). Já
+    presidente em 21/09/2025 (descrição do vídeo da 1ª Conferência Teológica). O PDF foi gerado em 26/03/2025; o
+    texto cita reunião de "25 de fevereiro de 2024", data anterior à fundação da REB (provável erro de ano). A página
+    da Comissão de Teologia (09/2026) descreve as leituras em conjunto, sem citar a presidente.
 - jurisdiction: iab
   role: member
   end: 2024-12
@@ -104,3 +147,86 @@ affiliations:
       Sobre Douglas Araujo e Cynthia Muniz, existem um só, eram da IAB, saíram no fim de 2024 e foram ordenados
       na REB em 2025
   notes: Saiu da IAB no fim de 2024, com a formação da REB.
+events:
+- type: other
+  date: '2026-10-03'
+  description: >-
+    Douglas Araujo participou, com Cynthia Muniz e o bispo Eric Rodrigues, das perguntas e respostas após as palestras
+    de Michael Bird e Amy Peeler na 2ª Conferência Teológica da REB (03/10/2026, transmitida pelo YouTube da REB).
+  status: confirmed
+  sources:
+  - source: rbc-yt-2conf-bird
+    quote: Com tradução de Thiago para o português e perguntas e respostas com Cynthia, Douglas e Eric.
+  - source: rbc-yt-2conf-peeler
+    quote: >-
+      Palestra de Amy Peeler na 2ª Conferência Teológica da Rede Episcopal Brasileira, realizada em 3 de outubro
+      de 2026.
+- type: other
+  date: 2025-10
+  description: >-
+    Cynthia Muniz fez a palestra "A contribuição anglicana para a teologia" na 1ª Conferência Teológica da REB (vídeo
+    publicado em 16/10/2025), ao lado de Winfield Bevins.
+  status: confirmed
+  sources:
+  - source: rbc-yt-1conf-cynthia
+    quote: A contribuição anglicana para a teologia - Revda. Cynthia Muniz - 1 Conferência REB 2025
+  - source: rbc-yt-1conf-anuncio
+    quote: 'Teremos a honra de receber como preletores:'
+- type: other
+  date: 2025-10
+  description: >-
+    Cynthia Muniz fez a palestra "No horizonte da esperança: A vocação da igreja a partir da narrativa bíblica",
+    terceira palestra do Primeiro Sínodo Ordinário da REB (vídeo publicado em 03/11/2025).
+  status: confirmed
+  sources:
+  - source: rbc-yt-sinodo-cynthia
+    quote: >-
+      Terceira palestra do Primeiro Sínodo Ordinário da Rede Episcopal Brasileira. Seguimos com uma fala da Revda.
+      Cynthia Muniz, com tema No horizonte da esperança: A vocação da igreja a partir da narrativa bíblica.
+- type: other
+  date: null
+  description: >-
+    Formação teológica de Cynthia Muniz: bacharela em Teologia pela Faculdade Teológica Sul-Americana (FTSA), especialista
+    em Novo Testamento e Teologia Paulina, mestranda em Estudos Bíblicos e Teológicos do Novo Testamento no Seminário
+    Teológico Jonathan Edwards (STJE); professora na Faculdade Latino-Americana de Teologia (FLAM) e na Escola Bibotalk
+    de Teologia, colaboradora da Revista Ultimato e integrante da equipe do podcast BTCast.
+  status: confirmed
+  sources:
+  - source: porto-lideranca
+    quote: >-
+      é bacharela em Teologia pela FTSA, especialista em Novo Testamento e mestranda em Estudos Bíblicos e Teológicos
+      do Novo Testamento pelo STJE
+  - source: rbc-yt-1conf-anuncio
+    quote: >-
+      bacharela em Teologia pela FTSA, especialista em Novo Testamento e Teologia Paulina e mestranda em Estudos
+      Bíblicos e Teológicos do Novo Testamento pelo STJE
+  - source: rbc-yt-1conf-anuncio
+    quote: >-
+      Atua como professora na Faculdade Latino-Americana de Teologia (FLAM) e na Escola Bibotalk de Teologia (EBT)
+  - source: rbc-cbe-cynthia
+    quote: especialista em Teologia do Novo Testamento e mestranda em Estudos do Novo Testamento (STJE)
+- type: other
+  date: null
+  description: >-
+    Comissão de Teologia da REB, presidida por Cynthia Muniz, indicou oficialmente a FLAM e a FTSA como instituições
+    de formação teológica dos membros da REB, especialmente dos que almejam o ministério ordenado.
+  status: confirmed
+  sources:
+  - source: rbc-reb-doc-instituicoes
+    quote: >-
+      os membros desta Comissão de Teologia decidiram indicar duas instituições de ensino para a formação teológica
+      dos membros da Rede Episcopal Brasileira, especialmente daqueles que almejam o ministério ordenado
+- type: other
+  date: '2026-10-03'
+  description: >-
+    A Comissão de Teologia da REB e a equipe de Cynthia Muniz e Douglas Araujo divulgaram a 2ª Conferência Teológica
+    da REB (3 de outubro de 2026, 8h às 12h, transmitida pelo YouTube da REB), com palestras de Michael F. Bird
+    e Amy Peeler.
+  status: confirmed
+  sources:
+  - source: rbc-ig-cynthilant-2conf-anuncio
+    quote: >-
+      No dia 3 de outubro, das 8h às 12h, participe de uma manhã de reflexão sobre a vida da Igreja, mulheres, liturgia
+      e espiritualidade anglicana. Acompanhe pelo YouTube da Rede Episcopal Brasileira!
+  - source: rbc-yt-2conf-anuncio
+    quote: 'Teremos a honra de receber como preletores:'

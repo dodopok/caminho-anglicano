@@ -253,7 +253,7 @@ affiliations:
     quote: o Bispo Presidente, Revmo. Eric Rodrigues
   - source: reb-quaresma-2025
     quote: Mensagem do Bispo Diocesano para Quaresma de 2025
-  - source: reb-portaria-01-2025
+  - source: rbc-reb-portaria-01-2025
     quote: Eu, Dom Eric Rodrigues, Bispo da Igreja de Deus na Rede Episcopal Brasileira
   - source: reb-estrutura
     quote: Bispo da Rede Episcopal Brasileira
@@ -339,6 +339,61 @@ events:
   - source: arj-ig-visita-episcopal
     quote: >-
       Foi dia de receber a visita do nosso Bispo diocesano Don Éric Rodrigues para realizar as primeiras confirmações.
+- type: other
+  date: '2025-07-28'
+  description: >-
+    A Comissão de Liturgia da REB já existia em 28/07/2025: a Portaria Episcopal 01/2025 (unidade e fidelidade litúrgica)
+    prevê que casos excepcionais sejam avaliados pelo bispo "junto à Comissão de Liturgia da REB". A portaria não
+    nomeia seus membros ou presidente (a presidência de Douglas Araújo consta no livro de Vilaça, p. 151).
+  status: confirmed
+  sources:
+  - source: rbc-reb-portaria-01-2025
+    quote: >-
+      Casos excepcionais deverão ser apresentados por escrito ao Ordinário para consideração pastoral, que os avaliará
+      junto à Comissão de Liturgia da REB.
+- type: other
+  date: '2026-10-03'
+  description: >-
+    Douglas Araujo participou, com Cynthia Muniz e o bispo Eric Rodrigues, das perguntas e respostas após as palestras
+    de Michael Bird e Amy Peeler na 2ª Conferência Teológica da REB (03/10/2026, transmitida pelo YouTube da REB).
+  status: confirmed
+  sources:
+  - source: rbc-yt-2conf-bird
+    quote: Com tradução de Thiago para o português e perguntas e respostas com Cynthia, Douglas e Eric.
+  - source: rbc-yt-2conf-peeler
+    quote: >-
+      Palestra de Amy Peeler na 2ª Conferência Teológica da Rede Episcopal Brasileira, realizada em 3 de outubro
+      de 2026.
+- type: other
+  date: '2025-10-28'
+  description: >-
+    Composição da REB em 28/10/2025, segundo o bispo Eric Rodrigues: "uma diocese com um bispo, oito presbíteros,
+    quatro diáconos, um ministro local e dois postulantes", com comunidades em Manaus, Belo Horizonte, São Paulo
+    (capital) e Jacareí, além de um pastor missionário em Coronel Fabriciano. Antes disso houve um sínodo extraordinário
+    online (eleição e estabelecimento das comissões diocesanas) e um sínodo diocesano ordinário presencial em Vitória
+    (ES).
+  status: confirmed
+  sources:
+  - source: ecs-eric-blog-10meses
+    quote: >-
+      Hoje somos uma diocese com um bispo, oito presbíteros, quatro diáconos, um ministro local e dois postulantes.
+  - source: ecs-eric-blog-10meses
+    quote: Um sínodo extraordinário online, para a eleição e o estabelecimento das comissões diocesanas;
+  - source: ecs-eric-blog-10meses
+    quote: E um sínodo diocesano ordinário presencial, realizado em Vitória, Espírito Santo.
+  - source: ecs-eric-blog-10meses
+    quote: além de um pastor missionário em Coronel Fabriciano
+- type: other
+  date: '2026-10-16'
+  description: >-
+    2º Sínodo Diocesano da REB agendado para 16 a 18 de outubro (ano 2026 conforme o calendário de eventos do site),
+    na Catedral Anglicana Âncora (Vitória, ES).
+  status: probable
+  sources:
+  - source: arj-reb-sinodo-evento
+    quote: Sínodo Diocesano
+  - source: arj-reb-sinodo-evento
+    quote: Catedral Anglicana Âncora
 - type: other
   date: 2022-11
   description: >-

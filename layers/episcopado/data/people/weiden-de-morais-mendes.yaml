@@ -40,6 +40,18 @@ affiliations:
     Ordens (diácono) reconhecidas na fundação da REB pela Portaria 01/2024 — ordenação anterior, em jurisdição não
     informada (provavelmente IAB). Ordens (diacono) reconhecidas na fundação; origem das ordens não informada.
 - jurisdiction: reb
+  role: other
+  role_description: clero (listado como "Rev.")
+  status: confirmed
+  sources:
+  - source: reb-estrutura
+    quote: Rev. Weiden Mendes
+  - source: reb-portaria-01-2024
+    quote: Rev. Weiden de Morais Mendes – Diácono.
+  notes: >-
+    Reconhecido como diácono na Portaria 01/2024 (20/12/2024); a página "Estrutura" (06/2026) o lista entre os clérigos
+    como "Rev.", sem indicar nova ordenação ao presbiterato.
+- jurisdiction: reb
   role: deacon
   status: confirmed
   sources:
