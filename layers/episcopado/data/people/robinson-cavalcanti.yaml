@@ -5,6 +5,9 @@ full_name: Edward Robinson de Barros Cavalcanti
 aliases:
 - Bishop Robinson
 - Edward Robinson de Barros Cavalcanti
+- Robinson
+- Robinson Cavancati
+- dom Robinson
 birth:
   date: '1944-06-21'
   sources:
@@ -12,6 +15,14 @@ birth:
     quote: Edward Robinson de Barros Cavalcanti nasceu no Recife, em 21 de junho de 1944.
   - source: costa2021
     quote: Faleceu na cidade de Olinda, em 26 de fevereiro de 2012.
+  - source: cant-novas-igrejas-2024
+    quote: Nascido em 21 de junho de 1944, na cidade do Recife
+    page: '25'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Na noite de 26 de fevereiro de 2012, Robinson e a sua esposa Miriam foram assassinados pelo filho adotivo
+      do casal
+    page: '29'
   - source: wp-en-cavalcanti
     quote: >-
       Edward Robinson de Barros Cavalcanti (Recife, 21 June 1944 – Olinda, 26 February 2012) was a Brazilian Anglican
@@ -23,10 +34,21 @@ death:
     quote: Edward Robinson de Barros Cavalcanti nasceu no Recife, em 21 de junho de 1944.
   - source: costa2021
     quote: Faleceu na cidade de Olinda, em 26 de fevereiro de 2012.
+  - source: cant-novas-igrejas-2024
+    quote: Nascido em 21 de junho de 1944, na cidade do Recife
+    page: '25'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Na noite de 26 de fevereiro de 2012, Robinson e a sua esposa Miriam foram assassinados pelo filho adotivo
+      do casal
+    page: '29'
   - source: wp-en-cavalcanti
     quote: >-
       Edward Robinson de Barros Cavalcanti (Recife, 21 June 1944 – Olinda, 26 February 2012) was a Brazilian Anglican
       bishop.
+  - source: cant-novas-igrejas-2024
+    quote: O casal foi sepultado no dia 29 de fevereiro, no Cemitério Morada da Paz, em Paulista.
+    page: '30'
   - source: iab-poster-linhagem-meira
     quote: Robinson foi assassinado em 2012, sem deixar sucessores diretos
 wikidata: Q10363490
@@ -41,19 +63,33 @@ sources:
 ordinations:
 - order: diaconate
   date: '1984'
-  jurisdiction: null
+  jurisdiction: ieab
   status: probable
   sources:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1984 - … Edward Robinson de Barros Cavalcanti
     page: '373'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Robinson foi ordenado ao diaconato em 1894 e ao presbiterato em 1985 na Igreja Episcopal Anglicana do Brasil
+    page: '25'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    O livro grafa '1894' (provável erro tipográfico; nascido em 1944). Data deixada nula.
+- order: presbyterate
+  date: '1985'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Robinson foi ordenado ao diaconato em 1894 e ao presbiterato em 1985 na Igreja Episcopal Anglicana do Brasil
+    page: '25'
 - order: episcopate
   date: '1997-10-05'
   place: Teatro Guararapes, Centro de Convencoes de Pernambuco (Olinda/Recife)
   jurisdiction: ieab
-  office: coadjutor
+  office: diocesan
   principal_consecrator: glauco-soares-de-lima
   co_consecrators:
   - almir-dos-santos
@@ -61,6 +97,18 @@ ordinations:
   - edmund-knox-sherrill
   status: contested
   sources:
+  - source: ultimato-robinson-bio
+    quote: Em 1997 foi eleito, sagrado e instituído Bispo da Diocese Anglicana do Recife
+  - source: tlc-2012-02-27
+    quote: Cavalcanti was consecrated as Bishop of Recife in 1997.
+  - source: wp-en-cavalcanti
+    quote: >-
+      In 1997 he was elected and consecrated Bishop of the Diocese of Recife, attending the Lambeth Conference of
+      1998
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Em 1997, Edmund participou da consagração de Edward Robinson de Barros Cavalcanti como bispo coadjutor, que
+      depois se tornaria diocesano.
   - source: costa2021
     quote: >-
       O novo bispo coadjutor foi sagrado no dia 05 de outubro de 1997, em cerimônia realizada no Teatro Guararapes183,
@@ -74,37 +122,60 @@ ordinations:
     quote: >-
       Com ele fui “leitor” (ministro leigo), postulante, candidato, diácono e presbítero (e ele seria um dos co-sagrantes
       do meu episcopado).
-  - source: iab-poster-linhagem-meira
+  - source: cant-novas-igrejas-2024
     quote: >-
-      Em 1997, Edmund participou da consagração de Edward Robinson de Barros Cavalcanti como bispo coadjutor, que
-      depois se tornaria diocesano.
-  - source: ultimato-robinson-bio
-    quote: Em 1997 foi eleito, sagrado e instituído Bispo da Diocese Anglicana do Recife
-  - source: tlc-2012-02-27
-    quote: Cavalcanti was consecrated as Bishop of Recife in 1997.
-  - source: wp-en-cavalcanti
-    quote: >-
-      In 1997 he was elected and consecrated Bishop of the Diocese of Recife, attending the Lambeth Conference of
-      1998
+      Em uma grande cerimônia realizada em 05 de outubro de 1997, no Teatro Guararapes, na capital pernambucana,
+      dom Robinson Cavalcanti se tornou o primeiro bispo do Nordeste da Comunhão Anglicana.
+    page: '25'
   discrepancies:
   - field: office
-    value: diocesan
+    value: coadjutor
     sources:
-    - source: ultimato-robinson-bio
-      quote: Em 1997 foi eleito, sagrado e instituído Bispo da Diocese Anglicana do Recife
-    - source: tlc-2012-02-27
-      quote: Cavalcanti was consecrated as Bishop of Recife in 1997.
-    - source: wp-en-cavalcanti
+    - source: iab-poster-linhagem-meira
       quote: >-
-        In 1997 he was elected and consecrated Bishop of the Diocese of Recife, attending the Lambeth Conference
-        of 1998
+        Em 1997, Edmund participou da consagração de Edward Robinson de Barros Cavalcanti como bispo coadjutor,
+        que depois se tornaria diocesano.
+    - source: costa2021
+      quote: >-
+        O novo bispo coadjutor foi sagrado no dia 05 de outubro de 1997, em cerimônia realizada no Teatro Guararapes183,
+        do Centro de Convenções de Pernambuco, pelo Primaz, Glauco Soares de Lima, tendo como co-sagrantes os bispos
+        Edmund Sherrill, Almir dos Santos e Clovis Erly Rodrigues.
+    - source: costa2021
+      quote: >-
+        No dia 05 de outubro de 1997, Edward Robinson de Barros Cavalcanti95 foi sagrado pelo Primaz em cerimônia
+        realizada no Centro de Convenções de Pernambuco
+    - source: cant-meninos-eu-vi-2004
+      quote: >-
+        Com ele fui “leitor” (ministro leigo), postulante, candidato, diácono e presbítero (e ele seria um dos co-sagrantes
+        do meu episcopado).
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Em uma grande cerimônia realizada em 05 de outubro de 1997, no Teatro Guararapes, na capital pernambucana,
+        dom Robinson Cavalcanti se tornou o primeiro bispo do Nordeste da Comunhão Anglicana.
+      page: '25'
+  - field: place
+    value: Teatro Guararapes, Recife (PE)
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Em uma grande cerimônia realizada em 05 de outubro de 1997, no Teatro Guararapes, na capital pernambucana,
+        dom Robinson Cavalcanti se tornou o primeiro bispo do Nordeste da Comunhão Anglicana.
+      page: '25'
+  - field: jurisdiction
+    value: ieab-dar
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Em uma grande cerimônia realizada em 05 de outubro de 1997, no Teatro Guararapes, na capital pernambucana,
+        dom Robinson Cavalcanti se tornou o primeiro bispo do Nordeste da Comunhão Anglicana.
+      page: '25'
   notes: >-
+    O pôster da IAB (Meira) diz 'bispo coadjutor, que depois se tornaria diocesano'. Data exata e sagrantes não
+    encontrados ainda. O pôster só diz que Sherrill 'participou'; sagrante principal desconhecido por esta fonte.
     Confirma a pista dos posteres (participacao de Edmund Sherrill). Eleito coadjutor em 28/06/1997 no Concilio
     Extraordinario em Vera Cruz, Ilha de Itaparica (BA); instalado como bispo diocesano em 19/10/1997. Uma nota
     da mesma tese (n. 225) cita "Teatro Beberibe". O proprio Robinson, em testemunho de 2004 hospedado no Projeto
-    Cantuaria, confirma que Sherrill foi um dos seus co-sagrantes. O pôster só diz que Sherrill 'participou'; sagrante
-    principal desconhecido por esta fonte. O pôster da IAB (Meira) diz 'bispo coadjutor, que depois se tornaria
-    diocesano'. Data exata e sagrantes não encontrados ainda.
+    Cantuaria, confirma que Sherrill foi um dos seus co-sagrantes. O livro não nomeia os sagrantes.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
@@ -112,8 +183,12 @@ affiliations:
   start: '1997-10-19'
   end: '2005-06-10'
   end_reason: deposition
-  status: confirmed
+  status: contested
   sources:
+  - source: wp-en-cavalcanti
+    quote: In 1997 he was elected and consecrated Bishop of the Diocese of Recife
+  - source: wp-en-cavalcanti
+    quote: he was expelled from the IEAB on 10 June 2005, by decision of the Superior Ecclesiastical Court.
   - source: costa2021
     quote: >-
       Em 19 de outubro do mesmo ano, Robinson foi instalado como terceiro bispo da Diocese Anglicana do Recife.
@@ -123,10 +198,50 @@ affiliations:
     quote: Edward Robinson de Barros Cavalcanti - 1997 a 2005 (deposto);
   - source: ens-102306-1-a
     quote: Finally, in June 2005, Cavalcanti was deposed on the grounds that he broke communion with the IEAB
-  - source: wp-en-cavalcanti
-    quote: In 1997 he was elected and consecrated Bishop of the Diocese of Recife
-  - source: wp-en-cavalcanti
-    quote: he was expelled from the IEAB on 10 June 2005, by decision of the Superior Ecclesiastical Court.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em janeiro de 2005, o Conselho Executivo do Sínodo da IEAB declarou a deposição de dom Robinson Cavalcanti
+      do ofício episcopal, acusando-o de insubordinação e quebra da comunhão eclesiástica.
+    page: '26'
+  discrepancies:
+  - field: start
+    value: '1997-10-05'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        em janeiro de 2005, o Conselho Executivo do Sínodo da IEAB declarou a deposição de dom Robinson Cavalcanti
+        do ofício episcopal, acusando-o de insubordinação e quebra da comunhão eclesiástica.
+      page: '26'
+  - field: end
+    value: 2005-01
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        em janeiro de 2005, o Conselho Executivo do Sínodo da IEAB declarou a deposição de dom Robinson Cavalcanti
+        do ofício episcopal, acusando-o de insubordinação e quebra da comunhão eclesiástica.
+      page: '26'
+  notes: Robinson considerou a deposição nula e manteve-se como bispo da maioria das paróquias.
+- jurisdiction: dar-iacs
+  role: founder
+  start: '2005'
+  end: '2012-02-26'
+  end_reason: death
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Ele manteve-se como bispo junto à maioria das paróquias, criando uma nova jurisdição diocesana chamada Igreja
+      Anglicana – Diocese do Recife (IA-DR).
+    page: '26'
+  notes: Também bispo diocesano da jurisdição até sua morte.
+- jurisdiction: dar-iacs
+  role: diocesan_bishop
+  start: '2005'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana – Diocese do Recife (IA-DR), liderada por dom Robinson Cavalcanti
+    page: '150'
 - jurisdiction: diocese-anglicana-recife
   role: diocesan_bishop
   start: '2005'
@@ -142,6 +257,28 @@ affiliations:
     quote: >-
       He took with him roughly two-thirds of the diocese’s clergy and the overwhelming majority of its laity, and
       placed himself under the primatial oversight of Archbishop Gregory Venables of the Southern Cone.
+- jurisdiction: ieab-dar
+  role: diocesan_bishop
+  end: '2005'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: pelo bispo do Recife, dom Robinson Cavancati
+    page: '110'
+  - source: cant-novas-igrejas-2024
+    quote: com o segundo cisma, promovido pelo próprio Robinson, em 2005
+    page: '111'
+- jurisdiction: iab
+  role: founder
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Igreja Anglicana no Brasil (IAB), reorganizada pelo bispo Robinson Cavalcanti a partir da Diocese do Recife,
+      hoje liderada pelo arcebispo Miguel Uchôa Cavalcanti
+    page: '174'
+  notes: '''reorganizada pelo bispo Robinson Cavalcanti a partir da Diocese do Recife''.'
 events:
 - type: other
   date: '1985'
@@ -513,6 +650,118 @@ events:
   sources:
   - source: ieab-2005-cbispos-cantuaria
     quote: mente que lá encontrou Robinson Cavalcanti e Miguel Uchôa, “em nome” da IEAB.
+- type: deposition
+  date: 2005-01
+  description: >-
+    Deposição de Robinson Cavalcanti do ofício episcopal pelo Conselho Executivo do Sínodo da IEAB; Robinson considerou
+    o ato nulo.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em janeiro de 2005, o Conselho Executivo do Sínodo da IEAB declarou a deposição de dom Robinson Cavalcanti
+      do ofício episcopal
+    page: '26'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Robinson, por sua vez, considerou o ato nulo e sem valor, por julgá-lo juridicamente e canonicamente inválido.
+    page: '26'
+- type: death
+  date: '2012-02-26'
+  description: >-
+    Assassinato de Robinson Cavalcanti e de sua esposa Miriam, em Olinda, pelo filho adotivo; sepultados em 29/02/2012
+    no Cemitério Morada da Paz, Paulista.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Na noite de 26 de fevereiro de 2012, Robinson e a sua esposa Miriam foram assassinados pelo filho adotivo
+      do casal
+    page: '29'
+  - source: cant-novas-igrejas-2024
+    quote: O casal foi sepultado no dia 29 de fevereiro, no Cemitério Morada da Paz, em Paulista.
+    page: '30'
+- type: other
+  date: null
+  description: >-
+    Frederico Bastos é ordenado na Catedral da Santíssima Trindade (Recife) por Robinson Cavalcanti (ordem não especificada).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O então reverendo Frederico Bastos iniciou a sua caminhada, junto com a sua família na Catedral da Santíssima
+      Trindade, sendo ordenado neste templo, por dom Robinson Cavalcanti.
+    page: '56'
+- type: other
+  date: '2006'
+  description: >-
+    Após a sagração de 2006, os novos bispos da Igreja Anglicana do Brasil receberam cartas do arcebispo Peter Akinola
+    (Nigéria), do bispo Robinson Cavalcanti (Diocese do Recife, então ligada ao Cone Sul) e do arcebispo Frank Retief,
+    entre outros.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      os novos bispos receberam cartas do arcebispo Peter Akinola (Primaz da Igreja Anglicana da Nigéria), do bispo
+      Robinson Cavalcanti (Diocese do Recife, então ligada à Igreja do Cone Sul), do arcebispo Frank Retief (Igreja
+      da Inglaterra na África do Sul) e muitos outros.
+    page: '118'
+- type: other
+  date: '2006'
+  description: >-
+    Em 2006 a Igreja Anglicana do Brasil (Lorite) e outras igrejas subscreveram a Declaração da Boa Viagem, que
+    criou o Movimento Anglicano 'Por Uma Causa Comum', liderado pelo bispo Robinson Cavalcanti, em defesa da ortodoxia
+    (Resolução 1.10 de Lambeth 1998). Signatários: Diocese do Recife (Robinson Cavalcanti); IAdB (Ricardo Lorite,
+    Rui Costa Barbosa, Célio Spinelli); Igreja Episcopal Reformada (Sebastião Mendes de Freitas, Francisco Buzzo);
+    IAOB (Hermany Soares, Adriano Oliveira, Flávio Conti, Virgílio Torres); IAMR (Marcos Fradique, Antônio Pessoa
+    Leite); IABRA (Alexandre Macedo Maia); IALAB (Geraldo Santos de Magela Neto); IEEP (Josué Souza Torres, Sandro
+    Bussinger Sampaio).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em 2006, a Igreja Anglicana do Brasil subscreveu a Declaração da Boa Viagem, um documento que marcou a criação
+      do chamado Movimento Anglicano "Por Uma Causa Comum".
+    page: '118'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Assinaram este documento a Diocese do Recife, liderada pelo bispo Robinson Cavalcanti; a Igreja Anglicana
+      do Brasil, liderada pelo arcebispo e primaz Ricardo Lorite, juntamente com os bispos Rui Costa Barbosa e Célio
+      Spinelli; a Igreja Episcopal Reformada, liderada pelo bispo Sebastião Mendes de Freitas e Francisco Buzzo;
+      a Igreja Anglicana Ortodoxa do Brasil (IAOB), pelos reverendos Hermany Soares, Adriano Oliveira, Flávio Conti
+      e Virgílio Torres;
+    page: '118'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Missionária do Redentor (IARM), através dos bispos Marcos Fradique e Antônio Pessoa Leite; a Igreja Anglicana
+      Brasileira (IABRA), pelo bispo Alexandre Macedo Maia; a Igreja Anglicana Latino Americana no Brasil (IALAB),
+      pelo bispo Geraldo Santos de Magela Neto; e a Igreja Episcopal do Evangelho Pleno (IEEP), através do bispo
+      Josué Souza Torres e do reverendo Sandro Bussinger Sampaio.
+    page: '119'
+- type: other
+  date: '2006'
+  description: >-
+    Declaração da Boa Viagem (2006): fundação do Movimento Anglicano 'Por Uma Causa Comum', em defesa da ortodoxia
+    sobre a sexualidade humana (Resolução 1.10 de Lambeth 1998), encabeçado por Robinson Cavalcanti. Signatários
+    citados: Diocese do Recife, Igreja Anglicana do Brasil, Igreja Episcopal Reformada, Igreja Anglicana Ortodoxa
+    no Brasil (IAOB), Igreja Anglicana Missionária do Redentor (IAMR), Igreja Anglicana Brasileira (IABRA), Igreja
+    Episcopal do Evangelho Pleno (IEEP) e Igreja Anglicana Latino Americana do Brasil (IALAB, representada por Geraldo
+    Magela).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em 2006, por ter subscrito, junto com outras denominações anglicanas à época, a Declaração da Boa Viagem,
+      documento o qual deliberou a fundação do Movimento Anglicano "Por Uma Causa Comum"
+    page: '156'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Junto com a Diocese do Recife, liderada pelo bispo Robinson Cavalcanti, outras Igrejas assinaram o documento,
+      como a Igreja Anglicana do Brasil, Igreja Episcopal Reformada, Igreja Anglicana Ortodoxa no Brasil (IAOB),
+      Igreja Anglicana Missionária do Redentor (IAMR), Igreja Anglicana Brasileira (IABRA), Igreja Episcopal do
+      Evangelho Pleno (IEEP), e a Igreja Anglicana Latino Americana do Brasil (IALAB), representada pelo bispo Geraldo
+      Magela.
+    page: '158'
 - type: death
   date: '2012'
   description: Robinson Cavalcanti assassinado em 2012

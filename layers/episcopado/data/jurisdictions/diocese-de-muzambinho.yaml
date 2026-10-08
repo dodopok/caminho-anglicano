@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-muzambinho
+name: Diocese de Muzambinho
+type: diocese
+relations:
+- type: part_of
+  target: iaebr
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O seu atual bispo primaz é dom Welington Souza, que pastoreia a Igreja a partir da denominada Diocese de Muzambinho
+    page: '122'

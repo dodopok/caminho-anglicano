@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ivcmb
+acronym: IVCMB
+name: Igreja Vétero-Católica Missionária do Brasil
+type: national_church
+country: BR
+description: Igreja vétero-católica na qual ingressou José Fernando de Faria.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    este último, anos depois, deixou o Anglicanismo independente e ingressou na Igreja Vétero-Católica Missionária
+    do Brasil
+  page: '161'

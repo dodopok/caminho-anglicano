@@ -1,3 +1,35 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: dirceu-falcao-ibaldo
 name: Dirceu Falcão Ibaldo
+biography: >-
+  Primaz da Congregação Missionária de Tradição Anglicana (Santa Maria, RS); co-sagrante de Adolfo Batista (2013);
+  depois primaz emérito e bispo da Região Sul da IAOB; autor de 'História do Anglicanismo' (2012).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Dirceu Falcão Ibaldo, então Primaz da Congregação Missionária de Tradição Anglicana da cidade de Santa Maria
+    Estado do Rio Grande do Sul
+  page: '131'
+affiliations:
+- jurisdiction: cmta
+  role: primate
+  start: '2013'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Dirceu Falcão Ibaldo, então Primaz da Congregação Missionária de Tradição Anglicana da cidade de Santa Maria
+      Estado do Rio Grande do Sul
+    page: '131'
+- jurisdiction: iaob-2013
+  role: other
+  role_description: primaz_emerito
+  diocese: regiao-sul
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: que posteriormente passou a integrar a IAOB como seu primaz-emérito.
+    page: '131'
+  - source: cant-novas-igrejas-2024
+    quote: dom Dirceu Falcão Ibaldo, primaz emérito e bispo da Região Sul
+    page: '132'

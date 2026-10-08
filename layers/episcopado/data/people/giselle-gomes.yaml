@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: giselle-gomes
+name: Giselle Gomes
+biography: >-
+  Reverenda que auxiliava o deão Sérgio Andrade na Igreja Anglicana da Santíssima Trindade e saiu alguns meses após
+  a ruptura.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Alguns meses depois, ocorreu a saída da reverenda Giselle Gomes, que auxiliava o deão.
+  page: '112'
+affiliations:
+- jurisdiction: iast
+  role: clergy
+  start: '2017'
+  end: c.2017
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Alguns meses depois, ocorreu a saída da reverenda Giselle Gomes, que auxiliava o deão.
+    page: '112'

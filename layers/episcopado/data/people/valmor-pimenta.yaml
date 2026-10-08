@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: valmor-pimenta
+name: Valmor Pimenta
+aliases:
+- Padre Valmor
+biography: >-
+  Reverendo (Padre Valmor) da Diocese de Ely, Igreja da Inglaterra, com quem Juliano Bernardino Godoy mantém contato.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    O reverendo Juliano mantém contato com o reverendo Valmor Pimenta (Padre Valmor), da Diocese de Ely, Igreja
+    da Inglaterra
+  page: '124'
+affiliations:
+- jurisdiction: church-of-england
+  role: clergy
+  diocese: diocese-of-ely
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: reverendo Valmor Pimenta (Padre Valmor), da Diocese de Ely, Igreja da Inglaterra
+    page: '124'

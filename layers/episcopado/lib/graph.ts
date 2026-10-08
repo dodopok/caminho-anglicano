@@ -52,6 +52,8 @@ export interface Graph {
 /** Prefixa ids para que pessoa e jurisdição com o mesmo slug não colidam. */
 export const nodeId = (kind: NodeKind, id: string) => `${kind === 'person' ? 'p' : 'j'}:${id}`
 
+const EPISCOPAL_ROLES = new Set(['bishop', 'diocesan_bishop', 'coadjutor_bishop', 'suffragan_bishop', 'auxiliary_bishop', 'missionary_bishop', 'primate', 'archbishop'])
+
 const compact = (values: (string | null | undefined)[]) => values.filter((v): v is string => !!v)
 
 export function buildGraph(base: Base): Graph {
@@ -114,7 +116,8 @@ export function buildGraph(base: Base): Graph {
     const ordinations = p.ordinations ?? []
     const first = compact(ordinations.map((o) => o.date)).sort()[0]
     const recorded = (['episcopate', 'presbyterate', 'diaconate'] as const).find((o) => ordinations.some((x) => x.order === o))
-    const inferred = recorded !== 'episcopate' && ordainers.has(p.id)
+    // Bispo por implicação: sagrou/ordenou alguém, ou ocupa cargo episcopal numa jurisdição.
+    const inferred = recorded !== 'episcopate' && (ordainers.has(p.id) || (p.affiliations ?? []).some((a) => EPISCOPAL_ROLES.has(a.role)))
     nodes.push({
       id: nodeId('person', p.id),
       kind: 'person',

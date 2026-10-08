@@ -1,6 +1,15 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: james-tavares-de-melo
 name: James Tavares de Melo
+aliases:
+- Dom James Tavares
+- James Tavares
+biography: Bispo/clérigo ligado à jurisdição DAV; ver afirmações.
+sources:
+- source: costa-2021-tese
+  quote: >-
+    Durante o 2º Concílio da Diocese, James Tavares foi escolhido como o bispo sucessor, sendo ordenado ao episcopado
+    em 14 de outubro de 2018, na Catedral da Santa Mãe de Deus, em Votorantim.
 ordinations:
 - order: presbyterate
   date: 2016-05
@@ -16,7 +25,8 @@ ordinations:
 - order: episcopate
   date: '2018-10-14'
   place: Catedral da Santa Mãe de Deus, Votorantim (SP)
-  jurisdiction: null
+  jurisdiction: dav
+  office: diocesan
   principal_consecrator: james-antonio-roque
   co_consecrators:
   - frederick-haas
@@ -31,6 +41,67 @@ ordinations:
     quote: >-
       Sua sagração ocorreu em 14 de outubro de 2018, na Catedral Santa Mãe de Deus, tendo como 171 sagrantes Dom
       Theodoro Oliveira, Dom James Antônio Roque, Dom Frederick Haas e Dom Rafael Ribeiro Campos.
+  - source: costa-2021-tese
+    quote: >-
+      Durante o 2º Concílio da Diocese, James Tavares foi escolhido como o bispo sucessor, sendo ordenado ao episcopado
+      em 14 de outubro de 2018, na Catedral da Santa Mãe de Deus, em Votorantim.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      o reverendo James Tavares de Melo, o qual foi escolhido como o bispo sucessor e sagrado em 14 de outubro de
+      2018, na Catedral da Santa Mãe de Deus, em Votorantim. Foram sagrantes do novo bispo dom Theodoro Oliveira,
+      dom James Antônio Roque, dom
+    page: '77'
+  - source: cant-novas-igrejas-2024
+    quote: Frederick Haas e dom Rafael Ribeiro Campos.
+    page: '78'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Dom James Roque também foi responsável por presidir a sagração episcopal de dom James Tavares de Melo, segundo
+      diocesano de Votorantim.
+    page: '155'
   notes: >-
     Fecha a lacuna de sagrante (jurisdicoes-menores.json tinha SP nulo). Província Anglicana de Cristo Salvador
-    / Diocese Anglicana de Votorantim.
+    / Diocese Anglicana de Votorantim. O livro lista os quatro como 'sagrantes' sem distinguir o principal (Theodoro
+    Oliveira é citado primeiro). Eleito bispo sucessor no 2º Concílio da Diocese. Data e local não informados.
+affiliations:
+- jurisdiction: dav
+  role: bishop
+  start: '2018-10-14'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o qual foi escolhido como o bispo sucessor
+    page: '77'
+  notes: Bispo sucessor (coadjutor) eleito no 2º Concílio.
+- jurisdiction: dav
+  role: diocesan_bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Dom James Roque também foi responsável por presidir a sagração episcopal de dom James Tavares de Melo, segundo
+      diocesano de Votorantim.
+    page: '155'
+  notes: Segundo diocesano de Votorantim.
+events:
+- type: other
+  date: 2016-05
+  description: >-
+    Frei James Tavares de Melo, OFS, é ordenado por Theodoro Oliveira em Votorantim (ordem não especificada).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: No mesmo mês, o frei James Tavares de Melo, OFS, foi ordenado por dom Theodoro em Votorantim.
+    page: '77'
+- type: other
+  date: 2023-07
+  description: >-
+    Em julho de 2023, na Paróquia Anglicana de São Jorge (Rio Claro, SP), Fernando Nobile foi instituído bispo diocesano
+    da Diocese Sul/Sudeste da IAEB, com a presença do arcebispo Patricio Viveros Robles e do bispo James Tavares.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Somente em julho de 2023, na Paróquia Anglicana de São Jorge, o bispo Patricio Robles e o bispo James Tavares
+      estiveram na instituição de dom Fernando Nobile como diocesano da Diocese Sul/Sudeste, da IAEB.
+    page: '125'

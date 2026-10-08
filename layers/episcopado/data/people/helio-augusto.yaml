@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: helio-augusto
+name: Hélio Augusto
+biography: >-
+  Reverendo, bispo eleito da Diocese do Pará da Igreja Anglicana Tradicional do Brasil (sagração prevista para novembro
+  de 2025, no Rio de Janeiro).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Diocese do Pará, com o bispo eleito, reverendo Hélio Augusto
+  page: '136'
+affiliations:
+- jurisdiction: iatb
+  role: other
+  role_description: bispo_eleito
+  diocese: diocese-do-para
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      e Diocese do Pará, com o bispo eleito, reverendo Hélio Augusto, que sagrado ao episcopado durante o Encontro
+      Sinodal que em novembro de 2025, no Rio de Janeiro.
+    page: '136'
+  notes: >-
+    A frase do livro está truncada; indica sagração no Encontro Sinodal de novembro de 2025 (Rio de Janeiro), posterior
+    à redação do livro — não registrei como ordenação.

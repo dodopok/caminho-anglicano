@@ -1,6 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: gustavo-gilson-de-oliveira
 name: Gustavo Gilson de Oliveira
+aliases:
+- Gustavo Oliveira
+biography: >-
+  Deão da Catedral do Bom Samaritano (Diocese Anglicana do Recife, IEAB), elevada a catedral após a saída de 2017.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: tendo como seu deão o reverendo Gustavo Oliveira.
+  page: '112'
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -31,3 +39,15 @@ affiliations:
     Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
     por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. Reitor do SAET; membro
     da OSE Listado no clero diocesano da DAR (página consultada em 2026-10).
+- jurisdiction: ieab-dar
+  role: other
+  role_description: deao
+  start: '2017'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Paróquia do Bom Samaritano foi elevada ao status de Catedral, algo que permanece até o momento, tendo como
+      seu deão o reverendo Gustavo Oliveira.
+    page: '112'
+  notes: 'Local: Catedral do Bom Samaritano, Recife.'

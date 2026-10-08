@@ -1,15 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: adolfo-batista
 name: Adolfo Batista
+full_name: Adolfo Batista Teodoro Junior
+aliases:
+- Adolfo Batista Teodoro Junior
+- Adolfo Batista Teodoro Júnior
+biography: Bispo primaz da Igreja Anglicana Ortodoxa no Brasil em 2017.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: pelo então Bispo Primaz da IAOB, Dom Adolfo Batista Teodoro Júnior.
+  page: '34'
 ordinations:
 - order: episcopate
   date: '2013-01-12'
-  jurisdiction: null
+  jurisdiction: copieb
+  office: primate
   principal_consecrator: josue-sousa-torres
   co_consecrators:
   - dirceu-falcao-ibaldo
   - osiel-luiz-santos
-  status: probable
+  status: contested
   sources:
   - source: cant-novas-igrejas-2024
     quote: >-
@@ -17,3 +27,60 @@ ordinations:
       Janeiro de 2013, através da imposição das mãos do Bispo Josué Souza Torres, Primaz da Igreja Episcopal do
       Evangelho Pleno, tendo como cosagrantes os bispos Osiel Luiz Santos da Igreja Católica Apostólica Libertadora
       e Dirceu Falcão Ibaldo
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      o ministro recebeu, por imposição de mãos de outros ministros daquele concílio, o título de bispo – contudo,
+      sem linhagem de sucessão apostólica.
+    page: '131'
+  discrepancies:
+  - field: jurisdiction
+    value: iaob-2013
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        A fundação da Igreja foi precedida pela sagração ao episcopado do bispo Adolfo Batista, ocorrida em 12 de
+        Janeiro de 2013, através da imposição das mãos do Bispo Josué Souza Torres, Primaz da Igreja Episcopal do
+        Evangelho Pleno, tendo como cosagrantes os bispos Osiel Luiz Santos da Igreja Católica Apostólica Libertadora
+        e Dirceu Falcão Ibaldo
+      page: '131'
+  notes: >-
+    Título de bispo conferido por imposição de mãos de ministros do COPIEB, 'sem linhagem de sucessão apostólica';
+    data não informada. Precedeu a fundação da IAOB (20/04/2014). Osiel Luiz Santos era da Igreja Católica Apostólica
+    Libertadora; Dirceu Falcão Ibaldo, primaz da Congregação Missionária de Tradição Anglicana (Santa Maria, RS).
+affiliations:
+- jurisdiction: iaob-2013
+  role: primate
+  start: '2014-04-20'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: pelo então Bispo Primaz da IAOB, Dom Adolfo Batista Teodoro Júnior.
+    page: '34'
+  - source: cant-novas-igrejas-2024
+    quote: o qual também passou a atuar como primaz da Igreja
+    page: '131'
+  notes: Primaz em novembro de 2017.
+- jurisdiction: iaob-2013
+  role: founder
+  start: '2014-04-20'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      o bispo dom Adolfo Batista Teodoro Junior presidiu a assembleia de fundação da Igreja Anglicana Ortodoxa no
+      Brasil
+    page: '131'
+events:
+- type: other
+  date: '2017-11-25'
+  description: >-
+    Clérigos saídos da IAB em 2014 (entre eles Daniel Barbosa) ingressam na IAOB, que reconhece suas ordens, em
+    cerimônia no templo da Igreja Evangélica Pernambucana (Congregacional).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 25 de novembro de 2017, em cerimônia realizada no templo da Igreja Evangélica Pernambucana (Congregacional),
+      eles ingressaram na Igreja Anglicana Ortodoxa no Brasil e suas ordens foram reconhecidas pelo então Bispo
+      Primaz da IAOB, Dom Adolfo Batista Teodoro Júnior.
+    page: '34'

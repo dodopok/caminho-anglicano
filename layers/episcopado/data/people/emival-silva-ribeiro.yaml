@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: emival-silva-ribeiro
+name: Emival Silva Ribeiro
+biography: Bispo emérito de Goiânia (GO) na Igreja Anglicana Continuante.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    O clero da Igreja Anglicana Continuante (IAC) é formado por dom Valdiley Abadia da Silva (bispo primaz e presidente),
+    monsenhor Gleidson Antônio do Nascimento Alves (bispo e vice-presidente), dom Sebastião Edilson de Alencar (bispo
+    de Brasília), dom Emival Silva Ribeiro (emérito de Gôiania-GO), dom Éric Massaro Baptista (secretário geral,
+    de Cachoeirinha-SP).
+  page: '108'
+affiliations:
+- jurisdiction: iac
+  role: other
+  role_description: bispo_emerito
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O clero da Igreja Anglicana Continuante (IAC) é formado por dom Valdiley Abadia da Silva (bispo primaz e presidente),
+      monsenhor Gleidson Antônio do Nascimento Alves (bispo e vice-presidente), dom Sebastião Edilson de Alencar
+      (bispo de Brasília), dom Emival Silva Ribeiro (emérito de Gôiania-GO), dom Éric Massaro Baptista (secretário
+      geral, de Cachoeirinha-SP).
+    page: '108'
+  notes: Emérito de Goiânia.

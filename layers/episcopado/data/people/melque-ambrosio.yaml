@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: melque-ambrosio
+name: Melque Ambrósio
+aliases:
+- Rev. Melque
+biography: >-
+  Reverendo da Diocese Anglicana do Natal (TAC); integrou o grupo que saiu de Votorantim em 2018; articulou a filiação
+  à TAC.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Clérigos como os Reverendos Rodson Ricardo e Melque Ambrósio, em Natal, e Elias Alves em Olinda
+  page: '82'
+affiliations:
+- jurisdiction: tac-natal
+  role: clergy
+  start: '2018'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Clérigos como os Reverendos Rodson Ricardo e Melque Ambrósio, em Natal, e Elias Alves em Olinda, têm feito
+      um trabalho de expansão da Igreja
+    page: '82'
+events:
+- type: other
+  date: '2021'
+  description: >-
+    Contato do clero de Natal (Rodson e Melque) com o arcebispo Michael Gill e início do diálogo com a TAC; reunião
+    com o primaz Shane Janzen.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Junto com o reverendo Melque, em 2021 foi feito contato com o Arcebispo da África do Sul, Michael Gill, de
+      Joanesburgo, e assim, iniciou-se o diálogo com a TAC.
+    page: '81'

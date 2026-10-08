@@ -169,10 +169,21 @@ const currentRoles = computed(() =>
     .reverse()
 )
 
+const EPISCOPAL_ROLES = new Set(['bishop', 'diocesan_bishop', 'coadjutor_bishop', 'suffragan_bishop', 'auxiliary_bishop', 'missionary_bishop', 'primate', 'archbishop'])
+
 const kicker = computed(() => {
   const p = props.person
   const orders = new Set(p.ordinations.map((o) => o.order))
-  const label = orders.has('episcopate') ? 'Bispo' : orders.has('presbyterate') ? 'Presbítero' : orders.has('diaconate') ? 'Diácono' : p.ordained.length ? 'Bispo · inferido' : 'Pessoa'
+  const episcopalRole = p.affiliations.some((a) => EPISCOPAL_ROLES.has(a.role))
+  const label = orders.has('episcopate')
+    ? 'Bispo'
+    : p.ordained.length || episcopalRole
+      ? 'Bispo · inferido'
+      : orders.has('presbyterate')
+        ? 'Presbítero'
+        : orders.has('diaconate')
+          ? 'Diácono'
+          : 'Pessoa'
   const roles = currentRoles.value.map((r) => r.jurisdiction.acronym ?? r.jurisdiction.name)
   return [label, ...new Set(roles)].join(' · ')
 })

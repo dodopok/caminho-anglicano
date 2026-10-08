@@ -1,10 +1,56 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: frei-eduardo
 name: Dom Frei Eduardo
+full_name: Eduardo Faria
+aliases:
+- Dom Eduardo Faria
+- Eduardo Faria
+- Frei Eduardo Faria
 biography: >-
-  Bispo co-sagrante, presente, na sagração de Virgílio Cezar; nome completo e jurisdição não identificados.
+  Reverendo/frei Eduardo Faria, sagrado em 2023 bispo primaz da Igreja Anglicana do Brasil reativada; ordenou Luciano
+  Alves Campelo diácono em 10/12/2023.
 sources:
-- source: testemunho-mantenedor-2026-10-08-video-virgilio
+- source: cant-novas-igrejas-2024
   quote: >-
-    Os bispos sagrantes presentes na cerimônia foram o Reverendíssimo Dr. Ricardo Lorite de Lima (04:10) e Dom Frei
-    Eduardo (1:21:20).
+    agora tendo como sua liderança principal o Reverendo Frei Eduardo Faria, sendo sagrado o seu atual Bispo Primaz
+  page: '120'
+ordinations:
+- order: episcopate
+  date: '2023'
+  jurisdiction: iadb-lorite
+  office: primate
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Passado alguns anos, em 2023, a Igreja Anglicana do Brasil voltou a ser organizada, agora tendo como sua liderança
+      principal o Reverendo Frei Eduardo Faria, sendo sagrado o seu atual Bispo Primaz
+    page: '120'
+  notes: O livro não informa os sagrantes nem a data exata.
+affiliations:
+- jurisdiction: iadb-lorite
+  role: primate
+  start: '2023'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      agora tendo como sua liderança principal o Reverendo Frei Eduardo Faria, sendo sagrado o seu atual Bispo Primaz
+    page: '120'
+events:
+- type: other
+  date: '2023-07-01'
+  description: >-
+    A Igreja Anglicana do Brasil (Lorite) retomou suas atividades em 01/07/2023, após tratativas com a Igreja Católico
+    Anglicana Latino Americana, sob a liderança de Frei Eduardo Faria (primaz) e com Ricardo Lorite como primaz
+    emérito; passou a se apresentar como 'Igreja Inclusiva'.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Através de Tratativas entre a Igreja Anglicana do Brasil e a Igreja Católico Anglicana Latino Americana, reassume
+      a Igreja Anglicana do Brasil seu carisma Missionário e
+    page: '120'
+  - source: cant-novas-igrejas-2024
+    quote: Evangelizador e retoma suas atividades a partir de 1º de Julho de 2023
+    page: '121'

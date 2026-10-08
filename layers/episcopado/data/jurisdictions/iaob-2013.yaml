@@ -1,26 +1,36 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: iaob-2013
 acronym: IAOB-2013
-name: Igreja Anglicana Ortodoxa no Brasil (2013, Corumbá de Goiás)
+name: Igreja Anglicana Ortodoxa no Brasil
+aliases:
+- Igreja Anglicana Ortodoxa no Brasil (2013, Corumbá de Goiás)
 type: national_church
 country: BR
 founded:
-  date: 2013-01
+  date: '2014-04-20'
   sources:
-  - source: costa-2021-tese
-    quote: A Igreja Anglicana Ortodoxa no Brasil surgiu em janeiro de 2013, na cidade de Corumbá de Goiás
-  - source: costa-2021-tese
+  - source: cant-novas-igrejas-2024
     quote: >-
-      O novo clero foi ordenado pelo bispo Josué Sousa Torres (da Igreja Evangélica do Evangelho Pleno), entre eles,
-      os bispos Dirceu Falcão Ibaldo e Adolfo Batista Teodoro Júnior.
+      Em reunião ocorrida na Fazenda Shangri-lá, no dia 20 de abril deste 2014, o bispo dom Adolfo Batista Teodoro
+      Junior presidiu a assembleia de fundação da Igreja Anglicana Ortodoxa no Brasil
+    page: '131'
+  discrepancies:
+  - field: date
+    value: 2013-01
+    sources:
+    - source: costa-2021-tese
+      quote: A Igreja Anglicana Ortodoxa no Brasil surgiu em janeiro de 2013, na cidade de Corumbá de Goiás
+    - source: costa-2021-tese
+      quote: >-
+        O novo clero foi ordenado pelo bispo Josué Sousa Torres (da Igreja Evangélica do Evangelho Pleno), entre
+        eles, os bispos Dirceu Falcão Ibaldo e Adolfo Batista Teodoro Júnior.
+website: https://iortodoxarenovada.webnode.page/
 description: >-
-  Igreja surgida em janeiro de 2013 em Corumbá de Goiás; clero ordenado por Josué Sousa Torres (Igreja Evangélica
-  do Evangelho Pleno); primaz Adolfo Batista Teodoro Júnior. Em 25/11/2017 recebeu clérigos saídos da IAB no Recife
-  (entre eles Daniel Barbosa). Distinta da IAOB de 2007.
+  Igreja que em 2017 recebeu clérigos saídos da IAB em 2014, reconhecendo suas ordens; primaz à época: Adolfo Batista
+  Teodoro Júnior.
 sources:
-- source: costa-2021-tese
-  quote: A Igreja Anglicana Ortodoxa no Brasil surgiu em janeiro de 2013, na cidade de Corumbá de Goiás
-- source: costa-2021-tese
+- source: cant-novas-igrejas-2024
   quote: >-
-    O novo clero foi ordenado pelo bispo Josué Sousa Torres (da Igreja Evangélica do Evangelho Pleno), entre eles,
-    os bispos Dirceu Falcão Ibaldo e Adolfo Batista Teodoro Júnior.
+    eles ingressaram na Igreja Anglicana Ortodoxa no Brasil e suas ordens foram reconhecidas pelo então Bispo Primaz
+    da IAOB, Dom Adolfo Batista Teodoro Júnior.
+  page: '34'

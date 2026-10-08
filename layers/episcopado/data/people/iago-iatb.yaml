@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: iago-iatb
+name: Iago (IATB)
+aliases:
+- Dom Iago
+biography: Dom Iago, bispo da IATB para a região Sul.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: e um bispo para a região Sul, dom Iago.
+  page: '136'
+affiliations:
+- jurisdiction: iatb
+  role: bishop
+  diocese: regiao-sul
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: e um bispo para a região Sul, dom Iago.
+    page: '136'

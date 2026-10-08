@@ -3,7 +3,9 @@ id: rui-costa-barbosa
 name: Rui Costa Barbosa
 full_name: Rui Costa Barbosa
 aliases:
+- Dom Rui Barbosa
 - Dom Rui Costa
+- Rui Barbosa
 biography: >-
   Bispo primaz da Igreja Anglicana Tradicional do Brasil (IATB/AECI), São Paulo. Ex-membro da Diocese Anglicana
   de São Paulo (IEAB); sagrado por Norman Dutton, Frank Peachey e Iranildo Macieira da Silva (Costa 2021); fundador
@@ -16,6 +18,18 @@ sources:
     Ricardo Lorite e Rui Barbosa tiveram sua ordenação episcopal através dos bispos Norman Dutton, Frank Peachey
     e Iranildo Macieira da Silva (Igreja Episcopal Latina do Brasil).
 ordinations:
+- order: diaconate
+  date: '2005-03-26'
+  place: Ribeirão Preto (SP)
+  jurisdiction: iadb-lorite
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia 26 de março de 2005, na cidade de Ribeirão Preto (SP), os ministros licenciados Ricardo Lorite de Lima,
+      Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Diaconal
+    page: '118'
+  notes: O livro não nomeia o ordenante.
 - order: presbyterate
   date: '2005-03-27'
   place: Igreja Evangélica Congregacional de Ribeirão Preto (SP)
@@ -29,12 +43,17 @@ ordinations:
       Luis Fernando Salgado e Josué Souza Torres foram elevados ao Ministério Presbiteral da Igreja de Cristo, Una,
       Santa, Católica e Apostólica, através da imposição das mãos de Dom Iranildo Macieira das Silva (Dom Lucas).
       A cerimônia de Ordenação ocorreu na Igreja Evangélica Congregacional de Ribeirão Preto.
+  - source: cant-novas-igrejas-2024
+    quote: e no dia 27 de março, os quatro diáconos foram ordenados presbíteros por bispos independentes.
+    page: '118'
   notes: >-
     Também impuseram as mãos os padres Manuel (Igreja Antigo-Católica), João Ripoli e Mário Palumbo (Igreja Católica
-    Romana). Ordenações autorizadas por Leonardo Marin-Saavedra (Anglican Independent Communion Worldwide).
+    Romana). Ordenações autorizadas por Leonardo Marin-Saavedra (Anglican Independent Communion Worldwide). O livro
+    diz apenas 'por bispos independentes', sem nomeá-los.
 - order: episcopate
-  date: null
+  date: '2006-01-15'
   jurisdiction: iadb-lorite
+  office: suffragan
   co_consecrators:
   - barry-frank-peachey
   - iranildo-macieira-da-silva
@@ -46,10 +65,52 @@ ordinations:
       Após receberem as ordens do diaconato e do presbiterato por bispos independentes, Ricardo Lorite e Rui Barbosa
       tiveram sua ordenação episcopal através dos bispos Norman Dutton, Frank Peachey e Iranildo Macieira da Silva
       (Igreja Episcopal Latina do Brasil).
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Os reverendos Ricardo Lorite e Rui Barbosa tiveram sua ordenação episcopal através dos bispos Norman Dutton,
+      Frank Peachey e Lucas Macieira da Silva (Igreja Episcopal Latina do Brasil), em 15 de janeiro de 2006.
+    page: '118'
   notes: >-
     Data e sagrante principal não informados; a fonte lista três bispos sagrantes sem hierarquia. Iranildo Macieira
-    da Silva é da 'Igreja Episcopal Latina do Brasil'.
+    da Silva é da 'Igreja Episcopal Latina do Brasil'. O livro diz 'através dos bispos' Norman Dutton, Frank Peachey
+    e Lucas Macieira, sem indicar o sagrante principal. Na p. 119 Rui aparece como bispo coadjutor da IAdB. A IATB
+    (p. 136) diz ter origem em 2006, 'após a sagração do bispo e atual primaz, Rui Costa Barbosa'.
 affiliations:
+- jurisdiction: iatb
+  role: primate
+  diocese: diocese-thomas-becket
+  start: '2006'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após a saída de dom Cristiano da Província, este bispo foi convidado por dom Rui Barbosa para retornar para
+      a Igreja Anglicana Tradicional do Brasil (IATB).
+    page: '106'
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Thomas Becket (São Paulo), sob o episcopado e primazia de dom Rui Costa Barbosa
+    page: '136'
+  notes: 'Local: São Paulo.'
+- jurisdiction: iatb
+  role: founder
+  start: '2006'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      o bispo Rui Costa Barbosa, em parceria com outros clérigos, criou a Diocese Anglicana Católica do Brasil,
+      que sequer saiu do papel e, posteriormente, foi renomeada Igreja Anglicana Tradicional do Brasil, em Santo
+      André
+    page: '118'
+- jurisdiction: iadb-lorite
+  role: coadjutor_bishop
+  start: '2006-01-15'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Rui Costa Barbosa, como bispo coadjutor
+    page: '119'
+  notes: Situação descrita para a época da Declaração da Boa Viagem (2006).
 - jurisdiction: iatb
   role: primate
   status: confirmed
@@ -70,6 +131,21 @@ affiliations:
       de Lima, Rui Costa Barbosa
   notes: >-
     A fonte não diz se era clérigo ou leigo na IEAB; recebeu diaconato e presbiterato 'por bispos independentes'.
+- jurisdiction: ieab-dasp
+  role: member
+  end: c.2004
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O atual quadro complexo tem origem a partir da saída de membros da Diocese Anglicana de São Paulo da Igreja
+      Episcopal Anglicana do Brasil (IEAB). Dentre eles estavam Ricardo Lorite de Lima, Rui Costa Barbosa, Luis
+      Fernando Salgado e Josué Sousa Torres.
+    page: '117'
+  notes: >-
+    O livro diz que saíram da DASP/IEAB antes da aproximação com a REC (abril de 2004); na p. 145 são chamados de
+    'seminaristas'. Data de saída não informada.
 events:
 - type: other
   date: '2025-11-16'

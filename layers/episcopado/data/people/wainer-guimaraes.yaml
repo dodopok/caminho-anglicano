@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: wainer-guimaraes
+name: Wainer Guimarães
+biography: Pastor auxiliar que lidera a Christ Church Rio desde 24/05/2020.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Desde 24 de maio de 2020, a Christ Church Rio é liderada por Wainer Guimarães, que atua como pastor auxiliar.
+  page: '99'
+affiliations:
+- jurisdiction: ccr
+  role: other
+  role_description: pastor_auxiliar
+  start: '2020-05-24'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Desde 24 de maio de 2020, a Christ Church Rio é liderada por Wainer Guimarães, que atua como pastor auxiliar.
+    page: '99'

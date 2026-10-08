@@ -14,6 +14,16 @@ sources:
   quote: + Revmo. Dom Francisco Buzzo Rodrigues Bispo Diocesano
 - source: ptwiki-iarb
   quote: Em abril de 2012, o bispo Francisco Buzzo tornou-se bispo emérito
+ordinations:
+- order: episcopate
+  date: null
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Buzzo e Mendes foram sagrados por bispos brasileiros, mas seguiram caminhos distintos
+    page: '133'
+  notes: O livro diz apenas 'sagrados por bispos brasileiros', sem nomes nem data.
 affiliations:
 - jurisdiction: iarb
   role: founder
@@ -23,6 +33,9 @@ affiliations:
   - source: ptwiki-iarb
     quote: >-
       Foi fundada em 2005 pelo bispo Francisco Buzzo Rodrigues a partir de uma paróquia anglicana em Bragança Paulista
+  - source: cant-novas-igrejas-2024
+    quote: O primeiro fundou a Igreja Anglicana Reformada do Brasil
+    page: '133'
 - jurisdiction: iarb
   role: diocesan_bishop
   start: '2009'
@@ -41,10 +54,10 @@ affiliations:
     Leonides de Menezes (CEEC), segundo o site da CICEB.
 - jurisdiction: iarb
   role: primate
-  start: '2021'
+  start: 2021-05
   end: '2023'
   end_reason: resignation
-  status: probable
+  status: contested
   sources:
   - source: ptwiki-iarb
     quote: >-
@@ -58,6 +71,71 @@ affiliations:
     quote: >-
       Desde então, Buzzo assumiu como Primaz da denominação, liderando um clero formado por dois bispos missionários
       e poucas lideranças presentes em São Paulo, Bahia, Pernambuco e Distrito Federal.
+  - source: cant-novas-igrejas-2024
+    quote: Desde então, Buzzo assumiu como Primaz da denominação
+    page: '134'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      o bispo emérito Francisco Buzzo reassumiu brevemente funções episcopais, mas logo retornou à condição de emérito
+    page: '134'
+  discrepancies:
+  - field: end
+    value: '2021'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: Desde então, Buzzo assumiu como Primaz da denominação
+      page: '134'
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        o bispo emérito Francisco Buzzo reassumiu brevemente funções episcopais, mas logo retornou à condição de
+        emérito
+      page: '134'
+  - field: end_reason
+    value: retirement
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: Desde então, Buzzo assumiu como Primaz da denominação
+      page: '134'
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        o bispo emérito Francisco Buzzo reassumiu brevemente funções episcopais, mas logo retornou à condição de
+        emérito
+      page: '134'
+  notes: >-
+    Assumiu a primazia após a renúncia de Rosselló (maio de 2021), brevemente; voltou à condição de emérito e foi
+    sucedido por Diógenes Monteiro da Silva. Passou a pastorear só a Paróquia de Bragança Paulista.
+- jurisdiction: ierb
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: a Igreja Episcopal Reformada, liderada pelo bispo Sebastião Mendes de Freitas e Francisco Buzzo
+    page: '118'
+  notes: >-
+    O livro o põe entre os líderes da Igreja Episcopal Reformada que assinaram a Declaração da Boa Viagem (2006),
+    mas diz também (p. 133) que ele fundou a IARB em 2005 a partir de comunidade 'até então ligada à Igreja Episcopal
+    Reformada do Brasil'.
+- jurisdiction: ieab
+  role: other
+  role_description: seminarista
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      migrando para a Igreja Episcopal Anglicana do Brasil, onde estudou no IAET, à época do episcopado de dom Sumio
+      Takatsu. Em seguida, após sair da IEAB
+    page: '133'
+- jurisdiction: ier
+  role: other
+  role_description: bispo auxiliar
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Por um tempo, teve o bispo Sebastião Mendes de Freitas43 como seu primaz e Francisco Buzzo Rodrigues, como
+      bispo auxiliar.
+    page: '168'
 events:
 - type: other
   date: 2009-10

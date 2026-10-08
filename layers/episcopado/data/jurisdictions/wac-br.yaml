@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: wac-br
+acronym: WAC-BR
+name: Igreja Anglicana Mundial no Brasil (Província da WAC)
+type: province
+country: BR
+founded:
+  date: '2020-11-27'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana Mundial chegou ao Brasil através do reverendo Paulo Sérgio Ferreira, sendo estabelecida
+      em 27 de novembro de 2020.
+    page: '128'
+website: https://www.wacbrasil.org/
+description: >-
+  Província brasileira da Igreja Anglicana Mundial, estabelecida em 27/11/2020 pelo reverendo (depois arcebispo
+  primaz) Paulo Sérgio Ferreira; seis regiões missionárias e uma diocese (Pará).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja Anglicana Mundial chegou ao Brasil através do reverendo Paulo Sérgio Ferreira, sendo estabelecida em
+    27 de novembro de 2020.
+  page: '128'
+relations:
+- type: part_of
+  target: wac
+  date: '2020-11-27'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: No Brasil, a Província da WAC é organizada em seis regiões missionárias e uma Diocese.
+    page: '129'

@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rafael-de-emaus
+name: Rafael de Emaús
+biography: Bispo da Santa Igreja Celta do Brasil; auxiliou na sagração de Dionísio Aílton Pereira (2021).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    sendo auxiliado por dom Bernardo da Ressurreição e dom Rafael de Emaús, bispos da Santa Igreja Celta do Brasil
+  page: '103'
+affiliations:
+- jurisdiction: sicb
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: dom Bernardo da Ressurreição e dom Rafael de Emaús, bispos da Santa Igreja Celta do Brasil
+    page: '103'

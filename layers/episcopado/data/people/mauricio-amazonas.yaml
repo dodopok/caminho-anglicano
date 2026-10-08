@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: mauricio-amazonas
+name: Maurício Amazonas
+biography: >-
+  Reverendo, membro da Ordem de Santo Estêvão; administra o Instituto Robinson Cavalcanti (fundado em 2013).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: sobrevivendo através deles, até hoje, como por exemplo, o reverendo Maurício Amazonas.
+  page: '28'
+affiliations:
+- jurisdiction: ose
+  role: member
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Ordem ficou restrita a um círculo muito específico de clérigos, sobrevivendo através deles, até hoje, como
+      por exemplo, o reverendo Maurício Amazonas.
+    page: '28'

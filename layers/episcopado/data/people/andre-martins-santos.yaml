@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: andre-martins-santos
+name: André Martins Santos
+biography: Reverendo, arcediago da Igreja Anglicana Episcopal Brasileira.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: O bispo tem como arcediago o reverendo André Martins Santos.
+  page: '122'
+affiliations:
+- jurisdiction: iaebr
+  role: other
+  role_description: arcediago
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: O bispo tem como arcediago o reverendo André Martins Santos.
+    page: '122'

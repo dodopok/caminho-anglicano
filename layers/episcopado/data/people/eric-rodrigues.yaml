@@ -2,6 +2,7 @@
 id: eric-rodrigues
 name: Eric Rodrigues
 aliases:
+- Bispo Eric
 - Bp. Eric Rodrigues
 - Erick Rodrigues
 - Erik Rodrigues
@@ -103,6 +104,11 @@ ordinations:
     quote: Sagração Bispo Eric Rodrigues
   - source: eshoje-eric-2023
     quote: teve seu rito de sagração a Bispo Auxiliar realizado no último dia 8 de maio
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Câmara dos Bispos ganhou novos membros com a ordenação dos bispos Miguel Neto (auxiliar para a Diocese de
+      João Pessoa) e Eric Rodrigues (para o Estado do Espírito Santo e a região Sudeste).
+    page: '34'
   - source: reb-calendario-2026
     quote: 08/05/2023 – Sagração Episcopal • Bispo Eric
   - source: testemunho-mantenedor-2026-10-08-adair
@@ -112,10 +118,10 @@ ordinations:
     "Claudio Adair" — quase certamente Flávio Adair). O GAFCON (23/05/2023) diz "na semana passada", o que não bate
     exatamente com 08/05. Data e local confirmados por duas fontes independentes (ES Hoje; anglicanismo.com.br;
     GAFCON-pt diz "na semana passada" em 22/05/2023). Sagrantes apenas pelo anglicanismo.com.br, que grafa "Claudio
-    Adair" — quase certamente Flávio Adair (Torres Soares). Data e local confirmados por duas fontes independentes
-    (ES Hoje e anglicanismo.com.br) e pelo Gafcon; sagrantes só em anglicanismo.com.br. "Claudio Adair" pode ser
-    erro por Flávio Adair Torres Soares (bispo missionário da IAB) – não verificado. O "Claudio Adair" do anglicanismo.com.br
-    é Flávio Adair Torres Soares, segundo o mantenedor.
+    Adair" — quase certamente Flávio Adair (Torres Soares). Data não informada. Data e local confirmados por duas
+    fontes independentes (ES Hoje e anglicanismo.com.br) e pelo Gafcon; sagrantes só em anglicanismo.com.br. "Claudio
+    Adair" pode ser erro por Flávio Adair Torres Soares (bispo missionário da IAB) – não verificado. O "Claudio
+    Adair" do anglicanismo.com.br é Flávio Adair Torres Soares, segundo o mantenedor.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -189,8 +195,9 @@ affiliations:
   role: auxiliary_bishop
   diocese: iab-diocese-joao-pessoa
   start: '2023-05-08'
+  end: '2024-11-21'
   end_reason: left
-  status: confirmed
+  status: contested
   sources:
   - source: djp-bispos-aux-2024
     quote: >-
@@ -198,9 +205,41 @@ affiliations:
       nos estados do Espírito Santo, Minas Gerais, São Paulo e Rio de Janeiro.
   - source: djp-bispos-aux-2025
     quote: Bispo Miguel Neto
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo Eric atuava como bispo auxiliar na Diocese de João Pessoa, juntamente com o bispo Miguel Neto.
+    page: '151'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Eric Rodrigues formalizou a saída da Província da GAFCON, através de uma carta publicada nas redes sociais,
+      em 21 de novembro de 2024.
+    page: '151'
   notes: >-
     Fim entre 24/06/2024 (ainda listado) e 18/02/2025 (só Miguel Neto listado); coerente com a fundação da REB em
     20/12/2024 sob sua liderança (ver iab-clero.json).
+  discrepancies:
+  - field: end_reason
+    value: schism
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        O bispo Eric atuava como bispo auxiliar na Diocese de João Pessoa, juntamente com o bispo Miguel Neto.
+      page: '151'
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Eric Rodrigues formalizou a saída da Província da GAFCON, através de uma carta publicada nas redes sociais,
+        em 21 de novembro de 2024.
+      page: '151'
+- jurisdiction: reb
+  role: bishop
+  start: 2024-12
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      saída da Igreja Anglicana Âncora – liderada pelo bispo Eric Rodrigues –, que formou a atual Rede Episcopal
+      Brasileira (REB).
+    page: '151'
 - jurisdiction: reb
   role: diocesan_bishop
   start: '2024-12-20'
@@ -228,8 +267,21 @@ affiliations:
     quote: o Bispo Presidente, Revmo. Eric Rodrigues , assumirá a responsabilidade exclusiva
   - source: eric-blog-10meses
     quote: A Rede Episcopal Brasileira nasceu em 20 de dezembro de 2024.
+  - source: cant-novas-igrejas-2024
+    quote: e em 2024, com a Rede Episcopal Brasileira (REB), pela saída do bispo Eric Rodrigues.
+    page: '35'
   notes: >-
     Fonte primária (portaria de fundação assinada por ele). Usa os títulos "Bispo Presidente" e "Bispo Diocesano".
+- jurisdiction: iab
+  role: bishop
+  diocese: espirito-santo-e-regiao-sudeste
+  end: '2024'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: e em 2024, com a Rede Episcopal Brasileira (REB), pela saída do bispo Eric Rodrigues.
+    page: '35'
 events:
 - type: other
   date: '2023-03-13'

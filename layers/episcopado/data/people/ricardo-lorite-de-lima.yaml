@@ -5,7 +5,10 @@ full_name: Ricardo Lorite de Lima
 aliases:
 - Arcebispo Primus Dom Ricardo Lorite de Lima
 - Bispo Ricardo Lorite
+- Dom Ricardo Lorite
+- Lorite de Lima
 - Ricardo Lorite
+- dom Ricardo Lorite
 biography: >-
   Ex-membro da Diocese Anglicana de São Paulo (IEAB), bispo fundador da 'Igreja Anglicana do Brasil' (encerrada
   em 2017); depois fundou a Igreja Protestante Unida, filiada à Aliança de Batistas do Brasil.
@@ -15,6 +18,18 @@ sources:
     Após isto, o bispo Ricardo Lorite reorganizou o grupo e fundou a Igreja Protestante Unida, filiando-se à Aliança
     de Batistas do Brasil.
 ordinations:
+- order: diaconate
+  date: '2005-03-26'
+  place: Ribeirão Preto (SP)
+  jurisdiction: iadb-lorite
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia 26 de março de 2005, na cidade de Ribeirão Preto (SP), os ministros licenciados Ricardo Lorite de Lima,
+      Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Diaconal
+    page: '118'
+  notes: O livro não nomeia o ordenante.
 - order: presbyterate
   date: '2005-03-27'
   place: Igreja Evangélica Congregacional de Ribeirão Preto (SP)
@@ -28,12 +43,17 @@ ordinations:
       Luis Fernando Salgado e Josué Souza Torres foram elevados ao Ministério Presbiteral da Igreja de Cristo, Una,
       Santa, Católica e Apostólica, através da imposição das mãos de Dom Iranildo Macieira das Silva (Dom Lucas).
       A cerimônia de Ordenação ocorreu na Igreja Evangélica Congregacional de Ribeirão Preto.
+  - source: cant-novas-igrejas-2024
+    quote: e no dia 27 de março, os quatro diáconos foram ordenados presbíteros por bispos independentes.
+    page: '118'
   notes: >-
     Também impuseram as mãos os padres Manuel (Igreja Antigo-Católica), João Ripoli e Mário Palumbo (Igreja Católica
-    Romana). Ordenações autorizadas por Leonardo Marin-Saavedra (Anglican Independent Communion Worldwide).
+    Romana). Ordenações autorizadas por Leonardo Marin-Saavedra (Anglican Independent Communion Worldwide). O livro
+    diz apenas 'por bispos independentes', sem nomeá-los.
 - order: episcopate
   date: '2006-01-15'
   jurisdiction: iadb-lorite
+  office: primate
   principal_consecrator: barry-frank-peachey
   co_consecrators:
   - iranildo-macieira-da-silva
@@ -49,11 +69,87 @@ ordinations:
       Após receberem as ordens do diaconato e do presbiterato por bispos independentes, Ricardo Lorite e Rui Barbosa
       tiveram sua ordenação episcopal através dos bispos Norman Dutton, Frank Peachey e Iranildo Macieira da Silva
       (Igreja Episcopal Latina do Brasil).
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Os reverendos Ricardo Lorite e Rui Barbosa tiveram sua ordenação episcopal através dos bispos Norman Dutton,
+      Frank Peachey e Lucas Macieira da Silva (Igreja Episcopal Latina do Brasil), em 15 de janeiro de 2006.
+    page: '118'
   notes: >-
     Comentário do próprio Lorite. Peachey sagrou na mesma ocasião "mais dois bispos para o Brasil", sem nomeá-los.
     Data e sagrante principal não informados; a fonte lista três bispos sagrantes sem hierarquia. Iranildo Macieira
-    da Silva é da 'Igreja Episcopal Latina do Brasil'.
+    da Silva é da 'Igreja Episcopal Latina do Brasil'. O livro diz 'através dos bispos' Norman Dutton, Frank Peachey
+    e Lucas Macieira, sem indicar o sagrante principal; os três foram postos em co_sagrantes.
 affiliations:
+- jurisdiction: iadb-lorite
+  role: founder
+  start: '2005-03-27'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 1º de maio de 2005, Ricardo Lorite foi nomeado como Bispo Eleito para o Brasil, pelo então arcebispo para
+      a América Latina da Comunhão Anglicana Independente, Leonardo Marin-Saavedra.
+    page: '118'
+- jurisdiction: ipu
+  role: founder
+  start: '2017'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o bispo Ricardo Lorite reorganizou o grupo e fundou a Igreja Protestante Unida
+    page: '120'
+- jurisdiction: iadb-lorite
+  role: other
+  role_description: primaz_emerito
+  start: '2023'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: sendo sagrado o seu atual Bispo Primaz, enquanto e Ricardo Lorite tornou-se um Primaz Emérito.
+    page: '120'
+- jurisdiction: ieab-dasp
+  role: member
+  end: c.2004
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O atual quadro complexo tem origem a partir da saída de membros da Diocese Anglicana de São Paulo da Igreja
+      Episcopal Anglicana do Brasil (IEAB). Dentre eles estavam Ricardo Lorite de Lima, Rui Costa Barbosa, Luis
+      Fernando Salgado e Josué Sousa Torres.
+    page: '117'
+  notes: >-
+    O livro diz que saíram da DASP/IEAB antes da aproximação com a REC (abril de 2004); na p. 145 são chamados de
+    'seminaristas'. Data de saída não informada.
+- jurisdiction: iadb-lorite
+  role: primate
+  end: '2017-10-30'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      À época a Igreja Anglicana do Brasil tinha como bispos Ricardo Lorite de Lima, como seu Arcebispo Primaz
+    page: '119'
+  - source: cant-novas-igrejas-2024
+    quote: enquanto e Ricardo Lorite tornou-se um Primaz Emérito.
+    page: '120'
+  - source: cant-novas-igrejas-2024
+    quote: o bispo José Augusto está junto com dom Ricardo Lorite, Primaz da Igreja Anglicana do Brasil
+    page: '160'
+  notes: >-
+    Arcebispo primaz até o encerramento da igreja (30/10/2017); primaz emérito a partir da reativação de 2023.
+- jurisdiction: ielb
+  role: primate
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após a sua fundação, a Igreja Episcopal Latina do Brasil teve como bispos o bispo Ricardo Lorite de Lima,
+      como o Arcebispo Primaz e Metropolitano, Lorite de Lima, dom Rogério Belmiro Tampellini, dom Marcos de Santa
+      Helena e dom Adauto Pereira.
+    page: '167'
+  notes: '''Arcebispo Primaz e Metropolitano'', após a fundação; datas não informadas.'
 - jurisdiction: iau
   role: archbishop
   status: probable
@@ -66,3 +162,48 @@ affiliations:
   notes: >-
     A IAU o chama de "Arcebispo Primaz" e líder; o site da IAU o apresenta como Arcebispo Primus da FPEC, à qual
     a IAU pertence.
+events:
+- type: other
+  date: '2004-08-06'
+  description: >-
+    Em abril de 2004 Ricardo Lorite iniciou aproximação com a missão brasileira da Igreja Episcopal Reformada (REC),
+    organizando o ponto de pregação que viria a ser a Paróquia Anglicana Thomas Cranmer; a integração foi encerrada
+    em 06/08/2004 por decisão do reverendo Sebastião Mendes (de Freitas), por divergências doutrinárias e eclesiológicas.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em abril de 2004, teve início um processo de aproximação entre Lorite e a missão brasileira da Igreja Episcopal
+      Reformada (Reformed Episcopal Church – REC).
+    page: '117'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      configuração permaneceu vigente até 6 de agosto do mesmo ano, quando o processo de integração foi encerrado
+      por decisão do reverendo Sebastião Mendes.
+    page: '117'
+- type: other
+  date: '2023-07-01'
+  description: >-
+    A Igreja Anglicana do Brasil (Lorite) retomou suas atividades em 01/07/2023, após tratativas com a Igreja Católico
+    Anglicana Latino Americana, sob a liderança de Frei Eduardo Faria (primaz) e com Ricardo Lorite como primaz
+    emérito; passou a se apresentar como 'Igreja Inclusiva'.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Através de Tratativas entre a Igreja Anglicana do Brasil e a Igreja Católico Anglicana Latino Americana, reassume
+      a Igreja Anglicana do Brasil seu carisma Missionário e
+    page: '120'
+  - source: cant-novas-igrejas-2024
+    quote: Evangelizador e retoma suas atividades a partir de 1º de Julho de 2023
+    page: '121'
+- type: other
+  date: null
+  description: >-
+    Josué Augusto (IAUB) aparece em celebração junto com Ricardo Lorite, primaz da Igreja Anglicana do Brasil (fotos
+    no Facebook da IAUB)
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o bispo José Augusto está junto com dom Ricardo Lorite, Primaz da Igreja Anglicana do Brasil
+    page: '160'

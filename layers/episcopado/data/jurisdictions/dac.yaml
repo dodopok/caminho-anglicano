@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: dac
+acronym: DAC
+name: Diocese Anglicana Católica do Brasil
+type: diocese
+country: BR
+founded:
+  date: '2010'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Diocese Anglicana Católica do Brasil (também chamada DAC) é uma unidade eclesiástica ligada à Comunhão Anglicana
+      Livre Internacional34 (The Free Internacional Anglican Communion).
+    page: '101'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O estabelecimento da DAC se deu a partir da chamada Diocese Anglicana de Esmeraldas, organizada em 2010, em
+      Minas Gerais.
+    page: '101'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2024, ocorreu a aprovação da bênção de casais homoafetivos, à semelhança do que aconteceu na IEAB.
+    page: '102'
+description: >-
+  Unidade eclesiástica ligada à Comunhão Anglicana Livre Internacional, originada da Diocese Anglicana de Esmeraldas
+  (MG, 2010); arcebispo e primaz Lucas Macieira da Silva; prelazias no Sul, Sudeste e Nordeste (Sé Primacial em
+  Esmeraldas-MG); aprovou a bênção de casais homoafetivos em 2024.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Diocese Anglicana Católica do Brasil (também chamada DAC) é uma unidade eclesiástica ligada à Comunhão Anglicana
+    Livre Internacional34 (The Free Internacional Anglican Communion).
+  page: '101'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    O estabelecimento da DAC se deu a partir da chamada Diocese Anglicana de Esmeraldas, organizada em 2010, em
+    Minas Gerais.
+  page: '101'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Em 2024, ocorreu a aprovação da bênção de casais homoafetivos, à semelhança do que aconteceu na IEAB.
+  page: '102'
+relations:
+- type: successor_of
+  target: dae
+  date: null
+  led_by:
+  - iranildo-macieira-da-silva
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: culminando na transição para a nomenclatura Diocese Anglicana Católica do Brasil
+    page: '101'
+  notes: Mudança de nome; data não informada.
+- type: member_of
+  target: cali
+  date: null
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Diocese Anglicana Católica do Brasil (também chamada DAC) é uma unidade eclesiástica ligada à Comunhão Anglicana
+      Livre Internacional34
+    page: '101'
+- type: member_of
+  target: fiac
+  date: null
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Atualmente, dom Lucas Macieira atua na Diocese Anglicana Católica do Brasil, ligada à Free International Anglican
+      Communion.
+    page: '167'
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Anglicana de Esmeraldas [2010]/Comunhão Anglicana Livre Internacional
+    page: '171'

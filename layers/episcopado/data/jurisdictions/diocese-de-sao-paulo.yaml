@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-sao-paulo
+name: Diocese de São Paulo
+type: diocese
+relations:
+- type: part_of
+  target: ica
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Diocese de São Paulo, com o bispo Izaias
+    page: '138'

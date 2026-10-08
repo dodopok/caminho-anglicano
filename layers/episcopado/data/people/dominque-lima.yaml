@@ -1,17 +1,40 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: dominque-lima
 name: Dominque Lima
+biography: >-
+  Ministro leigo ordenado diácono em 01/09/2024 pelo bispo Sebastião (Gameleira) para auxiliar Sérgio Andrade na
+  Igreja Anglicana da Santíssima Trindade.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    em 1º de setembro 2024, o então ministro leigo Dominque Lima foi ordenado ao diaconato pelo bispo Sebastião.
+  page: '113'
 ordinations:
 - order: diaconate
   date: '2024-09-01'
   place: Recife (PE)
-  jurisdiction: null
+  jurisdiction: iast
   ordained_by: sebastiao-gameleira
   status: probable
   sources:
   - source: cant-novas-igrejas-2024
     quote: >-
       em 1º de setembro 2024, o então ministro leigo Dominque Lima foi ordenado ao diaconato pelo bispo Sebastião.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Para auxiliar o clérigo, em 1º de setembro 2024, o então ministro leigo Dominque Lima foi ordenado ao diaconato
+      pelo bispo Sebastião.
+    page: '113'
   notes: >-
     Igreja Anglicana da Santíssima Trindade (Recife, independente, liderada pelo Rev. Sérgio Andrade); Gameleira
-    atua como bispo visitador.
+    atua como bispo visitador. O livro diz 'bispo Sebastião'; no mesmo trecho trata Gameleira como bispo visitador
+    da comunidade.
+affiliations:
+- jurisdiction: iast
+  role: clergy
+  start: '2024-09-01'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o então ministro leigo Dominque Lima foi ordenado ao diaconato pelo bispo Sebastião.
+    page: '113'

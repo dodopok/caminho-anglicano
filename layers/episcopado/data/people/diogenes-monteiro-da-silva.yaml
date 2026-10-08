@@ -7,6 +7,7 @@ aliases:
 - Dom Diógenes Monteiro
 - Pr. Diógenes Monteiro
 - Rev. Diógenes Monteiro
+- dom Diógenes Monteiro
 biography: >-
   Pastor e fundador da igreja anglicana reformada em Santa Cruz do Capibaribe (PE); sagrado bispo em 19/11/2021;
   primaz da IARB desde 2023.
@@ -31,10 +32,62 @@ ordinations:
     Notícia prévia (anúncio do evento no mesmo dia). Sagrantes não informados; provavelmente Francisco Buzzo, então
     único bispo ativo da IARB independente — não confirmado.
 affiliations:
+- jurisdiction: iceb
+  role: clergy
+  start: '2011'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo Diógenes foi o responsável pela implantação da Igreja em Santa Cruz do Capibaribe, em 2011 (então
+      chamada Missão Canaã, na época associada à Igreja Cristã Episcopal).
+    page: '134'
+  notes: >-
+    A Missão Canaã (Santa Cruz do Capibaribe) estava associada à Igreja Cristã Episcopal em 2011; depois passou
+    à IARB.
 - jurisdiction: iarb
   role: primate
   start: '2023'
-  status: probable
+  status: contested
   sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      perceber a presença de Gleydson participando de celebrações junto com o bispo e primaz da IARB, dom Diógenes
+      Monteiro, na sede da Igreja em Santa Cruz do Capibaribe.
+    page: '169'
   - source: ptwiki-iarb
     quote: Como seu sucessor, a Câmara dos Bispos elegeu o bispo Diógenes Monteiro da Silva como novo primaz.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Para sucedê-lo na primazia, a Câmara dos Bispos elegeu o bispo Diógenes Monteiro da Silva, natural de Pesqueira
+      (PE).
+    page: '134'
+  notes: >-
+    Situação em junho de 2022. Eleito em 2021 ou pouco depois; catedral em Santa Cruz do Capibaribe desde o Sínodo
+    de 2023.
+  discrepancies:
+  - field: start
+    value: '2021'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Para sucedê-lo na primazia, a Câmara dos Bispos elegeu o bispo Diógenes Monteiro da Silva, natural de Pesqueira
+        (PE).
+      page: '134'
+events:
+- type: other
+  date: 2022-06
+  description: >-
+    Gleidson Oliveira, após contato com a Igreja Anglicana Reformada do Brasil, participa de celebrações com o primaz
+    da IARB, Diógenes Monteiro, em Santa Cruz do Capibaribe
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A atuação do bispo Gleydson na região o levou a entrar em contato com a Igreja Anglicana Reformada do Brasil.
+    page: '169'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      perceber a presença de Gleydson participando de celebrações junto com o bispo e primaz da IARB, dom Diógenes
+      Monteiro, na sede da Igreja em Santa Cruz do Capibaribe.
+    page: '169'

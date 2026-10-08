@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: markos-leal
+name: Markos Leal
+biography: >-
+  Ex-frequentador da Diocese Anglicana do Recife (IEAB; Catedral da Santíssima Trindade e Seminário Anglicano de
+  Estudos Teológicos); fundador e bispo da Igreja Episcopal Cristã Brasileira; celebrante de mais de três mil casamentos
+  no Recife.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Dom Markos Leal é o fundador da Igreja Episcopal Cristã Brasileira.
+  page: '143'
+affiliations:
+- jurisdiction: iecb-mof
+  role: founder
+  start: '2010'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Dom Markos Leal é o fundador da Igreja Episcopal Cristã Brasileira.
+    page: '143'
+  notes: O livro não informa sagração episcopal de Markos Leal.
+- jurisdiction: ieab-dar
+  role: member
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Markos iniciou sua caminhada no Anglicanismo na Diocese Anglicana do Recife, freqüentando comunidades como
+      a Catedral Anglicana da Santíssima Trindade, e o Seminário Anglicano de Estudos Teológicos. Após deixar a
+      IEAB
+    page: '143'
+- jurisdiction: iecbr
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: a Igreja Episcopal Cristã Brasileira, do bispo Markos Leal
+    page: '174'

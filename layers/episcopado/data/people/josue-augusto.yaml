@@ -1,3 +1,67 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: josue-augusto
 name: Josué Augusto
+aliases:
+- José Augusto
+biography: Bispo da Igreja Anglicana Unida do Brasil; presente na sagração de Fernando Nobile (2018).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: dom Josué Augusto, da Igreja Anglicana Unida do Brasil
+  page: '125'
+affiliations:
+- jurisdiction: iau
+  role: bishop
+  start: '2018'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: dom Josué Augusto, da Igreja Anglicana Unida do Brasil
+    page: '125'
+  notes: >-
+    O livro diz 'Igreja Anglicana Unida do Brasil'; associada à IAU da base (Igreja Anglicana Unida – Província
+    da América do Sul) por semelhança de nome.
+- jurisdiction: iaub
+  role: primate
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A Igreja Anglicana Unida do Brasil tem origem na pessoa de dom Josué Augusto, o seu Bispo Primaz.
+    page: '160'
+  notes: Fundador ('tem origem na pessoa de dom Josué Augusto').
+- jurisdiction: iaub
+  role: founder
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A Igreja Anglicana Unida do Brasil tem origem na pessoa de dom Josué Augusto, o seu Bispo Primaz.
+    page: '160'
+- jurisdiction: iaebr
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Posteriormente o bispo ingressou na Igreja Anglicana Episcopal Brasileira (IAEBr).
+    page: '160'
+  notes: Data não informada; papel exato não informado ('o bispo ingressou').
+events:
+- type: other
+  date: null
+  description: >-
+    Josué Augusto (IAUB) aparece em celebração junto com Ricardo Lorite, primaz da Igreja Anglicana do Brasil (fotos
+    no Facebook da IAUB)
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o bispo José Augusto está junto com dom Ricardo Lorite, Primaz da Igreja Anglicana do Brasil
+    page: '160'
+- type: other
+  date: null
+  description: >-
+    Sagração de Fernando Nobile, da Igreja Anglicana Cristo Redentor (Ribeirão Preto), com a presença de Josué Augusto
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Também foi possível constatar a presença do bispo Josué Augusto na sagração de dom Fernando Nobile da Igreja
+      Anglicana Cristo Redentor, em Ribeirão Preto.
+    page: '160'

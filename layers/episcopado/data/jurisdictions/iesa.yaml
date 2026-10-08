@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iesa
+acronym: IESA
+name: Igreja Episcopal Sul-Americana
+type: national_church
+country: BR
+founded:
+  date: '2019'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A origem da Igreja Episcopal Sul Americana está na figura do então bispo Igreja Episcopal do Brasil, Gleydson
+      Oliveira. Em 2019, o mesmo rompeu com o bispo Rosimael Losasi, fundador da Igreja Episcopal do Brasil.
+    page: '169'
+  - source: cant-novas-igrejas-2024
+    quote: Concentrada na cidade de Caruaru, Pernambuco
+    page: '169'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em junho de 2022, já era possível ver a fachada do templo da Igreja Episcopal Sul Americana sem atividades
+    page: '169'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Episcopal Sul-Americana [2019] (Extinta em 2022)
+    page: '172'
+dissolved:
+  date: '2022'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A origem da Igreja Episcopal Sul Americana está na figura do então bispo Igreja Episcopal do Brasil, Gleydson
+      Oliveira. Em 2019, o mesmo rompeu com o bispo Rosimael Losasi, fundador da Igreja Episcopal do Brasil.
+    page: '169'
+  - source: cant-novas-igrejas-2024
+    quote: Concentrada na cidade de Caruaru, Pernambuco
+    page: '169'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em junho de 2022, já era possível ver a fachada do templo da Igreja Episcopal Sul Americana sem atividades
+    page: '169'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Episcopal Sul-Americana [2019] (Extinta em 2022)
+    page: '172'
+description: >-
+  Igreja fundada em 2019 por Gleidson (Gleydson) Oliveira ao romper com Rosimael Losasi, mantendo as características
+  da Igreja Episcopal do Brasil; 'anglo-católica', concentrada em Caruaru (PE), com sede na Paróquia da Redenção
+  (inaugurada em 03/08/2020). Projeto de Templo Nacional em Camaragibe (2020) não realizado. Em junho de 2022 o
+  templo estava sem atividades (Apêndice 1: [2019], extinta em 2022).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A origem da Igreja Episcopal Sul Americana está na figura do então bispo Igreja Episcopal do Brasil, Gleydson
+    Oliveira. Em 2019, o mesmo rompeu com o bispo Rosimael Losasi, fundador da Igreja Episcopal do Brasil.
+  page: '169'
+- source: cant-novas-igrejas-2024
+  quote: Concentrada na cidade de Caruaru, Pernambuco
+  page: '169'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Em junho de 2022, já era possível ver a fachada do templo da Igreja Episcopal Sul Americana sem atividades
+  page: '169'
+- source: cant-novas-igrejas-2024
+  quote: Igreja Episcopal Sul-Americana [2019] (Extinta em 2022)
+  page: '172'
+relations:
+- type: schism_from
+  target: ieb-losasi
+  date: '2019'
+  led_by:
+  - gleidson-oliveira
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A origem da Igreja Episcopal Sul Americana está na figura do então bispo Igreja Episcopal do Brasil, Gleydson
+      Oliveira. Em 2019, o mesmo rompeu com o bispo Rosimael Losasi, fundador da Igreja Episcopal do Brasil.
+    page: '169'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A nova denominação não mudou as características da antiga, apenas foi nomeada como Igreja Episcopal Sul Americana.
+    page: '169'

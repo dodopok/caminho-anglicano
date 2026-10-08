@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iecbr
+acronym: IECBR
+name: Igreja Episcopal Cristã Brasileira
+type: national_church
+country: BR
+founded:
+  date: '2010'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Episcopal Cristã Brasileira [2010]
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: Ministério Orando em Família
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Igreja Episcopal Cristã Brasileira, do bispo Markos Leal, marca presença através do seu Ministério Orando
+      em Família
+    page: '174'
+description: >-
+  Igreja independente [2010] do bispo Markos Leal, presente no Recife através do Ministério Orando em Família.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Igreja Episcopal Cristã Brasileira [2010]
+  page: '172'
+- source: cant-novas-igrejas-2024
+  quote: Ministério Orando em Família
+  page: '172'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    a Igreja Episcopal Cristã Brasileira, do bispo Markos Leal, marca presença através do seu Ministério Orando
+    em Família
+  page: '174'

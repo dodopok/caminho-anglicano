@@ -2,6 +2,14 @@
 id: orvandil-moreira-barbosa
 name: Orvandil Moreira Barbosa
 full_name: Orvandil Moreira Barbosa
+aliases:
+- Dom Orvandil
+biography: >-
+  Bispo oriundo da IATB, cofundador da Igreja Católica Anglicana (2017) e bispo da sua Diocese Centro Oeste.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: dom Orvandil – oriundo da IATB
+  page: '138'
 ordinations:
 - order: diaconate
   date: '1989'
@@ -23,3 +31,52 @@ affiliations:
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1989 - … Orvandil Moreira Barbosa
     page: '373'
   notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: ica
+  role: founder
+  start: '2017'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Parte desse grupo, liderados por Ricardo Vicente dos Anjos e Orvandil Moreira Barbosa, fundaram a Igreja Católica
+      Anglicana.
+    page: '137'
+- jurisdiction: iatb
+  role: clergy
+  end: '2017'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Parte desse grupo, liderados por Ricardo Vicente dos Anjos e Orvandil Moreira Barbosa, fundaram a Igreja Católica
+      Anglicana.
+    page: '137'
+  notes: Saiu da IATB com um grupo de clérigos (época do primaz Alfredo Dórea).
+- jurisdiction: ica
+  role: bishop
+  diocese: diocese-centro-oeste
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Centro Oeste, com o bispo Orvandil
+    page: '138'
+events:
+- type: other
+  date: '2018-07-23'
+  description: >-
+    Em julho de 2018 a Câmara Episcopal da Igreja Católica Anglicana (reunida em Cametá, PA) aprovou pedir habeas
+    corpus ao STF/STJ para o ex-presidente Lula; o ativismo político de dom Orvandil causou ruptura com clérigos
+    que originaram a ICA-Brasil.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      aprovou o encaminhamento do pedido de habeas corpus no STF ou no STJ para o ex presidente Luis Inácio Lula
+      da Silva (Igreja Católica Anglicana, 23 de julho de 2018).
+    page: '138'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Esse ativismo político por parte de dom Orvandil – oriundo da IATB – causou uma ruptura com clérigos dando
+      origem à Igreja Católica Anglicana do Brasil (ICA-Brasil).
+    page: '138'

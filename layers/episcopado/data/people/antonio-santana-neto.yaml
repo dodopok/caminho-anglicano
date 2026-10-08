@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: antonio-santana-neto
+name: Antônio Santana Neto
+aliases:
+- Antônio Santana
+biography: Bispo da Diocese Anglicana Católica do Brasil.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Atualmente, a DAC possui três bispos: dom Lucas Macieira (Arcebispo e Primaz), dom João de Deus da Silva, Dom
+    Antônio Santana Neto e dom Daniel Araújo.
+  page: '102'
+affiliations:
+- jurisdiction: ielb
+  role: founder
+  start: 2004-12
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Fundada em dezembro de 2004 a Igreja Episcopal Latina do Brasil (de sigla IELB, a qual não deve ser confundida
+      com a Igreja Luterana) teve origem na liderança de dom Lucas Macieira da Silva e o frei Antonio Santana Neto,
+      ambos advindos da Igreja Católica Romana e Igreja Católica Brasileira no Ceará.
+    page: '166'
+- jurisdiction: ielb
+  role: clergy
+  start: '2005-02-20'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia 20 de fevereiro de 2005, Antônio Santana implantou a Missão Episcopal Latina Santo Expedito e São Sebastião,
+      na cidade de Barbalha, ficando responsável pela jurisdição da região sul do estado e com os estados do Pernambuco,
+      Piauí e Paraíba.
+    page: '166'
+  notes: >-
+    Local: Missão Episcopal Latina Santo Expedito e São Sebastião (Barbalha-CE); região sul do Ceará, PE, PI e PB.
+    Ordem clerical não especificada ('frei').
+- jurisdiction: dac
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Atualmente, a DAC possui três bispos: dom Lucas Macieira (Arcebispo e Primaz), dom João de Deus da Silva,
+      Dom Antônio Santana Neto e dom Daniel Araújo.
+    page: '102'
+  notes: O livro diz 'três bispos' mas lista quatro nomes (incluindo Lucas Macieira).
+events:
+- type: other
+  date: '2005-02-20'
+  description: >-
+    Antonio Santana Neto implanta a Missão Episcopal Latina Santo Expedito e São Sebastião em Barbalha (CE)
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia 20 de fevereiro de 2005, Antônio Santana implantou a Missão Episcopal Latina Santo Expedito e São Sebastião,
+      na cidade de Barbalha, ficando responsável pela jurisdição da região sul do estado e com os estados do Pernambuco,
+      Piauí e Paraíba.
+    page: '166'

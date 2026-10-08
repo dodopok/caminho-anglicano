@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rosimael-losasi
+name: Rosimael Losasi
+aliases:
+- Rosimael
+biography: Fundador da Igreja Episcopal do Brasil (PE, 2017), que mais tarde passou a se denominar arcebispo.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja Episcopal do Brasil foi fundada pelo bispo Rosimael Losasi, no Estado de Pernambuco, sendo organizada
+    juridicamente em 13 de novembro de 2017.
+  page: '165'
+affiliations:
+- jurisdiction: ieb-losasi
+  role: founder
+  start: '2017-11-13'
+  end: '2022-06-07'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Episcopal do Brasil foi fundada pelo bispo Rosimael Losasi, no Estado de Pernambuco, sendo organizada
+      juridicamente em 13 de novembro de 2017.
+    page: '165'
+  notes: Fim = encerramento jurídico da igreja.
+- jurisdiction: ieb-losasi
+  role: archbishop
+  end: '2022-06-07'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Posteriormente, o bispo Rosimael passou a se denominar Arcebispo, porém, sem angariar nem clero, nem novas
+      comunidades
+    page: '165'
+  notes: Título autoatribuído posteriormente.
+events:
+- type: other
+  date: '2017-02-06'
+  description: Igreja Episcopal do Brasil (Losasi) celebra missa em visita a Riacho da Cruz (RN)
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      é possível ver que a Igreja chegou a celebrar missa em 06 de fevereiro de 2017, em uma visita no município
+      de Riacho da Cruz, interior do Rio Grande do Norte
+    page: '165'

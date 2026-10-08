@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ricardo-vicente-dos-anjos
+name: Ricardo Vicente dos Anjos
+biography: >-
+  Cofundador da Igreja Católica Anglicana (2017); em 2023 saiu com um grupo e tornou-se arcebispo primaz da Igreja
+  Católica Anglicana do Brasil (ICA-Brasil).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Um deles foi dom Ricardo Vicente dos Anjos, que se tornou primaz da ICA-Brasil.
+  page: '139'
+affiliations:
+- jurisdiction: ica
+  role: founder
+  start: '2017'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Parte desse grupo, liderados por Ricardo Vicente dos Anjos e Orvandil Moreira Barbosa, fundaram a Igreja Católica
+      Anglicana.
+    page: '137'
+- jurisdiction: ica-brasil
+  role: primate
+  start: '2023'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Dom Ricardo Vicente dos Anjos arcebispo primaz
+    page: '139'
+- jurisdiction: iatb
+  role: clergy
+  end: '2017'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Parte desse grupo, liderados por Ricardo Vicente dos Anjos e Orvandil Moreira Barbosa, fundaram a Igreja Católica
+      Anglicana.
+    page: '137'
+  notes: Saiu da IATB com um grupo de clérigos (época do primaz Alfredo Dórea).
+- jurisdiction: ica
+  role: bishop
+  end: '2023'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      que funcionam sob os cuidados de dom Orvandil Moreira Barbosa, dom Jorge Costa, dom Ricardo Vicente dos Anjos
+      e dom Franciney Rodrigues Pantoja
+    page: '138'

@@ -2,10 +2,13 @@
 id: tac-natal
 acronym: TAC-Natal
 name: Diocese Anglicana do Natal (Traditional Anglican Church in Brazil)
+aliases:
+- Diocese Anglicana do Natal
+- Diocese Anglicana do Natal (TAC)
 type: diocese
 country: BR
 founded:
-  date: 2019-07
+  date: '2019-07-15'
   sources:
   - source: tac-natal-5anos
     quote: >-
@@ -13,6 +16,38 @@ founded:
       people on the Fifth Anniversary of the founding of the Anglican Diocese of Natal (TAC)
   - source: tac-adclerum-2025
     quote: Christmas Mass (Parish of the Nativity of the Blessed Virgin Mary, Natal - RN)
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2018, um grupo de clérigos da cidade do Natal24, ligados à Diocese Anglicana de Votorantim, deixou esta
+      Igreja e elegeram o padre Albertino Souza25 para ser o bispo da nova jurisdição a ser criada: a Diocese Anglicana
+      do Natal.
+    page: '80'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      na Capela do Campus da Universidade Federal do Rio Grande do Norte, quando também ocorreu a instalação oficial
+      da recém-criada Diocese.
+    page: '81'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana Tradicional (TAC) [Filiação à TAC em 2025]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Anglicana do Natal e Diocese Anglicana de São Paulo e Paraná [2019]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Entre os bispos ordenados por James estavam: Dom José Kennedy de Freitas, organizador da Igreja Anglicana
+      de Confissão Continuante; Dom Marcos Mattos, nomeado bispo da Diocese Anglicana Continuante do Rio de Janeiro
+      (falecido prematuramente, antes da consolidação da diocese); Dom Albertino de Sousa Barreiros, da Diocese
+      Anglicana do Natal; Dom Claudinei Rodrigo Ferreira, da Diocese Anglicana de Santa Catarina; Dom Itabira Jonas,
+      da Diocese Anglicana de São Paulo e Paraná; Dom Francisco de Assis Coelho e Pinho, bispo eleito e delegado
+      episcopal da Pró-Diocese Anglicana do Amazonas; e dom José Barbosa da Silva, da Diocese Anglicana de Portugal,
+      na União Europeia.
+    page: '157'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Igreja Anglicana Tradicional (TAC), organizada no Nordeste através da Diocese Anglicana do Natal, possui
+      a Paróquia da Misericórdia
+    page: '174'
 website: https://traditionalanglicanchurch.com/tag/brazil
 description: >-
   Diocese continuante com sede na Paróquia da Natividade da Bem-Aventurada Virgem Maria (Natal-RN); missões em Parnamirim,
@@ -28,11 +63,14 @@ sources:
 relations:
 - type: part_of
   target: tac
-  date: '2025'
-  led_by:
-  - albertino-de-sousa-barreiros
   status: confirmed
   sources:
+  - source: tac-natal-5anos
+    quote: Bishop Ordinary of the Diocese of Natal
+  - source: tac-adclerum-2025
+    quote: >-
+      We pray to Divine Providence in the life of our Right Reverend Bishop Albertino de Sousa Barreiros and all
+      our clergy.
   - source: tac-adclerum-2025
     quote: >-
       This year was full of achievements, especially the definitive entry into the TAC which occurred at the General
@@ -41,19 +79,57 @@ relations:
     quote: >-
       During the General Synod of the TAC in Columbus, Georgia - USA, the Dioceses of Brazil were officially received
       unanimously.
+  date: '2025'
+  led_by:
+  - albertino-de-sousa-barreiros
   notes: >-
     Recepção 'definitiva' em 2025; o primaz da TAC já tratava a diocese como 'Anglican Diocese of Natal (TAC)' em
     julho de 2024, o que indica relação anterior (provisória).
 - type: part_of
   target: iacc
-  date: null
-  end: '2025'
-  led_by:
-  - albertino-de-sousa-barreiros
   status: probable
   sources:
   - source: iacc-continuante
     quote: >-
+      dom †Albertino de Sousa Barreiros, Bispo da Diocese Anglicana do Natal, Estado do Rio Grande do Norte
+  - source: iacc-continuante
+    quote: >-
       Todas essas Dioceses, com a primeira, a Diocese Anglicana do Japí-Jundiaí, formam atualmente a Igreja Anglicana
       de Confissão Continuante
+  end: '2025'
+  led_by:
+  - albertino-de-sousa-barreiros
   notes: Página da IACC sem data; data de saída para a TAC inferida (no máximo 2025).
+- type: schism_from
+  target: dav
+  date: '2018'
+  led_by:
+  - albertino-de-sousa-barreiros
+  - melque-ambrosio
+  - rodson-ricardo-de-souza
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2018, um grupo de clérigos da cidade do Natal24, ligados à Diocese Anglicana de Votorantim, deixou esta
+      Igreja e elegeram o padre Albertino Souza25 para ser o bispo da nova jurisdição a ser criada: a Diocese Anglicana
+      do Natal.
+    page: '80'
+  notes: >-
+    Clérigos: Melque Ambrósio, Rodson Ricardo, Júnior Oliveira, João Maria, José Eudes e Albertino de Souza (nota
+    24).
+- type: member_of
+  target: tac
+  date: 2025-05
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A filiação definitiva das Dioceses brasileiras na TAC se concretizou durante o Sínodo Geral.
+    page: '81'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana Tradicional (TAC) [Filiação à TAC em 2025]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Anglicana do Natal e Diocese Anglicana de São Paulo e Paraná [2019]
+    page: '171'
+  notes: Sínodo Geral da TAC em Columbus, Geórgia (EUA), 19–23/05/2025. Diálogo iniciado em 2021.

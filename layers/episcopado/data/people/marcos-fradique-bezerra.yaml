@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marcos-fradique-bezerra
+name: Marcos Fradique Bezerra
+aliases:
+- Dom Marcos Fradique
+- Marcos Fradique
+- bispo Marcos Fradique
+biography: >-
+  Ex-padre católico (Oblatos de Maria Imaculada, ordenado em 1987 por dom Helder Camara); fundador e bispo primaz
+  da Igreja Anglicana Missionária do Redentor (Paulista, PE).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    reverendo Marcos Fradique Bezerra, que foi padre católico romano, posteriormente deixou o clero romano, e fundou
+    a comunidade, sendo eleito bispo primaz do grupo.
+  page: '126'
+ordinations:
+- order: presbyterate
+  date: '1987'
+  jurisdiction: null
+  ordained_by: helder-camara
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      que foi padre da Congregação dos Missionários Oblatos de Maria Imaculada, ordenado em 1987, pelo então arcebispo
+      de Olinda e Recife, dom Helder Camara
+    page: '126'
+  notes: >-
+    Ordenação na Igreja Católica Romana (Congregação dos Missionários Oblatos de Maria Imaculada; Arquidiocese de
+    Olinda e Recife).
+affiliations:
+- jurisdiction: iamr
+  role: founder
+  start: '1991'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: fundou a comunidade, sendo eleito bispo primaz do grupo.
+    page: '126'
+- jurisdiction: iamr
+  role: primate
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: fundou a comunidade, sendo eleito bispo primaz do grupo.
+    page: '126'
+- jurisdiction: iamr
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      o templo da Igreja Anglicana Missionária do Redentor (IAMR) marca presença junto à comunidade local, sob a
+      liderança do bispo Marcos Fradique
+    page: '174'
+events:
+- type: other
+  date: 2014-06
+  description: >-
+    Em junho de 2014 o arcebispo católico de Olinda e Recife, dom Fernando Saburido, recebeu na Cúria três bispos
+    da IAMR (Marcos Fradique Bezerra, Antônio Pessoa Leite e Carlos Augusto Alves de Souza), na preparação da Semana
+    de Oração pela Unidade dos Cristãos.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No mês de junho de 2014, o arcebispo católico de Olinda e Recife recebeu, dom Fernando Saburido, recebeu na
+      Cúria Metropolitana, uma visita de três bispos da Igreja IAMR
+    page: '126'

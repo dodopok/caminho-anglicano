@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-do-ceara
+name: Diocese do Ceará
+type: diocese
+relations:
+- type: part_of
+  target: paces
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Então presbítero, foi responsável pela Catedral Divina Misericórdia da Diocese do Ceará da Igreja Anglicana
+      Católica do Espírito Santo.
+    page: '161'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Já ordenado bispo, Antônio Bessa se desligou da Província Anglicana Católica do Espírito Santo e do seu bispo
+      José Fernando de Faria
+    page: '161'

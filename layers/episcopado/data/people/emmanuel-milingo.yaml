@@ -1,6 +1,11 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: emmanuel-milingo
 name: Emmanuel Milingo
+biography: Bispo católico independente; sagrou Ronaldo Melo em 2014.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Em 2014, Ronaldo foi sagrado bispo por dom Emmanuel Milingo – bispo católico independente –
+  page: '103'
 events:
 - type: other
   date: '2018-11-18'

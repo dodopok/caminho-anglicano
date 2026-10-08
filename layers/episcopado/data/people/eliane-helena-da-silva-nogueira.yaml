@@ -1,11 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: eliane-helena-da-silva-nogueira
 name: Eliane Helena da Silva Nogueira
+biography: >-
+  Sagrado(a) bispo(a) pela Ordem Anglicana Filhos da Promessa (IEEP) em 10/11/2012, em Belford Roxo (RJ).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Sagração Episcopal dos seguintes postulantes: Eliane Helena da Silva Nogueira, Reinaldo da Silva Tavares, José
+    Aparecido Marques, José Kennedy de Freitas e Elcemir Durans Mendonça
+  page: '145'
 ordinations:
 - order: episcopate
   date: '2012-11-10'
   place: Igreja Pentecostal Caminho da Fé, Belford Roxo (RJ)
-  jurisdiction: null
+  jurisdiction: oafip
   principal_consecrator: elias-batista-nogueira
   co_consecrators:
   - jose-demontier
@@ -20,6 +28,19 @@ ordinations:
       IGREJAS ANGLICANAS E EPISCOPAIS NO BRASIL Belford Roxo – Rio de Janeiro - Brasil, tendo Como Sagrante Principal
       Sua Exª Mons. Elias Batista Nogueira e como co-sagrantes: Sua Exª Bispo Josué Souza Torres e Sua Exª Bispo
       José Demontier
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Sob a Presidência de seu Venerável Irmão Elias Batista Nogueira se aprovou fazer pela OAFIP a Sagração Episcopal
+      dos seguintes postulantes: Eliane Helena da Silva Nogueira, Reinaldo da Silva Tavares, José Aparecido Marques,
+      José Kennedy de Freitas e Elcemir Durans Mendonça, a realizar-se no dia 10 de Novembro de 2012 na Igreja Pentecostal
+      Caminho da Fé
+    page: '145'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      tendo Como Sagrante Principal Sua Exª Mons. Elias Batista Nogueira e como co-sagrantes: Sua Exª Bispo Josué
+      Souza Torres e Sua Exª Bispo José Demontier
+    page: '146'
   notes: >-
     Costa (2024) transcreve a convocação da Província Brasileira de Confissão Anglicana (10/11/2012); é a previsão
-    do ato, não um relato da cerimônia.
+    do ato, não um relato da cerimônia. O documento citado (Província Brasileira de Confissão Anglicana, 10/11/2012)
+    é a aprovação da sagração 'a realizar-se' nessa data; o livro não confirma explicitamente a realização.

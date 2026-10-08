@@ -84,3 +84,13 @@ describe('buildGraph: dioceses e ligações implícitas', () => {
     expect(g.edges.filter((e) => e.from === 'p:edgar' && e.kind === 'affiliation')).toHaveLength(1)
   })
 })
+
+describe('buildGraph: bispo inferido pelo cargo', () => {
+  it('trata como bispo quem tem cargo episcopal, mesmo sem sagração registrada', () => {
+    const g = buildGraph({
+      ...base,
+      people: [{ id: 'jonas', name: 'Jonas', affiliations: [{ jurisdiction: 'br', role: 'bishop', status: 'probable', sources: src }] }]
+    })
+    expect(g.nodes.find((n) => n.id === 'p:jonas')).toMatchObject({ order: 'episcopate', inferredOrder: true })
+  })
+})

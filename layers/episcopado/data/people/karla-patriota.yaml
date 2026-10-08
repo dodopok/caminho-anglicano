@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: karla-patriota
+name: Karla Patriota
+biography: Reverenda da Diocese Anglicana do Recife que saiu com Leônides de Menezes.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Depois houve a saída do rev. Leonides Menezes, com a rev. Karla Patriota e Adonias Ramos Souza e as paróquias
+    Betânia e Calvário
+  page: '65'
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Depois houve a saída do rev. Leonides Menezes, com a rev. Karla Patriota
+    page: '65'

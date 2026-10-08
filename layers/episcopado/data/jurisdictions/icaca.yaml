@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: icaca
+acronym: ICACA
+name: Igreja Católica Apostólica de Confissão Anglicana
+type: national_church
+country: BR
+founded:
+  date: '2021'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Católica Apostólica de Confissão Anglicana trata-se de uma Igreja Anglicana Independente, que teve
+      como seu arcebispo a figura de dom Antônio José Pereira Bessa.
+    page: '161'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O contexto de criação dessa Igreja se situa entre os anos de 2019 e 2021, através do surgimento, em primeiro
+      momento, da extinta Província Anglicana Católica do Espírito Santo.
+    page: '161'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após tantas sagrações e divisões, a ideia de fundar a Igreja Católica Apostólica de Confissão Anglicana não
+      chegou a sair do papel, apenas existindo na intenção dos diocesanos, sendo igualmente extinta após um tempo.
+    page: '162'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Católica Apostólica de Confissão Anglicana [2021] (Extinta em 2021)
+    page: '172'
+dissolved:
+  date: '2021'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Católica Apostólica de Confissão Anglicana trata-se de uma Igreja Anglicana Independente, que teve
+      como seu arcebispo a figura de dom Antônio José Pereira Bessa.
+    page: '161'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O contexto de criação dessa Igreja se situa entre os anos de 2019 e 2021, através do surgimento, em primeiro
+      momento, da extinta Província Anglicana Católica do Espírito Santo.
+    page: '161'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após tantas sagrações e divisões, a ideia de fundar a Igreja Católica Apostólica de Confissão Anglicana não
+      chegou a sair do papel, apenas existindo na intenção dos diocesanos, sendo igualmente extinta após um tempo.
+    page: '162'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Católica Apostólica de Confissão Anglicana [2021] (Extinta em 2021)
+    page: '172'
+description: >-
+  Projeto de igreja anglicana independente anglo-católica, com Antônio José Pereira Bessa como arcebispo, gestado
+  entre 2019 e 2021 após a Província Anglicana Católica do Espírito Santo, para unir dioceses anglo-católicas numa
+  província. Até 2021 teve dois bispos (Bessa e Rafael Moraes). Não chegou a sair do papel por falta de consenso
+  entre os bispos (Apêndice 1: [2021], extinta em 2021).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja Católica Apostólica de Confissão Anglicana trata-se de uma Igreja Anglicana Independente, que teve
+    como seu arcebispo a figura de dom Antônio José Pereira Bessa.
+  page: '161'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    O contexto de criação dessa Igreja se situa entre os anos de 2019 e 2021, através do surgimento, em primeiro
+    momento, da extinta Província Anglicana Católica do Espírito Santo.
+  page: '161'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Após tantas sagrações e divisões, a ideia de fundar a Igreja Católica Apostólica de Confissão Anglicana não
+    chegou a sair do papel, apenas existindo na intenção dos diocesanos, sendo igualmente extinta após um tempo.
+  page: '162'
+- source: cant-novas-igrejas-2024
+  quote: Igreja Católica Apostólica de Confissão Anglicana [2021] (Extinta em 2021)
+  page: '172'
+relations:
+- type: schism_from
+  target: paces
+  date: null
+  led_by:
+  - antonio-bessa
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Já ordenado bispo, Antônio Bessa se desligou da Província Anglicana Católica do Espírito Santo e do seu bispo
+      José Fernando de Faria
+    page: '161'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O contexto de criação dessa Igreja se situa entre os anos de 2019 e 2021, através do surgimento, em primeiro
+      momento, da extinta Província Anglicana Católica do Espírito Santo.
+    page: '161'
+  notes: Desligamento de Bessa da PACES para organizar a nova denominação (entre 2019 e 2021).

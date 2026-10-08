@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iaep
+acronym: IAEP
+name: Igreja Apostólica Episcopal Portuguesa
+type: national_church
+country: PT
+description: Igreja de cujos bispos Lucas Macieira recebeu a sagração episcopal em 2004, em Portugal.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
+    Apostólica Episcopal Portuguesa.
+  page: '166'

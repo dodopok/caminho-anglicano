@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-nova-granada
+name: Diocese de Nova Granada
+type: diocese
+relations:
+- type: part_of
+  target: acc
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: através da Diocese de Nova Granada, na Colômbia, liderada pelo bispo Germán Orrego Hurtado.
+    page: '74'

@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieal
+acronym: IEAL
+name: Igreja Episcopal Anglicana Livre (Igreja Anglicana das Américas)
+type: national_church
+country: BR
+founded:
+  date: '1999'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana das Américas é uma das primeiras Igrejas Anglicanas Independentes a surgirem no Brasil.
+      Foi organizada em 1999, pelo bispo José Aparecido Peraçoli Moreno
+    page: '114'
+  - source: cant-novas-igrejas-2024
+    quote: a denominação se chamava inicialmente Igreja Episcopal Anglicana Livre (IEAL).
+    page: '114'
+website: https://www.oocities.org/episcopalbh/
+description: >-
+  Uma das primeiras Igrejas Anglicanas Independentes do Brasil, organizada em 1999 em Belo Horizonte pelo bispo
+  José Aparecido Peraçoli Moreno (ex-pastor da Igreja Pentecostal de Nova Vida), de linha 'Renovação Carismática
+  Anglicana'; personalidade jurídica em 04/06/2002; membro do CONIC-MG (2002); LOC próprio em 2007; hoje sediada
+  em Indaiatuba (SP).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja Anglicana das Américas é uma das primeiras Igrejas Anglicanas Independentes a surgirem no Brasil. Foi
+    organizada em 1999, pelo bispo José Aparecido Peraçoli Moreno
+  page: '114'
+- source: cant-novas-igrejas-2024
+  quote: a denominação se chamava inicialmente Igreja Episcopal Anglicana Livre (IEAL).
+  page: '114'
+relations:
+- type: in_communion_with
+  target: iaal
+  date: null
+  led_by:
+  - jose-aparecido-peracoli-moreno
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Moreno estabeleceu contato e comunhão plena com o arcebispo Michael B. Simmons, da Igreja Anglicana da América
+      Latina, com sede nos EUA.
+    page: '114'

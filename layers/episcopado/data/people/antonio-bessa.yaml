@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: antonio-bessa
 name: Antônio Bessa
+full_name: Antônio José Pereira Bessa
+aliases:
+- Antônio José Pereira Bessa
+- Bessa
+- dom Antônio José Pereira Bessa
+biography: >-
+  Bispo em Fortaleza (CE); auxiliou José Fernando de Faria na proposta da Província Anglicana Católica do Espírito
+  Santo; sagrado por Leonardo Marin-Saavedra; sagrou Rafael Moraes; integrou a Província Anglo-Católica da Santíssima
+  Trindade.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Dom Antônio José Pereira Bessa, em Fortaleza (CE)
+  page: '105'
 ordinations:
 - order: episcopate
   date: '2019'
@@ -15,3 +28,64 @@ ordinations:
       ao Brasil, consagrando novos bispos para o continente, ratificando as Ordens de clérigos com sucessão apostólica
       considerada duvidosa, e ordenando novos diáconos e presbíteros para diferentes Igrejas. Uma dessas sagrações
       episcopais realizadas foi a de Antônio Bessa, na cidade de Fortaleza.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
+      Unidos.
+    page: '105'
+  notes: >-
+    Frase ambígua: 'Este bispo' segue imediatamente a menção a 'dom Antônio Bessa' (antecedente mais próximo), mas
+    pode referir-se a José Fernando de Faria. Ver dúvidas. Sagração durante visitas de Marin-Saavedra (Igreja Anglicana
+    Latino-Americana) ao Brasil em 2019. Co-sagrantes não informados.
+affiliations:
+- jurisdiction: pacst
+  role: bishop
+  start: '2021'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Dom Antônio José Pereira Bessa, em Fortaleza (CE)
+    page: '105'
+- jurisdiction: paces
+  role: auxiliary_bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: através do bispo José Fernando de Faria, à época, auxiliado por dom Antônio Bessa.
+    page: '105'
+- jurisdiction: paces
+  role: clergy
+  diocese: diocese-do-ceara
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Então presbítero, foi responsável pela Catedral Divina Misericórdia da Diocese do Ceará da Igreja Anglicana
+      Católica do Espírito Santo.
+    page: '161'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Já ordenado bispo, Antônio Bessa se desligou da Província Anglicana Católica do Espírito Santo e do seu bispo
+      José Fernando de Faria
+    page: '161'
+  notes: 'Local: Catedral Divina Misericórdia. Saída após a sagração episcopal (2019).'
+- jurisdiction: icaca
+  role: archbishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Católica Apostólica de Confissão Anglicana trata-se de uma Igreja Anglicana Independente, que teve
+      como seu arcebispo a figura de dom Antônio José Pereira Bessa.
+    page: '161'
+  notes: Fundador/organizador; até 2021 Bessa e Moraes eram os dois bispos da jurisdição.
+- jurisdiction: pacst
+  role: primate
+  diocese: ceara
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Província Anglo-Católica da Santíssima Trindade também continuou com o bispo Antônio Bessa como seu primaz.
+    page: '162'

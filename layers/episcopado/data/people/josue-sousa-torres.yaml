@@ -2,9 +2,34 @@
 id: josue-sousa-torres
 name: Josué Sousa Torres
 aliases:
+- Dom Josué Torres
 - Josué Souza Torres
+- Josué Torres
 - Reverendo Dom Josué
+biography: >-
+  Ex-membro da Diocese Anglicana de São Paulo (IEAB); fundador e primaz da Igreja Episcopal do Evangelho Pleno (Taboão
+  da Serra); sagrado bispo em 15/01/2006 por Barry Frank Peachey; sagrante de Adolfo Batista (2013), Lucas Oliva
+  Bertolozzi (2011) e Fernando Nobile (2018).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Josué Sousa Torres
+  page: '117'
+- source: cant-novas-igrejas-2024
+  quote: pastor Josué Souza Torres, que já foi membro da IEAB, na Diocese Anglicana de São Paulo
+  page: '145'
 ordinations:
+- order: diaconate
+  date: '2005-03-26'
+  place: Ribeirão Preto (SP)
+  jurisdiction: iadb-lorite
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia 26 de março de 2005, na cidade de Ribeirão Preto (SP), os ministros licenciados Ricardo Lorite de Lima,
+      Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Diaconal
+    page: '118'
+  notes: O livro não nomeia o ordenante.
 - order: presbyterate
   date: '2005-03-27'
   place: Igreja Evangélica Congregacional de Ribeirão Preto (SP)
@@ -18,12 +43,17 @@ ordinations:
       Luis Fernando Salgado e Josué Souza Torres foram elevados ao Ministério Presbiteral da Igreja de Cristo, Una,
       Santa, Católica e Apostólica, através da imposição das mãos de Dom Iranildo Macieira das Silva (Dom Lucas).
       A cerimônia de Ordenação ocorreu na Igreja Evangélica Congregacional de Ribeirão Preto.
+  - source: cant-novas-igrejas-2024
+    quote: e no dia 27 de março, os quatro diáconos foram ordenados presbíteros por bispos independentes.
+    page: '118'
   notes: >-
     Também impuseram as mãos os padres Manuel (Igreja Antigo-Católica), João Ripoli e Mário Palumbo (Igreja Católica
-    Romana). Ordenações autorizadas por Leonardo Marin-Saavedra (Anglican Independent Communion Worldwide).
+    Romana). Ordenações autorizadas por Leonardo Marin-Saavedra (Anglican Independent Communion Worldwide). O livro
+    diz apenas 'por bispos independentes', sem nomeá-los.
 - order: episcopate
   date: '2006-01-15'
-  jurisdiction: null
+  jurisdiction: ieep
+  office: primate
   principal_consecrator: barry-frank-peachey
   status: probable
   sources:
@@ -31,4 +61,69 @@ ordinations:
     quote: >-
       quando em 15 de janeiro de 2006 Josué Torres foi sagrado ao episcopado pelo bispo Barry Frank Peachey, filiado
       à The Anglican Independent Communion Worldwide, com sede na Inglaterra.
-  notes: Fundador da Igreja Episcopal do Evangelho Pleno (IEEP).
+  notes: >-
+    Fundador da Igreja Episcopal do Evangelho Pleno (IEEP). Mesma data da sagração de Ricardo Lorite e Rui Barbosa
+    (p. 118), na qual Peachey também atuou.
+affiliations:
+- jurisdiction: ieep
+  role: founder
+  start: '1997'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Josué Torres fundou a Igreja Episcopal do Evangelho Pleno, em Taboão da Serra
+    page: '118'
+  - source: cant-novas-igrejas-2024
+    quote: Josué decidiu fundar a IEEP
+    page: '145'
+- jurisdiction: ieep
+  role: primate
+  start: '2006'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o Bispo Primaz da Igreja Episcopal do Evangelho Pleno (IEEP), Bispo Josué Souza Torres
+    page: '146'
+  - source: cant-novas-igrejas-2024
+    quote: Bispo Josué Souza Torres, Primaz da Igreja Episcopal do Evangelho Pleno
+    page: '131'
+  notes: Citado como primaz em 2006 (p. 146) e em 2013 (p. 131).
+- jurisdiction: ieab-dasp
+  role: member
+  end: c.2004
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O atual quadro complexo tem origem a partir da saída de membros da Diocese Anglicana de São Paulo da Igreja
+      Episcopal Anglicana do Brasil (IEAB). Dentre eles estavam Ricardo Lorite de Lima, Rui Costa Barbosa, Luis
+      Fernando Salgado e Josué Sousa Torres.
+    page: '117'
+  notes: >-
+    O livro diz que saíram da DASP/IEAB antes da aproximação com a REC (abril de 2004); na p. 145 são chamados de
+    'seminaristas'. Data de saída não informada.
+events:
+- type: other
+  date: '2005'
+  description: >-
+    A IEEP (ministério evangélico desde 1997) adotou formalmente em 2005 a doutrina anglicana e o governo episcopal.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Em 2005, a nova Igreja adotou formalmente a doutrina anglicana e o governo episcopal
+    page: '145'
+- type: other
+  date: '2024-11-24'
+  description: >-
+    Nos 28 anos da IEEP (24/11/2024, Taboão da Serra) foram ordenadas as diaconisas Lurdes e Márcia e as presbíteras
+    Maria Neves, Maria Rita, Patrícia e Ilza, em celebração presidida por Josué Torres com o auxílio da episcopisa
+    Zilda Torres e de dom Isaías Dutra (representando a DAC de Lucas Macieira).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      realizaram-se as ordenações das novas diaconisas Lurdes e Márcia, bem como das novas presbíteras reverendas
+      Maria Neves, Maria Rita, Patrícia e Ilza. A celebração foi presidida por Dom Josué Torres, com o auxílio da
+      episcopisa Zilda Torres e de Dom Isaías Dutra
+    page: '146'

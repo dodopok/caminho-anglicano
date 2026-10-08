@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jose-carlos-berti-junior
+name: José Carlos Berti Júnior
+aliases:
+- Carlos Berti
+- reverendo Berti
+- reverendo Carlos
+biography: >-
+  Reverendo do Recife, professor de História e Geografia, fundador e 'supervisor diocesano' da Igreja Episcopal
+  Católica Brasileira (2023); em 2024 buscou vínculo episcopal com o bispo Megino Carneiro Souza; autor de manuais
+  litúrgicos.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Esta denominação tem origem em 2023, na pessoa do reverendo José Carlos Berti Júnior, professor de História,
+    Geografia e Teólogo da cidade do Recife
+  page: '163'
+affiliations:
+- jurisdiction: iecab
+  role: founder
+  start: '2023'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Esta denominação tem origem em 2023, na pessoa do reverendo José Carlos Berti Júnior, professor de História,
+      Geografia e Teólogo da cidade do Recife
+    page: '163'
+- jurisdiction: iecab
+  role: other
+  role_description: supervisor diocesano
+  diocese: diocese-de-olinda
+  start: '2023-08-01'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      documento intitulado Ato de Nomeação, escrito pelo próprio reverendo, e datado de 1º de agosto de 2023, instituindo
+      a Diocese de Olinda e apresentando-se como Supervisor Episcopal da IECAB.
+    page: '163'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      concede ao Rev. José Carlos Berti Júnior nomeação de supervisor diocesano da Diocese de Olinda, no Estado
+      de Pernambuco, da Igreja Episcopal Católica Brasileira
+    page: '163'
+  notes: Auto-nomeação por 'Ato de Nomeação' escrito por ele mesmo.
+events:
+- type: other
+  date: '2024'
+  description: >-
+    José Carlos Berti Júnior busca vínculo episcopal para a IECAB com o bispo Megino Carneiro Souza (Igreja Anglicana
+    Bom Pastor)
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      no ano de 2024, o reverendo Berti buscou criar este vínculo com o bispo Megino Carneiro Souza (Igreja Anglicana
+      Bom Pastor)
+    page: '163'

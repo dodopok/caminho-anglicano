@@ -1,7 +1,79 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: geraldo-magela
 name: Geraldo Magela
+full_name: Geraldo Santos de Magela Neto
+aliases:
+- Geraldo Santos de Magela
+- Geraldo Santos de Magela Neto
+- bispo Magela
+- reverendo Magela
+biography: >-
+  Bispo da Igreja Anglicana Latino Americana no Brasil (IALAB), signatário da Declaração da Boa Viagem (2006).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: a Igreja Anglicana Latino Americana no Brasil (IALAB), pelo bispo Geraldo Santos de Magela Neto
+  page: '119'
 affiliations:
+- jurisdiction: ialab
+  role: bishop
+  start: '2006'
+  end: '2018-11-06'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: a Igreja Anglicana Latino Americana no Brasil (IALAB), pelo bispo Geraldo Santos de Magela Neto
+    page: '119'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana Latino Americana do Brasil (também chamada por sua sigla IALAB) teve origem na figura do
+      bispo Geraldo Santos de Magela Neto. Nos registros jurídicos ela foi aberta em 14 de novembro de 2006 e teve
+      as suas atividades encerradas em 06 de novembro de 2018.
+    page: '158'
+  - source: cant-novas-igrejas-2024
+    quote: Após certo tempo, o bispo Magela encerrou as atividades da denominação
+    page: '158'
+  notes: Fim = encerramento jurídico da IALAB.
+- jurisdiction: ialab
+  role: founder
+  start: '2006-11-14'
+  end: '2018-11-06'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana Latino Americana do Brasil (também chamada por sua sigla IALAB) teve origem na figura do
+      bispo Geraldo Santos de Magela Neto. Nos registros jurídicos ela foi aberta em 14 de novembro de 2006 e teve
+      as suas atividades encerradas em 06 de novembro de 2018.
+    page: '158'
+- jurisdiction: ieab-dar
+  role: other
+  role_description: ministro leigo
+  start: '2014'
+  end: '2017'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      ingressou na Igreja Episcopal Anglicana do Brasil, através da Diocese Anglicana do Recife. Em 2014, servia
+      em comunidades como ministro leigo. Em 2017, suas ordens presbiterais foram reconhecidas, abrindo mão da função
+      episcopal que exercia.
+    page: '158'
+  notes: Em 2014 servia como ministro leigo; em 2017 reconhecidas as ordens presbiterais.
+- jurisdiction: ieab-dar
+  role: clergy
+  start: '2017'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      ingressou na Igreja Episcopal Anglicana do Brasil, através da Diocese Anglicana do Recife. Em 2014, servia
+      em comunidades como ministro leigo. Em 2017, suas ordens presbiterais foram reconhecidas, abrindo mão da função
+      episcopal que exercia.
+    page: '158'
+  - source: cant-novas-igrejas-2024
+    quote: Após um tempo na DAR, o reverendo Magela foi transferido para a Diocese Anglicana de Brasília
+    page: '158'
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dab
@@ -13,3 +85,82 @@ affiliations:
     quote: Rev. Geraldo Magela
   notes: >-
     Listado como presbítero atuante da DAB em 2025-04 (Missão Cristo Redentor, Palmas/TO). Datas de início não informadas.
+- jurisdiction: ieab-dab
+  role: clergy
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      o reverendo Magela foi transferido para a Diocese Anglicana de Brasília, pastoreada pelo bispo Maurício Andrade,
+      passando a coordenar a organização Casa A+
+    page: '158'
+  notes: Coordenou a Casa A+ (acolhimento de pessoas soropositivas).
+- jurisdiction: ieab
+  role: clergy
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Atualmente o clérigo exerce o seu ministério na cidade de Palmas, Tocantins, na Missão Cristo Redentor, da
+      IEAB.
+    page: '159'
+  notes: 'Local: Missão Cristo Redentor, Palmas, TO. Situação na data do livro (2025).'
+events:
+- type: other
+  date: '2006'
+  description: >-
+    Declaração da Boa Viagem (2006): fundação do Movimento Anglicano 'Por Uma Causa Comum', em defesa da ortodoxia
+    sobre a sexualidade humana (Resolução 1.10 de Lambeth 1998), encabeçado por Robinson Cavalcanti. Signatários
+    citados: Diocese do Recife, Igreja Anglicana do Brasil, Igreja Episcopal Reformada, Igreja Anglicana Ortodoxa
+    no Brasil (IAOB), Igreja Anglicana Missionária do Redentor (IAMR), Igreja Anglicana Brasileira (IABRA), Igreja
+    Episcopal do Evangelho Pleno (IEEP) e Igreja Anglicana Latino Americana do Brasil (IALAB, representada por Geraldo
+    Magela).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em 2006, por ter subscrito, junto com outras denominações anglicanas à época, a Declaração da Boa Viagem,
+      documento o qual deliberou a fundação do Movimento Anglicano "Por Uma Causa Comum"
+    page: '156'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Junto com a Diocese do Recife, liderada pelo bispo Robinson Cavalcanti, outras Igrejas assinaram o documento,
+      como a Igreja Anglicana do Brasil, Igreja Episcopal Reformada, Igreja Anglicana Ortodoxa no Brasil (IAOB),
+      Igreja Anglicana Missionária do Redentor (IAMR), Igreja Anglicana Brasileira (IABRA), Igreja Episcopal do
+      Evangelho Pleno (IEEP), e a Igreja Anglicana Latino Americana do Brasil (IALAB), representada pelo bispo Geraldo
+      Magela.
+    page: '158'
+- type: other
+  date: '2017'
+  description: Reconhecimento das ordens presbiterais de Geraldo Magela na IEAB, que abre mão da função episcopal
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      ingressou na Igreja Episcopal Anglicana do Brasil, através da Diocese Anglicana do Recife. Em 2014, servia
+      em comunidades como ministro leigo. Em 2017, suas ordens presbiterais foram reconhecidas, abrindo mão da função
+      episcopal que exercia.
+    page: '158'
+- type: other
+  date: '2020-03-03'
+  description: >-
+    Geraldo Magela, representando a IEAB, apresenta à Polícia Civil pedido de inquérito por suposta homofobia contra
+    a prefeita de Palmas, Cinthia Ribeiro
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 03 de março de 2020, representando a Igreja Episcopal Anglicana, o reverendo apresentou um pedido à Polícia
+      Civil contra a prefeita de Palmas, Cinthia Ribeiro
+    page: '158'
+- type: other
+  date: 2024-03
+  description: >-
+    Geraldo Santos de Magela Neto é nomeado para a Coordenação da Área Evangélica da Aliança Nacional LGBTI+
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em março de 2024, o reverendo Geraldo Santos de Magela Neto foi nomeado para integrar a Coordenação da Área
+      Evangélica da Aliança Nacional LGBTI+
+    page: '159'

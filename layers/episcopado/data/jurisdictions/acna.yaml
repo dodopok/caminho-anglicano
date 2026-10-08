@@ -4,12 +4,53 @@ acronym: ACNA
 name: Igreja Anglicana na América do Norte
 aliases:
 - Anglican Church in North America
+- Igreja Anglicana na América do Norte (Anglican Church in North America)
 type: province
 tradition: anglican
 country: US
-description: Província anglicana formada em 2009 por grupos saídos da TEC e da Igreja Anglicana do Canadá.
+founded:
+  date: '2009-06-22'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 22 de junho de 2009 foi organizado um encontro na Catedral de São Vicente, em Bedford, Texas, para a aprovação
+      da nova Constituição e dos Cânones.
+    page: '21'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Diferente da Igreja Episcopal e da Igreja do Canadá, a ACNA não é uma Província da Comunhão Anglicana.
+    page: '21'
+description: >-
+  Fundada em 2009 por grupos saídos da Igreja Episcopal (EUA) e da Igreja Anglicana do Canadá; Robert Duncan primeiro
+  arcebispo; não é Província da Comunhão Anglicana; ligada à GAFCON.
 sources:
-- source: wp-duncan
+- source: cant-novas-igrejas-2024
   quote: >-
-    On June 21, 2009, the bishops of the Anglican Church in North America elected Duncan as the first archbishop
-    and primate of North America.
+    Em 22 de junho de 2009 foi organizado um encontro na Catedral de São Vicente, em Bedford, Texas, para a aprovação
+    da nova Constituição e dos Cânones.
+  page: '21'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Diferente da Igreja Episcopal e da Igreja do Canadá, a ACNA não é uma Província da Comunhão Anglicana.
+  page: '21'
+relations:
+- type: schism_from
+  target: tec
+  date: '2009'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana na América do Norte (Anglican Church in North America – ACNA) foi fundada, em 2009, por
+      membros e lideranças clericais oriundos da Igreja Episcopal nos Estados Unidos e da Igreja Anglicana do Canadá
+    page: '20'
+  notes: Também oriunda da Igreja Anglicana do Canadá.
+- type: member_of
+  target: gafcon
+  date: '2009'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      sendo oficialmente fundada a nova denominação alinhada com as demais Províncias que fazem parte da GAFCON
+    page: '21'

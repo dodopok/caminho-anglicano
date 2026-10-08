@@ -1,19 +1,128 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: dionisio-ailton-pereira
 name: Dionísio Aílton Pereira
+full_name: Dionísio Ailton Pereira
+aliases:
+- dom Dionísio
+birth:
+  date: '1969-03-12'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Nascido em 12 de março de 1969, em Cachoeira de Minas (MG), iniciou a sua caminhada na Igreja Católica Romana,
+      quando foi ordenado sacerdote em 27 de julho de 2000
+    page: '103'
+  - source: cant-novas-igrejas-2024
+    quote: Em 2024, foi reeleito vereador em Pouso Alegre, para o 3° mandato (2025-2028) pelo Republicanos.
+    page: '104'
+biography: >-
+  Nascido em 12/03/1969 em Cachoeira de Minas (MG); padre católico romano ordenado em 27/07/2000; cofundador da
+  Igreja Católica da Fé; sagrado bispo sufragâneo/auxiliar da Diocese Anglicana no Brasil em 12/10/2021; assumiu
+  o governo da Diocese após a morte de Roger Bird (2023) e a desvinculou da Catedral no fim de 2023; vereador em
+  Pouso Alegre.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Nascido em 12 de março de 1969, em Cachoeira de Minas (MG), iniciou a sua caminhada na Igreja Católica Romana,
+    quando foi ordenado sacerdote em 27 de julho de 2000
+  page: '103'
+- source: cant-novas-igrejas-2024
+  quote: Em 2024, foi reeleito vereador em Pouso Alegre, para o 3° mandato (2025-2028) pelo Republicanos.
+  page: '104'
 ordinations:
+- order: presbyterate
+  date: '2000-07-27'
+  jurisdiction: null
+  ordained_by: ricardo-pedro-chaves-pinto-filho
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      quando foi ordenado sacerdote em 27 de julho de 2000, pelas mãos de dom Ricardo Pedro Chaves Pinto Filho,
+      arcebispo de Pouso Alegre.
+    page: '103'
+  notes: Igreja Católica Romana (Arquidiocese de Pouso Alegre). Exerceu o ministério por 14 anos.
 - order: episcopate
   date: '2021-10-12'
-  place: Catedral Anglicana de São Paulo
-  jurisdiction: null
+  place: Catedral Anglicana de São Paulo, São Paulo (SP)
+  jurisdiction: danb
   office: suffragan
   principal_consecrator: roger-douglas-bird
+  co_consecrators:
+  - bernardo-da-ressurreicao
+  - rafael-de-emaus
   status: probable
   sources:
   - source: cant-novas-igrejas-2024
     quote: >-
       Em 12 de outubro de 2021, ocorreu uma segunda sagração episcopal, agora de dom Dionísio, realizada na Catedral
       Anglicana de São Paulo. A cerimônia foi presidida pelo bispo Roger Bird
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 12 de outubro de 2021, ocorreu uma segunda sagração episcopal, agora de dom Dionísio, realizada na Catedral
+      Anglicana de São Paulo. A cerimônia foi presidida pelo bispo Roger Bird, sendo auxiliado por dom Bernardo
+      da Ressurreição e dom Rafael de Emaús, bispos da Santa Igreja Celta do Brasil, para que Dionísio se tornasse
+      bispo sufragâneo da Diocese Anglicana no Brasil.
+    page: '103'
+  - source: cant-novas-igrejas-2024
+    quote: quando o reverendo Dionísio Aílton Pereira foi consagrado como bispo sufragâneo da Diocese.
+    page: '96'
   notes: >-
     Diocese Anglicana no Brasil (Movimento Anglicano no Brasil, ligado à Catedral Anglicana de São Paulo). O trecho
-    segue com "sendo auxiliado por dom Bernardo ..." (nome incompleto no OCR do trecho capturado).
+    segue com "sendo auxiliado por dom Bernardo ..." (nome incompleto no OCR do trecho capturado). Na p. 97 o livro
+    o chama 'bispo auxiliar'.
+affiliations:
+- jurisdiction: danb
+  role: suffragan_bishop
+  start: '2021-10-12'
+  end: 2023-02
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Em 12 de outubro de 2021 o reverendo Dionísio Ailton Pereira foi sagrado para ser bispo auxiliar.
+    page: '97'
+- jurisdiction: casp
+  role: bishop
+  start: '2021-10-12'
+  end: '2023'
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Todavia, ao deixar a Catedral, logo após a morte de dom Roger, dom Dionísio também deixou uma lacuna episcopal
+      na Catedral Anglicana de São Paulo
+    page: '97'
+- jurisdiction: danb
+  role: diocesan_bishop
+  start: 2023-02
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em sua função episcopal, após o falecimento do bispo Roger, dom Dionísio assumiu o governo da Diocese Anglicana
+      no Brasil
+    page: '96'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após o falecimento do bispo Roger em fevereiro de 2023, Dionísio assumiu o governo pastoral da Diocese Anglicana
+      no Brasil.
+    page: '103'
+  notes: Pastoreia a Paróquia Anglicana de São Jorge, Pouso Alegre (MG).
+- jurisdiction: icf
+  role: founder
+  start: c.2014
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: junto com Dionísio criaram a Igreja Católica da Fé, na cidade de Pouso Alegre.
+    page: '103'
+- jurisdiction: manb
+  role: clergy
+  start: c.2016
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Outros sacerdotes que se uniram à Catedral na mesma época, foram os padres Ronaldo Melo e Dionísio Pereira.
+    page: '95'

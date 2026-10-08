@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-do-para
+name: Diocese do Pará
+type: diocese
+relations:
+- type: part_of
+  target: wac-br
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Dom Antônio Jesualdo Bezerra de Moura, bispo diocesano do Pará
+    page: '129'
+  - source: cant-novas-igrejas-2024
+    quote: Dom Raimundo Cesar Oliveira Costa, bispo auxiliar da Diocese do Pará
+    page: '129'
+- type: part_of
+  target: iatb
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      e Diocese do Pará, com o bispo eleito, reverendo Hélio Augusto, que sagrado ao episcopado durante o Encontro
+      Sinodal que em novembro de 2025, no Rio de Janeiro.
+    page: '136'

@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ezequiel-martins-garcia-junior
+name: Ezequiel Martins Garcia Júnior
+aliases:
+- Monsenhor Ezequiel
+- bispo Ezequiel
+- dom Ezequiel
+biography: Fundador (2016, Joinville) e primaz da Igreja Anglicana de Comunhão Livre ('Monsenhor Ezequiel').
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Ezequiel Martins Garcia Júnior (ou Monsenhor Ezequiel, como comumente se intitula)
+  page: '115'
+affiliations:
+- jurisdiction: iacl
+  role: founder
+  start: '2016'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Ele foi o responsável por criar a Igreja a partir da Missão Santa Mãe de Deus (Anglo Católica), quando presbítero.
+    page: '115'
+- jurisdiction: iacl
+  role: primate
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: dom Ezequiel Martins Garcia Júnior, como Primaz da Igreja Anglicana de Comunhão Livre
+    page: '115'

@@ -1,11 +1,17 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: robert-s-morse
 name: Robert S. Morse
+biography: Um dos quatro bispos do Movimento Contínuo sagrados em 1978 (de Oakland, Califórnia).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Robert S. Morse de Oakland, Califórnia
+  page: '71'
 ordinations:
 - order: episcopate
   date: '1978-01-28'
   place: Denver, Colorado (EUA)
   jurisdiction: null
+  office: diocesan
   principal_consecrator: albert-arthur-chambers
   co_consecrators:
   - francisco-pagtakhan
@@ -18,7 +24,10 @@ ordinations:
     quote: >-
       Em janeiro de 1978, juntamente com o Bispo Francisco Pagtakhan, da Igreja Filipina Independente, consagrou
       quatro novos bispos: James O. Mote, Peter F. Watterson, Robert S. Morse e Charles Dale Doren.
+  - source: cant-novas-igrejas-2024
+    quote: Robert S. Morse de Oakland, Califórnia; e Dale Doren de Pittsburgh.
+    page: '71'
   notes: >-
     Sagrante principal confirmado pelo Journal da Convenção Geral de 1979 (fonte primária, sem nomes dos sagrados)
     + Costa (nomes). Costa (2024) acrescenta o consentimento in absentia do bispo Mark Pae (Coreia). Local "Denver"
-    vem da tradição; o Journal não dá o local.
+    vem da tradição; o Journal não dá o local. Idem James Orin Mote.

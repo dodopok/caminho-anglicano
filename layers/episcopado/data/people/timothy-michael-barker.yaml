@@ -1,3 +1,27 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: timothy-michael-barker
 name: Timothy Michael Barker
+biography: Arcebispo da Comunhão Católica Internacional Livre; consagrou Randolph Adler em 1992.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    pela imposição de mãos de Timothy Michael Barker, arcebispo da Comunhão Católica Internacional Livre.
+  page: '44'
+events:
+- type: other
+  date: '1997'
+  description: >-
+    A ICCEC determina a reordenação de todos os seus clérigos por acordo bilateral com bispos da ICAB (nova linha
+    de sucessão apostólica), para afastar-se das posições de Timothy Michael Barker; o acordo logo foi quebrado
+    pela ICCEC.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Comunhão Episcopal Carismática determinou a reordenação de todos os seus clérigos, através de um acordo
+      bilateral com os bispos da Igreja Católica Apostólica Brasileira, estabelecendo uma nova linha de sucessão
+      apostólica a partir da ICAB
+    page: '44'
+  - source: cant-novas-igrejas-2024
+    quote: Porém, este acordo logo foi quebrado por parte da ICCEC.
+    page: '44'

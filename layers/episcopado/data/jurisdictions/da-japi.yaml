@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: da-japi
+acronym: DA-Japi
+name: Diocese Anglicana do Japi
+aliases:
+- DA-JAPI
+type: diocese
+country: BR
+founded:
+  date: '2012-10-14'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Ela foi juridicamente criada em 14 de outubro de 2012, pelo bispo James Antônio Roque
+    page: '154'
+  - source: cant-novas-igrejas-2024
+    quote: na cidade de Jundiaí, São Paulo, como a primeira diocese ordinária
+    page: '154'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      sendo extinta em 1º de outubro de 2016, após passar à condição de uma Diocese Titular no seio do Movimento
+      Anglicano Contínuo brasileiro
+    page: '154'
+  - source: cant-novas-igrejas-2024
+    quote: que oficialmente usava o LOC de 1928, anglo-católico
+    page: '154'
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Anglicana do Japi [2012] (Extinta em 2016)
+    page: '172'
+  discrepancies:
+  - field: date
+    value: '2013'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        O novo bispo, por sua vez, organizou a chamada Diocese Anglicana do Japi22, na cidade de Jundiaí, em São
+        Paulo.
+      page: '76'
+    - source: cant-novas-igrejas-2024
+      quote: Em 2016, a Diocese Anglicana do Japi foi extinta
+      page: '76'
+dissolved:
+  date: '2016'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O novo bispo, por sua vez, organizou a chamada Diocese Anglicana do Japi22, na cidade de Jundiaí, em São Paulo.
+    page: '76'
+  - source: cant-novas-igrejas-2024
+    quote: Em 2016, a Diocese Anglicana do Japi foi extinta
+    page: '76'
+description: Organizada em Jundiaí (SP) por James Antônio Roque após sua sagração (2013); extinta em 2016.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    O novo bispo, por sua vez, organizou a chamada Diocese Anglicana do Japi22, na cidade de Jundiaí, em São Paulo.
+  page: '76'
+- source: cant-novas-igrejas-2024
+  quote: Em 2016, a Diocese Anglicana do Japi foi extinta
+  page: '76'

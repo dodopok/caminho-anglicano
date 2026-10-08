@@ -2,6 +2,8 @@
 id: ceec
 acronym: CEEC
 name: Communion of Evangelical Episcopal Churches
+aliases:
+- Communion of Evangelical Episcopal Churches (Comunhão das Igrejas Episcopais Evangélicas)
 type: communion
 tradition: other
 country: US
@@ -15,6 +17,14 @@ founded:
       from the Anglican, Orthodox and Old Catholic jurisdictions, who were committed to ecumenism.
   - source: ceec-history
     quote: Bishop Michael Owen served as the first Presiding Bishop.
+  - source: cant-novas-igrejas-2024
+    quote: Em janeiro de 1995, seis bispos presentes em um sínodo votaram a incorporação da CEEC
+    page: '47'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em 2012, fundiu-se com a Christian Communion International, passando a ser chamada Comunhão Cristã Internacional
+      nos Estados Unidos.
+    page: '48'
 wikidata: Q5154251
 website: https://www.ceec.org/
 description: >-
@@ -29,3 +39,22 @@ sources:
     the Anglican, Orthodox and Old Catholic jurisdictions, who were committed to ecumenism.
 - source: ceec-history
   quote: Bishop Michael Owen served as the first Presiding Bishop.
+relations:
+- type: merged_with
+  target: eeci
+  date: '1999'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: em 1999, uniu-se à Evangelical Episcopal Churches International
+    page: '48'
+- type: merged_with
+  target: cci
+  date: '2012'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em 2012, fundiu-se com a Christian Communion International, passando a ser chamada Comunhão Cristã Internacional
+      nos Estados Unidos.
+    page: '48'

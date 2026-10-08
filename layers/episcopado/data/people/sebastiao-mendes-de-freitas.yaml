@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sebastiao-mendes-de-freitas
+name: Sebastião Mendes de Freitas
+aliases:
+- Rev. Sebastião Mendes
+- Sebastião Mendes
+biography: >-
+  Líder (reverendo, depois bispo) da Igreja Episcopal Reformada, missão brasileira da REC; encerrou em 06/08/2004
+  a integração da Paróquia Thomas Cranmer (Lorite); sagrado por bispos brasileiros; signatário da Declaração da
+  Boa Viagem (2006).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    o reverendo Sebastião Mendes de Freitas da Igreja Episcopal Reformada39 – à época vinculada à Reformed Episcopal
+    Church (REC) dos Estados Unidos.
+  page: '133'
+ordinations:
+- order: episcopate
+  date: null
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Buzzo e Mendes foram sagrados por bispos brasileiros, mas seguiram caminhos distintos
+    page: '133'
+  notes: O livro diz apenas que foi sagrado 'por bispos brasileiros', sem nomes nem data.
+affiliations:
+- jurisdiction: ierb
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: a Igreja Episcopal Reformada, liderada pelo bispo Sebastião Mendes de Freitas e Francisco Buzzo
+    page: '118'
+  - source: cant-novas-igrejas-2024
+    quote: o segundo deu continuidade à Igreja Episcopal Reformada.
+    page: '133'
+  notes: Liderava a missão brasileira da REC em 2004 (p. 117) e como bispo em 2006 (p. 118).
+- jurisdiction: ier
+  role: primate
+  end: '2009'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Por um tempo, teve o bispo Sebastião Mendes de Freitas43 como seu primaz e Francisco Buzzo Rodrigues, como
+      bispo auxiliar.
+    page: '168'
+  - source: cant-novas-igrejas-2024
+    quote: O bispo Sebastião Mendes de Freitas como emérito da denominação, a qual terminou extinta.
+    page: '168'
+  notes: '''Por um tempo'' primaz; depois emérito; fim = extinção da igreja segundo o Apêndice 1.'
+events:
+- type: other
+  date: '2004-08-06'
+  description: >-
+    Em abril de 2004 Ricardo Lorite iniciou aproximação com a missão brasileira da Igreja Episcopal Reformada (REC),
+    organizando o ponto de pregação que viria a ser a Paróquia Anglicana Thomas Cranmer; a integração foi encerrada
+    em 06/08/2004 por decisão do reverendo Sebastião Mendes (de Freitas), por divergências doutrinárias e eclesiológicas.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em abril de 2004, teve início um processo de aproximação entre Lorite e a missão brasileira da Igreja Episcopal
+      Reformada (Reformed Episcopal Church – REC).
+    page: '117'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      configuração permaneceu vigente até 6 de agosto do mesmo ano, quando o processo de integração foi encerrado
+      por decisão do reverendo Sebastião Mendes.
+    page: '117'
+- type: other
+  date: '2004-10-31'
+  description: >-
+    Lançamento oficial do Livro de Oração Comum da Igreja Episcopal Reformada (Editora Clássica Anglicana), adaptado
+    do da REC, no 455º aniversário do primeiro LOC
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      sua tradução foi feita a partir de adaptações do manual litúrgico da Igreja Episcopal Reformada dos Estados
+      Unidos (REC). Aprovado no seu Sínodo em 2001, este LOC foi oficialmente lançado em 31 de outubro de 2004
+    page: '168'

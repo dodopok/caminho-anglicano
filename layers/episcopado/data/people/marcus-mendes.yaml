@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marcus-mendes
+name: Marcus Mendes
+biography: >-
+  Reverendo da Igreja Anglicana Tradicional do Brasil; assiste o bispo Cristiano Alves no Rio de Janeiro.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Junto a dom Cristiano, assiste os reverendos Marcus Mendes e Hiago de Barros.
+  page: '136'
+affiliations:
+- jurisdiction: iatb
+  role: clergy
+  diocese: dacbp
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Junto a dom Cristiano, assiste os reverendos Marcus Mendes e Hiago de Barros.
+    page: '136'
+  notes: 'Local: Rio de Janeiro.'

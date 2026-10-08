@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: dcaca
+acronym: DCACA
+name: Diocese Católica Apostólica de Confissão Anglicana
+type: diocese
+country: BR
+description: >-
+  Jurisdição independente à qual pertencia um padre preso em Nova Friburgo (RJ) em maio de 2021; a IEAB (bispo Eduardo
+  Grillo, DARJ) declarou publicamente que o grupo não faz parte da IEAB.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    O religioso em questão era membro de uma jurisdição intitulada Diocese Católica Apostólica de Confissão Anglicana.
+  page: '89'
+relations:
+- type: part_of
+  target: icaca
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: 'Até 2021 existiam dois bispos nesta jurisdição: Bessa e Moraes.'
+    page: '161'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em Nova Friburgo, no Rio de Janeiro, a Diocese sob a liderança de Moraes era chamada de Diocese Católica Apostólica
+      de Confissão Anglicana.
+    page: '161'

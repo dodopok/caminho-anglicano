@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-do-litoral-sul-e-estado-de-alagoas
+name: Diocese do Litoral Sul e Estado de Alagoas
+type: diocese
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Alexandre Barbosa Monteiro Ximenes (Diocesano do Litoral Sul e Estado de Alagoas)
+    page: '55'

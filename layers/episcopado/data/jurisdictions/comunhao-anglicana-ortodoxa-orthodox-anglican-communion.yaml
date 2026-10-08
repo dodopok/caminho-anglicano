@@ -1,4 +1,25 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: comunhao-anglicana-ortodoxa-orthodox-anglican-communion
+acronym: OAC
 name: Comunhão Anglicana Ortodoxa (Orthodox Anglican Communion)
-type: other
+type: communion
+country: US
+founded:
+  date: '1963-11-16'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A origem dessa Igreja no país está na Comunhão Anglicana Ortodoxa. Esta surgiu em 16 de novembro de 1963,
+      pelo trabalho do bispo James Parker Dees
+    page: '130'
+website: https://orthodoxanglican.net/
+description: >-
+  Comunhão anglicana independente surgida em 16/11/1963 pelo trabalho do bispo James Parker Dees, em rejeição ao
+  liberalismo teológico; liderada pelo arcebispo Thomas Edward Gordon; reconheceu em 08/09/2023 a Igreja Anglicana
+  Ortodoxa do Brasil como membro.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A origem dessa Igreja no país está na Comunhão Anglicana Ortodoxa. Esta surgiu em 16 de novembro de 1963, pelo
+    trabalho do bispo James Parker Dees
+  page: '130'

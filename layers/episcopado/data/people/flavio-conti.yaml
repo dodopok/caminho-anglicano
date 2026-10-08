@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: flavio-conti
+name: Flávio Conti
+biography: Reverendo da Igreja Anglicana Ortodoxa do Brasil, signatário da Declaração da Boa Viagem (2006).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: pelos reverendos Hermany Soares, Adriano Oliveira, Flávio Conti e Virgílio Torres
+  page: '118'
+affiliations:
+- jurisdiction: iaob
+  role: clergy
+  start: '2006'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Igreja Anglicana Ortodoxa do Brasil (IAOB), pelos reverendos Hermany Soares, Adriano Oliveira, Flávio Conti
+      e Virgílio Torres
+    page: '118'
+  notes: Reverendo signatário da Declaração da Boa Viagem (2006) pela IAOB.

@@ -147,7 +147,7 @@ const LAYOUT_WEIGHT: Partial<Record<EdgeGroup, number>> = { ordinations: 1, rela
 function nodeInfo(n: GraphNode): string {
   if (n.kind === 'jurisdiction') return n.jurisdictionType ? JURISDICTION_TYPE_LABEL[n.jurisdictionType] : 'Jurisdição'
   if (!n.order) return 'Pessoa'
-  return n.inferredOrder ? 'Bispo (inferido: sagrou outros)' : ORDER_LABEL[n.order]
+  return n.inferredOrder ? 'Bispo (inferido: sagrou outros ou ocupa cargo episcopal)' : ORDER_LABEL[n.order]
 }
 
 /** Vizinhança do nó selecionado até `depth` passos, seguindo só os tipos de aresta visíveis. */

@@ -10,6 +10,7 @@ aliases:
 - Pr. Miguel Uchôa
 - Revmo. Dr. Miguel Uchoa
 - The Most Rev. Miguel Uchoa Cavalcanti
+- arcebispo Miguel Uchôa Cavalcanti
 wikidata: Q116960395
 biography: >-
   Fundador e reitor da Paróquia Anglicana Espírito Santo (1996); bispo diocesano do Recife desde 2012 e primeiro
@@ -100,6 +101,11 @@ ordinations:
     quote: >-
       Fui sagrado bispo da Igreja por 7 bispos de 3 continentes e 5 diferentes países todos Anglicanos e legitimamente
       sagrados.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      o reverendo Miguel Uchôa, escolhido para ser o novo bispo, foi sagrado na Paróquia Anglicana do Espírito Santo,
+      em Jaboatão dos Guararapes, no dia 08 de dezembro de 2012.
+    page: '30'
   - source: iab-poster-linhagem-uchoa
     quote: >-
       162a. Roger Copeland Ames (2011-2016) que, em 8 de dezembro de 2012, sagrou Miguel Ângelo de Andrade Uchôa
@@ -115,7 +121,7 @@ ordinations:
       tornou o primaz do que viria a ser, seis anos depois, uma nova província: a Igreja Anglicana do Brasil.
   discrepancies:
   - field: place
-    value: Catedral PAES, Recife
+    value: Paróquia Anglicana do Espírito Santo, Jaboatão dos Guararapes (PE)
     sources:
     - source: ai-new-province-backed
       quote: On December 8, 2012, The Rt. Rev. Miguel Uchoa was consecrated as Diocesan Bishop.
@@ -125,6 +131,11 @@ ordinations:
       quote: >-
         Fui sagrado bispo da Igreja por 7 bispos de 3 continentes e 5 diferentes países todos Anglicanos e legitimamente
         sagrados.
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        o reverendo Miguel Uchôa, escolhido para ser o novo bispo, foi sagrado na Paróquia Anglicana do Espírito
+        Santo, em Jaboatão dos Guararapes, no dia 08 de dezembro de 2012.
+      page: '30'
     - source: iab-poster-linhagem-uchoa
       quote: >-
         162a. Roger Copeland Ames (2011-2016) que, em 8 de dezembro de 2012, sagrou Miguel Ângelo de Andrade Uchôa
@@ -138,6 +149,26 @@ ordinations:
       quote: >-
         163a. Miguel Ângelo de Andrade Uchôa (2012-atualmente) que, em 2012, foi sagrado bispo por Roger Ames e
         se tornou o primaz do que viria a ser, seis anos depois, uma nova província: a Igreja Anglicana do Brasil.
+  - field: jurisdiction
+    value: dar-iacs
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        o reverendo Miguel Uchôa, escolhido para ser o novo bispo, foi sagrado na Paróquia Anglicana do Espírito
+        Santo, em Jaboatão dos Guararapes, no dia 08 de dezembro de 2012.
+      page: '30'
+  - field: place
+    value: Catedral PAES, Recife
+    sources:
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        162a. Roger Copeland Ames (2011-2016) que, em 8 de dezembro de 2012, sagrou Miguel Ângelo de Andrade Uchôa
+        Cavalcanti como bispo diocesano do Recife, sucedendo à cátedra de Robinson Cavalcanti (ver 163a).
+    - source: iab-poster-linhagem-uchoa
+      quote: >-
+        Em 8 de dezembro de 2018, na PAES, em Recife, o bispo Roger C. Ames, juntamente com os bispos Kevin Allen,
+        Bill Atwood, David Onuoha, Donald Harvey, Evilásio Tenório e Flávio Soares, sagraram: Miguel Ângelo de Andrade
+        Uchôa Cavalcanti como bispo diocesano da Sé do Recife, da Igreja Anglicana no Brasil.
   - field: jurisdiction
     value: iacs
     sources:
@@ -170,10 +201,10 @@ ordinations:
     Allen, Bill Atwood, David Onuoha, Donald Harvey, Evilásio Tenório, Flávio Soares): não confirmados por fonte
     independente. Data confirmada por Anglican Ink e Wikipedia; sagrante principal (Roger Ames) apenas pela Wikipedia
     (terciária) e pelo pôster da IAB. O próprio Uchoa (2016) diz ter sido sagrado 'por 7 bispos de 3 continentes
-    e 5 diferentes países', sem nomeá-los. Os dois pôsteres da IAB dão 2012 nos ramos; o rodapé do pôster de Uchoa
-    dá 8/12/2018, provavelmente erro de ano (8/12/2012 e 8/12/2018 caíram num sábado). A data 2012-12-08 é confirmada
-    por notícia do G1 do próprio dia; a investidura como arcebispo/primaz da IAB foi em 12/05/2018 (ver vínculo
-    de primaz).
+    e 5 diferentes países', sem nomeá-los. O livro não nomeia os sagrantes. Os dois pôsteres da IAB dão 2012 nos
+    ramos; o rodapé do pôster de Uchoa dá 8/12/2018, provavelmente erro de ano (8/12/2012 e 8/12/2018 caíram num
+    sábado). A data 2012-12-08 é confirmada por notícia do G1 do próprio dia; a investidura como arcebispo/primaz
+    da IAB foi em 12/05/2018 (ver vínculo de primaz).
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -278,6 +309,16 @@ affiliations:
   - source: ai-recife-received-gafcon
     quote: the work undertaken by the Rt. Rev. Robinson Cavalcanti and his successor, the Rt. Rev. Miguel Uchoa
   notes: Fim = conversão da diocese em província (continua bispo diocesano do Recife na IAB).
+- jurisdiction: dar-iacs
+  role: diocesan_bishop
+  start: '2012-12-08'
+  end: '2018-05-12'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: a Igreja passou a ser liderada pelo bispo Miguel Uchôa
+    page: '30'
+  notes: Fim = transformação em Província (IAB).
 - jurisdiction: iab
   role: primate
   start: '2018-05-12'
@@ -289,6 +330,15 @@ affiliations:
     quote: Bispo Primaz da Igreja Anglicana no Brasil
   - source: ai-new-province-backed
     quote: the installation of The Most Rev. Miguel Uchoa Cavalcanti as their first Archbishop and Primate
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia 12 de maio de 2018, Miguel Uchôa foi instalado como primeiro Arcebispo e Primaz da Igreja Anglicana
+      no Brasil.
+    page: '31'
+  - source: cant-novas-igrejas-2024
+    quote: alguns clérigos da IAB, discordando de posturas da denominação e de seu Primaz, Miguel Uchôa
+    page: '150'
+  notes: Eleição ratificada pelos Primazes da GAFCON em Entebbe (abril de 2018). Primaz em 2023.
 - jurisdiction: iab
   role: primate
   diocese: iab-diocese-recife
@@ -312,6 +362,16 @@ affiliations:
     quote: Miguel Uchôa Cavalcanti Bispo Primaz da Igreja Anglicana no Brasil Diocesano de Recife
   - source: dr-bispo
     quote: Primaz da Igreja Anglicana no Brasil    Bispo da Diocese de Recife
+- jurisdiction: iab
+  role: archbishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Igreja Anglicana no Brasil (IAB), reorganizada pelo bispo Robinson Cavalcanti a partir da Diocese do Recife,
+      hoje liderada pelo arcebispo Miguel Uchôa Cavalcanti
+    page: '174'
+  notes: Situação em 2025.
 events:
 - type: other
   date: '2017-05-06'
@@ -432,6 +492,18 @@ events:
   - source: jc-2024-ivan-rocha
     quote: >-
       Mais de 15 Bispos estiveram presentes, inclusive dois da Igreja Anglicana (Dom Miguel Uchôa e Dom Márcio Meira).
+- type: other
+  date: 2018-04
+  description: >-
+    Primazes da GAFCON ratificam, em Entebbe (Uganda), a eleição de Miguel Uchôa como primeiro arcebispo e primaz
+    da IAB.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Durante reunião ocorrida em abril de 2018, em Entebbe, Uganda, os Primazes da GAFCON ratificaram a eleição
+      do bispo Miguel Uchôa
+    page: '31'
 - type: other
   date: '2012-07-21'
   description: >-

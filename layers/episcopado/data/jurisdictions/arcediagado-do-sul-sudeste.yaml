@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: arcediagado-do-sul-sudeste
+name: Arcediagado do Sul/Sudeste
+type: diocese
+relations:
+- type: part_of
+  target: iab
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O Arcediagado do Sul/Sudeste foi dissolvido, com a saída do arcediago Ivo Oliveira, de Mogi das Cruzes (SP)
+    page: '124'

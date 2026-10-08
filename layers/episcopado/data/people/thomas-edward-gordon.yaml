@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: thomas-edward-gordon
+name: Thomas Edward Gordon
+aliases:
+- Thomas Gordon
+biography: >-
+  Arcebispo e primaz da Comunhão Anglicana Ortodoxa; liderou comitiva ao Vaticano (janeiro de 2023); reconheceu
+  a IAO brasileira em 08/09/2023.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Atualmente, esta Comunhão é liderada pelo arcebispo Thomas Edward Gordon
+  page: '130'
+affiliations:
+- jurisdiction: comunhao-anglicana-ortodoxa-orthodox-anglican-communion
+  role: primate
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o bispo Thomas Gordon, na qualidade de primaz da Comunhão Anglicana Ortodoxa
+    page: '130'
+events:
+- type: other
+  date: 2023-01
+  description: >-
+    Em janeiro de 2023 o arcebispo Thomas Edward Gordon liderou uma comitiva de bispos anglicanos ortodoxos ao Vaticano
+    (audiência com o Papa Francisco, buscando reconhecimento de Ordens ou possível ingresso em um Ordinariato) e
+    visitou o Centro Anglicano em Roma (arcebispo Ian Ernest).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      ficou famoso em janeiro de 2023, por liderar a comitiva de bispos anglicanos ortodoxos em visita ao Vaticano,
+      quando tiveram uma audiência com o Papa Francisco
+    page: '130'

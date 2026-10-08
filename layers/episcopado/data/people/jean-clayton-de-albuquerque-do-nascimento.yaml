@@ -12,6 +12,7 @@ ordinations:
 - order: episcopate
   date: '2020-02-06'
   jurisdiction: iecb
+  office: auxiliary
   status: confirmed
   sources:
   - source: ptwiki-iecb
@@ -20,9 +21,14 @@ ordinations:
     quote: >-
       Jean Clayton de Albuquerque do Nascimento (Auxiliar da Diocese de Vitória de Santo Antão), em 06 de fevereiro
       de 2020
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Jean Clayton de Albuquerque do Nascimento (Auxiliar da Diocese de Vitória de Santo Antão), em 06 de fevereiro
+      de 2020
+    page: '57'
   notes: >-
     Data completa segundo Costa (2021, p. 245); ano confirmado pela Wikipédia PT. Sagrantes não informados; sucessão
-    via Paulo Garcia/ICCEC.
+    via Paulo Garcia/ICCEC. Sagrantes não nomeados.
 affiliations:
 - jurisdiction: iecb
   role: bishop
@@ -33,3 +39,12 @@ affiliations:
   - source: ptwiki-iecb
     quote: Jean Clayton de Albuquerque do Nascimento (2020)
   notes: bispo auxiliar (2020-)
+- jurisdiction: iecb
+  role: auxiliary_bishop
+  diocese: iab-diocese-vitoria
+  start: '2020-02-06'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Jean Clayton de Albuquerque do Nascimento (Auxiliar da Diocese de Vitória de Santo Antão)
+    page: '57'

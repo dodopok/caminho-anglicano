@@ -1,6 +1,16 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: louis-wahl-falk-iii
 name: Louis Wahl Falk III
+aliases:
+- Louis Falk
+biography: >-
+  Consagrado bispo em 14/02/1981 em Des Moines; arcebispo da ACC (1983); primeiro primaz da TAC (1991–2002).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Louis Wahl Falk III foi uma figura central no Movimento Anglicano Contínuo, sendo consagrado bispo em 14 de
+    fevereiro de 1981, na cidade de Des Moines, Iowa.
+  page: '79'
 ordinations:
 - order: episcopate
   date: '1981-02-14'
@@ -18,6 +28,41 @@ ordinations:
     quote: >-
       Sagrado bispo em 14 de fevereiro de 1981, na cidade de Des Moines, Iowa, recebeu a imposição das mãos dos
       Bispos James Orin Mote, Carmino de Catanzaro, William F. Burns, William O. Lewis e William D. J. Rutherford
+  - source: cant-novas-igrejas-2024
+    quote: sendo consagrado bispo em 14 de fevereiro de 1981, na cidade de Des Moines, Iowa.
+    page: '79'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Estiveram presentes na sagração os bispos James Orin Mote, Carmino de Catanzaro, William F. Burns, William
+      O. Lewis e William D. J. Rutherford
+    page: '79'
   notes: >-
     A fonte lista os bispos que impuseram as mãos sem indicar o principal. Falk foi depois arcebispo da ACC e primaz
-    da TAC.
+    da TAC. O livro diz que a cerimônia 'contou com a participação' e que esses bispos 'estiveram presentes'; não
+    identifica o sagrante principal.
+affiliations:
+- jurisdiction: acc
+  role: archbishop
+  start: '1983'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Em 1983, Falk foi eleito Arcebispo da Anglican Catholic Church (ACC)
+    page: '79'
+- jurisdiction: tac
+  role: primate
+  start: '1991'
+  end: '2002'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Ele se tornou o primeiro Primaz da TAC, cargo que exerceu até 2002.
+    page: '79'
+- jurisdiction: tac
+  role: founder
+  start: '1991'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: culminando na fundação da Traditional Anglican Communion (TAC) em 1991.
+    page: '79'

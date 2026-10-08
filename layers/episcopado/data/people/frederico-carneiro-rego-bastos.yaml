@@ -3,7 +3,9 @@ id: frederico-carneiro-rego-bastos
 name: Frederico Carneiro Rêgo Bastos
 full_name: Frederico Carneiro Rêgo Bastos
 aliases:
+- Dom Fred
 - Dom Frederico Bastos
+- Frederico Bastos
 biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
 sources:
 - source: ptwiki-iecb
@@ -12,6 +14,7 @@ ordinations:
 - order: episcopate
   date: '2007-04-14'
   jurisdiction: iecb
+  office: diocesan
   principal_consecrator: randolph-austin-adler
   status: confirmed
   sources:
@@ -21,9 +24,15 @@ ordinations:
     quote: '|55||14 April 2007||1||Frederico Carreiro Rego Bastos||Bp. Vitória, Brazil||'
   - source: costa-2021-tese
     quote: e Frederico Carneiro Rêgo Bastos (Diocesano de Vitória de Santo Antão)
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 14 de abril de 2007 foram sagrados novos bispos para a denominação: Alexandre Barbosa Monteiro Ximenes
+      (Diocesano do Litoral Sul e Estado de Alagoas), Frederico Carneiro Rêgo Bastos (Diocesano de Vitória de Santo
+      Antão)
+    page: '55'
   notes: >-
     Lista da ICCEC (Wikipédia EN) dá como sagrante o nº 1, Austin Randolph Adler (patriarca da ICCEC). A Wikipédia
-    PT dá a mesma data. Sucessão: ICCEC.
+    PT dá a mesma data. Sucessão: ICCEC. Sagrantes não nomeados.
 affiliations:
 - jurisdiction: iecb
   role: bishop
@@ -34,6 +43,28 @@ affiliations:
   - source: ptwiki-iecb
     quote: e Frederico Carneiro Rêgo Bastos, da Diocese de Vitória de Santo Antão
   notes: 1º bispo diocesano de Vitória de Santo Antão (2007-2025); bispo coadjutor do Recife (2025-)
+- jurisdiction: iecb
+  role: diocesan_bishop
+  diocese: iab-diocese-vitoria
+  start: '2007-04-14'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Frederico Carneiro Rêgo Bastos (Diocesano de Vitória de Santo Antão)
+    page: '55'
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  end: '2002'
+  end_reason: left
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após a saída de Paulo Garcia da IEAB, Frederico seguiu junto com o deão e foi transferido para Vitória de
+      Santo Antão.
+    page: '56'
+  notes: 'Local: Paróquia Anglicana Jardim das Oliveiras.'
 events:
 - type: other
   date: '2002'
@@ -47,3 +78,26 @@ events:
       Primeiro aconteceu a saída do rev. Paulo Garcia, acompanhado dos reverendos Célio Spineli, Edgar Ferreira
       e Frederico Bastos, que ficaram na posse do templo da Catedral Episcopal Anglicana, na Rua Carneiro Vilela,
       e as missões Bem-Aventuranças e Pedra Viva.
+- type: other
+  date: '2024'
+  description: >-
+    Paulo Garcia anuncia a escolha do bispo Frederico Bastos para sucedê-lo na primazia e na liderança plena da
+    IECB, assumindo a Catedral da Trindade.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em 2024, dom Paulo Garcia anunciou a escolha do bispo Frederico Bastos para sucedê-lo na primazia da Igreja
+      e na liderança plena da IECB, passando a assumir a Catedral da Trindade.
+    page: '63'
+- type: other
+  date: null
+  description: >-
+    Frederico Bastos é ordenado na Catedral da Santíssima Trindade (Recife) por Robinson Cavalcanti (ordem não especificada).
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O então reverendo Frederico Bastos iniciou a sua caminhada, junto com a sua família na Catedral da Santíssima
+      Trindade, sendo ordenado neste templo, por dom Robinson Cavalcanti.
+    page: '56'

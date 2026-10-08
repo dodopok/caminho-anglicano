@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: hiago-de-barros-pereira
+name: Hiago de Barros Pereira
+aliases:
+- Hiago de Barros
+biography: >-
+  Reverendo da Igreja Anglicana Tradicional do Brasil; assiste o bispo Cristiano Alves na Diocese Anglo-Católica
+  Cristo Bom Pastor (Rio de Janeiro).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Junto a dom Cristiano, assiste os reverendos Marcus Mendes e Hiago de Barros.
+  page: '136'
+affiliations:
+- jurisdiction: iatb
+  role: clergy
+  diocese: dacbp
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Junto a dom Cristiano, assiste os reverendos Marcus Mendes e Hiago de Barros.
+    page: '136'
+  notes: 'Local: Rio de Janeiro.'

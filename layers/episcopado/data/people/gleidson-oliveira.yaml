@@ -1,14 +1,120 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: gleidson-oliveira
 name: Gleidson Oliveira
+aliases:
+- Gleydson
+- Gleydson Oliveira
+- bispo Gleydson
+- dom Gleydson
 biography: Bispo missionário da IARB (Câmara dos Bispos), segundo a Wikipédia.
 sources:
 - source: ptwiki-iarb
   quote: Gleidson Oliveira - Bispo missionário.
+ordinations:
+- order: episcopate
+  date: '2017-04-10'
+  place: Convento de Nossa Senhora da Conceição, Olinda (PE)
+  jurisdiction: ieb-losasi
+  office: diocesan
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 10 de abril de 2017, com a participação de outros cinco bispos, Gleydson foi sagrado como Bispo Diocesano
+      para o Estado de Pernambuco, com cerimônia realizada em uma das salas do Convento de Nossa Senhora da Conceição,
+      em Olinda.
+    page: '165'
+  notes: >-
+    'com a participação de outros cinco bispos', não nomeados. A data é anterior à organização jurídica da igreja
+    (13/11/2017).
 affiliations:
+- jurisdiction: ieb-losasi
+  role: diocesan_bishop
+  diocese: estado-de-pernambuco
+  start: '2017-04-10'
+  end: '2019'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 10 de abril de 2017, com a participação de outros cinco bispos, Gleydson foi sagrado como Bispo Diocesano
+      para o Estado de Pernambuco, com cerimônia realizada em uma das salas do Convento de Nossa Senhora da Conceição,
+      em Olinda.
+    page: '165'
+  - source: cant-novas-igrejas-2024
+    quote: Em 2019, o mesmo rompeu com o bispo Rosimael Losasi, fundador da Igreja Episcopal do Brasil.
+    page: '169'
+- jurisdiction: iesa
+  role: founder
+  start: '2019'
+  end: '2022'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A origem da Igreja Episcopal Sul Americana está na figura do então bispo Igreja Episcopal do Brasil, Gleydson
+      Oliveira. Em 2019, o mesmo rompeu com o bispo Rosimael Losasi, fundador da Igreja Episcopal do Brasil.
+    page: '169'
+- jurisdiction: iesa
+  role: bishop
+  start: '2019'
+  end: '2022'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A origem da Igreja Episcopal Sul Americana está na figura do então bispo Igreja Episcopal do Brasil, Gleydson
+      Oliveira. Em 2019, o mesmo rompeu com o bispo Rosimael Losasi, fundador da Igreja Episcopal do Brasil.
+    page: '169'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2020, foi lançado um projeto e campanha de construção do Templo Nacional da Igreja Episcopal Sul Americana,
+      idealizado por Gleydson para a cidade de Camaragibe (PE)
+    page: '169'
+  notes: Fim = extinção (Apêndice 1).
 - jurisdiction: iarb
   role: bishop
   status: probable
   sources:
   - source: ptwiki-iarb
     quote: Gleidson Oliveira - Bispo missionário.
+events:
+- type: other
+  date: '2017-02-06'
+  description: Igreja Episcopal do Brasil (Losasi) celebra missa em visita a Riacho da Cruz (RN)
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      é possível ver que a Igreja chegou a celebrar missa em 06 de fevereiro de 2017, em uma visita no município
+      de Riacho da Cruz, interior do Rio Grande do Norte
+    page: '165'
+- type: other
+  date: '2020-08-03'
+  description: >-
+    Inauguração da Paróquia da Redenção, em Caruaru (bairro Nossa Senhora das Dores), sede da Igreja Episcopal Sul-Americana,
+    com dom Gleydson e clérigos de igrejas anglicanas e vétero-católicas
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 03 de agosto de 2020 ocorreu a inauguração da Paróquia da Redenção, no bairro nossa Senhora das Dores em
+      Caruaru, com a presença de dom Gleydson
+    page: '169'
+- type: other
+  date: 2022-06
+  description: >-
+    Gleidson Oliveira, após contato com a Igreja Anglicana Reformada do Brasil, participa de celebrações com o primaz
+    da IARB, Diógenes Monteiro, em Santa Cruz do Capibaribe
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A atuação do bispo Gleydson na região o levou a entrar em contato com a Igreja Anglicana Reformada do Brasil.
+    page: '169'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      perceber a presença de Gleydson participando de celebrações junto com o bispo e primaz da IARB, dom Diógenes
+      Monteiro, na sede da Igreja em Santa Cruz do Capibaribe.
+    page: '169'

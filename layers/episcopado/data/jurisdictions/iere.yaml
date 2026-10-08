@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iere
+acronym: IERE
+name: Igreja Espanhola Reformada Episcopal
+type: national_church
+country: ES
+description: Igreja ligada à Comunhão Anglicana na Espanha.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Igreja Espanhola Reformada Episcopal, ligada à Comunhão Anglicana na Espanha
+  page: '133'

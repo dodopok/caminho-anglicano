@@ -1,7 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: martorelli-dantas-da-silva
 name: Martorelli Dantas da Silva
+aliases:
+- Martorelli Dantas
+biography: Reverendo que auxiliava Alexandre Ximenes na Paróquia/Catedral da Reconciliação (IECB).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Ximenes era auxiliado pelos reverendos Caio Fábio e Martorelli Dantas.
+  page: '55'
 affiliations:
+- jurisdiction: ieab-dar
+  role: clergy
+  start: '2017'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: sob o pastoreio do bispo Filadelfo Oliveira e o reverendo Martorelli Dantas.
+    page: '112'
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -18,6 +33,14 @@ affiliations:
     quote: Revdo. Martorelli Dantas da Silva
   notes: >-
     Ordens de origem não informadas na fonte. Listado no clero diocesano da DAR (página consultada em 2026-10).
+- jurisdiction: iecb
+  role: clergy
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: À época, Ximenes era auxiliado pelos reverendos Caio Fábio e Martorelli Dantas.
+    page: '55'
+  notes: 'Local: Paróquia da Reconciliação.'
 events:
 - type: other
   date: '2023-06-04'

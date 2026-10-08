@@ -4,6 +4,7 @@ name: Francisco Rubem da Silva
 full_name: Francisco Rubem da Silva
 aliases:
 - Dom Francisco Silva
+- Francisco Rubem
 biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
 sources:
 - source: ptwiki-iecb
@@ -12,13 +13,22 @@ ordinations:
 - order: episcopate
   date: '2022'
   jurisdiction: iecb
+  office: diocesan
   status: probable
   sources:
   - source: ptwiki-iecb
     quote: Francisco Rubem da Silva (2022)
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Francisco Rubem da Silva (Diocesano de Olinda); Jorge Siqueira (Missionário da Agência Internacional de Desenvolvimento
+      - AID), Sérgio Presta (Missionário para São Paulo) e Tony Belo (Diocesano de Petrolina), em 13 de outubro
+      de 2022
+    page: '57'
   notes: >-
     Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
-    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso.
+    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso. Data ambígua na lista do livro: possivelmente 13/10/2022
+    (mesma data de Jorge Siqueira, Sérgio Presta e Tony Belo) — o ponto e vírgula após o nome deixa dúvida. Sagrantes
+    não nomeados.
 affiliations:
 - jurisdiction: iecb
   role: diocesan_bishop
@@ -30,6 +40,9 @@ affiliations:
     quote: >-
       o reverendo Francisco Rubem da Silva foi eleito para ser o bispo para a Diocese de Olinda, que será criada
       no início de 2022
+  - source: cant-novas-igrejas-2024
+    quote: Francisco Rubem da Silva (Diocesano de Olinda)
+    page: '57'
   notes: Data da eleição; sagração em 2022 (Wikipédia PT).
 - jurisdiction: iecb
   role: bishop

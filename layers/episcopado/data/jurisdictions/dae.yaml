@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: dae
+acronym: DAE
+name: Diocese Anglicana de Esmeraldas
+type: diocese
+country: BR
+founded:
+  date: '2010'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O estabelecimento da DAC se deu a partir da chamada Diocese Anglicana de Esmeraldas, organizada em 2010, em
+      Minas Gerais.
+    page: '101'
+description: Diocese organizada em 2010 em Minas Gerais, origem da Diocese Anglicana Católica do Brasil.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    O estabelecimento da DAC se deu a partir da chamada Diocese Anglicana de Esmeraldas, organizada em 2010, em
+    Minas Gerais.
+  page: '101'

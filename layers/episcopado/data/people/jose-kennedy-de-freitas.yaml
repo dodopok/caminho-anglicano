@@ -1,6 +1,27 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jose-kennedy-de-freitas
 name: José Kennedy de Freitas
+aliases:
+- José Kennedy
+- dom José Kennedy
+death:
+  date: '2021'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Entre os bispos ordenados por James estavam: Dom José Kennedy de Freitas, organizador da Igreja Anglicana
+      de Confissão Continuante; Dom Marcos Mattos, nomeado bispo da Diocese Anglicana Continuante do Rio de Janeiro
+      (falecido prematuramente, antes da consolidação da diocese); Dom Albertino de Sousa Barreiros, da Diocese
+      Anglicana do Natal; Dom Claudinei Rodrigo Ferreira, da Diocese Anglicana de Santa Catarina; Dom Itabira Jonas,
+      da Diocese Anglicana de São Paulo e Paraná; Dom Francisco de Assis Coelho e Pinho, bispo eleito e delegado
+      episcopal da Pró-Diocese Anglicana do Amazonas; e dom José Barbosa da Silva, da Diocese Anglicana de Portugal,
+      na União Europeia.
+    page: '157'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo José Kennedy faleceu em 2021, encerrando junto com a sua caminhada neste mundo, a caminhada de sua
+      Igreja.
+    page: '157'
 biography: >-
   Bispo continuante na linha de James Roque; organizador da Igreja Anglicana Continuante do Brasil, onde permaneceu
   como bispo coadjutor.
@@ -11,7 +32,7 @@ ordinations:
 - order: episcopate
   date: '2012-11-10'
   place: Igreja Pentecostal Caminho da Fé, Belford Roxo (RJ)
-  jurisdiction: null
+  jurisdiction: oafip
   principal_consecrator: elias-batista-nogueira
   co_consecrators:
   - jose-demontier
@@ -26,9 +47,52 @@ ordinations:
       IGREJAS ANGLICANAS E EPISCOPAIS NO BRASIL Belford Roxo – Rio de Janeiro - Brasil, tendo Como Sagrante Principal
       Sua Exª Mons. Elias Batista Nogueira e como co-sagrantes: Sua Exª Bispo Josué Souza Torres e Sua Exª Bispo
       José Demontier
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Sob a Presidência de seu Venerável Irmão Elias Batista Nogueira se aprovou fazer pela OAFIP a Sagração Episcopal
+      dos seguintes postulantes: Eliane Helena da Silva Nogueira, Reinaldo da Silva Tavares, José Aparecido Marques,
+      José Kennedy de Freitas e Elcemir Durans Mendonça, a realizar-se no dia 10 de Novembro de 2012 na Igreja Pentecostal
+      Caminho da Fé
+    page: '145'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      tendo Como Sagrante Principal Sua Exª Mons. Elias Batista Nogueira e como co-sagrantes: Sua Exª Bispo Josué
+      Souza Torres e Sua Exª Bispo José Demontier
+    page: '146'
   notes: >-
     Costa (2024) transcreve a convocação da Província Brasileira de Confissão Anglicana (10/11/2012); é a previsão
-    do ato, não um relato da cerimônia.
+    do ato, não um relato da cerimônia. O documento citado (Província Brasileira de Confissão Anglicana, 10/11/2012)
+    é a aprovação da sagração 'a realizar-se' nessa data; o livro não confirma explicitamente a realização.
+- order: episcopate
+  date: null
+  jurisdiction: null
+  principal_consecrator: james-antonio-roque
+  mode: conditional
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Como seus primeiros atos litúrgicos episcopais, o bispo James Roque, ordenou outros clérigos ao episcopado,
+      a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino de Sousa Barreiros, Claudinei Rodrigo Ferreira,
+      Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa da Silva.
+    page: '76'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Entre os bispos ordenados por James estavam: Dom José Kennedy de Freitas, organizador da Igreja Anglicana
+      de Confissão Continuante; Dom Marcos Mattos, nomeado bispo da Diocese Anglicana Continuante do Rio de Janeiro
+      (falecido prematuramente, antes da consolidação da diocese); Dom Albertino de Sousa Barreiros, da Diocese
+      Anglicana do Natal; Dom Claudinei Rodrigo Ferreira, da Diocese Anglicana de Santa Catarina; Dom Itabira Jonas,
+      da Diocese Anglicana de São Paulo e Paraná; Dom Francisco de Assis Coelho e Pinho, bispo eleito e delegado
+      episcopal da Pró-Diocese Anglicana do Amazonas; e dom José Barbosa da Silva, da Diocese Anglicana de Portugal,
+      na União Europeia.
+    page: '157'
+  notes: >-
+    Data não informada; entre os 'primeiros atos' episcopais de James Roque (após 2013), no contexto da Diocese
+    Anglicana do Japi. Kennedy já tinha sido sagrado em 10/11/2012 na OAFIP (Elias Batista Nogueira). Esta segunda
+    sagração, por James Roque (sagrado em 2013), está registrada como condicional por presunção: o livro só diz
+    que Roque o "ordenou ao episcopado", sem data. Data e local não informados. Kennedy já tinha sido sagrado em
+    10/11/2012 na OAFIP (Elias Batista Nogueira). Esta segunda sagração, por James Roque (sagrado em 2013), está
+    registrada como condicional por presunção: o livro só diz que Roque o "ordenou ao episcopado", sem data.
 affiliations:
 - jurisdiction: iacb
   role: founder
@@ -36,6 +100,40 @@ affiliations:
   sources:
   - source: iacc-continuante
     quote: dom †José Kennedy de Freitas, organizador da Igreja Anglicana Continuante do Brasil
+- jurisdiction: iacc
+  role: founder
+  end: '2021'
+  end_reason: death
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Entre os bispos ordenados por James estavam: Dom José Kennedy de Freitas, organizador da Igreja Anglicana
+      de Confissão Continuante; Dom Marcos Mattos, nomeado bispo da Diocese Anglicana Continuante do Rio de Janeiro
+      (falecido prematuramente, antes da consolidação da diocese); Dom Albertino de Sousa Barreiros, da Diocese
+      Anglicana do Natal; Dom Claudinei Rodrigo Ferreira, da Diocese Anglicana de Santa Catarina; Dom Itabira Jonas,
+      da Diocese Anglicana de São Paulo e Paraná; Dom Francisco de Assis Coelho e Pinho, bispo eleito e delegado
+      episcopal da Pró-Diocese Anglicana do Amazonas; e dom José Barbosa da Silva, da Diocese Anglicana de Portugal,
+      na União Europeia.
+    page: '157'
+  notes: '''organizador da Igreja Anglicana de Confissão Continuante''.'
+- jurisdiction: iacc
+  role: other
+  role_description: bispo coadjutor
+  end: '2021'
+  end_reason: death
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Na IACC, um dos primeiros atos de dom José Kennedy foi a sagração de Genival Martins de Oliveira, eleito como
+      o primeiro bispo primaz da Igreja, enquanto dom José Kennedy permaneceria como coadjutor.
+    page: '157'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo José Kennedy faleceu em 2021, encerrando junto com a sua caminhada neste mundo, a caminhada de sua
+      Igreja.
+    page: '157'
 events:
 - type: other
   date: null
@@ -61,3 +159,28 @@ events:
       Anos mais tarde, a Diocese Anglicana do Japí foi extinta e estes novos bispos seguiram caminhos distintos,
       fundando Igrejas Anglicanas Independentes, sem vínculos com alguma instância associativa, nem com o Movimento
       Continuante.
+- type: other
+  date: null
+  description: >-
+    José Kennedy de Freitas propõe uma 'rota convergente' entre as jurisdições do Movimento Contínuo no Brasil (autonomia
+    pastoral com unidade perante outras denominações); a proposta não vingou
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Por sugestão do próprio Dom José Kennedy de Freitas, foi apresentada a proposta de uma rota convergente entre
+      as diversas jurisdições do Movimento Contínuo no Brasil.
+    page: '157'
+  - source: cant-novas-igrejas-2024
+    quote: Porém, essa proposta não vingou e continua em debate entre os bispos
+    page: '157'
+- type: death
+  date: '2021'
+  description: Extinção da IACC com a morte de José Kennedy de Freitas
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo José Kennedy faleceu em 2021, encerrando junto com a sua caminhada neste mundo, a caminhada de sua
+      Igreja.
+    page: '157'

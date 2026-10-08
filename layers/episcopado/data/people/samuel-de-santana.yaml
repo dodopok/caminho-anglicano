@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: samuel-de-santana
+name: Samuel de Santana
+biography: Ordenado presbítero da Igreja Anglicana Mundial no Brasil em 14/07/2024, para atuar no Recife.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    No dia seguinte, 14 de julho, Samuel de Santana foi ordenado presbítero, passando a exercer plenamente o ministério
+    sacerdotal em Recife
+  page: '128'
+ordinations:
+- order: presbyterate
+  date: '2024-07-14'
+  place: Imbituba (SC)
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia seguinte, 14 de julho, Samuel de Santana foi ordenado presbítero, passando a exercer plenamente o ministério
+      sacerdotal em Recife
+    page: '128'
+  notes: Durante o Sínodo Provincial; o livro não nomeia o ordenante.

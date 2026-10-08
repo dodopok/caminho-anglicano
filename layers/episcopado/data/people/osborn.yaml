@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: osborn
+name: Osborn
+biography: >-
+  Reverendo, reitor da Paróquia São Lucas (Rio de Janeiro) no período em que ela partilhava o templo da Christ Church.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: teve como reitores os reverendos Osborn
+  page: '100'
+affiliations:
+- jurisdiction: ieab-darj
+  role: other
+  role_description: reitor
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Durante o período de partilha com a Christ Church, a São Lucas teve como reitores os reverendos Osborn
+    page: '100'
+  notes: >-
+    Reitor da Paróquia São Lucas (então missão/paróquia da Igreja Episcopal, hoje DARJ); o livro não dá datas nem
+    o nome completo.

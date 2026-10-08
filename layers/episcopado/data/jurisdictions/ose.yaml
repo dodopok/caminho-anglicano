@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ose
+acronym: OSE
+name: Ordem de Santo Estêvão
+type: religious_order
+country: BR
+founded:
+  date: '1985'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Fundada em 1985, por clérigos da Diocese Anglicana do Recife da IEAB, tinha como principal articulador e difusor,
+      o bispo Robinson Cavalcanti.
+    page: '28'
+description: >-
+  Ordem religiosa anglicana fundada em 1985 por clérigos da Diocese Anglicana do Recife (IEAB), tendo Robinson Cavalcanti
+  como principal articulador.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Fundada em 1985, por clérigos da Diocese Anglicana do Recife da IEAB, tinha como principal articulador e difusor,
+    o bispo Robinson Cavalcanti.
+  page: '28'

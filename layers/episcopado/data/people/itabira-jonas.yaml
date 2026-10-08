@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: itabira-jonas
 name: Itabira Jonas
+aliases:
+- Dom Itabira
 biography: >-
   Bispo ordinário da Diocese Anglicana de São Paulo e Paraná (TAC); recebido no anglicanismo em 1997, diácono e
   padre no Movimento Anglicano Continuante, sagrado bispo em 11/1/2018.
@@ -16,6 +18,22 @@ ordinations:
   principal_consecrator: james-antonio-roque
   status: contested
   sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Entre os bispos ordenados por James estavam: Dom José Kennedy de Freitas, organizador da Igreja Anglicana
+      de Confissão Continuante; Dom Marcos Mattos, nomeado bispo da Diocese Anglicana Continuante do Rio de Janeiro
+      (falecido prematuramente, antes da consolidação da diocese); Dom Albertino de Sousa Barreiros, da Diocese
+      Anglicana do Natal; Dom Claudinei Rodrigo Ferreira, da Diocese Anglicana de Santa Catarina; Dom Itabira Jonas,
+      da Diocese Anglicana de São Paulo e Paraná; Dom Francisco de Assis Coelho e Pinho, bispo eleito e delegado
+      episcopal da Pró-Diocese Anglicana do Amazonas; e dom José Barbosa da Silva, da Diocese Anglicana de Portugal,
+      na União Europeia.
+    page: '157'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Como seus primeiros atos litúrgicos episcopais, o bispo James Roque, ordenou outros clérigos ao episcopado,
+      a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino de Sousa Barreiros, Claudinei Rodrigo Ferreira,
+      Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa da Silva.
+    page: '76'
   - source: tac-sppr-diocese
     quote: >-
       e foi Sagrado Bispo em 11 de janeiro de 2018.  É um dos 2 Bispos da Igreja Anglicana Tradicional – TAC no
@@ -35,15 +53,17 @@ ordinations:
         de Sousa Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José
         Barbosa da Silva.
   notes: >-
-    Sagrantes não informados. O site da IACC lista Itabira Jonas entre os bispos que receberam a 'linhagem episcopal'
-    de James Roque (sucessão declarada: Cruz-Blanco → Roque). Em 2018 ainda não era TAC (as dioceses brasileiras
-    foram recebidas na TAC em 2025); jurisdição na data provavelmente IACC. Costa (2021) e o site da IACC dizem
-    que James Roque 'ordenou' estes bispos. Para Itabira Jonas, a data de 11/1/2018 vem do site da diocese (registro
-    separado); para Barreiros, c. 2019. Pode tratar-se do mesmo evento já registrado.
+    'da Diocese Anglicana de São Paulo e Paraná'. Data não informada. Data não informada; entre os 'primeiros atos'
+    episcopais de James Roque (após 2013), no contexto da Diocese Anglicana do Japi. Sagrantes não informados. O
+    site da IACC lista Itabira Jonas entre os bispos que receberam a 'linhagem episcopal' de James Roque (sucessão
+    declarada: Cruz-Blanco → Roque). Em 2018 ainda não era TAC (as dioceses brasileiras foram recebidas na TAC em
+    2025); jurisdição na data provavelmente IACC. Costa (2021) e o site da IACC dizem que James Roque 'ordenou'
+    estes bispos. Para Itabira Jonas, a data de 11/1/2018 vem do site da diocese (registro separado); para Barreiros,
+    c. 2019. Pode tratar-se do mesmo evento já registrado.
 affiliations:
 - jurisdiction: tac
   role: diocesan_bishop
-  diocese: diocese-anglicana-de-sao-paulo-e-parana
+  diocese: tac-sppr
   status: confirmed
   sources:
   - source: tac-londrina-home
@@ -52,12 +72,30 @@ affiliations:
     quote: 'Bispo Diocesano: Dom Itabira Jonas'
 - jurisdiction: iacc
   role: diocesan_bishop
-  diocese: diocese-anglicana-de-sao-paulo-e-parana
+  diocese: tac-sppr
   status: probable
   sources:
   - source: iacc-continuante
     quote: dom †Itabira Jonas, Bispo da Diocese Anglicana de São Paulo e Paraná
   notes: Página da IACC sem data.
+- jurisdiction: tac-sppr
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: o bispo dom Itabira, representando a Diocese de São Paulo e Paraná
+    page: '81'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Entre os bispos ordenados por James estavam: Dom José Kennedy de Freitas, organizador da Igreja Anglicana
+      de Confissão Continuante; Dom Marcos Mattos, nomeado bispo da Diocese Anglicana Continuante do Rio de Janeiro
+      (falecido prematuramente, antes da consolidação da diocese); Dom Albertino de Sousa Barreiros, da Diocese
+      Anglicana do Natal; Dom Claudinei Rodrigo Ferreira, da Diocese Anglicana de Santa Catarina; Dom Itabira Jonas,
+      da Diocese Anglicana de São Paulo e Paraná; Dom Francisco de Assis Coelho e Pinho, bispo eleito e delegado
+      episcopal da Pró-Diocese Anglicana do Amazonas; e dom José Barbosa da Silva, da Diocese Anglicana de Portugal,
+      na União Europeia.
+    page: '157'
+  notes: Representou a diocese no Sínodo Geral de maio de 2025.
 events:
 - type: other
   date: null

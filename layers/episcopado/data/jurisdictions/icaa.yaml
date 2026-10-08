@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: icaa
+acronym: ICAA
+name: Igreja Católica Apostólica Anglicana
+type: national_church
+country: BR
+founded:
+  date: '2025'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: No Facebook, é possível encontrar a criação da página 16 de março de 2025.
+    page: '140'
+description: >-
+  Igreja independente mais recente citada no livro (página no Facebook criada em 16/03/2025, sem CNPJ), originada
+  de dom Agostinho de Jesus (ex-ICA-Brasil, arcebispo primaz) e do reverendo Luciano Alves Campelo (Ilhéus, BA).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: No Facebook, é possível encontrar a criação da página 16 de março de 2025.
+  page: '140'

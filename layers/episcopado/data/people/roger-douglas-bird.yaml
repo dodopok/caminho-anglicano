@@ -4,16 +4,36 @@ name: Roger Douglas Bird
 full_name: Roger Douglas Bird
 aliases:
 - Dom Roger Bird
+- Roger Bird
+- bispo Roger
+- dom Roger
 birth:
   date: '1945-03-16'
   sources:
   - source: wp-pt-roger-bird
     quote: Roger Douglas Bird (São Paulo, 16 de março de 1945 – 13 de fevereiro de 2023)
+  - source: cant-novas-igrejas-2024
+    quote: O bispo Roger Douglas Bird nasceu na cidade de São Paulo em 16 de março de 1945
+    page: '96'
+  - source: cant-novas-igrejas-2024
+    quote: Em 13 de fevereiro de 2023 o bispo Roger Bird faleceu.
+    page: '96'
 death:
   date: '2023-02-13'
   sources:
   - source: wp-pt-roger-bird
     quote: Roger Douglas Bird (São Paulo, 16 de março de 1945 – 13 de fevereiro de 2023)
+  - source: cant-novas-igrejas-2024
+    quote: O bispo Roger Douglas Bird nasceu na cidade de São Paulo em 16 de março de 1945
+    page: '96'
+  - source: cant-novas-igrejas-2024
+    quote: Em 13 de fevereiro de 2023 o bispo Roger Bird faleceu.
+    page: '96'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 13 de fevereiro de 2023 o bispo Roger Bird faleceu.32 Em 17 de Fevereiro de 2024, foi inaugurada uma nova
+      creche
+    page: '96'
 wikidata: Q138963106
 biography: Quinto bispo de Sao Paulo (2007-2012); resignou e cofundou o Movimento Anglicano no Brasil.
 sources:
@@ -53,7 +73,7 @@ ordinations:
   - hiroshi-ito
   - nathan-baxter
   - naudal-gomes
-  status: confirmed
+  status: contested
   sources:
   - source: costa2021
     quote: >-
@@ -71,8 +91,23 @@ ordinations:
       da Diocese da Pensilvânia Central (EUA).
   - source: ec-2007-07
     quote: era 7 de Setembro
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Sagrado no dia 7 de setembro do mesmo ano, exerceu o episcopado na Diocese Anglicana de São Paulo (IEAB) até
+      2012, sucedendo o Bispo Hiroshi Ito.
+    page: '96'
+  discrepancies:
+  - field: jurisdiction
+    value: ieab-dasp
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Sagrado no dia 7 de setembro do mesmo ano, exerceu o episcopado na Diocese Anglicana de São Paulo (IEAB)
+        até 2012, sucedendo o Bispo Hiroshi Ito.
+      page: '96'
   notes: >-
     A Wikipedia PT cita o Estandarte Cristao jul-ago/2007 (fonte primaria, nao aberta aqui) para a lista de co-sagrantes.
+    Eleito no concílio extraordinário de 07/06/2007 em São Paulo; o livro não cita os sagrantes.
 affiliations:
 - jurisdiction: ieab
   role: bishop
@@ -98,6 +133,25 @@ affiliations:
       Em 21 de novembro de 2012, o então bispo Roger Bird apresentou sua carta de resignação do cargo de bispo da
       DASP
   notes: Depois uniu-se ao Movimento Anglicano no Brasil (fora da IEAB).
+- jurisdiction: ieab-dasp
+  role: diocesan_bishop
+  start: '2007-09-07'
+  end: '2012'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Sagrado no dia 7 de setembro do mesmo ano, exerceu o episcopado na Diocese Anglicana de São Paulo (IEAB) até
+      2012, sucedendo o Bispo Hiroshi Ito.
+    page: '96'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Era Deão da Igreja de São Paulo (Saint Paul's Church), quando foi eleito bispo, no concílio extraordinário
+      (da Igreja Episcopal Anglicana do Brasil - IEAB) de 7 de junho de 2007 em São Paulo.
+    page: '96'
+  notes: >-
+    Sucedeu Hiroshi Ito. O livro dá fim em 2012 na nota 32, mas no texto o chama 'então diocesano' no desligamento
+    de 06/04/2013.
 - jurisdiction: manb
   role: founder
   start: '2013'
@@ -116,6 +170,29 @@ affiliations:
   sources:
   - source: costa-2021-tese
     quote: Atualmente ela possui apenas um bispo, Roger Bird
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Os dois bispos passaram a exercer supervisão episcopal sobre o reverendo e a comunidade através do Movimento
+      Anglicano no Brasil.
+    page: '93'
+- jurisdiction: ieab-dasp
+  role: other
+  role_description: deao
+  end: '2007'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Era Deão da Igreja de São Paulo (Saint Paul's Church), quando foi eleito bispo
+    page: '96'
+- jurisdiction: danb
+  role: diocesan_bishop
+  end: '2023-02-13'
+  end_reason: death
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: enquanto o bispo Roger atuava como bispo diocesano.
+    page: '97'
 events:
 - type: other
   date: '2018-11-18'
@@ -143,3 +220,38 @@ events:
     quote: >-
       No dia 08/09/12 recebi a notícia que em Concílio da DASP o Rev. Flávio Irala havia sido eleito Bispo da mesma
       por 19 a 18 votos na ordem leiga e 15 a 13 votos na ordem clerical.
+- type: other
+  date: '2013'
+  description: >-
+    47º Concílio da Diocese Anglicana de São Paulo (2013): Flávio Augusto Borges Irala eleito sexto bispo diocesano
+    (19 a 18 votos na ordem leiga e 15 a 13 na clerical) contra Francisco Cézar Fernandes Alves (apoiado pela Catedral);
+    o bispo Roger Douglas Bird considerou a eleição irregular e declarou o cancelamento do Concílio.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A comunidade da Catedral – liderada pelo reverendo Aldo Quintão –, apoiava a candidatura do reverendo Francisco
+      Cézar Fernandes Alves, e os demais delegados conciliares, a candidatura do reverendo Flávio Augusto Borges
+      Irala.
+    page: '93'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a eleição foi considera irregular pelo bispo Roger Douglas Bird 30, declarando o cancelamento do Concílio.
+    page: '93'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Durante o 47º Concílio da DASP o reverendo Flávio Irala foi eleito bispo desta diocese por 19 a 18 votos na
+      ordem leiga e 15 a 13 votos na ordem clerical.
+    page: '93'
+- type: death
+  date: '2023-02-13'
+  description: >-
+    Falecimento do bispo Roger Douglas Bird; em 17/02/2024 uma nova creche da rede administrada por Aldo Quintão
+    recebeu seu nome.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 13 de fevereiro de 2023 o bispo Roger Bird faleceu.32 Em 17 de Fevereiro de 2024, foi inaugurada uma nova
+      creche
+    page: '96'

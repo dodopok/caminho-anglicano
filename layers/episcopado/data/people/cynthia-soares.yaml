@@ -3,7 +3,13 @@ id: cynthia-soares
 name: Cynthia Muniz Soares
 full_name: Cynthia Muniz Soares
 aliases:
+- Cynthia Muniz
 - Cynthia Soares
+biography: Reverenda da Rede Episcopal Brasileira (o livro a chama 'Cynthia Muniz').
+sources:
+- source: cant-novas-igrejas-2024
+  quote: dos reverendos Jaime Sepulcro Jr., Douglas Araújo e Cynthia Muniz
+  page: '151'
 ordinations:
 - order: diaconate
   date: '2025-03-09'
@@ -69,8 +75,22 @@ affiliations:
 - jurisdiction: reb
   role: clergy
   start: '2026'
-  status: probable
+  status: contested
   sources:
   - source: reb-estrutura
     quote: Revda. Cynthia Muniz
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Seus clérigos têm um perfil jovem e boa formação teológica, a exemplo dos reverendos Jaime Sepulcro Jr., Douglas
+      Araújo e Cynthia Muniz.
+    page: '151'
   notes: Mulher ordenada na REB (data não encontrada).
+  discrepancies:
+  - field: start
+    value: 2024-12
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Seus clérigos têm um perfil jovem e boa formação teológica, a exemplo dos reverendos Jaime Sepulcro Jr.,
+        Douglas Araújo e Cynthia Muniz.
+      page: '151'

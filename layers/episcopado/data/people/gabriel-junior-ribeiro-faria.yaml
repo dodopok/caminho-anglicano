@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: gabriel-junior-ribeiro-faria
+name: Gabriel Júnior Ribeiro Faria
+aliases:
+- Dom Gabriel Junior Faria
+- Gabriel Junior Faria
+biography: >-
+  Diácono ordenado na ICAB por Paulo César Telles Mendizabal; incardinado como diácono na Igreja Ortodoxa Hispânica
+  (13/05/2009); hoje bispo anglo-católico responsável pela Igreja Católica Apostólica Anglicana Carioca.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: sendo o responsável por essa denominação o bispo Gabriel Júnior Ribeiro Faria
+  page: '141'
+ordinations:
+- order: diaconate
+  date: null
+  jurisdiction: icab
+  ordained_by: paulo-cesar-telles-mendizabal
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O reverendo Gabriel foi ordenado diácono na Igreja Católica Apostólica Brasileira, pelo bispo de Niterói (RJ),
+      dom Paulo César telles Mendizabal, da ICAB.
+    page: '141'
+  notes: Data não informada (antes de 2009).
+affiliations:
+- jurisdiction: ioh
+  role: clergy
+  start: '2009-05-13'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: O clérigo foi incardinado como diácono na Igreja Ortodoxa Hispânica, em 13 de maio de 2009.
+    page: '141'
+- jurisdiction: icaac
+  role: bishop
+  start: '2012-07-03'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: sendo o responsável por essa denominação o bispo Gabriel Júnior Ribeiro Faria
+    page: '141'
+  notes: O livro não informa quando nem por quem foi sagrado bispo.

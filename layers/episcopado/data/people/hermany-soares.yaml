@@ -9,6 +9,7 @@ aliases:
 - Hermany Soares+
 - Rev. Hermany Soares
 - Revmo. Hermany Soares
+- bispo Hermany Soares
 biography: >-
   Presbítero; em 2006 ligado à Igreja Anglicana Ortodoxa do Brasil (IAOB), depois secretário administrativo da Diocese
   do Recife (2009) e clérigo da Diocese de Recife da IAB (2019). Um site paroquial da IAOB o chama de "nosso Primaz
@@ -18,6 +19,16 @@ sources:
   quote: Hermany Silva Soares
 - source: betesda-2009-10
   quote: secretário administrativo da diocese, Rev. Hermany Soares
+ordinations:
+- order: episcopate
+  date: '2007'
+  jurisdiction: iaob
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Hermany havia sido sagrado bispo pela Igreja Anglicana Ortodoxa do Brasil, em 2007.
+    page: '150'
+  notes: O livro não nomeia os sagrantes.
 affiliations:
 - jurisdiction: iaob
   role: clergy
@@ -28,14 +39,38 @@ affiliations:
   sources:
   - source: ultimato-manifesto-2006
     quote: Rev. Hermany Soares+ (Paróquia Cristo Redentor)
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Igreja Anglicana Ortodoxa do Brasil (IAOB), pelos reverendos Hermany Soares, Adriano Oliveira, Flávio Conti
+      e Virgílio Torres
+    page: '118'
   - source: blog-josue-2006-11
     quote: >-
       Igreja Anglicana Ortodoxa – IAO (Comunhão Anglicana Ortodoxa): Rev. Hermany Soares, Rev. Adriano Oliveira
   - source: blog-joaodeca-2007-05
     quote: Rev. Hermany Soares+ (Paróquia Cristo Redentor)
   notes: >-
-    Signatário (30/11/2006) pela IAOB – Distrito Missionário. Local: Paróquia Cristo Redentor. Em nov/2006 e mai/2007
-    é listado como "Rev." da IAO/IAOB (duas fontes independentes). Ver vínculo como bispo abaixo.
+    Signatário (30/11/2006) pela IAOB – Distrito Missionário. Reverendo signatário da Declaração da Boa Viagem (2006)
+    pela IAOB. Local: Paróquia Cristo Redentor. Em nov/2006 e mai/2007 é listado como "Rev." da IAO/IAOB (duas fontes
+    independentes). Ver vínculo como bispo abaixo.
+- jurisdiction: iaob
+  role: bishop
+  start: '2007'
+  end: '2007-12-28'
+  end_reason: resignation
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Porém, este clérigo renunciou ao episcopado para exercer o ministério presbiteral na então Igreja Anglicana
+      – Diocese do Recife (IA-DR)
+    page: '150'
+  - source: fandom-iaob
+    quote: por decisão de seu então bispo Hermany Soares, o qual no mesmo ato renunciou ao episcopado.
+  notes: >-
+    Renunciou ao episcopado (data não informada). Fonte única terciária (wiki Fandom, revisão única criada em 31/12/2007
+    pelo usuário "Anglicanalivre", sem referências). Quando e por quem foi sagrado: NÃO encontrado. Contradiz em
+    parte as listas de nov/2006 e mai/2007 que o chamam de "Rev." – ver duvidas.
 - jurisdiction: iacs
   role: clergy
   diocese: diocese-anglicana-recife
@@ -105,6 +140,37 @@ affiliations:
     Publica no site da IAB como "Rev." de 2018 a mar/2020. Data e motivo da saída da IAB NÃO encontrados (fim desconhecido;
     antes de mar/2024, quando já aparece como bispo da IEUB em snippet de busca).
 - jurisdiction: ieub
+  role: founder
+  start: '2023'
+  status: probable
+  sources:
+  - source: yt-iaob2000
+    quote: '"vanityChannelUrl":"http://www.youtube.com/@episcopalunida"'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em 2023, com o surgimento da Igreja Episcopal Unida do Brasil (IEUB), através do reverendo – hoje bispo –
+    page: '34'
+  notes: >-
+    Papel de fundador é a afirmação do usuário; nenhuma fonte aberta diz literalmente que Hermany fundou a IEUB.
+    Indício: o canal oficial da IEUB é o antigo canal "iaob2000" (IAOB, igreja que Hermany liderava), criado em
+    22/10/2007.
+- jurisdiction: ieub
+  role: bishop
+  start: '2023'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: elegendo o reverendo Hermany como seu bispo, porém, sem uma Catedral ainda definida.
+    page: '150'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      da Igreja Episcopal Unida do Brasil (IEUB), fundada como uma igreja independente e liderada pelo bispo Hermany
+      Soares
+    page: '174'
+  notes: >-
+    Eleito bispo da IEUB em 2023; o livro não menciona nova sagração (já havia sido sagrado em 2007 pela IAOB e
+    renunciado ao episcopado). Líder da IEUB; situação em 2025.
+- jurisdiction: ieub
   role: diocesan_bishop
   start: 2024-03
   status: probable
@@ -130,29 +196,42 @@ affiliations:
   notes: >-
     Texto sem data (cópia de 2015, antes da morte de Robinson em 2012). Não se encontrou registro de sagração episcopal
     de Hermany; "Dom Hermany" pode ser título dentro da IAOB. Identidade com Hermany Silva Soares provável.
-- jurisdiction: iaob
-  role: bishop
-  end: '2007-12-28'
-  end_reason: resignation
+- jurisdiction: iab
+  role: clergy
+  end: '2023'
+  end_reason: schism
   status: probable
   sources:
-  - source: fandom-iaob
-    quote: por decisão de seu então bispo Hermany Soares, o qual no mesmo ato renunciou ao episcopado.
-  notes: >-
-    Fonte única terciária (wiki Fandom, revisão única criada em 31/12/2007 pelo usuário "Anglicanalivre", sem referências).
-    Quando e por quem foi sagrado: NÃO encontrado. Contradiz em parte as listas de nov/2006 e mai/2007 que o chamam
-    de "Rev." – ver duvidas.
-- jurisdiction: ieub
-  role: founder
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      em 2023, com o surgimento da Igreja Episcopal Unida do Brasil (IEUB), através do reverendo – hoje bispo –
+    page: '34'
+  - source: cant-novas-igrejas-2024
+    quote: a saída de alguns clérigos da Igreja Anglicana no Brasil (IAB), como o reverendo Hermany Soares.
+    page: '150'
+- jurisdiction: dar-iacs
+  role: clergy
   status: probable
   sources:
-  - source: yt-iaob2000
-    quote: '"vanityChannelUrl":"http://www.youtube.com/@episcopalunida"'
-  notes: >-
-    Papel de fundador é a afirmação do usuário; nenhuma fonte aberta diz literalmente que Hermany fundou a IEUB.
-    Indício: o canal oficial da IEUB é o antigo canal "iaob2000" (IAOB, igreja que Hermany liderava), criado em
-    22/10/2007.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      renunciou ao episcopado para exercer o ministério presbiteral na então Igreja Anglicana – Diocese do Recife
+      (IA-DR), liderada por dom Robinson Cavalcanti
+    page: '150'
+  notes: Presbítero da IA-DR (depois IAB).
 events:
+- type: other
+  date: null
+  description: >-
+    Hermany Soares, como Alexandre Macedo Maia, ingressa na Igreja Anglicana – Diocese do Recife abrindo mão das
+    ordens episcopais (comparação feita pelo autor)
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Alexandre Macedo Maia foi convidado pelo mesmo para ingressar na Igreja Anglicana – Diocese do Recife, porém,
+      abrindo mão das ordens episcopais (à semelhança do que aconteceu com o bispo Hermany Soares).
+    page: '156'
 - type: resignation
   date: '2007-12-28'
   description: >-

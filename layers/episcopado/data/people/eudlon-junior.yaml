@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: eudlon-junior
+name: Eudlon Junior
+biography: >-
+  Reverendo que liderava com Rafael Mendes a Paróquia Cristo Rei (Diocese Anglicana de Anápolis, IATB).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Paróquia Cristo Rei, localizada nesta cidade, era liderada pelos reverendos Rafael Mendes e Eudlon Junior.
+  page: '105'
+affiliations:
+- jurisdiction: iatb
+  role: clergy
+  diocese: diocese-anglicana-de-anapolis
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Paróquia Cristo Rei, localizada nesta cidade, era liderada pelos reverendos Rafael Mendes e Eudlon Junior.
+    page: '105'
+  notes: 'Local: GO.'

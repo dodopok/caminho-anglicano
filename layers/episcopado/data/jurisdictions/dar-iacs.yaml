@@ -2,6 +2,9 @@
 id: dar-iacs
 acronym: DAR-IACS
 name: Igreja Anglicana - Diocese do Recife (dissidente, 2005)
+aliases:
+- Igreja Anglicana – Diocese do Recife
+- Igreja Anglicana – Diocese do Recife (IA-DR)
 type: diocese
 country: BR
 founded:
@@ -11,6 +14,60 @@ founded:
     quote: >-
       O grupo, fiel às posições de seu bispo, formou uma nova denominação, chamada de Igreja Anglicana no Brasil
       (IAB), atualmente uma Província da GAFCON/FCA.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Ele manteve-se como bispo junto à maioria das paróquias, criando uma nova jurisdição diocesana chamada Igreja
+      Anglicana – Diocese do Recife (IA-DR).
+    page: '26'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      passou a operar como uma Diocese Extra-Provincial, sob a supervisão primacial do bispo Gregory Venables, da
+      Igreja Anglicana do Cone Sul
+    page: '27'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 12 de marco de 2016, ocorreu uma assembleia na qual se deu a fundação legal da Igreja Anglicana – Diocese
+      do Recife, novo nome assumido pela denominação.
+    page: '31'
+  - source: cant-novas-igrejas-2024
+    quote: com o segundo cisma, promovido pelo próprio Robinson, em 2005
+    page: '111'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      quando esta estava sob a supervisão episcopal do bispo Gregory Venables, da Igreja Anglicana do Cone Sul,
+      tendo as suas ordens reconhecidas pela IA-DR.
+    page: '124'
+  - source: cant-novas-igrejas-2024
+    quote: Clero originário da IEAB, reorganizado como Diocese do Recife após o cisma [2005]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Realinhamento com o Sul Global, como diocese extra-provincial da Igreja Anglicana da América do Sul (com supervisão
+      episcopal do bispo Gregory Venables) [2005-2018]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No ano de 2005, essas divergências culminaram no rompimento da maioria das comunidades da Diocese com sua
+      Igreja Nacional
+    page: '173'
+dissolved:
+  date: '2018-05-12'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Ele manteve-se como bispo junto à maioria das paróquias, criando uma nova jurisdição diocesana chamada Igreja
+      Anglicana – Diocese do Recife (IA-DR).
+    page: '26'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      passou a operar como uma Diocese Extra-Provincial, sob a supervisão primacial do bispo Gregory Venables, da
+      Igreja Anglicana do Cone Sul
+    page: '27'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 12 de marco de 2016, ocorreu uma assembleia na qual se deu a fundação legal da Igreja Anglicana – Diocese
+      do Recife, novo nome assumido pela denominação.
+    page: '31'
 description: >-
   Grupo de Robinson Cavalcanti apos a deposicao; sob a Igreja Anglicana do Cone Sul a partir de 23/09/2005; origem
   da Igreja Anglicana no Brasil (IAB, 2018).
@@ -31,10 +88,26 @@ relations:
     quote: Robinson levou consigo cerca de 90% dos clérigos, membros e templos.
   - source: wp-en-ieab
     quote: The Diocese of Recife, led by Bishop Robinson Cavalcanti, withdrew from IEAB in 2005
-  notes: Grupo que formou a "Igreja Anglicana - Diocese do Recife", depois Igreja Anglicana no Brasil (IAB).
+  - source: cant-novas-igrejas-2024
+    quote: rompeu com a sua denominação de origem e com a Comunhão Anglicana através do Grande Cisma do Recife.
+    page: '35'
+  - source: cant-novas-igrejas-2024
+    quote: Clero originário da IEAB, reorganizado como Diocese do Recife após o cisma [2005]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No ano de 2005, essas divergências culminaram no rompimento da maioria das comunidades da Diocese com sua
+      Igreja Nacional
+    page: '173'
+  notes: >-
+    Grupo que formou a "Igreja Anglicana - Diocese do Recife", depois Igreja Anglicana no Brasil (IAB). Cisma na
+    Diocese Anglicana do Recife (IEAB-DAR). Ruptura da maioria das comunidades da Diocese Anglicana do Recife com
+    a IEAB, por divergências sobre sexualidade, autoridade bíblica e identidade eclesiástica. Liderança de Robinson
+    Cavalcanti inferida do Apêndice 2 ('reorganizada pelo bispo Robinson Cavalcanti a partir da Diocese do Recife').
 - type: part_of
   target: iacs
   date: '2005-09-23'
+  end: '2018'
   led_by:
   - gregory-venables
   status: confirmed
@@ -45,3 +118,33 @@ relations:
       Venables, aceitou o pedido
   - source: orlando-venables-2005
     quote: reconhecendo e acolhendo para supervisão o bispo deposto e um grupo de clérigos depostos
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Realinhamento com o Sul Global, como diocese extra-provincial da Igreja Anglicana da América do Sul (com supervisão
+      episcopal do bispo Gregory Venables) [2005-2018]
+    page: '171'
+  notes: Como diocese extra-provincial, com supervisão episcopal de Gregory Venables.
+- type: in_communion_with
+  target: iacs
+  date: '2005'
+  led_by:
+  - gregory-venables
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após o cisma de dom Robinson, a Diocese do Recife, sob o seu episcopado passou a operar como uma Diocese Extra-Provincial,
+      sob a supervisão primacial do bispo Gregory Venables, da Igreja Anglicana do Cone Sul
+    page: '27'
+  notes: Diocese extra-provincial sob supervisão primacial do Cone Sul (não parte formal da província).
+- type: schism_from
+  target: ieab-dar
+  date: '2005'
+  led_by:
+  - robinson-cavalcanti
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: com o segundo cisma, promovido pelo próprio Robinson, em 2005, a comunidade não foi abalada
+    page: '111'
+  notes: '''Grande Cisma do Recife''.'

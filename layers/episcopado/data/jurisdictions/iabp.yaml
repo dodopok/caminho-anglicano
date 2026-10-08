@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iabp
+acronym: IABP
+name: Igreja Anglicana Bom Pastor
+type: national_church
+country: BR
+description: Igreja do bispo Megino Carneiro Souza (mencionada apenas de passagem).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    no ano de 2024, o reverendo Berti buscou criar este vínculo com o bispo Megino Carneiro Souza (Igreja Anglicana
+    Bom Pastor)
+  page: '163'

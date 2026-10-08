@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: prelazia-anglicana-de-sao-paulo
+name: Prelazia Anglicana de São Paulo
+type: diocese
+relations:
+- type: part_of
+  target: ica-brasil
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Dom Marcos Vinícius de Souza, bispo da Prelazia Anglicana de São Paulo
+    page: '139'

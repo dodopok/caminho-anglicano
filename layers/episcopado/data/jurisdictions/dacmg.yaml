@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: dacmg
+acronym: DACMG
+name: Diocese Anglo-Católica de Minas Gerais
+type: diocese
+country: BR
+founded:
+  date: '2019-05-31'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Diocese Anglo-Católica de Minas Gerais tem origem na iniciativa do bispo Rafael Mendes Martins. Essa jurisdição
+      diocesana está localizada na cidade de Paraisópolis, Minas Gerais.
+    page: '105'
+  - source: cant-novas-igrejas-2024
+    quote: A Paróquia de São Miguel Arcanjo foi fundada em 31 de maio de 2019
+    page: '105'
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Anglo-Católica de Minas Gerais permaneceu como uma igreja autocéfala.
+    page: '106'
+  discrepancies:
+  - field: date
+    value: '2016'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Esta segunda Província a ser organizada, foi intitulada Província Anglo-Católica da Santíssima Trindade,
+        sendo era formada pelos bispos dom Antônio Bessa (bispo do Ceará) e dom Rafael Moraes (hoje bispo da Província
+        Anglo-Católica da Santíssima Trindade, em Nova Friburgo), dom Cristiano Alves (hoje bispo da Diocese Anglo-Católica
+        Cristo Bom Pastor, no Rio de Janeiro, ligada à Igreja Anglicana Tradicional do Brasil - IATB) e dom Rafael
+        Mendes (hoje bispo da Diocese Anglo-Católica de Minas Gerais, como uma igreja autocéfala local).
+      page: '162'
+    - source: cant-novas-igrejas-2024
+      quote: Diocese Anglo-Católica de Minas Gerais [2016]
+      page: '171'
+description: >-
+  Diocese anglicana independente (autocéfala) com sede em Paraisópolis (MG), fundada a partir da Paróquia São Miguel
+  Arcanjo (31/05/2019); bispo Rafael Mendes Martins (sagrado em 10/10/2021); integrou em 2021 a Província Anglo-Católica
+  da Santíssima Trindade.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Diocese Anglo-Católica de Minas Gerais tem origem na iniciativa do bispo Rafael Mendes Martins. Essa jurisdição
+    diocesana está localizada na cidade de Paraisópolis, Minas Gerais.
+  page: '105'
+- source: cant-novas-igrejas-2024
+  quote: A Paróquia de São Miguel Arcanjo foi fundada em 31 de maio de 2019
+  page: '105'
+- source: cant-novas-igrejas-2024
+  quote: Diocese Anglo-Católica de Minas Gerais permaneceu como uma igreja autocéfala.
+  page: '106'
+relations:
+- type: member_of
+  target: pacst
+  date: '2021'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: em 2021, ela se uniu a outras dioceses na chamada Província Anglo-Católica da Santíssima Trindade
+    page: '105'
+  notes: Depois a DACMG 'permaneceu como uma igreja autocéfala' (p. 106).

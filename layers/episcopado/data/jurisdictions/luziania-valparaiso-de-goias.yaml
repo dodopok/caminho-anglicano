@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: luziania-valparaiso-de-goias
+name: Luziânia / Valparaíso de Goiás
+type: diocese
+relations:
+- type: part_of
+  target: iaob-2013
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia 29 de julho de 2018, a Igreja acolheu no seu clero, dom Fabiano, incardinado como Bispo Missionário
+      na região de Luziânia, no estado de Goiás.
+    page: '132'

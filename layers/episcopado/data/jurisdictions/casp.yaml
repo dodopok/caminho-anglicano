@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: casp
+acronym: CASP
+name: Catedral Anglicana de São Paulo
+type: other
+country: BR
+founded:
+  date: '1873'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Catedral Anglicana de São Paulo é uma Igreja Anglicana no coração da capital paulista, liderada pelo reverendo
+      Aldo Quintão
+    page: '92'
+  - source: cant-novas-igrejas-2024
+    quote: Saint Paul’s Church, erigido em 1873
+    page: '92'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 1972, a Saint Paul’s se filiou à Igreja Episcopal do Brasil, sendo elevada ao status de Catedral da Diocese
+      Anglicana de São Paulo em 1995.
+    page: '92'
+description: >-
+  Comunidade anglicana independente no centro de São Paulo (origem na Saint Paul's Church, 1873), liderada pelo
+  Rev. Aldo Quintão; filiou-se à Igreja Episcopal do Brasil em 1972, foi catedral da Diocese Anglicana de São Paulo
+  (IEAB) a partir de 1995 e desligou-se da IEAB em 06/04/2013.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Catedral Anglicana de São Paulo é uma Igreja Anglicana no coração da capital paulista, liderada pelo reverendo
+    Aldo Quintão
+  page: '92'
+- source: cant-novas-igrejas-2024
+  quote: Saint Paul’s Church, erigido em 1873
+  page: '92'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Em 1972, a Saint Paul’s se filiou à Igreja Episcopal do Brasil, sendo elevada ao status de Catedral da Diocese
+    Anglicana de São Paulo em 1995.
+  page: '92'
+relations:
+- type: member_of
+  target: ieab
+  date: '1972'
+  end: '2013-04-06'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 1972, nossa Igreja se associou à Igreja Episcopal do Brasil e, em 1995, se tornou a Catedral da Diocese
+      Anglicana de São Paulo
+    page: '92'
+  notes: >-
+    Catedral da Diocese Anglicana de São Paulo (IEAB) a partir de 1995; desligamento formal em 06/04/2013.
+- type: broke_communion_with
+  target: ieab
+  date: '2013-04-06'
+  led_by:
+  - aldo-quintao
+  - glauco-soares-de-lima
+  - roger-douglas-bird
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Assim, a comunidade, junto com o reverendo Aldo Quintão e os bispos Roger Douglas Bird – então diocesano –
+      e Glauco Soares de Lima – emérito da DASP –, se desligaram formalmente da Igreja Episcopal Anglicana do Brasil.
+    page: '93'
+  notes: >-
+    Estatutos da Catedral modificados em assembleia de 06/04/2013, após a crise da eleição episcopal no 47º Concílio
+    da DASP.
+- type: part_of
+  target: danb
+  date: '2016'
+  end: '2023'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 18 de novembro de 2018, o bispo Ronaldo Melo foi elevado ao episcopado da então criada Diocese Anglicana
+      no Brasil, a nova jurisdição da Catedral Anglicana de São Paulo.
+    page: '103'
+  notes: Dionísio Aílton Pereira desvinculou a Diocese da Catedral no fim de 2023.

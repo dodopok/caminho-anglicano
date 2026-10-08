@@ -1,7 +1,57 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: leonardo-marin-saavedra
 name: Leonardo Marin-Saavedra
+biography: >-
+  Arcebispo da Província da América Latina da Comunhão Anglicana Independente (Igreja Anglicana Latina / Igreja
+  Católico Anglicana Latino Americana), ligado ao Movimento Anglicano Contínuo dos EUA; sagrou Antônio Bessa e nomeou
+  Ricardo Lorite bispo eleito para o Brasil (2005).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados Unidos.
+  page: '105'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    bispo Leonardo Marin-Saavedra, que foi o Arcebispo da Província da América Latina da Comunhão Anglicana Independente
+    (Worldwide Anglican Independent Communion)
+  page: '117'
+affiliations:
+- jurisdiction: icala
+  role: archbishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Leonardo Marin-Saavedra, que foi o Arcebispo da Província da América Latina da Comunhão Anglicana Independente
+      (Worldwide Anglican Independent Communion) – também conhecida como Igreja Anglicana Latina –
+    page: '117'
+- jurisdiction: iala
+  role: archbishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2019, o arcebispo Leonardo Marin-Saavedra da Igreja Anglicana Latino-Americana realizou algumas visitas
+      ao Brasil, consagrando novos bispos para o continente, ratificando as Ordens de clérigos com sucessão apostólica
+      considerada duvidosa, e ordenando novos diáconos e presbíteros para diferentes Igrejas. Uma dessas sagrações
+      episcopais realizadas foi a de Antônio Bessa, na cidade de Fortaleza.
+    page: '161'
 events:
+- type: other
+  date: '2019'
+  description: >-
+    Visitas do arcebispo Leonardo Marin-Saavedra (Igreja Anglicana Latino-Americana) ao Brasil: sagração de novos
+    bispos, ratificação de ordens de clérigos com sucessão considerada duvidosa e ordenação de diáconos e presbíteros
+    para diferentes igrejas
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 2019, o arcebispo Leonardo Marin-Saavedra da Igreja Anglicana Latino-Americana realizou algumas visitas
+      ao Brasil, consagrando novos bispos para o continente, ratificando as Ordens de clérigos com sucessão apostólica
+      considerada duvidosa, e ordenando novos diáconos e presbíteros para diferentes Igrejas. Uma dessas sagrações
+      episcopais realizadas foi a de Antônio Bessa, na cidade de Fortaleza.
+    page: '161'
 - type: other
   date: '2005-03-27'
   description: >-

@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iaeb
+acronym: IAEB
+name: Igreja Anglicana Episcopal do Brasil
+type: province
+country: BR
+founded:
+  date: '2023'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana Episcopal do Brasil (IAEB) [2023]
+    page: '172'
+  - source: cant-novas-igrejas-2024
+    quote: Filiada à Iglesia Episcopal Anglicana de Chile (IEACH) [1991]
+    page: '172'
+description: >-
+  Nome jurídico da província brasileira da Igreja Episcopal Anglicana do Chile (IEACH); bispo diocesano da Diocese
+  Sul/Sudeste: Fernando Nobile (catedral Igreja Anglicana Cristo Redentor, Ribeirão Preto). Não confundir com a
+  IEAB.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja Anglicana Episcopal do Brasil é o nome jurídico da província brasileira da Igreja Episcopal Anglicana
+    do Chile (IEACH)
+  page: '123'
+relations:
+- type: part_of
+  target: ieach
+  date: null
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana Episcopal do Brasil é o nome jurídico da província brasileira da Igreja Episcopal Anglicana
+      do Chile (IEACH)
+    page: '123'
+- type: member_of
+  target: ieach
+  date: null
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Filiada à Iglesia Episcopal Anglicana de Chile (IEACH) [1991]
+    page: '172'
+  notes: O '[1991]' aparece junto à IEACH no Apêndice 1; não está claro a que se refere.

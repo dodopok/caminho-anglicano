@@ -1,6 +1,29 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: paulo-sergio-ferreira
 name: Paulo Sérgio Ferreira
+biography: Fundador (2020) e arcebispo primaz da Igreja Anglicana Mundial no Brasil.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Dom Paulo Sérgio Ferreira, Arcebispo Primaz da Igreja Anglicana Mundial no Brasil
+  page: '129'
+affiliations:
+- jurisdiction: wac-br
+  role: founder
+  start: '2020-11-27'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana Mundial chegou ao Brasil através do reverendo Paulo Sérgio Ferreira, sendo estabelecida
+      em 27 de novembro de 2020.
+    page: '128'
+- jurisdiction: wac-br
+  role: primate
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Dom Paulo Sérgio Ferreira, Arcebispo Primaz da Igreja Anglicana Mundial no Brasil
+    page: '129'
 events:
 - type: other
   date: '2018-12-15'

@@ -5,6 +5,8 @@ full_name: Glauco Soares de Lima
 aliases:
 - Dom Glauco Lima
 - Glauco Soares Lima
+- bispo Glauco
+- dom Glauco
 birth:
   date: '1934-01-28'
   sources:
@@ -21,6 +23,13 @@ death:
     quote: Faleceu em 26 de dezembro de 2017.
   - source: ec-2018-04
     quote: Faleceu em dezembro de 2017 o Bispo Glauco Soares de Lima, emérito de São Paulo.
+  discrepancies:
+  - field: date
+    value: '2017-12-27'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: O bispo Glauco Soares de Lima faleceu no dia 27 de dezembro de 2017 na cidade de São Paulo
+      page: '96'
 wikidata: Q21020068
 biography: >-
   Bispo de Sao Paulo (1990-2002) e primaz (1993-2003); sagrante principal de Robinson Cavalcanti, Orlando, Celso
@@ -209,6 +218,11 @@ affiliations:
   sources:
   - source: costa-2021-tese
     quote: O bispo Glauco Soares de Lima faleceu no dia 27 de dezembro de 2017 na cidade de São Paulo
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Os dois bispos passaram a exercer supervisão episcopal sobre o reverendo e a comunidade através do Movimento
+      Anglicano no Brasil.
+    page: '93'
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dasp
@@ -221,6 +235,17 @@ affiliations:
       internacional frequentada por brasileiros, americanos, ingleses e outras nacionalidades.
     page: '290'
   notes: Pároco da Saint Paul's Church, São Paulo.
+- jurisdiction: ieab-dasp
+  role: other
+  role_description: bispo_emerito
+  end: '2013-04-06'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Glauco Soares de Lima – emérito da DASP –, se desligaram formalmente da Igreja Episcopal Anglicana do Brasil.
+    page: '93'
 events:
 - type: death
   date: 2017-12

@@ -3,12 +3,14 @@ id: iceb
 acronym: ICEB
 name: Igreja Cristã Episcopal Betânia
 aliases:
+- Igreja Cristã Episcopal / Comunhão das Igrejas Cristãs Episcopais do Brasil (CICEB)
+- Igreja Cristã Episcopal do Brasil
 - >-
   Igreja Cristã Episcopal — Comunhão (hoje Província) de Igrejas Cristãs Episcopais do Brasil (CICEB/PICEB)
 type: national_church
 country: BR
 founded:
-  date: '2002'
+  date: 2002-10
   sources:
   - source: ciceb-quemsomos
     quote: >-
@@ -22,6 +24,23 @@ founded:
     quote: >-
       fundando a Igreja Cristã Episcopal. Na época a nova denominação recebeu o nome de Igreja Episcopal Evangélica
       Betânia.
+  - source: cant-novas-igrejas-2024
+    quote: Sendo assim, a partir desta data passou a ser chamada Igreja Episcopal Evangélica Betânia.
+    page: '66'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      foi realizado o primeiro Concílio Diocesano, durante o qual a Igreja adotou o nome Comunhão das Igrejas Cristãs
+      Episcopais do Brasil (CICEB) e a antiga Paróquia Betânia foi oficializada como Catedral Betânia.
+    page: '67'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Cristã Episcopal do Brasil [2002]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Origem na IEAB, depois filiada à Communion of Evangelical Episcopal Churches (CEEC)
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Comunhão das Igrejas Cristãs Episcopais do Brasil (CICEB) [2002]
+    page: '171'
 website: https://www.ciceb.com.br/
 description: >-
   Nasce da Paróquia Betânia (Cordeiro, Recife), da Diocese do Recife da IEAB, que em 2002 se desligou da IEAB sob
@@ -46,9 +65,9 @@ sources:
 relations:
 - type: schism_from
   target: ieab
-  date: '2002'
+  date: 2002-10
   led_by:
-  - leonides-menezes
+  - leonides-de-menezes-ferreira
   status: confirmed
   sources:
   - source: ciceb-quemsomos
@@ -59,18 +78,27 @@ relations:
     quote: >-
       Em outubro de 2002, os membros da então Paróquia Betânia da Diocese Anglicana do Recife, liderados pelo reverendo
       Leônides Menezes, decidiram por assembleia se separar da Igreja Episcopal Anglicana do Brasil
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em outubro de 2002, a Paróquia Betânia, até então pertencente à Igreja Episcopal Anglicana do Brasil, formalizou
+      sua saída da Província anglicana
+    page: '65'
   notes: >-
     Mês divergente no próprio site: 'outubro de 2002' (Quem Somos da CICEB) vs '8 de julho de 2002' (Nossa Igreja
-    da Catedral Betânia). A Wikipédia acompanha 'outubro de 2002'.
+    da Catedral Betânia). A Wikipédia acompanha 'outubro de 2002'. Saída da Paróquia Betânia da Diocese Anglicana
+    do Recife.
 - type: member_of
   target: ceec
-  date: '2007'
+  date: '2003-06-08'
   led_by:
-  - leonides-menezes
+  - leonides-de-menezes-ferreira
   status: contested
   sources:
-  - source: iab-poster-linhagem-meira
-    quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia 8 de junho de 2003, apenas alguns meses após sua reorganização, a comunidade tomou a decisão de afiliar-se
+      à Comunhão das Igrejas Episcopais Evangélicas (CEEC).
+    page: '66'
   - source: ptwp-dar
     quote: >-
       Em 8 de junho de 2003, a então Igreja Episcopal Evangélica Betânia, filiou-se à Comunhão das Igrejas Episcopais
@@ -80,30 +108,29 @@ relations:
       Em 8 de junho de 2002, após oito meses de oração em busca de resposta de Deus, resolveu em assembleia geral
       extraordinária, também por unanimidade de votos, filiar-se à Comunion of Evangelical Episcopal Churches (CECC),
       com sede nos EUA e hoje chamada Communio Christiana Churches (CCC).
+  - source: cant-novas-igrejas-2024
+    quote: Origem na IEAB, depois filiada à Communion of Evangelical Episcopal Churches (CEEC)
+    page: '171'
+  - source: iab-poster-linhagem-meira
+    quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC
   notes: >-
-    Filiação inferida da sagração; verificar. O site oficial dá 8/6/2002, mas diz que a filiação veio 'após oito
-    meses' da saída (out. 2002), o que só fecha com 8/6/2003, data dada pela Wikipédia. Provável erro de digitação
-    no site. O site diz que a comunhão é 'hoje chamada Communio Christiana Churches (CCC)'; a Wikipédia fala em
-    Christian Communion International (CCI). Data de eventual saída da CEEC não encontrada (a Wikipédia descreve
-    a ligação com a CCI, com sede na Flórida).
+    A citação do site da CICEB no mesmo livro (p. 66) traz '8 de junho de 2002', o que é incoerente com a saída
+    em outubro de 2002 seguida de 'oito meses de oração'. O site oficial dá 8/6/2002, mas diz que a filiação veio
+    'após oito meses' da saída (out. 2002), o que só fecha com 8/6/2003, data dada pela Wikipédia. Provável erro
+    de digitação no site. O site diz que a comunhão é 'hoje chamada Communio Christiana Churches (CCC)'; a Wikipédia
+    fala em Christian Communion International (CCI). Data de eventual saída da CEEC não encontrada (a Wikipédia
+    descreve a ligação com a CCI, com sede na Flórida). Filiação inferida da sagração; verificar.
   discrepancies:
   - field: date
-    value: '2003-06-08'
+    value: '2007'
     sources:
-    - source: ptwp-dar
-      quote: >-
-        Em 8 de junho de 2003, a então Igreja Episcopal Evangélica Betânia, filiou-se à Comunhão das Igrejas Episcopais
-        Evangélicas (em inglês, The Communion of Evangelical Episcopal Churches - CEEC)
-    - source: ciceb-quemsomos
-      quote: >-
-        Em 8 de junho de 2002, após oito meses de oração em busca de resposta de Deus, resolveu em assembleia geral
-        extraordinária, também por unanimidade de votos, filiar-se à Comunion of Evangelical Episcopal Churches
-        (CECC), com sede nos EUA e hoje chamada Communio Christiana Churches (CCC).
+    - source: iab-poster-linhagem-meira
+      quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC
 - type: in_communion_with
   target: cci
   date: '2006'
   led_by:
-  - leonides-menezes
+  - leonides-de-menezes-ferreira
   status: probable
   sources:
   - source: ptwp-dar
@@ -123,7 +150,7 @@ relations:
   target: ceec
   date: null
   led_by:
-  - leonides-menezes
+  - leonides-de-menezes-ferreira
   status: probable
   sources:
   - source: costa-2021-tese

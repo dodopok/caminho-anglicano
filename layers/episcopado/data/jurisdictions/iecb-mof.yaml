@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iecb-mof
+acronym: IECB-MOF
+name: Igreja Episcopal Cristã Brasileira (Ministério Orando em Família)
+type: national_church
+country: BR
+founded:
+  date: '2010'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Dom Markos Leal é o fundador da Igreja Episcopal Cristã Brasileira. Em seu brasão, encontrado na Internet,
+      tem-se o ano de 2010, porém, juridicamente a data de registro dos Cânones da Igreja é o ano de 2016.
+    page: '143'
+website: https://igrejaepiscopalcristabrasileira.org/
+description: >-
+  Igreja fundada por dom Markos Leal no Recife (brasão com o ano de 2010; ministério Orando em Família iniciado
+  em janeiro de 2011; cânones registrados em 2016); centrada na celebração de casamentos. O livro evita a sigla
+  IECB para não confundir com a Igreja Episcopal Carismática do Brasil.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Dom Markos Leal é o fundador da Igreja Episcopal Cristã Brasileira. Em seu brasão, encontrado na Internet, tem-se
+    o ano de 2010, porém, juridicamente a data de registro dos Cânones da Igreja é o ano de 2016.
+  page: '143'

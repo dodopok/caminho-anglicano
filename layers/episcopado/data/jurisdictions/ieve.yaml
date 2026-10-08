@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ieve
+acronym: IEvE
+name: Igreja Evangélica Episcopal
+type: other
+description: Igreja na qual Josep Rosselló foi sagrado bispo missionário após deixar a IERE.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: filiando-se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário
+  page: '133'

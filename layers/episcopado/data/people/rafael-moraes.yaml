@@ -1,12 +1,93 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: rafael-moraes
 name: Rafael Moraes
+aliases:
+- Moraes
+biography: >-
+  Bispo em Nova Friburgo (RJ), sagrado por Antônio Bessa; co-presidiu a sagração de Rafael Mendes Martins (2021)
+  e sagrou Cristiano Alves (2022).
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Dom Rafael Moraes, em Nova Friburgo (RJ)
+  page: '105'
 ordinations:
 - order: episcopate
   date: null
-  jurisdiction: null
+  jurisdiction: icaca
   principal_consecrator: antonio-bessa
   status: probable
   sources:
   - source: cant-novas-igrejas-2024
     quote: Dom Antônio Bessa sagrou ao episcopado dom Rafael Moraes
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Na mesma época, outro bispo, Rafael Moraes, havia sido eleito para o episcopado e sagrado por dom Antônio
+      Bessa.
+    page: '105'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Dom Antônio Bessa sagrou ao episcopado dom Rafael Moraes, e pretendia conferir Ordens a novos bispos, para
+      organizar a nova denominação intitulada Igreja Católica Apostólica de Confissão Anglicana.
+    page: '161'
+  notes: Data não informada (entre 2019 e 2021).
+affiliations:
+- jurisdiction: pacst
+  role: bishop
+  start: '2021'
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: Dom Rafael Moraes, em Nova Friburgo (RJ)
+    page: '105'
+- jurisdiction: icaca
+  role: bishop
+  diocese: dcaca
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: 'Até 2021 existiam dois bispos nesta jurisdição: Bessa e Moraes.'
+    page: '161'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em Nova Friburgo, no Rio de Janeiro, a Diocese sob a liderança de Moraes era chamada de Diocese Católica Apostólica
+      de Confissão Anglicana.
+    page: '161'
+  notes: 'Local: Nova Friburgo.'
+- jurisdiction: pacst
+  role: bishop
+  diocese: nova-friburgo
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Esta segunda Província a ser organizada, foi intitulada Província Anglo-Católica da Santíssima Trindade, sendo
+      era formada pelos bispos dom Antônio Bessa (bispo do Ceará) e dom Rafael Moraes (hoje bispo da Província Anglo-Católica
+      da Santíssima Trindade, em Nova Friburgo), dom Cristiano Alves (hoje bispo da Diocese Anglo-Católica Cristo
+      Bom Pastor, no Rio de Janeiro, ligada à Igreja Anglicana Tradicional do Brasil - IATB) e dom Rafael Mendes
+      (hoje bispo da Diocese Anglo-Católica de Minas Gerais, como uma igreja autocéfala local).
+    page: '162'
+- jurisdiction: amacrj
+  role: bishop
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A então Diocese Católica de Confissão Anglicana em Nova Friburgo passou a ser chamada de Arquidiocese Metropolitana
+      Anglo-Católica do Rio de Janeiro, continuando sob a liderança do bispo Rafael Moraes.
+    page: '162'
+events:
+- type: other
+  date: null
+  description: >-
+    A Diocese Católica de Confissão Anglicana em Nova Friburgo muda de nome para Arquidiocese Metropolitana Anglo-Católica
+    do Rio de Janeiro, com o fracasso da ICACA
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A então Diocese Católica de Confissão Anglicana em Nova Friburgo passou a ser chamada de Arquidiocese Metropolitana
+      Anglo-Católica do Rio de Janeiro, continuando sob a liderança do bispo Rafael Moraes.
+    page: '162'
+  - source: cant-novas-igrejas-2024
+    quote: falhou em pouco tempo, pois não houve consenso ou unidade entre seus bispos
+    page: '162'

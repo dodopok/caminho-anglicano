@@ -20,6 +20,43 @@ founded:
     quote: DIOCESES RECIFE JOÃO PESSOA VÍTORIA REGIÃO MISSIONÁRIA
   - source: gafcon-2025-07-16-iab
     quote: it became a province with three dioceses, 54 communities, and roughly 74 clergy
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A Igreja Anglicana no Brasil (IAB), anteriormente conhecida como Diocese do Recife, é uma das principais denominações
+      anglicanas brasileiras, tendo surgido a partir de um dos cismas mais significativos da história da Igreja
+      Episcopal Anglicana do Brasil
+    page: '25'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      No dia 12 de maio de 2018, Miguel Uchôa foi instalado como primeiro Arcebispo e Primaz da Igreja Anglicana
+      no Brasil.
+    page: '31'
+  - source: cant-novas-igrejas-2024
+    quote: até o ano de 2018, quando esta se tornou a Igreja Anglicana no Brasil (IAB), a Província da GAFCON.
+    page: '124'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A propriedade do templo da Catedral Anglicana do Recife foi adquirido pela Igreja Anglicana no Brasil (IAB)
+    page: '112'
+  - source: cant-novas-igrejas-2024
+    quote: Igreja Anglicana no Brasil (IAB) [2018]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Clero originário da IEAB, reorganizado como Diocese do Recife após o cisma [2005]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Realinhamento com o Sul Global, como diocese extra-provincial da Igreja Anglicana da América do Sul (com supervisão
+      episcopal do bispo Gregory Venables) [2005-2018]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Criada como Província da GAFCON – Fellowship of Confessing Anglicans (FCA) [2018]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      hoje liderada pelo arcebispo Miguel Uchôa Cavalcanti, como Província da GAFCON, com sede na Paróquia Anglicana
+      do Espírito Santo (PAES)
+    page: '174'
   - source: iab-comunicado-oficial-2018
     quote: >-
       Em 12 de Maio deste ano de 2018, devido ao crescimento da nossa Igreja no Brasil, tivemos o privilégio de
@@ -62,6 +99,43 @@ relations:
       On Saturday, 12 May 2018, Brazilians packed the Paróquia Anglicana do Espírito Santo (Anglican Church of the
       Holy Spirit) to celebrate the launch of the Anglican Church in Brazil
   notes: A DAR continua existindo como diocese da IAB.
+- type: successor_of
+  target: dar-iacs
+  date: '2018-05-12'
+  led_by:
+  - miguel-uchoa
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A Igreja Anglicana no Brasil (IAB), anteriormente conhecida como Diocese do Recife
+    page: '25'
+  - source: cant-novas-igrejas-2024
+    quote: Criada como Província da GAFCON – Fellowship of Confessing Anglicans (FCA) [2018]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Igreja Anglicana no Brasil (IAB), reorganizada pelo bispo Robinson Cavalcanti a partir da Diocese do Recife
+    page: '174'
+- type: member_of
+  target: gafcon
+  date: '2018-05-12'
+  led_by:
+  - miguel-uchoa
+  status: confirmed
+  sources:
+  - source: gafcon-2018-installs-primate
+    quote: >-
+      This has led to the formation of a new Biblically orthodox Province which has been recognized by the Gafcon
+      Primates Council not only as part of Gafcon, but also as a Province of the Anglican Communion.
+  - source: ai-recife-received-gafcon
+    quote: We look forward to his membership of the Primates Council.
+  - source: cant-novas-igrejas-2024
+    quote: e atualmente estruturada como Província brasileira da GAFCON
+    page: '11'
+  - source: cant-novas-igrejas-2024
+    quote: Criada como Província da GAFCON – Fellowship of Confessing Anglicans (FCA) [2018]
+    page: '171'
+  notes: Província da GAFCON – Fellowship of Confessing Anglicans (FCA).
 - type: recognized_by
   target: gafcon
   date: 2018-04
@@ -140,19 +214,6 @@ relations:
   notes: >-
     Não é propriamente 'ruptura': a IAB nunca foi membro reconhecido da Comunhão (ACC/Cantuária). Ajustar o tipo
     de relação na consolidação, se houver tipo 'nao_reconhecida_por'.
-- type: member_of
-  target: gafcon
-  date: '2018-05-12'
-  led_by:
-  - miguel-uchoa
-  status: confirmed
-  sources:
-  - source: gafcon-2018-installs-primate
-    quote: >-
-      This has led to the formation of a new Biblically orthodox Province which has been recognized by the Gafcon
-      Primates Council not only as part of Gafcon, but also as a Province of the Anglican Communion.
-  - source: ai-recife-received-gafcon
-    quote: We look forward to his membership of the Primates Council.
 - type: in_communion_with
   target: gsfa
   date: 2019-10
