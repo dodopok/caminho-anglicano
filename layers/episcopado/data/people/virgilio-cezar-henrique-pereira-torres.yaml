@@ -40,6 +40,8 @@ ordinations:
   date: '2025'
   jurisdiction: iau
   principal_consecrator: ricardo-lorite-de-lima
+  co_consecrators:
+  - frei-eduardo
   status: probable
   sources:
   - source: fb-hermes-20-anos-sagracao
@@ -53,9 +55,22 @@ ordinations:
       A Igreja Anglicana Unida (IAU) é a Província Sul-Americana da The Free Episcopal Protestant Church of England
       (FPEC). Com 128 anos de história contínua, cujo o líder éo Arcebispo Primaz, Revmo. Dom Ricardo Lorite de
       Lima. A IAU tem como Bispo moderador o Revmo. Dom Virgílio Cezar Henrique Pereira Torres.
+  - source: yt-sagracao-virgilio
+    quote: Sagração Episcopal do Revmo. Dom Virgílio Cezar Torres e posse como Bispo Moderador da IEP
+  - source: testemunho-mantenedor-2026-10-08-video-virgilio
+    quote: >-
+      Os bispos sagrantes presentes na cerimônia foram o Reverendíssimo Dr. Ricardo Lorite de Lima (04:10) e Dom
+      Frei Eduardo (1:21:20).
   notes: >-
     Em 24/03/2025 Virgílio anunciou que seria sagrado por Lorite; em 18/12/2025 a IAU já o apresenta como bispo
-    moderador. Data exata não encontrada.
+    moderador. Data exata não encontrada. Sagrantes presentes: Lorite (04:10 do vídeo) e Dom Frei Eduardo (1:21:20).
+    Vários bispos enviaram cartas e bulas de sagração demonstrando apoio, mesmo não estando presentes fisicamente
+    (o que o celebrante chama de "sagrantes in absente"). No encerramento (1:32:46–1:34:25) foram lidas cartas do
+    arcebispo emérito Richard Palmer; de Dom José Augusto da Silva (São José do Rio Preto); de Dom Jeferson (Igreja
+    Católica Ecumênica); de Dom Rogério Ribeiro Campos (Prelazia Apostólica); de Dom Rogério Sidaí (Igreja Protestante
+    Livre, França); do arcebispo primaz da Igreja Ortodoxa Russa (Brasil e América do Sul); do bispo Vítor (Colômbia)
+    e de um bispo da comunhão no México. Esses não estão registrados como co-sagrantes, por não terem imposto as
+    mãos. O título do vídeo fala em posse como bispo moderador da IEP; a data de publicação não foi conferida.
 affiliations:
 - jurisdiction: iaob
   role: other
@@ -116,3 +131,13 @@ affiliations:
   notes: >-
     Local: Comunidade da Reconciliação, Ribeirão Preto/SP. Papel: "Bispo Moderador"/"Bispo Presidente". Sagração
     episcopal (data, sagrantes) NÃO encontrada; candidato óbvio seria a FPEC (Ricardo Lorite de Lima), mas sem fonte.
+- jurisdiction: iep
+  role: other
+  role_description: bispo moderador
+  status: probable
+  sources:
+  - source: yt-sagracao-virgilio
+    quote: Sagração Episcopal do Revmo. Dom Virgílio Cezar Torres e posse como Bispo Moderador da IEP
+  notes: >-
+    Posse na mesma cerimônia da sagração. Contrasta com o registro de que a IEP durou de dez/2011 a mar/2012; o
+    nome IEP parece ter seguido em uso pelo Sínodo do Brasil antes de "IAU".
