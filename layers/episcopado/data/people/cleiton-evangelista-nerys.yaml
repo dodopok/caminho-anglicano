@@ -3,13 +3,24 @@ id: cleiton-evangelista-nerys
 name: Cleiton Evangelista Nerys
 aliases:
 - Cleiton Nerys
-biography: >-
-  Ex-pastor da Assembleia de Deus (Ministério de Anápolis) em Corumbá; cofundador e clérigo da Igreja Anglicana
-  Ortodoxa no Brasil.
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: o pastor Cleiton Evangelista Nerys
-  page: '131'
+- source: drv-ata-iaob-2014
+  quote: >-
+    que fora ordenado ao sacro ministério Presbiteral, pelo Reverendíssimo Bispo Dom Josué Sousa Torres, aos 9(nove)
+    dias do mês de Janeiro do Ano da Graça de Nosso Senhor Jesus Cristo de Dois Mil e Treze (2013)
+ordinations:
+- order: presbyterate
+  date: '2013-01-09'
+  jurisdiction: ieep
+  ordained_by: josue-sousa-torres
+  status: confirmed
+  sources:
+  - source: drv-ata-iaob-2014
+    quote: >-
+      que fora ordenado ao sacro ministério Presbiteral, pelo Reverendíssimo Bispo Dom Josué Sousa Torres, aos 9(nove)
+      dias do mês de Janeiro do Ano da Graça de Nosso Senhor Jesus Cristo de Dois Mil e Treze (2013)
+  notes: Local da ordenação não informado na ata.
 affiliations:
 - jurisdiction: iaob-2013
   role: founder
@@ -21,6 +32,17 @@ affiliations:
       ocorreu um encontro de dois ministros que deram início à IAOB: o reverendo Adolfo Batista Teodoro Junior e
       o pastor Cleiton Evangelista Nerys.
     page: '131'
+- jurisdiction: iaob
+  role: other
+  role_description: secretario_executivo
+  start: '2014-04-20'
+  status: confirmed
+  sources:
+  - source: drv-ata-iaob-2014
+    quote: >-
+      Secretario Executivo cargo correspondente a vice-presidente e Secretário Geral da IAOB o Reverendo Padre Cleiton
+      Evangelista Nerys
+  notes: Eleito na fundação da IAOB.
 - jurisdiction: iaob-2013
   role: clergy
   status: probable

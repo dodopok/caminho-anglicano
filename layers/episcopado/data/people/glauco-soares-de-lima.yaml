@@ -182,9 +182,17 @@ affiliations:
       com a IEAB
   - source: glauco-testemunho-2013
     quote: Como consequência de tudo isso, decidi apoiar os dissidentes
+  - source: drv-pronunciamento-ieab-2005
+    quote: Dom Glauco Soares de Lima
   - source: costa2021
     quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1989-2003 – Glauco Soares de Lima
     page: 518-519
+  notes: >-
+    Signatário da carta da Câmara dos Bispos da IEAB ao arcebispo de Cantuária (Brasília, 14/11/2005); data de início
+    do cargo não é informada. Citado nesse cargo em documento de 14/11/2005. Anexo C da tese (lista 'Bispos e Bispas
+    da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos foi lido como período de exercício episcopal
+    na IEAB (e antecessoras), e não necessariamente o ano de sagração, pois o anexo não diz que o primeiro ano é
+    a sagração. Por isso não foi criada afirmação de ordenação.
   discrepancies:
   - field: end
     value: '2003'
@@ -192,10 +200,6 @@ affiliations:
     - source: costa2021
       quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1989-2003 – Glauco Soares de Lima
       page: 518-519
-  notes: >-
-    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
-    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
-    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab
   role: coadjutor_bishop
   diocese: ieab-dasp
@@ -448,6 +452,21 @@ events:
   sources:
   - source: glauco-testemunho-2013
     quote: O bispo diocesano (Roger Bird) resolveu anular a eleição, decisão com a qual eu concordei.
+- type: other
+  date: '2005-09-22'
+  description: >-
+    Nota diocesana de 22/09/2005 afirma que o 'pseudo-concílio' da minoria dissidente realizado em 10/09/2005 não
+    teve quórum, que a diocese nunca se desvinculou da IEAB, que o 'decreto' de excomunhão e deposição contra 32
+    clérigos não foi notificado, e atribui ao ex-primaz Glauco Soares de Lima a declaração de que a sentença contra
+    Robinson resultou de um 'discurso inflamado' do bispo sufragâneo.
+  status: contested
+  sources:
+  - source: drv-fatos-verdadeira-dar
+    quote: O pseudo-concílio realizado pela minoria dissidente da Diocese, em 10.09 passado
+  - source: drv-fatos-verdadeira-dar
+    quote: >-
+      o ex-Primaz Glauco Soares de Lima, afirmou que a Sentença de Deposição não foi uma decisão objetiva do Superior
+      Tribunal Eclesiástico, mas o resultado da influência de um “discurso inflamado” do Bispo Sufragâneo do Recife
 - type: other
   date: '2013-04-19'
   description: >-

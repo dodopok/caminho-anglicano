@@ -3,16 +3,34 @@ id: celio-franca-spinelli
 name: Célio França Spinelli
 aliases:
 - Célio Spinelli
-biography: >-
-  Bispo da Igreja Anglicana do Brasil (Lorite) em 2006: bispo da Diocese Anglicana Thomas Becket e vigário geral
-  da Arquidiocese Thomas Cranmer; signatário da Declaração da Boa Viagem.
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
-- source: cant-novas-igrejas-2024
+- source: drv-resgatando-iv
   quote: >-
-    Célio França Spinelli, como bispo da Diocese Anglicana Thomas Becket e vigário geral da Arquidiocese Thomas
-    Cranmer
-  page: '119'
+    Leva com ele as comunidades do Janga, Timbaúba e Vitória do Santo Antão-PE, e os reverendos: Frederico, Célio,
+    Adonias e Edgar.
 affiliations:
+- jurisdiction: iecb
+  role: clergy
+  diocese: iecb-diocese-recife
+  start: 2002-09
+  end: '2004-05-30'
+  end_reason: left
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      Leva com ele as comunidades do Janga, Timbaúba e Vitória do Santo Antão-PE, e os reverendos: Frederico, Célio,
+      Adonias e Edgar.
+  - source: drv-spinelli-carta-2004
+    quote: >-
+      me levou a decisão de me DESLIGAR em caráter definitivo e irrevogável da Igreja Episcopal Carismática do Brasil.
+  - source: drv-spinelli-carta-2004
+    quote: Recife, 30 de maio de 2004.
+  notes: >-
+    Carta de desligamento da IECB assinada 'Reverendo Célio Spinelli' e dirigida a Paulo Garcia em 30/05/2004. A
+    identificação do 'Célio' de Resgatando IV (2002) com Célio Spinelli é inferência (primeiro nome apenas na fonte
+    de 2002). Mais tarde Spinelli aparece como bispo da Igreja Anglicana do Brasil (Lorite) em 2006.
 - jurisdiction: iadb-lorite
   role: bishop
   diocese: diocese-anglicana-thomas-becket
@@ -26,3 +44,30 @@ affiliations:
     page: '119'
   notes: >-
     Também vigário geral da Arquidiocese Thomas Cranmer. Data = época da Declaração da Boa Viagem (2006).
+- jurisdiction: iadb-lorite
+  role: bishop
+  status: confirmed
+  sources:
+  - source: drv-comunicado-imprensa-2006
+    quote: Dom Célio França Spinelli, Vigário Geral
+  notes: >-
+    Consta com esse cargo na lista de fundadores da Declaração da Boa Viagem (30/09/2006); início do cargo não informado.
+    Em Célio Spinelli, o texto acrescenta 'Bispo de Diocese Anglicana Thomas Becket e Vigário Geral da Arquidiocese
+    Thomas Cranmer'. Citado nesse cargo em documento de 30/09/2006.
+events:
+- type: other
+  date: '2004-05-30'
+  description: >-
+    Célio Spinelli, em carta de 30/05/2004 a Paulo Garcia, comunica seu desligamento definitivo da Igreja Episcopal
+    Carismática do Brasil, listando clérigos que se afastaram de Garcia nos dez anos anteriores (entre eles Miguel
+    Uchoa, Robinson Cavalcanti, Sérgio Andrade, Teobaldo Barbosa, Aldenor Soares, Antônio Eça, Fred Lubambo, César
+    Romero, Getúlio Gutemberg e Pedro Silva) e menciona a sagração de Garcia 'em 8 de setembro'.
+  status: probable
+  sources:
+  - source: drv-spinelli-carta-2004
+    quote: >-
+      me levou a decisão de me DESLIGAR em caráter definitivo e irrevogável da Igreja Episcopal Carismática do Brasil.
+  - source: drv-spinelli-carta-2004
+    quote: >-
+      Particularmente após a sua sagração em 8 de setembro, quando você passou a ignorar todos os pastores da sua
+      diocese.

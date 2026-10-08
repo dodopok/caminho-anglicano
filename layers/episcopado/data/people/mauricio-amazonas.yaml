@@ -1,13 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: mauricio-amazonas
 name: Maurício Amazonas
-biography: >-
-  Reverendo, membro da Ordem de Santo Estêvão; administra o Instituto Robinson Cavalcanti (fundado em 2013).
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: sobrevivendo através deles, até hoje, como por exemplo, o reverendo Maurício Amazonas.
-  page: '28'
+- source: drv-nota-esclarecimento-2006
+  quote: Maurício M. Amazonas dos Santos, ose
 affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  status: confirmed
+  sources:
+  - source: drv-nota-esclarecimento-2006
+    quote: Maurício M. Amazonas dos Santos, ose
+  notes: >-
+    Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
+    Esclarecimento); início e fim do vínculo não informados.
 - jurisdiction: ose
   role: member
   status: probable

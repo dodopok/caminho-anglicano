@@ -229,6 +229,10 @@ affiliations:
   start: '2004'
   status: contested
   sources:
+  - source: drv-declaracao-32
+    quote: Ven. Arc. Rev. Miguel A. de A. Uchôa Cavalcanti
+  - source: drv-nota-esclarecimento-2006
+    quote: Miguel Ângelo de A. Uchoa Cavalcanti
   - source: wp-en-uchoa
     quote: >-
       Uchôa joined two-thirds of the clergy and roughly 95 percent of the laity in disaffiliating from the IEAB
@@ -252,12 +256,14 @@ affiliations:
       mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
   notes: >-
-    Wikipedia (terciária). Antes disso era clérigo da IEAB (Diocese do Recife), reitor da PAES desde 1996. Local:
-    Paróquia Anglicana Espírito Santo, reitor/fundador. Em 1996 a PAES era da Diocese do Recife da IEAB; jurisdição
-    posta como DAR por simplificação — ajustar (IEAB 1996–2005, DAR 2005–2018, IAB 2018–). Deixou a reitoria em
-    23/08/2026 (filho Gabriel instalado deão). Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005,
-    manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como
-    ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
+    Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
+    Esclarecimento); início e fim do vínculo não informados. Wikipedia (terciária). Antes disso era clérigo da IEAB
+    (Diocese do Recife), reitor da PAES desde 1996. Local: Paróquia Anglicana Espírito Santo, reitor/fundador. Em
+    1996 a PAES era da Diocese do Recife da IEAB; jurisdição posta como DAR por simplificação — ajustar (IEAB 1996–2005,
+    DAR 2005–2018, IAB 2018–). Deixou a reitoria em 23/08/2026 (filho Gabriel instalado deão). Anexo R: o(a) clérigo(a)
+    declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja,
+    estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela
+    IEAB, e a adesão à DAR é anterior, sem data exata.
   discrepancies:
   - field: start
     value: '1996-08-22'
@@ -359,6 +365,14 @@ affiliations:
     quote: Miguel Uchôa Cavalcanti Bispo Primaz da Igreja Anglicana no Brasil Diocesano de Recife
   - source: dr-bispo
     quote: Primaz da Igreja Anglicana no Brasil    Bispo da Diocese de Recife
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago
+  status: confirmed
+  sources:
+  - source: drv-carta-clero-primaz
+    quote: Rev. Arc. Miguel Ângelo de A. Uchoa Cavalcanti
+  notes: Cargo exercido em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados.
 events:
 - type: other
   date: '2017-05-06'

@@ -82,16 +82,19 @@ affiliations:
 - jurisdiction: ieab
   role: bishop
   start: '2003'
-  status: probable
+  status: confirmed
   sources:
+  - source: drv-pronunciamento-ieab-2005
+    quote: Dom Maurício Andrade
   - source: costa2021
     quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2003- – Maurício José Araújo de Andrade
     page: 518-519
   notes: >-
-    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
-    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
-    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. Período
-    aberto (em exercício em 2021).
+    Signatário da carta da Câmara dos Bispos da IEAB ao arcebispo de Cantuária (Brasília, 14/11/2005); data de início
+    do cargo não é informada. Citado nesse cargo em documento de 14/11/2005. Anexo C da tese (lista 'Bispos e Bispas
+    da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos foi lido como período de exercício episcopal
+    na IEAB (e antecessoras), e não necessariamente o ano de sagração, pois o anexo não diz que o primeiro ano é
+    a sagração. Por isso não foi criada afirmação de ordenação. Período aberto (em exercício em 2021).
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dab
@@ -306,6 +309,20 @@ events:
       14 de dezembro de 2012- Bispo Dom Roger Bird em Carta Registrada em Cartório direcionado ao Bispo Primaz que
       resolve não mais resignar no dia 31/12/2012 como havia registrado em documento perante a Câmara dos Bispos
       no dia 21/11/2012
+- type: other
+  date: '2006-10-11'
+  description: >-
+    Gameleira instalado em 11/10/2006 como bispo diocesano do Recife (IEAB), com o primaz Maurício Andrade e delegação
+    da Igreja Episcopal (TEC) chefiada por Mark Sisk; segundo a Diocese Anglicana do Recife, a 'Diocese Missionária'
+    fora criada pelo Sínodo Geral da IEAB em julho de 2006 e o novo bispo e a nova diocese não eram por ela reconhecidos.
+  status: confirmed
+  sources:
+  - source: drv-nota-esclarecimento-2006
+    quote: >-
+      o ex-Bispo Diocesano de Pelotas-RS, Dom Sebastião Armando Gameleira Soares, estaria sendo instalado, no último
+      dia 11 de Outubro, com a presença do Primaz da Igreja Episcopal Anglicana do Brasil, Dom Maurício Andrade
+  - source: drv-nota-esclarecimento-2006
+    quote: criação pelo último Sínodo Geral da IEAB, em julho passado de uma “Diocese Missionária”
 - type: resignation
   date: '2012-11-21'
   description: >-

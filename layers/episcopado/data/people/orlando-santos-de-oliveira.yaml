@@ -144,8 +144,10 @@ affiliations:
   role: primate
   start: '2003'
   end: 2006-07
-  status: contested
+  status: confirmed
   sources:
+  - source: drv-pronunciamento-ieab-2005
+    quote: Dom Orlando Santos de Oliveira, Primaz
   - source: wp-en-ieab
     quote: Orlando Santos de Oliveira, 2003—2006
   - source: costa2021
@@ -170,9 +172,11 @@ affiliations:
     quote: D. Orlando Santos de Oliveira Bispo Primaz
     page: '224'
   notes: >-
-    Anexo E da tese (primazes da IEAB). A nota 96 diz Primaz 'de 2003 a 2009'; o texto (p. 107) diz 2003-2006 e
-    Maurício Andrade foi eleito Primaz em julho de 2006. Versão da nota 96; ver afirmação 2003-2006. Primaz em 2004-2005;
-    decretou a deposição de Robinson em Porto Alegre, 10/06/2005.
+    Signatário da carta da Câmara dos Bispos da IEAB ao arcebispo de Cantuária (Brasília, 14/11/2005); data de início
+    do cargo não é informada. Citado nesse cargo em documento de 14/11/2005. Anexo E da tese (primazes da IEAB).
+    A nota 96 diz Primaz 'de 2003 a 2009'; o texto (p. 107) diz 2003-2006 e Maurício Andrade foi eleito Primaz em
+    julho de 2006. Versão da nota 96; ver afirmação 2003-2006. Primaz em 2004-2005; decretou a deposição de Robinson
+    em Porto Alegre, 10/06/2005.
   discrepancies:
   - field: end
     value: '2009'
@@ -359,6 +363,21 @@ events:
     quote: deposto e um grupo de clérigos depostos que pertenceram à Diocese Anglicana do Recife.
   - source: ieab-2005-carta-venables
     quote: foi condenado pelo Tribunal Superior Eclesiástico
+- type: other
+  date: 2005-06
+  description: >-
+    Segundo entrevista do Rev. Estevão Menezes ao FolhaGospel.com (21/06/2005), logo após a notícia da deposição
+    o bispo Robinson manteve a agenda: ordenou cinco novos pastores na Con-Catedral da Ressurreição (João Pessoa)
+    e confirmou mais de 90 pessoas na Paróquia do Espírito Santo (Jaboatão); a sentença foi atribuída ao bispo primaz
+    Orlando Santos de Oliveira.
+  status: probable
+  sources:
+  - source: drv-entrevista-estevao-2005
+    quote: >-
+      ordenou 5 novos pastores na Con-Catedral da Ressurreição, João Pessoa, e confirmou (profissão de fé) mais
+      de 90 novos membros na Paróquia Anglicana do Espírito Santo, em Jaboatão.
+  - source: drv-entrevista-estevao-2005
+    quote: Das alegações do bispo primaz, Dom Orlando Santos de Oliveira
 - type: other
   date: null
   description: >-

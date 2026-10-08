@@ -1,7 +1,9 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: icalib
 acronym: ICALib
-name: Igreja Católica Apostólica Libertadora
+name: ICAL
+aliases:
+- Igreja Católica Apostólica Libertadora
 type: other
 country: BR
 description: Igreja católica independente do bispo Osiel Luiz Santos.

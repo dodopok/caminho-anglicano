@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-meridional-thomas-more
+name: Diocese Meridional Thomas More
+type: diocese
+relations:
+- type: part_of
+  target: iatb
+  status: confirmed
+  sources:
+  - source: lica-domomb-bula
+    quote: >-
+      RECEBEMOS em nossa Igreja o nosso irmão em Cristo, Orvandil Moreira Barbosa RG 703214855-3, no grau de BISPO
+      da DIOCESE MERIDIONAL THOMAS MORE a partir da data de emissão deste documento.
+  - source: lica-domomb-bula
+    quote: >-
+      aos nove (09) dias do mês de Julho do ano da Graça de Nosso Senhor Jesus Cristo de Dois mil e Nove (2009)

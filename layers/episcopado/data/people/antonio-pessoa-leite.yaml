@@ -1,12 +1,21 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: antonio-pessoa-leite
 name: Antônio Pessoa Leite
-biography: Bispo da Igreja Anglicana Missionária do Redentor, eleito para auxiliar o primaz Marcos Fradique.
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Antonio Pessoa Leite também foi eleito bispo para auxiliar no governo da Igreja do Redentor.
-  page: '126'
+- source: drv-comunicado-imprensa-2006
+  quote: Dom Antonio Pessoa Leite, Bispo Auxiliar
 affiliations:
+- jurisdiction: iamr
+  role: auxiliary_bishop
+  status: confirmed
+  sources:
+  - source: drv-comunicado-imprensa-2006
+    quote: Dom Antonio Pessoa Leite, Bispo Auxiliar
+  notes: >-
+    Consta com esse cargo na lista de fundadores da Declaração da Boa Viagem (30/09/2006); início do cargo não informado.
+    Em Célio Spinelli, o texto acrescenta 'Bispo de Diocese Anglicana Thomas Becket e Vigário Geral da Arquidiocese
+    Thomas Cranmer'. Citado nesse cargo em documento de 30/09/2006.
 - jurisdiction: iamr
   role: bishop
   status: probable

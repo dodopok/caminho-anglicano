@@ -1,21 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ian-meldrum
 name: Ian Meldrum
-biography: >-
-  Clérigo(a) da Diocese Anglicana do Recife excluído(a) da IEAB e das Sagradas Ordens em 23/08/2005 (Decreto Diocesano
-  nº 01/2005) por abandono de comunhão, por ter seguido Robinson Cavalcanti.
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
-- source: costa2021
-  quote: >-
-    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
-    Ordens, os clérigos a seguir mencionados: … Rev. Ian Meldrum … Recife, 23 de agosto de 2005.
-  page: 560-561
+- source: drv-declaracao-32
+  quote: Rev. Ian Meldrum
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
   start: '2005'
-  status: probable
+  status: confirmed
   sources:
+  - source: drv-declaracao-32
+    quote: Rev. Ian Meldrum
+  - source: drv-nota-esclarecimento-2006
+    quote: Ian Meldrum
   - source: costa2021
     quote: >-
       Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
@@ -24,9 +23,11 @@ affiliations:
       com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
   notes: >-
-    Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson
-    Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005
-    é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
+    Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
+    Esclarecimento); início e fim do vínculo não informados. Anexo R: o(a) clérigo(a) declarou, em resposta à convocação
+    de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
+    dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
+    exata.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -46,6 +47,24 @@ affiliations:
     é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
     adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado.
 events:
+- type: other
+  date: 1977/1985
+  description: >-
+    O bispo Sherrill criou o NAET (Núcleo de Estudos Anglicanos), onde estudaram Ian Meldrum, Robinson Cavalcanti
+    e Antônio Carlos (da Bahia); também foram ordenados no período Sherrill Josephino Lobato (Belém) e um fazendeiro
+    japonês, ministro local. Washington Franco foi deixado já preparado para a ordenação.
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      onde estudaram três dos seus ordinandos, os futuros reverendos: Ian Meldrum, Robinson Cavalcanti e Antônio
+      Carlos (da Bahia)
+  - source: drv-resgatando-ii
+    quote: >-
+      Os outros Ministros Ordenados durante o período Sherrill foram: Josephino Lobato, de Belém-PA e um fazendeiro
+      japonês
+  - source: drv-resgatando-ii
+    quote: Deixou o Bispo, ao final, já preparado o processo do Postulante e depois Rev. Washington Franco.
 - type: other
   date: '1997-06-28'
   description: >-

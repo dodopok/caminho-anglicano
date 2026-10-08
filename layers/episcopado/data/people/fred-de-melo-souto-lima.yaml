@@ -1,21 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: fred-de-melo-souto-lima
 name: Fred de Melo Souto Lima
-biography: >-
-  Clérigo(a) da Diocese Anglicana do Recife excluído(a) da IEAB e das Sagradas Ordens em 23/08/2005 (Decreto Diocesano
-  nº 01/2005) por abandono de comunhão, por ter seguido Robinson Cavalcanti.
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
-- source: costa2021
-  quote: >-
-    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
-    Ordens, os clérigos a seguir mencionados: … Rev. Fred de Melo Souto Lima … Recife, 23 de agosto de 2005.
-  page: 560-561
+- source: drv-declaracao-32
+  quote: Rev. Fred de Melo Souto Lima
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
   start: '2005'
-  status: probable
+  status: confirmed
   sources:
+  - source: drv-declaracao-32
+    quote: Rev. Fred de Melo Souto Lima
+  - source: drv-nota-esclarecimento-2006
+    quote: Fred de Melo Souto Lima
   - source: costa2021
     quote: >-
       Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
@@ -24,9 +23,11 @@ affiliations:
       plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
   notes: >-
-    Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson
-    Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005
-    é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
+    Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
+    Esclarecimento); início e fim do vínculo não informados. Anexo R: o(a) clérigo(a) declarou, em resposta à convocação
+    de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
+    dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
+    exata.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar

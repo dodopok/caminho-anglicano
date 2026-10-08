@@ -1,13 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ricardo-vicente-dos-anjos
 name: Ricardo Vicente dos Anjos
+full_name: Ricardo Vicente dos Anjos
+aliases:
+- Dom Ricardo
 biography: >-
-  Cofundador da Igreja Católica Anglicana (2017); em 2023 saiu com um grupo e tornou-se arcebispo primaz da Igreja
-  Católica Anglicana do Brasil (ICA-Brasil).
+  Bispo da Igreja Católica Anglicana (ICA) até a notificação de 24/05/2018, que o declara fora da Mitra Primacial;
+  co-fundador e arcebispo primaz da Igreja Católica Anglicana do Brasil (ICA-Brasil), sediada em Ananindeua (PA).
+  Foi o sagrante principal de José Fernando de Faria (29/07/2018) e de Marcos Vinícius de Souza (2018).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Um deles foi dom Ricardo Vicente dos Anjos, que se tornou primaz da ICA-Brasil.
-  page: '139'
+- source: lica-ica-notificacao
+  quote: >-
+    os Bispos Dom Altamiro Pereira do Amaral, Dom Jorge dos Santos Costa e Dom Ricardo Vicente dos Anjos não mais
+    integram esta Mitra Primacial
+- source: lica-icabr-home
+  quote: 'Arcebispo Primaz +++ Dom Ricardo Vicente dos Anjos Endereço Primacial: Avenida Independência n.º 58'
 ordinations:
 - order: episcopate
   date: '2012-07-15'
@@ -59,6 +66,23 @@ affiliations:
       Anglicana.
     page: '137'
 - jurisdiction: ica-brasil
+  role: other
+  role_description: arcebispo_primaz
+  start: '2018'
+  status: confirmed
+  sources:
+  - source: lica-icabr-home
+    quote: 'Arcebispo Primaz +++ Dom Ricardo Vicente dos Anjos Endereço Primacial: Avenida Independência n.º 58'
+  - source: lica-iaces-historia
+    quote: >-
+      Nós, Dom Ricardo Vicente dos Anjos, Dom Jorge dos Santos Costa, Dom Altamiro Pereira do Amaral e Padre Marcos
+      Vinicius de Souza, depois de um Cisma
+  - source: lica-iaces-clero
+    quote: 'Bispo Ordenante: + Dom Ricardo Vicente dos Anjos, ICA-Brasil'
+  notes: >-
+    Sede primacial: Avenida Independência, 58, bairro 40 Horas, Ananindeua (PA). Início em 2018 conforme texto da
+    IACES; outra fonte dá 2023 para a fundação da ICA-Brasil (ver dúvidas).
+- jurisdiction: ica-brasil
   role: primate
   start: '2023'
   status: probable
@@ -66,6 +90,37 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: Dom Ricardo Vicente dos Anjos arcebispo primaz
     page: '139'
+- jurisdiction: ica
+  role: bishop
+  end: '2018-05-24'
+  end_reason: schism
+  status: confirmed
+  sources:
+  - source: lica-ica-notificacao
+    quote: >-
+      os Bispos Dom Altamiro Pereira do Amaral, Dom Jorge dos Santos Costa e Dom Ricardo Vicente dos Anjos não mais
+      integram esta Mitra Primacial
+  - source: lica-ica-sobre
+    quote: Dom Jorge Costa, Dom Ricardo Vicente dos Anjos e Dom Franciney Rodrigues Pantoja
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      que funcionam sob os cuidados de dom Orvandil Moreira Barbosa, dom Jorge Costa, dom Ricardo Vicente dos Anjos
+      e dom Franciney Rodrigues Pantoja
+    page: '138'
+  notes: >-
+    A ICA registra a saída como exclusão ("excardinados, não dispõem mais do direito de celebrar..."); do lado da
+    ICA-Brasil, descreve-se um "Cisma" que originou a Província Católica Anglicana do Brasil. A nota de 24/05/2018
+    não associa cada bispo a uma diocese específica; cita as dioceses de Belém e Santa Cruz de Salvador (vacantes)
+    e Mato Grosso do Sul (extinta).
+  discrepancies:
+  - field: end
+    value: '2023'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        que funcionam sob os cuidados de dom Orvandil Moreira Barbosa, dom Jorge Costa, dom Ricardo Vicente dos
+        Anjos e dom Franciney Rodrigues Pantoja
+      page: '138'
 - jurisdiction: iatb
   role: clergy
   end: '2017'
@@ -78,14 +133,31 @@ affiliations:
       Anglicana.
     page: '137'
   notes: Saiu da IATB com um grupo de clérigos (época do primaz Alfredo Dórea).
-- jurisdiction: ica
-  role: bishop
-  end: '2023'
-  end_reason: schism
+events:
+- type: other
+  date: '2018-05-24'
+  description: >-
+    Notificação da Câmara Episcopal e Arcebispado Primaz da ICA: Altamiro Pereira do Amaral, Jorge dos Santos Costa
+    e Ricardo Vicente dos Anjos "não mais integram esta Mitra Primacial"; as dioceses de Belém e de Santa Cruz de
+    Salvador passam à responsabilidade do arcebispo primaz e a Diocese de Mato Grosso do Sul é extinta e reintegrada
+    à do Centro Oeste.
+  status: confirmed
+  sources:
+  - source: lica-ica-notificacao
+    quote: >-
+      A Diocese de Mato Grosso do Sul é extinta e reintegrada à Diocese Católica Anglicana do Centro Oeste.
+  - source: lica-ica-notificacao
+    quote: Goiânia, 24 de maio de 2018
+- type: other
+  date: 2018-07
+  description: >-
+    1º Sínodo da Província Católica Anglicana do Brasil (ICA-Brasil), em São Paulo, em julho de 2018, com aprovação
+    dos primeiros cânones e "Sagrações episcopais"; em 29/07/2018 foi sagrado José Fernando de Faria. A ICA (de
+    Orvandil) reagiu em 30/07/2018 negando ter sagrado qualquer bispo após seu registro em cartório e designado
+    bispos para Rio Grande do Sul, Espírito Santo, São Paulo e Amazônia.
   status: probable
   sources:
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      que funcionam sob os cuidados de dom Orvandil Moreira Barbosa, dom Jorge Costa, dom Ricardo Vicente dos Anjos
-      e dom Franciney Rodrigues Pantoja
-    page: '138'
+  - source: lica-iaces-historia
+    quote: com nosso Primeiro Sínodo em São Paulo Brasil, em Julho de 2018
+  - source: lica-ica-nota-esclarecimento
+    quote: nem a ninguém designou para o Rio Grande do Sul, Espírito Santo, São Paulo e Amazônia

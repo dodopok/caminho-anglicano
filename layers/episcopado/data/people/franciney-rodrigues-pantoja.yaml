@@ -1,12 +1,35 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: franciney-rodrigues-pantoja
 name: Franciney Rodrigues Pantoja
-biography: Bispo da Diocese Católica Anglicana do Baixo Tocantins (ICA).
+full_name: Franciney Rodrigues Pantoja
+aliases:
+- Dom Franciney
+- Dom Franciney Pantoja
+biography: >-
+  Bispo titular da Diocese Católica Anglicana do Baixo Tocantins (Pará), com atuação em Cametá; na Câmara Episcopal
+  da ICA aparece como "Arcebispo Primaz Sufragâneo e Presidente do Conselho Executivo Administrativo Primacial"
+  (2017). Signatário do Manifesto à Nação Brasileira (Cametá, 12/11/2017).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Diocese Católica Anglicana do Baixo Tocantins, com o bispo Franciney
-  page: '138'
+- source: lica-ica-manifesto
+  quote: >-
+    Dom Franciney Rodrigues Pantoja – Bispo Titular da Diocese Católica Anglicana do Baixo Tocantins do Pará
+- source: lica-ica-franciney-templo
+  quote: >-
+    + Dom Franciney Pantoja: Arcebispo Primaz Sufragâneo e Presidente do Conselho Executivo Administrativo Primacial.
 affiliations:
+- jurisdiction: ica
+  role: diocesan_bishop
+  diocese: diocese-catolica-anglicana-do-baixo-tocantins
+  status: confirmed
+  sources:
+  - source: lica-ica-dioceses
+    quote: 'Diocese Católica Anglicana do Baixo Tocantis: Bispo Dom Franciney Pantoja;'
+  - source: lica-ica-manifesto
+    quote: >-
+      Dom Franciney Rodrigues Pantoja – Bispo Titular da Diocese Católica Anglicana do Baixo Tocantins do Pará;
+  notes: >-
+    Mantém-se na Câmara Episcopal em 2017-2020, quando o site deixa de ser atualizado. Em julho de 2017 o site o
+    chama "Arcebispo Primaz Sufragâneo e Presidente do Conselho Executivo Administrativo Primacial".
 - jurisdiction: ica
   role: bishop
   diocese: diocese-catolica-anglicana-do-baixo-tocantins
@@ -15,3 +38,16 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: Diocese Católica Anglicana do Baixo Tocantins, com o bispo Franciney
     page: '138'
+events:
+- type: other
+  date: '2017-11-09'
+  description: >-
+    II Sínodo Nacional da Igreja Católica Anglicana, em Cametá (PA), de 9 a 12 de novembro de 2017, convocado pelo
+    arcebispo primaz em 09/10/2017 (designado "II Sínodo"). Dele saiu o "Manifesto à Nação Brasileira", assinado
+    por Orvandil Moreira Barbosa e Franciney Rodrigues Pantoja.
+  status: confirmed
+  sources:
+  - source: lica-ica-sinodo-convocacao
+    quote: a realizar-se na cidade de Cametá, Estado do Pará dos dias 09 a 12 de novembro
+  - source: lica-ica-manifesto
+    quote: reunidos em Sínodo Nacional em Cametá, Pará, de 09 – 12 de novembro  de 2017

@@ -1,8 +1,10 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jose-fernando-de-faria
 name: José Fernando de Faria
+full_name: José Fernando de Faria
 aliases:
 - DE FARIA Jose Fernando
+- Dom Fernando
 biography: >-
   A lista de bispos da IAL registra 'De Faria Jose Fernando', brasileiro, com 'ratificação' em Fortaleza em 2019
   (ou seja, já tinha ordens episcopais anteriores que foram ratificadas, segundo a convenção da lista).
@@ -13,12 +15,24 @@ sources:
     - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
 ordinations:
 - order: episcopate
-  date: '2019'
-  place: Fortaleza (CE)
-  jurisdiction: icala
-  principal_consecrator: leonardo-marin-saavedra
-  status: probable
+  date: '2018-07-29'
+  place: Espaço das Irmãs de N. S. da Consolata, São Paulo (SP)
+  jurisdiction: ica-brasil
+  principal_consecrator: ricardo-vicente-dos-anjos
+  co_consecrators:
+  - altamiro-pereira-do-amaral
+  - jorge-costa
+  status: contested
   sources:
+  - source: lica-iaces-clero
+    quote: >-
+      Ordenação Episcopal: 29/07/2018 no Espaços das Irmãs de N. S. da Consolata da Igreja Católica Apostólica Romana
+      - São Paulo-SP Bispo Ordenante: + Dom Ricardo Vicente dos Anjos, ICA-Brasil Bispo co-ordenante: + Dom Jorge
+      dos Santos Costa, ICA-Brasil Bispo co-ordenante: + Dom Altamiro Pereira do Amaral, ICA-Brasil
+  - source: lica-ica-nota-esclarecimento
+    quote: >-
+      homens que se dizem sagrados bispos em São Paulo no dia 29/07/18 pela Igreja Católica Anglicana usam falsa
+      e mentirosamente o nome desta instituição eclesiástica
   - source: lac-ial-sucessao
     quote: >-
       41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
@@ -27,12 +41,93 @@ ordinations:
     quote: >-
       Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
       Unidos.
+  - source: lica-iaces-clero
+    quote: >-
+      Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana Latina
+      Americana)
+  discrepancies:
+  - field: date
+    value: '2019'
+    sources:
+    - source: lac-ial-sucessao
+      quote: >-
+        41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
+        - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
+        Unidos.
+  - field: place
+    value: Fortaleza (CE)
+    sources:
+    - source: lac-ial-sucessao
+      quote: >-
+        41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
+        - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
+        Unidos.
+  - field: jurisdiction
+    value: icala
+    sources:
+    - source: lac-ial-sucessao
+      quote: >-
+        41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
+        - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
+        Unidos.
+  - field: principal_consecrator
+    value: leonardo-marin-saavedra
+    sources:
+    - source: lac-ial-sucessao
+      quote: >-
+        41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
+        - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
+        Unidos.
+    - source: lica-iaces-clero
+      quote: >-
+        Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana
+        Latina Americana)
+  - field: date
+    value: '2019-11-02'
+    sources:
+    - source: lica-iaces-clero
+      quote: >-
+        Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana
+        Latina Americana)
+  - field: jurisdiction
+    value: paces
+    sources:
+    - source: lica-iaces-clero
+      quote: >-
+        Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana
+        Latina Americana)
   notes: >-
-    Na lista da IAL consta como 'Ratification' em Fortaleza, 2019: a IAL ratificou ordens que ele já tinha, em vez
-    de conferir sagração nova. Cant (2024) diz que ele foi 'sagrado bispo por dom Leonardo Marin-Saavedra'. Sagrante
-    inferido do contexto da lista (consagrações da IAL). Primaz da extinta Província Anglicana Católica do Espírito
-    Santo.
+    Data e cidade concordam entre a lista de clero da IACES (que nomeia os sagrantes) e a nota da ICA de 30/07/2018,
+    que nega que a ICA tenha sagrado qualquer bispo após seu registro em cartório. A nota da ICA não nomeia os sagrados.
+    Por outro lado, a história da jurisdição afirma que Faria foi sagrado por Leonardo Marin Saavedra; o site da
+    IACES registra a ratificação em 02/11/2019 por ele. Na lista da IAL consta como 'Ratification' em Fortaleza,
+    2019: a IAL ratificou ordens que ele já tinha, em vez de conferir sagração nova. Cant (2024) diz que ele foi
+    'sagrado bispo por dom Leonardo Marin-Saavedra'. Sagrante inferido do contexto da lista (consagrações da IAL).
+    Primaz da extinta Província Anglicana Católica do Espírito Santo. Ratificação da ordenação episcopal de 29/07/2018,
+    segundo o site da própria IACES.
 affiliations:
+- jurisdiction: paces
+  role: other
+  role_description: arcebispo_primaz
+  start: '2018-10-11'
+  status: probable
+  sources:
+  - source: lica-iaces-historia
+    quote: >-
+      fora elevado ao encargo de Arcebispo do Brasil e Primaz de toda a América do Sul em 11/10/2018 sob as bênçãos
+      de Deus e do Patriarca Most Reverendo Dr. Heigo Ritsbek
 - jurisdiction: paces
   role: founder
   status: probable
@@ -80,3 +175,26 @@ events:
     quote: >-
       39th ( Thirty-Nineth ) Bishop consecrated by IAL USA/Canada: -065. ROMERO Cristian Gerardo. - Married. - Argentinean
       Citizen - in 2019 - Fortaleza city, Ceara, Brazil - (Still living).
+- type: other
+  date: 2018-07
+  description: >-
+    1º Sínodo da Província Católica Anglicana do Brasil (ICA-Brasil), em São Paulo, em julho de 2018, com aprovação
+    dos primeiros cânones e "Sagrações episcopais"; em 29/07/2018 foi sagrado José Fernando de Faria. A ICA (de
+    Orvandil) reagiu em 30/07/2018 negando ter sagrado qualquer bispo após seu registro em cartório e designado
+    bispos para Rio Grande do Sul, Espírito Santo, São Paulo e Amazônia.
+  status: probable
+  sources:
+  - source: lica-iaces-historia
+    quote: com nosso Primeiro Sínodo em São Paulo Brasil, em Julho de 2018
+  - source: lica-ica-nota-esclarecimento
+    quote: nem a ninguém designou para o Rio Grande do Sul, Espírito Santo, São Paulo e Amazônia
+- type: other
+  date: '2018-10-11'
+  description: >-
+    José Fernando de Faria é "elevado ao encargo de Arcebispo do Brasil e Primaz de toda a América do Sul" em 11/10/2018
+    pelo patriarca Heigo Ritsbek ("AngloCatholic of Estonia"), dando origem à Igreja Anglo-Católica do Brasil e
+    América do Sul (IACES).
+  status: probable
+  sources:
+  - source: lica-iaces-historia
+    quote: fora elevado ao encargo de Arcebispo do Brasil e Primaz de toda a América do Sul em 11/10/2018

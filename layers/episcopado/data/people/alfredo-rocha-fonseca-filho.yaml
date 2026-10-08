@@ -62,18 +62,35 @@ affiliations:
     brasileiro da Paróquia da Santíssima Trindade, Recife ("quase uma década" depois de 1958).
 - jurisdiction: ieab
   role: clergy
-  start: '1957'
+  start: '1966'
+  end_reason: left
   status: confirmed
   sources:
   - source: cd1968
     quote: FONSECA Fl LHO, Alfredo Rocha da (CBra) Trans to Brazil Ch 25 Apr 65.
+  - source: drv-resgatando-i
+    quote: >-
+      O trabalho de evangelização para brasileiros, em língua portuguesa, tem como pioneiro, em 1966, o Rev. Alfredo
+      Rocha da Fonseca Filho
+  - source: drv-resgatando-i
+    quote: >-
+      teve de fugir do Recife perseguido pela ditadura militar, por dar assistência pastoral aos presos políticos
+      da Casa de Detenção
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1957 - … Alfredo Rocha Fonseca Filho
     page: '371'
   notes: >-
     Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
-    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
-    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Local: Recife, Holy Trinity.
+    Data de saída não informada; motivo segundo o texto: perseguição pela ditadura militar. Organização citada como
+    Igreja Episcopal Brasileira. Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  discrepancies:
+  - field: start
+    value: '1957'
+    sources:
+    - source: kickhofel-1995
+      quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1957 - … Alfredo Rocha Fonseca Filho
+      page: '371'
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-darj

@@ -1,12 +1,41 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: orestes-calazans-filho
 name: Orestes Calazans Filho
-biography: Bispo da Igreja Católica Anglicana do Brasil (Minas Gerais).
+full_name: Orestes Calazans Filho
+aliases:
+- Dom Orestes
+biography: >-
+  Bispo diocesano de Minas Gerais segundo o site da ICA-Brasil (2024-2025). Um texto do site da IACES (c. 2018-2020)
+  o inclui, com José Fernando de Faria e Jorge dos Santos Costa, entre os que decidiram deixar a Província Católica
+  Anglicana do Brasil para criar a Igreja Anglo-Católica do Brasil e América do Sul.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Dom Orestes Calazans Filho, bispo de Minas Gerais
-  page: '139'
+- source: lica-icabr-quemsomos
+  quote: Dom Orestes Calazans Filho Bispo diocesano Minas Gerais
+- source: lica-iaces-historia
+  quote: >-
+    Nós + Dom José Fernando de Faria, + Dom Jorge dos Santos Costa, + Dom Orestes Calazans Filho achamos por bem
 affiliations:
+- jurisdiction: paces
+  role: bishop
+  start: '2018'
+  status: probable
+  sources:
+  - source: lica-iaces-historia
+    quote: >-
+      Nós + Dom José Fernando de Faria, + Dom Jorge dos Santos Costa, + Dom Orestes Calazans Filho achamos por bem
+      e para maior glória de Deus nos desligarmos da Província Católica Anglicana do Brasil
+  notes: >-
+    O texto é assinado por três bispos, mas a lista de clero da IACES em 2020 não registra Orestes Calazans Filho;
+    seu retorno ou permanência na ICA-Brasil não está documentado.
+- jurisdiction: ica-brasil
+  role: diocesan_bishop
+  status: probable
+  sources:
+  - source: lica-icabr-quemsomos
+    quote: Dom Orestes Calazans Filho Bispo diocesano Minas Gerais
+  notes: >-
+    Local: Minas Gerais. Consta na lista do site da ICA-Brasil (capturas de 12/2024, 04/2025 e 09/2025). Início
+    não informado. O site da IACES o inclui entre os que se desligaram da Província em 2018 (ver evento).
 - jurisdiction: ica-brasil
   role: bishop
   status: probable

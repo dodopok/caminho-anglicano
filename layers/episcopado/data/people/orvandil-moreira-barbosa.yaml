@@ -4,12 +4,20 @@ name: Orvandil Moreira Barbosa
 full_name: Orvandil Moreira Barbosa
 aliases:
 - Dom Orvandil
+- Dom Orvandil M. Barbosa
 biography: >-
-  Bispo oriundo da IATB, cofundador da Igreja Católica Anglicana (2017) e bispo da sua Diocese Centro Oeste.
+  Arcebispo primaz e presidente da Mitra Primacial da Igreja Católica Anglicana (Goiânia). Segundo matéria de 2008,
+  foi padre anglicano desde 1972 e deixou a Igreja Anglicana em 2004; foi sagrado bispo da Igreja Católica Carismática
+  em Belém (27/07/2008) e incardinado na Província Anglicana Tradicional do Brasil em 09/07/2009 como bispo da Diocese
+  Meridional Thomas More. Edita o site e canal Cartas Proféticas.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: dom Orvandil – oriundo da IATB
-  page: '138'
+- source: lica-ica-sobre
+  quote: '++ Dom Orvandil M. Barbosa: Arcebispo Primaz e bispo da Diocese Anglicana Centro Oeste;'
+- source: lica-cnpj-ica
+  quote: '"nome_socio":"ORVANDIL MOREIRA BARBOSA"'
+- source: lica-brasil247-orvandil
+  quote: >-
+    Bispo Primaz da Igreja Católica Anglicana, Editor e apresentador do Site e do Canal Cartas Proféticas
 ordinations:
 - order: diaconate
   date: '1989'
@@ -21,6 +29,48 @@ ordinations:
     page: '373'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: null
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: lica-domomb-midiamax
+    quote: Em 1972, tornou-se padre da Igreja Anglicana que permite o casamento.
+  notes: >-
+    Dado de entrevista à imprensa de 2008, sem indicar a jurisdição anglicana nem o ordenante. Diverge da lista
+    do clero da IEAB (Kickhöfel, 1995), que o registra com diaconato em 1989. A matéria diz que ele se tornou padre
+    em 1972, o que não combina com o diaconato de 1989 na IEAB registrado por Kickhöfel; data deixada em aberto.
+- order: episcopate
+  date: '2008-07-27'
+  place: Belém (PA)
+  jurisdiction: icc
+  office: diocesan
+  principal_consecrator: edilson-vinagre
+  co_consecrators:
+  - eduardo-mota
+  - manoel-queiroz
+  - nilton-santos
+  - raymundo-costa
+  status: confirmed
+  sources:
+  - source: lica-domomb-sagracao
+    quote: Será sagrado bispo o Reverendíssimo Padre ORVANDIL MOREIRA BARBOSA, da cidade de Campo Grande, MS
+  - source: lica-domomb-sagracao
+    quote: >-
+      Será sagrante/ordenante DOM EDILSON VINAGRE, bispo primaz da ICC e co-sagrantes/ordenantes DOM MANOEL QUEIROZ,
+      bispo auxiliar da ICC , Dom NILTON SANTOS , bispo diocesano de Rio Maria, PA, Dom EDUARDO MOTA, bispo diocesano
+      de Cametá, PA e Dom Raymundo Costa , bispo diocesano de Araguaina( TO)
+  - source: lica-domomb-midiamax
+    quote: >-
+      O bispo da Católica Carismática, Orvandil Moreira Barbosa, será sagrado neste domingo (27) em Belém do Pará
+  - source: lica-domomb-entrevista
+    quote: a TV RBA levou ao ar a matéria sobre a sagração e ordenações da ICC
+  notes: >-
+    Os textos de 2008 são anúncios da cerimônia (ofício da ICC à imprensa e matéria do Midiamax de 25/07/2008);
+    a realização é corroborada pela reportagem de TV de 31/07/2008 sobre "a sagração e ordenações" e pelo fato de,
+    em 2009, a IATB recebê-lo "no grau de BISPO". O ofício da ICC indica como local o Clube Alegria (Av. Marques
+    do Herval, bairro da Pedreira); outro convite do próprio Orvandil cita a Rodovia Augusto Montenegro, Rua Bragança,
+    46 (bairro da Cabanagem). Seria bispo diocesano de Campo Grande (MS), Diocese Nossa Senhora do Perpétuo Socorro.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -31,6 +81,55 @@ affiliations:
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1989 - … Orvandil Moreira Barbosa
     page: '373'
   notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: icc
+  role: diocesan_bishop
+  diocese: diocese-nossa-senhora-do-perpetuo-socorro
+  start: '2008-07-27'
+  end: '2009'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: lica-domomb-midiamax
+    quote: para assumir suas funções na Diocese Nossa Senhora do Perpétuo Socorro
+  notes: >-
+    Local: Campo Grande, MS. Fim aproximado: em 09/07/2009 foi incardinado na IATB (ver vínculo seguinte). Nome
+    da diocese conforme matéria do Midiamax; o blog o assina como "Bispo Diocesano da ICC do Centro Oeste e do Sul".
+- jurisdiction: iatb
+  role: bishop
+  diocese: diocese-meridional-thomas-more
+  start: '2009-07-09'
+  end: '2017'
+  end_reason: schism
+  status: confirmed
+  sources:
+  - source: lica-domomb-bula
+    quote: >-
+      RECEBEMOS em nossa Igreja o nosso irmão em Cristo, Orvandil Moreira Barbosa RG 703214855-3, no grau de BISPO
+      da DIOCESE MERIDIONAL THOMAS MORE a partir da data de emissão deste documento.
+  - source: lica-domomb-bula
+    quote: >-
+      aos nove (09) dias do mês de Julho do ano da Graça de Nosso Senhor Jesus Cristo de Dois mil e Nove (2009)
+  notes: >-
+    Bula de incardinação assinada por Rui Costa Barbosa, arcebispo provincial da Província Anglicana Tradicional
+    do Brasil ("In Full Communion with The Traditional Church of England"), em Ribeirão Pires (SP). O ano de saída
+    (2017) vem de outras fontes (formação da ICA), não da bula.
+- jurisdiction: ica
+  role: other
+  role_description: arcebispo_primaz
+  diocese: diocese-centro-oeste
+  start: '2017'
+  status: confirmed
+  sources:
+  - source: lica-ica-sobre
+    quote: '++ Dom Orvandil M. Barbosa: Arcebispo Primaz e bispo da Diocese Anglicana Centro Oeste;'
+  - source: lica-cnpj-ica
+    quote: '"data_entrada_sociedade":"2017-10-31"'
+  - source: lica-ica-manifesto
+    quote: >-
+      Dom Orvandil Moreira Barbosa – Arcebispo Primaz e Bispo da Diocese Católica Anglicana do Centro Oeste;
+  notes: >-
+    Consta como sócio-presidente da Mitra Primacial Católica Anglicana desde 31/10/2017 (cadastro CNPJ). Em 2026
+    ainda se apresenta como bispo primaz da ICA (página de autor do Brasil 247).
 - jurisdiction: ica
   role: founder
   start: '2017'
@@ -62,6 +161,56 @@ affiliations:
     quote: Diocese Centro Oeste, com o bispo Orvandil
     page: '138'
 events:
+- type: other
+  date: '2017-10-31'
+  description: >-
+    Registro da Mitra Primacial Católica Anglicana (nome fantasia "Igreja Católica Anglicana") no CNPJ 29.104.811/0001-14,
+    em Goiânia (GO), organização religiosa, com Orvandil Moreira Barbosa como presidente. Atividade iniciada em
+    31/10/2017; situação cadastral "inapta" desde 30/05/2019 por omissão de declarações.
+  status: confirmed
+  sources:
+  - source: lica-cnpj-ica
+    quote: '"razao_social":"MITRA PRIMACIAL CATOLICA ANGLICANA"'
+  - source: lica-cnpj-ica
+    quote: '"data_inicio_atividade":"2017-10-31"'
+  - source: lica-cnpj-ica
+    quote: '"motivo_situacao_cadastral":63'
+- type: other
+  date: '2017-11-09'
+  description: >-
+    II Sínodo Nacional da Igreja Católica Anglicana, em Cametá (PA), de 9 a 12 de novembro de 2017, convocado pelo
+    arcebispo primaz em 09/10/2017 (designado "II Sínodo"). Dele saiu o "Manifesto à Nação Brasileira", assinado
+    por Orvandil Moreira Barbosa e Franciney Rodrigues Pantoja.
+  status: confirmed
+  sources:
+  - source: lica-ica-sinodo-convocacao
+    quote: a realizar-se na cidade de Cametá, Estado do Pará dos dias 09 a 12 de novembro
+  - source: lica-ica-manifesto
+    quote: reunidos em Sínodo Nacional em Cametá, Pará, de 09 – 12 de novembro  de 2017
+- type: other
+  date: '2018-05-24'
+  description: >-
+    Notificação da Câmara Episcopal e Arcebispado Primaz da ICA: Altamiro Pereira do Amaral, Jorge dos Santos Costa
+    e Ricardo Vicente dos Anjos "não mais integram esta Mitra Primacial"; as dioceses de Belém e de Santa Cruz de
+    Salvador passam à responsabilidade do arcebispo primaz e a Diocese de Mato Grosso do Sul é extinta e reintegrada
+    à do Centro Oeste.
+  status: confirmed
+  sources:
+  - source: lica-ica-notificacao
+    quote: >-
+      A Diocese de Mato Grosso do Sul é extinta e reintegrada à Diocese Católica Anglicana do Centro Oeste.
+  - source: lica-ica-notificacao
+    quote: Goiânia, 24 de maio de 2018
+- type: other
+  date: '2004'
+  description: >-
+    Segundo matéria do Midiamax (25/07/2008), Orvandil Moreira Barbosa deixou a Igreja Anglicana em 2004, ficou
+    sem denominação e foi convidado para o clero da Igreja Católica Carismática de Belém para expandi-la ao Centro-Oeste
+    e Sul.
+  status: probable
+  sources:
+  - source: lica-domomb-midiamax
+    quote: Em 2004, Orvandil abandonou a Igreja Anglicana e ficou até o início do ano sem uma denominação.
 - type: other
   date: '2018-07-23'
   description: >-

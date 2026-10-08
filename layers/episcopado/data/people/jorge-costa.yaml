@@ -1,18 +1,70 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jorge-costa
 name: Jorge Costa
-biography: Dom Jorge Costa, bispo da Igreja Católica Anglicana.
+full_name: Jorge dos Santos Costa
+aliases:
+- Dom Jorge dos Santos Costa
+- Jorge dos Santos Costa
+biography: >-
+  Bispo da Igreja Católica Anglicana (ICA) com atuação na Bahia; declarado fora da Mitra Primacial da ICA em 24/05/2018.
+  Co-fundador da ICA-Brasil (1º Sínodo, São Paulo, julho de 2018) e co-sagrante de José Fernando de Faria (29/07/2018)
+  e de Marcos Vinícius de Souza. Depois, segundo o site da IACES, assinou com Faria e Orestes Calazans Filho o desligamento
+  da Província Católica Anglicana do Brasil.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: dom Jorge Costa
-  page: '138'
+- source: lica-ica-notificacao
+  quote: Dom Jorge dos Santos Costa
+- source: lica-iaces-historia
+  quote: >-
+    Nós, Dom Ricardo Vicente dos Anjos, Dom Jorge dos Santos Costa, Dom Altamiro Pereira do Amaral e Padre Marcos
+    Vinicius de Souza
 affiliations:
-- jurisdiction: ica
+- jurisdiction: ica-brasil
   role: bishop
+  start: '2018'
+  end: '2018'
+  end_reason: schism
   status: probable
   sources:
+  - source: lica-iaces-clero
+    quote: 'Bispo co-ordenante: + Dom Jorge dos Santos Costa, ICA-Brasil'
+  - source: lica-iaces-historia
+    quote: >-
+      Nós + Dom José Fernando de Faria, + Dom Jorge dos Santos Costa, + Dom Orestes Calazans Filho achamos por bem
+      e para maior glória de Deus nos desligarmos da Província Católica Anglicana do Brasil
+  notes: >-
+    Fim em 2018 (data do desligamento não indicada precisamente; a elevação de Faria a arcebispo, que o texto cita,
+    é de 11/10/2018). Jorge Costa não consta na lista de bispos do site da ICA-Brasil em 2024-2025.
+- jurisdiction: ica
+  role: bishop
+  end: '2018-05-24'
+  end_reason: schism
+  status: confirmed
+  sources:
+  - source: lica-ica-notificacao
+    quote: Dom Jorge dos Santos Costa
+  - source: lica-ica-sobre
+    quote: >-
+      Dom Orvandil Moreira Barbosa, Dom Jorge Costa, Dom Ricardo Vicente dos Anjos e Dom Franciney Rodrigues Pantoja
   - source: cant-novas-igrejas-2024
     quote: >-
       que funcionam sob os cuidados de dom Orvandil Moreira Barbosa, dom Jorge Costa, dom Ricardo Vicente dos Anjos
       e dom Franciney Rodrigues Pantoja
     page: '138'
+  notes: >-
+    A página "Sobre" da ICA liga o trabalho na Bahia a Dom Jorge Costa (ordem "Goiás, Bahia e Pará ... respectivamente");
+    o site ainda traz a legenda "Dom Jorge celebra missa em Salvador, BH".
+events:
+- type: other
+  date: '2018-05-24'
+  description: >-
+    Notificação da Câmara Episcopal e Arcebispado Primaz da ICA: Altamiro Pereira do Amaral, Jorge dos Santos Costa
+    e Ricardo Vicente dos Anjos "não mais integram esta Mitra Primacial"; as dioceses de Belém e de Santa Cruz de
+    Salvador passam à responsabilidade do arcebispo primaz e a Diocese de Mato Grosso do Sul é extinta e reintegrada
+    à do Centro Oeste.
+  status: confirmed
+  sources:
+  - source: lica-ica-notificacao
+    quote: >-
+      A Diocese de Mato Grosso do Sul é extinta e reintegrada à Diocese Católica Anglicana do Centro Oeste.
+  - source: lica-ica-notificacao
+    quote: Goiânia, 24 de maio de 2018

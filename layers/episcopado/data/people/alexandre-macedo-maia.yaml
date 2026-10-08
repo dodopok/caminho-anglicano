@@ -3,11 +3,10 @@ id: alexandre-macedo-maia
 name: Alexandre Macedo Maia
 aliases:
 - Maia
-biography: Bispo da Igreja Anglicana Brasileira (IABRA), signatário da Declaração da Boa Viagem (2006).
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: a Igreja Anglicana Brasileira (IABRA), pelo bispo Alexandre Macedo Maia
-  page: '119'
+- source: drv-comunicado-imprensa-2006
+  quote: Dom Alexandre Macedo Maia, Arcebispo Primaz
 affiliations:
 - jurisdiction: iabra
   role: bishop
@@ -17,6 +16,17 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: a Igreja Anglicana Brasileira (IABRA), pelo bispo Alexandre Macedo Maia
     page: '119'
+- jurisdiction: iabra
+  role: other
+  role_description: arcebispo_primaz
+  status: confirmed
+  sources:
+  - source: drv-comunicado-imprensa-2006
+    quote: Dom Alexandre Macedo Maia, Arcebispo Primaz
+  notes: >-
+    Consta com esse cargo na lista de fundadores da Declaração da Boa Viagem (30/09/2006); início do cargo não informado.
+    Em Célio Spinelli, o texto acrescenta 'Bispo de Diocese Anglicana Thomas Becket e Vigário Geral da Arquidiocese
+    Thomas Cranmer'. Citado nesse cargo em documento de 30/09/2006.
 - jurisdiction: iabra
   role: founder
   status: probable

@@ -49,19 +49,26 @@ sources:
 ordinations:
 - order: diaconate
   date: '1970'
-  jurisdiction: null
+  jurisdiction: ieab
+  ordained_by: edmund-knox-sherrill
   status: probable
   sources:
+  - source: drv-resgatando-ii
+    quote: O Bispo Sherrill resolveu nele investir, ordenando-o Diácono e Presbítero
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1970 - … Paulo Ruiz Garcia
     page: '372'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ver ordenação ao presbiterato (mesma frase da fonte); data não informada. Ano tirado da lista do clero nacional
+    por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
   date: '1970'
   jurisdiction: ieab
-  status: contested
+  ordained_by: edmund-knox-sherrill
+  status: probable
   sources:
+  - source: drv-resgatando-ii
+    quote: O Bispo Sherrill resolveu nele investir, ordenando-o Diácono e Presbítero
   - source: queiroz-2004-ufpe
     quote: Foi Ordenado Ministro da Igreja Episcopal Anglicana do Brasil em 1970.
   - source: queiroz-2004-ufpe
@@ -79,12 +86,14 @@ ordinations:
         No último dia 28 de fevereiro de 2025, celebrou-se o Jubileu de Ouro do Pastor Paulo Garcia, líder e servo
         incansável da Igreja Episcopal Carismática. Ao longo de 50 anos de sacerdócio
   notes: >-
-    A fonte diz apenas "Ordenado Ministro" em 1970, sem especificar se diaconato ou presbiterato; registrado como
-    presbiterato por ser o início do "pastorado" contado a partir de 1970, mas pode tratar-se do diaconato. Ordenante
-    não informado. Formado no Seminário Teológico Anglicano de São Paulo. Data inferida do jubileu de 50 anos de
-    "sacerdócio" celebrado em 28/02/2025 (artigo de opinião); a fonte não dá a data da ordenação. Diverge do "Ordenado
-    Ministro ... em 1970" da dissertação de Queiroz (2004) — possivelmente 1970 = diaconato e c.1975 = presbiterato,
-    mas nenhuma fonte diz isso.
+    Segundo Dom Robinson Cavalcanti, Paulo Garcia foi ordenado diácono e presbítero pelo bispo Sherrill (datas não
+    informadas); depois foi designado a servir em São Paulo e Rio de Janeiro e enviado ao Instituto de Bossey e
+    à SAMS antes de ir ao Recife em março de 1975. A fonte diz apenas "Ordenado Ministro" em 1970, sem especificar
+    se diaconato ou presbiterato; registrado como presbiterato por ser o início do "pastorado" contado a partir
+    de 1970, mas pode tratar-se do diaconato. Ordenante não informado. Formado no Seminário Teológico Anglicano
+    de São Paulo. Data inferida do jubileu de 50 anos de "sacerdócio" celebrado em 28/02/2025 (artigo de opinião);
+    a fonte não dá a data da ordenação. Diverge do "Ordenado Ministro ... em 1970" da dissertação de Queiroz (2004)
+    — possivelmente 1970 = diaconato e c.1975 = presbiterato, mas nenhuma fonte diz isso.
 - order: episcopate
   date: '2003-09-08'
   place: Teatro Guararapes, Centro de Convenções – Olinda (PE)
@@ -275,6 +284,15 @@ affiliations:
       quote: >-
         A ruptura de Paulo Garcia com a Igreja Episcopal Anglicana do Brasil foi formalizada em outubro de 2002
       page: '54'
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  start: 1975-03
+  status: probable
+  sources:
+  - source: drv-resgatando-i
+    quote: Em março de 1975 é designado como Pároco o Rev. Paulo Ruiz Garcia, paulista de origem presbiteriana.
+  notes: 'Local: Recife, SS. Trindade. Designado pároco da Holy Trinity/SS. Trindade, Recife.'
 - jurisdiction: iecb
   role: bishop
   start: '2002'
@@ -287,6 +305,25 @@ affiliations:
     quote: primeiro bispo. Esta Igreja tem a sua sede na Catedral da Santíssima Trindade
     page: '135'
   notes: Fundador e primeiro bispo; chamado 'arcebispo brasileiro' em 2019. Data da sagração não informada.
+- jurisdiction: iecb
+  role: other
+  role_description: deão/fundador
+  start: 2002-09
+  end_reason: schism
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: rompe com a Diocese e se filia, em setembro de 2002, àquele grupo
+  - source: drv-resgatando-iv
+    quote: >-
+      Leva com ele as comunidades do Janga, Timbaúba e Vitória do Santo Antão-PE, e os reverendos: Frederico, Célio,
+      Adonias e Edgar.
+  notes: >-
+    Local: Catedral da SS. Trindade, Recife. O texto não nomeia o deão; a identificação com Paulo Garcia decorre
+    do contexto (deão e secretário de evangelismo, 'bunker' da Rua Carneiro Vilela) e do documento de 2008 que liga
+    a IECB a Paulo Garcia. Cisma 'trifonte' na descrição de Robinson: IECB (que não ordena mulheres), Igreja Episcopal
+    Evangélica (Leonides e Karla, Paróquia Betânia) e retorno do Rev. Múcio (Parnamirim) à Igreja Presbiteriana
+    do Brasil.
 - jurisdiction: iecb
   role: founder
   start: 2002-10
@@ -475,6 +512,77 @@ events:
       Primeiro aconteceu a saída do rev. Paulo Garcia, acompanhado dos reverendos Célio Spineli, Edgar Ferreira
       e Frederico Bastos, que ficaram na posse do templo da Catedral Episcopal Anglicana, na Rua Carneiro Vilela,
       e as missões Bem-Aventuranças e Pedra Viva.
+- type: other
+  date: '1976'
+  description: >-
+    Quando foi criada, a Diocese Setentrional tinha três paróquias: Santa Maria (Belém-PA, Rev. Anselmo Stein),
+    SS. Trindade (Recife, Rev. Paulo Garcia) e Bom Pastor (Salvador-BA, Rev. Stuart Broghton).
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      A Diocese, em seu início, era composta por apenas três Paróquias: Santa Maria (Rev. Anselmo Stein), Belém-PA
+- type: other
+  date: '1985'
+  description: >-
+    Na eleição do sucessor de Sherrill pelo Sínodo Geral da IEAB, o candidato do bispo, Paulo Garcia, foi derrotado,
+    e foi eleito bispo coadjutor Clóvis Erly Rodrigues, então deão da Catedral de Santa Maria (RS); a sagração ocorreu
+    na Catedral de Porto Alegre.
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      sendo eleito Bispo Coadjutor da nossa Diocese o então Deão da Catedral de Santa Maria-RS (e que não conhecia
+      o Nordeste nem como turista) o Revmo. Clóvis Erly Rodrigues
+  - source: drv-resgatando-ii
+    quote: para a cerimônia de Sagração na Catedral de Porto Alegre
+- type: other
+  date: 1999/2000
+  description: >-
+    Depois de uma 'Confraternização de Natal' em 1999, Paulo Garcia e Sebastião Gameleira teriam instigado clérigos
+    e ministros leigos contra o bispo diocesano; houve audiência presidida pelo bispo primaz, em que quase todo
+    o clero declarou solidariedade ao bispo. Segundo a fonte, nesse período era criada a Igreja Episcopal Carismática
+    do Brasil, para a qual saíram o Rev. Antônio Carlos (João Pessoa) e o ministro leigo Antônio Eça (Recife).
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      os reverendos: Paulo Garcia e Sebastião Gameleira instigaram clérigos e ministros leigos contra o Bispo Diocesano
+  - source: drv-resgatando-iv
+    quote: >-
+      enquanto (na surdina) era criada a Igreja Episcopal Carismática do Brasil, saindo para ela – no primeiro episódio
+      cismático – o Rev. Antônio Carlos, em João Pessoa-PB e o ML. Antônio Eça, no Recife-PE
+- type: other
+  date: '2002'
+  description: >-
+    Cisma de 2002 na Diocese do Recife, descrito como 'trifonte' por Dom Robinson: (1) o deão da Catedral e comunidades
+    do Janga, Timbaúba e Vitória de Santo Antão foram para a Igreja Episcopal Carismática; (2) os Revs. Leonides
+    e Karla, com a Paróquia Betânia, para a Igreja Episcopal Evangélica; (3) o Rev. Múcio, com a comunidade do Parnamirim,
+    de volta à Igreja Presbiteriana do Brasil.
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: 'os reverendos: Leonides e Karla, com a Paróquia Betânia, para a Igreja Episcopal Evangélica'
+  - source: drv-resgatando-iv
+    quote: >-
+      o Rev. Múcio, com a comunidade do Parnamirim, de volta – mais uma vez – para a Igreja Presbiteriana do Brasil
+      (IPB)
+- type: other
+  date: '2004-05-30'
+  description: >-
+    Célio Spinelli, em carta de 30/05/2004 a Paulo Garcia, comunica seu desligamento definitivo da Igreja Episcopal
+    Carismática do Brasil, listando clérigos que se afastaram de Garcia nos dez anos anteriores (entre eles Miguel
+    Uchoa, Robinson Cavalcanti, Sérgio Andrade, Teobaldo Barbosa, Aldenor Soares, Antônio Eça, Fred Lubambo, César
+    Romero, Getúlio Gutemberg e Pedro Silva) e menciona a sagração de Garcia 'em 8 de setembro'.
+  status: probable
+  sources:
+  - source: drv-spinelli-carta-2004
+    quote: >-
+      me levou a decisão de me DESLIGAR em caráter definitivo e irrevogável da Igreja Episcopal Carismática do Brasil.
+  - source: drv-spinelli-carta-2004
+    quote: >-
+      Particularmente após a sua sagração em 8 de setembro, quando você passou a ignorar todos os pastores da sua
+      diocese.
 - type: other
   date: 1973/1974
   description: >-

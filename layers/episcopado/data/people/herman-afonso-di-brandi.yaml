@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: herman-afonso-di-brandi
+name: Herman Afonso Di Brandi
+aliases:
+- Herman Affonso Di Brandi
+biography: >-
+  Missionário e capelão do Colégio Cruzeiro do Sul (Porto Alegre) que, a partir de 1950, organizou a Capela de Cristo
+  Rei e introduziu inovações litúrgicas (vestes eucarísticas, velas, incenso, crucifixo), sob a jurisdição do bispo
+  Melcher.
+sources:
+- source: drv-apontamentos-kickhofel
+  quote: >-
+    O maior movimento de renovação litúrgica vai acontecer em 1950, com a chegada do missionário Herman Afonso Di
+    Brandi, capelão do Colégio Cruzeiro do Sul.
+affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: missionário e capelão
+  start: '1950'
+  status: probable
+  sources:
+  - source: drv-apontamentos-kickhofel
+    quote: com a chegada do missionário Herman Afonso Di Brandi, capelão do Colégio Cruzeiro do Sul
+  - source: drv-apontamentos-kickhofel
+    quote: Melcher, sob cuja jurisdição canônica estava Di Brandi
+  notes: 'Local: Colégio Cruzeiro do Sul, Porto Alegre. Organizou a Capela de Cristo Rei.'

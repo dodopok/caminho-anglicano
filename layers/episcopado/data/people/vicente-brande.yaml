@@ -1,6 +1,11 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: vicente-brande
 name: Vicente Brande
+death:
+  date: '1940'
+  sources:
+  - source: drv-efemerides-reb
+    quote: Fundador do Anglicanismo Brasileiro (IEAB), Sacerdote e Missionário, 1940
 biography: >-
   Catequista brasileiro que acompanhou Kinsolving e Morris a Porto Alegre em 1890; um dos quatro primeiros diáconos
   (1893) e três primeiros presbíteros (1897) brasileiros.
@@ -12,7 +17,7 @@ sources:
 ordinations:
 - order: diaconate
   date: '1893-08-28'
-  place: Capela do Salvador, Rio Grande
+  place: Capela do Salvador, Rio Grande (RS)
   jurisdiction: dmsb
   ordained_by: george-william-peterkin
   status: probable
@@ -29,6 +34,10 @@ ordinations:
     quote: >-
       West Virginia's bishop George Peterkin made an episcopal visit in 1893, during which he ordained four Brazilians
       as deacons
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Em 28 de Agosto de 1893, no mesmo local, o Revmo. Peterkin ordenou diácono o Sr. Vicente Brande, o primeiro
+      ministro nativo da Igreja que desabrochava.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1893 - … Vicente Brande
     page: '369'
@@ -39,7 +48,9 @@ ordinations:
     page: '53'
   notes: >-
     Fato (4 diáconos por Peterkin em 1893) confirmado por várias fontes; o nome deste ordenando consta só em Kickhofel.
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Visita episcopal de Peterkin; biografia de Kinsolving (1961) dá a data completa. O 'mesmo local' é a cidade
+    do Rio Grande (Capela do Salvador, citada no parágrafo anterior). Ano tirado da lista do clero nacional por
+    ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
   date: '1897-05-13'
   jurisdiction: dmsb
@@ -51,14 +62,20 @@ ordinations:
   - source: wp-en-kinsolving
     quote: >-
       Bishop Stirling ordained three of the Brazilian deacons to the priesthood (Peterkin having deposed the fourth).
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Esse prelado impôs as mãos sôbre 159 convertidos, elevando para 301 o número de eclesianos; e ordenou em presbíteros
+      os diáconos Vicente Brande, Américo Vespúcio Cabral e Antônio Machado de Fraga.
   - source: costa2021
     quote: >-
       de maio de 1987, o bispo Stirling ordenou três dos diáconos brasileiros – Brande, Fraga e Cabral – para a
       ordem do presbiterato
     page: '54'
   notes: >-
-    Stirling, bispo das Falkland (Igreja da Inglaterra), agiu a pedido de Peterkin. Nomes só em Kickhofel. A tese
-    escreve '13 de maio de 1987', erro evidente por 1897 (a visita de Stirling começou em 6/5/1897).
+    Stirling, bispo das Falkland (Igreja da Inglaterra), agiu a pedido de Peterkin. Nomes só em Kickhofel. O bispo
+    é chamado 'Isterling', bispo das ilhas Falkland residente em Buenos Aires (Waite Hockin Stirling); a biografia
+    não dá a data (outras fontes: 1897). A tese escreve '13 de maio de 1987', erro evidente por 1897 (a visita de
+    Stirling começou em 6/5/1897).
 events:
 - type: other
   date: '1890-06-01'
@@ -102,3 +119,15 @@ events:
     quote: >-
       Presentes: reverendos Morris, Brown, Meem e Kinsolving, e catequistas Boaventura, Brande e Cabral. Presidida
       por Kinsolving e secretariada por Cabral.
+- type: other
+  date: null
+  description: >-
+    Quatro brasileiros foram ordenados diáconos em 1893 pelo bispo Peterkin: Vicente Brande (28/08, Rio Grande),
+    Antônio Machado Fraga (01/09, Pelotas), Américo Vespúcio Cabral (12/09, Porto Alegre) e Boaventura de Souza
+    Oliveira (Santa Rita do Rio dos Sinos, após 12/09). A biografia dá datas diferentes da outra versão (08/09 para
+    Cabral e Boaventura, em Porto Alegre).
+  status: contested
+  sources:
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Durante a sua permanência no Rio Grande do Sul, confirmara 142 pessoas e ordenara 4 mo- ços no diaconato.

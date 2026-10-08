@@ -7,6 +7,16 @@ country: BR
 founded:
   date: '2017'
   sources:
+  - source: lica-cnpj-ica
+    quote: '"razao_social":"MITRA PRIMACIAL CATOLICA ANGLICANA"'
+  - source: lica-cnpj-ica
+    quote: '"data_inicio_atividade":"2017-10-31"'
+  - source: lica-cnpj-ica
+    quote: '"descricao_situacao_cadastral":"INAPTA"'
+  - source: lica-ica-sobre
+    quote: 'Nosso CNPJ: NÚMERO DE INSCRIÇÃO: 29.104.811/0001-14'
+  - source: lica-ica-sobre
+    quote: sem, no entanto, se subordinarem ao Rei/Rainha e ao Arcebispo de Cantuária
   - source: cant-novas-igrejas-2024
     quote: A Igreja, fundada em 2017, já esteve organizada em quatro Dioceses
     page: '138'
@@ -15,13 +25,23 @@ founded:
     page: '172'
 website: https://catolicaanglicana.wordpress.com/
 description: >-
-  Igreja fundada em 2017 por clérigos saídos da IATB (grupo de Ricardo Vicente dos Anjos e Orvandil Moreira Barbosa);
-  dioceses em Goiás, Bahia e Pará; forte influência da Teologia da Libertação; em 2023 sofreu a saída do grupo que
-  formou a ICA-Brasil.
+  Igreja sediada em Goiânia (GO), mantida juridicamente pela "Mitra Primacial Católica Anglicana" (CNPJ 29.104.811/0001-14,
+  atividade iniciada em 31/10/2017, tendo Orvandil Moreira Barbosa como presidente). Autodefine-se "de rito, tradição
+  e episcopado histórico católicos-anglicanos", sem subordinação ao arcebispo de Cantuária, com ênfase na teologia
+  da libertação. Dioceses declaradas: Centro Oeste, Baixo Tocantins (PA), Belém, São Paulo e Sudoeste, Santa Cruz
+  de Salvador (BA) e Mato Grosso do Sul (extinta em 2018). A situação cadastral do CNPJ consta como inapta desde
+  30/05/2019 (omissão de declarações). O site não é atualizado desde 2020.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: A Igreja, fundada em 2017, já esteve organizada em quatro Dioceses
-  page: '138'
+- source: lica-cnpj-ica
+  quote: '"razao_social":"MITRA PRIMACIAL CATOLICA ANGLICANA"'
+- source: lica-cnpj-ica
+  quote: '"data_inicio_atividade":"2017-10-31"'
+- source: lica-cnpj-ica
+  quote: '"descricao_situacao_cadastral":"INAPTA"'
+- source: lica-ica-sobre
+  quote: 'Nosso CNPJ: NÚMERO DE INSCRIÇÃO: 29.104.811/0001-14'
+- source: lica-ica-sobre
+  quote: sem, no entanto, se subordinarem ao Rei/Rainha e ao Arcebispo de Cantuária
 relations:
 - type: schism_from
   target: iatb

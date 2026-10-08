@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-penny
+name: John Penny
+biography: Primeiro capelão da Capelania Britânica de Pernambuco (Recife), a partir de 1822.
+sources:
+- source: drv-resgatando-i
+  quote: tendo como seu primeiro titular o Rev. John Penny
+affiliations:
+- jurisdiction: cbp-pe
+  role: other
+  role_description: capelão
+  start: '1822'
+  status: probable
+  sources:
+  - source: drv-resgatando-i
+    quote: >-
+      A Capelania Britânica de Pernambuco teve início no ano da nossa Independência, 1822, tendo como seu primeiro
+      titular o Rev. John Penny
+  notes: 'Local: Pernambuco. Primeiro titular da capelania.'

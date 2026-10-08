@@ -115,6 +115,12 @@ ordinations:
   - source: ieab-sobre
     quote: >-
       Em 1899, a Igreja Episcopal Anglicana do Brasil teve seu  primeiro bispo  na pessoa do revmo. Lucien Lee Kinsolving.
+  - source: drv-kinsolving-ivo
+    quote: no dia da Epifania de 1899, estando presentes 8 Bispos, foi o Rev. Kinsolving consagrado
+  - source: drv-kinsolving-ivo
+    quote: a Igreja de São Bartolomeu, em Nova York
+  - source: drv-kinsolving-ivo
+    quote: O sermão alusivo à solenidade esteve a cargo do Revmo. Dr. George Henbert Kinsolving, Bispo de Texas
   - source: som-1899-02
     quote: >-
       took place in St. Bartholomew’s Church, Hew York, on the Feast of the Epiphany. Bishop Dudley, of Kentucky,
@@ -163,14 +169,16 @@ ordinations:
     (co-sagrantes formais); Doane e Peterkin apresentantes; G. H. Kinsolving pregador; Scarborough, Walker, Talbot,
     Wells e McVickar 'taking part in the laying-on of hands'. A lista da Wikipédia dá Dudley, Doane e Scarborough
     como sagrantes. Kinsolving foi eleito 'Bishop for the United States of Brazil' sob o Art. X da Constituição
-    (bispo para igreja estrangeira), não para distrito missionário (criado só em 1907). Pôster: Kinsolving "consagrado
-    em 6 de janeiro de 1899" — CONFIRMADO por fonte primária. Sagrante principal: Thomas Underwood Dudley, bispo
-    de Kentucky ("presided"). Co-sagrantes imediatos: Potter (Nova York) e Lawrence (Massachusetts); também impuseram
-    as mãos Doane, Peterkin, G. H. Kinsolving, Scarborough, Walker, Talbot, Wells e McVickar. A Wikipédia diz "led
-    by the Presiding Bishop" (impreciso) e a lista de sucessão dá Dudley, Doane e Scarborough. Nomes completos de
-    Potter (Henry Codman Potter) e Lawrence (William Lawrence) inferidos das sés em 1899. A tese diz que doze bispos
-    participaram, sem nomeá-los; a citação de Ivo (1962) fala em 8 bispos presentes e no sermão de George Herbert
-    Kinsolving, bispo do Texas. A afirmação de que Peterkin era 'presidente da Igreja Episcopal' é da tese.
+    (bispo para igreja estrangeira), não para distrito missionário (criado só em 1907). Epifania = 6 de janeiro.
+    A biografia não nomeia o sagrante principal; pregador: George Herbert Kinsolving, bispo do Texas (grafado 'Henbert').
+    Pôster: Kinsolving "consagrado em 6 de janeiro de 1899" — CONFIRMADO por fonte primária. Sagrante principal:
+    Thomas Underwood Dudley, bispo de Kentucky ("presided"). Co-sagrantes imediatos: Potter (Nova York) e Lawrence
+    (Massachusetts); também impuseram as mãos Doane, Peterkin, G. H. Kinsolving, Scarborough, Walker, Talbot, Wells
+    e McVickar. A Wikipédia diz "led by the Presiding Bishop" (impreciso) e a lista de sucessão dá Dudley, Doane
+    e Scarborough. Nomes completos de Potter (Henry Codman Potter) e Lawrence (William Lawrence) inferidos das sés
+    em 1899. A tese diz que doze bispos participaram, sem nomeá-los; a citação de Ivo (1962) fala em 8 bispos presentes
+    e no sermão de George Herbert Kinsolving, bispo do Texas. A afirmação de que Peterkin era 'presidente da Igreja
+    Episcopal' é da tese.
 affiliations:
 - jurisdiction: dmsb
   role: diocesan_bishop
@@ -266,6 +274,75 @@ events:
     quote: >-
       On May 30, 1898, pursuant to Bishop Peterkin's advice, clergy and laity gathered in Porto Alegre and elected
       Kinsolving to become their bishop
+- type: other
+  date: '1898'
+  description: >-
+    Em 1898 uma convocação em Porto Alegre elegeu por unanimidade, no primeiro escrutínio, o Rev. Lucien Lee Kinsolving
+    como bispo; a Câmara dos Bispos, reunida em Washington, considerou a eleição irregular e procedeu a nova eleição,
+    que o escolheu por unanimidade.
+  status: probable
+  sources:
+  - source: drv-kinsolving-ivo
+    quote: No primeiro escrutinio saiu eleito unânimemente o Rev. Lucien Lee Kinsolving.
+  - source: drv-kinsolving-ivo
+    quote: procederam a nova eleição conforme a maneira usual
+- type: other
+  date: '1903-06-13'
+  description: >-
+    O Seminário Teológico da Igreja Episcopal Brasileira foi inaugurado em 13/06/1903 na Igreja do Salvador, Rio
+    Grande (RS), com William Cabell Brown como primeiro reitor; foi fechado temporariamente por Kinsolving em 1910
+    e reaberto cerca de dez anos depois sob Morris. Três de seus alunos chegaram ao episcopado: Athalício Pithan,
+    Egmont Krischke e Plínio Lauer Simões.
+  status: probable
+  sources:
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Afinal, a 13 de Junho de 1903, justa, 13 anos após ter sido estabelecida a Igreja Episcopal Brasileira, concretizou-se
+      a sua alta pretensão.
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Dêsse número, três, já atingiram o episcopado: os Revmos. Drs. Athalicio Pithan, Egmont Machado Krischke e
+      Plínio Lauer Simões
+- type: other
+  date: '1905-01-01'
+  description: >-
+    Segundo a biografia, a transferência da missão da Sociedade Missionária da Igreja Americana para a Junta de
+    Missões ocorreu em 1º/01/1905 e a Convenção Geral criou então o distrito missionário do Brasil Meridional, com
+    Kinsolving como primeiro bispo; outras fontes datam a criação do distrito em 1907.
+  status: contested
+  sources:
+  - source: drv-kinsolving-ivo
+    quote: Esse arranjo efetuou-se em 1º de Janeiro de 1905.
+  - source: drv-kinsolving-ivo
+    quote: >-
+      a Convenção Geral criou um distrito missionário no Brasil Meridional, e designou o mesmo Revmo. Kinsolving
+      como seu primeiro Bispo
+- type: other
+  date: '1908-05-31'
+  description: >-
+    Primeiro culto da Igreja Episcopal Brasileira em vernáculo no Rio de Janeiro: 31/05/1908, celebrado pelo Rev.
+    William Cabell Brown em templo anglicano emprestado; no ano seguinte instalou-se a Capela do Redentor (rua Haddock
+    Lobo).
+  status: probable
+  sources:
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Em 31 de Maio de 1908, 20 anos depois de se fixar no Rio Grande do Sul, realizou a Igreja Episcopal o seu
+      primeiro ofício divino em vernáculo, na Capital da República.
+- type: other
+  date: '1929-12-18'
+  description: >-
+    Lucien Lee Kinsolving faleceu em 18/12/1929 em Forest Hills (Nova York); nascera em 14/05/1862 em Middleburg
+    (Virgínia). O prefácio do livro, assinado por Egmont Machado Krischke em Porto Alegre, Páscoa de 1961, informa
+    que o autor usa o pseudônimo 'Ivo'.
+  status: confirmed
+  sources:
+  - source: drv-kinsolving-ivo
+    quote: A 18 de Dezembro de 1929, em Forest Hills, passou dos trabalhos da terra
+  - source: drv-kinsolving-ivo
+    quote: Nasceu Lucien Lee Kinsolving a 14 de Maio de 1862, em Middleburgo
+  - source: drv-kinsolving-ivo
+    quote: Pôrto Alegre, Páscoa de 1961.
 - type: other
   date: '1898-11-20'
   description: >-

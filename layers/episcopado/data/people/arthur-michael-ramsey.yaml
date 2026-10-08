@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: arthur-michael-ramsey
+name: Arthur Michael Ramsey
+events:
+- type: other
+  date: '1974'
+  description: 'Primeira visita de um arcebispo de Cantuária à IEAB: Arthur Michael Ramsey, em 1974.'
+  status: probable
+  sources:
+  - source: drv-apontamentos-kickhofel
+    quote: '1974 - Primeira visita de um Arcebispo de Cantuária: Arthur Michael Ramsey'

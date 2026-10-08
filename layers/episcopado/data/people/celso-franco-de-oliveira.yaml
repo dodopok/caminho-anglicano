@@ -49,8 +49,16 @@ ordinations:
   jurisdiction: ieab
   office: diocesan
   principal_consecrator: glauco-soares-de-lima
-  status: probable
+  status: confirmed
   sources:
+  - source: drv-sagracao-celso-sermao
+    quote: Rio de Janeiro, 27 de Fevereiro de 2000.
+  - source: drv-sagracao-celso-sermao
+    quote: procedermos à sagração episcopal do Rev. Côn. Celso Franco de Oliveira
+  - source: drv-sagracao-celso-sermao
+    quote: neste solene espaço da Christ Church
+  - source: drv-sagracao-celso-sermao
+    quote: Revmº D. Glauco Soares de Lima, digníssimo Bispo Primaz do Brasil
   - source: costa2021
     quote: >-
       Sua sagração ocorreu na Christ Church, no dia 27 de fevereiro de 2000, pelas mãos do Bispo Primaz, Glauco
@@ -61,8 +69,10 @@ ordinations:
       Soares de Lima, e dos demais bispos da Câmara Episcopal.
     page: '104'
   notes: >-
-    Eleito em Concilio Extraordinario de 06/11/1999 para a Diocese Anglicana do Rio de Janeiro. Co-sagrantes: 'os
-    demais bispos da Câmara Episcopal' (não nomeados).
+    Sermão da sagração, proferido por representante da Diocese Anglicana do Recife a convite do bispo Celso, no
+    8º domingo depois da Epifania; o texto cita o primaz Glauco Soares de Lima na abertura, sem identificar o sagrante
+    principal. Eleito em Concilio Extraordinario de 06/11/1999 para a Diocese Anglicana do Rio de Janeiro. Co-sagrantes:
+    'os demais bispos da Câmara Episcopal' (não nomeados).
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
@@ -91,16 +101,29 @@ affiliations:
   role: bishop
   start: '2001'
   end: '2006'
-  status: probable
+  status: confirmed
   sources:
+  - source: drv-pronunciamento-ieab-2005
+    quote: Dom Celso Franco de Oliveira
   - source: costa2021
     quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2001-2006 – Celso Franco de Oliveira
     page: 518-519
   notes: >-
-    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
-    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
-    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. Divergência
-    interna: o Anexo D dá 2000-2008 no Rio de Janeiro.
+    Signatário da carta da Câmara dos Bispos da IEAB ao arcebispo de Cantuária (Brasília, 14/11/2005); data de início
+    do cargo não é informada. Citado nesse cargo em documento de 14/11/2005. Anexo C da tese (lista 'Bispos e Bispas
+    da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos foi lido como período de exercício episcopal
+    na IEAB (e antecessoras), e não necessariamente o ano de sagração, pois o anexo não diz que o primeiro ano é
+    a sagração. Por isso não foi criada afirmação de ordenação. Divergência interna: o Anexo D dá 2000-2008 no Rio
+    de Janeiro.
+- jurisdiction: ieab
+  role: other
+  role_description: procurador_geral
+  start: '2005'
+  status: confirmed
+  sources:
+  - source: drv-carta-clero-processo-2005
+    quote: Procurador Geral da IEAB Dom Celso Franco de Oliveira
+  notes: Procurador Geral da IEAB em abril de 2005.
 - jurisdiction: ieab-darj
   role: diocesan_bishop
   status: probable
@@ -141,6 +164,21 @@ events:
   sources:
   - source: ec-2017-04
     quote: Clóvis Ro- drigues, Almir dos Santos e Celso Franco (eméritos)
+- type: other
+  date: '2005-04-09'
+  description: >-
+    Em 09/04/2005 o bispo Robinson comunicou ao clero que o relatório da Comissão Provincial de Investigação, acolhido
+    pelo Primaz e pelo Procurador Geral da IEAB (Celso Franco de Oliveira), fora encaminhado ao Tribunal Superior
+    Eclesiástico, presidido pelo bispo aposentado Clóvis Erly Rodrigues, citando como acusados vários clérigos do
+    Recife (Miguel Uchoa, Estevão Menezes, Fernando Acosta, Ian Meldrum, Siméa Meldrum, Juciara, Luiz Souza, Manoel
+    Almeida, Maria Gorete, Maurício Coelho, Raniere Almeida) e recomendando protesto à SAMS pela atuação dos missionários
+    Marcus Throup, Ian e Siméa Meldrum.
+  status: confirmed
+  sources:
+  - source: drv-carta-clero-processo-2005
+    quote: >-
+      Relatório esse acolhido pelo Primaz e pelo Procurador Geral da IEAB Dom Celso Franco de Oliveira, e ora encaminhado
+      ao Tribunal Superior Eclesiástico, presidido pelo Bispo aposentado Dom Clóvis Erly Rodrigues, para julgamento.
 - type: other
   date: '1999-11-06'
   description: >-

@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: icc
+acronym: ICC
+name: Igreja Católica Carismática (Belém, PA)
+type: other
+country: BR
+description: >-
+  Igreja independente de Belém (PA), com bispo primaz Edilson Vinagre, filiada ao movimento "Padres Casados Já",
+  de Emmanuel Milingo. Sagrou Orvandil Moreira Barbosa bispo em 27/07/2008 para uma diocese em Campo Grande (MS).
+  Segundo a matéria do Midiamax, "surgiu há 40 anos na cidade de Belém do Pará através de um grupo de leigos católicos".
+sources:
+- source: lica-domomb-midiamax
+  quote: >-
+    A Igreja Católica Carismática surgiu há 40 anos na cidade de Belém do Pará através de um grupo de leigos católicos
+- source: lica-domomb-sagracao
+  quote: Será sagrante/ordenante DOM EDILSON VINAGRE, bispo primaz da ICC

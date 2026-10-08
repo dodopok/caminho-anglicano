@@ -299,11 +299,16 @@ affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dar
-  start: '1975'
+  start: '1977'
   end: '1986'
   end_reason: retirement
   status: contested
   sources:
+  - source: drv-resgatando-ii
+    quote: o Bispo Sherrill se mudou para o Recife apenas no início do ano seguinte, 1977
+  - source: drv-resgatando-ii
+    quote: >-
+      No início de 1986 o Bispo Sherrill renuncia, se aposenta e muda sua residência de volta ao Rio de Janeiro
   - source: costa2021
     quote: 1976-1985 – Edmund Knox Sherrill
   - source: ptwp-dar
@@ -346,13 +351,25 @@ affiliations:
     quote: Quando o bispo Sherrill se aposentou em 1985
     page: '178'
   notes: >-
-    Datas divergem (1975/1976 a 1985/1986). O livro diz que ele optou pela nova diocese e se mudou para Recife em
-    1977; aposentou-se em 1985 (p. 298). Anexo D da tese (bispos por diocese). Em 1976 a diocese chamava-se Diocese
-    Setentrional (Anexo G: Sherrill como 'bispo da Diocese Setentrional'). Sucedido por Clóvis Erly Rodrigues (coadjutor
-    sagrado em 1985). Local: depois Diocese Anglicana do Recife. 1º bispo da Diocese Setentrional (criada no Sínodo
-    de 1975; 1º concílio em junho de 1976). Renunciou no início de 1986 (ano seguinte a 1985); a citação de Kickhöfel
-    diz que 'se aposentou em 1985'.
+    Datas de residência no Recife (mudança em 1977; saída no início de 1986), conforme Dom Robinson Cavalcanti;
+    o episcopado diocesano começa com a criação da diocese em 1976. Datas divergem (1975/1976 a 1985/1986). O livro
+    diz que ele optou pela nova diocese e se mudou para Recife em 1977; aposentou-se em 1985 (p. 298). Anexo D da
+    tese (bispos por diocese). Em 1976 a diocese chamava-se Diocese Setentrional (Anexo G: Sherrill como 'bispo
+    da Diocese Setentrional'). Sucedido por Clóvis Erly Rodrigues (coadjutor sagrado em 1985). Local: depois Diocese
+    Anglicana do Recife. 1º bispo da Diocese Setentrional (criada no Sínodo de 1975; 1º concílio em junho de 1976).
+    Renunciou no início de 1986 (ano seguinte a 1985); a citação de Kickhöfel diz que 'se aposentou em 1985'.
   discrepancies:
+  - field: start
+    value: '1975'
+    sources:
+    - source: costa2021
+      quote: 1976-1985 – Edmund Knox Sherrill
+    - source: ptwp-dar
+      quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Edmund serviu no Distrito Missionário Central e, em 1975, tornou-se o primeiro bispo da recém-criada Diocese
+        do Recife
   - field: start
     value: '1976'
     sources:
@@ -401,14 +418,6 @@ affiliations:
     - source: costa2021
       quote: 'CLÉRIGOS: Dom Edmund Knox Sherrill, bispo da Diocese Setentrional e presidente do concílio'
       page: '529'
-  - field: start
-    value: '1977'
-    sources:
-    - source: kickhofel-1995
-      quote: >-
-        com a diferença de que o bispo Sherrill que como diocesano tinha o direito de opção, optou pela nova diocese,
-        transferindo-se para Recife em 1977.
-      page: '296'
   - field: end_reason
     value: resignation
     sources:
@@ -498,6 +507,15 @@ affiliations:
     quote: Primazes da Igreja Episcopal Anglicana do Brasil … 1984-1986 – Edmund Knox Sherrill (interino)
     page: 523-524
   notes: Anexo E da tese (primazes da IEAB).
+- jurisdiction: ieab
+  role: other
+  role_description: primaz_interino
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      Na época ele exercia as funções de Primaz Interino (com o falecimento do Primaz Dom Arthur Rodolpho Kratz).
+  notes: '''Na época'' refere-se ao momento de sua aposentadoria (1985-86); datas não informadas.'
 events:
 - type: other
   date: '1985'
@@ -532,6 +550,93 @@ events:
     quote: >-
       For Brazil: Independence - In action pointing the way for greater impact of MRI proposals on the life of the
       Church, the Brazilian Episcopal Church became the 19th independent church in the world-wide Anglican Communion.
+- type: other
+  date: '1976-05-20'
+  description: >-
+    Segundo Dom Robinson Cavalcanti, a Diocese Setentrional (Recife), desmembrada da Diocese Central e com jurisdição
+    sobre o Norte e o Nordeste, foi criada pelo Sínodo Geral da Igreja Episcopal do Brasil em 20 de maio de 1976,
+    com Edmund Knox Sherrill designado bispo.
+  status: probable
+  sources:
+  - source: drv-resgatando-i
+    quote: >-
+      com a criação, pelo Sínodo Geral da agora Igreja Episcopal do Brasil, da Diocese Setentrional, com sede no
+      Recife, desmembrada da Diocese Central
+  - source: drv-resgatando-ii
+    quote: >-
+      A Diocese Setentrional foi criada pelo Sínodo Geral da Igreja Episcopal do Brasil em 20 de Maio de 1976
+- type: other
+  date: null
+  description: >-
+    Sherrill, bispo da Diocese do Brasil Central, negociou a integração das capelanias britânicas e japonesas à
+    Igreja Episcopal do Brasil nos anos 1960; a Holy Trinity do Recife decidiu em assembleia pela filiação.
+  status: probable
+  sources:
+  - source: drv-resgatando-i
+    quote: >-
+      Esse trabalho foi feito por Dom Edmund Knox Sherrill, Bispo da Diocese do Brasil Central, com sede no Rio
+      de Janeiro, e com jurisdição do Paraná à Amazônia.
+  - source: drv-resgatando-i
+    quote: Uma assembléia paroquial da Capelania do Recife, Holy Trinity Church, decidiu por essa filiação
+- type: other
+  date: 1977/1985
+  description: >-
+    Sob o bispo Sherrill abriram-se pontos missionários que viriam a ser missões ou paróquias: São Lucas (Nova Marambaia-PA),
+    Ressurreição (João Pessoa-PB), O Salvador (Itaparica-BA), Bom Samaritano (Boa Viagem, Recife), Redentor (Várzea,
+    Recife) e Emanuel (Olinda-PE).
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      São Lucas, em Nova Marambaia-PA; Ressurreição, em João Pessoa-PB; O Salvador, em Itaparica-BA; Bom Samaritano,
+      em Boa Viagem e Redentor, na Várzea, ambos no Recife-PE; e Emanuel, em Olinda-PE
+- type: other
+  date: 1977/1985
+  description: >-
+    O bispo Sherrill criou o NAET (Núcleo de Estudos Anglicanos), onde estudaram Ian Meldrum, Robinson Cavalcanti
+    e Antônio Carlos (da Bahia); também foram ordenados no período Sherrill Josephino Lobato (Belém) e um fazendeiro
+    japonês, ministro local. Washington Franco foi deixado já preparado para a ordenação.
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      onde estudaram três dos seus ordinandos, os futuros reverendos: Ian Meldrum, Robinson Cavalcanti e Antônio
+      Carlos (da Bahia)
+  - source: drv-resgatando-ii
+    quote: >-
+      Os outros Ministros Ordenados durante o período Sherrill foram: Josephino Lobato, de Belém-PA e um fazendeiro
+      japonês
+  - source: drv-resgatando-ii
+    quote: Deixou o Bispo, ao final, já preparado o processo do Postulante e depois Rev. Washington Franco.
+- type: other
+  date: '1985'
+  description: >-
+    Na eleição do sucessor de Sherrill pelo Sínodo Geral da IEAB, o candidato do bispo, Paulo Garcia, foi derrotado,
+    e foi eleito bispo coadjutor Clóvis Erly Rodrigues, então deão da Catedral de Santa Maria (RS); a sagração ocorreu
+    na Catedral de Porto Alegre.
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      sendo eleito Bispo Coadjutor da nossa Diocese o então Deão da Catedral de Santa Maria-RS (e que não conhecia
+      o Nordeste nem como turista) o Revmo. Clóvis Erly Rodrigues
+  - source: drv-resgatando-ii
+    quote: para a cerimônia de Sagração na Catedral de Porto Alegre
+- type: other
+  date: '1955'
+  description: >-
+    Acordo de 1955 entre a Igreja da Inglaterra e a Igreja Episcopal dos EUA sobre as capelanias inglesas no Brasil,
+    obtido por Louis Chester Melcher, reconhecendo a Igreja Episcopal dos EUA como responsável pela Comunhão Anglicana
+    no Brasil; os resultados práticos só surgiram sob Edmund Knox Sherrill, com a incorporação das capelanias à
+    igreja brasileira.
+  status: probable
+  sources:
+  - source: drv-apontamentos-kickhofel
+    quote: Melcher conseguiu o acordo de 1955 entre a igreja americana e a Igreja da Inglaterra.
+  - source: drv-apontamentos-kickhofel
+    quote: >-
+      Os resultados práticos só vão surgir no episcopado do bispo Edmund Knox Sherrill, quando começou o processo
+      da incorporação das capelanias à igreja brasileira.
 - type: other
   date: '1977'
   description: >-

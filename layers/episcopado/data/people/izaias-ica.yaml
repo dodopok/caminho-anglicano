@@ -1,14 +1,33 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: izaias-ica
 name: Izaias (ICA)
+full_name: Izaias Rodrigues dos Santos
 aliases:
 - Bispo Izaias
-biography: Bispo Izaias, da Diocese de São Paulo da Igreja Católica Anglicana.
+- Dom Frei Junípero
+- Dom Izaias Rodrigues Santos
+- Dom Izaias Rodrigues dos Santos
+- Dom Junípero
+- Izaias Rodrigues dos Santos
+biography: >-
+  Bispo da Igreja Católica Anglicana conhecido como Dom Frei Junípero; o site da ICA o apresenta como bispo da Diocese
+  de São Paulo e Sudoeste (também grafada "Diocese do Sudeste") e membro da Câmara Episcopal.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Diocese de São Paulo, com o bispo Izaias
-  page: '138'
+- source: lica-ica-dioceses
+  quote: Diocese de São Paulo e Sudoeste Bispo Dom Izaias Rodrigues dos Santos (Dom Frei Junípero)
+- source: lica-ica-sobre
+  quote: + Dom Junípero Bispo da Diocese do Sudeste.
 affiliations:
+- jurisdiction: ica
+  role: diocesan_bishop
+  diocese: ica-sao-paulo-e-sudoeste
+  status: probable
+  sources:
+  - source: lica-ica-dioceses
+    quote: Diocese de São Paulo e Sudoeste Bispo Dom Izaias Rodrigues dos Santos (Dom Frei Junípero)
+  notes: >-
+    O site o registra como Dom Frei Junípero na Câmara Episcopal; é citado entre os participantes do vídeo da Câmara
+    Episcopal em Cametá (julho de 2018).
 - jurisdiction: ica
   role: bishop
   diocese: diocese-de-sao-paulo
