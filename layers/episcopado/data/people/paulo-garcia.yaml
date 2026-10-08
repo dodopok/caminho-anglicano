@@ -301,13 +301,17 @@ affiliations:
 - jurisdiction: iecb
   role: primate
   diocese: iecb-diocese-recife
-  status: probable
+  status: confirmed
   sources:
+  - source: ier-trindade-blog-igreja
+    quote: >-
+      Ela é hoje a Catedral - igreja onde está a cátedra do Bispo - da Igreja Episcopal Carismática do Brasil
   - source: ptwiki-iecb
     quote: A IECB segue a forma de governo episcopal, tendo como Bispo Primaz, o Arcebispo Paulo Ruiz Garcia.
   notes: >-
-    Reconhecido como arcebispo e primaz em 2007, após as sagrações de Ximenes e Bastos; instituído arcebispo do
-    Recife e primaz da CEI em 14/9/2019. A lista da Wikipédia dá '(2005-)' para o cargo de arcebispo do Recife.
+    Cátedra do bispo da IECB na Catedral da Trindade. Reconhecido como arcebispo e primaz em 2007, após as sagrações
+    de Ximenes e Bastos; instituído arcebispo do Recife e primaz da CEI em 14/9/2019. A lista da Wikipédia dá '(2005-)'
+    para o cargo de arcebispo do Recife.
 - jurisdiction: ieab-dar
   role: other
   role_description: deao
@@ -438,6 +442,28 @@ events:
       do bispo Sherrill e da delegação, que tinham como certa a indicação do reverendo Paulo Ruiz Garcia, pároco
       na capital pernambucana e líder espiritual naquela região.
     page: '300'
+- type: other
+  date: '2003-09-08'
+  description: >-
+    Sagração de Paulo Ruiz Garcia como Bispo da "Diocese Missionária do Brasil" da Comunhão Internacional da Igreja
+    Episcopal Carismática, em 08/09/2003 (registro da Catedral da Trindade).
+  status: confirmed
+  sources:
+  - source: ier-trindade-blog-igreja
+    quote: >-
+      desde a sagração do Reverendíssimo Dom Paulo Ruiz Garcia como Bispo da Diocese Missionária do Brasil da Comunhão
+      Internacional da Igreja Episcopal Carismática, ocorrida em 08 desetembro de 2003.
+  - source: ier-calvario-blog-igreja
+    quote: ocorrida em 08 de setembro de 2003.
+- type: other
+  date: '2025-10-12'
+  description: >-
+    Celebração de 16 anos da Catedral Betesda (Olinda), com Paulo Garcia, Frederico Bastos (coadjutor do Recife),
+    Francisco Rubem (Olinda) e Marcel (coadjutor de Olinda).
+  status: confirmed
+  sources:
+  - source: ier-betesda-16anos-2025
+    quote: Dia 12 de Outubro a Catedral Betesda (Olinda -PE) celebrou 16 anos de existêcia.
 - type: other
   date: '1984'
   description: Paulo Garcia é preterido na eleição de bispo coadjutor da Diocese do Recife (IEAB).

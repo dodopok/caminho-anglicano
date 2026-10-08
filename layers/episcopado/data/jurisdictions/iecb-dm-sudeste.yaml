@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iecb-dm-sudeste
+name: Diocese Missionária Sudeste (IECB)
+aliases:
+- Diocese Missionária Sudeste
+type: diocese
+tradition: charismatic_episcopal
+country: BR
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ier-betesda-onde-estamos
+    quote: 'Bispo Diocesano: Dom Sergio Presta'

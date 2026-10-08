@@ -3,6 +3,7 @@ id: glauco-soares-de-lima
 name: Glauco Soares de Lima
 full_name: Glauco Soares de Lima
 aliases:
+- Dom Glauco
 - Dom Glauco Lima
 - Glauco Soares
 - Glauco Soares Lima
@@ -15,6 +16,10 @@ birth:
     quote: Glauco Soares de Lima nasceu em 28 de janeiro de 1934, em Pelotas.
   - source: costa2021
     quote: Faleceu em 26 de dezembro de 2017.
+  - source: ieablac-cd1959
+    quote: >-
+      LIMA, GLAUCO SOARES de (SwBra) Ismael Soares 237, Bage, RGS, Brazil R Crucif 58-. b Pelotas RGS Braz 28 Jan
+      348
   - source: costa2021
     quote: O bispo Glauco Soares de Lima faleceu no dia 27 de dezembro de 2017 na cidade de São Paulo
     page: '149'
@@ -71,8 +76,9 @@ ordinations:
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
-  date: '1958'
+  date: 1958-02
   jurisdiction: null
+  ordained_by: plinio-lauer-simoes
   status: probable
   sources:
   - source: kickhofel-1995
@@ -81,6 +87,11 @@ ordinations:
       realizado em julho de 1989, em São Paulo, obtendo a maioria dos votos nas duas ordens no segundo escrutínio.
       Foi ordenado ao diaconato em 1956 e ao presbiterado em 1958.
     page: '290'
+  - source: ieablac-cd1959
+    quote: D Nov 56 Bp Krischke P Feb 58 Bp Simdes.
+  notes: >-
+    OCR 'Simdes' = Simões (bispo Plínio Lauer Simões, que à época era bispo de Southwestern/Central Brazil; ele
+    foi sagrado em 1956). A base tem 1958 sem ordenante. Confirma diaconato por Krischke (nov/1956) já na base.
 - order: episcopate
   date: '1989-10-01'
   place: Catedral Anglicana de Sao Paulo

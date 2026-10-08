@@ -18,6 +18,10 @@ birth:
     quote: Louis Chester Melcher (August 3, 1898 - September 21, 1965)
   - source: wd-q67784953
     quote: Louis Chester Melcher | missionary bishop of the Anglican Episcopal Church
+  - source: ieablac-cd1947
+    quote: >-
+      MELCHER, Louis Chester (U.S.C.), Off., Trinity Parish House; Res., 828 Kilbourne Rd., Columbia, $.C.—R. Trin.
+      Par., 1939—. b. Baraboo, Wis., Aug. 3, 1898;
   - source: wp-en-melcher
     quote: '''''''Louis Chester Melcher'''''' (August 3, 1898 - September 21, 1965)'
   discrepancies:
@@ -66,13 +70,23 @@ sources:
   quote: Louis Chester Melcher | missionary bishop of the Anglican Episcopal Church
 ordinations:
 - order: presbyterate
-  date: '1925'
+  date: 1925-09
   jurisdiction: tec
+  ordained_by: james-craik-morris
   status: probable
   sources:
+  - source: ieablac-cd1947
+    quote: D—Oct., 1924, P—Sept., 1925, Bp. J. C. Morris.
+  - source: testemunho-mantenedor-2026-10-08-jc-morris
+    quote: J.C Morris é o Bispo James Craik Morris dos Estados Unidos
   - source: costa2021
     quote: Foi ordenado ao sacerdócio em 1925.
     page: '71'
+  notes: >-
+    O diretório diz só 'Bp. J. C. Morris'; a identificação com James Craik Morris (Panama Canal Zone) é inferência
+    do pesquisador, apoiada no mesmo verbete ('Chapl. to Bp. and Can. S. Luke's Cathd., Ancon, P.Z., 1925-26').
+    Base tem presbiterato 1925 sem ordenante. O diretório dá o ordenante como 'Bp. J. C. Morris'; o mantenedor identifica-o
+    como o bispo James Craik Morris (EUA).
 - order: episcopate
   date: '1948-02-05'
   place: Trinity Church, Columbia, Carolina do Sul (EUA)

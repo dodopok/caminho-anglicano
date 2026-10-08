@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: cicero-miranda-pontara
 name: Cícero Miranda Pontara
+aliases:
+- Cícero Pontara
 ordinations:
 - order: diaconate
   date: '2022-11-12'
@@ -43,6 +45,17 @@ affiliations:
   notes: >-
     Presbítero(a) na lista do clero do Calendário REB 2026. Consta na lista do clero do Calendário REB 2026.
 events:
+- type: other
+  date: 2022-11
+  description: >-
+    Culto de ordenação pastoral na Igreja Âncora (Vitória-ES) em nov/2022: Cícero (Âncora), Elionai (Âncora), Lorrayne
+    (Trindade) e Weiden (Metamorfose); sermão do Rev. Eric Rodrigues.
+  status: confirmed
+  sources:
+  - source: iabord-yt-juqrsmo82ny
+    quote: >-
+      Sermão ministrado na Ordenação Pastoral do Rev. Cícero (Igreja Âncora), Revª. Elionai (Igreja Âncora), Revª.
+      Lorrayne (Anglicana Trindade) e Rev. Weiden (Anglicana Metamorfose).
 - type: other
   date: '2024-12-20'
   description: >-

@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: ieab-dasp
 acronym: IEAB-DASP
-name: Diocese Anglicana de Sao Paulo (ex-Diocese Sul Central)
+name: Diocese Anglicana de São Paulo
 aliases:
-- Diocese Anglicana de São Paulo
+- Diocese Anglicana de Sao Paulo (ex-Diocese Sul Central)
 - Diocese Anglicana de São Paulo (ex-Diocese Sul Central)
 - Diocese Sul Central
 - Diocese Sul Central (São Paulo)
@@ -47,16 +47,14 @@ relations:
   target: ieab
   status: confirmed
   sources:
-  - source: ieab-irala-falecimento
-    quote: Em 2021, tornou-se bispo emérito
-  - source: ieab-cezar-investidura
-    quote: a celebração de Ação de Graças pela vida, ministério e início da emerência do bispo Flávio Irala
-  - source: costa2021
-    quote: Assumiu a Diocese em janeiro do ano seguinte
-  - source: costa2021
-    quote: 1990-2002 – Glauco Soares de Lima
-  - source: glauco-testemunho-2013
-    quote: Bispo da Diocese Anglicana de São Paulo de 1990 - 2002
+  - source: snieab-2013-convite-irala
+    quote: >-
+      CONVIDAM V.SA. PARA A CERIMÔNIA DE SAGRAÇÃO E INVESTIDURA DO 6º BISPO DIOCESANO DA DIOCESE ANGLICANA DE SÃO
+      PAULO Flávio Augusto Borges Irala
+  - source: snieab-2013-convite-irala
+    quote: >-
+      14 de Setembro de 2013, às 10h30 Paróquia da Santíssima Trindade Praça Olavo Bilac, 63. Campos Elíseos. São
+      Paulo/SP
   - source: costa2021
     quote: 1971-1977 – Elliott Lorenz Sorge
   - source: wp-pt-sorge
@@ -71,6 +69,12 @@ relations:
   - source: wp-pt-sumio
     quote: Permaneceu no cargo até sua renúncia, no final de 1989.
   - source: costa2021
+    quote: Assumiu a Diocese em janeiro do ano seguinte
+  - source: costa2021
+    quote: 1990-2002 – Glauco Soares de Lima
+  - source: glauco-testemunho-2013
+    quote: Bispo da Diocese Anglicana de São Paulo de 1990 - 2002
+  - source: costa2021
     quote: 2002-2006 – Hiroshi Ito
   - source: costa2021
     quote: 2007-2012 – Roger Douglas Bird
@@ -78,6 +82,10 @@ relations:
     quote: >-
       Em 21 de novembro de 2012, o então bispo Roger Bird apresentou sua carta de resignação do cargo de bispo da
       DASP
+  - source: ieab-irala-falecimento
+    quote: Em 2021, tornou-se bispo emérito
+  - source: ieab-cezar-investidura
+    quote: a celebração de Ação de Graças pela vida, ministério e início da emerência do bispo Flávio Irala
   - source: ieab-cezar-investidura
     quote: a cerimônia de Investidura do bispo Cézar Alves como bispo diocesano da DASP
   - source: ieab-dioceses

@@ -3,6 +3,7 @@ id: francisco-rubem-da-silva
 name: Francisco Rubem da Silva
 full_name: Francisco Rubem da Silva
 aliases:
+- Dom Francisco Rubem
 - Dom Francisco Silva
 - Francisco Rubem
 biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
@@ -11,11 +12,20 @@ sources:
   quote: Francisco Rubem da Silva (2022)
 ordinations:
 - order: episcopate
-  date: '2022'
+  date: '2022-02-03'
+  place: Olinda (PE)
   jurisdiction: iecb
   office: diocesan
-  status: probable
+  status: confirmed
   sources:
+  - source: ier-yt-rubem-trindade
+    quote: Sagração do Bispo Francisco Rubem da silva - IECB  - 03/02/2022
+  - source: ier-yt-rubem-betesda
+    quote: Sagração do Rev. Francisco Rubem ao Episcopado
+  - source: ier-sinpef-convite-rubem-2022
+    quote: >-
+      no dia 03/02/2022, às 19:30h, o nosso filiado APF Sr. Francisco Rubem da Silva será ordenado Bispo da Igreja
+      Episcopal Carismática do Brasil, na Cidade de Olinda.
   - source: ptwiki-iecb
     quote: Francisco Rubem da Silva (2022)
   - source: cant-novas-igrejas-2024
@@ -25,10 +35,12 @@ ordinations:
       de 2022
     page: '57'
   notes: >-
-    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
-    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso. Data ambígua na lista do livro: possivelmente 13/10/2022
-    (mesma data de Jorge Siqueira, Sérgio Presta e Tony Belo) — o ponto e vírgula após o nome deixa dúvida. Sagrantes
-    não nomeados.
+    A base só tinha "2022". Data e cidade vêm do convite (SINPEF/PE, publicado em 2022-01-06) e do título do vídeo
+    da Catedral da Trindade; a Catedral Betesda também transmitiu a cerimônia (ier-yt-rubem-betesda). Sagrantes
+    não informados. Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão
+    presumida via Paulo Garcia (ICCEC/Adler), não declarada caso a caso. Data ambígua na lista do livro: possivelmente
+    13/10/2022 (mesma data de Jorge Siqueira, Sérgio Presta e Tony Belo) — o ponto e vírgula após o nome deixa dúvida.
+    Sagrantes não nomeados.
 affiliations:
 - jurisdiction: iecb
   role: diocesan_bishop
@@ -36,6 +48,10 @@ affiliations:
   start: '2021-10-20'
   status: probable
   sources:
+  - source: ier-betesda-onde-estamos
+    quote: 'Bispo Diocesano: Dom Francisco Rubem'
+  - source: ier-betesda-16anos-2025
+    quote: Dom Francisco Rubem (Diocece de Olinda)
   - source: costa2021
     quote: >-
       o reverendo Francisco Rubem da Silva foi eleito para ser o bispo para a Diocese de Olinda, que será criada
@@ -54,6 +70,15 @@ affiliations:
     quote: Francisco Rubem da Silva (2022)
   notes: bispo diocesano (2022-)
 events:
+- type: other
+  date: '2025-10-12'
+  description: >-
+    Celebração de 16 anos da Catedral Betesda (Olinda), com Paulo Garcia, Frederico Bastos (coadjutor do Recife),
+    Francisco Rubem (Olinda) e Marcel (coadjutor de Olinda).
+  status: confirmed
+  sources:
+  - source: ier-betesda-16anos-2025
+    quote: Dia 12 de Outubro a Catedral Betesda (Olinda -PE) celebrou 16 anos de existêcia.
 - type: other
   date: '2021-10-20'
   description: >-

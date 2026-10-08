@@ -63,19 +63,33 @@ ordinations:
 - order: diaconate
   date: '1930-11-30'
   jurisdiction: dmsb
+  ordained_by: william-matthews-merrick-thomas
   status: probable
   sources:
+  - source: ieablac-cd1947
+    quote: >-
+      South. Cross Coll., B.A.; Theol. Sem., Porto Alegre, B.D. D—Nov., 1930, P—Dec., 1933, Bp. W. M. M. Thomas.
   - source: costa2021
     quote: Foi ordenado diácono, no dia 30 de novembro de 1930 e em 10 de dezembro de 1933 ao presbiterato.
     page: '72'
+  notes: >-
+    Base tem 30/11/1930 sem ordenante. Um 'Bp.' após D e P no diretório. Fonte: Clerical Directory (ed. 1947), verbete
+    de Krischke. Convenção do diretório: 'D' = diácono, 'P' = presbítero, 'Bp.' = bispo ordenante. Texto vindo de
+    OCR do Internet Archive.
 - order: presbyterate
   date: '1933-12-10'
   jurisdiction: dmsb
+  ordained_by: william-matthews-merrick-thomas
   status: probable
   sources:
+  - source: ieablac-cd1947
+    quote: D—Nov., 1930, P—Dec., 1933, Bp. W. M. M. Thomas.
   - source: costa2021
     quote: Foi ordenado diácono, no dia 30 de novembro de 1930 e em 10 de dezembro de 1933 ao presbiterato.
     page: '72'
+  notes: >-
+    Base tem 10/12/1933 sem ordenante. Fonte: Clerical Directory (ed. 1947), verbete de Krischke. Convenção do diretório:
+    'D' = diácono, 'P' = presbítero, 'Bp.' = bispo ordenante. Texto vindo de OCR do Internet Archive.
 - order: episcopate
   date: '1950-03-12'
   place: Igreja do Crucificado (Church of the Crucified), Bagé, RS

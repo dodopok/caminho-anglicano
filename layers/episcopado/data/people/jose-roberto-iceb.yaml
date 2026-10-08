@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jose-roberto-iceb
+name: José Roberto
+aliases:
+- José Roberto (presbítero, ICEB)
+biography: >-
+  Presbítero ordenado na Catedral Betânia (ICEB, Recife) em 28/03/2025; sobrenome não informado no título.
+sources:
+- source: ier-yt-iceb-presb-2025
+  quote: Ordenação Presbiteral do Rev. José Roberto - Catedral Betânia 28.03.2025 às 19h30
+ordinations:
+- order: presbyterate
+  date: '2025-03-28'
+  place: Catedral Betânia, Recife (PE)
+  jurisdiction: iceb
+  status: confirmed
+  sources:
+  - source: ier-yt-iceb-presb-2025
+    quote: Ordenação Presbiteral do Rev. José Roberto - Catedral Betânia 28.03.2025 às 19h30
+  notes: 'Título: "28.03.2025 às 19h30". Ordenante não informado.'

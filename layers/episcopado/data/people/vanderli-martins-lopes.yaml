@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: vanderli-martins-lopes
+name: Vanderli Martins Lopes
+events:
+- type: other
+  date: '2023-11-21'
+  description: >-
+    Diocese Anglicana do Pará vinculada à Igreja Anglicana Mundial (WAC) no Brasil em 21/11/2023; a província lista,
+    em 2026, a província, 'seis regiões missionárias e uma Diocese' e dioceses de São Paulo (São Francisco dos Pequenos;
+    São Tiago Maior), Pará e Pernambuco.
+  status: confirmed
+  sources:
+  - source: cont-wacbr-para
+    quote: Foi vinculada a Igreja Anglicana Mundial WAC no Brasil em 21 de Novembro de 2023.
+  - source: cont-wacbr-provincias
+    quote: É formada por uma província e seis regiões missionarias e uma Diocese.

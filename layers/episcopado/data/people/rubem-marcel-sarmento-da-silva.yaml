@@ -3,7 +3,9 @@ id: rubem-marcel-sarmento-da-silva
 name: Rubem Marcel Sarmento da Silva
 full_name: Rubem Marcel Sarmento da Silva
 aliases:
+- Dom Marcel
 - Dom Rubem Silva
+- Revm. Marcel RMSS
 biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
 sources:
 - source: ptwiki-iecb
@@ -13,8 +15,10 @@ ordinations:
   date: '2025-06-19'
   jurisdiction: iecb
   office: auxiliary
-  status: probable
+  status: confirmed
   sources:
+  - source: ier-yt-marcel-2025
+    quote: Sagração ao Episcopado - Rev. Rubem Marcel Sarmento da Silva - 19/06/2025
   - source: ptwiki-iecb
     quote: Rubem Marcel Sarmento da Silva (2025)
   - source: cant-novas-igrejas-2024
@@ -23,8 +27,8 @@ ordinations:
       de Olinda).
     page: '58'
   notes: >-
-    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
-    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso. Sagrantes não nomeados.
+    Data no título do vídeo. Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados.
+    Sucessão presumida via Paulo Garcia (ICCEC/Adler), não declarada caso a caso. Sagrantes não nomeados.
 affiliations:
 - jurisdiction: iecb
   role: bishop
@@ -35,3 +39,21 @@ affiliations:
   - source: ptwiki-iecb
     quote: Rubem Marcel Sarmento da Silva (2025)
   notes: bispo coadjutor (2025-)
+- jurisdiction: iecb
+  role: coadjutor_bishop
+  diocese: diocese-de-olinda
+  status: probable
+  sources:
+  - source: ier-betesda-16anos-2025
+    quote: Dom Marcel (Coadjutor da Diocese de Olinda)
+  notes: Fonte de out/2025.
+events:
+- type: other
+  date: '2025-10-12'
+  description: >-
+    Celebração de 16 anos da Catedral Betesda (Olinda), com Paulo Garcia, Frederico Bastos (coadjutor do Recife),
+    Francisco Rubem (Olinda) e Marcel (coadjutor de Olinda).
+  status: confirmed
+  sources:
+  - source: ier-betesda-16anos-2025
+    quote: Dia 12 de Outubro a Catedral Betesda (Olinda -PE) celebrou 16 anos de existêcia.

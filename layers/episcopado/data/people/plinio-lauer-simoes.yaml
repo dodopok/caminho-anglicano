@@ -5,6 +5,7 @@ full_name: Plínio Lauer Simões
 aliases:
 - Bishop Simoes
 - Dom Plínio Simões
+- P. L. Simões
 - Plinio L. Simoes
 - Plínio L. Simões
 - Plínio Simões
@@ -59,8 +60,9 @@ sources:
   quote: Plinio Lauer Simões | episcopal Bishop
 ordinations:
 - order: diaconate
-  date: '1941'
+  date: 1941-12
   jurisdiction: dmsb
+  ordained_by: william-matthews-merrick-thomas
   status: probable
   sources:
   - source: kickhofel-1995
@@ -71,15 +73,23 @@ ordinations:
       Cursou teologia no Seminário Teológico de Porto Alegre e foi ordenado ao diaconato em 1941 e ao presbiterado
       em 1943.
     page: '256'
+  - source: ieablac-cd1947
+    quote: D—Dec., 1941, P—Feb., 1943, Bp. W. M. M. Thomas.
+  - source: ieablac-cd1950
+    quote: D—Dec., 1941, P—Feb., 1943, Bp. W. M. M. Thom- as.
   - source: costa2021
     quote: >-
       Cursou Teologia no Seminário de Porto Alegre, sendo ordenado ao diaconato em 1941 e ao presbiterato em 1943.
     page: '73'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Um único 'Bp.' após D e P no diretório. A base tem apenas o ano (1941) e nenhum ordenante. Fonte: Clerical Directory
+    (ed. 1947/1950), verbete de Simões. Convenção do diretório: 'D' = diácono, 'P' = presbítero, 'Bp.' = bispo ordenante.
+    Texto vindo de OCR do Internet Archive.
 - order: presbyterate
-  date: '1943'
+  date: 1943-02
   jurisdiction: dmsb
+  ordained_by: william-matthews-merrick-thomas
   status: probable
   sources:
   - source: lc-1955-09-25
@@ -89,11 +99,18 @@ ordinations:
       Cursou teologia no Seminário Teológico de Porto Alegre e foi ordenado ao diaconato em 1941 e ao presbiterado
       em 1943.
     page: '256'
+  - source: ieablac-cd1947
+    quote: D—Dec., 1941, P—Feb., 1943, Bp. W. M. M. Thomas.
+  - source: ieablac-cd1950
+    quote: D—Dec., 1941, P—Feb., 1943, Bp. W. M. M. Thom- as.
   - source: costa2021
     quote: >-
       Cursou Teologia no Seminário de Porto Alegre, sendo ordenado ao diaconato em 1941 e ao presbiterato em 1943.
     page: '73'
-  notes: 'Ordenante não informado (bispo diocesano: W. M. M. Thomas; sufragâneo: Pithan).'
+  notes: >-
+    Ordenante não informado (bispo diocesano: W. M. M. Thomas; sufragâneo: Pithan). A base tem 1943 sem ordenante.
+    Fonte: Clerical Directory (ed. 1947), verbete de Simões. Convenção do diretório: 'D' = diácono, 'P' = presbítero,
+    'Bp.' = bispo ordenante. Texto vindo de OCR do Internet Archive.
 - order: episcopate
   date: '1956-03-04'
   place: Igreja do Redentor (Church of the Redeemer), Rio de Janeiro

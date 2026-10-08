@@ -1,15 +1,90 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: rafael-ribeiro-campos
 name: Rafael Ribeiro Campos
+aliases:
+- Dom Rogério Ribeiro Campos
+- Rogerio Ribeiro Campos
+- Rogério Ribeiro Campos
 biography: >-
-  Abade Nullius da Abadia Cisterciense S. Raphael (Aparecida de Goiânia, GO); participou da sagração de Theodoro
-  Oliveira (2015) e foi sagrante de James Tavares de Melo (2018).
+  Bispo e abade nullius da Abadia Cisterciense S. Raphael (Aparecida de Goiânia, GO); co-sagrante de Theodoro Oliveira
+  (2015). Segundo o blog da Ordem Franciscana Anglicana, foi sagrado em 26/06/2005 na Igreja Católica Carismática
+  da América (Diocese São João Batista, Brasil) e depois nomeado bispo da Comunhão Anglicana Independente (CAI/AICW)
+  no Brasil (2007-2010), incluindo Bispo Titular de Goiânia 'da Diocese do Japi' (05/03/2010). A identidade Rafael=Rogério
+  baseia-se em duas fontes (site da província colombiana e blog) e é provável, não provada.
 sources:
-- source: cant-novas-igrejas-2024
+- source: cont-frei-campos-sucessao
   quote: >-
-    o Abade Nullius da Abadia Cistercience S. Raphael, de Aparecida de Goiânia/ GO Dom Rafael Ribeiro Campos.
-  page: '77'
+    Sagrado como Bispo da Igreja Católica Carismática da América e instalado como Bispo-Presidente da Igreja Católica
+    Carismática da América no Brasil, Diocese São João Batista, em 26 de Junho de 2005.
+- source: cont-gazeta-votorantim-2015-02-18
+  quote: >-
+    o Abade Nullius da Abadia Cistercience S. Raphael, de Aparecida de Goiânia/ GO Dom Rafael Ribeiro Campos
+ordinations:
+- order: episcopate
+  date: '2005-06-26'
+  jurisdiction: icca
+  office: diocesan
+  principal_consecrator: jean-paul-a-boucher
+  co_consecrators:
+  - aparecido-pereira
+  - jose-carlos-teodoro
+  status: probable
+  sources:
+  - source: cont-frei-campos-sucessao
+    quote: >-
+      Sagrado como Bispo da Igreja Católica Carismática da América e instalado como Bispo-Presidente da Igreja Católica
+      Carismática da América no Brasil, Diocese São João Batista, em 26 de Junho de 2005.
+  - source: cont-frei-campos-sucessao
+    quote: >-
+      ORDENANTES:Dom Jean Paul A. Boucher (Michael), ordenante principal – Archbishop of St. John Diocese of The
+      Charismatic Catholic Church of USA.Dom José Carlos Teodoro, ordenante – Arcebispo da Igreja dos Velhos Católicos
+      do Brasil.Dom Aparecido Pereira, ordenante – Arcebispo da Igreja dos Velhos Católicos do Brasil.
+  notes: >-
+    Fonte única, blog de ordem religiosa ligada ao próprio bispo (autodeclarada). Sigla ICCA = 'Igreja Católica
+    Carismática da América'. Mesmo nome 'José Carlos Teodoro' (arcebispo velho-católico) — parentesco ou não com
+    'Theodoro/Teodoro' de Adolfo Teodoro não investigado. Na linhagem publicada: Letellier -> Boucher (1997) ->
+    Campos (2005).
 affiliations:
+- jurisdiction: cai
+  role: diocesan_bishop
+  start: '2007-10-15'
+  end: '2010'
+  status: probable
+  sources:
+  - source: cont-frei-campos-sucessao
+    quote: >-
+      Nomeado como Bispo Ordinário da Província Anglicana Tradicional do Brasil, Diocese do Centro-Oeste, da Comunhão
+      Anglicana Independente Mundial (The Anglican Independent Communion Worldwide – AICW) em 15 de outubro de 2007.
+  - source: cont-frei-campos-sucessao
+    quote: >-
+      Eleito e nomeado como Bispo-Presidente da Comunhão Anglicana Independente Mundial (The Anglican Independent
+      Communion Worldwide – AICW) para o Brasil, de 02 de Junho de 2008 até 06 de Dezembro de 2009.
+  - source: cont-frei-campos-sucessao
+    quote: >-
+      Recepcionado e nomeado como Bispo-Prelado para as Instituições Religiosas da Província do Brasil (Igreja Anglicana
+      Tradicional), da Comunhão Anglicana Independente (The Anglican Independent Communion Worldwide – AICW) em
+      07 de Dezembro de 2009.
+  notes: >-
+    Local: Província Anglicana Tradicional do Brasil, Diocese do Centro-Oeste. Segundo o blog, a 'Província Anglicana
+    Tradicional do Brasil' (Igreja Anglicana Tradicional, hoje IATB de Rui Costa Barbosa) fazia parte da Comunhão
+    Anglicana Independente (AICW) em 2007-2009, o que conecta a IATB à AICW e, por esta, à AECI de Dutton. Datas
+    autodeclaradas; 'fim' = última nomeação listada (2010).
+- jurisdiction: da-japi
+  role: other
+  role_description: bispo_titular
+  start: '2010-03-05'
+  status: contested
+  sources:
+  - source: cont-frei-campos-sucessao
+    quote: >-
+      Nomeado como Bispo Titular de Goiânia, Estado de Goiás, da Diocese do Japi, vinculada à Província Anglicana
+      de Latinoamérica (Chile), da Comunhão Anglicana Independente Mundial (The Anglican Independent Communion Worldwide
+      – AICW), em 05 de março de 2010.
+  notes: >-
+    Local: Goiânia (GO). CONFLITO DE DATA: Cant (2024, base) diz que a Diocese Anglicana do Japi foi criada juridicamente
+    em 14/10/2012 por James Roque (sagrado só em 2013); o blog diz que já em 03/2010 havia uma 'Diocese do Japi'
+    vinculada à Província Anglicana de Latinoamérica (Chile) da AICW. Pode ser a mesma estrutura de Roque antes
+    da sagração colombiana (diácono 2008 em Araraquara, presbítero 2010 em Bandeirantes) ou uma homonímia; não resolvido.
 - jurisdiction: dav
   role: other
   role_description: outro

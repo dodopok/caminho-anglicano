@@ -21,8 +21,10 @@ ordinations:
 - order: diaconate
   date: 1991-01
   jurisdiction: ieab
-  status: probable
+  status: confirmed
   sources:
+  - source: acns-2010-10-xico-eleito
+    quote: Foi ordenado diácono em janeiro de 1991 e presbítero em dezembro do mesmo ano.
   - source: ihu-2017-francisco
     quote: Em janeiro de 1991 foi ordenado diácono e, em dezembro do mesmo ano, presbítero.
   - source: kickhofel-1995
@@ -41,8 +43,10 @@ ordinations:
 - order: presbyterate
   date: 1991-12
   jurisdiction: ieab
-  status: probable
+  status: confirmed
   sources:
+  - source: acns-2010-10-xico-eleito
+    quote: Foi ordenado diácono em janeiro de 1991 e presbítero em dezembro do mesmo ano.
   - source: ihu-2017-francisco
     quote: Em janeiro de 1991 foi ordenado diácono e, em dezembro do mesmo ano, presbítero.
   - source: costa2021
@@ -232,6 +236,22 @@ affiliations:
     page: '184'
   notes: Chegou à Igreja por meio de Robinson ('Grupo do Recife').
 events:
+- type: other
+  date: '2010-10-25'
+  description: >-
+    Concílio extraordinário da Diocese Sul-Ocidental (Santa Maria, RS) elege o Rev. Cônego Francisco de Assis da
+    Silva bispo coadjutor, no primeiro escrutínio, para suceder Jubal Neves.
+  status: confirmed
+  sources:
+  - source: acns-2010-10-xico-eleito
+    quote: >-
+      No domingo, dia 25 de outubro de 2010, foi realizado concílio extraordinário da Diocese Sul-Ocidental (DSO),
+      com sé em Santa Maria, RS, para a eleição de novo bispo coadjutor, que a seu tempo, sucederá o atual bispo
+      (Dom Jubal Neves) como diocesano.
+  - source: acns-2010-10-xico-eleito
+    quote: >-
+      Ganhou a eleição, no primeiro escrutínio, o Rev. Cônego Francisco de Assis da Silva, atual secretário geral
+      da IEAB.
 - type: other
   date: '2010-10-25'
   description: >-

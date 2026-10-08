@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: edlon-vitor
+name: Edlon Vitor
+biography: Diácono ordenado na Catedral Betânia (ICEB, Recife); data não informada no título.
+sources:
+- source: ier-yt-iceb-diac-edlon
+  quote: ORDENAÇÃO DIACONAL EDLON VITOR
+ordinations:
+- order: diaconate
+  date: null
+  jurisdiction: iceb
+  status: probable
+  sources:
+  - source: ier-yt-iceb-diac-edlon
+    quote: ORDENAÇÃO DIACONAL EDLON VITOR
+  notes: Vídeo da Catedral Betânia; título sem data.

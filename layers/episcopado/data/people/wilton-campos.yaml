@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: wilton-campos
+name: Wilton Campos
+biography: >-
+  Ordenado diácono em 27/05/2022 por Miguel Uchôa; novo culto de ordenação em 15/01/2023 com Flávio Adair.
+sources:
+- source: iabord-yt-ko10kzxk3ao
+  quote: >-
+    Ordenação Diaconal | Marcelo Cartaxo, Denise Vasconcellos e Wilton Campos | Bispo Miguel Uchoa | Anglicana ZN
+ordinations:
+- order: diaconate
+  date: '2022-05-27'
+  place: Igreja Anglicana Zona Norte (PAES ZN) - provavelmente Recife (PE)
+  jurisdiction: iab
+  ordained_by: miguel-uchoa
+  status: confirmed
+  sources:
+  - source: iabord-yt-ko10kzxk3ao
+    quote: Ordenação Diaconal | Marcelo Cartaxo, Denise Vasconcellos e Wilton Campos | Bispo Miguel Uchoa
+  notes: >-
+    Mesmo culto. Em 15/01/2023 houve novo 'Culto de Ordenação' de Wilton Campos com o bispo Flávio Adair (ver evento)
+    - provavelmente presbiterato, mas a página não diz a ordem.
+events:
+- type: other
+  date: '2023-01-15'
+  description: >-
+    Culto de Ordenação de Wilton Campos presidido por 'Bisp. Flávio Adair' na Igreja Anglicana Zona Norte (Recife);
+    a ordem (provavelmente presbiterato, 8 meses após o diaconato) não é dita.
+  status: probable
+  sources:
+  - source: iabord-yt-swftjpsycwu
+    quote: Culto de Ordenação | Wilton Campos | Bisp. Flávio Adair | Culto Online

@@ -1,7 +1,10 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jose-aparecido-peracoli-moreno
 name: José Aparecido Peraçoli Moreno
+full_name: José Aparecido Peraçoli Moreno
 aliases:
+- Bispo Moreno
+- Dom José Moreno
 - José Moreno
 - bispo Moreno
 biography: >-
@@ -13,6 +16,33 @@ sources:
     Foi organizada em 1999, pelo bispo José Aparecido Peraçoli Moreno, que havia sido pastor da Igreja Pentecostal
     de Nova Vida, do bispo Robert McAlister.
   page: '114'
+ordinations:
+- order: episcopate
+  date: '2004'
+  place: Belo Horizonte (MG)
+  jurisdiction: ieal
+  status: confirmed
+  sources:
+  - source: nigweb-moreno-sucessao-2012
+    quote: >-
+      eu havia sido ordenado ao episcopado em Belo Horizonte por um único bispo, em 2004, o que é considerado irregular
+  notes: >-
+    Relato do próprio ordenado (fonte primária, autodeclaração). O sagrante único não é nomeado no texto. Segundo
+    o mesmo texto, a jurisdição exigiu nova sagração sub conditione porque os cânones exigiriam ao menos três bispos.
+- order: episcopate
+  date: '2009'
+  place: Salta (Argentina)
+  jurisdiction: ieal
+  mode: conditional
+  status: confirmed
+  sources:
+  - source: nigweb-moreno-sucessao-2012
+    quote: A nova sagração deu-se em Salta, na Argentina, em 2009, através de três bispos
+  - source: nigweb-moreno-sucessao-2012
+    quote: >-
+      A minha própria jurisdição, a Anglican Church of the Americas, requereu de mim uma nova sagração, sub conditione
+  notes: >-
+    Segunda sagração, condicional (sub conditione), relatada pelo próprio bispo. Os três sagrantes não são nomeados.
 affiliations:
 - jurisdiction: ieal
   role: founder
@@ -22,6 +52,15 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: Foi organizada em 1999, pelo bispo José Aparecido Peraçoli Moreno
     page: '114'
+- jurisdiction: ieal
+  role: bishop
+  status: confirmed
+  sources:
+  - source: nigweb-moreno-identidade-2026
+    quote: Embora seja bispo da Igreja Anglicana das Américas
+  notes: >-
+    Em 2026 assina como bispo da Igreja Anglicana das Américas – Via Media (Indaiatuba, SP). A base já registra
+    a IEAL como 'Igreja Anglicana das Américas'.
 events:
 - type: other
   date: null
@@ -35,3 +74,11 @@ events:
       O bispo José Moreno também foi membro do Conselho Anglicano Americano (ACC), ligado à Igreja Anglicana da
       América Latina (EUA). Por causa deste vínculo, a denominação foi intitulada Igreja Anglicana das Américas.
     page: '114'
+- type: other
+  date: '2026-06-25'
+  description: >-
+    José Moreno declara-se membro do GAFCON (autodeclaração em blog, 2026); a base já tem GAFCON como jurisdição.
+  status: probable
+  sources:
+  - source: nigweb-moreno-identidade-2026
+    quote: Hoje, o GAFCON (Global Anglican Future Conference), do qual participo

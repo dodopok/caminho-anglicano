@@ -1,8 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: victor-manuel-cruz-blanco
 name: Victor Manuel Cruz-Blanco
+full_name: Victor Manuel Cruz Blanco
 aliases:
+- Archbishop Cruz Blanco
 - Victor Cruz-Blanca
+- Victor Cruz-Blanco
+birth:
+  date: '1949-10-28'
+  sources:
+  - source: cont-cruzblanco-resume
+    quote: >-
+      Consecrated Anglican Bishop in June 30 of 1.991 by the Sacred Council of the Anglican Rite Synod in the Americas-The
+      Holy Catholic Church, in the Anglican Cathedral of Saint Andrew of Merrillville, Indiana
+  - source: cont-cruzblanco-resume
+    quote: Born, Barraquilla, Colombia, 28 of Octobre 1949
+  - source: cont-cruzblanco-resume
+    quote: Archbishop Ordinary, Anglican Church of the Caribbean and New Granada.
 biography: >-
   Arcebispo colombiano, da Província Católica de Rito Anglicano da América Latina (ligada à Igreja Católica de Rito
   Anglicano, Quakertown, EUA); declarado precursor do continuismo na América Latina e co-sagrante de Mark Haverland
@@ -12,16 +26,141 @@ sources:
   quote: >-
     através do arcebispo colombiano ††Victor Manuel Cruz-Blanco, da Província Católica de Rito Anglicano da América
     Latina, então vinculada à Igreja Católica de Rito Anglicano
+ordinations:
+- order: episcopate
+  date: '1991-06-30'
+  place: Catedral anglicana de Santo André, Merrillville, Indiana (EUA)
+  jurisdiction: null
+  principal_consecrator: william-carson-thompson
+  co_consecrators:
+  - benjamin-c-eckart
+  - david-h-marion-davis
+  - larry-lee-shaver
+  - william-corley
+  status: probable
+  sources:
+  - source: cont-cruzblanco-resume
+    quote: >-
+      Consecrated Anglican Bishop in June 30 of 1.991 by the Sacred Council of the Anglican Rite Synod in the Americas-The
+      Holy Catholic Church, in the Anglican Cathedral of Saint Andrew of Merrillville, Indiana
+  - source: cont-cruzblanco-resume
+    quote: 'Chief Consecrator: The Most Rev. William Carson Thompson'
+  - source: cont-cruzblanco-resume
+    quote: >-
+      Co-consacrators:The Most Rev. Larry Lee Shaver, The Rt. Rev. David H. Marion-Davis, The The Most Rev. Bebjamin
+      C. Eckart, Archbishop of Canada, The Rt. Rev.William Corley, with the Seal and Benediction by Letter of the
+      Most Rev. Francisco de Jesus  Pagtakhan.,PICC.
+  notes: >-
+    Fonte única, autodeclarada (currículo de 2011). Jurisdição: 'Anglican Rite Synod in the Americas – The Holy
+    Catholic Church'. Pagtakhan (PICC) aparece como selo/bênção por carta, não como sagrante presente. Grafias originais
+    do currículo: 'Bebjamin C. Eckart' = Benjamin C. Eckart.
+- order: episcopate
+  date: '1993-05-06'
+  jurisdiction: acc
+  office: diocesan
+  principal_consecrator: william-o-lewis
+  co_consecrators:
+  - arthur-david-seeland
+  - james-r-mcneley
+  - john-c-gramley
+  - m-dean-stephens
+  - thomas-justin-kleppinger
+  mode: conditional
+  status: probable
+  sources:
+  - source: cont-cruzblanco-resume
+    quote: 'Consacrated Sub-Conditione by:'
+  - source: cont-cruzblanco-resume
+    quote: 'Chief Consecrator: The Metropolitan, The Most Rev. William O. Lewis,'
+  - source: cont-cruzblanco-resume
+    quote: >-
+      Co-consecrators: The Rt. Rt. Thomas L. Kleppinger, The Rt. Rev. Arthur David Seeland, The Rt. Rev.James R,
+      McNeley, The Rt. Rev. M. Dean Stephens, and the Most Rev. John C. Gramley,Presiding Bishop of the United Episcopal
+      Church.
+  - source: cont-wiki-acc-succession
+    quote: 026 CRUZ-Blanco. Victor Manuel *
+  - source: cont-wiki-acc-succession
+    quote: May 6, 1993[61]
+  notes: >-
+    Sagração sub conditione na Anglican Catholic Church (ACC, Província Original). O currículo não dá data; a data
+    6/5/1993 vem da tabela da Wikipédia (terciária) para o verbete 026. Segundo o currículo, foi entronizado em
+    19/06/1994 em Atlanta (St. Hilda's) como ordinário da Diocese do Caribe e Nova Granada da ACC. O currículo escreve
+    'Thomas L. Kleppinger' (Wikipédia: Thomas Justin Kleppinger).
 affiliations:
-- jurisdiction: pcra-al
+- jurisdiction: acc
+  role: diocesan_bishop
+  start: '1994'
+  end: '2003'
+  end_reason: left
+  status: probable
+  sources:
+  - source: cont-wiki-acc-succession
+    quote: Bishop of the Diocese of the Caribbean and New Granada (1994-2003)
+  - source: cont-wiki-acc-succession
+    quote: Left to join the Holy Catholic Church Anglican Rite in 2004
+  - source: cont-cruzblanco-resume
+    quote: >-
+      Entroned in June 19 0f 1.994 in St. Hilda´s Church in Atlanta, GA, as the  Ordinary of the Anglican Diocese
+      of the Caribbean and New Granada of the Anglican Catholic Church, ACC.
+  notes: >-
+    Local: Diocese do Caribe e Nova Granada. Wikipédia (terciária): saiu da ACC para a HCCAR em 2004. Wikipédia
+    (HCCAR) também o lista entre os cinco bispos dissidentes da ACC já em 1997 (Allentown), o que conflita parcialmente
+    com 1994-2003 — ver dúvidas.
+- jurisdiction: aeci
+  role: archbishop
+  start: '2011'
+  status: probable
+  sources:
+  - source: cont-aeci-news
+    quote: >-
+      The Most Rev'd Dr Victor Manuel Cruz Blanco CJ., Hon DD. as The Grand Prior of the Priestly Order of the Companions
+      of Jesus for the whole of Latin America.
+  - source: cont-aeci-news
+    quote: >-
+      Membership status of The International Chaplains Corps has been granted to all the Archbishops of AECI. Metropolitan
+      Archbishop Emeritus Norman S Dutton Metropolitan Archbishop-Elect John Langley Archbishop Clive Read Archbishop
+      Victor Manuel Cruz-Blanco
+  notes: >-
+    Local: Província da América Latina (Grand Prior da Ordem dos Companheiros de Jesus para a América Latina). A
+    AECI o lista entre seus arcebispos (Chaplains Corps) e nomeia-o Grand Prior para a América Latina. Ano 2011
+    é a data do concordato; a nomeação aparece no mesmo trecho da página.
+- jurisdiction: hccar
   role: archbishop
   status: probable
   sources:
+  - source: iacc-continuante
+    quote: >-
+      arcebispo colombiano ††Victor Manuel Cruz-Blanco, da Província Católica de Rito Anglicano da América Latina,
+      então vinculada à Igreja Católica de Rito Anglicano, com sede em Quakertown, Pensilvânia, nos Estados Unidos
+      da América, que tinha como Primaz o arcebispo ††Thomas Justin Kleppinger
+  - source: cont-wiki-hccar
+    quote: >-
+      Bishop Michael M. Wright was elected as the new metropolitan of the Holy Catholic Church—Western Rite, with
+      the support of Cruz-Blanco, Banzana and Kleppinger.
+  notes: >-
+    Local: Província Católica de Rito Anglicano da América Latina. O site da IACC o descreve como arcebispo da Província
+    Católica de Rito Anglicano da América Latina; a Wikipédia (HCCAR) registra Cruz-Blanco entre os bispos da HCCAR/Western
+    Rite em 2005.
+- jurisdiction: pcra-al
+  role: archbishop
+  status: confirmed
+  sources:
+  - source: cont-pciacng-theodoro
+    quote: El Decrero Correspondinte Fue Emirido Por El Arzobispo Metropolitano , Su Gracia Victor Cruz Blanco
+  - source: cont-pciacng-primado
+    quote: >-
+      Arzobispo Metropolitano. Su  Gracia Victor Cruz Blanco, Designado Primado De La Provincia Por La Comunion
+      Apostolica De Iglesias Anglicanas.
   - source: cant-novas-igrejas-2024
     quote: >-
       O estabelecimento do Movimento Contínuo entre as Igrejas latino-americanas foi liderado pelo arcebispo colombiano
       Victor Manuel Cruz-Blanco, da Província Católica de Rito Anglicano da América Latina
     page: '71'
+  notes: >-
+    Local: Metropolitano da Província Católica de Rito Anglicano de América Latina / Iglesia Anglicana del Caribe
+    y la Nueva Granada. Confirma o nome da jurisdição que sagrou James Roque: o próprio Cruz-Blanco chama sua jurisdição
+    'Provincia Católica de Rito Anglicano de América Latina' (= Iglesia Anglicana del Caribe y la Nueva Granada),
+    com bispo chanceler Enrique Jiménez Sarta.
 - jurisdiction: acc
   role: bishop
   status: probable
@@ -29,3 +168,42 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: No início de seu ministério episcopal, esteve ligado à Anglican Catholic Church
     page: '76'
+events:
+- type: other
+  date: '2015-08-15'
+  description: >-
+    Decreto de 15/08/2015 da Província Católica de Rito Anglicano de América Latina (Iglesia Anglicana del Caribe
+    y la Nueva Granada), assinado por Victor Manuel Cruz Blanco (Barranquilla) e pelo chanceler Enrique Jiménez
+    Sarta, que desmembra da diocese do JAPI-Jundiaí/SP o território da 'Diocese Católica Anglicana Santa Mãe de
+    Deus' (Votorantim/SP), com Theodoro Oliveira como bispo ordinário do Brasil. A página do site da província diz
+    que o decreto elevou Theodoro a bispo ordinário e que 'Brasil ya cuenta con dos diócesis ordinarias y dos obispos
+    ordinarios con el obispo James Roque, ordinario de Jundiá'.
+  status: probable
+  sources:
+  - source: cont-pciacng-theodoro
+    quote: >-
+      La Sede Metropolitana De La Provincia Catolica De Rito Anglicano De America Latina, Elevo Al Obispo Monseñor
+      Theodoro Oliveira A Obispo Ordinario De La Diócesis Catolica Anglicana Santa Madre De Dios.
+  - source: cont-pciacng-theodoro
+    quote: >-
+      El Decrero Correspondinte Fue Emirido Por El Arzobispo Metropolitano , Su Gracia Victor Cruz Blanco Y Fue
+      Notarizado Por La Curia Metropolitana Con La Firma Del Canciller De La Provincia De America Latina , Obispo
+      Enrique Jiménez Sarta.
+  - source: cont-pciacng-theodoro
+    quote: >-
+      Con Esta Nueva Situación Brasil Ya Cuenta Con Dos Diócesis Ordinaria Y Y Dos Obispos Ordinarios Con El Obispo
+      James Roque, Ordinario De Jundia, Sao Paulo. Brasil.
+- type: other
+  date: '2015'
+  description: >-
+    Acordo de Comunhão e Cooperação entre a 'Igreja Anglicana do Brasil' (bispo Ricardo Lorite de Lima) e a 'Província
+    Católica de Rito Anglicano – Iglesia Anglicana del Caribe y la Nueva Granada' (arcebispo metropolitano Victor
+    Manuel Cruz Blanco). O site da província intitula a página 'Iglesia Anglicana De Brasil Con Su Obispo Ricardo
+    Lorite'.
+  status: probable
+  sources:
+  - source: cont-pciacng-lorite
+    quote: Iglesia Anglicana De Brasil Con Su Obispo Ricardo Lorite
+  - source: cont-pciacng-viaje
+    quote: >-
+      Viaje Del Arzobispo Cruz Blanco A Brasil El Nuevo Obispo Theodoro Y La Nueva Diócesis Anglicana Madre De Dios

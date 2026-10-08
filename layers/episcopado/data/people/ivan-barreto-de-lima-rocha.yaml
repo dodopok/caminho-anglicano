@@ -18,6 +18,8 @@ ordinations:
   principal_consecrator: paulo-garcia
   status: probable
   sources:
+  - source: ier-yt-ivan
+    quote: Sagração ao Episcopado | Dom Ivan Rocha
   - source: ptwiki-iecb
     quote: Ivan Barreto de Lima Rocha (2024)
   - source: jc-2024-ivan-rocha
@@ -29,9 +31,11 @@ ordinations:
     quote: Ivan Barreto de Lima Rocha (Auxiliar da Diocese da Zona Sul), em 19 de janeiro de 2024
     page: '58'
   notes: >-
-    Jornal do Commercio (28/1/2024) diz que a sagração foi 'há pouco dias', presidida por Paulo Garcia, com mais
-    de 15 bispos presentes, inclusive Miguel Uchôa e Márcio Meira (IAB). A fonte não diz se os bispos da IAB impuseram
-    as mãos. Sagrantes não nomeados.
+    Título do vídeo (canal da Catedral da Reconciliação) sem data; base já tem 2024-01-19 (JC). O canal que transmitiu
+    foi o da Catedral da Reconciliação, sugerindo a cerimônia ali, mas o título não diz o local. Jornal do Commercio
+    (28/1/2024) diz que a sagração foi 'há pouco dias', presidida por Paulo Garcia, com mais de 15 bispos presentes,
+    inclusive Miguel Uchôa e Márcio Meira (IAB). A fonte não diz se os bispos da IAB impuseram as mãos. Sagrantes
+    não nomeados.
 affiliations:
 - jurisdiction: iecb
   role: bishop
@@ -52,3 +56,11 @@ affiliations:
     quote: Ivan Barreto de Lima Rocha (Auxiliar da Diocese da Zona Sul)
     page: '58'
   notes: 'Local: Catedral da Reconciliação.'
+- jurisdiction: iecb
+  role: other
+  role_description: bispo_adjutor
+  diocese: iecb-zona-sul
+  status: probable
+  sources:
+  - source: ier-betesda-onde-estamos
+    quote: 'Bispo Adjutor: Dom Ivan Rocha'

@@ -12,6 +12,10 @@ birth:
     quote: Sumio Takatsu nasceu na cidade de Sapporo, Japão, em 03 de janeiro de 1927
   - source: costa2021
     quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
+  - source: ieablac-cd1959
+    quote: >-
+      TAKATSU, SUMIO (CBra) Caixa Postal 4435, Sao Paulo, Brazil Asst Holy Trin 56-. b Sapporo Hokkaido Japan 3
+      Jan 27
 death:
   date: '2004-01-23'
   sources:
@@ -50,11 +54,16 @@ ordinations:
   ordained_by: louis-chester-melcher
   status: probable
   sources:
+  - source: ieablac-cd1959
+    quote: D Nov 55 P Sep 56 Bp Melcher
   - source: costa2021
     quote: >-
       Foi ordenado ao diaconato, em 05 de novembro de 1955, e ao presbiterato, em 30 de setembro de 1956, pelo bispo
       Louis Melcher.
     page: '87'
+  notes: >-
+    Confirma Melcher e os meses de diaconato/presbiterato (outra fonte: 1955-11-05 e 1956-09-30); nascimento 3/1/1927
+    em Sapporo.
 - order: episcopate
   date: '1977-06-12'
   place: St. Paul's Church (Igreja de Sao Paulo), Sao Paulo

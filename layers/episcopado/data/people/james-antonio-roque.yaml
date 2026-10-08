@@ -38,10 +38,11 @@ ordinations:
   notes: Ordenante e jurisdição não informados pelo livro.
 - order: episcopate
   date: '2013'
-  place: Pró-Catedral, Barranquilla (Colômbia)
-  jurisdiction: iacc
+  place: Pró-Catedral da Sé Metropolitana, Barranquilla (Colômbia)
+  jurisdiction: pcra-al
+  office: diocesan
   principal_consecrator: victor-manuel-cruz-blanco
-  status: contested
+  status: confirmed
   sources:
   - source: iacc-continuante
     quote: >-
@@ -55,6 +56,16 @@ ordinations:
     quote: Em 2013, Dom James Roque recebeu o episcopado pelas mãos de Dom Victor Manuel Cruz-Blanco
   - source: cant-novas-igrejas-2024
     quote: A sua sagração aconteceu na cidade de Barranquila, na Colômbia.
+  - source: iacc-continuante
+    quote: >-
+      O primeiro brasileiro a ser sagrado Bispo por ††Victor Manuel Cruz-Blanco, em cerimônia ocorrida em 2013,
+      foi o paulista dom †James Roque, na sede metropolitana da Igreja Anglicana Continuante da República da Colômbia
+      (Diocese Anglicana del Caribe y La Nueva Granada), na cidade de Barranquilla, Departamento de Atlântico
+  - source: iacc-continuante
+    quote: >-
+      arcebispo colombiano ††Victor Manuel Cruz-Blanco, da Província Católica de Rito Anglicano da América Latina,
+      então vinculada à Igreja Católica de Rito Anglicano, com sede em Quakertown, Pensilvânia, nos Estados Unidos
+      da América, que tinha como Primaz o arcebispo ††Thomas Justin Kleppinger
   - source: cant-novas-igrejas-2024
     quote: >-
       O primeiro brasileiro a ser sagrado dentro do Movimento Contínuo foi o bispo James Antônio Roque, em cerimônia
@@ -65,36 +76,22 @@ ordinations:
       em 2013, foi ordenado e sagrado o primeiro bispo brasileiro do Movimento Anglicano Contínuo no Brasil. A sua
       sagração aconteceu na cidade de Barranquila, na Colômbia.
     page: '154'
-  discrepancies:
-  - field: jurisdiction
-    value: tac
-    sources:
-    - source: cant-anglo-catolicismo-2026
-      quote: Em 2013, Dom James Roque recebeu o episcopado pelas mãos de Dom Victor Manuel Cruz-Blanco
-    - source: cant-novas-igrejas-2024
-      quote: A sua sagração aconteceu na cidade de Barranquila, na Colômbia.
-  - field: jurisdiction
-    value: pcra-al
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        O primeiro brasileiro a ser sagrado dentro do Movimento Contínuo foi o bispo James Antônio Roque, em cerimônia
-        ocorrida em 2013, tendo recebido a sagração episcopal pelas mãos do bispo Victor Manuel Cruz-Blanco.
-      page: '76'
-    - source: costa2021
-      quote: >-
-        O primeiro brasileiro a ser sagrado dentro do Movimento Continuante foi o bispo James Roque, em cerimônia
-        ocorrida em 2013, tendo recebido a sagração episcopal pelas mãos do bispo colombiano Victor Manuel Cruz-Blanco.
-      page: '138'
   notes: >-
     Fonte é o próprio site da IACC, assinado por James Roque (autodeclaração). Quatro co-sagrantes não nomeados.
     Sucessão declarada: Chambers/Pagtakhan/Pae (St. Louis 1977) via Cruz-Blanco. Registro neutro do que a jurisdição
     declara. Costa (2021) confirma a data e o sagrante, e também que Roque 'ordenou muitas pessoas ao episcopado'
     (Kennedy de Freitas, Mattos, Barreiros, Ferreira, Itabira Jonas, Pinho, Barbosa da Silva). Já registrado em
     jurisdicoes-menores.json; aqui com fonte Costa. Jurisdição: Movimento Contínuo (Província Católica de Rito Anglicano
-    da América Latina); sigla TAC é aproximada. Jurisdição do sagrante; Roque organizou em seguida a Diocese Anglicana
-    do Japi. O livro não informa sagrantes nem a jurisdição sagrante nesta parte. Atenção: a criação jurídica da
-    Diocese do Japi pelo 'bispo' Roque é datada de 14/10/2012, antes da sagração de 2013.
+    da América Latina); sigla TAC é aproximada. RESPOSTA À DÚVIDA 'por qual igreja': segundo o próprio site da IACC
+    (assinado por James Roque), a sagração foi na sede da 'Igreja Anglicana Continuante da República da Colômbia
+    (Diocese Anglicana del Caribe y La Nueva Granada)' e Cruz-Blanco agia como arcebispo da 'Província Católica
+    de Rito Anglicano da América Latina', 'então vinculada à Igreja Católica de Rito Anglicano' (= Holy Catholic
+    Church Anglican Rite / Anglican Rite Catholic Church, Quakertown, PA; primaz Thomas Justin Kleppinger). Portanto
+    NÃO foi a IACC (criada depois pelo próprio Roque), NÃO foi a TAC (nenhuma fonte liga Cruz-Blanco à TAC), e a
+    jurisdição mais precisa é PCRA-AL/HCCAR. Quatro co-sagrantes não nomeados. Ano 2013 sem dia. Jurisdição do sagrante;
+    Roque organizou em seguida a Diocese Anglicana do Japi. O livro não informa sagrantes nem a jurisdição sagrante
+    nesta parte. Atenção: a criação jurídica da Diocese do Japi pelo 'bispo' Roque é datada de 14/10/2012, antes
+    da sagração de 2013.
 affiliations:
 - jurisdiction: da-japi
   role: diocesan_bishop
@@ -177,6 +174,48 @@ events:
       Anos mais tarde, a Diocese Anglicana do Japí foi extinta e estes novos bispos seguiram caminhos distintos,
       fundando Igrejas Anglicanas Independentes, sem vínculos com alguma instância associativa, nem com o Movimento
       Continuante.
+- type: other
+  date: '2015-08-15'
+  description: >-
+    Decreto de 15/08/2015 da Província Católica de Rito Anglicano de América Latina (Iglesia Anglicana del Caribe
+    y la Nueva Granada), assinado por Victor Manuel Cruz Blanco (Barranquilla) e pelo chanceler Enrique Jiménez
+    Sarta, que desmembra da diocese do JAPI-Jundiaí/SP o território da 'Diocese Católica Anglicana Santa Mãe de
+    Deus' (Votorantim/SP), com Theodoro Oliveira como bispo ordinário do Brasil. A página do site da província diz
+    que o decreto elevou Theodoro a bispo ordinário e que 'Brasil ya cuenta con dos diócesis ordinarias y dos obispos
+    ordinarios con el obispo James Roque, ordinario de Jundiá'.
+  status: probable
+  sources:
+  - source: cont-pciacng-theodoro
+    quote: >-
+      La Sede Metropolitana De La Provincia Catolica De Rito Anglicano De America Latina, Elevo Al Obispo Monseñor
+      Theodoro Oliveira A Obispo Ordinario De La Diócesis Catolica Anglicana Santa Madre De Dios.
+  - source: cont-pciacng-theodoro
+    quote: >-
+      El Decrero Correspondinte Fue Emirido Por El Arzobispo Metropolitano , Su Gracia Victor Cruz Blanco Y Fue
+      Notarizado Por La Curia Metropolitana Con La Firma Del Canciller De La Provincia De America Latina , Obispo
+      Enrique Jiménez Sarta.
+  - source: cont-pciacng-theodoro
+    quote: >-
+      Con Esta Nueva Situación Brasil Ya Cuenta Con Dos Diócesis Ordinaria Y Y Dos Obispos Ordinarios Con El Obispo
+      James Roque, Ordinario De Jundia, Sao Paulo. Brasil.
+- type: other
+  date: '2013'
+  description: >-
+    James Antônio Roque, segundo perfil de dezembro/2024: nascido em Lins (SP), criado em Promissão (SP), sediado
+    em Jundiaí desde 1976, 61 anos, engenheiro da Caixa; 'bispo emérito do Movimento Anglicano Continuante'; ordenado
+    diácono em 2008 (Araraquara), presbítero em 2010 (Bandeirantes-PR) e, em 2013, 'ordenado e sagrado o primeiro
+    bispo brasileiro da Igreja Anglicana Continuante' em Barranquilla (Colômbia). A reportagem descreve o Movimento
+    Continuante como oriundo da Comunhão Anglicana dos EUA.
+  status: probable
+  sources:
+  - source: cont-folha2-roque-2024
+    quote: >-
+      O bispo em questão é dom James Antonio  Roque, 61 anos, nascido em Lins (SP), criado em Promissão (SP) e desde
+      1976 sediado em Jundiaí (SP).
+  - source: cont-folha2-roque-2024
+    quote: >-
+      E, em 2013, foi ordenado e sagrado o primeiro bispo brasileiro da Igreja Anglicana Continuante. Esta ordenação
+      e sagração aconteceu na cidade de Barranquila, na Colômbia.
 - type: other
   date: '2016'
   description: Extinção da Diocese Anglicana do Japi; os bispos sagrados por James Roque seguem caminhos distintos.
