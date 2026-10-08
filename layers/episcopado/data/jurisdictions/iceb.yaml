@@ -104,18 +104,12 @@ relations:
     2009, p. 121.
 - type: member_of
   target: ceec
-  date: '2002'
+  date: '2003-06-08'
   end: '2008'
   led_by:
   - leonides-de-menezes-ferreira
   status: contested
   sources:
-  - source: costa2021
-    quote: Inicialmente, este grupo se filiou à Comunhão das Igrejas Episcopais Evangélicas
-    page: '202'
-  - source: costa2021
-    quote: (CEEC) e, posteriormente, tornou-se uma Igreja independente
-    page: '202'
   - source: cant-novas-igrejas-2024
     quote: >-
       No dia 8 de junho de 2003, apenas alguns meses após sua reorganização, a comunidade tomou a decisão de afiliar-se
@@ -135,42 +129,35 @@ relations:
     page: '171'
   - source: iab-poster-linhagem-meira
     quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC
+  - source: costa2021
+    quote: Inicialmente, este grupo se filiou à Comunhão das Igrejas Episcopais Evangélicas
+    page: '202'
+  - source: costa2021
+    quote: (CEEC) e, posteriormente, tornou-se uma Igreja independente
+    page: '202'
   notes: >-
-    Fim aproximado: a tese diz que depois se tornou independente; em 2008 a comunhão foi renomeada CICEB. A citação
-    do site da CICEB no mesmo livro (p. 66) traz '8 de junho de 2002', o que é incoerente com a saída em outubro
-    de 2002 seguida de 'oito meses de oração'. O site oficial dá 8/6/2002, mas diz que a filiação veio 'após oito
-    meses' da saída (out. 2002), o que só fecha com 8/6/2003, data dada pela Wikipédia. Provável erro de digitação
-    no site. O site diz que a comunhão é 'hoje chamada Communio Christiana Churches (CCC)'; a Wikipédia fala em
-    Christian Communion International (CCI). Data de eventual saída da CEEC não encontrada (a Wikipédia descreve
-    a ligação com a CCI, com sede na Flórida). Filiação inferida da sagração; verificar.
+    A citação do site da CICEB no mesmo livro (p. 66) traz '8 de junho de 2002', o que é incoerente com a saída
+    em outubro de 2002 seguida de 'oito meses de oração'. O site oficial dá 8/6/2002, mas diz que a filiação veio
+    'após oito meses' da saída (out. 2002), o que só fecha com 8/6/2003, data dada pela Wikipédia. Provável erro
+    de digitação no site. O site diz que a comunhão é 'hoje chamada Communio Christiana Churches (CCC)'; a Wikipédia
+    fala em Christian Communion International (CCI). Data de eventual saída da CEEC não encontrada (a Wikipédia
+    descreve a ligação com a CCI, com sede na Flórida). Filiação inferida da sagração; verificar. Fim aproximado:
+    a tese diz que depois se tornou independente; em 2008 a comunhão foi renomeada CICEB.
   discrepancies:
-  - field: date
-    value: '2003-06-08'
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        No dia 8 de junho de 2003, apenas alguns meses após sua reorganização, a comunidade tomou a decisão de afiliar-se
-        à Comunhão das Igrejas Episcopais Evangélicas (CEEC).
-      page: '66'
-    - source: ptwp-dar
-      quote: >-
-        Em 8 de junho de 2003, a então Igreja Episcopal Evangélica Betânia, filiou-se à Comunhão das Igrejas Episcopais
-        Evangélicas (em inglês, The Communion of Evangelical Episcopal Churches - CEEC)
-    - source: ciceb-quemsomos
-      quote: >-
-        Em 8 de junho de 2002, após oito meses de oração em busca de resposta de Deus, resolveu em assembleia geral
-        extraordinária, também por unanimidade de votos, filiar-se à Comunion of Evangelical Episcopal Churches
-        (CECC), com sede nos EUA e hoje chamada Communio Christiana Churches (CCC).
-    - source: cant-novas-igrejas-2024
-      quote: Origem na IEAB, depois filiada à Communion of Evangelical Episcopal Churches (CEEC)
-      page: '171'
-    - source: iab-poster-linhagem-meira
-      quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC
   - field: date
     value: '2007'
     sources:
     - source: iab-poster-linhagem-meira
       quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC
+  - field: date
+    value: '2002'
+    sources:
+    - source: costa2021
+      quote: Inicialmente, este grupo se filiou à Comunhão das Igrejas Episcopais Evangélicas
+      page: '202'
+    - source: costa2021
+      quote: (CEEC) e, posteriormente, tornou-se uma Igreja independente
+      page: '202'
 - type: in_communion_with
   target: cci
   date: '2006'

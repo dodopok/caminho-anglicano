@@ -34,16 +34,10 @@ sources:
   quote: Revmo. Bispo Clóvis Erli Rodrigues, Emérito
 ordinations:
 - order: diaconate
-  date: '1961'
-  jurisdiction: ieab
+  date: '1960'
+  jurisdiction: dmsb
   status: contested
   sources:
-  - source: costa2021
-    quote: Clovis formou-se em Teologia pelo Seminário de Porto Alegre, sendo ordenado, ao diaconato e ao
-    page: '178'
-  - source: costa2021
-    quote: presbiterato, em 1961.
-    page: '179'
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1960 - … Clóvis Erly Rodrigues
     page: '371'
@@ -53,40 +47,33 @@ ordinations:
   - source: costa2021
     quote: Após sua formação, foi ordenado ao diaconato e ao presbiterato em 1961.
     page: '95'
+  - source: costa2021
+    quote: Clovis formou-se em Teologia pelo Seminário de Porto Alegre, sendo ordenado, ao diaconato e ao
+    page: '178'
+  - source: costa2021
+    quote: presbiterato, em 1961.
+    page: '179'
   discrepancies:
   - field: date
-    value: '1960'
+    value: '1961'
     sources:
-    - source: kickhofel-1995
-      quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1960 - … Clóvis Erly Rodrigues
-      page: '371'
-    - source: kickhofel-1995
-      quote: Formou-se em teologia em 1960, sendo ordenado ao diaconato e ao presbiterado no ano seguinte.
-      page: '299'
     - source: costa2021
       quote: Após sua formação, foi ordenado ao diaconato e ao presbiterato em 1961.
       page: '95'
-  - field: jurisdiction
-    value: dmsb
-    sources:
-    - source: kickhofel-1995
-      quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1960 - … Clóvis Erly Rodrigues
-      page: '371'
-    - source: kickhofel-1995
-      quote: Formou-se em teologia em 1960, sendo ordenado ao diaconato e ao presbiterado no ano seguinte.
-      page: '299'
     - source: costa2021
-      quote: Após sua formação, foi ordenado ao diaconato e ao presbiterato em 1961.
-      page: '95'
+      quote: Clovis formou-se em Teologia pelo Seminário de Porto Alegre, sendo ordenado, ao diaconato e ao
+      page: '178'
+    - source: costa2021
+      quote: presbiterato, em 1961.
+      page: '179'
   notes: >-
-    Igreja Episcopal do Brasil (hoje IEAB); diocese e ordenante não informados. Ano tirado da lista do clero nacional
-    por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado. A frase é ambígua: pode ler-se
-    diaconato em 1960 e presbiterato em 1961, ou ambos em 1961. A lista do clero nacional (p. 371) dá o diaconato
-    em 1960.
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    A frase é ambígua: pode ler-se diaconato em 1960 e presbiterato em 1961, ou ambos em 1961. A lista do clero
+    nacional (p. 371) dá o diaconato em 1960. Igreja Episcopal do Brasil (hoje IEAB); diocese e ordenante não informados.
 - order: presbyterate
   date: '1961'
   jurisdiction: dmsb
-  status: contested
+  status: probable
   sources:
   - source: kickhofel-1995
     quote: Formou-se em teologia em 1960, sendo ordenado ao diaconato e ao presbiterado no ano seguinte.
@@ -99,32 +86,17 @@ ordinations:
       presbiterato, em 1961. Durante o seu ministério, esteve à frente das paróquias de Jesus Cristo (Erechim),
       Crucificado (Bagé) e Nazareno (Santana do Livramento).
     page: '179'
-  discrepancies:
-  - field: jurisdiction
-    value: ieab
-    sources:
-    - source: costa2021
-      quote: >-
-        presbiterato, em 1961. Durante o seu ministério, esteve à frente das paróquias de Jesus Cristo (Erechim),
-        Crucificado (Bagé) e Nazareno (Santana do Livramento).
-      page: '179'
   notes: Igreja Episcopal do Brasil (hoje IEAB); ordenante não informado.
 - order: episcopate
   date: '1985-03-17'
-  place: Catedral da Santíssima Trindade, Porto Alegre
+  place: Catedral da Santissima Trindade, Porto Alegre
   jurisdiction: ieab
   office: coadjutor
   principal_consecrator: edmund-knox-sherrill
   co_consecrators:
   - david-leake
-  status: contested
+  status: confirmed
   sources:
-  - source: costa2021
-    quote: >-
-      Rodrigues foi elevado ao episcopado no dia 17 de março de 1985, na Catedral da SS. Trindade, em Porto Alegre,
-      pelo primaz em exercício, Edmund Knox Sherrill, tendo participado como co-sagrantes os demais bispos brasileiros
-      e o bispo argentino David Leake, primaz da Província Anglicana do Cone Sul
-    page: '179'
   - source: costa2021
     quote: O novo bispo foi sagrado no dia 17 de março de 1985, na Catedral da Santíssima
   - source: costa2021
@@ -150,25 +122,18 @@ ordinations:
   - source: costa2021
     quote: novo bispo foi sagrado no dia 17 de março de 1985, na Catedral da Santíssima
     page: '95'
-  discrepancies:
-  - field: office
-    value: diocesan
-    sources:
-    - source: costa2021
-      quote: novo bispo foi sagrado no dia 17 de março de 1985, na Catedral da Santíssima
-      page: '95'
-    - source: costa2021
-      quote: >-
-        Trindade, em Porto Alegre, pelo próprio Sherrill, na época o Primaz em exercício. Participaram como co-sagrantes
-        os bispos brasileiros e o bispo argentino David Leake, Primaz da Província Anglicana do Cone Sul, que também
-        foi o pregador.
-      page: '96'
+  - source: costa2021
+    quote: >-
+      Rodrigues foi elevado ao episcopado no dia 17 de março de 1985, na Catedral da SS. Trindade, em Porto Alegre,
+      pelo primaz em exercício, Edmund Knox Sherrill, tendo participado como co-sagrantes os demais bispos brasileiros
+      e o bispo argentino David Leake, primaz da Província Anglicana do Cone Sul
+    page: '179'
   notes: >-
-    Sagrado como bispo coadjutor da Diocese Setentrional (Recife). Co-sagrantes: 'os demais bispos brasileiros'
-    (não nomeados) e David Leake. A tese cita KICKHÖFEL, 1995, p. 300. Eleito bispo coadjutor da Diocese Setentrional
-    (Recife) pelo Sinodo de 1984. Co-sagrantes: "os bispos brasileiros" (nao nomeados) e David Leake. O livro diz
-    que os "demais bispos brasileiros" foram co-sagrantes, sem nomeá-los. Coadjutor da Diocese Setentrional. A tese
-    diz que 'os bispos brasileiros' foram co-sagrantes, sem nomeá-los; só David Leake é nominado.
+    Eleito bispo coadjutor da Diocese Setentrional (Recife) pelo Sinodo de 1984. Co-sagrantes: "os bispos brasileiros"
+    (nao nomeados) e David Leake. O livro diz que os "demais bispos brasileiros" foram co-sagrantes, sem nomeá-los.
+    Coadjutor da Diocese Setentrional. A tese diz que 'os bispos brasileiros' foram co-sagrantes, sem nomeá-los;
+    só David Leake é nominado. Sagrado como bispo coadjutor da Diocese Setentrional (Recife). Co-sagrantes: 'os
+    demais bispos brasileiros' (não nomeados) e David Leake. A tese cita KICKHÖFEL, 1995, p. 300.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -240,15 +205,15 @@ affiliations:
   start: '1986'
   end: '1997-10-19'
   end_reason: retirement
-  status: contested
+  status: probable
   sources:
   - source: costa2021
-    quote: No início do ano seguinte, o primeiro diocesano do Recife renunciou
-    page: '179'
-  - source: costa2021
-    quote: >-
-      Em 19 de outubro do mesmo ano, Robinson foi instalado como terceiro bispo da Diocese Anglicana do Recife.
-    page: '186'
+    quote: 1986-1997 – Clovis Erly Rodrigues
+  - source: ptwp-dar
+    quote: Clóvis Erly Rodrigues - 1986 a 1997;
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1985 - Clóvis Erly Rodrigues
+    page: '368'
   - source: costa2021
     quote: Bispo Coadjutor para a Diocese Setentrional, que iria suceder ao bispo Edmund Knox Sherrill no
     page: '95'
@@ -257,17 +222,19 @@ affiliations:
       tornando-se o quinto bispo da Diocese Anglicana do Recife, substituindo a Clovis Erly Rodrigues no ofício.
     page: '103'
   - source: costa2021
-    quote: 1986-1997 – Clovis Erly Rodrigues
-  - source: ptwp-dar
-    quote: Clóvis Erly Rodrigues - 1986 a 1997;
-  - source: kickhofel-1995
-    quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1985 - Clóvis Erly Rodrigues
-    page: '368'
-  notes: >-
-    Local: depois Diocese Anglicana do Recife. 2º bispo diocesano. A tese fala da 'proximidade da aposentadoria
-    do bispo Clovis' em 1997; fim = instalação de Robinson. Coadjutor e depois diocesano; substituído por Robinson
-    Cavalcanti em 1997.
+    quote: No início do ano seguinte, o primeiro diocesano do Recife renunciou
+    page: '179'
+  - source: costa2021
+    quote: >-
+      Em 19 de outubro do mesmo ano, Robinson foi instalado como terceiro bispo da Diocese Anglicana do Recife.
+    page: '186'
   discrepancies:
+  - field: start
+    value: '1985'
+    sources:
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1985 - Clóvis Erly Rodrigues
+      page: '368'
   - field: start
     value: '1985-03-17'
     sources:
@@ -278,19 +245,10 @@ affiliations:
       quote: >-
         tornando-se o quinto bispo da Diocese Anglicana do Recife, substituindo a Clovis Erly Rodrigues no ofício.
       page: '103'
-    - source: costa2021
-      quote: 1986-1997 – Clovis Erly Rodrigues
-    - source: ptwp-dar
-      quote: Clóvis Erly Rodrigues - 1986 a 1997;
-    - source: kickhofel-1995
-      quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1985 - Clóvis Erly Rodrigues
-      page: '368'
-  - field: start
-    value: '1985'
-    sources:
-    - source: kickhofel-1995
-      quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1985 - Clóvis Erly Rodrigues
-      page: '368'
+  notes: >-
+    Coadjutor e depois diocesano; substituído por Robinson Cavalcanti em 1997. Local: depois Diocese Anglicana do
+    Recife. 2º bispo diocesano. A tese fala da 'proximidade da aposentadoria do bispo Clovis' em 1997; fim = instalação
+    de Robinson.
 - jurisdiction: ieab
   role: other
   role_description: presidente do Superior Tribunal Eclesiástico

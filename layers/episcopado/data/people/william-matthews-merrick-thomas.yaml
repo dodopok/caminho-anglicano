@@ -94,12 +94,6 @@ ordinations:
   - lucien-lee-kinsolving
   status: contested
   sources:
-  - source: costa2021
-    quote: >-
-      Thomas foi sagrado bispo no dia 28 de dezembro de 1925, na Igreja de São Paulo, em Baltimore, Estados Unidos,
-      em cerimônia presidida pelo bispo presidente da Igreja Protestante Episcopal dos Estados Unidos, Ethelbert
-      Talbot, sendo co-sagrantes Joseph Blount Cherise, de Carolina do Norte, e Lucien Lee Kinsolving, do Brasil.
-    page: '61'
   - source: som-1926-01
     quote: >-
       The Right Rev. William M. M. Thomas, Suffragan for Southern Brazil, was consecrated on Holy Innocents Day
@@ -130,40 +124,13 @@ ordinations:
       O reverendo William M.M.Thomas que, durante 13 de seus 45 anos de Brasil, foi o fundador e diretor do Colégio
       Cruzeiro do Sul, foi indicado por Kinsolving e eleito pela Convenção Geral e sagrado no dia 28 de dezembro
       de 1925, na igreja de São Bartolomeu em Nova York.
+  - source: costa2021
+    quote: >-
+      Thomas foi sagrado bispo no dia 28 de dezembro de 1925, na Igreja de São Paulo, em Baltimore, Estados Unidos,
+      em cerimônia presidida pelo bispo presidente da Igreja Protestante Episcopal dos Estados Unidos, Ethelbert
+      Talbot, sendo co-sagrantes Joseph Blount Cherise, de Carolina do Norte, e Lucien Lee Kinsolving, do Brasil.
+    page: '61'
   discrepancies:
-  - field: place
-    value: St. Paul's Church, Baltimore (EUA)
-    sources:
-    - source: som-1926-01
-      quote: >-
-        The Right Rev. William M. M. Thomas, Suffragan for Southern Brazil, was consecrated on Holy Innocents Day
-        in St. Paul's Church, Baltimore, by Bishops. Talbot, Kinsolving and Che­ shire.
-    - source: wp-en-histlist
-      quote: '[[Ethelbert Talbot|143]] [[Joseph Blount Cheshire|172]] [[Lucien Lee Kinsolving|MB1]]'
-    - source: kickhofel
-      quote: 1925 - Thomas é eleito e sagrado bispo sufragâneo.
-    - source: lc-1926-01-09
-      quote: >-
-        Monday December 28, 1925, in St. Paul's Church, Baltimore, the Rev. William Matthew's Merrick Thomas, D.D.,
-        was consecrated a Bishop in the Church of God, by the Most Rey. Ethelbert Talbot, D.D., LL.D., Bishop of
-        Bethlehem and Presiding Bishop of the American Church, assisted by the Rt. Rev. Drs. Joseph Blount Cheshire,
-        Bishop of North Carolina, and Lucien Lee Kinsolving, Bishop of South- ern Brazil.
-    - source: ieab-sobre
-      quote: >-
-        Em 1925, a Igreja teve o seu segundo bispo: o revmo. William Matthew Merrick Thomas, um missionário que
-        havia chegado ao Brasil em 1904. Primeiro como bispo sufragâneo e depois como bispo diocesano
-    - source: kickhofel-1995
-      quote: >-
-        Thomas foi sagrado bispo no dia 28 de dezembro de 1925, na Igreja de São Paulo, em Baltimore, Estados Unidos,
-        em cerimônia presidida pelo bispo presidente da Igreja Protestante Episcopal dos Estados Unidos, Ethelbert
-        Talbot, sendo co-sagrantes Joseph Blount Chesire, de Carolina do Norte, e Lucien Lee Kinsolving, do Brasil.
-        Todos os oito bispos presentes participaram da tradicional imposição das mãos.
-      page: '152'
-    - source: kickhofel-1995
-      quote: >-
-        O reverendo William M.M.Thomas que, durante 13 de seus 45 anos de Brasil, foi o fundador e diretor do Colégio
-        Cruzeiro do Sul, foi indicado por Kinsolving e eleito pela Convenção Geral e sagrado no dia 28 de dezembro
-        de 1925, na igreja de São Bartolomeu em Nova York.
   - field: place
     value: Igreja de São Bartolomeu, Nova York (EUA)
     sources:
@@ -173,15 +140,15 @@ ordinations:
         Cruzeiro do Sul, foi indicado por Kinsolving e eleito pela Convenção Geral e sagrado no dia 28 de dezembro
         de 1925, na igreja de São Bartolomeu em Nova York.
   notes: >-
-    Trecho citado pela tese de KICKHÖFEL, Notas para uma História da IEAB (1995), p. 152. 'Todos os oito bispos
-    presentes participaram da tradicional imposição das mãos'; pregador William Cabell Brown. Holy Innocents Day
-    = 28 de dezembro. Apresentantes: John Gardner Murray (Maryland) e Philip Cook (Delaware); pregador: William
-    Cabell Brown (bispo da Virgínia); litania: Henry St. George Tucker (Living Church 09/01/1926). Spirit of Missions
-    e Living Church o chamam 'Suffragan'; Wikipédia (artigo Thomas) diz 'coadjutor'. Pregador: William Cabell Brown,
-    bispo da Virgínia e presidente da Câmara dos Bispos (Kickhöfel, 1995, p. 152). O próprio livro diverge: no capítulo
-    "14. O Segundo Bispo" diz São Bartolomeu, em Nova York; na p. 152 (e nas demais fontes), Igreja de São Paulo,
-    em Baltimore. São Bartolomeu, em Nova York, foi onde Kinsolving foi sagrado em 1899, o que sugere confusão no
-    capítulo.
+    Holy Innocents Day = 28 de dezembro. Apresentantes: John Gardner Murray (Maryland) e Philip Cook (Delaware);
+    pregador: William Cabell Brown (bispo da Virgínia); litania: Henry St. George Tucker (Living Church 09/01/1926).
+    Spirit of Missions e Living Church o chamam 'Suffragan'; Wikipédia (artigo Thomas) diz 'coadjutor'. Pregador:
+    William Cabell Brown, bispo da Virgínia e presidente da Câmara dos Bispos (Kickhöfel, 1995, p. 152). O próprio
+    livro diverge: no capítulo "14. O Segundo Bispo" diz São Bartolomeu, em Nova York; na p. 152 (e nas demais fontes),
+    Igreja de São Paulo, em Baltimore. São Bartolomeu, em Nova York, foi onde Kinsolving foi sagrado em 1899, o
+    que sugere confusão no capítulo. Trecho citado pela tese de KICKHÖFEL, Notas para uma História da IEAB (1995),
+    p. 152. 'Todos os oito bispos presentes participaram da tradicional imposição das mãos'; pregador William Cabell
+    Brown.
 affiliations:
 - jurisdiction: dmsb
   role: clergy
@@ -229,19 +196,6 @@ affiliations:
   end_reason: retirement
   status: contested
   sources:
-  - source: costa2021
-    quote: >-
-      Com a vacância do cargo, o Bispo Presidente da Igreja norte-americana, John Murray, nomeou William Thomas
-      para ser o bispo diocesano do Brasil Meridional, sendo eleito em 18 de outubro de 1928.
-    page: '62'
-  - source: costa2021
-    quote: O bispo Thomas se aposentou após vinte e quatro anos de trabalho no seu episcopado49.
-    page: '68'
-  - source: kickhofel-1995
-    quote: >-
-      Antes de se aposentar em 30 de setembro de 1949, Thomas transferiu a jurisdição da igreja brasileira ao bispo
-      Melcher, em maio daquele ano
-    page: '200'
   - source: wp-en-thomas
     quote: >-
       Bishop William Thomas, missionary bishop of Southern Brazil from 1928 to 1949, when he retired, died at Bethesda,
@@ -255,6 +209,22 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS MISSIONÁRIOS … 1925-1949 - William Mathew Merrick Thomas
     page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      Antes de se aposentar em 30 de setembro de 1949, Thomas transferiu a jurisdição da igreja brasileira ao bispo
+      Melcher, em maio daquele ano
+    page: '200'
+  - source: costa2021
+    quote: >-
+      Com a vacância do cargo, o Bispo Presidente da Igreja norte-americana, John Murray, nomeou William Thomas
+      para ser o bispo diocesano do Brasil Meridional, sendo eleito em 18 de outubro de 1928.
+    page: '62'
+  - source: costa2021
+    quote: O bispo Thomas se aposentou após vinte e quatro anos de trabalho no seu episcopado49.
+    page: '68'
+  notes: >-
+    O trecho da Wikipédia é citação da The Witness de 04/10/1951. O livro conta o período desde a sagração como
+    sufragâneo (1925); a sucessão como bispo missionário titular veio depois.
   discrepancies:
   - field: start
     value: '1925'
@@ -262,9 +232,6 @@ affiliations:
     - source: kickhofel-1995
       quote: BISPOS MISSIONÁRIOS … 1925-1949 - William Mathew Merrick Thomas
       page: '368'
-  notes: >-
-    O trecho da Wikipédia é citação da The Witness de 04/10/1951. O livro conta o período desde a sagração como
-    sufragâneo (1925); a sucessão como bispo missionário titular veio depois.
 events:
 - type: other
   date: 1939-11

@@ -33,7 +33,7 @@ sources:
 ordinations:
 - order: episcopate
   date: '2014-09-28'
-  jurisdiction: eec
+  jurisdiction: ceec
   office: missionary
   principal_consecrator: john-fenwick
   co_consecrators:
@@ -43,42 +43,19 @@ ordinations:
   sources:
   - source: costa2021
     quote: >-
-      Posteriormente saiu da IERE, filiando- se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
-    page: '152'
-  - source: cant-novas-igrejas-2024
-    quote: filiando-se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário
-    page: '133'
-  - source: costa2021
-    quote: >-
       Posteriormente saiu da IERE, filiandose à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
   - source: enwiki-rec-bispos
     quote: >-
       |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
       Diocese|South America]]||
+  - source: cant-novas-igrejas-2024
+    quote: filiando-se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário
+    page: '133'
+  - source: costa2021
+    quote: >-
+      Posteriormente saiu da IERE, filiando- se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
+    page: '152'
   discrepancies:
-  - field: jurisdiction
-    value: ieve
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: filiando-se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário
-      page: '133'
-    - source: costa2021
-      quote: >-
-        Posteriormente saiu da IERE, filiandose à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
-    - source: enwiki-rec-bispos
-      quote: >-
-        |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
-        Diocese|South America]]||
-  - field: jurisdiction
-    value: ceec
-    sources:
-    - source: costa2021
-      quote: >-
-        Posteriormente saiu da IERE, filiandose à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário.
-    - source: enwiki-rec-bispos
-      quote: >-
-        |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
-        Diocese|South America]]||
   - field: jurisdiction
     value: fce
     sources:
@@ -86,17 +63,76 @@ ordinations:
       quote: >-
         |76||Josep Miquel Rossello Ferrer||28 September 2014||68, 67, 69||[[Free Church of England#South American
         Diocese|South America]]||
+  - field: jurisdiction
+    value: ieve
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: filiando-se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo missionário
+      page: '133'
+  - field: jurisdiction
+    value: eec
+    sources:
+    - source: costa2021
+      quote: >-
+        Posteriormente saiu da IERE, filiando- se à Igreja Evangélica Episcopal, na qual foi sagrado como bispo
+        missionário.
+      page: '152'
   notes: >-
-    A tese diz 'Igreja Evangélica Episcopal' — identificação com a EEC (Evangelical Episcopal Communion) da base
-    é incerta. Data e sagrantes não informados. O livro não informa data nem sagrantes. Data não informada; o site
-    da CICEB já o chama 'Bispo Joseph Rosselo' em jan/2004, o que sugere sagração até 2004. 'Igreja Evangélica Episcopal'
-    é o nome que Costa e Cavalcanti também usam para a comunhão à qual Leonides se filiou (CEEC), mas a identidade
-    exata não está estabelecida. Na lista, nº 68 = John R. K. Fenwick (Bishop Primus da FCE), 67 = Paul Nigel Hunt
-    (FCE), 69 = Gerhard Meyer (REC, Alemanha). A ordem dos números sugere Fenwick como principal, sem confirmação.
-    A fonte citada pela Wikipédia é o Journal do 55º Conselho Geral da REC (2017), não consultado. Há sagração anterior
-    na 'Igreja Evangélica Episcopal' (Costa 2021); a de 2014 seria ressagração ou sagração sub conditione, mas nenhuma
-    fonte usa esse termo.
+    Data não informada; o site da CICEB já o chama 'Bispo Joseph Rosselo' em jan/2004, o que sugere sagração até
+    2004. 'Igreja Evangélica Episcopal' é o nome que Costa e Cavalcanti também usam para a comunhão à qual Leonides
+    se filiou (CEEC), mas a identidade exata não está estabelecida. Na lista, nº 68 = John R. K. Fenwick (Bishop
+    Primus da FCE), 67 = Paul Nigel Hunt (FCE), 69 = Gerhard Meyer (REC, Alemanha). A ordem dos números sugere Fenwick
+    como principal, sem confirmação. A fonte citada pela Wikipédia é o Journal do 55º Conselho Geral da REC (2017),
+    não consultado. Há sagração anterior na 'Igreja Evangélica Episcopal' (Costa 2021); a de 2014 seria ressagração
+    ou sagração sub conditione, mas nenhuma fonte usa esse termo. O livro não informa data nem sagrantes. A tese
+    diz 'Igreja Evangélica Episcopal' — identificação com a EEC (Evangelical Episcopal Communion) da base é incerta.
+    Data e sagrantes não informados.
 affiliations:
+- jurisdiction: iarb
+  role: primate
+  start: 2012-04
+  end: 2021-05
+  end_reason: resignation
+  status: contested
+  sources:
+  - source: ptwiki-iarb
+    quote: sendo eleito assim Josep Rossello, como o novo bispo primaz da IARB.
+  - source: christiantoday-2014-fce
+    quote: The Right Reverend Josep Rossello, the bishop overseeing the IARB
+  - source: costa2021
+    quote: Em abril de 2012, o bispo missionário Josep Rossello foi eleito como o novo bispo da instituição.
+  - source: costa2021
+    quote: permanecendo no cargo até maio de 2021, quando apresentou a sua renúncia como bispo e membro da FCE.
+  - source: cant-novas-igrejas-2024
+    quote: Josep Rossello tornou-se seu Bispo Primaz, permanecendo no cargo
+    page: '133'
+  - source: cant-novas-igrejas-2024
+    quote: até maio de 2021, quando apresentou a sua renúncia como bispo e membro da FCE.
+    page: '134'
+  - source: costa2021
+    quote: >-
+      Josep Rossello tornou-se seu Bispo Primaz, permanecendo no cargo até maio de 2021, quando apresentou a sua
+      renúncia como bispo e membro da FCE.
+    page: '152'
+  notes: >-
+    Data e sagrantes de sua sagração episcopal não encontrados; o site da CICEB já o chama de 'Bispo' em jan/2004.
+    Após 2021 seguiu em outros ministérios (NAMS, Inglaterra, Espanha). Eleito bispo da IARB em abril de 2012; Primaz
+    desde a recepção pela FCE (fev. 2014).
+  discrepancies:
+  - field: start
+    value: 2014-02
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: Josep Rossello tornou-se seu Bispo Primaz, permanecendo no cargo
+      page: '133'
+    - source: cant-novas-igrejas-2024
+      quote: até maio de 2021, quando apresentou a sua renúncia como bispo e membro da FCE.
+      page: '134'
+    - source: costa2021
+      quote: >-
+        Josep Rossello tornou-se seu Bispo Primaz, permanecendo no cargo até maio de 2021, quando apresentou a sua
+        renúncia como bispo e membro da FCE.
+      page: '152'
 - jurisdiction: iarb
   role: bishop
   start: 2012-04
@@ -117,54 +153,6 @@ affiliations:
   notes: >-
     Local: South American Diocese. O comunicado diz que Fenwick passou a ser 'nosso novo bispo' pouco antes da saída,
     indicando que Rosselló deixou a função em 2021.
-- jurisdiction: iarb
-  role: primate
-  start: 2014-02
-  end: 2021-05
-  end_reason: resignation
-  status: contested
-  sources:
-  - source: costa2021
-    quote: >-
-      Josep Rossello tornou-se seu Bispo Primaz, permanecendo no cargo até maio de 2021, quando apresentou a sua
-      renúncia como bispo e membro da FCE.
-    page: '152'
-  - source: ptwiki-iarb
-    quote: sendo eleito assim Josep Rossello, como o novo bispo primaz da IARB.
-  - source: christiantoday-2014-fce
-    quote: The Right Reverend Josep Rossello, the bishop overseeing the IARB
-  - source: costa2021
-    quote: Em abril de 2012, o bispo missionário Josep Rossello foi eleito como o novo bispo da instituição.
-  - source: costa2021
-    quote: permanecendo no cargo até maio de 2021, quando apresentou a sua renúncia como bispo e membro da FCE.
-  - source: cant-novas-igrejas-2024
-    quote: Josep Rossello tornou-se seu Bispo Primaz, permanecendo no cargo
-    page: '133'
-  - source: cant-novas-igrejas-2024
-    quote: até maio de 2021, quando apresentou a sua renúncia como bispo e membro da FCE.
-    page: '134'
-  notes: >-
-    Eleito bispo da IARB em abril de 2012; Primaz desde a recepção pela FCE (fev. 2014). Data e sagrantes de sua
-    sagração episcopal não encontrados; o site da CICEB já o chama de 'Bispo' em jan/2004. Após 2021 seguiu em outros
-    ministérios (NAMS, Inglaterra, Espanha).
-  discrepancies:
-  - field: start
-    value: 2012-04
-    sources:
-    - source: ptwiki-iarb
-      quote: sendo eleito assim Josep Rossello, como o novo bispo primaz da IARB.
-    - source: christiantoday-2014-fce
-      quote: The Right Reverend Josep Rossello, the bishop overseeing the IARB
-    - source: costa2021
-      quote: Em abril de 2012, o bispo missionário Josep Rossello foi eleito como o novo bispo da instituição.
-    - source: costa2021
-      quote: permanecendo no cargo até maio de 2021, quando apresentou a sua renúncia como bispo e membro da FCE.
-    - source: cant-novas-igrejas-2024
-      quote: Josep Rossello tornou-se seu Bispo Primaz, permanecendo no cargo
-      page: '133'
-    - source: cant-novas-igrejas-2024
-      quote: até maio de 2021, quando apresentou a sua renúncia como bispo e membro da FCE.
-      page: '134'
 - jurisdiction: fce
   role: bishop
   start: 2014-02

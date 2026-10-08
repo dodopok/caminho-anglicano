@@ -39,49 +39,33 @@ ordinations:
 - order: episcopate
   date: '2013'
   place: Pró-Catedral, Barranquilla (Colômbia)
-  jurisdiction: pcra-al
+  jurisdiction: iacc
   principal_consecrator: victor-manuel-cruz-blanco
   status: contested
   sources:
+  - source: iacc-continuante
+    quote: >-
+      Dom †James Roque foi ordenado e sagrado pelo citado arcebispo assistido por mais quatro bispos, na Pró-Catedral
+      da Sé Metropolitana.
   - source: costa2021
     quote: >-
       O primeiro brasileiro a ser sagrado dentro do Movimento Continuante foi o bispo James Roque, em cerimônia
       ocorrida em 2013, tendo recebido a sagração episcopal pelas mãos do bispo colombiano Victor Manuel Cruz-Blanco.
-    page: '138'
+  - source: cant-anglo-catolicismo-2026
+    quote: Em 2013, Dom James Roque recebeu o episcopado pelas mãos de Dom Victor Manuel Cruz-Blanco
   - source: cant-novas-igrejas-2024
-    quote: >-
-      em 2013, foi ordenado e sagrado o primeiro bispo brasileiro do Movimento Anglicano Contínuo no Brasil. A sua
-      sagração aconteceu na cidade de Barranquila, na Colômbia.
-    page: '154'
+    quote: A sua sagração aconteceu na cidade de Barranquila, na Colômbia.
   - source: cant-novas-igrejas-2024
     quote: >-
       O primeiro brasileiro a ser sagrado dentro do Movimento Contínuo foi o bispo James Antônio Roque, em cerimônia
       ocorrida em 2013, tendo recebido a sagração episcopal pelas mãos do bispo Victor Manuel Cruz-Blanco.
     page: '76'
-  - source: iacc-continuante
-    quote: >-
-      Dom †James Roque foi ordenado e sagrado pelo citado arcebispo assistido por mais quatro bispos, na Pró-Catedral
-      da Sé Metropolitana.
-  - source: cant-anglo-catolicismo-2026
-    quote: Em 2013, Dom James Roque recebeu o episcopado pelas mãos de Dom Victor Manuel Cruz-Blanco
   - source: cant-novas-igrejas-2024
-    quote: A sua sagração aconteceu na cidade de Barranquila, na Colômbia.
+    quote: >-
+      em 2013, foi ordenado e sagrado o primeiro bispo brasileiro do Movimento Anglicano Contínuo no Brasil. A sua
+      sagração aconteceu na cidade de Barranquila, na Colômbia.
+    page: '154'
   discrepancies:
-  - field: jurisdiction
-    value: iacc
-    sources:
-    - source: iacc-continuante
-      quote: >-
-        Dom †James Roque foi ordenado e sagrado pelo citado arcebispo assistido por mais quatro bispos, na Pró-Catedral
-        da Sé Metropolitana.
-    - source: costa2021
-      quote: >-
-        O primeiro brasileiro a ser sagrado dentro do Movimento Continuante foi o bispo James Roque, em cerimônia
-        ocorrida em 2013, tendo recebido a sagração episcopal pelas mãos do bispo colombiano Victor Manuel Cruz-Blanco.
-    - source: cant-anglo-catolicismo-2026
-      quote: Em 2013, Dom James Roque recebeu o episcopado pelas mãos de Dom Victor Manuel Cruz-Blanco
-    - source: cant-novas-igrejas-2024
-      quote: A sua sagração aconteceu na cidade de Barranquila, na Colômbia.
   - field: jurisdiction
     value: tac
     sources:
@@ -89,15 +73,28 @@ ordinations:
       quote: Em 2013, Dom James Roque recebeu o episcopado pelas mãos de Dom Victor Manuel Cruz-Blanco
     - source: cant-novas-igrejas-2024
       quote: A sua sagração aconteceu na cidade de Barranquila, na Colômbia.
+  - field: jurisdiction
+    value: pcra-al
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        O primeiro brasileiro a ser sagrado dentro do Movimento Contínuo foi o bispo James Antônio Roque, em cerimônia
+        ocorrida em 2013, tendo recebido a sagração episcopal pelas mãos do bispo Victor Manuel Cruz-Blanco.
+      page: '76'
+    - source: costa2021
+      quote: >-
+        O primeiro brasileiro a ser sagrado dentro do Movimento Continuante foi o bispo James Roque, em cerimônia
+        ocorrida em 2013, tendo recebido a sagração episcopal pelas mãos do bispo colombiano Victor Manuel Cruz-Blanco.
+      page: '138'
   notes: >-
-    O livro não informa sagrantes nem a jurisdição sagrante nesta parte. Atenção: a criação jurídica da Diocese
-    do Japi pelo 'bispo' Roque é datada de 14/10/2012, antes da sagração de 2013. Jurisdição do sagrante; Roque
-    organizou em seguida a Diocese Anglicana do Japi. Fonte é o próprio site da IACC, assinado por James Roque (autodeclaração).
-    Quatro co-sagrantes não nomeados. Sucessão declarada: Chambers/Pagtakhan/Pae (St. Louis 1977) via Cruz-Blanco.
-    Registro neutro do que a jurisdição declara. Costa (2021) confirma a data e o sagrante, e também que Roque 'ordenou
-    muitas pessoas ao episcopado' (Kennedy de Freitas, Mattos, Barreiros, Ferreira, Itabira Jonas, Pinho, Barbosa
-    da Silva). Já registrado em jurisdicoes-menores.json; aqui com fonte Costa. Jurisdição: Movimento Contínuo (Província
-    Católica de Rito Anglicano da América Latina); sigla TAC é aproximada.
+    Fonte é o próprio site da IACC, assinado por James Roque (autodeclaração). Quatro co-sagrantes não nomeados.
+    Sucessão declarada: Chambers/Pagtakhan/Pae (St. Louis 1977) via Cruz-Blanco. Registro neutro do que a jurisdição
+    declara. Costa (2021) confirma a data e o sagrante, e também que Roque 'ordenou muitas pessoas ao episcopado'
+    (Kennedy de Freitas, Mattos, Barreiros, Ferreira, Itabira Jonas, Pinho, Barbosa da Silva). Já registrado em
+    jurisdicoes-menores.json; aqui com fonte Costa. Jurisdição: Movimento Contínuo (Província Católica de Rito Anglicano
+    da América Latina); sigla TAC é aproximada. Jurisdição do sagrante; Roque organizou em seguida a Diocese Anglicana
+    do Japi. O livro não informa sagrantes nem a jurisdição sagrante nesta parte. Atenção: a criação jurídica da
+    Diocese do Japi pelo 'bispo' Roque é datada de 14/10/2012, antes da sagração de 2013.
 affiliations:
 - jurisdiction: da-japi
   role: diocesan_bishop
@@ -119,11 +116,8 @@ affiliations:
   role: founder
   start: '2013'
   end: '2016'
-  status: contested
+  status: probable
   sources:
-  - source: costa2021
-    quote: O novo bispo, por sua vez, organizou a Diocese Anglicana do Japí, na cidade de Jundiaí, em São Paulo
-    page: '138'
   - source: cant-novas-igrejas-2024
     quote: >-
       O novo bispo, por sua vez, organizou a chamada Diocese Anglicana do Japi22, na cidade de Jundiaí, em São Paulo.
@@ -131,6 +125,10 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: Ela foi juridicamente criada em 14 de outubro de 2012, pelo bispo James Antônio Roque
     page: '154'
+  - source: costa2021
+    quote: O novo bispo, por sua vez, organizou a Diocese Anglicana do Japí, na cidade de Jundiaí, em São Paulo
+    page: '138'
+  notes: Diocese extinta em 2016.
   discrepancies:
   - field: start
     value: '2012-10-14'
@@ -138,7 +136,6 @@ affiliations:
     - source: cant-novas-igrejas-2024
       quote: Ela foi juridicamente criada em 14 de outubro de 2012, pelo bispo James Antônio Roque
       page: '154'
-  notes: Diocese extinta em 2016.
 - jurisdiction: iacc
   role: primate
   status: probable

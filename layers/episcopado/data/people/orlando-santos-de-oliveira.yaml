@@ -67,7 +67,7 @@ ordinations:
   principal_consecrator: glauco-soares-de-lima
   co_consecrators:
   - william-godfrey
-  status: contested
+  status: probable
   sources:
   - source: costa2021
     quote: >-
@@ -82,20 +82,6 @@ ordinations:
       Três meses depois, em 30 de novembro, Dom Orlando foi consagrado bispo na Catedral da Santíssima Trindade,
       em Porto Alegre, pelo Primaz Glauco Soares de Lima, acompanhado pelos bispos da IEAB, mais o bispo William
       Godfrey, do Uruguai.
-  discrepancies:
-  - field: office
-    value: diocesan
-    sources:
-    - source: costa2021
-      quote: >-
-        Já na Diocese Meridional, em 30 de novembro de 1997, Orlando Santos de Oliveira96 foi sagrado na Catedral
-        da Santíssima Trindade, em Porto Alegre, pelas mãos do Bispo Primaz, Glauco Soares de Lima
-      page: '104'
-    - source: costa2021
-      quote: >-
-        Foi sagrante o entao Primaz, Bispo Glauco Soares de Lima, e co-sagrantes os bispos do episcopado brasileiro
-        da época, mais o bispo William Godfrey, do Uruguai.
-      page: '104'
   notes: >-
     Eleito em 30/08/1997 como 7o bispo da Diocese Meridional; sucedeu Gastal em 1998. Co-sagrantes brasileiros nao
     nomeados. Wikipedia PT deriva de Costa. Co-sagrantes: 'os bispos do episcopado brasileiro da época' (não nomeados)
@@ -118,7 +104,7 @@ affiliations:
   start: '1998'
   end: '2013-05-05'
   end_reason: retirement
-  status: contested
+  status: probable
   sources:
   - source: costa2021
     quote: 1998-2013 – Orlando Santos de Oliveira
@@ -141,12 +127,6 @@ affiliations:
   end: 2006-07
   status: contested
   sources:
-  - source: costa2021
-    quote: o Bispo Primaz da IEAB – Orlando Santos de Oliveira –
-    page: '214'
-  - source: costa2021
-    quote: D. Orlando Santos de Oliveira Bispo Primaz
-    page: '224'
   - source: wp-en-ieab
     quote: Orlando Santos de Oliveira, 2003—2006
   - source: costa2021
@@ -161,10 +141,16 @@ affiliations:
   - source: costa2021
     quote: O bispo Orlando também foi Primaz da IEAB de 2003 a 2009
     page: '104'
+  - source: costa2021
+    quote: o Bispo Primaz da IEAB – Orlando Santos de Oliveira –
+    page: '214'
+  - source: costa2021
+    quote: D. Orlando Santos de Oliveira Bispo Primaz
+    page: '224'
   notes: >-
-    Primaz em 2004-2005; decretou a deposição de Robinson em Porto Alegre, 10/06/2005. A nota 96 diz Primaz 'de
-    2003 a 2009'; o texto (p. 107) diz 2003-2006 e Maurício Andrade foi eleito Primaz em julho de 2006. Versão da
-    nota 96; ver afirmação 2003-2006.
+    A nota 96 diz Primaz 'de 2003 a 2009'; o texto (p. 107) diz 2003-2006 e Maurício Andrade foi eleito Primaz em
+    julho de 2006. Versão da nota 96; ver afirmação 2003-2006. Primaz em 2004-2005; decretou a deposição de Robinson
+    em Porto Alegre, 10/06/2005.
   discrepancies:
   - field: end
     value: '2009'

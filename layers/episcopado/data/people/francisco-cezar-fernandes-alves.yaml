@@ -51,7 +51,7 @@ ordinations:
   jurisdiction: ieab
   office: coadjutor
   principal_consecrator: naudal-gomes
-  status: contested
+  status: probable
   sources:
   - source: costa2021
     quote: >-
@@ -61,15 +61,6 @@ ordinations:
     quote: >-
       Ele foi sagrado bispo em 25 de janeiro de 2020, na Paróquia da Santíssima Trindade, por Dom Naudal Alves Gomes,
       Primaz da IEAB.
-  discrepancies:
-  - field: office
-    value: diocesan
-    sources:
-    - source: costa2021
-      quote: >-
-        cerimônia de sagração ocorreu no dia 25 de janeiro de 2020 – festa de São Paulo, Apóstolo –, na Paróquia
-        da Santíssima Trindade, na capital paulista
-      page: '120'
   notes: >-
     Eleito bispo coadjutor da DASP em 09/07/2019. Sagrante principal so pela Wikipedia PT. Coadjutor. A tese NÃO
     nomeia sagrantes.
@@ -87,7 +78,7 @@ affiliations:
   role: diocesan_bishop
   diocese: ieab-dasp
   start: '2021-10-31'
-  status: contested
+  status: confirmed
   sources:
   - source: ieab-cezar-investidura
     quote: a cerimônia de Investidura do bispo Cézar Alves como bispo diocesano da DASP

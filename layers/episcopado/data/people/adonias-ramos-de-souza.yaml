@@ -76,8 +76,8 @@ affiliations:
   role: clergy
   diocese: ieab-dar
   end: '2002'
-  end_reason: left
-  status: contested
+  end_reason: schism
+  status: probable
   sources:
   - source: cant-novas-igrejas-2024
     quote: >-
@@ -93,15 +93,6 @@ affiliations:
     Local: Paróquia do Calvário. Saída junto com Leônides de Menezes segundo Pereira (2013), citado no livro; Adonias
     foi depois sagrado bispo pela IECB. Saiu com Leônides de Menezes (PEREIRA, 2013); em 30/11/2007 foi sagrado
     bispo da IECB (Diocesano de Paulista e Paraíba) — trajetória intermediária não explicada pela tese.
-  discrepancies:
-  - field: end_reason
-    value: schism
-    sources:
-    - source: costa2021
-      quote: >-
-        Depois houve a saída do rev. Leonides Menezes, com a rev. Karla Patriota e Adonias Ramos Souza e as paróquias
-        Betânia e Calvário
-      page: '191'
 events:
 - type: other
   date: '2002'

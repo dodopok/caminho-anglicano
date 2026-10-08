@@ -77,18 +77,13 @@ ordinations:
   date: '1948-02-05'
   place: Trinity Church, Columbia, Carolina do Sul (EUA)
   jurisdiction: tec
-  office: auxiliary
+  office: coadjutor
   principal_consecrator: henry-knox-sherrill
   co_consecrators:
   - edmund-dandridge
   - john-gravatt
-  status: contested
+  status: confirmed
   sources:
-  - source: costa2021
-    quote: Foi sagrado ao episcopado em 05 de fevereiro de 1948, sendo enviado para trabalhar no Brasil.
-    page: '71'
-  - source: iab-poster-linhagem-meira
-    quote: teve papel decisivo ao consagrar missionários como Louis Chester Melcher
   - source: wit-1948-02-12
     quote: >-
       Bishop Middle- ton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be the
@@ -117,66 +112,21 @@ ordinations:
       | 475 | [[Louis C. Melcher]]<!--Louis Chester MELCHER--> | [[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]]
       [[John J. Gravatt|417]] | 1948 | [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|I Central
       Brazil (Rio de Janeiro)]] |
-  discrepancies:
-  - field: office
-    value: missionary
-    sources:
-    - source: iab-poster-linhagem-meira
-      quote: teve papel decisivo ao consagrar missionários como Louis Chester Melcher
-    - source: wit-1948-02-12
-      quote: >-
-        Bishop Middle- ton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be
-        the bishop coadju­ tor of Southern Brazil, said that it is the task of Christians
-    - source: wit-1948-02-12
-      quote: The service was held at Trinity Church here on February 5th.
-    - source: wit-1948-01-29
-      quote: >-
-        The Presiding Bishop will be the consecrator, assisted by Bishop Gra- vatt of Upper South Carolina and Bishop
-        Dandridge of Tennessee.
-    - source: wp-en-histlist
-      quote: '[[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]] [[John J. Gravatt|417]]'
-    - source: lc-1948-02-15
-      quote: >-
-        The Rt. Rey. Louis Chester Melcher was consecrated Bishop Coadjutor of Southern Brazil on February 5th at
-        Trinity Church, Columbia, §. C. The Presiding Bishop was the consecrator, assisted by Bishops Gravatt of
-        Upper South Carolina and Dandridge of Ten- nessee as co-consecrators.
-    - source: wit-1948-02-12
-      quote: >-
-        Bishop Middleton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be the
-        bishop coadju­ tor of Southern Brazil
-    - source: wp-en-melcher
-      quote: He had been consecrated there as coadjutor bishop of Southern Brazil on February 5, 1948.
-    - source: wp-lista-bispos-tec
-      quote: >-
-        | 475 | [[Louis C. Melcher]]<!--Louis Chester MELCHER--> | [[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]]
-        [[John J. Gravatt|417]] | 1948 | [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|I
-        Central Brazil (Rio de Janeiro)]] |
-  - field: office
-    value: coadjutor
-    sources:
-    - source: wit-1948-02-12
-      quote: >-
-        Bishop Middleton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be the
-        bishop coadju­ tor of Southern Brazil
-    - source: wit-1948-02-12
-      quote: The service was held at Trinity Church here on February 5th.
-    - source: wp-en-melcher
-      quote: He had been consecrated there as coadjutor bishop of Southern Brazil on February 5, 1948.
-    - source: wp-lista-bispos-tec
-      quote: >-
-        | 475 | [[Louis C. Melcher]]<!--Louis Chester MELCHER--> | [[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]]
-        [[John J. Gravatt|417]] | 1948 | [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|I
-        Central Brazil (Rio de Janeiro)]] |
+  - source: iab-poster-linhagem-meira
+    quote: teve papel decisivo ao consagrar missionários como Louis Chester Melcher
+  - source: costa2021
+    quote: Foi sagrado ao episcopado em 05 de fevereiro de 1948, sendo enviado para trabalhar no Brasil.
+    page: '71'
   notes: >-
-    Eleito em 1948 'primeiro bispo coadjutor do Brasil'. Sagrantes não informados. Sagrado bispo coadjutor do Sul
-    do Brasil. Apresentantes: bispos Jackson (Louisiana) e Carruthers (South Carolina); litanista Keeler (Minnesota);
-    epistoleiro Phillips (SW Virginia); evangelista Wright (East Carolina); pregador Middleton Barnwell (Georgia)
-    — Living Church 15/02/1948. A Wikipédia EN (artigo Melcher) cita Living Church de '15/02/1947' — erro de ano.
-    Pôster: Henry Knox Sherrill "teve papel decisivo ao consagrar missionários como Louis Chester Melcher" — data,
-    local e cargo CONFIRMADOS por fonte primária (The Witness, 12/02/1948), que não nomeia o sagrante; Sherrill
-    como sagrante principal (com Dandridge e Gravatt) só pela lista de sucessão da Wikipédia — PROVÁVEL. Sherrill
-    era Presiding Bishop em 1948. Observação: a lista da Wikipédia o põe como "I Central Brazil", mas na sagração
-    era coadjutor do Sul do Brasil.
+    Sagrado bispo coadjutor do Sul do Brasil. Apresentantes: bispos Jackson (Louisiana) e Carruthers (South Carolina);
+    litanista Keeler (Minnesota); epistoleiro Phillips (SW Virginia); evangelista Wright (East Carolina); pregador
+    Middleton Barnwell (Georgia) — Living Church 15/02/1948. A Wikipédia EN (artigo Melcher) cita Living Church
+    de '15/02/1947' — erro de ano. Pôster: Henry Knox Sherrill "teve papel decisivo ao consagrar missionários como
+    Louis Chester Melcher" — data, local e cargo CONFIRMADOS por fonte primária (The Witness, 12/02/1948), que não
+    nomeia o sagrante; Sherrill como sagrante principal (com Dandridge e Gravatt) só pela lista de sucessão da Wikipédia
+    — PROVÁVEL. Sherrill era Presiding Bishop em 1948. Observação: a lista da Wikipédia o põe como "I Central Brazil",
+    mas na sagração era coadjutor do Sul do Brasil. Eleito em 1948 'primeiro bispo coadjutor do Brasil'. Sagrantes
+    não informados.
 affiliations:
 - jurisdiction: dmsb
   role: bishop
@@ -206,16 +156,10 @@ affiliations:
 - jurisdiction: dmcb
   role: diocesan_bishop
   start: '1950'
-  end: '1959'
-  end_reason: transfer
+  end: '1958-10-06'
+  end_reason: retirement
   status: contested
   sources:
-  - source: costa2021
-    quote: Ao chegar ao Brasil, assumiu a Diocese
-    page: '71'
-  - source: costa2021
-    quote: Em 1959, Melcher entregou o comando da Diocese ao bispo Sherrill.
-    page: '75'
   - source: ens-xxxvi-7
     quote: He then became Bishop of Central Brazil, a position he occupied until his retirement in 1958.
   - source: lc-1958-10-19
@@ -239,59 +183,14 @@ affiliations:
       Depois de oito anos no Brasil, Melcher renunciou ao governo da Diocese Central em outubro de 1958, e retornou
       aos Estados Unidos
     page: '274'
+  - source: costa2021
+    quote: Ao chegar ao Brasil, assumiu a Diocese
+    page: '71'
+  - source: costa2021
+    quote: Em 1959, Melcher entregou o comando da Diocese ao bispo Sherrill.
+    page: '75'
+  notes: 'Local: Rio de Janeiro.'
   discrepancies:
-  - field: end
-    value: '1958-10-06'
-    sources:
-    - source: ens-xxxvi-7
-      quote: He then became Bishop of Central Brazil, a position he occupied until his retirement in 1958.
-    - source: lc-1958-10-19
-      quote: >-
-        The resignations of the Rt. Rev. Rich- ard A. Kirchhoffer as Bishop of Indianap- olis and of the Rt. Rev.
-        Louis C. Melcher as Bishop of Central Brazil were accepted by the House of Bishops October 7
-    - source: lc-1949-10-30
-      quote: >-
-        The plan calls for a district known as the missionary district of Brazil," which will embrace the work in
-        the Fed- eral District, the states of Rio de Janeiro, Sao Paulo, and Parana. This is the dis-' trict which
-        will be under my jurisdictio
-    - source: wit-1950-03-30
-      quote: Bishop Louis C. Melcher of Cen- tral Brazil.
-    - source: ieab-sobre
-      quote: Em um primeiro momento, dom Melcher assumiu a Diocese Central e dom Pithan, a Diocese Meridional.
-    - source: kickhofel-1995
-      quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1950-1958 - Louis Chester Melcher
-      page: '368'
-    - source: kickhofel-1995
-      quote: >-
-        Depois de oito anos no Brasil, Melcher renunciou ao governo da Diocese Central em outubro de 1958, e retornou
-        aos Estados Unidos
-      page: '274'
-  - field: end_reason
-    value: retirement
-    sources:
-    - source: ens-xxxvi-7
-      quote: He then became Bishop of Central Brazil, a position he occupied until his retirement in 1958.
-    - source: lc-1958-10-19
-      quote: >-
-        The resignations of the Rt. Rev. Rich- ard A. Kirchhoffer as Bishop of Indianap- olis and of the Rt. Rev.
-        Louis C. Melcher as Bishop of Central Brazil were accepted by the House of Bishops October 7
-    - source: lc-1949-10-30
-      quote: >-
-        The plan calls for a district known as the missionary district of Brazil," which will embrace the work in
-        the Fed- eral District, the states of Rio de Janeiro, Sao Paulo, and Parana. This is the dis-' trict which
-        will be under my jurisdictio
-    - source: wit-1950-03-30
-      quote: Bishop Louis C. Melcher of Cen- tral Brazil.
-    - source: ieab-sobre
-      quote: Em um primeiro momento, dom Melcher assumiu a Diocese Central e dom Pithan, a Diocese Meridional.
-    - source: kickhofel-1995
-      quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1950-1958 - Louis Chester Melcher
-      page: '368'
-    - source: kickhofel-1995
-      quote: >-
-        Depois de oito anos no Brasil, Melcher renunciou ao governo da Diocese Central em outubro de 1958, e retornou
-        aos Estados Unidos
-      page: '274'
   - field: end_reason
     value: resignation
     sources:
@@ -300,7 +199,24 @@ affiliations:
         Depois de oito anos no Brasil, Melcher renunciou ao governo da Diocese Central em outubro de 1958, e retornou
         aos Estados Unidos
       page: '274'
-  notes: 'Local: Rio de Janeiro.'
+  - field: end
+    value: '1959'
+    sources:
+    - source: costa2021
+      quote: Ao chegar ao Brasil, assumiu a Diocese
+      page: '71'
+    - source: costa2021
+      quote: Em 1959, Melcher entregou o comando da Diocese ao bispo Sherrill.
+      page: '75'
+  - field: end_reason
+    value: transfer
+    sources:
+    - source: costa2021
+      quote: Ao chegar ao Brasil, assumiu a Diocese
+      page: '71'
+    - source: costa2021
+      quote: Em 1959, Melcher entregou o comando da Diocese ao bispo Sherrill.
+      page: '75'
 events:
 - type: other
   date: 1947-11

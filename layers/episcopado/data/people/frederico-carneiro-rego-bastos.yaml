@@ -78,8 +78,8 @@ affiliations:
   role: clergy
   diocese: ieab-dar
   end: '2002'
-  end_reason: left
-  status: contested
+  end_reason: schism
+  status: probable
   sources:
   - source: cant-novas-igrejas-2024
     quote: >-
@@ -94,15 +94,6 @@ affiliations:
   notes: >-
     Local: Paróquia Anglicana Jardim das Oliveiras. Saiu com Paulo Garcia; depois bispo da IECB (2007). Tese cita
     PEREIRA, 2013.
-  discrepancies:
-  - field: end_reason
-    value: schism
-    sources:
-    - source: costa2021
-      quote: >-
-        Primeiro aconteceu a saída do rev. Paulo Garcia, acompanhado dos reverendos Célio Spineli, Edgar Ferreira
-        e Frederico Bastos
-      page: '191'
 events:
 - type: other
   date: '2002'

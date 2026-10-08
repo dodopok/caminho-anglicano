@@ -50,17 +50,8 @@ sources:
 relations:
 - type: part_of
   target: iab
-  status: contested
+  status: confirmed
   sources:
-  - source: costa2021
-    quote: >-
-      Fundada em 1999, a “Anglicana Comunhão” é a Catedral da Diocese de João Pessoa, liderada pelo bispo Márcio
-      Meira, eleito em maio de 2017.
-    page: '255'
-  - source: wp-en-iab
-    quote: Márcio Meira (diocesan) Miguel Neto, Eric Rodrigues (assistant)
-  - source: anglicanismo-eleicao-2023
-    quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues.
   - source: iab-church-planting-bishops
     quote: Bishop Marcio Meira – Diocese of Joao Pessoa
   - source: gafconpt-eric-2023
@@ -160,6 +151,16 @@ relations:
     quote: a Igreja Anglicana no Brasil, agora com três dioceses (Recife, João Pessoa e Vitória)
   - source: iab-comunicado-oficial-2018
     quote: tivemos o privilégio de formar a Província da Igreja Anglicana no Brasil, com 3 dioceses
+  - source: wp-en-iab
+    quote: Márcio Meira (diocesan) Miguel Neto, Eric Rodrigues (assistant)
+  - source: anglicanismo-eleicao-2023
+    quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues.
+  - source: costa2021
+    quote: >-
+      Fundada em 1999, a “Anglicana Comunhão” é a Catedral da Diocese de João Pessoa, liderada pelo bispo Márcio
+      Meira, eleito em maio de 2017.
+    page: '255'
+  date: '2018-04-27'
   discrepancies:
   - field: date
     value: '2018-05-12'

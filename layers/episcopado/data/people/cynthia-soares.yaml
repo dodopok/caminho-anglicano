@@ -48,6 +48,19 @@ ordinations:
     bispo).
 affiliations:
 - jurisdiction: reb
+  role: clergy
+  start: 2024-12
+  status: probable
+  sources:
+  - source: reb-estrutura
+    quote: Revda. Cynthia Muniz
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Seus clérigos têm um perfil jovem e boa formação teológica, a exemplo dos reverendos Jaime Sepulcro Jr., Douglas
+      Araújo e Cynthia Muniz.
+    page: '151'
+  notes: Listado(a) em 2026. Mulher ordenada na REB (data não encontrada).
+- jurisdiction: reb
   role: other
   role_description: postulante
   start: '2024-12-20'
@@ -72,28 +85,6 @@ affiliations:
   notes: >-
     Listado com a UF SP. Presbítero(a) na lista do clero do Calendário REB 2026. Consta na lista do clero do Calendário
     REB 2026.
-- jurisdiction: reb
-  role: clergy
-  start: '2026'
-  status: contested
-  sources:
-  - source: reb-estrutura
-    quote: Revda. Cynthia Muniz
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      Seus clérigos têm um perfil jovem e boa formação teológica, a exemplo dos reverendos Jaime Sepulcro Jr., Douglas
-      Araújo e Cynthia Muniz.
-    page: '151'
-  notes: Mulher ordenada na REB (data não encontrada).
-  discrepancies:
-  - field: start
-    value: 2024-12
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Seus clérigos têm um perfil jovem e boa formação teológica, a exemplo dos reverendos Jaime Sepulcro Jr.,
-        Douglas Araújo e Cynthia Muniz.
-      page: '151'
 - jurisdiction: iab
   role: member
   end: 2024-12

@@ -83,82 +83,43 @@ ordinations:
     page: '290'
 - order: episcopate
   date: '1989-10-01'
-  place: St. Paul’s Church, São Paulo
+  place: Catedral Anglicana de Sao Paulo
   jurisdiction: ieab
-  office: diocesan
+  office: coadjutor
   principal_consecrator: olavo-ventura-luiz
   status: contested
   sources:
-  - source: costa2021
-    quote: >-
-      Em julho de 1989, o reverendo Glauco Soares de Lima 88 foi eleito bispo coadjutor na Diocese Anglicana de
-      São Paulo
-    page: '99'
-  - source: costa2021
-    quote: >-
-      Foi elevado ao episcopado em 1º de outubro no histórico templo da capital paulista, pelas mãos do Bispo Primaz,
-      Olavo Ventura Luiz, tendo como co-sagrantes mais sete bispos.
-    page: '99'
   - source: kickhofel-1995
     quote: >-
       Foi elevado ao episcopado no dia primeiro de outubro de 1989 na mesma igreja que pastoreava na época de sua
       eleição. Foi sagrante o bispo primaz Olavo Ventura Luiz e co-sagrantes mais sete colegas. Assumiu o governo
       da diocese em janeiro de 1990.
     page: '291'
+  - source: costa2021
+    quote: >-
+      Foi elevado ao episcopado em 1º de outubro no histórico templo da capital paulista, pelas mãos do Bispo Primaz,
+      Olavo Ventura Luiz, tendo como co-sagrantes mais sete bispos.
   - source: wp-pt-glauco
     quote: >-
       Em 1° de julho de 1989, Lima foi sagrado bispo na Catedral Anglicana de São Paulo, sucedendo Dom Sumio Takatsu.
+  - source: costa2021
+    quote: >-
+      Em julho de 1989, o reverendo Glauco Soares de Lima 88 foi eleito bispo coadjutor na Diocese Anglicana de
+      São Paulo
+    page: '99'
   discrepancies:
-  - field: place
-    value: St. Paul's Church, São Paulo
-    sources:
-    - source: kickhofel-1995
-      quote: >-
-        Foi elevado ao episcopado no dia primeiro de outubro de 1989 na mesma igreja que pastoreava na época de
-        sua eleição. Foi sagrante o bispo primaz Olavo Ventura Luiz e co-sagrantes mais sete colegas. Assumiu o
-        governo da diocese em janeiro de 1990.
-      page: '291'
-    - source: costa2021
-      quote: >-
-        Foi elevado ao episcopado em 1º de outubro no histórico templo da capital paulista, pelas mãos do Bispo
-        Primaz, Olavo Ventura Luiz, tendo como co-sagrantes mais sete bispos.
-    - source: wp-pt-glauco
-      quote: >-
-        Em 1° de julho de 1989, Lima foi sagrado bispo na Catedral Anglicana de São Paulo, sucedendo Dom Sumio Takatsu.
-  - field: office
-    value: coadjutor
-    sources:
-    - source: kickhofel-1995
-      quote: >-
-        Foi elevado ao episcopado no dia primeiro de outubro de 1989 na mesma igreja que pastoreava na época de
-        sua eleição. Foi sagrante o bispo primaz Olavo Ventura Luiz e co-sagrantes mais sete colegas. Assumiu o
-        governo da diocese em janeiro de 1990.
-      page: '291'
-    - source: costa2021
-      quote: >-
-        Foi elevado ao episcopado em 1º de outubro no histórico templo da capital paulista, pelas mãos do Bispo
-        Primaz, Olavo Ventura Luiz, tendo como co-sagrantes mais sete bispos.
-    - source: wp-pt-glauco
-      quote: >-
-        Em 1° de julho de 1989, Lima foi sagrado bispo na Catedral Anglicana de São Paulo, sucedendo Dom Sumio Takatsu.
   - field: date
     value: '1989-07-01'
     sources:
     - source: wp-pt-glauco
       quote: >-
         Em 1° de julho de 1989, Lima foi sagrado bispo na Catedral Anglicana de São Paulo, sucedendo Dom Sumio Takatsu.
-  - field: place
-    value: Catedral Anglicana de Sao Paulo
-    sources:
-    - source: wp-pt-glauco
-      quote: >-
-        Em 1° de julho de 1989, Lima foi sagrado bispo na Catedral Anglicana de São Paulo, sucedendo Dom Sumio Takatsu.
   notes: >-
-    Coadjutor. A tese diz 'mais sete bispos' como co-sagrantes, sem nomeá-los. O templo é a St. Paul's Church, onde
-    exercia o ministério. O livro diz que houve sete co-sagrantes, sem nomeá-los. Versao de Costa 2021: 01/10/1989,
-    St. Paul's Church, eleito coadjutor em julho de 1989. Wikipedia PT diz 01/07/1989 na Catedral Anglicana de Sao
-    Paulo (ver afirmacao contestada seguinte). Versao Wikipedia PT (sem fonte especifica). Conflita com Costa 2021
-    (eleito coadjutor em julho, sagrado em 1o de outubro).
+    O livro diz que houve sete co-sagrantes, sem nomeá-los. Versao de Costa 2021: 01/10/1989, St. Paul's Church,
+    eleito coadjutor em julho de 1989. Wikipedia PT diz 01/07/1989 na Catedral Anglicana de Sao Paulo (ver afirmacao
+    contestada seguinte). Versao Wikipedia PT (sem fonte especifica). Conflita com Costa 2021 (eleito coadjutor
+    em julho, sagrado em 1o de outubro). Coadjutor. A tese diz 'mais sete bispos' como co-sagrantes, sem nomeá-los.
+    O templo é a St. Paul's Church, onde exercia o ministério.
 affiliations:
 - jurisdiction: ieab
   role: bishop
@@ -218,16 +179,12 @@ affiliations:
   role: primate
   start: '1993'
   end: '2003'
-  status: contested
+  status: confirmed
   sources:
-  - source: costa2021
-    quote: pelo Primaz, Glauco Soares de Lima
-    page: '186'
   - source: costa2021
     quote: >-
       Em 1993 o então bispo da Diocese Anglicana de São Paulo, Glauco Soares de Lima, foi eleito o novo Primaz,
       permanecendo no cargo por dez anos.
-    page: '101'
   - source: wp-en-ieab
     quote: Glauco Soares de Lima, 1993—2003
   - source: glauco-testemunho-2013
@@ -239,9 +196,12 @@ affiliations:
       O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1994 - Glauco Soares
       de Lima
     page: '367'
+  - source: costa2021
+    quote: pelo Primaz, Glauco Soares de Lima
+    page: '186'
   notes: >-
-    Primaz em outubro de 1997. Também foi um dos interinos à frente da DAR (2004-2006). Anexo E de Costa da 1994-2003
-    (com Gastal interino 1993-94). O livro dá só o início de cada primado; o fim é o início do primado seguinte.
+    Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94). O livro dá só o início de cada primado; o fim é
+    o início do primado seguinte. Primaz em outubro de 1997. Também foi um dos interinos à frente da DAR (2004-2006).
   discrepancies:
   - field: start
     value: '1994'

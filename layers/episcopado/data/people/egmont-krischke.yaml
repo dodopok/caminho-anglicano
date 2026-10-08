@@ -85,7 +85,7 @@ ordinations:
   co_consecrators:
   - athalicio-pithan
   - john-boyd-bentley
-  status: contested
+  status: confirmed
   sources:
   - source: wit-1950-03-30
     quote: >-
@@ -116,25 +116,6 @@ ordinations:
       Sul-Ocidental 57, com sé na cidade de Santa Maria. A sua sagração ocorreu em 12 de março de 1950, na Paróquia
       do Crucificado, em Bagé.
     page: '72'
-  discrepancies:
-  - field: place
-    value: Paróquia do Crucificado, Bagé
-    sources:
-    - source: costa2021
-      quote: >-
-        Assim, o reverendo Egmont Machado Krischke 56 foi eleito o mais novo bispo, para assumir a recém-criada
-        Diocese Sul-Ocidental 57, com sé na cidade de Santa Maria. A sua sagração ocorreu em 12 de março de 1950,
-        na Paróquia do Crucificado, em Bagé.
-      page: '72'
-  - field: office
-    value: diocesan
-    sources:
-    - source: costa2021
-      quote: >-
-        Assim, o reverendo Egmont Machado Krischke 56 foi eleito o mais novo bispo, para assumir a recém-criada
-        Diocese Sul-Ocidental 57, com sé na cidade de Santa Maria. A sua sagração ocorreu em 12 de março de 1950,
-        na Paróquia do Crucificado, em Bagé.
-      page: '72'
   notes: >-
     Primeira sagração no próprio Brasil segundo a nota ('the first consecra­tion to be held in Brazil in two years'
     — i.e., há dois anos não havia; a de Pithan em 1940 foi no Brasil). Presbíteros assistentes: Rev. George U.
@@ -157,7 +138,7 @@ affiliations:
   start: '1950-03-12'
   end: '1955'
   end_reason: transfer
-  status: contested
+  status: confirmed
   sources:
   - source: wit-1950-03-30
     quote: Bishop to be head of the newly-formed Missionary District of Southwestern Brazil
@@ -190,7 +171,7 @@ affiliations:
   diocese: southern-brazil
   start: '1955'
   end_reason: resignation
-  status: contested
+  status: confirmed
   sources:
   - source: wit-1955-09-29
     quote: Krischke who is transferring to Southern Brazil to replace Bishop Pithan
@@ -225,13 +206,10 @@ affiliations:
   role: diocesan_bishop
   diocese: ieab-dm
   start: '1956'
-  end: '1970'
+  end: '1971'
   end_reason: resignation
-  status: contested
+  status: probable
   sources:
-  - source: kickhofel-1995
-    quote: Krischke adoeceu em 1970 e resignou a diocese, mas permaneceu como primaz até 1971, quando faleceu.
-    page: '249'
   - source: costa2021
     quote: 1950-1971 – Egmont Valle Machado Krischke
   - source: costa2021
@@ -241,20 +219,20 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1956-1970 - Egmont Machado Krischke
     page: '368'
+  - source: kickhofel-1995
+    quote: Krischke adoeceu em 1970 e resignou a diocese, mas permaneceu como primaz até 1971, quando faleceu.
+    page: '249'
+  notes: Renunciou como diocesano por saude, permanecendo primaz.
   discrepancies:
   - field: end
-    value: '1971'
+    value: '1970'
     sources:
-    - source: costa2021
-      quote: 1950-1971 – Egmont Valle Machado Krischke
-    - source: costa2021
-      quote: >-
-        Em 1956, quando o Bispo Pithan se aposentou, a Câmara dos Bispos transferiu o Bispo Krischke para a Diocese
-        Meridional
     - source: kickhofel-1995
       quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1956-1970 - Egmont Machado Krischke
       page: '368'
-  notes: Renunciou como diocesano por saude, permanecendo primaz.
+    - source: kickhofel-1995
+      quote: Krischke adoeceu em 1970 e resignou a diocese, mas permaneceu como primaz até 1971, quando faleceu.
+      page: '249'
 - jurisdiction: ieab
   role: primate
   start: '1965-04-25'

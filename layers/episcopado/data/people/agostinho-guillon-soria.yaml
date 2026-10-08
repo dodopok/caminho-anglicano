@@ -37,7 +37,7 @@ ordinations:
   place: Trinity Church (Igreja da Santíssima Trindade), Porto Alegre
   jurisdiction: ieab
   ordained_by: william-matthews-merrick-thomas
-  status: contested
+  status: probable
   sources:
   - source: ia-living-church-1947-03-02
     quote: >-
@@ -54,15 +54,6 @@ ordinations:
       Formou-se em Teologia e Filosofia, em Porto Alegre, sendo ordenado ao diaconato em 1947 e ao presbiterato
       no ano seguinte.
     page: '88'
-  discrepancies:
-  - field: jurisdiction
-    value: dmsb
-    sources:
-    - source: costa2021
-      quote: >-
-        Formou-se em Teologia e Filosofia, em Porto Alegre, sendo ordenado ao diaconato em 1947 e ao presbiterato
-        no ano seguinte.
-      page: '88'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
@@ -70,7 +61,7 @@ ordinations:
   place: Igreja do Redentor (Church of the Redeemer), Pelotas
   jurisdiction: ieab
   ordained_by: athalicio-pithan
-  status: contested
+  status: probable
   sources:
   - source: ia-living-church-1948-05-02
     quote: >-
@@ -87,15 +78,6 @@ ordinations:
       Formou-se em Teologia e Filosofia, em Porto Alegre, sendo ordenado ao diaconato em 1947 e ao presbiterato
       no ano seguinte.
     page: '88'
-  discrepancies:
-  - field: jurisdiction
-    value: dmsb
-    sources:
-    - source: costa2021
-      quote: >-
-        Formou-se em Teologia e Filosofia, em Porto Alegre, sendo ordenado ao diaconato em 1947 e ao presbiterato
-        no ano seguinte.
-      page: '88'
   notes: OCR grafa "Séria".
 - order: episcopate
   date: '1977-04-24'
@@ -137,7 +119,7 @@ affiliations:
   start: '1977-04-24'
   end: '1984'
   end_reason: transfer
-  status: contested
+  status: probable
   sources:
   - source: costa2021
     quote: 1977-1984 – Agostinho Guillon Sória
@@ -166,18 +148,11 @@ affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dab
-  start: '1982'
+  start: '1985-06-09'
   end: '1988'
   end_reason: retirement
   status: contested
   sources:
-  - source: costa2021
-    quote: >-
-      Após assumir a Diocese de Brasília, em 1982, o bispo Agostinho Sória se aposentou por motivos de saúde.
-    page: '98'
-  - source: costa2021
-    quote: Missionária de Brasília, tornando-se o seu primeiro bispo residente.
-    page: '88'
   - source: costa2021
     quote: 1985-1988 – Agostinho Guillon Sória
   - source: wp-pt-dioc-brasilia
@@ -191,26 +166,17 @@ affiliations:
       compreendia o Distrito Federal, Mato Grosso, Goiás, Tocantins e o triângulo mineiro. … Oficialmente instalada
       no dia nove de junho de 1985 e instituído seu primeiro bispo
     page: '305'
+  - source: costa2021
+    quote: >-
+      Após assumir a Diocese de Brasília, em 1982, o bispo Agostinho Sória se aposentou por motivos de saúde.
+    page: '98'
+  - source: costa2021
+    quote: Missionária de Brasília, tornando-se o seu primeiro bispo residente.
+    page: '88'
   notes: >-
-    Fim aproximado: sucessão discutida em 1988 (Almir eleito, sagrado em abril de 1989). Costa diz tambem que assumiu
-    Brasilia "em 1982" (conflito).
+    Costa diz tambem que assumiu Brasilia "em 1982" (conflito). Fim aproximado: sucessão discutida em 1988 (Almir
+    eleito, sagrado em abril de 1989).
   discrepancies:
-  - field: start
-    value: '1985-06-09'
-    sources:
-    - source: costa2021
-      quote: 1985-1988 – Agostinho Guillon Sória
-    - source: wp-pt-dioc-brasilia
-      quote: Agostinho Sória (1º bispo diocesano) - 1985 a abril de 1988;
-    - source: kickhofel-1995
-      quote: BISPOS DIOCESANOS Diocese Missionária de Brasília … 1985-1988 - Agostinho Guillon Sória
-      page: '368'
-    - source: kickhofel-1995
-      quote: >-
-        Como bispo da diocese que originou a nova região eclesiástica, Agostinho Sória optou pela nova diocese que
-        compreendia o Distrito Federal, Mato Grosso, Goiás, Tocantins e o triângulo mineiro. … Oficialmente instalada
-        no dia nove de junho de 1985 e instituído seu primeiro bispo
-      page: '305'
   - field: end
     value: '1989'
     sources:
@@ -220,6 +186,16 @@ affiliations:
         compreendia o Distrito Federal, Mato Grosso, Goiás, Tocantins e o triângulo mineiro. … Oficialmente instalada
         no dia nove de junho de 1985 e instituído seu primeiro bispo
       page: '305'
+  - field: start
+    value: '1982'
+    sources:
+    - source: costa2021
+      quote: >-
+        Após assumir a Diocese de Brasília, em 1982, o bispo Agostinho Sória se aposentou por motivos de saúde.
+      page: '98'
+    - source: costa2021
+      quote: Missionária de Brasília, tornando-se o seu primeiro bispo residente.
+      page: '88'
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dm

@@ -22,7 +22,7 @@ ordinations:
 - order: episcopate
   date: '1993-01-25'
   place: Catedral Anglicana de São João Batista, St. John's, Terra Nova
-  jurisdiction: acc
+  jurisdiction: anglican-church-of-canada
   office: diocesan
   principal_consecrator: michael-peers
   co_consecrators:
@@ -64,31 +64,6 @@ ordinations:
       the Bishopelect knelt with the ten ordaining Bishops surrounding him. The Archbishop offered up prayer for
       the ordinand, culminating with all of the Bishops laying their hands on him
   discrepancies:
-  - field: jurisdiction
-    value: anglican-church-of-canada
-    sources:
-    - source: nlchurchman-1993-02
-      quote: >-
-        Chief Consecrator was the Metropolitan, Most Rev'd Stewart Payne, Archbishop of Western Newfoundland, who
-        was assisted by Bishops
-    - source: nlchurchman-1993-02
-      quote: >-
-        G. Peters and James P. Allen of Nova Scotia, Bishop George C. Le~mon of Fredericto~ Bishop Andrew S. Hutchison
-        of Montreal, Bi hop Edward F. Marsh of Central Newfoundland, Bishop A.
-    - source: nlchurchman-1993-02
-      quote: >-
-        Bruce Stavert of Quebec, Archbishop Harold A. Nutter (retired), Bishop Mark Genge (retired), and Bishop
-        Harvey's predecessor, Bishop Mate.
-    - source: nlchurchman-1993-02
-      quote: >-
-        On Monday, January 25, the Feast of the Conversion of St Paul, Donald Frederick Harvey stood on the steps
-        of The Anglican Cathedral of St. John the Baptist
-    - source: nlchurchman-1993-02
-      quote: >-
-        the Bishopelect knelt with the ten ordaining Bishops surrounding him. The Archbishop offered up prayer for
-        the ordinand, culminating with all of the Bishops laying their hands on him
-    - source: wp-harvey
-      quote: '| consecrated_by = [[Michael Peers]]'
   - field: principal_consecrator
     value: stewart-payne
     sources:

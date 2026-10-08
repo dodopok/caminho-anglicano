@@ -149,15 +149,6 @@ ordinations:
       Unidos.
     page: '55'
   discrepancies:
-  - field: place
-    value: Igreja de São Bartolomeu, Nova York
-    sources:
-    - source: costa2021
-      quote: >-
-        Em 06 de janeiro de 1899, doze bispos participaram da consagração de Kinsolving na Igreja de São Bartolomeu
-        (Nova York), em cerimônia liderada pelo bispo George Peterkin, então presidente da Igreja Episcopal dos
-        Estados Unidos.
-      page: '55'
   - field: principal_consecrator
     value: george-william-peterkin
     sources:
@@ -184,13 +175,10 @@ affiliations:
 - jurisdiction: dmsb
   role: diocesan_bishop
   start: '1899-01-06'
-  end: '1927'
-  end_reason: retirement
+  end: '1928'
+  end_reason: resignation
   status: contested
   sources:
-  - source: costa2021
-    quote: o bispo Kinsolving percebia que era necessário aposentar- se, o que ocorreu em 1927.
-    page: '62'
   - source: wit-1952-03-20
     quote: >-
       Bishop Kinsolving retired in 1928 and was succeeded by Bishop William M. M. Thomas who had come out to Brazil
@@ -202,46 +190,33 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS MISSIONÁRIOS … 1899-1926 - Lucien Lee Kinsolving
     page: '368'
+  - source: costa2021
+    quote: o bispo Kinsolving percebia que era necessário aposentar- se, o que ocorreu em 1927.
+    page: '62'
   notes: >-
-    Local/função: Missão / Distrito Missionário do Brasil. Local: 1899); Missionary Bishop of Southern Brazil (1907-1928.
-    Eleito pela convocação de Porto Alegre em 30/05/1898 e pela Câmara dos Bispos em out. 1898; reeleito bispo missionário
-    do Sul do Brasil em 1907 (Wikipédia). Voltou aos EUA por saúde em out. 1926, renúncia aceita em 1928. O livro
-    lista Kinsolving entre os bispos missionários de 1899 a 1926.
+    Local: 1899); Missionary Bishop of Southern Brazil (1907-1928. Eleito pela convocação de Porto Alegre em 30/05/1898
+    e pela Câmara dos Bispos em out. 1898; reeleito bispo missionário do Sul do Brasil em 1907 (Wikipédia). Voltou
+    aos EUA por saúde em out. 1926, renúncia aceita em 1928. O livro lista Kinsolving entre os bispos missionários
+    de 1899 a 1926. Local/função: Missão / Distrito Missionário do Brasil.
   discrepancies:
-  - field: end
-    value: '1928'
-    sources:
-    - source: wit-1952-03-20
-      quote: >-
-        Bishop Kinsolving retired in 1928 and was succeeded by Bishop William M. M. Thomas who had come out to Brazil
-        as a missionary in 1904.
-    - source: som-1898-12
-      quote: >-
-        the Rev. Lucien Lee Kinsolving had been duly elected, in accordance with Article X. of the Constitution,
-        a Bishop for the United States of Brazil.
-    - source: kickhofel-1995
-      quote: BISPOS MISSIONÁRIOS … 1899-1926 - Lucien Lee Kinsolving
-      page: '368'
-  - field: end_reason
-    value: resignation
-    sources:
-    - source: wit-1952-03-20
-      quote: >-
-        Bishop Kinsolving retired in 1928 and was succeeded by Bishop William M. M. Thomas who had come out to Brazil
-        as a missionary in 1904.
-    - source: som-1898-12
-      quote: >-
-        the Rev. Lucien Lee Kinsolving had been duly elected, in accordance with Article X. of the Constitution,
-        a Bishop for the United States of Brazil.
-    - source: kickhofel-1995
-      quote: BISPOS MISSIONÁRIOS … 1899-1926 - Lucien Lee Kinsolving
-      page: '368'
   - field: end
     value: '1926'
     sources:
     - source: kickhofel-1995
       quote: BISPOS MISSIONÁRIOS … 1899-1926 - Lucien Lee Kinsolving
       page: '368'
+  - field: end
+    value: '1927'
+    sources:
+    - source: costa2021
+      quote: o bispo Kinsolving percebia que era necessário aposentar- se, o que ocorreu em 1927.
+      page: '62'
+  - field: end_reason
+    value: retirement
+    sources:
+    - source: costa2021
+      quote: o bispo Kinsolving percebia que era necessário aposentar- se, o que ocorreu em 1927.
+      page: '62'
 events:
 - type: other
   date: '1890-06-01'

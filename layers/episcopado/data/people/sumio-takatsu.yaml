@@ -66,7 +66,7 @@ ordinations:
   - elliott-lorenz-sorge
   - olavo-ventura-luiz
   - plinio-lauer-simoes
-  status: contested
+  status: confirmed
   sources:
   - source: ia-gc-journal-1979
     quote: June 12, 1977 — The Rt. Rev. Sumio Takatsu, South Central Brazil
@@ -89,16 +89,6 @@ ordinations:
       Paulo, pelo bispo primaz Arthur Rodolpho Kratz, sendo co-sagrantes os bispos Olavo Ventura Luiz, Plínio Lauer
       Simões, Elliot Lorenz Sorge e Agostinho Guilhon Sória.
     page: '288'
-  discrepancies:
-  - field: place
-    value: Igreja de São Paulo (St. Paul’s Church), São Paulo
-    sources:
-    - source: costa2021
-      quote: >-
-        sendo sagrado no dia 12 de junho do mesmo ano, na Igreja de São Paulo (St. Paul’s Church), pelo Bispo Primaz,
-        Arthur Rodolpho Kratz, e pelo co-sagrantes os bispos Olavo Ventura Luiz, Plínio Simões, Elliott Sorge e
-        Agostinho Sória (KICKHÖFEL, 1995, p. 288).
-      page: '87'
   notes: >-
     Confirma a data (12/06/1977) por fonte primária da TEC (notificação ao Presiding Bishop). Não nomeia sagrantes;
     o sagrante principal Kratz continua dependendo só de Costa (2021). Costa cita Kickhofel 1995. Eleito em 30/04/1977
@@ -108,16 +98,10 @@ affiliations:
   role: diocesan_bishop
   diocese: ieab-dasp
   start: '1977-06-12'
-  end: '1990'
+  end: '1989'
   end_reason: resignation
-  status: contested
+  status: probable
   sources:
-  - source: costa2021
-    quote: Foi eleito e sagrado bispo da Diocese Anglicana de São Paulo em
-    page: '87'
-  - source: costa2021
-    quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
-    page: '87'
   - source: costa2021
     quote: 1977-1989 – Sumio Takatsu
   - source: wp-pt-sumio
@@ -128,26 +112,28 @@ affiliations:
   - source: kickhofel-1995
     quote: O bispo Takatsu efetivamente se aposentou no final de 1989.
     page: '290'
+  - source: costa2021
+    quote: Foi eleito e sagrado bispo da Diocese Anglicana de São Paulo em
+    page: '87'
+  - source: costa2021
+    quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
+    page: '87'
   discrepancies:
-  - field: end
-    value: '1989'
-    sources:
-    - source: costa2021
-      quote: 1977-1989 – Sumio Takatsu
-    - source: wp-pt-sumio
-      quote: Permaneceu no cargo até sua renúncia, no final de 1989.
-    - source: kickhofel-1995
-      quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1977-1989 - Sumio Takatsu
-      page: '368'
-    - source: kickhofel-1995
-      quote: O bispo Takatsu efetivamente se aposentou no final de 1989.
-      page: '290'
   - field: end_reason
     value: retirement
     sources:
     - source: kickhofel-1995
       quote: O bispo Takatsu efetivamente se aposentou no final de 1989.
       page: '290'
+  - field: end
+    value: '1990'
+    sources:
+    - source: costa2021
+      quote: Foi eleito e sagrado bispo da Diocese Anglicana de São Paulo em
+      page: '87'
+    - source: costa2021
+      quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
+      page: '87'
 events:
 - type: other
   date: '1977-04-30'

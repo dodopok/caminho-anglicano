@@ -27,25 +27,12 @@ ordinations:
   place: Recife (Catedral Betânia, presumivelmente)
   jurisdiction: iceb
   office: diocesan
-  principal_consecrator: francisco-buzzo-rodrigues
+  principal_consecrator: william-paul-mikler
   co_consecrators:
+  - francisco-buzzo-rodrigues
   - hermes-carvalho-fernandes
-  - william-paul-mikler
   status: contested
   sources:
-  - source: costa2021
-    quote: >-
-      Em dezembro de 2006, em cerimônia oficiada pelos bispos William Paul Mikler, Hermes Carvalho Fernandes e Francisco
-      Buzzo, o Rev. Leonides foi sagrado bispo diocesano e o 1º Distrito Missionário foi alçado à condição de Diocese
-      Missionária.
-    page: '202'
-  - source: iab-poster-linhagem-meira
-    quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC, comunhão criada nos EUA em 1995
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      Um dos primeiros atos do bispo Buzzo foi a sagração do bispo Leonides Menezes na Igreja Cristã Episcopal,
-      em Recife, onde iniciou o seu ministério pela Catedral Betânia.
-    page: '133'
   - source: cant-novas-igrejas-2024
     quote: >-
       Com apoio de bispos como William Paul Mikler, Hermes Carvalho Fernandes e Francisco Buzzo, Leonides foi eleito
@@ -71,119 +58,56 @@ ordinations:
     quote: >-
       A Igreja, inserida nessa citada Comunhão, elegeu em abril de 2007 o reverendo Leonides Menezes como o seu
       bispo, ordenado em seguida.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Um dos primeiros atos do bispo Buzzo foi a sagração do bispo Leonides Menezes na Igreja Cristã Episcopal,
+      em Recife, onde iniciou o seu ministério pela Catedral Betânia.
+    page: '133'
+  - source: iab-poster-linhagem-meira
+    quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC, comunhão criada nos EUA em 1995
+  - source: costa2021
+    quote: >-
+      Em dezembro de 2006, em cerimônia oficiada pelos bispos William Paul Mikler, Hermes Carvalho Fernandes e Francisco
+      Buzzo, o Rev. Leonides foi sagrado bispo diocesano e o 1º Distrito Missionário foi alçado à condição de Diocese
+      Missionária.
+    page: '202'
   discrepancies:
   - field: date
     value: '2007'
     sources:
+    - source: ptwp-dar
+      quote: >-
+        A Igreja, inserida nessa citada Comunhão, elegeu em abril de 2007 o reverendo Leonides Menezes como o seu
+        bispo, ordenado em seguida.
     - source: iab-poster-linhagem-meira
       quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC, comunhão criada nos EUA em 1995
+  - field: principal_consecrator
+    value: francisco-buzzo-rodrigues
+    sources:
     - source: cant-novas-igrejas-2024
       quote: >-
         Um dos primeiros atos do bispo Buzzo foi a sagração do bispo Leonides Menezes na Igreja Cristã Episcopal,
         em Recife, onde iniciou o seu ministério pela Catedral Betânia.
       page: '133'
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Com apoio de bispos como William Paul Mikler, Hermes Carvalho Fernandes e Francisco Buzzo, Leonides foi
-        eleito e posteriormente consagrado bispo diocesano em dezembro de 2006.
-      page: '66'
-    - source: cant-novas-igrejas-2024
-      quote: A solenidade, reconhecida pela Comunion of Evangelical Episcopal Churches
-      page: '66'
-    - source: ciceb-quemsomos
-      quote: >-
-        Em dezembro de 2006, em cerimônia oficiada pelos bispos William Paul Mikler, Hermes Carvalho Fernandes e
-        Francisco Buzzo, O Rev. Leonides foi sagrado bispo diocesano e o 1º Distrito Missionário foi alçado à condição
-        de Diocese Missionária.
-    - source: ciceb-betania-historia
-      quote: >-
-        Em dezembro de 2006, a Paróquia Betânia foi elevada à Catedral da Diocese Missionária do Nordeste do Brasil
-        (DMNB), e o Rev. Leonides foi sagrado Bispo dessa diocese.
-    - source: costa2021
-      quote: >-
-        Em dezembro de 2006, em cerimônia oficiada pelos bispos William Paul Mikler, Hermes Carvalho Fernandes e
-        Francisco Buzzo, o Rev. Leonides foi sagrado bispo diocesano
-    - source: ptwp-dar
-      quote: >-
-        A Igreja, inserida nessa citada Comunhão, elegeu em abril de 2007 o reverendo Leonides Menezes como o seu
-        bispo, ordenado em seguida.
   - field: jurisdiction
     value: ceec
     sources:
     - source: iab-poster-linhagem-meira
       quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC, comunhão criada nos EUA em 1995
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Um dos primeiros atos do bispo Buzzo foi a sagração do bispo Leonides Menezes na Igreja Cristã Episcopal,
-        em Recife, onde iniciou o seu ministério pela Catedral Betânia.
-      page: '133'
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Com apoio de bispos como William Paul Mikler, Hermes Carvalho Fernandes e Francisco Buzzo, Leonides foi
-        eleito e posteriormente consagrado bispo diocesano em dezembro de 2006.
-      page: '66'
-    - source: cant-novas-igrejas-2024
-      quote: A solenidade, reconhecida pela Comunion of Evangelical Episcopal Churches
-      page: '66'
-    - source: ciceb-quemsomos
-      quote: >-
-        Em dezembro de 2006, em cerimônia oficiada pelos bispos William Paul Mikler, Hermes Carvalho Fernandes e
-        Francisco Buzzo, O Rev. Leonides foi sagrado bispo diocesano e o 1º Distrito Missionário foi alçado à condição
-        de Diocese Missionária.
-    - source: ciceb-betania-historia
-      quote: >-
-        Em dezembro de 2006, a Paróquia Betânia foi elevada à Catedral da Diocese Missionária do Nordeste do Brasil
-        (DMNB), e o Rev. Leonides foi sagrado Bispo dessa diocese.
-    - source: costa2021
-      quote: >-
-        Em dezembro de 2006, em cerimônia oficiada pelos bispos William Paul Mikler, Hermes Carvalho Fernandes e
-        Francisco Buzzo, o Rev. Leonides foi sagrado bispo diocesano
-    - source: ptwp-dar
-      quote: >-
-        A Igreja, inserida nessa citada Comunhão, elegeu em abril de 2007 o reverendo Leonides Menezes como o seu
-        bispo, ordenado em seguida.
-  - field: principal_consecrator
-    value: william-paul-mikler
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Com apoio de bispos como William Paul Mikler, Hermes Carvalho Fernandes e Francisco Buzzo, Leonides foi
-        eleito e posteriormente consagrado bispo diocesano em dezembro de 2006.
-      page: '66'
-    - source: cant-novas-igrejas-2024
-      quote: A solenidade, reconhecida pela Comunion of Evangelical Episcopal Churches
-      page: '66'
-    - source: ciceb-quemsomos
-      quote: >-
-        Em dezembro de 2006, em cerimônia oficiada pelos bispos William Paul Mikler, Hermes Carvalho Fernandes e
-        Francisco Buzzo, O Rev. Leonides foi sagrado bispo diocesano e o 1º Distrito Missionário foi alçado à condição
-        de Diocese Missionária.
-    - source: ciceb-betania-historia
-      quote: >-
-        Em dezembro de 2006, a Paróquia Betânia foi elevada à Catedral da Diocese Missionária do Nordeste do Brasil
-        (DMNB), e o Rev. Leonides foi sagrado Bispo dessa diocese.
-    - source: costa2021
-      quote: >-
-        Em dezembro de 2006, em cerimônia oficiada pelos bispos William Paul Mikler, Hermes Carvalho Fernandes e
-        Francisco Buzzo, o Rev. Leonides foi sagrado bispo diocesano
-    - source: ptwp-dar
-      quote: >-
-        A Igreja, inserida nessa citada Comunhão, elegeu em abril de 2007 o reverendo Leonides Menezes como o seu
-        bispo, ordenado em seguida.
   notes: >-
-    Igreja Episcopal Evangélica (hoje Igreja Cristã Episcopal / CICEB), então filiada à CEEC. A tese diz 'oficiada
-    pelos bispos' sem distinguir o sagrante principal. 'Francisco Buzzo' identificado com 'Francisco Buzzo Rodrigues'
-    da base. O pôster diz que Russell McClanahan 'autorizou a consagração'; os sagrantes não são nomeados. 'Um dos
-    primeiros atos' de Buzzo como bispo (após 2005, data não informada). Igreja Cristã Episcopal = ICEB (Igreja
-    Cristã Episcopal Betânia) da base. O livro não identifica os sagrantes; diz apenas que teve 'apoio' de William
-    Paul Mikler, Hermes Carvalho Fernandes e Francisco Buzzo. O Distrito Missionário foi elevado a Diocese Missionária.
-    Fonte primária (site da CICEB) nomeia três bispos oficiantes; a ordem em que aparecem (Mikler primeiro) sugere
-    Mikler como sagrante principal, mas o site não diz isso explicitamente. CONFLITO: a Wikipédia (Diocese Anglicana
-    do Recife) diz eleição em abril de 2007 'ordenado em seguida', e os pôsteres da IAB dizem 'consagrado em 2007
-    pela CEEC' com autorização de Russell McClanahan. Sucessão declarada: CEEC. Notável: Francisco Buzzo (fundador
-    da IARB) aparece como co-sagrante, ligando a IARB à rede CEEC já em 2006. Costa (2021, nota 193) reproduz a
-    mesma versão (dez/2006, Mikler/Fernandes/Buzzo). Versão alternativa (Wikipédia, citando o antigo site ciceb.com.br/DnossaIgreja.html):
-    eleição em abril de 2007. Ver a versão de dez. 2006 do site atual.
+    O livro não identifica os sagrantes; diz apenas que teve 'apoio' de William Paul Mikler, Hermes Carvalho Fernandes
+    e Francisco Buzzo. O Distrito Missionário foi elevado a Diocese Missionária. Fonte primária (site da CICEB)
+    nomeia três bispos oficiantes; a ordem em que aparecem (Mikler primeiro) sugere Mikler como sagrante principal,
+    mas o site não diz isso explicitamente. CONFLITO: a Wikipédia (Diocese Anglicana do Recife) diz eleição em abril
+    de 2007 'ordenado em seguida', e os pôsteres da IAB dizem 'consagrado em 2007 pela CEEC' com autorização de
+    Russell McClanahan. Sucessão declarada: CEEC. Notável: Francisco Buzzo (fundador da IARB) aparece como co-sagrante,
+    ligando a IARB à rede CEEC já em 2006. Costa (2021, nota 193) reproduz a mesma versão (dez/2006, Mikler/Fernandes/Buzzo).
+    Versão alternativa (Wikipédia, citando o antigo site ciceb.com.br/DnossaIgreja.html): eleição em abril de 2007.
+    Ver a versão de dez. 2006 do site atual. 'Um dos primeiros atos' de Buzzo como bispo (após 2005, data não informada).
+    Igreja Cristã Episcopal = ICEB (Igreja Cristã Episcopal Betânia) da base. O pôster diz que Russell McClanahan
+    'autorizou a consagração'; os sagrantes não são nomeados. Igreja Episcopal Evangélica (hoje Igreja Cristã Episcopal
+    / CICEB), então filiada à CEEC. A tese diz 'oficiada pelos bispos' sem distinguir o sagrante principal. 'Francisco
+    Buzzo' identificado com 'Francisco Buzzo Rodrigues' da base.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -191,8 +115,28 @@ affiliations:
   start: '1996-07-11'
   end: 2002-10
   end_reason: schism
-  status: contested
+  status: probable
   sources:
+  - source: ieabrecife-clero-2002
+    quote: Leonides de Menezes Ferreira (06.09)
+  - source: ptwp-dar
+    quote: >-
+      liderados pelo reverendo Leônides Menezes, decidiram por assembleia se separar da Igreja Episcopal Anglicana
+      do Brasil
+  - source: ciceb-betania-historia
+    quote: >-
+      Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom Clóvis
+      Erly, a Missão Betânia foi instalada em 11/07/1996, na Av. Caxangá 1107, no bairro do Cordeiro, sob a liderança
+      do Ministro Auxiliar Leonides de Menezes.
+  - source: ciceb-betania-historia
+    quote: >-
+      Em 8 de julho de 2002, a então Paróquia Betânia, da Igreja Episcopal Anglicana do Brasil, decidiu, em assembleia,
+      desligar-se da Igreja Anglicana, passando a ser chamada Igreja Evangélica Betânia.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em outubro de 2002, a Paróquia Betânia da Diocese Anglicana do Recife, pertencente à Igreja Episcopal Anglicana
+      do Brasil, resolveu em assembleia com todos os membros, por unanimidade de votos, desligar-se da Igreja Anglicana.
+    page: '66'
   - source: costa2021
     quote: >-
       Depois houve a saída do rev. Leonides Menezes, com a rev. Karla Patriota e Adonias Ramos Souza e as paróquias
@@ -203,51 +147,14 @@ affiliations:
       com a saída do reverendo Leonides de Menezes, que fundou a Igreja Episcopal Evangélica (hoje denominada Igreja
       Cristã Episcopal), a partir do desligamento da Paróquia Betânia da Diocese do Recife.
     page: '202'
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      Em outubro de 2002, a Paróquia Betânia da Diocese Anglicana do Recife, pertencente à Igreja Episcopal Anglicana
-      do Brasil, resolveu em assembleia com todos os membros, por unanimidade de votos, desligar-se da Igreja Anglicana.
-    page: '66'
-  - source: ciceb-betania-historia
-    quote: >-
-      Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom Clóvis
-      Erly, a Missão Betânia foi instalada em 11/07/1996, na Av. Caxangá 1107, no bairro do Cordeiro, sob a liderança
-      do Ministro Auxiliar Leonides de Menezes.
-  - source: ieabrecife-clero-2002
-    quote: Leonides de Menezes Ferreira (06.09)
-  - source: ptwp-dar
-    quote: >-
-      liderados pelo reverendo Leônides Menezes, decidiram por assembleia se separar da Igreja Episcopal Anglicana
-      do Brasil
-  - source: ciceb-betania-historia
-    quote: >-
-      Em 8 de julho de 2002, a então Paróquia Betânia, da Igreja Episcopal Anglicana do Brasil, decidiu, em assembleia,
-      desligar-se da Igreja Anglicana, passando a ser chamada Igreja Evangélica Betânia.
+  notes: >-
+    Lista de jan/2002 o traz como presidente da Junta de Capelães Examinadores. Saída em out/2002 (Igreja Episcopal
+    Evangélica Betânia → CEEC 2003; eleito bispo abr/2007). Ver frente de jurisdições menores. Em 1996 era "Ministro
+    Auxiliar" (não está claro se já ordenado); depois "Rev." como líder da Paróquia Betânia (Cordeiro, Recife).
+    Data/ordenante de suas ordenações na IEAB não encontrados. Saída com a paróquia em 2002. Em 1996 era 'Ministro
+    Auxiliar'; os pôsteres da IAB e a Wikipédia o chamam de reverendo/presbítero ao tempo da saída. Local: Paróquia
+    Betânia.
   discrepancies:
-  - field: end_reason
-    value: left
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Em outubro de 2002, a Paróquia Betânia da Diocese Anglicana do Recife, pertencente à Igreja Episcopal Anglicana
-        do Brasil, resolveu em assembleia com todos os membros, por unanimidade de votos, desligar-se da Igreja
-        Anglicana.
-      page: '66'
-    - source: ciceb-betania-historia
-      quote: >-
-        Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom
-        Clóvis Erly, a Missão Betânia foi instalada em 11/07/1996, na Av. Caxangá 1107, no bairro do Cordeiro, sob
-        a liderança do Ministro Auxiliar Leonides de Menezes.
-    - source: ieabrecife-clero-2002
-      quote: Leonides de Menezes Ferreira (06.09)
-    - source: ptwp-dar
-      quote: >-
-        liderados pelo reverendo Leônides Menezes, decidiram por assembleia se separar da Igreja Episcopal Anglicana
-        do Brasil
-    - source: ciceb-betania-historia
-      quote: >-
-        Em 8 de julho de 2002, a então Paróquia Betânia, da Igreja Episcopal Anglicana do Brasil, decidiu, em assembleia,
-        desligar-se da Igreja Anglicana, passando a ser chamada Igreja Evangélica Betânia.
   - field: end
     value: '2002-07-08'
     sources:
@@ -260,12 +167,6 @@ affiliations:
       quote: >-
         Em 8 de julho de 2002, a então Paróquia Betânia, da Igreja Episcopal Anglicana do Brasil, decidiu, em assembleia,
         desligar-se da Igreja Anglicana, passando a ser chamada Igreja Evangélica Betânia.
-  notes: >-
-    Local: Paróquia Betânia. Em 1996 era 'Ministro Auxiliar'; os pôsteres da IAB e a Wikipédia o chamam de reverendo/presbítero
-    ao tempo da saída. Lista de jan/2002 o traz como presidente da Junta de Capelães Examinadores. Saída em out/2002
-    (Igreja Episcopal Evangélica Betânia → CEEC 2003; eleito bispo abr/2007). Ver frente de jurisdições menores.
-    Em 1996 era "Ministro Auxiliar" (não está claro se já ordenado); depois "Rev." como líder da Paróquia Betânia
-    (Cordeiro, Recife). Data/ordenante de suas ordenações na IEAB não encontrados. Saída com a paróquia em 2002.
 - jurisdiction: iceb
   role: founder
   start: 2002-10

@@ -80,7 +80,7 @@ ordinations:
   place: Trinity Church (Igreja da Santíssima Trindade), Porto Alegre
   jurisdiction: ieab
   ordained_by: william-matthews-merrick-thomas
-  status: contested
+  status: probable
   sources:
   - source: ia-living-church-1947-03-02
     quote: >-
@@ -99,23 +99,6 @@ ordinations:
       Foi ordenado ao diaconato durante o 49º Concílio da Igreja, reunido na Catedral da Santíssima Trindade, em
       09 de fevereiro de 1947 e ao presbiterato em 1948, pelas mãos do bispo William Thomas.
     page: '85'
-  discrepancies:
-  - field: place
-    value: Catedral da Santíssima Trindade, Porto Alegre (49º Concílio)
-    sources:
-    - source: costa2021
-      quote: >-
-        Foi ordenado ao diaconato durante o 49º Concílio da Igreja, reunido na Catedral da Santíssima Trindade,
-        em 09 de fevereiro de 1947 e ao presbiterato em 1948, pelas mãos do bispo William Thomas.
-      page: '85'
-  - field: jurisdiction
-    value: dmsb
-    sources:
-    - source: costa2021
-      quote: >-
-        Foi ordenado ao diaconato durante o 49º Concílio da Igreja, reunido na Catedral da Santíssima Trindade,
-        em 09 de fevereiro de 1947 e ao presbiterato em 1948, pelas mãos do bispo William Thomas.
-      page: '85'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
     A expressão 'pelas mãos do bispo William Thomas' fecha a frase sobre as duas ordenações; atribuída a ambas.
@@ -124,16 +107,8 @@ ordinations:
   place: Igreja do Redentor (Church of the Redeemer), Pelotas
   jurisdiction: dmsb
   ordained_by: william-matthews-merrick-thomas
-  status: contested
+  status: probable
   sources:
-  - source: costa2021
-    quote: >-
-      Foi ordenado ao diaconato durante o 49º Concílio da Igreja, reunido na Catedral da Santíssima Trindade, em
-      09 de fevereiro de 1947 e ao presbiterato em 1948, pelas mãos do bispo William Thomas.
-    page: '85'
-  - source: kickhofel-1995
-    quote: Em 1948, foi elevado ao presbiterado e designado pároco em Santa Rita dos Sinos.
-    page: '250'
   - source: ens-72149
     quote: He was ordained a priest in 1948
   - source: ia-living-church-1948-05-02
@@ -143,17 +118,14 @@ ordinations:
     quote: >-
       Frs. Bueno, Rocha, and Séria were ordained by Bishop Pit- han, Suffragan of Brazil; Frs. Kainuma, Kratz, and
       de Mattos, by Bishop Thomas of Southern Brazil.
-  discrepancies:
-  - field: jurisdiction
-    value: ieab
-    sources:
-    - source: ia-living-church-1948-05-02
-      quote: >-
-        and Agostinho Soria were ordained to the priesthood on April 11th at the Church of the Redeemer, Pelotas
-    - source: ia-living-church-1948-05-02
-      quote: >-
-        Frs. Bueno, Rocha, and Séria were ordained by Bishop Pit- han, Suffragan of Brazil; Frs. Kainuma, Kratz,
-        and de Mattos, by Bishop Thomas of Southern Brazil.
+  - source: kickhofel-1995
+    quote: Em 1948, foi elevado ao presbiterado e designado pároco em Santa Rita dos Sinos.
+    page: '250'
+  - source: costa2021
+    quote: >-
+      Foi ordenado ao diaconato durante o 49º Concílio da Igreja, reunido na Catedral da Santíssima Trindade, em
+      09 de fevereiro de 1947 e ao presbiterato em 1948, pelas mãos do bispo William Thomas.
+    page: '85'
   notes: Ordenação conjunta de seis presbíteros; três por Pithan e três por Thomas.
 - order: episcopate
   date: '1971-07-25'
@@ -235,17 +207,9 @@ affiliations:
   diocese: ieab-dm
   start: '1971-07-25'
   end: '1984'
-  end_reason: death
+  end_reason: retirement
   status: contested
   sources:
-  - source: costa2021
-    quote: o reverendo Arthur Rodolpho Kratz 72 foi eleito bispo para a Diocese Meridional
-    page: '85'
-  - source: kickhofel-1995
-    quote: >-
-      O bispo Arthur R.Kratz assumiu a direção da Diocese Meridional logo após a sua sagração ao episcopado em 25
-      de julho de 1971 … Faleceu em 1984 e foi sucedido na Diocese Meridional por Cláudio Vinicius de Senna Gastal.
-    page: '250'
   - source: costa2021
     quote: 1971-1884 – Arthur Rodolpho Kratz
   - source: wp-pt-dioc-meridional
@@ -253,26 +217,33 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1971-1983 - Arthur Rodolpho Kratz
     page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      O bispo Arthur R.Kratz assumiu a direção da Diocese Meridional logo após a sua sagração ao episcopado em 25
+      de julho de 1971 … Faleceu em 1984 e foi sucedido na Diocese Meridional por Cláudio Vinicius de Senna Gastal.
+    page: '250'
+  - source: costa2021
+    quote: o reverendo Arthur Rodolpho Kratz 72 foi eleito bispo para a Diocese Meridional
+    page: '85'
   notes: >-
-    Sucedido por Cláudio Gastal (eleito em out. 1983; diocesano a partir de 1984). Costa grafa "1971-1884" (erro
-    tipografico por 1984); Anexo C de Costa da 1971-1977 (conflito). Motivo do fim nao explicitado.
+    Costa grafa "1971-1884" (erro tipografico por 1984); Anexo C de Costa da 1971-1977 (conflito). Motivo do fim
+    nao explicitado. Sucedido por Cláudio Gastal (eleito em out. 1983; diocesano a partir de 1984).
   discrepancies:
-  - field: end_reason
-    value: retirement
-    sources:
-    - source: costa2021
-      quote: 1971-1884 – Arthur Rodolpho Kratz
-    - source: wp-pt-dioc-meridional
-      quote: Terceiro bispo da Diocese Meridional e segundo primaz da IEAB
-    - source: kickhofel-1995
-      quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1971-1983 - Arthur Rodolpho Kratz
-      page: '368'
   - field: end
     value: '1983'
     sources:
     - source: kickhofel-1995
       quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1971-1983 - Arthur Rodolpho Kratz
       page: '368'
+  - field: end_reason
+    value: death
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        O bispo Arthur R.Kratz assumiu a direção da Diocese Meridional logo após a sua sagração ao episcopado em
+        25 de julho de 1971 … Faleceu em 1984 e foi sucedido na Diocese Meridional por Cláudio Vinicius de Senna
+        Gastal.
+      page: '250'
 - jurisdiction: ieab
   role: primate
   start: '1972'

@@ -41,7 +41,7 @@ ordinations:
     page: '101'
   notes: O livro não informa data nem ordenante.
 - order: episcopate
-  date: '2004-09-26'
+  date: '2004-10-24'
   place: Portugal
   jurisdiction: ivc-macieira
   principal_consecrator: antonio-jose-da-costa-raposo
@@ -50,17 +50,6 @@ ordinations:
   - antonin-jelinek
   status: contested
   sources:
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
-      Apostólica Episcopal Portuguesa.
-    page: '166'
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      foi novamente sagrado em Portugal, no dia 24 de outubro de 2004, pelas mãos dos bispos de tradição vétero-católica
-      dom Antônio José da Costa Raposo (de Portugal), dom Antonin Jelinek, bispo primaz da República Checa, e o
-      arcebispo francês Anthony Chadwick.
-    page: '101'
   - source: pasc-arcebispo-primaz
     quote: >-
       Neste mesmo ano ingressa na Igreja Vétero-Católica, onde foi sagrado Bispo no Brasil, em 2004, porém neste
@@ -84,48 +73,38 @@ ordinations:
       Neste mesmo ano ingressou em uma Igreja Vétero-Católica local, onde foi sagrado bispo no Brasil, em 2004.
       Porém, neste mesmo período teve a sua sagração contestada
     page: '101'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      foi novamente sagrado em Portugal, no dia 24 de outubro de 2004, pelas mãos dos bispos de tradição vétero-católica
+      dom Antônio José da Costa Raposo (de Portugal), dom Antonin Jelinek, bispo primaz da República Checa, e o
+      arcebispo francês Anthony Chadwick.
+    page: '101'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
+      Apostólica Episcopal Portuguesa.
+    page: '166'
   discrepancies:
   - field: date
-    value: '2004-10-24'
+    value: '2004-09-26'
     sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        foi novamente sagrado em Portugal, no dia 24 de outubro de 2004, pelas mãos dos bispos de tradição vétero-católica
-        dom Antônio José da Costa Raposo (de Portugal), dom Antonin Jelinek, bispo primaz da República Checa, e
-        o arcebispo francês Anthony Chadwick.
-      page: '101'
-    - source: pasc-arcebispo-primaz
-      quote: >-
-        Neste mesmo ano ingressa na Igreja Vétero-Católica, onde foi sagrado Bispo no Brasil, em 2004, porém neste
-        mesmo período tem sua sagração contestada e é novamente sagrado em Portugal pelas mãos dos bispos Vétero
-        Católicos Dom Antônio José da Costa Raposo (de Portugal) e Dom Antonin Jelinek, bispo primaz da República
-        Checa.
-    - source: pasc-arcebispo-primaz
-      quote: >-
-        Sagração Episcopal de Sua Eminência Dom Lucas Macieira em Portugal, pelas mãos do Senhor Arcebispo Primaz
-        de Portugal Patriarca Dom José Antonio da Costa Raposo Foi co-celebrante da sagração episcopal Dom Antonin
-        Jelinek Bispo Primaz da República Checa e também o Senhor Arcebispo da França bishop Anthony Chadwick.
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        foi novamente sagrado em Portugal, no dia 24 de outubro de 2004, pelas mãos dos bispos de tradição vétero-católica
-        dom Antônio José da Costa Raposo (de Portugal), dom Antonin Jelinek, bispo primaz da República Checa
     - source: cant-novas-igrejas-2024
       quote: >-
         A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
         Apostólica Episcopal Portuguesa
     - source: cant-novas-igrejas-2024
       quote: >-
-        Neste mesmo ano ingressou em uma Igreja Vétero-Católica local, onde foi sagrado bispo no Brasil, em 2004.
-        Porém, neste mesmo período teve a sua sagração contestada
-      page: '101'
+        A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
+        Apostólica Episcopal Portuguesa.
+      page: '166'
   notes: >-
-    Sagrantes não nomeados ('por bispos da Igreja Apostólica Episcopal Portuguesa'). O livro não distingue o sagrante
-    principal entre os três bispos de tradição vétero-católica. O site chama Jelinek e Chadwick ("Arcebispo da França")
-    de co-celebrantes da sagração. CONTESTADO: o mesmo livro (cap. Igreja Episcopal Latina do Brasil) diz "A sagração
-    episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja Apostólica
-    Episcopal Portuguesa". Houve também uma sagração anterior no Brasil (2004), contestada. A lista de sagrantes
-    no trecho continua (truncada). Versão do capítulo "Igreja Episcopal Latina do Brasil" do mesmo livro. Primeira
-    sagração, no Brasil, contestada; sagrantes não citados. Seguiu-se nova sagração em Portugal (24/10/2004).
+    O site chama Jelinek e Chadwick ("Arcebispo da França") de co-celebrantes da sagração. CONTESTADO: o mesmo livro
+    (cap. Igreja Episcopal Latina do Brasil) diz "A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro
+    de 2004 em Portugal, por bispos da Igreja Apostólica Episcopal Portuguesa". Houve também uma sagração anterior
+    no Brasil (2004), contestada. A lista de sagrantes no trecho continua (truncada). Versão do capítulo "Igreja
+    Episcopal Latina do Brasil" do mesmo livro. Primeira sagração, no Brasil, contestada; sagrantes não citados.
+    Seguiu-se nova sagração em Portugal (24/10/2004). O livro não distingue o sagrante principal entre os três bispos
+    de tradição vétero-católica. Sagrantes não nomeados ('por bispos da Igreja Apostólica Episcopal Portuguesa').
 affiliations:
 - jurisdiction: ivc-macieira
   role: clergy

@@ -70,24 +70,8 @@ relations:
   - aldo-quintao
   - glauco-soares-de-lima
   - roger-douglas-bird
-  status: contested
+  status: probable
   sources:
-  - source: costa2021
-    quote: >-
-      Após realizar uma assembleia, foi votada a modificação dos estatutos da Catedral, em 06 de abril de 2013.
-    page: '147'
-  - source: costa2021
-    quote: se desligaram formalmente da Igreja Episcopal Anglicana do Brasil.
-    page: '147'
-  - source: cant-novas-igrejas-2024
-    quote: Catedral Anglicana de São Paulo [Origem no templo da Saint Paul’s Church, 1873]
-    page: '171'
-  - source: cant-novas-igrejas-2024
-    quote: Filiada à IEAB [1972], instituída catedral da DASP [1995], até o cisma [2013]
-    page: '171'
-  - source: cant-novas-igrejas-2024
-    quote: Movimento Anglicano no Brasil (MAnB) [2013] e Diocese Anglicana do Brasil [2017]
-    page: '171'
   - source: costa2021
     quote: >-
       os bispos Roger Bird e Glauco Soares, junto com o reverendo Aldo Quintão – que atuava como deão da Catedral
@@ -98,16 +82,31 @@ relations:
       desligaram-se da diocese e da IEAB
   - source: glauco-testemunho-2013
     quote: O bispo diocesano (Roger Bird) resolveu anular a eleição, decisão com a qual eu concordei.
+  - source: costa2021
+    quote: >-
+      Após realizar uma assembleia, foi votada a modificação dos estatutos da Catedral, em 06 de abril de 2013.
   - source: cant-novas-igrejas-2024
     quote: >-
       em 13 de março de 2013 a Catedral Anglicana de São Paulo, junto com outras comunidades, organizou o Movimento
       Anglicano no Brasil (MAnB)
     page: '93'
+  - source: cant-novas-igrejas-2024
+    quote: Catedral Anglicana de São Paulo [Origem no templo da Saint Paul’s Church, 1873]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Filiada à IEAB [1972], instituída catedral da DASP [1995], até o cisma [2013]
+    page: '171'
+  - source: cant-novas-igrejas-2024
+    quote: Movimento Anglicano no Brasil (MAnB) [2013] e Diocese Anglicana do Brasil [2017]
+    page: '171'
+  - source: costa2021
+    quote: se desligaram formalmente da Igreja Episcopal Anglicana do Brasil.
+    page: '147'
   notes: >-
-    MAnB organizado em 13/3/2013; desligamento formal após assembleia de 6/4/2013. A Catedral Anglicana de São Paulo,
-    catedral da Diocese Anglicana de São Paulo (IEAB) desde 1995, saiu da IEAB no 'cisma [2013]'; o MAnB data de
-    2013. Data: 2012 (Wikipedia PT) ou 2013 (Costa; Glauco aderiu em 2013). Possível sobreposição com a frente IEAB;
-    incluído por ser jurisdição menor independente.
+    Data: 2012 (Wikipedia PT) ou 2013 (Costa; Glauco aderiu em 2013). Possível sobreposição com a frente IEAB; incluído
+    por ser jurisdição menor independente. A Catedral Anglicana de São Paulo, catedral da Diocese Anglicana de São
+    Paulo (IEAB) desde 1995, saiu da IEAB no 'cisma [2013]'; o MAnB data de 2013. MAnB organizado em 13/3/2013;
+    desligamento formal após assembleia de 6/4/2013.
   discrepancies:
   - field: date
     value: '2013-03-13'

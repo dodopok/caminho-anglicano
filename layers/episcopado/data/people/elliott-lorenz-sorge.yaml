@@ -113,17 +113,8 @@ affiliations:
   start: 1971-01
   end: '1977-06-19'
   end_reason: resignation
-  status: contested
+  status: probable
   sources:
-  - source: costa2021
-    quote: Após sua renúncia em 1977, voltou aos Estados Unidos, sendo eleito bispo de Easton
-    page: '86'
-  - source: kickhofel-1995
-    quote: >-
-      O bispo Sorge, que dirigiu a diocese de janeiro de 1971 a junho de 1977, tentou implantar um programa integrado,
-      envolvendo a maioria das paróquias e missões, mas não conseguiu neutralizar o descontentamento e forte oposição
-      da maioria do clero, provocando sua renúncia em 19 de junho de 1977.
-    page: '287'
   - source: costa2021
     quote: 1971-1977 – Elliott Lorenz Sorge
   - source: wp-pt-sorge
@@ -136,6 +127,17 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1971-1976 - Elliot Lorenz Sorge
     page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      O bispo Sorge, que dirigiu a diocese de janeiro de 1971 a junho de 1977, tentou implantar um programa integrado,
+      envolvendo a maioria das paróquias e missões, mas não conseguiu neutralizar o descontentamento e forte oposição
+      da maioria do clero, provocando sua renúncia em 19 de junho de 1977.
+    page: '287'
+  - source: costa2021
+    quote: Após sua renúncia em 1977, voltou aos Estados Unidos, sendo eleito bispo de Easton
+    page: '86'
+  notes: >-
+    Renunciou ao ser nomeado oficial no Centro da Igreja Episcopal (Nova York); depois bispo de Easton (TEC) 1983-1993.
   discrepancies:
   - field: end
     value: '1976'
@@ -143,8 +145,6 @@ affiliations:
     - source: kickhofel-1995
       quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1971-1976 - Elliot Lorenz Sorge
       page: '368'
-  notes: >-
-    Renunciou ao ser nomeado oficial no Centro da Igreja Episcopal (Nova York); depois bispo de Easton (TEC) 1983-1993.
 - jurisdiction: tec
   role: diocesan_bishop
   diocese: diocese-de-easton

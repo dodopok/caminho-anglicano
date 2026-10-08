@@ -82,11 +82,8 @@ affiliations:
   role: diocesan_bishop
   diocese: ieab-dab
   start: 2003-09
-  status: contested
+  status: confirmed
   sources:
-  - source: costa2021
-    quote: Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília
-    page: '218'
   - source: wp-pt-dioc-brasilia
     quote: Maurício José Araújo de Andrade - setembro de 2003 até o presente.
   - source: ieab-dioceses
@@ -98,7 +95,9 @@ affiliations:
       Em 2003, o reverendo Maurício José Araújo de Andrade 103, que tinha servido como Secretário-Geral da Igreja,
       de 1994 até então, foi eleito o novo bispo da
     page: '106'
-  notes: Bispo diocesano de Brasília em 2004.
+  - source: costa2021
+    quote: Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília
+    page: '218'
   discrepancies:
   - field: start
     value: '2003-08-31'
@@ -108,6 +107,7 @@ affiliations:
         Em 2003, o reverendo Maurício José Araújo de Andrade 103, que tinha servido como Secretário-Geral da Igreja,
         de 1994 até então, foi eleito o novo bispo da
       page: '106'
+  notes: Bispo diocesano de Brasília em 2004.
 - jurisdiction: ieab
   role: other
   role_description: supervisor episcopal especial
