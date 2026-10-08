@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ian-meldrum
+name: Ian Meldrum
+biography: Missionário da SAMS, candidato a bispo do Recife em 1997 (retirou a candidatura).
+sources:
+- source: costa2021
+  quote: Ian Meldrum, missionário da South American Mission Society (SAMS)
+  page: '186'
+events:
+- type: other
+  date: '1997-06-28'
+  description: >-
+    Eleição de Robinson Cavalcanti como bispo coadjutor da Diocese Anglicana do Recife no Concílio Extraordinário
+    de Vera Cruz (Ilha de Itaparica, BA), após sete escrutínios; concorreram Maurício Andrade e Ian Meldrum (que
+    retirou a candidatura).
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O Concílio Extraordinário da Diocese Anglicana do Recife aconteceu em 28 de junho de 1997, na cidade de Vera
+      Cruz, na Ilha de Itaparica (BA)
+    page: '186'
+  - source: costa2021
+    quote: >-
+      A disputa foi resolvida com o voto de um delegado de Belém do Pará, o que garantiu a eleição de Robinson Cavalcanti.
+    page: '186'

@@ -17,6 +17,9 @@ birth:
   sources:
   - source: costa2021
     quote: João Câncio Peixoto Filho nasceu em Recife, em 17 de maio de 1961.
+  - source: costa2021
+    quote: Nascido em 17 de maio de 1961, na cidade do Recife
+    page: '243'
 wikidata: Q47537839
 biography: Bispo da Diocese Anglicana do Recife (2013-).
 sources:
@@ -34,9 +37,12 @@ ordinations:
       Anglicano de Estudos Teológicos (SAET).
   - source: dar-2026-peixoto-traj
     quote: até chegar à ordenação como diácono, em 2003, e posteriormente como presbítero.
+  - source: costa2021
+    quote: No ano de 2003, João Peixoto foi ordenado ao diaconato e, em 2005, ao presbiterato.
+    page: '243'
   notes: >-
     Diocese do Recife (IEAB), então sob o bispo Robinson Cavalcanti. Ordenante não informado. | Segunda fonte (mesmo
-    publicador) para o diaconato de 2003.
+    publicador) para o diaconato de 2003. Diocese Anglicana do Recife; ordenante não informado.
 - order: presbyterate
   date: '2005'
   jurisdiction: ieab
@@ -44,12 +50,16 @@ ordinations:
   sources:
   - source: dar-2023-peixoto10
     quote: Ordenado ao diaconato no ano de 2003 e ao presbiterato em 2005
+  - source: costa2021
+    quote: No ano de 2003, João Peixoto foi ordenado ao diaconato e, em 2005, ao presbiterato.
+    page: '243'
   notes: >-
     Ano da separação da Diocese do Recife; ordenante não informado (verificar se foi antes ou depois da divisão
-    de 2005).
+    de 2005). Diocese Anglicana do Recife (IEAB, já que permaneceu na IEAB na crise); ordenante não informado (Robinson
+    foi suspenso em fev/2005 e Filadelfo era a Autoridade Eclesiástica).
 - order: episcopate
   date: '2013-12-14'
-  place: Catedral da Santissima Trindade, Recife (bairro do Espinheiro)
+  place: Catedral da Santíssima Trindade (Rua Alfredo de Medeiros, Espinheiro), Recife
   jurisdiction: ieab
   office: diocesan
   principal_consecrator: francisco-de-assis-da-silva
@@ -58,7 +68,7 @@ ordinations:
   - mauricio-andrade
   - saulo-barros
   - sebastiao-gameleira
-  status: contested
+  status: confirmed
   sources:
   - source: costa2021
     quote: >-
@@ -80,22 +90,51 @@ ordinations:
       no bairro do Espinheiro. Estiveram presentes o Primaz da Igreja Episcopal Anglicana do Brasil, Dom Francisco
       de Assis da Silva, que presidiu a liturgia. Os demais co-sagrantes foram os bispos Sebastião Gameleira, Maurício
       Andrade, Saulo Barros e Filadelfo Oliveira.
-  discrepancies:
-  - field: place
-    value: Catedral Anglicana da Santíssima Trindade, Espinheiro, Recife (PE)
-    sources:
-    - source: dar-2023-peixoto10
-      quote: >-
-        A cerimônia de sagração aconteceu no dia 14 de dezembro de 2013, na Catedral Anglicana da Santíssima Trindade,
-        no bairro do Espinheiro. Estiveram presentes o Primaz da Igreja Episcopal Anglicana do Brasil, Dom Francisco
-        de Assis da Silva, que presidiu a liturgia. Os demais co-sagrantes foram os bispos Sebastião Gameleira,
-        Maurício Andrade, Saulo Barros e Filadelfo Oliveira.
+  - source: costa2021
+    quote: >-
+      A cerimônia de sagração aconteceu no dia 14 de dezembro de 2013, na Catedral da Santíssima Trindade, no bairro
+      do Espinheiro.
+    page: '243'
+  - source: costa2021
+    quote: >-
+      Primaz da Igreja Anglicana no Brasil, dom Francisco de Assis da Silva, que presidiu a liturgia. Os demais
+      co-sagrantes foram os bispos Sebastião Gameleira, Maurício Andrade, Saulo Barros e Filadelfo Oliveira.
+    page: '243'
   notes: >-
     Eleito em 16/11/2013 no 32o Sinodo Geral (Rio de Janeiro). O Estandarte (jan/2017) diz que foi eleito "bispo
     coadjutor do Recife"; Costa e Wikipedia dizem bispo diocesano. Bispo diocesano da Diocese Anglicana do Recife
     (IEAB). Co-sagrantes na forma curta dada pela fonte (exceto Maurício Andrade, cujo nome completo consta da página
-    de dioceses da IEAB); nomes completos a confirmar.
+    de dioceses da IEAB); nomes completos a confirmar. 5º bispo diocesano da Diocese Anglicana do Recife (IEAB),
+    eleito no 32º Sínodo Geral (16/11/2013). A tese chama Francisco de Assis da Silva de 'Primaz da Igreja Anglicana
+    no Brasil' (sic, é o Primaz da IEAB) e diz que ele presidiu; 'os demais co-sagrantes' sugere que ele também
+    é contado como sagrante. Primeira sagração feita numa catedral da diocese.
 affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  start: 1983-03
+  end: '2013-12-14'
+  status: confirmed
+  sources:
+  - source: ieab-2004-decreto-recife
+    quote: 'Considerando a solicitação dos clérigos e clérigas a seguir relacionados:'
+  - source: ieab-2004-decreto-recife
+    quote: Rev. João C.
+  - source: costa2021
+    quote: >-
+      João Câncio ingressou na IEAB em março de 1983, através de um Encontro de Jovens com Cristo da Catedral da
+      Santíssima Trindade.
+    page: '243'
+  - source: costa2021
+    quote: >-
+      Dentre essas pessoas que permaneceram na IEAB, se encontravam os reverendos Sérgio Andrade e João Câncio Peixoto.
+    page: '203'
+  notes: >-
+    Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
+    por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. Futuro bispo diocesano
+    do Recife (2013) Leigo desde 1983; diácono 2003, presbítero 2005. Ficou na IEAB em 2002 (não seguiu Paulo Garcia)
+    e em 2004-2005 (assinou 'Para além das trincheiras' e 'Não sairemos'). Reitor do SAET por sete anos no episcopado
+    de Sebastião. Fim = sagração.
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dar
@@ -110,19 +149,18 @@ affiliations:
     quote: >-
       nos alegramos com toda a Igreja pelos 10 anos de episcopado do Bispo João Câncio Peixoto Filho, à frente da
       Diocese Anglicana do Recife.
-- jurisdiction: ieab
-  role: clergy
-  diocese: ieab-dar
-  status: confirmed
-  sources:
-  - source: ieab-2004-decreto-recife
-    quote: 'Considerando a solicitação dos clérigos e clérigas a seguir relacionados:'
-  - source: ieab-2004-decreto-recife
-    quote: Rev. João C.
+  - source: costa2021
+    quote: >-
+      Em 16 de novembro, durante o 32º Sínodo Geral que ocorreu na cidade do Rio de Janeiro, João Peixoto foi eleito
+      o novo bispo da Diocese Anglicana do Recife.
+    page: '243'
+  - source: costa2021
+    quote: >-
+      Já a Comunhão Anglicana continua sendo representada no Nordeste pela Diocese Anglicana do Recife, liderada
+      pelo bispo João Câncio Peixoto Filho.
+    page: '266'
   notes: >-
-    Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
-    por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. Futuro bispo diocesano
-    do Recife (2013)
+    5º diocesano; escolhido por unanimidade no Concílio de abril de 2013 e eleito no Sínodo Geral em 16/11/2013.
 - jurisdiction: ieab-dar
   role: diocesan_bishop
   status: probable
@@ -190,3 +228,67 @@ events:
       “Recebemos uma Diocese fragilizada, sem patrimônio, com poucos clérigos e em crise financeira. Foi um período
       muito difícil”, afirma. A partir daí, iniciou-se um processo de reconstrução institucional que envolveu batalhas
       judiciais
+- type: other
+  date: '2002-10-13'
+  description: >-
+    Primeira celebração do grupo remanescente fiel à IEAB após a saída de Paulo Garcia, na Igreja do Bom Samaritano
+    (Boa Viagem).
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Após o rompimento, a primeira celebração do grupo remanescente ocorreu no dia 13 de outubro de 2002, às 17h,
+      na Igreja em Boa Viagem
+    page: '203'
+- type: other
+  date: '2004-09-01'
+  description: >-
+    Documento 'Não sairemos', assinado pelo bispo sufragâneo Filadelfo Oliveira e clérigos e leigos da Diocese Anglicana
+    do Recife, reafirmando o vínculo com a IEAB independentemente das decisões do diocesano.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 1º de setembro de 2004, foi publicado o texto intitulado Não sairemos, o primeiro documento que enfrentou
+      Robinson quando este sinalizou que romperia com a Província, assinado pelo bispo sufragâneo, Filadelfo Oliveira,
+      e vários outros clérigos e leigos da Diocese
+    page: '217'
+  - source: costa2021
+    quote: >-
+      Assinaram este documento: Dom Filadelfo Oliveira Neto, ose (Bispo Sufragâneo da DAR); Revmo. Sérgio L. Andrade
+      (Deão da Catedral Anglicana da SS. Trindade)
+    page: '217'
+- type: other
+  date: '2004-07-06'
+  description: >-
+    Documento 'Para além das trincheiras' (06/07/2004), assinado por doze clérigos e leigos moderados da Diocese
+    Anglicana do Recife, pedindo reconciliação; tomado por Robinson como ataque pessoal.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: em 06 de julho de 2004 foi publicado o texto Para além das trincheiras
+    page: '215'
+  - source: costa2021
+    quote: >-
+      Assinaram este documento: Rev. Gustavo Gilson S. de Oliveira, ose; Rev. Fábio S. Vasconcelos; Rev. Elias Leôncio
+      de B. Filho, ose; Rev. João Câncio Peixoto Filho; Rev. Manoel S. Moraes de Almeida, ose; Rev. Sérgio F. Lomeu
+      de Andrade
+    page: '216'
+- type: other
+  date: '2016'
+  description: >-
+    Devolução à IEAB (Diocese Anglicana do Recife) de cinco templos ocupados pelo grupo de Robinson: Semeador e
+    Emanuel (Olinda), Ressurreição (João Pessoa), Redentor (Várzea, Recife) e Bom Samaritano (Boa Viagem, Recife);
+    reintegração concretizada em 2016.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      A reintegração de posse dos templos foi concretizada somente em 2016, após uma longa batalha judicial para
+      o cumprimento da sentença.
+    page: '244'
+  - source: costa2021
+    quote: >-
+      os cinco templos devolvidos foram o Semeador e Emanuel (em Olinda), Ressurreição (em João Pessoa) e, na cidade
+      do Recife, o Redentor (no bairro da Várzea), e o mais importante deles, o Bom Samaritano (em Boa Viagem).
+    page: '245'

@@ -20,8 +20,8 @@ ordinations:
 - order: diaconate
   date: '2015-12-04'
   place: Sínodo da Diocese do Recife (Recife/Jaboatão dos Guararapes-PE)
-  jurisdiction: diocese-anglicana-recife
-  status: contested
+  jurisdiction: iacs
+  status: probable
   sources:
   - source: reb-calendario-2026
     quote: 04/12/2015 -BISPO ERIC (ORDENAÇÃO)
@@ -37,25 +37,6 @@ ordinations:
       on one of the four Deacons. they also ordained three priests and licensed a number of lay ministers.
   - source: aac-2015-recife
     quote: participated in the Ordination, laying hands on one of the four Deacons
-  discrepancies:
-  - field: place
-    value: Recife/Jaboatão dos Guararapes (Sínodo da Diocese do Recife)
-    sources:
-    - source: aac-2015-recife
-      quote: One of the new Deacons is Eric. He is a person of many surprises.
-    - source: aac-2015-recife
-      quote: The (just about to be) Rev. Eric rodrigues
-    - source: aac-2015-recife
-      quote: participated in the Ordination, laying hands on one of the four Deacons
-  - field: jurisdiction
-    value: iacs
-    sources:
-    - source: aac-2015-recife
-      quote: One of the new Deacons is Eric. He is a person of many surprises.
-    - source: aac-2015-recife
-      quote: The (just about to be) Rev. Eric rodrigues
-    - source: aac-2015-recife
-      quote: participated in the Ordination, laying hands on one of the four Deacons
   notes: >-
     O calendário rotula a data como 'Ordenação Episcopal' num trecho e só 'Ordenação' noutro; a sagração foi em
     08/05/2023. A data bate com o diaconato de dez/2015 registrado por outra fonte. Ordenação na sexta-feira de

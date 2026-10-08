@@ -137,6 +137,9 @@ affiliations:
   end_reason: resignation
   status: contested
   sources:
+  - source: costa2021
+    quote: para substituir o primeiro ordinário, Luiz Osório Pires Prado
+    page: '240'
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Anglicana de Pelotas … 1988 - Luiz Osório Pires Prado
     page: '368'
@@ -148,6 +151,9 @@ affiliations:
     quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
   - source: costa2021
     quote: 1988-2000 – Luiz Osório Pires Prado
+  notes: >-
+    Primeiro ordinário de Pelotas, substituído por Sebastião Gameleira em 2000. Fim em 1999 (Wikipedia/dapsul) ou
+    2000 (Costa).
   discrepancies:
   - field: start
     value: '1989-03-12'
@@ -170,7 +176,6 @@ affiliations:
       quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
     - source: costa2021
       quote: 1988-2000 – Luiz Osório Pires Prado
-  notes: Fim em 1999 (Wikipedia/dapsul) ou 2000 (Costa).
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dm

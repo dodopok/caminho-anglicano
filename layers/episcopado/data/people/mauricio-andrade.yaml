@@ -76,10 +76,28 @@ affiliations:
     quote: Bispo Diocesano – Revmo. Maurício José Araújo de Andrade
   - source: dab-bispo-mauricio
     quote: À frente da Diocese Anglicana de Brasília desde 2003
+  - source: costa2021
+    quote: Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília
+    page: '218'
+  notes: Bispo diocesano de Brasília em 2004.
+- jurisdiction: ieab
+  role: other
+  role_description: supervisor episcopal especial
+  diocese: ieab-dar
+  start: '2004-09-16'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília para desempenhar a função de supervisor
+      episcopal especial para o clero e as comunidades em dissenso
+    page: '218'
+  notes: >-
+    Decreto da Câmara Episcopal (16/09/2004), a pedido de 13 clérigos. Em março de 2005 instituído 'bispo interventor'.
 - jurisdiction: ieab
   role: primate
   start: 2006-07
-  end: 2013-11
+  end: '2013-11-16'
   status: confirmed
   sources:
   - source: dab-bispo-mauricio
@@ -99,7 +117,10 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: assim como o primaz da IEAB à época, Maurício Andrade
     page: '30'
-  notes: Primaz em fevereiro de 2012.
+  - source: costa2021
+    quote: substituindo o bispo Maurício Andrade, que estava no cargo desde 2006.
+    page: '243'
+  notes: Primaz em fevereiro de 2012. Primaz da IEAB 2006-2013; substituído por Francisco de Assis da Silva.
 - jurisdiction: ieab
   role: other
   role_description: bispo_encarregado
@@ -204,3 +225,49 @@ events:
     quote: >-
       the Suffragan Bishop Dom Filadelfo Oliveira, according to his canonical prerogatives, continues to exert his
       pastoral ministry to the communities of the Anglican Diocese of Recife.
+- type: other
+  date: '1997-06-28'
+  description: >-
+    Eleição de Robinson Cavalcanti como bispo coadjutor da Diocese Anglicana do Recife no Concílio Extraordinário
+    de Vera Cruz (Ilha de Itaparica, BA), após sete escrutínios; concorreram Maurício Andrade e Ian Meldrum (que
+    retirou a candidatura).
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O Concílio Extraordinário da Diocese Anglicana do Recife aconteceu em 28 de junho de 1997, na cidade de Vera
+      Cruz, na Ilha de Itaparica (BA)
+    page: '186'
+  - source: costa2021
+    quote: >-
+      A disputa foi resolvida com o voto de um delegado de Belém do Pará, o que garantiu a eleição de Robinson Cavalcanti.
+    page: '186'
+- type: other
+  date: '2004-09-16'
+  description: >-
+    A Câmara Episcopal da IEAB, na pessoa do Primaz, decretou supervisão episcopal especial para comunidades e clérigos
+    da Diocese Anglicana do Recife em dissenso com o bispo Robinson, nomeando Maurício Andrade (bispo de Brasília)
+    supervisor, sem prejuízo do sufragâneo Filadelfo Oliveira.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Diante de outras situações semelhantes, em 16 de setembro de 2004, mediante solicitação de 13 clérigos e clérigas,
+      a Câmara Episcopal, na pessoa do Primaz, decretou uma supervisão episcopal para as comunidades e parte do
+      clero da DAR.
+    page: '218'
+- type: other
+  date: '2005-02-22'
+  description: >-
+    Resolução 002/2005 nomeou Filadelfo Oliveira Autoridade Eclesiástica da Diocese Anglicana do Recife; em março,
+    Maurício Andrade foi instituído 'bispo interventor'.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Ato contínuo, a Resolução 002/2005, de 22 de fevereiro
+    page: '223'
+  - source: costa2021
+    quote: >-
+      nomeou o bispo Filadelfo Oliveira como Autoridade Eclesiástica da Diocese Anglicana do Recife. No mês seguinte,
+      o bispo Maurício Andrade, foi instituído como “bispo interventor”
+    page: '223'

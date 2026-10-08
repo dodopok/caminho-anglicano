@@ -164,6 +164,9 @@ affiliations:
   status: contested
   sources:
   - source: costa2021
+    quote: pelo Primaz, Glauco Soares de Lima
+    page: '186'
+  - source: costa2021
     quote: >-
       Em 1993 o então bispo da Diocese Anglicana de São Paulo, Glauco Soares de Lima, foi eleito o novo Primaz,
       permanecendo no cargo por dez anos.
@@ -179,8 +182,8 @@ affiliations:
       de Lima
     page: '367'
   notes: >-
-    Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94). O livro dá só o início de cada primado; o fim é
-    o início do primado seguinte.
+    Primaz em outubro de 1997. Também foi um dos interinos à frente da DAR (2004-2006). Anexo E de Costa da 1994-2003
+    (com Gastal interino 1993-94). O livro dá só o início de cada primado; o fim é o início do primado seguinte.
   discrepancies:
   - field: start
     value: '1994'
@@ -200,6 +203,20 @@ affiliations:
   sources:
   - source: wp-pt-dioc-brasilia
     quote: Glauco Soares de Lima (Interino) - janeiro a maio de 2003;
+- jurisdiction: ieab
+  role: other
+  role_description: bispo interino
+  diocese: ieab-dar
+  start: '2004'
+  end: '2006'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      a DAR acabou retornando ao status de Diocese Missionária, sob a autoridade do Primaz, representado interinamente
+      pelos bispos Glauco Soares, Maurício Andrade e, depois, Filadelfo Oliveira. Estes postos foram ocupados entre
+      os anos de 2004 e 2006
+    page: '238'
 - jurisdiction: manb
   role: founder
   start: '2013'
@@ -216,7 +233,7 @@ affiliations:
   end_reason: death
   status: probable
   sources:
-  - source: costa-2021-tese
+  - source: costa2021
     quote: O bispo Glauco Soares de Lima faleceu no dia 27 de dezembro de 2017 na cidade de São Paulo
   - source: cant-novas-igrejas-2024
     quote: >-

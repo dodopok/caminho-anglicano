@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: senomar-teixeira-junior
+name: Senomar Teixeira Júnior
+aliases:
+- Senomar Teixeira
+biography: Seminarista em 2004, depois reverendo e advogado da Diocese Anglicana do Recife (IEAB).
+sources:
+- source: costa2021
+  quote: advogado da Diocese, Senomar Teixeira Júnior, detalhando os acontecimentos
+  page: '221'
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: costa2021
+    quote: um texto, intitulado A Verdade Canônica na DAR foi publicado pelo reverendo e
+    page: '220'
+  - source: costa2021
+    quote: >-
+      advogado da Diocese, Senomar Teixeira Júnior, detalhando os acontecimentos e as medidas legais tomadas pela
+      Câmara Episcopal.
+    page: '221'
+  - source: costa2021
+    quote: >-
+      Este GT era composto pelos reverendos Gustavo Oliveira, Rodrigo Espiuca, Rose Cunha, Silvio Freitas, e Senomar
+      Teixeira
+    page: '238'
+  notes: >-
+    Seminarista em 2004 (signatário); reverendo e advogado da diocese (texto 'A Verdade Canônica na DAR').

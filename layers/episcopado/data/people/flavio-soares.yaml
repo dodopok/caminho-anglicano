@@ -64,7 +64,7 @@ ordinations:
 - order: episcopate
   date: '2012-03-17'
   place: Paróquia Anglicana Espírito Santo (PAES), Piedade, Jaboatão dos Guararapes-PE
-  jurisdiction: diocese-anglicana-recife
+  jurisdiction: iacs
   office: auxiliary
   principal_consecrator: peter-beckwith
   co_consecrators:
@@ -116,13 +116,6 @@ ordinations:
       quote: >-
         que, em 2012 foi sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson Cavalcanti,
         sem sucessores diretos. Embora não existam registros públicos detalhando os consagrantes
-  - field: jurisdiction
-    value: iacs
-    sources:
-    - source: iab-poster-linhagem-uchoa
-      quote: >-
-        que, em 2012 foi sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson Cavalcanti,
-        sem sucessores diretos. Embora não existam registros públicos detalhando os consagrantes
   notes: >-
     Eleito em 04/06/2011, ainda no episcopado de Robinson Cavalcanti (a Living Church diz que em junho [de 2011]
     Cavalcanti pediu a eleição de um coadjutor, planejando aposentar-se em 2014); sagrado 3 semanas após a morte
@@ -155,15 +148,28 @@ affiliations:
   role: bishop
   start: '2012-03-17'
   end: '2018'
-  status: confirmed
+  status: contested
   sources:
   - source: dar-sagracao-2012-quadro
     quote: DOM FLÁVIO ADAIR BISPO SUFRAGÂNEO 1ª REGIÃO ECLESIÁSTICA
   - source: adr-bispos-2017
     quote: Bispo Sufragâneo Revmo. Flávio Adair Torres Soares
+  - source: costa2021
+    quote: >-
+      em 04 de junho de 2011, o Concílio elegeu os reverendos Flávio Adair e Evilásio Tenório como bispos sufragâneos.
+    page: '230'
   notes: >-
     Local: 1ª Região Eclesiástica. Bispo sufragâneo até a criação da IAB (2018), quando passa à Região Missionária
-    (vínculo já registrado).
+    (vínculo já registrado). Tese grafa 'Flávio Adair' (Flávio Adair Torres Soares na base). Data de sagração não
+    informada.
+  discrepancies:
+  - field: start
+    value: '2011'
+    sources:
+    - source: costa2021
+      quote: >-
+        em 04 de junho de 2011, o Concílio elegeu os reverendos Flávio Adair e Evilásio Tenório como bispos sufragâneos.
+      page: '230'
 - jurisdiction: diocese-anglicana-recife
   role: bishop
   diocese: ieab-dar
@@ -293,3 +299,15 @@ events:
     quote: >-
       Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
       bispo diocesano, até a eleição do novo líder da Igreja Anglicana
+- type: other
+  date: '2011-06-04'
+  description: >-
+    O Concílio da diocese dissidente (Diocese do Recife, então sob o Cone Sul) elegeu os reverendos Flávio Adair
+    e Evilásio Tenório como bispos sufragâneos.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Para ajudar na condução da Diocese, em 04 de junho de 2011, o Concílio elegeu os reverendos Flávio Adair e
+      Evilásio Tenório como bispos sufragâneos.
+    page: '230'

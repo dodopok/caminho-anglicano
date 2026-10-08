@@ -34,6 +34,11 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: Igreja Anglicana Ortodoxa no Brasil (IAOB) [2014]
     page: '172'
+  - source: costa2021
+    quote: >-
+      Em 25 de novembro de 2017, em cerimônia realizada na Igreja Evangélica Congregacional Pernambucana, eles ingressaram
+      na Igreja Anglicana Ortodoxa no Brasil
+    page: '259'
   notes: >-
     O livro diz que 'alguns deles' vieram da Diocese Anglicana do Recife, ordenados por dom Robinson Cavalcanti,
     sem dizer quais. Local: Comunidade Anglicana da Paz. Sigla escolhida pela coincidência do nome 'Igreja Anglicana
@@ -42,13 +47,24 @@ affiliations:
   role: clergy
   end: '2014'
   end_reason: left
-  status: probable
+  status: contested
   sources:
   - source: cant-novas-igrejas-2024
     quote: >-
       Na primeira delas, em 2014, um grupo de clérigos se desligou da denominação, por não concordar com a forma
       de condução da Diocese pelo novo bispo. Entre eles, estava o reverendo Daniel Barbosa
     page: '34'
+  - source: costa2021
+    quote: Entre eles, estava o reverendo Daniel Barbosa, que foi secretário de Robinson por muitos anos.
+    page: '259'
+  discrepancies:
+  - field: end
+    value: '2017-11-25'
+    sources:
+    - source: costa2021
+      quote: Entre eles, estava o reverendo Daniel Barbosa, que foi secretário de Robinson por muitos anos.
+      page: '259'
+  notes: Saiu da igreja de Miguel Uchôa (então em transição para IAB) para a IAOB.
 events:
 - type: other
   date: '2017-11-25'
@@ -63,3 +79,36 @@ events:
       eles ingressaram na Igreja Anglicana Ortodoxa no Brasil e suas ordens foram reconhecidas pelo então Bispo
       Primaz da IAOB, Dom Adolfo Batista Teodoro Júnior.
     page: '34'
+- type: other
+  date: '1998'
+  description: >-
+    Filadelfo Oliveira e Robinson Cavalcanti foram membros fundadores da Ordem Evangélica de Santo Estêvão Mártir
+    (OSE), fundada em 1998.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Teve como membros fundadores o bispo Robinson Cavalcanti e o então reverendo Filadelfo Oliveira, junto com
+      outros clérigos e clérigas, como Daniel Barbosa, Edson Pimentel, Tibério Marques, Gorete Marques, Manoel Moraes,
+      Ivaldo Sales, Estevão Menezes, Gustavo Gilson Oliveira
+    page: '211'
+  - source: costa2021
+    quote: Fundada em 1998, a OSE
+    page: '211'
+- type: other
+  date: '2017-11-25'
+  description: >-
+    Um grupo de clérigos (entre eles Daniel Barbosa, ex-secretário de Robinson) deixou a Igreja de Miguel Uchôa
+    e ingressou na Igreja Anglicana Ortodoxa no Brasil, tendo as ordens reconhecidas pelo Primaz Adolfo Batista
+    Teodoro Júnior, em cerimônia na Igreja Evangélica Congregacional Pernambucana.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Entre eles, estava o reverendo Daniel Barbosa, que foi secretário de Robinson por muitos anos. Em 25 de novembro
+      de 2017, em cerimônia realizada na Igreja Evangélica Congregacional Pernambucana, eles ingressaram na Igreja
+      Anglicana Ortodoxa no Brasil
+    page: '259'
+  - source: costa2021
+    quote: e suas ordens foram reconhecidas pelo Bispo Primaz da IAOB, Dom Adolfo Batista Teodoro Júnior.
+    page: '259'

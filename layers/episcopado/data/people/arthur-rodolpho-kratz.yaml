@@ -60,6 +60,13 @@ death:
   - source: kickhofel-1995
     quote: Foi então eleito Dom Arthur Rodolpho Kratz que exerceu o cargo até 1984, quando faleceu.
     page: '260'
+  discrepancies:
+  - field: date
+    value: c.1984
+    sources:
+    - source: costa2021
+      quote: do Primaz, Arthur Rodolpho Kratz, ele exerceu as funções da Primazia da Igreja como interino.
+      page: '178'
 biography: >-
   Nascido em Pelotas (1922), ordenado presbítero em 1948; bispo do Sul do Brasil em 1971 e segundo primaz (1972).
 sources:
@@ -305,3 +312,11 @@ events:
   - source: kickhofel-1995
     quote: Foi então eleito Dom Arthur Rodolpho Kratz que exerceu o cargo até 1984, quando faleceu.
     page: '260'
+- type: death
+  date: c.1984
+  description: Morte do Primaz da IEAB Arthur Rodolpho Kratz; Edmund Sherrill assumiu interinamente a Primazia.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: do Primaz, Arthur Rodolpho Kratz, ele exerceu as funções da Primazia da Igreja como interino.
+    page: '178'

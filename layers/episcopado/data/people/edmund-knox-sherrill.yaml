@@ -9,6 +9,7 @@ aliases:
 - Edmund Sherrill
 - Ned Sherrill
 - Rt. Rev. Edmund K. Sherrill
+- bispo Sherrill
 birth:
   date: '1925-05-23'
   sources:
@@ -37,6 +38,9 @@ birth:
     quote: >-
       He was ordained a bishop on 25 January 1959 in [[Rio de Janeiro]], with his father, retired [[Presiding Bishop]]
       [[Henry Knox Sherrill]], serving as chief consecrator.
+  - source: costa2021
+    quote: Edmund Knox Sherrill nasceu em Boston em 23 de maio de 1925.
+    page: '170'
 death:
   date: '2015-10-02'
   sources:
@@ -95,6 +99,10 @@ ordinations:
     quote: >-
       He received the B.D. degree from Episcopal Theological School] in 1951, and was ordained deacon and priest
       later in that year by his father.
+  - source: costa2021
+    quote: Estudou teologia no Seminário de Cambridge e foi ordenado ao diaconato e o presbiterado em 1951.
+    page: '170'
+  notes: Jurisdição não informada (provavelmente Igreja Episcopal dos EUA). Citação de KICKHÖFEL, 1995.
 - order: presbyterate
   date: '1951'
   jurisdiction: tec
@@ -103,9 +111,13 @@ ordinations:
   sources:
   - source: lc-1958-10-26
     quote: and was ordained deacon and priest later in that year by his father.
+  - source: costa2021
+    quote: Estudou teologia no Seminário de Cambridge e foi ordenado ao diaconato e o presbiterado em 1951.
+    page: '170'
+  notes: Jurisdição não informada. Citação de KICKHÖFEL, 1995.
 - order: episcopate
   date: '1959-01-25'
-  place: Christ Church, Rio de Janeiro
+  place: Christ Church (Igreja de Cristo), Rio de Janeiro
   jurisdiction: tec
   office: missionary
   principal_consecrator: henry-knox-sherrill
@@ -116,10 +128,6 @@ ordinations:
   - plinio-lauer-simoes
   status: contested
   sources:
-  - source: iab-poster-linhagem-meira
-    quote: >-
-      Henry Knox Sherrill, Presiding Bishop dos EUA (1947-1958), teve papel decisivo ao consagrar missionários como
-      Louis Chester Melcher e, em 1959, seu próprio filho, Edmund Knox Sherrill, no Rio de Janeiro.
   - source: wit-1958-12-25
     quote: >-
       Bishop Sherrill, who retired on Novem- ber 15 as Presiding Bishop, will act as his son's consecrator.
@@ -159,57 +167,64 @@ ordinations:
       [[Plinio Lauer Simões|542]] | 1959 | [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|Central
       Brazil (Rio de Janeiro)]], [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|I Recife]]
       | <ref group="N" name="sherrill" />
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Henry Knox Sherrill, Presiding Bishop dos EUA (1947-1958), teve papel decisivo ao consagrar missionários como
+      Louis Chester Melcher e, em 1959, seu próprio filho, Edmund Knox Sherrill, no Rio de Janeiro.
+  - source: costa2021
+    quote: Foi sagrado bispo no Rio de Janeiro por seu
+    page: '170'
+  - source: costa2021
+    quote: >-
+      próprio pai, na Igreja de Cristo (Christ Church), tendo como co-sagrantes os bispos Daniel Ivor Evans, da
+      Argentina, e os brasileiros Plínio Lauer Simões, Athalício Theoro Pithan e Egmont Machado Krischke (KICKHÖFEL,
+      1995, p. 274-275).
+    page: '171'
+  - source: costa2021
+    quote: A Convenção Geral de 1958 elegeu o reverendo Edmund Knox Sherrill
+    page: '170'
   discrepancies:
   - field: jurisdiction
-    value: dmcb
+    value: ieab
     sources:
-    - source: wit-1958-12-25
+    - source: costa2021
+      quote: Foi sagrado bispo no Rio de Janeiro por seu
+      page: '170'
+    - source: costa2021
       quote: >-
-        Bishop Sherrill, who retired on Novem- ber 15 as Presiding Bishop, will act as his son's consecrator.
-    - source: wit-1958-12-25
+        próprio pai, na Igreja de Cristo (Christ Church), tendo como co-sagrantes os bispos Daniel Ivor Evans, da
+        Argentina, e os brasileiros Plínio Lauer Simões, Athalício Theoro Pithan e Egmont Machado Krischke (KICKHÖFEL,
+        1995, p. 274-275).
+      page: '171'
+    - source: costa2021
+      quote: A Convenção Geral de 1958 elegeu o reverendo Edmund Knox Sherrill
+      page: '170'
+  - field: office
+    value: diocesan
+    sources:
+    - source: costa2021
+      quote: Foi sagrado bispo no Rio de Janeiro por seu
+      page: '170'
+    - source: costa2021
       quote: >-
-        Other participating in the con- secration will be the bishops of Southern Brazil and Southwest- ern Brazil,
-        Egmont M. Krischke and Plinio L. Simoes as co-con- secrators and as presenting bishops.
-    - source: wp-en-esherrill
-      quote: >-
-        He was ordained a bishop on 25 January 1959 in Rio de Janeiro, with his father, retired Presiding Bishop
-        Henry Knox Sherrill, serving as chief consecrator.
-    - source: lc-1959-02-08
-      quote: >-
-        The Rev. Edmund Knox Sherrill was consecrated bishop of Central Brazil by the Most Rev. Henry Knox Sherrill,
-        his father and retired Pre- siding Bishop, on Sunday, January 25, in Rio de Janeiro.
-    - source: wp-en-histlist
-      quote: '[[Henry Knox Sherrill|372]] [[Egmont M. Kirschke|495]] [[Plinio Lauer Simões|542]]'
-    - source: ieab-sobre
-      quote: >-
-        o revmo. Edmund Knox Sherrill, em 1959. Ao primeiro, coube a Diocese Sul-Ocidental (já que dom Krischke
-        havia sido transferido para a Diocese Meridional com a aposentadoria de dom Pithan) e ao segundo, a Diocese
-        Central.
-    - source: kickhofel-1995
-      quote: >-
-        Foi sagrado bispo no Rio de Janeiro por seu próprio pai, na Igreja de Cristo (Christ Church), tendo como
-        co-sagrantes os bispos Daniel Ivor Evans, da Argentina, e os brasileiros Plínio Lauer Simões, Athalício
-        Theodoro Pithan e Egmont Machado Krischke.
-      page: '275'
-    - source: wp-en-esherrill
-      quote: >-
-        He was ordained a bishop on 25 January 1959 in [[Rio de Janeiro]], with his father, retired [[Presiding
-        Bishop]] [[Henry Knox Sherrill]], serving as chief consecrator.
-    - source: wp-hksherrill
-      quote: Edmund Knox Sherrill...was consecrated in 1959 by his father, Henry Knox Sherrill
-    - source: wp-lista-bispos-tec
-      quote: >-
-        | 560 | [[Edmund Sherrill]]<!--Edmund Knox "Ned" SHERRILL--> | [[Henry Knox Sherrill|372]] [[Egmont M. Kirschke|495]]
-        [[Plinio Lauer Simões|542]] | 1959 | [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|Central
-        Brazil (Rio de Janeiro)]], [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|I Recife]]
-        | <ref group="N" name="sherrill" />
+        próprio pai, na Igreja de Cristo (Christ Church), tendo como co-sagrantes os bispos Daniel Ivor Evans, da
+        Argentina, e os brasileiros Plínio Lauer Simões, Athalício Theoro Pithan e Egmont Machado Krischke (KICKHÖFEL,
+        1995, p. 274-275).
+      page: '171'
+    - source: costa2021
+      quote: A Convenção Geral de 1958 elegeu o reverendo Edmund Knox Sherrill
+      page: '170'
   notes: >-
     Christ Church do Rio era a capela anglicana inglesa (Botafogo). Presbíteros assistentes: Rev. Henry W. Sherrill
     e Rev. Franklin G. Sherrill (irmãos); pregador: Krischke; litanista: G. Vergara dos Santos. Pôster: "em 1959,
     seu próprio filho, Edmund Knox Sherrill, no Rio de Janeiro" — CONFIRMADO (sagrante, ano e local), mas só por
     Wikipédia, que cita Hawaiian Church Chronicle (mar. 1959) e J. B. Simpson, The Long Shadows of Lambeth X (1969),
     p. 301 — fontes não abertas por mim. Co-sagrantes (Krischke e Simões) apenas pela lista de sucessão. Em jan.
-    1959 H. K. Sherrill já era Presiding Bishop aposentado.
+    1959 H. K. Sherrill já era Presiding Bishop aposentado. Bispo da Diocese Central (Igreja Episcopal Brasileira,
+    hoje IEAB). A tese não dá a data da sagração; diz que foi eleito pela Convenção Geral de 1958 (da Igreja Episcopal
+    dos EUA) e que foi bispo diocesano no Rio de 1959 a 1976. 'Seu próprio pai' = Henry Knox Sherrill, bispo presidente
+    da Igreja Episcopal dos EUA. A tese cita KICKHÖFEL, 1995, p. 274-275. Nomes na tese: 'Athalício Theoro Pithan',
+    'Egmont Machado Krischke'.
 affiliations:
 - jurisdiction: dmcb
   role: diocesan_bishop
@@ -240,15 +255,34 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1959-1976 - Edmund Knox Sherrill
     page: '368'
-  notes: Costa Anexo D da 1956 (erro; sagrado em 1959).
+  - source: costa2021
+    quote: >-
+      Edmund Sherrill foi bispo diocesano, no Rio de Janeiro, de 1959 até 1976, quando assumiu a Diocese Setentrional.
+    page: '171'
+  notes: >-
+    Costa Anexo D da 1956 (erro; sagrado em 1959). Sucedeu Louis Chester Melcher; substituído no Rio por Agostinho
+    Guillon Sória.
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dar
-  start: '1975'
-  end: '1985'
-  end_reason: retirement
+  start: '1976'
+  end: '1986'
+  end_reason: resignation
   status: contested
   sources:
+  - source: costa2021
+    quote: >-
+      Edmund Knox Sherrill foi eleito bispo missionário para o Nordeste, sendo substituído, no Rio de Janeiro, por
+      Agostinho Guillon Sória.
+    page: '173'
+  - source: costa2021
+    quote: >-
+      No início do ano seguinte, o primeiro diocesano do Recife renunciou, mudando sua residência para o Rio de
+      Janeiro definitivamente.
+    page: '179'
+  - source: costa2021
+    quote: Quando o bispo Sherrill se aposentou em 1985
+    page: '178'
   - source: iab-poster-linhagem-meira
     quote: >-
       Edmund serviu no Distrito Missionário Central e, em 1975, tornou-se o primeiro bispo da recém-criada Diocese
@@ -265,7 +299,69 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1976-1985 - Edmund Knox Sherrill
     page: '368'
+  notes: >-
+    Local: depois Diocese Anglicana do Recife. 1º bispo da Diocese Setentrional (criada no Sínodo de 1975; 1º concílio
+    em junho de 1976). Renunciou no início de 1986 (ano seguinte a 1985); a citação de Kickhöfel diz que 'se aposentou
+    em 1985'. O livro diz que ele optou pela nova diocese e se mudou para Recife em 1977; aposentou-se em 1985 (p.
+    298). Datas divergem (1975/1976 a 1985/1986).
   discrepancies:
+  - field: start
+    value: '1975'
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Edmund serviu no Distrito Missionário Central e, em 1975, tornou-se o primeiro bispo da recém-criada Diocese
+        do Recife
+    - source: kickhofel-1995
+      quote: >-
+        com a diferença de que o bispo Sherrill que como diocesano tinha o direito de opção, optou pela nova diocese,
+        transferindo-se para Recife em 1977.
+      page: '296'
+    - source: costa2021
+      quote: 1976-1985 – Edmund Knox Sherrill
+    - source: ptwp-dar
+      quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1976-1985 - Edmund Knox Sherrill
+      page: '368'
+  - field: end
+    value: '1985'
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Edmund serviu no Distrito Missionário Central e, em 1975, tornou-se o primeiro bispo da recém-criada Diocese
+        do Recife
+    - source: kickhofel-1995
+      quote: >-
+        com a diferença de que o bispo Sherrill que como diocesano tinha o direito de opção, optou pela nova diocese,
+        transferindo-se para Recife em 1977.
+      page: '296'
+    - source: costa2021
+      quote: 1976-1985 – Edmund Knox Sherrill
+    - source: ptwp-dar
+      quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1976-1985 - Edmund Knox Sherrill
+      page: '368'
+  - field: end_reason
+    value: retirement
+    sources:
+    - source: iab-poster-linhagem-meira
+      quote: >-
+        Edmund serviu no Distrito Missionário Central e, em 1975, tornou-se o primeiro bispo da recém-criada Diocese
+        do Recife
+    - source: kickhofel-1995
+      quote: >-
+        com a diferença de que o bispo Sherrill que como diocesano tinha o direito de opção, optou pela nova diocese,
+        transferindo-se para Recife em 1977.
+      page: '296'
+    - source: costa2021
+      quote: 1976-1985 – Edmund Knox Sherrill
+    - source: ptwp-dar
+      quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1976-1985 - Edmund Knox Sherrill
+      page: '368'
   - field: start
     value: '1977'
     sources:
@@ -281,32 +377,16 @@ affiliations:
     - source: kickhofel-1995
       quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1976-1985 - Edmund Knox Sherrill
       page: '368'
-  - field: end
-    value: '1986'
-    sources:
-    - source: costa2021
-      quote: 1976-1985 – Edmund Knox Sherrill
-    - source: ptwp-dar
-      quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
-    - source: kickhofel-1995
-      quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1976-1985 - Edmund Knox Sherrill
-      page: '368'
-  - field: start
-    value: '1976'
-    sources:
-    - source: kickhofel-1995
-      quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1976-1985 - Edmund Knox Sherrill
-      page: '368'
-  notes: >-
-    O livro diz que ele optou pela nova diocese e se mudou para Recife em 1977; aposentou-se em 1985 (p. 298). Datas
-    divergem (1975/1976 a 1985/1986).
 - jurisdiction: ieab
   role: primate
-  start: '1984'
+  start: c.1984
   end: '1986'
   end_reason: retirement
   status: contested
   sources:
+  - source: costa2021
+    quote: do Primaz, Arthur Rodolpho Kratz, ele exerceu as funções da Primazia da Igreja como interino.
+    page: '178'
   - source: costa2021
     quote: 1984-1986 – Edmund Knox Sherrill (interino)
   - source: wp-pt-sherrill
@@ -330,9 +410,35 @@ affiliations:
       para um período de dois anos.
     page: '260'
   notes: >-
+    Primaz interino após a morte do Primaz Arthur Rodolpho Kratz; em 17/03/1985 é chamado 'primaz em exercício'.
     Primaz em exercicio/interino (bispo mais antigo). O livro dá só o início de cada primado; o fim é o início do
     primado seguinte. Primaz interino (bispo sênior). Primaz interino, como bispo sênior.
   discrepancies:
+  - field: start
+    value: '1984'
+    sources:
+    - source: costa2021
+      quote: 1984-1986 – Edmund Knox Sherrill (interino)
+    - source: wp-pt-sherrill
+      quote: >-
+        Em 1985, quando Sherrill era o primaz em exercício da IEAB (1984-1986), ele recebeu um coadjutor, Clovis
+        Erly Rodrigues, que o sucedeu no ano seguinte.
+    - source: ens-84185
+      quote: >-
+        The acting Primate of the Church of Brazil is the Rt. Rev. Edmond Sherrill, bishop of the Northern Diocese.
+    - source: cant-meninos-eu-vi-2004
+      quote: era, então, primaz em exercício, com a morte do Bispo Kratz
+    - source: kickhofel-1995
+      quote: >-
+        O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1984 - Edmund Knox
+        Sherrill (interino)
+      page: '367'
+    - source: kickhofel-1995
+      quote: >-
+        Coube a Dom Edmund Knox Sherrill como bispo senior ocupar o primado interinamente até sua aposentadoria
+        em dezembro de 1985. Foi substituído interinamente por Dom Olavo Ventura Luiz até o Sínodo de 1986, que
+        o elegeu para um período de dois anos.
+      page: '260'
   - field: end
     value: 1985-12
     sources:
@@ -387,3 +493,49 @@ events:
       no Brasil como missionário junto à comunidade americana e como coadjutor e depois como pároco da Igreja da
       Santíssima Trindade em São Paulo.
     page: '274'
+- type: other
+  date: c.1984
+  description: Morte do Primaz da IEAB Arthur Rodolpho Kratz; Edmund Sherrill assumiu interinamente a Primazia.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: do Primaz, Arthur Rodolpho Kratz, ele exerceu as funções da Primazia da Igreja como interino.
+    page: '178'
+- type: other
+  date: '1976-06-21'
+  description: >-
+    Robinson Cavalcanti, membro da Igreja Evangélica Luterana do Brasil desde 1962/1963, deixou a IELB e foi recebido
+    na Igreja Episcopal por Edmund Sherrill.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi recebido na Catedral da Santíssima Trindade pelas mãos do bispo Sherrill, em 21 de junho de 1976.
+    page: '187'
+  - source: costa2021
+    quote: >-
+      Anos depois, deixou a IELB, devido ao fato de a Igreja brasileira ainda estar bastante enraizada na cultura
+      germânica e não possuir um governo episcopal
+    page: '187'
+- type: other
+  date: '1976'
+  description: >-
+    Criação da Diocese Setentrional (missionária) da Igreja Episcopal do Brasil pelo desmembramento da Diocese Central
+    (decidida no Sínodo de 1975; primeiro concílio em Recife, 25-27 de junho de 1976, sé na Igreja da SS. Trindade).
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      A primeira foi a Diocese Sul Central em 1969; a segunda foi a Diocese Setentrional em 1976; e a terceira a
+      Diocese Missionária de Brasília em 1982 (KICKHÖFEL, 1995, p. 305).
+    page: '170'
+  - source: costa2021
+    quote: >-
+      Durante o Sínodo de 1975 foi criada a nova diocese missionária, com o nome de Diocese Setentrional, dada a
+      sua localização geográfica.
+    page: '173'
+  - source: costa2021
+    quote: >-
+      Teve lugar em Recife, Pernambuco, do período de 25 a 27 de junho passado, o primeiro concílio da Diocese Setentrional
+      da Igreja Episcopal do Brasil.
+    page: '173'

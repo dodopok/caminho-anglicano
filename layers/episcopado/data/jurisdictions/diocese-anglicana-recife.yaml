@@ -6,6 +6,8 @@ aliases:
 - DAR-IACS
 - Diocese Anglicana do Recife
 - Diocese Anglicana do Recife (Igreja Anglicana – Diocese do Recife)
+- >-
+  Diocese Anglicana do Recife (dissidente) — 'Diocese do Recife', depois Igreja Anglicana – Diocese do Recife
 - Diocese do Recife
 - Igreja Anglicana - Diocese do Recife (dissidente, 2005)
 - Igreja Anglicana – Diocese do Recife
@@ -64,6 +66,11 @@ founded:
     quote: >-
       “The Anglican Diocese of Recife, Brazil has been a diocese that has related extra-provincially to GAFCON since
       2008.
+  - source: costa2021
+    quote: >-
+      Posteriormente, a instituição religiosa foi reorganizada juridicamente, e passou a ser nomeada Igreja Anglicana
+      – Diocese do Recife.
+    page: '229'
 dissolved:
   date: '2018-05-12'
   sources:
@@ -112,7 +119,7 @@ relations:
     em 2005.
 - type: schism_from
   target: ieab
-  date: '2005'
+  date: '2005-01-25'
   led_by:
   - robinson-cavalcanti
   status: confirmed
@@ -148,13 +155,25 @@ relations:
     quote: >-
       Em 2005, Robinson Cavalcanti liderou a separação definitiva da Diocese do Recife da IEAB, vinculando-se ao
       Cone Sul.
+  - source: costa2021
+    quote: >-
+      em carta publicada em 25 de janeiro de 2005, o bispo declarou a suspensão do relacionamento da Diocese Anglicana
+      do Recife com a IEAB
+    page: '222'
+  - source: costa2021
+    quote: >-
+      Agora existiam duas dioceses dentro de um mesmo território, uma ligada à Igreja Episcopal Anglicana do Brasil
+      e outra ligada à Igreja Anglicana do Cone Sul.
+    page: '225'
   notes: >-
     Anglican Ink (2018-04-17) e Wikipédia EN (Uchôa) datam a saída em 2004; IAB, GAFCON e Wikipédia (Cavalcanti/IAB)
     em 2005 (declaração 25/01/2005, exclusão 10/06/2005). Grupo que formou a "Igreja Anglicana - Diocese do Recife",
     depois Igreja Anglicana no Brasil (IAB). Cisma na Diocese Anglicana do Recife (IEAB-DAR). Ruptura da maioria
     das comunidades da Diocese Anglicana do Recife com a IEAB, por divergências sobre sexualidade, autoridade bíblica
     e identidade eclesiástica. Liderança de Robinson Cavalcanti inferida do Apêndice 2 ('reorganizada pelo bispo
-    Robinson Cavalcanti a partir da Diocese do Recife').
+    Robinson Cavalcanti a partir da Diocese do Recife'). 'Grande Crise do Recife'. Robinson deposto em 10/06/2005;
+    32 clérigos desligados pelo Decreto Diocesano 01/2005 (Carta de Setúbal). O grupo levou os templos (exceto o
+    da Carneiro Vilela, já com a IECB) e o CNPJ da diocese.
 - type: part_of
   target: iacs
   date: '2005-09-23'
@@ -316,3 +335,37 @@ relations:
       quote: >-
         The GAFCON Primates have authorized Bishop Miguel Uchoa to provide episcopal oversight throughout central
         and northern South America for Anglican churches who are unable to continue as part of revisionist dioceses.
+- type: member_of
+  target: iacs
+  date: '2005-09-23'
+  end: '2018-05-12'
+  led_by:
+  - gregory-venables
+  - robinson-cavalcanti
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Todavia, em 23 de setembro de 2005, a Igreja Anglicana do Cone Sul, por meio do seu Primaz, o bispo Gregory
+      Venables, aceitou o pedido
+    page: '225'
+  - source: costa2021
+    quote: >-
+      Desde setembro de 2005, reconhecidas nossas Ordens e Ministérios, estamos sob a Autoridade Primacial da Igreja
+      Anglicana do Cone Sul da América
+    page: '225'
+  notes: >-
+    Jurisdição extra-provincial ('supervisão primacial'), não diocese plena do Cone Sul. Fim = criação da IAB (inferido).
+- type: member_of
+  target: gafcon
+  date: '2008'
+  led_by:
+  - robinson-cavalcanti
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 2008, o bispo Robinson participou, na cidade de Jerusalém, da Conferência Global sobre o Futuro do Anglicanismo
+      (GAFCON). A Diocese do Recife tornou-se uma diocese extra-provincial da GAFCON
+    page: '230'
+  notes: Filiou-se depois à Fraternidade de Confessantes Anglicanos.

@@ -1,3 +1,17 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: frank-tracy-griswold-iii
 name: Frank Tracy Griswold III
+events:
+- type: other
+  date: 2004-03
+  description: >-
+    Robinson participou, sem autorização do bispo local, de um ofício de confirmação de 110 pessoas na Diocese de
+    Ohio (EUA) com cinco bispos aposentados da ECUSA; o Primaz Orlando enviou carta de desaprovação ao Bispo Presidente
+    Frank Griswold.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em março de 2004, o Episcopal News Service noticiou que o bispo Robinson participou de um rito de Confirmação
+      na Diocese de Ohio, sem conhecimento e autorização do bispo diocesano local.
+    page: '214'

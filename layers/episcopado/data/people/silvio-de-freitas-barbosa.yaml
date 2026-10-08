@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: silvio-de-freitas-barbosa
+name: Sílvio de Freitas Barbosa
+aliases:
+- Silvio Freitas
+- Silvio Freitas Barbosa
+biography: Seminarista em 2004 e reverendo em 2006 na Diocese Anglicana do Recife (IEAB).
+sources:
+- source: costa2021
+  quote: Seminarista Sílvio de Freitas Barbosa
+  page: '216'
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Este GT era composto pelos reverendos Gustavo Oliveira, Rodrigo Espiuca, Rose Cunha, Silvio Freitas, e Senomar
+      Teixeira
+    page: '238'
+  - source: costa2021
+    quote: Seminarista Silvio Freitas Barbosa
+    page: '217'
+  notes: >-
+    Seminarista em 2004; reverendo em 2006 (identificação 'Silvio Freitas' = 'Sílvio de Freitas Barbosa' é inferência).

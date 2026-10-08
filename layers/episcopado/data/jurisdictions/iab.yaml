@@ -65,6 +65,11 @@ founded:
     quote: >-
       It is not a member of the Anglican Communion,[1] but is in full communion with other provinces of the Global
       Fellowship of Confessing Anglicans and the Global South Fellowship of Anglican Churches.
+  - source: costa2021
+    quote: >-
+      No dia 12 de maio de 2018, Miguel Uchôa foi instalado como primeiro Arcebispo e Primaz da Igreja Anglicana
+      no Brasil.
+    page: '253'
 locator_slug: iab
 website: https://www.anglicananobrasil.com/on/
 description: >-
@@ -108,13 +113,23 @@ relations:
     quote: >-
       On Saturday, 12 May 2018, Brazilians packed the Paróquia Anglicana do Espírito Santo (Anglican Church of the
       Holy Spirit) to celebrate the launch of the Anglican Church in Brazil
-  notes: A DAR continua existindo como diocese da IAB.
+  - source: costa2021
+    quote: Com isso, a Igreja podia tornar-se uma Província
+    page: '253'
+  - source: costa2021
+    quote: >-
+      No dia 12 de maio de 2018, Miguel Uchôa foi instalado como primeiro Arcebispo e Primaz da Igreja Anglicana
+      no Brasil.
+    page: '253'
+  notes: >-
+    A DAR continua existindo como diocese da IAB. Igreja Anglicana – Diocese do Recife elevada a Província com as
+    dioceses de Vitória de Santo Antão e João Pessoa (bispos sagrados em 2017).
 - type: member_of
   target: gafcon
   date: '2018-05-12'
   led_by:
   - miguel-uchoa
-  status: confirmed
+  status: contested
   sources:
   - source: gafcon-2018-installs-primate
     quote: >-
@@ -128,7 +143,29 @@ relations:
   - source: cant-novas-igrejas-2024
     quote: Criada como Província da GAFCON – Fellowship of Confessing Anglicans (FCA) [2018]
     page: '171'
+  - source: costa2021
+    quote: >-
+      Durante reunião ocorrida em abril de 2018, em Entebbe, Uganda, os Primazes da GAFCON confirmaram a eleição
+      do bispo Miguel Uchoa, para se tornar o primeiro Arcebispo e Primaz da sua mais nova Província, a Igreja Anglicana
+      no Brasil – IAB.
+    page: '253'
+  - source: costa2021
+    quote: ela não é reconhecida pela Sé da Cantuária como uma Província da Comunhão Anglicana.
+    page: '253'
   notes: Província da GAFCON – Fellowship of Confessing Anglicans (FCA).
+  discrepancies:
+  - field: date
+    value: 2018-04
+    sources:
+    - source: costa2021
+      quote: >-
+        Durante reunião ocorrida em abril de 2018, em Entebbe, Uganda, os Primazes da GAFCON confirmaram a eleição
+        do bispo Miguel Uchoa, para se tornar o primeiro Arcebispo e Primaz da sua mais nova Província, a Igreja
+        Anglicana no Brasil – IAB.
+      page: '253'
+    - source: costa2021
+      quote: ela não é reconhecida pela Sé da Cantuária como uma Província da Comunhão Anglicana.
+      page: '253'
 - type: recognized_by
   target: gafcon
   date: 2018-04

@@ -130,7 +130,7 @@ affiliations:
   role: diocesan_bishop
   diocese: ieab-darj
   start: '2017-07-29'
-  status: confirmed
+  status: contested
   sources:
   - source: darj-episcopado
     quote: >-
@@ -140,7 +140,19 @@ affiliations:
     quote: Em 29 de julho de 2017, Eduardo foi instituído como o novo diocesano.
   - source: ieab-dioceses
     quote: Bispo Diocesano – Revmo. Eduardo Grillo
-  notes: Instituído pelo primaz Francisco de Assis da Silva.
+  - source: costa2021
+    quote: >-
+      devido à eleição do bispo Eduardo Grillo para a Diocese Anglicana do Rio de Janeiro, em setembro de 2017.
+    page: '247'
+  notes: Instituído pelo primaz Francisco de Assis da Silva. Data é da eleição.
+  discrepancies:
+  - field: start
+    value: 2017-09
+    sources:
+    - source: costa2021
+      quote: >-
+        devido à eleição do bispo Eduardo Grillo para a Diocese Anglicana do Rio de Janeiro, em setembro de 2017.
+      page: '247'
 - jurisdiction: ieab-darj
   role: other
   role_description: reitor

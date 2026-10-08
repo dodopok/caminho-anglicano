@@ -108,7 +108,7 @@ affiliations:
   start: '1977'
   end: '1984'
   end_reason: transfer
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: 1977-1984 – Agostinho Guillon Sória
@@ -117,6 +117,20 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1977-1984 - Agostinho Guillon Sória
     page: '368'
+  - source: costa2021
+    quote: >-
+      Edmund Knox Sherrill foi eleito bispo missionário para o Nordeste, sendo substituído, no Rio de Janeiro, por
+      Agostinho Guillon Sória.
+    page: '173'
+  discrepancies:
+  - field: start
+    value: '1976'
+    sources:
+    - source: costa2021
+      quote: >-
+        Edmund Knox Sherrill foi eleito bispo missionário para o Nordeste, sendo substituído, no Rio de Janeiro,
+        por Agostinho Guillon Sória.
+      page: '173'
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dab

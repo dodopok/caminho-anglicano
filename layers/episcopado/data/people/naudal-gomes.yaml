@@ -76,7 +76,7 @@ affiliations:
   start: '2003'
   end: 2021-12
   end_reason: retirement
-  status: confirmed
+  status: contested
   sources:
   - source: wp-pt-naudal
     quote: Tornou-se bispo diocesano da Diocese Anglicana do Paraná em 2003.
@@ -84,7 +84,23 @@ affiliations:
     quote: >-
       Na prática, a coadjutora auxiliará o atual bispo diocesano, Naudal Alves Gomes, na Diocese até dezembro, que
       é quando este se tornará bispo emérito.
-  notes: Primeiro bispo da Diocese de Curitiba (depois Diocese Anglicana do Parana).
+  - source: costa2021
+    quote: >-
+      Porém, outro candidato surgiu: Naudal Alves Gomes, bispo auxiliar da Diocese Sul-Ocidental. No decorrer do
+      processo eleitoral, Sebastião declinou a indicação e Naudal foi eleito para a sé de Curitiba.
+    page: '238'
+  notes: >-
+    Primeiro bispo da Diocese de Curitiba (depois Diocese Anglicana do Parana). Local: Paraná. Antes bispo auxiliar
+    da Diocese Sul-Ocidental. Data inferida do contexto (eleição contemporânea à de Sebastião para o Recife, 2006).
+  discrepancies:
+  - field: start
+    value: c.2006
+    sources:
+    - source: costa2021
+      quote: >-
+        Porém, outro candidato surgiu: Naudal Alves Gomes, bispo auxiliar da Diocese Sul-Ocidental. No decorrer
+        do processo eleitoral, Sebastião declinou a indicação e Naudal foi eleito para a sé de Curitiba.
+      page: '238'
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino

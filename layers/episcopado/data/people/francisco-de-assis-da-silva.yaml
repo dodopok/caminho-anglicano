@@ -40,7 +40,7 @@ ordinations:
     quote: Em janeiro de 1991 foi ordenado diácono e, em dezembro do mesmo ano, presbítero.
 - order: episcopate
   date: '2011-03-20'
-  place: Catedral do Mediador, Santa Maria (RS)
+  place: Catedral Anglicana do Mediador, Santa Maria (RS)
   jurisdiction: ieab
   office: coadjutor
   principal_consecrator: mauricio-andrade
@@ -81,15 +81,6 @@ ordinations:
   - source: dap-2011-francisco-sagr
     quote: O Bispo Primaz da IEAB, Dom Maurício Andrade, presidiu a Cerimônia de Sagração
   discrepancies:
-  - field: place
-    value: Catedral Anglicana do Mediador, Santa Maria (RS)
-    sources:
-    - source: dap-2011-francisco-sagr
-      quote: >-
-        Os sinos da Catedral Anglicana do Mediador, em Santa Maria, anunciaram na manhã do dia 20 de março que mais
-        um Bispo estava sendo sagrado para servir a Diocese Sul Ocidental
-    - source: dap-2011-francisco-sagr
-      quote: O Bispo Primaz da IEAB, Dom Maurício Andrade, presidiu a Cerimônia de Sagração
   - field: office
     value: suffragan
     sources:
@@ -118,7 +109,7 @@ affiliations:
     quote: Seu atual Bispo Diocesano é o Revmo. Bispo Francisco de Assis da Silva.
 - jurisdiction: ieab
   role: primate
-  start: 2013-11
+  start: '2013-11-16'
   end: 2018-06
   status: confirmed
   sources:
@@ -131,9 +122,15 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: foram lidas declarações do então Bispo Primaz da IEAB, Francisco de Assis da Silva.
     page: '96'
+  - source: costa2021
+    quote: >-
+      Na mesma reunião, Francisco de Assis da Silva, da Diocese Sul-Ocidental, foi escolhido para assumir a Primazia
+      da Igreja
+    page: '243'
   notes: >-
     Eleito no 32o Sinodo (Rio de Janeiro, 14-17/11/2013); ENS 19/11/2013 noticiou a eleicao. Primaz em dezembro
-    de 2017.
+    de 2017. Eleito Primaz no 32º Sínodo Geral (Rio de Janeiro). Antes: primeiro reitor do Núcleo Anglicano de Estudos
+    Teológicos (Recife) e Secretário-geral da IEAB (2006).
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino
@@ -158,3 +155,14 @@ affiliations:
   notes: >-
     Presbítero, membro da Comissão Especial da IEAB (junho de 2004); sagrado bispo em 2011. Pároco em Belém (Diocese
     da Amazônia) e Novo Hamburgo (Diocese Meridional) antes do episcopado; datas não informadas.
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Outro marco de destaque do episcopado de Clovis foi a criação do Núcleo Anglicano de Estudos Teológicos, que
+      teve o reverendo Francisco de Assis da Silva como seu primeiro reitor.
+    page: '184'
+  notes: Chegou à Igreja por meio de Robinson ('Grupo do Recife').

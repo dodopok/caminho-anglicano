@@ -43,22 +43,12 @@ ordinations:
   notes: Ordenação na Igreja Católica Romana (Diocese de Patos).
 - order: episcopate
   date: '2019-07-15'
-  place: Capela da Universidade Federal do Rio Grande do Norte, Natal (RN)
-  jurisdiction: tac-natal
+  place: Capela do Campus da Universidade Federal do Rio Grande do Norte, Natal (RN)
+  jurisdiction: iacc
   office: diocesan
   principal_consecrator: james-antonio-roque
-  status: contested
+  status: probable
   sources:
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      Entre os bispos ordenados por James estavam: Dom José Kennedy de Freitas, organizador da Igreja Anglicana
-      de Confissão Continuante; Dom Marcos Mattos, nomeado bispo da Diocese Anglicana Continuante do Rio de Janeiro
-      (falecido prematuramente, antes da consolidação da diocese); Dom Albertino de Sousa Barreiros, da Diocese
-      Anglicana do Natal; Dom Claudinei Rodrigo Ferreira, da Diocese Anglicana de Santa Catarina; Dom Itabira Jonas,
-      da Diocese Anglicana de São Paulo e Paraná; Dom Francisco de Assis Coelho e Pinho, bispo eleito e delegado
-      episcopal da Pró-Diocese Anglicana do Amazonas; e dom José Barbosa da Silva, da Diocese Anglicana de Portugal,
-      na União Europeia.
-    page: '157'
   - source: cant-anglo-catolicismo-2026
     quote: >-
       sendo sagrado em 15 de julho de 2019 na capela da Universidade Federal do Rio Grande do Norte. A cerimônia
@@ -67,7 +57,7 @@ ordinations:
     quote: >-
       O bispo ordinante principal e bispo responsável pela coordenação dos trabalhos de criação e instalação da
       Diocese foi dom James Roque.
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       em seguida, ordenou muitas pessoas ao episcopado, a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino
       de Sousa Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa
@@ -81,51 +71,23 @@ ordinations:
       quando também ocorreu a instalação oficial da recém-criada Diocese. O bispo ordinante principal e bispo responsável
       pela coordenação dos trabalhos de criação e instalação da Diocese foi dom James Roque.
     page: '81'
-  discrepancies:
-  - field: jurisdiction
-    value: iacc
-    sources:
-    - source: cant-anglo-catolicismo-2026
-      quote: >-
-        sendo sagrado em 15 de julho de 2019 na capela da Universidade Federal do Rio Grande do Norte. A cerimônia
-        foi presidida por Dom James Antônio Roque, que também coordenou a instalação oficial da Diocese.
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        O bispo ordinante principal e bispo responsável pela coordenação dos trabalhos de criação e instalação da
-        Diocese foi dom James Roque.
-    - source: costa-2021-tese
-      quote: >-
-        em seguida, ordenou muitas pessoas ao episcopado, a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino
-        de Sousa Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José
-        Barbosa da Silva.
-    - source: cant-novas-igrejas-2024
-      quote: A cerimônia de sagração de dom
-      page: '80'
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Albertino aconteceu em 15 de julho de 2019, na Capela do Campus da Universidade Federal do Rio Grande do
-        Norte, quando também ocorreu a instalação oficial da recém-criada Diocese. O bispo ordinante principal e
-        bispo responsável pela coordenação dos trabalhos de criação e instalação da Diocese foi dom James Roque.
-      page: '81'
-  - field: place
-    value: Capela do Campus da Universidade Federal do Rio Grande do Norte, Natal (RN)
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: A cerimônia de sagração de dom
-      page: '80'
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Albertino aconteceu em 15 de julho de 2019, na Capela do Campus da Universidade Federal do Rio Grande do
-        Norte, quando também ocorreu a instalação oficial da recém-criada Diocese. O bispo ordinante principal e
-        bispo responsável pela coordenação dos trabalhos de criação e instalação da Diocese foi dom James Roque.
-      page: '81'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Entre os bispos ordenados por James estavam: Dom José Kennedy de Freitas, organizador da Igreja Anglicana
+      de Confissão Continuante; Dom Marcos Mattos, nomeado bispo da Diocese Anglicana Continuante do Rio de Janeiro
+      (falecido prematuramente, antes da consolidação da diocese); Dom Albertino de Sousa Barreiros, da Diocese
+      Anglicana do Natal; Dom Claudinei Rodrigo Ferreira, da Diocese Anglicana de Santa Catarina; Dom Itabira Jonas,
+      da Diocese Anglicana de São Paulo e Paraná; Dom Francisco de Assis Coelho e Pinho, bispo eleito e delegado
+      episcopal da Pró-Diocese Anglicana do Amazonas; e dom José Barbosa da Silva, da Diocese Anglicana de Portugal,
+      na União Europeia.
+    page: '157'
   notes: >-
-    'da Diocese Anglicana do Natal'. Data não informada. Fecha a data (jurisdicoes-menores.json tinha data nula).
-    Diocese Anglicana do Natal (hoje ligada à TAC). Costa (2021) e o site da IACC dizem que James Roque 'ordenou'
-    estes bispos. Para Itabira Jonas, a data de 11/1/2018 vem do site da diocese (registro separado); para Barreiros,
-    c. 2019. Pode tratar-se do mesmo evento já registrado. Co-sagrantes não nomeados. A p. 76 inclui Albertino na
-    lista de bispos ordenados por James Roque entre seus 'primeiros atos' episcopais (contexto do Japi, extinto
-    em 2016) — ver dúvidas.
+    Fecha a data (jurisdicoes-menores.json tinha data nula). Diocese Anglicana do Natal (hoje ligada à TAC). Costa
+    (2021) e o site da IACC dizem que James Roque 'ordenou' estes bispos. Para Itabira Jonas, a data de 11/1/2018
+    vem do site da diocese (registro separado); para Barreiros, c. 2019. Pode tratar-se do mesmo evento já registrado.
+    Co-sagrantes não nomeados. A p. 76 inclui Albertino na lista de bispos ordenados por James Roque entre seus
+    'primeiros atos' episcopais (contexto do Japi, extinto em 2016) — ver dúvidas. 'da Diocese Anglicana do Natal'.
+    Data não informada.
 affiliations:
 - jurisdiction: tac
   role: diocesan_bishop
@@ -208,7 +170,7 @@ events:
     seguiram caminhos distintos, fundando igrejas anglicanas independentes
   status: probable
   sources:
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       Anos mais tarde, a Diocese Anglicana do Japí foi extinta e estes novos bispos seguiram caminhos distintos,
       fundando Igrejas Anglicanas Independentes, sem vínculos com alguma instância associativa, nem com o Movimento
