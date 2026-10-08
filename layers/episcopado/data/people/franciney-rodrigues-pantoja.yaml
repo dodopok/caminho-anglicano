@@ -16,7 +16,40 @@ sources:
 - source: lica-ica-franciney-templo
   quote: >-
     + Dom Franciney Pantoja: Arcebispo Primaz Sufragâneo e Presidente do Conselho Executivo Administrativo Primacial.
+ordinations:
+- order: episcopate
+  date: '2016-07-17'
+  place: dependências da UFPA, Cametá (PA)
+  jurisdiction: iatb
+  office: auxiliary
+  principal_consecrator: rui-costa-barbosa
+  co_consecrators:
+  - orvandil-moreira-barbosa
+  - ricardo-vicente-dos-anjos
+  status: confirmed
+  sources:
+  - source: lia-iatb-home-2016-08
+    quote: >-
+      para a Igreja Indivisa de Cristo: Dom Franciney Pantoja, de Cametá-PA e Dom Alfredo Dorea, de Salvador-BA.
+  - source: lia-iatb-clero-2017
+    quote: Revmº Dom Franciney Rodrigues Pantoja Bispo Auxiliar de Cametá—PA
+  notes: >-
+    Sagrado no mesmo ato de Alfredo Dórea (presidente: Rui Costa Barbosa; co-celebrantes: Ricardo Vicente dos Anjos
+    e Orvandil Moreira Barbosa). Em nov/2015 constava ainda como 'Rev. Franciney Rodrigues Pantoja, Cametá-PA'.
 affiliations:
+- jurisdiction: iatb
+  role: other
+  role_description: bispo auxiliar
+  start: '2016-07-17'
+  end: '2017'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: lia-iatb-clero-2017
+    quote: Revmº Dom Franciney Rodrigues Pantoja Bispo Auxiliar de Cametá—PA
+  notes: >-
+    Local: Cametá, PA. Último registro nas páginas da IATB: lista de clero de fev/2017. O livro de Costa/Cant (2024)
+    o coloca na ICA (2017).
 - jurisdiction: ica
   role: diocesan_bishop
   diocese: diocese-catolica-anglicana-do-baixo-tocantins

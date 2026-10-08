@@ -116,6 +116,22 @@ ordinations:
     Anglicana do Japi. O livro não informa sagrantes nem a jurisdição sagrante nesta parte. Atenção: a criação jurídica
     da Diocese do Japi pelo 'bispo' Roque é datada de 14/10/2012, antes da sagração de 2013.
 affiliations:
+- jurisdiction: iatb
+  role: other
+  role_description: bispo sufragâneo
+  diocese: diocese-thomas-becket
+  start: '2009'
+  end: '2010-02-27'
+  end_reason: left
+  status: confirmed
+  sources:
+  - source: lia-iatb-noticias-2010
+    quote: presidida pelo Bispo Sufragâneo da Diocese do Sudeste, Dom James Roque
+  - source: lia-iatb-noticias-2010
+    quote: Bispo Dom James Roque, Padre Antonio Moraes e Diácono Claudemiro Nascimento em 27/02/2010.
+  notes: >-
+    Em 23/02/2010 também se desligou o 'Bispo Dom Campos' (Rogério Campos, citado em 2008). Início inferido da primeira
+    menção (31/05/2009, Pentecostes, promulgação dos Cânones Gerais).
 - jurisdiction: da-japi
   role: diocesan_bishop
   start: '2012-10-14'

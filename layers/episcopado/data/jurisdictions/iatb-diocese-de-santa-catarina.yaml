@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iatb-diocese-de-santa-catarina
+name: Diocese do Oeste Catarinense (IATB; depois Diocese de Santa Catarina)
+aliases:
+- Diocese do Oeste Catarinense (depois Diocese de Santa Catarina)
+type: diocese
+country: BR
+relations:
+- type: part_of
+  target: iatb
+  status: probable
+  sources:
+  - source: lia-iatb-home-2016-11
+    quote: >-
+      A Diocese do Oeste Catarinense passa a se chamar Diocese de Santa Catarina, com a extensão de sua jurisdição
+      para todo estado catarinense, mantendo-se o seu bispo diocesano, Revmo. Dom Altamiro Pereira do Amaral.
+  - source: lia-iatb-clerigos-2016
+    quote: Revmº Dom Altamiro Pereira do Amaral Bispo Diocesano da Diocese do Oeste Catarinense

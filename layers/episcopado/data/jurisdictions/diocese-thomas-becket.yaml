@@ -1,12 +1,24 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-thomas-becket
-name: Diocese Thomas Becket
+name: Diocese do Sudeste (Thomas Beckt)
+aliases:
+- Diocese Thomas Becket
 type: diocese
 relations:
 - type: part_of
   target: iatb
-  status: probable
+  status: confirmed
   sources:
+  - source: lia-iatb-juris-2013
+    quote: 'DIOCESE DO SUDESTE Bispo Diocesano: Revmº Dom Rui Costa Barbosa'
+  - source: lia-iatb-clerigos-2019
+    quote: Dom Rui Costa Diocese de São Paulo
+  - source: iatb-clerigos
+    quote: Dom Rui Costa - São Paulo
+  - source: lia-iatb-noticias-2010
+    quote: presidida pelo Bispo Sufragâneo da Diocese do Sudeste, Dom James Roque
+  - source: lia-iatb-noticias-2010
+    quote: Bispo Dom James Roque, Padre Antonio Moraes e Diácono Claudemiro Nascimento em 27/02/2010.
   - source: cant-novas-igrejas-2024
     quote: >-
       Após a saída de dom Cristiano da Província, este bispo foi convidado por dom Rui Barbosa para retornar para

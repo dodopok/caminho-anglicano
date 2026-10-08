@@ -15,6 +15,22 @@ sources:
 - source: lica-iaces-clero
   quote: 'Bispo co-ordenante: + Dom Altamiro Pereira do Amaral, ICA-Brasil'
 affiliations:
+- jurisdiction: iatb
+  role: other
+  role_description: bispo diocesano
+  diocese: iatb-diocese-de-santa-catarina
+  start: '2016'
+  status: probable
+  sources:
+  - source: lia-iatb-home-2016-11
+    quote: >-
+      A Diocese do Oeste Catarinense passa a se chamar Diocese de Santa Catarina, com a extensão de sua jurisdição
+      para todo estado catarinense, mantendo-se o seu bispo diocesano, Revmo. Dom Altamiro Pereira do Amaral.
+  - source: lia-iatb-clerigos-2016
+    quote: Revmº Dom Altamiro Pereira do Amaral Bispo Diocesano da Diocese do Oeste Catarinense
+  notes: >-
+    Início = primeira lista que o traz (out/2016, já como bispo diocesano); sagração não localizada nas páginas
+    da IATB. Outras fontes o ligam depois à Igreja Católica Anglicana (2018).
 - jurisdiction: ica-brasil
   role: bishop
   start: '2018'

@@ -1,15 +1,38 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: wanderson-rodrigo-pereira-da-silva
 name: Wanderson Rodrigo Pereira da Silva
+full_name: Wanderson Rodrigo Pereira da Silva
+aliases:
+- Dom Wanderson R. P. da Silva
+- Padre Wanderson
 biography: >-
-  Ex-membro da Paróquia da Virgem Maria (IEAB, Natal); ordenado na IATB, que pastoreou no Rio Grande do Norte; saiu
-  com um grupo de clérigos quando o primaz era Alfredo Dórea; fundou a Diocese Anglicana do Rio Grande do Norte
-  (Diocese São Paulo Apóstolo), igreja 'Anglicana Tradicional' sem vínculo com a IATB.
+  Bispo da Diocese do Rio Grande do Norte (Natal) da IATB, sagrado em 24/11/2017 por Alfredo Dórea; presbítero desde
+  c. 2015.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: >-
-    No Rio Grande do Norte a IATB foi pastoreada por um tempo pelo bispo Wanderson Rodrigo Pereira da Silva.
-  page: '136'
+- source: lia-iatb-clerigos-2019
+  quote: Dom Wanderson R. P. da Silva Diocese do Rio Grande do Norte
+ordinations:
+- order: episcopate
+  date: '2017-11-24'
+  place: Natal (RN)
+  jurisdiction: iatb
+  office: diocesan
+  principal_consecrator: alfredo-dorea
+  status: confirmed
+  sources:
+  - source: lia-iatb-home-2018-12
+    quote: >-
+      No último dia 24 de novembro de 2017 na cidade de Natal-RN celebrando a Sagrada Eucaristia naquela Comunidade
+      o Revmo. Arcebispo Dom Alfredo Souza Dorea realizou a Sagração Episcopal do bispo eleito e administrador apostólico
+      daquela Diocese o presbítero Rev. Wanderson Rodrigo Pereira da Silva.
+  - source: lia-iatb-home-2021
+    quote: >-
+      Nosso bispo em Natal-RN Dom Wanderson completou na data de 24 de novembro de 2021 quatro anos de ordenação
+      episcopal
+  notes: >-
+    Co-sagrantes não informados. Wanderson Rodrigo era presbítero desde c. set/2015 (primeiro aniversário de sacerdócio
+    em 18/09/2016) e administrador apostólico da diocese do RN em abr/2017; ainda bispo da IATB em dez/2021. Não
+    confundir com o diácono Wanderson Carvalho (Fortaleza), chanceler da cúria de Pernambuco em 2026.
 affiliations:
 - jurisdiction: ieab
   role: member

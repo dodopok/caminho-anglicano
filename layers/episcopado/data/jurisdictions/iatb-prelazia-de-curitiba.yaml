@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iatb-prelazia-de-curitiba
+name: Prelazia Anglicana Ortodoxa de Curitiba (IATB)
+aliases:
+- Prelazia Anglicana Ortodoxa (Boqueirão, Curitiba)
+type: diocese
+country: BR
+relations:
+- type: part_of
+  target: iatb
+  status: confirmed
+  sources:
+  - source: lia-iatb-clero-2017
+    quote: >-
+      Revmoº. Dom Jefferson Nilson Santos Bispo Prelado da Prelazia Anglicana Ortodoxa—Boqueirão—Curitiba—PR
+  - source: lia-iatb-clerigos-2019
+    quote: Dom Jefferson Nilson Santos Bispo Prelado da Prelazia Anglicana Ortodoxa - Curitiba - PR
+  - source: iatb-clerigos
+    quote: Dom Jefferson Nilson - Curitiba - PR

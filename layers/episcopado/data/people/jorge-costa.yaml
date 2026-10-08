@@ -5,19 +5,75 @@ full_name: Jorge dos Santos Costa
 aliases:
 - Dom Jorge dos Santos Costa
 - Jorge dos Santos Costa
+birth:
+  date: '1958-07-02'
+  sources:
+  - source: lia-iatb-juris-2013
+    quote: Nascido no dia 2 de Julho de 1958, na Cidade de Salvador, Estado da Bahia.
 biography: >-
-  Bispo da Igreja Católica Anglicana (ICA) com atuação na Bahia; declarado fora da Mitra Primacial da ICA em 24/05/2018.
-  Co-fundador da ICA-Brasil (1º Sínodo, São Paulo, julho de 2018) e co-sagrante de José Fernando de Faria (29/07/2018)
-  e de Marcos Vinícius de Souza. Depois, segundo o site da IACES, assinou com Faria e Orestes Calazans Filho o desligamento
-  da Província Católica Anglicana do Brasil.
+  Bispo de Salvador (BA), ex-seminarista católico romano; diácono (1977) e presbítero (1978) na ICAB e sagrado em
+  1980; recebido na IATB em 2012 como bispo diocesano da Bahia e do Nordeste; co-sagrante de Ricardo Vicente dos
+  Anjos (2012).
 sources:
-- source: lica-ica-notificacao
-  quote: Dom Jorge dos Santos Costa
-- source: lica-iaces-historia
-  quote: >-
-    Nós, Dom Ricardo Vicente dos Anjos, Dom Jorge dos Santos Costa, Dom Altamiro Pereira do Amaral e Padre Marcos
-    Vinicius de Souza
+- source: lia-iatb-juris-2013
+  quote: Nascido no dia 2 de Julho de 1958, na Cidade de Salvador, Estado da Bahia.
+ordinations:
+- order: diaconate
+  date: '1977-01-02'
+  jurisdiction: icab
+  ordained_by: jose-barbosa-dos-anjos
+  status: probable
+  sources:
+  - source: lia-iatb-juris-2013
+    quote: em 02 de Janeiro de 1977 foi Ordenado Diácono, por Dom José Barbosa dos Anjos (ICAB).
+  notes: Autobiografia publicada pela IATB (Diocese da Bahia, 2013).
+- order: presbyterate
+  date: '1978-04-09'
+  place: São Paulo (SP)
+  jurisdiction: null
+  ordained_by: luigi-mascolo
+  status: probable
+  sources:
+  - source: lia-iatb-juris-2013
+    quote: No dia 9 de Abril de 1978, foi Ordenado Presbítero por Dom Luiggi Mascolo, em São Paulo.
+  notes: Autobiografia publicada pela IATB.
+- order: episcopate
+  date: '1980-09-07'
+  jurisdiction: icaj
+  principal_consecrator: dylmar-balduino-correia-da-costa
+  status: probable
+  sources:
+  - source: lia-iatb-juris-2013
+    quote: >-
+      Em 07 de Setembro de 1980, foi Sagrado Bispo, por Dom Dylmar Balduino Correia da Costa, Arcebispo Primaz da
+      ICAJ.
+  - source: lia-iatb-juris-2013
+    quote: >-
+      Em 19 de Julho 2009 foi confirmado no Episcopado na Igreja Ortodoxa Bielo Russa Eslava, por Mar Athanasio
+      I.
+  notes: >-
+    Em 19/07/2009 teve o episcopado 'confirmado' na Igreja Ortodoxa Bielo-Russa Eslava por Mar Athanasio I (mesma
+    fonte). ICAJ na grafia da fonte.
 affiliations:
+- jurisdiction: iatb
+  role: other
+  role_description: bispo diocesano
+  diocese: iatb-diocese-da-bahia
+  start: '2012'
+  status: confirmed
+  sources:
+  - source: lia-iatb-noticias-2012
+    quote: >-
+      Com grande alegria a Igreja comunica da recepção do Bispo Revmo. Dom Jorge dos Santos Costa, da Cidade de
+      Salvador na Bahia.
+  - source: lia-iatb-noticias-2014
+    quote: >-
+      O titular da Diocese da Bahia, Revmo. Dom +Jorge dos Santos Costa assume a titularidade de toda a Diocese
+      do Nordeste ora reconstituída.
+  notes: >-
+    Recebido em 2012 (Decreto Arquiepiscopal 001/2012, de 12/03/2012, criou a Diocese Santa Cruz da Bahia); consagrante
+    de Ricardo Vicente dos Anjos (15/07/2012); titular da Diocese do Nordeste reconstituída em 05-07/07/2013. Nascido
+    em Salvador em 02/07/1958 (autobiografia da IATB).
 - jurisdiction: ica-brasil
   role: bishop
   start: '2018'

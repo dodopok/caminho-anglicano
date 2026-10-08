@@ -1,8 +1,10 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jose-aparecido-marques
 name: José Aparecido Marques
+full_name: José Aparecido Marques
 aliases:
 - Bispo + José Marques
+- Dom José Aparecido
 - José Marques
 biography: >-
   Um 'Bispo + José Marques' consta entre os quatro sagrandos do convite à sagração episcopal de 10/11/2012 (a identificação
@@ -11,6 +13,17 @@ sources:
 - source: lac-cnbp-convite2012
   quote: Episcopisa + Eliane Helena Bispo + Reinaldo Tavares Bispo + José Marques Bispo + Elcemir Durans
 ordinations:
+- order: presbyterate
+  date: '2009-10-24'
+  jurisdiction: null
+  status: confirmed
+  sources:
+  - source: lia-iatb-clerigos-2016
+    quote: >-
+      No dia 24 de Outubro de 2009 foi ordenado Prebítero e 02 de outubro de 2011 Sagrado bispo na Igreja Vétero
+      Católica do Brasil.
+  notes: >-
+    Igreja/ordenante do presbiterato não informados (a frase conjuga presbiterato e sagração na mesma igreja).
 - order: episcopate
   date: '2012-11-10'
   place: Igreja Pentecostal Caminho da Fé, Rua Botânica 70, Jardim Boa Esperança, Belford Roxo (RJ)
@@ -19,8 +32,16 @@ ordinations:
   co_consecrators:
   - jose-demontier
   - josue-sousa-torres
-  status: probable
+  status: confirmed
   sources:
+  - source: lia-iatb-clerigos-2016
+    quote: >-
+      No dia 24 de Outubro de 2009 foi ordenado Prebítero e 02 de outubro de 2011 Sagrado bispo na Igreja Vétero
+      Católica do Brasil.
+  - source: lia-iatb-clerigos-2016
+    quote: >-
+      No dia 10 de novembro de 2012 teve suas ordens confirmadas pela CEFIP (Convenção Eclesiástica Filhos da Promessa)
+      de tradição Anglicana.
   - source: lac-cnbp-convite2012
     quote: >-
       SAGRANTE: Monsenhor ++Elias Batista Nogueira (IEFP) CO-SAGRANTES: Monsenhor ++Josué Souza Torres (IEEP) Monsenhor
@@ -50,12 +71,35 @@ ordinations:
       Souza Torres e Sua Exª Bispo José Demontier
     page: '146'
   notes: >-
-    Fonte é o convite (imagem publicada em 09/10/2012 no blog do CNBP) para a solenidade de sagração episcopal de
-    10/11/2012 às 18h30, ou seja, anúncio do ato e não relato da cerimônia. O convite nomeia como co-sagrantes Josué
-    Souza Torres (IEEP) e Cláudio Lucena (Igreja Metodista); o documento transcrito por Costa/Cant (2024) nomeia
-    Josué Souza Torres e José Demontier — os dois coincidem em Josué. Os sagrandos listados no convite são quatro
-    (Eliane Helena, Reinaldo Tavares, José Marques, Elcemir Durans); José Kennedy de Freitas, citado por Costa/Cant
-    entre os cinco postulantes, não consta do convite. Costa (2024) transcreve a convocação da Província Brasileira
-    de Confissão Anglicana (10/11/2012); é a previsão do ato, não um relato da cerimônia. O documento citado (Província
+    A IATB dá a sagração em 02/10/2011, na Igreja Vétero Católica do Brasil, e diz que em 10/11/2012 ele 'teve suas
+    ordens confirmadas pela CEFIP'; outras fontes registram a sagração de 10/11/2012 como a sagração dele. Fonte
+    é o convite (imagem publicada em 09/10/2012 no blog do CNBP) para a solenidade de sagração episcopal de 10/11/2012
+    às 18h30, ou seja, anúncio do ato e não relato da cerimônia. O convite nomeia como co-sagrantes Josué Souza
+    Torres (IEEP) e Cláudio Lucena (Igreja Metodista); o documento transcrito por Costa/Cant (2024) nomeia Josué
+    Souza Torres e José Demontier — os dois coincidem em Josué. Os sagrandos listados no convite são quatro (Eliane
+    Helena, Reinaldo Tavares, José Marques, Elcemir Durans); José Kennedy de Freitas, citado por Costa/Cant entre
+    os cinco postulantes, não consta do convite. Costa (2024) transcreve a convocação da Província Brasileira de
+    Confissão Anglicana (10/11/2012); é a previsão do ato, não um relato da cerimônia. O documento citado (Província
     Brasileira de Confissão Anglicana, 10/11/2012) é a aprovação da sagração 'a realizar-se' nessa data; o livro
     não confirma explicitamente a realização.
+affiliations:
+- jurisdiction: iatb
+  role: other
+  role_description: bispo diocesano
+  diocese: diocese-meridional-thomas-more
+  start: '2013-10-08'
+  end: '2016-10-12'
+  end_reason: left
+  status: confirmed
+  sources:
+  - source: lia-iatb-clerigos-2016
+    quote: >-
+      No dia 08 de Outubro de 2013 foi Incardinado na Igreja Anglicana Tradicional do Brasil (IATB) - Traditional
+      Anglican Church of Brazil, Tornando-se bispo Diocesano da Diocese Anglicana Meridional Thomas More.
+  - source: lia-iatb-home-2016-11
+    quote: >-
+      Com o pedido de excardinação do Revmo. Bispo Dom José Aparecido Marques, da então Diocese Meridional, a partir
+      do dia 12 de outubro de 2016
+  notes: >-
+    Local: Pinhais, PR. Diocese Thomas More restabelecida com sede em Pinhais-PR (a anterior fora extinta em 18/05/2013).
+    Excardinação a pedido dele em 12/10/2016.

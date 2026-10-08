@@ -1,12 +1,33 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-meridional-thomas-more
-name: Diocese Meridional Thomas More
+name: Diocese Meridional Thomas More; depois Diocese Brasil Central (Santa Joana d'Arc), Goiânia
+aliases:
+- Diocese Meridional Thomas More
 type: diocese
 relations:
 - type: part_of
   target: iatb
   status: confirmed
   sources:
+  - source: lia-iatb-clerigos-2016
+    quote: >-
+      No dia 08 de Outubro de 2013 foi Incardinado na Igreja Anglicana Tradicional do Brasil (IATB) - Traditional
+      Anglican Church of Brazil, Tornando-se bispo Diocesano da Diocese Anglicana Meridional Thomas More.
+  - source: lia-iatb-home-2016-11
+    quote: >-
+      Com o pedido de excardinação do Revmo. Bispo Dom José Aparecido Marques, da então Diocese Meridional, a partir
+      do dia 12 de outubro de 2016
+  - source: lia-iatb-noticias-2010
+    quote: >-
+      Em 09 de Julho de 2009, o Arcebispo Dom Rui Costa Barbosa divulgou oficialmente a incardinação do Sr. Bispo
+      Dom Orvandil Moreira Barbosa como Bispo Diocesano da Diocese Meridional "Thomas More".
+  - source: lia-iatb-contato-2010
+    quote: >-
+      Revmº Dom Orvandil Moreira Barbosa Bispo Diocesano da Diocese Brasil Central Goiânia - Estado de Goiás, Brazil.
+  - source: lia-iatb-home-2017-10
+    quote: >-
+      Nós, Dom Rui Costa Barbosa, Dom X, Dom Washington Luis, Dom José Aparecido e Dom Y, respectivamente bispos
+      das Dioceses do Sudeste, do Centro-Oeste, do Sergipe, do Sul e do Pará
   - source: lica-domomb-bula
     quote: >-
       RECEBEMOS em nossa Igreja o nosso irmão em Cristo, Orvandil Moreira Barbosa RG 703214855-3, no grau de BISPO
