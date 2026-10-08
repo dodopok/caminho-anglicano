@@ -1,7 +1,11 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: abuja
-name: Abuja
+name: Diocese of Abuja
+aliases:
+- Abuja
 type: diocese
+tradition: anglican
+country: NG
 relations:
 - type: part_of
   target: church-of-nigeria

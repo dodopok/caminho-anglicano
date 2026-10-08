@@ -1,7 +1,11 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: bedford
-name: Bedford
+name: Bishop of Bedford (sé sufragânea)
+aliases:
+- Bedford
 type: diocese
+tradition: anglican
+country: GB
 relations:
 - type: part_of
   target: church-of-england

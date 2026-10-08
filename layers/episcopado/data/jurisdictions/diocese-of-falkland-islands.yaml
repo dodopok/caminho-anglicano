@@ -1,7 +1,22 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-of-falkland-islands
+acronym: diocese-of-falkland-islands
 name: Diocese of the Falkland Islands
 type: diocese
+country: GB
+founded:
+  date: '1869'
+  sources:
+  - source: fund-wp-en-sam
+    quote: >-
+      The first diocese was established in 1869 as the Diocese of the Falkland Islands and the rest of South America,
+      excepting British Guiana.
+description: Mesma diocese de FALK.
+sources:
+- source: fund-wp-en-sam
+  quote: >-
+    The first diocese was established in 1869 as the Diocese of the Falkland Islands and the rest of South America,
+    excepting British Guiana.
 relations:
 - type: part_of
   target: church-of-england

@@ -6,15 +6,23 @@ aliases:
 - IPU-Lorite
 type: other
 country: BR
+founded:
+  date: c.2017
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Em 30 de outubro de 2017, a Igreja Anglicana do Brasil encerrou suas atividades, deixando uma mensagem em
+      seu site, restando apenas este como registro dos acontecimentos acima narrados. Após isto, o bispo Ricardo
+      Lorite reorganizou o grupo e fundou a Igreja Protestante Unida, filiando-se à Aliança de Batistas do Brasil.
 description: >-
-  Grupo reorganizado por Ricardo Lorite após o encerramento da Igreja Anglicana do Brasil (2017), filiado à Aliança
-  de Batistas do Brasil.
+  O livro diz apenas que a IPU foi fundada APÓS 30/10/2017 (encerramento da Igreja Anglicana do Brasil de Lorite);
+  ano exato não informado (a base inferia 2017). Não achei CNPJ.
 sources:
 - source: cant-novas-igrejas-2024
   quote: >-
-    o bispo Ricardo Lorite reorganizou o grupo e fundou a Igreja Protestante Unida, filiando-se à Aliança de Batistas
-    do Brasil.
-  page: '120'
+    Em 30 de outubro de 2017, a Igreja Anglicana do Brasil encerrou suas atividades, deixando uma mensagem em seu
+    site, restando apenas este como registro dos acontecimentos acima narrados. Após isto, o bispo Ricardo Lorite
+    reorganizou o grupo e fundou a Igreja Protestante Unida, filiando-se à Aliança de Batistas do Brasil.
 relations:
 - type: successor_of
   target: iadb-lorite

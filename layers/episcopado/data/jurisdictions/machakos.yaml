@@ -1,7 +1,11 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: machakos
-name: Machakos
+name: Diocese of Machakos
+aliases:
+- Machakos
 type: diocese
+tradition: anglican
+country: KE
 relations:
 - type: part_of
   target: anglican-church-of-kenya

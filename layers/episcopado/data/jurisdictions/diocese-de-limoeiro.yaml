@@ -1,7 +1,24 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-de-limoeiro
+acronym: diocese-de-limoeiro
 name: Diocese de Limoeiro
 type: diocese
+country: BR
+founded:
+  date: '2024-10-13'
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Já a Diocese de Limoeiro, sob a Catedral da Redenção, foi instalada em 13 de outubro de 2024, sendo liderada
+      pelo bispo dom João Humberto do Rêgo Vasconcelos.
+    page: '62'
+description: Instalação da diocese (IECB) em 13/10/2024.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Já a Diocese de Limoeiro, sob a Catedral da Redenção, foi instalada em 13 de outubro de 2024, sendo liderada
+    pelo bispo dom João Humberto do Rêgo Vasconcelos.
+  page: '62'
 relations:
 - type: part_of
   target: iecb

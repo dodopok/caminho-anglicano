@@ -1,7 +1,11 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: nairobi
-name: Nairobi
+name: Diocese of Nairobi
+aliases:
+- Nairobi
 type: diocese
+tradition: anglican
+country: KE
 relations:
 - type: part_of
   target: anglican-church-of-kenya
