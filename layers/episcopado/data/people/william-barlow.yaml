@@ -22,10 +22,17 @@ sources:
   quote: '"Q8005070": enwiki "William Barlow (bishop of Chichester)"'
 ordinations:
 - order: episcopate
-  date: 1536-06
+  date: '1536-06-11'
   jurisdiction: church-of-england
-  status: contested
+  status: probable
   sources:
+  - source: jenkins-1922-barlow
+    quote: If Barlow was consecrated it is simpler to assume that it was on June 11 than June 18 or 25.
+    page: '20'
+  - source: jenkins-1922-barlow
+    quote: >-
+      Barlow appears as signing between Repps, consecrated on June 11, 1536, and Warton, consecrated on July 2.
+    page: '20'
   - source: stubbs-1897
     quote: >-
       Record not forthcoming ; the date is fixed, by collateral proof, to June 1 1, 18, or 26. Barlow's precedence
@@ -37,9 +44,13 @@ ordinations:
   - source: wp-barlow
     quote: '| consecration = February 1535<ref name="DNB"/> or June 1536'
   notes: >-
-    Não há registro da sagração de Barlow (bispo de St David's, 1536). Stubbs fixa a data por prova indireta em
-    11, 18 ou 26 de junho de 1536. A Wikipédia dá 'fevereiro de 1535 ou junho de 1536' e aponta Cranmer como sagrante,
-    mas citando um documento particular (pelagios.net); por isso o sagrante fica nulo aqui. Ver dúvidas.
+    Hipótese de Jenkins: a sagração não está registrada, mas em 11/06/1536 (Domingo da Trindade) foram sagrados
+    Sampson (Chichester) e Repps (Norwich), e nas atas da Convocação Barlow assina com a precedência de um bispo
+    sagrado entre Repps e Warton (2/07/1536). Jenkins menciona Cranmer e os bispos de Exeter, Bath, Bangor e Norwich
+    como participantes das sagrações de 11/06 e 2/07, sem dizer que sagraram Barlow. Não há registro da sagração
+    de Barlow (bispo de St David's, 1536). Stubbs fixa a data por prova indireta em 11, 18 ou 26 de junho de 1536.
+    A Wikipédia dá 'fevereiro de 1535 ou junho de 1536' e aponta Cranmer como sagrante, mas citando um documento
+    particular (pelagios.net); por isso o sagrante fica nulo aqui. Ver dúvidas.
 affiliations:
 - jurisdiction: church-of-england
   role: diocesan_bishop
