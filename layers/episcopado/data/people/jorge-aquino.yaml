@@ -1,0 +1,105 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jorge-aquino
+name: Jorge Aquino
+aliases:
+- Cônego Jorge Aquino
+- Reverendo Cônego Jorge Aquino
+biography: >-
+  Natural de Natal/RN; ex-pastor presbiteriano, presbítero ordenado por Robinson Cavalcanti na IEAB (2000), onde
+  serviu 12 anos; depois passou por várias jurisdições anglicanas independentes como cônego teológico.
+sources:
+- source: aquino-quem-e
+  quote: Nascido em Natal/RN, o Reverendo Jorge é graduado, especialista e mestre em Teologia
+ordinations:
+- order: diaconate
+  date: null
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: aquino-quem-e
+    quote: >-
+      O Reverendo Jorge, vem de tradição presbiteriana – onde atuou como pastor por sete (7) anos -, mas transferiu-se
+      para a Igreja Episcopal Anglicana do Brasil quando da Eleição de D. Robinson Cavalcanti como seu bispo diocesano.
+      Ordenado diácono e presbítero por ele
+- order: presbyterate
+  date: '2000-04-19'
+  place: Capela do Campus Universitário da UFRN, Natal (RN)
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: aquino-ordenacao-2000
+    quote: >-
+      Minha ordenação presbiterial na Igreja Anglicana ocorreu no dia 19 de abril de 2000, na Capela do Campus Universitário
+      do Rio Grande do Norte. O bispo ordinante foi D. Robinson Cavalcanti, da Diocese de Recife
+  - source: aquino-quem-e
+    quote: >-
+      O Reverendo Jorge, vem de tradição presbiteriana – onde atuou como pastor por sete (7) anos -, mas transferiu-se
+      para a Igreja Episcopal Anglicana do Brasil quando da Eleição de D. Robinson Cavalcanti como seu bispo diocesano.
+      Ordenado diácono e presbítero por ele
+  notes: Celebração ecumênica, com padres católicos romanos e pastores evangélicos presentes.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: aquino-quem-e
+    quote: >-
+      Foi Ministro da Igreja Episcopal Anglicana do Brasil (IEAB) por 12 anos, assumindo os cargos de Pároco na
+      Capela do Campus da UFRN, de ministro encarregado da Missão Jesus Cristo Libertador, em João Pessoa/PB, Reitor
+      do Seminário Anglicano de Recife/PE, Arcediago da sub-região norte da Diocese do Recife
+  notes: >-
+    12 anos na IEAB: capelão da Capela do Campus da UFRN (7 anos), ministro encarregado da Missão Jesus Cristo Libertador
+    (João Pessoa), reitor do Seminário Anglicano de Recife e arcediago da sub-região norte da Diocese do Recife.
+- jurisdiction: manb
+  role: clergy
+  status: probable
+  sources:
+  - source: aquino-quem-e
+    quote: >-
+      o Rev. Jorge foi nomeado e atuou como Cônego teológico pela Diocese do Japi até sua fusão com a Diocese Anglicana
+      de Votorantim, fez parte do Movimento Anglicano no Brasil (Atual Diocese Anglicana no Brasil), e Diretor de
+      Formação da Free Church of England.
+  notes: Antes, cônego teológico da Diocese do Japi (até a fusão com a Diocese Anglicana de Votorantim).
+- jurisdiction: fce
+  role: other
+  role_description: diretor de formação
+  status: probable
+  sources:
+  - source: aquino-quem-e
+    quote: >-
+      o Rev. Jorge foi nomeado e atuou como Cônego teológico pela Diocese do Japi até sua fusão com a Diocese Anglicana
+      de Votorantim, fez parte do Movimento Anglicano no Brasil (Atual Diocese Anglicana no Brasil), e Diretor de
+      Formação da Free Church of England.
+- jurisdiction: fpec
+  role: other
+  role_description: coordenador geral de teologia
+  status: probable
+  sources:
+  - source: aquino-quem-e
+    quote: >-
+      Ao ser recepcionado pela Free Protestant Episcopal Church Worldwide Communion, foi nomeado como Coordenador
+      Geral de Teologia e Educação Cristã na Comunhão Mundial.
+- jurisdiction: iaom
+  role: clergy
+  status: probable
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-aquino
+    quote: Hoje aquino está na IGREJA ANGLICANA ORTODOXA MISSIONÁRIA, do Bispo Jonas Santana Moreira
+events:
+- type: other
+  date: null
+  description: >-
+    Incardinado na Prelazia Católico Anglicana da Sagrada Família (cônego teológico e chanceler); depois cônego
+    teológico da Igreja Anglicana Ortodoxa e custódio do seu Livro de Oração Comum
+  status: probable
+  sources:
+  - source: aquino-quem-e
+    quote: >-
+      O Reverendo Jorge foi incardinado à Prelazia Católico Anglicana da Sagrada Família, onde atuou como Cônego
+      Teológico, Chanceler e Reitor do Centro Paulista de Estudos Anglicanos (EaD). … Convidado para atuar na Igreja
+      Anglicana Ortodoxa, também serviu como Cônego teológico, se envolvendo na formação do clero por meio de seu
+      curso de imersão no anglicanismo, na criação de seus novos Cânones e na elaboração de seu Livro de OraçãoComum,
+      na condiçãode Custódio do Livro.
