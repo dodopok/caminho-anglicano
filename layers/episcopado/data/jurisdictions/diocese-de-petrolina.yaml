@@ -1,12 +1,42 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-de-petrolina
-name: Diocese de Petrolina
+name: Diocese de Petrolina (IECB)
+aliases:
+- Diocese de Petrolina (Catedral do Semeador)
+- Diocese de Petrolina / Diocese de Paulista
 type: diocese
+tradition: charismatic_episcopal
+country: BR
+founded:
+  date: '2023-02-12'
+  sources:
+  - source: ier-edenevaldo-petrolina-2023
+    quote: >-
+      A Diocese de Petrolina-PE, foi fundada em 12/02/2023, e está sob a supervisão do Bp. Dom Tony Bello, vai de
+      Arcoverde-PE à Itapetinga-BA e tem a Catedral do Semeador em Petrolina, como sede distrital
+  - source: ier-blogdomagno-petrolina-2023
+    quote: Uma catedral da Igreja Episcopal Carismática do Brasil será instalada em Petrolina.
+description: >-
+  Diocese da IECB com Catedral do Semeador (Petrolina/PE); bispo Tony Belo; abrange de Arcoverde (PE) a Itapetinga
+  (BA).
+sources:
+- source: ier-edenevaldo-petrolina-2023
+  quote: >-
+    A Diocese de Petrolina-PE, foi fundada em 12/02/2023, e está sob a supervisão do Bp. Dom Tony Bello, vai de
+    Arcoverde-PE à Itapetinga-BA e tem a Catedral do Semeador em Petrolina, como sede distrital
+- source: ier-blogdomagno-petrolina-2023
+  quote: Uma catedral da Igreja Episcopal Carismática do Brasil será instalada em Petrolina.
 relations:
 - type: part_of
   target: iecb
   status: probable
   sources:
+  - source: ptwiki-iecb
+    quote: Tony Belo Pereira (2022)
+  - source: ier-blogdomagno-petrolina-2023
+    quote: A sede em Petrolina terá como Bispo Diocesano, o REVMº Dom Tony Bello.
+  - source: ier-edenevaldo-petrolina-2023
+    quote: A Diocese de Petrolina-PE, foi fundada em 12/02/2023, e está sob a supervisão do Bp. Dom Tony Bello
   - source: cant-novas-igrejas-2024
     quote: O seu bispo diocesano é dom Tony Bello, que lidera a jurisdição
     page: '63'

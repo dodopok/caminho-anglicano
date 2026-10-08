@@ -3,6 +3,7 @@ id: iecb-diocese-recife
 name: Diocese do Recife (IECB)
 aliases:
 - Diocese do Recife
+- Diocese do Recife (Catedral da Trindade)
 - Diocese do Recife – Catedral da Trindade
 type: diocese
 tradition: anglican
@@ -10,12 +11,25 @@ country: BR
 relations:
 - type: part_of
   target: iecb
-  status: probable
+  status: confirmed
   sources:
+  - source: ier-trindade-blog-igreja
+    quote: >-
+      Ela é hoje a Catedral - igreja onde está a cátedra do Bispo - da Igreja Episcopal Carismática do Brasil
+  - source: ier-betesda-16anos-2025
+    quote: Dom Frederico Bastos (Coadjutor do Arcebispo e Diocese do Recife)
   - source: ptwiki-iecb
     quote: A IECB segue a forma de governo episcopal, tendo como Bispo Primaz, o Arcebispo Paulo Ruiz Garcia.
   - source: ptwiki-iecb
     quote: André Novaes de Albuquerque Cavalcanti (2009)
+  - source: ier-betesda-onde-estamos
+    quote: 'Bispo Auxiliar: Dom  André Novaes'
+  - source: ier-camara-recife-ximenes-2012
+    quote: Bispo André Novaes, primaz da América Latina, que representou o Arcebispo Dom Paulo Garcia
+  - source: ier-trindade-blog-igreja
+    quote: Dom Roberto Schuler
+  - source: ier-trindade-blog-igreja
+    quote: Dom Alexandre Ximenes
   - source: cant-novas-igrejas-2024
     quote: Bispo André Novaes. Auxiliar da Diocese do Recife.
     page: '61'

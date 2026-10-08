@@ -17,7 +17,7 @@ ordinations:
   jurisdiction: iecb
   office: diocesan
   principal_consecrator: randolph-austin-adler
-  status: confirmed
+  status: contested
   sources:
   - source: ptwiki-iecb
     quote: >-
@@ -29,15 +29,26 @@ ordinations:
     quote: >-
       Em 14 de abril de 2007 foram sagrados novos bispos para a denominação: Alexandre Barbosa Monteiro Ximenes
       (Diocesano do Litoral Sul e Estado de Alagoas)
+  - source: ier-camara-recife-ximenes-2012
+    quote: Em 2005 foi sagrado bispo pela mesma congregação
   - source: cant-novas-igrejas-2024
     quote: >-
       Em 14 de abril de 2007 foram sagrados novos bispos para a denominação: Alexandre Barbosa Monteiro Ximenes
       (Diocesano do Litoral Sul e Estado de Alagoas)
     page: '55'
+  discrepancies:
+  - field: date
+    value: '2005'
+    sources:
+    - source: ier-camara-recife-ximenes-2012
+      quote: Em 2005 foi sagrado bispo pela mesma congregação
   notes: >-
     Lista da ICCEC (Wikipédia EN) dá como sagrante o nº 1, Austin Randolph Adler (patriarca da ICCEC). A Wikipédia
-    PT dá a mesma data. Sucessão: ICCEC. Sagrantes não nomeados. Igreja Episcopal Carismática do Brasil — Diocesano
-    do Litoral Sul e Estado de Alagoas. A tese não informa local nem sagrantes.
+    PT dá a mesma data. Sucessão: ICCEC. Versão divergente: várias fontes dão 2007-04-14 (Wikipédia PT, ICCEC/Wikipédia
+    EN, Costa). A Câmara do Recife (2012, discurso do vereador autor da homenagem) diz 2005 para a sagração e 2007
+    para a condição de bispo auxiliar do Recife/diocesano da Zona Sul. Ver duvidas. Sagrantes não nomeados. Igreja
+    Episcopal Carismática do Brasil — Diocesano do Litoral Sul e Estado de Alagoas. A tese não informa local nem
+    sagrantes.
 affiliations:
 - jurisdiction: iecb
   role: clergy
@@ -79,3 +90,22 @@ affiliations:
     page: '55'
   notes: >-
     Local: Catedral da Reconciliação. Nota 14 (p. 58): a Diocese da Zona Sul está sediada na Catedral da Reconciliação.
+- jurisdiction: iecb
+  role: diocesan_bishop
+  diocese: iecb-zona-sul
+  status: probable
+  sources:
+  - source: ier-betesda-onde-estamos
+    quote: 'Bispo Diocesano: Dom Alexandre Ximenes'
+  - source: ier-camara-recife-ximenes-2012
+    quote: Foi aí que se tornou Bispo Diocesano e Deão da Catedral da Reconciliação, em Boa Viagem
+  notes: Câmara do Recife (2012) também o diz Deão da Catedral da Reconciliação.
+- jurisdiction: iecb
+  role: other
+  role_description: bispo_colaborador
+  diocese: iecb-diocese-recife
+  status: probable
+  sources:
+  - source: ier-trindade-blog-igreja
+    quote: Dom Alexandre Ximenes
+  notes: Aparece como "Bispo Colaborador" na equipe ministerial da Catedral da Trindade (sem data).

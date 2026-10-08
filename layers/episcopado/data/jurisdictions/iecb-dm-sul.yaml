@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iecb-dm-sul
+name: Diocese Missionária Sul (IECB)
+aliases:
+- Diocese Missionária Sul
+type: diocese
+tradition: charismatic_episcopal
+country: BR
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ier-betesda-onde-estamos
+    quote: Bispo Luis Fernando Lopes

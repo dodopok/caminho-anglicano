@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: caci
+acronym: CACI
+name: Communion of Anglican Churches International
+type: communion
+description: >-
+  Comunhão anglicana internacional da qual o bispo José Moreno (Igreja Anglicana das Américas, Brasil) declara ser
+  membro. Só foi localizada essa menção; fundação, sede e demais membros não foram confirmados.
+sources:
+- source: nigweb-moreno-identidade-2026
+  quote: membro do GAFCON e da CACI (Communion of Anglican Churches International)

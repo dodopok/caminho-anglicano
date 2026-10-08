@@ -1,7 +1,11 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-litoranea-do-nordeste-do-brasil-dlnb-catedral-do-redentor
-name: Diocese Litorânea do Nordeste do Brasil (DLNB), Catedral do Redentor
+name: Diocese Litorânea do Nordeste do Brasil (ICEB)
+aliases:
+- Diocese Litorânea do Nordeste do Brasil (Catedral do Redentor)
+- Diocese Litorânea do Nordeste do Brasil (DLNB), Catedral do Redentor
 type: diocese
+country: BR
 relations:
 - type: part_of
   target: iceb
@@ -9,3 +13,5 @@ relations:
   sources:
   - source: ciceb-quemsomos
     quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo Helson Paulo Cruz)
+  - source: ier-yt-iceb-helson-provincia
+    quote: Sagração do Bispo Helson e  Instituição da Província da Igreja Cristã Episcopal do Brasil

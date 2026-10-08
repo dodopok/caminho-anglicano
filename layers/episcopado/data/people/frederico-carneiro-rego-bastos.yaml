@@ -4,6 +4,7 @@ name: Frederico Carneiro Rêgo Bastos
 full_name: Frederico Carneiro Rêgo Bastos
 aliases:
 - Dom Fred
+- Dom Fred Bastos
 - Dom Frederico Bastos
 - Frederico Bastos
 biography: Bispo/clérigo ligado à jurisdição IECB; ver afirmações.
@@ -56,9 +57,12 @@ affiliations:
   start: '2007-04-14'
   status: probable
   sources:
+  - source: ier-betesda-onde-estamos
+    quote: 'Bispo Diocesano: Dom Frederico Bastos'
   - source: cant-novas-igrejas-2024
     quote: Frederico Carneiro Rêgo Bastos (Diocesano de Vitória de Santo Antão)
     page: '55'
+  notes: Estado anterior à mudança de 2025 (diretório sem data).
 - jurisdiction: iecb
   role: bishop
   start: '2007-04-14'
@@ -74,6 +78,16 @@ affiliations:
       Três anos depois, o SETEC chegou à cidade de Vitória de Santo Antão, por iniciativa do bispo Frederico Bastos.
     page: '260'
   notes: Levou o SETEC a Vitória de Santo Antão (p. 260); a tese não lhe atribui uma diocese.
+- jurisdiction: iecb
+  role: coadjutor_bishop
+  diocese: iecb-diocese-recife
+  status: probable
+  sources:
+  - source: ier-betesda-16anos-2025
+    quote: Dom Frederico Bastos (Coadjutor do Arcebispo e Diocese do Recife)
+  notes: >-
+    Confirma a Wikipédia PT (coadjutor 2025-). O diretório da Catedral Betesda (sem data) ainda o lista como bispo
+    diocesano de Vitória de Santo Antão.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -107,6 +121,15 @@ events:
       Primeiro aconteceu a saída do rev. Paulo Garcia, acompanhado dos reverendos Célio Spineli, Edgar Ferreira
       e Frederico Bastos, que ficaram na posse do templo da Catedral Episcopal Anglicana, na Rua Carneiro Vilela,
       e as missões Bem-Aventuranças e Pedra Viva.
+- type: other
+  date: '2025-10-12'
+  description: >-
+    Celebração de 16 anos da Catedral Betesda (Olinda), com Paulo Garcia, Frederico Bastos (coadjutor do Recife),
+    Francisco Rubem (Olinda) e Marcel (coadjutor de Olinda).
+  status: confirmed
+  sources:
+  - source: ier-betesda-16anos-2025
+    quote: Dia 12 de Outubro a Catedral Betesda (Olinda -PE) celebrou 16 anos de existêcia.
 - type: other
   date: '2024'
   description: >-

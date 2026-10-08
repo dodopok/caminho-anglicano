@@ -4,6 +4,7 @@ name: Tony Belo Pereira
 full_name: Tony Belo Pereira
 aliases:
 - Dom Tony
+- Dom Tony Bello
 - Dom Tony Pereira
 - Tony Bello
 - Tony Belo
@@ -18,18 +19,22 @@ ordinations:
   office: diocesan
   status: probable
   sources:
+  - source: ier-yt-jorge-sergio-tony
+    quote: 'Cerimônia de Sagração ao Episcopado : Rev. Jorge Siqueira; Rev. Sérgio Presta; Rev. Tony Belo'
   - source: ptwiki-iecb
     quote: Tony Belo Pereira (2022)
   - source: cant-novas-igrejas-2024
     quote: Tony Belo (Diocesano de Petrolina), em 13 de outubro de 2022
     page: '57'
   notes: >-
-    Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida
-    via Paulo Garcia (ICCEC/Adler), não declarada caso a caso. Livro: 'Tony Belo'/'Tony Bello'. Sagrantes não nomeados.
+    Cerimônia coletiva; título sem data (base: 2022-10-13). A Diocese de Petrolina foi fundada em 12/02/2023 segundo
+    o próprio bispo. Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão
+    presumida via Paulo Garcia (ICCEC/Adler), não declarada caso a caso. Livro: 'Tony Belo'/'Tony Bello'. Sagrantes
+    não nomeados.
 affiliations:
 - jurisdiction: iecb
   role: bishop
-  diocese: diocese-de-petrolina-diocese-de-paulista
+  diocese: diocese-de-petrolina
   start: '2022'
   status: probable
   sources:
@@ -39,13 +44,26 @@ affiliations:
 - jurisdiction: iecb
   role: diocesan_bishop
   diocese: diocese-de-petrolina
-  start: '2022-10-13'
+  start: '2023-02-12'
   status: probable
   sources:
+  - source: ier-blogdomagno-petrolina-2023
+    quote: A sede em Petrolina terá como Bispo Diocesano, o REVMº Dom Tony Bello.
+  - source: ier-edenevaldo-petrolina-2023
+    quote: A Diocese de Petrolina-PE, foi fundada em 12/02/2023, e está sob a supervisão do Bp. Dom Tony Bello
   - source: cant-novas-igrejas-2024
     quote: O seu bispo diocesano é dom Tony Bello, que lidera a jurisdição
     page: '63'
-  notes: 'Local: Catedral do Semeador.'
+  notes: >-
+    Instalação da catedral anunciada em 06/02/2023 para "o próximo domingo" (12/02/2023); jurisdição declarada "de
+    Arcoverde-PE à Itapetinga-BA".
+  discrepancies:
+  - field: start
+    value: '2022-10-13'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: O seu bispo diocesano é dom Tony Bello, que lidera a jurisdição
+      page: '63'
 events:
 - type: other
   date: '2023-02-12'
