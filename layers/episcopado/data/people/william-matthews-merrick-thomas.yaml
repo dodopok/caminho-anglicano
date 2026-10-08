@@ -4,6 +4,7 @@ name: William Matthews Merrick Thomas
 full_name: William Matthew(s) Merrick Thomas
 aliases:
 - Bishop Thomas of Southern Brazil
+- Rev. W. M. M. Thomas
 - W. M. M. Thomas
 - William M. M. Thomas
 - William Mathew Merrick Thomas
@@ -166,7 +167,12 @@ affiliations:
       For six years he was a professor in the theological school at Rio Grande do Sul, and from 1907 to 1911 was
       also rector of the Church of the Saviour there. In 1912 he founded the Southern Cross School at Porte Alegre,
       of which he was headmaster until his election and consecration as suffragan bishop in 1925.
-  notes: 'Local: Rio Grande / Porto Alegre. Wikipédia EN dá reitorado 1907-1910; Witness 1907-1911.'
+  - source: liv-stokes-kinsolving
+    quote: who had come to the Mission in 1904 upon graduation from the Virginia Theologi- cal Seminary
+    page: '18'
+  notes: >-
+    Local: Rio Grande / Porto Alegre. Wikipédia EN dá reitorado 1907-1910; Witness 1907-1911. Fundou a Southern
+    Cross School (Porto Alegre) em 1912.
 - jurisdiction: dmsb
   role: bishop
   diocese: southern-brazil
@@ -270,6 +276,16 @@ events:
   sources:
   - source: wit-1949-09-01
     quote: BISHOP THOMAS BIDS FAREWELL
+- type: other
+  date: '1912'
+  description: Fundação da Southern Cross School em Porto Alegre, em 1912, pelo Rev. William M. M. Thomas.
+  status: probable
+  sources:
+  - source: liv-stokes-kinsolving
+    quote: >-
+      The first major school was the Southern Cross School, founded in 1912 in Porto Alegre by the Rev. William
+      M. M. Thomas
+    page: '18'
 - type: other
   date: '1925-10-17'
   description: >-

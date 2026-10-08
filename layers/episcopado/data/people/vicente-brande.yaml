@@ -38,6 +38,9 @@ ordinations:
     quote: >-
       Em 28 de Agosto de 1893, no mesmo local, o Revmo. Peterkin ordenou diácono o Sr. Vicente Brande, o primeiro
       ministro nativo da Igreja que desabrochava.
+  - source: liv-implantacao-ieab
+    quote: Esse Vicente Brande se tornaria no ano de 1893 o primeiro Reverendo bra sileiro da Igreja Episcopal.
+    page: '15'
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1893 - … Vicente Brande
     page: '369'
@@ -49,8 +52,10 @@ ordinations:
   notes: >-
     Fato (4 diáconos por Peterkin em 1893) confirmado por várias fontes; o nome deste ordenando consta só em Kickhofel.
     Visita episcopal de Peterkin; biografia de Kinsolving (1961) dá a data completa. O 'mesmo local' é a cidade
-    do Rio Grande (Capela do Salvador, citada no parágrafo anterior). Ano tirado da lista do clero nacional por
-    ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    do Rio Grande (Capela do Salvador, citada no parágrafo anterior). A monografia diz que Brande se tornou em 1893
+    o primeiro 'Reverendo' brasileiro da Igreja Episcopal; interpretado aqui como a ordenação diaconal de 1893 (a
+    fonte não detalha a ordem). Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel,
+    1995); ordenante não informado.
 - order: presbyterate
   date: '1897-05-13'
   jurisdiction: dmsb
@@ -76,6 +81,19 @@ ordinations:
     é chamado 'Isterling', bispo das ilhas Falkland residente em Buenos Aires (Waite Hockin Stirling); a biografia
     não dá a data (outras fontes: 1897). A tese escreve '13 de maio de 1987', erro evidente por 1897 (a visita de
     Stirling começou em 6/5/1897).
+affiliations:
+- jurisdiction: dmsb
+  role: other
+  role_description: catequista
+  start: '1890'
+  status: probable
+  sources:
+  - source: liv-implantacao-ieab
+    quote: >-
+      Chegaram e foram a procura do Sr Vicente Brande, diretor de un colégio misto, e também membro da Igreja presbiteriana.
+    page: '15'
+  notes: >-
+    Em 1890 era presbiteriano e diretor de colégio; tornou-se depois o primeiro clérigo brasileiro da igreja episcopal.
 events:
 - type: other
   date: '1890-06-01'
@@ -131,3 +149,21 @@ events:
   - source: drv-kinsolving-ivo
     quote: >-
       Durante a sua permanência no Rio Grande do Sul, confirmara 142 pessoas e ordenara 4 mo- ços no diaconato.
+- type: other
+  date: '1890-04-21'
+  description: >-
+    Chegada de Morris, Kinsolving e do casal Boaventura de Oliveira a Porto Alegre em 21/04/1890, com carta de apresentação
+    do professor Eduardo Carlos Pereira; foram recebidos pelo presbiteriano Vicente Brande, que localizou a casa
+    da missão (rua Voluntários da Pátria, 387, bairro Caminho do Meio).
+  status: probable
+  sources:
+  - source: liv-implantacao-ieab
+    quote: >-
+      Chegaram os missionários Morris e Kinsolving, juntamente com o casal Oliveira, no dia 21 de Abril de 1890
+      na cidade de Porto Alegre.
+    page: '15'
+  - source: liv-implantacao-ieab
+    quote: >-
+      Ficava essa casa na rua Voluntários da Pátria, 387, num bairro chamado na época Caminho do Meio, em Porto
+      Alegre.
+    page: '15'

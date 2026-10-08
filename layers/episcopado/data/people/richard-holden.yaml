@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: richard-holden
+name: Richard Holden
+aliases:
+- R. Holden
+- Richard Holdem
+birth:
+  date: '1828'
+  sources:
+  - source: liv-implantacao-ieab
+    quote: nele Holden afirmou ter nascido en Dudee, Escócia, no ano de 1828
+    page: '10'
+  - source: liv-implantacao-ieab
+    quote: Chegou R. Holden ao Brasil no final do mês de Novembro de 1860
+    page: '10'
+  - source: liv-implantacao-ieab
+    quote: Morreu no ano de 1886 em Lisboa, Portugal.
+    page: '11'
+death:
+  date: '1886'
+  sources:
+  - source: liv-implantacao-ieab
+    quote: nele Holden afirmou ter nascido en Dudee, Escócia, no ano de 1828
+    page: '10'
+  - source: liv-implantacao-ieab
+    quote: Chegou R. Holden ao Brasil no final do mês de Novembro de 1860
+    page: '10'
+  - source: liv-implantacao-ieab
+    quote: Morreu no ano de 1886 em Lisboa, Portugal.
+    page: '11'
+biography: >-
+  Missionário da Igreja Episcopal Protestante dos EUA que tentou implantar o anglicanismo em português no Brasil
+  entre 1860 e 1864 (Maranhão/Belém e Salvador), tradutor do Livro de Oração Comum; depois passou à Igreja Congregacional
+  e ao movimento darbista. Nascido em Dundee (Escócia) em 1828; morreu em Lisboa em 1886.
+sources:
+- source: liv-implantacao-ieab
+  quote: nele Holden afirmou ter nascido en Dudee, Escócia, no ano de 1828
+  page: '10'
+- source: liv-implantacao-ieab
+  quote: Chegou R. Holden ao Brasil no final do mês de Novembro de 1860
+  page: '10'
+- source: liv-implantacao-ieab
+  quote: Morreu no ano de 1886 em Lisboa, Portugal.
+  page: '11'
+affiliations:
+- jurisdiction: tec
+  role: other
+  role_description: missionario
+  start: 1860-11
+  end: '1864'
+  end_reason: left
+  status: probable
+  sources:
+  - source: liv-implantacao-ieab
+    quote: >-
+      Esse missionário que veio para o Brasil a serviço da Igreja Protestante Episcopal doe Estados Unidos, mais
+      tarde passou para a I- greja Congregacional.
+    page: '11'
+  - source: liv-implantacao-ieab
+    quote: abandonou a Bahia
+    page: '11'
+  notes: >-
+    Atuou em Belém (Pará) e depois Salvador (Bahia); a monografia diz que abandonou a Bahia em 1864. Passou depois
+    à Igreja Congregacional e ao grupo darbista.
+events:
+- type: other
+  date: 1860-11
+  description: >-
+    Missão de Richard Holden: chegou ao Brasil no fim de novembro de 1860 (Maranhão e depois Belém do Pará), transferiu-se
+    para Salvador após ataques da imprensa e do bispo católico local, fundou uma escola dominical e distribuiu exemplares
+    do Livro de Oração Comum que traduzira; abandonou a Bahia em 1864.
+  status: probable
+  sources:
+  - source: liv-implantacao-ieab
+    quote: Chegou R. Holden ao Brasil no final do mês de Novembro de 1860
+    page: '10'
+  - source: liv-implantacao-ieab
+    quote: A ação desse missionário se deu primeiro em Belém, capital do entado do Pará.
+    page: '10'
+  - source: liv-implantacao-ieab
+    quote: Chegou a fundar uma Escola Dominical
+    page: '11'

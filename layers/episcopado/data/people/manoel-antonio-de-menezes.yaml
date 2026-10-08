@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: manoel-antonio-de-menezes
+name: Manoel Antonio de Menezes
+events:
+- type: other
+  date: '1891'
+  description: >-
+    Congregação presbiteriana de Rio Grande (fundada em 1876 por Emanuel Van Orden, então sob o pastor Manoel Antonio
+    de Menezes) transferiu-se à Igreja Episcopal em 1891; a monografia afirma que foi simples transferência de congregação,
+    sem evidência documental de um acordo entre as igrejas, e que o ato marcou o início da Igreja Episcopal em Rio
+    Grande.
+  status: probable
+  sources:
+  - source: liv-implantacao-ieab
+    quote: pelo missionário e jornalista plesbiteriano Emanuel Van Orden
+    page: notas finais
+  - source: liv-implantacao-ieab
+    quote: A época da transferência para os episcopals, em 1891
+    page: notas finais
+  - source: liv-implantacao-ieab
+    quote: o começo da Igreja Episcopal em Rio Grande
+    page: notas finais

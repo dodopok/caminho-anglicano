@@ -1,3 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ozi-william-whitaker
 name: Ozi William Whitaker
+events:
+- type: other
+  date: '1888'
+  description: >-
+    Apoio de um bispo 'Wittaker, da Pensilvânia' à ideia da missão ao Brasil, segundo a monografia; reações contrárias
+    de setores anglo-católicos nos EUA.
+  status: probable
+  sources:
+  - source: liv-implantacao-ieab
+    quote: Essa idéia teve o apoio do Bispo Wittaker, da Pensilvânia
+    page: '11'

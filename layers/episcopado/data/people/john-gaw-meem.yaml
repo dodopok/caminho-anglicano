@@ -2,7 +2,9 @@
 id: john-gaw-meem
 name: John Gaw Meem
 aliases:
+- John Gaw Meen
 - John Meem
+- Rev. J. G. Meem
 - Rev. John G. Meem
 - reverendo Meem
 birth:
@@ -69,6 +71,22 @@ affiliations:
     quote: the Rev. John Meem and Miss Mary Packard, daughter of the Seminary's Dean.
   - source: wp-en-kinsolving
     quote: Meem assumed primary responsibility for that geographic area until his death in 1924
+  - source: liv-stokes-kinsolving
+    quote: the Rev. John Gaw Meem, both from Virginia Seminary
+    page: '12'
+  notes: Chegada no outono de 1891.
+- jurisdiction: dmsb
+  role: other
+  role_description: pároco
+  start: c.1893
+  status: probable
+  sources:
+  - source: liv-implantacao-ieab
+    quote: A capela era a do Redentor em Pelotas, da qual Meen era pá- roco.
+    page: notas finais
+  notes: >-
+    Nota final da monografia (referências à revista The Echo, 1893-1894): Meem era pároco da capela do Redentor
+    em Pelotas. Data aproximada, deduzida das citações.
 events:
 - type: other
   date: '1892-05-23'
@@ -81,3 +99,16 @@ events:
     quote: >-
       Presentes: reverendos Morris, Brown, Meem e Kinsolving, e catequistas Boaventura, Brande e Cabral. Presidida
       por Kinsolving e secretariada por Cabral.
+- type: other
+  date: '1891'
+  description: >-
+    Chegada, no outono de 1891, de William Cabell Brown, John Gaw Meem e Mary Packard à missão; Stokes diz que formaram
+    uma 'equipe notável'.
+  status: probable
+  sources:
+  - source: liv-stokes-kinsolving
+    quote: >-
+      In the autumn of 1891 Kinsolving and Morris had been joined by the Rev. and Mrs. William Cabell Brown, and
+      the Rev. John Gaw Meem, both from Virginia Seminary, as well as by Mary Packard, the daughter of the dean
+      of the seminary.
+    page: '12'

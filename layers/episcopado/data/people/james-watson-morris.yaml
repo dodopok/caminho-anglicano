@@ -5,6 +5,7 @@ full_name: James Watson Morris
 aliases:
 - J. W. Morris
 - Morris
+- Rev. J. W. Morris
 - Rev. James W. Morris
 birth:
   date: '1859'
@@ -16,8 +17,14 @@ birth:
     quote: Este faleceu em 1954, aos 95 anos, sendo sepultado no cemitério do Seminário de Virgínia
     page: '62'
 death:
-  date: '1954'
+  date: '1954-03-31'
   sources:
+  - source: liv-stokes-kinsolving
+    quote: Dr. Morris died on March 31, 1954, in Richmond, Virginia, at the age of 94.
+    page: '1'
+  - source: liv-stokes-kinsolving
+    quote: Morris was the faithful pastor and organizer of con- gregations
+    page: '12'
   - source: costa2021
     quote: Sabemos que ele nasceu em 1859, e era filho de Charles Morris e Mary Minor Morris.
     page: '50'
@@ -47,12 +54,17 @@ ordinations:
     quote: >-
       ordained Kinsolving and fellow Virginia Seminary graduate James Watson Morris deacons in June and priests
       in August, 1889
+  - source: liv-implantacao-ieab
+    quote: ordenação ao dia- conato no dia 29 de Junho de 1889, pelo Bispo Whistle
+    page: '14'
   - source: costa2021
     quote: >-
       O bispo da Diocese de Virgínia, Francis McNeece Whittle realizou a ordenação diaconal de Lucien Lee Kinsolving
       e de James Vson Watson Morris, em 29 de junho de 1889.
     page: '50'
-  notes: A tese grafa 'James Vson Watson Morris' (erro de digitação).
+  notes: >-
+    A monografia trata dos dois missionários em conjunto e grafa o bispo como 'Whistle'; trata-se do bispo da Virgínia,
+    Francis McNeece Whittle, conforme outras fontes. A tese grafa 'James Vson Watson Morris' (erro de digitação).
 - order: presbyterate
   date: '1889-08-04'
   place: Capela do Seminário Teológico de Virgínia
@@ -64,11 +76,16 @@ ordinations:
     quote: >-
       ordained Kinsolving and fellow Virginia Seminary graduate James Watson Morris deacons in June and priests
       in August, 1889
+  - source: liv-implantacao-ieab
+    quote: A ordenação ao presbiterado aconteceu no dia 04 de Agosto de mesmo ano
+    page: '14'
   - source: costa2021
     quote: No dia 04 de agosto do mesmo ano, ambos foram ordenados presbíteros na Capela do Seminário.
     page: '50'
   notes: >-
-    A tese não nomeia o ordenante do presbiterato (a frase anterior trata da ordenação diaconal por Whittle).
+    A fonte informa o intervalo de menos de dois meses entre as duas ordenações, motivado pela necessidade de partirem
+    já como presbíteros, mas não nomeia o ordenante do presbiterato. A tese não nomeia o ordenante do presbiterato
+    (a frase anterior trata da ordenação diaconal por Whittle).
 affiliations:
 - jurisdiction: dmsb
   role: clergy
@@ -120,3 +137,110 @@ events:
     quote: >-
       Dêsse número, três, já atingiram o episcopado: os Revmos. Drs. Athalicio Pithan, Egmont Machado Krischke e
       Plínio Lauer Simões
+- type: other
+  date: '1889-05-15'
+  description: >-
+    Origem da missão de 1889: a ideia surgiu em 1888 entre seminaristas do Seminário de Virgínia; os candidatos
+    iniciais R. A. Roderick e F. P. Clark ficaram impedidos (acidente e doença grave) e foram substituídos por Morris
+    e Kinsolving. A monografia data a decisão da vinda da missão em 19/12/1888 e a aceitação do pedido de Morris
+    e Kinsolving em 15/05/1889.
+  status: probable
+  sources:
+  - source: liv-implantacao-ieab
+    quote: O interesse dos alunos pelo Brasil, foi mais forte entre os estudantes R.A. Roderick e F.P. Clark.
+    page: '12'
+  - source: liv-implantacao-ieab
+    quote: no dia 19 de Dezembro de 1888, ficou decidido a vinda da missão ao Brasil
+    page: '13'
+  - source: liv-implantacao-ieab
+    quote: No dia 15 de Maio de 1889, é aceito o pedido de Morris e Kinsolving
+    page: '13'
+- type: other
+  date: 1889-03
+  description: >-
+    Stokes narra a origem da missão: no outono de 1888 James Morris discursou à American Church Missionary Society
+    em Washington pedindo o envio de seminaristas ao Brasil; em março de 1889 a sociedade concordou em enviar dois
+    estudantes; os dois voluntários originalmente aprovados não puderam ir por motivos de saúde e Morris e Kinsolving
+    os substituíram.
+  status: probable
+  sources:
+  - source: liv-stokes-kinsolving
+    quote: Holding a rather desultory meeting in the fall of 1888 in a church basement in Washington
+    page: '4'
+  - source: liv-stokes-kinsolving
+    quote: Finally, in March, 1889, the society agreed to send two of the students
+    page: '4'
+  - source: liv-stokes-kinsolving
+    quote: Both were unable to go for reasons of health.
+    page: '4'
+- type: other
+  date: 1889-09
+  description: >-
+    Viagem de Morris e Kinsolving ao Brasil: Stokes dá a partida de Newport News em 1.º/09/1889; a monografia dá
+    o início da viagem em 31/08/1889, a chegada ao Rio de Janeiro em 26/09 e a viagem de navio terminando em Santos
+    no último dia de setembro.
+  status: probable
+  sources:
+  - source: liv-stokes-kinsolving
+    quote: ON September 1, 1889, Morris and Kinsolving sailed from Newport News, Virginia.
+    page: '7'
+  - source: liv-implantacao-ieab
+    quote: A viagem para o Brasil iniciou no dia 31 de Agosto do ano de 1889.
+    page: '14'
+  - source: liv-implantacao-ieab
+    quote: chegaram ao porto do Rio de Janeiro, no dia 26 de Setembro
+    page: '14'
+- type: other
+  date: 1889-10
+  description: >-
+    Seis meses de estudo de português em vilarejo do interior paulista (Cruzeiro, segundo a monografia) com jovem
+    pastor presbiteriano, identificado numa nota como Benedito Ferraz; Stokes menciona motim instigado por padre
+    católico, do qual os missionários fugiram por um parreiral.
+  status: probable
+  sources:
+  - source: liv-stokes-kinsolving
+    quote: >-
+      Landing in Brazil at Santos, they went to a small village where for six months they studied under a young
+      Presbyterian pastor.
+    page: '8'
+  - source: liv-implantacao-ieab
+    quote: onde ficaram durante seis meses estudando a língua portuguesa
+    page: '14'
+  - source: liv-implantacao-ieab
+    quote: Esse jovem pastor era o reverendo Benedito Ferraz
+    page: notas finais
+- type: other
+  date: '1890-04-21'
+  description: >-
+    Chegada de Morris, Kinsolving e do casal Boaventura de Oliveira a Porto Alegre em 21/04/1890, com carta de apresentação
+    do professor Eduardo Carlos Pereira; foram recebidos pelo presbiteriano Vicente Brande, que localizou a casa
+    da missão (rua Voluntários da Pátria, 387, bairro Caminho do Meio).
+  status: probable
+  sources:
+  - source: liv-implantacao-ieab
+    quote: >-
+      Chegaram os missionários Morris e Kinsolving, juntamente com o casal Oliveira, no dia 21 de Abril de 1890
+      na cidade de Porto Alegre.
+    page: '15'
+  - source: liv-implantacao-ieab
+    quote: >-
+      Ficava essa casa na rua Voluntários da Pátria, 387, num bairro chamado na época Caminho do Meio, em Porto
+      Alegre.
+    page: '15'
+- type: other
+  date: 1890-06
+  description: >-
+    Primeiro culto anglicano em português em Porto Alegre, no Domingo da Trindade de 1890, com Morris oficiante
+    e Kinsolving pregador (a semana seguinte inverteu os papéis), sem eucaristia. A monografia grafa a data como
+    '19 de Junho de 1890'; Stokes diz apenas 'Trinity Sunday, 1890'.
+  status: probable
+  sources:
+  - source: liv-implantacao-ieab
+    quote: Domingo da Trindade, 19 de Junho de 1890
+    page: '15'
+  - source: liv-implantacao-ieab
+    quote: culto foi oficiante o Rev. Morris e pregador o Rev. Kinsolving
+    page: '16'
+  - source: liv-stokes-kinsolving
+    quote: There on Trinity Sunday, 1890, they held their first service.
+    page: '9'

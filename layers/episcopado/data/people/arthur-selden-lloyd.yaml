@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: arthur-selden-lloyd
+name: Arthur Selden Lloyd
+biography: >-
+  Reitor em Norfolk em 1889, presente ao culto de despedida; depois bispo sufragâneo de Nova York e secretário da
+  Junta de Missões, simpático à missão brasileira.
+sources:
+- source: liv-stokes-kinsolving
+  quote: Arthur Selden Lloyd, later Suffragan Bishop of New York
+  page: '8'
+- source: liv-stokes-kinsolving
+  quote: Arthur Selden Lloyd, strongly sympathetic to the Brazilian Mission, was now the secretary
+  page: '16'
+events:
+- type: other
+  date: '1889-08-31'
+  description: >-
+    Culto de despedida em Norfolk (Virgínia) na véspera da partida de Morris e Kinsolving, com a presença de três
+    reitores que seriam depois bispos: Beverley D. Tucker, William L. Gravatt e Arthur S. Lloyd.
+  status: probable
+  sources:
+  - source: liv-stokes-kinsolving
+    quote: >-
+      The night before there had been a small service at which a few friends had gathered to bid them godspeed.
+    page: '7'
+  - source: liv-stokes-kinsolving
+    quote: >-
+      Beverley Dandridge Tucker, later Bishop of Southern Virginia; William Loyall Gravatt, later Bishop of West
+      Virginia; and Arthur Selden Lloyd, later Suffragan Bishop of New York.
+    page: '8'
+- type: other
+  date: '1907'
+  description: >-
+    Transferência dos fundos da American Church Missionary Society para a Junta de Missões, cujo secretário era
+    Arthur Selden Lloyd; em 1907 a Convenção Geral estabeleceu o Distrito Missionário do Brasil, com Kinsolving
+    como bispo missionário.
+  status: probable
+  sources:
+  - source: liv-stokes-kinsolving
+    quote: >-
+      arrangements were made for the transfer of the funds of the American Church Mission- ary Society Board to
+      the Board of Missions
+    page: '16'
+  - source: liv-stokes-kinsolving
+    quote: In 1907 the General Convention established the Missionary District of Brazil
+    page: '16'
