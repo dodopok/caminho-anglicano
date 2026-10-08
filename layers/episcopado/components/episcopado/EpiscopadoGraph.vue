@@ -117,6 +117,8 @@ const EDGE_SIZE: Record<string, number> = {
   affiliation: 0.7
 }
 const HALO_EXTRA = 3.5
+/** Cor dos vínculos na vista ampla: presentes, mas sem competir com as ordenações. */
+const AFFILIATION_QUIET = 'rgba(120, 110, 95, 0.18)'
 /** Rótulos curtos das arestas (aparecem ao passar o mouse). */
 const EDGE_SHORT: Record<string, string> = {
   consecration: 'sagração',
@@ -137,6 +139,10 @@ const EDGE_SHORT: Record<string, string> = {
 const FORCE_LABELS_MAX = 14
 /** Acima disso o layout local não compensa: usa as posições globais. */
 const LOCAL_LAYOUT_MAX = 320
+/** Acima disso a vista é "ampla": layout por aglomerados e arestas mais discretas. */
+const WIDE_VIEW = 60
+/** Peso das arestas no layout da vista ampla: a sucessão puxa mais que os vínculos. */
+const LAYOUT_WEIGHT: Partial<Record<EdgeGroup, number>> = { ordinations: 1, relations: 1.5, affiliations: 0.25 }
 
 function nodeInfo(n: GraphNode): string {
   if (n.kind === 'jurisdiction') return n.jurisdictionType ? JURISDICTION_TYPE_LABEL[n.jurisdictionType] : 'Jurisdição'
@@ -157,10 +163,12 @@ function computeFocus() {
   for (let step = 0; step < props.depth; step++) {
     const next: string[] = []
     for (const node of frontier) {
-      // Jurisdições são hubs: só expandem no primeiro passo, senão a vizinhança vira a rede inteira.
-      if (step > 0 && graph.getNodeAttribute(node, 'kind') === 'jurisdiction') continue
+      // Jurisdições são hubs: depois do primeiro passo só sobem para a igreja a que pertencem
+      // (diocese → província), senão a vizinhança vira a rede inteira.
+      const hub = step > 0 && graph.getNodeAttribute(node, 'kind') === 'jurisdiction'
       graph.forEachEdge(node, (_edge, attrs, source, target) => {
         if (attrs.halo || !props.groups[attrs.group as EdgeGroup]) return
+        if (hub && !(attrs.kind === 'part_of' && source === node)) return
         const other = source === node ? target : source
         if (!seen.has(other)) {
           seen.add(other)
@@ -200,6 +208,15 @@ function refresh(animate = true) {
   g.forEachNode((id, attrs) => {
     if (baseVisible(id, attrs)) visible.add(id)
   })
+  // Quem ficou sem nenhuma ligação à vista (os vizinhos foram filtrados) sairia solto no canvas.
+  const linked = new Set<string>()
+  g.forEachEdge((_e, attrs, s, t) => {
+    if (!attrs.halo && edgeShown(attrs, s, t)) {
+      linked.add(s)
+      linked.add(t)
+    }
+  })
+  for (const id of [...visible]) if (id !== props.selected && !linked.has(id)) visible.delete(id)
   let edges = 0
   g.forEachEdge((_e, attrs, s, t) => {
     if (!attrs.halo && edgeShown(attrs, s, t)) edges++
@@ -207,7 +224,7 @@ function refresh(animate = true) {
   visibleCount.value = visible.size
   visibleEdges.value = edges
   emit('counts', visible.size, edges)
-  forceAllJurisdictionLabels = visible.size <= 160
+  forceAllJurisdictionLabels = visible.size <= WIDE_VIEW
   relayout(animate)
   sigma?.refresh()
 }
@@ -229,9 +246,15 @@ function relayout(animate: boolean) {
       sub.addNode(id, { x: o.x, y: o.y, size: graph.getNodeAttribute(id, 'size') })
     }
     graph.forEachEdge((_e, attrs, s, t) => {
-      if (!attrs.halo && visible.has(s) && visible.has(t) && !sub.hasEdge(s, t) && !sub.hasEdge(t, s)) sub.addEdge(s, t)
+      if (!attrs.halo && visible.has(s) && visible.has(t) && !sub.hasEdge(s, t) && !sub.hasEdge(t, s)) sub.addEdge(s, t, { weight: LAYOUT_WEIGHT[attrs.group as EdgeGroup] ?? 1 })
     })
-    if (sub.size > 0) {
+    if (sub.size > 0 && visible.size > WIDE_VIEW) {
+      // Vista ampla (núcleo brasileiro): LinLog separa os aglomerados (igrejas e suas linhas de
+      // sucessão) em vez de comprimir tudo num disco; a segunda passada afasta nós sobrepostos.
+      const inferred = forceAtlas2.inferSettings(sub)
+      forceAtlas2.assign(sub, { iterations: 500, settings: { ...inferred, barnesHutOptimize: false, linLogMode: true, scalingRatio: 30, gravity: 0.08, outboundAttractionDistribution: true, edgeWeightInfluence: 1, slowDown: 3 } })
+      forceAtlas2.assign(sub, { iterations: 150, settings: { ...inferred, barnesHutOptimize: false, linLogMode: true, scalingRatio: 30, gravity: 0.08, outboundAttractionDistribution: true, edgeWeightInfluence: 1, adjustSizes: true, slowDown: 5 } })
+    } else if (sub.size > 0) {
       forceAtlas2.assign(sub, {
         iterations: 200,
         settings: { ...forceAtlas2.inferSettings(sub), barnesHutOptimize: false, scalingRatio: 60, gravity: 0.8, strongGravityMode: true, adjustSizes: true, slowDown: 2 }
@@ -450,6 +473,8 @@ onMounted(async () => {
       }
       const touchesSelected = props.selected && (source === props.selected || target === props.selected)
       if (data.halo) {
+        // Na vista ampla sem foco o halo das contestadas vira ruído; volta ao selecionar.
+        if (!hovered && !props.selected && visible.size > WIDE_VIEW) res.hidden = true
         if (touchesSelected) res.size = (data.size as number) + 1.5
         return res
       }
@@ -467,6 +492,15 @@ onMounted(async () => {
       }
       res.label = showLabel ? data.label : ''
       res.forceLabel = showLabel
+      // Vista ampla sem foco: vínculos e relações recuam para as linhas de sucessão aparecerem.
+      if (!hovered && !props.selected && visible.size > WIDE_VIEW) {
+        if (data.group === 'affiliations') {
+          res.color = AFFILIATION_QUIET
+          res.size = (data.size as number) * 0.7
+        } else {
+          res.size = (data.size as number) * 0.75
+        }
+      }
       return res
     }
   })

@@ -51,3 +51,36 @@ describe('buildGraph', () => {
     expect(graph.edges.filter((e) => e.kind === 'affiliation')).toHaveLength(2)
   })
 })
+
+describe('buildGraph: dioceses e ligações implícitas', () => {
+  const b: Base = {
+    people: [
+      // Como Edgar (IECB): vínculo só pela diocese, que não tem país nem relação cadastrada.
+      { id: 'edgar', name: 'Edgar', ordinations: [{ order: 'episcopate', date: '2019', jurisdiction: 'igreja', status: 'confirmed', sources: src }], affiliations: [{ jurisdiction: 'igreja', diocese: 'mata', role: 'bishop', status: 'probable', sources: src }] },
+      // Como Salomão Ferraz (ICAB): só ordenações, nenhum vínculo.
+      { id: 'salomao', name: 'Salomão', ordinations: [{ order: 'episcopate', date: '1945', jurisdiction: 'icab', status: 'confirmed', sources: src }] }
+    ],
+    jurisdictions: [
+      { id: 'igreja', name: 'Igreja', type: 'national_church', country: 'BR' },
+      { id: 'mata', name: 'Diocese da Mata', type: 'diocese' },
+      { id: 'sub', name: 'Paróquia-diocese', type: 'diocese', relations: [{ type: 'part_of', target: 'mata', status: 'confirmed', sources: src }] },
+      { id: 'icab', name: 'ICAB', type: 'national_church', country: 'BR' }
+    ],
+    sources: base.sources
+  }
+  const g = buildGraph(b)
+  const node = (id: string) => g.nodes.find((n) => n.id === id)!
+
+  it('liga a diocese à igreja do vínculo e herda o país', () => {
+    expect(g.edges).toContainEqual(expect.objectContaining({ from: 'j:mata', to: 'j:igreja', kind: 'part_of' }))
+    expect(node('j:mata')).toMatchObject({ brazil: true, country: 'BR' })
+    expect(node('j:sub')).toMatchObject({ brazil: true, country: 'BR' })
+  })
+
+  it('usa a jurisdição da ordenação quando não há vínculo', () => {
+    expect(g.edges).toContainEqual(expect.objectContaining({ from: 'p:salomao', to: 'j:icab', kind: 'affiliation', label: 'episcopate' }))
+    expect(node('p:salomao').brazil).toBe(true)
+    // Edgar já tem vínculo com a igreja: a ordenação não duplica a aresta.
+    expect(g.edges.filter((e) => e.from === 'p:edgar' && e.kind === 'affiliation')).toHaveLength(1)
+  })
+})

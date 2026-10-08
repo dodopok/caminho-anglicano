@@ -89,7 +89,7 @@
               <span class="font-medium text-ep-ink">{{ a.roleDescription && a.role === 'other' ? a.roleDescription : ROLE_LABEL[a.role] }}</span>
               ·
               <button type="button" class="ep-link" @click="emit('select', `j:${(a.diocese ?? a.jurisdiction).id}`)">{{ (a.diocese ?? a.jurisdiction).acronym ?? (a.diocese ?? a.jurisdiction).name }}</button>
-              <span v-if="formatPeriod(a.start, a.end)" class="text-ep-muted"> {{ formatPeriod(a.start, a.end) }}</span>
+              <span v-if="formatPeriod(a.start, a.end)" class="ml-1 text-ep-muted">{{ formatPeriod(a.start, a.end) }}</span>
             </li>
           </ul>
           <p v-if="person.affiliations.length > 4" class="mt-1 text-xs text-ep-faint">+ {{ person.affiliations.length - 4 }} na ficha</p>
