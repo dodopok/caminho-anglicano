@@ -67,13 +67,24 @@ ordinations:
     Ordenante não informado. Esta fonte dá o presbiterato em 25/09/1988; outra fonte (nota biográfica da Diocese
     de Brasília) dá 1989.
 - order: episcopate
-  date: '2003-08-31'
+  date: '2003-08-30'
   place: Catedral Metropolitana de Brasília (Igreja Católica Romana)
   jurisdiction: ieab
   office: diocesan
-  principal_consecrator: glauco-soares-de-lima
+  principal_consecrator: orlando-santos-de-oliveira
   status: contested
   sources:
+  - source: ies-ieab-2003-dab-novo-bispo
+    quote: >-
+      Dom Orlando Santos de Oliveira, primaz da Igreja Episcopal Anglicana do Brasil, foi o bispo sagrante.
+  - source: ies-ieab-2003-dab-novo-bispo
+    quote: >-
+      No dia 31 de agosto de 2003, na Catedral Metropolitana de Brasília, da Igreja Católica Romana, foi realizada
+      a cerimônia de ordenação e sagração ao episcopado do Rev. Côn. Maurício José Araújo de Andrade.
+  - source: ies-ieab-2003-dab-cobertura
+    quote: >-
+      Dia 30/08  Cerimônia de Ordenação e Sagração, às 19h30min.Dia 31/08  Cerimônia de Investidura do 3º Bispo
+      da DAB, às 10h.
   - source: costa2021
     quote: >-
       Sua sagração teve um fato peculiar, pois ocorreu na Catedral Metropolitana de Brasília, em 31 de agosto de
@@ -96,15 +107,16 @@ ordinations:
       Glauco Soares de Lima foi o pregador
   discrepancies:
   - field: date
-    value: '2003-08-30'
+    value: '2003-08-31'
     sources:
-    - source: rtb-dma-sobre
+    - source: costa2021
       quote: >-
-        Bispo Mauricio Andrade, foi eleito Bispo da Diocese Anglicana de Brasilia no Sïnodo Geral de maio de 2003,
-        em Porto Alegre, e sagrado em 30 de agosro de 2003, dia de Santo Aidan.
-  - field: principal_consecrator
-    value: orlando-santos-de-oliveira
-    sources:
+        Sua sagração teve um fato peculiar, pois ocorreu na Catedral Metropolitana de Brasília, em 31 de agosto
+        de 2003, e teve como sagrante o Primaz, Glauco Soares de Lima.
+    - source: wp-pt-mauricio
+      quote: >-
+        Em 2003, foi eleito bispo diocesano da Diocese Anglicana de Brasília, sendo então o primeiro bispo não-católico
+        a ser sagrado na Catedral de Brasília.
     - source: rtb-sn-2003-dab
       quote: >-
         No dia 31 de agosto de 2003, na Catedral Metropolitana de Brasília, da Igreja Católica Romana, foi realizada
@@ -113,7 +125,23 @@ ordinations:
       quote: >-
         Dom Orlando Santos de Oliveira, primaz da Igreja Episcopal Anglicana do Brasil, foi o bispo sagrante. Dom
         Glauco Soares de Lima foi o pregador
+  - field: principal_consecrator
+    value: glauco-soares-de-lima
+    sources:
+    - source: costa2021
+      quote: >-
+        Sua sagração teve um fato peculiar, pois ocorreu na Catedral Metropolitana de Brasília, em 31 de agosto
+        de 2003, e teve como sagrante o Primaz, Glauco Soares de Lima.
+    - source: wp-pt-mauricio
+      quote: >-
+        Em 2003, foi eleito bispo diocesano da Diocese Anglicana de Brasília, sendo então o primeiro bispo não-católico
+        a ser sagrado na Catedral de Brasília.
   notes: >-
+    O portal da IEAB (2003) diz que a cerimônia de ordenação e sagração foi realizada na Catedral Metropolitana
+    de Brasília (católica) e a data dada na mesma matéria é 31 de agosto; a nota de cobertura prévia programa a
+    ordenação e sagração para 30/08, às 19h30, e a investidura (instalação) para 31/08, às 10h, na Catedral Anglicana
+    da Ressurreição. Participaram a bispa Catherine Waynick (Indianápolis, EUA), que pregou na instalação, Orlando
+    Guerreiro (Venezuela) e Julio Houlguin; Glauco Soares de Lima foi o pregador da sagração. Co-sagrantes não nomeados.
     O site do Distrito Missionário dá 30/08/2003 (dia de Santo Aidan); Costa (2021) dá 31/08/2003 na Catedral Metropolitana
     de Brasília, com Glauco Soares de Lima como sagrante. O Serviço de Notícias da IEAB (01/09/2003) nomeia o primaz
     Orlando Santos de Oliveira como sagrante e Glauco Soares de Lima como pregador; Costa (2021) dá Glauco como
