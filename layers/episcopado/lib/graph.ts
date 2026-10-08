@@ -180,8 +180,22 @@ export function buildGraph(base: Base): Graph {
     }
   }
 
+  inferStartYears(nodes, edges)
   edges.push(...rollupEdges(base, nodes, edges, countryOf))
   return { nodes, edges }
+}
+
+/**
+ * Sem data própria (fundação, primeira ordenação ou nascimento), o nó começa na sua ligação datada
+ * mais antiga. Assim o filtro por ano não mostra, num ano remoto, quem só aparece muito depois.
+ */
+function inferStartYears(nodes: GraphNode[], edges: GraphEdge[]) {
+  const first = new Map<string, number>()
+  for (const e of edges) {
+    if (e.year === undefined) continue
+    for (const id of [e.from, e.to]) first.set(id, Math.min(first.get(id) ?? Infinity, e.year))
+  }
+  for (const n of nodes) if (n.startYear === undefined && first.has(n.id)) n.startYear = first.get(n.id)
 }
 
 const DIOCESAN_TYPES = new Set<TJurisdiction['type']>(['diocese', 'missionary_district'])

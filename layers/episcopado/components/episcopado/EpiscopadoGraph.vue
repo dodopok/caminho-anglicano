@@ -78,6 +78,8 @@ const emit = defineEmits<{
   'reset-filters': []
   /** Quantos nós e ligações estão à vista (a cada redesenho). */
   counts: [nodes: number, edges: number]
+  /** Primeiro ano com dados entre os nós que os filtros atuais (fora o ano) deixam à vista. */
+  range: [firstYear: number | null]
 }>()
 
 type Pos = { x: number; y: number }
@@ -194,12 +196,13 @@ function levelShown(data: Record<string, unknown>): boolean {
   return !data.rollup || !props.showDioceses
 }
 
-function baseVisible(id: string, attrs: Record<string, unknown>): boolean {
+function baseVisible(id: string, attrs: Record<string, unknown>, ignoreYear = false): boolean {
   if (id === props.selected) return true
   if (attrs.kind === 'person' && !props.showPeople) return false
   if (attrs.kind === 'jurisdiction' && !props.showJurisdictions) return false
   if (hiddenDiocese(attrs)) return false
-  if (props.year !== null && typeof attrs.startYear === 'number' && attrs.startYear > props.year) return false
+  // Com o filtro de ano, quem não tem nenhuma data fica de fora: não dá para situá-lo no tempo.
+  if (!ignoreYear && props.year !== null && (typeof attrs.startYear !== 'number' || attrs.startYear > props.year)) return false
   if (focus) return focus.has(id)
   // Núcleo brasileiro: jurisdições no Brasil e os bispos ligados a elas.
   if (props.scope === 'brazil' && (!attrs.brazil || (attrs.kind === 'person' && attrs.order !== 'episcopate'))) return false
@@ -238,6 +241,11 @@ function refresh(animate = true) {
   visibleCount.value = visible.size
   visibleEdges.value = edges
   emit('counts', visible.size, edges)
+  let firstYear = Infinity
+  g.forEachNode((id, attrs) => {
+    if (typeof attrs.startYear === 'number' && attrs.startYear < firstYear && baseVisible(id, attrs, true)) firstYear = attrs.startYear
+  })
+  emit('range', Number.isFinite(firstYear) ? firstYear : null)
   forceAllJurisdictionLabels = visible.size <= WIDE_VIEW
   relayout(animate)
   sigma?.refresh()

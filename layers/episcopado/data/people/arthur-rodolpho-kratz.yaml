@@ -9,23 +9,32 @@ aliases:
 - KRATZ, ARTHUR RODOLPHO
 - bispo Kratz
 birth:
-  date: '1920-12-19'
+  date: '1920-12-23'
   sources:
-  - source: ame-21-1984
+  - source: cd1965
+    quote: b Pelotas RGS Braz 23 Dec 20
+  - source: ieablac-cd1956
     quote: >-
-      Faleceu o Bispo Primaz da Igreja Episcopal do Brasil, Dom Arthur Rodolpho Kratz, dia 4 de março, em Porto
-      Alegre, RS. Dom Arthur Kratz nasceu em Pelotas em 19 de dezembro de 1920
-    page: '4'
-  - source: costa2021
-    quote: Arthur Rodolpho Kratz nasceu em Pelotas, em 19 de dezembro de 1920.
-  - source: ens-84063
-    quote: >-
-      The Most Rev. Arthur Kratz, Bispo Primaz of the Episcopal Church of Brazil since 1972, died here after a series
-      of heart attacks. He was 62.
-  - source: kickhofel-1995
-    quote: Kratz nasceu em Pelotas no dia 19 de dezembro de 1920.
-    page: '250'
+      KRATZ, Arthur Rodolpho peeheaey Gétulio Vargas, 531, Ararangua, Santa Catarina, Braz.—P-in-c. Chap. Chr. the
+      Redeem., 1952—. b. Pelotas, R.G.S., Braz., Dec. 23, 1920;
   discrepancies:
+  - field: date
+    value: '1920-12-19'
+    sources:
+    - source: ame-21-1984
+      quote: >-
+        Faleceu o Bispo Primaz da Igreja Episcopal do Brasil, Dom Arthur Rodolpho Kratz, dia 4 de março, em Porto
+        Alegre, RS. Dom Arthur Kratz nasceu em Pelotas em 19 de dezembro de 1920
+      page: '4'
+    - source: costa2021
+      quote: Arthur Rodolpho Kratz nasceu em Pelotas, em 19 de dezembro de 1920.
+    - source: ens-84063
+      quote: >-
+        The Most Rev. Arthur Kratz, Bispo Primaz of the Episcopal Church of Brazil since 1972, died here after a
+        series of heart attacks. He was 62.
+    - source: kickhofel-1995
+      quote: Kratz nasceu em Pelotas no dia 19 de dezembro de 1920.
+      page: '250'
   - field: date
     value: '1922'
     sources:
@@ -37,13 +46,6 @@ birth:
     - source: ens-72149
       quote: >-
         He was ordained a priest in 1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
-  - field: date
-    value: '1920-12-23'
-    sources:
-    - source: cd1965
-      quote: b Pelotas RGS Braz 23 Dec 20
-    - source: cd1968
-      quote: KRATZ, Arthur Rodolpho (SBra) Trans to Brazil Ch 25 Apr 65.
 death:
   date: '1984-03-04'
   sources:
@@ -83,8 +85,6 @@ biography: >-
 sources:
 - source: cd1965
   quote: b Pelotas RGS Braz 23 Dec 20
-- source: cd1968
-  quote: KRATZ, Arthur Rodolpho (SBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
   date: '1947-02-09'

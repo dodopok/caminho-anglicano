@@ -157,3 +157,18 @@ describe('buildGraph: dioceses ocultas', () => {
     expect(rollups.some((e) => e.from === 'p:missionario')).toBe(false)
   })
 })
+
+describe('buildGraph: anos inferidos', () => {
+  it('começa o nó sem data na sua ligação datada mais antiga', () => {
+    const g = buildGraph({
+      people: [{ id: 'p', name: 'P', affiliations: [{ jurisdiction: 'sem-data', role: 'clergy', start: '1990', status: 'confirmed', sources: src }] }],
+      jurisdictions: [
+        { id: 'sem-data', name: 'Sem data', type: 'national_church', country: 'BR' },
+        { id: 'solta', name: 'Solta', type: 'national_church', country: 'BR' }
+      ],
+      sources: base.sources
+    })
+    expect(g.nodes.find((n) => n.id === 'j:sem-data')?.startYear).toBe(1990)
+    expect(g.nodes.find((n) => n.id === 'j:solta')?.startYear).toBeUndefined()
+  })
+})
