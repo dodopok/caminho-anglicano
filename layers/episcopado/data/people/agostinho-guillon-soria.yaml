@@ -120,10 +120,10 @@ affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dab
-  start: '1985'
+  start: '1985-06-09'
   end: '1988'
   end_reason: retirement
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: 1985-1988 – Agostinho Guillon Sória
@@ -132,7 +132,23 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Missionária de Brasília … 1985-1988 - Agostinho Guillon Sória
     page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      Como bispo da diocese que originou a nova região eclesiástica, Agostinho Sória optou pela nova diocese que
+      compreendia o Distrito Federal, Mato Grosso, Goiás, Tocantins e o triângulo mineiro. … Oficialmente instalada
+      no dia nove de junho de 1985 e instituído seu primeiro bispo
+    page: '305'
   notes: Costa diz tambem que assumiu Brasilia "em 1982" (conflito).
+  discrepancies:
+  - field: end
+    value: '1989'
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        Como bispo da diocese que originou a nova região eclesiástica, Agostinho Sória optou pela nova diocese que
+        compreendia o Distrito Federal, Mato Grosso, Goiás, Tocantins e o triângulo mineiro. … Oficialmente instalada
+        no dia nove de junho de 1985 e instituído seu primeiro bispo
+      page: '305'
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dm
@@ -162,3 +178,13 @@ events:
       de Cristo (Christ Church), no Rio de Janeiro, sendo sagrante o bispo primaz Arthur Rodolpho Kratz e co-sagrantes
       os bispos Edmund Knox Sherril, Olavo Ventura Luiz e Elliot Lorenz Sorge.
     page: '277'
+- type: other
+  date: '1989'
+  description: Aposentou-se por motivos de saúde, depois de 41 anos de ministério ordenado, doze como bispo
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Aposentou-se em 1989 por motivos de saúde, depois de quarenta e um anos de ministério ordenado, dos quais
+      doze como bispo.
+    page: '306'

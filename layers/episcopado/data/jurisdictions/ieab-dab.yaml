@@ -15,6 +15,18 @@ founded:
     quote: Ela foi criada em 1984 e instalada em 1985.
   - source: costa2021
     quote: Em 1982 também foi criada uma Diocese Missionária, sediada na Capital Federal
+  discrepancies:
+  - field: date
+    value: '1982'
+    sources:
+    - source: kickhofel-1995
+      quote: Diocese Missionária de Brasília, criada em 1982 e instalada em 1985.
+      page: '283'
+    - source: kickhofel-1995
+      quote: >-
+        Oficialmente instalada no dia nove de junho de 1985 e instituído seu primeiro bispo, a data assinalava também
+        o 25º. aniversário da primeira celebração eucarística da igreja em Brasília
+      page: '305'
 website: https://dab.org.br/
 description: Criada em 1984 e instalada em 1985 segundo a IEAB; Costa menciona criacao em 1982.
 sources:
@@ -87,3 +99,9 @@ relations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Missionária de Brasília … 1989 - Almir dos Santos
     page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      Como bispo da diocese que originou a nova região eclesiástica, Agostinho Sória optou pela nova diocese que
+      compreendia o Distrito Federal, Mato Grosso, Goiás, Tocantins e o triângulo mineiro. … Oficialmente instalada
+      no dia nove de junho de 1985 e instituído seu primeiro bispo
+    page: '305'

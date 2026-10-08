@@ -143,6 +143,12 @@ affiliations:
   end_reason: schism
   status: contested
   sources:
+  - source: kickhofel-1995
+    quote: >-
+      até março de 1975, quando o bispo Sherrill determinou a transferência para Recife do rev. Paulo Luiz Garcia
+      para assumir a reitoria da paróquia. Essa transferência significou o início do projeto que deu origem a nova
+      unidade eclesiástica, que recebeu o complicado nome de Diocese Setentrional.
+    page: '295'
   - source: ciceb-betania-historia
     quote: >-
       Por decisão do então Pastor e Reitor da Catedral, Rev. Paulo Garcia, em acordo com o bispo diocesano Dom Clóvis
@@ -157,10 +163,12 @@ affiliations:
   - source: ptwiki-iecb
     quote: Garcia havia atuado na Igreja Presbiteriana antes de ingressar na Igreja Episcopal do Brasil em 1970
   notes: >-
-    Reitor da Catedral (Santíssima Trindade, Recife) em 1996, sob o bispo Clóvis Erly Rodrigues. Complementa o vínculo
-    1975–2002. Antes de Recife serviu em São Paulo (Paróquia Cristo Salvador, ABC) e no Rio de Janeiro (Morro Dona
-    Marta, São Lucas-Botafogo, Redentor-Tijuca, Cristo Rei-Cidade de Deus). Liderou a Catedral da Santíssima Trindade
-    (Espinheiro), da qual é chamado "Deão". Reitor/deão da Igreja/Catedral da Trindade, Recife, desde março de 1975.
+    Reitor da Paróquia da Santíssima Trindade, Recife. O livro grafa "Paulo Luiz Garcia" aqui e "Paulo Ruiz Garcia"
+    nas pp. 278 e 300. Reitor da Catedral (Santíssima Trindade, Recife) em 1996, sob o bispo Clóvis Erly Rodrigues.
+    Complementa o vínculo 1975–2002. Antes de Recife serviu em São Paulo (Paróquia Cristo Salvador, ABC) e no Rio
+    de Janeiro (Morro Dona Marta, São Lucas-Botafogo, Redentor-Tijuca, Cristo Rei-Cidade de Deus). Liderou a Catedral
+    da Santíssima Trindade (Espinheiro), da qual é chamado "Deão". Reitor/deão da Igreja/Catedral da Trindade, Recife,
+    desde março de 1975.
   discrepancies:
   - field: start
     value: '1970'
@@ -258,3 +266,16 @@ events:
       o número de votos necessários nas duas ordens (clérigos e leigos) no terceiro escrutínio, tendo disputado
       a eleição com os colegas Jaci Correia Maraschin e Paulo Ruiz Garcia.
     page: '278'
+- type: other
+  date: 1984-07
+  description: >-
+    Era tido por Sherrill e pela delegação de Recife como certo para bispo coadjutor da Diocese Setentrional, mas
+    o Sínodo de 1984 elegeu Clóvis Erly Rodrigues
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      O resultado da eleição, que saiu no terceiro escrutínio, sob forte emoção, contrariou a vontade e os planos
+      do bispo Sherrill e da delegação, que tinham como certa a indicação do reverendo Paulo Ruiz Garcia, pároco
+      na capital pernambucana e líder espiritual naquela região.
+    page: '300'

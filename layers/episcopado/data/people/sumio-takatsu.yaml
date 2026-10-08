@@ -62,6 +62,12 @@ ordinations:
       in Apostolic succession to the Rt. Rev. Elliott Sorge who resigned the see
   - source: sinopse-2003
     quote: 1977 - Sumio Takatsu (São Paulo)
+  - source: kickhofel-1995
+    quote: >-
+      Sumio Takatsu foi sagrado no dia 12 de junho de 1977, na Igreja de São Paulo (Saint Paul's Church), em São
+      Paulo, pelo bispo primaz Arthur Rodolpho Kratz, sendo co-sagrantes os bispos Olavo Ventura Luiz, Plínio Lauer
+      Simões, Elliot Lorenz Sorge e Agostinho Guilhon Sória.
+    page: '288'
   notes: >-
     Confirma a data (12/06/1977) por fonte primária da TEC (notificação ao Presiding Bishop). Não nomeia sagrantes;
     o sagrante principal Kratz continua dependendo só de Costa (2021). Costa cita Kickhofel 1995. Eleito em 30/04/1977
@@ -73,7 +79,7 @@ affiliations:
   start: '1977-06-12'
   end: '1989'
   end_reason: resignation
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: 1977-1989 – Sumio Takatsu
@@ -82,3 +88,35 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1977-1989 - Sumio Takatsu
     page: '368'
+  - source: kickhofel-1995
+    quote: O bispo Takatsu efetivamente se aposentou no final de 1989.
+    page: '290'
+  discrepancies:
+  - field: end_reason
+    value: retirement
+    sources:
+    - source: kickhofel-1995
+      quote: O bispo Takatsu efetivamente se aposentou no final de 1989.
+      page: '290'
+events:
+- type: other
+  date: '1977-04-30'
+  description: Eleito bispo da Diocese Sul Central na quinta votação; primeiro bispo celibatário da igreja
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Novo concílio foi realizado em 30 de abril de 1977, tendo desta vez sido eleito o reverendo Sumio Takatsu,
+      que veio a ser o primeiro bispo celibatário (209) e que disputou o cargo com os dois candidatos mais votados
+      no concílio anterior. O número de votos necessários saiu na quinta votação.
+    page: '287'
+- type: other
+  date: '1979'
+  description: Recebeu o título de Doutor Honoris Causa do Seminário da Virgínia
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      (210) Em 1979, recebeu o titulo de Doutor Honoris Causa do Seminário de Virginia por sua dedicação aos estudos
+      teológicos e interesse na educação teológica no Brasil.
+    page: '288'

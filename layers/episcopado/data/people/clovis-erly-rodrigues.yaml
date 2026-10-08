@@ -12,6 +12,11 @@ birth:
     quote: Natural da cidade de Jaguarão, no extremo sul do Brasil, Clovis Erly Rodrigues nasceu em 18 de
   - source: ieab-secretaria
     quote: Revmo. Bispo Clóvis Erli Rodrigues, Emérito
+  - source: kickhofel-1995
+    quote: >-
+      Filho de tradicional família episcopaliana, Clóvis Erly Rodrigues nasceu em Jaguarão, no extremo sul do Brasil,
+      em 18 de setembro de 1935
+    page: '299'
 biography: >-
   Bispo do Recife (coadjutor 1985, diocesano 1986-1997); presidiu o Tribunal Superior Eclesiastico no processo de
   Robinson Cavalcanti; emerito vivo em 2026 segundo a IEAB.
@@ -29,8 +34,21 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1960 - … Clóvis Erly Rodrigues
     page: '371'
+  - source: kickhofel-1995
+    quote: Formou-se em teologia em 1960, sendo ordenado ao diaconato e ao presbiterado no ano seguinte.
+    page: '299'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    A frase é ambígua: pode ler-se diaconato em 1960 e presbiterato em 1961, ou ambos em 1961. A lista do clero
+    nacional (p. 371) dá o diaconato em 1960.
+- order: presbyterate
+  date: '1961'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: Formou-se em teologia em 1960, sendo ordenado ao diaconato e ao presbiterado no ano seguinte.
+    page: '299'
 - order: episcopate
   date: '1985-03-17'
   place: Catedral da Santissima Trindade, Porto Alegre
@@ -57,10 +75,44 @@ ordinations:
       Sória, Sumio Takatsu, Clóvis Rodrigues (sagrado uma semana antes em Porto Alegre) e Cláudio Vinicius de Senna
       Gastal, que foi o pregador.
     page: '278'
+  - source: kickhofel-1995
+    quote: >-
+      Rodrigues foi elevado ao episcopado no dia 17 de março de 1985, na Catedral da SS.Trindade, em Porto Alegre,
+      pelo primaz em exercício, Edmund Knox Sherrill, tendo participado como co-sagrantes os demais bispos brasileiros
+      e o bispo argentino David Leake, primaz da Provínica Anglicana do Cone Sul, com sede em Salta, Argentina.
+    page: '300'
   notes: >-
     Eleito bispo coadjutor da Diocese Setentrional (Recife) pelo Sinodo de 1984. Co-sagrantes: "os bispos brasileiros"
-    (nao nomeados) e David Leake.
+    (nao nomeados) e David Leake. O livro diz que os "demais bispos brasileiros" foram co-sagrantes, sem nomeá-los.
 affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dso
+  start: '1965'
+  end: '1985'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Em 1965, foi transferido para Bagé para assumir o pastorado da Paróquia da Crucifixão e as missões de São
+      Marcos e São Felipe … Em 1980, transferiu-se para Santa Maria (RS) para assumir a direção da histórica Catedral
+      do Mediador, fundada em 1900, e assessorar o bispo na secretaria do bispado.
+    page: '300'
+  notes: >-
+    Pároco da Crucifixão em Bagé (1965), missionário em Moçambique (1971-1974), pároco do Nazareno em Santana do
+    Livramento (1974) e deão da Catedral do Mediador em Santa Maria (1980). O fim em 1985 é a sagração.
+- jurisdiction: ieab
+  role: coadjutor_bishop
+  diocese: ieab-dar
+  start: '1985-03-17'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Rodrigues foi elevado ao episcopado no dia 17 de março de 1985, na Catedral da SS.Trindade, em Porto Alegre,
+      pelo primaz em exercício, Edmund Knox Sherrill, tendo participado como co-sagrantes os demais bispos brasileiros
+      e o bispo argentino David Leake, primaz da Provínica Anglicana do Cone Sul, com sede em Salta, Argentina.
+    page: '300'
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dar
@@ -141,3 +193,28 @@ events:
   sources:
   - source: ec-2017-04
     quote: Clóvis Ro- drigues, Almir dos Santos e Celso Franco (eméritos)
+- type: other
+  date: 1984-07
+  description: >-
+    Eleito pelo Sínodo bispo coadjutor da Diocese Setentrional, com direito à sucessão, no terceiro escrutínio,
+    contrariando a expectativa de Sherrill, que esperava a indicação de Paulo Ruiz Garcia
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Quando em 1984 o bispo anunciou sua intenção de se aposentar no final de 1985, o Sínodo realizado em julho
+      de 1984, em Porto Alegre, elegeu o deão da Catedral do Mediador de Santa Maria, Clóvis Erly Rodrigues, para
+      ser bispo coadjutor da Diocese Setentrional com direito a sucessão.
+    page: '299'
+- type: other
+  date: '1971'
+  description: >-
+    Primeiro brasileiro a trabalhar como missionário na África: quatro anos em Moçambique, na educação teológica
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Em 1971, tomou uma decisão que modificou o curso de sua vida: aceitou um convite para trabalhar como missionário
+      em Moçambique. Foi o primeiro brasileiro a trabalhar na longínqua África, onde atuou por quatro anos no campo
+      da educação teológica e nas relações de companheirismo.
+    page: '300'

@@ -39,16 +39,39 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1956 - … Glauco Soares de Lima
     page: '371'
+  - source: kickhofel-1995
+    quote: >-
+      O reverendo Glauco Soares de Lima foi eleito bispo coadjutor com direito a sucessão em concílio extraordinário
+      realizado em julho de 1989, em São Paulo, obtendo a maioria dos votos nas duas ordens no segundo escrutínio.
+      Foi ordenado ao diaconato em 1956 e ao presbiterado em 1958.
+    page: '290'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1958'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      O reverendo Glauco Soares de Lima foi eleito bispo coadjutor com direito a sucessão em concílio extraordinário
+      realizado em julho de 1989, em São Paulo, obtendo a maioria dos votos nas duas ordens no segundo escrutínio.
+      Foi ordenado ao diaconato em 1956 e ao presbiterado em 1958.
+    page: '290'
 - order: episcopate
   date: '1989-10-01'
-  place: St. Paul's Church, Sao Paulo
+  place: St. Paul's Church, São Paulo
   jurisdiction: ieab
   office: coadjutor
   principal_consecrator: olavo-ventura-luiz
   status: contested
   sources:
+  - source: kickhofel-1995
+    quote: >-
+      Foi elevado ao episcopado no dia primeiro de outubro de 1989 na mesma igreja que pastoreava na época de sua
+      eleição. Foi sagrante o bispo primaz Olavo Ventura Luiz e co-sagrantes mais sete colegas. Assumiu o governo
+      da diocese em janeiro de 1990.
+    page: '291'
   - source: costa2021
     quote: >-
       Foi elevado ao episcopado em 1º de outubro no histórico templo da capital paulista, pelas mãos do Bispo Primaz,
@@ -70,9 +93,10 @@ ordinations:
       quote: >-
         Em 1° de julho de 1989, Lima foi sagrado bispo na Catedral Anglicana de São Paulo, sucedendo Dom Sumio Takatsu.
   notes: >-
-    Versao de Costa 2021: 01/10/1989, St. Paul's Church, eleito coadjutor em julho de 1989. Wikipedia PT diz 01/07/1989
-    na Catedral Anglicana de Sao Paulo (ver afirmacao contestada seguinte). Versao Wikipedia PT (sem fonte especifica).
-    Conflita com Costa 2021 (eleito coadjutor em julho, sagrado em 1o de outubro).
+    O livro diz que houve sete co-sagrantes, sem nomeá-los. Versao de Costa 2021: 01/10/1989, St. Paul's Church,
+    eleito coadjutor em julho de 1989. Wikipedia PT diz 01/07/1989 na Catedral Anglicana de Sao Paulo (ver afirmacao
+    contestada seguinte). Versao Wikipedia PT (sem fonte especifica). Conflita com Costa 2021 (eleito coadjutor
+    em julho, sagrado em 1o de outubro).
 affiliations:
 - jurisdiction: ieab
   role: bishop
@@ -88,6 +112,19 @@ affiliations:
       com a IEAB
   - source: glauco-testemunho-2013
     quote: Como consequência de tudo isso, decidi apoiar os dissidentes
+- jurisdiction: ieab
+  role: coadjutor_bishop
+  diocese: ieab-dasp
+  start: '1989-10-01'
+  end: 1990-01
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Foi elevado ao episcopado no dia primeiro de outubro de 1989 na mesma igreja que pastoreava na época de sua
+      eleição. Foi sagrante o bispo primaz Olavo Ventura Luiz e co-sagrantes mais sete colegas. Assumiu o governo
+      da diocese em janeiro de 1990.
+    page: '291'
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dasp
@@ -105,6 +142,12 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1990 - Glauco Soares de Lima
     page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      Foi elevado ao episcopado no dia primeiro de outubro de 1989 na mesma igreja que pastoreava na época de sua
+      eleição. Foi sagrante o bispo primaz Olavo Ventura Luiz e co-sagrantes mais sete colegas. Assumiu o governo
+      da diocese em janeiro de 1990.
+    page: '291'
 - jurisdiction: ieab
   role: primate
   start: '1993'
@@ -166,6 +209,18 @@ affiliations:
   sources:
   - source: costa-2021-tese
     quote: O bispo Glauco Soares de Lima faleceu no dia 27 de dezembro de 2017 na cidade de São Paulo
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dasp
+  end: '1989'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Exercia seu pastorado na capital paulista como pároco da Igreja de São Paulo (Saint Paul's Church), numa comunidade
+      internacional frequentada por brasileiros, americanos, ingleses e outras nacionalidades.
+    page: '290'
+  notes: Pároco da Saint Paul's Church, São Paulo.
 events:
 - type: death
   date: 2017-12
@@ -188,3 +243,14 @@ events:
     quote: >-
       No dia 08/09/12 recebi a notícia que em Concílio da DASP o Rev. Flávio Irala havia sido eleito Bispo da mesma
       por 19 a 18 votos na ordem leiga e 15 a 13 votos na ordem clerical.
+- type: other
+  date: 1989-07
+  description: Eleito bispo coadjutor da Diocese Sul Central, com direito à sucessão, no segundo escrutínio
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      O reverendo Glauco Soares de Lima foi eleito bispo coadjutor com direito a sucessão em concílio extraordinário
+      realizado em julho de 1989, em São Paulo, obtendo a maioria dos votos nas duas ordens no segundo escrutínio.
+      Foi ordenado ao diaconato em 1956 e ao presbiterado em 1958.
+    page: '290'
