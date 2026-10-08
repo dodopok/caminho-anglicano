@@ -1,9 +1,6 @@
 # yaml-language-server: $schema=../../schemas/person.json
-id: josue-sousa-torres
-name: Josué Sousa Torres
-aliases:
-- Josué Souza Torres
-- Reverendo Dom Josué
+id: luis-fernando-salgado
+name: Luis Fernando Salgado
 ordinations:
 - order: presbyterate
   date: '2005-03-27'
@@ -21,14 +18,3 @@ ordinations:
   notes: >-
     Também impuseram as mãos os padres Manuel (Igreja Antigo-Católica), João Ripoli e Mário Palumbo (Igreja Católica
     Romana). Ordenações autorizadas por Leonardo Marin-Saavedra (Anglican Independent Communion Worldwide).
-- order: episcopate
-  date: '2006-01-15'
-  jurisdiction: null
-  principal_consecrator: barry-frank-peachey
-  status: probable
-  sources:
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      quando em 15 de janeiro de 2006 Josué Torres foi sagrado ao episcopado pelo bispo Barry Frank Peachey, filiado
-      à The Anglican Independent Communion Worldwide, com sede na Inglaterra.
-  notes: Fundador da Igreja Episcopal do Evangelho Pleno (IEEP).

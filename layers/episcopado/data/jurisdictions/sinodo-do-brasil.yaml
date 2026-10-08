@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
-id: sinodo-do-brasil-comunidade-da-reconciliacao
-name: Sínodo do Brasil; Comunidade da Reconciliação
+id: sinodo-do-brasil
+name: Sínodo do Brasil
 type: diocese
 relations:
 - type: part_of
@@ -13,3 +13,8 @@ relations:
       DO SUL e Bispo do Sínodo do Brasil Reitor da Comunidade da Reconciliação em Ribeirão Preto - SP
   - source: yt-iau-canal
     quote: É o Bispo Presidente da Igreja Anglicana Unida - Provincia da América do Sul
+  - source: ig-iau-2025-12-18
+    quote: >-
+      A Igreja Anglicana Unida (IAU) é a Província Sul-Americana da The Free Episcopal Protestant Church of England
+      (FPEC). Com 128 anos de história contínua, cujo o líder éo Arcebispo Primaz, Revmo. Dom Ricardo Lorite de
+      Lima. A IAU tem como Bispo moderador o Revmo. Dom Virgílio Cezar Henrique Pereira Torres.

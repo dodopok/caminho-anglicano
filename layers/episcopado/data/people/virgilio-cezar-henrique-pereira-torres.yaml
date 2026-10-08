@@ -24,6 +24,38 @@ sources:
   quote: Dom Virgilio nasceu em Santos - SP, mas mora no interior desde criança. Tem 33 anos de ministério
 - source: yt-iau-canal
   quote: Dom Virgílio Cezar Torres é Teólogo, Bispo, Pregador e Reitor da Comunidade da Reconciliação
+ordinations:
+- order: presbyterate
+  date: null
+  jurisdiction: null
+  ordained_by: francisco-buzzo-rodrigues
+  status: probable
+  sources:
+  - source: fb-hermes-20-anos-sagracao
+    quote: >-
+      Fui ordenado presbítero com um bispo de sua sucessão,  Dom Francisco Buzzo. Agora serei sagrado ao episcopado
+      por Dom Ricardo Lorite de Lima.
+  notes: Comentário do próprio Virgílio (março de 2025). Data não informada; Buzzo fundou a IARB em 2005.
+- order: episcopate
+  date: '2025'
+  jurisdiction: iau
+  principal_consecrator: ricardo-lorite-de-lima
+  status: probable
+  sources:
+  - source: fb-hermes-20-anos-sagracao
+    quote: >-
+      Fui ordenado presbítero com um bispo de sua sucessão,  Dom Francisco Buzzo. Agora serei sagrado ao episcopado
+      por Dom Ricardo Lorite de Lima.
+  - source: testemunho-mantenedor-2026-10-08-virgilio
+    quote: Sei que Lorite sagrou Virgilio
+  - source: ig-iau-2025-12-18
+    quote: >-
+      A Igreja Anglicana Unida (IAU) é a Província Sul-Americana da The Free Episcopal Protestant Church of England
+      (FPEC). Com 128 anos de história contínua, cujo o líder éo Arcebispo Primaz, Revmo. Dom Ricardo Lorite de
+      Lima. A IAU tem como Bispo moderador o Revmo. Dom Virgílio Cezar Henrique Pereira Torres.
+  notes: >-
+    Em 24/03/2025 Virgílio anunciou que seria sagrado por Lorite; em 18/12/2025 a IAU já o apresenta como bispo
+    moderador. Data exata não encontrada.
 affiliations:
 - jurisdiction: iaob
   role: other
@@ -65,8 +97,9 @@ affiliations:
       Reformada do Brasil.
   notes: Fonte única, postada por perfil ligado à IARB.
 - jurisdiction: iau
-  role: primate
-  diocese: sinodo-do-brasil-comunidade-da-reconciliacao
+  role: other
+  role_description: bispo moderador
+  diocese: sinodo-do-brasil
   status: confirmed
   sources:
   - source: iau-clero
@@ -75,6 +108,11 @@ affiliations:
       DO SUL e Bispo do Sínodo do Brasil Reitor da Comunidade da Reconciliação em Ribeirão Preto - SP
   - source: yt-iau-canal
     quote: É o Bispo Presidente da Igreja Anglicana Unida - Provincia da América do Sul
+  - source: ig-iau-2025-12-18
+    quote: >-
+      A Igreja Anglicana Unida (IAU) é a Província Sul-Americana da The Free Episcopal Protestant Church of England
+      (FPEC). Com 128 anos de história contínua, cujo o líder éo Arcebispo Primaz, Revmo. Dom Ricardo Lorite de
+      Lima. A IAU tem como Bispo moderador o Revmo. Dom Virgílio Cezar Henrique Pereira Torres.
   notes: >-
-    Local: Ribeirão Preto/SP. Papel: "Bispo Moderador"/"Bispo Presidente". Sagração episcopal (data, sagrantes)
-    NÃO encontrada; candidato óbvio seria a FPEC (Ricardo Lorite de Lima), mas sem fonte.
+    Local: Comunidade da Reconciliação, Ribeirão Preto/SP. Papel: "Bispo Moderador"/"Bispo Presidente". Sagração
+    episcopal (data, sagrantes) NÃO encontrada; candidato óbvio seria a FPEC (Ricardo Lorite de Lima), mas sem fonte.
