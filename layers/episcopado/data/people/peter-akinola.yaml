@@ -32,33 +32,55 @@ ordinations:
     quote: >-
       November 1989 Peter J. Akinnola (Canon) was consecrated and was enthroned the bishop of the Abuja diocese
       during the inaugural service ofthe diocese on 26
-  - source: wp-akinola
-    quote: >-
-      He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later,
-      at the inauguration of the new Diocese of Abuja on 26 November 1989.
   - source: iab-poster-linhagem-uchoa
     quote: >-
       164d. Joseph Abiodun Adetiloye (1970-1999) que consagrou Peter Jasper Akinola como bispo da Diocese de Abuja,
       da Província de Abuja.
+  - source: ia-transformation-2014-04
+    quote: >-
+      It was not until 1989 that the missioner, Canon Peter J. Akinola, was elected and consecrated bishop of the
+      diocese of Abuja when the area
+  - source: wp-akinola
+    quote: >-
+      He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later,
+      at the inauguration of the new Diocese of Abuja on 26 November 1989.
   discrepancies:
-  - field: jurisdiction
-    value: con
+  - field: office
+    value: missionary
     sources:
-    - source: wp-akinola
-      quote: >-
-        He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later,
-        at the inauguration of the new Diocese of Abuja on 26 November 1989.
     - source: iab-poster-linhagem-uchoa
       quote: >-
         164d. Joseph Abiodun Adetiloye (1970-1999) que consagrou Peter Jasper Akinola como bispo da Diocese de Abuja,
         da Província de Abuja.
+    - source: ia-transformation-2014-04
+      quote: >-
+        It was not until 1989 that the missioner, Canon Peter J. Akinola, was elected and consecrated bishop of
+        the diocese of Abuja when the area
+    - source: wp-akinola
+      quote: >-
+        He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later,
+        at the inauguration of the new Diocese of Abuja on 26 November 1989.
+  - field: jurisdiction
+    value: con
+    sources:
+    - source: ia-transformation-2014-04
+      quote: >-
+        It was not until 1989 that the missioner, Canon Peter J. Akinola, was elected and consecrated bishop of
+        the diocese of Abuja when the area
+    - source: wp-akinola
+      quote: >-
+        He was consecrated a bishop on 16 November 1989 and enthroned as the first Bishop of Abuja ten days later,
+        at the inauguration of the new Diocese of Abuja on 26 November 1989.
   notes: >-
     Data com fonte secundária acadêmica que se apoia em documento primário (carta sinodal de Ogbonyomi, 1990); a
     Wikipédia repete a mesma data. Sagrante não nomeado em nenhuma fonte aberta. Adetiloye era o primaz da Nigéria
-    em 1989, o que torna plausível o pôster da IAB (Adetiloye -> Akinola), mas não comprovado. Pôster: Adetiloye
-    "consagrou Peter Jasper Akinola como bispo da Diocese de Abuja" — data (16/11/1989) e sé confirmadas pela Wikipédia
-    (que cita a tese de S. G. Kwashang, 2006, p. 35, não acessível daqui); SAGRANTE NÃO ENCONTRADO em fonte. Adetiloye
-    era o primaz da Nigéria em 1989, o que torna o pôster plausível. Ano inferido do pôster (1989-2010); verificar.
+    em 1989, o que torna plausível o pôster da IAB (Adetiloye -> Akinola), mas não comprovado. Ano inferido do pôster
+    (1989-2010); verificar. Só confirma o ano (1989) e a diocese (Abuja). Sagrante principal continua NÃO encontrado.
+    Pela praxe seria o arcebispo da Nigéria, Joseph Adetiloye (o ENS de 26/04/1990 mostra Adetiloye sagrando bispos
+    em Abuja), mas nenhuma fonte o diz. Pôster: Adetiloye "consagrou Peter Jasper Akinola como bispo da Diocese
+    de Abuja" — data (16/11/1989) e sé confirmadas pela Wikipédia (que cita a tese de S. G. Kwashang, 2006, p. 35,
+    não acessível daqui); SAGRANTE NÃO ENCONTRADO em fonte. Adetiloye era o primaz da Nigéria em 1989, o que torna
+    o pôster plausível.
 affiliations:
 - jurisdiction: church-of-nigeria
   role: diocesan_bishop

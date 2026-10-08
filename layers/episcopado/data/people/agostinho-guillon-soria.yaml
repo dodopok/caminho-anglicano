@@ -28,6 +28,32 @@ sources:
 - source: costa2021
   quote: Faleceu em 27 de junho de 1996.
 ordinations:
+- order: diaconate
+  date: '1947-02-09'
+  place: Trinity Church (Igreja da Santíssima Trindade), Porto Alegre
+  jurisdiction: ieab
+  ordained_by: william-matthews-merrick-thomas
+  status: probable
+  sources:
+  - source: ia-living-church-1947-03-02
+    quote: >-
+      Kratz, and Agestinho Soria were ordained to the diaconate by Bishop Thomas of Southern Brazil on February
+      9th at Trinity Church, Porto Alegre, R. G. S.
+- order: presbyterate
+  date: '1948-04-11'
+  place: Igreja do Redentor (Church of the Redeemer), Pelotas
+  jurisdiction: ieab
+  ordained_by: athalicio-pithan
+  status: probable
+  sources:
+  - source: ia-living-church-1948-05-02
+    quote: >-
+      and Agostinho Soria were ordained to the priesthood on April 11th at the Church of the Redeemer, Pelotas
+  - source: ia-living-church-1948-05-02
+    quote: >-
+      Frs. Bueno, Rocha, and Séria were ordained by Bishop Pit- han, Suffragan of Brazil; Frs. Kainuma, Kratz, and
+      de Mattos, by Bishop Thomas of Southern Brazil.
+  notes: OCR grafa "Séria".
 - order: episcopate
   date: '1977-04-24'
   place: Christ Church, Rio de Janeiro

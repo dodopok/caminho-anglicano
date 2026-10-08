@@ -27,19 +27,51 @@ sources:
   quote: >-
     He was ordained a priest in 1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
 ordinations:
-- order: presbyterate
-  date: '1948'
-  jurisdiction: dmsb
+- order: diaconate
+  date: '1947-02-09'
+  place: Trinity Church (Igreja da Santíssima Trindade), Porto Alegre
+  jurisdiction: ieab
+  ordained_by: william-matthews-merrick-thomas
   status: probable
+  sources:
+  - source: ia-living-church-1947-03-02
+    quote: >-
+      Kratz, and Agestinho Soria were ordained to the diaconate by Bishop Thomas of Southern Brazil on February
+      9th at Trinity Church, Porto Alegre, R. G. S.
+- order: presbyterate
+  date: '1948-04-11'
+  place: Igreja do Redentor (Church of the Redeemer), Pelotas
+  jurisdiction: dmsb
+  ordained_by: william-matthews-merrick-thomas
+  status: contested
   sources:
   - source: ens-72149
     quote: He was ordained a priest in 1948
+  - source: ia-living-church-1948-05-02
+    quote: >-
+      and Agostinho Soria were ordained to the priesthood on April 11th at the Church of the Redeemer, Pelotas
+  - source: ia-living-church-1948-05-02
+    quote: >-
+      Frs. Bueno, Rocha, and Séria were ordained by Bishop Pit- han, Suffragan of Brazil; Frs. Kainuma, Kratz, and
+      de Mattos, by Bishop Thomas of Southern Brazil.
+  discrepancies:
+  - field: jurisdiction
+    value: ieab
+    sources:
+    - source: ia-living-church-1948-05-02
+      quote: >-
+        and Agostinho Soria were ordained to the priesthood on April 11th at the Church of the Redeemer, Pelotas
+    - source: ia-living-church-1948-05-02
+      quote: >-
+        Frs. Bueno, Rocha, and Séria were ordained by Bishop Pit- han, Suffragan of Brazil; Frs. Kainuma, Kratz,
+        and de Mattos, by Bishop Thomas of Southern Brazil.
+  notes: Ordenação conjunta de seis presbíteros; três por Pithan e três por Thomas.
 - order: episcopate
   date: '1971'
   place: Catedral da Santissima Trindade, Porto Alegre
   jurisdiction: ieab
   office: diocesan
-  status: confirmed
+  status: contested
   sources:
   - source: costa2021
     quote: >-
@@ -48,7 +80,33 @@ ordinations:
   - source: ens-72149
     quote: >-
       He was ordained a priest in 1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
-  notes: Ano inferido de "No mesmo ano" (1971, morte de Krischke). Sagrantes nao informados.
+  - source: ia-christian-century-1971-09-08
+    quote: >-
+      Elected to serve the Episcopal diocese of the south, Arthur Rodolph Kratz has been consecrated a bishop of
+      the au- tonomous Brazilian Episcopal Church in Pdérto Alegre
+  - source: ia-wmn-1984-04
+    quote: and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
+  - source: ia-living-church-1972-11-19
+    quote: >-
+      The Rt. Rev. Arthur R. Kratz, Bish- op of Southern Brazil since 1971, has been elected the second Primate
+  discrepancies:
+  - field: place
+    value: Porto Alegre
+    sources:
+    - source: ia-christian-century-1971-09-08
+      quote: >-
+        Elected to serve the Episcopal diocese of the south, Arthur Rodolph Kratz has been consecrated a bishop
+        of the au- tonomous Brazilian Episcopal Church in Pdérto Alegre
+    - source: ia-wmn-1984-04
+      quote: and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
+    - source: ia-living-church-1972-11-19
+      quote: >-
+        The Rt. Rev. Arthur R. Kratz, Bish- op of Southern Brazil since 1971, has been elected the second Primate
+  notes: >-
+    Ano inferido de "No mesmo ano" (1971, morte de Krischke). Sagrantes nao informados. Sagrante principal NÃO encontrado.
+    A Christian Century de 08/09/1971 noticia a sagração como recente, o que confirma 1971 (contra a hipótese de
+    1972) e o local (Porto Alegre). Costa (2021) dá a morte de Krischke em 28/06/1971; a sagração de Kratz seria,
+    então, entre julho e agosto de 1971 — dedução, não dado de fonte.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
@@ -107,3 +165,15 @@ events:
   - source: cant-identidades-numeros-2024
     quote: >-
       Em 04 de março de 1984, o bispo Kratz faleceu, quando faltavam quatro meses para a reunião do Sínodo seguinte.
+- type: death
+  date: 1984-03
+  description: >-
+    Morte do primaz Arthur Kratz (março de 1984); Cláudio Gastal, deão da Catedral da Santíssima Trindade (Porto
+    Alegre), já eleito bispo coadjutor, com sagração prevista para o fim de março de 1984.
+  status: probable
+  sources:
+  - source: ia-ens-1984-03-22
+    quote: >-
+      Claudio Gastal, Dean of Holy Trinity Cathedral in Porto Alegre, was elected to that position, and his consecration
+  - source: ia-ens-1984-03-22
+    quote: consecration is slated for the end of March.
