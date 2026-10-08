@@ -1,14 +1,84 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jaime-sepulcro-jr
 name: Jaime Sepulcro Jr.
+full_name: Jaime Magalhães Sepulcro Júnior
+aliases:
+- Jaime Magalhães Sepulcro Júnior
 biography: >-
-  Reverendo e pastor da comunidade Estação Casa (Belo Horizonte). Integrou a Rede Episcopal Brasileira de dezembro
-  de 2024 a 27/06/2026, quando saiu com a Estação Casa, hoje independente.
+  Pastor e fundador da Estação Casa (Belo Horizonte), que começou em 2017 como Comunidade Anglicana Âncora, missão
+  da IAB ligada à Âncora de Vitória (ES), sob o Rev. Eric Rodrigues. Postulante da Diocese de João Pessoa (IAB)
+  em 01/10/2020 e já 'Rev.' em 24/01/2021; a ordenação (ordem, data e ordenante) não foi localizada em fonte aberta.
+  Integrou a Rede Episcopal Brasileira de dezembro de 2024 a 27/06/2026, quando saiu com a Estação Casa, hoje independente.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: dos reverendos Jaime Sepulcro Jr., Douglas Araújo e Cynthia Muniz
-  page: '151'
+- source: ecs-ufmg-2019
+  quote: >-
+    sendo hoje pastor em uma missão anglicana em Belo Horizonte pertencente à Igreja Anglicana no Brasil – Diocese
+    de Recife
+- source: ecs-ig-templos-2026-08
+  quote: Nesse tempo também, tivemos a ordenação do Rev. Jaime Sepulcro, que segue pastoreando a igreja.
+- source: ecs-djp-postulantes-2020-10
+  quote: Post. Jaime Sepulcro Anglicana Âncora-BH
+- source: ecs-djp-pastores-2021-01
+  quote: Rev. Jaime Sepulcro Igreja Anglicana Âncora Belo Horizonte – MG
 affiliations:
+- jurisdiction: iab
+  role: other
+  role_description: lider_comunidade
+  diocese: iab-diocese-joao-pessoa
+  start: 2017-06
+  end: 2020-10
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: ancorabh-lideranca-2018
+    quote: Juntos, são os líderes responsáveis pela C.A.A. em Belo Horizonte.
+  - source: ancorabh-lideranca-2018
+    quote: >-
+      Somos supervisionados pelo bispo Marcio Meira e Revda. Linda Meira da Paroquia Anglicana Comunhão em João
+      Pessoa - PB
+  - source: ecs-ufmg-2019
+    quote: >-
+      sendo hoje pastor em uma missão anglicana em Belo Horizonte pertencente à Igreja Anglicana no Brasil – Diocese
+      de Recife
+  notes: >-
+    Líder leigo da Comunidade Anglicana Âncora em BH, sob o Rev. Eric Rodrigues (Âncora/Vitória). A página de jan/2018
+    cita o bispo diocesano Miguel Uchôa (Recife) e a supervisão do bispo Márcio Meira (João Pessoa); a dissertação
+    de 2019 fala em Diocese de Recife.
+- jurisdiction: estacao-casa
+  role: founder
+  start: '2017-06-11'
+  status: probable
+  sources:
+  - source: ecs-ig-templos-2026-08
+    quote: >-
+      Há 9 anos , dia 11 de Junho, uma pequena missão anglicana foi plantada em Belo Horizonte, sendo pastorada
+      por Jaime e Priscila Sepulcro.
+  - source: ecs-ufmg-2019
+    quote: >-
+      sendo hoje pastor em uma missão anglicana em Belo Horizonte pertencente à Igreja Anglicana no Brasil – Diocese
+      de Recife
+  notes: >-
+    O post de ago/2026 diz "há 9 anos, dia 11 de junho" (remete a 11/06/2017). A dissertação de jun/2019 já o descreve
+    como pastor da missão anglicana em BH.
+- jurisdiction: iab
+  role: clergy
+  diocese: iab-diocese-joao-pessoa
+  start: 2020-11
+  end: 2024-12
+  end_reason: left
+  status: confirmed
+  sources:
+  - source: ecs-djp-pastores-2021-01
+    quote: Rev. Jaime Sepulcro Igreja Anglicana Âncora Belo Horizonte – MG
+  - source: ecs-djp-pastores-2021-09
+    quote: Rev. Jaime Sepulcro Igreja Anglicana Estação Casa Belo Horizonte – MG
+  - source: ecs-djp-pastores-2024-06
+    quote: Rev. Jaime Sepulcro Igreja Anglicana Estação Casa Belo Horizonte – MG
+  - source: ecs-yt-ancorabh-2020-11-01
+    quote: Um mundo de ponta-cabeça - Rev. Jaime Sepulcro
+  notes: >-
+    Listado entre os pastores da Diocese de João Pessoa (IAB) em jan/2021, mai/2021, set/2021 e jun/2024. O início
+    ("Rev." em vídeo de 01/11/2020) e o fim (entrada na REB, dez/2024) são aproximados.
 - jurisdiction: reb
   role: clergy
   start: '2024-12-23'
@@ -22,12 +92,34 @@ affiliations:
       agosto de 2026) plantando a Igreja Anglicana Caminho em BH (site da REB tem ela)
   - source: testemunho-mantenedor-2026-10-08-jader
     quote: Ela entrou na REB depois da fundação, lá pelo dia 23/12/2024
+  - source: ecs-ig-reb-2025-09-02-confirmacoes
+    quote: sob o pastoreio do @rev.jaime_sepulcro e @priscilasepulcro
+  - source: ecs-eric-blog-10meses
+    quote: >-
+      Hoje somos uma diocese com um bispo, oito presbíteros, quatro diáconos, um ministro local e dois postulantes.
+  - source: ecs-yt-reb-sinodo-jaime
+    quote: 'PALESTRA: Água, vinho, pão e alegria - Rev. Jaime Sepulcro - #1SinodoREB'
   - source: cant-novas-igrejas-2024
     quote: >-
       Seus clérigos têm um perfil jovem e boa formação teológica, a exemplo dos reverendos Jaime Sepulcro Jr., Douglas
       Araújo e Cynthia Muniz.
     page: '151'
-  notes: Saiu da REB junto com a comunidade Estação Casa.
+  notes: >-
+    Saiu da REB junto com a comunidade Estação Casa. A REB o apresenta como pastor da Estação Casa (ago/2025) e
+    lhe confia palestra no 1º Sínodo (out/2025). As listas públicas de clero da REB em 2026 (Estrutura, calendário)
+    não o incluem. Saída em 27/06/2026 conforme informação do mantenedor; nenhuma fonte aberta anuncia a saída.
+- jurisdiction: iab
+  role: other
+  role_description: postulante
+  diocese: iab-diocese-joao-pessoa
+  end: 2020-11
+  status: confirmed
+  sources:
+  - source: ecs-djp-postulantes-2020-10
+    quote: Post. Jaime Sepulcro Anglicana Âncora-BH
+  notes: >-
+    Consta como postulante (Anglicana Âncora-BH) na lista da Diocese de João Pessoa capturada em 01/10/2020; não
+    consta na lista de 24/01/2021.
 - jurisdiction: estacao-casa
   role: clergy
   status: confirmed
@@ -39,3 +131,54 @@ affiliations:
   - source: testemunho-mantenedor-2026-10-08-jader
     quote: Jaime e Estação Casa estão independentes
   notes: Pastor da Estação Casa; independente desde a saída da REB em 27/06/2026.
+events:
+- type: other
+  date: '2025-08-31'
+  description: >-
+    Confirmações na Estação Casa: 25 pessoas confirmadas em domingo de 31/08/2025, sob o pastoreio de Jaime e Priscila
+    Sepulcro; o vídeo do culto no canal da igreja traz o título "22° Domingo do Tempo Comum: Culto de Confirmação"
+    (31 de Agosto de 2025).
+  status: confirmed
+  sources:
+  - source: ecs-ig-reb-2025-09-02-confirmacoes
+    quote: >-
+      celebramos as 25 confirmações realizadas neste domingo na Igreja Anglicana Estação Casa, em Belo Horizonte
+  - source: ecs-yt-canal
+    quote: '22° Domingo do Tempo Comum: Culto de Confirmação | 31 de Agosto de 2025'
+- type: other
+  date: 2025-10
+  description: >-
+    1º Sínodo da REB (out/2025): o Rev. Jaime Sepulcro proferiu a palestra "Água, vinho, pão e alegria", publicada
+    no canal da REB.
+  status: confirmed
+  sources:
+  - source: ecs-yt-reb-sinodo-jaime
+    quote: 'PALESTRA: Água, vinho, pão e alegria - Rev. Jaime Sepulcro - #1SinodoREB'
+- type: other
+  date: '2026-10-08'
+  description: >-
+    Em 10/2026 a lista de clérigos, postulantes e ministros locais da REB não inclui Jaime Sepulcro Jr., e a lista
+    de igrejas não inclui a Estação Casa; a REB divulga, em seu lugar, a Igreja Anglicana Caminho em Belo Horizonte.
+  status: confirmed
+  sources:
+  - source: reb-igrejas
+    quote: Igreja Anglicana Caminho
+  - source: ecs-ig-reb-2026-09-08-caminho
+    quote: Nosso cantinho em BH
+- type: other
+  date: 2020-10
+  description: >-
+    Jaime Sepulcro Jr. passa de postulante a "Rev." (clero) entre 27/09/2020 e 01/11/2020: vídeos da igreja o intitulam
+    "Pr." em 27/09/2020 e "Rev." em 01/11/2020; a lista de postulantes da Diocese de João Pessoa de 01/10/2020 ainda
+    o inclui, a de 24/01/2021 já não, e a lista de pastores de 24/01/2021 o inclui. A ordem recebida (diaconato
+    ou presbiterato), a data e o ordenante não constam das fontes abertas.
+  status: probable
+  sources:
+  - source: ecs-yt-canal
+    quote: Experimentando o milagre de Deus em sua vida | Pr. Jaime Sepulcro - 27/09/2020
+  - source: ecs-yt-canal
+    quote: Um mundo de ponta-cabeça | Anglicana Âncora BH | Rev. Jaime Sepulcro | 01/11/2020
+  - source: ecs-djp-postulantes-2020-10
+    quote: Post. Jaime Sepulcro Anglicana Âncora-BH
+  - source: ecs-djp-pastores-2021-01
+    quote: Rev. Jaime Sepulcro Igreja Anglicana Âncora Belo Horizonte – MG
