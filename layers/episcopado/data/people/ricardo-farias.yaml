@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ricardo-farias
+name: Ricardo Farias
+biography: >-
+  Ministro de música da Catedral da Santíssima Trindade (Recife); ordenado presbítero da Igreja Episcopal Carismática
+  por Dom Paulo Garcia em junho de 2012, segundo o boletim da catedral.
+sources:
+- source: lpg-boletim-2012-06-03
+  quote: >-
+    Dom Paulo Garcia ordenará, numa cerimônia tocante e inesquecível, dois Presbíteros à Igreja Episcopal Carismática.
+    São eles: Ricardo Farias (Ministro de Música desta Catedral)
+ordinations:
+- order: presbyterate
+  date: '2012-06-07'
+  place: Catedral da Santíssima Trindade, Recife
+  jurisdiction: iecb
+  ordained_by: paulo-garcia
+  status: probable
+  sources:
+  - source: lpg-boletim-2012-06-03
+    quote: >-
+      Nesta 5ª feira (dia 07), às 20h, Dom Paulo Garcia ordenará, numa cerimônia tocante e inesquecível, dois Presbíteros
+      à Igreja Episcopal Carismática.
+  - source: lpg-boletim-2012-05-20
+    quote: Ricardo Farias e Gustavo Abadie, no dia 07 de junho, às 20h, na Catedral
+  notes: >-
+    Registro a partir de boletins anunciando a cerimônia (de 20/05 e 03/06/2012); não foi localizado relato posterior
+    da celebração.

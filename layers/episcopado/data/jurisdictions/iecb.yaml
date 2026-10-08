@@ -132,12 +132,19 @@ relations:
       page: '54'
 - type: member_of
   target: iccec
-  date: 2002/2003
+  date: '2003'
   end: '2019-03-24'
   led_by:
   - paulo-garcia
-  status: contested
+  status: probable
   sources:
+  - source: costa2021
+    quote: Esta denominação chegou ao Brasil no ano de 2002.
+  - source: lpg-boletim-2012-05-20
+    quote: suas caminhadas na Comunhão Internacional das Igrejas Episcopais Carismáticas
+  - source: costa2021
+    quote: >-
+      a denominação brasileira havia se separado da Comunhão Internacional da Igreja Episcopal Carismática.
   - source: ptwiki-iecb
     quote: >-
       Posteriormente, ele se filiou à Comunhão Internacional da Igreja Episcopal Carismática e fundou, no Recife,
@@ -163,9 +170,6 @@ relations:
     quote: Comunhão Internacional da Igreja Episcopal Carismática (ICCEC) [2002-2021]
     page: '171'
   - source: costa2021
-    quote: Esta denominação chegou ao Brasil no ano de 2002.
-    page: '134'
-  - source: costa2021
     quote: vinculou-se, depois, à Comunhão Internacional da Igreja Episcopal Carismática
     page: '197'
   - source: costa2021
@@ -173,19 +177,46 @@ relations:
       informando que a denominação brasileira havia se separado da Comunhão Internacional da Igreja Episcopal Carismática.
     page: '263'
   notes: >-
-    Data de saída da ICCEC não encontrada; a Wikipédia descreve a IECB 'atualmente' como igreja nacional autônoma
-    organizada em torno da CEI, o que sugere desligamento ou autonomia posterior. Não confirmado em fonte da ICCEC.
+    A IECB atuou como parte da ICCEC (Comunhão Internacional da Igreja Episcopal Carismática) desde a sagração de
+    Garcia em 2003 até o comunicado de 24/03/2019. Costa data a chegada da ICCEC ao Brasil em 2002. Data de saída
+    da ICCEC não encontrada; a Wikipédia descreve a IECB 'atualmente' como igreja nacional autônoma organizada em
+    torno da CEI, o que sugere desligamento ou autonomia posterior. Não confirmado em fonte da ICCEC. CORREÇÃO:
+    segundo Costa (2021), a IECB só deixou a ICCEC em 24/3/2019, depois de atritos com o patriarca Craig Bates (visita
+    ao Recife em ago/2018) por padronização litúrgica e pela aposentadoria compulsória de Garcia aos 80 anos. A
+    ausência de sagrações brasileiras na lista da Wikipédia após 2009 é, portanto, lacuna da lista, não indício
+    de saída. Na lista oficial reproduzida pela Wikipédia EN, Garcia figura como 'Abp. and Primate Brazil' da ICCEC,
+    com a nota 'Resigned'. As sagrações brasileiras até 16/11/2009 constam da lista; depois disso não aparecem,
+    o que sugere saída da IECB da ICCEC após 2009 (data não encontrada). O site atual da ICCEC não menciona o Brasil.
     CORREÇÃO: segundo Costa (2021), a IECB só deixou a ICCEC em 24/3/2019, depois de atritos com o patriarca Craig
     Bates (visita ao Recife em ago/2018) por padronização litúrgica e pela aposentadoria compulsória de Garcia aos
     80 anos. A ausência de sagrações brasileiras na lista da Wikipédia após 2009 é, portanto, lacuna da lista, não
-    indício de saída. Na lista oficial reproduzida pela Wikipédia EN, Garcia figura como 'Abp. and Primate Brazil'
-    da ICCEC, com a nota 'Resigned'. As sagrações brasileiras até 16/11/2009 constam da lista; depois disso não
-    aparecem, o que sugere saída da IECB da ICCEC após 2009 (data não encontrada). O site atual da ICCEC não menciona
-    o Brasil. CORREÇÃO: segundo Costa (2021), a IECB só deixou a ICCEC em 24/3/2019, depois de atritos com o patriarca
-    Craig Bates (visita ao Recife em ago/2018) por padronização litúrgica e pela aposentadoria compulsória de Garcia
-    aos 80 anos. A ausência de sagrações brasileiras na lista da Wikipédia após 2009 é, portanto, lacuna da lista,
-    não indício de saída.
+    indício de saída.
   discrepancies:
+  - field: date
+    value: 2002-10
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        com a sua saída da Comunhão Anglicana e a filiação na Comunhão Internacional da Igreja Episcopal Carismática
+        (ICCEC).
+      page: '54'
+  - field: date
+    value: '2002'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: Comunhão Internacional da Igreja Episcopal Carismática (ICCEC) [2002-2021]
+      page: '171'
+    - source: costa2021
+      quote: Esta denominação chegou ao Brasil no ano de 2002.
+      page: '134'
+    - source: costa2021
+      quote: vinculou-se, depois, à Comunhão Internacional da Igreja Episcopal Carismática
+      page: '197'
+    - source: costa2021
+      quote: >-
+        informando que a denominação brasileira havia se separado da Comunhão Internacional da Igreja Episcopal
+        Carismática.
+      page: '263'
   - field: end
     value: '2021'
     sources:
@@ -199,6 +230,12 @@ relations:
   - paulo-garcia
   status: probable
   sources:
+  - source: lpg-iecb-identidade
+    quote: A Igreja Episcopal Carismática do Brasil (IECB) é mãe da comunhão episcopal internacional (CEI)
+  - source: costa2021
+    quote: >-
+      foi criada nova organização, em nível internacional – a Comunhão Episcopal Internacional – para administrar
+      as missões da Igreja que estão se estabelecendo em outros países lusófonos, como Angola e Portugal
   - source: ptwiki-iecb
     quote: >-
       Atualmente, a Igreja Episcopal Carismática do Brasil é uma Igreja nacional autônoma, que se organiza em torno
@@ -217,6 +254,10 @@ relations:
       quando ele foi instituído como Arcebispo do Recife e Primaz da Comunhão Episcopal Internacional (CEI), organização
       criada para abrigar as comunidades que congregam em torno da IECB.
     page: '264'
+  notes: >-
+    A CEI foi criada após a saída da ICCEC para reunir a IECB e as missões em países lusófonos (Angola, Portugal).
+    Material de formação da própria IECB (2024) descreve a IECB como "mãe" da CEI. Garcia foi instituído arcebispo
+    do Recife e primaz da CEI em 14/09/2019.
   discrepancies:
   - field: date
     value: '2021'

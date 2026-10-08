@@ -18,6 +18,8 @@ birth:
     quote: Edward Robinson de Barros Cavalcanti nasceu no Recife, em 21 de junho de 1944.
   - source: costa2021
     quote: Faleceu na cidade de Olinda, em 26 de fevereiro de 2012.
+  - source: lrec-ultimato-robinson-bio
+    quote: Como Bispo Diocesano, ordenou 99 Diáconos e 85 Presbíteros.
   - source: cant-novas-igrejas-2024
     quote: Nascido em 21 de junho de 1944, na cidade do Recife
     page: '25'
@@ -48,6 +50,8 @@ death:
     quote: Edward Robinson de Barros Cavalcanti nasceu no Recife, em 21 de junho de 1944.
   - source: costa2021
     quote: Faleceu na cidade de Olinda, em 26 de fevereiro de 2012.
+  - source: lrec-ultimato-robinson-bio
+    quote: Como Bispo Diocesano, ordenou 99 Diáconos e 85 Presbíteros.
   - source: cant-novas-igrejas-2024
     quote: Nascido em 21 de junho de 1944, na cidade do Recife
     page: '25'
@@ -140,6 +144,14 @@ ordinations:
   - edmund-knox-sherrill
   status: confirmed
   sources:
+  - source: lrec-ultimato-robinson-bio
+    quote: Em 1997 foi eleito, sagrado e instituído Bispo da Diocese Anglicana do Recife
+  - source: tlc-2012-02-27
+    quote: Cavalcanti was consecrated as Bishop of Recife in 1997.
+  - source: wp-en-cavalcanti
+    quote: >-
+      In 1997 he was elected and consecrated Bishop of the Diocese of Recife, attending the Lambeth Conference of
+      1998
   - source: costa2021
     quote: >-
       O novo bispo coadjutor foi sagrado no dia 05 de outubro de 1997, em cerimônia realizada no Teatro Guararapes183,
@@ -162,14 +174,6 @@ ordinations:
     quote: >-
       Em 1997, Edmund participou da consagração de Edward Robinson de Barros Cavalcanti como bispo coadjutor, que
       depois se tornaria diocesano.
-  - source: ultimato-robinson-bio
-    quote: Em 1997 foi eleito, sagrado e instituído Bispo da Diocese Anglicana do Recife
-  - source: tlc-2012-02-27
-    quote: Cavalcanti was consecrated as Bishop of Recife in 1997.
-  - source: wp-en-cavalcanti
-    quote: >-
-      In 1997 he was elected and consecrated Bishop of the Diocese of Recife, attending the Lambeth Conference of
-      1998
   - source: costa2021
     quote: >-
       O novo bispo coadjutor foi sagrado no dia 05 de outubro de 1997, em cerimônia realizada no Teatro Guararapes
@@ -180,12 +184,12 @@ ordinations:
       Edmund Sherrill, Almir dos Santos e Clovis Erly Rodrigues.
     page: '186'
   notes: >-
-    Confirma a pista dos posteres (participacao de Edmund Sherrill). Eleito coadjutor em 28/06/1997 no Concilio
-    Extraordinario em Vera Cruz, Ilha de Itaparica (BA); instalado como bispo diocesano em 19/10/1997. Uma nota
-    da mesma tese (n. 225) cita "Teatro Beberibe". O proprio Robinson, em testemunho de 2004 hospedado no Projeto
-    Cantuaria, confirma que Sherrill foi um dos seus co-sagrantes. O livro não nomeia os sagrantes. O pôster só
-    diz que Sherrill 'participou'; sagrante principal desconhecido por esta fonte. O pôster da IAB (Meira) diz 'bispo
-    coadjutor, que depois se tornaria diocesano'. Data exata e sagrantes não encontrados ainda. A tese diz 'sagrado
+    O pôster da IAB (Meira) diz 'bispo coadjutor, que depois se tornaria diocesano'. Data exata e sagrantes não
+    encontrados ainda. Confirma a pista dos posteres (participacao de Edmund Sherrill). Eleito coadjutor em 28/06/1997
+    no Concilio Extraordinario em Vera Cruz, Ilha de Itaparica (BA); instalado como bispo diocesano em 19/10/1997.
+    Uma nota da mesma tese (n. 225) cita "Teatro Beberibe". O proprio Robinson, em testemunho de 2004 hospedado
+    no Projeto Cantuaria, confirma que Sherrill foi um dos seus co-sagrantes. O livro não nomeia os sagrantes. O
+    pôster só diz que Sherrill 'participou'; sagrante principal desconhecido por esta fonte. A tese diz 'sagrado
     pelo Primaz' sem nomeá-lo; Glauco Soares de Lima era Primaz de 1993 a 2003 segundo a mesma tese (inferência).
     Co-sagrantes não informados. Sagrado como bispo coadjutor da Diocese Anglicana do Recife; instalado como 3º
     diocesano em 19/10/1997. Na nota 225 (p. 243) a própria tese diz 'Robinson Cavalcanti no Teatro Beberibe, no
@@ -798,6 +802,96 @@ events:
   sources:
   - source: ieab-2005-cbispos-cantuaria
     quote: mente que lá encontrou Robinson Cavalcanti e Miguel Uchôa, “em nome” da IEAB.
+- type: other
+  date: '2002-07-28'
+  description: >-
+    Em 28/07/2002, o Diário de Pernambuco publicou a matéria "Liberal vai dirigir a Igreja Anglicana" (sobre a escolha
+    de Rowan Williams como arcebispo de Cantuária); no mesmo dia, em culto, o deão Paulo Garcia declarou-se contrário
+    ao que chamou de comportamentos antibíblicos, como a ordenação de sacerdotes homossexuais. A dissertação de
+    Queiroz data dessa matéria o início do clima de desconforto com o bispo Robinson Cavalcanti.
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: >-
+      uma matéria publicada no Diário de Pernambuco em 28 de julho de 2002 (domingo), cuja manchete era “Liberal
+      vai dirigir a Igreja Anglicana”
+  - source: queiroz-2004-ufpe
+    quote: neste mesmo dia o Pr. Paulo declarou em culto que não era a favor de tal postura do clero anglicano
+- type: other
+  date: '2002'
+  description: >-
+    Motivos da ruptura de Paulo Garcia com a IEAB (2002), em duas versões. Segundo o ACNS e Queiroz, a comunidade
+    alegou divergências com o bispo sobre divórcio, casais sem casamento civil e a postura de setores da Comunhão
+    Anglicana quanto à homossexualidade. Segundo lideranças anglicanas citadas por Queiroz e Costa, os argumentos
+    doutrinários foram pretexto: pesariam o convite para ingressar na Igreja Episcopal Carismática, a proximidade
+    da aposentadoria e a dificuldade em seguir as regras da Igreja.
+  status: contested
+  sources:
+  - source: lpg-acns-2002
+    quote: >-
+      the cathedral took the decision based on disagreements with the bishop on issues such as divorce and non-legally
+      married couples in the Church
+  - source: queiroz-2004-ufpe
+    quote: >-
+      Os argumentos doutrinários para o cisma da comunidade da Santíssima Trindade, segundo lideranças da Igreja
+      Anglicana, foram apenas pretextos.
+  - source: costa2021
+    quote: >-
+      as dificuldades que tinha em seguir as regras da religião – pois ele não se submetia à autoridade hierárquica
+      de Robinson; e a sua proximidade para se aposentar
+- type: other
+  date: 2002-10
+  description: >-
+    Entrevista do deão Garcia à Revista Eclésia (25/10/2002), na qual falou da relação tensa com o bispo Robinson
+    Cavalcanti e dos motivos do rompimento; em 27/10/2002, o Diário de Pernambuco noticiou "Catedral é disputada
+    na Justiça": a comunidade de Garcia alegava direito ao templo porque, desde 1999, a igreja deixara de ser nomeada
+    Holy Trinity Church e passara a Igreja da Santíssima Trindade, e porque as reformas teriam sido custeadas por
+    membros.
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: >-
+      Numa entrevista realizada pela Revista Eclésia, em 25 de outubro de 2002, o Deão Garcia mencionou a sua relação
+      tensa com o bispo Dom Robinson
+  - source: queiroz-2004-ufpe
+    quote: >-
+      O grupo dos carismáticos diz que tem direito à posse do templo, pois, desde 1999, a igreja deixou de ser nomeada
+      Holy Trinity Church
+  - source: queiroz-2004-ufpe
+    quote: Diário de Pernambuco – Recife, domingo, 27 de outubro de 2002.
+- type: other
+  date: '2002-11-14'
+  description: >-
+    Carta de Dom Robinson Cavalcanti à comunidade diocesana, datada de 14/11/2002, sobre o momento doloroso vivido
+    pela diocese após a saída da Catedral da Santíssima Trindade.
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: Vejamos uma carta de Dom Robinson à comunidade, datada em 14 de novembro de 2002
+- type: other
+  date: '2012-03-17'
+  description: >-
+    Eleito bispo sufragâneo em 2011, Evilásio Tenório teria sido sagrado, segundo a Wikipédia, por Robinson Cavalcanti,
+    mas a sagração ficou para depois da morte do bispo (26/02/2012) e ocorreu em 17/03/2012. Ainda segundo a Wikipédia,
+    Evilásio permaneceu provisoriamente como bispo diocesano até a eleição do novo líder em 19/05/2012.
+  status: probable
+  sources:
+  - source: lrec-ptwp-evilasio
+    quote: >-
+      Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
+      bispo diocesano, até a eleição do novo líder da Igreja Anglicana, em 19 de maio de 2012.
+- type: other
+  date: '2010'
+  description: >-
+    Como bispo diocesano do Recife, Robinson Cavalcanti afirma ter ordenado 99 diáconos e 85 presbíteros em sete
+    anos de governo (texto de 2010); no mesmo texto, diz que 34 das 44 comunidades então existentes na diocese foram
+    abertas nesse período.
+  status: confirmed
+  sources:
+  - source: lrec-ultimato-robinson-bio
+    quote: Como Bispo Diocesano, ordenou 99 Diáconos e 85 Presbíteros.
+  - source: lrec-ultimato-robinson-bio
+    quote: Nesses sete anos foram abertas 34 das presentes 44 comunidades da Diocese Anglicana do Recife
 - type: deposition
   date: 2005-01
   description: >-
@@ -997,7 +1091,7 @@ events:
       O culto foi celebrado pelo presidente do Conselho Diocesano, Márcio Simões, e pelos dois bispos auxiliares
       Flávio Aldair e Evilásio Tenório. Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo
       líder da igreja, o que deve ocorrer no dia 19 de maio.
-  - source: wp-pt-evilasio
+  - source: lrec-ptwp-evilasio
     quote: >-
       Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
       bispo diocesano, até a eleição do novo líder da Igreja Anglicana
