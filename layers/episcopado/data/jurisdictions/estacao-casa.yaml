@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: estacao-casa
+acronym: Estação Casa
+name: Estação Casa
+type: other
+country: BR
+description: >-
+  Comunidade de tradição anglicana liderada pelo Rev. Jaime Sepulcro Jr.; integrou a Rede Episcopal Brasileira até
+  27/06/2026, quando saiu e passou a ser independente.
+sources:
+- source: testemunho-mantenedor-2026-10-08-jader
+  quote: >-
+    27 de junho de 2026 a Estação Casa e Jaime sairam da REB, Jader continuou na REB e está agora (desde 1 de agosto
+    de 2026) plantando a Igreja Anglicana Caminho em BH (site da REB tem ela)
+- source: testemunho-mantenedor-2026-10-08-jader
+  quote: Jaime e Estação Casa estão independentes
+relations:
+- type: member_of
+  target: reb
+  date: null
+  end: '2026-06-27'
+  led_by:
+  - jaime-sepulcro-jr
+  status: confirmed
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-jader
+    quote: >-
+      27 de junho de 2026 a Estação Casa e Jaime sairam da REB, Jader continuou na REB e está agora (desde 1 de
+      agosto de 2026) plantando a Igreja Anglicana Caminho em BH (site da REB tem ela)
+  - source: testemunho-mantenedor-2026-10-08-jader
+    quote: Jaime e Estação Casa estão independentes
+  notes: Saiu da REB em 27/06/2026 e seguiu independente.
