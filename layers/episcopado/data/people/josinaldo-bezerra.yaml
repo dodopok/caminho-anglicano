@@ -1,11 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: josinaldo-bezerra
 name: Josinaldo Bezerra
-biography: Bispo da Igreja Anglicana Mundial no Brasil (Belo Jardim (PE)).
+full_name: Josinaldo Bezerra
+biography: >-
+  Bispo da WAC em Belo Jardim (PE), à frente da Diocese de Pernambuco da WAC no Brasil. O site da província dá sua
+  sagração episcopal em 03/03/2024, sem sagrantes nem local; a data de presbiterato está em branco.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Dom Josinaldo Bezerra, bispo da cidade de Belo Jardim (PE)
-  page: '129'
+- source: lwac-wacbr-clerigos
+  quote: Dom Josinaldo Bezerra Bispo da Cidade:Belo Jardim - PE
 ordinations:
 - order: episcopate
   date: '2024-03-03'
@@ -13,11 +15,23 @@ ordinations:
   office: diocesan
   status: probable
   sources:
-  - source: cont-wacbr-clerigos
+  - source: lwac-wacbr-clerigos
     quote: >-
       Dom Josinaldo Bezerra Bispo da Cidade:Belo Jardim - PE Contato: +55 (81) 9425-7756 Ordenação: Presbiteral:
       Sagração Episcopal: 03/03/2024
+  notes: >-
+    Data informada pelo site da WAC-BR, que deixa em branco o presbiterato. Sagrantes e local não informados nas
+    fontes consultadas; o ato é anterior ao Sínodo de julho de 2024.
 affiliations:
+- jurisdiction: wac-br
+  role: diocesan_bishop
+  diocese: wac-br-pe
+  status: probable
+  sources:
+  - source: lwac-wacbr-clerigos
+    quote: Dom Josinaldo Bezerra Bispo da Cidade:Belo Jardim - PE
+  - source: lwac-wacbr-provincia
+    quote: Pernambuco - Diocese de Pernambuco
 - jurisdiction: wac-br
   role: bishop
   status: probable

@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: joseph-rene-vilatte
+name: Joseph René Vilatte
+biography: >-
+  Sacerdote consagrado arcebispo em Ceilão em 29/05/1892 sob autorização do patriarca siríaco de Antioquia; fonte
+  da sucessão episcopal reivindicada pela African Orthodox Church (e, portanto, pela WAC).
+sources:
+- source: lwac-wac-about
+  quote: >-
+    on May 29th, 1892, Archbishop Vilatte was duly consecrated in Ceylon by Archbishop Julius Alvarez, assisted
+    by the Syrian Bishops George Gregorius and Paul Athanasius
+ordinations:
+- order: episcopate
+  date: '1892-05-29'
+  place: Ceilão
+  jurisdiction: null
+  principal_consecrator: julius-alvarez
+  co_consecrators:
+  - george-gregorius
+  - paul-athanasius
+  status: probable
+  sources:
+  - source: lwac-wac-about
+    quote: >-
+      on May 29th, 1892, Archbishop Vilatte was duly consecrated in Ceylon by Archbishop Julius Alvarez, assisted
+      by the Syrian Bishops George Gregorius and Paul Athanasius
+  notes: >-
+    Narrativa da própria WAC sobre a origem de sua sucessão episcopal (sírio-antioquena). A Wikipédia (EN) menciona
+    uma carta de 1987 de Athanasius Paulose II confirmando a sagração de Vilatte em Ceilão em 1892.

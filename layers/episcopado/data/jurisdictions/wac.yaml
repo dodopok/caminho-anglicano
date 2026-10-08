@@ -5,38 +5,73 @@ name: Igreja Anglicana Mundial (Worldwide Anglican Church)
 type: communion
 country: UG
 founded:
-  date: '2017'
+  date: '1921-09-02'
   sources:
-  - source: cant-novas-igrejas-2024
+  - source: lwac-wac-about
     quote: >-
-      A Igreja Anglicana Mundial (Worldwide Anglican Church – WAC) é uma comunidade internacional de tradição anglicana
-    page: '128'
+      The Worldwide Anglican Church began on September 2nd, 1921, and was called The African Orthodox Church.
+  - source: lwac-wac-about
+    quote: >-
+      The Worldwide Anglican Church Central Office is incorporated in Uganda, and registered in Ohio, USA, South
+      Sudan and India.
+  - source: lwac-wac-canons
+    quote: Consecration of Bishop – A Bishop must be consecrated by no less than three Bishops in attendance.
+  discrepancies:
+  - field: date
+    value: '2017'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        A Igreja Anglicana Mundial (Worldwide Anglican Church – WAC) é uma comunidade internacional de tradição
+        anglicana
+      page: '128'
 website: https://www.worldwideanglicanchurch.org/
 description: >-
-  Comunidade internacional de tradição anglicana, renomeação (2017) da African Orthodox Church (1921); sede patriarcal
-  em Uganda; patriarca e arcebispo primaz Christopher Lwanga Tusubira; intercomunhão com a Mercy Worldwide Ministries
-  Anglican Church desde dezembro de 2018.
+  Igreja de tradição anglicana independente (fora da Comunhão Anglicana de Cantuária), com sede registrada em Uganda
+  e registros nos EUA, Sudão do Sul, Colômbia e Índia. Declara origem na African Orthodox Church (1921, EUA), renomeada
+  Anglican African Orthodox Church (1997), Anglican Church Worldwide (2002) e Worldwide Anglican Church (julho de
+  2017). Patriarca: Christopher Lwanga Tusubira. Seus cânones exigem que todo bispo seja consagrado por pelo menos
+  três bispos.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lwac-wac-about
   quote: >-
-    A Igreja Anglicana Mundial (Worldwide Anglican Church – WAC) é uma comunidade internacional de tradição anglicana
-  page: '128'
+    The Worldwide Anglican Church began on September 2nd, 1921, and was called The African Orthodox Church.
+- source: lwac-wac-about
+  quote: >-
+    The Worldwide Anglican Church Central Office is incorporated in Uganda, and registered in Ohio, USA, South Sudan
+    and India.
+- source: lwac-wac-canons
+  quote: Consecration of Bishop – A Bishop must be consecrated by no less than three Bishops in attendance.
 relations:
 - type: successor_of
   target: aoc
-  date: '2017'
-  status: probable
+  date: 2017-07
+  led_by:
+  - christopher-lwanga-tusubira
+  status: confirmed
   sources:
+  - source: lwac-wac-about
+    quote: the ACW renounced its name and became the Worldwide Anglican Church (WAC) in July 2017
+  - source: lwac-wac-about
+    quote: >-
+      The Worldwide Anglican Church began on September 2nd, 1921, and was called The African Orthodox Church.
   - source: cant-novas-igrejas-2024
     quote: >-
       tem suas raízes na African Orthodox Church, fundada em 1921 e renomeada em 2017, após uma reforma interna,
       como Igreja Anglicana Mundial
     page: '128'
+  notes: >-
+    A WAC apresenta-se como a mesma igreja da African Orthodox Church (1921), com mudanças de nome: Anglican African
+    Orthodox Church (1997), Anglican Church Worldwide (2002), Worldwide Anglican Church (julho de 2017).
 - type: in_communion_with
   target: mwmac
   date: 2018-12
-  status: probable
+  status: confirmed
   sources:
+  - source: lwac-wac-about
+    quote: >-
+      the WAC and Mercy Worldwide Ministries Anglican Church (MWMAC) came into Intercommunion with each other to
+      form a robust union in December 2018.
   - source: cant-novas-igrejas-2024
     quote: >-
       Em dezembro de 2018, a Igreja Anglicana Mundial estabeleceu intercomunhão com a Mercy Worldwide Ministries

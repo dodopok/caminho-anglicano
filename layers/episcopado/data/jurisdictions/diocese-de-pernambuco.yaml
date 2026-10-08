@@ -1,7 +1,10 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-de-pernambuco
-name: Diocese de Pernambuco
+name: Diocese de Pernambuco (IATB)
+aliases:
+- Diocese de Pernambuco
 type: diocese
+country: BR
 relations:
 - type: part_of
   target: iatb

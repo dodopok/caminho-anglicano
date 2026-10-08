@@ -1,23 +1,52 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: wilson-limeira-dias
 name: Wilson Limeira Dias
+full_name: Wilson Limeira Dias
+aliases:
+- Dom Wilson
+- Monsenhor Wilson
+- Padre Wilson Limeira
+- Wilson Dias
 biography: >-
-  Sagrado bispo da Igreja Anglicana Mundial no Brasil no encerramento do Sínodo de Imbituba (julho de 2024); bispo
-  auxiliar de São Paulo.
+  Bispo auxiliar de São Paulo da WAC no Brasil e reitor do Seminário São Filipe Apóstolo. Ordenado presbítero em
+  02/10/1993 (jurisdição não informada); sagrado bispo em 14/07/2024, no encerramento do Sínodo Provincial em Imbituba
+  (SC). Os sagrantes não são nomeados nas fontes consultadas.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lwac-wacbr-clerigos
   quote: >-
-    os novos bispos Antônio Carlos Silva Santos e Wilson Limeira Dias foram consagrados para o Estado de São Paulo.
-  page: '129'
+    Dom Wilson Limeira Dias Bispo Auxiliar de São Paulo - Reitor do Seminário São Filipe Apóstolo Cidade: São Paulo
+    - SP Ordenação Presbiteral: 02/10/1993 Sagração Episcopal: 14/07/2024
 ordinations:
+- order: presbyterate
+  date: '1993-10-02'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: lwac-wacbr-clerigos
+    quote: >-
+      Dom Wilson Limeira Dias Bispo Auxiliar de São Paulo - Reitor do Seminário São Filipe Apóstolo Cidade: São
+      Paulo - SP Ordenação Presbiteral: 02/10/1993
+  notes: >-
+    Data informada pelo site da WAC-BR; jurisdição de origem e ordenante não constam (a ordenação é muito anterior
+    à sagração episcopal na WAC).
 - order: episcopate
   date: '2024-07-14'
   place: Imbituba (SC)
   jurisdiction: wac-br
   office: auxiliary
-  status: probable
+  status: confirmed
   sources:
-  - source: cont-wacbr-clerigos
+  - source: lwac-wacbr-clerigos
+    quote: 'Sagração Episcopal: 14/07/2024'
+  - source: lwac-wacbr-sinodo
+    quote: >-
+      Na mesma data, ainda, tivemos a Sagração Episcopal de ANTÔNIO CARLOS SILVA SANTOS e WILSON LIMEIRA DIAS, novos
+      Bispos que servirão no Estado de São Paulo.
+  - source: lwac-ig-wilson-sagracao
+    quote: >-
+      neste domingo dia 14/07 serei sagrado bispo para Igreja Anglicana Mundial - WAC  do Brasil esta celebração
+      está na prigramação do nosso  sinodo em Ibiguçu - Santa Catarina.
+  - source: lwac-wacbr-clerigos
     quote: >-
       Dom Wilson Limeira Dias Bispo Auxiliar de São Paulo - Reitor do Seminário São Filipe Apóstolo Cidade: São
       Paulo - SP Ordenação Presbiteral: 02/10/1993 Sagração Episcopal: 14/07/2024
@@ -27,16 +56,52 @@ ordinations:
       Wilson Limeira Dias foram consagrados para o Estado de São Paulo.
     page: '129'
   notes: >-
+    Realizada no Sínodo Provincial (11 a 14/07/2024, em Imbituba, SC; o site da WAC-BR grafa "Ibituba" e o próprio
+    Wilson escreveu "Ibiguçu"). Os sagrantes não são nomeados; estava presente o arcebispo Felix Nzeyimana, núncio
+    apostólico, representando o patriarca Lwanga Tusubira. Os cânones da WAC exigem ao menos três bispos consagrantes.
     Fecha o dia (antes só 2024-07, Sínodo de Imbituba). Presbiterato em 02/10/1993 (jurisdição anterior não informada).
     No encerramento do Sínodo (11–14/07/2024); o livro não nomeia os sagrantes (estava presente o arcebispo Felix
     Nzeyimana, representando o patriarca).
 affiliations:
 - jurisdiction: wac-br
-  role: auxiliary_bishop
-  start: 2024-07
+  role: clergy
+  start: 2024-01
   status: probable
   sources:
+  - source: lwac-ig-wilson-reel
+    quote: Monsenhor Wilson,  Igreja Anglicana Mundial WAC. Terceiro domingo do tempo comum.
+  notes: >-
+    Publicação de 21/01/2024 em seu perfil já o associa à WAC, antes da sagração episcopal de julho de 2024. Data
+    de entrada na WAC não informada.
+- jurisdiction: wac-br
+  role: auxiliary_bishop
+  start: '2024-07-14'
+  status: confirmed
+  sources:
+  - source: lwac-wacbr-clerigos
+    quote: Dom Wilson Limeira Dias Bispo Auxiliar de São Paulo - Reitor do Seminário São Filipe Apóstolo
   - source: cant-novas-igrejas-2024
     quote: Dom Wilson Limeira Dias, bispo auxiliar de São Paulo
     page: '129'
-  notes: 'Local: São Paulo.'
+  notes: >-
+    Local: São Paulo, Missão São Paulo. Também reitor do Seminário São Filipe Apóstolo e colaborador na Missão Nossa
+    Senhora Aparecida (SP). Local: São Paulo.
+events:
+- type: other
+  date: '2024-07-14'
+  description: >-
+    Sínodo Provincial da WAC no Brasil em Imbituba (SC), 11 a 14/07/2024: reescrita dos cânones provinciais; em
+    13/07 três diaconatos (Frei Mauro Ossoski, Rubens Cirilo da Silva, Deives Aparecido de Godoi); em 14/07 um presbiterato
+    (Samuel F. de Santana, Recife) e a sagração episcopal de Antônio Carlos Silva Santos e Wilson Limeira Dias;
+    incardinação do bispo Claudinei Rodrigo Ferreira. Presente o arcebispo e núncio Felix Nzeyimana, representando
+    o patriarca Lwanga Tusubira.
+  status: confirmed
+  sources:
+  - source: lwac-wacbr-sinodo
+    quote: Na cidade de Ibituba - SC, nos dias 11, 12, 13 e 14 de julho, tivemos o nosso Sínodo Provincial
+  - source: lwac-wacbr-sinodo
+    quote: >-
+      tivemos a presença do nosso Núncio Apostólico, Arcebispo Felix Nzeyimana, que reside no Canadá e que veio
+      representando nosso Patriarca, o Arcebispo Dr. C Lwanga Tusubira.
+  - source: lwac-wacbr-sinodo
+    quote: sendo recebido no grau de presbítero o Pastor, SAMUEL F. DE SANTANA

@@ -4,23 +4,37 @@ acronym: DACBP
 name: Diocese Anglo-Católica Cristo Bom Pastor
 type: diocese
 country: BR
+website: https://www.anglicanatradicional.com.br/
 description: >-
-  Diocese anglo-católica no Rio de Janeiro, ligada à Igreja Anglicana Tradicional do Brasil (IATB), com o bispo
-  Cristiano Alves.
+  Diocese da Igreja Anglicana Tradicional do Brasil no Rio de Janeiro, sob Dom Cristiano (Alves). O site da IATB
+  registra visita pastoral do bispo primaz Dom Rui em 18-21/01/2024; a Paróquia Anglo-Católica Santa Mãe de Deus
+  (Água Santa, RJ) é listada com Dom Cristiano.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lac-iatb-visita
   quote: >-
-    Esta segunda Província a ser organizada, foi intitulada Província Anglo-Católica da Santíssima Trindade, sendo
-    era formada pelos bispos dom Antônio Bessa (bispo do Ceará) e dom Rafael Moraes (hoje bispo da Província Anglo-Católica
-    da Santíssima Trindade, em Nova Friburgo), dom Cristiano Alves (hoje bispo da Diocese Anglo-Católica Cristo
-    Bom Pastor, no Rio de Janeiro, ligada à Igreja Anglicana Tradicional do Brasil - IATB) e dom Rafael Mendes (hoje
-    bispo da Diocese Anglo-Católica de Minas Gerais, como uma igreja autocéfala local).
-  page: '162'
+    Nos dias 18 a 21 de janeiro de 2024 , a Diocese Anglo Católica Cristo Bom Pastor recebeu a visita do Bispo Primaz
+    da Igreja, Dom Rui.
+- source: iatb-comunidades
+  quote: >-
+    Paróquia Anglo-Católica Santa Mãe de Deus Rio de Janeiro - RJ Rua Torres de Oliveira 436, Água Santa - Rio de
+    Janeiro, RJ Dom Cristiano
 relations:
 - type: part_of
   target: iatb
-  status: probable
+  status: confirmed
   sources:
+  - source: iatb-home
+    quote: >-
+      Nós, Dom Rui Costa Barbosa, Dom José da Santa Cruz, Dom Cristiano Alves, presbíteros, diáconos e leigos da
+      Igreja Anglicana Tradicional do Brasil
+  - source: iatb-home
+    quote: Nova Iguaçu-RJ, 16 de novembro de 2025
+  - source: lac-iatb-visita
+    quote: >-
+      Nos dias 18 a 21 de janeiro de 2024 , a Diocese Anglo Católica Cristo Bom Pastor recebeu a visita do Bispo
+      Primaz da Igreja, Dom Rui.
+  - source: lac-iatb-visita
+    quote: as atividades no Rio de Janeiro estão se desenrolando de acordo com os cânones e princípios da IATB
   - source: cant-novas-igrejas-2024
     quote: >-
       este bispo foi convidado por dom Rui Barbosa para retornar para a Igreja Anglicana Tradicional do Brasil (IATB).
@@ -39,4 +53,8 @@ relations:
       Bom Pastor, no Rio de Janeiro, ligada à Igreja Anglicana Tradicional do Brasil - IATB) e dom Rafael Mendes
       (hoje bispo da Diocese Anglo-Católica de Minas Gerais, como uma igreja autocéfala local).
     page: '162'
-  notes: '''ligada à Igreja Anglicana Tradicional do Brasil - IATB''.'
+  led_by:
+  - cristiano-alves
+  notes: >-
+    O site da IATB trata a diocese carioca como parte da província; Dom Rui (primaz) acompanha o trabalho do clero
+    de lá. 'ligada à Igreja Anglicana Tradicional do Brasil - IATB'.

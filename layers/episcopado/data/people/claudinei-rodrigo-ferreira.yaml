@@ -1,12 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: claudinei-rodrigo-ferreira
 name: Claudinei Rodrigo Ferreira
-biography: Ordenado ao episcopado por James Antônio Roque (Diocese Anglicana do Japi).
+full_name: Claudinei Rodrigo Ferreira
+aliases:
+- Dom Claudinei
+- Dom Ferreira
+biography: >-
+  Bispo da Diocese Anglicana Mundial de Santa Catarina (Florianópolis). Segundo o site da diocese, pastor ordenado
+  aos 19 anos na Igreja do Evangelho Quadrangular, seminarista do SETEK (IEAB, Porto Alegre) e depois pastor de
+  comunidade própria em Cachoeirinha (RS); a diocese começou em 2017 e ele assumiu o episcopado em 2019 (site da
+  WAC-BR: sagração em 26/07/2019). Incardinado na WAC no Brasil em julho de 2024.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lwac-dasc
   quote: >-
-    Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa da Silva.
-  page: '76'
+    A Diocese Anglicana Mundial de Santa Catarina, iniciou seus trabalhos no ano de 2017, época em que era ligada
+    a Igreja Anglicana Continuante, foi designado como bispo eleito Monsenhor Dom Claudinei Rodrigo Ferreira, que
+    assumiu o episcopado no ano de 2019.
+- source: lwac-wacbr-clerigos
+  quote: >-
+    Dom Claudinei Rodrigo Ferreira Bispo da Cidade: Florianópolis - SC Contato: +55 (48) 98844-7000 Ordenação: Presbiteral:
+    Sagração Episcopal: 26/07/2019
 ordinations:
 - order: episcopate
   date: '2019-07-26'
@@ -15,7 +28,11 @@ ordinations:
   principal_consecrator: james-antonio-roque
   status: probable
   sources:
-  - source: cont-wacbr-clerigos
+  - source: lwac-wacbr-clerigos
+    quote: 'Sagração Episcopal: 26/07/2019'
+  - source: lwac-wacbr-sinodo
+    quote: Bispo desde 2019, pediu sua incardinação e iniciou sua caminhada conosco
+  - source: lwac-wacbr-clerigos
     quote: >-
       Dom Claudinei Rodrigo Ferreira Bispo da Cidade: Florianópolis - SC Contato: +55 (48) 98844-7000 Ordenação:
       Presbiteral: Sagração Episcopal: 26/07/2019
@@ -45,33 +62,48 @@ ordinations:
       Silva.
     page: '138'
   notes: >-
-    DATA NOVA: o site da WAC-BR dá 26/07/2019 para a sagração de Claudinei; Cant (2024) diz apenas 'desde 2019'
-    e que foi ordenado por James Roque (Japi). Jurisdição do ato: o site da diocese (dasc.iacc) diz que ela era
-    ligada à Igreja Anglicana Continuante em 2017-2019. Sagrante não informado nesta página. Data não informada;
-    entre os 'primeiros atos' episcopais de James Roque (após 2013), no contexto da Diocese Anglicana do Japi. O
-    livro não informa jurisdição nem sagrantes. 'da Diocese Anglicana de Santa Catarina'. Data não informada. Datas
-    não informadas; a Diocese do Japí foi depois extinta e esses bispos fundaram igrejas anglicanas independentes.
+    Data do site da WAC-BR. Sagrantes, local e jurisdição do ato não informados nestas páginas; a diocese de Santa
+    Catarina estava então ligada à "Igreja Anglicana Continuante", segundo o site da diocese. DATA NOVA: o site
+    da WAC-BR dá 26/07/2019 para a sagração de Claudinei; Cant (2024) diz apenas 'desde 2019' e que foi ordenado
+    por James Roque (Japi). Jurisdição do ato: o site da diocese (dasc.iacc) diz que ela era ligada à Igreja Anglicana
+    Continuante em 2017-2019. Sagrante não informado nesta página. Data não informada; entre os 'primeiros atos'
+    episcopais de James Roque (após 2013), no contexto da Diocese Anglicana do Japi. O livro não informa jurisdição
+    nem sagrantes. 'da Diocese Anglicana de Santa Catarina'. Data não informada. Datas não informadas; a Diocese
+    do Japí foi depois extinta e esses bispos fundaram igrejas anglicanas independentes.
 affiliations:
 - jurisdiction: wac-br
   role: diocesan_bishop
   start: '2024'
   status: confirmed
   sources:
-  - source: cont-iacc-santacatarina
+  - source: lwac-dasc
     quote: >-
       No ano de 2024, Dom Ferreira, solicitou a incardinação na Igreja Anglicana Mundial - WAC Brasil, atualmente
       presidida por Dom Paulo Sergio Ferreira, arcebispo Primaz da WAC - Brasil.
-  - source: cont-iacc-santacatarina
+  - source: lwac-dasc
     quote: >-
       A Diocese Anglicana Mundial de Santa Catarina, iniciou seus trabalhos no ano de 2017, época em que era ligada
       a Igreja Anglicana Continuante, foi designado como bispo eleito Monsenhor Dom Claudinei Rodrigo Ferreira,
       que assumiu o episcopado no ano de 2019.
-  - source: cont-wacbr-clerigos
+  - source: lwac-wacbr-clerigos
     quote: 'Dom Claudinei Rodrigo Ferreira Bispo da Cidade: Florianópolis - SC'
   notes: >-
     Local: Diocese Anglicana (Mundial) de Santa Catarina (São Teófilo). Duas fontes primárias concordam (site da
     diocese e da WAC-BR). O site 'dasc-iacc.webnode.page', citado como site da IACC, hoje é o site da Diocese de
     Santa Catarina já em WAC-BR (parte do conteúdo do site é texto institucional da WAC).
+- jurisdiction: wac-br
+  role: diocesan_bishop
+  diocese: wac-br-sc
+  start: 2024-07
+  status: confirmed
+  sources:
+  - source: lwac-wacbr-sinodo
+    quote: >-
+      Como nosso Sínodo foi marcado de bênçãos, do início ao fim, recebemos mais um membro em nosso clero, o Bispo
+      Dom CLAUDINEI RODRIGO FERREIRA, que servirá ao episcopado na cidade de Florianópolis.
+  - source: lwac-dasc
+    quote: No ano de 2024, Dom Ferreira, solicitou a incardinação na Igreja Anglicana Mundial - WAC Brasil
+  notes: Incardinado durante o Sínodo Provincial (11 a 14/07/2024).
 - jurisdiction: wac-br
   role: bishop
   start: 2024-07
@@ -83,3 +115,37 @@ affiliations:
       ao episcopado em Florianópolis
     page: '129'
   notes: 'Local: Florianópolis, SC.'
+events:
+- type: other
+  date: '2011'
+  description: >-
+    Trajetória anterior de Claudinei Rodrigo Ferreira: pastor ordenado aos 19 anos na Igreja do Evangelho Quadrangular;
+    seminarista do SETEK (Seminário Dom Egmont Machado Krischke, da IEAB, Porto Alegre) e auxiliar em Cachoeirinha
+    (RS); deixou a IEAB por divergências teológicas e pastoreou comunidade própria na cidade; em 2011 mudou-se para
+    Florianópolis.
+  status: confirmed
+  sources:
+  - source: lwac-dasc
+    quote: >-
+      Após a conclusão do curso, permaneceu como auxiliar na Paróquia na cidade de Cachoeirinha, onde concluiu seus
+      trabalhos e por divergências teológicas optou por não permanecer na IEAB.
+  - source: lwac-dasc
+    quote: No ano de 2011, sentiu um chamado para voltar a sua terra natal, a cidade de Florianópolis/SC
+- type: other
+  date: '2024-07-14'
+  description: >-
+    Sínodo Provincial da WAC no Brasil em Imbituba (SC), 11 a 14/07/2024: reescrita dos cânones provinciais; em
+    13/07 três diaconatos (Frei Mauro Ossoski, Rubens Cirilo da Silva, Deives Aparecido de Godoi); em 14/07 um presbiterato
+    (Samuel F. de Santana, Recife) e a sagração episcopal de Antônio Carlos Silva Santos e Wilson Limeira Dias;
+    incardinação do bispo Claudinei Rodrigo Ferreira. Presente o arcebispo e núncio Felix Nzeyimana, representando
+    o patriarca Lwanga Tusubira.
+  status: confirmed
+  sources:
+  - source: lwac-wacbr-sinodo
+    quote: Na cidade de Ibituba - SC, nos dias 11, 12, 13 e 14 de julho, tivemos o nosso Sínodo Provincial
+  - source: lwac-wacbr-sinodo
+    quote: >-
+      tivemos a presença do nosso Núncio Apostólico, Arcebispo Felix Nzeyimana, que reside no Canadá e que veio
+      representando nosso Patriarca, o Arcebispo Dr. C Lwanga Tusubira.
+  - source: lwac-wacbr-sinodo
+    quote: sendo recebido no grau de presbítero o Pastor, SAMUEL F. DE SANTANA

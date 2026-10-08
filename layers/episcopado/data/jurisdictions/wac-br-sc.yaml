@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: wac-br-sc
+acronym: WAC-BR-SC
+name: Diocese Anglicana Mundial de Santa Catarina (São Teófilo)
+aliases:
+- Diocese Anglicana Mundial de Santa Catarina (Florianópolis)
+type: diocese
+country: BR
+founded:
+  date: '2017'
+  sources:
+  - source: lwac-dasc
+    quote: >-
+      A Diocese Anglicana Mundial de Santa Catarina, iniciou seus trabalhos no ano de 2017, época em que era ligada
+      a Igreja Anglicana Continuante
+website: https://dasc-iacc.webnode.page/
+description: >-
+  Diocese que iniciou trabalhos em 2017 ligada à "Igreja Anglicana Continuante"; seu bispo, Claudinei Rodrigo Ferreira,
+  pediu incardinação na WAC no Brasil em 2024.
+sources:
+- source: lwac-dasc
+  quote: >-
+    A Diocese Anglicana Mundial de Santa Catarina, iniciou seus trabalhos no ano de 2017, época em que era ligada
+    a Igreja Anglicana Continuante
+relations:
+- type: part_of
+  target: wac-br
+  status: confirmed
+  sources:
+  - source: lwac-wacbr-sinodo
+    quote: >-
+      Como nosso Sínodo foi marcado de bênçãos, do início ao fim, recebemos mais um membro em nosso clero, o Bispo
+      Dom CLAUDINEI RODRIGO FERREIRA, que servirá ao episcopado na cidade de Florianópolis.
+  - source: lwac-dasc
+    quote: No ano de 2024, Dom Ferreira, solicitou a incardinação na Igreja Anglicana Mundial - WAC Brasil
+  date: 2024-07

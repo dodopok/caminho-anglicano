@@ -1,23 +1,37 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jose-fernando-de-faria
 name: José Fernando de Faria
-biography: Bispo que propôs a criação da Província Anglicana Católica do Espírito Santo (hoje extinta).
+aliases:
+- DE FARIA Jose Fernando
+biography: >-
+  A lista de bispos da IAL registra 'De Faria Jose Fernando', brasileiro, com 'ratificação' em Fortaleza em 2019
+  (ou seja, já tinha ordens episcopais anteriores que foram ratificadas, segundo a convenção da lista).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: através do bispo José Fernando de Faria, à época, auxiliado por dom Antônio Bessa.
-  page: '105'
+- source: lac-ial-sucessao
+  quote: >-
+    41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
+    - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
 ordinations:
 - order: episcopate
-  date: null
-  jurisdiction: null
+  date: '2019'
+  place: Fortaleza (CE)
+  jurisdiction: icala
   principal_consecrator: leonardo-marin-saavedra
   status: probable
   sources:
+  - source: lac-ial-sucessao
+    quote: >-
+      41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
+      - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
   - source: cant-novas-igrejas-2024
     quote: >-
       Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
       Unidos.
-  notes: Primaz da extinta Província Anglicana Católica do Espírito Santo.
+  notes: >-
+    Na lista da IAL consta como 'Ratification' em Fortaleza, 2019: a IAL ratificou ordens que ele já tinha, em vez
+    de conferir sagração nova. Cant (2024) diz que ele foi 'sagrado bispo por dom Leonardo Marin-Saavedra'. Sagrante
+    inferido do contexto da lista (consagrações da IAL). Primaz da extinta Província Anglicana Católica do Espírito
+    Santo.
 affiliations:
 - jurisdiction: paces
   role: founder
@@ -49,3 +63,20 @@ affiliations:
       do Brasil
     page: '161'
   notes: O livro diz apenas que 'ingressou'; papel não especificado.
+events:
+- type: other
+  date: '2019'
+  description: >-
+    Lista de bispos da IAL registra em Fortaleza (CE), em 2019, as sagrações/ratificações dos brasileiros José Fernando
+    de Faria (ratificação), Paulo Cesar Gomes (ratificação) e Antonio Jose Pereira-Bessa, além do argentino Cristian
+    Gerardo Romero, também em Fortaleza.
+  status: confirmed
+  sources:
+  - source: lac-ial-sucessao
+    quote: >-
+      40th (Fortieth) Bishop consecrated by IAL USA/Canada: -066. GOMES Paulo Cesar. - Single. (Ratification) -
+      Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
+  - source: lac-ial-sucessao
+    quote: >-
+      39th ( Thirty-Nineth ) Bishop consecrated by IAL USA/Canada: -065. ROMERO Cristian Gerardo. - Married. - Argentinean
+      Citizen - in 2019 - Fortaleza city, Ceara, Brazil - (Still living).

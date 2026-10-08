@@ -1,18 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: elcemir-durans-mendonca
 name: Elcemir Durans Mendonça
+aliases:
+- Bispo + Elcemir Durans
 biography: >-
-  Sagrado(a) bispo(a) pela Ordem Anglicana Filhos da Promessa (IEEP) em 10/11/2012, em Belford Roxo (RJ).
+  Sagrando no convite de 10/11/2012 ('Bispo + Elcemir Durans'). A página de sucessão apostólica do CNBP (sem data)
+  o descreve como 'Bispo; Teólogo e Historiador' e atribui a ele a apuração da linha de sucessão ali publicada.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lac-cnbp-sucessao
   quote: >-
-    Sagração Episcopal dos seguintes postulantes: Eliane Helena da Silva Nogueira, Reinaldo da Silva Tavares, José
-    Aparecido Marques, José Kennedy de Freitas e Elcemir Durans Mendonça
-  page: '145'
+    Nota: Linha de Sucessão legitima devidamente apurada pelo Bispo; Teólogo e Historiador Dom + Elcemir Durans
+    Mendonça
+- source: lac-cnbp-convite2012
+  quote: Episcopisa + Eliane Helena Bispo + Reinaldo Tavares Bispo + José Marques Bispo + Elcemir Durans
 ordinations:
 - order: episcopate
   date: '2012-11-10'
-  place: Igreja Pentecostal Caminho da Fé, Belford Roxo (RJ)
+  place: Igreja Pentecostal Caminho da Fé, Rua Botânica 70, Jardim Boa Esperança, Belford Roxo (RJ)
   jurisdiction: oafip
   principal_consecrator: elias-batista-nogueira
   co_consecrators:
@@ -20,6 +24,14 @@ ordinations:
   - josue-sousa-torres
   status: probable
   sources:
+  - source: lac-cnbp-convite2012
+    quote: >-
+      SAGRANTE: Monsenhor ++Elias Batista Nogueira (IEFP) CO-SAGRANTES: Monsenhor ++Josué Souza Torres (IEEP) Monsenhor
+      +Cláudio Lucena (Igreja Metodista) No dia 10 de Novembro do ano da graça de Nosso Senhor Jesus Cristo de 2012
+      às 18:30 horas na Igreja Pentecostal Caminho da Fé, sito à Rua Botânica, nº 70 – Jardim Boa Esperança – Belford
+      Roxo – Rio de Janeiro – Brasil.
+  - source: lac-cnbp-convite2012
+    quote: Episcopisa + Eliane Helena Bispo + Reinaldo Tavares Bispo + José Marques Bispo + Elcemir Durans
   - source: cant-novas-igrejas-2024
     quote: >-
       Sagração Episcopal dos seguintes postulantes: Eliane Helena da Silva Nogueira, Reinaldo da Silva Tavares,
@@ -41,6 +53,12 @@ ordinations:
       Souza Torres e Sua Exª Bispo José Demontier
     page: '146'
   notes: >-
-    Costa (2024) transcreve a convocação da Província Brasileira de Confissão Anglicana (10/11/2012); é a previsão
-    do ato, não um relato da cerimônia. O documento citado (Província Brasileira de Confissão Anglicana, 10/11/2012)
-    é a aprovação da sagração 'a realizar-se' nessa data; o livro não confirma explicitamente a realização.
+    Fonte é o convite (imagem publicada em 09/10/2012 no blog do CNBP) para a solenidade de sagração episcopal de
+    10/11/2012 às 18h30, ou seja, anúncio do ato e não relato da cerimônia. O convite nomeia como co-sagrantes Josué
+    Souza Torres (IEEP) e Cláudio Lucena (Igreja Metodista); o documento transcrito por Costa/Cant (2024) nomeia
+    Josué Souza Torres e José Demontier — os dois coincidem em Josué. Os sagrandos listados no convite são quatro
+    (Eliane Helena, Reinaldo Tavares, José Marques, Elcemir Durans); José Kennedy de Freitas, citado por Costa/Cant
+    entre os cinco postulantes, não consta do convite. Costa (2024) transcreve a convocação da Província Brasileira
+    de Confissão Anglicana (10/11/2012); é a previsão do ato, não um relato da cerimônia. O documento citado (Província
+    Brasileira de Confissão Anglicana, 10/11/2012) é a aprovação da sagração 'a realizar-se' nessa data; o livro
+    não confirma explicitamente a realização.

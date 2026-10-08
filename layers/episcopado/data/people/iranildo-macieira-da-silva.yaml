@@ -68,6 +68,14 @@ ordinations:
     quote: >-
       A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
       Apostólica Episcopal Portuguesa
+  - source: lwac-diego-bio
+    quote: >-
+      2004, 26 de setembro – Arcebispo José Ricardo Ferreira de Souza sagrou Iranildo Macieira da Silva (Dom Lucas
+      Macieira da Silva), Arcebispo Primaz da Igreja Episcopal Latina do Brasil.
+  - source: lwac-diego-bio
+    quote: >-
+      2004, 25 de outubro – Dom António José da Costa Raposo sagrou Dom Iranildo Macieira da Silva (Dom Lucas Macieira
+      da Silva) em Portugal.
   - source: cant-novas-igrejas-2024
     quote: >-
       Neste mesmo ano ingressou em uma Igreja Vétero-Católica local, onde foi sagrado bispo no Brasil, em 2004.
@@ -92,19 +100,41 @@ ordinations:
       quote: >-
         A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
         Apostólica Episcopal Portuguesa
+    - source: lwac-diego-bio
+      quote: >-
+        2004, 26 de setembro – Arcebispo José Ricardo Ferreira de Souza sagrou Iranildo Macieira da Silva (Dom Lucas
+        Macieira da Silva), Arcebispo Primaz da Igreja Episcopal Latina do Brasil.
     - source: cant-novas-igrejas-2024
       quote: >-
         A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
         Apostólica Episcopal Portuguesa.
       page: '166'
+  - field: principal_consecrator
+    value: jose-ricardo-ferreira-de-souza
+    sources:
+    - source: lwac-diego-bio
+      quote: >-
+        2004, 26 de setembro – Arcebispo José Ricardo Ferreira de Souza sagrou Iranildo Macieira da Silva (Dom Lucas
+        Macieira da Silva), Arcebispo Primaz da Igreja Episcopal Latina do Brasil.
+  - field: date
+    value: '2004-10-25'
+    sources:
+    - source: lwac-diego-bio
+      quote: >-
+        2004, 25 de outubro – Dom António José da Costa Raposo sagrou Dom Iranildo Macieira da Silva (Dom Lucas
+        Macieira da Silva) em Portugal.
   notes: >-
     O site chama Jelinek e Chadwick ("Arcebispo da França") de co-celebrantes da sagração. CONTESTADO: o mesmo livro
     (cap. Igreja Episcopal Latina do Brasil) diz "A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro
     de 2004 em Portugal, por bispos da Igreja Apostólica Episcopal Portuguesa". Houve também uma sagração anterior
     no Brasil (2004), contestada. A lista de sagrantes no trecho continua (truncada). Versão do capítulo "Igreja
-    Episcopal Latina do Brasil" do mesmo livro. Primeira sagração, no Brasil, contestada; sagrantes não citados.
-    Seguiu-se nova sagração em Portugal (24/10/2004). O livro não distingue o sagrante principal entre os três bispos
-    de tradição vétero-católica. Sagrantes não nomeados ('por bispos da Igreja Apostólica Episcopal Portuguesa').
+    Episcopal Latina do Brasil" do mesmo livro. Linhagem declarada no site de Diego Peral (primeira linha). Outra
+    fonte (a segunda linha do mesmo site) dá a sagração de Macieira em Portugal em 25/10/2004 por António José da
+    Costa Raposo. Registrado como contestado por haver duas sagrações distintas no mesmo ano. Linhagem declarada
+    no site de Diego Peral (segunda linha). Outros registros datam a mesma sagração de 24/10/2004; diferença de
+    um dia entre fontes. Primeira sagração, no Brasil, contestada; sagrantes não citados. Seguiu-se nova sagração
+    em Portugal (24/10/2004). O livro não distingue o sagrante principal entre os três bispos de tradição vétero-católica.
+    Sagrantes não nomeados ('por bispos da Igreja Apostólica Episcopal Portuguesa').
 affiliations:
 - jurisdiction: ivc-macieira
   role: clergy

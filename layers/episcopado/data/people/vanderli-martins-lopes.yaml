@@ -5,12 +5,24 @@ events:
 - type: other
   date: '2023-11-21'
   description: >-
+    A Diocese Anglicana do Pará (sede em Belém) foi vinculada à Igreja Anglicana Mundial WAC no Brasil em 21/11/2023;
+    o site da WAC-BR diz que é administrada pelo reverendo Vanderli Martins Lopes e lista duas paróquias (Santo
+    Expedito, em Belém; São Francisco de Assis, em Bonito).
+  status: confirmed
+  sources:
+  - source: lwac-wacbr-para
+    quote: >-
+      Seu governo está sob a administração do Reverendo Vanderli Martins Lopes. Foi vinculada a Igreja Anglicana
+      Mundial WAC no Brasil em 21 de Novembro de 2023.
+- type: other
+  date: '2023-11-21'
+  description: >-
     Diocese Anglicana do Pará vinculada à Igreja Anglicana Mundial (WAC) no Brasil em 21/11/2023; a província lista,
     em 2026, a província, 'seis regiões missionárias e uma Diocese' e dioceses de São Paulo (São Francisco dos Pequenos;
     São Tiago Maior), Pará e Pernambuco.
   status: confirmed
   sources:
-  - source: cont-wacbr-para
+  - source: lwac-wacbr-para
     quote: Foi vinculada a Igreja Anglicana Mundial WAC no Brasil em 21 de Novembro de 2023.
-  - source: cont-wacbr-provincias
+  - source: lwac-wacbr-provincia
     quote: É formada por uma província e seis regiões missionarias e uma Diocese.

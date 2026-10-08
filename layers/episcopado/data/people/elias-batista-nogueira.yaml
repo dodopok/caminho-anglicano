@@ -1,15 +1,41 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: elias-batista-nogueira
 name: Elias Batista Nogueira
+aliases:
+- Dom Elias
 biography: >-
-  Bispo fundador da Ordem Anglicana Filhos da Promessa (IEEP, 2012); sagrante principal de cinco bispos em 10/11/2012
-  (Belford Roxo).
+  Patriarca (título usado na lista do CNBP) e presidente provincial da Província Brasileira de Confissão Anglicana;
+  vinculado à Ordem Anglicana Filhos da Promessa (OAFIP). Segundo a página de sucessão do CNBP, foi sagrado bispo
+  em 12/11/2011, em Mallet (Rio de Janeiro), por Josué Souza Torres. Casado com Eliane Helena da Silva Nogueira.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lac-cnbp-sucessao
   quote: >-
-    Essa Ordem religiosa da IEEP foi fundada pelo bispo Elias Batista Nogueira, junto com o irmão Roberto de Avelar
-    Coelho da Silva.
-  page: '145'
+    Elias Batista Nogueira (Brasileiro) – Em 12/11/2011 foi sagrado ao Bispado pelo Bispo Josué Souza Torres em
+    Mallet, Rio de Janeiro (RJ), Brasil.
+- source: lac-cnbp-bispos
+  quote: >-
+    Dom + + + Elias Batista Nogueira – Patriarca Presidente da Convenção Eclesiástica Filhos da Promessa - CEFIP
+- source: lac-stpeb-elias
+  quote: Casado com a Gestora Eliane Helena da Silva Nogueira
+ordinations:
+- order: episcopate
+  date: '2011-11-12'
+  place: Mallet, Rio de Janeiro (RJ) — templo da Igreja Evangélica Ministério Javé Nissi
+  jurisdiction: ieep
+  principal_consecrator: josue-sousa-torres
+  status: probable
+  sources:
+  - source: lac-cnbp-sucessao
+    quote: >-
+      Elias Batista Nogueira (Brasileiro) – Em 12/11/2011 foi sagrado ao Bispado pelo Bispo Josué Souza Torres em
+      Mallet, Rio de Janeiro (RJ), Brasil.
+  - source: lac-cnbp-elogio
+    quote: que estará ordenando e sagrando ministros cristãos, no dia 12/11/2011
+  notes: >-
+    A saudação de Dom Filismar Manoel, no mesmo blog, anuncia que Josué Souza Torres (Bispo Primaz da IEEP) ordenaria
+    e sagraria ministros em 12/11/2011 no templo da Igreja Evangélica Ministério Javé Nissi, Rua Marechal Fontinele
+    4593, Mallet; cita entre os reverendos Elias Batista e Reinaldo Tavares. Sagração episcopal 'c.2011' na página
+    de Sagrações do blog Ouvidoria CEFIP.
 affiliations:
 - jurisdiction: oafip
   role: founder

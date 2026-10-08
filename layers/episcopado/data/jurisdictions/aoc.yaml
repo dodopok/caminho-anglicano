@@ -3,20 +3,39 @@ id: aoc
 acronym: AOC
 name: African Orthodox Church
 type: national_church
+country: US
 founded:
   date: '1921'
   sources:
+  - source: lwac-wp-aoc
+    quote: >-
+      The African Orthodox Church ( AOC ) was a predominantly African-American Christian denomination which was
+      founded in the United States in 1918 by the joint collaboration of its first patriarch
+  - source: lwac-wac-about
+    quote: >-
+      In 1997, AOC implemented the reform and changed its name to the Anglican African Orthodox Church (AAOC).
   - source: cant-novas-igrejas-2024
     quote: tem suas raízes na African Orthodox Church, fundada em 1921 e renomeada em 2017
     page: '128'
 dissolved:
   date: '2017'
   sources:
-  - source: cant-novas-igrejas-2024
-    quote: tem suas raízes na African Orthodox Church, fundada em 1921 e renomeada em 2017
-    page: '128'
-description: Igreja fundada em 1921, renomeada em 2017 Igreja Anglicana Mundial (Worldwide Anglican Church).
+  - source: lwac-wp-aoc
+    quote: >-
+      The African Orthodox Church ( AOC ) was a predominantly African-American Christian denomination which was
+      founded in the United States in 1918 by the joint collaboration of its first patriarch
+  - source: lwac-wac-about
+    quote: >-
+      In 1997, AOC implemented the reform and changed its name to the Anglican African Orthodox Church (AAOC).
+description: >-
+  Denominação fundada nos EUA por George Alexander McGuire (com ligação ao movimento de Marcus Garvey), que reivindicava
+  sucessão episcopal siríaca de Antioquia via Joseph René Vilatte. Renomeada Anglican African Orthodox Church (1997),
+  Anglican Church Worldwide (2002) e Worldwide Anglican Church (2017).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: tem suas raízes na African Orthodox Church, fundada em 1921 e renomeada em 2017
-  page: '128'
+- source: lwac-wp-aoc
+  quote: >-
+    The African Orthodox Church ( AOC ) was a predominantly African-American Christian denomination which was founded
+    in the United States in 1918 by the joint collaboration of its first patriarch
+- source: lwac-wac-about
+  quote: >-
+    In 1997, AOC implemented the reform and changed its name to the Anglican African Orthodox Church (AAOC).

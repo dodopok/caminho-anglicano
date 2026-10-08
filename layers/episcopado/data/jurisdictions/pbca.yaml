@@ -4,11 +4,30 @@ acronym: PBCA
 name: Província Brasileira de Confissão Anglicana
 type: province
 country: BR
-website: http://provinciabrasileiraanglicana.blogspot.com/
+website: https://provinciabrasileiraanglicana.blogspot.com/
 description: >-
-  Jurisdição independente pela qual Lucas Oliva Bertolozzi foi sagrado bispo em 2011 (sagrante Josué Torres); fonte
-  do documento da sagração da OAFIP de 2012.
+  Província anglicana independente ('continuante', sem vínculo com Cantuária) que se declara parte da Igreja Episcopal
+  do Evangelho Pleno (IEEP), da Comunhão Episcopal Protestante do Brasil (CEPB) e da Ordem Anglicana Filhos da Promessa
+  (OAFIP). Seu clero listado inclui Elias Batista Nogueira (presidente provincial) e Eliane Helena Nogueira.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: tendo sido sagrado bispo em 2011 pela Província Brasileira de Confissão Anglicana
-  page: '142'
+- source: lac-pbca-anglicanismo
+  quote: >-
+    A Província Brasileira de Confissão Anglicana é parte da Igreja Episcopal do Evangelho Pleno - IEEP , Comunhão
+    Episcopal Protestante do Brasil (CEPB ) e da Ordem Anglicana Filhos da Promessa (OAFIP),
+- source: lac-pbca-clero
+  quote: Revmo Bispo Elias Batista Nogueira, OAFIP (Presidente Provincial)
+relations:
+- type: part_of
+  target: ieep
+  date: null
+  led_by:
+  - elias-batista-nogueira
+  status: probable
+  sources:
+  - source: lac-pbca-anglicanismo
+    quote: >-
+      A Província Brasileira de Confissão Anglicana é parte da Igreja Episcopal do Evangelho Pleno - IEEP , Comunhão
+      Episcopal Protestante do Brasil (CEPB ) e da Ordem Anglicana Filhos da Promessa (OAFIP),
+  notes: >-
+    Autodescrição da própria província; também se declara 'continuante, isto é, independente e sem vínculos com
+    a Sé de Cantuária'.

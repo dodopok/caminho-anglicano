@@ -1,12 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: felix-nzeyimana
 name: Felix Nzeyimana
+aliases:
+- Núncio Apostólico Felix Nzeyimana
 biography: >-
-  Arcebispo da Igreja Anglicana Mundial residente no Canadá; representou o patriarca no Sínodo de Imbituba (2024).
+  Arcebispo da WAC residente no Canadá; em julho de 2024 representou o patriarca no Sínodo Provincial de Imbituba
+  (SC) como núncio apostólico. Em abril de 2026 foi nomeado primaz do Canadá.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: arcebispo Felix Nzeyimana, residente no Canadá
-  page: '128'
+- source: lwac-wacbr-sinodo
+  quote: >-
+    tivemos a presença do nosso Núncio Apostólico, Arcebispo Felix Nzeyimana, que reside no Canadá e que veio representando
+    nosso Patriarca, o Arcebispo Dr. C Lwanga Tusubira.
+- source: lwac-wac-primates
+  quote: >-
+    The Most Reverend Dr. Felix Nzeyimana , formerly serving as Apostolic Nuncio to French-speaking nations , is
+    appointed Primate of Canada
 affiliations:
 - jurisdiction: wac
   role: archbishop
@@ -18,6 +26,35 @@ affiliations:
       da Comunhão, o Arcebispo Lwanga Tusubira.
     page: '128'
 events:
+- type: other
+  date: '2024-07-14'
+  description: >-
+    Sínodo Provincial da WAC no Brasil em Imbituba (SC), 11 a 14/07/2024: reescrita dos cânones provinciais; em
+    13/07 três diaconatos (Frei Mauro Ossoski, Rubens Cirilo da Silva, Deives Aparecido de Godoi); em 14/07 um presbiterato
+    (Samuel F. de Santana, Recife) e a sagração episcopal de Antônio Carlos Silva Santos e Wilson Limeira Dias;
+    incardinação do bispo Claudinei Rodrigo Ferreira. Presente o arcebispo e núncio Felix Nzeyimana, representando
+    o patriarca Lwanga Tusubira.
+  status: confirmed
+  sources:
+  - source: lwac-wacbr-sinodo
+    quote: Na cidade de Ibituba - SC, nos dias 11, 12, 13 e 14 de julho, tivemos o nosso Sínodo Provincial
+  - source: lwac-wacbr-sinodo
+    quote: >-
+      tivemos a presença do nosso Núncio Apostólico, Arcebispo Felix Nzeyimana, que reside no Canadá e que veio
+      representando nosso Patriarca, o Arcebispo Dr. C Lwanga Tusubira.
+  - source: lwac-wacbr-sinodo
+    quote: sendo recebido no grau de presbítero o Pastor, SAMUEL F. DE SANTANA
+- type: other
+  date: '2026-04-23'
+  description: >-
+    Em abril de 2026, o patriarca da WAC nomeou Felix Nzeyimana (que atuou no Sínodo brasileiro de 2024 como núncio
+    apostólico) primaz do Canadá.
+  status: confirmed
+  sources:
+  - source: lwac-wac-primates
+    quote: >-
+      The Most Reverend Dr. Felix Nzeyimana , formerly serving as Apostolic Nuncio to French-speaking nations ,
+      is appointed Primate of Canada
 - type: other
   date: '2024-07-11'
   description: >-

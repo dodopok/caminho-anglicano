@@ -2,21 +2,20 @@
 id: cristiano-alves
 name: Cristiano Alves
 aliases:
+- Dom Cristiano
 - dom Cristiano
 - monsenhor Cristiano Alves
 biography: >-
-  Bispo no Rio de Janeiro; sagrado em 2022 por Rafael Moraes e Rafael Mendes; integrou a Província Anglo-Católica
-  da Santíssima Trindade e voltou à IATB a convite de Rui Barbosa; bispo da Diocese Anglo-Católica Cristo Bom Pastor
-  (IATB).
+  Bispo da Igreja Anglicana Tradicional do Brasil (IATB) responsável pela Diocese Anglo-Católica Cristo Bom Pastor,
+  no Rio de Janeiro, segundo o site da IATB (janeiro de 2024). Assinou em 16/11/2025 a Carta de Nova Iguaçu, junto
+  com Rui Costa Barbosa e José da Santa Cruz.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Dom Cristiano Alves, no Rio de Janeiro (RJ)
-  page: '105'
-- source: cant-novas-igrejas-2024
+- source: lac-iatb-visita
+  quote: Dom Cristiano, bispo responsável pela Diocese local
+- source: iatb-home
   quote: >-
-    No Rio de Janeiro, a IATB está representada pelo bispo dom Cristiano Alves, sagrado em 2022, por dom Rafael
-    Moraes e dom Rafael Mendes.
-  page: '136'
+    Nós, Dom Rui Costa Barbosa, Dom José da Santa Cruz, Dom Cristiano Alves, presbíteros, diáconos e leigos da Igreja
+    Anglicana Tradicional do Brasil
 ordinations:
 - order: episcopate
   date: '2022'
@@ -70,6 +69,42 @@ affiliations:
   notes: >-
     Membro na formação da província; hoje na Diocese Anglo-Católica Cristo Bom Pastor (IATB). Local: Rio de Janeiro
     (RJ). Situação em 2021.
+- jurisdiction: dacbp
+  role: diocesan_bishop
+  status: confirmed
+  sources:
+  - source: lac-iatb-visita
+    quote: Além de celebrar três missas em conjunto com Dom Cristiano, bispo responsável pela Diocese local
+  - source: iatb-comunidades
+    quote: >-
+      Paróquia Anglo-Católica Santa Mãe de Deus Rio de Janeiro - RJ Rua Torres de Oliveira 436, Água Santa - Rio
+      de Janeiro, RJ Dom Cristiano
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Esta segunda Província a ser organizada, foi intitulada Província Anglo-Católica da Santíssima Trindade, sendo
+      era formada pelos bispos dom Antônio Bessa (bispo do Ceará) e dom Rafael Moraes (hoje bispo da Província Anglo-Católica
+      da Santíssima Trindade, em Nova Friburgo), dom Cristiano Alves (hoje bispo da Diocese Anglo-Católica Cristo
+      Bom Pastor, no Rio de Janeiro, ligada à Igreja Anglicana Tradicional do Brasil - IATB) e dom Rafael Mendes
+      (hoje bispo da Diocese Anglo-Católica de Minas Gerais, como uma igreja autocéfala local).
+    page: '162'
+  notes: >-
+    Local: Rio de Janeiro, RJ. Situação em janeiro de 2024, segundo o site oficial da IATB. Situação na data do
+    livro.
+- jurisdiction: iatb
+  role: bishop
+  diocese: dacbp
+  status: confirmed
+  sources:
+  - source: iatb-home
+    quote: >-
+      Nós, Dom Rui Costa Barbosa, Dom José da Santa Cruz, Dom Cristiano Alves, presbíteros, diáconos e leigos da
+      Igreja Anglicana Tradicional do Brasil
+  - source: iatb-home
+    quote: Nova Iguaçu-RJ, 16 de novembro de 2025
+  notes: >-
+    Local: RJ. Signatário da Carta de Nova Iguaçu (16/11/2025), que declara 'unidade' da IATB após sínodo; ainda
+    na IATB nessa data. A AECI (Anglican Episcopal Church International), com a qual a IATB se relaciona, lista
+    'Cristiano Carvalho — Bishop, Rio de Janeiro State' (ver dúvidas).
 - jurisdiction: iatb
   role: diocesan_bishop
   diocese: dacbp
@@ -85,16 +120,13 @@ affiliations:
   notes: >-
     Local: Rio de Janeiro. 'retornar' indica vínculo anterior com a IATB; sede na Paróquia Anglo-Católica Santa
     Mãe de Deus (RJ).
-- jurisdiction: dacbp
-  role: diocesan_bishop
-  status: probable
+events:
+- type: other
+  date: '2025-11-16'
+  description: >-
+    Carta de Nova Iguaçu: Rui Costa Barbosa, José da Santa Cruz e Cristiano Alves, em nome da IATB, declaram unidade
+    da igreja após sínodo em Nova Iguaçu (RJ), em novembro de 2025.
+  status: confirmed
   sources:
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      Esta segunda Província a ser organizada, foi intitulada Província Anglo-Católica da Santíssima Trindade, sendo
-      era formada pelos bispos dom Antônio Bessa (bispo do Ceará) e dom Rafael Moraes (hoje bispo da Província Anglo-Católica
-      da Santíssima Trindade, em Nova Friburgo), dom Cristiano Alves (hoje bispo da Diocese Anglo-Católica Cristo
-      Bom Pastor, no Rio de Janeiro, ligada à Igreja Anglicana Tradicional do Brasil - IATB) e dom Rafael Mendes
-      (hoje bispo da Diocese Anglo-Católica de Minas Gerais, como uma igreja autocéfala local).
-    page: '162'
-  notes: Situação na data do livro.
+  - source: iatb-home
+    quote: Declaramos que seguimos unidos em um único propósito eclesiástico
