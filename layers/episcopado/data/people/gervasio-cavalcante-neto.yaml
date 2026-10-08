@@ -1,6 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: gervasio-cavalcante-neto
 name: Gervásio Cavalcante Neto
+aliases:
+- Dom Gervásio Neto
+- Gervásio Neto
+biography: Bispo/clérigo ligado à jurisdição ICEB; ver afirmações.
+sources:
+- source: ciceb-quemsomos
+  quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo. Gervásio Neto)
 ordinations:
 - order: episcopate
   date: 2014-12
@@ -21,3 +28,12 @@ ordinations:
   notes: >-
     CEEB/Catedral Betânia. A fonte diz "com a presença" dos bispos, sem indicar o principal; o local é inferido
     do capítulo (Catedral Betânia).
+affiliations:
+- jurisdiction: iceb
+  role: diocesan_bishop
+  diocese: diocese-missionaria-do-nordeste-do-brasil-dmnb
+  status: confirmed
+  sources:
+  - source: ciceb-quemsomos
+    quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo. Gervásio Neto)
+  notes: Data e sagrantes não informados no site.

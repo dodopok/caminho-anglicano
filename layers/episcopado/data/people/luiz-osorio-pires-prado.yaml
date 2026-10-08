@@ -26,6 +26,22 @@ sources:
 - source: costa2021
   quote: Faleceu em 2009.
 ordinations:
+- order: diaconate
+  date: 1966-12
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: cant-ec-2009-11
+    quote: >-
+      Bacharelou-se em te- ologia em São Paulo no final de 1966 e foi ordenado ao diaconato em dezembro do mesmo
+      ano.
+- order: presbyterate
+  date: '1967'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: cant-ec-2009-11
+    quote: Ordenado ao presbiterado no ano seguinte
 - order: episcopate
   date: 1987-07
   place: Porto Alegre
@@ -63,6 +79,19 @@ ordinations:
     como sufragâneo da Diocese Meridional (1987).
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  diocese: ieab-dm
+  start: '1987'
+  end: '1988'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cant-ec-2009-11
+    quote: >-
+      Em 1987, foi eleito bispo sufragâneo da Diocese Meridional e encarregado de organi- zar a futura diocese de
+      Pelotas. Um ano de- pois, foi eleito seu primeiro bispo diocesano.
+  notes: 'Local: sufragâneo.'
+- jurisdiction: ieab
   role: suffragan_bishop
   diocese: ieab-dm
   start: '1987'
@@ -76,13 +105,51 @@ affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dap
-  start: '1989-03-12'
-  end: '1999'
-  end_reason: retirement
-  status: probable
+  start: '1988'
+  end: 2000-01
+  end_reason: resignation
+  status: contested
   sources:
+  - source: cant-ec-2009-11
+    quote: >-
+      Um ano de- pois, foi eleito seu primeiro bispo diocesano. Resignou a Diocese Anglicana de Pelotas em janeiro
+      de 2000.
   - source: wp-pt-dioc-pelotas
     quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
   - source: costa2021
     quote: 1988-2000 – Luiz Osório Pires Prado
+  discrepancies:
+  - field: start
+    value: '1989-03-12'
+    sources:
+    - source: wp-pt-dioc-pelotas
+      quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
+    - source: costa2021
+      quote: 1988-2000 – Luiz Osório Pires Prado
+  - field: end
+    value: '1999'
+    sources:
+    - source: wp-pt-dioc-pelotas
+      quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
+    - source: costa2021
+      quote: 1988-2000 – Luiz Osório Pires Prado
+  - field: end_reason
+    value: retirement
+    sources:
+    - source: wp-pt-dioc-pelotas
+      quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
+    - source: costa2021
+      quote: 1988-2000 – Luiz Osório Pires Prado
   notes: Fim em 1999 (Wikipedia/dapsul) ou 2000 (Costa).
+events:
+- type: death
+  date: 2009-12
+  description: >-
+    Luiz Osório Pires Prado (n. Porto Alegre, 11/03/1943) morreu em dezembro de 2009, como reitor do Seminário Teológico
+    da IEAB.
+  status: confirmed
+  sources:
+  - source: cant-ec-2009-11
+    quote: que exerceu até sua morte em dezembro de 2009.
+  - source: cant-ec-2009-11
+    quote: Alegre, capital do Estado do Rio Grande o Sul, no dia 11 de março de 1943

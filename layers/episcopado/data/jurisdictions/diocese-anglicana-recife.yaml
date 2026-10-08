@@ -60,8 +60,14 @@ relations:
     Anglican Ink (2018-04-17) e Wikipedia datam a saída em 2004; IAB e Anglican Ink (2018-05-15) falam em excomunhão
     em 2005.
 - type: part_of
-  target: iacs
+  target: iecb
   status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: André Novaes de Albuquerque Cavalcanti (2009)
+- type: part_of
+  target: iacs
+  status: contested
   sources:
   - source: betesda-2009-10
     quote: >-
@@ -75,6 +81,10 @@ relations:
     quote: >-
       163f. Evilásio Tenório da Silva Júnior (2012) que, em 2012, assumiu como primaz interino da Diocese do Recife
       - Cone Sul, até a eleição de Miguel Uchoa
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Em 2005, Robinson Cavalcanti liderou a separação definitiva da Diocese do Recife da IEAB, vinculando-se ao
+      Cone Sul.
   - source: tlc-2012-02-27
     quote: >-
       Two years later, the Southern Cone province designated the Anglican Diocese of Recife as an extra-territorial
@@ -87,7 +97,23 @@ relations:
     quote: >-
       What at the beginning of those regrettable events of the schism in Recife was seen as a pastoral care provision
       for the deposed bishop and those who followed him, has become a formal primatial reception of those deposed.
-  date: c.2007
+  date: '2005'
+  discrepancies:
+  - field: date
+    value: c.2007
+    sources:
+    - source: tlc-2012-02-27
+      quote: >-
+        Two years later, the Southern Cone province designated the Anglican Diocese of Recife as an extra-territorial
+        diocese of the Church of the Province of the Southern Cone.
+    - source: acl-2010-01-10-doubles
+      quote: >-
+        the Diocese of Recife, under the Primatial Authority of the Anglican Church of the Southern Cone of America,
+        continues to grow.
+    - source: ta-2008-04-10-ieab-bishops
+      quote: >-
+        What at the beginning of those regrettable events of the schism in Recife was seen as a pastoral care provision
+        for the deposed bishop and those who followed him, has become a formal primatial reception of those deposed.
   notes: >-
     Data só aproximada ('two years later' após 2005). Fontes posteriores divergem sobre o vínculo ter sido de fato
     provincial: pt-wiki diz que Robinson 'tentou filiar' a diocese ao Cone Sul; Atwood (dez/2015) diz 'Lacking a
@@ -111,6 +137,10 @@ relations:
     quote: >-
       The church had its origin in a 2005 split in which the Diocese of Recife, led by Robinson Cavalcanti, left
       the Anglican Episcopal Church of Brazil
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Em 2005, Robinson Cavalcanti liderou a separação definitiva da Diocese do Recife da IEAB, vinculando-se ao
+      Cone Sul.
   notes: >-
     Anglican Ink (2018-04-17) e Wikipédia EN (Uchôa) datam a saída em 2004; IAB, GAFCON e Wikipédia (Cavalcanti/IAB)
     em 2005 (declaração 25/01/2005, exclusão 10/06/2005).

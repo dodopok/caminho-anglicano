@@ -30,11 +30,19 @@ sources:
 ordinations:
 - order: episcopate
   date: '1961-11-12'
-  place: Catedral de São Jorge (Cathedral Church of St. George), Freetown, Serra Leoa
+  place: Cathedral Church of St. George, Freetown (Serra Leoa)
   jurisdiction: province-of-west-africa
   office: diocesan
-  status: confirmed
+  status: contested
   sources:
+  - source: ia-gc-journal-1964
+    quote: >-
+      Christophe Omobiala Scott, Dip. Th., as Bishop of Sierra Leone, on November 12, 1961, in the Cathedral Church
+      of St. George, Freetown, Sierra Leone
+  - source: ia-church-times-1988-05-13
+    quote: >-
+      He was Archdeacon of Bonthe and Bo from 1959 to 1961, when he was consecrated to be Bishop of Sierra Leone
+      in succession to the Most Rev. J. L. C. Horstead.
   - source: gc-journal-1964
     quote: >-
       June 1, 1964—Received notice from Cecil John, Archbishop of West Africa, of the consecration of: the Ven.
@@ -44,14 +52,28 @@ ordinations:
     quote: The Venerable Moses Nathan- iel Christopher Omobiala Scott, former Archdeacon of Bonthe and Bo
   - source: whoswho-1962
     quote: SIERRA  LEONE,  Bishop  of,  since  1961; Rt.  Rev.  Moses  Natfianael  Christopher Otnobiala  Scott
+  discrepancies:
+  - field: place
+    value: Catedral de São Jorge (Cathedral Church of St. George), Freetown, Serra Leoa
+    sources:
+    - source: gc-journal-1964
+      quote: >-
+        June 1, 1964—Received notice from Cecil John, Archbishop of West Africa, of the consecration of: the Ven.
+        Moses Nathaniel Christophe Omobiala Scott, Dip. Th., as Bishop of Sierra Leone, on November 12, 1961, in
+        the Cathedral Church of St. George, Freetown, Sierra Leone;
+    - source: anglican-digest-1961-winter
+      quote: The Venerable Moses Nathan- iel Christopher Omobiala Scott, former Archdeacon of Bonthe and Bo
+    - source: whoswho-1962
+      quote: SIERRA  LEONE,  Bishop  of,  since  1961; Rt.  Rev.  Moses  Natfianael  Christopher Otnobiala  Scott
   notes: >-
-    DATA (12/11/1961) e LOCAL (catedral de São Jorge, Freetown) agora têm fonte primária: o registro oficial da
-    Convenção Geral da TEC (1964) transcreve a notificação formal enviada por 'Cecil John, Archbishop of West Africa'
-    (= Cecil John Patterson, arcebispo metropolitano da África Ocidental 1961-1969). O SAGRANTE PRINCIPAL NÃO É
-    NOMEADO. Pela praxe, a notificação de sagração é enviada pelo metropolita que a presidiu, o que torna Patterson
-    o sagrante provável, mas a fonte não o diz: por isso sagrante_principal fica null. Ver dúvidas. Também foram
-    sagrados na mesma série (notificados juntos): Agori Iwe (Benin, 30/11/1961) e Rogers Nathaniel Bara Hart (Niger
-    Delta, 10/12/1961).
+    Reconfirma data e local (já em sucessao-lacunas.json). O sagrante continua não nomeado nas fontes vistas (Journal
+    1964, obituário no Church Times 1988, Times 20/09/1961 "No date has been fixed for the consecration"). DATA
+    (12/11/1961) e LOCAL (catedral de São Jorge, Freetown) agora têm fonte primária: o registro oficial da Convenção
+    Geral da TEC (1964) transcreve a notificação formal enviada por 'Cecil John, Archbishop of West Africa' (= Cecil
+    John Patterson, arcebispo metropolitano da África Ocidental 1961-1969). O SAGRANTE PRINCIPAL NÃO É NOMEADO.
+    Pela praxe, a notificação de sagração é enviada pelo metropolita que a presidiu, o que torna Patterson o sagrante
+    provável, mas a fonte não o diz: por isso sagrante_principal fica null. Ver dúvidas. Também foram sagrados na
+    mesma série (notificados juntos): Agori Iwe (Benin, 30/11/1961) e Rogers Nathaniel Bara Hart (Niger Delta, 10/12/1961).
 affiliations:
 - jurisdiction: province-of-west-africa
   role: diocesan_bishop

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ulises-aguero-prendes
+name: Ulises Aguero Prendes
+ordinations:
+- order: episcopate
+  date: '2007-06-10'
+  place: Catedral da Santíssima Trindade, Havana (Cuba)
+  jurisdiction: null
+  office: suffragan
+  principal_consecrator: andrew-hutchison
+  co_consecrators:
+  - jubal-pereira-neves
+  status: probable
+  sources:
+  - source: cant-ec-2007-05
+    quote: >-
+      Jun- tamente com ela também foi chamado a este ministério do episcopado o rev. Ulises Aguero Prendes. Ambos
+      serão sufragâneos
+  notes: Mesma cerimônia de Nerva Cot; sagrantes inferidos do relato da cerimônia conjunta.

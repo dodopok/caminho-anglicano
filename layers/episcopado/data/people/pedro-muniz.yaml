@@ -1,6 +1,9 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: pedro-muniz
 name: Pedro Muniz
+full_name: Pedro Muniz Ferreira de Almeida
+aliases:
+- Pedro Muniz Ferreira de Almeida
 biography: >-
   Diácono (antes de 2018) na Comunidade Anglicana Âncora (Vitória-ES); em 2025 à frente da Igreja Anglicana Trindade
   (Vitória-ES), que ficou na IAB.
@@ -9,6 +12,22 @@ sources:
   quote: >-
     Rev. Pedro Muniz e Lorraine Muniz Ele é diácono ordenado pela Igreja Anglicana no Brasil, pastor coadjutor da
     C. A. A. em Vitória - ES
+ordinations:
+- order: diaconate
+  date: '2017-12-01'
+  place: Paróquia Anglicana Jardim das Oliveiras, Setúbal, Recife (PE)
+  jurisdiction: diocese-anglicana-recife
+  status: confirmed
+  sources:
+  - source: ig-pedromuniz-2017-11-29-convite-diaconato
+    quote: Ordenação Diaconal de Pedro Muniz Ferreira de Almeida
+  - source: ig-pedromuniz-2017-11-29-convite-diaconato
+    quote: 'Sexta-feira, 1 de Dezembro de 2017 - Horário 19:30h - Local: Paróquia Anglicana Jardim das Oliveiras'
+  - source: ig-pedromuniz-2017-11-29-convite-diaconato
+    quote: Na sexta me tornarei Reverendo Anglicano.
+  notes: >-
+    Convite emitido pela 'Igreja Anglicana no Brasil - Diocese do Recife' em nome do bispo diocesano Miguel Uchoa
+    Cavalcanti e do bispo auxiliar Flávio Adair Torres Soares; o convite não nomeia o bispo ordenante.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
