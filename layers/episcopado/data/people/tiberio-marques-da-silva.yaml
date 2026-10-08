@@ -1,10 +1,11 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: tiberio-marques-da-silva
 name: Tibério Marques da Silva
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
 sources:
-- source: drv-declaracao-32
-  quote: Rev. Tibério Marques da Silva
+- source: drp-boletim-oracao-2006
+  quote: >-
+    Orar pela Paróquia Anglicana da Redenção. Pela Ven. Arc. Revda. Gorete, pelos Reverendos: Tibério e Daniel Barbosa
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -15,6 +16,10 @@ affiliations:
     quote: Rev. Tibério Marques da Silva
   - source: drv-nota-esclarecimento-2006
     quote: Tibério Marques da Silva, ose
+  - source: drp-boletim-oracao-2006
+    quote: >-
+      Orar pela Paróquia Anglicana da Redenção. Pela Ven. Arc. Revda. Gorete, pelos Reverendos: Tibério e Daniel
+      Barbosa
   - source: costa2021
     quote: >-
       Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
@@ -24,10 +29,11 @@ affiliations:
     page: 560-562
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
-    Esclarecimento); início e fim do vínculo não informados. Anexo R: o(a) clérigo(a) declarou, em resposta à convocação
-    de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
-    dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
-    exata.
+    Esclarecimento); início e fim do vínculo não informados. Local: Paróquia Anglicana da Redenção. Clérigo citado
+    como pastor/ministro da comunidade em out/nov de 2006 (boletim de oração da Secretaria de Intercessão). Anexo
+    R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti,
+    ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005 é a da exclusão
+    pela IEAB, e a adesão à DAR é anterior, sem data exata.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar

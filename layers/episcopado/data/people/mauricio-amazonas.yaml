@@ -1,20 +1,38 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: mauricio-amazonas
 name: Maurício Amazonas
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: Capelão do SAT-PE e pároco da Paróquia Jardim das Oliveiras em 2006.
 sources:
-- source: drv-nota-esclarecimento-2006
-  quote: Maurício M. Amazonas dos Santos, ose
+- source: drp-boletim-oracao-2006
+  quote: >-
+    novo Seminário Anglicano Teológico (SAT-PE): Ven. Arc. Rev. Evilásio Tenório – Reitor, Rev. Maurício Amazonas,
+    Capelão e a Coordenadora Pedagógica: Revda. Jeane Coelho
+- source: drp-boletim-oracao-2006
+  quote: Orar pela Paróquia Anglicana Jardim das Oliveiras; pelo Rev. Maurício Amazonas
 affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: capelao
+  status: confirmed
+  sources:
+  - source: drp-boletim-oracao-2006
+    quote: >-
+      novo Seminário Anglicano Teológico (SAT-PE): Ven. Arc. Rev. Evilásio Tenório – Reitor, Rev. Maurício Amazonas,
+      Capelão e a Coordenadora Pedagógica: Revda. Jeane Coelho
+  notes: >-
+    Local: SAT-PE. Capelão do SAT-PE em out/nov de 2006; também pároco da Paróquia Anglicana Jardim das Oliveiras.
 - jurisdiction: diocese-anglicana-recife
   role: clergy
   status: confirmed
   sources:
   - source: drv-nota-esclarecimento-2006
     quote: Maurício M. Amazonas dos Santos, ose
+  - source: drp-boletim-oracao-2006
+    quote: Orar pela Paróquia Anglicana Jardim das Oliveiras; pelo Rev. Maurício Amazonas
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
-    Esclarecimento); início e fim do vínculo não informados.
+    Esclarecimento); início e fim do vínculo não informados. Local: Paróquia Anglicana Jardim das Oliveiras. Clérigo
+    citado como pastor/ministro da comunidade em out/nov de 2006 (boletim de oração da Secretaria de Intercessão).
 - jurisdiction: ose
   role: member
   status: probable

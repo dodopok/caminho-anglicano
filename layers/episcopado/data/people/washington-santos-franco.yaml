@@ -2,10 +2,12 @@
 id: washington-santos-franco
 name: Washington Santos Franco
 full_name: Washington Santos Franco
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: Cônego da Diocese Anglicana do Recife em 2005 e 2007.
 sources:
-- source: drv-declaracao-32
+- source: drp-carta-venables-pt-2005
   quote: Rev. Côn. Washington Franco
+- source: drp-calendario-2007
+  quote: Rev. Côn. Washington S. Franco
 ordinations:
 - order: diaconate
   date: '1986'
@@ -49,6 +51,17 @@ affiliations:
     de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
     dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
     exata.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: conego
+  status: confirmed
+  sources:
+  - source: drp-carta-venables-pt-2005
+    quote: Rev. Côn. Washington Franco
+  - source: drp-calendario-2007
+    quote: Rev. Côn. Washington S. Franco
+  notes: >-
+    Assina a carta a Venables (17/10/2005) como cônego. Título de cônego no calendário diocesano de 2007.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar

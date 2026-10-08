@@ -1,10 +1,12 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: fernando-acosta-rodriguez
 name: Fernando Acosta Rodriguez
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
 sources:
-- source: drv-declaracao-32
-  quote: Rev. Côn. Fernando Acosta Rodriguez
+- source: drp-boletim-oracao-2006
+  quote: Orar pela Paróquia Anglicana Jesus de Nazaré (Gaibu-PE); pela vida e saúde do Rev. Fernando Acosta
+- source: drp-calendario-2007
+  quote: Rev. Côn. Fernando A. Rodriguez
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -28,6 +30,14 @@ affiliations:
     de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
     dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
     exata.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: conego
+  status: confirmed
+  sources:
+  - source: drp-calendario-2007
+    quote: Rev. Côn. Fernando A. Rodriguez
+  notes: Título de cônego no calendário diocesano de 2007 (em 2005 assinava como "Rev.").
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar

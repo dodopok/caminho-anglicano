@@ -3,10 +3,12 @@ id: manoel-s-moraes-de-almeida
 name: Manoel S. Moraes de Almeida
 aliases:
 - Manoel Moraes
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: Deão em 2005 e cônego em 2007; Secretário Diocesano de Direitos Humanos em 2005.
 sources:
-- source: drv-carta-clero-primaz
-  quote: Rev. Côn. Manoel S. Moraes de Almeida, ose – Séc. de Direitos Humanos
+- source: drp-carta-venables-pt-2005
+  quote: Revmo. Deão Manoel S. Moraes de Almeida – Séc. Diocesano de Direitos Humanos
+- source: drp-calendario-2007
+  quote: Rev. Côn. Manoel S. Moraes de Almeida, ose
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -30,6 +32,24 @@ affiliations:
     de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
     dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
     exata.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: deao
+  status: confirmed
+  sources:
+  - source: drp-carta-venables-pt-2005
+    quote: Revmo. Deão Manoel S. Moraes de Almeida – Séc. Diocesano de Direitos Humanos
+  notes: >-
+    Assina a carta a Venables (17/10/2005) como deão e Secretário Diocesano de Direitos Humanos; no calendário de
+    2007 consta como cônego ("Rev. Côn. Manoel S. Moraes de Almeida, ose").
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: conego
+  status: confirmed
+  sources:
+  - source: drp-calendario-2007
+    quote: Rev. Côn. Manoel S. Moraes de Almeida, ose
+  notes: Título de cônego e membro da Ordem de Santo Estevão (ose) no calendário diocesano de 2007.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: cônego e Secretário de Direitos Humanos

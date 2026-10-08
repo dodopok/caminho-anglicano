@@ -410,14 +410,27 @@ affiliations:
 - jurisdiction: ieab-dar
   role: other
   role_description: deao
-  end: '2002'
+  end: 2002-09
   end_reason: schism
-  status: probable
+  status: confirmed
   sources:
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      lamentamos sua opção por se desvincular da Diocese Anglicana do Recife, da IEAB, e, decorrentemente, da Comunhão
+      Anglicana
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      No dia 22 de setembro passado, foi redigida uma carta de desvinculação, assinada pelo revmo. deão e por meia
+      dúzia de pessoas
   - source: cant-novas-igrejas-2024
     quote: sendo pastoreada pelo seu deão, o então reverendo Paulo Garcia.
     page: '109'
-  notes: 'Local: Catedral da Trindade, Recife.'
+  notes: >-
+    Local: Diocese Anglicana do Recife, Catedral da Santíssima Trindade, Recife. Segundo a carta pastoral do Bispo
+    Diocesano Robinson Cavalcanti (1/10/2002), o então deão da Catedral da Santíssima Trindade, Rev. Paulo Ruiz
+    Garcia, desvinculou-se da Diocese e da IEAB; a carta de desvinculação foi redigida em 22/9/2002 e submetida
+    a uma assembleia dominical em 29/9/2002. O texto é a versão do bispo diocesano e critica o procedimento adotado.
+    Local: Catedral da Trindade, Recife.
 - jurisdiction: iecb
   role: archbishop
   status: probable
@@ -512,6 +525,33 @@ events:
       Primeiro aconteceu a saída do rev. Paulo Garcia, acompanhado dos reverendos Célio Spineli, Edgar Ferreira
       e Frederico Bastos, que ficaram na posse do templo da Catedral Episcopal Anglicana, na Rua Carneiro Vilela,
       e as missões Bem-Aventuranças e Pedra Viva.
+- type: other
+  date: '2002-09-25'
+  description: >-
+    Visita do Primaz da IEAB, Dom Glauco Soares de Lima, e do Secretário Geral da Província, Rev. Côn. Maurício
+    Andrade, ao Recife (25 a 27/9/2002) para tentar reverter a desvinculação do deão da Catedral da Santíssima Trindade.
+  status: confirmed
+  sources:
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      Dos dias 25 a 27 de setembro, o Revmo. Primaz Dom Glauco Soares de Lima e o Secretário Geral da Província
+      se deslocaram ao Recife
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      ao secretário geral da Província, Rev. Côn. Maurício Andrade, e ao Bispo Sufragâneo, Revmo. Filadelfo Oliveira
+      Neto, OSE
+- type: other
+  date: '2002-10-01'
+  description: >-
+    Segundo a carta pastoral de Robinson Cavalcanti, o então deão da Catedral da Santíssima Trindade havia sinalizado
+    a possibilidade de vinculação à "Igreja Episcopal Carismática"; a carta diz ainda que ele teria recebido a promessa
+    de ser designado bispo.
+  status: probable
+  sources:
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      veiculou esclarecimentos sobre a chamada “Igreja Episcopal Carismática”, para quem o ex-deão sinalizou a possibilidade
+      de vinculação
 - type: other
   date: '1976'
   description: >-

@@ -367,12 +367,30 @@ affiliations:
     quote: Primaz da Igreja Anglicana no Brasil    Bispo da Diocese de Recife
 - jurisdiction: diocese-anglicana-recife
   role: other
+  role_description: reitor
+  status: confirmed
+  sources:
+  - source: drp-crescendo-juntos-2005
+    quote: Crescimento como Resultado da Saúde da IgrejaMiguel UchôaReitor PAES
+  - source: drp-boletim-paes-2007
+    quote: 'Equipe Pastoral: Miguel Uchôa (Reitor)'
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo, Jaboatão dos Guararapes. Reitor da Paróquia Anglicana do Espírito
+    Santo (PAES) atestado em outubro de 2005 e em 21/10/2007; também é arcediago (Arcediagado Sul) em 2006.
+- jurisdiction: diocese-anglicana-recife
+  role: other
   role_description: arcediago
   status: confirmed
   sources:
+  - source: drp-carta-venables-pt-2005
+    quote: Ven. Arc. Rev. Miguel A. de A. Uchoa Cavalcanti
+  - source: drp-boletim-oracao-2006
+    quote: Sul – Ven. Arc. Rev. Miguel Uchoa
   - source: drv-carta-clero-primaz
     quote: Rev. Arc. Miguel Ângelo de A. Uchoa Cavalcanti
-  notes: Cargo exercido em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados.
+  notes: >-
+    Assina a carta a Venables (17/10/2005) como arcediago. Local: Arcediagado Sul. Arcediagado Sul em out/nov de
+    2006. Cargo exercido em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados.
 events:
 - type: other
   date: '2017-05-06'
@@ -493,6 +511,41 @@ events:
   - source: jc-2024-ivan-rocha
     quote: >-
       Mais de 15 Bispos estiveram presentes, inclusive dois da Igreja Anglicana (Dom Miguel Uchôa e Dom Márcio Meira).
+- type: other
+  date: 2005-10
+  description: >-
+    Conferência "Crescendo Juntos" da Diocese Anglicana do Recife (outubro de 2005), iniciada no domingo com o culto
+    dos 8 anos de sagração do bispo, com conferencistas estrangeiros: John Sutton (SAMS, Inglaterra), Richard Hines
+    (SOMA, EUA), Alfredo Cooper (Igreja da Trindade, Santiago do Chile) e Chris Sugden (Anglican Mainstream, Inglaterra),
+    além do Bispo Robinson Cavalcanti, Miguel Uchôa (reitor da PAES) e outros clérigos locais.
+  status: confirmed
+  sources:
+  - source: drp-crescendo-juntos-2005
+    quote: Estrangeiros presentes estarão no culto de ação de graças dos 8 anos de Sagração do Bispo
+  - source: drp-crescendo-juntos-2005
+    quote: Painel Presença Missionária na América do Sul. John Sutton SAMS Inglaterra
+  - source: drp-crescendo-juntos-2005
+    quote: Crescimento e Renovação na América Latina Richard Hines EUA SOMA
+  - source: drp-crescendo-juntos-2005
+    quote: Alfredo CooperIgreja da Trindade Santiago do Chile
+  - source: drp-crescendo-juntos-2005
+    quote: Chris Sudgen – Anglican Mainstream – Inglaterra
+- type: other
+  date: '2007-10-21'
+  description: >-
+    Boletim nº 41/2007 da Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes, 21/10/2007): equipe pastoral
+    com Miguel Uchôa (reitor); congregações Missão Esperança (Candeias), Missão Ressurreição (Vitória de Santo Antão),
+    Paróquia Gravatá e Paróquia Jesus de Nazaré (Gaibu); anuncia confirmação em 18/11/2007 com a presença do Bispo
+    D. Robinson.
+  status: confirmed
+  sources:
+  - source: drp-boletim-paes-2007
+    quote: Boletim nº 41/2007 – Jaboatão dos Guararapes 21 de Outubro de 2007.
+  - source: drp-boletim-paes-2007
+    quote: 'Equipe Pastoral: Miguel Uchôa (Reitor)'
+  - source: drp-boletim-paes-2007
+    quote: >-
+      Domingo, 18 de Novembro teremos nossa Confirmação de 2007, quando o Bispo D. Robinson estará entre nós
 - type: other
   date: 2026-08
   description: >-

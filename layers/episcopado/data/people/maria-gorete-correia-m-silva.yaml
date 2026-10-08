@@ -1,10 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: maria-gorete-correia-m-silva
 name: Maria Gorete Correia M. Silva
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Arcediaga da Diocese Anglicana do Recife em 2004 e 2005, titular do Arcediagado Norte em 2006; Secretária Diocesana
+  de Ação Social em 2005.
 sources:
-- source: drv-carta-clero-primaz
-  quote: Revda. Arc. Maria Gorete C. Marques da Silva, ose
+- source: drp-calendario-2004
+  quote: Ven. Arced. Revda. Maria Gorete C. M. Silva
+- source: drp-carta-venables-pt-2005
+  quote: Ven. Arc. Revda. Maria Gorete Correia M. da Silva – Séc. Diocesana de Ação Social
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -28,14 +32,31 @@ affiliations:
     de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
     dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
     exata.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: arcediago
+  status: confirmed
+  sources:
+  - source: drp-calendario-2004
+    quote: Ven. Arced. Revda. Maria Gorete C. M. Silva
+  notes: >-
+    Local: Diocese Anglicana do Recife. Título de arcediaga atestado no calendário diocesano de 2004 (publicado
+    em 2003).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago
   status: confirmed
   sources:
+  - source: drp-carta-venables-pt-2005
+    quote: Ven. Arc. Revda. Maria Gorete Correia M. da Silva – Séc. Diocesana de Ação Social
+  - source: drp-boletim-oracao-2006
+    quote: Norte – Ven. Arc. Revda. Maria Gorete C. Marques Silva
   - source: drv-carta-clero-primaz
     quote: Revda. Arc. Maria Gorete C. Marques da Silva, ose
-  notes: Cargo exercido em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados.
+  notes: >-
+    Assina a carta a Venables (17/10/2005) como arcediaga e Secretária Diocesana de Ação Social. Local: Arcediagado
+    Norte. Arcediagado Norte em out/nov de 2006; também pastoreia a Paróquia Anglicana da Redenção. Cargo exercido
+    em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar

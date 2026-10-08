@@ -1,10 +1,12 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: geison-savio-de-h-vasconcellos
 name: Geison Sávio de H. Vasconcellos
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
 sources:
-- source: drv-declaracao-32
-  quote: Rev. Geison Sávio de H. Vasconcellos
+- source: drp-boletim-oracao-2006
+  quote: >-
+    Orar pela Paróquia Anglicana do Espírito Santo, pelo Ven. Arc. Rev. Miguel Uchoa, pelos Reverendos: Geison Vasconcellos,
+    Fernando Acosta e Josias Júnior
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -15,6 +17,10 @@ affiliations:
     quote: Rev. Geison Sávio de H. Vasconcellos
   - source: drv-nota-esclarecimento-2006
     quote: Geison Sávio de Holanda Vasconcelos
+  - source: drp-boletim-oracao-2006
+    quote: >-
+      Orar pela Paróquia Anglicana do Espírito Santo, pelo Ven. Arc. Rev. Miguel Uchoa, pelos Reverendos: Geison
+      Vasconcellos, Fernando Acosta e Josias Júnior
   - source: costa2021
     quote: >-
       Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
@@ -24,10 +30,11 @@ affiliations:
     page: 560-562
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
-    Esclarecimento); início e fim do vínculo não informados. Anexo R: o(a) clérigo(a) declarou, em resposta à convocação
-    de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
-    dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
-    exata.
+    Esclarecimento); início e fim do vínculo não informados. Local: Paróquia Anglicana do Espírito Santo. Clérigo
+    citado como pastor/ministro da comunidade em out/nov de 2006 (boletim de oração da Secretaria de Intercessão).
+    Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson
+    Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005
+    é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar

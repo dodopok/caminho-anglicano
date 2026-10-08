@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: mauricio-roberto-fernandes-coelho
 name: Maurício Roberto Fernandes Coelho
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: Presidente do Conselho Diocesano em 2005.
 sources:
-- source: drv-carta-clero-primaz
+- source: drp-carta-venables-pt-2005
   quote: Rev. Maurício Roberto Fernandes Coelho – Presidente do Conselho Diocesano
 affiliations:
 - jurisdiction: diocese-anglicana-recife
@@ -33,9 +33,13 @@ affiliations:
   role_description: presidente_conselho_diocesano
   status: confirmed
   sources:
+  - source: drp-carta-venables-pt-2005
+    quote: Rev. Maurício Roberto Fernandes Coelho – Presidente do Conselho Diocesano
   - source: drv-carta-clero-primaz
     quote: Rev. Maurício Roberto Fernandes Coelho – Presidente do Conselho Diocesano
-  notes: Cargo exercido em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados.
+  notes: >-
+    Assina a carta a Venables (17/10/2005) como presidente do Conselho Diocesano. Cargo exercido em julho de 2007
+    (carta do clero ao primaz do Cone Sul); início e fim não informados.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
