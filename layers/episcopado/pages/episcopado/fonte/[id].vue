@@ -1,11 +1,11 @@
 <template>
-  <div class="episcopado flex min-h-screen flex-col bg-stone-50">
+  <div class="episcopado flex min-h-screen flex-col bg-ep-paper">
     <EpiscopadoHeader :nodes="graph.nodes" />
 
     <main v-if="notFound" class="mx-auto w-full max-w-2xl flex-1 px-4 py-16 text-center">
-      <p class="text-xs font-semibold uppercase tracking-wide text-stone-500">Fonte</p>
-      <h1 class="mt-2 font-serif text-4xl font-semibold text-stone-900">Não encontramos “{{ id }}”</h1>
-      <p class="mt-3 text-stone-600">Essa fonte não está na base, ou o link mudou.</p>
+      <p class="text-[11px] font-semibold uppercase tracking-[.08em] text-ep-muted">Fonte</p>
+      <h1 class="mt-2 font-ep-serif text-4xl font-semibold text-ep-ink">Não encontramos “{{ id }}”</h1>
+      <p class="mt-3 text-ep-body">Essa fonte não está na base, ou o link mudou.</p>
       <div class="mt-8 flex flex-wrap justify-center gap-2">
         <NuxtLink to="/episcopado/fontes" class="ep-btn ep-btn-primary">Ver todas as fontes</NuxtLink>
         <NuxtLink to="/episcopado" class="ep-btn ep-btn-secondary">Ir ao explorador</NuxtLink>
@@ -13,25 +13,25 @@
     </main>
 
     <main v-else-if="loadError" class="mx-auto max-w-2xl px-4 py-16 text-center" role="alert">
-      <h1 class="font-serif text-3xl font-semibold text-stone-900">Não foi possível carregar esta fonte</h1>
-      <p class="mt-2 text-stone-600">{{ loadError.message }}</p>
+      <h1 class="font-ep-serif text-3xl font-semibold text-ep-ink">Não foi possível carregar esta fonte</h1>
+      <p class="mt-2 text-ep-body">{{ loadError.message }}</p>
       <button type="button" class="ep-btn ep-btn-primary mt-6" @click="refresh()">Tentar de novo</button>
     </main>
 
     <main v-else-if="view" class="mx-auto max-w-4xl px-4 py-6 sm:py-10">
-      <nav aria-label="Você está em" class="mb-4 text-xs text-stone-500">
+      <nav aria-label="Você está em" class="mb-4 text-xs text-ep-muted">
         <ol class="flex flex-wrap items-center gap-1">
-          <li><NuxtLink to="/episcopado" class="hover:text-stone-800 hover:underline">Rede do Episcopado</NuxtLink></li>
+          <li><NuxtLink to="/episcopado" class="hover:text-ep-ink hover:underline">Rede do Episcopado</NuxtLink></li>
           <li aria-hidden="true">›</li>
-          <li><NuxtLink to="/episcopado/fontes" class="hover:text-stone-800 hover:underline">Fontes</NuxtLink></li>
+          <li><NuxtLink to="/episcopado/fontes" class="hover:text-ep-ink hover:underline">Fontes</NuxtLink></li>
           <li aria-hidden="true">›</li>
-          <li class="truncate text-stone-800" aria-current="page">{{ view.source.title }}</li>
+          <li class="truncate text-ep-ink" aria-current="page">{{ view.source.title }}</li>
         </ol>
       </nav>
 
-      <article class="rounded-2xl border border-stone-200 bg-white shadow-sm">
-        <header class="border-b border-stone-200 px-5 pb-6 pt-6 sm:px-10 sm:pt-8">
-          <p class="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wide text-stone-500">
+      <article class="rounded-ep border border-ep-line bg-ep-card">
+        <header class="border-b border-ep-line px-5 pb-6 pt-6 sm:px-10 sm:pt-8">
+          <p class="flex flex-wrap items-center gap-2 text-[11px] font-semibold uppercase tracking-[.08em] text-ep-muted">
             <span>{{ SOURCE_TYPE_LABEL[view.source.type] }}</span>
             <span aria-hidden="true">·</span>
             <EpiscopadoTip :title="SOURCE_LEVEL_LABEL[view.source.level]" :text="SOURCE_LEVEL_DESCRIPTION[view.source.level]" placement="bottom">
@@ -40,8 +40,8 @@
             <span v-if="view.source.language" aria-hidden="true">·</span>
             <span v-if="view.source.language">{{ view.source.language.toUpperCase() }}</span>
           </p>
-          <h1 class="mt-1 font-serif text-3xl font-semibold leading-tight text-stone-900 sm:text-4xl">{{ view.source.title }}</h1>
-          <p v-if="byline" class="mt-2 text-stone-600">{{ byline }}</p>
+          <h1 class="mt-1 font-ep-serif text-3xl font-semibold leading-tight text-ep-ink sm:text-4xl">{{ view.source.title }}</h1>
+          <p v-if="byline" class="mt-2 text-ep-body">{{ byline }}</p>
 
           <div class="mt-5 flex flex-wrap gap-2">
             <a v-if="view.source.url" :href="view.source.url" target="_blank" rel="noopener" class="ep-btn ep-btn-primary">Abrir fonte ↗</a>
@@ -51,48 +51,48 @@
 
           <dl class="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 text-sm sm:grid-cols-4">
             <div v-if="view.source.published">
-              <dt class="text-xs uppercase tracking-wide text-stone-400">Publicação</dt>
-              <dd class="mt-0.5 font-medium text-stone-900">{{ formatDate(view.source.published) }}</dd>
+              <dt class="text-[11px] uppercase tracking-[.06em] text-ep-faint">Publicação</dt>
+              <dd class="mt-0.5 font-medium text-ep-ink">{{ formatDate(view.source.published) }}</dd>
             </div>
             <div v-if="view.source.accessed">
-              <dt class="text-xs uppercase tracking-wide text-stone-400">Consultada em</dt>
-              <dd class="mt-0.5 font-medium text-stone-900">{{ formatDate(view.source.accessed) }}</dd>
+              <dt class="text-[11px] uppercase tracking-[.06em] text-ep-faint">Consultada em</dt>
+              <dd class="mt-0.5 font-medium text-ep-ink">{{ formatDate(view.source.accessed) }}</dd>
             </div>
             <div>
-              <dt class="text-xs uppercase tracking-wide text-stone-400">Sustenta</dt>
-              <dd class="mt-0.5 font-medium text-stone-900">{{ view.claims.length }} {{ view.claims.length === 1 ? 'afirmação' : 'afirmações' }}</dd>
+              <dt class="text-[11px] uppercase tracking-[.06em] text-ep-faint">Sustenta</dt>
+              <dd class="mt-0.5 font-medium text-ep-ink">{{ view.claims.length }} {{ view.claims.length === 1 ? 'afirmação' : 'afirmações' }}</dd>
             </div>
             <div>
-              <dt class="text-xs uppercase tracking-wide text-stone-400">Em</dt>
-              <dd class="mt-0.5 font-medium text-stone-900">{{ view.entities }} {{ view.entities === 1 ? 'ficha' : 'fichas' }}</dd>
+              <dt class="text-[11px] uppercase tracking-[.06em] text-ep-faint">Em</dt>
+              <dd class="mt-0.5 font-medium text-ep-ink">{{ view.entities }} {{ view.entities === 1 ? 'ficha' : 'fichas' }}</dd>
             </div>
           </dl>
-          <p v-if="view.source.notes" class="mt-4 rounded-lg bg-stone-50 px-4 py-3 text-sm text-stone-600">{{ view.source.notes }}</p>
-          <p v-if="view.source.url" class="mt-3 break-all text-xs text-stone-400">{{ view.source.url }}</p>
+          <p v-if="view.source.notes" class="mt-4 rounded-ep bg-ep-paper px-4 py-3 text-sm text-ep-body">{{ view.source.notes }}</p>
+          <p v-if="view.source.url" class="mt-3 break-all text-xs text-ep-faint">{{ view.source.url }}</p>
         </header>
 
         <div class="px-5 py-6 sm:px-10 sm:py-8">
           <h2 class="ep-section-title">O que esta fonte sustenta</h2>
-          <p class="mb-5 mt-1 text-sm text-stone-500">Cada item mostra o trecho literal citado e leva à seção da ficha onde a afirmação aparece.</p>
+          <p class="mb-5 mt-1 text-sm text-ep-muted">Cada item mostra o trecho literal citado e leva à seção da ficha onde a afirmação aparece.</p>
 
-          <p v-if="!view.claims.length" class="rounded-lg bg-stone-50 px-4 py-3 text-sm text-stone-500">Esta fonte está cadastrada, mas ainda não sustenta nenhuma afirmação.</p>
+          <p v-if="!view.claims.length" class="rounded-ep bg-ep-paper px-4 py-3 text-sm text-ep-muted">Esta fonte está cadastrada, mas ainda não sustenta nenhuma afirmação.</p>
 
           <div v-for="group in groups" :key="group.key" class="mb-8 last:mb-0">
             <h3 class="flex flex-wrap items-baseline gap-x-2">
-              <span class="text-[11px] font-semibold uppercase tracking-wide" :class="group.entity.kind === 'person' ? 'text-amber-800' : 'text-teal-800'">{{ group.entity.kind === 'person' ? 'Pessoa' : 'Jurisdição' }}</span>
-              <NuxtLink :to="entityRoute(group.entity)" class="ep-link font-serif text-xl font-semibold">{{ group.entity.name }}</NuxtLink>
-              <span class="text-xs text-stone-400">{{ group.items.length }} {{ group.items.length === 1 ? 'afirmação' : 'afirmações' }}</span>
+              <span class="text-[11px] font-semibold uppercase tracking-[.08em]" :class="group.entity.kind === 'person' ? 'text-ep-garnet-ink' : 'text-ep-teal'">{{ group.entity.kind === 'person' ? 'Pessoa' : 'Jurisdição' }}</span>
+              <NuxtLink :to="entityRoute(group.entity)" class="ep-link font-ep-serif text-xl font-semibold">{{ group.entity.name }}</NuxtLink>
+              <span class="text-xs text-ep-faint">{{ group.items.length }} {{ group.items.length === 1 ? 'afirmação' : 'afirmações' }}</span>
             </h3>
-            <ul class="mt-2 divide-y divide-stone-100 rounded-xl border border-stone-200">
+            <ul class="mt-2 divide-y divide-ep-line-2 rounded-ep border border-ep-line">
               <li v-for="(c, i) in group.items" :key="i" class="px-4 py-3">
                 <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm">
-                  <NuxtLink :to="`${entityRoute(group.entity)}#${c.section}`" class="font-medium text-stone-900 hover:text-amber-800 hover:underline">{{ c.claim }}</NuxtLink>
-                  <span v-if="c.detail" class="text-stone-500">{{ c.detail }}</span>
+                  <NuxtLink :to="`${entityRoute(group.entity)}#${c.section}`" class="font-medium text-ep-ink hover:text-ep-garnet-ink hover:underline">{{ c.claim }}</NuxtLink>
+                  <span v-if="c.detail" class="text-ep-muted">{{ c.detail }}</span>
                   <EpiscopadoStatus v-if="c.status" :status="c.status" :show-confirmed="false" />
-                  <span v-if="c.discrepancy" class="rounded bg-red-50 px-1.5 py-0.5 text-[11px] font-medium text-red-800 ring-1 ring-red-100">versão divergente · {{ c.discrepancy }}</span>
+                  <span v-if="c.discrepancy" class="rounded bg-[#f3e3e1] px-1.5 py-0.5 text-[11px] font-medium text-ep-red ring-1 ring-[#e8c9c4]">versão divergente · {{ c.discrepancy }}</span>
                 </div>
-                <blockquote v-if="c.quote" class="mt-1.5 border-l-2 border-amber-300 pl-3 text-sm italic leading-relaxed text-stone-700">“{{ c.quote }}”<span v-if="c.page" class="not-italic text-stone-500"> (p. {{ c.page }})</span></blockquote>
-                <p v-else class="mt-1 text-xs text-stone-400">Sem trecho citado.</p>
+                <blockquote v-if="c.quote" class="mt-1.5 border-l-2 border-ep-garnet-mid pl-3 text-sm italic leading-relaxed text-ep-ink-3">“{{ c.quote }}”<span v-if="c.page" class="not-italic text-ep-muted"> (p. {{ c.page }})</span></blockquote>
+                <p v-else class="mt-1 text-xs text-ep-faint">Sem trecho citado.</p>
               </li>
             </ul>
           </div>
@@ -108,6 +108,7 @@ import { SOURCE_LEVEL_DESCRIPTION, SOURCE_LEVEL_LABEL, SOURCE_TYPE_LABEL, format
 import type { EntityRef, SourceView, SupportedClaim } from '../../../lib/views'
 
 definePageMeta({ layout: false })
+useEpiscopadoFonts()
 
 const route = useRoute()
 const id = computed(() => String(route.params.id))

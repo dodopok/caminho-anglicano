@@ -9,37 +9,37 @@
     />
 
     <!-- Carregando / vazio -->
-    <div v-if="loading" class="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-white/80 text-sm text-stone-500" role="status">
-      <span class="h-6 w-6 animate-spin rounded-full border-2 border-stone-300 border-t-amber-700" aria-hidden="true" />
+    <div v-if="loading" class="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-ep-paper/80 text-sm text-ep-muted" role="status">
+      <span class="h-6 w-6 animate-spin rounded-full border-2 border-ep-rule border-t-ep-garnet" aria-hidden="true" />
       Montando a rede…
     </div>
-    <div v-else-if="visibleCount === 0" class="pointer-events-none absolute inset-0 flex items-center justify-center p-6 text-center text-sm text-stone-500" role="status">
-      <p class="pointer-events-auto max-w-xs rounded-xl bg-white/90 px-4 py-3 shadow-sm ring-1 ring-stone-200">
+    <div v-else-if="visibleCount === 0" class="pointer-events-none absolute inset-0 flex items-center justify-center p-6 text-center text-[13px] text-ep-body" role="status">
+      <p class="pointer-events-auto max-w-xs rounded-ep border border-ep-line bg-ep-card px-[18px] py-3.5 shadow-[0_1px_0_rgba(21,19,15,.08)]">
         Nada para mostrar com os filtros atuais.<br>
-        <button type="button" class="mt-1 font-medium text-amber-800 hover:underline" @click="emit('reset-filters')">Limpar filtros</button>
+        <button type="button" class="mt-1.5 font-semibold text-ep-garnet-ink underline underline-offset-[3px]" @click="emit('reset-filters')">Limpar filtros</button>
       </p>
     </div>
 
     <!-- Dica de hover -->
     <div
       v-if="hoveredNode && hoverInfo"
-      class="pointer-events-none absolute z-10 max-w-[14rem] rounded-md bg-stone-900/90 px-2.5 py-1.5 text-xs text-white shadow"
+      class="pointer-events-none absolute z-10 max-w-[15rem] rounded-ep bg-ep-ink/90 px-2.5 py-1.5 text-xs text-ep-card"
       :style="{ left: `${hoverInfo.x + 12}px`, top: `${hoverInfo.y + 12}px` }"
       aria-hidden="true"
     >
       <p class="font-medium">{{ hoverInfo.label }}</p>
-      <p class="text-stone-300">{{ hoverInfo.detail }}</p>
+      <p class="text-[11px] text-ep-rule">{{ hoverInfo.detail }}</p>
     </div>
 
     <!-- Controles -->
-    <div class="absolute bottom-3 right-3 flex flex-col gap-1">
+    <div v-if="controls" class="absolute bottom-3 right-3 flex flex-col overflow-hidden rounded-ep border border-ep-rule">
       <button type="button" class="graph-btn" aria-label="Aproximar" title="Aproximar" @click="zoom(1 / 1.6)">+</button>
       <button type="button" class="graph-btn" aria-label="Afastar" title="Afastar" @click="zoom(1.6)">−</button>
       <button type="button" class="graph-btn" aria-label="Enquadrar a rede" title="Enquadrar" @click="fit(true)">
         <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4" stroke-linecap="round" stroke-linejoin="round" /></svg>
       </button>
     </div>
-    <p class="pointer-events-none absolute bottom-3 left-3 rounded bg-white/80 px-2 py-1 text-[11px] text-stone-500" aria-live="polite">
+    <p v-if="controls" class="pointer-events-none absolute bottom-3 left-3 rounded-ep bg-ep-card/80 px-2 py-1 text-[11px] text-ep-muted" aria-live="polite">
       {{ visibleCount }} {{ visibleCount === 1 ? 'nó' : 'nós' }} · {{ visibleEdges }} {{ visibleEdges === 1 ? 'ligação' : 'ligações' }}
     </p>
   </div>
@@ -52,7 +52,7 @@ import type { Graph, GraphNode } from '../../lib/graph'
 import { EDGE_LABEL, JURISDICTION_TYPE_LABEL, ORDER_LABEL } from '../../lib/labels'
 import { CONTESTED_HALO, edgeAppearance, edgeGroup, nodeColor, type EdgeGroup } from '../../lib/style'
 
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   graph: Graph
   /** Nó selecionado ("p:id" ou "j:id"). */
   selected: string | null
@@ -65,13 +65,17 @@ const props = defineProps<{
   showJurisdictions: boolean
   /** 'brazil' = jurisdições brasileiras e seus bispos; 'all' = rede inteira. */
   scope: 'brazil' | 'all'
-}>()
+  /** Mostra zoom/enquadrar e a contagem sobre o grafo (o explorador os põe na barra de estado). */
+  controls?: boolean
+}>(), { controls: true })
 
 const emit = defineEmits<{
   select: [id: string | null]
   /** Duplo clique: abrir a ficha. */
   open: [id: string]
   'reset-filters': []
+  /** Quantos nós e ligações estão à vista (a cada redesenho). */
+  counts: [nodes: number, edges: number]
 }>()
 
 type Pos = { x: number; y: number }
@@ -202,6 +206,7 @@ function refresh(animate = true) {
   })
   visibleCount.value = visible.size
   visibleEdges.value = edges
+  emit('counts', visible.size, edges)
   forceAllJurisdictionLabels = visible.size <= 160
   relayout(animate)
   sigma?.refresh()
@@ -387,16 +392,16 @@ onMounted(async () => {
   g = graph
   sigma = new SigmaClass(graph, container.value, {
     renderEdgeLabels: true,
-    labelFont: 'Inter, system-ui, sans-serif',
+    labelFont: '"IBM Plex Sans", system-ui, sans-serif',
     labelSize: 12,
     labelWeight: '500',
-    labelColor: { color: '#1c1917' },
+    labelColor: { color: '#15130f' },
     labelRenderedSizeThreshold: 6,
     labelDensity: 0.6,
     labelGridCellSize: 120,
-    edgeLabelFont: 'Inter, system-ui, sans-serif',
+    edgeLabelFont: '"IBM Plex Sans", system-ui, sans-serif',
     edgeLabelSize: 10,
-    edgeLabelColor: { color: '#57534e' },
+    edgeLabelColor: { color: '#4f483d' },
     hideEdgesOnMove: graph.size > 600,
     zIndex: true,
     minCameraRatio: 0.02,
@@ -424,7 +429,7 @@ onMounted(async () => {
         res.forceLabel = true
       }
       if (hoveredNode.value && node !== hoveredNode.value && !hoveredNeighbors.has(node)) {
-        res.color = '#e7e5e4'
+        res.color = '#e2dccf'
         res.label = ''
         res.forceLabel = false
         res.zIndex = 0
@@ -508,6 +513,6 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .graph-btn {
-  @apply flex h-9 w-9 items-center justify-center rounded-lg border border-stone-200 bg-white/95 text-base text-stone-600 shadow-sm hover:bg-white hover:text-stone-900;
+  @apply flex h-8 w-8 items-center justify-center border-b border-ep-rule bg-ep-card text-[15px] text-ep-ink-3 last:border-b-0 hover:text-ep-ink;
 }
 </style>

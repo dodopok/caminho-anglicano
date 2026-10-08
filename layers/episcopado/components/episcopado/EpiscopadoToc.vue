@@ -1,14 +1,14 @@
 <template>
-  <nav :aria-label="label" class="text-sm">
-    <!-- Celular: fichas em linha, roláveis. Desktop: lista vertical fixa. -->
-    <ul class="flex gap-1 overflow-x-auto pb-1 lg:flex-col lg:gap-0.5 lg:overflow-visible lg:pb-0">
+  <nav :aria-label="label" class="min-w-0 text-xs">
+    <ul class="flex gap-0.5 overflow-x-auto whitespace-nowrap">
       <li v-for="item in items" :key="item.id" class="shrink-0">
-        <a
-          :href="`#${item.id}`"
-          class="block whitespace-nowrap rounded-md px-2.5 py-1.5 text-stone-600 hover:bg-stone-100 hover:text-stone-900"
-          :class="{ 'bg-amber-50 font-medium text-amber-900': active === item.id }"
+        <button
+          type="button"
+          class="block rounded-ep px-2 py-1.5 text-ep-body hover:bg-ep-line-2 hover:text-ep-ink"
+          :class="{ 'bg-ep-line-2 font-medium text-ep-ink': active === item.id }"
           :aria-current="active === item.id ? 'location' : undefined"
-        >{{ item.label }}<span v-if="item.count !== undefined" class="ml-1 text-xs text-stone-400">{{ item.count }}</span></a>
+          @click="go(item.id)"
+        >{{ item.label }}<span v-if="item.count !== undefined" class="ml-1 text-ep-faint">{{ item.count }}</span></button>
       </li>
     </ul>
   </nav>
@@ -21,11 +21,19 @@ export interface TocItem {
   count?: number
 }
 
-/** Sumário da ficha; a seção visível fica destacada. */
+/**
+ * Sumário da ficha, em linha na barra superior; a seção visível fica destacada.
+ * Rola até a seção sem mexer na URL, para funcionar também na folha sobre o grafo.
+ */
 const props = withDefaults(defineProps<{ items: TocItem[]; label?: string }>(), { label: 'Seções desta ficha' })
 
 const active = ref<string | null>(null)
 let observer: IntersectionObserver | null = null
+
+function go(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  active.value = id
+}
 
 function observe() {
   observer?.disconnect()

@@ -1,11 +1,9 @@
 <template>
   <EpiscopadoTip v-if="status !== 'confirmed' || showConfirmed" :title="STATUS_LABEL[status]" :text="STATUS_DESCRIPTION[status]">
     <span
-      class="inline-flex items-center gap-1 rounded-full px-1.5 py-px text-[11px] font-medium leading-4 ring-1 whitespace-nowrap cursor-help"
+      class="inline-flex items-center rounded-ep border px-[5px] py-px align-middle font-ep-mono text-[10px] uppercase leading-4 tracking-[.06em] whitespace-nowrap cursor-help"
       :class="STATUS_STYLE[status].badge"
-    >
-      <span aria-hidden="true" class="font-bold">{{ STATUS_STYLE[status].glyph }}</span>
-      <span>{{ STATUS_LABEL[status] }}</span>
+    >{{ STATUS_LABEL[status] }}
     </span>
   </EpiscopadoTip>
 </template>

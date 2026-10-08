@@ -1,15 +1,15 @@
 <template>
   <main class="mx-auto w-full max-w-2xl flex-1 px-4 py-16 text-center">
-    <p class="text-xs font-semibold uppercase tracking-wide text-stone-500">{{ kind }}</p>
-    <h1 class="mt-2 font-serif text-4xl font-semibold text-stone-900">Não encontramos “{{ id }}”</h1>
-    <p class="mt-3 text-stone-600">
+    <p class="ep-eyebrow">{{ kind }}</p>
+    <h1 class="mt-2 font-ep-serif text-4xl font-semibold text-ep-ink">Não encontramos “{{ id }}”</h1>
+    <p class="mt-3 text-ep-body">
       Pode ser um link antigo ou um registro que ainda não entrou na base. Tente buscar pelo nome:
     </p>
     <div class="mx-auto mt-6 max-w-md text-left">
       <EpiscopadoSearch v-if="nodes" :nodes="nodes" size="lg" placeholder="Buscar pelo nome…" @select="(n) => navigateTo(nodeRoute(n.id))" />
     </div>
     <div v-if="suggestions.length" class="mt-6 text-left">
-      <p class="text-sm font-medium text-stone-700">Talvez você procure:</p>
+      <p class="text-sm font-medium text-ep-ink-3">Talvez você procure:</p>
       <ul class="mt-2 space-y-1">
         <li v-for="s in suggestions" :key="s.id">
           <NuxtLink :to="nodeRoute(s.id)" class="ep-link">{{ s.label }}</NuxtLink>

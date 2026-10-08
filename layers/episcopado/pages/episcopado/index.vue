@@ -1,191 +1,210 @@
 <template>
-  <div class="episcopado min-h-screen bg-stone-50">
-    <EpiscopadoHeader />
+  <div class="episcopado relative flex h-[100dvh] min-h-[480px] flex-col overflow-hidden bg-ep-paper text-sm">
+    <EpiscopadoHeader :nodes="graph.nodes" explorer :sticky="false" @select="(n) => select(n.id)" @open="(n) => openFicha(n.id)" @home="goHome" />
 
-    <section class="border-b border-stone-200 bg-gradient-to-b from-amber-50 to-stone-50">
-      <div class="mx-auto max-w-4xl px-4 pb-5 pt-6 text-center sm:pb-8 sm:pt-10">
-        <h1 class="font-serif text-3xl font-semibold text-stone-900 sm:text-5xl">Rede do Episcopado Histórico</h1>
-        <p class="mx-auto mt-2 max-w-2xl text-sm text-stone-600 sm:mt-3 sm:text-base">
-          Quem ordenou quem, de onde vieram as jurisdições anglicanas no Brasil e como cada linha se liga à sucessão
-          histórica — com fonte para cada afirmação.
-        </p>
-        <div class="mx-auto mt-5 max-w-2xl text-left sm:mt-6">
-          <EpiscopadoSearch
-            :nodes="graph.nodes"
-            size="lg"
-            shortcut
-            placeholder="Busque um clérigo ou jurisdição (ex.: Uchôa, IEAB)…"
-            @select="(n) => select(n.id)"
-            @open="(n) => navigateTo(nodeRoute(n.id))"
-          />
-          <p class="mt-1.5 hidden text-right text-[11px] text-stone-400 sm:block"><kbd class="rounded border border-stone-200 px-1">Enter</kbd> seleciona na rede · <kbd class="rounded border border-stone-200 px-1">Shift+Enter</kbd> abre a ficha</p>
+    <!-- Filtros -->
+    <div class="relative z-20 flex h-11 flex-none items-center gap-3.5 overflow-x-auto overflow-y-hidden whitespace-nowrap border-b border-ep-line bg-ep-paper-2 px-4 text-xs text-ep-body min-[700px]:px-5">
+      <div class="ep-seg flex-none" role="group" aria-label="Abrangência da rede">
+        <button type="button" :aria-pressed="filters.scope === 'brazil'" @click="filters.scope = 'brazil'">Brasil</button>
+        <button type="button" :aria-pressed="filters.scope === 'all'" @click="filters.scope = 'all'">Rede inteira</button>
+      </div>
+      <div class="flex flex-none items-center gap-3.5" role="group" aria-label="Filtros">
+        <button v-for="f in SWITCHES.slice(0, 2)" :key="f.label" type="button" role="switch" class="ep-switch" :aria-checked="f.get()" @click="f.toggle()">
+          <span class="ep-switch-track" aria-hidden="true"><span class="ep-switch-knob" /></span>{{ f.label }}
+        </button>
+        <span class="mx-0.5 h-4 w-px bg-ep-line" aria-hidden="true" />
+        <button v-for="f in SWITCHES.slice(2)" :key="f.label" type="button" role="switch" class="ep-switch" :aria-checked="f.get()" @click="f.toggle()">
+          <span class="ep-switch-track" aria-hidden="true"><span class="ep-switch-knob" /></span>{{ f.label }}
+        </button>
+      </div>
+      <label class="flex flex-none items-center gap-2">
+        <span class="ep-mono-label">Até</span>
+        <input v-model.number="yearInput" type="range" :min="yearRange.min" :max="yearRange.max" class="w-[90px] accent-ep-ink" aria-label="Mostrar a rede até o ano">
+        <span class="w-[34px] font-ep-mono tabular-nums text-ep-ink">{{ year ?? 'hoje' }}</span>
+      </label>
+      <button v-if="filtersDirty" type="button" class="flex-none font-medium text-ep-garnet-ink underline underline-offset-[3px]" @click="resetFilters">Limpar filtros</button>
+    </div>
+
+    <!-- Área do grafo, com a coluna de ajuda (sem seleção) ou o painel do nó (com seleção) -->
+    <div class="relative flex min-h-0 flex-1" :class="selectedNode ? 'flex-col min-[1000px]:flex-row' : 'flex-col min-[700px]:flex-row'">
+      <!-- Como explorar (colapsável) -->
+      <aside
+        v-if="showHelp"
+        class="order-last h-[45%] flex-none overflow-auto border-t border-ep-rule bg-ep-card px-5 py-[18px] min-[700px]:order-none min-[700px]:h-auto min-[700px]:w-[380px] min-[700px]:border-r min-[700px]:border-t-0 min-[700px]:border-ep-line min-[700px]:px-[22px] min-[700px]:py-5"
+        aria-labelledby="como-explorar"
+      >
+        <div class="flex items-start gap-2">
+          <h2 id="como-explorar" class="flex-1 font-ep-serif text-[26px] font-medium leading-[1.1] tracking-[-.01em] text-ep-ink">Como explorar</h2>
+          <button type="button" class="ep-icon-btn h-7 w-7 text-[13px]" aria-label="Recolher" title="Recolher" @click="helpOpen = false">▴</button>
         </div>
-        <p class="mt-2 text-xs text-stone-500">
+        <ol class="mt-2.5 flex flex-col gap-1.5">
+          <li v-for="(t, i) in STEPS" :key="i" class="flex gap-2 text-[13px] leading-[1.45] text-ep-body">
+            <span class="font-semibold text-ep-garnet">{{ i + 1 }}.</span><span>{{ t }}</span>
+          </li>
+        </ol>
+        <p class="mt-2.5 text-xs leading-normal text-ep-muted">A vista inicial mostra o núcleo brasileiro. Troque para “Rede inteira” para ver a sucessão histórica fora do país.</p>
+
+        <h3 class="ep-eyebrow mt-4">Comece por aqui</h3>
+        <ul class="mt-2 flex flex-wrap gap-1.5">
+          <li v-for="s in starters" :key="s.id">
+            <button type="button" class="ep-chip" @click="select(s.id)">
+              <span class="h-2 w-2 rounded-full" :style="{ background: nodeColor(s) }" aria-hidden="true" />{{ s.label }}
+            </button>
+          </li>
+        </ul>
+
+        <template v-if="brazilian.length">
+          <h3 class="ep-eyebrow mt-4">Jurisdições no Brasil</h3>
+          <ul class="mt-2 flex flex-col gap-1">
+            <li v-for="j in brazilian" :key="j.id" class="flex items-center gap-2.5 rounded-ep border border-ep-line-2 bg-ep-card px-2.5 py-2 transition-colors hover:border-ep-garnet-mid hover:bg-ep-garnet-soft">
+              <button type="button" class="flex min-w-0 flex-1 items-center gap-2.5 text-left" @click="select(j.id)">
+                <span class="h-[9px] w-[9px] flex-none rounded-full" :style="{ background: nodeColor(j) }" aria-hidden="true" />
+                <span class="min-w-0 flex-1">
+                  <span class="block text-sm font-medium text-ep-ink">{{ j.label }}</span>
+                  <span class="block truncate text-[11px] text-ep-muted">{{ j.search[0] !== j.label ? j.search[0] : (j.jurisdictionType ? JURISDICTION_TYPE_LABEL[j.jurisdictionType] : '') }}</span>
+                </span>
+              </button>
+              <button type="button" class="flex-none whitespace-nowrap rounded-ep border border-ep-line bg-ep-card px-2 py-[3px] text-[11px] text-ep-body hover:border-ep-garnet hover:text-ep-garnet-ink" :aria-label="`Abrir a ficha de ${j.label}`" @click="openFicha(j.id)">ficha →</button>
+            </li>
+          </ul>
+        </template>
+        <p class="mt-3.5 text-[11px] text-ep-faint">
           {{ stats.people }} pessoas · {{ stats.jurisdictions }} jurisdições · {{ graph.edges.length }} ligações · {{ stats.sources }} fontes — base em construção
         </p>
-      </div>
-    </section>
+      </aside>
 
-    <main class="mx-auto max-w-6xl px-4 py-5">
-      <!-- Erro ao carregar -->
-      <div v-if="graphError" class="rounded-2xl border border-red-200 bg-red-50 px-5 py-6 text-center" role="alert">
-        <p class="font-medium text-red-900">Não foi possível carregar a rede.</p>
-        <p class="mt-1 text-sm text-red-800">{{ graphError.message }}</p>
-        <button type="button" class="ep-btn ep-btn-primary mt-4" @click="refreshGraph()">Tentar de novo</button>
-      </div>
-      <div v-else-if="!graph.nodes.length" class="rounded-2xl border border-stone-200 bg-white px-5 py-10 text-center text-stone-600">
-        A base ainda está vazia. Volte em breve.
-      </div>
-
-      <template v-else>
-        <!-- Filtros -->
-        <div class="mb-3 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm">
-          <div class="inline-flex rounded-lg border border-stone-200 bg-white p-0.5" role="group" aria-label="Abrangência da rede">
-            <button type="button" class="scope-btn" :class="{ active: filters.scope === 'brazil' }" :aria-pressed="filters.scope === 'brazil'" @click="filters.scope = 'brazil'">Brasil</button>
-            <button type="button" class="scope-btn" :class="{ active: filters.scope === 'all' }" :aria-pressed="filters.scope === 'all'" @click="filters.scope = 'all'">Rede inteira</button>
-          </div>
-
-          <div class="flex flex-wrap gap-1.5" role="group" aria-label="Filtros">
-            <button type="button" class="chip" :class="{ active: filters.showPeople }" :aria-pressed="filters.showPeople" @click="filters.showPeople = !filters.showPeople">Pessoas</button>
-            <button type="button" class="chip" :class="{ active: filters.showJurisdictions }" :aria-pressed="filters.showJurisdictions" @click="filters.showJurisdictions = !filters.showJurisdictions">Jurisdições</button>
-            <span class="mx-0.5 self-center text-stone-300" aria-hidden="true">|</span>
-            <button type="button" class="chip" :class="{ active: filters.groups.ordinations }" :aria-pressed="filters.groups.ordinations" @click="filters.groups.ordinations = !filters.groups.ordinations">Ordenações</button>
-            <button type="button" class="chip" :class="{ active: filters.groups.affiliations }" :aria-pressed="filters.groups.affiliations" @click="filters.groups.affiliations = !filters.groups.affiliations">Vínculos</button>
-            <button type="button" class="chip" :class="{ active: filters.groups.relations }" :aria-pressed="filters.groups.relations" @click="filters.groups.relations = !filters.groups.relations">Cismas e filiações</button>
-          </div>
-
-          <label class="ml-auto inline-flex items-center gap-2 text-stone-600">
-            <span class="whitespace-nowrap">Até</span>
-            <input v-model.number="yearInput" type="range" :min="yearRange.min" :max="yearRange.max" class="w-28 accent-amber-700 sm:w-36" aria-label="Mostrar a rede até o ano">
-            <span class="w-10 tabular-nums text-stone-800">{{ year ?? 'hoje' }}</span>
-          </label>
-        </div>
-
-        <!-- Trilha -->
-        <div class="mb-3">
-          <EpiscopadoTrail :trail="trail" :current="selected" :nodes-by-id="nodesById" :can-go-back="canGoBack" @select="select" @back="goBack" @clear="trail.splice(0)" />
-        </div>
-
-        <!-- Grafo + painel -->
-        <div :class="fullscreen ? 'fixed inset-0 z-40 flex flex-col bg-stone-50' : ''">
-          <div v-if="fullscreen" class="flex items-center gap-3 border-b border-stone-200 bg-white px-4 py-2">
-            <p class="font-serif text-lg font-semibold text-stone-800">Rede do Episcopado</p>
-            <div class="ml-auto hidden w-72 sm:block">
-              <EpiscopadoSearch :nodes="graph.nodes" placeholder="Buscar…" @select="(n) => select(n.id)" @open="(n) => navigateTo(nodeRoute(n.id))" />
-            </div>
-            <button type="button" class="ep-btn ep-btn-secondary" @click="fullscreen = false">Sair da tela cheia</button>
-          </div>
-
-          <div class="relative grid grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_22rem]" :class="fullscreen ? 'min-h-0 flex-1 p-3' : ''">
-            <div ref="graphWrap" class="relative overflow-hidden rounded-2xl border border-stone-200 bg-white scroll-mt-16" :class="fullscreen ? 'h-full' : 'h-[60vh] min-h-[420px]'">
-              <ClientOnly>
-                <EpiscopadoGraph
-                  ref="graphRef"
-                  :graph="graph"
-                  :selected="selected"
-                  :depth="selected ? depth : 0"
-                  :year="year"
-                  :groups="filters.groups"
-                  :show-people="filters.showPeople"
-                  :show-jurisdictions="filters.showJurisdictions"
-                  :scope="filters.scope"
-                  @select="select"
-                  @open="(id) => navigateTo(nodeRoute(id))"
-                  @reset-filters="resetFilters"
-                />
-                <template #fallback>
-                  <div class="flex h-full items-center justify-center text-sm text-stone-500">Carregando o explorador…</div>
-                </template>
-              </ClientOnly>
-              <button
-                type="button"
-                class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-lg border border-stone-200 bg-white/95 text-stone-600 shadow-sm hover:text-stone-900"
-                :aria-label="fullscreen ? 'Sair da tela cheia' : 'Tela cheia'"
-                :title="fullscreen ? 'Sair da tela cheia' : 'Tela cheia'"
-                @click="fullscreen = !fullscreen"
-              >
-                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                  <path v-if="!fullscreen" d="M3 8V3h5M12 3h5v5M17 12v5h-5M8 17H3v-5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path v-else d="M8 3v5H3M12 3v5h5M17 12h-5v5M3 12h5v5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </button>
-              <p v-if="selected && !selectedNode" class="absolute inset-x-3 top-14 rounded-lg bg-amber-50 px-3 py-2 text-center text-xs text-amber-900 ring-1 ring-amber-200">
-                O nó “{{ selected }}” não existe na rede. <button type="button" class="font-medium underline" @click="select(null)">Limpar seleção</button>
-              </p>
-            </div>
-
-            <!-- Painel do nó selecionado -->
-            <aside
-              v-if="selectedNode"
-              class="z-40 flex max-h-[58vh] flex-col overflow-hidden border-stone-200 bg-white shadow-2xl lg:static lg:z-auto lg:rounded-2xl lg:border lg:shadow-none"
-              :class="fullscreen ? 'fixed inset-x-0 bottom-0 rounded-t-2xl border-t lg:h-full lg:max-h-none' : 'fixed inset-x-0 bottom-0 rounded-t-2xl border-t lg:max-h-[60vh] lg:min-h-[420px]'"
-              aria-label="Mini-ficha do nó selecionado"
-            >
-              <EpiscopadoNodePanel
-                :node="selectedNode"
-                :graph="graph"
-                :nodes-by-id="nodesById"
-                :depth="depth"
-                @update:depth="(d) => (depth = d)"
-                @select="select"
-                @close="select(null)"
-              />
-            </aside>
-            <aside v-else class="hidden rounded-2xl border border-stone-200 bg-white p-5 text-sm lg:block" :class="fullscreen ? 'h-full overflow-auto' : 'max-h-[60vh] overflow-auto'">
-              <h2 class="font-serif text-xl font-semibold text-stone-900">Como explorar</h2>
-              <ul class="mt-3 space-y-2 text-stone-600">
-                <li class="flex gap-2"><span class="text-amber-700">1.</span> Busque um nome ou sigla, ou clique num ponto da rede.</li>
-                <li class="flex gap-2"><span class="text-amber-700">2.</span> Passe o mouse para destacar as ligações diretas; duplo clique abre a ficha.</li>
-                <li class="flex gap-2"><span class="text-amber-700">3.</span> Com um nó selecionado, “Vizinhança” mostra só quem está a 1–3 passos.</li>
-                <li class="flex gap-2"><span class="text-amber-700">4.</span> Arraste o controle de ano para ver a rede em outra época.</li>
-                <li class="flex gap-2"><span class="text-amber-700">5.</span> Voltar e avançar do navegador percorrem os nós que você visitou.</li>
-              </ul>
-              <p class="mt-4 text-xs text-stone-500">A vista inicial mostra o núcleo brasileiro. Troque para “Rede inteira” para ver a sucessão histórica fora do país.</p>
-              <h3 class="mt-5 text-xs font-semibold uppercase tracking-wide text-stone-500">Comece por aqui</h3>
-              <ul class="mt-2 flex flex-wrap gap-1.5">
-                <li v-for="s in starters" :key="s.id">
-                  <button type="button" class="rounded-full border border-stone-200 bg-white px-2.5 py-1 text-xs text-stone-700 hover:border-amber-400 hover:text-amber-900" @click="select(s.id)">{{ s.label }}</button>
-                </li>
-              </ul>
-            </aside>
+      <!-- Grafo -->
+      <div ref="graphWrap" class="relative min-h-[200px] min-w-0 flex-1">
+        <div v-if="graphError" class="absolute inset-0 flex items-center justify-center p-6" role="alert">
+          <div class="max-w-sm rounded-ep border border-ep-line bg-ep-card px-5 py-6 text-center">
+            <p class="font-medium text-ep-red">Não foi possível carregar a rede.</p>
+            <p class="mt-1 text-[13px] text-ep-body">{{ graphError.message }}</p>
+            <button type="button" class="ep-btn ep-btn-primary mt-4" @click="refreshGraph()">Tentar de novo</button>
           </div>
         </div>
+        <div v-else-if="!graph.nodes.length" class="absolute inset-0 flex items-center justify-center p-6 text-center text-ep-body">
+          A base ainda está vazia. Volte em breve.
+        </div>
+        <ClientOnly v-else>
+          <EpiscopadoGraph
+            ref="graphRef"
+            :graph="graph"
+            :selected="selected"
+            :depth="selected ? depth : 0"
+            :year="year"
+            :groups="filters.groups"
+            :show-people="filters.showPeople"
+            :show-jurisdictions="filters.showJurisdictions"
+            :scope="filters.scope"
+            :controls="false"
+            @select="select"
+            @open="openFicha"
+            @reset-filters="resetFilters"
+            @counts="(n, e) => (counts = [n, e])"
+          />
+          <template #fallback>
+            <div class="flex h-full items-center justify-center text-sm text-ep-muted">Carregando o explorador…</div>
+          </template>
+        </ClientOnly>
 
-        <div class="mt-3">
+        <button
+          v-if="!selectedNode && !helpOpen"
+          type="button"
+          class="absolute left-4 top-4 flex h-[34px] max-w-[calc(100%-2rem)] items-center gap-2 overflow-hidden whitespace-nowrap rounded-ep border border-ep-rule bg-ep-card px-3 text-xs text-ep-ink-3 hover:border-ep-ink min-[700px]:left-5"
+          :aria-expanded="false"
+          @click="helpOpen = true"
+        >Como explorar · Jurisdições no Brasil <span class="text-ep-faint" aria-hidden="true">▾</span></button>
+
+        <p v-if="selected && !selectedNode" class="absolute inset-x-3 top-3 rounded-ep border border-ep-garnet-line bg-ep-garnet-soft px-3 py-2 text-center text-xs text-ep-garnet-ink">
+          O nó “{{ selected }}” não existe na rede. <button type="button" class="font-medium underline" @click="select(null)">Limpar seleção</button>
+        </p>
+      </div>
+
+      <!-- Painel do nó selecionado -->
+      <aside
+        v-if="selectedNode"
+        class="flex h-[45%] flex-none flex-col overflow-hidden border-t border-ep-rule bg-ep-card min-[1000px]:h-auto min-[1000px]:w-[380px] min-[1000px]:border-l min-[1000px]:border-t-0 min-[1000px]:border-ep-line"
+        aria-label="Mini-ficha do nó selecionado"
+      >
+        <EpiscopadoNodePanel
+          :node="selectedNode"
+          :graph="graph"
+          :nodes-by-id="nodesById"
+          :depth="depth"
+          :counts="counts"
+          @update:depth="(d) => (depth = d)"
+          @select="select"
+          @close="select(null)"
+          @open="(section) => openFicha(selectedNode!.id, section)"
+          @fit="graphRef?.fit(true)"
+        />
+      </aside>
+    </div>
+
+    <!-- Barra de estado: recomeçar, voltar, trilha, legenda, câmera -->
+    <div class="relative z-20 flex h-11 flex-none items-center gap-2.5 border-t border-ep-line bg-ep-card pl-3 pr-3 min-[700px]:pl-5">
+      <button type="button" class="ep-btn ep-btn-primary ep-btn-sm flex-none" title="Volta à vista inicial: sem seleção, sem trilha e com os filtros padrão" @click="goHome">↺ Recomeçar</button>
+      <EpiscopadoTrail :trail="trail" :current="selected" :nodes-by-id="nodesById" :can-go-back="canGoBack" :compact="!!selectedNode" @select="select" @back="goBack" @clear="trail.splice(0)" />
+      <div class="relative ml-auto flex flex-none items-center gap-1.5">
+        <div v-if="legendOpen" id="legenda" class="absolute bottom-10 right-0 z-30 max-h-[calc(100dvh-140px)] w-max max-w-[calc(100vw-1.5rem)] overflow-auto rounded-ep border border-ep-rule bg-ep-card px-3.5 py-3">
           <EpiscopadoLegend />
         </div>
-      </template>
-
-      <!-- Diretório de jurisdições brasileiras (também é a navegação principal no celular) -->
-      <section v-if="brazilian.length" class="mt-10" aria-labelledby="jurisdicoes-br">
-        <h2 id="jurisdicoes-br" class="mb-3 font-serif text-2xl font-semibold text-stone-900">Jurisdições no Brasil</h2>
-        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          <NuxtLink
-            v-for="j in brazilian"
-            :key="j.id"
-            :to="nodeRoute(j.id)"
-            class="group block rounded-xl border border-stone-200 bg-white px-4 py-3 transition hover:border-amber-400 hover:shadow-sm"
-          >
-            <p class="flex items-center gap-2 font-medium text-stone-900">
-              <span class="h-2.5 w-2.5 rounded-full" :style="{ background: nodeColor(j) }" aria-hidden="true" />
-              {{ j.label }}
-            </p>
-            <p class="min-w-0 truncate text-xs text-stone-500">{{ j.search[0] !== j.label ? j.search[0] : (j.jurisdictionType ? JURISDICTION_TYPE_LABEL[j.jurisdictionType] : '') }}</p>
-          </NuxtLink>
+        <button
+          type="button"
+          class="ep-btn ep-btn-sm"
+          :class="legendOpen ? 'ep-btn-primary' : 'ep-btn-secondary'"
+          :aria-expanded="legendOpen"
+          aria-controls="legenda"
+          @click="legendOpen = !legendOpen"
+        >Legenda</button>
+        <div class="flex overflow-hidden rounded-ep border border-ep-rule">
+          <button type="button" class="h-[30px] w-8 border-r border-ep-rule bg-ep-card text-[15px] text-ep-ink-3 hover:text-ep-ink" aria-label="Aproximar" title="Aproximar" @click="graphRef?.zoom(1 / 1.6)">+</button>
+          <button type="button" class="h-[30px] w-8 border-r border-ep-rule bg-ep-card text-[15px] text-ep-ink-3 hover:text-ep-ink" aria-label="Afastar" title="Afastar" @click="graphRef?.zoom(1.6)">−</button>
+          <button type="button" class="h-[30px] w-8 bg-ep-card text-sm text-ep-ink-3 hover:text-ep-ink" aria-label="Enquadrar a rede" title="Enquadrar" @click="graphRef?.fit(true)">⌖</button>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
 
-    <BaseFooter />
+    <!-- Ficha completa: folha sobre o grafo -->
+    <Transition name="ep-sheet">
+      <div
+        v-if="fichaId"
+        ref="sheet"
+        class="absolute bottom-0 right-0 top-[100px] z-40 w-full overflow-auto bg-ep-card shadow-[-1px_0_0_rgba(21,19,15,.15),-12px_0_32px_rgba(21,19,15,.08)] min-[700px]:top-14 min-[1000px]:w-[min(680px,62%)]"
+        role="dialog"
+        :aria-label="fichaNode ? `Ficha de ${fichaNode.label}` : 'Ficha'"
+      >
+        <EpiscopadoPersonFicha v-if="fichaPerson" :person="fichaPerson" sheet @back="closeFicha" @close="closeFicha" />
+        <EpiscopadoJurisdictionFicha v-else-if="fichaJurisdiction" :jurisdiction="fichaJurisdiction" sheet @back="closeFicha" @close="closeFicha" />
+        <template v-else>
+          <div class="sticky top-0 flex items-center gap-2 border-b border-ep-line bg-ep-card px-4 py-3">
+            <button type="button" class="ep-btn ep-btn-secondary ep-btn-sm" @click="closeFicha">← Voltar à rede</button>
+            <button type="button" class="ep-icon-btn ml-auto" aria-label="Fechar ficha (Esc)" @click="closeFicha">×</button>
+          </div>
+          <div v-if="fichaError" class="px-8 py-10 text-ep-body" role="alert">
+            <p class="font-medium text-ep-red">Não foi possível carregar esta ficha.</p>
+            <button type="button" class="ep-btn ep-btn-primary mt-4" @click="loadFicha()">Tentar de novo</button>
+          </div>
+          <div v-else class="space-y-3 px-8 py-8" role="status" aria-label="Carregando a ficha">
+            <div class="h-3 w-24 animate-pulse rounded-ep bg-ep-line-2" />
+            <div class="h-10 w-2/3 animate-pulse rounded-ep bg-ep-line-2" />
+            <div class="h-3 w-full animate-pulse rounded-ep bg-ep-line-2" />
+            <div class="h-3 w-5/6 animate-pulse rounded-ep bg-ep-line-2" />
+          </div>
+        </template>
+      </div>
+    </Transition>
   </div>
 </template>
 
 <script setup lang="ts">
 import { JURISDICTION_TYPE_LABEL } from '../../lib/labels'
-import { nodeColor, nodeRoute } from '../../lib/style'
+import { nodeColor } from '../../lib/style'
+import type { JurisdictionView, PersonView } from '../../lib/views'
 import { DEFAULT_FILTERS } from '../../composables/useEpiscopadoExplorer'
 
 definePageMeta({ layout: false })
+useEpiscopadoFonts()
 
 useSeoMeta({
   title: 'Rede do Episcopado Histórico (beta) - Caminho Anglicano',
@@ -199,12 +218,25 @@ const { data: graph, error: graphError, refresh: refreshGraph } = await useEpisc
 const { data: sources } = await useFetch<{ id: string }[]>('/api/episcopado/fontes', { key: 'episcopado-fontes', default: () => [] })
 const { filters, trail, visit } = useEpiscopadoExplorer()
 
-const graphRef = ref<{ fit: (animate?: boolean) => void; resize: () => void } | null>(null)
+const graphRef = ref<{ fit: (animate?: boolean) => void; zoom: (factor: number) => void; resize: () => void } | null>(null)
 const graphWrap = ref<HTMLElement | null>(null)
-const fullscreen = ref(false)
+const sheet = ref<HTMLElement | null>(null)
+const counts = ref<[number, number] | undefined>(undefined)
+const legendOpen = ref(false)
+/** "Como explorar" começa aberto, exceto em telas pequenas (ver onMounted). */
+const helpOpen = useState('episcopado-help-open', () => true)
 
-// --- Estado na URL: nó (histórico), profundidade, ano, abrangência e filtros ocultos.
+const STEPS = [
+  'Busque um nome ou sigla, ou clique num ponto da rede.',
+  'Passe o mouse para destacar as ligações diretas; duplo clique abre a ficha.',
+  'Com um nó selecionado, “Vizinhança” limita a rede a quem está a 1–3 passos.',
+  'Arraste o controle de ano para ver a rede em outra época.',
+  'Voltar e a trilha percorrem os nós que você visitou; Recomeçar volta à vista inicial.'
+]
+
+// --- Estado na URL: nó (histórico), ficha aberta, profundidade, ano, abrangência e filtros ocultos.
 const selected = computed(() => (typeof route.query.no === 'string' && route.query.no ? route.query.no : null))
+const fichaId = computed(() => (typeof route.query.ficha === 'string' && /^[pj]:/.test(route.query.ficha) ? route.query.ficha : null))
 const depth = ref(Number(route.query.prof ?? 2) || 2)
 const yearRange = computed(() => {
   const years = graph.value.nodes.map((n) => n.startYear).filter((y): y is number => typeof y === 'number')
@@ -227,8 +259,21 @@ if (typeof route.query.ocultar === 'string') {
   for (const key of Object.keys(HIDE_KEYS) as (keyof typeof HIDE_KEYS)[]) HIDE_KEYS[key](!route.query.ocultar.split(',').includes(key))
 }
 
+/** Interruptores da barra de filtros (os dois primeiros filtram nós; os outros, tipos de ligação). */
+const SWITCHES = [
+  { label: 'Pessoas', get: () => filters.value.showPeople, toggle: () => (filters.value.showPeople = !filters.value.showPeople) },
+  { label: 'Jurisdições', get: () => filters.value.showJurisdictions, toggle: () => (filters.value.showJurisdictions = !filters.value.showJurisdictions) },
+  { label: 'Ordenações', get: () => filters.value.groups.ordinations, toggle: () => (filters.value.groups.ordinations = !filters.value.groups.ordinations) },
+  { label: 'Vínculos', get: () => filters.value.groups.affiliations, toggle: () => (filters.value.groups.affiliations = !filters.value.groups.affiliations) },
+  { label: 'Cismas e filiações', get: () => filters.value.groups.relations, toggle: () => (filters.value.groups.relations = !filters.value.groups.relations) }
+]
+
+const filtersDirty = computed(() => year.value !== null || JSON.stringify(filters.value) !== JSON.stringify(DEFAULT_FILTERS))
+
 const nodesById = computed(() => new Map(graph.value.nodes.map((n) => [n.id, n])))
 const selectedNode = computed(() => (selected.value ? nodesById.value.get(selected.value) ?? null : null))
+const fichaNode = computed(() => (fichaId.value ? nodesById.value.get(fichaId.value) ?? null : null))
+const showHelp = computed(() => !selectedNode.value && helpOpen.value)
 
 const stats = computed(() => ({
   people: graph.value.nodes.filter((n) => n.kind === 'person').length,
@@ -259,6 +304,7 @@ function buildQuery() {
   })
   return {
     ...(selected.value ? { no: selected.value } : {}),
+    ...(fichaId.value ? { ficha: fichaId.value } : {}),
     ...(selected.value && depth.value !== 2 ? { prof: String(depth.value) } : {}),
     ...(year.value ? { ano: String(year.value) } : {}),
     ...(filters.value.scope === 'all' ? { tudo: '1' } : {}),
@@ -273,6 +319,21 @@ function select(id: string | null) {
   router.push({ query: { ...buildQuery(), no: id ?? undefined } })
 }
 
+/** Abre a ficha completa numa folha sobre o grafo (o nó também fica selecionado). */
+function openFicha(id: string, section?: string) {
+  if (!nodesById.value.has(id)) return
+  pendingSection = section ?? null
+  visit(id)
+  router.push({ query: { ...buildQuery(), no: id, ficha: id } })
+}
+
+function closeFicha() {
+  router.replace({ query: { ...buildQuery(), ficha: undefined } })
+}
+
+// Dentro da folha, nomes de pessoas e jurisdições abrem a ficha delas na própria folha.
+provideEpiscopadoNodeLink((id) => ({ path: '/episcopado', query: { ...buildQuery(), no: id, ficha: id } }))
+
 const canGoBack = ref(false)
 function goBack() {
   if (import.meta.client && window.history.state?.back) router.back()
@@ -284,52 +345,112 @@ function resetFilters() {
   yearInput.value = yearRange.value.max
 }
 
+/** Recomeçar: sem seleção, sem ficha, sem trilha, filtros e vizinhança padrão. */
+function goHome() {
+  resetFilters()
+  trail.value.splice(0)
+  depth.value = 2
+  helpOpen.value = true
+  legendOpen.value = false
+  router.push({ query: {} })
+}
+
 watch(selected, (id) => {
   if (id) visit(id)
   if (!import.meta.client) return
   canGoBack.value = !!window.history.state?.back
-  // No celular o painel vira uma folha inferior; garante que o grafo fique visível por trás.
-  if (id && !fullscreen.value && window.innerWidth < 1024) graphWrap.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }, { immediate: true })
 
 // Profundidade, ano e filtros não criam entradas no histórico: só atualizam a URL.
 watch([depth, year, filters], () => router.replace({ query: buildQuery() }), { deep: true })
 
-watch(fullscreen, (on) => {
-  if (!import.meta.client) return
-  document.body.style.overflow = on ? 'hidden' : ''
-  setTimeout(() => {
-    graphRef.value?.resize()
-    graphRef.value?.fit(true)
-  }, 50)
+// --- Ficha na folha: carrega a visão da pessoa ou jurisdição pela API.
+const fichaData = ref<PersonView | JurisdictionView | null>(null)
+const fichaError = ref(false)
+let pendingSection: string | null = null
+const fichaPerson = computed(() => (fichaData.value && fichaId.value?.startsWith('p:') && fichaData.value.id === fichaId.value.slice(2) && 'ordinations' in fichaData.value ? fichaData.value : null))
+const fichaJurisdiction = computed(() => (fichaData.value && fichaId.value?.startsWith('j:') && fichaData.value.id === fichaId.value.slice(2) && 'relations' in fichaData.value ? fichaData.value : null))
+
+async function loadFicha() {
+  const id = fichaId.value
+  if (!id) return
+  fichaError.value = false
+  try {
+    const kind = id.startsWith('p:') ? 'pessoa' : 'jurisdicao'
+    const data = await $fetch<PersonView | JurisdictionView | { redirect: string }>(`/api/episcopado/${kind}/${id.slice(2)}`)
+    if (id !== fichaId.value) return
+    if ('redirect' in data) {
+      router.replace({ query: { ...buildQuery(), ficha: `${id.slice(0, 2)}${data.redirect}` } })
+      return
+    }
+    fichaData.value = data
+    await nextTick()
+    if (pendingSection) document.getElementById(pendingSection)?.scrollIntoView({ block: 'start' })
+    else sheet.value?.scrollTo({ top: 0 })
+    pendingSection = null
+  } catch {
+    if (id === fichaId.value) fichaError.value = true
+  }
+}
+watch(fichaId, () => {
+  if (import.meta.client) loadFicha()
 })
 
+// --- O grafo ocupa só o espaço livre: quando a coluna ou o painel mudam esse espaço, o Sigma se redimensiona e reenquadra.
+let resizeObserver: ResizeObserver | null = null
+let refitTimer: ReturnType<typeof setTimeout> | null = null
+let lastSize = ''
+function onGraphResize() {
+  const el = graphWrap.value
+  if (!el) return
+  const size = `${el.clientWidth}x${el.clientHeight}`
+  if (size === lastSize) return
+  const first = !lastSize
+  lastSize = size
+  graphRef.value?.resize()
+  if (first) return
+  // Espera a animação do layout local (≈550 ms) terminar antes de reenquadrar.
+  if (refitTimer) clearTimeout(refitTimer)
+  refitTimer = setTimeout(() => graphRef.value?.fit(true), 600)
+}
+
+const openCite = useEpiscopadoOpenCite()
 function onKeydown(e: KeyboardEvent) {
   const target = e.target as HTMLElement
   if (['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)) return
-  if (e.key === 'Escape') {
-    if (fullscreen.value) fullscreen.value = false
-    else if (selected.value) select(null)
-  }
+  if (e.key !== 'Escape') return
+  // Um cartão de fonte aberto fecha primeiro (ele mesmo trata o Esc).
+  if (openCite.value) return
+  if (legendOpen.value) legendOpen.value = false
+  else if (fichaId.value) closeFicha()
+  else if (selected.value) select(null)
 }
-onMounted(() => document.addEventListener('keydown', onKeydown))
+
+onMounted(() => {
+  // Captura: roda antes do cartão de fonte fechar, para o mesmo Esc não fechar também a ficha.
+  document.addEventListener('keydown', onKeydown, { capture: true })
+  if (window.innerWidth < 700 || window.innerHeight < 700) helpOpen.value = false
+  if (fichaId.value) loadFicha()
+  if (typeof ResizeObserver !== 'undefined' && graphWrap.value) {
+    resizeObserver = new ResizeObserver(onGraphResize)
+    resizeObserver.observe(graphWrap.value)
+  }
+})
 onBeforeUnmount(() => {
-  document.removeEventListener('keydown', onKeydown)
-  if (import.meta.client) document.body.style.overflow = ''
+  document.removeEventListener('keydown', onKeydown, { capture: true })
+  resizeObserver?.disconnect()
+  if (refitTimer) clearTimeout(refitTimer)
 })
 </script>
 
 <style scoped>
-.scope-btn {
-  @apply rounded-md px-3 py-1 text-stone-600 hover:text-stone-900;
+.ep-sheet-enter-active,
+.ep-sheet-leave-active {
+  transition: transform 220ms ease, opacity 220ms ease;
 }
-.scope-btn.active {
-  @apply bg-stone-800 text-white;
-}
-.chip {
-  @apply rounded-full border border-stone-200 bg-white px-2.5 py-1 text-xs text-stone-500 line-through decoration-stone-300 hover:border-stone-400;
-}
-.chip.active {
-  @apply border-amber-300 bg-amber-50 text-amber-900 no-underline;
+.ep-sheet-enter-from,
+.ep-sheet-leave-to {
+  transform: translateX(24px);
+  opacity: 0;
 }
 </style>

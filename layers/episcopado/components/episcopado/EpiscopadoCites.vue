@@ -3,8 +3,8 @@
     <template v-for="n in shown" :key="n">
       <button
         type="button"
-        class="rounded px-0.5 text-amber-700 hover:bg-amber-50 hover:text-amber-900"
-        :class="{ 'bg-amber-100 text-amber-900': openKey === key(n) }"
+        class="rounded-ep px-0.5 font-semibold text-ep-garnet hover:bg-ep-garnet-soft hover:text-ep-garnet-deep"
+        :class="{ 'bg-ep-garnet-soft text-ep-garnet-deep': openKey === key(n) }"
         :aria-label="`Fonte ${n}`"
         :aria-expanded="openKey === key(n)"
         :aria-controls="openKey === key(n) ? popoverId : undefined"
@@ -19,7 +19,7 @@
     <button
       v-if="cites.length > MAX_SHOWN && !expanded"
       type="button"
-      class="rounded px-0.5 text-stone-500 hover:bg-stone-100 hover:text-stone-800"
+      class="rounded-ep px-0.5 text-ep-muted hover:bg-ep-line-2 hover:text-ep-ink"
       :aria-label="`Mostrar mais ${cites.length - MAX_SHOWN + 1} fontes`"
       @click="expanded = true"
     >+{{ cites.length - MAX_SHOWN + 1 }}</button>
@@ -32,7 +32,7 @@
           ref="popover"
           role="dialog"
           :aria-label="`Fonte ${openNote.n}`"
-          class="ep-cite-pop fixed z-50 w-[22rem] max-w-[calc(100vw-2rem)] rounded-xl border border-stone-200 bg-white p-4 text-left shadow-xl ring-1 ring-black/5 sm:max-h-[70vh] sm:overflow-auto"
+          class="ep-cite-pop episcopado fixed z-50 w-[22rem] max-w-[calc(100vw-2rem)] rounded-[3px] border border-ep-line bg-ep-card p-4 text-left shadow-[0_2px_8px_rgba(21,19,15,.14)] sm:max-h-[70vh] sm:overflow-auto"
           :class="sheet ? 'inset-x-0 bottom-0 w-auto max-w-none rounded-b-none max-h-[75vh] overflow-auto pb-[max(1rem,env(safe-area-inset-bottom))]' : ''"
           :style="sheet ? undefined : position"
           @mouseenter="cancelClose"
@@ -40,16 +40,16 @@
           @keydown.esc="close"
         >
           <div class="flex items-start justify-between gap-3">
-            <span class="text-xs font-semibold uppercase tracking-wide text-amber-800">Nota [{{ openNote.n }}]</span>
-            <button type="button" class="-m-1 rounded p-1 text-stone-400 hover:text-stone-700" aria-label="Fechar" @click="close">
+            <span class="ep-eyebrow !text-ep-garnet-ink">Nota [{{ openNote.n }}]</span>
+            <button type="button" class="-m-1 rounded-ep p-1 text-ep-faint hover:text-ep-ink" aria-label="Fechar" @click="close">
               <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
             </button>
           </div>
           <EpiscopadoSourceCard class="mt-2" :source="openNote.source" :quote="openNote.quote" :page="openNote.page" />
-          <a :href="`#nota-${openNote.n}`" class="mt-3 inline-block text-xs text-stone-500 hover:text-stone-800 hover:underline" @click="close">Ver na lista de fontes ↓</a>
+          <a :href="`#nota-${openNote.n}`" class="mt-3 inline-block text-xs text-ep-muted hover:text-ep-ink hover:underline" @click="close">Ver na lista de fontes ↓</a>
         </div>
       </Transition>
-      <div v-if="openNote && sheet" class="fixed inset-0 z-40 bg-stone-900/30" aria-hidden="true" @click="close" />
+      <div v-if="openNote && sheet" class="fixed inset-0 z-40 bg-ep-ink/30" aria-hidden="true" @click="close" />
     </Teleport>
   </sup>
 </template>

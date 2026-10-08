@@ -1,14 +1,14 @@
 import type { EdgeKind, GraphNode } from './graph'
 
-/** Cores do grafo e da legenda (paleta do site: âmbar/pedra + teal para jurisdições). */
+/** Cores do grafo e da legenda (papel e tinta: granada para pessoas, petróleo para jurisdições). */
 export const NODE_COLORS = {
-  episcopate: '#b45309',
+  episcopate: '#8b2e1f',
   presbyterate: '#475569',
   diaconate: '#94a3b8',
-  person: '#cbd5e1',
-  church: '#0f766e',
-  diocese: '#2dd4bf',
-  communion: '#4f46e5'
+  person: '#b8b0a0',
+  church: '#1f4e5f',
+  diocese: '#4d8494',
+  communion: '#5b4a7a'
 } as const
 
 export const NODE_LEGEND: { color: string; label: string }[] = [
@@ -17,7 +17,7 @@ export const NODE_LEGEND: { color: string; label: string }[] = [
   { color: NODE_COLORS.diaconate, label: 'Diácono' },
   { color: NODE_COLORS.church, label: 'Igreja / província' },
   { color: NODE_COLORS.diocese, label: 'Diocese / distrito' },
-  { color: NODE_COLORS.communion, label: 'Comunhão' }
+  { color: NODE_COLORS.communion, label: 'Comunhão / rede' }
 ]
 
 export function nodeColor(node: GraphNode): string {
@@ -39,27 +39,27 @@ export function edgeGroup(kind: EdgeKind): EdgeGroup {
 
 export function edgeColor(kind: EdgeKind): string {
   switch (kind) {
-    case 'consecration': return '#b45309'
-    case 'co_consecration': return '#fbbf24'
+    case 'consecration': return '#8b2e1f'
+    case 'co_consecration': return '#b8862b'
     case 'presbyteral_ordination':
     case 'diaconal_ordination': return '#94a3b8'
-    case 'affiliation': return '#e2e8f0'
+    case 'affiliation': return '#c9c1af'
     case 'schism_from':
-    case 'broke_communion_with': return '#dc2626'
+    case 'broke_communion_with': return '#b42318'
     case 'successor_of':
-    case 'merged_with': return '#7c3aed'
-    default: return '#5eead4'
+    case 'merged_with': return '#5b4a7a'
+    default: return '#1f4e5f'
   }
 }
 
 export const EDGE_LEGEND: { color: string; label: string }[] = [
-  { color: '#b45309', label: 'Sagração (principal)' },
-  { color: '#fbbf24', label: 'Co-sagração' },
+  { color: '#8b2e1f', label: 'Sagração (principal)' },
+  { color: '#b8862b', label: 'Co-sagração' },
   { color: '#94a3b8', label: 'Ordenação' },
-  { color: '#e2e8f0', label: 'Vínculo' },
-  { color: '#dc2626', label: 'Cisma / ruptura' },
-  { color: '#7c3aed', label: 'Sucessão / fusão' },
-  { color: '#5eead4', label: 'Filiação / comunhão' }
+  { color: '#c9c1af', label: 'Vínculo' },
+  { color: '#b42318', label: 'Cisma / ruptura' },
+  { color: '#5b4a7a', label: 'Sucessão / fusão' },
+  { color: '#1f4e5f', label: 'Filiação / comunhão' }
 ]
 
 /** "p:miguel-uchoa" → "/episcopado/pessoa/miguel-uchoa". */
@@ -71,15 +71,22 @@ export function nodeRoute(nodeId: string): string {
 /** Rota da ficha de uma fonte. */
 export const sourceRoute = (id: string) => `/episcopado/fonte/${id}`
 
-/** Cores dos selos de status (texto/fundo em Tailwind) e do traço no grafo. */
+/** Selos de status: versalete mono com contorno na cor do status (classes Tailwind) e cor do ponto. */
 export const STATUS_STYLE = {
-  confirmed: { badge: 'bg-emerald-50 text-emerald-800 ring-emerald-200', dot: '#059669', glyph: '✓' },
-  probable: { badge: 'bg-amber-50 text-amber-800 ring-amber-200', dot: '#d97706', glyph: '~' },
-  contested: { badge: 'bg-red-50 text-red-800 ring-red-200', dot: '#dc2626', glyph: '!' }
+  confirmed: { badge: 'text-ep-green border-ep-green/40', dot: '#2f5d3a', glyph: '✓' },
+  probable: { badge: 'text-ep-garnet-ink border-ep-garnet-ink/40', dot: '#6f2418', glyph: '~' },
+  contested: { badge: 'text-ep-red border-ep-red/40', dot: '#8a1c12', glyph: '!' }
+} as const
+
+/** Nível da fonte: fundo e texto do selo. */
+export const LEVEL_CLASS = {
+  primary: 'bg-ep-green-soft text-ep-green',
+  secondary: 'bg-ep-teal-soft text-ep-teal',
+  tertiary: 'bg-ep-line-2 text-ep-body'
 } as const
 
 /** Halo vermelho desenhado por baixo das arestas contestadas. */
-export const CONTESTED_HALO = '#dc262655'
+export const CONTESTED_HALO = '#b4231855'
 
 /**
  * Aparência de uma aresta no grafo conforme o status: a cor diz o tipo, o status
