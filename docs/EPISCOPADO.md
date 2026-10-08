@@ -236,21 +236,24 @@ Os resultados vêm agrupados em Pessoas / Jurisdições / Fontes. Enter abre o n
 
 **Fluxo:**
 
-1. **Captura.** Baixa o conteúdo e arquiva no Wayback Machine (`web.archive.org/save`). Cria/atualiza o YAML da fonte. Fato pessoal vira fonte `personal_testimony`.
-2. **Extração.** Gera uma lista estruturada de afirmações (ordenações, vínculos, relações), cada uma com o **trecho literal** que a sustenta.
-3. **Resolução de entidades.** `pnpm episcopado:search "nome"` (busca fuzzy em nomes e aliases) evita duplicatas. Se houver ambiguidade, a skill lista no PR em vez de chutar.
-4. **Mesclagem.** Fato novo é adicionado. Fato igual ganha mais uma fonte. Fato **conflitante** com um já registrado nunca sobrescreve: vira uma entrada em `discrepancies` e o status passa a `contested`.
-5. **Validação.** Roda `pnpm episcopado:validate` e corrige até passar.
-6. **Entrega.** Cria a branch `episcopado/<slug>`, faz o commit e abre um PR com:
+1. **Captura.** Baixa o conteúdo (arquivar no Wayback Machine é opcional). Fato pessoal vira fonte `personal_testimony`.
+2. **Extração.** Escreve uma *leva* JSON (`layers/episcopado/pesquisa/FORMATO.md`, chaves em pt) com as afirmações (ordenações, vínculos, relações, eventos), cada uma com o **trecho literal** que a sustenta.
+3. **Consolidação.** `pnpm episcopado:consolidar <leva> [--write]` (`layers/episcopado/pesquisa/consolidar.py`) mescla a leva na base YAML: casa nomes por nome, aliases e `mapa.json`, avisa sobre pessoas parecidas (duplicata ou homônimo), deduplica fontes por URL, junta fatos iguais, e fato **conflitante** com um já registrado nunca sobrescreve: vira `discrepancies`, e só conflito real (não precisão diferente, igreja relacionada ou fonte tardia isolada) deixa a afirmação `contested`. Também avisa sobre dado pessoal, data futura, link do Drive e notas de bastidor. Grava só o que mudou e nunca apaga.
+4. **Validação.** Roda `pnpm episcopado:validate` e corrige até passar.
+5. **Entrega.** Faz o commit na branch de trabalho (ou `episcopado/<slug>`) e, quando pedido, abre um PR com:
 
    | Fato | Novo/Alterado | Status | Fonte | Trecho |
    |---|---|---|---|---|
 
    Mais a lista de dúvidas abertas e de lacunas novas.
 
-### 4.2 Skill `episcopado-pesquisar` (fase posterior)
+### 4.2 Skill `episcopado-pesquisar`
 
-Recebe uma pessoa ou jurisdição, lê o relatório de lacunas, busca fontes públicas pro que falta e entrega pelo mesmo fluxo de PR.
+Escolhe frentes a partir de `pnpm episcopado:pauta` (onde as cadeias de sagrantes dos bispos brasileiros se interrompem, o que falta em cada bispo, conflitos abertos), despacha agentes de pesquisa em paralelo com `layers/episcopado/pesquisa/INSTRUCOES.md`, consolida cada leva pelo fluxo acima e devolve ao mantenedor só o que exige olho humano (link direto e o que procurar).
+
+### 4.2.1 Skill `episcopado-verificar`
+
+Confere pesquisa de terceiros (texto de outra IA, listas em imagem, páginas de genealogia episcopal) afirmação por afirmação — fonte citada existe e diz aquilo, mesma pessoa, data do fato certo, cronologia — antes de ingerir.
 
 ### 4.3 Wikidata: o que a sondagem mostrou (out/2026)
 
@@ -301,11 +304,12 @@ layers/episcopado/
   data/{people,people/historical,jurisdictions,sources}/*.yaml
   lib/                  # schemas zod, datas EDTF, carga, validação, grafo (sem auto-import do Nuxt)
   schemas/              # JSON Schema gerado a partir do zod
-  scripts/              # validate, search, schemas, import-wikidata (futuro)
+  scripts/              # validate, search, schemas, pauta
+  pesquisa/             # consolidar.py, mapa.json, FORMATO.md, INSTRUCOES.md; entrada/ (levas, fora do git)
   composables/          # useEpiscopadoGrafo, useEpiscopadoBusca
   components/episcopado/ # GrafoSigma, PainelNo, BarraBusca, LinhaTempo, ArvoreJurisdicoes, FonteRef...
   pages/episcopado/...
-.claude/skills/episcopado-ingerir/SKILL.md
+.claude/skills/episcopado-{ingerir,pesquisar,verificar}/SKILL.md
 ```
 
 **Dependências novas:**

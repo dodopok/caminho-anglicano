@@ -22,7 +22,9 @@
     "test:all": "pnpm test:run && pnpm test:e2e",
     "episcopado:validate": "tsx layers/episcopado/scripts/validate.ts",
     "episcopado:search": "tsx layers/episcopado/scripts/search.ts",
-    "episcopado:schemas": "tsx layers/episcopado/scripts/schemas.ts"
+    "episcopado:schemas": "tsx layers/episcopado/scripts/schemas.ts",
+    "episcopado:pauta": "tsx layers/episcopado/scripts/pauta.ts",
+    "episcopado:consolidar": "python3 -I layers/episcopado/pesquisa/consolidar.py"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.81.1",

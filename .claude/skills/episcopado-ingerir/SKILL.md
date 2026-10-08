@@ -1,88 +1,107 @@
 ---
 name: episcopado-ingerir
-description: Alimenta a Rede do Episcopado Histórico (layers/episcopado) a partir de uma notícia, página web, PDF, texto colado ou fato relatado pelo usuário. Extrai ordenações (diaconato, presbiterato, episcopado), vínculos de clérigos com jurisdições, cismas e filiações entre jurisdições, sempre com fonte e trecho literal; deduplica contra a base, valida e abre um PR. Use quando o usuário passar um link/texto/fato sobre clérigos ou jurisdições anglicanas/episcopais, ou pedir para "ingerir", "adicionar à rede", "registrar sagração/ordenação".
+description: Alimenta a Rede do Episcopado Histórico (layers/episcopado) a partir de uma notícia, página web, PDF, post, vídeo, texto colado ou fato relatado pelo usuário (testemunho). Extrai ordenações, vínculos de clérigos com jurisdições, cismas e relações entre jurisdições, sempre com fonte e trecho literal; mescla na base YAML pelo consolidador (que casa nomes, deduplica fontes e marca divergências), valida e comita. Use quando o usuário passar link/texto/fato sobre clérigos ou jurisdições anglicanas/episcopais, ou pedir para "ingerir", "adicionar à rede", "registrar sagração/ordenação", "corrigir" um dado da rede.
 ---
 
 # Ingerir fonte na Rede do Episcopado Histórico
 
-A base vive em `layers/episcopado/data/` (YAML, um arquivo por entidade: `people/`, `jurisdictions/`, `sources/`). Chaves e valores de enum são em inglês; o conteúdo (nomes, biografias, trechos) fica no idioma original. A referência dos campos é `layers/episcopado/lib/schemas.ts`, e o modelo está explicado em `docs/EPISCOPADO.md` (seção 2).
+A base vive em `layers/episcopado/data/` (YAML, um arquivo por entidade: `people/`, `jurisdictions/`, `sources/`),
+validada pelos esquemas zod de `layers/episcopado/lib/schemas.ts` (modelo explicado em `docs/EPISCOPADO.md`).
+Chaves e enums em inglês; nomes, biografias e trechos no idioma original; respostas ao usuário em pt-BR.
+
+As ferramentas ficam em `layers/episcopado/pesquisa/`:
+- `FORMATO.md`: o formato JSON de uma *leva* (chaves em pt) — leia antes de escrever uma;
+- `consolidar.py` (`pnpm episcopado:consolidar`): mescla levas na base YAML existente;
+- `mapa.json`: nomes → ids quando o casamento automático não basta;
+- `INSTRUCOES.md`: instruções e técnicas de acesso para agentes de pesquisa;
+- `entrada/`: onde gravar as levas (fora do git).
 
 ## Princípios (inegociáveis)
 
-1. **Nada sem fonte.** Toda afirmação tem `sources: [{ source, quote }]`, e o `quote` é cópia LITERAL do texto da fonte, no idioma original. Nunca use memória própria como fonte.
-2. **Fato do usuário** ("eu estava lá", "sei que…") vira fonte `type: personal_testimony`:
-   - `author` = quem afirmou;
-   - `accessed` = hoje;
-   - `level: primary` se a pessoa presenciou, `secondary` se ouviu dizer.
-
-   Afirmações só com testemunho entram como `probable`.
-3. **Status:**
-   - `confirmed` = fonte primária (documento/site oficial da jurisdição, ata, carta pastoral) ou ≥2 secundárias independentes.
-   - `probable` = uma fonte secundária/terciária ou testemunho.
-   - `contested` = fontes divergem.
-4. **Nunca sobrescreva** um fato existente com outro conflitante. Adicione o valor novo em `discrepancies` (`field`, `value`, `sources`) e mude o status para `contested`. Se o fato novo *concorda*, só acrescente a fonte (e promova para `confirmed` se agora cumprir o critério).
-5. **Documentos genealógicos** (pôsteres de "linhagem apostólica" etc.) misturam lista de ocupantes de uma sé com linha de sagração. Aproveite apenas as frases explícitas do tipo "X sagrou Y". Uma lista de bispos de uma diocese **não** é linha de sagração. A parte apostólica antiga (Pedro, Paulo…) não entra; a sucessão histórica vem da Wikidata e de fontes acadêmicas.
-6. **Neutralidade.** Cismas, deposições e debates de validade são descritos sem tomar partido, atribuindo cada posição à sua fonte.
-7. Datas: `AAAA-MM-DD`, `AAAA-MM`, `AAAA`, `c.AAAA` ou `AAAA/AAAA`. Não complete o que a fonte não diz.
+1. **Nada sem fonte.** Toda afirmação tem fonte e `quote` LITERAL, no idioma original. Memória não é fonte.
+2. **Testemunho do usuário** ("eu estava lá", "foi o bispo X") é fonte `personal_testimony`: `level: primary` se
+   presenciou, `secondary` se ouviu dizer; `url: null`; `published` = data da conversa; `quote` com as palavras
+   dele. Corte do trecho o que for privado ou ambíguo (ex.: "começaram em sua casa" → "foi na casa de Douglas").
+   Correção do usuário a um fato já registrado: edite o YAML direto, substituindo o valor errado (pela leva ele
+   viraria só divergência, porque a base prevalece) e acrescente o testemunho como fonte; diga no commit.
+3. **Status:** `confirmed` = fonte primária ou ≥2 secundárias independentes; `probable` = uma secundária/terciária
+   ou só testemunho; `contested` = divergência real entre fontes (o consolidador decide; ver abaixo).
+4. **Só ministério.** Ordenações, cargos, vínculos, fundações, cismas. Nunca cônjuge, filhos, profissão secular,
+   formação acadêmica, saúde, endereço residencial — nem em notas nem em trechos. Decretos disciplinares de quem
+   não é bispo (laicização de padre etc.) ficam de fora.
+5. **Google Drive/Docs** nunca aparecem como link no site: cite pelo nome do documento (`url: null`). Documento
+   pessoal ou privado não entra.
+6. **Nada de fato futuro.** Convite para ordenação ainda por acontecer não entra; anote e registre depois que o
+   usuário confirmar que aconteceu.
+7. **Documentos genealógicos** (pôsteres de "linhagem apostólica") misturam lista de ocupantes de uma sé com linha
+   de sagração: aproveite só frases explícitas "X sagrou Y". A parte apostólica antiga não entra.
+8. **Neutralidade** em cismas, deposições e debates de validade: atribua cada posição à sua fonte.
+9. **Notas são lidas no site**: nada de "a base", "na base", "NOVO", "já registrado" — descreva o fato.
+10. Datas: `AAAA-MM-DD`, `AAAA-MM`, `AAAA`, `c.AAAA` ou `AAAA/AAAA`. Não complete o que a fonte não diz.
 
 ## Fluxo
 
 ### 1. Capturar a fonte
-- **URL:** abra com WebFetch (PDF: baixe para o scratchpad e leia; PDF que é imagem: renderize com `pdftoppm` e leia por partes). Antes, verifique se já existe: `pnpm episcopado:search --url <url>`.
-- **Arquivar:** tente `curl -sS -m 60 -o /dev/null -D - "https://web.archive.org/save/<url>"` e pegue o snapshot do header `content-location`/`location`. Se falhar (429, timeout), deixe `archive_url: null`; o validador lista como lacuna. Não insista mais de 2 vezes.
-- **Gravar:** crie `layers/episcopado/data/sources/<id>.yaml`, com id em slug curto (ex.: `anglican-ink-2018-uchoa-primaz`). A primeira linha é `# yaml-language-server: $schema=../../schemas/source.json`.
+- Já existe? `pnpm episcopado:search --url <url>` (e `pnpm episcopado:search "<nome>"` para as pessoas).
+- Abra com WebFetch ou `curl`. Instagram, Facebook, YouTube, WordPress e Blogger têm truques próprios
+  (embed do Instagram, `plugins/post.php` do Facebook, só `oembed` no YouTube, `wp-json`, feed JSON): veja
+  `layers/episcopado/pesquisa/INSTRUCOES.md`. PDF: baixe para o scratchpad (pasta própria) e use `pdftotext`;
+  PDF-imagem: `pdftoppm` e leia por partes. Vídeo que não abre: peça ao usuário a fala transcrita e o minuto.
+- Arquivar é opcional: `curl -sS -m 60 -o /dev/null -D - "https://web.archive.org/save/<url>"` (no máximo 2
+  tentativas; sem snapshot, `archive_url` fica vazio e o validador lista como lacuna).
 
-### 2. Extrair afirmações
-Liste para você mesmo (não grave ainda) cada afirmação atômica:
-- `ordinations` (na pessoa ordenada): `order` (`diaconate`/`presbyterate`/`episcopate`), `date`, `place`, `jurisdiction`, `ordained_by` **ou** `principal_consecrator` + `co_consecrators`, `office`.
-- `affiliations` (na pessoa): `jurisdiction`, `role`, `diocese`, `start`/`end`, `end_reason`.
-- `relations` (na jurisdição de origem): `schism_from`, `successor_of`, `merged_with`, `member_of`, `part_of`, `in_communion_with`, `broke_communion_with`, `recognized_by`, com `date`/`end` e `led_by`.
-- `events` (na pessoa): deposição, renúncia, excomunhão, reconciliação, conversão.
-- Dados biográficos: `birth`, `death`, `full_name`, `aliases`, `wikidata`.
+### 2. Escrever a leva
+Grave `layers/episcopado/pesquisa/entrada/<assunto>.json` no formato de `FORMATO.md`, uma afirmação atômica por
+fato. Cuidados que já custaram retrabalho:
+- **Nomes:** use o nome de exibição da base (`pnpm episcopado:search`). Mesmo nome não é mesma pessoa (Geraldo
+  Magela do Nascimento ≠ Geraldo Santos de Magela Neto): confira igreja, datas e cargos antes de juntar. Se o nome
+  casar com a pessoa errada ou com várias, acrescente a forma exata em `mapa.json` → `pessoas` (ou `jurisdicoes`,
+  `dioceses` com chave `"<id-igreja>|<nome da diocese>"`).
+- **Data de quem?** Confira se a data é da ordenação da pessoa ou de uma ordenação que ela presidiu.
+- **Segunda sagração** (condicional, reordenação) é afirmação separada com `"modo"`; sem isso ela é fundida com a
+  primeira e vira divergência de data/sagrante.
+- **Cronologia:** o sagrante tem de ter sido sagrado antes. Se não, falta uma sagração anterior (procure) ou a data
+  está errada.
+- **Papéis** usam as chaves com sublinhado (`bispo_diocesano`, `bispo_coadjutor`, `fundador`, `clero`, `membro`…);
+  outro texto vira `role: other` com a descrição.
+- **Eventos de morte:** o consolidador infere `death` quando a descrição começa falando de morte
+  ("falec", "morreu", "assassin" nos primeiros 60 caracteres). Para outros eventos, não comece a descrição assim;
+  em dúvida, passe `"tipo_evento"`.
+- `envolvidos` só com pessoas reais (o primeiro é o sujeito); paróquias, comissões e capelanias não são pessoas.
 
-### 3. Resolver entidades (evitar duplicatas)
-Para cada pessoa/jurisdição citada, rode `pnpm episcopado:search "<nome>"`. Teste variações: sem "Dom"/"Rev.", só sobrenome, com e sem acento.
-- **Achou com segurança:** use o id existente e acrescente o nome novo em `aliases` se for uma variação.
-- **Ambíguo:** não chute. Crie com id desambiguado (`joao-silva-1950`) e liste no PR como dúvida.
-- **Não existe:** crie o arquivo. Pessoas citadas só como ordenante também precisam de arquivo, mesmo mínimo (`id`, `name`).
-
-Convenções de id:
-- Pessoas: slug do nome usual (`miguel-uchoa`, `robinson-cavalcanti`).
-- Jurisdições: sigla em minúsculas (`iab`, `ieab`).
-- Dioceses: `ieab-diocese-recife`.
-
-Para jurisdições brasileiras, preencha `locator_slug` com o slug do Localizador quando existir: `ieab`, `iab`, `reb`, `iarb`, `iceb`, `iecb`, `ieub`, `tac`.
-
-### 4. Gravar
-Edite os YAML mantendo as listas em ordem cronológica. Cada arquivo novo começa com `# yaml-language-server: $schema=../../schemas/<person|jurisdiction|source>.json`; em `people/historical/`, use `../../../schemas/...`.
-
-### 5. Validar
-- Rode `pnpm episcopado:validate --warnings` e corrija **todos os erros**.
-- Revise os avisos que você mesmo introduziu: trecho faltando, duplicata, sagrante sagrado depois.
-- Rode `pnpm vitest run layers/episcopado`.
-
-### 6. Entregar
-- Crie a branch `episcopado/<slug-da-fonte>` a partir da `main` atualizada.
-- Faça o commit com a mensagem `feat(episcopado): <resumo> (fonte: <publicador>)`.
-- Faça o push e abra o PR (ferramentas `mcp__github__*`) com este corpo:
-
+### 3. Consolidar
+```bash
+pnpm episcopado:consolidar layers/episcopado/pesquisa/entrada/<assunto>.json          # simulação
+pnpm episcopado:consolidar layers/episcopado/pesquisa/entrada/<assunto>.json --write  # grava
 ```
-## Fonte
-<título> — <publicador>, <data>. <url> (arquivo: <snapshot ou "não arquivado">)
+(caminhos relativos à raiz do repositório). O consolidador:
+- parte da base YAML: casa nomes por nome, nome completo, siglas e `aliases`, depois `mapa.json`;
+- deduplica fontes por URL (e, sem URL, pelo título); `accessed` = hoje;
+- mescla afirmações equivalentes (ordenação: ordem + modo; vínculo: igreja + diocese + papel; relação: tipo +
+  alvo); a afirmação que já está na base continua principal, e a versão nova diverge em `discrepancies`;
+- só deixa `contested` o conflito real: não contestam a jurisdição anacrônica ou relacionada (parte de, sucessora),
+  o mesmo lugar escrito diferente, datas aninhadas ("2005" × "2005-03-26"), ±1 ano em vínculos, nem uma fonte
+  isolada e tardia contra ≥2 fontes, uma delas da época (regra do pôster);
+- grava só arquivos novos ou alterados e nunca apaga nada. Sem entradas, não muda nada.
 
-## Fatos
-| Fato | Novo/Alterado | Status | Trecho |
-|---|---|---|---|
-| Miguel Uchoa sagrado bispo em 2012-12-08 por Roger Ames | novo | contested | "..." |
+Leia o relatório da simulação antes de gravar:
+- `+ pessoa ⚠ parecido com: …` → provável duplicata: mapeie o nome em `mapa.json` e rode de novo;
+- afirmações que ficaram contestadas → confira se o conflito é real; se a fonte nova está errada, corrija a leva;
+- AVISOS: nota de bastidor, possível dado pessoal, data futura, link do Drive retirado, nome ambíguo, fonte sem URL.
 
-## Divergências com a base
-- ...
+Ajustes pontuais (corrigir um valor, apagar um trecho privado, trocar o status) podem ser feitos direto no YAML;
+o consolidador respeita o que encontra.
 
-## Dúvidas para revisão humana
-- ...
+### 4. Validar
+- `pnpm episcopado:validate --warnings`: zero erros; revise os avisos que você introduziu (trecho faltando,
+  duplicata, sagrante sagrado depois, morte inesperada).
+- `pnpm vitest run layers/episcopado` se mexeu em código.
+- `pnpm episcopado:pauta` mostra onde as cadeias de sucessão se interrompem (útil para ver se a leva fechou uma).
 
-## Lacunas novas
-- (saída relevante de `pnpm episcopado:validate --gaps`)
-```
-
-Se o usuário pedir só para gravar, sem PR, pare no passo 5 e mostre o diff.
+### 5. Entregar
+- Se já há uma branch de trabalho do episcopado nesta sessão, comite nela; senão, crie `episcopado/<slug>` a partir
+  da `main`. Não comite `layers/episcopado/auto-imports.d.ts` (gerado) nem as levas de `entrada/`.
+- Mensagem: `feat(episcopado): <resumo>` ou `fix(episcopado): <correção>`, citando as fontes no corpo.
+- PR só quando o usuário pedir; o corpo segue: Fonte · Fatos (tabela fato/novo-ou-alterado/status/trecho) ·
+  Divergências · Dúvidas para revisão humana · Lacunas novas.
+- Ao usuário: o que entrou, o que ficou contestado e por quê, e o que ele pode confirmar (com link direto).
