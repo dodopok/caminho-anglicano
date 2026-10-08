@@ -2,24 +2,65 @@
 id: eloy-jose-lopes-guimaraes
 name: Eloy José Lopes Guimarães
 full_name: Eloy José Lopes Guimarães
+aliases:
+- GUIMARAES, ELOY JOSE LOPES
+birth:
+  date: '1927-12-05'
+  sources:
+  - source: cd1965
+    quote: b Bage Braz 5 Dec 27
+  - source: cd1968
+    quote: GUIMARAES, Eloy Jose Lopes (SwBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Sudoeste do Brasil (SwBra) segundo o Clerical Directory 1965. Nascido em Bagé,
+  Brasil (1927-12-05). Ordenado diácono em set/1953. Transferido para a Igreja Episcopal do Brasil em 25/04/1965
+  (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Bage Braz 5 Dec 27
+- source: cd1968
+  quote: GUIMARAES, Eloy Jose Lopes (SwBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1953'
-  jurisdiction: ieab
-  status: probable
+  date: 1953-09
+  jurisdiction: dmsob
+  ordained_by: egmont-krischke
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Sep 53 Bp Krischke
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1953 - … Eloy José Lopes Guimarães
     page: '370'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Krischke'. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
 affiliations:
+- jurisdiction: dmsob
+  role: clergy
+  start: '1953'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: GUIMARAES, ELOY JOSE LOPES (SwBra)
+  - source: cd1965
+    quote: D Sep 53 Bp Krischke
+  - source: cd1968
+    quote: GUIMARAES, Eloy Jose Lopes (SwBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1953'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: GUIMARAES, Eloy Jose Lopes (SwBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1953 - … Eloy José Lopes Guimarães
     page: '370'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (SwBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jesus-de-sousa-bezerra
+name: Jesus de Sousa Bezerra
+full_name: Jesus de Sousa Bezerra
+aliases:
+- BEZERRA, JESUS de SOUSA
+birth:
+  date: '1927-02-27'
+  sources:
+  - source: cd1965
+    quote: b 27 Feb 27 Cangussu RGS Brazil
+  - source: cd1968
+    quote: BEZERRA, Jesus de Sousa (SBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em Cangussu,
+  RGS, Brasil (1927-02-27). Ordenado diácono em mai/1958 e presbítero em ago/1960. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b 27 Feb 27 Cangussu RGS Brazil
+- source: cd1968
+  quote: BEZERRA, Jesus de Sousa (SBra) Trans to Brazil Ch 25 Apr 65.
+ordinations:
+- order: diaconate
+  date: 1958-05
+  jurisdiction: dmsb
+  ordained_by: egmont-krischke
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D May 58 Bp Krischke P Aug 60 Bp Simoes
+  notes: 'Ordenante no diretório: ''Bp Krischke''.'
+- order: presbyterate
+  date: 1960-08
+  jurisdiction: dmsb
+  ordained_by: plinio-lauer-simoes
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D May 58 Bp Krischke P Aug 60 Bp Simoes
+  notes: 'Ordenante no diretório: ''Bp Simoes''.'
+affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: '1958'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: BEZERRA, JESUS de SOUSA (SBra)
+  - source: cd1965
+    quote: D May 58 Bp Krischke P Aug 60 Bp Simoes
+  - source: cd1968
+    quote: BEZERRA, Jesus de Sousa (SBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
+- jurisdiction: ieab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: BEZERRA, Jesus de Sousa (SBra) Trans to Brazil Ch 25 Apr 65.
+  notes: >-
+    Transferência do distrito missionário (SBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965.

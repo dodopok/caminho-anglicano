@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: david-deaderick-wendel-jr
+name: David Deaderick Wendel Jr.
+full_name: David Deaderick Wendel Jr.
+aliases:
+- WENDEL, DAVID DEADERICK Jr
+birth:
+  date: '1930-07-20'
+  sources:
+  - source: cd1965
+    quote: b Montgomery Ala 20 Jul 30
+  - source: cd1968
+    quote: WENDEL, David Deaderick Jr (CBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em Montgomery,
+  Alabama, EUA (1930-07-20). Ordenado diácono em jun/1959 e presbítero em jun/1960. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Montgomery Ala 20 Jul 30
+- source: cd1968
+  quote: WENDEL, David Deaderick Jr (CBra) Trans to Brazil Ch 25 Apr 65.
+ordinations:
+- order: diaconate
+  date: 1959-06
+  jurisdiction: null
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Jun 59 Bp Murray P Jun 60 Bp Chilton for Ala
+  notes: >-
+    Ordenante no diretório: 'Bp Murray'. Ordenado por bispo fora dos distritos brasileiros; jurisdição não atribuída.
+    Ordenante no diretório: "Bp Murray" (bispo de fora do Brasil, não identificado na base).
+- order: presbyterate
+  date: 1960-06
+  jurisdiction: null
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Jun 59 Bp Murray P Jun 60 Bp Chilton for Ala
+  notes: >-
+    Ordenante no diretório: 'Bp Chilton for Ala for Ala'. Ordenado por bispo fora dos distritos brasileiros; jurisdição
+    não atribuída. Ordenante no diretório: "Bp Chilton" (bispo de fora do Brasil, não identificado na base).
+affiliations:
+- jurisdiction: dmcb
+  role: clergy
+  start: '1959'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: WENDEL, DAVID DEADERICK Jr (CBra)
+  - source: cd1965
+    quote: D Jun 59 Bp Murray P Jun 60 Bp Chilton for Ala
+  - source: cd1968
+    quote: WENDEL, David Deaderick Jr (CBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
+- jurisdiction: ieab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: WENDEL, David Deaderick Jr (CBra) Trans to Brazil Ch 25 Apr 65.
+  notes: >-
+    Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965.

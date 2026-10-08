@@ -2,36 +2,73 @@
 id: anselmo-joao-stein
 name: Anselmo João Stein
 full_name: Anselmo João Stein
+aliases:
+- STEIN, ANSELMO JOAO
 biography: >-
-  Clérigo da Igreja Episcopal do Brasil presente no primeiro concílio da Diocese Setentrional (1976), ligado à Paróquia
-  de Santa Maria, Belém (PA).
+  Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Ordenado diácono em
+  nov/1958 e presbítero em out/1959. Transferido para a Igreja Episcopal do Brasil em 25/04/1965 (Clerical Directory
+  1968).
 sources:
-- source: costa2021
-  quote: >-
-    CLÉRIGOS: Dom Edmund Knox Sherrill, bispo da Diocese Setentrional e presidente do concílio … Anselmo João Stein,
-    da Paróquia de Santa Maria, Belém, Pará
-  page: '529'
+- source: cd1965
+  quote: STEIN, ANSELMO JOAO (SBra)
+- source: cd1968
+  quote: STEIN, Anselmo Joao (SBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1958'
-  jurisdiction: ieab
-  status: probable
+  date: 1958-11
+  jurisdiction: dmsb
+  ordained_by: egmont-krischke
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Nov 58 P Oct
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1958 - … Anselmo João Stein
     page: '371'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Krischke'. Colunas do OCR intercaladas: "D Nov 58 P Oct" numa linha e "59 Bp Krischke"
+    na seguinte; o ano 59 do presbiterato é reconstruído por essa continuidade. Ano tirado da lista do clero nacional
+    por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1959-10
+  jurisdiction: dmsb
+  ordained_by: egmont-krischke
+  status: probable
+  sources:
+  - source: cd1965
+    quote: 59 Bp Krischke. In-c Chr Redeem Araranqua
+  notes: >-
+    Ordenante no diretório: 'Bp Krischke'. Colunas do OCR intercaladas: "D Nov 58 P Oct" numa linha e "59 Bp Krischke"
+    na seguinte; o ano 59 do presbiterato é reconstruído por essa continuidade.
 affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: '1958'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: STEIN, ANSELMO JOAO (SBra)
+  - source: cd1965
+    quote: D Nov 58 P Oct
+  - source: cd1968
+    quote: STEIN, Anselmo Joao (SBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1958'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: STEIN, Anselmo Joao (SBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1958 - … Anselmo João Stein
     page: '371'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (SBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar

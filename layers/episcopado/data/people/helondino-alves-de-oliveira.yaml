@@ -2,27 +2,78 @@
 id: helondino-alves-de-oliveira
 name: Helondino Alves de Oliveira
 full_name: Helondino Alves de Oliveira
+aliases:
+- OLIVEIRA, HELONDINO ALVES de
+birth:
+  date: '1913-08-29'
+  sources:
+  - source: cd1965
+    quote: b Piratini RGS Braz 29 Aug 13
+  - source: cd1968
+    quote: OLI VEI RA, Helondino Alvesde (SwBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Sudoeste do Brasil (SwBra) segundo o Clerical Directory 1965. Nascido em Piratini,
+  RGS, Brasil (1913-08-29). Ordenado diácono em nov/1954 e presbítero em dez/1956. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Piratini RGS Braz 29 Aug 13
+- source: cd1968
+  quote: OLI VEI RA, Helondino Alvesde (SwBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1954'
-  jurisdiction: ieab
+  date: 1954-11
+  jurisdiction: dmsob
+  ordained_by: egmont-krischke
   status: probable
   sources:
+  - source: cd1965
+    quote: 1} Nov 54 Bp Krischke P Dec 56 Bp Simoes
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1954 - … Helondino Alves de Oliveira
     page: '370'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Krischke'. O marcador "D" do diaconato está ilegível no OCR ("1}"); a data "Nov
+    54 Bp Krischke" é lida como diaconato por vir antes do presbiterato (P Dec 56). Ano tirado da lista do clero
+    nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1956-12
+  jurisdiction: dmsob
+  ordained_by: plinio-lauer-simoes
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: 1} Nov 54 Bp Krischke P Dec 56 Bp Simoes
+  notes: 'Ordenante no diretório: ''Bp Simoes''.'
 affiliations:
+- jurisdiction: dmsob
+  role: clergy
+  start: '1954'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: OLIVEIRA, HELONDINO ALVES de (SwBra)
+  - source: cd1965
+    quote: 1} Nov 54 Bp Krischke P Dec 56 Bp Simoes
+  - source: cd1968
+    quote: OLI VEI RA, Helondino Alvesde (SwBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1954'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: OLI VEI RA, Helondino Alvesde (SwBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1954 - … Helondino Alves de Oliveira
     page: '370'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (SwBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dso

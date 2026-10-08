@@ -2,6 +2,26 @@
 id: jose-brasiliense-leao
 name: José Brasiliense Leão
 full_name: José Brasiliense Leão
+aliases:
+- Jose Braziliense Leao
+- José Braziliense Leão
+- LEAO, JOSE BRAZILIENSE
+birth:
+  date: '1884-05-27'
+  sources:
+  - source: cd1965
+    quote: LEAO, JOSE BRAZILIENSE (SBra) born 27 May 84-died 10
+death:
+  date: '1962-11-10'
+  sources:
+  - source: cd1965
+    quote: LEAO, JOSE BRAZILIENSE (SBra) born 27 May 84-died 10
+biography: >-
+  Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em 1884-05-27.
+  Consta na necrologia da edição de 1965 (falecimento em 1962-11-10).
+sources:
+- source: cd1965
+  quote: LEAO, JOSE BRAZILIENSE (SBra) born 27 May 84-died 10
 ordinations:
 - order: diaconate
   date: '1908'
@@ -23,3 +43,12 @@ affiliations:
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1908 - … José Brasiliense Leão
     page: '369'
   notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: dmsb
+  role: clergy
+  end: '1962-11-10'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: LEAO, JOSE BRAZILIENSE (SBra) born 27 May 84-died 10
+  notes: Sem dados de ordenação (apenas necrologia).

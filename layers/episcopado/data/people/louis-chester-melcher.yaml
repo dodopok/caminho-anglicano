@@ -5,11 +5,18 @@ full_name: Louis Chester Melcher
 aliases:
 - Bishop Melcher
 - Louis C. Melcher
+- MELCHER, Rt Rev LOUIS CHESTER
 - Rt. Rev. Louis C. Melcher
 - bispo Melcher
 birth:
   date: '1898-08-03'
   sources:
+  - source: cd1965
+    quote: Wis 3 Aug 98 s Frank Robert Melcher & Edna (Walters).
+  - source: cd1965
+    quote: NC Retired Bp of CBra 58-, Min Village Chap 59-. b Baraboo
+  - source: cd1968
+    quote: MELCHER, Rt Rev Louis Chester b 3 Aug 9 8 - d 21 Sep 65.
   - source: ens-xxxvi-7
     quote: >-
       In 1948 he was consecrated Bishop Coadjutor of Southern Brazil and was Diocesan from 1949-50. He then became
@@ -37,6 +44,12 @@ birth:
 death:
   date: '1965-09-21'
   sources:
+  - source: cd1965
+    quote: Wis 3 Aug 98 s Frank Robert Melcher & Edna (Walters).
+  - source: cd1965
+    quote: NC Retired Bp of CBra 58-, Min Village Chap 59-. b Baraboo
+  - source: cd1968
+    quote: MELCHER, Rt Rev Louis Chester b 3 Aug 9 8 - d 21 Sep 65.
   - source: ens-xxxvi-7
     quote: >-
       In 1948 he was consecrated Bishop Coadjutor of Southern Brazil and was Diocesan from 1949-50. He then became
@@ -57,24 +70,36 @@ death:
     quote: The Rt. Rev. Louis Chester Melcher, retired Bishop of Central Brazil, died Sept. 21.
 wikidata: Q67784953
 biography: >-
-  Reitor da Trinity Church, Columbia (SC); eleito bispo coadjutor do Sul do Brasil em 1947, sagrado em 05/02/1948;
-  diocesano do Sul do Brasil 1949-50 e depois bispo do Brasil Central até 1958.
+  Bispo ligado ao Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em Baraboo,
+  Wisconsin, EUA (1898-08-03). Sagrado em 1948-02-05. Falecido em 1965-09-21 (Clerical Directory 1968).
 sources:
-- source: ens-xxxvi-7
-  quote: >-
-    In 1948 he was consecrated Bishop Coadjutor of Southern Brazil and was Diocesan from 1949-50. He then became
-    Bishop of Central Brazil, a position he occupied until his retirement in 1958.
-- source: wp-en-melcher
-  quote: Louis Chester Melcher (August 3, 1898 - September 21, 1965)
-- source: wd-q67784953
-  quote: Louis Chester Melcher | missionary bishop of the Anglican Episcopal Church
+- source: cd1965
+  quote: Wis 3 Aug 98 s Frank Robert Melcher & Edna (Walters).
+- source: cd1965
+  quote: NC Retired Bp of CBra 58-, Min Village Chap 59-. b Baraboo
+- source: cd1968
+  quote: MELCHER, Rt Rev Louis Chester b 3 Aug 9 8 - d 21 Sep 65.
 ordinations:
+- order: diaconate
+  date: 1924-10
+  jurisdiction: null
+  ordained_by: james-craik-morris
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Oct 24 P Sep 25 Bp J C Morris,
+  notes: >-
+    Ordenante no diretório conforme o verbete. "Bp J C Morris": nome completo não dado no verbete; o verbete cita
+    "Chapl to Bp & Can S Luke's Cathd Ancon PZ 25-26". Ordenado por bispo fora dos distritos brasileiros; jurisdição
+    não atribuída.
 - order: presbyterate
   date: 1925-09
   jurisdiction: tec
   ordained_by: james-craik-morris
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Oct 24 P Sep 25 Bp J C Morris,
   - source: ieablac-cd1947
     quote: D—Oct., 1924, P—Sept., 1925, Bp. J. C. Morris.
   - source: testemunho-mantenedor-2026-10-08-jc-morris
@@ -83,10 +108,12 @@ ordinations:
     quote: Foi ordenado ao sacerdócio em 1925.
     page: '71'
   notes: >-
-    O diretório diz só 'Bp. J. C. Morris'; a identificação com James Craik Morris (Panama Canal Zone) é inferência
-    do pesquisador, apoiada no mesmo verbete ('Chapl. to Bp. and Can. S. Luke's Cathd., Ancon, P.Z., 1925-26').
-    Base tem presbiterato 1925 sem ordenante. O diretório dá o ordenante como 'Bp. J. C. Morris'; o mantenedor identifica-o
-    como o bispo James Craik Morris (EUA).
+    Ordenante no diretório conforme o verbete. "Bp J C Morris": nome completo não dado no verbete; o verbete cita
+    "Chapl to Bp & Can S Luke's Cathd Ancon PZ 25-26". Ordenado por bispo fora dos distritos brasileiros; jurisdição
+    não atribuída. O diretório diz só 'Bp. J. C. Morris'; a identificação com James Craik Morris (Panama Canal Zone)
+    é inferência do pesquisador, apoiada no mesmo verbete ('Chapl. to Bp. and Can. S. Luke's Cathd., Ancon, P.Z.,
+    1925-26'). Base tem presbiterato 1925 sem ordenante. O diretório dá o ordenante como 'Bp. J. C. Morris'; o mantenedor
+    identifica-o como o bispo James Craik Morris (EUA).
 - order: episcopate
   date: '1948-02-05'
   place: Trinity Church, Columbia, Carolina do Sul (EUA)
@@ -98,6 +125,8 @@ ordinations:
   - john-gravatt
   status: confirmed
   sources:
+  - source: cd1965
+    quote: Con Bp Coadj of SBra 5 Feb 48.
   - source: wit-1948-02-12
     quote: >-
       Bishop Middle- ton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be the
@@ -132,26 +161,30 @@ ordinations:
     quote: Foi sagrado ao episcopado em 05 de fevereiro de 1948, sendo enviado para trabalhar no Brasil.
     page: '71'
   notes: >-
-    Sagrado bispo coadjutor do Sul do Brasil. Apresentantes: bispos Jackson (Louisiana) e Carruthers (South Carolina);
-    litanista Keeler (Minnesota); epistoleiro Phillips (SW Virginia); evangelista Wright (East Carolina); pregador
-    Middleton Barnwell (Georgia) — Living Church 15/02/1948. A Wikipédia EN (artigo Melcher) cita Living Church
-    de '15/02/1947' — erro de ano. Pôster: Henry Knox Sherrill "teve papel decisivo ao consagrar missionários como
-    Louis Chester Melcher" — data, local e cargo CONFIRMADOS por fonte primária (The Witness, 12/02/1948), que não
-    nomeia o sagrante; Sherrill como sagrante principal (com Dandridge e Gravatt) só pela lista de sucessão da Wikipédia
-    — PROVÁVEL. Sherrill era Presiding Bishop em 1948. Observação: a lista da Wikipédia o põe como "I Central Brazil",
-    mas na sagração era coadjutor do Sul do Brasil. Eleito em 1948 'primeiro bispo coadjutor do Brasil'. Sagrantes
-    não informados.
+    Sagração: 'Bp Coadj of SBra' no verbete. O diretório não nomeia sagrante nem local. Verbete de bispo coadjutor
+    ("Coadj"); cargo não classificado. Sagrado bispo coadjutor do Sul do Brasil. Apresentantes: bispos Jackson (Louisiana)
+    e Carruthers (South Carolina); litanista Keeler (Minnesota); epistoleiro Phillips (SW Virginia); evangelista
+    Wright (East Carolina); pregador Middleton Barnwell (Georgia) — Living Church 15/02/1948. A Wikipédia EN (artigo
+    Melcher) cita Living Church de '15/02/1947' — erro de ano. Pôster: Henry Knox Sherrill "teve papel decisivo
+    ao consagrar missionários como Louis Chester Melcher" — data, local e cargo CONFIRMADOS por fonte primária (The
+    Witness, 12/02/1948), que não nomeia o sagrante; Sherrill como sagrante principal (com Dandridge e Gravatt)
+    só pela lista de sucessão da Wikipédia — PROVÁVEL. Sherrill era Presiding Bishop em 1948. Observação: a lista
+    da Wikipédia o põe como "I Central Brazil", mas na sagração era coadjutor do Sul do Brasil. Eleito em 1948 'primeiro
+    bispo coadjutor do Brasil'. Sagrantes não informados.
 affiliations:
 - jurisdiction: dmsb
   role: bishop
-  start: '1948'
-  status: probable
+  start: '1948-02-05'
+  end: '1949'
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: Bp Coadj of SBra 48-49
   - source: costa2021
     quote: >-
       Em 1948, o reverendo Louis Chester Melcher55 foi eleito para ser o primeiro bispo coadjutor do Brasil.
     page: '71'
-  notes: 'Local/função: Brasil (coadjutor).'
+  notes: 'Período do cargo conforme o verbete. Local/função: Brasil (coadjutor).'
 - jurisdiction: dmsb
   role: bishop
   diocese: southern-brazil
@@ -167,6 +200,16 @@ affiliations:
       Bishop of the third diocese will be the Rt. Rev. Louis C. Melcher, who suc- seeded Bishop Thomas as diocesan
       a few Jays earlier upon the acceptance of Bish- yp Thomas' resignation by the House of Bishops.
   notes: 'Local: coadjutor 1948-49, diocesano 1949-50.'
+- jurisdiction: dmsb
+  role: diocesan_bishop
+  start: '1949'
+  end: '1950'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: Bp of SBra 49-50
+  notes: Período do cargo conforme o verbete.
 - jurisdiction: dmcb
   role: diocesan_bishop
   start: '1950'
@@ -174,6 +217,8 @@ affiliations:
   end_reason: retirement
   status: confirmed
   sources:
+  - source: cd1965
+    quote: Bp of CBra 50-58.
   - source: ens-xxxvi-7
     quote: He then became Bishop of Central Brazil, a position he occupied until his retirement in 1958.
   - source: lc-1958-10-19
@@ -203,7 +248,7 @@ affiliations:
   - source: costa2021
     quote: Em 1959, Melcher entregou o comando da Diocese ao bispo Sherrill.
     page: '75'
-  notes: 'Local: Rio de Janeiro.'
+  notes: 'Período do cargo conforme o verbete. Local: Rio de Janeiro.'
   discrepancies:
   - field: end_reason
     value: resignation
@@ -232,6 +277,15 @@ affiliations:
       quote: Em 1959, Melcher entregou o comando da Diocese ao bispo Sherrill.
       page: '75'
 events:
+- type: death
+  date: '1965-09-21'
+  description: >-
+    Falecimento de Louis Chester Melcher, bispo aposentado de CBra (não consta transferência para a Igreja Episcopal
+    do Brasil).
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: MELCHER, Rt Rev Louis Chester b 3 Aug 9 8 - d 21 Sep 65.
 - type: other
   date: 1947-11
   description: >-

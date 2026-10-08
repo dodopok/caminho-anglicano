@@ -1,10 +1,26 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: carl-henry-clement-sergel
 name: Carl Henry Clement Sergel
-biography: Um dos seis brasileiros comemorados como fundadores da IEAB.
+full_name: Carl Henry Clement Sergel
+aliases:
+- Charles Henry Clement Sergel
+- SERGEL, CHARLES HENRY CLEMENT
+birth:
+  date: '1873-05-07'
+  sources:
+  - source: cd1965
+    quote: SERGEL, CHARLES HENRY CLEMENT (CBra) born 7 May 7 3 died 6 Oct 63
+death:
+  date: '1963-10-06'
+  sources:
+  - source: cd1965
+    quote: SERGEL, CHARLES HENRY CLEMENT (CBra) born 7 May 7 3 died 6 Oct 63
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em 1873-05-07.
+  Consta na necrologia da edição de 1965 (falecimento em 1963-10-06).
 sources:
-- source: satucket-pioneers
-  quote: Júlio de Almeida Coelho, and Carl Henry Clement Sergel)
+- source: cd1965
+  quote: SERGEL, CHARLES HENRY CLEMENT (CBra) born 7 May 7 3 died 6 Oct 63
 ordinations:
 - order: diaconate
   date: '1903'
@@ -16,3 +32,13 @@ ordinations:
     page: '369'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: dmcb
+  role: clergy
+  end: '1963-10-06'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: SERGEL, CHARLES HENRY CLEMENT (CBra) born 7 May 7 3 died 6 Oct 63
+  notes: Sem dados de ordenação (apenas necrologia).

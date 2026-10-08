@@ -1,7 +1,78 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: phillip-getchell
 name: Phillip Getchell
+full_name: Phillip Getchell
+aliases:
+- GETCHELL, PHILIP ARMOUR
+- Philip Armour Getchell
+birth:
+  date: '1934-01-27'
+  sources:
+  - source: cd1965
+    quote: b Medford Ore 27 Jan 34
+  - source: cd1968
+    quote: GETCHELL, Philip Armour (CBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em Medford,
+  Oregon, EUA (1934-01-27). Ordenado diácono em jun/1959 e presbítero em dez/1959. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Medford Ore 27 Jan 34
+- source: cd1968
+  quote: GETCHELL, Philip Armour (CBra) Trans to Brazil Ch 25 Apr 65.
+ordinations:
+- order: diaconate
+  date: 1959-06
+  jurisdiction: null
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Jun 59 P Dec 59 Bp Carman
+  notes: >-
+    Ordenante no diretório: 'Bp Carman'. Ordenado por bispo fora dos distritos brasileiros; jurisdição não atribuída.
+    Ordenante no diretório: "Bp Carman" (bispo de fora do Brasil, não identificado na base).
+- order: presbyterate
+  date: 1959-12
+  jurisdiction: null
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Jun 59 P Dec 59 Bp Carman
+  notes: >-
+    Ordenante no diretório: 'Bp Carman'. Ordenado por bispo fora dos distritos brasileiros; jurisdição não atribuída.
+    Ordenante no diretório: "Bp Carman" (bispo de fora do Brasil, não identificado na base).
 affiliations:
+- jurisdiction: dmcb
+  role: clergy
+  start: '1959'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: GETCHELL, PHILIP ARMOUR (CBra)
+  - source: cd1965
+    quote: D Jun 59 P Dec 59 Bp Carman
+  - source: cd1968
+    quote: GETCHELL, Philip Armour (CBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
+- jurisdiction: ieab
+  role: clergy
+  end: '1975'
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: GETCHELL, Philip Armour (CBra) Trans to Brazil Ch 25 Apr 65.
+  - source: costa2021
+    quote: >-
+      Nesse período os reverendos norte-americanos John Said e Philip Getchell trabalharam como có-párocos nos últimos
+      anos. Este último permaneceu à frente da Igreja no Recife até 1975.
+    page: '172'
+  notes: >-
+    Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Local: Paróquia da Trindade,
+    Recife. Missionário norte-americano.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -15,14 +86,3 @@ affiliations:
       e ingleses, até março de 1975
     page: '295'
   notes: Missionário americano na congregação estrangeira da Paróquia da Santíssima Trindade, Recife.
-- jurisdiction: ieab
-  role: clergy
-  end: '1975'
-  status: probable
-  sources:
-  - source: costa2021
-    quote: >-
-      Nesse período os reverendos norte-americanos John Said e Philip Getchell trabalharam como có-párocos nos últimos
-      anos. Este último permaneceu à frente da Igreja no Recife até 1975.
-    page: '172'
-  notes: 'Local: Paróquia da Trindade, Recife. Missionário norte-americano.'

@@ -2,24 +2,65 @@
 id: carlos-getulio-hallberg
 name: Carlos Getúlio Hallberg
 full_name: Carlos Getúlio Hallberg
+aliases:
+- HALLBERG, Carlos Getulio
+birth:
+  date: '1942-08-22'
+  sources:
+  - source: cd1965
+    quote: b Cruz Alta RGS Brazil 22 Aug 42
+  - source: cd1968
+    quote: HALLBERG, Carlos Getulio (SwBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Sudoeste do Brasil (SwBra) segundo o Clerical Directory 1965. Nascido em Cruz
+  Alta, RGS, Brasil (1942-08-22). Ordenado diácono em dez/1964. Transferido para a Igreja Episcopal do Brasil em
+  25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Cruz Alta RGS Brazil 22 Aug 42
+- source: cd1968
+  quote: HALLBERG, Carlos Getulio (SwBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1964'
-  jurisdiction: ieab
-  status: probable
+  date: 1964-12
+  jurisdiction: dmsob
+  ordained_by: plinio-lauer-simoes
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Dec 64 Bp Simoes
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1964 - … Carlos Getúlio Hallberg
     page: '371'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Simoes'. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
 affiliations:
+- jurisdiction: dmsob
+  role: clergy
+  start: '1964'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: HALLBERG,Carlos Getulio (SwBra)
+  - source: cd1965
+    quote: D Dec 64 Bp Simoes
+  - source: cd1968
+    quote: HALLBERG, Carlos Getulio (SwBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1964'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: HALLBERG, Carlos Getulio (SwBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1964 - … Carlos Getúlio Hallberg
     page: '371'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (SwBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

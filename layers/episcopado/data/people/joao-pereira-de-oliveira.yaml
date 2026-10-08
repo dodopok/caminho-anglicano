@@ -2,16 +2,62 @@
 id: joao-pereira-de-oliveira
 name: João Pereira de Oliveira
 full_name: João Pereira de Oliveira
+aliases:
+- OLIVEIRA, JOAO PEREIRA de
+birth:
+  date: '1916-06-22'
+  sources:
+  - source: cd1965
+    quote: b Cachoeira do Sul RGS Braz 22 Jun 16
+  - source: cd1968
+    quote: OLIVE IRA, Joao Pereira de (SwBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Sudoeste do Brasil (SwBra) segundo o Clerical Directory 1965. Nascido em Cachoeira
+  do Sul, RGS, Brasil (1916-06-22). Antes ordenado na Igreja Romana; recebido em dez/1958. Transferido para a Igreja
+  Episcopal do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Cachoeira do Sul RGS Braz 22 Jun 16
+- source: cd1968
+  quote: OLIVE IRA, Joao Pereira de (SwBra) Trans to Brazil Ch 25 Apr 65.
 affiliations:
 - jurisdiction: ieab
   role: clergy
   start: '1958'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: OLIVE IRA, Joao Pereira de (SwBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: >-
       CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1958 - … João Pereira de Oliveira (ex-padre, admitido)
     page: '371'
   notes: >-
-    Ex-padre (católico romano) admitido ao clero em 1958, segundo a lista do clero nacional; o livro não registra
-    ordenação diaconal na IEAB.
+    Transferência do distrito missionário (SwBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Ex-padre (católico romano)
+    admitido ao clero em 1958, segundo a lista do clero nacional; o livro não registra ordenação diaconal na IEAB.
+- jurisdiction: dmsob
+  role: clergy
+  start: 1958-12
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: OLIVEIRA, JOAO PEREIRA de (SwBra)
+  - source: cd1965
+    quote: D & P Roman Ch, Rec Dec 58
+  - source: cd1968
+    quote: OLIVE IRA, Joao Pereira de (SwBra) Trans to Brazil Ch 25 Apr 65.
+  notes: >-
+    Início = recepção (Rec Dec 58) por vir de ordens da Igreja Romana; sem diaconato anglicano registrado.
+events:
+- type: other
+  date: 1958-12
+  description: >-
+    João Pereira de Oliveira, com ordens diaconal e presbiteral na Igreja Romana ("D & P Roman Ch"), foi recebido
+    ("Rec") em dezembro de 1958; verbete no distrito SwBra.
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D & P Roman Ch, Rec Dec 58

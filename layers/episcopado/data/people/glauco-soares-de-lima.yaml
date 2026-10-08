@@ -7,11 +7,16 @@ aliases:
 - Dom Glauco Lima
 - Glauco Soares
 - Glauco Soares Lima
+- LIMA, GLAUCO SOARES de
 - bispo Glauco
 - dom Glauco
 birth:
   date: '1934-01-28'
   sources:
+  - source: cd1965
+    quote: b Pelotas RGS Braz 28 Jan 34
+  - source: cd1968
+    quote: LIMA, Glauco Soares de (SwBra) Trans to Brazil Ch 25 Apr 65.
   - source: costa2021
     quote: Glauco Soares de Lima nasceu em 28 de janeiro de 1934, em Pelotas.
   - source: costa2021
@@ -44,21 +49,24 @@ death:
       page: '96'
 wikidata: Q21020068
 biography: >-
-  Bispo de Sao Paulo (1990-2002) e primaz (1993-2003); sagrante principal de Robinson Cavalcanti, Orlando, Celso
-  Franco, Hiroshi Ito e Mauricio Andrade; em 2013 aderiu ao Movimento Anglicano no Brasil.
+  Clérigo do Distrito Missionário do Sudoeste do Brasil (SwBra) segundo o Clerical Directory 1965. Nascido em Pelotas,
+  RGS, Brasil (1934-01-28). Ordenado diácono em nov/1956 e presbítero em fev/1958. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
 sources:
-- source: costa2021
-  quote: Glauco Soares de Lima nasceu em 28 de janeiro de 1934, em Pelotas.
-- source: costa2021
-  quote: Faleceu em 26 de dezembro de 2017.
+- source: cd1965
+  quote: b Pelotas RGS Braz 28 Jan 34
+- source: cd1968
+  quote: LIMA, Glauco Soares de (SwBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
   date: '1956-11-30'
   place: Paróquia da Ascensão, Porto Alegre
-  jurisdiction: dmsb
+  jurisdiction: dmsob
   ordained_by: egmont-krischke
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Nov 56 Bp Krischke P Feb 58 Bp SimSes
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1956 - … Glauco Soares de Lima
     page: '371'
@@ -73,14 +81,26 @@ ordinations:
       Foi ordenado diácono em 30 de novembro de 1956, na Paróquia da Ascensão, em Porto Alegre, pelo bispo Egmont
       Machado Krischke.
     page: '99'
+  discrepancies:
+  - field: jurisdiction
+    value: dmsb
+    sources:
+    - source: costa2021
+      quote: >-
+        Foi ordenado diácono em 30 de novembro de 1956, na Paróquia da Ascensão, em Porto Alegre, pelo bispo Egmont
+        Machado Krischke.
+      page: '99'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Krischke'. OCR: "SimSes" = Simões. Ano tirado da lista do clero nacional por ordem
+    de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
   date: 1958-02
-  jurisdiction: null
+  jurisdiction: dmsob
   ordained_by: plinio-lauer-simoes
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Nov 56 Bp Krischke P Feb 58 Bp SimSes
   - source: kickhofel-1995
     quote: >-
       O reverendo Glauco Soares de Lima foi eleito bispo coadjutor com direito a sucessão em concílio extraordinário
@@ -90,8 +110,9 @@ ordinations:
   - source: ieablac-cd1959
     quote: D Nov 56 Bp Krischke P Feb 58 Bp Simdes.
   notes: >-
-    OCR 'Simdes' = Simões (bispo Plínio Lauer Simões, que à época era bispo de Southwestern/Central Brazil; ele
-    foi sagrado em 1956). A base tem 1958 sem ordenante. Confirma diaconato por Krischke (nov/1956) já na base.
+    Ordenante no diretório: 'Bp SimSes'. OCR: "SimSes" = Simões. OCR 'Simdes' = Simões (bispo Plínio Lauer Simões,
+    que à época era bispo de Southwestern/Central Brazil; ele foi sagrado em 1956). A base tem 1958 sem ordenante.
+    Confirma diaconato por Krischke (nov/1956) já na base.
 - order: episcopate
   date: '1989-10-01'
   place: Catedral Anglicana de Sao Paulo
@@ -132,6 +153,20 @@ ordinations:
     em julho, sagrado em 1o de outubro). Coadjutor. A tese diz 'mais sete bispos' como co-sagrantes, sem nomeá-los.
     O templo é a St. Paul's Church, onde exercia o ministério.
 affiliations:
+- jurisdiction: dmsob
+  role: clergy
+  start: '1956'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: LIMA, GLAUCO SOARES de (SwBra)
+  - source: cd1965
+    quote: D Nov 56 Bp Krischke P Feb 58 Bp SimSes
+  - source: cd1968
+    quote: LIMA, Glauco Soares de (SwBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: bishop
   start: '1989'
@@ -313,6 +348,15 @@ affiliations:
       Anglicano no Brasil.
     page: '147'
   notes: Emérito da DASP; desligou-se formalmente da IEAB com a Catedral de São Paulo.
+- jurisdiction: ieab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: LIMA, Glauco Soares de (SwBra) Trans to Brazil Ch 25 Apr 65.
+  notes: >-
+    Transferência do distrito missionário (SwBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dasp

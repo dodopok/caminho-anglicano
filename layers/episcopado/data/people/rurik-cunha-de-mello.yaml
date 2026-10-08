@@ -2,24 +2,74 @@
 id: rurik-cunha-de-mello
 name: Rurik Cunha de Mello
 full_name: Rurik Cunha de Mello
+aliases:
+- MELLO, RURIK CUNHA de
+birth:
+  date: '1915-11-15'
+  sources:
+  - source: cd1965
+    quote: b Porto Alegre Braz 15 Nov 15
+  - source: cd1968
+    quote: MELLO, Rurik Cunha de (SBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em Porto Alegre,
+  Brasil (1915-11-15). Ordenado diácono em dez/1953 e presbítero em set/1956. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Porto Alegre Braz 15 Nov 15
+- source: cd1968
+  quote: MELLO, Rurik Cunha de (SBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1953'
-  jurisdiction: ieab
-  status: probable
+  date: 1953-12
+  jurisdiction: dmsb
+  ordained_by: athalicio-pithan
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Dec 53 Bp Pithan P Sep 56 Bp Krischke
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1953 - … Rurik Cunha de Mello
     page: '370'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Pithan'. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1956-09
+  jurisdiction: dmsb
+  ordained_by: egmont-krischke
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Dec 53 Bp Pithan P Sep 56 Bp Krischke
+  notes: 'Ordenante no diretório: ''Bp Krischke''.'
 affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: '1953'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: MELLO, RURIK CUNHA de (SBra)
+  - source: cd1965
+    quote: D Dec 53 Bp Pithan P Sep 56 Bp Krischke
+  - source: cd1968
+    quote: MELLO, Rurik Cunha de (SBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1953'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: MELLO, Rurik Cunha de (SBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1953 - … Rurik Cunha de Mello
     page: '370'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (SBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

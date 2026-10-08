@@ -2,35 +2,79 @@
 id: gaudencio-vergara-dos-santos
 name: Gaudêncio Vergara dos Santos
 full_name: Gaudêncio Vergara dos Santos
-biography: Reitor da Paróquia São Lucas (IEAB, Rio de Janeiro) durante a partilha do templo da Christ Church.
+aliases:
+- SANTOS, GAUDENCIO VERGARA dos
+birth:
+  date: '1905-10-20'
+  sources:
+  - source: cd1965
+    quote: b Pelotas RGS Brazil 20 Oct 05
+  - source: cd1968
+    quote: SANTOS, Gaudencio Vergara dos (CBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em Pelotas,
+  RGS, Brasil (1905-10-20). Ordenado diácono em mar/1929 e presbítero em mai/1930. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: >-
-    a São Lucas teve como reitores os reverendos Osborn, Custis Fletcher Jr., Gaudêncio Vergara dos Santos, Diamantino
-    Bueno, os cônegos Jorge Macedo e Celso Franco de Oliveira (hoje bispo emérito da DARJ), e os reverendos Eduardo
-    Coelho Grillo (atual bispo diocesano) e Luiz Caetano Grecco Teixeira.
-  page: '100'
+- source: cd1965
+  quote: b Pelotas RGS Brazil 20 Oct 05
+- source: cd1968
+  quote: SANTOS, Gaudencio Vergara dos (CBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1929'
+  date: 1929-03
   jurisdiction: dmsb
-  status: probable
+  ordained_by: william-matthews-merrick-thomas
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Mar 29 P May 30 Bp W M M Thomas
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1929 - … Gaudêncio Vergara dos Santos
     page: '369'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp W M M Thomas'. O verbete é do distrito criado em 1949; antes disso o clero era do
+    Distrito do Sul do Brasil. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel,
+    1995); ordenante não informado.
+- order: presbyterate
+  date: 1930-05
+  jurisdiction: dmsb
+  ordained_by: william-matthews-merrick-thomas
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Mar 29 P May 30 Bp W M M Thomas
+  notes: >-
+    Ordenante no diretório: 'Bp W M M Thomas'. O verbete é do distrito criado em 1949; antes disso o clero era do
+    Distrito do Sul do Brasil.
 affiliations:
 - jurisdiction: ieab
   role: clergy
   start: '1929'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: SANTOS, Gaudencio Vergara dos (CBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1929 - … Gaudêncio Vergara dos Santos
     page: '369'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: dmcb
+  role: clergy
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: SANTOS, GAUDENCIO VERGARA dos (CBra)
+  - source: cd1965
+    quote: D Mar 29 P May 30 Bp W M M Thomas
+  - source: cd1968
+    quote: SANTOS, Gaudencio Vergara dos (CBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab-darj
   role: other
   role_description: reitor

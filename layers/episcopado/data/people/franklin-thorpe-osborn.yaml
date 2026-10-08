@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: franklin-thorpe-osborn
+name: Franklin Thorpe Osborn
+full_name: Franklin Thorpe Osborn
+aliases:
+- OSBORN, FRANKLIN THORPE
+birth:
+  date: '1890-01-17'
+  sources:
+  - source: cd1965
+    quote: b Hailey Ida 17 Jan 90
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em Hailey,
+  Idaho, EUA (1890-01-17). Ordenado diácono em jun/1916 e presbítero em jan/1918.
+sources:
+- source: cd1965
+  quote: b Hailey Ida 17 Jan 90
+ordinations:
+- order: diaconate
+  date: 1916-06
+  jurisdiction: null
+  ordained_by: william-cabell-brown
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Jun 16 Bp W C Brown P Jan 18 Bp L L Kinsolving
+  - source: cd1968
+    quote: D Jun 16 Bp W C Brown P Jan 18 Bp L L Kinsolving
+  notes: >-
+    Ordenante no diretório: 'Bp W C Brown'. Ordenado por bispo fora dos distritos brasileiros; jurisdição não atribuída.
+- order: presbyterate
+  date: 1918-01
+  jurisdiction: dmsb
+  ordained_by: lucien-lee-kinsolving
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Jun 16 Bp W C Brown P Jan 18 Bp L L Kinsolving
+  - source: cd1968
+    quote: D Jun 16 Bp W C Brown P Jan 18 Bp L L Kinsolving
+  notes: >-
+    Ordenante no diretório: 'Bp L L Kinsolving'. O verbete é do distrito criado em 1949; antes disso o clero era
+    do Distrito do Sul do Brasil.
+affiliations:
+- jurisdiction: dmcb
+  role: clergy
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: OSBORN, FRANKLIN THORPE (CBra)
+  - source: cd1965
+    quote: D Jun 16 Bp W C Brown P Jan 18 Bp L L Kinsolving
+  - source: cd1968
+    quote: OSBORN, Franklin Thorpe (CBra) 923 Irwin, Knoxville, Tenn
+  notes: >-
+    Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete. Verbete traz 'Retired
+    58-' (aposentado desde 1958) e não consta transferência em 1968 (o verbete de 1968 repete o de 1965 integralmente).

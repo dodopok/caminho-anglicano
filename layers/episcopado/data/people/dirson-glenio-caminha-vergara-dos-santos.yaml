@@ -2,26 +2,77 @@
 id: dirson-glenio-caminha-vergara-dos-santos
 name: Dirson Glênio Caminha Vergara dos Santos
 full_name: Dirson Glênio Caminha Vergara dos Santos
+aliases:
+- SANTOS, DIRSON GLENIO CAMINHA VERGARA dos
+birth:
+  date: '1933-02-18'
+  sources:
+  - source: cd1965
+    quote: b Rio Grande RGS Brazil 18 Feb 33
+  - source: cd1968
+    quote: SANTOS, Dirson Glenio Caminha Vergara dos (CBra) Trans to Brazil Ch 25 Apr 6
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em Rio Grande,
+  RGS, Brasil (1933-02-18). Ordenado diácono em dez/1957 e presbítero em ago/1958. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Rio Grande RGS Brazil 18 Feb 33
+- source: cd1968
+  quote: SANTOS, Dirson Glenio Caminha Vergara dos (CBra) Trans to Brazil Ch 25 Apr 6
 ordinations:
 - order: diaconate
-  date: '1957'
-  jurisdiction: ieab
-  status: probable
+  date: 1957-12
+  jurisdiction: dmcb
+  ordained_by: louis-chester-melcher
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Dec 57 P Aug 58 Bp Melcher
   - source: kickhofel-1995
     quote: >-
       CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1957 - … Dirson Glênio Caminha Vergara dos Santos
     page: '371'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Melcher'. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1958-08
+  jurisdiction: dmcb
+  ordained_by: louis-chester-melcher
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Dec 57 P Aug 58 Bp Melcher
+  notes: 'Ordenante no diretório: ''Bp Melcher''.'
 affiliations:
+- jurisdiction: dmcb
+  role: clergy
+  start: '1957'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: SANTOS, DIRSON GLENIO CAMINHA VERGARA dos (CBra)
+  - source: cd1965
+    quote: D Dec 57 P Aug 58 Bp Melcher
+  - source: cd1968
+    quote: SANTOS, Dirson Glenio Caminha Vergara dos (CBra) Trans to Brazil Ch 25 Apr 6
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1957'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: SANTOS, Dirson Glenio Caminha Vergara dos (CBra) Trans to Brazil Ch 25 Apr 6
   - source: kickhofel-1995
     quote: >-
       CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1957 - … Dirson Glênio Caminha Vergara dos Santos
     page: '371'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. O OCR de 1968 trunca o ano ("Apr 6"; leia-se 25 Apr 65 como nos demais verbetes). Transferido
+    para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero nacional da IEAB (Kickhöfel,
+    1995); início = ano do diaconato.

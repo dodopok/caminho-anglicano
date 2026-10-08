@@ -2,27 +2,78 @@
 id: alfredo-rocha-fonseca-filho
 name: Alfredo Rocha Fonseca Filho
 full_name: Alfredo Rocha Fonseca Filho
+aliases:
+- Alfredo Rocha da Fonseca Filho
+- FONSECA FILHO, ALFREDO ROCHA da
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Ordenado diácono em
+  dez/1957 e presbítero em mai/1959. Transferido para a Igreja Episcopal do Brasil em 25/04/1965 (Clerical Directory
+  1968).
+sources:
+- source: cd1965
+  quote: FONSECA FILHO, ALFREDO ROCHA da (CBra)
+- source: cd1968
+  quote: FONSECA Fl LHO, Alfredo Rocha da (CBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1957'
-  jurisdiction: ieab
-  status: probable
+  date: 1957-12
+  jurisdiction: dmcb
+  ordained_by: louis-chester-melcher
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Dec 57 Bp Melcher P May 59 Bp E I Sherrill
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1957 - … Alfredo Rocha Fonseca Filho
     page: '371'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Melcher'. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1959-05
+  jurisdiction: dmcb
+  ordained_by: edmund-knox-sherrill
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Dec 57 Bp Melcher P May 59 Bp E I Sherrill
+  notes: 'Ordenante no diretório: ''Bp E I Sherrill''. OCR: "E I Sherrill" lido como E K Sherrill.'
 affiliations:
+- jurisdiction: dmcb
+  role: clergy
+  start: '1957'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: FONSECA FILHO, ALFREDO ROCHA da (CBra)
+  - source: cd1965
+    quote: D Dec 57 Bp Melcher P May 59 Bp E I Sherrill
+  - source: cd1968
+    quote: FONSECA Fl LHO, Alfredo Rocha da (CBra) Trans to Brazil Ch 25 Apr 65.
+  - source: kickhofel-1995
+    quote: >-
+      Quase uma década depois, o bispo Sherrill transferiu para Recife o rev. Alfredo Rocha Fonseca Filho, que veio
+      a ser o primeiro capelão brasileiro da Paróquia da SS.Trindade, iniciando o lento processo de integração.
+    page: '295'
+  notes: >-
+    Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete. Primeiro capelão
+    brasileiro da Paróquia da Santíssima Trindade, Recife ("quase uma década" depois de 1958).
 - jurisdiction: ieab
   role: clergy
   start: '1957'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: FONSECA Fl LHO, Alfredo Rocha da (CBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1957 - … Alfredo Rocha Fonseca Filho
     page: '371'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-darj
@@ -44,14 +95,3 @@ affiliations:
   notes: >-
     Local: Paróquia da SS. Trindade, Recife. Primeiro capelão brasileiro da Paróquia da SS. Trindade; depois designado
     para a Paróquia São Felipe, Goiânia.
-- jurisdiction: dmcb
-  role: clergy
-  status: probable
-  sources:
-  - source: kickhofel-1995
-    quote: >-
-      Quase uma década depois, o bispo Sherrill transferiu para Recife o rev. Alfredo Rocha Fonseca Filho, que veio
-      a ser o primeiro capelão brasileiro da Paróquia da SS.Trindade, iniciando o lento processo de integração.
-    page: '295'
-  notes: >-
-    Primeiro capelão brasileiro da Paróquia da Santíssima Trindade, Recife ("quase uma década" depois de 1958).

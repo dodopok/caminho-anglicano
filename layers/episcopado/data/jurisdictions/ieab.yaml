@@ -64,6 +64,26 @@ sources:
     only last May.
 relations:
 - type: successor_of
+  target: dmcb
+  date: '1965-04-25'
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: BUENO, Jose Silvado (CBra) Trans to Brazil Ch 25 Apr 65.
+  notes: >-
+    Com a autonomia da Igreja Episcopal do Brasil em 25/04/1965, o clero dos três distritos missionários foi transferido
+    para ela.
+- type: successor_of
+  target: dmsob
+  date: '1965-04-25'
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: BUENO, Diamantino Ferreira (SwBra) Trans to Brazil Ch 25 Apr 65.
+  notes: >-
+    Com a autonomia da Igreja Episcopal do Brasil em 25/04/1965, o clero dos três distritos missionários foi transferido
+    para ela.
+- type: successor_of
   target: dmsb
   date: '1965-04-25'
   led_by:

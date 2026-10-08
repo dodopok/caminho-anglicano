@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-gardner-ellsworth
+name: John Gardner Ellsworth
+full_name: John Gardner Ellsworth
+aliases:
+- ELLSWORTH, JOHN GARDNER
+birth:
+  date: '1927-11-21'
+  sources:
+  - source: cd1965
+    quote: b Evanston 111 21 Nov 27
+  - source: cd1968
+    quote: ELLSWORTH, John Gardner (CBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em Evanston,
+  Illinois, EUA ("111" no OCR) (1927-11-21). Ordenado diácono em jun/1960 e presbítero em jun/1961. Transferido
+  para a Igreja Episcopal do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Evanston 111 21 Nov 27
+- source: cd1968
+  quote: ELLSWORTH, John Gardner (CBra) Trans to Brazil Ch 25 Apr 65.
+ordinations:
+- order: diaconate
+  date: 1960-06
+  jurisdiction: null
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Jun 60 Bp Dun P Jun 61 Bp Krischke
+  notes: >-
+    Ordenante no diretório: 'Bp Dun'. Ordenado por bispo fora dos distritos brasileiros; jurisdição não atribuída.
+    Ordenante no diretório: "Bp Dun" (bispo de fora do Brasil, não identificado na base).
+- order: presbyterate
+  date: 1961-06
+  jurisdiction: dmcb
+  ordained_by: egmont-krischke
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Jun 60 Bp Dun P Jun 61 Bp Krischke
+  notes: 'Ordenante no diretório: ''Bp Krischke''.'
+affiliations:
+- jurisdiction: dmcb
+  role: clergy
+  start: '1960'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: ELLSWORTH, JOHN GARDNER (CBra)
+  - source: cd1965
+    quote: D Jun 60 Bp Dun P Jun 61 Bp Krischke
+  - source: cd1968
+    quote: ELLSWORTH, John Gardner (CBra) Trans to Brazil Ch 25 Apr 65.
+  notes: >-
+    Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete. 1968 (verbete Va):
+    'Mssy to SBra 61-64, P-in-c Holy Trin Pernambuco Brazil 64-65'.
+- jurisdiction: tec
+  role: clergy
+  diocese: diocese-of-virginia
+  start: 1966-01
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: ELLSWORTH, John Gardner(Va)SStephen's Ch, 6004 Three
+  - source: cd1968
+    quote: Bp Krischke, Trans to Brazil Ch Apr 65, Rec Jan 66.
+  notes: 'Verbete de 1968 sob ''(Va)'': Asst R S Steph 66-; ''Rec Jan 66''.'
+- jurisdiction: ieab
+  role: clergy
+  end: 1966-01
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: ELLSWORTH, John Gardner (CBra) Trans to Brazil Ch 25 Apr 65.
+  - source: cd1968
+    quote: Bp Krischke, Trans to Brazil Ch Apr 65, Rec Jan 66.
+  notes: >-
+    Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. O segundo verbete de 1968 (Va) diz 'Trans to Brazil Ch Apr 65, Rec Jan 66': recebido na Diocese
+    de Virginia (TEC) em jan/1966. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965.

@@ -2,24 +2,77 @@
 id: estevao-shigeru-yuba
 name: Estevão Shigeru Yuba
 full_name: Estevão Shigeru Yuba
+aliases:
+- Estevan Shigeru Yuba
+- YUBA, ESTEVAN SHIGERU
+birth:
+  date: '1910-05-10'
+  sources:
+  - source: cd1965
+    quote: b Kobe Jap 10 May 10
+  - source: cd1968
+    quote: YUBA, Estevan Shigeru (CBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em Kobe, Japão
+  (1910-05-10). Ordenado diácono em jan/1938 e presbítero em abr/1940. Transferido para a Igreja Episcopal do Brasil
+  em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Kobe Jap 10 May 10
+- source: cd1968
+  quote: YUBA, Estevan Shigeru (CBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1938'
+  date: 1938-01
   jurisdiction: dmsb
-  status: probable
+  ordained_by: william-matthews-merrick-thomas
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Jan 38 P Apr 40 Bp W M M Thomas
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1938 - … Estevão Shigeru Yuba
     page: '370'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp W M M Thomas'. O verbete é do distrito criado em 1949; antes disso o clero era do
+    Distrito do Sul do Brasil. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel,
+    1995); ordenante não informado.
+- order: presbyterate
+  date: 1940-04
+  jurisdiction: dmsb
+  ordained_by: william-matthews-merrick-thomas
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Jan 38 P Apr 40 Bp W M M Thomas
+  notes: >-
+    Ordenante no diretório: 'Bp W M M Thomas'. O verbete é do distrito criado em 1949; antes disso o clero era do
+    Distrito do Sul do Brasil.
 affiliations:
 - jurisdiction: ieab
   role: clergy
   start: '1938'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: YUBA, Estevan Shigeru (CBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1938 - … Estevão Shigeru Yuba
     page: '370'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: dmcb
+  role: clergy
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: YUBA, ESTEVAN SHIGERU (CBra)
+  - source: cd1965
+    quote: D Jan 38 P Apr 40 Bp W M M Thomas
+  - source: cd1968
+    quote: YUBA, Estevan Shigeru (CBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.

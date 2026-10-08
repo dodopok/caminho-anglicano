@@ -2,27 +2,77 @@
 id: lauro-borba-da-silva
 name: Lauro Borba da Silva
 full_name: Lauro Borba da Silva
+aliases:
+- SILVA, LAURO BORBA da
+birth:
+  date: '1923-08-21'
+  sources:
+  - source: cd1965
+    quote: b Bage RGS Braz 21 Aug 23
+  - source: cd1968
+    quote: SILVA, Lauro Borba da (SBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em Bagé, RGS,
+  Brasil (1923-08-21). Ordenado diácono em mar/1950 e presbítero em out/1950. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Bage RGS Braz 21 Aug 23
+- source: cd1968
+  quote: SILVA, Lauro Borba da (SBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1950'
-  jurisdiction: ieab
-  status: probable
+  date: 1950-03
+  jurisdiction: dmsb
+  ordained_by: egmont-krischke
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Mar 50 P Oct 50 Bp Krischke
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1950 - … Lauro Borba da Silva
     page: '370'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Krischke'. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1950-10
+  jurisdiction: dmsb
+  ordained_by: egmont-krischke
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Mar 50 P Oct 50 Bp Krischke
+  notes: 'Ordenante no diretório: ''Bp Krischke''.'
 affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: '1950'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: SILVA, LAURO BORBA da (SBra)
+  - source: cd1965
+    quote: D Mar 50 P Oct 50 Bp Krischke
+  - source: cd1968
+    quote: SILVA, Lauro Borba da (SBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1950'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: SILVA, Lauro Borba da (SBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1950 - … Lauro Borba da Silva
     page: '370'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (SBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
 - jurisdiction: dmsob
   role: clergy
   diocese: southwestern-brazil

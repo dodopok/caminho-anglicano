@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: egmont-krischke
 name: Egmont Krischke
-full_name: Egmont Valle Machado Krischke
+full_name: Egmont Machado Krischke
 aliases:
 - Dom Egmont
 - E. M. Krischke
@@ -9,11 +9,17 @@ aliases:
 - Egmont M. Krischke
 - Egmont Machado Krischke
 - Egmont Valle Machado Krischke
+- KRISCHKE, Rt Rev EGMONT MACHADO
 - Most Rev. Egmont Machado Krischke
+- Rt Rev Egmont Machado Krischke
 - Rt. Rev. Egmont Machado Krischke
 birth:
   date: '1909-06-26'
   sources:
+  - source: cd1965
+    quote: Porto Alegro, RGS, Brazil Bp of SBra 55-. b Slio Leopoldo RGS
+  - source: cd1968
+    quote: KRISCHKE. Rt Rev Egmont Machado Trans to Brazil Ch 25 Apr 65.
   - source: costa2021
     quote: Egmont Machado Krischke nasceu em 26 de junho de 1909, em São Leopoldo, RS.
     page: '72'
@@ -47,25 +53,23 @@ death:
     page: '249'
 wikidata: Q23585620
 biography: >-
-  Filho do Rev. George U. Krischke; reitor em Porto Alegre e Bagé; sagrado em 12/03/1950 em Bagé primeiro bispo
-  do Sudoeste do Brasil; transferido ao Sul do Brasil em 1955; bispo sênior em 1964 e primeiro primaz da IEAB (1965-1971/72).
+  Bispo ligado ao Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em São
+  Leopoldo, RGS, Brasil (OCR: "Slio Leopoldo") (1909-06-26). Sagrado em 1950-03-12. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
 sources:
-- source: wit-1950-03-30
-  quote: >-
-    The Rev. Edmont Machado Krischke was c o n s e c r a t e d Bishop to be head of the newly-formed Missionary
-    District of Southwestern Brazil on Sunday, March 12, at the Church of the Crucified in Bage.
-- source: wp-en-krischke
-  quote: >-
-    Egmont Machado Krischke was first primate of the Anglican Episcopal Church of Brazil, serving from 1965 to 1971.
-- source: wd-q23585620
-  quote: Egmont M. Krischke | Anglican bishop in Brazil
+- source: cd1965
+  quote: Porto Alegro, RGS, Brazil Bp of SBra 55-. b Slio Leopoldo RGS
+- source: cd1968
+  quote: KRISCHKE. Rt Rev Egmont Machado Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
   date: '1930-11-30'
   jurisdiction: dmsb
   ordained_by: william-matthews-merrick-thomas
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Nov 30 P Dec 33 Bp W M M Thomas,
   - source: ieablac-cd1947
     quote: >-
       South. Cross Coll., B.A.; Theol. Sem., Porto Alegre, B.D. D—Nov., 1930, P—Dec., 1933, Bp. W. M. M. Thomas.
@@ -73,23 +77,26 @@ ordinations:
     quote: Foi ordenado diácono, no dia 30 de novembro de 1930 e em 10 de dezembro de 1933 ao presbiterato.
     page: '72'
   notes: >-
-    Base tem 30/11/1930 sem ordenante. Um 'Bp.' após D e P no diretório. Fonte: Clerical Directory (ed. 1947), verbete
-    de Krischke. Convenção do diretório: 'D' = diácono, 'P' = presbítero, 'Bp.' = bispo ordenante. Texto vindo de
-    OCR do Internet Archive.
+    Ordenante no diretório conforme o verbete. Base tem 30/11/1930 sem ordenante. Um 'Bp.' após D e P no diretório.
+    Fonte: Clerical Directory (ed. 1947), verbete de Krischke. Convenção do diretório: 'D' = diácono, 'P' = presbítero,
+    'Bp.' = bispo ordenante. Texto vindo de OCR do Internet Archive.
 - order: presbyterate
   date: '1933-12-10'
   jurisdiction: dmsb
   ordained_by: william-matthews-merrick-thomas
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Nov 30 P Dec 33 Bp W M M Thomas,
   - source: ieablac-cd1947
     quote: D—Nov., 1930, P—Dec., 1933, Bp. W. M. M. Thomas.
   - source: costa2021
     quote: Foi ordenado diácono, no dia 30 de novembro de 1930 e em 10 de dezembro de 1933 ao presbiterato.
     page: '72'
   notes: >-
-    Base tem 10/12/1933 sem ordenante. Fonte: Clerical Directory (ed. 1947), verbete de Krischke. Convenção do diretório:
-    'D' = diácono, 'P' = presbítero, 'Bp.' = bispo ordenante. Texto vindo de OCR do Internet Archive.
+    Ordenante no diretório conforme o verbete. Base tem 10/12/1933 sem ordenante. Fonte: Clerical Directory (ed.
+    1947), verbete de Krischke. Convenção do diretório: 'D' = diácono, 'P' = presbítero, 'Bp.' = bispo ordenante.
+    Texto vindo de OCR do Internet Archive.
 - order: episcopate
   date: '1950-03-12'
   place: Igreja do Crucificado (Church of the Crucified), Bagé, RS
@@ -101,6 +108,8 @@ ordinations:
   - john-boyd-bentley
   status: confirmed
   sources:
+  - source: cd1965
+    quote: Con Bp of SwBra 12 Mar 50.
   - source: wit-1950-03-30
     quote: >-
       The chief consecrator, acting for the Presiding Bishop, was Bishop Louis C. Melcher of Cen- tral Brazil.
@@ -131,9 +140,10 @@ ordinations:
       do Crucificado, em Bagé.
     page: '72'
   notes: >-
-    Primeira sagração no próprio Brasil segundo a nota ('the first consecra­tion to be held in Brazil in two years'
-    — i.e., há dois anos não havia; a de Pithan em 1940 foi no Brasil). Presbíteros assistentes: Rev. George U.
-    Krischke (pai) e Rev. N. Duval da Silva; Pithan foi litanista e pregador. Sagrantes não informados.
+    Sagração: 'Bp of SwBra' no verbete. O diretório não nomeia sagrante nem local. Primeira sagração no próprio
+    Brasil segundo a nota ('the first consecra­tion to be held in Brazil in two years' — i.e., há dois anos não
+    havia; a de Pithan em 1940 foi no Brasil). Presbíteros assistentes: Rev. George U. Krischke (pai) e Rev. N.
+    Duval da Silva; Pithan foi litanista e pregador. Sagrantes não informados.
 affiliations:
 - jurisdiction: dmsb
   role: clergy
@@ -146,6 +156,16 @@ affiliations:
       KRISCHKE, E. M., rector of Ascension Church in Porto Alegre, Brazil, has been appointed to succeed Suffragan
       Bishop-elect Pithan at the Church of the Crucified in Bage
   notes: 'Local: Reitor da Igreja do Crucificado, Bagé.'
+- jurisdiction: dmsob
+  role: diocesan_bishop
+  start: '1950-03-12'
+  end: '1955'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: Bp of SwBra 50-55
+  notes: Período do cargo conforme o verbete.
 - jurisdiction: dmsob
   role: diocesan_bishop
   diocese: southwestern-brazil
@@ -180,6 +200,18 @@ affiliations:
         Em 1956 a Diocese Sul-Ocidental elegeu seu segundo bispo, Plínio Lauer Simões60 transferindo o bispo Egmont
         Krischke para a Diocese Meridional
       page: '73'
+- jurisdiction: dmsb
+  role: diocesan_bishop
+  start: '1955'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: Porto Alegro, RGS, Brazil Bp of SBra 55-.
+  - source: cd1968
+    quote: KRISCHKE. Rt Rev Egmont Machado Trans to Brazil Ch 25 Apr 65.
+  notes: Período do cargo conforme o verbete.
 - jurisdiction: dmsb
   role: diocesan_bishop
   diocese: southern-brazil
@@ -247,6 +279,14 @@ affiliations:
     - source: kickhofel-1995
       quote: Krischke adoeceu em 1970 e resignou a diocese, mas permaneceu como primaz até 1971, quando faleceu.
       page: '249'
+- jurisdiction: ieab
+  role: bishop
+  start: '1965-04-25'
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: KRISCHKE. Rt Rev Egmont Machado Trans to Brazil Ch 25 Apr 65.
+  notes: 'Transferência para a Igreja Episcopal do Brasil autônoma. '
 - jurisdiction: ieab
   role: primate
   start: '1965-04-25'

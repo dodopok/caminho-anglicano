@@ -2,24 +2,76 @@
 id: antonio-joaquim-teixeira-guedes
 name: Antonio Joaquim Teixeira Guedes
 full_name: Antonio Joaquim Teixeira Guedes
+aliases:
+- GUEDES, ANTONIO JOAQUIM TEIXEIRA
+birth:
+  date: '1919-05-07'
+  sources:
+  - source: cd1965
+    quote: b Pelotas RGS 7 May 19
+  - source: cd1968
+    quote: GUEDES, Antonio Joaquim Teixeira (SwBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Sudoeste do Brasil (SwBra) segundo o Clerical Directory 1965. Nascido em Pelotas,
+  RGS, Brasil (1919-05-07). Ordenado diácono em dez/1941 e presbítero em jun/1943. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Pelotas RGS 7 May 19
+- source: cd1968
+  quote: GUEDES, Antonio Joaquim Teixeira (SwBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1941'
+  date: 1941-12
   jurisdiction: dmsb
-  status: probable
+  ordained_by: william-matthews-merrick-thomas
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Dec 41 P Jun 43 Bp W M M Thomas
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1941 - … Antonio Joaquim Teixeira Guedes
     page: '370'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp W M M Thomas'. O verbete é do distrito criado em 1949; antes disso o clero era do
+    Distrito do Sul do Brasil. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel,
+    1995); ordenante não informado.
+- order: presbyterate
+  date: 1943-06
+  jurisdiction: dmsb
+  ordained_by: william-matthews-merrick-thomas
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Dec 41 P Jun 43 Bp W M M Thomas
+  notes: >-
+    Ordenante no diretório: 'Bp W M M Thomas'. O verbete é do distrito criado em 1949; antes disso o clero era do
+    Distrito do Sul do Brasil.
 affiliations:
 - jurisdiction: ieab
   role: clergy
   start: '1941'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: GUEDES, Antonio Joaquim Teixeira (SwBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1941 - … Antonio Joaquim Teixeira Guedes
     page: '370'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (SwBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: dmsob
+  role: clergy
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: GUEDES, ANTONIO JOAQUIM TEIXEIRA (SwBra)
+  - source: cd1965
+    quote: D Dec 41 P Jun 43 Bp W M M Thomas
+  - source: cd1968
+    quote: GUEDES, Antonio Joaquim Teixeira (SwBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.

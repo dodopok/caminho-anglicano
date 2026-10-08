@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: richard-burrus-lindner-jr
+name: Richard Burrus Lindner Jr.
+full_name: Richard Burrus Lindner Jr.
+aliases:
+- LINDNER, RICHARD BURRUS Jr
+birth:
+  date: '1929-06-12'
+  sources:
+  - source: cd1965
+    quote: b Douglas Ariz 12 Jun 29
+  - source: cd1968
+    quote: LINDNER, Richard Burrus Jr (SBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em Douglas,
+  Arizona, EUA (1929-06-12). Ordenado diácono em jun/1957 e presbítero em abr/1958. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Douglas Ariz 12 Jun 29
+- source: cd1968
+  quote: LINDNER, Richard Burrus Jr (SBra) Trans to Brazil Ch 25 Apr 65.
+ordinations:
+- order: diaconate
+  date: 1957-06
+  jurisdiction: null
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Jun 57 Bp Goodwin for SC P Apr 58 Bp Clements for SC
+  notes: >-
+    Ordenante no diretório: 'Bp Goodwin for SC for SC'. Ordenado por bispo fora dos distritos brasileiros; jurisdição
+    não atribuída. Ordenante no diretório: "Bp Goodwin" (bispo de fora do Brasil, não identificado na base).
+- order: presbyterate
+  date: 1958-04
+  jurisdiction: null
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Jun 57 Bp Goodwin for SC P Apr 58 Bp Clements for SC
+  notes: >-
+    Ordenante no diretório: 'Bp Clements for SC for SC'. Ordenado por bispo fora dos distritos brasileiros; jurisdição
+    não atribuída. Ordenante no diretório: "Bp Clements" (bispo de fora do Brasil, não identificado na base).
+affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: '1957'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: LINDNER, RICHARD BURRUS Jr (SBra)
+  - source: cd1965
+    quote: D Jun 57 Bp Goodwin for SC P Apr 58 Bp Clements for SC
+  - source: cd1968
+    quote: LINDNER, Richard Burrus Jr (SBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
+- jurisdiction: ieab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: LINDNER, Richard Burrus Jr (SBra) Trans to Brazil Ch 25 Apr 65.
+  notes: >-
+    Transferência do distrito missionário (SBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965.

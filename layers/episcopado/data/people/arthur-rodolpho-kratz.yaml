@@ -6,6 +6,7 @@ aliases:
 - Arthur Kratz
 - Arthur R. Kratz
 - Dom Arthur Kratz
+- KRATZ, ARTHUR RODOLPHO
 - bispo Kratz
 birth:
   date: '1920-12-19'
@@ -36,6 +37,13 @@ birth:
     - source: ens-72149
       quote: >-
         He was ordained a priest in 1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
+  - field: date
+    value: '1920-12-23'
+    sources:
+    - source: cd1965
+      quote: b Pelotas RGS Braz 23 Dec 20
+    - source: cd1968
+      quote: KRATZ, Arthur Rodolpho (SBra) Trans to Brazil Ch 25 Apr 65.
 death:
   date: '1984-03-04'
   sources:
@@ -69,26 +77,24 @@ death:
       quote: do Primaz, Arthur Rodolpho Kratz, ele exerceu as funções da Primazia da Igreja como interino.
       page: '178'
 biography: >-
-  Nascido em Pelotas (1922), ordenado presbítero em 1948; bispo do Sul do Brasil em 1971 e segundo primaz (1972).
+  Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em Pelotas,
+  RGS, Brasil (1920-12-23). Ordenado diácono em fev/1947 e presbítero em abr/1948. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
 sources:
-- source: ens-72149
-  quote: >-
-    He was ordained a priest in 1948 and was consecrated Bishop of the Diocese of Southern Brazil in 1971.
+- source: cd1965
+  quote: b Pelotas RGS Braz 23 Dec 20
+- source: cd1968
+  quote: KRATZ, Arthur Rodolpho (SBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
   date: '1947-02-09'
   place: Trinity Church (Igreja da Santíssima Trindade), Porto Alegre
-  jurisdiction: ieab
+  jurisdiction: dmsb
   ordained_by: william-matthews-merrick-thomas
   status: confirmed
   sources:
-  - source: ieablac-cd1947
-    quote: >-
-      KRATZ, Arthur Rodolpho (S.Bra.), Caixa 238, Pelotas, R.G.S., Braz.—Asst. Ch. Redeem., 1947—. b. Dec. 23, 1920.
-      D—Feb., 1947, Bp. W. M. M. Thomas.
-  - source: ia-living-church-1947-03-02
-    quote: >-
-      Kumpei Kainuma, Arthur Rodolpho Kratz, and Agestinho Soria were ordained to the diaconate by Bishop Thomas
+  - source: cd1965
+    quote: D Feb 47 P Apr 48 Bp W M M Thomas
   - source: ia-living-church-1947-03-02
     quote: >-
       Kratz, and Agestinho Soria were ordained to the diaconate by Bishop Thomas of Southern Brazil on February
@@ -101,16 +107,24 @@ ordinations:
       No ano seguinte, foi ordenado ao diaconato pelo bispo Thomas que o designou coadjutor da Paróquia do Redentor
       em Pelotas.
     page: '250'
+  - source: ieablac-cd1947
+    quote: >-
+      KRATZ, Arthur Rodolpho (S.Bra.), Caixa 238, Pelotas, R.G.S., Braz.—Asst. Ch. Redeem., 1947—. b. Dec. 23, 1920.
+      D—Feb., 1947, Bp. W. M. M. Thomas.
+  - source: ia-living-church-1947-03-02
+    quote: >-
+      Kumpei Kainuma, Arthur Rodolpho Kratz, and Agestinho Soria were ordained to the diaconate by Bishop Thomas
   - source: costa2021
     quote: >-
       Foi ordenado ao diaconato durante o 49º Concílio da Igreja, reunido na Catedral da Santíssima Trindade, em
       09 de fevereiro de 1947 e ao presbiterato em 1948, pelas mãos do bispo William Thomas.
     page: '85'
   notes: >-
-    Confirma o ordenante (bispo Thomas) e o mês (fev/1947). O diretório de 1947 traz 'b. Dec. 23, 1920' (outras
-    fontes dão 19/12/1920). O local (outra fonte: Trinity Church, Porto Alegre) não é dado nestes trechos. Ano tirado
-    da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado. A
-    expressão 'pelas mãos do bispo William Thomas' fecha a frase sobre as duas ordenações; atribuída a ambas.
+    Ordenante no diretório: 'Bp W M M Thomas'. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado. Confirma o ordenante (bispo Thomas) e o mês (fev/1947). O diretório
+    de 1947 traz 'b. Dec. 23, 1920' (outras fontes dão 19/12/1920). O local (outra fonte: Trinity Church, Porto
+    Alegre) não é dado nestes trechos. A expressão 'pelas mãos do bispo William Thomas' fecha a frase sobre as duas
+    ordenações; atribuída a ambas.
 - order: presbyterate
   date: '1948-04-11'
   place: Igreja do Redentor (Church of the Redeemer), Pelotas
@@ -118,12 +132,8 @@ ordinations:
   ordained_by: william-matthews-merrick-thomas
   status: confirmed
   sources:
-  - source: ieablac-cd1956
-    quote: D—Feb., 1947, P—Apr., 1948, Bp. W. M. M. Thomas.
-  - source: ieablac-cd1950
-    quote: Pelotense Coll. ; Theol. Sem., 1946. D— Feb., 1947, P—Apr., 1948, Bp. W. M. M. Thomas.
-  - source: ens-72149
-    quote: He was ordained a priest in 1948
+  - source: cd1965
+    quote: D Feb 47 P Apr 48 Bp W M M Thomas
   - source: ia-living-church-1948-05-02
     quote: >-
       and Agostinho Soria were ordained to the priesthood on April 11th at the Church of the Redeemer, Pelotas
@@ -131,19 +141,26 @@ ordinations:
     quote: >-
       Frs. Bueno, Rocha, and Séria were ordained by Bishop Pit- han, Suffragan of Brazil; Frs. Kainuma, Kratz, and
       de Mattos, by Bishop Thomas of Southern Brazil.
+  - source: ens-72149
+    quote: He was ordained a priest in 1948
   - source: kickhofel-1995
     quote: Em 1948, foi elevado ao presbiterado e designado pároco em Santa Rita dos Sinos.
     page: '250'
+  - source: ieablac-cd1956
+    quote: D—Feb., 1947, P—Apr., 1948, Bp. W. M. M. Thomas.
+  - source: ieablac-cd1950
+    quote: Pelotense Coll. ; Theol. Sem., 1946. D— Feb., 1947, P—Apr., 1948, Bp. W. M. M. Thomas.
   - source: costa2021
     quote: >-
       Foi ordenado ao diaconato durante o 49º Concílio da Igreja, reunido na Catedral da Santíssima Trindade, em
       09 de fevereiro de 1947 e ao presbiterato em 1948, pelas mãos do bispo William Thomas.
     page: '85'
   notes: >-
-    Convenção do diretório: um único 'Bp.' após D e P = mesmo ordenante. O Living Church de 02/05/1948 diz 'Frs.
-    Kainuma, Kratz, and de Mattos, by Bishop Thomas of Southern Brazil'. Fonte: Clerical Directory (ed. 1950/1956),
+    Ordenante no diretório: 'Bp W M M Thomas'. Ordenação conjunta de seis presbíteros; três por Pithan e três por
+    Thomas. Convenção do diretório: um único 'Bp.' após D e P = mesmo ordenante. O Living Church de 02/05/1948 diz
+    'Frs. Kainuma, Kratz, and de Mattos, by Bishop Thomas of Southern Brazil'. Fonte: Clerical Directory (ed. 1950/1956),
     verbete de Kratz. Convenção do diretório: 'D' = diácono, 'P' = presbítero, 'Bp.' = bispo ordenante. Texto vindo
-    de OCR do Internet Archive. Ordenação conjunta de seis presbíteros; três por Pithan e três por Thomas.
+    de OCR do Internet Archive.
 - order: episcopate
   date: '1971-07-25'
   place: Catedral da Santissima Trindade, Porto Alegre
@@ -189,12 +206,28 @@ ordinations:
     "No mesmo ano" (1971, morte de Krischke). Sagrantes nao informados. 'No mesmo ano' = 1971 (ano da morte de Krischke).
     A tese NÃO informa data exata nem sagrantes. Nota 138: primeiro bispo do registro próprio da IEAB (nº 01).
 affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: '1947'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: KRATZ, ARTHUR RODOLPHO (SBra)
+  - source: cd1965
+    quote: D Feb 47 P Apr 48 Bp W M M Thomas
+  - source: cd1968
+    quote: KRATZ, Arthur Rodolpho (SBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1961'
   end: '1968'
-  status: contested
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: KRATZ, Arthur Rodolpho (SBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: >-
       Dez anos depois veio para Porto Alegre, onde pastoreou a Igreja da Ascensão e foi redator chefe do Estandarte
@@ -204,8 +237,9 @@ affiliations:
     quote: sendo eleito pároco da Igreja do Redentor em Pelotas, em 1968.
     page: '85'
   notes: >-
-    Pároco da Igreja da Ascensão, Porto Alegre, e redator-chefe do Estandarte Cristão. Local: Igreja do Redentor,
-    Pelotas.
+    Transferência do distrito missionário (SBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Pároco da Igreja da Ascensão,
+    Porto Alegre, e redator-chefe do Estandarte Cristão. Local: Igreja do Redentor, Pelotas.
   discrepancies:
   - field: start
     value: '1968'
