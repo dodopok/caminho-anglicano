@@ -1,16 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: gervasio-cavalcante-neto
 name: Gervásio Cavalcante Neto
+full_name: Gervásio Cavalcante Neto
 aliases:
+- Dom Gervásio
 - Dom Gervásio Neto
 - Gervásio Neto
+- Rev. Gervásio Neto
 biography: Bispo/clérigo ligado à jurisdição ICEB; ver afirmações.
 sources:
 - source: ciceb-quemsomos
   quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo. Gervásio Neto)
 ordinations:
 - order: episcopate
-  date: 2014-12
+  date: '2014-12-06'
   place: Catedral Betânia, Recife (PE)
   jurisdiction: iceb
   office: auxiliary
@@ -18,18 +21,39 @@ ordinations:
   - evilasio-tenorio
   - leonides-de-menezes-ferreira
   - william-paul-mikler
-  status: probable
+  status: confirmed
   sources:
+  - source: lie-ciceb-sagra-2016
+    quote: Sagração do Bispo Auxiliar Rev. Gervásio Neto em 06/12/2014
+  - source: lie-ciceb-catedral-2016
+    quote: Bispo Diocesano Dom Leonides Bispo Auxiliar Dom Gervásio
   - source: cant-novas-igrejas-2024
     quote: >-
       Em dezembro de 2014, ocorreu a sagração episcopal do reverendo Gervásio Cavalcante Neto, como bispo auxiliar,
       com a presença do bispo William Paul Mikler – bispo presidente da CEEB –, junto com dom Leonides de Menezes
       Ferreira e dom Evilásio Tenório.
   notes: >-
-    CEEB/Catedral Betânia. A fonte diz "com a presença" dos bispos, sem indicar o principal; o local é inferido
-    do capítulo (Catedral Betânia). O livro diz 'com a presença' desses bispos, sem identificar o sagrante principal;
-    listados como co-sagrantes por inferência do contexto.
+    A data completa (6/12/2014) vem da galeria de fotos hospedada no site antigo da Catedral Betânia/CICEB; a galeria
+    não lista os sagrantes. Os nomes dos bispos presentes (Mikler, Leônides de Menezes, Evilásio Tenório) vêm do
+    livro sobre as novas igrejas anglicanas (citado em outro registro) e não identificam o sagrante principal. O
+    local é inferido do endereço da galeria (catedralbetania.html). CEEB/Catedral Betânia. A fonte diz "com a presença"
+    dos bispos, sem indicar o principal; o local é inferido do capítulo (Catedral Betânia). O livro diz 'com a presença'
+    desses bispos, sem identificar o sagrante principal; listados como co-sagrantes por inferência do contexto.
 affiliations:
+- jurisdiction: iceb
+  role: auxiliary_bishop
+  diocese: diocese-missionaria-do-nordeste-do-brasil
+  start: '2014-12-06'
+  status: confirmed
+  sources:
+  - source: lie-ciceb-catedral-2016
+    quote: Bispo Diocesano Dom Leonides Bispo Auxiliar Dom Gervásio Pastor Helson Pastora Raquel
+  - source: lie-yt-busca-gervasio
+    quote: Sermão Culto Igreja Cristã Episcopal Catedral Betânia 01.03.2020  Manhã Bispo Gervásio
+  notes: >-
+    Em 2014-2016 era bispo auxiliar de Dom Leônides; em 2020 a Catedral Betânia já o intitula "Bispo Gervásio";
+    o site atual da CICEB o apresenta como bispo diocesano da Diocese Missionária do Nordeste do Brasil. A data
+    da passagem a diocesano não foi encontrada (provavelmente com a constituição da Província, dez/2021).
 - jurisdiction: iceb
   role: diocesan_bishop
   diocese: diocese-missionaria-do-nordeste-do-brasil-dmnb

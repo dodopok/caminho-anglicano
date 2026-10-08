@@ -1,16 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: alexsandro-benjamim-silva
 name: Alexsandro Benjamim Silva
+full_name: Alexsandro Benjamim Silva
 aliases:
 - Alexsandro Benjamim
 - Bispo Alexsandro
+- Pr. Alexsandro Benjamim
 biography: >-
-  Reverendo da IECB, fundador (com a esposa Ana Janaina Tavares) da Igreja Episcopal Monte Moriá (Camaragibe, PE);
-  após romper com a IECB/CEI em 2021 passou a ser chamado bispo da comunidade, embora nunca tenha sido sagrado.
+  Fundador, com Ana Janaina Tavares, do grupo familiar que deu origem à Paróquia Monte Moriá (Aldeia, Camaragibe),
+  inaugurada em 11 de maio de 2007 sob Dom Paulo Garcia. Não foram encontradas datas de suas ordenações.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: sob a liderança do então reverendo Alexsandro Benjamim Silva, hoje bispo Alexsandro
-  page: '148'
+- source: lie-monte-moria-blog
+  quote: >-
+    Dom Paulo Ruiz Garcia, que em sua visão missionária, por sua vez, compartilhou esse sonho com o casal Alexsandro
+    Benjamim e Ana Janaina Tavares, que abriram seu lar iniciando no dia 16 de novembro de 2006 um grupo familiar
 affiliations:
 - jurisdiction: iemm
   role: founder
@@ -24,17 +27,22 @@ affiliations:
     page: '148'
 - jurisdiction: iecb
   role: clergy
-  start: '2007'
+  start: '2007-05-11'
   end: '2021'
   end_reason: schism
   status: probable
   sources:
+  - source: lie-monte-moria-blog
+    quote: abriram seu lar iniciando no dia 16 de novembro de 2006 um grupo familiar
   - source: cant-novas-igrejas-2024
     quote: >-
       Até o ano de 2021 esteve vinculada à Igreja Episcopal Carismática do Brasil, como paróquia na região.
     page: '148'
   notes: >-
-    Pároco da comunidade Monte Moriá enquanto ligada à IECB (início estimado pela fundação da comunidade em 2007).
+    Local: Paróquia Monte Moriá, Camaragibe. Esta fonte (blog da paróquia, 2012) data a fundação da paróquia (2007-05-11)
+    e o grupo familiar (2006-11-16), mas não diz explicitamente que Alexsandro era o pároco; o fim em 2021 vem de
+    outra fonte já conhecida. Pároco da comunidade Monte Moriá enquanto ligada à IECB (início estimado pela fundação
+    da comunidade em 2007).
 - jurisdiction: iemm
   role: bishop
   start: '2021'
@@ -51,3 +59,17 @@ affiliations:
       Silva
     page: '174'
   notes: Título de bispo sem sagração episcopal (o livro afirma que nunca foi sagrado).
+events:
+- type: other
+  date: '2007-05-11'
+  description: >-
+    Inauguração da Paróquia Monte Moriá (Aldeia, Camaragibe), da IECB, com a presença do arcebispo Paulo Garcia;
+    o grupo familiar que lhe deu origem, do casal Alexsandro Benjamim e Ana Janaina Tavares, iniciou-se em 16/11/2006.
+  status: confirmed
+  sources:
+  - source: lie-monte-moria-blog
+    quote: >-
+      No dia 11 de maio de 2007, com a presença do Arcebispo Dom Paulo Garcia e sua esposa tivemos a inauguração
+      da Paróquia.
+  - source: lie-monte-moria-blog
+    quote: Fundada em 11 de maio de 2007, a paróquia Monte Moriá é fruto de um sonho...

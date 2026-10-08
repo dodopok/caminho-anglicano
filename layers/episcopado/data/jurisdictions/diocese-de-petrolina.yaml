@@ -2,6 +2,7 @@
 id: diocese-de-petrolina
 name: Diocese de Petrolina (IECB)
 aliases:
+- Diocese de Petrolina
 - Diocese de Petrolina (Catedral do Semeador)
 - Diocese de Petrolina / Diocese de Paulista
 type: diocese
@@ -31,6 +32,12 @@ relations:
   target: iecb
   status: probable
   sources:
+  - source: lie-betesda-historia
+    quote: sendo auxiliado por Dom Tony Belo (Bispo de Petrolina).
+  - source: ptwiki-iecb
+    quote: Dom Tony Belo Pereira – 1º Bispo Diocesano (2022-2025)
+  - source: ptwiki-iecb
+    quote: Dom Tony Belo Pereira – Bispo Coadjutor (2025-)
   - source: ptwiki-iecb
     quote: Tony Belo Pereira (2022)
   - source: ier-blogdomagno-petrolina-2023

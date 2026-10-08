@@ -1,10 +1,29 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: givaldo-martins
 name: Givaldo Martins
+full_name: Givaldo Martins de Souza
+aliases:
+- Givaldo Martins de Souza
+- Pastor Givaldo
 biography: Bispo/clérigo ligado à jurisdição ICEB; ver afirmações.
 sources:
 - source: ciceb-quemsomos
   quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo Givaldo Martins)
+ordinations:
+- order: episcopate
+  date: null
+  jurisdiction: iceb
+  office: diocesan
+  status: probable
+  sources:
+  - source: lie-fb-betesda-givaldo
+    quote: Sagração ao Episcopado Rev. Givaldo Martins de Souza.
+  - source: lie-fb-betesda-ebd
+    quote: Aula inicia as 17:30h com nosso Bispo Givaldo Martins!
+  notes: >-
+    O vídeo de sagração está na página da Igreja Cristã Episcopal Betesda no Facebook, sem data ou descrição legíveis
+    na captura. Os metadados da miniatura sugerem 2025, mas isso é apenas indício técnico. Nome completo na legenda:
+    Givaldo Martins de Souza. Sagrantes não informados.
 affiliations:
 - jurisdiction: iceb
   role: diocesan_bishop
@@ -14,3 +33,13 @@ affiliations:
   - source: ciceb-quemsomos
     quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo Givaldo Martins)
   notes: Data e sagrantes não informados no site.
+- jurisdiction: iceb
+  role: clergy
+  diocese: diocese-central-do-nordeste-do-brasil-dcnb-catedral-betesda
+  status: confirmed
+  sources:
+  - source: lie-ciceb-provincia-2014
+    quote: 'Nome do Pároco: Rev. Givaldo Martins'
+  notes: >-
+    Em 2014 era "Rev." e pároco da Paróquia Betesda (Piedade, Jaboatão dos Guararapes), então vinculada à Diocese
+    Missionária do Nordeste do Brasil.

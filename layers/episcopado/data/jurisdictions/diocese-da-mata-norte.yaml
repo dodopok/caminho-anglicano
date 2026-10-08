@@ -10,20 +10,20 @@ tradition: charismatic_episcopal
 country: BR
 description: Diocese da IECB com Catedral do Carpinteiro (Carpina/PE); bispo diocesano Edgar Batista.
 sources:
-- source: ier-betesda-onde-estamos
+- source: lie-betesda-paroquias
   quote: DIOCESE DA MATA NORTE
-- source: ier-betesda-onde-estamos
+- source: lie-betesda-paroquias
   quote: IECB Catedral do Carpinteiro
 relations:
 - type: part_of
   target: iecb
   status: probable
   sources:
-  - source: ier-betesda-onde-estamos
-    quote: 'Bispo Diocesano: Dom Edgar Batista'
   - source: ptwiki-iecb
     quote: Edgar Batista Ferreira Neto (2019)
-  - source: ier-betesda-onde-estamos
+  - source: lie-betesda-paroquias
+    quote: 'Bispo Diocesano: Dom Edgar Batista'
+  - source: lie-betesda-paroquias
     quote: Bispo Carlos Ferraz
   - source: cant-novas-igrejas-2024
     quote: conduzido pelo então reverendo, e atual bispo dom Edgar Batista.

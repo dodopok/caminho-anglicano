@@ -1,14 +1,41 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: markos-leal
 name: Markos Leal
+full_name: Markos Viriato Leal Junior
+aliases:
+- Markos Viriato Leal Junior
+- Pr. Markos Leal
 biography: >-
-  Ex-frequentador da Diocese Anglicana do Recife (IEAB; Catedral da Santíssima Trindade e Seminário Anglicano de
-  Estudos Teológicos); fundador e bispo da Igreja Episcopal Cristã Brasileira; celebrante de mais de três mil casamentos
-  no Recife.
+  Fundador do Ministério Orando em Família / Igreja Episcopal Cristã Brasileira (Recife), celebrante de casamentos.
+  Chamado "Rev." nos sites do ministério até julho de 2016 e "Bispo Dom Markos Leal" a partir de 2017; não foi encontrada
+  fonte com data, local ou sagrantes de sua sagração.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Dom Markos Leal é o fundador da Igreja Episcopal Cristã Brasileira.
-  page: '143'
+- source: lie-fb-iecbr-celebrante
+  quote: Dom Markos Leal, Sacerdote Cristão, Primaz e Bispo diocesano da Igreja Episcopal Cristã Brasileira.
+- source: lie-iecbr-nossahistoria-2019
+  quote: Nosso ministério nasceu em Janeiro de 2011.
+- source: lie-iecbr-home-2017
+  quote: celebrado pelo Bispo da Igreja Episcopal Cristã Brasileira, Dom Markos Leal em 13 de maio de 2017
+ordinations:
+- order: episcopate
+  date: c.2016
+  jurisdiction: iecbr
+  office: diocesan
+  status: contested
+  sources:
+  - source: lie-moef-2016
+    quote: Autores dos Posts Rev. Markos Leal Sylvana Jucá Igreja Episcopal Cristã Brasileira
+  - source: lie-iecbr-home-2017
+    quote: celebrado pelo Bispo da Igreja Episcopal Cristã Brasileira, Dom Markos Leal em 13 de maio de 2017
+  - source: lie-iecbr-nossahistoria-2019
+    quote: Clero e Ministros Bispo – Dom Markos Leal
+  notes: >-
+    Não foi achada fonte com a sagração. Os sites do ministério o chamam "Rev." até julho de 2016 e "Bispo Dom Markos
+    Leal" em maio de 2017 (brasão episcopal publicado em jan/2017), o que sugere elevação entre meados de 2016 e
+    início de 2017. Uma postagem do Instagram (snippet de busca, não aberta) diz "Há 35 anos sou Sacerdote e a 10
+    anos foi eleito Bispo" (maio/2024), o que apontaria para c. 2014; as duas indicações divergem. Sagrantes e local
+    desconhecidos; o site afirma "laços de Intercomunhão" com a Pequena Igreja Apostólica Galicana, sem dizer que
+    dela veio a sucessão.
 affiliations:
 - jurisdiction: iecb-mof
   role: founder
@@ -19,6 +46,29 @@ affiliations:
     quote: Dom Markos Leal é o fundador da Igreja Episcopal Cristã Brasileira.
     page: '143'
   notes: O livro não informa sagração episcopal de Markos Leal.
+- jurisdiction: iecbr
+  role: clergy
+  start: '2011'
+  end: '2016'
+  status: probable
+  sources:
+  - source: lie-moef-2015
+    quote: celebrado pelo Rev. Markos Leal em 13 de junho de 2015
+  - source: lie-moef-2016
+    quote: Autores dos Posts Rev. Markos Leal Sylvana Jucá Igreja Episcopal Cristã Brasileira
+  notes: Intitulado "Rev." (ministro encarregado) nos sites do ministério em junho/2015 e julho/2016.
+- jurisdiction: iecbr
+  role: founder
+  start: 2011-01
+  status: confirmed
+  sources:
+  - source: lie-iecbr-nossahistoria-2019
+    quote: >-
+      Nosso ministério nasceu em Janeiro de 2011. Por não mais compartilharmos com a proposta da instituição religiosa
+      a qual fazíamos parte, eu, Markos e um casal amigo resolvermos sair.
+  notes: >-
+    Texto assinado por Sylvana Diniz Jucá Leal (coordenação do Ministério Orando em Família). Não nomeia a instituição
+    de origem. O site do ministério trata o Ministério Orando em Família como a "Igreja Episcopal Cristã Brasileira".
 - jurisdiction: ieab-dar
   role: member
   end_reason: left

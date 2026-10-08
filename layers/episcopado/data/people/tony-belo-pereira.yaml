@@ -5,6 +5,7 @@ full_name: Tony Belo Pereira
 aliases:
 - Dom Tony
 - Dom Tony Bello
+- Dom Tony Belo
 - Dom Tony Pereira
 - Tony Bello
 - Tony Belo
@@ -44,9 +45,17 @@ affiliations:
 - jurisdiction: iecb
   role: diocesan_bishop
   diocese: diocese-de-petrolina
-  start: '2023-02-12'
+  start: '2022-10-13'
+  end: '2025'
+  end_reason: transfer
   status: probable
   sources:
+  - source: lie-betesda-historia
+    quote: sendo auxiliado por Dom Tony Belo (Bispo de Petrolina).
+  - source: ptwiki-iecb
+    quote: Dom Tony Belo Pereira – 1º Bispo Diocesano (2022-2025)
+  - source: ptwiki-iecb
+    quote: Dom Tony Belo Pereira – Bispo Coadjutor (2025-)
   - source: ier-blogdomagno-petrolina-2023
     quote: A sede em Petrolina terá como Bispo Diocesano, o REVMº Dom Tony Bello.
   - source: ier-edenevaldo-petrolina-2023
@@ -55,15 +64,18 @@ affiliations:
     quote: O seu bispo diocesano é dom Tony Bello, que lidera a jurisdição
     page: '63'
   notes: >-
-    Instalação da catedral anunciada em 06/02/2023 para "o próximo domingo" (12/02/2023); jurisdição declarada "de
-    Arcoverde-PE à Itapetinga-BA".
+    Já chamado "Bispo de Petrolina" em 19/10/2022 (poucos dias após a sagração coletiva de 13/10/2022). Segundo
+    a Wikipédia PT, em 2025 passou a coadjutor da Diocese de Paulista, sucedido em Petrolina por Dom João Humberto
+    do Rêgo Vasconcelos; o site da Betesda ainda o lista em Petrolina. Instalação da catedral anunciada em 06/02/2023
+    para "o próximo domingo" (12/02/2023); jurisdição declarada "de Arcoverde-PE à Itapetinga-BA".
   discrepancies:
   - field: start
-    value: '2022-10-13'
+    value: '2023-02-12'
     sources:
-    - source: cant-novas-igrejas-2024
-      quote: O seu bispo diocesano é dom Tony Bello, que lidera a jurisdição
-      page: '63'
+    - source: ier-blogdomagno-petrolina-2023
+      quote: A sede em Petrolina terá como Bispo Diocesano, o REVMº Dom Tony Bello.
+    - source: ier-edenevaldo-petrolina-2023
+      quote: A Diocese de Petrolina-PE, foi fundada em 12/02/2023, e está sob a supervisão do Bp. Dom Tony Bello
 events:
 - type: other
   date: '2023-02-12'
