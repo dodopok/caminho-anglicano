@@ -157,10 +157,15 @@ affiliations:
   role: diocesan_bishop
   diocese: southern-brazil
   start: '1928'
-  end: '1949'
+  end: '1949-09-30'
   end_reason: retirement
   status: contested
   sources:
+  - source: kickhofel-1995
+    quote: >-
+      Antes de se aposentar em 30 de setembro de 1949, Thomas transferiu a jurisdição da igreja brasileira ao bispo
+      Melcher, em maio daquele ano
+    page: '200'
   - source: wp-en-thomas
     quote: >-
       Bishop William Thomas, missionary bishop of Southern Brazil from 1928 to 1949, when he retired, died at Bethesda,
@@ -174,9 +179,6 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS MISSIONÁRIOS … 1925-1949 - William Mathew Merrick Thomas
     page: '368'
-  notes: >-
-    O trecho da Wikipédia é citação da The Witness de 04/10/1951. O livro conta o período desde a sagração como
-    sufragâneo (1925); a sucessão como bispo missionário titular veio depois.
   discrepancies:
   - field: start
     value: '1925'
@@ -184,6 +186,9 @@ affiliations:
     - source: kickhofel-1995
       quote: BISPOS MISSIONÁRIOS … 1925-1949 - William Mathew Merrick Thomas
       page: '368'
+  notes: >-
+    O trecho da Wikipédia é citação da The Witness de 04/10/1951. O livro conta o período desde a sagração como
+    sufragâneo (1925); a sucessão como bispo missionário titular veio depois.
 events:
 - type: other
   date: 1939-11
