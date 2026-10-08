@@ -3,6 +3,7 @@ id: agostinho-guillon-soria
 name: Agostinho Guillon Sória
 full_name: Agostinho Guillon Sória
 aliases:
+- Agostinho Sória
 - Agostino Soria
 - Dom Agostinho Sória
 birth:
@@ -48,6 +49,11 @@ ordinations:
   - source: kickhofel-1995
     quote: Foi ordenado ao diaconato em 1947 e ao presbiterado no ano seguinte.
     page: '277'
+  - source: costa2021
+    quote: >-
+      Formou-se em Teologia e Filosofia, em Porto Alegre, sendo ordenado ao diaconato em 1947 e ao presbiterato
+      no ano seguinte.
+    page: '88'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
@@ -67,6 +73,11 @@ ordinations:
   - source: kickhofel-1995
     quote: Foi ordenado ao diaconato em 1947 e ao presbiterado no ano seguinte.
     page: '277'
+  - source: costa2021
+    quote: >-
+      Formou-se em Teologia e Filosofia, em Porto Alegre, sendo ordenado ao diaconato em 1947 e ao presbiterato
+      no ano seguinte.
+    page: '88'
   notes: OCR grafa "Séria".
 - order: episcopate
   date: '1977-04-24'
@@ -103,9 +114,22 @@ ordinations:
     não nomeia sagrantes. Bispo da Diocese Central (Rio de Janeiro), sucedendo Sherrill.
 affiliations:
 - jurisdiction: ieab
+  role: bishop
+  start: '1977'
+  end: '1988'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1977-1988 – Agostinho Guillon Sória
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-darj
-  start: '1977'
+  start: '1977-04-24'
   end: '1984'
   end_reason: transfer
   status: probable
@@ -117,6 +141,26 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1977-1984 - Agostinho Guillon Sória
     page: '368'
+  - source: costa2021
+    quote: Diocese Anglicana do Rio de Janeiro … 1977-1984 – Agostinho Guillon Sória
+    page: '521'
+  - source: costa2021
+    quote: >-
+      Edmund Knox Sherrill foi eleito bispo missionário para o Nordeste, sendo substituído, no Rio de Janeiro, por
+      Agostinho Guillon Sória.
+    page: '173'
+  notes: >-
+    Anexo D da tese (bispos por diocese). Transferido para Brasília; a p. 98 diz que assumiu Brasília 'em 1982'
+    e a p. 96 situa a transferência na eleição do sucessor (nov. 1984).
+  discrepancies:
+  - field: start
+    value: '1976'
+    sources:
+    - source: costa2021
+      quote: >-
+        Edmund Knox Sherrill foi eleito bispo missionário para o Nordeste, sendo substituído, no Rio de Janeiro,
+        por Agostinho Guillon Sória.
+      page: '173'
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dab
@@ -138,7 +182,19 @@ affiliations:
       compreendia o Distrito Federal, Mato Grosso, Goiás, Tocantins e o triângulo mineiro. … Oficialmente instalada
       no dia nove de junho de 1985 e instituído seu primeiro bispo
     page: '305'
-  notes: Costa diz tambem que assumiu Brasilia "em 1982" (conflito).
+  - source: costa2021
+    quote: Diocese Anglicana de Brasília … 1985-1988 – Agostinho Guillon Sória
+    page: '522'
+  - source: costa2021
+    quote: >-
+      Após assumir a Diocese de Brasília, em 1982, o bispo Agostinho Sória se aposentou por motivos de saúde.
+    page: '98'
+  - source: costa2021
+    quote: Missionária de Brasília, tornando-se o seu primeiro bispo residente.
+    page: '88'
+  notes: >-
+    Costa diz tambem que assumiu Brasilia "em 1982" (conflito). Anexo D da tese (bispos por diocese). Fim aproximado:
+    sucessão discutida em 1988 (Almir eleito, sagrado em abril de 1989).
   discrepancies:
   - field: end
     value: '1989'
@@ -149,6 +205,16 @@ affiliations:
         compreendia o Distrito Federal, Mato Grosso, Goiás, Tocantins e o triângulo mineiro. … Oficialmente instalada
         no dia nove de junho de 1985 e instituído seu primeiro bispo
       page: '305'
+  - field: start
+    value: '1982'
+    sources:
+    - source: costa2021
+      quote: >-
+        Após assumir a Diocese de Brasília, em 1982, o bispo Agostinho Sória se aposentou por motivos de saúde.
+      page: '98'
+    - source: costa2021
+      quote: Missionária de Brasília, tornando-se o seu primeiro bispo residente.
+      page: '88'
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dm
@@ -163,6 +229,18 @@ affiliations:
       para a Diocese Central, transferindo-se para o Rio de Janeiro.
     page: '277'
   notes: Deão da Catedral da Santíssima Trindade, Porto Alegre, por 15 anos.
+- jurisdiction: ieab
+  role: other
+  role_description: deão
+  end: '1977'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: onde se tornou deão da Catedral da Santíssima Trindade, função que ocupou durante 15 anos.
+    page: '88'
+  notes: >-
+    Cargo: Deão da Catedral da Santíssima Trindade, Porto Alegre. Deão por 15 anos; era deão quando eleito bispo
+    (1976).
 events:
 - type: other
   date: 1976-11
@@ -188,3 +266,11 @@ events:
       Aposentou-se em 1989 por motivos de saúde, depois de quarenta e um anos de ministério ordenado, dos quais
       doze como bispo.
     page: '306'
+- type: other
+  date: '1976-11-11'
+  description: Agostinho Guillon Sória eleito bispo da Diocese Central
+  status: probable
+  sources:
+  - source: costa2021
+    quote: foi sucedido pelo deão de Porto Alegre, Agostinho Guillon Sória77, eleito em 11 de novembro de 1976
+    page: '88'

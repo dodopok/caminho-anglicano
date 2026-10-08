@@ -44,7 +44,7 @@ sources:
     Anglicana Tradicional do Brasil, reunidos na Cidade de Nova Iguaçu-RJ, no mês de novembro de 2025
 - source: iatb-intercomunhoes
   quote: Comunhões e Igrejas com Intercomunhão com IATB The Anglican Episcopal Church—International
-- source: costa-2021-tese
+- source: costa2021
   quote: >-
     o bispo Rui Costa Barbosa, em parceria com outros clérigos, criou a Diocese Anglicana Católica do Brasil, que
     sequer saiu do papel e, posteriormente, foi renomeada Igreja Anglicana Tradicional do Brasil, em Santo André.
@@ -73,3 +73,17 @@ relations:
     quote: The Anglican Episcopal Church International (AECI)
     page: '172'
   notes: O livro diz apenas 'possui um vínculo no estrangeiro'; natureza exata do vínculo não informada.
+- type: schism_from
+  target: iadb-lorite
+  date: null
+  led_by:
+  - rui-costa-barbosa
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      e o bispo Rui Costa Barbosa, em parceria com outros clérigos, criou a Diocese Anglicana Católica do Brasil,
+      que sequer saiu do papel e, posteriormente, foi renomeada Igreja Anglicana Tradicional do Brasil, em Santo
+      André.
+    page: '145'
+  notes: Mesma ressalva da IEEP.

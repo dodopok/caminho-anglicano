@@ -1,8 +1,17 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: j-yasoji-ito
 name: J. Yasoji Ito
+full_name: João Yasoji Ito
 aliases:
+- João Ito
 - João Yasoji Ito
+death:
+  date: '1969-08-07'
+  sources:
+  - source: costa2021
+    quote: >-
+      Este foi o principal legado deixado por João Yasoji Ito, que faleceu no dia 07 de agosto de 1969, aos 80 anos.
+    page: '61'
 biography: >-
   Japonês que iniciou em 1923 a obra entre imigrantes japoneses em SP; ordenado diácono por Kinsolving em 1926.
 sources:
@@ -15,6 +24,7 @@ sources:
 ordinations:
 - order: diaconate
   date: '1926'
+  place: Igreja do Mediador, Santa Maria
   jurisdiction: dmsb
   ordained_by: lucien-lee-kinsolving
   status: probable
@@ -24,8 +34,25 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1926 - … João Yasoji Ito
     page: '369'
+  - source: costa2021
+    quote: >-
+      o bispo Kinsolving delegou a realização dos serviços a Ito, que, diante do reconhecimento do seu trabalho
+      junto à comunidade nipônica, ordenou-o ao diaconato, em 1926, na Igreja do Mediador, em Santa Maria.
+    page: '60'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1928-04-24'
+  place: Igreja do Salvador, Rio Grande
+  jurisdiction: dmsb
+  ordained_by: william-matthews-merrick-thomas
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Dois anos depois, no dia 24 de abril de 1928, o bispo William Thomas o ordenou ao presbiterato, na Igreja
+      do Salvador, em Rio Grande.
+    page: '60'
 affiliations:
 - jurisdiction: dmsb
   role: clergy
@@ -35,3 +62,7 @@ affiliations:
   - source: ens-xxvi-24
     quote: >-
       in 1923 a new missionary work, among Japanese immigrants to Brazil, was begun by the Rev. J. Yasoji Ito
+  - source: costa2021
+    quote: A cidade de Registro foi, por muito tempo, o campo missionário do reverendo João Yasoji Ito.
+    page: '60'
+  notes: 'Local/função: Registro (SP) e missão japonesa.'

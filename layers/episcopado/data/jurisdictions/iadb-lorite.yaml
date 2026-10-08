@@ -34,11 +34,11 @@ founded:
 dissolved:
   date: '2017-10-30'
   sources:
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       Em 30 de outubro de 2017, a Igreja Anglicana do Brasil encerrou suas atividades, deixando uma mensagem em
       seu site
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       originada a partir de um grupo formado por ex-membros da Diocese Anglicana de São Paulo (DASP), Ricardo Lorite
       de Lima, Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres.
@@ -48,11 +48,11 @@ description: >-
   Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres. Encerrou suas atividades em 30/10/2017, por decisão
   do Sínodo de abril de 2017.
 sources:
-- source: costa-2021-tese
+- source: costa2021
   quote: >-
     Em 30 de outubro de 2017, a Igreja Anglicana do Brasil encerrou suas atividades, deixando uma mensagem em seu
     site
-- source: costa-2021-tese
+- source: costa2021
   quote: >-
     originada a partir de um grupo formado por ex-membros da Diocese Anglicana de São Paulo (DASP), Ricardo Lorite
     de Lima, Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres.
@@ -87,3 +87,18 @@ relations:
   notes: >-
     O comunicado fala em igrejas 'agora fundidas em suas tradições, história e doutrinas'; a natureza jurídica da
     ligação não é clara (comunhão ou fusão).
+- type: schism_from
+  target: ieab
+  date: null
+  end: '2017-10-30'
+  led_by:
+  - ricardo-lorite-de-lima
+  - rui-costa-barbosa
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Como exemplo de Igrejas Anglicanas Independentes que surgiram a partir de clérigos que saíram da IEAB, temos
+      a “Igreja Anglicana do Brasil”
+    page: '145'
+  notes: Formada por ex-membros da DASP; encerrada em 30/10/2017.

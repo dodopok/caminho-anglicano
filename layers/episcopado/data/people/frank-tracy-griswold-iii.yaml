@@ -1,3 +1,51 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: frank-tracy-griswold-iii
 name: Frank Tracy Griswold III
+aliases:
+- Dom Frank T. Griswold
+- Frank T. Griswold
+biography: >-
+  Bispo Presidente da Igreja Episcopal dos EUA a quem o Primaz da IEAB escreveu sobre as confirmações de Robinson
+  Cavalcanti em Ohio (2004).
+sources:
+- source: costa2021
+  quote: Dom Frank T. Griswold Revmo. Bispo Presidente da Igreja Episcopal dos Estados Unidos
+  page: '542'
+events:
+- type: other
+  date: null
+  description: >-
+    Carta do Primaz da IEAB, Orlando Santos de Oliveira, ao Bispo Presidente da ECUSA, Frank T. Griswold, desaprovando
+    a participação de Robinson Cavalcanti nas confirmações em Ohio e pedindo desculpas em nome da IEAB.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Dom Frank T. Griswold Revmo. Bispo Presidente da Igreja Episcopal dos Estados Unidos
+    page: '542'
+  - source: costa2021
+    quote: >-
+      Foi com surpresa, tristeza e preocupação que recebemos a notícia da participação do Bispo Robinson Cavalcanti,
+      Diocesano da Diocese Anglicana do Recife, da Província da Igreja Episcopal Anglicana do Brasil, em um Ofício
+      de Confirmação de 110 pessoas em Ohio
+    page: '542'
+  - source: costa2021
+    quote: >-
+      informo que tal assunto será examinado em nossa próxima reunião da Câmara dos Bispos, em 22 e 23 de março
+      de 2004.
+    page: '543'
+  - source: costa2021
+    quote: Revmo. Orlando Santos de Oliveira Bispo Primaz da IEAB
+    page: '544'
+- type: other
+  date: 2004-03
+  description: >-
+    Robinson participou, sem autorização do bispo local, de um ofício de confirmação de 110 pessoas na Diocese de
+    Ohio (EUA) com cinco bispos aposentados da ECUSA; o Primaz Orlando enviou carta de desaprovação ao Bispo Presidente
+    Frank Griswold.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em março de 2004, o Episcopal News Service noticiou que o bispo Robinson participou de um rito de Confirmação
+      na Diocese de Ohio, sem conhecimento e autorização do bispo diocesano local.
+    page: '214'

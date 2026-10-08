@@ -6,7 +6,7 @@ aliases:
 - James Tavares
 biography: Bispo/clérigo ligado à jurisdição DAV; ver afirmações.
 sources:
-- source: costa-2021-tese
+- source: costa2021
   quote: >-
     Durante o 2º Concílio da Diocese, James Tavares foi escolhido como o bispo sucessor, sendo ordenado ao episcopado
     em 14 de outubro de 2018, na Catedral da Santa Mãe de Deus, em Votorantim.
@@ -41,7 +41,7 @@ ordinations:
     quote: >-
       Sua sagração ocorreu em 14 de outubro de 2018, na Catedral Santa Mãe de Deus, tendo como 171 sagrantes Dom
       Theodoro Oliveira, Dom James Antônio Roque, Dom Frederick Haas e Dom Rafael Ribeiro Campos.
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       Durante o 2º Concílio da Diocese, James Tavares foi escolhido como o bispo sucessor, sendo ordenado ao episcopado
       em 14 de outubro de 2018, na Catedral da Santa Mãe de Deus, em Votorantim.
@@ -62,7 +62,8 @@ ordinations:
   notes: >-
     Fecha a lacuna de sagrante (jurisdicoes-menores.json tinha SP nulo). Província Anglicana de Cristo Salvador
     / Diocese Anglicana de Votorantim. O livro lista os quatro como 'sagrantes' sem distinguir o principal (Theodoro
-    Oliveira é citado primeiro). Eleito bispo sucessor no 2º Concílio da Diocese. Data e local não informados.
+    Oliveira é citado primeiro). Eleito bispo sucessor no 2º Concílio da Diocese. Data e local não informados. Sagrantes
+    não informados.
 affiliations:
 - jurisdiction: dav
   role: bishop

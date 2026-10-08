@@ -2,13 +2,22 @@
 id: maria-nylde-amaral-da-cunha
 name: Maria Nylde Amaral da Cunha
 aliases:
+- Irmã Maria
 - Maria Nilde Cunha
+biography: >-
+  Única integrante da Ordem de Santa Maria; diácona (1981) e presbítera (1990), atuou na Diocese de Pelotas.
+sources:
+- source: costa2021
+  quote: >-
+    Das cinco candidatas que fizeram o teste vocacional, apenas uma senhora, Maria Nylde Amaral da Cunha, deu continuidade
+    ao projeto.
+  page: '93'
 ordinations:
 - order: diaconate
   date: '1989'
   jurisdiction: ieab
   ordained_by: luiz-osorio-pires-prado
-  status: probable
+  status: contested
   sources:
   - source: cant-identidades-numeros-2024
     quote: >-
@@ -25,10 +34,26 @@ ordinations:
       tarde foi ordenada ao diaconato e ao presbiterado pelo bispo Luiz Osório Pires Prado, da Diocese Anglicana
       de Pelotas, onde passou a exercer o seu ministério regular.
     page: '318'
+  - source: costa2021
+    quote: >-
+      nome religioso pelo qual era conhecida –, foi ordenada ao diaconato em 1981 e ao presbiterato em 1990, exercendo
+      o seu ministério na Diocese de Pelotas.
+    page: '94'
+  discrepancies:
+  - field: date
+    value: '1981'
+    sources:
+    - source: costa2021
+      quote: >-
+        nome religioso pelo qual era conhecida –, foi ordenada ao diaconato em 1981 e ao presbiterato em 1990, exercendo
+        o seu ministério na Diocese de Pelotas.
+      page: '94'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Data de 1981 conflita com a aprovação da ordenação feminina (1984) e com Carmen Etel ser a primeira mulher ordenada
+    (1985) — ver dúvidas.
 - order: presbyterate
-  date: null
+  date: '1990'
   jurisdiction: ieab
   ordained_by: luiz-osorio-pires-prado
   status: probable
@@ -45,6 +70,11 @@ ordinations:
       tarde foi ordenada ao diaconato e ao presbiterado pelo bispo Luiz Osório Pires Prado, da Diocese Anglicana
       de Pelotas, onde passou a exercer o seu ministério regular.
     page: '318'
+  - source: costa2021
+    quote: >-
+      nome religioso pelo qual era conhecida –, foi ordenada ao diaconato em 1981 e ao presbiterato em 1990, exercendo
+      o seu ministério na Diocese de Pelotas.
+    page: '94'
 affiliations:
 - jurisdiction: ieab
   role: clergy

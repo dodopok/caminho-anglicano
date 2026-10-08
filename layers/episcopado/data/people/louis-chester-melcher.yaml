@@ -6,6 +6,7 @@ aliases:
 - Bishop Melcher
 - Louis C. Melcher
 - Rt. Rev. Louis C. Melcher
+- bispo Melcher
 birth:
   date: '1898-08-03'
   sources:
@@ -19,6 +20,16 @@ birth:
     quote: Louis Chester Melcher | missionary bishop of the Anglican Episcopal Church
   - source: wp-en-melcher
     quote: '''''''Louis Chester Melcher'''''' (August 3, 1898 - September 21, 1965)'
+  discrepancies:
+  - field: date
+    value: '1898-08-08'
+    sources:
+    - source: costa2021
+      quote: Louis Chester Melcher nasceu 08 de agosto de 1898 em Baraboo, Wisconsin.
+      page: '71'
+    - source: costa2021
+      quote: Faleceu em 21 de setembro de 1965 em Pinehurst
+      page: '71'
 death:
   date: '1965-09-21'
   sources:
@@ -32,6 +43,12 @@ death:
     quote: Louis Chester Melcher | missionary bishop of the Anglican Episcopal Church
   - source: wp-en-melcher
     quote: '''''''Louis Chester Melcher'''''' (August 3, 1898 - September 21, 1965)'
+  - source: costa2021
+    quote: Louis Chester Melcher nasceu 08 de agosto de 1898 em Baraboo, Wisconsin.
+    page: '71'
+  - source: costa2021
+    quote: Faleceu em 21 de setembro de 1965 em Pinehurst
+    page: '71'
   - source: ens-xxxvi-7
     quote: The Rt. Rev. Louis Chester Melcher, retired Bishop of Central Brazil, died Sept. 21.
 wikidata: Q67784953
@@ -48,19 +65,25 @@ sources:
 - source: wd-q67784953
   quote: Louis Chester Melcher | missionary bishop of the Anglican Episcopal Church
 ordinations:
+- order: presbyterate
+  date: '1925'
+  jurisdiction: tec
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Foi ordenado ao sacerdócio em 1925.
+    page: '71'
 - order: episcopate
   date: '1948-02-05'
   place: Trinity Church, Columbia, Carolina do Sul (EUA)
   jurisdiction: tec
-  office: missionary
+  office: coadjutor
   principal_consecrator: henry-knox-sherrill
   co_consecrators:
   - edmund-dandridge
   - john-gravatt
-  status: contested
+  status: confirmed
   sources:
-  - source: iab-poster-linhagem-meira
-    quote: teve papel decisivo ao consagrar missionários como Louis Chester Melcher
   - source: wit-1948-02-12
     quote: >-
       Bishop Middle- ton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be the
@@ -89,54 +112,11 @@ ordinations:
       | 475 | [[Louis C. Melcher]]<!--Louis Chester MELCHER--> | [[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]]
       [[John J. Gravatt|417]] | 1948 | [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|I Central
       Brazil (Rio de Janeiro)]] |
-  discrepancies:
-  - field: jurisdiction
-    value: dmsb
-    sources:
-    - source: wit-1948-02-12
-      quote: >-
-        Bishop Middle- ton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be
-        the bishop coadju­ tor of Southern Brazil, said that it is the task of Christians
-    - source: wit-1948-02-12
-      quote: The service was held at Trinity Church here on February 5th.
-    - source: wit-1948-01-29
-      quote: >-
-        The Presiding Bishop will be the consecrator, assisted by Bishop Gra- vatt of Upper South Carolina and Bishop
-        Dandridge of Tennessee.
-    - source: wp-en-histlist
-      quote: '[[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]] [[John J. Gravatt|417]]'
-    - source: lc-1948-02-15
-      quote: >-
-        The Rt. Rey. Louis Chester Melcher was consecrated Bishop Coadjutor of Southern Brazil on February 5th at
-        Trinity Church, Columbia, §. C. The Presiding Bishop was the consecrator, assisted by Bishops Gravatt of
-        Upper South Carolina and Dandridge of Ten- nessee as co-consecrators.
-    - source: wit-1948-02-12
-      quote: >-
-        Bishop Middleton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be the
-        bishop coadju­ tor of Southern Brazil
-    - source: wp-en-melcher
-      quote: He had been consecrated there as coadjutor bishop of Southern Brazil on February 5, 1948.
-    - source: wp-lista-bispos-tec
-      quote: >-
-        | 475 | [[Louis C. Melcher]]<!--Louis Chester MELCHER--> | [[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]]
-        [[John J. Gravatt|417]] | 1948 | [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|I
-        Central Brazil (Rio de Janeiro)]] |
-  - field: office
-    value: coadjutor
-    sources:
-    - source: wit-1948-02-12
-      quote: >-
-        Bishop Middleton Barnwell of Georgia, preaching at the consecration of the Rev. Louis C. Melcher to be the
-        bishop coadju­ tor of Southern Brazil
-    - source: wit-1948-02-12
-      quote: The service was held at Trinity Church here on February 5th.
-    - source: wp-en-melcher
-      quote: He had been consecrated there as coadjutor bishop of Southern Brazil on February 5, 1948.
-    - source: wp-lista-bispos-tec
-      quote: >-
-        | 475 | [[Louis C. Melcher]]<!--Louis Chester MELCHER--> | [[Henry Knox Sherrill|372]] [[Edmund P. Dandridge|407]]
-        [[John J. Gravatt|417]] | 1948 | [[Anglican Episcopal Church of Brazil#Dioceses and mission districts|I
-        Central Brazil (Rio de Janeiro)]] |
+  - source: iab-poster-linhagem-meira
+    quote: teve papel decisivo ao consagrar missionários como Louis Chester Melcher
+  - source: costa2021
+    quote: Foi sagrado ao episcopado em 05 de fevereiro de 1948, sendo enviado para trabalhar no Brasil.
+    page: '71'
   notes: >-
     Sagrado bispo coadjutor do Sul do Brasil. Apresentantes: bispos Jackson (Louisiana) e Carruthers (South Carolina);
     litanista Keeler (Minnesota); epistoleiro Phillips (SW Virginia); evangelista Wright (East Carolina); pregador
@@ -145,8 +125,19 @@ ordinations:
     Louis Chester Melcher" — data, local e cargo CONFIRMADOS por fonte primária (The Witness, 12/02/1948), que não
     nomeia o sagrante; Sherrill como sagrante principal (com Dandridge e Gravatt) só pela lista de sucessão da Wikipédia
     — PROVÁVEL. Sherrill era Presiding Bishop em 1948. Observação: a lista da Wikipédia o põe como "I Central Brazil",
-    mas na sagração era coadjutor do Sul do Brasil.
+    mas na sagração era coadjutor do Sul do Brasil. Eleito em 1948 'primeiro bispo coadjutor do Brasil'. Sagrantes
+    não informados.
 affiliations:
+- jurisdiction: dmsb
+  role: bishop
+  start: '1948'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 1948, o reverendo Louis Chester Melcher55 foi eleito para ser o primeiro bispo coadjutor do Brasil.
+    page: '71'
+  notes: 'Local/função: Brasil (coadjutor).'
 - jurisdiction: dmsb
   role: bishop
   diocese: southern-brazil
@@ -192,6 +183,12 @@ affiliations:
       Depois de oito anos no Brasil, Melcher renunciou ao governo da Diocese Central em outubro de 1958, e retornou
       aos Estados Unidos
     page: '274'
+  - source: costa2021
+    quote: Ao chegar ao Brasil, assumiu a Diocese
+    page: '71'
+  - source: costa2021
+    quote: Em 1959, Melcher entregou o comando da Diocese ao bispo Sherrill.
+    page: '75'
   notes: 'Local: Rio de Janeiro.'
   discrepancies:
   - field: end_reason
@@ -202,6 +199,24 @@ affiliations:
         Depois de oito anos no Brasil, Melcher renunciou ao governo da Diocese Central em outubro de 1958, e retornou
         aos Estados Unidos
       page: '274'
+  - field: end
+    value: '1959'
+    sources:
+    - source: costa2021
+      quote: Ao chegar ao Brasil, assumiu a Diocese
+      page: '71'
+    - source: costa2021
+      quote: Em 1959, Melcher entregou o comando da Diocese ao bispo Sherrill.
+      page: '75'
+  - field: end_reason
+    value: transfer
+    sources:
+    - source: costa2021
+      quote: Ao chegar ao Brasil, assumiu a Diocese
+      page: '71'
+    - source: costa2021
+      quote: Em 1959, Melcher entregou o comando da Diocese ao bispo Sherrill.
+      page: '75'
 events:
 - type: other
   date: 1947-11
@@ -261,3 +276,14 @@ events:
       Antes de se aposentar em 30 de setembro de 1949, Thomas transferiu a jurisdição da igreja brasileira ao bispo
       Melcher, em maio daquele ano
     page: '200'
+- type: other
+  date: null
+  description: >-
+    Melcher, primeiro presidente do Conselho Nacional; rev. Curtis Fletcher, primeiro secretário-executivo
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O primeiro presidente do Conselho Nacional foi o bispo Melcher e o reverendo Curtis Fletcher seu primeiro
+      secretário-executivo, ambos estadunidenses.
+    page: '72'

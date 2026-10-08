@@ -1,6 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: stuart-broughton
 name: Stuart Broughton
+full_name: Stuart Roger Broughton
+aliases:
+- Stuart Roger Broughton
+biography: >-
+  Clérigo da Igreja Episcopal do Brasil presente no primeiro concílio da Diocese Setentrional (1976), ligado à Missão
+  de Cristo Redentor, Salvador (BA).
+sources:
+- source: costa2021
+  quote: >-
+    CLÉRIGOS: Dom Edmund Knox Sherrill, bispo da Diocese Setentrional e presidente do concílio … Stuart Roger Broughton,
+    da Missão de Cristo Redentor, Salvador, Bahia
+  page: '529'
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -13,4 +25,54 @@ affiliations:
       Roger Blankley e Stuart Broughton, quando começou o trabalho missionário entre os brasileiros, surgindo as
       primeiras conversões.
     page: '297'
-  notes: Missionário na capelania inglesa de Salvador (Christ Church / Missão de Cristo Redentor).
+  - source: costa2021
+    quote: >-
+      CLÉRIGOS: Dom Edmund Knox Sherrill, bispo da Diocese Setentrional e presidente do concílio … Stuart Roger
+      Broughton, da Missão de Cristo Redentor, Salvador, Bahia
+    page: '529'
+  notes: >-
+    Missionário na capelania inglesa de Salvador (Christ Church / Missão de Cristo Redentor). Anexo G: clérigo participante
+    do primeiro concílio da Diocese Setentrional (Recife, 25-27/06/1976), ligado à Missão de Cristo Redentor, Salvador
+    (BA). Datas de início e fim do vínculo não informadas; o vínculo está apenas atestado em junho de 1976.
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-darj
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Cento e doze anos depois, a capelania passou a jurisdição da Diocese Central sob o pastorado dos missionários
+      Roger Blankley e Stuart Broughton
+    page: '174'
+  - source: costa2021
+    quote: enquanto o rev. Broughton permanecia no pastorado da comunidade inglesa.
+    page: '174'
+  notes: 'Local: Salvador (capelania). Missionário; citação de KICKHÖFEL, 1995.'
+events:
+- type: other
+  date: '1976-06-25'
+  description: >-
+    Primeiro Concílio da Diocese Setentrional da Igreja Episcopal do Brasil, em Recife, de 25 a 27 de junho de 1976,
+    convocado e presidido pelo bispo diocesano Edmund Knox Sherrill, com representantes da Paróquia da SS. Trindade
+    (Recife), da Paróquia de Santa Maria (Belém) e da Missão Cristo Redentor (Salvador). Participaram cinco clérigos
+    (Sherrill, Anselmo João Stein, Joselino Lobato de Souza, Paulo Ruiz Garcia, Stuart Roger Broughton), quatro
+    delegados leigos e dois suplentes. Aprovou-se proposta de orçamento para 1977; o culto de encerramento foi pregado
+    pelo Rev. Stuart Broughton.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Teve lugar em Recife, Pernambuco, do período de 25 a 27 de junho passado, o primeiro concílio da Diocese Setentrional
+      da Igreja Episcopal do Brasil.
+    page: '528'
+  - source: costa2021
+    quote: '(Fonte: Estandarte Cristão, nº 1595, 1976, p. 8)'
+    page: '528'
+  - source: costa2021
+    quote: em boa hora convocado pelo bispo diocesano Edmund Knox Sherrill
+    page: '528'
+  - source: costa2021
+    quote: >-
+      Participaram do histórico concílio cinco clérigos, quatro delegados leigos, dois suplentes e diversos membros
+      da congregação local e da Missão do Salvador.
+    page: '529'

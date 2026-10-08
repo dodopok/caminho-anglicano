@@ -4,6 +4,25 @@ name: John Gaw Meem
 aliases:
 - John Meem
 - Rev. John G. Meem
+- reverendo Meem
+birth:
+  date: '1864-08-02'
+  sources:
+  - source: costa2021
+    quote: John Gaw Meem nasceu em 02 de agosto de 1864, em Lousiana.
+    page: '52'
+  - source: costa2021
+    quote: Faleceu em 20 de novembro de 1921, na cidade do Rio de Janeiro.
+    page: '52'
+death:
+  date: '1921-11-20'
+  sources:
+  - source: costa2021
+    quote: John Gaw Meem nasceu em 02 de agosto de 1864, em Lousiana.
+    page: '52'
+  - source: costa2021
+    quote: Faleceu em 20 de novembro de 1921, na cidade do Rio de Janeiro.
+    page: '52'
 biography: >-
   Missionário norte-americano chegado em 1891; representou a convocação brasileira na Convenção Geral de 1898; responsável
   pela obra no Rio até sua morte (1924).
@@ -12,6 +31,32 @@ sources:
   quote: with Meem designated as their representatives to carry the news to the General Convention
 - source: som-1898-11
   quote: the Bev. John G. Meem, of Brazil
+ordinations:
+- order: diaconate
+  date: '1891-06-28'
+  place: Capela do Seminário Teológico de Virgínia
+  jurisdiction: tec
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi ordenado diácono junto com William Brown, na Capela do Seminário, em 28 de junho de 1891 e a 02 de agosto
+      do mesmo ano elevado ao presbiterato.
+    page: '52'
+  notes: >-
+    Nota 38 (sobre W. C. Brown) diz 'ordenado diácono junto com William Brown' — provável troca por John Gaw Meem;
+    aplicado aos dois. Ordenante não informado.
+- order: presbyterate
+  date: '1891-08-02'
+  jurisdiction: tec
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi ordenado diácono junto com William Brown, na Capela do Seminário, em 28 de junho de 1891 e a 02 de agosto
+      do mesmo ano elevado ao presbiterato.
+    page: '52'
+  notes: Mesma ambiguidade da nota 38; ordenante não informado.
 affiliations:
 - jurisdiction: dmsb
   role: clergy

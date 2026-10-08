@@ -18,6 +18,9 @@ birth:
   - source: cant-novas-igrejas-2024
     quote: Em 13 de fevereiro de 2023 o bispo Roger Bird faleceu.
     page: '96'
+  - source: costa2021
+    quote: Nascido em 16 de março de 1945, em uma família de ingleses da cidade de São Paulo, Roger
+    page: '111'
 death:
   date: '2023-02-13'
   sources:
@@ -51,6 +54,9 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1989 - … Roger Douglas Bird
     page: '373'
+  - source: costa2021
+    quote: Foi ordenado diácono, em 1989, e presbítero, em 1990.
+    page: '111'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
@@ -61,6 +67,9 @@ ordinations:
   sources:
   - source: cant-novas-igrejas-2024
     quote: Foi ordenado diácono em 1989 e presbítero em 1990, ambos pelo Bispo Takatsu.
+  - source: costa2021
+    quote: Foi ordenado diácono, em 1989, e presbítero, em 1990.
+    page: '111'
 - order: episcopate
   date: '2007-09-07'
   place: Catedral Anglicana de Sao Paulo (se diocesana)
@@ -73,7 +82,7 @@ ordinations:
   - hiroshi-ito
   - nathan-baxter
   - naudal-gomes
-  status: contested
+  status: confirmed
   sources:
   - source: costa2021
     quote: >-
@@ -96,15 +105,13 @@ ordinations:
       Sagrado no dia 7 de setembro do mesmo ano, exerceu o episcopado na Diocese Anglicana de São Paulo (IEAB) até
       2012, sucedendo o Bispo Hiroshi Ito.
     page: '96'
-  discrepancies:
-  - field: jurisdiction
-    value: ieab-dasp
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Sagrado no dia 7 de setembro do mesmo ano, exerceu o episcopado na Diocese Anglicana de São Paulo (IEAB)
-        até 2012, sucedendo o Bispo Hiroshi Ito.
-      page: '96'
+  - source: costa2021
+    quote: >-
+      A sagração aconteceu na sé diocesana, no feriado nacional de 07 de setembro do mesmo ano, tendo como sagrante
+      principal o Bispo Primaz da IEAB, Maurício Andrade, e como co-sagrantes os bispos Hiroshi Ito, Celso Franco,
+      Naudal Alves Gomes, Glauco Soares de Lima, e Nathan Baxter, da Diocese da Pensilvânia Central, da Igreja Episcopal
+      dos Estados Unidos.
+    page: '111'
   notes: >-
     A Wikipedia PT cita o Estandarte Cristao jul-ago/2007 (fonte primaria, nao aberta aqui) para a lista de co-sagrantes.
     Eleito no concílio extraordinário de 07/06/2007 em São Paulo; o livro não cita os sagrantes.
@@ -118,13 +125,27 @@ affiliations:
   sources:
   - source: costa2021
     quote: romperam com a Província, fundando o Movimento Anglicano no Brasil (MAnB).
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2007-2012 – Roger Douglas Bird
+    page: 518-519
+  discrepancies:
+  - field: end
+    value: '2012'
+    sources:
+    - source: costa2021
+      quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2007-2012 – Roger Douglas Bird
+      page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dasp
   start: '2007-09-07'
   end: '2012-11-21'
   end_reason: resignation
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: 2007-2012 – Roger Douglas Bird
@@ -132,7 +153,35 @@ affiliations:
     quote: >-
       Em 21 de novembro de 2012, o então bispo Roger Bird apresentou sua carta de resignação do cargo de bispo da
       DASP
-  notes: Depois uniu-se ao Movimento Anglicano no Brasil (fora da IEAB).
+  - source: costa2021
+    quote: Diocese Anglicana de São Paulo … 2007-2012 – Roger Douglas Bird
+    page: 521-522
+  - source: costa2021
+    quote: >-
+      Assim, a comunidade, junto com o reverendo Aldo Quintão e os bispos Roger Douglas Bird – então diocesano –
+      e Glauco Soares de Lima – emérito da DASP –, se desligaram formalmente da Igreja Episcopal Anglicana do Brasil.
+    page: '147'
+  notes: >-
+    Depois uniu-se ao Movimento Anglicano no Brasil (fora da IEAB). Anexo D da tese (bispos por diocese).
+  discrepancies:
+  - field: end
+    value: '2013-04-06'
+    sources:
+    - source: costa2021
+      quote: >-
+        Assim, a comunidade, junto com o reverendo Aldo Quintão e os bispos Roger Douglas Bird – então diocesano
+        – e Glauco Soares de Lima – emérito da DASP –, se desligaram formalmente da Igreja Episcopal Anglicana do
+        Brasil.
+      page: '147'
+  - field: end_reason
+    value: schism
+    sources:
+    - source: costa2021
+      quote: >-
+        Assim, a comunidade, junto com o reverendo Aldo Quintão e os bispos Roger Douglas Bird – então diocesano
+        – e Glauco Soares de Lima – emérito da DASP –, se desligaram formalmente da Igreja Episcopal Anglicana do
+        Brasil.
+      page: '147'
 - jurisdiction: ieab-dasp
   role: diocesan_bishop
   start: '2007-09-07'
@@ -165,10 +214,10 @@ affiliations:
       a Catedral Anglicana de São Paulo, que passou para a supervisão episcopal dos dois bispos.
 - jurisdiction: manb
   role: bishop
-  start: '2013'
+  start: '2013-04-06'
   status: probable
   sources:
-  - source: costa-2021-tese
+  - source: costa2021
     quote: Atualmente ela possui apenas um bispo, Roger Bird
   - source: cant-novas-igrejas-2024
     quote: >-
@@ -255,3 +304,32 @@ events:
       Em 13 de fevereiro de 2023 o bispo Roger Bird faleceu.32 Em 17 de Fevereiro de 2024, foi inaugurada uma nova
       creche
     page: '96'
+- type: other
+  date: '2007-06-07'
+  description: >-
+    Roger Douglas Bird, deão da Catedral Anglicana de São Paulo, eleito quinto bispo de São Paulo em Concílio Extraordinário
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Em 07 de junho de 2007, o reverendo Roger Douglas Bird 108 –
+    page: '111'
+- type: other
+  date: '2013'
+  description: >-
+    47º Concílio da DASP elege Flávio Augusto Borges Irala sexto bispo diocesano de São Paulo (19 a 18 na ordem
+    leiga, 15 a 13 na clerical); o bispo Roger Bird considera a eleição irregular e cancela o Concílio
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Após uma série de escrutínios, este último acabou eleito para se tornar o sexto bispo diocesano de São Paulo154.
+    page: '147'
+  - source: costa2021
+    quote: >-
+      Durante o 47º Concílio da DASP o reverendo Flávio Irala foi eleito bispo desta diocese por 19 a 18 votos na
+      ordem leiga e 15 a 13 votos na ordem clerical.
+    page: '147'
+  - source: costa2021
+    quote: >-
+      a eleição foi considera irregular pelo bispo Roger Douglas Bird155, declarando o cancelamento do Concílio.
+    page: '147'

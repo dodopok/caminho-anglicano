@@ -5,28 +5,32 @@ name: Diocese Anglicana de Brasilia (ex-Diocese Missionaria de Brasilia)
 aliases:
 - Diocese Anglicana de Brasilia
 - Diocese Anglicana de Brasília
+- Diocese Anglicana de Brasília (ex-Diocese Missionária de Brasília)
 - Diocese Missionária de Brasília
 type: diocese
 country: BR
 founded:
-  date: '1984'
+  date: '1982'
   sources:
-  - source: ieab-brasilia-35
-    quote: Ela foi criada em 1984 e instalada em 1985.
+  - source: kickhofel-1995
+    quote: Diocese Missionária de Brasília, criada em 1982 e instalada em 1985.
+    page: '283'
+  - source: kickhofel-1995
+    quote: >-
+      Oficialmente instalada no dia nove de junho de 1985 e instituído seu primeiro bispo, a data assinalava também
+      o 25º. aniversário da primeira celebração eucarística da igreja em Brasília
+    page: '305'
   - source: costa2021
     quote: Em 1982 também foi criada uma Diocese Missionária, sediada na Capital Federal
+    page: '85'
   discrepancies:
   - field: date
-    value: '1982'
+    value: '1984'
     sources:
-    - source: kickhofel-1995
-      quote: Diocese Missionária de Brasília, criada em 1982 e instalada em 1985.
-      page: '283'
-    - source: kickhofel-1995
-      quote: >-
-        Oficialmente instalada no dia nove de junho de 1985 e instituído seu primeiro bispo, a data assinalava também
-        o 25º. aniversário da primeira celebração eucarística da igreja em Brasília
-      page: '305'
+    - source: ieab-brasilia-35
+      quote: Ela foi criada em 1984 e instalada em 1985.
+    - source: costa2021
+      quote: Em 1982 também foi criada uma Diocese Missionária, sediada na Capital Federal
 website: https://dab.org.br/
 description: Criada em 1984 e instalada em 1985 segundo a IEAB; Costa menciona criacao em 1982.
 sources:
@@ -105,3 +109,36 @@ relations:
       compreendia o Distrito Federal, Mato Grosso, Goiás, Tocantins e o triângulo mineiro. … Oficialmente instalada
       no dia nove de junho de 1985 e instituído seu primeiro bispo
     page: '305'
+  - source: costa2021
+    quote: Diocese Anglicana de Brasília … 1985-1988 – Agostinho Guillon Sória
+    page: '522'
+  - source: costa2021
+    quote: Diocese Anglicana de Brasília … 1988-2002 – Almir dos Santos
+    page: '522'
+  - source: costa2021
+    quote: Diocese Anglicana de Brasília … 2003-2003 – Glauco Soares de Lima (Interino)
+    page: '522'
+  - source: costa2021
+    quote: Diocese Anglicana de Brasília … 2003-2003 – Orlando Santos de Oliveira (Interino)
+    page: '522'
+  - source: costa2021
+    quote: Diocese Anglicana de Brasília … 2003- – Maurício José Araújo de Andrade
+    page: '522'
+  - source: costa2021
+    quote: >-
+      Após assumir a Diocese de Brasília, em 1982, o bispo Agostinho Sória se aposentou por motivos de saúde.
+    page: '98'
+  - source: costa2021
+    quote: Missionária de Brasília, tornando-se o seu primeiro bispo residente.
+    page: '88'
+  - source: costa2021
+    quote: Diocese Anglicana de Brasília, sucedendo a Almir dos Santos.
+    page: '107'
+  - source: costa2021
+    quote: >-
+      Em 2003, o reverendo Maurício José Araújo de Andrade 103, que tinha servido como Secretário-Geral da Igreja,
+      de 1994 até então, foi eleito o novo bispo da
+    page: '106'
+  - source: costa2021
+    quote: Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília
+    page: '218'

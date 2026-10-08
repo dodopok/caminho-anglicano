@@ -5,6 +5,7 @@ full_name: Elliott Lorenz Sorge
 aliases:
 - Elliot Lorenz Sorge
 - Elliot Sorge
+- Elliott Sorge
 - Rt. Rev. Elliott L. Sorge
 birth:
   date: '1929-01-31'
@@ -30,6 +31,29 @@ sources:
 - source: costa2021
   quote: Faleceu em 06 de dezembro de 2011.
 ordinations:
+- order: diaconate
+  date: 1954-06
+  jurisdiction: tec
+  ordained_by: richard-r-emery
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi ordenado diácono em junho e presbítero em dezembro de 1954, pelo bispo Richard R. Emery, da Diocese de
+      Dakota do Norte.
+    page: '86'
+  notes: '''pelo bispo Richard R. Emery'' fecha a frase; atribuído às duas ordenações.'
+- order: presbyterate
+  date: 1954-12
+  jurisdiction: tec
+  ordained_by: richard-r-emery
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi ordenado diácono em junho e presbítero em dezembro de 1954, pelo bispo Richard R. Emery, da Diocese de
+      Dakota do Norte.
+    page: '86'
 - order: episcopate
   date: '1971-01-31'
   place: Paroquia da Santissima Trindade, Sao Paulo
@@ -57,9 +81,18 @@ ordinations:
       os bispos Edmund Knox Sherrill e Daniel da Pina Cabral, da Diocese dos Libombos, Moçambique, que foi também
       o pregador.
     page: '284'
+  - source: costa2021
+    quote: sendo consagrado em 1971, pelo bispo Plinio Lauer Simões.
+    page: '86'
+  - source: costa2021
+    quote: >-
+      a eleição do primeiro bispo diocesano, o norte-americano Elliott Lorenz Sorge 73, sagrado na Paróquia da Santíssima
+      Trindade.
+    page: '86'
   notes: >-
     Eleito em 31/01/1970; primeiro bispo eleito por uma diocese brasileira apos a autonomia. Simões foi sagrante
-    por delegação, na ausência do primaz Krischke, doente.
+    por delegação, na ausência do primaz Krischke, doente. Co-sagrantes não informados. Nota 138: nº 02 no registro
+    da IEAB.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -75,19 +108,27 @@ affiliations:
     page: '284'
   notes: Missionário em Belém do Pará (Missão de Santa Maria) e depois em Itariri e Santos.
 - jurisdiction: ieab
+  role: bishop
+  start: '1971'
+  end: '1984'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1971-1984 – Elliott Lorenz Sorge
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. O Anexo
+    D dá 1971-1977 em São Paulo.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dasp
   start: 1971-01
   end: '1977-06-19'
   end_reason: resignation
-  status: contested
+  status: probable
   sources:
-  - source: kickhofel-1995
-    quote: >-
-      O bispo Sorge, que dirigiu a diocese de janeiro de 1971 a junho de 1977, tentou implantar um programa integrado,
-      envolvendo a maioria das paróquias e missões, mas não conseguiu neutralizar o descontentamento e forte oposição
-      da maioria do clero, provocando sua renúncia em 19 de junho de 1977.
-    page: '287'
   - source: costa2021
     quote: 1971-1977 – Elliott Lorenz Sorge
   - source: wp-pt-sorge
@@ -100,6 +141,21 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1971-1976 - Elliot Lorenz Sorge
     page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      O bispo Sorge, que dirigiu a diocese de janeiro de 1971 a junho de 1977, tentou implantar um programa integrado,
+      envolvendo a maioria das paróquias e missões, mas não conseguiu neutralizar o descontentamento e forte oposição
+      da maioria do clero, provocando sua renúncia em 19 de junho de 1977.
+    page: '287'
+  - source: costa2021
+    quote: Diocese Anglicana de São Paulo … 1971-1977 – Elliott Lorenz Sorge
+    page: '521'
+  - source: costa2021
+    quote: Após sua renúncia em 1977, voltou aos Estados Unidos, sendo eleito bispo de Easton
+    page: '86'
+  notes: >-
+    Renunciou ao ser nomeado oficial no Centro da Igreja Episcopal (Nova York); depois bispo de Easton (TEC) 1983-1993.
+    Anexo D da tese (bispos por diocese).
   discrepancies:
   - field: end
     value: '1976'
@@ -107,8 +163,17 @@ affiliations:
     - source: kickhofel-1995
       quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1971-1976 - Elliot Lorenz Sorge
       page: '368'
-  notes: >-
-    Renunciou ao ser nomeado oficial no Centro da Igreja Episcopal (Nova York); depois bispo de Easton (TEC) 1983-1993.
+- jurisdiction: tec
+  role: diocesan_bishop
+  diocese: diocese-de-easton
+  start: '1983'
+  end: '1993'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: costa2021
+    quote: sendo eleito bispo de Easton, em 1983, ocupando o cargo até sua aposentadoria em 1993.
+    page: '86'
 events:
 - type: other
   date: '1977'
@@ -147,3 +212,11 @@ events:
       Sul Central. … No sexto escrutínio, foi eleito o reverendo Elliot Lorenz Sorge, um missionário americano que
       começou a trabalhar no Brasil em 1965, em Belém do Pará
     page: '284'
+- type: other
+  date: '1970-01-31'
+  description: Elliott Lorenz Sorge eleito primeiro bispo da Diocese do Centro-Sul (Sul Central, São Paulo)
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Em 31 de janeiro de 1970 foi eleito o primeiro bispo da Diocese do Centro-Sul do Brasil
+    page: '86'

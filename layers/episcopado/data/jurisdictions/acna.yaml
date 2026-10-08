@@ -20,6 +20,9 @@ founded:
     quote: >-
       Diferente da Igreja Episcopal e da Igreja do Canadá, a ACNA não é uma Província da Comunhão Anglicana.
     page: '21'
+  - source: costa2021
+    quote: Em 22 de junho de 2009 foi organizado um encontro na Catedral de São Vicente, em Bedford, Texas
+    page: '128'
 description: >-
   Fundada em 2009 por grupos saídos da Igreja Episcopal (EUA) e da Igreja Anglicana do Canadá; Robert Duncan primeiro
   arcebispo; não é Província da Comunhão Anglicana; ligada à GAFCON.
@@ -36,7 +39,9 @@ sources:
 relations:
 - type: schism_from
   target: tec
-  date: '2009'
+  date: '2009-06-22'
+  led_by:
+  - robert-duncan
   status: probable
   sources:
   - source: cant-novas-igrejas-2024
@@ -44,6 +49,9 @@ relations:
       A Igreja Anglicana na América do Norte (Anglican Church in North America – ACNA) foi fundada, em 2009, por
       membros e lideranças clericais oriundos da Igreja Episcopal nos Estados Unidos e da Igreja Anglicana do Canadá
     page: '20'
+  - source: costa2021
+    quote: Igreja Anglicana na América do Norte – ao desligar-se da Igreja Episcopal dos Estados Unidos
+    page: '124'
   notes: Também oriunda da Igreja Anglicana do Canadá.
 - type: member_of
   target: gafcon
@@ -54,3 +62,7 @@ relations:
     quote: >-
       sendo oficialmente fundada a nova denominação alinhada com as demais Províncias que fazem parte da GAFCON
     page: '21'
+  - source: costa2021
+    quote: >-
+      sendo oficialmente fundada a nova denominação alinhada com as demais Províncias que fazem parte da GAFCON
+    page: '128'

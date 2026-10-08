@@ -40,19 +40,6 @@ ordinations:
       Ordenado diácono e presbítero por ele
   notes: Celebração ecumênica, com padres católicos romanos e pastores evangélicos presentes.
 affiliations:
-- jurisdiction: ieab
-  role: clergy
-  diocese: ieab-dar
-  status: probable
-  sources:
-  - source: aquino-quem-e
-    quote: >-
-      Foi Ministro da Igreja Episcopal Anglicana do Brasil (IEAB) por 12 anos, assumindo os cargos de Pároco na
-      Capela do Campus da UFRN, de ministro encarregado da Missão Jesus Cristo Libertador, em João Pessoa/PB, Reitor
-      do Seminário Anglicano de Recife/PE, Arcediago da sub-região norte da Diocese do Recife
-  notes: >-
-    12 anos na IEAB: capelão da Capela do Campus da UFRN (7 anos), ministro encarregado da Missão Jesus Cristo Libertador
-    (João Pessoa), reitor do Seminário Anglicano de Recife e arcediago da sub-região norte da Diocese do Recife.
 - jurisdiction: manb
   role: clergy
   status: probable
@@ -99,6 +86,26 @@ affiliations:
   notes: >-
     Cônego teológico, responsável pelo curso de imersão no anglicanismo, pelos novos Cânones e custódio do Livro
     de Oração Comum.
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  start: c.2000
+  status: probable
+  sources:
+  - source: aquino-quem-e
+    quote: >-
+      Foi Ministro da Igreja Episcopal Anglicana do Brasil (IEAB) por 12 anos, assumindo os cargos de Pároco na
+      Capela do Campus da UFRN, de ministro encarregado da Missão Jesus Cristo Libertador, em João Pessoa/PB, Reitor
+      do Seminário Anglicano de Recife/PE, Arcediago da sub-região norte da Diocese do Recife
+  - source: costa2021
+    quote: >-
+      No período, o reverendo Jorge Aquino ganhou espaço junto à Robinson como teólogo e liturgista, sendo promovido
+      a reitor do SAET, após a saída de Sebastião.
+    page: '195'
+  notes: >-
+    12 anos na IEAB: capelão da Capela do Campus da UFRN (7 anos), ministro encarregado da Missão Jesus Cristo Libertador
+    (João Pessoa), reitor do Seminário Anglicano de Recife e arcediago da sub-região norte da Diocese do Recife.
+    Reitor do SAET após Sebastião (c. 2000); elaborou o Livro de Ritos Ocasionais.
 events:
 - type: other
   date: null

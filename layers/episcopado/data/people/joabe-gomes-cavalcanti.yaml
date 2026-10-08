@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: joabe-gomes-cavalcanti
+name: Joabe Gomes Cavalcanti
+aliases:
+- Joabe
+biography: >-
+  Reverendo da Diocese Anglicana do Recife que permaneceu na IEAB em 2004; em 2006 morava na Inglaterra.
+sources:
+- source: costa2021
+  quote: Rev. Joabe Gomes Cavalcanti
+  page: '217'
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Rev. Joabe Gomes Cavalcanti
+    page: '217'
+  notes: >-
+    Signatário de 'Não sairemos' (01/09/2004): permaneceu na IEAB na crise de 2004-2005. Em 2006 morava na Inglaterra
+    e declinou indicação ao episcopado.
+events:
+- type: other
+  date: '2004-09-01'
+  description: >-
+    Documento 'Não sairemos', assinado pelo bispo sufragâneo Filadelfo Oliveira e clérigos e leigos da Diocese Anglicana
+    do Recife, reafirmando o vínculo com a IEAB independentemente das decisões do diocesano.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 1º de setembro de 2004, foi publicado o texto intitulado Não sairemos, o primeiro documento que enfrentou
+      Robinson quando este sinalizou que romperia com a Província, assinado pelo bispo sufragâneo, Filadelfo Oliveira,
+      e vários outros clérigos e leigos da Diocese
+    page: '217'
+  - source: costa2021
+    quote: >-
+      Assinaram este documento: Dom Filadelfo Oliveira Neto, ose (Bispo Sufragâneo da DAR); Revmo. Sérgio L. Andrade
+      (Deão da Catedral Anglicana da SS. Trindade)
+    page: '217'

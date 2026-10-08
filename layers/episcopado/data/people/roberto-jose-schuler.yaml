@@ -16,20 +16,39 @@ ordinations:
   sources:
   - source: ptwiki-iecb
     quote: Roberto José Schuler (2012)
-  - source: costa-2021-tese
+  - source: costa2021
     quote: Roberto José Schuler, em 19 de maio de 2012
   - source: cant-novas-igrejas-2024
     quote: Roberto José Schuler, em 19 de maio de 2012
     page: '57'
   notes: >-
     Data completa segundo Costa (2021, p. 245); ano confirmado pela Wikipédia PT. Sagrantes não informados; sucessão
-    via Paulo Garcia/ICCEC. Cargo e sagrantes não informados.
+    via Paulo Garcia/ICCEC. Cargo e sagrantes não informados. Igreja Episcopal Carismática do Brasil. A tese não
+    informa local nem sagrantes.
 affiliations:
 - jurisdiction: iecb
   role: bishop
   end_reason: left
   status: probable
   sources:
-  - source: costa-2021-tese
+  - source: costa2021
     quote: como Raniere Campos, Marcos Cephas e Roberto Schuller, que se filiaram a outras igrejas.
-  notes: Data de saída não informada (antes de 2021).
+  - source: costa2021
+    quote: >-
+      alguns bispos saíram da denominação por divergências com a liderança de Paulo, como Raniere Campos, Marcos
+      Cephas e Roberto Schuller, que se filiaram a outras igrejas.
+    page: '260'
+  notes: Data de saída não informada (antes de 2021). Data de saída não informada.
+events:
+- type: other
+  date: null
+  description: >-
+    Raniere Campos, Marcos Cephas e Roberto Schuller deixaram a IECB por divergências com Paulo Garcia e filiaram-se
+    a outras igrejas.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      alguns bispos saíram da denominação por divergências com a liderança de Paulo, como Raniere Campos, Marcos
+      Cephas e Roberto Schuller, que se filiaram a outras igrejas.
+    page: '260'

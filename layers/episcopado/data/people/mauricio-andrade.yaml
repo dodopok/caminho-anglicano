@@ -4,6 +4,7 @@ name: Maurício José Araújo de Andrade
 full_name: Maurício José Araújo de Andrade
 aliases:
 - Bispo Maurício
+- Dom Mauricio Andrade
 - Dom Maurício Andrade
 - Mauricio Andrade
 - Maurício Andrade
@@ -49,7 +50,7 @@ ordinations:
   notes: Ordenante não informado.
 - order: episcopate
   date: '2003-08-31'
-  place: Catedral Metropolitana de Brasilia (catolica)
+  place: Catedral Metropolitana de Brasília (Igreja Católica Romana)
   jurisdiction: ieab
   office: diocesan
   principal_consecrator: glauco-soares-de-lima
@@ -63,7 +64,34 @@ ordinations:
     quote: >-
       Em 2003, foi eleito bispo diocesano da Diocese Anglicana de Brasília, sendo então o primeiro bispo não-católico
       a ser sagrado na Catedral de Brasília.
+  notes: Co-sagrantes não informados.
 affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: secretário-geral da ieab
+  start: '1994'
+  end: '2003'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 1994 assumiu o cargo de secretário-geral da Igreja, desempenhando a função por dez anos, na cidade de Porto
+      Alegre.
+    page: '106'
+  notes: 'Cargo: Secretário-geral da IEAB.'
+- jurisdiction: ieab
+  role: bishop
+  start: '2003'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2003- – Maurício José Araújo de Andrade
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. Período
+    aberto (em exercício em 2021).
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dab
@@ -76,10 +104,55 @@ affiliations:
     quote: Bispo Diocesano – Revmo. Maurício José Araújo de Andrade
   - source: dab-bispo-mauricio
     quote: À frente da Diocese Anglicana de Brasília desde 2003
+  - source: costa2021
+    quote: Diocese Anglicana de Brasília … 2003- – Maurício José Araújo de Andrade
+    page: '522'
+  - source: costa2021
+    quote: >-
+      Em 2003, o reverendo Maurício José Araújo de Andrade 103, que tinha servido como Secretário-Geral da Igreja,
+      de 1994 até então, foi eleito o novo bispo da
+    page: '106'
+  - source: costa2021
+    quote: Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília
+    page: '218'
+  notes: Anexo D da tese (bispos por diocese). Bispo diocesano de Brasília em 2004.
+  discrepancies:
+  - field: start
+    value: '2003-08-31'
+    sources:
+    - source: costa2021
+      quote: >-
+        Em 2003, o reverendo Maurício José Araújo de Andrade 103, que tinha servido como Secretário-Geral da Igreja,
+        de 1994 até então, foi eleito o novo bispo da
+      page: '106'
+- jurisdiction: ieab
+  role: other
+  role_description: supervisor episcopal especial
+  diocese: ieab-dar
+  start: '2004-09-16'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      2. Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília para desempenhar a função de supervisor
+      episcopal especial
+    page: '546'
+  - source: costa2021
+    quote: Porto Alegre, 16 de setembro de 2004.
+    page: '546'
+  - source: costa2021
+    quote: >-
+      Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília para desempenhar a função de supervisor
+      episcopal especial para o clero e as comunidades em dissenso
+    page: '218'
+  notes: >-
+    Anexo K: nomeado pela Câmara dos Bispos supervisor episcopal especial do clero e das comunidades da Diocese
+    Anglicana do Recife em dissenso com o bispo diocesano. Fim não informado. Decreto da Câmara Episcopal (16/09/2004),
+    a pedido de 13 clérigos. Em março de 2005 instituído 'bispo interventor'.
 - jurisdiction: ieab
   role: primate
   start: 2006-07
-  end: 2013-11
+  end: '2013-11-16'
   status: confirmed
   sources:
   - source: dab-bispo-mauricio
@@ -99,7 +172,23 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: assim como o primaz da IEAB à época, Maurício Andrade
     page: '30'
-  notes: Primaz em fevereiro de 2012.
+  - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 2006-2013 – Maurício José Araújo de Andrade
+    page: 523-524
+  - source: costa2021
+    quote: >-
+      eleição do bispo diocesano de Brasília, Maurício José de Araújo Andrade, como o 6º Bispo Primaz da IEAB, durante
+      o 30º Sínodo Geral (Curitiba, 26 a 30 de julho de
+    page: '109'
+  - source: costa2021
+    quote: dando encerramento aos dois mandatos do bispo Maurício Andrade, que ocupava o cargo desde 2006.
+    page: '114'
+  - source: costa2021
+    quote: substituindo o bispo Maurício Andrade, que estava no cargo desde 2006.
+    page: '243'
+  notes: >-
+    Primaz em fevereiro de 2012. Anexo E da tese (primazes da IEAB). Primaz da IEAB 2006-2013; substituído por Francisco
+    de Assis da Silva.
 - jurisdiction: ieab
   role: other
   role_description: bispo_encarregado
@@ -122,6 +211,15 @@ affiliations:
     quote: Diocese Anglicana de Brasília, pastoreada pelo bispo Maurício Andrade
     page: '158'
   notes: Período não informado; contexto da transferência de Magela (após 2017).
+- jurisdiction: ieab
+  role: bishop
+  diocese: ieab-dmo
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Já o Distrito Missionário do Oeste atualmente é pastoreado pelo Bispo Maurício Andrade.
+    page: '121'
+  notes: Situação em 2021.
 events:
 - type: other
   date: '2008'
@@ -204,3 +302,95 @@ events:
     quote: >-
       the Suffragan Bishop Dom Filadelfo Oliveira, according to his canonical prerogatives, continues to exert his
       pastoral ministry to the communities of the Anglican Diocese of Recife.
+- type: other
+  date: '2004-09-16'
+  description: >-
+    Decreto da Câmara dos Bispos da IEAB (reunião extraordinária em Porto Alegre, presidida pelo Primaz Orlando
+    Santos de Oliveira): institui supervisão episcopal especial para as comunidades e o clero da Diocese Anglicana
+    do Recife em dissenso com o bispo diocesano Robinson Cavalcanti, nomeia Dom Maurício Andrade (bispo de Brasília)
+    supervisor episcopal especial e mantém o ministério do bispo sufragâneo Dom Filadelfo Oliveira. Atendeu a pedido
+    de 13 clérigos e clérigas da diocese.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      A Câmara dos Bispos, reunida extraordinariamente na cidade de Porto Alegre, sob a Presidência do Bispo Primaz,
+      diante da solicitação de clérigos e clérigas da Diocese Anglicana do Recife
+    page: '545'
+  - source: costa2021
+    quote: >-
+      1. Decretar a supervisão episcopal especial das comunidades e clérigos e clérigas da Diocese Anglicana do
+      Recife que se sentem pastoralmente desassistidos por seu Bispo diocesano, face a divergências teológicas e
+      pastorais.
+    page: '546'
+  - source: costa2021
+    quote: >-
+      2. Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília para desempenhar a função de supervisor
+      episcopal especial
+    page: '546'
+  - source: costa2021
+    quote: >-
+      3. A presente decisão, naturalmente supõe que o Bispo Sufragâneo, Dom Filadelfo Oliveira, de acordo com suas
+      prerrogativas canônicas, continua seu ministério pastoral junto às comunidades da Diocese Anglicana do Recife.
+    page: '546'
+  - source: costa2021
+    quote: Porto Alegre, 16 de setembro de 2004.
+    page: '546'
+- type: other
+  date: 2006-07
+  description: >-
+    Eleição de Maurício Andrade como 6º Bispo Primaz no 30º Sínodo Geral (Curitiba, 26-30/7/2006), que também aprova
+    a criação da Diocese Anglicana da Amazônia
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O primeiro ato do novo Primaz foi a criação da mais recente unidade territorial da Província: a Diocese Anglicana
+      da Amazônia.
+    page: '109'
+- type: other
+  date: '1997-06-28'
+  description: >-
+    Eleição de Robinson Cavalcanti como bispo coadjutor da Diocese Anglicana do Recife no Concílio Extraordinário
+    de Vera Cruz (Ilha de Itaparica, BA), após sete escrutínios; concorreram Maurício Andrade e Ian Meldrum (que
+    retirou a candidatura).
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O Concílio Extraordinário da Diocese Anglicana do Recife aconteceu em 28 de junho de 1997, na cidade de Vera
+      Cruz, na Ilha de Itaparica (BA)
+    page: '186'
+  - source: costa2021
+    quote: >-
+      A disputa foi resolvida com o voto de um delegado de Belém do Pará, o que garantiu a eleição de Robinson Cavalcanti.
+    page: '186'
+- type: other
+  date: '2004-09-16'
+  description: >-
+    A Câmara Episcopal da IEAB, na pessoa do Primaz, decretou supervisão episcopal especial para comunidades e clérigos
+    da Diocese Anglicana do Recife em dissenso com o bispo Robinson, nomeando Maurício Andrade (bispo de Brasília)
+    supervisor, sem prejuízo do sufragâneo Filadelfo Oliveira.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Diante de outras situações semelhantes, em 16 de setembro de 2004, mediante solicitação de 13 clérigos e clérigas,
+      a Câmara Episcopal, na pessoa do Primaz, decretou uma supervisão episcopal para as comunidades e parte do
+      clero da DAR.
+    page: '218'
+- type: other
+  date: '2005-02-22'
+  description: >-
+    Resolução 002/2005 nomeou Filadelfo Oliveira Autoridade Eclesiástica da Diocese Anglicana do Recife; em março,
+    Maurício Andrade foi instituído 'bispo interventor'.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Ato contínuo, a Resolução 002/2005, de 22 de fevereiro
+    page: '223'
+  - source: costa2021
+    quote: >-
+      nomeou o bispo Filadelfo Oliveira como Autoridade Eclesiástica da Diocese Anglicana do Recife. No mês seguinte,
+      o bispo Maurício Andrade, foi instituído como “bispo interventor”
+    page: '223'

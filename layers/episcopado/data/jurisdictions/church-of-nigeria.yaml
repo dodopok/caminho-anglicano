@@ -1,9 +1,16 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: church-of-nigeria
+acronym: CON
 name: Igreja da Nigéria (Comunhão Anglicana)
 aliases:
+- Church of Nigeria (Anglican Communion)
 - Igreja da Nigéria
 - church-of-nigeria
 type: province
 tradition: anglican
 country: NG
+website: https://anglican-nig.org/
+description: Igreja Anglicana da Nigéria.
+sources:
+- source: con-onuoha-2025
+  quote: The Primate of Church of Nigeria (Anglican Communion), the Most Rev’d Dr. Henry C. Ndukuba

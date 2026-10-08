@@ -22,7 +22,7 @@ ordinations:
     quote: e Frederico Carneiro Rêgo Bastos, da Diocese de Vitória de Santo Antão
   - source: enwiki-iccec-bispos
     quote: '|55||14 April 2007||1||Frederico Carreiro Rego Bastos||Bp. Vitória, Brazil||'
-  - source: costa-2021-tese
+  - source: costa2021
     quote: e Frederico Carneiro Rêgo Bastos (Diocesano de Vitória de Santo Antão)
   - source: cant-novas-igrejas-2024
     quote: >-
@@ -30,9 +30,16 @@ ordinations:
       (Diocesano do Litoral Sul e Estado de Alagoas), Frederico Carneiro Rêgo Bastos (Diocesano de Vitória de Santo
       Antão)
     page: '55'
+  - source: costa2021
+    quote: >-
+      Em 14 de abril de 2007 foram sagrados novos bispos para a denominação: Alexandre Barbosa Monteiro Ximenes
+      (Diocesano do Litoral Sul e Estado de Alagoas) e Frederico Carneiro Rêgo Bastos (Diocesano de Vitória de Santo
+      Antão).
+    page: '260'
   notes: >-
     Lista da ICCEC (Wikipédia EN) dá como sagrante o nº 1, Austin Randolph Adler (patriarca da ICCEC). A Wikipédia
-    PT dá a mesma data. Sucessão: ICCEC. Sagrantes não nomeados.
+    PT dá a mesma data. Sucessão: ICCEC. Sagrantes não nomeados. Igreja Episcopal Carismática do Brasil — Diocesano
+    de Vitória de Santo Antão. A tese não informa local nem sagrantes.
 affiliations:
 - jurisdiction: iecb
   role: bishop
@@ -52,11 +59,26 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: Frederico Carneiro Rêgo Bastos (Diocesano de Vitória de Santo Antão)
     page: '55'
+- jurisdiction: iecb
+  role: bishop
+  start: '2007-04-14'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O novo ordinário também passou a ser auxiliado por outros bispos como Alexandre Ximenes, André Novaes e Frederico
+      Bastos
+    page: '202'
+  - source: costa2021
+    quote: >-
+      Três anos depois, o SETEC chegou à cidade de Vitória de Santo Antão, por iniciativa do bispo Frederico Bastos.
+    page: '260'
+  notes: Levou o SETEC a Vitória de Santo Antão (p. 260); a tese não lhe atribui uma diocese.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
   end: '2002'
-  end_reason: left
+  end_reason: schism
   status: probable
   sources:
   - source: cant-novas-igrejas-2024
@@ -64,7 +86,14 @@ affiliations:
       Após a saída de Paulo Garcia da IEAB, Frederico seguiu junto com o deão e foi transferido para Vitória de
       Santo Antão.
     page: '56'
-  notes: 'Local: Paróquia Anglicana Jardim das Oliveiras.'
+  - source: costa2021
+    quote: >-
+      Primeiro aconteceu a saída do rev. Paulo Garcia, acompanhado dos reverendos Célio Spineli, Edgar Ferreira
+      e Frederico Bastos
+    page: '191'
+  notes: >-
+    Local: Paróquia Anglicana Jardim das Oliveiras. Saiu com Paulo Garcia; depois bispo da IECB (2007). Tese cita
+    PEREIRA, 2013.
 events:
 - type: other
   date: '2002'
@@ -73,7 +102,7 @@ events:
     com o templo da Catedral (Rua Carneiro Vilela) e as missões Bem-Aventuranças e Pedra Viva
   status: probable
   sources:
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       Primeiro aconteceu a saída do rev. Paulo Garcia, acompanhado dos reverendos Célio Spineli, Edgar Ferreira
       e Frederico Bastos, que ficaram na posse do templo da Catedral Episcopal Anglicana, na Rua Carneiro Vilela,

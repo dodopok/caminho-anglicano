@@ -36,14 +36,20 @@ ordinations:
     quote: Adonias Ramos de Souza (2007)
   - source: enwiki-iccec-bispos
     quote: '|57||30 November 2007||42 54 55||Adonias Ramos de Sousa||Bp. Paulista, Brazil||'
-  - source: costa-2021-tese
+  - source: costa2021
     quote: Adonias Ramos de Souza, em 30 de novembro de 2007 (Diocesano de Paulista e Estado da Paraíba
   - source: cant-novas-igrejas-2024
     quote: Adonias Ramos de Souza, em 30 de novembro de 2007 (Diocesano de Paulista e Estado da Paraíba.
     page: '55'
+  - source: costa2021
+    quote: >-
+      Posteriormente, foram sagrados outros bispos para a Igreja: Adonias Ramos de Souza, em 30 de novembro de 2007
+      (Diocesano de Paulista e Estado da Paraíba
+    page: '260'
   notes: >-
     Lista da ICCEC (Wikipédia EN): sagrantes nº 42 (Paulo Garcia), 54 (Ximenes), 55 (Bastos); a ordem sugere Garcia
-    como principal, mas a fonte não o diz explicitamente. Sagrantes não nomeados.
+    como principal, mas a fonte não o diz explicitamente. Sagrantes não nomeados. Igreja Episcopal Carismática do
+    Brasil — Diocesano de Paulista e Estado da Paraíba. A tese não informa local nem sagrantes.
 affiliations:
 - jurisdiction: iecb
   role: bishop
@@ -69,7 +75,8 @@ affiliations:
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
-  end_reason: left
+  end: '2002'
+  end_reason: schism
   status: probable
   sources:
   - source: cant-novas-igrejas-2024
@@ -77,9 +84,15 @@ affiliations:
       Depois houve a saída do rev. Leonides Menezes, com a rev. Karla Patriota e Adonias Ramos Souza e as paróquias
       Betânia e Calvário
     page: '65'
+  - source: costa2021
+    quote: >-
+      Depois houve a saída do rev. Leonides Menezes, com a rev. Karla Patriota e Adonias Ramos Souza e as paróquias
+      Betânia e Calvário
+    page: '191'
   notes: >-
     Local: Paróquia do Calvário. Saída junto com Leônides de Menezes segundo Pereira (2013), citado no livro; Adonias
-    foi depois sagrado bispo pela IECB.
+    foi depois sagrado bispo pela IECB. Saiu com Leônides de Menezes (PEREIRA, 2013); em 30/11/2007 foi sagrado
+    bispo da IECB (Diocesano de Paulista e Paraíba) — trajetória intermediária não explicada pela tese.
 events:
 - type: other
   date: '2002'
@@ -88,7 +101,7 @@ events:
     (Adonias depois aparece como bispo da IECB em Paulista, Catedral do Calvário)
   status: probable
   sources:
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       Depois houve a saída do rev. Leonides Menezes, com a rev. Karla Patriota e Adonias Ramos Souza e as paróquias
       Betânia e Calvário (PEREIRA, 2013, p. 28).

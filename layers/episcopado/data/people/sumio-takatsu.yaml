@@ -4,6 +4,7 @@ name: Sumio Takatsu
 full_name: Sumio Takatsu
 aliases:
 - Bispo Takatsu
+- Sumiu Takatsu
 birth:
   date: '1927-01-03'
   sources:
@@ -27,15 +28,33 @@ sources:
   quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
 ordinations:
 - order: diaconate
-  date: '1955'
-  jurisdiction: null
+  date: '1955-11-05'
+  jurisdiction: dmcb
+  ordained_by: louis-chester-melcher
   status: probable
   sources:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1955 - … Sumio Takatsu
     page: '370'
+  - source: costa2021
+    quote: >-
+      Foi ordenado ao diaconato, em 05 de novembro de 1955, e ao presbiterato, em 30 de setembro de 1956, pelo bispo
+      Louis Melcher.
+    page: '87'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    'pelo bispo Louis Melcher' fecha a frase; atribuído às duas ordenações.
+- order: presbyterate
+  date: '1956-09-30'
+  jurisdiction: dmcb
+  ordained_by: louis-chester-melcher
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi ordenado ao diaconato, em 05 de novembro de 1955, e ao presbiterato, em 30 de setembro de 1956, pelo bispo
+      Louis Melcher.
+    page: '87'
 - order: episcopate
   date: '1977-06-12'
   place: St. Paul's Church (Igreja de Sao Paulo), Sao Paulo
@@ -73,15 +92,28 @@ ordinations:
   notes: >-
     Confirma a data (12/06/1977) por fonte primária da TEC (notificação ao Presiding Bishop). Não nomeia sagrantes;
     o sagrante principal Kratz continua dependendo só de Costa (2021). Costa cita Kickhofel 1995. Eleito em 30/04/1977
-    (Costa) ou 20/04/1977 (Wikipedia PT, citando Kickhofel 2006).
+    (Costa) ou 20/04/1977 (Wikipedia PT, citando Kickhofel 2006). A tese cita KICKHÖFEL (1995, p. 288) para o fato.
 affiliations:
+- jurisdiction: ieab
+  role: bishop
+  start: '1977'
+  end: '1989'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1977-1989 – Sumio Takatsu
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dasp
   start: '1977-06-12'
   end: '1989'
   end_reason: resignation
-  status: contested
+  status: probable
   sources:
   - source: costa2021
     quote: 1977-1989 – Sumio Takatsu
@@ -93,6 +125,15 @@ affiliations:
   - source: kickhofel-1995
     quote: O bispo Takatsu efetivamente se aposentou no final de 1989.
     page: '290'
+  - source: costa2021
+    quote: Diocese Anglicana de São Paulo … 1977-1989 – Sumio Takatsu
+    page: 521-522
+  - source: costa2021
+    quote: Foi eleito e sagrado bispo da Diocese Anglicana de São Paulo em
+    page: '87'
+  - source: costa2021
+    quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
+    page: '87'
   discrepancies:
   - field: end_reason
     value: retirement
@@ -100,6 +141,16 @@ affiliations:
     - source: kickhofel-1995
       quote: O bispo Takatsu efetivamente se aposentou no final de 1989.
       page: '290'
+  - field: end
+    value: '1990'
+    sources:
+    - source: costa2021
+      quote: Foi eleito e sagrado bispo da Diocese Anglicana de São Paulo em
+      page: '87'
+    - source: costa2021
+      quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
+      page: '87'
+  notes: Anexo D da tese (bispos por diocese).
 events:
 - type: other
   date: '1977-04-30'
@@ -135,3 +186,14 @@ events:
       apresentada ao plenário sinodal pelo bispo Sumio Takatsu, por unanimidade na Câmara dos Bispos e com apenas
       dois votos contrários na Câmara dos Presbíteros e Leigos.
     page: '318'
+- type: other
+  date: '1977-04-30'
+  description: >-
+    Sumio Takatsu eleito segundo bispo de São Paulo (após dois Concílios Extraordinários em 1976-1977 sem quórum
+    para Jaci Maraschin e Saulo Marques da Silva)
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 30 de abril de 1977, o reverendo Sumio Takatsu 74 foi eleito para se tornar o segundo bispo de São Paulo
+    page: '87'

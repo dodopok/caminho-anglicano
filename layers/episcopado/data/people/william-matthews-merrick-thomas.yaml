@@ -9,6 +9,8 @@ aliases:
 - William Mathew Merrick Thomas
 - William Matthew Merrick Thomas
 - William Matthew(s) Merrick Thomas
+- William Thomas
+- bispo Thomas
 birth:
   date: '1878-05-03'
   sources:
@@ -20,6 +22,12 @@ birth:
     quote: Founded thirteen years ago by the Rev. IV. M. M. Thomas, now bishop suffragan o f Brazil,
   - source: wd-q24579029
     quote: William M. M. Thomas | American bishop (1878–1951)
+  - source: costa2021
+    quote: William Matthew Merrick Thomas nasceu em 03 de maio de 1878, no condado de St. Mary, Maryland.
+    page: '61'
+  - source: costa2021
+    quote: o bispo Thomas faleceu na noite de 18 de setembro de 1951
+    page: '68'
 death:
   date: '1951-09-18'
   sources:
@@ -31,6 +39,12 @@ death:
     quote: Founded thirteen years ago by the Rev. IV. M. M. Thomas, now bishop suffragan o f Brazil,
   - source: wd-q24579029
     quote: William M. M. Thomas | American bishop (1878–1951)
+  - source: costa2021
+    quote: William Matthew Merrick Thomas nasceu em 03 de maio de 1878, no condado de St. Mary, Maryland.
+    page: '61'
+  - source: costa2021
+    quote: o bispo Thomas faleceu na noite de 18 de setembro de 1951
+    page: '68'
 wikidata: Q24579029
 biography: >-
   Missionário norte-americano no Brasil desde 1904; fundador do Colégio Cruzeiro do Sul (Southern Cross School,
@@ -71,7 +85,7 @@ ordinations:
       the following year.
 - order: episcopate
   date: '1925-12-28'
-  place: St. Paul's Church, Baltimore (EUA)
+  place: Igreja de São Paulo, Baltimore (EUA)
   jurisdiction: dmsb
   office: suffragan
   principal_consecrator: ethelbert-talbot
@@ -110,6 +124,12 @@ ordinations:
       O reverendo William M.M.Thomas que, durante 13 de seus 45 anos de Brasil, foi o fundador e diretor do Colégio
       Cruzeiro do Sul, foi indicado por Kinsolving e eleito pela Convenção Geral e sagrado no dia 28 de dezembro
       de 1925, na igreja de São Bartolomeu em Nova York.
+  - source: costa2021
+    quote: >-
+      Thomas foi sagrado bispo no dia 28 de dezembro de 1925, na Igreja de São Paulo, em Baltimore, Estados Unidos,
+      em cerimônia presidida pelo bispo presidente da Igreja Protestante Episcopal dos Estados Unidos, Ethelbert
+      Talbot, sendo co-sagrantes Joseph Blount Cherise, de Carolina do Norte, e Lucien Lee Kinsolving, do Brasil.
+    page: '61'
   discrepancies:
   - field: place
     value: Igreja de São Bartolomeu, Nova York (EUA)
@@ -126,7 +146,9 @@ ordinations:
     William Cabell Brown, bispo da Virgínia e presidente da Câmara dos Bispos (Kickhöfel, 1995, p. 152). O próprio
     livro diverge: no capítulo "14. O Segundo Bispo" diz São Bartolomeu, em Nova York; na p. 152 (e nas demais fontes),
     Igreja de São Paulo, em Baltimore. São Bartolomeu, em Nova York, foi onde Kinsolving foi sagrado em 1899, o
-    que sugere confusão no capítulo.
+    que sugere confusão no capítulo. Trecho citado pela tese de KICKHÖFEL, Notas para uma História da IEAB (1995),
+    p. 152. 'Todos os oito bispos presentes participaram da tradicional imposição das mãos'; pregador William Cabell
+    Brown.
 affiliations:
 - jurisdiction: dmsb
   role: clergy
@@ -154,18 +176,26 @@ affiliations:
     quote: The Right Rev. William M. M. Thomas, Suffragan for Southern Brazil
   notes: 'Local: sufragâneo. De sufragâneo a diocesano em 1928 com a renúncia de Kinsolving.'
 - jurisdiction: dmsb
+  role: bishop
+  start: '1925-12-28'
+  end: '1928'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O ano também marcou a eleição de um bispo sufragâneo para o Distrito Missionário. Devido à sua experiência
+      pastoral, foi escolhido o reverendo William Matthew Merrick Thomas44.
+    page: '61'
+  notes: 'Local/função: Distrito Missionário do Brasil (sufragâneo).'
+- jurisdiction: dmsb
   role: diocesan_bishop
   diocese: southern-brazil
-  start: '1928'
+  start: '1928-10-18'
   end: '1949-09-30'
   end_reason: retirement
   status: contested
   sources:
-  - source: kickhofel-1995
-    quote: >-
-      Antes de se aposentar em 30 de setembro de 1949, Thomas transferiu a jurisdição da igreja brasileira ao bispo
-      Melcher, em maio daquele ano
-    page: '200'
   - source: wp-en-thomas
     quote: >-
       Bishop William Thomas, missionary bishop of Southern Brazil from 1928 to 1949, when he retired, died at Bethesda,
@@ -179,6 +209,22 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS MISSIONÁRIOS … 1925-1949 - William Mathew Merrick Thomas
     page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      Antes de se aposentar em 30 de setembro de 1949, Thomas transferiu a jurisdição da igreja brasileira ao bispo
+      Melcher, em maio daquele ano
+    page: '200'
+  - source: costa2021
+    quote: >-
+      Com a vacância do cargo, o Bispo Presidente da Igreja norte-americana, John Murray, nomeou William Thomas
+      para ser o bispo diocesano do Brasil Meridional, sendo eleito em 18 de outubro de 1928.
+    page: '62'
+  - source: costa2021
+    quote: O bispo Thomas se aposentou após vinte e quatro anos de trabalho no seu episcopado49.
+    page: '68'
+  notes: >-
+    O trecho da Wikipédia é citação da The Witness de 04/10/1951. O livro conta o período desde a sagração como
+    sufragâneo (1925); a sucessão como bispo missionário titular veio depois.
   discrepancies:
   - field: start
     value: '1925'
@@ -186,9 +232,6 @@ affiliations:
     - source: kickhofel-1995
       quote: BISPOS MISSIONÁRIOS … 1925-1949 - William Mathew Merrick Thomas
       page: '368'
-  notes: >-
-    O trecho da Wikipédia é citação da The Witness de 04/10/1951. O livro conta o período desde a sagração como
-    sufragâneo (1925); a sucessão como bispo missionário titular veio depois.
 events:
 - type: other
   date: 1939-11
@@ -237,3 +280,18 @@ events:
       exercer o cargo de bispo sufragâneo no distrito missionário do Brasil. O restante daquele memorável dia 17
       de outubro de 1925 foi ocupado para eleger os outros cinco bispos missionários
     page: '152'
+- type: other
+  date: '1939'
+  description: >-
+    Apuração (1939) da eleição do bispo sufragâneo: George Upton Krischke e Athalício Pithan empatam; o bispo Thomas
+    escolhe Pithan
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Os envelopes foram fechados e guardados até 1939.
+    page: '68'
+  - source: costa2021
+    quote: >-
+      recebendo cada um o mesmo número de votos, porém, menos da metade necessária para conquistar a eleição. Embora
+      não fosse o costume, a decisão coube ao bispo Thomas que escolheu este último.
+    page: '69'

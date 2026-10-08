@@ -3,6 +3,8 @@ id: iceb
 acronym: ICEB
 name: Igreja Cristã Episcopal Betânia
 aliases:
+- >-
+  Igreja Cristã Episcopal (ex-Igreja Episcopal Evangélica; Comunhão das Igrejas Cristãs Episcopais do Brasil – CICEB)
 - Igreja Cristã Episcopal / Comunhão das Igrejas Cristãs Episcopais do Brasil (CICEB)
 - Igreja Cristã Episcopal do Brasil
 - >-
@@ -41,6 +43,10 @@ founded:
   - source: cant-novas-igrejas-2024
     quote: Comunhão das Igrejas Cristãs Episcopais do Brasil (CICEB) [2002]
     page: '171'
+  - source: costa2021
+    quote: >-
+      No mesmo evento, a Comunhão foi renomeada “Comunhão das Igrejas Cristãs Episcopais do Brasil (CICEB).
+    page: '202'
 website: https://www.ciceb.com.br/
 description: >-
   Nasce da Paróquia Betânia (Cordeiro, Recife), da Diocese do Recife da IEAB, que em 2002 se desligou da IEAB sob
@@ -83,13 +89,23 @@ relations:
       Em outubro de 2002, a Paróquia Betânia, até então pertencente à Igreja Episcopal Anglicana do Brasil, formalizou
       sua saída da Província anglicana
     page: '65'
+  - source: costa2021
+    quote: >-
+      A Diocese do Recife sofreu, em 2002, um cisma, encabeçado pelo Rev. Paulo Garcia, que foi para a Igreja Episcopal
+      Carismática, e outro pelo Rev. Leonides de Menezes para a Igreja Episcopal Evangélica
+    page: '202'
+  - source: costa2021
+    quote: a partir do desligamento da Paróquia Betânia da Diocese do Recife.
+    page: '202'
   notes: >-
     Mês divergente no próprio site: 'outubro de 2002' (Quem Somos da CICEB) vs '8 de julho de 2002' (Nossa Igreja
     da Catedral Betânia). A Wikipédia acompanha 'outubro de 2002'. Saída da Paróquia Betânia da Diocese Anglicana
-    do Recife.
+    do Recife. Igreja Episcopal Evangélica, hoje Igreja Cristã Episcopal (CICEB desde 2008). Citação de CAVALCANTI,
+    2009, p. 121.
 - type: member_of
   target: ceec
   date: '2003-06-08'
+  end: '2008'
   led_by:
   - leonides-de-menezes-ferreira
   status: contested
@@ -113,19 +129,35 @@ relations:
     page: '171'
   - source: iab-poster-linhagem-meira
     quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC
+  - source: costa2021
+    quote: Inicialmente, este grupo se filiou à Comunhão das Igrejas Episcopais Evangélicas
+    page: '202'
+  - source: costa2021
+    quote: (CEEC) e, posteriormente, tornou-se uma Igreja independente
+    page: '202'
   notes: >-
     A citação do site da CICEB no mesmo livro (p. 66) traz '8 de junho de 2002', o que é incoerente com a saída
     em outubro de 2002 seguida de 'oito meses de oração'. O site oficial dá 8/6/2002, mas diz que a filiação veio
     'após oito meses' da saída (out. 2002), o que só fecha com 8/6/2003, data dada pela Wikipédia. Provável erro
     de digitação no site. O site diz que a comunhão é 'hoje chamada Communio Christiana Churches (CCC)'; a Wikipédia
     fala em Christian Communion International (CCI). Data de eventual saída da CEEC não encontrada (a Wikipédia
-    descreve a ligação com a CCI, com sede na Flórida). Filiação inferida da sagração; verificar.
+    descreve a ligação com a CCI, com sede na Flórida). Filiação inferida da sagração; verificar. Fim aproximado:
+    a tese diz que depois se tornou independente; em 2008 a comunhão foi renomeada CICEB.
   discrepancies:
   - field: date
     value: '2007'
     sources:
     - source: iab-poster-linhagem-meira
       quote: Para se tornar bispo, foi consagrado em 2007 pela CEEC
+  - field: date
+    value: '2002'
+    sources:
+    - source: costa2021
+      quote: Inicialmente, este grupo se filiou à Comunhão das Igrejas Episcopais Evangélicas
+      page: '202'
+    - source: costa2021
+      quote: (CEEC) e, posteriormente, tornou-se uma Igreja independente
+      page: '202'
 - type: in_communion_with
   target: cci
   date: '2006'
@@ -153,9 +185,9 @@ relations:
   - leonides-de-menezes-ferreira
   status: probable
   sources:
-  - source: costa-2021-tese
+  - source: costa2021
     quote: Inicialmente, este grupo se filiou à Comunhão das Igrejas Episcopais
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       e, posteriormente, tornou-se uma Igreja independente, com a sagração de Leonides como o bispo da “Comunhão
       das Igrejas Cristãs Episcopais do Brasil” (CICEB).

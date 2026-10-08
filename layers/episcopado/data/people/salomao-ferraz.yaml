@@ -1,8 +1,15 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: salomao-ferraz
 name: Salomão Ferraz
+full_name: Salomão Barbosa Ferraz
 aliases:
 - Salomão Barbosa Ferraz
+death:
+  date: '1969-05-11'
+  sources:
+  - source: costa2021
+    quote: vindo a falecer em 11 de maio de 1969, aos 89 anos, como epíscopo da Igreja Católica Romana.
+    page: '67'
 biography: >-
   Presbítero em São Paulo (Capela do Salvador); protagonista da 'controvérsia cerimonialista', destituído em 1936.
 sources:
@@ -29,21 +36,56 @@ ordinations:
   date: '1945'
   jurisdiction: icab
   ordained_by: carlos-duarte-costa
-  status: probable
+  status: contested
   sources:
   - source: cant-temas-anglicanismo-2024
     quote: >-
       o então Reverendo Salomão Ferraz foi reordenado ao sacerdócio por Dom Carlos, doze dias após a fundação da
       Igreja Brasileira.
+  - source: costa2021
+    quote: ingressou na Igreja Episcopal, sendo recebido pelo bispo Kinsolving e
+    page: '64'
+  - source: costa2021
+    quote: ordenado ao presbiterado em 1917.
+    page: '65'
+  discrepancies:
+  - field: date
+    value: '1917'
+    sources:
+    - source: costa2021
+      quote: ingressou na Igreja Episcopal, sendo recebido pelo bispo Kinsolving e
+      page: '64'
+    - source: costa2021
+      quote: ordenado ao presbiterado em 1917.
+      page: '65'
+  - field: jurisdiction
+    value: dmsb
+    sources:
+    - source: costa2021
+      quote: ingressou na Igreja Episcopal, sendo recebido pelo bispo Kinsolving e
+      page: '64'
+    - source: costa2021
+      quote: ordenado ao presbiterado em 1917.
+      page: '65'
+  - field: ordained_by
+    value: lucien-lee-kinsolving
+    sources:
+    - source: costa2021
+      quote: ingressou na Igreja Episcopal, sendo recebido pelo bispo Kinsolving e
+      page: '64'
+    - source: costa2021
+      quote: ordenado ao presbiterado em 1917.
+      page: '65'
   notes: >-
     Reordenação (já era presbítero episcopal). Ano inferido de "doze dias após a fundação da Igreja Brasileira"
-    (ICAB, 1945).
+    (ICAB, 1945). A tese diz 'recebido pelo bispo Kinsolving e ordenado ao presbiterado em 1917'; ordenante inferido
+    da construção da frase.
 - order: episcopate
   date: '1945-08-15'
   place: Igreja Cristã de São Paulo, rua Baronesa de Itu, 48, São Paulo
   jurisdiction: icab
   principal_consecrator: carlos-duarte-costa
-  status: probable
+  status: contested
   sources:
   - source: cant-ferraz-ecumenismo-1995
     quote: >-
@@ -54,10 +96,48 @@ ordinations:
       Rio de Janeiro
   - source: cant-temas-anglicanismo-2024
     quote: Dom Salomão Ferraz foi consagrado bispo por Dom Carlos Duarte Costa, em 1945.
+  - source: costa2021
+    quote: >-
+      Em 1945 recebeu a consagração episcopal pelas mãos de Carlos Duarte Costa, após o seu rompimento com Roma.
+    page: '66'
+  discrepancies:
+  - field: jurisdiction
+    value: iclivre
+    sources:
+    - source: costa2021
+      quote: >-
+        Em 1945 recebeu a consagração episcopal pelas mãos de Carlos Duarte Costa, após o seu rompimento com Roma.
+      page: '66'
   notes: >-
     Ex-presbítero da Igreja Episcopal Brasileira; sagrado como "Bispo Eleito de São Paulo" da Igreja Católica Livre
     / ICAB. O livro de 1995 transcreve a ata da sagração. Sigla ICAB = Igreja Católica Apostólica Brasileira (criar
-    se necessário).
+    se necessário). A tese diz depois que ele foi nomeado bispo titular de Eleutherna ao ser recebido na Igreja
+    Católica Romana (1959) sem reordenação.
+affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: '1917'
+  end: '1936'
+  end_reason: left
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 1925 foi designado pelo bispo Kinsolving para ser o segundo pároco da Capela do Salvador, na cidade de
+      São Paulo.
+    page: '65'
+  notes: 'Local/função: Capela do Salvador, São Paulo.'
+- jurisdiction: iclivre
+  role: founder
+  start: '1936'
+  end: '1959'
+  end_reason: left
+  status: probable
+  sources:
+  - source: costa2021
+    quote: A partir desse evento, fundou a “Igreja Católica Livre”, sendo ele eleito o seu primeiro bispo.
+    page: '66'
+  notes: Deixou a Igreja que fundara e converteu-se ao catolicismo em 1959.
 events:
 - type: other
   date: '1936'
@@ -79,3 +159,26 @@ events:
       Batista Barcellos da Cunha, Orlando Batista e Athalício Theodoro Pithan e os leigos Frontino Peixoto da Silveira
       e José Luiz Albuquerque.
     page: '188'
+- type: other
+  date: '1936'
+  description: >-
+    Igreja Episcopal declara que o rev. Salomão Ferraz abandonou a comunhão eclesial; ele funda a Igreja Católica
+    Livre
+  status: probable
+  sources:
+  - source: costa2021
+    quote: em 1936 a Igreja declarou que o reverendo abandonou a comunhão eclesial.
+    page: '66'
+  - source: costa2021
+    quote: A partir desse evento, fundou a “Igreja Católica Livre”, sendo ele eleito o seu primeiro bispo.
+    page: '66'
+- type: other
+  date: '1959'
+  description: Salomão Ferraz é recebido na Igreja Católica Romana pelo Cardeal Motta, com ordens reconhecidas
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      se consolidaram na sua conversão ao Catolicismo, em 1959, sendo este recebido e tendo as suas ordens reconhecidas
+      pelo arcebispo de São Paulo, o Cardeal Motta.
+    page: '66'

@@ -4,6 +4,7 @@ name: Francisco de Assis da Silva
 full_name: Francisco de Assis da Silva
 aliases:
 - Dom Francisco de Assis
+- Francisco Assis da Silva
 - Francisco Silva
 - Francisco de Assis Silva
 birth:
@@ -27,6 +28,12 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1991 - … Francisco de Assis da Silva
     page: '373'
+  - source: costa2021
+    quote: Foi ordenado diácono, em janeiro de
+    page: '113'
+  - source: costa2021
+    quote: 1991, e presbítero, em dezembro do mesmo ano, atuando na Paróquia do Bom Samaritano, no
+    page: '113'
   notes: >-
     Natural de Olinda; formado no Seminário Batista do Nordeste e no Seminário Anglicano de Recife — presumivelmente
     ordenado na Diocese do Recife (não dito). Depois bispo da Diocese Sul-Ocidental (2011) e primaz da IEAB (2013).
@@ -38,9 +45,12 @@ ordinations:
   sources:
   - source: ihu-2017-francisco
     quote: Em janeiro de 1991 foi ordenado diácono e, em dezembro do mesmo ano, presbítero.
+  - source: costa2021
+    quote: 1991, e presbítero, em dezembro do mesmo ano, atuando na Paróquia do Bom Samaritano, no
+    page: '113'
 - order: episcopate
   date: '2011-03-20'
-  place: Catedral do Mediador, Santa Maria (RS)
+  place: Catedral Anglicana do Mediador, Santa Maria (RS)
   jurisdiction: ieab
   office: coadjutor
   principal_consecrator: mauricio-andrade
@@ -57,7 +67,7 @@ ordinations:
   - roger-douglas-bird
   - saulo-barros
   - sebastiao-gameleira
-  status: contested
+  status: confirmed
   sources:
   - source: costa2021
     quote: >-
@@ -80,34 +90,43 @@ ordinations:
       um Bispo estava sendo sagrado para servir a Diocese Sul Ocidental
   - source: dap-2011-francisco-sagr
     quote: O Bispo Primaz da IEAB, Dom Maurício Andrade, presidiu a Cerimônia de Sagração
-  discrepancies:
-  - field: place
-    value: Catedral Anglicana do Mediador, Santa Maria (RS)
-    sources:
-    - source: dap-2011-francisco-sagr
-      quote: >-
-        Os sinos da Catedral Anglicana do Mediador, em Santa Maria, anunciaram na manhã do dia 20 de março que mais
-        um Bispo estava sendo sagrado para servir a Diocese Sul Ocidental
-    - source: dap-2011-francisco-sagr
-      quote: O Bispo Primaz da IEAB, Dom Maurício Andrade, presidiu a Cerimônia de Sagração
-  - field: office
-    value: suffragan
-    sources:
-    - source: dap-2011-francisco-sagr
-      quote: >-
-        Os sinos da Catedral Anglicana do Mediador, em Santa Maria, anunciaram na manhã do dia 20 de março que mais
-        um Bispo estava sendo sagrado para servir a Diocese Sul Ocidental
-    - source: dap-2011-francisco-sagr
-      quote: O Bispo Primaz da IEAB, Dom Maurício Andrade, presidiu a Cerimônia de Sagração
+  - source: costa2021
+    quote: >-
+      Estiveram presentes Maurício Andrade, Bispo Primaz e da Diocese de Brasília, que presidiu a sagração; Orlando
+      de Oliveira, da Diocese Meridional; Filadelfo Neto, da Diocese do Rio de Janeiro); Naudal Gomes, da Diocese
+      de Curitiba; Sebastião Gameleira, da Diocese do Recife; Saulo Barros, da Diocese da Amazônia; Renato Raatz,
+      da Diocese de Pelotas; Roger Bird, da Diocese São Paulo; e dois bispos eméritos, Clovis Rodrigues e Almir
+      dos Santos.
+    page: '113'
+  - source: costa2021
+    quote: >-
+      A cerimônia também contou com a presença do bispo Julio Murray, da Diocese do Panamá; Miguél Tamayo, da Diocese
+      do Uruguai, e Gilberto Porcal, bispo sufragâneo do Uruguai.
+    page: '113'
   notes: >-
     Eleito bispo coadjutor da Diocese Sul-Ocidental em 25/10/2010. A tese lista os bispos "presentes" (nao necessariamente
     todos impuseram as maos). Eleito bispo coadjutor da Diocese Sul-Ocidental em 25/10/2010 (sucessor de Jubal Neves).
-    Ano 2011 pela data/URL da publicação (uploads/2011/03).
+    Ano 2011 pela data/URL da publicação (uploads/2011/03). Coadjutor. A nota 111 lista os bispos 'presentes' (Maurício
+    Andrade 'presidiu a sagração'); a tese não diz expressamente que todos impuseram as mãos — co-sagrantes por
+    inferência.
 affiliations:
+- jurisdiction: ieab
+  role: bishop
+  start: '2011'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2011 – Francisco Assis da Silva
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. Só o ano
+    de início é dado (sem traço de período aberto).
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dso
-  start: '2011'
+  start: '2011-03-20'
   status: confirmed
   sources:
   - source: costa2021
@@ -116,9 +135,16 @@ affiliations:
     quote: Bispo Diocesano – Revmo. Francisco de Assis da Silva
   - source: ieab-serie-dso
     quote: Seu atual Bispo Diocesano é o Revmo. Bispo Francisco de Assis da Silva.
+  - source: costa2021
+    quote: Diocese Anglicana Sul-Ocidental (Santa Maria-RS) … 2011- – Francisco de Assis da Silva
+    page: '521'
+  - source: costa2021
+    quote: a Diocese Sul-Ocidental, pastoreada pelo Bispo Francisco de Assis da
+    page: '120'
+  notes: Anexo D da tese (bispos por diocese). Coadjutor desde a sagração; diocesano em 2021.
 - jurisdiction: ieab
   role: primate
-  start: 2013-11
+  start: '2013-11-16'
   end: 2018-06
   status: confirmed
   sources:
@@ -131,9 +157,23 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: foram lidas declarações do então Bispo Primaz da IEAB, Francisco de Assis da Silva.
     page: '96'
+  - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 2013-2018 – Francisco de Assis da Silva
+    page: 523-524
+  - source: costa2021
+    quote: >-
+      o bispo Francisco de Assis da Silva – da Diocese Sul-Ocidental – foi eleito o 7º Bispo Primaz da IEAB
+    page: '114'
+  - source: costa2021
+    quote: >-
+      Na mesma reunião, Francisco de Assis da Silva, da Diocese Sul-Ocidental, foi escolhido para assumir a Primazia
+      da Igreja
+    page: '243'
   notes: >-
     Eleito no 32o Sinodo (Rio de Janeiro, 14-17/11/2013); ENS 19/11/2013 noticiou a eleicao. Primaz em dezembro
-    de 2017.
+    de 2017. Anexo E da tese (primazes da IEAB). Eleito no 32º Sínodo (Rio, 14-17/11/2013); sucedido por Naudal
+    Gomes no 34º Sínodo (maio-jun. 2018). Eleito Primaz no 32º Sínodo Geral (Rio de Janeiro). Antes: primeiro reitor
+    do Núcleo Anglicano de Estudos Teológicos (Recife) e Secretário-geral da IEAB (2006).
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino
@@ -145,6 +185,18 @@ affiliations:
   - source: costa2021
     quote: 2017-2018 – Francisco de Assis da Silva (Interino)
   notes: So Costa Anexo D; a IEAB diz que Irala ficou ate 2021.
+- jurisdiction: ieab
+  role: other
+  role_description: bispo diocesano interino
+  diocese: ieab-dasp
+  start: '2017'
+  end: '2018'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Diocese Anglicana de São Paulo … 2017-2018 – Francisco de Assis da Silva (Interino)
+    page: 521-522
+  notes: Anexo D da tese (bispos por diocese).
 - jurisdiction: ieab
   role: clergy
   status: confirmed
@@ -158,3 +210,47 @@ affiliations:
   notes: >-
     Presbítero, membro da Comissão Especial da IEAB (junho de 2004); sagrado bispo em 2011. Pároco em Belém (Diocese
     da Amazônia) e Novo Hamburgo (Diocese Meridional) antes do episcopado; datas não informadas.
+- jurisdiction: ieab
+  role: other
+  role_description: secretário-geral da ieab
+  end: '2011'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: escolhido o cônego Francisco de Assis da Silva110, que atuava como Secretário-Geral da IEAB.
+    page: '113'
+  notes: 'Cargo: Secretário-geral da IEAB.'
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Outro marco de destaque do episcopado de Clovis foi a criação do Núcleo Anglicano de Estudos Teológicos, que
+      teve o reverendo Francisco de Assis da Silva como seu primeiro reitor.
+    page: '184'
+  notes: Chegou à Igreja por meio de Robinson ('Grupo do Recife').
+events:
+- type: other
+  date: '2010-10-25'
+  description: >-
+    Concílio Extraordinário da Diocese Sul-Ocidental elege, no primeiro escrutínio, o cônego Francisco de Assis
+    da Silva (secretário-geral da IEAB) bispo coadjutor
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 25 de outubro de 2010, foi realizado o Concílio Extraordinário da Diocese Sul-Ocidental para a eleição
+      de novo bispo coadjutor que iria suceder Jubal Neves
+    page: '112'
+- type: other
+  date: 2013-11
+  description: >-
+    32º Sínodo (Rio de Janeiro, 14-17/11/2013) elege Francisco de Assis da Silva 7º Bispo Primaz e homenageia Edmund
+    Knox Sherrill por mais de 50 anos de episcopado
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Entre 14 e 17 de novembro de 2013, ocorreu o 32º Sínodo, na cidade do Rio de Janeiro.
+    page: '114'

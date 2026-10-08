@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iclivre
+acronym: ICLivre
+name: Igreja Católica Livre (Salomão Ferraz)
+type: national_church
+country: BR
+founded:
+  date: '1936'
+  sources:
+  - source: costa2021
+    quote: A partir desse evento, fundou a “Igreja Católica Livre”, sendo ele eleito o seu primeiro bispo.
+    page: '66'
+description: Fundada por Salomão Ferraz após deixar a Igreja Episcopal (1936); ele foi seu primeiro bispo.
+sources:
+- source: costa2021
+  quote: A partir desse evento, fundou a “Igreja Católica Livre”, sendo ele eleito o seu primeiro bispo.
+  page: '66'

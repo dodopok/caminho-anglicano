@@ -5,6 +5,9 @@ full_name: Luiz Osório Pires Prado
 aliases:
 - Dom Luiz Prado
 - Luis Prado
+- Luiz Osório Prado
+- Luiz Prado
+- bispo Prado
 birth:
   date: '1943-03-27'
   sources:
@@ -12,6 +15,9 @@ birth:
     quote: Natural da cidade de Porto Alegre, Luiz Osório Pires Prado nasceu em 27 de março de 1943.
   - source: costa2021
     quote: Faleceu em 2009.
+  - source: costa2021
+    quote: Grande do Sul, e no Conselho Mundial de Igrejas. Faleceu em 2009.
+    page: '98'
 death:
   date: 2009-12
   sources:
@@ -19,6 +25,9 @@ death:
     quote: Natural da cidade de Porto Alegre, Luiz Osório Pires Prado nasceu em 27 de março de 1943.
   - source: costa2021
     quote: Faleceu em 2009.
+  - source: costa2021
+    quote: Grande do Sul, e no Conselho Mundial de Igrejas. Faleceu em 2009.
+    page: '98'
   - source: cant-ec-2009-11
     quote: que exerceu até sua morte em dezembro de 2009.
   - source: cant-ec-2009-11
@@ -42,6 +51,9 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1966 - … Luiz Osório Pires Prado
     page: '371'
+  - source: costa2021
+    quote: Foi ordenado ao diaconato, em 1966, e ao presbiterato, em 1967.
+    page: '98'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
@@ -51,6 +63,9 @@ ordinations:
   sources:
   - source: cant-ec-2009-11
     quote: Ordenado ao presbiterado no ano seguinte
+  - source: costa2021
+    quote: Foi ordenado ao diaconato, em 1966, e ao presbiterato, em 1967.
+    page: '98'
 - order: episcopate
   date: 1987-07
   place: Catedral da Santissima Trindade, Porto Alegre
@@ -76,10 +91,17 @@ ordinations:
       e como professor no Seminário Teológico, na Universidade Federal do Rio Grande do Sul, na UNISINOS e na Faculdade
       Lassalista de Canoas.
     page: '312'
+  - source: costa2021
+    quote: >-
+      Meridional. Três anos depois, o reverendo Luiz Osório Pires Prado 85 foi eleito no primeiro escrutínio – fato
+      inédito nas eleições de bispos na Igreja. Foi sagrado bispo sufragâneo da Meridional, na Catedral de Santíssima
+      Trindade, em Porto Alegre.
+    page: '98'
   notes: >-
     Novo dado: mês (julho de 1987) e cidade (Porto Alegre). Sagrante não nomeado. World Mission News (jan/1988)
     diz que ele tinha a tarefa de criar a nova diocese no extremo sul (Pelotas); o Who's who de Lambeth 1988 o dá
-    como sufragâneo da Diocese Meridional (1987).
+    como sufragâneo da Diocese Meridional (1987). Eleito 'três anos depois' de 1984 (c. 1987). A tese NÃO informa
+    data da sagração nem sagrantes. Nota 138: nº 09.
 affiliations:
 - jurisdiction: ieab
   role: bishop
@@ -93,14 +115,18 @@ affiliations:
     quote: >-
       Em 1987, foi eleito bispo sufragâneo da Diocese Meridional e encarregado de organi- zar a futura diocese de
       Pelotas. Um ano de- pois, foi eleito seu primeiro bispo diocesano.
-  notes: 'Local: sufragâneo.'
+  - source: costa2021
+    quote: Foi sagrado bispo sufragâneo da Meridional, na Catedral de Santíssima Trindade, em Porto Alegre.
+    page: '98'
+  notes: >-
+    Local: sufragâneo. (sufragâneo) Datas aproximadas (eleito c. 1987; Diocese de Pelotas criada em 1988).
 - jurisdiction: ieab
   role: suffragan_bishop
   diocese: ieab-dm
   start: '1987'
   end: '1989'
   end_reason: transfer
-  status: contested
+  status: probable
   sources:
   - source: ame-54-1987
     quote: >-
@@ -130,16 +156,27 @@ affiliations:
         de Pelotas.
       page: '311'
 - jurisdiction: ieab
+  role: bishop
+  start: '1987'
+  end: '2000'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1987-2000 – Luiz Osório Pires Prado
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. O Anexo
+    D dá início em 1988 em Pelotas.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dap
   start: '1988'
   end: 2000-01
   end_reason: resignation
-  status: contested
+  status: confirmed
   sources:
-  - source: kickhofel-1995
-    quote: BISPOS DIOCESANOS Diocese Anglicana de Pelotas … 1988 - Luiz Osório Pires Prado
-    page: '368'
   - source: cant-ec-2009-11
     quote: >-
       Um ano de- pois, foi eleito seu primeiro bispo diocesano. Resignou a Diocese Anglicana de Pelotas em janeiro
@@ -148,6 +185,21 @@ affiliations:
     quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
   - source: costa2021
     quote: 1988-2000 – Luiz Osório Pires Prado
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Anglicana de Pelotas … 1988 - Luiz Osório Pires Prado
+    page: '368'
+  - source: costa2021
+    quote: Diocese Anglicana de Pelotas … 1988-2000 – Luiz Osório Pires Prado
+    page: '522'
+  - source: costa2021
+    quote: Posteriormente, o bispo Prado foi eleito para ser o primeiro diocesano de Pelotas.
+    page: '98'
+  - source: costa2021
+    quote: tornou-se o segundo bispo da Diocese Anglicana de Pelotas, após a aposentadoria do bispo Prado.
+    page: '105'
+  - source: costa2021
+    quote: para substituir o primeiro ordinário, Luiz Osório Pires Prado
+    page: '240'
   discrepancies:
   - field: start
     value: '1989-03-12'
@@ -170,7 +222,15 @@ affiliations:
       quote: Luiz Osório Pires Prado (1º bispo diocesano) - 1989 a 1999;
     - source: costa2021
       quote: 1988-2000 – Luiz Osório Pires Prado
-  notes: Fim em 1999 (Wikipedia/dapsul) ou 2000 (Costa).
+    - source: costa2021
+      quote: Posteriormente, o bispo Prado foi eleito para ser o primeiro diocesano de Pelotas.
+      page: '98'
+    - source: costa2021
+      quote: tornou-se o segundo bispo da Diocese Anglicana de Pelotas, após a aposentadoria do bispo Prado.
+      page: '105'
+  notes: >-
+    Fim em 1999 (Wikipedia/dapsul) ou 2000 (Costa). Anexo D da tese (bispos por diocese). Primeiro ordinário de
+    Pelotas, substituído por Sebastião Gameleira em 2000.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dm

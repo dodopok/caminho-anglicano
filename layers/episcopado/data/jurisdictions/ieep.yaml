@@ -23,5 +23,20 @@ founded:
 website: http://reverendojosue.blogspot.com/
 description: Igreja independente fundada por Josué (Sousa) Torres em Taboão da Serra (SP).
 sources:
-- source: costa-2021-tese
+- source: costa2021
   quote: Josué Torres fundou a Igreja Episcopal do Evangelho Pleno, em Taboão da Serra
+relations:
+- type: schism_from
+  target: iadb-lorite
+  date: null
+  led_by:
+  - josue-sousa-torres
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Após certo tempo, cada um deles tomou um caminho próprio. Josué Torres fundou a Igreja Episcopal do Evangelho
+      Pleno
+    page: '145'
+  notes: >-
+    A tese diz que 'cada um tomou um caminho próprio'; relação de origem, não necessariamente cisma formal.

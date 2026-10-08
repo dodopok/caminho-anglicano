@@ -64,13 +64,13 @@ ordinations:
 - order: episcopate
   date: '2012-03-17'
   place: Paróquia Anglicana Espírito Santo (PAES), Piedade, Jaboatão dos Guararapes-PE
-  jurisdiction: diocese-anglicana-recife
-  office: auxiliary
+  jurisdiction: iacs
+  office: suffragan
   principal_consecrator: peter-beckwith
   co_consecrators:
   - alexander-barroso
   - martin-morrison
-  status: contested
+  status: confirmed
   sources:
   - source: iab-regiao-missionaria
     quote: Eleito ao Episcopado em 04/06/2011 , Ordenado e Sagrado em 17/03/2012.
@@ -92,48 +92,17 @@ ordinations:
     quote: >-
       que, em 2012 foi sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson Cavalcanti, sem
       sucessores diretos. Embora não existam registros públicos detalhando os consagrantes
-  discrepancies:
-  - field: office
-    value: suffragan
-    sources:
-    - source: iab-regiao-missionaria
-      quote: Eleito ao Episcopado em 04/06/2011 , Ordenado e Sagrado em 17/03/2012.
-    - source: dar-sagracao-2012
-      quote: >-
-        O Bispo Sagrante foi o Revmo. Dom Peter Beckwith (TEC – Estados Unidos) que presidiu a Cerimônia e proferiu
-        o Sermão; os Bispos Co-Sagrantes foram: Revmo. Dom Alexander Barroso (Igreja Anglicana Carismática – Venezuela)
-        e Dom Martin Morrinson (Igreja da Inglaterra na África do Sul)
-    - source: dar-sagracao-2012
-      quote: >-
-        a Sagração dos Bispos Sufragâneos da Diocese do Recife no último sábado (17/03/2012), na Paróquia Anglicana
-        Espírito Santo (PAES), no bairro de Piedade, em Jaboatão dos Guararapes (PE)
-    - source: dar-sagracao-2012-quadro
-      quote: >-
-        Bispo Sagrante e Pregador: Revmo. Bispo Peter Beckwith Igreja Episcopal (Estados Unidos) Bispos Co-Sagrantes:
-        Revmo. Bispo Alexander Barroso Igreja Anglicana Carismática (Venezuela) Revmo. Bispo Martin Morrison Igreja
-        da Inglaterra na África do Sul
-    - source: iab-poster-linhagem-uchoa
-      quote: >-
-        que, em 2012 foi sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson Cavalcanti,
-        sem sucessores diretos. Embora não existam registros públicos detalhando os consagrantes
-  - field: jurisdiction
-    value: iacs
-    sources:
-    - source: iab-poster-linhagem-uchoa
-      quote: >-
-        que, em 2012 foi sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson Cavalcanti,
-        sem sucessores diretos. Embora não existam registros públicos detalhando os consagrantes
   notes: >-
-    Eleito em 04/06/2011, ainda no episcopado de Robinson Cavalcanti (a Living Church diz que em junho [de 2011]
-    Cavalcanti pediu a eleição de um coadjutor, planejando aposentar-se em 2014); sagrado 3 semanas após a morte
-    dele, no MESMO DIA da sagração de Evilásio Tenório (17/03/2012, segundo Wikipédia PT: Peter Beckwith com Alexander
-    Barroso e Martin Morrison) — provavelmente cerimônia conjunta, mas nenhuma fonte nomeia os sagrantes de Flávio.
-    O pôster da IAB diz 'sagrado bispo auxiliar por bispos do Cone-Sul, após a morte de Dom Robinson'. Sagração
-    conjunta com Evilásio Tenório. Sagrante e co-sagrantes segundo o site da Diocese do Recife (mar/2012). Bispos
-    visitantes (não co-sagrantes): Antônio José da Costa Raposo (Igreja Apostólica Episcopal, Portugal), Antônio
-    Pessoa Leite (Igreja Anglicana Missionária do Redentor), Francisco Buzzo Rodrigues e Josep Rosselo (Igreja Anglicana
-    Reformada). A fonte grafa 'Morrinson' no texto e 'Morrison' no quadro. Sobre o título: 'Bispo Sufragâneo, 1ª
-    Região Eclesiástica'.
+    Sagração conjunta com Evilásio Tenório. Sagrante e co-sagrantes segundo o site da Diocese do Recife (mar/2012).
+    Bispos visitantes (não co-sagrantes): Antônio José da Costa Raposo (Igreja Apostólica Episcopal, Portugal),
+    Antônio Pessoa Leite (Igreja Anglicana Missionária do Redentor), Francisco Buzzo Rodrigues e Josep Rosselo (Igreja
+    Anglicana Reformada). A fonte grafa 'Morrinson' no texto e 'Morrison' no quadro. Sobre o título: 'Bispo Sufragâneo,
+    1ª Região Eclesiástica'. Eleito em 04/06/2011, ainda no episcopado de Robinson Cavalcanti (a Living Church diz
+    que em junho [de 2011] Cavalcanti pediu a eleição de um coadjutor, planejando aposentar-se em 2014); sagrado
+    3 semanas após a morte dele, no MESMO DIA da sagração de Evilásio Tenório (17/03/2012, segundo Wikipédia PT:
+    Peter Beckwith com Alexander Barroso e Martin Morrison) — provavelmente cerimônia conjunta, mas nenhuma fonte
+    nomeia os sagrantes de Flávio. O pôster da IAB diz 'sagrado bispo auxiliar por bispos do Cone-Sul, após a morte
+    de Dom Robinson'.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -161,9 +130,22 @@ affiliations:
     quote: DOM FLÁVIO ADAIR BISPO SUFRAGÂNEO 1ª REGIÃO ECLESIÁSTICA
   - source: adr-bispos-2017
     quote: Bispo Sufragâneo Revmo. Flávio Adair Torres Soares
+  - source: costa2021
+    quote: >-
+      em 04 de junho de 2011, o Concílio elegeu os reverendos Flávio Adair e Evilásio Tenório como bispos sufragâneos.
+    page: '230'
   notes: >-
     Local: 1ª Região Eclesiástica. Bispo sufragâneo até a criação da IAB (2018), quando passa à Região Missionária
-    (vínculo já registrado).
+    (vínculo já registrado). Tese grafa 'Flávio Adair' (Flávio Adair Torres Soares na base). Data de sagração não
+    informada.
+  discrepancies:
+  - field: start
+    value: '2011'
+    sources:
+    - source: costa2021
+      quote: >-
+        em 04 de junho de 2011, o Concílio elegeu os reverendos Flávio Adair e Evilásio Tenório como bispos sufragâneos.
+      page: '230'
 - jurisdiction: diocese-anglicana-recife
   role: bishop
   diocese: ieab-dar
@@ -293,3 +275,15 @@ events:
     quote: >-
       Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
       bispo diocesano, até a eleição do novo líder da Igreja Anglicana
+- type: other
+  date: '2011-06-04'
+  description: >-
+    O Concílio da diocese dissidente (Diocese do Recife, então sob o Cone Sul) elegeu os reverendos Flávio Adair
+    e Evilásio Tenório como bispos sufragâneos.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Para ajudar na condução da Diocese, em 04 de junho de 2011, o Concílio elegeu os reverendos Flávio Adair e
+      Evilásio Tenório como bispos sufragâneos.
+    page: '230'

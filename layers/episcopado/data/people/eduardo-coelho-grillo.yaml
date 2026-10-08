@@ -33,6 +33,11 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1989 - … Eduardo Coelho Grillo
     page: '373'
+  - source: costa2021
+    quote: >-
+      Em 08 de janeiro de 1989, foi ordenado ao diaconato, pelo bispo Cláudio Vinícios de Senna Gastal, na Diocese
+      Meridional
+    page: '117'
   notes: >-
     Diocese Meridional. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995);
     ordenante não informado.
@@ -47,6 +52,11 @@ ordinations:
     quote: >-
       Foi ordenado presbítero sete meses depois, em 20 de agosto de 1989, na Diocese Anglicana de Pelotas, pelo
       Revmo Bispo Luiz Osório Pires Prado.
+  - source: costa2021
+    quote: >-
+      ordenado presbítero sete meses depois, em 20 de agosto de 1989, na Diocese Anglicana de Pelotas, pelo bispo
+      Luiz Osório Pires Prado.
+    page: '117'
   notes: Diocese Anglicana de Pelotas.
 - order: episcopate
   date: '2017-04-08'
@@ -72,6 +82,7 @@ ordinations:
       Coelho Grillo, na Catedral do Redentor, reali- zada na manhã do dia 08 de abril.
   notes: >-
     Eleito bispo coadjutor da DARJ em 02/11/2016; co-sagrantes = "os demais bispos da Provincia" (nao nomeados).
+    Coadjutor. Co-sagrantes: 'os demais bispos da Província' (não nomeados).
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -111,6 +122,30 @@ affiliations:
       setembro de 2017.
   notes: Reitor da Paróquia de São Lucas, sucedendo Celso Franco de Oliveira.
 - jurisdiction: ieab
+  role: clergy
+  start: 2001-03
+  end: 2017-09
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      foi convidado pelo mesmo para substituí-lo como reitor na Paróquia de São Lucas, cargo que ocupou de março
+      de 2001 a setembro de 2017
+    page: '117'
+  notes: 'Local: Paróquia de São Lucas, Rio de Janeiro.'
+- jurisdiction: ieab
+  role: bishop
+  start: '2017'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2017- – Eduardo Coelho Grillo
+    page: 518-520
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+- jurisdiction: ieab
   role: coadjutor_bishop
   diocese: ieab-darj
   start: '2017-04-08'
@@ -140,7 +175,23 @@ affiliations:
     quote: Em 29 de julho de 2017, Eduardo foi instituído como o novo diocesano.
   - source: ieab-dioceses
     quote: Bispo Diocesano – Revmo. Eduardo Grillo
-  notes: Instituído pelo primaz Francisco de Assis da Silva.
+  - source: costa2021
+    quote: Diocese Anglicana do Rio de Janeiro … 2017- – Eduardo Coelho Grillo
+    page: '521'
+  - source: costa2021
+    quote: >-
+      devido à eleição do bispo Eduardo Grillo para a Diocese Anglicana do Rio de Janeiro, em setembro de 2017.
+    page: '247'
+  notes: >-
+    Instituído pelo primaz Francisco de Assis da Silva. Anexo D da tese (bispos por diocese). Data é da eleição.
+  discrepancies:
+  - field: start
+    value: 2017-09
+    sources:
+    - source: costa2021
+      quote: >-
+        devido à eleição do bispo Eduardo Grillo para a Diocese Anglicana do Rio de Janeiro, em setembro de 2017.
+      page: '247'
 - jurisdiction: ieab-darj
   role: other
   role_description: reitor
@@ -192,3 +243,15 @@ events:
   - source: cant-novas-igrejas-2024
     quote: que o referido sacerdote não fazia parte da Igreja Episcopal Anglicana do Brasil.
     page: '89'
+- type: resignation
+  date: '2016-11-02'
+  description: >-
+    Concílio extraordinário da DARJ elege Eduardo Coelho Grillo bispo coadjutor, após a resignação de Filadelfo
+    Oliveira
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 02 de novembro de 2016, o reverendo Eduardo Coelho Grillo117 foi eleito bispo coadjutor pelo Concílio extraordinário
+      da DARJ, após a resignação do bispo Filadelfo Oliveira.
+    page: '117'

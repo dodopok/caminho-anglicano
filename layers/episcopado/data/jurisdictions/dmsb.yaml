@@ -4,6 +4,8 @@ acronym: DMSB
 name: >-
   Distrito Missionário do Sul do Brasil (Missionary District of Southern Brazil) — antes 'missão' e 'Bishop for
   Brazil'
+aliases:
+- Distrito Missionário do Sul do Brasil (Missionary District of Southern Brazil)
 type: diocese
 country: BR
 founded:
@@ -17,6 +19,15 @@ founded:
     quote: >-
       The state of Rio Grande do Sul was cut into two parts; the eastern, which retained the old name "Southern
       Brazil"
+  - source: costa2021
+    quote: a Convenção Geral da Igreja dos Estados Unidos elevou o país ao status de um Distrito Missionário.
+    page: '58'
+dissolved:
+  date: '1965'
+  sources:
+  - source: costa2021
+    quote: a Convenção Geral da Igreja dos Estados Unidos elevou o país ao status de um Distrito Missionário.
+    page: '58'
 description: >-
   Jurisdição missionária da TEC no Brasil: missão (1889/1890), bispo 'for Brazil' (1899), distrito missionário reconhecido
   em 1907 (chamado 'of Brazil'/'Southern Brazil'); dividido em 1949, mantendo o nome Southern Brazil para a parte
@@ -34,7 +45,7 @@ relations:
   target: tec
   date: '1899'
   end: '1965'
-  status: confirmed
+  status: contested
   sources:
   - source: ens-xxvi-24
     quote: >-
@@ -42,7 +53,17 @@ relations:
       was elected Bishop of the District by the House of Bishops and Anglican work in Brazil, with the exception
       of a few Church of England chaplaincies, came formally under the direction of the Episcopal Church in the
       United States.
+  - source: costa2021
+    quote: a Convenção Geral da Igreja dos Estados Unidos elevou o país ao status de um Distrito Missionário.
+    page: '58'
   notes: Distrito missionário formal desde 1907 (Wikipédia EN/PT).
+  discrepancies:
+  - field: date
+    value: '1907'
+    sources:
+    - source: costa2021
+      quote: a Convenção Geral da Igreja dos Estados Unidos elevou o país ao status de um Distrito Missionário.
+      page: '58'
 - type: part_of
   target: acms
   date: '1889'

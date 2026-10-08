@@ -50,11 +50,6 @@ affiliations:
   start: '2023'
   status: contested
   sources:
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      perceber a presença de Gleydson participando de celebrações junto com o bispo e primaz da IARB, dom Diógenes
-      Monteiro, na sede da Igreja em Santa Cruz do Capibaribe.
-    page: '169'
   - source: ptwiki-iarb
     quote: Como seu sucessor, a Câmara dos Bispos elegeu o bispo Diógenes Monteiro da Silva como novo primaz.
   - source: cant-novas-igrejas-2024
@@ -62,9 +57,11 @@ affiliations:
       Para sucedê-lo na primazia, a Câmara dos Bispos elegeu o bispo Diógenes Monteiro da Silva, natural de Pesqueira
       (PE).
     page: '134'
-  notes: >-
-    Situação em junho de 2022. Eleito em 2021 ou pouco depois; catedral em Santa Cruz do Capibaribe desde o Sínodo
-    de 2023.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      perceber a presença de Gleydson participando de celebrações junto com o bispo e primaz da IARB, dom Diógenes
+      Monteiro, na sede da Igreja em Santa Cruz do Capibaribe.
+    page: '169'
   discrepancies:
   - field: start
     value: '2021'
@@ -74,6 +71,9 @@ affiliations:
         Para sucedê-lo na primazia, a Câmara dos Bispos elegeu o bispo Diógenes Monteiro da Silva, natural de Pesqueira
         (PE).
       page: '134'
+  notes: >-
+    Eleito em 2021 ou pouco depois; catedral em Santa Cruz do Capibaribe desde o Sínodo de 2023. Situação em junho
+    de 2022.
 events:
 - type: other
   date: 2022-06

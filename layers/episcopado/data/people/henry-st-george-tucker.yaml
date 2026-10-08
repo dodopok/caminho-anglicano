@@ -34,7 +34,7 @@ sources:
 ordinations:
 - order: episcopate
   date: '1912-03-25'
-  place: Catedral de Kyoto, Japão
+  place: Holy Trinity Church, Kyoto, Japão
   jurisdiction: tec
   office: missionary
   principal_consecrator: john-mckim
@@ -46,15 +46,6 @@ ordinations:
   - ingles-de-south-tokyo
   status: contested
   sources:
-  - source: lca-1913
-    quote: >-
-      He was consecrated in the Cathedral at Kyoto on March 25, the Feast of the Annunciation, 1912, by the Rt.
-      Rev. John McKim, D.D., Bishop of Tokyo, with the English Bishops of South Tokyo and Osaka as co-consecrators
-      ;
-  - source: wp-en-histlist
-    quote: >-
-      | [[Henry St. George Tucker (bishop)|Henry St. George Tucker]] | [[John McKim|167]] [[Rollestone S. Fyffe|FYF]]
-      [[Arthur Lea (bishop)|LEA]] | 1912
   - source: som-1912-06
     quote: last of all coming Bishop McKim, of Tokyo, the presiding bishop and consecrator.
   - source: som-1912-06
@@ -72,27 +63,16 @@ ordinations:
   - source: iab-poster-linhagem-uchoa
     quote: >-
       157c. Frederick Foote Johnson (1905-1932) que, em 1912, sagrou Henry St. George Tucker como bispo de Kyoto.
+  - source: lca-1913
+    quote: >-
+      He was consecrated in the Cathedral at Kyoto on March 25, the Feast of the Annunciation, 1912, by the Rt.
+      Rev. John McKim, D.D., Bishop of Tokyo, with the English Bishops of South Tokyo and Osaka as co-consecrators
+      ;
+  - source: wp-en-histlist
+    quote: >-
+      | [[Henry St. George Tucker (bishop)|Henry St. George Tucker]] | [[John McKim|167]] [[Rollestone S. Fyffe|FYF]]
+      [[Arthur Lea (bishop)|LEA]] | 1912
   discrepancies:
-  - field: place
-    value: Holy Trinity Church, Kyoto, Japão
-    sources:
-    - source: som-1912-06
-      quote: last of all coming Bishop McKim, of Tokyo, the presiding bishop and consecrator.
-    - source: som-1912-06
-      quote: >-
-        we assembled on the Feast of the Annunciation just before ten o’clock, for the consecration of the Rev.
-        Dr. Henry St. George Tucker, elected bishop of the District of Kyoto.
-    - source: wp-tucker
-      quote: '| consecrated_by   = [[John McKim]]'
-    - source: wp-lista-bispos-tec
-      quote: >-
-        bgcolor="#D4B1BB " | 258 | [[Henry St. George Tucker (bishop)|Henry St. George Tucker]] | [[John McKim|167]]
-        [[Rollestone S. Fyffe|FYF]] [[Arthur Lea (bishop)|LEA]] | 1912 | [[Missionary Bishop|Missionary]], [[Nippon
-        Sei Ko Kai|II Kyoto]]; [[Episcopal Diocese of Virginia|VIII Virginia]] | <ref group="N" name="tucker" />
-        [[List of presiding bishops of the Episcopal Church in the United States of Am
-    - source: iab-poster-linhagem-uchoa
-      quote: >-
-        157c. Frederick Foote Johnson (1905-1932) que, em 1912, sagrou Henry St. George Tucker como bispo de Kyoto.
   - field: principal_consecrator
     value: frederick-foote-johnson
     sources:
@@ -100,15 +80,15 @@ ordinations:
       quote: >-
         157c. Frederick Foote Johnson (1905-1932) que, em 1912, sagrou Henry St. George Tucker como bispo de Kyoto.
   notes: >-
-    Confirma o registro de pontes-estrangeiras.json (som-1912-06) com uma segunda fonte primária. O Living Church
-    Annual não dá os nomes dos co-sagrantes, só as sés (South Tokyo e Osaka, ambas inglesas). A lista da Wikipédia
-    dá Fyffe (Rangoon) e Arthur Lea (Kyushu), o que NÃO bate com a fonte primária. CORRIGIDO: o pôster diz que Frederick
-    Foote Johnson sagrou Tucker em 1912; as fontes dizem que o sagrante principal foi John McKim, bispo de Tóquio,
-    em Kyoto, na festa da Anunciação (25/03/1912). Johnson não aparece. Co-sagrantes divergem: a Spirit of Missions
-    menciona os bispos Cecil (South Tokyo), Foss (Osaka) e Andrews (Hokkaido) participando do rito e "the laying-on
-    of hands by the four bishops present"; a lista da Wikipédia dá McKim, Rollestone Fyffe (Rangoon) e Arthur Lea
-    (Kyushu). Os co_sagrantes aqui (Cecil, Foss, Andrews, só com os sobrenomes dados pela fonte) são inferência
-    de que os "four bishops present" foram McKim + esses três, que tiveram papéis no rito; ver dúvidas.
+    CORRIGIDO: o pôster diz que Frederick Foote Johnson sagrou Tucker em 1912; as fontes dizem que o sagrante principal
+    foi John McKim, bispo de Tóquio, em Kyoto, na festa da Anunciação (25/03/1912). Johnson não aparece. Co-sagrantes
+    divergem: a Spirit of Missions menciona os bispos Cecil (South Tokyo), Foss (Osaka) e Andrews (Hokkaido) participando
+    do rito e "the laying-on of hands by the four bishops present"; a lista da Wikipédia dá McKim, Rollestone Fyffe
+    (Rangoon) e Arthur Lea (Kyushu). Os co_sagrantes aqui (Cecil, Foss, Andrews, só com os sobrenomes dados pela
+    fonte) são inferência de que os "four bishops present" foram McKim + esses três, que tiveram papéis no rito;
+    ver dúvidas. Confirma o registro de pontes-estrangeiras.json (som-1912-06) com uma segunda fonte primária. O
+    Living Church Annual não dá os nomes dos co-sagrantes, só as sés (South Tokyo e Osaka, ambas inglesas). A lista
+    da Wikipédia dá Fyffe (Rangoon) e Arthur Lea (Kyushu), o que NÃO bate com a fonte primária.
 affiliations:
 - jurisdiction: tec
   role: bishop

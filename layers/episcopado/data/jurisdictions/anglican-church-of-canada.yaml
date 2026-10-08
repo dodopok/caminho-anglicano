@@ -1,13 +1,16 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: anglican-church-of-canada
-acronym: anglican-church-of-canada
-name: Anglican Church of Canada (Igreja Anglicana do Canadá)
-type: national_church
+acronym: ACCan
+name: Anglican Church of Canada
+aliases:
+- Anglican Church of Canada (Igreja Anglicana do Canadá)
+- anglican-church-of-canada
+type: province
 country: CA
 website: https://www.anglican.ca
-description: >-
-  Província da Comunhão Anglicana no Canadá. Sigla criada nesta frente; pontes-estrangeiras.json usa 'ACC' para
-  a mesma igreja.
+description: Igreja Anglicana do Canadá.
 sources:
-- source: nlchurchman-1993-02
-  quote: ten Bishops of the Ecclesiastical Province of Canada
+- source: wp-harvey
+  quote: >-
+    He was previously the [[Anglican Diocese of Eastern Newfoundland and Labrador|Bishop of Eastern Newfoundland
+    and Labrador]] in the [[Anglican Church of Canada]] from 1993 to 2004.

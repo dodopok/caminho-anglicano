@@ -20,8 +20,8 @@ ordinations:
 - order: diaconate
   date: '2015-12-04'
   place: Sínodo da Diocese do Recife (Recife/Jaboatão dos Guararapes-PE)
-  jurisdiction: diocese-anglicana-recife
-  status: contested
+  jurisdiction: iacs
+  status: probable
   sources:
   - source: reb-calendario-2026
     quote: 04/12/2015 -BISPO ERIC (ORDENAÇÃO)
@@ -37,25 +37,6 @@ ordinations:
       on one of the four Deacons. they also ordained three priests and licensed a number of lay ministers.
   - source: aac-2015-recife
     quote: participated in the Ordination, laying hands on one of the four Deacons
-  discrepancies:
-  - field: place
-    value: Recife/Jaboatão dos Guararapes (Sínodo da Diocese do Recife)
-    sources:
-    - source: aac-2015-recife
-      quote: One of the new Deacons is Eric. He is a person of many surprises.
-    - source: aac-2015-recife
-      quote: The (just about to be) Rev. Eric rodrigues
-    - source: aac-2015-recife
-      quote: participated in the Ordination, laying hands on one of the four Deacons
-  - field: jurisdiction
-    value: iacs
-    sources:
-    - source: aac-2015-recife
-      quote: One of the new Deacons is Eric. He is a person of many surprises.
-    - source: aac-2015-recife
-      quote: The (just about to be) Rev. Eric rodrigues
-    - source: aac-2015-recife
-      quote: participated in the Ordination, laying hands on one of the four Deacons
   notes: >-
     O calendário rotula a data como 'Ordenação Episcopal' num trecho e só 'Ordenação' noutro; a sagração foi em
     08/05/2023. A data bate com o diaconato de dez/2015 registrado por outra fonte. Ordenação na sexta-feira de
@@ -196,8 +177,8 @@ affiliations:
   diocese: iab-diocese-joao-pessoa
   start: '2023-05-08'
   end: '2024-11-21'
-  end_reason: left
-  status: contested
+  end_reason: schism
+  status: confirmed
   sources:
   - source: djp-bispos-aux-2024
     quote: >-
@@ -217,19 +198,6 @@ affiliations:
   notes: >-
     Fim entre 24/06/2024 (ainda listado) e 18/02/2025 (só Miguel Neto listado); coerente com a fundação da REB em
     20/12/2024 sob sua liderança (ver iab-clero.json).
-  discrepancies:
-  - field: end_reason
-    value: schism
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        O bispo Eric atuava como bispo auxiliar na Diocese de João Pessoa, juntamente com o bispo Miguel Neto.
-      page: '151'
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Eric Rodrigues formalizou a saída da Província da GAFCON, através de uma carta publicada nas redes sociais,
-        em 21 de novembro de 2024.
-      page: '151'
 - jurisdiction: reb
   role: bishop
   start: 2024-12

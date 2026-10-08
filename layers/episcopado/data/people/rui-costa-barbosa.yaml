@@ -13,7 +13,7 @@ biography: >-
 sources:
 - source: iatb-comunidades
   quote: sob a direção do Bispo Primaz do Brasil, Dom Rui Costa Barbosa.
-- source: costa-2021-tese
+- source: costa2021
   quote: >-
     Ricardo Lorite e Rui Barbosa tiveram sua ordenação episcopal através dos bispos Norman Dutton, Frank Peachey
     e Iranildo Macieira da Silva (Igreja Episcopal Latina do Brasil).
@@ -60,7 +60,7 @@ ordinations:
   - norman-dutton
   status: probable
   sources:
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       Após receberem as ordens do diaconato e do presbiterato por bispos independentes, Ricardo Lorite e Rui Barbosa
       tiveram sua ordenação episcopal através dos bispos Norman Dutton, Frank Peachey e Iranildo Macieira da Silva
@@ -74,7 +74,9 @@ ordinations:
     Data e sagrante principal não informados; a fonte lista três bispos sagrantes sem hierarquia. Iranildo Macieira
     da Silva é da 'Igreja Episcopal Latina do Brasil'. O livro diz 'através dos bispos' Norman Dutton, Frank Peachey
     e Lucas Macieira, sem indicar o sagrante principal. Na p. 119 Rui aparece como bispo coadjutor da IAdB. A IATB
-    (p. 136) diz ter origem em 2006, 'após a sagração do bispo e atual primaz, Rui Costa Barbosa'.
+    (p. 136) diz ter origem em 2006, 'após a sagração do bispo e atual primaz, Rui Costa Barbosa'. A tese lista
+    os três bispos sem indicar o sagrante principal nem data. Diaconato e presbiterato recebidos de 'bispos independentes'
+    não nomeados.
 affiliations:
 - jurisdiction: iatb
   role: primate
@@ -102,6 +104,10 @@ affiliations:
       que sequer saiu do papel e, posteriormente, foi renomeada Igreja Anglicana Tradicional do Brasil, em Santo
       André
     page: '118'
+  - source: costa2021
+    quote: >-
+      o bispo Rui Costa Barbosa, em parceria com outros clérigos, criou a Diocese Anglicana Católica do Brasil
+    page: '145'
 - jurisdiction: iadb-lorite
   role: coadjutor_bishop
   start: '2006-01-15'
@@ -125,7 +131,7 @@ affiliations:
   end_reason: left
   status: probable
   sources:
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       originada a partir de um grupo formado por ex-membros da Diocese Anglicana de São Paulo (DASP), Ricardo Lorite
       de Lima, Rui Costa Barbosa
@@ -146,6 +152,18 @@ affiliations:
   notes: >-
     O livro diz que saíram da DASP/IEAB antes da aproximação com a REC (abril de 2004); na p. 145 são chamados de
     'seminaristas'. Data de saída não informada.
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dasp
+  end_reason: left
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Igreja Anglicana do Brasil” 152 originada a partir de um grupo formado por ex-membros da Diocese Anglicana
+      de São Paulo (DASP), Ricardo Lorite de Lima, Rui Costa Barbosa, Luis Fernando Salgado e Josué
+    page: '145'
+  notes: (ex-membro) 'Ex-membros' da DASP; a tese não diz se eram clérigos ou leigos na IEAB nem datas.
 events:
 - type: other
   date: '2025-11-16'

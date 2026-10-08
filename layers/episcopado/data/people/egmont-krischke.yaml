@@ -11,6 +11,20 @@ aliases:
 - Egmont Valle Machado Krischke
 - Most Rev. Egmont Machado Krischke
 - Rt. Rev. Egmont Machado Krischke
+birth:
+  date: '1909-06-26'
+  sources:
+  - source: costa2021
+    quote: Egmont Machado Krischke nasceu em 26 de junho de 1909, em São Leopoldo, RS.
+    page: '72'
+  - source: costa2021
+    quote: >-
+      Devido a motivos de saúde, o bispo Krischke resignou como diocesano, mas permaneceu como Primaz do Brasil,
+      vindo a falecer no exercício do cargo, em 28 de
+    page: '84'
+  - source: costa2021
+    quote: junho de 1971.
+    page: '85'
 death:
   date: '1971-06-28'
   sources:
@@ -18,6 +32,12 @@ death:
     quote: >-
       Devido a motivos de saúde, o bispo Krischke resignou como diocesano, mas permaneceu como Primaz do Brasil,
       vindo a falecer no exercício do cargo, em 28 de
+  - source: costa2021
+    quote: Egmont Machado Krischke nasceu em 26 de junho de 1909, em São Leopoldo, RS.
+    page: '72'
+  - source: costa2021
+    quote: junho de 1971.
+    page: '85'
   - source: ia-gc-journal-1973
     quote: >-
       Received notification of the death, on June 28, 1971, of the Most Rev. Egmont M. Krischke, Primate of the
@@ -40,6 +60,22 @@ sources:
 - source: wd-q23585620
   quote: Egmont M. Krischke | Anglican bishop in Brazil
 ordinations:
+- order: diaconate
+  date: '1930-11-30'
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Foi ordenado diácono, no dia 30 de novembro de 1930 e em 10 de dezembro de 1933 ao presbiterato.
+    page: '72'
+- order: presbyterate
+  date: '1933-12-10'
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Foi ordenado diácono, no dia 30 de novembro de 1930 e em 10 de dezembro de 1933 ao presbiterato.
+    page: '72'
 - order: episcopate
   date: '1950-03-12'
   place: Igreja do Crucificado (Church of the Crucified), Bagé, RS
@@ -74,10 +110,16 @@ ordinations:
       seu primeiro bispo foi Egmont Machado Krischke, eleito pela Câmara dos Bispos da igreja americana em setembro
       de 1949 e sagrado em 12 de março de 1950, na Paróquia do Crucificado em Bagé.
     page: '254'
+  - source: costa2021
+    quote: >-
+      Assim, o reverendo Egmont Machado Krischke 56 foi eleito o mais novo bispo, para assumir a recém-criada Diocese
+      Sul-Ocidental 57, com sé na cidade de Santa Maria. A sua sagração ocorreu em 12 de março de 1950, na Paróquia
+      do Crucificado, em Bagé.
+    page: '72'
   notes: >-
     Primeira sagração no próprio Brasil segundo a nota ('the first consecra­tion to be held in Brazil in two years'
     — i.e., há dois anos não havia; a de Pithan em 1940 foi no Brasil). Presbíteros assistentes: Rev. George U.
-    Krischke (pai) e Rev. N. Duval da Silva; Pithan foi litanista e pregador.
+    Krischke (pai) e Rev. N. Duval da Silva; Pithan foi litanista e pregador. Sagrantes não informados.
 affiliations:
 - jurisdiction: dmsb
   role: clergy
@@ -109,29 +151,65 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1950-1955 - Egmont Machado Krischke
     page: '368'
+  - source: costa2021
+    quote: >-
+      Em 1956 a Diocese Sul-Ocidental elegeu seu segundo bispo, Plínio Lauer Simões60 transferindo o bispo Egmont
+      Krischke para a Diocese Meridional
+    page: '73'
   notes: 'Local: Santa Maria.'
+  discrepancies:
+  - field: end
+    value: '1956'
+    sources:
+    - source: costa2021
+      quote: >-
+        Em 1956 a Diocese Sul-Ocidental elegeu seu segundo bispo, Plínio Lauer Simões60 transferindo o bispo Egmont
+        Krischke para a Diocese Meridional
+      page: '73'
 - jurisdiction: dmsb
   role: diocesan_bishop
   diocese: southern-brazil
   start: '1955'
+  end_reason: resignation
   status: confirmed
   sources:
   - source: wit-1955-09-29
     quote: Krischke who is transferring to Southern Brazil to replace Bishop Pithan
   - source: ens-xxvi-8
     quote: The Rt. Rev. Egmont M. Krischke, Bishop of Southern Brazil and senior bishop in the Brazilian Church
-  notes: 'Local: Porto Alegre.'
+  - source: costa2021
+    quote: >-
+      Em 1956, quando o Bispo Pithan se aposentou, a Câmara dos Bispos transferiu o Bispo Krischke para a Diocese
+      Meridional com sede em Porto Alegre.
+    page: '83'
+  - source: costa2021
+    quote: >-
+      Devido a motivos de saúde, o bispo Krischke resignou como diocesano, mas permaneceu como Primaz do Brasil
+    page: '84'
+  notes: >-
+    Local: Porto Alegre. Resignou como diocesano por saúde antes de morrer (28/6/1971); data da resignação não informada.
+    Após 1965 a diocese é da IEAB.
+  discrepancies:
+  - field: start
+    value: '1956'
+    sources:
+    - source: costa2021
+      quote: >-
+        Em 1956, quando o Bispo Pithan se aposentou, a Câmara dos Bispos transferiu o Bispo Krischke para a Diocese
+        Meridional com sede em Porto Alegre.
+      page: '83'
+    - source: costa2021
+      quote: >-
+        Devido a motivos de saúde, o bispo Krischke resignou como diocesano, mas permaneceu como Primaz do Brasil
+      page: '84'
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dm
   start: '1956'
-  end: '1970'
+  end: '1971'
   end_reason: resignation
-  status: contested
+  status: probable
   sources:
-  - source: kickhofel-1995
-    quote: Krischke adoeceu em 1970 e resignou a diocese, mas permaneceu como primaz até 1971, quando faleceu.
-    page: '249'
   - source: costa2021
     quote: 1950-1971 – Egmont Valle Machado Krischke
   - source: costa2021
@@ -141,20 +219,20 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1956-1970 - Egmont Machado Krischke
     page: '368'
+  - source: kickhofel-1995
+    quote: Krischke adoeceu em 1970 e resignou a diocese, mas permaneceu como primaz até 1971, quando faleceu.
+    page: '249'
+  notes: Renunciou como diocesano por saude, permanecendo primaz.
   discrepancies:
   - field: end
-    value: '1971'
+    value: '1970'
     sources:
-    - source: costa2021
-      quote: 1950-1971 – Egmont Valle Machado Krischke
-    - source: costa2021
-      quote: >-
-        Em 1956, quando o Bispo Pithan se aposentou, a Câmara dos Bispos transferiu o Bispo Krischke para a Diocese
-        Meridional
     - source: kickhofel-1995
       quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1956-1970 - Egmont Machado Krischke
       page: '368'
-  notes: Renunciou como diocesano por saude, permanecendo primaz.
+    - source: kickhofel-1995
+      quote: Krischke adoeceu em 1970 e resignou a diocese, mas permaneceu como primaz até 1971, quando faleceu.
+      page: '249'
 - jurisdiction: ieab
   role: primate
   start: '1965-04-25'
@@ -196,9 +274,19 @@ affiliations:
   - source: kickhofel-1995
     quote: Krischke adoeceu em 1970 e resignou a diocese, mas permaneceu como primaz até 1971, quando faleceu.
     page: '249'
+  - source: costa2021
+    quote: Primazes da Igreja Episcopal Anglicana do Brasil … 1965-1971 – Egmont Valle Machado Krischke
+    page: '523'
+  - source: costa2021
+    quote: >-
+      Durante o histórico Sínodo realizado em Porto Alegre, no dia 25 de abril de 1965, o Bispo Presidente da Igreja
+      Episcopal dos Estados Unidos, o Reverendíssimo John Elbridge Hines, realizou a solene proclamação 67 e a investidura
+      de Egmont
+    page: '83'
   notes: >-
     Wikipédia: primaz 1965–1971; ENS (out. 1972) diz que morreu 'a few months ago' — data da morte (1971 ou 1972)
-    a verificar. O livro dá só o início de cada primado; o fim é o início do primado seguinte.
+    a verificar. O livro dá só o início de cada primado; o fim é o início do primado seguinte. Anexo E da tese (primazes
+    da IEAB).
 events:
 - type: death
   date: '1971-06-28'
@@ -311,3 +399,30 @@ events:
       Em setembro de 1955, a Câmara dos Bispos da igreja americana transferiu o bispo Krischke para a Diocese Meridional
       para substituir o bispo Pithan, que se viu obrigado a solicitar aposentadoria por motivos de saúde
     page: '255'
+- type: other
+  date: '1949'
+  description: >-
+    Concílio de 1949 indica Egmont Machado Krischke para o episcopado (48 votos; Plínio Lauer Simões 20, Orlando
+    Batista 16, Virgínio Pereira Neves 15, Henrique Todt Júnior 13)
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Os mais votados foram Egmont Machado Krischke, com 48 votos; Plínio Lauer Simões, com 20, Orlando Batista,
+      com 16; Virgínio Pereira Neves, com 15; e Henrique Todt Júnior, com 13 votos.
+    page: '72'
+- type: other
+  date: '1965-04-25'
+  description: >-
+    Proclamação da autonomia da Igreja Episcopal do Brasil como 19ª Província da Comunhão Anglicana, com mudança
+    de nome de Igreja Episcopal Brasileira para Igreja Episcopal do Brasil
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Durante o histórico Sínodo realizado em Porto Alegre, no dia 25 de abril de 1965
+    page: '83'
+  - source: costa2021
+    quote: >-
+      Uma das novidades trazidas pela nova Constituição e Cânones Gerais foi a mudança do nome da denominação, de
+      Igreja Episcopal Brasileira para Igreja Episcopal do Brasil
+    page: '83'

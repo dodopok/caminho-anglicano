@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: mario-ribas
+name: Mário Ribas
+aliases:
+- Padre Mário
+death:
+  date: '2019-03-19'
+  sources:
+  - source: costa2021
+    quote: Faleceu em 19 de março de 2019.
+    page: '210'
+biography: Clérigo e teólogo da Diocese Anglicana de São Paulo (IEAB), crítico de Robinson Cavalcanti em 2003.
+sources:
+- source: costa2021
+  quote: Faleceu em 19 de março de 2019.
+  page: '210'
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dasp
+  end: '2019-03-19'
+  end_reason: death
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Mário Ribas foi um importante clérigo e teólogo da Diocese Anglicana de São Paulo
+    page: '210'

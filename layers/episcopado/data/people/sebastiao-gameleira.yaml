@@ -3,9 +3,11 @@ id: sebastiao-gameleira
 name: Sebastião Armando Gameleira Soares
 full_name: Sebastião Armando Gameleira Soares
 aliases:
+- Dom Sebastião
 - Dom Sebastião Gameleira
 - Gamaleira
 - Sebastiao Gamaleira
+- Sebastião Armando Gamaleira Soares
 - Sebastião Gameleira
 - bispo Sebastião
 - dom Sebastião Gameleira
@@ -14,6 +16,9 @@ birth:
   sources:
   - source: costa2021
     quote: Nascido no município de São Miguel dos Campos, em Alagoas, Sebastião nasceu em 19 de maio
+  - source: costa2021
+    quote: Nascido no município de São Miguel dos Campos, em Alagoas, Sebastião nasceu em 19 de maio de 1945.
+    page: '105'
 wikidata: Q113828068
 biography: >-
   Ex-teologo catolico (ITER); recebido na IEAB em 1993; bispo de Pelotas (2000-2006) e do Recife (2006-2013).
@@ -21,12 +26,38 @@ sources:
 - source: costa2021
   quote: Nascido no município de São Miguel dos Campos, em Alagoas, Sebastião nasceu em 19 de maio
 ordinations:
+- order: diaconate
+  date: '1997-01-05'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: costa2021
+    quote: ordenado diácono e presbítero em 1997, já atuando como professor e reitor do Seminário Anglicano
+    page: '105'
+  - source: costa2021
+    quote: foi ordenado ao diaconato em 05 de janeiro de 1997 e, seis meses depois, ordenado presbítero
+    page: '239'
+  notes: Diocese Anglicana do Recife; ordenante não informado (Clóvis era o diocesano).
+- order: presbyterate
+  date: '1997'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: costa2021
+    quote: ordenado diácono e presbítero em 1997, já atuando como professor e reitor do Seminário Anglicano
+    page: '105'
+  - source: costa2021
+    quote: >-
+      foi ordenado ao diaconato em 05 de janeiro de 1997 e, seis meses depois, ordenado presbítero, exercendo o
+      seu ministério, inicialmente, na Paróquia do Semeador, em Olinda.
+    page: '239'
+  notes: '''Seis meses depois'' do diaconato (05/01/1997), isto é, c. julho de 1997. Ordenante não informado.'
 - order: episcopate
   date: '2000-07-23'
-  place: Paroquia (catolica) Nossa Senhora da Luz, Pelotas
+  place: Paróquia Nossa Senhora da Luz (Igreja Católica Romana), Pelotas
   jurisdiction: ieab
   office: diocesan
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: A cerimônia de sagração ocorreu em Pelotas, em 23 de julho de 2000, na Paróquia Nossa Senhora
@@ -34,13 +65,65 @@ ordinations:
     quote: >-
       foi eleito bispo da Diocese Anglicana de Pelotas, para substituir o primeiro ordinário, Luiz Osório Pires
       Prado, sendo sagrado em 23 de julho de 2000.
-  notes: 'Local: a nota 225 da mesma tese diz "Catedral do Redentor, em Pelotas". Sagrantes nao informados.'
+  - source: costa2021
+    quote: >-
+      A cerimônia de sagração ocorreu em Pelotas, em 23 de julho de 2000, na Paróquia Nossa Senhora da Luz, da Igreja
+      Católica Romana
+    page: '105'
+  - source: costa2021
+    quote: Sebastião Gameleira foi sagrado na Catedral do Redentor, em Pelotas
+    page: '243'
+  discrepancies:
+  - field: place
+    value: Catedral do Redentor, Pelotas
+    sources:
+    - source: costa2021
+      quote: >-
+        foi eleito bispo da Diocese Anglicana de Pelotas, para substituir o primeiro ordinário, Luiz Osório Pires
+        Prado, sendo sagrado em 23 de julho de 2000.
+      page: '240'
+    - source: costa2021
+      quote: Sebastião Gameleira foi sagrado na Catedral do Redentor, em Pelotas
+      page: '243'
+  notes: >-
+    Local: a nota 225 da mesma tese diz "Catedral do Redentor, em Pelotas". Sagrantes nao informados. A tese NÃO
+    nomeia sagrante principal nem co-sagrantes ('com a participação de muitos membros do clero anglicano'). Bispo
+    diocesano da Diocese Anglicana de Pelotas (IEAB). A tese não informa sagrantes.
 affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  start: '1993'
+  end: '2000-07-23'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 1993, foi recebido na IEAB, junto com a sua esposa, Maria Madalena Gameleira, iniciando sua caminhada na
+      Igreja. Em 1995, foi nomeado Reitor do Seminário
+    page: '239'
+  notes: >-
+    Ex-professor do ITER (Igreja Católica). Reitor do NAET/SAET desde 1995; destituído das funções na Paróquia do
+    Semeador e no SAET por Robinson após reunião de 2000; fim = sagração para Pelotas.
+- jurisdiction: ieab
+  role: bishop
+  start: '2000'
+  end: '2013'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2000-2013 – Sebastião Armando Gameleira Soares
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dap
   start: '2000-07-23'
-  end: '2006'
+  end: '2006-10-11'
   end_reason: transfer
   status: probable
   sources:
@@ -50,6 +133,24 @@ affiliations:
     quote: 2000-2006 – Sebastião Armando Gameleira Soares
   - source: ens-102306-1-a
     quote: who has been bishop of the Diocese of Pelotas in southern Brazil since February 2000
+  - source: costa2021
+    quote: Diocese Anglicana de Pelotas … 2000-2006 – Sebastião Armando Gameleira Soares
+    page: '522'
+  - source: costa2021
+    quote: tornou-se o segundo bispo da Diocese Anglicana de Pelotas, após a aposentadoria do bispo Prado.
+    page: '105'
+  - source: costa2021
+    quote: Com a transferência de Sebastião Gameleira para o Recife
+    page: '110'
+  - source: costa2021
+    quote: >-
+      foi eleito bispo da Diocese Anglicana de Pelotas, para substituir o primeiro ordinário, Luiz Osório Pires
+      Prado, sendo sagrado em 23 de julho de 2000.
+    page: '240'
+  - source: costa2021
+    quote: Foi aberto um canal de diálogo com a Diocese de Pelotas para realizar-se a transferência.
+    page: '238'
+  notes: Anexo D da tese (bispos por diocese).
 - jurisdiction: ieab-dar
   role: diocesan_bishop
   start: '2005'
@@ -62,7 +163,7 @@ affiliations:
   role: diocesan_bishop
   diocese: ieab-dar
   start: '2006-10-11'
-  end: 2013-12
+  end: '2013-12-14'
   end_reason: retirement
   status: confirmed
   sources:
@@ -79,10 +180,28 @@ affiliations:
       on October 11 of its fourth bishop, the Rt. Rev. Sebastiao Armando Gameleira Soares.
   - source: ptwp-dar
     quote: Sebastião Armando Gameleira Soares - 2006 a 2013;
+  - source: costa2021
+    quote: Diocese Anglicana do Recife … 2006-2013 – Sebastião Armando Gameleira Soares
+    page: '522'
+  - source: costa2021
+    quote: >-
+      Em 2006, foi eleito para ser o novo bispo da Diocese Anglicana do Recife, após a crise que se abateu sobre
+      esta diocese, ocupando o cargo até 2013.
+    page: '105'
+  - source: costa2021
+    quote: >-
+      Dada a sua experiência, ele foi eleito diocesano do Recife no Sínodo Geral de 2006. O novo bispo foi instalado
+      em 11 de outubro de 2006
+    page: '238'
+  - source: costa2021
+    quote: >-
+      Com a aproximação da aposentadoria compulsória do bispo Sebastião, houve uma preparação para a sucessão episcopal.
+    page: '243'
   notes: >-
     Eleito no Sinodo Geral de 2006; aposentadoria compulsoria em 2013. Lado IEAB. Eleito no Sínodo Geral de julho/2006;
     instalado pelo primaz Maurício Andrade. Note-se que tanto a IEAB (Sebastião, 2006) quanto a DAR (Uchôa, 2012)
-    contam seu bispo como 'quarto bispo' do Recife.
+    contam seu bispo como 'quarto bispo' do Recife. Anexo D da tese (bispos por diocese). 4º bispo diocesano. Instalação
+    presidida pelo Primaz Maurício Andrade. Fim = sagração de João Peixoto (data exata da aposentadoria não informada).
 - jurisdiction: iast
   role: other
   role_description: bispo_visitador
@@ -91,3 +210,23 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: A presença de Gameleira como um bispo visitador da comunidade
     page: '113'
+events:
+- type: other
+  date: '1993'
+  description: Sebastião Gameleira Soares recebido oficialmente na Comunhão Anglicana
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Após conhecer o Anglicanismo, foi recebido oficialmente na Comunhão Anglicana em 1993
+    page: '105'
+- type: other
+  date: 2013-08
+  description: >-
+    Visita do Secretário-Geral da Comunhão Anglicana, Kenneth Kearon, ao Recife para acompanhar a situação da crise
+    de 2005.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      em agosto de 2013 o então Secretário-Geral da Comunhão Anglicana, o bispo Kenneth Kearon, veio ao Recife
+    page: '242'

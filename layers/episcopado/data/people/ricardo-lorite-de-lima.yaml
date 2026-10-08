@@ -13,7 +13,7 @@ biography: >-
   Ex-membro da Diocese Anglicana de São Paulo (IEAB), bispo fundador da 'Igreja Anglicana do Brasil' (encerrada
   em 2017); depois fundou a Igreja Protestante Unida, filiada à Aliança de Batistas do Brasil.
 sources:
-- source: costa-2021-tese
+- source: costa2021
   quote: >-
     Após isto, o bispo Ricardo Lorite reorganizou o grupo e fundou a Igreja Protestante Unida, filiando-se à Aliança
     de Batistas do Brasil.
@@ -64,7 +64,7 @@ ordinations:
     quote: >-
       Fui sagrado um ano depois, em 15 de janeiro de 2006, pelo Bispo Barry Frank Peachey da Anglican Independent
       Communion Wordwide, que veio da Inglaterra para minha Sagração e de mais dois bispos para o Brasil.
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       Após receberem as ordens do diaconato e do presbiterato por bispos independentes, Ricardo Lorite e Rui Barbosa
       tiveram sua ordenação episcopal através dos bispos Norman Dutton, Frank Peachey e Iranildo Macieira da Silva
@@ -78,7 +78,9 @@ ordinations:
     Comentário do próprio Lorite. Peachey sagrou na mesma ocasião "mais dois bispos para o Brasil", sem nomeá-los.
     Data e sagrante principal não informados; a fonte lista três bispos sagrantes sem hierarquia. Iranildo Macieira
     da Silva é da 'Igreja Episcopal Latina do Brasil'. O livro diz 'através dos bispos' Norman Dutton, Frank Peachey
-    e Lucas Macieira, sem indicar o sagrante principal; os três foram postos em co_sagrantes.
+    e Lucas Macieira, sem indicar o sagrante principal; os três foram postos em co_sagrantes. A tese lista os três
+    bispos sem indicar o sagrante principal nem data. Diaconato e presbiterato recebidos de 'bispos independentes'
+    não nomeados.
 affiliations:
 - jurisdiction: iadb-lorite
   role: founder
@@ -98,6 +100,11 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: o bispo Ricardo Lorite reorganizou o grupo e fundou a Igreja Protestante Unida
     page: '120'
+  - source: costa2021
+    quote: >-
+      o bispo Ricardo Lorite reorganizou o grupo e fundou a Igreja Protestante Unida, filiando-se à Aliança de Batistas
+      do Brasil.
+    page: '145'
 - jurisdiction: iadb-lorite
   role: other
   role_description: primaz_emerito
@@ -150,6 +157,28 @@ affiliations:
       Helena e dom Adauto Pereira.
     page: '167'
   notes: '''Arcebispo Primaz e Metropolitano'', após a fundação; datas não informadas.'
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dasp
+  end_reason: left
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Igreja Anglicana do Brasil” 152 originada a partir de um grupo formado por ex-membros da Diocese Anglicana
+      de São Paulo (DASP), Ricardo Lorite de Lima, Rui Costa Barbosa, Luis Fernando Salgado e Josué
+    page: '145'
+  notes: (ex-membro) 'Ex-membros' da DASP; a tese não diz se eram clérigos ou leigos na IEAB nem datas.
+- jurisdiction: iadb-lorite
+  role: bishop
+  end: '2017-10-30'
+  end_reason: left
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em sentido contrário, temos o caso da “Igreja Anglicana do Brasil”, liderada pelo reverendo Ricardo Lorite
+    page: '153'
 - jurisdiction: iau
   role: archbishop
   status: probable

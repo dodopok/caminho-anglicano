@@ -17,7 +17,7 @@ founded:
       da Igreja Episcopal Anglicana do Brasil
   - source: ptwiki-iecb
     quote: A sede da IECB se encontra na Catedral da Trindade (Recife), localizada nos Aflitos (Recife).
-  - source: costa-2021-tese
+  - source: costa2021
     quote: Esta denominação chegou ao Brasil no ano de 2002.
   - source: cant-novas-igrejas-2024
     quote: >-
@@ -46,6 +46,9 @@ founded:
   - source: cant-novas-igrejas-2024
     quote: Atualmente vinculada à Comunhão Episcopal Internacional (CEI) [2021]
     page: '171'
+  - source: costa2021
+    quote: Atualmente, a Igreja Episcopal Carismática do Brasil possui nove bispos e cinco dioceses.
+    page: '260'
 locator_slug: iecb
 wikidata: Q138547121
 website: https://novo.iecbrasil.com.br/
@@ -62,15 +65,8 @@ relations:
   date: '2002-09-20'
   led_by:
   - paulo-garcia
-  status: contested
+  status: probable
   sources:
-  - source: iab-poster-linhagem-meira
-    quote: >-
-      Em 2002, o deão Paulo Garcia, então líder da catedral em Recife, rompeu com a IEAB por divergências teológicas
-      e fundou a Igreja Episcopal Carismática do Brasil (IECB)
-  - source: cant-novas-igrejas-2024
-    quote: Origem no templo da Holy Trinity Church (1838), filiada à IEAB até o cisma [1955-2002]
-    page: '171'
   - source: costa2021
     quote: >-
       Em setembro de 2002, ocorreu o que chamamos de “Pequena Crise do Recife”105, quando o reverendo Paulo Garcia,
@@ -94,6 +90,36 @@ relations:
       A ruptura de Paulo Garcia com a Igreja Episcopal Anglicana do Brasil foi formalizada em outubro de 2002, com
       a sua saída da Comunhão Anglicana e a filiação na Comunhão Internacional da Igreja Episcopal Carismática (ICCEC).
     page: '54'
+  - source: cant-novas-igrejas-2024
+    quote: Origem no templo da Holy Trinity Church (1838), filiada à IEAB até o cisma [1955-2002]
+    page: '171'
+  - source: iab-poster-linhagem-meira
+    quote: >-
+      Em 2002, o deão Paulo Garcia, então líder da catedral em Recife, rompeu com a IEAB por divergências teológicas
+      e fundou a Igreja Episcopal Carismática do Brasil (IECB)
+  - source: costa2021
+    quote: >-
+      Após o rompimento do reverendo Paulo Garcia com a Diocese Anglicana do Recife, este estabeleceu, na mesma
+      cidade, a Igreja Episcopal Carismática do Brasil (IECB), sendo eleito o seu
+    page: '134'
+  - source: costa2021
+    quote: >-
+      No dia 20 setembro de 2002, durante um culto noturno, Paulo Garcia anunciou o seu rompimento com a IEAB.
+    page: '197'
+  - source: costa2021
+    quote: >-
+      vinculou-se, depois, à Comunhão Internacional da Igreja Episcopal Carismática, e fundou, no Recife, a Igreja
+      Episcopal Carismática do Brasil (IECB).
+    page: '197'
+  notes: >-
+    Fundou a Igreja Episcopal Carismatica do Brasil (ICCEC). Fora do escopo episcopal da IEAB; registrado como contexto.
+    A comunidade da Catedral da Santíssima Trindade (Recife) seguiu Paulo Garcia para a Igreja Episcopal Carismática.
+    A sigla IECB designa a Igreja Episcopal Carismática do Brasil. A data do rompimento (2002) confirma os pôsteres
+    da IAB quanto ao ano; a organização formal da IECB e a sagração de Garcia são de 2003. Ambas as fontes são Wikipédia
+    (terciárias), apoiadas em Queiroz (2004) e Costa (2025). Paulo Garcia era o deão/reitor da Catedral da Trindade
+    (Diocese do Recife). Saída da Catedral da Santíssima Trindade (Diocese Anglicana do Recife); três paróquias
+    o seguiram (p. 55). Queiroz (2017) chama o episódio de 'primeiro cisma da Diocese do Recife'. Saída da Catedral
+    da SS. Trindade (Rua Carneiro Vilela, Recife), com o templo e quase todos os membros; três paróquias o seguiram.
   discrepancies:
   - field: date
     value: 2002-10
@@ -104,30 +130,14 @@ relations:
         com a sua saída da Comunhão Anglicana e a filiação na Comunhão Internacional da Igreja Episcopal Carismática
         (ICCEC).
       page: '54'
-  notes: >-
-    Fundou a Igreja Episcopal Carismatica do Brasil (ICCEC). Fora do escopo episcopal da IEAB; registrado como contexto.
-    A comunidade da Catedral da Santíssima Trindade (Recife) seguiu Paulo Garcia para a Igreja Episcopal Carismática.
-    A sigla IECB designa a Igreja Episcopal Carismática do Brasil. A data do rompimento (2002) confirma os pôsteres
-    da IAB quanto ao ano; a organização formal da IECB e a sagração de Garcia são de 2003. Ambas as fontes são Wikipédia
-    (terciárias), apoiadas em Queiroz (2004) e Costa (2025). Paulo Garcia era o deão/reitor da Catedral da Trindade
-    (Diocese do Recife). Saída da Catedral da Santíssima Trindade (Diocese Anglicana do Recife); três paróquias
-    o seguiram (p. 55). Queiroz (2017) chama o episódio de 'primeiro cisma da Diocese do Recife'.
 - type: member_of
   target: iccec
-  date: 2002-10
-  end: '2021'
+  date: 2002/2003
+  end: '2019-03-24'
   led_by:
   - paulo-garcia
   status: contested
   sources:
-  - source: cant-novas-igrejas-2024
-    quote: Comunhão Internacional da Igreja Episcopal Carismática (ICCEC) [2002-2021]
-    page: '171'
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      com a sua saída da Comunhão Anglicana e a filiação na Comunhão Internacional da Igreja Episcopal Carismática
-      (ICCEC).
-    page: '54'
   - source: ptwiki-iecb
     quote: >-
       Posteriormente, ele se filiou à Comunhão Internacional da Igreja Episcopal Carismática e fundou, no Recife,
@@ -137,67 +147,31 @@ relations:
       Este acabou fundando a Igreja Episcopal Carismática do Brasil (IECB) – parte da Comunhão Internacional da
       Igreja Episcopal Carismática (em inglês, International Communion of the Charismatic Episcopal Church - ICCEC)
       – no final de 2002
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       No dia 24 de março de 2019 um comunicado foi publicado na página do Facebook e nos boletins das paróquias
       e catedrais, informando que a denominação brasileira havia se separado da Comunhão Internacional da Igreja
       Episcopal Carismática.
   - source: enwiki-iccec-bispos
     quote: '|42||8 September 2003||1 4 6||Paulo Ruiz Garcia||Abp. and Primate Brazil|| Resigned'
-  discrepancies:
-  - field: end
-    value: '2019-03-24'
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        com a sua saída da Comunhão Anglicana e a filiação na Comunhão Internacional da Igreja Episcopal Carismática
-        (ICCEC).
-      page: '54'
-    - source: ptwiki-iecb
-      quote: >-
-        Posteriormente, ele se filiou à Comunhão Internacional da Igreja Episcopal Carismática e fundou, no Recife,
-        a Igreja Episcopal Carismática do Brasil (IECB).
-    - source: ptwp-dar
-      quote: >-
-        Este acabou fundando a Igreja Episcopal Carismática do Brasil (IECB) – parte da Comunhão Internacional da
-        Igreja Episcopal Carismática (em inglês, International Communion of the Charismatic Episcopal Church - ICCEC)
-        – no final de 2002
-    - source: costa-2021-tese
-      quote: >-
-        No dia 24 de março de 2019 um comunicado foi publicado na página do Facebook e nos boletins das paróquias
-        e catedrais, informando que a denominação brasileira havia se separado da Comunhão Internacional da Igreja
-        Episcopal Carismática.
-    - source: enwiki-iccec-bispos
-      quote: '|42||8 September 2003||1 4 6||Paulo Ruiz Garcia||Abp. and Primate Brazil|| Resigned'
-  - field: date
-    value: 2002/2003
-    sources:
-    - source: ptwiki-iecb
-      quote: >-
-        Posteriormente, ele se filiou à Comunhão Internacional da Igreja Episcopal Carismática e fundou, no Recife,
-        a Igreja Episcopal Carismática do Brasil (IECB).
-    - source: ptwp-dar
-      quote: >-
-        Este acabou fundando a Igreja Episcopal Carismática do Brasil (IECB) – parte da Comunhão Internacional da
-        Igreja Episcopal Carismática (em inglês, International Communion of the Charismatic Episcopal Church - ICCEC)
-        – no final de 2002
-    - source: costa-2021-tese
-      quote: >-
-        No dia 24 de março de 2019 um comunicado foi publicado na página do Facebook e nos boletins das paróquias
-        e catedrais, informando que a denominação brasileira havia se separado da Comunhão Internacional da Igreja
-        Episcopal Carismática.
-    - source: enwiki-iccec-bispos
-      quote: '|42||8 September 2003||1 4 6||Paulo Ruiz Garcia||Abp. and Primate Brazil|| Resigned'
-  - field: date
-    value: '2003-09-08'
-    sources:
-    - source: enwiki-iccec-bispos
-      quote: '|42||8 September 2003||1 4 6||Paulo Ruiz Garcia||Abp. and Primate Brazil|| Resigned'
-    - source: costa-2021-tese
-      quote: >-
-        No dia 24 de março de 2019 um comunicado foi publicado na página do Facebook e nos boletins das paróquias
-        e catedrais, informando que a denominação brasileira havia se separado da Comunhão Internacional da Igreja
-        Episcopal Carismática.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      com a sua saída da Comunhão Anglicana e a filiação na Comunhão Internacional da Igreja Episcopal Carismática
+      (ICCEC).
+    page: '54'
+  - source: cant-novas-igrejas-2024
+    quote: Comunhão Internacional da Igreja Episcopal Carismática (ICCEC) [2002-2021]
+    page: '171'
+  - source: costa2021
+    quote: Esta denominação chegou ao Brasil no ano de 2002.
+    page: '134'
+  - source: costa2021
+    quote: vinculou-se, depois, à Comunhão Internacional da Igreja Episcopal Carismática
+    page: '197'
+  - source: costa2021
+    quote: >-
+      informando que a denominação brasileira havia se separado da Comunhão Internacional da Igreja Episcopal Carismática.
+    page: '263'
   notes: >-
     Data de saída da ICCEC não encontrada; a Wikipédia descreve a IECB 'atualmente' como igreja nacional autônoma
     organizada em torno da CEI, o que sugere desligamento ou autonomia posterior. Não confirmado em fonte da ICCEC.
@@ -211,6 +185,13 @@ relations:
     Craig Bates (visita ao Recife em ago/2018) por padronização litúrgica e pela aposentadoria compulsória de Garcia
     aos 80 anos. A ausência de sagrações brasileiras na lista da Wikipédia após 2009 é, portanto, lacuna da lista,
     não indício de saída.
+  discrepancies:
+  - field: end
+    value: '2021'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: Comunhão Internacional da Igreja Episcopal Carismática (ICCEC) [2002-2021]
+      page: '171'
 - type: member_of
   target: cei
   date: '2019-09-14'
@@ -231,6 +212,11 @@ relations:
   - source: cant-novas-igrejas-2024
     quote: antes filiada à ICCEC, hoje à Comunhão Episcopal Internacional (CEI)
     page: '174'
+  - source: costa2021
+    quote: >-
+      quando ele foi instituído como Arcebispo do Recife e Primaz da Comunhão Episcopal Internacional (CEI), organização
+      criada para abrigar as comunidades que congregam em torno da IECB.
+    page: '264'
   discrepancies:
   - field: date
     value: '2021'
@@ -247,14 +233,14 @@ relations:
   led_by:
   - andre-novaes-de-albuquerque-cavalcanti
   - paulo-garcia
-  status: contested
+  status: probable
   sources:
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       Por solicitação do Arcebispo +Dom Paulo Garcia, comunico aos integrantes do Clero que os Bispos da Igreja
       Episcopal Carismática do Brasil-IECB, após vários dias de oração, compreenderam, clara e consensualmente,
       que Deus estabeleceu uma nova orientação para a Igreja Brasileira.
-  - source: costa-2021-tese
+  - source: costa2021
     quote: >-
       Por conta de problemas com a sucessão da liderança de Paulo Garcia, em 2019 o arcebispo brasileiro rompeu
       com o Patriarca Bates e a denominação carismática se tornou uma Igreja independente no Brasil, formando a
@@ -267,25 +253,17 @@ relations:
   - source: cant-novas-igrejas-2024
     quote: brasileira havia se separado da Comunhão Internacional da Igreja Episcopal Carismática.
     page: '61'
+  - source: costa2021
+    quote: >-
+      em 2019 o arcebispo brasileiro rompeu com o Patriarca Bates e a denominação carismática se tornou uma Igreja
+      independente no Brasil, formando a sua própria Comunhão146.
+    page: '135'
   notes: >-
     Comunicado assinado pelo bispo André Novaes (auxiliar do Recife), datado de 24/3/2019 e citado por Costa a partir
     da Catedral da Reconciliação. O comunicado diz desejar 'manter uma relação fraternal' com a ICCEC. A CEI foi
     criada para as missões da IECB em Angola e Portugal. Contexto: resistência de Paulo Garcia à aposentadoria compulsória
     aos 80 anos exigida pelos cânones da ICCEC (reunião com o Patriarca Craig Bates em agosto de 2018). Comunicado
     assinado pelo bispo André Novaes.
-  discrepancies:
-  - field: led_by
-    value:
-    - paulo-garcia
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        No dia 24 de março de 2019 um comunicado foi publicado na página do Facebook e nos boletins das paróquias
-        e catedrais, informando que a denominação
-      page: '60'
-    - source: cant-novas-igrejas-2024
-      quote: brasileira havia se separado da Comunhão Internacional da Igreja Episcopal Carismática.
-      page: '61'
 - type: schism_from
   target: ieab-dar
   date: '2002'

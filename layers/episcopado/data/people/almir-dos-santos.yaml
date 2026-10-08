@@ -19,15 +19,26 @@ sources:
   quote: Revmo. Bispo Almir dos Santos, Emérito
 ordinations:
 - order: diaconate
-  date: '1969'
-  jurisdiction: null
+  date: '1969-12-14'
+  jurisdiction: ieab
   status: probable
   sources:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1969 - … Almir dos Santos
     page: '372'
+  - source: costa2021
+    quote: foi ordenado ao diaconato, em 14 de dezembro de 1969, e ao presbiterato, em 21 de fevereiro de 1971.
+    page: '99'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1971-02-21'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: costa2021
+    quote: foi ordenado ao diaconato, em 14 de dezembro de 1969, e ao presbiterato, em 21 de fevereiro de 1971.
+    page: '99'
 - order: episcopate
   date: '1989-04-09'
   place: Brasilia (previsto)
@@ -50,14 +61,14 @@ ordinations:
     quote: 1989 - Almir dos Santos (Brasília)
   notes: >-
     Eleito em 12/10/1988 pelo 23o Sinodo (4o escrutinio) para a diocese missionaria de Brasilia. ENS previa sagracao
-    em marco de 1989 em Brasilia; Costa da 09/04/1989.
+    em marco de 1989 em Brasilia; Costa da 09/04/1989. Local não informado.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dab
   start: 1988-04
   end: 2002-12
-  status: contested
+  status: probable
   sources:
   - source: wp-pt-dioc-brasilia
     quote: Almir dos Santos - abril de 1988 a dezembro de 2002;
@@ -70,7 +81,13 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Missionária de Brasília … 1989 - Almir dos Santos
     page: '368'
-  notes: Sagrado so em 09/04/1989.
+  - source: costa2021
+    quote: Diocese Anglicana de Brasília … 1988-2002 – Almir dos Santos
+    page: '522'
+  - source: costa2021
+    quote: Diocese Anglicana de Brasília, sucedendo a Almir dos Santos.
+    page: '107'
+  notes: Sagrado so em 09/04/1989. Anexo D da tese (bispos por diocese).
   discrepancies:
   - field: start
     value: '1989'
@@ -78,6 +95,32 @@ affiliations:
     - source: kickhofel-1995
       quote: BISPOS DIOCESANOS Diocese Missionária de Brasília … 1989 - Almir dos Santos
       page: '368'
+  - field: start
+    value: '1989-04-09'
+    sources:
+    - source: costa2021
+      quote: Diocese Anglicana de Brasília, sucedendo a Almir dos Santos.
+      page: '107'
+  - field: end
+    value: '2003'
+    sources:
+    - source: costa2021
+      quote: Diocese Anglicana de Brasília, sucedendo a Almir dos Santos.
+      page: '107'
+- jurisdiction: ieab
+  role: bishop
+  start: '1989'
+  end: '2002'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1989-2002 – Almir dos Santos
+    page: 518-519
+  notes: >-
+    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
+    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
+    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. O Anexo
+    D dá início em 1988 em Brasília.
 - jurisdiction: ieab
   role: other
   role_description: bispo_encarregado
@@ -87,6 +130,15 @@ affiliations:
   - source: costa2021
     quote: Distrito Missionário do Oeste, do qual Almir ficou encarregado durante três anos.
   notes: Datas nao informadas.
+- jurisdiction: ieab
+  role: bishop
+  diocese: ieab-dmo
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Distrito Missionário do Oeste, do qual Almir ficou encarregado durante três anos.
+    page: '99'
+  notes: 'Local: encarregado. Por três anos; datas não informadas.'
 events:
 - type: other
   date: 2017-04
@@ -109,3 +161,16 @@ events:
       só sendo eleito na quarta votação, depois de disputar o cargo com a reverenda Patrícia Powers, uma missionária
       americana que trabalhava no Brasil desde 1979.
     page: '307'
+- type: other
+  date: '1988'
+  description: >-
+    Eleição de Almir dos Santos para Brasília em quatro escrutínios; Patricia Powers foi a primeira mulher a concorrer
+    ao episcopado na IEAB
+  status: probable
+  sources:
+  - source: costa2021
+    quote: a votação levou quatro escutíneos, quando Almir87 foi eleito (KICKHÖFEL, 1995, p.
+    page: '99'
+  - source: costa2021
+    quote: Foi a primeira vez que uma mulher concorreu ao episcopado na Igreja.
+    page: '98'

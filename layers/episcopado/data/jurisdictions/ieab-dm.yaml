@@ -13,6 +13,15 @@ founded:
     quote: Área 1- formada pelas Dioceses Meridional, Sul Ocidental e de Pelotas.
   - source: wp-pt-dioc-meridional
     quote: A sede diocesana está localizada na cidade de Porto Alegre.
+  discrepancies:
+  - field: date
+    value: 1949-09
+    sources:
+    - source: costa2021
+      quote: >-
+        a Diocese Meridional, com sé em Porto Alegre; a Diocese Sul-Ocidental, com sé em Santa Maria; e a Diocese
+        Central, com sé no Rio de Janeiro, então capital federal.
+      page: '70'
 website: https://diocesemeridional.org.br/
 description: >-
   Se em Porto Alegre (Catedral Nacional da Santissima Trindade). Uma das tres dioceses da divisao de 1949/1950.
@@ -117,3 +126,18 @@ relations:
       Antes de sua sagração ao episcopado em julho de 1987, o bispo Prado trabalhou como pároco em São Leopoldo
       e como professor no Seminário Teológico
     page: '312'
+  - source: costa2021
+    quote: Diocese Anglicana Meridional (Porto Alegre-RS) … 1971-1884 – Arthur Rodolpho Kratz
+    page: '521'
+  - source: costa2021
+    quote: Diocese Anglicana Meridional (Porto Alegre-RS) … 1984-1998 – Cláudio Vinicius de Senna Gastal
+    page: '521'
+  - source: costa2021
+    quote: Diocese Anglicana Meridional (Porto Alegre-RS) … 1998-2013 – Orlando Santos de Oliveira
+    page: '521'
+  - source: costa2021
+    quote: Diocese Anglicana Meridional (Porto Alegre-RS) … 2013- – Humberto Eugenio Maiztegui Gonçalves
+    page: '521'
+  - source: costa2021
+    quote: o reverendo Arthur Rodolpho Kratz 72 foi eleito bispo para a Diocese Meridional
+    page: '85'
