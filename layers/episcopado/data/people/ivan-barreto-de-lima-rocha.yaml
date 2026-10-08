@@ -14,10 +14,21 @@ ordinations:
   date: '2024-01-19'
   place: Catedral da Reconciliação
   jurisdiction: iecb
-  office: auxiliary
+  office: coadjutor
   principal_consecrator: paulo-garcia
-  status: probable
+  co_consecrators:
+  - marcio-meira
+  - miguel-uchoa
+  status: confirmed
   sources:
+  - source: testemunho-mantenedor-2026-10-08-videos
+    quote: miguel e marcio estavam ao lado, pode se ver eles com as mãos estendidas em 1:25:49
+  - source: ier-yt-ivan
+    quote: >-
+      escolheu o Reverendo Ivan Rocha para ser Bispo coadjutor da Catedral da Reconciliação diocese da zona sul
+      do
+  - source: ier-yt-ivan
+    quote: Dom Miguel Dom Márcio com quem eu tenho uma história e por quem eu tenho muito muito muito afeto
   - source: ier-yt-ivan
     quote: Sagração ao Episcopado | Dom Ivan Rocha
   - source: ptwiki-iecb
@@ -31,11 +42,13 @@ ordinations:
     quote: Ivan Barreto de Lima Rocha (Auxiliar da Diocese da Zona Sul), em 19 de janeiro de 2024
     page: '58'
   notes: >-
-    Título do vídeo (canal da Catedral da Reconciliação) sem data; base já tem 2024-01-19 (JC). O canal que transmitiu
-    foi o da Catedral da Reconciliação, sugerindo a cerimônia ali, mas o título não diz o local. Jornal do Commercio
-    (28/1/2024) diz que a sagração foi 'há pouco dias', presidida por Paulo Garcia, com mais de 15 bispos presentes,
-    inclusive Miguel Uchôa e Márcio Meira (IAB). A fonte não diz se os bispos da IAB impuseram as mãos. Sagrantes
-    não nomeados.
+    Miguel Uchôa e Márcio Meira (IAB) aparecem com as mãos estendidas na oração de consagração (1:25:49); Ivan os
+    agradece como 'bispos amigos da igreja de Jesus Cristo'. Bispo coadjutor da Diocese da Zona Sul do Recife e
+    de Alagoas, ao lado de Alexandre Ximenes. Título do vídeo (canal da Catedral da Reconciliação) sem data; base
+    já tem 2024-01-19 (JC). O canal que transmitiu foi o da Catedral da Reconciliação, sugerindo a cerimônia ali,
+    mas o título não diz o local. Jornal do Commercio (28/1/2024) diz que a sagração foi 'há pouco dias', presidida
+    por Paulo Garcia, com mais de 15 bispos presentes, inclusive Miguel Uchôa e Márcio Meira (IAB). A fonte não
+    diz se os bispos da IAB impuseram as mãos. Sagrantes não nomeados.
 affiliations:
 - jurisdiction: iecb
   role: bishop

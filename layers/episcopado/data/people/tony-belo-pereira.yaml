@@ -16,10 +16,24 @@ sources:
 ordinations:
 - order: episcopate
   date: '2022-10-13'
+  place: Catedral da Santíssima Trindade, Recife
   jurisdiction: iecb
   office: diocesan
-  status: probable
+  principal_consecrator: paulo-garcia
+  co_consecrators:
+  - alexandre-barbosa-monteiro-ximenes
+  - andre-novaes-de-albuquerque-cavalcanti
+  - frederico-carneiro-rego-bastos
+  status: confirmed
   sources:
+  - source: testemunho-mantenedor-2026-10-08-videos
+    quote: >-
+      live dia 13/10/2022, sagrante foi paulo garcia, junto como cosagrante identifiquei fred, ximenes, andré novaes.
+      Mas tem vários outros atrás. Foi na catedral da trindade da iecb.
+  - source: ier-yt-jorge-sergio-tony
+    quote: pai em Deus Dom Paulo Garcia na cebispo na igreja de Deus o clero e o povo da
+  - source: ier-yt-jorge-sergio-tony
+    quote: Dom Paulo e os demais bispos farão em posição de mãos sobre os bispos eleitos
   - source: ier-yt-jorge-sergio-tony
     quote: 'Cerimônia de Sagração ao Episcopado : Rev. Jorge Siqueira; Rev. Sérgio Presta; Rev. Tony Belo'
   - source: ptwiki-iecb
@@ -28,10 +42,12 @@ ordinations:
     quote: Tony Belo (Diocesano de Petrolina), em 13 de outubro de 2022
     page: '57'
   notes: >-
-    Cerimônia coletiva; título sem data (base: 2022-10-13). A Diocese de Petrolina foi fundada em 12/02/2023 segundo
-    o próprio bispo. Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes não informados. Sucessão
-    presumida via Paulo Garcia (ICCEC/Adler), não declarada caso a caso. Livro: 'Tony Belo'/'Tony Bello'. Sagrantes
-    não nomeados.
+    Transmissão ao vivo. Co-sagrantes identificados no vídeo pelo mantenedor; outros bispos também impuseram as
+    mãos. Eleito em 14/06/2022 como bispo auxiliar para o Sertão de Pernambuco e depois designado bispo diocesano
+    da Diocese de Petrolina. Cerimônia coletiva; título sem data (base: 2022-10-13). A Diocese de Petrolina foi
+    fundada em 12/02/2023 segundo o próprio bispo. Ano da sagração segundo a lista da Wikipédia (fonte terciária);
+    sagrantes não informados. Sucessão presumida via Paulo Garcia (ICCEC/Adler), não declarada caso a caso. Livro:
+    'Tony Belo'/'Tony Bello'. Sagrantes não nomeados.
 affiliations:
 - jurisdiction: iecb
   role: bishop

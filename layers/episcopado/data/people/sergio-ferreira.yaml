@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sergio-ferreira
+name: Sérgio Ferreira
+ordinations:
+- order: diaconate
+  date: '2015-10-12'
+  place: Catedral Anglicana de São Paulo
+  jurisdiction: danb
+  ordained_by: roger-douglas-bird
+  status: probable
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-videos
+    quote: >-
+      Vídeo postado em 30 de maio de 2017, mas a descrição diz 12-10-2015, foi na Catedral Anglicana de São Paulo,
+      do Rev. Aldo Quintão, bispo ordenante foi Dom Roger Bird e Dom Glauco. Foi apresentado a ordenação MARCOS
+      JOSÉ ZANETTI e Sergio Ferreira ao diaconato
+  notes: >-
+    Data da descrição do vídeo (publicado em 30/05/2017). O vídeo cita como ordenantes Dom Roger Bird e um 'Dom
+    Glauco', não identificado. Ordenação feita depois da saída da Catedral da IEAB, já como Diocese Anglicana no
+    Brasil. Hoje é clérigo da IEAB.
