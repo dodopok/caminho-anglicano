@@ -62,6 +62,15 @@ describe('personView', () => {
   it('retorna null para id desconhecido', () => {
     expect(personView(index, 'x')).toBeNull()
   })
+
+  it('mostra datas de nascimento divergentes com o nome do fato', () => {
+    const b: Base = {
+      ...base,
+      people: [{ id: 'k', name: 'Kratz', birth: { date: '1920-12-19', sources: s1, discrepancies: [{ field: 'date', value: '1922', sources: s2 }] } }]
+    }
+    const v = personView(indexBase(b), 'k')!
+    expect(v.birth).toMatchObject({ date: '1920-12-19', cites: [1], discrepancies: [{ field: 'birth.date', value: '1922', cites: [2] }] })
+  })
 })
 
 describe('sourceView', () => {

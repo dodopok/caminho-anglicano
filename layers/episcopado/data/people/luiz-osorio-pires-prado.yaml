@@ -13,12 +13,16 @@ birth:
   - source: costa2021
     quote: Faleceu em 2009.
 death:
-  date: '2009'
+  date: 2009-12
   sources:
   - source: costa2021
     quote: Natural da cidade de Porto Alegre, Luiz Osório Pires Prado nasceu em 27 de março de 1943.
   - source: costa2021
     quote: Faleceu em 2009.
+  - source: cant-ec-2009-11
+    quote: que exerceu até sua morte em dezembro de 2009.
+  - source: cant-ec-2009-11
+    quote: Alegre, capital do Estado do Rio Grande o Sul, no dia 11 de março de 1943
 biography: Bispo sufraganeo da Meridional (1987) e primeiro bispo de Pelotas (1989-1999/2000).
 sources:
 - source: costa2021
@@ -92,6 +96,11 @@ affiliations:
   end_reason: transfer
   status: probable
   sources:
+  - source: ame-54-1987
+    quote: >-
+      O Rev. Luis Osório Pires Prado é o novo bispo sufragâneo da Diocese Meridional da Igreja Episcopal do Brasil.
+      Ele foi eleito pelo Concílio Extraordinário da Diocese, reunido no dia 28 de março em Porto Alegre/RS.
+    page: '2'
   - source: costa2021
     quote: Foi sagrado bispo sufragâneo da Meridional, na Catedral de Santíssima Trindade, em Porto Alegre.
   notes: Depois primeiro diocesano de Pelotas.
@@ -149,3 +158,27 @@ events:
     quote: que exerceu até sua morte em dezembro de 2009.
   - source: cant-ec-2009-11
     quote: Alegre, capital do Estado do Rio Grande o Sul, no dia 11 de março de 1943
+- type: other
+  date: '1987-03-28'
+  description: >-
+    Eleito bispo sufragâneo da Diocese Meridional pelo Concílio Extraordinário da Diocese, em Porto Alegre
+  status: confirmed
+  sources:
+  - source: ame-54-1987
+    quote: >-
+      O Rev. Luis Osório Pires Prado é o novo bispo sufragâneo da Diocese Meridional da Igreja Episcopal do Brasil.
+      Ele foi eleito pelo Concílio Extraordinário da Diocese, reunido no dia 28 de março em Porto Alegre/RS.
+    page: '2'
+- type: other
+  date: '1988'
+  description: >-
+    Eleito em concílio primeiro bispo diocesano da Diocese Anglicana de Pelotas, desmembrada da Diocese Meridional
+    (aprovada pelo Sínodo em 1988), que ele mesmo fora encarregado de organizar dois anos antes, como bispo sufragâneo
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      solicitou ao Sínodo que autorizasse a eleição de um bispo para a nova diocese vacante que, em concílio, elegeu
+      o então bispo sufragâneo Luiz Osório Pires Prado para bispo diocesano da diocese que ele mesmo fora encarregado
+      de organizar dois anos antes.
+    page: '252'

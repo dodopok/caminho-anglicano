@@ -12,6 +12,7 @@
           {{ lifeDates }}
           <EpiscopadoCites :cites="lifeCites" />
         </p>
+        <EpiscopadoDiscrepancies :items="lifeDiscrepancies" />
         <p v-if="person.aliases.length" class="mt-2 text-xs text-ep-muted">
           Também: <span v-for="(a, i) in person.aliases" :key="a">{{ a }}<template v-if="i < person.aliases.length - 1"> · </template></span>
         </p>
@@ -185,6 +186,8 @@ const lifeDates = computed(() => {
   if (birth) return `Nascimento: ${birth}${p.birth?.place ? `, ${p.birth.place}` : ''}`
   return `Falecimento: ${death}${p.death?.place ? `, ${p.death.place}` : ''}`
 })
+
+const lifeDiscrepancies = computed(() => [...(props.person.birth?.discrepancies ?? []), ...(props.person.death?.discrepancies ?? [])])
 
 /** Notas de nascimento e falecimento, sem repetir número. */
 const lifeCites = computed(() => [...new Set([...(props.person.birth?.cites ?? []), ...(props.person.death?.cites ?? [])])])

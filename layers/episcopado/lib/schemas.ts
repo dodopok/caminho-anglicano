@@ -121,7 +121,9 @@ export const Event = z.strictObject({
 export const DatedFact = z.strictObject({
   date: PartialDate.nullable(),
   place: z.string().nullable().optional(),
-  sources: z.array(SourceRef).min(1)
+  sources: z.array(SourceRef).min(1),
+  /** Outras datas ou locais registrados por outras fontes. */
+  discrepancies: z.array(Discrepancy).optional()
 })
 
 export const Photo = z.strictObject({

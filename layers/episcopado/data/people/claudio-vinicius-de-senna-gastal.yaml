@@ -55,6 +55,11 @@ ordinations:
       and his consecration is slated for the end of March.
   - source: sinopse-2003
     quote: 1984 - Cláudio Vinícius de Senna Gastal (Porto Alegre)
+  - source: kickhofel-1995
+    quote: >-
+      Gastal foi eleito em outubro de 1983 e sagrado em março de 1984 para ser inicialmente bispo coadjutor com
+      direito a sucessão.
+    page: '251'
   notes: >-
     Eleito bispo coadjutor (Kratz pediu coadjutor por saude); ENS de 22/03/1984 diz sagracao prevista para o fim
     de marco de 1984. Data exata nao confirmada.
@@ -76,6 +81,18 @@ affiliations:
     page: '368'
   notes: Faleceu em 23/02/2000.
 - jurisdiction: ieab
+  role: coadjutor_bishop
+  diocese: ieab-dm
+  start: 1984-03
+  end: '1984'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Gastal foi eleito em outubro de 1983 e sagrado em março de 1984 para ser inicialmente bispo coadjutor com
+      direito a sucessão.
+    page: '251'
+- jurisdiction: ieab
   role: primate
   start: '1993'
   end: '1994'
@@ -93,7 +110,7 @@ affiliations:
   notes: >-
     O livro dá só o início de cada primado; o fim é o início do primado seguinte. Primaz interino (bispo sênior).
 events:
-- type: death
+- type: other
   date: 1984-03
   description: >-
     Morte do primaz Arthur Kratz (março de 1984); Cláudio Gastal, deão da Catedral da Santíssima Trindade (Porto
@@ -105,3 +122,36 @@ events:
       Claudio Gastal, Dean of Holy Trinity Cathedral in Porto Alegre, was elected to that position, and his consecration
   - source: ia-ens-1984-03-22
     quote: consecration is slated for the end of March.
+- type: other
+  date: 1984-02
+  description: >-
+    Sagração de Gastal anunciada para 11 de março de 1984, em Porto Alegre (anúncio prévio; a realização nesse dia
+    não foi confirmada)
+  status: probable
+  sources:
+  - source: ame-19-1984
+    quote: >-
+      Sua eleição se deu na Diocese Meridional da Igreja, em cuja área deverá servir. Sua sagração será no dia 11
+      de março em Porto Alegre.
+    page: '7'
+- type: other
+  date: '1984-03-22'
+  description: >-
+    Sagração de Gastal anunciada para o fim de março de 1984 (anúncio prévio; diverge do anúncio brasileiro de 11
+    de março)
+  status: probable
+  sources:
+  - source: ens-84063
+    quote: >-
+      Rev. Claudio Gastal, Dean of Holy Trinity Cathedral in Porto Alegre, was elected to that position, and his
+      consecration is slated for the end of March.
+- type: other
+  date: 1983-10
+  description: Eleito bispo coadjutor da Diocese Meridional, com direito à sucessão
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Gastal foi eleito em outubro de 1983 e sagrado em março de 1984 para ser inicialmente bispo coadjutor com
+      direito a sucessão.
+    page: '251'

@@ -107,6 +107,7 @@ export interface DatedView {
   date: string | null
   place?: string | null
   cites: number[]
+  discrepancies: DiscrepancyView[]
 }
 
 export interface PersonView {
@@ -328,16 +329,28 @@ function claim(
     status: c.status,
     cites: notes.cite(c.sources),
     notes: c.notes,
-    discrepancies: (c.discrepancies ?? []).map((d) => {
-      const values = d.value === null ? [] : Array.isArray(d.value) ? d.value : [d.value]
-      const refs = PERSON_FIELDS.has(d.field)
-        ? values.map((v) => personRef(index, v))
-        : JURISDICTION_FIELDS.has(d.field)
-          ? values.map((v) => jurisdictionRef(index, v))
-          : undefined
-      return { field: d.field, value: d.value, refs, cites: notes.cite(d.sources), notes: d.notes }
-    })
+    discrepancies: discrepancyViews(index, notes, c.discrepancies)
   }
+}
+
+function discrepancyViews(index: BaseIndex, notes: Footnotes, list: TOrdination['discrepancies']): DiscrepancyView[] {
+  return (list ?? []).map((d) => {
+    const values = d.value === null ? [] : Array.isArray(d.value) ? d.value : [d.value]
+    const refs = PERSON_FIELDS.has(d.field)
+      ? values.map((v) => personRef(index, v))
+      : JURISDICTION_FIELDS.has(d.field)
+        ? values.map((v) => jurisdictionRef(index, v))
+        : undefined
+    return { field: d.field, value: d.value, refs, cites: notes.cite(d.sources), notes: d.notes }
+  })
+}
+
+/** Nascimento, falecimento, fundação: o campo divergente ganha o nome do fato ("birth.date"). */
+function datedView(index: BaseIndex, notes: Footnotes, d: TPerson['birth'], fact: string): DatedView | null {
+  if (!d) return null
+  const cites = notes.cite(d.sources)
+  const discrepancies = discrepancyViews(index, notes, d.discrepancies).map((x) => ({ ...x, field: `${fact}.${x.field}` }))
+  return { date: d.date, place: d.place, cites, discrepancies }
 }
 
 function mainEpiscopate(p: TPerson): TOrdination | undefined {
@@ -395,10 +408,8 @@ export function personView(index: BaseIndex, id: string): PersonView | null {
   const jref = (jid: string | null | undefined) => (jid ? jurisdictionRef(index, jid) : null)
 
   const biographyCites = notes.cite(p.sources)
-  const dated = (d: TPerson['birth']): DatedView | null =>
-    d ? { date: d.date, place: d.place, cites: notes.cite(d.sources) } : null
-  const birth = dated(p.birth)
-  const death = dated(p.death)
+  const birth = datedView(index, notes, p.birth, 'birth')
+  const death = datedView(index, notes, p.death, 'death')
 
   const ordinations: OrdinationView[] = (p.ordinations ?? []).map((o) => ({
     ...claim(index, notes, o),
@@ -518,8 +529,6 @@ export function jurisdictionView(index: BaseIndex, id: string): JurisdictionView
   if (!j) return null
   const notes = new Footnotes(index)
   const descriptionCites = notes.cite(j.sources)
-  const dated = (d: TJurisdiction['founded']): DatedView | null =>
-    d ? { date: d.date, place: d.place, cites: notes.cite(d.sources) } : null
 
   const relationView = (r: TRelation, other: string): RelationView => ({
     ...claim(index, notes, r),
@@ -565,8 +574,8 @@ export function jurisdictionView(index: BaseIndex, id: string): JurisdictionView
     type: j.type,
     tradition: j.tradition,
     country: j.country,
-    founded: dated(j.founded),
-    dissolved: dated(j.dissolved),
+    founded: datedView(index, notes, j.founded, 'founded'),
+    dissolved: datedView(index, notes, j.dissolved, 'dissolved'),
     locatorSlug: j.locator_slug,
     wikidata: j.wikidata,
     website: j.website,
@@ -668,8 +677,8 @@ function* citations(index: BaseIndex): Generator<Citation> {
   for (const p of index.people.values()) {
     const entity: EntityRef = { kind: 'person', id: p.id, name: p.name }
     yield* emit(p.sources, { entity, section: 'resumo', claim: 'Biografia', status: null })
-    if (p.birth) yield* emit(p.birth.sources, { entity, section: 'resumo', claim: `Nascimento${p.birth.date ? `, ${formatDate(p.birth.date)}` : ''}`, detail: p.birth.place ?? undefined, status: null })
-    if (p.death) yield* emit(p.death.sources, { entity, section: 'resumo', claim: `Falecimento${p.death.date ? `, ${formatDate(p.death.date)}` : ''}`, detail: p.death.place ?? undefined, status: null })
+    if (p.birth) yield* emit(p.birth.sources, { entity, section: 'resumo', claim: `Nascimento${p.birth.date ? `, ${formatDate(p.birth.date)}` : ''}`, detail: p.birth.place ?? undefined, status: null }, p.birth.discrepancies)
+    if (p.death) yield* emit(p.death.sources, { entity, section: 'resumo', claim: `Falecimento${p.death.date ? `, ${formatDate(p.death.date)}` : ''}`, detail: p.death.place ?? undefined, status: null }, p.death.discrepancies)
     for (const o of p.ordinations ?? []) {
       const who = o.order === 'episcopate' ? o.principal_consecrator : o.ordained_by
       const detail = [o.jurisdiction ? jname(o.jurisdiction) : '', who ? `por ${personRef(index, who).name}` : ''].filter(Boolean).join(' · ')
@@ -700,8 +709,8 @@ function* citations(index: BaseIndex): Generator<Citation> {
   for (const j of index.jurisdictions.values()) {
     const entity: EntityRef = { kind: 'jurisdiction', id: j.id, name: j.acronym ?? j.name }
     yield* emit(j.sources, { entity, section: 'resumo', claim: 'Descrição', status: null })
-    if (j.founded) yield* emit(j.founded.sources, { entity, section: 'resumo', claim: `Fundação${j.founded.date ? `, ${formatDate(j.founded.date)}` : ''}`, detail: j.founded.place ?? undefined, status: null })
-    if (j.dissolved) yield* emit(j.dissolved.sources, { entity, section: 'resumo', claim: `Extinção${j.dissolved.date ? `, ${formatDate(j.dissolved.date)}` : ''}`, status: null })
+    if (j.founded) yield* emit(j.founded.sources, { entity, section: 'resumo', claim: `Fundação${j.founded.date ? `, ${formatDate(j.founded.date)}` : ''}`, detail: j.founded.place ?? undefined, status: null }, j.founded.discrepancies)
+    if (j.dissolved) yield* emit(j.dissolved.sources, { entity, section: 'resumo', claim: `Extinção${j.dissolved.date ? `, ${formatDate(j.dissolved.date)}` : ''}`, status: null }, j.dissolved.discrepancies)
     for (const r of j.relations ?? []) {
       const period = formatPeriod(r.date, r.end).replace(/^desde /, '')
       yield* emit(

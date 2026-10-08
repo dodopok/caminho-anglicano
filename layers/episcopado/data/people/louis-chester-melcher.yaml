@@ -17,6 +17,8 @@ birth:
     quote: Louis Chester Melcher (August 3, 1898 - September 21, 1965)
   - source: wd-q67784953
     quote: Louis Chester Melcher | missionary bishop of the Anglican Episcopal Church
+  - source: wp-en-melcher
+    quote: '''''''Louis Chester Melcher'''''' (August 3, 1898 - September 21, 1965)'
 death:
   date: '1965-09-21'
   sources:
@@ -28,6 +30,10 @@ death:
     quote: Louis Chester Melcher (August 3, 1898 - September 21, 1965)
   - source: wd-q67784953
     quote: Louis Chester Melcher | missionary bishop of the Anglican Episcopal Church
+  - source: wp-en-melcher
+    quote: '''''''Louis Chester Melcher'''''' (August 3, 1898 - September 21, 1965)'
+  - source: ens-xxxvi-7
+    quote: The Rt. Rev. Louis Chester Melcher, retired Bishop of Central Brazil, died Sept. 21.
 wikidata: Q67784953
 biography: >-
   Reitor da Trinity Church, Columbia (SC); eleito bispo coadjutor do Sul do Brasil em 1947, sagrado em 05/02/1948;
@@ -161,7 +167,7 @@ affiliations:
   start: '1950'
   end: '1958-10-06'
   end_reason: retirement
-  status: confirmed
+  status: contested
   sources:
   - source: ens-xxxvi-7
     quote: He then became Bishop of Central Brazil, a position he occupied until his retirement in 1958.
@@ -181,7 +187,21 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1950-1958 - Louis Chester Melcher
     page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      Depois de oito anos no Brasil, Melcher renunciou ao governo da Diocese Central em outubro de 1958, e retornou
+      aos Estados Unidos
+    page: '274'
   notes: 'Local: Rio de Janeiro.'
+  discrepancies:
+  - field: end_reason
+    value: resignation
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        Depois de oito anos no Brasil, Melcher renunciou ao governo da Diocese Central em outubro de 1958, e retornou
+        aos Estados Unidos
+      page: '274'
 events:
 - type: other
   date: 1947-11

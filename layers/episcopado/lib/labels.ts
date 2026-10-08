@@ -148,6 +148,12 @@ export const SOURCE_LEVEL_DESCRIPTION: Record<TSource['level'], string> = {
 /** Campos que podem aparecer em `discrepancies`. */
 export const FIELD_LABEL: Record<string, string> = {
   date: 'data',
+  'birth.date': 'nascimento',
+  'birth.place': 'local de nascimento',
+  'death.date': 'falecimento',
+  'death.place': 'local de falecimento',
+  'founded.date': 'fundação',
+  'dissolved.date': 'extinção',
   start: 'início',
   end: 'fim',
   place: 'local',

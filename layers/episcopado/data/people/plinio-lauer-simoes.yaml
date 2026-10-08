@@ -8,7 +8,7 @@ aliases:
 - Plinio L. Simoes
 - Plínio L. Simões
 birth:
-  date: '1915'
+  date: '1915-07-08'
   sources:
   - source: wit-1955-09-29
     quote: Also elected a bishop was the Rev. Plimio L. Simoes to be bishop of Southwestern Brazil.
@@ -20,6 +20,15 @@ birth:
       School, he was ordained priest in 1943
   - source: wd-q112707967
     quote: Plinio Lauer Simões | episcopal Bishop
+  - source: kickhofel-1995
+    quote: Nasceu em Cachoeira do Sul (RS) em 8 de julho de 1915
+    page: '256'
+death:
+  date: '1994'
+  sources:
+  - source: kickhofel-1995
+    quote: Exerceu essas funções até o final de 1983, quando se aposentou. Faleceu em 1994.
+    page: '259'
 wikidata: Q112707967
 biography: >-
   Eleito em 1955 bispo do Sudoeste do Brasil (sucedendo Krischke), sagrado em 04/03/1956 no Rio de Janeiro; em 1958
@@ -44,6 +53,11 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1941 - … Plínio Lauer Simões
     page: '370'
+  - source: kickhofel-1995
+    quote: >-
+      Cursou teologia no Seminário Teológico de Porto Alegre e foi ordenado ao diaconato em 1941 e ao presbiterado
+      em 1943.
+    page: '256'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
@@ -53,6 +67,11 @@ ordinations:
   sources:
   - source: lc-1955-09-25
     quote: A grad- uate of the Porto Alegre Theological School, he was ordained priest in 1943
+  - source: kickhofel-1995
+    quote: >-
+      Cursou teologia no Seminário Teológico de Porto Alegre e foi ordenado ao diaconato em 1941 e ao presbiterado
+      em 1943.
+    page: '256'
   notes: 'Ordenante não informado (bispo diocesano: W. M. M. Thomas; sufragâneo: Pithan).'
 - order: episcopate
   date: '1956-03-04'
@@ -84,17 +103,35 @@ ordinations:
     quote: >-
       A aposentadoria do bispo Pithan e a resignação do bispo Melcher levaram à sagração de mais dois bispos: o
       revmo. Plínio Lauer Simões, em 1956 e o revmo. Edmund Knox Sherrill, em 1959.
+  - source: kickhofel-1995
+    quote: >-
+      Simões foi sagrado no dia quatro de março de 1956, no Rio de Janeiro, e recebeu o governo da diocese no concílio
+      daquele ano realizado na Paróquia do Nazareno, em Santana do Livramento.
+    page: '256'
   notes: >-
     Anúncio (Witness 26/01/1956) e relato pós-evento (Living Church 01/04/1956) concordam. Apresentantes: Daniel
     Ivor Evans (bispo anglicano da Argentina e Falklands) e Krischke (substituindo Pithan, doente); Krischke também
     pregador. Presbíteros assistentes: J. Timóteo da Silva e Nemésio de Almeida; Edmund K. Sherrill foi registrador-adjunto.
 affiliations:
+- jurisdiction: dmcb
+  role: clergy
+  start: '1950'
+  end: '1956'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Em 1950 foi transferido para o Rio de Janeiro, onde assumiu o pastorado da Paróquia do Redentor até 1956,
+      quando foi sagrado bispo para a Diocese Sul Ocidental
+    page: '256'
+  notes: Pároco da Paróquia do Redentor, Rio de Janeiro.
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dso
   start: '1956'
   end: '1975'
-  status: probable
+  end_reason: resignation
+  status: contested
   sources:
   - source: costa2021
     quote: 1956-1975 – Plínio Lauer Simões
@@ -103,6 +140,20 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1956-1975 - Plínio Lauer Simões
     page: '368'
+  - source: kickhofel-1995
+    quote: >-
+      O bispo Simões assumiu o governo da diocese em 1956, tendo 16 clérigos em atividade, 11 paróquias, 7 congregações
+      e 19 missões. Quando resignou ao episcopado diocesano em dezembro de 1976
+    page: '257'
+  discrepancies:
+  - field: end
+    value: 1976-12
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        O bispo Simões assumiu o governo da diocese em 1956, tendo 16 clérigos em atividade, 11 paróquias, 7 congregações
+        e 19 missões. Quando resignou ao episcopado diocesano em dezembro de 1976
+      page: '257'
 - jurisdiction: dmsob
   role: diocesan_bishop
   diocese: southwestern-brazil
@@ -131,6 +182,22 @@ affiliations:
   notes: >-
     Primaz interino (Anexo E de Costa 2021); nao consta das listas oficiais de primazes. O livro dá só o início
     de cada primado; o fim é o início do primado seguinte. Primaz interino (bispo sênior).
+- jurisdiction: ieab
+  role: other
+  role_description: secretário-geral
+  start: '1977'
+  end: '1983'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Optou pela última função, transferindo-se para Porto Alegre. … Exerceu essas funções até o final de 1983,
+      quando se aposentou. Faleceu em 1994.
+    page: '259'
+  notes: >-
+    Secretário-geral da igreja. O livro diz que ele ficou na diocese "até o final de 1976" e depois optou por essa
+    função; o início em 1977 é inferido.
 events:
 - type: other
   date: '2008'
@@ -171,3 +238,21 @@ events:
       Os mais votados foram Egmont Machado Krischke com quarenta e oito votos, Plínio Lauer Simões com vinte, Orlando
       Batista com dezesseis votos, Virgínio Pereira Neves com quinze votos e Henrique Todt Junior com treze votos.
     page: '199'
+- type: other
+  date: '1972'
+  description: Eleito primaz no primeiro escrutínio (Sínodo extraordinário de 1972), mas não aceitou
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Nessa época, foi eleito para exercer o primado no primeiro escrutínio (um fato raro), mas não aceitou, por
+      razões de ordem pessoal e porque desejava ver uma liderança mais jovem na direção da igreja.
+    page: '256'
+- type: death
+  date: '1994'
+  description: Morte de Plínio Lauer Simões
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: Exerceu essas funções até o final de 1983, quando se aposentou. Faleceu em 1994.
+    page: '259'

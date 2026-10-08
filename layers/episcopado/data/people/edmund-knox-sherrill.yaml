@@ -10,7 +10,7 @@ aliases:
 - Ned Sherrill
 - Rt. Rev. Edmund K. Sherrill
 birth:
-  date: '1925'
+  date: '1925-05-23'
   sources:
   - source: wit-1958-12-25
     quote: >-
@@ -25,22 +25,47 @@ birth:
       1925, the son of Presiding Bishop and Mrs. Sherrill.
   - source: wd-q114103052
     quote: Edmund Knox Sherrill | American Episcopal Church bishop
+  - source: wp-pt-sherrill
+    quote: >-
+      Edmund Knox Sherrill (nascido em 23 de maio de 1925, Boston - falecido em 2 de outubro de 2015, Rio de Janeiro)
+  - source: costa2021
+    quote: Dois anos depois, faleceu, em 02 de outubro de 2015, no Rio de Janeiro
+  - source: kickhofel-1995
+    quote: Edmund Knox Sherrill nasceu em Boston em 23 de maio de 1925.
+    page: '274'
+  - source: wp-en-esherrill
+    quote: >-
+      He was ordained a bishop on 25 January 1959 in [[Rio de Janeiro]], with his father, retired [[Presiding Bishop]]
+      [[Henry Knox Sherrill]], serving as chief consecrator.
 death:
-  date: '2016'
+  date: '2015-10-02'
   sources:
-  - source: wit-1958-12-25
+  - source: wp-pt-sherrill
     quote: >-
-      The Rev. Edmund K. Sherrill, bishop elect of the missionary district of Central Brazil, will be consecrated
-      bishop in Christ Church, Rio de Janeiro, on January 25.
-  - source: wp-en-esherrill
-    quote: >-
-      Edmund Knox Sherrill (died 2016) was a missionary bishop in The Episcopal Church who served in Brazil.
-  - source: lc-1958-10-26
-    quote: >-
-      Edmund K. Sherrill, who is rector of Holy Trinity Church, Sao Paulo, Brazil, was born in Boston, Mass., in
-      1925, the son of Presiding Bishop and Mrs. Sherrill.
-  - source: wd-q114103052
-    quote: Edmund Knox Sherrill | American Episcopal Church bishop
+      Edmund Knox Sherrill (nascido em 23 de maio de 1925, Boston - falecido em 2 de outubro de 2015, Rio de Janeiro)
+  - source: costa2021
+    quote: Dois anos depois, faleceu, em 02 de outubro de 2015, no Rio de Janeiro
+  discrepancies:
+  - field: date
+    value: '2016'
+    sources:
+    - source: wit-1958-12-25
+      quote: >-
+        The Rev. Edmund K. Sherrill, bishop elect of the missionary district of Central Brazil, will be consecrated
+        bishop in Christ Church, Rio de Janeiro, on January 25.
+    - source: wp-en-esherrill
+      quote: >-
+        Edmund Knox Sherrill (died 2016) was a missionary bishop in The Episcopal Church who served in Brazil.
+    - source: lc-1958-10-26
+      quote: >-
+        Edmund K. Sherrill, who is rector of Holy Trinity Church, Sao Paulo, Brazil, was born in Boston, Mass.,
+        in 1925, the son of Presiding Bishop and Mrs. Sherrill.
+    - source: wd-q114103052
+      quote: Edmund Knox Sherrill | American Episcopal Church bishop
+    - source: wp-en-esherrill
+      quote: >-
+        He was ordained a bishop on 25 January 1959 in [[Rio de Janeiro]], with his father, retired [[Presiding
+        Bishop]] [[Henry Knox Sherrill]], serving as chief consecrator.
 wikidata: Q114103052
 biography: >-
   Filho do bispo presidente Henry Knox Sherrill; eleito na Convenção Geral de 1958 para suceder Melcher no Brasil
@@ -85,6 +110,8 @@ ordinations:
   office: missionary
   principal_consecrator: henry-knox-sherrill
   co_consecrators:
+  - athalicio-pithan
+  - daniel-ivor-evans
   - egmont-krischke
   - plinio-lauer-simoes
   status: contested
@@ -114,6 +141,12 @@ ordinations:
     quote: >-
       o revmo. Edmund Knox Sherrill, em 1959. Ao primeiro, coube a Diocese Sul-Ocidental (já que dom Krischke havia
       sido transferido para a Diocese Meridional com a aposentadoria de dom Pithan) e ao segundo, a Diocese Central.
+  - source: kickhofel-1995
+    quote: >-
+      Foi sagrado bispo no Rio de Janeiro por seu próprio pai, na Igreja de Cristo (Christ Church), tendo como co-sagrantes
+      os bispos Daniel Ivor Evans, da Argentina, e os brasileiros Plínio Lauer Simões, Athalício Theodoro Pithan
+      e Egmont Machado Krischke.
+    page: '275'
   - source: wp-en-esherrill
     quote: >-
       He was ordained a bishop on 25 January 1959 in [[Rio de Janeiro]], with his father, retired [[Presiding Bishop]]
@@ -152,6 +185,12 @@ ordinations:
         o revmo. Edmund Knox Sherrill, em 1959. Ao primeiro, coube a Diocese Sul-Ocidental (já que dom Krischke
         havia sido transferido para a Diocese Meridional com a aposentadoria de dom Pithan) e ao segundo, a Diocese
         Central.
+    - source: kickhofel-1995
+      quote: >-
+        Foi sagrado bispo no Rio de Janeiro por seu próprio pai, na Igreja de Cristo (Christ Church), tendo como
+        co-sagrantes os bispos Daniel Ivor Evans, da Argentina, e os brasileiros Plínio Lauer Simões, Athalício
+        Theodoro Pithan e Egmont Machado Krischke.
+      page: '275'
     - source: wp-en-esherrill
       quote: >-
         He was ordained a bishop on 25 January 1959 in [[Rio de Janeiro]], with his father, retired [[Presiding
@@ -239,7 +278,8 @@ affiliations:
   role: primate
   start: '1984'
   end: '1986'
-  status: confirmed
+  end_reason: retirement
+  status: contested
   sources:
   - source: costa2021
     quote: 1984-1986 – Edmund Knox Sherrill (interino)
@@ -257,9 +297,25 @@ affiliations:
       O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1984 - Edmund Knox Sherrill
       (interino)
     page: '367'
+  - source: kickhofel-1995
+    quote: >-
+      Coube a Dom Edmund Knox Sherrill como bispo senior ocupar o primado interinamente até sua aposentadoria em
+      dezembro de 1985. Foi substituído interinamente por Dom Olavo Ventura Luiz até o Sínodo de 1986, que o elegeu
+      para um período de dois anos.
+    page: '260'
   notes: >-
     Primaz em exercicio/interino (bispo mais antigo). O livro dá só o início de cada primado; o fim é o início do
-    primado seguinte. Primaz interino (bispo sênior).
+    primado seguinte. Primaz interino (bispo sênior). Primaz interino, como bispo sênior.
+  discrepancies:
+  - field: end
+    value: 1985-12
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        Coube a Dom Edmund Knox Sherrill como bispo senior ocupar o primado interinamente até sua aposentadoria
+        em dezembro de 1985. Foi substituído interinamente por Dom Olavo Ventura Luiz até o Sínodo de 1986, que
+        o elegeu para um período de dois anos.
+      page: '260'
 events:
 - type: other
   date: '1985'
@@ -294,3 +350,14 @@ events:
     quote: >-
       For Brazil: Independence - In action pointing the way for greater impact of MRI proposals on the life of the
       Church, the Brazilian Episcopal Church became the 19th independent church in the world-wide Anglican Communion.
+- type: other
+  date: '1958'
+  description: Eleito pela Convenção Geral de 1958 bispo da Diocese Central (Rio de Janeiro), sucedendo Melcher
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Em seu lugar, a Convenção Geral de 1958 elegeu o reverendo Edmund Knox Sherrill, que há cinco anos trabalhava
+      no Brasil como missionário junto à comunidade americana e como coadjutor e depois como pároco da Igreja da
+      Santíssima Trindade em São Paulo.
+    page: '274'

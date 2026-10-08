@@ -107,8 +107,8 @@ export function validateBase(base: Base): Report {
   for (const p of base.people) {
     const entity = `person:${p.id}`
     checkSources(p.sources, entity, 'sources')
-    checkSources(p.birth?.sources, entity, 'birth')
-    checkSources(p.death?.sources, entity, 'death')
+    if (p.birth) checkClaim(p.birth, entity, 'birth')
+    if (p.death) checkClaim(p.death, entity, 'death')
     if (p.photo?.source && !sources.has(p.photo.source)) {
       errors.push({ entity, path: 'photo.source', message: `fonte inexistente: "${p.photo.source}"` })
     }
@@ -200,7 +200,7 @@ export function validateBase(base: Base): Report {
   for (const j of base.jurisdictions) {
     const entity = `jurisdiction:${j.id}`
     checkSources(j.sources, entity, 'sources')
-    checkSources(j.founded?.sources, entity, 'founded')
+    if (j.founded) checkClaim(j.founded, entity, 'founded')
     checkSources(j.dissolved?.sources, entity, 'dissolved')
     if (!j.founded?.date) gaps.push({ entity, message: 'sem data de fundação' })
     for (const [i, r] of (j.relations ?? []).entries()) {
