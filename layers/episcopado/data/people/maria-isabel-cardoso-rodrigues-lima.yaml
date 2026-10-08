@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: maria-isabel-cardoso-rodrigues-lima
 name: Maria Isabel Cardoso Rodrigues Lima
+aliases:
+- Maria Isabel R. Lima
 ordinations:
 - order: diaconate
   date: '2013-09-22'
@@ -17,3 +19,14 @@ ordinations:
       Pelotas (DAP), em Canguçu, pelo Bispo Renato da Cruz Raatz.
   notes: >-
     Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dap
+  status: probable
+  sources:
+  - source: rtb-dapsul-clero
+    quote: Revda. Maria Isabel R. Lima
+  notes: >-
+    Lista atual do clero da diocese; atuação: Paróquia Santo Antônio Florida – Canguçu/RS. A página não traz datas
+    nem ordenante.

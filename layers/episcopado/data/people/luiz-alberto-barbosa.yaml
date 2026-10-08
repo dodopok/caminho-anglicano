@@ -1,6 +1,47 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: luiz-alberto-barbosa
 name: Luiz Alberto Barbosa
+ordinations:
+- order: diaconate
+  date: '2001-12-08'
+  jurisdiction: ieab
+  ordained_by: almir-dos-santos
+  status: probable
+  sources:
+  - source: rtb-sn-2006-luiz-alberto
+    quote: >-
+      Foi ordenado Diácono no dia 8 de dezembro de 2001, por Dom Almir dos Santos e ordenado Presbítero no dia 29
+      de maio de 2004, por Dom Maurício Andrade.
+  notes: Diocese Anglicana de Brasília; iniciou na Paróquia São Felipe, em Goiânia.
+- order: presbyterate
+  date: '2004-05-29'
+  jurisdiction: ieab
+  ordained_by: mauricio-andrade
+  status: probable
+  sources:
+  - source: rtb-sn-2006-luiz-alberto
+    quote: >-
+      Foi ordenado Diácono no dia 8 de dezembro de 2001, por Dom Almir dos Santos e ordenado Presbítero no dia 29
+      de maio de 2004, por Dom Maurício Andrade.
+  notes: Diocese Anglicana de Brasília.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dab
+  start: '2001-12-08'
+  status: probable
+  sources:
+  - source: rtb-sn-2006-luiz-alberto
+    quote: >-
+      Atuou como Ministro Encarregado na Missão da Reconciliação, em Anápolis-GO, e é atualmente o Capelão da Capelania
+      de Língua Inglesa, em Brasília-DF. É Secretário Diocesano desde março de 2002.
+  - source: rtb-sn-2006-luiz-alberto
+    quote: >-
+      no último Sínodo, foi eleito Presidente da Câmara de Clérigos e Leigos da IEAB. Tomará posse neste novo cargo
+      no dia 1º de fevereiro de 2007.
+  notes: >-
+    Em 13/12/2006 foi eleito secretário executivo do CONIC. Em 17/04/2013 o primaz declarou seu abandono de comunhão
+    com a IEAB (registrado em outra fonte).
 events:
 - type: other
   date: '2013-04-17'

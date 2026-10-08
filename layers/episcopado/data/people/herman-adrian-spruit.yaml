@@ -10,7 +10,7 @@ ordinations:
   - c-hanlon
   - h-francis-marshall
   - lowell-paul-wadle
-  status: confirmed
+  status: contested
   sources:
   - source: aca-cross-of-antioch
     quote: >-
@@ -30,6 +30,19 @@ ordinations:
     quote: >-
       he approached Bishop Hampton of the Liberal Catholic Church, and Bishop Hampton consecrated him to the episcopate
       on June 22, 1957.
+  - source: rtb-ceec-succession
+    quote: >-
+      Lowell P. Wadle Bishop in the Apostolic Catholic Church, who on the 22nd of June, 1957, consecrated Herman
+      Adrian Spruit
+  discrepancies:
+  - field: principal_consecrator
+    value: lowell-paul-wadle
+    sources:
+    - source: rtb-ceec-succession
+      quote: >-
+        Lowell P. Wadle Bishop in the Apostolic Catholic Church, who on the 22nd of June, 1957, consecrated Herman
+        Adrian Spruit
   notes: >-
     C. Hanlon aparece como co-sagrante só na lista da Celtic Christian Church. Hampton era bispo da Liberal Catholic
-    Church, de linha vétero-católica.
+    Church, de linha vétero-católica. Linha de sucessão autodeclarada pela CEEC (tabela 'Anglican Succession – Table
+    One'); a página lista só o sagrante principal e a data. Não verificada por fonte independente.

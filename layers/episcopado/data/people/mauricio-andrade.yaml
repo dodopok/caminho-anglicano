@@ -28,33 +28,51 @@ sources:
   quote: Nascido em 07 de março de 1962, na capital pernambucana, Maurício José Araújo de
 ordinations:
 - order: diaconate
-  date: '1988'
+  date: '1988-01-06'
   jurisdiction: ieab
   status: confirmed
   sources:
   - source: dab-bispo-mauricio
     quote: Ordenado diácono em 1988 e presbítero em 1989
+  - source: rtb-dma-sobre
+    quote: >-
+      Bispo Mauricio foi ordenado Diácono na Epifania de Nosso Senhor Jesus Cristo, 06 de janeiro de 1988 e presbítero
+      em 25 de setembro do mesmo ano.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1988 - … Maurício Araújo de Andrade
     page: '373'
   notes: >-
-    Ordenante não informado. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel,
-    1995); ordenante não informado.
+    Ordenante não informado. Biografia do bispo no site do Distrito Missionário Anglicano. Ordenante não informado.
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
   date: '1989'
   jurisdiction: ieab
-  status: confirmed
+  status: contested
   sources:
   - source: dab-bispo-mauricio
     quote: Ordenado diácono em 1988 e presbítero em 1989
-  notes: Ordenante não informado.
+  - source: rtb-dma-sobre
+    quote: >-
+      Bispo Mauricio foi ordenado Diácono na Epifania de Nosso Senhor Jesus Cristo, 06 de janeiro de 1988 e presbítero
+      em 25 de setembro do mesmo ano.
+  discrepancies:
+  - field: date
+    value: '1988-09-25'
+    sources:
+    - source: rtb-dma-sobre
+      quote: >-
+        Bispo Mauricio foi ordenado Diácono na Epifania de Nosso Senhor Jesus Cristo, 06 de janeiro de 1988 e presbítero
+        em 25 de setembro do mesmo ano.
+  notes: >-
+    Ordenante não informado. Esta fonte dá o presbiterato em 25/09/1988; outra fonte (nota biográfica da Diocese
+    de Brasília) dá 1989.
 - order: episcopate
   date: '2003-08-31'
   place: Catedral Metropolitana de Brasília (Igreja Católica Romana)
   jurisdiction: ieab
   office: diocesan
   principal_consecrator: glauco-soares-de-lima
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: >-
@@ -64,7 +82,43 @@ ordinations:
     quote: >-
       Em 2003, foi eleito bispo diocesano da Diocese Anglicana de Brasília, sendo então o primeiro bispo não-católico
       a ser sagrado na Catedral de Brasília.
-  notes: Co-sagrantes não informados.
+  - source: rtb-dma-sobre
+    quote: >-
+      Bispo Mauricio Andrade, foi eleito Bispo da Diocese Anglicana de Brasilia no Sïnodo Geral de maio de 2003,
+      em Porto Alegre, e sagrado em 30 de agosro de 2003, dia de Santo Aidan.
+  - source: rtb-sn-2003-dab
+    quote: >-
+      No dia 31 de agosto de 2003, na Catedral Metropolitana de Brasília, da Igreja Católica Romana, foi realizada
+      a cerimônia de ordenação e sagração ao episcopado do Rev. Côn. Maurício José Araújo de Andrade.
+  - source: rtb-sn-2003-dab
+    quote: >-
+      Dom Orlando Santos de Oliveira, primaz da Igreja Episcopal Anglicana do Brasil, foi o bispo sagrante. Dom
+      Glauco Soares de Lima foi o pregador
+  discrepancies:
+  - field: date
+    value: '2003-08-30'
+    sources:
+    - source: rtb-dma-sobre
+      quote: >-
+        Bispo Mauricio Andrade, foi eleito Bispo da Diocese Anglicana de Brasilia no Sïnodo Geral de maio de 2003,
+        em Porto Alegre, e sagrado em 30 de agosro de 2003, dia de Santo Aidan.
+  - field: principal_consecrator
+    value: orlando-santos-de-oliveira
+    sources:
+    - source: rtb-sn-2003-dab
+      quote: >-
+        No dia 31 de agosto de 2003, na Catedral Metropolitana de Brasília, da Igreja Católica Romana, foi realizada
+        a cerimônia de ordenação e sagração ao episcopado do Rev. Côn. Maurício José Araújo de Andrade.
+    - source: rtb-sn-2003-dab
+      quote: >-
+        Dom Orlando Santos de Oliveira, primaz da Igreja Episcopal Anglicana do Brasil, foi o bispo sagrante. Dom
+        Glauco Soares de Lima foi o pregador
+  notes: >-
+    O site do Distrito Missionário dá 30/08/2003 (dia de Santo Aidan); Costa (2021) dá 31/08/2003 na Catedral Metropolitana
+    de Brasília, com Glauco Soares de Lima como sagrante. O Serviço de Notícias da IEAB (01/09/2003) nomeia o primaz
+    Orlando Santos de Oliveira como sagrante e Glauco Soares de Lima como pregador; Costa (2021) dá Glauco como
+    sagrante. A mesma notícia confirma a data de 31/08 (o site do Distrito Missionário diz 30/08). Entre os presentes:
+    Catherine Waynick (Indianápolis), Orlando Guerreiro (Venezuela) e Julio Holguín. Co-sagrantes não informados.
 affiliations:
 - jurisdiction: ieab
   role: other
@@ -193,6 +247,21 @@ affiliations:
     Primaz em fevereiro de 2012. Anexo E da tese (primazes da IEAB). Primaz da IEAB 2006-2013; substituído por Francisco
     de Assis da Silva.
 - jurisdiction: ieab
+  role: bishop
+  diocese: ieab-dmo
+  start: '2018'
+  status: probable
+  sources:
+  - source: rtb-dma-sobre
+    quote: >-
+      Desde 2018 o Bispo Naudal Alves Gomes, Primaz da IEAB o nomeou Bispo Visitador para o Distrito Missionário.
+  - source: costa2021
+    quote: Já o Distrito Missionário do Oeste atualmente é pastoreado pelo Bispo Maurício Andrade.
+    page: '121'
+  notes: >-
+    A página lista Maurício Andrade, na seção de clero, ao lado desta frase; cargo de bispo visitador do distrito,
+    nomeado pelo primaz Naudal Gomes. Situação em 2021.
+- jurisdiction: ieab
   role: other
   role_description: bispo_encarregado
   diocese: ieab-dmo
@@ -222,15 +291,6 @@ affiliations:
     quote: Diocese Anglicana de Brasília, pastoreada pelo bispo Maurício Andrade
     page: '158'
   notes: Período não informado; contexto da transferência de Magela (após 2017).
-- jurisdiction: ieab
-  role: bishop
-  diocese: ieab-dmo
-  status: probable
-  sources:
-  - source: costa2021
-    quote: Já o Distrito Missionário do Oeste atualmente é pastoreado pelo Bispo Maurício Andrade.
-    page: '121'
-  notes: Situação em 2021.
 events:
 - type: other
   date: '2008'
@@ -406,6 +466,31 @@ events:
     quote: >-
       O Concílio Extraordinário foi convocado especificamente para proceder a eleição do próximo bispo diocesano
       devido a ação anulatória em novembro de 2012.
+- type: other
+  date: '2006-10-11'
+  description: >-
+    Sebastião Armando Gameleira Soares, bispo de Pelotas desde fevereiro de 2000, é instalado em 11/10/2006 como
+    quarto bispo da Diocese do Recife (IEAB), eleito no Sínodo Geral de julho de 2006 para suceder Robinson Cavalcanti,
+    deposto em 10/06/2005; o primaz Maurício Andrade presidiu a investidura.
+  status: probable
+  sources:
+  - source: ens-102306-1-a
+    quote: >-
+      celebrated the start of a new chapter in its complicated life with the installation on October 11 of its fourth
+      bishop, the Rt. Rev. Sebastiao Armando Gameleira Soares. The newly elected primate of Brazil, the Most Rev.
+      Mauricio Andrade, presided over the investiture
+- type: other
+  date: '2006-10-11'
+  description: >-
+    Sebastião Armando Gameleira Soares é investido, em 11/10/2006, como bispo diocesano da Diocese Anglicana do
+    Recife em cerimônia presidida pelo primaz Maurício Andrade e acompanhada de mais quatro bispos, após os cismas
+    de 2002 e 2005.
+  status: confirmed
+  sources:
+  - source: rtb-sn-2006-dar
+    quote: >-
+      Uma bonita cerimônia, presidida pelo Primaz, D. Mauricio Andrade, e partilhada por mais quatro bispos, além
+      do clero e povo de várias partes da diocese
 - type: other
   date: '2004-09-16'
   description: >-

@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: victor-hugo-marques
+name: Victor Hugo Marques
+ordinations:
+- order: diaconate
+  date: '2018-08-19'
+  place: Paróquia da Inclusão, Campo Grande (MS)
+  jurisdiction: ieab
+  ordained_by: naudal-gomes
+  status: confirmed
+  sources:
+  - source: rtb-sn-2018-dma-ordenacoes
+    quote: >-
+      No dia 19/8, Bispo Naudal conferirá a ordem diaconal ao Ir. Victor Hugo, OASB (Oblatos Anglicanos de São Bento)
+      na Paróquia da Inclusão em Campo Grande/MS às 10h
+  - source: rtb-dma-sobre
+    quote: >-
+      No dia 19 de agosto de 2018, nas primeiras véspera de São Bernardo de Claraval, foi Ordenado Diácono e Vigário
+      da Paroquia da Inclusão em Campo Grande (MS).
+  notes: >-
+    Convite do SNIEAB (17/08/2018) para a visita do primaz Naudal Gomes ao Distrito Missionário; confirma o ordenante.
+    Sobrenome Marques conforme o site do Distrito Missionário. Ordenante não informado; a página diz que o bispo
+    visitador do distrito desde 2018 é Naudal Gomes.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dmo
+  start: '2018'
+  status: probable
+  sources:
+  - source: rtb-dma-sobre
+    quote: Ministro encarregado da Paróquia da Inclusão e responsável pela formação teológica no Distrito
+  - source: rtb-dma-sobre
+    quote: >-
+      Em maio de 2019, assumiu, como Ministro Encarregado, a Paroquia da Inclusão, da qual entrou em licença em
+      outubro de 2021.
+  notes: Paróquia da Inclusão (Campo Grande, MS); licença em out/2021.

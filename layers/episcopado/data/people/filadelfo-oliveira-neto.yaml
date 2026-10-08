@@ -199,6 +199,26 @@ affiliations:
     bispo interino do Recife em 2005-2006 (sucedido por Sebastião Armando Gameleira Soares em 2006). Fim = instalação
     de Sebastião Gameleira (inferido; a tese diz que os interinos ocuparam os postos entre 2004 e 2006).
 - jurisdiction: ieab
+  role: coadjutor_bishop
+  diocese: ieab-darj
+  start: '2008-05-11'
+  end: '2008-08-29'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: rtb-sn-2008-darj-eleito
+    quote: >-
+      Em um único escrutínio foi eleito D. Filadelfo Oliveira que atualmente é bispo sufragâneo da Diocese Anglicana
+      do Recife.
+  - source: rtb-sn-2008-darj-coadj
+    quote: >-
+      foi instalado neste domingo D. Filadelfo Oliveira como o novo bispo coadjutor da Diocese Anglicana do Rio
+      de Janeiro.
+  notes: >-
+    Eleito coadjutor em concílio extraordinário em 15/03/2008 (sábado anterior ao Domingo de Ramos); instalado em
+    domingo (11/05/2008, pela data da notícia de 12/05), em Pentecostes, na Paróquia do Redentor, com Celso Franco
+    como bispo diocesano; assumiu a diocese em 29/08/2008.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-darj
   start: '2008-08-29'
@@ -206,6 +226,10 @@ affiliations:
   end_reason: resignation
   status: probable
   sources:
+  - source: rtb-sn-2008-darj-dioc
+    quote: foi instalado o novo bispo da Diocese do Rio de Janeiro, D. Filadelfo Oliveira.
+  - source: rtb-sn-2008-darj-dioc
+    quote: O novo bispo diocesano recebeu o báculo das mãos de D. Celso Franco Oliveira
   - source: costa2021
     quote: Sua instalação aconteceu na Catedral do Redentor em 29 de agosto do mesmo ano.
   - source: costa2021
@@ -220,7 +244,9 @@ affiliations:
   - source: costa2021
     quote: após a resignação do bispo Filadelfo Oliveira.
     page: '117'
-  notes: Anexo D da tese (bispos por diocese).
+  notes: >-
+    Instalação na Paróquia de São Lucas em 29/08/2008 (sexta-feira), presidida pelo primaz Maurício Andrade e com
+    mais cinco bispos; pregador Orlando Santos de Oliveira. Anexo D da tese (bispos por diocese).
   discrepancies:
   - field: end
     value: '2016'

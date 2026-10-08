@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: odete-liber
+name: Odete Liber
+ordinations:
+- order: diaconate
+  date: '2021-03-07'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: rtb-darj-2021-odete
+    quote: 07/03/2021 - Ordenação de Odete Liber
+  - source: rtb-darj-2021-odete
+    quote: Pedimos suas orações e que acompanhem pelo Facebook e Youtube de nossa diocese.
+  notes: >-
+    A postagem da Diocese Anglicana do Rio de Janeiro (celebração transmitida on-line) não diz a ordem; como Odete
+    foi ordenada presbítera em 21/05/2022, a ordenação de 07/03/2021 foi provavelmente o diaconato.
+- order: presbyterate
+  date: '2022-05-21'
+  place: Igreja Presbiteriana Unida de Maruípe, Vitória (ES)
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: rtb-ieab-vitoria-2022
+    quote: >-
+      A celebração de ordenação presbiteral da nossa irmã Odete Liber foi no dia 21 de maio, em clima ecumênico,
+      no templo da Igreja Presbiteriana Unida (IPU) de Maruípe.
+  - source: rtb-ieab-vitoria-2022
+    quote: >-
+      O bispo Eduardo Grillo , a reverenda Inamar Corrêa de Souza e o reverendo Alexandre T. Ivan vieram do Rio
+      de Janeiro para esse momento especial.
+  notes: >-
+    Ano 2022 pela data da matéria (19/06/2022). A matéria não diz expressamente quem foi o ordenante; cita o bispo
+    Eduardo Grillo (Diocese Anglicana do Rio de Janeiro) entre os presentes.

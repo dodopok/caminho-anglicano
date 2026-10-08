@@ -50,6 +50,13 @@ ordinations:
   place: Paróquia da Santíssima Trindade, Praça Olavo Bilac, 63, Campos Elíseos, São Paulo
   jurisdiction: ieab
   office: diocesan
+  principal_consecrator: mauricio-andrade
+  co_consecrators:
+  - almir-dos-santos
+  - filadelfo-oliveira-neto
+  - francisco-de-assis-da-silva
+  - humberto-maiztegui
+  - naudal-gomes
   status: contested
   sources:
   - source: snieab-2013-convite-irala
@@ -80,6 +87,19 @@ ordinations:
     quote: >-
       O BISPO PRIMAZ DA IGREJA EPISCOPAL ANGLICANA DO BRASIL, DOM MAURÍCIO JOSÉ ARAÚJO DE ANDRADE, O CLERO E POVO
       DA DIOCESE ANGLICANA DE SÃO PAULO CONVIDAM V.SA.
+  - source: rtb-dasp-historia
+    quote: >-
+      Bispo Flávio Augusto Borges Irala, natural de Bagé, RS, sagrado em 13 de setembro de 2013, atuou como bispo
+      diocesano até 2021.
+  - source: rtb-sn-2014-irala-sagr
+    quote: >-
+      A Diocese Anglicana de São Paulo (DASP) festejou na manhã de 14 de setembro, DIA DA SANTA CRUZ, na Igreja
+      da Santíssima Trindade, a Sagração do Bispo Dom Flávio Irala.
+  - source: rtb-sn-2014-irala-sagr
+    quote: >-
+      tendo o Bispo Sagrante Dom Maurício Andrade e demais bispos Co-Sagrantes, a saber: Dom Naudal Gomes (Curitiba),
+      Dom Filadelfo Oliveira (Rio de Janeiro), Dom Francisco de Assis (Santa Maria), Dom Humberto Maiztegui (Porto
+      Alegre) e Dom Almir Santos (Câmara dos Bispos).
   - source: costa2021
     quote: Flávio Irala (26)
     page: '121'
@@ -95,13 +115,21 @@ ordinations:
       quote: Finalmente, Irala foi ordenado e sagrado bispo da DASP em 13 de setembro de 2013.
     - source: ec-2017-01
       quote: Já em 2013, foi sagrado o Revmo. Flávio Irala como bispo de São Paulo, em meio a momentos de crise.
+    - source: rtb-dasp-historia
+      quote: >-
+        Bispo Flávio Augusto Borges Irala, natural de Bagé, RS, sagrado em 13 de setembro de 2013, atuou como bispo
+        diocesano até 2021.
   notes: >-
     Convite oficial (imagem na notícia do SNIEAB de 26/08/2013, enviado pelo mantenedor): sábado, 14/09/2013, 10h30.
     O convite é feito pelo primaz Maurício Andrade, mas não diz quem presidiu nem os co-sagrantes. Eleicao (08/09/2012)
     contestada judicialmente pelo grupo que formou o Movimento Anglicano no Brasil. Diocese Anglicana de São Paulo.
     Sagrantes não informados nesta fonte. O convite oficial publicado em 26/08/2013 marca a cerimônia para 14/09/2013,
-    enquanto outras fontes dão 13/09/2013. O convite não lista sagrantes. A tese NÃO informa data, local nem sagrantes;
-    apenas o número 26 no registro de bispos da IEAB (nota 138) e a eleição em 2013.
+    enquanto outras fontes dão 13/09/2013. O convite não lista sagrantes. O site oficial da diocese dá 13/09/2013;
+    o convite oficial da cerimônia (SNIEAB, 26/08/2013) traz sábado, 14/09/2013, às 10h30, na Paróquia da Santíssima
+    Trindade. Relato do SNIEAB publicado em 30/07/2014; o texto não traz o ano, mas descreve a sagração após a eleição
+    de agosto de 2013 e fala em 14 de setembro (Dia da Santa Cruz). Fecha a data (o site da DASP e outras fontes
+    dão 13/09/2013) e nomeia sagrante e co-sagrantes; 300 pessoas presentes. A tese NÃO informa data, local nem
+    sagrantes; apenas o número 26 no registro de bispos da IEAB (nota 138) e a eleição em 2013.
 affiliations:
 - jurisdiction: ieab
   role: clergy

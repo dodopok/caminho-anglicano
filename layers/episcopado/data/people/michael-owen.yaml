@@ -7,13 +7,21 @@ sources:
   quote: Bishop Michael Owen served as the first Presiding Bishop.
 ordinations:
 - order: episcopate
-  date: '1995'
+  date: '1995-02-26'
   jurisdiction: ceec
+  principal_consecrator: michael-rivers-milner-jr
   status: probable
   sources:
+  - source: rtb-ceec-succession
+    quote: >-
+      Michael Rivers Milner Jr. Bishop of The International Free Catholic Communion, who on the 26th of February,
+      1995, consecrated Michael D. Owen
   - source: iab-poster-linhagem-meira
     quote: >-
       Michael Owen, primeiro primaz da CEEC, foi consagrado em 1995 por um colégio misto de bispos dessas tradições.
+  notes: >-
+    Linha de sucessão autodeclarada pela CEEC (tabela 'Anglican Succession – Table One'); a página lista só o sagrante
+    principal e a data. Não verificada por fonte independente.
 affiliations:
 - jurisdiction: ceec
   role: bishop

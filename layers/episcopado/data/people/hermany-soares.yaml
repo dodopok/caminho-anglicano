@@ -1,7 +1,9 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: hermany-soares
 name: Hermany Silva Soares
+full_name: Hermany Silva Soares
 aliases:
+- Arcebispo Primaz Dom Hermany Soares
 - Bispo Hermany Soares
 - Dom Hermany
 - Dom Hermany Soares
@@ -101,6 +103,8 @@ affiliations:
     quote: >-
       Funcionou como Mestre de Cerimônia o Rev. Hermany Soares . Na madrugada desta terça-feira o Bispo e o Rev.
       Hermany estarão viajando para Ribeirão Preto (SP).
+  - source: dar-clero-presbiteros-2010
+    quote: 'Rev. Hermany Silva Soares Aniversário: 30/01 Secretário Diocesano Administrativo'
   - source: cant-novas-igrejas-2024
     quote: >-
       renunciou ao episcopado para exercer o ministério presbiteral na então Igreja Anglicana – Diocese do Recife
@@ -108,7 +112,8 @@ affiliations:
     page: '150'
   notes: >-
     Secretário administrativo da diocese em out/2009. Presbítero na lista do clero da Diocese do Recife (2009/2010).
-    Presbítero da IA-DR (depois IAB).
+    Presbítero listado na página 'Presbíteros/as' do clero da Diocese Anglicana do Recife em captura de 29/11/2010,
+    com o cargo de Secretário Diocesano Administrativo. Presbítero da IA-DR (depois IAB).
 - jurisdiction: iab
   role: clergy
   diocese: iab-diocese-recife
@@ -213,9 +218,14 @@ affiliations:
   - source: iaob-site-2015
     quote: >-
       nosso afeto a Dom Hermany, nosso primaz, pelo equilíbrio e lucidez com que vêm conduzindo as reuniões
+  - source: her-pao-primaz
+    quote: ESTE É O NOSSO ARCEBISPO PRIMAZ, SUA EXELÊNCIA DOM HERMANY SOARES.
   notes: >-
     Texto sem data (cópia de 2015, antes da morte de Robinson em 2012). Não se encontrou registro de sagração episcopal
-    de Hermany; "Dom Hermany" pode ser título dentro da IAOB. Identidade com Hermany Silva Soares provável.
+    de Hermany; "Dom Hermany" pode ser título dentro da IAOB. Identidade com Hermany Silva Soares provável. Página
+    'Arcebispo Primaz' do site de uma paróquia ligada à Província Anglicana Ortodoxa (cópia arquivada em 2015, texto
+    sem data e anterior a 2012). Mesma página da home que fala em fusão da IAOB com a Diocese do Recife. A página
+    não informa quando nem por quem ele foi sagrado.
 - jurisdiction: iab
   role: clergy
   end: '2023'
@@ -230,6 +240,22 @@ affiliations:
     quote: a saída de alguns clérigos da Igreja Anglicana no Brasil (IAB), como o reverendo Hermany Soares.
     page: '150'
 events:
+- type: other
+  date: '2024'
+  description: >-
+    A Igreja Episcopal Unida do Brasil se organiza como 'Diocese do Brasil', com arcediagados do Nordeste e do Sudeste,
+    e tem igreja em implantação em Assunção (Paraguai, 'Igreja Episcopal da Santa Face'); defende continuidade da
+    linha de Robinson Cavalcanti e tem os antigos vídeos de Robinson Cavalcanti no canal que foi do reverendo Hermany.
+  status: probable
+  sources:
+  - source: cant-novas-igrejas-2024
+    quote: A Igreja se organiza como a Diocese do Brasil e os arcediagados do Nordeste e Sudeste.
+  - source: cant-novas-igrejas-2024
+    quote: Também há uma igreja sendo implantada, em Assunção no Paraguai (Igreja Episcopal da Santa Face).
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Os antigos vídeos do bispo Robinson, publicados no antigo canal do reverendo Hermany, hoje, são mantidos no
+      canal oficial da IEUB no Youtube.
 - type: other
   date: null
   description: >-

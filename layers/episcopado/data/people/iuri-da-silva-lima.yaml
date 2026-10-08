@@ -1,6 +1,35 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: iuri-da-silva-lima
 name: Iuri da Silva Lima
+ordinations:
+- order: diaconate
+  date: 2023-12
+  place: Manaus (AM)
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: rtb-ieab-daa-concilio-2023
+    quote: >-
+      O evento foi encerrado no domingo pela manhã, com a celebração da ordenação diaconal de Iuri Rogério da Silva
+      Lima, destinado ao ponto missionário Santa Maria Madalena Apóstola , em Manaus-AM.
+  notes: >-
+    Nome completo na notícia: Iuri Rogério da Silva Lima. Ocorreu no encerramento do Concílio da Diocese Anglicana
+    da Amazônia (a matéria é de 16-17/12/2023; o domingo não é datado). A bispa Marinez Bassotto, diocesana, é quem
+    fala; a notícia não diz expressamente quem ordenou.
+- order: presbyterate
+  date: '2024-11-24'
+  place: Manaus (AM)
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: rtb-ieab-daa-concilio-2024
+    quote: >-
+      pela ordenação presbiteral do reverendo Iuri Rogério da Silva Lima . Esse momento tão aguardado foi concretizado
+      no encerramento do Concílio, na manhã de domingo (24), durante a celebração de ordenação
+  notes: >-
+    Domingo 24 (novembro de 2024, pela data da matéria, 01/12/2024), no encerramento do XIX Concílio da DAA, realizado
+    pela primeira vez fora do Pará (Manaus). A bispa Marinez Bassotto pregou; a notícia não diz expressamente quem
+    impôs as mãos.
 affiliations:
 - jurisdiction: ieab
   role: clergy

@@ -29,20 +29,32 @@ ordinations:
 - order: diaconate
   date: '1997-01-05'
   jurisdiction: ieab
+  ordained_by: clovis-erly-rodrigues
   status: probable
   sources:
+  - source: ens-102306-1-a
+    quote: >-
+      He was ordained to the diaconate and priesthood in the Episcopal Church in 1997 by the Rt. Rev. Clovis Erly
+      Rodrigues, the second bishop of Recife.
   - source: costa2021
     quote: ordenado diácono e presbítero em 1997, já atuando como professor e reitor do Seminário Anglicano
     page: '105'
   - source: costa2021
     quote: foi ordenado ao diaconato em 05 de janeiro de 1997 e, seis meses depois, ordenado presbítero
     page: '239'
-  notes: Diocese Anglicana do Recife; ordenante não informado (Clóvis era o diocesano).
+  notes: >-
+    O ENS não separa as datas do diaconato e do presbiterato (diz apenas 1997); Costa (2021) dá o diaconato em 05/01/1997
+    e o presbiterato seis meses depois. Diocese Anglicana do Recife; ordenante não informado (Clóvis era o diocesano).
 - order: presbyterate
   date: '1997'
   jurisdiction: ieab
+  ordained_by: clovis-erly-rodrigues
   status: probable
   sources:
+  - source: ens-102306-1-a
+    quote: >-
+      He was ordained to the diaconate and priesthood in the Episcopal Church in 1997 by the Rt. Rev. Clovis Erly
+      Rodrigues, the second bishop of Recife.
   - source: costa2021
     quote: ordenado diácono e presbítero em 1997, já atuando como professor e reitor do Seminário Anglicano
     page: '105'
@@ -51,7 +63,10 @@ ordinations:
       foi ordenado ao diaconato em 05 de janeiro de 1997 e, seis meses depois, ordenado presbítero, exercendo o
       seu ministério, inicialmente, na Paróquia do Semeador, em Olinda.
     page: '239'
-  notes: '''Seis meses depois'' do diaconato (05/01/1997), isto é, c. julho de 1997. Ordenante não informado.'
+  notes: >-
+    O ENS não separa as datas do diaconato e do presbiterato (diz apenas 1997); Costa (2021) dá o diaconato em 05/01/1997
+    e o presbiterato seis meses depois. 'Seis meses depois' do diaconato (05/01/1997), isto é, c. julho de 1997.
+    Ordenante não informado.
 - order: episcopate
   date: '2000-07-23'
   place: Paróquia Nossa Senhora da Luz (Igreja Católica Romana), Pelotas
@@ -245,6 +260,45 @@ events:
       dia 11 de Outubro, com a presença do Primaz da Igreja Episcopal Anglicana do Brasil, Dom Maurício Andrade
   - source: drv-nota-esclarecimento-2006
     quote: criação pelo último Sínodo Geral da IEAB, em julho passado de uma “Diocese Missionária”
+- type: deposition
+  date: '2006-10-11'
+  description: >-
+    Sebastião Armando Gameleira Soares, bispo de Pelotas desde fevereiro de 2000, é instalado em 11/10/2006 como
+    quarto bispo da Diocese do Recife (IEAB), eleito no Sínodo Geral de julho de 2006 para suceder Robinson Cavalcanti,
+    deposto em 10/06/2005; o primaz Maurício Andrade presidiu a investidura.
+  status: probable
+  sources:
+  - source: ens-102306-1-a
+    quote: >-
+      celebrated the start of a new chapter in its complicated life with the installation on October 11 of its fourth
+      bishop, the Rt. Rev. Sebastiao Armando Gameleira Soares. The newly elected primate of Brazil, the Most Rev.
+      Mauricio Andrade, presided over the investiture
+- type: other
+  date: '1993'
+  description: >-
+    Sebastião Armando Gameleira Soares, ex-professor e reitor do Núcleo Anglicano de Estudos Teológicos (NAET, Recife)
+    desde 1989, é recebido oficialmente na Comunhão Anglicana em 1993 e ordenado diácono e presbítero em 1997 na
+    Diocese Anglicana do Recife; em 2000 é eleito e assume o episcopado na Diocese Anglicana de Pelotas.
+  status: probable
+  sources:
+  - source: rtb-ieabce-gameleira
+    quote: >-
+      Foi recebido oficialmente na Comunhão Anglicana em 1993, tendo sido ordenado Diácono e Presbítero em 1997,
+      na Diocese Anglicana do Recife.
+  - source: rtb-ieabce-gameleira
+    quote: No ano 2000 foi eleito e assumiu o Episcopado na Diocese Anglicana de Pelotas.
+- type: other
+  date: '2006-10-11'
+  description: >-
+    Sebastião Armando Gameleira Soares é investido, em 11/10/2006, como bispo diocesano da Diocese Anglicana do
+    Recife em cerimônia presidida pelo primaz Maurício Andrade e acompanhada de mais quatro bispos, após os cismas
+    de 2002 e 2005.
+  status: confirmed
+  sources:
+  - source: rtb-sn-2006-dar
+    quote: >-
+      Uma bonita cerimônia, presidida pelo Primaz, D. Mauricio Andrade, e partilhada por mais quatro bispos, além
+      do clero e povo de várias partes da diocese
 - type: other
   date: '1993'
   description: Sebastião Gameleira Soares recebido oficialmente na Comunhão Anglicana

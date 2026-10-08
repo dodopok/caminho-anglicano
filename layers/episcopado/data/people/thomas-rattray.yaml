@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: thomas-rattray
+name: Thomas Rattray
+ordinations:
+- order: episcopate
+  date: '1727-06-04'
+  place: Edimburgo
+  jurisdiction: scottish-episcopal-church
+  office: diocesan
+  principal_consecrator: arthur-millar
+  co_consecrators:
+  - andrew-cant
+  - james-gadderar
+  status: probable
+  sources:
+  - source: rtb-wp-rattray
+    quote: He was consecrated in Edinburgh on 4 June 1727 by Primus Millar and bishops Gadderar and Cant
+  notes: >-
+    Wikipédia EN (fonte terciária; cita Bertie, Dowden e Skinner). Linha escocesa dos bispos 'nonjurors' até Seabury
+    (1784).

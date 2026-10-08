@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: josiah-idowu-fearon
+name: Josiah Idowu-Fearon
+events:
+- type: other
+  date: '2018-05-12'
+  description: >-
+    A Igreja Anglicana no Brasil (IAB) foi lançada num sábado (12/05/2018) na Paróquia Anglicana do Espírito Santo,
+    no Recife, onde Miguel Uchoa Cavalcanti foi empossado como primaz; o secretário-geral da Comunhão Anglicana,
+    Josiah Idowu-Fearon, disse que chamá-la de província da Comunhão Anglicana é incorreto por não estar em comunhão
+    com Cantuária; o primaz da IEAB, Francisco de Assis da Silva, lamentou a atitude.
+  status: confirmed
+  sources:
+  - source: rtb-ct-2018-gafcon-brazil
+    quote: >-
+      The Anglican Church in Brazil was launched on Saturday at the Paróquia Anglicana do Espírito Santo (Anglican
+      Church of the Holy Spirit), in Recife. The Most Revd Miguel Uchoa Cavalcanti was installed as its Primate.
+  - source: rtb-ct-2018-gafcon-brazil
+    quote: >-
+      It is inaccurate to refer to the Anglican Church in Brazil as being part of the Episcopal Anglican Communion.
+      To be part of the Anglican Communion requires being in communion with the see of Canterbury, which this Church
+      is not.

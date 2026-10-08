@@ -11,6 +11,19 @@ sources:
   quote: Dr. John Skinner, bishop coadjutor of Aberdeen
 - source: wikidata-api-2
   quote: '"Q6258094": enwiki "John Skinner (bishop)"'
+ordinations:
+- order: episcopate
+  date: '1782-09-25'
+  jurisdiction: scottish-episcopal-church
+  office: diocesan
+  principal_consecrator: robert-kilgour
+  status: probable
+  sources:
+  - source: rtb-wp-skinner
+    quote: consecration = 25 September 1782 | consecrated_by = Robert Kilgour
+  notes: >-
+    Wikipédia EN (fonte terciária; cita Bertie, Dowden e Skinner). Linha escocesa dos bispos 'nonjurors' até Seabury
+    (1784).
 affiliations:
 - jurisdiction: scottish-episcopal-church
   role: bishop
