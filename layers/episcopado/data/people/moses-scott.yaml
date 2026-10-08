@@ -43,6 +43,7 @@ ordinations:
   place: Catedral de São Jorge (Cathedral Church of St. George), Freetown, Serra Leoa
   jurisdiction: province-of-west-africa
   office: diocesan
+  principal_consecrator: cecil-john-patterson
   status: confirmed
   sources:
   - source: ia-gc-journal-1964
@@ -53,6 +54,14 @@ ordinations:
     quote: >-
       He was Archdeacon of Bonthe and Bo from 1959 to 1961, when he was consecrated to be Bishop of Sierra Leone
       in succession to the Most Rev. J. L. C. Horstead.
+  - source: cam-cms-consecrations-1961
+    quote: >-
+      Bishop Scott (left) with Archbishop Patterson and Assistant Bishop P.J. Jones outside Cathedral House after
+      consecration, 1961
+  - source: cam-cms-consecrations-1961
+    quote: Bishop Scott accompanied by the Most Rev. C.J. Patterson, Archbishop of West Africa, 1961
+  - source: cam-cms-consecrations-1961
+    quote: Rev. H.R. Tilbury heading the procession from the Cathedral after the consecration, 1961
   - source: gc-journal-1964
     quote: >-
       June 1, 1964—Received notice from Cecil John, Archbishop of West Africa, of the consecration of: the Ven.
@@ -63,14 +72,14 @@ ordinations:
   - source: whoswho-1962
     quote: SIERRA  LEONE,  Bishop  of,  since  1961; Rt.  Rev.  Moses  Natfianael  Christopher Otnobiala  Scott
   notes: >-
-    Reconfirma data e local (já em sucessao-lacunas.json). O sagrante continua não nomeado nas fontes vistas (Journal
-    1964, obituário no Church Times 1988, Times 20/09/1961 "No date has been fixed for the consecration"). DATA
-    (12/11/1961) e LOCAL (catedral de São Jorge, Freetown) agora têm fonte primária: o registro oficial da Convenção
-    Geral da TEC (1964) transcreve a notificação formal enviada por 'Cecil John, Archbishop of West Africa' (= Cecil
-    John Patterson, arcebispo metropolitano da África Ocidental 1961-1969). O SAGRANTE PRINCIPAL NÃO É NOMEADO.
-    Pela praxe, a notificação de sagração é enviada pelo metropolita que a presidiu, o que torna Patterson o sagrante
-    provável, mas a fonte não o diz: por isso sagrante_principal fica null. Ver dúvidas. Também foram sagrados na
-    mesma série (notificados juntos): Agori Iwe (Benin, 30/11/1961) e Rogers Nathaniel Bara Hart (Niger Delta, 10/12/1961).
+    O registro da Convenção Geral da TEC (1964) transcreve a notificação da sagração enviada por 'Cecil John, Archbishop
+    of West Africa' (Cecil John Patterson, arcebispo metropolitano da África Ocidental de 1961 a 1969). Na mesma
+    série foram notificados Agori Iwe (Benin, 30/11/1961) e Rogers Nathaniel Bara Hart (Niger Delta, 10/12/1961).
+    Nenhuma fonte diz literalmente quem sagrou Scott. Patterson aparece como sagrante principal por inferência:
+    era o arcebispo metropolitano da província em 1961, foi ele quem notificou a sagração à Igreja Episcopal dos
+    EUA, e as fotografias da CMS da pasta 'Consecrations, 1961' (itens GBR/0115/RCS/CMS/11/3/1-15) o mostram com
+    Scott depois da sagração. As mesmas fotos mostram o bispo assistente P. J. Jones e o bispo da Gâmbia, prováveis
+    co-sagrantes, também sem confirmação.
 affiliations:
 - jurisdiction: province-of-west-africa
   role: diocesan_bishop

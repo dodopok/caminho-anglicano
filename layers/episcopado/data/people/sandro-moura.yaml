@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sandro-moura
+name: Sandro Moura
+aliases:
+- Pr. Sandro
+biography: >-
+  Ordenado diácono na Igreja Episcopal Unida do Brasil pelas mãos do bispo Hermany Soares em culto divulgado em
+  04/09/2023; em jun/2026 o perfil oficial da IEUB publica texto assinado 'Pr. Sandro' sobre três anos de participação
+  na obra.
+sources:
+- source: rti-ig-ieub-diaconal-2023
+  quote: Ordenação de Sandro Moura, Paulinha e Tony - pelas mãos do Bispo Hermany Soares.
+ordinations:
+- order: diaconate
+  date: 2023-09
+  jurisdiction: ieub
+  ordained_by: hermany-soares
+  status: confirmed
+  sources:
+  - source: rti-ig-ieub-diaconal-2023
+    quote: Culto de Ordenação Diaconal - Igreja Episcopal Unida do Brasil.
+  - source: rti-ig-ieub-diaconal-2023
+    quote: Ordenação de Sandro Moura, Paulinha e Tony - pelas mãos do Bispo Hermany Soares.
+  notes: >-
+    O post é de 04/09/2023; a data exata do culto não é dita (no máximo, poucos dias antes da publicação). No mesmo
+    culto foram ordenados dois outros diáconos citados só pelo primeiro nome (Paulinha e Tony).

@@ -40,28 +40,50 @@ ordinations:
     a Igreja Católica Romana, sem data nem ordenante.
 - order: episcopate
   date: '2024-05-25'
-  jurisdiction: wac-br
+  place: Igreja Carismática Luz do Senhor, Rua Dr. Getúlio Vargas, 94, Taboão da Serra (SP)
+  jurisdiction: dac
   office: auxiliary
+  principal_consecrator: iranildo-macieira-da-silva
   co_consecrators:
-  - iranildo-macieira-da-silva
   - josue-sousa-torres
   - marcio-silva
-  status: confirmed
+  status: contested
   sources:
   - source: lwac-wacbr-clerigos
     quote: 'Sagração Episcopal: 25/05/2024'
   - source: lwac-diego-bio
     quote: >-
       2024, 25 de maio – Dom Lucas Macieira, Dom Márcio Silva e Dom Josué Torres sagraram Dom Diego Scarmeloto Peral.
+  - source: rtf-gazzeta-diego
+    quote: Na tarde do último dia, 25 de maio de 2024* na Cidade de Taboão da Serra
+  - source: rtf-gazzeta-diego
+    quote: >-
+      na Cidade de Taboão da Serra em uma cerimônia marcada pela fé e pela união, a Igreja Carismática Luz do Senhor
+      foi palco das ordenações episcopais dos reverendos Diego Scarmeloto Peral, João Paulo Miguel de Oliveira e
+      Leonildo Fernandes, membros da Diocese Anglicana Católica do Brasil
+  - source: rtf-gazzeta-diego
+    quote: >-
+      foi conduzida pelo Arcebispo Dom Frei Lucas Macieira, com a assistência dos Bispos-coordenantes Dom Márcio
+      Silva e Dom Josué Torres
   - source: lwac-wacbr-clerigos
     quote: >-
       Dom Diego Scarmeloto Peral Bispo Auxiliar de São Paulo Cidade: São Paulo - SP Ordenação Presbiteral: 26/02/2023
       Sagração Episcopal: 25/05/2024
+  discrepancies:
+  - field: jurisdiction
+    value: wac-br
+    sources:
+    - source: lwac-wacbr-clerigos
+      quote: >-
+        Dom Diego Scarmeloto Peral Bispo Auxiliar de São Paulo Cidade: São Paulo - SP Ordenação Presbiteral: 26/02/2023
+        Sagração Episcopal: 25/05/2024
   notes: >-
     Data em dupla fonte primária (site da WAC-BR e site pessoal do bispo). Segundo o site pessoal, os sagrantes
     foram Lucas Macieira (Igreja Episcopal Latina do Brasil), Márcio Silva e Josué Torres, sem distinguir principal
     e co-sagrantes. Local e jurisdição do ato não informados; o site da WAC-BR o lista como bispo auxiliar de São
-    Paulo.
+    Paulo. Notícia enviada pela assessoria de comunicação da diocese e publicada pela imprensa local em 27/05/2024.
+    O texto chama Márcio Silva e Josué Torres de 'bispos-coordenantes' (assistentes) e diz que a cerimônia, às 15h,
+    foi 'conduzida' por Lucas Macieira. A mesma notícia relata a ordenação episcopal simultânea de três reverendos.
 affiliations:
 - jurisdiction: wac-br
   role: auxiliary_bishop
