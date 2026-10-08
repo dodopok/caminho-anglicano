@@ -1,50 +1,96 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: paulo-sergio-ferreira
 name: Paulo Sérgio Ferreira
-biography: Fundador (2020) e arcebispo primaz da Igreja Anglicana Mundial no Brasil.
+full_name: Paulo Sérgio Ferreira
+aliases:
+- Dom Paulo Sérgio
+- Don Paul Sergio Ferreir
+biography: >-
+  Arcebispo primaz da Igreja Anglicana Mundial (WAC) no Brasil, com sede em Serra (ES). O registro público de CNPJ
+  da WAC do Brasil o lista como presidente da entidade desde 27/11/2020; a lista de bispos da WAC internacional
+  o inclui como arcebispo primaz da província do Brasil. O site da província dá diaconato em 2012, presbiterato
+  em 2018 e sagração episcopal em 15/12/2018, sem nomear sagrantes.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Dom Paulo Sérgio Ferreira, Arcebispo Primaz da Igreja Anglicana Mundial no Brasil
-  page: '129'
+- source: lwac-wacbr-clerigos
+  quote: >-
+    Dom Paulo Sérgio Ferreira Arcebispo Primaz da Igreja Anglicana Mundial WAC. Província Eclesiástica do Brasil.
+- source: lwac-wac-hob
+  quote: The Most Rev. Don Paul Sergio Ferreir Archbishop Primate Ecclesiastical Province of Brazil
 ordinations:
 - order: diaconate
   date: '2012-06-09'
   jurisdiction: wac-br
   status: probable
   sources:
-  - source: cont-wacbr-clerigos
+  - source: lwac-wacbr-clerigos
     quote: Ordenação Diaconal 09/06/2012 Ordenação Presbiteral 28/01/2018 Sagração Episcopal 15/12/2018
+  notes: Data informada pelo próprio site da província. Local, jurisdição e ordenante não constam.
 - order: presbyterate
   date: '2018-01-28'
   jurisdiction: wac-br
   status: probable
   sources:
-  - source: cont-wacbr-clerigos
+  - source: lwac-wacbr-clerigos
     quote: Ordenação Diaconal 09/06/2012 Ordenação Presbiteral 28/01/2018 Sagração Episcopal 15/12/2018
+  notes: Data informada pelo próprio site da província. Local, jurisdição e ordenante não constam.
 - order: episcopate
   date: '2018-12-15'
   jurisdiction: wac-br
   office: primate
   status: probable
   sources:
-  - source: cont-wacbr-clerigos
+  - source: lwac-wacbr-clerigos
     quote: Ordenação Diaconal 09/06/2012 Ordenação Presbiteral 28/01/2018 Sagração Episcopal 15/12/2018
   notes: >-
-    Datas de diaconato (09/06/2012), presbiterato (28/01/2018) e episcopado (15/12/2018) do arcebispo primaz da
-    WAC no Brasil, autodeclaradas pelo site da província. Sagrante/jurisdição da época não informados (outras fontes
-    o põem na IATB c.2016, sem datas). Uma ordenação/sagração em 2018 antecede a fundação da província brasileira
-    (27/11/2020).
+    Data autodeclarada pelo site da WAC-BR. O site não informa sagrantes, local nem a jurisdição que o sagrou; a
+    província brasileira só foi registrada em 27/11/2020. A Missão São José, primeira paróquia da WAC no Brasil,
+    foi criada em 19/03/2019, três meses após a sagração. Datas de diaconato (09/06/2012), presbiterato (28/01/2018)
+    e episcopado (15/12/2018) do arcebispo primaz da WAC no Brasil, autodeclaradas pelo site da província. Sagrante/jurisdição
+    da época não informados (outras fontes o põem na IATB c.2016, sem datas). Uma ordenação/sagração em 2018 antecede
+    a fundação da província brasileira (27/11/2020).
 affiliations:
 - jurisdiction: wac-br
   role: founder
   start: '2020-11-27'
-  status: probable
+  status: confirmed
   sources:
+  - source: lwac-cnpj
+    quote: '"nome_socio":"PAULO SERGIO FERREIRA"'
+  - source: lwac-cnpj
+    quote: '"qualificacao_socio":"Presidente"'
+  - source: lwac-cnpj
+    quote: '"data_entrada_sociedade":"2020-11-27"'
   - source: cant-novas-igrejas-2024
     quote: >-
       A Igreja Anglicana Mundial chegou ao Brasil através do reverendo Paulo Sérgio Ferreira, sendo estabelecida
       em 27 de novembro de 2020.
     page: '128'
+  notes: >-
+    No cadastro público da Receita Federal da Igreja Anglicana Mundial WAC do Brasil (CNPJ 43.283.249/0001-64, natureza
+    jurídica "Organização Religiosa"), Paulo Sergio Ferreira consta como único sócio-administrador, com qualificação
+    "Presidente", entrando em 27/11/2020, mesma data de início de atividade da entidade.
+- jurisdiction: wac
+  role: primate
+  diocese: wac-br
+  status: confirmed
+  sources:
+  - source: lwac-wac-hob
+    quote: The Most Rev. Don Paul Sergio Ferreir Archbishop Primate Ecclesiastical Province of Brazil
+  - source: lwac-wacbr-clerigos
+    quote: >-
+      Dom Paulo Sérgio Ferreira Arcebispo Primaz da Igreja Anglicana Mundial WAC. Província Eclesiástica do Brasil.
+  notes: >-
+    Duas fontes primárias (site internacional e site da província) o apresentam como arcebispo primaz da província
+    do Brasil.
+- jurisdiction: wac-br
+  role: clergy
+  status: confirmed
+  sources:
+  - source: lwac-wacbr-sjose
+    quote: 'Pároco: Reverendo Dom Paulo Sérgio Ferreira'
+  notes: >-
+    Local: Missão São José, Serra, ES. Além de primaz, é pároco da Missão São José (Congregação São Miguel Arcanjo),
+    em Serra (ES).
 - jurisdiction: wac-br
   role: primate
   status: probable
@@ -67,3 +113,37 @@ events:
       da Colômbia, com imensa alegria, convidam V. Sa. e Família para a Solene Celebração Eucarística da Ordenação
       Episcopal de Dom Paulo Sérgio Ferreira Dia 15 de dezembro de 2018 Horário ás 09:00 Local: Capela São Francisco
       de Assis Rua Francisco Eugênio, 180 Sobrado São Cristóvão - Rio de Janeiro, RJ
+- type: other
+  date: '2019-03-19'
+  description: >-
+    Criação da Missão São José, em Serra (ES), primeira paróquia da Igreja Anglicana Mundial WAC no Brasil.
+  status: confirmed
+  sources:
+  - source: lwac-wacbr-sjose
+    quote: Criada em 19 de março de 2019, é a Primeira Paróquia da Igreja Anglicana Mundial WAC no Brasil.
+- type: other
+  date: '2020-11-27'
+  description: >-
+    Fundação (registro) da Igreja Anglicana Mundial WAC do Brasil como organização religiosa, em Serra (ES), com
+    Paulo Sérgio Ferreira como presidente; o cadastro da Receita Federal registra início de atividade e situação
+    cadastral ativa em 27/11/2020.
+  status: confirmed
+  sources:
+  - source: lwac-cnpj
+    quote: '"data_inicio_atividade":"2020-11-27"'
+  - source: lwac-cnpj
+    quote: '"natureza_juridica":"Organização Religiosa"'
+  - source: lwac-cnpj
+    quote: '"municipio":"SERRA"'
+- type: other
+  date: '2018-10-17'
+  description: >-
+    A Arquidiocese Santo Inácio de Antioquia (Igreja Católica Apostólica de Confissão Anglicana), ligada ao arcebispo
+    primaz Fortunato Vargas, organizou-se sob esse nome em 17/10/2018; o convite à sagração episcopal de Paulo Sérgio
+    Ferreira (15/12/2018), reproduzido em outra página do mesmo site, é emitido em nome dessa mesma igreja.
+  status: probable
+  sources:
+  - source: lwac-icc-arquidiocese
+    quote: >-
+      e novamente a  Igreja  organizou-se  como  IGREJA  CATÓLICA  APOSTÓLICA DE  CONFISSAO  ANGLICANA ,  no   dia  17  de  outubro  de  2018  a  Igreja  passa  ser    Arquidiocese  Santo  Inácio  de  Antioquia
+      .

@@ -1,9 +1,30 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: antonin-jelinek
 name: Antonin Jelinek
+full_name: Antonín Jelínek
 biography: >-
-  Bispo de tradição vétero-católica, primaz na República Checa; um dos sagrantes de Lucas Macieira (2004).
+  Clérigo da Igreja Hussita Checoslovaca, sagrado bispo em Portugal em 25/11/2001 por António José da Costa Raposo;
+  bispo da Igreja Apostólica Episcopal Católica na República Checa. Co-sagrante de Lucas Macieira em 2004.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: dom Antonin Jelinek, bispo primaz da República Checa
-  page: '101'
+- source: lielb-plwiki-jelinek
+  quote: >-
+    W listopadzie 2001 Jelínek udał się do Portugalii, gdzie przyjął sakrę biskupią z rąk Antónia José da Costy
+    Raposa
+- source: lielb-plwiki-jelinek
+  quote: Według portugalskich źródeł konsekracja odbyła się 25 listopada 2001
+ordinations:
+- order: episcopate
+  date: '2001-11-25'
+  place: Portugal
+  jurisdiction: null
+  principal_consecrator: antonio-jose-da-costa-raposo
+  status: probable
+  sources:
+  - source: lielb-plwiki-jelinek
+    quote: Według portugalskich źródeł konsekracja odbyła się 25 listopada 2001
+  - source: lielb-plwiki-raposo
+    quote: 25 listopada 2001
+  notes: >-
+    Consagrado sem conhecimento das autoridades da Igreja Hussita Checoslovaca; depois, sob Jelínek, formou-se a
+    Igreja Apostólica Episcopal Católica na República Checa (incorporada em 2006 à Igreja Vétero-Católica da Eslováquia,
+    segundo a Wikipédia polonesa).

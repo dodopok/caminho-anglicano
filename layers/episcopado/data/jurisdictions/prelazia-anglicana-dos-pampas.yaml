@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: prelazia-anglicana-dos-pampas
+name: Prelazia Anglicana dos Pampas
+type: diocese
+relations:
+- type: part_of
+  target: dac
+  status: confirmed
+  sources:
+  - source: lielb-dacb-api-clero
+    quote: '"cargo": "Bispo Prelado", "prelazia": "Prelazia Anglicana dos Pampas"'
+  - source: lielb-gaz-pampas
+    quote: presidida por Dom Daniel Araújo, bispo da Prelazia Anglicana dos Pampas

@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: cefip
+acronym: CEFIP
+name: Convenção Eclesiástica Filhos da Promessa (CEFIP)
+type: network
+country: BR
+founded:
+  date: '2011'
+  sources:
+  - source: lpq-cefip-estatuto
+    quote: Rio de Janeiro, 05 de Março de 2011. Rev. Elias Batista Nogueira Diretor Presidente
+  - source: lpq-cefip-home
+    quote: >-
+      Sua Eminência Dom Elias Batista Nogueira, Bispo Primaz da Comunhão Episcopal Protestante no Brasil e Presidente
+      da Convenção Eclesiástica Filhos da Promessa
+website: https://cefip-brasil.blogspot.com/
+description: >-
+  Convenção/comunhão fundada e presidida por Elias Batista Nogueira. O estatuto interno publicado no blog é datado
+  de Rio de Janeiro, 05/03/2011 e assinado por "Rev. Elias Batista Nogueira, Diretor Presidente". Em 2026 o blog
+  publica decretos episcopais de "Dom Elias Batista Nogueira, Bispo Primaz da Comunhão Episcopal Protestante no
+  Brasil e Presidente da Convenção Eclesiástica Filhos da Promessa" recebendo clérigos e líderes de outras igrejas,
+  entre eles José Carlos Berti Júnior ("Líder Espiritual e Fundador da Igreja Episcopal Brasileira").
+sources:
+- source: lpq-cefip-estatuto
+  quote: Rio de Janeiro, 05 de Março de 2011. Rev. Elias Batista Nogueira Diretor Presidente
+- source: lpq-cefip-home
+  quote: >-
+    Sua Eminência Dom Elias Batista Nogueira, Bispo Primaz da Comunhão Episcopal Protestante no Brasil e Presidente
+    da Convenção Eclesiástica Filhos da Promessa

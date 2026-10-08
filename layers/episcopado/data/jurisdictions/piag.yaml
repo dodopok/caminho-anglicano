@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: piag
+acronym: PIAG
+name: >-
+  Pequena Igreja Apostólica Galicana (Petite Église Apostolique Vieille Catholique), Metropolia do Brasil
+type: national_church
+country: BR
+description: >-
+  Igreja de tradição galicana/velho-católica com metropolia no Brasil, citada pelo site da Igreja Episcopal Cristã
+  Brasileira como igreja irmã, em intercomunhão.
+sources:
+- source: lie-iecbr-piag-2019
+  quote: No Brasil o MONSENHOR ROGÉRIO SIDAOUI é o Bispo Metropolita desta comunidade

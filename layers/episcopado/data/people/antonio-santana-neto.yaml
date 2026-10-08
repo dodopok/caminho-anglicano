@@ -1,27 +1,75 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: antonio-santana-neto
 name: Antônio Santana Neto
+full_name: Antonio Santana Neto
 aliases:
 - Antônio Santana
-biography: Bispo da Diocese Anglicana Católica do Brasil.
+- Dom Frei Antonio Santana
+birth:
+  date: '1973-04-18'
+  sources:
+  - source: lielb-radiopasc
+    quote: Nasceu na cidade de São Paulo, aos 18 de abril de 1973
+  - source: lielb-gaz-santana
+    quote: >-
+      A cerimônia de ordenação, realizada em 14 de janeiro de 2024, às 9h30 na histórica Sé Primacial de Esmeraldas,
+      Minas Gerais
+biography: >-
+  Nascido em São Paulo, seminarista no Ceará; co-fundador da IELB (2004) com Lucas Macieira, fundador da Missão
+  Episcopal Latina Santo Expedito e São Sebastião (Barbalha, 2005) e da Província Anglicana Sagrado Coração (2010).
+  Ordenado bispo em 14/01/2024 na Sé Primacial de Esmeraldas.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lielb-radiopasc
+  quote: Nasceu na cidade de São Paulo, aos 18 de abril de 1973
+- source: lielb-gaz-santana
   quote: >-
-    Atualmente, a DAC possui três bispos: dom Lucas Macieira (Arcebispo e Primaz), dom João de Deus da Silva, Dom
-    Antônio Santana Neto e dom Daniel Araújo.
-  page: '102'
+    A cerimônia de ordenação, realizada em 14 de janeiro de 2024, às 9h30 na histórica Sé Primacial de Esmeraldas,
+    Minas Gerais
+ordinations:
+- order: episcopate
+  date: '2024-01-14'
+  place: Sé Primacial, Esmeraldas (MG)
+  jurisdiction: dac
+  office: suffragan
+  principal_consecrator: iranildo-macieira-da-silva
+  status: probable
+  sources:
+  - source: lielb-gaz-santana
+    quote: >-
+      A cerimônia de ordenação, realizada em 14 de janeiro de 2024, às 9h30 na histórica Sé Primacial de Esmeraldas,
+      Minas Gerais
+  - source: lielb-gaz-santana
+    quote: >-
+      A cerimônia foi presidida pelo arcebispo Primaz da The Anglicana Free Communion Internacional e da Diocese
+      Anglicana Católica do Brasil, o Dom Frei Lucas Macieira e concentrada por outro bispos pertencentes a mesma
+      diocese
+  notes: >-
+    Matéria enviada pela assessora de comunicação da Prelazia Anglicana Sagrado Coração (Barbalha, CE). Em 2015
+    o site da DAE o listava como "Bispo Eleito do Ceará"; outros bispos co-sagrantes não são nomeados.
 affiliations:
 - jurisdiction: ielb
   role: founder
   start: 2004-12
-  status: probable
+  status: confirmed
   sources:
+  - source: lielb-radiopasc
+    quote: >-
+      No  ano de 2004 junatamente com Dom Lucas Macieira da Silva da inicio aos trabalhos eclesiasticos  de implantação
+      e fundação da Igreja Episcopal Latina do Brasil.
+  - source: lielb-blog-missao
+    quote: A Missão Episcopal Latina Santo Expedito & São Sebastião foi fundada no dia 20 de Fevereiro de 2005
+  - source: lielb-radiopasc
+    quote: Em 2010 uni tudo criando a Província Anglicana Sagrado Coração
   - source: cant-novas-igrejas-2024
     quote: >-
       Fundada em dezembro de 2004 a Igreja Episcopal Latina do Brasil (de sigla IELB, a qual não deve ser confundida
       com a Igreja Luterana) teve origem na liderança de dom Lucas Macieira da Silva e o frei Antonio Santana Neto,
       ambos advindos da Igreja Católica Romana e Igreja Católica Brasileira no Ceará.
     page: '166'
+  notes: >-
+    Local: Missão Episcopal Latina Santo Expedito e São Sebastião, Barbalha, CE. Fundou também a Pia Sociedade Missionária
+    da Ordem de Santo Estêvão (2007) e a Comunidade Eclesiástica Sagrado Coração (2009); em 2008 era "Rev. Frei",
+    sem ordem episcopal.
 - jurisdiction: ielb
   role: clergy
   start: '2005-02-20'
@@ -38,6 +86,17 @@ affiliations:
     Ordem clerical não especificada ('frei').
 - jurisdiction: dac
   role: bishop
+  diocese: prelazia-anglicana-sagrado-coracao-regiao-nordeste
+  start: '2024-01-14'
+  status: probable
+  sources:
+  - source: lielb-gaz-santana
+    quote: >-
+      Na Proxima terça-feira, 14 de janeiro de 2025, a Diocese Anglicana Católica do Brasil celebra com alegria
+      o primeiro aniversário de ordenação episcopal de Dom Frei Antonio Santana.
+  notes: 'Local: Barbalha, CE.'
+- jurisdiction: dac
+  role: bishop
   status: probable
   sources:
   - source: cant-novas-igrejas-2024
@@ -47,6 +106,18 @@ affiliations:
     page: '102'
   notes: O livro diz 'três bispos' mas lista quatro nomes (incluindo Lucas Macieira).
 events:
+- type: other
+  date: '2010'
+  description: >-
+    Província Anglicana Sagrado Coração (PASC, Barbalha-CE) criada por Antonio Santana Neto, reunindo a Missão Episcopal
+    Latina Santo Expedito e São Sebastião (2005), a Ordem de Santo Estêvão (2007) e a Comunidade Eclesiástica Sagrado
+    Coração (2009); descrita como "primeira e única província anglicana da IELB".
+  status: probable
+  sources:
+  - source: lielb-radiopasc
+    quote: >-
+      Em 2010 uni tudo criando a Província Anglicana Sagrado Coração, a primeira e unica província anglicana da
+      Igreja Episcopal Latina do Brasil de rito anglicano.
 - type: other
   date: '2005-02-20'
   description: >-

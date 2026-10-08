@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: alexander-danilo-felix-sani
+name: Alexander Danilo Félix Sani
+ordinations:
+- order: episcopate
+  date: '2026-05-16'
+  place: Paróquia Bom Jesus, Jardim São Salvador, Taboão da Serra (SP)
+  jurisdiction: dac
+  office: suffragan
+  principal_consecrator: iranildo-macieira-da-silva
+  status: confirmed
+  sources:
+  - source: lielb-dacb-api-clero
+    quote: >-
+      "sagracao_episcopal": "16/05/2026", "local_sagracao": "Paróquia Bom Jesus – IEDP – Jardim São Salvador – Taboão
+      da Serra/SP", "bispos_consagrantes": "Dom Frei Lucas Macieira da Silva"
+  notes: >-
+    Bispo Prelado da Prelazia Anglicana Jesus Salvador (São Paulo). Diácono em 02/10/2010 e presbítero em 23/06/2011
+    (São Gonçalo, RJ), segundo o mesmo cadastro.

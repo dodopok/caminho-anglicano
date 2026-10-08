@@ -1,40 +1,90 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: ica-brasil
 acronym: ICA-Brasil
-name: Igreja Católica Anglicana do Brasil
+name: Igreja Católica Anglicana do Brasil (também "Província Católica Anglicana do Brasil")
+aliases:
+- Igreja Católica Anglicana do Brasil
 type: national_church
 country: BR
 founded:
-  date: '2023'
+  date: '2018'
   sources:
-  - source: cant-novas-igrejas-2024
+  - source: lica-iaces-historia
     quote: >-
-      A Igreja Católica Anglicana do Brasil (ICA-Brasil) tem origem em um grupo de clérigos que saiu da Igreja Católica
-      Anglicana (ICA) em 2023.
-    page: '139'
-  - source: cant-novas-igrejas-2024
-    quote: Igreja Católica Anglicana do Brasil (ICA-Brasil) [2023]
-    page: '172'
+      com a proposta da Criação da Província Católica Anglicana do Brasil , Igreja Católica Anglicana do Brasil,
+      ou ICA BRASIL, com nosso Primeiro Sínodo em São Paulo Brasil, em Julho de 2018
+  - source: lica-icabr-home
+    quote: Provincia Católica Anglicana do Brasil Banco Cora SCD S.A 0403
+  - source: lica-marcos-quemsou
+    quote: >-
+      SOU BISPO com legítima Sucessão Apostólica vinda de Dom Carlos Duarte Costa que foi bispo católico apostólico
+      Romano e que ordenou Dom Antídio José Vargas que ordenou Dom Luigi Máscolo
+  discrepancies:
+  - field: date
+    value: '2023'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        A Igreja Católica Anglicana do Brasil (ICA-Brasil) tem origem em um grupo de clérigos que saiu da Igreja
+        Católica Anglicana (ICA) em 2023.
+      page: '139'
+    - source: cant-novas-igrejas-2024
+      quote: Igreja Católica Anglicana do Brasil (ICA-Brasil) [2023]
+      page: '172'
 website: https://www.icabrasil.net/
 description: >-
-  Igreja formada em 2023 por clérigos saídos da Igreja Católica Anglicana; arcebispo primaz Ricardo Vicente dos
-  Anjos; bispos em MG, SP e RS.
+  Igreja constituída por Ricardo Vicente dos Anjos, Jorge dos Santos Costa, Altamiro Pereira do Amaral e Marcos
+  Vinícius de Souza, que propõem a "Província Católica Anglicana do Brasil" no 1º Sínodo (São Paulo, julho de 2018),
+  depois de se afastarem da ICA (a ICA os declarou fora da Mitra Primacial em 24/05/2018). Sede primacial em Ananindeua
+  (PA); arcebispo primaz Ricardo Vicente dos Anjos. O site (2024-2025) lista bispos em Minas Gerais, São Paulo (diocese
+  e Prelazia Anglicana de São Paulo) e Rio Grande do Sul. Os sagrantes alegam linhagem de Carlos Duarte Costa via
+  Antídio José Vargas, Luigi Máscolo, Dylmar Corrêa Baldoíno da Costa e José Elias Jácomo dos Santos.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lica-iaces-historia
   quote: >-
-    A Igreja Católica Anglicana do Brasil (ICA-Brasil) tem origem em um grupo de clérigos que saiu da Igreja Católica
-    Anglicana (ICA) em 2023.
-  page: '139'
+    com a proposta da Criação da Província Católica Anglicana do Brasil , Igreja Católica Anglicana do Brasil, ou
+    ICA BRASIL, com nosso Primeiro Sínodo em São Paulo Brasil, em Julho de 2018
+- source: lica-icabr-home
+  quote: Provincia Católica Anglicana do Brasil Banco Cora SCD S.A 0403
+- source: lica-marcos-quemsou
+  quote: >-
+    SOU BISPO com legítima Sucessão Apostólica vinda de Dom Carlos Duarte Costa que foi bispo católico apostólico
+    Romano e que ordenou Dom Antídio José Vargas que ordenou Dom Luigi Máscolo
 relations:
 - type: schism_from
   target: ica
-  date: '2023'
+  date: '2018'
   led_by:
+  - altamiro-pereira-do-amaral
+  - jorge-costa
+  - marcos-vinicius-de-souza
   - ricardo-vicente-dos-anjos
-  status: probable
+  status: confirmed
   sources:
+  - source: lica-ica-notificacao
+    quote: não mais integram esta Mitra Primacial
+  - source: lica-iaces-historia
+    quote: >-
+      depois de um Cisma, novos ideais ressurgem da Cinzas com a proposta da Criação da Província Católica Anglicana
+      do Brasil
+  - source: lica-ica-nota-esclarecimento
+    quote: Nossa igreja não sagrou nenhum bispo após seu registro em cartório e na receita federal
   - source: cant-novas-igrejas-2024
     quote: >-
       A Igreja Católica Anglicana do Brasil (ICA-Brasil) tem origem em um grupo de clérigos que saiu da Igreja Católica
       Anglicana (ICA) em 2023.
     page: '139'
+  notes: >-
+    Versão da ICA: os três bispos foram "excardinados" em 24/05/2018 e a ICA nega ter sagrado bispos em São Paulo
+    em 29/07/2018. Versão da ICA-Brasil (via texto da IACES): após um cisma, propuseram a Província Católica Anglicana
+    do Brasil no 1º Sínodo, em São Paulo, em julho de 2018. Uma fonte já conhecida data a origem da ICA-Brasil em
+    2023 (ver dúvidas).
+  discrepancies:
+  - field: date
+    value: '2023'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        A Igreja Católica Anglicana do Brasil (ICA-Brasil) tem origem em um grupo de clérigos que saiu da Igreja
+        Católica Anglicana (ICA) em 2023.
+      page: '139'

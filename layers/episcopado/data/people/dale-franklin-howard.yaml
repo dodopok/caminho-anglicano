@@ -1,3 +1,16 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: dale-franklin-howard
 name: Dale Franklin Howard
+events:
+- type: other
+  date: '2004'
+  description: >-
+    Getúlio Gutemberg foi, segundo carta de Spinelli (2004), 'expulso da sua Igreja sem acusação e sem direito de
+    defesa' após o encontro com bispos americanos (Dale Howard) em torno da Igreja Episcopal Carismática; em 2006
+    'Rev. Getúlio Gutemberg Souza Azevedo' assina pela Igreja Anglicana do Brasil (Lorite) a Declaração da Boa Viagem.
+  status: probable
+  sources:
+  - source: drv-spinelli-carta-2004
+    quote: >-
+      o Reverendo Getúlio Gutemberg apesar de ter participado do encontro religioso, foi expulso da sua Igreja sem
+      acusação e sem direito de defesa

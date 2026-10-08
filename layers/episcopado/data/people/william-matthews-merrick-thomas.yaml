@@ -4,6 +4,7 @@ name: William Matthews Merrick Thomas
 full_name: William Matthew(s) Merrick Thomas
 aliases:
 - Bishop Thomas of Southern Brazil
+- Rev. W. M. M. Thomas
 - W. M. M. Thomas
 - William M. M. Thomas
 - William Mathew Merrick Thomas
@@ -86,7 +87,7 @@ ordinations:
 - order: episcopate
   date: '1925-12-28'
   place: Igreja de São Paulo, Baltimore (EUA)
-  jurisdiction: dmsb
+  jurisdiction: tec
   office: suffragan
   principal_consecrator: ethelbert-talbot
   co_consecrators:
@@ -112,6 +113,10 @@ ordinations:
     quote: >-
       Em 1925, a Igreja teve o seu segundo bispo: o revmo. William Matthew Merrick Thomas, um missionário que havia
       chegado ao Brasil em 1904. Primeiro como bispo sufragâneo e depois como bispo diocesano
+  - source: drv-kinsolving-ivo
+    quote: >-
+      A sua sagração verificou-se a 28 de Dezembro de 1925, na Igreja de São Paulo, em Baltimore, cujo reitor era
+      o Rev. Dr. Arthur B. Kinsolving. Sagrou-o o Revmo. Bispo Talbot, acolitado por mais sete antistes
   - source: kickhofel-1995
     quote: >-
       Thomas foi sagrado bispo no dia 28 de dezembro de 1925, na Igreja de São Paulo, em Baltimore, Estados Unidos,
@@ -142,13 +147,13 @@ ordinations:
   notes: >-
     Holy Innocents Day = 28 de dezembro. Apresentantes: John Gardner Murray (Maryland) e Philip Cook (Delaware);
     pregador: William Cabell Brown (bispo da Virgínia); litania: Henry St. George Tucker (Living Church 09/01/1926).
-    Spirit of Missions e Living Church o chamam 'Suffragan'; Wikipédia (artigo Thomas) diz 'coadjutor'. Pregador:
-    William Cabell Brown, bispo da Virgínia e presidente da Câmara dos Bispos (Kickhöfel, 1995, p. 152). O próprio
-    livro diverge: no capítulo "14. O Segundo Bispo" diz São Bartolomeu, em Nova York; na p. 152 (e nas demais fontes),
-    Igreja de São Paulo, em Baltimore. São Bartolomeu, em Nova York, foi onde Kinsolving foi sagrado em 1899, o
-    que sugere confusão no capítulo. Trecho citado pela tese de KICKHÖFEL, Notas para uma História da IEAB (1995),
-    p. 152. 'Todos os oito bispos presentes participaram da tradicional imposição das mãos'; pregador William Cabell
-    Brown.
+    Spirit of Missions e Living Church o chamam 'Suffragan'; Wikipédia (artigo Thomas) diz 'coadjutor'. Talbot teve
+    sete bispos assistentes, entre eles Kinsolving e Brown (pregador). Pregador: William Cabell Brown, bispo da
+    Virgínia e presidente da Câmara dos Bispos (Kickhöfel, 1995, p. 152). O próprio livro diverge: no capítulo "14.
+    O Segundo Bispo" diz São Bartolomeu, em Nova York; na p. 152 (e nas demais fontes), Igreja de São Paulo, em
+    Baltimore. São Bartolomeu, em Nova York, foi onde Kinsolving foi sagrado em 1899, o que sugere confusão no capítulo.
+    Trecho citado pela tese de KICKHÖFEL, Notas para uma História da IEAB (1995), p. 152. 'Todos os oito bispos
+    presentes participaram da tradicional imposição das mãos'; pregador William Cabell Brown.
 affiliations:
 - jurisdiction: dmsb
   role: clergy
@@ -162,7 +167,12 @@ affiliations:
       For six years he was a professor in the theological school at Rio Grande do Sul, and from 1907 to 1911 was
       also rector of the Church of the Saviour there. In 1912 he founded the Southern Cross School at Porte Alegre,
       of which he was headmaster until his election and consecration as suffragan bishop in 1925.
-  notes: 'Local: Rio Grande / Porto Alegre. Wikipédia EN dá reitorado 1907-1910; Witness 1907-1911.'
+  - source: liv-stokes-kinsolving
+    quote: who had come to the Mission in 1904 upon graduation from the Virginia Theologi- cal Seminary
+    page: '18'
+  notes: >-
+    Local: Rio Grande / Porto Alegre. Wikipédia EN dá reitorado 1907-1910; Witness 1907-1911. Fundou a Southern
+    Cross School (Porto Alegre) em 1912.
 - jurisdiction: dmsb
   role: bishop
   diocese: southern-brazil
@@ -266,6 +276,16 @@ events:
   sources:
   - source: wit-1949-09-01
     quote: BISHOP THOMAS BIDS FAREWELL
+- type: other
+  date: '1912'
+  description: Fundação da Southern Cross School em Porto Alegre, em 1912, pelo Rev. William M. M. Thomas.
+  status: probable
+  sources:
+  - source: liv-stokes-kinsolving
+    quote: >-
+      The first major school was the Southern Cross School, founded in 1912 in Porto Alegre by the Rev. William
+      M. M. Thomas
+    page: '18'
 - type: other
   date: '1925-10-17'
   description: >-

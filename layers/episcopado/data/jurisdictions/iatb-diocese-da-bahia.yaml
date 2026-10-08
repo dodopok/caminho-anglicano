@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iatb-diocese-da-bahia
+name: Diocese da Bahia (IATB; depois Diocese do Nordeste)
+aliases:
+- Diocese da Bahia (Salvador)
+- Diocese da Bahia / Santa Cruz de Salvador (depois Diocese do Nordeste)
+- Diocese do Nordeste (Bahia)
+type: diocese
+country: BR
+relations:
+- type: part_of
+  target: iatb
+  status: confirmed
+  sources:
+  - source: lia-iatb-clero-2017
+    quote: Revmº Dom Alfredo Souza Dorea Diocese da Bahia
+  - source: lia-iatb-home-2016-11
+    quote: >-
+      Dom Rui Costa Barbosa, Dom Orvandil Moreira Barbosa, Dom Washington Luis Nascimento Santos, Dom Alfredo Souza
+      Dorea, Dom Altamiro Pereira do Amaral, Dom Ricardo Vicente dos Anjos, Dom Franciney Pantoja, Dom Jefferson
+      Nilson Santos
+  - source: lia-iatb-noticias-2014
+    quote: >-
+      Informa-nos o Revmo. Bispo Diocesano do Nordeste, Dom +Jorge dos Santos da incardinação do Padre Alfredo Dorea
+      no domingo dia 15 de junho, Festa de Santo Antonio.
+  - source: lia-iatb-noticias-2012
+    quote: >-
+      Com grande alegria a Igreja comunica da recepção do Bispo Revmo. Dom Jorge dos Santos Costa, da Cidade de
+      Salvador na Bahia.
+  - source: lia-iatb-noticias-2014
+    quote: >-
+      O titular da Diocese da Bahia, Revmo. Dom +Jorge dos Santos Costa assume a titularidade de toda a Diocese
+      do Nordeste ora reconstituída.

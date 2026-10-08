@@ -2,11 +2,19 @@
 id: wac-br
 acronym: WAC-BR
 name: Igreja Anglicana Mundial no Brasil (Província da WAC)
+aliases:
+- Província do Brasil
 type: province
 country: BR
 founded:
   date: '2020-11-27'
   sources:
+  - source: lwac-cnpj
+    quote: '"razao_social":"IGREJA ANGLICANA MUNDIAL WAC DO BRASIL"'
+  - source: lwac-cnpj
+    quote: '"data_inicio_atividade":"2020-11-27"'
+  - source: lwac-wacbr-sjose
+    quote: Criada em 19 de março de 2019, é a Primeira Paróquia da Igreja Anglicana Mundial WAC no Brasil.
   - source: cant-novas-igrejas-2024
     quote: >-
       A Igreja Anglicana Mundial chegou ao Brasil através do reverendo Paulo Sérgio Ferreira, sendo estabelecida
@@ -14,20 +22,38 @@ founded:
     page: '128'
 website: https://www.wacbrasil.org/
 description: >-
-  Província brasileira da Igreja Anglicana Mundial, estabelecida em 27/11/2020 pelo reverendo (depois arcebispo
-  primaz) Paulo Sérgio Ferreira; seis regiões missionárias e uma diocese (Pará).
+  Província brasileira da WAC, com sede (cúria provincial) em Serra (ES). Registrada na Receita Federal como "Igreja
+  Anglicana Mundial WAC do Brasil" (organização religiosa), com início de atividade em 27/11/2020 e Paulo Sérgio
+  Ferreira como presidente. O site lista missões em ES, MG, SP, CE, SC, PR e as dioceses de São Paulo (duas), Pará
+  e Pernambuco; a primeira paróquia (Missão São José, Serra) foi criada em 19/03/2019.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: >-
-    A Igreja Anglicana Mundial chegou ao Brasil através do reverendo Paulo Sérgio Ferreira, sendo estabelecida em
-    27 de novembro de 2020.
-  page: '128'
+- source: lwac-cnpj
+  quote: '"razao_social":"IGREJA ANGLICANA MUNDIAL WAC DO BRASIL"'
+- source: lwac-cnpj
+  quote: '"data_inicio_atividade":"2020-11-27"'
+- source: lwac-wacbr-sjose
+  quote: Criada em 19 de março de 2019, é a Primeira Paróquia da Igreja Anglicana Mundial WAC no Brasil.
 relations:
 - type: part_of
   target: wac
-  date: '2020-11-27'
-  status: probable
+  status: confirmed
   sources:
+  - source: lwac-wac-hob
+    quote: The Most Rev. Don Paul Sergio Ferreir Archbishop Primate Ecclesiastical Province of Brazil
+  - source: lwac-wacbr-clerigos
+    quote: >-
+      Dom Paulo Sérgio Ferreira Arcebispo Primaz da Igreja Anglicana Mundial WAC. Província Eclesiástica do Brasil.
+  - source: lwac-wac-hob
+    quote: Bishop Raimundo Cesar Bishop Ecclesiastical Province of Brazil
+  - source: lwac-wac-hob
+    quote: Bishop Antonio Jesualdo Bezerra Bishop Ecclesiastical Province of Brazil
+  - source: lwac-wac-other
+    quote: www.wacbrasil.org (Brazil)
   - source: cant-novas-igrejas-2024
     quote: No Brasil, a Província da WAC é organizada em seis regiões missionárias e uma Diocese.
     page: '129'
+  date: '2020-11-27'
+  led_by:
+  - paulo-sergio-ferreira
+  notes: >-
+    A WAC internacional lista a "Ecclesiastical Province of Brazil" e o site wacbrasil.org entre seus sites.

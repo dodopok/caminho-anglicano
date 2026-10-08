@@ -3,6 +3,7 @@ id: boaventura-de-souza-oliveira
 name: Boaventura de Souza Oliveira
 aliases:
 - Boaventura
+- Boaventura de Oliveira
 - Bonaventura de Souza Oliveira
 - reverendo Boaventura
 biography: >-
@@ -20,7 +21,7 @@ sources:
 ordinations:
 - order: diaconate
   date: '1893-09-08'
-  place: Porto Alegre
+  place: Fazenda do Contrato, Santa Rita do Rio dos Sinos (RS)
   jurisdiction: dmsb
   ordained_by: george-william-peterkin
   status: probable
@@ -37,6 +38,14 @@ ordinations:
     quote: >-
       West Virginia's bishop George Peterkin made an episcopal visit in 1893, during which he ordained four Brazilians
       as deacons
+  - source: drv-kinsolving-ivo
+    quote: Nesse ensejo, foi ordenado em diácono o catequista Boaventura Oliveira
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Nessa Missão, que posteriormente se converteu na Igreja do Calvário, o Revmo. Peterkin confirmou 44 candidatos
+  - source: liv-implantacao-ieab
+    quote: Esse Boaventura de Oliveira foi ordenado Diácono no ano de 1893
+    page: '15'
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1893 - … Boaventura de Souza Oliveira
     page: '369'
@@ -45,9 +54,37 @@ ordinations:
       Já Américo Vespúcio Cabral e Boaventura de Souza Oliveira foram ordenados no dia 08 de setembro de 1893, em
       Porto Alegre.
     page: '53'
+  discrepancies:
+  - field: place
+    value: Porto Alegre
+    sources:
+    - source: costa2021
+      quote: >-
+        Já Américo Vespúcio Cabral e Boaventura de Souza Oliveira foram ordenados no dia 08 de setembro de 1893,
+        em Porto Alegre.
+      page: '53'
   notes: >-
     Fato (4 diáconos por Peterkin em 1893) confirmado por várias fontes; o nome deste ordenando consta só em Kickhofel.
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    A biografia o ordena em Santa Rita do Rio dos Sinos, depois de 12/09/1893, sem dar a data; outras fontes dão
+    08/09/1893 em Porto Alegre. Fonte não informa dia, local nem ordenante. Ano tirado da lista do clero nacional
+    por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: dmsb
+  role: other
+  role_description: diácono
+  start: '1893'
+  end: 1895-01
+  end_reason: deposition
+  status: probable
+  sources:
+  - source: drv-apontamentos-kickhofel
+    quote: >-
+      a destituição do diácono Boaventura de Souza Oliveira, em janeiro de 1895, a menos de dois anos de sua ordenação
+  - source: drv-apontamentos-kickhofel
+    quote: Ele mesmo havia confessado pessoalmente que não era mais digno de ser ministro da Igreja
+  notes: >-
+    Local: Santa Rita do Rio dos Sinos, RS. Destituído em janeiro de 1895; segundo Kickhöfel os verdadeiros motivos
+    nunca foram totalmente esclarecidos.
 events:
 - type: other
   date: '1893'
@@ -80,3 +117,33 @@ events:
     quote: >-
       Presentes: reverendos Morris, Brown, Meem e Kinsolving, e catequistas Boaventura, Brande e Cabral. Presidida
       por Kinsolving e secretariada por Cabral.
+- type: other
+  date: null
+  description: >-
+    Quatro brasileiros foram ordenados diáconos em 1893 pelo bispo Peterkin: Vicente Brande (28/08, Rio Grande),
+    Antônio Machado Fraga (01/09, Pelotas), Américo Vespúcio Cabral (12/09, Porto Alegre) e Boaventura de Souza
+    Oliveira (Santa Rita do Rio dos Sinos, após 12/09). A biografia dá datas diferentes da outra versão (08/09 para
+    Cabral e Boaventura, em Porto Alegre).
+  status: contested
+  sources:
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Durante a sua permanência no Rio Grande do Sul, confirmara 142 pessoas e ordenara 4 mo- ços no diaconato.
+- type: other
+  date: '1890-04-21'
+  description: >-
+    Chegada de Morris, Kinsolving e do casal Boaventura de Oliveira a Porto Alegre em 21/04/1890, com carta de apresentação
+    do professor Eduardo Carlos Pereira; foram recebidos pelo presbiteriano Vicente Brande, que localizou a casa
+    da missão (rua Voluntários da Pátria, 387, bairro Caminho do Meio).
+  status: probable
+  sources:
+  - source: liv-implantacao-ieab
+    quote: >-
+      Chegaram os missionários Morris e Kinsolving, juntamente com o casal Oliveira, no dia 21 de Abril de 1890
+      na cidade de Porto Alegre.
+    page: '15'
+  - source: liv-implantacao-ieab
+    quote: >-
+      Ficava essa casa na rua Voluntários da Pátria, 387, num bairro chamado na época Caminho do Meio, em Porto
+      Alegre.
+    page: '15'

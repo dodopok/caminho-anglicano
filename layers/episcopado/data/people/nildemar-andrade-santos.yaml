@@ -1,23 +1,139 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: nildemar-andrade-santos
 name: Nildemar Andrade Santos
+full_name: Nildemar Andrade Santos
+aliases:
+- Dom Nildemar Andrade
+- Nildemar Andrade dos Santos
+- Padre Nildemar
+- Rev. Nildemar Santos
 biography: >-
-  Arcebispo primaz da Igreja Vétero-Católica Independente do Brasil, ex-membro da IEAB; ordenou Luciano Alves Campelo
-  presbítero (23/04/2025).
+  Ex-padre da Diocese católica de Ilhéus (BA), onde serviu 28 anos (ordenado presbítero em 16/12/1989, por Bernardo
+  Valfredo Tepe, segundo o site da IACES); renunciou ao estado clerical em 2011 e foi excomungado em fevereiro de
+  2012. Em 2012 integrou, com o padre Adauto, o Ponto Missionário anglicano da Santíssima Trindade (Paróquia do
+  Bom Pastor, Diocese do Recife, IEAB). Em 2020 consta como presbítero da Igreja Anglo-Católica do Espírito Santo
+  (IACES), de José Fernando de Faria. Segundo o site da IVCM, foi consagrado bispo diocesano de Ilhéus em 06/03/2022
+  por Faria. Em 2025 aparece como primaz da Igreja Vetero Católica Independente do Brasil, da qual é presidente
+  no CNPJ (2024).
 sources:
-- source: cant-novas-igrejas-2024
+- source: lvc-nildemar-renuncia
   quote: >-
-    Arcebispo Primaz da Igreja Vétero-Católica Independente do Brasil, dom Nildemar Andrade Santos, ambos ex-membros
-    da IEAB
-  page: '140'
+    venho em público da uma satisfação as diversas comunidades por onde passei e convivir ao longo desses vinte
+    e oito anos a serviço desta Igreja Particular de Ilhéus
+- source: lvc-nildemar-excomunhao
+  quote: Nildemar foi excomungado por se filiou a uma corrente da Igreja Anglicana.
+- source: lvc-ivcm-site
+  quote: Nildemar Andrade dos Santos, consagrado bispo diocesano para a Cidade de Ilhéus, Estado da Bahia
+- source: lvc-ivcib-jethro
+  quote: Dom Nildemar Andrade, Primaz da Igreja Vetero Católica Independente
+- source: lvc-iaces-clero
+  quote: >-
+    Nildemar Andrade Santos Reverendo Presbítero Ordenado em 16/12/1989 em Ilhéus - BA Natural: Dario Meira - BA
+    Bispo Ordenante: + Dom Bernardo Valfredo Tepe, OFM
+ordinations:
+- order: presbyterate
+  date: '1989-12-16'
+  place: Ilhéus (BA)
+  jurisdiction: icr
+  ordained_by: bernardo-valfredo-tepe
+  status: probable
+  sources:
+  - source: lvc-iaces-clero
+    quote: >-
+      Nildemar Andrade Santos Reverendo Presbítero Ordenado em 16/12/1989 em Ilhéus - BA Natural: Dario Meira -
+      BA Bispo Ordenante: + Dom Bernardo Valfredo Tepe, OFM
+  notes: >-
+    Ordenação como padre da Diocese de Ilhéus (Igreja Católica Romana), segundo a lista de clero da IACES; Tepe
+    era o bispo diocesano de Ilhéus em 1989 (identificação não confirmada em fonte aberta). O site informa que Nildemar
+    é natural de Dario Meira (BA). Fonte única; a carta de renúncia de 2011 fala em 28 anos a serviço da diocese,
+    compatível.
+- order: episcopate
+  date: '2022-03-06'
+  jurisdiction: ivcmb
+  office: diocesan
+  principal_consecrator: jose-fernando-de-faria
+  status: probable
+  sources:
+  - source: lvc-ivcm-site
+    quote: >-
+      foi consagrado bispo na Capela da Guarda Civil Metropolitana na Cidade de São Paulo – Brasil, posteriormente
+      organizou e registrou perante as leis brasileiras, a Igreja Veterocatólica Missionária – IVCM, na Cidade de
+      Vila Velha, Estado do Espírito Santo sendo elevado a arcebispo “ad aeternum”. Em 06/03/2022 consagrou;
+  - source: lvc-ivcm-site
+    quote: Nildemar Andrade dos Santos, consagrado bispo diocesano para a Cidade de Ilhéus, Estado da Bahia
+  notes: >-
+    Fonte única (site da IVCM); o local da cerimônia não é informado. A data 06/03/2022 é a da frase que introduz
+    a lista dos três consagrados. Em 2025 Nildemar é descrito como primaz da IVCIB (Igreja Vetero Católica Independente
+    do Brasil).
 affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  start: '2012'
+  status: probable
+  sources:
+  - source: lvc-nildemar-ieab-2012
+    quote: Essa comunidade vem sendo liderada pelos padres Nildemar Andrade e Adauto Emídio
+  - source: lvc-ilheus-anglicana-2016
+    quote: Ministro Encarregado da comunidade, Reverendo Padre Nildemar Andrade dos Santos
+  notes: >-
+    Local: Paróquia do Bom Pastor, Salvador; comunidades anglicanas em Ilhéus. Em 2012 o Ponto Missionário da Santíssima
+    Trindade, em Ilhéus, uniu-se à IEAB (Paróquia do Bom Pastor, Diocese do Recife); em maio de 2016 Nildemar é
+    ministro encarregado da comunidade anglicana Sagrada Família. Data e motivo da saída da IEAB não localizados.
+- jurisdiction: ivcmb
+  role: bishop
+  start: '2022-03-06'
+  status: probable
+  sources:
+  - source: lvc-ivcm-site
+    quote: Nildemar Andrade dos Santos, consagrado bispo diocesano para a Cidade de Ilhéus, Estado da Bahia
+  notes: >-
+    Local: Ilhéus, BA. Pelo site da IVCM, é bispo diocesano de Ilhéus; Nildemar não consta na lista de clérigos
+    da IVCM consultada. Não se sabe se há vínculo continuado com a IVCM após a criação da IVCIB.
+- jurisdiction: ivcib
+  role: other
+  role_description: presidente
+  start: '2024-08-19'
+  status: confirmed
+  sources:
+  - source: lvc-ivcib-cnpj
+    quote: '"nome_socio":"NILDEMAR ANDRADE SANTOS"'
+  - source: lvc-ivcib-cnpj
+    quote: '"qualificacao_socio":"Presidente"'
 - jurisdiction: ivcib
   role: primate
   status: probable
   sources:
+  - source: lvc-ivcib-jethro
+    quote: A consagração foi presidida por Dom Nildemar Andrade, Primaz da Igreja Vetero Católica Independente
   - source: cant-novas-igrejas-2024
     quote: Arcebispo Primaz da Igreja Vétero-Católica Independente do Brasil, dom Nildemar Andrade Santos
     page: '140'
+  notes: Notícia de 25/06/2025. Em 2024 ele aparece como presidente da entidade no CNPJ.
+- jurisdiction: icr
+  role: clergy
+  diocese: diocese-de-ilheus
+  end: 2011-04
+  end_reason: resignation
+  status: confirmed
+  sources:
+  - source: lvc-nildemar-renuncia
+    quote: RENUNCIAR OFICIALMENTE O MINISTÉRIO SACERDOTAL
+  - source: lvc-nildemar-renuncia
+    quote: >-
+      venho em público da uma satisfação as diversas comunidades por onde passei e convivir ao longo desses vinte
+      e oito anos a serviço desta Igreja Particular de Ilhéus
+  notes: >-
+    Local: BA. Carta de 26/04/2011, em que diz já ter sido suspenso e pede a renúncia ao estado clerical. Segundo
+    o blog Noticias da Cidade (07/02/2012), a suspensão das funções clericais ocorreu em abril de 2011.
+- jurisdiction: paces
+  role: clergy
+  status: probable
+  sources:
+  - source: lvc-iaces-clero
+    quote: Nildemar Andrade Santos Reverendo Presbítero
+  notes: >-
+    Constava como presbítero na lista de clero da IACES em 22/10/2020; data de entrada e saída não informadas.
 - jurisdiction: ieab
   role: member
   end_reason: left
@@ -26,3 +142,69 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: dom Nildemar Andrade Santos, ambos ex-membros da IEAB
     page: '140'
+events:
+- type: other
+  date: 2012-02
+  description: >-
+    O bispo de Ilhéus, Mauro Montagnoli, comunicou a excomunhão do ex-padre Nildemar Andrade por ter se filiado
+    a uma corrente anglicana; segundo a carta, quem participasse das celebrações dele ficaria impedido de receber
+    os sacramentos católicos.
+  status: probable
+  sources:
+  - source: lvc-nildemar-excomunhao
+    quote: Nildemar foi excomungado por se filiou a uma corrente da Igreja Anglicana.
+  - source: lvc-nildemar-excomunhao
+    quote: Em abril de 2011, o agora ex-padre já havia sido punido, com a suspensão das funções clericais.
+- type: other
+  date: '2012'
+  description: >-
+    Padres Nildemar Andrade e Adauto Emídio e outros quatro fiéis ex-católicos foram recebidos na IEAB (Paróquia
+    do Bom Pastor, Salvador; Diocese Anglicana do Recife) e formaram o Ponto Missionário da Santíssima Trindade,
+    em Ilhéus.
+  status: probable
+  sources:
+  - source: lvc-nildemar-ieab-2012
+    quote: >-
+      O Ponto Missionário da Santíssima Trindade em Ilhéus - Bahia recebeu a visita(06/02) de nosso Rev. Josafá
+      Batista para a primeira Eucaristia daquela comunidade em união com a Igreja Episcopal Anglicana do Brasil.
+  - source: lvc-nildemar-r2c-2012
+    quote: >-
+      Dom Sebastião recebeu as seis pessoas na comunhão da Igreja, duas mulheres e dois homens: Joilda, Nélia, Adauto,
+      Nildemar, Sandro e Luciano.
+- type: other
+  date: '2024-08-19'
+  description: >-
+    Registro da IVCIB no CNPJ em Ilhéus (BA), em 19/08/2024, tendo Nildemar Andrade Santos como presidente.
+  status: confirmed
+  sources:
+  - source: lvc-ivcib-cnpj
+    quote: '"data_inicio_atividade":"2024-08-19"'
+  - source: lvc-ivcib-cnpj
+    quote: '"municipio":"ILHEUS"'
+- type: other
+  date: '2025'
+  description: >-
+    Criação da Diocese Anglicana Católica Abu Ghosh da Paraíba e da Região Eclesiástica do Bom Samaritano (AL, PE,
+    RN, CE e PR), ligadas à IVCIB, durante a sagração de Eddie Ferreira em João Pessoa. É o único ponto de contato
+    localizado entre a IVCIB e a rede anglicana (uso do termo 'anglicano católico').
+  status: probable
+  sources:
+  - source: lvc-ivcib-jethro
+    quote: >-
+      Durante a cerimônia, foi emitido o Decreto de Criação da Diocese Anglicana Católica Abu Ghosh e da Região
+      Eclesiástica do Bom Samaritano
+- type: other
+  date: '2021-04-13'
+  description: >-
+    Dois clérigos da IACES em 2020 reaparecem na IVCM: Vagner Antonio Nunes, presbítero ordenado em 21/07/2019 em
+    São Paulo (por Marcos Vinicius de Souza, CASF), consta na IVCM como 'Monsenhor' acolhido em 13/04/2021, mesma
+    data do registro da IVCM; e Nildemar Andrade Santos foi consagrado bispo por Faria em 2022. Isso indica que
+    parte do clero da IACES migrou para a IVCM.
+  status: probable
+  sources:
+  - source: lvc-iaces-clero
+    quote: >-
+      Vagner Antônio Nunes Reverendo Presbítero Ordenado em 21/07/2019 em SP Natural: Piedade - SP Bispo Ordenante:
+      + Dom Marcos Vinicius de Souza, CASF
+  - source: lvc-ivcm-clero
+    quote: Vagner Antonio Nunes Nasc.02/10/1979

@@ -23,6 +23,11 @@ death:
     quote: Olavo Ventura Luiz nasceu em Bagé, em 28 de dezembro de 1938.
   - source: costa2021
     quote: Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária
+  - source: lib-ieab-cal-2026
+    quote: 09 – Olavo Ventura Luiz, Bispo Primaz da IEAB, 1993
+  - source: lib-aj-1993-04
+    quote: >-
+      primate dies * PORTO ALEGRE, BRAZIL Archbishop Olavo Ventura Luiz, primate of Brazil, has died. He was 55
   - source: ia-church-times-1993-03-26
     quote: >-
       DEATH of the Anglican Primate of Brazil, Bishop Olavo Ventura Luiz, on 9 March was caused by cerebral
@@ -322,12 +327,35 @@ affiliations:
 events:
 - type: death
   date: '1993-03-09'
-  description: Morte de Olavo Ventura Luiz, primaz da IEAB, em 9 de março de 1993 (malária cerebral).
+  description: >-
+    Falecimento de Olavo Ventura Luiz, primaz da IEAB, de malária cerebral. O calendário eclesiástico da IEAB o
+    comemora em 9 de março.
   status: probable
   sources:
+  - source: lib-ieab-cal-2026
+    quote: 09 – Olavo Ventura Luiz, Bispo Primaz da IEAB, 1993
+  - source: lib-aj-1993-04
+    quote: >-
+      primate dies * PORTO ALEGRE, BRAZIL Archbishop Olavo Ventura Luiz, primate of Brazil, has died. He was 55
   - source: ia-church-times-1993-03-26
     quote: >-
       DEATH of the Anglican Primate of Brazil, Bishop Olavo Ventura Luiz, on 9 March was caused by cerebral
+  - source: kickhofel-1995
+    quote: >-
+      Olavo Ventura faleceu em 9 de março de 1993, aos 54 anos de idade, vítima de malária cerebral contraída em
+      Moçambique, onde esteve em janeiro de 1993 em visita a Diocese dos Lobombos.
+    page: '260'
+- type: other
+  date: 1985-05
+  description: >-
+    Naudal Alves Gomes, então presbítero, foi o apresentador de sua irmã Carmen Etel Alves Gomes na ordenação como
+    primeira diácona da IEAB, em Santana do Livramento (RS), com mais de 300 presentes.
+  status: probable
+  sources:
+  - source: lib-ens-85197
+    quote: her brother, Naudal, is a priest and was her presenter. More than 300 people attended the ceremony.
+  - source: lib-diakoneo-1986
+    quote: She was ordained last May by Bishop Olavo Ventura Luiz of South Occidental diocese
 - type: other
   date: '1976-09-04'
   description: Eleito bispo da Diocese Sul-Ocidental no segundo concílio extraordinário, no primeiro escrutínio
@@ -339,18 +367,6 @@ events:
       aos trinta e sete anos no segundo concílio extraordinário (193) realizado em 4 de setembro de 1976 e sagrado
       ao episcopado em 28 de novembro do mesmo ano como o terceiro bispo daquela diocese (194).
     page: '259'
-- type: death
-  date: '1993-03-09'
-  description: >-
-    Morte de Olavo Ventura Luiz, primaz da IEAB, de malária cerebral contraída em Moçambique (visita à Diocese dos
-    Libombos)
-  status: probable
-  sources:
-  - source: kickhofel-1995
-    quote: >-
-      Olavo Ventura faleceu em 9 de março de 1993, aos 54 anos de idade, vítima de malária cerebral contraída em
-      Moçambique, onde esteve em janeiro de 1993 em visita a Diocese dos Lobombos.
-    page: '260'
 - type: other
   date: '1989-03-12'
   description: Igreja do Redentor (Pelotas) elevada a Catedral, com a presença do Primaz Olavo Ventura Luiz

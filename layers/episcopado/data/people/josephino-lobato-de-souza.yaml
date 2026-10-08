@@ -3,15 +3,12 @@ id: josephino-lobato-de-souza
 name: Josephino Lobato de Souza
 aliases:
 - Joselino Lobato de Souza
-biography: >-
-  Clérigo da Igreja Episcopal do Brasil presente no primeiro concílio da Diocese Setentrional (1976), ligado à Paróquia
-  de Santa Maria, Belém (PA).
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
-- source: costa2021
+- source: drv-resgatando-iv
   quote: >-
-    CLÉRIGOS: Dom Edmund Knox Sherrill, bispo da Diocese Setentrional e presidente do concílio … Joselino Lobato
-    de Souza, da Paróquia de Santa Maria, Belém, Pará
-  page: '529'
+    Ficaram no DAM os reverendos: Amaro Daniel, Abimael Rodrigues, Fernando Poçadilha, Raimundo Nonato e Josephino
+    Lobato
 ordinations:
 - order: diaconate
   date: '1974'
@@ -40,6 +37,18 @@ ordinations:
     O diaconato foi conferido por Elliott Sorge (então bispo na Diocese de Ohio, EUA) a pedido de Sherrill; data
     do diaconato não está no trecho.
 affiliations:
+- jurisdiction: ieab-dam
+  role: clergy
+  start: '2000'
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      Ficaram no DAM os reverendos: Amaro Daniel, Abimael Rodrigues, Fernando Poçadilha, Raimundo Nonato e Josephino
+      Lobato
+  notes: >-
+    Entre os clérigos que permaneceram no Distrito Missionário da Amazônia (também Amaro Daniel, Abimael Rodrigues,
+    Fernando Poçadilha e Raimundo Nonato, sem sobrenomes completos na fonte).
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -56,6 +65,24 @@ affiliations:
     atestado em junho de 1976. A tese grafa 'Joselino Lobato de Souza'; identificado com 'Josephino Lobato de Souza'
     da base pela semelhança do nome, sem confirmação.
 events:
+- type: other
+  date: 1977/1985
+  description: >-
+    O bispo Sherrill criou o NAET (Núcleo de Estudos Anglicanos), onde estudaram Ian Meldrum, Robinson Cavalcanti
+    e Antônio Carlos (da Bahia); também foram ordenados no período Sherrill Josephino Lobato (Belém) e um fazendeiro
+    japonês, ministro local. Washington Franco foi deixado já preparado para a ordenação.
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      onde estudaram três dos seus ordinandos, os futuros reverendos: Ian Meldrum, Robinson Cavalcanti e Antônio
+      Carlos (da Bahia)
+  - source: drv-resgatando-ii
+    quote: >-
+      Os outros Ministros Ordenados durante o período Sherrill foram: Josephino Lobato, de Belém-PA e um fazendeiro
+      japonês
+  - source: drv-resgatando-ii
+    quote: Deixou o Bispo, ao final, já preparado o processo do Postulante e depois Rev. Washington Franco.
 - type: other
   date: '1976-06-25'
   description: >-

@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: basilio-da-santa-cruz
+name: Basílio da Santa Cruz
+aliases:
+- Dom Basílio
+- Dom Basílio da Santa Cruz, O.S.C.
+biography: >-
+  Bispo provincial da Santa Igreja Celta do Brasil para a região Nordeste (sede em Cascavel, CE); nomeado Grande
+  Secretário Nacional e Arcebispo Adjunto para o Brasil em 27/04/2025. Sua ordenação episcopal consta em notícia
+  do site da SICB com última modificação em 13/01/2023.
+sources:
+- source: lvc-sicb-n-hesicasterio-ne
+  quote: 'Bispo Provincial: Dom Basílio da Santa Cruz, OSC'
+- source: lvc-sicb-n-sinodo
+  quote: >-
+    Também foi nomeado como Grande Secretário Nacional e Arcebispo Adjunto para o Brasil, Dom Basílio da Santa Cruz.
+ordinations:
+- order: episcopate
+  date: null
+  jurisdiction: sicb
+  office: missionary
+  status: probable
+  sources:
+  - source: lvc-sicb-n-basilio
+    quote: Ordenação Episcopal do irmão Dom Basílio da Santa Cruz
+  notes: >-
+    A notícia (última modificação 13/01/2023) traz só fotos; data, sagrantes e local não estão no texto. Em 2025
+    é bispo provincial da Região Nordeste, com sede em Cascavel (CE).
+affiliations:
+- jurisdiction: sicb
+  role: bishop
+  diocese: provincia-nordeste
+  start: '2025-04-27'
+  status: probable
+  sources:
+  - source: lvc-sicb-n-hesicasterio-ne
+    quote: 'Bispo Provincial: Dom Basílio da Santa Cruz, OSC'
+  - source: lvc-sicb-n-sinodo
+    quote: >-
+      Também foi nomeado como Grande Secretário Nacional e Arcebispo Adjunto para o Brasil, Dom Basílio da Santa
+      Cruz.
+  notes: >-
+    Local: Hesicastério Provincial São Basílio, Cascavel, CE. O início refere-se à nomeação como Arcebispo Adjunto
+    e Grande Secretário Nacional; já era bispo regente da região Nordeste em janeiro de 2025.
+events:
+- type: other
+  date: '2025-04-27'
+  description: >-
+    Eleição de Rafael de Emaús como arcebispo primaz da SICB, por aclamação, na I Reunião do Santo Sínodo Mundial;
+    na mesma reunião, Basílio da Santa Cruz foi nomeado Grande Secretário Nacional e Arcebispo Adjunto para o Brasil.
+  status: confirmed
+  sources:
+  - source: lvc-sicb-n-sinodo
+    quote: Neste domingo, dia 27/04/2025, às 17:30, ocorreu a I Reunião do Santo Sínodo Mundial da S.I.C.B.

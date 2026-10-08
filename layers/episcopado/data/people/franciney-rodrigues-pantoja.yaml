@@ -1,12 +1,68 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: franciney-rodrigues-pantoja
 name: Franciney Rodrigues Pantoja
-biography: Bispo da Diocese Católica Anglicana do Baixo Tocantins (ICA).
+full_name: Franciney Rodrigues Pantoja
+aliases:
+- Dom Franciney
+- Dom Franciney Pantoja
+biography: >-
+  Bispo titular da Diocese Católica Anglicana do Baixo Tocantins (Pará), com atuação em Cametá; na Câmara Episcopal
+  da ICA aparece como "Arcebispo Primaz Sufragâneo e Presidente do Conselho Executivo Administrativo Primacial"
+  (2017). Signatário do Manifesto à Nação Brasileira (Cametá, 12/11/2017).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Diocese Católica Anglicana do Baixo Tocantins, com o bispo Franciney
-  page: '138'
+- source: lica-ica-manifesto
+  quote: >-
+    Dom Franciney Rodrigues Pantoja – Bispo Titular da Diocese Católica Anglicana do Baixo Tocantins do Pará
+- source: lica-ica-franciney-templo
+  quote: >-
+    + Dom Franciney Pantoja: Arcebispo Primaz Sufragâneo e Presidente do Conselho Executivo Administrativo Primacial.
+ordinations:
+- order: episcopate
+  date: '2016-07-17'
+  place: dependências da UFPA, Cametá (PA)
+  jurisdiction: iatb
+  office: auxiliary
+  principal_consecrator: rui-costa-barbosa
+  co_consecrators:
+  - orvandil-moreira-barbosa
+  - ricardo-vicente-dos-anjos
+  status: confirmed
+  sources:
+  - source: lia-iatb-home-2016-08
+    quote: >-
+      para a Igreja Indivisa de Cristo: Dom Franciney Pantoja, de Cametá-PA e Dom Alfredo Dorea, de Salvador-BA.
+  - source: lia-iatb-clero-2017
+    quote: Revmº Dom Franciney Rodrigues Pantoja Bispo Auxiliar de Cametá—PA
+  notes: >-
+    Sagrado no mesmo ato de Alfredo Dórea (presidente: Rui Costa Barbosa; co-celebrantes: Ricardo Vicente dos Anjos
+    e Orvandil Moreira Barbosa). Em nov/2015 constava ainda como 'Rev. Franciney Rodrigues Pantoja, Cametá-PA'.
 affiliations:
+- jurisdiction: iatb
+  role: other
+  role_description: bispo auxiliar
+  start: '2016-07-17'
+  end: '2017'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: lia-iatb-clero-2017
+    quote: Revmº Dom Franciney Rodrigues Pantoja Bispo Auxiliar de Cametá—PA
+  notes: >-
+    Local: Cametá, PA. Último registro nas páginas da IATB: lista de clero de fev/2017. O livro de Costa/Cant (2024)
+    o coloca na ICA (2017).
+- jurisdiction: ica
+  role: diocesan_bishop
+  diocese: diocese-catolica-anglicana-do-baixo-tocantins
+  status: confirmed
+  sources:
+  - source: lica-ica-dioceses
+    quote: 'Diocese Católica Anglicana do Baixo Tocantis: Bispo Dom Franciney Pantoja;'
+  - source: lica-ica-manifesto
+    quote: >-
+      Dom Franciney Rodrigues Pantoja – Bispo Titular da Diocese Católica Anglicana do Baixo Tocantins do Pará;
+  notes: >-
+    Mantém-se na Câmara Episcopal em 2017-2020, quando o site deixa de ser atualizado. Em julho de 2017 o site o
+    chama "Arcebispo Primaz Sufragâneo e Presidente do Conselho Executivo Administrativo Primacial".
 - jurisdiction: ica
   role: bishop
   diocese: diocese-catolica-anglicana-do-baixo-tocantins
@@ -15,3 +71,16 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: Diocese Católica Anglicana do Baixo Tocantins, com o bispo Franciney
     page: '138'
+events:
+- type: other
+  date: '2017-11-09'
+  description: >-
+    II Sínodo Nacional da Igreja Católica Anglicana, em Cametá (PA), de 9 a 12 de novembro de 2017, convocado pelo
+    arcebispo primaz em 09/10/2017 (designado "II Sínodo"). Dele saiu o "Manifesto à Nação Brasileira", assinado
+    por Orvandil Moreira Barbosa e Franciney Rodrigues Pantoja.
+  status: confirmed
+  sources:
+  - source: lica-ica-sinodo-convocacao
+    quote: a realizar-se na cidade de Cametá, Estado do Pará dos dias 09 a 12 de novembro
+  - source: lica-ica-manifesto
+    quote: reunidos em Sínodo Nacional em Cametá, Pará, de 09 – 12 de novembro  de 2017

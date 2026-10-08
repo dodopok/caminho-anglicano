@@ -1,22 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: juciara-maria-r-do-nascimento
 name: Juciara Maria R. do Nascimento
-biography: >-
-  Clérigo(a) da Diocese Anglicana do Recife excluído(a) da IEAB e das Sagradas Ordens em 23/08/2005 (Decreto Diocesano
-  nº 01/2005) por abandono de comunhão, por ter seguido Robinson Cavalcanti.
+biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
 sources:
-- source: costa2021
-  quote: >-
-    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
-    Ordens, os clérigos a seguir mencionados: … Revda. Juciara Maria R. do Nascimento … Recife, 23 de agosto de
-    2005.
-  page: 560-561
+- source: drp-boletim-oracao-2006
+  quote: Orar pela Paróquia Anglicana São Paulo; pela Revda. Juciara Nascimento; pela Revda. Solange Pereira
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
   start: '2005'
-  status: probable
+  status: confirmed
   sources:
+  - source: drv-declaracao-32
+    quote: Revda. Juciara Maria do Nascimento
+  - source: drv-nota-esclarecimento-2006
+    quote: Juciara M. Rodrigues do Nascimento
+  - source: drp-boletim-oracao-2006
+    quote: Orar pela Paróquia Anglicana São Paulo; pela Revda. Juciara Nascimento; pela Revda. Solange Pereira
   - source: costa2021
     quote: >-
       Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
@@ -25,9 +25,20 @@ affiliations:
       mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
   notes: >-
-    Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson
-    Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005
-    é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
+    Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
+    Esclarecimento); início e fim do vínculo não informados. Local: Paróquia Anglicana São Paulo. Clérigo citado
+    como pastor/ministro da comunidade em out/nov de 2006 (boletim de oração da Secretaria de Intercessão). Anexo
+    R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti,
+    ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005 é a da exclusão
+    pela IEAB, e a adesão à DAR é anterior, sem data exata.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: vice-presidente_conselho_diocesano
+  status: confirmed
+  sources:
+  - source: drv-carta-clero-primaz
+    quote: Revda. Juciara Maria Rodrigues do Nascimento – Vice-presidente do Conselho
+  notes: Cargo exercido em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar

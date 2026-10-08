@@ -1,17 +1,75 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcos-vinicius-de-souza
 name: Marcos Vinícius de Souza
-biography: Bispo da Igreja Católica Anglicana do Brasil (Prelazia Anglicana de São Paulo).
+full_name: Marcos Vinícius de Souza
+aliases:
+- Dom Marcos Vinícius
+biography: >-
+  Bispo da Igreja Católica Anglicana do Brasil (Prelazia Anglicana de São Paulo) e da Comunidade Anglicana Sagrada
+  Família. Formado em filosofia (2006) após seminários católico-romanos em Assis e Marília (SP); professor da rede
+  estadual paulista; ordenado diácono em 2015, presbítero em 2016 e bispo em 2018. Celebrante de casamentos em São
+  Paulo.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Dom Marcos Vinícius de Souza, bispo da Prelazia Anglicana de São Paulo
-  page: '139'
+- source: lica-marcos-quemsou
+  quote: >-
+    Foi ordenado diácono em 2015, presbítero em 2016 e através do seu brilhante trabalho pastoral foi ordenado Bispo
+    em 2018.
+- source: lica-icabr-quemsomos
+  quote: Dom Marcos Vinícius de Souza Bispo da Prelazia Anglicana de São Paulo/SP
+ordinations:
+- order: diaconate
+  date: '2015'
+  jurisdiction: ica
+  status: probable
+  sources:
+  - source: lica-marcos-quemsou
+    quote: Foi ordenado diácono em 2015, presbítero em 2016
+  notes: >-
+    Autodescrição em site pessoal. A página diz que em 2012 ele iniciou "sua trajetória na Igreja Católica Anglicana",
+    antes da data de registro da ICA (2017); a jurisdição de 2015-2016 não é especificada.
+- order: presbyterate
+  date: '2016'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: lica-marcos-quemsou
+    quote: Foi ordenado diácono em 2015, presbítero em 2016
+  notes: Autodescrição em site pessoal; ordenante e jurisdição não informados.
+- order: episcopate
+  date: '2018'
+  jurisdiction: ica-brasil
+  principal_consecrator: ricardo-vicente-dos-anjos
+  co_consecrators:
+  - altamiro-pereira-do-amaral
+  - jorge-costa
+  status: probable
+  sources:
+  - source: lica-marcos-quemsou
+    quote: >-
+      que transmitiu sua sucessão apóstólica para Dom Ricardo Vicente dos Anjos que ordenou Dom Marcos Vinicius
+      de Souza, juntamente com Dom Altamiro Pereira do Amaral e por Dom Jorge dos Santos Costa.
+  - source: lica-marcos-quemsou
+    quote: foi ordenado Bispo em 2018
+  - source: lica-iaces-clero
+    quote: 'Bispo Ordenante: + Dom Marcos Vinicius de Souza, CASF'
+  notes: >-
+    A data exata e o local não constam. O 1º Sínodo da ICA-Brasil ocorreu em São Paulo em julho de 2018 "com as
+    Sagrações episcopais" (site da IACES); o campo local é uma hipótese, não afirmada pela fonte. A lista de clero
+    da IACES mostra Marcos Vinícius já como bispo ordenante de um presbítero em 21/07/2019 (São Paulo), sigla CASF
+    = Comunidade Anglicana Sagrada Família.
 affiliations:
 - jurisdiction: ica-brasil
   role: bishop
   diocese: prelazia-anglicana-de-sao-paulo
-  status: probable
+  start: '2018'
+  status: confirmed
   sources:
+  - source: lica-icabr-quemsomos
+    quote: Dom Marcos Vinícius de Souza Bispo da Prelazia Anglicana de São Paulo/SP
+  - source: lica-marcos-quemsou
+    quote: Sou bispo da Comunidade Anglicana Sagrada Família, parte da Igreja Católica Anglicana do Brasil.
   - source: cant-novas-igrejas-2024
     quote: Dom Marcos Vinícius de Souza, bispo da Prelazia Anglicana de São Paulo
     page: '139'
+  notes: >-
+    Também bispo da Comunidade Anglicana Sagrada Família (CASF). Assina a "Mensagem da semana" do site da ICA-Brasil.

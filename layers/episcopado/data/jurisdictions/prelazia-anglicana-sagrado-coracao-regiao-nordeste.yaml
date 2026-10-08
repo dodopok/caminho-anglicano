@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: prelazia-anglicana-sagrado-coracao-regiao-nordeste
+name: Prelazia Anglicana Sagrado Coração / Região Nordeste
+type: diocese
+relations:
+- type: part_of
+  target: dac
+  status: probable
+  sources:
+  - source: lielb-gaz-santana
+    quote: >-
+      Na Proxima terça-feira, 14 de janeiro de 2025, a Diocese Anglicana Católica do Brasil celebra com alegria
+      o primeiro aniversário de ordenação episcopal de Dom Frei Antonio Santana.

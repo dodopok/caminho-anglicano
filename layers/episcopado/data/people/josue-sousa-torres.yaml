@@ -1,35 +1,40 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: josue-sousa-torres
 name: Josué Sousa Torres
+full_name: Josué Souza Torres
 aliases:
 - Dom Josué Torres
 - Josué Souza Torres
 - Josué Torres
 - Reverendo Dom Josué
-biography: >-
-  Ex-membro da Diocese Anglicana de São Paulo (IEAB); fundador e primaz da Igreja Episcopal do Evangelho Pleno (Taboão
-  da Serra); sagrado bispo em 15/01/2006 por Barry Frank Peachey; sagrante de Adolfo Batista (2013), Lucas Oliva
-  Bertolozzi (2011) e Fernando Nobile (2018).
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Josué Sousa Torres
-  page: '117'
-- source: cant-novas-igrejas-2024
-  quote: pastor Josué Souza Torres, que já foi membro da IEAB, na Diocese Anglicana de São Paulo
-  page: '145'
+- source: drv-ata-iaob-2014
+  quote: >-
+    Dom Josué Sousa Torres, Primaz da Igreja Episcopal do Evangelho Pleno da cidade de Taboão da Serra Estado de
+    São Paulo
 ordinations:
 - order: diaconate
   date: '2005-03-26'
-  place: Ribeirão Preto (SP)
+  place: Ribeirão Preto (SP), Casa da Meditação Cristã "Disciplina Pacis"
   jurisdiction: iadb-lorite
+  ordained_by: iranildo-macieira-da-silva
   status: probable
   sources:
+  - source: lielb-iab-historia
+    quote: >-
+      No dia 26 de março de 2005, Sábado Santo, os ministros licenciados Ricardo Lorite de Lima, Rui Costa Barbosa,
+      Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Diaconal da Igreja de Cristo, Una,
+      Santa, Católica e Apostólica, através da imposição das mãos do bispo vetero-católico Dom Iranildo Macieira
+      das Silva (Dom Lucas).
   - source: cant-novas-igrejas-2024
     quote: >-
       No dia 26 de março de 2005, na cidade de Ribeirão Preto (SP), os ministros licenciados Ricardo Lorite de Lima,
       Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Diaconal
     page: '118'
-  notes: O livro não nomeia o ordenante.
+  notes: >-
+    Ordenante identificado como "Bispo Primaz Metropolitano da Igreja Episcopal Latina do Brasil (vetero-católica)".
+    Fonte: história da Igreja Anglicana do Brasil (Ricardo Lorite de Lima). O livro não nomeia o ordenante.
 - order: presbyterate
   date: '2005-03-27'
   place: Igreja Evangélica Congregacional de Ribeirão Preto (SP)
@@ -37,31 +42,46 @@ ordinations:
   ordained_by: iranildo-macieira-da-silva
   status: probable
   sources:
+  - source: lielb-iab-historia
+    quote: >-
+      Na data de 27 de março de 2005, Domingo de Páscoa, os Rev. Diáconos Ricardo Lorite de Lima, Rui Costa Barbosa,
+      Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Presbiteral da Igreja de Cristo, Una,
+      Santa, Católica e Apostólica, através da imposição das mãos de Dom Iranildo Macieira das Silva (Dom Lucas).
+  - source: cant-novas-igrejas-2024
+    quote: e no dia 27 de março, os quatro diáconos foram ordenados presbíteros por bispos independentes.
+    page: '118'
   - source: ig-josue-2025-03-28-presbiterato-2005
     quote: >-
       Na data de 27 de março de 2005, Domingo de Páscoa, os Rev. Diáconos Ricardo Lorite de Lima, Rui Costa Barbosa,
       Luis Fernando Salgado e Josué Souza Torres foram elevados ao Ministério Presbiteral da Igreja de Cristo, Una,
       Santa, Católica e Apostólica, através da imposição das mãos de Dom Iranildo Macieira das Silva (Dom Lucas).
       A cerimônia de Ordenação ocorreu na Igreja Evangélica Congregacional de Ribeirão Preto.
-  - source: cant-novas-igrejas-2024
-    quote: e no dia 27 de março, os quatro diáconos foram ordenados presbíteros por bispos independentes.
-    page: '118'
   notes: >-
-    Também impuseram as mãos os padres Manuel (Igreja Antigo-Católica), João Ripoli e Mário Palumbo (Igreja Católica
-    Romana). Ordenações autorizadas por Leonardo Marin-Saavedra (Anglican Independent Communion Worldwide). O livro
-    diz apenas 'por bispos independentes', sem nomeá-los.
+    O livro diz apenas 'por bispos independentes', sem nomeá-los. Também impuseram as mãos os padres Manuel (Igreja
+    Antigo-Católica), João Ripoli e Mário Palumbo (Igreja Católica Romana). Ordenações autorizadas por Leonardo
+    Marin-Saavedra (Anglican Independent Communion Worldwide).
 - order: episcopate
   date: '2006-01-15'
+  place: Taboão da Serra (SP)
   jurisdiction: ieep
   office: primate
   principal_consecrator: barry-frank-peachey
   status: probable
   sources:
+  - source: lac-cnbp-sucessao
+    quote: >-
+      Josué Souza Torres (Brasileiro) – Em 15/01/2006 foi sagrado ao Bispado por Dom Barry Frank Peachey em Taboão
+      da Serra, São Paulo (SP), Brasil.
+  - source: lpq-cefip-sagracoes
+    quote: >-
+      Josué Souza Torres, Bispo Primaz da Igreja Episcopal do Evangelho Pleno e Arcebispo Emérito do Conselho Nacional
+      de Bispos Protestantes do Brasil, 2006.
   - source: cant-novas-igrejas-2024
     quote: >-
       quando em 15 de janeiro de 2006 Josué Torres foi sagrado ao episcopado pelo bispo Barry Frank Peachey, filiado
       à The Anglican Independent Communion Worldwide, com sede na Inglaterra.
   notes: >-
+    Acrescenta o local (Taboão da Serra) à data e ao sagrante já conhecidos; o blog da CEFIP dá só o ano (2006).
     Fundador da Igreja Episcopal do Evangelho Pleno (IEEP). Mesma data da sagração de Ricardo Lorite e Rui Barbosa
     (p. 118), na qual Peachey também atuou.
 affiliations:
@@ -82,15 +102,33 @@ affiliations:
 - jurisdiction: ieep
   role: primate
   start: '2006'
-  status: probable
+  status: confirmed
   sources:
+  - source: lpq-cefip-sagracoes
+    quote: >-
+      Josué Souza Torres, Bispo Primaz da Igreja Episcopal do Evangelho Pleno e Arcebispo Emérito do Conselho Nacional
+      de Bispos Protestantes do Brasil
+  - source: lpq-iaob-clero
+    quote: Dom Josué Sousa Torres - Bispo Primás da IEEP Comunhão Plena com a IAOB
   - source: cant-novas-igrejas-2024
     quote: o Bispo Primaz da Igreja Episcopal do Evangelho Pleno (IEEP), Bispo Josué Souza Torres
     page: '146'
   - source: cant-novas-igrejas-2024
     quote: Bispo Josué Souza Torres, Primaz da Igreja Episcopal do Evangelho Pleno
     page: '131'
-  notes: Citado como primaz em 2006 (p. 146) e em 2013 (p. 131).
+  notes: >-
+    Também chamado de arcebispo emérito do CNBP no blog da CEFIP. Citado como primaz em 2006 (p. 146) e em 2013
+    (p. 131).
+- jurisdiction: ieep
+  role: other
+  role_description: bispo_primaz
+  status: confirmed
+  sources:
+  - source: drv-ata-iaob-2014
+    quote: >-
+      Dom Josué Sousa Torres, Primaz da Igreja Episcopal do Evangelho Pleno da cidade de Taboão da Serra Estado
+      de São Paulo
+  notes: 'Local: Taboão da Serra, SP. Cargo em 2013; data de início desconhecida.'
 - jurisdiction: ieab-dasp
   role: member
   end: c.2004
@@ -129,17 +167,17 @@ events:
     Costa Barbosa.
   status: probable
   sources:
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       Pedro A. Compton-Caputo (1993) – Arcebispo Primaz da Comunhão Anglicana Independente nas Américas. Norman
       Sydney Dutton (1999)
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: Barry Frank Peachey (2005)
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       JOSUÉ SOUZA TORRES (15/01/2006) – ARCEBISPO PRIMAZ DA IGREJA EPISCOPAL DO EVANGELHO PLENO, BRASIL. ADOLFO
       BATISTA TEODORO JUNIOR (12/01/2013) BISPO PRIMAZ DA IGREJA ANGLICANA ORTODOXA NO BRASIL.
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       (146) Tau Iranildo Macieira da Silva, 2004. (147) Dom Josué Douza Torres (148) 2006. (148) Dom Adolfo Batista
       Teodoro Junior 2013.

@@ -3,25 +3,59 @@ id: patricia-ann-powers
 name: Patricia Ann Powers
 full_name: Patricia Ann Powers
 aliases:
+- Patricia Powers
 - Patrícia Powers
 biography: >-
-  Missionária norte-americana; candidata ao episcopado em Brasília (1988) e primeira deã da Catedral de Brasília.
+  Missionária norte-americana, ordenada diácona (29/6/1986) e presbítera (28/12/1986); segunda mulher presbítera
+  da IEAB e primeira deã (Catedral da Ressurreição, Brasília).
 sources:
-- source: costa2021
-  quote: Tempos depois, Patrícia se tornou a primeira deã da Catedral de Brasília.
-  page: '99'
+- source: lic-livro35
+  quote: Sou Patricia Ann Powers, norte-americana, de raízes irlandesas.
+- source: lic-acns-2015-30anos
+  quote: in 1986 became the second ordained female priest and then the first woman to serve as a dean
 ordinations:
 - order: diaconate
-  date: '1986'
+  date: '1986-06-29'
   jurisdiction: ieab
-  status: probable
+  status: confirmed
   sources:
+  - source: lic-livro35
+    quote: 'Diaconato: 29 de junho de 1986. Presbiterado: 28 de dezembro de 1986.'
+  - source: lic-livro35
+    quote: >-
+      Ordenada ao diaconato em 29 de junho 1986, aos 38 anos; e ao Presbiterado, em 28 de dezembro de 1986.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1986 - … Patricia Ann Powers
     page: '373'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Missionária norte-americana; autobiografia no livro dos 35 anos de ordenação de mulheres. Ano tirado da lista
+    do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1986-12-28'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: ao Presbiterado, em 28 de dezembro de 1986.
+  - source: lic-acns-2015-30anos
+    quote: in 1986 became the second ordained female priest and then the first woman to serve as a dean
+  notes: Segunda mulher ordenada presbítera da IEAB, segundo a ACNS (2015).
 affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: dea
+  diocese: ieab-dab
+  start: '1985'
+  end: '1988'
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: >-
+      De 1985 a1988, trabalhei na Diocese Anglicana de Brasília, tendo sido a reverenda responsável por missões
+      em Ceilândia; fui Deã da Catedral da Ressurreição
+  notes: >-
+    Primeira mulher deã (Catedral da Ressurreição, Brasília). Em 1988 foi a Porto Alegre abrir o Departamento de
+    Missão da IEAB.
 - jurisdiction: ieab
   role: clergy
   start: '1986'

@@ -3,10 +3,22 @@ id: evilasio-tenorio
 name: Evilásio Tenório
 full_name: Evilásio Tenório da Silva Júnior
 aliases:
+- Dom Evilásio
 - Evilasio Tenorio Silva
 - Evilásio Tenório da Silva
 - Evilásio Tenório da Silva Junior
 - Evilásio Tenório da Silva Júnior
+birth:
+  date: '1950-10-02'
+  sources:
+  - source: lrec-ptwp-evilasio
+    quote: Evilásio Tenório da Silva Junior (Recife, 02 de outubro de 1950)
+  - source: lrec-iae-evilasio
+    quote: >-
+      Cheguei na Igreja no ano de 1986 através do Encontro de Casais com Cristo e Cursilhos da Cristandade. Ordenado
+      Presbítero e posteriormente Bispo Auxiliar na Diocese Recife
+  - source: lrec-iae-evilasio
+    quote: Professor e Reitor no SAT-Recife
 biography: >-
   Bispo auxiliar da Diocese de Recife (IAB), pároco da Paróquia Anglicana do Mediador (Recife) em 2019.
 sources:
@@ -42,7 +54,7 @@ ordinations:
     quote: DOM EVILÁSIO TENÓRIO BISPO SUFRAGÂNEO 2ª REGIÃO ECLESIÁSTICA
   - source: iab-poster-linhagem-uchoa
     quote: em 2012, sagrou Dom Evilásio Tenório da Silva Júnior como bispo (ver 162c).
-  - source: wp-pt-evilasio
+  - source: lrec-ptwp-evilasio
     quote: >-
       Finalmente, no dia 17 de março de 2012, foi sagrado bispo sufragâneo, na Paróquia Anglicana do Espirito Santo
       pelo bispo Peter Beckwith, da Igreja Anglicana na América do Norte, e teve como co-sagrantes o bispo Alexander
@@ -86,6 +98,10 @@ affiliations:
       Rev. Evilásio Tenório Junior é Presbítero na Diocese do Recife; Deão Pró-Têmpore da Catedral Anglicana do
       Bom Samaritano ; Pároco da Paróquia Anglicana do Mediador , em Recife-PE, Arcediago Centro da Diocese e Reitor
       do Seminário Anglicano Teológico (SAT-PE)
+  - source: drv-declaracao-32
+    quote: Ven. Arc. Rev. Evilásio Tenório da S Júnior
+  - source: drv-nota-esclarecimento-2006
+    quote: Evilásio Tenório da Silva
   - source: costa2021
     quote: >-
       Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
@@ -95,10 +111,11 @@ affiliations:
     page: 560-562
   notes: >-
     Presbítero e arcediago da Diocese do Recife (listas do clero de 2007 e 2010; artigo de 2011). Data e ordenante
-    do diaconato/presbiterato não encontrados. Postulante em 2002 (vínculo IEAB já registrado). Anexo R: o(a) clérigo(a)
-    declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja,
-    estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela
-    IEAB, e a adesão à DAR é anterior, sem data exata.
+    do diaconato/presbiterato não encontrados. Postulante em 2002 (vínculo IEAB já registrado). Consta como clérigo
+    da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de Esclarecimento); início
+    e fim do vínculo não informados. Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005,
+    manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como
+    ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
 - jurisdiction: iacs
   role: primate
   diocese: diocese-anglicana-recife
@@ -124,7 +141,7 @@ affiliations:
     quote: Bispos Sufragâneo Revmo. Evilásio Tenório da Silva Júnior
   - source: g1-2012-02-29-velorio
     quote: Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo líder da igreja
-  - source: wp-pt-evilasio
+  - source: lrec-ptwp-evilasio
     quote: responsável pela 2ª Região Eclesiástica (de Pernambuco ao Rio Grande do Sul)
   - source: mu-blog-2012-07-22
     quote: o Revmo Evilásio Tenório, Bispo sufraganeo (auxiliar) da DR
@@ -185,6 +202,13 @@ affiliations:
     quote: 'Pároco: Bispo Evilásio Tenório'
   - source: adr-instalacao-2018
     quote: 'Diocese de Recife, Diocesano:Bispo Miguel Uchoa e Auxiliar: Bispo Evilásio tenório'
+  - source: lrec-iae-evilasio
+    quote: >-
+      Presbítero Bispo Auxiliar da Diocese de Recife Professor e Reitor no SAT-Recife Reitor da Paroquia Anglicana
+      do Mediador
+  notes: >-
+    Segundo o perfil no Instituto Anglicano de Ensino (sem data), é bispo auxiliar da Diocese de Recife, professor
+    e reitor do SAT-Recife e reitor da Paróquia Anglicana do Mediador.
 - jurisdiction: iab
   role: auxiliary_bishop
   diocese: iab-diocese-recife
@@ -193,6 +217,32 @@ affiliations:
   - source: iab-carta-nacao-2022
     quote: Revmo. + Evilásio Tenório Bispo Auxiliar de Recife
   notes: Única fonte 2022–2026 encontrada é a carta de 05/10/2022; situação em 2026 não verificada.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago
+  status: confirmed
+  sources:
+  - source: drp-carta-venables-pt-2005
+    quote: Ven. Arc. Rev. Evilásio Tenório da Silva Júnior
+  - source: drp-boletim-oracao-2006
+    quote: Centro – Ven. Arc. Rev. Evilásio Tenório da Silva
+  - source: drv-carta-clero-primaz
+    quote: Rev. Arc. Evilásio Tenório da Silva Júnior
+  notes: >-
+    Assina a carta a Venables (17/10/2005) como arcediago. Local: Arcediagado Centro. Arcediagado Centro em out/nov
+    de 2006. Cargo exercido em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: reitor_seminario
+  status: confirmed
+  sources:
+  - source: drp-boletim-oracao-2006
+    quote: >-
+      novo Seminário Anglicano Teológico (SAT-PE): Ven. Arc. Rev. Evilásio Tenório – Reitor, Rev. Maurício Amazonas,
+      Capelão e a Coordenadora Pedagógica: Revda. Jeane Coelho
+  notes: >-
+    Local: SAT-PE. Reitor do "novo" SAT-PE em out/nov de 2006; capelão: Maurício Amazonas; coordenadora pedagógica:
+    Jeane Coelho. Em 2005 o reitor do SAT-PE era Marcus Throup.
 - jurisdiction: diocese-anglicana-recife
   role: auxiliary_bishop
   status: probable
@@ -237,6 +287,18 @@ events:
       Ângelo de Andrade Uchoa Cavalcanti . O Bispo Sufragâneo da Região Eclesiástica 2, Dom Evilásio Tenório que,
       de forma canônica e democrática, também pleiteou o cargo
 - type: other
+  date: '2012-03-17'
+  description: >-
+    Eleito bispo sufragâneo em 2011, Evilásio Tenório teria sido sagrado, segundo a Wikipédia, por Robinson Cavalcanti,
+    mas a sagração ficou para depois da morte do bispo (26/02/2012) e ocorreu em 17/03/2012. Ainda segundo a Wikipédia,
+    Evilásio permaneceu provisoriamente como bispo diocesano até a eleição do novo líder em 19/05/2012.
+  status: probable
+  sources:
+  - source: lrec-ptwp-evilasio
+    quote: >-
+      Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
+      bispo diocesano, até a eleição do novo líder da Igreja Anglicana, em 19 de maio de 2012.
+- type: other
   date: 2015-12
   description: >-
     Pedro Muniz instituído Ministro Local no Sínodo da Diocese do Recife (Paróquia Anglicana Jardim das Oliveiras,
@@ -275,7 +337,7 @@ events:
       O culto foi celebrado pelo presidente do Conselho Diocesano, Márcio Simões, e pelos dois bispos auxiliares
       Flávio Aldair e Evilásio Tenório. Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo
       líder da igreja, o que deve ocorrer no dia 19 de maio.
-  - source: wp-pt-evilasio
+  - source: lrec-ptwp-evilasio
     quote: >-
       Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
       bispo diocesano, até a eleição do novo líder da Igreja Anglicana

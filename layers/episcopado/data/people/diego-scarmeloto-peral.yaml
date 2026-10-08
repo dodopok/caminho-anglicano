@@ -1,28 +1,92 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: diego-scarmeloto-peral
 name: Diego Scarmeloto Peral
-biography: Bispo da Igreja Anglicana Mundial no Brasil (São Paulo).
+full_name: Diego Scarmeloto Peral
+aliases:
+- Dom Diego Peral
+- Reverendo dom Diego Scarmeloto Peral
+birth:
+  date: '1984-04-27'
+  sources:
+  - source: lwac-diego-bio
+    quote: Reverendo Dom Diego Scarmeloto Peral nasceu em São Paulo/SP, no dia 27 de abril de 1984.
+  - source: lwac-wacbr-clerigos
+    quote: >-
+      Dom Diego Scarmeloto Peral Bispo Auxiliar de São Paulo Cidade: São Paulo - SP Ordenação Presbiteral: 26/02/2023
+      Sagração Episcopal: 25/05/2024
+biography: >-
+  Nascido em São Paulo em 27/04/1984; ex-religioso dehoniano (Igreja Católica Romana, cerca de 12-13 anos, com passagem
+  como missionário em Moçambique), depois professor e fundador da Capelania Cruz de Amor. Bispo auxiliar de São
+  Paulo na lista da WAC no Brasil, com presbiterato em 26/02/2023 e sagração em 25/05/2024. Em seu site pessoal,
+  declara ter sido sagrado em 25/05/2024 por Lucas Macieira, Márcio Silva e Josué Torres.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Dom Diego Scarmeloto Peral, bispo auxiliar de São Paulo
-  page: '129'
+- source: lwac-diego-bio
+  quote: Reverendo Dom Diego Scarmeloto Peral nasceu em São Paulo/SP, no dia 27 de abril de 1984.
+- source: lwac-wacbr-clerigos
+  quote: >-
+    Dom Diego Scarmeloto Peral Bispo Auxiliar de São Paulo Cidade: São Paulo - SP Ordenação Presbiteral: 26/02/2023
+    Sagração Episcopal: 25/05/2024
 ordinations:
+- order: presbyterate
+  date: '2023-02-26'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: lwac-wacbr-clerigos
+    quote: >-
+      Dom Diego Scarmeloto Peral Bispo Auxiliar de São Paulo Cidade: São Paulo - SP Ordenação Presbiteral: 26/02/2023
+  notes: >-
+    Data informada pelo site da WAC-BR. Seu site pessoal diz que foi "ordenado reverendo anglicano" depois de deixar
+    a Igreja Católica Romana, sem data nem ordenante.
 - order: episcopate
   date: '2024-05-25'
   jurisdiction: wac-br
   office: auxiliary
-  status: probable
+  co_consecrators:
+  - iranildo-macieira-da-silva
+  - josue-sousa-torres
+  - marcio-silva
+  status: confirmed
   sources:
-  - source: cont-wacbr-clerigos
+  - source: lwac-wacbr-clerigos
+    quote: 'Sagração Episcopal: 25/05/2024'
+  - source: lwac-diego-bio
+    quote: >-
+      2024, 25 de maio – Dom Lucas Macieira, Dom Márcio Silva e Dom Josué Torres sagraram Dom Diego Scarmeloto Peral.
+  - source: lwac-wacbr-clerigos
     quote: >-
       Dom Diego Scarmeloto Peral Bispo Auxiliar de São Paulo Cidade: São Paulo - SP Ordenação Presbiteral: 26/02/2023
       Sagração Episcopal: 25/05/2024
+  notes: >-
+    Data em dupla fonte primária (site da WAC-BR e site pessoal do bispo). Segundo o site pessoal, os sagrantes
+    foram Lucas Macieira (Igreja Episcopal Latina do Brasil), Márcio Silva e Josué Torres, sem distinguir principal
+    e co-sagrantes. Local e jurisdição do ato não informados; o site da WAC-BR o lista como bispo auxiliar de São
+    Paulo.
 affiliations:
 - jurisdiction: wac-br
   role: auxiliary_bishop
-  status: probable
+  status: confirmed
   sources:
+  - source: lwac-wacbr-clerigos
+    quote: Dom Diego Scarmeloto Peral Bispo Auxiliar de São Paulo
+  - source: lwac-wac-hob
+    quote: Bishop Diego Scarmeloto Peral Bishop Ecclesiastical Province of Brazil
   - source: cant-novas-igrejas-2024
     quote: Dom Diego Scarmeloto Peral, bispo auxiliar de São Paulo
     page: '129'
-  notes: 'Local: São Paulo.'
+  notes: >-
+    Local: São Paulo. Constava na lista de bispos da WAC internacional (Província do Brasil). Local: São Paulo.
+events:
+- type: other
+  date: null
+  description: >-
+    Trajetória anterior de Diego Scarmeloto Peral: formação e cerca de 12 anos na Congregação dos Padres do Sagrado
+    Coração de Jesus (dehonianos), na Igreja Católica Romana, incluindo missão em Moçambique, antes de se tornar
+    professor e ministro anglicano.
+  status: confirmed
+  sources:
+  - source: lwac-diego-bio
+    quote: >-
+      Sua caminhada religiosa começou na Igreja Católica Apostólica Romana, na Congregação dos Padres do Sagrado
+      Coração de Jesus (Dehonianos – SCJ) . Ao longo de 12 anos, desempenhou diferentes funções, passando pelas
+      etapas de aspirante à vida religiosa, religioso (frater) e missionário em Moçambique .

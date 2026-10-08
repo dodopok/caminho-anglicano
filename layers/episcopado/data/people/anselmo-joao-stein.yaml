@@ -70,6 +70,16 @@ affiliations:
     Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
     nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
 - jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  start: '1976'
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: Santa Maria (Rev. Anselmo Stein), Belém-PA
+  notes: 'Local: Santa Maria, Belém-PA. Pároco da Paróquia de Santa Maria (Belém) quando a diocese foi criada.'
+- jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
   status: probable
@@ -84,6 +94,16 @@ affiliations:
     Paróquia de Santa Maria, Belém (PA). Datas de início e fim do vínculo não informadas; o vínculo está apenas
     atestado em junho de 1976.
 events:
+- type: other
+  date: '1976'
+  description: >-
+    Quando foi criada, a Diocese Setentrional tinha três paróquias: Santa Maria (Belém-PA, Rev. Anselmo Stein),
+    SS. Trindade (Recife, Rev. Paulo Garcia) e Bom Pastor (Salvador-BA, Rev. Stuart Broghton).
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      A Diocese, em seu início, era composta por apenas três Paróquias: Santa Maria (Rev. Anselmo Stein), Belém-PA
 - type: other
   date: '1976-06-25'
   description: >-

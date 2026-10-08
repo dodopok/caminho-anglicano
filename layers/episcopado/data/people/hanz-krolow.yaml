@@ -2,6 +2,10 @@
 id: hanz-krolow
 name: Hanz Krolow
 full_name: Hanz Krolow
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+sources:
+- source: drv-apontamentos-kickhofel
+  quote: 1971 - Clóvis Rodrigues e Hanz Krolow em Moçambique
 ordinations:
 - order: diaconate
   date: '1967'
@@ -23,7 +27,25 @@ affiliations:
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1967 - … Hanz Krolow
     page: '371'
   notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: ieab
+  role: other
+  role_description: missionário
+  start: '1971'
+  status: probable
+  sources:
+  - source: drv-apontamentos-kickhofel
+    quote: 1971 - Clóvis Rodrigues e Hanz Krolow em Moçambique
+  notes: 'Local: Moçambique. Cronologia sucinta; função e duração não informadas.'
 events:
+- type: other
+  date: '1971'
+  description: >-
+    Em 1971 'Clóvis Rodrigues e Hanz Krolow' atuaram em Moçambique como missionários enviados pela IEAB; a identificação
+    de 'Clóvis Rodrigues' com Clóvis Erly Rodrigues, depois bispo de Recife, não é confirmada pelo texto.
+  status: probable
+  sources:
+  - source: drv-apontamentos-kickhofel
+    quote: 1971 - Clóvis Rodrigues e Hanz Krolow em Moçambique
 - type: other
   date: '1971'
   description: >-

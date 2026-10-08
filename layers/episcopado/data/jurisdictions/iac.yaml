@@ -8,6 +8,20 @@ country: BR
 founded:
   date: '2022'
   sources:
+  - source: lpq-iac-home
+    quote: Blog em Construção by Ministério Amplitude - dezembro 30, 2021
+  - source: lpq-iac-home
+    quote: >-
+      Constituição e Cânones by Ministério Amplitude - fevereiro 19, 2022 Após exaustiva dedicação da comissão formada
+      para o estabelecimento e adaptação, foi finalizado no dia de hoje, com a aprovação…
+  - source: lpq-iac-continuante
+    quote: >-
+      Não estamos criando uma nova igreja e sim continuando de maneira atualizada o anglicanismo histórico reformado.
+  - source: lpq-iac-home
+    quote: >-
+      IGREJA EPISCOPAL ANGLICANA DE ORIENTAÇÃO CONTINUANTE E RITO ANGLO-CATÓLICO NO BRASIL - 03.658.648/0001-48
+  - source: lpq-brasilapi-cnpj-iac
+    quote: '"razao_social":"BLESSED SUSTAINABILITY INSTITUTE"'
   - source: cant-novas-igrejas-2024
     quote: >-
       A Igreja Anglicana Continuante (IAC) é uma Igreja Anglicana Independente, localizada na cidade de Brasília,
@@ -20,21 +34,39 @@ founded:
     page: '108'
 website: https://gazetadaiac.blogspot.com/
 description: >-
-  Igreja anglicana independente fundada em 2022 em Brasília; primaz Valdiley Abadia da Silva; afirma associação
-  à Província Anglicana del Caribe y la Nueva Granada (Colômbia) e à The Anglican Apostolic Communion in the Americas
-  (Flórida); subscreve os 39 Artigos e a Afirmação de St. Louis; não ordena mulheres ao presbiterato/episcopado,
-  mas ordena diaconisas.
+  Igreja anglicana independente baseada em Brasília. O blog oficial (Gazeta da IAC), administrado pelo "Ministério
+  Amplitude" com autorização do arcebispo primaz, foi aberto em 30/12/2021 e publicou a Constituição e Cânones em
+  19/02/2022, o que é compatível com a fundação em 2022 indicada por Costa (2024). O blog lista cinco bispos, dois
+  presbíteros e três diáconos/diaconisas e afirma ter alcançado intercomunhão com a "província do Caribe e Nova
+  Granada". O CNPJ impresso no rodapé do blog (03.658.648/0001-48) pertence, na base da Receita Federal, a outra
+  entidade (ver dúvidas).
 sources:
-- source: cant-novas-igrejas-2024
+- source: lpq-iac-home
+  quote: Blog em Construção by Ministério Amplitude - dezembro 30, 2021
+- source: lpq-iac-home
   quote: >-
-    A Igreja Anglicana Continuante (IAC) é uma Igreja Anglicana Independente, localizada na cidade de Brasília,
-    fundada em 2022
-  page: '108'
-- source: cant-novas-igrejas-2024
+    Constituição e Cânones by Ministério Amplitude - fevereiro 19, 2022 Após exaustiva dedicação da comissão formada
+    para o estabelecimento e adaptação, foi finalizado no dia de hoje, com a aprovação…
+- source: lpq-iac-continuante
   quote: >-
-    O nome completo da Igreja é Igreja Episcopal Anglicana de Orientação Continuante e Rito Anglo-Católico no Brasil.
-  page: '108'
+    Não estamos criando uma nova igreja e sim continuando de maneira atualizada o anglicanismo histórico reformado.
+- source: lpq-iac-home
+  quote: >-
+    IGREJA EPISCOPAL ANGLICANA DE ORIENTAÇÃO CONTINUANTE E RITO ANGLO-CATÓLICO NO BRASIL - 03.658.648/0001-48
+- source: lpq-brasilapi-cnpj-iac
+  quote: '"razao_social":"BLESSED SUSTAINABILITY INSTITUTE"'
 relations:
+- type: in_communion_with
+  target: pacng
+  date: null
+  led_by:
+  - valdiley-abadia-da-silva
+  status: probable
+  sources:
+  - source: lpq-iac-primaz
+    quote: >-
+      logrou êxito de forma espetacular em alcançar a intercomunhão com a província do Caribe e Nova Granada
+  notes: Afirmação unilateral da própria IAC; não foi encontrada confirmação do lado da província colombiana.
 - type: member_of
   target: pacng
   date: null

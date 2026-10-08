@@ -2,14 +2,18 @@
 id: rafael-moraes
 name: Rafael Moraes
 aliases:
+- Dom Rafael
 - Moraes
 biography: >-
-  Bispo em Nova Friburgo (RJ), sagrado por Antônio Bessa; co-presidiu a sagração de Rafael Mendes Martins (2021)
-  e sagrou Cristiano Alves (2022).
+  Bispo anglo-católico de Nova Friburgo (RJ). Em vídeo de julho de 2021 publicado no canal de Antônio Bessa, é apresentado
+  como 'bispo titular da Província Anglo-Católica da Santíssima Trindade do Brasil'. Mantém canal próprio no YouTube
+  (criado em maio de 2021), cuja descrição o apresenta como 'bispo anglo-católico, não romano', com formação em
+  Filosofia, Teologia e História e pós-graduação em Direito Canônico.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Dom Rafael Moraes, em Nova Friburgo (RJ)
-  page: '105'
+- source: lac-yt-bessa-nf
+  quote: Dom Rafael é Bispo titular da Província Anglo-católica da Santíssima Trindade do Brasil!
+- source: lac-yt-rmoraes-canal
+  quote: Dom Rafael Moraes é bispo anglo-católico, NÃOROMANO
 ordinations:
 - order: episcopate
   date: null
@@ -36,6 +40,10 @@ affiliations:
   start: '2021'
   status: probable
   sources:
+  - source: lac-yt-bessa-nf
+    quote: Dom Rafael é Bispo titular da Província Anglo-católica da Santíssima Trindade do Brasil!
+  - source: lac-yt-bessa-nf
+    quote: Dom Rafael, bispo anglo-católico da diocese de Nova Friburgo!
   - source: cant-novas-igrejas-2024
     quote: Dom Rafael Moraes, em Nova Friburgo (RJ)
     page: '105'
@@ -53,7 +61,10 @@ affiliations:
       Nova Friburgo (RJ); Dom Cristiano Alves, no Rio de Janeiro (RJ); e Dom Rafael Mendes Martins, em Paraisópolis
       (MG).
     page: '139'
-  notes: 'Local: Nova Friburgo. Local: Nova Friburgo (RJ). Situação em 2021.'
+  notes: >-
+    Local: Nova Friburgo, RJ. Situação em 23/07/2021. O vídeo é um protesto de Rafael Moraes contra afirmação de
+    um padre católico romano de que 'todas as igrejas nacionais são falsas'. Local: Nova Friburgo. Local: Nova Friburgo
+    (RJ). Situação em 2021.
 - jurisdiction: icaca
   role: bishop
   diocese: dcaca
@@ -78,6 +89,16 @@ affiliations:
       Anglo-Católica do Rio de Janeiro, continuando sob a liderança do bispo Rafael Moraes.
     page: '162'
 events:
+- type: other
+  date: '2021-07-23'
+  description: >-
+    Vídeo de 23/07/2021 do canal de Antônio Bessa, em que Rafael Moraes protesta contra afirmação de um padre católico
+    romano de que todas as igrejas nacionais seriam falsas; o canal fala em 'igreja nacional Católica, apostólica
+    da Santíssima Trindade do Brasil, localizada no Ceará'.
+  status: confirmed
+  sources:
+  - source: lac-yt-bessa-nf
+    quote: nós da igreja nacional Católica, apostólica da Santíssima Trindade do Brasil, localizada no Ceará
 - type: other
   date: null
   description: >-

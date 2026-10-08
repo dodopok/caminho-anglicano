@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rowan-williams
+name: Rowan Williams
+events:
+- type: other
+  date: '2005-06-27'
+  description: >-
+    Em carta de 27/06/2005 ao arcebispo de Cantuária e aos primazes, a Diocese Anglicana do Recife (Robinson Cavalcanti
+    e Maurício R. Fernandes Coelho, presidente do Conselho Diocesano) pede a revogação da deposição do bispo diocesano,
+    a transferência da diocese a outra província, a criação de um arcediagado especial não territorial para a minoria
+    e uma comissão bilateral; afirma que o Primaz depôs o bispo antes de qualquer ação do Painel de Referência e
+    convoca Concílio Extraordinário para 6 de agosto.
+  status: confirmed
+  sources:
+  - source: drv-carta-cantuaria
+    quote: Recife, 27 de junho de 2005.
+  - source: drv-carta-cantuaria
+    quote: >-
+      e depôs o Bispo Diocesano do Recife antes que qualquer ação do Painel de Referência pudesse ser tomada
+  - source: drv-carta-cantuaria
+    quote: Revogação imediata da deposição do Bispo Diocesano
+- type: other
+  date: '2005-11-14'
+  description: >-
+    Em 2005 a Câmara dos Bispos da IEAB apresentou ao arcebispo de Cantuária (carta de 14/11/2005, assinada por
+    doze bispos) a versão de que a deposição de Robinson Cavalcanti decorreu de julgamento do Tribunal Superior
+    Eclesiástico, homologado unanimemente pela Câmara, e de que os 32 clérigos incorreram em abandono da comunhão;
+    criticou a recepção do bispo por Gregory Venables (Cone Sul).
+  status: confirmed
+  sources:
+  - source: drv-pronunciamento-ieab-2005
+    quote: acatou e homologou unanimemente a decisão do Tribunal
+  - source: drv-pronunciamento-ieab-2005
+    quote: nossos Cânones Provinciais prevêem o abandono da comunhão da Igreja
+  - source: drv-pronunciamento-ieab-2005
+    quote: É a primeira vez na história da IEAB que isso acontece.
+- type: other
+  date: '2005-08-29'
+  description: >-
+    Declaração dos 32 de Recife (29/08/2005): 32 clérigos da Diocese Anglicana do Recife protestam contra o decreto
+    do bispo sufragâneo que os excomungou 'sem processo', afirmam representar 40 paróquias, missões e pontos missionários,
+    dizem não ter abandonado a comunhão e apelam a Rowan Williams.
+  status: confirmed
+  sources:
+  - source: drv-declaracao-32
+    quote: >-
+      Nós, 32 clérigos da Diocese Anglicana do Recife, recebemos com espanto o Decreto emitido pelo Bispo Sufragâneo
+      da DAR, auto denominado de Autoridade Episcopal.
+  - source: drv-declaracao-32
+    quote: Representamos 40 Paróquias, Missões e Pontos Missionários

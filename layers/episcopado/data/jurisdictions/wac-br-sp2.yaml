@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: wac-br-sp2
+acronym: WAC-BR-SP2
+name: Diocese São Tiago Maior (WAC no Brasil, São Paulo)
+type: diocese
+country: BR
+description: Segunda diocese paulista da WAC no Brasil listada pelo site da província.
+sources:
+- source: lwac-wacbr-provincia
+  quote: São Paulo - Diocese São Tiago Maior
+relations:
+- type: part_of
+  target: wac-br
+  date: null
+  status: probable
+  sources:
+  - source: lwac-wacbr-provincia
+    quote: São Paulo - Diocese São Tiago Maior

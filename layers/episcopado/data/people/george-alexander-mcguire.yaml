@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: george-alexander-mcguire
+name: George Alexander McGuire
+aliases:
+- Patriarca Alexander I
+birth:
+  date: '1866-03-28'
+  sources:
+  - source: lwac-wac-about
+    quote: >-
+      His Grace, the Most Rev ++ George Alexander McGuire, the first Bishop, Metropolitan Archbishop of the African
+      Orthodox Church was born on March 28, 1866, in Sweets, Antigua.
+  - source: lwac-wac-hob
+    quote: Archbishop Dr. George Alexander McGuire, Founder and Patriarch (28 March 1866 – 10 November 1934)
+death:
+  date: '1934-11-10'
+  sources:
+  - source: lwac-wac-about
+    quote: >-
+      His Grace, the Most Rev ++ George Alexander McGuire, the first Bishop, Metropolitan Archbishop of the African
+      Orthodox Church was born on March 28, 1866, in Sweets, Antigua.
+  - source: lwac-wac-hob
+    quote: Archbishop Dr. George Alexander McGuire, Founder and Patriarch (28 March 1866 – 10 November 1934)
+biography: >-
+  Padre episcopal nascido em Antigua, fundador e primeiro bispo/patriarca da African Orthodox Church (1921), antecessora
+  da WAC; consagrado bispo em Chicago em setembro de 1921.
+sources:
+- source: lwac-wac-about
+  quote: >-
+    His Grace, the Most Rev ++ George Alexander McGuire, the first Bishop, Metropolitan Archbishop of the African
+    Orthodox Church was born on March 28, 1866, in Sweets, Antigua.
+- source: lwac-wac-hob
+  quote: Archbishop Dr. George Alexander McGuire, Founder and Patriarch (28 March 1866 – 10 November 1934)
+ordinations:
+- order: episcopate
+  date: '1921-09-21'
+  place: Chicago (EUA)
+  jurisdiction: null
+  principal_consecrator: joseph-rene-vilatte
+  co_consecrators:
+  - carl-a-nybladh
+  status: contested
+  sources:
+  - source: lwac-wac-about
+    quote: He was consecrated a Bishop on September 21, 1921, in Chicago
+  - source: lwac-wp-aoc
+    quote: >-
+      Episcopal rector George Alexander McGuire was consecrated a bishop on September 28, 1921, who had served as
+      Chaplain-General of the Universal Negro Improvement Association
+  - source: lwac-wp-aoc
+    quote: >-
+      by an episcopus vagans , Archbishop Joseph Rene Vilatte , assisted by Bishop Carl A. Nybladh who had been
+      consecrated by Vilatte
+  discrepancies:
+  - field: date
+    value: '1921-09-28'
+    sources:
+    - source: lwac-wp-aoc
+      quote: >-
+        Episcopal rector George Alexander McGuire was consecrated a bishop on September 28, 1921, who had served
+        as Chaplain-General of the Universal Negro Improvement Association
+    - source: lwac-wp-aoc
+      quote: >-
+        by an episcopus vagans , Archbishop Joseph Rene Vilatte , assisted by Bishop Carl A. Nybladh who had been
+        consecrated by Vilatte
+  notes: >-
+    Data do site da WAC; o texto não nomeia o sagrante. A Wikipédia (EN) dá 28/09/1921 e nomeia Vilatte como sagrante
+    principal. Fonte terciária (Wikipédia EN); diverge de 21/09/1921 da WAC. A Wikipédia também situa a fundação
+    da AOC em 1918 (Nova York/Garvey), enquanto a WAC data a fundação em 02/09/1921.

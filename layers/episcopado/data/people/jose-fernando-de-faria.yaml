@@ -1,24 +1,253 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jose-fernando-de-faria
 name: José Fernando de Faria
-biography: Bispo que propôs a criação da Província Anglicana Católica do Espírito Santo (hoje extinta).
+full_name: José Fernando de Faria
+aliases:
+- DE FARIA Jose Fernando
+- Dom Fernando
+birth:
+  date: '1968-05-16'
+  sources:
+  - source: lvc-ivcm-clero
+    quote: +++Jose Fernando de Faria Nasc.16/05/1968
+  - source: lvc-ivcm-site
+    quote: >-
+      Em 25/08/2023 José Fernando de Faria foi eleito e aclamado Patriarca da Igreja Veterocatólica Missionária
+  - source: lvc-iaces-clero
+    quote: Dom José Fernando de Faria, IACES Arcebispo Metropolitano Primaz da Igreja Anglo Católica
+biography: >-
+  A lista de bispos da IAL registra 'De Faria Jose Fernando', brasileiro, com 'ratificação' em Fortaleza em 2019
+  (ou seja, já tinha ordens episcopais anteriores que foram ratificadas, segundo a convenção da lista).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: através do bispo José Fernando de Faria, à época, auxiliado por dom Antônio Bessa.
-  page: '105'
+- source: lac-ial-sucessao
+  quote: >-
+    41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
+    - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
 ordinations:
 - order: episcopate
-  date: null
-  jurisdiction: null
-  principal_consecrator: leonardo-marin-saavedra
-  status: probable
+  date: '2018-07-29'
+  place: Espaço das Irmãs de N. S. da Consolata, São Paulo (SP)
+  jurisdiction: ica-brasil
+  office: diocesan
+  principal_consecrator: ricardo-vicente-dos-anjos
+  co_consecrators:
+  - altamiro-pereira-do-amaral
+  - jorge-costa
+  status: contested
   sources:
+  - source: lica-iaces-clero
+    quote: >-
+      Ordenação Episcopal: 29/07/2018 no Espaços das Irmãs de N. S. da Consolata da Igreja Católica Apostólica Romana
+      - São Paulo-SP Bispo Ordenante: + Dom Ricardo Vicente dos Anjos, ICA-Brasil Bispo co-ordenante: + Dom Jorge
+      dos Santos Costa, ICA-Brasil Bispo co-ordenante: + Dom Altamiro Pereira do Amaral, ICA-Brasil
+  - source: lica-ica-nota-esclarecimento
+    quote: >-
+      homens que se dizem sagrados bispos em São Paulo no dia 29/07/18 pela Igreja Católica Anglicana usam falsa
+      e mentirosamente o nome desta instituição eclesiástica
+  - source: lac-ial-sucessao
+    quote: >-
+      41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
+      - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
   - source: cant-novas-igrejas-2024
     quote: >-
       Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
       Unidos.
-  notes: Primaz da extinta Província Anglicana Católica do Espírito Santo.
+  - source: lica-iaces-clero
+    quote: >-
+      Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana Latina
+      Americana)
+  - source: lvc-ivcm-site
+    quote: >-
+      James Antônio Roque, bispo sênior titular da diocese do Japi da cidade de Jundiaí, Estado de São Paulo, Brasil
+      que em 22 de novembro de 2020 consagrou;
+  - source: lvc-ivcm-site
+    quote: foi consagrado bispo na Capela da Guarda Civil Metropolitana na Cidade de São Paulo
+  - source: lvc-iaces-clero
+    quote: >-
+      Ordenação Episcopal: 29/07/2018 no Espaços das Irmãs de N. S. da Consolata da Igreja Católica Apostólica Romana
+      - São Paulo-SP
+  - source: lvc-iaces-clero
+    quote: 'Bispo Ordenante: + Dom Ricardo Vicente dos Anjos, ICA-Brasil'
+  - source: lvc-iaces-clero
+    quote: 'Bispo co-ordenante: + Dom Jorge dos Santos Costa, ICA-Brasil'
+  - source: lvc-iaces-clero
+    quote: 'Bispo co-ordenante: + Dom Altamiro Pereira do Amaral, ICA-Brasil'
+  - source: lvc-iaces-clero
+    quote: >-
+      Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana Latina
+      Americana)
+  discrepancies:
+  - field: date
+    value: '2019'
+    sources:
+    - source: lac-ial-sucessao
+      quote: >-
+        41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
+        - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
+        Unidos.
+  - field: place
+    value: Fortaleza (CE)
+    sources:
+    - source: lac-ial-sucessao
+      quote: >-
+        41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
+        - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
+        Unidos.
+  - field: jurisdiction
+    value: icala
+    sources:
+    - source: lac-ial-sucessao
+      quote: >-
+        41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
+        - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
+        Unidos.
+  - field: principal_consecrator
+    value: leonardo-marin-saavedra
+    sources:
+    - source: lac-ial-sucessao
+      quote: >-
+        41st (Fortieth-First) Bishop consecrated by IAL USA/Canada: -066. DE FARIA Jose Fernando. - Married. (Ratification)
+        - Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Este bispo foi sagrado bispo por dom Leonardo Marin-Saavedra, do Movimento Anglicano Contínuo dos Estados
+        Unidos.
+    - source: lica-iaces-clero
+      quote: >-
+        Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana
+        Latina Americana)
+    - source: lvc-iaces-clero
+      quote: >-
+        Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana
+        Latina Americana)
+  - field: date
+    value: '2019-11-02'
+    sources:
+    - source: lica-iaces-clero
+      quote: >-
+        Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana
+        Latina Americana)
+    - source: lvc-iaces-clero
+      quote: >-
+        Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana
+        Latina Americana)
+  - field: jurisdiction
+    value: paces
+    sources:
+    - source: lica-iaces-clero
+      quote: >-
+        Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana
+        Latina Americana)
+    - source: lvc-iaces-clero
+      quote: >-
+        Ordenação Episcopal: 29/07/2018 no Espaços das Irmãs de N. S. da Consolata da Igreja Católica Apostólica
+        Romana - São Paulo-SP
+    - source: lvc-iaces-clero
+      quote: 'Bispo Ordenante: + Dom Ricardo Vicente dos Anjos, ICA-Brasil'
+    - source: lvc-iaces-clero
+      quote: 'Bispo co-ordenante: + Dom Jorge dos Santos Costa, ICA-Brasil'
+    - source: lvc-iaces-clero
+      quote: 'Bispo co-ordenante: + Dom Altamiro Pereira do Amaral, ICA-Brasil'
+    - source: lvc-iaces-clero
+      quote: >-
+        Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana
+        Latina Americana)
+  - field: date
+    value: '2020-11-22'
+    sources:
+    - source: lvc-ivcm-site
+      quote: >-
+        James Antônio Roque, bispo sênior titular da diocese do Japi da cidade de Jundiaí, Estado de São Paulo,
+        Brasil que em 22 de novembro de 2020 consagrou;
+    - source: lvc-ivcm-site
+      quote: foi consagrado bispo na Capela da Guarda Civil Metropolitana na Cidade de São Paulo
+  - field: place
+    value: Capela da Guarda Civil Metropolitana, São Paulo (SP)
+    sources:
+    - source: lvc-ivcm-site
+      quote: >-
+        James Antônio Roque, bispo sênior titular da diocese do Japi da cidade de Jundiaí, Estado de São Paulo,
+        Brasil que em 22 de novembro de 2020 consagrou;
+    - source: lvc-ivcm-site
+      quote: foi consagrado bispo na Capela da Guarda Civil Metropolitana na Cidade de São Paulo
+  - field: principal_consecrator
+    value: james-antonio-roque
+    sources:
+    - source: lvc-ivcm-site
+      quote: >-
+        James Antônio Roque, bispo sênior titular da diocese do Japi da cidade de Jundiaí, Estado de São Paulo,
+        Brasil que em 22 de novembro de 2020 consagrou;
+    - source: lvc-ivcm-site
+      quote: foi consagrado bispo na Capela da Guarda Civil Metropolitana na Cidade de São Paulo
+  notes: >-
+    Data e cidade concordam entre a lista de clero da IACES (que nomeia os sagrantes) e a nota da ICA de 30/07/2018,
+    que nega que a ICA tenha sagrado qualquer bispo após seu registro em cartório. A nota da ICA não nomeia os sagrados.
+    Por outro lado, a história da jurisdição afirma que Faria foi sagrado por Leonardo Marin Saavedra; o site da
+    IACES registra a ratificação em 02/11/2019 por ele. Na lista da IAL consta como 'Ratification' em Fortaleza,
+    2019: a IAL ratificou ordens que ele já tinha, em vez de conferir sagração nova. Cant (2024) diz que ele foi
+    'sagrado bispo por dom Leonardo Marin-Saavedra'. Sagrante inferido do contexto da lista (consagrações da IAL).
+    Primaz da extinta Província Anglicana Católica do Espírito Santo. Ratificação da ordenação episcopal de 29/07/2018,
+    segundo o site da própria IACES. Lista de sucessão publicada pela IVCM: James Roque consagrou José Fernando
+    de Faria em 22/11/2020 (a data aparece na frase sobre Roque e o local na frase seguinte). O site da própria
+    igreja anterior de Faria (IACES) dá outra versão: ordenação episcopal em 29/07/2018, em São Paulo, por Ricardo
+    Vicente dos Anjos, ratificada em 02/11/2019 por Leonardo Marin-Saavedra. A IVCM não menciona essas duas cerimônias;
+    pode se tratar de uma terceira consagração (condicional ou de nova linhagem) ou de uma versão simplificada.
+    Informação publicada pelo próprio site da IACES (captura de 22/10/2020). O local é descrito como espaço das
+    Irmãs da Consolata, ligado à Igreja Católica Apostólica Romana. Ratificação da ordenação episcopal de 29/07/2018,
+    segundo a IACES; local não informado. Coincide com a versão de obra de 2024, que diz que Faria foi sagrado por
+    Marin-Saavedra.
 affiliations:
+- jurisdiction: paces
+  role: other
+  role_description: arcebispo_primaz
+  start: '2018-10-11'
+  status: probable
+  sources:
+  - source: lica-iaces-historia
+    quote: >-
+      fora elevado ao encargo de Arcebispo do Brasil e Primaz de toda a América do Sul em 11/10/2018 sob as bênçãos
+      de Deus e do Patriarca Most Reverendo Dr. Heigo Ritsbek
+  - source: lvc-iaces-clero
+    quote: Dom José Fernando de Faria, IACES Arcebispo Metropolitano Primaz da Igreja Anglo Católica
+  - source: lvc-iaces-home
+    quote: Dom José Fernando de Faria - Arcebispo Primaz
+  notes: >-
+    Em 2020; em 2024 o site passa a titulá-lo 'Dom Fernando - Arcebispo Primaz'. Em 2021 registrou a IVCM, mas não
+    está claro se a IACES foi extinta ou continua.
+- jurisdiction: ivcmb
+  role: founder
+  start: '2021-04-13'
+  status: confirmed
+  sources:
+  - source: lvc-ivcm-quem-somos
+    quote: >-
+      Somos a Igreja Veterocatólica Missionária - CNPJ 41.983.570/0001-26, organizada em 13 de abril 2021 e registrada
+      no Cartório do 1º Ofício da 2ª Zona do Juízo de Vila Velha da Comarca da Capital, Registro nº 393 do Lº A-4,
+      Folhas 38 e 39 na cidade de Vila Velha, Estado do Espírito Santo por Sua beatitude  +++ José Fernando de Faria,
+      Patriarca, Arcebispo Primaz Presidente
+  - source: lvc-ivcm-cnpj
+    quote: '"nome_socio":"JOSE FERNANDO DE FARIA"'
+- jurisdiction: ivcmb
+  role: other
+  role_description: patriarca
+  start: '2023-08-25'
+  status: probable
+  sources:
+  - source: lvc-ivcm-site
+    quote: >-
+      Em 25/08/2023 José Fernando de Faria foi eleito e aclamado Patriarca da Igreja Veterocatólica Missionária
+      – IVCM, na cidade de Paracambi – RJ
+  notes: >-
+    O site já o intitula patriarca em 2021 (página 'Quem somos'); o texto dá a eleição como aclamado em 25/08/2023.
 - jurisdiction: paces
   role: founder
   status: probable
@@ -49,3 +278,85 @@ affiliations:
       do Brasil
     page: '161'
   notes: O livro diz apenas que 'ingressou'; papel não especificado.
+events:
+- type: other
+  date: '2019'
+  description: >-
+    Lista de bispos da IAL registra em Fortaleza (CE), em 2019, as sagrações/ratificações dos brasileiros José Fernando
+    de Faria (ratificação), Paulo Cesar Gomes (ratificação) e Antonio Jose Pereira-Bessa, além do argentino Cristian
+    Gerardo Romero, também em Fortaleza.
+  status: confirmed
+  sources:
+  - source: lac-ial-sucessao
+    quote: >-
+      40th (Fortieth) Bishop consecrated by IAL USA/Canada: -066. GOMES Paulo Cesar. - Single. (Ratification) -
+      Brazilian Citizen - In 2019 - Fortaleza city, Ceara, Brazil - (Still living).
+  - source: lac-ial-sucessao
+    quote: >-
+      39th ( Thirty-Nineth ) Bishop consecrated by IAL USA/Canada: -065. ROMERO Cristian Gerardo. - Married. - Argentinean
+      Citizen - in 2019 - Fortaleza city, Ceara, Brazil - (Still living).
+- type: other
+  date: 2018-07
+  description: >-
+    1º Sínodo da Província Católica Anglicana do Brasil (ICA-Brasil), em São Paulo, em julho de 2018, com aprovação
+    dos primeiros cânones e "Sagrações episcopais"; em 29/07/2018 foi sagrado José Fernando de Faria. A ICA (de
+    Orvandil) reagiu em 30/07/2018 negando ter sagrado qualquer bispo após seu registro em cartório e designado
+    bispos para Rio Grande do Sul, Espírito Santo, São Paulo e Amazônia.
+  status: probable
+  sources:
+  - source: lica-iaces-historia
+    quote: com nosso Primeiro Sínodo em São Paulo Brasil, em Julho de 2018
+  - source: lica-ica-nota-esclarecimento
+    quote: nem a ninguém designou para o Rio Grande do Sul, Espírito Santo, São Paulo e Amazônia
+- type: other
+  date: '2018-10-11'
+  description: >-
+    José Fernando de Faria é "elevado ao encargo de Arcebispo do Brasil e Primaz de toda a América do Sul" em 11/10/2018
+    pelo patriarca Heigo Ritsbek ("AngloCatholic of Estonia"), dando origem à Igreja Anglo-Católica do Brasil e
+    América do Sul (IACES).
+  status: probable
+  sources:
+  - source: lica-iaces-historia
+    quote: fora elevado ao encargo de Arcebispo do Brasil e Primaz de toda a América do Sul em 11/10/2018
+- type: other
+  date: '2021-04-13'
+  description: >-
+    Registro da IVCM (Igreja Veterocatólica Missionária) no CNPJ em Vila Velha (ES), em 13/04/2021, tendo José Fernando
+    de Faria como presidente.
+  status: confirmed
+  sources:
+  - source: lvc-ivcm-cnpj
+    quote: '"data_inicio_atividade":"2021-04-13"'
+  - source: lvc-ivcm-cnpj
+    quote: '"municipio":"VILA VELHA"'
+- type: other
+  date: '2020-10-22'
+  description: >-
+    Em 2020, a IACES afirma estar 'em plena comunhão' com a Anglo-Catholic Church (anglocatholicchurch.eu) e sob
+    o Patriarcado da Igreja Anglo-Católica de Tallinn (Estônia). Nesse mesmo site, Faria ordena clero e é apresentado
+    como arcebispo primaz. A página afirma que existem 'outros padres de outras instituições religiosas como os
+    ortodoxos, os véteros católicos, os celtas'.
+  status: probable
+  sources:
+  - source: lvc-iaces-home
+    quote: In full communion with the Anglo-Catholic Church
+  - source: lvc-iaces-home
+    quote: Estamos sob a autoridade do Patriarcado da Igreja Anglo Católica de Tallinn na Estônia - Europa.
+  - source: lvc-iaces-home
+    quote: >-
+      existem outros padres de outras instituições religiosas como os ortodoxos, os véteros católicos, os celtas
+- type: other
+  date: '2021-04-13'
+  description: >-
+    Dois clérigos da IACES em 2020 reaparecem na IVCM: Vagner Antonio Nunes, presbítero ordenado em 21/07/2019 em
+    São Paulo (por Marcos Vinicius de Souza, CASF), consta na IVCM como 'Monsenhor' acolhido em 13/04/2021, mesma
+    data do registro da IVCM; e Nildemar Andrade Santos foi consagrado bispo por Faria em 2022. Isso indica que
+    parte do clero da IACES migrou para a IVCM.
+  status: probable
+  sources:
+  - source: lvc-iaces-clero
+    quote: >-
+      Vagner Antônio Nunes Reverendo Presbítero Ordenado em 21/07/2019 em SP Natural: Piedade - SP Bispo Ordenante:
+      + Dom Marcos Vinicius de Souza, CASF
+  - source: lvc-ivcm-clero
+    quote: Vagner Antonio Nunes Nasc.02/10/1979

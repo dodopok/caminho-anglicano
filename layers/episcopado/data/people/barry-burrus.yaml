@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: barry-burrus
+name: Barry Burrus
+death:
+  date: '2009-10-21'
+  sources:
+  - source: lia-iatb-noticias-2010
+    quote: >-
+      Tivemos contato com o Bispo Barry Burrus no início da organização da nossa Jurisdição e por esse motivo o
+      primeiro nome da nossa Igreja era Igreja Anglicana Católica no Brasil.
+events:
+- type: death
+  date: '2009-10-21'
+  description: >-
+    Morte do arcebispo Barry Burrus (Igreja Católica Anglicana, EUA), em 21/10/2009; a IATB informa que o contato
+    com ele no início de sua organização levou ao primeiro nome da Igreja, 'Igreja Anglicana Católica no Brasil'.
+  status: confirmed
+  sources:
+  - source: lia-iatb-noticias-2010
+    quote: >-
+      Tivemos contato com o Bispo Barry Burrus no início da organização da nossa Jurisdição e por esse motivo o
+      primeiro nome da nossa Igreja era Igreja Anglicana Católica no Brasil.

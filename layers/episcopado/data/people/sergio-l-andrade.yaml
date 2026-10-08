@@ -8,18 +8,14 @@ aliases:
 - reverendo Sérgio
 - reverendo Sérgio Andrade
 biography: >-
-  Clérigo que permaneceu na IEAB após o cisma de 2002; instituído deão da Catedral Anglicana do Recife em 17/08/2003
-  por Robinson Cavalcanti; rompeu com a IEAB em 2017 e lidera a Igreja Anglicana da Santíssima Trindade.
+  Coadjutor da Catedral da Santíssima Trindade em 2002 e deão (título "Revmo. Deão") no calendário diocesano de
+  2004.
 sources:
-- source: cant-novas-igrejas-2024
+- source: drp-carta-pastoral-2002
   quote: >-
-    em 17 de agosto do mesmo ano, o reverendo Sérgio Andrade foi oficialmente instituído como deão, pelo bispo do
-    Recife, dom Robinson Cavancati
-  page: '110'
-- source: cant-novas-igrejas-2024
-  quote: >-
-    Já a Igreja Anglicana da Santíssima Trindade continua sua história sob a liderança do reverendo Sérgio Andrade
-  page: '113'
+    mantendo como coadjutor o Rev. Sérgio Andrade, que permaneceu leal à Igreja Episcopal Anglicana do Brasil
+- source: drp-calendario-2004
+  quote: Revmo. Deão Sérgio Fernando L. de Andrade
 affiliations:
 - jurisdiction: ieab-dar
   role: other
@@ -27,8 +23,10 @@ affiliations:
   start: '2003-08-17'
   end: '2017'
   end_reason: schism
-  status: probable
+  status: confirmed
   sources:
+  - source: drp-calendario-2004
+    quote: Revmo. Deão Sérgio Fernando L. de Andrade
   - source: cant-novas-igrejas-2024
     quote: >-
       em 17 de agosto do mesmo ano, o reverendo Sérgio Andrade foi oficialmente instituído como deão, pelo bispo
@@ -37,7 +35,10 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: a liderança do reverendo Sérgio Andrade foi fortalecida como deão
     page: '111'
-  notes: 'Local: Catedral Anglicana da Santíssima Trindade, Recife.'
+  notes: >-
+    Local: Diocese Anglicana do Recife. Título "Revmo. Deão" atestado no calendário diocesano de 2004 (nome grafado
+    Sérgio Fernando L. de Andrade); o documento não diz de qual igreja. Local: Catedral Anglicana da Santíssima
+    Trindade, Recife.
 - jurisdiction: iast
   role: founder
   start: '2017'
@@ -89,6 +90,18 @@ affiliations:
     Início e fim do vínculo não informados. Ficou na IEAB em 2002 e em 2004-2005 (assinou 'Para além das trincheiras'
     e 'Não sairemos'). Deão da Catedral da SS. Trindade desde 17/08/2003. No fim de 2016 liderou a 'Aliança de Comunidades
     Anglicanas' e em 2017 rompeu com a IEAB, fundando a Igreja Anglicana da Santíssima Trindade (independente).
+- jurisdiction: ieab-dar
+  role: other
+  role_description: coadjutor
+  status: confirmed
+  sources:
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      mantendo como coadjutor o Rev. Sérgio Andrade, que permaneceu leal à Igreja Episcopal Anglicana do Brasil
+  notes: >-
+    Local: Diocese Anglicana do Recife, Catedral da Santíssima Trindade, Recife. Atestado na carta pastoral de 1/10/2002:
+    coadjutor da Catedral da Santíssima Trindade, leal à IEAB quando o deão se desvinculou. Em 2004 aparece com
+    o título de deão (ver vínculo seguinte).
 - jurisdiction: iast
   role: clergy
   status: probable

@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ann-stewart-humphile
+name: Ann Stewart Humphile
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+sources:
+- source: drv-nota-esclarecimento-2006
+  quote: Ann Stewart Humphile
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: clero (domicílio canônico na diocese, residente no exterior)
+  status: confirmed
+  sources:
+  - source: drv-nota-esclarecimento-2006
+    quote: Ann Stewart Humphile
+  notes: >-
+    Consta em 09/11/2006 entre os clérigos residentes no exterior com domicílio canônico na Diocese do Recife.

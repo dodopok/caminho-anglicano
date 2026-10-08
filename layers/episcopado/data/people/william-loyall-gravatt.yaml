@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: william-loyall-gravatt
+name: William Loyall Gravatt
+biography: >-
+  Reitor em Norfolk (Virgínia) em 1889, presente ao culto de despedida de Morris e Kinsolving; depois bispo da Virgínia
+  Ocidental.
+sources:
+- source: liv-stokes-kinsolving
+  quote: William Loyall Gravatt, later Bishop of West Virginia
+  page: '8'
+events:
+- type: other
+  date: '1889-08-31'
+  description: >-
+    Culto de despedida em Norfolk (Virgínia) na véspera da partida de Morris e Kinsolving, com a presença de três
+    reitores que seriam depois bispos: Beverley D. Tucker, William L. Gravatt e Arthur S. Lloyd.
+  status: probable
+  sources:
+  - source: liv-stokes-kinsolving
+    quote: >-
+      The night before there had been a small service at which a few friends had gathered to bid them godspeed.
+    page: '7'
+  - source: liv-stokes-kinsolving
+    quote: >-
+      Beverley Dandridge Tucker, later Bishop of Southern Virginia; William Loyall Gravatt, later Bishop of West
+      Virginia; and Arthur Selden Lloyd, later Suffragan Bishop of New York.
+    page: '8'

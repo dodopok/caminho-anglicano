@@ -5,6 +5,8 @@ full_name: Helson Paulo Cruz
 aliases:
 - Bispo Helson
 - Dom Helson Cruz
+- Pastor Helson
+- Rev. Helson Cruz
 biography: Bispo/clérigo ligado à jurisdição ICEB; ver afirmações.
 sources:
 - source: ciceb-quemsomos
@@ -17,12 +19,27 @@ ordinations:
   office: diocesan
   status: probable
   sources:
+  - source: lie-yt-busca-helson
+    quote: Sagração do Bispo Helson e  Instituição da Província da Igreja Cristã Episcopal do Brasil
+  - source: lie-yt-busca-helson
+    quote: Transmitido há 5 anos
+  - source: lie-yt-busca-helson
+    quote: Culto Eucarístico (tarde) - 29/08/2021
+  - source: lie-yt-busca-helson
+    quote: Culto de ações de graças 18 anos da Paróquia do Redentor - 13/02/2022
+  - source: lie-fb-redentor-helson
+    quote: Nosso domingo foi de alegria com a presença do do nosso querido Bispo Helson
   - source: ier-yt-iceb-helson-provincia
     quote: Sagração do Bispo Helson e  Instituição da Província da Igreja Cristã Episcopal do Brasil
   notes: >-
-    Título do vídeo liga a sagração à "Instituição da Província da Igreja Cristã Episcopal do Brasil"; o site da
-    CICEB (ciceb-quemsomos, já na base) data a constituição da Província em dezembro de 2021, o que sugere o mesmo
-    mês/ano para a sagração, mas o vídeo não traz data nem sagrantes. Ver duvidas.
+    Data não encontrada em texto. O YouTube (consulta de 8/10/2026) mostra a transmissão feita pelo canal da Catedral
+    Betânia como "há 5 anos", enquanto a abertura do 1º Sínodo da Província aparece como "há 4 anos" e vídeos de
+    29/08/2021 e 13/02/2022 aparecem como "há 5 anos" e "há 4 anos", respectivamente; isso sugere que a transmissão
+    da sagração/instituição da Província é anterior a outubro de 2021, e não de dezembro de 2021, data que o site
+    da CICEB dá para a constituição da Província. Indício indireto, a confirmar na página do vídeo. Sagrantes não
+    informados. Título do vídeo liga a sagração à "Instituição da Província da Igreja Cristã Episcopal do Brasil";
+    o site da CICEB (ciceb-quemsomos, já na base) data a constituição da Província em dezembro de 2021, o que sugere
+    o mesmo mês/ano para a sagração, mas o vídeo não traz data nem sagrantes. Ver duvidas.
 affiliations:
 - jurisdiction: iceb
   role: diocesan_bishop
@@ -31,11 +48,42 @@ affiliations:
   sources:
   - source: ciceb-quemsomos
     quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo Helson Paulo Cruz)
+  - source: ciceb-quemsomos
+    quote: Diocese Litorânea do Nordeste do Brasil(DLNB) sediada na Catedral do Redentor.
   - source: ier-yt-iceb-helson-provincia
     quote: Sagração do Bispo Helson e  Instituição da Província da Igreja Cristã Episcopal do Brasil
   notes: >-
     Data e sagrantes não informados no site. Vínculo à diocese já consta no site da CICEB (base); aqui só a sagração.
+- jurisdiction: iceb
+  role: clergy
+  diocese: diocese-missionaria-do-nordeste-do-brasil
+  status: confirmed
+  sources:
+  - source: lie-ciceb-provincia-2014
+    quote: 'Pastores Auxiliares: Rev. Gervásio Neto, Rev. Helson Cruz, Reva. Raquel Tavares'
+  - source: lie-ciceb-catedral-2016
+    quote: Bispo Diocesano Dom Leonides Bispo Auxiliar Dom Gervásio Pastor Helson Pastora Raquel
+  notes: Em 2014 e 2016 constava como pastor/pastor auxiliar da Catedral Betânia (ainda sem título de bispo).
 events:
+- type: other
+  date: 2021-12
+  description: >-
+    Instituição da Província da Igreja Cristã Episcopal do Brasil (PICEB), com três dioceses; o site da CICEB e
+    o da Catedral Betânia a datam de dezembro de 2021, mas o vídeo de transmissão da cerimônia (junto com a sagração
+    do bispo Helson) aparece no YouTube como "há 5 anos" em outubro de 2026, o que o situaria antes de outubro de
+    2021.
+  status: contested
+  sources:
+  - source: lie-ciceb-betania-nossaigreja-2026
+    quote: >-
+      em dezembro de 2021 foi constituída a Província das Igrejas Cristãs Episcopais do Brasil, sendo eleito o Arcebispo
+      Leonides de Menezes, para nos dirigir como bispo Primaz do Brasil
+  - source: lie-yt-busca-provincia
+    quote: Abertura do Primeiro Sínodo da Província da Igreja Cristã Episcopal do Brasil
+  - source: lie-yt-busca-provincia
+    quote: Transmitido há 4 anos
+  - source: lie-yt-busca-helson
+    quote: Transmitido há 5 anos
 - type: other
   date: '2021'
   description: >-

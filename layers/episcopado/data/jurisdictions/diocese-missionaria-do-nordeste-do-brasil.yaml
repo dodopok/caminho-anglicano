@@ -5,7 +5,17 @@ type: diocese
 relations:
 - type: part_of
   target: iceb
-  status: probable
+  status: confirmed
   sources:
+  - source: lie-ciceb-catedral-2016
+    quote: Bispo Diocesano Dom Leonides Bispo Auxiliar Dom Gervásio Pastor Helson Pastora Raquel
+  - source: lie-yt-busca-gervasio
+    quote: Sermão Culto Igreja Cristã Episcopal Catedral Betânia 01.03.2020  Manhã Bispo Gervásio
   - source: ciceb-betania-historia
     quote: e o Rev. Leonides foi sagrado Bispo dessa diocese.
+  - source: lie-ciceb-organizacao-2014
+    quote: Revmo. +Leonides de Menezes Ferreira Bispo Diocesano da Diocese Missionária do Nordeste do Brasil
+  - source: lie-ciceb-organizacao-2014
+    quote: Vinculada ao Apostolado para as Nações da CCC
+  - source: lie-ciceb-provincia-2014
+    quote: 'Pastores Auxiliares: Rev. Gervásio Neto, Rev. Helson Cruz, Reva. Raquel Tavares'

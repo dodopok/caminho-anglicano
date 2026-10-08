@@ -4,15 +4,32 @@ name: Eva Milta Alves Gomes
 full_name: Eva Milta Alves Gomes
 ordinations:
 - order: diaconate
-  date: '1990'
+  date: '1990-02-04'
+  place: Santa Maria (RS)
   jurisdiction: ieab
-  status: probable
+  ordained_by: olavo-ventura-luiz
+  status: confirmed
   sources:
+  - source: lic-livro35
+    quote: 'Diaconato: 04 de fevereiro de 1990.'
+  - source: lic-livro35
+    quote: >-
+      Juntamente com cinco diáconos e três diáconas foi ordenada em Santa Maria/RS, por um grande pastor dessa Igreja:
+      Bispo Olavo Ventura Luiz.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1990 - … Eva Milta Alves Gomes
     page: '373'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Mãe de Carmen Etel Alves Gomes e de Naudal Alves Gomes; ordenada aos 59 anos. A mesma data (4 de fevereiro de
+    1990) consta para Dione Guindo dos Santos. Presbiterado em 21 de abril de 2002. Ano tirado da lista do clero
+    nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '2002-04-21'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: 'Presbiterado: 21 de abril de 2002.'
 affiliations:
 - jurisdiction: ieab
   role: clergy

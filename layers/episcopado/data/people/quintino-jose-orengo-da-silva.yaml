@@ -1,21 +1,24 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: quintino-jose-orengo-da-silva
 name: Quintino José Orengo da Silva
-biography: >-
-  Clérigo(a) da Diocese Anglicana do Recife excluído(a) da IEAB e das Sagradas Ordens em 23/08/2005 (Decreto Diocesano
-  nº 01/2005) por abandono de comunhão, por ter seguido Robinson Cavalcanti.
+biography: Arcediago em 2004, cônego em 2005 e 2007; pároco da Paróquia do Semeador em 2006.
 sources:
-- source: costa2021
-  quote: >-
-    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
-    Ordens, os clérigos a seguir mencionados: … Rev. Quintino José Orengo da Silva … Recife, 23 de agosto de 2005.
-  page: 560-561
+- source: drp-calendario-2004
+  quote: Ven. Arced. Rev. Quintino José Orengo da Silva
+- source: drp-carta-venables-pt-2005
+  quote: Rev. Côn. Quintino José O. da Silva
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
   start: '2005'
-  status: probable
+  status: confirmed
   sources:
+  - source: drv-declaracao-32
+    quote: Rev. Quintino José Orengo da Silva
+  - source: drv-nota-esclarecimento-2006
+    quote: Quintino José Orengo da Silva
+  - source: drp-boletim-oracao-2006
+    quote: Orar pela Paróquia Anglicana do Semeador; pelo Rev. Quintino
   - source: costa2021
     quote: >-
       Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
@@ -24,9 +27,33 @@ affiliations:
       mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
   notes: >-
-    Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson
-    Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005
-    é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
+    Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
+    Esclarecimento); início e fim do vínculo não informados. Local: Paróquia Anglicana do Semeador. Clérigo citado
+    como pastor/ministro da comunidade em out/nov de 2006 (boletim de oração da Secretaria de Intercessão). Anexo
+    R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti,
+    ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005 é a da exclusão
+    pela IEAB, e a adesão à DAR é anterior, sem data exata.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: arcediago
+  status: confirmed
+  sources:
+  - source: drp-calendario-2004
+    quote: Ven. Arced. Rev. Quintino José Orengo da Silva
+  notes: >-
+    Local: Diocese Anglicana do Recife. Título de arcediago atestado no calendário diocesano de 2004 (publicado
+    em 2003). Em 2005 assina como cônego e em 2006 aparece como Rev. Quintino da Paróquia do Semeador.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: conego
+  status: confirmed
+  sources:
+  - source: drp-carta-venables-pt-2005
+    quote: Rev. Côn. Quintino José O. da Silva
+  - source: drp-calendario-2007
+    quote: Rev. Côn. Quintino José Orengo da Silva
+  notes: >-
+    Assina a carta a Venables (17/10/2005) como cônego. Título de cônego no calendário diocesano de 2007.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar

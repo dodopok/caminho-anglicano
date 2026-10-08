@@ -71,13 +71,9 @@ death:
   - source: kickhofel-1995
     quote: Foi então eleito Dom Arthur Rodolpho Kratz que exerceu o cargo até 1984, quando faleceu.
     page: '260'
-  discrepancies:
-  - field: date
-    value: c.1984
-    sources:
-    - source: costa2021
-      quote: do Primaz, Arthur Rodolpho Kratz, ele exerceu as funções da Primazia da Igreja como interino.
-      page: '178'
+  - source: costa2021
+    quote: do Primaz, Arthur Rodolpho Kratz, ele exerceu as funções da Primazia da Igreja como interino.
+    page: '178'
 biography: >-
   Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em Pelotas,
   RGS, Brasil (1920-12-23). Ordenado diácono em fev/1947 e presbítero em abr/1948. Transferido para a Igreja Episcopal
@@ -380,18 +376,51 @@ events:
   - source: cant-identidades-numeros-2024
     quote: >-
       Em 04 de março de 1984, o bispo Kratz faleceu, quando faltavam quatro meses para a reunião do Sínodo seguinte.
-- type: death
-  date: 1984-03
-  description: >-
-    Morte do primaz Arthur Kratz (março de 1984); Cláudio Gastal, deão da Catedral da Santíssima Trindade (Porto
-    Alegre), já eleito bispo coadjutor, com sagração prevista para o fim de março de 1984.
-  status: probable
-  sources:
   - source: ia-ens-1984-03-22
     quote: >-
       Claudio Gastal, Dean of Holy Trinity Cathedral in Porto Alegre, was elected to that position, and his consecration
   - source: ia-ens-1984-03-22
     quote: consecration is slated for the end of March.
+  - source: kickhofel-1995
+    quote: Foi então eleito Dom Arthur Rodolpho Kratz que exerceu o cargo até 1984, quando faleceu.
+    page: '260'
+  - source: costa2021
+    quote: do Primaz, Arthur Rodolpho Kratz, ele exerceu as funções da Primazia da Igreja como interino.
+    page: '178'
+  discrepancies:
+  - field: date
+    value: c.1984
+    sources:
+    - source: costa2021
+      quote: do Primaz, Arthur Rodolpho Kratz, ele exerceu as funções da Primazia da Igreja como interino.
+      page: '178'
+- type: other
+  date: '1973'
+  description: >-
+    O Rev. Almir dos Santos integrou a Comissão de Estudos da Ordenação Feminina criada pelo Sínodo de 1973 (presidida
+    pelo bispo primaz Arthur Rodolpho Kratz); depois foi substituído pelo deão Marçal Lopes de Oliveira.
+  status: probable
+  sources:
+  - source: lib-kick-minfem
+    quote: >-
+      A comissão era formada por Dom Arthur R. Kratz, bispo primaz, Rev. Henrique Todt Jr, Rev. Laudelino Correia
+      Gusmão, Rev. Almir dos Santos (depois substituído pelo Deão Marçal Lopes de Oliveira)
+- type: other
+  date: '1980-03-02'
+  description: >-
+    Em 2 de março de 1980, na Diocese Meridional, o bispo Arthur Kratz deu a Maria Nylde Amaral da Cunha a primeira
+    ordem religiosa feminina, a Comunidade de Santa Maria; em 18 de maio de 1980, na Paróquia da Ascensão (Porto
+    Alegre), ela professou os votos como primeira freira da Ordem de Santa Maria.
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: >-
+      Em 2 de março de 1980 na Diocese Meridional, pelo Bispo Arthur Kratz, recebeu a primeira ordem religiosa feminina:
+      a Comunidade de
+  - source: lic-livro35
+    quote: >-
+      No dia 18 de maio de 1980, na Paróquia da Ascensão, em Porto Alegre/RS, proferiu seus votos, tornando-se a
+      primeira freira da Ordem de Santa Maria.
 - type: other
   date: '1971-06-19'
   description: >-
@@ -404,19 +433,3 @@ events:
       Kratz foi eleito ao episcopado no dia 19 de junho de 1971, na Paróquia da Ascensão em Porto Alegre, em concílio
       extraordinariamente convocado, tendo obtido os votos necessários no quarto escrutínio.
     page: '251'
-- type: death
-  date: '1984'
-  description: Morte de Arthur Rodolpho Kratz, primaz da IEAB
-  status: probable
-  sources:
-  - source: kickhofel-1995
-    quote: Foi então eleito Dom Arthur Rodolpho Kratz que exerceu o cargo até 1984, quando faleceu.
-    page: '260'
-- type: death
-  date: c.1984
-  description: Morte do Primaz da IEAB Arthur Rodolpho Kratz; Edmund Sherrill assumiu interinamente a Primazia.
-  status: probable
-  sources:
-  - source: costa2021
-    quote: do Primaz, Arthur Rodolpho Kratz, ele exerceu as funções da Primazia da Igreja como interino.
-    page: '178'

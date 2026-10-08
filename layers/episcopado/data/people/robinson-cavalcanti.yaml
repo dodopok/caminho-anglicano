@@ -18,6 +18,8 @@ birth:
     quote: Edward Robinson de Barros Cavalcanti nasceu no Recife, em 21 de junho de 1944.
   - source: costa2021
     quote: Faleceu na cidade de Olinda, em 26 de fevereiro de 2012.
+  - source: lrec-ultimato-robinson-bio
+    quote: Como Bispo Diocesano, ordenou 99 Diáconos e 85 Presbíteros.
   - source: cant-novas-igrejas-2024
     quote: Nascido em 21 de junho de 1944, na cidade do Recife
     page: '25'
@@ -48,6 +50,8 @@ death:
     quote: Edward Robinson de Barros Cavalcanti nasceu no Recife, em 21 de junho de 1944.
   - source: costa2021
     quote: Faleceu na cidade de Olinda, em 26 de fevereiro de 2012.
+  - source: lrec-ultimato-robinson-bio
+    quote: Como Bispo Diocesano, ordenou 99 Diáconos e 85 Presbíteros.
   - source: cant-novas-igrejas-2024
     quote: Nascido em 21 de junho de 1944, na cidade do Recife
     page: '25'
@@ -140,6 +144,12 @@ ordinations:
   - edmund-knox-sherrill
   status: confirmed
   sources:
+  - source: drv-10-anos-sagracao
+    quote: naquela manhã do domingo de 05 de outubro de 1997, tinha lugar o Rito Sacramental da minha Sagração
+  - source: drv-10-anos-sagracao
+    quote: E lá estavam as luzes do palco iluminado do Teatro Guararapes (Centro de Convenções – Olinda – PE)
+  - source: drv-peregrino-posse
+    quote: Foi o que aconteceu comigo no dia 05 de outubro de 1997.
   - source: costa2021
     quote: >-
       O novo bispo coadjutor foi sagrado no dia 05 de outubro de 1997, em cerimônia realizada no Teatro Guararapes183,
@@ -162,7 +172,7 @@ ordinations:
     quote: >-
       Em 1997, Edmund participou da consagração de Edward Robinson de Barros Cavalcanti como bispo coadjutor, que
       depois se tornaria diocesano.
-  - source: ultimato-robinson-bio
+  - source: lrec-ultimato-robinson-bio
     quote: Em 1997 foi eleito, sagrado e instituído Bispo da Diocese Anglicana do Recife
   - source: tlc-2012-02-27
     quote: Cavalcanti was consecrated as Bishop of Recife in 1997.
@@ -180,17 +190,31 @@ ordinations:
       Edmund Sherrill, Almir dos Santos e Clovis Erly Rodrigues.
     page: '186'
   notes: >-
-    Confirma a pista dos posteres (participacao de Edmund Sherrill). Eleito coadjutor em 28/06/1997 no Concilio
-    Extraordinario em Vera Cruz, Ilha de Itaparica (BA); instalado como bispo diocesano em 19/10/1997. Uma nota
-    da mesma tese (n. 225) cita "Teatro Beberibe". O proprio Robinson, em testemunho de 2004 hospedado no Projeto
-    Cantuaria, confirma que Sherrill foi um dos seus co-sagrantes. O livro não nomeia os sagrantes. O pôster só
-    diz que Sherrill 'participou'; sagrante principal desconhecido por esta fonte. O pôster da IAB (Meira) diz 'bispo
-    coadjutor, que depois se tornaria diocesano'. Data exata e sagrantes não encontrados ainda. A tese diz 'sagrado
-    pelo Primaz' sem nomeá-lo; Glauco Soares de Lima era Primaz de 1993 a 2003 segundo a mesma tese (inferência).
-    Co-sagrantes não informados. Sagrado como bispo coadjutor da Diocese Anglicana do Recife; instalado como 3º
-    diocesano em 19/10/1997. Na nota 225 (p. 243) a própria tese diz 'Robinson Cavalcanti no Teatro Beberibe, no
-    Recife' — divergência de local (ver dúvidas).
+    Relato do próprio sagrado: eleito, depois homologado, sagrado com imposição de mãos de pelo menos três bispos;
+    sagrantes não nomeados nestes textos. Foi bispo coadjutor por 'apenas quinze dias'. Confirma a pista dos posteres
+    (participacao de Edmund Sherrill). Eleito coadjutor em 28/06/1997 no Concilio Extraordinario em Vera Cruz, Ilha
+    de Itaparica (BA); instalado como bispo diocesano em 19/10/1997. Uma nota da mesma tese (n. 225) cita "Teatro
+    Beberibe". O proprio Robinson, em testemunho de 2004 hospedado no Projeto Cantuaria, confirma que Sherrill foi
+    um dos seus co-sagrantes. O livro não nomeia os sagrantes. O pôster só diz que Sherrill 'participou'; sagrante
+    principal desconhecido por esta fonte. O pôster da IAB (Meira) diz 'bispo coadjutor, que depois se tornaria
+    diocesano'. Data exata e sagrantes não encontrados ainda. A tese diz 'sagrado pelo Primaz' sem nomeá-lo; Glauco
+    Soares de Lima era Primaz de 1993 a 2003 segundo a mesma tese (inferência). Co-sagrantes não informados. Sagrado
+    como bispo coadjutor da Diocese Anglicana do Recife; instalado como 3º diocesano em 19/10/1997. Na nota 225
+    (p. 243) a própria tese diz 'Robinson Cavalcanti no Teatro Beberibe, no Recife' — divergência de local (ver
+    dúvidas).
 affiliations:
+- jurisdiction: ieab
+  role: member
+  start: '1976-06-21'
+  status: confirmed
+  sources:
+  - source: drv-dados-biograficos
+    quote: >-
+      filiou-se a então Igreja Episcopal do Brasil (IEB), Paróquia da Santíssima Trindade, pelas mãos do Bispo Dom
+      Edmund Knox Sherril, em 21 de junho de 1976
+  notes: >-
+    Local: Paróquia da Santíssima Trindade, Recife. Filiado pelas mãos do bispo Sherrill; foi depois leitor, postulante,
+    candidato, diácono e presbítero.
 - jurisdiction: ieab
   role: member
   diocese: ieab-dar
@@ -256,6 +280,16 @@ affiliations:
     quote: Edward Robinson de Barros Cavalcanti - 1997 a 2005 (deposto);
   - source: ens-102306-1-a
     quote: Finally, in June 2005, Cavalcanti was deposed on the grounds that he broke communion with the IEAB
+  - source: drv-resgatando-iv
+    quote: >-
+      O terceiro Bispo de nossa Diocese – primeiro nativo e primeiro eleito localmente – é o Revmo. Edward ROBINSON
+      de Barros CAVALCANTI
+  - source: drv-peregrino-posse
+    quote: >-
+      fui instituído no dia 19 do mesmo mês, em uma cerimônia na nossa saudosa (hoje ocupada por terceiros) Catedral
+      Anglicana da Santíssima Trindade
+  - source: drv-peregrino-posse
+    quote: Fui um Bispo Coadjutor por apenas quinze dias, pois, com a renúncia do Bispo Clóvis Rodrigues
   - source: cant-novas-igrejas-2024
     quote: >-
       em janeiro de 2005, o Conselho Executivo do Sínodo da IEAB declarou a deposição de dom Robinson Cavalcanti
@@ -291,6 +325,15 @@ affiliations:
       Como consequência do contínuo enfrentamento às decisões da Câmara Episcopal, em 10 de junho de 2005, Edward
       Robinson de Barros Cavalcanti foi deposto de todos os seus cargos na Igreja Episcopal Anglicana do Brasil
     page: '223'
+  notes: >-
+    Fonte o apresenta como terceiro bispo da diocese (após Sherrill e Clóvis Erly Rodrigues), primeiro nativo e
+    primeiro eleito localmente. Instituição como titular em 19/10/1997, na Catedral da Santíssima Trindade, Recife,
+    após a renúncia de Clóvis Erly Rodrigues. Robinson considerou a deposição nula e manteve-se como bispo da maioria
+    das paróquias. Anexo D da tese (bispos por diocese). Anexo D marca "(Deposto)"; o dia 10/06/2005 vem do Anexo
+    Q (Processo Canônico nº 001/2005). Antes disso: suspensão preventiva em 18/02/2005 (Anexo N). Eleito bispo coadjutor
+    em 28/06/1997 (Concílio Extraordinário em Vera Cruz, Itaparica), sagrado 05/10/1997, instalado 19/10/1997. Suspenso
+    preventivamente em 18/02/2005 (Resolução 001/2005); deposto em 10/06/2005 pelo Primaz Orlando Santos de Oliveira
+    após o Tribunal Superior Eclesiástico reconhecer sua culpabilidade (Processo Canônico 001/2005).
   discrepancies:
   - field: start
     value: '1997-10-05'
@@ -317,13 +360,6 @@ affiliations:
         em janeiro de 2005, o Conselho Executivo do Sínodo da IEAB declarou a deposição de dom Robinson Cavalcanti
         do ofício episcopal, acusando-o de insubordinação e quebra da comunhão eclesiástica.
       page: '26'
-  notes: >-
-    Robinson considerou a deposição nula e manteve-se como bispo da maioria das paróquias. Anexo D da tese (bispos
-    por diocese). Anexo D marca "(Deposto)"; o dia 10/06/2005 vem do Anexo Q (Processo Canônico nº 001/2005). Antes
-    disso: suspensão preventiva em 18/02/2005 (Anexo N). Eleito bispo coadjutor em 28/06/1997 (Concílio Extraordinário
-    em Vera Cruz, Itaparica), sagrado 05/10/1997, instalado 19/10/1997. Suspenso preventivamente em 18/02/2005 (Resolução
-    001/2005); deposto em 10/06/2005 pelo Primaz Orlando Santos de Oliveira após o Tribunal Superior Eclesiástico
-    reconhecer sua culpabilidade (Processo Canônico 001/2005).
 - jurisdiction: diocese-anglicana-recife
   role: founder
   start: '2005'
@@ -614,6 +650,24 @@ events:
   sources:
   - source: costa2021
     quote: Faleceu na cidade de Olinda, em 26 de fevereiro de 2012.
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Na noite de 26 de fevereiro de 2012, Robinson e a sua esposa Miriam foram assassinados pelo filho adotivo
+      do casal
+    page: '29'
+  - source: cant-novas-igrejas-2024
+    quote: O casal foi sepultado no dia 29 de fevereiro, no Cemitério Morada da Paz, em Paulista.
+    page: '30'
+  - source: iab-poster-linhagem-meira
+    quote: Robinson foi assassinado em 2012, sem deixar sucessores diretos
+  - source: costa2021
+    quote: >-
+      Na noite de 26 de fevereiro de 2012, Robinson e a sua esposa Miriam foram assassinados pelo filho adotivo
+      do casal
+    page: '251'
+  - source: costa2021
+    quote: O casal foi sepultado no dia 29 de fevereiro, no Cemitério Morada da Paz, em Paulista.
+    page: '252'
 - type: deposition
   date: '2005-06-17'
   description: >-
@@ -798,6 +852,684 @@ events:
   sources:
   - source: ieab-2005-cbispos-cantuaria
     quote: mente que lá encontrou Robinson Cavalcanti e Miguel Uchôa, “em nome” da IEAB.
+- type: other
+  date: '2002-10-01'
+  description: >-
+    Segundo a carta pastoral de Robinson Cavalcanti, o então deão da Catedral da Santíssima Trindade havia sinalizado
+    a possibilidade de vinculação à "Igreja Episcopal Carismática"; a carta diz ainda que ele teria recebido a promessa
+    de ser designado bispo.
+  status: probable
+  sources:
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      veiculou esclarecimentos sobre a chamada “Igreja Episcopal Carismática”, para quem o ex-deão sinalizou a possibilidade
+      de vinculação
+- type: other
+  date: '2003-10-17'
+  description: >-
+    Robinson Cavalcanti afirma, em pronunciamento de 17/10/2003, que enfrentou três grupos cismáticos na Diocese
+    Anglicana do Recife e que os "grupos cismáticos (03)" a deixaram no ano anterior (2002); declara ainda que nunca
+    deixará a Comunhão Anglicana.
+  status: confirmed
+  sources:
+  - source: drp-coerencia-evangelica-2003
+    quote: Enfrentei três grupos cismáticos na DAR (com simpatias alhures...).
+  - source: drp-coerencia-evangelica-2003
+    quote: os grupos cismáticos (03) que nos deixaram no ano passado
+  - source: drp-coerencia-evangelica-2003
+    quote: Olinda (PE), 17 de Outubro de 2003.
+- type: other
+  date: '1998'
+  description: >-
+    Robinson Cavalcanti declara ter participado, como bispo-eleito, da Consulta da Ekklesia em Dallas (EUA) e do
+    diálogo em Lambeth 1998 que resultou na Resolução 1.10 sobre sexualidade humana.
+  status: confirmed
+  sources:
+  - source: drp-coerencia-evangelica-2003
+    quote: quando compareci à Consulta da Ekklesia em Dalas, Estados Unidos
+  - source: drp-coerencia-evangelica-2003
+    quote: Participei ativamente (e claramente) do diálogo que uniu as correntes históricas em Lambeth 1998
+- type: other
+  date: '2004-04-24'
+  description: >-
+    Culto de ação de graças pelo 2º ano de sagração do Bispo Sufragâneo Dom Filadelfo Oliveira, na Catedral Anglicana
+    da Santíssima Trindade (24/4/2004, 19h); e culto pelo 7º ano de sagração de Dom Robinson Cavalcanti na Com-Catedral
+    da Ressurreição, em João Pessoa (16/10/2004).
+  status: confirmed
+  sources:
+  - source: drp-calendario-2004
+    quote: >-
+      24 – Culto em Ação de Graças pelo 2º ano de Sagração – Revmo. Dom Filadelfo Oliveira – Local: Catedral Anglicana
+      da SS. Trindade – 19h
+  - source: drp-calendario-2004
+    quote: >-
+      Culto em Ação de Graças pelo 7ª Ano de Sagração do Revmo. Dom Robinson Cavalcanti – Local: Com-Catedral da
+      Ressurreição – João Pessoa
+- type: other
+  date: '2004-09-24'
+  description: >-
+    Decisão do Bispo Diocesano Robinson Cavalcanti de, "por tempo indeterminado", não requerer assistência nem ações
+    do Bispo Sufragâneo Filadelfo Oliveira Neto (comunicado aos párocos e ministros encarregados em 24/9/2004),
+    com base no cânon que define o sufragâneo como assistente que age sob a direção do diocesano.
+  status: confirmed
+  sources:
+  - source: drp-comunicado-2004
+    quote: 'Tendo em vista os últimos acontecimentos decidimos, por tempo indeterminado:'
+  - source: drp-comunicado-2004
+    quote: não requerer assistência do Bispo Sufragâneo;
+  - source: drp-comunicado-2004
+    quote: 'BISPO SUFRAGÂNEO: Revm.o Dom Filadelfo Oliveira Neto, OSE'
+- type: other
+  date: '2004-12-04'
+  description: >-
+    O Bispo Diocesano reitera a convocação do XXIV Concílio Diocesano Ordinário (2 a 4/12/2004), convoca um Concílio
+    Extraordinário para a manhã de 4/12/2004 e anuncia ordenações no culto de encerramento na noite de 4/12/2004.
+  status: confirmed
+  sources:
+  - source: drp-convocacao-concilio-2004
+    quote: >-
+      reitera a Convocação do XXIV Concílio Diocesano Ordinário da Diocese Anglicana do Recife, para os dias 02
+      a 04 de dezembro próximo, e convoca um Concílio Extraordinário para a manhã do dia 04 do referido mês
+  - source: drp-convocacao-concilio-2004
+    quote: Ordenações serão realizadas no Culto de Encerramento, na noite do dia 04.
+- type: other
+  date: '2004-10-16'
+  description: >-
+    Documento "Compromisso do Recife", firmado por clérigos e leigos no I Encontro Diocesano de Liderança (16/10/2004):
+    afirma a Resolução 1.10 de Lambeth 1998 como pré-condição para a ordenação e para o relacionamento com qualquer
+    segmento da Comunhão Anglicana, discorda da "Supervisão Episcopal Especial" imposta pela Câmara dos Bispos a
+    setores da Diocese e da medida da JUNET de transferir verbas da tesouraria diocesana para o Bispo Sufragâneo,
+    e acompanha os estudos sobre realinhamentos na Comunhão Anglicana.
+  status: confirmed
+  sources:
+  - source: drp-compromisso-recife-2004
+    quote: >-
+      Na discordância com a “Supervisão Episcopal Especial”, imposta pela Câmara dos Bispos a setores da nossa Diocese
+  - source: drp-compromisso-recife-2004
+    quote: transferindo-as para a pessoa física do Bispo Sufragâneo
+  - source: drp-compromisso-recife-2004
+    quote: Documento do I Encontro Diocesano de Liderança – Recife (PE), 16 de Outubro de 2004
+- type: other
+  date: '2005-09-27'
+  description: >-
+    Reunião no Centro Diocesano Arcebispo George Carey, Recife, em 27/9/2005, sobre "A DAR e o Futuro da Comunhão
+    Anglicana", com o Rev. Côn. Bill Atwood, Secretário Geral da Ekklesia e da CAPAC, que permaneceria em Recife
+    de 27 a 29/9/2005; convocados o Conselho Diocesano, arcediagos, secretariado, clero, ministros leigos, candidatos
+    e postulantes.
+  status: confirmed
+  sources:
+  - source: drp-convite-bill-2005
+    quote: Com o Rev. Côn. BILL ATWOOD, Secretário Geral da Ekklesia e da CAPAC. TERÇA-FEIRA, dia 27/09
+  - source: drp-convite-bill-2005
+    quote: O Rev. Côn. Bill Atwood estará conosco no período de 27 a 29/09/2005.
+  - source: drp-convite-bill-2005
+    quote: O Bispo Diocesano convoca o Conselho Diocesano, Arcediagos, Secretariado, Clero
+- type: other
+  date: '2005-09-24'
+  description: >-
+    Segundo o requerimento-modelo distribuído às paróquias e missões, a Diocese Anglicana do Recife vivia em outubro
+    de 2005 uma suspensão do Bispo Diocesano Robinson Cavalcanti pelo Primaz da IEAB, Orlando Santos de Oliveira
+    (processo canônico 001/2005); uma "excomunhão" dos clérigos da DAR pelo Bispo Sufragâneo Filadelfo Oliveira
+    Neto (Decreto Diocesano nº 001/2005); e o acolhimento de Robinson e de todo o clero pelo Primaz do Cone Sul,
+    Gregory J. Venables, a partir de 24/9/2005, em "status de acolhimento extraprovincial" até decisão do Painel
+    de Referência.
+  status: confirmed
+  sources:
+  - source: drp-requerimento-age-2005
+    quote: >-
+      em virtude da suspensão imposta ao Bispo Diocesano da DAR, Revmo. Dom Edward Robinson de Barros Cavalcanti
+      pelo Bispo Primaz da IEAB, Revmo. Orlando Santos de Oliveira, conforme processo canônico 001/2005
+  - source: drp-requerimento-age-2005
+    quote: >-
+      em virtude da excomunhão dos clérigos da DAR pelo Bispo Sufragâneo da DAR, Revmo. Filadelfo Oliveira Neto,
+      conforme Decreto Diocesano nº001/2005
+  - source: drp-requerimento-age-2005
+    quote: >-
+      recebendo o Bispo Robinson e todo o Clero da DAR sob seu ministério pastoral, a partir do dia 24 de setembro
+      de 2005, criando um status de acolhimento extraprovincial
+- type: other
+  date: '2005-10-09'
+  description: >-
+    Culto Solene em Ação de Graças pelo 8º ano de sagração de Dom Robinson Cavalcanti, em 9/10/2005, às 10h, na
+    Paróquia Anglicana do Espírito Santo, Jaboatão dos Guararapes (PE).
+  status: confirmed
+  sources:
+  - source: drp-acao-gracas-2005
+    quote: >-
+      convida V.Sa. e sua família para o Culto Solene em Ação de Graças pelo 8º ano de sua Sagração, a ter lugar
+      no dia 09 de outubro, às 10h, na Paróquia Anglicana do Espírito Santo, Jaboatão dos Guararapes
+- type: other
+  date: 2005-10
+  description: >-
+    Conferência "Crescendo Juntos" da Diocese Anglicana do Recife (outubro de 2005), iniciada no domingo com o culto
+    dos 8 anos de sagração do bispo, com conferencistas estrangeiros: John Sutton (SAMS, Inglaterra), Richard Hines
+    (SOMA, EUA), Alfredo Cooper (Igreja da Trindade, Santiago do Chile) e Chris Sugden (Anglican Mainstream, Inglaterra),
+    além do Bispo Robinson Cavalcanti, Miguel Uchôa (reitor da PAES) e outros clérigos locais.
+  status: confirmed
+  sources:
+  - source: drp-crescendo-juntos-2005
+    quote: Estrangeiros presentes estarão no culto de ação de graças dos 8 anos de Sagração do Bispo
+  - source: drp-crescendo-juntos-2005
+    quote: Painel Presença Missionária na América do Sul. John Sutton SAMS Inglaterra
+  - source: drp-crescendo-juntos-2005
+    quote: Crescimento e Renovação na América Latina Richard Hines EUA SOMA
+  - source: drp-crescendo-juntos-2005
+    quote: Alfredo CooperIgreja da Trindade Santiago do Chile
+  - source: drp-crescendo-juntos-2005
+    quote: Chris Sudgen – Anglican Mainstream – Inglaterra
+- type: other
+  date: '2006-12-08'
+  description: >-
+    Concílio Diocesano Extraordinário reunido em Conde (PB), em 8/12/2006, aprova os novos Cânones Diocesanos da
+    Diocese do Recife: estabelece jurisdição sobre BA, SE, AL, PE, PB, RN, CE, MA e PI; admite até dois bispos sufragâneos;
+    define a Igreja Catedral do Bom Samaritano (Boa Viagem, Recife) como sé, regida por um Cabido; prevê arcediagados
+    com titular designado pelo bispo dentre os presbíteros, com mandato anual renovável; institui o Diaconato Permanente
+    e o Ministério Ordenado Auxiliar; e condiciona as relações com outras províncias e dioceses à não aceitação
+    da prática homoerótica e da bênção de uniões do mesmo sexo.
+  status: confirmed
+  sources:
+  - source: drp-canones-2006
+    quote: Aprovado no Concílio Diocesano Extraordinário
+  - source: drp-canones-2006
+    quote: Conde (PB), 08 de dezembro de 2006.
+  - source: drp-canones-2006
+    quote: >-
+      A DR exerce a sua jurisdição nos Estados da Bahia, Sergipe, Alagoas, Pernambuco, Paraíba, Rio Grande do Norte,
+      Ceará, Maranhão e Piauí.
+  - source: drp-canones-2006
+    quote: Pode haver na Diocese até 02 (dois) Bispos Sufragâneos
+  - source: drp-canones-2006
+    quote: >-
+      A Igreja Catedral do Bom Samaritano, Boa Viagem, em Recife-PE, é a Sé da Diocese do Recife, e a Paróquia do
+      mesmo nome, regida por um Cabido.
+  - source: drp-canones-2006
+    quote: >-
+      Cada Arcediagado terá como titular 01 (um(a)) Arcediago(a), designado(a) pelo(a) Bispo(a) dentre os(as) Presbíteros(as)
+      da Diocese, com mandato anual, renovável
+  - source: drp-canones-2006
+    quote: É instituído nesta Diocese o Diaconato Permanente
+  - source: drp-canones-2006
+    quote: É instituído na Diocese do Recife o Ministério Ordenado Auxiliar (MOA)
+- type: other
+  date: '2006-12-28'
+  description: >-
+    Resolução Diocesana nº 003/2006, do Bispo Diocesano Robinson Cavalcanti (28/12/2006): determina que os materiais
+    didáticos de educação religiosa (particularmente da Escola Bíblica Dominical) sejam produções diocesanas, traduções
+    de textos anglicanos ou produções não denominacionais, a partir de 1/1/2007.
+  status: confirmed
+  sources:
+  - source: drp-resolucao-003-2006
+    quote: Resolução Diocesana no 003/2006
+  - source: drp-resolucao-003-2006
+    quote: Recife (PE), 28 de dezembro de 2006.
+  - source: drp-resolucao-003-2006
+    quote: Art. 2º – A presente Resolução entrará em vigor em 01 de janeiro de 2007
+- type: other
+  date: '2007'
+  description: >-
+    Calendário diocesano de 2007: 19/5 culto de ação de graças pelo 31º aniversário da Diocese do Recife; 6/10 culto
+    pelos 10 anos de sagração de Dom Robinson Cavalcanti; 6 a 8/12 XXVII Concílio Diocesano; reuniões mensais de
+    Secretariado, Conselho Diocesano e Arcediagos; Centro Diocesano denominado "Arcebispo George Carey".
+  status: confirmed
+  sources:
+  - source: drp-calendario-2007
+    quote: 19 – Culto de Ação de Graças – 31º Aniversário da Diocese do Recife
+  - source: drp-calendario-2007
+    quote: 06 – Culto em Ação de Graças pelo 10º Ano de Sagração do Revmo. Dom Robinson Cavalcanti
+  - source: drp-calendario-2007
+    quote: 06 a 08 – XXVII Concílio Diocesano
+- type: other
+  date: '2007-09-12'
+  description: >-
+    Carta fraternal de Robinson Cavalcanti às jurisdições do "Movimento Anglicano Continuante" no Brasil (Paripueira,
+    AL, 12/9/2007): recorda a proposta do Movimento Por Uma Causa Comum no país (documento básico "Declaração da
+    Boa Viagem"), avalia que nunca se chegou ao nível de entrosamento que justificasse uma Rede e propõe uma parada
+    de avaliação, questionando a própria existência da Causa Comum como movimento; informa que fora convidado para
+    a instalação do Colégio dos Bispos do Movimento Causa Comum, em Pittsburgh (25 a 28/9/2007). Assina como "Bispo
+    Diocesano do Recife – Comunhão Anglicana, sob Supervisão Primacial da Igreja Anglicana do Cone Sul da América".
+  status: confirmed
+  sources:
+  - source: drp-carta-fraternal-2007
+    quote: >-
+      lançamos a proposta do Movimento Por Uma Causa Comum em nosso País, cujo documento básico a “Declaração da
+      Boa Viagem”
+  - source: drp-carta-fraternal-2007
+    quote: a própria existência da Causa Comum como um Movimento deve ser questionada
+  - source: drp-carta-fraternal-2007
+    quote: >-
+      tendo como hospedeira a Diocese de Pittsburg, estará sendo instalado o Colégio dos Bispos do Movimento Causa
+      Comum
+  - source: drp-carta-fraternal-2007
+    quote: Bispo Diocesano do Recife – Comunhão Anglicana
+  - source: drp-carta-fraternal-2007
+    quote: Paripueira (AL), 12 de setembro de 2007.
+- type: other
+  date: '2007-10-21'
+  description: >-
+    Boletim nº 41/2007 da Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes, 21/10/2007): equipe pastoral
+    com Miguel Uchôa (reitor); congregações Missão Esperança (Candeias), Missão Ressurreição (Vitória de Santo Antão),
+    Paróquia Gravatá e Paróquia Jesus de Nazaré (Gaibu); anuncia confirmação em 18/11/2007 com a presença do Bispo
+    D. Robinson.
+  status: confirmed
+  sources:
+  - source: drp-boletim-paes-2007
+    quote: Boletim nº 41/2007 – Jaboatão dos Guararapes 21 de Outubro de 2007.
+  - source: drp-boletim-paes-2007
+    quote: 'Equipe Pastoral: Miguel Uchôa (Reitor)'
+  - source: drp-boletim-paes-2007
+    quote: >-
+      Domingo, 18 de Novembro teremos nossa Confirmação de 2007, quando o Bispo D. Robinson estará entre nós
+- type: other
+  date: 1977/1985
+  description: >-
+    O bispo Sherrill criou o NAET (Núcleo de Estudos Anglicanos), onde estudaram Ian Meldrum, Robinson Cavalcanti
+    e Antônio Carlos (da Bahia); também foram ordenados no período Sherrill Josephino Lobato (Belém) e um fazendeiro
+    japonês, ministro local. Washington Franco foi deixado já preparado para a ordenação.
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      onde estudaram três dos seus ordinandos, os futuros reverendos: Ian Meldrum, Robinson Cavalcanti e Antônio
+      Carlos (da Bahia)
+  - source: drv-resgatando-ii
+    quote: >-
+      Os outros Ministros Ordenados durante o período Sherrill foram: Josephino Lobato, de Belém-PA e um fazendeiro
+      japonês
+  - source: drv-resgatando-ii
+    quote: Deixou o Bispo, ao final, já preparado o processo do Postulante e depois Rev. Washington Franco.
+- type: other
+  date: '1963-10-31'
+  description: >-
+    Robinson Cavalcanti foi confirmado na Igreja Evangélica Luterana do Brasil (IELB) em 31 de outubro de 1963,
+    antes de filiar-se à Igreja Episcopal do Brasil.
+  status: confirmed
+  sources:
+  - source: drv-dados-biograficos
+    quote: >-
+      Em 31 de outubro de 1963 (Dia da Reforma) foi confirmado na Igreja Evangélica Luterana do Brasil (IELB).
+- type: other
+  date: '2004'
+  description: >-
+    Balanço do episcopado de Robinson Cavalcanti em 2004: ordenou 57 diáconos e 49 presbíteros; em sete anos abriram-se
+    34 das 44 comunidades da Diocese Anglicana do Recife; foi presidente da Junta Nacional de Educação Teológica
+    (JUNET) da IEAB.
+  status: confirmed
+  sources:
+  - source: drv-dados-biograficos
+    quote: Como Bispo Diocesano, ordenou 57 Diáconos e 49 Presbíteros.
+  - source: drv-dados-biograficos
+    quote: Nesses sete anos foram abertas 34 das presentes 44 comunidades da Diocese Anglicana do Recife
+  - source: drv-dados-biograficos
+    quote: Na IEAB foi presidente da Junta Nacional de Educação Teológica – JUNET.
+- type: other
+  date: '2000'
+  description: >-
+    Em 2000 o Sínodo Geral da IEAB, com a concordância do Concílio Diocesano do Recife, aprovou a criação do Distrito
+    Missionário da Amazônia (Amazonas, Roraima, Pará e Amapá) e do Distrito Missionário do Oeste (Acre e Rondônia,
+    da Diocese do Recife, e outros estados); o território da Diocese do Recife passou a ser os nove estados do Nordeste.
+    Em agosto o bispo do Recife transmitiu a jurisdição ao bispo primaz em culto solene.
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      aprovou a criação do Distrito Missionário da Amazônia (Amazonas, Roraima, Pará e Amapá), e do Distrito Missionário
+      do Oeste (Acre e Rondônia da DAR e outros Estados de outras Dioceses)
+  - source: drv-resgatando-iv
+    quote: Desde então o território da DAR passou a ser os nove Estados da região Nordeste.
+- type: other
+  date: '1998'
+  description: >-
+    Robinson Cavalcanti foi o único delegado brasileiro a votar a favor da Resolução 1.10 (sexualidade humana) na
+    Conferência de Lambeth de 1998, segundo seu relato.
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: foi o único delegado brasileiro a votar favoravelmente à Resolução 1.10 sobre Sexualidade Humana
+- type: other
+  date: 1997/1998
+  description: >-
+    Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes) foi reconhecida por Robinson, ainda bispo eleito,
+    passando de Ponto Missionário diretamente a Paróquia.
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      reconhecer, confirmar e empossar membros e clero da Paróquia Anglicana do Espírito Santo (até então oficialmente
+      “não existente”), que passou de Ponto Missionário Anglicano diretamente para Paróquia
+- type: other
+  date: 1998/2002
+  description: >-
+    Reorganização diocesana sob Robinson: criação da Igreja Catedral com deão e cabido, arcediagados e secretarias,
+    seminários menores ITAR (João Pessoa) e IAT (Recife, depois Olinda) e do Centro Diocesano George Carey.
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: Foi criada a Igreja Catedral, com seu Deão e Cabido
+  - source: drv-resgatando-iv
+    quote: >-
+      Dois Seminários Menores foram estabelecidos: o ITAR, em João Pessoa-PB e o IAT, em Recife, depois em Olinda-PE.
+- type: other
+  date: 1999/2000
+  description: >-
+    Depois de uma 'Confraternização de Natal' em 1999, Paulo Garcia e Sebastião Gameleira teriam instigado clérigos
+    e ministros leigos contra o bispo diocesano; houve audiência presidida pelo bispo primaz, em que quase todo
+    o clero declarou solidariedade ao bispo. Segundo a fonte, nesse período era criada a Igreja Episcopal Carismática
+    do Brasil, para a qual saíram o Rev. Antônio Carlos (João Pessoa) e o ministro leigo Antônio Eça (Recife).
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      os reverendos: Paulo Garcia e Sebastião Gameleira instigaram clérigos e ministros leigos contra o Bispo Diocesano
+  - source: drv-resgatando-iv
+    quote: >-
+      enquanto (na surdina) era criada a Igreja Episcopal Carismática do Brasil, saindo para ela – no primeiro episódio
+      cismático – o Rev. Antônio Carlos, em João Pessoa-PB e o ML. Antônio Eça, no Recife-PE
+- type: other
+  date: '2003'
+  description: >-
+    Em junho de 2003 os bispos e o Conselho Diocesano do Recife emitiram 'A Afirmação do Recife', condenando as
+    decisões de New Westminster (Canadá) e New Hampshire (EUA) e reiterando a Resolução 1.10 de Lambeth; em dezembro
+    de 2003 o Concílio Diocesano (João Pessoa) aprovou dispositivo canônico limitando relações institucionais a
+    entidades que subscrevessem a Resolução 1.10.
+  status: probable
+  sources:
+  - source: drv-resgatando-v
+    quote: >-
+      Os Bispos e o Conselho Diocesano da DAR, em junho daquele ano, emitiram um documento “A Afirmação do Recife”
+  - source: drv-resgatando-v
+    quote: No Concílio Diocesano de dezembro de 2003, em João Pessoa-PB, foi aprovado um dispositivo canônico
+- type: other
+  date: '2004'
+  description: >-
+    Em 2004 Robinson Cavalcanti participou, em Akron (Ohio, EUA), de confirmação coletiva de 111 pessoas, ao lado
+    de bispos aposentados, para famílias de paróquias da Diocese de Ohio que não aceitavam a confirmação pelo bispo
+    local, que votara a favor e participara da sagração de Gene Robinson.
+  status: probable
+  sources:
+  - source: drv-resgatando-v
+    quote: >-
+      para realizar uma cerimônia pública e coletiva de Confirmação de 111 pessoas, no recinto do auditório da Igreja
+      Ortodoxa Romena, na cidade de Akkron
+- type: other
+  date: 2004-12
+  description: >-
+    O XXIV Concílio Diocesano do Recife foi 'suspenso' por decreto do Primaz da IEAB 48 horas antes de começar;
+    os delegados presentes decidiram realizá-lo mesmo assim, aprovaram artigo doutrinário nos cânones e enviaram
+    carta aberta ao arcebispo de Cantuária e aos primazes pedindo 'Supervisão Primacial Adequada Alternativa com
+    Jurisdição'. Bispos de São Paulo e Curitiba e dois clérigos e dois leigos requereram processo disciplinar contra
+    o bispo diocesano.
+  status: probable
+  sources:
+  - source: drv-resgatando-v
+    quote: >-
+      o XXIV Concílio Diocesano, convocado publicamente um ano antes, foi “suspenso” por um Decreto do Primaz
+  - source: drv-resgatando-v
+    quote: >-
+      Os Bispos Diocesanos de São Paulo e Curitiba, mais dois clérigos e dois leigos “opinionistas” da DAR entram
+      com um pedido de abertura de Processo Disciplinar contra o Bispo Diocesano da DAR
+- type: other
+  date: '2005-04-09'
+  description: >-
+    Em 09/04/2005 o bispo Robinson comunicou ao clero que o relatório da Comissão Provincial de Investigação, acolhido
+    pelo Primaz e pelo Procurador Geral da IEAB (Celso Franco de Oliveira), fora encaminhado ao Tribunal Superior
+    Eclesiástico, presidido pelo bispo aposentado Clóvis Erly Rodrigues, citando como acusados vários clérigos do
+    Recife (Miguel Uchoa, Estevão Menezes, Fernando Acosta, Ian Meldrum, Siméa Meldrum, Juciara, Luiz Souza, Manoel
+    Almeida, Maria Gorete, Maurício Coelho, Raniere Almeida) e recomendando protesto à SAMS pela atuação dos missionários
+    Marcus Throup, Ian e Siméa Meldrum.
+  status: confirmed
+  sources:
+  - source: drv-carta-clero-processo-2005
+    quote: >-
+      Relatório esse acolhido pelo Primaz e pelo Procurador Geral da IEAB Dom Celso Franco de Oliveira, e ora encaminhado
+      ao Tribunal Superior Eclesiástico, presidido pelo Bispo aposentado Dom Clóvis Erly Rodrigues, para julgamento.
+- type: other
+  date: '2005-06-27'
+  description: >-
+    Em carta de 27/06/2005 ao arcebispo de Cantuária e aos primazes, a Diocese Anglicana do Recife (Robinson Cavalcanti
+    e Maurício R. Fernandes Coelho, presidente do Conselho Diocesano) pede a revogação da deposição do bispo diocesano,
+    a transferência da diocese a outra província, a criação de um arcediagado especial não territorial para a minoria
+    e uma comissão bilateral; afirma que o Primaz depôs o bispo antes de qualquer ação do Painel de Referência e
+    convoca Concílio Extraordinário para 6 de agosto.
+  status: confirmed
+  sources:
+  - source: drv-carta-cantuaria
+    quote: Recife, 27 de junho de 2005.
+  - source: drv-carta-cantuaria
+    quote: >-
+      e depôs o Bispo Diocesano do Recife antes que qualquer ação do Painel de Referência pudesse ser tomada
+  - source: drv-carta-cantuaria
+    quote: Revogação imediata da deposição do Bispo Diocesano
+- type: other
+  date: 2005-06
+  description: >-
+    Segundo entrevista do Rev. Estevão Menezes ao FolhaGospel.com (21/06/2005), logo após a notícia da deposição
+    o bispo Robinson manteve a agenda: ordenou cinco novos pastores na Con-Catedral da Ressurreição (João Pessoa)
+    e confirmou mais de 90 pessoas na Paróquia do Espírito Santo (Jaboatão); a sentença foi atribuída ao bispo primaz
+    Orlando Santos de Oliveira.
+  status: probable
+  sources:
+  - source: drv-entrevista-estevao-2005
+    quote: >-
+      ordenou 5 novos pastores na Con-Catedral da Ressurreição, João Pessoa, e confirmou (profissão de fé) mais
+      de 90 novos membros na Paróquia Anglicana do Espírito Santo, em Jaboatão.
+  - source: drv-entrevista-estevao-2005
+    quote: Das alegações do bispo primaz, Dom Orlando Santos de Oliveira
+- type: other
+  date: '2005-07-28'
+  description: >-
+    Em 28/07/2005, 38 clérigos do Recife responderam ao bispo sufragâneo Filadelfo Oliveira Neto que as decisões
+    institucionais haviam sido tomadas em concílio e que suspendiam o relacionamento com o 'estamento de poder'
+    da IEAB, não com a instituição, mantendo plena comunhão com o bispo diocesano Robinson Cavalcanti.
+  status: confirmed
+  sources:
+  - source: drv-carta-filadelfo
+    quote: >-
+      Em resposta a vossa carta de 04 de julho de 2005, dirigida aos clérigos desta Diocese, abaixo relacionados
+  - source: drv-carta-filadelfo
+    quote: mantendo plena comunhão com o bispo diocesano Revmo Dom Edward Robinson de Barros Cavalcanti
+- type: other
+  date: '2005-11-14'
+  description: >-
+    Em 2005 a Câmara dos Bispos da IEAB apresentou ao arcebispo de Cantuária (carta de 14/11/2005, assinada por
+    doze bispos) a versão de que a deposição de Robinson Cavalcanti decorreu de julgamento do Tribunal Superior
+    Eclesiástico, homologado unanimemente pela Câmara, e de que os 32 clérigos incorreram em abandono da comunhão;
+    criticou a recepção do bispo por Gregory Venables (Cone Sul).
+  status: confirmed
+  sources:
+  - source: drv-pronunciamento-ieab-2005
+    quote: acatou e homologou unanimemente a decisão do Tribunal
+  - source: drv-pronunciamento-ieab-2005
+    quote: nossos Cânones Provinciais prevêem o abandono da comunhão da Igreja
+  - source: drv-pronunciamento-ieab-2005
+    quote: É a primeira vez na história da IEAB que isso acontece.
+- type: other
+  date: '2006-09-30'
+  description: >-
+    Declaração da Boa Viagem (30/09/2006, Catedral Anglicana do Bom Samaritano, Recife): representantes de seis
+    jurisdições anglicanas brasileiras (Diocese do Recife sob autoridade do Cone Sul, IAB-Lorite, Igreja Episcopal
+    Reformada, Igreja Anglicana Missionária do Redentor, Igreja Anglicana Ortodoxa e Igreja Anglicana Brasileira,
+    mais a Iglesia Católica Anglicana del Ecuador como associada extranacional) criaram o Movimento Anglicano 'Por
+    Uma Causa Comum'; o ato ocorreu no culto pelo nono aniversário de sagração de Robinson Cavalcanti.
+  status: confirmed
+  sources:
+  - source: drv-comunicado-imprensa-2006
+    quote: >-
+      Representantes de seis diferentes jurisdições anglicanas brasileiras – em comunhão ou não com a Sé de Cantuária
+      – assinaram ontem, 30.09.2006, a “Declaração da Boa Viagem”, criando o “Movimento Anglicano Por Uma Causa
+      Comum”.
+  - source: drv-comunicado-imprensa-2006
+    quote: >-
+      lido solenemente no Culto de Ação de Graças pelo nono aniversário de Sagração Episcopal de Dom Robinson Cavalcanti
+- type: other
+  date: '2006-11-09'
+  description: >-
+    Nota de 09/11/2006 lista 33 comunidades da 'legítima Diocese do Recife' (catedral no Bom Samaritano, Boa Viagem;
+    con-catedral da Ressurreição, João Pessoa), 44 ministros ordenados no Brasil e 16 com domicílio canônico na
+    diocese residentes no exterior, e informa comunidades associadas sob supervisão do bispo do Recife em Washington,
+    Oregon e Flórida (EUA) e dois seminários (SAT-PB, SAT-PE).
+  status: confirmed
+  sources:
+  - source: drv-nota-esclarecimento-2006
+    quote: >-
+      Comunidades associadas, sob Supervisão Episcopal do Recife, se encontram nos Estados de: Washington, Oregon
+      e Flórida, nos Estados Unidos.
+  - source: drv-nota-esclarecimento-2006
+    quote: A Diocese possui dois Seminários Teológicos Anglicanos (SAT-PB, em João Pessoa e SAT-PE, no Recife).
+- type: other
+  date: '2006-10-13'
+  description: >-
+    Decisão episcopal de 13/10/2006: Robinson Cavalcanti declara-se disponível a permanecer como bispo diocesano
+    até o limite canônico de 68 anos (no máximo mais seis anos), adia a discussão da sucessão para depois do Concílio
+    de dezembro de 2008 e prevê criar condições para eventual eleição de bispo(a) coadjutor(a); menciona a 'Diocese
+    B' da IEAB com titular instalado.
+  status: confirmed
+  sources:
+  - source: drv-decisao-episcopal-2006
+    quote: >-
+      até o limite máximo da atual compulsória canônica de 68 anos, ou seja, o limite máximo de mais 6 (seis) anos
+  - source: drv-decisao-episcopal-2006
+    quote: a eventual eleição de um(a) Bispo(a) Coadjutor(a)
+- type: other
+  date: '2007-11-12'
+  description: >-
+    Comunicado de 12/11/2007: o Sínodo da Igreja Anglicana do Cone Sul, por seis delegações diocesanas (uma abstenção),
+    recomendou à Câmara dos Bispos e ao Conselho Executivo as medidas para a recepção permanente da Diocese do Recife;
+    o primaz pretendia visitar o Recife em fevereiro de 2008.
+  status: confirmed
+  sources:
+  - source: drv-comunicado-episcopal-2007
+    quote: >-
+      deliberou recomendar à Câmara dos Bispos e ao Conselho Executivo que sejam tomadas as medidas Constitucionais,
+      Canônicas e Administrativas cabíveis visando à recepção permanente da Diocese do Recife
+- type: other
+  date: '2007-11-30'
+  description: >-
+    Em 30/11/2007 Robinson Cavalcanti informa que a Diocese do Recife recebeu a Constituição e os Cânones Gerais
+    do Cone Sul e que os cânones diocesanos seriam ajustados no Concílio Extraordinário de 08/12/2007; a ordenação
+    feminina seria matéria de resolução sinodal, não de cânon.
+  status: confirmed
+  sources:
+  - source: drv-adequacao-cone-sul
+    quote: recebemos da Secretaria Provincial um exemplar da Constituição e dos Cânones Gerais do Cone Sul
+  - source: drv-adequacao-cone-sul
+    quote: A questão da Ordenação feminina não é matéria constitucional ou canônica, mas de Resolução Sinodal.
+- type: other
+  date: '2008-09-09'
+  description: >-
+    Em 09/09/2008, após a conferência Crescendo Juntos (Buenos Aires), Robinson relata que o primaz Gregory Venables
+    reiterou apoio e admitiu vínculo a outra província do GAFCON caso houvesse dificuldade no Cone Sul, com provável
+    fórmula de diocese extraprovincial; relata também sugestão de um bispo de eliminar dos cânones diocesanos a
+    possibilidade de ordenar mulheres ao episcopado.
+  status: confirmed
+  sources:
+  - source: drv-informe-confidencial-2008
+    quote: O Primaz reiterou o seu apoio irrestrito à nossa Diocese
+  - source: drv-informe-confidencial-2008
+    quote: eliminássemos dos nossos Cânones a possibilidade de Ordenação de mulheres ao Episcopado
+- type: other
+  date: '2008-07-16'
+  description: >-
+    Em 2008 Robinson Cavalcanti descreve a Diocese do Recife com 32 anos e 34 comunidades, 24 delas surgidas no
+    seu episcopado, clero majoritariamente aposentado ou 'fazedor de tendas' e dependente de doações no exterior;
+    recorda que Dom Clóvis Erly Rodrigues exigia que os ordenandos assinassem termo de ausência de compromisso de
+    sustento.
+  status: confirmed
+  sources:
+  - source: drv-papel-clovis
+    quote: A Diocese do Recife tem apenas 32 anos, 24 de suas 34 comunidades surgiram no presente Episcopado
+  - source: drv-papel-clovis
+    quote: >-
+      o meu predecessor, Dom Clóvis Erly Rodrigues, exigia das pessoas que ele ia Ordenar que assinassem um papel
+- type: other
+  date: '2002-07-28'
+  description: >-
+    Em 28/07/2002, o Diário de Pernambuco publicou a matéria "Liberal vai dirigir a Igreja Anglicana" (sobre a escolha
+    de Rowan Williams como arcebispo de Cantuária); no mesmo dia, em culto, o deão Paulo Garcia declarou-se contrário
+    ao que chamou de comportamentos antibíblicos, como a ordenação de sacerdotes homossexuais. A dissertação de
+    Queiroz data dessa matéria o início do clima de desconforto com o bispo Robinson Cavalcanti.
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: >-
+      uma matéria publicada no Diário de Pernambuco em 28 de julho de 2002 (domingo), cuja manchete era “Liberal
+      vai dirigir a Igreja Anglicana”
+  - source: queiroz-2004-ufpe
+    quote: neste mesmo dia o Pr. Paulo declarou em culto que não era a favor de tal postura do clero anglicano
+- type: other
+  date: '2002'
+  description: >-
+    Motivos da ruptura de Paulo Garcia com a IEAB (2002), em duas versões. Segundo o ACNS e Queiroz, a comunidade
+    alegou divergências com o bispo sobre divórcio, casais sem casamento civil e a postura de setores da Comunhão
+    Anglicana quanto à homossexualidade. Segundo lideranças anglicanas citadas por Queiroz e Costa, os argumentos
+    doutrinários foram pretexto: pesariam o convite para ingressar na Igreja Episcopal Carismática, a proximidade
+    da aposentadoria e a dificuldade em seguir as regras da Igreja.
+  status: contested
+  sources:
+  - source: lpg-acns-2002
+    quote: >-
+      the cathedral took the decision based on disagreements with the bishop on issues such as divorce and non-legally
+      married couples in the Church
+  - source: queiroz-2004-ufpe
+    quote: >-
+      Os argumentos doutrinários para o cisma da comunidade da Santíssima Trindade, segundo lideranças da Igreja
+      Anglicana, foram apenas pretextos.
+  - source: costa2021
+    quote: >-
+      as dificuldades que tinha em seguir as regras da religião – pois ele não se submetia à autoridade hierárquica
+      de Robinson; e a sua proximidade para se aposentar
+- type: other
+  date: 2002-10
+  description: >-
+    Entrevista do deão Garcia à Revista Eclésia (25/10/2002), na qual falou da relação tensa com o bispo Robinson
+    Cavalcanti e dos motivos do rompimento; em 27/10/2002, o Diário de Pernambuco noticiou "Catedral é disputada
+    na Justiça": a comunidade de Garcia alegava direito ao templo porque, desde 1999, a igreja deixara de ser nomeada
+    Holy Trinity Church e passara a Igreja da Santíssima Trindade, e porque as reformas teriam sido custeadas por
+    membros.
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: >-
+      Numa entrevista realizada pela Revista Eclésia, em 25 de outubro de 2002, o Deão Garcia mencionou a sua relação
+      tensa com o bispo Dom Robinson
+  - source: queiroz-2004-ufpe
+    quote: >-
+      O grupo dos carismáticos diz que tem direito à posse do templo, pois, desde 1999, a igreja deixou de ser nomeada
+      Holy Trinity Church
+  - source: queiroz-2004-ufpe
+    quote: Diário de Pernambuco – Recife, domingo, 27 de outubro de 2002.
+- type: other
+  date: '2002-11-14'
+  description: >-
+    Carta de Dom Robinson Cavalcanti à comunidade diocesana, datada de 14/11/2002, sobre o momento doloroso vivido
+    pela diocese após a saída da Catedral da Santíssima Trindade.
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: Vejamos uma carta de Dom Robinson à comunidade, datada em 14 de novembro de 2002
+- type: other
+  date: '2012-03-17'
+  description: >-
+    Eleito bispo sufragâneo em 2011, Evilásio Tenório teria sido sagrado, segundo a Wikipédia, por Robinson Cavalcanti,
+    mas a sagração ficou para depois da morte do bispo (26/02/2012) e ocorreu em 17/03/2012. Ainda segundo a Wikipédia,
+    Evilásio permaneceu provisoriamente como bispo diocesano até a eleição do novo líder em 19/05/2012.
+  status: probable
+  sources:
+  - source: lrec-ptwp-evilasio
+    quote: >-
+      Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
+      bispo diocesano, até a eleição do novo líder da Igreja Anglicana, em 19 de maio de 2012.
+- type: other
+  date: '2010'
+  description: >-
+    Como bispo diocesano do Recife, Robinson Cavalcanti afirma ter ordenado 99 diáconos e 85 presbíteros em sete
+    anos de governo (texto de 2010); no mesmo texto, diz que 34 das 44 comunidades então existentes na diocese foram
+    abertas nesse período.
+  status: confirmed
+  sources:
+  - source: lrec-ultimato-robinson-bio
+    quote: Como Bispo Diocesano, ordenou 99 Diáconos e 85 Presbíteros.
+  - source: lrec-ultimato-robinson-bio
+    quote: Nesses sete anos foram abertas 34 das presentes 44 comunidades da Diocese Anglicana do Recife
 - type: deposition
   date: 2005-01
   description: >-
@@ -814,21 +1546,6 @@ events:
     quote: >-
       Robinson, por sua vez, considerou o ato nulo e sem valor, por julgá-lo juridicamente e canonicamente inválido.
     page: '26'
-- type: death
-  date: '2012-02-26'
-  description: >-
-    Assassinato de Robinson Cavalcanti e de sua esposa Miriam, em Olinda, pelo filho adotivo; sepultados em 29/02/2012
-    no Cemitério Morada da Paz, Paulista.
-  status: probable
-  sources:
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      Na noite de 26 de fevereiro de 2012, Robinson e a sua esposa Miriam foram assassinados pelo filho adotivo
-      do casal
-    page: '29'
-  - source: cant-novas-igrejas-2024
-    quote: O casal foi sepultado no dia 29 de fevereiro, no Cemitério Morada da Paz, em Paulista.
-    page: '30'
 - type: other
   date: null
   description: >-
@@ -910,13 +1627,6 @@ events:
       Evangelho Pleno (IEEP), e a Igreja Anglicana Latino Americana do Brasil (IALAB), representada pelo bispo Geraldo
       Magela.
     page: '158'
-- type: death
-  date: '2012'
-  description: Robinson Cavalcanti assassinado em 2012
-  status: probable
-  sources:
-  - source: iab-poster-linhagem-meira
-    quote: Robinson foi assassinado em 2012, sem deixar sucessores diretos
 - type: other
   date: '2005-01-25'
   description: >-
@@ -997,7 +1707,7 @@ events:
       O culto foi celebrado pelo presidente do Conselho Diocesano, Márcio Simões, e pelos dois bispos auxiliares
       Flávio Aldair e Evilásio Tenório. Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo
       líder da igreja, o que deve ocorrer no dia 19 de maio.
-  - source: wp-pt-evilasio
+  - source: lrec-ptwp-evilasio
     quote: >-
       Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
       bispo diocesano, até a eleição do novo líder da Igreja Anglicana
@@ -1629,21 +2339,6 @@ events:
       Em março de 2004, o Episcopal News Service noticiou que o bispo Robinson participou de um rito de Confirmação
       na Diocese de Ohio, sem conhecimento e autorização do bispo diocesano local.
     page: '214'
-- type: death
-  date: '2012-02-26'
-  description: >-
-    Morte de Robinson Cavalcanti e de sua esposa Miriam, assassinados pelo filho adotivo em Olinda; sepultados em
-    29/02/2012 no Cemitério Morada da Paz, Paulista.
-  status: probable
-  sources:
-  - source: costa2021
-    quote: >-
-      Na noite de 26 de fevereiro de 2012, Robinson e a sua esposa Miriam foram assassinados pelo filho adotivo
-      do casal
-    page: '251'
-  - source: costa2021
-    quote: O casal foi sepultado no dia 29 de fevereiro, no Cemitério Morada da Paz, em Paulista.
-    page: '252'
 - type: other
   date: '1990'
   description: >-

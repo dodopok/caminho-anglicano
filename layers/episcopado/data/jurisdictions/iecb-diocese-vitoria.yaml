@@ -10,19 +10,24 @@ country: BR
 relations:
 - type: part_of
   target: iecb
-  status: probable
+  status: confirmed
   sources:
-  - source: ier-betesda-onde-estamos
-    quote: 'Bispo Diocesano: Dom Frederico Bastos'
+  - source: lie-betesda-paroquias
+    quote: >-
+      Bispo Diocesano: Dom Frederico Bastos Bispo Auxiliar: Dom Jean Clayton Bispo Adjutor: Dom Felipe Silva
+  - source: ptwiki-iecb
+    quote: Dom Jean Clayton Albuquerque do Nascimento – Bispo Auxiliar (2020-)
   - source: ptwiki-iecb
     quote: e Frederico Carneiro Rêgo Bastos, da Diocese de Vitória de Santo Antão
   - source: ptwiki-iecb
     quote: Jean Clayton de Albuquerque do Nascimento (2020)
   - source: ptwiki-iecb
     quote: Felipe Alves da Silva (2024)
-  - source: ier-betesda-onde-estamos
+  - source: lie-betesda-paroquias
+    quote: 'Bispo Diocesano: Dom Frederico Bastos'
+  - source: lie-betesda-paroquias
     quote: 'Bispo Auxiliar: Dom Jean Clayton'
-  - source: ier-betesda-onde-estamos
+  - source: lie-betesda-paroquias
     quote: 'Bispo Adjutor: Dom Felipe Silva'
   - source: cant-novas-igrejas-2024
     quote: Frederico Carneiro Rêgo Bastos (Diocesano de Vitória de Santo Antão)

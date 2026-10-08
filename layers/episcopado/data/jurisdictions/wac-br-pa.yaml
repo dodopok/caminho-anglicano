@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: wac-br-pa
+acronym: WAC-BR-PA
+name: Diocese Anglicana do Pará (WAC no Brasil)
+aliases:
+- Diocese do Pará
+type: diocese
+country: BR
+description: >-
+  Diocese com sede em Belém (PA), vinculada à WAC no Brasil em 21/11/2023. O site da WAC-BR diz que é administrada
+  pelo reverendo Vanderli Martins Lopes; a WAC internacional lista como bispos do Brasil Raimundo Cesar e Antônio
+  Jesualdo Bezerra.
+sources:
+- source: lwac-wacbr-para
+  quote: Foi vinculada a Igreja Anglicana Mundial WAC no Brasil em 21 de Novembro de 2023.
+relations:
+- type: part_of
+  target: wac-br
+  date: '2023-11-21'
+  status: confirmed
+  sources:
+  - source: lwac-wacbr-para
+    quote: Foi vinculada a Igreja Anglicana Mundial WAC no Brasil em 21 de Novembro de 2023.
+  - source: cant-novas-igrejas-2024
+    quote: Dom Antônio Jesualdo Bezerra de Moura, bispo diocesano do Pará
+    page: '129'
+  - source: cant-novas-igrejas-2024
+    quote: Dom Raimundo Cesar Oliveira Costa, bispo auxiliar da Diocese do Pará
+    page: '129'

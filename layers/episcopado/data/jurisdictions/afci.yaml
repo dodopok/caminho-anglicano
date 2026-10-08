@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: afci
+acronym: AFCI
+name: The Anglican Free Communion International (Comunhão Anglicana Livre Internacional)
+type: communion
+website: https://anglicanfreecommunion.uk/
+description: >-
+  Comunhão anglicana independente à qual a DAC declara pertencer; o site da DAC cita a comunhão internacional em
+  anglicanfreecommunion.uk e a Província do Caribe/Bolívia entre suas províncias.
+sources:
+- source: lielb-dacb-site
+  quote: 'Comunhão internacional: https://anglicanfreecommunion.uk/'

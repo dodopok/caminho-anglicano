@@ -36,7 +36,21 @@ affiliations:
   sources:
   - source: wit-1941-12-04
     quote: for their 35 years' service in the ministry.
-  notes: 'Local: Porto Alegre. 35 anos de ministério em dez. 1941 implica ordenação c. 1906 (inferência).'
+  - source: drv-kinsolving-ivo
+    quote: >-
+      De volta do ano 1924, o Revmo. Bispo Kinsolving designou o Rev. George Upton Krischke para ocupar a capital
+      do grande Estado Bandeirante.
+  notes: >-
+    Local: Porto Alegre. 35 anos de ministério em dez. 1941 implica ordenação c. 1906 (inferência). Local: São Paulo.
+    Funda a Capela do Salvador em salão da rua Marquês de Itu.
+  discrepancies:
+  - field: start
+    value: '1924'
+    sources:
+    - source: drv-kinsolving-ivo
+      quote: >-
+        De volta do ano 1924, o Revmo. Bispo Kinsolving designou o Rev. George Upton Krischke para ocupar a capital
+        do grande Estado Bandeirante.
 events:
 - type: other
   date: '1934'

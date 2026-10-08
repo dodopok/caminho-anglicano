@@ -94,6 +94,14 @@ ordinations:
       um Bispo estava sendo sagrado para servir a Diocese Sul Ocidental
   - source: dap-2011-francisco-sagr
     quote: O Bispo Primaz da IEAB, Dom Maurício Andrade, presidiu a Cerimônia de Sagração
+  - source: ihu-francisco-2011
+    quote: >-
+      O povo anglicano da Diocese Sul Ocidental recebeu, no domingo, 20, em Santa Maria, o seu novo bispo, Francisco
+      de Assis Silva , 51 anos, ex-secretário geral da igreja. A cerimônia de sagração, presidida pelo primaz da
+      Igreja Episcopal Anglicana do Brasil (IEAB), dom Maurício Andrade
+  - source: ihu-francisco-2011
+    quote: >-
+      Do exterior, acompanharam a sagração de Assis Silva os bispos Miguel Tamayo e Gilberto Porcal, do Uruguai
   - source: costa2021
     quote: >-
       Estiveram presentes Maurício Andrade, Bispo Primaz e da Diocese de Brasília, que presidiu a sagração; Orlando
@@ -107,13 +115,37 @@ ordinations:
       A cerimônia também contou com a presença do bispo Julio Murray, da Diocese do Panamá; Miguél Tamayo, da Diocese
       do Uruguai, e Gilberto Porcal, bispo sufragâneo do Uruguai.
     page: '113'
+  discrepancies:
+  - field: place
+    value: Santa Maria (RS), Diocese Sul-Ocidental
+    sources:
+    - source: ihu-francisco-2011
+      quote: >-
+        O povo anglicano da Diocese Sul Ocidental recebeu, no domingo, 20, em Santa Maria, o seu novo bispo, Francisco
+        de Assis Silva , 51 anos, ex-secretário geral da igreja. A cerimônia de sagração, presidida pelo primaz
+        da Igreja Episcopal Anglicana do Brasil (IEAB), dom Maurício Andrade
+    - source: ihu-francisco-2011
+      quote: >-
+        Do exterior, acompanharam a sagração de Assis Silva os bispos Miguel Tamayo e Gilberto Porcal, do Uruguai
   notes: >-
     Eleito bispo coadjutor da Diocese Sul-Ocidental em 25/10/2010. A tese lista os bispos "presentes" (nao necessariamente
     todos impuseram as maos). Eleito bispo coadjutor da Diocese Sul-Ocidental em 25/10/2010 (sucessor de Jubal Neves).
-    Ano 2011 pela data/URL da publicação (uploads/2011/03). Coadjutor. A nota 111 lista os bispos 'presentes' (Maurício
-    Andrade 'presidiu a sagração'); a tese não diz expressamente que todos impuseram as mãos — co-sagrantes por
-    inferência.
+    Ano 2011 pela data/URL da publicação (uploads/2011/03). A notícia é de 23/03/2011 (ALC), e "domingo, 20" corresponde
+    a 20 de março de 2011. Presentes também o presidente do CLAI, bispo Julio Murray, e o bispo católico local Hélio
+    Adelar Rubert (ecumênico). Coadjutor. A nota 111 lista os bispos 'presentes' (Maurício Andrade 'presidiu a sagração');
+    a tese não diz expressamente que todos impuseram as mãos — co-sagrantes por inferência.
 affiliations:
+- jurisdiction: conic
+  role: other
+  role_description: vice_presidente
+  start: '2011'
+  status: probable
+  sources:
+  - source: ihu-francisco-2011
+    quote: >-
+      Atualmente, é vice-presidente do Conselho Nacional de Igrejas Cristãs do Brasil (Conic ) e vice-moderador
+      de ACT Alliance
+  notes: Cargo em março de 2011, antes da sagração; datas de início e fim não informadas.
 - jurisdiction: ieab
   role: bishop
   start: '2011'
@@ -252,6 +284,37 @@ events:
     quote: >-
       Ganhou a eleição, no primeiro escrutínio, o Rev. Cônego Francisco de Assis da Silva, atual secretário geral
       da IEAB.
+- type: other
+  date: '2018-04-22'
+  description: >-
+    Instalação de Marinez Rosa Bassotto como bispa da Diocese Anglicana da Amazônia, às 9h do domingo 22 de abril
+    de 2018, com a presença do primaz Francisco de Assis da Silva.
+  status: confirmed
+  sources:
+  - source: lic-psj-marinez-2018
+    quote: >-
+      A cerimônia de instalação como Bispa da Diocese Anglicana da Amazônia, momento em que efetivamente toma posse
+      em seu novo cargo, foi às 9h de domingo, dia 22 de abril.
+  - source: lic-psj-marinez-2018
+    quote: >-
+      Bispa Marinez Rosa Bassotto e Bispo Francisco de Assis, Primaz da IEAB, na cerimônia de instalação em 22 de
+      abril
+- type: other
+  date: '2019-04-27'
+  description: >-
+    Meriglei Borges Simin foi eleita bispa coadjutora da Diocese Anglicana de Pelotas em concílio extraordinário
+    na Catedral do Redentor, em 27 de abril de 2019, no primeiro escrutínio, com 6 votos do clero e 42 do laicato;
+    o concílio foi presidido pelo bispo Francisco de Assis da Silva, a convite do bispo diocesano Renato da Cruz
+    Raatz.
+  status: confirmed
+  sources:
+  - source: lic-psj-meriglei-2019
+    quote: >-
+      A eleição aconteceu na Catedral do Redentor, no dia 27 de abril, em concílio extraordinário, presidido pelo
+      Bispo Francisco de Assis da Silva, da Diocese Sul-Ocidental, de Santa Maria/RS que atendeu ao convite do Bispo
+      Renato da Cruz Raatz, Diocesano da Diocese Anglicana de Pelotas.
+  - source: lic-psj-meriglei-2019
+    quote: Foi eleita no primeiro escrutínio com 6 votos do clero e 42 votos do laicato.
 - type: other
   date: '2010-10-25'
   description: >-

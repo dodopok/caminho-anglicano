@@ -1,10 +1,56 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: antonio-jose-da-costa-raposo
 name: Antônio José da Costa Raposo
+full_name: António José da Costa Raposo
 aliases:
 - Antônio Raposo
-biography: Bispo de tradição vétero-católica de Portugal; um dos sagrantes de Lucas Macieira (2004).
+- Dom António Raposo
+- Dom Antônio Raposo
+- José Antonio da Costa Raposo
+birth:
+  date: '1948-02-08'
+  sources:
+  - source: lielb-raposo-bio
+    quote: nasceu em Santa Clara, Ponta Delgada, Açores, em 08 de Fevereiro de 1948
+  - source: lielb-raposo-bio
+    quote: Veio a falecer após um longo sofrimento, em 03 de Março de 2024
+death:
+  date: '2024-03-03'
+  sources:
+  - source: lielb-raposo-bio
+    quote: nasceu em Santa Clara, Ponta Delgada, Açores, em 08 de Fevereiro de 1948
+  - source: lielb-raposo-bio
+    quote: Veio a falecer após um longo sofrimento, em 03 de Março de 2024
+wikidata: Q9158189
+biography: >-
+  Nascido em Santa Clara, Ponta Delgada (Açores). Clérigo da ICAB em Brasília, sagrado bispo em 1982 por Luiz Fernando
+  Castillo Mendez, bispo diocesano de Portugal desde 1988 (Igreja Apostólica Episcopal Portuguesa / Igreja Vétero-Católica
+  em Portugal) e arcebispo primaz. Principal sagrante de Lucas Macieira em 2004.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: dom Antônio José da Costa Raposo (de Portugal)
-  page: '101'
+- source: lielb-raposo-bio
+  quote: nasceu em Santa Clara, Ponta Delgada, Açores, em 08 de Fevereiro de 1948
+- source: lielb-raposo-bio
+  quote: Veio a falecer após um longo sofrimento, em 03 de Março de 2024
+ordinations:
+- order: episcopate
+  date: '1982-11-28'
+  place: Brasília
+  jurisdiction: icab
+  principal_consecrator: luiz-fernando-castillo-mendez
+  co_consecrators:
+  - bartolomeu-sebastiao-vilela
+  - josivaldo-pereira-de-oliveira
+  status: probable
+  sources:
+  - source: lielb-raposo-bio
+    quote: Em 28 de Novembro de 1982, recebe a Sagrada Ordenação Episcopal , em Brasília, Brasil
+  - source: lielb-raposo-bio
+    quote: >-
+      sendo Co-Consagrantes: Sua Exª Rev.ma D. Bartolomeu Sebastião Vilela, Bispo Coadjutor de Brasília e Vigário
+      Geral; e Sua Exª Rev.ma D. Josivaldo Pereira de Oliveira, Bispo Diocesano de Fortaleza.
+  - source: lielb-plwiki-raposo
+    quote: 28 listopada 1982
+  notes: >-
+    Wikipédia polonesa acrescenta Rainer Laufers entre os co-sagrantes; blogs da IELB (e da DAE) dão 22/11/1982
+    e listam Castillo Mendez, Josivaldo Pereira de Oliveira, Bartolomeu Sebastião Vilela e Rainer Laufers (este
+    "sagrado por bispos da Igreja Vétero Católica"). Nomeado bispo diocesano de Portugal em 08/02/1988.

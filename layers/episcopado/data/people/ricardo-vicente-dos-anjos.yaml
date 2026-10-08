@@ -1,39 +1,102 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ricardo-vicente-dos-anjos
 name: Ricardo Vicente dos Anjos
+full_name: Ricardo Vicente dos Anjos
+aliases:
+- Dom Ricardo
+- Padre Vicente dos Anjos
+- Rev. Côn. Ricardo Vicente dos Anjos
 biography: >-
-  Cofundador da Igreja Católica Anglicana (2017); em 2023 saiu com um grupo e tornou-se arcebispo primaz da Igreja
-  Católica Anglicana do Brasil (ICA-Brasil).
+  Presbítero egresso da Igreja Católica Apostólica Brasileira (Belém), incardinado na IATB em 2009, cônego da Diocese
+  do Pará (24/08/2010) e bispo diocesano do Pará desde a sagração de 15/07/2012, em substituição a Eduardo Mota.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Um deles foi dom Ricardo Vicente dos Anjos, que se tornou primaz da ICA-Brasil.
-  page: '139'
+- source: lia-iatb-noticias-2010
+  quote: >-
+    Foi recebido o pedido de incardinação do Rev. Pe. Ricardo Vicente dos Anjos, egresso da Igreja Católica Apostólica
+    Brasileira, de Belém do Pará.
+- source: lia-iatb-noticias-2012
+  quote: >-
+    a Igreja Anglicana Tradicional do Brasil ordenou e consagrou o Rev. Côn. Ricardo Vicente dos Anjos, ao terceiro
+    grau das ordens sagradas, tornando-o bispo da Diocese do Pará.
 ordinations:
 - order: episcopate
   date: '2012-07-15'
-  place: São Paulo (SP)
+  place: São Paulo (SP), após o II Encontro Provincial da IATB
   jurisdiction: iatb
   office: diocesan
   principal_consecrator: rui-costa-barbosa
-  status: probable
+  co_consecrators:
+  - jorge-costa
+  - orvandil-moreira-barbosa
+  status: confirmed
   sources:
-  - source: cont-aeci-news
+  - source: lia-iatb-noticias-2012
+    quote: >-
+      No dia 15 de julho de 2012, domingo, seguindo-se ao II Encontro Provincial, a Igreja Anglicana Tradicional
+      do Brasil ordenou e consagrou o Rev. Côn. Ricardo Vicente dos Anjos, ao terceiro grau das ordens sagradas,
+      tornando-o bispo da Diocese do Pará.
+  - source: lia-iatb-noticias-2012
+    quote: 'Consagrantes: Dom Rui Costa Barbosa Dom Orvandil Moreira Barbosa Dom Jorge dos Santos Costa'
+  - source: lia-aeci-news
+    quote: Archbishop Primate of Brazil, The Most Rev’d. Dr. Rui CostaBarbosa.
+  - source: lia-aeci-news
+    quote: >-
+      The said Consecration will take place at Sao Paulo-SP, Brazil on the Fifteenth day of July in the Blessed
+      year of our Lord 2012.
+  - source: lia-aeci-news
     quote: >-
       Reverend Ricardo Vicente Dos Anjos of whose pious, sober and honest life and conversation, competent learning
       and knowledge of Holy Scriptures, and soundness in the Faith we have been assured, being Consecrated and Appointed
       as a Bishop in The Traditional Anglican Church of Brazil to serve in the Diocese in the State of Para (North).
-  - source: cont-aeci-news
-    quote: Archbishop Primate of Brazil, The Most Rev’d. Dr. Rui CostaBarbosa.
-  - source: cont-aeci-news
-    quote: >-
-      The said Consecration will take place at Sao Paulo-SP, Brazil on the Fifteenth day of July in the Blessed
-      year of our Lord 2012.
   notes: >-
-    Trata-se de um MANDATO de sagração emitido pelo arcebispo metropolitano eleito da AECI, Melvyn John Langley
-    (a página diz 'will take place'): confirma o plano e a data, não a realização. Diocese do Estado do Pará (Norte)
-    da 'Traditional Anglican Church of Brazil' (= IATB, hoje de Rui Costa Barbosa). Ricardo Vicente dos Anjos foi
-    depois cofundador da Igreja Católica Anglicana (2017) e primaz da ICA-Brasil (2023) — dados já na base.
+    Mandato de consagração emitido pelo arcebispo John Langley (AECI), com Rui Costa Barbosa como Principal Consecrator;
+    a IATB lista como consagrantes Rui, Orvandil e Jorge dos Santos Costa, sem distinguir hierarquia (as duas fontes
+    concordam em Rui como principal). O Mandato Apostólico da IATB foi emitido em 12/03/2012 e previa a sagração
+    em 08/07/2012 no estado de SP; a data realizada, segundo a IATB posterior e a AECI, foi 15/07/2012 (o II Encontro
+    Provincial ocorreu em 13-14/07, na Paróquia São Judas Tadeu, São Paulo). Substituiu Eduardo Mota (falecido em
+    01/01/2012), que já o havia indicado. Trata-se de um MANDATO de sagração emitido pelo arcebispo metropolitano
+    eleito da AECI, Melvyn John Langley (a página diz 'will take place'): confirma o plano e a data, não a realização.
+    Diocese do Estado do Pará (Norte) da 'Traditional Anglican Church of Brazil' (= IATB, hoje de Rui Costa Barbosa).
+    Ricardo Vicente dos Anjos foi depois cofundador da Igreja Católica Anglicana (2017) e primaz da ICA-Brasil (2023)
+    — dados já na base.
 affiliations:
+- jurisdiction: iatb
+  role: other
+  role_description: clero (presbítero, cônego)
+  diocese: diocese-do-para
+  start: 2009-06
+  end: '2012-07-15'
+  status: confirmed
+  sources:
+  - source: lia-iatb-noticias-2010
+    quote: >-
+      Após consultas com os presbitérios, o Rev. Pe. Ricardo Vicente dos Anjos obteve o deferimento da incardinação
+      solicitada para a Diocese do Norte-Nordeste do Brasil
+  - source: lia-iatb-noticias-2010
+    quote: >-
+      Padre Vicente do Anjos recebeu o título de Cônego da Diocese do Pará, em reconhecimento dos bispos aos seus
+      esforços na consolidação da Diocese. As nomeações foram a partir do dia 24 de agosto de 2010.
+  notes: >-
+    Pedido registrado em 03/06/2009 (egresso da ICAB, Belém); deferido pelos presbitérios. Foi Administrador Diocesano
+    da Diocese do Pará após a morte de Mota (01/01/2012).
+- jurisdiction: iatb
+  role: other
+  role_description: bispo diocesano
+  diocese: diocese-do-para
+  start: '2012-07-15'
+  end: '2017'
+  end_reason: schism
+  status: probable
+  sources:
+  - source: lia-iatb-juris-2013
+    quote: 'DIOCESE DO PARÁ Bispo Diocesano: Revmo. Dom Ricardo Vicente dos Anjos'
+  - source: lia-iatb-home-2017-10
+    quote: >-
+      Nós, Dom Rui Costa Barbosa, Dom X, Dom Washington Luis, Dom José Aparecido e Dom Y, respectivamente bispos
+      das Dioceses do Sudeste, do Centro-Oeste, do Sergipe, do Sul e do Pará
+  notes: >-
+    Local: sede em Ananindeua. Mesma ressalva do vínculo de Orvandil quanto ao fim (2017). Nas listas de 2010 a
+    diocese do Pará tinha sede em Cametá; com Ricardo passou a ser descrita com sede em Ananindeua (2013-2015).
 - jurisdiction: iatb
   role: diocesan_bishop
   start: '2012-07-15'
@@ -41,7 +104,7 @@ affiliations:
   end_reason: schism
   status: probable
   sources:
-  - source: cont-aeci-news
+  - source: lia-aeci-news
     quote: >-
       being Consecrated and Appointed as a Bishop in The Traditional Anglican Church of Brazil to serve in the Diocese
       in the State of Para (North).
@@ -59,6 +122,23 @@ affiliations:
       Anglicana.
     page: '137'
 - jurisdiction: ica-brasil
+  role: other
+  role_description: arcebispo_primaz
+  start: '2018'
+  status: confirmed
+  sources:
+  - source: lica-icabr-home
+    quote: 'Arcebispo Primaz +++ Dom Ricardo Vicente dos Anjos Endereço Primacial: Avenida Independência n.º 58'
+  - source: lica-iaces-historia
+    quote: >-
+      Nós, Dom Ricardo Vicente dos Anjos, Dom Jorge dos Santos Costa, Dom Altamiro Pereira do Amaral e Padre Marcos
+      Vinicius de Souza, depois de um Cisma
+  - source: lica-iaces-clero
+    quote: 'Bispo Ordenante: + Dom Ricardo Vicente dos Anjos, ICA-Brasil'
+  notes: >-
+    Sede primacial: Avenida Independência, 58, bairro 40 Horas, Ananindeua (PA). Início em 2018 conforme texto da
+    IACES; outra fonte dá 2023 para a fundação da ICA-Brasil (ver dúvidas).
+- jurisdiction: ica-brasil
   role: primate
   start: '2023'
   status: probable
@@ -66,6 +146,47 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: Dom Ricardo Vicente dos Anjos arcebispo primaz
     page: '139'
+- jurisdiction: icab
+  role: other
+  role_description: clero (presbítero)
+  end: '2009'
+  end_reason: left
+  status: probable
+  sources:
+  - source: lia-iatb-noticias-2010
+    quote: egresso da Igreja Católica Apostólica Brasileira, de Belém do Pará.
+  notes: 'Local: Belém, PA. Vínculo anterior à IATB (apenas essa menção).'
+- jurisdiction: ica
+  role: bishop
+  end: '2018-05-24'
+  end_reason: schism
+  status: confirmed
+  sources:
+  - source: lica-ica-notificacao
+    quote: >-
+      os Bispos Dom Altamiro Pereira do Amaral, Dom Jorge dos Santos Costa e Dom Ricardo Vicente dos Anjos não mais
+      integram esta Mitra Primacial
+  - source: lica-ica-sobre
+    quote: Dom Jorge Costa, Dom Ricardo Vicente dos Anjos e Dom Franciney Rodrigues Pantoja
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      que funcionam sob os cuidados de dom Orvandil Moreira Barbosa, dom Jorge Costa, dom Ricardo Vicente dos Anjos
+      e dom Franciney Rodrigues Pantoja
+    page: '138'
+  notes: >-
+    A ICA registra a saída como exclusão ("excardinados, não dispõem mais do direito de celebrar..."); do lado da
+    ICA-Brasil, descreve-se um "Cisma" que originou a Província Católica Anglicana do Brasil. A nota de 24/05/2018
+    não associa cada bispo a uma diocese específica; cita as dioceses de Belém e Santa Cruz de Salvador (vacantes)
+    e Mato Grosso do Sul (extinta).
+  discrepancies:
+  - field: end
+    value: '2023'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        que funcionam sob os cuidados de dom Orvandil Moreira Barbosa, dom Jorge Costa, dom Ricardo Vicente dos
+        Anjos e dom Franciney Rodrigues Pantoja
+      page: '138'
 - jurisdiction: iatb
   role: clergy
   end: '2017'
@@ -78,14 +199,57 @@ affiliations:
       Anglicana.
     page: '137'
   notes: Saiu da IATB com um grupo de clérigos (época do primaz Alfredo Dórea).
-- jurisdiction: ica
-  role: bishop
-  end: '2023'
-  end_reason: schism
+events:
+- type: other
+  date: '2012-01-01'
+  description: >-
+    Eduardo Mota sofreu um AVC em 24/12/2011 e morreu em 01/01/2012 no Hospital Regional de Cametá (PA); o administrador
+    diocesano passou a ser o cônego Ricardo Vicente dos Anjos.
+  status: confirmed
+  sources:
+  - source: lia-iatb-noticias-2012
+    quote: >-
+      Dom Eduardo Mota já em idade provecta, sofreu um AVC no dia 24 de dezembro de 2011 e desde então esteve internado
+      no mesmo Hospital Regional de Cametá.
+- type: other
+  date: '2017'
+  description: >-
+    A página inicial da IATB capturada em outubro de 2017 reproduz a Carta de Salvador (julho de 2015) com os bispos
+    do Centro-Oeste e do Pará substituídos por 'Dom X' e 'Dom Y'; em agosto de 2023 a IATB declarou que a Igreja
+    Católica Anglicana do Brasil (ICA) 'não se confunde' com a IATB.
   status: probable
   sources:
-  - source: cant-novas-igrejas-2024
+  - source: lia-iatb-home-2017-10
     quote: >-
-      que funcionam sob os cuidados de dom Orvandil Moreira Barbosa, dom Jorge Costa, dom Ricardo Vicente dos Anjos
-      e dom Franciney Rodrigues Pantoja
-    page: '138'
+      Nós, Dom Rui Costa Barbosa, Dom X, Dom Washington Luis, Dom José Aparecido e Dom Y, respectivamente bispos
+      das Dioceses do Sudeste, do Centro-Oeste, do Sergipe, do Sul e do Pará
+  - source: lia-iatb-home-2024
+    quote: >-
+      Católica Anglicana do Brasil (ICA), que não se confunde com a Igreja Anglicana Tradicional do Brasil.
+- type: other
+  date: '2018-05-24'
+  description: >-
+    Notificação da Câmara Episcopal e Arcebispado Primaz da ICA: Altamiro Pereira do Amaral, Jorge dos Santos Costa
+    e Ricardo Vicente dos Anjos "não mais integram esta Mitra Primacial"; as dioceses de Belém e de Santa Cruz de
+    Salvador passam à responsabilidade do arcebispo primaz e a Diocese de Mato Grosso do Sul é extinta e reintegrada
+    à do Centro Oeste.
+  status: confirmed
+  sources:
+  - source: lica-ica-notificacao
+    quote: >-
+      A Diocese de Mato Grosso do Sul é extinta e reintegrada à Diocese Católica Anglicana do Centro Oeste.
+  - source: lica-ica-notificacao
+    quote: Goiânia, 24 de maio de 2018
+- type: other
+  date: 2018-07
+  description: >-
+    1º Sínodo da Província Católica Anglicana do Brasil (ICA-Brasil), em São Paulo, em julho de 2018, com aprovação
+    dos primeiros cânones e "Sagrações episcopais"; em 29/07/2018 foi sagrado José Fernando de Faria. A ICA (de
+    Orvandil) reagiu em 30/07/2018 negando ter sagrado qualquer bispo após seu registro em cartório e designado
+    bispos para Rio Grande do Sul, Espírito Santo, São Paulo e Amazônia.
+  status: probable
+  sources:
+  - source: lica-iaces-historia
+    quote: com nosso Primeiro Sínodo em São Paulo Brasil, em Julho de 2018
+  - source: lica-ica-nota-esclarecimento
+    quote: nem a ninguém designou para o Rio Grande do Sul, Espírito Santo, São Paulo e Amazônia

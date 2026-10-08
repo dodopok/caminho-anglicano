@@ -1,10 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: carmen-etel-alves-gomes
 name: Carmen Etel Alves Gomes
+full_name: Carmen Etel Alves Gomes
 aliases:
 - Carmem Etel
 - Carmem Etel Alves Gomes
+- Carmen Etel Alves Gomez
+- Cônego Carmen Etel Gomes
 - Revda. Carmem Etel
+- Revda. Carmen Etel
 biography: >-
   Primeira mulher ordenada na IEAB (diaconato, 1985). Presbítera; atuou no Centro de Estudos Anglicanos em Porto
   Alegre e como pároca em Novo Hamburgo.
@@ -14,7 +18,7 @@ sources:
 ordinations:
 - order: diaconate
   date: '1985-05-05'
-  place: Matriz do Nazareno, Santana do Livramento (RS)
+  place: Paróquia do Nazareno, Santana do Livramento (RS)
   jurisdiction: ieab
   ordained_by: olavo-ventura-luiz
   status: confirmed
@@ -30,6 +34,20 @@ ordinations:
       Etel Alves Gomes foi elevada ao diaconato na Matriz do Nazareno, na cidade de Livramento. O rito foi presidido
       pelo Bispo Primaz, Olavo Ventura Luiz, e contou com a participação dos bispos Cláudio Vinícius de Senna Gastal
       e Plínio Lauer Simões
+  - source: lib-diakoneo-1986
+    quote: She was ordained last May by Bishop Olavo Ventura Luiz of South Occidental diocese
+  - source: lib-kick-minfem
+    quote: >-
+      no dia 5 de maio de 1985, a Igreja Episcopal ordenava a primeira mulher ao sagrado ministério, elevando à
+      ordem de diácono Carmen Etel Alves Gomes
+  - source: lib-kick-minfem
+    quote: >-
+      A memorável liturgia de ordenações foi presidida por Dom Olavo Ventura Luiz, bispo da Diocese Sul Ocidental,
+      coadjuvado pelos colegas Cláudio Vinicius de Senna Gastal, de Porto Alegre, e Plínio Lauer Simões
+  - source: lic-livro35
+    quote: >-
+      Fui ordenada ao diaconato na Paróquia do Nazareno, em Santana do Livramento/RS, pelo Bispo Olavo Ventura Luiz,
+      Diocese Sul Ocidental, no dia 5 de maio de 1985, tendo sido a 1ª Ordenação Feminina na América do Sul.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1985 - … Carmem Etel Alves Gomes
     page: '373'
@@ -54,21 +72,69 @@ ordinations:
   notes: >-
     Primeira mulher ordenada na IEAB. Ordenante e local não informados nestas fontes. Participaram os bispos Cláudio
     Gastal e Plínio Simões. O texto chama Olavo de "Bispo Primaz" em 1985 (era primaz interino após a morte de Kratz).
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
-    Primeira mulher ordenada na IEAB. Participaram também os bispos Cláudio Gastal e Plínio Lauer Simões. Trecho
-    citado pela tese de KICKHÖFEL, Notas para uma História da IEAB (1995), p. 319. Participaram também os bispos
-    Gastal e Simões.
+    Dois textos independentes (um norte-americano de 1986, outro de Oswaldo Kickhöfel) nomeiam Olavo Ventura Luiz
+    como bispo ordenante. Kickhöfel acrescenta que os bispos Cláudio Gastal e Plínio Lauer Simões o coadjuvaram.
+    Relato autobiográfico da própria ordenada, publicado no livro comemorativo dos 35 anos de ordenação de mulheres
+    na IEAB. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante
+    não informado. Primeira mulher ordenada na IEAB. Participaram também os bispos Cláudio Gastal e Plínio Lauer
+    Simões. Trecho citado pela tese de KICKHÖFEL, Notas para uma História da IEAB (1995), p. 319. Participaram também
+    os bispos Gastal e Simões.
 - order: presbyterate
-  date: '1986'
+  date: '1986-03-02'
+  place: Paróquia de Cristo, Jaguarão (RS)
   jurisdiction: ieab
-  status: probable
+  status: confirmed
   sources:
+  - source: lic-livro35
+    quote: A Ordenação ao Presbiterado aconteceu no dia 2 de março de 1986, na Paróquia de Cristo, Jaguarão/RS.
+  - source: lic-livro35
+    quote: 'Diaconato: 5 de maio de 1985. Presbiterado: 2 de março de 1986.'
+  - source: lic-acns-2015-30anos
+    quote: The Revd Carmen Gomes, the first female priest ordained in the Episcopal Anglican Church of Brazil
   - source: kickhofel-1995
     quote: No ano seguinte, Carmem Etel foi ordenada ao presbiterado.
     page: '319'
   - source: costa2021
     quote: No ano seguinte, Carmem Etel foi ordenada ao presbiterado (KICKHÖFEL, 1995, p. 319).
     page: '94'
+  notes: >-
+    Primeira mulher ordenada presbítera na IEAB. O texto não nomeia o bispo ordenante. A ACNS (2015) a descreve
+    como "the first female priest ordained in the Episcopal Anglican Church of Brazil".
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dso
+  start: '1985'
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: Fui enviada à Paróquia de Cristo, em Jaguarão.
+  - source: lic-livro35
+    quote: >-
+      Fui ordenada ao diaconato na Paróquia do Nazareno, em Santana do Livramento/RS, pelo Bispo Olavo Ventura Luiz,
+      Diocese Sul Ocidental
+  notes: >-
+    Ordenada na Diocese Sul-Ocidental; após o presbiterato foi enviada à Paróquia de Cristo, em Jaguarão (RS), onde
+    trabalhou também com a Cidade de Meninos. Depois atuou em diversas regiões do Brasil e no exterior, serviu duas
+    catedrais e a Paróquia de Todos os Santos, em Novo Hamburgo.
+- jurisdiction: ieab
+  role: other
+  role_description: conselheira_executiva_ex_officio
+  status: confirmed
+  sources:
+  - source: ieab-secretaria
+    quote: Revda. Côn. Carmen Etel Gomes (Membro Ex-ofício)
+  notes: >-
+    Listada como membro ex-ofício do Conselho Executivo da IEAB (cônego; presidenta da Câmara de Clérigos e Leigos
+    eleita em 2022).
+- jurisdiction: ieab
+  role: other
+  role_description: coordenadora_setor_academico_CEA
+  status: confirmed
+  sources:
+  - source: lic-ieab-cea-2022
+    quote: No setor Acadêmico , temos a reverenda Carmen Etel, com ajuda de duas pessoas na assessoria.
+  notes: Em março de 2022, à frente do setor Acadêmico do Centro de Estudos Anglicanos (CEA).
 events:
 - type: other
   date: '2022-11-12'
@@ -81,3 +147,40 @@ events:
     quote: >-
       Ontem, 12/11, no transcorrer do 35° Sínodo da IEAB, a reverenda Carmen Etel foi eleita presidenta da Câmara
       de Clérigos e Leigos.
+- type: other
+  date: 1985-05
+  description: >-
+    Naudal Alves Gomes, então presbítero, foi o apresentador de sua irmã Carmen Etel Alves Gomes na ordenação como
+    primeira diácona da IEAB, em Santana do Livramento (RS), com mais de 300 presentes.
+  status: probable
+  sources:
+  - source: lib-ens-85197
+    quote: her brother, Naudal, is a priest and was her presenter. More than 300 people attended the ceremony.
+  - source: lib-diakoneo-1986
+    quote: She was ordained last May by Bishop Olavo Ventura Luiz of South Occidental diocese
+- type: other
+  date: '1986'
+  description: >-
+    Em 1986 Carmen Etel Alves Gomes foi enviada por um mês à Inglaterra, com colegas de várias províncias anglicanas,
+    para testemunhar a importância da ordenação feminina; conheceu Li Tim Oi e Barbara Harris e encontrou-se com
+    o arcebispo de Cantuária Robert Runcie.
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: >-
+      Em 1986 fui enviada por um mês à Inglaterra, o berço do Anglicanismo, para realizar - com outras colegas de
+      várias províncias anglicanas - palestras
+  - source: lic-livro35
+    quote: Estivemos juntas com o Arcebispo de Cantuária Robert Runcie
+- type: other
+  date: '1974-08-06'
+  description: >-
+    O "Parecer Sul-Ocidental" sobre "as mulheres e as Ordens Sacras" foi apresentado em 6 de agosto de 1974, assinado
+    pelos reverendos Orlando Oliveira, Jubal Neves e Clovis Rodrigues; a primeira ordenação feminina na IEAB só
+    ocorreu em 1985.
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: >-
+      E em 6 de agosto de 1974, é apresentado o famoso “Parecer Sul-Ocidental” a respeito “das mulheres e as Ordens
+      Sacras”, assinado pelos Revdos. Orlando Oliveira, Jubal Neves e Clovis Rodrigues

@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: wac-br-sp1
+acronym: WAC-BR-SP1
+name: Diocese São Francisco dos Pequenos (WAC no Brasil, São Paulo)
+type: diocese
+country: BR
+description: >-
+  Diocese da WAC no Brasil na capital paulista; Wilson Limeira Dias identifica sua Missão São Paulo com esta diocese
+  (ABC) em publicações de 2026.
+sources:
+- source: lwac-wacbr-provincia
+  quote: São Paulo, Capital - Diocese São Francisco dos Pequenos
+relations:
+- type: part_of
+  target: wac-br
+  date: null
+  status: probable
+  sources:
+  - source: lwac-wacbr-provincia
+    quote: São Paulo, Capital - Diocese São Francisco dos Pequenos

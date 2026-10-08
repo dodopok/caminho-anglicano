@@ -1,22 +1,38 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-do-para
-name: Diocese do Pará
+name: Diocese do Pará (IATB)
+aliases:
+- Diocese Norte-Nordeste (Thomas Cranmer) / Diocese do Pará
+- Diocese do Pará
 type: diocese
+country: BR
 relations:
 - type: part_of
-  target: wac-br
-  status: probable
-  sources:
-  - source: cant-novas-igrejas-2024
-    quote: Dom Antônio Jesualdo Bezerra de Moura, bispo diocesano do Pará
-    page: '129'
-  - source: cant-novas-igrejas-2024
-    quote: Dom Raimundo Cesar Oliveira Costa, bispo auxiliar da Diocese do Pará
-    page: '129'
-- type: part_of
   target: iatb
-  status: probable
+  status: confirmed
   sources:
+  - source: lia-iatb-noticias-2010
+    quote: >-
+      Após consultas com os presbitérios, o Rev. Pe. Ricardo Vicente dos Anjos obteve o deferimento da incardinação
+      solicitada para a Diocese do Norte-Nordeste do Brasil
+  - source: lia-iatb-noticias-2010
+    quote: >-
+      Padre Vicente do Anjos recebeu o título de Cônego da Diocese do Pará, em reconhecimento dos bispos aos seus
+      esforços na consolidação da Diocese. As nomeações foram a partir do dia 24 de agosto de 2010.
+  - source: lia-iatb-juris-2013
+    quote: 'DIOCESE DO PARÁ Bispo Diocesano: Revmo. Dom Ricardo Vicente dos Anjos'
+  - source: lia-iatb-home-2017-10
+    quote: >-
+      Nós, Dom Rui Costa Barbosa, Dom X, Dom Washington Luis, Dom José Aparecido e Dom Y, respectivamente bispos
+      das Dioceses do Sudeste, do Centro-Oeste, do Sergipe, do Sul e do Pará
+  - source: lia-iatb-juris-2010
+    quote: 'DIOCESE DO PARÁ Bispo Diocesano: Dom Eduardo Mota'
+  - source: lia-iatb-noticias-2012
+    quote: Com profundo pesar noticiamos o falecimento de Dom Eduardo Mota, Bispo Diocesano da Diocese do Pará.
+  - source: lia-aeci-news
+    quote: >-
+      It is with sadness we announce the death of Bishop +Eduardo Mota, Ordinary of the Diocese of PARA for The
+      Traditional Anglican Church of Brazil.
   - source: cant-novas-igrejas-2024
     quote: >-
       e Diocese do Pará, com o bispo eleito, reverendo Hélio Augusto, que sagrado ao episcopado durante o Encontro

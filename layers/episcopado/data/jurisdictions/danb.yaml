@@ -7,6 +7,12 @@ country: BR
 founded:
   date: '2016'
   sources:
+  - source: lbd-danb-falecimento
+    quote: >-
+      integrou o "Movimento Anglicano no Brasil", que em 2016 passaria a ser a nossa "Diocese Anglicana no Brasil"
+      - com sede em Pouso Alegre Minas Gerais, passando a ser nosso bispo diocesano.
+  - source: lq-danb-fb-manifesto-2023
+    quote: Dom Dionísio Ailton Pereira – Bispo Sufragâneo da Diocese Anglicana no Brasil
   - source: cant-novas-igrejas-2024
     quote: Em 2016 o “Movimento Anglicano no Brasil” passou a se chamar “Diocese Anglicana no Brasil”.
     page: '95'
@@ -24,36 +30,35 @@ founded:
     page: '93'
 website: https://www.facebook.com/profile.php?id=61574787623932
 description: >-
-  Nome adotado em 2016 pelo Movimento Anglicano no Brasil (Catedral Anglicana de São Paulo); bispos: Roger Douglas
-  Bird (diocesano), Ronaldo Melo (sagrado/elevado em 18/11/2018) e Dionísio Aílton Pereira (sufragâneo, 2021). Após
-  a morte de Bird (2023), Dionísio assumiu o governo e, no fim de 2023, desvinculou-se da Catedral, seguindo como
-  Igreja Anglicana Independente com sede em Pouso Alegre (MG).
+  Nome adotado em 2016 pelo Movimento Anglicano no Brasil, segundo nota da própria Diocese; a nota de 2023 afirma
+  que ela teria sede em Pouso Alegre (MG). Teve Roger Bird como bispo diocesano até a morte (13/02/2023); Dionísio
+  Aílton Pereira, sagrado sufragâneo em 2021, aparece em janeiro de 2023 assinando como 'Bispo Sufragâneo da Diocese
+  Anglicana no Brasil'. O site da Catedral Anglicana de São Paulo ainda descreve a Catedral como 'a cátedra da Diocese
+  Anglicana no Brasil'.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Em 2016 o “Movimento Anglicano no Brasil” passou a se chamar “Diocese Anglicana no Brasil”.
-  page: '95'
-- source: cant-novas-igrejas-2024
+- source: lbd-danb-falecimento
   quote: >-
-    A Diocese Anglicana no Brasil tem origem em duas jurisdições: a primeira, o chamado Movimento Anglicano no Brasil
-    (MAnB), ligado à Catedral Anglicana de São Paulo, do reverendo Aldo Quintão. A segunda é a Paróquia Anglicana
-    de São Jorge, na cidade de Pouso Alegre, interior de Minas Gerais, hoje liderada pelo bispo Dionísio Ailton
-    Pereira.
-  page: '103'
-- source: cant-novas-igrejas-2024
-  quote: >-
-    Para organizar juridicamente a nova denominação, e por se tratar de uma Igreja de governo episcopal, foi criada
-    a Diocese Anglicana no Brasil.
-  page: '93'
+    integrou o "Movimento Anglicano no Brasil", que em 2016 passaria a ser a nossa "Diocese Anglicana no Brasil"
+    - com sede em Pouso Alegre Minas Gerais, passando a ser nosso bispo diocesano.
+- source: lq-danb-fb-manifesto-2023
+  quote: Dom Dionísio Ailton Pereira – Bispo Sufragâneo da Diocese Anglicana no Brasil
 relations:
 - type: successor_of
   target: manb
   date: '2016'
-  status: probable
+  led_by:
+  - roger-douglas-bird
+  status: confirmed
   sources:
+  - source: lbd-danb-falecimento
+    quote: >-
+      integrou o "Movimento Anglicano no Brasil", que em 2016 passaria a ser a nossa "Diocese Anglicana no Brasil"
   - source: cant-novas-igrejas-2024
     quote: Em 2016 o “Movimento Anglicano no Brasil” passou a se chamar “Diocese Anglicana no Brasil”.
     page: '95'
-  notes: Mudança de nome.
+  notes: >-
+    Fonte da própria Diocese Anglicana no Brasil (nota de 14/02/2023). Mudança de nome em 2016 (segundo a mesma
+    fonte, com sede em Pouso Alegre). Mudança de nome.
 - type: broke_communion_with
   target: casp
   date: '2023'

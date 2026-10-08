@@ -1,38 +1,96 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: eduardo-mota
 name: Eduardo Mota
+full_name: Eduardo Mota
 death:
   date: '2012-01-01'
   sources:
-  - source: cont-aeci-news
+  - source: lia-iatb-noticias-2012
+    quote: >-
+      Com profundo pesar noticiamos o falecimento de Dom Eduardo Mota, Bispo Diocesano da Diocese do Pará. O passamento
+      ocorreu nas primeiras horas do dia 1º de janeiro de 2012
+  - source: lia-aeci-news
+    quote: Bishop +Mota was promoted to Glory on January 1st 2012.
+  - source: lia-aeci-news
     quote: >-
       It is with sadness we announce the death of Bishop +Eduardo Mota, Ordinary of the Diocese of PARA for The
       Traditional Anglican Church of Brazil.
-  - source: cont-aeci-news
-    quote: Bishop +Mota was promoted to Glory on January 1st 2012.
+  - source: lia-iatb-noticias-2012
+    quote: >-
+      Dom Eduardo Mota já em idade provecta, sofreu um AVC no dia 24 de dezembro de 2011 e desde então esteve internado
+      no mesmo Hospital Regional de Cametá.
 biography: >-
-  Ordinário da Diocese do Pará da Traditional Anglican Church of Brazil (IATB), falecido em 01/01/2012 segundo a
-  AECI; seu sucessor foi Ricardo Vicente dos Anjos (sagrado 15/07/2012).
+  Bispo diocesano do Pará (sede em Cametá) da IATB; sagrado em 23/03/1980 em Brasília na Igreja Católica Apostólica
+  Brasileira por Luiz Fernando Castilho Mendez, segundo a IATB; faleceu em Cametá em 01/01/2012, após um AVC em
+  24/12/2011.
 sources:
-- source: cont-aeci-news
+- source: lia-iatb-noticias-2012
   quote: >-
-    It is with sadness we announce the death of Bishop +Eduardo Mota, Ordinary of the Diocese of PARA for The Traditional
-    Anglican Church of Brazil.
-- source: cont-aeci-news
+    Com profundo pesar noticiamos o falecimento de Dom Eduardo Mota, Bispo Diocesano da Diocese do Pará. O passamento
+    ocorreu nas primeiras horas do dia 1º de janeiro de 2012
+- source: lia-aeci-news
   quote: Bishop +Mota was promoted to Glory on January 1st 2012.
+ordinations:
+- order: episcopate
+  date: '1980-03-23'
+  place: Brasília (DF)
+  jurisdiction: icab
+  principal_consecrator: luiz-fernando-castillo-mendez
+  status: probable
+  sources:
+  - source: lia-iatb-noticias-2012
+    quote: >-
+      Dom Eduardo Mota foi ordenado ao episcopado na ICAB, na Cidade de Brasília, pelo Eminente Dom Luiz Fernando
+      Castilho Mendez no dia 23 de março de 1980, portanto exerceu o episcopado por mais de três décadas.
+  notes: >-
+    Fonte única (nota necrológica da IATB, por Dom Rui). O sagrante aparece como 'Luiz Fernando Castilho Mendez';
+    a lista 'Brazilian Catholic Line' da IATB traz 'Luis Castilho-Mendez' (consagrado em 03/05/1948) em outra linhagem.
 affiliations:
+- jurisdiction: iatb
+  role: other
+  role_description: bispo diocesano
+  diocese: diocese-do-para
+  start: '2009'
+  end: '2012-01-01'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: lia-iatb-juris-2010
+    quote: 'DIOCESE DO PARÁ Bispo Diocesano: Dom Eduardo Mota'
+  - source: lia-iatb-noticias-2012
+    quote: Com profundo pesar noticiamos o falecimento de Dom Eduardo Mota, Bispo Diocesano da Diocese do Pará.
+  - source: lia-aeci-news
+    quote: >-
+      It is with sadness we announce the death of Bishop +Eduardo Mota, Ordinary of the Diocese of PARA for The
+      Traditional Anglican Church of Brazil.
+  notes: >-
+    Local: sede em Cametá. Início inferido: a Diocese do Pará (sede em Cametá) foi constituída pelo Decreto Arquiepiscopal
+    018/2009 (28-29/10/2009); a primeira menção a Mota na IATB que consultamos é de 2010 ('nova fase do seu episcopado
+    na IATB'). A Diocese do Pará já aparece com Mota como bispo em 2010.
 - jurisdiction: iatb
   role: diocesan_bishop
   end: '2012-01-01'
   end_reason: death
   status: probable
   sources:
-  - source: cont-aeci-news
+  - source: lia-aeci-news
     quote: >-
       It is with sadness we announce the death of Bishop +Eduardo Mota, Ordinary of the Diocese of PARA for The
       Traditional Anglican Church of Brazil.
-  - source: cont-aeci-news
+  - source: lia-aeci-news
     quote: Bishop +Mota was promoted to Glory on January 1st 2012.
   notes: >-
     Local: Diocese do Pará. A AECI chama a igreja de 'The Traditional Anglican Church of Brazil'; pela presença
     de Rui Costa Barbosa como primaz, corresponde à IATB.
+events:
+- type: death
+  date: '2012-01-01'
+  description: >-
+    Eduardo Mota sofreu um AVC em 24/12/2011 e morreu em 01/01/2012 no Hospital Regional de Cametá (PA); o administrador
+    diocesano passou a ser o cônego Ricardo Vicente dos Anjos.
+  status: confirmed
+  sources:
+  - source: lia-iatb-noticias-2012
+    quote: >-
+      Dom Eduardo Mota já em idade provecta, sofreu um AVC no dia 24 de dezembro de 2011 e desde então esteve internado
+      no mesmo Hospital Regional de Cametá.

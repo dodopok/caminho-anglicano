@@ -1,17 +1,56 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: barry-frank-peachey
 name: Barry Frank Peachey
+full_name: Barry Frank Peachey
 aliases:
+- Barry Peachey
 - Frank Peachey
 biography: >-
-  Bispo filiado à The Anglican Independent Communion Worldwide (Inglaterra); sagrou Josué Sousa Torres e participou
-  da sagração de Ricardo Lorite e Rui Barbosa em 15/01/2006.
+  Bispo in Anglia da AIC-W (Inglaterra), sagrante principal de Rui Costa Barbosa em 15/01/2006; segundo a IATB foi
+  sagrado por Norman Dutton (c. 2005), tornou-se arcebispo emérito do Reino Unido e Europa (Communion of Evangelical
+  Episcopal Churches) em 2007 e foi bispo titular de Vera Cruz e membro honorário da Câmara dos Bispos da IATB.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lia-iatb-bispos-2011
   quote: >-
-    bispo Barry Frank Peachey, filiado à The Anglican Independent Communion Worldwide, com sede na Inglaterra
-  page: '145'
+    Barry Frank Peachey, 2005 - Bishop in Anglia, Regionary Bishop for the Midland Counties of England and Metropolitan
+    Chancellor of The Anglican Independent Communion Worldwide
+- source: lia-iatb-contato-2010
+  quote: >-
+    Bispo Titular de Vera Cruz (Igreja Anglicana Tradicional do Brasil) Membro Honorário da Câmara dos Bispos da
+    Igreja Anglicana Tradicional do Brasil
+ordinations:
+- order: episcopate
+  date: '2005-06-05'
+  place: High Legh, Cheshire (Inglaterra)
+  jurisdiction: aic-w
+  principal_consecrator: norman-dutton
+  status: probable
+  sources:
+  - source: lia-iatb-bispos-2011
+    quote: >-
+      (260) Barry Frank Peachey, 2005 - Bishop in Anglia, Regionary Bishop for the Midland Counties of England
+  - source: lia-iatb-noticias-2012
+    quote: >-
+      O Arcebispo Dutton está na nossa linha de sucessão apostólica, pois sagrou o Bispo Barry Peachey, nosso consagrante.
+  - source: lac-cnbp-sucessao
+    quote: >-
+      Barry Frank Peachey – Em 5/06/2005 foi sagrado ao Bispado pelo Bispo Norman Sydney Dutton em High Legh, Condado
+      Cerimonial de Cheshire, Inglaterra.
+  notes: >-
+    Ano indicado nas listas de sucessão da IATB (c. 2005); sagrante: Norman Dutton segundo a IATB (2011). Data exata
+    e co-sagrantes não informados. Elo estrangeiro da linha de sucessão de Josué Souza Torres e Elias Batista Nogueira;
+    fonte única (blog do CNBP).
 affiliations:
+- jurisdiction: iatb
+  role: other
+  role_description: bispo titular honorário
+  status: confirmed
+  sources:
+  - source: lia-iatb-contato-2010
+    quote: Bispo Titular de Vera Cruz (Igreja Anglicana Tradicional do Brasil)
+  notes: >-
+    Local: Titular de Vera Cruz. Listado como 'Arcebispo Emérito do Reino Unido e Europa (The Communion of Evangelical
+    Episcopal Churches)', 'Membro Honorário da Câmara dos Bispos' da IATB (página de set. 2010).
 - jurisdiction: cai
   role: bishop
   status: probable
@@ -31,17 +70,17 @@ events:
     Costa Barbosa.
   status: probable
   sources:
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       Pedro A. Compton-Caputo (1993) – Arcebispo Primaz da Comunhão Anglicana Independente nas Américas. Norman
       Sydney Dutton (1999)
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: Barry Frank Peachey (2005)
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       JOSUÉ SOUZA TORRES (15/01/2006) – ARCEBISPO PRIMAZ DA IGREJA EPISCOPAL DO EVANGELHO PLENO, BRASIL. ADOLFO
       BATISTA TEODORO JUNIOR (12/01/2013) BISPO PRIMAZ DA IGREJA ANGLICANA ORTODOXA NO BRASIL.
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       (146) Tau Iranildo Macieira da Silva, 2004. (147) Dom Josué Douza Torres (148) 2006. (148) Dom Adolfo Batista
       Teodoro Junior 2013.

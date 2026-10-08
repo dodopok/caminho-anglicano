@@ -5,8 +5,12 @@ type: diocese
 relations:
 - type: part_of
   target: ica-brasil
-  status: probable
+  status: confirmed
   sources:
+  - source: lica-icabr-quemsomos
+    quote: Dom Marcos Vinícius de Souza Bispo da Prelazia Anglicana de São Paulo/SP
+  - source: lica-marcos-quemsou
+    quote: Sou bispo da Comunidade Anglicana Sagrada Família, parte da Igreja Católica Anglicana do Brasil.
   - source: cant-novas-igrejas-2024
     quote: Dom Marcos Vinícius de Souza, bispo da Prelazia Anglicana de São Paulo
     page: '139'

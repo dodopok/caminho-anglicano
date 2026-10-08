@@ -1,16 +1,43 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: wellington-pedroso-rodrigues
 name: Wellington Pedroso Rodrigues
-biography: Bispo coadjutor e chanceler da Igreja Anglicana de Comunhão Livre.
+full_name: Wellington Pedroso Rodrigues
+aliases:
+- Dom Wellington P. Rodrigues
+biography: >-
+  Bispo coadjutor da Igreja Anglicana de Comunhão Livre (Joinville), com sagração datada de 2017 na lista de sucessão
+  do site da igreja.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: dom Wellington Pedroso Rodrigues, bispo coadjutor e chanceler.
-  page: '115'
+- source: lpq-iacl-wb-sucessao
+  quote: >-
+    Wellington Pedroso Rodrigues - 2017 (Bispo Coadjutor da Igreja Anglicana de Comunhão Livre - Joinville SC).
+ordinations:
+- order: episcopate
+  date: '2017'
+  jurisdiction: iacl
+  office: suffragan
+  status: contested
+  sources:
+  - source: lpq-iacl-wb-sucessao
+    quote: Ezequiel Martins Garcia Júnior - 2017 Wellington Pedroso Rodrigues - 2017
+  - source: lpq-iacl-wb-sucessao
+    quote: >-
+      Wellington Pedroso Rodrigues - 2017 (Bispo Coadjutor da Igreja Anglicana de Comunhão Livre - Joinville SC).
+  notes: >-
+    Na linha de sucessão do site, Wellington vem imediatamente depois de Ezequiel (ambos 2017), o que implica Ezequiel
+    como seu sagrante; o texto da mesma página diz, porém, que Ezequiel foi sagrado por Wellington. Cargo: bispo
+    coadjutor. O site da IACL dá Ezequiel Martins Garcia Júnior como sagrante, mas também diz que este foi sagrado
+    por Wellington; sagrante deixado em aberto.
 affiliations:
 - jurisdiction: iacl
   role: coadjutor_bishop
-  status: probable
+  start: '2017'
+  status: confirmed
   sources:
+  - source: lpq-iacl-wb-sucessao
+    quote: >-
+      Wellington Pedroso Rodrigues - 2017 (Bispo Coadjutor da Igreja Anglicana de Comunhão Livre - Joinville SC).
   - source: cant-novas-igrejas-2024
     quote: dom Wellington Pedroso Rodrigues, bispo coadjutor e chanceler.
     page: '115'
+  notes: O livro de Costa (2024) acrescenta o cargo de chanceler.

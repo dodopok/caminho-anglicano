@@ -5,11 +5,11 @@ full_name: Adolfo Batista Teodoro Junior
 aliases:
 - Adolfo Batista Teodoro Junior
 - Adolfo Batista Teodoro Júnior
-biography: Bispo primaz da Igreja Anglicana Ortodoxa no Brasil em 2017.
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
-- source: cant-novas-igrejas-2024
-  quote: pelo então Bispo Primaz da IAOB, Dom Adolfo Batista Teodoro Júnior.
-  page: '34'
+- source: drv-ata-iaob-2014
+  quote: >-
+    aos 12(Doze) dias do mês de Janeiro do Ano da Graça de Nosso Senhor Jesus Cristo de Dois Mil e Treze (2013)
 ordinations:
 - order: diaconate
   date: '2012-06-12'
@@ -17,7 +17,7 @@ ordinations:
   ordained_by: josue-sousa-torres
   status: probable
   sources:
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       Ordenado Diácono, no dia 12 de Junho de 2012, através da imposição de mãos do Bispo Primaz da Igreja Episcopal
       do Evangelho Pleno “Igreja de Tradição Anglicana”, Dom Josué Souza Torres.
@@ -31,7 +31,7 @@ ordinations:
   ordained_by: josue-sousa-torres
   status: probable
   sources:
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       Na data de 14 de Junho de 2012, o Reverendo Diácono Adolfo Batista Teodoro Junior foi elevado ao Ministério
       Presbiteral através da imposição das mãos do Reverendíssimo Bispo Primaz da Igreja Episcopal do Evangelho
@@ -45,14 +45,41 @@ ordinations:
   date: '2013-01-12'
   place: Fazenda Shangri-lá (sede provisória da IAOB), Corumbá de Goiás (GO)
   jurisdiction: ieep
-  office: primate
+  office: missionary
   principal_consecrator: josue-sousa-torres
   co_consecrators:
   - dirceu-falcao-ibaldo
   - osiel-luiz-santos
-  status: confirmed
+  status: contested
   sources:
-  - source: cont-iaob-sucessao
+  - source: drv-ata-iaob-2014
+    quote: >-
+      aos 12(Doze) dias do mês de Janeiro do Ano da Graça de Nosso Senhor Jesus Cristo de Dois Mil e Treze (2013)
+  - source: drv-ata-iaob-2014
+    quote: >-
+      já fora sagrado Bispo de acordo com o Ordinal Anglicano pelos Reverendíssimos Bispos: Dom Josué Sousa Torres,
+      Primaz da Igreja Episcopal do Evangelho Pleno da cidade de Taboão da Serra Estado de São Paulo
+  - source: drv-ata-iaob-2014
+    quote: >-
+      Reverendíssimo Bispo Dom Dirceu Falcão Ibaldo, Primaz da Congregação Missionaria de Tradição Anglicana
+  - source: drv-ata-iaob-2014
+    quote: Dom Osiel Luiz Santos, Primaz da Igreja Católica Apostólica Libertadora da cidade de Goiânia
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A fundação da Igreja foi precedida pela sagração ao episcopado do bispo Adolfo Batista, ocorrida em 12 de
+      Janeiro de 2013, através da imposição das mãos do Bispo Josué Souza Torres, Primaz da Igreja Episcopal do
+      Evangelho Pleno, tendo como cosagrantes os bispos Osiel Luiz Santos da Igreja Católica Apostólica Libertadora
+      e Dirceu Falcão Ibaldo
+  - source: lvc-iaob-docs
+    quote: >-
+      Foi Sagrante o Reverendíssimo Bispo Dom ++ Josué Souza Torres e consagrantes: Os Reverendíssimos Bispos: Dom
+      ++ Osiel Luiz Santos da Igreja Católica Apostólica Libertadora e Dom ++ Dirceu Falcão Ibaldo da Igreja Anglicana
+      Ortodoxa no Brasil Diocese Sul Brasileira.
+  - source: lvc-iaob-docs
+    quote: >-
+      Na data de 12 de Janeiro de 2013, o Reverendo Padre Adolfo Batista Teodoro Junior, foi Sagrado ao Sacro Ministério
+      Episcopal
+  - source: lvc-iaob-docs
     quote: >-
       Na data de 12 de Janeiro de 2013, o Reverendo Padre Adolfo Batista Teodoro Junior, foi Sagrado ao Sacro Ministério
       Episcopal através da imposição das mãos do Reverendíssimo Bispo Dom ++ Josué Souza Torres Primaz da Igreja
@@ -60,22 +87,35 @@ ordinations:
       em Corumbá de Goiás, sendo consagrantes os Reverendíssimos Bispos Dom ++ Osiel Luiz Santos (Nome Apostólico
       Dom ++ João Paulo) da Igreja Católica Apostólica Libertadora e Dom ++ Dirceu Falcão Ibaldo da Igreja Anglicana
       Ortodoxa no Brasil Diocese Sul Brasileira.
-  - source: cont-iaob-home
+  - source: lpq-iaob-home
     quote: >-
       Rev. Adolfo quando presidiu o COPIEB Concilio Presbiteriano de Igrejas Evangélicas do Brasil no Distrito Federal,
       recebeu por imposição das mãos dos ministros do referido Concilio o título de Bispo, porém sem sucessão apostólica.
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      A fundação da Igreja foi precedida pela sagração ao episcopado do bispo Adolfo Batista, ocorrida em 12 de
-      Janeiro de 2013, através da imposição das mãos do Bispo Josué Souza Torres, Primaz da Igreja Episcopal do
-      Evangelho Pleno, tendo como cosagrantes os bispos Osiel Luiz Santos da Igreja Católica Apostólica Libertadora
-      e Dirceu Falcão Ibaldo
   - source: cant-novas-igrejas-2024
     quote: >-
       o ministro recebeu, por imposição de mãos de outros ministros daquele concílio, o título de bispo – contudo,
       sem linhagem de sucessão apostólica.
     page: '131'
   discrepancies:
+  - field: jurisdiction
+    value: iaob-2013
+    sources:
+    - source: lvc-iaob-docs
+      quote: >-
+        Foi Sagrante o Reverendíssimo Bispo Dom ++ Josué Souza Torres e consagrantes: Os Reverendíssimos Bispos:
+        Dom ++ Osiel Luiz Santos da Igreja Católica Apostólica Libertadora e Dom ++ Dirceu Falcão Ibaldo da Igreja
+        Anglicana Ortodoxa no Brasil Diocese Sul Brasileira.
+    - source: lvc-iaob-docs
+      quote: >-
+        Na data de 12 de Janeiro de 2013, o Reverendo Padre Adolfo Batista Teodoro Junior, foi Sagrado ao Sacro
+        Ministério Episcopal
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        A fundação da Igreja foi precedida pela sagração ao episcopado do bispo Adolfo Batista, ocorrida em 12 de
+        Janeiro de 2013, através da imposição das mãos do Bispo Josué Souza Torres, Primaz da Igreja Episcopal do
+        Evangelho Pleno, tendo como cosagrantes os bispos Osiel Luiz Santos da Igreja Católica Apostólica Libertadora
+        e Dirceu Falcão Ibaldo
+      page: '131'
   - field: jurisdiction
     value: copieb
     sources:
@@ -84,36 +124,41 @@ ordinations:
         o ministro recebeu, por imposição de mãos de outros ministros daquele concílio, o título de bispo – contudo,
         sem linhagem de sucessão apostólica.
       page: '131'
-  - field: jurisdiction
-    value: iaob-2013
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        A fundação da Igreja foi precedida pela sagração ao episcopado do bispo Adolfo Batista, ocorrida em 12 de
-        Janeiro de 2013, através da imposição das mãos do Bispo Josué Souza Torres, Primaz da Igreja Episcopal do
-        Evangelho Pleno, tendo como cosagrantes os bispos Osiel Luiz Santos da Igreja Católica Apostólica Libertadora
-        e Dirceu Falcão Ibaldo
-      page: '131'
   notes: >-
-    RESPOSTA À DÚVIDA: a sagração de 12/01/2013 foi por Josué Sousa Torres como Primaz da IEEP (Igreja Episcopal
-    do Evangelho Pleno), com Osiel Luiz Santos (ICALib) e Dirceu Falcão Ibaldo (IAOB Sul) como consagrantes, em
-    Corumbá de Goiás — NÃO pelo COPIEB. O COPIEB (Concílio Presbiteriano) é outro evento, anterior: o título de
-    'bispo' conferido por ministros presbiterianos 'sem sucessão apostólica' (fonte: o próprio site da IAOB). A
-    jurisdição do ato é a IEEP; a IAOB como instituição é fundada depois (assembleia de 20/04/2014 segundo Cant
-    2024; Costa 2021 fala em janeiro de 2013), embora o site da IAOB chame o local de 'sede provisória da IAOB'
-    e Dirceu Falcão Ibaldo de bispo da 'IAOB Diocese Sul Brasileira' já em 2013. Título de bispo conferido por imposição
-    de mãos de ministros do COPIEB, 'sem linhagem de sucessão apostólica'; data não informada. Precedeu a fundação
-    da IAOB (20/04/2014). Osiel Luiz Santos era da Igreja Católica Apostólica Libertadora; Dirceu Falcão Ibaldo,
-    primaz da Congregação Missionária de Tradição Anglicana (Santa Maria, RS).
+    Ata de 20/04/2014 narra a sagração de Dom Adolfo Batista Teodoro Junior, a ele atribuindo sagrantes na ordem
+    listada; a ata não diz qual é o principal nem o local da sagração. Página da própria IAOB sobre a sucessão apostólica
+    de seu primaz; liga a ICAL (Osiel) e a CMTA/Diocese Sul (Dirceu) à IAOB. RESPOSTA À DÚVIDA: a sagração de 12/01/2013
+    foi por Josué Sousa Torres como Primaz da IEEP (Igreja Episcopal do Evangelho Pleno), com Osiel Luiz Santos
+    (ICALib) e Dirceu Falcão Ibaldo (IAOB Sul) como consagrantes, em Corumbá de Goiás — NÃO pelo COPIEB. O COPIEB
+    (Concílio Presbiteriano) é outro evento, anterior: o título de 'bispo' conferido por ministros presbiterianos
+    'sem sucessão apostólica' (fonte: o próprio site da IAOB). A jurisdição do ato é a IEEP; a IAOB como instituição
+    é fundada depois (assembleia de 20/04/2014 segundo Cant 2024; Costa 2021 fala em janeiro de 2013), embora o
+    site da IAOB chame o local de 'sede provisória da IAOB' e Dirceu Falcão Ibaldo de bispo da 'IAOB Diocese Sul
+    Brasileira' já em 2013. Título de bispo conferido por imposição de mãos de ministros do COPIEB, 'sem linhagem
+    de sucessão apostólica'; data não informada. Precedeu a fundação da IAOB (20/04/2014). Osiel Luiz Santos era
+    da Igreja Católica Apostólica Libertadora; Dirceu Falcão Ibaldo, primaz da Congregação Missionária de Tradição
+    Anglicana (Santa Maria, RS).
 affiliations:
+- jurisdiction: iaob
+  role: other
+  role_description: bispo_primaz
+  start: '2014-04-20'
+  status: confirmed
+  sources:
+  - source: drv-ata-iaob-2014
+    quote: >-
+      Bispo Primaz cargo equivalente a Presidente Nacional da IAOB, o Reverendíssimo Bispo Dom Adolfo Batista Teodoro
+      Junior
+  notes: >-
+    Eleito por aclamação na assembleia de fundação, com mandato por tempo indeterminado conforme o estatuto.
 - jurisdiction: iaob-2013
   role: primate
   start: '2014-04-20'
   status: confirmed
   sources:
-  - source: cont-iaob-clero
+  - source: lpq-iaob-clero
     quote: Dom++Adolfo Batista Teodoro Junior - Primaz da  IAOB - Residente em Corumbá de Goiás - GO
-  - source: cont-iaob-sobre
+  - source: lvc-iaob-sobre
     quote: Dom++Adolfo Batista Teodoro Junior - Primaz
   - source: cant-novas-igrejas-2024
     quote: pelo então Bispo Primaz da IAOB, Dom Adolfo Batista Teodoro Júnior.
@@ -140,13 +185,25 @@ affiliations:
   role_description: presidente
   status: probable
   sources:
-  - source: cont-iaob-home
+  - source: lpq-iaob-home
     quote: >-
       Rev. Adolfo quando presidiu o COPIEB Concilio Presbiteriano de Igrejas Evangélicas do Brasil no Distrito Federal,
       recebeu por imposição das mãos dos ministros do referido Concilio o título de Bispo, porém sem sucessão apostólica.
   notes: >-
     Local: Distrito Federal. Título de bispo presbiteriano, sem linhagem apostólica, segundo o site da IAOB.
 events:
+- type: other
+  date: null
+  description: >-
+    A Igreja Anglicana Ortodoxa no Brasil (IAOB) diz ter nascido da fusão da 'Congregação Missionária de Confissão
+    Anglicana' com a Igreja Ortodoxa Renovada, resultando em duas dioceses (Sul, de Dirceu Falcão Ibaldo, e Centro-Oeste,
+    de Adolfo Teodoro).
+  status: probable
+  sources:
+  - source: lvc-iaob-blog-2014
+    quote: >-
+      a fusão da Congregação Missionaria de Confissão Anglicana, com a Igreja Ortodoxa Renovada, resultando para
+      a maior Glória no reino de Deus, na criação e instalação pública da IGREJA ANGLICANA ORTODOXA NO BRASIL
 - type: other
   date: '2013-01-12'
   description: >-
@@ -157,17 +214,17 @@ events:
     Costa Barbosa.
   status: probable
   sources:
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       Pedro A. Compton-Caputo (1993) – Arcebispo Primaz da Comunhão Anglicana Independente nas Américas. Norman
       Sydney Dutton (1999)
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: Barry Frank Peachey (2005)
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       JOSUÉ SOUZA TORRES (15/01/2006) – ARCEBISPO PRIMAZ DA IGREJA EPISCOPAL DO EVANGELHO PLENO, BRASIL. ADOLFO
       BATISTA TEODORO JUNIOR (12/01/2013) BISPO PRIMAZ DA IGREJA ANGLICANA ORTODOXA NO BRASIL.
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       (146) Tau Iranildo Macieira da Silva, 2004. (147) Dom Josué Douza Torres (148) 2006. (148) Dom Adolfo Batista
       Teodoro Junior 2013.

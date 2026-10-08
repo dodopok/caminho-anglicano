@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ica-belem
+acronym: ICA-Belém
+name: Diocese Católica Anglicana de Belém
+type: diocese
+country: BR
+description: >-
+  Diocese da ICA declarada vacante, sob responsabilidade do arcebispo primaz Orvandil Moreira Barbosa (site da ICA;
+  a notificação de 24/05/2018 a coloca nessa situação após a saída de três bispos).
+sources:
+- source: lica-ica-dioceses
+  quote: Diocese de Belém Vacante sob a responsabilidade do Arcebispo Primaz ++Dom Orvandil Moreira Barbosa.
+- source: lica-ica-notificacao
+  quote: As Dioceses Católicas Anglicanas de Belém e da Santa Cruz de Salvador, responsável pelo Nordeste

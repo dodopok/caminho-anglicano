@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ica-sao-paulo-e-sudoeste
+acronym: ICA-São Paulo e Sudoeste
+name: Diocese de São Paulo e Sudoeste (ICA)
+aliases:
+- Diocese de São Paulo e Sudoeste
+type: diocese
+country: BR
+description: >-
+  Diocese da ICA sob o bispo Izaias Rodrigues dos Santos (Dom Frei Junípero); em outra página do site é grafada
+  "Diocese do Sudeste".
+sources:
+- source: lica-ica-dioceses
+  quote: Diocese de São Paulo e Sudoeste Bispo Dom Izaias Rodrigues dos Santos (Dom Frei Junípero)
+- source: lica-ica-sobre
+  quote: + Dom Junípero Bispo da Diocese do Sudeste.
+relations:
+- type: part_of
+  target: ica
+  status: probable
+  sources:
+  - source: lica-ica-dioceses
+    quote: Diocese de São Paulo e Sudoeste Bispo Dom Izaias Rodrigues dos Santos (Dom Frei Junípero)

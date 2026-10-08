@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-nossa-senhora-do-perpetuo-socorro
+name: Diocese Nossa Senhora do Perpétuo Socorro
+type: diocese
+relations:
+- type: part_of
+  target: icc
+  status: probable
+  sources:
+  - source: lica-domomb-midiamax
+    quote: para assumir suas funções na Diocese Nossa Senhora do Perpétuo Socorro

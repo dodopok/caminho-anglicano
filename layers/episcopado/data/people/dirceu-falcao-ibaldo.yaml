@@ -1,15 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: dirceu-falcao-ibaldo
 name: Dirceu Falcão Ibaldo
-biography: >-
-  Primaz da Congregação Missionária de Tradição Anglicana (Santa Maria, RS); co-sagrante de Adolfo Batista (2013);
-  depois primaz emérito e bispo da Região Sul da IAOB; autor de 'História do Anglicanismo' (2012).
+aliases:
+- Dom Dirceu Falcão Ibaldo, ThD, DD.
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
-- source: cant-novas-igrejas-2024
+- source: drv-ata-iaob-2014
   quote: >-
-    Dirceu Falcão Ibaldo, então Primaz da Congregação Missionária de Tradição Anglicana da cidade de Santa Maria
-    Estado do Rio Grande do Sul
-  page: '131'
+    Reverendíssimo Bispo Dom Dirceu Falcão Ibaldo, Primaz da Congregação Missionaria de Tradição Anglicana
 affiliations:
 - jurisdiction: cmta
   role: primate
@@ -21,16 +19,38 @@ affiliations:
       Dirceu Falcão Ibaldo, então Primaz da Congregação Missionária de Tradição Anglicana da cidade de Santa Maria
       Estado do Rio Grande do Sul
     page: '131'
+- jurisdiction: cmta
+  role: other
+  role_description: bispo_primaz
+  status: confirmed
+  sources:
+  - source: drv-ata-iaob-2014
+    quote: >-
+      Reverendíssimo Bispo Dom Dirceu Falcão Ibaldo, Primaz da Congregação Missionaria de Tradição Anglicana
+  notes: 'Local: Santa Maria, RS. Cargo em 2013-2014; data de início desconhecida.'
+- jurisdiction: iaob-2013
+  role: diocesan_bishop
+  diocese: diocese-anglicana-ortodoxa-sul-brasileira
+  status: confirmed
+  sources:
+  - source: lvc-iaob-blog-2014
+    quote: >-
+      Diocese Anglicana Ortodoxa Sul Brasileira sob a direção do Revmo Dom Dirceu Falcão Ibaldo  (Bispo Primaz Emérito)
+  - source: lvc-iaob-sobre
+    quote: Dom Dirceu Falcão Ibaldo - Bispo Primaz Emérito Sul do Brasil em Santa Maria – RS
+  notes: >-
+    Local: Santa Maria, RS. Em 2014 a IAOB tinha duas dioceses (Sul, com Dirceu; Centro-Oeste, com Adolfo Teodoro)
+    e um campo missionário em Brasília.
 - jurisdiction: iaob-2013
   role: other
   role_description: primaz_emerito
   status: confirmed
   sources:
-  - source: cont-iaob-clero
+  - source: lpq-iaob-clero
     quote: >-
       Dom++Dirceu Falcão Ibaldo - Primaz Emérito  e Bispo para Região Sul do Brasil IAOB - Residente em Santa Maria
       - RS
-  - source: cont-iaob-sobre
+  - source: lvc-iaob-sobre
     quote: Dom++dirceu Falcão Ibaldo - Primaz Emerito
   - source: cant-novas-igrejas-2024
     quote: que posteriormente passou a integrar a IAOB como seu primaz-emérito.
@@ -42,6 +62,18 @@ affiliations:
     Local: Região Sul do Brasil (Santa Maria, RS). Pelo site da IAOB, Dirceu Falcão Ibaldo e Adolfo Teodoro são
     os titulares das duas dioceses (Sul Brasileira e Centro-Oeste Brasileira) que formam a IAOB. Local: Região Sul.
 events:
+- type: other
+  date: null
+  description: >-
+    A Igreja Anglicana Ortodoxa no Brasil (IAOB) diz ter nascido da fusão da 'Congregação Missionária de Confissão
+    Anglicana' com a Igreja Ortodoxa Renovada, resultando em duas dioceses (Sul, de Dirceu Falcão Ibaldo, e Centro-Oeste,
+    de Adolfo Teodoro).
+  status: probable
+  sources:
+  - source: lvc-iaob-blog-2014
+    quote: >-
+      a fusão da Congregação Missionaria de Confissão Anglicana, com a Igreja Ortodoxa Renovada, resultando para
+      a maior Glória no reino de Deus, na criação e instalação pública da IGREJA ANGLICANA ORTODOXA NO BRASIL
 - type: other
   date: 2013-01
   description: >-

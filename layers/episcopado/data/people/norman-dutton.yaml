@@ -1,35 +1,84 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: norman-dutton
 name: Norman Dutton
+full_name: Norman Sydney Dutton
+aliases:
+- Archbishop Norman S Dutton
+- Dom Norman Sydney Dutton
+- Norman S. Dutton
+- Norman Sydney Dutton
+death:
+  date: 2022-03
+  sources:
+  - source: lia-aeci-succession
+    quote: >-
+      Norman Sydney Dutton c.1999 Presiding Bishop of the Anglican Independent Communion in the British Isles &
+      Europe 1.11.03
+  - source: lia-aeci-news
+    quote: >-
+      Metropolitan Archbishop Norman Sydney Dutton has retired from Leadership of The Anglican Episcopal Church
+      International.
+  - source: lia-aeci-news
+    quote: >-
+      In March 2022 we were saddened to be informed that Emeritus Archbishop Norman Dutton had gone to the Lord.
 biography: >-
-  Bispo independente, um dos bispos pelos quais Ricardo Lorite e Rui Barbosa receberam a ordenação episcopal em
-  15/01/2006.
+  Fundador e Metropolita da AECI (1.º Metropolitano da AIC-W em 2003); sagrado c. 1999 por Peter A. Compton-Caputo;
+  aposentou-se em 08/04/2012 como Metropolita Emérito; morreu em março de 2022 segundo a AECI.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: através dos bispos Norman Dutton, Frank Peachey e Lucas Macieira da Silva
-  page: '118'
+- source: lia-aeci-succession
+  quote: >-
+    Norman Sydney Dutton c.1999 Presiding Bishop of the Anglican Independent Communion in the British Isles & Europe
+    1.11.03
+- source: lia-aeci-news
+  quote: >-
+    Metropolitan Archbishop Norman Sydney Dutton has retired from Leadership of The Anglican Episcopal Church International.
+- source: lia-aeci-news
+  quote: >-
+    In March 2022 we were saddened to be informed that Emeritus Archbishop Norman Dutton had gone to the Lord.
 ordinations:
 - order: episcopate
   date: c.1999
-  jurisdiction: null
+  place: St. Paul's, Crownsville (Maryland, EUA)
+  jurisdiction: aic-w
   principal_consecrator: peter-a-compton-caputo
-  status: probable
+  status: confirmed
   sources:
-  - source: cont-aeci-news
+  - source: lia-aeci-succession
+    quote: >-
+      Norman Sydney Dutton c.1999 Presiding Bishop of the Anglican Independent Communion in the British Isles &
+      Europe 1.11.03
+  - source: lia-iatb-aicw-2010
+    quote: >-
+      The Rt. Rev´d. Dr. Norman S. Dutton, who had been consecrated as Bishop in Anglia (England) at St. Paul´s
+      Crownsville in 1999
+  - source: lia-aeci-news
     quote: >-
       Archbishop Victor Manuel Cruz-Blanco was one of the consecrators of Bishop Peter Compton Caputo who in turn
       was Consecrator of Norman S Dutton. This maintains an historic link in our Apostolic Succession.
-  - source: cont-aeci-succession
+  - source: lia-aeci-succession
     quote: >-
       Peter A. Compton-Caputo c1993 Presiding Bishop of The Anglican Independent Communion Norman Sydney Dutton
       c1999
   notes: >-
-    Linhagem declarada pela AECI: Compton-Caputo (c.1993) -> Dutton (c.1999) -> Rui Costa Barbosa e Ricardo Lorite
-    (15/01/2006, com Peachey e Macieira). A AECI afirma que Cruz-Blanco foi co-sagrante de Compton-Caputo, o que
-    liga, segundo a própria AECI, a linhagem de Barbosa/IATB à de Cruz-Blanco (e, portanto, à de Roque). Fonte única/autodeclarada;
-    a página de sucessão lista a linha anglicana independente por Luther-Ingram-St. Peters-Wharton-Compton-Caputo-Dutton,
-    sem citar Cruz-Blanco.
+    A AECI e a IATB dão 1999 e Peter A. Compton-Caputo como sagrante (a AECI afirma ainda que Victor Manuel Cruz-Blanco
+    foi um dos co-sagrantes de Compton-Caputo, que sagrou Dutton). Linhagem declarada: Compton-Caputo (1993) ->
+    Dutton (1999) -> Peachey (2005) -> Rui Costa Barbosa (2006). Linhagem declarada pela AECI: Compton-Caputo (c.1993)
+    -> Dutton (c.1999) -> Rui Costa Barbosa e Ricardo Lorite (15/01/2006, com Peachey e Macieira). A AECI afirma
+    que Cruz-Blanco foi co-sagrante de Compton-Caputo, o que liga, segundo a própria AECI, a linhagem de Barbosa/IATB
+    à de Cruz-Blanco (e, portanto, à de Roque). Fonte única/autodeclarada; a página de sucessão lista a linha anglicana
+    independente por Luther-Ingram-St. Peters-Wharton-Compton-Caputo-Dutton, sem citar Cruz-Blanco.
 events:
+- type: other
+  date: '2012-04-08'
+  description: >-
+    Norman Dutton retirou-se da liderança da AECI em 08/04/2012 (Páscoa), passando a Metropolita Emérito; John Langley
+    assumiu e foi instalado em 15/07/2012.
+  status: confirmed
+  sources:
+  - source: lia-aeci-news
+    quote: >-
+      With effect from Easter Day, 8th April, 2012 Metropolitan Archbishop Norman Sydney Dutton has retired from
+      Leadership of The Anglican Episcopal Church International.
 - type: other
   date: '2013-01-12'
   description: >-
@@ -40,17 +89,17 @@ events:
     Costa Barbosa.
   status: probable
   sources:
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       Pedro A. Compton-Caputo (1993) – Arcebispo Primaz da Comunhão Anglicana Independente nas Américas. Norman
       Sydney Dutton (1999)
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: Barry Frank Peachey (2005)
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       JOSUÉ SOUZA TORRES (15/01/2006) – ARCEBISPO PRIMAZ DA IGREJA EPISCOPAL DO EVANGELHO PLENO, BRASIL. ADOLFO
       BATISTA TEODORO JUNIOR (12/01/2013) BISPO PRIMAZ DA IGREJA ANGLICANA ORTODOXA NO BRASIL.
-  - source: cont-iaob-sucessao
+  - source: lvc-iaob-docs
     quote: >-
       (146) Tau Iranildo Macieira da Silva, 2004. (147) Dom Josué Douza Torres (148) 2006. (148) Dom Adolfo Batista
       Teodoro Junior 2013.

@@ -3,6 +3,11 @@ id: paces
 acronym: PACES
 name: Província Anglicana Católica do Espírito Santo
 aliases:
+- IACES
+- >-
+  Igreja Anglicana Católica do Espírito Santo (IACES; também Igreja Anglo-Católica do Espírito Santo, Província
+  Anglicana Católica do Espírito Santo)
+- Igreja Anglicana Católica do Espírito Santo / Igreja Anglo-Católica do Brasil e América do Sul
 - Província Anglicana Católica do Espírito Santo (Igreja Anglicana Católica do Espírito Santo)
 type: province
 country: BR
@@ -18,6 +23,13 @@ founded:
       Essa jurisdição diocesana tem origem na proposta de criação da Província Anglicana Católica do Espírito Santo
       (hoje extinta)
     page: '105'
+  discrepancies:
+  - field: date
+    value: '2018'
+    sources:
+    - source: lica-iaces-historia
+      quote: fora elevado ao encargo de Arcebispo do Brasil e Primaz de toda a América do Sul em 11/10/2018
+website: https://www.anglicanacatolica.com/
 description: >-
   Datação indireta: o livro situa o contexto (PACES e sucessora PACST) entre 2019 e 2021, sem data exata para a
   PACES; extinção anterior à PACST (2021), sem data. Atenção: o arcebispo L. Marin-Saavedra visitou o Brasil em
@@ -32,3 +44,20 @@ sources:
     Essa jurisdição diocesana tem origem na proposta de criação da Província Anglicana Católica do Espírito Santo
     (hoje extinta)
   page: '105'
+relations:
+- type: schism_from
+  target: ica-brasil
+  date: '2018'
+  led_by:
+  - jorge-costa
+  - jose-fernando-de-faria
+  - orestes-calazans-filho
+  status: probable
+  sources:
+  - source: lica-iaces-historia
+    quote: >-
+      nos desligarmos da Província Católica Anglicana do Brasil e sob inspiração de Deus e necessidade da Igreja
+      de Cristo, criarmos a
+  notes: >-
+    Texto do próprio site da IACES; data entre 29/07/2018 e 11/10/2018 (o texto menciona a elevação de Faria a arcebispo
+    nesta última data).

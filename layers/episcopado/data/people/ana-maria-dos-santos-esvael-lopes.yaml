@@ -4,15 +4,41 @@ name: Ana Maria dos Santos Esvael Lopes
 full_name: Ana Maria dos Santos Esvael Lopes
 ordinations:
 - order: diaconate
-  date: '1992'
+  date: '1992-03-08'
+  place: Matriz do Crucificado, Bagé (RS)
   jurisdiction: ieab
-  status: probable
+  status: confirmed
   sources:
+  - source: lic-livro35
+    quote: >-
+      No dia 8 de março de 1992, aos 33 anos (com a idade de Cristo) recebemos a Ordenação Diaconal, em Bagé, na
+      Matriz do Crucificado.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1992 - … Ana Maria dos Santos Esvael Lopes
     page: '373'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenada com o marido, Rodimar Pinto Lopes. Ano tirado da lista do clero nacional por ordem de ordenação ao
+    diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1993-12-25'
+  place: Catedral do Mediador, Santa Maria (RS)
+  jurisdiction: ieab
+  status: contested
+  sources:
+  - source: lic-livro35
+    quote: 'Presbiterado: 25 de dezembro de 1993.'
+  - source: lic-livro35
+    quote: Em 26 de dezembro de 1993, recebi a Ordenação Presbiteral, em Santa Maria, na Catedral do Mediador.
+  discrepancies:
+  - field: date
+    value: '1993-12-26'
+    sources:
+    - source: lic-livro35
+      quote: Em 26 de dezembro de 1993, recebi a Ordenação Presbiteral, em Santa Maria, na Catedral do Mediador.
+  notes: >-
+    O cabeçalho dá 25 de dezembro; o texto diz: "Em 26 de dezembro de 1993, recebi a Ordenação Presbiteral, em Santa
+    Maria, na Catedral do Mediador", acrescentando que foi ordenada "no dia de meu aniversário, e com o meu marido
+    Rodimar".
 affiliations:
 - jurisdiction: ieab
   role: clergy

@@ -217,24 +217,31 @@ affiliations:
   end: '1985'
   status: probable
   sources:
+  - source: drv-resgatando-ii
+    quote: o então Deão da Catedral de Santa Maria-RS
   - source: costa2021
     quote: retornou ao Brasil, onde assumiu a direção da Catedral do Mediador como deão
     page: '95'
-  notes: 'Cargo: Deão da Catedral do Mediador, Santa Maria.'
+  notes: >-
+    Local: Catedral de Santa Maria, RS. Deão antes de ser eleito bispo coadjutor da Diocese Setentrional. Cargo:
+    Deão da Catedral do Mediador, Santa Maria.
 - jurisdiction: ieab
   role: bishop
   start: '1985'
   end: '1997'
-  status: probable
+  status: confirmed
   sources:
+  - source: drv-pronunciamento-ieab-2005
+    quote: Dom Clovis Erly Rodrigues
   - source: costa2021
     quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1985-1997 – Clovis Erly Rodrigues
     page: 518-519
   notes: >-
-    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
-    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
-    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. O Anexo
-    D dá início em 1986 no Recife.
+    Signatário da carta da Câmara dos Bispos da IEAB ao arcebispo de Cantuária (Brasília, 14/11/2005); data de início
+    do cargo não é informada. Citado nesse cargo em documento de 14/11/2005. Anexo C da tese (lista 'Bispos e Bispas
+    da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos foi lido como período de exercício episcopal
+    na IEAB (e antecessoras), e não necessariamente o ano de sagração, pois o anexo não diz que o primeiro ano é
+    a sagração. Por isso não foi criada afirmação de ordenação. O Anexo D dá início em 1986 no Recife.
 - jurisdiction: ieab
   role: coadjutor_bishop
   diocese: ieab-dar
@@ -265,9 +272,11 @@ affiliations:
   diocese: ieab-dar
   start: '1986'
   end: '1997-10-19'
-  end_reason: retirement
-  status: probable
+  end_reason: resignation
+  status: confirmed
   sources:
+  - source: drv-peregrino-posse
+    quote: com a renúncia do Bispo Clóvis Rodrigues; fui instituído no dia 19 do mesmo mês
   - source: costa2021
     quote: 1986-1997 – Clovis Erly Rodrigues
   - source: ptwp-dar
@@ -292,7 +301,26 @@ affiliations:
     quote: >-
       Em 19 de outubro do mesmo ano, Robinson foi instalado como terceiro bispo da Diocese Anglicana do Recife.
     page: '186'
+  notes: >-
+    Renúncia que levou à instituição de Robinson Cavalcanti como titular em 19/10/1997. Anexo D da tese (bispos
+    por diocese). Coadjutor e depois diocesano; substituído por Robinson Cavalcanti em 1997. Local: depois Diocese
+    Anglicana do Recife. 2º bispo diocesano. A tese fala da 'proximidade da aposentadoria do bispo Clovis' em 1997;
+    fim = instalação de Robinson.
   discrepancies:
+  - field: end_reason
+    value: retirement
+    sources:
+    - source: costa2021
+      quote: 1986-1997 – Clovis Erly Rodrigues
+    - source: ptwp-dar
+      quote: Clóvis Erly Rodrigues - 1986 a 1997;
+    - source: costa2021
+      quote: No início do ano seguinte, o primeiro diocesano do Recife renunciou
+      page: '179'
+    - source: costa2021
+      quote: >-
+        Em 19 de outubro do mesmo ano, Robinson foi instalado como terceiro bispo da Diocese Anglicana do Recife.
+      page: '186'
   - field: start
     value: '1985'
     sources:
@@ -309,10 +337,6 @@ affiliations:
       quote: >-
         tornando-se o quinto bispo da Diocese Anglicana do Recife, substituindo a Clovis Erly Rodrigues no ofício.
       page: '103'
-  notes: >-
-    Anexo D da tese (bispos por diocese). Coadjutor e depois diocesano; substituído por Robinson Cavalcanti em 1997.
-    Local: depois Diocese Anglicana do Recife. 2º bispo diocesano. A tese fala da 'proximidade da aposentadoria
-    do bispo Clovis' em 1997; fim = instalação de Robinson.
 - jurisdiction: ieab
   role: other
   role_description: presidente do Superior Tribunal Eclesiástico
@@ -328,6 +352,17 @@ affiliations:
     Presidia o tribunal que julgou Robinson (processo recebido em 11/10/2004). Depois responsável pelo Arquivo Provincial
     da IEAB.
 - jurisdiction: ieab
+  role: other
+  role_description: presidente_tribunal_superior_eclesiastico
+  start: '2005'
+  status: confirmed
+  sources:
+  - source: drv-carta-clero-processo-2005
+    quote: Tribunal Superior Eclesiástico, presidido pelo Bispo aposentado Dom Clóvis Erly Rodrigues
+  notes: >-
+    Presidia o Tribunal Superior Eclesiástico da IEAB quando o processo contra Robinson Cavalcanti foi encaminhado
+    (abril de 2005).
+- jurisdiction: ieab
   role: clergy
   status: confirmed
   sources:
@@ -336,6 +371,17 @@ affiliations:
   notes: >-
     Transferência do distrito missionário (SwBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
     Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965.
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_emerito
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Clóvis Erli Rodrigues, Emérito
+  notes: >-
+    A página grafa "Clóvis Erli Rodrigues". Atualizada em 13 de março de 2026, lista-o entre os eméritos sem indicação
+    de falecimento.
 events:
 - type: other
   date: '1985'
@@ -394,6 +440,87 @@ events:
   sources:
   - source: ec-2017-04
     quote: Clóvis Ro- drigues, Almir dos Santos e Celso Franco (eméritos)
+- type: other
+  date: '1985'
+  description: >-
+    Na eleição do sucessor de Sherrill pelo Sínodo Geral da IEAB, o candidato do bispo, Paulo Garcia, foi derrotado,
+    e foi eleito bispo coadjutor Clóvis Erly Rodrigues, então deão da Catedral de Santa Maria (RS); a sagração ocorreu
+    na Catedral de Porto Alegre.
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      sendo eleito Bispo Coadjutor da nossa Diocese o então Deão da Catedral de Santa Maria-RS (e que não conhecia
+      o Nordeste nem como turista) o Revmo. Clóvis Erly Rodrigues
+  - source: drv-resgatando-ii
+    quote: para a cerimônia de Sagração na Catedral de Porto Alegre
+- type: other
+  date: '2005-04-09'
+  description: >-
+    Em 09/04/2005 o bispo Robinson comunicou ao clero que o relatório da Comissão Provincial de Investigação, acolhido
+    pelo Primaz e pelo Procurador Geral da IEAB (Celso Franco de Oliveira), fora encaminhado ao Tribunal Superior
+    Eclesiástico, presidido pelo bispo aposentado Clóvis Erly Rodrigues, citando como acusados vários clérigos do
+    Recife (Miguel Uchoa, Estevão Menezes, Fernando Acosta, Ian Meldrum, Siméa Meldrum, Juciara, Luiz Souza, Manoel
+    Almeida, Maria Gorete, Maurício Coelho, Raniere Almeida) e recomendando protesto à SAMS pela atuação dos missionários
+    Marcus Throup, Ian e Siméa Meldrum.
+  status: confirmed
+  sources:
+  - source: drv-carta-clero-processo-2005
+    quote: >-
+      Relatório esse acolhido pelo Primaz e pelo Procurador Geral da IEAB Dom Celso Franco de Oliveira, e ora encaminhado
+      ao Tribunal Superior Eclesiástico, presidido pelo Bispo aposentado Dom Clóvis Erly Rodrigues, para julgamento.
+- type: other
+  date: '2008-07-16'
+  description: >-
+    Em 2008 Robinson Cavalcanti descreve a Diocese do Recife com 32 anos e 34 comunidades, 24 delas surgidas no
+    seu episcopado, clero majoritariamente aposentado ou 'fazedor de tendas' e dependente de doações no exterior;
+    recorda que Dom Clóvis Erly Rodrigues exigia que os ordenandos assinassem termo de ausência de compromisso de
+    sustento.
+  status: confirmed
+  sources:
+  - source: drv-papel-clovis
+    quote: A Diocese do Recife tem apenas 32 anos, 24 de suas 34 comunidades surgiram no presente Episcopado
+  - source: drv-papel-clovis
+    quote: >-
+      o meu predecessor, Dom Clóvis Erly Rodrigues, exigia das pessoas que ele ia Ordenar que assinassem um papel
+- type: other
+  date: '1971'
+  description: >-
+    Em 1971 'Clóvis Rodrigues e Hanz Krolow' atuaram em Moçambique como missionários enviados pela IEAB; a identificação
+    de 'Clóvis Rodrigues' com Clóvis Erly Rodrigues, depois bispo de Recife, não é confirmada pelo texto.
+  status: probable
+  sources:
+  - source: drv-apontamentos-kickhofel
+    quote: 1971 - Clóvis Rodrigues e Hanz Krolow em Moçambique
+- type: other
+  date: '1974-08-06'
+  description: >-
+    O "Parecer Sul-Ocidental" sobre "as mulheres e as Ordens Sacras" foi apresentado em 6 de agosto de 1974, assinado
+    pelos reverendos Orlando Oliveira, Jubal Neves e Clovis Rodrigues; a primeira ordenação feminina na IEAB só
+    ocorreu em 1985.
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: >-
+      E em 6 de agosto de 1974, é apresentado o famoso “Parecer Sul-Ocidental” a respeito “das mulheres e as Ordens
+      Sacras”, assinado pelos Revdos. Orlando Oliveira, Jubal Neves e Clovis Rodrigues
+- type: other
+  date: '1977'
+  description: >-
+    Clóvis Erly Rodrigues é descrito como sucessor de Edmund Knox Sherrill no episcopado do Recife e, segundo o
+    Glossário Anglicano, teria levado com o Rev. Jubal Pereira Neves o trabalho missionário da IEAB ao Uruguai (Santana
+    do Livramento) em 1977, e formado com Marston Price os primeiros seminaristas do NAET (1976); como sua sagração
+    é de 1985, a atribuição do título de bispo a essas datas é retrospectiva.
+  status: probable
+  sources:
+  - source: lrec-caminho-glossario-clovis
+    quote: >-
+      Em 1977, junto com o Rev. Jubal Pereira Neves, levou o trabalho missionário da IEAB ao Uruguai, trabalhando
+      em Santana do Livramento.
+  - source: ptwp-dar
+    quote: >-
+      O então nomeado bispo diocesano Clovis Erly Rodrigues e o Reverendo Marston Price ficaram responsáveis pela
+      formação dos primeiros seminaristas.
 - type: other
   date: 1984-07
   description: >-

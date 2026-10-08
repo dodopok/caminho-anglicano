@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-ilheus
+name: Diocese de Ilhéus
+type: diocese
+relations:
+- type: part_of
+  target: icr
+  status: confirmed
+  sources:
+  - source: lvc-nildemar-renuncia
+    quote: RENUNCIAR OFICIALMENTE O MINISTÉRIO SACERDOTAL
+  - source: lvc-nildemar-renuncia
+    quote: >-
+      venho em público da uma satisfação as diversas comunidades por onde passei e convivir ao longo desses vinte
+      e oito anos a serviço desta Igreja Particular de Ilhéus

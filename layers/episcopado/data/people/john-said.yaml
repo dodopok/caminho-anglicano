@@ -1,7 +1,82 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: john-said
 name: John Said
+full_name: John Lewis Said
+aliases:
+- John L. Said
+- John Lewis Said
+- Said, John Lewis
+birth:
+  date: '1932-08-29'
+  sources:
+  - source: cd1968
+    quote: b Marion Ind 29 Aug 32 s Isaac Henry Said & Vivian Ethel (Arney)
+  - source: cd1968
+    quote: >-
+      SAID, John Lewis (lnd)c/o Rt Rev E K Sherrill, Caixa Postal 549, ZC-OO, Rio de Janeiro, GB, Brazil Mssy Overseas
+      Dept to Central Bra 66
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+sources:
+- source: drv-resgatando-i
+  quote: >-
+    serviram no Recife dois norte-americanos: os reverendos John Said (depois Bispo Sufragâneo em Miami) e Phillip
+    Getchell, até 1975
+ordinations:
+- order: diaconate
+  date: 1958-06
+  jurisdiction: tec
+  ordained_by: richard-ainslie-kirchhoffer
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: D Jun 58 P Jan 59 Bp Kirchhoffer
+  - source: cd1965
+    quote: D Jun 58 P Jan 59 Bp Kirchhoffer
+  notes: >-
+    O verbete traz um único "Bp Kirchhoffer" após D e P (convenção do diretório: mesmo ordenante para os dois graus).
+    Sigla da diocese no diretório: Ind. O diretório diz só "Bp Kirchhoffer" (diocese de Indianápolis), que era Richard
+    Ainslie Kirchhoffer.
+- order: presbyterate
+  date: 1959-01
+  jurisdiction: tec
+  ordained_by: richard-ainslie-kirchhoffer
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: D Jun 58 P Jan 59 Bp Kirchhoffer
+  notes: O diretório diz só "Bp Kirchhoffer" (diocese de Indianápolis), que era Richard Ainslie Kirchhoffer.
 affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-darj
+  start: '1966'
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: >-
+      SAID, John Lewis (lnd)c/o Rt Rev E K Sherrill, Caixa Postal 549, ZC-OO, Rio de Janeiro, GB, Brazil Mssy Overseas
+      Dept to Central Bra 66
+  notes: >-
+    Missionário enviado pelo Departamento de Missões no exterior da Igreja Episcopal dos EUA ao Brasil Central em
+    1966, com correspondência aos cuidados do Bispo Sherrill (Caixa Postal 549, Rio de Janeiro). Antes: cura em
+    Muncie (1958-60), reitor em Plainfield, Indiana (1960-64) e capelão/cura em Indianápolis (1964-66), conforme
+    o verbete de 1968 (a edição de 1965 o dava ainda reitor de St. Mark, Plainfield).
+- jurisdiction: ieab
+  role: clergy
+  status: probable
+  sources:
+  - source: drv-resgatando-i
+    quote: >-
+      serviram no Recife dois norte-americanos: os reverendos John Said (depois Bispo Sufragâneo em Miami) e Phillip
+      Getchell, até 1975
+  - source: costa2021
+    quote: >-
+      Nesse período os reverendos norte-americanos John Said e Philip Getchell trabalharam como có-párocos nos últimos
+      anos.
+    page: '172'
+  notes: >-
+    Local: Recife, Holy Trinity. Serviu no Recife no período de transição da capelania; datas não informadas. Local:
+    Paróquia da Trindade, Recife. Missionário norte-americano; co-pároco c.1968-1973.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -15,13 +90,3 @@ affiliations:
       e ingleses, até março de 1975
     page: '295'
   notes: Missionário americano na congregação estrangeira da Paróquia da Santíssima Trindade, Recife.
-- jurisdiction: ieab
-  role: clergy
-  status: probable
-  sources:
-  - source: costa2021
-    quote: >-
-      Nesse período os reverendos norte-americanos John Said e Philip Getchell trabalharam como có-párocos nos últimos
-      anos.
-    page: '172'
-  notes: 'Local: Paróquia da Trindade, Recife. Missionário norte-americano; co-pároco c.1968-1973.'

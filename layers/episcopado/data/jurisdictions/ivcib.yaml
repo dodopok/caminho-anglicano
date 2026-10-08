@@ -2,10 +2,25 @@
 id: ivcib
 acronym: IVCIB
 name: Igreja Vétero-Católica Independente do Brasil
-type: national_church
+type: other
 country: BR
-description: Igreja vétero-católica independente cujo arcebispo primaz é Nildemar Andrade Santos.
+founded:
+  date: '2024-08-19'
+  sources:
+  - source: lvc-ivcib-cnpj
+    quote: '"razao_social":"IGREJA VETERO CATOLICA INDEPENDENTE DO BRASIL - IVCIB"'
+  - source: lvc-ivcib-cnpj
+    quote: '"data_inicio_atividade":"2024-08-19"'
+  - source: lvc-ivcib-jethro
+    quote: Diocese Anglicana Católica Abu Ghosh da Paraíba, ligada à Igreja Vetero-C Independente do Brasil.
+description: >-
+  Organização religiosa sediada em Ilhéus (BA), registrada no CNPJ em 19/08/2024 com Nildemar Andrade Santos como
+  presidente. Em notícia de junho de 2025, Nildemar é descrito como primaz da igreja e preside a sagração de Eddie
+  Ferreira para a Diocese Anglicana Católica Abu Ghosh da Paraíba, ligada à IVCIB. Não foi localizado site próprio.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Igreja Vétero-Católica Independente do Brasil, dom Nildemar Andrade Santos
-  page: '140'
+- source: lvc-ivcib-cnpj
+  quote: '"razao_social":"IGREJA VETERO CATOLICA INDEPENDENTE DO BRASIL - IVCIB"'
+- source: lvc-ivcib-cnpj
+  quote: '"data_inicio_atividade":"2024-08-19"'
+- source: lvc-ivcib-jethro
+  quote: Diocese Anglicana Católica Abu Ghosh da Paraíba, ligada à Igreja Vetero-C Independente do Brasil.

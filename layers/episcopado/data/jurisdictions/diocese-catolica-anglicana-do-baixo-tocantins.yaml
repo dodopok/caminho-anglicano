@@ -1,12 +1,37 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-catolica-anglicana-do-baixo-tocantins
-name: Diocese Católica Anglicana do Baixo Tocantins
+acronym: ICA-Baixo Tocantins
+name: Diocese Católica Anglicana do Baixo Tocantins (Pará)
+aliases:
+- Diocese Católica Anglicana do Baixo Tocantins
 type: diocese
+country: BR
+description: >-
+  Diocese da ICA no Pará, com o bispo Franciney Rodrigues Pantoja; seus eventos são em Cametá (Paróquia Anglicana
+  Menino Jesus de Praga; Comunidade Católica Anglicana Nossa Senhora da Assunção). Vigário geral: padre Amiraldo
+  Barroso Siqueira; tesoureiro diocesano: padre Pedro de Souza Ribeiro.
+sources:
+- source: lica-ica-dioceses
+  quote: >-
+    Diocese Católica Anglicana do Baixo Tocantis: Bispo Dom Franciney Pantoja; Padre Amiraldo Barroso Siqueira,
+    vigário Geral
+- source: lica-ica-noticias
+  quote: >-
+    No último dia 06/07/2017, nossa Paróquia Anglicana Menino Jesus de Praga teve a honra de celebrar o aniversário
+    do Sr. Luís Gonzaga
 relations:
 - type: part_of
   target: ica
-  status: probable
+  status: confirmed
   sources:
+  - source: lica-ica-dioceses
+    quote: 'Diocese Católica Anglicana do Baixo Tocantis: Bispo Dom Franciney Pantoja;'
+  - source: lica-ica-manifesto
+    quote: >-
+      Dom Franciney Rodrigues Pantoja – Bispo Titular da Diocese Católica Anglicana do Baixo Tocantins do Pará;
+  - source: lica-ica-manifesto
+    quote: Bispo Titular da Diocese Católica Anglicana do Baixo Tocantins do Pará
   - source: cant-novas-igrejas-2024
     quote: Diocese Católica Anglicana do Baixo Tocantins, com o bispo Franciney
     page: '138'
+  date: '2017'

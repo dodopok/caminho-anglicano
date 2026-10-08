@@ -1,14 +1,92 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: joao-de-deus-da-silva
 name: João de Deus da Silva
-biography: Bispo da Diocese Anglicana Católica do Brasil.
+full_name: João de Deus da Silva
+aliases:
+- Dom João de Deus
+biography: >-
+  Natural de Santana do Mundaú (AL), diácono (1995) e presbítero (1997) na ICAB, ingressou na IELB em 2005 e foi
+  sagrado bispo por Lucas Macieira em 15/11/2010. Abade da Ordem dos Padres e Irmãos Samaritas e bispo prelado da
+  Prelazia Anglicana Sagrada Face (Curitiba, PR).
 sources:
-- source: cant-novas-igrejas-2024
+- source: lielb-dacb-api-clero
   quote: >-
-    Atualmente, a DAC possui três bispos: dom Lucas Macieira (Arcebispo e Primaz), dom João de Deus da Silva, Dom
-    Antônio Santana Neto e dom Daniel Araújo.
-  page: '102'
+    "nome": "João de Deus da Silva", "nome_civil": "João de Deus da Silva", "cargo": "Bispo Prelado / Abade"
+- source: lielb-dacb-api-clero
+  quote: '"naturalidade": "Santana do Mundaú/AL"'
+ordinations:
+- order: diaconate
+  date: '1995-03-28'
+  jurisdiction: icab
+  ordained_by: aurio-fontanella-camargo
+  status: probable
+  sources:
+  - source: lielb-dacb-api-clero
+    quote: >-
+      "ordenacao_diaconal": "28/03/1995", "ordenacao_presbiteral": "06/07/1997", "sagracao_episcopal": "15/11/2010"
+  - source: lielb-scribd-jdd
+    quote: foi ordenado diácono em 1995 e padre em 1997 na Igreja Católica Apostólica Brasileira
+  notes: >-
+    Ordenante (Áurio Fontanella Camargo) segundo estudo biográfico da própria diocese no Scribd (colunas do PDF;
+    fonte secundária).
+- order: presbyterate
+  date: '1997-07-06'
+  jurisdiction: icab
+  ordained_by: dirceu-milani
+  status: probable
+  sources:
+  - source: lielb-dacb-api-clero
+    quote: '"ordenacao_presbiteral": "06/07/1997"'
+  - source: lielb-scribd-jdd
+    quote: foi ordenado diácono em 1995 e padre em 1997 na Igreja Católica Apostólica Brasileira
+  notes: >-
+    Ordenante (Dirceu Milani, "in memoriam") segundo estudo biográfico da própria diocese no Scribd; o estudo lista
+    a igreja como ICAB.
+- order: episcopate
+  date: '2010-11-15'
+  place: Brasil (local não informado)
+  jurisdiction: ielb
+  office: auxiliary
+  principal_consecrator: iranildo-macieira-da-silva
+  status: confirmed
+  sources:
+  - source: lielb-dacb-api-clero
+    quote: >-
+      "sagracao_episcopal": "15/11/2010", "bispos_consagrantes": "Dom Frei Lucas Macieira da Silva", "recepcao_dacb":
+      "15/11/2010"
+  - source: lielb-scribd-jdd
+    quote: foi sagrado bispo em 2010
+  notes: >-
+    O blog da IELB de 2008 já o chama "Bispo Eleito" (Missão Episcopal Nossa Senhora da Rosa Mística, Curitiba);
+    o site da Ordem Samaritas o descreve como "Abade e Bispo Auxiliar da Diocese Anglicana Livre de Belo Horizonte
+    para o Sul do Brasil".
 affiliations:
+- jurisdiction: ielb
+  role: bishop
+  start: '2005'
+  status: probable
+  sources:
+  - source: lielb-scribd-jdd
+    quote: Em 2005, uniu-se à Igreja Episcopal Latino do Brasil
+  - source: lielb-blog-clero
+    quote: >-
+      Missão Episcopal Nossa Senhora da Rosa Mística Rua Cel. Luiz José Martins dos Santos, 2161 - Bairro Boqueirão.
+      Curitiba-Paraná – CEP. 81.670-400 Bispo Eleito Mons. Dom João de Deus da Silva.
+  - source: lielb-mongesanglicanos
+    quote: Abade e Bispo Auxiliar da Diocese Anglicana Livre de Belo Horizonte para o Sul do Brasil
+  notes: >-
+    Local: Regional Sul (PR, SC, RS) / Curitiba. Chegada em 2005 segundo estudo biográfico (Scribd); o livro "Novas
+    igrejas" já o cita como bispo da Regional Sul na fundação (2004). Ver dúvidas.
+- jurisdiction: dac
+  role: bishop
+  diocese: prelazia-anglicana-sagrada-face
+  status: confirmed
+  sources:
+  - source: lielb-dacb-api-clero
+    quote: >-
+      "nome": "João de Deus da Silva", "nome_civil": "João de Deus da Silva", "cargo": "Bispo Prelado / Abade",
+      "prelazia": "Prelazia Anglicana Sagrada Face"
+  notes: 'Local: Curitiba, PR.'
 - jurisdiction: dac
   role: bishop
   status: probable

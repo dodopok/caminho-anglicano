@@ -353,6 +353,9 @@ events:
     quote: >-
       Received notification of the death, on June 28, 1971, of the Most Rev. Egmont M. Krischke, Primate of the
       [greja Episcopal do Brasil and Bishop of Southern Brazil.
+  - source: kickhofel-1995
+    quote: Krischke adoeceu em 1970 e resignou a diocese, mas permaneceu como primaz até 1971, quando faleceu.
+    page: '249'
 - type: other
   date: '1949'
   description: >-
@@ -402,6 +405,37 @@ events:
       The Anglican community of Brazil was a missionary district of the Episcopal Church until 1965, when it gained
       its ecclesiastical independence and became a separate province of the Anglican Communion.
 - type: other
+  date: '1903-06-13'
+  description: >-
+    O Seminário Teológico da Igreja Episcopal Brasileira foi inaugurado em 13/06/1903 na Igreja do Salvador, Rio
+    Grande (RS), com William Cabell Brown como primeiro reitor; foi fechado temporariamente por Kinsolving em 1910
+    e reaberto cerca de dez anos depois sob Morris. Três de seus alunos chegaram ao episcopado: Athalício Pithan,
+    Egmont Krischke e Plínio Lauer Simões.
+  status: probable
+  sources:
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Afinal, a 13 de Junho de 1903, justa, 13 anos após ter sido estabelecida a Igreja Episcopal Brasileira, concretizou-se
+      a sua alta pretensão.
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Dêsse número, três, já atingiram o episcopado: os Revmos. Drs. Athalicio Pithan, Egmont Machado Krischke e
+      Plínio Lauer Simões
+- type: other
+  date: '1929-12-18'
+  description: >-
+    Lucien Lee Kinsolving faleceu em 18/12/1929 em Forest Hills (Nova York); nascera em 14/05/1862 em Middleburg
+    (Virgínia). O prefácio do livro, assinado por Egmont Machado Krischke em Porto Alegre, Páscoa de 1961, informa
+    que o autor usa o pseudônimo 'Ivo'.
+  status: confirmed
+  sources:
+  - source: drv-kinsolving-ivo
+    quote: A 18 de Dezembro de 1929, em Forest Hills, passou dos trabalhos da terra
+  - source: drv-kinsolving-ivo
+    quote: Nasceu Lucien Lee Kinsolving a 14 de Maio de 1862, em Middleburgo
+  - source: drv-kinsolving-ivo
+    quote: Pôrto Alegre, Páscoa de 1961.
+- type: other
   date: '1949'
   description: >-
     Entre os mais votados (quarenta e oito votos) na indicação de nomes para o episcopado na sessão suplementar
@@ -433,14 +467,6 @@ events:
       da igreja brasileira ao bispo Melcher, em maio daquele ano, conforme dispunha os cânones, ou seja, antes de
       se efetuar a divisão, cuja vigência teve seu início em 01 de janeiro de 1950.
     page: '200'
-- type: death
-  date: '1971'
-  description: Morte de Egmont Machado Krischke, primaz da IEAB
-  status: probable
-  sources:
-  - source: kickhofel-1995
-    quote: Krischke adoeceu em 1970 e resignou a diocese, mas permaneceu como primaz até 1971, quando faleceu.
-    page: '249'
 - type: other
   date: 1955-09
   description: >-

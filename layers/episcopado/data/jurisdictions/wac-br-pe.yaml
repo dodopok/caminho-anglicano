@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: wac-br-pe
+acronym: WAC-BR-PE
+name: Diocese de Pernambuco (WAC no Brasil)
+aliases:
+- Diocese de Pernambuco (Belo Jardim)
+type: diocese
+country: BR
+description: Diocese da WAC no Brasil em Pernambuco, com bispo em Belo Jardim (Josinaldo Bezerra).
+sources:
+- source: lwac-wacbr-provincia
+  quote: Pernambuco - Diocese de Pernambuco
+relations:
+- type: part_of
+  target: wac-br
+  status: probable
+  sources:
+  - source: lwac-wacbr-clerigos
+    quote: Dom Josinaldo Bezerra Bispo da Cidade:Belo Jardim - PE
+  - source: lwac-wacbr-provincia
+    quote: Pernambuco - Diocese de Pernambuco

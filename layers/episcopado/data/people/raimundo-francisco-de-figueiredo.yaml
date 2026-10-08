@@ -1,3 +1,31 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: raimundo-francisco-de-figueiredo
 name: Raimundo Francisco de Figueiredo
+biography: Provável coadjutor da Con-Catedral da Ressurreição (João Pessoa) em 2006.
+sources:
+- source: drp-boletim-oracao-2006
+  quote: >-
+    Orar pela Con-Catedral Anglicana da Ressurreição (PB); pelo Revmo. Deão Luiz Souza de França, pelo Coadjutor
+    Rev. Raimundo
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coadjutor
+  status: probable
+  sources:
+  - source: drp-boletim-oracao-2006
+    quote: >-
+      Orar pela Con-Catedral Anglicana da Ressurreição (PB); pelo Revmo. Deão Luiz Souza de França, pelo Coadjutor
+      Rev. Raimundo
+  notes: >-
+    Local: Con-Catedral Anglicana da Ressurreição, João Pessoa. O boletim cita apenas "Rev. Raimundo"; a identificação
+    com Raimundo Francisco de Figueiredo (único Raimundo na lista de signatários de 2005) é provável, não afirmada.
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  status: confirmed
+  sources:
+  - source: drv-nota-esclarecimento-2006
+    quote: Raimundo Francisco de Figueiredo
+  notes: >-
+    Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
+    Esclarecimento); início e fim do vínculo não informados.

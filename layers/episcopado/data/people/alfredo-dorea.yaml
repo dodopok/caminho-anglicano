@@ -1,12 +1,107 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: alfredo-dorea
 name: Alfredo Dórea
-biography: Dom Alfredo Dórea, primaz da IATB à época da saída do grupo de Wanderson Rodrigo Pereira da Silva.
+full_name: Alfredo Souza Dorea
+aliases:
+- Alfredo Souza Dorea
+- Dom Alfredo Souza Dorea
+biography: >-
+  Padre incardinado na IATB (Diocese do Nordeste/Bahia) em 15/06/2014; eleito bispo em 16/11/2015 e sagrado em 17/07/2016
+  em Cametá (PA) por Rui Costa Barbosa; arcebispo provincial em exercício em 2017 e empossado em 25/01/2018; ainda
+  arcebispo provincial em 2021.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: na época quando o primaz era dom Alfredo Dórea
-  page: '137'
+- source: lia-iatb-home-2016-08
+  quote: >-
+    a ordenação episcopal e a sagração de dois noovos bispos para a Igreja Indivisa de Cristo: Dom Franciney Pantoja,
+    de Cametá-PA e Dom Alfredo Dorea, de Salvador-BA.
+- source: lia-iatb-home-2018-12
+  quote: >-
+    o Arcebispo Dom Alfredo Souza Dorea foi canonicamente empossado no cargo de Arcebispo Provincial da Igreja Anglicana
+    Tradicional do Brasil
+ordinations:
+- order: episcopate
+  date: '2016-07-17'
+  place: dependências da UFPA, Cametá (PA)
+  jurisdiction: iatb
+  office: diocesan
+  principal_consecrator: rui-costa-barbosa
+  co_consecrators:
+  - orvandil-moreira-barbosa
+  - ricardo-vicente-dos-anjos
+  status: confirmed
+  sources:
+  - source: lia-iatb-home-2016-08
+    quote: >-
+      Encerrando o V Encontro Provincial da IATB realizou-se na cidade de Cametá-PA, no dia 17 de julho de 2016
+      às 9:00 hs, nas dependências da UFPA, a ordenação episcopal e a sagração de dois noovos bispos
+  - source: lia-iatb-home-2016-08
+    quote: >-
+      A celebração da Santa Eucaristia foi presidida pelo Arcebispo Provincial e Bispo da Diocese do Sudeste, Revmo.
+      Dom Rui Costa tendo como co-celebrantes os Exelentíssimos Bispos Dom Ricardo Vicente dos Anjos, de Ananindeua-PA
+      e Dom Orvandil Moreira Barbosa, de Goiânia-GO
+  - source: lia-iatb-home-2016-11
+    quote: >-
+      Durante o Encontro realizou-se a sagração de dois novos bispos para a Igreja, Dom Franciney Pantoja e Dom
+      Alfredo Dorea.
+  notes: >-
+    Sagrado junto com Franciney Pantoja. Eleito em 16/11/2015 pela Câmara Episcopal (então 'Administrador Diocesano
+    da Diocese da Bahia' e, desde então, bispo eleito). Co-celebrantes (tratados como co-sagrantes): Ricardo Vicente
+    dos Anjos e Orvandil Moreira Barbosa.
 affiliations:
+- jurisdiction: iatb
+  role: other
+  role_description: clero (presbítero)
+  diocese: iatb-diocese-da-bahia
+  start: '2014-06-15'
+  end: '2016-07-17'
+  status: probable
+  sources:
+  - source: lia-iatb-noticias-2014
+    quote: >-
+      Informa-nos o Revmo. Bispo Diocesano do Nordeste, Dom +Jorge dos Santos da incardinação do Padre Alfredo Dorea
+      no domingo dia 15 de junho, Festa de Santo Antonio.
+  notes: >-
+    Ano deduzido da página (captura de 24/06/2014, notícias de 2013-2014; 15 de junho de 2014 foi domingo). Foi
+    depois Administrador Diocesano da Diocese da Bahia.
+- jurisdiction: iatb
+  role: other
+  role_description: bispo diocesano
+  diocese: iatb-diocese-da-bahia
+  start: '2016-07-17'
+  status: confirmed
+  sources:
+  - source: lia-iatb-clero-2017
+    quote: Revmº Dom Alfredo Souza Dorea Diocese da Bahia
+  - source: lia-iatb-home-2016-11
+    quote: >-
+      Dom Rui Costa Barbosa, Dom Orvandil Moreira Barbosa, Dom Washington Luis Nascimento Santos, Dom Alfredo Souza
+      Dorea, Dom Altamiro Pereira do Amaral, Dom Ricardo Vicente dos Anjos, Dom Franciney Pantoja, Dom Jefferson
+      Nilson Santos
+  notes: >-
+    Incardinado como padre em 15/06/2014 na Diocese do Nordeste (bispo Jorge Costa); Administrador Diocesano da
+    Bahia em 2015.
+- jurisdiction: iatb
+  role: other
+  role_description: primaz (arcebispo provincial)
+  start: '2017'
+  status: confirmed
+  sources:
+  - source: lia-iatb-home-2017-10
+    quote: >-
+      No dia 08 de abril de 2017, sábado, às 19:00 hs, o Revmo. Arcebispo Provincial em Exercício Dom Alfredo Dorea
+      procedeu na cidade de Natal-RN a ordenação diaconal do agora Rev. Willians Portela Lima.
+  - source: lia-iatb-home-2018-12
+    quote: >-
+      Em cerimônia presidida por Monsenhor Antônio Furtado Leite, bispo diocesano de Aracaju (ICAB) naquela cidade,
+      ocorrida no dia 25 de janeiro de 2018, o Arcebispo Dom Alfredo Souza Dorea foi canonicamente empossado no
+      cargo de Arcebispo Provincial da Igreja Anglicana Tradicional do Brasil
+  - source: lia-iatb-clerigos-2021
+    quote: Arcebispo Provincial Dom Alfredo Souza Dorea Salvador-BA
+  notes: >-
+    Local: Salvador, BA. Já 'em exercício' em 08/04/2017; eleito, com Washington Luis como vice-presidente, em eleição
+    estatutária no final de 2017 e empossado em 25/01/2018 em Aracaju. Ainda aparece como arcebispo provincial na
+    lista de clérigos de maio/2021 e em jan/2020; em 2023-2024 o primaz é Rui Costa Barbosa. A data e o motivo do
+    fim do mandato não constam das fontes consultadas.
 - jurisdiction: iatb
   role: primate
   status: probable
@@ -15,3 +110,15 @@ affiliations:
     quote: denominação junto com um grupo de clérigos, na época quando o primaz era dom Alfredo Dórea.
     page: '137'
   notes: Sem datas; o livro também diz que Rui Costa Barbosa é o 'atual primaz' (p. 136).
+events:
+- type: other
+  date: '2015-11-16'
+  description: >-
+    A Câmara Episcopal da IATB elegeu, em 16/11/2015, o padre Alfredo Dorea (administrador diocesano da Bahia) para
+    o episcopado; passou a ser 'Bispo Eleito' da Diocese da Bahia.
+  status: confirmed
+  sources:
+  - source: lia-iatb-home-2015
+    quote: >-
+      após decisão unânime da Câmara Episcopal na data de 16 de novembro de 2015 eleger o Revmo Padre Alfredo Dorea
+      para ser elevado ao Alto Grau do Episcopado em data a ser definida

@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: dennis-george-pape
+name: Dennis George Pape
+aliases:
+- Dennis Pape
+- Dionísio Pape
+biography: >-
+  Último capelão inglês da Holy Trinity Church, Recife; batista de origem, feito Ministro Leigo pelo bispo Sherrill
+  para orações matutinas e funções pastorais não sacramentais.
+sources:
+- source: drv-resgatando-i
+  quote: >-
+    o inglês Dionísio (Dennis George) Pape era, na realidade, um Batista, feito Ministro Leigo para oficiar orações
+    matutinas e funções pastorais não-sacramentais, pelo Bispo Sherrill
+affiliations:
+- jurisdiction: cbp-pe
+  role: other
+  role_description: capelão
+  status: probable
+  sources:
+  - source: drv-resgatando-i
+    quote: O último Capelão inglês
+  notes: 'Local: Pernambuco. Último capelão inglês; atuou como ministro leigo sob o bispo Sherrill.'

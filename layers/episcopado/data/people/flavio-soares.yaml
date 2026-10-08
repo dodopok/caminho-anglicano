@@ -12,6 +12,7 @@ aliases:
 - Flavio Adair Torres
 - Flávio A. T. Soares
 - Flávio Adair
+- Flávio Adair T. Soares
 - Flávio Adair Torres Soares
 biography: >-
   Natural de Passo Fundo (RS), radicado em João Pessoa; diácono 2005, presbítero 2006, bispo 2012; bispo missionário/auxiliar
@@ -116,10 +117,17 @@ affiliations:
     quote: Rev. Flávio Adair Torres Soares
   - source: dar-2011-gustavo
     quote: O pregador foi o Bispo-Eleito Flávio Adair
+  - source: drp-boletim-oracao-2006
+    quote: Orar pela Missão Anglicana Cristo Libertador (PB); pelo Rev. Flávio Adair
+  - source: drv-nota-esclarecimento-2006
+    quote: Flávio Adair Torres Soares
   notes: >-
     Local: Paraíba; Paróquia Anglicana Cristo Libertador, João Pessoa. Diácono em 2005 e presbítero em 2006 na Diocese
     do Recife (já fora da IEAB); liderou a Paróquia Cristo Libertador (Valentina, João Pessoa) segundo Márcio Meira
-    (2011). Eleito bispo em 04/06/2011.
+    (2011). Eleito bispo em 04/06/2011. Local: Missão Anglicana Cristo Libertador (PB). Clérigo citado como pastor/ministro
+    da comunidade em out/nov de 2006 (boletim de oração da Secretaria de Intercessão). Consta como clérigo da Diocese
+    Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de Esclarecimento); início e fim
+    do vínculo não informados.
 - jurisdiction: diocese-anglicana-recife
   role: bishop
   start: '2012-03-17'
@@ -131,6 +139,11 @@ affiliations:
     quote: DOM FLÁVIO ADAIR BISPO SUFRAGÂNEO 1ª REGIÃO ECLESIÁSTICA
   - source: adr-bispos-2017
     quote: Bispo Sufragâneo Revmo. Flávio Adair Torres Soares
+  - source: lrec-wix-flavio-adair
+    quote: >-
+      A Região I inicia-se na cidade de Olinda-PE , somando-se ainda o Estado da Paraiba e Rio Grande do Norte.
+  - source: lrec-wix-flavio-adair
+    quote: Flávio Adair, também é capelão e Professor do SAT-PB ( Seminário Anglicano de Teologia).
   - source: gafcon-2017-anglican-renewal
     quote: Bishop Flavio Adair Torres Soares, a suffragan bishop of the Anglican Church of Recife
   - source: g1-2012-02-29-velorio
@@ -141,8 +154,11 @@ affiliations:
     page: '230'
   notes: >-
     Local: 1ª Região Eclesiástica. Bispo sufragâneo até a criação da IAB (2018), quando passa à Região Missionária
-    (vínculo já registrado). Local: Diocese Anglicana do Recife (sufragâneo/auxiliar). Tese grafa 'Flávio Adair'
-    (Flávio Adair Torres Soares na base). Data de sagração não informada.
+    (vínculo já registrado). Local: Região I. No site pessoal do bispo (texto sem data, escrito quando o bispo diocesano
+    era Miguel Uchôa), Flávio Adair é auxiliar do bispo diocesano e responde pela Região I da diocese, que reúne
+    dois arcediagados: de Olinda (PE) e os estados da Paraíba e do Rio Grande do Norte. Também é capelão e professor
+    do SAT-PB. Local: Diocese Anglicana do Recife (sufragâneo/auxiliar). Tese grafa 'Flávio Adair' (Flávio Adair
+    Torres Soares na base). Data de sagração não informada.
   discrepancies:
   - field: start
     value: '2011'
@@ -180,12 +196,29 @@ affiliations:
 - jurisdiction: gafcon
   role: other
   role_description: secretario_regional
-  start: '2024'
-  status: probable
+  start: '2025-03-11'
+  status: confirmed
   sources:
+  - source: lrec-ig-dr-gafcon-2025
+    quote: foi empossado hoje como Secretário Regional do GAFCON para a America Latina
+  - source: gafcon-2026-01-02-sa
+    quote: >-
+      remembering the Regional Secretary, The Rt Revd Flavio Adair Torres, Bishop of Recife in the Anglican Church
+      in Brazil.
   - source: cant-novas-igrejas-2024
     quote: foi empossado como Secretário Regional do GAFCON para a America Latina
     page: '34'
+  notes: >-
+    Post da Diocese de Recife (Instagram) com data de 11/03/2025 diz 'empossado hoje'; o GAFCON o designa Secretário
+    Regional da América do Sul em 03/01/2026. O post cita ainda Julian Dobbs (América do Norte) e Malcolm Richards
+    (Austrália) como secretários empossados na mesma ocasião.
+  discrepancies:
+  - field: start
+    value: '2024'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: foi empossado como Secretário Regional do GAFCON para a America Latina
+      page: '34'
 - jurisdiction: iab
   role: auxiliary_bishop
   diocese: iab-diocese-recife
@@ -245,6 +278,17 @@ events:
       as the Anglican Church in Brazil prepares to grow from three dioceses and one missionary diocese to four dioceses
       and two missionary dioceses
 - type: other
+  date: '2011-06-04'
+  description: >-
+    Eleição de Flávio Adair como bispo sufragâneo da Diocese do Recife em 04/06/2011, segundo seu próprio site;
+    a sagração ocorreu em 17/03/2012.
+  status: probable
+  sources:
+  - source: lrec-wix-flavio-adair
+    quote: eleito Bispo Sufraganeo em 04 de junho de 2011
+  - source: lrec-wix-flavio-adair
+    quote: Sua Sagração ocorreu no dia 17 de março de 2012.
+- type: other
   date: '2023-01-15'
   description: >-
     Culto de Ordenação de Wilton Campos presidido por 'Bisp. Flávio Adair' na Igreja Anglicana Zona Norte (Recife);
@@ -285,7 +329,7 @@ events:
       O culto foi celebrado pelo presidente do Conselho Diocesano, Márcio Simões, e pelos dois bispos auxiliares
       Flávio Aldair e Evilásio Tenório. Dom Evilásio vai substituir dom Robinson Cavalcanti até a escolha do novo
       líder da igreja, o que deve ocorrer no dia 19 de maio.
-  - source: wp-pt-evilasio
+  - source: lrec-ptwp-evilasio
     quote: >-
       Em virtude da morte de Dom Robinson, em 26 de fevereiro de 2012, Dom Evilásio permaneceu provisoriamente como
       bispo diocesano, até a eleição do novo líder da Igreja Anglicana

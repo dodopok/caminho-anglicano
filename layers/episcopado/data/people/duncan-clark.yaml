@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: duncan-clark
+name: Duncan Clark
+biography: Arcediago do Arcediagado Especial da América do Norte da Diocese Anglicana do Recife em 2006-2007.
+sources:
+- source: drp-boletim-oracao-2006
+  quote: Orar pelo Arcediagado Especial da América do Norte e pelo Ven. Arc. Rev. Duncan Clark
+- source: drp-boletim-oracao-2006
+  quote: >-
+    Orar pelo Ponto Missionário Anglicano "Anglican Fellowship", High Springs, FLA, pela Revda. Cláudia Kalis
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago
+  status: confirmed
+  sources:
+  - source: drp-boletim-oracao-2006
+    quote: Orar pelo Arcediagado Especial da América do Norte e pelo Ven. Arc. Rev. Duncan Clark
+  - source: drp-calendario-2007
+    quote: Ven. Arc. Rev. Duncan Clark
+  notes: >-
+    Local: Arcediagado Especial da América do Norte. Arcediago do Arcediagado Especial da América do Norte, com
+    "todas as igrejas a ele subordinadas", em out/nov de 2006; o calendário de 2007 o chama "Ven. Arc. Rev. Duncan
+    Clark". Título de arcediago no calendário diocesano de 2007.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: clero (domicílio canônico na diocese, residente no exterior)
+  status: confirmed
+  sources:
+  - source: drv-nota-esclarecimento-2006
+    quote: Duncan Clark
+  notes: >-
+    Consta em 09/11/2006 entre os clérigos residentes no exterior com domicílio canônico na Diocese do Recife.
+events:
+- type: other
+  date: 2006-10
+  description: >-
+    Congregações norte-americanas ligadas à Diocese Anglicana do Recife (Arcediagado Especial da América do Norte)
+    citadas no boletim de oração de out/nov de 2006: Anglican Fellowship (High Springs, Flórida; Revda. Cláudia
+    Kalis), Paróquia St. Charles (Poulsbo, WA), Paróquia St. Stephen (Oak Harbor, WA), Christ the King (Spokane,
+    WA), Fellowship of the Living Word (Eugene, OR) e Light of Christ (South Milwaukee, WI).
+  status: probable
+  sources:
+  - source: drp-boletim-oracao-2006
+    quote: >-
+      Orar pelo Ponto Missionário Anglicano "Anglican Fellowship", High Springs, FLA, pela Revda. Cláudia Kalis
+  - source: drp-boletim-oracao-2006
+    quote: Orar pela Paróquia Anglicana St. Charles – Poulsbo, WA, EUA
+  - source: drp-boletim-oracao-2006
+    quote: Orar pela Missão “Christ the King” – Spokane, Washington, EUA
+  - source: drp-boletim-oracao-2006
+    quote: Orar pelo Ponto Missionário Anglicano "Light of Christ", South Milwaukee, WIS, nos EUA

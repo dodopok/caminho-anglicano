@@ -109,16 +109,20 @@ affiliations:
   role: bishop
   start: '2000'
   end: '2013'
-  status: probable
+  status: confirmed
   sources:
+  - source: drv-pronunciamento-ieab-2005
+    quote: Dom Sebastião Armando Gameleria Soares
   - source: costa2021
     quote: >-
       Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2000-2013 – Sebastião Armando Gameleira Soares
     page: 518-519
   notes: >-
-    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
-    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
-    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+    Signatário da carta da Câmara dos Bispos da IEAB ao arcebispo de Cantuária (Brasília, 14/11/2005); data de início
+    do cargo não é informada. Citado nesse cargo em documento de 14/11/2005. Anexo C da tese (lista 'Bispos e Bispas
+    da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos foi lido como período de exercício episcopal
+    na IEAB (e antecessoras), e não necessariamente o ano de sagração, pois o anexo não diz que o primeiro ano é
+    a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dap
@@ -211,6 +215,36 @@ affiliations:
     quote: A presença de Gameleira como um bispo visitador da comunidade
     page: '113'
 events:
+- type: other
+  date: 1999/2000
+  description: >-
+    Depois de uma 'Confraternização de Natal' em 1999, Paulo Garcia e Sebastião Gameleira teriam instigado clérigos
+    e ministros leigos contra o bispo diocesano; houve audiência presidida pelo bispo primaz, em que quase todo
+    o clero declarou solidariedade ao bispo. Segundo a fonte, nesse período era criada a Igreja Episcopal Carismática
+    do Brasil, para a qual saíram o Rev. Antônio Carlos (João Pessoa) e o ministro leigo Antônio Eça (Recife).
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      os reverendos: Paulo Garcia e Sebastião Gameleira instigaram clérigos e ministros leigos contra o Bispo Diocesano
+  - source: drv-resgatando-iv
+    quote: >-
+      enquanto (na surdina) era criada a Igreja Episcopal Carismática do Brasil, saindo para ela – no primeiro episódio
+      cismático – o Rev. Antônio Carlos, em João Pessoa-PB e o ML. Antônio Eça, no Recife-PE
+- type: other
+  date: '2006-10-11'
+  description: >-
+    Gameleira instalado em 11/10/2006 como bispo diocesano do Recife (IEAB), com o primaz Maurício Andrade e delegação
+    da Igreja Episcopal (TEC) chefiada por Mark Sisk; segundo a Diocese Anglicana do Recife, a 'Diocese Missionária'
+    fora criada pelo Sínodo Geral da IEAB em julho de 2006 e o novo bispo e a nova diocese não eram por ela reconhecidos.
+  status: confirmed
+  sources:
+  - source: drv-nota-esclarecimento-2006
+    quote: >-
+      o ex-Bispo Diocesano de Pelotas-RS, Dom Sebastião Armando Gameleira Soares, estaria sendo instalado, no último
+      dia 11 de Outubro, com a presença do Primaz da Igreja Episcopal Anglicana do Brasil, Dom Maurício Andrade
+  - source: drv-nota-esclarecimento-2006
+    quote: criação pelo último Sínodo Geral da IEAB, em julho passado de uma “Diocese Missionária”
 - type: other
   date: '1993'
   description: Sebastião Gameleira Soares recebido oficialmente na Comunhão Anglicana

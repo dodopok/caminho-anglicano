@@ -5,6 +5,7 @@ full_name: Agostinho Guillon Sória
 aliases:
 - Agostinho Soria
 - Agostinho Sória
+- Agostino S6ria
 - Agostino Soria
 - Dom Agostinho Sória
 - SORIA, AGOSTINHO
@@ -34,6 +35,10 @@ death:
     quote: Agostinho Guillon Sória nasceu na cidade de Bagé em 28 de agosto de 1922.
   - source: costa2021
     quote: Faleceu em 27 de junho de 1996.
+  - source: lib-ieab-cal-2026
+    quote: 27 – Agostinho Guillon Sória, Primeiro Bispo da Diocese Anglicana de Brasília, 1996
+  - source: ens-88234d
+    quote: He will succeed the Rt. Rev. Agostino S6ria who has announced his resignation for December.
 wikidata: Q97180655
 biography: >-
   Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em Bagé, RGS,
@@ -204,10 +209,18 @@ affiliations:
   role: diocesan_bishop
   diocese: ieab-dab
   start: '1985-06-09'
-  end: '1988'
-  end_reason: retirement
-  status: contested
+  end: 1988-12
+  end_reason: resignation
+  status: probable
   sources:
+  - source: lib-kick-minfem
+    quote: >-
+      Elisa e Patrícia (esta já ordenada) aceitaram o desafio do bispo Agostinho Sória e decidiram trabalhar em
+      Brasília a partir de 1985, quando foi instalada a nova diocese.
+  - source: ens-88234d
+    quote: He will succeed the Rt. Rev. Agostino S6ria who has announced his resignation for December.
+  - source: lib-ieab-cal-2026
+    quote: 27 – Agostinho Guillon Sória, Primeiro Bispo da Diocese Anglicana de Brasília, 1996
   - source: costa2021
     quote: 1985-1988 – Agostinho Guillon Sória
   - source: wp-pt-dioc-brasilia
@@ -232,9 +245,31 @@ affiliations:
     quote: Missionária de Brasília, tornando-se o seu primeiro bispo residente.
     page: '88'
   notes: >-
-    Costa diz tambem que assumiu Brasilia "em 1982" (conflito). Anexo D da tese (bispos por diocese). Fim aproximado:
-    sucessão discutida em 1988 (Almir eleito, sagrado em abril de 1989).
+    O comunicado do Diocesan Press Service, de 27 de outubro de 1988, informa que Sória anunciara renúncia para
+    dezembro (de 1988) e que Almir dos Santos fora eleito para sucedê-lo. A efetivação em dezembro de 1988 não foi
+    confirmada por uma segunda fonte. Costa diz tambem que assumiu Brasilia "em 1982" (conflito). Anexo D da tese
+    (bispos por diocese). Fim aproximado: sucessão discutida em 1988 (Almir eleito, sagrado em abril de 1989).
   discrepancies:
+  - field: end_reason
+    value: retirement
+    sources:
+    - source: costa2021
+      quote: 1985-1988 – Agostinho Guillon Sória
+    - source: wp-pt-dioc-brasilia
+      quote: Agostinho Sória (1º bispo diocesano) - 1985 a abril de 1988;
+    - source: kickhofel-1995
+      quote: >-
+        Como bispo da diocese que originou a nova região eclesiástica, Agostinho Sória optou pela nova diocese que
+        compreendia o Distrito Federal, Mato Grosso, Goiás, Tocantins e o triângulo mineiro. … Oficialmente instalada
+        no dia nove de junho de 1985 e instituído seu primeiro bispo
+      page: '305'
+    - source: costa2021
+      quote: >-
+        Após assumir a Diocese de Brasília, em 1982, o bispo Agostinho Sória se aposentou por motivos de saúde.
+      page: '98'
+    - source: costa2021
+      quote: Missionária de Brasília, tornando-se o seu primeiro bispo residente.
+      page: '88'
   - field: end
     value: '1989'
     sources:
@@ -290,6 +325,35 @@ affiliations:
     Cargo: Deão da Catedral da Santíssima Trindade, Porto Alegre. Deão por 15 anos; era deão quando eleito bispo
     (1976).
 events:
+- type: other
+  date: '1988-10-12'
+  description: >-
+    Eleição de Almir dos Santos, reitor da Paróquia de Jesus Cristo (Erechim), como bispo da Diocese Missionária
+    de Brasília pelo 23º Sínodo da Igreja Episcopal do Brasil, reunido em Porto Alegre, na quarta votação. Outros
+    candidatos: Patricia Ann Powers, Jorge Macedo e Glauco Soares de Lima, então reitor de uma igreja em São Paulo.
+    A sagração era prevista para março de 1989 em Brasília.
+  status: probable
+  sources:
+  - source: ens-88234d
+    quote: >-
+      On October 12, the 23rd Synod of the Episcopal Church of Brazil, meeting at Porto Allegre, elected the Rev.
+      Almir dos Santos, rector of Jesus Christ parish in Erechim, Brazil, bishop of the missionary diocese of Brasilia.
+  - source: ens-88234d
+    quote: >-
+      The other candidates were the Rev. Patricia Ann Powers, a missionary from the United States working in Brasilia,
+      the Rev. Jorge Macedo, rector of a church in Rio de Janeiro, and the Rev. Glauco Soares de Lima, rector of
+      a church in Sao Paulo.
+  - source: ens-88234d
+    quote: The consecration of Bishop-elect Almir dos Santos will take place in Brasilia in March 1989.
+- type: death
+  date: '1996-06-27'
+  description: >-
+    Falecimento de Agostinho Guillon Sória, primeiro bispo da Diocese Anglicana de Brasília; o calendário eclesiástico
+    da IEAB o comemora em 27 de junho.
+  status: confirmed
+  sources:
+  - source: lib-ieab-cal-2026
+    quote: 27 – Agostinho Guillon Sória, Primeiro Bispo da Diocese Anglicana de Brasília, 1996
 - type: other
   date: 1976-11
   description: >-

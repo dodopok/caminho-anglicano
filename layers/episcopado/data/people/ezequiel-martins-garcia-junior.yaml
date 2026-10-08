@@ -1,29 +1,155 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ezequiel-martins-garcia-junior
 name: Ezequiel Martins Garcia Júnior
+full_name: Ezequiel Martins Garcia Júnior
 aliases:
+- Dom Ezequiel
 - Monsenhor Ezequiel
+- Pe. Ezequiel
 - bispo Ezequiel
 - dom Ezequiel
-biography: Fundador (2016, Joinville) e primaz da Igreja Anglicana de Comunhão Livre ('Monsenhor Ezequiel').
+biography: >-
+  Fundador e primaz da Igreja Anglicana de Comunhão Livre (Joinville, SC). Segundo o site da igreja, anunciou ordenação
+  a diácono e presbítero em 20-21/08/2016 na sua "capela pessoal" e foi sagrado bispo em 2017. Em 2018 candidatou-se
+  a deputado estadual em Santa Catarina como "Dom Ezequiel" (nº 51606), declarando-se bispo anglicano casado e vigilante
+  patrimonial.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Ezequiel Martins Garcia Júnior (ou Monsenhor Ezequiel, como comumente se intitula)
-  page: '115'
+- source: lpq-iacl-wb-ordenacao
+  quote: >-
+    em breve estarei sendo Ordenado Diácono e Presbítero, para a Igreja Anglicana de Joinville, nas respectivas
+    datas dos dias 20 e 21 de Agosto de 2016
+- source: lpq-yt-chancelaria
+  quote: >-
+    Olá Catarinenses sou Dom Ezequiel, Bispo Anglicano, e peço o seu voto, contra a corrupção uma nova opção. Sou
+    padre casado, tenho um filho de 7 meses de idade, e trabalho como Vigilante Patrimonial.
+ordinations:
+- order: diaconate
+  date: '2016-08-20'
+  place: Capela Pessoal da Missão Santa Mãe de Deus, Joinville (SC)
+  jurisdiction: iacl
+  status: probable
+  sources:
+  - source: lpq-iacl-wb-ordenacao
+    quote: >-
+      em breve estarei sendo Ordenado Diácono e Presbítero, para a Igreja Anglicana de Joinville, nas respectivas
+      datas dos dias 20 e 21 de Agosto de 2016, em minha "CAPELA PESSOAL" da SANTA MÃE DE DEUS
+  notes: >-
+    Comunicado de pré-ordenação escrito pelo próprio Ezequiel pedindo padrinhos e doações; a cerimônia em si e o
+    ordenante não foram documentados nas páginas lidas.
+- order: presbyterate
+  date: '2016-08-21'
+  place: Capela Pessoal da Missão Santa Mãe de Deus, Joinville (SC)
+  jurisdiction: iacl
+  status: probable
+  sources:
+  - source: lpq-iacl-wb-ordenacao
+    quote: >-
+      em breve estarei sendo Ordenado Diácono e Presbítero, para a Igreja Anglicana de Joinville, nas respectivas
+      datas dos dias 20 e 21 de Agosto de 2016, em minha "CAPELA PESSOAL" da SANTA MÃE DE DEUS
+  notes: >-
+    Ver nota da ordenação diaconal (mesma fonte). Como em agosto de 2016 ele já aparece como "Reverendo Pe." nos
+    convites do mesmo ano, as datas anunciadas podem ter sido ajustadas.
+- order: episcopate
+  date: '2017'
+  place: Joinville (SC)
+  jurisdiction: iacl
+  office: diocesan
+  principal_consecrator: wellington-pedroso-rodrigues
+  status: contested
+  sources:
+  - source: lpq-iacl-wb-sucessao
+    quote: o mesmo foi Sagrado Bispo por Dom Wellington Pedroso Rodrigues).
+  - source: lpq-iacl-wb-sucessao
+    quote: >-
+      Sucessão Apostólica de Dom Ezequiel Martins Garcia Júnior, recebida da Comunhão Episcopal Protestante, através
+      do Bispo Dom Elias Batista Nogueira.
+  - source: lpq-iacl-wb-sucessao
+    quote: >-
+      261 - Elias Batista Nogueira - 2011 262 - Ezequiel Martins Garcia Júnior - 2017 263 - Wellington Pedroso Rodrigues
+      - 2017
+  discrepancies:
+  - field: principal_consecrator
+    value: elias-batista-nogueira
+    sources:
+    - source: lpq-iacl-wb-sucessao
+      quote: >-
+        Sucessão Apostólica de Dom Ezequiel Martins Garcia Júnior, recebida da Comunhão Episcopal Protestante, através
+        do Bispo Dom Elias Batista Nogueira.
+    - source: lpq-iacl-wb-sucessao
+      quote: >-
+        261 - Elias Batista Nogueira - 2011 262 - Ezequiel Martins Garcia Júnior - 2017 263 - Wellington Pedroso
+        Rodrigues - 2017
+  notes: >-
+    Versão A do site da IACL: Ezequiel teria sido sagrado por Wellington Pedroso Rodrigues, no contexto de "Estado
+    de Necessidade" e dos "8 Decretos do CONIE" do Sínodo Episcopal Conciliar. Ver a versão B (sagrante Elias Batista
+    Nogueira) e as dúvidas. Local e dia não informados; "Joinville" é inferência pela sede da igreja. Versão B,
+    da mesma página: a linha numerada de sucessão (261 Elias, 262 Ezequiel, 263 Wellington) e o título "recebida
+    ... através do Bispo Dom Elias Batista Nogueira" indicam Elias como fonte da sucessão de Ezequiel, e Ezequiel
+    como sagrante de Wellington. O texto não diz literalmente que Elias foi o sagrante em cerimônia.
 affiliations:
 - jurisdiction: iacl
   role: founder
   start: '2016'
   status: probable
   sources:
+  - source: lpq-iacl-wb-capela
+    quote: Missão Santa Mãe de Deus - Anglo Católica Reverendo Pe. Ezequiel Martins Garcia Júnior
+  - source: lpq-iacl-wb-capela
+    quote: Igreja Anglicana de Comunhão Livre.
   - source: cant-novas-igrejas-2024
     quote: >-
       Ele foi o responsável por criar a Igreja a partir da Missão Santa Mãe de Deus (Anglo Católica), quando presbítero.
     page: '115'
+  notes: >-
+    A página (convite do 1º encontro missionário, 2016) fala em "Missão Anglicana Santa Mãe de Deus - Igreja Anglicana
+    de Comunhão Livre" na "Capela Pessoal" do Rev. Ezequiel, Bairro Jarivatuba, Joinville.
 - jurisdiction: iacl
   role: primate
-  status: probable
+  start: '2017'
+  status: confirmed
   sources:
+  - source: lpq-iacl-wb-sucessao
+    quote: Archbischop Ezequiel Martins Garcia Júnior (2017)
+  - source: lpq-iacl-wb-home
+    quote: BRASÃO DO PRIMAZ DOM EZEQUIEL M. GARCIA JÚNIOR
   - source: cant-novas-igrejas-2024
     quote: dom Ezequiel Martins Garcia Júnior, como Primaz da Igreja Anglicana de Comunhão Livre
     page: '115'
+  notes: >-
+    Título de Ordinário do "Ordinariato Anglo Católico Tradicional do Brasil" e presidente do CONIE e do Centro
+    Anglicano Teológico Nacional segundo o canal de YouTube da Chancelaria Anglicana de Joinville (2017).
+- jurisdiction: conie
+  role: other
+  role_description: presidente
+  status: probable
+  sources:
+  - source: lpq-yt-chancelaria
+    quote: >-
+      Presidente do Centro Anglicano Teológico Nacional (CEATEO NACIONAL), e da Comunhão Nacional de Igrejas Episcopais
+      o (CONIE).
+  notes: Autodescrição no canal de YouTube.
+events:
+- type: other
+  date: '2018-10-03'
+  description: >-
+    Ezequiel Martins Garcia Júnior (n.º 51606) candidata-se a deputado estadual por Santa Catarina em 2018, apresentando-se
+    em vídeo como "Dom Ezequiel, Bispo Anglicano", padre casado e vigilante patrimonial.
+  status: probable
+  sources:
+  - source: lpq-yt-chancelaria
+    quote: Olá Catarinenses sou Dom Ezequiel, Bispo Anglicano, e peço o seu voto
+  - source: lpq-yt-chancelaria
+    quote: Para Deputado Estadual vote Dom Ezequiel 51606
+- type: other
+  date: '2017-08-21'
+  description: >-
+    Em agosto de 2017 o canal da Chancelaria Anglicana de Joinville apresenta Ezequiel como "Bispo Ordinário do
+    Ordinariato Anglo Católico Tradicional do Brasil, da Igreja Anglicana de Joinville - SC - Brasil e da Comunhão
+    Nacional de Igrejas Episcopais o CONIE".
+  status: confirmed
+  sources:
+  - source: lpq-yt-chancelaria
+    quote: >-
+      Uma breve apresentação da Igreja Anglicana de Joinville, feita pelo Monsenhor Ezequiel, Bispo Ordinário do
+      Ordinariato Anglo Católico Tradicional do Brasil, da Igreja Anglicana de Joinville -  SC - Brasil e da Comunhão
+      Nacional de Igrejas Episcopais o CONIE.

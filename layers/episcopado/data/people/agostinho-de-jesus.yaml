@@ -3,14 +3,19 @@ id: agostinho-de-jesus
 name: Agostinho de Jesus
 full_name: Dilvano Westenhofer Brum
 aliases:
+- Dilvano Brum
 - Dilvano Westenhofer Brum
+- Dom Dilvano Westenhofer Brum
 biography: >-
-  Nome religioso de Dilvano Westenhofer Brum; bispo do Rio Grande do Sul na ICA-Brasil; arcebispo primaz da Igreja
-  Católica Apostólica Anglicana (2025).
+  Nome religioso de Dilvano Westenhofer Brum. O site da ICA-Brasil (2024-2025) o lista como bispo diocesano do Rio
+  Grande do Sul; em carta pública de janeiro de 2025 aparece assinando como "Dom Dilvano Westenhofer Brum (Agostinho
+  de Jesus) - IAB: Igreja Anglicana do Brasil (Rio Grande do Sul)".
 sources:
-- source: cant-novas-igrejas-2024
-  quote: dom Agostinho de Jesus (nome religioso de Dilvano Westenhofer Brum)
-  page: '140'
+- source: lica-icabr-quemsomos
+  quote: Dom Agostinho de Jesus Bispo Diocesano Rio Grande do Sul
+- source: lica-cb-carta-budde
+  quote: >-
+    Dom Dilvano Westenhofer Brum (Agostinho de Jesus) - IAB: Igreja Anglicana do Brasil (Rio Grande do Sul).
 affiliations:
 - jurisdiction: icaa
   role: primate
@@ -22,6 +27,17 @@ affiliations:
       que foi bispo na Igreja Católica Anglicana do Brasil (ICA-Brasil), que atualmente está como o seu Arcebispo
       Primaz.
     page: '140'
+- jurisdiction: ica-brasil
+  role: diocesan_bishop
+  status: probable
+  sources:
+  - source: lica-icabr-quemsomos
+    quote: Dom Agostinho de Jesus Bispo Diocesano Rio Grande do Sul
+  notes: >-
+    Local: Rio Grande do Sul. Em carta pública de 23/01/2025 (publicada pelo Correio Braziliense em 27/01/2025),
+    "Dom Dilvano Westenhofer Brum (Agostinho de Jesus)" assina como vinculado à "IAB: Igreja Anglicana do Brasil
+    (Rio Grande do Sul)", sigla que pode designar outra igreja; não há como saber se isso indica mudança de jurisdição
+    ou apenas a forma de se apresentar.
 - jurisdiction: ica-brasil
   role: bishop
   end_reason: left

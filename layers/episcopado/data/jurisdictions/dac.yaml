@@ -21,25 +21,25 @@ founded:
     quote: >-
       Em 2024, ocorreu a aprovação da bênção de casais homoafetivos, à semelhança do que aconteceu na IEAB.
     page: '102'
+website: https://www.dacbrasil.com.br/
 description: >-
-  Unidade eclesiástica ligada à Comunhão Anglicana Livre Internacional, originada da Diocese Anglicana de Esmeraldas
-  (MG, 2010); arcebispo e primaz Lucas Macieira da Silva; prelazias no Sul, Sudeste e Nordeste (Sé Primacial em
-  Esmeraldas-MG); aprovou a bênção de casais homoafetivos em 2024.
+  Jurisdição de âmbito nacional ("DACB"), integrante da Anglican Free Communion International (Comunhão Anglicana
+  Livre Internacional). Sé Primacial na Paróquia Santo Expedito e Nossa Senhora Desatadora dos Nós, em Esmeraldas
+  (MG); governo episcopal sob o Arcebispo Primaz Lucas Macieira, com quatro prelazias: dos Pampas (RS), Jesus Salvador
+  (SP), Sagrada Face (PR) e São Jorge Guerreiro (BA); mais região Nordeste (Barbalha, CE). Um estudo da própria
+  diocese (fev. 2026) data a consolidação da fase anglicana em 2012, com um "Sínodo da Bolívia" da comunhão anglicana
+  livre, e a mudança de nome para DAC; outras fontes colocam a Diocese de Esmeraldas em 2010.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lielb-dacb-site
   quote: >-
-    A Diocese Anglicana Católica do Brasil (também chamada DAC) é uma unidade eclesiástica ligada à Comunhão Anglicana
-    Livre Internacional34 (The Free Internacional Anglican Communion).
-  page: '101'
-- source: cant-novas-igrejas-2024
+    Uma Diocese presente em todo o Brasil: jurisdição eclesiástica de âmbito nacional, integrante da Comunhão Anglicana
+    Livre Internacional (The Anglican Free Communion International).
+- source: lielb-dacb-site
   quote: >-
-    O estabelecimento da DAC se deu a partir da chamada Diocese Anglicana de Esmeraldas, organizada em 2010, em
-    Minas Gerais.
-  page: '101'
-- source: cant-novas-igrejas-2024
-  quote: >-
-    Em 2024, ocorreu a aprovação da bênção de casais homoafetivos, à semelhança do que aconteceu na IEAB.
-  page: '102'
+    Sé Primacial: Paróquia Santo Expedito e Nossa Senhora Desatadora dos Nós — Rua 1, nº 650, Bairro Monte Sinai,
+    Esmeraldas/MG.
+- source: lielb-scribd-jdd
+  quote: consolidada em 2012 com o Sínodo da Bolívia
 relations:
 - type: successor_of
   target: dae
@@ -48,10 +48,28 @@ relations:
   - iranildo-macieira-da-silva
   status: probable
   sources:
+  - source: lielb-dacb-site
+    quote: >-
+      Sé Primacial: Paróquia Santo Expedito e Nossa Senhora Desatadora dos Nós — Rua 1, nº 650, Bairro Monte Sinai,
+      Esmeraldas/MG.
+  - source: lielb-dae-provincias
+    quote: Rua Santo Expedito, 650 Monte Sinai - Esmeraldas
   - source: cant-novas-igrejas-2024
     quote: culminando na transição para a nomenclatura Diocese Anglicana Católica do Brasil
     page: '101'
-  notes: Mudança de nome; data não informada.
+  notes: >-
+    Mesmo endereço (Rua Santo Expedito/Rua 1, nº 650, Monte Sinai, Esmeraldas) e mesmo líder. O livro "Novas igrejas"
+    descreve a mudança de nome de Diocese Anglicana de Esmeraldas para Diocese Anglicana Católica do Brasil, sem
+    data; a DAE usava o selo "Comunhão Anglicana Livre" já em c. 2015. Mudança de nome; data não informada.
+- type: member_of
+  target: afci
+  date: null
+  led_by:
+  - iranildo-macieira-da-silva
+  status: confirmed
+  sources:
+  - source: lielb-dacb-site
+    quote: integrante da Comunhão Anglicana Livre Internacional (The Anglican Free Communion International)
 - type: member_of
   target: cali
   date: null

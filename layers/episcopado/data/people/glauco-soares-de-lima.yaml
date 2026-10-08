@@ -5,8 +5,10 @@ full_name: Glauco Soares de Lima
 aliases:
 - Dom Glauco
 - Dom Glauco Lima
+- Dom Glauco Soares
 - Glauco Soares
 - Glauco Soares Lima
+- Glauco Soares di Lima
 - LIMA, GLAUCO SOARES de
 - bispo Glauco
 - dom Glauco
@@ -181,9 +183,17 @@ affiliations:
       com a IEAB
   - source: glauco-testemunho-2013
     quote: Como consequência de tudo isso, decidi apoiar os dissidentes
+  - source: drv-pronunciamento-ieab-2005
+    quote: Dom Glauco Soares de Lima
   - source: costa2021
     quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1989-2003 – Glauco Soares de Lima
     page: 518-519
+  notes: >-
+    Signatário da carta da Câmara dos Bispos da IEAB ao arcebispo de Cantuária (Brasília, 14/11/2005); data de início
+    do cargo não é informada. Citado nesse cargo em documento de 14/11/2005. Anexo C da tese (lista 'Bispos e Bispas
+    da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos foi lido como período de exercício episcopal
+    na IEAB (e antecessoras), e não necessariamente o ano de sagração, pois o anexo não diz que o primeiro ano é
+    a sagração. Por isso não foi criada afirmação de ordenação.
   discrepancies:
   - field: end
     value: '2003'
@@ -191,10 +201,6 @@ affiliations:
     - source: costa2021
       quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1989-2003 – Glauco Soares de Lima
       page: 518-519
-  notes: >-
-    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
-    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
-    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab
   role: coadjutor_bishop
   diocese: ieab-dasp
@@ -243,7 +249,8 @@ affiliations:
 - jurisdiction: ieab
   role: primate
   start: '1993'
-  end: '2003'
+  end: 2003-06
+  end_reason: retirement
   status: confirmed
   sources:
   - source: costa2021
@@ -256,6 +263,10 @@ affiliations:
     quote: Bispo Primaz do Brasil de 1993 – 2003.
   - source: sinopse-2003
     quote: '**1994** - Novo Primaz: Glauco Soares de Lima.'
+  - source: lib-acns-3444
+    quote: they have come in particular to honour the retiring Primate, the Most Revd Glauco Soares di Lima.
+  - source: lib-acns-3459
+    quote: after the retirement of Archbishop Glauco, who served for ten years as primate
   - source: kickhofel-1995
     quote: >-
       O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1994 - Glauco Soares
@@ -268,9 +279,10 @@ affiliations:
     quote: pelo Primaz, Glauco Soares de Lima
     page: '186'
   notes: >-
-    Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94). O livro dá só o início de cada primado; o fim é
-    o início do primado seguinte. Anexo E da tese (primazes da IEAB). Primaz em outubro de 1997. Também foi um dos
-    interinos à frente da DAR (2004-2006).
+    Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94). Em maio de 2003 a Reunião dos Primazes, em Gramado
+    (RS), homenageou o primaz que se aposentava; a entronização do sucessor ocorreu em 1º de junho de 2003. O livro
+    dá só o início de cada primado; o fim é o início do primado seguinte. Anexo E da tese (primazes da IEAB). Primaz
+    em outubro de 1997. Também foi um dos interinos à frente da DAR (2004-2006).
   discrepancies:
   - field: start
     value: '1994'
@@ -330,11 +342,18 @@ affiliations:
     quote: Morreu em São Paulo no dia 26 de dezembro de 2017.
 - jurisdiction: manb
   role: bishop
-  start: '2013-04-06'
+  start: '2013-03-03'
   end: '2017-12-27'
   end_reason: death
   status: probable
   sources:
+  - source: lq-ieab-acoes
+    quote: >-
+      03 de março de 2013- Dia da Assembleia Geral Extraordinária da Catedral Anglicana de São Paulo na qual ocorre
+      a Eleição de Dom Roger Douglas Bird como Bispo da Congregação e de Dom Glauco Soares de Lima.
+  - source: lq-cat-carta-aberta
+    quote: >-
+      confirma os Bispos anglicanos Dom Roger Douglas Bird e Dom Glauco Soares de Lima como seus líderes espirituais.
   - source: costa2021
     quote: O bispo Glauco Soares de Lima faleceu no dia 27 de dezembro de 2017 na cidade de São Paulo
   - source: cant-novas-igrejas-2024
@@ -347,6 +366,15 @@ affiliations:
       Os dois bispos passaram a exercer supervisão episcopal sobre o reverendo e a comunidade através do Movimento
       Anglicano no Brasil.
     page: '147'
+  discrepancies:
+  - field: start
+    value: '2013-04-06'
+    sources:
+    - source: costa2021
+      quote: >-
+        Os dois bispos passaram a exercer supervisão episcopal sobre o reverendo e a comunidade através do Movimento
+        Anglicano no Brasil.
+      page: '147'
   notes: Emérito da DASP; desligou-se formalmente da IEAB com a Catedral de São Paulo.
 - jurisdiction: ieab
   role: clergy
@@ -402,6 +430,137 @@ events:
     quote: >-
       No dia 08/09/12 recebi a notícia que em Concílio da DASP o Rev. Flávio Irala havia sido eleito Bispo da mesma
       por 19 a 18 votos na ordem leiga e 15 a 13 votos na ordem clerical.
+- type: other
+  date: '2013-03-17'
+  description: >-
+    Em 17/03/2013 a Junta Paroquial da Catedral Anglicana de São Paulo declara que a catedral volta ao status de
+    capelania anterior a 1975, fora da supervisão da IEAB, permanecendo sob o oversight dos bispos Roger Bird e
+    Glauco Soares de Lima. A imprensa anglicana noticia que o bispo de São Paulo e o ex-primaz deixaram a IEAB.
+  status: confirmed
+  sources:
+  - source: lbd-anglicanink-2013
+    quote: >-
+      On 17 March 2013 parish council of St. Paul’s Cathedral in São Paulo stated that while they remained in the
+      Anglican Communion they were reverting to their pre-1975 status as a Church of England chaplaincy and were
+      no longer under the oversight of the IEAB.
+  - source: lbd-geo-tag
+    quote: >-
+      The congregation also announced that it would remain under the spiritual oversight of Bishop Roger Bird of
+      São Paulo and retired Archbishop Glauco Soares de Lima.
+  - source: lbd-catedral-sobre
+    quote: >-
+      confirma os Bispos anglicanos Dom Roger Douglas Bird e Dom Glauco Soares de Lima como seus líderes espirituais.
+- type: other
+  date: '2013'
+  description: >-
+    Glauco Soares de Lima (bispo emérito, ex-primaz) escreve que o bispo diocesano Roger Bird resolveu anular a
+    eleição de 2012, 'decisão com a qual eu concordei'.
+  status: probable
+  sources:
+  - source: glauco-testemunho-2013
+    quote: O bispo diocesano (Roger Bird) resolveu anular a eleição, decisão com a qual eu concordei.
+- type: other
+  date: '2002-09-25'
+  description: >-
+    Visita do Primaz da IEAB, Dom Glauco Soares de Lima, e do Secretário Geral da Província, Rev. Côn. Maurício
+    Andrade, ao Recife (25 a 27/9/2002) para tentar reverter a desvinculação do deão da Catedral da Santíssima Trindade.
+  status: confirmed
+  sources:
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      Dos dias 25 a 27 de setembro, o Revmo. Primaz Dom Glauco Soares de Lima e o Secretário Geral da Província
+      se deslocaram ao Recife
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      ao secretário geral da Província, Rev. Côn. Maurício Andrade, e ao Bispo Sufragâneo, Revmo. Filadelfo Oliveira
+      Neto, OSE
+- type: other
+  date: '2005-09-22'
+  description: >-
+    Nota diocesana de 22/09/2005 afirma que o 'pseudo-concílio' da minoria dissidente realizado em 10/09/2005 não
+    teve quórum, que a diocese nunca se desvinculou da IEAB, que o 'decreto' de excomunhão e deposição contra 32
+    clérigos não foi notificado, e atribui ao ex-primaz Glauco Soares de Lima a declaração de que a sentença contra
+    Robinson resultou de um 'discurso inflamado' do bispo sufragâneo.
+  status: contested
+  sources:
+  - source: drv-fatos-verdadeira-dar
+    quote: O pseudo-concílio realizado pela minoria dissidente da Diocese, em 10.09 passado
+  - source: drv-fatos-verdadeira-dar
+    quote: >-
+      o ex-Primaz Glauco Soares de Lima, afirmou que a Sentença de Deposição não foi uma decisão objetiva do Superior
+      Tribunal Eclesiástico, mas o resultado da influência de um “discurso inflamado” do Bispo Sufragâneo do Recife
+- type: other
+  date: '1988-10-12'
+  description: >-
+    Eleição de Almir dos Santos, reitor da Paróquia de Jesus Cristo (Erechim), como bispo da Diocese Missionária
+    de Brasília pelo 23º Sínodo da Igreja Episcopal do Brasil, reunido em Porto Alegre, na quarta votação. Outros
+    candidatos: Patricia Ann Powers, Jorge Macedo e Glauco Soares de Lima, então reitor de uma igreja em São Paulo.
+    A sagração era prevista para março de 1989 em Brasília.
+  status: probable
+  sources:
+  - source: ens-88234d
+    quote: >-
+      On October 12, the 23rd Synod of the Episcopal Church of Brazil, meeting at Porto Allegre, elected the Rev.
+      Almir dos Santos, rector of Jesus Christ parish in Erechim, Brazil, bishop of the missionary diocese of Brasilia.
+  - source: ens-88234d
+    quote: >-
+      The other candidates were the Rev. Patricia Ann Powers, a missionary from the United States working in Brasilia,
+      the Rev. Jorge Macedo, rector of a church in Rio de Janeiro, and the Rev. Glauco Soares de Lima, rector of
+      a church in Sao Paulo.
+  - source: ens-88234d
+    quote: The consecration of Bishop-elect Almir dos Santos will take place in Brasilia in March 1989.
+- type: other
+  date: '2013-04-19'
+  description: >-
+    Junta Paroquial da Catedral Anglicana de São Paulo publica carta aberta: afirma que a filiação à igreja nacional
+    desde 1975 é espiritual e não patrimonial; que a Assembleia Geral ratifica por unanimidade ter sempre prioritariamente
+    um Bispo da Comunhão Anglicana como líder espiritual; e confirma Dom Roger Douglas Bird e Dom Glauco Soares
+    de Lima como líderes espirituais.
+  status: confirmed
+  sources:
+  - source: lq-cat-carta-aberta
+    quote: terá sempre prioritariamente um Bispo da Comunhão Anglicana como líder espiritual
+  - source: lq-cat-carta-aberta
+    quote: com ênfase na existência de laços espirituais, mas não patrimoniais
+- type: other
+  date: '2013-05-01'
+  description: >-
+    Segundo a cronologia da IEAB, cria-se a 'Diocese do Movimento Anglicano', reunindo clérigos disciplinados pela
+    IEAB e apoiados por Roger Bird e Glauco Soares de Lima.
+  status: confirmed
+  sources:
+  - source: lq-ieab-acoes
+    quote: >-
+      01 de maio de 2013- Criação da Diocese do Movimento Anglicano que inclui um grupo de clérigos disciplinados
+      pela IEAB e apoiados pelos Bispos Dom Roger Bird e Dom Glauco Soares.
+- type: other
+  date: '2013-10-02'
+  description: >-
+    Em outubro de 2013 um blog de congregação em Curitiba se apresenta como 'Movimento Anglicano no Brasil — Ministério
+    da Catedral Anglicana de São Paulo fundada em 1873', com os bispos Glauco Soares de Lima e Roger Bird, e descreve
+    Glauco como 'Bispo no Movimento Anglicano do Brasil sediado na Catedral Anglicana de São Paulo juntamente com
+    Dom Roger Bird'.
+  status: probable
+  sources:
+  - source: lq-blog-curitiba-2013
+    quote: >-
+      Bispo no Movimento Anglicano do Brasil sediado na Catedral Anglicana de São Paulo juntamente com Dom Roger
+      Bird.
+  - source: lq-blog-curitiba-2013
+    quote: Ministério da Catedral Anglicana de São Paulo
+- type: other
+  date: 2015-05
+  description: >-
+    Os bispos Roger Douglas Bird e Glauco Soares de Lima presidem ordenação de André Ocampos (São Manuel/Botucatu)
+    na Catedral Anglicana de São Paulo (reportagem de 16/05/2015); a reportagem a descreve como liderada por Aldo
+    Quintão.
+  status: probable
+  sources:
+  - source: lq-botucatu-2015
+    quote: >-
+      André Ocampos foi ordenado reverendo anglicano em cerimonial realizado na Catedral Anglicana de São Paulo,
+      que tem como maior líder o reverendo Aldo Quintão. A ordenação foi feita pelos bispos Roger Douglas Bird e
+      Glauco Soares de Lima.
 - type: other
   date: 1989-07
   description: Eleito bispo coadjutor da Diocese Sul Central, com direito à sucessão, no segundo escrutínio

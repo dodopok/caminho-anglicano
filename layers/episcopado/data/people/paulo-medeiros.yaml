@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: paulo-medeiros
+name: Paulo Medeiros
+biography: >-
+  Diácono que sucedeu Alfredo Rocha Fonseca Filho na Holy Trinity, Recife (1968-1969); de origem batista, deixou
+  o ministério e tornou-se psicanalista.
+sources:
+- source: drv-resgatando-i
+  quote: Foi substituído pelo Diácono Rev. Paulo Medeiros (1968-1969), carioca de origem Batista
+affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: diácono
+  start: '1968'
+  end: '1969'
+  end_reason: left
+  status: probable
+  sources:
+  - source: drv-resgatando-i
+    quote: >-
+      Foi substituído pelo Diácono Rev. Paulo Medeiros (1968-1969), carioca de origem Batista, que deixou o ministério
+      e se tornou conhecido psicanalista no Recife
+  notes: 'Local: Recife, Holy Trinity. Possível identidade com Paulo Roberto Medeiros não verificada.'

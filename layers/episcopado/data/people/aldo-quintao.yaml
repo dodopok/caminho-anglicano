@@ -1,11 +1,23 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: aldo-quintao
 name: Aldo Quintão
+full_name: Aldo Pereira Quintão
 aliases:
+- Aldo Pereira Quintão
+- Reverendo Aldo
+- Reverendo Aldo Pereira Quintão
 - reverendo Aldo
 birth:
   date: '1962'
   sources:
+  - source: lq-cat-aldo
+    quote: >-
+      nasceu em Brasília, em 1962, e entrou para o seminário carmelita da Igreja Romana em 1979, na cidade de Itu
+      (SP).
+  - source: lbd-snieab-sinais
+    quote: >-
+      Reverendo Aldo Pereira Quintão, Reverendo Álvaro José Antunes Silva Junior, Reverendo Leandro Antunes Campos,
+      Reverendo Rogério Assis, Reverendo Régis Augusto Domingues e Reverendo Luiz Alberto Barbosa.
   - source: cant-novas-igrejas-2024
     quote: Aldo Quintão nasceu em Brasília, em 1962, e entrou para o seminário carmelita da
     page: '92'
@@ -21,6 +33,56 @@ sources:
 - source: costa2021
   quote: a Catedral Anglicana de São Paulo continua sendo liderada pelo seu deão, o reverendo Aldo
 affiliations:
+- jurisdiction: ordem-dos-carmelitas
+  role: clergy
+  start: '1979'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: lq-cat-aldo
+    quote: >-
+      entrou para o seminário carmelita da Igreja Romana em 1979, na cidade de Itu (SP). Depois estudou em Camocim
+      de São Félix (PE), em Curitiba e em São Paulo, tornando-se frade carmelita. Entrando na Igreja Anglicana,
+      e já ordenado sacerdote, estudou e morou em Toronto, no Canadá.
+  notes: >-
+    Entrada no seminário em 1979; data de saída da Ordem/Igreja Católica Romana e data de ordenação não informadas
+    pelo site.
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dasp
+  start: '1998'
+  end: '2013-04-17'
+  end_reason: schism
+  status: confirmed
+  sources:
+  - source: lq-ieab-acoes
+    quote: Dos 34 membros clericais vinculados canonicamente à DASP/Igreja Episcopal Anglicana do Brasil (IEAB)
+  - source: lbd-snieab-sinais
+    quote: >-
+      declara publicamente, em 17 de abril de 2013, o Abandono de Comunhão com a IGREJA EPISCOPAL ANGLICANA DO BRASIL/COMUNHÃO
+      ANGLICANA dos seguintes clérigos: Reverendo Aldo Pereira Quintão
+  - source: lbd-snieab-sinais
+    quote: >-
+      Após um período de sete meses de recusa de reconciliação pastoral e de insistência em manter as ações de insubordinação
+      e de desobediência aos Cânones e à Constituição
+  - source: lq-vejasp-2016
+    quote: >-
+      Depois de fazer um curso no Canadá, assumiu o cargo de pároco da igreja da Zona Sul em 1998. Quinze anos depois,
+      rompeu com a Igreja Episcopal Anglicana do Brasil
+  - source: lq-vejasp-2016
+    quote: >-
+      “Ele não se submetia às regras eclesiásticas, discordava da hierarquia”, afirma o reverendo Arthur Cavalcante,
+      secretário‑geral da entidade.
+  - source: lq-vejasp-2016
+    quote: Aldo Quintão comemora que seis colegas o acompanharam na cisão
+  notes: >-
+    A IEAB descreve o desligamento como 'abandono de comunhão' declarado pelo Bispo Primaz em 17/04/2013. A Catedral,
+    por sua vez, afirma em carta aberta de 19/04/2013 que sua filiação à igreja nacional era apenas espiritual e
+    que se mantém anglicana sob bispos da Comunhão Anglicana (Roger Bird e Glauco Soares de Lima). Outras fontes
+    datam o desligamento formal em 06/04/2013 (alteração de estatutos). Local: Catedral Anglicana de São Paulo.
+    Segundo a Veja São Paulo (16/12/2016), Aldo assumiu a paróquia (Catedral, Alto da Boa Vista) em 1998, depois
+    de um curso no Canadá, e rompeu com a IEAB quinze anos depois. Esta data de 1998 contrasta com a fala de Aldo
+    na Alesp em 2018, noticiada como 'cerca de 23 anos' de Igreja Anglicana (c. 1995), página não verificada.
 - jurisdiction: ieab-dasp
   role: clergy
   start: '1998'
@@ -48,6 +110,31 @@ affiliations:
   notes: >-
     Cargo: Deão da Catedral Anglicana de São Paulo. Eleito deão no 42º Concílio da DASP (set. 2007). A nota 153
     diz que se tornou deão 'quando da eleição do bispo Roger Douglas Bird, em 2009' (conflito de ano).
+- jurisdiction: casp
+  role: other
+  role_description: deao
+  start: '2009'
+  status: confirmed
+  sources:
+  - source: lq-revcruz-2009
+    quote: exibiu uma entrevista com o reverendo Aldo Quintão, deão da catedral anglicana de São Paulo.
+  - source: lq-ieab-acoes
+    quote: convocada pelo Deão Aldo Quintão e pelo Bispo Dom Roger Bird
+  - source: lq-cat-aldo
+    quote: Atualmente é pároco da Catedral Anglicana de São Paulo.
+  - source: cant-novas-igrejas-2024
+    quote: a Catedral Anglicana de São Paulo continua sendo liderada pelo seu deão, o reverendo Aldo.
+    page: '96'
+  notes: >-
+    Já era chamado de deão da catedral em junho de 2009 (blog sobre entrevista no Programa do Jô de 10 de junho)
+    e em 2012-2013 (documentos da IEAB e carta da Catedral). O site da Catedral o apresenta hoje como pároco/deão.
+  discrepancies:
+  - field: start
+    value: '2013'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: a Catedral Anglicana de São Paulo continua sendo liderada pelo seu deão, o reverendo Aldo.
+      page: '96'
 - jurisdiction: ieab-dasp
   role: other
   role_description: deao
@@ -69,15 +156,6 @@ affiliations:
   sources:
   - source: costa2021
     quote: a Catedral Anglicana de São Paulo continua sendo liderada pelo seu deão, o reverendo Aldo
-- jurisdiction: casp
-  role: other
-  role_description: deao
-  start: '2013'
-  status: probable
-  sources:
-  - source: cant-novas-igrejas-2024
-    quote: a Catedral Anglicana de São Paulo continua sendo liderada pelo seu deão, o reverendo Aldo.
-    page: '96'
 - jurisdiction: manb
   role: founder
   start: '2013-03-13'
@@ -94,6 +172,100 @@ affiliations:
       de São Paulo, junto com outras comunidades, organizou o Movimento Anglicano no Brasil (MAnB).
     page: '147'
 events:
+- type: other
+  date: 2012-12
+  description: >-
+    Em 14/12/2012 Bird comunica ao Primaz, por carta registrada em cartório, que não mais resignaria em 31/12/2012.
+    Em 02/12/2012 a Assembleia Geral Extraordinária da Catedral Anglicana de São Paulo, convocada pelo deão Aldo
+    Quintão e por Bird, alterou o estatuto da igreja.
+  status: confirmed
+  sources:
+  - source: lbd-ieab-acoes
+    quote: >-
+      02 de dezembro de 2012- Realização da Assembleia Geral Extraordinária da Catedral Anglicana de São Paulo,
+      sem a ciência do Bispo Primaz, convocada pelo Deão Aldo Quintão e pelo Bispo Dom Roger Bird
+  - source: lbd-ieab-acoes
+    quote: >-
+      14 de dezembro de 2012- Bispo Dom Roger Bird em Carta Registrada em Cartório direcionado ao Bispo Primaz que
+      resolve não mais resignar no dia 31/12/2012
+- type: other
+  date: '2012-11-13'
+  description: >-
+    Os reverendos Aldo Quintão e Rogério Assis levam a Diocese Anglicana de São Paulo à Justiça comum pedindo o
+    cancelamento do Concílio Extraordinário (segundo a cronologia da IEAB).
+  status: confirmed
+  sources:
+  - source: lq-ieab-acoes
+    quote: >-
+      13 de novembro de 2012- ação de dois clérigos, a saber, o Reverendo Aldo Quintão e o Reverendo Rogério Assis,
+      de levarem a própria DASP a Justiça Comum pedindo o cancelamento do Concílio Extraordinário.
+- type: other
+  date: '2012-12-02'
+  description: >-
+    Assembleia Geral Extraordinária da Catedral Anglicana de São Paulo, convocada pelo deão Aldo Quintão e por Roger
+    Bird, aprova alteração do estatuto da Igreja Anglicana Episcopal de São Paulo (artigos 1º, 2º, 3º, 5º, 6º, 7º
+    e 13º, entre outros). A IEAB afirma que a assembleia foi realizada sem respaldo canônico e que visava extinguir
+    o vínculo legal/canônico com a Diocese e a IEAB.
+  status: probable
+  sources:
+  - source: lq-ieab-acoes
+    quote: >-
+      02 de dezembro de 2012- Realização da Assembleia Geral Extraordinária da Catedral Anglicana de São Paulo,
+      sem a ciência do Bispo Primaz, convocada pelo Deão Aldo Quintão e pelo Bispo Dom Roger Bird
+  - source: lbd-snieab-sinais
+    quote: realiza sua Assembléia sem o respaldo canônico e altera os artigos centrais dos seus Estatutos
+- type: other
+  date: '2013-03-28'
+  description: >-
+    A IEAB registra a ausência dos reverendos Aldo Quintão, Rogério Assis, Leandro Antunes e Régis Domingues na
+    renovação de votos de ordenação (Quinta-Feira Santa); a Comissão de Investigação Provincial (22-24/02/2013)
+    também registra a ausência de Aldo Quintão entre os convocados.
+  status: confirmed
+  sources:
+  - source: lq-ieab-acoes
+    quote: >-
+      Nota-se a ausência sem justificativa dos seguintes clérigos: Reverendo Aldo Quintão, Reverendo Rogério Assis,
+      Reverendo Leandro Antunes e Reverendo Régis Domingues.
+  - source: lq-ieab-acoes
+    quote: >-
+      Dentre os clérigos convocados que não compareceram estavam o Reverendo Aldo Quintão da Catedral Anglicana
+      de São Paulo
+- type: other
+  date: '2013-04-17'
+  description: >-
+    O Bispo Primaz da IEAB, Maurício Andrade, declara o Abandono de Comunhão com a IEAB/Comunhão Anglicana dos reverendos
+    Aldo Pereira Quintão, Álvaro José Antunes Silva Junior, Leandro Antunes Campos, Rogério Assis, Régis Augusto
+    Domingues e Luiz Alberto Barbosa.
+  status: confirmed
+  sources:
+  - source: lbd-snieab-sinais
+    quote: >-
+      declara publicamente, em 17 de abril de 2013, o Abandono de Comunhão com a IGREJA EPISCOPAL ANGLICANA DO BRASIL/COMUNHÃO
+      ANGLICANA dos seguintes clérigos
+- type: other
+  date: 2015-05
+  description: >-
+    Os bispos Roger Douglas Bird e Glauco Soares de Lima presidem ordenação de André Ocampos (São Manuel/Botucatu)
+    na Catedral Anglicana de São Paulo (reportagem de 16/05/2015); a reportagem a descreve como liderada por Aldo
+    Quintão.
+  status: probable
+  sources:
+  - source: lq-botucatu-2015
+    quote: >-
+      André Ocampos foi ordenado reverendo anglicano em cerimonial realizado na Catedral Anglicana de São Paulo,
+      que tem como maior líder o reverendo Aldo Quintão. A ordenação foi feita pelos bispos Roger Douglas Bird e
+      Glauco Soares de Lima.
+- type: other
+  date: '2018-07-01'
+  description: >-
+    A Veja informa que a Catedral Anglicana de São Paulo 'tinha apenas três reverendos até 2016' e que em dois anos
+    chegou a 23, todos egressos da Igreja Católica (matéria de 01/07/2018).
+  status: probable
+  sources:
+  - source: lq-veja-2018
+    quote: >-
+      A Catedral Anglicana de São Paulo, por exemplo, fundada em 1873, tinha apenas três reverendos até 2016. No
+      espaço de dois anos, saltou para 23 — e todos, sem exceção, são egressos da Igreja Católica.
 - type: other
   date: '2013'
   description: >-

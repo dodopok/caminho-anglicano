@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: provincia-nordeste
+name: Província Nordeste
+type: diocese
+relations:
+- type: part_of
+  target: sicb
+  status: probable
+  sources:
+  - source: lvc-sicb-n-hesicasterio-ne
+    quote: 'Bispo Provincial: Dom Basílio da Santa Cruz, OSC'
+  - source: lvc-sicb-n-sinodo
+    quote: >-
+      Também foi nomeado como Grande Secretário Nacional e Arcebispo Adjunto para o Brasil, Dom Basílio da Santa
+      Cruz.

@@ -3,9 +3,12 @@ id: rui-costa-barbosa
 name: Rui Costa Barbosa
 full_name: Rui Costa Barbosa
 aliases:
+- Dom Rui
 - Dom Rui Barbosa
 - Dom Rui Costa
+- Revmº Dom Rui Costa Barbosa
 - Rui Barbosa
+- Rui Da Costa Barbosa
 biography: >-
   Bispo primaz da Igreja Anglicana Tradicional do Brasil (IATB/AECI), São Paulo. Ex-membro da Diocese Anglicana
   de São Paulo (IEAB); sagrado por Norman Dutton, Frank Peachey e Iranildo Macieira da Silva (Costa 2021); fundador
@@ -20,16 +23,25 @@ sources:
 ordinations:
 - order: diaconate
   date: '2005-03-26'
-  place: Ribeirão Preto (SP)
+  place: Ribeirão Preto (SP), Casa da Meditação Cristã "Disciplina Pacis"
   jurisdiction: iadb-lorite
+  ordained_by: iranildo-macieira-da-silva
   status: probable
   sources:
+  - source: lielb-iab-historia
+    quote: >-
+      No dia 26 de março de 2005, Sábado Santo, os ministros licenciados Ricardo Lorite de Lima, Rui Costa Barbosa,
+      Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Diaconal da Igreja de Cristo, Una,
+      Santa, Católica e Apostólica, através da imposição das mãos do bispo vetero-católico Dom Iranildo Macieira
+      das Silva (Dom Lucas).
   - source: cant-novas-igrejas-2024
     quote: >-
       No dia 26 de março de 2005, na cidade de Ribeirão Preto (SP), os ministros licenciados Ricardo Lorite de Lima,
       Rui Costa Barbosa, Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Diaconal
     page: '118'
-  notes: O livro não nomeia o ordenante.
+  notes: >-
+    Ordenante identificado como "Bispo Primaz Metropolitano da Igreja Episcopal Latina do Brasil (vetero-católica)".
+    Fonte: história da Igreja Anglicana do Brasil (Ricardo Lorite de Lima). O livro não nomeia o ordenante.
 - order: presbyterate
   date: '2005-03-27'
   place: Igreja Evangélica Congregacional de Ribeirão Preto (SP)
@@ -37,29 +49,55 @@ ordinations:
   ordained_by: iranildo-macieira-da-silva
   status: probable
   sources:
+  - source: lielb-iab-historia
+    quote: >-
+      Na data de 27 de março de 2005, Domingo de Páscoa, os Rev. Diáconos Ricardo Lorite de Lima, Rui Costa Barbosa,
+      Luis Fernando Salgado e Josué Sousa Torres foram elevados ao Ministério Presbiteral da Igreja de Cristo, Una,
+      Santa, Católica e Apostólica, através da imposição das mãos de Dom Iranildo Macieira das Silva (Dom Lucas).
+  - source: cant-novas-igrejas-2024
+    quote: e no dia 27 de março, os quatro diáconos foram ordenados presbíteros por bispos independentes.
+    page: '118'
   - source: ig-josue-2025-03-28-presbiterato-2005
     quote: >-
       Na data de 27 de março de 2005, Domingo de Páscoa, os Rev. Diáconos Ricardo Lorite de Lima, Rui Costa Barbosa,
       Luis Fernando Salgado e Josué Souza Torres foram elevados ao Ministério Presbiteral da Igreja de Cristo, Una,
       Santa, Católica e Apostólica, através da imposição das mãos de Dom Iranildo Macieira das Silva (Dom Lucas).
       A cerimônia de Ordenação ocorreu na Igreja Evangélica Congregacional de Ribeirão Preto.
-  - source: cant-novas-igrejas-2024
-    quote: e no dia 27 de março, os quatro diáconos foram ordenados presbíteros por bispos independentes.
-    page: '118'
   notes: >-
-    Também impuseram as mãos os padres Manuel (Igreja Antigo-Católica), João Ripoli e Mário Palumbo (Igreja Católica
-    Romana). Ordenações autorizadas por Leonardo Marin-Saavedra (Anglican Independent Communion Worldwide). O livro
-    diz apenas 'por bispos independentes', sem nomeá-los.
+    O livro diz apenas 'por bispos independentes', sem nomeá-los. Também impuseram as mãos os padres Manuel (Igreja
+    Antigo-Católica), João Ripoli e Mário Palumbo (Igreja Católica Romana). Ordenações autorizadas por Leonardo
+    Marin-Saavedra (Anglican Independent Communion Worldwide).
 - order: episcopate
   date: '2006-01-15'
-  jurisdiction: iadb-lorite
-  office: suffragan
+  place: Centro de Esportes Municipal (CEMUR), Taboão da Serra (SP)
+  jurisdiction: aic-w
+  office: coadjutor
+  principal_consecrator: barry-frank-peachey
   co_consecrators:
-  - barry-frank-peachey
   - iranildo-macieira-da-silva
   - norman-dutton
-  status: probable
+  status: contested
   sources:
+  - source: lia-iatb-arcebispo-2008
+    quote: >-
+      Consecrated as Bishop and Installed Coadjutor Bishop of The Anglican Independent Communion Worldwide - Brazil
+      in 15th January 2006.
+  - source: lia-iatb-sudeste-2008
+    quote: >-
+      Sagrante Principal: Dom Barry Frank Peachey, Bispo em Anglia e Chanceler Metropolitano da Comunhão Anglicana
+      Independente – Inglaterra.
+  - source: lia-iatb-sudeste-2008
+    quote: >-
+      Consagrantes: Dom Norman Sydney Dutton - “in absentia”, Arcebispo Metropolitano da Comunhão Anglicana Independente
+      – Inglaterra; e, Dom Iranildo Macieira da Silva (Dom Lucas Macieira), Arcebispo Primaz da Igreja Episcopal
+      Latina do Brasil.
+  - source: lia-iatb-clerigos-2015
+    quote: >-
+      Ordenado ao episcopado pelo Revmo. Bispo Dom Barry Frank Peachey, da Comunhão Anglicana Independente (AIC-W)
+      em 15 de janeiro de 2006, no Centro de Esportes Municipal (CEMUR), cidade de Taboão da Serra, Estado de São
+      Paulo
+  - source: lia-iatb-noticias-2012
+    quote: foi o pregador convidado no dia da ordenação episcopal e sagração de Dom Rui Costa Barbosa.
   - source: costa2021
     quote: >-
       Após receberem as ordens do diaconato e do presbiterato por bispos independentes, Ricardo Lorite e Rui Barbosa
@@ -70,29 +108,33 @@ ordinations:
       Os reverendos Ricardo Lorite e Rui Barbosa tiveram sua ordenação episcopal através dos bispos Norman Dutton,
       Frank Peachey e Lucas Macieira da Silva (Igreja Episcopal Latina do Brasil), em 15 de janeiro de 2006.
     page: '118'
+  discrepancies:
+  - field: jurisdiction
+    value: iadb-lorite
+    sources:
+    - source: costa2021
+      quote: >-
+        Após receberem as ordens do diaconato e do presbiterato por bispos independentes, Ricardo Lorite e Rui Barbosa
+        tiveram sua ordenação episcopal através dos bispos Norman Dutton, Frank Peachey e Iranildo Macieira da Silva
+        (Igreja Episcopal Latina do Brasil).
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        Os reverendos Ricardo Lorite e Rui Barbosa tiveram sua ordenação episcopal através dos bispos Norman Dutton,
+        Frank Peachey e Lucas Macieira da Silva (Igreja Episcopal Latina do Brasil), em 15 de janeiro de 2006.
+      page: '118'
   notes: >-
-    Data e sagrante principal não informados; a fonte lista três bispos sagrantes sem hierarquia. Iranildo Macieira
-    da Silva é da 'Igreja Episcopal Latina do Brasil'. O livro diz 'através dos bispos' Norman Dutton, Frank Peachey
-    e Lucas Macieira, sem indicar o sagrante principal. Na p. 119 Rui aparece como bispo coadjutor da IAdB. A IATB
-    (p. 136) diz ter origem em 2006, 'após a sagração do bispo e atual primaz, Rui Costa Barbosa'. A tese lista
-    os três bispos sem indicar o sagrante principal nem data. Diaconato e presbiterato recebidos de 'bispos independentes'
-    não nomeados.
+    Fontes primárias da própria IATB (páginas de 2008 a 2017 arquivadas) coincidem: sagrante principal Barry Frank
+    Peachey (Bispo in Anglia e Chanceler Metropolitano da AIC-W); co-sagrantes Norman Sydney Dutton, em ausência,
+    e Iranildo (Lucas) Macieira da Silva, primaz da Igreja Episcopal Latina do Brasil. A sagração foi para servir
+    como bispo coadjutor da AIC-W no Brasil. A IATB (2011) lembra que Dutton, por sua vez, sagrou Peachey. O pregador
+    convidado da cerimônia foi Antonio Marcos Novaes Tavares, depois incardinado na IATB (vindo da Igreja Presbiteriana
+    do Brasil). Data e sagrante principal não informados; a fonte lista três bispos sagrantes sem hierarquia. Iranildo
+    Macieira da Silva é da 'Igreja Episcopal Latina do Brasil'. O livro diz 'através dos bispos' Norman Dutton,
+    Frank Peachey e Lucas Macieira, sem indicar o sagrante principal. Na p. 119 Rui aparece como bispo coadjutor
+    da IAdB. A IATB (p. 136) diz ter origem em 2006, 'após a sagração do bispo e atual primaz, Rui Costa Barbosa'.
+    A tese lista os três bispos sem indicar o sagrante principal nem data. Diaconato e presbiterato recebidos de
+    'bispos independentes' não nomeados.
 affiliations:
-- jurisdiction: iatb
-  role: primate
-  diocese: diocese-thomas-becket
-  start: '2006'
-  status: probable
-  sources:
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      Após a saída de dom Cristiano da Província, este bispo foi convidado por dom Rui Barbosa para retornar para
-      a Igreja Anglicana Tradicional do Brasil (IATB).
-    page: '106'
-  - source: cant-novas-igrejas-2024
-    quote: Diocese Thomas Becket (São Paulo), sob o episcopado e primazia de dom Rui Costa Barbosa
-    page: '136'
-  notes: 'Local: São Paulo.'
 - jurisdiction: iatb
   role: founder
   start: '2006'
@@ -111,20 +153,96 @@ affiliations:
 - jurisdiction: iadb-lorite
   role: coadjutor_bishop
   start: '2006-01-15'
-  status: probable
+  status: confirmed
   sources:
+  - source: drv-comunicado-imprensa-2006
+    quote: Dom Rui Costa Barbosa, Bispo Coadjutor
   - source: cant-novas-igrejas-2024
     quote: Rui Costa Barbosa, como bispo coadjutor
     page: '119'
-  notes: Situação descrita para a época da Declaração da Boa Viagem (2006).
+  notes: >-
+    Consta com esse cargo na lista de fundadores da Declaração da Boa Viagem (30/09/2006); início do cargo não informado.
+    Em Célio Spinelli, o texto acrescenta 'Bispo de Diocese Anglicana Thomas Becket e Vigário Geral da Arquidiocese
+    Thomas Cranmer'. Citado nesse cargo em documento de 30/09/2006. Situação descrita para a época da Declaração
+    da Boa Viagem (2006).
+- jurisdiction: aic-w
+  role: bishop
+  start: '2006-01-15'
+  status: confirmed
+  sources:
+  - source: lia-iatb-arcebispo-2008
+    quote: >-
+      Consecrated as Bishop and Installed Coadjutor Bishop of The Anglican Independent Communion Worldwide - Brazil
+      in 15th January 2006.
+  - source: lia-iatb-pagina-2008-noticias
+    quote: >-
+      Historicamente esse fato é um ato reparador, pois D. Rui Costa Barbosa foi consagrado justamente para servir
+      a AICW, porém, pelos caminhos insondáveis de Deus, por vários motivos, o mesmo passou quase um ano fora daquela
+      comunhão.
+  notes: >-
+    Local: Brasil, coadjutor. A própria IATB relata que, depois da sagração, Rui ficou 'quase um ano' fora da AIC-W,
+    sendo a Igreja readmitida como província em 10/10/2007 (carta de Patricio Viveros Robles e Peter McInnes). Em
+    07/12/2009 passou a integrar o Colégio Internacional de Arcebispos da AIC-W como arcebispo metropolitano para
+    o Brasil.
 - jurisdiction: iatb
   role: primate
+  diocese: diocese-thomas-becket
+  start: '2006-12-26'
+  status: confirmed
+  sources:
+  - source: lia-iatb-juris-2013
+    quote: 'DIOCESE DO SUDESTE Bispo Diocesano: Revmº Dom Rui Costa Barbosa'
+  - source: lia-iatb-clerigos-2019
+    quote: Dom Rui Costa Diocese de São Paulo
+  - source: iatb-clerigos
+    quote: Dom Rui Costa - São Paulo
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      Após a saída de dom Cristiano da Província, este bispo foi convidado por dom Rui Barbosa para retornar para
+      a Igreja Anglicana Tradicional do Brasil (IATB).
+    page: '106'
+  - source: cant-novas-igrejas-2024
+    quote: Diocese Thomas Becket (São Paulo), sob o episcopado e primazia de dom Rui Costa Barbosa
+    page: '136'
+  notes: >-
+    Titulado arcebispo provincial de 10/10/2007 e bispo diocesano do Sudeste (sede episcopal em Ribeirão Pires-SP;
+    Diocese Thomas Beckt/Becket). Em 2017 o cargo de arcebispo provincial passou a ser exercido por Alfredo Dórea
+    (ver vínculo desse bispo); nas páginas de 2023-2024 e no site atual Rui reaparece como 'Primaz da Igreja'. A
+    data da volta ao primado não aparece nas fontes consultadas. Local: São Paulo.
+- jurisdiction: aeci
+  role: other
+  role_description: membro do Conselho Consultivo do Arcebispo
+  start: '2011'
+  status: confirmed
+  sources:
+  - source: lia-aeci-news
+    quote: >-
+      Archbishop ++Rui Barbosa - Primate of the Province of Latin America as a member of 'The Archbishop's Advisory
+      Council'.
+  - source: lia-aeci-clergy
+    quote: The Most Rev. Rui Costa Barbosa Primate Archbishop
+  notes: >-
+    A AECI relaciona Rui como Primate da 'Province of Latin America' e membro do Conselho Consultivo do Arcebispo
+    Dutton (notícia sob o cabeçalho 2011); a página de clero da AECI o lista como Primate Archbishop do Brasil (Churches
+    in Communion, AIC-W).
+- jurisdiction: iatb
+  role: primate
+  start: '2023'
   status: confirmed
   sources:
   - source: iatb-comunidades
     quote: sob a direção do Bispo Primaz do Brasil, Dom Rui Costa Barbosa.
   - source: iatb-clerigos
     quote: Dom Rui Costa - São Paulo
+  - source: lia-iatb-home-2024
+    quote: Dom Rui Costa Primaz da Igreja.
+  - source: iatb-home
+    quote: >-
+      Nós, Dom Rui Costa Barbosa, Dom José da Santa Cruz, Dom Cristiano Alves, presbíteros, diáconos e leigos da
+      Igreja Anglicana Tradicional do Brasil
+  notes: >-
+    Início = primeira evidência de uma página com Rui como primaz após a gestão de Dórea (a página de 2021 ainda
+    listava Dórea como arcebispo provincial). Não é a data de uma posse.
 - jurisdiction: ieab
   role: member
   diocese: ieab-dasp
@@ -172,3 +290,74 @@ events:
   sources:
   - source: iatb-home
     quote: Nova Iguaçu-RJ, 16 de novembro de 2025
+- type: other
+  date: '2025-11-16'
+  description: >-
+    Carta de Nova Iguaçu: Rui Costa Barbosa, José da Santa Cruz e Cristiano Alves, em nome da IATB, declaram unidade
+    da igreja após sínodo em Nova Iguaçu (RJ), em novembro de 2025.
+  status: confirmed
+  sources:
+  - source: iatb-home
+    quote: Declaramos que seguimos unidos em um único propósito eclesiástico
+- type: other
+  date: '2006-12-26'
+  description: >-
+    Rui Costa Barbosa foi nomeado bispo diocesano da 'The Catholic Anglican Diocese of Brazil' (Diocese Anglicana
+    Católica do Brasil) em 26/12/2006; em 29/12/2006 o Decreto Episcopal 001/06 criou a Mitra Diocesana da Diocese
+    do Sudeste.
+  status: confirmed
+  sources:
+  - source: lia-iatb-bispos-2011
+    quote: Appointed as Diocesan Bishop of The Catholic Anglican Diocese of Brazil on December 26, 2006.
+  - source: lia-iatb-atos-2008
+    quote: Decreto Episcopal 001/06 de 29/12/2006 - Diocese do Sudeste Criação da Mitra Diocesana.
+- type: other
+  date: '2007-10-10'
+  description: >-
+    Rui Costa Barbosa foi nomeado Arcebispo Provincial da 'Traditional Anglican Province of Brazil' em 10/10/2007
+    (e bispo diocesano da Diocese do Sudeste); em 11/10/2007 o Decreto Episcopal 030/2007 criou a Mitra Provincial
+    Anglicana Tradicional.
+  status: confirmed
+  sources:
+  - source: lia-iatb-bispos-2011
+    quote: >-
+      Appointed as Provincial Archbishop of The Traditional Anglican Province of Brazil on October 10, 2007 and
+      Diocesan Bishop of Southeastern Brazil Diocese.
+  - source: lia-iatb-atos-2008
+    quote: Criação da Mitra Provincial Anglicana Tradicional e mudança na estrutura eclesial anterior
+- type: other
+  date: '2026'
+  description: >-
+    A página de clero da AECI lista, sob 'BRAZIL - Churches in Communion - AIC-W', Rui Costa Barbosa (Primate Archbishop),
+    'Jose Maciel' (Bishop and Abbot, Pernambuco), Jeferson Nilson Santos (Bishop, Paraná) e 'Cristiano Carvalho'
+    (Bishop, Rio de Janeiro).
+  status: confirmed
+  sources:
+  - source: lia-aeci-clergy
+    quote: The Rt. Rev. Jose Maciel Bishop and Abbot Pernaambuco State
+  - source: lia-aeci-clergy
+    quote: The Rt. Rev. Jeferson Nilson Santos Bishop Parana State
+  - source: lia-aeci-clergy
+    quote: The Rt. Rev. Cristiano Carvalho Bishop Rio de Janeiro State
+- type: other
+  date: '2025-11-16'
+  description: >-
+    Carta de Nova Iguaçu: bispos Rui Costa Barbosa, José da Santa Cruz e Cristiano Alves, com presbíteros, diáconos
+    e leigos, reunidos em Nova Iguaçu (RJ) em novembro de 2025, declaram unidade da IATB e retomada de uma tradição
+    sinodal 'interrompida'.
+  status: confirmed
+  sources:
+  - source: iatb-home
+    quote: >-
+      Nós, Dom Rui Costa Barbosa, Dom José da Santa Cruz, Dom Cristiano Alves, presbíteros, diáconos e leigos da
+      Igreja Anglicana Tradicional do Brasil, reunidos na Cidade de Nova Iguaçu-RJ, no mês de novembro de 2025
+- type: other
+  date: '2007-08-04'
+  description: >-
+    Em 2008 Rui Costa Barbosa escreveu que a IATB não pretendia 'sagrar novos bispos apenas para não perder ou para
+    aumentar quadros' e distinguiu-se do movimento 'Causa Comum' dos anglicanos continuantes brasileiros.
+  status: confirmed
+  sources:
+  - source: lia-iatb-pagina-2008-noticias
+    quote: >-
+      Respeitaremos a ortodoxia da Igreja não sagrando novos bispos apenas para não perder ou para aumentar quadros.

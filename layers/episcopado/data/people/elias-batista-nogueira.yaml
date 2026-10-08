@@ -1,16 +1,78 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: elias-batista-nogueira
 name: Elias Batista Nogueira
+full_name: Elias Batista Nogueira
+aliases:
+- Bispo Elias Batista
+- Dom Elias
+- Professor Elias Batista Nogueira
+- The Most Rev'd Elias Batista Nogueira
 biography: >-
-  Bispo fundador da Ordem Anglicana Filhos da Promessa (IEEP, 2012); sagrante principal de cinco bispos em 10/11/2012
-  (Belford Roxo).
+  Patriarca (título usado na lista do CNBP) e presidente provincial da Província Brasileira de Confissão Anglicana;
+  vinculado à Ordem Anglicana Filhos da Promessa (OAFIP). Segundo a página de sucessão do CNBP, foi sagrado bispo
+  em 12/11/2011, em Mallet (Rio de Janeiro), por Josué Souza Torres. Casado com Eliane Helena da Silva Nogueira.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lac-cnbp-sucessao
   quote: >-
-    Essa Ordem religiosa da IEEP foi fundada pelo bispo Elias Batista Nogueira, junto com o irmão Roberto de Avelar
-    Coelho da Silva.
-  page: '145'
+    Elias Batista Nogueira (Brasileiro) – Em 12/11/2011 foi sagrado ao Bispado pelo Bispo Josué Souza Torres em
+    Mallet, Rio de Janeiro (RJ), Brasil.
+- source: lac-cnbp-bispos
+  quote: >-
+    Dom + + + Elias Batista Nogueira – Patriarca Presidente da Convenção Eclesiástica Filhos da Promessa - CEFIP
+- source: lac-stpeb-elias
+  quote: Casado com a Gestora Eliane Helena da Silva Nogueira
+ordinations:
+- order: episcopate
+  date: '2011-11-12'
+  place: Mallet, Rio de Janeiro (RJ) — templo da Igreja Evangélica Ministério Javé Nissi
+  jurisdiction: ieep
+  principal_consecrator: josue-sousa-torres
+  status: confirmed
+  sources:
+  - source: lac-cnbp-sucessao
+    quote: >-
+      Elias Batista Nogueira (Brasileiro) – Em 12/11/2011 foi sagrado ao Bispado pelo Bispo Josué Souza Torres em
+      Mallet, Rio de Janeiro (RJ), Brasil.
+  - source: lpq-cefip-sagracoes
+    quote: 'Consecrator: The Rt. Rev´d. Josué Souza Torres, Bispo Primaz da Igreja Episcopal do Evangelho Pleno'
+  - source: lpq-iacl-wb-sucessao
+    quote: Elias Batista Nogueira - 2011
+  - source: lac-cnbp-elogio
+    quote: que estará ordenando e sagrando ministros cristãos, no dia 12/11/2011
+  notes: >-
+    Data e local vêm do blog do Conselho Nacional de Bispos Protestantes (organização do próprio Elias); a data
+    não é repetida no blog da CEFIP, que dá apenas o sagrante. O blog dá o local como "Mallet, Rio de Janeiro (RJ)"
+    (não verificado se é bairro); o livro de Costa (2024) registra sagrações coletivas de Elias em Belford Roxo
+    em 10/11/2012. A saudação de Dom Filismar Manoel, no mesmo blog, anuncia que Josué Souza Torres (Bispo Primaz
+    da IEEP) ordenaria e sagraria ministros em 12/11/2011 no templo da Igreja Evangélica Ministério Javé Nissi,
+    Rua Marechal Fontinele 4593, Mallet; cita entre os reverendos Elias Batista e Reinaldo Tavares. Sagração episcopal
+    'c.2011' na página de Sagrações do blog Ouvidoria CEFIP.
 affiliations:
+- jurisdiction: cefip
+  role: founder
+  start: '2011-03-05'
+  status: confirmed
+  sources:
+  - source: lpq-cefip-estatuto
+    quote: Rio de Janeiro, 05 de Março de 2011. Rev. Elias Batista Nogueira Diretor Presidente
+  - source: lpq-cefip-home
+    quote: Presidente da Convenção Eclesiástica Filhos da Promessa
+  notes: Data = estatuto interno (documento primário); o blog do CNBP o chama "Fundador e Presidente".
+- jurisdiction: cnbp
+  role: other
+  role_description: presidente
+  start: '2012'
+  status: probable
+  sources:
+  - source: lpq-cnbp-elias
+    quote: >-
+      Exerço essa função desde 2012, então 4 anos de arcebispo. Minha nomeação foi dada pelo meu bispo Sagrante
+      Dom Josué Souza Torres.
+  - source: lpq-cefip-sagracoes
+    quote: Presidente do Conselho Nacional de Bispos Protestantes do Brasil – Comunhão Episcopal Protestante
+  notes: >-
+    Função de arcebispo desde 2012, por nomeação de Josué Souza Torres (entrevista de 2016). CNBP = Conselho Nacional
+    de Bispos Protestantes do Brasil – Comunhão Episcopal Protestante.
 - jurisdiction: oafip
   role: founder
   start: '2012-08-22'
@@ -21,3 +83,26 @@ affiliations:
       Essa Ordem religiosa da IEEP foi fundada pelo bispo Elias Batista Nogueira, junto com o irmão Roberto de Avelar
       Coelho da Silva.
     page: '145'
+- jurisdiction: iefip
+  role: primate
+  status: confirmed
+  sources:
+  - source: lpq-yt-iefip
+    quote: IGREJA EPISCOPAL FILHOS DA PROMESSA - IEFIP Bispo-Primaz - Elias Batista Nogueira
+  notes: >-
+    Sede em Engenheiro Pedreira (Japeri, RJ). Na entrevista de 2016 ele afirma ser "Arcebispo Primaz" da IEFP, cujos
+    cânones gerais lhe compete cumprir.
+events:
+- type: other
+  date: '2026-05-01'
+  description: >-
+    Decreto Episcopal 0002/2026 (01/05/2026): Dom Elias Batista Nogueira, como Bispo Primaz da Comunhão Episcopal
+    Protestante no Brasil e Presidente da CEFIP, reconhece e recebe na Convenção o "Reverendo Diácono José Carlos
+    Berti Junior" como líder espiritual e fundador da Igreja Episcopal Brasileira, além de líderes de igrejas da
+    Assembleia de Deus.
+  status: confirmed
+  sources:
+  - source: lpq-cefip-home
+    quote: >-
+      Fica reconhecido e recebido nesta Comunhão e filiado nesta Convenção o Reverendo Diácono José Carlos Berti
+      Junior na condição de Líder Espiritual e Fundador da Igreja Episcopal Brasileira

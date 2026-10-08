@@ -1,17 +1,63 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: antonio-jesualdo-bezerra-de-moura
 name: Antônio Jesualdo Bezerra de Moura
-biography: Bispo da Igreja Anglicana Mundial no Brasil (Diocese do Pará).
+full_name: Antônio Jesualdo Bezerra de Moura
+aliases:
+- Bishop Antonio Jesualdo Bezerra
+- Dom Jesualdo
+- Jesualdo Moura
+- Reverendo Jesualdo
+biography: >-
+  Bispo ligado à Diocese do Pará (Santa Maria do Pará/Belém). A WAC internacional o lista como bispo da Província
+  do Brasil. Uma publicação do perfil Templos Anglicanos Brasil (jun/2026) diz que foi sagrado bispo em 2019 pela
+  Igreja Católica Anglicana do Brasil e que a paróquia que fundou em 2015 foi elevada a catedral em 2025.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Dom Antônio Jesualdo Bezerra de Moura, bispo diocesano do Pará
-  page: '129'
+- source: lwac-wac-hob
+  quote: Bishop Antonio Jesualdo Bezerra Bishop Ecclesiastical Province of Brazil
+- source: lwac-ig-templos-para
+  quote: >-
+    Em 2019, o Reverendo Jesualdo foi sagrado bispo pela Igreja Católica Anglicana do Brasil, assumindo posteriormente
+    o cuidado pastoral da Diocese do Pará.
+ordinations:
+- order: episcopate
+  date: '2019'
+  jurisdiction: null
+  office: diocesan
+  status: probable
+  sources:
+  - source: lwac-ig-templos-para
+    quote: >-
+      Em 2019, o Reverendo Jesualdo foi sagrado bispo pela Igreja Católica Anglicana do Brasil, assumindo posteriormente
+      o cuidado pastoral da Diocese do Pará.
+  notes: >-
+    Informação de uma página de divulgação de templos anglicanos (fonte secundária, jun/2026). Dia, local e sagrantes
+    não informados. A "Igreja Católica Anglicana do Brasil" é uma jurisdição independente, distinta da WAC; a mesma
+    publicação ainda a indica como denominação da Catedral Anglicana Divina Misericórdia, em Santa Maria do Pará.
 affiliations:
+- jurisdiction: wac
+  role: bishop
+  diocese: wac-br
+  status: probable
+  sources:
+  - source: lwac-wac-hob
+    quote: Bishop Antonio Jesualdo Bezerra Bishop Ecclesiastical Province of Brazil
 - jurisdiction: wac-br
   role: diocesan_bishop
-  diocese: diocese-do-para
+  diocese: wac-br-pa
   status: probable
   sources:
   - source: cant-novas-igrejas-2024
     quote: Dom Antônio Jesualdo Bezerra de Moura, bispo diocesano do Pará
     page: '129'
+events:
+- type: other
+  date: '2025'
+  description: >-
+    A paróquia fundada em 2015 pelo reverendo Jesualdo Moura em Santa Maria do Pará (Paróquia Anglicana Jesus Misericordioso)
+    foi elevada a Catedral Anglicana Divina Misericórdia, sede da Diocese do Pará, em 2025.
+  status: probable
+  sources:
+  - source: lwac-ig-templos-para
+    quote: >-
+      em 2025, a Paróquia Anglicana Jesus Misericordioso foi elevada à condição de Catedral Anglicana Divina Misericórdia,
+      tornando-se a sede da Diocese.

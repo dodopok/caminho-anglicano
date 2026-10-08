@@ -4,12 +4,17 @@ name: Humberto Maiztegui
 full_name: Humberto Eugenio Maiztegui Gonçalves
 aliases:
 - Humberto Eugenio Maiztegui Gonçalves
+- Humberto Eugênio Maiztegui Gonçalves
 - Humberto Maiztegui Gonçalves
 birth:
   date: '1964-12-06'
   sources:
   - source: costa2021
     quote: Humberto Eugenio Maiztegui Gonçalves nasceu em Montevideu, Uruguai, em 6 de dezembro de
+  - source: lic-dm-bispo-maiztegui
+    quote: Humberto Eugênio Maiztegui Gonçalves nasceu em Montevideu, Uruguai, em 6 de dezembro de 1964.
+  - source: lic-dm-bispo-maiztegui
+    quote: 'emerge o lema: Proclamar e Servir'
   - source: costa2021
     quote: Humberto Eugenio Maiztegui Gonçalves nasceu em Montevideu, Uruguai, em 6 de dezembro de 1964.
     page: '113'
@@ -21,11 +26,16 @@ sources:
 ordinations:
 - order: diaconate
   date: '1990-05-26'
-  place: Catedral da Santíssima Trindade, Montevidéu (Diocese Anglicana do Uruguai)
-  jurisdiction: iacs
+  place: Catedral da Santíssima Trinidad, Diocese Anglicana do Uruguai (Montevidéu)
+  jurisdiction: ieab
   ordained_by: william-godfrey
-  status: probable
+  status: confirmed
   sources:
+  - source: lic-dm-bispo-maiztegui
+    quote: >-
+      em 26 de maio, dia de Santo Agostinho de Cantuária, e dia também da visita do Arcebispo de Cantuária Robert
+      Runcie ao Uruguai, foi ordenado ao diaconato pelo Bispo William Godfrey, na Catedral da Santíssima Trinidad,
+      da Diocese Anglicana do Uruguai
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1990 - … Humberto Maiztegui Gonçalves **
     page: '373'
@@ -35,21 +45,42 @@ ordinations:
       da Diocese Anglicana do Uruguai, pelo bispo William Godfrey e pelo Arcebispo de Cantuária, Robert Runcie,
       que estava em visita ao país.
     page: '113'
+  discrepancies:
+  - field: jurisdiction
+    value: iacs
+    sources:
+    - source: costa2021
+      quote: >-
+        Em 26 de maio do mesmo ano, dia de Agostinho de Cantuária, foi ordenado na Catedral da Santíssima Trindade,
+        da Diocese Anglicana do Uruguai, pelo bispo William Godfrey e pelo Arcebispo de Cantuária, Robert Runcie,
+        que estava em visita ao país.
+      page: '113'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
-    No livro o nome traz a marca "**", cuja nota explicativa não foi fotografada. A tese não diz a ordem, mas a
-    seguir menciona o presbiterato em 1992, logo trata-se do diaconato. Ordenantes: William Godfrey e Robert Runcie.
+    Biografia no site da Diocese Meridional; o ano 1990 vem do mesmo parágrafo ("Nesse mesmo ano", após o bacharelado
+    em 1990). Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante
+    não informado. No livro o nome traz a marca "**", cuja nota explicativa não foi fotografada. A tese não diz
+    a ordem, mas a seguir menciona o presbiterato em 1992, logo trata-se do diaconato. Ordenantes: William Godfrey
+    e Robert Runcie.
 - order: presbyterate
   date: '1992-04-12'
-  jurisdiction: ieab-dm
-  status: probable
+  place: Paróquia da Bênção Divina, São Francisco de Paula (RS)
+  jurisdiction: ieab
+  ordained_by: claudio-vinicius-de-senna-gastal
+  status: confirmed
   sources:
+  - source: lic-dm-bispo-maiztegui
+    quote: >-
+      Ao retornar à Diocese Meridional, assumiu a Paróquia da Bênção Divina, em São Francisco de Paula, RS, cidade
+      em que, no dia 12 de Abril de 1992, foi ordenado ao presbiterado por Dom Cláudio Vinícius de Senna Gastal.
   - source: costa2021
     quote: Ao retornar à Diocese Meridional, foi ordenado ao presbiterato, em 12 de abril de 1992.
     page: '113'
+  notes: >-
+    Ordenados na mesma cerimônia ao presbiterado: Taís Soares Feldens (sua futura esposa) e Aubri de Oliveira Ecotem;
+    ao diaconato: Anésia do Nascimento de Jesus.
 - order: episcopate
   date: '2012-12-09'
-  place: Catedral Nacional da Santissima Trindade, Porto Alegre
+  place: Catedral Nacional da Santíssima Trindade, Porto Alegre (RS)
   jurisdiction: ieab
   office: coadjutor
   status: confirmed
@@ -62,10 +93,18 @@ ordinations:
     quote: >-
       Em dezembro de 2012, foi sagrado o Revmo. Humberto Maiztegui Gonçalves, para bispo coadjutor na Diocese Meridional,
       com sé em Porto Alegre.
+  - source: lic-dm-bispo-maiztegui
+    quote: >-
+      Sua sagração ocorreu no dia 09 de dezembro de 2012, na Catedral Nacional da Santíssima Trindade de Porto Alegre.
+  - source: lic-dm-bispo-maiztegui
+    quote: >-
+      foi eleito Bispo Coadjutor da Diocese Meridional em segunda sessão do 120º Concílio Extraordinário, ocorrida
+      no dia 20 de outubro de 2012, na Paróquia da Ascensão, em Porto Alegre.
   notes: >-
     Eleito bispo coadjutor da Diocese Meridional em 20/10/2012 (120o Concilio); primeiro nativo do Uruguai bispo
-    na IEAB. Coadjutor. A tese NÃO nomeia sagrante principal nem co-sagrantes ('inúmeros bispos nacionais e de outros
-    países').
+    na IEAB. A fonte diocesana não nomeia o sagrante principal nem os co-sagrantes. Instituído bispo diocesano em
+    5 de maio de 2013, no encerramento do 121º Concílio Diocesano. Coadjutor. A tese NÃO nomeia sagrante principal
+    nem co-sagrantes ('inúmeros bispos nacionais e de outros países').
 affiliations:
 - jurisdiction: ieab
   role: coadjutor_bishop
@@ -106,6 +145,17 @@ affiliations:
     quote: Diocese Anglicana Meridional (Porto Alegre-RS) … 2013- – Humberto Eugenio Maiztegui Gonçalves
     page: '521'
   notes: Anexo D da tese (bispos por diocese).
+- jurisdiction: ieab
+  role: other
+  role_description: presidente_comissao_incidencia_publica
+  status: confirmed
+  sources:
+  - source: ieab-secretaria
+    quote: >-
+      Comissão de Incidência Pública, Direitos Humanos e Combate ao Racismo Bispo Humberto Maiztegui - Presidente
+  notes: >-
+    Presidente da Comissão de Incidência Pública, Direitos Humanos e Combate ao Racismo (2026); membro do Conselho
+    Executivo pela Diocese Meridional.
 events:
 - type: other
   date: '2012-10-20'

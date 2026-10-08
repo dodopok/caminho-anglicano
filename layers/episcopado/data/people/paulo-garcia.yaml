@@ -15,6 +15,24 @@ aliases:
 birth:
   date: '1939'
   sources:
+  - source: queiroz-2004-ufpe
+    quote: >-
+      Paulo Ruiz Garcia é natural de Presidente Prudente (SP), filho de Manoel Ruiz Garcia e Ana Lourenço Ruiz;
+      encontra-se com sessenta e quatro anos, casado com Márcia Gasparini Garcia
+  - source: queiroz-2004-ufpe
+    quote: >-
+      O referido pastor é Bacharel em Teologia, Direito e Filosofia. Foi Ordenado Ministro da Igreja Episcopal Anglicana
+      do Brasil em 1970.
+  - source: queiroz-2004-ufpe
+    quote: Realizou Curso de Extensão em Teologia na Suíça – Institut Chateau de Bossey – Céligny, em 1974.
+  - source: costa2021
+    quote: Nasceu em 1939, na cidade de Presidente Prudente, São Paulo. Casou-se com Márcia Garcia em 1971.
+  - source: costa2021
+    quote: >-
+      Tornou-se membro da Comissão de Ênfase Cristã da ACM (Associação Cristã dos Moços), no Rio de Janeiro, de
+      1970 a 1972.
+  - source: lpg-aosfatos-2023
+    quote: tenha ameaçado prender o arcebispo Paulo Garcia, da Igreja Episcopal Carismática do Brasil
   - source: costa2021
     quote: Nasceu em 1939, na cidade de Presidente Prudente, São Paulo.
     page: '172'
@@ -31,19 +49,26 @@ sources:
 ordinations:
 - order: diaconate
   date: '1970'
-  jurisdiction: null
+  jurisdiction: ieab
+  ordained_by: edmund-knox-sherrill
   status: probable
   sources:
+  - source: drv-resgatando-ii
+    quote: O Bispo Sherrill resolveu nele investir, ordenando-o Diácono e Presbítero
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1970 - … Paulo Ruiz Garcia
     page: '372'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ver ordenação ao presbiterato (mesma frase da fonte); data não informada. Ano tirado da lista do clero nacional
+    por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
   date: '1970'
   jurisdiction: ieab
-  status: contested
+  ordained_by: edmund-knox-sherrill
+  status: probable
   sources:
+  - source: drv-resgatando-ii
+    quote: O Bispo Sherrill resolveu nele investir, ordenando-o Diácono e Presbítero
   - source: queiroz-2004-ufpe
     quote: Foi Ordenado Ministro da Igreja Episcopal Anglicana do Brasil em 1970.
   - source: queiroz-2004-ufpe
@@ -61,12 +86,14 @@ ordinations:
         No último dia 28 de fevereiro de 2025, celebrou-se o Jubileu de Ouro do Pastor Paulo Garcia, líder e servo
         incansável da Igreja Episcopal Carismática. Ao longo de 50 anos de sacerdócio
   notes: >-
-    A fonte diz apenas "Ordenado Ministro" em 1970, sem especificar se diaconato ou presbiterato; registrado como
-    presbiterato por ser o início do "pastorado" contado a partir de 1970, mas pode tratar-se do diaconato. Ordenante
-    não informado. Formado no Seminário Teológico Anglicano de São Paulo. Data inferida do jubileu de 50 anos de
-    "sacerdócio" celebrado em 28/02/2025 (artigo de opinião); a fonte não dá a data da ordenação. Diverge do "Ordenado
-    Ministro ... em 1970" da dissertação de Queiroz (2004) — possivelmente 1970 = diaconato e c.1975 = presbiterato,
-    mas nenhuma fonte diz isso.
+    Segundo Dom Robinson Cavalcanti, Paulo Garcia foi ordenado diácono e presbítero pelo bispo Sherrill (datas não
+    informadas); depois foi designado a servir em São Paulo e Rio de Janeiro e enviado ao Instituto de Bossey e
+    à SAMS antes de ir ao Recife em março de 1975. A fonte diz apenas "Ordenado Ministro" em 1970, sem especificar
+    se diaconato ou presbiterato; registrado como presbiterato por ser o início do "pastorado" contado a partir
+    de 1970, mas pode tratar-se do diaconato. Ordenante não informado. Formado no Seminário Teológico Anglicano
+    de São Paulo. Data inferida do jubileu de 50 anos de "sacerdócio" celebrado em 28/02/2025 (artigo de opinião);
+    a fonte não dá a data da ordenação. Diverge do "Ordenado Ministro ... em 1970" da dissertação de Queiroz (2004)
+    — possivelmente 1970 = diaconato e c.1975 = presbiterato, mas nenhuma fonte diz isso.
 - order: episcopate
   date: '2003-09-08'
   place: Teatro Guararapes, Centro de Convenções – Olinda (PE)
@@ -150,6 +177,25 @@ affiliations:
       do Redentor (Tijuca); e na Paróquia Cristo Rei (Cidade de Deus, subúrbio carioca de Jacarepaguá), da qual
       também foi fundador. De volta a São Paulo, em 1973, auxiliou na Paróquia Episcopal da Trindade
   notes: 'Datas aproximadas: de 1970 (ordenação) até a ida a Recife em março de 1975.'
+- jurisdiction: ieab
+  role: clergy
+  start: '1970'
+  end: 1975-03
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em São Paulo, capital, foi auxiliar do pároco da Igreja da Santíssima Trindade (Santa Cecília), o reverendo
+      Saulo Marques da Silva.
+  - source: queiroz-2004-ufpe
+    quote: >-
+      De volta a São Paulo, em 1973, auxiliou na Paróquia Episcopal da Trindade e na Igreja Presbiteriana Betania.
+  notes: >-
+    Antes de ir ao Recife, foi auxiliar do pároco da Igreja da Santíssima Trindade (Santa Cecília, São Paulo), o
+    reverendo Saulo Marques da Silva (Costa, 2021, p. 173). Queiroz (2004) acrescenta que, em 1973, auxiliou também
+    a Igreja Presbiteriana Betânia. Costa observa que, "por conta de sua origem Reformada", Garcia chegou a atender
+    ao mesmo tempo a paróquia anglicana e uma congregação presbiteriana.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -238,6 +284,15 @@ affiliations:
       quote: >-
         A ruptura de Paulo Garcia com a Igreja Episcopal Anglicana do Brasil foi formalizada em outubro de 2002
       page: '54'
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  start: 1975-03
+  status: probable
+  sources:
+  - source: drv-resgatando-i
+    quote: Em março de 1975 é designado como Pároco o Rev. Paulo Ruiz Garcia, paulista de origem presbiteriana.
+  notes: 'Local: Recife, SS. Trindade. Designado pároco da Holy Trinity/SS. Trindade, Recife.'
 - jurisdiction: iecb
   role: bishop
   start: '2002'
@@ -250,6 +305,25 @@ affiliations:
     quote: primeiro bispo. Esta Igreja tem a sua sede na Catedral da Santíssima Trindade
     page: '135'
   notes: Fundador e primeiro bispo; chamado 'arcebispo brasileiro' em 2019. Data da sagração não informada.
+- jurisdiction: iecb
+  role: other
+  role_description: deão/fundador
+  start: 2002-09
+  end_reason: schism
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: rompe com a Diocese e se filia, em setembro de 2002, àquele grupo
+  - source: drv-resgatando-iv
+    quote: >-
+      Leva com ele as comunidades do Janga, Timbaúba e Vitória do Santo Antão-PE, e os reverendos: Frederico, Célio,
+      Adonias e Edgar.
+  notes: >-
+    Local: Catedral da SS. Trindade, Recife. O texto não nomeia o deão; a identificação com Paulo Garcia decorre
+    do contexto (deão e secretário de evangelismo, 'bunker' da Rua Carneiro Vilela) e do documento de 2008 que liga
+    a IECB a Paulo Garcia. Cisma 'trifonte' na descrição de Robinson: IECB (que não ordena mulheres), Igreja Episcopal
+    Evangélica (Leonides e Karla, Paróquia Betânia) e retorno do Rev. Múcio (Parnamirim) à Igreja Presbiteriana
+    do Brasil.
 - jurisdiction: iecb
   role: founder
   start: 2002-10
@@ -275,6 +349,27 @@ affiliations:
     page: '260'
   notes: >-
     Bispo desde 08/09/2003; reconhecido Arcebispo e Primaz da IECB em 2007; segue como Arcebispo em 2021.
+- jurisdiction: iccec
+  role: archbishop
+  start: '2003-09-08'
+  end: '2019-03-24'
+  end_reason: left
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      vinculou-se, depois, à Comunhão Internacional da Igreja Episcopal Carismática, e fundou, no Recife, a Igreja
+      Episcopal Carismática do Brasil (IECB).
+  - source: lpg-boletim-2013-01-06
+    quote: >-
+      Nosso Arcebispo, Dom Paulo Garcia, é convocado anualmente para participar, como integrante do Conselho do
+      Patriarca
+  - source: costa2021
+    quote: >-
+      a denominação brasileira havia se separado da Comunhão Internacional da Igreja Episcopal Carismática.
+  notes: >-
+    Bispo e arcebispo da IECB dentro da ICCEC entre a sagração (08/09/2003) e o comunicado de 24/03/2019. Em 2013,
+    boletim da catedral registra que era membro do Conselho do Patriarca da ICCEC.
 - jurisdiction: iecb
   role: primate
   start: '2007'
@@ -315,14 +410,27 @@ affiliations:
 - jurisdiction: ieab-dar
   role: other
   role_description: deao
-  end: '2002'
+  end: 2002-09
   end_reason: schism
-  status: probable
+  status: confirmed
   sources:
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      lamentamos sua opção por se desvincular da Diocese Anglicana do Recife, da IEAB, e, decorrentemente, da Comunhão
+      Anglicana
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      No dia 22 de setembro passado, foi redigida uma carta de desvinculação, assinada pelo revmo. deão e por meia
+      dúzia de pessoas
   - source: cant-novas-igrejas-2024
     quote: sendo pastoreada pelo seu deão, o então reverendo Paulo Garcia.
     page: '109'
-  notes: 'Local: Catedral da Trindade, Recife.'
+  notes: >-
+    Local: Diocese Anglicana do Recife, Catedral da Santíssima Trindade, Recife. Segundo a carta pastoral do Bispo
+    Diocesano Robinson Cavalcanti (1/10/2002), o então deão da Catedral da Santíssima Trindade, Rev. Paulo Ruiz
+    Garcia, desvinculou-se da Diocese e da IEAB; a carta de desvinculação foi redigida em 22/9/2002 e submetida
+    a uma assembleia dominical em 29/9/2002. O texto é a versão do bispo diocesano e critica o procedimento adotado.
+    Local: Catedral da Trindade, Recife.
 - jurisdiction: iecb
   role: archbishop
   status: probable
@@ -417,6 +525,307 @@ events:
       Primeiro aconteceu a saída do rev. Paulo Garcia, acompanhado dos reverendos Célio Spineli, Edgar Ferreira
       e Frederico Bastos, que ficaram na posse do templo da Catedral Episcopal Anglicana, na Rua Carneiro Vilela,
       e as missões Bem-Aventuranças e Pedra Viva.
+- type: other
+  date: '2002-09-25'
+  description: >-
+    Visita do Primaz da IEAB, Dom Glauco Soares de Lima, e do Secretário Geral da Província, Rev. Côn. Maurício
+    Andrade, ao Recife (25 a 27/9/2002) para tentar reverter a desvinculação do deão da Catedral da Santíssima Trindade.
+  status: confirmed
+  sources:
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      Dos dias 25 a 27 de setembro, o Revmo. Primaz Dom Glauco Soares de Lima e o Secretário Geral da Província
+      se deslocaram ao Recife
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      ao secretário geral da Província, Rev. Côn. Maurício Andrade, e ao Bispo Sufragâneo, Revmo. Filadelfo Oliveira
+      Neto, OSE
+- type: other
+  date: '2002-10-01'
+  description: >-
+    Segundo a carta pastoral de Robinson Cavalcanti, o então deão da Catedral da Santíssima Trindade havia sinalizado
+    a possibilidade de vinculação à "Igreja Episcopal Carismática"; a carta diz ainda que ele teria recebido a promessa
+    de ser designado bispo.
+  status: probable
+  sources:
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      veiculou esclarecimentos sobre a chamada “Igreja Episcopal Carismática”, para quem o ex-deão sinalizou a possibilidade
+      de vinculação
+- type: other
+  date: '1976'
+  description: >-
+    Quando foi criada, a Diocese Setentrional tinha três paróquias: Santa Maria (Belém-PA, Rev. Anselmo Stein),
+    SS. Trindade (Recife, Rev. Paulo Garcia) e Bom Pastor (Salvador-BA, Rev. Stuart Broghton).
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      A Diocese, em seu início, era composta por apenas três Paróquias: Santa Maria (Rev. Anselmo Stein), Belém-PA
+- type: other
+  date: '1985'
+  description: >-
+    Na eleição do sucessor de Sherrill pelo Sínodo Geral da IEAB, o candidato do bispo, Paulo Garcia, foi derrotado,
+    e foi eleito bispo coadjutor Clóvis Erly Rodrigues, então deão da Catedral de Santa Maria (RS); a sagração ocorreu
+    na Catedral de Porto Alegre.
+  status: probable
+  sources:
+  - source: drv-resgatando-ii
+    quote: >-
+      sendo eleito Bispo Coadjutor da nossa Diocese o então Deão da Catedral de Santa Maria-RS (e que não conhecia
+      o Nordeste nem como turista) o Revmo. Clóvis Erly Rodrigues
+  - source: drv-resgatando-ii
+    quote: para a cerimônia de Sagração na Catedral de Porto Alegre
+- type: other
+  date: 1999/2000
+  description: >-
+    Depois de uma 'Confraternização de Natal' em 1999, Paulo Garcia e Sebastião Gameleira teriam instigado clérigos
+    e ministros leigos contra o bispo diocesano; houve audiência presidida pelo bispo primaz, em que quase todo
+    o clero declarou solidariedade ao bispo. Segundo a fonte, nesse período era criada a Igreja Episcopal Carismática
+    do Brasil, para a qual saíram o Rev. Antônio Carlos (João Pessoa) e o ministro leigo Antônio Eça (Recife).
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      os reverendos: Paulo Garcia e Sebastião Gameleira instigaram clérigos e ministros leigos contra o Bispo Diocesano
+  - source: drv-resgatando-iv
+    quote: >-
+      enquanto (na surdina) era criada a Igreja Episcopal Carismática do Brasil, saindo para ela – no primeiro episódio
+      cismático – o Rev. Antônio Carlos, em João Pessoa-PB e o ML. Antônio Eça, no Recife-PE
+- type: other
+  date: '2002'
+  description: >-
+    Cisma de 2002 na Diocese do Recife, descrito como 'trifonte' por Dom Robinson: (1) o deão da Catedral e comunidades
+    do Janga, Timbaúba e Vitória de Santo Antão foram para a Igreja Episcopal Carismática; (2) os Revs. Leonides
+    e Karla, com a Paróquia Betânia, para a Igreja Episcopal Evangélica; (3) o Rev. Múcio, com a comunidade do Parnamirim,
+    de volta à Igreja Presbiteriana do Brasil.
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: 'os reverendos: Leonides e Karla, com a Paróquia Betânia, para a Igreja Episcopal Evangélica'
+  - source: drv-resgatando-iv
+    quote: >-
+      o Rev. Múcio, com a comunidade do Parnamirim, de volta – mais uma vez – para a Igreja Presbiteriana do Brasil
+      (IPB)
+- type: other
+  date: '2004-05-30'
+  description: >-
+    Célio Spinelli, em carta de 30/05/2004 a Paulo Garcia, comunica seu desligamento definitivo da Igreja Episcopal
+    Carismática do Brasil, listando clérigos que se afastaram de Garcia nos dez anos anteriores (entre eles Miguel
+    Uchoa, Robinson Cavalcanti, Sérgio Andrade, Teobaldo Barbosa, Aldenor Soares, Antônio Eça, Fred Lubambo, César
+    Romero, Getúlio Gutemberg e Pedro Silva) e menciona a sagração de Garcia 'em 8 de setembro'.
+  status: probable
+  sources:
+  - source: drv-spinelli-carta-2004
+    quote: >-
+      me levou a decisão de me DESLIGAR em caráter definitivo e irrevogável da Igreja Episcopal Carismática do Brasil.
+  - source: drv-spinelli-carta-2004
+    quote: >-
+      Particularmente após a sua sagração em 8 de setembro, quando você passou a ignorar todos os pastores da sua
+      diocese.
+- type: other
+  date: 1973/1974
+  description: >-
+    Curso de extensão em teologia no Instituto Ecumênico de Bossey (Céligny, Suíça): 1974 segundo Queiroz (2004),
+    1973 segundo Costa (2021).
+  status: contested
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: Realizou Curso de Extensão em Teologia na Suíça – Institut Chateau de Bossey – Céligny, em 1974.
+  - source: costa2021
+    quote: e em 1973 realizou curso de pós-graduação em Teologia no Institut Oecuménique de Bossey, na Suíça.
+- type: other
+  date: 1981/1982
+  description: >-
+    Residência de Paulo Garcia nos Estados Unidos (1981-1982), na St. Paul's Episcopal Church de Darien (Connecticut),
+    onde conheceu o Cursilho que depois implantou nas igrejas episcopais brasileiras, a começar pela Paróquia da
+    Trindade, no Recife.
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: >-
+      O Pr. Paulo Garcia residiu nos Estados Unidos em 1981 e 1982, na St. Paul’s Episcopal Church, na cidade de
+      Darien (CT).
+  - source: costa2021
+    quote: >-
+      foi importada por Garcia após uma viagem aos Estados Unidos, em 1981, quando entrou em contato com a St. Paul’s
+      Episcopal Church, em Darien, Connecticut
+- type: other
+  date: '2002-07-28'
+  description: >-
+    Em 28/07/2002, o Diário de Pernambuco publicou a matéria "Liberal vai dirigir a Igreja Anglicana" (sobre a escolha
+    de Rowan Williams como arcebispo de Cantuária); no mesmo dia, em culto, o deão Paulo Garcia declarou-se contrário
+    ao que chamou de comportamentos antibíblicos, como a ordenação de sacerdotes homossexuais. A dissertação de
+    Queiroz data dessa matéria o início do clima de desconforto com o bispo Robinson Cavalcanti.
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: >-
+      uma matéria publicada no Diário de Pernambuco em 28 de julho de 2002 (domingo), cuja manchete era “Liberal
+      vai dirigir a Igreja Anglicana”
+  - source: queiroz-2004-ufpe
+    quote: neste mesmo dia o Pr. Paulo declarou em culto que não era a favor de tal postura do clero anglicano
+- type: other
+  date: '2002'
+  description: >-
+    Motivos da ruptura de Paulo Garcia com a IEAB (2002), em duas versões. Segundo o ACNS e Queiroz, a comunidade
+    alegou divergências com o bispo sobre divórcio, casais sem casamento civil e a postura de setores da Comunhão
+    Anglicana quanto à homossexualidade. Segundo lideranças anglicanas citadas por Queiroz e Costa, os argumentos
+    doutrinários foram pretexto: pesariam o convite para ingressar na Igreja Episcopal Carismática, a proximidade
+    da aposentadoria e a dificuldade em seguir as regras da Igreja.
+  status: contested
+  sources:
+  - source: lpg-acns-2002
+    quote: >-
+      the cathedral took the decision based on disagreements with the bishop on issues such as divorce and non-legally
+      married couples in the Church
+  - source: queiroz-2004-ufpe
+    quote: >-
+      Os argumentos doutrinários para o cisma da comunidade da Santíssima Trindade, segundo lideranças da Igreja
+      Anglicana, foram apenas pretextos.
+  - source: costa2021
+    quote: >-
+      as dificuldades que tinha em seguir as regras da religião – pois ele não se submetia à autoridade hierárquica
+      de Robinson; e a sua proximidade para se aposentar
+- type: other
+  date: 2002-10
+  description: >-
+    Entrevista do deão Garcia à Revista Eclésia (25/10/2002), na qual falou da relação tensa com o bispo Robinson
+    Cavalcanti e dos motivos do rompimento; em 27/10/2002, o Diário de Pernambuco noticiou "Catedral é disputada
+    na Justiça": a comunidade de Garcia alegava direito ao templo porque, desde 1999, a igreja deixara de ser nomeada
+    Holy Trinity Church e passara a Igreja da Santíssima Trindade, e porque as reformas teriam sido custeadas por
+    membros.
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: >-
+      Numa entrevista realizada pela Revista Eclésia, em 25 de outubro de 2002, o Deão Garcia mencionou a sua relação
+      tensa com o bispo Dom Robinson
+  - source: queiroz-2004-ufpe
+    quote: >-
+      O grupo dos carismáticos diz que tem direito à posse do templo, pois, desde 1999, a igreja deixou de ser nomeada
+      Holy Trinity Church
+  - source: queiroz-2004-ufpe
+    quote: Diário de Pernambuco – Recife, domingo, 27 de outubro de 2002.
+- type: other
+  date: '2002-10-22'
+  description: >-
+    O Anglican Communion News Service (22/10/2002) noticiou que o deão e a congregação da Catedral da Santíssima
+    Trindade (Holy Trinity Cathedral) do Recife cortaram a relação com a diocese e que, segundo a imprensa local,
+    Garcia e a catedral se uniriam à Charismatic Episcopal Church, da qual ele seria bispo. A Câmara dos Bispos
+    da IEAB lamentou os "incidentes".
+  status: confirmed
+  sources:
+  - source: lpg-acns-2002
+    quote: >-
+      The dean and congregation of Holy Trinity Cathedral in the diocese of Recife (Anglican Episcopal Church of
+      Brazil) has cut its relationship with the diocese
+  - source: lpg-acns-2002
+    quote: >-
+      It has been reported that Fr Paulo Garcia and the cathedral will join the Charismatic Episcopal Church
+  - source: lpg-acns-2002
+    quote: >-
+      The Dean, Paulo Garcia, has been working with this congregation for over 33 years and at present he claims
+      to have 3,000 members.
+  - source: lpg-anglicanjournal-2002
+    quote: The cathedral will join a charismatic independent group of churches.
+- type: other
+  date: '2002-11-14'
+  description: >-
+    Carta de Dom Robinson Cavalcanti à comunidade diocesana, datada de 14/11/2002, sobre o momento doloroso vivido
+    pela diocese após a saída da Catedral da Santíssima Trindade.
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: Vejamos uma carta de Dom Robinson à comunidade, datada em 14 de novembro de 2002
+- type: other
+  date: '2003'
+  description: >-
+    Em março de 2003 foi inaugurado o grupo SEARA (serviço social) ligado à comunidade de Garcia; pouco mais de
+    quatro meses depois, no seu lugar havia uma placa "Igreja Episcopal Carismática do Brasil – Centro Diocesano
+    Austin Randolph Adler", registro que Queiroz cita como indício do vínculo com o patriarca da ICCEC antes da
+    sagração de setembro de 2003.
+  status: probable
+  sources:
+  - source: queiroz-2004-ufpe
+    quote: Igreja Episcopal Carismática do Brasil – Centro Diocesano Austin Randolph Adler
+- type: other
+  date: 2013-01
+  description: >-
+    Paulo Garcia integrava o Conselho do Patriarca da ICCEC: o boletim da Catedral da Trindade de 06/01/2013 informa
+    que era convocado anualmente para as reuniões restritas do grupo, e o de 27/01/2013 que, convocado por Dom Craig
+    Bates, viajou a Orlando (Flórida) para reunir-se com os demais membros do Conselho.
+  status: confirmed
+  sources:
+  - source: lpg-boletim-2013-01-06
+    quote: >-
+      Nosso Arcebispo, Dom Paulo Garcia, é convocado anualmente para participar, como integrante do Conselho do
+      Patriarca, de reuniões restritas aos membros do grupo.
+  - source: lpg-boletim-2013-01-27
+    quote: >-
+      Convocado que foi por Dom Craig Bates, Dom Paulo Garcia viajou para os Estados Unidos. A partir desta 2ª feira
+      ele se reúne com outros membros do Conselho do Patriarca na cidade de Orlando, Florida
+- type: other
+  date: 2012-07
+  description: >-
+    Em julho de 2012, Paulo Garcia e Márcia Garcia viajaram a Madri para o Encontro Internacional da Igreja Episcopal
+    Carismática (quadrienal), acompanhados dos bispos Alexandre Ximenes, André Novaes e Raniere Ribeiro.
+  status: confirmed
+  sources:
+  - source: lpg-boletim-2012-07-08
+    quote: >-
+      Madri onde irão participar do Encontro Internacional da Igreja Episcopal Carismática que acontece a cada quadriênio
+      num continente diferente
+- type: other
+  date: '2019-03-24'
+  description: >-
+    Separação da IECB em relação à ICCEC (24/03/2019). Segundo Costa (2021), em agosto de 2018 o patriarca Craig
+    Bates reuniu-se no Recife com o clero e as lideranças da IECB, incluindo Garcia e o bispo Alexandre Ximenes,
+    para tratar da padronização do culto e da aposentadoria compulsória de Garcia, que pelos cânones da ICCEC deveria
+    ocorrer aos 80 anos (2019); Garcia teria resistido, culminando no rompimento. O comunicado de 24/03/2019, assinado
+    pelo bispo André Novaes, informou que os bispos da IECB entenderam ter Deus estabelecido "uma nova orientação
+    para a Igreja Brasileira", com cânones próprios, mantendo relação fraterna com a ICCEC. A separação foi mantida
+    em discrição e revelada após o Encontro Nacional do Clero.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Segundo os cânones da instituição, o arcebispo ao completar 80 anos deveria se aposentar, o que ocorreria
+      no ano seguinte.
+  - source: costa2021
+    quote: Esse novo tempo implicará na elaboração de nossos próprios Cânones
+  - source: costa2021
+    quote: >-
+      Por conta de problemas com a sucessão da liderança de Paulo Garcia, em 2019 o arcebispo brasileiro rompeu
+      com o Patriarca Bates
+- type: other
+  date: '2021'
+  description: >-
+    No final de 2021, Paulo Garcia e o bispo Alexandre Ximenes, os dois bispos mais antigos da IECB, passaram a
+    delegar funções com a instituição dos primeiros deões das catedrais da Trindade e da Reconciliação (a partir
+    de 2022, os reverendos Sirlan Pedrosa e Ivan Rocha, respectivamente); Costa observa as dificuldades da igreja
+    em construir a sucessão da liderança.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      no final de 2021, passaram a delegar funções, com a instituição dos primeiros deões para as catedrais da Trindade
+      e Reconciliação
+  - source: costa2021
+    quote: A Igreja Episcopal Carismática, apesar das dificuldades para construir a sucessão da sua liderança
+- type: other
+  date: '2007-05-11'
+  description: >-
+    Inauguração da Paróquia Monte Moriá (Aldeia, Camaragibe), da IECB, com a presença do arcebispo Paulo Garcia;
+    o grupo familiar que lhe deu origem, do casal Alexsandro Benjamim e Ana Janaina Tavares, iniciou-se em 16/11/2006.
+  status: confirmed
+  sources:
+  - source: lie-monte-moria-blog
+    quote: >-
+      No dia 11 de maio de 2007, com a presença do Arcebispo Dom Paulo Garcia e sua esposa tivemos a inauguração
+      da Paróquia.
+  - source: lie-monte-moria-blog
+    quote: Fundada em 11 de maio de 2007, a paróquia Monte Moriá é fruto de um sonho...
 - type: other
   date: '1984-11-24'
   description: Candidato na eleição episcopal da Diocese Central (Rio de Janeiro) vencida por Sydney Alcoba Ruiz

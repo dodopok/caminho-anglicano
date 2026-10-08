@@ -5,6 +5,7 @@ name: >-
   Distrito Missionário do Sul do Brasil (Missionary District of Southern Brazil) — antes 'missão' e 'Bishop for
   Brazil'
 aliases:
+- Distrito Missionário do Sul do Brasil
 - Distrito Missionário do Sul do Brasil (Missionary District of Southern Brazil)
 type: diocese
 country: BR
@@ -19,6 +20,12 @@ founded:
     quote: >-
       The state of Rio Grande do Sul was cut into two parts; the eastern, which retained the old name "Southern
       Brazil"
+  - source: liv-stokes-kinsolving
+    quote: In 1907 the General Convention established the Missionary District of Brazil
+    page: '16'
+  - source: liv-stokes-kinsolving
+    quote: the reorganization of the Brazil Mission in 1949 into three separate dio- ceses
+    page: '21'
   - source: costa2021
     quote: a Convenção Geral da Igreja dos Estados Unidos elevou o país ao status de um Distrito Missionário.
     page: '58'
@@ -45,6 +52,8 @@ relations:
   target: tec
   date: '1899'
   end: '1965'
+  led_by:
+  - lucien-lee-kinsolving
   status: contested
   sources:
   - source: ens-xxvi-24
@@ -53,14 +62,26 @@ relations:
       was elected Bishop of the District by the House of Bishops and Anglican work in Brazil, with the exception
       of a few Church of England chaplaincies, came formally under the direction of the Episcopal Church in the
       United States.
+  - source: liv-stokes-kinsolving
+    quote: >-
+      the Brazilian Episcopal Church became officially related to the Prot- estant Episcopal Church in the United
+      States of Amer- ica as a missionary district
+    page: '16'
   - source: costa2021
     quote: a Convenção Geral da Igreja dos Estados Unidos elevou o país ao status de um Distrito Missionário.
     page: '58'
-  notes: Distrito missionário formal desde 1907 (Wikipédia EN/PT).
+  notes: >-
+    Distrito missionário formal desde 1907 (Wikipédia EN/PT). Relação como distrito missionário da Igreja Episcopal
+    dos EUA a partir de 1907.
   discrepancies:
   - field: date
     value: '1907'
     sources:
+    - source: liv-stokes-kinsolving
+      quote: >-
+        the Brazilian Episcopal Church became officially related to the Prot- estant Episcopal Church in the United
+        States of Amer- ica as a missionary district
+      page: '16'
     - source: costa2021
       quote: a Convenção Geral da Igreja dos Estados Unidos elevou o país ao status de um Distrito Missionário.
       page: '58'

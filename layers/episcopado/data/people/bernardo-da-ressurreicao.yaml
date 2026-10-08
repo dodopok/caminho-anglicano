@@ -1,13 +1,79 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: bernardo-da-ressurreicao
 name: Bernardo da Ressurreição
-biography: Bispo da Santa Igreja Celta do Brasil; auxiliou na sagração de Dionísio Aílton Pereira (2021).
+aliases:
+- Dom Bernardo
+- Dom Bernardo da Ressureição
+- Dom Bernardo da Ressurreição, O.S.C.
+biography: >-
+  Arcebispo primaz da Santa Igreja Celta do Brasil (SICB) até abril de 2025, hoje primaz emérito; residente em Feira
+  de Santana (BA). Segundo o site da SICB, foi monge cisterciense na década de 1990, tem mestrado em História pela
+  UFBA e foi sagrado bispo por Eduardo Quintella, em Belo Horizonte. A SICB diz que ele trouxe a Igreja Celta ao
+  Brasil.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lvc-sicb-emerito
   quote: >-
-    sendo auxiliado por dom Bernardo da Ressurreição e dom Rafael de Emaús, bispos da Santa Igreja Celta do Brasil
-  page: '103'
+    Dom Bernardo da Ressurreição, OSC, reside na cidade de Feira de Santana, Estado da Bahia, onde encontra-se o
+    Hesicastério Primazial do Brasil
+- source: lvc-sicb-emerito
+  quote: foi monge da Ordem Cisterciense na década de 90
+- source: lvc-sicb-emerito
+  quote: Mestrado em História pela Universidade Federal da Bahia
+- source: lvc-sicb-sucessao
+  quote: Dom Bernardo foi quem trouxe a Santa Igreja Celta para o Brasil.
+ordinations:
+- order: episcopate
+  date: null
+  place: Belo Horizonte (MG)
+  jurisdiction: null
+  principal_consecrator: eduardo-rocha-quintella
+  status: probable
+  sources:
+  - source: lvc-sicb-emerito
+    quote: Dom Bernardo foi Sagrado Bispo através de Dom Eduardo Quintella, em Belo Horizonte-MG.
+  - source: lvc-sicb-sucessao
+    quote: Dom Bernardo recebeu a Sucessão Apostólica através de Dom Eduardo Quintella, em Belo Horizonte.
+  notes: >-
+    Data, co-sagrantes e jurisdição de origem não são informados pela SICB. A SICB diz ainda que Quintella foi sagrado
+    por Emmanuel Milingo, que teria sido sagrado por Paulo VI em 1969. Como Quintella diz ter sido sagrado em 10/09/2011,
+    a sagração de Bernardo é posterior a essa data. A SICB afirma que Bernardo foi antes bispo, por dois anos, de
+    uma 'Igreja Celta com sede na Europa' (sem nome na página).
 affiliations:
+- jurisdiction: sicb
+  role: other
+  role_description: primaz_emerito
+  start: '2025-04-27'
+  status: probable
+  sources:
+  - source: lvc-sicb-emerito
+    quote: Arcebispo Primaz Emérito da Santa Igreja Celta do Brasil - SICB
+- jurisdiction: sicb
+  role: primate
+  end: '2025-04-27'
+  end_reason: resignation
+  status: probable
+  sources:
+  - source: lvc-sicb-n-retratacao
+    quote: Igreja da qual sou Arcebispo Primaz (SANTA IGREJA CELTA DO BRASIL)
+  - source: lvc-sicb-n-primaz
+    quote: >-
+      A Santa Igreja Celta do Brasil tem seu Novo Arcebispo Primaz, eleito por aclamação pelo Santo Sínodo Mundial
+      na data de 27 de abril de 2025.
+  notes: >-
+    Arcebispo Primaz em outubro de 2021 (texto assinado por ele) e primaz emérito após a eleição de Rafael de Emaús
+    em 27/04/2025. A SICB não diz se houve renúncia; o motivo do fim da primazia não é informado.
+- jurisdiction: sicb
+  role: founder
+  status: probable
+  sources:
+  - source: lvc-sicb-sucessao
+    quote: Dom Bernardo foi quem trouxe a Santa Igreja Celta para o Brasil.
+  - source: lvc-sicb-faq
+    quote: >-
+      o que resultou na saída dele e de vários seminaristas e padres, que o acompanharam e fundaram a Igreja Celta
+      do Brasil
+  notes: >-
+    A SICB não data a fundação; o CNPJ da entidade (Feira de Santana, BA) tem início de atividade em 09/12/2015.
 - jurisdiction: sicb
   role: bishop
   status: probable
@@ -15,3 +81,18 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: dom Bernardo da Ressurreição e dom Rafael de Emaús, bispos da Santa Igreja Celta do Brasil
     page: '103'
+events:
+- type: other
+  date: null
+  description: >-
+    A SICB relata que Bernardo da Ressurreição foi, por dois anos, bispo de uma 'Igreja Celta com sede na Europa'
+    e saiu dela, com seminaristas e padres, por divergir da formação dos seminaristas e da multiplicidade de ritos;
+    esse grupo fundou a Igreja Celta do Brasil. A página não nomeia a igreja de origem.
+  status: probable
+  sources:
+  - source: lvc-sicb-faq
+    quote: Dom Bernardo da Ressureição foi Bispo de uma Igreja Celta com sede na Europa por dois anos
+  - source: lvc-sicb-faq
+    quote: >-
+      Por não concordar com os rumos desta instituição, especialmente na formação dos seminaristas e na multiplicidade
+      de ritos

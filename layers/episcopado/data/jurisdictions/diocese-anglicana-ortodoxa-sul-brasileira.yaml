@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-ortodoxa-sul-brasileira
+name: Diocese Anglicana Ortodoxa Sul Brasileira
+type: diocese
+relations:
+- type: part_of
+  target: iaob-2013
+  status: confirmed
+  sources:
+  - source: lvc-iaob-blog-2014
+    quote: >-
+      Diocese Anglicana Ortodoxa Sul Brasileira sob a direção do Revmo Dom Dirceu Falcão Ibaldo  (Bispo Primaz Emérito)
+  - source: lvc-iaob-sobre
+    quote: Dom Dirceu Falcão Ibaldo - Bispo Primaz Emérito Sul do Brasil em Santa Maria – RS

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: j-orton
+name: J. Orton
+biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+sources:
+- source: drv-kinsolving-ivo
+  quote: Ordenado em 1921, funda em Santos a primeira congregação episcopaliana
+affiliations:
+- jurisdiction: dmsb
+  role: other
+  role_description: presbítero
+  start: '1921'
+  status: probable
+  sources:
+  - source: drv-kinsolving-ivo
+    quote: Ordenado em 1921, funda em Santos a primeira congregação episcopaliana
+  notes: >-
+    Local: Santos, SP. Ex-ministro presbiteriano de avós anglicanos, citado como 'Rev. J. Orton'; funda a Igreja
+    de São Marcos, Santos.

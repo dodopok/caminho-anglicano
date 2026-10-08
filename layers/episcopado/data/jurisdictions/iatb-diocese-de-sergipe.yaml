@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iatb-diocese-de-sergipe
+name: Diocese de Sergipe (IATB)
+aliases:
+- Diocese de Sergipe (Aracaju)
+type: diocese
+country: BR
+relations:
+- type: part_of
+  target: iatb
+  status: confirmed
+  sources:
+  - source: lia-iatb-salvador-2015
+    quote: >-
+      Dom Washington Luis, Dom José Aparecido e Dom Ricardo Vicente dos Anjos, respectivamente bispos das Dioceses
+      do Sudeste, do Centro-Oeste, do Sergipe, do Sul e do Pará
+  - source: lia-iatb-clerigos-2019
+    quote: Dom Washington Luis Diocese de Sergipe

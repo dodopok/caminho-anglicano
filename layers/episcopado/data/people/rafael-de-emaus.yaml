@@ -1,13 +1,98 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: rafael-de-emaus
 name: Rafael de Emaús
-biography: Bispo da Santa Igreja Celta do Brasil; auxiliou na sagração de Dionísio Aílton Pereira (2021).
+full_name: Carlos Frederico Fiorino Carneiro
+aliases:
+- Carlos Frederico Fiorino Carneiro
+- Dom Raphael de Emaús
+- Dom Raphael de Emaús, O.S.C.
+- Raphael de Emaús
+birth:
+  date: '1966-02-05'
+  sources:
+  - source: lvc-sicb-primaz
+    quote: 'Nome civil: Carlos Frederico Fiorino Carneiro'
+  - source: lvc-sicb-primaz
+    quote: 'Nascimento: 05/02/1966'
+  - source: lvc-sicb-primaz
+    quote: Foi Eleito Arcebispo Primaz da Santa Igreja Celta do Brasil no dia 27 de abril de 2025.
+  - source: lvc-sicb-n-seminario-2021
+    quote: Dom Raphael de Emaús, Arcebispo da Região Sul
+biography: >-
+  Arcebispo primaz da Santa Igreja Celta do Brasil desde 27 de abril de 2025 (eleito por aclamação pelo Santo Sínodo
+  Mundial). Nome civil Carlos Frederico Fiorino Carneiro, juiz do trabalho em Santa Catarina. Antes da eleição era
+  arcebispo da Região Sul da SICB.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: >-
-    sendo auxiliado por dom Bernardo da Ressurreição e dom Rafael de Emaús, bispos da Santa Igreja Celta do Brasil
-  page: '103'
+- source: lvc-sicb-primaz
+  quote: 'Nome civil: Carlos Frederico Fiorino Carneiro'
+- source: lvc-sicb-primaz
+  quote: 'Nascimento: 05/02/1966'
+- source: lvc-sicb-primaz
+  quote: Foi Eleito Arcebispo Primaz da Santa Igreja Celta do Brasil no dia 27 de abril de 2025.
+- source: lvc-sicb-n-seminario-2021
+  quote: Dom Raphael de Emaús, Arcebispo da Região Sul
+ordinations:
+- order: diaconate
+  date: '2018-01-20'
+  jurisdiction: sicb
+  status: probable
+  sources:
+  - source: lvc-sicb-primaz
+    quote: >-
+      Na Santa Igreja Celta do Brasil foi ordenado ao Diaconato em 20 de janeiro de 2018, ao sacerdócio em 21 de
+      abril de 2018 e consagrado ao Episcopado em 12 de janeiro de 2019.
+  notes: Ordenante não informado.
+- order: presbyterate
+  date: '2018-04-21'
+  jurisdiction: sicb
+  status: probable
+  sources:
+  - source: lvc-sicb-primaz
+    quote: >-
+      Na Santa Igreja Celta do Brasil foi ordenado ao Diaconato em 20 de janeiro de 2018, ao sacerdócio em 21 de
+      abril de 2018 e consagrado ao Episcopado em 12 de janeiro de 2019.
+  notes: Ordenante não informado.
+- order: episcopate
+  date: '2019-01-12'
+  jurisdiction: sicb
+  status: contested
+  sources:
+  - source: lvc-sicb-primaz
+    quote: >-
+      Na Santa Igreja Celta do Brasil foi ordenado ao Diaconato em 20 de janeiro de 2018, ao sacerdócio em 21 de
+      abril de 2018 e consagrado ao Episcopado em 12 de janeiro de 2019.
+  - source: lvc-sicb-n-primaz
+    quote: Dom Raphael de Emaús tornou-se Bispo Apostólico da S.I.C.B. no dia 13 de maio de 2018.
+  discrepancies:
+  - field: date
+    value: '2018-05-13'
+    sources:
+    - source: lvc-sicb-n-primaz
+      quote: Dom Raphael de Emaús tornou-se Bispo Apostólico da S.I.C.B. no dia 13 de maio de 2018.
+  notes: >-
+    A própria SICB dá duas datas: esta (página biográfica do primaz) e 13/05/2018 (notícia de 27/04/2025). Sagrante
+    e co-sagrantes não informados. Em março de 2021 ele já é chamado 'Arcebispo da Região Sul'. Versão da notícia
+    'Novo Arcebispo Primaz' (27/04/2025). Difere da data 12/01/2019 da página biográfica; ver dúvidas.
 affiliations:
+- jurisdiction: sicb
+  role: primate
+  start: '2025-04-27'
+  status: confirmed
+  sources:
+  - source: lvc-sicb-n-sinodo
+    quote: >-
+      Na ocasião, foi Eleito o nosso novo Arcebispo Primaz, Dom Raphael de Emaús, O.S.C. que atuará na Direção Espiritual
+      e Administrativa de nossa Santa Igreja.
+  - source: lvc-sicb-n-primaz
+    quote: eleito por aclamação pelo Santo Sínodo Mundial na data de 27 de abril de 2025
+- jurisdiction: sicb
+  role: archbishop
+  end: '2025-04-27'
+  status: probable
+  sources:
+  - source: lvc-sicb-n-seminario-2021
+    quote: Dom Raphael de Emaús, Arcebispo da Região Sul
+  notes: 'Local: Região Sul. Citado como arcebispo da Região Sul em 06/03/2021.'
 - jurisdiction: sicb
   role: bishop
   status: probable
@@ -15,3 +100,13 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: dom Bernardo da Ressurreição e dom Rafael de Emaús, bispos da Santa Igreja Celta do Brasil
     page: '103'
+events:
+- type: other
+  date: '2025-04-27'
+  description: >-
+    Eleição de Rafael de Emaús como arcebispo primaz da SICB, por aclamação, na I Reunião do Santo Sínodo Mundial;
+    na mesma reunião, Basílio da Santa Cruz foi nomeado Grande Secretário Nacional e Arcebispo Adjunto para o Brasil.
+  status: confirmed
+  sources:
+  - source: lvc-sicb-n-sinodo
+    quote: Neste domingo, dia 27/04/2025, às 17:30, ocorreu a I Reunião do Santo Sínodo Mundial da S.I.C.B.

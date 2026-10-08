@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: eduardo-rocha-quintella
+name: Eduardo Rocha Quintella
+full_name: Eduardo Rocha Quintella
+aliases:
+- Dom Eduardo Quintella
+- Dom Quintella
+- Eduardo Quintella
+birth:
+  date: '1945-11-03'
+  sources:
+  - source: lvc-quintella-bio
+    quote: Nascido em 03 de Novembro de 1945.
+  - source: lvc-quintella-2016-04
+    quote: >-
+      Dom Eduardo Rocha Quintella (Nascido em 03 de Novembro de 1945) Foi Sagrado Bispo em 10 de Setembro de 2011,
+      por Sua Exc. Rev. Dom Emmanuel Millingo em Belém-PA.
+  - source: lvc-sicb-sucessao
+    quote: Dom Bernardo recebeu a Sucessão Apostólica através de Dom Eduardo Quintella, em Belo Horizonte.
+biography: >-
+  Bispo católico independente, apresentado em seu blog como bispo diocesano de Belo Horizonte (MG) da Igreja Católica
+  Apostólica Missionária (patriarca: Emmanuel Milingo). Diz ter sido sagrado por Milingo em 10/09/2011, em Belém
+  (PA). Pelo site da SICB, transmitiu a sucessão apostólica a Bernardo da Ressurreição; pelo seu blog, sagrou Ronaldo
+  Melo em 05/04/2016.
+sources:
+- source: lvc-quintella-bio
+  quote: Nascido em 03 de Novembro de 1945.
+- source: lvc-quintella-2016-04
+  quote: >-
+    Dom Eduardo Rocha Quintella (Nascido em 03 de Novembro de 1945) Foi Sagrado Bispo em 10 de Setembro de 2011,
+    por Sua Exc. Rev. Dom Emmanuel Millingo em Belém-PA.
+- source: lvc-sicb-sucessao
+  quote: Dom Bernardo recebeu a Sucessão Apostólica através de Dom Eduardo Quintella, em Belo Horizonte.
+ordinations:
+- order: episcopate
+  date: '2011-09-10'
+  place: Belém (PA)
+  jurisdiction: icam
+  office: diocesan
+  principal_consecrator: emmanuel-milingo
+  status: probable
+  sources:
+  - source: lvc-quintella-2016-04
+    quote: >-
+      Dom Eduardo Rocha Quintella (Nascido em 03 de Novembro de 1945) Foi Sagrado Bispo em 10 de Setembro de 2011,
+      por Sua Exc. Rev. Dom Emmanuel Millingo em Belém-PA.
+  - source: lvc-sicb-sucessao
+    quote: Dom Eduardo Quintella havia recebido a Sucessão Apostólica pelas mãos de Dom Emmanuel Milingo
+  notes: >-
+    Data e local vêm do próprio blog de Quintella; a SICB confirma apenas a linhagem (Milingo), sem data.
+affiliations:
+- jurisdiction: icam
+  role: diocesan_bishop
+  status: probable
+  sources:
+  - source: lvc-quintella-bio
+    quote: Atualmente +Dom Eduardo Rocha Quintella é Bispo Diocese de Belo Horizonte - Minas Gerais.
+  - source: lvc-quintella-2016-04
+    quote: Dom Emanuel Milingo – 1969 (Patriarca da Igreja Católica Apostólica Missionária).
+  notes: 'Local: Belo Horizonte, MG.'

@@ -4,15 +4,24 @@ name: Noilves Rosa da Silva
 full_name: Noilves Rosa da Silva
 ordinations:
 - order: diaconate
-  date: '1995'
+  date: '1995-02-12'
   jurisdiction: ieab
-  status: probable
+  status: confirmed
   sources:
+  - source: lic-livro35
+    quote: 'Diaconato: 12 de fevereiro de 1995. Presbiterado: 2 de fevereiro de 1997.'
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1995 - … Noilves Rosa da Silva
     page: '374'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1997-02-02'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: lic-livro35
+    quote: 'Presbiterado: 2 de fevereiro de 1997.'
 affiliations:
 - jurisdiction: ieab
   role: clergy

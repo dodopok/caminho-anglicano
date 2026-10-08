@@ -1,13 +1,30 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: ivcmb
 acronym: IVCMB
-name: Igreja Vétero-Católica Missionária do Brasil
-type: national_church
+name: Igreja Veterocatólica Missionária (IVCM; também 'Igreja Católica Apostólica do Espírito Santo')
+aliases:
+- Igreja Vétero-Católica Missionária do Brasil
+type: other
 country: BR
-description: Igreja vétero-católica na qual ingressou José Fernando de Faria.
+founded:
+  date: '2021-04-13'
+  sources:
+  - source: lvc-ivcm-quem-somos
+    quote: Somos a Igreja Veterocatólica Missionária - CNPJ 41.983.570/0001-26, organizada em 13 de abril 2021
+  - source: lvc-ivcm-quem-somos
+    quote: sob a jurisdição dos bispos da Igreja Católica Antiga da Europa Utrecht
+  - source: lvc-ivcm-cnpj
+    quote: '"nome_fantasia":"IGREJA CATOLICA APOSTOLICA DO ESPIRITO SANTO"'
+website: https://ivcm-es.com/
+description: >-
+  Igreja veterocatólica registrada em Vila Velha (ES) em 13/04/2021 (CNPJ 41.983.570/0001-26) pelo patriarca José
+  Fernando de Faria. Declara jurisdição dos bispos da 'Antiga Igreja Católica da Europa (Utrecht)' e sucessão apostólica
+  vinda do patriarca André Barbeau, da Igreja Católica Carismática do Canadá; não é membro da União de Utrecht.
+  Seu nome oficial é IVCM, não 'do Brasil'.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: >-
-    este último, anos depois, deixou o Anglicanismo independente e ingressou na Igreja Vétero-Católica Missionária
-    do Brasil
-  page: '161'
+- source: lvc-ivcm-quem-somos
+  quote: Somos a Igreja Veterocatólica Missionária - CNPJ 41.983.570/0001-26, organizada em 13 de abril 2021
+- source: lvc-ivcm-quem-somos
+  quote: sob a jurisdição dos bispos da Igreja Católica Antiga da Europa Utrecht
+- source: lvc-ivcm-cnpj
+  quote: '"nome_fantasia":"IGREJA CATOLICA APOSTOLICA DO ESPIRITO SANTO"'

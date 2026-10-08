@@ -7,6 +7,17 @@ country: BR
 founded:
   date: '1873'
   sources:
+  - source: lq-cat-historia
+    quote: >-
+      Somente em 1873 quando Vitória era Rainha do Reino Unido e Irlanda e Sua Graça Archibald Campbell Tait era
+      arcebispo da Cantuária, era construído e consagrado como Saint Paul’s Anglican Church, o primeiro Templo Anglicano
+      em São Paulo
+  - source: lq-cat-historia
+    quote: Hoje a Catedral Anglicana de São Paulo é a cátedra da Diocese Anglicana no Brasil
+  - source: lq-cat-carta-aberta
+    quote: >-
+      Em 1975 a Saint Paul’s Anglican Church (atual Catedral Anglicana de São Paulo) se filia ESPIRITUALMENTE à
+      igreja nacional
   - source: cant-novas-igrejas-2024
     quote: >-
       A Catedral Anglicana de São Paulo é uma Igreja Anglicana no coração da capital paulista, liderada pelo reverendo
@@ -20,24 +31,24 @@ founded:
       Em 1972, a Saint Paul’s se filiou à Igreja Episcopal do Brasil, sendo elevada ao status de Catedral da Diocese
       Anglicana de São Paulo em 1995.
     page: '92'
+website: https://www.catedral-anglicana.org.br/
 description: >-
-  Comunidade anglicana independente no centro de São Paulo (origem na Saint Paul's Church, 1873), liderada pelo
-  Rev. Aldo Quintão; filiou-se à Igreja Episcopal do Brasil em 1972, foi catedral da Diocese Anglicana de São Paulo
-  (IEAB) a partir de 1995 e desligou-se da IEAB em 06/04/2013.
+  Comunidade anglicana de São Paulo registrada em 1873 como Saint Paul's Anglican Church; em 1963-1967 mudou-se
+  para o atual endereço (Alto da Boa Vista). Segundo sua Junta Paroquial, filiou-se 'espiritualmente' à igreja nacional
+  (IEAB) em 1975, mantendo o patrimônio. O site institucional hoje a descreve como a cátedra da Diocese Anglicana
+  no Brasil.
 sources:
-- source: cant-novas-igrejas-2024
+- source: lq-cat-historia
   quote: >-
-    A Catedral Anglicana de São Paulo é uma Igreja Anglicana no coração da capital paulista, liderada pelo reverendo
-    Aldo Quintão
-  page: '92'
-- source: cant-novas-igrejas-2024
-  quote: Saint Paul’s Church, erigido em 1873
-  page: '92'
-- source: cant-novas-igrejas-2024
+    Somente em 1873 quando Vitória era Rainha do Reino Unido e Irlanda e Sua Graça Archibald Campbell Tait era arcebispo
+    da Cantuária, era construído e consagrado como Saint Paul’s Anglican Church, o primeiro Templo Anglicano em
+    São Paulo
+- source: lq-cat-historia
+  quote: Hoje a Catedral Anglicana de São Paulo é a cátedra da Diocese Anglicana no Brasil
+- source: lq-cat-carta-aberta
   quote: >-
-    Em 1972, a Saint Paul’s se filiou à Igreja Episcopal do Brasil, sendo elevada ao status de Catedral da Diocese
-    Anglicana de São Paulo em 1995.
-  page: '92'
+    Em 1975 a Saint Paul’s Anglican Church (atual Catedral Anglicana de São Paulo) se filia ESPIRITUALMENTE à igreja
+    nacional
 relations:
 - type: member_of
   target: ieab

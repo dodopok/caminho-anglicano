@@ -4,20 +4,23 @@ name: Luiz Souza de França
 aliases:
 - Deão Luiz Souza de França
 biography: >-
-  Clérigo(a) da Diocese Anglicana do Recife excluído(a) da IEAB e das Sagradas Ordens em 23/08/2005 (Decreto Diocesano
-  nº 01/2005) por abandono de comunhão, por ter seguido Robinson Cavalcanti.
+  Deão e arcediago da Diocese Anglicana do Recife; em 2006 deão da Con-Catedral da Ressurreição (João Pessoa) e
+  arcediago de PB/RN/CE.
 sources:
-- source: costa2021
-  quote: >-
-    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
-    Ordens, os clérigos a seguir mencionados: … Revmo. Deão Luiz Souza de França … Recife, 23 de agosto de 2005.
-  page: 560-561
+- source: drp-calendario-2004
+  quote: Ven. Arced. Rev. Luiz Souza de França
+- source: drp-carta-venables-pt-2005
+  quote: Ven. Arc. Revmo. Deão Luiz Souza de França
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
   start: '2005'
-  status: probable
+  status: confirmed
   sources:
+  - source: drv-declaracao-32
+    quote: Revmo. Arc. Deão Luiz Souza de França
+  - source: drv-nota-esclarecimento-2006
+    quote: Luiz Souza de França
   - source: costa2021
     quote: >-
       Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
@@ -26,9 +29,52 @@ affiliations:
       mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
   notes: >-
-    Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson
-    Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005
-    é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
+    Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
+    Esclarecimento); início e fim do vínculo não informados. Anexo R: o(a) clérigo(a) declarou, em resposta à convocação
+    de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
+    dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
+    exata.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: arcediago
+  status: confirmed
+  sources:
+  - source: drp-calendario-2004
+    quote: Ven. Arced. Rev. Luiz Souza de França
+  notes: >-
+    Local: Diocese Anglicana do Recife. Título de arcediago atestado no calendário diocesano de 2004 (publicado
+    em 2003).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: deao
+  status: confirmed
+  sources:
+  - source: drp-carta-venables-pt-2005
+    quote: Ven. Arc. Revmo. Deão Luiz Souza de França
+  - source: drp-boletim-oracao-2006
+    quote: >-
+      Orar pela Con-Catedral Anglicana da Ressurreição (PB); pelo Revmo. Deão Luiz Souza de França, pelo Coadjutor
+      Rev. Raimundo
+  - source: drp-calendario-2007
+    quote: Ven. Arc. Revmo. Deão Luiz Souza de França
+  notes: >-
+    Assina a carta a Venables (17/10/2005) como deão e arcediago ("Ven. Arc. Revmo. Deão"). Local: Con-Catedral
+    Anglicana da Ressurreição, João Pessoa. Deão da Con-Catedral da Ressurreição (PB) em out/nov de 2006; o calendário
+    de 2007 o titula "Ven. Arc. Revmo. Deão Luiz Souza de França". Título de deão e arcediago no calendário diocesano
+    de 2007.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago
+  status: confirmed
+  sources:
+  - source: drp-boletim-oracao-2006
+    quote: PB/RN/CE – Ven. Arc. Revmo. Deão Luiz Souza de França
+  - source: drv-carta-clero-primaz
+    quote: Rev. Arc. Luiz Souza de França
+  notes: >-
+    Local: Arcediagado PB/RN/CE. Arcediagos e arcediagados em out/nov de 2006: PB/RN/CE (Luiz Souza de França),
+    Norte (Maria Gorete), Centro (Evilásio Tenório), Sul (Miguel Uchoa). Cargo exercido em julho de 2007 (carta
+    do clero ao primaz do Cone Sul); início e fim não informados.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar

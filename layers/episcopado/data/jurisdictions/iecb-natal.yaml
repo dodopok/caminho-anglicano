@@ -8,14 +8,14 @@ tradition: charismatic_episcopal
 country: BR
 description: Diocese da IECB com Catedral Betânia (Natal/RN); bispo diocesano Alexandre Lins.
 sources:
-- source: ier-betesda-onde-estamos
+- source: lie-betesda-paroquias
   quote: DIOCESE DE NATAL
-- source: ier-betesda-onde-estamos
+- source: lie-betesda-paroquias
   quote: IECB Catedral Betânia
 relations:
 - type: part_of
   target: iecb
   status: probable
   sources:
-  - source: ier-betesda-onde-estamos
+  - source: lie-betesda-paroquias
     quote: 'Bispo Diocesano: Dom Alexandre Lins'

@@ -3,8 +3,10 @@ id: william-cabell-brown
 name: William Cabell Brown
 aliases:
 - Bishop Brown of Virginia
+- Rev. W. C. Brown
 - Rev. William C. Brown
 - William Brown
+- William Cabel Brown
 - reverendo Brown
 birth:
   date: '1861-11-22'
@@ -106,7 +108,7 @@ ordinations:
 affiliations:
 - jurisdiction: dmsb
   role: clergy
-  start: '1891'
+  start: 1891-10
   end: '1914'
   end_reason: transfer
   status: confirmed
@@ -119,6 +121,16 @@ affiliations:
     quote: >-
       In 1891 Kinsolving and Morris were re-en- forced by the arrival from Virginia of the Rev. and Mrs. William
       Cabell Brown, the Rev. John Meem and Miss Mary Packard
+  - source: liv-implantacao-ieab
+    quote: O Rev. Dr. W. C. Brown que veio para o Brasil em outubro de 1891, e tendo vivido aqui por 24 anos
+    page: '14'
+  - source: liv-stokes-kinsolving
+    quote: >-
+      In the autumn of 1891 Kinsolving and Morris had been joined by the Rev. and Mrs. William Cabell Brown
+    page: '12'
+  notes: >-
+    A monografia diz que Brown viveu 24 anos no Brasil (o que levaria a c. 1915); a duração não é confirmada por
+    outras fontes aqui.
 events:
 - type: other
   date: '1892-05-23'
@@ -131,6 +143,77 @@ events:
     quote: >-
       Presentes: reverendos Morris, Brown, Meem e Kinsolving, e catequistas Boaventura, Brande e Cabral. Presidida
       por Kinsolving e secretariada por Cabral.
+- type: other
+  date: '1903-06-13'
+  description: >-
+    O Seminário Teológico da Igreja Episcopal Brasileira foi inaugurado em 13/06/1903 na Igreja do Salvador, Rio
+    Grande (RS), com William Cabell Brown como primeiro reitor; foi fechado temporariamente por Kinsolving em 1910
+    e reaberto cerca de dez anos depois sob Morris. Três de seus alunos chegaram ao episcopado: Athalício Pithan,
+    Egmont Krischke e Plínio Lauer Simões.
+  status: probable
+  sources:
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Afinal, a 13 de Junho de 1903, justa, 13 anos após ter sido estabelecida a Igreja Episcopal Brasileira, concretizou-se
+      a sua alta pretensão.
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Dêsse número, três, já atingiram o episcopado: os Revmos. Drs. Athalicio Pithan, Egmont Machado Krischke e
+      Plínio Lauer Simões
+- type: other
+  date: '1908-05-31'
+  description: >-
+    Primeiro culto da Igreja Episcopal Brasileira em vernáculo no Rio de Janeiro: 31/05/1908, celebrado pelo Rev.
+    William Cabell Brown em templo anglicano emprestado; no ano seguinte instalou-se a Capela do Redentor (rua Haddock
+    Lobo).
+  status: probable
+  sources:
+  - source: drv-kinsolving-ivo
+    quote: >-
+      Em 31 de Maio de 1908, 20 anos depois de se fixar no Rio Grande do Sul, realizou a Igreja Episcopal o seu
+      primeiro ofício divino em vernáculo, na Capital da República.
+- type: other
+  date: '1891'
+  description: >-
+    Chegada, no outono de 1891, de William Cabell Brown, John Gaw Meem e Mary Packard à missão; Stokes diz que formaram
+    uma 'equipe notável'.
+  status: probable
+  sources:
+  - source: liv-stokes-kinsolving
+    quote: >-
+      In the autumn of 1891 Kinsolving and Morris had been joined by the Rev. and Mrs. William Cabell Brown, and
+      the Rev. John Gaw Meem, both from Virginia Seminary, as well as by Mary Packard, the daughter of the dean
+      of the seminary.
+    page: '12'
+- type: other
+  date: '1900'
+  description: >-
+    Fundação do Seminário Teológico: Stokes data em 1900 o estabelecimento da Escola Teológica sob a liderança de
+    William Brown, que abriu com três alunos.
+  status: probable
+  sources:
+  - source: liv-stokes-kinsolving
+    quote: >-
+      the establishment in 1900 of the Theological School under the scholarly leadership of William Brown. It opened
+      with three men.
+    page: '13'
+- type: other
+  date: '1907'
+  description: >-
+    Início da obra no Rio de Janeiro: segundo a monografia, o antigo edifício paroquial anglicano da rua Real Grandeza
+    serviu em 1907 para o estabelecimento do trabalho episcopal no Rio por William Cabell Brown; em 1912, segundo
+    Stokes, adquiriu-se terreno para a Trinity Chapel, num subúrbio sem igreja cristã, com recursos levantados por
+    um jovem que Kinsolving trouxera à igreja e fizera ordenar.
+  status: probable
+  sources:
+  - source: liv-implantacao-ieab
+    quote: >-
+      no ano de 1907, para o estabelecimento do trabalho da atual Igreja Episcopal. Anglicana do Brasil no Rio de
+      Janeiro, através do Rev. William Cabel Brown
+    page: '9'
+  - source: liv-stokes-kinsolving
+    quote: In 1912 a plot of land for the con- gregation of Trinity Chapel was purchased
+    page: '17'
 - type: other
   date: '1898'
   description: >-

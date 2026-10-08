@@ -73,15 +73,19 @@ affiliations:
   role: bishop
   start: '1998'
   end: '2017'
-  status: probable
+  status: confirmed
   sources:
+  - source: drv-pronunciamento-ieab-2005
+    quote: Dom Filadelfo Oliveira Neto
   - source: costa2021
     quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 1998-2017 – Filadelfo Oliveira Neto
     page: 518-519
   notes: >-
-    Anexo C da tese (lista 'Bispos e Bispas da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos
-    foi lido como período de exercício episcopal na IEAB (e antecessoras), e não necessariamente o ano de sagração,
-    pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação.
+    Signatário da carta da Câmara dos Bispos da IEAB ao arcebispo de Cantuária (Brasília, 14/11/2005); data de início
+    do cargo não é informada. Citado nesse cargo em documento de 14/11/2005. Anexo C da tese (lista 'Bispos e Bispas
+    da Igreja Episcopal Anglicana do Brasil'). Interpretação: o par de anos foi lido como período de exercício episcopal
+    na IEAB (e antecessoras), e não necessariamente o ano de sagração, pois o anexo não diz que o primeiro ano é
+    a sagração. Por isso não foi criada afirmação de ordenação.
 - jurisdiction: ieab-dar
   role: other
   role_description: secretário executivo e arcediago
@@ -250,6 +254,36 @@ affiliations:
   notes: >-
     Pároco da Paróquia da Santíssima Trindade (Recife). A frase sugere que ele estava antes ligado ao Rio de Janeiro
     (ver dúvidas).
+- jurisdiction: ieab-dar
+  role: other
+  role_description: deao_pro_tempore
+  status: confirmed
+  sources:
+  - source: drp-carta-pastoral-2002
+    quote: >-
+      O Bispo Diocesano nomeou o Bispo Sufragâneo como seu deão “pró-têmpore”, mantendo como coadjutor o Rev. Sérgio
+      Andrade
+  notes: >-
+    Local: Diocese Anglicana do Recife, Catedral da Santíssima Trindade, Recife. Nomeação feita pelo Bispo Diocesano
+    Robinson Cavalcanti, anterior à carta pastoral de 1/10/2002, após a saída do deão Paulo Garcia. O documento
+    identifica o Bispo Sufragâneo como Revmo. Filadelfo Oliveira Neto, OSE.
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_colaborador
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dar-clero-diocesano
+    quote: Revdmo. Dom Filadelfo Oliveira (Bispo Colaborador)
+  notes: Consta no clero diocesano do Recife em 2026.
+- jurisdiction: ieab
+  role: other
+  role_description: bispo_emerito
+  status: confirmed
+  sources:
+  - source: ieab-secretaria
+    quote: Revmo. Bispo Filadelfo Oliveira, Emérito
+  notes: Listado entre os bispos eméritos na Câmara Episcopal (página consultada em 2026).
 - jurisdiction: ieab
   role: other
   role_description: bispo sufragâneo
@@ -371,6 +405,171 @@ events:
   - source: ieab-2004-decreto-recife
     quote: >-
       A Câmara dos Bispos acolheu a solicitação do Bispo Sufragâneo, de 14 clérigos, 9 paróquias e 6 missões, todos
+- type: other
+  date: '2004-04-24'
+  description: >-
+    Culto de ação de graças pelo 2º ano de sagração do Bispo Sufragâneo Dom Filadelfo Oliveira, na Catedral Anglicana
+    da Santíssima Trindade (24/4/2004, 19h); e culto pelo 7º ano de sagração de Dom Robinson Cavalcanti na Com-Catedral
+    da Ressurreição, em João Pessoa (16/10/2004).
+  status: confirmed
+  sources:
+  - source: drp-calendario-2004
+    quote: >-
+      24 – Culto em Ação de Graças pelo 2º ano de Sagração – Revmo. Dom Filadelfo Oliveira – Local: Catedral Anglicana
+      da SS. Trindade – 19h
+  - source: drp-calendario-2004
+    quote: >-
+      Culto em Ação de Graças pelo 7ª Ano de Sagração do Revmo. Dom Robinson Cavalcanti – Local: Com-Catedral da
+      Ressurreição – João Pessoa
+- type: other
+  date: '2004-09-24'
+  description: >-
+    Decisão do Bispo Diocesano Robinson Cavalcanti de, "por tempo indeterminado", não requerer assistência nem ações
+    do Bispo Sufragâneo Filadelfo Oliveira Neto (comunicado aos párocos e ministros encarregados em 24/9/2004),
+    com base no cânon que define o sufragâneo como assistente que age sob a direção do diocesano.
+  status: confirmed
+  sources:
+  - source: drp-comunicado-2004
+    quote: 'Tendo em vista os últimos acontecimentos decidimos, por tempo indeterminado:'
+  - source: drp-comunicado-2004
+    quote: não requerer assistência do Bispo Sufragâneo;
+  - source: drp-comunicado-2004
+    quote: 'BISPO SUFRAGÂNEO: Revm.o Dom Filadelfo Oliveira Neto, OSE'
+- type: other
+  date: '2004-12-04'
+  description: >-
+    O Bispo Diocesano reitera a convocação do XXIV Concílio Diocesano Ordinário (2 a 4/12/2004), convoca um Concílio
+    Extraordinário para a manhã de 4/12/2004 e anuncia ordenações no culto de encerramento na noite de 4/12/2004.
+  status: confirmed
+  sources:
+  - source: drp-convocacao-concilio-2004
+    quote: >-
+      reitera a Convocação do XXIV Concílio Diocesano Ordinário da Diocese Anglicana do Recife, para os dias 02
+      a 04 de dezembro próximo, e convoca um Concílio Extraordinário para a manhã do dia 04 do referido mês
+  - source: drp-convocacao-concilio-2004
+    quote: Ordenações serão realizadas no Culto de Encerramento, na noite do dia 04.
+- type: other
+  date: '2004-10-16'
+  description: >-
+    Documento "Compromisso do Recife", firmado por clérigos e leigos no I Encontro Diocesano de Liderança (16/10/2004):
+    afirma a Resolução 1.10 de Lambeth 1998 como pré-condição para a ordenação e para o relacionamento com qualquer
+    segmento da Comunhão Anglicana, discorda da "Supervisão Episcopal Especial" imposta pela Câmara dos Bispos a
+    setores da Diocese e da medida da JUNET de transferir verbas da tesouraria diocesana para o Bispo Sufragâneo,
+    e acompanha os estudos sobre realinhamentos na Comunhão Anglicana.
+  status: confirmed
+  sources:
+  - source: drp-compromisso-recife-2004
+    quote: >-
+      Na discordância com a “Supervisão Episcopal Especial”, imposta pela Câmara dos Bispos a setores da nossa Diocese
+  - source: drp-compromisso-recife-2004
+    quote: transferindo-as para a pessoa física do Bispo Sufragâneo
+  - source: drp-compromisso-recife-2004
+    quote: Documento do I Encontro Diocesano de Liderança – Recife (PE), 16 de Outubro de 2004
+- type: other
+  date: '2005-09-24'
+  description: >-
+    Segundo o requerimento-modelo distribuído às paróquias e missões, a Diocese Anglicana do Recife vivia em outubro
+    de 2005 uma suspensão do Bispo Diocesano Robinson Cavalcanti pelo Primaz da IEAB, Orlando Santos de Oliveira
+    (processo canônico 001/2005); uma "excomunhão" dos clérigos da DAR pelo Bispo Sufragâneo Filadelfo Oliveira
+    Neto (Decreto Diocesano nº 001/2005); e o acolhimento de Robinson e de todo o clero pelo Primaz do Cone Sul,
+    Gregory J. Venables, a partir de 24/9/2005, em "status de acolhimento extraprovincial" até decisão do Painel
+    de Referência.
+  status: confirmed
+  sources:
+  - source: drp-requerimento-age-2005
+    quote: >-
+      em virtude da suspensão imposta ao Bispo Diocesano da DAR, Revmo. Dom Edward Robinson de Barros Cavalcanti
+      pelo Bispo Primaz da IEAB, Revmo. Orlando Santos de Oliveira, conforme processo canônico 001/2005
+  - source: drp-requerimento-age-2005
+    quote: >-
+      em virtude da excomunhão dos clérigos da DAR pelo Bispo Sufragâneo da DAR, Revmo. Filadelfo Oliveira Neto,
+      conforme Decreto Diocesano nº001/2005
+  - source: drp-requerimento-age-2005
+    quote: >-
+      recebendo o Bispo Robinson e todo o Clero da DAR sob seu ministério pastoral, a partir do dia 24 de setembro
+      de 2005, criando um status de acolhimento extraprovincial
+- type: other
+  date: '2001'
+  description: >-
+    No Concílio Diocesano de 2001, em primeiro escrutínio, a Diocese do Recife elegeu o Rev. Filadelfo Oliveira
+    Neto bispo sufragâneo (auxiliar, sem direito à sucessão); ele era ex-pároco, ex-arcediago e ex-secretário administrativo
+    diocesano.
+  status: probable
+  sources:
+  - source: drv-resgatando-v
+    quote: >-
+      No Concílio Diocesano de 2001, em primeiro escrutínio, a DAR elegeu como Bispo Sufragâneo (auxiliar, sem direito
+      à sucessão) o Rev. Filadelfo Oliveira Neto, ex-Pároco, ex-Arcediago, e ex-Secretário Administrativo Diocesano
+- type: other
+  date: '2003'
+  description: >-
+    Em junho de 2003 os bispos e o Conselho Diocesano do Recife emitiram 'A Afirmação do Recife', condenando as
+    decisões de New Westminster (Canadá) e New Hampshire (EUA) e reiterando a Resolução 1.10 de Lambeth; em dezembro
+    de 2003 o Concílio Diocesano (João Pessoa) aprovou dispositivo canônico limitando relações institucionais a
+    entidades que subscrevessem a Resolução 1.10.
+  status: probable
+  sources:
+  - source: drv-resgatando-v
+    quote: >-
+      Os Bispos e o Conselho Diocesano da DAR, em junho daquele ano, emitiram um documento “A Afirmação do Recife”
+  - source: drv-resgatando-v
+    quote: No Concílio Diocesano de dezembro de 2003, em João Pessoa-PB, foi aprovado um dispositivo canônico
+- type: other
+  date: 2004-09
+  description: >-
+    Em setembro de 2004, durante viagem de Robinson à Malásia, a Câmara dos Bispos da IEAB colocou alguns clérigos,
+    paróquias e missões do Recife sob um 'Supervisor Episcopal Especial', o bispo de Brasília, tendo como auxiliar
+    o bispo sufragâneo da diocese (Filadelfo Oliveira Neto).
+  status: probable
+  sources:
+  - source: drv-resgatando-v
+    quote: >-
+      a Câmara dos Bispos da IEAB, interviu na DAR, colocando alguns clérigos, Paróquias e Missões sob a autoridade
+      de um pretenso “Supervisor Episcopal Especial”, o Bispo de Brasília
+  - source: drv-resgatando-v
+    quote: tendo como seu auxiliar o próprio Bispo Sufragâneo da DAR
+- type: other
+  date: '2005-07-28'
+  description: >-
+    Em 28/07/2005, 38 clérigos do Recife responderam ao bispo sufragâneo Filadelfo Oliveira Neto que as decisões
+    institucionais haviam sido tomadas em concílio e que suspendiam o relacionamento com o 'estamento de poder'
+    da IEAB, não com a instituição, mantendo plena comunhão com o bispo diocesano Robinson Cavalcanti.
+  status: confirmed
+  sources:
+  - source: drv-carta-filadelfo
+    quote: >-
+      Em resposta a vossa carta de 04 de julho de 2005, dirigida aos clérigos desta Diocese, abaixo relacionados
+  - source: drv-carta-filadelfo
+    quote: mantendo plena comunhão com o bispo diocesano Revmo Dom Edward Robinson de Barros Cavalcanti
+- type: other
+  date: '2005-09-22'
+  description: >-
+    Nota diocesana de 22/09/2005 afirma que o 'pseudo-concílio' da minoria dissidente realizado em 10/09/2005 não
+    teve quórum, que a diocese nunca se desvinculou da IEAB, que o 'decreto' de excomunhão e deposição contra 32
+    clérigos não foi notificado, e atribui ao ex-primaz Glauco Soares de Lima a declaração de que a sentença contra
+    Robinson resultou de um 'discurso inflamado' do bispo sufragâneo.
+  status: contested
+  sources:
+  - source: drv-fatos-verdadeira-dar
+    quote: O pseudo-concílio realizado pela minoria dissidente da Diocese, em 10.09 passado
+  - source: drv-fatos-verdadeira-dar
+    quote: >-
+      o ex-Primaz Glauco Soares de Lima, afirmou que a Sentença de Deposição não foi uma decisão objetiva do Superior
+      Tribunal Eclesiástico, mas o resultado da influência de um “discurso inflamado” do Bispo Sufragâneo do Recife
+- type: other
+  date: '2005-08-29'
+  description: >-
+    Declaração dos 32 de Recife (29/08/2005): 32 clérigos da Diocese Anglicana do Recife protestam contra o decreto
+    do bispo sufragâneo que os excomungou 'sem processo', afirmam representar 40 paróquias, missões e pontos missionários,
+    dizem não ter abandonado a comunhão e apelam a Rowan Williams.
+  status: confirmed
+  sources:
+  - source: drv-declaracao-32
+    quote: >-
+      Nós, 32 clérigos da Diocese Anglicana do Recife, recebemos com espanto o Decreto emitido pelo Bispo Sufragâneo
+      da DAR, auto denominado de Autoridade Episcopal.
+  - source: drv-declaracao-32
+    quote: Representamos 40 Paróquias, Missões e Pontos Missionários
 - type: other
   date: '2004-09-16'
   description: >-

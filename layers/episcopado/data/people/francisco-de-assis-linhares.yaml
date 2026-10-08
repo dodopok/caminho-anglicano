@@ -1,12 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: francisco-de-assis-linhares
 name: Francisco de Assis Linhares
-biography: Presbítero da Igreja Anglicana Continuante.
+full_name: Francisco de Assis Linhares
+biography: Listado no clero da Igreja Anglicana Continuante (presbítero) no blog da igreja.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Como presbíteros a Igreja possui os reverendos Francisco de Assis Linhares e Sebastião Goveia Lima
-  page: '108'
+- source: lpq-iac-presbiteros
+  quote: Reverendo (Frei) Francisco de Assis Linhares
 affiliations:
+- jurisdiction: iac
+  role: priest
+  status: confirmed
+  sources:
+  - source: lpq-iac-presbiteros
+    quote: Reverendo (Frei) Francisco de Assis Linhares
+  notes: Lista sem datas de ordenação nem ordenantes.
 - jurisdiction: iac
   role: clergy
   status: probable

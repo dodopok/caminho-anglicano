@@ -3,7 +3,9 @@ id: miguel-neto
 name: Miguel Neto
 aliases:
 - '@bispomiguelneto'
+- Bispo Miguel Mello
 - Bp. Miguel Neto
+- Miguel Mello
 - Miguel Netto
 - Pr. Miguel Neto
 - Revdo. Miguel Neto
@@ -26,11 +28,18 @@ ordinations:
     ser anterior à captura). Jurisdição em c.2016 = Igreja Anglicana – Diocese do Recife (pré-IAB). Ordenante não
     informado.
 - order: episcopate
-  date: null
+  date: '2023-05-31'
+  place: Boqueirão (PB), Cariri paraibano
   jurisdiction: iab
   office: auxiliary
-  status: probable
+  status: confirmed
   sources:
+  - source: lrec-buzznews-2023
+    quote: Sua sagração será em 31 de maio, na cidade de Boqueirão, no Cariri da Paraíba.
+  - source: lrec-yt-sagracao-miguel-mello
+    quote: SAGRAÇÃO BISPO MIGUEL MELLO | Bp. MIGUEL UCHOA 31/05/2023
+  - source: lrec-fb-comunhaopatos-1ano
+    quote: Hoje, 31 de maio completa 1 ano da Sagração a Bispo auxiliar da Igreja Anglicana
   - source: anglicanismo-eleicao-2023
     quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues
   - source: djp-bispos-aux-2024
@@ -47,32 +56,17 @@ ordinations:
       João Pessoa)
     page: '34'
   notes: >-
-    Data, local e sagrantes NÃO encontrados. Eleito em 13/03/2023 (Diocese de João Pessoa). Indício: os títulos
-    do canal Comunhão Campina passam de "PR. MIGUEL NETO" (26/03/2023) a "BISPO MIGUEL NETO" (06/04/2023 e 09/04/2023),
-    o que sugere sagração entre 27/03 e 06/04/2023 (pode ser apenas uso do título de bispo eleito). Não foi sagrado
-    junto com Eric Rodrigues em 08/05/2023 (as notícias daquela sagração não o mencionam). Data não informada (contexto:
-    a partir de 2020).
+    Eleito bispo auxiliar no Sínodo Extraordinário online de 13/03/2023 (a matéria da Buzz News traz '13 de março',
+    sem o ano, na mesma notícia que anuncia para 08/05/2023 a sagração de Eric Rodrigues). A sagração, anunciada
+    para 31/05 em Boqueirão, aparece em vídeo do canal Comunhão Boqueirão com data 31/05/2023 e o nome de Miguel
+    Uchôa no título; a Igreja Anglicana Comunhão em Patos comemorou 'um ano da sagração' em 31 de maio (2024). Sagrante
+    principal e co-sagrantes não foram localizados em texto: o título do vídeo associa o nome do primaz Miguel Uchôa
+    à cerimônia, mas não declara sua função. Data, local e sagrantes NÃO encontrados. Eleito em 13/03/2023 (Diocese
+    de João Pessoa). Indício: os títulos do canal Comunhão Campina passam de "PR. MIGUEL NETO" (26/03/2023) a "BISPO
+    MIGUEL NETO" (06/04/2023 e 09/04/2023), o que sugere sagração entre 27/03 e 06/04/2023 (pode ser apenas uso
+    do título de bispo eleito). Não foi sagrado junto com Eric Rodrigues em 08/05/2023 (as notícias daquela sagração
+    não o mencionam). Data não informada (contexto: a partir de 2020).
 affiliations:
-- jurisdiction: iab
-  role: bishop
-  diocese: iab-diocese-joao-pessoa
-  start: '2023'
-  status: probable
-  sources:
-  - source: wp-en-iab
-    quote: Miguel Neto, Eric Rodrigues (assistant)
-  - source: anglicanismo-eleicao-2023
-    quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      O bispo Eric atuava como bispo auxiliar na Diocese de João Pessoa, juntamente com o bispo Miguel Neto.
-    page: '151'
-  - source: wp-en-iab
-    quote: Márcio Meira (diocesan) Miguel Neto, Eric Rodrigues (assistant)
-  - source: anglicanismo-eleicao-2023
-    quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues.
-  notes: >-
-    Data/local da sagração não encontrados. Início = eleição (13/03/2023); data de sagração desconhecida.
 - jurisdiction: iab
   role: auxiliary_bishop
   diocese: iab-diocese-joao-pessoa
@@ -93,6 +87,35 @@ affiliations:
     Início = data da eleição. Fim = posse como bispo diocesano da Diocese Anglicana Comunhão (jun/2026); o site
     da DJP ainda o apresentava como auxiliar em out/2026 (página modificada em 23/10/2025).
 - jurisdiction: iab
+  role: bishop
+  diocese: iab-diocese-joao-pessoa
+  start: '2023-05-31'
+  status: confirmed
+  sources:
+  - source: lrec-buzznews-2023
+    quote: >-
+      Pela Diocese de João Pessoa, Neto coordena igrejas do sertão da Paraíba ao Ceará, além se ser pároco na cidade
+      de Campina Grande.
+  - source: djp-bispo-miguel-neto
+    quote: O Bispo Miguel Neto é Bispo Auxiliar da Diocese Anglicana de João Pessoa
+  - source: wp-en-iab
+    quote: Miguel Neto, Eric Rodrigues (assistant)
+  - source: anglicanismo-eleicao-2023
+    quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo Eric atuava como bispo auxiliar na Diocese de João Pessoa, juntamente com o bispo Miguel Neto.
+    page: '151'
+  - source: wp-en-iab
+    quote: Márcio Meira (diocesan) Miguel Neto, Eric Rodrigues (assistant)
+  - source: anglicanismo-eleicao-2023
+    quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues.
+  notes: >-
+    Bispo auxiliar (sufragâneo) da Diocese de João Pessoa a partir da sagração; antes disso era pároco em Campina
+    Grande e coordenava igrejas do sertão da Paraíba ao Ceará. Em 2026 passou a bispo diocesano da Diocese Comunhão
+    (ver demais fontes). Data/local da sagração não encontrados. Início = eleição (13/03/2023); data de sagração
+    desconhecida.
+- jurisdiction: iab
   role: diocesan_bishop
   diocese: iab-diocese-comunhao
   start: '2026-06-19'
@@ -106,6 +129,7 @@ affiliations:
 - jurisdiction: iab
   role: clergy
   diocese: iab-diocese-joao-pessoa
+  end: '2023-05-31'
   status: confirmed
   sources:
   - source: iab-jornada-pbce-2025
@@ -124,12 +148,18 @@ affiliations:
     quote: 'Pastor: Revdo. Miguel Neto'
   - source: yt-cc-2022-12-08
     quote: SEMANA DA VIRADA - DIA 04 | REV. MIGUEL NETO | 08.12.2022 - 20h
+  - source: lrec-buzznews-2023
+    quote: >-
+      Miguel Neto, que tem um frutífero ministério na região do interior da Paraíba, principalmente como plantador
+      de igrejas.
   notes: >-
     Local: Igreja Anglicana Comunhão, Campina Grande-PB e Patos-PB. Bispo auxiliar da Diocese de João Pessoa em
     2023–2025; antes, à frente da Igreja Anglicana Comunhão Campina Grande (podcast de jul/2023) e, em 2025, da
     Comunhão Patos. Data e sagrantes da sagração episcopal (eleito em 13/03/2023) NÃO encontrados. Trajetória: 'De
     mecânico a um Pastor plantador de Igrejas' (podcast). Presbítero na DJP antes do episcopado; pastor da Comunhão
-    Boqueirão (igreja nascida em jan/2018), depois da Igreja Anglicana Comunhão em Patos.
+    Boqueirão (igreja nascida em jan/2018), depois da Igreja Anglicana Comunhão em Patos. Presbítero e plantador
+    de igrejas no interior da Paraíba antes de ser eleito bispo auxiliar; a notícia o descreve como pároco em Campina
+    Grande.
 - jurisdiction: diocese-anglicana-recife
   role: clergy
   end: '2018-05-12'

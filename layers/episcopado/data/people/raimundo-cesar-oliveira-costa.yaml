@@ -1,15 +1,31 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: raimundo-cesar-oliveira-costa
 name: Raimundo Cesar Oliveira Costa
-biography: Bispo da Igreja Anglicana Mundial no Brasil (Diocese do Pará).
+full_name: Raimundo Cesar Oliveira Costa
+aliases:
+- Bishop Raimundo Cesar
+- Dom Raimundo Cesar
+biography: >-
+  Listado entre os bispos da Província do Brasil na página House of Bishops da WAC internacional (como "Raimundo
+  Cesar"). Não consta na lista de clérigos do site da WAC-BR; data e sagrantes de sua sagração não foram encontrados.
 sources:
-- source: cant-novas-igrejas-2024
-  quote: Dom Raimundo Cesar Oliveira Costa, bispo auxiliar da Diocese do Pará
-  page: '129'
+- source: lwac-wac-hob
+  quote: Bishop Raimundo Cesar Bishop Ecclesiastical Province of Brazil
 affiliations:
+- jurisdiction: wac
+  role: bishop
+  diocese: wac-br
+  status: probable
+  sources:
+  - source: lwac-wac-hob
+    quote: Bishop Raimundo Cesar Bishop Ecclesiastical Province of Brazil
+  notes: >-
+    Listado só como "Raimundo Cesar" na página internacional; a identificação com Raimundo Cesar Oliveira Costa
+    vem do livro de Cant (2024), que o descreve como bispo auxiliar da Diocese do Pará. Há também uma entrada "Bishop
+    Dom Raimundo Pereira", Brasil, na mesma lista.
 - jurisdiction: wac-br
   role: auxiliary_bishop
-  diocese: diocese-do-para
+  diocese: wac-br-pa
   status: probable
   sources:
   - source: cant-novas-igrejas-2024

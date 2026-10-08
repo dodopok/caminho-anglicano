@@ -1,7 +1,11 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-central-do-nordeste-do-brasil-dcnb-catedral-betesda
-name: Diocese Central do Nordeste do Brasil (DCNB), Catedral Betesda
+name: Diocese Central do Nordeste do Brasil (ICEB)
+aliases:
+- Diocese Central do Nordeste do Brasil
+- Diocese Central do Nordeste do Brasil (DCNB), Catedral Betesda
 type: diocese
+country: BR
 relations:
 - type: part_of
   target: iceb
@@ -9,3 +13,5 @@ relations:
   sources:
   - source: ciceb-quemsomos
     quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo Givaldo Martins)
+  - source: lie-ciceb-provincia-2014
+    quote: 'Nome do Pároco: Rev. Givaldo Martins'

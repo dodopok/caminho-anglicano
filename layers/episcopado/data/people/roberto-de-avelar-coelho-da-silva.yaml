@@ -1,11 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: roberto-de-avelar-coelho-da-silva
 name: Roberto de Avelar Coelho da Silva
-biography: Irmão cofundador da Ordem Anglicana Filhos da Promessa (2012).
+full_name: Roberto de Avelar Coelho da Silva
+aliases:
+- Dom Roberto Avelar Coelho da Silva de Azevedo
+- Roberto Avelar
+biography: >-
+  Cofundador da Ordem Anglicana Filhos da Promessa (2012) e, segundo o canal de YouTube da IEFIP, "Bispo-Missionário"
+  da Igreja Episcopal Filhos da Promessa. A lista de ministérios da CEFIP (2026) traz "Dom Roberto Avelar Coelho
+  da Silva de Azevedo".
 sources:
-- source: cant-novas-igrejas-2024
-  quote: junto com o irmão Roberto de Avelar Coelho da Silva
-  page: '145'
+- source: lpq-yt-iefip
+  quote: Bispo-Missionário - Roberto Avelar
+- source: lpq-cefip-ministerios
+  quote: Dom Roberto Avelar Coelho da Silva de Azevedo
 affiliations:
 - jurisdiction: oafip
   role: founder
@@ -15,3 +23,11 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: junto com o irmão Roberto de Avelar Coelho da Silva
     page: '145'
+- jurisdiction: iefip
+  role: missionary_bishop
+  status: probable
+  sources:
+  - source: lpq-yt-iefip
+    quote: Bispo-Missionário - Roberto Avelar
+  notes: >-
+    Identificação com "Dom Roberto Avelar Coelho da Silva de Azevedo" (lista da CEFIP 2026) é provável, não confirmada.
