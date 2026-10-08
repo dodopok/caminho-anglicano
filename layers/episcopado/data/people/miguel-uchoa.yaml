@@ -310,10 +310,10 @@ affiliations:
   start: '2018-05-12'
   status: confirmed
   sources:
-  - source: ai-2018-05-15-uchoa-installed
-    quote: the installation of The Most Rev. Miguel Uchoa Cavalcanti as their first Archbishop and Primate.
-  - source: iab-comunicado-oficial-2018
-    quote: Bispo Primaz da Igreja Anglicana no Brasil
+  - source: iab-epifania-2026
+    quote: ++Miguel Uchoa Arcebispo e Primaz Igreja Anglicana no Brasil
+  - source: gafcon-2026-08-23-deao
+    quote: the Most Revd Dr Miguel Uchoa Cavalcanti, Archbishop and Primate of Brazil and Vice Chairman
   - source: ai-new-province-backed
     quote: the installation of The Most Rev. Miguel Uchoa Cavalcanti as their first Archbishop and Primate
   - source: cant-novas-igrejas-2024
@@ -324,6 +324,15 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: alguns clérigos da IAB, discordando de posturas da denominação e de seu Primaz, Miguel Uchôa
     page: '150'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Igreja Anglicana no Brasil (IAB), reorganizada pelo bispo Robinson Cavalcanti a partir da Diocese do Recife,
+      hoje liderada pelo arcebispo Miguel Uchôa Cavalcanti
+    page: '174'
+  - source: ai-2018-05-15-uchoa-installed
+    quote: the installation of The Most Rev. Miguel Uchoa Cavalcanti as their first Archbishop and Primate.
+  - source: iab-comunicado-oficial-2018
+    quote: Bispo Primaz da Igreja Anglicana no Brasil
   - source: costa2021
     quote: Miguel Uchôa (atual primaz da Igreja Anglicana no Brasil)
     page: '126'
@@ -337,21 +346,9 @@ affiliations:
       Miguel Uchôa foi sagrado em 2012, mas instalado como arcebispo da "nova província" considerada pela GAFCON
       2018
   notes: >-
-    Eleição ratificada pelos Primazes da GAFCON em Entebbe (abril de 2018). Primaz em 2023. Primaz por ocasião da
-    GAFCON 2018 (Jerusalém); datas não informadas.
-- jurisdiction: iab
-  role: primate
-  diocese: iab-diocese-recife
-  start: '2018-05-12'
-  status: confirmed
-  sources:
-  - source: iab-epifania-2026
-    quote: ++Miguel Uchoa Arcebispo e Primaz Igreja Anglicana no Brasil
-  - source: gafcon-2026-08-23-deao
-    quote: the Most Revd Dr Miguel Uchoa Cavalcanti, Archbishop and Primate of Brazil and Vice Chairman
-  notes: >-
     Também bispo diocesano de Recife; em 08/2026 deixou a reitoria da catedral para o filho Gabriel (deão), sem
-    mudança episcopal.
+    mudança episcopal. Eleição ratificada pelos Primazes da GAFCON em Entebbe (abril de 2018). Primaz em 2023. Situação
+    em 2025. Primaz por ocasião da GAFCON 2018 (Jerusalém); datas não informadas.
 - jurisdiction: iab
   role: diocesan_bishop
   diocese: iab-diocese-recife
@@ -362,16 +359,6 @@ affiliations:
     quote: Miguel Uchôa Cavalcanti Bispo Primaz da Igreja Anglicana no Brasil Diocesano de Recife
   - source: dr-bispo
     quote: Primaz da Igreja Anglicana no Brasil    Bispo da Diocese de Recife
-- jurisdiction: iab
-  role: archbishop
-  status: probable
-  sources:
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      a Igreja Anglicana no Brasil (IAB), reorganizada pelo bispo Robinson Cavalcanti a partir da Diocese do Recife,
-      hoje liderada pelo arcebispo Miguel Uchôa Cavalcanti
-    page: '174'
-  notes: Situação em 2025.
 events:
 - type: other
   date: '2017-05-06'
