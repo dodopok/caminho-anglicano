@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: leonildo-fernandes
+name: Leonildo Fernandes
+biography: >-
+  Reverendo da Diocese Anglicana Católica do Brasil, ordenado bispo em 25/05/2024 em Taboão da Serra (SP), junto
+  com Diego Scarmeloto Peral e João Paulo Miguel de Oliveira.
+sources:
+- source: rtf-gazzeta-diego
+  quote: >-
+    na Cidade de Taboão da Serra em uma cerimônia marcada pela fé e pela união, a Igreja Carismática Luz do Senhor
+    foi palco das ordenações episcopais dos reverendos Diego Scarmeloto Peral, João Paulo Miguel de Oliveira e Leonildo
+    Fernandes, membros da Diocese Anglicana Católica do Brasil
+ordinations:
+- order: episcopate
+  date: '2024-05-25'
+  place: Igreja Carismática Luz do Senhor, Rua Dr. Getúlio Vargas, 94, Taboão da Serra (SP)
+  jurisdiction: dac
+  principal_consecrator: iranildo-macieira-da-silva
+  co_consecrators:
+  - josue-sousa-torres
+  - marcio-silva
+  status: probable
+  sources:
+  - source: rtf-gazzeta-diego
+    quote: Na tarde do último dia, 25 de maio de 2024* na Cidade de Taboão da Serra
+  - source: rtf-gazzeta-diego
+    quote: >-
+      na Cidade de Taboão da Serra em uma cerimônia marcada pela fé e pela união, a Igreja Carismática Luz do Senhor
+      foi palco das ordenações episcopais dos reverendos Diego Scarmeloto Peral, João Paulo Miguel de Oliveira e
+      Leonildo Fernandes, membros da Diocese Anglicana Católica do Brasil
+  - source: rtf-gazzeta-diego
+    quote: >-
+      foi conduzida pelo Arcebispo Dom Frei Lucas Macieira, com a assistência dos Bispos-coordenantes Dom Márcio
+      Silva e Dom Josué Torres
+  notes: >-
+    Notícia enviada pela assessoria de comunicação da diocese e publicada pela imprensa local em 27/05/2024. O texto
+    chama Márcio Silva e Josué Torres de 'bispos-coordenantes' (assistentes) e diz que a cerimônia, às 15h, foi
+    'conduzida' por Lucas Macieira. A mesma notícia relata a ordenação episcopal simultânea de três reverendos.
