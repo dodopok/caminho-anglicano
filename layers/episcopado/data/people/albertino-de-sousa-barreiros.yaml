@@ -47,7 +47,7 @@ ordinations:
   jurisdiction: iacc
   office: diocesan
   principal_consecrator: james-antonio-roque
-  status: contested
+  status: probable
   sources:
   - source: cant-anglo-catolicismo-2026
     quote: >-
@@ -87,16 +87,6 @@ ordinations:
       Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa da
       Silva.
     page: '138'
-  discrepancies:
-  - field: jurisdiction
-    value: da-japi
-    sources:
-    - source: costa2021
-      quote: >-
-        ordenou muitas pessoas ao episcopado, a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino de
-        Sousa Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa
-        da Silva.
-      page: '138'
   notes: >-
     Fecha a data (jurisdicoes-menores.json tinha data nula). Diocese Anglicana do Natal (hoje ligada à TAC). Costa
     (2021) e o site da IACC dizem que James Roque 'ordenou' estes bispos. Para Itabira Jonas, a data de 11/1/2018
