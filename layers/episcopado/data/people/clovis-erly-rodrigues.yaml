@@ -21,6 +21,16 @@ sources:
 - source: ieab-secretaria
   quote: Revmo. Bispo Clóvis Erli Rodrigues, Emérito
 ordinations:
+- order: diaconate
+  date: '1960'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1960 - … Clóvis Erly Rodrigues
+    page: '371'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: episcopate
   date: '1985-03-17'
   place: Catedral da Santissima Trindade, Porto Alegre
@@ -50,12 +60,22 @@ affiliations:
   start: '1986'
   end: '1997'
   end_reason: retirement
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: 1986-1997 – Clovis Erly Rodrigues
   - source: ptwp-dar
     quote: Clóvis Erly Rodrigues - 1986 a 1997;
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1985 - Clóvis Erly Rodrigues
+    page: '368'
+  discrepancies:
+  - field: start
+    value: '1985'
+    sources:
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1985 - Clóvis Erly Rodrigues
+      page: '368'
 events:
 - type: other
   date: '1985'

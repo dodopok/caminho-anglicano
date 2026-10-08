@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: miguel-barcelos-da-cunha
+name: Miguel Barcelos da Cunha
+full_name: Miguel Barcelos da Cunha
+ordinations:
+- order: diaconate
+  date: '1908'
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1908 - … Miguel Barcelos da Cunha
+    page: '369'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1908'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1908 - … Miguel Barcelos da Cunha
+    page: '369'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

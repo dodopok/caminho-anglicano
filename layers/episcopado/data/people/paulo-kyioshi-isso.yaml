@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: paulo-kyioshi-isso
+name: Paulo Kyioshi Isso
+full_name: Paulo Kyioshi Isso
+ordinations:
+- order: diaconate
+  date: '1932'
+  jurisdiction: dmsb
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1932 - … Paulo Kyioshi Isso
+    page: '369'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1932'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1932 - … Paulo Kyioshi Isso
+    page: '369'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

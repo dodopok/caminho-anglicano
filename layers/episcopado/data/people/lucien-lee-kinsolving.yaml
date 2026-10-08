@@ -184,7 +184,7 @@ affiliations:
   start: '1899-01-06'
   end: '1928'
   end_reason: resignation
-  status: confirmed
+  status: contested
   sources:
   - source: wit-1952-03-20
     quote: >-
@@ -194,10 +194,21 @@ affiliations:
     quote: >-
       the Rev. Lucien Lee Kinsolving had been duly elected, in accordance with Article X. of the Constitution, a
       Bishop for the United States of Brazil.
+  - source: kickhofel-1995
+    quote: BISPOS MISSIONÁRIOS … 1899-1926 - Lucien Lee Kinsolving
+    page: '368'
   notes: >-
     Local: 1899); Missionary Bishop of Southern Brazil (1907-1928. Eleito pela convocação de Porto Alegre em 30/05/1898
     e pela Câmara dos Bispos em out. 1898; reeleito bispo missionário do Sul do Brasil em 1907 (Wikipédia). Voltou
-    aos EUA por saúde em out. 1926, renúncia aceita em 1928.
+    aos EUA por saúde em out. 1926, renúncia aceita em 1928. O livro lista Kinsolving entre os bispos missionários
+    de 1899 a 1926.
+  discrepancies:
+  - field: end
+    value: '1926'
+    sources:
+    - source: kickhofel-1995
+      quote: BISPOS MISSIONÁRIOS … 1899-1926 - Lucien Lee Kinsolving
+      page: '368'
 events:
 - type: other
   date: '1890-06-01'
@@ -247,3 +258,16 @@ events:
     quote: >-
       On May 30, 1898, pursuant to Bishop Peterkin's advice, clergy and laity gathered in Porto Alegre and elected
       Kinsolving to become their bishop
+- type: other
+  date: '1898-11-20'
+  description: >-
+    Recebeu telegrama da Câmara dos Bispos da igreja americana informando sua eleição como primeiro bispo da Igreja
+    Protestante Episcopal dos Estados Unidos do Brasil
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Assim, no dia 20 de novembro de 1898, Kinsolving, que na época pastoreava a igreja em Rio Grande, recebeu
+      um telegrama da Câmara dos Bispos, informando-o de que havia sido eleito para ser o primeiro bispo da Igreja
+      Protestante Episcopal dos Estados Unidos do Brasil.
+    page: '93'

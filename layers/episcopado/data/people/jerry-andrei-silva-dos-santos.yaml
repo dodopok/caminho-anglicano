@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jerry-andrei-silva-dos-santos
+name: Jerry Andrei Silva dos Santos
+full_name: Jerry Andrei Silva dos Santos
+ordinations:
+- order: diaconate
+  date: '1991'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1991 - … Jerry Andrei Silva dos Santos
+    page: '373'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1991'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1991 - … Jerry Andrei Silva dos Santos
+    page: '373'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: mitsuo-noyama
+name: Mitsuo Noyama
+full_name: Mitsuo Noyama
+ordinations:
+- order: diaconate
+  date: '1994'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1994 - … Mitsuo Noyama
+    page: '374'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1994'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1994 - … Mitsuo Noyama
+    page: '374'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

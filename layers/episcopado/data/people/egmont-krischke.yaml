@@ -94,6 +94,9 @@ affiliations:
       Grande do Sul and Santa Caterina. new bishop will be the Rev. Egmonte Machado Krischke.
   - source: wit-1955-09-29
     quote: He will replace Bishop Krischke who is transferring to Southern Brazil
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1950-1955 - Egmont Machado Krischke
+    page: '368'
   notes: 'Local: Santa Maria.'
 - jurisdiction: dmsb
   role: diocesan_bishop
@@ -112,7 +115,7 @@ affiliations:
   start: '1956'
   end: '1971'
   end_reason: resignation
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: 1950-1971 – Egmont Valle Machado Krischke
@@ -120,7 +123,17 @@ affiliations:
     quote: >-
       Em 1956, quando o Bispo Pithan se aposentou, a Câmara dos Bispos transferiu o Bispo Krischke para a Diocese
       Meridional
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1956-1970 - Egmont Machado Krischke
+    page: '368'
   notes: Renunciou como diocesano por saude, permanecendo primaz.
+  discrepancies:
+  - field: end
+    value: '1970'
+    sources:
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1956-1970 - Egmont Machado Krischke
+      page: '368'
 - jurisdiction: ieab
   role: primate
   start: '1965-04-25'
@@ -154,9 +167,14 @@ affiliations:
       Anglicana  e elegeu o seu primeiro bispo primaz na pessoa do revmo. bispo Egmont Machado Krischke.
   - source: ens-72149
     quote: He succeeded the Most Rev. Egmont Machado Krischke, who died a few months ago.
+  - source: kickhofel-1995
+    quote: >-
+      O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1965 - Egmont Machado
+      Krischke
+    page: '367'
   notes: >-
     Wikipédia: primaz 1965–1971; ENS (out. 1972) diz que morreu 'a few months ago' — data da morte (1971 ou 1972)
-    a verificar.
+    a verificar. O livro dá só o início de cada primado; o fim é o início do primado seguinte.
 events:
 - type: death
   date: '1971-06-28'

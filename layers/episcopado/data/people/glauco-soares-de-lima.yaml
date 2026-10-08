@@ -29,6 +29,16 @@ sources:
 - source: costa2021
   quote: Faleceu em 26 de dezembro de 2017.
 ordinations:
+- order: diaconate
+  date: '1956'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1956 - … Glauco Soares de Lima
+    page: '371'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: episcopate
   date: '1989-10-01'
   place: St. Paul's Church, Sao Paulo
@@ -90,11 +100,14 @@ affiliations:
     quote: 1990-2002 – Glauco Soares de Lima
   - source: glauco-testemunho-2013
     quote: Bispo da Diocese Anglicana de São Paulo de 1990 - 2002
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1990 - Glauco Soares de Lima
+    page: '368'
 - jurisdiction: ieab
   role: primate
   start: '1993'
   end: '2003'
-  status: confirmed
+  status: contested
   sources:
   - source: costa2021
     quote: >-
@@ -106,7 +119,23 @@ affiliations:
     quote: Bispo Primaz do Brasil de 1993 – 2003.
   - source: sinopse-2003
     quote: '**1994** - Novo Primaz: Glauco Soares de Lima.'
-  notes: Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94).
+  - source: kickhofel-1995
+    quote: >-
+      O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1994 - Glauco Soares
+      de Lima
+    page: '367'
+  notes: >-
+    Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94). O livro dá só o início de cada primado; o fim é
+    o início do primado seguinte.
+  discrepancies:
+  - field: start
+    value: '1994'
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1994 - Glauco Soares
+        de Lima
+      page: '367'
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino

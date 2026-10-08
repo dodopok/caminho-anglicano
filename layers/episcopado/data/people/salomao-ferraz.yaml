@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: salomao-ferraz
 name: Salomão Ferraz
+aliases:
+- Salomão Barbosa Ferraz
 biography: >-
   Presbítero em São Paulo (Capela do Salvador); protagonista da 'controvérsia cerimonialista', destituído em 1936.
 sources:
@@ -13,6 +15,16 @@ sources:
     Ferraz também começou a usar textos litúrgicos não autorizados, provocando uma crise que culminou na sua destituição
     em 1936.
 ordinations:
+- order: diaconate
+  date: '1917'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1917 - … Salomão Barbosa Ferraz
+    page: '369'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
   date: '1945'
   jurisdiction: icab
@@ -54,3 +66,16 @@ events:
   sources:
   - source: kickhofel
     quote: provocando uma crise que culminou na sua destituição em 1936.
+- type: other
+  date: '1934'
+  description: >-
+    Assinou o memorial do concílio de 1934 (Paróquia do Salvador, Rio Grande) pedindo que o novo bispo fosse escolhido
+    entre o clero nativo
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: >-
+      Assinaram o histórico memorial os reverendos Salomão Ferraz, George Upton Krischke, Nemésio de Almeida, João
+      Batista Barcellos da Cunha, Orlando Batista e Athalício Theodoro Pithan e os leigos Frontino Peixoto da Silveira
+      e José Luiz Albuquerque.
+    page: '188'

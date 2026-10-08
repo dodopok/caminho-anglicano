@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: anselmo-joao-stein
+name: Anselmo João Stein
+full_name: Anselmo João Stein
+ordinations:
+- order: diaconate
+  date: '1958'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1958 - … Anselmo João Stein
+    page: '371'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1958'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1958 - … Anselmo João Stein
+    page: '371'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

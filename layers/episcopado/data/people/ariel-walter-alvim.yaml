@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ariel-walter-alvim
+name: Ariel Walter Alvim
+full_name: Ariel Walter Alvim
+ordinations:
+- order: diaconate
+  date: '1975'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1975 - … Ariel Walter Alvim
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1975'
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1975 - … Ariel Walter Alvim
+    page: '372'
+  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

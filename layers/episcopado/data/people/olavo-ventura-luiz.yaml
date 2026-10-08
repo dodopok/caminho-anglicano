@@ -26,6 +26,16 @@ sources:
 - source: costa2021
   quote: Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária
 ordinations:
+- order: diaconate
+  date: '1969'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1969 - … Olavo Ventura Luiz
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: episcopate
   date: '1976-11-28'
   jurisdiction: ieab
@@ -64,10 +74,13 @@ affiliations:
   role: diocesan_bishop
   diocese: ieab-dso
   start: '1976'
-  end: '1993-03-09'
+  end: '1992'
   end_reason: death
   status: contested
   sources:
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1976-1992 - Olavo Ventura Luiz
+    page: '368'
   - source: costa2021
     quote: 1977-1992 – Olavo Ventura Luiz
   - source: wp-pt-dioc-sulocidental
@@ -76,6 +89,18 @@ affiliations:
     quote: >-
       Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária, contraída em Moçambique durante uma
       visita à Diocese dos Libombos.
+  discrepancies:
+  - field: end
+    value: '1993-03-09'
+    sources:
+    - source: costa2021
+      quote: 1977-1992 – Olavo Ventura Luiz
+    - source: wp-pt-dioc-sulocidental
+      quote: Olavo Ventura Luiz - 1977 a 1984
+    - source: costa2021
+      quote: >-
+        Faleceu em 09 de março de 1993, aos 53 anos de idade, vítima de malária, contraída em Moçambique durante
+        uma visita à Diocese dos Libombos.
   notes: >-
     Fim divergente: 1984 (Wikipedia PT), 1992 (Costa Anexo D) ou morte em 1993 (Costa texto: Jubal eleito em 1993
     para suceder Olavo, que faleceu).
@@ -84,8 +109,13 @@ affiliations:
   start: '1986'
   end: '1993-03-09'
   end_reason: death
-  status: contested
+  status: probable
   sources:
+  - source: kickhofel-1995
+    quote: >-
+      O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1986 - Olavo Ventura
+      Luiz (interino) 1986 - Olavo Ventura Luiz 1988 - Olavo Ventura Luiz 1990 - Olavo Ventura Luiz
+    page: '367'
   - source: costa2021
     quote: O Sínodo de 1986 o elegeu como Bispo Primaz, cargo que ocupou por dois anos.
   - source: costa2021
@@ -99,9 +129,11 @@ affiliations:
   - source: sinopse-2003
     quote: 1986 - Novo primaz, Olavo Ventura Luiz
   notes: >-
-    Fontes divergem: lista oficial (via Wikipedia EN) 1986-1992; Costa (Anexo E) interino 1986-1988 e titular 1988-1993
-    (grafado "Ventura Ruiz"); morreu em 09/03/1993. ENS (17/03/1993) diz que morreu em 8 de marco (Costa: 9 de marco)
-    e que se tornou primaz em 1984 (provavel confusao; Sherrill era primaz em exercicio em 1984).
+    O livro dá só o início de cada primado; o fim é o início do primado seguinte. Primeiro interino (1986), depois
+    eleito em 1986 e reeleito em 1988 e 1990. Fontes divergem: lista oficial (via Wikipedia EN) 1986-1992; Costa
+    (Anexo E) interino 1986-1988 e titular 1988-1993 (grafado "Ventura Ruiz"); morreu em 09/03/1993. ENS (17/03/1993)
+    diz que morreu em 8 de marco (Costa: 9 de marco) e que se tornou primaz em 1984 (provavel confusao; Sherrill
+    era primaz em exercicio em 1984).
 events:
 - type: death
   date: '1993-03-09'

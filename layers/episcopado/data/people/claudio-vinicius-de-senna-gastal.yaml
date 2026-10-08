@@ -26,6 +26,16 @@ sources:
 - source: costa2021
   quote: Faleceu em 23 de fevereiro de 2000.
 ordinations:
+- order: diaconate
+  date: '1968'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1968 - … Cláudio Vinicius de Senna Gastal
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: episcopate
   date: 1984-03
   place: Catedral da Santissima Trindade, Porto Alegre
@@ -61,6 +71,9 @@ affiliations:
     quote: Atuou como Bispo Diocesano da Diocese Meridional de 1984 a 1998.
   - source: costa2021
     quote: substituindo o bispo Cláudio Gastal, que se aposentou no ano seguinte.
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1984 - Cláudio Vinicius de Senna Gastal
+    page: '368'
   notes: Faleceu em 23/02/2000.
 - jurisdiction: ieab
   role: primate
@@ -72,6 +85,13 @@ affiliations:
     quote: 1993-1994 – Cláudio Vinícius de Senna Gastal (interino)
   - source: costa2021
     quote: E durante dois anos exerceu o cargo de Primaz da Igreja como interino.
+  - source: kickhofel-1995
+    quote: >-
+      O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1993 - Cláudio Vinicius
+      de Senna Gastal (interino)
+    page: '367'
+  notes: >-
+    O livro dá só o início de cada primado; o fim é o início do primado seguinte. Primaz interino (bispo sênior).
 events:
 - type: death
   date: 1984-03

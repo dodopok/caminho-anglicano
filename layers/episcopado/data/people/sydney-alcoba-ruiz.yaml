@@ -25,6 +25,16 @@ sources:
 - source: costa2021
   quote: Faleceu em 14 de novembro de
 ordinations:
+- order: diaconate
+  date: '1957'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1957 - … Sydney Alcoba Ruiz
+    page: '371'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: episcopate
   date: '1985-03-24'
   place: Igreja do Redentor, Rio de Janeiro
@@ -52,8 +62,11 @@ affiliations:
   diocese: ieab-darj
   start: '1985-03-24'
   end: '2000'
-  status: contested
+  status: probable
   sources:
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1985 - Sydney Alcoba Ruiz
+    page: '368'
   - source: costa2021
     quote: 1985-2000 – Sydney Alcoba Ruiz
   - source: costa2021

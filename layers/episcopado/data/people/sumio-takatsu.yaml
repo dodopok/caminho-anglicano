@@ -24,6 +24,16 @@ sources:
 - source: costa2021
   quote: Resignou ao episcopado em 1990, falecendo em 23 de janeiro de 2004.
 ordinations:
+- order: diaconate
+  date: '1955'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1955 - … Sumio Takatsu
+    page: '370'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: episcopate
   date: '1977-06-12'
   place: St. Paul's Church (Igreja de Sao Paulo), Sao Paulo
@@ -69,3 +79,6 @@ affiliations:
     quote: 1977-1989 – Sumio Takatsu
   - source: wp-pt-sumio
     quote: Permaneceu no cargo até sua renúncia, no final de 1989.
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1977-1989 - Sumio Takatsu
+    page: '368'

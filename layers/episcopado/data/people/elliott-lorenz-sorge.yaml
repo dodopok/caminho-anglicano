@@ -3,6 +3,7 @@ id: elliott-lorenz-sorge
 name: Elliott Lorenz Sorge
 full_name: Elliott Lorenz Sorge
 aliases:
+- Elliot Lorenz Sorge
 - Elliot Sorge
 - Rt. Rev. Elliott L. Sorge
 birth:
@@ -54,7 +55,7 @@ affiliations:
   start: '1971'
   end: '1977'
   end_reason: resignation
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: 1971-1977 – Elliott Lorenz Sorge
@@ -65,8 +66,18 @@ affiliations:
     quote: >-
       in Apostolic succession to the Rt. Rev. Elliott Sorge who resigned the see to become the staff officer to
       the Council on the Development of Ministry of the Episcopal Church.
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1971-1976 - Elliot Lorenz Sorge
+    page: '368'
   notes: >-
     Renunciou ao ser nomeado oficial no Centro da Igreja Episcopal (Nova York); depois bispo de Easton (TEC) 1983-1993.
+  discrepancies:
+  - field: end
+    value: '1976'
+    sources:
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Sul Central, São Paulo … 1971-1976 - Elliot Lorenz Sorge
+      page: '368'
 events:
 - type: other
   date: '1977'

@@ -36,6 +36,16 @@ sources:
 - source: wd-q112707967
   quote: Plinio Lauer Simões | episcopal Bishop
 ordinations:
+- order: diaconate
+  date: '1941'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1941 - … Plínio Lauer Simões
+    page: '370'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
   date: '1943'
   jurisdiction: dmsb
@@ -90,6 +100,9 @@ affiliations:
     quote: 1956-1975 – Plínio Lauer Simões
   - source: wp-pt-dioc-sulocidental
     quote: Plínio Lauer Simões - 1956 a 1975
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1956-1975 - Plínio Lauer Simões
+    page: '368'
 - jurisdiction: dmsob
   role: diocesan_bishop
   diocese: southwestern-brazil
@@ -110,7 +123,14 @@ affiliations:
   sources:
   - source: costa2021
     quote: 1971-1972 – Plínio Lauer Simões (interino)
-  notes: Primaz interino (Anexo E de Costa 2021); nao consta das listas oficiais de primazes.
+  - source: kickhofel-1995
+    quote: >-
+      O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1971 - Plínio Lauer Simões
+      (interino)
+    page: '367'
+  notes: >-
+    Primaz interino (Anexo E de Costa 2021); nao consta das listas oficiais de primazes. O livro dá só o início
+    de cada primado; o fim é o início do primado seguinte. Primaz interino (bispo sênior).
 events:
 - type: other
   date: '2008'

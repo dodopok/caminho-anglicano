@@ -235,6 +235,9 @@ affiliations:
     quote: 1956-1976 – Edmund Knox Sherrill
   - source: wp-pt-sherrill
     quote: Eleito em 1958 pela Convenção Geral da igreja americana para ser o novo bispo da Diocese Central
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Central, Rio de Janeiro … 1959-1976 - Edmund Knox Sherrill
+    page: '368'
   notes: Costa Anexo D da 1956 (erro; sagrado em 1959).
 - jurisdiction: ieab
   role: diocesan_bishop
@@ -242,16 +245,32 @@ affiliations:
   start: '1975'
   end: '1986'
   end_reason: retirement
-  status: probable
+  status: contested
   sources:
-  - source: costa2021
-    quote: 1976-1985 – Edmund Knox Sherrill
-  - source: ptwp-dar
-    quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
   - source: iab-poster-linhagem-meira
     quote: >-
       Edmund serviu no Distrito Missionário Central e, em 1975, tornou-se o primeiro bispo da recém-criada Diocese
       do Recife
+  - source: costa2021
+    quote: 1976-1985 – Edmund Knox Sherrill
+  - source: ptwp-dar
+    quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1976-1985 - Edmund Knox Sherrill
+    page: '368'
+  discrepancies:
+  - field: start
+    value: '1976'
+    sources:
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1976-1985 - Edmund Knox Sherrill
+      page: '368'
+  - field: end
+    value: '1985'
+    sources:
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Setentrional, Recife … 1976-1985 - Edmund Knox Sherrill
+      page: '368'
   notes: Datas divergem (1975/1976 a 1985/1986).
 - jurisdiction: ieab
   role: primate
@@ -270,7 +289,14 @@ affiliations:
       The acting Primate of the Church of Brazil is the Rt. Rev. Edmond Sherrill, bishop of the Northern Diocese.
   - source: cant-meninos-eu-vi-2004
     quote: era, então, primaz em exercício, com a morte do Bispo Kratz
-  notes: Primaz em exercicio/interino (bispo mais antigo).
+  - source: kickhofel-1995
+    quote: >-
+      O cargo de bispo primaz foi criado em 1965 … As datas indicam o início do primado. … 1984 - Edmund Knox Sherrill
+      (interino)
+    page: '367'
+  notes: >-
+    Primaz em exercicio/interino (bispo mais antigo). O livro dá só o início de cada primado; o fim é o início do
+    primado seguinte. Primaz interino (bispo sênior).
 events:
 - type: other
   date: '1985'

@@ -18,6 +18,16 @@ sources:
 - source: ieab-secretaria
   quote: Revmo. Bispo Almir dos Santos, Emérito
 ordinations:
+- order: diaconate
+  date: '1969'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1969 - … Almir dos Santos
+    page: '372'
+  notes: >-
+    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: episcopate
   date: '1989-04-09'
   place: Brasilia (previsto)
@@ -47,7 +57,7 @@ affiliations:
   diocese: ieab-dab
   start: 1988-04
   end: 2002-12
-  status: probable
+  status: contested
   sources:
   - source: wp-pt-dioc-brasilia
     quote: Almir dos Santos - abril de 1988 a dezembro de 2002;
@@ -57,7 +67,17 @@ affiliations:
     quote: >-
       elected the Rev. Almir dos Santos, rector of Jesus Christ parish in Erechim, Brazil, bishop of the missionary
       diocese of Brasilia. He will succeed the Rt. Rev. Agostino S6ria who has announced his resignation for December.
+  - source: kickhofel-1995
+    quote: BISPOS DIOCESANOS Diocese Missionária de Brasília … 1989 - Almir dos Santos
+    page: '368'
   notes: Sagrado so em 09/04/1989.
+  discrepancies:
+  - field: start
+    value: '1989'
+    sources:
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Missionária de Brasília … 1989 - Almir dos Santos
+      page: '368'
 - jurisdiction: ieab
   role: other
   role_description: bispo_encarregado
