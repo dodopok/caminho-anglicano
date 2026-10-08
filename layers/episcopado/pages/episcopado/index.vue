@@ -9,11 +9,11 @@
         <button type="button" :aria-pressed="filters.scope === 'all'" @click="filters.scope = 'all'">Rede inteira</button>
       </div>
       <div class="flex flex-none items-center gap-3.5" role="group" aria-label="Filtros">
-        <button v-for="f in SWITCHES.slice(0, 2)" :key="f.label" type="button" role="switch" class="ep-switch" :aria-checked="f.get()" @click="f.toggle()">
+        <button v-for="f in SWITCHES.slice(0, 3)" :key="f.label" type="button" role="switch" class="ep-switch" :aria-checked="f.get()" @click="f.toggle()">
           <span class="ep-switch-track" aria-hidden="true"><span class="ep-switch-knob" /></span>{{ f.label }}
         </button>
         <span class="mx-0.5 h-4 w-px bg-ep-line" aria-hidden="true" />
-        <button v-for="f in SWITCHES.slice(2)" :key="f.label" type="button" role="switch" class="ep-switch" :aria-checked="f.get()" @click="f.toggle()">
+        <button v-for="f in SWITCHES.slice(3)" :key="f.label" type="button" role="switch" class="ep-switch" :aria-checked="f.get()" @click="f.toggle()">
           <span class="ep-switch-track" aria-hidden="true"><span class="ep-switch-knob" /></span>{{ f.label }}
         </button>
       </div>
@@ -42,7 +42,7 @@
             <span class="font-semibold text-ep-garnet">{{ i + 1 }}.</span><span>{{ t }}</span>
           </li>
         </ol>
-        <p class="mt-2.5 text-xs leading-normal text-ep-muted">A vista inicial mostra o núcleo brasileiro. Troque para “Rede inteira” para ver a sucessão histórica fora do país.</p>
+        <p class="mt-2.5 text-xs leading-normal text-ep-muted">A vista inicial mostra o núcleo brasileiro. Troque para “Rede inteira” para ver a sucessão histórica fora do país. Desligue “Dioceses” para ver só igrejas, províncias e comunhões: as ligações de cada diocese passam para a igreja a que ela pertence.</p>
 
         <h3 class="ep-eyebrow mt-4">Comece por aqui</h3>
         <ul class="mt-2 flex flex-wrap gap-1.5">
@@ -95,6 +95,7 @@
             :groups="filters.groups"
             :show-people="filters.showPeople"
             :show-jurisdictions="filters.showJurisdictions"
+            :show-dioceses="filters.showDioceses"
             :scope="filters.scope"
             :controls="false"
             @select="select"
@@ -307,6 +308,7 @@ const year = computed(() => (yearInput.value >= yearRange.value.max ? null : yea
 const HIDE_KEYS = {
   pessoas: (v: boolean) => (filters.value.showPeople = v),
   jurisdicoes: (v: boolean) => (filters.value.showJurisdictions = v),
+  dioceses: (v: boolean) => (filters.value.showDioceses = v),
   ordenacoes: (v: boolean) => (filters.value.groups.ordinations = v),
   vinculos: (v: boolean) => (filters.value.groups.affiliations = v),
   relacoes: (v: boolean) => (filters.value.groups.relations = v)
@@ -318,10 +320,11 @@ if (typeof route.query.ocultar === 'string') {
   for (const key of Object.keys(HIDE_KEYS) as (keyof typeof HIDE_KEYS)[]) HIDE_KEYS[key](!route.query.ocultar.split(',').includes(key))
 }
 
-/** Interruptores da barra de filtros (os dois primeiros filtram nós; os outros, tipos de ligação). */
+/** Interruptores da barra de filtros (os três primeiros filtram nós; os outros, tipos de ligação). */
 const SWITCHES = [
   { label: 'Pessoas', get: () => filters.value.showPeople, toggle: () => (filters.value.showPeople = !filters.value.showPeople) },
   { label: 'Jurisdições', get: () => filters.value.showJurisdictions, toggle: () => (filters.value.showJurisdictions = !filters.value.showJurisdictions) },
+  { label: 'Dioceses', get: () => filters.value.showDioceses, toggle: () => (filters.value.showDioceses = !filters.value.showDioceses) },
   { label: 'Ordenações', get: () => filters.value.groups.ordinations, toggle: () => (filters.value.groups.ordinations = !filters.value.groups.ordinations) },
   { label: 'Vínculos', get: () => filters.value.groups.affiliations, toggle: () => (filters.value.groups.affiliations = !filters.value.groups.affiliations) },
   { label: 'Cismas e filiações', get: () => filters.value.groups.relations, toggle: () => (filters.value.groups.relations = !filters.value.groups.relations) }
@@ -359,7 +362,7 @@ const starters = computed(() => {
 function buildQuery() {
   const hidden = (Object.keys(HIDE_KEYS) as (keyof typeof HIDE_KEYS)[]).filter((k) => {
     const f = filters.value
-    return { pessoas: !f.showPeople, jurisdicoes: !f.showJurisdictions, ordenacoes: !f.groups.ordinations, vinculos: !f.groups.affiliations, relacoes: !f.groups.relations }[k]
+    return { pessoas: !f.showPeople, jurisdicoes: !f.showJurisdictions, dioceses: !f.showDioceses, ordenacoes: !f.groups.ordinations, vinculos: !f.groups.affiliations, relacoes: !f.groups.relations }[k]
   })
   return {
     ...(selected.value ? { no: selected.value } : {}),

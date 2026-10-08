@@ -123,21 +123,26 @@ affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: bishop
   start: '2012-03-17'
-  end: '2018'
+  end: '2018-05-12'
+  end_reason: transfer
   status: confirmed
   sources:
   - source: dar-sagracao-2012-quadro
     quote: DOM FLÁVIO ADAIR BISPO SUFRAGÂNEO 1ª REGIÃO ECLESIÁSTICA
   - source: adr-bispos-2017
     quote: Bispo Sufragâneo Revmo. Flávio Adair Torres Soares
+  - source: gafcon-2017-anglican-renewal
+    quote: Bishop Flavio Adair Torres Soares, a suffragan bishop of the Anglican Church of Recife
+  - source: g1-2012-02-29-velorio
+    quote: pelos dois bispos auxiliares Flávio Aldair e Evilásio Tenório
   - source: costa2021
     quote: >-
       em 04 de junho de 2011, o Concílio elegeu os reverendos Flávio Adair e Evilásio Tenório como bispos sufragâneos.
     page: '230'
   notes: >-
     Local: 1ª Região Eclesiástica. Bispo sufragâneo até a criação da IAB (2018), quando passa à Região Missionária
-    (vínculo já registrado). Tese grafa 'Flávio Adair' (Flávio Adair Torres Soares na base). Data de sagração não
-    informada.
+    (vínculo já registrado). Local: Diocese Anglicana do Recife (sufragâneo/auxiliar). Tese grafa 'Flávio Adair'
+    (Flávio Adair Torres Soares na base). Data de sagração não informada.
   discrepancies:
   - field: start
     value: '2011'
@@ -146,18 +151,6 @@ affiliations:
       quote: >-
         em 04 de junho de 2011, o Concílio elegeu os reverendos Flávio Adair e Evilásio Tenório como bispos sufragâneos.
       page: '230'
-- jurisdiction: diocese-anglicana-recife
-  role: bishop
-  diocese: ieab-dar
-  start: '2012-03-17'
-  end: '2018-05-12'
-  end_reason: transfer
-  status: probable
-  sources:
-  - source: gafcon-2017-anglican-renewal
-    quote: Bishop Flavio Adair Torres Soares, a suffragan bishop of the Anglican Church of Recife
-  - source: g1-2012-02-29-velorio
-    quote: pelos dois bispos auxiliares Flávio Aldair e Evilásio Tenório
 - jurisdiction: iab
   role: bishop
   diocese: iab-regiao-missionaria

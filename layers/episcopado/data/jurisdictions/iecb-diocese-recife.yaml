@@ -3,6 +3,7 @@ id: iecb-diocese-recife
 name: Diocese do Recife (IECB)
 aliases:
 - Diocese do Recife
+- Diocese do Recife – Catedral da Trindade
 type: diocese
 tradition: anglican
 country: BR
@@ -11,6 +12,8 @@ relations:
   target: iecb
   status: probable
   sources:
+  - source: ptwiki-iecb
+    quote: A IECB segue a forma de governo episcopal, tendo como Bispo Primaz, o Arcebispo Paulo Ruiz Garcia.
   - source: ptwiki-iecb
     quote: André Novaes de Albuquerque Cavalcanti (2009)
   - source: cant-novas-igrejas-2024

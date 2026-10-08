@@ -189,6 +189,11 @@ export const Jurisdiction = z.strictObject({
     'religious_order',
     'other'
   ]),
+  /**
+   * Força o nível no grafo quando a regra automática erra: true = diocese que funciona como igreja
+   * (continua visível com as dioceses ocultas); false = igreja nacional que é só uma diocese de outra.
+   */
+  acts_as_church: z.boolean().optional(),
   tradition: z
     .enum([
       'anglican',

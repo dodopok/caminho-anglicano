@@ -46,6 +46,9 @@
         "other"
       ]
     },
+    "acts_as_church": {
+      "type": "boolean"
+    },
     "tradition": {
       "type": "string",
       "enum": [

@@ -32,6 +32,8 @@ export interface GraphNode {
   country?: string
   /** Faz parte do núcleo brasileiro: jurisdição no Brasil ou pessoa vinculada a uma. */
   brazil?: boolean
+  /** Jurisdição de nível diocesano: some quando as dioceses estão ocultas (as ligações sobem para a igreja). */
+  diocesan?: boolean
 }
 
 export interface GraphEdge {
@@ -42,6 +44,11 @@ export interface GraphEdge {
   status: 'confirmed' | 'probable' | 'contested'
   year?: number
   label?: string
+  /**
+   * Cópia de uma ligação com uma diocese, levada para a igreja a que ela pertence.
+   * Só aparece com as dioceses ocultas (no lugar da original).
+   */
+  rollup?: boolean
 }
 
 export interface Graph {
@@ -173,5 +180,89 @@ export function buildGraph(base: Base): Graph {
     }
   }
 
+  edges.push(...rollupEdges(base, nodes, edges, countryOf))
   return { nodes, edges }
+}
+
+const DIOCESAN_TYPES = new Set<TJurisdiction['type']>(['diocese', 'missionary_district'])
+
+interface ParentLink {
+  target: string
+  from?: number
+  to?: number
+}
+
+/**
+ * Marca as jurisdições de nível diocesano e cria as ligações que as substituem quando as dioceses
+ * estão ocultas. Uma diocese funciona como igreja (e fica visível) quando não pertence a nenhuma
+ * igreja, quando todas as igrejas a que pertence são de outro país (é a igreja local: o Distrito
+ * Missionário do Sul do Brasil, a Diocese do Recife sob o Cone Sul) ou quando `acts_as_church` diz.
+ */
+function rollupEdges(base: Base, nodes: GraphNode[], edges: GraphEdge[], countryOf: (id: string) => string | undefined): GraphEdge[] {
+  const byId = new Map(base.jurisdictions.map((j) => [j.id, j]))
+  const links = new Map<string, ParentLink[]>()
+  const addLink = (child: string, link: ParentLink) => {
+    if (child === link.target || !byId.has(link.target)) return
+    const list = links.get(child) ?? []
+    if (!list.some((l) => l.target === link.target && l.from === link.from && l.to === link.to)) list.push(link)
+    links.set(child, list)
+  }
+  for (const j of base.jurisdictions) {
+    for (const r of j.relations ?? []) {
+      if (r.type === 'part_of') addLink(j.id, { target: r.target, from: r.date ? yearOf(r.date) : undefined, to: r.end ? yearOf(r.end) : undefined })
+    }
+  }
+  for (const p of base.people) for (const a of p.affiliations ?? []) if (a.diocese) addLink(a.diocese, { target: a.jurisdiction })
+
+  const diocesan = new Set<string>()
+  for (const j of base.jurisdictions) {
+    const parents = links.get(j.id) ?? []
+    const isDiocesan =
+      j.acts_as_church !== undefined
+        ? !j.acts_as_church
+        : DIOCESAN_TYPES.has(j.type) && parents.some((l) => countryOf(l.target) === countryOf(j.id))
+    if (isDiocesan) diocesan.add(j.id)
+  }
+  for (const n of nodes) if (n.kind === 'jurisdiction' && diocesan.has(n.id.slice(2))) n.diocesan = true
+
+  const existsIn = (id: string, year: number) => {
+    const j = byId.get(id)
+    const start = j?.founded?.date ? yearOf(j.founded.date) : undefined
+    const end = j?.dissolved?.date ? yearOf(j.dissolved.date) : undefined
+    return (start === undefined || start <= year) && (end === undefined || year <= end)
+  }
+
+  /** Igrejas visíveis acima da jurisdição; com o ano, só as ligações em vigor (se alguma estiver). */
+  const churchesOf = (id: string, year: number | undefined, seen = new Set<string>()): string[] => {
+    if (!diocesan.has(id)) return [id]
+    if (seen.has(id)) return []
+    seen.add(id)
+    // Com o ano: descarta igrejas que ainda não existiam ou já tinham acabado e prefere as ligações datadas em vigor.
+    const existed = (l: ParentLink) => year === undefined || existsIn(l.target, year)
+    const all = (links.get(id) ?? []).filter(existed)
+    const inForce = year === undefined ? [] : all.filter((l) => (l.from ?? -Infinity) <= year && year <= (l.to ?? Infinity) && (l.from !== undefined || l.to !== undefined))
+    const chosen = inForce.length ? inForce : all.length ? all : (links.get(id) ?? [])
+    return [...new Set(chosen.flatMap((l) => churchesOf(l.target, year, seen)))]
+  }
+
+  const key = (e: Pick<GraphEdge, 'from' | 'to' | 'kind'>) => `${e.from}>${e.to}>${e.kind}`
+  const existing = new Set(edges.map(key))
+  const out: GraphEdge[] = []
+  const ends = (nid: string, year: number | undefined) =>
+    nid.startsWith('j:') && diocesan.has(nid.slice(2)) ? churchesOf(nid.slice(2), year).map((id) => nodeId('jurisdiction', id)) : [nid]
+  for (const e of edges) {
+    const fromDiocesan = e.from.startsWith('j:') && diocesan.has(e.from.slice(2))
+    const toDiocesan = e.to.startsWith('j:') && diocesan.has(e.to.slice(2))
+    // A estrutura da própria diocese (de que igreja ela é parte) some junto com ela.
+    if ((!fromDiocesan && !toDiocesan) || (e.kind === 'part_of' && fromDiocesan)) continue
+    for (const from of ends(e.from, e.year)) {
+      for (const to of ends(e.to, e.year)) {
+        const copy = { ...e, from, to, rollup: true as const }
+        if (from === to || existing.has(key(copy))) continue
+        existing.add(key(copy))
+        out.push(copy)
+      }
+    }
+  }
+  return out
 }

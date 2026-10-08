@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iecb-diocese-vitoria
+name: Diocese de Vitória de Santo Antão (IECB)
+aliases:
+- Diocese de Vitória de Santo Antão
+- Diocese de Vitória de Santo Antão (Catedral Pedra Viva)
+type: diocese
+tradition: anglican
+country: BR
+relations:
+- type: part_of
+  target: iecb
+  status: probable
+  sources:
+  - source: ptwiki-iecb
+    quote: e Frederico Carneiro Rêgo Bastos, da Diocese de Vitória de Santo Antão
+  - source: ptwiki-iecb
+    quote: Jean Clayton de Albuquerque do Nascimento (2020)
+  - source: ptwiki-iecb
+    quote: Felipe Alves da Silva (2024)
+  - source: cant-novas-igrejas-2024
+    quote: Frederico Carneiro Rêgo Bastos (Diocesano de Vitória de Santo Antão)
+    page: '55'
+  - source: cant-novas-igrejas-2024
+    quote: Jean Clayton de Albuquerque do Nascimento (Auxiliar da Diocese de Vitória de Santo Antão)
+    page: '57'
