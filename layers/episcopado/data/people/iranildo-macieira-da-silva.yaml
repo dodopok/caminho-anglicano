@@ -7,21 +7,113 @@ aliases:
 - Dom Lucas Macieira
 - Iranildo Macieira da Silva
 - Iranildo Macieira das Silva
+birth:
+  date: '1974-04-17'
+  sources:
+  - source: pasc-arcebispo-primaz
+    quote: >-
+      Nascido Iranildo Macieira da Silva, (Fortaleza, 17 de abril de 1974) é um bispo da Igreja Episcopal Latina
+      do Brasil.
+biography: >-
+  Ex-seminarista da Arquidiocese de Fortaleza e diácono da ICAB (até 2000); bispo vétero-católico (2004) e fundador
+  da Igreja Episcopal Latina do Brasil.
+sources:
+- source: pasc-arcebispo-primaz
+  quote: >-
+    Nascido Iranildo Macieira da Silva, (Fortaleza, 17 de abril de 1974) é um bispo da Igreja Episcopal Latina do
+    Brasil.
 ordinations:
+- order: diaconate
+  date: null
+  jurisdiction: icab
+  status: probable
+  sources:
+  - source: pasc-arcebispo-primaz
+    quote: >-
+      Foi seminarista da Arquidiocese de Fortaleza e mais tarde tornou-se diácono da Igreja Católica Apostólica
+      Brasileira, de onde retirou-se em 2000.
 - order: episcopate
   date: '2004-10-24'
   place: Portugal
   jurisdiction: null
   principal_consecrator: antonio-jose-da-costa-raposo
   co_consecrators:
+  - anthony-chadwick
   - antonin-jelinek
   status: contested
   sources:
+  - source: pasc-arcebispo-primaz
+    quote: >-
+      Neste mesmo ano ingressa na Igreja Vétero-Católica, onde foi sagrado Bispo no Brasil, em 2004, porém neste
+      mesmo período tem sua sagração contestada e é novamente sagrado em Portugal pelas mãos dos bispos Vétero Católicos
+      Dom Antônio José da Costa Raposo (de Portugal) e Dom Antonin Jelinek, bispo primaz da República Checa.
+  - source: pasc-arcebispo-primaz
+    quote: >-
+      Sagração Episcopal de Sua Eminência Dom Lucas Macieira em Portugal, pelas mãos do Senhor Arcebispo Primaz
+      de Portugal Patriarca Dom José Antonio da Costa Raposo Foi co-celebrante da sagração episcopal Dom Antonin
+      Jelinek Bispo Primaz da República Checa e também o Senhor Arcebispo da França bishop Anthony Chadwick.
   - source: cant-novas-igrejas-2024
     quote: >-
       foi novamente sagrado em Portugal, no dia 24 de outubro de 2004, pelas mãos dos bispos de tradição vétero-católica
       dom Antônio José da Costa Raposo (de Portugal), dom Antonin Jelinek, bispo primaz da República Checa
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
+      Apostólica Episcopal Portuguesa
+  discrepancies:
+  - field: date
+    value: '2004-09-26'
+    sources:
+    - source: cant-novas-igrejas-2024
+      quote: >-
+        A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja
+        Apostólica Episcopal Portuguesa
   notes: >-
-    CONTESTADO: o mesmo livro (cap. Igreja Episcopal Latina do Brasil) diz "A sagração episcopal dom Lucas Macieira
-    ocorreu em 26 de setembro de 2004 em Portugal, por bispos da Igreja Apostólica Episcopal Portuguesa". Houve
-    também uma sagração anterior no Brasil (2004), contestada. A lista de sagrantes no trecho continua (truncada).
+    O site chama Jelinek e Chadwick ("Arcebispo da França") de co-celebrantes da sagração. CONTESTADO: o mesmo livro
+    (cap. Igreja Episcopal Latina do Brasil) diz "A sagração episcopal dom Lucas Macieira ocorreu em 26 de setembro
+    de 2004 em Portugal, por bispos da Igreja Apostólica Episcopal Portuguesa". Houve também uma sagração anterior
+    no Brasil (2004), contestada. A lista de sagrantes no trecho continua (truncada). Versão do capítulo "Igreja
+    Episcopal Latina do Brasil" do mesmo livro.
+affiliations:
+- jurisdiction: ielb
+  role: founder
+  start: 2004-12
+  status: probable
+  sources:
+  - source: pasc-arcebispo-primaz
+    quote: >-
+      Já em dezembro do mesmo ano o mesmo funda a Igreja Episcopal Latina do Brasil, uma Igreja de corrente Anglo-Católica
+      independente no Brasil.
+- jurisdiction: ielb
+  role: primate
+  start: 2004-12
+  status: probable
+  sources:
+  - source: pasc-arcebispo-primaz
+    quote: >-
+      Nascido Iranildo Macieira da Silva, (Fortaleza, 17 de abril de 1974) é um bispo da Igreja Episcopal Latina
+      do Brasil. … Já em dezembro do mesmo ano o mesmo funda a Igreja Episcopal Latina do Brasil, uma Igreja de
+      corrente Anglo-Católica independente no Brasil.
+- jurisdiction: icab
+  role: deacon
+  end: '2000'
+  end_reason: left
+  status: probable
+  sources:
+  - source: pasc-arcebispo-primaz
+    quote: >-
+      Foi seminarista da Arquidiocese de Fortaleza e mais tarde tornou-se diácono da Igreja Católica Apostólica
+      Brasileira, de onde retirou-se em 2000.
+events:
+- type: other
+  date: '2000'
+  description: >-
+    Ingressou na Igreja Vétero-Católica, onde foi sagrado bispo no Brasil em 2004; a sagração foi contestada e ele
+    foi sagrado de novo em Portugal
+  status: probable
+  sources:
+  - source: pasc-arcebispo-primaz
+    quote: >-
+      Neste mesmo ano ingressa na Igreja Vétero-Católica, onde foi sagrado Bispo no Brasil, em 2004, porém neste
+      mesmo período tem sua sagração contestada e é novamente sagrado em Portugal pelas mãos dos bispos Vétero Católicos
+      Dom Antônio José da Costa Raposo (de Portugal) e Dom Antonin Jelinek, bispo primaz da República Checa.
