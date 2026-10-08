@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sammy-nagib
+name: Sammy Nagib
+biography: >-
+  Presbítero listado(a) na equipe pastoral da diocese liderada por Márcio Simões (IAB), vinculado(a) à Igreja Anglicana
+  Refúgio.
+sources:
+- source: dv-pastores
+  quote: Rev. Sammy Nagib Igreja Anglicana Refúgio
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: dv-pastores
+    quote: Rev. Sammy Nagib Igreja Anglicana Refúgio
+  notes: 'Local: Igreja Anglicana Refúgio. Lista da equipe pastoral no site da diocese; sem datas.'

@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: steele-wade-martin
+name: Steele Wade Martin
+full_name: Steele Wade Martin
+birth:
+  date: '1926-08-31'
+  sources:
+  - source: rta-ecd1962
+    quote: b Chicago 111 31 Aug 26
+biography: >-
+  Presbítero norte-americano, professor no Seminário de Porto Alegre (1959-60) e depois na Escola Santa Hilda e
+  ministro-encarregado de São Lucas, Vila Maria (São Paulo), desde 1960.
+sources:
+- source: rta-ecd1962
+  quote: b Chicago 111 31 Aug 26
+ordinations:
+- order: diaconate
+  date: 1951-05
+  jurisdiction: tec
+  ordained_by: wallace-edmonds-conkling
+  status: probable
+  sources:
+  - source: rta-ecd1962
+    quote: D May 51 P May 52 Bp Conkling
+  notes: >-
+    Ordenado nos Estados Unidos; missionário no Brasil entre 1959 e 1960 pelo diretório. O diretório diz só "Bp
+    Conkling", que era Wallace Edmonds Conkling, bispo de Chicago.
+- order: presbyterate
+  date: 1952-05
+  jurisdiction: tec
+  ordained_by: wallace-edmonds-conkling
+  status: probable
+  sources:
+  - source: rta-ecd1962
+    quote: D May 51 P May 52 Bp Conkling
+  notes: >-
+    Ver nota do diaconato. O diretório diz só "Bp Conkling", que era Wallace Edmonds Conkling, bispo de Chicago.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1959'
+  end: '1960'
+  status: probable
+  sources:
+  - source: rta-ecd1962
+    quote: MARTIN, STEELE WADE (CBra)
+  notes: >-
+    Local: Brasil Central, São Paulo. Em Porto Alegre em 1959-60, depois na Igreja de São Lucas, Vila Maria (São
+    Paulo), a partir de 1960; 'fim' é apenas o último ano de cada função citada, não o desligamento.

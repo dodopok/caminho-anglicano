@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: alistair-bate
+name: Alistair Bate
+aliases:
+- Dom Alistair Bate OSBA
+biography: >-
+  Apresentado pelo blog brasileiro da Santa Igreja Celta Internacional como fundador da igreja em 2013 e seu primus.
+sources:
+- source: rta-sici-blog
+  quote: >-
+    A Santa Igreja Celta Internacional nasceu em 2013 graças ao trabalho do próprio Reverendo + Dom Alistair Bate
+    OSBA (csr), MA Div. Quem se tornou seu primus e ainda é hoje.
+affiliations:
+- jurisdiction: sici
+  role: other
+  role_description: primus
+  start: '2013'
+  status: probable
+  sources:
+  - source: rta-sici-blog
+    quote: Quem se tornou seu primus e ainda é hoje.
+  notes: Informação do blog do ramo brasileiro, com postagem de 11/06/2019.

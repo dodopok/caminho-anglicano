@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: petrus-johannes-meindaerts
+name: Petrus Johannes Meindaerts
+ordinations:
+- order: episcopate
+  date: '1739-10-18'
+  place: Utrecht
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: dominique-marie-varlet
+  status: confirmed
+  sources:
+  - source: lin-wp-en-meindaerts
+    quote: >-
+      On 18 October 1739 he was consecrated by Bishop Dominique Marie Varlet , former Roman Catholic Bishop of the
+      Diocese of Babylon.
+  - source: lin-neale
+    quote: 4 Peter John Meindaerts Oct. 18, 1739 Oct. 31, 1767 Dominic Varlet, Bishop of Babylon.
+  - source: lin-wp-nl-meindaerts
+    quote: >-
+      Op 2 juli 1739 werd hij tot aartsbisschop van Utrecht gekozen en op 18 oktober van hetzelfde jaar gewijd door
+      de gesuspendeerde Franse bisschop Dominique Marie Varlet
+  notes: >-
+    Arcebispo de Utrecht (1739-1767). Morningstar dá 17/10/1739; as demais fontes, 18/10/1739. Depois de Meindaerts,
+    todos os bispos vétero-católicos holandeses derivam sua sucessão dele (Wikipédia EN).

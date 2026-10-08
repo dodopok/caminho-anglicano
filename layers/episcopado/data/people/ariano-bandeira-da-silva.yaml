@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ariano-bandeira-da-silva
+name: Ariano Bandeira da Silva
+birth:
+  date: '1970-05-29'
+  sources:
+  - source: rtb-ieab-ariano-2021
+    quote: Meu nome é Ariano Bandeira da Silva, nascido em 29 de maio de 1970, em Canguçu/RS.
+biography: >-
+  Presbítero da Diocese Anglicana de Pelotas (IEAB); nascido em Canguçu/RS; ordenado diácono (2005) e presbítero
+  (2007) na Igreja Católica Romana, recebido na IEAB em 2017 e com ordens reconhecidas em 28/02/2021.
+sources:
+- source: rtb-ieab-ariano-2021
+  quote: Meu nome é Ariano Bandeira da Silva, nascido em 29 de maio de 1970, em Canguçu/RS.
+ordinations:
+- order: diaconate
+  date: 2005-12
+  jurisdiction: icr
+  status: probable
+  sources:
+  - source: rtb-ieab-ariano-2021
+    quote: Em dezembro de 2005 fui ordenado ao diaconato e, em março de 2007, ao presbiterado.
+  notes: >-
+    Ordenação na Igreja Católica Romana (seminário São Francisco de Paula, Pelotas); ordenante não informado.
+- order: presbyterate
+  date: 2007-03
+  jurisdiction: icr
+  status: probable
+  sources:
+  - source: rtb-ieab-ariano-2021
+    quote: Em dezembro de 2005 fui ordenado ao diaconato e, em março de 2007, ao presbiterado.
+  notes: >-
+    Ordenação na Igreja Católica Romana; ordenante não informado. Deixou o ministério ordenado por volta de 2009.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dap
+  start: '2017'
+  status: probable
+  sources:
+  - source: rtb-dapsul-clero
+    quote: Rev. Ariano Bandeira da Silva
+  - source: rtb-ieab-ariano-2021
+    quote: >-
+      Em 2017, fui recebido na nossa IEAB pelo bispo Renato Raatz, e tive as minhas ordens reconhecidas no dia 28
+      de fevereiro deste ano, pela nossa bispa Meriglei Borges Simin.
+  notes: >-
+    Lista atual do clero da diocese; atuação: Paróquia do Divino Semeador – Pelotas/RS. A página não traz datas
+    nem ordenante. Recebido em 2017 pelo bispo Renato Raatz; ordens reconhecidas em 28/02/2021 (a matéria é de 19/12/2021)
+    pela bispa Meriglei Simim. Antes, ligara-se à IEAB desde 1995 (Missão São Mateus, Canguçu) e saiu c. 2004 para
+    a Igreja Católica.
+events:
+- type: other
+  date: '2021-02-28'
+  description: >-
+    Ariano Bandeira da Silva tem suas ordens (diaconato e presbiterato recebidos na Igreja Católica Romana) reconhecidas
+    na IEAB pela bispa Meriglei Simim em 28/02/2021.
+  status: probable
+  sources:
+  - source: rtb-ieab-ariano-2021
+    quote: >-
+      tive as minhas ordens reconhecidas no dia 28 de fevereiro deste ano, pela nossa bispa Meriglei Borges Simin.

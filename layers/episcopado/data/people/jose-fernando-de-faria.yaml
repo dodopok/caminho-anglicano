@@ -8,9 +8,9 @@ aliases:
 birth:
   date: '1968-05-16'
   sources:
-  - source: lvc-ivcm-clero
+  - source: rta-ivcm-clerigos
     quote: +++Jose Fernando de Faria Nasc.16/05/1968
-  - source: lvc-ivcm-site
+  - source: lin-ivcm
     quote: >-
       Em 25/08/2023 José Fernando de Faria foi eleito e aclamado Patriarca da Igreja Veterocatólica Missionária
   - source: lvc-iaces-clero
@@ -56,11 +56,11 @@ ordinations:
     quote: >-
       Ordenação Episcopal Ratificada em 02/11/2019 por + Dom Leonardo Marin Saavedra, IAL-US (Igreja Anglicana Latina
       Americana)
-  - source: lvc-ivcm-site
+  - source: lin-ivcm
     quote: >-
       James Antônio Roque, bispo sênior titular da diocese do Japi da cidade de Jundiaí, Estado de São Paulo, Brasil
       que em 22 de novembro de 2020 consagrou;
-  - source: lvc-ivcm-site
+  - source: lin-ivcm
     quote: foi consagrado bispo na Capela da Guarda Civil Metropolitana na Cidade de São Paulo
   - source: lvc-iaces-clero
     quote: >-
@@ -164,29 +164,29 @@ ordinations:
   - field: date
     value: '2020-11-22'
     sources:
-    - source: lvc-ivcm-site
+    - source: lin-ivcm
       quote: >-
         James Antônio Roque, bispo sênior titular da diocese do Japi da cidade de Jundiaí, Estado de São Paulo,
         Brasil que em 22 de novembro de 2020 consagrou;
-    - source: lvc-ivcm-site
+    - source: lin-ivcm
       quote: foi consagrado bispo na Capela da Guarda Civil Metropolitana na Cidade de São Paulo
   - field: place
     value: Capela da Guarda Civil Metropolitana, São Paulo (SP)
     sources:
-    - source: lvc-ivcm-site
+    - source: lin-ivcm
       quote: >-
         James Antônio Roque, bispo sênior titular da diocese do Japi da cidade de Jundiaí, Estado de São Paulo,
         Brasil que em 22 de novembro de 2020 consagrou;
-    - source: lvc-ivcm-site
+    - source: lin-ivcm
       quote: foi consagrado bispo na Capela da Guarda Civil Metropolitana na Cidade de São Paulo
   - field: principal_consecrator
     value: james-antonio-roque
     sources:
-    - source: lvc-ivcm-site
+    - source: lin-ivcm
       quote: >-
         James Antônio Roque, bispo sênior titular da diocese do Japi da cidade de Jundiaí, Estado de São Paulo,
         Brasil que em 22 de novembro de 2020 consagrou;
-    - source: lvc-ivcm-site
+    - source: lin-ivcm
       quote: foi consagrado bispo na Capela da Guarda Civil Metropolitana na Cidade de São Paulo
   notes: >-
     Data e cidade concordam entre a lista de clero da IACES (que nomeia os sagrantes) e a nota da ICA de 30/07/2018,
@@ -242,7 +242,7 @@ affiliations:
   start: '2023-08-25'
   status: probable
   sources:
-  - source: lvc-ivcm-site
+  - source: lin-ivcm
     quote: >-
       Em 25/08/2023 José Fernando de Faria foi eleito e aclamado Patriarca da Igreja Veterocatólica Missionária
       – IVCM, na cidade de Paracambi – RJ
@@ -319,6 +319,22 @@ events:
   - source: lica-iaces-historia
     quote: fora elevado ao encargo de Arcebispo do Brasil e Primaz de toda a América do Sul em 11/10/2018
 - type: other
+  date: '2019-11-01'
+  description: >-
+    Segundo a página oficial da IACES, a ordenação episcopal de José Fernando de Faria (ordenante principal Ricardo
+    Vicente dos Anjos, co-ordenantes Jorge dos Santos Costa e Altamiro Pereira do Amaral) foi ratificada pelo arcebispo
+    Leonardo Marin Saavedra no 'Instituto Josefino', em Fortaleza (CE), em 01/11/2019.
+  status: contested
+  sources:
+  - source: rta-iaces-metropolitano
+    quote: >-
+      no "Instituto Josefino" (das irmãs Josefinas da Igreja Romana) em 01/11/2019 cidade de Fortaleza, Ceará, Brasil.
+  - source: rta-iaces-metropolitano
+    quote: >-
+      Dom Jorge dos Santos Costa que foi um dos bispos co-ordenantes da ordenação episcopal de Dom José Fernando
+      de Faria, juntamente com Dom Altamiro Pereira do Amaral e pelo ordenante principal Dom Ricardo Vicente dos
+      Anjos.
+- type: other
   date: '2021-04-13'
   description: >-
     Registro da IVCM (Igreja Veterocatólica Missionária) no CNPJ em Vila Velha (ES), em 13/04/2021, tendo José Fernando
@@ -358,5 +374,5 @@ events:
     quote: >-
       Vagner Antônio Nunes Reverendo Presbítero Ordenado em 21/07/2019 em SP Natural: Piedade - SP Bispo Ordenante:
       + Dom Marcos Vinicius de Souza, CASF
-  - source: lvc-ivcm-clero
+  - source: rta-ivcm-clerigos
     quote: Vagner Antonio Nunes Nasc.02/10/1979

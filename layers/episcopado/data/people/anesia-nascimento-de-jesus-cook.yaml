@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: anesia-nascimento-de-jesus-cook
+name: Anésia Nascimento de Jesus-Cook
+ordinations:
+- order: diaconate
+  date: '1992-04-12'
+  place: Paróquia da Benção Divina, São Francisco de Paula (RS)
+  jurisdiction: ieab
+  ordained_by: claudio-vinicius-de-senna-gastal
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 12 de abril de 1992.'
+  - source: rta-livro35
+    quote: >-
+      Em 1992 fui ordenada ao diaconato pelo Bispo Claúdio Vinicius de Senna Gastal, no dia 12 de abril de 1992,
+      na Paróquia da Benção Divina, em Sao Francisco de Paula/RS
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+- order: presbyterate
+  date: '1993-05-02'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Presbiterado: 2 de maio e 1993.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+    A fonte grafa '2 de maio e 1993' (provável erro de digitação para 'de').

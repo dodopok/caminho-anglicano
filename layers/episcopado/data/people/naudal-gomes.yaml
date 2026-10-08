@@ -59,6 +59,9 @@ ordinations:
   place: Catedral de Nossa Senhora da Conceição (Igreja Católica Romana), Santa Maria
   jurisdiction: ieab
   office: suffragan
+  principal_consecrator: glauco-soares-de-lima
+  co_consecrators:
+  - barbara-harris
   status: probable
   sources:
   - source: costa2021
@@ -75,13 +78,67 @@ ordinations:
       One sign of ecumenical co-operation was the recent consecration of a new suffragan bishop in Santa Maria.
       At the invitation of the Roman Catholic bishop, the new bishop was consecrated in front of 1,000 people at
       the much larger Catholic cathedral.
+  - source: ies-ihu-lorscheiter
+    quote: >-
+      Na solene celebração de sua sagração episcopal foi ordenado pelo Bispo Primaz do Brasil, Glauco Soares de
+      Lima, pelos demais bispos das dioceses anglicanas do Brasil e pela Bispa norte-americana Bárbara Harris
+  - source: ies-ihu-lorscheiter
+    quote: >-
+      solicitou a Dom José Ivo Lorscheiter a cedência do templo da Catedral Diocesana Imaculada Conceição para a
+      celebração de sagração episcopal do reverendo Naudal Alves Gomes, que se tornaria Bispo Sufragâneo da referida
+      diocese
+  - source: ies-ihu-lorscheiter
+    quote: >-
+      A manhã do domingo, 9 de abril de 2000, foi um marco para a relação ecumênica em Santa Maria. Os clérigos
+      e fieis da IEAB saíram em procissão da Catedral do Mediador
+  discrepancies:
+  - field: date
+    value: '2000-04-09'
+    sources:
+    - source: ies-ihu-lorscheiter
+      quote: >-
+        Na solene celebração de sua sagração episcopal foi ordenado pelo Bispo Primaz do Brasil, Glauco Soares de
+        Lima, pelos demais bispos das dioceses anglicanas do Brasil e pela Bispa norte-americana Bárbara Harris
+    - source: ies-ihu-lorscheiter
+      quote: >-
+        solicitou a Dom José Ivo Lorscheiter a cedência do templo da Catedral Diocesana Imaculada Conceição para
+        a celebração de sagração episcopal do reverendo Naudal Alves Gomes, que se tornaria Bispo Sufragâneo da
+        referida diocese
+    - source: ies-ihu-lorscheiter
+      quote: >-
+        A manhã do domingo, 9 de abril de 2000, foi um marco para a relação ecumênica em Santa Maria. Os clérigos
+        e fieis da IEAB saíram em procissão da Catedral do Mediador
+  - field: place
+    value: Catedral Diocesana Imaculada Conceição (Igreja Católica Romana), Santa Maria (RS)
+    sources:
+    - source: ies-ihu-lorscheiter
+      quote: >-
+        Na solene celebração de sua sagração episcopal foi ordenado pelo Bispo Primaz do Brasil, Glauco Soares de
+        Lima, pelos demais bispos das dioceses anglicanas do Brasil e pela Bispa norte-americana Bárbara Harris
+    - source: ies-ihu-lorscheiter
+      quote: >-
+        solicitou a Dom José Ivo Lorscheiter a cedência do templo da Catedral Diocesana Imaculada Conceição para
+        a celebração de sagração episcopal do reverendo Naudal Alves Gomes, que se tornaria Bispo Sufragâneo da
+        referida diocese
+    - source: ies-ihu-lorscheiter
+      quote: >-
+        A manhã do domingo, 9 de abril de 2000, foi um marco para a relação ecumênica em Santa Maria. Os clérigos
+        e fieis da IEAB saíram em procissão da Catedral do Mediador
   notes: >-
     Presenca da bispa Barbara Harris (TEC) registrada; sagrante principal nao informado nas fontes lidas. O Anglican
     Journal de setembro de 2000 não nomeia o consagrado; a identificação com Naudal Alves Gomes (sufragâneo da Diocese
     Sul-Ocidental, Santa Maria, 2000) decorre de outras fontes sobre a diocese. A matéria confirma o local (catedral
     católica, com cerca de mil pessoas, a convite do bispo católico) porque a catedral anglicana comporta apenas
-    150. A tese NÃO nomeia sagrante principal nem co-sagrantes; menciona a participação de representantes de outras
-    Províncias, 'como a bispa Barbara Harris' (Igreja Episcopal dos EUA), sem dizer que impôs as mãos.
+    150. Artigo de pesquisador local (membro da Federação Ecumênica de Santa Maria) que cita o jornal A Razão (Santa
+    Maria, 8-9/04/2000) para o pedido da catedral católica; o artigo diz que o consagrado foi 'ordenado' pelo bispo
+    primaz Glauco Soares de Lima, pelos demais bispos das dioceses anglicanas do Brasil e pela bispa norte-americana
+    Barbara Harris, sem distinguir sagrante principal e co-sagrantes. Barbara Harris é listada aqui como participante
+    da imposição de mãos conforme o texto. A catedral usada foi a católica, a pedido da Diocese Sul-Ocidental, porque
+    a anglicana (Mediador) seria pequena. DATA: este artigo situa a celebração na manhã do domingo 9 de abril de
+    2000; a tese de Costa (2021) e a Wikipédia em português dão 8 de abril de 2000 (sábado). O jornal A Razão citado
+    é a edição de 8 e 9/04/2000 (fim de semana), o que não decide a questão. A tese NÃO nomeia sagrante principal
+    nem co-sagrantes; menciona a participação de representantes de outras Províncias, 'como a bispa Barbara Harris'
+    (Igreja Episcopal dos EUA), sem dizer que impôs as mãos.
 affiliations:
 - jurisdiction: ieab
   role: bishop

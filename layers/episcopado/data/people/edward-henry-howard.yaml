@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: edward-henry-howard
+name: Edward Henry Howard
+ordinations:
+- order: episcopate
+  date: '1872-06-30'
+  place: Roma, Basílica de São Pedro
+  jurisdiction: null
+  principal_consecrator: carlo-sacconi
+  co_consecrators:
+  - frederic-francois-xavier-ghislain-de-merode
+  - salvatore-nobili-vitelleschi
+  status: confirmed
+  sources:
+  - source: lin-ch-bhowa
+    quote: 30 Jun 1872 43.3 Ordained Bishop
+  - source: lin-ch-bhowa
+    quote: Ordained Bishop San Pietro, Basilica, Roma, Diocese of Roma {Rome}, Italy
+  - source: lin-ch-bhowa
+    quote: >-
+      Principal Consecrator: Carlo Cardinal Sacconi† Cardinal-Bishop of Palestrina Principal Co-Consecrators: Archbishop
+      Salvatore Nobili Vitelleschi† Titular Archbishop of Seleucia in Isauria Archbishop Frédéric-François-Xavier
+      Ghislain de Mérode† Titular Archbishop of Melitene
+  - source: lin-fiu-1877
+    quote: >-
+      Consecrated, June 30, 1872, patriarchal Vatican basilica, Rome, by Carlo Sacconi assisted by Salvatore Nobili
+      Vitelleschi, titular archbishop of Seleucia, and by François-Xavier Frédéric de Mérode, titular archbishop
+      of Melitene
+  notes: >-
+    Arcebispo titular de Neocesareia no Ponto e sufragâneo de Frascati. Catholic-Hierarchy e Miranda concordam.

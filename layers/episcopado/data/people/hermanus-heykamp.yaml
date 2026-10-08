@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: hermanus-heykamp
+name: Hermanus Heykamp
+ordinations:
+- order: episcopate
+  date: '1854-07-17'
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: johannes-van-santen
+  status: confirmed
+  sources:
+  - source: lin-neale
+    quote: 5 Herman Heykamp July, 1854 Van Santen, Archbishop of Utrecht.
+  - source: lin-ivcm
+    quote: >-
+      Johannes van Santen, arcebispo de Utrecht, que em 17 de julho de 1854 consagrou; Herman Keylamp, bispo de
+      Deventor, que em 11 de agosto de 1873 consagrou; Casparus Johannes Rinkel, bispo de Haarlam
+  - source: lin-wp-en-reinkens
+    quote: >-
+      In August of that year he was consecrated by Hermann Heykamp, bishop of Deventer (not to be confused with
+      his nephew, Johannes Heykamp , later Archbishop of Utrecht.
+  notes: >-
+    Bispo de Deventer. Neale (1858) dá só mês/ano e o sagrante; a lista da IVCM dá o dia 17/07/1854; a Wikipédia
+    EN confirma o cargo (Deventer) ao tratar de Reinkens, sagrado por ele em agosto de 1873.

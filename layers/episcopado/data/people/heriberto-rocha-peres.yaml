@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: heriberto-rocha-peres
+name: Heriberto Rocha Peres
+biography: Clérigo da Igreja Anglicana Mundial (WAC), Província do Brasil, em Biguaçu (SC).
+sources:
+- source: rta-wacbr-cleros
+  quote: >-
+    Reverendo Frei Heriberto Rocha Peres, ofam Superior Geral da Ordem Franciscana Anglicana Mundial (OFAM) Cidade:
+    Biguaçu - SC Ordenação: Diaconal 09/10/2022 Ordenação Presbiteral 26/11/2022
+ordinations:
+- order: diaconate
+  date: '2022-10-09'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Frei Heriberto Rocha Peres, ofam Superior Geral da Ordem Franciscana Anglicana Mundial (OFAM) Cidade:
+      Biguaçu - SC Ordenação: Diaconal 09/10/2022 Ordenação Presbiteral 26/11/2022
+  notes: Data informada na lista de clérigos do site da própria província; sem ordenante nem local.
+- order: presbyterate
+  date: '2022-11-26'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Frei Heriberto Rocha Peres, ofam Superior Geral da Ordem Franciscana Anglicana Mundial (OFAM) Cidade:
+      Biguaçu - SC Ordenação: Diaconal 09/10/2022 Ordenação Presbiteral 26/11/2022
+  notes: Data informada na lista de clérigos do site da própria província; sem ordenante nem local.
+affiliations:
+- jurisdiction: wac-br
+  role: clergy
+  status: confirmed
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Frei Heriberto Rocha Peres, ofam Superior Geral da Ordem Franciscana Anglicana Mundial (OFAM) Cidade:
+      Biguaçu - SC Ordenação: Diaconal 09/10/2022 Ordenação Presbiteral 26/11/2022
+  notes: 'Local: Biguaçu, SC. Consta na lista de clérigos do site da WAC-BR.'

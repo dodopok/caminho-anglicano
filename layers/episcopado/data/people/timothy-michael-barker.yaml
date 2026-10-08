@@ -9,11 +9,15 @@ sources:
   page: '44'
 ordinations:
 - order: episcopate
-  date: null
+  date: '1989-04-23'
   jurisdiction: null
   principal_consecrator: herman-adrian-spruit
   status: probable
   sources:
+  - source: rtb-ceec-succession
+    quote: >-
+      Herman Adrian Spruit Archbishop of the Church of Antioch, who on the 23rd of April, 1989, consecrated Timothy
+      Michael Barker
   - source: dioc-california-velandia
     quote: Herman Adrian Spruit who on the 23rd of April 1991 consecrated
   - source: dioc-california-velandia
@@ -26,9 +30,10 @@ ordinations:
     quote: >-
       (who was consecrated by Archbishop-Patriarch [[Herman Adrian Spruit]]) functioning as the principal consecrator.
   notes: >-
-    A passagem da página está embaralhada: cita Spruit 'em 23 de abril de 1991' e Barker 'em 23 de abril de 1989',
-    sem deixar claro qual data é a da sagração de Barker. Bispo da International Free Catholic Communion; a lista
-    não dá a data da sagração.
+    Linha de sucessão autodeclarada pela CEEC (tabela 'Anglican Succession – Table One'); a página lista só o sagrante
+    principal e a data. Não verificada por fonte independente. A passagem da página está embaralhada: cita Spruit
+    'em 23 de abril de 1991' e Barker 'em 23 de abril de 1989', sem deixar claro qual data é a da sagração de Barker.
+    Bispo da International Free Catholic Communion; a lista não dá a data da sagração.
 events:
 - type: other
   date: '1997'

@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: emanuel-autran
+name: Emanuel Autran
+biography: >-
+  Presbítero listado(a) na equipe pastoral da diocese liderada por Márcio Simões (IAB), vinculado(a) à Igreja Anglicana
+  Cristo Rei.
+sources:
+- source: dv-pastores
+  quote: Rev. Emanuel Autran Igreja Anglicana Cristo Rei
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: dv-pastores
+    quote: Rev. Emanuel Autran Igreja Anglicana Cristo Rei
+  notes: 'Local: Igreja Anglicana Cristo Rei. Lista da equipe pastoral no site da diocese; sem datas.'

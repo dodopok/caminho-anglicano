@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jaelson-carlos
+name: Jaelson Carlos
+biography: >-
+  Presbítero listado(a) na equipe pastoral da diocese liderada por Márcio Simões (IAB), vinculado(a) à Igreja Anglicana
+  Advento.
+sources:
+- source: dv-pastores
+  quote: Rev. Jaelson Carlos Igreja Anglicana Advento
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: dv-pastores
+    quote: Rev. Jaelson Carlos Igreja Anglicana Advento
+  notes: 'Local: Igreja Anglicana Advento. Lista da equipe pastoral no site da diocese; sem datas.'

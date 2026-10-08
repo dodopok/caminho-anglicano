@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: vera-lucia-lima-de-almeida
+name: Vera Lúcia Lima de Almeida
+ordinations:
+- order: diaconate
+  date: '2003-05-18'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 18 de maio de 2003.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+    A lista do Anexo VI do mesmo livro registra, em 1999, 'Vera Lucia lins Silva', nome que pode referir-se a outra
+    pessoa ou a variação do nome.
+- order: presbyterate
+  date: '2003-09-21'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Presbiterado: 21 de setembro de 2003.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+    A lista do Anexo VI do mesmo livro registra, em 1999, 'Vera Lucia lins Silva', nome que pode referir-se a outra
+    pessoa ou a variação do nome.

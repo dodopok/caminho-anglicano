@@ -12,11 +12,24 @@ sources:
 ordinations:
 - order: episcopate
   date: '2022-10-13'
-  place: Catedral da Trindade, Recife (PE)
+  place: Catedral da Santíssima Trindade, Recife
   jurisdiction: iecb
   office: missionary
-  status: probable
+  principal_consecrator: paulo-garcia
+  co_consecrators:
+  - alexandre-barbosa-monteiro-ximenes
+  - andre-novaes-de-albuquerque-cavalcanti
+  - frederico-carneiro-rego-bastos
+  status: confirmed
   sources:
+  - source: testemunho-mantenedor-2026-10-08-videos
+    quote: >-
+      live dia 13/10/2022, sagrante foi paulo garcia, junto como cosagrante identifiquei fred, ximenes, andré novaes.
+      Mas tem vários outros atrás. Foi na catedral da trindade da iecb.
+  - source: ier-yt-jorge-sergio-tony
+    quote: pai em Deus Dom Paulo Garcia na cebispo na igreja de Deus o clero e o povo da
+  - source: ier-yt-jorge-sergio-tony
+    quote: Dom Paulo e os demais bispos farão em posição de mãos sobre os bispos eleitos
   - source: ptwiki-iecb
     quote: Jorge Luiz Paes Siqueira (2022)
   - source: lie-betesda-historia
@@ -29,8 +42,22 @@ ordinations:
       para São Paulo) e Tony Belo (Diocesano de Petrolina), em 13 de outubro de 2022
     page: '57'
   notes: >-
-    A Wikipédia PT confirma o ano (2022); a cerimônia coletiva de 13/10/2022 (Siqueira, Presta e Belo) foi transmitida
-    pelo canal da Catedral da Trindade. Nenhuma fonte textual encontrada traz os sagrantes (a presidência provável
-    de Dom Paulo Garcia não está declarada). Ano da sagração segundo a lista da Wikipédia (fonte terciária); sagrantes
-    não informados. Sucessão presumida via Paulo Garcia (ICCEC/Adler), não declarada caso a caso. Cerimônia coletiva;
-    título sem data (base: 2022-10-13). Sagrantes não informados. Livro: 'Jorge Siqueira'. Sagrantes não nomeados.
+    Transmissão ao vivo. Co-sagrantes identificados no vídeo pelo mantenedor; outros bispos também impuseram as
+    mãos. Bispo supervisor da Agência Internacional de Desenvolvimento e emissário apostólico do arcebispo do Recife
+    (eleito em 23/08/2022). A Wikipédia PT confirma o ano (2022); a cerimônia coletiva de 13/10/2022 (Siqueira,
+    Presta e Belo) foi transmitida pelo canal da Catedral da Trindade. Nenhuma fonte textual encontrada traz os
+    sagrantes (a presidência provável de Dom Paulo Garcia não está declarada). Ano da sagração segundo a lista da
+    Wikipédia (fonte terciária); sagrantes não informados. Sucessão presumida via Paulo Garcia (ICCEC/Adler), não
+    declarada caso a caso. Cerimônia coletiva; título sem data (base: 2022-10-13). Sagrantes não informados. Livro:
+    'Jorge Siqueira'. Sagrantes não nomeados.
+affiliations:
+- jurisdiction: iecb
+  role: bishop
+  start: '2022'
+  status: probable
+  sources:
+  - source: isg-aid-about
+    quote: Fundada em outubro de 2022 pelo Arcebispo Dom Paulo Garcia
+  notes: >-
+    Local: Agência Internacional de Desenvolvimento, AID. O site da AID diz que a agência está sob a liderança do
+    Bispo Dom Jorge Luis Paes Siqueira; não informa sagração.

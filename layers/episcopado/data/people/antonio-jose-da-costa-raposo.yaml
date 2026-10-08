@@ -41,7 +41,7 @@ ordinations:
   - bartolomeu-sebastiao-vilela
   - josivaldo-pereira-de-oliveira
   - rainer-laufers
-  status: probable
+  status: contested
   sources:
   - source: lielb-raposo-bio
     quote: Em 28 de Novembro de 1982, recebe a Sagrada Ordenação Episcopal , em Brasília, Brasil
@@ -51,15 +51,60 @@ ordinations:
       Geral; e Sua Exª Rev.ma D. Josivaldo Pereira de Oliveira, Bispo Diocesano de Fortaleza.
   - source: lielb-plwiki-raposo
     quote: 28 listopada 1982
+  - source: rta-iae-sucessao
+    quote: >-
+      D.Luis Fernando Castillo-Mendez, D.Josivaldo Pereira de Oliveira, D.Bartolomeu Sebastião Vilela e D.Rainer
+      Laufers sagraram Dom António José da Costa Raposo a 22 de Novembro de 1982
   - source: rtf-fb-dac-genealogia
     quote: >-
       6. Dom Antônio José da Costa Raposo (Primaz de Portugal) Co-sagrantes: Dom Josivaldo Pereira de Oliveira,
       Dom Bartolomeu Sebastião Vilela e Dom Rainer Laufers. Sagrou em 22/11/1982:
+  - source: lvc-icab-sucessao-blog
+    quote: Sagrado Bispo de Portugal em 22/11/1982
+  - source: lvc-icab-sucessao-blog
+    quote: >-
+      À frente de cada nome de bispo consta um código, colocado em relação a linhagem de SUCESSÃO APOSTÓLICA de
+      São Carlos do Brasil( Dom Carlos Duarte Costa).
+  discrepancies:
+  - field: date
+    value: '1982-11-22'
+    sources:
+    - source: rta-iae-sucessao
+      quote: >-
+        D.Luis Fernando Castillo-Mendez, D.Josivaldo Pereira de Oliveira, D.Bartolomeu Sebastião Vilela e D.Rainer
+        Laufers sagraram Dom António José da Costa Raposo a 22 de Novembro de 1982
+    - source: rtf-fb-dac-genealogia
+      quote: >-
+        6. Dom Antônio José da Costa Raposo (Primaz de Portugal) Co-sagrantes: Dom Josivaldo Pereira de Oliveira,
+        Dom Bartolomeu Sebastião Vilela e Dom Rainer Laufers. Sagrou em 22/11/1982:
+    - source: lvc-icab-sucessao-blog
+      quote: Sagrado Bispo de Portugal em 22/11/1982
+    - source: lvc-icab-sucessao-blog
+      quote: >-
+        À frente de cada nome de bispo consta um código, colocado em relação a linhagem de SUCESSÃO APOSTÓLICA de
+        São Carlos do Brasil( Dom Carlos Duarte Costa).
   notes: >-
     Wikipédia polonesa acrescenta Rainer Laufers entre os co-sagrantes; blogs da IELB (e da DAE) dão 22/11/1982
     e listam Castillo Mendez, Josivaldo Pereira de Oliveira, Bartolomeu Sebastião Vilela e Rainer Laufers (este
-    "sagrado por bispos da Igreja Vétero Católica"). Nomeado bispo diocesano de Portugal em 08/02/1988. Na lista
-    de sucessão publicada pela diocese em 20/11/2025, o item de Raposo traz como co-sagrantes Josivaldo Pereira
-    de Oliveira, Bartolomeu Sebastião Vilela e Rainer Laufers e a data 22/11/1982. O post está truncado no texto
-    exibido e a disposição das datas na lista é ambígua; outras fontes dão 28/11/1982 para a sagração de Raposo.
-    O post da DAC dá 22/11/1982 para a sagração; as outras fontes dão 28/11/1982.
+    "sagrado por bispos da Igreja Vétero Católica"). Nomeado bispo diocesano de Portugal em 08/02/1988. O site da
+    própria igreja de Raposo dá 22/11/1982 e quatro sagrantes sem distinguir o principal; outras fontes dão 28/11/1982
+    em Brasília, com Castillo Mendez como principal sagrante. Na lista de sucessão publicada pela diocese em 20/11/2025,
+    o item de Raposo traz como co-sagrantes Josivaldo Pereira de Oliveira, Bartolomeu Sebastião Vilela e Rainer
+    Laufers e a data 22/11/1982. O post está truncado no texto exibido e a disposição das datas na lista é ambígua;
+    outras fontes dão 28/11/1982 para a sagração de Raposo. A numeração do blog indica a linhagem: os bispos com
+    código 4.x descendem do bispo nº 4 da lista, Luís Fernando Castillo Méndez; a fonte não diz com todas as letras
+    'sagrado por'.
+affiliations:
+- jurisdiction: iaep
+  role: other
+  role_description: arcebispo primaz
+  start: '1988-02-08'
+  status: probable
+  sources:
+  - source: rta-iae-sucessao
+    quote: >-
+      Em 8 de Fevereiro de 1988 foi nomeado Bispo Diocesano de Portugal, tomando  posse da Diocese em 25 de Fevereiro
+      de 1988.
+  notes: >-
+    Local: Portugal. Texto da página 'Arcebispo-Primaz' do mesmo site (Igreja Apostólica Episcopal - Vetero-Católica,
+    Mafra); a página diz também que em 1987 fundou em Mafra a comunidade vetero-católica.

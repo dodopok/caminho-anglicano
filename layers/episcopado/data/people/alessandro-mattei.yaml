@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: alessandro-mattei
+name: Alessandro Mattei
+ordinations:
+- order: episcopate
+  date: '1777-02-23'
+  place: Roma, igreja de S. Maria in Aracoeli
+  jurisdiction: null
+  principal_consecrator: bernardino-giraud
+  co_consecrators:
+  - giuseppe-maria-carafa
+  - marcantonio-conti
+  status: confirmed
+  sources:
+  - source: lin-ch-bmatta
+    quote: 23 Feb 1777 33.0 Ordained Bishop
+  - source: lin-ch-bmatta
+    quote: >-
+      Principal Consecrator: Bernardino Cardinal Giraud† Cardinal-Priest of Santissima Trinità al Monte Pincio Principal
+      Co-Consecrators: Archbishop Marcantonio Conti† Titular Archbishop of Damascus Bishop Giuseppe Maria Carafa,
+      C.R.† Bishop of Mileto
+  - source: lin-fiu-1779
+    quote: >-
+      Consecrated, February 23, 1777, church of S. Maria in Aracoeli, Rome, by Cardinal Bernardino Giraud, former
+      archbishop of Ferrara, assisted by Marcantonio Conti, titular archbishop of Damasco, and by Giuseppe Maria
+      Carafa, bishop of Mileto.
+  notes: >-
+    Arcebispo de Ferrara. Catholic-Hierarchy e Miranda concordam em data, sagrante e co-sagrantes; Miranda dá o
+    local.

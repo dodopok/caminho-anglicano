@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: valdeli-martins-lopes
+name: Valdeli Martins Lopes
+biography: Clérigo da Igreja Anglicana Mundial (WAC), Província do Brasil, em Belém (PA).
+sources:
+- source: rta-wacbr-cleros
+  quote: >-
+    Reverendo Valdeli Martins Lopes Cidade: Belém - PA Ordenação: Diaconal: 01/01/2014 Ordenação Presbiteral: 01/05/2015
+ordinations:
+- order: diaconate
+  date: '2014-01-01'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Valdeli Martins Lopes Cidade: Belém - PA Ordenação: Diaconal: 01/01/2014 Ordenação Presbiteral:
+      01/05/2015
+  notes: Data informada na lista de clérigos do site da própria província; sem ordenante nem local.
+- order: presbyterate
+  date: '2015-05-01'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Valdeli Martins Lopes Cidade: Belém - PA Ordenação: Diaconal: 01/01/2014 Ordenação Presbiteral:
+      01/05/2015
+  notes: Data informada na lista de clérigos do site da própria província; sem ordenante nem local.
+affiliations:
+- jurisdiction: wac-br
+  role: clergy
+  status: confirmed
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Valdeli Martins Lopes Cidade: Belém - PA Ordenação: Diaconal: 01/01/2014 Ordenação Presbiteral:
+      01/05/2015
+  notes: 'Local: Belém, PA. Consta na lista de clérigos do site da WAC-BR.'

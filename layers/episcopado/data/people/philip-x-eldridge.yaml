@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: philip-x-eldridge
+name: Philip X. Eldridge
+ordinations:
+- order: episcopate
+  date: '1892-06-24'
+  place: Igreja Emmanuel, Gunnersbury, Londres (Inglaterra)
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: john-sugden
+  co_consecrators:
+  - thomas-greenland
+  - william-baker
+  status: confirmed
+  sources:
+  - source: lin-fce-lista
+    quote: >-
+      18. PHILIP X. ELDRIDGE DD was consecrated by Bishops Sugden, Greenland and Baker, assisted by several Presbyters,
+      in Emmanuel Church, Gunnersbury, London, 24 June 1892. Died 1921.
+  notes: Sagrado na mesma cerimônia de James Renny (nº 19).

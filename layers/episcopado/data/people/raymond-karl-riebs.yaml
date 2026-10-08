@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: raymond-karl-riebs
+name: Raymond Karl Riebs
+biography: >-
+  Clérigo dos distritos missionários do Brasil na edição de 1956 do anuário do clero (Brasil Central (Rio de Janeiro)).
+sources:
+- source: rta-ecd1956
+  quote: RIEBS, Raymond Karl (C.Bra.)
+ordinations:
+- order: diaconate
+  date: 1941-06
+  jurisdiction: tec
+  ordained_by: henry-wise-hobson
+  status: confirmed
+  sources:
+  - source: rta-ecd1956
+    quote: D—June, 1941, P—Feb., 1942, Bp. Hobson
+  notes: >-
+    Datas e bispo do verbete do anuário; 'Bp.' no verbete vale para as duas ordenações quando citado uma só vez.
+- order: presbyterate
+  date: 1942-02
+  jurisdiction: tec
+  ordained_by: henry-wise-hobson
+  status: confirmed
+  sources:
+  - source: rta-ecd1956
+    quote: D—June, 1941, P—Feb., 1942, Bp. Hobson
+  notes: >-
+    Datas e bispo do verbete do anuário; 'Bp.' no verbete vale para as duas ordenações quando citado uma só vez.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: rta-ecd1956
+    quote: RIEBS, Raymond Karl (C.Bra.)
+  notes: 'Local: Brasil Central, Rio de Janeiro. Verbete da edição de 1956.'

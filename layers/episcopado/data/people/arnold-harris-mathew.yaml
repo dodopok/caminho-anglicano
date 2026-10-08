@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: arnold-harris-mathew
+name: Arnold Harris Mathew
+ordinations:
+- order: episcopate
+  date: '1908-04-28'
+  place: Utrecht, catedral de São Gertrudes
+  jurisdiction: null
+  principal_consecrator: gerardus-gul
+  co_consecrators:
+  - johannes-jacobus-van-thiel
+  - joseph-demmel
+  - nicolaas-bartholomeus-petrus-spit
+  status: confirmed
+  sources:
+  - source: lin-wp-en-mathew
+    quote: Mathew was consecrated in St. Gertrude's Cathedral , Utrecht , on 28 April 1908
+  - source: lin-wp-en-gul
+    quote: on 28 April 1908 Gul consecrated Arnold Harris Mathew at St. Gertrude's Cathedral in Utrecht
+  - source: lin-ms-mathew
+    quote: >-
+      28th April 1908 19080428 Consecrated by Gerardus Gul Assisted by Johannes Jacobus van Thiel Nicolas Bartholomaeus
+      Petrus Split and Joseph Demmel
+  notes: >-
+    Sagrado como bispo vétero-católico para a Grã-Bretanha. Co-sagrantes só em Morningstar (grafia "Split" na página
+    de Mathew e "Spit" na de Gul).

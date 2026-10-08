@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: johannes-van-santen
+name: Johannes van Santen
+ordinations:
+- order: episcopate
+  date: '1825-11-13'
+  place: Utrecht, catedral de São Gertrudes
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: johannes-bon
+  status: probable
+  sources:
+  - source: lin-neale
+    quote: 8 John Van Santen Nov. 13, 1825 John Bon, Bishop of Haarlem.
+  - source: lin-wp-en-vansanten
+    quote: >-
+      He was consecrated Archbishop of Utrecht in the cathedral of St. Gertrude in Utrecht on 13 November 1825.
+  notes: >-
+    Neale dá data e sagrante (Johannes Bon, bispo de Haarlem). A Wikipédia EN (Johannes van Santen) confirma data
+    e local mas não nomeia o sagrante.

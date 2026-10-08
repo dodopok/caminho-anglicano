@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: erivandro-ferrer-de-lima
+name: Erivandro Ferrer de Lima
+birth:
+  date: '1978-07-22'
+  sources:
+  - source: rta-ivcm-clerigos
+    quote: >-
+      Erivandro Ferrer de Lima Nasc. 22/07/1978 Grau/Ordem Presbítero Missão São Paulo Acolhido em 27/03/2025 Ofício
+      Pároco
+biography: 'Presbítero da Igreja Veterocatólica Missionária (missão: São Paulo), acolhido em 2025-03-27.'
+sources:
+- source: rta-ivcm-clerigos
+  quote: >-
+    Erivandro Ferrer de Lima Nasc. 22/07/1978 Grau/Ordem Presbítero Missão São Paulo Acolhido em 27/03/2025 Ofício
+    Pároco
+affiliations:
+- jurisdiction: ivcmb
+  role: clergy
+  start: '2025-03-27'
+  status: confirmed
+  sources:
+  - source: rta-ivcm-clerigos
+    quote: >-
+      Erivandro Ferrer de Lima Nasc. 22/07/1978 Grau/Ordem Presbítero Missão São Paulo Acolhido em 27/03/2025 Ofício
+      Pároco
+  notes: 'Local: São Paulo. Ofício informado: Pároco.'

@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: willibrord-van-os
+name: Willibrord van Os
+ordinations:
+- order: episcopate
+  date: '1814-04-24'
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: gisbertus-de-jong
+  status: confirmed
+  sources:
+  - source: lin-wp-en-vanos
+    quote: He was consecrated by Bishop Gisbertus de Jong on 24 April 1814.
+  - source: lin-neale
+    quote: 7 Willibrord Van Os April 24, 1814 Feb. 28, 1805 Gisbert de Jong, Bishop of Deventer.
+  notes: Arcebispo de Utrecht. Neale e Wikipédia EN concordam em data e sagrante.

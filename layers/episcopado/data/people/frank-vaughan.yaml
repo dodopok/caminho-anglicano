@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: frank-vaughan
+name: Frank Vaughan
+ordinations:
+- order: episcopate
+  date: '1913-04-25'
+  place: Christ Church, Harlesden, Londres (Inglaterra)
+  jurisdiction: fce
+  office: diocesan
+  principal_consecrator: philip-x-eldridge
+  co_consecrators:
+  - richard-brook-lander
+  status: confirmed
+  sources:
+  - source: lin-fce-lista
+    quote: >-
+      22. FRANK VAUGHAN DD was consecrated by Bishops Eldridge and Brook Lander, assisted by several Presbyters,
+      in Christ Church, Harlesden, London, on 25 April 1913. Died 1963.
+  notes: Morreu em 1963.

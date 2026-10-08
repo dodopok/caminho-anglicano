@@ -32,7 +32,13 @@ ordinations:
   place: Boqueirão (PB), Cariri paraibano
   jurisdiction: iab
   office: auxiliary
-  principal_consecrator: marcio-meira
+  principal_consecrator: miguel-uchoa
+  co_consecrators:
+  - eric-rodrigues
+  - evilasio-tenorio
+  - flavio-soares
+  - marcio-meira
+  - marcio-simoes
   status: confirmed
   sources:
   - source: lrec-buzznews-2023
@@ -56,8 +62,20 @@ ordinations:
       a Câmara dos Bispos ganhou novos membros com a ordenação dos bispos Miguel Neto (auxiliar para a Diocese de
       João Pessoa)
     page: '34'
-  - source: testemunho-mantenedor-2026-10-08-neto-eric
-    quote: Miguel Neto foi sagrado por Marcio Meira, quem ordenou Eric ao presbiterato foi Miguel Uchoa
+  - source: testemunho-mantenedor-2026-10-08-videos
+    quote: >-
+      Sagrante principal precisamos corrigir, vi no vídeo que foi Miguel Uchoa. Cosagrantes foram Eric Rodrigues,
+      Marcio Simões, Marcio Meira, Evilásio e Flavio Adair. Foi uma live, então foi dia 31/05/2023. Minuto da sagração
+      foi 1:10:29, foi na igreja Comunhão Boqueirão.
+  discrepancies:
+  - field: place
+    value: Igreja Anglicana Comunhão, Boqueirão (PB)
+    sources:
+    - source: testemunho-mantenedor-2026-10-08-videos
+      quote: >-
+        Sagrante principal precisamos corrigir, vi no vídeo que foi Miguel Uchoa. Cosagrantes foram Eric Rodrigues,
+        Marcio Simões, Marcio Meira, Evilásio e Flavio Adair. Foi uma live, então foi dia 31/05/2023. Minuto da
+        sagração foi 1:10:29, foi na igreja Comunhão Boqueirão.
   notes: >-
     Eleito bispo auxiliar no Sínodo Extraordinário online de 13/03/2023 (a matéria da Buzz News traz '13 de março',
     sem o ano, na mesma notícia que anuncia para 08/05/2023 a sagração de Eric Rodrigues). A sagração, anunciada
@@ -68,7 +86,8 @@ ordinations:
     de João Pessoa). Indício: os títulos do canal Comunhão Campina passam de "PR. MIGUEL NETO" (26/03/2023) a "BISPO
     MIGUEL NETO" (06/04/2023 e 09/04/2023), o que sugere sagração entre 27/03 e 06/04/2023 (pode ser apenas uso
     do título de bispo eleito). Não foi sagrado junto com Eric Rodrigues em 08/05/2023 (as notícias daquela sagração
-    não o mencionam). Data não informada (contexto: a partir de 2020).
+    não o mencionam). Data não informada (contexto: a partir de 2020). Transmissão ao vivo (YouTube S08hN-XZPWY);
+    imposição das mãos em 1:10:29.
 affiliations:
 - jurisdiction: iab
   role: auxiliary_bishop
@@ -128,7 +147,14 @@ affiliations:
     quote: Regozijamo-nos com a posse do @bispomiguelneto  como primeiro Bispo Diocesano desta nova diocese
   - source: yt-fundacao-dioc-comunhao
     quote: CULTO DE FUNDAÇÃO DIOCESSE COMUNHÃO ANGLICANA | 19/06/2026 |
-  notes: Data de posse assumida = culto de fundação (19/06/2026); o post oficial é de 21/06/2026.
+  - source: testemunho-mantenedor-2026-10-08-videos
+    quote: >-
+      quem abriu a assembleia sinodal foi marcio meira, clérigos que passaram a compor a diocese: Miguel neto como
+      bispo
+  notes: >-
+    Data de posse assumida = culto de fundação (19/06/2026); o post oficial é de 21/06/2026. Culto de fundação da
+    diocese, com as igrejas Comunhão Patos, Comunhão Boqueirão, Comunhão Caturité e Comunhão Iguatu; Márcio Meira
+    abriu a assembleia sinodal (YouTube 251qmglMLCg).
 - jurisdiction: iab
   role: clergy
   diocese: iab-diocese-joao-pessoa

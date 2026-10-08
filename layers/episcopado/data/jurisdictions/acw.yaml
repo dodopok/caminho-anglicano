@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: acw
+acronym: ACW
+name: Anglican Church Worldwide
+type: other
+founded:
+  date: '1997'
+  sources:
+  - source: rta-acw-history
+    quote: >-
+      the Anglican Church Worldwide (ACW) was formed in 1997 from the roots of the African Orthodox Church (AOC)
+  - source: rta-acw-history
+    quote: In 2002, there was a name change to Anglican Church Worldwide.
+website: https://www.anglicanchurchworldwide.com/
+description: >-
+  Corpo anglicano continuante, de linhagem do African Orthodox Church, que se descreve formado em 1997 como Anglican/African
+  Orthodox Church e rebatizado Anglican Church Worldwide em 2002. Esta é a história publicada pelo site original
+  da própria igreja; a página não menciona o Brasil.
+sources:
+- source: rta-acw-history
+  quote: >-
+    the Anglican Church Worldwide (ACW) was formed in 1997 from the roots of the African Orthodox Church (AOC)
+- source: rta-acw-history
+  quote: In 2002, there was a name change to Anglican Church Worldwide.

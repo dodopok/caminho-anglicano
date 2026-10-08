@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ludovico-ludovisi
+name: Ludovico Ludovisi
+ordinations:
+- order: episcopate
+  date: '1621-05-02'
+  place: Roma, capela do sagrante
+  jurisdiction: null
+  principal_consecrator: galeazzo-sanvitale
+  co_consecrators:
+  - cosimo-de-torres
+  - ottavio-ridolfi
+  status: probable
+  sources:
+  - source: lin-ch-bludo
+    quote: 2 May 1621 25.5 Ordained Bishop
+  - source: lin-ch-bludo
+    quote: Ordained Bishop Chapel of the Consecrator, Roma, Diocese of Roma {Rome}
+  - source: lin-ch-bludo
+    quote: >-
+      Principal Consecrator: Archbishop Galeazzo Sanvitale† Archbishop Emeritus of Bari (-Canosa) Principal Co-Consecrators:
+      Archbishop Cosimo de Torres† Titular Archbishop of Hadrianopolis in Haemimonto Bishop Ottavio Ridolfi† Bishop
+      of Ariano
+  notes: Arcebispo de Bolonha. Só Catholic-Hierarchy consultada.

@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: johannes-van-stiphout
+name: Johannes van Stiphout
+ordinations:
+- order: episcopate
+  date: '1745-07-11'
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: petrus-johannes-meindaerts
+  status: confirmed
+  sources:
+  - source: lin-ms-stiphout
+    quote: 11th July 1745 17450711 Consecrated by Petrus Johannes Meindaerts
+  - source: lin-neale
+    quote: 2 John Van Stiphout July 11, 1745 Dec. 16, 1777 Meindaerts, Archbishop of Utrecht.
+  notes: Bispo de Haarlem. Morningstar e Neale concordam.

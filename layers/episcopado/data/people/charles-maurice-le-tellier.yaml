@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: charles-maurice-le-tellier
+name: Charles-Maurice Le Tellier
+ordinations:
+- order: episcopate
+  date: '1668-11-11'
+  jurisdiction: null
+  principal_consecrator: antonio-barberini
+  co_consecrators:
+  - michel-colbert-de-saint-pouange
+  - pierre-armand-du-camboust-de-coislin
+  status: probable
+  sources:
+  - source: lin-ch-bletel
+    quote: 11 Nov 1668 26.3 Ordained Bishop
+  - source: lin-ch-bletel
+    quote: >-
+      Principal Consecrator: Antonio Cardinal Barberini (Jr.), O.S.Io.Hieros.† Cardinal-Bishop of Palestrina Principal
+      Co-Consecrators: Bishop Pierre-Armand du Camboust de Coislin† Bishop of Orléans Bishop Michel Colbert de Saint-Pouange†
+      Bishop of Mâcon
+  notes: Arcebispo titular de Nazianzo (depois arcebispo de Reims). Só Catholic-Hierarchy.

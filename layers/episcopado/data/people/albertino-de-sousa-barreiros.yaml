@@ -47,7 +47,7 @@ ordinations:
   jurisdiction: iacc
   office: diocesan
   principal_consecrator: james-antonio-roque
-  status: probable
+  status: contested
   sources:
   - source: cant-anglo-catolicismo-2026
     quote: >-
@@ -62,6 +62,14 @@ ordinations:
       em seguida, ordenou muitas pessoas ao episcopado, a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino
       de Sousa Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa
       da Silva.
+  - source: rtb-jordan-albertino
+    quote: >-
+      A Sagração acontecerá no próximo dia 14 de julho às 9 horas da manhã na Capela do Campus da Universidade Federal
+      do Rio Grande do Norte.
+  - source: rtb-jordan-albertino
+    quote: >-
+      O Ordenante principal e Bispo responsável pela coordenação dos trabalhos de criação e instalação da Diocese
+      é Dom James Roque, de Jundiaí-SP.
   - source: cant-novas-igrejas-2024
     quote: A cerimônia de sagração de dom
     page: '80'
@@ -87,14 +95,28 @@ ordinations:
       Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa da
       Silva.
     page: '138'
+  discrepancies:
+  - field: date
+    value: '2019-07-14'
+    sources:
+    - source: rtb-jordan-albertino
+      quote: >-
+        A Sagração acontecerá no próximo dia 14 de julho às 9 horas da manhã na Capela do Campus da Universidade
+        Federal do Rio Grande do Norte.
+    - source: rtb-jordan-albertino
+      quote: >-
+        O Ordenante principal e Bispo responsável pela coordenação dos trabalhos de criação e instalação da Diocese
+        é Dom James Roque, de Jundiaí-SP.
   notes: >-
     Fecha a data (jurisdicoes-menores.json tinha data nula). Diocese Anglicana do Natal (hoje ligada à TAC). Costa
     (2021) e o site da IACC dizem que James Roque 'ordenou' estes bispos. Para Itabira Jonas, a data de 11/1/2018
     vem do site da diocese (registro separado); para Barreiros, c. 2019. Pode tratar-se do mesmo evento já registrado.
-    Co-sagrantes não nomeados. A p. 76 inclui Albertino na lista de bispos ordenados por James Roque entre seus
-    'primeiros atos' episcopais (contexto do Japi, extinto em 2016) — ver dúvidas. 'da Diocese Anglicana do Natal'.
-    Data não informada. Datas não informadas; a Diocese do Japí foi depois extinta e esses bispos fundaram igrejas
-    anglicanas independentes.
+    Notícia de junho de 2019, antes da cerimônia: anunciava a sagração para 14 de julho às 9h. Costa (2021) e a
+    obra de Rafael Vilaça dão 15/07/2019. A notícia não nomeia co-sagrantes; diz apenas que os bispos chegariam
+    a Natal a partir de 10/07. Co-sagrantes não nomeados. A p. 76 inclui Albertino na lista de bispos ordenados
+    por James Roque entre seus 'primeiros atos' episcopais (contexto do Japi, extinto em 2016) — ver dúvidas. 'da
+    Diocese Anglicana do Natal'. Data não informada. Datas não informadas; a Diocese do Japí foi depois extinta
+    e esses bispos fundaram igrejas anglicanas independentes.
 affiliations:
 - jurisdiction: tac
   role: diocesan_bishop

@@ -1,6 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: anderson-jose-da-silva
-name: Anderson José da Silva
+name: Anderson Silva
+aliases:
+- Anderson José da Silva
+biography: >-
+  Presbítero listado(a) na equipe pastoral da diocese liderada por Márcio Simões (IAB), vinculado(a) à Anglicana
+  Ressurreição Limoeiro.
+sources:
+- source: dv-pastores
+  quote: Rev. Anderson Silva Anglicana Ressurreição Limoeiro
 ordinations:
 - order: diaconate
   date: '2025-10-07'
@@ -18,3 +26,11 @@ ordinations:
   notes: >-
     A hashtag #Bispomarciosimoes sugere o bispo diocesano Márcio Simões, mas a descrição não diz quem ordenou. Ordenante:
     o bispo diocesano de Vitória, Márcio Simões, segundo o mantenedor (o vídeo não nomeia o bispo).
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: dv-pastores
+    quote: Rev. Anderson Silva Anglicana Ressurreição Limoeiro
+  notes: 'Local: Anglicana Ressurreição Limoeiro. Lista da equipe pastoral no site da diocese; sem datas.'

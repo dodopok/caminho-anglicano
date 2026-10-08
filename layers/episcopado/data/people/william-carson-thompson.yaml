@@ -1,3 +1,33 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: william-carson-thompson
 name: William Carson Thompson
+aliases:
+- William C. Thompson
+biography: >-
+  Bispo, cofundador do Anglican Rite Synod in the Americas (1989) com David H. Marion-Davis e Larry L. Shaver; segundo
+  Melton, ele e Marion-Davis eram "formerly of the Philippine Independent Catholic Church". Foi o sagrante principal
+  de Victor Manuel Cruz-Blanco em 30/06/1991 (Merrillville, Indiana). Quem o sagrou não foi encontrado.
+sources:
+- source: lin-melton-arsa
+  quote: >-
+    The Anglican Rite Synod in the Americas was founded in 1989 by David Marion-Davis, William C. Thompson, and
+    Rt. Rev. Larry L. Shaver (b. 1936)
+- source: lin-cruzblanco-cv
+  quote: 'Chief Consecrator: The Most Rev. William Carson Thompson'
+events:
+- type: other
+  date: '1989'
+  description: >-
+    Fundação do Anglican Rite Synod in the Americas (1989), por David Marion-Davis, William C. Thompson e Larry
+    L. Shaver, com permissão da Philippine Independent Catholic Church; Davis e Thompson eram "formerly of the Philippine
+    Independent Catholic Church".
+  status: probable
+  sources:
+  - source: lin-melton-arsa
+    quote: >-
+      The Anglican Rite Synod in the Americas was founded in 1989 by David Marion-Davis, William C. Thompson, and
+      Rt. Rev. Larry L. Shaver (b. 1936)
+  - source: lin-melton-arsa
+    quote: >-
+      Cofounders in this effort were Bps. Davis and Thompson, both formerly of the Philippine Independent Catholic
+      Church.

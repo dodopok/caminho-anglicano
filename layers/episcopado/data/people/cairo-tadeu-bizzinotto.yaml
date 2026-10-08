@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: cairo-tadeu-bizzinotto
+name: Cairo Tadeu Bizzinotto
+biography: Clérigo da Igreja Anglicana Mundial (WAC), Província do Brasil, em Conquista (MG).
+sources:
+- source: rta-wacbr-cleros
+  quote: >-
+    Reverendo Cairo Tadeu Bizzinotto Cidade: Conquista - MG Ordenação: Diaconal: 01/07/2.006 Ordenação Presbiteral:
+    12/102022
+ordinations:
+- order: diaconate
+  date: '2006-07-01'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Cairo Tadeu Bizzinotto Cidade: Conquista - MG Ordenação: Diaconal: 01/07/2.006 Ordenação Presbiteral:
+      12/102022
+  notes: Data informada na lista de clérigos do site da própria província; sem ordenante nem local.
+- order: presbyterate
+  date: '2022-10-12'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Cairo Tadeu Bizzinotto Cidade: Conquista - MG Ordenação: Diaconal: 01/07/2.006 Ordenação Presbiteral:
+      12/102022
+  notes: Data informada na lista de clérigos do site da própria província; sem ordenante nem local.
+affiliations:
+- jurisdiction: wac-br
+  role: clergy
+  status: confirmed
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Cairo Tadeu Bizzinotto Cidade: Conquista - MG Ordenação: Diaconal: 01/07/2.006 Ordenação Presbiteral:
+      12/102022
+  notes: 'Local: Conquista, MG. Consta na lista de clérigos do site da WAC-BR.'

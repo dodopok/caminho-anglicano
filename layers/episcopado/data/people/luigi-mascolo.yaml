@@ -1,3 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: luigi-mascolo
 name: Luigi Mascolo
+ordinations:
+- order: episcopate
+  date: '1964-04-05'
+  place: Brasil
+  jurisdiction: icab
+  principal_consecrator: antidio-jose-vargas
+  status: probable
+  sources:
+  - source: lin-wp-en-mascolo
+    quote: '"consecration":{"wt":"5 de abril de 1964"},"consecrated_by":{"wt":"[[Antidio Jose Vargas]]"}'
+  - source: lin-wp-en-mascolo
+    quote: >-
+      he converted to the Brazilian Catholic Apostolic Church and was consecrated as an Brazilian Catholic Apostolic
+      Church
+  notes: >-
+    Padre italiano (Matera-Irsina), missionário fidei donum; sagrado bispo da ICAB. Wikipédia EN (terciária) dá
+    5/04/1964 e Antídio José Vargas como sagrante.

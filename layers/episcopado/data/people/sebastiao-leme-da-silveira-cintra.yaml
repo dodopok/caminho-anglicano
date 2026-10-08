@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sebastiao-leme-da-silveira-cintra
+name: Sebastião Leme da Silveira Cintra
+aliases:
+- Cardeal Leme
+- Sebastião Leme
+birth:
+  date: '1882-01-20'
+  sources:
+  - source: lin-ch-bsilcin
+    quote: 20 Jan 1882 Born
+  - source: lin-fiu-1930
+    quote: Ordained, October 28, 1904, Rome, by Francisco do Rêgo Maia, bishop of Belém do Pará.
+death:
+  date: '1942-10-17'
+  sources:
+  - source: lin-ch-bsilcin
+    quote: 20 Jan 1882 Born
+  - source: lin-fiu-1930
+    quote: Ordained, October 28, 1904, Rome, by Francisco do Rêgo Maia, bishop of Belém do Pará.
+biography: >-
+  Cardeal-arcebispo do Rio de Janeiro (1930-1942); sagrou Carlos Duarte Costa em 08/12/1924 como arcebispo-coadjutor
+  titular de Pharsalus.
+sources:
+- source: lin-ch-bsilcin
+  quote: 20 Jan 1882 Born
+- source: lin-fiu-1930
+  quote: Ordained, October 28, 1904, Rome, by Francisco do Rêgo Maia, bishop of Belém do Pará.
+ordinations:
+- order: presbyterate
+  date: '1904-10-28'
+  place: Roma
+  jurisdiction: null
+  ordained_by: francisco-do-rego-maia
+  status: confirmed
+  sources:
+  - source: lin-fiu-1930
+    quote: Ordained, October 28, 1904, Rome, by Francisco do Rêgo Maia, bishop of Belém do Pará.
+  - source: lin-ch-bsilcin
+    quote: 28 Oct 1904 22.7 Ordained Priest Priest of São Paulo, Brazil
+  notes: Data confirmada por Miranda e Catholic-Hierarchy; ordenante dado por Miranda.
+- order: episcopate
+  date: '1911-06-24'
+  place: Roma, capela do Pontifício Colégio Pio Latino-Americano
+  jurisdiction: null
+  office: auxiliary
+  principal_consecrator: joaquim-arcoverde-de-albuquerque-cavalcanti
+  co_consecrators:
+  - francisco-do-rego-maia
+  - juan-nepomuceno-terrero-y-escalada
+  status: contested
+  sources:
+  - source: lin-fiu-1930
+    quote: >-
+      Consecrated, June 24, 1911, chapel of the Pontificio Colegio Pio Latino Americano, Rome, by Cardinal Joaquim
+      Arcoverde de Albuquerque Cavalcanti, archbishop of São Sebastião do Rio de Janeiro, assisted by Francisco
+      do Rego Maia, titular archbishop of Nicopoli al Nesto, and by Juan Nepomuceno Terrero y Escalada, bishop of
+      La Plata.
+  - source: lin-wp-en-leme
+    quote: >-
+      He received his episcopal consecration on the following June 24 from Joaquim Arcoverde de Albuquerque Cavalcanti,
+      with Archbishop Francisco do Rego Maia and Bishop Juan Terrero y Escalada serving as co-consecrators, in Rome.
+  - source: lin-wp-pt-leme
+    quote: foi consagrado em 24 de junho, em Roma, pelo Cardeal Joaquim Arcoverde de Albuquerque Cavalcanti
+  - source: lin-ch-bsilcin
+    quote: 4 Jun 1911 29.3 Ordained Bishop Titular Bishop of Orthosias in Phoenicia
+  - source: lin-ch-bsilcin
+    quote: >-
+      Principal Consecrator: Joaquim Cardinal Arcoverde de Albuquerque Cavalcanti† Archbishop of São Sebastião do
+      Rio de Janeiro Principal Co-Consecrators: Archbishop Francisco do Rêgo Maia† Titular Archbishop of Nicopolis
+      ad Nestum Bishop Juan Nepomuceno Terrero y Escalada† Bishop of La Plata
+  discrepancies:
+  - field: date
+    value: '1911-06-04'
+    sources:
+    - source: lin-ch-bsilcin
+      quote: 4 Jun 1911 29.3 Ordained Bishop Titular Bishop of Orthosias in Phoenicia
+    - source: lin-ch-bsilcin
+      quote: >-
+        Principal Consecrator: Joaquim Cardinal Arcoverde de Albuquerque Cavalcanti† Archbishop of São Sebastião
+        do Rio de Janeiro Principal Co-Consecrators: Archbishop Francisco do Rêgo Maia† Titular Archbishop of Nicopolis
+        ad Nestum Bishop Juan Nepomuceno Terrero y Escalada† Bishop of La Plata
+  notes: >-
+    Bispo titular de Orthosias na Fenícia e auxiliar do Rio de Janeiro (nomeado em 24/03/1911). Miranda e a Wikipédia
+    (EN/PT) dão 24/06/1911; Catholic-Hierarchy dá 4/06/1911 com os mesmos sagrantes (provável erro de digitação,
+    mas não resolvido por fonte primária). Versão de Catholic-Hierarchy (4/06/1911); ver a versão de 24/06/1911
+    em Miranda e na Wikipédia.

@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: andre-letellier
+name: André LeTellier
+ordinations:
+- order: episcopate
+  date: '1968-05-23'
+  jurisdiction: null
+  principal_consecrator: andre-leon-zotique-barbeau
+  status: confirmed
+  sources:
+  - source: lin-ivcm
+    quote: >-
+      O bispo LeTellier foi sagrado em 23 de maio de 1968 pelo falecido arcebispo Andre Leon Zotique Barbeau, da
+      Igreja Católica Carismática do Canadá.
+  - source: lin-tjb-barbeau
+    quote: -) 05/23/1968 André LeTellier
+  notes: >-
+    A lista de sucessão da IVCM dá 24/05/1968 (no encadeamento) e 23/05/1968 (na narrativa sobre a investigação
+    do cardeal Gagnon); Boyle dá 23/05/1968. A IVCM relata que em 2002 o cardeal Gagnon foi convidado, a pedido
+    de João Paulo II, a investigar a documentação da sagração de LeTellier (declaração citada pela própria IVCM).

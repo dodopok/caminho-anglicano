@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rosinaldo-tavares-de-lima
+name: Rosinaldo Tavares de Lima
+biography: Clérigo da Igreja Anglicana Mundial (WAC), Província do Brasil, em Bonito (PA).
+sources:
+- source: rta-wacbr-cleros
+  quote: >-
+    Reverendo Rosinaldo Tavares de Lima Cidade: Bonito - PA Ordenação: Diaconal: 15/07/2022 Ordenação Presbiteral:
+    09/07/2023
+ordinations:
+- order: diaconate
+  date: '2022-07-15'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Rosinaldo Tavares de Lima Cidade: Bonito - PA Ordenação: Diaconal: 15/07/2022 Ordenação Presbiteral:
+      09/07/2023
+  notes: Data informada na lista de clérigos do site da própria província; sem ordenante nem local.
+- order: presbyterate
+  date: '2023-07-09'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Rosinaldo Tavares de Lima Cidade: Bonito - PA Ordenação: Diaconal: 15/07/2022 Ordenação Presbiteral:
+      09/07/2023
+  notes: Data informada na lista de clérigos do site da própria província; sem ordenante nem local.
+affiliations:
+- jurisdiction: wac-br
+  role: clergy
+  status: confirmed
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Rosinaldo Tavares de Lima Cidade: Bonito - PA Ordenação: Diaconal: 15/07/2022 Ordenação Presbiteral:
+      09/07/2023
+  notes: 'Local: Bonito, PA. Consta na lista de clérigos do site da WAC-BR.'

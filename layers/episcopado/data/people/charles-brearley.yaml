@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: charles-brearley
+name: Charles Brearley
+ordinations:
+- order: episcopate
+  date: '1954-01-31'
+  jurisdiction: null
+  principal_consecrator: matthew-cooper
+  status: probable
+  sources:
+  - source: lin-ivcm
+    quote: >-
+      Matthew Cooper, bispo de Greenwich, que em 31 de janeiro de 1954 consagrou; Charles (Ignatius Carolus) Brearley
+  notes: >-
+    Bispo de Yorkshire, depois arcebispo "de Donum", primaz dos antigos católicos da Grã-Bretanha (segundo a IVCM).
+    Fonte única.

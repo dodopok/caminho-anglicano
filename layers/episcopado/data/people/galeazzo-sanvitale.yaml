@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: galeazzo-sanvitale
+name: Galeazzo Sanvitale
+ordinations:
+- order: episcopate
+  date: '1604-04-04'
+  place: Roma, Sacristia Apostólica
+  jurisdiction: null
+  principal_consecrator: girolamo-bernerio
+  co_consecrators:
+  - claudio-rangoni
+  - giovanni-ambrogio-caccia
+  status: probable
+  sources:
+  - source: lin-ch-bsanv
+    quote: 4 Apr 1604 38.2 Ordained Bishop
+  - source: lin-ch-bsanv
+    quote: Ordained Bishop Apostolic Sacristy, Roma, Diocese of Roma {Rome}
+  - source: lin-ch-bsanv
+    quote: >-
+      Principal Consecrator: Girolamo Cardinal Bernerio, O.P.† Cardinal-Bishop of Albano Principal Co-Consecrators:
+      Bishop Claudio Rangoni† Bishop of Piacenza Bishop Giovanni Ambrogio Caccia† Bishop of Castro [del Lazio]
+  notes: Arcebispo de Bari. Só Catholic-Hierarchy consultada.

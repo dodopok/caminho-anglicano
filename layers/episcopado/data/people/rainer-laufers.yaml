@@ -1,3 +1,84 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: rainer-laufers
 name: Rainer Laufers
+ordinations:
+- order: episcopate
+  date: 1976-11
+  place: local não informado
+  jurisdiction: null
+  principal_consecrator: michel-staffiero
+  co_consecrators:
+  - gordon-a-da-costa
+  status: probable
+  sources:
+  - source: lin-tjb-laufers
+    quote: >-
+      Consecrated a bishop, sub conditione, on 11/xx/1976 at xxxxx by Michel Staffiero, a bishop of the Église de
+      l'Unité Catholique et Apostolique.
+  - source: lin-tjb-staffiero
+    quote: 3) 11/xx/1976 Rainer Laufers
+  - source: lia-aeci-succession
+    quote: Rainer Laufers c.1976
+  - source: lin-tjb-laufers
+    quote: >-
+      Lastly consecrated a bishop, sub conditione, on 08/08/1976 at xxxxx, and named to be Archbishop of Ottawa,
+      Canada by Robert S. Zeiger, a bishop of the American Orthodox Catholic Church, assisted by Gordon A. Da Costa,
+      a bishop of the American Orthodox Catholic Church.
+  - source: lin-tjb-laufers
+    quote: >-
+      Previously consecrated a bishop on 10/17/1975 by André Leon Zotique Barbeau, a bishop of the Catholic Charismatic
+      Church.
+  - source: lin-tjb-laufers
+    quote: >-
+      Later consecrated a bishop, sub conditione, on 11/18/1975 at xxxxx by Charles Brearley, a bishop of the Old
+      Holy Catholic Church.
+  discrepancies:
+  - field: date
+    value: '1976-08-08'
+    sources:
+    - source: lin-tjb-laufers
+      quote: >-
+        Lastly consecrated a bishop, sub conditione, on 08/08/1976 at xxxxx, and named to be Archbishop of Ottawa,
+        Canada by Robert S. Zeiger, a bishop of the American Orthodox Catholic Church, assisted by Gordon A. Da
+        Costa, a bishop of the American Orthodox Catholic Church.
+  - field: principal_consecrator
+    value: robert-s-zeiger
+    sources:
+    - source: lin-tjb-laufers
+      quote: >-
+        Lastly consecrated a bishop, sub conditione, on 08/08/1976 at xxxxx, and named to be Archbishop of Ottawa,
+        Canada by Robert S. Zeiger, a bishop of the American Orthodox Catholic Church, assisted by Gordon A. Da
+        Costa, a bishop of the American Orthodox Catholic Church.
+  - field: date
+    value: '1975-10-17'
+    sources:
+    - source: lin-tjb-laufers
+      quote: >-
+        Previously consecrated a bishop on 10/17/1975 by André Leon Zotique Barbeau, a bishop of the Catholic Charismatic
+        Church.
+  - field: principal_consecrator
+    value: andre-leon-zotique-barbeau
+    sources:
+    - source: lin-tjb-laufers
+      quote: >-
+        Previously consecrated a bishop on 10/17/1975 by André Leon Zotique Barbeau, a bishop of the Catholic Charismatic
+        Church.
+  - field: date
+    value: '1975-11-18'
+    sources:
+    - source: lin-tjb-laufers
+      quote: >-
+        Later consecrated a bishop, sub conditione, on 11/18/1975 at xxxxx by Charles Brearley, a bishop of the
+        Old Holy Catholic Church.
+  - field: principal_consecrator
+    value: charles-brearley
+    sources:
+    - source: lin-tjb-laufers
+      quote: >-
+        Later consecrated a bishop, sub conditione, on 11/18/1975 at xxxxx by Charles Brearley, a bishop of the
+        Old Holy Catholic Church.
+  notes: >-
+    Consagração condicional. Boyle registra ainda outras consagrações de Laufers: 17/10/1975 (André Léon Zotique
+    Barbeau), 18/11/1975 (Charles Brearley) e 08/08/1976 (Robert S. Zeiger, assistido por Gordon A. Da Costa; nomeado
+    arcebispo de Ottawa). Última consagração de Laufers segundo Boyle; ramo não subido. Ramo não subido. Ramo não
+    subido.

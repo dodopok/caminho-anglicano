@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: antonio-ryscak
+name: Antônio Ryscak
+biography: >-
+  Presbítero listado(a) na equipe pastoral da diocese liderada por Márcio Simões (IAB), vinculado(a) à Igreja Anglicana
+  Santa Semente.
+sources:
+- source: dv-pastores
+  quote: Rev. Antônio Ryscak Igreja Anglicana Santa Semente
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: dv-pastores
+    quote: Rev. Antônio Ryscak Igreja Anglicana Santa Semente
+  notes: 'Local: Igreja Anglicana Santa Semente. Lista da equipe pastoral no site da diocese; sem datas.'

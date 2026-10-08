@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: elineide-ferreira-oliveira
+name: Elineide Ferreira Oliveira
+ordinations:
+- order: diaconate
+  date: '2012-09-30'
+  jurisdiction: ieab
+  status: contested
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 30 de setembro de 2012.'
+  - source: rtb-dma-sobre
+    quote: >-
+      Ordenada ao diaconato em 2013. Desde então está como ministra encarregada da Paróquia da Santíssima Trindade,
+      na cidade de Ariquemes (RO).
+  discrepancies:
+  - field: date
+    value: '2013'
+    sources:
+    - source: rtb-dma-sobre
+      quote: >-
+        Ordenada ao diaconato em 2013. Desde então está como ministra encarregada da Paróquia da Santíssima Trindade,
+        na cidade de Ariquemes (RO).
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+    Distrito Missionário Anglicano; ordenante não informado.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dmo
+  start: '2013'
+  status: probable
+  sources:
+  - source: rtb-dma-sobre
+    quote: Ministra encarregada da Paróquia da Santíssima Trindade
+  notes: Paróquia da Santíssima Trindade, Ariquemes (RO).

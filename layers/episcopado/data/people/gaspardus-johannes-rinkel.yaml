@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: gaspardus-johannes-rinkel
+name: Gaspardus Johannes Rinkel
+ordinations:
+- order: episcopate
+  date: '1873-08-11'
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: hermanus-heykamp
+  status: confirmed
+  sources:
+  - source: lin-ms-rinkel
+    quote: 11th August 1873 18730811 Consecrated by Hermann Heijkamp
+  - source: lin-ivcm
+    quote: >-
+      Johannes van Santen, arcebispo de Utrecht, que em 17 de julho de 1854 consagrou; Herman Keylamp, bispo de
+      Deventor, que em 11 de agosto de 1873 consagrou; Casparus Johannes Rinkel, bispo de Haarlam
+  notes: >-
+    Bispo de Haarlem. Morningstar e a lista de sucessão da IVCM concordam em data e sagrante. Hermanus Heykamp era
+    bispo de Deventer (não confundir com o sobrinho Johannes Heykamp, arcebispo de Utrecht), segundo a Wikipédia
+    EN no verbete de Reinkens.

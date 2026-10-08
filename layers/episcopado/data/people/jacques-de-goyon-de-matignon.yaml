@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jacques-de-goyon-de-matignon
+name: Jacques de Goyon de Matignon
+ordinations:
+- order: episcopate
+  date: '1673-04-16'
+  jurisdiction: null
+  principal_consecrator: jacques-benigne-bossuet
+  co_consecrators:
+  - guy-de-seve-de-rochechouart
+  - louis-marie-armand-de-simiane-de-gordes
+  status: probable
+  sources:
+  - source: lin-ch-bgoyj
+    quote: 16 Apr 1673 30.2 Ordained Bishop
+  - source: lin-ch-bgoyj
+    quote: >-
+      Principal Consecrator: Bishop Jacques-Bénigne Bossuet† Bishop Emeritus of Condom Principal Co-Consecrators:
+      Bishop Guy de Sève de Rochechouart† Bishop of Arras Bishop Louis-Marie-Armand de Simiane de Gordes† Bishop
+      of Langres
+  notes: Bispo de Condom (depois emérito). Só Catholic-Hierarchy.

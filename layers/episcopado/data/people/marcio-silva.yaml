@@ -1,6 +1,12 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcio-silva
 name: Márcio Silva
+biography: >-
+  Presbítero listado(a) na equipe pastoral da diocese liderada por Márcio Simões (IAB), vinculado(a) à Igreja Anglicana
+  Garanhuns e Conselheiro.
+sources:
+- source: dv-pastores
+  quote: Rev. Márcio Silva Igreja Anglicana Garanhuns e Conselheiro
 ordinations:
 - order: episcopate
   date: '2014-03-07'
@@ -13,3 +19,12 @@ ordinations:
   notes: >-
     Linhagem declarada no site de Diego Peral (terceira linha); jurisdição não informada. A identidade deste Márcio
     Silva não foi confirmada por outra fonte.
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: dv-pastores
+    quote: Rev. Márcio Silva Igreja Anglicana Garanhuns e Conselheiro
+  notes: >-
+    Local: Igreja Anglicana Garanhuns e Conselheiro. Lista da equipe pastoral no site da diocese; sem datas.

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rodrigo-soares-de-almeida
+name: Rodrigo Soares de Almeida
+birth:
+  date: '1982-03-17'
+  sources:
+  - source: rta-ivcm-clerigos
+    quote: >-
+      Rodrigo Soares de Almeida Nasc. 17/03/1982 Grau/Ordem Bispo Missão Rio de Janeiro Acolhido em 14/03/2022 Ofício
+      Bispo Diocesano
+biography: 'Bispo da Igreja Veterocatólica Missionária (missão: Rio de Janeiro), acolhido em 2022-03-14.'
+sources:
+- source: rta-ivcm-clerigos
+  quote: >-
+    Rodrigo Soares de Almeida Nasc. 17/03/1982 Grau/Ordem Bispo Missão Rio de Janeiro Acolhido em 14/03/2022 Ofício
+    Bispo Diocesano
+affiliations:
+- jurisdiction: ivcmb
+  role: bishop
+  start: '2022-03-14'
+  status: confirmed
+  sources:
+  - source: rta-ivcm-clerigos
+    quote: >-
+      Rodrigo Soares de Almeida Nasc. 17/03/1982 Grau/Ordem Bispo Missão Rio de Janeiro Acolhido em 14/03/2022 Ofício
+      Bispo Diocesano
+  notes: 'Local: Rio de Janeiro. Ofício informado: Bispo Diocesano.'

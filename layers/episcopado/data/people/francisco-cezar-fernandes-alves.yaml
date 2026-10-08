@@ -6,6 +6,7 @@ aliases:
 - Bispo Cézar Alves
 - Cezar Fernandes Alves
 - Cézar Fernandes
+- Cézar Fernandes Alves
 - Dom Cézar Alves
 - Francisco Cézar F. Alves
 - Francisco Cézar Fernandes
@@ -51,8 +52,12 @@ ordinations:
   jurisdiction: ieab
   office: coadjutor
   principal_consecrator: naudal-gomes
-  status: probable
+  status: confirmed
   sources:
+  - source: rtb-dasp-historia
+    quote: >-
+      Em 2019 a DASP elegeu o Reverendo Cézar Fernandes Alves, como Bispo Coadjutor, e sagrado bispo em 25 de janeiro
+      de 2020. O Bispo Cézar foi instalado Bispo Diocesano da DASP em 31 de outubro de 2021.
   - source: costa2021
     quote: >-
       cerimônia de sagração ocorreu no dia 25 de janeiro de 2020 – festa de São Paulo, Apóstolo –, na Paróquia da
@@ -62,8 +67,8 @@ ordinations:
       Ele foi sagrado bispo em 25 de janeiro de 2020, na Paróquia da Santíssima Trindade, por Dom Naudal Alves Gomes,
       Primaz da IEAB.
   notes: >-
-    Eleito bispo coadjutor da DASP em 09/07/2019. Sagrante principal so pela Wikipedia PT. Coadjutor. A tese NÃO
-    nomeia sagrantes.
+    Bispo coadjutor eleito em 2019; instalado como diocesano em 31/10/2021. Eleito bispo coadjutor da DASP em 09/07/2019.
+    Sagrante principal so pela Wikipedia PT. Coadjutor. A tese NÃO nomeia sagrantes.
 affiliations:
 - jurisdiction: ieab
   role: bishop
@@ -141,6 +146,20 @@ events:
   - source: dasp-2022-alvaro-conv
     quote: >-
       para a Celebração de reconhecimento da Ordem Presbiteral do Rev. Álvaro no dia 15 de outubro de 2022.
+- type: other
+  date: '2019-07-09'
+  description: >-
+    Cézar Fernandes Alves, reitor da Paróquia São João (São Paulo) desde 2002, nascido em Quixeramobim (CE), é eleito
+    bispo coadjutor da Diocese Anglicana de São Paulo em concílio extraordinário de 09/07/2019; ordenado diácono
+    em julho de 1995 e presbítero em junho de 1996.
+  status: confirmed
+  sources:
+  - source: rtb-sn-2019-cezar-eleito
+    quote: >-
+      foi eleito em concílio extraordinário para bispo coadjutor da Diocese Anglicana de São Paulo (DASP) o Reverendo
+      Cézar Fernandes Alves.
+  - source: rtb-sn-2019-cezar-eleito
+    quote: foi ordenado diácono em julho de 1995 e presbítero em junho de 1996
 - type: other
   date: '2013'
   description: >-

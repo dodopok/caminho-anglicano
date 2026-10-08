@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marcia-goncalves
+name: Márcia Gonçalves
+aliases:
+- Revda. Márcia Gonçalves
+biography: >-
+  Presbítera listado(a) na equipe pastoral da diocese liderada por Márcio Simões (IAB), vinculado(a) à Catedral
+  Anglicana Ressurreição.
+sources:
+- source: dv-pastores
+  quote: Revda. Márcia Gonçalves Catedral Anglicana Ressurreição
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: dv-pastores
+    quote: Revda. Márcia Gonçalves Catedral Anglicana Ressurreição
+  notes: 'Local: Catedral Anglicana Ressurreição. Lista da equipe pastoral no site da diocese; sem datas.'

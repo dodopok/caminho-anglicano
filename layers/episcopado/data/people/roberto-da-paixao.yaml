@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: roberto-da-paixao
+name: Roberto da Paixão
+biography: >-
+  Presbítero listado(a) na equipe pastoral da diocese liderada por Márcio Simões (IAB), vinculado(a) à Igreja Anglicana
+  Cristo Salvador.
+sources:
+- source: dv-pastores
+  quote: Rev. Roberto da Paixão Igreja Anglicana Cristo Salvador
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: dv-pastores
+    quote: Rev. Roberto da Paixão Igreja Anglicana Cristo Salvador
+  notes: 'Local: Igreja Anglicana Cristo Salvador. Lista da equipe pastoral no site da diocese; sem datas.'

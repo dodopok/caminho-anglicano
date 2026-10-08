@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-a-bright
+name: John A. Bright
+full_name: John A. Bright
+birth:
+  date: '1927-09-01'
+  sources:
+  - source: rta-ecd1962
+    quote: b Portland Ore 1 Sep 27
+biography: >-
+  Missionário norte-americano no Distrito do Brasil Meridional a partir de 1960; capelão do Colégio Santa Margarida
+  e auxiliar de Cristo Redentor (Pelotas) em 1961.
+sources:
+- source: rta-ecd1962
+  quote: b Portland Ore 1 Sep 27
+ordinations:
+- order: diaconate
+  date: 1956-06
+  jurisdiction: tec
+  ordained_by: benjamin-dunlap-dagwell
+  status: probable
+  sources:
+  - source: rta-ecd1962
+    quote: D June 56 P Jan 57 Bp Dagwell
+  notes: >-
+    Ordenado nos Estados Unidos (Oregon) antes de ir como missionário ao Brasil em 1960. O diretório diz só "Bp
+    Dagwell", que era Benjamin Dunlap Dagwell, bispo do Oregon.
+- order: presbyterate
+  date: 1957-01
+  jurisdiction: tec
+  ordained_by: benjamin-dunlap-dagwell
+  status: probable
+  sources:
+  - source: rta-ecd1962
+    quote: D June 56 P Jan 57 Bp Dagwell
+  notes: >-
+    Ver nota do diaconato. O diretório diz só "Bp Dagwell", que era Benjamin Dunlap Dagwell, bispo do Oregon.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1960'
+  status: probable
+  sources:
+  - source: rta-ecd1962
+    quote: BRIGHT, JOHN A (SBra) Caixa Postal 300, Pelotas, RGS, Brazil
+  notes: 'Local: Brasil Meridional, Pelotas. Missionário a partir de 1960.'

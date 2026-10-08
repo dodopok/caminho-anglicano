@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: george-david-cummins
+name: George David Cummins
+ordinations:
+- order: episcopate
+  date: '1866-11-15'
+  place: Louisville, Kentucky (EUA)
+  jurisdiction: tec
+  office: auxiliary
+  principal_consecrator: john-henry-hopkins
+  co_consecrators:
+  - benjamin-bosworth-smith
+  - charles-todd-quintard
+  - henry-washington-lee
+  - john-barrett-kerfoot
+  - joseph-cruikshank-talbot
+  - robert-harper-clarkson
+  status: confirmed
+  sources:
+  - source: lin-fce-lista
+    quote: >-
+      4. GEORGE DAVID CUMMINS DD born 11 December, 1822. Consecrated by Bishops Hopkins, Smith, H. W. Lee, Talbot,
+      Quintard, Clarkson and Kerfoot, of the Protestant Episcopal Church, Louisville, Kentucky, 15 November, 1866.
+      Elected Presiding Bishop of the Reformed Episcopal Church, 2 December 1873. Died 1876.
+  notes: >-
+    Sagrado na Protestant Episcopal Church; foi eleito bispo presidente da Reformed Episcopal Church em 02/12/1873.
+    A cadeia pára em John Henry Hopkins (sagrado em 1832 por William White, Griswold e Bowen).

@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: matthew-cooper
+name: Matthew Cooper
+ordinations:
+- order: episcopate
+  date: '1924'
+  jurisdiction: null
+  principal_consecrator: james-bartholomew-banks
+  status: probable
+  sources:
+  - source: lin-ivcm
+    quote: James Bartholomew Banks, bispo de Windsor, que em 1924 consagrou; Matthew Cooper
+  notes: Bispo de Greenwich segundo a IVCM. Fonte única; data só o ano.

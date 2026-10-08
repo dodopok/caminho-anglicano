@@ -7,7 +7,36 @@ biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEA
 sources:
 - source: drv-comunicado-imprensa-2006
   quote: Dom Alexandre Macedo Maia, Arcebispo Primaz
+ordinations:
+- order: episcopate
+  date: null
+  jurisdiction: null
+  principal_consecrator: rogerio-ribeiro-campos
+  status: probable
+  sources:
+  - source: ccc-brasil-sucessao-vaticana
+    quote: »O Dom Campos sagrou o Bispo Dom Alexandre Macêdo Maia.
+  - source: ccc-brasil-sucessao-vaticana
+    quote: >-
+      No dia 08 de janeiro de 2006 na cidade de Catende - Pernambuco , o Bispo Dom Alexandre Macêdo Maia, ordenou
+      o Presbítero Paulo Bacalháo de Barros Lobo
+  notes: >-
+    Sem data; foi depois de 26/06/2005 (sagração de Campos) e antes de 08/01/2006, quando já ordenava presbíteros
+    como bispo. Linha da Catholic Charismatic Church.
 affiliations:
+- jurisdiction: iaab
+  role: diocesan_bishop
+  diocese: diocese-anglicana-de-santo-agostinho-de-cantuaria
+  start: '2005'
+  status: probable
+  sources:
+  - source: rta-abulense-historia
+    quote: O Bispo Maia, ordenado e sagrado pela CCC
+  - source: rta-abulense-historia
+    quote: Tendo por meio dele chegado ao Brasil, governada no ano de 2005 pelo Bispo Maia
+  notes: >-
+    A página 'Bispo Diocesano' traz foto de 'Dom Alexandre Macedo Maia'; o texto histórico diz que ele foi ordenado
+    e sagrado pela Catholic Charismatic Church (CCC), sem data nem sagrante.
 - jurisdiction: iabra
   role: bishop
   start: '2006'
@@ -65,6 +94,18 @@ affiliations:
     Ingressou abrindo mão das ordens episcopais, durante o episcopado de Robinson Cavalcanti; tornou-se oblato da
     Ordem de São Bento; depois deixou o Anglicanismo. Datas não informadas.
 events:
+- type: other
+  date: 2006-12
+  description: >-
+    No fim de 2006 o bispo Alexandre Macedo Maia foi aceito como cofundador do Movimento Anglicano Causa Comum,
+    fórum permanente de bispos de várias jurisdições anglicanas chamado Rede Anglicana Brasileira e chefiado por
+    Robinson Cavalcanti.
+  status: probable
+  sources:
+  - source: rta-abulense-historia
+    quote: >-
+      Em fins do ano de 2006 o Bispo Maia é aceito como co-fundador do Movimento Anglicano Causa Comum que reúne
+      bispos de diversas jurisdições anglicanas
 - type: other
   date: null
   description: >-

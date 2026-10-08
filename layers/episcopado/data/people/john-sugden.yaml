@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-sugden
+name: John Sugden
+ordinations:
+- order: episcopate
+  date: '1876-08-20'
+  place: Christ Church, Lambeth, Londres (Inglaterra)
+  jurisdiction: fce
+  office: diocesan
+  principal_consecrator: edward-cridge
+  co_consecrators:
+  - benjamin-price
+  status: confirmed
+  sources:
+  - source: lin-fce-lista
+    quote: >-
+      9. JOHN SUGDEN BA DD, was consecrated by Bishops Cridge and Price, assisted by several Presbyters, in Christ
+      Church, Lambeth, England, 20 August 1876. Died 1897.
+  notes: Morreu em 1897.

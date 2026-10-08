@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: orlando-baptista
+name: Orlando Baptista
+biography: >-
+  Clérigo dos distritos missionários do Brasil na edição de 1950 do anuário do clero (Brasil Meridional (Porto Alegre)).
+sources:
+- source: rta-ecd1950
+  quote: BAPTISTA, Orlando (S.Bra.), Caixa 790, Porto Alegre
+ordinations:
+- order: diaconate
+  date: 1930-11
+  jurisdiction: ieab
+  ordained_by: william-matthews-merrick-thomas
+  status: confirmed
+  sources:
+  - source: rta-ecd1950
+    quote: D—Nov., 1930, P—Aug., 1933, Bp. W. M. M. Thomas
+  notes: >-
+    Datas e bispo do verbete do anuário; 'Bp.' no verbete vale para as duas ordenações quando citado uma só vez.
+- order: presbyterate
+  date: 1933-08
+  jurisdiction: ieab
+  ordained_by: william-matthews-merrick-thomas
+  status: confirmed
+  sources:
+  - source: rta-ecd1950
+    quote: D—Nov., 1930, P—Aug., 1933, Bp. W. M. M. Thomas
+  notes: >-
+    Datas e bispo do verbete do anuário; 'Bp.' no verbete vale para as duas ordenações quando citado uma só vez.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: rta-ecd1950
+    quote: BAPTISTA, Orlando (S.Bra.), Caixa 790, Porto Alegre
+  notes: 'Local: Brasil Meridional, Porto Alegre. Verbete da edição de 1950.'

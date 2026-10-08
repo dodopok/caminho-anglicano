@@ -22,11 +22,17 @@ sources:
 ordinations:
 - order: episcopate
   date: '2006-10-14'
-  place: Belem (PA)
+  place: Paróquia da Santa Cruz, Belém (PA) (Igreja Católica Romana)
   jurisdiction: ieab
   office: diocesan
   status: probable
   sources:
+  - source: rtb-sn-2006-amazonia
+    quote: a mais nova Diocese da IEAB teve seu primeiro bispo sagrado neste sábado.
+  - source: rtb-sn-2006-amazonia
+    quote: >-
+      ao sábado, com o Rito de Sagração de Dom Saulo Maurício de Barros e com a Instalação Diocese Anglicana da
+      Amazônia, realizado na Paróquia da Santa Cruz, da Arquidiocese de Belém, Igreja Católica Romana
   - source: ens-102306-1-a
     quote: >-
       The ordination and consecration of Barros, and the inauguration of the new diocese, took place in the city
@@ -41,10 +47,13 @@ ordinations:
       A cerimônia foi presidida pelo Bispo Primaz, Maurício Andrade, junto com outros bispos e membros do clero
     page: '110'
   notes: >-
-    Primeiro bispo da Diocese Anglicana da Amazonia; eleito no Sinodo Geral de julho de 2006. A Wikipedia PT da
-    a instalacao em 15/10/2006. Sagrantes nao informados. A tese fala apenas em 'cerimônia de instalação' (15/10/2006,
-    Igreja de Santa Maria, Belém, presidida por Maurício Andrade); não diz explicitamente que foi a sagração. Nota
-    138: nº 21 no registro da IEAB.
+    Notícia de 16/10/2006 (segunda-feira): sagração no sábado (14/10); em 15/10 a paróquia-mãe virou Catedral de
+    Santa Maria e Saulo foi instalado em sua cátedra. A notícia não nomeia sagrante nem co-sagrantes; cerca de 500
+    presentes, incluindo a Comissão Bilateral ECUSA-IEAB, a USPG e a Diocese da Venezuela. Primeiro bispo da Diocese
+    Anglicana da Amazonia; eleito no Sinodo Geral de julho de 2006. A Wikipedia PT da a instalacao em 15/10/2006.
+    Sagrantes nao informados. A tese fala apenas em 'cerimônia de instalação' (15/10/2006, Igreja de Santa Maria,
+    Belém, presidida por Maurício Andrade); não diz explicitamente que foi a sagração. Nota 138: nº 21 no registro
+    da IEAB.
 affiliations:
 - jurisdiction: ieab
   role: bishop

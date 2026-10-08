@@ -1,6 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: rosimary-cunha
 name: Rosimary Cunha
+ordinations:
+- order: diaconate
+  date: '2010-05-15'
+  place: Catedral Anglicana da Santíssima Trindade, Recife (PE)
+  jurisdiction: ieab
+  ordained_by: sebastiao-gameleira
+  status: probable
+  sources:
+  - source: rtb-sn-2010-25anos
+    quote: >-
+      A Diocese Anglicana do Recife recebeu numa bonita liturgia duas novas diáconas, Ilma Oliveira Rios e Rosemary
+      Ferreira da Cunha. A ordenação ao diaconato aconteceu na Catedral Anglicana da Santíssima Trindade, nos sábado
+      15 de maio, às 17 horas, em cerimônia presidida pelo bispo diocesano, Dom Sebastião Armando Gameleira Soares
+  notes: >-
+    Nome na notícia: Rosemary Ferreira da Cunha (grafia Rosimary Cunha em outras fontes); ordenação marcou o encerramento
+    do encontro da UMEAB e os 25 anos da ordenação feminina.
 affiliations:
 - jurisdiction: ieab
   role: clergy

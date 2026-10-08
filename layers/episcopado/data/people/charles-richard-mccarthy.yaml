@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: charles-richard-mccarthy
+name: Charles Richard McCarthy
+ordinations:
+- order: presbyterate
+  date: '1974-10-26'
+  place: Filadélfia, Pensilvânia (EUA)
+  jurisdiction: null
+  ordained_by: richard-a-nowak
+  status: probable
+  sources:
+  - source: lin-tjb-mccarthy
+    quote: >-
+      Ordained a priest on 10/26/1974 at Philadelphia, Pennsylvania, by Richard A. Nowak, a bishop of xxxxx.
+- order: episcopate
+  date: '1977-04-30'
+  place: Mirabel, Québec (Canadá)
+  jurisdiction: null
+  principal_consecrator: rainer-laufers
+  co_consecrators:
+  - andre-leon-zotique-barbeau
+  - andre-letellier
+  - jean-marie-breault
+  - patrick-j-healy
+  status: contested
+  sources:
+  - source: lin-tjb-mccarthy
+    quote: >-
+      Later consecrated a bishop, sub conditione, on 04/30/1977 at Mirabel, Québec, by Rainer Laufers, a bishop
+      of the Old Holy Catholic Church in Canada, assisted by André Leon Zotique Barbeau, a bishop of xxxxx, by André
+      LeTellier, a bishop of the Catholic Charismatic Church of Canada ,, by Patrick J. Healy, a bishop of the American
+      Orthodox Catholic Church, and by Jean Marie Breault, a bishop of the Catholic Charismatic Church of Canada.
+  - source: lin-tjb-mccarthy
+    quote: >-
+      Consecrated a bishop, sub conditione, on 11/xx/1976 at xxxxx by Michel Staffiero, a bishop of the Église de
+      l'Unité Catholique et Apostolique, assisted by xxxx, a bishop of xxxx.
+  - source: lin-tjb-mccarthy
+    quote: >-
+      Previously consecrated a bishop on 04/06/1975 at Philadelphia, Pennsylvania, by Francis Joseph Ryan, a bishop
+      of the Ecumenical Orthodox Catholic Church - Autocephalous, assisted by Patrick J. Healy, a bishop of the
+      American Orthodox Catholic Church.
+  discrepancies:
+  - field: date
+    value: 1976-11
+    sources:
+    - source: lin-tjb-mccarthy
+      quote: >-
+        Consecrated a bishop, sub conditione, on 11/xx/1976 at xxxxx by Michel Staffiero, a bishop of the Église
+        de l'Unité Catholique et Apostolique, assisted by xxxx, a bishop of xxxx.
+  - field: place
+    value: local não informado
+    sources:
+    - source: lin-tjb-mccarthy
+      quote: >-
+        Consecrated a bishop, sub conditione, on 11/xx/1976 at xxxxx by Michel Staffiero, a bishop of the Église
+        de l'Unité Catholique et Apostolique, assisted by xxxx, a bishop of xxxx.
+  - field: principal_consecrator
+    value: michel-staffiero
+    sources:
+    - source: lin-tjb-mccarthy
+      quote: >-
+        Consecrated a bishop, sub conditione, on 11/xx/1976 at xxxxx by Michel Staffiero, a bishop of the Église
+        de l'Unité Catholique et Apostolique, assisted by xxxx, a bishop of xxxx.
+  - field: date
+    value: '1975-04-06'
+    sources:
+    - source: lin-tjb-mccarthy
+      quote: >-
+        Previously consecrated a bishop on 04/06/1975 at Philadelphia, Pennsylvania, by Francis Joseph Ryan, a bishop
+        of the Ecumenical Orthodox Catholic Church - Autocephalous, assisted by Patrick J. Healy, a bishop of the
+        American Orthodox Catholic Church.
+  - field: place
+    value: Filadélfia, Pensilvânia (EUA)
+    sources:
+    - source: lin-tjb-mccarthy
+      quote: >-
+        Previously consecrated a bishop on 04/06/1975 at Philadelphia, Pennsylvania, by Francis Joseph Ryan, a bishop
+        of the Ecumenical Orthodox Catholic Church - Autocephalous, assisted by Patrick J. Healy, a bishop of the
+        American Orthodox Catholic Church.
+  - field: principal_consecrator
+    value: francis-joseph-ryan
+    sources:
+    - source: lin-tjb-mccarthy
+      quote: >-
+        Previously consecrated a bishop on 04/06/1975 at Philadelphia, Pennsylvania, by Francis Joseph Ryan, a bishop
+        of the Ecumenical Orthodox Catholic Church - Autocephalous, assisted by Patrick J. Healy, a bishop of the
+        American Orthodox Catholic Church.
+  notes: >-
+    Consagração condicional. McCarthy teve três consagrações segundo Boyle (1975, 1976 e 1977); a AECI põe Laufers
+    imediatamente antes dele. Dia não informado. Primeira consagração de McCarthy segundo Boyle; esse ramo (Ryan)
+    não foi subido nesta pesquisa. A lista da AECI seguida aqui passa por Laufers e Staffiero.

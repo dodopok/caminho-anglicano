@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: edward-cridge
+name: Edward Cridge
+ordinations:
+- order: episcopate
+  date: '1876-07-17'
+  place: Igreja Emmanuel, Ottawa, Ontário (Canadá)
+  jurisdiction: rec
+  office: diocesan
+  principal_consecrator: charles-edward-cheney
+  co_consecrators:
+  - albert-carman
+  - william-rufus-nicholson
+  status: confirmed
+  sources:
+  - source: lin-fce-lista
+    quote: >-
+      7. EDWARD CRIDGE, BA (Cantab), was consecrated by Bishops Cheney, Nicholson and Albert Carman of the Methodist
+      Episcopal Church of Canada assisted by the Rev’ds Joseph Young of the Methodist Episcopal Church, Hunter of
+      the Wesleyan Methodist Church, Farris of the Presbyterian Church and seven Presbyters, in Emmanuel Church,
+      Ottawa, Ontario, 17 July, 1876. Died 1913.
+  notes: Entre os sagrantes, Albert Carman era bispo da Methodist Episcopal Church of Canada.

@@ -23,15 +23,29 @@ sources:
   quote: SERGEL, CHARLES HENRY CLEMENT (CBra) born 7 May 7 3 died 6 Oct 63
 ordinations:
 - order: diaconate
-  date: '1903'
-  jurisdiction: null
-  status: probable
+  date: 1903-03
+  jurisdiction: ieab
+  ordained_by: lucien-lee-kinsolving
+  status: confirmed
   sources:
+  - source: rta-ecd1950
+    quote: D—Mar., 1903, P—Mar., 1906, Bp. L. L. Kinsolving
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1903 - … Carl Henry Clement Sergel
     page: '369'
   notes: >-
+    Datas e bispo do verbete do anuário; 'Bp.' no verbete vale para as duas ordenações quando citado uma só vez.
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1906-03
+  jurisdiction: ieab
+  ordained_by: lucien-lee-kinsolving
+  status: confirmed
+  sources:
+  - source: rta-ecd1950
+    quote: D—Mar., 1903, P—Mar., 1906, Bp. L. L. Kinsolving
+  notes: >-
+    Datas e bispo do verbete do anuário; 'Bp.' no verbete vale para as duas ordenações quando citado uma só vez.
 affiliations:
 - jurisdiction: dmcb
   role: clergy

@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: john-daly-morton-mclean
+name: John Daly Morton McLean
+ordinations:
+- order: episcopate
+  date: '1999-09-11'
+  place: Christ Church, Liscard (Inglaterra)
+  jurisdiction: fce
+  office: diocesan
+  principal_consecrator: kenneth-john-wesley-powell
+  co_consecrators:
+  - john-barry-shucksmith
+  - leonard-w-riches
+  - roy-u-grote-jr
+  status: confirmed
+  sources:
+  - source: lin-fce-lista
+    quote: >-
+      40. JOHN DALY MORTON McLEAN BA ACIS DMA was consecrated by the same Bishops and Presbyters at the same time
+      and in the same place as Bishop Bentley-Taylor on 11 September 1999. Retired 2017. Died 2022.
+  - source: lin-fce-lista
+    quote: >-
+      39. ARTHUR BENTLEY-TAYLOR BD MA was consecrated by Bishops Powell, the Right Rev’d Leonard W. Riches DD Presiding
+      Bishop of the Reformed Episcopal Church of America, the Right Rev’d Roy U. Grote, Jr DD (Bishop of the REC
+      of America) and assisted by the Right Rev’d J. B. Shucksmith and several Presbyters, at Christ Church, Liscard,
+      on 11 September 1999. Resigned 2003.
+  notes: >-
+    Sagrado na mesma cerimônia de Arthur Bentley-Taylor (nº 39). Powell é o primeiro citado; Riches e Grote são
+    bispos da Reformed Episcopal Church of America; Shucksmith assistiu.

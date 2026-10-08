@@ -35,16 +35,36 @@ ordinations:
   date: '1980-03-23'
   place: Brasília (DF)
   jurisdiction: icab
+  office: diocesan
   principal_consecrator: luiz-fernando-castillo-mendez
-  status: probable
+  status: contested
   sources:
   - source: lia-iatb-noticias-2012
     quote: >-
       Dom Eduardo Mota foi ordenado ao episcopado na ICAB, na Cidade de Brasília, pelo Eminente Dom Luiz Fernando
       Castilho Mendez no dia 23 de março de 1980, portanto exerceu o episcopado por mais de três décadas.
+  - source: lvc-icab-sucessao-blog
+    quote: Diocesano de Cametá – PA em 21/03/1980
+  - source: lvc-icab-sucessao-blog
+    quote: >-
+      À frente de cada nome de bispo consta um código, colocado em relação a linhagem de SUCESSÃO APOSTÓLICA de
+      São Carlos do Brasil( Dom Carlos Duarte Costa).
+  discrepancies:
+  - field: date
+    value: '1980-03-21'
+    sources:
+    - source: lvc-icab-sucessao-blog
+      quote: Diocesano de Cametá – PA em 21/03/1980
+    - source: lvc-icab-sucessao-blog
+      quote: >-
+        À frente de cada nome de bispo consta um código, colocado em relação a linhagem de SUCESSÃO APOSTÓLICA de
+        São Carlos do Brasil( Dom Carlos Duarte Costa).
   notes: >-
     Fonte única (nota necrológica da IATB, por Dom Rui). O sagrante aparece como 'Luiz Fernando Castilho Mendez';
     a lista 'Brazilian Catholic Line' da IATB traz 'Luis Castilho-Mendez' (consagrado em 03/05/1948) em outra linhagem.
+    A numeração do blog indica a linhagem: os bispos com código 4.x descendem do bispo nº 4 da lista, Luís Fernando
+    Castillo Méndez; a fonte não diz com todas as letras 'sagrado por'. O blog diz que ele foi depois 'Expulso da
+    Igreja'. Cametá é a sede da diocese para a qual foi sagrado, não necessariamente o local da cerimônia.
 affiliations:
 - jurisdiction: iatb
   role: other

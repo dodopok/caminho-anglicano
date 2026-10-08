@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: girolamo-bernerio
+name: Girolamo Bernerio
+ordinations:
+- order: episcopate
+  date: '1586-09-07'
+  place: Roma, igreja dos Santos Apóstolos
+  jurisdiction: null
+  principal_consecrator: giulio-antonio-santorio
+  co_consecrators:
+  - giulio-masetti
+  - ottavio-paravicini
+  status: probable
+  sources:
+  - source: lin-ch-bberng
+    quote: 7 Sep 1586 46.6 Ordained Bishop
+  - source: lin-ch-bberng
+    quote: Ordained Bishop XII Apostoli, Roma, Diocese of Roma {Rome}, Italy
+  - source: lin-ch-bberng
+    quote: >-
+      Principal Consecrator: Giulio Antonio Cardinal Santorio† Cardinal-Priest of San Bartolomeo all’Isola Principal
+      Co-Consecrators: Bishop Giulio Masetti† Bishop of Reggio Emilia Bishop Ottavio Paravicini† Bishop of Alessandria
+      (della Paglia)
+  notes: Bispo de Ascoli Piceno, dominicano. Só Catholic-Hierarchy consultada.

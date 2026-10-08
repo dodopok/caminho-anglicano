@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: dominique-marie-varlet
+name: Dominique Marie Varlet
+ordinations:
+- order: episcopate
+  date: '1719-02-19'
+  place: Paris
+  jurisdiction: null
+  principal_consecrator: jacques-de-goyon-de-matignon
+  co_consecrators:
+  - jean-baptiste-massillon
+  - louis-francois-du-plessis-de-mornay
+  status: confirmed
+  sources:
+  - source: lin-ch-bvarlet
+    quote: 19 Feb 1719 40.9 Ordained Bishop
+  - source: lin-ch-bvarlet
+    quote: >-
+      Principal Consecrator: Bishop Jacques de Goyon de Matignon† Bishop Emeritus of Condom Principal Co-Consecrators:
+      Bishop Louis-François Du Plessis de Mornay, O.F.M. Cap.† Titular Bishop of Eumenia Bishop Jean-Baptiste Massillon,
+      C.O.I.† Bishop of Clermont
+  - source: lin-wp-en-varlet
+    quote: Consecration February 19, 1719 by Jacques de Goyon Matignon
+  - source: lin-ms-varlet
+    quote: 10th February 1719 17190210 Consecrated by Jacques Goÿon de Matignon
+  notes: >-
+    Bispo titular de Babilônia (missionário na Pérsia). CH e Wikipédia EN dão 19/02/1719; Morningstar dá 10/02/1719.
+    Varlet sagrou Steenoven (1724), Barchman Wuytiers (1725), van der Croon (1734) e Meindaerts (1739), origem da
+    sucessão vétero-católica holandesa.

@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: walter-michael-van-nieuwenhuisen
+name: Walter Michael van Nieuwenhuisen
+ordinations:
+- order: episcopate
+  date: '1768-02-07'
+  jurisdiction: null
+  office: diocesan
+  principal_consecrator: johannes-van-stiphout
+  co_consecrators:
+  - bartholomaeus-johannes-byeveld
+  status: confirmed
+  sources:
+  - source: lin-wp-en-nieuwenhuisen
+    quote: >-
+      On 7 February 1768 he was consecrated by Bishop Johannes van Stiphout of Haarlem and Bishop Bartholomaeus
+      Johannes Byeveld of Deventer
+  - source: lin-neale
+    quote: 5 Walter Michael Van Nieuwenhuisen Feb. 7, 1768 April 14, 1797 John Van Stiphout, Bishop of Haarlem.
+  notes: Arcebispo de Utrecht. Wikipédia EN e Neale concordam.

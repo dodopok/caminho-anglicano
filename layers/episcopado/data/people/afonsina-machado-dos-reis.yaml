@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: afonsina-machado-dos-reis
+name: Afonsina Machado dos Reis
+ordinations:
+- order: diaconate
+  date: '2000'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 9 de setembro de 2000.'
+  - source: rta-livro35
+    quote: >-
+      No início do ano 2000, já avançada em idade, foi ordenada como diácona (em 12 de junho de 2000) e presbítera
+      (9 de setembro de 2000).
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+    Internamente o texto da biografia diz 'ordenada como diácona (em 12 de junho de 2000) e presbítera (9 de setembro
+    de 2000)', contradizendo o cabeçalho; ver dúvidas.
+- order: presbyterate
+  date: '2007-06-12'
+  jurisdiction: ieab
+  status: contested
+  sources:
+  - source: rta-livro35
+    quote: 'Presbiterado: 12 de junho de 2007.'
+  - source: rta-livro35
+    quote: >-
+      No início do ano 2000, já avançada em idade, foi ordenada como diácona (em 12 de junho de 2000) e presbítera
+      (9 de setembro de 2000).
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+    Internamente o texto da biografia diz 'ordenada como diácona (em 12 de junho de 2000) e presbítera (9 de setembro
+    de 2000)', contradizendo o cabeçalho; ver dúvidas.

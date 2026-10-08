@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: michel-staffiero
+name: Michel Staffiero
+ordinations:
+- order: episcopate
+  date: '1973-04-29'
+  place: local não informado
+  jurisdiction: null
+  principal_consecrator: oscar-osvaldo-cairoli-y-fernandez
+  co_consecrators:
+  - alejandro-evaristo-geist
+  - maurice-auberger
+  status: probable
+  sources:
+  - source: lin-tjb-staffiero
+    quote: >-
+      Later consecrated a bishop, sub conditione, on 04/29/1973 at xxxxx by Oscar Cairoli y Fernandez, a bishop
+      of the Igreja Católica Apostólica Independente, Patriarcado do Brasil, assisted by Alejandro Evaristo Geist,
+      a bishop of the Igreja Católica Apostólica Independente, Patriarcado do Brasil.
+  - source: lin-tjb-cairoli
+    quote: 3) 04/29/1973 Michel Staffiero
+  - source: lia-aeci-succession
+    quote: Michael Staffiero c.1973
+  - source: lin-tjb-staffiero
+    quote: >-
+      Consecrated a bishop on 08/22/1972 at xxxxx by Giuseppe Santo Eusebio Pace, a bishop in Italy of the American
+      Orthodox Catholic Church.
+  - source: lin-tjb-staffiero
+    quote: >-
+      Lastly consecrated a bishop, sub conditione, in a mutual exchange of consecrations, on 07/29/1975 at xxxxx
+      by Roger Caro, a bishop of the Église Universelle de la Nouvelle Alliance, assisted by Maurice Auberger, a
+      bishop of the Église Universelle de la Nouvelle Alliance.
+  discrepancies:
+  - field: date
+    value: '1972-08-22'
+    sources:
+    - source: lin-tjb-staffiero
+      quote: >-
+        Consecrated a bishop on 08/22/1972 at xxxxx by Giuseppe Santo Eusebio Pace, a bishop in Italy of the American
+        Orthodox Catholic Church.
+  - field: principal_consecrator
+    value: giuseppe-santo-eusebio-pace
+    sources:
+    - source: lin-tjb-staffiero
+      quote: >-
+        Consecrated a bishop on 08/22/1972 at xxxxx by Giuseppe Santo Eusebio Pace, a bishop in Italy of the American
+        Orthodox Catholic Church.
+  - field: date
+    value: '1975-07-29'
+    sources:
+    - source: lin-tjb-staffiero
+      quote: >-
+        Lastly consecrated a bishop, sub conditione, in a mutual exchange of consecrations, on 07/29/1975 at xxxxx
+        by Roger Caro, a bishop of the Église Universelle de la Nouvelle Alliance, assisted by Maurice Auberger,
+        a bishop of the Église Universelle de la Nouvelle Alliance.
+  - field: principal_consecrator
+    value: roger-caro
+    sources:
+    - source: lin-tjb-staffiero
+      quote: >-
+        Lastly consecrated a bishop, sub conditione, in a mutual exchange of consecrations, on 07/29/1975 at xxxxx
+        by Roger Caro, a bishop of the Église Universelle de la Nouvelle Alliance, assisted by Maurice Auberger,
+        a bishop of the Église Universelle de la Nouvelle Alliance.
+  notes: >-
+    Consagração condicional. Staffiero é "Michael Staffiero" na lista da AECI. Primeira consagração segundo Boyle;
+    ramo não subido. Troca mútua de consagrações; ramo não subido.

@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: bernardino-giraud
+name: Bernardino Giraud
+ordinations:
+- order: episcopate
+  date: '1767-04-26'
+  jurisdiction: null
+  principal_consecrator: carlo-della-torre-rezzonico-clemente-xiii
+  co_consecrators:
+  - ignazio-reali
+  - scipione-borghese
+  status: probable
+  sources:
+  - source: lin-ch-bgirab
+    quote: 26 Apr 1767 45.7 Ordained Bishop
+  - source: lin-ch-bgirab
+    quote: >-
+      Principal Consecrator: Pope Clement XIII (Carlo della Torre Rezzonico†) Principal Co-Consecrators: Archbishop
+      Scipione Borghèse† Titular Archbishop of Teodosia Archbishop Ignazio Reali† Titular Archbishop of Athenae
+  notes: Arcebispo titular de Damasco e núncio na França. Só Catholic-Hierarchy consultada.

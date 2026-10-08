@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iaab
+acronym: IAAB
+name: Igreja Anglicana Abulense Brasileira
+type: other
+country: BR
+founded:
+  date: '2005'
+  sources:
+  - source: rta-abulense-historia
+    quote: >-
+      A Catholic Charismatic Church foi o nome pela qual a Igreja Católica Carismática provinda dos Estados Unidos
+      e Europa registrou-se no Brasil em 2005.
+  - source: rta-abulense-historia
+    quote: >-
+      fixa-se na Espanha, especialmente no território de Castilla y León, Cidade de Ávila donde lhe vêm o adjetivo
+      Abulense.
+description: >-
+  Segundo o site de uma paróquia ligada a ela, descende da Catholic Charismatic Church (Igreja Episcopal Católica
+  Carismática), registrada no Brasil em 2005 sob o bispo Alexandre Macedo Maia, que depois a reorganizou como ramo
+  autônomo de fé anglicana, com distritos extraterritoriais no México e na Espanha (Castela e Leão, Ávila, origem
+  do adjetivo 'Abulense').
+sources:
+- source: rta-abulense-historia
+  quote: >-
+    A Catholic Charismatic Church foi o nome pela qual a Igreja Católica Carismática provinda dos Estados Unidos
+    e Europa registrou-se no Brasil em 2005.
+- source: rta-abulense-historia
+  quote: >-
+    fixa-se na Espanha, especialmente no território de Castilla y León, Cidade de Ávila donde lhe vêm o adjetivo
+    Abulense.

@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: antidio-jose-vargas
+name: Antídio José Vargas
+ordinations:
+- order: episcopate
+  date: '1946-12-08'
+  jurisdiction: icab
+  principal_consecrator: carlos-duarte-costa
+  status: probable
+  sources:
+  - source: lin-wp-en-costa
+    quote: '"bishop 2":{"wt":"[[Antidio Jose Vargas]]"},"consecration date 2":{"wt":"8 December 1946"}'
+  - source: lin-wp-en-costa
+    quote: Jorge Alves de Souza and Antidio Jose Vargas (both in 1946)
+  notes: >-
+    Sagrado por Carlos Duarte Costa em 1946 (Wikipédia EN, caixa de bispos sagrados por Costa e texto). A cadeia
+    desta linha chega assim a Costa (item 1).

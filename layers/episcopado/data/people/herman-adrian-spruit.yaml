@@ -1,3 +1,48 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: herman-adrian-spruit
 name: Herman Adrian Spruit
+ordinations:
+- order: episcopate
+  date: '1957-06-22'
+  jurisdiction: null
+  principal_consecrator: charles-hampton
+  co_consecrators:
+  - c-hanlon
+  - h-francis-marshall
+  - lowell-paul-wadle
+  status: contested
+  sources:
+  - source: aca-cross-of-antioch
+    quote: >-
+      It was written by Bishop Lowell Paul Wadle who was a co-consecrator of the Rev. Father Herman Adrian Spruit
+      on June 22, 1957 when Father Spruit was consecrated a Bishop. Bishop Charles Hampton of the Liberal Catholic
+      Church was his main consecrator.
+  - source: rcc-our-history
+    quote: >-
+      Herman Adrian Spruit, 1957. Consecrated by Wadle, Charles H. Hampton (Liberal Catholic) and H. Francis Marshall
+      (Greek Melchite), as First Bishop of the Church Universal.
+  - source: ccc-apostolic-succession
+    quote: >-
+      Herman Adrian Spruit was consecrated in 1957 by Lowel Paul Wadle, C. Hampton, C. Hanlon and F. Marshall.
+  - source: ccc-apostolic-succession
+    quote: Herman A. Spruit was consecrated in 1957 by Charles Hampton as principal consecrator.
+  - source: enwiki-caca
+    quote: >-
+      he approached Bishop Hampton of the Liberal Catholic Church, and Bishop Hampton consecrated him to the episcopate
+      on June 22, 1957.
+  - source: rtb-ceec-succession
+    quote: >-
+      Lowell P. Wadle Bishop in the Apostolic Catholic Church, who on the 22nd of June, 1957, consecrated Herman
+      Adrian Spruit
+  discrepancies:
+  - field: principal_consecrator
+    value: lowell-paul-wadle
+    sources:
+    - source: rtb-ceec-succession
+      quote: >-
+        Lowell P. Wadle Bishop in the Apostolic Catholic Church, who on the 22nd of June, 1957, consecrated Herman
+        Adrian Spruit
+  notes: >-
+    C. Hanlon aparece como co-sagrante só na lista da Celtic Christian Church. Hampton era bispo da Liberal Catholic
+    Church, de linha vétero-católica. Linha de sucessão autodeclarada pela CEEC (tabela 'Anglican Succession – Table
+    One'); a página lista só o sagrante principal e a data. Não verificada por fonte independente.

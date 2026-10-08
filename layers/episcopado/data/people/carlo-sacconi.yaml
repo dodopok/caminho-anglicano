@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: carlo-sacconi
+name: Carlo Sacconi
+ordinations:
+- order: episcopate
+  date: '1851-06-08'
+  place: Roma, igreja dos Ss. Vincenzo e Anastasio
+  jurisdiction: null
+  principal_consecrator: giacomo-filippo-fransoni
+  co_consecrators:
+  - giuseppe-valerga
+  - rudesindo-salvado
+  status: confirmed
+  sources:
+  - source: lin-ch-bsac
+    quote: 8 Jun 1851 43.0 Ordained Bishop
+  - source: lin-ch-bsac
+    quote: Ordained Bishop Ss. Vincenzo ed Anastasio, Roma, Diocese of Roma {Rome}, Italy
+  - source: lin-ch-bsac
+    quote: >-
+      Principal Consecrator: Giacomo Filippo Cardinal Fransoni† Cardinal-Priest of Santa Maria in Ara Coeli Principal
+      Co-Consecrators: Patriarch Giuseppe Valerga† Patriarch of Jerusalem {Gerusalemme} Bishop Rudesindo Salvado,
+      O.S.B.† Bishop of Victoria
+  - source: lin-fiu-1861
+    quote: >-
+      Consecrated, June 8, 1851, church of Ss. Vincenzo ed Anastasio, Rome, by Cardinal Giacomo Filippo Fransoni
+      assisted by Giuseppe Valerga, Latin patriarch of Jerusalem, and by Rudesindo Salvado Rotea, O.S.B., bishop
+      of Port Victoria
+  notes: Arcebispo titular de Niceia e núncio na Baviera. Catholic-Hierarchy e Miranda concordam.

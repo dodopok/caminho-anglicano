@@ -12,6 +12,24 @@ sources:
   quote: Dr. Robert Kilgour, the primus, bishop of Aberdeen
 - source: wikidata-api-2
   quote: '"Q7346347": enwiki "Robert Kilgour"'
+ordinations:
+- order: episcopate
+  date: '1768-09-21'
+  jurisdiction: scottish-episcopal-church
+  office: diocesan
+  principal_consecrator: william-falconer
+  co_consecrators:
+  - james-rait
+  - john-alexander
+  status: probable
+  sources:
+  - source: rtb-wp-kilgour
+    quote: >-
+      He was consecrated as Bishop of Aberdeen on 21 September 1768 by William Falconer, Primus of the Scottish
+      Episcopal Church, James Rait, Bishop of Brechin, and John Alexander, Bishop of Dunkeld.
+  notes: >-
+    Wikipédia EN (fonte terciária; cita Bertie, Dowden e Skinner). Linha escocesa dos bispos 'nonjurors' até Seabury
+    (1784).
 affiliations:
 - jurisdiction: scottish-episcopal-church
   role: primate

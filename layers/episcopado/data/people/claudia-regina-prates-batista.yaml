@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: claudia-regina-prates-batista
+name: Cláudia Regina Prates Batista
+ordinations:
+- order: diaconate
+  date: '2010-03-14'
+  place: Catedral Nacional da Santíssima Trindade, Porto Alegre (RS)
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 14 de março de 2010.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+- order: presbyterate
+  date: '2011-09-18'
+  place: Paróquia São Paulo
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Presbiterado: 18 de setembro de 2011.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).

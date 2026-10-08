@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: carmen-akemi-kawano
+name: Carmen Akemi Kawano
+ordinations:
+- order: diaconate
+  date: '2009-02-28'
+  place: Paróquia de São João, São Paulo (SP)
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 28 de fevereiro de 2009.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+- order: presbyterate
+  date: '2010-09-25'
+  place: Paróquia de Cristo Rei, Registro (SP)
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Presbiterado: 25 de setembro de 2010.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+events:
+- type: other
+  date: '2013-05-15'
+  description: >-
+    Em 15/05/2013 o SNIEAB anunciou que o Primaz Maurício Andrade, bispo pró-tempore da Diocese Anglicana de São
+    Paulo (DASP/IEAB), convocou o 47º Concílio Ordinário e um Concílio Extraordinário para 9 e 10/08/2013, em São
+    Paulo, para eleger o próximo bispo diocesano, em razão da ação anulatória de novembro de 2012. Foi nomeada a
+    reverenda Carmen Kawano para a Secretaria Diocesana.
+  status: confirmed
+  sources:
+  - source: rta-sn-sinais-dasp
+    quote: >-
+      Foi anunciado oficialmente pelo Primaz Dom Maurício Andrade, bispo pró-têmpore da Diocese Anglicana de São
+      Paulo-DASP, as convocatórias para a realização do 47º Concílio Ordinário e Concílio Extraordinário, que ocorrerão
+      na cidade de São Paulo, entre os dias 09 a 10 de agosto de 2013
+  - source: rta-sn-sinais-dasp
+    quote: >-
+      O Concílio Extraordinário foi convocado especificamente para proceder a eleição do próximo bispo diocesano
+      devido a ação anulatória em novembro de 2012.

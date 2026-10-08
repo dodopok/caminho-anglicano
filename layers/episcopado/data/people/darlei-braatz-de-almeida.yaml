@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: darlei-braatz-de-almeida
+name: Darlei Braatz de Almeida
+biography: Clérigo da Igreja Anglicana Mundial (WAC), Província do Brasil, em Colorado do Oeste (RO).
+sources:
+- source: rta-wacbr-cleros
+  quote: >-
+    Reverendo Darlei Braatz de Almeida Cidade: Colorado do Oeste - RO Ordenação: Diaconal: Ordenação Presbiteral:
+    22/11/2025
+ordinations:
+- order: presbyterate
+  date: '2025-11-22'
+  jurisdiction: wac-br
+  status: probable
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Darlei Braatz de Almeida Cidade: Colorado do Oeste - RO Ordenação: Diaconal: Ordenação Presbiteral:
+      22/11/2025
+  notes: Data informada na lista de clérigos do site da própria província; sem ordenante nem local.
+affiliations:
+- jurisdiction: wac-br
+  role: clergy
+  status: confirmed
+  sources:
+  - source: rta-wacbr-cleros
+    quote: >-
+      Reverendo Darlei Braatz de Almeida Cidade: Colorado do Oeste - RO Ordenação: Diaconal: Ordenação Presbiteral:
+      22/11/2025
+  notes: 'Local: Colorado do Oeste, RO. Consta na lista de clérigos do site da WAC-BR.'

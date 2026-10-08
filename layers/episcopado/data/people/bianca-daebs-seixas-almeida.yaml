@@ -1,6 +1,31 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: bianca-daebs-seixas-almeida
 name: Bianca Daebs Seixas Almeida
+ordinations:
+- order: diaconate
+  date: '2017-12-09'
+  place: Capela do Cemitério Britânico, Ladeira da Barra, Salvador (BA)
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 9 dezembro de 2017.'
+  - source: rta-livro35
+    quote: >-
+      em dezembro de 2017, no episcopado de Dom João Câncio Peixoto Filho, fui ordenada Reverenda da Igreja Episcopal
+      Anglicana do Brasil, na Capela do Cemitério Britânico
+  notes: >-
+    O texto menciona o episcopado de Dom João Câncio Peixoto Filho (Diocese Anglicana do Recife/Bahia) sem dizer
+    expressamente quem ordenou.
+- order: presbyterate
+  date: '2018-12-08'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Presbiterado: 8 de dezembro de 2018.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
 affiliations:
 - jurisdiction: ieab
   role: clergy

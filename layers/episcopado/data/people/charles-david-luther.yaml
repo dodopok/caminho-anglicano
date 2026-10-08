@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: charles-david-luther
+name: Charles David Luther
+ordinations:
+- order: episcopate
+  date: '1977-09-25'
+  jurisdiction: null
+  principal_consecrator: charles-richard-mccarthy
+  co_consecrators:
+  - francis-jerome-joachim-ladd
+  - wallace-davis-de-ortega-maxey
+  status: probable
+  sources:
+  - source: lin-tjb-luther
+    quote: >-
+      Consecrated a bishop on 09/25/1977 at xxxxx by Charles Richard McCarthy, a bishop of the American Orthodox
+      Catholic Church, assisted by Francis Jerome Joachim Ladd, a bishop of the American Orthodox Catholic Church,
+      and by Wallace David de Ortega-Maxey, then a bishop of the American Episcopal Church.
+  - source: lin-tjb-mccarthy
+    quote: 3) 09/25/1977 Charles David Luther
+  - source: lia-aeci-succession
+    quote: C. David Luther c.1977
+  - source: lin-tjb-luther
+    quote: >-
+      Later consecrated a bishop, sub conditione, on 08/09/1982 at xxxxx by Wallace David de Ortega Maxey, then
+      a bishop of the Apostolic Episcopal Church, assisted by Francis Jerome Joachim Ladd, a bishop of the American
+      Orthodox Catholic Church.
+  - source: lin-tjb-luther
+    quote: >-
+      Reportedly also consecrated a bishop, sub conditione, on xx/xx/1982 at xxxxx by Francis J. Ryan, a bishop
+      of the Ecumenical Orthodox Catholic Church - Autocephalous.
+  discrepancies:
+  - field: date
+    value: '1982-08-09'
+    sources:
+    - source: lin-tjb-luther
+      quote: >-
+        Later consecrated a bishop, sub conditione, on 08/09/1982 at xxxxx by Wallace David de Ortega Maxey, then
+        a bishop of the Apostolic Episcopal Church, assisted by Francis Jerome Joachim Ladd, a bishop of the American
+        Orthodox Catholic Church.
+    - source: lin-tjb-luther
+      quote: >-
+        Reportedly also consecrated a bishop, sub conditione, on xx/xx/1982 at xxxxx by Francis J. Ryan, a bishop
+        of the Ecumenical Orthodox Catholic Church - Autocephalous.
+  - field: principal_consecrator
+    value: wallace-davis-de-ortega-maxey
+    sources:
+    - source: lin-tjb-luther
+      quote: >-
+        Later consecrated a bishop, sub conditione, on 08/09/1982 at xxxxx by Wallace David de Ortega Maxey, then
+        a bishop of the Apostolic Episcopal Church, assisted by Francis Jerome Joachim Ladd, a bishop of the American
+        Orthodox Catholic Church.
+    - source: lin-tjb-luther
+      quote: >-
+        Reportedly also consecrated a bishop, sub conditione, on xx/xx/1982 at xxxxx by Francis J. Ryan, a bishop
+        of the Ecumenical Orthodox Catholic Church - Autocephalous.
+  notes: >-
+    Fonte principal: Boyle; a AECI dá só "c.1977". O Celtic Christian Church dá uma versão em que Francis Jerome
+    Joachim seria o principal (não consultada diretamente). Consagração condicional (sub conditione). Boyle registra
+    ainda, como "reportedly", outra condicional em 1982 por Francis J. Ryan.

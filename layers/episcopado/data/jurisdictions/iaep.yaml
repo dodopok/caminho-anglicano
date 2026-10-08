@@ -1,7 +1,9 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: iaep
 acronym: IAEP
-name: Igreja Apostólica Episcopal Portuguesa
+name: IAE
+aliases:
+- Igreja Apostólica Episcopal Portuguesa
 type: national_church
 country: PT
 description: Igreja de cujos bispos Lucas Macieira recebeu a sagração episcopal em 2004, em Portugal.

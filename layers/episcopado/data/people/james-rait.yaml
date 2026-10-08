@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: james-rait
+name: James Rait
+ordinations:
+- order: episcopate
+  date: '1742-10-04'
+  place: Edimburgo
+  jurisdiction: scottish-episcopal-church
+  office: diocesan
+  principal_consecrator: thomas-rattray
+  co_consecrators:
+  - robert-keith
+  - robert-white
+  status: probable
+  sources:
+  - source: rtb-wp-rait
+    quote: >-
+      He was consecrated the Bishop of the Diocese of Brechin on 4 October 1742 at Edinburgh by Primus Rattray and
+      bishops Keith and White
+  notes: >-
+    Wikipédia EN (fonte terciária; cita Bertie, Dowden e Skinner). Linha escocesa dos bispos 'nonjurors' até Seabury
+    (1784).

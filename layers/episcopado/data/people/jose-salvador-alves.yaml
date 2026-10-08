@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jose-salvador-alves
+name: José Salvador Alves
+ordinations:
+- order: diaconate
+  date: '2025-05-04'
+  place: Catedral da Santíssima Trindade, São Paulo (SP)
+  jurisdiction: ieab
+  ordained_by: francisco-cezar-fernandes-alves
+  status: probable
+  sources:
+  - source: rtb-ieab-dasp-58
+    quote: >-
+      O Concílio se encerrou no domingo (4) com uma celebração eucarística especial, marcada pela ordenação diaconal
+      de José Salvador Alves , membro da Ordem Beneditina. A cerimônia foi conduzida pelo bispo Cézar e contou com
+      a pregação do bispo Eduardo Grillo
+  notes: >-
+    Domingo 4 de maio de 2025, encerramento do 58º Concílio da DASP (matéria de 05/05/2025). O local é inferido
+    da menção ao Coral da Catedral da Santíssima Trindade; a notícia não nomeia o templo da cerimônia.

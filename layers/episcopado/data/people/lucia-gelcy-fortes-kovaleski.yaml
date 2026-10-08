@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: lucia-gelcy-fortes-kovaleski
+name: Lucia Gelcy Fortes Kovaleski
+ordinations:
+- order: diaconate
+  date: '2007-10-28'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Diaconato: 28 de outubro de 2007.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+- order: presbyterate
+  date: '2009-06-14'
+  jurisdiction: ieab
+  status: confirmed
+  sources:
+  - source: rta-livro35
+    quote: 'Presbiterado: 14 de junho de 2009.'
+  notes: >-
+    Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).

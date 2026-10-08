@@ -56,7 +56,7 @@ ordinations:
     quote: Em 2013, Dom James Roque recebeu o episcopado pelas mãos de Dom Victor Manuel Cruz-Blanco
   - source: cant-novas-igrejas-2024
     quote: A sua sagração aconteceu na cidade de Barranquila, na Colômbia.
-  - source: lvc-ivcm-site
+  - source: lin-ivcm
     quote: >-
       Rogério Ribeiro Campos, bispo da diocese de São João Batista no Brasil, posteriormente bispo do Centro-Oeste
       do Brasil da Comunhão Independente Anglicana, após primeiro Abade do Mosteiro Cisterciense de São Rafael,
@@ -85,7 +85,7 @@ ordinations:
   - field: date
     value: '2014-01-31'
     sources:
-    - source: lvc-ivcm-site
+    - source: lin-ivcm
       quote: >-
         Rogério Ribeiro Campos, bispo da diocese de São João Batista no Brasil, posteriormente bispo do Centro-Oeste
         do Brasil da Comunhão Independente Anglicana, após primeiro Abade do Mosteiro Cisterciense de São Rafael,
@@ -93,7 +93,7 @@ ordinations:
   - field: principal_consecrator
     value: rafael-ribeiro-campos
     sources:
-    - source: lvc-ivcm-site
+    - source: lin-ivcm
       quote: >-
         Rogério Ribeiro Campos, bispo da diocese de São João Batista no Brasil, posteriormente bispo do Centro-Oeste
         do Brasil da Comunhão Independente Anglicana, após primeiro Abade do Mosteiro Cisterciense de São Rafael,
@@ -213,6 +213,22 @@ events:
       Anos mais tarde, a Diocese Anglicana do Japí foi extinta e estes novos bispos seguiram caminhos distintos,
       fundando Igrejas Anglicanas Independentes, sem vínculos com alguma instância associativa, nem com o Movimento
       Continuante.
+- type: other
+  date: '2012-10-14'
+  description: >-
+    A Diocese Anglicana do Japi (Jundiaí/SP) é recebida e instalada em 14/10/2012 sob a autoridade canônica do arcebispado
+    da Igreja Anglicana do Caribe e de Nova Granada (Colômbia); é extinta em 01/10/2016, passando a sé titular no
+    Movimento Anglicano Continuante. James Antonio Roque é listado como bispo diocesano (2013-2016).
+  status: probable
+  sources:
+  - source: rtb-wp-japi
+    quote: >-
+      A diocese estava situada no Estado de São Paulo desde 14 de outubro de 2012, data da sua recepção e instalação
+      sob a autoridade canônica do arcebispado da Igreja Anglicana do Caribe e de Nova Granada da Colômbia.
+  - source: rtb-wp-japi
+    quote: >-
+      foi uma diocese do rito anglicano, extinta em 01 de outubro de 2016, passando à condição de uma sé titular
+      no seio do Movimento Anglicano Continuante.
 - type: other
   date: '2015-08-15'
   description: >-

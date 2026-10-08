@@ -1,3 +1,27 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: owen-augustine
 name: Owen Augustine
+aliases:
+- Owen J. Augustine
+biography: >-
+  Bispo da American Catholic Orthodox Church (Brooklyn), apontado pela lista da AOCI como sagrado em 05/01/1989
+  por Samuel T. Garner e como sagrante de Michael Owen em 1995.
+sources:
+- source: lin-aoci-hayes
+  quote: >-
+    Primate Garner did on the 5th of January, 1989, in St. Augustine’s American Catholic Church, Brooklyn, New York
+    consecrate Owen J. Augustine
+ordinations:
+- order: episcopate
+  date: '1989-01-05'
+  place: Igreja Católica Americana de Santo Agostinho, Brooklyn, Nova York (EUA)
+  jurisdiction: null
+  principal_consecrator: samuel-t-garner
+  status: probable
+  sources:
+  - source: lin-aoci-hayes
+    quote: >-
+      Primate Garner did on the 5th of January, 1989, in St. Augustine’s American Catholic Church, Brooklyn, New
+      York consecrate Owen J. Augustine
+  notes: >-
+    Fonte única (AOCI). Garner foi eleito primaz da American Catholic Orthodox Church, segundo a mesma fonte.

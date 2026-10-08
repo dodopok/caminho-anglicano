@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: leonardo-tiburcio
+name: Leonardo Tibúrcio
+biography: >-
+  Presbítero listado(a) na equipe pastoral da diocese liderada por Márcio Simões (IAB), vinculado(a) à Catedral
+  Anglicana Ressurreição.
+sources:
+- source: dv-pastores
+  quote: Rev. Leonardo Tibúrcio Catedral Anglicana Ressurreição
+affiliations:
+- jurisdiction: iab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: dv-pastores
+    quote: Rev. Leonardo Tibúrcio Catedral Anglicana Ressurreição
+  notes: 'Local: Catedral Anglicana Ressurreição. Lista da equipe pastoral no site da diocese; sem datas.'

@@ -1,7 +1,9 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: ieve
 acronym: IEvE
-name: Igreja Evangélica Episcopal
+name: IEVE
+aliases:
+- Igreja Evangélica Episcopal
 type: other
 description: Igreja na qual Josep Rosselló foi sagrado bispo missionário após deixar a IERE.
 sources:
