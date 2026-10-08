@@ -1,7 +1,17 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: paulo-dalfollo
 name: Paulo Dalfollo
-full_name: Paulo Dalfollo
+full_name: Paulo Dallfollo
+aliases:
+- DALLFOLLO, PAULO
+- Paulo Dallfollo
+biography: >-
+  Clérigo listado na relação de depostos do Clerical Directory de 1965 (período 1962-set. 1964), deposto pelo Bispo
+  E. K. Sherrill em 27/08/1962. O verbete não indica jurisdição; a identificação com o diácono brasileiro Paulo
+  Dalfollo (1950) é provável pelo nome e pelo bispo.
+sources:
+- source: cd1965
+  quote: DALLFOLLO, PAULO, by Rt Rev E K Sherrill, 27 Aug 62
 ordinations:
 - order: diaconate
   date: '1950'
@@ -23,3 +33,15 @@ affiliations:
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1950 - … Paulo Dalfollo
     page: '370'
   notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+events:
+- type: other
+  date: '1962-08-27'
+  description: >-
+    O Bispo E. K. Sherrill depôs o clérigo Paulo Dallfollo em 27/08/1962 (relação de Depositions do Clerical Directory
+    1965, período desde a edição de 1962 até set. de 1964).
+  status: probable
+  sources:
+  - source: cd1965
+    quote: DEPOSITIONS For the period since the 1962 edition through September, 1964
+  - source: cd1965
+    quote: DALLFOLLO, PAULO, by Rt Rev E K Sherrill, 27 Aug 62
