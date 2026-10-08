@@ -51,3 +51,21 @@ ordinations:
     Diocese Anglicana do Recife. Pregador: bispo emérito Clovis Erly Rodrigues. Dia 23 de abril; o ano não está
     explícito no trecho (o contexto, após a reabertura da paróquia em 2021 e antes das chuvas de maio no Recife,
     sugere 2022).
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '2020-12-12'
+  end: '2025-11-19'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-vilaca
+    quote: 19/11/2025 o Vilaça saiu da IEAB e foi pra IECB, soube diretamente dele no dia
+  notes: Início = diaconato. O mantenedor soube da saída pelo próprio Rafael Vilaça, no dia.
+- jurisdiction: iecb
+  role: clergy
+  start: '2025-11-19'
+  status: probable
+  sources:
+  - source: testemunho-mantenedor-2026-10-08-vilaca
+    quote: 19/11/2025 o Vilaça saiu da IEAB e foi pra IECB, soube diretamente dele no dia
