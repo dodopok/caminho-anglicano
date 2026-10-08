@@ -146,6 +146,36 @@ affiliations:
     Publica no site da IAB como "Rev." de 2018 a mar/2020. Data e motivo da saída da IAB NÃO encontrados (fim desconhecido;
     antes de mar/2024, quando já aparece como bispo da IEUB em snippet de busca).
 - jurisdiction: ieub
+  role: bishop
+  start: '2023'
+  status: confirmed
+  sources:
+  - source: rti-ig-ieub-diaconal-2023
+    quote: Ordenação de Sandro Moura, Paulinha e Tony - pelas mãos do Bispo Hermany Soares.
+  - source: rti-ig-ieub-quemsomos-2024
+    quote: Bispo Hermany Soares
+  - source: rti-ig-ieub-diadopastor-2024
+    quote: >-
+      Dia do Pastor na Igreja Episcopal Jesus Salvador, com a Presença do Bispo Diocesano, Revmo. Hermany Soares,
+      e a visita do Rev. Marcos Santos, Pároco da Igreja Episcopal Casa.
+  - source: rti-ig-ieub-confirmacao-2024
+    quote: >-
+      Hoje, 6 irmãs foram confirmados pelo Bispo Hermany Soares para glória de Deus, na Igreja Episcopal Unida Jesus
+      Salvador na cidade Paulista, Grande Recife
+  - source: cant-novas-igrejas-2024
+    quote: elegendo o reverendo Hermany como seu bispo, porém, sem uma Catedral ainda definida.
+    page: '150'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      da Igreja Episcopal Unida do Brasil (IEUB), fundada como uma igreja independente e liderada pelo bispo Hermany
+      Soares
+    page: '174'
+  notes: >-
+    O perfil oficial da IEUB já o apresenta como bispo em 04/09/2023 (ordenação diaconal por suas mãos), como 'Bispo
+    Diocesano' em 10/06/2024 e como bispo que confirma fiéis em 24/11/2024. O início do vínculo não é informado.
+    Eleito bispo da IEUB em 2023; o livro não menciona nova sagração (já havia sido sagrado em 2007 pela IAOB e
+    renunciado ao episcopado). Líder da IEUB; situação em 2025.
+- jurisdiction: ieub
   role: founder
   start: '2023'
   status: probable
@@ -160,22 +190,6 @@ affiliations:
     Papel de fundador é a afirmação do usuário; nenhuma fonte aberta diz literalmente que Hermany fundou a IEUB.
     Indício: o canal oficial da IEUB é o antigo canal "iaob2000" (IAOB, igreja que Hermany liderava), criado em
     22/10/2007.
-- jurisdiction: ieub
-  role: bishop
-  start: '2023'
-  status: probable
-  sources:
-  - source: cant-novas-igrejas-2024
-    quote: elegendo o reverendo Hermany como seu bispo, porém, sem uma Catedral ainda definida.
-    page: '150'
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      da Igreja Episcopal Unida do Brasil (IEUB), fundada como uma igreja independente e liderada pelo bispo Hermany
-      Soares
-    page: '174'
-  notes: >-
-    Eleito bispo da IEUB em 2023; o livro não menciona nova sagração (já havia sido sagrado em 2007 pela IAOB e
-    renunciado ao episcopado). Líder da IEUB; situação em 2025.
 - jurisdiction: ieub
   role: diocesan_bishop
   start: 2024-03
@@ -216,6 +230,17 @@ affiliations:
     quote: a saída de alguns clérigos da Igreja Anglicana no Brasil (IAB), como o reverendo Hermany Soares.
     page: '150'
 events:
+- type: other
+  date: '2026-06-16'
+  description: >-
+    Bispo da Rede Episcopal Brasileira (não nomeado no post) visita em Recife o bispo Hermany Soares, da Igreja
+    Episcopal Unida do Brasil, e o 'pastor reverendo Tony'; a REB chama a IEUB de 'igreja irmã'.
+  status: probable
+  sources:
+  - source: rti-ig-reb-recife-2026
+    quote: >-
+      Nosso bispo esteve em Recife e encontrou bispo Hermany, nosso amigo da Igreja Episcopal Unida, junto com o
+      querido pastor reverendo Tony.
 - type: other
   date: null
   description: >-

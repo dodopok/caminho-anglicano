@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: washington-luiz
+name: Washington Luiz
+biography: >-
+  Pastor da Igreja Episcopal (Unida) Jesus Salvador, em Paulista (Grande Recife), segundo posts da IEUB de 2024.
+sources:
+- source: rti-ig-ieub-diadopastor-2024
+  quote: Parabéns ao Rev. Washington luiz e a ministra missionária Katia.
+affiliations:
+- jurisdiction: ieub
+  role: clergy
+  status: probable
+  sources:
+  - source: rti-ig-ieub-diadopastor-2024
+    quote: Parabéns ao Rev. Washington luiz e a ministra missionária Katia.
+  - source: rti-ig-ieub-confirmacao-2024
+    quote: na Igreja Episcopal Unida Jesus Salvador na cidade Paulista, Grande Recife
+  notes: >-
+    O post de 10/06/2024 (Dia do Pastor na Igreja Episcopal Jesus Salvador) parabeniza o Rev. Washington Luiz; o
+    post de 24/11/2024 localiza a Igreja Episcopal Unida Jesus Salvador em Paulista (Grande Recife). A ligação entre
+    os dois posts é inferida pelo nome da igreja; sobrenome não informado.
