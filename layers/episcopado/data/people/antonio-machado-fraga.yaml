@@ -3,6 +3,7 @@ id: antonio-machado-fraga
 name: Antônio Machado Fraga
 aliases:
 - Antonio M. de Fraga
+- Antonio Machado
 - Antônio Machado de Fraga
 biography: >-
   Catequista brasileiro que acompanhou os missionários a Porto Alegre em 1890; um dos quatro primeiros diáconos
@@ -13,7 +14,8 @@ sources:
     of whom Vicente Brande, Antonio M. de Fraga and Americo V. Cabral would all serve the church for many years
 ordinations:
 - order: diaconate
-  date: '1893'
+  date: '1893-09-01'
+  place: Pelotas
   jurisdiction: dmsb
   ordained_by: george-william-peterkin
   status: probable
@@ -33,11 +35,20 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1893 - … Antonio Machado Fraga
     page: '369'
+  - source: costa2021
+    quote: Antônio Machado Fraga foi ordenado em Pelotas, em 1º de setembro de 1983.
+    page: '53'
+  - source: costa2021
+    quote: >-
+      realizou a primeira visita episcopal em agosto de 1893, durante a qual ele ordenou Vicente Brande, Antônio
+      Machado Fraga, Américo
+    page: '53'
   notes: >-
     Fato (4 diáconos por Peterkin em 1893) confirmado por várias fontes; o nome deste ordenando consta só em Kickhofel.
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    A nota 42 traz '1983', erro evidente por 1893 (visita de Peterkin em ago./set. de 1893).
 - order: presbyterate
-  date: '1897'
+  date: '1897-05-13'
   jurisdiction: dmsb
   ordained_by: waite-hockin-stirling
   status: probable
@@ -47,8 +58,14 @@ ordinations:
   - source: wp-en-kinsolving
     quote: >-
       Bishop Stirling ordained three of the Brazilian deacons to the priesthood (Peterkin having deposed the fourth).
+  - source: costa2021
+    quote: >-
+      de maio de 1987, o bispo Stirling ordenou três dos diáconos brasileiros – Brande, Fraga e Cabral – para a
+      ordem do presbiterato
+    page: '54'
   notes: >-
-    Stirling, bispo das Falkland (Igreja da Inglaterra), agiu a pedido de Peterkin. Nomes só em Kickhofel.
+    Stirling, bispo das Falkland (Igreja da Inglaterra), agiu a pedido de Peterkin. Nomes só em Kickhofel. A tese
+    escreve '13 de maio de 1987', erro evidente por 1897 (a visita de Stirling começou em 6/5/1897).
 events:
 - type: other
   date: '1890-06-01'

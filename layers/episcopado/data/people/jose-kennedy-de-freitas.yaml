@@ -37,7 +37,7 @@ ordinations:
   co_consecrators:
   - jose-demontier
   - josue-sousa-torres
-  status: probable
+  status: contested
   sources:
   - source: cant-novas-igrejas-2024
     quote: >-
@@ -59,10 +59,36 @@ ordinations:
       tendo Como Sagrante Principal Sua Exª Mons. Elias Batista Nogueira e como co-sagrantes: Sua Exª Bispo Josué
       Souza Torres e Sua Exª Bispo José Demontier
     page: '146'
+  - source: costa2021
+    quote: >-
+      ordenou muitas pessoas ao episcopado, a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino de Sousa
+      Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa da
+      Silva.
+    page: '138'
+  discrepancies:
+  - field: jurisdiction
+    value: da-japi
+    sources:
+    - source: costa2021
+      quote: >-
+        ordenou muitas pessoas ao episcopado, a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino de
+        Sousa Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa
+        da Silva.
+      page: '138'
+  - field: principal_consecrator
+    value: james-antonio-roque
+    sources:
+    - source: costa2021
+      quote: >-
+        ordenou muitas pessoas ao episcopado, a exemplo de José Kennedy de Freitas, Marcos Mattos, Albertino de
+        Sousa Barreiros, Claudinei Rodrigo Ferreira, Itabira Jonas, Francisco de Assis Coelho e Pinho e José Barbosa
+        da Silva.
+      page: '138'
   notes: >-
     Costa (2024) transcreve a convocação da Província Brasileira de Confissão Anglicana (10/11/2012); é a previsão
     do ato, não um relato da cerimônia. O documento citado (Província Brasileira de Confissão Anglicana, 10/11/2012)
-    é a aprovação da sagração 'a realizar-se' nessa data; o livro não confirma explicitamente a realização.
+    é a aprovação da sagração 'a realizar-se' nessa data; o livro não confirma explicitamente a realização. Datas
+    não informadas; a Diocese do Japí foi depois extinta e esses bispos fundaram igrejas anglicanas independentes.
 - order: episcopate
   date: null
   jurisdiction: null

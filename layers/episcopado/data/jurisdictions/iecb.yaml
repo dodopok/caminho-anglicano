@@ -76,6 +76,11 @@ relations:
       vinculou-se, depois, à Comunhão Internacional da Igreja Episcopal Carismática, e fundou, no Recife, a Igreja
       Episcopal Carismática do Brasil (IECB).
     page: '197'
+  - source: costa2021
+    quote: >-
+      Após o rompimento do reverendo Paulo Garcia com a Diocese Anglicana do Recife, este estabeleceu, na mesma
+      cidade, a Igreja Episcopal Carismática do Brasil (IECB), sendo eleito o seu
+    page: '134'
   - source: iab-poster-linhagem-meira
     quote: >-
       Em 2002, o deão Paulo Garcia, então líder da catedral em Recife, rompeu com a IEAB por divergências teológicas
@@ -141,6 +146,9 @@ relations:
     quote: >-
       informando que a denominação brasileira havia se separado da Comunhão Internacional da Igreja Episcopal Carismática.
     page: '263'
+  - source: costa2021
+    quote: Esta denominação chegou ao Brasil no ano de 2002.
+    page: '134'
   - source: cant-novas-igrejas-2024
     quote: Comunhão Internacional da Igreja Episcopal Carismática (ICCEC) [2002-2021]
     page: '171'
@@ -274,10 +282,14 @@ relations:
   target: iccec
   date: '2019-03-24'
   led_by:
-  - andre-novaes-de-albuquerque-cavalcanti
   - paulo-garcia
   status: contested
   sources:
+  - source: costa2021
+    quote: >-
+      em 2019 o arcebispo brasileiro rompeu com o Patriarca Bates e a denominação carismática se tornou uma Igreja
+      independente no Brasil, formando a sua própria Comunhão146.
+    page: '135'
   - source: costa2021
     quote: >-
       Por solicitação do Arcebispo +Dom Paulo Garcia, comunico aos integrantes do Clero que os Bispos da Igreja
@@ -296,17 +308,22 @@ relations:
   - source: cant-novas-igrejas-2024
     quote: brasileira havia se separado da Comunhão Internacional da Igreja Episcopal Carismática.
     page: '61'
-  notes: >-
-    Comunicado assinado pelo bispo André Novaes (auxiliar do Recife), datado de 24/3/2019 e citado por Costa a partir
-    da Catedral da Reconciliação. O comunicado diz desejar 'manter uma relação fraternal' com a ICCEC. A CEI foi
-    criada para as missões da IECB em Angola e Portugal. Contexto: resistência de Paulo Garcia à aposentadoria compulsória
-    aos 80 anos exigida pelos cânones da ICCEC (reunião com o Patriarca Craig Bates em agosto de 2018). Comunicado
-    assinado pelo bispo André Novaes.
   discrepancies:
   - field: led_by
     value:
+    - andre-novaes-de-albuquerque-cavalcanti
     - paulo-garcia
     sources:
+    - source: costa2021
+      quote: >-
+        Por solicitação do Arcebispo +Dom Paulo Garcia, comunico aos integrantes do Clero que os Bispos da Igreja
+        Episcopal Carismática do Brasil-IECB, após vários dias de oração, compreenderam, clara e consensualmente,
+        que Deus estabeleceu uma nova orientação para a Igreja Brasileira.
+    - source: costa2021
+      quote: >-
+        Por conta de problemas com a sucessão da liderança de Paulo Garcia, em 2019 o arcebispo brasileiro rompeu
+        com o Patriarca Bates e a denominação carismática se tornou uma Igreja independente no Brasil, formando
+        a sua própria Comunhão
     - source: cant-novas-igrejas-2024
       quote: >-
         No dia 24 de março de 2019 um comunicado foi publicado na página do Facebook e nos boletins das paróquias
@@ -315,6 +332,12 @@ relations:
     - source: cant-novas-igrejas-2024
       quote: brasileira havia se separado da Comunhão Internacional da Igreja Episcopal Carismática.
       page: '61'
+  notes: >-
+    Comunicado assinado pelo bispo André Novaes (auxiliar do Recife), datado de 24/3/2019 e citado por Costa a partir
+    da Catedral da Reconciliação. O comunicado diz desejar 'manter uma relação fraternal' com a ICCEC. A CEI foi
+    criada para as missões da IECB em Angola e Portugal. Contexto: resistência de Paulo Garcia à aposentadoria compulsória
+    aos 80 anos exigida pelos cânones da ICCEC (reunião com o Patriarca Craig Bates em agosto de 2018). Comunicado
+    assinado pelo bispo André Novaes.
 - type: schism_from
   target: ieab-dar
   date: '2002'

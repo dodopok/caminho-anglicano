@@ -4,6 +4,7 @@ name: Sydney Alcoba Ruiz
 full_name: Sydney Alcoba Ruiz
 aliases:
 - Dom Sydney Ruiz
+- Sydney Ruiz
 birth:
   date: '1932-10-20'
   sources:
@@ -14,6 +15,9 @@ birth:
   - source: kickhofel-1995
     quote: Sydney Alcoba Ruiz nasceu em Vera Cruz, São Paulo, em 20 de outubro de 1932
     page: '279'
+  - source: costa2021
+    quote: Faleceu em 14 de novembro de 2001, aos 69 anos
+    page: '96'
 death:
   date: '2001-11-14'
   sources:
@@ -21,6 +25,9 @@ death:
     quote: Sydney Alcoba Ruiz nasceu em Vera Cruz, São Paulo, em 20 de outubro de 1932.
   - source: costa2021
     quote: Faleceu em 14 de novembro de
+  - source: costa2021
+    quote: Faleceu em 14 de novembro de 2001, aos 69 anos
+    page: '96'
 biography: Bispo da Diocese Central/Rio de Janeiro (1985-1998/2000).
 sources:
 - source: costa2021
@@ -30,14 +37,25 @@ sources:
 ordinations:
 - order: diaconate
   date: '1957'
-  jurisdiction: null
+  jurisdiction: dmcb
   status: probable
   sources:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1957 - … Sydney Alcoba Ruiz
     page: '371'
+  - source: costa2021
+    quote: Foi ordenado ao diaconato e ao presbiterato em 1957.
+    page: '96'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1957'
+  jurisdiction: dmcb
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Foi ordenado ao diaconato e ao presbiterato em 1957.
+    page: '96'
 - order: episcopate
   date: '1985-03-24'
   place: Igreja do Redentor, Rio de Janeiro
@@ -81,7 +99,11 @@ affiliations:
     quote: 1985-2000 – Sydney Alcoba Ruiz
   - source: costa2021
     quote: 1985-1998 – Sydney Alcoba Ruiz
-  notes: 'Anexo D: 1985-2000; Anexo C: 1985-1998. Faleceu em 14/11/2001.'
+  - source: costa2021
+    quote: Sydney foi sagrado em 24 de março de 1985, na Igreja do Redentor
+    page: '96'
+  notes: >-
+    Anexo D: 1985-2000; Anexo C: 1985-1998. Faleceu em 14/11/2001. Fim não informado; Celso Franco eleito em 6/11/1999.
 - jurisdiction: ieab-darj
   role: diocesan_bishop
   status: probable
@@ -91,6 +113,15 @@ affiliations:
       Em 1985, por iniciativa do bispo Sydney Alcoba Ruiz, ela foi arrolada como uma das paróquias da Diocese Central
     page: '98'
   notes: Bispo em 1985.
+- jurisdiction: ieab
+  role: other
+  role_description: deão
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Em Porto Alegre foi coadjutor e deão da Catedral da
+    page: '96'
+  notes: 'Cargo: Deão da Catedral da Santíssima Trindade, Porto Alegre.'
 events:
 - type: other
   date: '1984-11-24'
@@ -104,3 +135,25 @@ events:
       o número de votos necessários nas duas ordens (clérigos e leigos) no terceiro escrutínio, tendo disputado
       a eleição com os colegas Jaci Correia Maraschin e Paulo Ruiz Garcia.
     page: '278'
+- type: other
+  date: 1984-11
+  description: >-
+    Sydney Alcoba Ruiz eleito bispo da Diocese Central no terceiro escrutínio (concorrentes Jaci Maraschin e Paulo
+    Garcia)
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      o reverendo Sydney Alcoba Ruiz83 foi eleito no terceiro escrutínio durante o Concílio da Diocese Central de
+      novembro de 1984
+    page: '96'
+- type: other
+  date: '1985'
+  description: >-
+    Christ Church (Rio de Janeiro) arrolada como paróquia da Diocese Central por iniciativa do bispo Sydney Ruiz
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 1985, por iniciativa do bispo Sydney Alcoba Ruiz, ela foi arrolada como uma das paróquias da Diocese Central
+    page: '150'

@@ -49,7 +49,7 @@ ordinations:
   notes: Ordenante não informado.
 - order: episcopate
   date: '2003-08-31'
-  place: Catedral Metropolitana de Brasilia (catolica)
+  place: Catedral Metropolitana de Brasília (Igreja Católica Romana)
   jurisdiction: ieab
   office: diocesan
   principal_consecrator: glauco-soares-de-lima
@@ -63,13 +63,30 @@ ordinations:
     quote: >-
       Em 2003, foi eleito bispo diocesano da Diocese Anglicana de Brasília, sendo então o primeiro bispo não-católico
       a ser sagrado na Catedral de Brasília.
+  notes: Co-sagrantes não informados.
 affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: secretário-geral da ieab
+  start: '1994'
+  end: '2003'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 1994 assumiu o cargo de secretário-geral da Igreja, desempenhando a função por dez anos, na cidade de Porto
+      Alegre.
+    page: '106'
+  notes: 'Cargo: Secretário-geral da IEAB.'
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dab
   start: 2003-09
-  status: confirmed
+  status: contested
   sources:
+  - source: costa2021
+    quote: Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília
+    page: '218'
   - source: wp-pt-dioc-brasilia
     quote: Maurício José Araújo de Andrade - setembro de 2003 até o presente.
   - source: ieab-dioceses
@@ -77,9 +94,20 @@ affiliations:
   - source: dab-bispo-mauricio
     quote: À frente da Diocese Anglicana de Brasília desde 2003
   - source: costa2021
-    quote: Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília
-    page: '218'
+    quote: >-
+      Em 2003, o reverendo Maurício José Araújo de Andrade 103, que tinha servido como Secretário-Geral da Igreja,
+      de 1994 até então, foi eleito o novo bispo da
+    page: '106'
   notes: Bispo diocesano de Brasília em 2004.
+  discrepancies:
+  - field: start
+    value: '2003-08-31'
+    sources:
+    - source: costa2021
+      quote: >-
+        Em 2003, o reverendo Maurício José Araújo de Andrade 103, que tinha servido como Secretário-Geral da Igreja,
+        de 1994 até então, foi eleito o novo bispo da
+      page: '106'
 - jurisdiction: ieab
   role: other
   role_description: supervisor episcopal especial
@@ -118,6 +146,14 @@ affiliations:
     quote: assim como o primaz da IEAB à época, Maurício Andrade
     page: '30'
   - source: costa2021
+    quote: >-
+      eleição do bispo diocesano de Brasília, Maurício José de Araújo Andrade, como o 6º Bispo Primaz da IEAB, durante
+      o 30º Sínodo Geral (Curitiba, 26 a 30 de julho de
+    page: '109'
+  - source: costa2021
+    quote: dando encerramento aos dois mandatos do bispo Maurício Andrade, que ocupava o cargo desde 2006.
+    page: '114'
+  - source: costa2021
     quote: substituindo o bispo Maurício Andrade, que estava no cargo desde 2006.
     page: '243'
   notes: Primaz em fevereiro de 2012. Primaz da IEAB 2006-2013; substituído por Francisco de Assis da Silva.
@@ -143,6 +179,15 @@ affiliations:
     quote: Diocese Anglicana de Brasília, pastoreada pelo bispo Maurício Andrade
     page: '158'
   notes: Período não informado; contexto da transferência de Magela (após 2017).
+- jurisdiction: ieab
+  role: bishop
+  diocese: ieab-dmo
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Já o Distrito Missionário do Oeste atualmente é pastoreado pelo Bispo Maurício Andrade.
+    page: '121'
+  notes: Situação em 2021.
 events:
 - type: other
   date: '2008'
@@ -225,6 +270,18 @@ events:
     quote: >-
       the Suffragan Bishop Dom Filadelfo Oliveira, according to his canonical prerogatives, continues to exert his
       pastoral ministry to the communities of the Anglican Diocese of Recife.
+- type: other
+  date: 2006-07
+  description: >-
+    Eleição de Maurício Andrade como 6º Bispo Primaz no 30º Sínodo Geral (Curitiba, 26-30/7/2006), que também aprova
+    a criação da Diocese Anglicana da Amazônia
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O primeiro ato do novo Primaz foi a criação da mais recente unidade territorial da Província: a Diocese Anglicana
+      da Amazônia.
+    page: '109'
 - type: other
   date: '1997-06-28'
   description: >-

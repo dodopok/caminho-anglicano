@@ -4,6 +4,8 @@ name: William Cabell Brown
 aliases:
 - Bishop Brown of Virginia
 - Rev. William C. Brown
+- William Brown
+- reverendo Brown
 birth:
   date: '1861-11-22'
   sources:
@@ -22,6 +24,11 @@ death:
       to his native Virginia to become the seventh bishop of Virginia.
   - source: wd-q10393674
     quote: William Cabell Brown | American Episcopal missionary in Brazil and bishop
+  - source: costa2021
+    quote: >-
+      Em julho de 1914, despediu-se do Brasil, voltando aos Estados Unidos, onde foi eleito para se tornar Bispo
+      Coadjutor da Diocese de Virgínia. Faleceu em Londres, em 1927.
+    page: '52'
 wikidata: Q10393674
 biography: >-
   Missionário no RS a partir de 1891, tradutor da Bíblia e do Livro de Oração Comum para o português; fundou a obra
@@ -36,14 +43,32 @@ sources:
 ordinations:
 - order: diaconate
   date: '1891-06-26'
+  place: Capela do Seminário Teológico de Virgínia
   jurisdiction: tec
   ordained_by: francis-mcneece-whittle
-  status: probable
+  status: contested
   sources:
   - source: wp-en-brown
     quote: >-
       Brown was ordained as a deacon by bishop Francis McNeece Whittle on June 26, 1891, and advanced to the priesthood
       on August 2, 1891.
+  - source: costa2021
+    quote: >-
+      Foi ordenado diácono junto com William Brown, na Capela do Seminário, em 28 de junho de 1891 e a 02 de agosto
+      do mesmo ano elevado ao presbiterato.
+    page: '52'
+  discrepancies:
+  - field: date
+    value: '1891-06-28'
+    sources:
+    - source: costa2021
+      quote: >-
+        Foi ordenado diácono junto com William Brown, na Capela do Seminário, em 28 de junho de 1891 e a 02 de agosto
+        do mesmo ano elevado ao presbiterato.
+      page: '52'
+  notes: >-
+    Nota 38 (sobre W. C. Brown) diz 'ordenado diácono junto com William Brown' — provável troca por John Gaw Meem;
+    aplicado aos dois. Ordenante não informado.
 - order: presbyterate
   date: '1891-08-02'
   jurisdiction: tec
@@ -52,9 +77,14 @@ ordinations:
   sources:
   - source: wp-en-brown
     quote: advanced to the priesthood on August 2, 1891.
+  - source: costa2021
+    quote: >-
+      Foi ordenado diácono junto com William Brown, na Capela do Seminário, em 28 de junho de 1891 e a 02 de agosto
+      do mesmo ano elevado ao presbiterato.
+    page: '52'
   notes: >-
     A Wikipédia não diz explicitamente quem o ordenou presbítero; o infobox traz 'ordained_by = Francis McNeece
-    Whittle'.
+    Whittle'. Mesma ambiguidade da nota 38; ordenante não informado.
 - order: episcopate
   date: '1914-10-28'
   place: Richmond, Virgínia

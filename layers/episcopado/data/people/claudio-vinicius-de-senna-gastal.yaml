@@ -4,6 +4,7 @@ name: Cláudio Vinícius de Senna Gastal
 full_name: Cláudio Vinícius de Senna Gastal
 aliases:
 - Claudio Gastal
+- Cláudio Gastal
 - Dom Cláudio Gastal
 birth:
   date: '1937-09-21'
@@ -12,6 +13,9 @@ birth:
     quote: Cláudio Vinícius de Senna Gastal nasceu em 21 de setembro de 1937, na cidade do Rio de
   - source: costa2021
     quote: Faleceu em 23 de fevereiro de 2000.
+  - source: costa2021
+    quote: Cláudio Vinícius de Senna Gastal nasceu em 21 de setembro de 1937, na cidade do Rio de Janeiro.
+    page: '95'
 death:
   date: '2000-02-23'
   sources:
@@ -19,6 +23,9 @@ death:
     quote: Cláudio Vinícius de Senna Gastal nasceu em 21 de setembro de 1937, na cidade do Rio de
   - source: costa2021
     quote: Faleceu em 23 de fevereiro de 2000.
+  - source: costa2021
+    quote: Cláudio Vinícius de Senna Gastal nasceu em 21 de setembro de 1937, na cidade do Rio de Janeiro.
+    page: '95'
 biography: Bispo da Diocese Meridional (1984-1998); primaz interino (1993-1994).
 sources:
 - source: costa2021
@@ -27,21 +34,38 @@ sources:
   quote: Faleceu em 23 de fevereiro de 2000.
 ordinations:
 - order: diaconate
-  date: '1968'
-  jurisdiction: null
+  date: '1968-06-18'
+  place: Capela da Ressurreição do Seminário (São Paulo)
+  jurisdiction: ieab
   status: probable
   sources:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1968 - … Cláudio Vinicius de Senna Gastal
     page: '372'
+  - source: costa2021
+    quote: >-
+      Foi ordenado ao diaconato em 18 de junho de 1968, na Capela da Ressurreição do Seminário, e ao presbiterado,
+      em 21 de dezembro de 1969, na Catedral da Santíssima Trindade, em Porto Alegre.
+    page: '95'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1969-12-21'
+  place: Catedral da Santíssima Trindade, Porto Alegre
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi ordenado ao diaconato em 18 de junho de 1968, na Capela da Ressurreição do Seminário, e ao presbiterado,
+      em 21 de dezembro de 1969, na Catedral da Santíssima Trindade, em Porto Alegre.
+    page: '95'
 - order: episcopate
   date: 1984-03
   place: Catedral da Santissima Trindade, Porto Alegre
   jurisdiction: ieab
   office: coadjutor
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: >-
@@ -60,10 +84,37 @@ ordinations:
       Gastal foi eleito em outubro de 1983 e sagrado em março de 1984 para ser inicialmente bispo coadjutor com
       direito a sucessão.
     page: '251'
+  - source: costa2021
+    quote: >-
+      Em outubro de 1983, a reunião do Concílio da Diocese Meridional elegeu o reverendo Cláudio Vinícius de Senna
+      Gastal 81, que foi sagrado como novo bispo da Diocese Meridional, na Catedral da Santíssima Trindade, em Porto
+      Alegre.
+    page: '95'
+  discrepancies:
+  - field: office
+    value: diocesan
+    sources:
+    - source: costa2021
+      quote: >-
+        Em outubro de 1983, a reunião do Concílio da Diocese Meridional elegeu o reverendo Cláudio Vinícius de Senna
+        Gastal 81, que foi sagrado como novo bispo da Diocese Meridional, na Catedral da Santíssima Trindade, em
+        Porto Alegre.
+      page: '95'
   notes: >-
     Eleito bispo coadjutor (Kratz pediu coadjutor por saude); ENS de 22/03/1984 diz sagracao prevista para o fim
-    de marco de 1984. Data exata nao confirmada.
+    de marco de 1984. Data exata nao confirmada. A tese NÃO informa a data nem os sagrantes. Eleito em out. 1983;
+    diocesano 'de 1984 a 1998'; já era bispo em 17/3/1985 (co-sagrante de Clóvis). Nota 138: nº 06.
 affiliations:
+- jurisdiction: ieab
+  role: clergy
+  start: '1973'
+  end: '1976'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Também foi reitor da Paróquia da Santíssima Trindade no Rio de Janeiro, entre 1973 a 1976.
+    page: '95'
+  notes: 'Local: Paróquia da Santíssima Trindade, Rio de Janeiro.'
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dm
@@ -109,6 +160,7 @@ affiliations:
     page: '367'
   notes: >-
     O livro dá só o início de cada primado; o fim é o início do primado seguinte. Primaz interino (bispo sênior).
+    Interino por dois anos; datas não informadas.
 events:
 - type: other
   date: 1984-03

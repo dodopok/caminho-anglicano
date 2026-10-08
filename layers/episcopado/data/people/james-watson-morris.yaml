@@ -1,9 +1,29 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: james-watson-morris
 name: James Watson Morris
+full_name: James Watson Morris
 aliases:
 - J. W. Morris
+- Morris
 - Rev. James W. Morris
+birth:
+  date: '1859'
+  sources:
+  - source: costa2021
+    quote: Sabemos que ele nasceu em 1859, e era filho de Charles Morris e Mary Minor Morris.
+    page: '50'
+  - source: costa2021
+    quote: Este faleceu em 1954, aos 95 anos, sendo sepultado no cemitério do Seminário de Virgínia
+    page: '62'
+death:
+  date: '1954'
+  sources:
+  - source: costa2021
+    quote: Sabemos que ele nasceu em 1859, e era filho de Charles Morris e Mary Minor Morris.
+    page: '50'
+  - source: costa2021
+    quote: Este faleceu em 1954, aos 95 anos, sendo sepultado no cemitério do Seminário de Virgínia
+    page: '62'
 biography: >-
   Missionário norte-americano (VTS), companheiro de Kinsolving na fundação da missão em Porto Alegre (1890); reabriu
   o seminário teológico em 1920.
@@ -18,7 +38,7 @@ sources:
     the theological seminary in Porto Alegre
 ordinations:
 - order: diaconate
-  date: 1889-06
+  date: '1889-06-29'
   jurisdiction: tec
   ordained_by: francis-mcneece-whittle
   status: probable
@@ -27,8 +47,15 @@ ordinations:
     quote: >-
       ordained Kinsolving and fellow Virginia Seminary graduate James Watson Morris deacons in June and priests
       in August, 1889
+  - source: costa2021
+    quote: >-
+      O bispo da Diocese de Virgínia, Francis McNeece Whittle realizou a ordenação diaconal de Lucien Lee Kinsolving
+      e de James Vson Watson Morris, em 29 de junho de 1889.
+    page: '50'
+  notes: A tese grafa 'James Vson Watson Morris' (erro de digitação).
 - order: presbyterate
-  date: 1889-08
+  date: '1889-08-04'
+  place: Capela do Seminário Teológico de Virgínia
   jurisdiction: tec
   ordained_by: francis-mcneece-whittle
   status: probable
@@ -37,6 +64,11 @@ ordinations:
     quote: >-
       ordained Kinsolving and fellow Virginia Seminary graduate James Watson Morris deacons in June and priests
       in August, 1889
+  - source: costa2021
+    quote: No dia 04 de agosto do mesmo ano, ambos foram ordenados presbíteros na Capela do Seminário.
+    page: '50'
+  notes: >-
+    A tese não nomeia o ordenante do presbiterato (a frase anterior trata da ordenação diaconal por Whittle).
 affiliations:
 - jurisdiction: dmsb
   role: clergy

@@ -39,6 +39,11 @@ founded:
   - source: cant-novas-igrejas-2024
     quote: Igreja Episcopal Reformada [2001] (Extinta em 2009, com a criação da IARB)
     page: '172'
+  - source: costa2021
+    quote: >-
+      A Igreja Anglicana Reformada do Brasil surgiu em 2005, a partir da liderança do bispo Francisco Buzzo Rodrigues,
+      a partir de uma comunidade em Bragança
+    page: '152'
 locator_slug: iarb
 wikidata: Q18275884
 website: https://www.igrejaanglicana.com.br/
@@ -92,7 +97,7 @@ relations:
   end: '2021-05-05'
   led_by:
   - josep-rossello-ferrer
-  status: confirmed
+  status: contested
   sources:
   - source: ai-2014-fce-brazil
     quote: >-
@@ -110,11 +115,25 @@ relations:
     quote: >-
       Em fevereiro de 2014, a Igreja Anglicana Reformada foi recebida como uma missão oficial da Free Church of
       England para o Brasil e Josep Rossello tornou-se seu Bispo Primaz, permanecendo no cargo até maio de 2021
+  - source: costa2021
+    quote: >-
+      Em fevereiro de 2014, a Igreja Anglicana Reformada foi recebida como uma missão oficial da Free Church of
+      England para o Brasil
+    page: '152'
   notes: >-
     Páscoa de 2014 = 20/4/2014. Conversas informais desde 2011; o Sínodo Nacional da IARB aprovou a filiação em
     2012; a Convocação da FCE acolheu em 2013. As igrejas formaram depois a 'South American Diocese' da FCE (Brasil
     e Venezuela). Costa (2021) dá fevereiro de 2014; a FCE (Anglican Ink) dá a Páscoa de 2014 para a recepção das
     primeiras congregações.
+  discrepancies:
+  - field: date
+    value: 2014-02
+    sources:
+    - source: costa2021
+      quote: >-
+        Em fevereiro de 2014, a Igreja Anglicana Reformada foi recebida como uma missão oficial da Free Church of
+        England para o Brasil
+      page: '152'
 - type: broke_communion_with
   target: fce
   date: '2021-03-28'

@@ -4,6 +4,8 @@ name: Orlando Santos de Oliveira
 full_name: Orlando Santos de Oliveira
 aliases:
 - Dom Orlando Oliveira
+- Orlando Oliveira
+- Orlando de Oliveira
 - Orlando dos Santos Oliveira
 birth:
   date: '1945-01-08'
@@ -12,6 +14,10 @@ birth:
     quote: Natural da cidade de São Francisco de Paula, Orlando dos Santos Oliveira nasceu em 08 de
   - source: wp-pt-orlando
     quote: Orlando Santos de Oliveira (São Francisco de Paula, 8 de janeiro de 1945 - 16 de março de 2023)
+  - source: costa2021
+    quote: >-
+      Natural da cidade de São Francisco de Paula, Orlando dos Santos Oliveira nasceu em 08 de janeiro de 1945.
+    page: '104'
 death:
   date: '2023-03-16'
   sources:
@@ -29,15 +35,30 @@ sources:
   quote: Orlando Santos de Oliveira (São Francisco de Paula, 8 de janeiro de 1945 - 16 de março de 2023)
 ordinations:
 - order: diaconate
-  date: '1969'
-  jurisdiction: null
+  date: 1969-02
+  place: Rosário do Sul (Concílio da Diocese Sul-Ocidental)
+  jurisdiction: ieab
   status: probable
   sources:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1969 - … Orlando Santos de Oliveira
     page: '372'
+  - source: costa2021
+    quote: >-
+      Foi ordenado ao diaconato em fevereiro de 1969, durante o Concílio da Diocese Sul Ocidental, na cidade de
+      Rosario do Sul (RS).
+    page: '104'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1970'
+  place: Paróquia de Jesus Cristo, Erechim
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Em 1970, foi elevado ao presbiterato na Paróquia de Jesus Cristo, em Erechim.
+    page: '104'
 - order: episcopate
   date: '1997-11-30'
   place: Catedral da Santissima Trindade, Porto Alegre
@@ -46,7 +67,7 @@ ordinations:
   principal_consecrator: glauco-soares-de-lima
   co_consecrators:
   - william-godfrey
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: >-
@@ -61,28 +82,71 @@ ordinations:
       Três meses depois, em 30 de novembro, Dom Orlando foi consagrado bispo na Catedral da Santíssima Trindade,
       em Porto Alegre, pelo Primaz Glauco Soares de Lima, acompanhado pelos bispos da IEAB, mais o bispo William
       Godfrey, do Uruguai.
+  discrepancies:
+  - field: office
+    value: diocesan
+    sources:
+    - source: costa2021
+      quote: >-
+        Já na Diocese Meridional, em 30 de novembro de 1997, Orlando Santos de Oliveira96 foi sagrado na Catedral
+        da Santíssima Trindade, em Porto Alegre, pelas mãos do Bispo Primaz, Glauco Soares de Lima
+      page: '104'
+    - source: costa2021
+      quote: >-
+        Foi sagrante o entao Primaz, Bispo Glauco Soares de Lima, e co-sagrantes os bispos do episcopado brasileiro
+        da época, mais o bispo William Godfrey, do Uruguai.
+      page: '104'
   notes: >-
     Eleito em 30/08/1997 como 7o bispo da Diocese Meridional; sucedeu Gastal em 1998. Co-sagrantes brasileiros nao
-    nomeados. Wikipedia PT deriva de Costa.
+    nomeados. Wikipedia PT deriva de Costa. Co-sagrantes: 'os bispos do episcopado brasileiro da época' (não nomeados)
+    e William Godfrey. Substituiu Gastal, que se aposentou no ano seguinte (sagrado como coadjutor de fato).
 affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: deão
+  start: '1985'
+  end: '1997'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Em 1985 foi eleito Deão da Catedral da Santíssima Trindade na capital gaúcha
+    page: '104'
+  notes: 'Cargo: Deão da Catedral da Santíssima Trindade, Porto Alegre.'
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dm
   start: '1998'
   end: '2013-05-05'
   end_reason: retirement
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: 1998-2013 – Orlando Santos de Oliveira
   - source: wp-pt-orlando
     quote: se tornou seu coadjutor na Diocese Anglicana Meridional, que o sucedeu em 5 de maio do ano seguinte.
+  - source: costa2021
+    quote: substituindo o bispo Cláudio Gastal, que se aposentou no ano seguinte.
+    page: '104'
+  discrepancies:
+  - field: start
+    value: '1997-11-30'
+    sources:
+    - source: costa2021
+      quote: substituindo o bispo Cláudio Gastal, que se aposentou no ano seguinte.
+      page: '104'
+  notes: Fim inferido da instituição de Humberto Maiztegui como diocesano (5/5/2013).
 - jurisdiction: ieab
   role: primate
   start: '2003'
   end: 2006-07
-  status: confirmed
+  status: contested
   sources:
+  - source: costa2021
+    quote: o Bispo Primaz da IEAB – Orlando Santos de Oliveira –
+    page: '214'
+  - source: costa2021
+    quote: D. Orlando Santos de Oliveira Bispo Primaz
+    page: '224'
   - source: wp-en-ieab
     quote: Orlando Santos de Oliveira, 2003—2006
   - source: costa2021
@@ -90,12 +154,24 @@ affiliations:
       a primazia passou das mãos do bispo Glauco para o bispo Orlando Santos de Oliveira, da Diocese Meridional,
       que ficou no cargo entre
   - source: costa2021
-    quote: o Bispo Primaz da IEAB – Orlando Santos de Oliveira –
-    page: '214'
+    quote: >-
+      primazia passou das mãos do bispo Glauco para o bispo Orlando Santos de Oliveira, da Diocese Meridional, que
+      ficou no cargo entre 2003 e 2006.
+    page: '107'
   - source: costa2021
-    quote: D. Orlando Santos de Oliveira Bispo Primaz
-    page: '224'
-  notes: Primaz em 2004-2005; decretou a deposição de Robinson em Porto Alegre, 10/06/2005.
+    quote: O bispo Orlando também foi Primaz da IEAB de 2003 a 2009
+    page: '104'
+  notes: >-
+    Primaz em 2004-2005; decretou a deposição de Robinson em Porto Alegre, 10/06/2005. A nota 96 diz Primaz 'de
+    2003 a 2009'; o texto (p. 107) diz 2003-2006 e Maurício Andrade foi eleito Primaz em julho de 2006. Versão da
+    nota 96; ver afirmação 2003-2006.
+  discrepancies:
+  - field: end
+    value: '2009'
+    sources:
+    - source: costa2021
+      quote: O bispo Orlando também foi Primaz da IEAB de 2003 a 2009
+      page: '104'
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino
@@ -263,6 +339,14 @@ events:
     quote: deposto e um grupo de clérigos depostos que pertenceram à Diocese Anglicana do Recife.
   - source: ieab-2005-carta-venables
     quote: foi condenado pelo Tribunal Superior Eclesiástico
+- type: other
+  date: '1997-08-30'
+  description: Orlando Santos de Oliveira eleito 7º bispo da Diocese Meridional
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Em 30 de agosto de 1997, foi eleito o 7º Bispo da Diocese Meridional
+    page: '104'
 - type: other
   date: '2004-09-16'
   description: >-

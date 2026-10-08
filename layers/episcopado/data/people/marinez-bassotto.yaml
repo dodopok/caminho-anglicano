@@ -9,11 +9,16 @@ aliases:
 - Marinez Rosa dos Santos Bassotto
 - Marinez Rosa dos Santos Coelho Grillo
 - Marinez Santos Bassotto
+- bispa Marinez
 birth:
   date: '1971-03-09'
   sources:
   - source: costa2021
     quote: Natural de Canguçu, no Rio Grande do Sul, Marinez Rosa dos Santos Bassotto nasceu em 09 de
+  - source: costa2021
+    quote: >-
+      Natural de Canguçu, no Rio Grande do Sul, Marinez Rosa dos Santos Bassotto nasceu em 09 de março de 1971.
+    page: '117'
 wikidata: Q117285973
 biography: Primeira bispa da IEAB (2018), bispa da Amazonia e primeira mulher primaz (2022-).
 sources:
@@ -21,7 +26,7 @@ sources:
   quote: Natural de Canguçu, no Rio Grande do Sul, Marinez Rosa dos Santos Bassotto nasceu em 09 de
 ordinations:
 - order: diaconate
-  date: 1995-05
+  date: '1995-05-14'
   jurisdiction: ieab
   status: probable
   sources:
@@ -32,22 +37,31 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1995 - … Marinez Rosa dos Santos Coelho Grillo
     page: '374'
+  - source: costa2021
+    quote: Foi ordenada ao diaconato, em 14 de maio de 1995, e ao presbiterato, em 17 de março de 1996.
+    page: '117'
   notes: >-
     Wikipedia cita ACNS (24/01/2018), não acessível nesta sessão. Ano tirado da lista do clero nacional por ordem
     de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
-  date: '1996'
+  date: '1996-03-17'
   jurisdiction: ieab
   status: probable
   sources:
   - source: wp-en-bassotto
     quote: 1996 (priest)
+  - source: costa2021
+    quote: Foi ordenada ao diaconato, em 14 de maio de 1995, e ao presbiterato, em 17 de março de 1996.
+    page: '117'
 - order: episcopate
   date: '2018-04-21'
   place: Catedral de Santa Maria, Belem (PA)
   jurisdiction: ieab
   office: diocesan
   principal_consecrator: francisco-de-assis-da-silva
+  co_consecrators:
+  - griselda-bispa-de-cuba
+  - linda-nicholls
   status: confirmed
   sources:
   - source: costa2021
@@ -72,11 +86,21 @@ ordinations:
     quote: >-
       A ordenação e sagração foi presidida pelo Bispo Francisco de Assis da Silva, da Diocese Sul Ocidental (com
       sé em Santa Maria, Rio Grande do Sul).
+  - source: costa2021
+    quote: >-
+      A cerimônia de ordenação e sagração episcopal ocorreu no dia 21 de abril, nas dependências da Catedral de
+      Santa Maria, em Belém do Pará, com a presença maciça do clero feminino da Igreja, dos bispos
+    page: '117'
+  - source: costa2021
+    quote: da Câmara Episcopal, e das bispas Griselda (Cuba) e Linda Nicholls (Canadá), que fez a homilia.
+    page: '118'
   notes: >-
     Primeira bispa da IEAB e da America do Sul. Eleita em 20/01/2018. Sagrante principal nao explicitado nas fontes
     lidas (primaz da epoca: Francisco de Assis da Silva). Fecha a lacuna de sagrante (ieab-1965-hoje.json tinha
     SP nulo). Os dois livros são do mesmo autor (Costa), por isso "provavel". Pregadora: bispa Linda Nicholls (Huron,
-    Canadá); presente a bispa Griselda Delgado del Carpio (Cuba).
+    Canadá); presente a bispa Griselda Delgado del Carpio (Cuba). A tese NÃO nomeia o sagrante principal; fala na
+    presença 'dos bispos da Câmara Episcopal' e das bispas Griselda (Cuba) e Linda Nicholls (Canadá, pregadora),
+    listadas como co-sagrantes por inferência.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
@@ -112,3 +136,15 @@ affiliations:
   - source: ieab-dioceses
     quote: Bispo Diocesano – Bispa Primaz Revma. Marinez Bassotto
   notes: Em 2026 o site da IEAB lista a primaz como bispa do Distrito Missionario Anglicano (DMA).
+- jurisdiction: ieab
+  role: other
+  role_description: deã
+  end: '2018'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Também foi a primeira mulher a assumir a reitoria da Catedral Nacional da Santíssima Trindade, de Porto Alegre,
+      por vários mandatos, sendo a sua primeira deã.
+    page: '117'
+  notes: 'Cargo: Deã da Catedral Nacional da Santíssima Trindade, Porto Alegre.'

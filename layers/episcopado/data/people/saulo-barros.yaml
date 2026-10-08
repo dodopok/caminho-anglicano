@@ -31,9 +31,20 @@ ordinations:
     quote: >-
       The ordination and consecration of Barros, and the inauguration of the new diocese, took place in the city
       of Belém on October 14 with hundreds of participants.
+  - source: costa2021
+    quote: >-
+      A cerimônia de instalação da Diocese e do seu novo pastor ocorreu no dia 15 de outubro de 2006, na Igreja
+      de Santa Maria, em Belém do Pará.
+    page: '110'
+  - source: costa2021
+    quote: >-
+      A cerimônia foi presidida pelo Bispo Primaz, Maurício Andrade, junto com outros bispos e membros do clero
+    page: '110'
   notes: >-
     Primeiro bispo da Diocese Anglicana da Amazonia; eleito no Sinodo Geral de julho de 2006. A Wikipedia PT da
-    a instalacao em 15/10/2006. Sagrantes nao informados.
+    a instalacao em 15/10/2006. Sagrantes nao informados. A tese fala apenas em 'cerimônia de instalação' (15/10/2006,
+    Igreja de Santa Maria, Belém, presidida por Maurício Andrade); não diz explicitamente que foi a sagração. Nota
+    138: nº 21 no registro da IEAB.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
@@ -41,7 +52,7 @@ affiliations:
   start: '2006-10-15'
   end: 2017-12
   end_reason: resignation
-  status: probable
+  status: contested
   sources:
   - source: wp-pt-dioc-amazonia
     quote: com a investidura e instalação de seu primeiro pastor bispo Saulo Maurício de Barros
@@ -57,5 +68,31 @@ affiliations:
     quote: >-
       No dia 15 de outubro de 2006, a Diocese Anglicana da Amazônia foi instalada solenemente, com a consagração
       da Catedral de Santa Maria e com a investidura e instalação de seu primeiro bispo Dom Saulo Maurício de Barros.
+  - source: costa2021
+    quote: >-
+      A cerimônia de instalação da Diocese e do seu novo pastor ocorreu no dia 15 de outubro de 2006, na Igreja
+      de Santa Maria, em Belém do Pará.
+    page: '110'
   notes: >-
-    Data da sagracao episcopal de Saulo nao encontrada (provavelmente 15/10/2006, junto com a instalacao).
+    Data da sagracao episcopal de Saulo nao encontrada (provavelmente 15/10/2006, junto com a instalacao). Fim inferido:
+    Marinez Bassotto eleita e instalada em abril de 2018.
+  discrepancies:
+  - field: end
+    value: '2018'
+    sources:
+    - source: costa2021
+      quote: >-
+        A cerimônia de instalação da Diocese e do seu novo pastor ocorreu no dia 15 de outubro de 2006, na Igreja
+        de Santa Maria, em Belém do Pará.
+      page: '110'
+events:
+- type: other
+  date: 2006-07
+  description: 30º Sínodo elege Saulo Maurício de Barros primeiro bispo da Diocese Anglicana da Amazônia
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      No mesmo Sínodo também foi eleito o reverendo Saulo Maurício de Barros 106 para ser o primeiro bispo da nova
+      unidade diocesana.
+    page: '110'

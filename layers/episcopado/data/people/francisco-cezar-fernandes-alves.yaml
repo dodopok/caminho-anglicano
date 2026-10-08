@@ -8,6 +8,7 @@ aliases:
 - Cézar Fernandes
 - Dom Cézar Alves
 - Francisco Cézar F. Alves
+- Francisco Cézar Fernandes
 wikidata: Q138978371
 biography: >-
   Coadjutor (2020) e bispo de Sao Paulo (2021-); primeiro bispo abertamente homoafetivo da IEAB segundo a Wikipedia
@@ -16,6 +17,17 @@ sources:
 - source: wp-pt-cezar
   quote: Natural de Quixeramobim, Francisco Cézar cursou o Instituto Anglicano de Estudos Teológicos (IAET).
 ordinations:
+- order: diaconate
+  date: 1995-07
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Natural de Quixeramobim, no Ceará, Cézar Fernandes foi ordenado ao diaconato, em julho de
+    page: '119'
+  - source: costa2021
+    quote: 1995, e presbítero, em junho de 1996
+    page: '119'
 - order: presbyterate
   date: '1996-06-06'
   place: Antiga Catedral Anglicana de São Paulo
@@ -28,6 +40,9 @@ ordinations:
       No dia 06 de junho de 1996, na antiga Catedral Anglicana de São Paulo, com a oração da Igreja e a imposição
       das mãos do então Bispo Diocesano de São Paulo, Dom Glauco Soares de Lima, e dos presbíteros da Igreja, fui
       Ordenado Sacerdote
+  - source: costa2021
+    quote: 1995, e presbítero, em junho de 1996
+    page: '119'
   notes: >-
     Diocese Anglicana de São Paulo. Relato em primeira pessoa do próprio ordenado, hoje bispo diocesano da DASP.
 - order: episcopate
@@ -36,7 +51,7 @@ ordinations:
   jurisdiction: ieab
   office: coadjutor
   principal_consecrator: naudal-gomes
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: >-
@@ -46,7 +61,18 @@ ordinations:
     quote: >-
       Ele foi sagrado bispo em 25 de janeiro de 2020, na Paróquia da Santíssima Trindade, por Dom Naudal Alves Gomes,
       Primaz da IEAB.
-  notes: Eleito bispo coadjutor da DASP em 09/07/2019. Sagrante principal so pela Wikipedia PT.
+  discrepancies:
+  - field: office
+    value: diocesan
+    sources:
+    - source: costa2021
+      quote: >-
+        cerimônia de sagração ocorreu no dia 25 de janeiro de 2020 – festa de São Paulo, Apóstolo –, na Paróquia
+        da Santíssima Trindade, na capital paulista
+      page: '120'
+  notes: >-
+    Eleito bispo coadjutor da DASP em 09/07/2019. Sagrante principal so pela Wikipedia PT. Coadjutor. A tese NÃO
+    nomeia sagrantes.
 affiliations:
 - jurisdiction: ieab
   role: coadjutor_bishop
@@ -61,7 +87,7 @@ affiliations:
   role: diocesan_bishop
   diocese: ieab-dasp
   start: '2021-10-31'
-  status: confirmed
+  status: contested
   sources:
   - source: ieab-cezar-investidura
     quote: a cerimônia de Investidura do bispo Cézar Alves como bispo diocesano da DASP
@@ -71,7 +97,27 @@ affiliations:
     quote: >-
       A celebração do início da emerência do bispo Flávio Irala e investidura do bispo Cézar Alves como bispo diocesano
       da Diocese Anglicana de São Paulo acontecerá no templo da Paróquia de São João, dia 31 de outubro
-  notes: Data prevista (notícia publicada antes da cerimônia).
+  - source: costa2021
+    quote: Diocese Anglicana de São Paulo, pastoreada pelo Bispo Francisco Cézar Fernandes
+    page: '121'
+  notes: >-
+    Data prevista (notícia publicada antes da cerimônia). Coadjutor a partir da sagração; diocesano em 2021 (data
+    da sucessão não informada).
+  discrepancies:
+  - field: start
+    value: '2020-01-25'
+    sources:
+    - source: costa2021
+      quote: Diocese Anglicana de São Paulo, pastoreada pelo Bispo Francisco Cézar Fernandes
+      page: '121'
+- jurisdiction: ieab
+  role: clergy
+  status: probable
+  sources:
+  - source: costa2021
+    quote: como reitor da Paróquia São
+    page: '119'
+  notes: 'Local: Paróquia São João, São Paulo (reitor).'
 events:
 - type: other
   date: '2022-10-15'
@@ -106,3 +152,32 @@ events:
       Durante o 47º Concílio da DASP o reverendo Flávio Irala foi eleito bispo desta diocese por 19 a 18 votos na
       ordem leiga e 15 a 13 votos na ordem clerical.
     page: '93'
+- type: other
+  date: '2013'
+  description: >-
+    47º Concílio da DASP elege Flávio Augusto Borges Irala sexto bispo diocesano de São Paulo (19 a 18 na ordem
+    leiga, 15 a 13 na clerical); o bispo Roger Bird considera a eleição irregular e cancela o Concílio
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Após uma série de escrutínios, este último acabou eleito para se tornar o sexto bispo diocesano de São Paulo154.
+    page: '147'
+  - source: costa2021
+    quote: >-
+      Durante o 47º Concílio da DASP o reverendo Flávio Irala foi eleito bispo desta diocese por 19 a 18 votos na
+      ordem leiga e 15 a 13 votos na ordem clerical.
+    page: '147'
+  - source: costa2021
+    quote: >-
+      a eleição foi considera irregular pelo bispo Roger Douglas Bird155, declarando o cancelamento do Concílio.
+    page: '147'
+- type: other
+  date: '2019-07-09'
+  description: >-
+    Concílio Extraordinário elege Francisco Cézar Fernandes Alves bispo coadjutor da Diocese Anglicana de São Paulo
+  status: probable
+  sources:
+  - source: costa2021
+    quote: em 09 de julho de 2019, durante Concílio Extraordinário, o reverendo Francisco Cézar Fernandes
+    page: '119'

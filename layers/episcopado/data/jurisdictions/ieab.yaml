@@ -9,7 +9,7 @@ type: province
 tradition: anglican
 country: BR
 founded:
-  date: '1890'
+  date: '1890-06-01'
   sources:
   - source: cant-novas-igrejas-2024
     quote: Igreja Episcopal Anglicana do Brasil (IEAB) [1890]
@@ -22,6 +22,15 @@ founded:
       Até então a IEAB se chamava Igreja Episcopal do Brasil, nomenclatura que ainda consta em seus Estatutos e
       Cânones Gerais.
     page: '165'
+  - source: costa2021
+    quote: >-
+      Até hoje este dia é considerado como a data oficial de fundação da Igreja Episcopal Anglicana do Brasil.
+    page: '51'
+  - source: costa2021
+    quote: >-
+      A partir do ano do seu centenário, a Igreja Episcopal do Brasil passou a se chamar Igreja Episcopal Anglicana
+      do Brasil.
+    page: '100'
   discrepancies:
   - field: date
     value: '1965-04-25'
@@ -56,7 +65,7 @@ sources:
 relations:
 - type: successor_of
   target: dmsb
-  date: '1965'
+  date: '1965-04-25'
   led_by:
   - egmont-krischke
   status: confirmed
@@ -65,10 +74,13 @@ relations:
     quote: >-
       voted autonomy for the 45,000 member Brazilian Episcopal Church and, by the same decision, created the 19th
       independent church in the world-wide Anglican Communion.
+  - source: costa2021
+    quote: Comunhão Anglicana, desde então conhecida como Igreja Episcopal do Brasil70.
+    page: '83'
   notes: Os três distritos (Sul, Sudoeste, Central) passaram a formar a igreja autônoma.
 - type: member_of
   target: anglican-communion
-  date: '1965'
+  date: '1965-04-25'
   status: confirmed
   sources:
   - source: ens-41-5
@@ -84,6 +96,10 @@ relations:
   - source: cant-novas-igrejas-2024
     quote: 19ª Província da Comunhão Anglicana [1965]
     page: '171'
+  - source: costa2021
+    quote: >-
+      foi proclamada a autonomia da Igreja no Brasil, constituindo-se na 19ª Província da Comunhão Anglicana
+    page: '83'
   notes: >-
     Aprovada pela Convenção Geral da TEC em out. 1964; existência como província a partir de maio de 1965 (ENS).
     Calvani (2005) data a autonomia em 1964. Como 19ª Província.

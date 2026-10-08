@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ia-jundiai
+acronym: IA-Jundiai
+name: Igreja Anglicana de Jundiaí
+type: national_church
+country: BR
+description: >-
+  Fundada pelo ex-padre católico Wilson Vitoriano, que se juntou ao grupo do Movimento Anglicano no Brasil.
+sources:
+- source: costa2021
+  quote: deixou a comunhão com Roma, fundando a “Igreja Anglicana de Jundiaí”.
+  page: '149'

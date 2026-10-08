@@ -20,15 +20,32 @@ sources:
   quote: Revmo. Bispo Renato da Cruz Raatz, Emérito
 ordinations:
 - order: diaconate
-  date: '1979'
-  jurisdiction: null
+  date: '1979-12-30'
+  place: Catedral da Santíssima Trindade, Porto Alegre
+  jurisdiction: ieab-dm
   status: probable
   sources:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1979 - … Renato da Cruz Raatz
     page: '372'
+  - source: costa2021
+    quote: >-
+      sendo ordenado diácono em 30 de dezembro de 1979, na Catedral da Santíssima Trindade, em Porto Alegre, e presbítero
+      em 20 de julho de 1980, na Paróquia da Bênção Divina, em São Francisco de Paula.
+    page: '110'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1980-07-20'
+  place: Paróquia da Bênção Divina, São Francisco de Paula
+  jurisdiction: ieab-dm
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      sendo ordenado diácono em 30 de dezembro de 1979, na Catedral da Santíssima Trindade, em Porto Alegre, e presbítero
+      em 20 de julho de 1980, na Paróquia da Bênção Divina, em São Francisco de Paula.
+    page: '110'
 - order: episcopate
   date: '2007-04-15'
   place: Catedral do Redentor, Pelotas
@@ -45,7 +62,9 @@ ordinations:
     quote: >-
       A cerimônia, presidida pelo bispo Primaz, dom Maurício de Andrade, aconteceu na Cate- dral do Redentor, no
       dia 15 de abril.
-  notes: Bispo da Diocese Anglicana de Pelotas. "Presidida" pelo primaz = sagrante principal presumido.
+  notes: >-
+    Bispo da Diocese Anglicana de Pelotas. "Presidida" pelo primaz = sagrante principal presumido. Co-sagrantes
+    e local não informados; Naudal Gomes foi o pregador.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
@@ -53,10 +72,25 @@ affiliations:
   start: '2007-04-15'
   end: '2019'
   end_reason: retirement
-  status: probable
+  status: contested
   sources:
   - source: wp-pt-dioc-pelotas
     quote: Renato da Cruz Raatz - 2007 a 2019;
   - source: costa2021
     quote: >-
       que substituiu o bispo Renato da Cruz Raatz, que havia atingido a idade da aposentadoria compulsória.
+  - source: costa2021
+    quote: então deão da Catedral do Redentor, foi eleito o novo bispo diocesano.
+    page: '110'
+  discrepancies:
+  - field: end
+    value: '2020-03-14'
+    sources:
+    - source: costa2021
+      quote: então deão da Catedral do Redentor, foi eleito o novo bispo diocesano.
+      page: '110'
+    - source: costa2021
+      quote: >-
+        que substituiu o bispo Renato da Cruz Raatz, que havia atingido a idade da aposentadoria compulsória.
+      page: '119'
+  notes: Fim = posse de Meriglei (14/3/2020).

@@ -4,7 +4,9 @@ name: Lucien Lee Kinsolving
 full_name: Lucien Lee Kinsolving
 aliases:
 - Bishop Kinsolving
+- Kinsolving
 - L. L. Kinsolving
+- bispo Kinsolving
 birth:
   date: '1862-05-14'
   sources:
@@ -27,6 +29,12 @@ death:
     quote: The consecration of the Rev. Lncien Lee Kinsolving as Bishop for Brazil
   - source: wd-q22018805
     quote: Lucien Lee Kinsolving | American Episcopal bishop
+  - source: costa2021
+    quote: Lucien Lee Kinsolving37 nasceu em 14 de maio de 1826, no Estado de Virgínia
+    page: '50'
+  - source: costa2021
+    quote: Lucien Lee Kinsolving faleceu no dia 18 de dezembro de 1929, em Forest Hills, Nova York
+    page: '62'
 wikidata: Q22018805
 biography: >-
   Missionário norte-americano (VTS) que chegou ao Brasil em 1889/1890 com James W. Morris; sagrado em 1899 primeiro
@@ -42,7 +50,7 @@ sources:
   quote: Lucien Lee Kinsolving | American Episcopal bishop
 ordinations:
 - order: diaconate
-  date: 1889-06
+  date: '1889-06-29'
   jurisdiction: tec
   ordained_by: francis-mcneece-whittle
   status: probable
@@ -51,9 +59,15 @@ ordinations:
     quote: >-
       Virginia's bishop, Francis McNeece Whittle, ordained Kinsolving and fellow Virginia Seminary graduate James
       Watson Morris deacons in June and priests in August, 1889
+  - source: costa2021
+    quote: >-
+      O bispo da Diocese de Virgínia, Francis McNeece Whittle realizou a ordenação diaconal de Lucien Lee Kinsolving
+      e de James Vson Watson Morris, em 29 de junho de 1889.
+    page: '50'
   notes: 'Wikipédia cita ''Our Overseas Missions: Brazil'' (National Council, 1964, datilografado).'
 - order: presbyterate
-  date: 1889-08
+  date: '1889-08-04'
+  place: Capela do Seminário Teológico de Virgínia
   jurisdiction: tec
   ordained_by: francis-mcneece-whittle
   status: probable
@@ -62,6 +76,11 @@ ordinations:
     quote: >-
       ordained Kinsolving and fellow Virginia Seminary graduate James Watson Morris deacons in June and priests
       in August, 1889
+  - source: costa2021
+    quote: No dia 04 de agosto do mesmo ano, ambos foram ordenados presbíteros na Capela do Seminário.
+    page: '50'
+  notes: >-
+    A tese não nomeia o ordenante do presbiterato (a frase anterior trata da ordenação diaconal por Whittle).
 - order: episcopate
   date: '1899-01-06'
   place: St. Bartholomew's Church, Nova York
@@ -79,7 +98,7 @@ ordinations:
   - william-david-walker
   - william-lawrence
   - william-neilson-mcvickar
-  status: confirmed
+  status: contested
   sources:
   - source: som-1899-02
     quote: >-
@@ -123,6 +142,31 @@ ordinations:
   - source: iab-poster-linhagem-meira
     quote: >-
       Lucien Lee Kinsolving, que foi consagrado em 6 de janeiro de 1899 como o primeiro bispo missionário no país.
+  - source: costa2021
+    quote: >-
+      Em 06 de janeiro de 1899, doze bispos participaram da consagração de Kinsolving na Igreja de São Bartolomeu
+      (Nova York), em cerimônia liderada pelo bispo George Peterkin, então presidente da Igreja Episcopal dos Estados
+      Unidos.
+    page: '55'
+  discrepancies:
+  - field: place
+    value: Igreja de São Bartolomeu, Nova York
+    sources:
+    - source: costa2021
+      quote: >-
+        Em 06 de janeiro de 1899, doze bispos participaram da consagração de Kinsolving na Igreja de São Bartolomeu
+        (Nova York), em cerimônia liderada pelo bispo George Peterkin, então presidente da Igreja Episcopal dos
+        Estados Unidos.
+      page: '55'
+  - field: principal_consecrator
+    value: george-william-peterkin
+    sources:
+    - source: costa2021
+      quote: >-
+        Em 06 de janeiro de 1899, doze bispos participaram da consagração de Kinsolving na Igreja de São Bartolomeu
+        (Nova York), em cerimônia liderada pelo bispo George Peterkin, então presidente da Igreja Episcopal dos
+        Estados Unidos.
+      page: '55'
   notes: >-
     Fonte primária (Spirit of Missions, fev. 1899): Dudley presidiu; Potter e Lawrence 'imediatamente' assistentes
     (co-sagrantes formais); Doane e Peterkin apresentantes; G. H. Kinsolving pregador; Scarborough, Walker, Talbot,
@@ -133,15 +177,20 @@ ordinations:
     de Kentucky ("presided"). Co-sagrantes imediatos: Potter (Nova York) e Lawrence (Massachusetts); também impuseram
     as mãos Doane, Peterkin, G. H. Kinsolving, Scarborough, Walker, Talbot, Wells e McVickar. A Wikipédia diz "led
     by the Presiding Bishop" (impreciso) e a lista de sucessão dá Dudley, Doane e Scarborough. Nomes completos de
-    Potter (Henry Codman Potter) e Lawrence (William Lawrence) inferidos das sés em 1899.
+    Potter (Henry Codman Potter) e Lawrence (William Lawrence) inferidos das sés em 1899. A tese diz que doze bispos
+    participaram, sem nomeá-los; a citação de Ivo (1962) fala em 8 bispos presentes e no sermão de George Herbert
+    Kinsolving, bispo do Texas. A afirmação de que Peterkin era 'presidente da Igreja Episcopal' é da tese.
 affiliations:
 - jurisdiction: dmsb
   role: diocesan_bishop
   start: '1899-01-06'
-  end: '1928'
-  end_reason: resignation
+  end: '1927'
+  end_reason: retirement
   status: contested
   sources:
+  - source: costa2021
+    quote: o bispo Kinsolving percebia que era necessário aposentar- se, o que ocorreu em 1927.
+    page: '62'
   - source: wit-1952-03-20
     quote: >-
       Bishop Kinsolving retired in 1928 and was succeeded by Bishop William M. M. Thomas who had come out to Brazil
@@ -154,11 +203,39 @@ affiliations:
     quote: BISPOS MISSIONÁRIOS … 1899-1926 - Lucien Lee Kinsolving
     page: '368'
   notes: >-
-    Local: 1899); Missionary Bishop of Southern Brazil (1907-1928. Eleito pela convocação de Porto Alegre em 30/05/1898
-    e pela Câmara dos Bispos em out. 1898; reeleito bispo missionário do Sul do Brasil em 1907 (Wikipédia). Voltou
-    aos EUA por saúde em out. 1926, renúncia aceita em 1928. O livro lista Kinsolving entre os bispos missionários
-    de 1899 a 1926.
+    Local/função: Missão / Distrito Missionário do Brasil. Local: 1899); Missionary Bishop of Southern Brazil (1907-1928.
+    Eleito pela convocação de Porto Alegre em 30/05/1898 e pela Câmara dos Bispos em out. 1898; reeleito bispo missionário
+    do Sul do Brasil em 1907 (Wikipédia). Voltou aos EUA por saúde em out. 1926, renúncia aceita em 1928. O livro
+    lista Kinsolving entre os bispos missionários de 1899 a 1926.
   discrepancies:
+  - field: end
+    value: '1928'
+    sources:
+    - source: wit-1952-03-20
+      quote: >-
+        Bishop Kinsolving retired in 1928 and was succeeded by Bishop William M. M. Thomas who had come out to Brazil
+        as a missionary in 1904.
+    - source: som-1898-12
+      quote: >-
+        the Rev. Lucien Lee Kinsolving had been duly elected, in accordance with Article X. of the Constitution,
+        a Bishop for the United States of Brazil.
+    - source: kickhofel-1995
+      quote: BISPOS MISSIONÁRIOS … 1899-1926 - Lucien Lee Kinsolving
+      page: '368'
+  - field: end_reason
+    value: resignation
+    sources:
+    - source: wit-1952-03-20
+      quote: >-
+        Bishop Kinsolving retired in 1928 and was succeeded by Bishop William M. M. Thomas who had come out to Brazil
+        as a missionary in 1904.
+    - source: som-1898-12
+      quote: >-
+        the Rev. Lucien Lee Kinsolving had been duly elected, in accordance with Article X. of the Constitution,
+        a Bishop for the United States of Brazil.
+    - source: kickhofel-1995
+      quote: BISPOS MISSIONÁRIOS … 1899-1926 - Lucien Lee Kinsolving
+      page: '368'
   - field: end
     value: '1926'
     sources:
@@ -227,3 +304,16 @@ events:
       um telegrama da Câmara dos Bispos, informando-o de que havia sido eleito para ser o primeiro bispo da Igreja
       Protestante Episcopal dos Estados Unidos do Brasil.
     page: '93'
+- type: other
+  date: '1898-05-30'
+  description: >-
+    Eleição de Lucien Lee Kinsolving como primeiro bispo da Missão no Brasil, em Convocação extraordinária em Porto
+    Alegre
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 30 de maio de 1898, de acordo com o conselho do bispo Peterkin, clérigos e leigos se reuniram em Porto
+      Alegre em uma Convocação extraordinária e elegeram Lucien Lee Kinsolving para ser o primeiro bispo da Missão
+      da Igreja Episcopal no Brasil43.
+    page: '55'

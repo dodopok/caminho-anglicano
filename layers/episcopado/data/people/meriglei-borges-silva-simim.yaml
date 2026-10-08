@@ -6,8 +6,10 @@ aliases:
 - Bispa Meriglei Simim
 - Mariglei Borges Silva Simin
 - Meriglei Borges
+- Meriglei Borges Silva Simin
 - Meriglei Borges Simin da Silva
 - Meriglei Borges da Silva Simim
+- Meriglei Simin
 birth:
   date: '1967-06-29'
   sources:
@@ -19,15 +21,33 @@ sources:
   quote: Meriglei Borges Silva Simin nasceu em 29 de junho de 1967, na cidade de Canguçu (RS).
 ordinations:
 - order: diaconate
-  date: '1995'
-  jurisdiction: null
+  date: '1995-04-23'
+  jurisdiction: ieab-dap
+  ordained_by: luiz-osorio-pires-prado
   status: probable
   sources:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1995 - … Meriglei Borges
     page: '374'
+  - source: costa2021
+    quote: >-
+      Foi ordenada ao diaconato em 23 de abril de 1995 e, ao presbiterato, em 28 de setembro de 1997, pelo bispo
+      Luiz Osório Pires Prado.
+    page: '119'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    'pelo bispo Luiz Osório Pires Prado' fecha a frase; atribuído às duas ordenações.
+- order: presbyterate
+  date: '1997-09-28'
+  jurisdiction: ieab-dap
+  ordained_by: luiz-osorio-pires-prado
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi ordenada ao diaconato em 23 de abril de 1995 e, ao presbiterato, em 28 de setembro de 1997, pelo bispo
+      Luiz Osório Pires Prado.
+    page: '119'
 - order: episcopate
   date: '2019-11-17'
   place: Ginásio do Esporte Clube Cruzeiro, Canguçu (RS)
@@ -53,7 +73,7 @@ ordinations:
       foi sagrada pelo Bispo Primaz, Naudal Alves Gomes
   notes: >-
     Eleita em 27/04/2019; posse em 14/03/2020. Grafias: Simim / Simin / Mariglei. Confirma o sagrante da Wikipedia
-    PT por fonte autoral (Costa).
+    PT por fonte autoral (Costa). Co-sagrantes não informados.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop
@@ -65,3 +85,15 @@ affiliations:
     quote: A posse como a nova diocesana de Pelotas aconteceu em 14 de março de 2020, na Catedral do Redentor.
   - source: ieab-dioceses
     quote: Bispo Diocesano – Revma. Meriglei Borges Silva Simin
+events:
+- type: other
+  date: '2019-04-27'
+  description: >-
+    Concílio da Diocese Anglicana de Pelotas elege Meriglei Borges Simin da Silva para suceder Renato Raatz
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      A Diocese Anglicana de Pelotas, em Concílio realizado no dia 27 de abril de 2019, elegeu a reverenda Meriglei
+      Borges Simin da Silva122
+    page: '119'

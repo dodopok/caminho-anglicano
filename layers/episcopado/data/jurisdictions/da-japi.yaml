@@ -4,6 +4,7 @@ acronym: DA-Japi
 name: Diocese Anglicana do Japi
 aliases:
 - DA-JAPI
+- Diocese Anglicana do Japí (Jundiaí)
 type: diocese
 country: BR
 founded:
@@ -57,3 +58,15 @@ sources:
 - source: cant-novas-igrejas-2024
   quote: Em 2016, a Diocese Anglicana do Japi foi extinta
   page: '76'
+relations:
+- type: part_of
+  target: pcra-al
+  date: '2013'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: tendo recebido a sagração episcopal pelas mãos do bispo colombiano Victor Manuel Cruz-Blanco.
+    page: '138'
+  notes: >-
+    Vínculo inferido da sagração de Roque por Cruz-Blanco e da sua presença no Movimento Continuante; a tese não
+    diz explicitamente que a Diocese do Japí era parte da província de Cruz-Blanco.

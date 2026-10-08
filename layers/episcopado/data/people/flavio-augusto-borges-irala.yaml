@@ -39,6 +39,9 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1985 - … Flávio Augusto Borges Irala
     page: '373'
+  - source: costa2021
+    quote: Foi ordenado diácono em 1985.
+    page: '114'
   notes: >-
     Data não informada; ocorreu após estudos no IAET em São Paulo (a partir de 1979). Ano tirado da lista do clero
     nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
@@ -56,9 +59,13 @@ ordinations:
     quote: Finalmente, Irala foi ordenado e sagrado bispo da DASP em 13 de setembro de 2013.
   - source: ec-2017-01
     quote: Já em 2013, foi sagrado o Revmo. Flávio Irala como bispo de São Paulo, em meio a momentos de crise.
+  - source: costa2021
+    quote: Flávio Irala (26)
+    page: '121'
   notes: >-
     Eleicao (08/09/2012) contestada judicialmente pelo grupo que formou o Movimento Anglicano no Brasil. Diocese
-    Anglicana de São Paulo. Sagrantes não informados nesta fonte.
+    Anglicana de São Paulo. Sagrantes não informados nesta fonte. A tese NÃO informa data, local nem sagrantes;
+    apenas o número 26 no registro de bispos da IEAB (nota 138) e a eleição em 2013.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -91,8 +98,24 @@ affiliations:
     quote: Em 2021, tornou-se bispo emérito
   - source: ieab-cezar-investidura
     quote: a celebração de Ação de Graças pela vida, ministério e início da emerência do bispo Flávio Irala
+  - source: costa2021
+    quote: >-
+      Do mesmo modo, somente com a eleição de um novo epíscopo, após o mandato do bispo Flávio Irala, seria possível
+      resolvê-la.
+    page: '147'
   notes: >-
     Costa Anexo D da 2012-2017 com interinos Francisco de Assis (2017-18) e Naudal (2018-20) - conflito com IEAB.
+    Fim não informado; Francisco Cézar Fernandes Alves eleito coadjutor em 2019 e diocesano em 2021.
+- jurisdiction: ieab
+  role: other
+  role_description: deão
+  end: '2013'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: tornando-se deão da Catedral de São Tiago, em Curitiba.
+    page: '114'
+  notes: 'Cargo: Deão da Catedral de São Tiago, Curitiba.'
 events:
 - type: other
   date: '2012-09-08'
@@ -128,3 +151,23 @@ events:
       Durante o 47º Concílio da DASP o reverendo Flávio Irala foi eleito bispo desta diocese por 19 a 18 votos na
       ordem leiga e 15 a 13 votos na ordem clerical.
     page: '93'
+- type: other
+  date: '2013'
+  description: >-
+    47º Concílio da DASP elege Flávio Augusto Borges Irala sexto bispo diocesano de São Paulo (19 a 18 na ordem
+    leiga, 15 a 13 na clerical); o bispo Roger Bird considera a eleição irregular e cancela o Concílio
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Após uma série de escrutínios, este último acabou eleito para se tornar o sexto bispo diocesano de São Paulo154.
+    page: '147'
+  - source: costa2021
+    quote: >-
+      Durante o 47º Concílio da DASP o reverendo Flávio Irala foi eleito bispo desta diocese por 19 a 18 votos na
+      ordem leiga e 15 a 13 votos na ordem clerical.
+    page: '147'
+  - source: costa2021
+    quote: >-
+      a eleição foi considera irregular pelo bispo Roger Douglas Bird155, declarando o cancelamento do Concílio.
+    page: '147'

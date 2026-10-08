@@ -4,6 +4,7 @@ name: Jubal Pereira Neves
 full_name: Jubal Pereira Neves
 aliases:
 - Dom Jubal Neves
+- Jubal Neves
 birth:
   date: '1943-03-29'
   sources:
@@ -19,15 +20,32 @@ sources:
   quote: Revmo. Bispo Jubal Neves, Emérito
 ordinations:
 - order: diaconate
-  date: '1966'
-  jurisdiction: null
+  date: 1966-01
+  place: Catedral do Mediador, Santa Maria
+  jurisdiction: ieab
   status: probable
   sources:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1966 - … Jubal Pereira Neves
     page: '371'
+  - source: costa2021
+    quote: >-
+      sendo ordenado ao diaconato, em janeiro de 1966, na Catedral do Mediador em Santa Maria, e ao presbiterato
+      na Paróquia de Cristo, em Jaguarão, 1967
+    page: '101'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1967'
+  place: Paróquia de Cristo, Jaguarão
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      sendo ordenado ao diaconato, em janeiro de 1966, na Catedral do Mediador em Santa Maria, e ao presbiterato
+      na Paróquia de Cristo, em Jaguarão, 1967
+    page: '101'
 - order: episcopate
   date: '1993-09-19'
   jurisdiction: ieab
@@ -40,8 +58,21 @@ ordinations:
       A sagração aconteceu em 19 de setembro de 1993, pelas mãos do bispo Sumio Takatsu e outros bispos da época.
   - source: sinopse-2003
     quote: '**1993** - Jubal Alves Neves (bispo de Santa Maria)'
-  notes: Eleito no 45o Concilio Extraordinario da Diocese Sul-Ocidental para suceder Olavo Ventura Luiz.
+  notes: >-
+    Eleito no 45o Concilio Extraordinario da Diocese Sul-Ocidental para suceder Olavo Ventura Luiz. Co-sagrantes
+    descritos apenas como 'outros bispos da época'. Local não informado.
 affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: secretário-geral da ieab
+  start: '1983'
+  end: '1993'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Foi secretário-geral da Igreja Episcopal Anglicana do Brasil entre 1983 e 1993.
+    page: '101'
+  notes: 'Cargo: Secretário-geral da IEAB.'
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dso
@@ -57,3 +88,30 @@ affiliations:
   - source: kickhofel-1995
     quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1993 - Jubal Pereira Neves
     page: '368'
+  - source: costa2021
+    quote: eleição de novo bispo coadjutor que iria suceder Jubal Neves, o qual estava no cargo desde 1993.
+    page: '112'
+  notes: 'Fim aproximado: coadjutor Francisco de Assis da Silva eleito em out. 2010 e sagrado em mar. 2011.'
+events:
+- type: other
+  date: '1977'
+  description: >-
+    Envio dos reverendos Clóvis Erly Rodrigues e Jubal Pereira Neves ao Uruguai (Parroquia de la Santísima Trinidad)
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      a Igreja Episcopal do Brasil enviou, em 1977, os reverendos Clovis Erly Rodrigues e Jubal Pereira Neves ao
+      Uruguai.
+    page: '89'
+- type: other
+  date: '1993'
+  description: >-
+    Cônego Jubal Pereira Neves eleito no 45º Concílio Extraordinário da Diocese Sul-Ocidental para suceder Olavo
+    Ventura Luiz
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      No mesmo ano, ocorreu a eleição do cônego Jubal Pereira Neves91, durante o 45º Concílio Extraordinário
+    page: '101'

@@ -19,6 +19,12 @@ birth:
     quote: Dr. Pithan, rector of the Church of the Crucified, operates four additional Sunday schools.
   - source: wd-q19559990
     quote: Athalicio T. Pithan | bishop of the Anglican Episcopal Church of Brazil
+  - source: costa2021
+    quote: Athalício Pithan nasceu em Santa Maria, no dia de 20 de setembro de 1898.
+    page: '69'
+  - source: costa2021
+    quote: Pithan faleceu em 29 de agosto de 1966, no Rio de Janeiro, sendo sepultado em Porto Alegre.
+    page: '73'
 death:
   date: '1966-08-29'
   sources:
@@ -31,6 +37,12 @@ death:
     quote: Dr. Pithan, rector of the Church of the Crucified, operates four additional Sunday schools.
   - source: wd-q19559990
     quote: Athalicio T. Pithan | bishop of the Anglican Episcopal Church of Brazil
+  - source: costa2021
+    quote: Athalício Pithan nasceu em Santa Maria, no dia de 20 de setembro de 1898.
+    page: '69'
+  - source: costa2021
+    quote: Pithan faleceu em 29 de agosto de 1966, no Rio de Janeiro, sendo sepultado em Porto Alegre.
+    page: '73'
 wikidata: Q19559990
 biography: >-
   Primeiro bispo nascido no Brasil; reitor em Bagé, eleito sufragâneo do Sul do Brasil em 1939, sagrado em 21/04/1940;
@@ -48,14 +60,28 @@ sources:
 ordinations:
 - order: diaconate
   date: '1924'
-  jurisdiction: null
+  jurisdiction: dmsb
+  ordained_by: lucien-lee-kinsolving
   status: probable
   sources:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1924 - … Athalício Theodoro Pithan
     page: '369'
+  - source: costa2021
+    quote: sendo ordenado ao diaconato em 1924 e, dois anos depois, ao presbiterato pelo bispo Kinsolving.
+    page: '69'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    A frase pode atribuir a Kinsolving apenas o presbiterato; diaconato sob o mesmo bispo é leitura provável.
+- order: presbyterate
+  date: '1926'
+  jurisdiction: dmsb
+  ordained_by: lucien-lee-kinsolving
+  status: probable
+  sources:
+  - source: costa2021
+    quote: sendo ordenado ao diaconato em 1924 e, dois anos depois, ao presbiterato pelo bispo Kinsolving.
+    page: '69'
 - order: episcopate
   date: '1940-04-21'
   place: Catedral da Santíssima Trindade, Porto Alegre
@@ -67,6 +93,17 @@ ordinations:
   - hugo-blankingship
   status: contested
   sources:
+  - source: costa2021
+    quote: >-
+      Assim, no dia 21 de abril de 1940, ano em que a Igreja Episcopal dos Estados Unidos celebrava seus 50 anos
+      de missão no país, Athalício Theodoro Pithan 54 foi sagrado na Catedral da Santíssima Trindade, em Porto Alegre,
+      tornando-se o primeiro bispo brasileiro da Comunhão Anglicana.
+    page: '69'
+  - source: costa2021
+    quote: >-
+      O motivo foi o atraso do avião que trazia os bispos Alexander Hugo Blankingship, de Cuba, e Efrayn Salinas
+      y Velasco, do México.
+    page: '69'
   - source: wit-1940-04-18
     quote: >-
       The climax of the celebration will be the consecration on April 21 of the Rev. A. T. Pithan, suffragan- bishop-elect,
@@ -114,9 +151,12 @@ ordinations:
         Em 1940, Athalício Theodoro Pithan foi consagrado como o primeiro bispo brasileiro, marcando a transição
         para uma liderança nacional.
   notes: >-
-    Anúncio (Witness 18/04/1940) e relato pós-evento (Living Church 08/05/1940: 'took place as scheduled, April
-    21st') concordam. Salinas também foi o pregador. Primeira sagração episcopal realizada no Brasil (Kickhöfel,
-    1995, p. 192). O avião com Blankingship e Salinas y Velasco só pousou às 11h30; à noite pregou o bispo de Cuba.
+    Trecho citado pela tese de KICKHÖFEL, Notas para uma História da IEAB (1995), pp. 191-192. A tese não nomeia
+    o sagrante principal; Blankingship e Salinas y Velasco são os bispos cuja chegada era necessária para a cerimônia
+    (listados como co-sagrantes por inferência). O bispo Thomas presidiu o culto do dia. Anúncio (Witness 18/04/1940)
+    e relato pós-evento (Living Church 08/05/1940: 'took place as scheduled, April 21st') concordam. Salinas também
+    foi o pregador. Primeira sagração episcopal realizada no Brasil (Kickhöfel, 1995, p. 192). O avião com Blankingship
+    e Salinas y Velasco só pousou às 11h30; à noite pregou o bispo de Cuba.
 affiliations:
 - jurisdiction: dmsb
   role: bishop
@@ -134,13 +174,35 @@ affiliations:
       the third of the newly set up dio­ ceses.
   notes: 'Local: sufragâneo.'
 - jurisdiction: dmsb
+  role: bishop
+  start: '1940-04-21'
+  end: '1950'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O episcopado de Athalício Pithan, entre 1940 e 1955, também criou as condições para que o Distrito Missionário
+      fosse dividido em três dioceses.
+    page: '70'
+  notes: 'Local/função: Distrito Missionário do Brasil (sufragâneo).'
+- jurisdiction: dmsb
   role: diocesan_bishop
   diocese: southern-brazil
   start: '1949'
-  end: '1955'
+  end: '1956'
   end_reason: retirement
   status: contested
   sources:
+  - source: costa2021
+    quote: >-
+      Já para pastorar a Diocese Meridional, com sé na cidade de Porto Alegre, foi designado o bispo Athalício Theodoro
+      Pithan.
+    page: '72'
+  - source: costa2021
+    quote: >-
+      Em 1956, quando o Bispo Pithan se aposentou, a Câmara dos Bispos transferiu o Bispo Krischke para a Diocese
+      Meridional com sede em Porto Alegre.
+    page: '83'
   - source: wit-1952-03-20
     quote: >-
       Southern Brazil; Porto Alegre, the oldest field includes Theological Seminary; Southern Cross School, 800
@@ -163,9 +225,34 @@ affiliations:
     quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1950-1955 - Athalício Theodoro Pithan
     page: '368'
   notes: >-
+    A tese dá o episcopado de Pithan como 'entre 1940 e 1955' e a aposentadoria em 1956 (citação de Oliveira 1988).
     Início: eleito em 1949 (Witness 27/10/1949); Melcher foi diocesano do Sul de 1949 a 1950 segundo ENS — possível
     sobreposição/transição; ver dúvidas.
   discrepancies:
+  - field: end
+    value: '1955'
+    sources:
+    - source: wit-1952-03-20
+      quote: >-
+        Southern Brazil; Porto Alegre, the oldest field includes Theological Seminary; Southern Cross School, 800
+        boys; St. Margaret's School, 225 girls; Rt. Rev. Athalico Pithan;
+    - source: lc-1949-10-30
+      quote: >-
+        The district of Southern Brazil will, in-the future, embrace the eastern half of the states of Rio Grande
+        do Sul and Santa Caterina.
+    - source: lc-1955-09-25
+      quote: >-
+        Bishop Krischke of Southwestern Bra- zil was transferred to the district of Southern Brazil succeeding Bishop
+        Pit- han, who has resigned because of ill health.
+    - source: wit-1955-09-29
+      quote: >-
+        He will replace Bishop Krischke who is transferring to Southern Brazil to replace Bishop Pithan who is retiring
+        because of illness.
+    - source: ieab-sobre
+      quote: Em um primeiro momento, dom Melcher assumiu a Diocese Central e dom Pithan, a Diocese Meridional.
+    - source: kickhofel-1995
+      quote: BISPOS DIOCESANOS Diocese Meridional, Porto Alegre … 1950-1955 - Athalício Theodoro Pithan
+      page: '368'
   - field: start
     value: '1950'
     sources:
@@ -313,3 +400,18 @@ events:
       da igreja brasileira ao bispo Melcher, em maio daquele ano, conforme dispunha os cânones, ou seja, antes de
       se efetuar a divisão, cuja vigência teve seu início em 01 de janeiro de 1950.
     page: '200'
+- type: other
+  date: '1939'
+  description: >-
+    Apuração (1939) da eleição do bispo sufragâneo: George Upton Krischke e Athalício Pithan empatam; o bispo Thomas
+    escolhe Pithan
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Os envelopes foram fechados e guardados até 1939.
+    page: '68'
+  - source: costa2021
+    quote: >-
+      recebendo cada um o mesmo número de votos, porém, menos da metade necessária para conquistar a eleição. Embora
+      não fosse o costume, a decisão coube ao bispo Thomas que escolheu este último.
+    page: '69'

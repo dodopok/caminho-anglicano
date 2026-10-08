@@ -4,6 +4,7 @@ name: Naudal Alves Gomes
 full_name: Naudal Alves Gomes
 aliases:
 - Dom Naudal Gomes
+- Naudal Gomes
 - Naudal Gomez
 birth:
   date: '1953-06-19'
@@ -12,6 +13,10 @@ birth:
     quote: Naudal Alves Gomes nasceu na cidade de Sant’Ana do Livramento, Rio Grande do Sul, em 19 de
   - source: ieab-secretaria
     quote: Revmo. Bispo Naudal Alves Gomes, Emérito
+  - source: costa2021
+    quote: >-
+      Naudal Alves Gomes nasceu na cidade de Sant’Ana do Livramento, Rio Grande do Sul, em 19 de junho de 1953.
+    page: '105'
 wikidata: Q138993092
 biography: >-
   Sufraganeo da Sul-Ocidental (2000), primeiro bispo de Curitiba/Parana (2003-2021), primaz (2018-2022); em 2024
@@ -23,7 +28,7 @@ sources:
   quote: Revmo. Bispo Naudal Alves Gomes, Emérito
 ordinations:
 - order: diaconate
-  date: '1979'
+  date: '1979-12-29'
   jurisdiction: ieab
   status: probable
   sources:
@@ -32,18 +37,26 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1979 - … Naudal Alves Gomes
     page: '372'
+  - source: costa2021
+    quote: >-
+      Concluiu a formação teológica em 1979, no Seminário de Porto Alegre, sendo ordenado ao diaconato 29 de dezembro
+      do mesmo ano.
+    page: '105'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
-  date: '1980'
+  date: '1980-12-08'
   jurisdiction: ieab
   status: probable
   sources:
   - source: stmarks-naudal
     quote: A year later, he was ordained to the presbyterate in 1980.
+  - source: costa2021
+    quote: Depois, foi ordenado presbítero, em 08 de dezembro de 1980, sendo pároco em diversas comunidades.
+    page: '105'
 - order: episcopate
   date: '2000-04-08'
-  place: Catedral (catolica) de Nossa Senhora da Conceicao, Santa Maria (RS)
+  place: Catedral de Nossa Senhora da Conceição (Igreja Católica Romana), Santa Maria
   jurisdiction: ieab
   office: suffragan
   status: probable
@@ -58,7 +71,9 @@ ordinations:
       Sua sagração episcopal, em 8 de abril de 2000, ocorreu na Catedral Metropolitana de Santa Maria, cedida por
       Dom Ivo Lorscheiter.
   notes: >-
-    Presenca da bispa Barbara Harris (TEC) registrada; sagrante principal nao informado nas fontes lidas.
+    Presenca da bispa Barbara Harris (TEC) registrada; sagrante principal nao informado nas fontes lidas. A tese
+    NÃO nomeia sagrante principal nem co-sagrantes; menciona a participação de representantes de outras Províncias,
+    'como a bispa Barbara Harris' (Igreja Episcopal dos EUA), sem dizer que impôs as mãos.
 affiliations:
 - jurisdiction: ieab
   role: suffragan_bishop
@@ -71,10 +86,22 @@ affiliations:
   - source: wp-pt-naudal
     quote: Foi eleito bispo sufragâneo da Diocese Anglicana Sul-Ocidental, em Santa Maria, em 2000.
 - jurisdiction: ieab
+  role: bishop
+  diocese: ieab-dso
+  start: '2000-04-08'
+  end: '2003'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Eleito bispo sufragâneo da Diocese Sul-Ocidental, em 2000, pastoreou a Catedral do Mediador até 2003
+    page: '105'
+  notes: (sufragâneo)
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dapar
   start: '2003'
-  end: 2021-12
+  end: '2021-12-12'
   end_reason: retirement
   status: contested
   sources:
@@ -86,12 +113,24 @@ affiliations:
       é quando este se tornará bispo emérito.
   - source: costa2021
     quote: >-
+      quando foi eleito o primeiro bispo da Diocese Anglicana do Paraná, quando assumiu a Catedral de São Tiago,
+      na cidade de Curitiba.
+    page: '105'
+  - source: costa2021
+    quote: >-
+      A reverenda Magda Guedes Pereira124 foi eleita para suceder o bispo Naudal Alves Gomes, na liderança da Diocese
+      Anglicana do Paraná.
+    page: '120'
+  - source: costa2021
+    quote: >-
       Porém, outro candidato surgiu: Naudal Alves Gomes, bispo auxiliar da Diocese Sul-Ocidental. No decorrer do
       processo eleitoral, Sebastião declinou a indicação e Naudal foi eleito para a sé de Curitiba.
     page: '238'
   notes: >-
-    Primeiro bispo da Diocese de Curitiba (depois Diocese Anglicana do Parana). Local: Paraná. Antes bispo auxiliar
-    da Diocese Sul-Ocidental. Data inferida do contexto (eleição contemporânea à de Sebastião para o Recife, 2006).
+    Primeiro bispo da Diocese de Curitiba (depois Diocese Anglicana do Parana). Fim = instalação de Magda Guedes
+    (12/12/2021). A tese também diz que a sagração dele como bispo de Curitiba (sic, instalação) foi na catedral
+    católica da cidade. Local: Paraná. Antes bispo auxiliar da Diocese Sul-Ocidental. Data inferida do contexto
+    (eleição contemporânea à de Sebastião para o Recife, 2006).
   discrepancies:
   - field: start
     value: c.2006
@@ -128,6 +167,9 @@ affiliations:
     quote: Naudal Alves Gomes, 2018–2022
   - source: stmarks-naudal
     quote: Prior to that he served as primate of the Episcopal Anglican Church in Brazil from 2018 to 2022.
+  - source: costa2021
+    quote: 'Durante o 34º Sínodo também foi eleito o novo Primaz da IEAB: o bispo Naudal Alves Gomes. 121'
+    page: '119'
 - jurisdiction: tec
   role: clergy
   diocese: st-mark-s-episcopal-church-van-nuys

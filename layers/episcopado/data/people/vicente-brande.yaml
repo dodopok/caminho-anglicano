@@ -11,7 +11,8 @@ sources:
     serve the church for many years
 ordinations:
 - order: diaconate
-  date: '1893'
+  date: '1893-08-28'
+  place: Capela do Salvador, Rio Grande
   jurisdiction: dmsb
   ordained_by: george-william-peterkin
   status: probable
@@ -31,11 +32,16 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1893 - … Vicente Brande
     page: '369'
+  - source: costa2021
+    quote: >-
+      O primeiro brasileiro a ser ordenado pelo bispo George Peterkin foi Vicente Brande, na Capela do Salvador,
+      em Rio Grande, no dia 28 de agosto de 1893.
+    page: '53'
   notes: >-
     Fato (4 diáconos por Peterkin em 1893) confirmado por várias fontes; o nome deste ordenando consta só em Kickhofel.
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
-  date: '1897'
+  date: '1897-05-13'
   jurisdiction: dmsb
   ordained_by: waite-hockin-stirling
   status: probable
@@ -45,8 +51,14 @@ ordinations:
   - source: wp-en-kinsolving
     quote: >-
       Bishop Stirling ordained three of the Brazilian deacons to the priesthood (Peterkin having deposed the fourth).
+  - source: costa2021
+    quote: >-
+      de maio de 1987, o bispo Stirling ordenou três dos diáconos brasileiros – Brande, Fraga e Cabral – para a
+      ordem do presbiterato
+    page: '54'
   notes: >-
-    Stirling, bispo das Falkland (Igreja da Inglaterra), agiu a pedido de Peterkin. Nomes só em Kickhofel.
+    Stirling, bispo das Falkland (Igreja da Inglaterra), agiu a pedido de Peterkin. Nomes só em Kickhofel. A tese
+    escreve '13 de maio de 1987', erro evidente por 1897 (a visita de Stirling começou em 6/5/1897).
 events:
 - type: other
   date: '1890-06-01'

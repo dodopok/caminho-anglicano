@@ -24,6 +24,24 @@ sources:
 - source: ieab-secretaria
   quote: Revmo. Bispo Filadelfo Oliveira, Emérito
 ordinations:
+- order: diaconate
+  date: '1999-02-28'
+  jurisdiction: ieab-dar
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi ordenado ao diaconato, em 28 de fevereiro de 1999, e ao presbiterato, em 17 de outubro do mesmo ano.
+    page: '106'
+- order: presbyterate
+  date: '1999-10-17'
+  jurisdiction: ieab-dar
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi ordenado ao diaconato, em 28 de fevereiro de 1999, e ao presbiterato, em 17 de outubro do mesmo ano.
+    page: '106'
 - order: episcopate
   date: '2002-04-28'
   jurisdiction: ieab
@@ -36,6 +54,9 @@ ordinations:
     quote: >-
       eleito Bispo Sufragâneo da Diocese Anglicana do Recife. Sua sagração aconteceu em 28 de abril de 2002.
   - source: costa2021
+    quote: Sua sagração aconteceu em 28 de abril de 2002.
+    page: '106'
+  - source: costa2021
     quote: >-
       Os reverendos Mitsuo Noyama e Filadelfo Oliveira foram os candidatos. Filadelfo foi escolhido e a sua sagração
       ocorreu em 28 de abril de 2002.
@@ -45,9 +66,20 @@ ordinations:
     page: '195'
   notes: >-
     Eleito sufraganeo da Diocese Anglicana do Recife em 07/12/2001 (Concilio de Paripueira-AL), contra o Rev. Mitsuo
-    Noyama. Bispo sufragâneo da Diocese Anglicana do Recife (IEAB), eleito no Concílio de Paripueira (AL) em dezembro
-    de 2001. A tese não informa local nem sagrantes.
+    Noyama. A tese NÃO informa local nem sagrantes. Bispo sufragâneo da Diocese Anglicana do Recife (IEAB), eleito
+    no Concílio de Paripueira (AL) em dezembro de 2001. A tese não informa local nem sagrantes.
 affiliations:
+- jurisdiction: ieab-dar
+  role: other
+  role_description: secretário executivo e arcediago
+  start: 1999-10
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi nomeado secretário executivo em outubro de 1999, acumulou a função de arcediago a partir de março de 2000.
+    page: '106'
+  notes: 'Cargo: Secretário executivo e arcediago (Diocese do Recife).'
 - jurisdiction: ieab
   role: suffragan_bishop
   diocese: ieab-dar
@@ -60,10 +92,16 @@ affiliations:
 - jurisdiction: ieab
   role: bishop
   diocese: ieab-dar
-  start: 2005-02
+  start: '2002-04-28'
   end: '2006'
   status: contested
   sources:
+  - source: costa2021
+    quote: Filadelfo foi escolhido e a sua sagração ocorreu em 28 de abril de 2002.
+    page: '190'
+  - source: costa2021
+    quote: Dom Filadelfo Oliveira Neto, ose (Bispo Sufragâneo da DAR)
+    page: '217'
   - source: ieab-2004-decreto-recife
     quote: supõe que o Bispo Sufragâneo Dom Filadelfo Oliveira, de acordo com sua prerrogativas
   - source: ieab-2005-cbispos-cantuaria
@@ -77,29 +115,35 @@ affiliations:
   - source: ta-2005-10-01-ieab-recife
     quote: under the ecclesiastical authority of the suffragan bishop Filadelfo Oliveira
   - source: costa2021
-    quote: Filadelfo foi escolhido e a sua sagração ocorreu em 28 de abril de 2002.
-    page: '190'
-  - source: costa2021
-    quote: Dom Filadelfo Oliveira Neto, ose (Bispo Sufragâneo da DAR)
-    page: '217'
+    quote: A missão do novo epíscopo era auxiliar o seu bispo diocesano, Robinson Cavalcanti
+    page: '106'
   notes: >-
-    Bispo sufragâneo da Diocese Anglicana do Recife em 2004; signatário da carta da Câmara dos Bispos de 14/11/2005.
-    Autoridade eclesiástica nomeada pelo primaz para a Diocese do Recife durante a crise de 2005; depois bispo emérito
-    ativo na diocese (pregou em ordenações de 2020–2023). Fim do papel: eleição de Sebastião Gameleira (data não
-    verificada aqui). Bispo colaborador da DAR (2026). Lado IEAB da cisão (continuidade da Diocese do Recife na
-    IEAB). Bispo sufragâneo. Permaneceu na IEAB: assinou 'Não sairemos' (01/09/2004); manteve seu ministério sob
-    a supervisão especial (16/09/2004); nomeado Autoridade Eclesiástica da diocese (Resolução 002/2005, 22/02/2005).
-    Fim do vínculo com a diocese não informado; em 2017 'retornou ao Recife' para assumir a Paróquia da Trindade.
+    Bispo sufragâneo. Permaneceu na IEAB: assinou 'Não sairemos' (01/09/2004); manteve seu ministério sob a supervisão
+    especial (16/09/2004); nomeado Autoridade Eclesiástica da diocese (Resolução 002/2005, 22/02/2005). Fim do vínculo
+    com a diocese não informado; em 2017 'retornou ao Recife' para assumir a Paróquia da Trindade. Bispo sufragâneo
+    da Diocese Anglicana do Recife em 2004; signatário da carta da Câmara dos Bispos de 14/11/2005. Autoridade eclesiástica
+    nomeada pelo primaz para a Diocese do Recife durante a crise de 2005; depois bispo emérito ativo na diocese
+    (pregou em ordenações de 2020–2023). Fim do papel: eleição de Sebastião Gameleira (data não verificada aqui).
+    Bispo colaborador da DAR (2026). Lado IEAB da cisão (continuidade da Diocese do Recife na IEAB). (sufragâneo)
   discrepancies:
   - field: start
-    value: '2002-04-28'
+    value: 2005-02
     sources:
+    - source: ieab-2004-decreto-recife
+      quote: supõe que o Bispo Sufragâneo Dom Filadelfo Oliveira, de acordo com sua prerrogativas
+    - source: ieab-2005-cbispos-cantuaria
+      quote: Dom Filadelfo Oliveira Neto
+    - source: alc-2005-03-06
+      quote: Bishop Oliveira Neto, recognized by the hierarchy as the head of Recife
+    - source: dar-clero-diocesano
+      quote: Revdmo. Dom Filadelfo Oliveira (Bispo Colaborador)
+    - source: ptwp-dar
+      quote: Filadelfo Oliveira Neto (Interino) - 2005 a 2006;
+    - source: ta-2005-10-01-ieab-recife
+      quote: under the ecclesiastical authority of the suffragan bishop Filadelfo Oliveira
     - source: costa2021
-      quote: Filadelfo foi escolhido e a sua sagração ocorreu em 28 de abril de 2002.
-      page: '190'
-    - source: costa2021
-      quote: Dom Filadelfo Oliveira Neto, ose (Bispo Sufragâneo da DAR)
-      page: '217'
+      quote: A missão do novo epíscopo era auxiliar o seu bispo diocesano, Robinson Cavalcanti
+      page: '106'
 - jurisdiction: ieab
   role: other
   role_description: bispo_interino
@@ -140,13 +184,29 @@ affiliations:
   start: '2008-08-29'
   end: '2017'
   end_reason: resignation
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: Sua instalação aconteceu na Catedral do Redentor em 29 de agosto do mesmo ano.
   - source: costa2021
     quote: >-
       foi eleito bispo coadjutor pelo Concílio extraordinário da DARJ, após a resignação do bispo Filadelfo Oliveira.
+  - source: costa2021
+    quote: Sua instalação aconteceu na Catedral do Redentor em 29 de agosto do
+    page: '111'
+  - source: costa2021
+    quote: após a resignação do bispo Filadelfo Oliveira.
+    page: '117'
+  discrepancies:
+  - field: end
+    value: '2016'
+    sources:
+    - source: costa2021
+      quote: Sua instalação aconteceu na Catedral do Redentor em 29 de agosto do
+      page: '111'
+    - source: costa2021
+      quote: após a resignação do bispo Filadelfo Oliveira.
+      page: '117'
 - jurisdiction: ieab-dar
   role: bishop
   start: '2017'
@@ -306,6 +366,28 @@ events:
     quote: >-
       The diocesan synod, under the ecclesiastical authority of the suffragan bishop Filadelfo Oliveira as well
       as the decisions and resolutions taken there were considered legitimate and valid by the court.
+- type: other
+  date: '2001-12-07'
+  description: Filadelfo Oliveira Neto eleito bispo sufragâneo da Diocese Anglicana do Recife
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      No ano seguinte, em 07 de dezembro de 2001, Filadelfo Oliveira Neto102 foi eleito Bispo Sufragâneo da Diocese
+      Anglicana do Recife.
+    page: '106'
+- type: resignation
+  date: '2016-11-02'
+  description: >-
+    Concílio extraordinário da DARJ elege Eduardo Coelho Grillo bispo coadjutor, após a resignação de Filadelfo
+    Oliveira
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em 02 de novembro de 2016, o reverendo Eduardo Coelho Grillo117 foi eleito bispo coadjutor pelo Concílio extraordinário
+      da DARJ, após a resignação do bispo Filadelfo Oliveira.
+    page: '117'
 - type: other
   date: '1998'
   description: >-

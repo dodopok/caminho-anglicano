@@ -9,6 +9,9 @@ birth:
     quote: Natural da cidade de Nara no Japão, Hiroshi Ito nasceu em 07 de setembro de 1939.
   - source: costa2021
     quote: Faleceu em 15 de novembro de 2015
+  - source: costa2021
+    quote: Faleceu em 15 de novembro de 2015, sendo sepultado no cemitério da Paz, Morumbi.
+    page: '106'
 death:
   date: '2015-11-15'
   sources:
@@ -16,6 +19,9 @@ death:
     quote: Natural da cidade de Nara no Japão, Hiroshi Ito nasceu em 07 de setembro de 1939.
   - source: costa2021
     quote: Faleceu em 15 de novembro de 2015
+  - source: costa2021
+    quote: Faleceu em 15 de novembro de 2015, sendo sepultado no cemitério da Paz, Morumbi.
+    page: '106'
 wikidata: Q139501316
 biography: Nipo-brasileiro; bispo de Sao Paulo (2002-2006).
 sources:
@@ -26,14 +32,25 @@ sources:
 ordinations:
 - order: diaconate
   date: '1967'
-  jurisdiction: null
+  jurisdiction: ieab
   status: probable
   sources:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1967 - … Hiroshi Ito
     page: '371'
+  - source: costa2021
+    quote: Foi ordenado ao diaconato em 1967 e ao presbiterado em 1968
+    page: '106'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: '1968'
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: costa2021
+    quote: Foi ordenado ao diaconato em 1967 e ao presbiterado em 1968
+    page: '106'
 - order: episcopate
   date: '2002-07-28'
   place: Catedral Anglicana de Sao Paulo
@@ -67,6 +84,19 @@ ordinations:
       (Diocese de Bor, Sudão).
   - source: wp-pt-hiroshi
     quote: Foi ordenado e instalado Bispo Diocesano da DASP em 28 de julho de 2002.
+  - source: costa2021
+    quote: Foi sagrado em 28 de Julho de 2002, na Catedral Anglicana de São Paulo
+    page: '106'
+  - source: costa2021
+    quote: >-
+      Foi o Bispo Sagrante, o Primaz do Brasil, Glauco Soares de Lima. Como co-sagrantes estiveram presentes os
+      bispos Edmund Knox Sherril (Emérito do Rio de Janeiro); Sumiu Takatsu (Emérito de São Paulo); Almir dos Santos
+      (Diocesano de Brasília); Jubal Pereira Neves (Diocesano de Santa Maria); Orlando Santos de Oliveira (Diocesano
+      de Porto Alegre); Celso Franco de Oliveira (Diocesano do Rio de Janeiro); Sebastião Armando Gamaleira Soares
+      (Diocesano de Pelotas); Naudal Alves Gomes (Sufragâneo de Santa Maria); Mark Sisk (Diocese de Nova York);
+      Jintaro Ueda (Diocese de Tokyo); Fernando Soares (Igreja Lusitana, Portugal); e Nathaniel Garang (Diocese
+      de Bor, Sudão).
+    page: '106'
   notes: Eleito em 06/04/2002.
 affiliations:
 - jurisdiction: ieab
@@ -74,10 +104,21 @@ affiliations:
   diocese: ieab-dasp
   start: '2002-07-28'
   end: '2006'
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: 2002-2006 – Hiroshi Ito
+  - source: costa2021
+    quote: sendo substituído pelo bispo Hiroshi Ito.
+    page: '99'
+  discrepancies:
+  - field: end
+    value: '2007'
+    sources:
+    - source: costa2021
+      quote: sendo substituído pelo bispo Hiroshi Ito.
+      page: '99'
+  notes: Sucedido por Roger Bird (eleito em 7/6/2007).
 - jurisdiction: ieab-dasp
   role: diocesan_bishop
   end: '2007'
@@ -87,3 +128,14 @@ affiliations:
     quote: >-
       exerceu o episcopado na Diocese Anglicana de São Paulo (IEAB) até 2012, sucedendo o Bispo Hiroshi Ito.
     page: '96'
+events:
+- type: other
+  date: '2002-04-06'
+  description: Hiroshi Ito eleito bispo diocesano de São Paulo em Concílio Extraordinário
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      durante o Concílio Extraordinário ocorrido em 06 de Abril de 2002, o reverendo Hiroshi Ito100 foi eleito o
+      novo bispo diocesano.
+    page: '106'

@@ -36,6 +36,9 @@ founded:
       e tendo como consagrantes o arcebispo colombiano Victor Manuel Cruz-Blanco e o bispo dom Rafael Ribeiro Campos,
       abade da Abadia Cisterciense S. Raphael.
     page: '154'
+  - source: costa2021
+    quote: Após deixar o Catolicismo Romano, a Diocese Anglicana foi erigida em 09 de janeiro de 2015
+    page: '139'
 description: >-
   Diocese continuante erigida em 9/1/2015, em Votorantim (SP), em torno do ex-padre greco-melquita Theodoro A. C.
   de Oliveira; filiada à 'Província Anglicana Cristo Salvador'; tem um distrito missionário no Chile. O sucessor,
@@ -49,3 +52,14 @@ sources:
   quote: >-
     A nova denominação apresenta-se como parte do Movimento Anglicano Continuante, filiada à Província Anglicana
     Cristo Salvador.
+relations:
+- type: member_of
+  target: pacsalvador
+  date: null
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      A nova denominação apresenta-se como parte do Movimento Anglicano Continuante, filiada à Província Anglicana
+      Cristo Salvador.
+    page: '139'

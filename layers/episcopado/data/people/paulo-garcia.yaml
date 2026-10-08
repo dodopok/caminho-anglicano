@@ -322,6 +322,18 @@ affiliations:
       também foi fundador. De volta a São Paulo, em 1973, auxiliou na Paróquia Episcopal da Trindade
   notes: 'Datas aproximadas: de 1970 (ordenação) até a ida a Recife em março de 1975.'
 - jurisdiction: iecb
+  role: bishop
+  start: '2002'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: sendo eleito o seu
+    page: '40'
+  - source: costa2021
+    quote: primeiro bispo. Esta Igreja tem a sua sede na Catedral da Santíssima Trindade
+    page: '135'
+  notes: Fundador e primeiro bispo; chamado 'arcebispo brasileiro' em 2019. Data da sagração não informada.
+- jurisdiction: iecb
   role: founder
   start: 2002-10
   status: probable
@@ -403,6 +415,18 @@ affiliations:
       na Catedral da Trindade
     page: '174'
   notes: '''estabelecida através do arcebispo Paulo Ruiz Garcia''; situação em 2025.'
+- jurisdiction: ieab
+  role: other
+  role_description: deão
+  end: 2002-09
+  end_reason: schism
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      quando o reverendo Paulo Garcia, então deão da Catedral da Santíssima Trindade, rompeu com a Diocese e a Província.
+    page: '108'
+  notes: 'Cargo: Deão da Catedral da Santíssima Trindade, Recife.'
 events:
 - type: other
   date: 2002-10
@@ -519,6 +543,23 @@ events:
       em 2024, dom Paulo Garcia anunciou a escolha do bispo Frederico Bastos para sucedê-lo na primazia da Igreja
       e na liderança plena da IECB, passando a assumir a Catedral da Trindade.
     page: '63'
+- type: other
+  date: 2002-09
+  description: >-
+    'Pequena Crise do Recife': o deão Paulo Garcia rompe com a Diocese e a Província levando a comunidade e o templo
+    da Catedral da Santíssima Trindade, e funda a Igreja Episcopal Carismática do Brasil
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Em setembro de 2002, ocorreu o que chamamos de “Pequena Crise do Recife”105, quando o reverendo Paulo Garcia,
+      então deão da Catedral da Santíssima
+    page: '108'
+  - source: costa2021
+    quote: >-
+      o deão filiou-se à outra Comunhão Internacional, fundando a Igreja Episcopal Carismática do Brasil (IECB),
+      tornando-se, posteriormente, o seu primeiro bispo
+    page: '108'
 - type: other
   date: 1985/2000
   description: >-

@@ -7,6 +7,7 @@ aliases:
 - Dom Plínio Simões
 - Plinio L. Simoes
 - Plínio L. Simões
+- Plínio Simões
 birth:
   date: '1915-07-08'
   sources:
@@ -23,9 +24,21 @@ birth:
   - source: kickhofel-1995
     quote: Nasceu em Cachoeira do Sul (RS) em 8 de julho de 1915
     page: '256'
+  - source: costa2021
+    quote: Plínio Lauer Simões nasceu em Cachoeira do Sul (RS), em 08 de julho de 1915.
+    page: '73'
+  - source: costa2021
+    quote: Faleceu em 06 de julho de 1994.
+    page: '73'
 death:
-  date: '1994'
+  date: '1994-07-06'
   sources:
+  - source: costa2021
+    quote: Plínio Lauer Simões nasceu em Cachoeira do Sul (RS), em 08 de julho de 1915.
+    page: '73'
+  - source: costa2021
+    quote: Faleceu em 06 de julho de 1994.
+    page: '73'
   - source: kickhofel-1995
     quote: Exerceu essas funções até o final de 1983, quando se aposentou. Faleceu em 1994.
     page: '259'
@@ -47,7 +60,7 @@ sources:
 ordinations:
 - order: diaconate
   date: '1941'
-  jurisdiction: null
+  jurisdiction: dmsb
   status: probable
   sources:
   - source: kickhofel-1995
@@ -58,6 +71,10 @@ ordinations:
       Cursou teologia no Seminário Teológico de Porto Alegre e foi ordenado ao diaconato em 1941 e ao presbiterado
       em 1943.
     page: '256'
+  - source: costa2021
+    quote: >-
+      Cursou Teologia no Seminário de Porto Alegre, sendo ordenado ao diaconato em 1941 e ao presbiterato em 1943.
+    page: '73'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
@@ -72,6 +89,10 @@ ordinations:
       Cursou teologia no Seminário Teológico de Porto Alegre e foi ordenado ao diaconato em 1941 e ao presbiterado
       em 1943.
     page: '256'
+  - source: costa2021
+    quote: >-
+      Cursou Teologia no Seminário de Porto Alegre, sendo ordenado ao diaconato em 1941 e ao presbiterato em 1943.
+    page: '73'
   notes: 'Ordenante não informado (bispo diocesano: W. M. M. Thomas; sufragâneo: Pithan).'
 - order: episcopate
   date: '1956-03-04'
@@ -82,7 +103,7 @@ ordinations:
   co_consecrators:
   - egmont-krischke
   - john-boyd-bentley
-  status: confirmed
+  status: contested
   sources:
   - source: wit-1956-01-26
     quote: >-
@@ -108,10 +129,21 @@ ordinations:
       Simões foi sagrado no dia quatro de março de 1956, no Rio de Janeiro, e recebeu o governo da diocese no concílio
       daquele ano realizado na Paróquia do Nazareno, em Santana do Livramento.
     page: '256'
+  - source: costa2021
+    quote: Em 04 de março de 1956 foi sagrado bispo da Diocese Sul-Ocidental.
+    page: '73'
+  discrepancies:
+  - field: office
+    value: diocesan
+    sources:
+    - source: costa2021
+      quote: Em 04 de março de 1956 foi sagrado bispo da Diocese Sul-Ocidental.
+      page: '73'
   notes: >-
     Anúncio (Witness 26/01/1956) e relato pós-evento (Living Church 01/04/1956) concordam. Apresentantes: Daniel
     Ivor Evans (bispo anglicano da Argentina e Falklands) e Krischke (substituindo Pithan, doente); Krischke também
     pregador. Presbíteros assistentes: J. Timóteo da Silva e Nemésio de Almeida; Edmund K. Sherrill foi registrador-adjunto.
+    Sagrantes não informados.
 affiliations:
 - jurisdiction: dmcb
   role: clergy
@@ -158,6 +190,7 @@ affiliations:
   role: diocesan_bishop
   diocese: southwestern-brazil
   start: '1956-03-04'
+  end: '1976'
   status: confirmed
   sources:
   - source: wit-1955-09-29
@@ -166,6 +199,13 @@ affiliations:
     quote: >-
       Bishop Plinio Simoes of Southwestern Brazil and Bishop Edmund Knox Sherrill of Central Brazil expressed their
       thanks to the House
+  - source: costa2021
+    quote: Em 04 de março de 1956 foi sagrado bispo da Diocese Sul-Ocidental.
+    page: '73'
+  - source: costa2021
+    quote: sete anos, substituindo Plínio Lauer Simões em seu longo episcopado.
+    page: '88'
+  notes: Sucedido por Olavo Ventura Luiz em 1976; a partir de 1965 a diocese pertence à IEAB.
 - jurisdiction: ieab
   role: primate
   start: '1971'
@@ -268,3 +308,15 @@ events:
       Plínio Lauer Simões, que foi o primeiro bispo a propor que a igreja estudasse a possibilidade de ordenar mulheres,
       durante o seu episcopado na Diocese Sul Ocidental.
     page: '319'
+- type: other
+  date: '1949'
+  description: >-
+    Concílio de 1949 indica Egmont Machado Krischke para o episcopado (48 votos; Plínio Lauer Simões 20, Orlando
+    Batista 16, Virgínio Pereira Neves 15, Henrique Todt Júnior 13)
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Os mais votados foram Egmont Machado Krischke, com 48 votos; Plínio Lauer Simões, com 20, Orlando Batista,
+      com 16; Virgínio Pereira Neves, com 15; e Henrique Todt Júnior, com 13 votos.
+    page: '72'
