@@ -102,6 +102,7 @@
             @open="openFicha"
             @reset-filters="resetFilters"
             @counts="(n, e) => (counts = [n, e])"
+            @range="(y) => (firstYear = y)"
           />
           <template #fallback>
             <div class="flex h-full items-center justify-center text-sm text-ep-muted">Carregando o explorador…</div>
@@ -298,12 +299,22 @@ const STEPS = [
 const selected = computed(() => (typeof route.query.no === 'string' && route.query.no ? route.query.no : null))
 const fichaId = computed(() => (typeof route.query.ficha === 'string' && /^[pj]:/.test(route.query.ficha) ? route.query.ficha : null))
 const depth = ref(Number(route.query.prof ?? 2) || 2)
+/** Primeiro ano entre os nós que os filtros atuais deixam à vista (o grafo informa a cada redesenho). */
+const firstYear = ref<number | null>(null)
 const yearRange = computed(() => {
   const years = graph.value.nodes.map((n) => n.startYear).filter((y): y is number => typeof y === 'number')
-  return { min: years.length ? Math.min(...years) : 1780, max: new Date().getFullYear() }
+  const max = new Date().getFullYear()
+  return { min: Math.min(firstYear.value ?? (years.length ? Math.min(...years) : 1780), max - 1), max }
 })
 const yearInput = ref<number>(Number(route.query.ano) || new Date().getFullYear())
 const year = computed(() => (yearInput.value >= yearRange.value.max ? null : yearInput.value))
+// A faixa acompanha os filtros: se o ano escolhido ficou antes do primeiro dado, sobe junto.
+watch(
+  () => yearRange.value.min,
+  (min) => {
+    if (yearInput.value < min) yearInput.value = min
+  }
+)
 
 const HIDE_KEYS = {
   pessoas: (v: boolean) => (filters.value.showPeople = v),

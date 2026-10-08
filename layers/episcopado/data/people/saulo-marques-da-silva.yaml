@@ -2,39 +2,62 @@
 id: saulo-marques-da-silva
 name: Saulo Marques da Silva
 full_name: Saulo Marques da Silva
-biography: Primeiro clérigo instalado em Brasília (1960).
+aliases:
+- SILVA, SAULO MARQUES da
+birth:
+  date: '1926-03-25'
+  sources:
+  - source: cd1965
+    quote: b Rio Grande RGS Braz 25 Mar 26
+  - source: cd1968
+    quote: SI LVA, Saulo Marques da (CBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em Rio Grande,
+  RGS, Brasil (1926-03-25). Ordenado diácono em fev/1950 e presbítero em dez/1950. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
 sources:
-- source: costa2021
-  quote: >-
-    presidido pelo bispo Sherrill e o reverendo Saulo Marques da Silva, que foi instalado como o primeiro clérigo
-    da cidade.
-  page: '79'
+- source: cd1965
+  quote: b Rio Grande RGS Braz 25 Mar 26
+- source: cd1968
+  quote: SI LVA, Saulo Marques da (CBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1950'
-  jurisdiction: ieab
-  status: probable
+  date: 1950-02
+  jurisdiction: dmcb
+  ordained_by: louis-chester-melcher
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Feb 50 P Dec 50 Bp Melcher
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1950 - … Saulo Marques da Silva
     page: '370'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
-affiliations:
-- jurisdiction: ieab
-  role: clergy
-  start: '1950'
-  status: probable
+    Ordenante no diretório: 'Bp Melcher'. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1950-12
+  jurisdiction: dmcb
+  ordained_by: louis-chester-melcher
+  status: confirmed
   sources:
-  - source: kickhofel-1995
-    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1950 - … Saulo Marques da Silva
-    page: '370'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  - source: cd1965
+    quote: D Feb 50 P Dec 50 Bp Melcher
+  notes: 'Ordenante no diretório: ''Bp Melcher''.'
+affiliations:
 - jurisdiction: dmcb
   role: clergy
-  start: '1960-06-05'
-  status: probable
+  start: '1950'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: SILVA, SAULO MARQUES da (CBra)
+  - source: cd1965
+    quote: D Feb 50 P Dec 50 Bp Melcher
+  - source: cd1968
+    quote: SI LVA, Saulo Marques da (CBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: >-
       Outra meta do bispo era estabelecer a igreja em Brasília, o que fez em 1960, quando mandou à nova capital
@@ -52,8 +75,46 @@ affiliations:
       Sherrill e o reverendo Saulo Marques da Silva, que foi instalado como o primeiro clérigo da cidade.
     page: '79'
   notes: >-
-    Enviado por Sherrill para iniciar o trabalho da igreja em Brasília (1960). Primeiro pároco residente em Brasília
-    (Paróquia da Ressurreição). Local/função: Brasília.
+    Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete. Enviado por Sherrill
+    para iniciar o trabalho da igreja em Brasília (1960). Primeiro pároco residente em Brasília (Paróquia da Ressurreição).
+    Local/função: Brasília.
+  discrepancies:
+  - field: start
+    value: '1960'
+    sources:
+    - source: kickhofel-1995
+      quote: >-
+        Outra meta do bispo era estabelecer a igreja em Brasília, o que fez em 1960, quando mandou à nova capital
+        o rev. Saulo Marques da Silva para iniciar o trabalho.
+      page: '275'
+    - source: kickhofel-1995
+      quote: >-
+        do pastorado do rev. Saulo Marques da Silva, que foi o primeiro pároco residente na nova capital nacional.
+        O trabalho da Igreja Episcopal em Brasília começou com a própria cidade. O primeiro culto foi realizado
+        no dia 5 de junho de 1960, domingo de Pentecostes.
+      page: '305'
+  - field: start
+    value: '1960-06-05'
+    sources:
+    - source: costa2021
+      quote: >-
+        Em 05 de junho de 1960, foi celebrado o primeiro ofício anglicano na cidade de Brasília, presidido pelo
+        bispo Sherrill e o reverendo Saulo Marques da Silva, que foi instalado como o primeiro clérigo da cidade.
+      page: '79'
+- jurisdiction: ieab
+  role: clergy
+  start: '1950'
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: SI LVA, Saulo Marques da (CBra) Trans to Brazil Ch 25 Apr 65.
+  - source: kickhofel-1995
+    quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1950 - … Saulo Marques da Silva
+    page: '370'
+  notes: >-
+    Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
 events:
 - type: other
   date: '1970'

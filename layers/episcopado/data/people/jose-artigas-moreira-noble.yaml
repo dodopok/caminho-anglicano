@@ -2,24 +2,74 @@
 id: jose-artigas-moreira-noble
 name: José Artigas Moreira Noble
 full_name: José Artigas Moreira Noble
+aliases:
+- MOREIRA NOBLE, Jose Artigas
+birth:
+  date: '1933-02-15'
+  sources:
+  - source: cd1965
+    quote: b Bage RGS Brazil 15 Feb 33
+  - source: cd1968
+    quote: MOREIRA NOBLE, Jose Artigas (SwBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Sudoeste do Brasil (SwBra) segundo o Clerical Directory 1965. Nascido em Bagé,
+  RGS, Brasil (1933-02-15). Ordenado diácono em fev/1962 e presbítero em nov/1965. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Bage RGS Brazil 15 Feb 33
+- source: cd1968
+  quote: MOREIRA NOBLE, Jose Artigas (SwBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1962'
-  jurisdiction: ieab
-  status: probable
+  date: 1962-02
+  jurisdiction: dmsob
+  ordained_by: plinio-lauer-simoes
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Feb 62 P Nov 65 Bp Simoes
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1962 - … José Artigas Moreira Noble
     page: '371'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Simoes'. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1965-11
+  jurisdiction: dmsob
+  ordained_by: plinio-lauer-simoes
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Feb 62 P Nov 65 Bp Simoes
+  notes: 'Ordenante no diretório: ''Bp Simoes''.'
 affiliations:
+- jurisdiction: dmsob
+  role: clergy
+  start: '1962'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: MOREIRA NOBLE, Jose Artigas (SwBra)
+  - source: cd1965
+    quote: D Feb 62 P Nov 65 Bp Simoes
+  - source: cd1968
+    quote: MOREIRA NOBLE, Jose Artigas (SwBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1962'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: MOREIRA NOBLE, Jose Artigas (SwBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1962 - … José Artigas Moreira Noble
     page: '371'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (SwBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

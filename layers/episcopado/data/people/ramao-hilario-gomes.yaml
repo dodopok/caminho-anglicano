@@ -2,6 +2,24 @@
 id: ramao-hilario-gomes
 name: Ramão Hilário Gomes
 full_name: Ramão Hilário Gomes
+aliases:
+- GOMES, RAMAO HILARIO
+birth:
+  date: '1892-08-31'
+  sources:
+  - source: cd1965
+    quote: GOMES, RAMAO HILARIO (SwBra) born 31 Aug 92-died 9 May
+death:
+  date: '1964-05-09'
+  sources:
+  - source: cd1965
+    quote: GOMES, RAMAO HILARIO (SwBra) born 31 Aug 92-died 9 May
+biography: >-
+  Clérigo do Distrito Missionário do Sudoeste do Brasil (SwBra) segundo o Clerical Directory 1965. Nascido em 1892-08-31.
+  Consta na necrologia da edição de 1965 (falecimento em 1964-05-09).
+sources:
+- source: cd1965
+  quote: GOMES, RAMAO HILARIO (SwBra) born 31 Aug 92-died 9 May
 ordinations:
 - order: diaconate
   date: '1944'
@@ -23,3 +41,12 @@ affiliations:
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1944 - … Ramão Hilário Gomes
     page: '370'
   notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: dmsob
+  role: clergy
+  end: '1964-05-09'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: GOMES, RAMAO HILARIO (SwBra) born 31 Aug 92-died 9 May
+  notes: Sem dados de ordenação (apenas necrologia).

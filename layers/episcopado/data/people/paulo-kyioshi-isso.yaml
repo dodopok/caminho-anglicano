@@ -2,6 +2,17 @@
 id: paulo-kyioshi-isso
 name: Paulo Kyioshi Isso
 full_name: Paulo Kyioshi Isso
+aliases:
+- ISSO, Paulo Kiyoshi
+- Paulo Kiyoshi Isso
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Transferido para a
+  Igreja Episcopal do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: ISSO, Paulo Kiyoshi (CBra)
+- source: cd1968
+  quote: ISSO, Paulo Kiyoshi (CBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
   date: '1932'
@@ -17,9 +28,29 @@ affiliations:
 - jurisdiction: ieab
   role: clergy
   start: '1932'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: ISSO, Paulo Kiyoshi (CBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1932 - … Paulo Kyioshi Isso
     page: '369'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: dmcb
+  role: clergy
+  start: '1962'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: ISSO, Paulo Kiyoshi (CBra)
+  - source: cd1965
+    quote: Coadj Igreja Redentor 62
+  - source: cd1968
+    quote: ISSO, Paulo Kiyoshi (CBra) Trans to Brazil Ch 25 Apr 65.
+  notes: >-
+    Sem dados de ordenação no verbete (suplemento); início = ano do primeiro cargo ("Coadj Igreja Redentor 62-").

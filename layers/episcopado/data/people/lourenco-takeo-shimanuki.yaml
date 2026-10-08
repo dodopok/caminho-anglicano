@@ -1,35 +1,60 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: lourenco-takeo-shimanuki
 name: Lourenço Takeo Shimanuki
+full_name: Lourenço Takeo Shimanuki
 aliases:
 - Lourenço Tadeu Shimanuki
+- SHIMANUKI, LOURENCO TAKEO
+birth:
+  date: '1904-10-20'
+  sources:
+  - source: cd1965
+    quote: Tokyo Jap 20 Oct 04 s Shika & Rev Paul Hiodayu Shimanuki
+  - source: cd1968
+    quote: SHIMANUKI, Lourenco Takeo (CBra) Trans to Brazil Ch 25 Apr 65.
 biography: >-
-  Presbítero nipo-brasileiro formado no Colégio Cruzeiro do Sul e no seminário de Porto Alegre, ordenado presbítero
-  em janeiro de 1934; enviado ao Japão em 1963.
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em Tóquio,
+  Japão (1904-10-20). Ordenado diácono em nov/1932 e presbítero em jan/1934. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
 sources:
-- source: ens-xi-12
-  quote: >-
-    In January of 1934, he was ordained priest in the Episcopal Church of Brazil, and has since served the Church
-    in the state of Sao Paulo.
+- source: cd1965
+  quote: Tokyo Jap 20 Oct 04 s Shika & Rev Paul Hiodayu Shimanuki
+- source: cd1968
+  quote: SHIMANUKI, Lourenco Takeo (CBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1932'
-  jurisdiction: null
-  status: probable
+  date: 1932-11
+  jurisdiction: dmsb
+  ordained_by: william-matthews-merrick-thomas
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: Theol Sch Porto Alegre 32. D Nov 32 P Jan 34 Bp
+  - source: cd1965
+    quote: W M M Thomas, m (1) 25 Jan 36
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1932 - … Lourenço Tadeu Shimanuki
     page: '369'
   notes: >-
+    Ordenante no diretório: 'Bp W M M Thomas'. Colunas do OCR intercaladas: o nome do ordenante continua duas linhas
+    abaixo do "Bp". O verbete é do distrito criado em 1949; antes disso o clero era do Distrito do Sul do Brasil.
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 - order: presbyterate
   date: 1934-01
   jurisdiction: dmsb
-  status: probable
+  ordained_by: william-matthews-merrick-thomas
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: Theol Sch Porto Alegre 32. D Nov 32 P Jan 34 Bp
+  - source: cd1965
+    quote: W M M Thomas, m (1) 25 Jan 36
   - source: ens-xi-12
     quote: In January of 1934, he was ordained priest in the Episcopal Church of Brazil
-  notes: Ordenante não informado; o bispo diocesano à época era W. M. M. Thomas.
+  notes: >-
+    Ordenante no diretório: 'Bp W M M Thomas'. Colunas do OCR intercaladas: o nome do ordenante continua duas linhas
+    abaixo do "Bp". O verbete é do distrito criado em 1949; antes disso o clero era do Distrito do Sul do Brasil.
+    Ordenante não informado; o bispo diocesano à época era W. M. M. Thomas.
 affiliations:
 - jurisdiction: dmsb
   role: clergy
@@ -38,3 +63,25 @@ affiliations:
   sources:
   - source: ens-xi-12
     quote: has since served the Church in the state of Sao Paulo.
+- jurisdiction: dmcb
+  role: clergy
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: SHIMANUKI, LOURENCO TAKEO (CBra)
+  - source: cd1965
+    quote: Theol Sch Porto Alegre 32. D Nov 32 P Jan 34 Bp
+  - source: cd1968
+    quote: SHIMANUKI, Lourenco Takeo (CBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
+- jurisdiction: ieab
+  role: clergy
+  status: confirmed
+  sources:
+  - source: cd1968
+    quote: SHIMANUKI, Lourenco Takeo (CBra) Trans to Brazil Ch 25 Apr 65.
+  notes: >-
+    Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965.

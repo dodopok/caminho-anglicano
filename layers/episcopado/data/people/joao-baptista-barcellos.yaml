@@ -1,14 +1,29 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: joao-baptista-barcellos
 name: João Baptista Barcellos
+full_name: João Baptista Barcellos
 aliases:
+- CUNHA, JOAO BAPTISTA BARCELLOS da
+- João Baptista Barcellos da Cunha
 - João Batista Barcellos da Cunha
 - João Batista Barcelos da Cunha
 - Rev. João Batista Barcelos
-biography: Presbítero brasileiro em Porto Alegre, homenageado em 1941 por 35 anos de ministério.
+birth:
+  date: '1883-06-24'
+  sources:
+  - source: cd1965
+    quote: CUNHA, JOAO BAPTISTA BARCELLOS da (SBra) born 24 Jun 83-died 2 Nov 63
+death:
+  date: '1963-11-02'
+  sources:
+  - source: cd1965
+    quote: CUNHA, JOAO BAPTISTA BARCELLOS da (SBra) born 24 Jun 83-died 2 Nov 63
+biography: >-
+  Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em 1883-06-24.
+  Consta na necrologia da edição de 1965 (falecimento em 1963-11-02).
 sources:
-- source: wit-1941-12-04
-  quote: Rev. Joao Baptista Barcellos and Rev. George U. Krischke, both of Port Alegre
+- source: cd1965
+  quote: CUNHA, JOAO BAPTISTA BARCELLOS da (SBra) born 24 Jun 83-died 2 Nov 63
 ordinations:
 - order: diaconate
   date: '1906'
@@ -21,6 +36,15 @@ ordinations:
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
 affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  end: '1963-11-02'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: CUNHA, JOAO BAPTISTA BARCELLOS da (SBra) born 24 Jun 83-died 2 Nov 63
+  notes: Sem dados de ordenação (apenas necrologia).
 - jurisdiction: dmsb
   role: clergy
   diocese: porto-alegre

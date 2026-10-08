@@ -2,6 +2,24 @@
 id: oliveiros-muniz-dos-reis
 name: Oliveiros Muniz dos Reis
 full_name: Oliveiros Muniz dos Reis
+aliases:
+- REIS, OLIVEIROS MUNIZ dos
+birth:
+  date: '1884-05-03'
+  sources:
+  - source: cd1965
+    quote: REIS, OLIVEIROS MUNIZ dos (SBra) born 3 May 84-died 21
+death:
+  date: '1961-09-21'
+  sources:
+  - source: cd1965
+    quote: REIS, OLIVEIROS MUNIZ dos (SBra) born 3 May 84-died 21
+biography: >-
+  Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em 1884-05-03.
+  Consta na necrologia da edição de 1965 (falecimento em 1961-09-21).
+sources:
+- source: cd1965
+  quote: REIS, OLIVEIROS MUNIZ dos (SBra) born 3 May 84-died 21
 ordinations:
 - order: diaconate
   date: '1951'
@@ -23,3 +41,12 @@ affiliations:
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1951 - … Oliveiros Muniz dos Reis
     page: '370'
   notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: dmsb
+  role: clergy
+  end: '1961-09-21'
+  end_reason: death
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: REIS, OLIVEIROS MUNIZ dos (SBra) born 3 May 84-died 21
+  notes: Sem dados de ordenação (apenas necrologia).

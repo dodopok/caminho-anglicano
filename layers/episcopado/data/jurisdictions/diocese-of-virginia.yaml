@@ -1,12 +1,20 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: diocese-of-virginia
 name: Diocese of Virginia
+aliases:
+- Virginia
 type: diocese
+tradition: anglican
+country: US
 relations:
 - type: part_of
   target: tec
   status: confirmed
   sources:
+  - source: cd1968
+    quote: ELLSWORTH, John Gardner(Va)SStephen's Ch, 6004 Three
+  - source: cd1968
+    quote: Bp Krischke, Trans to Brazil Ch Apr 65, Rec Jan 66.
   - source: stubbs-1897
     quote: James Madison. Virginia; d. 1812.
   - source: perry-1895

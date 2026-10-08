@@ -2,24 +2,74 @@
 id: andre-pinheiro-vargas
 name: André Pinheiro Vargas
 full_name: André Pinheiro Vargas
+aliases:
+- VARGAS, ANDRE PINHEIRO
+birth:
+  date: '1913-05-03'
+  sources:
+  - source: cd1965
+    quote: b 3rd District of Triunfo 3 May 13
+  - source: cd1968
+    quote: VARGAS, Andre Pinheiro (SBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em 3º Distrito
+  de Triunfo, RGS, Brasil (1913-05-03). Ordenado diácono em dez/1952 e presbítero em jul/1962. Transferido para
+  a Igreja Episcopal do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b 3rd District of Triunfo 3 May 13
+- source: cd1968
+  quote: VARGAS, Andre Pinheiro (SBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1952'
-  jurisdiction: ieab
-  status: probable
+  date: 1952-12
+  jurisdiction: dmsb
+  ordained_by: athalicio-pithan
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Dec 52 Bp Pithan, P Jul 62 Bp Krischke
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1952 - … André Pinheiro Vargas
     page: '370'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Pithan'. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1962-07
+  jurisdiction: dmsb
+  ordained_by: egmont-krischke
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Dec 52 Bp Pithan, P Jul 62 Bp Krischke
+  notes: 'Ordenante no diretório: ''Bp Krischke''.'
 affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: '1952'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: VARGAS, ANDRE PINHEIRO (SBra)
+  - source: cd1965
+    quote: D Dec 52 Bp Pithan, P Jul 62 Bp Krischke
+  - source: cd1968
+    quote: VARGAS, Andre Pinheiro (SBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1952'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: VARGAS, Andre Pinheiro (SBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1952 - … André Pinheiro Vargas
     page: '370'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (SBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

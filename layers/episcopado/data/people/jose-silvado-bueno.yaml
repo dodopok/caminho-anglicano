@@ -2,24 +2,74 @@
 id: jose-silvado-bueno
 name: José Silvado Bueno
 full_name: José Silvado Bueno
+aliases:
+- BUENO, JOSE SILVADO
+birth:
+  date: '1894-05-30'
+  sources:
+  - source: cd1965
+    quote: b Mogymirim SP Brazil 30 May 94
+  - source: cd1968
+    quote: BUENO, Jose Silvado (CBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em Mogymirim
+  (Mogi Mirim), SP, Brasil (1894-05-30). Ordenado diácono em abr/1953 e presbítero em nov/1953. Transferido para
+  a Igreja Episcopal do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Mogymirim SP Brazil 30 May 94
+- source: cd1968
+  quote: BUENO, Jose Silvado (CBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1953'
-  jurisdiction: ieab
-  status: probable
+  date: 1953-04
+  jurisdiction: dmcb
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Apr 53 Bp Bentley for CBra P Nov 53 Bp Melcher
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1953 - … José Silvado Bueno
     page: '370'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Bentley for CBra for CBra'. Ordenante no diretório: "Bp Bentley" (bispo de fora
+    do Brasil, não identificado na base). Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1953-11
+  jurisdiction: dmcb
+  ordained_by: louis-chester-melcher
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Apr 53 Bp Bentley for CBra P Nov 53 Bp Melcher
+  notes: 'Ordenante no diretório: ''Bp Melcher''.'
 affiliations:
+- jurisdiction: dmcb
+  role: clergy
+  start: '1953'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: BUENO, JOSE SILVADO (CBra)
+  - source: cd1965
+    quote: D Apr 53 Bp Bentley for CBra P Nov 53 Bp Melcher
+  - source: cd1968
+    quote: BUENO, Jose Silvado (CBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1953'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: BUENO, Jose Silvado (CBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1953 - … José Silvado Bueno
     page: '370'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.

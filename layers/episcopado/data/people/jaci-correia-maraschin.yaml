@@ -2,27 +2,77 @@
 id: jaci-correia-maraschin
 name: Jaci Correia Maraschin
 full_name: Jaci Correia Maraschin
+aliases:
+- MARASCHIN, JACI CORREIA
+birth:
+  date: '1929-12-12'
+  sources:
+  - source: cd1965
+    quote: b Bage RGS Braz 12 Dec 29
+  - source: cd1968
+    quote: MARASCHIN, Jaci Correia (SBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Sul do Brasil (SBra) segundo o Clerical Directory 1965. Nascido em Bagé, RGS,
+  Brasil (1929-12-12). Ordenado diácono em nov/1953 e presbítero em ago/1954. Transferido para a Igreja Episcopal
+  do Brasil em 25/04/1965 (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b Bage RGS Braz 12 Dec 29
+- source: cd1968
+  quote: MARASCHIN, Jaci Correia (SBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1953'
-  jurisdiction: ieab
-  status: probable
+  date: 1953-11
+  jurisdiction: dmsb
+  ordained_by: egmont-krischke
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Nov 53 P Aug 54 Bp Krischke
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1953 - … Jaci Correia Maraschin
     page: '370'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Krischke'. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1954-08
+  jurisdiction: dmsb
+  ordained_by: egmont-krischke
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Nov 53 P Aug 54 Bp Krischke
+  notes: 'Ordenante no diretório: ''Bp Krischke''.'
 affiliations:
+- jurisdiction: dmsb
+  role: clergy
+  start: '1953'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: MARASCHIN, JACI CORREIA (SBra)
+  - source: cd1965
+    quote: D Nov 53 P Aug 54 Bp Krischke
+  - source: cd1968
+    quote: MARASCHIN, Jaci Correia (SBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1953'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: MARASCHIN, Jaci Correia (SBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1953 - … Jaci Correia Maraschin
     page: '370'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (SBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
 events:
 - type: other
   date: '1984-11-24'

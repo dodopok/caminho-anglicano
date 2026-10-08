@@ -2,24 +2,76 @@
 id: paulo-jose-krischke
 name: Paulo José Krischke
 full_name: Paulo José Krischke
+aliases:
+- KRISCHKE, Paulo Jose Duval Da Silva
+- Paulo Jose Duval da Silva Krischke
+birth:
+  date: '1938-05-19'
+  sources:
+  - source: cd1965
+    quote: b 19 May 38
+  - source: cd1968
+    quote: KRISCHKE, Paulo Jose Duval Da Silva (CBra) Trans to Brazil Ch 25 Apr 65.
+biography: >-
+  Clérigo do Distrito Missionário do Brasil Central (CBra) segundo o Clerical Directory 1965. Nascido em 1938-05-19.
+  Ordenado diácono em dez/1961 e presbítero em jun/1962. Transferido para a Igreja Episcopal do Brasil em 25/04/1965
+  (Clerical Directory 1968).
+sources:
+- source: cd1965
+  quote: b 19 May 38
+- source: cd1968
+  quote: KRISCHKE, Paulo Jose Duval Da Silva (CBra) Trans to Brazil Ch 25 Apr 65.
 ordinations:
 - order: diaconate
-  date: '1961'
-  jurisdiction: ieab
-  status: probable
+  date: 1961-12
+  jurisdiction: dmcb
+  ordained_by: egmont-krischke
+  status: confirmed
   sources:
+  - source: cd1965
+    quote: D Dec 61 Bp Krischke P Jun 62 Bp Boynton for SBra
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1961 - … Paulo José Krischke
     page: '371'
   notes: >-
-    Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    Ordenante no diretório: 'Bp Krischke'. Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato
+    (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: 1962-06
+  jurisdiction: dmcb
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: D Dec 61 Bp Krischke P Jun 62 Bp Boynton for SBra
+  notes: >-
+    Ordenante no diretório: 'Bp Boynton for SBra for SBra'. Ordenante no diretório: "Bp Boynton" (bispo de fora
+    do Brasil, não identificado na base).
 affiliations:
+- jurisdiction: dmcb
+  role: clergy
+  start: '1961'
+  end: '1965-04-25'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: KRISCHKE, Paulo Jose Duval Da Silva (CBra)
+  - source: cd1965
+    quote: D Dec 61 Bp Krischke P Jun 62 Bp Boynton for SBra
+  - source: cd1968
+    quote: KRISCHKE, Paulo Jose Duval Da Silva (CBra) Trans to Brazil Ch 25 Apr 65.
+  notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
 - jurisdiction: ieab
   role: clergy
   start: '1961'
-  status: probable
+  status: confirmed
   sources:
+  - source: cd1968
+    quote: KRISCHKE, Paulo Jose Duval Da Silva (CBra) Trans to Brazil Ch 25 Apr 65.
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1961 - … Paulo José Krischke
     page: '371'
-  notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+  notes: >-
+    Transferência do distrito missionário (CBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
+    Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
+    nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
