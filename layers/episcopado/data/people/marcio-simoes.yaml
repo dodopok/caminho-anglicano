@@ -12,38 +12,24 @@ ordinations:
 - order: diaconate
   date: '2008'
   jurisdiction: diocese-anglicana-recife
-  status: contested
+  status: confirmed
   sources:
   - source: dv-bispo
     quote: ordenado diácono e presbítero em 2008
   - source: cant-novas-igrejas-2024
     quote: Antes disso, já servia como ministro local desde 2002 e foi ordenado diácono e presbítero em 2008.
     page: '33'
-  discrepancies:
-  - field: jurisdiction
-    value: dar-iacs
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: Antes disso, já servia como ministro local desde 2002 e foi ordenado diácono e presbítero em 2008.
-      page: '33'
   notes: 'Ordenante não informado (bispo diocesano em 2008: Robinson Cavalcanti).'
 - order: presbyterate
   date: '2008'
   jurisdiction: diocese-anglicana-recife
-  status: contested
+  status: confirmed
   sources:
   - source: dv-bispo
     quote: ordenado diácono e presbítero em 2008
   - source: cant-novas-igrejas-2024
     quote: Antes disso, já servia como ministro local desde 2002 e foi ordenado diácono e presbítero em 2008.
     page: '33'
-  discrepancies:
-  - field: jurisdiction
-    value: dar-iacs
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: Antes disso, já servia como ministro local desde 2002 e foi ordenado diácono e presbítero em 2008.
-      page: '33'
 - order: episcopate
   date: '2017-06-10'
   jurisdiction: diocese-anglicana-recife
@@ -76,17 +62,6 @@ ordinations:
     quote: O bispo Márcio Simões foi sagrado em 10 de junho de 2017.
     page: '33'
   discrepancies:
-  - field: jurisdiction
-    value: dar-iacs
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        Em 2017, foram sagrados dois bispos para liderar novas dioceses: Márcio Simões, para a Diocese de Vitória
-        de Santo Antão e Márcio Meira, para a Diocese de João Pessoa.
-      page: '31'
-    - source: cant-novas-igrejas-2024
-      quote: O bispo Márcio Simões foi sagrado em 10 de junho de 2017.
-      page: '33'
   - field: office
     value: diocesan
     sources:
@@ -120,8 +95,12 @@ affiliations:
     quote: Márcio Simões (Paróquia da Ressurreição - Vitória de S anto Antão -PE )
   - source: dar-2012-eleicao-uchoa
     quote: O Presidente do Conselho Diocesano, Rev. Márcio Simões , fez a abertura solene do Sínodo
+  - source: cant-novas-igrejas-2024
+    quote: O presidente do Conselho Diocesano, reverendo Márcio Simões, ficou encarregado do processo
+    page: '30'
   notes: >-
-    Arcediago e presidente do Conselho Diocesano em 2012. Início = ano da ordenação (2008, já registrada).
+    Arcediago e presidente do Conselho Diocesano em 2012. Início = ano da ordenação (2008, já registrada). Presidente
+    do Conselho Diocesano em 2012.
 - jurisdiction: iab
   role: diocesan_bishop
   diocese: iab-diocese-vitoria
@@ -160,14 +139,6 @@ affiliations:
     Local: Vitória de Santo Antão-PE. Postulante ao ministério ordenado na captura de out/2007; ordenado diácono
     e presbítero em 2008 (já registrado). Também eram postulantes Márcia Maria da Silva Coelho, Maria das Dores
     Câmara de Brito, José Fernandes Filho, Josean da Silva e Ivaldo Sales.
-- jurisdiction: dar-iacs
-  role: clergy
-  status: probable
-  sources:
-  - source: cant-novas-igrejas-2024
-    quote: O presidente do Conselho Diocesano, reverendo Márcio Simões, ficou encarregado do processo
-    page: '30'
-  notes: Presidente do Conselho Diocesano em 2012.
 events:
 - type: other
   date: '2017-05-06'

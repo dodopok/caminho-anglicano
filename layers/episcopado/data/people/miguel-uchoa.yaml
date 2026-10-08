@@ -149,14 +149,6 @@ ordinations:
       quote: >-
         163a. Miguel Ângelo de Andrade Uchôa (2012-atualmente) que, em 2012, foi sagrado bispo por Roger Ames e
         se tornou o primaz do que viria a ser, seis anos depois, uma nova província: a Igreja Anglicana do Brasil.
-  - field: jurisdiction
-    value: dar-iacs
-    sources:
-    - source: cant-novas-igrejas-2024
-      quote: >-
-        o reverendo Miguel Uchôa, escolhido para ser o novo bispo, foi sagrado na Paróquia Anglicana do Espírito
-        Santo, em Jaboatão dos Guararapes, no dia 08 de dezembro de 2012.
-      page: '30'
   - field: place
     value: Catedral PAES, Recife
     sources:
@@ -304,21 +296,16 @@ affiliations:
     quote: On December 8, 2012, The Rt. Rev. Miguel Uchoa was consecrated as Diocesan Bishop.
   - source: dr-historia
     quote: sob a liderança do arcebispo primaz Miguel Uchôa Cavalcanti
+  - source: cant-novas-igrejas-2024
+    quote: a Igreja passou a ser liderada pelo bispo Miguel Uchôa
+    page: '30'
   - source: ai-2018-05-15-uchoa-installed
     quote: On December 8, 2012, The Rt. Rev. Miguel Uchoa was consecrated as Diocesan Bishop.
   - source: ai-recife-received-gafcon
     quote: the work undertaken by the Rt. Rev. Robinson Cavalcanti and his successor, the Rt. Rev. Miguel Uchoa
-  notes: Fim = conversão da diocese em província (continua bispo diocesano do Recife na IAB).
-- jurisdiction: dar-iacs
-  role: diocesan_bishop
-  start: '2012-12-08'
-  end: '2018-05-12'
-  status: probable
-  sources:
-  - source: cant-novas-igrejas-2024
-    quote: a Igreja passou a ser liderada pelo bispo Miguel Uchôa
-    page: '30'
-  notes: Fim = transformação em Província (IAB).
+  notes: >-
+    Fim = transformação em Província (IAB). Fim = conversão da diocese em província (continua bispo diocesano do
+    Recife na IAB).
 - jurisdiction: iab
   role: primate
   start: '2018-05-12'
