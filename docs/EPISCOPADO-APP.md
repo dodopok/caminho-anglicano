@@ -264,7 +264,7 @@ Toque numa faixa abre a mini-ficha; toque num ramo mostra a relação com fontes
 
 ### 5.10 Fontes e ficha da fonte
 
-**Fontes.** Lista com campo de busca na base da tela (padrão do iOS 26), chips de nível (Todas · Primárias · Secundárias · Terciárias) e menu de tipo. Cada linha: selos de tipo e nível, data, idioma em mono, título, autor · publicador, e à direita "N afirmações · M fichas". Deslizar para a esquerda: "Abrir ↗", "Arquivo ↗". Cabeçalho com "1 440 fontes · 612 primárias · 58 ainda sem uso".
+**Fontes.** Lista com campo de busca na base da tela (padrão do iOS 26), chips de nível (Todas · Primárias · Secundárias · Terciárias) e menu de tipo. Cada linha: selos de tipo e nível, data, idioma em mono, título, autor · publicador, e à direita "N afirmações · M fichas". Deslizar para a esquerda: "Abrir ↗", "Arquivo ↗". Cabeçalho com "1 440 fontes · 959 primárias · 113 ainda sem uso".
 
 **Ficha da fonte.** Cabeçalho com tipo, nível (com explicação ao tocar), título, autor · publicador, botões "Abrir fonte ↗" e "Arquivo (snapshot) ↗", fatos rápidos (publicação, consultada em, sustenta N afirmações em M fichas). Depois, "O que esta fonte sustenta", agrupado por ficha: cada item com a afirmação, o trecho citado em serifa itálica e a página; toque leva à seção da ficha. Versões divergentes marcadas em vermelho.
 
@@ -278,7 +278,7 @@ Toque numa faixa abre a mini-ficha; toque num ramo mostra a relação com fontes
 
 **Objetivo.** O controle de ano do site elevado a gesto-assinatura.
 
-**Estrutura.** Recolhida: uma linha fina acima da barra de abas com "até hoje" e um ícone de relógio. Toque expande em uma **régua horizontal** com as décadas marcadas, de 1533 (ou do primeiro ano visível com os filtros atuais) até hoje; o ano corrente em mono grande no centro. Arrastar move o ano; a cada década um tique háptico; os nós e ligações posteriores ao ano somem com fade. Soltar mantém o ano; "hoje" é o fim do curso. O ano fica na URL (`?ano=`) e na trilha.
+**Estrutura.** Recolhida: uma linha fina acima da barra de abas com "até hoje" e um ícone de relógio. Toque expande em uma **régua horizontal** com as décadas marcadas, de 1533 (ou do primeiro ano visível com os filtros atuais) até hoje; o ano corrente em mono grande no centro. Arrastar move o ano; a cada década um tique háptico; os nós e ligações posteriores ao ano somem com fade. Cada pessoa aparece com a cor da ordem que tinha naquele ano (Miguel Uchôa é presbítero em 2005 e bispo a partir de 2012), uma melhoria sobre o site, que colore pela ordem mais alta registrada. Abaixo do ano, uma linha "Neste ano" resume as relações datadas nele (ex.: 2005 · Diocese do Recife rompe com a IEAB). Soltar mantém o ano; "hoje" é o fim do curso. O ano fica na URL (`?ano=`) e na trilha.
 
 **Extra.** Botão de "tocar" (▶) percorre 1890 → hoje em 20 segundos, com a rede crescendo. Ótimo para mostrar a história dos cismas a alguém.
 
