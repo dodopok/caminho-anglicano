@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: iar
+acronym: IAR
+name: Igreja Anglicana Rio
+type: other
+country: BR
+founded:
+  date: '2026'
+  sources:
+  - source: arj-site
+    quote: >-
+      Somos uma comunidade cristã sediada em Irajá, Zona Norte do Rio de Janeiro, integrante da Rede Episcopal Brasileira.
+  - source: reb-igrejas
+    quote: Igreja Anglicana Rio
+  - source: arj-ig-jorge-5abr
+    quote: >-
+      oficialmente legitimados a plantar a @igrejaanglicanario - a primeira igreja da @redeepiscopalbrasileira no
+      Rio de Janeiro!
+  - source: arj-ig-bio-igreja
+    quote: Um farol para a cidade
+website: https://anglicanario.com.br/
+description: >-
+  Comunidade de tradição anglicana em Irajá (Rio de Janeiro), integrante da Rede Episcopal Brasileira; culto aos
+  domingos às 9h30, na Rua Soldado Elias dos Santos, 55. Segundo o pastor Jorge Alcino, é a primeira igreja da REB
+  no Rio de Janeiro; a plantação foi autorizada em 05/04/2026.
+sources:
+- source: arj-site
+  quote: >-
+    Somos uma comunidade cristã sediada em Irajá, Zona Norte do Rio de Janeiro, integrante da Rede Episcopal Brasileira.
+- source: reb-igrejas
+  quote: Igreja Anglicana Rio
+- source: arj-ig-jorge-5abr
+  quote: >-
+    oficialmente legitimados a plantar a @igrejaanglicanario - a primeira igreja da @redeepiscopalbrasileira no
+    Rio de Janeiro!
+- source: arj-ig-bio-igreja
+  quote: Um farol para a cidade
+relations:
+- type: member_of
+  target: reb
+  date: '2026-04-05'
+  led_by:
+  - jorge-alcino
+  status: confirmed
+  sources:
+  - source: reb-igrejas
+    quote: >-
+      Igreja Anglicana Rio Rio de Janeiro/RJ Cultos aos domingos – 9h30 Rua Soldado Elias dos Santos, 55, Irajá
+      – Rio de Janeiro
+  - source: arj-site
+    quote: integrante da Rede Episcopal Brasileira
+  notes: Listada entre as igrejas da REB.
