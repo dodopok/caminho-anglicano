@@ -65,6 +65,12 @@ def entradas():
                                                                               a.get('role_description') or '', re.I)):
                 for j in {a['jurisdiction'], a.get('diocese')} - {None}:
                     idx.setdefault(j, []).append(('pessoa', d['id'], a))
+        # Ordenações e sagrações que a pessoa presidiu ou de que participou ficam na ficha de quem foi ordenado.
+        for o in d.get('ordinations') or []:
+            for quem, papel in ([(o.get('principal_consecrator'), 'sagrante principal'), (o.get('ordained_by'), 'ordenante')]
+                                + [(c, 'co-sagrante') for c in o.get('co_consecrators') or []]):
+                if quem:
+                    idx.setdefault(quem, []).append(('ordenou', d['id'], o | {'_papel': papel}))
     for f in (DATA / 'jurisdictions').glob('*.yaml'):
         d = yaml.load(f.read_text(), Loader=Loader)
         for r in d.get('relations') or []:
@@ -98,6 +104,11 @@ def linhas_fatos(kind, d, N):
     for s in d.get('sources') or []:
         out.append(f"- citado no resumo atual: {codigo(s)} [{s['source']}] \"{s.get('quote') or ''}\"")
     if kind == 'person':
+        presididas = sorted([x for x in ENTRADAS.get(d['id'], []) if x[0] == 'ordenou'],
+                            key=lambda x: str(x[2].get('date') or '9999'))
+        for _, id_, o in presididas:
+            out.append(f"- {o['_papel']} de {N.get(id_, id_)}: {ORDEM[o['order']]} {o.get('date') or 's/d'}"
+                       f" [{o['status']}] | {fmt_src(o)}")
         for campo in ('birth', 'death'):
             if d.get(campo):
                 out.append(f"- {campo}: {d[campo].get('date')} | {fmt_src(d[campo])}")
@@ -195,8 +206,7 @@ def aplicar(args):
                 for v in x:
                     junta(v)
         junta({k: v for k, v in d.items() if k != 'sources'} | {'_': d.get('sources')})
-        if kind == 'jurisdiction':
-            junta([c for _, _, c in ENTRADAS.get(id_, [])])
+        junta([{k: v for k, v in c.items() if k != '_papel'} for _, _, c in ENTRADAS.get(id_, [])])
         fontes = []
         for c in it.get('citacoes') or []:
             if c in por_codigo:

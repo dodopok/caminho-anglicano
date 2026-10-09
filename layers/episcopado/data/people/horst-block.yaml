@@ -1,6 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: horst-block
 name: Horst Block
+biography: >-
+  Liderou, por volta de 1978, uma das facções da Free Protestant Episcopal Church após um cisma, facção que passou
+  a chamar-se The International Free Protestant Episcopal Church (TIFPEC).
+sources:
+- source: perd01-wp-fpec
+  quote: >-
+    After a schism (circa 1978) in the communion, one of the factions led by Horst Block was renamed "The International
+    Free Protestant Episcopal Church" (TIFPEC)
 events:
 - type: other
   date: c.1978

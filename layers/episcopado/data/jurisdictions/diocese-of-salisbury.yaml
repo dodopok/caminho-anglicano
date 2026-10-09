@@ -3,10 +3,17 @@ id: diocese-of-salisbury
 name: Diocese of Salisbury
 type: diocese
 description: >-
-  Diocese da Igreja da Inglaterra cujo bispo Brian Duppa (1641-1660) foi depois transferido para Winchester.
+  Diocese da Igreja da Inglaterra cujo bispo Brian Duppa (1641-1660) foi depois transferido para Winchester; Robert
+  Hay Drummond foi seu bispo de 11 de junho a 23 de outubro de 1761, antes de tornar-se arcebispo de York.
 sources:
 - source: stubbs-1897
   quote: Brian Duppa. Chichester; Sarum, 1641 ; Winchester, 1660 ; d. 1662, March 26.
+- source: perd09-wp-drummond
+  quote: '[[Bishop of Salisbury]] (11 June – 23 October 1761)'
+- source: perd09-wp-drummond
+  quote: >-
+    was successively [[Bishop of St Asaph]], [[Bishop of Salisbury]], and, from 1761 until his death, [[Archbishop
+    of York]].
 relations:
 - type: part_of
   target: church-of-england

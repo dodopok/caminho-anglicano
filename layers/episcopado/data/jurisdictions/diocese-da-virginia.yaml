@@ -4,6 +4,17 @@ name: Diocese da Virgínia
 type: diocese
 tradition: anglican
 country: US
+description: >-
+  Diocese da Igreja Episcopal dos EUA que teve como bispos William Meade (1841-1862) e William Cabell Brown (1919-1927).
+sources:
+- source: perd10-wp-meade
+  quote: When Bishop Moore died later that year, Meade succeeded him as Bishop of Virginia
+- source: perd10-wp-meade
+  quote: '| term = 1841–1862'
+- source: wp-en-brown
+  quote: Bishop Brown ultimately succeeded Bishop Gibson
+- source: wp-en-brown
+  quote: '| term             = 1919–1927'
 relations:
 - type: part_of
   target: tec

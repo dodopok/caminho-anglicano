@@ -3,12 +3,14 @@ id: diocese-of-canterbury
 name: Diocese of Canterbury
 type: diocese
 description: >-
-  Diocese da Igreja da Inglaterra, sede dos arcebispos de Canterbury. Entre eles estão Thomas Cranmer (1533-1556),
-  Matthew Parker (1559-1575), Edmund Grindal (1576-1583), John Whitgift (1583-1604), Richard Bancroft (1604-1610),
-  George Abbot (1611-1633) e William Laud (1633-1645). Seguiram-se Gilbert Sheldon (1663-1677) e William Sancroft
-  (de 1678, deposto em 1690), e, no século XVIII, John Potter (1737-1747), Thomas Herring (1747-1757), Frederick
-  Cornwallis (1768-1783) e John Moore (1783-1805). No século XIX, John Bird Sumner (1848-1862), Charles Thomas Longley
-  (1862-1868), Archibald Campbell Tait (1868-1882) e, desde 1896, Frederick Temple.
+  Diocese da Igreja da Inglaterra, sede dos arcebispos de Canterbury. No século XVI foram arcebispos Thomas Cranmer
+  (1533-1556), Matthew Parker (1559-1575), Edmund Grindal (1576-1583) e John Whitgift (1583-1604); no século XVII,
+  Richard Bancroft (1604-1610), George Abbot (1611-1633), William Laud (1633-1645), Gilbert Sheldon (1663-1677)
+  e William Sancroft (de 1678, deposto em 1690). No século XVIII estão John Potter (1737-1747), Thomas Herring (1747-1757),
+  Frederick Cornwallis (1768-1783) e John Moore (1783-1805). No século XIX, John Bird Sumner (1848-1862), Charles
+  Thomas Longley (1862-1868), Archibald Campbell Tait (1868-1882), Edward White Benson (1883-1896) e Frederick Temple,
+  a partir de 1896. Seguiram-se Randall Thomas Davidson (1903-1928) e Cosmo Gordon Lang, entronizado em 4 de dezembro
+  de 1928 e arcebispo até 1942.
 sources:
 - source: stubbs-1897
   quote: Thomas Cranmer. Canterbury; d. 1556, March 21.
@@ -42,8 +44,17 @@ sources:
   quote: Charles Thomas Longley. Ripon ; Durham, 1856 ; York, i860 ; Canterbury, 1862 ; d. 1868, Oct. 27.
 - source: stubbs-1897
   quote: Archibald Campbell Tait. London ; Canterbury, 1868 ; d. 1882, Sept. 3.
+- source: wp-en-benson
+  quote: >-
+    Edward White Benson (14 July 1829 – 11 October 1896) was archbishop of Canterbury from 1883 until his death.
 - source: stubbs-1897
   quote: Frederick Temple. Exeter ; London, 1885 ; Canterbury, 1896
+- source: wp-en-davidson
+  quote: Archbishop of Canterbury from 1903 to 1928
+- source: perd04-wp-lang
+  quote: who served as Archbishop of York (1908–1928) and Archbishop of Canterbury (1928–1942)
+- source: perd04-wp-lang
+  quote: Lang was enthroned as the new Archbishop of Canterbury on 4 December 1928
 relations:
 - type: part_of
   target: church-of-england
