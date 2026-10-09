@@ -770,3 +770,7 @@ if WRITE:
     print(f'\n{len(mudou)} arquivo(s) gravado(s) em {OUT}')
 else:
     print('\n(simulação; use --write para gravar)')
+alteradas = [k for (pasta, k) in mudou if pasta in ('people', 'jurisdictions') and k in orig[pasta]]
+if alteradas:
+    print(f'\nResumos: {len(alteradas)} ficha(s) existente(s) mudaram e o resumo delas não é refeito aqui. Depois de'
+          ' consolidar, rode resumos.py dossie (ver INSTRUCOES.md) para atualizá-los.')

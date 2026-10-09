@@ -92,6 +92,19 @@ Leia o relatório da simulação antes de gravar:
 Ajustes pontuais (corrigir um valor, apagar um trecho privado, trocar o status) podem ser feitos direto no YAML;
 o consolidador respeita o que encontra.
 
+### 3b. Atualizar o resumo das fichas
+O consolidador só escreve `biography`/`description` de quem ainda não tem; fatos novos NÃO mudam o resumo
+existente, e a ficha fica com um resumo velho no topo. Sempre que uma leva acrescentar fato relevante a uma
+ficha existente (ordenação, cargo novo ou mais alto, mudança de igreja, falecimento), refaça o resumo:
+```bash
+pnpm episcopado:resumos dossie --ids <id>... --saida <scratchpad>/resumos      # ou --desde origin/main
+# escreva [{ "id", "texto", "citacoes": ["c…"] }] seguindo INSTRUCOES.md ("Reescrever resumos")
+pnpm episcopado:resumos aplicar <arquivo.json> [--write]
+```
+O `aplicar` só aceita códigos de citação que já estão na ficha (os trechos ficam literais) e recusa texto
+de bastidor. Para muitas fichas, despache agentes com os dossiês (skill `episcopado-pesquisar`, passo 3b).
+Ao usuário, diga quantos resumos foram refeitos.
+
 ### 4. Validar
 - `pnpm episcopado:validate --warnings`: zero erros; revise os avisos que você introduziu (trecho faltando,
   duplicata, sagrante sagrado depois, morte inesperada).

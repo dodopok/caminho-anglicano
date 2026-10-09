@@ -39,3 +39,18 @@ Classifique cada um em `pistas` com instrução PRECISA para um humano: o link d
 do Facebook/Instagram), ou o que buscar ("na página X, busque 'sagração' e veja os posts de mai/2019"); para vídeo,
 o que procurar na transcrição e o minuto estimado. Descarte o que não tem valor para a rede (opinião, duplicata,
 página sem ordenações nem cargos).
+
+## Reescrever resumos de fichas (biography / description)
+Você recebe um dossiê (`dossie-NN.md`) gerado por `resumos.py`: para cada ficha, o resumo atual e os fatos
+registrados, cada citação com um código (`c1a2b3c`). Escreva um resumo NOVO para cada ficha e grave um JSON
+`[{ "id": "<id>", "texto": "...", "citacoes": ["c1a2b3c", ...] }]` no caminho indicado no prompt.
+- Pessoa: 1 a 3 frases (até ~450 caracteres) com o essencial do ministério em ordem cronológica: ordenações
+  (com quem ordenou/sagrou, se houver), cargos principais e mais altos, igrejas por onde passou, rupturas e
+  mudanças de igreja, situação atual ou falecimento. Jurisdição: o que é, quando e de onde surgiu, a que pertence,
+  quem a lidera, mudanças importantes.
+- Só o que está no dossiê. Fato `contested` entra só se o texto deixar claro que há versões; `probable` pode entrar
+  sem destaque. Não invente datas nem cargos; prefira a forma mais precisa que aparece.
+- `citacoes`: os códigos dos trechos que sustentam cada fato citado no texto (normalmente 3 a 8).
+- Neutro, pt-BR, sem adjetivos de valor, sem "a base", "NOVO", "segundo o dossiê". Nada de vida pessoal
+  (família, profissão secular, saúde, endereço) — nem que esteja no resumo antigo.
+- Se a ficha tiver só um ou dois fatos menores, mantenha um resumo curto; se não houver o que dizer, omita a ficha.
