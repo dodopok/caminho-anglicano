@@ -33,6 +33,21 @@ Convenções: ids de nó têm prefixo `p:` (pessoa) ou `j:` (jurisdição); data
 | `GET /api/episcopado/inicio` | | `HomeView`: `manifest`, `starters` (jurisdições brasileiras de nível igreja, com bispos, membros e grau), `thisWeek` (efemérides dos próximos 7 dias) e `contested` (8 afirmações contestadas mais recentes) |
 | `GET /api/episcopado/contestados` | | `ContestedClaim[]`: toda afirmação contestada com `versions` (cada versão com campo, valor e número de fontes) e o total de fontes distintas |
 | `GET /api/episcopado/lacunas` | | `Finding[]` do validador (`--gaps`): o que falta pesquisar, por entidade |
+| `GET /api/episcopado/arvore` | `escopo=brasil` (padrão) ou `tudo` | `Tree`: `nodes` (igrejas, províncias, redes e comunhões; sem dioceses) com `founded`, `dissolved`, `parent` (cisma ou sucessão mais antiga), `parentYear`, `relations` e `bishops`, na ordem raízes → filhas; `yearRange`. No Brasil entram as brasileiras e suas mães (TEC, REC, COA…) |
+| `GET /api/episcopado/igrejas/:locatorSlug` | | Igrejas do Localizador da jurisdição (`locator_slug` da ficha): `{ slug, name, color, churches: [{ id, name, slug, city, state, latitude, longitude }] }`. Vazio quando o Supabase não está configurado |
+
+## Sugerir correção
+
+`POST /api/episcopado/sugestao` (JSON, limite de envios por IP). Corpo:
+
+| Campo | Obrigatório | Descrição |
+|---|---|---|
+| `entity` | sim | `p:<id>`, `j:<id>` ou `s:<id>` |
+| `problem` | sim | O que está errado (10 a 2000 caracteres) |
+| `entityName`, `section`, `claim` | não | Nome e onde a afirmação aparece ("ordenacoes", "Episcopado, 8 dez. 2012") |
+| `correction`, `source`, `quote`, `contact`, `app` | não | Fato correto, fonte (URL ou descrição), trecho literal, contato e origem ("ios/0.1.0") |
+
+Resposta `201 { ok: true, issueUrl, delivered: "github" | "telegram" }`. A sugestão vira uma issue no repositório (`EPISCOPADO_GITHUB_TOKEN`, token com permissão de escrever issues; `EPISCOPADO_GITHUB_REPO` opcional) no formato que a skill `episcopado-ingerir` consome, e um aviso no bot do Telegram do Localizador. Sem nenhum dos dois configurados: `503`. Erros de validação: `400` com `data` listando os campos.
 
 ## Exemplos
 
@@ -42,6 +57,8 @@ Convenções: ids de nó têm prefixo `p:` (pessoa) ou `j:` (jurisdição); data
 /api/episcopado/efemerides?dia=12-08&dias=1
 /api/episcopado/busca?q=uchoa&limite=5
 /api/episcopado/posicoes?escopo=tudo
+/api/episcopado/arvore?escopo=brasil
+/api/episcopado/igrejas/iab
 ```
 
 ## Como o app usa
@@ -54,4 +71,4 @@ Convenções: ids de nó têm prefixo `p:` (pessoa) ou `j:` (jurisdição); data
 
 - `routeRules['/api/episcopado/**'] = { isr: true }`: cada URL (inclusive a query string) fica em cache na Vercel até o próximo deploy.
 - `posicoes` roda o layout uma vez por instância do servidor (cerca de 2 s para o Brasil e 3 s para a rede inteira); o resultado fica em memória e no cache da borda.
-- Nenhum endpoint escreve na base. Correções continuam entrando por PR (ver a skill `episcopado-ingerir`).
+- Nenhum endpoint escreve na base. Correções entram como issue (`sugestao`) e viram PR pela skill `episcopado-ingerir`.

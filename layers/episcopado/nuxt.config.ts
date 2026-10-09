@@ -32,6 +32,8 @@ export default defineNuxtConfig({
     '/episcopado/pessoa/**': { isr: true },
     '/episcopado/jurisdicao/**': { isr: true },
     '/episcopado/fonte/**': { isr: true },
-    '/api/episcopado/**': { isr: true }
+    '/api/episcopado/**': { isr: true },
+    // Sugestões são POST e nunca entram em cache.
+    '/api/episcopado/sugestao': { isr: false, cache: false }
   }
 })
