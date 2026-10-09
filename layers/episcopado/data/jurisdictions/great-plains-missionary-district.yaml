@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: great-plains-missionary-district
+name: Great Plains Missionary District
+type: diocese
+relations:
+- type: part_of
+  target: acna
+  status: probable
+  sources:
+  - source: gace-gac-page
+    quote: In 2024 he was appointed as Assisting Bishop for the Great Plains Missionary District (ACNA)

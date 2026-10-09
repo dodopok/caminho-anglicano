@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: gac
+acronym: GAC
+name: Global Anglican Communion
+type: communion
+tradition: anglican
+founded:
+  date: '2025-10-16'
+  sources:
+  - source: gace-future-has-arrived
+    quote: >-
+      Therefore, Gafcon has re-ordered the Anglican Communion by restoring its original structure as a fellowship
+      of autonomous provinces bound together by the Formularies of the Reformation, as reflected at the first Lambeth
+      Conference in 1867, and we are now the Global Anglican Communion.
+  - source: gace-abuja-affirmation
+    quote: >-
+      The Chair of the Gafcon Primates’ Council, Archbishop Laurent Mbanda, announced the inauguration of the Global
+      Anglican Communion in the October 2025 Martyrs’ Day Statement (MDS).
+  - source: gace-abuja-affirmation
+    quote: >-
+      We gathered to celebrate the inauguration of the reordered Global Anglican Communion, with this gospel at
+      its heart.
+  - source: gace-home-for-communion
+    quote: >-
+      the Global Anglican Council has agreed that the headquarters of the Global Anglican Communion will be established
+      in Abuja, Nigeria.
+website: https://gafcon.org/about/global-anglican-council/
+description: >-
+  Comunhão anglicana confessional declarada pelos primazes do GAFCON em 16/10/2025 (Martyrs’ Day Statement), que
+  se apresenta como a Comunhão Anglicana "reordenada" a partir da Declaração de Jerusalém (2008), sem os Instrumentos
+  de Comunhão de Cantuária; inaugurada formalmente na conferência G26 (Abuja, 3–6/03/2026) e dirigida pelo Global
+  Anglican Council; sede decidida em Abuja (Nigéria) em 22/08/2026.
+sources:
+- source: gace-future-has-arrived
+  quote: >-
+    Therefore, Gafcon has re-ordered the Anglican Communion by restoring its original structure as a fellowship
+    of autonomous provinces bound together by the Formularies of the Reformation, as reflected at the first Lambeth
+    Conference in 1867, and we are now the Global Anglican Communion.
+- source: gace-abuja-affirmation
+  quote: >-
+    The Chair of the Gafcon Primates’ Council, Archbishop Laurent Mbanda, announced the inauguration of the Global
+    Anglican Communion in the October 2025 Martyrs’ Day Statement (MDS).
+- source: gace-abuja-affirmation
+  quote: >-
+    We gathered to celebrate the inauguration of the reordered Global Anglican Communion, with this gospel at its
+    heart.
+- source: gace-home-for-communion
+  quote: >-
+    the Global Anglican Council has agreed that the headquarters of the Global Anglican Communion will be established
+    in Abuja, Nigeria.
+relations:
+- type: successor_of
+  target: gafcon
+  date: '2025-10-16'
+  led_by:
+  - laurent-mbanda
+  status: confirmed
+  sources:
+  - source: gace-future-has-arrived
+    quote: Today, Gafcon is leading the Global Anglican Communion.
+  - source: gace-future-has-arrived
+    quote: we are now the Global Anglican Communion.
+  - source: gace-abuja-affirmation
+    quote: >-
+      Gafcon was originally formed as a fellowship within the Anglican Communion. Now that the Anglican Communion
+      is being reordered, the Gafcon Primates Council has been replaced by the Global Anglican Council.
+  - source: gace-faithfulness-brazil
+    quote: >-
+      This is a powerful reminder of why Gafcon, now the Global Anglican Communion, has been so important for faithful
+      Anglicans throughout the world.
+  - source: gace-ef-future
+    quote: >-
+      Gafcon has re-ordered the Anglican Communion by restoring its original structure as a fellowship of autonomous
+      provinces bound together by the Formularies of the Reformation, as reflected at the first Lambeth Conference
+      in 1867, and we are now the Global Anglican Communion
+  - source: gace-secretariat-2025
+    quote: as we grow from a movement to the Global Anglican Communion.
+  notes: >-
+    Declarada pelos primazes do GAFCON em 16/10/2025 e inaugurada na G26 (Abuja, 3–6/03/2026). O GAFCON continua
+    existindo como movimento: segue convocando suas assembleias (GAFCON V, Atenas, abr/2028), mantém ramos (branches),
+    secretários regionais e a entidade jurídica Global Fellowship of Confessing Anglicans (GFCA), cujos curadores
+    sustentam a GAC.
+- type: broke_communion_with
+  target: anglican-communion
+  date: '2025-10-16'
+  led_by:
+  - laurent-mbanda
+  status: confirmed
+  sources:
+  - source: gace-future-has-arrived
+    quote: >-
+      We reject the so-called Instruments of Communion, namely the Archbishop of Canterbury, the Lambeth Conference,
+      the Anglican Consultative Council (ACC), and the Primates Meeting
+  - source: gace-future-has-arrived
+    quote: >-
+      Provinces of the Global Anglican Communion shall not participate in meetings called by the Archbishop of Canterbury,
+      including the ACC, and shall not make any monetary contribution to the ACC
+  - source: gace-abuja-affirmation
+    quote: >-
+      Leaders who hold office in the Global Anglican Communion must not attend future Primates’ Meetings called
+      by the Archbishop of Canterbury, nor attend the Lambeth Conference, nor attend ACC meetings
+  - source: gace-tablet-statement
+    quote: The time for institutional negotiations with the Canterbury-led structures has passed.
+  - source: gace-ef-future
+    quote: announcing that it no longer recognises the authority of the Archbishop of Canterbury
+  notes: >-
+    A GAC não se descreve como cisma: "The Global Anglican Communion is neither a breakaway Communion nor an alternative
+    Communion" e "not a new Communion, but the historic Anglican Communion reordered from within". O que ela declara
+    é a rejeição dos Instrumentos de Comunhão de Cantuária e um "principled disengagement" deles; descreve a outra
+    parte como "an institution that calls itself the Anglican Communion". Desde 2023 (Kigali Commitment) o GAFCON
+    já não reconhecia o arcebispo de Cantuária como Instrumento de Comunhão.

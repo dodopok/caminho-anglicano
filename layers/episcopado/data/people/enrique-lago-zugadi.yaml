@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: enrique-lago-zugadi
+name: Enrique Lago Zugadi
+full_name: Enrique Lago Zugadi
+aliases:
+- Enrique Lago
+- The Most Revd Enrique Lago Zugadi
+biography: >-
+  Bispo diocesano do Sul do Chile desde 2018 e segundo arcebispo da Igreja Anglicana do Chile desde jan/2025; membro
+  do Global Anglican Council.
+sources:
+- source: gace-gac-page
+  quote: From 1994 to 2017, Archbishop Enrique was pastor of Iglesia Providencia in Santiago.
+ordinations:
+- order: episcopate
+  date: '2018'
+  place: Catedral de São Paulo, Valparaíso
+  jurisdiction: iach
+  office: diocesan
+  status: probable
+  sources:
+  - source: gace-gac-page
+    quote: >-
+      He was consecrated to the episcopacy at St. Paul’s Cathedral, Valparaíso in 2018, and became diocesan bishop
+      upon the formation of the diocese that year.
+  notes: Sagrantes não informados na fonte.
+affiliations:
+- jurisdiction: iach
+  role: diocesan_bishop
+  diocese: diocese-do-sul-do-chile
+  start: '2018'
+  status: probable
+  sources:
+  - source: gace-gac-page
+    quote: >-
+      In 2018 he was elected as the future diocesan bishop of Concepción (later called the Diocese of the South
+      of Chile).
+  notes: 'Local: Concepción.'
+- jurisdiction: iach
+  role: archbishop
+  start: 2025-01
+  status: probable
+  sources:
+  - source: gace-gac-page
+    quote: >-
+      In January 2025, Archbishop Enrique succeeded Tito Zavala as the second archbishop of the Anglican Church
+      of Chile.
+  notes: Sucedeu Tito Zavala como segundo arcebispo da Igreja Anglicana do Chile.
+- jurisdiction: gac
+  role: other
+  role_description: membro do Global Anglican Council (primaz)
+  start: 2026-03
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: Archbishop of the Anglican Church of Chile
+  - source: gace-ai-council-list
+    quote: The Most Rev. Enrique Lago, Archbishop of Chile
+  notes: >-
+    Consta da lista oficial do conselho divulgada pelo secretário-geral (noticiada em 27/03/2026); data exata de
+    ingresso não informada.
