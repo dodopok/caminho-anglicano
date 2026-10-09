@@ -24,6 +24,29 @@ ordinations:
   notes: O ordenante não é nomeado; a nota é da diocese de Dom Robinson.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: deão
+  start: '2010-01-03'
+  status: confirmed
+  sources:
+  - source: darl1-9500
+    quote: >-
+      Rev. Aldo Menezes é Presbítero da Diocese do Recife; Deão da Con-Catedral Anglicana da Ressurreição, em João
+      Pessoa-PB, e que tomará posse dia 03/01/2010.
+  - source: darl1-8245
+    quote: >-
+      Revmo. Aldo dos Santos Menezes é Presbítero na Diocese do Recife; Deão na Concatedral Anglicana da Ressurreição,
+      em João Pessoa, no Arcediagado PB/CE/RN.
+  - source: darl1-4679
+    quote: >-
+      Revmo. Aldo Menezes é Presbítero na Diocese do Recife; Deão na Concatedral Anglicana da Ressurreição, em João
+      Pessoa, no Arcediagado PB/CE.
+  notes: >-
+    Local: Concatedral Anglicana da Ressurreição, João Pessoa-PB. A posse foi anunciada para 2010-01-03 em texto
+    de 2009-12-08 (data de início conforme o anúncio); em 2010-06-14 já assina como deão. Em 2010-11-29 ainda é
+    deão; em 2011-10-25 o artigo o apresenta apenas como presbítero do Arcediagado PB/RN, na Região Eclesiástica
+    1.
+- jurisdiction: diocese-anglicana-recife
   role: clergy
   status: confirmed
   sources:
@@ -37,3 +60,13 @@ affiliations:
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados. Ministro "ligado canonicamente" à Diocese do Recife
     em out/nov de 2006; o boletim não diz onde servia.
+events:
+- type: other
+  date: '2009-12-05'
+  description: >-
+    XXIX Concílio Diocesano da Diocese do Recife, em dezembro de 2009 (a oração do meio-dia de 5 de dezembro foi
+    conduzida pelo Rev. Aldo Menezes, deão designado da Concatedral da Ressurreição).
+  status: confirmed
+  sources:
+  - source: darl1-9500
+    quote: Esta meditação foi ministrada na Oração do Meio Dia, do dia 05/12/2009, no XXIX Concílio Diocesano.

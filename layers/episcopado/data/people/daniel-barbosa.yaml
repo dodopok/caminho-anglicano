@@ -158,9 +158,17 @@ affiliations:
     quote: 'Prior: Rev. Daniel Barbosa'
   - source: rcor-drv-ordens-dar
     quote: Rev. Daniel Barbosa da Silva (Prior)
+  - source: darl1-5241
+    quote: >-
+      Rev. Daniel Barbosa, é Diácono Permanente na Diocese do Recife; Secretário Diocesano de Cidadania; Prior da
+      Ordem Evangélica de Santo Estevão Mártir (OSE); Ministro Encarregado da Missão Anglicana Comunidade da Paz
+      , em Paulista-PE;
+  - source: darl1-8602
+    quote: Daniel Barbosa da Silva é Frei, Prior da Ordem Evangélica de Santo Estevão Mártir – OSE e Clérigo;
   notes: >-
     Prior da Ordem Evangélica de Santo Estêvão Mártir. Lista da página 'Ordens Religiosas' do site da Diocese do
-    Recife, arquivada em 24/10/2004.
+    Recife, arquivada em 24/10/2004. Prior da Ordem Evangélica de Santo Estevão Mártir em 2011-11-11 e em texto
+    incluído no site em 2009-08-20.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: diacono permanente
@@ -171,6 +179,59 @@ affiliations:
   - source: darl2-diaconal-279
     quote: Diácono Permanente.
   notes: Assinatura de artigo sem data própria (postado em 20/08/2009); "ose" = Ordem de Santo Estevão.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário diocesano de cidadania
+  status: confirmed
+  sources:
+  - source: darl1-5241
+    quote: >-
+      Rev. Daniel Barbosa, é Diácono Permanente na Diocese do Recife; Secretário Diocesano de Cidadania; Prior da
+      Ordem Evangélica de Santo Estevão Mártir (OSE); Ministro Encarregado da Missão Anglicana Comunidade da Paz
+      , em Paulista-PE;
+  notes: Em 2011-11-11.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro encarregado
+  status: confirmed
+  sources:
+  - source: darl1-5241
+    quote: >-
+      Rev. Daniel Barbosa, é Diácono Permanente na Diocese do Recife; Secretário Diocesano de Cidadania; Prior da
+      Ordem Evangélica de Santo Estevão Mártir (OSE); Ministro Encarregado da Missão Anglicana Comunidade da Paz
+      , em Paulista-PE;
+  notes: 'Local: Missão Anglicana Comunidade da Paz, Paulista-PE. Em 2011-11-11.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coordenador dos diáconos permanentes
+  status: confirmed
+  sources:
+  - source: darl1-8602
+    quote: >-
+      é atualmente Coordenador dos Diáconos Permanentes da Diocese do Recife; Secretário Diocesano de Ação Social;
+  notes: Função descrita na nota biográfica de artigo incluído no site em 2009-08-20.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário diocesano de ação social
+  status: confirmed
+  sources:
+  - source: darl1-8602
+    quote: >-
+      é atualmente Coordenador dos Diáconos Permanentes da Diocese do Recife; Secretário Diocesano de Ação Social;
+  notes: >-
+    Função descrita na nota biográfica de artigo incluído no site em 2009-08-20; em 2011-11-11 o mesmo autor é secretário
+    de cidadania.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: diácono permanente
+  status: confirmed
+  sources:
+  - source: darl1-5241
+    quote: >-
+      Rev. Daniel Barbosa, é Diácono Permanente na Diocese do Recife; Secretário Diocesano de Cidadania; Prior da
+      Ordem Evangélica de Santo Estevão Mártir (OSE); Ministro Encarregado da Missão Anglicana Comunidade da Paz
+      , em Paulista-PE;
+  notes: Diácono permanente em 2011-11-11.
 events:
 - type: other
   date: '2017-11-25'
@@ -218,3 +279,19 @@ events:
   - source: costa2021
     quote: e suas ordens foram reconhecidas pelo Bispo Primaz da IAOB, Dom Adolfo Batista Teodoro Júnior.
     page: '259'
+- type: other
+  date: null
+  description: >-
+    Cânon 21 da Diocese do Recife: reconhece o diaconato permanente (art. 1º), reúne os diáconos permanentes numa
+    fraternidade subordinada ao bispo diocesano (art. 3º) e permite que sejam ordenados presbíteros se cumprirem
+    as exigências do art. 5º (descrição feita por Daniel Barbosa em artigo incluído no site em 2009-08-20).
+  status: confirmed
+  sources:
+  - source: darl1-8602
+    quote: O Diaconato Permanente é reconhecido canonicamente em nossa Diocese (Cânon 21, Art. 1º.).
+  - source: darl1-8602
+    quote: Os Diácono(a)s integraram um Fraternidade subordinada ao Bispo Diocesano (Cânon 21, Art.3º.).
+  - source: darl1-8602
+    quote: >-
+      Os Diácono(a)s Permanentes poderão ser Ordenado(a)s Presbítero(a)s, desde que cumpram as exigências do Cânon
+      21, Art.5º.

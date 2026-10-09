@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: fabiano-caldas-goes
+name: Fabiano Caldas Góes
+biography: >-
+  Presbítero com ordem reconhecida pela Diocese Anglicana do Recife ("em Reconhecimento de Ordem"), ministro encarregado
+  do Ponto Missionário Anglicano São Mateus, em São Luís (MA), em 2010-12-20.
+sources:
+- source: darl1-4893
+  quote: Rev. Fabiano Caldas Góes é presbítero em Reconhecimento de Ordem na Diocese do Recife;
+- source: darl1-4893
+  quote: Ministro Encarregado do Ponto Missionário Anglicano São Mateus , em São Luiz (MA).
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero (em reconhecimento de ordem)
+  status: confirmed
+  sources:
+  - source: darl1-4893
+    quote: Rev. Fabiano Caldas Góes é presbítero em Reconhecimento de Ordem na Diocese do Recife;
+  - source: darl1-4893
+    quote: Ministro Encarregado do Ponto Missionário Anglicano São Mateus , em São Luiz (MA).
+  notes: >-
+    Local: Ponto Missionário Anglicano São Mateus, São Luís-MA. Ordem recebida de outra igreja e reconhecida pela
+    diocese; o texto não informa a origem nem a data do reconhecimento. Cargo de ministro encarregado em 2010-12-20.

@@ -266,12 +266,24 @@ relations:
       Rev. Marcus O. Throup é Presbítero da Diocese do Recife; Secretário Diocesano de Relações Internacionais;
       professor no SAT-PB
     page: '77'
+  - source: darl1-167
+    quote: >-
+      11. Ter tido o discernimento do Espírito para, em momento oportuno, mesmo debaixo de muita pressão emocional,
+      psicológica e espiritual, ter conduzido o clero Ordenado a ser aceito pelo Primaz do Cone Sul, e ter suas
+      ordens e ministérios reconhecidos.
+  - source: darl1-167
+    quote: >-
+      21. E, desde já, agradecemos a Deus pelos projetos que caminham para a concretização, muito em breve, de nossa
+      saída do status de “Diocese Extraterritorial” no Cone Sul com indicativo sinodal de caráter “Permanente e
+      Regular”, além da eleição de um Bispo Sufragâneo.
   notes: >-
     Como diocese extra-provincial, com supervisão episcopal de Gregory Venables. Data só aproximada ('two years
     later' após 2005). Fontes posteriores divergem sobre o vínculo ter sido de fato provincial: pt-wiki diz que
     Robinson 'tentou filiar' a diocese ao Cone Sul; Atwood (dez/2015) diz 'Lacking a Provincial affiliation'. Sob
     autoridade primacial (supervisão) desde set/2005; em mai/2008 a integração plena à Província ainda era tratada
-    como futura.
+    como futura. Em outubro de 2009 a Diocese do Recife está sob a supervisão do primaz do Cone Sul com o status
+    de "Diocese Extraterritorial", e o clero espera a mudança para um status sinodal "Permanente e Regular". Situação
+    descrita em out/2009 (balanço do clero ao bispo); não é a data de início.
   discrepancies:
   - field: date
     value: c.2007
@@ -495,3 +507,46 @@ relations:
     quote: >-
       O novo Arcebispo Primaz da Província Anglicana do Sudeste da Ásia, e Bispo de Singapura, Revmo. Dr. John Chew
   notes: Carta de John Chew (Primaz eleito do Sudeste da Ásia) a Dom Robinson, de 31/01/2006.
+- type: broke_communion_with
+  target: diocese-de-new-hampshire
+  date: null
+  led_by:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: darl1-321
+    quote: >-
+      Depois da Sagração de Gene Robinson como Bispo, a Diocese do Recife emitiu uma Declaração de quebra de comunhão
+      com as Dioceses de New Hampshire e New Westminster.
+  notes: >-
+    Declaração da Diocese do Recife após a sagração de Gene Robinson, conforme relato do Rev. Miguel Uchôa (texto
+    do período 2005-2006).
+- type: broke_communion_with
+  target: diocese-de-new-westminster
+  date: null
+  led_by:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: darl1-321
+    quote: >-
+      Depois da Sagração de Gene Robinson como Bispo, a Diocese do Recife emitiu uma Declaração de quebra de comunhão
+      com as Dioceses de New Hampshire e New Westminster.
+  notes: >-
+    Declaração da Diocese do Recife após a sagração de Gene Robinson, conforme relato do Rev. Miguel Uchôa (texto
+    do período 2005-2006).
+- type: broke_communion_with
+  target: diocese-de-central-pennsylvania
+  date: null
+  led_by:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: darl1-321
+    quote: >-
+      Nosso Concílio Diocesano decidiu, por uma grande maioria de votos, declarar um estado de quebra de comunhão
+      com qualquer Diocese ou Província que apoiasse a decisão de ECUSA. Também decidimos suspender o companheirismo
+      com a Diocese da Pensilvânia Central que apoia a visão da ECUSA.
+  notes: >-
+    Suspensão do companheirismo (parceria) com a diocese, decidida pelo concílio diocesano, segundo o Rev. Miguel
+    Uchôa.
