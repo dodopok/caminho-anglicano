@@ -176,6 +176,9 @@ def aplicar(args):
     for it in itens:
         id_ = it['id']
         kind = 'person' if (DATA / 'people' / f'{id_}.yaml').exists() else 'jurisdiction'
+        if not (DATA / ('people' if kind == 'person' else 'jurisdictions') / f'{id_}.yaml').exists():
+            erros.append(f'{id_}: ficha não existe (renomeada ou fundida?)')
+            continue
         arq, d = carregar(kind, id_)
         texto = re.sub(r'\s+', ' ', it.get('texto') or '').strip()
         por_codigo = {}
