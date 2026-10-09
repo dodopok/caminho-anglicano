@@ -1,6 +1,8 @@
 # Episcopado para iOS, iPadOS e macOS — Plano de design do app nativo
 
-> Status: **proposta de design** (nada implementado). Companheiro nativo da layer `layers/episcopado` (Rede do Episcopado Histórico). Este documento define experiência, sistema visual, telas, integrações com o sistema e arquitetura técnica. Os mockups das telas estão no canvas "Episcopado para iOS" (claude.ai) publicado junto com este plano.
+> Status: **em implementação** no repositório [`rede-episcopado-app`](https://github.com/dodopok/rede-episcopado-app); a API que o alimenta está em `docs/EPISCOPADO-API.md`. Companheiro nativo da layer `layers/episcopado` (Rede do Episcopado Histórico). Este documento define experiência, sistema visual, telas, integrações com o sistema e arquitetura técnica. Os mockups das telas estão no canvas "Episcopado para iOS" (claude.ai) publicado junto com este plano.
+>
+> **Andamento (out/2026):** fases 0 a 3 e 5 escritas (pacote `EpiscopadoKit` compilado e testado no Linux, com paridade das fichas; app SwiftUI ainda sem compilação em Xcode). Da fase 4, ficaram de fora por decisão widgets e Siri/App Intents; Spotlight, Handoff por links, teclado e compartilhamento estão feitos. A base inteira roda offline a partir do snapshot.
 
 ## 1. Resumo
 
