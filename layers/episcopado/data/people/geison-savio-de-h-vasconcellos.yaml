@@ -105,3 +105,47 @@ affiliations:
     Local: Ponto Missionário Anglicano Esperança (Candeias, Jaboatão dos Guararapes-PE; Arcediagado Sul). Página
     "Comunidades" do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo,
     sem data de posse.
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Geison Sávio de Holanda Vasconcelos Paróquia Anglicana do Espírito Santo
+  notes: "Local: Paróquia Anglicana do Espírito Santo. Consta na carta aberta de 17/09/2004, assinada pela Diocese\
+    \ do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os\
+    \ presbíteros. "
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: conselho_diocesano
+  status: probable
+  sources:
+  - source: dard1-eletivos-2009a
+    quote: Rev. Geison Sávio de Holanda Vasconcellos (3 anos)
+  notes: >-
+    Local: Conselho Diocesano (membro clerical, mandato de 3 anos). Consta na lista "Cargos Eletivos (Sugestões
+    ao Plenário)" capturada em jan/2009; são sugestões ao plenário do Concílio, e a página não informa se foram
+    aprovadas nem a data.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_auxiliar
+  status: confirmed
+  sources:
+  - source: dard1-com-sul-2009a
+    quote: >-
+      Auxiliares: Rev. Geison Sávio de Holanda, Rev. Josias Junior, Rev. Dinamérico Wanderley, Rev. Ricardo Melo
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes). Consta na página de comunidades do Arcediagado
+    Sul capturada em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_encarregado
+  status: probable
+  sources:
+  - source: dard1-com-sul-2009a
+    quote: Rev. Geison Vasconcelos
+  notes: >-
+    Local: Ponto Missionário Anglicano Esperança (Jaboatão dos Guararapes). Consta na página de comunidades do Arcediagado
+    Sul capturada em 03/01/2009 (sem data de publicação visível). A página escreve "Rev. Geison Vasconcelos"; a
+    identificação com Geison Sávio de Holanda Vasconcellos (auxiliar da Paróquia do Espírito Santo na mesma página)
+    é provável.

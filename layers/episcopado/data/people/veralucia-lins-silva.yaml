@@ -117,9 +117,13 @@ affiliations:
   sources:
   - source: darn2-redentor-2008
     quote: 'Pároca: Revda. Vera Lúcia Lins Silva'
+  - source: dard1-com-centro-2009a
+    quote: 'Pároca: Revda. Vera Lúcia Lins Silva Coadjutora: Revda. Nadja Lins'
   notes: >-
     Local: Paróquia Anglicana do Redentor, Recife. Pároca em agosto de 2008 (citada como "Revda. Vera Lúcia Lins
-    Silva").
+    Silva"). Local: Paróquia Anglicana do Redentor (Recife). Consta na página de comunidades do Arcediagado Centro
+    capturada em 03/01/2009 (sem data de publicação visível). A página traz "(11/02)" ao lado do nome da paróquia,
+    sem explicar.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: pároca
@@ -140,3 +144,23 @@ affiliations:
   notes: >-
     Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
     de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim.
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Revda. Veralúcia Lins Silva Paróquia Anglicana do Redentor
+  notes: "Local: Paróquia Anglicana do Redentor. Consta na carta aberta de 17/09/2004, assinada pela Diocese do\
+    \ Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os presbíteros. "
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: procurador_diocesano
+  status: confirmed
+  sources:
+  - source: dard1-comissoes-2009a
+    quote: Procuradora Diocesana Revda. Veralúcia Lins Silva
+  - source: dard1-comissoes-2010
+    quote: Procuradora Diocesana Revda. Veralúcia Lins Silva
+  notes: "Local: Procuradoria Diocesana. Consta nas listas de cargos designados pelo bispo sob homologação do Concílio,\
+    \ na versão de jan/2009 e na de 01/07/2009. "

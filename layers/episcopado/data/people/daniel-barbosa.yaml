@@ -167,12 +167,24 @@ affiliations:
     quote: Daniel Barbosa da Silva é Frei, Prior da Ordem Evangélica de Santo Estevão Mártir – OSE e Clérigo;
   - source: dard2-clero-diacperm
     quote: Rev. Daniel Barbosa da Silva, OSE … Prior da Ordem Evangélica de Santo Estevão Mártir
+  - source: dard1-ose-estatuto
+    quote: Recife 16 de julho de 2005 Rev Frei Daniel Barbosa, OSE Prior
+  - source: dard1-ose-regra
+    quote: Recife 16 de julho de 2005 Rev Frei Daniel Barbosa, OSE Prior
+  - source: dard1-ose-declaracao-2007
+    quote: Recife 20 de agosto de 2007 Rev Frei Daniel Barbosa, OSE Prior
+  - source: dard1-ose-2009a
+    quote: Rev Frei Daniel Barbosa (Prior)
+  - source: dard1-ose-2010
+    quote: Rev Frei Daniel Barbosa (Prior)
   notes: >-
     Prior da Ordem Evangélica de Santo Estêvão Mártir. Lista da página 'Ordens Religiosas' do site da Diocese do
     Recife, arquivada em 24/10/2004. Prior da Ordem Evangélica de Santo Estevão Mártir em 2011-11-11 e em texto
     incluído no site em 2009-08-20. Local: Ordem Evangélica de Santo Estevão Mártir, OSE. Prior da Ordem Evangélica
     de Santo Estevão Mártir na lista de diáconos permanentes publicada em 13/08/2009 (captura de 18/02/2010); início
-    não informado. Na mesma lista consta como diácono permanente da Diocese do Recife.
+    não informado. Na mesma lista consta como diácono permanente da Diocese do Recife. Assina como Prior o Estatuto
+    e a Regra da Ordem (16/07/2005) e a declaração de 20/08/2007. Consta na relação de membros da Ordem de Santo
+    Estevão capturada em jan/2009 e na publicada em 01/07/2009 (atualizada em 18/11/2010). Integra o cabido da Ordem.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: diacono permanente
@@ -262,6 +274,74 @@ affiliations:
   - source: dard2-contato-2009
     quote: 'Diocese - Secretaria Recife: Rev. Daniel Barbosa'
   notes: Responsável pela secretaria da diocese no Recife na página de contato capturada em 13/10/2009.
+- jurisdiction: ieab
+  role: deacon
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Rev. Daniel Barbosa da Silva Prior da Ordem Evangélica de Santo Estevão Mártir Ponto Missionário Anglicano
+      Martin Luther King
+  notes: >-
+    Local: Ponto Missionário Anglicano Martin Luther King. Consta na carta aberta de 17/09/2004, assinada pela Diocese
+    do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os diáconos.
+    Consta como Prior da Ordem Evangélica de Santo Estevão Mártir.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretario_diocesano
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2009a
+    quote: 'Secretaria Diocesana Anglicana de Cidadania: Rev. Daniel Barbosa da Silva, ose'
+  - source: dard1-cargos-2010
+    quote: 'Secretaria Diocesana Anglicana de Cidadania: Rev. Daniel Barbosa da Silva, ose'
+  notes: >-
+    Local: Secretaria Diocesana Anglicana de Cidadania. Consta na lista de "Cargos Diocesanos" capturada em jan/2009
+    e na de jul/2009 (atualizada em 28/09/2010); a página não informa a data de início.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretario_episcopal
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2009a
+    quote: 'Secretario Episcopal Diocesana – Recife: Rev. Daniel Barbosa da Silva, ose'
+  - source: dard1-cargos-2010
+    quote: 'Secretario Episcopal Diocesana – Recife: Rev. Daniel Barbosa da Silva, ose'
+  notes: >-
+    Local: Secretaria Episcopal Diocesana (Recife). Consta na lista de "Cargos Diocesanos" capturada em jan/2009
+    e na de jul/2009 (atualizada em 28/09/2010); a página não informa a data de início.
+- jurisdiction: ose
+  role: member
+  status: confirmed
+  sources:
+  - source: dard1-ose-2009a
+    quote: Rev. Daniel Barbosa da Silva, OSE
+  - source: dard1-ose-2010
+    quote: Rev. Daniel Barbosa da Silva, OSE
+  notes: >-
+    Consta na relação de membros da Ordem de Santo Estevão capturada em jan/2009 e na publicada em 01/07/2009 (atualizada
+    em 18/11/2010). Listado entre os clérigos.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_encarregado
+  status: confirmed
+  sources:
+  - source: dard1-com-norte-2009a
+    quote: 'Ministro Encarregado: Rev. Daniel Barbosa Ministra Auxiliar: Revda. Fátima Figueira Pereira'
+  notes: >-
+    Local: Missão Anglicana Comunidade da Paz (Paulista-PE). Consta na página de comunidades do Arcediagado Norte
+    capturada em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: comissao_coordenadora_do_concilio
+  status: confirmed
+  sources:
+  - source: dard1-concilio-2008-carta
+    quote: Rev. Daniel Barbosa Rev. Fred Souto
+  notes: >-
+    Local: Comissão Especial Coordenadora do Concílio Diocesano 2008. Membro da comissão que organizou o XXVIII
+    Concílio (carta de convocação, setembro de 2008).
 events:
 - type: other
   date: '2017-11-25'

@@ -1,8 +1,10 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: fabiano-caldas-goes
 name: Fabiano Caldas Góes
+full_name: Fabiano Caldas Góes
 aliases:
 - Fabiano Góes
+- Rev. Fabiano Góes
 biography: >-
   Presbítero com ordem reconhecida pela Diocese Anglicana do Recife ("em Reconhecimento de Ordem"), ministro encarregado
   do Ponto Missionário Anglicano São Mateus, em São Luís (MA), em 2010-12-20.
@@ -42,10 +44,17 @@ affiliations:
   sources:
   - source: dard2-com-pb
     quote: Ponto Missionário Anglicano São Mateus , em São Luiz, Maranhão. Rev. Fabiano Góes
+  - source: dard1-projeto-maranhao-2010
+    quote: Rev. Fabiano Góes
+  - source: dard1-projeto-maranhao-2010
+    quote: Ponto Missionário Anglicano São Mateus , em São Luiz, Maranhão
   notes: >-
     Local: Ponto Missionário Anglicano São Mateus (São Luís-MA; Arcediagado PB/RN/CE). Página "Comunidades" do arcediagado,
     criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse. A página
     escreve "Rev. Fabiano Góes" sem o cargo; a identificação com Fabiano Caldas Góes é pelo nome e pelo ponto missionário.
+    Local: Ponto Missionário Anglicano São Mateus (São Luís-MA). Página da série "Diocese do Recife - Um Projeto
+    Missionário Anglicano Ortodoxo para o Brasil", publicada em 24/08/2010; a página não diz a função exata do reverendo.
+    Identificado com Fabiano Caldas Góes pelo mesmo ponto missionário (São Mateus, São Luís).
 events:
 - type: other
   date: '2010-04-11'

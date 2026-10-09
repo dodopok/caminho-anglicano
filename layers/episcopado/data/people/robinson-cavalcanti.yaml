@@ -432,6 +432,8 @@ affiliations:
   - source: drv-resgatando-iv
     quote: >-
       que foi Instalado e Empossado como Bispo Diocesano, na Paróquia da SS. Trindade, no dia 19 do mesmo mês.
+  - source: dard1-carta-caluniadores-2002
+    quote: Dom Edward Robinson de Barros Cavalcanti - Bispo Diocesano
   notes: >-
     Fonte o apresenta como terceiro bispo da diocese (após Sherrill e Clóvis Erly Rodrigues), primeiro nativo e
     primeiro eleito localmente. Instituição como titular em 19/10/1997, na Catedral da Santíssima Trindade, Recife,
@@ -443,7 +445,7 @@ affiliations:
     após o Tribunal Superior Eclesiástico reconhecer sua culpabilidade (Processo Canônico 001/2005). Sucedeu Clóvis
     Erly Rodrigues; primeira eleição feita pelo concílio local, já com a diocese autônoma. O fim do vínculo com
     a IEAB (deposição de 2005) é descrito pelo próprio autor como 'processo politicamente motivado e espúrio'. Instalado
-    e empossado na Paróquia (depois Catedral) da Santíssima Trindade, Recife.
+    e empossado na Paróquia (depois Catedral) da Santíssima Trindade, Recife. Consta assim na carta aberta de 08/12/2002.
   discrepancies:
   - field: start
     value: '1997-10-05'
@@ -557,6 +559,8 @@ affiliations:
   - source: darn2-falecimento-2012
     quote: >-
       comunica o trágico falecimento do Reverendíssimo Bispo Diocesano, Dom Edward Robinson de Barros Cavalcanti
+  - source: dard1-fale-conosco-2009a
+    quote: 'Bispo Diocesano: Revmº. Dom Robinson Cavalcanti'
   notes: >-
     Bispo da Diocese Anglicana do Recife dissidente desde 2005: carta de 25/01/2005 proclamando a diocese autônoma
     (Anexo Q) e acolhida pelo Primaz do Cone Sul antes de 12/10/2005 (Anexo S). Início dado apenas como ano porque
@@ -564,7 +568,8 @@ affiliations:
     declarou suspenso o relacionamento da Diocese com a IEAB; em 23/09/2005 o Cone Sul (Venables) aceitou o pedido
     de supervisão primacial. Início pode ser datado de 25/01/2005 (ruptura) ou 23/09/2005 (acolhida pelo Cone Sul).
     Era bispo diocesano em exercício na data do falecimento (26/02/2012). Sucedido, após eleição em 15/09/2012,
-    por Miguel Uchôa. Bispo diocesano até o falecimento, em 26/02/2012.
+    por Miguel Uchôa. Bispo diocesano até o falecimento, em 26/02/2012. Consta na página "Fale conosco" capturada
+    em jan/2009.
 - jurisdiction: iacs
   role: diocesan_bishop
   diocese: diocese-anglicana-recife
@@ -778,6 +783,17 @@ affiliations:
   notes: >-
     Local: Fraternidade dos Evangélicos na Comunhão Anglicana, EFAC. Reconduzido na Conferência Internacional da
     EFAC em Limuru, Quênia, em julho de 2003.
+- jurisdiction: ose
+  role: member
+  status: confirmed
+  sources:
+  - source: dard1-ose-2009a
+    quote: Revmº D. Edward Robinson de Barros Cavalcanti,OSE
+  - source: dard1-ose-2010
+    quote: Revmº D. Edward Robinson de Barros Cavalcanti,OSE
+  notes: >-
+    Consta na relação de membros da Ordem de Santo Estevão capturada em jan/2009 e na publicada em 01/07/2009 (atualizada
+    em 18/11/2010). Listado entre os clérigos.
 events:
 - type: other
   date: '1985'
@@ -4478,3 +4494,161 @@ events:
       da ACNA, designando o Primaz Robert Duncan como nosso Vigário Geral para os EUA
   - source: dard2-us-vii
     quote: 'Por um tempo elas manterão dupla filiação: à nova Província e a nós'
+- type: other
+  date: '2004-12-02'
+  description: >-
+    O XXIV Concílio Diocesano da Diocese do Recife, reunido em Olinda (02 a 04/12/2004), aprovou por unanimidade
+    uma carta aberta ao Arcebispo de Cantuária e aos Primazes da Comunhão Anglicana: reafirmou a lealdade à Sé de
+    Cantuária, declarou a diocese em "Estado de Emergência", suspendeu provisoriamente os vínculos com a liderança
+    provincial da IEAB e pediu supervisão primacial alternativa com jurisdição, a ser exercida por primaz de outra
+    província.
+  status: confirmed
+  sources:
+  - source: dard1-carta-emergencia-2004
+    quote: >-
+      reunida em seu XXIV Concílio Diocesano, pela presente, faz uma comunicação oficial de sua deliberação
+  - source: dard1-carta-emergencia-2004
+    quote: Considerar a Diocese Anglicana do Recife, em decorrência, em Estado de Emergência
+  - source: dard1-carta-emergencia-2004
+    quote: Supervisão Episcopal (de um Primaz) Primacial Alternativa Adequada com Jurisdição
+- type: other
+  date: '2005-02-26'
+  description: >-
+    Em 21/02/2005 o Fórum de Clérigos e Ministros Leigos da Diocese do Recife recomendou ao próximo Concílio Diocesano
+    Extraordinário rejeitar a Resolução 001/2005 do Primaz da IEAB, de 18/02/2005, e continuar a reconhecer Robinson
+    Cavalcanti como bispo diocesano; o Concílio Extraordinário, reunido em Setúbal (Recife) em 26/02/2005, rejeitou
+    as Resoluções 001/2005 (que pretendia suspender o ofício e ministério do bispo diocesano) e 002/2005 (de 22/02/2005,
+    que pretendia instituir nova Autoridade Eclesiástica), do Primaz Orlando Santos de Oliveira.
+  status: confirmed
+  sources:
+  - source: dard1-carta-forum-2005
+    quote: rejeitar a Resolução 001/2005, do Primaz da IEAB, de 18.02.2005
+  - source: dard1-carta-setubal-2005
+    quote: >-
+      Protestamos e rejeitamos as Resoluções 001/2005 de 18/02/2005 (que pretende determinar suspensão do Ofício
+      e Ministério do Bispo Diocesano) e 002/2005 de 22/02/2005 (que pretende instituir nova Autoridade Eclesiástica)
+  - source: dard1-carta-setubal-2005
+    quote: >-
+      continuamos, fortemente determinados, por unanimidade, a reconhecer o Revmo. Bispo Dom Edward Robinson de
+      Barros Cavalcanti como nosso Bispo Diocesano
+- type: other
+  date: '2004-09-17'
+  description: >-
+    A carta aberta de 17/09/2004 da Diocese do Recife rejeita a presença de Dom Maurício Andrade, ou de qualquer
+    outro bispo, para a "supervisão episcopal especial" prevista na Carta-Resolução da Câmara dos Bispos da IEAB
+    (Porto Alegre, 16/09/2004), e afirma que a Diocese desconhece pedidos de supervisão especial na pessoa dele.
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: A presença do Revmo. Dom Maurício Andrade , ou de qualquer outro Bispo
+  - source: dard1-carta-bispos-2004
+    quote: reunida em Porto Alegre-RS, em 16 de setembro de 2004
+  - source: dard1-carta-bispos-2004
+    quote: solicitar tal supervisão na pessoa do Revmo. Dom Maurício Andrade
+- type: other
+  date: '2004-10-16'
+  description: >-
+    Culto em ação de graças pelo 7º ano do episcopado de Robinson Cavalcanti, realizado na Paróquia Anglicana Jardim
+    das Oliveiras (Recife), com sermão de Miguel Uchôa.
+  status: confirmed
+  sources:
+  - source: dard1-uchoa-acao-gracas-2004
+    quote: >-
+      Sermão do Culto em Ação de Graças pelo 7º ano do episcopado do Bispo Robinson Cavalcanti na Paróquia Anglicana
+      Jardim das Oliveiras
+  - source: dard1-uchoa-acao-gracas-2004
+    quote: Recife (PE), 16.10.2004
+- type: other
+  date: '2003-05-23'
+  description: >-
+    Na carta de 23/05/2003 aos Primazes, Robinson Cavalcanti relata que, nos últimos seis anos, a Diocese cresceu
+    de 10 para mais de 40 paróquias, missões e pontos missionários, com a ordenação de quarenta sacerdotes e a instituição
+    de cinquenta pessoas ao ministério leigo, e que em setembro de 2002 o então deão da Catedral da Santíssima Trindade
+    e um grupo de líderes deixaram a Comunhão Anglicana.
+  status: confirmed
+  sources:
+  - source: dard1-carta-primazes-2003
+    quote: >-
+      Nos últimos seis anos, nós crescemos de 10 para mais de 40 Paróquias, Missões e Pontos Missionários, com a
+      ordenação de quarenta sacerdotes e a instituição de cinqüenta pessoas ao ministério leigo
+  - source: dard1-carta-primazes-2003
+    quote: >-
+      o então Deão da Igreja Catedral Anglicana da Santíssima Trindade, com um pequeno grupo de líderes, liderou
+      o rebanho para fora Comunhão Anglicana
+- type: other
+  date: '2000-12-02'
+  description: >-
+    A sessão de 02/12/2000 do XX Concílio Diocesano, com a presença do Rev. Paulo Garcia, aprovou tornar canônica
+    e permanente a exigência "não opção pessoal ou defesa da normalidade da prática sexual homoerótica, nem atitude
+    homofóbica" para o clero.
+  status: confirmed
+  sources:
+  - source: dard1-verdades-2002
+    quote: na sessão de 2 de dezembro de 2000, foi aprovada que fosse tornada canônica, permanente
+  - source: dard1-verdades-2002
+    quote: não opção pessoal ou defesa da normalidade da prática sexual homoerótica, nem atitude homofóbica
+- type: other
+  date: null
+  description: >-
+    Segundo Miguel Uchôa (2005), Robinson Cavalcanti foi eleito bispo pelo Concílio Diocesano; a eleição não foi
+    aceita por dois dos seis bispos diocesanos da Província e um dos seis conselhos diocesanos foi contra, havendo
+    risco de ela não ser homologada pela Câmara dos Bispos.
+  status: confirmed
+  sources:
+  - source: dard1-uchoa-inglaterra-2005
+    quote: Nosso Bispo atual foi eleito pelo Concílio Diocesano
+  - source: dard1-uchoa-inglaterra-2005
+    quote: a eleição dele não foi aceita por dois dos seis Bispos Diocesanos da Província
+- type: other
+  date: '2007-12-06'
+  description: >-
+    XXVII Concílio Diocesano da Diocese do Recife, realizado na Colônia Salesiana, em Jaboatão dos Guararapes (PE),
+    nos dias 06, 07 e 08/12/2007.
+  status: confirmed
+  sources:
+  - source: dard1-galeria-2008
+    quote: >-
+      XXVII CONCÍLIO DIOCESANO Realizado na Colônia Salesiana Jaboatão dos Guararapes - PE nos dias 06, 07 e 08/12/2007
+- type: other
+  date: '2008-12-04'
+  description: >-
+    XXVIII Concílio Diocesano da Diocese do Recife, realizado na Colônia Salesiana, em Jaboatão dos Guararapes (PE),
+    nos dias 04, 05 e 06/12/2008; a carta de convocação aos delegados informa que, a partir de 2008, o Concílio
+    deixa de ter paróquia hospedeira e fica sob direção de uma equipe diocesana.
+  status: confirmed
+  sources:
+  - source: dard1-galeria-2008
+    quote: >-
+      XXVIII CONCÍLIO DIOCESANO Realizado na Colônia Salesiana Jaboatão dos Guararapes - PE nos dias 04, 05 e 06/12/2008
+  - source: dard1-concilio-2008-carta
+    quote: o XXVIII Concílio da Diocese do Recife será realizado nos dias 04, 05 e 06 de dezembro
+  - source: dard1-concilio-2008-carta
+    quote: na Colônia Salesiana em Jaboatão dos Guararapes-PE
+  - source: dard1-concilio-2008-carta
+    quote: A partir deste ano, temos como novidade não haver uma Paróquia hospedeira
+- type: other
+  date: '2008-03-27'
+  description: >-
+    Visita do Primaz da Igreja Anglicana do Cone Sul, Dom Gregory Venables, ao Recife, de 27/03 a 01/04/2008 (galeria
+    de fotos do site da Diocese).
+  status: confirmed
+  sources:
+  - source: dard1-galeria-2008
+    quote: Visita do Primaz Dom Gregory Venables ao Recife Recife(PE),De 27/Março a 01/Abril/2008
+- type: other
+  date: '2009-07-01'
+  description: >-
+    Em 01/07/2009 (atualizada em 24/12/2009) a página "Arcediagados" do site da Diocese lista 54 comunidades em
+    seis arcediagados: Extraterritorial Internacional-EUA (5), Centro (7), Norte (7, página sem o rótulo "Norte"),
+    PB-RN-CE (14), Sul (8) e Extraterritorial Nacional Sul/Sudeste (13). Em jan/2009 os arcediagados extraterritoriais
+    constavam como "Arcediagado Especial da América do Norte - EUA" e "Arcediagado Brasil Sul/Suldeste".
+  status: confirmed
+  sources:
+  - source: dard1-arcediagados-2010
+    quote: Arcediagado Extraterritorial Internacional - EUA
+  - source: dard1-arcediagados-2010
+    quote: Arcediagado Extraterritorial Nacional - Sul/Suldeste
+  - source: dard1-arcediagados-2009a
+    quote: Arcediagado Especial da América do Norte - EUA
+  - source: dard1-arcediagados-2009a
+    quote: Arcediagado Brasil Sul/Suldeste

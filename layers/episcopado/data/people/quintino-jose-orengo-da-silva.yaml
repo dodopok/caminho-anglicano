@@ -174,11 +174,15 @@ affiliations:
   - source: dard2-com-norte
     quote: >-
       Paróquia Anglicana do Semeador(09/08) Pároco: Rev. Côn. Quintino Orengo Coadjutor: Revda. Teresa Catão
+  - source: dard1-com-norte-2009a
+    quote: 'Pároco: Rev. Côn. Quintino Orengo Coadjutor: Revda. Teresa Catão'
   notes: >-
     Local: Paróquia Anglicana do Semeador, Olinda-PE. Assina como responsável pela paróquia em convite de 31/05/2012;
     a nota não diz o título. Local: Paróquia Anglicana do Semeador (Jardim Brasil II, Olinda-PE; Arcediagado Norte).
     Página "Comunidades" do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo,
-    sem data de posse.
+    sem data de posse. Local: Paróquia Anglicana do Semeador (Olinda). Consta na página de comunidades do Arcediagado
+    Norte capturada em 03/01/2009 (sem data de publicação visível). A página traz "(09/08)" ao lado do nome da paróquia,
+    sem explicar.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: presbítero
@@ -189,3 +193,27 @@ affiliations:
   notes: >-
     Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
     de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim.
+- jurisdiction: ieab
+  role: other
+  role_description: arcediago
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Ven. Arc. Côn. Rev. Quintino José Orengo da Silva Arcediagado Centro Paróquia Anglicana do Semeador
+  - source: dard1-carta-primaz-2004-06
+    quote: Ven Arc Rev Côn Quintino José Orengo da Silva Arcedigado Centro
+  notes: >-
+    Local: Arcediagado Centro; Paróquia Anglicana do Semeador. Consta na carta aberta de 17/09/2004, assinada pela
+    Diocese do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: comissao_de_ministerio
+  status: confirmed
+  sources:
+  - source: dard1-comissoes-2009a
+    quote: Comissão de Ministério Rev. Cônego Quintino José Orengo da Silva
+  - source: dard1-comissoes-2010
+    quote: Comissão de Ministério Rev. Cônego Quintino José Orengo da Silva
+  notes: "Local: Comissão de Ministério. Consta nas listas de cargos designados pelo bispo sob homologação do Concílio,\
+    \ na versão de jan/2009 e na de 01/07/2009. "

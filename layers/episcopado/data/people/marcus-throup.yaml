@@ -146,6 +146,50 @@ affiliations:
   notes: >-
     Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
     de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim.
+- jurisdiction: ieab
+  role: deacon
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Marcus Throup Paróquia Anglicana Jardim das Oliveiras
+  notes: "Local: Paróquia Anglicana Jardim das Oliveiras. Consta na carta aberta de 17/09/2004, assinada pela Diocese\
+    \ do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os\
+    \ diáconos. "
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: capelao_do_seminario
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2009a
+    quote: Capelão Rev. Marcus Oliver Throup
+  - source: dard1-cargos-2010
+    quote: Capelão Rev. Marcus Oliver Throup
+  notes: >-
+    Local: SAT-PB (Seminário Anglicano Teológico da Paraíba). Consta na lista de "Cargos Diocesanos" capturada em
+    jan/2009 e na de jul/2009 (atualizada em 28/09/2010); a página não informa a data de início.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: comunicacao_social_internacional
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2009a
+    quote: 'a) Internacional : Rev. Marcus Oliver Throup'
+  - source: dard1-cargos-2010
+    quote: 'a) Internacional : Rev. Marcus Oliver Throup'
+  notes: >-
+    Local: Secretaria Diocesana Anglicana de Comunicação Social (internacional). Consta na lista de "Cargos Diocesanos"
+    capturada em jan/2009 e na de jul/2009 (atualizada em 28/09/2010); a página não informa a data de início.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: equipe_pastoral
+  status: confirmed
+  sources:
+  - source: dard1-com-pbrnce-2009a
+    quote: 'Equipe Pastoral: Rev. Marcus Oliver Throup, Gustavo Leite Castello Branco'
+  notes: >-
+    Local: Con-Catedral Anglicana da Ressurreição (João Pessoa). Consta na página de comunidades do Arcediagado
+    PB/RN/CE capturada em 03/01/2009 (sem data de publicação visível).
 events:
 - type: other
   date: '2004-12-30'

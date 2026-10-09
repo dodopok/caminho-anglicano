@@ -13,6 +13,7 @@ aliases:
 - Diocese do Recife (Diocese Setentrional)
 - Diocese do Recife (IEAB)
 - Diocese do Recife (Setentrional)
+- Diocese do Recife (antiga Diocese Setentrional) da IEAB
 type: diocese
 country: BR
 founded:
@@ -53,6 +54,19 @@ founded:
         A Diocese de Recife foi oficialmente criada pelo Sínodo em junho de 1975, que recebeu um requerimento do
         concílio da Diocese Central, pedindo o desmembramento de uma vasta área geográfica no norte e nordeste
       page: '296'
+  - field: date
+    value: '1975-05-31'
+    sources:
+    - source: dard1-verdades-2002
+      quote: na XV Reunião do Sínodo da Igreja Episcopal do Brasil, em sessão de 31 de maio de 1975
+    - source: dard1-verdades-2002
+      quote: foi criada a então chamada Diocese Setentrional, desmembrada da Diocese Central
+    - source: dard1-uchoa-inglaterra-2005
+      quote: A Diocese foi fundada em 1974, pelo Bispo Edmund Knox Sherrill
+    - source: dard1-aniversario-2009
+      quote: 33 anos (20/05/1976 - 20/05/2009)
+    - source: dard1-aniversario-2009
+      quote: 'Maio: Mï¿½s de Aniversário da Diocese do Recife'
 website: https://dioceseanglicanaderecife.com.br/
 description: >-
   Criada pelo Sinodo em 1975 (17/04/1975 segundo a IEAB), instalada em 1976; abrangia Norte e Nordeste ate a criacao
@@ -1023,6 +1037,117 @@ relations:
     quote: Estevão Meneses da Silva
   - source: ieabrecife-clero-2002
     quote: Paróquia Anglicana Bom Samaritano
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Ven. Arc. Rev. Maurício R. Fernandes Coelho Presidente do Conselho Diocesano Arcediagado Sul Paróquia Anglicana
+      Jardim das Oliveiras
+  - source: dard1-carta-primaz-2004-06
+    quote: Ven Arc Rev Maurício R Fernandes Coelho Presidente do Conselho Diocesano Arcediagado Sul
+  - source: dard1-carta-bispos-2004
+    quote: Ven. Arc. Rev. Maurício R. Fernandes Coelho Presidente do Conselho Diocesano
+  - source: dard1-carta-primaz-2004-06
+    quote: Ven Arc Rev Maurício R Fernandes Coelho Presidente do Conselho Diocesano
+  - source: dard1-carta-emergencia-2004
+    quote: Rev. Maurício R. Fernandes Coelho Pres. do Conselho Diocesano
+  - source: dard1-carta-bispos-2004
+    quote: Ven. Arc. Côn. Rev. Quintino José Orengo da Silva Arcediagado Centro Paróquia Anglicana do Semeador
+  - source: dard1-carta-primaz-2004-06
+    quote: Ven Arc Rev Côn Quintino José Orengo da Silva Arcedigado Centro
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Ven. Arc. Revda. Maria Gorete Correia M. Silva Secretária Diocesana de Ação Social Paróquia Anglicana da Redenção
+  - source: dard1-carta-bispos-2004
+    quote: Revmo. Deão Rev. Luiz Souza de França Arcediagado PB/RN/CE Con-Catedral Anglicana da Ressurreição
+  - source: dard1-carta-primaz-2004-06
+    quote: Ven Arc Revmo Deão Luiz Souza de França Arcediagado PB/RN/CE
+  - source: dard1-carta-bispos-2004
+    quote: Revda. Siméa de Souza Meldrum Paróquia Anglicana Água Viva
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Estevão Menezes da Silva Secretaria Administrativa Paróquia Anglicana Jardim das Oliveiras
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Rev. Manoel Severino Moraes de Almeida Secretaria de Direitos Humanos Paróquia Anglicana Bom Samaritano
+  - source: dard1-carta-bispos-2004
+    quote: ML. Jeane Grande de Miranda Arruda Coelho Secretaria de Intercessão Missão Anglicana Salvação
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Evilásio Tenório da Silva Ponto Missionário Anglicano Betel
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Rev. Fernando Acosta Rodriguez Paróquia Anglicana do Espírito Santo e Ponto Missionário Anglicano Jesus de
+      Nazaré
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Geison Sávio de Holanda Vasconcelos Paróquia Anglicana do Espírito Santo
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Revda. Juciara Maria Rodrigues do N. Crasto Paróquia Anglicana São Paulo Ponto Missionário Anglicano Betesda
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Márcio Medeiros Meira Paróquia Anglicana do Salvador Paróquia Anglicana Comunhão
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Rev.Miguel Ângelo de A. Uchoa Cavalcanti Paróquia Anglicana do Espírito Santo e Ponto Missionário Anglicano
+      Monte Moriá
+  - source: dard1-carta-bispos-2004
+    quote: Revda. Veralúcia Lins Silva Paróquia Anglicana do Redentor
+  - source: dard1-carta-bispos-2004
+    quote: Revda. Vera Lúcia Melo do Nascimento Paróquia Anglicana Emanuel
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Côn. Washington Franco Missão Anglicana Filadélfia
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Rev. Daniel Barbosa da Silva Prior da Ordem Evangélica de Santo Estevão Mártir Ponto Missionário Anglicano
+      Martin Luther King
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Décio da Silva Paróquia Anglicana Emanuel
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Elias Leôncio de Brito Filho Paróquia Anglicana Bom Samaritano
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Fred de Melo Souto Lima Paróquia Anglicana do Espírito Santo
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Josias Pereira de Souza Júnior Paróquia Anglicana do Espírito Santo
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Manoel Nunes da Silva Neto Missão Anglicana da Esperança
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Marconi Alves de Oliveira Ponto Missionário Anglicano Nova Vida
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Marcus Throup Paróquia Anglicana Jardim das Oliveiras
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Raniere Almeida de Oliveira Paróquia Anglicana do Semeador
+  - source: dard1-carta-bispos-2004
+    quote: Revda. Solange Cristina Pereira Ponto Missionário Anglicano da Paz
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Tibério Marques da Silva Paróquia Anglicana da Redenção
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Antônio Costa de Oliveira Missão Anglicana do Consolador
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Cézar Romero Leal Vieira Paróquia Anglicana Jardim das Oliveiras
+  - source: dard1-carta-bispos-2004
+    quote: André Luiz de Souza Missão Anglicana Filadélfia
+  - source: dard1-carta-bispos-2004
+    quote: Cláudio Luiz Figueiredo de Brito Paróquia Anglicana do Salvador
+  - source: dard1-carta-bispos-2004
+    quote: Dinamérico Wanderley Ribeiro de Sousa Paróquia Anglicana do Espírito Santo
+  - source: dard1-carta-bispos-2004
+    quote: Flávio Adair Torres Soares Missão Anglicana Cristo Libertador
+  - source: dard1-carta-bispos-2004
+    quote: Maurício Amazonas Paróquia Anglicana Bom Samaritano
+  - source: dard1-carta-bispos-2004
+    quote: Teresa Julieta de Paula Menezes Catão Missão Anglicana da Salvação
+  - source: dard1-verdades-2002
+    quote: >-
+      Em março de 1975, a pedido do bispo da Diocese Central, rev. Edmund K. Sherrill, o rev. Paulo Garcia veio
+      assumir a Paróquia da Santíssima Trindade, no Recife
+  - source: dard1-carta-caluniadores-2002
+    quote: Rev. Edmar Carvalho Pimentel - Presidente do Conselho Diocesano
+  - source: dard1-carta-caluniadores-2002
+    quote: Dom Filadelfo Oliveira Neto - Bispo Sufragâneo (Auxiliar)
+  - source: dard1-carta-caluniadores-2002
+    quote: Dom Edward Robinson de Barros Cavalcanti - Bispo Diocesano
+  - source: dard1-carta-caluniadores-2002
+    quote: Sérgio Andrade , Coadjutor (Pastor auxiliar) da Catedral Anglicana da Santíssima Trindade
+  - source: dard1-carta-primazes-2003
+    quote: liderados pelo Ministro Coadjutor, o Rev. Sérgio Andrade
+  - source: dard1-uchoa-iaeb-2005
+    quote: eu, membro por um mandato do Conselho Executivo do Sínodo
 - type: broke_communion_with
   target: tec
   date: '2003'

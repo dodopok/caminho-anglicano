@@ -90,9 +90,14 @@ affiliations:
   sources:
   - source: rcor-drv-ordens-dar
     quote: Rev. Tibério Silva (Ecônomo)
+  - source: dard1-ose-2009a
+    quote: Rev. Tibério Marques da Silva, OSE
+  - source: dard1-ose-2010
+    quote: Rev. Tibério Marques da Silva, OSE
   notes: >-
     Ecônomo da OSE (nome grafado 'Tibério Silva'). Lista da página 'Ordens Religiosas' do site da Diocese do Recife,
-    arquivada em 24/10/2004.
+    arquivada em 24/10/2004. Consta na relação de membros da Ordem de Santo Estevão capturada em jan/2009 e na publicada
+    em 01/07/2009 (atualizada em 18/11/2010). Listado entre os clérigos.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: secretário diocesano de homens
@@ -151,3 +156,57 @@ affiliations:
     Local: Paróquia Anglicana Jesus de Nazaré (Gaibu, Cabo de Santo Agostinho-PE; Arcediagado Sul). Página "Comunidades"
     do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de
     posse.
+- jurisdiction: ieab
+  role: deacon
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Tibério Marques da Silva Paróquia Anglicana da Redenção
+  notes: "Local: Paróquia Anglicana da Redenção. Consta na carta aberta de 17/09/2004, assinada pela Diocese do\
+    \ Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os diáconos. "
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: contador_diocesano
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2009a
+    quote: 'Contador Diocesano: Rev. Tibério Marques da Silva, ose'
+  - source: dard1-cargos-2010
+    quote: 'Contador Diocesano: Rev. Tibério Marques da Silva, ose'
+  notes: >-
+    Local: Contador Diocesano. Consta na lista de "Cargos Diocesanos" capturada em jan/2009 e na de jul/2009 (atualizada
+    em 28/09/2010); a página não informa a data de início.
+- jurisdiction: ose
+  role: other
+  role_description: economo
+  status: confirmed
+  sources:
+  - source: dard1-ose-2009a
+    quote: Rev Tibério Marques (Ecônomo)
+  - source: dard1-ose-2010
+    quote: Rev Tibério Marques (Ecônomo)
+  notes: >-
+    Consta na relação de membros da Ordem de Santo Estevão capturada em jan/2009 e na publicada em 01/07/2009 (atualizada
+    em 18/11/2010). Integra o cabido da Ordem.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_auxiliar
+  status: confirmed
+  sources:
+  - source: dard1-com-norte-2009a
+    quote: 'Pároca: Ven. Arced. Revda. Maria Gorete Correia, OSE Auxiliar: Rev. Tibério Marques, OSE'
+  notes: >-
+    Local: Paróquia Anglicana da Redenção (Olinda). Consta na página de comunidades do Arcediagado Norte capturada
+    em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: deacon
+  status: probable
+  sources:
+  - source: dard1-locomotiva-2008
+    quote: Revdos. Tibério Marques e Maria Gorete
+  - source: dard1-locomotiva-2008
+    quote: Um Diácono de peso e uma Presbítera de garra
+  notes: >-
+    Prêmio "Locomotiva Diocesana" de 2008: o texto descreve o par de homenageados como "um diácono" e "uma presbítera";
+    a ordem dos dois substantivos sugere que o diácono é Tibério Marques.

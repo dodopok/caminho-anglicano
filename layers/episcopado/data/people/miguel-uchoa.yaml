@@ -494,6 +494,12 @@ affiliations:
     quote: Reitor da Paróquia Anglicana Espírito Santo, em Jaboatão dos Guararapes (PE)
   - source: dard2-com-sul
     quote: 'Paróquia Anglicana do Espírito Santo Reitor: Rev. Miguel Uchôa Cavalcanti'
+  - source: dard1-uchoa-jc-2005
+    quote: Como Reitor da Paróquia Anglicana do Espírito Santo
+  - source: dard1-uchoa-acao-gracas-2004
+    quote: Rev. Miguel Uchôa é reitor da Paróquia Anglicana do Espírito Santo, em Jaboatão dos Guararapes-PE
+  - source: dard1-com-sul-2009a
+    quote: 'Reitor: Rev. Miguel Uchôa Cavalcanti'
   notes: >-
     Local: Paróquia Anglicana do Espírito Santo, Jaboatão dos Guararapes. Reitor da Paróquia Anglicana do Espírito
     Santo (PAES) atestado em outubro de 2005 e em 21/10/2007; também é arcediago (Arcediagado Sul) em 2006. Local:
@@ -502,7 +508,11 @@ affiliations:
     e 2012-09-19. Local: Paróquia Anglicana Espírito Santo, Jaboatão dos Guararapes-PE. Reitor da PAES em 19/09/2012,
     na ocasião da eleição episcopal. Local: Paróquia Anglicana do Espírito Santo (Piedade, Jaboatão dos Guararapes-PE;
     Arcediagado Sul). Página "Comunidades" do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo
-    atestado nesse intervalo, sem data de posse.
+    atestado nesse intervalo, sem data de posse. Local: Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes).
+    Em 16/10/2004 e em 21/08/2005. Na assinatura de 2004 consta ainda como representante da agência missionária
+    SOMA. Local: Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes). Consta na página de comunidades
+    do Arcediagado Sul capturada em 03/01/2009 (sem data de publicação visível). A página traz "(22/08)" ao lado
+    do nome da paróquia, sem explicar (provável data de aniversário).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago
@@ -520,12 +530,20 @@ affiliations:
     quote: O Ven. Arc. Rev. Miguel Uchoa com toda a Equipe Pastoral da Paróquia
   - source: darl1-2912
     quote: Arcediago da Região Sul da Diocese Anglicana do Recife
+  - source: dard1-uchoa-jc-2005
+    quote: >-
+      Reitor da Paróquia Anglicana do Espírito Santo e Arcediago da Região Sul da Diocese Anglicana do Recife
+  - source: dard1-uchoa-iaeb-2005
+    quote: Rev. Miguel Uchoa - Arcediago Sul da DAR e Reitor da Paróquia Anglicana do Espírito Santo
+  - source: dard1-franca-iaeb-2005
+    quote: Venerável Arcediago Rev. Miguel Uchôa
   notes: >-
     Assina a carta a Venables (17/10/2005) como arcediago. Local: Arcediagado Sul. Arcediagado Sul em out/nov de
     2006. Cargo exercido em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados. Arcediago
     em abril de 2006; arcediagado não indicado. Local: Paróquia Anglicana do Espírito Santo. Arcediago e líder da
     equipe pastoral da Paróquia do Espírito Santo em outubro de 2005. Local: Arcediagado Sul. Assina como arcediago
-    da Região Sul em textos reproduzidos no site em 2009.
+    da Região Sul em textos reproduzidos no site em 2009. Local: Arcediagado da Região Sul. Consta no artigo publicado
+    no Jornal do Commercio em 21/08/2005 e em textos do mesmo ano.
 - jurisdiction: gafcon
   role: other
   role_description: membro do Conselho dos Primazes
@@ -614,6 +632,39 @@ affiliations:
   notes: >-
     Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
     de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim.
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Rev.Miguel Ângelo de A. Uchoa Cavalcanti Paróquia Anglicana do Espírito Santo e Ponto Missionário Anglicano
+      Monte Moriá
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo; Ponto Missionário Anglicano Monte Moriá. Consta na carta aberta
+    de 17/09/2004, assinada pela Diocese do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de
+    cada signatário. Listado entre os presbíteros. Nome na carta: Miguel Ângelo de A. Uchoa Cavalcanti.
+- jurisdiction: ieab
+  role: other
+  role_description: conselho_executivo_do_sinodo
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-uchoa-iaeb-2005
+    quote: eu, membro por um mandato do Conselho Executivo do Sínodo
+  notes: Afirmação do próprio Uchôa em texto de 2005, sem informar o período do mandato.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: junta_de_capelaes_examinadores
+  status: probable
+  sources:
+  - source: dard1-eletivos-2009a
+    quote: Rev. Miguel Ângelo de A. Cavalcanti Uchoa (2 anos)
+  notes: >-
+    Local: Junta de Capelães Examinadores (mandato de 2 anos). Consta na lista "Cargos Eletivos (Sugestões ao Plenário)"
+    capturada em jan/2009; são sugestões ao plenário do Concílio, e a página não informa se foram aprovadas nem
+    a data.
 events:
 - type: other
   date: '2017-05-06'
@@ -1337,3 +1388,30 @@ events:
       Integram essa comissão os reverendos Miguel Uchoa (coordenador), Maurício Coelho, Maurício Amazonas (presidente
       do Conselho Diocesano) e os Arcediagos Luiz Souza, João Peixoto (secretário), Fred Souto, Evilásio Tenório
       e Carlos Alberto Fernandes
+- type: other
+  date: '2004-10-16'
+  description: >-
+    Culto em ação de graças pelo 7º ano do episcopado de Robinson Cavalcanti, realizado na Paróquia Anglicana Jardim
+    das Oliveiras (Recife), com sermão de Miguel Uchôa.
+  status: confirmed
+  sources:
+  - source: dard1-uchoa-acao-gracas-2004
+    quote: >-
+      Sermão do Culto em Ação de Graças pelo 7º ano do episcopado do Bispo Robinson Cavalcanti na Paróquia Anglicana
+      Jardim das Oliveiras
+  - source: dard1-uchoa-acao-gracas-2004
+    quote: Recife (PE), 16.10.2004
+- type: other
+  date: '1996'
+  description: >-
+    Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes), da qual Miguel Uchôa é reitor, celebra em 21/08/2005
+    nove anos de existência (ocupação do antigo imóvel de uma casa noturna por cerca de 25 pessoas), o que situa
+    sua fundação por volta de agosto de 1996.
+  status: probable
+  sources:
+  - source: dard1-uchoa-jc-2005
+    quote: Celebramos 9 anos de vida comunitária, família de Deus na Paróquia Anglicana do Espírito Santo
+  - source: dard1-uchoa-jc-2005
+    quote: 9 anos atrás estávamos, eu e cerca de 25 pessoas
+  - source: dard1-uchoa-jc-2005
+    quote: Artigo Publicado na Edição do Jornal do Commercio do dia 21.08.2005

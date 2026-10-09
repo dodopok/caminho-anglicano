@@ -69,6 +69,13 @@ affiliations:
       a Ordem ficou restrita a um círculo muito específico de clérigos, sobrevivendo através deles, até hoje, como
       por exemplo, o reverendo Maurício Amazonas.
     page: '28'
+  - source: dard1-ose-2009a
+    quote: Rev. Maurício Amazonas dos Santos,OSE
+  - source: dard1-ose-2010
+    quote: Rev. Maurício Amazonas dos Santos,OSE
+  notes: >-
+    Consta na relação de membros da Ordem de Santo Estevão capturada em jan/2009 e na publicada em 01/07/2009 (atualizada
+    em 18/11/2010). Listado entre os clérigos.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: pároco
@@ -79,10 +86,14 @@ affiliations:
   - source: dard2-com-sul
     quote: >-
       Paróquia Anglicana Jardim das Oliveiras Pároco: Rev. Maurício Amazonas Auxiliar: Revda. Keyla Camargo
+  - source: dard1-com-sul-2009a
+    quote: 'Pároco: Rev. Maurício Amazonas Auxiliar: Revda. Keyla Camargo'
   notes: >-
     Local: Paróquia Anglicana Jardim das Oliveiras. Em maio de 2011. Local: Paróquia Anglicana Jardim das Oliveiras
     (Setúbal, Recife-PE; Arcediagado Sul). Página "Comunidades" do arcediagado, criada em 20/08/2009 e capturada
-    em 29/11/2010; cargo atestado nesse intervalo, sem data de posse.
+    em 29/11/2010; cargo atestado nesse intervalo, sem data de posse. Local: Paróquia Anglicana Jardim das Oliveiras
+    (Recife). Consta na página de comunidades do Arcediagado Sul capturada em 03/01/2009 (sem data de publicação
+    visível).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: vigário geral
@@ -181,6 +192,63 @@ affiliations:
   notes: >-
     Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
     de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim.
+- jurisdiction: ieab
+  role: other
+  role_description: ministro_leigo
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Maurício Amazonas Paróquia Anglicana Bom Samaritano
+  notes: >-
+    Local: Paróquia Anglicana Bom Samaritano. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife
+    (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os ministros leigos
+    / ministros encarregados (ainda não ordenado, segundo a carta).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: capelao_do_seminario
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2009a
+    quote: Capelão Rev. Maurício Manoel Amazonas dos Santos, ose
+  - source: dard1-cargos-2010
+    quote: Capelão Rev. Maurício Manoel Amazonas dos Santos, ose
+  notes: >-
+    Local: SAT-PE (Seminário Anglicano Teológico de Pernambuco). Consta na lista de "Cargos Diocesanos" capturada
+    em jan/2009 e na de jul/2009 (atualizada em 28/09/2010); a página não informa a data de início.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: estatistico_diocesano
+  status: confirmed
+  sources:
+  - source: dard1-comissoes-2009a
+    quote: Estatístico Diocesano Rev. Maurício Manoel Amazonas dos Santos, ose
+  - source: dard1-comissoes-2010
+    quote: Estatístico Diocesano Rev. Maurício Manoel Amazonas dos Santos, ose
+  notes: "Local: Estatístico Diocesano. Consta nas listas de cargos designados pelo bispo sob homologação do Concílio,\
+    \ na versão de jan/2009 e na de 01/07/2009. "
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: conselho_diocesano
+  status: probable
+  sources:
+  - source: dard1-eletivos-2009a
+    quote: Rev. Maurício Manoel Amazonas dos Santos, ose (1 ano)
+  notes: >-
+    Local: Conselho Diocesano (membro clerical, mandato de 1 ano). Consta na lista "Cargos Eletivos (Sugestões ao
+    Plenário)" capturada em jan/2009; são sugestões ao plenário do Concílio, e a página não informa se foram aprovadas
+    nem a data.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: direcao_do_sat-pe
+  status: confirmed
+  sources:
+  - source: dard1-sat-livros-2008
+    quote: Rev. Maurício Amazonas
+  notes: >-
+    Local: SAT-PE (Seminário Anglicano Teológico de Pernambuco). Assina como membro da direção do SAT/PE no pedido
+    de doação de livros de 2008, que fala em reestruturação do seminário, aulas na antiga sede da Catedral do Bom
+    Samaritano e novas disciplinas para 2009.
 events:
 - type: other
   date: '2011-05-05'

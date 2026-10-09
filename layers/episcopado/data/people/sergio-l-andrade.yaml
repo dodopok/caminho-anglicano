@@ -122,6 +122,8 @@ affiliations:
     quote: >-
       Após a saída do grupo ligado ao reverendo Sérgio, foi assumido o nome de “Igreja Anglicana da Santíssima Trindade”
     page: '247'
+  - source: dard1-carta-caluniadores-2002
+    quote: Sérgio Andrade , Coadjutor (Pastor auxiliar) da Catedral Anglicana da Santíssima Trindade
   notes: >-
     Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
     por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. Deão da Catedral Anglicana
@@ -130,6 +132,9 @@ affiliations:
     Início e fim do vínculo não informados. Ficou na IEAB em 2002 e em 2004-2005 (assinou 'Para além das trincheiras'
     e 'Não sairemos'). Deão da Catedral da SS. Trindade desde 17/08/2003. No fim de 2016 liderou a 'Aliança de Comunidades
     Anglicanas' e em 2017 rompeu com a IEAB, fundando a Igreja Anglicana da Santíssima Trindade (independente).
+    Local: Catedral Anglicana da Santíssima Trindade (Recife). Coadjutor (pastor auxiliar) da Catedral, apontado
+    pela carta de 08/12/2002 como leal à Diocese; os fiéis leais estavam reunidos provisoriamente na Paróquia Anglicana
+    do Bom Samaritano, em Boa Viagem. Sobrenome e nome conforme a carta ("Rev. Sérgio Andrade").
 - jurisdiction: ieab-dar
   role: other
   role_description: coadjutor
@@ -160,6 +165,17 @@ affiliations:
   - source: darl2-caluniadores
     quote: Rev. Sérgio Andrade , Coadjutor (Pastor auxiliar) da Catedral Anglicana da Santíssima Trindade
   notes: 'Local: Diocese Anglicana do Recife. Atestado em 08/12/2002; a carta grafa só "Sérgio Andrade".'
+- jurisdiction: ieab
+  role: other
+  role_description: coadjutor_da_catedral
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-primazes-2003
+    quote: liderados pelo Ministro Coadjutor, o Rev. Sérgio Andrade
+  notes: >-
+    Local: Catedral Anglicana da Santíssima Trindade (Recife). Carta de 23/05/2003: o remanescente de cerca de 10%
+    da congregação (200 pessoas), liderado por ele, permaneceu leal à Igreja Anglicana.
 events:
 - type: other
   date: '2002-10-13'

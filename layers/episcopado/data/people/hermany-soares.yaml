@@ -333,6 +333,50 @@ affiliations:
     Local: Paróquia Anglicana Jesus de Nazaré (Gaibu, Cabo de Santo Agostinho-PE; Arcediagado Sul). Página "Comunidades"
     do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de
     posse.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago_adjunto
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2010
+    quote: 'Adjunto : Rev.Hermany Soares, ose'
+  - source: dard1-arcediagados-2010
+    quote: 'Adjunto : Rev. Hermany Silva Soares'
+  notes: >-
+    Local: Arcediagado Sul. Consta na lista de cargos publicada em 01/07/2009 e atualizada em 28/09/2010; na versão
+    de jan/2009 o adjunto era Manoel Moraes de Almeida.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretario_diocesano
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2010
+    quote: 'Secretaria Diocesana Anglicana Administrativa: Rev. Hermany Soares, ose'
+  notes: >-
+    Local: Secretaria Diocesana Anglicana Administrativa. Consta na lista de cargos publicada em 01/07/2009 e atualizada
+    em 28/09/2010; não consta nessa função na versão de jan/2009.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: assessor_de_relacoes_inter-eclesiasticas
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2009a
+    quote: 'Assessor Diocesano de Relações Inter-Eclesiásticas: Rev. Hermany Soares'
+  - source: dard1-cargos-2010
+    quote: 'Assessor Diocesano de Relações Inter-Eclesiásticas: Rev. Hermany Soares'
+  notes: >-
+    Local: Assessor Diocesano de Relações Inter-Eclesiásticas. Consta na lista de "Cargos Diocesanos" capturada
+    em jan/2009 e na de jul/2009 (atualizada em 28/09/2010); a página não informa a data de início.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_auxiliar
+  status: confirmed
+  sources:
+  - source: dard1-com-sul-2009a
+    quote: 'Auxiliares: Rev. Ivaldo Sales, Rev. Hermany Soares'
+  notes: >-
+    Local: Catedral Anglicana Bom Samaritano (Recife). Consta na página de comunidades do Arcediagado Sul capturada
+    em 03/01/2009 (sem data de publicação visível).
 events:
 - type: other
   date: '2024'

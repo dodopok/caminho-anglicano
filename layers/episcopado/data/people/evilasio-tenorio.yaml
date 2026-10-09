@@ -350,6 +350,12 @@ affiliations:
     quote: 'Arcediago : Ven. Arc. Rev. Evilásio Tenório da Silva Júnior Adjunto : Rev. Hermany Silva Soares'
   - source: dard2-asp-2009
     quote: Ven. Arc. Rev. Evilásio Tenório da Silva Junior
+  - source: dard1-cargos-2009a
+    quote: 'SUL : Arcediago : Ven. Arc. Rev. Evilásio Tenório da Silva Júnior'
+  - source: dard1-cargos-2010
+    quote: 'SUL : Arcediago : Ven. Arc. Rev. Evilásio Tenório da Silva Júnior'
+  - source: dard1-arcediagados-2010
+    quote: 'Arcediago : Ven. Arc. Rev. Evilásio Tenório da Silva Júnior'
   notes: >-
     Assina a carta a Venables (17/10/2005) como arcediago. Local: Arcediagado Centro. Arcediagado Centro em out/nov
     de 2006. Cargo exercido em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados.
@@ -357,7 +363,9 @@ affiliations:
     Centro. Em maio de 2011 era também pároco da Paróquia do Mediador e da Catedral do Bom Samaritano e reitor do
     SAT-PE. Local: Arcediagado Centro. Em 2011-03-18, também pároco da Paróquia Anglicana do Mediador e reitor do
     SAT-PE. Local: Arcediagado Sul. Lista de arcediagos e adjuntos na página "Comunidades" capturada em 13/10/2009
-    e nas páginas de cada arcediagado capturadas em 09/10/2010; início e fim dos cargos não informados.
+    e nas páginas de cada arcediagado capturadas em 09/10/2010; início e fim dos cargos não informados. Local: Arcediagado
+    Sul. Consta na lista de "Cargos Diocesanos" capturada em jan/2009 e na de jul/2009 (atualizada em 28/09/2010);
+    a página não informa a data de início.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: reitor_seminario
@@ -500,9 +508,13 @@ affiliations:
   sources:
   - source: dard2-com-sul
     quote: 'Paróquia Anglicana do Mediador Pároco: Rev. Evilásio Tenório'
+  - source: dard1-com-sul-2009a
+    quote: 'Pároco: Rev. Evilásio Tenório'
   notes: >-
     Local: Paróquia Anglicana do Mediador (Tejipió, Recife-PE; Arcediagado Sul). Página "Comunidades" do arcediagado,
-    criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse.
+    criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse. Local: Paróquia
+    Anglicana do Mediador (Recife). Consta na página de comunidades do Arcediagado Sul capturada em 03/01/2009 (sem
+    data de publicação visível).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: reitor do seminário
@@ -513,6 +525,56 @@ affiliations:
   notes: >-
     Local: SAT (Seminário Anglicano Teológico), SAT-PE. Reitor do SAT-PE na página do Seminário publicada em 13/08/2009
     e atualizada em 31/08/2009 (captura de 13/10/2009); início não informado.
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Evilásio Tenório da Silva Ponto Missionário Anglicano Betel
+  notes: "Local: Ponto Missionário Anglicano Betel. Consta na carta aberta de 17/09/2004, assinada pela Diocese\
+    \ do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os\
+    \ presbíteros. "
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: reitor_do_seminario
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2009a
+    quote: SAT-PE Reitor Ven. Arc. Rev. Evilásio Tenório da Silva Junior
+  - source: dard1-cargos-2010
+    quote: SAT-PE Reitor Ven. Arc. Rev. Evilásio Tenório da Silva Junior
+  - source: dard1-seminario-2009
+    quote: 'SAT-PE SAT-PB Local: SAT-PE'
+  - source: dard1-seminario-2009
+    quote: 'Reitor: Rev. Evilásio Tenório'
+  - source: dard1-sat-contato-2009a
+    quote: 'Reitor: Rev. Evilásio Tenório'
+  - source: dard1-sat-livros-2008
+    quote: 'Direção do SAT/PE: Rev. Evilásio Tenório'
+  notes: >-
+    Local: SAT-PE (Seminário Anglicano Teológico de Pernambuco). Consta na lista de "Cargos Diocesanos" capturada
+    em jan/2009 e na de jul/2009 (atualizada em 28/09/2010); a página não informa a data de início.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: vigario_geral
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2009a
+    quote: 'Vigário-Geral Diocesano: Rev. Evilásio Tenório da Silva Júnior'
+  - source: dard1-cargos-2010
+    quote: 'Vigário-Geral Diocesano: Rev. Evilásio Tenório da Silva Júnior'
+  notes: >-
+    Local: Vigário-Geral Diocesano. Consta na lista de "Cargos Diocesanos" capturada em jan/2009 e na de jul/2009
+    (atualizada em 28/09/2010); a página não informa a data de início.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: direcao_do_sat-pe
+  status: confirmed
+  sources:
+  - source: dard1-sat-livros-2008
+    quote: 'Direção do SAT/PE: Rev. Evilásio Tenório'
+  notes: 'Local: SAT-PE (Seminário Anglicano Teológico de Pernambuco). Pedido de doação de livros de 2008.'
 events:
 - type: other
   date: '2012-09-15'

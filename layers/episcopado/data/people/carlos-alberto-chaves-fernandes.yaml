@@ -19,7 +19,7 @@ ordinations:
   place: Ponto Missionário Anglicano da Santíssima Trindade, Maceió-AL
   jurisdiction: diocese-anglicana-recife
   ordained_by: robinson-cavalcanti
-  status: probable
+  status: contested
   sources:
   - source: dar-2008-sermao-carlos-alberto
     quote: >-
@@ -34,12 +34,26 @@ ordinations:
   - source: darb1-breves-2008
     quote: >-
       Ordenou dois Diáconos: Rev. Ivo Xavier, Mogi das Cruzes, SP e Rev. Carlos Alberto, Rio de Janeiro, Rj;
+  - source: dard1-galeria-2008
+    quote: >-
+      ORDENAÇÃO DIACONAL Rev. Carlos Alberto Chaves Ponto Missionário Anglicano da Santíssima Trindade Maceió-AL,
+      13/02/2008
+  discrepancies:
+  - field: date
+    value: '2008-02-13'
+    sources:
+    - source: dard1-galeria-2008
+      quote: >-
+        ORDENAÇÃO DIACONAL Rev. Carlos Alberto Chaves Ponto Missionário Anglicano da Santíssima Trindade Maceió-AL,
+        13/02/2008
   notes: >-
     Sermão do bispo diocesano Robinson Cavalcanti publicado na seção 'Bispo – Sermões' do site da Diocese; presidência
     da ordenação inferida do sermão episcopal. 'MOA' = Ministério Ordenado Auxiliar (cânon diocesano). Em 2010 já
     'Ven. Arc. Rev.' (presbítero e arcediago). Ministro vindo da Igreja Presbiteriana; o sermão o chama de 'Rev.'
     e explica a ordenação como integração ao anglicanismo. '(MOA)' no título não é explicado. Ordenação ocorrida
-    entre 03/01 e 11/02/2008; o texto identifica o ordenando como 'Rev. Carlos Alberto, Rio de Janeiro, Rj'.
+    entre 03/01 e 11/02/2008; o texto identifica o ordenando como 'Rev. Carlos Alberto, Rio de Janeiro, Rj'. A legenda
+    da galeria dá 13/02/2008; o sermão de ordenação publicado no mesmo site é intitulado com a data de 10/02/2008.
+    A legenda não nomeia o bispo ordenante.
 - order: presbyterate
   date: '2008-08-02'
   place: Rio de Janeiro-RJ
@@ -86,12 +100,20 @@ affiliations:
       de Oliveira
   - source: dard2-asp-2009
     quote: Ven. Arc. Rev. Carlos Alberto Chaves Fernandes
+  - source: dard1-cargos-2009a
+    quote: 'BRASIL SUL/SULDESTE: Arcediago : Ven. Arc. Rev. Carlos Alberto Chaves Fernandes'
+  - source: dard1-cargos-2010
+    quote: 'BRASIL SUL/SULDESTE: Arcediago : Ven. Arc. Rev. Carlos Alberto Chaves Fernandes'
+  - source: dard1-arcediagados-2010
+    quote: 'Arcediago : Ven. Arc. Rev. Carlos Alberto Chaves Fernandes'
   notes: >-
     Local: Arcediagado Sul/Sudeste. Arcediago do Sul/Sudeste em 2010-04-09 e em 2011-07-23. Local: Arcediagado Sul-Sudeste.
     Cargo atestado em 14/10/2009, 08/05/2011 e 25/08/2011. Local: Arcediagado Extraterritorial Nacional Sul/Sudeste.
     Lista de arcediagos e adjuntos na página "Comunidades" capturada em 13/10/2009 e nas páginas de cada arcediagado
     capturadas em 09/10/2010; início e fim dos cargos não informados. Em 2012 (captura de 02/03/2012) o mesmo arcediago
-    e o mesmo adjunto constam com o nome "Arcediagado Sul-Sudeste".
+    e o mesmo adjunto constam com o nome "Arcediagado Sul-Sudeste". Local: Arcediagado Extraterritorial Sul/Sudeste
+    do Brasil. Consta na lista de "Cargos Diocesanos" capturada em jan/2009 e na de jul/2009 (atualizada em 28/09/2010);
+    a página não informa a data de início.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: pároco
