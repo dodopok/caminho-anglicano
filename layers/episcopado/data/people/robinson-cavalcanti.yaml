@@ -129,8 +129,9 @@ ordinations:
     1985), o que sustenta Sherrill como ordenante do diaconato; a fonte não dá a data nem diz expressamente 'ordenado
     por'. Ano 1984 de outras fontes (Kickhöfel; Costa, 2021).
 - order: presbyterate
-  date: '1985'
+  date: '1985-01-06'
   jurisdiction: ieab
+  ordained_by: edmund-knox-sherrill
   status: probable
   sources:
   - source: cant-novas-igrejas-2024
@@ -143,8 +144,16 @@ ordinations:
   - source: costa2021
     quote: suas ordenações diaconal e presbiteral foram realizadas, respectivamente, em 1984 e 1985.
     page: '187'
+  - source: drp2-ord-diac-ivo-2008
+    quote: >-
+      Há 23 anos, em uma data como esta, este Bispo recebia do seu Bispo de então, Dom Edmund Knox Sherril, a Ordem
+      do Presbiterado
+  - source: drp2-ord-diac-ivo-2008
+    quote: Maceió (AL), 06 de janeiro de 2008 Festa da Epifania
   notes: >-
     Diocese Setentrional (Recife). Ordenante não informado (em 1985 Sherrill era diocesano e Clóvis coadjutor).
+    Data deduzida do próprio Dom Robinson: sermão de 06/01/2008 (Epifania) diz que 'há 23 anos, em uma data como
+    esta' recebeu o presbiterado de Sherrill.
 - order: episcopate
   date: '1997-10-05'
   place: Teatro Guararapes, Centro de Convencoes de Pernambuco (Olinda/Recife)
@@ -428,6 +437,17 @@ affiliations:
         em janeiro de 2005, o Conselho Executivo do Sínodo da IEAB declarou a deposição de dom Robinson Cavalcanti
         do ofício episcopal, acusando-o de insubordinação e quebra da comunhão eclesiástica.
       page: '26'
+- jurisdiction: ieab
+  role: other
+  role_description: membro da Comissão Executiva
+  start: '2003'
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-viii
+    quote: >-
+      Compareço ao Sínodo Geral da IEAB, lanço a candidatura, vitoriosa, do Bispo Orlando Santos para Primaz, e
+      sou eleito para a Comissão Executiva da Província.
+  notes: 'Local: IEAB, Comissão Executiva da Província.'
 - jurisdiction: diocese-anglicana-recife
   role: founder
   start: '2005'
@@ -529,6 +549,19 @@ affiliations:
     Local: Cone Sul / IAB. Diocese do Recife sob a autoridade primacial do Primaz do Cone Sul, Gregory Venables,
     desde setembro de 2005, com reconhecimento das ordens do bispo e do clero. Em 2008 a apostila ainda falava em
     se tornar 'membros plenos – oficialmente – da Província do Cone Sul' (p. 80).
+- jurisdiction: gafcon
+  role: other
+  role_description: membro da Equipe de Recursos Teológicos
+  start: 2008-02
+  status: confirmed
+  sources:
+  - source: drp2-noticia-gafcon-equipe-2008
+    quote: >-
+      Dom Robinson Cavalcanti, foi convidado para integrar a Equipe de Recursos Teológicos da GAFCON (encontro de
+      Anglicanos Ortodoxos a ter lugar no próximo mês de junho no Oriente Médio).
+  notes: >-
+    Local: GAFCON, Equipe de Recursos Teológicos (coordenada por Vinay Samuel). Convidado em 2008, antes da conferência
+    de Jerusalém.
 - jurisdiction: ieab-dar
   role: diocesan_bishop
   end: '2005'
@@ -661,6 +694,40 @@ affiliations:
       diferenças, de instâncias e eventos provinciais.
   notes: >-
     Já como Bispo do Recife (entre 1998 e 2002, período tratado no capítulo); anos exatos não informados.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: deão pro tempore
+  end: '2008-06-15'
+  end_reason: term_end
+  status: confirmed
+  sources:
+  - source: drp2-posse-deao-2008
+    quote: >-
+      Hoje, também, encerro o meu período como Deão “pró-têmpore” desta Catedral, iniciado em um momento de crise
+      e da renúncia inesperada do antigo Deão.
+  notes: 'Local: Catedral Anglicana do Bom Samaritano.'
+- jurisdiction: ieab
+  role: other
+  role_description: presidente da JUNET
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-v
+    quote: fui reconduzido para mais um mandato de três anos na JUNET, e eleito o seu presidente
+  notes: >-
+    Local: IEAB, Junta Nacional de Educação Teológica. Reconduzido à JUNET e eleito presidente após o Sínodo Geral
+    de 2000; datas exatas não informadas.
+- jurisdiction: efac
+  role: other
+  role_description: vice-moderador
+  status: confirmed
+  sources:
+  - source: drp2-breves-15-2003
+    quote: >-
+      O bispo diocesano foi reconduzido, por mais um mandato, para os cargos de vice-moderador da EFAC e representante
+      para a América Latina.
+  notes: >-
+    Local: Fraternidade dos Evangélicos na Comunhão Anglicana, EFAC. Reconduzido na Conferência Internacional da
+    EFAC em Limuru, Quênia, em julho de 2003.
 events:
 - type: other
   date: '1985'
@@ -2803,3 +2870,542 @@ events:
     quote: >-
       Quando nesta ocasião instituímos a primeira Ordem Religiosa Evangélica do Brasil – a Ordem de Santo Estevão
       Mártir
+- type: other
+  date: 2008-08
+  description: >-
+    Em 2008 a Diocese do Recife, sob a autoridade primacial do Cone Sul, acolhia comunidades fora do Nordeste, do
+    Estado de Washington (EUA) à Grande Porto Alegre, e chegava a Mogi das Cruzes (SP).
+  status: confirmed
+  sources:
+  - source: drp2-ord-presb-ivo-2008
+    quote: >-
+      tem respondido aos apelos de passagem às várias “macedônias”, do Estado de Washington, nos Estados Unidos
+      da América, à Grande Porto Alegre
+- type: other
+  date: null
+  description: >-
+    Robinson Cavalcanti foi o segundo presbítero ordenado na Diocese do Recife, pelas mãos do primeiro bispo diocesano
+    (Edmund Knox Sherrill).
+  status: confirmed
+  sources:
+  - source: drp2-ord-presb-2006-04
+    quote: >-
+      Tenho acompanhado momentos solenes e importantes como este pelos 30 anos de existência de nossa Diocese, sendo,
+      eu mesmo, o segundo a receber essa Ordem, das mãos do nosso primeiro Bispo.
+- type: other
+  date: '2006-12-08'
+  description: >-
+    Em dezembro de 2006 a Diocese do Recife (sob o Cone Sul) tinha um Arcediagado Norte-americano; Michael La Cagnina
+    foi o primeiro diácono ordenado para ele.
+  status: confirmed
+  sources:
+  - source: drp2-ord-diac-xxvi-concilio-2006
+    quote: >-
+      às Ordenações Diaconais de: Roseno, Keyla, Maria do Carmo e Michael. E um momento histórico, quando estamos
+      procedendo à Ordenação Diaconal de Michael, a primeira para o nosso Arcediagado Norte-americano.
+- type: other
+  date: '2005-02-12'
+  description: >-
+    O XXIV Concílio Diocesano (dezembro de 2004) definiu a Paróquia Anglicana do Bom Samaritano, em Boa Viagem,
+    como Igreja Catedral da Diocese Anglicana do Recife; a catedral foi instalada solenemente em 12/02/2005.
+  status: confirmed
+  sources:
+  - source: drp2-instalacao-deao-2005
+    quote: >-
+      Deliberou, soberanamente, o nosso XXIV Concílio Diocesano – legal e legítimo – definir a Paróquia Anglicana
+      do Bom Samaritano, em Boa Viagem, como a Igreja Catedral da Diocese Anglicana do Recife
+  - source: drp2-instalacao-deao-2005
+    quote: Declaramos, solenemente, instalada esta Igreja Catedral Anglicana do Bom Samaritano
+- type: resignation
+  date: '2007-12-28'
+  description: >-
+    Pelo Termo de Adesão à Diocese do Recife, os bispos da Igreja Anglicana Ortodoxa (entre eles Dom Hermany Soares)
+    renunciaram ao status e à função episcopal na IAO.
+  status: confirmed
+  sources:
+  - source: drp2-termo-adesao-iao-2007
+    quote: Os Bispos da IAO resignam “ipso facto” a esse status e função.
+- type: other
+  date: 1997-09
+  description: >-
+    Em setembro de 1997, já bispo eleito, Robinson Cavalcanti subscreveu a Declaração de Dallas (contra a ordenação
+    de homossexuais não celibatários e a bênção de uniões do mesmo sexo).
+  status: confirmed
+  sources:
+  - source: drp2-cronologia-2004
+    quote: (o então bispo-eleito Robinson Cavalcanti é um dos que subscrevem a Declaração)
+- type: other
+  date: '1998'
+  description: >-
+    Na Conferência de Lambeth de 1998, Robinson Cavalcanti foi o único bispo do Brasil a votar com a maioria pela
+    Resolução 1.10; depois editou uma Resolução Diocesana aplicando-a na Diocese do Recife.
+  status: confirmed
+  sources:
+  - source: drp2-cronologia-2004
+    quote: >-
+      o Bispo Robinson Cavalcanti é o único bispo do Brasil que vota com a maioria, e, ao regressar ao Recife, edita
+      uma Resolução Diocesana tornando esses princípios válidos em sua jurisdição
+- type: other
+  date: 2000-12
+  description: >-
+    Concílio Extraordinário da Diocese Anglicana do Recife (dezembro de 2000) aprovou, por 90%, dispositivo canônico
+    que impede a ordenação de homossexuais praticantes.
+  status: confirmed
+  sources:
+  - source: drp2-cronologia-2004
+    quote: >-
+      2000 – Dezembro: O Concílio Extraordinário da Diocese Anglicana do Recife, por maioria de 90%, aprova dispositivo
+      canônico impeditivo de ordenação de homossexuais praticantes
+- type: other
+  date: 2005-09
+  description: >-
+    O Cônego Bill Atwood, secretário-geral da Ekklesia, representou o Primaz do Cone Sul na entrega dos credenciamentos
+    ao bispo e ao clero da Diocese Anglicana do Recife, em setembro de 2005, e recebeu da diocese a Medalha Bispo
+    Kinsolving.
+  status: confirmed
+  sources:
+  - source: drp2-carta-venables-2005
+    quote: >-
+      o Reverendo Cônego Bill Attwood, Secretário Geral da Ekklesia, representando o Primaz do Cone Sul, entregou
+      ao Revmo. Bispo Robinson Cavalcanti, e aos 40 clérigos dessa Diocese, cópia do documento de credenciamento
+- type: other
+  date: '2011-05-06'
+  description: >-
+    Em 2011 a Diocese do Recife convocou Sínodo Extraordinário (04/06/2011) para eleger dois bispos sufragâneos
+    e instalar duas Regiões Eclesiásticas Missionárias, cada uma com dois arcediagados; na Região II os candidatos
+    eram Evilásio e Maurício.
+  status: confirmed
+  sources:
+  - source: drp2-eleicao-sufraganeo-xii-2011
+    quote: >-
+      No próximo Sínodo Extraordinário de junho estaremos instalando as duas Regiões Eclesiásticas Missionárias,
+      embriões de Dioceses para um futuro que creio não será longínquo. Cada Região Eclesiástica será dirigida por
+      uma equipe, liderada por um Bispo Sufragâneo
+  - source: drp2-eleicao-sufraganeo-xii-2011
+    quote: >-
+      Haveria possibilidade de segundo escrutínio na eleição para a Região Eclesiástica II (Evilásio vs. Mauricio)?
+  - source: drp2-eleicao-sufraganeo-xii-2011
+    quote: >-
+      Esperamos o máximo comparecimento de delegados e de observadores no Sínodo Extraordinário de 04 de junho.
+- type: other
+  date: '2011-05-06'
+  description: >-
+    Em maio de 2011 a Diocese do Recife tinha um Arcediagado Sul-Sudeste (III Assembleia em Mogi das Cruzes-SP)
+    e assumira, por decisão do último Concílio, uma identidade nacional.
+  status: confirmed
+  sources:
+  - source: drp2-eleicao-sufraganeo-xii-2011
+    quote: >-
+      quando nos preparamos para abrir a III Assembleia do Arcediagado Sul-Sudeste, a nos lembrar do caráter missionário
+      da nossa Diocese, e da nossa responsabilidade de assumir essa nova identidade nacional já deliberada pelo
+      último Concílio Diocesano
+- type: other
+  date: 2004-12
+  description: >-
+    Concílio Extraordinário da Diocese Anglicana do Recife (Olinda, fim de 2004): aprovou o conteúdo doutrinário
+    da diocese, elevou os IATs a Seminários Maiores Diocesanos (SAT-PE e SAT-PB), manteve a Catedral da Santíssima
+    Trindade (Rua Carneiro Vilela) como 'Catedral Honorária' sob ocupação, elevou a Paróquia do Bom Samaritano a
+    Igreja Catedral e alterou o status de várias paróquias e missões.
+  status: confirmed
+  sources:
+  - source: drp2-concilio-xxiv-2004
+    quote: Elevação da Paróquia Anglicana do Bom Samaritano ao status de Igreja Catedral
+  - source: drp2-concilio-xxiv-2004
+    quote: >-
+      Manutenção da Catedral Anglicana da Santíssima Trindade (templo da Rua Carneiro Vilela – Espinheiro – Recife)
+      como “Catedral Honorária” sob ocupação
+  - source: drp2-concilio-xxiv-2004
+    quote: >-
+      com a presença de 31 delegados clericais e mais de 80 delegados e observadores leigos, representando 29 Paróquias,
+      Missões e Pontos Missionários
+- type: other
+  date: 2007-12
+  description: >-
+    Até dezembro de 2007, em uma década de episcopado, Dom Robinson Cavalcanti completava 80 ordenações diaconais
+    e 65 presbiterais, e tinha sido co-sagrante de 4 bispos no Brasil, 2 no Quênia e 2 em Uganda.
+  status: confirmed
+  sources:
+  - source: drp2-colheita-ministerial-2007
+    quote: >-
+      estará completando o número recorde de 80 (oitenta) Ordenações Diaconais, além de 65 (sessenta e cinco) Presbiterais.
+  - source: drp2-colheita-ministerial-2007
+    quote: >-
+      o Bispo Robinson foi co-sagrante de 04 Bispos no Brasil, 02 em Quênia, 02 em Uganda e de 04 Diáconos nos Estados
+      Unidos
+- type: other
+  date: '2007-12-27'
+  description: >-
+    Em 2007 a Diocese do Recife (Cone Sul) tinha 44 comunidades (34 territoriais no Nordeste e 10 extraterritoriais:
+    5 no Rio de Janeiro e 5 nos EUA), 70 clérigos ordenados (49 territoriais e 21 extraterritoriais) e quatro arcediagados
+    territoriais: Norte, Centro, Sul e Paraíba-Rio Grande do Norte; no ano houve 8 ordenações diaconais e 3 presbiterais.
+  status: confirmed
+  sources:
+  - source: drp2-diocese-em-numeros-2007
+    quote: >-
+      em 44 comunidades eclesiais (Paróquias, Missões e Pontos Missionários): 34 territoriais + 10 extraterritoriais
+      (05 RJ + 05 EUA). O Clero territorial (Diáconos e Presbíteros, ativos, aposentados e licenciados) é formado
+      por 49 ministros e o Clero extraterritorial por 21 ministros, totalizando 70 Ordenados.
+  - source: drp2-diocese-em-numeros-2007
+    quote: Em 2007 foram realizadas 08 Ordenações Diaconais e 03 Presbiterais.
+- type: other
+  date: '1997-06-28'
+  description: >-
+    Eleição de Robinson Cavalcanti como bispo da Diocese Anglicana do Recife (IEAB), no Concílio reunido numa casa
+    de retiro dos jesuítas na Ilha de Itaparica-BA, no sábado véspera de São Pedro de 1997, no décimo escrutínio;
+    os outros candidatos eram Ian Meldrum e Maurício Andrade. O bispo diocesano Clóvis Erly Rodrigues proclamou
+    o eleito, na presença do Primaz Glauco Soares de Lima.
+  status: probable
+  sources:
+  - source: drp2-memorias-decada-ii
+    quote: >-
+      Chegamos à Ilha de Itaparica na tarde da sexta-feira. Tivemos uma Eucaristia, celebrada pelo Primaz, Dom Glauco
+      Soares de Lima
+  - source: drp2-memorias-decada-ii
+    quote: Manhã do sábado, véspera de São Pedro. Votações por ordem, com chamada nominal.
+  - source: drp2-memorias-decada-ii
+    quote: >-
+      No décimo escrutínio, tensão para a leitura do último e decisivo voto: consegui a maioria. O Bispo Clóvis
+      proclama o eleito.
+- type: other
+  date: null
+  description: >-
+    No início do episcopado de Dom Robinson (a partir de 1997), a Diocese do Recife instalou pela primeira vez uma
+    catedral, com deão e cabido, na Paróquia da Santíssima Trindade (herdeira da Holy Trinity Church de 1822); criou
+    os arcediagados, o diaconato permanente, o Ministério Ordenado Auxiliar e as ordens religiosas de Santo Estevão
+    e de São Francisco.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-iv
+    quote: >-
+      O Concílio aprovou, e instalamos o Deão e o Cabido na pioneira Paróquia da SS. Trindade, herdeira da Holy
+      Trinity Church, fundada pelos ingleses, no Recife, em 1822.
+  - source: drp2-memorias-decada-iv
+    quote: Criamos os Arcediagados, como entes sub-regionais da Diocese.
+  - source: drp2-memorias-decada-iv
+    quote: Foram criadas as Ordens Religiosas (Santo Estevão e São Francisco).
+- type: other
+  date: null
+  description: >-
+    George Carey fez a primeira visita oficial de um Arcebispo de Cantuária ao Recife, durante o episcopado de Dom
+    Robinson Cavalcanti.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-v
+    quote: >-
+      Recife recebeu, pela primeira vez em sua história, a visita oficial de um Arcebispo de Cantuária, na pessoa
+      de Sua Graça George Carey.
+- type: other
+  date: '2002'
+  description: >-
+    No 'tríplice cisma' de 2002, o deão Paulo Garcia deixou a Diocese do Recife e a IEAB com a Catedral da Santíssima
+    Trindade e outras três paróquias e foi recebido pelo arcebispo Dale Howard, da Igreja Episcopal Carismática
+    (CIEC); a Paróquia Betânia foi para a CIEE e a Paróquia do Parnamirim para a Igreja Presbiteriana do Brasil.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-vii
+    quote: >-
+      O Rev. Paulo, além da Catedral, leva consigo três outras Paróquias (duas propriedades) e alguns clérigos.
+  - source: drp2-memorias-decada-vii
+    quote: >-
+      uma cópia do boletim da Catedral com sua recepção pelo Arcebispo Howard, da Igreja Episcopal Carismática
+- type: other
+  date: '2004'
+  description: >-
+    Em 2004 Dom Robinson Cavalcanti, a convite de famílias da Diocese de Ohio (Igreja Episcopal dos EUA) contrárias
+    à sagração de Gene Robinson, confirmou 111 jovens em Akron, Ohio, com bispos aposentados norte-americanos; foi
+    criticado na Câmara dos Bispos da IEAB em março, que reconheceu não ter havido violação dos Cânones Gerais.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-viii
+    quote: >-
+      me convidam e a Bispos Aposentados norte-americanos para realizar a Confirmação de 111 (cento e onze) jovens,
+      na cidade de Akron
+  - source: drp2-memorias-decada-viii
+    quote: >-
+      Em março sou criticado na reunião da Câmara dos Bispos, por minha participação nas Confirmações de Ohio, mas
+      se reconhece que não feri nenhum artigo dos Cânones Gerais da IEAB.
+- type: other
+  date: 2003-07
+  description: >-
+    Em julho de 2003, Dom Robinson Cavalcanti levou sete clérigos e ministros leigos da Diocese do Recife à Consulta
+    da EFAC em Limuru, Quênia.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-viii
+    quote: >-
+      Em julho de 2003, sete clérigos e Ministros Leigos (Reverendos: Maurício Coelho, Siméa Meldrum, Estevão Menezes,
+      Jorge Aquino e Fábio Vasconcelos, Gustavo Gilson e a ML Roberta Araújo) foram comigo a Limuru, Quênia, África,
+      para participar da Consulta da EFAC
+- type: other
+  date: '2004'
+  description: >-
+    Em 2004 a Câmara dos Bispos da IEAB designou Maurício Andrade, então bispo de Brasília, auxiliado pelo bispo
+    sufragâneo Filadelfo Oliveira Neto, como 'Supervisor Episcopal Especial' sobre um grupo de clérigos, paróquias
+    e missões da Diocese do Recife, retirando-os da autoridade de Dom Robinson.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      a Câmara dos Bispos designou o então Bispo de Brasília, Maurício Andrade (hoje Primaz), auxiliado pelo Bispo
+      Sufragâneo, Filadelfo, como “Supervisor Episcopal Especial” sobre um grupo de clérigos e de Paróquias/Missões,
+      retirando-os da autoridade do Bispo Diocesano
+- type: deposition
+  date: '2005'
+  description: >-
+    Processo disciplinar da IEAB contra Robinson Cavalcanti: pedido pelos bispos Hiroshi Ito (São Paulo) e Naudal
+    Alves Gomes (Curitiba), além de dois clérigos e dois leigos da diocese; a Câmara dos Bispos o suspendeu e o
+    Tribunal Superior Eclesiástico, presidido pelo ex-bispo do Recife Clóvis Erly Rodrigues, aplicou a cassação
+    de ordem e ministério, prolatada pelo Primaz.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      Dois bispos (Ito, de São Paulo, e Naudal, de Curitiba), mas dois clérigos e dois leigos da DAR requerem ao
+      Primaz a abertura de um processo disciplinar contra o Bispo do Recife, acusado de insubordinação e não cumprimento
+      dos seus votos de Ordenação.
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      O Tribunal Superior Eclesiástico da IEAB, presidido pelo ex-Bispo da DAR, Clóvis, opta pela pena máxima: cassação
+      de Ordem e Ministério, que é prolatada pelo Primaz.
+- type: other
+  date: 2004-12
+  description: >-
+    Em dezembro de 2004, três dias antes do Concílio Diocesano do Recife, o Primaz Orlando Santos de Oliveira decretou
+    sua suspensão; os delegados, reunidos em assembleia presidida pelo Rev. Maurício Coelho (presidente do Conselho
+    Diocesano), decidiram realizá-lo, e o Concílio apelou ao Arcebispo de Cantuária e aos Primazes por 'Supervisão
+    Primacial Alternativa Com Jurisdição'.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      Três dias antes (com despesas feitas e pastas dos delegados prontas) o Primaz, Dom Orlando, outra vez sem
+      base legal, decreta a sua suspensão.
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      Uma assembléia diocesana é instalada, dirigida pelo presidente do Conselho Diocesano, Rev. Maurício Coelho.
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      O Concílio delibera apelar para o Arcebispo de Cantuária e para os Primazes da Comunhão Anglicana, pedindo
+      uma “Supervisão Primacial Alternativa Com Jurisdição”.
+- type: other
+  date: '2005'
+  description: >-
+    A partir do congresso 'Esperança e Fé no Futuro do Anglicanismo na América' (Pittsburgh, 2005), clérigos norte-americanos
+    transferiram sua residência canônica para a Diocese do Recife, formando o Arcediagado Norte-Americano (20 clérigos
+    e 7 paróquias e missões em 2007).
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      Naquele Congresso se dá a primeira reunião dos clérigos norte-americanos que transferem a sua residência canônica
+      para a Diocese do Recife, com suas Paróquias e Missões se colocando, em caráter especial, sob a sua Autoridade
+      Episcopal.
+- type: other
+  date: 2005-07
+  description: >-
+    Em julho de 2005 o Sínodo Geral da IEAB criou uma Diocese Missionária paralela para o Recife e elegeu um bispo
+    para ela.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      Em julho o Sínodo Geral da IEAB dá um passo a mais em sua atitude de confrontação e desrespeito, criando uma
+      paralela Diocese Missionária (não-autônoma, em virtude do reduzido número de Paróquias e Missões) para o Recife,
+      e elegendo um Bispo para a mesma.
+- type: other
+  date: 2005-08
+  description: >-
+    No início de agosto de 2005, os bispos Bill Godfrey e Patrick Harris, emissários do Arcebispo de Cantuária,
+    ouviram separadamente Dom Robinson e o clero da Diocese do Recife para relatório ao Arcebispo.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      Em início de agosto, recebemos a visita dos dois diplomatas, especialmente enviados como emissários do Arcebispo
+      de Cantuária, os Bispos Bill Godfrey e Patrick Harris
+- type: other
+  date: '2005'
+  description: >-
+    No III Encontro Sul-Sul das províncias anglicanas do Hemisfério Sul (Egito, 2005), Dom Robinson Cavalcanti foi
+    delegado pleno, enquanto a representação da IEAB foi vetada.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-x
+    quote: >-
+      o III Encontro Sul-Sul, que reúne as Províncias Anglicanas do Hemisfério Sul, realizado no Egito, em 2005,
+      no qual foi vetada a presença de representação da IEAB, enquanto o Bispo do Recife foi um delegado pleno
+- type: other
+  date: '2006-05-20'
+  description: >-
+    O bispo Donald Harvey, da Rede Anglicana do Canadá, pregou no culto de ação de graças pelos 30 anos da Diocese
+    do Recife, em 20/05/2006.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-x
+    quote: >-
+      do Bispo Donald Harvey, da Rede Anglicana do Canadá, pregador no Culto em Ação de Graças pelos 30 anos de
+      criação da Diocese (20.05.2006)
+- type: other
+  date: null
+  description: >-
+    Após o 'cisma liberal' de 2004, a Diocese do Recife fundou o Seminário Teológico Anglicano de Pernambuco (SAT-PE);
+    a criação de uma nova diocese na Paraíba, em preparação, foi suspensa pelo status provisório sob o Cone Sul.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-x
+    quote: Fundamos um novo Seminário, o Seminário Teológico Anglicano de Pernambuco (SAT-PE).
+  - source: drp2-memorias-decada-x
+    quote: >-
+      Nós nos encontrávamos tomando todos os passos necessários para criar uma nova Diocese na Paraíba. A conjuntura
+      da Comunhão Anglicana, e o nosso novo status provisório, nos fez suspender a sua execução
+- type: other
+  date: '2011-09-24'
+  description: >-
+    Segundo Dom Robinson Cavalcanti (2011), a diocese que ele liderava tinha 35 anos de vida contínua (1976-2011),
+    usando sucessivamente os nomes Diocese Setentrional, Diocese Anglicana do Recife e Diocese do Recife, com o
+    mesmo CNPJ; a IEAB, por sua vez, fundou uma nova diocese com o antigo nome 'Diocese Anglicana do Recife'.
+  status: confirmed
+  sources:
+  - source: drp2-continuidade-diocese-2011
+    quote: >-
+      A nossa Diocese tem 35 (1976-2011) anos de vida missionária ininterrupta, tendo, nesse período, usado três
+      sucessivas nomenclaturas: Diocese Setentrional, Diocese Anglicana do Recife e Diocese do Recife, com o mesmo
+      povo
+  - source: drp2-continuidade-diocese-2011
+    quote: >-
+      A Província do Brasil (IEAB), de forma totalmente irregular em relação aos Cânones da Diocese que pretendia
+      representar, fundou uma nova Diocese com a apropriação da antiga nomenclatura: Diocese Anglicana do Recife
+- type: other
+  date: '2005-02-26'
+  description: >-
+    Dom Robinson Cavalcanti convocou Concílio Diocesano Extraordinário para 26/02/2005, na Paróquia Anglicana Jardim
+    das Oliveiras (Setúbal, Recife), para apreciar a conjuntura à luz do Encontro dos Primazes.
+  status: confirmed
+  sources:
+  - source: drp2-convocacao-concilio-extra-2005
+    quote: >-
+      Convocar um Concílio Diocesano Extraordinário para o dia 26 de fevereiro de 2005, sábado, das 9h às 16h, no
+      templo da Paróquia Anglicana Jardim das Oliveiras
+- type: other
+  date: '2006-05-20'
+  description: >-
+    No culto de ação de graças pelos 30 anos da Diocese do Recife (20/05/2006, Paróquia Anglicana do Espírito Santo),
+    o sermão foi do bispo Donald Harvey, moderador da Rede da Comunhão Anglicana no Canadá, como representante pessoal
+    do Primaz do Cone Sul, Gregory Venables.
+  status: confirmed
+  sources:
+  - source: drp2-breves-06-2006
+    quote: >-
+      O Sermão será proferido pelo Revmo. Bispo Donald Harvey, Moderador da Rede da Comunhão Anglicana, no Canadá,
+      sendo o representante pessoal do nosso Primaz, Revmo. Bispo Gregório J. Venables
+- type: other
+  date: '2005-02-20'
+  description: >-
+    Em 20/02/2005 foi instalado o Ponto Missionário Anglicano Remissão, em Natal-RN, em visita de Dom Robinson Cavalcanti.
+  status: probable
+  sources:
+  - source: drp2-breves-02-2005
+    quote: >-
+      Dia 19/02, Dom Robinson estará visitando a cidade de Natal. Está instalado, no dia 20/02, às 17h, mais um
+      Ponto Missionário: é o Ponto Missionário Anglicano Remissão.
+- type: other
+  date: '2004-06-27'
+  description: >-
+    Instalação solene do Cabido da Con-Catedral Anglicana da Ressurreição, em João Pessoa-PB, em 27/06/2004, 'em
+    mais um passo em direção a nova Diocese' na Paraíba.
+  status: probable
+  sources:
+  - source: drp2-breves-09-2004
+    quote: >-
+      No próximo domingo, dia 27, às 19h, será solenemente instalado o Cabido da Con-Catedral Anglicana da Ressurreição,
+      em João Pessoa – PB, com a presença dos Bispos e Arcediagos, em mais um passo em direção a nova Diocese.
+- type: other
+  date: '2003-06-28'
+  description: >-
+    Inauguração do Ponto Missionário Anglicano Sarça Ardente, em Abreu e Lima-PE (Arcediagado Norte), sob a responsabilidade
+    da ministra leiga Josenaide Lopes, em 28/06/2003.
+  status: probable
+  sources:
+  - source: drp2-breves-12-2003
+    quote: >-
+      28/06 – sábado – às 16h: Inauguração do Ponto Missionário Sarça Ardente sob a responsabilidade da ML Josenaide
+      Lopes – Arced. Norte (Av. Transamazônica – Abreu e Lima/PE)
+- type: other
+  date: '2004-07-18'
+  description: >-
+    Fundação do Ponto Missionário Anglicano Ressurreição, em Vitória de Santo Antão-PE (Arcediagado Centro), com
+    24 membros, em 18/07/2004, presidida por Dom Robinson; ficou sob a tutela da Paróquia Anglicana do Espírito
+    Santo e aos cuidados do ministro leigo Márcio Simões.
+  status: confirmed
+  sources:
+  - source: drp2-breves-10-2004
+    quote: >-
+      Em Vitória de Santo Antão-PE tivemos o retorno da presença da DAR com a fundação do “Ponto Missionário Anglicano
+      Ressurreição”, com 24 membros, em solenidade presidida pelo diocesano, no último dia 18/07.
+  - source: drp2-breves-10-2004
+    quote: sob os cuidados ministeriais do ML. Márcio Simões
+- type: other
+  date: '2005-08-06'
+  description: >-
+    No Concílio Diocesano Extraordinário de 06/08/2005 (Paróquia Jardim das Oliveiras, Setúbal), com a presença
+    dos reverendos Philip Lewis e David Pershal, da Diocese de Springfield (EUA), a diocese registrou documento
+    de convicções; Dom Robinson recebeu deles um anel episcopal.
+  status: confirmed
+  sources:
+  - source: drp2-breves-06-2005
+    quote: >-
+      o Concílio Diocesano Extraordinário aconteceu dentro de sua normalidade, repleto de gratidão a Deus pelas
+      bênçãos concedidas, pela presença dos reverendos de Springfield, Philip Lewis e David Pershal, e pelo documento
+      registrado como convicção do que se crê nesta igreja-local
+- type: other
+  date: '2008'
+  description: >-
+    No primeiro semestre de 2008 a Diocese do Recife abriu os pontos missionários Trinity (Tri-Cities, Washington,
+    EUA), da Transfiguração (Mogi das Cruzes-SP), de Cristo (Cachoeirinha-RS) e Canaã (Recife-PE).
+  status: confirmed
+  sources:
+  - source: drp2-novas-ordenacoes-2008-1sem
+    quote: Ponto Missionário Trinity (Tri-Cities, Wa, USA);
+  - source: drp2-novas-ordenacoes-2008-1sem
+    quote: Ponto Missionário Anglicano de Cristo (Cachoeirinha, RS);
+- type: other
+  date: 2005-10
+  description: >-
+    O III Encontro Anglicano Global Sul-Sul (Ain El-Sukhna, Egito, 25-30/10/2005), presidido por Peter Akinola,
+    apoiou no documento final 'Uma Terceira Trombeta do Sul' a ação do Primaz do Cone Sul em relação à Diocese do
+    Recife; Dom Robinson Cavalcanti participou como delegado pleno na representação do Cone Sul, e inscrições da
+    IEAB não foram deferidas.
+  status: confirmed
+  sources:
+  - source: drp2-noticias-diocesanas-sul-sul-2005
+    quote: >-
+      Expressamos a nossa satisfação com a recente ação do Primaz do Cone Sul, que agiu para estabilizar a volátil
+      situação no Recife, Brasil
+  - source: drp2-noticias-diocesanas-sul-sul-2005
+    quote: >-
+      A Comissão Organizadora do Encontro havia deliberado não deferir pedidos de inscrição da Província do Brasil
+      (IEAB), e convidou Dom Robinson Cavalcanti como delegado pleno, integrando a representação da Igreja Anglicana
+      do Cone Sul da América.
+- type: other
+  date: '2005-12-12'
+  description: >-
+    Em dezembro de 2005 a Diocese Anglicana do Recife (sob o Cone Sul) contava 4.371 pessoas em 37 paróquias, missões
+    e pontos missionários, com 41 clérigos e 16 ministros leigos e evangelistas, em 4 arcediagados, sem contar as
+    comunidades associadas nos EUA.
+  status: confirmed
+  sources:
+  - source: drp2-informe-crescimento-2005
+    quote: >-
+      a DAR conta com uma comunidade de 4.371 pessoas, em 37 Paróquias, Missões e Pontos Missionários, liderados
+      por 41 Clérigos e 16 Ministros Leigos e Evangelistas. 25% dos Ministros foram também ordenados este ano.
+- type: other
+  date: '2011-05-05'
+  description: >-
+    Na eleição de bispos sufragâneos da Diocese do Recife (Sínodo Extraordinário de 04/06/2011), os 'episcopáveis'
+    eram os reverendos Evilásio Tenório, Flávio Adair Torres Soares e Maurício Amazonas.
+  status: confirmed
+  sources:
+  - source: drp2-episcopaveis-2011
+    quote: 'Série: “O Povo Pergunta e os Episcopáveis Respondem”'
+  - source: drp2-episcopaveis-2011
+    quote: Rev. Evilásio Tenório | Rev. Flávio Adair | Rev. Maurício Amazonas

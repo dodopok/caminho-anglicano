@@ -30,6 +30,34 @@ affiliations:
     exata.
 - jurisdiction: diocese-anglicana-recife
   role: other
+  role_description: vigário geral
+  start: 2006-02
+  status: confirmed
+  sources:
+  - source: drp2-breves-02-2006
+    quote: >-
+      O Bispo Diocesano, no uso de suas atribuições, resolveu designar para o cargo de confiança de Vigário Geral
+      Diocesano o Rev. Maurício Roberto Fernandes Coelho
+  notes: >-
+    Na mesma época, no terceiro mandato anual como presidente do Conselho Diocesano e indicado ao Cabido da Catedral
+    do Bom Samaritano.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco
+  start: '2008-06-08'
+  status: confirmed
+  sources:
+  - source: drp2-instituicao-paroco-gravata-2008
+    quote: Gravatá (PE), 08 de junho de 2008
+  - source: drp2-instituicao-paroco-gravata-2008
+    quote: >-
+      nós declaramos e proclamamos que o Rev. Maurício Coelho é o novo Pároco da Paróquia Anglicana Gravatá, da
+      Diocese do Recife, no Arcediagado Centro.
+  notes: >-
+    Local: Paróquia Anglicana Gravatá (Arcediagado Centro). Nomeado pelo bispo diocesano Dom Robinson Cavalcanti
+    e instituído pelo arcediago Fred Souto.
+- jurisdiction: diocese-anglicana-recife
+  role: other
   role_description: presidente_conselho_diocesano
   status: confirmed
   sources:
@@ -59,6 +87,42 @@ affiliations:
     Brasil e, conseqüentemente, das Sagradas Ordens' por abandono de comunhão. motivo_fim 'deposicao' porque o efeito
     é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
     adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: presidente do Conselho Diocesano
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-ix
+    quote: dirigida pelo presidente do Conselho Diocesano, Rev. Maurício Coelho
+  notes: 'Local: Diocese do Recife, Conselho Diocesano. Presidente do Conselho Diocesano em dezembro de 2004.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco
+  end: '2006-07-01'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: drp2-breves-02-2006
+    quote: >-
+      O Rev. Maurício continuará como Pároco “Pró-Têmpore" da Paróquia Anglicana Jardim das Oliveiras até o próximo
+      dia 01 de julho, quando será substituído por uma Equipe Pastoral liderada pelo Rev. André Luiz de Souza.
+  notes: 'Local: Paróquia Anglicana Jardim das Oliveiras. Pároco pro tempore.'
+- jurisdiction: ieab-dar
+  role: other
+  role_description: arcediago
+  status: confirmed
+  sources:
+  - source: drp2-breves-09-2004
+    quote: com a presença do Ven. Arc. Rev. Maurício Coelho
+  notes: 'Local: Diocese Anglicana do Recife. Arcediago em junho de 2004.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presidente do Conselho Diocesano
+  status: confirmed
+  sources:
+  - source: drp2-breves-16-2007
+    quote: Também participou da cerimônia o presidente do nosso Conselho Diocesano, Rev. Maurício Coelho.
+  notes: 'Local: Conselho Diocesano. Em julho de 2007.'
 events:
 - type: other
   date: '2005-06-27'
@@ -77,3 +141,35 @@ events:
       e depôs o Bispo Diocesano do Recife antes que qualquer ação do Painel de Referência pudesse ser tomada
   - source: drv-carta-cantuaria
     quote: Revogação imediata da deposição do Bispo Diocesano
+- type: other
+  date: 2003-07
+  description: >-
+    Em julho de 2003, Dom Robinson Cavalcanti levou sete clérigos e ministros leigos da Diocese do Recife à Consulta
+    da EFAC em Limuru, Quênia.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-viii
+    quote: >-
+      Em julho de 2003, sete clérigos e Ministros Leigos (Reverendos: Maurício Coelho, Siméa Meldrum, Estevão Menezes,
+      Jorge Aquino e Fábio Vasconcelos, Gustavo Gilson e a ML Roberta Araújo) foram comigo a Limuru, Quênia, África,
+      para participar da Consulta da EFAC
+- type: other
+  date: 2004-12
+  description: >-
+    Em dezembro de 2004, três dias antes do Concílio Diocesano do Recife, o Primaz Orlando Santos de Oliveira decretou
+    sua suspensão; os delegados, reunidos em assembleia presidida pelo Rev. Maurício Coelho (presidente do Conselho
+    Diocesano), decidiram realizá-lo, e o Concílio apelou ao Arcebispo de Cantuária e aos Primazes por 'Supervisão
+    Primacial Alternativa Com Jurisdição'.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      Três dias antes (com despesas feitas e pastas dos delegados prontas) o Primaz, Dom Orlando, outra vez sem
+      base legal, decreta a sua suspensão.
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      Uma assembléia diocesana é instalada, dirigida pelo presidente do Conselho Diocesano, Rev. Maurício Coelho.
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      O Concílio delibera apelar para o Arcebispo de Cantuária e para os Primazes da Comunhão Anglicana, pedindo
+      uma “Supervisão Primacial Alternativa Com Jurisdição”.

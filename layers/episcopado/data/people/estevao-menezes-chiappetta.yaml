@@ -1,6 +1,10 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: estevao-menezes-chiappetta
 name: Estevão Menezes Chiappetta
+aliases:
+- Estevão Chiappetta
+- Estevão Menezes da Silva
+- Rev. Estevão Menezes
 biography: Deão da Catedral Anglicana do Bom Samaritano (Recife) em 2006-2007.
 sources:
 - source: drp-boletim-oracao-2006
@@ -41,9 +45,16 @@ ordinations:
     quote: Recife – PE, 07 de Março de 2004
   - source: rcor-drv-presb-estevao
     quote: Graças a Deus pelo Rev. Estevão (44º presbítero ordenado neste episcopado)
+  - source: drp2-ord-presb-estevao-2004
+    quote: >-
+      Ordenação Presbiteral de Estevão Menezes da Silva Culto em Ação de Graças – 5º Aniversário da Paróquia Anglicana
+      Jardim das Oliveiras Recife – PE, 07 de Março de 2004
+  - source: drp2-ord-presb-estevao-2004
+    quote: Graças a Deus pelo Rev. Estevão (44º presbítero ordenado neste episcopado)
   notes: >-
     Sermão do bispo diocesano (Robinson Cavalcanti). O sermão o chama 'Estevão Menezes da Silva'; identificação
-    com Estevão Menezes Chiappetta provável, não confirmada.
+    com Estevão Menezes Chiappetta provável, não confirmada. 44º presbítero do episcopado de Dom Robinson. O sermão
+    o chama 'Estevão Menezes da Silva'.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -67,6 +78,15 @@ affiliations:
     de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
     dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
     exata.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: deão
+  start: '2006-08-05'
+  status: probable
+  sources:
+  - source: drp2-breves-08-2006
+    quote: às 19h30, em Culto Solene, a Instituição do Novo Deão da Catedral – Rev. Estevão Chiappetta
+  notes: 'Local: Catedral Anglicana do Bom Samaritano. Instituição anunciada para 05/08/2006.'
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: deao

@@ -9,6 +9,33 @@ sources:
     Capelão e a Coordenadora Pedagógica: Revda. Jeane Coelho
 - source: drp-boletim-oracao-2006
   quote: Orar pela Paróquia Anglicana Jardim das Oliveiras; pelo Rev. Maurício Amazonas
+ordinations:
+- order: diaconate
+  date: '2005-08-27'
+  place: Paróquia Anglicana do Mediador, Recife-PE
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: drp2-ordenacoes-2005-08-27
+    quote: SERMÃO DE ORDENAÇÕES Paróquia Anglicana do Mediador Recife (PE), 27/08/2005
+  - source: drp2-ordenacoes-2005-08-27
+    quote: >-
+      Bem-vindos a Casa de Deus, para esse Culto de Adoração e Ações de Graças, e de Ordenação dos novos Diáconos:
+      Jeane Coelho, Maurício Amazonas e Tereza Catão, e o novo Presbítero reverendo Josias de Souza Júnior.
+- order: presbyterate
+  date: '2006-02-04'
+  place: Catedral Anglicana do Bom Samaritano, Recife-PE
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: drp2-ord-presb-amazonas-2006
+    quote: >-
+      Sermão de Ordenação Presbiteral Reverendo Maurício Amazonas Catedral Anglicana do Bom Samaritano Recife (PE),
+      04.02.2006
+  - source: drp2-ord-presb-amazonas-2006
+    quote: Ao longo desses oito anos e meio de episcopado ordenei 68 Diáconos e 53 Presbíteros.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: other
@@ -42,3 +69,32 @@ affiliations:
       a Ordem ficou restrita a um círculo muito específico de clérigos, sobrevivendo através deles, até hoje, como
       por exemplo, o reverendo Maurício Amazonas.
     page: '28'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco
+  status: confirmed
+  sources:
+  - source: drp2-episcopaveis-2011
+    quote: Sou pastor em tempo integral na Paróquia Anglicana Jardim das Oliveiras.
+  notes: 'Local: Paróquia Anglicana Jardim das Oliveiras. Em maio de 2011.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: vigário geral
+  status: confirmed
+  sources:
+  - source: drp2-episcopaveis-2011
+    quote: >-
+      quer na condição anterior de Presidente do Conselho Diocesano, quer na condição atual de Vigário-Geral
+  notes: Vigário-geral em maio de 2011; antes, presidente do Conselho Diocesano.
+events:
+- type: other
+  date: '2011-05-05'
+  description: >-
+    Na eleição de bispos sufragâneos da Diocese do Recife (Sínodo Extraordinário de 04/06/2011), os 'episcopáveis'
+    eram os reverendos Evilásio Tenório, Flávio Adair Torres Soares e Maurício Amazonas.
+  status: confirmed
+  sources:
+  - source: drp2-episcopaveis-2011
+    quote: 'Série: “O Povo Pergunta e os Episcopáveis Respondem”'
+  - source: drp2-episcopaveis-2011
+    quote: Rev. Evilásio Tenório | Rev. Flávio Adair | Rev. Maurício Amazonas
