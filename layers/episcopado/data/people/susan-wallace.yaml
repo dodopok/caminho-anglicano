@@ -1,6 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: susan-wallace
 name: Susan Wallace
+biography: >-
+  Sagrada e instalada em junho de 2026, em Christchurch, como bispa de Te Hui Amorangi ki Te Waipounamu (Nova Zelândia),
+  em celebração na qual a bispa primaz da IEAB, Marinez Bassotto, proferiu o sermão.
+sources:
+- source: cabs-ieab-wallace-2026
+  quote: >-
+    Representando a IEAB, a bispa Marinez teve participação de destaque na celebração ao ser convidada para proferir
+    o sermão.
 events:
 - type: other
   date: 2026-06

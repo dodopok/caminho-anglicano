@@ -1,6 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: gabriel-maria
 name: Gabriel Maria
+biography: >-
+  Presbítero da Igreja Anglicana Bom Pastor, ordenado por Megino Carneiro Souza, é pároco da Diocese de Nossa Senhora
+  das Graças.
+sources:
+- source: meel-ig-gabriel-pronunciamento
+  quote: Não venho falar apenas de um Bispo que um dia me ordenou Padre.
+- source: meel-ig-megino-gabriel-8m
+  quote: >-
+    Hoje, com o coração cheio de alegria e gratidão a Deus, quero lhe parabenizar pelos 8 meses de sua Ordenação
+    Presbiteral.
+- source: meel-ig-megino-missa-gabriel
+  quote: >-
+    No dia 21 de agosto, a Diocese de Nossa Senhora das Graças convida toda a comunidade para participar da Missa
+    de Ação de Graças pelo 8º mês de Ordenação Presbiteral do nosso pároco, Padre Gabriel Maria.
 ordinations:
 - order: presbyterate
   date: null
