@@ -37,7 +37,7 @@ ordinations:
     anuncia impor as mãos sobre os ordinandos. Elias Leôncio e Tibério optaram pelo diaconato permanente; Décio,
     Raniere e Solange aspiravam ao presbiterato.
 - order: presbyterate
-  date: 2004-12
+  date: '2004-12-04'
   place: Paróquia Anglicana Emanuel, Olinda-PE (culto de encerramento do XXIV Concílio Diocesano)
   jurisdiction: ieab-dar
   ordained_by: robinson-cavalcanti
@@ -51,10 +51,19 @@ ordinations:
     quote: Ordenação presbiteral XXIV C Diocesano- Olinda PE
   - source: drp2-ord-presb-xxiv-concilio-2004
     quote: Fred,Ranieri,Solange,Marconi, Décio
+  - source: darl2-sermao-ord-274
+    quote: Hoje a Igreja estará recebendo cinco novos Presbíteros.
+  - source: darl2-sermao-ord-274
+    quote: Décio, Fred, Marcone, Solange e Raniere,
+  - source: darl2-sermao-ord-274
+    quote: Culto de Encerramento do XXIV Concílio Diocesano Olinda(PE), 04 de Dezembro de 2004
   notes: >-
     Ordenação no culto eucarístico após os Concílios Ordinário (XXIV) e Extraordinário da diocese, em Olinda. O
     informe diocesano é datado de 02/12/2004 e fala do 'último fim de semana'; o cabeçalho do sermão do Rev. Miguel
-    Uchôa traz 10/12/2004. Dia exato incerto.
+    Uchôa traz 10/12/2004. Dia exato incerto. O sermão do culto de encerramento do XXIV Concílio Diocesano, pregado
+    por Miguel Uchôa, saúda cinco novos presbíteros pelos primeiros nomes (Décio, Fred, Marcone, Solange e Raniere);
+    a identificação com Raniere Almeida de Oliveira segue o registro das ordenações presbiterais desse concílio
+    (grafia "Marcone" no sermão). O sermão não nomeia o ordenante.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -96,3 +105,13 @@ affiliations:
     Brasil e, conseqüentemente, das Sagradas Ordens' por abandono de comunhão. motivo_fim 'deposicao' porque o efeito
     é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
     adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: clero (Paróquia Anglicana do Semeador)
+  status: probable
+  sources:
+  - source: darl2-compromisso-278
+    quote: Rev. Raniere Almeida de Oliveira
+  - source: darl2-compromisso-278
+    quote: Paróquia Anglicana do Semeador
+  notes: Coautor de artigo assinado pela Paróquia Anglicana do Semeador; sem data própria.

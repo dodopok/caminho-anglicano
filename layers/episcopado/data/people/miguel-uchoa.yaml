@@ -491,6 +491,36 @@ affiliations:
       tendo como Reitor o Rev. Jorge Aquino; como coordenador pedagógico o Diácono Edson Pimentel, e como Capelão
       o Rev. Miguel Uchoa.
   notes: 'Local: Diocese do Recife, Seminário Anglicano de Estudos Teológicos (SAET). Datas não informadas.'
+- jurisdiction: ieab-dar
+  role: other
+  role_description: reitor da Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes, PE)
+  status: confirmed
+  sources:
+  - source: darl2-sermao-ord-274
+    quote: A Paróquia Anglicana do Espírito Santo, da qual hoje sou Reitor
+  - source: darl2-marchando-275
+    quote: Rev. Miguel Uchôa é reitor da Paróquia Anglicana do Espírito Santo, em Jaboatão dos Guararapes-PE
+  notes: 'Local: Diocese Anglicana do Recife. Atestado em 16/10/2004 e 04/12/2004; início não informado.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago sul e reitor da Paróquia Anglicana do Espírito Santo
+  status: probable
+  sources:
+  - source: darl2-cara-271
+    quote: Rev. Miguel Uchoa - Arcediago Sul da DAR e Reitor da Paróquia Anglicana do Espírito Santo
+  - source: darl2-cara-270
+    quote: O Venerável Arcediago Rev. Miguel Uchôa escreveu um excelente texto
+  notes: >-
+    Artigo sem data própria (postado no site em 20/08/2009), mas escrito em 2005, após a decisão do Conselho Consultivo
+    Anglicano e a deposição de Robinson Cavalcanti; o título "Arcediago Sul" é o da assinatura.
+- jurisdiction: ieab
+  role: other
+  role_description: membro do Conselho Executivo do Sínodo (por um mandato)
+  status: probable
+  sources:
+  - source: darl2-cara-271
+    quote: eu, membro por um mandato do Conselho Executivo do Sínodo sei
+  notes: Cargo provincial da IEAB mencionado de passagem em artigo de 2005; datas do mandato não informadas.
 events:
 - type: other
   date: '2017-05-06'
@@ -1054,3 +1084,34 @@ events:
       October
   - source: gace-tlc-gsfa-2026-01
     quote: I believe that GAFCON and GSFA can and should coexist with common purposes and different strategies
+- type: other
+  date: '2004-12-04'
+  description: >-
+    O XXIV Concílio Diocesano da Diocese Anglicana do Recife (Olinda, encerrado em 04/12/2004) aprovou praticamente
+    todas as funções e cargos sugeridos pelo bispo, pelo Conselho e pelo plenário; o lema diocesano para 2005 foi
+    "Ano da Sã Doutrina: Conhecendo, Vivendo e Afirmando a Verdade".
+  status: confirmed
+  sources:
+  - source: darl2-sermao-ord-274
+    quote: >-
+      poder concordar e apoiar praticamente todas as funções e cargos sugeridos pelo Bispo, pelo Conselho e pelo
+      plenário
+  - source: darl2-sermao-ord-274
+    quote: 'Observemos nosso lema: 2005 – Ano da Sã Doutrina: Conhecendo, Vivendo e Afirmando a Verdade!'
+- type: other
+  date: '2004-10-16'
+  description: >-
+    Em outubro de 2004 a Diocese do Recife celebrou, na Paróquia Anglicana Jardim das Oliveiras (Recife), culto
+    em ação de graças pelo sétimo ano do episcopado de Robinson Cavalcanti; no sermão, Miguel Uchôa afirma que o
+    bispo estava sendo processado por indisciplina e que a diocese poderia buscar acolhida em outras partes da Comunhão
+    Anglicana (Cone Sul, África, Ásia, Índias Ocidentais).
+  status: confirmed
+  sources:
+  - source: darl2-marchando-275
+    quote: >-
+      Sermão do Culto em Ação de Graças pelo 7º ano do episcopado do Bispo Robinson Cavalcanti na Paróquia Anglicana
+      Jardim das Oliveiras - Recife (PE), 16.10.2004.
+  - source: darl2-marchando-275
+    quote: Nosso Bispo está sendo processado por indisciplina.
+  - source: darl2-marchando-275
+    quote: Cone sul, África, Ásia, Índias Ocidentais
