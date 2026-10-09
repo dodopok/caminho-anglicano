@@ -81,7 +81,9 @@ def tamanho(n):
         return '2 a 3 frases (até ~500 caracteres)'
     if n <= 30:
         return '4 a 6 frases (até ~900 caracteres)'
-    return '7 a 12 frases (até ~1.800 caracteres), cobrindo cada fase do ministério ou da história'
+    if n <= 100:
+        return '7 a 12 frases (até ~1.800 caracteres), cobrindo cada fase do ministério ou da história'
+    return '10 a 16 frases (até ~2.600 caracteres), cobrindo cada fase do ministério ou da história'
 
 
 def codigo(s):
