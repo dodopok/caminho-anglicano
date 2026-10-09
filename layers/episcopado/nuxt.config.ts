@@ -32,6 +32,16 @@ export default defineNuxtConfig({
     '/episcopado/pessoa/**': { isr: true },
     '/episcopado/jurisdicao/**': { isr: true },
     '/episcopado/fonte/**': { isr: true },
-    '/api/episcopado/**': { isr: true }
+    '/api/episcopado/**': { isr: true },
+    // Consultas dependem da query e não podem usar o ISR que a remove do pedido.
+    // A base e o índice continuam em memória; o resultado é calculado por consulta.
+    '/api/episcopado/caminho': { isr: false, cache: false },
+    '/api/episcopado/busca': { isr: false, cache: false },
+    '/api/episcopado/posicoes': { isr: false, cache: false },
+    '/api/episcopado/arvore': { isr: false, cache: false },
+    '/api/episcopado/efemerides': { isr: false, cache: false },
+    '/api/episcopado/inicio': { isr: 3600 },
+    // Sugestões são POST e nunca entram em cache.
+    '/api/episcopado/sugestao': { isr: false, cache: false }
   }
 })

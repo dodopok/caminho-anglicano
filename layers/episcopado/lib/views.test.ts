@@ -63,6 +63,39 @@ describe('personView', () => {
     expect(personView(index, 'x')).toBeNull()
   })
 
+  it('ordena a trajetória pelo início ou término, com saídas antes de entradas na mesma data', () => {
+    const affiliation = (jurisdiction: string, role_description: string, start?: string, end?: string) =>
+      ({ jurisdiction, role: 'other' as const, role_description, start, end, status: 'confirmed' as const, sources: jurisdiction === 'iab' ? s2 : s1 })
+    const b: Base = { ...base, people: [{
+      id: 'douglas', name: 'Douglas', affiliations: [
+        affiliation('reb', 'clérigo', '2024-12'),
+        affiliation('reb', 'presbítero', '2025-10'),
+        affiliation('reb', 'custódio'),
+        affiliation('iab', 'aspirante', undefined, '2024-12'),
+        affiliation('iab', 'postulante', undefined, '2024-12'),
+        affiliation('iab', 'membro', '2022-08', '2024-12'),
+        affiliation('reb', 'presidente', '2026'),
+        affiliation('reb', 'liturgia')
+      ]
+    }] }
+    const v = personView(indexBase(b), 'douglas')!
+    expect(v.affiliations.map((a) => a.roleDescription)).toEqual([
+      'membro', 'aspirante', 'postulante', 'clérigo', 'presbítero', 'presidente', 'custódio', 'liturgia'
+    ])
+    expect(v.affiliations[1]).toMatchObject({ start: undefined, end: '2024-12', cites: [2] })
+    expect(v.footnotes.map((f) => f.quote)).toEqual(['trecho um', 'trecho dois'])
+  })
+
+  it('ordena eventos com datas aproximadas e preserva a ordem dos empates e dos eventos sem data', () => {
+    const dates = [null, '1900', 'c.1890', '1889', '1895/1898', '1890-03-16', '1890-03', '1890-03', null]
+    const b: Base = { ...base, people: [{ id: 'k', name: 'K', events: dates.map((date, i) => ({
+      type: 'other', date, description: String(i), status: 'confirmed', sources: s1
+    })) }] }
+    const v = personView(indexBase(b), 'k')!
+    expect(v.events.map((e) => e.description)).toEqual(['3', '2', '6', '7', '5', '4', '1', '0', '8'])
+    expect(v.events[1].date).toBe('c.1890')
+  })
+
   it('mostra datas de nascimento divergentes com o nome do fato', () => {
     const b: Base = {
       ...base,

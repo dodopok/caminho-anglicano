@@ -1,3 +1,4 @@
+import { compareDates } from './dates'
 import {
   EVENT_LABEL,
   FIELD_LABEL,
@@ -358,8 +359,12 @@ function mainEpiscopate(p: TPerson): TOrdination | undefined {
   return list.find((o) => !o.mode || o.mode === 'normal') ?? list[0]
 }
 
-const byDate = <T extends { date?: string | null }>(a: T, b: T) => (a.date ?? '9999').localeCompare(b.date ?? '9999')
-const byStart = <T extends { start?: string | null }>(a: T, b: T) => (a.start ?? '9999').localeCompare(b.start ?? '9999')
+const byDate = <T extends { date?: string | null }>(a: T, b: T) => compareDates(a.date, b.date)
+const byStart = <T extends { start?: string | null }>(a: T, b: T) => compareDates(a.start, b.start)
+
+/** Usa o término quando não há início; saídas precedem entradas com a mesma data. */
+const byAffiliation = (a: AffiliationView, b: AffiliationView) =>
+  compareDates(a.start ?? a.end, b.start ?? b.end) || Number(a.start != null) - Number(b.start != null)
 
 /**
  * Sobe por todos os sagrantes (principais e co-sagrantes) a partir de `startId` e
@@ -435,7 +440,7 @@ export function personView(index: BaseIndex, id: string): PersonView | null {
       end: a.end,
       endReason: a.end_reason
     }))
-    .sort(byStart)
+    .sort(byAffiliation)
 
   const events = (p.events ?? [])
     .map((e) => ({
@@ -641,7 +646,7 @@ interface Citation {
   claim: Omit<SupportedClaim, 'quote' | 'page'>
 }
 
-function discrepancyText(index: BaseIndex, d: { field: string; value?: string | string[] | null }): string {
+export function discrepancyText(index: BaseIndex, d: { field: string; value?: string | string[] | null }): string {
   const label = FIELD_LABEL[d.field] ?? d.field
   if (d.value === null || d.value === undefined) return `${label}: não informado`
   const values = Array.isArray(d.value) ? d.value : [d.value]

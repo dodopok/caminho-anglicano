@@ -198,6 +198,10 @@ export default defineNuxtConfig({
       routes: ['/glossario']
     },
     routeRules: {
+      // Universal Links do app do Episcopado: o arquivo precisa sair como JSON, sem extensão.
+      '/.well-known/apple-app-site-association': {
+        headers: { 'content-type': 'application/json' }
+      },
       '/locs/**': {
         headers: {
           'Access-Control-Allow-Origin': '*',
@@ -270,8 +274,12 @@ export default defineNuxtConfig({
     telegramBotToken: process.env.TELEGRAM_BOT_TOKEN,
     telegramChatId: process.env.TELEGRAM_CHAT_ID,
     abacatepayApiKey: process.env.ABACATEPAY_API_KEY,
+    // Rede do Episcopado: sugestões de correção viram issues no GitHub (ver docs/EPISCOPADO-API.md)
+    episcopadoGithubToken: process.env.EPISCOPADO_GITHUB_TOKEN,
+    episcopadoGithubRepo: process.env.EPISCOPADO_GITHUB_REPO,
 
     public: {
+      siteUrl: 'https://caminhoanglicano.com.br',
       supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL,
       supabaseAnonKey: process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY,
       googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY
