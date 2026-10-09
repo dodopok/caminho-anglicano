@@ -338,6 +338,8 @@ for arq in arquivos:
         if p.get('resumo') and rs and not x.get('biography'):
             x['biography'] = p['resumo']
             x['sources'] = rs
+        elif p.get('resumo') and rs:
+            x['sources'] = mesclar_refs(x.get('sources') or [], rs)
         # Fatos biográficos permitidos (naturalidade, formação, cônjuge clérigo…) não têm campo próprio: as citações
         # ficam junto às fontes do resumo, e o resumo é refeito com resumos.py.
         rb = refs(p.get('fontes_biografia'), chaves)
@@ -370,6 +372,9 @@ for arq in arquivos:
         if j.get('resumo') and rs and not x.get('description'):
             x['description'] = j['resumo']
             x['sources'] = rs
+        elif j.get('resumo') and rs:
+            # Já há descrição: as citações vão para as fontes do resumo, que é refeito com resumos.py.
+            x['sources'] = mesclar_refs(x.get('sources') or [], rs)
 
     for a in d.get('afirmacoes', []):
         rs = refs(a.get('fontes'), chaves)
