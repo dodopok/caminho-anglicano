@@ -5,13 +5,48 @@ name: Província Episcopal/Anglicana de Alexandria (Episcopal/Anglican Province 
 type: province
 tradition: anglican
 country: EG
-description: Província da Comunhão Anglicana.
+description: >-
+  Província anglicana de Alexandria, cujo arcebispo Samy Shehata integra o Conselho dos Primazes do GAFCON, do qual
+  a província é membro. Em 2026 é listada entre as signatárias do comunicado do GSFA, que afirma permanecer na Comunhão
+  Anglicana, e entre as igrejas que afirmaram a Declaração de Jerusalém e permanecem na Global Anglican Communion.
 sources:
 - source: gacm-tlc-2026-03-27-who-leads
   quote: >-
     They are archbishops Samy Shehata of Alexandria, Titre Ande of Congo, Jackson Ole Sapit of Kenya, Justin Badi
     Arama of South Sudan, and Ezekiel Kondo of Sudan, as well as Archbishop James Wong, the retired primate of the
     Indian Ocean.
+- source: gacl-ai-2023-uxbridge
+  quote: The Most Reverend Samy Shehata – Alexandria
+- source: gacm-tlc-2025-10-17-analysis
+  quote: >-
+    Three of the nine other churches represented on GAFCON’s Primates’ Council are not recognized by the Anglican
+    Communion Office and have largely been formed under GAFCON’s auspices (the Anglican Church of Brazil, the Reformed
+    Evangelical Anglican Church of South Africa, and the Anglican Church in North America). But such a total severing
+    of connections with Canterbury and the Instruments of Communion would be a new development for the six other
+    provinces represented on the council (Alexandria, Chile, Congo, Kenya, Myanmar, and South Sudan).
+- source: gacm-ens-2025-10-23-little-evidence
+  quote: >-
+    The other six Anglican provinces that are represented on GAFCON’s primates’ council are Alexandria (Egypt),
+    Chile, Congo, Kenya, Myanmar and South Sudan.
+- source: gace-tlc-gsfa-2026-01
+  quote: >-
+    The meeting’s communiqué , released January 21, was signed by nine primates, representing the Anglican Communion’s
+    provinces of Alexandria, Congo, the Indian Ocean, Myanmar, South East Asia, South Sudan, Sudan, and Uganda,
+    as well as the Anglican Church of Brazil.
+- source: gacm-ai-2026-01-20-gsfa-mahe
+  quote: >-
+    GSFA is staying within the Anglican Communion, but more importantly, we are staying with Jesus to bear witness
+    that we must choose life rather than death and light rather than darkness.
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    Important omissions from the council’s list were six former Gafcon primates who did not participate in the Abuja
+    meetings. They are archbishops Samy Shehata of Alexandria, Titre Ande of Congo, Jackson Ole Sapit of Kenya,
+    Justin Badi Arama of South Sudan, and Ezekiel Kondo of Sudan, as well as Archbishop James Wong, the retired
+    primate of the Indian Ocean.
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    Because their churches have publicly affirmed the Jerusalem Declaration, they remain part of the Global Anglican
+    Communion.
 relations:
 - type: member_of
   target: gafcon

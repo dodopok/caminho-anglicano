@@ -1,11 +1,28 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: timothy-michael-barker
 name: Timothy Michael Barker
-biography: Arcebispo da Comunhão Católica Internacional Livre; consagrou Randolph Adler em 1992.
+biography: >-
+  Arcebispo da Comunhão Católica Internacional Livre, sagrado em 23/04/1989 por Herman Adrian Spruit, foi o sagrante
+  principal de Randolph Adler em 26/06/1992; em 1997 a ICCEC determinou a reordenação de seus clérigos pela ICAB
+  para afastar-se de suas posições.
 sources:
 - source: cant-novas-igrejas-2024
   quote: >-
     pela imposição de mãos de Timothy Michael Barker, arcebispo da Comunhão Católica Internacional Livre.
+  page: '44'
+- source: rtb-ceec-succession
+  quote: >-
+    Herman Adrian Spruit Archbishop of the Church of Antioch, who on the 23rd of April, 1989, consecrated Timothy
+    Michael Barker
+- source: enwiki-iccec-bispos
+  quote: >-
+    On 26 June 1992, [[Austin Randolph Adler]] was consecrated the first bishop and [[primate (bishop)|primate]]
+    of the CEC with Timothy Michael Barker of the International Free Catholic Communion
+- source: cant-novas-igrejas-2024
+  quote: >-
+    a Comunhão Episcopal Carismática determinou a reordenação de todos os seus clérigos, através de um acordo bilateral
+    com os bispos da Igreja Católica Apostólica Brasileira, estabelecendo uma nova linha de sucessão apostólica
+    a partir da ICAB
   page: '44'
 ordinations:
 - order: episcopate

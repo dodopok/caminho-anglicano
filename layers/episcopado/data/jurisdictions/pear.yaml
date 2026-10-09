@@ -6,12 +6,43 @@ type: province
 tradition: anglican
 country: RW
 description: >-
-  Província anglicana de Ruanda, cujo arcebispo Laurent Mbanda preside o GAFCON (desde 2023) e o Global Anglican
-  Council (desde 2026).
+  Província anglicana de Ruanda, com dioceses como Kigali, Shyira e Gahini. Emmanuel Kolini foi primaz de 1998 a
+  janeiro de 2011; Laurent Mbanda, bispo de Shyira desde novembro de 2010, foi eleito em 17 de janeiro de 2018 o
+  quarto arcebispo e primaz e entronizado em 10 de junho de 2018, e Manasseh Gahima é bispo de Gahini desde 2019.
+  Mbanda preside o GAFCON desde 2023 e figura como presidente do conselho de primazes da Global Anglican Communion.
 sources:
+- source: gacl-wp-kolini
+  quote: '| title            = Primate of Rwanda, Bishop of Kigali
+
+    | term             = 1998 - January 2011'
+- source: gacl-newtimes-2010-shyira
+  quote: >-
+    MUSANZE - The Anglican Church of Rwanda, Sunday, enthroned Dr Laurent Mbanda as the new Bishop of Shyira Diocese,
+    replacing the retiring Bishop John Rucyahana, who has been at the helm of the Diocese since 1997. Monday, November
+    15, 2010
+- source: gacl-wp-mbanda
+  quote: He was the bishop of the Diocese of Shyira when he was elected the fourth archbishop and primate
+- source: gace-gac-page
+  quote: >-
+    He was then elected the fourth Archbishop and Primate of the Province of the Anglican Church of Rwanda on 17
+    January 2018. His enthronement took place on 10 June 2018.
+- source: gacl-wp-mbanda
+  quote: >-
+    elected the fourth archbishop and primate of the [[Anglican Church of Rwanda|Province of the Anglican Church
+    of Rwanda]] on 17 January 2018
+- source: gace-gahima-elected
+  quote: He was consecrated a bishop in 2017 and has served as Bishop of Gahini since 2019.
 - source: gace-gac-page
   quote: >-
     The Most Revd Dr Laurent Mbanda Archbishop of the Anglican Church of Rwanda, Chairman of Gafcon since 2023
+- source: gace-gac-page
+  quote: Archbishop of the Anglican Church of Rwanda, Chairman of Gafcon since 2023
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    The council’s primates are Archbishops Laurent Mbanda of Rwanda (Chair), Miguel Uchoa of the Anglican Church
+    of Brazil (Vice Chair), Henry Ndukuba of Nigeria, Stephen Kaziimba of Uganda, Enrique Lago of Chile, Presiding
+    Bishop Siegfried Ngubane of the Reformed Evangelical Anglican Church of South Africa, and Bishop Julian Dobbs,
+    acting primate of the Anglican Church in North America.
 relations:
 - type: member_of
   target: gac

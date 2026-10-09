@@ -1,8 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: stephen-dass
 name: Stephen Dass
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Clérigo da Diocese Anglicana do Recife, ordenado presbítero em 30/09/2006 por Robinson Cavalcanti, citado no boletim
+  de oração da diocese em 2006.
 sources:
+- source: drv-sermao-9-anos-sagracao
+  quote: 'Ordenação Presbiteral dos Reverendos: André Luiz de Souza e Stephen Dass'
+- source: drv-nota-esclarecimento-2006
+  quote: Stephen Dass
 - source: drp-boletim-oracao-2006
   quote: Orar pela Paróquia Anglicana da Reconciliação (Caruaru-PE); pelo Rev. Stephen Dass e esposa
 ordinations:

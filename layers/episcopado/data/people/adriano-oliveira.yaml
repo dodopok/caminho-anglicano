@@ -1,11 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: adriano-oliveira
 name: Adriano Oliveira
-biography: Reverendo da Igreja Anglicana Ortodoxa do Brasil, signatário da Declaração da Boa Viagem (2006).
+biography: >-
+  Reverendo ligado à Igreja Anglicana Ortodoxa do Brasil (IAOB) em 2006, ano em que consta entre os signatários
+  da Declaração da Boa Viagem. Na Diocese do Recife atuou como ministro auxiliar, ministro encarregado do Ponto
+  Missionário Anglicano em Maceió e presbítero em reconhecimento de ordens.
 sources:
 - source: cant-novas-igrejas-2024
   quote: pelos reverendos Hermany Soares, Adriano Oliveira, Flávio Conti e Virgílio Torres
   page: '118'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    a Igreja Anglicana Ortodoxa do Brasil (IAOB), pelos reverendos Hermany Soares, Adriano Oliveira, Flávio Conti
+    e Virgílio Torres
+  page: '118'
+- source: darn2-mediador-2011
+  quote: 'Ministro Auxiliar: Rev. Adriano Oliveira'
+- source: dard2-com-sul
+  quote: 'PONTO MISSIONÁRIO ANGLICANO EM MACEIÓ Ministro Encarregado: Rev. Adriano Oliveira'
+- source: dard2-clero-recon
+  quote: Clérigos - Em Reconhecimento de Ordens … PRESBÍTEROS Rev. Adriano de Oliveira
 affiliations:
 - jurisdiction: iaob
   role: clergy

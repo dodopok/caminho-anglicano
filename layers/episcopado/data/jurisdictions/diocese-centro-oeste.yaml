@@ -9,14 +9,24 @@ type: diocese
 country: BR
 website: https://www.diocesecentrooeste.com/
 description: >-
-  Diocese da ICA sob o bispo Orvandil Moreira Barbosa; em 24/05/2018 absorveu a extinta Diocese de Mato Grosso do
-  Sul.
+  Diocese da ICA em Goiás, sob o bispo Orvandil Moreira Barbosa, arcebispo primaz desde 2017. Em 24 de maio de 2018
+  a Diocese de Mato Grosso do Sul foi extinta e reintegrada a ela.
 sources:
 - source: lica-ica-dioceses
   quote: Diocese Centro Oeste Bispo +Dom Orvandil Moreira Barbosa.
+- source: lica-ica-sobre
+  quote: '++ Dom Orvandil M. Barbosa: Arcebispo Primaz e bispo da Diocese Anglicana Centro Oeste;'
+- source: lica-cnpj-ica
+  quote: '"data_entrada_sociedade":"2017-10-31"'
+- source: lica-ica-manifesto
+  quote: >-
+    Dom Orvandil Moreira Barbosa – Arcebispo Primaz e Bispo da Diocese Católica Anglicana do Centro Oeste;
 - source: lica-ica-notificacao
   quote: >-
     A Diocese de Mato Grosso do Sul é extinta e reintegrada à Diocese Católica Anglicana do Centro Oeste.
+- source: cant-novas-igrejas-2024
+  quote: Diocese Centro Oeste, com o bispo Orvandil
+  page: '138'
 relations:
 - type: part_of
   target: ica

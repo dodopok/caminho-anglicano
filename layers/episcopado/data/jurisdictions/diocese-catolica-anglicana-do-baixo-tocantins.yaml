@@ -7,9 +7,8 @@ aliases:
 type: diocese
 country: BR
 description: >-
-  Diocese da ICA no Pará, com o bispo Franciney Rodrigues Pantoja; seus eventos são em Cametá (Paróquia Anglicana
-  Menino Jesus de Praga; Comunidade Católica Anglicana Nossa Senhora da Assunção). Vigário geral: padre Amiraldo
-  Barroso Siqueira; tesoureiro diocesano: padre Pedro de Souza Ribeiro.
+  Diocese da ICA no Pará, cujo bispo titular é Franciney Rodrigues Pantoja e cujo vigário geral é Amiraldo Barroso
+  Siqueira. Realiza eventos em Cametá, na Paróquia Anglicana Menino Jesus de Praga.
 sources:
 - source: lica-ica-dioceses
   quote: >-
@@ -19,6 +18,14 @@ sources:
   quote: >-
     No último dia 06/07/2017, nossa Paróquia Anglicana Menino Jesus de Praga teve a honra de celebrar o aniversário
     do Sr. Luís Gonzaga
+- source: lica-ica-dioceses
+  quote: 'Diocese Católica Anglicana do Baixo Tocantis: Bispo Dom Franciney Pantoja;'
+- source: lica-ica-manifesto
+  quote: >-
+    Dom Franciney Rodrigues Pantoja – Bispo Titular da Diocese Católica Anglicana do Baixo Tocantins do Pará;
+- source: cant-novas-igrejas-2024
+  quote: Diocese Católica Anglicana do Baixo Tocantins, com o bispo Franciney
+  page: '138'
 relations:
 - type: part_of
   target: ica

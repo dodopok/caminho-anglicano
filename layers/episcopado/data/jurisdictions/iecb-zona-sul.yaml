@@ -8,13 +8,20 @@ type: diocese
 tradition: charismatic_episcopal
 country: BR
 description: >-
-  Diocese da IECB com Catedral da Reconciliação (Boa Viagem, Recife); Ximenes diocesano e Ivan Rocha adjutor no
-  diretório; criada em 2007 segundo a Câmara do Recife (2012).
+  Diocese da IECB com a Catedral da Reconciliação (Boa Viagem, Recife), criada em 2007, segundo a Câmara do Recife
+  (2012), como Diocese da Zona Sul do Recife e Estado de Alagoas. Alexandre Barbosa Monteiro Ximenes é bispo diocesano
+  e deão da catedral, e Ivan Barreto de Lima Rocha é bispo adjutor.
 sources:
 - source: lie-betesda-paroquias
   quote: IECB Catedral da Reconciliação
 - source: ier-camara-recife-ximenes-2012
   quote: ano em que também foi criada a Diocese da Zona Sul do Recife e Estado de Alagoas
+- source: lie-betesda-paroquias
+  quote: 'Bispo Diocesano: Dom Alexandre Ximenes'
+- source: ier-camara-recife-ximenes-2012
+  quote: Foi aí que se tornou Bispo Diocesano e Deão da Catedral da Reconciliação, em Boa Viagem
+- source: lie-betesda-paroquias
+  quote: 'Bispo Adjutor: Dom Ivan Rocha'
 relations:
 - type: part_of
   target: iecb

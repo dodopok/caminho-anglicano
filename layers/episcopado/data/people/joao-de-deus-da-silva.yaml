@@ -5,15 +5,37 @@ full_name: João de Deus da Silva
 aliases:
 - Dom João de Deus
 biography: >-
-  Natural de Santana do Mundaú (AL), diácono (1995) e presbítero (1997) na ICAB, ingressou na IELB em 2005 e foi
-  sagrado bispo por Lucas Macieira em 15/11/2010. Abade da Ordem dos Padres e Irmãos Samaritas e bispo prelado da
-  Prelazia Anglicana Sagrada Face (Curitiba, PR).
+  Natural de Santana do Mundaú (AL), foi ordenado diácono em 28/03/1995 e presbítero em 06/07/1997 na ICAB, uniu-se
+  à Igreja Episcopal Latino do Brasil em 2005 e foi sagrado bispo por Lucas Macieira da Silva em 15/11/2010. Bispo
+  prelado e abade da Prelazia Anglicana Sagrada Face (Curitiba, PR), consta como um dos bispos da DAC.
 sources:
+- source: lielb-dacb-api-clero
+  quote: '"naturalidade": "Santana do Mundaú/AL"'
+- source: lielb-dacb-api-clero
+  quote: >-
+    "ordenacao_diaconal": "28/03/1995", "ordenacao_presbiteral": "06/07/1997", "sagracao_episcopal": "15/11/2010"
+- source: lielb-dacb-api-clero
+  quote: '"ordenacao_presbiteral": "06/07/1997"'
+- source: lielb-scribd-jdd
+  quote: foi ordenado diácono em 1995 e padre em 1997 na Igreja Católica Apostólica Brasileira
+- source: lielb-scribd-jdd
+  quote: Em 2005, uniu-se à Igreja Episcopal Latino do Brasil
+- source: lielb-dacb-api-clero
+  quote: >-
+    "sagracao_episcopal": "15/11/2010", "bispos_consagrantes": "Dom Frei Lucas Macieira da Silva", "recepcao_dacb":
+    "15/11/2010"
 - source: lielb-dacb-api-clero
   quote: >-
     "nome": "João de Deus da Silva", "nome_civil": "João de Deus da Silva", "cargo": "Bispo Prelado / Abade"
 - source: lielb-dacb-api-clero
-  quote: '"naturalidade": "Santana do Mundaú/AL"'
+  quote: >-
+    "nome": "João de Deus da Silva", "nome_civil": "João de Deus da Silva", "cargo": "Bispo Prelado / Abade", "prelazia":
+    "Prelazia Anglicana Sagrada Face"
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Atualmente, a DAC possui três bispos: dom Lucas Macieira (Arcebispo e Primaz), dom João de Deus da Silva, Dom
+    Antônio Santana Neto e dom Daniel Araújo.
+  page: '102'
 ordinations:
 - order: diaconate
   date: '1995-03-28'
