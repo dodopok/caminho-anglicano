@@ -109,8 +109,10 @@ def linhas_fatos(kind, d, N):
         presididas = [x for x in ENTRADAS.get(d['id'], []) if x[0] == 'ordenou']
         if presididas:
             sag = sorted([x for x in presididas if x[2]['order'] == 'episcopate'], key=lambda x: str(x[2].get('date') or '9999'))
-            out.append(f"- (síntese, já listado na ficha) participou de {len(presididas)} ordenação(ões)/sagração(ões), "
-                       f"{len(sag)} episcopal(is)")
+            n_ord = len(presididas) - len(sag)
+            partes = [f"{n_ord} {'ordenação' if n_ord == 1 else 'ordenações'} de diáconos ou presbíteros" if n_ord else None,
+                      f"{len(sag)} {'sagração episcopal' if len(sag) == 1 else 'sagrações episcopais'}" if sag else None]
+            out.append("- (síntese, já listado na ficha) participou de " + ' e '.join(x for x in partes if x))
             for _, id_, o in sag[:3]:
                 out.append(f"- (síntese) {o['_papel']} de {N.get(id_, id_)} em {o.get('date') or 's/d'} | {fmt_src(o)}")
         for campo in ('birth', 'death'):
