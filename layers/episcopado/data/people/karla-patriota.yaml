@@ -13,7 +13,7 @@ ordinations:
   date: '2001-12-29'
   jurisdiction: ieab
   ordained_by: robinson-cavalcanti
-  status: probable
+  status: confirmed
   sources:
   - source: rcor-drv-diac-karla-lilian-quintino
     quote: ORDENAÇÕES DIACONAIS - 29/12/2001 (Karla, Lilian e Quintino)
@@ -21,9 +21,11 @@ ordinations:
     quote: Hoje recebem o diaconato, ordem para o serviço
   - source: rcor-drv-diac-karla-lilian-quintino
     quote: Vocês sabem que não me chamo Edmund ou Clóvis, mas Robinson.
+  - source: testemunho-mantenedor-2026-10-09-sermoes
+    quote: Karla é a Patriota
   notes: >-
-    Sermão assinado por Dom Robinson Cavalcanti, bispo diocesano. Identificação de 'Karla' com Karla Patriota (clériga
-    da diocese até 2002) é provável.
+    Sermão assinado por Dom Robinson Cavalcanti, bispo diocesano. O sermão diz só 'Karla'; a identificação com Karla
+    Patriota foi confirmada pelo mantenedor.
 affiliations:
 - jurisdiction: ieab
   role: clergy
