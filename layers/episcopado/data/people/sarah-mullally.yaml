@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sarah-mullally
+name: Sarah Mullally
+biography: >-
+  Sarah Mullally, bispa de Londres, visitou o Brasil em agosto de 2024 e foi instalada em 25 de março de 2026 como
+  106ª arcebispa da Cantuária, com a presença da primaz da IEAB, Marinez Bassotto.
+sources:
+- source: f8mar-ieab-visita-mullally-2024
+  quote: >-
+    A bispa Sarah e seu esposo Eamonn Mullally desembarcaram em São Paulo na segunda-feira, 19 de agosto, e foram
+    recepcionados pela bispa Primaz da IEAB, Marinez Bassotto, e pela secretária-geral, Christina Winnischofer.
+- source: f8mar-ieab-mullally-relato-2026
+  quote: >-
+    Na tarde de 25 de março de 2026, as portas centenárias da Catedral de Cantuária se abriram para receber um momento
+    que a História não esquecerá.
+- source: f8mar-ieab-mullally-relato-2026
+  quote: Entre eles, a bispa primaz da Igreja Episcopal Anglicana do Brasil (IEAB), Marinez Bassotto.
+- source: f8mar-ieab-mullally-previa-2026
+  quote: Nossa bispa primaz, Marinez Bassotto, estará presente.
+events:
+- type: other
+  date: '2026-03-25'
+  description: >-
+    Em 25 de março de 2026, Marinez Bassotto esteve na instalação de Sarah Mullally como 106ª Arcebispa da Cantuária,
+    na Catedral de Cantuária, entre os primazes das províncias da Comunhão Anglicana, e, na terça-feira anterior
+    à instalação, dialogou com lideranças da Igreja da Inglaterra sobre justiça racial.
+  status: confirmed
+  sources:
+  - source: f8mar-ieab-mullally-relato-2026
+    quote: Entre eles, a bispa primaz da Igreja Episcopal Anglicana do Brasil (IEAB), Marinez Bassotto.
+  - source: f8mar-ieab-mullally-relato-2026
+    quote: >-
+      Na tarde de 25 de março de 2026, as portas centenárias da Catedral de Cantuária se abriram para receber um
+      momento que a História não esquecerá.
+  - source: f8mar-ieab-mullally-previa-2026
+    quote: Nossa bispa primaz, Marinez Bassotto, estará presente.
+  - source: f8mar-ieab-mullally-relato-2026
+    quote: >-
+      Na terça-feira que antecedeu a Instalação, nossa bispa primaz teve a oportunidade de dialogar com lideranças
+      da Igreja da Inglaterra sobre Justiça Racial e os possíveis links entre ambas as Províncias nesta área.
+- type: other
+  date: 2026-03
+  description: >-
+    Posição de Marinez Bassotto sobre a escolha de Sarah Mullally como Arcebispa da Cantuária: declarou-se amiga
+    dela e a apoiou publicamente. Segundo The Living Church (24/03/2026), considera que a eleição 'traz uma nova
+    perspectiva à liderança' e 'desafia as dúvidas e medos' sobre a ordenação de mulheres.
+  status: probable
+  sources:
+  - source: f8mar-lc-mullally-2026
+    quote: >-
+      considers herself a friend of the new Archbishop of Canterbury and has met with her since her appointment.
+  - source: f8mar-lc-mullally-2026
+    quote: >-
+      “This election brings a new perspective to leadership in the midst of time of challenges, ruptures and crises,
+      both in the church and in the world,” she said.
+  - source: f8mar-lc-mullally-2026
+    quote: It also challenges the doubts and fears there have been in relation to the ordination of women.
+  - source: f8mar-lc-mullally-2026
+    quote: >-
+      Bassotto, one of Archbishop Sarah’s greatest supporters in the Anglican church in Latin America has stated
+      with great enthusiasm:
+- type: other
+  date: '2024-08-19'
+  description: >-
+    Visita de Sarah Mullally, então bispa de Londres, ao Brasil em agosto de 2024, recebida em São Paulo pela primaz
+    Marinez Bassotto e pela secretária-geral Christina Winnischofer; houve encontro com as três bispas brasileiras
+    (Magda Guedes, Meriglei Simim e Marinez Bassotto) em Curitiba, nos 40 anos da ordenação feminina na IEAB.
+  status: confirmed
+  sources:
+  - source: f8mar-ieab-visita-mullally-2024
+    quote: >-
+      A bispa Sarah e seu esposo Eamonn Mullally desembarcaram em São Paulo na segunda-feira, 19 de agosto, e foram
+      recepcionados pela bispa Primaz da IEAB, Marinez Bassotto, e pela secretária-geral, Christina Winnischofer.
+  - source: f8mar-ieab-visita-mullally-2024
+    quote: >-
+      onde estiveram presentes no Encontro às três bispas brasileiras Magda Guedes, Meriglei Simim e Marinez Bassotto

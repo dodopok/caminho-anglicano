@@ -1,17 +1,28 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: gustavo-gilson-de-oliveira
 name: Gustavo Gilson de Oliveira
+full_name: Gustavo Gilson Sousa de Oliveira
 aliases:
+- Gustavo Gilson Oliveira
 - Gustavo Gilson S. de Oliveira
+- Gustavo Gilson Sousa de Oliveira
+- Gustavo Gilson Souza de Oliveira
 - Gustavo Oliveira
+- Rev. Dr. Gustavo Oliveira
+- Revdmo. Deão Gustavo Gilson
 biography: >-
-  Chegou ao Recife em 1999 e foi ordenado diácono em 03/11/2002 e presbítero em 25/01/2004 por Robinson Cavalcanti
-  (este na Paróquia Anglicana da Natividade, Natal-RN), na Diocese Anglicana do Recife (IEAB). Membro da Ordem Evangélica
-  de Santo Estêvão Mártir (OSE), foi reitor do SAET (entre 2002 e 2008, segundo a Diocese). Em 2004, assinou o documento
-  "Para além das trincheiras", pedindo reconciliação; em setembro foi suspenso por Robinson Cavalcanti e destituído
-  do cargo paroquial após um sermão crítico, e esteve no confronto de 19/09/2004 na Paróquia do Mediador (Tejipió).
-  No XXXII Concílio da diocese (junho de 2017), a Igreja do Bom Samaritano foi elevada a catedral e ele foi instalado
-  deão.
+  Natural de Natal (RN) e criado na Assembleia de Deus, conheceu o anglicanismo durante a universidade e passou
+  a integrar a Igreja Anglicana ao se mudar para o Recife, em 1999. É graduado em Psicologia pela UFRN (1998), mestre
+  (2001) e doutor (2009) em Sociologia pela UFPE e professor associado da UFPE. Foi ordenado diácono em 03/11/2002
+  e presbítero em 25/01/2004 (na Paróquia Anglicana da Natividade, em Natal), ambos por Robinson Cavalcanti, na
+  Diocese Anglicana do Recife (IEAB), e é membro da Ordem Evangélica de Santo Estêvão Mártir (OSE). Foi reitor do
+  SAET (entre 2002 e 2008, segundo a Diocese). Em 2004, assinou o documento "Para além das trincheiras" (06/07/2004),
+  pedindo reconciliação; em setembro foi suspenso por Robinson e destituído do cargo paroquial após um sermão crítico,
+  e esteve no confronto de 19/09/2004 na Paróquia do Mediador. Na crise da diocese a partir de 2005, permaneceu
+  na IEAB. Em 2016, convidado pelo bispo João Câncio Peixoto, ajudou a reorganizar a Paróquia do Bom Samaritano,
+  reaberta em 29/05/2016 e instituída catedral em 18/06/2016, e é deão desde essa data (Costa situa a elevação a
+  catedral e a instalação como deão no XXXII Concílio, em junho de 2017). Presidiu o Conselho Diocesano em mais
+  de um mandato, é procurador eclesiástico da diocese e foi delegado ao XXXV Sínodo da IEAB, em 2022.
 sources:
 - source: dar-2026-gilson
   quote: Essa busca o conduziu ao Recife em 1999, ano decisivo em sua vida.
@@ -25,24 +36,11 @@ sources:
   quote: >-
     Ordenação Presbiteral do Rev. Gustavo Gilson S. Oliveira. Paróquia Anglicana da Natividade Natal – RN Em 25
     de janeiro de 2004
-- source: rcor-drv-ordens-dar
-  quote: Rev. Gustavo Gilson Souza de Oliveira
 - source: dar-2026-gilson
   quote: Entre 2002 e 2008, Gustavo foi reitor do SAET
-- source: drp2-memorias-decada-viii
-  quote: >-
-    Em 2004 o clima do Seminário (SAET) vai ficando cada vez mais tenso. As idéias liberais e pró-gays começam a
-    ser difundidas pela nova diretoria: Rev. Gustavo Gilson – Reitor; Rev. Edson Pimentel – Coordenador; Rev. Fábio
-    Vasconcelos – Capelão.
 - source: costa2021
   quote: em 06 de julho de 2004 foi publicado o texto Para além das trincheiras
   page: '215'
-- source: costa2021
-  quote: >-
-    Assinaram este documento: Rev. Gustavo Gilson S. de Oliveira, ose; Rev. Fábio S. Vasconcelos; Rev. Elias Leôncio
-    de B. Filho, ose; Rev. João Câncio Peixoto Filho; Rev. Manoel S. Moraes de Almeida, ose; Rev. Sérgio F. Lomeu
-    de Andrade
-  page: '216'
 - source: costa2021
   quote: Na segunda feira, o reverendo recebeu a sua carta de suspensão, e foi destituído do cargo paroquial.
   page: '218'
@@ -51,6 +49,8 @@ sources:
     Na noite de 19 de setembro, os reverendos Fábio Vasconcelos e Gustavo Oliveira e o então secretário do SAET,
     Joelson Félix, se preparavam para iniciar a celebração.
   page: '219'
+- source: f8gil-dar-catedral-10anos
+  quote: em 18 de junho de 2016, foi instituída como a nova Catedral da Diocese Anglicana do Recife
 - source: costa2021
   quote: >-
     Para resolver a vacância de uma sé diocesana, foi convocado o XXXII Concílio, que aconteceu entre 15 e 18 de
@@ -58,15 +58,22 @@ sources:
   page: '247'
 - source: costa2021
   quote: o reverendo Gustavo Gilson de Oliveira instalado como deão
-  page: '248'
-- source: cant-novas-igrejas-2024
+- source: f8gil-sigaa-ufpe
+  quote: Doutor e Mestre em Sociologia pela UFPE (2009 e 2001).
+- source: dar-2026-gilson
+  quote: Nascido em Natal, no Rio Grande do Norte
+- source: dar-2026-gilson
+  quote: no ambiente da Assembleia de Deus, onde foi criado
+- source: f8gil-dar-catedral-10anos
   quote: >-
-    a Paróquia do Bom Samaritano foi elevada ao status de Catedral, algo que permanece até o momento, tendo como
-    seu deão o reverendo Gustavo Oliveira.
-  page: '112'
-- source: cant-novas-igrejas-2024
-  quote: tendo como seu deão o reverendo Gustavo Oliveira.
-  page: '112'
+    Em 29 de maio de 2016, já sob a liderança do Bispo João Câncio Peixoto e do Rev. Gustavo Gilson Oliveira, a
+    Paróquia do Bom Samaritano foi oficialmente reaberta
+- source: dar-2026-gilson
+  quote: presidiu o Conselho Diocesano em diferentes mandatos
+- source: f8gil-dar-oficiais
+  quote: PROCURADOR ECLESIÁSTICO Revdo. Gustavo Gilson
+- source: f8gil-dar-sinodo2022
+  quote: 'pelos delegados: Revmo. Deão Gustavo Gilson, Revdo. Claudio Linhares'
 ordinations:
 - order: diaconate
   date: '2002-11-03'
@@ -149,8 +156,20 @@ affiliations:
     Diocese Anglicana do Recife e foi um dos 13 que pediram à Câmara dos Bispos supervisão episcopal alternativa
     (decreto de 16/09/2004), mantendo a comunhão com a IEAB. Início e fim do vínculo não informados. Signatário
     de 'Não sairemos' (01/09/2004): permaneceu na IEAB na crise de 2004-2005. Reitor do SAET em 2004; suspenso por
-    Robinson em set/2004; homilia na instalação de Sebastião (2006); instalado deão da Catedral do Bom Samaritano
-    em junho de 2017.
+    Robinson em set/2004; homilia na instalação de Sebastião (2006); deão da Catedral do Bom Samaritano.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: reitor do SAET
+  start: '2002'
+  end: '2008'
+  status: probable
+  sources:
+  - source: dar-2026-gilson
+    quote: Entre 2002 e 2008, Gustavo foi reitor do SAET
+  notes: >-
+    Local: Diocese Anglicana do Recife. Reitor do Seminário Anglicano de Estudos Teológicos (SAET), Recife. Período
+    informado pela diocese; uma segunda fonte (memórias de Robinson Cavalcanti) o cita como reitor da nova diretoria
+    do seminário em 2004.
 - jurisdiction: ieab-dar
   role: other
   role_description: reitor do seminário
@@ -163,18 +182,6 @@ affiliations:
       a ser difundidas pela nova diretoria: Rev. Gustavo Gilson – Reitor; Rev. Edson Pimentel – Coordenador; Rev.
       Fábio Vasconcelos – Capelão.
   notes: 'Local: Diocese do Recife, Seminário Anglicano de Estudos Teológicos (SAET).'
-- jurisdiction: ieab-dar
-  role: other
-  role_description: deao
-  start: '2017'
-  status: probable
-  sources:
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      a Paróquia do Bom Samaritano foi elevada ao status de Catedral, algo que permanece até o momento, tendo como
-      seu deão o reverendo Gustavo Oliveira.
-    page: '112'
-  notes: 'Local: Catedral do Bom Samaritano, Recife.'
 - jurisdiction: ose
   role: member
   status: confirmed
@@ -183,6 +190,106 @@ affiliations:
     quote: Rev. Gustavo Gilson Souza de Oliveira
   notes: >-
     Membro clerical da OSE. Lista da página 'Ordens Religiosas' do site da Diocese do Recife, arquivada em 24/10/2004.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: deão
+  status: confirmed
+  sources:
+  - source: f8gil-dar-catedral-10anos
+    quote: em 18 de junho de 2016, foi instituída como a nova Catedral da Diocese Anglicana do Recife
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Paróquia do Bom Samaritano foi elevada ao status de Catedral, algo que permanece até o momento, tendo como
+      seu deão o reverendo Gustavo Oliveira.
+    page: '112'
+  - source: dar-2020-vilaca
+    quote: O Deão da Catedral, Reverendo Gustavo Oliveira
+  - source: f8gil-dar-confelider-2024
+    quote: Revdo. Gustavo Gilson – Deão da Catedral Anglicana do Bom Samaritano
+  - source: f8gil-dar-despedida-2024
+    quote: Deão da Catedral, Revdo. Gustavo Gilson, detalhou em seu sermão
+  - source: f8gil-dar-obras-2026
+    quote: Deão, Reverendíssimo Gustavo Oliveira, estiveram presentes no local da construção
+  - source: dar-clero-diocesano
+    quote: Revdmo. Deão Gustavo Gilson
+  - source: f8gil-kings2017
+    quote: >-
+      I preached at Recife Anglican Cathedral Church of the Good Samaritan in the morning at the invitation of the
+      Dean, Gustavo Oliveira
+  notes: >-
+    Local: Catedral Anglicana do Bom Samaritano, Recife. Em exercício em dez/2020, mai/2024, mar/2026 e out/2026.
+    Início pela data da diocese (instituição da catedral em 18/06/2016); Costa (2021) dá junho de 2017. Cargo exercido
+    de forma voluntária.
+  start: '2016-06-18'
+  discrepancies:
+  - field: start
+    value: 2017-06
+    sources:
+    - source: costa2021
+      quote: >-
+        Para resolver a vacância de uma sé diocesana, foi convocado o XXXII Concílio, que aconteceu entre 15 e 18
+        de junho de 2017
+      page: '247'
+    - source: costa2021
+      quote: o reverendo Gustavo Gilson de Oliveira instalado como deão
+    notes: Costa (2021) situa a elevação a catedral e a instalação do deão no XXXII Concílio, em junho de 2017.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: presidente do Conselho Diocesano
+  status: confirmed
+  sources:
+  - source: f8gil-dar-nota-mullally-2025
+    quote: >-
+      Revmo. Gustavo Gilson Sousa de Oliveira Presidente do Conselho Diocesano da DAR e Deão da Catedral Anglicana
+      do Bom Samaritano
+  - source: dar-2026-gilson
+    quote: presidiu o Conselho Diocesano em diferentes mandatos
+  notes: >-
+    Local: Diocese Anglicana do Recife. Presidente do Conselho Diocesano em 03/10/2025 e em mandatos anteriores
+    (datas não informadas). A página de Oficiais Diocesanos (maio/2026) lista outra pessoa como presidente do Conselho.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: procurador eclesiástico
+  status: confirmed
+  sources:
+  - source: f8gil-dar-oficiais
+    quote: PROCURADOR ECLESIÁSTICO Revdo. Gustavo Gilson
+  notes: >-
+    Local: Diocese Anglicana do Recife. Procurador eclesiástico da Diocese Anglicana do Recife, conforme a página
+    de Oficiais Diocesanos (atualizada em maio/2026; consultada em 2026-10-09).
+- jurisdiction: ieab-dar
+  role: other
+  role_description: responsável pela Diaconia Social e Direitos Humanos
+  status: confirmed
+  sources:
+  - source: f8gil-dar-oficiais
+    quote: DIACONIA SOCIAL E DIREITOS HUMANOS Revdo. Gustavo Gilson
+  notes: >-
+    Local: Diocese Anglicana do Recife. Listado na área de Diaconia Social e Direitos Humanos da diocese (Oficiais
+    Diocesanos, maio/2026).
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro da comissão de Relações Internacionais
+  status: confirmed
+  sources:
+  - source: f8gil-dar-oficiais
+    quote: RELAÇÕES INTERNACIONAIS Dr. Joanildo Burity Revdo. Gustavo Gilson
+  notes: >-
+    Local: Diocese Anglicana do Recife. Listado em Relações Internacionais da diocese, ao lado de Joanildo Burity
+    (Oficiais Diocesanos, maio/2026).
+- jurisdiction: ieab-dar
+  role: priest
+  status: confirmed
+  sources:
+  - source: dar-2026-gilson
+    quote: é presbítero da Diocese Anglicana do Recife e deão da Catedral Anglicana do Bom Samaritano
+  - source: dar-clero-diocesano
+    quote: Revdmo. Deão Gustavo Gilson
+  - source: f8gil-dar-nota-mullally-2025
+    quote: Presidente do Conselho Diocesano da DAR e Deão da Catedral Anglicana do Bom Samaritano
+  notes: >-
+    Local: Diocese Anglicana do Recife. Presbítero em atividade na Diocese Anglicana do Recife (IEAB) em 2026; na
+    crise de 2004-2005 permaneceu na IEAB. Sem registro de saída ou aposentadoria.
 events:
 - type: other
   date: '1998'
@@ -286,3 +393,81 @@ events:
       Em julho de 2003, sete clérigos e Ministros Leigos (Reverendos: Maurício Coelho, Siméa Meldrum, Estevão Menezes,
       Jorge Aquino e Fábio Vasconcelos, Gustavo Gilson e a ML Roberta Araújo) foram comigo a Limuru, Quênia, África,
       para participar da Consulta da EFAC
+- type: conversion
+  date: '1999'
+  description: >-
+    Criado na Assembleia de Deus, conheceu o anglicanismo durante a universidade (por meio da Aliança Bíblica Universitária)
+    e passou a integrar a Igreja Anglicana ao se mudar para Recife, em 1999.
+  status: confirmed
+  sources:
+  - source: dar-2026-gilson
+    quote: no ambiente da Assembleia de Deus, onde foi criado
+  - source: dar-2026-gilson
+    quote: Foi nesse processo que conheceu o anglicanismo.
+  - source: dar-2026-gilson
+    quote: passou a integrar a Igreja Anglicana
+- type: other
+  date: '2005'
+  description: >-
+    Na crise da Diocese Anglicana do Recife a partir de 2005, Gustavo Gilson permaneceu na IEAB; o SAET serviu de
+    espaço de encontro do grupo que ficou na IEAB, e a diocese ficou sem posse do templo do Bom Samaritano entre
+    2005 e 2015.
+  status: probable
+  sources:
+  - source: dar-2026-gilson
+    quote: >-
+      o Seminário Anglicano de Estudos Teológicos tornou-se um espaço de refúgio para clérigos, seminaristas, jovens
+      e lideranças que decidiram permanecer na IEAB
+  - source: dar-2026-gilson
+    quote: Para Gustavo, essa foi uma das experiências ministeriais que mais exigiu amadurecimento.
+  - source: f8gil-dar-catedral-10anos
+    quote: ficou fora da posse da Diocese por um longo período
+- type: other
+  date: '2016-05-29'
+  description: >-
+    Reabertura da Paróquia do Bom Samaritano (Recife), sob a liderança do bispo João Câncio Peixoto e de Gustavo
+    Gilson, convidado pelo bispo para ajudar na reorganização da comunidade; a paróquia foi depois instituída catedral
+    da diocese.
+  status: confirmed
+  sources:
+  - source: f8gil-dar-catedral-10anos
+    quote: >-
+      Em 29 de maio de 2016, já sob a liderança do Bispo João Câncio Peixoto e do Rev. Gustavo Gilson Oliveira,
+      a Paróquia do Bom Samaritano foi oficialmente reaberta
+  - source: dar-2026-gilson
+    quote: >-
+      Convidado pelo Bispo João Câncio Peixoto Filho para ajudar nesse processo, Gustavo participou diretamente
+      da reorganização da comunidade.
+- type: other
+  date: '2016-06-18'
+  description: >-
+    A Paróquia do Bom Samaritano foi instituída como nova catedral da Diocese Anglicana do Recife em 18 de junho
+    (de 2016, segundo o texto da diocese de 2026, que porém fala em nove anos como sé diocesana). Graham Kings já
+    se refere à Catedral e ao seu deão, Gustavo Oliveira, em 23/04/2017.
+  status: probable
+  sources:
+  - source: f8gil-dar-catedral-10anos
+    quote: em 18 de junho de 2016, foi instituída como a nova Catedral da Diocese Anglicana do Recife
+  - source: f8gil-kings2017
+    quote: >-
+      I preached at Recife Anglican Cathedral Church of the Good Samaritan in the morning at the invitation of the
+      Dean, Gustavo Oliveira
+- type: other
+  date: 2022-11
+  description: >-
+    Delegado da Diocese Anglicana do Recife ao XXXV Sínodo da IEAB (Belém do Pará, 11 a 14 de novembro de 2022).
+  status: confirmed
+  sources:
+  - source: f8gil-dar-sinodo2022
+    quote: 'pelos delegados: Revmo. Deão Gustavo Gilson, Revdo. Claudio Linhares'
+- type: other
+  date: 2024-11
+  description: >-
+    Coordenador do Colóquio Internacional de Teologia (decolonialidade e justiça climática), realizado em Recife
+    em novembro de 2024.
+  status: confirmed
+  sources:
+  - source: f8gil-dar-coloquio-2024
+    quote: >-
+      Reverendo Gustavo Oliveira, professor da UFPE, Deão da Catedral Anglicana do Bom Samaritano e um dos coordenadores
+      do evento
