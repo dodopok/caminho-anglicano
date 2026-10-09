@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/source.json
+id: f8cal-cea-quem-somos
+type: institutional_site
+title: Quem Somos (Centro de Estudos Anglicanos)
+publisher: Centro de Estudos Anglicanos (IEAB)
+url: https://ceanglicanos.com.br/web/cea/quemsomos.html
+accessed: '2026-10-09'
+language: pt
+level: primary
+notes: >-
+  Consulta em 2026-10-09; abre só com cabeçalhos de navegador (curl com User-Agent de Chrome e Accept-Language).
