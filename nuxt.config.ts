@@ -198,6 +198,10 @@ export default defineNuxtConfig({
       routes: ['/glossario']
     },
     routeRules: {
+      // Universal Links do app do Episcopado: o arquivo precisa sair como JSON, sem extensão.
+      '/.well-known/apple-app-site-association': {
+        headers: { 'content-type': 'application/json' }
+      },
       '/locs/**': {
         headers: {
           'Access-Control-Allow-Origin': '*',
