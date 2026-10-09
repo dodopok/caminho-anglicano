@@ -191,8 +191,7 @@ affiliations:
     Diocese Anglicana do Recife e foi um dos 13 que pediram à Câmara dos Bispos supervisão episcopal alternativa
     (decreto de 16/09/2004), mantendo a comunhão com a IEAB. Início e fim do vínculo não informados. Signatário
     de 'Não sairemos' (01/09/2004): permaneceu na IEAB na crise de 2004-2005. Reitor do SAET em 2004; suspenso por
-    Robinson em set/2004; homilia na instalação de Sebastião (2006); instalado deão da Catedral do Bom Samaritano
-    em junho de 2017.
+    Robinson em set/2004; homilia na instalação de Sebastião (2006); deão da Catedral do Bom Samaritano.
 - jurisdiction: ieab-dar
   role: other
   role_description: reitor do SAET
@@ -218,18 +217,6 @@ affiliations:
       a ser difundidas pela nova diretoria: Rev. Gustavo Gilson – Reitor; Rev. Edson Pimentel – Coordenador; Rev.
       Fábio Vasconcelos – Capelão.
   notes: 'Local: Diocese do Recife, Seminário Anglicano de Estudos Teológicos (SAET).'
-- jurisdiction: ieab-dar
-  role: other
-  role_description: deao
-  start: '2017'
-  status: probable
-  sources:
-  - source: cant-novas-igrejas-2024
-    quote: >-
-      a Paróquia do Bom Samaritano foi elevada ao status de Catedral, algo que permanece até o momento, tendo como
-      seu deão o reverendo Gustavo Oliveira.
-    page: '112'
-  notes: 'Local: Catedral do Bom Samaritano, Recife.'
 - jurisdiction: ose
   role: member
   status: confirmed
@@ -243,6 +230,13 @@ affiliations:
   role_description: deão
   status: confirmed
   sources:
+  - source: f8gil-dar-catedral-10anos
+    quote: em 18 de junho de 2016, foi instituída como a nova Catedral da Diocese Anglicana do Recife
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      a Paróquia do Bom Samaritano foi elevada ao status de Catedral, algo que permanece até o momento, tendo como
+      seu deão o reverendo Gustavo Oliveira.
+    page: '112'
   - source: dar-2020-vilaca
     quote: O Deão da Catedral, Reverendo Gustavo Oliveira
   - source: f8gil-dar-confelider-2024
@@ -258,10 +252,22 @@ affiliations:
       I preached at Recife Anglican Cathedral Church of the Good Samaritan in the morning at the invitation of the
       Dean, Gustavo Oliveira
   notes: >-
-    Local: Diocese Anglicana do Recife. Deão da Catedral Anglicana do Bom Samaritano (Recife), em exercício em dez/2020,
-    mai/2024, mar/2026 e na lista do clero (consulta em out/2026). Início: o XXXII Concílio (junho de 2017) o instalou
-    segundo Costa (2021); a diocese (2026) data a instituição da catedral em 18/06/2016; Graham Kings já o chama
-    de deão em 23/04/2017. Cargo exercido de forma voluntária.
+    Local: Catedral Anglicana do Bom Samaritano, Recife. Em exercício em dez/2020, mai/2024, mar/2026 e out/2026.
+    Início pela data da diocese (instituição da catedral em 18/06/2016); Costa (2021) dá junho de 2017. Cargo exercido
+    de forma voluntária.
+  start: '2016-06-18'
+  discrepancies:
+  - field: start
+    value: 2017-06
+    sources:
+    - source: costa2021
+      quote: >-
+        Para resolver a vacância de uma sé diocesana, foi convocado o XXXII Concílio, que aconteceu entre 15 e 18
+        de junho de 2017
+      page: '247'
+    - source: costa2021
+      quote: o reverendo Gustavo Gilson de Oliveira instalado como deão
+    notes: Costa (2021) situa a elevação a catedral e a instalação do deão no XXXII Concílio, em junho de 2017.
 - jurisdiction: ieab-dar
   role: other
   role_description: presidente do Conselho Diocesano
