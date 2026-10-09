@@ -1,6 +1,35 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: kenneth-john-wesley-powell
 name: Kenneth John Wesley Powell
+biography: >-
+  Sagrado em 01/10/1986, em Teddington (Middlesex), por Cyril Milner e Ward, na Free Church of England, aposentou-se
+  em 2007 e morreu em 2020. Participou de três sagrações episcopais, entre elas as de John Daly Morton McLean (1999)
+  e Paul Nigel Hunt (2006).
+sources:
+- source: lin-fce-lista
+  quote: >-
+    37. KENNETH JOHN WESLEY POWELL was consecrated by Bishops Milner and Ward, assisted by the Rev’d Rowland Graves,
+    President of the Wesleyan Reform Union, and several Presbyters, at Christ Church, Teddington, Middlesex on 1
+    October 1986. Retired 2007. Died 2020.
+- source: lin-fce-lista
+  quote: >-
+    40. JOHN DALY MORTON McLEAN BA ACIS DMA was consecrated by the same Bishops and Presbyters at the same time
+    and in the same place as Bishop Bentley-Taylor on 11 September 1999. Retired 2017. Died 2022.
+- source: lin-fce-lista
+  quote: >-
+    39. ARTHUR BENTLEY-TAYLOR BD MA was consecrated by Bishops Powell, the Right Rev’d Leonard W. Riches DD Presiding
+    Bishop of the Reformed Episcopal Church of America, the Right Rev’d Roy U. Grote, Jr DD (Bishop of the REC of
+    America) and assisted by the Right Rev’d J. B. Shucksmith and several Presbyters, at Christ Church, Liscard,
+    on 11 September 1999. Resigned 2003.
+- source: lin-fce-lista
+  quote: >-
+    41. PAUL NIGEL HUNT BSc MSc DD was consecrated by Bishops Powell and McLean, the Right Rev’d Roy Grote and the
+    Right Rev’d Ray Sutton of the Reformed Episcopal Church of America; the Most Rev’d Cyril Mar Basilios and the
+    Most Rev’d Joseph Mar Koorilose of the Malabar Independent Syrian Church; and the Right Rev’d John McOwat of
+    the Moravian Church; assisted by the Very Rev’d Yonan Yonan of the Church of the East, the Very Rev’d Richard
+    Fenwick of the Church in Wales, the Very Rev’d Chorepiscopa Peter Hawkins of the Roman Catholic Church, the
+    Rev’d Gerald Kirsch of the Countess of Huntingdon’s Connexion, and several Presbyters, at Christ Church, Liscard,
+    on 29 July 2006.
 ordinations:
 - order: episcopate
   date: '1986-10-01'

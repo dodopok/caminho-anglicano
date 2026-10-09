@@ -17,12 +17,41 @@ birth:
     quote: Bishop Nzimbi was first ordained in 1985 as Bishop of Machakos
 wikidata: Q16107068
 biography: >-
-  Primeiro bispo de Machakos (1985), depois de Kitui (1995) e 4º arcebispo e primaz da Igreja Anglicana do Quênia
-  (2002–2009).
+  Benjamin Paul Mwanzia Nzimbi nasceu em 1945, no condado de Kitui, formou-se em Educação na Kenyatta University,
+  foi professor e decano de estudantes no Machakos Teachers Training College e estudou para o sacerdócio no Trinity
+  and St. Francis College, em Karen, em 1984. Foi sagrado em 14 de abril de 1985 primeiro bispo da Diocese de Machakos,
+  da Igreja Anglicana do Quênia, tendo Festo Olang' como sagrante, e a dirigiu até 1995, quando foi eleito primeiro
+  bispo da Diocese de Kitui. Em 16 de agosto de 2002 foi eleito quarto arcebispo e primaz do Quênia, cargo que exerceu
+  até 2009.
 sources:
 - source: ack-nzimbi
   quote: >-
     The Most Rev. Benjamin Paul Mwanzia Nzimbi was born in 1945 in Kitui County in a family of 8 children.
+- source: wp-nzimbi
+  quote: >-
+    He later attended Kenyatta University, where he obtained a bachelor's degree in Education, with majors in Religion
+    and Kiswahili.
+- source: wp-nzimbi
+  quote: >-
+    Afterward, he worked as a lecturer at Machakos Teachers Training College, where he was dean of students and
+    the head of social studies department.
+- source: wp-nzimbi
+  quote: He studied for the priesthood at the Trinity and St. Francis College, in Karen in 1984.
+- source: ia-called-to-serve-2009
+  quote: >-
+    the Diocese of Machakos was formerly created and Archbishop Nzimbi was consecrated as its first bishop on 14th
+    April 1985.
+- source: wp-nzimbi
+  quote: '|consecrated_by = [[Festo Olang'']]'
+- source: wp-nzimbi
+  quote: >-
+    Nzimbi was elected as the first bishop of the new Diocese of Machakos, which he served from 1985 to 1995.
+- source: wp-nzimbi
+  quote: In 1995 he was elected the first bishop of the newly created Diocese of Kitui.
+- source: wp-nzimbi
+  quote: >-
+    Nzimbi was elected the fourth archbishop and primate of Kenya and Bishop of the Diocese of All Saints Cathedral
+    on 16 August 2002 and served from 2002 to 2009.
 ordinations:
 - order: episcopate
   date: '1985-04-14'
@@ -76,3 +105,29 @@ affiliations:
   notes: >-
     O ano 1985 também é dado pela ACK (ver pontes-estrangeiras.json, chave ack-machakos). Fim em 1995 (transferência
     para Kitui) só pela Wikipédia.
+- jurisdiction: anglican-church-of-kenya
+  role: diocesan_bishop
+  diocese: diocese-of-kitui
+  start: '1995'
+  status: probable
+  sources:
+  - source: wp-nzimbi
+    quote: In 1995 he was elected the first bishop of the newly created Diocese of Kitui.
+  notes: Primeiro bispo da Diocese de Kitui, criada em 1995.
+- jurisdiction: anglican-church-of-kenya
+  role: primate
+  start: '2002-08-16'
+  end: '2009'
+  status: probable
+  sources:
+  - source: wp-nzimbi
+    quote: >-
+      Nzimbi was elected the fourth archbishop and primate of Kenya and Bishop of the Diocese of All Saints Cathedral
+      on 16 August 2002 and served from 2002 to 2009.
+  - source: wp-nzimbi
+    quote: >-
+      He was the archbishop and primate of the Anglican Church of Kenya and Bishop of the Diocese of All Saints
+      Cathedral, from 2002 to 2009.
+  notes: >-
+    Quarto arcebispo e primaz da Igreja Anglicana do Quênia e bispo da Diocese de All Saints Cathedral (Nairóbi);
+    a data de 16/08/2002 é a da eleição.

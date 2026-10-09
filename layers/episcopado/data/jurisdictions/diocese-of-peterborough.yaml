@@ -2,6 +2,11 @@
 id: diocese-of-peterborough
 name: Diocese of Peterborough
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra cujo bispo John Hinchliffe serviu de 1769 até a morte, em 11 de janeiro de 1794.
+sources:
+- source: stubbs-1897
+  quote: John Hinchcliffe. Peterborough; d. 1794, Jan. 11.
 relations:
 - type: part_of
   target: church-of-england

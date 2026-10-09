@@ -1,6 +1,37 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: abimael-rodrigues
 name: Abimael Rodrigues
+biography: >-
+  Abimael Rodrigues consta nas listas históricas da Diocese Anglicana do Recife (IEAB-DAR) como ordenado ao diaconato,
+  com vínculo em Livramento (RS), na Diocese Sul-Ocidental, sem data registrada. Foi eleito reitor da Paróquia de
+  Santa Maria, em Belém (PA), a primeira eleição de reitor por uma paróquia emancipada na Diocese do Recife.
+sources:
+- source: dard2-hist3
+  quote: Abimael Rodrigues (em Livramento-RS, Diocese Sul-Ocidental)
+- source: darl3-hist3
+  quote: Abimael Rodrigues (em Livramento-RS, Diocese Sul-Ocidental)
+- source: drp2-memorias-decada-iv
+  quote: >-
+    Passamos a fazê-lo, a partir da eleição do Rev. Abimael Rodrigues para a Paróquia de Santa Maria, em Belém-PA.
+ordinations:
+- order: diaconate
+  date: null
+  jurisdiction: ieab-dar
+  ordained_by: clovis-erly-rodrigues
+  status: probable
+  sources:
+  - source: dard2-hist3
+    quote: Abimael Rodrigues (em Livramento-RS, Diocese Sul-Ocidental)
+  - source: darl3-hist3
+    quote: Abimael Rodrigues (em Livramento-RS, Diocese Sul-Ocidental)
+  - source: darl3-hist3
+    quote: 'e, apenas ao Diaconato: Luiz Souza de França'
+  notes: >-
+    Citado por Robinson Cavalcanti entre os ordenados "apenas ao Diaconato" no período do bispo Clóvis Erly Rodrigues
+    (1986-1997), e situado em 2006 em Livramento (RS), Diocese Sul-Ocidental. Data e local da ordenação não constam;
+    o ordenante é entendido como o bispo diocesano da época. Ordenação durante o episcopado de Clóvis Erly Rodrigues
+    na diocese (1986-1997), conforme lista de Dom Robinson Cavalcanti; o texto não dá data nem local e não diz expressamente
+    "ordenado por"; ordenante inferido do período. Ordenado apenas ao diaconato nesse período.
 events:
 - type: other
   date: null

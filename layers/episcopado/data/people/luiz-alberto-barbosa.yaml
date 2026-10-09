@@ -1,6 +1,35 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: luiz-alberto-barbosa
 name: Luiz Alberto Barbosa
+biography: >-
+  Luiz Alberto Barbosa foi ordenado diácono em 08/12/2001 por Almir dos Santos e presbítero em 29/05/2004 por Maurício
+  Andrade, na IEAB. Foi ministro encarregado em Anápolis (GO), capelão da capelania de língua inglesa em Brasília,
+  secretário diocesano desde março de 2002 e eleito presidente da Câmara de Clérigos e Leigos da IEAB, com posse
+  prevista para 01/02/2007. Em dezembro de 2004 atuou como coordenador de uma comissão provincial de investigação
+  contra o bispo diocesano do Recife e, em 17/04/2013, figurou na declaração de abandono de comunhão feita pelo
+  bispo primaz Maurício Andrade.
+sources:
+- source: rtb-sn-2006-luiz-alberto
+  quote: >-
+    Foi ordenado Diácono no dia 8 de dezembro de 2001, por Dom Almir dos Santos e ordenado Presbítero no dia 29
+    de maio de 2004, por Dom Maurício Andrade.
+- source: rtb-sn-2006-luiz-alberto
+  quote: >-
+    Atuou como Ministro Encarregado na Missão da Reconciliação, em Anápolis-GO, e é atualmente o Capelão da Capelania
+    de Língua Inglesa, em Brasília-DF. É Secretário Diocesano desde março de 2002.
+- source: rtb-sn-2006-luiz-alberto
+  quote: >-
+    no último Sínodo, foi eleito Presidente da Câmara de Clérigos e Leigos da IEAB. Tomará posse neste novo cargo
+    no dia 1º de fevereiro de 2007.
+- source: darb1-pronunciamento
+  quote: >-
+    Em 27 de dezembro de 2004, o Reverendo Luiz Alberto Barbosa , apresentado-se como “Coordenador” de uma auto-referida
+    “Comissão Provincial de Investigação” (sem anexar a devida Portaria designatória) envia nova cópia da mesma
+    Denúncia
+- source: lbd-snieab-sinais
+  quote: >-
+    declara publicamente, em 17 de abril de 2013, o Abandono de Comunhão com a IGREJA EPISCOPAL ANGLICANA DO BRASIL/COMUNHÃO
+    ANGLICANA dos seguintes clérigos
 ordinations:
 - order: diaconate
   date: '2001-12-08'
@@ -42,6 +71,21 @@ affiliations:
   notes: >-
     Em 13/12/2006 foi eleito secretário executivo do CONIC. Em 17/04/2013 o primaz declarou seu abandono de comunhão
     com a IEAB (registrado em outra fonte).
+- jurisdiction: ieab
+  role: other
+  role_description: Coordenador da Comissão Provincial de Investigação (processo contra o bispo diocesano do Recife)
+  start: 2004-12
+  status: probable
+  sources:
+  - source: darb1-pronunciamento
+    quote: >-
+      Em 27 de dezembro de 2004, o Reverendo Luiz Alberto Barbosa , apresentado-se como “Coordenador” de uma auto-referida
+      “Comissão Provincial de Investigação” (sem anexar a devida Portaria designatória) envia nova cópia da mesma
+      Denúncia
+  notes: >-
+    O cargo é o que o próprio Rev. Luiz Alberto Barbosa se atribuiu em carta de 27/12/2004, segundo o pronunciamento
+    do bispo diocesano, que questionava a falta da portaria designatória. A data de início é aproximada (mês em
+    que a carta foi enviada).
 events:
 - type: other
   date: '2013-04-17'

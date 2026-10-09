@@ -1,6 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: janice-goncalves-dos-santos-matos
 name: Janice Gonçalves dos Santos Matos
+biography: >-
+  Janice Gonçalves dos Santos Matos foi ordenada diaconisa em 6 de dezembro de 2015, por João Câncio Peixoto Filho,
+  e presbítera em 11 de junho de 2016, na Diocese Anglicana do Recife (IEAB).
+sources:
+- source: rta-livro35
+  quote: >-
+    no dia 06 de dezembro de 2015, na mesma Comunidade Anglicana Cristo O Salvador, fui ordenada Diaconisa, por
+    Dom João Câncio Peixoto Filho, Bispo Diocesano da Diocese Anglicana do Recife
+- source: rta-livro35
+  quote: 'Diaconato: 6 de dezembro de 2015.'
+- source: rta-livro35
+  quote: 'Presbiterado: 11 de junho de 2016.'
 ordinations:
 - order: diaconate
   date: '2015-12-06'

@@ -1,13 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: maria-do-carmo-farias-brito
 name: Maria do Carmo Farias Brito
-biography: Diácona em 08/12/2006 (Conde-PB).
+biography: >-
+  Maria do Carmo Farias Brito foi ordenada diácona em 08/12/2006 por Robinson Cavalcanti, em Conde (PB), e consta
+  como presbítera da Diocese Anglicana do Recife.
 sources:
 - source: dar-2006-convite-diaconal
   quote: >-
     convida V.Sa. para o Culto Solene de Ordenação Diaconal dos Candidatos : José Roseno da Silva Irmão Keyla Maria
     Pereira Camargo Maria do Carmo Farias Brito Michael La Cagnina Local: Chácara Porta da Fonte  Município de Conde-PB
     Data: 08 de dezembro de 2006
+- source: drp2-ord-diac-xxvi-concilio-2006
+  quote: XXVI Concílio Diocesano Sermão do Culto Solene de Ordenações Diaconais Conde (PB), 08.12.2006
+- source: dard2-clero-presb2
+  quote: Revda. Maria do Carmo Farias Brito
 ordinations:
 - order: diaconate
   date: '2006-12-08'
@@ -40,3 +46,14 @@ ordinations:
         às Ordenações Diaconais de: Roseno, Keyla, Maria do Carmo e Michael. E um momento histórico, quando estamos
         procedendo à Ordenação Diaconal de Michael, a primeira para o nosso Arcediagado Norte-americano.
   notes: 'Fonte: convite publicado em 29/11/2006 e lista de diáconos(as) de out/2007 que já o(a) inclui.'
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: dard2-clero-presb2
+    quote: Revda. Maria do Carmo Farias Brito
+  notes: >-
+    Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
+    de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim.

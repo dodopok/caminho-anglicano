@@ -12,12 +12,26 @@ former_ids:
 type: diocese
 tradition: charismatic_episcopal
 country: BR
-description: Diocese da IECB com Catedral do Calvário (Janga, Paulista/PE); bispo diocesano Adonias Ramos.
+description: >-
+  Diocese da IECB com a Catedral do Calvário (Janga, Paulista/PE), criada em 2007, quando Adonias Ramos de Souza
+  foi instituído seu bispo diocesano e iniciou a expansão da Igreja Episcopal Carismática. Uziel José dos Santos
+  aparece como bispo em 2022.
 sources:
 - source: lie-betesda-paroquias
   quote: DIOCESE DE PAULISTA E PARAÍBA
 - source: lie-betesda-paroquias
   quote: IECB Catedral do Calvário
+- source: ptwiki-iecb
+  quote: Adonias Ramos de Souza (2007)
+- source: lie-betesda-paroquias
+  quote: 'Bispo Diocesano: Dom Adonias Ramos'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Instituído como bispo da recém-criada Diocese do Paulista, dom Adonias deu início à expansão da Igreja Episcopal
+    Carismática
+  page: '57'
+- source: ptwiki-iecb
+  quote: Uziel José dos Santos (2022)
 relations:
 - type: part_of
   target: iecb

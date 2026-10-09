@@ -1,12 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: elton-roney
 name: Elton Roney
-biography: Diácono ordenado na Paraíba em 01/05/2013 (Diocese do Recife).
+biography: >-
+  Foi ordenado diácono em 1/5/2013 por Miguel Uchôa, na Diocese Anglicana do Recife, após constar como postulante
+  e ministro local.
 sources:
 - source: dar-2013-ordenacoes-1maio
   quote: >-
     deu-se inicio o Culto de ordenação dos novos 04 Diáconos de nossa Diocese, por ordem: Rev. Elton Roney, Revda.
     Lindiane Meira, Revda Rosemary Gomes e Rev. Valdolírio Junior.
+- source: dar-2013-ordenacoes-1maio
+  quote: o culto de ordenação Presidido pelo nosso Bispo Diocesano
+- source: dar-2013-ordenacoes-1maio
+  quote: sermão proferido pelo Nosso Bispo Diocesano, Revmo. Miguel Uchoa
+- source: dard1-com-pbrnce-2009a
+  quote: 'Ministro Local: Post. Elton Roney'
 ordinations:
 - order: diaconate
   date: '2013-05-01'
@@ -26,3 +34,14 @@ ordinations:
   notes: >-
     Data do título da notícia ('Ordenações, ainda em 1º de Maio na Paraíba'); texto assinado por '+Bispo Flávio
     Adair'. Duas das quatro ordenadas são mulheres.
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_local
+  status: confirmed
+  sources:
+  - source: dard1-com-pbrnce-2009a
+    quote: 'Ministro Local: Post. Elton Roney'
+  notes: >-
+    Local: Paróquia Anglicana Cristo Libertador (João Pessoa). Consta na página de comunidades do Arcediagado PB/RN/CE
+    capturada em 03/01/2009 (sem data de publicação visível). Consta como postulante ("Post.").

@@ -1,6 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: peter-briggs
 name: Peter Briggs
+biography: >-
+  Ordenado diácono em 2008 e presbítero em 7 de junho de 2009, pelo bispo Robinson Cavalcanti, da Diocese Anglicana
+  do Recife, na Paróquia de St. Charles, em Poulsbo (Washington, EUA).
+sources:
+- source: drp2-novas-ordenacoes-2008-1sem
+  quote: >-
+    A Diocese do Recife agradece ao Senhor pelas novas Ordenações e a abertura de novos trabalhos ocorridos no primeiro
+    semestre de 2008.
+- source: drp2-novas-ordenacoes-2008-1sem
+  quote: Rev. Peter Briggs (Poulsbo, Wa, USA);
+- source: darn2-eua-ordenacoes-2009
+  quote: 'Ordenará ao Presbiterato os seguintes Diáconos: Rev. Peter Briggs'
+- source: dard2-briggs
+  quote: Paróquia Anglicana de St. Charles Poulsbo, Estado de Washington, EUA, em 07.06.2009
 ordinations:
 - order: diaconate
   date: '2008'
@@ -17,3 +31,26 @@ ordinations:
   notes: >-
     Ordenação diaconal no primeiro semestre de 2008, na lista da diocese; comunidade de origem: Poulsbo, Washington
     (EUA) (Arcediagado Norte-Americano). O ordenante não é nomeado; o bispo diocesano era Dom Robinson Cavalcanti.
+- order: presbyterate
+  date: '2009-06-07'
+  place: Paróquia Anglicana de St. Charles, Poulsbo, Washington (EUA)
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: darn2-eua-ordenacoes-2009
+    quote: 'Ordenará ao Presbiterato os seguintes Diáconos: Rev. Peter Briggs'
+  - source: dard2-briggs
+    quote: Ordenação Presbiteral do Rev. Peter Briggs
+  - source: dard2-briggs
+    quote: Paróquia Anglicana de St. Charles Poulsbo, Estado de Washington, EUA, em 07.06.2009
+  - source: dard2-us-ii
+    quote: Domingo, dia 07.06. Festa da Santíssima Trindade. Ordenação Presbiteral do Rev. Peter Briggs
+  notes: >-
+    Ordenação anunciada em 25/05/2009, quando o bispo Robinson Cavalcanti viajou aos Estados Unidos (retorno previsto
+    para 27 de junho) para visitar paróquias sob a jurisdição e supervisão episcopal da Diocese do Recife, na Flórida
+    e no Estado de Washington; a nota não traz data nem local exatos da ordenação, e o trecho de local ("em Jeffrey
+    Thimsen") é ambíguo. Registrada como provável por ser um anúncio. Ordenação presbiteral no Arcediagado Norte-Americano
+    da Diocese do Recife, em culto presidido por Robinson Cavalcanti, que pregou como bispo diocesano (sermão assinado
+    por ele). O relato de viagem registra a presença do bispo Boyce e de vários presbíteros e diáconas da paróquia
+    e de outras comunidades.

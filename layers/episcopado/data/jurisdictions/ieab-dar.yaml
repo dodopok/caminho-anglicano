@@ -10,46 +10,163 @@ aliases:
 - Diocese Setentrional
 - Diocese Setentrional (Recife)
 - Diocese Setentrional, Recife
+- Diocese do Recife (Diocese Setentrional)
 - Diocese do Recife (IEAB)
 - Diocese do Recife (Setentrional)
+- Diocese do Recife (antiga Diocese Setentrional) da IEAB
 type: diocese
 country: BR
 founded:
-  date: 1975-06
+  date: '1976-05-20'
   sources:
-  - source: ieab-serie-dar
-    quote: Comemorando 45 anos de presença 17/04/1975
-  - source: costa2021
-    quote: >-
-      Já a Diocese Setentrional foi criada em 1975 e instalada em 1976, sendo desmembrada da Diocese Central.
-  - source: ptwp-dar
-    quote: Foi criada em 1975 e instalada em 1976.
   - source: kickhofel-1995
     quote: >-
-      A Diocese de Recife foi oficialmente criada pelo Sínodo em junho de 1975, que recebeu um requerimento do concílio
-      da Diocese Central, pedindo o desmembramento de uma vasta área geográfica no norte e nordeste
-    page: '296'
+      A primeira foi a Diocese Sul Central em 1969; a segunda foi a Diocese Setentrional em 1976; e a terceira a
+      Diocese Missionária de Brasília em 1982.
+    page: '305'
+  - source: darl1-5297
+    quote: 'DIOCESE DO RECIFE: 36 ANOS DE RELEVANTES SERVIÇOS À IGREJA DO SENHOR (20-05-1976 / 20-05-2012)!!!'
+  - source: dard2-hist1
+    quote: >-
+      Em 20 de maio de 1976 encerra-se, definitivamente, o Ciclo da Capelania Britânica, com a criação, pelo Sínodo
+      Geral da agora Igreja Episcopal do Brasil, da Diocese Setentrional, com sede no Recife, desmembrada da Diocese
+      Central
+  - source: dard2-hist2
+    quote: >-
+      A Diocese Setentrional foi criada pelo Sínodo Geral da Igreja Episcopal do Brasil em 20 de Maio de 1976
+  - source: dard2-aniv33
+    quote: 33 anos (20/05/1976 - 20/05/2009)
+  - source: dard2-banner36
+    quote: 'DIOCESE DO RECIFE: 36 ANOS DE RELEVANTES SERVIÇOS À IGREJA DO SENHOR (20-05-1976 / 20-05-2012)'
   discrepancies:
   - field: date
-    value: '1976'
+    value: 1975-06
     sources:
+    - source: ieab-serie-dar
+      quote: Comemorando 45 anos de presença 17/04/1975
+    - source: costa2021
+      quote: >-
+        Já a Diocese Setentrional foi criada em 1975 e instalada em 1976, sendo desmembrada da Diocese Central.
+    - source: ptwp-dar
+      quote: Foi criada em 1975 e instalada em 1976.
     - source: kickhofel-1995
       quote: >-
-        A primeira foi a Diocese Sul Central em 1969; a segunda foi a Diocese Setentrional em 1976; e a terceira
-        a Diocese Missionária de Brasília em 1982.
-      page: '305'
+        A Diocese de Recife foi oficialmente criada pelo Sínodo em junho de 1975, que recebeu um requerimento do
+        concílio da Diocese Central, pedindo o desmembramento de uma vasta área geográfica no norte e nordeste
+      page: '296'
+  - field: date
+    value: '1975-05-31'
+    sources:
+    - source: dard1-verdades-2002
+      quote: na XV Reunião do Sínodo da Igreja Episcopal do Brasil, em sessão de 31 de maio de 1975
+    - source: dard1-verdades-2002
+      quote: foi criada a então chamada Diocese Setentrional, desmembrada da Diocese Central
+    - source: dard1-uchoa-inglaterra-2005
+      quote: A Diocese foi fundada em 1974, pelo Bispo Edmund Knox Sherrill
+    - source: dard1-aniversario-2009
+      quote: 33 anos (20/05/1976 - 20/05/2009)
+    - source: dard1-aniversario-2009
+      quote: 'Maio: Mï¿½s de Aniversário da Diocese do Recife'
 website: https://dioceseanglicanaderecife.com.br/
 description: >-
-  Criada pelo Sinodo em 1975 (17/04/1975 segundo a IEAB), instalada em 1976; abrangia Norte e Nordeste ate a criacao
-  da Amazonia (2006).
+  A Diocese do Recife foi criada em 20 de maio de 1976 pelo Sínodo Geral como Diocese Setentrional, com sede no
+  Recife, desmembrada da Diocese Central e com jurisdição sobre o Norte e o Nordeste; seu primeiro bispo foi Edmund
+  Knox Sherrill, que renunciou no início de 1986, havendo versões divergentes sobre as datas de seu período. Clóvis
+  Erly Rodrigues, sagrado em 17 de março de 1985 por Sherrill, com os demais bispos brasileiros e o primaz do Cone
+  Sul, David Leake, como co-sagrantes, foi coadjutor nesse ano, bispo diocesano de 1986 a outubro de 1997 e hoje
+  é emérito. Robinson Cavalcanti, coadjutor desde 5 de outubro de 1997, foi instalado bispo diocesano em 19 de outubro.
+  Em 2002, Paulo Garcia saiu da diocese e fundou a Igreja Episcopal Carismática do Brasil. Em 2003, a Afirmação
+  do Recife suspendeu a comunhão com as dioceses de New Westminster e de New Hampshire e rescindiu o convênio com
+  a Diocese da Pensilvânia Central. Em junho de 2005, Cavalcanti foi deposto sob a alegação de ter rompido a comunhão
+  com a IEAB, no que um texto chama de segundo cisma; a diocese voltou ao status de missionária sob autoridade primacial,
+  com bispos interinos entre 2004 e 2006 e Filadelfo Oliveira Neto nomeado autoridade eclesiástica. Sebastião Armando
+  Gameleira Soares, quarto bispo, foi instalado em 11 de outubro de 2006 e atuou até 2013; desde dezembro de 2013,
+  o bispo diocesano é João Câncio Peixoto Filho, o quinto. Em 2017, clérigos ligados à catedral diocesana romperam
+  a comunhão com a IEAB.
 sources:
-- source: ieab-serie-dar
-  quote: Comemorando 45 anos de presença 17/04/1975
+- source: darl3-hist1
+  quote: >-
+    Em 20 de maio de 1976 encerra-se, definitivamente, o Ciclo da Capelania Britânica, com a criação, pelo Sínodo
+    Geral da agora Igreja Episcopal do Brasil, da Diocese Setentrional, com sede no Recife, desmembrada da Diocese
+    Central, com jurisdição sobre todo o Norte e o Nordeste, sendo designado Bispo o Revmo. Dom Edmund Knox Sherrill
+- source: darl3-hist2
+  quote: >-
+    No início de 1986 o Bispo Sherrill renuncia, se aposenta e muda sua residência de volta ao Rio de Janeiro
+- source: costa2021
+  quote: 1976-1985 – Edmund Knox Sherrill
+- source: ptwp-dar
+  quote: Edmund Knox Sherrill (1º bispo diocesano) - 1975 a 1985;
+- source: kickhofel-1995
+  quote: >-
+    Rodrigues foi elevado ao episcopado no dia 17 de março de 1985, na Catedral da SS.Trindade, em Porto Alegre,
+    pelo primaz em exercício, Edmund Knox Sherrill, tendo participado como co-sagrantes os demais bispos brasileiros
+    e o bispo argentino David Leake, primaz da Provínica Anglicana do Cone Sul, com sede em Salta, Argentina.
+  page: '300'
+- source: costa2021
+  quote: Durante o ano de 1985, Clovis trabalhou ao lado de Sherrill, como bispo coadjutor
+  page: '179'
+- source: costa2021
+  quote: 1986-1997 – Clovis Erly Rodrigues
+- source: ieab-secretaria
+  quote: Revmo. Bispo Clóvis Erli Rodrigues, Emérito
+- source: rclv-anglicanismo-identidade
+  quote: >-
+    EDWARD ROBINSON DE BARROS CAVALCANTI Bispo Coadjutor (05.10.1997) (Diocesano do Recife desde 19.10.1997).
+  page: '162'
 - source: costa2021
   quote: >-
-    Já a Diocese Setentrional foi criada em 1975 e instalada em 1976, sendo desmembrada da Diocese Central.
-- source: ptwp-dar
-  quote: Foi criada em 1975 e instalada em 1976.
+    Em 19 de outubro do mesmo ano, Robinson foi instalado como terceiro bispo da Diocese Anglicana do Recife.
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Com a ruptura de Garcia, em 2002, sua saída da Comunhão Anglicana e a fundação da Igreja Episcopal Carismática
+    do Brasil, a comunidade e o templo ficaram junto à nova jurisdição
+  page: '109'
+- source: drp2-cronologia-2004
+  quote: >-
+    Os bispos e o Conselho Diocesano da Diocese Anglicana do Recife emitem a “Afirmação do Recife”, suspendendo
+    comunhão com New Westminster e New Hampshire
+- source: drp2-cronologia-2004
+  quote: >-
+    Em decorrência, é rescindido o relacionamento de companheirismo com a Diocese da Pensilvânia Central (ECUSA).
+- source: ens-102306-1-a
+  quote: Finally, in June 2005, Cavalcanti was deposed on the grounds that he broke communion with the IEAB
+- source: cant-novas-igrejas-2024
+  quote: com o segundo cisma, promovido pelo próprio Robinson, em 2005, a comunidade não foi abalada
+  page: '111'
+- source: costa2021
+  quote: >-
+    a DAR acabou retornando ao status de Diocese Missionária, sob a autoridade do Primaz, representado interinamente
+    pelos bispos Glauco Soares, Maurício Andrade e, depois, Filadelfo Oliveira. Estes postos foram ocupados entre
+    os anos de 2004 e 2006
+  page: '238'
+- source: costa2021
+  quote: >-
+    NOMEIO, COMO AUTORIDADE ECLESIÁSTICA DA DIOCESE ANGLICANA DO RECIFE, enquanto durar os efeitos da supra-citada
+    resolução, DOM FILADELFO OLIVEIRA NETO
+- source: costa2021
+  quote: O novo bispo foi instalado em 11 de outubro de 2006
+- source: ens-102306-1-a
+  quote: >-
+    The Diocese of Recife in Brazil celebrated the start of a new chapter in its complicated life with the installation
+    on October 11 of its fourth bishop, the Rt. Rev. Sebastiao Armando Gameleira Soares.
+- source: costa2021
+  quote: 2006-2013 – Sebastião Armando Gameleira Soares
+- source: ieab-dioceses
+  quote: Bispo Diocesano – Revmo. João Cancio Peixoto Filho
+- source: cant-novas-igrejas-2024
+  quote: >-
+    a Diocese Anglicana do Recife (DAR), da Igreja Episcopal Anglicana do Brasil (IEAB), ligada à Comunhão Anglicana,
+    atualmente pastoreada pelo seu quinto bispo, João Câncio Peixoto Filho, com sé na Catedral Anglicana do Bom
+    Samaritano
+  page: '173'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Entretanto, alguns desses clérigos, sobretudo aqueles que se relacionavam ao staff da catedral diocesana, decidiram
+    partir e romper a comunhão com nossa Igreja
+  page: '111'
+- source: cant-novas-igrejas-2024
+  quote: após a mesma ter rompido com a Igreja Episcopal Anglicana do Brasil, no ano de 2017
+  page: '109'
 relations:
 - type: part_of
   target: ieab
@@ -1008,6 +1125,117 @@ relations:
     quote: Estevão Meneses da Silva
   - source: ieabrecife-clero-2002
     quote: Paróquia Anglicana Bom Samaritano
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Ven. Arc. Rev. Maurício R. Fernandes Coelho Presidente do Conselho Diocesano Arcediagado Sul Paróquia Anglicana
+      Jardim das Oliveiras
+  - source: dard1-carta-primaz-2004-06
+    quote: Ven Arc Rev Maurício R Fernandes Coelho Presidente do Conselho Diocesano Arcediagado Sul
+  - source: dard1-carta-bispos-2004
+    quote: Ven. Arc. Rev. Maurício R. Fernandes Coelho Presidente do Conselho Diocesano
+  - source: dard1-carta-primaz-2004-06
+    quote: Ven Arc Rev Maurício R Fernandes Coelho Presidente do Conselho Diocesano
+  - source: dard1-carta-emergencia-2004
+    quote: Rev. Maurício R. Fernandes Coelho Pres. do Conselho Diocesano
+  - source: dard1-carta-bispos-2004
+    quote: Ven. Arc. Côn. Rev. Quintino José Orengo da Silva Arcediagado Centro Paróquia Anglicana do Semeador
+  - source: dard1-carta-primaz-2004-06
+    quote: Ven Arc Rev Côn Quintino José Orengo da Silva Arcedigado Centro
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Ven. Arc. Revda. Maria Gorete Correia M. Silva Secretária Diocesana de Ação Social Paróquia Anglicana da Redenção
+  - source: dard1-carta-bispos-2004
+    quote: Revmo. Deão Rev. Luiz Souza de França Arcediagado PB/RN/CE Con-Catedral Anglicana da Ressurreição
+  - source: dard1-carta-primaz-2004-06
+    quote: Ven Arc Revmo Deão Luiz Souza de França Arcediagado PB/RN/CE
+  - source: dard1-carta-bispos-2004
+    quote: Revda. Siméa de Souza Meldrum Paróquia Anglicana Água Viva
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Estevão Menezes da Silva Secretaria Administrativa Paróquia Anglicana Jardim das Oliveiras
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Rev. Manoel Severino Moraes de Almeida Secretaria de Direitos Humanos Paróquia Anglicana Bom Samaritano
+  - source: dard1-carta-bispos-2004
+    quote: ML. Jeane Grande de Miranda Arruda Coelho Secretaria de Intercessão Missão Anglicana Salvação
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Evilásio Tenório da Silva Ponto Missionário Anglicano Betel
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Rev. Fernando Acosta Rodriguez Paróquia Anglicana do Espírito Santo e Ponto Missionário Anglicano Jesus de
+      Nazaré
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Geison Sávio de Holanda Vasconcelos Paróquia Anglicana do Espírito Santo
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Revda. Juciara Maria Rodrigues do N. Crasto Paróquia Anglicana São Paulo Ponto Missionário Anglicano Betesda
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Márcio Medeiros Meira Paróquia Anglicana do Salvador Paróquia Anglicana Comunhão
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Rev.Miguel Ângelo de A. Uchoa Cavalcanti Paróquia Anglicana do Espírito Santo e Ponto Missionário Anglicano
+      Monte Moriá
+  - source: dard1-carta-bispos-2004
+    quote: Revda. Veralúcia Lins Silva Paróquia Anglicana do Redentor
+  - source: dard1-carta-bispos-2004
+    quote: Revda. Vera Lúcia Melo do Nascimento Paróquia Anglicana Emanuel
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Côn. Washington Franco Missão Anglicana Filadélfia
+  - source: dard1-carta-bispos-2004
+    quote: >-
+      Rev. Daniel Barbosa da Silva Prior da Ordem Evangélica de Santo Estevão Mártir Ponto Missionário Anglicano
+      Martin Luther King
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Décio da Silva Paróquia Anglicana Emanuel
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Elias Leôncio de Brito Filho Paróquia Anglicana Bom Samaritano
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Fred de Melo Souto Lima Paróquia Anglicana do Espírito Santo
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Josias Pereira de Souza Júnior Paróquia Anglicana do Espírito Santo
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Manoel Nunes da Silva Neto Missão Anglicana da Esperança
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Marconi Alves de Oliveira Ponto Missionário Anglicano Nova Vida
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Marcus Throup Paróquia Anglicana Jardim das Oliveiras
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Raniere Almeida de Oliveira Paróquia Anglicana do Semeador
+  - source: dard1-carta-bispos-2004
+    quote: Revda. Solange Cristina Pereira Ponto Missionário Anglicano da Paz
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Tibério Marques da Silva Paróquia Anglicana da Redenção
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Antônio Costa de Oliveira Missão Anglicana do Consolador
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Cézar Romero Leal Vieira Paróquia Anglicana Jardim das Oliveiras
+  - source: dard1-carta-bispos-2004
+    quote: André Luiz de Souza Missão Anglicana Filadélfia
+  - source: dard1-carta-bispos-2004
+    quote: Cláudio Luiz Figueiredo de Brito Paróquia Anglicana do Salvador
+  - source: dard1-carta-bispos-2004
+    quote: Dinamérico Wanderley Ribeiro de Sousa Paróquia Anglicana do Espírito Santo
+  - source: dard1-carta-bispos-2004
+    quote: Flávio Adair Torres Soares Missão Anglicana Cristo Libertador
+  - source: dard1-carta-bispos-2004
+    quote: Maurício Amazonas Paróquia Anglicana Bom Samaritano
+  - source: dard1-carta-bispos-2004
+    quote: Teresa Julieta de Paula Menezes Catão Missão Anglicana da Salvação
+  - source: dard1-verdades-2002
+    quote: >-
+      Em março de 1975, a pedido do bispo da Diocese Central, rev. Edmund K. Sherrill, o rev. Paulo Garcia veio
+      assumir a Paróquia da Santíssima Trindade, no Recife
+  - source: dard1-carta-caluniadores-2002
+    quote: Rev. Edmar Carvalho Pimentel - Presidente do Conselho Diocesano
+  - source: dard1-carta-caluniadores-2002
+    quote: Dom Filadelfo Oliveira Neto - Bispo Sufragâneo (Auxiliar)
+  - source: dard1-carta-caluniadores-2002
+    quote: Dom Edward Robinson de Barros Cavalcanti - Bispo Diocesano
+  - source: dard1-carta-caluniadores-2002
+    quote: Sérgio Andrade , Coadjutor (Pastor auxiliar) da Catedral Anglicana da Santíssima Trindade
+  - source: dard1-carta-primazes-2003
+    quote: liderados pelo Ministro Coadjutor, o Rev. Sérgio Andrade
+  - source: dard1-uchoa-iaeb-2005
+    quote: eu, membro por um mandato do Conselho Executivo do Sínodo
 - type: broke_communion_with
   target: tec
   date: '2003'
@@ -1051,7 +1279,7 @@ relations:
       comunhão com New Westminster e New Hampshire
 - type: in_communion_with
   target: diocese-de-central-pennsylvania
-  date: null
+  date: 1998/2002
   end: 2003-12
   led_by:
   - robinson-cavalcanti
@@ -1064,12 +1292,18 @@ relations:
     quote: >-
       Assinamos convênios com duas Dioceses Companheiras: Fredericton, no Canadá, e Pensilvânia Central, nos Estados
       Unidos.
+  - source: darl3-hist4
+    quote: >-
+      Estabeleceu convênio como “Dioceses Companheiras” com a Diocese de Pensilvânia Central (ECUSA) e de Fredericton
+      (Canadá)
   notes: >-
     Relação de diocese companheira (companion diocese) com a Diocese de Central Pennsylvania (Igreja Episcopal dos
-    EUA), rescindida pelo Concílio Diocesano de dezembro de 2003.
+    EUA), rescindida pelo Concílio Diocesano de dezembro de 2003. Convênio de "Dioceses Companheiras" estabelecido
+    no período do episcopado de Robinson Cavalcanti (texto de "Resgatando Nossa História IV", período 1998-2002);
+    o texto diz ter visitado ambas as dioceses e recebido o bispo de Fredericton em um Concílio Diocesano.
 - type: in_communion_with
   target: diocese-de-fredericton
-  date: null
+  date: 1998/2002
   led_by:
   - robinson-cavalcanti
   status: confirmed
@@ -1078,5 +1312,12 @@ relations:
     quote: >-
       Assinamos convênios com duas Dioceses Companheiras: Fredericton, no Canadá, e Pensilvânia Central, nos Estados
       Unidos. Os Bispos Lemmon e Craighton nos visitaram, e eu estive em seus Concílios.
+  - source: darl3-hist4
+    quote: >-
+      Estabeleceu convênio como “Dioceses Companheiras” com a Diocese de Pensilvânia Central (ECUSA) e de Fredericton
+      (Canadá)
   notes: >-
     Diocese companheira (Igreja Anglicana do Canadá), por convênio assinado no início do episcopado de Dom Robinson.
+    Convênio de "Dioceses Companheiras" estabelecido no período do episcopado de Robinson Cavalcanti (texto de "Resgatando
+    Nossa História IV", período 1998-2002); o texto diz ter visitado ambas as dioceses e recebido o bispo de Fredericton
+    em um Concílio Diocesano.

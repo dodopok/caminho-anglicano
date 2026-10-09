@@ -1,10 +1,16 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: rubens-cirilo-da-silva
 name: Rubens Cirilo da Silva
-biography: Clérigo da Igreja Anglicana Mundial (WAC), Província do Brasil, em Marilândia do Sul (PR).
+biography: >-
+  Diácono da Igreja Anglicana Mundial (WAC), Província do Brasil, em Marilândia do Sul (PR), ordenado em 13/07/2024.
 sources:
 - source: rta-wacbr-cleros
   quote: 'Diácono Rubens Cirilo da Silva Cidade: Marilância - PR Ordenação: Diaconal: 13/07/2024'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    No dia 13 de julho, realizaram-se as ordenações diaconais de Frei Mauro Ossoski, Rubens Cirilo da Silva e Deives
+    Aparecido de Godoi.
+  page: '128'
 ordinations:
 - order: diaconate
   date: '2024-07-13'

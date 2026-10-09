@@ -1,10 +1,35 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: henrique-cesar-de-almeida-lacerda
 name: Henrique César de Almeida Lacerda
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Henrique César de Almeida Lacerda foi ordenado diácono em 27 de novembro de 2004, em João Pessoa, por Robinson
+  Cavalcanti, na Diocese Anglicana do Recife. Em 23 de agosto de 2005 foi incluído entre os clérigos excluídos da
+  comunhão da IEAB, tendo declarado manter plena comunhão com Robinson Cavalcanti. Na Diocese do Recife foi ministro
+  encarregado do Ponto Missionário Anglicano Adoração e secretário diocesano de Educação.
 sources:
-- source: drv-declaracao-32
-  quote: Rev. Henrique César de Almeida Lacerda
+- source: drp2-ord-diac-lacerda-2004
+  quote: >-
+    SERMÃO DE ORDENAÇÃO DIACONAL DE HENRIQUE CÉSAR DE ALMEIDA LACERDA Paróquia Anglicana Comunhão João Pessoa (PB),
+    27.11.2004
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Henrique César de Almeida Lacerda … Os clérigos não atenderam
+    à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
+    mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Henrique César de Almeida Lacerda … Recife, 23 de agosto de
+    2005.
+  page: 560-561
+- source: dard2-com-pb
+  quote: 'PONTO MISSIONÁRIO ANGLICANO Adoração Ministro Encarregado: Rev. Henrique Lacerda'
+- source: drp2-noticia-alpha-2011
+  quote: O Secretário Diocesano de Educação, Rev. Henrique Lacerda (Paróquia Anglicana Adoração)
+- source: darn2-secretarios-2012
+  quote: 'Secretaria Diocesana Anglicana de Educação: Rev. Henrique César de Almeida Lacerda'
 ordinations:
 - order: diaconate
   date: '2004-11-27'
@@ -67,3 +92,22 @@ affiliations:
   - source: drp2-noticia-alpha-2011
     quote: O Secretário Diocesano de Educação, Rev. Henrique Lacerda (Paróquia Anglicana Adoração)
   notes: 'Local: Paróquia Anglicana Adoração. Em junho de 2011.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário diocesano de Educação
+  status: confirmed
+  sources:
+  - source: darn2-secretarios-2012
+    quote: 'Secretaria Diocesana Anglicana de Educação: Rev. Henrique César de Almeida Lacerda'
+  notes: Secretário diocesano em abril de 2012.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro encarregado
+  status: confirmed
+  sources:
+  - source: dard2-com-pb
+    quote: 'PONTO MISSIONÁRIO ANGLICANO Adoração Ministro Encarregado: Rev. Henrique Lacerda'
+  notes: >-
+    Local: Ponto Missionário Anglicano Adoração (Mangabeira VII, João Pessoa-PB; Arcediagado PB/RN/CE). Página "Comunidades"
+    do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de
+    posse.

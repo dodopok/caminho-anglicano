@@ -1,6 +1,12 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: valeria-silva
 name: Valéria Silva
+biography: Ordenada diácona em 06/05/2006 e presbítera em 12/05/2007, esta pelo bispo Hiroshi Ito, na IEAB.
+sources:
+- source: cant-ec-2007-03
+  quote: Foi ordenada ao diaconato no dia 06 maio de 2006.
+- source: cant-ec-2007-03
+  quote: A revda. Valéria Silva foi ordenada presbítera, pelo bispo Hiroshi Ito, no dia 12 de maio.
 ordinations:
 - order: diaconate
   date: '2006-05-06'

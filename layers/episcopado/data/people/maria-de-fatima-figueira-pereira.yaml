@@ -1,12 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: maria-de-fatima-figueira-pereira
 name: Maria de Fátima Figueira Pereira
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+death:
+  date: 2009-04
+  sources:
+  - source: dard1-aniversario-2009
+    quote: 'Alocução do Bispo Diocesano: Ofício Fúnebre da Revda. Maria de Fátima F. Pereira (17/04/2009)'
+biography: >-
+  Maria de Fátima Figueira Pereira foi ordenada diácona em 05/07/2008 por Robinson Cavalcanti e atuou como ministra
+  auxiliar na Diocese Anglicana do Recife. Faleceu em abril de 2009, com ofício fúnebre em 17/04/2009.
 sources:
 - source: drv-ordenacoes-diaconais-2008
   quote: >-
     apresentamos Josean, Lúcia Helena, Márcia, Márcio e Maria de Fátima para serem Ordenados ao Diaconato na Santa
     Igreja de Cristo.
+- source: drv-ordenacoes-diaconais-2008
+  quote: Recife (PE), 05 de julho de 2008
+- source: dard1-com-norte-2009a
+  quote: 'Ministro Encarregado: Rev. Daniel Barbosa Ministra Auxiliar: Revda. Fátima Figueira Pereira'
+- source: dard1-aniversario-2009
+  quote: 'Alocução do Bispo Diocesano: Ofício Fúnebre da Revda. Maria de Fátima F. Pereira (17/04/2009)'
 ordinations:
 - order: diaconate
   date: '2008-07-05'
@@ -30,3 +43,24 @@ ordinations:
   notes: >-
     Rito de ordenação diaconal de cinco pessoas presidido pelo bispo Edward Robinson de Barros Cavalcanti, que consta
     como ordinante e pregador.
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_auxiliar
+  status: confirmed
+  sources:
+  - source: dard1-com-norte-2009a
+    quote: 'Ministro Encarregado: Rev. Daniel Barbosa Ministra Auxiliar: Revda. Fátima Figueira Pereira'
+  notes: >-
+    Local: Missão Anglicana Comunidade da Paz (Paulista-PE). Consta na página de comunidades do Arcediagado Norte
+    capturada em 03/01/2009 (sem data de publicação visível).
+events:
+- type: death
+  date: 2009-04
+  description: >-
+    Falecimento da Revda. Maria de Fátima F. Pereira: o site da Diocese publicou, em abril de 2009, a alocução do
+    bispo diocesano no ofício fúnebre (17/04/2009).
+  status: probable
+  sources:
+  - source: dard1-aniversario-2009
+    quote: 'Alocução do Bispo Diocesano: Ofício Fúnebre da Revda. Maria de Fátima F. Pereira (17/04/2009)'

@@ -2,6 +2,59 @@
 id: diocese-of-canterbury
 name: Diocese of Canterbury
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra, sede dos arcebispos de Canterbury. No século XVI foram arcebispos Thomas Cranmer
+  (1533-1556), Matthew Parker (1559-1575), Edmund Grindal (1576-1583) e John Whitgift (1583-1604); no século XVII,
+  Richard Bancroft (1604-1610), George Abbot (1611-1633), William Laud (1633-1645), Gilbert Sheldon (1663-1677)
+  e William Sancroft (de 1678, deposto em 1690). No século XVIII estão John Potter (1737-1747), Thomas Herring (1747-1757),
+  Frederick Cornwallis (1768-1783) e John Moore (1783-1805). No século XIX, John Bird Sumner (1848-1862), Charles
+  Thomas Longley (1862-1868), Archibald Campbell Tait (1868-1882), Edward White Benson (1883-1896) e Frederick Temple,
+  a partir de 1896. Seguiram-se Randall Thomas Davidson (1903-1928) e Cosmo Gordon Lang, entronizado em 4 de dezembro
+  de 1928 e arcebispo até 1942.
+sources:
+- source: stubbs-1897
+  quote: Thomas Cranmer. Canterbury; d. 1556, March 21.
+- source: stubbs-1897
+  quote: Matthew Parker. Canterbury; d. 1575, May 17.
+- source: stubbs-1897
+  quote: Edmund Grindal. London ; York, 1570 ; Canterbury, 1576 ; d. 1583, July 6.
+- source: stubbs-1897
+  quote: John Whitgift. Worcester; Canterbury, 1583; d. 1604, Feb. 29.
+- source: stubbs-1897
+  quote: Richard Bancroft. London ; Canterbury, 1604 ; d. 1610, Nov. 2.
+- source: stubbs-1897
+  quote: George Abbot. Lichfield ; London, 1610 ; Canterbury, 161 1 ; d. 1633, Aug. 4
+- source: stubbs-1897
+  quote: William Laud. S. David's ; Bath, 1626 ; London, 1628; Canterbury, 1633; d. 1645, Jan. 10.
+- source: stubbs-1897
+  quote: Gilbert Sheldon. London ; Canterbury, 1663 ; d. 1677, Nov. 9.
+- source: stubbs-1897
+  quote: William Sancroft. Canterbury; dep. 1690, Feb. 1; d. 1693, Nov. 24
+- source: stubbs-1897
+  quote: John Potter. Oxford; Canterbury, 1737; d. 1747, Oct. 10.
+- source: stubbs-1897
+  quote: Thomas Herring. Bangor ; York, 1743 ; Canterbury, 1747; d. 1757, March 13.
+- source: stubbs-1897
+  quote: Frederick Cornwallis. Lichfield ; Canterbury, 1768; d. 1783, March 19.
+- source: stubbs-1897
+  quote: John Moore. Bangor; Canterbury, 1783; d. 1805, Jan. 18.
+- source: stubbs-1897
+  quote: John Bird Sumner. Chester ; Canterbury, 1848 ; d. Sept. 6, 1862.
+- source: stubbs-1897
+  quote: Charles Thomas Longley. Ripon ; Durham, 1856 ; York, i860 ; Canterbury, 1862 ; d. 1868, Oct. 27.
+- source: stubbs-1897
+  quote: Archibald Campbell Tait. London ; Canterbury, 1868 ; d. 1882, Sept. 3.
+- source: wp-en-benson
+  quote: >-
+    Edward White Benson (14 July 1829 – 11 October 1896) was archbishop of Canterbury from 1883 until his death.
+- source: stubbs-1897
+  quote: Frederick Temple. Exeter ; London, 1885 ; Canterbury, 1896
+- source: wp-en-davidson
+  quote: Archbishop of Canterbury from 1903 to 1928
+- source: perd04-wp-lang
+  quote: who served as Archbishop of York (1908–1928) and Archbishop of Canterbury (1928–1942)
+- source: perd04-wp-lang
+  quote: Lang was enthroned as the new Archbishop of Canterbury on 4 December 1928
 relations:
 - type: part_of
   target: church-of-england
@@ -41,3 +94,18 @@ relations:
     quote: Archibald Campbell Tait. London ; Canterbury, 1868 ; d. 1882, Sept. 3.
   - source: stubbs-1897
     quote: Frederick Temple. Exeter ; London, 1885 ; Canterbury, 1896
+  - source: wp-en-benson
+    quote: >-
+      Edward White Benson (14 July 1829 – 11 October 1896) was archbishop of Canterbury from 1883 until his death.
+  - source: wp-en-benson
+    quote: In 1883 he was appointed Archbishop of Canterbury.
+  - source: perd04-wp-lang
+    quote: who served as Archbishop of York (1908–1928) and Archbishop of Canterbury (1928–1942)
+  - source: perd04-wp-lang
+    quote: Lang was enthroned as the new Archbishop of Canterbury on 4 December 1928
+  - source: wp-en-davidson
+    quote: Archbishop of Canterbury from 1903 to 1928
+  - source: wp-en-davidson
+    quote: >-
+      [[Bishop of Rochester]] (1891) and [[Bishop of Winchester]] (1895). In 1903 he succeeded [[Frederick Temple]]
+      as Archbishop of Canterbury, and remained in office until his retirement in November 1928.

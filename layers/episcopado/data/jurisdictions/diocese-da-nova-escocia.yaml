@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-da-nova-escocia
+name: Diocese da Nova Escócia
+type: diocese
+tradition: anglican
+country: CA
+description: Diocese anglicana canadense cujo primeiro bispo, Charles Inglis, assumiu em 12 de agosto de 1787.
+sources:
+- source: fund-wp-en-accan
+  quote: He became the first bishop of the diocese of Nova Scotia on 12 August 1787
+- source: perd01-wp-inglis
+  quote: named Inglis its first bishop
+relations:
+- type: part_of
+  target: anglican-church-of-canada
+  status: probable
+  sources:
+  - source: fund-wp-en-accan
+    quote: He became the first bishop of the diocese of Nova Scotia on 12 August 1787
+  - source: perd01-wp-inglis
+    quote: named Inglis its first bishop

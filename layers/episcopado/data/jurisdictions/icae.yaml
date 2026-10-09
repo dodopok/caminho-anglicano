@@ -2,3 +2,34 @@
 id: icae
 name: ICAE
 type: other
+description: >-
+  Iglesia Católica Anglicana del Ecuador, associada extranacional ao Movimento Anglicano Por Uma Causa Comum, criado
+  pela Declaração da Boa Viagem de 30 de setembro de 2006; Walter Roberto Crespo Guarderas é presidente da Câmara
+  dos Bispos.
+sources:
+- source: darl3-cc-boaviagem
+  quote: >-
+    Iglesia Católica Anglicana del Ecuador – ICAE : Dom Walter Roberto Crespo Guarderas, Presidente da Câmara dos
+    Bispos. Associado Extra-Nacional.
+- source: darl3-cc-boaviagem
+  quote: >-
+    assinaram ontem, 30.09.2006, a “Declaração da Boa Viagem” , criando o “Movimento Anglicano Por Uma Causa Comum”
+- source: darl3-cc-boaviagem
+  quote: Dom Walter Roberto Crespo Guarderas, Presidente da Câmara dos Bispos
+relations:
+- type: member_of
+  target: movimento-anglicano-por-uma-causa-comum
+  date: '2006-09-30'
+  status: confirmed
+  sources:
+  - source: darl3-cc-boaviagem
+    quote: >-
+      Iglesia Católica Anglicana del Ecuador – ICAE : Dom Walter Roberto Crespo Guarderas, Presidente da Câmara
+      dos Bispos. Associado Extra-Nacional.
+  - source: darl3-cc-boaviagem
+    quote: >-
+      assinaram ontem, 30.09.2006, a “Declaração da Boa Viagem” , criando o “Movimento Anglicano Por Uma Causa Comum”
+  notes: >-
+    Signatária fundadora da Declaração da Boa Viagem (Catedral Anglicana do Bom Samaritano, Boa Viagem, Recife,
+    30/09/2006), que criou o Movimento Anglicano "Por Uma Causa Comum", durante o culto de ação de graças pelo nono
+    aniversário de sagração episcopal de Dom Robinson Cavalcanti. A ICAE consta como associado extra-nacional.

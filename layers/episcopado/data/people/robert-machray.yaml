@@ -16,10 +16,36 @@ death:
   - source: dcb-machray
     quote: On 24 June 1865 he was ordained at Lambeth Palace.
 wikidata: Q7347251
-biography: Bispo de Rupert's Land (1865), metropolita e primeiro primaz da Igreja da Inglaterra no Canadá.
+biography: >-
+  Robert Machray (17/05/1831 a 09/03/1904) foi sagrado bispo de Rupert's Land em 24/06/1865, na capela de Lambeth
+  Palace, por Charles Thomas Longley, arcebispo de Cantuária. Tornou-se arcebispo da província quando a diocese
+  foi dividida, em 1875, e foi eleito em 1893 o primeiro primaz da Igreja Anglicana do Canadá, cargo que exerceu
+  até morrer.
 sources:
-- source: dcb-machray
-  quote: On 24 June 1865 he was ordained at Lambeth Palace.
+- source: wp-machray
+  quote: '''''''Robert Machray'''''' (17 May 1831 – 9 March 1904)'
+- source: life-machray-1909
+  quote: >-
+    The Consecration took place in the chapel of Lambeth Palace on Saturday, June 24, the day being the Festival
+    of St. John the Baptist. At eleven o'clock in the morning a procession, which had been formed in the Palace,
+    entered the chapel ; it consisted of the consecrating prelates, who were the Archbishop of Canterbury (Dr. Longley),
+    the Bishops of London (Dr. Tait) and Ely (Dr. Browne), the Bishop of Aber- deen (Dr. Suther), and Bishop Anderson
+- source: life-machray-1909
+  quote: >-
+    Dr. Machray was presented to the Archbishop by the Bishops of London and Ely, and duly and canonically consecrated
+    Bishop of Rupert's Land.
+- source: wp-machray
+  quote: >-
+    In 1865, he became [[Anglican Diocese of Rupert's Land|Bishop of Rupert's Land]] (in [[Canada]]), becoming [[archbishop]]
+    of [[Ecclesiastical Province of the Northern Lights|the province]] when his diocese was split in 1875.
+- source: wp-machray
+  quote: >-
+    becoming [[archbishop]] of [[Ecclesiastical Province of the Northern Lights|the province]] when his diocese
+    was split in 1875.
+- source: wp-machray
+  quote: >-
+    At the first [[General Synod]] of Canadian Anglicans in 1893 he was unanimously elected as the first [[Primate
+    of the Anglican Church of Canada|Primate of All Canada]], serving in the position until his death.
 ordinations:
 - order: episcopate
   date: '1865-06-24'
@@ -55,3 +81,56 @@ ordinations:
     bispo de Rupert's Land (então sob a metropolia de Cantuária). Nomes completos dos co-sagrantes inferidos dos
     sobrenomes/sés (Tait de Londres, Browne de Ely, Suther de Aberdeen, Anderson ex-bispo de Rupert's Land). Machray
     foi bispo de Rupert's Land.
+affiliations:
+- jurisdiction: anglican-church-of-canada
+  role: diocesan_bishop
+  diocese: diocese-of-rupert-s-land
+  start: '1865'
+  end: '1904-03-09'
+  end_reason: death
+  status: probable
+  sources:
+  - source: wp-machray
+    quote: >-
+      In 1865, he became [[Anglican Diocese of Rupert's Land|Bishop of Rupert's Land]] (in [[Canada]]), becoming
+      [[archbishop]] of [[Ecclesiastical Province of the Northern Lights|the province]] when his diocese was split
+      in 1875.
+  - source: wp-machray
+    quote: '''''''Robert Machray'''''' (17 May 1831 – 9 March 1904)'
+  notes: >-
+    Bispo de Rupert's Land desde 1865; em 1875, com a divisão da diocese, passou a arcebispo da província.
+- jurisdiction: anglican-church-of-canada
+  role: archbishop
+  diocese: diocese-of-rupert-s-land
+  start: '1875'
+  end: '1904-03-09'
+  end_reason: death
+  status: probable
+  sources:
+  - source: wp-machray
+    quote: >-
+      becoming [[archbishop]] of [[Ecclesiastical Province of the Northern Lights|the province]] when his diocese
+      was split in 1875.
+  - source: wp-machray
+    quote: >-
+      [[Metropolitan bishop#Anglican|Metropolitan]] of the [[Ecclesiastical Province of the Northern Lights|Ecclesiastical
+      Province of Rupert's Land]]
+  notes: Metropolita da província eclesiástica de Rupert's Land.
+- jurisdiction: anglican-church-of-canada
+  role: primate
+  start: '1893'
+  end: '1904-03-09'
+  end_reason: death
+  status: probable
+  sources:
+  - source: wp-machray
+    quote: >-
+      At the first [[General Synod]] of Canadian Anglicans in 1893 he was unanimously elected as the first [[Primate
+      of the Anglican Church of Canada|Primate of All Canada]], serving in the position until his death.
+  - source: wp-machray
+    quote: >-
+      the first [[Primate of the Anglican Church of Canada|Primate]] of the [[Anglican Church of Canada|Church of
+      England in Canada]]
+  notes: >-
+    Primeiro primaz da Igreja Anglicana do Canadá (então Igreja da Inglaterra no Canadá), eleito no primeiro Sínodo
+    Geral. A caixa de sucessão da Wikipédia indica 1898-1904 para o título.

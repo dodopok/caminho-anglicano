@@ -1,10 +1,23 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: claudia-kallis
 name: Claudia Kallis
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Presbítera da Diocese do Recife, com domicílio canônico na diocese e residente no exterior, pastoreia a Missão
+  Anglican Fellowship (High Springs, Flórida), comunidade associada à diocese e sob sua supervisão episcopal, visitada
+  por Robinson Cavalcanti em março de 2005.
 sources:
 - source: drv-nota-esclarecimento-2006
   quote: Claudia Kallis
+- source: dard2-clero-na
+  quote: Revda. Cláudia Kallis (Missão Anglican Fellowiship)
+- source: darl3-n4250
+  quote: >-
+    onde se encontrou com a nossa Revda. Cláudia Kallis e com clérigos da Associação das Igrejas Anglicanas do Norte
+    da Flórida
+- source: darb2-informe-anglican-fellowship
+  quote: A comunidade é pastoreada pela Revda. Cláudia Kallis
+- source: darb2-informe-anglican-fellowship
+  quote: que é uma das comunidades associadas à nossa Diocese, estando sob nossa Supervisão Episcopal
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: other
@@ -15,3 +28,43 @@ affiliations:
     quote: Claudia Kallis
   notes: >-
     Consta em 09/11/2006 entre os clérigos residentes no exterior com domicílio canônico na Diocese do Recife.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: dard2-clero-na
+    quote: Revda. Cláudia Kallis (Missão Anglican Fellowiship)
+  notes: >-
+    Local: Arcediagado Norte-Americano (Missão Anglican Fellowship). Lista "Ministros(as) do Arcediagado Especial
+    da América do Norte", publicada em 13/08/2009 (captura de 18/02/2010); o vínculo vale para esse período.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítera
+  status: confirmed
+  sources:
+  - source: darl3-n4250
+    quote: >-
+      onde se encontrou com a nossa Revda. Cláudia Kallis e com clérigos da Associação das Igrejas Anglicanas do
+      Norte da Flórida
+  notes: >-
+    Local: Arcediagado Norte-Americano (Flórida). Citada em 03/10/2007 como "nossa Revda." (clériga da DAR) na Flórida
+    (Gainesville).
+events:
+- type: other
+  date: '2005-03-16'
+  description: >-
+    Visita de Dom Robinson Cavalcanti à Missão "Anglican Fellowship" (High Springs, Flórida), comunidade de cerca
+    de 45 membros associada à Diocese do Recife e sob sua supervisão episcopal por mediação do Conselho Anglicano
+    Americano e da Rede de Dioceses e Paróquias Anglicanas; a comunidade é pastoreada pela Revda. Cláudia Kallis
+    e pretendia estar presente ao Concílio Diocesano de dezembro.
+  status: probable
+  sources:
+  - source: darb2-informe-anglican-fellowship
+    quote: A comunidade é pastoreada pela Revda. Cláudia Kallis
+  - source: darb2-informe-anglican-fellowship
+    quote: que é uma das comunidades associadas à nossa Diocese, estando sob nossa Supervisão Episcopal
+  - source: darb2-informe-anglican-fellowship
+    quote: >-
+      Eles receberam o apoio tanto do Conselho Anglicano Americano, quanto da Rede de Dioceses e Paróquias Anglicanas,
+      instituições que mediaram a nossa vinculação

@@ -12,12 +12,16 @@ death:
   - source: wikidata-api-2
     quote: '"Q336868": enwiki "John Potter (bishop)"'
 wikidata: Q336868
-biography: Bispo de Oxford (1715) e arcebispo de Cantuária (1737-1747); sagrante principal de Thomas Herring.
+biography: >-
+  Sagrado em 15/05/1715 por Jonathan Trelawny, foi bispo de Oxford até 1737 e arcebispo de Cantuária de 1737 até
+  morrer, em 10/10/1747.
 sources:
 - source: stubbs-1897
+  quote: >-
+    a. d. 1715, May 15. John Potter. Oxford; Canterbury, 1737; d. 1747, Oct. 10. Consecrated at Lambeth by Jonathan
+    of Winchester, John of Bangor, William of Lincoln, and Richard of Gloucester ; Reg. Tenison, ii. 176.
+- source: stubbs-1897
   quote: John Potter. Oxford; Canterbury, 1737; d. 1747, Oct. 10.
-- source: wikidata-api-2
-  quote: '"Q336868": enwiki "John Potter (bishop)"'
 ordinations:
 - order: episcopate
   date: '1715-05-15'

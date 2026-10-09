@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-da-virginia
+name: Diocese da Virgínia
+type: diocese
+tradition: anglican
+country: US
+description: >-
+  Diocese da Igreja Episcopal dos EUA que teve como bispos William Meade (1841-1862) e William Cabell Brown (1919-1927).
+sources:
+- source: perd10-wp-meade
+  quote: When Bishop Moore died later that year, Meade succeeded him as Bishop of Virginia
+- source: perd10-wp-meade
+  quote: '| term = 1841–1862'
+- source: wp-en-brown
+  quote: Bishop Brown ultimately succeeded Bishop Gibson
+- source: wp-en-brown
+  quote: '| term             = 1919–1927'
+relations:
+- type: part_of
+  target: tec
+  status: probable
+  sources:
+  - source: perd10-wp-meade
+    quote: >-
+      In 1829, after Wilmer's unexpected death and as Bishop Moore approached retirement, Meade became assistant
+      Bishop of the [[Episcopal Diocese of Virginia]].
+  - source: perd10-wp-meade
+    quote: '| previous_post = Assistant Bishop of Virginia <small>''''(1829–1841)''''</small>'
+  - source: perd10-wp-meade
+    quote: When Bishop Moore died later that year, Meade succeeded him as Bishop of Virginia
+  - source: perd10-wp-meade
+    quote: '| term = 1841–1862'
+  - source: wp-en-brown
+    quote: >-
+      In 1914 Virginia's Episcopalians recalled Brown to serve as assistant bishop to Bishop Whittle's successor,
+      Bishop [[Robert Atkinson Gibson]]
+  - source: wp-en-brown
+    quote: '| previous_post    = Assistant Bishop of Virginia <small>''''(1914–1919)''''</small>'
+  - source: wp-en-brown
+    quote: Bishop Brown ultimately succeeded Bishop Gibson
+  - source: wp-en-brown
+    quote: '| term             = 1919–1927'

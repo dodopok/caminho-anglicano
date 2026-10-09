@@ -1,12 +1,34 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcia-maria-da-silva-coelho
 name: Márcia Maria da Silva Coelho
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Márcia Maria da Silva Coelho foi ordenada diácona em 05/07/2008 e presbítera em 07/03/2009 por Robinson Cavalcanti,
+  na Diocese Anglicana do Recife (DAR). Atuou como ministra encarregada do Ponto Missionário Anglicano Sarça Ardente,
+  em Abreu e Lima (PE), no Arcediagado Norte, e como secretária diocesana de Intercessão, além de integrar a comissão
+  de novas paróquias e missões.
 sources:
 - source: drv-ordenacoes-diaconais-2008
   quote: >-
     apresentamos Josean, Lúcia Helena, Márcia, Márcio e Maria de Fátima para serem Ordenados ao Diaconato na Santa
     Igreja de Cristo.
+- source: drv-ordenacoes-diaconais-2008
+  quote: Recife (PE), 05 de julho de 2008
+- source: drp2-boletim-presb-marcia-2009
+  quote: >-
+    Rito de Ordenação Presbiteral Revda. Marcia Maria da Silva Coelho Olinda (PE), 07 de março de 2009 Celebrante
+    Revmo. Bispo Dom Edward Robinson de Barros Cavalcanti Paróquia Anglicana Emanuel
+- source: drp2-boletim-presb-marcia-2009
+  quote: 'Ordinante e Pregador: Revmo. Dom Robinson Cavalcanti'
+- source: drp2-boletim-presb-marcia-2009
+  quote: 'Ministra Encarregada: Revda. Marcia Coelho'
+- source: darl1-3330
+  quote: >-
+    Revda. Márcia Maria da Silva Coelho é Presbítera na Diocese do Recife; Secretária Diocesana de Intercessão;
+    Ministra Encarregada do Ponto Missionário Anglicano Sarça Ardente, em Abreu e Lima-PE, no Arcediagado Norte.
+- source: darn2-secretarios-2012
+  quote: 'Secretaria Diocesana Anglicana de Intercessão: Revda. Márcia Maria da Silva Coelho'
+- source: dard1-comissoes-2009a
+  quote: Revda. Márcia Maria da Silva Coelho
 ordinations:
 - order: diaconate
   date: '2008-07-05'
@@ -53,5 +75,95 @@ affiliations:
     quote: Ponto Missionário Anglicano Sarça Ardente Rua Amazonas, s/n – Bairro Fosfato Abreu e Lima-PE
   - source: drp2-boletim-presb-marcia-2009
     quote: 'Ministra Encarregada: Revda. Marcia Coelho'
+  - source: darl1-3330
+    quote: >-
+      Revda. Márcia Maria da Silva Coelho é Presbítera na Diocese do Recife; Secretária Diocesana de Intercessão;
+      Ministra Encarregada do Ponto Missionário Anglicano Sarça Ardente, em Abreu e Lima-PE, no Arcediagado Norte.
+  - source: darl1-5169
+    quote: >-
+      Revda. Márcia Maria da Silva Coelho é Presbítera na Diocese do Recife; Secretária Diocesana de Intercessão;
+      Ministra Encarregada do Ponto Missionário Anglicano Sarça Ardente , em Abreu e Lima (PE), no Arcediagado Norte.
+  - source: dard2-com-norte
+    quote: 'Ponto Missionário Anglicano Sarça Ardente Ministro Encarregado: Revda. Márcia Coelho'
   notes: >-
-    Local: Ponto Missionário Anglicano Sarça Ardente, Abreu e Lima-PE. Ministra encarregada em março de 2009.
+    Local: Ponto Missionário Anglicano Sarça Ardente, Abreu e Lima-PE. Ministra encarregada em março de 2009. Local:
+    Ponto Missionário Anglicano Sarça Ardente, Abreu e Lima-PE. Nessa função de 2010-02-18 a 2012-06-01. Local:
+    Ponto Missionário Anglicano Sarça Ardente (Abreu e Lima-PE; Arcediagado Norte). Página "Comunidades" do arcediagado,
+    criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretária diocesana de intercessão
+  status: confirmed
+  sources:
+  - source: darl1-3330
+    quote: >-
+      Revda. Márcia Maria da Silva Coelho é Presbítera na Diocese do Recife; Secretária Diocesana de Intercessão;
+      Ministra Encarregada do Ponto Missionário Anglicano Sarça Ardente, em Abreu e Lima-PE, no Arcediagado Norte.
+  - source: darl1-5169
+    quote: >-
+      Revda. Márcia Maria da Silva Coelho é Presbítera na Diocese do Recife; Secretária Diocesana de Intercessão;
+      Ministra Encarregada do Ponto Missionário Anglicano Sarça Ardente , em Abreu e Lima (PE), no Arcediagado Norte.
+  notes: Nessa função de 2010-02-18 a 2012-06-01 (últimas datas verificadas).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro encarregado
+  status: probable
+  sources:
+  - source: darn2-bispo-eleito-regiao1-2011
+    quote: Ponto Missionário Anglicano Sarça Ardente (Revda. Márcia Coelho ), em Abreu e Lima (PE)
+  notes: >-
+    Local: Ponto Missionário Anglicano Sarça Ardente, Abreu e Lima-PE. Indicada entre parênteses como a responsável
+    pelo ponto missionário em 23/10/2011; a nota não diz o título.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário diocesano de Intercessão
+  status: confirmed
+  sources:
+  - source: darn2-secretarios-2012
+    quote: 'Secretaria Diocesana Anglicana de Intercessão: Revda. Márcia Maria da Silva Coelho'
+  - source: darn2-intercessao-2012
+    quote: 'Encontro Diocesano de Intercessão (Secretária: Revda. Márcia Coelho )'
+  notes: >-
+    Secretária diocesana de Intercessão em fevereiro e abril de 2012 (e em 2010, quando assinou como "Secretária
+    Diocesana de Intercessão").
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário diocesano de intercessão
+  status: confirmed
+  sources:
+  - source: dard2-clero-presb2
+    quote: Revda. Márcia Maria da Silva Coelho … Secretaria Diocesana de Intercessão
+  notes: >-
+    Responsável pela Secretaria Diocesana de Intercessão na lista de presbíteros de 31/08/2009 (atualizada até 14/01/2010);
+    início não informado. Em janeiro de 2009 a secretaria constava com Jeane Coelho.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: dard2-clero-presb2
+    quote: Revda. Márcia Maria da Silva Coelho
+  notes: >-
+    Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
+    de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: comissao_de_novas_paroquias_e_missoes
+  status: confirmed
+  sources:
+  - source: dard1-comissoes-2009a
+    quote: Revda. Márcia Maria da Silva Coelho
+  - source: dard1-comissoes-2010
+    quote: Revda. Márcia Maria da Silva Coelho
+  notes: "Local: Comissão de Novas Paróquias e Missões. Consta nas listas de cargos designados pelo bispo sob homologação\
+    \ do Concílio, na versão de jan/2009 e na de 01/07/2009. "
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_encarregado
+  status: confirmed
+  sources:
+  - source: dard1-com-norte-2009a
+    quote: 'Ministro Encarregado: Revda. Márcia Coelho'
+  notes: >-
+    Local: Ponto Missionário Anglicano Sarça Ardente (Abreu e Lima-PE). Consta na página de comunidades do Arcediagado
+    Norte capturada em 03/01/2009 (sem data de publicação visível).

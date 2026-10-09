@@ -5,13 +5,26 @@ name: Igreja da Província do Oceano Índico (Church of the Province of the Indi
 type: province
 tradition: anglican
 country: MG
-description: Província da Comunhão Anglicana.
+description: >-
+  Província anglicana do Oceano Índico, cujo primaz aposentado, James Wong, integra o Conselho dos Primazes do GAFCON;
+  a província assinou o comunicado do GSFA de janeiro de 2026, que afirma permanecer na Comunhão Anglicana.
 sources:
 - source: gacm-tlc-2026-03-27-who-leads
   quote: >-
     They are archbishops Samy Shehata of Alexandria, Titre Ande of Congo, Jackson Ole Sapit of Kenya, Justin Badi
     Arama of South Sudan, and Ezekiel Kondo of Sudan, as well as Archbishop James Wong, the retired primate of the
     Indian Ocean.
+- source: gacl-ai-2023-uxbridge
+  quote: The Most Reverend James Wong – Indian Ocean
+- source: gace-tlc-gsfa-2026-01
+  quote: >-
+    The meeting’s communiqué , released January 21, was signed by nine primates, representing the Anglican Communion’s
+    provinces of Alexandria, Congo, the Indian Ocean, Myanmar, South East Asia, South Sudan, Sudan, and Uganda,
+    as well as the Anglican Church of Brazil.
+- source: gacm-ai-2026-01-20-gsfa-mahe
+  quote: >-
+    GSFA is staying within the Anglican Communion, but more importantly, we are staying with Jesus to bear witness
+    that we must choose life rather than death and light rather than darkness.
 relations:
 - type: member_of
   target: anglican-communion

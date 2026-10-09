@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: william-murdoch
+name: William Murdoch
+aliases:
+- Bill Murdoch
+- Bill Murdock
+- William Murdock
+biography: >-
+  Sagrado em agosto de 2007 pela Província do Quênia como bispo sufragâneo missionário para os Estados Unidos, com
+  Bill Attwood; em junho de 2010 foi empossado primeiro bispo da Diocese Anglicana da Nova Inglaterra (ACNA), em
+  Amesbury (Massachusetts).
+sources:
+- source: darl3-n4211
+  quote: >-
+    Província de Quênia Sagrou os Reverendos: Bill Attwood e Bill Murdock Bispos Sufragâneos Missionários para os
+    Estados Unidos
+- source: darl3-n4219
+  quote: >-
+    Agora fui ao Quênia e Uganda participar da Sagração episcopal de alguns amigos e companheiros de luta, como
+    bispos missionários a congregações Anglicanas de linha ortodoxa nos Estados Unidos: Bill Attwood, Bill Murdoch
+    e John Guernesey
+- source: darn1-novainglaterra
+  quote: >-
+    Tratava-se da inauguração da Diocese Anglicana da Nova Inglaterra , em Amesbury, Massachussets, e a instalação
+    e posse do seu primeiro Bispo, o Revmo. William (Bill) Leo Murdoch, tendo como pregador o Revmo. John Guernsey
+ordinations:
+- order: episcopate
+  date: 2007-08
+  jurisdiction: anglican-church-of-kenya
+  office: missionary
+  co_consecrators:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: darl3-n4211
+    quote: >-
+      Província de Quênia Sagrou os Reverendos: Bill Attwood e Bill Murdock Bispos Sufragâneos Missionários para
+      os Estados Unidos
+  - source: darl3-n4219
+    quote: >-
+      Agora fui ao Quênia e Uganda participar da Sagração episcopal de alguns amigos e companheiros de luta, como
+      bispos missionários a congregações Anglicanas de linha ortodoxa nos Estados Unidos: Bill Attwood, Bill Murdoch
+      e John Guernesey
+  notes: >-
+    Sagrado bispo sufragâneo missionário da Província do Quênia para os Estados Unidos, na mesma cerimônia que Bill
+    Attwood; Robinson Cavalcanti foi um dos co-sagrantes. A notícia não dá o dia nem o sagrante principal.
+events:
+- type: other
+  date: 2010-06
+  description: >-
+    Em Amesbury (Massachusetts) é inaugurada a Diocese Anglicana da Nova Inglaterra (ACNA) e empossado seu primeiro
+    bispo, William (Bill) Murdoch, com pregação de John Guernsey; no mesmo dia o Colégio dos Bispos da ACNA cria
+    duas novas dioceses (Great Lakes e South). Durante a reunião do Colégio, Robinson Cavalcanti tem almoço de trabalho
+    com o arcebispo primaz Robert Duncan.
+  status: probable
+  sources:
+  - source: darn1-novainglaterra
+    quote: >-
+      Tratava-se da inauguração da Diocese Anglicana da Nova Inglaterra , em Amesbury, Massachussets, e a instalação
+      e posse do seu primeiro Bispo, o Revmo. William (Bill) Leo Murdoch, tendo como pregador o Revmo. John Guernsey
+  - source: darn1-novainglaterra
+    quote: >-
+      Durante o dia havia se reunido o Colégio dos Bispos da ACNA que criou duas novas Dioceses: Great lakes – Bispo
+      Robert Aemes e South – Bispo Folley Beach
+  - source: darn1-novainglaterra
+    quote: teve, a convite, um almoço privado de trabalho com o Arcebispo Primaz Robert Duncan

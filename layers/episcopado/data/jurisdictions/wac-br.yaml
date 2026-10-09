@@ -22,17 +22,73 @@ founded:
     page: '128'
 website: https://www.wacbrasil.org/
 description: >-
-  Província brasileira da WAC, com sede (cúria provincial) em Serra (ES). Registrada na Receita Federal como "Igreja
-  Anglicana Mundial WAC do Brasil" (organização religiosa), com início de atividade em 27/11/2020 e Paulo Sérgio
-  Ferreira como presidente. O site lista missões em ES, MG, SP, CE, SC, PR e as dioceses de São Paulo (duas), Pará
-  e Pernambuco; a primeira paróquia (Missão São José, Serra) foi criada em 19/03/2019.
+  A Igreja Anglicana Mundial no Brasil, província brasileira da WAC, foi estabelecida em 27 de novembro de 2020
+  pelo reverendo Paulo Sérgio Ferreira, que a preside como arcebispo primaz; a primeira paróquia, da qual ele é
+  pároco, foi criada em 19 de março de 2019. Sua cúria provincial fica em Serra (ES), e a província é descrita como
+  formada por seis regiões missionárias e uma diocese, com missões como a de Ouro Preto (MG), a de Biguaçu (SC)
+  e a de Piraquara (PR). Em 21 de novembro de 2023 foi vinculada a ela a Diocese do Pará (bispo diocesano Antônio
+  Jesualdo Bezerra de Moura). Em julho de 2024 foi incardinado o bispo Claudinei Rodrigo Ferreira, da Diocese de
+  Santa Catarina, que iniciou seus trabalhos em 2017, ligada à Igreja Anglicana Continuante, e que ele assumiu em
+  2019. Inclui também a Diocese de Pernambuco, com Josinaldo Bezerra de Lima em Belo Jardim, e duas dioceses em
+  São Paulo, São Francisco dos Pequenos e São Tiago Maior.
 sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja Anglicana Mundial chegou ao Brasil através do reverendo Paulo Sérgio Ferreira, sendo estabelecida em
+    27 de novembro de 2020.
+  page: '128'
+- source: lwac-cnpj
+  quote: '"nome_socio":"PAULO SERGIO FERREIRA"'
+- source: lwac-cnpj
+  quote: '"qualificacao_socio":"Presidente"'
 - source: lwac-cnpj
   quote: '"razao_social":"IGREJA ANGLICANA MUNDIAL WAC DO BRASIL"'
-- source: lwac-cnpj
-  quote: '"data_inicio_atividade":"2020-11-27"'
 - source: lwac-wacbr-sjose
   quote: Criada em 19 de março de 2019, é a Primeira Paróquia da Igreja Anglicana Mundial WAC no Brasil.
+- source: lwac-wacbr-sjose
+  quote: 'Pároco: Reverendo Dom Paulo Sérgio Ferreira'
+- source: lwac-wac-hob
+  quote: The Most Rev. Don Paul Sergio Ferreir Archbishop Primate Ecclesiastical Province of Brazil
+- source: lwac-wacbr-clerigos
+  quote: >-
+    Dom Paulo Sérgio Ferreira Arcebispo Primaz da Igreja Anglicana Mundial WAC. Província Eclesiástica do Brasil.
+- source: lwac-wacbr-sjose
+  quote: Cúria Provincial no Brasil - Rua Presidente Medice, 264 - Vila Nova de Colares 29.172-831 Serra – ES
+- source: lwac-wacbr-provincia
+  quote: >-
+    É formada por uma província e seis regiões missionarias e uma Diocese. Sua sede provincial no Estado do Espírito
+    Santo, Serra -
+- source: lwac-wacbr-provincia
+  quote: Minas Gerais, Ouro Preto - Missão Santíssima Trindade
+- source: lwac-wacbr-provincia
+  quote: Santa Catarina, Biguaçu - Missão Verbo Encarnado
+- source: lwac-wacbr-provincia
+  quote: Paraná, Piraquara - Missão Casa de Nazaré, Nossa Senhora de Walsingham
+- source: lwac-wacbr-para
+  quote: Foi vinculada a Igreja Anglicana Mundial WAC no Brasil em 21 de Novembro de 2023.
+- source: cant-novas-igrejas-2024
+  quote: Dom Antônio Jesualdo Bezerra de Moura, bispo diocesano do Pará
+  page: '129'
+- source: lwac-wacbr-sinodo
+  quote: >-
+    Como nosso Sínodo foi marcado de bênçãos, do início ao fim, recebemos mais um membro em nosso clero, o Bispo
+    Dom CLAUDINEI RODRIGO FERREIRA, que servirá ao episcopado na cidade de Florianópolis.
+- source: lwac-dasc
+  quote: No ano de 2024, Dom Ferreira, solicitou a incardinação na Igreja Anglicana Mundial - WAC Brasil
+- source: lwac-dasc
+  quote: >-
+    A Diocese Anglicana Mundial de Santa Catarina, iniciou seus trabalhos no ano de 2017, época em que era ligada
+    a Igreja Anglicana Continuante, foi designado como bispo eleito Monsenhor Dom Claudinei Rodrigo Ferreira, que
+    assumiu o episcopado no ano de 2019.
+- source: lwac-wacbr-clerigos
+  quote: Dom Josinaldo Bezerra Bispo da Cidade:Belo Jardim - PE
+- source: cant-novas-igrejas-2024
+  quote: Dom Josinaldo Bezerra, bispo da cidade de Belo Jardim (PE)
+  page: '129'
+- source: lwac-wacbr-provincia
+  quote: São Paulo, Capital - Diocese São Francisco dos Pequenos
+- source: lwac-wacbr-provincia
+  quote: São Paulo - Diocese São Tiago Maior
 relations:
 - type: part_of
   target: wac

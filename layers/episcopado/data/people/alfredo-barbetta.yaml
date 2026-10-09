@@ -1,6 +1,21 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: alfredo-barbetta
 name: Alfredo Barbetta
+biography: >-
+  Alfredo Barbetta, diácono e coordenador da Missão Episcopal Anglicana Amor Fraterno, em São Luís (MA), vinculado
+  à IEAB-DAR desde fevereiro de 2020, foi ordenado presbítero em 28/11/2020 pelo bispo João Câncio Peixoto Filho.
+sources:
+- source: dar-2020-barbetta
+  quote: >-
+    No último sábado, 28/11, o Bispo João Câncio Peixoto, esteve na cidade de São Luís/MA, para receber novos membros
+    na Igreja Anglicana e também para ordenar ao Presbiterado o diácono Revdo. Alfredo Barbetta, na Missão Anglicana
+    do Amor Fraterno.
+- source: dar-2020-barbetta-conv
+  quote: No próximo dia 28 de novembro, na Missão Anglicana do Amor Fraterno, em São Luís/MA
+- source: dar-2020-barbetta-diac
+  quote: >-
+    receberá Alfredo Barbetta, Diácono da Igreja Episcopal Anglicana. Ele é coordenador da Missão Episcopal Anglicana
+    Amor Fraterno, em São Luís.
 ordinations:
 - order: presbyterate
   date: '2020-11-28'

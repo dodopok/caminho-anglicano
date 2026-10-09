@@ -2,6 +2,11 @@
 id: diocese-of-new-jersey
 name: Diocese of New Jersey
 type: diocese
+description: Diocese da TEC que tem John Scarborough como bispo desde 1875.
+sources:
+- source: wp-en-histlist
+  quote: >-
+    | [[John Scarborough]] | [[Horatio Potter|62]] [[William Bacon Stevens|71]] [[John Barrett Kerfoot|78]] | 1875
 relations:
 - type: part_of
   target: tec

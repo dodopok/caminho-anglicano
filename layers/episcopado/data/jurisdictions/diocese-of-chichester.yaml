@@ -2,6 +2,16 @@
 id: diocese-of-chichester
 name: Diocese of Chichester
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra que teve como bispos John Scory (desde 1552, depois Hereford), William Barlow
+  (1559-1569) e Brian Duppa (1638-1641, depois Salisbury e Winchester).
+sources:
+- source: stubbs-1897
+  quote: John Scory. Rochester; Chichester, 1552; Hereford, 1559 ; d. 1585, June 26.
+- source: stubbs-1897
+  quote: William Barlow. S. David's; Bath, 1 549-1554 ; Chichester, 1559 ; d. 1569, Dec. 10.
+- source: stubbs-1897
+  quote: Brian Duppa. Chichester; Sarum, 1641 ; Winchester, 1660 ; d. 1662, March 26.
 relations:
 - type: part_of
   target: church-of-england

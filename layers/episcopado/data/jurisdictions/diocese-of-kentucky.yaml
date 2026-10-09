@@ -2,6 +2,19 @@
 id: diocese-of-kentucky
 name: Diocese of Kentucky
 type: diocese
+description: >-
+  Diocese da Igreja Episcopal dos EUA cujo primeiro bispo, Benjamin Bosworth Smith, foi consagrado em 31 de outubro
+  de 1832, na Capela de St. Paul, em Nova York. Thomas Underwood Dudley, bispo desde 1875, tornou-se diocesano em
+  1884, com a morte de Smith.
+sources:
+- source: perry-1895
+  quote: was consecrated bishop of the diocese in St. Paul's Chapel, New York, Oct. 31, 1832
+- source: perd04-wp-bbsmith
+  quote: >-
+    The Life and Ministry of Benjamin Bosworth Smith, First Bishop of Kentucky: A Memorial Discourse delivered before
+    the Fifty-sixth Annual Council of the Diocese of Kentucky
+- source: perry-1895
+  quote: In 1884, on the death of Bishop B. B. Smith, he became the diocesan of Kentucky.
 relations:
 - type: part_of
   target: tec
@@ -11,3 +24,11 @@ relations:
     quote: was consecrated bishop of the diocese in St. Paul's Chapel, New York, Oct. 31, 1832
   - source: perry-1895
     quote: In 1884, on the death of Bishop B. B. Smith, he became the diocesan of Kentucky.
+  - source: perd04-wp-bbsmith
+    quote: >-
+      His last rectorship, in Lexington, Kentucky, he held until 1837, though in 1832 he had become Bishop of the
+      diocese.
+  - source: perd04-wp-bbsmith
+    quote: >-
+      The Life and Ministry of Benjamin Bosworth Smith, First Bishop of Kentucky: A Memorial Discourse delivered
+      before the Fifty-sixth Annual Council of the Diocese of Kentucky

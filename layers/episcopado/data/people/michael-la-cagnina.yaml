@@ -1,13 +1,30 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: michael-la-cagnina
 name: Michael La Cagnina
-biography: Candidato ordenado diácono em 08/12/2006 (Conde-PB), segundo convite.
+aliases:
+- Michael LaCagnina
+biography: >-
+  Ordenado diácono em 8 de dezembro de 2006, em Conde (PB), a primeira ordenação diaconal para o Arcediagado Norte-Americano,
+  e presbítero em 21 de julho de 2007, ambas por Robinson Cavalcanti, na Diocese Anglicana do Recife. Foi ministro
+  encarregado da Missão Anglicana do Cristo, em High Springs (Flórida).
 sources:
 - source: dar-2006-convite-diaconal
   quote: >-
     convida V.Sa. para o Culto Solene de Ordenação Diaconal dos Candidatos : José Roseno da Silva Irmão Keyla Maria
     Pereira Camargo Maria do Carmo Farias Brito Michael La Cagnina Local: Chácara Porta da Fonte  Município de Conde-PB
     Data: 08 de dezembro de 2006
+- source: drp2-ord-diac-xxvi-concilio-2006
+  quote: >-
+    às Ordenações Diaconais de: Roseno, Keyla, Maria do Carmo e Michael. E um momento histórico, quando estamos
+    procedendo à Ordenação Diaconal de Michael, a primeira para o nosso Arcediagado Norte-americano.
+- source: drp2-breves-16-2007
+  quote: >-
+    tivemos no último sábado, dia 21 de julho, a Ordenação ao Presbiterado dos Reverendos: Michael L. La Cagnina,
+    Ministro Encarregado da Missão Anglicana do Cristo, em High Springs, Fla, e Henry M. Morris, auxiliar na Paróquia
+    St. Charles, em Poulsbo, Estado de Washington. Tendo como Ordenante o Bispo da Diocese do Recife, Dom Robinson
+    Cavalcanti
+- source: drp2-breves-16-2007
+  quote: Michael L. La Cagnina, Ministro Encarregado da Missão Anglicana do Cristo, em High Springs, Fla
 ordinations:
 - order: diaconate
   date: '2006-12-08'
@@ -57,8 +74,22 @@ ordinations:
     quote: >-
       Dia 15 a 23.07 – Viagem aos Estados Unidos – celebração da Ordenação Presbiteral dos Reverendos: Michael La
       Cagnina e Henry Morris + visita a algumas comunidades do Arcediagado Especial nos Estados Unidos
+  - source: darb2-breves-16
+    quote: >-
+      tivemos no último sábado, dia 21 de julho, a Ordenação ao Presbiterado dos Reverendos: Michael L. La Cagnina,
+      Ministro Encarregado da Missão Anglicana do Cristo, em High Springs, Fla, e Henry M. Morris
+  - source: darb2-breves-16
+    quote: >-
+      Tendo como Ordenante o Bispo da Diocese do Recife, Dom Robinson Cavalcanti, e como pregador o Rev. Christopher
+      Leighton
+  - source: darb2-breves-12
+    quote: 'celebração da Ordenação Presbiteral dos Reverendos: Michael La Cagnina e Henry Morris'
   notes: >-
     Ordinal clássico anglicano; pregador Rev. Christopher Leighton; presente o arcediago para os EUA, Duncan Clark.
+    Cerimônia com liturgia do Ordinal clássico do anglicanismo, na sede da Igreja Vineyard; pregador: Rev. Christopher
+    Leighton (St. Paul, Darien, Connecticut). Estiveram presentes o arcediago Duncan Clark, o presidente do Conselho
+    Diocesano, Rev. Maurício Coelho, e o representante da rede da Comunhão Anglicana, Rev. James McCaslin. O ano
+    de 2007 vem da agenda de Breves Episcopais 12 (viagem de 15 a 23/07).
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: other
@@ -69,6 +100,17 @@ affiliations:
     quote: Michael L. La Cagnina, Ministro Encarregado da Missão Anglicana do Cristo, em High Springs, Fla
   notes: >-
     Local: Arcediagado Norte-Americano — Missão Anglicana do Cristo, High Springs, Flórida. Em julho de 2007.
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  status: confirmed
+  sources:
+  - source: darl3-n4250
+    quote: >-
+      ministrou ao Cursilho Masculino (Movimento Quarto Dia), onde o nosso Rev. Michael LaCagnina era um dos diretores
+      espirituais
+  notes: >-
+    Local: Missão do Cristo (High Springs, Flórida). Citado em 03/10/2007 como "nosso Rev." (clérigo da DAR) na
+    Flórida; Dom Robinson celebrou e pregou na "nossa Missão do Cristo, em High Springs".
 events:
 - type: other
   date: '2006-12-08'

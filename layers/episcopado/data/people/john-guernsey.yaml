@@ -1,3 +1,31 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: john-guernsey
 name: John Guernsey
+ordinations:
+- order: episcopate
+  date: 2007-09
+  place: Catedral de St. James, Ruharo, Mbarara (Uganda)
+  jurisdiction: cou
+  office: missionary
+  principal_consecrator: henry-orombi
+  co_consecrators:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: darl3-n4213
+    quote: >-
+      A Igreja Anglicana de Uganda sagrou um ministro norte-americano como Bispo para liderar algumas congregações
+      daquele país que se opõem ao homossexualismo
+  - source: darl3-n4213
+    quote: O Arcebispo Henri Orombi presidiu a cerimônia na Catedral de St. James, Ruharo, em Mbarara
+  - source: darl3-n4213
+    quote: O novo Bispo, Rev. John Guernsey é Reitor da Paróquia de All Saints, na Virgínia, EUA
+  - source: darl3-n4219
+    quote: >-
+      Agora fui ao Quênia e Uganda participar da Sagração episcopal de alguns amigos e companheiros de luta, como
+      bispos missionários a congregações Anglicanas de linha ortodoxa nos Estados Unidos: Bill Attwood, Bill Murdoch
+      e John Guernesey
+  notes: >-
+    Sagrado pela Igreja Anglicana de Uganda para liderar comunidades norte-americanas (33 congregações); a notícia
+    reproduz o Daily Monitor de 03/09/2007, sem dar o dia. Entre os sessenta bispos co-sagrantes estava Dom Robinson
+    Cavalcanti; assistiram 4 primazes (Cone Sul: Gregory Venables; Quênia: Benjamin Nzimbi; Ruanda: Emmanuel Kolini).

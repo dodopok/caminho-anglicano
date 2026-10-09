@@ -16,13 +16,20 @@ death:
   - source: rta-ecd1962
     quote: APPEL, JESSE KREBS (SBra) born 13 Jan 09—died 29 Jul 60
 biography: >-
-  Clérigo do Distrito Missionário do Brasil Meridional, reitor da Igreja da Trindade em Porto Alegre (1936-); ordenado
-  diácono em nov/1930 e presbítero em ago/1933 pelo bispo Thomas; falecido em 29/07/1960.
+  Jesse Krebs Appel nasceu em 13/1/1909. Foi ordenado diácono em novembro de 1930 e presbítero em agosto de 1933,
+  por William Matthews Merrick Thomas, e foi reitor da Igreja da Trindade, em Porto Alegre, a partir de 1936. Atuou
+  como clérigo do Distrito Missionário do Sul do Brasil até morrer, em 29/7/1960.
 sources:
-- source: rta-ecd1950
-  quote: APPEL, Jesse Krebs (S.Bra.), Caixa 1499, Porto Alegre
 - source: rta-ecd1962
   quote: APPEL, JESSE KREBS (SBra) born 13 Jan 09—died 29 Jul 60
+- source: rta-ecd1950
+  quote: D— Nov., 1930, P—Aug., 1933, Bp. Thomas
+- source: rta-ecd1941
+  quote: R. Trin. Ch., 1936—
+- source: rta-ecd1950
+  quote: R. Trin. Ch., 1936—
+- source: rta-ecd1950
+  quote: APPEL, Jesse Krebs (S.Bra.), Caixa 1499, Porto Alegre
 ordinations:
 - order: diaconate
   date: 1930-11
@@ -53,3 +60,16 @@ affiliations:
   - source: rta-ecd1950
     quote: APPEL, Jesse Krebs (S.Bra.), Caixa 1499, Porto Alegre
   notes: 'Local: Brasil Meridional, Porto Alegre. Verbete de 1950.'
+- jurisdiction: dmsb
+  role: other
+  role_description: reitor da Igreja da Trindade (Porto Alegre)
+  start: '1936'
+  status: confirmed
+  sources:
+  - source: rta-ecd1941
+    quote: R. Trin. Ch., 1936—
+  - source: rta-ecd1950
+    quote: R. Trin. Ch., 1936—
+  notes: >-
+    Reitor ("R.") da Igreja da Trindade, em Porto Alegre, a partir de 1936, segundo os diretórios do clero de 1941
+    e 1950 (verbete: "Caixa 790/1499, Porto Alegre, R.G.S., Brazil").

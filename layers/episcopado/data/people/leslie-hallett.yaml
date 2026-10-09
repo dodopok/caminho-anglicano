@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: leslie-hallett
 name: Leslie Hallett
+biography: >-
+  Leslie Hallett, missionário americano trazido pelo bispo Melcher, iniciou em 1956 o trabalho entre os brasileiros
+  em Belém do Pará, com cultos em casa alugada e uma escola primária.
+sources:
+- source: kickhofel-1995
+  quote: >-
+    Em Belém, o trabalho entre os brasileiros começou em 1956 com o rev. Leslie Hallett, um missionário americano
+    que o bispo Melcher havia trazido para dirigir os primeiros cultos numa casa alugada e fundar uma escola primária.
+  page: '298'
+- source: costa2021
+  quote: >-
+    Já em Belém do Pará, embora o trabalho entre os brasileiros tenha começado em 1956, com o reverendo Leslie Hallett
+  page: '174'
 affiliations:
 - jurisdiction: dmcb
   role: clergy

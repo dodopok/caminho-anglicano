@@ -16,12 +16,42 @@ founded:
       The province was divided into two, with Festo Olang' being the first African archbishop of the new province
       of Kenya in 1970.
 website: https://www.ackenya.org/
-description: Província do Quênia criada em 1970 por divisão da Província da África Oriental (formada em 1960).
+description: >-
+  Província criada em 1970 pela divisão da Província da África Oriental, da qual fazia parte desde 1960, com Festo
+  Olang' como primeiro arcebispo africano, até 1980. Manasses Kuria foi arcebispo de 1980 a 1994, e Benjamin Nzimbi
+  foi o primeiro bispo da Diocese de Machakos (1985–1995), o primeiro da Diocese de Kitui (1995) e arcebispo e primaz
+  de 2002 a 2009. Está representada no Conselho de Primazes do GAFCON.
 sources:
 - source: fund-wp-en-ack
   quote: >-
     The province was divided into two, with Festo Olang' being the first African archbishop of the new province
     of Kenya in 1970.
+- source: fund-wp-en-ack
+  quote: >-
+    The church became part of the Province of East Africa in 1960, but Kenya and Tanzania were divided into separate
+    provinces in 1970.
+- source: perd05-wp-olang
+  quote: Archbishop of Kenya (1970-1980)
+- source: perd05-wp-olang
+  quote: At the time of his retirement, in 1980
+- source: wp-en-kuria
+  quote: '| term             = 1980&ndash;1994'
+- source: wp-nzimbi
+  quote: >-
+    Nzimbi was elected as the first bishop of the new Diocese of Machakos, which he served from 1985 to 1995.
+- source: wp-nzimbi
+  quote: In 1995 he was elected the first bishop of the newly created Diocese of Kitui.
+- source: wp-nzimbi
+  quote: >-
+    Nzimbi was elected the fourth archbishop and primate of Kenya and Bishop of the Diocese of All Saints Cathedral
+    on 16 August 2002 and served from 2002 to 2009.
+- source: gacm-tlc-2025-10-17-analysis
+  quote: >-
+    Three of the nine other churches represented on GAFCON’s Primates’ Council are not recognized by the Anglican
+    Communion Office and have largely been formed under GAFCON’s auspices (the Anglican Church of Brazil, the Reformed
+    Evangelical Anglican Church of South Africa, and the Anglican Church in North America). But such a total severing
+    of connections with Canterbury and the Instruments of Communion would be a new development for the six other
+    provinces represented on the council (Alexandria, Chile, Congo, Kenya, Myanmar, and South Sudan).
 relations:
 - type: member_of
   target: gafcon
@@ -74,3 +104,14 @@ relations:
     por ter afirmado publicamente a Declaração de Jerusalém, mas o primaz não foi a Abuja e não integra o Global
     Anglican Council (que exige desengajamento dos Instrumentos de Cantuária); foi convidado a integrá-lo. Não se
     localizou decisão própria da província aderindo à GAC.
+- type: successor_of
+  target: province-of-east-africa
+  date: '1970'
+  status: probable
+  sources:
+  - source: fund-wp-en-ack
+    quote: >-
+      The church became part of the Province of East Africa in 1960, but Kenya and Tanzania were divided into separate
+      provinces in 1970.
+  notes: >-
+    A Província da África Oriental (Quênia e Tanzânia) foi formada em 1960 e dividida em duas províncias em 1970.

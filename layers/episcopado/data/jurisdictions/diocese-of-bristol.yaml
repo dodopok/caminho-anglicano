@@ -2,6 +2,12 @@
 id: diocese-of-bristol
 name: Diocese of Bristol
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra cujo bispo Jonathan Trelawny (1685-1689) foi depois transferido para Exeter e
+  Winchester.
+sources:
+- source: stubbs-1897
+  quote: Jonathan Trelawney. Bristol ; Exeter, 1689 ; Winchester, 1707; d. 1721, July 19.
 relations:
 - type: part_of
   target: church-of-england

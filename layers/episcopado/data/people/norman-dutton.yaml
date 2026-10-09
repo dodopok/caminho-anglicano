@@ -22,19 +22,61 @@ death:
     quote: >-
       In March 2022 we were saddened to be informed that Emeritus Archbishop Norman Dutton had gone to the Lord.
 biography: >-
-  Fundador e Metropolita da AECI (1.º Metropolitano da AIC-W em 2003); sagrado c. 1999 por Peter A. Compton-Caputo;
-  aposentou-se em 08/04/2012 como Metropolita Emérito; morreu em março de 2022 segundo a AECI.
+  Norman Sydney Dutton foi sagrado bispo por volta de 1999, em St. Paul's, Crownsville, por Peter A. Compton-Caputo,
+  e foi arcebispo metropolita da Anglican Independent Communion Worldwide, tendo formado a primeira diocese dessa
+  comunhão nas Ilhas Britânicas. Foi o fundador da Anglican Episcopal Church International (AECI), formada em maio
+  de 2008, e a liderou até se aposentar, em 08/04/2012, como metropolita emérito. Segundo a AECI, faleceu em março
+  de 2022. Participou de quatro sagrações episcopais, entre elas as de Barry Frank Peachey (2005) e Marcos de Santa
+  Helena (2006).
 sources:
 - source: lia-aeci-succession
   quote: >-
     Norman Sydney Dutton c.1999 Presiding Bishop of the Anglican Independent Communion in the British Isles & Europe
     1.11.03
+- source: lia-iatb-aicw-2010
+  quote: >-
+    The Rt. Rev´d. Dr. Norman S. Dutton, who had been consecrated as Bishop in Anglia (England) at St. Paul´s Crownsville
+    in 1999
 - source: lia-aeci-news
   quote: >-
-    Metropolitan Archbishop Norman Sydney Dutton has retired from Leadership of The Anglican Episcopal Church International.
+    Archbishop Victor Manuel Cruz-Blanco was one of the consecrators of Bishop Peter Compton Caputo who in turn
+    was Consecrator of Norman S Dutton. This maintains an historic link in our Apostolic Succession.
+- source: lia-aeci-about
+  quote: >-
+    Later Bishop Dutton was consecrated Archbishop and was also appointed the Metropolitan Archbishop of the Anglican
+    Independent Communion Worldwide.
+- source: lia-aeci-about
+  quote: >-
+    introduced to the UK by Bishop Norman Dutton, who formed the first Diocese of the AIC in these islands
+- source: lia-aeci-news
+  quote: Norman was the founding father of AECI and was greatly revered within our community.
+- source: lia-aeci-about
+  quote: >-
+    In May 2008 in consultation with other members of the bishops and clergy the Anglican Episcopal Church International
+    was formed.
+- source: lia-aeci-news
+  quote: >-
+    With effect from Easter Day, 8th April, 2012 Metropolitan Archbishop Norman Sydney Dutton has retired from Leadership
+    of The Anglican Episcopal Church International.
 - source: lia-aeci-news
   quote: >-
     In March 2022 we were saddened to be informed that Emeritus Archbishop Norman Dutton had gone to the Lord.
+- source: lia-iatb-bispos-2011
+  quote: >-
+    (260) Barry Frank Peachey, 2005 - Bishop in Anglia, Regionary Bishop for the Midland Counties of England
+- source: lia-iatb-noticias-2012
+  quote: >-
+    O Arcebispo Dutton está na nossa linha de sucessão apostólica, pois sagrou o Bispo Barry Peachey, nosso consagrante.
+- source: lac-cnbp-sucessao
+  quote: >-
+    Barry Frank Peachey – Em 5/06/2005 foi sagrado ao Bispado pelo Bispo Norman Sydney Dutton em High Legh, Condado
+    Cerimonial de Cheshire, Inglaterra.
+- source: lielb-arquiabadia
+  quote: Consecrated as Bishop in 15th January 2006
+- source: lielb-arquiabadia
+  quote: >-
+    The Most Rev’d. Iranildo Macieira da Silva (Dom Lucas) Metropolitan Primate Archbishop of The Latin Episcopal
+    Church of Brazil
 ordinations:
 - order: episcopate
   date: c.1999
@@ -67,6 +109,59 @@ ordinations:
     que Cruz-Blanco foi co-sagrante de Compton-Caputo, o que liga, segundo a própria AECI, a linhagem de Barbosa/IATB
     à de Cruz-Blanco (e, portanto, à de Roque). Fonte única/autodeclarada; a página de sucessão lista a linha anglicana
     independente por Luther-Ingram-St. Peters-Wharton-Compton-Caputo-Dutton, sem citar Cruz-Blanco.
+affiliations:
+- jurisdiction: aeci
+  role: founder
+  start: '2008'
+  end: '2012-04-08'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: lia-aeci-news
+    quote: Norman was the founding father of AECI and was greatly revered within our community.
+  - source: lia-aeci-about
+    quote: >-
+      In May 2008 in consultation with other members of the bishops and clergy the Anglican Episcopal Church International
+      was formed.
+  notes: >-
+    A AECI o chama de 'founding father'; a AECI foi formada em maio de 2008 em consulta com bispos e clero. Aposentou-se
+    da liderança em 08/04/2012 como metropolita emérito (fato presente) e, segundo a AECI, faleceu em março de 2022.
+- jurisdiction: aic-w
+  role: other
+  role_description: arcebispo metropolita
+  status: probable
+  sources:
+  - source: lia-aeci-about
+    quote: >-
+      Later Bishop Dutton was consecrated Archbishop and was also appointed the Metropolitan Archbishop of the Anglican
+      Independent Communion Worldwide.
+  notes: >-
+    Segundo a AECI, Dutton introduziu o ramo no Reino Unido e foi nomeado Arcebispo Metropolita da Anglican Independent
+    Communion Worldwide, cargo que exerceu por vários anos.
+- jurisdiction: aic-w
+  role: other
+  role_description: metropolita
+  status: probable
+  sources:
+  - source: lia-aeci-about
+    quote: >-
+      Later Bishop Dutton was consecrated Archbishop and was also appointed the Metropolitan Archbishop of the Anglican
+      Independent Communion Worldwide.
+  - source: lia-aeci-about
+    quote: Archbishop Dutton remained the Metropolitan Archbishop for a number of years.
+  notes: >-
+    Nomeado arcebispo metropolita da Anglican Independent Communion Worldwide; a página não traz data de início.
+- jurisdiction: aic-w
+  role: founder
+  diocese: diocese-das-ilhas-britanicas
+  status: probable
+  sources:
+  - source: lia-aeci-about
+    quote: >-
+      introduced to the UK by Bishop Norman Dutton, who formed the first Diocese of the AIC in these islands
+  notes: >-
+    Local: AIC. Introduziu a AIC no Reino Unido e formou sua primeira diocese nas Ilhas Britânicas; sem data na
+    página.
 events:
 - type: other
   date: '2012-04-08'

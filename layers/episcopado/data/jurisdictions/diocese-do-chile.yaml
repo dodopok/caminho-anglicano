@@ -2,6 +2,15 @@
 id: diocese-do-chile
 name: Diocese do Chile
 type: diocese
+description: >-
+  Diocese de que Tito Zavala foi bispo diocesano, instalado em 2000; em 2018 foi dividida em quatro dioceses e ele
+  passou a ser bispo de Santiago.
+sources:
+- source: gacl-ai-2016-zavala
+  quote: was installed as diocesan bishop in 2000
+- source: gacl-wp-zavala
+  quote: >-
+    In early 2018 his diocese of Chile was split into four dioceses, whereupon he became the Bishop of Santiago.
 relations:
 - type: part_of
   target: iacs

@@ -1,10 +1,35 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: claudio-luiz-figueiredo-de-brito
 name: Cláudio Luiz Figueiredo de Brito
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Ordenado diácono em 18/06/2005, em João Pessoa, e presbítero em 08/04/2006, por Robinson Cavalcanti, foi clérigo
+  da Diocese do Recife e pároco da Paróquia Anglicana do Salvador (PB) até 12/08/2007, quando houve pedido de licença
+  ministerial. Consta como membro do conselho diocesano em 2009.
 sources:
-- source: drp-boletim-oracao-2006
-  quote: Orar pela Paróquia Anglicana do Salvador (PB); pelo Rev. Cláudio Brito
+- source: drp2-ord-diac-jp-2005
+  quote: >-
+    Sermão de Ordenações Diaconais Cláudio Brito, Flávio Adair Torres, Gustavo Leite Castello Branco, Lindinalva
+    Medeiros e Raimundo Figueiredo Con-Catedral Anglicana da Ressurreição João Pessoa (PB), 18 de Junho de 2005.
+- source: drp2-convite-presb-jp-2006
+  quote: >-
+    convida V.Sa. para o Culto Solene de Ordenação Presbiteral dos Reverendos: Cláudio Luiz Figueiredo de Brito
+    Flávio Adair Torres Soares Lindinalva Medeiros de Oliveira Raimundo Francisco de Figueiredo Local: Con-Catedral
+    Anglicana da Ressurreição
+- source: drp2-ord-presb-2006-04
+  quote: >-
+    Sermão de Ordenação Presbiteral Reverendos: Cláudio Brito, Flávio Adair, Jeane Coelho, Lindinalva Medeiros,
+    Raimundo Figueiredo e Teresa Catão Paróquia Anglicana Emanuel Recife (PE), 07.04.2006 Con-Catedral Anglicana
+    da Ressurreição João Pessoa (PB), 08.04.2006
+- source: drv-nota-esclarecimento-2006
+  quote: Cláudio Luiz Figueiredo de Brito
+- source: darb2-breves-18
+  quote: >-
+    No dia 12.08 , Dom Robinson esteve na Paróquia Anglicana do Salvador, com o Rev. Cláudio Brito, para realizar
+    várias Confirmações no último culto de sua gestão
+- source: darb2-breves-18
+  quote: Diante do pedido de licença ministerial do Rev. Cláudio
+- source: dard1-eletivos-2009a
+  quote: Rev. Cláudio Figueiredo de Brito (2 anos)
 ordinations:
 - order: diaconate
   date: '2005-06-18'
@@ -56,3 +81,43 @@ affiliations:
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados. Local: Paróquia Anglicana do Salvador (PB). Clérigo
     citado como pastor/ministro da comunidade em out/nov de 2006 (boletim de oração da Secretaria de Intercessão).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco
+  end: '2007-08-12'
+  end_reason: left
+  status: probable
+  sources:
+  - source: darb2-breves-18
+    quote: >-
+      No dia 12.08 , Dom Robinson esteve na Paróquia Anglicana do Salvador, com o Rev. Cláudio Brito, para realizar
+      várias Confirmações no último culto de sua gestão
+  - source: darb2-breves-18
+    quote: Diante do pedido de licença ministerial do Rev. Cláudio
+  notes: >-
+    Local: Paróquia Anglicana do Salvador. O último culto da gestão do Rev. Cláudio Brito na paróquia foi em 12/08/2007,
+    em razão de pedido de licença ministerial feito por ele; a peça não diz que o cargo era formalmente "pároco",
+    mas o sucessor é empossado como "novo Pároco".
+- jurisdiction: ieab
+  role: other
+  role_description: ministro_leigo
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Cláudio Luiz Figueiredo de Brito Paróquia Anglicana do Salvador
+  notes: >-
+    Local: Paróquia Anglicana do Salvador. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife
+    (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os ministros leigos
+    / ministros encarregados (ainda não ordenado, segundo a carta).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: conselho_diocesano
+  status: probable
+  sources:
+  - source: dard1-eletivos-2009a
+    quote: Rev. Cláudio Figueiredo de Brito (2 anos)
+  notes: >-
+    Local: Conselho Diocesano (membro clerical, mandato de 2 anos). Consta na lista "Cargos Eletivos (Sugestões
+    ao Plenário)" capturada em jan/2009; são sugestões ao plenário do Concílio, e a página não informa se foram
+    aprovadas nem a data.

@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ofa
+acronym: OFA
+name: Ordem Franciscana Anglicana
+aliases:
+- Ordem dos Franciscanos Anglicanos
+type: religious_order
+country: BR
+description: >-
+  Ordem religiosa anglicana cujos frades e irmãos aparecem nas notas biográficas de clérigos da Diocese do Recife
+  (Carlos Alberto Chaves Fernandes, Keyla Camargo), em 2011-2012.
+sources:
+- source: darl1-5385
+  quote: Frei da Ordem Franciscana Anglicana (OFA).
+- source: darl1-5226
+  quote: >-
+    Ministra Auxiliar da Paróquia Anglicana Jardim das Oliveiras , no Arcediagado Centro, em Recife-PE; Coordenadora
+    do Escritório Diocesano de Capelanias Anglicanas (EDCA); e membro da Ordem Franciscana Anglicana (OFA).
+relations:
+- type: part_of
+  target: diocese-anglicana-recife
+  date: null
+  led_by:
+  - marconi-alves-de-oliveira
+  status: confirmed
+  sources:
+  - source: darn2-franciscanos-2009
+    quote: >-
+      A Ordem dos Franciscanos Anglicanos (OFA), em formação, foi, há quatro anos, autorizada a funcionar, em caráter
+      experimental, pelo Bispo Diocesano
+  notes: >-
+    Autorização experimental concedida pelo bispo diocesano cerca de quatro anos antes de novembro de 2009 (por
+    volta de 2005); em 2009 a ordem tinha um presbítero, um irmão e uma irmã leiga.

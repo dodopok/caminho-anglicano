@@ -2,6 +2,12 @@
 id: prelazia-anglicana-sagrada-face
 name: Prelazia Anglicana Sagrada Face
 type: diocese
+description: Prelazia anglicana ligada à DAC, tendo João de Deus da Silva como bispo prelado e abade.
+sources:
+- source: lielb-dacb-api-clero
+  quote: >-
+    "nome": "João de Deus da Silva", "nome_civil": "João de Deus da Silva", "cargo": "Bispo Prelado / Abade", "prelazia":
+    "Prelazia Anglicana Sagrada Face"
 relations:
 - type: part_of
   target: dac

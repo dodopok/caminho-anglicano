@@ -11,13 +11,70 @@ birth:
   sources:
   - source: wp-harvey
     quote: '''''''Donald Frederick Harvey'''''' (born 13 September 1939) is a Canadian Anglican bishop.'
+  - source: perd04-wp-harvey
+    quote: Donald Frederick Harvey (born 13 September 1939) is a Canadian Anglican bishop.
 wikidata: Q5292755
 biography: >-
-  Bispo de Eastern Newfoundland and Labrador (Igreja Anglicana do Canadá) 1993–2004; em 2007 recebido no Cone Sul
-  sob Venables; moderador da ANiC/ACNA.
+  Donald Frederick Harvey nasceu em St John's, Newfoundland, em 13 de setembro de 1939, estudou na Memorial University
+  of Newfoundland e foi ordenado presbítero na Igreja Anglicana do Canadá em 1964. Foi elevado ao episcopado em
+  1993 como terceiro bispo da Diocese de Eastern Newfoundland and Labrador, com as fontes divergindo quanto ao sagrante
+  principal (Michael Peers ou Stewart Payne), e se aposentou em 2004. Em novembro de 2007 deixou o ministério na
+  Igreja Anglicana do Canadá e transferiu-se para a Igreja Anglicana do Cone Sul; foi bispo moderador da Anglican
+  Network in Canada (2009–2014). Como moderador da Rede da Comunhão Anglicana no Canadá, pregou nos 30 anos da Diocese
+  do Recife (20/05/2006), como representante do primaz Gregory Venables, e no encerramento do XXVIII Concílio da
+  diocese, em dezembro de 2008. Em janeiro de 2010 foi designado deão da ACNA pelo arcebispo Robert Duncan, cargo
+  equivalente a vigário-geral provincial.
 sources:
+- source: perd04-wp-harvey
+  quote: >-
+    Born in St John's, Newfoundland on 13 September 1939, Harvey was educated at the Memorial University of Newfoundland
+    and, following a short period of service as a school teacher, ordained a priest in the Anglican Church of Canada
+    in 1964.
 - source: wp-harvey
-  quote: '''''''Donald Frederick Harvey'''''' (born 13 September 1939) is a Canadian Anglican bishop.'
+  quote: >-
+    He was elevated to the ACC episcopate in 1993 as [[Anglican Diocese of Eastern Newfoundland and Labrador|Bishop
+    of Eastern Newfoundland and Labrador]].
+- source: wp-harvey
+  quote: '| consecrated_by = [[Michael Peers]]'
+- source: nlchurchman-1993-02
+  quote: >-
+    Chief Consecrator was the Metropolitan, Most Rev'd Stewart Payne, Archbishop of Western Newfoundland, who was
+    assisted by Bishops
+- source: nlchurchman-1993-02
+  quote: >-
+    witness the Episcopal Ordination and Enthronement of Dean Harvey as a Bishop of the Church of Christ, and third
+    Bishop of the Diocese of Eastern Newfoundland and Labrador.
+- source: perd04-wp-harvey
+  quote: He retired as a bishop of the Anglican Church of Canada in 2004 after 12 years.
+- source: wp-harvey
+  quote: >-
+    In November 2007, Harvey relinquished his ministry in the Anglican Church of Canada pursuant to Canon XIX
+- source: darl3-idx-p16
+  quote: >-
+    O Bispo aposentado da Diocese de Newfoundland, Revmo. Donald Harvey, se transferiu para a Igreja Anglicana do
+    Cone Sul da América, e reverteu ao ministério ativo
+- source: perd04-wp-harvey
+  quote: >-
+    He was the Moderator Bishop and director of the Anglican Network in Canada, a founding diocese of the Anglican
+    Church in North America, from 2009 to 2014
+- source: drp2-breves-06-2006
+  quote: >-
+    O Sermão será proferido pelo Revmo. Bispo Donald Harvey, Moderador da Rede da Comunhão Anglicana, no Canadá,
+    sendo o representante pessoal do nosso Primaz, Revmo. Bispo Gregório J. Venables
+- source: darl3-hist6
+  quote: >-
+    No dia 20 de maio de 2006, a Diocese do Recife, em Culto de Ação de Graças, tendo como pregador o Revmo. Bispo
+    Donald Harvey , Moderador da Rede Anglicana do Canadá, e representante pessoal e oficial do nosso Primaz Revmo.
+    Gregory J. Venables , comemora os 30 anos de sua Organização Eclesiástica
+- source: darl3-n4612
+  quote: >-
+    Um dos líderes da nova Província, o Bispo canadense Donald Harvey foi o pregador do Culto de Encerramento do
+    XXVIII Concílio do Recife
+- source: darn2-harvey-deao-2010
+  quote: >-
+    foi designado “Deão” da Igreja Anglicana na América do Norte (ACNA) pelo Primaz Arcebispo Robert Duncan
+- source: darn2-harvey-deao-2010
+  quote: O novo cargo equivale a uma espécie de Vigário-Geral Provincial.
 ordinations:
 - order: episcopate
   date: '1993-01-25'
@@ -108,9 +165,18 @@ affiliations:
     quote: >-
       witness the Episcopal Ordination and Enthronement of Dean Harvey as a Bishop of the Church of Christ, and
       third Bishop of the Diocese of Eastern Newfoundland and Labrador.
+  - source: perd04-wp-harvey
+    quote: >-
+      He was previously the Bishop of Eastern Newfoundland and Labrador in the Anglican Church of Canada from 1993
+      to 2004.
+  - source: perd04-wp-harvey
+    quote: He retired as a bishop of the Anglican Church of Canada in 2004 after 12 years.
   notes: >-
     Fim (2004, segundo a Wikipédia) não verificado nesta frente. Sigla 'anglican-church-of-canada' criada aqui (Igreja
-    Anglicana do Canadá); pontes-estrangeiras.json usa 'ACC'.
+    Anglicana do Canadá); pontes-estrangeiras.json usa 'ACC'. Fim do episcopado diocesano em 2004 (Wikipedia). Em
+    novembro de 2007 deixou o ministério na Igreja Anglicana do Canadá.
+  end: '2004'
+  end_reason: retirement
 - jurisdiction: iacs
   role: bishop
   start: 2007-11
@@ -119,9 +185,44 @@ affiliations:
   - source: wp-harvey
     quote: >-
       In November 2007, Harvey relinquished his ministry in the Anglican Church of Canada pursuant to Canon XIX
+  - source: darl3-idx-p16
+    quote: Bispo Donald Harvey se Transfere Para o Cone Sul
+  - source: darl3-idx-p16
+    quote: >-
+      O Bispo aposentado da Diocese de Newfoundland, Revmo. Donald Harvey, se transferiu para a Igreja Anglicana
+      do Cone Sul da América, e reverteu ao ministério ativo
   notes: >-
     and was received into the [[Anglican Church of the Southern Cone of America|Anglican Church of the Southern
-    Cone]] under its primate, [[Gregory Venables]]
+    Cone]] under its primate, [[Gregory Venables]] Bispo aposentado da Diocese de Newfoundland (Igreja Anglicana
+    do Canadá) que se transferiu para o Cone Sul e voltou ao ministério ativo (notícia de 18/11/2007); depois moderador
+    da Rede Anglicana do Canadá.
+- jurisdiction: anic
+  role: bishop
+  start: '2009'
+  end: 2014-06
+  status: probable
+  sources:
+  - source: perd04-wp-harvey
+    quote: >-
+      He was the Moderator Bishop and director of the Anglican Network in Canada, a founding diocese of the Anglican
+      Church in North America, from 2009 to 2014
+  - source: perd04-wp-harvey
+    quote: Harvey retired as bishop/moderator of the Anglican Network in Canada in June 2014
+  notes: Bispo moderador (Moderator Bishop) da Anglican Network in Canada, diocese fundadora da ACNA.
+- jurisdiction: acna
+  role: other
+  role_description: deão da ACNA
+  start: 2010-01
+  status: probable
+  sources:
+  - source: darn2-harvey-deao-2010
+    quote: >-
+      foi designado “Deão” da Igreja Anglicana na América do Norte (ACNA) pelo Primaz Arcebispo Robert Duncan
+  - source: darn2-harvey-deao-2010
+    quote: O novo cargo equivale a uma espécie de Vigário-Geral Provincial.
+  notes: >-
+    Designação noticiada em 12/01/2010, por indicação do Conselho Executivo da ACNA; notícia reproduzida de anglican-mainstream.net.
+    O bispo Donald Harvey foi o pregador do culto do 30º aniversário da Diocese do Recife (20/05/2006).
 events:
 - type: other
   date: 2008-12
@@ -171,3 +272,51 @@ events:
     quote: >-
       O Sermão será proferido pelo Revmo. Bispo Donald Harvey, Moderador da Rede da Comunhão Anglicana, no Canadá,
       sendo o representante pessoal do nosso Primaz, Revmo. Bispo Gregório J. Venables
+- type: other
+  date: '2007-07-01'
+  description: >-
+    Consulta Anglicana "Seguindo a Cristo Como Senhor - Na Comunhão, No Pacto e na Missão", realizada em Oxford
+    (Inglaterra) de 1 a 6 de julho de 2007, sob patrocínio do Instituto da Comunhão Anglicana e do seminário Wycliffe
+    Hall, com 110 participantes de 15 países, entre eles Dom Robinson Cavalcanti, o bispo Peter Beckwith (diocese
+    companheira de Springfield) e o bispo Donald Harvey (moderador da Rede da Comunhão Anglicana do Canadá).
+  status: confirmed
+  sources:
+  - source: darb2-breves-13
+    quote: >-
+      foi um dos 110 participantes, de 15 países convidados da Consulta Anglicana "Seguindo a Cristo Como Senhor
+      - Na Comunhão, No Pacto e na Missão", realizada em Oxford, Inglaterra, de 01 a 06 do corrente mês
+  - source: darb2-breves-13
+    quote: >-
+      O Bispo da Diocese Companheira de Springfield, Bispo Peter Beckwith, o Moderador da Rede da Comunhão Anglicana
+      do Canadá, Bispo Donald Harvey
+  - source: darb2-breves-12
+    quote: Dia 01 a 10.07 - Viagem à Inglaterra - quando participará das reuniões do Wicliffe Hall, em Oxford
+- type: other
+  date: '2006-05-20'
+  description: >-
+    Em 20/05/2006, em culto de ação de graças pelos 30 anos de organização eclesiástica da diocese, pregou o bispo
+    Donald Harvey, moderador da Rede Anglicana do Canadá e representante pessoal e oficial do Primaz do Cone Sul,
+    Gregory J. Venables.
+  status: confirmed
+  sources:
+  - source: darl3-hist6
+    quote: >-
+      No dia 20 de maio de 2006, a Diocese do Recife, em Culto de Ação de Graças, tendo como pregador o Revmo. Bispo
+      Donald Harvey , Moderador da Rede Anglicana do Canadá, e representante pessoal e oficial do nosso Primaz Revmo.
+      Gregory J. Venables , comemora os 30 anos de sua Organização Eclesiástica
+- type: other
+  date: 2008-12
+  description: >-
+    O XXVIII Concílio Diocesano aprovou por unanimidade moção de congratulações pela criação da Igreja Anglicana
+    na América do Norte (ACNA), cuja constituição foi divulgada em 03/12/2008 e que reuniria 700 comunidades e 100
+    mil membros dos Estados Unidos e Canadá; o bispo canadense Donald Harvey pregou no culto de encerramento.
+  status: confirmed
+  sources:
+  - source: darl3-n4612
+    quote: >-
+      O XXVIII Concílio de Diocese do Recife – Comunhão Anglicana aprovou, por unanimidade, moção em que se congratula
+      com a criação da Igreja Anglicana na América do Norte
+  - source: darl3-n4612
+    quote: >-
+      Um dos líderes da nova Província, o Bispo canadense Donald Harvey foi o pregador do Culto de Encerramento
+      do XXVIII Concílio do Recife

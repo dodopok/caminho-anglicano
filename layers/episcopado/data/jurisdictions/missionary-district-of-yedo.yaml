@@ -2,6 +2,12 @@
 id: missionary-district-of-yedo
 name: Missionary District of Yedo
 type: diocese
+description: >-
+  Distrito missionário da Igreja Episcopal (TEC) no Japão, que teve John McKim como bispo a partir de 14 de junho
+  de 1893.
+sources:
+- source: perry-1895
+  quote: see of Yedo, Japan
 relations:
 - type: part_of
   target: tec

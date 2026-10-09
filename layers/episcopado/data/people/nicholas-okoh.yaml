@@ -11,10 +11,25 @@ birth:
   - source: gacl-con-okoh
     quote: born 10 November 1952, at Owa-Alero in the Delta State.
 biography: >-
-  Segundo bispo de Asaba (2001), arcebispo de Bendel (2005) e quarto primaz da Igreja da Nigéria (2010–2020).
+  Ordenado diácono em julho de 1979 e presbítero em julho de 1980, foi sagrado em maio de 2001 como segundo bispo
+  de Asaba, tendo Peter Akinola como sagrante segundo uma fonte. Eleito arcebispo da Província Eclesiástica de Bendel
+  em 22 de julho de 2005, foi instalado primaz da Igreja Anglicana da Nigéria em 25 de março de 2010 e se aposentou
+  em 25 de março de 2020.
 sources:
 - source: gacl-con-okoh
-  quote: born 10 November 1952, at Owa-Alero in the Delta State.
+  quote: He was ordained a deacon in July 1979 and a priest in July 1980.
+- source: gacl-con-okoh
+  quote: He was consecrated as the second bishop of the Diocese of Asaba in May 2001.
+- source: gacl-wp-okoh
+  quote: '| consecration     = May 2001
+
+    | consecrated_by   = [[Peter Akinola]]'
+- source: gacl-con-okoh
+  quote: >-
+    He was consecrated as the second bishop of the Diocese of Asaba in May 2001. He was elected the Archbishop of
+    the Ecclesiastical Province of Bendel on 22 July 2005
+- source: gacl-con-okoh
+  quote: He was installed as Primate on March 25, 2010. He retired on 25 March, 2020.
 ordinations:
 - order: diaconate
   date: 1979-07
@@ -64,6 +79,16 @@ affiliations:
   notes: Segundo bispo de Asaba; arcebispo de Bendel a partir de 22/07/2005.
 - jurisdiction: church-of-nigeria
   role: primate
+  start: 2010-03
+  status: probable
+  sources:
+  - source: darn2-nigeria-primaz-2010
+    quote: >-
+      para a Instalação e Posse do novo Arcebispo Primaz da Igreja Anglicana da Nigéria, Revmo. Nicholas Okoh ,
+      que substitui o Revmo Peter Akinola
+  notes: Instalação noticiada em 25/03/2010; notícia reproduzida de anglican-mainstream.net.
+- jurisdiction: church-of-nigeria
+  role: primate
   diocese: abuja
   start: '2010-03-25'
   end: '2020-03-25'
@@ -73,3 +98,20 @@ affiliations:
   - source: gacl-con-okoh
     quote: He was installed as Primate on March 25, 2010. He retired on 25 March, 2020.
   notes: Eleito em 15/09/2009; sucedeu Peter Akinola e foi sucedido por Henry Ndukuba.
+events:
+- type: other
+  date: '2011'
+  description: >-
+    Em 2011 (viagem relatada em 05/07/2011), o bispo Robinson Cavalcanti participou em Abuja, Nigéria, de uma conferência/consulta
+    sobre direitos humanos reunindo bispos e outros participantes, onde foi recebido pelo novo Arcebispo Primaz
+    da Igreja Anglicana da Nigéria, Nicholas Okoh, seu colega no Grupo de Recursos Teológicos do GAFCON.
+  status: confirmed
+  sources:
+  - source: darb1-nigeria
+    quote: >-
+      Fui muito bem recebido pelo novo Arcebispo Primaz, Revmo. Nicholas Okoh , que havia sido meu colega no Grupo
+      de Recursos Teológicos que elaborou o material preparatório para o GAFCON.
+  - source: darb1-nigeria
+    quote: Umas 40 pessoas, entre Bispos, Presbíteros, Professores Universitários, Juízes e Advogados.
+  - source: darb1-abuja-ad
+    quote: como conferencista em nossa Consulta sobre Direitos Humanos, em Abuja, Nigéria

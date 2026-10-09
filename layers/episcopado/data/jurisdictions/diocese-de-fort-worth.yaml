@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-fort-worth
+name: Diocese de Fort Worth
+type: other
+relations:
+- type: member_of
+  target: iacs
+  date: 2008-11
+  status: probable
+  sources:
+  - source: darl3-idx-p2
+    quote: Diocese de Fort Worth Deixa a Igreja Episcopal (EUA)
+  notes: >-
+    A Diocese de Fort Worth (Texas), com 291 delegados, deliberou desvincular-se da Igreja Episcopal (EUA) e filiar-se
+    provisoriamente à Igreja Anglicana do Cone Sul (notícia de 17/11/2008). Registro a partir do título/resumo da
+    listagem do portal da DAR.

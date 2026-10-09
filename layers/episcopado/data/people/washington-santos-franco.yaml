@@ -2,12 +2,44 @@
 id: washington-santos-franco
 name: Washington Santos Franco
 full_name: Washington Santos Franco
-biography: Cônego da Diocese Anglicana do Recife em 2005 e 2007.
+biography: >-
+  Ordenado diácono em 1986, na IEAB, e presbítero na Diocese Anglicana do Recife pelo bispo Clóvis Erly Rodrigues.
+  Em outubro de 1996, com Miguel Uchoa, propôs o nome de Robinson Cavalcanti na escolha de um coadjutor. Cônego
+  desde 15/02/2004, atuava na Missão Anglicana Filadélfia; em 23/08/2005 consta entre os clérigos excluídos da Comunhão
+  da IEAB, passando a integrar a Diocese Anglicana do Recife (DAR). Na DAR seguiu como cônego (2005 e 2007), foi
+  membro da OSE e, em 2009, ministro encarregado de uma comunidade.
 sources:
-- source: drp-carta-venables-pt-2005
+- source: kickhofel-1995
+  quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1986 - … Washington Santos Franco
+  page: '373'
+- source: dard2-hist3
+  quote: >-
+    Foram ordenados, durante o seu período os seguintes reverendos: Washington Franco e Siméa Meldrum (os únicos
+    dos seus Presbíteros que continuam conosco)
+- source: darl3-hist3
+  quote: Washington Franco e Siméa Meldrum (os únicos dos seus Presbíteros que continuam conosco)
+- source: darb2-projeto-i
+  quote: >-
+    O meu nome foi proposto, inicialmente, pelos reverendos Washington Franco e Miguel Uchoa, tendo, em seguida,
+    o apoio decidido do reverendo Luiz Souza
+- source: drp2-ord-diac-daniel-fred-2004
+  quote: >-
+    Gostaria de estender o meu abraço ao Cônego Washington Franco, por seu retorno à atividade ministerial
+- source: dard1-carta-bispos-2004
+  quote: Rev. Côn. Washington Franco Missão Anglicana Filadélfia
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Washington Santos Franco … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: drv-declaracao-32
   quote: Rev. Côn. Washington Franco
 - source: drp-calendario-2007
   quote: Rev. Côn. Washington S. Franco
+- source: dard1-ose-2009a
+  quote: Rev. Côn. Washington Franco, OSE
+- source: dard1-com-sul-2009a
+  quote: 'Ministro Encarregado: Rev. Washington Franco Ministro Auxiliar: Rev. Ivaldo Sales'
 ordinations:
 - order: diaconate
   date: '1986'
@@ -19,6 +51,27 @@ ordinations:
     page: '373'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: null
+  jurisdiction: ieab-dar
+  ordained_by: clovis-erly-rodrigues
+  status: probable
+  sources:
+  - source: dard2-hist3
+    quote: >-
+      Foram ordenados, durante o seu período os seguintes reverendos: Washington Franco e Siméa Meldrum (os únicos
+      dos seus Presbíteros que continuam conosco)
+  - source: darl3-hist3
+    quote: Washington Franco e Siméa Meldrum (os únicos dos seus Presbíteros que continuam conosco)
+  - source: darl3-hist3
+    quote: Foram ordenados, durante o seu período os seguintes reverendos
+  notes: >-
+    Robinson Cavalcanti lista Washington Franco entre os presbíteros ordenados no período do bispo Clóvis Erly Rodrigues
+    (1986-1997); data e local não constam. O texto diz apenas "durante o seu período", e o ordenante é entendido
+    como o bispo diocesano da época. Ordenação durante o episcopado de Clóvis Erly Rodrigues na diocese (1986-1997),
+    conforme lista de Dom Robinson Cavalcanti; o texto não dá data nem local e não diz expressamente "ordenado por";
+    ordenante inferido do período. A lista separa os ordenados ao presbiterado (aqui incluídos) dos ordenados "apenas
+    ao Diaconato".
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -92,6 +145,53 @@ affiliations:
     Brasil e, conseqüentemente, das Sagradas Ordens' por abandono de comunhão. motivo_fim 'deposicao' porque o efeito
     é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
     adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado.
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Côn. Washington Franco Missão Anglicana Filadélfia
+  notes: "Local: Missão Anglicana Filadélfia. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife\
+    \ (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os presbíteros. "
+- jurisdiction: ose
+  role: member
+  status: confirmed
+  sources:
+  - source: dard1-ose-2009a
+    quote: Rev. Côn. Washington Franco, OSE
+  notes: >-
+    Consta na relação de membros da Ordem de Santo Estevão capturada em jan/2009; não consta na relação publicada
+    em 01/07/2009. Listado entre os clérigos.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_encarregado
+  status: confirmed
+  sources:
+  - source: dard1-com-sul-2009a
+    quote: 'Ministro Encarregado: Rev. Washington Franco Ministro Auxiliar: Rev. Ivaldo Sales'
+  notes: >-
+    Local: Ponto Missionário Anglicano da Santíssima Trindade (Maceió-AL). Consta na página de comunidades do Arcediagado
+    Sul capturada em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: ieab-dar
+  role: priest
+  status: confirmed
+  sources:
+  - source: darl3-carta-0904
+    quote: Rev. Côn. Washington Franco Missão Anglicana Filadélfia
+  notes: >-
+    Local: Diocese Anglicana do Recife, Missão Anglicana Filadélfia. Consta como signatário da carta aberta de 17/09/2004
+    da Diocese Anglicana do Recife ao Bispo Primaz, na lista de Presbíteros, com a comunidade indicada.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: cônego
+  status: confirmed
+  sources:
+  - source: darl3-setubal
+    quote: Rev. Côn. Washington Franco
+  notes: >-
+    Delegado clerical ao Concílio Diocesano Extraordinário de 26/02/2005 (Carta de Setúbal), com o cargo indicado
+    na lista de delegados.
 events:
 - type: other
   date: 1977/1985
@@ -111,3 +211,25 @@ events:
       japonês
   - source: drv-resgatando-ii
     quote: Deixou o Bispo, ao final, já preparado o processo do Postulante e depois Rev. Washington Franco.
+- type: other
+  date: 1996-10
+  description: >-
+    Em outubro de 1996 o bispo Clóvis Erly Rodrigues comunicou a decisão de se aposentar e de convocar a eleição
+    de um coadjutor. Segundo Dom Robinson Cavalcanti, seu nome foi proposto inicialmente pelos reverendos Washington
+    Franco e Miguel Uchoa, com o apoio decidido do reverendo Luiz Souza; a eleição se deu no Concílio Extraordinário
+    de Itaparica (BA), precedida de cinco meses de reuniões do clero, que redigiu a "Carta de Paudalho" como programa
+    comum, e de debates com paróquias e missões de Belém, João Pessoa, Recife e Salvador.
+  status: confirmed
+  sources:
+  - source: darb2-projeto-i
+    quote: >-
+      O meu nome foi proposto, inicialmente, pelos reverendos Washington Franco e Miguel Uchoa, tendo, em seguida,
+      o apoio decidido do reverendo Luiz Souza
+  - source: darb2-projeto-i
+    quote: >-
+      entre outubro de 1996 (quando o Bispo Clóvis comunicou sua decisão de se aposentar e convocar a eleição de
+      um coadjutor), até a minha sagração e posterior instituição e posse, em outubro de 1997
+  - source: darb2-projeto-i
+    quote: cinco meses de reunião do clero, culminando com o retiro que elaborou a “Carta de Paudalho”
+  - source: darb2-projeto-i
+    quote: Concílio Extraordinário de Itaparica (onde houve a eleição)

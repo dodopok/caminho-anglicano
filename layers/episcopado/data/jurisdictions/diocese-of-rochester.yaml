@@ -2,6 +2,20 @@
 id: diocese-of-rochester
 name: Diocese of Rochester
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra que teve como bispos John Scory (1551-1552, depois transferido para Chichester),
+  John Thomas (1774-1793) e Randall Thomas Davidson (1891-1895).
+sources:
+- source: stubbs-1897
+  quote: John Scory. Rochester; Chichester, 1552; Hereford, 1559 ; d. 1585, June 26.
+- source: stubbs-1897
+  quote: John Thomas. Rochester; d. 1793, Aug. 22.
+- source: wp-en-davidson
+  quote: '* [[Bishop of Rochester]] (1891–1895)'
+- source: wp-en-davidson
+  quote: >-
+    [[Bishop of Rochester]] (1891) and [[Bishop of Winchester]] (1895). In 1903 he succeeded [[Frederick Temple]]
+    as Archbishop of Canterbury, and remained in office until his retirement in November 1928.
 relations:
 - type: part_of
   target: church-of-england
@@ -11,3 +25,9 @@ relations:
     quote: John Thomas. Rochester; d. 1793, Aug. 22.
   - source: stubbs-1897
     quote: John Scory. Rochester; Chichester, 1552; Hereford, 1559 ; d. 1585, June 26.
+  - source: wp-en-davidson
+    quote: '* [[Bishop of Rochester]] (1891–1895)'
+  - source: wp-en-davidson
+    quote: >-
+      [[Bishop of Rochester]] (1891) and [[Bishop of Winchester]] (1895). In 1903 he succeeded [[Frederick Temple]]
+      as Archbishop of Canterbury, and remained in office until his retirement in November 1928.

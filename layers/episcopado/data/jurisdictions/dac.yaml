@@ -23,12 +23,13 @@ founded:
     page: '102'
 website: https://www.dacbrasil.com.br/
 description: >-
-  Jurisdição de âmbito nacional ("DACB"), integrante da Anglican Free Communion International (Comunhão Anglicana
-  Livre Internacional). Sé Primacial na Paróquia Santo Expedito e Nossa Senhora Desatadora dos Nós, em Esmeraldas
-  (MG); governo episcopal sob o Arcebispo Primaz Lucas Macieira, com quatro prelazias: dos Pampas (RS), Jesus Salvador
-  (SP), Sagrada Face (PR) e São Jorge Guerreiro (BA); mais região Nordeste (Barbalha, CE). Um estudo da própria
-  diocese (fev. 2026) data a consolidação da fase anglicana em 2012, com um "Sínodo da Bolívia" da comunhão anglicana
-  livre, e a mudança de nome para DAC; outras fontes colocam a Diocese de Esmeraldas em 2010.
+  Jurisdição de âmbito nacional integrante da Comunhão Anglicana Livre Internacional, com Sé Primacial em Esmeraldas
+  (MG), na Paróquia Santo Expedito e Nossa Senhora Desatadora dos Nós. Surgiu da Diocese Anglicana de Esmeraldas,
+  organizada em 2010, e a fase anglicana foi consolidada em 2012 com o Sínodo da Bolívia, com mudança do nome para
+  Diocese Anglicana Católica do Brasil. É conduzida pelo arcebispo e primaz Lucas Macieira da Silva, cuja sagração
+  é apontada como origem do corpo eclesiástico. Os bispos prelados incluem João de Deus da Silva (Prelazia Sagrada
+  Face), Daniel Araújo (Prelazia dos Pampas, desde 2022) e Antônio Santana Neto (bispo desde janeiro de 2024). Em
+  2024 aprovou a bênção de casais homoafetivos.
 sources:
 - source: lielb-dacb-site
   quote: >-
@@ -38,8 +39,39 @@ sources:
   quote: >-
     Sé Primacial: Paróquia Santo Expedito e Nossa Senhora Desatadora dos Nós — Rua 1, nº 650, Bairro Monte Sinai,
     Esmeraldas/MG.
+- source: cant-novas-igrejas-2024
+  quote: >-
+    O estabelecimento da DAC se deu a partir da chamada Diocese Anglicana de Esmeraldas, organizada em 2010, em
+    Minas Gerais.
+  page: '101'
 - source: lielb-scribd-jdd
   quote: consolidada em 2012 com o Sínodo da Bolívia
+- source: cant-novas-igrejas-2024
+  quote: culminando na transição para a nomenclatura Diocese Anglicana Católica do Brasil
+  page: '101'
+- source: lielb-dacb-site
+  quote: integrante da Comunhão Anglicana Livre Internacional (The Anglican Free Communion International)
+- source: lielb-dacb-api-clero
+  quote: >-
+    "cargo": "Arcebispo Primaz", "prelazia": "Sé Primacial", "comunidade": "Paróquia Santo Expedito e Nossa Senhora
+    Desatadora dos Nós", "cidade": "Esmeraldas", "uf": "MG"
+- source: cant-novas-igrejas-2024
+  quote: A fundação desde corpo eclesiástico remonta à sagração do bispo Lucas Macieira da Silva.
+  page: '101'
+- source: lielb-dacb-api-clero
+  quote: >-
+    "nome": "João de Deus da Silva", "nome_civil": "João de Deus da Silva", "cargo": "Bispo Prelado / Abade", "prelazia":
+    "Prelazia Anglicana Sagrada Face"
+- source: lielb-dacb-api-clero
+  quote: '"cargo": "Bispo Prelado", "prelazia": "Prelazia Anglicana dos Pampas"'
+- source: lielb-gaz-santana
+  quote: >-
+    Na Proxima terça-feira, 14 de janeiro de 2025, a Diocese Anglicana Católica do Brasil celebra com alegria o
+    primeiro aniversário de ordenação episcopal de Dom Frei Antonio Santana.
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Em 2024, ocorreu a aprovação da bênção de casais homoafetivos, à semelhança do que aconteceu na IEAB.
+  page: '102'
 relations:
 - type: successor_of
   target: dae

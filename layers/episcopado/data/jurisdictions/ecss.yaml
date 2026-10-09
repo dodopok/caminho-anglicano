@@ -5,13 +5,52 @@ name: Igreja Episcopal do Sudão do Sul (Episcopal Church of South Sudan)
 type: province
 tradition: anglican
 country: SS
-description: Província da Comunhão Anglicana.
+description: >-
+  Província anglicana do Sudão do Sul, cujo primaz desde 22 de abril de 2018 é Justin Badi Arama, arcebispo de Juba,
+  eleito em 20 de janeiro de 2018 para suceder Daniel Deng Bul. Está representada no Conselho dos Primazes do GAFCON
+  e, em 2026, é citada entre as igrejas que afirmaram a Declaração de Jerusalém e permanecem na Global Anglican
+  Communion, tendo assinado o comunicado do GSFA.
 sources:
+- source: gacl-ai-2018-badi-entron
+  quote: >-
+    [Juba] Sunday the 22nd of April, 2018 was a joyous day in the south Sudanese capital of Juba, as thousands of
+    Christians gathered at All Saints Cathedral to witness the enthronement of the fifth archbishop and primate
+    of the Episcopal Church of South Sudan.
+- source: gacl-ai-2018-badi-eleito
+  quote: >-
+    has elected the Rt. Rev. Justin Badi Arama, Bishop of Maridi, to succeed the Most Rev. Daniel Deng Bul as Archbishop
+    of Juba and Primate of South Sudan. Four candidates stood for election at the meeting held on 20 Jan 2018
 - source: gacm-tlc-2026-03-27-who-leads
   quote: >-
     They are archbishops Samy Shehata of Alexandria, Titre Ande of Congo, Jackson Ole Sapit of Kenya, Justin Badi
     Arama of South Sudan, and Ezekiel Kondo of Sudan, as well as Archbishop James Wong, the retired primate of the
     Indian Ocean.
+- source: gacm-tlc-2025-10-17-analysis
+  quote: >-
+    Three of the nine other churches represented on GAFCON’s Primates’ Council are not recognized by the Anglican
+    Communion Office and have largely been formed under GAFCON’s auspices (the Anglican Church of Brazil, the Reformed
+    Evangelical Anglican Church of South Africa, and the Anglican Church in North America). But such a total severing
+    of connections with Canterbury and the Instruments of Communion would be a new development for the six other
+    provinces represented on the council (Alexandria, Chile, Congo, Kenya, Myanmar, and South Sudan).
+- source: gacm-ens-2025-10-23-little-evidence
+  quote: >-
+    The other six Anglican provinces that are represented on GAFCON’s primates’ council are Alexandria (Egypt),
+    Chile, Congo, Kenya, Myanmar and South Sudan.
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    Important omissions from the council’s list were six former Gafcon primates who did not participate in the Abuja
+    meetings. They are archbishops Samy Shehata of Alexandria, Titre Ande of Congo, Jackson Ole Sapit of Kenya,
+    Justin Badi Arama of South Sudan, and Ezekiel Kondo of Sudan, as well as Archbishop James Wong, the retired
+    primate of the Indian Ocean.
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    Because their churches have publicly affirmed the Jerusalem Declaration, they remain part of the Global Anglican
+    Communion.
+- source: gace-tlc-gsfa-2026-01
+  quote: >-
+    The meeting’s communiqué , released January 21, was signed by nine primates, representing the Anglican Communion’s
+    provinces of Alexandria, Congo, the Indian Ocean, Myanmar, South East Asia, South Sudan, Sudan, and Uganda,
+    as well as the Anglican Church of Brazil.
 relations:
 - type: member_of
   target: gafcon

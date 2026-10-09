@@ -3,6 +3,7 @@ id: iacs
 acronym: IACS
 name: Igreja Anglicana do Cone Sul da América
 aliases:
+- Igreja Anglicana da América do Sul
 - Igreja Anglicana do Cone Sul da América (hoje Anglican Church of South America)
 - Igreja Anglicana do Cone Sul da América (hoje Igreja Anglicana da América do Sul)
 type: province
@@ -17,8 +18,21 @@ founded:
     quote: >-
       The Diocese of Chile was a constituent and founding diocese of the new Province of the Southern Cone of America
       in 1981
+  - source: fund-wp-en-sam
+    quote: >-
+      The province was known as "The Province of the Southern Cone of America" from its formation in 1981 until
+      September 2014, when it formally changed its name to "The Anglican Church of South America".
+  - source: perd02-wp-pt-iacs
+    quote: até setembro de 2014, quando mudou formalmente seu nome para "A Igreja Anglicana da América do Sul".
 description: >-
-  Província criada em 1981 (a base inferia 1990). Renomeada Anglican Church of South America em set/2014.
+  Província formada em 1981 como Província do Cone Sul da América, da qual a Diocese do Chile foi diocese fundadora;
+  desde setembro de 2014 chama-se Igreja Anglicana da América do Sul. Héctor (Tito) Zavala, bispo diocesano do Chile
+  desde 2000, foi eleito primaz em 4 de novembro de 2010 e reeleito em 2013, exercendo o cargo até 2016. Em 23 de
+  setembro de 2005, o primaz Gregory Venables acolheu a Diocese Anglicana do Recife, de Robinson Cavalcanti, que
+  atuou como diocese extraprovincial sob sua supervisão até 2018. Em 2007, o bispo Donald Harvey transferiu-se para
+  a província e, em 28 de dezembro de 2007, clérigos da Igreja Anglicana Ortodoxa passaram para a Diocese do Recife,
+  Cone Sul; em 2012 Evilásio Tenório foi primaz interino dessa diocese até a eleição de Miguel Uchôa. A província
+  participa do GAFCON e de seus conselhos, sem ter transferido formalmente sua lealdade institucional.
 sources:
 - source: fund-wp-en-sam
   quote: came together to form the Province of the Southern Cone.
@@ -26,6 +40,42 @@ sources:
   quote: >-
     The Diocese of Chile was a constituent and founding diocese of the new Province of the Southern Cone of America
     in 1981
+- source: fund-wp-en-sam
+  quote: >-
+    The province was known as "The Province of the Southern Cone of America" from its formation in 1981 until September
+    2014, when it formally changed its name to "The Anglican Church of South America".
+- source: gacl-ai-2016-zavala
+  quote: >-
+    The province’s House of Bishops unanimously elected him the province’s first native-born Latin American primate
+    at the 10th meeting of the General Synod on 4 November 2010. He was re-elected to a second term in 2013.
+- source: gacl-wp-zavala
+  quote: Presiding Bishop of the [[Anglican Church of South America]] (2010–2016)
+- source: costa2021
+  quote: >-
+    Todavia, em 23 de setembro de 2005, a Igreja Anglicana do Cone Sul, por meio do seu Primaz, o bispo Gregory
+    Venables, aceitou o pedido
+  page: '225'
+- source: cant-novas-igrejas-2024
+  quote: o bispo Gregory Venables, primaz anglicano do Cone Sul
+  page: '73'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Realinhamento com o Sul Global, como diocese extra-provincial da Igreja Anglicana da América do Sul (com supervisão
+    episcopal do bispo Gregory Venables) [2005-2018]
+  page: '171'
+- source: wp-harvey
+  quote: >-
+    In November 2007, Harvey relinquished his ministry in the Anglican Church of Canada pursuant to Canon XIX
+- source: fandom-iaob
+  quote: terem se transferido para a Diocese do Recife - Cone Sul, em 28/12/2007
+- source: iab-poster-linhagem-uchoa
+  quote: >-
+    163f. Evilásio Tenório da Silva Júnior (2012) que, em 2012, assumiu como primaz interino da Diocese do Recife
+    - Cone Sul, até a eleição de Miguel Uchoa
+- source: gacm-ai-2026-06-25-southamerica
+  quote: >-
+    South America attends GAFCON, participates in its councils, and endorses its theological emphases, but has not
+    formally shifted its institutional allegiance from the historic Instruments of Communion to GAFCON’s new council.
 relations:
 - type: member_of
   target: gafcon

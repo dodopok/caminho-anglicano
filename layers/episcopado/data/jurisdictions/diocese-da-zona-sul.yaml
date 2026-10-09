@@ -2,6 +2,20 @@
 id: diocese-da-zona-sul
 name: Diocese da Zona Sul
 type: diocese
+description: >-
+  Diocese da IECB cujo 1º bispo diocesano, Alexandre Barbosa Monteiro Ximenes (2007-2025), é hoje emérito. Ivan
+  Barreto de Lima Rocha, bispo coadjutor desde 2024, aparece como 2º bispo diocesano (2025-).
+sources:
+- source: ptwiki-iecb
+  quote: Dom Alexandre Barbosa Monteiro Ximenes – 1º Bispo Diocesano, hoje Emérito (2007-2025)
+- source: ptwiki-iecb
+  quote: Ivan Barreto de Lima Rocha (2024)
+- source: lie-betesda-paroquias
+  quote: 'Bispo Diocesano: Dom Alexandre Ximenes Bispo Adjutor: Dom Ivan Rocha'
+- source: lie-betesda-historia
+  quote: Dom Ivan Rocha (Coadjutor Diocese da Zona Sul do Recife)
+- source: ptwiki-iecb
+  quote: Dom Ivan Barreto de Lima Rocha – 2º Bispo Diocesano (2025-)
 relations:
 - type: part_of
   target: iecb

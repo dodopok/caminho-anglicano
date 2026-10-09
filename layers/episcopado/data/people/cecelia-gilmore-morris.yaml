@@ -1,11 +1,38 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: cecelia-gilmore-morris
 name: Cecelia Gilmore Morris
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+aliases:
+- Cecelia Morris
+biography: >-
+  Diácona permanente da Diocese do Recife (Paróquia de St. Charles), vinculada ao Arcediagado Norte-Americano a
+  partir de 21/07/2007, com domicílio canônico na diocese e residente no exterior.
 sources:
+- source: darb2-breves-16
+  quote: >-
+    além do nosso Arcediago para os EUA, Ven. Rev. Duncan Clark, e as Diáconas Permanentes Cecelia Morris e Ann
+    Stewart Hamphill
 - source: drv-nota-esclarecimento-2006
   quote: Cecelia Gilmore Morris
+- source: dard2-clero-na
+  quote: Revda. Cecelia Gilman Morris (Paróquia de St. Charles)
 affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: diácono permanente
+  diocese: arcediagado-norte-americano
+  start: '2007-07-21'
+  status: probable
+  sources:
+  - source: darb2-breves-16
+    quote: >-
+      além do nosso Arcediago para os EUA, Ven. Rev. Duncan Clark, e as Diáconas Permanentes Cecelia Morris e Ann
+      Stewart Hamphill
+  - source: darb2-breves-05
+    quote: Dona e Cecilia (Diáconas Permanentes)
+  notes: >-
+    Local: Paróquia St. Charles, Poulsbo (Washington). Citada como diácona permanente presente à ordenação de 21/07/2007;
+    em janeiro de 2007 uma "Cecilia" consta como diácona permanente da equipe pastoral de St. Charles (Poulsbo).
+    Vínculo canônico exato com a diocese não é dito.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: clero (domicílio canônico na diocese, residente no exterior)
@@ -15,3 +42,14 @@ affiliations:
     quote: Cecelia Gilmore Morris
   notes: >-
     Consta em 09/11/2006 entre os clérigos residentes no exterior com domicílio canônico na Diocese do Recife.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: diácono
+  status: confirmed
+  sources:
+  - source: dard2-clero-na
+    quote: Revda. Cecelia Gilman Morris (Paróquia de St. Charles)
+  notes: >-
+    Local: Arcediagado Norte-Americano (Paróquia de St. Charles). Lista "Ministros(as) do Arcediagado Especial da
+    América do Norte", publicada em 13/08/2009 (captura de 18/02/2010); o vínculo vale para esse período. A lista
+    grafa "Cecelia Gilman Morris".

@@ -1,10 +1,41 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: solange-cristina-pereira
 name: Solange Cristina Pereira
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Ordenada diácona em 27/12/2003, na Paróquia Anglicana Emanuel (Olinda), e presbítera em 04/12/2004, no XXIV Concílio
+  Diocesano, ambas por Robinson Cavalcanti. Atuou no Ponto Missionário Anglicano da Paz e na equipe pastoral da
+  Paróquia Anglicana São Paulo e foi membro do Conselho Diocesano; em 23/08/2005 foi excluída da comunhão da IEAB,
+  permanecendo na Diocese Anglicana do Recife.
 sources:
-- source: drp-boletim-oracao-2006
-  quote: Orar pela Paróquia Anglicana São Paulo; pela Revda. Juciara Nascimento; pela Revda. Solange Pereira
+- source: rcor-drv-ord-decio-2003
+  quote: >-
+    Décio da Silva, Elias Leôncio de Brito Filho, ose, Raniere Almeida de Oliveira, Solange Cristina Pereira e Tibério
+    Marques da Silva, ose
+- source: rcor-drv-ord-decio-2003
+  quote: Paróquia Anglicana Emanuel - Olinda/PE — 27/12/2003
+- source: drp2-concilio-xxiv-2004
+  quote: >-
+    foi celebrado um Culto Eucarístico com a Ordenação Presbiteral dos Reverendos: Décio da Silva, Fred Souto, Marconi
+    Oliveira, Solange Cristina Pereira e Raniere Oliveira
+- source: dard1-carta-bispos-2004
+  quote: Revda. Solange Cristina Pereira Ponto Missionário Anglicano da Paz
+- source: drp2-breves-09-2005
+  quote: >-
+    na Paróquia Anglicana São Paulo, sob a orientação pastoral das Reverendas: Juciara Nascimento e Solange Cristina
+- source: darl3-setubal
+  quote: Revda. Solange Cristina Pereira – Membro do Conselho Diocesano
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Revda. Solange Cristina Pereira … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Revda. Solange Cristina Pereira … Os clérigos não atenderam à convocação
+    e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo
+    plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
 ordinations:
 - order: diaconate
   date: '2003-12-27'
@@ -37,7 +68,7 @@ ordinations:
     anuncia impor as mãos sobre os ordinandos. Elias Leôncio e Tibério optaram pelo diaconato permanente; Décio,
     Raniere e Solange aspiravam ao presbiterato.
 - order: presbyterate
-  date: 2004-12
+  date: '2004-12-04'
   place: Paróquia Anglicana Emanuel, Olinda-PE (culto de encerramento do XXIV Concílio Diocesano)
   jurisdiction: ieab-dar
   ordained_by: robinson-cavalcanti
@@ -53,10 +84,19 @@ ordinations:
     quote: hoje a igreja estará recebendo 5 novos presbíteros
   - source: drp2-ord-presb-xxiv-concilio-2004
     quote: Fred,Ranieri,Solange,Marconi, Décio
+  - source: darl2-sermao-ord-274
+    quote: Hoje a Igreja estará recebendo cinco novos Presbíteros.
+  - source: darl2-sermao-ord-274
+    quote: Décio, Fred, Marcone, Solange e Raniere,
+  - source: darl2-sermao-ord-274
+    quote: Culto de Encerramento do XXIV Concílio Diocesano Olinda(PE), 04 de Dezembro de 2004
   notes: >-
     Ordenação no culto eucarístico após os Concílios Ordinário (XXIV) e Extraordinário da diocese, em Olinda. O
     informe diocesano é datado de 02/12/2004 e fala do 'último fim de semana'; o cabeçalho do sermão do Rev. Miguel
-    Uchôa traz 10/12/2004. Dia exato incerto.
+    Uchôa traz 10/12/2004. Dia exato incerto. O sermão do culto de encerramento do XXIV Concílio Diocesano, pregado
+    por Miguel Uchôa, saúda cinco novos presbíteros pelos primeiros nomes (Décio, Fred, Marcone, Solange e Raniere);
+    a identificação com Solange Cristina Pereira segue o registro das ordenações presbiterais desse concílio (grafia
+    "Marcone" no sermão). O sermão não nomeia o ordenante.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -110,3 +150,32 @@ affiliations:
     quote: >-
       na Paróquia Anglicana São Paulo, sob a orientação pastoral das Reverendas: Juciara Nascimento e Solange Cristina
   notes: 'Local: Paróquia Anglicana São Paulo, Recife. Em outubro de 2005.'
+- jurisdiction: ieab
+  role: deacon
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Revda. Solange Cristina Pereira Ponto Missionário Anglicano da Paz
+  notes: "Local: Ponto Missionário Anglicano da Paz. Consta na carta aberta de 17/09/2004, assinada pela Diocese\
+    \ do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os\
+    \ diáconos. "
+- jurisdiction: ieab-dar
+  role: deacon
+  status: confirmed
+  sources:
+  - source: darl3-carta-0904
+    quote: Revda. Solange Cristina Pereira Ponto Missionário Anglicano da Paz
+  notes: >-
+    Local: Diocese Anglicana do Recife, Ponto Missionário Anglicano da Paz. Consta como signatário da carta aberta
+    de 17/09/2004 da Diocese Anglicana do Recife ao Bispo Primaz, na lista de Diáconos, com a comunidade indicada.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro do Conselho Diocesano
+  status: confirmed
+  sources:
+  - source: darl3-setubal
+    quote: Revda. Solange Cristina Pereira – Membro do Conselho Diocesano
+  notes: >-
+    Delegado clerical ao Concílio Diocesano Extraordinário de 26/02/2005 (Carta de Setúbal), com o cargo indicado
+    na lista de delegados.

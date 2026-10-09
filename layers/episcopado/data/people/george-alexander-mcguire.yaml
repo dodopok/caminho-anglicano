@@ -22,8 +22,10 @@ death:
   - source: lwac-wac-hob
     quote: Archbishop Dr. George Alexander McGuire, Founder and Patriarch (28 March 1866 – 10 November 1934)
 biography: >-
-  Padre episcopal nascido em Antigua, fundador e primeiro bispo/patriarca da African Orthodox Church (1921), antecessora
-  da WAC; consagrado bispo em Chicago em setembro de 1921.
+  George Alexander McGuire nasceu em 28/3/1866, em Antigua, e foi reitor episcopal e capelão-geral da Universal
+  Negro Improvement Association. Fundou em 1918, com Marcus Garvey, a African Orthodox Church, da qual é apontado
+  como primeiro bispo e patriarca. Foi sagrado em Chicago em setembro de 1921 (as fontes dão 21 ou 28), por Joseph
+  René Vilatte, assistido por Carl A. Nybladh, e morreu em 10/11/1934.
 sources:
 - source: lwac-wac-about
   quote: >-
@@ -31,6 +33,20 @@ sources:
     Orthodox Church was born on March 28, 1866, in Sweets, Antigua.
 - source: lwac-wac-hob
   quote: Archbishop Dr. George Alexander McGuire, Founder and Patriarch (28 March 1866 – 10 November 1934)
+- source: lwac-wp-aoc
+  quote: >-
+    Episcopal rector George Alexander McGuire was consecrated a bishop on September 28, 1921, who had served as
+    Chaplain-General of the Universal Negro Improvement Association
+- source: lwac-wp-aoc
+  quote: >-
+    founded in the United States in 1918 by the joint collaboration of its first patriarch, George Alexander McGuire,
+    and Marcus M. Garvey
+- source: lwac-wac-about
+  quote: He was consecrated a Bishop on September 21, 1921, in Chicago
+- source: lwac-wp-aoc
+  quote: >-
+    by an episcopus vagans , Archbishop Joseph Rene Vilatte , assisted by Bishop Carl A. Nybladh who had been consecrated
+    by Vilatte
 ordinations:
 - order: episcopate
   date: '1921-09-21'
@@ -67,3 +83,14 @@ ordinations:
     Data do site da WAC; o texto não nomeia o sagrante. A Wikipédia (EN) dá 28/09/1921 e nomeia Vilatte como sagrante
     principal. Fonte terciária (Wikipédia EN); diverge de 21/09/1921 da WAC. A Wikipédia também situa a fundação
     da AOC em 1918 (Nova York/Garvey), enquanto a WAC data a fundação em 02/09/1921.
+affiliations:
+- jurisdiction: aoc
+  role: founder
+  start: '1918'
+  status: probable
+  sources:
+  - source: lwac-wp-aoc
+    quote: >-
+      founded in the United States in 1918 by the joint collaboration of its first patriarch, George Alexander McGuire,
+      and Marcus M. Garvey
+  notes: Fundada em colaboração com Marcus Garvey, segundo a Wikipédia (outras fontes citam 1921).

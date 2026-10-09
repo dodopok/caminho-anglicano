@@ -23,12 +23,63 @@ death:
     quote: Faleceu em 15 de novembro de 2015, sendo sepultado no cemitério da Paz, Morumbi.
     page: '106'
 wikidata: Q139501316
-biography: Nipo-brasileiro; bispo de Sao Paulo (2002-2006).
+biography: >-
+  Hiroshi Ito, natural de Nara (Japão), foi ordenado diácono em 1967 e presbítero em 1968, na IEAB. Eleito bispo
+  diocesano de São Paulo em Concílio Extraordinário em 6 de abril de 2002, foi sagrado em 28 de julho de 2002, na
+  Catedral Anglicana de São Paulo, tendo como sagrante o primaz Glauco Soares de Lima. Foi bispo da Diocese Anglicana
+  de São Paulo até 2006 e presidente da JUNET de 2003 a 2006; nessa função comunicou a Robinson Cavalcanti, em dezembro
+  de 2004, que a dotação mensal da junta à Diocese do Recife seria enviada à Supervisão Episcopal. Em 2005 foi um
+  dos bispos que pediram a abertura de processo disciplinar contra Robinson Cavalcanti. Faleceu em 15 de novembro
+  de 2015. Participou de duas ordenações de diáconos ou presbíteros e de uma sagração episcopal, a de Roger Douglas
+  Bird, como co-sagrante.
 sources:
 - source: costa2021
   quote: Natural da cidade de Nara no Japão, Hiroshi Ito nasceu em 07 de setembro de 1939.
 - source: costa2021
+  quote: Foi ordenado ao diaconato em 1967 e ao presbiterado em 1968
+  page: '106'
+- source: costa2021
+  quote: >-
+    durante o Concílio Extraordinário ocorrido em 06 de Abril de 2002, o reverendo Hiroshi Ito100 foi eleito o novo
+    bispo diocesano.
+  page: '106'
+- source: costa2021
+  quote: Foi sagrado em 28 de Julho de 2002, na Catedral Anglicana de São Paulo
+  page: '106'
+- source: costa2021
+  quote: Foi o Bispo Sagrante, o Primaz do Brasil, Glauco Soares de Lima. Como co-sagrantes estiveram
+- source: costa2021
+  quote: Bispos e Bispas da Igreja Episcopal Anglicana do Brasil … 2002-2006 – Hiroshi Ito
+  page: 518-519
+- source: darl2-reflexao-273
+  quote: Presidente da JUNET, 2003-2006
+- source: dard1-franca-reflexao-2004
+  quote: >-
+    a dotação mensal da JUNET será enviada para ser administrada pela Supervisão Episcopal através do Bispo Sufragâneo,
+    Dom Filadelfo de Oliveira Neto
+- source: drp2-memorias-decada-ix
+  quote: >-
+    Dois bispos (Ito, de São Paulo, e Naudal, de Curitiba), mas dois clérigos e dois leigos da DAR requerem ao Primaz
+    a abertura de um processo disciplinar contra o Bispo do Recife, acusado de insubordinação e não cumprimento
+    dos seus votos de Ordenação.
+- source: costa2021
   quote: Faleceu em 15 de novembro de 2015
+- source: costa2021
+  quote: >-
+    A sagração aconteceu na sé diocesana, no feriado nacional de 07 de setembro do mesmo ano, tendo como sagrante
+    principal o Bispo Primaz da IEAB, Maurício Andrade, e como co-sagrantes os bispos Hiroshi Ito, Celso Franco,
+    Naudal Alves Gomes, Glauco Soares de Lima, e Nathan Baxter, da Diocese da Pensilvânia Central
+- source: wp-pt-roger-bird
+  quote: >-
+    Bird foi eleito quinto bispo da Diocese Anglicana de São Paulo (DASP) no concílio extraordinário de 7 de junho
+    de 2007 em São Paulo e foi consagrado no dia 7 de setembro do mesmo ano.
+- source: ec-2007-07
+  quote: >-
+    Seis bispos estavam na Catedral de São Paulo: o Primaz da IEAB, dom Maurício Andrade, dom Hiroshi Ito, dom Celso
+    Franco, da Darj, dom Naudal Gomes, da DAC, dom Glauco Soares de Lima, bispo emérito e dom Nathan Baxter, da
+    Diocese da Pensilvânia Central (EUA).
+- source: ec-2007-07
+  quote: era 7 de Setembro
 ordinations:
 - order: diaconate
   date: '1967'
@@ -139,6 +190,18 @@ affiliations:
     - source: costa2021
       quote: sendo substituído pelo bispo Hiroshi Ito.
       page: '99'
+- jurisdiction: ieab
+  role: other
+  role_description: presidente da JUNET (Junta Nacional de Educação Teológica)
+  start: '2003'
+  end: '2006'
+  status: confirmed
+  sources:
+  - source: darl2-reflexao-273
+    quote: Presidente da JUNET, 2003-2006
+  notes: >-
+    O período consta na assinatura de carta reproduzida no texto. A JUNET aparece na carta do XXIV Sínodo como "National
+    Commission for Theological Education".
 - jurisdiction: ieab-dasp
   role: diocesan_bishop
   end: '2007'
@@ -177,3 +240,34 @@ events:
     quote: >-
       O Tribunal Superior Eclesiástico da IEAB, presidido pelo ex-Bispo da DAR, Clóvis, opta pela pena máxima: cassação
       de Ordem e Ministério, que é prolatada pelo Primaz.
+- type: other
+  date: '2004'
+  description: >-
+    A Câmara dos Bispos da IEAB nomeou uma Supervisão Episcopal Especial para a Diocese do Recife, que Robinson
+    Cavalcanti não aceitou; por isso a JUNET, presidida por Hiroshi Ito, decidiu que a dotação mensal da diocese
+    passasse a ser administrada pela Supervisão Episcopal por meio do bispo sufragâneo Filadelfo Oliveira Neto (relato
+    em carta do presidente da JUNET reproduzida em artigo de dezembro de 2004).
+  status: probable
+  sources:
+  - source: darl2-reflexao-273
+    quote: >-
+      Considerando sua posição em não aceitar a Supervisão Episcopal Especial nomeada pela Câmara dos Bispo;
+  - source: darl2-reflexao-273
+    quote: >-
+      a dotação mensal da JUNET será enviada para ser administrada pela Supervisão Episcopal através do Bispo Sufragâneo,
+      Dom Filadelfo de Oliveira Neto.
+- type: other
+  date: '2004-12-26'
+  description: >-
+    A JUNET (Junta Nacional de Estudos Teológicos), por carta do seu presidente, o bispo Hiroshi Ito (2003-2006),
+    comunicou a Robinson Cavalcanti que a dotação mensal à Diocese passaria a ser enviada à Supervisão Episcopal,
+    por meio do bispo sufragâneo Filadelfo Oliveira Neto. Texto transcrito por Luiz Souza de França em reflexão
+    de 26/12/2004.
+  status: probable
+  sources:
+  - source: dard1-franca-reflexao-2004
+    quote: >-
+      a dotação mensal da JUNET será enviada para ser administrada pela Supervisão Episcopal através do Bispo Sufragâneo,
+      Dom Filadelfo de Oliveira Neto
+  - source: dard1-franca-reflexao-2004
+    quote: Revmo Bispo Hiroshi Ito Presidente da JUNET, 2003-2006

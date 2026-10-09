@@ -1,6 +1,27 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jader-pires-lopes
 name: Jader Pires Lopes
+biography: >-
+  Jader Pires Lopes foi ministro leigo na IAB até dezembro de 2024 e passou à Rede Episcopal Brasileira (REB), como
+  postulante, atuando na Estação Casa até junho de 2026. Desde 1º de agosto de 2026 planta, na REB, a Igreja Anglicana
+  Caminho, em Belo Horizonte.
+sources:
+- source: testemunho-mantenedor-2026-10-08-jader
+  quote: Jader era ministro leigo na IAB, não postulante
+- source: testemunho-mantenedor-2026-10-08-jader
+  quote: >-
+    Ele era postulante da Trindade sob o Pedro Muniz, saiu pra REB e estava na Estação Casa como postulante do Jaime
+    Sepulcro
+- source: reb-estrutura
+  quote: Postulantes
+- source: ecs-yt-canal
+  quote: Sermão do Natal - Post. Jader Lopes
+- source: testemunho-mantenedor-2026-10-08-jader
+  quote: >-
+    27 de junho de 2026 a Estação Casa e Jaime sairam da REB, Jader continuou na REB e está agora (desde 1 de agosto
+    de 2026) plantando a Igreja Anglicana Caminho em BH (site da REB tem ela)
+- source: reb-igrejas
+  quote: Igreja Anglicana Caminho
 affiliations:
 - jurisdiction: estacao-casa
   role: other

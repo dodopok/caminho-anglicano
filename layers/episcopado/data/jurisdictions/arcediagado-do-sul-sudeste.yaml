@@ -1,7 +1,48 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
 id: arcediagado-do-sul-sudeste
-name: Arcediagado do Sul/Sudeste
+acronym: Arcediagado do Sul/Sudeste
+name: Arcediagado Sul/Sudeste (Arcediagado Extraterritorial Nacional)
 type: diocese
+country: BR
+founded:
+  date: '2009'
+  sources:
+  - source: dard2-us-iv
+    quote: >-
+      Estou orando pela Assembleia do Arcediagado Sul/Sudeste, que está acontecendo em Bandeirantes, Paraná, até
+      dia 13 próximo
+  - source: dard2-us-viii
+    quote: especialmente quando noticiei a criação de um Arcediagado Sul-Sudeste
+  - source: dard2-arc-extra
+    quote: >-
+      Arcediagado Extraterritorial Nacional - Sul/Suldes Arcediago : Ven. Arc. Rev. Carlos Alberto Chaves Fernandes
+      Adjunto : Rev. Ivo Xavier de Oliveira
+  - source: dard2-com-home-2012
+    quote: >-
+      Arcediagado Sul-Sudeste Arcediago : Ven. Arc. Rev. Carlos Alberto Chaves Fernandes Adjunto : Rev. Ivo Xavier
+      de Oliveira
+description: >-
+  Arcediagado da Diocese Anglicana do Recife criado em 2009 para comunidades extraterritoriais, com Carlos Alberto
+  Chaves Fernandes como arcediago; foi dissolvido com a saída do arcediago Ivo Oliveira, de Mogi das Cruzes (SP).
+sources:
+- source: dard2-us-iv
+  quote: >-
+    Estou orando pela Assembleia do Arcediagado Sul/Sudeste, que está acontecendo em Bandeirantes, Paraná, até dia
+    13 próximo
+- source: dard2-us-viii
+  quote: especialmente quando noticiei a criação de um Arcediagado Sul-Sudeste
+- source: dard2-arc-extra
+  quote: >-
+    Arcediagado Extraterritorial Nacional - Sul/Suldes Arcediago : Ven. Arc. Rev. Carlos Alberto Chaves Fernandes
+    Adjunto : Rev. Ivo Xavier de Oliveira
+- source: dard2-com-home-2012
+  quote: >-
+    Arcediagado Sul-Sudeste Arcediago : Ven. Arc. Rev. Carlos Alberto Chaves Fernandes Adjunto : Rev. Ivo Xavier
+    de Oliveira
+- source: cant-novas-igrejas-2024
+  quote: >-
+    O Arcediagado do Sul/Sudeste foi dissolvido, com a saída do arcediago Ivo Oliveira, de Mogi das Cruzes (SP)
+  page: '124'
 relations:
 - type: part_of
   target: iab
@@ -11,3 +52,19 @@ relations:
     quote: >-
       O Arcediagado do Sul/Sudeste foi dissolvido, com a saída do arcediago Ivo Oliveira, de Mogi das Cruzes (SP)
     page: '124'
+- type: part_of
+  target: diocese-anglicana-recife
+  date: '2009'
+  led_by:
+  - carlos-alberto-chaves-fernandes
+  status: probable
+  sources:
+  - source: dard2-arc-extra
+    quote: >-
+      Arcediagado Extraterritorial Nacional - Sul/Suldes Arcediago : Ven. Arc. Rev. Carlos Alberto Chaves Fernandes
+      Adjunto : Rev. Ivo Xavier de Oliveira
+  - source: dard2-us-viii
+    quote: especialmente quando noticiei a criação de um Arcediagado Sul-Sudeste
+  notes: >-
+    A data 2009 é a do primeiro registro (assembleia do arcediagado em junho de 2009); a fundação exata não consta
+    das páginas.

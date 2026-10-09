@@ -24,7 +24,8 @@
     "episcopado:search": "tsx layers/episcopado/scripts/search.ts",
     "episcopado:schemas": "tsx layers/episcopado/scripts/schemas.ts",
     "episcopado:pauta": "tsx layers/episcopado/scripts/pauta.ts",
-    "episcopado:consolidar": "python3 -I layers/episcopado/pesquisa/consolidar.py"
+    "episcopado:consolidar": "python3 -I layers/episcopado/pesquisa/consolidar.py",
+    "episcopado:resumos": "python3 -I layers/episcopado/pesquisa/resumos.py"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.81.1",

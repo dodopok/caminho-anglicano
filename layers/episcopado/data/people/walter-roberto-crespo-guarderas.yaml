@@ -1,9 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: walter-roberto-crespo-guarderas
 name: Walter Roberto Crespo Guarderas
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Aparece como presidente da Câmara dos Bispos (ICAE) em documentos da Diocese do Recife, entre eles um comunicado
+  de imprensa de 2006.
 sources:
 - source: drv-comunicado-imprensa-2006
+  quote: Dom Walter Roberto Crespo Guarderas, Presidente da Câmara dos Bispos
+- source: darl3-cc-boaviagem
   quote: Dom Walter Roberto Crespo Guarderas, Presidente da Câmara dos Bispos
 affiliations:
 - jurisdiction: icae
@@ -17,3 +21,12 @@ affiliations:
     Consta com esse cargo na lista de fundadores da Declaração da Boa Viagem (30/09/2006); início do cargo não informado.
     Em Célio Spinelli, o texto acrescenta 'Bispo de Diocese Anglicana Thomas Becket e Vigário Geral da Arquidiocese
     Thomas Cranmer'. Citado nesse cargo em documento de 30/09/2006.
+- jurisdiction: icae
+  role: other
+  role_description: presidente da Câmara dos Bispos
+  status: confirmed
+  sources:
+  - source: darl3-cc-boaviagem
+    quote: Dom Walter Roberto Crespo Guarderas, Presidente da Câmara dos Bispos
+  notes: >-
+    Signatário/representante da jurisdição na Declaração da Boa Viagem (30/09/2006), com o título indicado na notícia.

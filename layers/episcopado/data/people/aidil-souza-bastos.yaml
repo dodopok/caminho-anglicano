@@ -1,6 +1,16 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: aidil-souza-bastos
 name: Aidil Souza Bastos
+biography: >-
+  Aidil Souza Bastos foi ordenada diácona na IEAB em 13/12/2020 e presbítera em 29/01/2022, em celebração presidida
+  pelo bispo Francisco Cézar Fernandes Alves.
+sources:
+- source: rta-livro35
+  quote: 'Diaconato: 13 de dezembro de 2020.'
+- source: ieab-2022-aidil
+  quote: >-
+    a nossa querida irmã Aidil Souza Bastos foi ordenada ao presbiterado no último sábado, 29 de janeiro. A celebração
+    foi realizada na Paróquia de São João, e presidida pelo bispo Cézar Alves.
 ordinations:
 - order: diaconate
   date: '2020-12-13'

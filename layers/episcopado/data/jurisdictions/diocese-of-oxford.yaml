@@ -2,6 +2,14 @@
 id: diocese-of-oxford
 name: Diocese of Oxford
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra que teve como bispos Henry Compton (1674-1675, depois Londres) e John Potter (1715-1737,
+  depois Canterbury).
+sources:
+- source: stubbs-1897
+  quote: Henry Compton. Oxford; London, 1675; d. 17 13, July 7-
+- source: stubbs-1897
+  quote: John Potter. Oxford; Canterbury, 1737; d. 1747, Oct. 10.
 relations:
 - type: part_of
   target: church-of-england

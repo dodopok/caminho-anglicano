@@ -1,12 +1,41 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: geison-savio-de-h-vasconcellos
 name: Geison Sávio de H. Vasconcellos
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Geison Sávio de H. Vasconcellos foi ordenado diácono em 17 de junho de 2000 por Robinson Cavalcanti, na Diocese
+  Anglicana do Recife, e atuou na Paróquia Anglicana do Espírito Santo. Em 23 de agosto de 2005 constou entre os
+  clérigos que o decreto de Filadelfo Oliveira Neto excluiu da comunhão da IEAB; os clérigos responderam que mantinham
+  plena comunhão com Robinson. Na Diocese do Recife foi ministro encarregado do Ponto Missionário Anglicano Esperança,
+  membro do conselho diocesano, coadjutor e arcediago adjunto do Centro.
 sources:
-- source: drp-boletim-oracao-2006
+- source: rcor-drv-diac-acosta-geison
+  quote: FERNANDO ACOSTA E GEISON VASCONCELLOS
+- source: rcor-drv-diac-acosta-geison
+  quote: Paróquia do Espírito Santo, 17 de junho de 2000.
+- source: dard1-carta-bispos-2004
+  quote: Rev. Geison Sávio de Holanda Vasconcelos Paróquia Anglicana do Espírito Santo
+- source: costa2021
   quote: >-
-    Orar pela Paróquia Anglicana do Espírito Santo, pelo Ven. Arc. Rev. Miguel Uchoa, pelos Reverendos: Geison Vasconcellos,
-    Fernando Acosta e Josias Júnior
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Geison Sávio de H. Vasconcellos … Os clérigos não atenderam
+    à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
+    mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Geison Sávio de H. Vasconcellos … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: dard2-com-sul
+  quote: 'Ponto Missionário Anglicano Esperança Ministro Encarrega do: Rev. Geison Vasconcelos'
+- source: dard1-eletivos-2009a
+  quote: Rev. Geison Sávio de Holanda Vasconcellos (3 anos)
+- source: darl3-n4617
+  quote: como Coadjutor o Rev. Geison Vasconcellos
+- source: dard2-com-home-2012
+  quote: >-
+    Arcediagado Centro Arcediago : Ven. Arc. Rev. Márcio José de Sousa Simões Adjunto : Rev. Geison Sávio de Holanda
+    Vasconcellos
 ordinations:
 - order: diaconate
   date: '2000-06-17'
@@ -69,3 +98,102 @@ affiliations:
     Brasil e, conseqüentemente, das Sagradas Ordens' por abandono de comunhão. motivo_fim 'deposicao' porque o efeito
     é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
     adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago adjunto
+  status: probable
+  sources:
+  - source: dard2-com-home-2012
+    quote: >-
+      Arcediagado Centro Arcediago : Ven. Arc. Rev. Márcio José de Sousa Simões Adjunto : Rev. Geison Sávio de Holanda
+      Vasconcellos
+  notes: >-
+    Local: Arcediagado Centro. Lista da página "Comunidades" capturada em 02/03/2012; no texto convertido o título
+    do arcediagado Norte não aparece, e a atribuição Centro/Norte segue a ordem idêntica de 2009-2010. Início e
+    fim não informados.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: auxiliar
+  status: confirmed
+  sources:
+  - source: dard2-com-sul
+    quote: >-
+      Auxiliares: Rev. Geison Sávio de Holanda, Rev. Josias Junior, Rev. Dinamérico Wanderley, Rev. Ricardo Melo
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo (Piedade, Jaboatão dos Guararapes-PE; Arcediagado Sul). Página "Comunidades"
+    do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de
+    posse.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro encarregado
+  status: confirmed
+  sources:
+  - source: dard2-com-sul
+    quote: 'Ponto Missionário Anglicano Esperança Ministro Encarrega do: Rev. Geison Vasconcelos'
+  notes: >-
+    Local: Ponto Missionário Anglicano Esperança (Candeias, Jaboatão dos Guararapes-PE; Arcediagado Sul). Página
+    "Comunidades" do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo,
+    sem data de posse.
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Rev. Geison Sávio de Holanda Vasconcelos Paróquia Anglicana do Espírito Santo
+  notes: "Local: Paróquia Anglicana do Espírito Santo. Consta na carta aberta de 17/09/2004, assinada pela Diocese\
+    \ do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os\
+    \ presbíteros. "
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: conselho_diocesano
+  status: probable
+  sources:
+  - source: dard1-eletivos-2009a
+    quote: Rev. Geison Sávio de Holanda Vasconcellos (3 anos)
+  notes: >-
+    Local: Conselho Diocesano (membro clerical, mandato de 3 anos). Consta na lista "Cargos Eletivos (Sugestões
+    ao Plenário)" capturada em jan/2009; são sugestões ao plenário do Concílio, e a página não informa se foram
+    aprovadas nem a data.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_auxiliar
+  status: confirmed
+  sources:
+  - source: dard1-com-sul-2009a
+    quote: >-
+      Auxiliares: Rev. Geison Sávio de Holanda, Rev. Josias Junior, Rev. Dinamérico Wanderley, Rev. Ricardo Melo
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes). Consta na página de comunidades do Arcediagado
+    Sul capturada em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_encarregado
+  status: probable
+  sources:
+  - source: dard1-com-sul-2009a
+    quote: Rev. Geison Vasconcelos
+  notes: >-
+    Local: Ponto Missionário Anglicano Esperança (Jaboatão dos Guararapes). Consta na página de comunidades do Arcediagado
+    Sul capturada em 03/01/2009 (sem data de publicação visível). A página escreve "Rev. Geison Vasconcelos"; a
+    identificação com Geison Sávio de Holanda Vasconcellos (auxiliar da Paróquia do Espírito Santo na mesma página)
+    é provável.
+- jurisdiction: ieab-dar
+  role: priest
+  status: confirmed
+  sources:
+  - source: darl3-carta-0904
+    quote: Rev. Geison Sávio de Holanda Vasconcelos Paróquia Anglicana do Espírito Santo
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana do Espírito Santo. Consta como signatário da carta aberta
+    de 17/09/2004 da Diocese Anglicana do Recife ao Bispo Primaz, na lista de Presbíteros, com a comunidade indicada.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coadjutor
+  status: confirmed
+  sources:
+  - source: darl3-n4617
+    quote: como Coadjutor o Rev. Geison Vasconcellos
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes, PE). Coadjutor (clérigo auxiliar) da PAES
+    em dezembro de 2008.

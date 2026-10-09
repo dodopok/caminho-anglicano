@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: george-baile
+name: George Baile
+affiliations:
+- jurisdiction: cbp-pe
+  role: other
+  role_description: capelão
+  start: '1903'
+  end: '1918'
+  status: confirmed
+  sources:
+  - source: darl3-hist1
+    quote: Estão registrados os seguintes Capelães que aqui serviram
+  - source: darl3-hist1
+    quote: >-
+      Rev. George Baile (1903-1918, que morre nos campos de batalha da Primeira Guerra Mundial, integrando o contingente
+      de voluntários anglo-pernambucanos)
+  notes: >-
+    Lista de capelães da Capelania Britânica de Pernambuco (Holy Trinity Church, Recife) compilada por Robinson
+    Cavalcanti. Segundo o texto morreu nos campos de batalha da Primeira Guerra Mundial, como voluntário anglo-pernambucano.

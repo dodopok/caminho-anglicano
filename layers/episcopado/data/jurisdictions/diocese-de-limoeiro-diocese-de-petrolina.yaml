@@ -2,6 +2,10 @@
 id: diocese-de-limoeiro-diocese-de-petrolina
 name: Diocese de Limoeiro / Diocese de Petrolina
 type: diocese
+description: Diocese da IECB que tem João Humberto do Rêgo Vasconcelos como bispo desde 2024.
+sources:
+- source: ptwiki-iecb
+  quote: João Humberto do Rêgo Vasconcelos (2024)
 relations:
 - type: part_of
   target: iecb

@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: paulo-roberto-da-costa-duarte
 name: Paulo Roberto da Costa Duarte
+biography: >-
+  Ordenado diácono em 1992, atuou de 2008 a 2020 na Diocese Meridional da IEAB, onde foi pároco da Paróquia Cristo
+  Redentor.
+sources:
+- source: kickhofel-1995
+  quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1992 - … Paulo Roberto da Costa Duarte
+  page: '373'
+- source: ieab-2022-paulo-duarte
+  quote: conceder o título de cidadania honorária ao reverendo Paulo Roberto da Costa Duarte
+- source: ieab-2022-paulo-duarte
+  quote: >-
+    até que, em 2008, seu caminho se cruzou com a Cidade das Avenidas, se assentando neste município e se tornando
+    posteriormente pároco da Paróquia Cristo Redentor, onde manteve residência até 2020.
 ordinations:
 - order: diaconate
   date: '1992'

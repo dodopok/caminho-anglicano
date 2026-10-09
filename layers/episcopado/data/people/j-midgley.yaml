@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: j-midgley
+name: J. Midgley
+affiliations:
+- jurisdiction: cbp-pe
+  role: other
+  role_description: capelão
+  start: '1874'
+  end: '1892'
+  status: confirmed
+  sources:
+  - source: darl3-hist1
+    quote: Estão registrados os seguintes Capelães que aqui serviram
+  - source: darl3-hist1
+    quote: Rev. J. Midgley (1874-1892)
+  notes: "Lista de capelães da Capelania Britânica de Pernambuco (Holy Trinity Church, Recife) compilada por Robinson\
+    \ Cavalcanti. "

@@ -2,6 +2,19 @@
 id: diocese-of-chester
 name: Diocese of Chester
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra que teve como bispos William Markham (1771-1777, depois York), Beilby Porteus
+  (1777-1787, depois Londres) e John Bird Sumner (1828-1848, depois Canterbury); Geoffrey Francis Fisher foi entronizado
+  bispo em 1932.
+sources:
+- source: stubbs-1897
+  quote: William Markham. Chester; York, 1777; d. 1807, Nov. 3.
+- source: stubbs-1897
+  quote: Beilby Porteus. Chester; London, 1787; d. 1809, May 14.
+- source: stubbs-1897
+  quote: John Bird Sumner. Chester ; Canterbury, 1848 ; d. Sept. 6, 1862.
+- source: wp-fisher
+  quote: the following week Fisher was enthroned as Bishop of Chester at [[Chester Cathedral]].
 relations:
 - type: part_of
   target: church-of-england

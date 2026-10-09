@@ -39,3 +39,29 @@ Classifique cada um em `pistas` com instrução PRECISA para um humano: o link d
 do Facebook/Instagram), ou o que buscar ("na página X, busque 'sagração' e veja os posts de mai/2019"); para vídeo,
 o que procurar na transcrição e o minuto estimado. Descarte o que não tem valor para a rede (opinião, duplicata,
 página sem ordenações nem cargos).
+
+## Reescrever resumos de fichas (biography / description)
+Você recebe um dossiê (`dossie-NN.md`) gerado por `resumos.py`: para cada ficha, o resumo atual e os fatos
+registrados, cada citação com um código (`c1a2b3c`). Escreva um resumo NOVO para cada ficha e grave um JSON
+`[{ "id": "<id>", "texto": "...", "citacoes": ["c1a2b3c", ...] }]` no caminho indicado no prompt.
+- Tamanho: siga o "tamanho do resumo" de cada ficha no dossiê (calculado pelo número de fatos): uma frase para
+  fichas com poucos fatos, um parágrafo de até ~1.800 caracteres para trajetórias longas (ex.: Robinson
+  Cavalcanti), cobrindo cada fase. Um único parágrafo, sem quebras de linha.
+- Pessoa: o essencial do ministério em ordem cronológica: ordenações (com quem ordenou/sagrou, se houver), cargos
+  principais e mais altos, igrejas por onde passou, rupturas e mudanças de igreja, situação atual ou falecimento.
+  Jurisdição: o que é, quando e de onde surgiu, a que pertence, quem a liderou (linhas "liderança" do dossiê),
+  divisões e mudanças importantes.
+- Linhas "(síntese)": quem a pessoa ordenou ou sagrou já aparece listado na ficha. No resumo, no máximo uma frase de
+  síntese com o número exato e a concordância certa (ex.: "ordenou 12 presbíteros e sagrou 2 bispos, entre eles X";
+  "sagrou um bispo, X"), nunca a lista nem formas como "ordenação(ões)".
+- Só o que está no dossiê. As linhas "citado no resumo atual" também são fatos: não perca o que elas sustentam. Fato `contested` entra só se o texto deixar claro que há versões; `probable` pode entrar
+  sem destaque. Não invente datas nem cargos; prefira a forma mais precisa que aparece.
+- `citacoes`: os códigos dos trechos que sustentam cada fato citado no texto (normalmente 3 a 8).
+- Neutro, pt-BR, sem adjetivos de valor, sem "a base", "NOVO", "segundo o dossiê".
+- Vida pessoal: entram, com fonte e em tom neutro, naturalidade e nacionalidade, formação teológica e acadêmica,
+  profissão secular que faz parte da vida pública, cônjuge ou parente que também é clérigo, cofundador ou explica um
+  fato de ministério, e causa da morte ou orientação quando são fato público que marcou a história da igreja (ex.: o
+  assassinato de Robinson Cavalcanti; Gene Robinson como bispo abertamente gay). Ficam de fora: saúde, endereço,
+  filhos e parentes sem papel público, estado civil sem relevância, finanças, conflitos pessoais e disciplina de
+  quem não é bispo.
+- Se a ficha tiver só um ou dois fatos menores, mantenha um resumo curto; se não houver o que dizer, omita a ficha.

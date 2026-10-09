@@ -1,6 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: iuri-da-silva-lima
 name: Iuri da Silva Lima
+biography: >-
+  Iuri da Silva Lima foi ordenado diácono em dezembro de 2023, para o ponto missionário Santa Maria Madalena Apóstola,
+  em Manaus, e presbítero em 24 de novembro de 2024, na Diocese Anglicana da Amazônia (IEAB).
+sources:
+- source: rtb-ieab-daa-concilio-2023
+  quote: >-
+    O evento foi encerrado no domingo pela manhã, com a celebração da ordenação diaconal de Iuri Rogério da Silva
+    Lima, destinado ao ponto missionário Santa Maria Madalena Apóstola , em Manaus-AM.
+- source: rtb-ieab-daa-concilio-2024
+  quote: >-
+    pela ordenação presbiteral do reverendo Iuri Rogério da Silva Lima . Esse momento tão aguardado foi concretizado
+    no encerramento do Concílio, na manhã de domingo (24), durante a celebração de ordenação
+- source: daa-clero
+  quote: Revdo. luri da Silva Lima.
 ordinations:
 - order: diaconate
   date: 2023-12

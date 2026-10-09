@@ -18,13 +18,66 @@ death:
   - source: lin-ch-bduco
     quote: 26 Mar 1961 72.6 Died
 biography: >-
-  Bispo católico romano de Botucatu (1924-1937), excomungado em 1945; fundador da Igreja Católica Apostólica Brasileira.
-  Nasceu em 21/07/1888 e morreu em 26/03/1961 (Rio de Janeiro).
+  Carlos Duarte Costa (21/07/1888–26/03/1961) foi ordenado presbítero em 1911, com as fontes divergindo sobre a
+  data e o ordenante: 1º de abril, por seu tio Eduardo Duarte da Silva, ou 4 de maio, por Joaquim Arcoverde de Albuquerque
+  Cavalcanti. Nomeado bispo de Botucatu pelo papa Pio XI em 4 de julho de 1924, foi sagrado em 8 de dezembro de
+  1924, no Rio de Janeiro, tendo Sebastião Leme da Silveira Cintra como sagrante principal. Em setembro de 1937
+  renunciou à sede e foi nomeado bispo titular de Maura. Foi excomungado pelo Vaticano em 2 de julho de 1945, após
+  acusar publicamente o núncio apostólico e anunciar planos de criar a Igreja Católica Apostólica Brasileira, da
+  qual é tido como fundador. Participou de uma ordenação de diácono ou presbítero e de três sagrações episcopais,
+  entre elas as de Salomão Ferraz (1945) e Antídio José Vargas (1946).
 sources:
 - source: lin-ch-bduco
   quote: Born 21 Jul 1888
 - source: lin-ch-bduco
   quote: 26 Mar 1961 72.6 Died
+- source: lin-ch-bduco
+  quote: 1 Apr 1911 22.6 Ordained Priest Priest of São Sebastião do Rio de Janeiro, Brazil
+- source: lin-wp-en-costa
+  quote: >-
+    Duarte Costa served in the cathedral church of Uberaba under his uncle, Dom Eduardo Duarte da Silva, who, on
+    April 1, 1911, ordained Duarte Costa to the priesthood.
+- source: lin-wp-en-costa
+  quote: >-
+    "ordination":{"wt":"4 May 1911"},"ordained_by":{"wt":"[[Joaquim Arcoverde de Albuquerque Cavalcanti]]"}
+- source: lin-wp-pt-costa
+  quote: Em 4 de julho de 1924, o Papa Pio XI nomeou Duarte Costa Bispo de Botucatu.
+- source: lin-ch-bduco
+  quote: 8 Dec 1924 36.3 Ordained Bishop
+- source: lin-ch-bduco
+  quote: >-
+    Principal Consecrator: Archbishop Sebastião Leme da Silveira Cintra† Titular Archbishop of Pharsalus Principal
+    Co-Consecrators: Bishop Alberto José Gonçalves† Bishop of Ribeirão Preto Bishop Benedito Paulo Alves de Souza†
+    Bishop of Espírito Santo
+- source: lin-wp-pt-costa
+  quote: >-
+    Em setembro de 1937, Duarte Costa renunciou ao seu cargo episcopal e foi nomeado bispo titular de Maura.
+- source: lin-wp-pt-costa
+  quote: o Vaticano finalmente lhe impôs a pena de excomunhão em 2 de julho de 1945.
+- source: lin-wp-pt-costa
+  quote: Além disso, anunciou planos para criar sua própria Igreja Católica Apostólica Brasileira
+- source: lin-wp-pt-costa
+  quote: foi um bispo brasileiro que se tornou o fundador da Igreja Católica Apostólica Brasileira
+- source: testemunho-mantenedor-2026-10-08-ferraz
+  quote: Salomão Ferraz foi sagrado bispo em 1945 por Duarte Costa na ICAB
+- source: clarke-2006-enrm
+  quote: >-
+    The Brazilian Apostolic Catholic Church was founded in 1945, by the former Roman Catholic bishop Don Carlos
+    Duarte Costa
+  page: '294'
+- source: cant-ferraz-ecumenismo-1995
+  quote: >-
+    Realizou-se hoje, dia quinze de agosto de mil novecentos e quarenta e cinco, Festa da Assunção de Nossa Senhora,
+    às dez horas e trinta minutos, no templo da Igreja Cristã de São Paulo à rua Baronesa de Itu, número quarenta
+    e oito, nesta cidade de São Paulo, a Sagração Episcopal de S. Excia. Revm°, Dom Salomão Ferraz, Bispo Eleito
+    de São Paulo. Transmitiu a herança apostólica ao eleito, S. Excia. Revm° Dom Carlos Duarte Costa – Bispo do
+    Rio de Janeiro
+- source: cant-temas-anglicanismo-2024
+  quote: Dom Salomão Ferraz foi consagrado bispo por Dom Carlos Duarte Costa, em 1945.
+- source: lin-wp-en-costa
+  quote: '"bishop 2":{"wt":"[[Antidio Jose Vargas]]"},"consecration date 2":{"wt":"8 December 1946"}'
+- source: lin-wp-en-costa
+  quote: Jorge Alves de Souza and Antidio Jose Vargas (both in 1946)
 ordinations:
 - order: presbyterate
   date: '1911-04-01'
@@ -88,3 +141,38 @@ ordinations:
   notes: >-
     Sagração como bispo de Botucatu (nomeado em 4/07/1924). Catholic-Hierarchy e Wikipédia EN concordam em data,
     local, sagrante e co-sagrantes.
+affiliations:
+- jurisdiction: icab
+  role: founder
+  start: '1945'
+  status: probable
+  sources:
+  - source: lin-wp-pt-costa
+    quote: foi um bispo brasileiro que se tornou o fundador da Igreja Católica Apostólica Brasileira
+  - source: lin-wp-pt-costa
+    quote: Além disso, anunciou planos para criar sua própria Igreja Católica Apostólica Brasileira
+  notes: Em maio de 1945 anunciou a criação da ICAB, após ser excomungado em julho do mesmo ano (ver evento).
+events:
+- type: other
+  date: '1924-07-04'
+  description: Nomeado bispo de Botucatu pelo papa Pio XI, na Igreja Católica Romana.
+  status: probable
+  sources:
+  - source: lin-wp-pt-costa
+    quote: Em 4 de julho de 1924, o Papa Pio XI nomeou Duarte Costa Bispo de Botucatu.
+- type: resignation
+  date: 1937-09
+  description: Renunciou à sede de Botucatu e foi nomeado bispo titular de Maura.
+  status: probable
+  sources:
+  - source: lin-wp-pt-costa
+    quote: >-
+      Em setembro de 1937, Duarte Costa renunciou ao seu cargo episcopal e foi nomeado bispo titular de Maura.
+- type: excommunication
+  date: '1945-07-02'
+  description: >-
+    Excomungado pelo Vaticano, após acusar publicamente o núncio apostólico e anunciar a criação da ICAB.
+  status: probable
+  sources:
+  - source: lin-wp-pt-costa
+    quote: o Vaticano finalmente lhe impôs a pena de excomunhão em 2 de julho de 1945.

@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: rafael-santos-rodrigues
 name: Rafael Santos Rodrigues
+biography: Ordenado diácono em 24 de outubro de 2025 pelo bispo Eric Rodrigues, na REB.
+sources:
+- source: testemunho-mantenedor-2026-10-08-reb-sinodo-2025
+  quote: >-
+    Na mesma data foi ordenado ao diaconato o Rafael Rodrigues (de Brasília), Paula Pires e Andreia Nogueira (esposa
+    do Reinaldo, de Jacareí, da Anglicana Família)
+- source: testemunho-mantenedor-2026-10-08-reb-sinodo-2025
+  quote: Elias e Joyce foram ordenados presbíteros junto comigo e Cynthia, pelo bispo Eric, mesmo dia
+- source: reb-calendario-2026
+  quote: 24/10/2025 – Aniversário de Ordenação • Rev. Rafael
+- source: reb-calendario-2026
+  quote: "Diáconos \nWeiden de Morais Mendes\nAndreia Rodrigues Nogueira Pinto\nPaula Pires do Nascimento Silva\n\
+    Rafael Santos Rodrigues"
 ordinations:
 - order: diaconate
   date: '2025-10-24'

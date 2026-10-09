@@ -1,6 +1,24 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: rafael-cavalcante-paulino
 name: Rafael Cavalcante Paulino
+biography: >-
+  Ordenado diácono em 26 de abril de 2025 e presbítero em 3 de outubro de 2026, ambos pelo bispo João Câncio Peixoto
+  Filho, da Diocese Anglicana do Recife (IEAB); o presbiterato ocorreu na Comunidade Anglicana Bom Pastor.
+sources:
+- source: dar-2025-paulino-conv
+  quote: >-
+    convida Vossa Senhoria, famílias e comunidades, para participarem do Rito de Ordenação Diaconal de Rafael Cavalcante
+    Paulino.
+- source: dar-2025-paulino-diac
+  quote: >-
+    o Bispo Diocesano João C. Peixoto Filho, no 11º ano de sua Sagração Episcopal, ordenou o agora Diácono e Reverendo
+    Rafael Paulino Cavalcante.
+- source: dar-2026-paulino-presb
+  quote: viveu um momento histórico no último dia 3 de outubro. Em celebração realizada pela
+- source: dar-2026-paulino-presb
+  quote: Comunidade Anglicana Bom Pastor, o Rev. Rafael Paulino foi ordenado ao ministério
+- source: dar-2026-paulino-presb
+  quote: A celebração foi presidida pelo bispo Dom João Peixoto, da Diocese Anglicana do Recife (DAR),
 ordinations:
 - order: diaconate
   date: '2025-04-26'

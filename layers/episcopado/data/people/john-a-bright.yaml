@@ -8,11 +8,25 @@ birth:
   - source: rta-ecd1962
     quote: b Portland Ore 1 Sep 27
 biography: >-
-  Missionário norte-americano no Distrito do Brasil Meridional a partir de 1960; capelão do Colégio Santa Margarida
-  e auxiliar de Cristo Redentor (Pelotas) em 1961.
+  John A. Bright nasceu em Portland (Oregon) em 1/9/1927. Foi ordenado diácono em junho de 1956 e presbítero em
+  janeiro de 1957 na Igreja Episcopal dos EUA, por Benjamin Dunlap Dagwell. Atuou como missionário no Distrito Missionário
+  do Sul do Brasil de 1960 a 1962, em Pelotas, como capelão do Colégio Santa Margarida e auxiliar de Cristo Redentor,
+  e a partir de 1962 foi reitor da Igreja da Trindade, em Bend (Oregon).
 sources:
 - source: rta-ecd1962
   quote: b Portland Ore 1 Sep 27
+- source: rta-ecd1962
+  quote: D June 56 P Jan 57 Bp Dagwell
+- source: cd1965
+  quote: Mssy SBra 60-62
+- source: rta-ecd1962
+  quote: BRIGHT, JOHN A (SBra) Caixa Postal 300, Pelotas, RGS, Brazil
+- source: rta-ecd1962
+  quote: Chapl Colegio Sta Margarida & Asst Cristo Redentor
+- source: cd1965
+  quote: Chapl Colegio Sta Margarida & Asst Cristo Redentor SBra 61-62
+- source: cd1965
+  quote: (EO) 515 Congress, Bend, Ore R Trin 62-
 ordinations:
 - order: diaconate
   date: 1956-06
@@ -44,3 +58,41 @@ affiliations:
   - source: rta-ecd1962
     quote: BRIGHT, JOHN A (SBra) Caixa Postal 300, Pelotas, RGS, Brazil
   notes: 'Local: Brasil Meridional, Pelotas. Missionário a partir de 1960.'
+- jurisdiction: dmsb
+  role: other
+  role_description: missionario
+  start: '1960'
+  end: '1962'
+  status: probable
+  sources:
+  - source: cd1965
+    quote: Mssy SBra 60-62
+  notes: >-
+    Missionário no Distrito Missionário do Sul do Brasil de 1960 a 1962, segundo o diretório de 1965; o de 1962
+    o lista em Pelotas (RS).
+- jurisdiction: dmsb
+  role: other
+  role_description: capelão do Colégio Santa Margarida e auxiliar de Cristo Redentor
+  start: '1961'
+  end: '1962'
+  status: confirmed
+  sources:
+  - source: rta-ecd1962
+    quote: Chapl Colegio Sta Margarida & Asst Cristo Redentor
+  - source: cd1965
+    quote: Chapl Colegio Sta Margarida & Asst Cristo Redentor SBra 61-62
+  notes: >-
+    Capelão do Colégio Santa Margarida e auxiliar (assistente) da Igreja Cristo Redentor, em Pelotas (RS), de 1961
+    a 1962.
+- jurisdiction: tec
+  role: other
+  role_description: reitor da Igreja da Trindade (Bend, Oregon)
+  diocese: diocese-de-eastern-oregon
+  start: '1962'
+  status: probable
+  sources:
+  - source: cd1965
+    quote: (EO) 515 Congress, Bend, Ore R Trin 62-
+  notes: >-
+    Após deixar o Brasil, passou à Diocese de Eastern Oregon (EO), como reitor ("R") de Trin(ity), em Bend, desde
+    1962, segundo o diretório de 1965.

@@ -24,8 +24,13 @@ founded:
     quote: Em 22 de junho de 2009 foi organizado um encontro na Catedral de São Vicente, em Bedford, Texas
     page: '128'
 description: >-
-  Fundada em 2009 por grupos saídos da Igreja Episcopal (EUA) e da Igreja Anglicana do Canadá; Robert Duncan primeiro
-  arcebispo; não é Província da Comunhão Anglicana; ligada à GAFCON.
+  Fundada em 22/06/2009 por grupos que se desligaram da Igreja Episcopal (TEC), alinhada às demais Províncias do
+  GAFCON, que a reconhecem; não é uma Província da Comunhão Anglicana. Robert Duncan, bispo de Pittsburgh, foi eleito
+  o primeiro arcebispo e primaz e deixou a primazia em 2014; Foley Beach exerceu-a até junho de 2024 e Stephen Dwain
+  Wood, eleito terceiro arcebispo, assumiu em 28/06/2024. Em 15/11/2025 Julian Dobbs, deão da Província, passou
+  a exercer as funções de arcebispo, como primaz interino. Entre suas dioceses estão a Anglican Diocese of the South
+  (Beach, desde 2010), a Great Lakes (Roger Ames, 2011), as Carolinas (Wood, 2012) e Quincy; é membro do Global
+  Anglican Council desde março de 2026.
 sources:
 - source: cant-novas-igrejas-2024
   quote: >-
@@ -36,6 +41,63 @@ sources:
   quote: >-
     Diferente da Igreja Episcopal e da Igreja do Canadá, a ACNA não é uma Província da Comunhão Anglicana.
   page: '21'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja Anglicana na América do Norte (Anglican Church in North America – ACNA) foi fundada, em 2009, por membros
+    e lideranças clericais oriundos da Igreja Episcopal nos Estados Unidos e da Igreja Anglicana do Canadá
+  page: '20'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    sendo oficialmente fundada a nova denominação alinhada com as demais Províncias que fazem parte da GAFCON
+  page: '21'
+- source: darn1-aniv1111
+  quote: >-
+    as Províncias representadas no Gafcon/FCA a reconhecem como a única expressão do Anglicanismo na América do
+    Norte
+- source: cant-novas-igrejas-2024
+  quote: Nesta reunião, Robert Duncan, bispo da Diocese de Pittsburgh, foi eleito o seu primeiro arcebispo
+  page: '21'
+- source: costa2021
+  quote: Em 2014, Robert Duncan deixou a primazia
+  page: '128'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Em 2014, Robert Duncan deixou a primazia, sendo escolhido Foley Beach para assumir o cargo como o segundo arcebispo
+    da denominação.
+  page: '22'
+- source: gacl-wp-wood
+  quote: >-
+    On June 22, 2024, Wood was elected by the ACNA college of bishops to succeed [[Foley Beach]] as the province's
+    third archbishop.
+- source: gacl-wp-wood
+  quote: He formally took office on June 28, at the conclusion of the ACNA's provincial assembly.
+- source: gacl-acna-deans
+  quote: >-
+    when long-standing Dean of the Province, Bishop Ray Sutton, resigned as Dean on Nov 15, 2025, the College of
+    Bishops approved Bishop Dobbs’s appointment to this role. The Dean of the Province is a canonically defined
+    role that is authorized to assume the responsibilities of the Archbishop in the event that the Archbishop is
+    unable to serve.
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: Bishop Julian Dobbs, acting primate of the Anglican Church in North America
+- source: gacl-ai-2016-beach
+  quote: On 9 Oct 2010 he was consecrated the first bishop of the ACNA’s diocese of the South.
+- source: wp-ames
+  quote: >-
+    with Ames being installed as their first bishop at 30 April 2011, at the diocese annual convention in Akron.
+    He would be in office until 2016
+- source: gacl-acna-wood-bio
+  quote: >-
+    Archbishop Wood was elected as the first Bishop of the Diocese of the Carolinas by the College of Bishops on
+    June 5, 2012.
+- source: cant-novas-igrejas-2024
+  quote: >-
+    mantém fortes laços com a Diocese de Quincy, da Igreja Anglicana na América do Norte (ACNA), mantendo uma boa
+    relação com o bispo, Juan Alberto Morales.
+  page: '78'
+- source: gace-ai-dobbs-abuja
+  quote: >-
+    It has been a distinct privilege to join more than 50 bishops and clergy from North America, alongside leaders
+    from all twenty-seven Anglican provinces, for GAFCON 26
 relations:
 - type: schism_from
   target: tec
@@ -146,3 +208,18 @@ relations:
         Speaking as General Secretary of the Global Anglican Communion (GAC), Bishop Donison briefed the College
         on current relationships and partnerships around the world, including matters involving the GAC and the
         Global South Fellowship of Anglicans (GSFA).
+- type: recognized_by
+  target: gafcon
+  date: '2010-06-15'
+  led_by:
+  - robert-duncan
+  status: probable
+  sources:
+  - source: darn1-aniv1111
+    quote: >-
+      as Províncias representadas no Gafcon/FCA a reconhecem como a única expressão do Anglicanismo na América do
+      Norte
+  notes: >-
+    Afirmação de uma análise episcopal publicada em 15/06/2010 ("ACNA – Uma Província Anglicana em Formação"), que
+    também diz que as vinte províncias reunidas no Encontro Sul-Sul (Cingapura) a reconheceram como "uma expressão
+    autêntica do Anglicanismo". É a opinião do autor do texto, sem documento oficial citado.

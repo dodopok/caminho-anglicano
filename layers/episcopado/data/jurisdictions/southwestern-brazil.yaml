@@ -2,6 +2,25 @@
 id: southwestern-brazil
 name: Southwestern Brazil
 type: diocese
+description: >-
+  Distrito missionário da Igreja Episcopal formado em 1950 pela metade ocidental do Rio Grande do Sul e de Santa
+  Catarina; Egmont Krischke foi seu bispo de 1950 a 1955, e Plínio Lauer Simões, sagrado em 4 de março de 1956,
+  o sucedeu até 1976.
+sources:
+- source: wit-1950-03-30
+  quote: Bishop to be head of the newly-formed Missionary District of Southwestern Brazil
+- source: lc-1949-10-30
+  quote: >-
+    The third district will be that o Southwestern Brazil and will consist of the western half of the states of
+    Grande do Sul and Santa Caterina. new bishop will be the Rev. Egmonte Machado Krischke.
+- source: kickhofel-1995
+  quote: BISPOS DIOCESANOS Diocese Sul Ocidental, Santa Maria … 1950-1955 - Egmont Machado Krischke
+  page: '368'
+- source: costa2021
+  quote: Em 04 de março de 1956 foi sagrado bispo da Diocese Sul-Ocidental.
+  page: '73'
+- source: wit-1955-09-29
+  quote: the Rev. Plimio L. Simoes to be bishop of Southwestern Brazil. He will replace Bishop Krischke
 relations:
 - type: part_of
   target: dmsob

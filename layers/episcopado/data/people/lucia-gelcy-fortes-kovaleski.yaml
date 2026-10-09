@@ -1,6 +1,12 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: lucia-gelcy-fortes-kovaleski
 name: Lucia Gelcy Fortes Kovaleski
+biography: Lucia Gelcy Fortes Kovaleski foi ordenada diácona em 28/10/2007 e presbítera em 14/06/2009 na IEAB.
+sources:
+- source: rta-livro35
+  quote: 'Diaconato: 28 de outubro de 2007.'
+- source: rta-livro35
+  quote: 'Presbiterado: 14 de junho de 2009.'
 ordinations:
 - order: diaconate
   date: '2007-10-28'

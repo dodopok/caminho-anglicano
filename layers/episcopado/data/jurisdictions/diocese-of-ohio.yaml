@@ -2,6 +2,14 @@
 id: diocese-of-ohio
 name: Diocese of Ohio
 type: diocese
+description: >-
+  Diocese da TEC em que Gregory Thurston Bedell, coadjutor, tornou-se diocesano com a morte de McIlvaine e renunciou
+  à jurisdição em outubro de 1889.
+sources:
+- source: perry-1895
+  quote: Upon the death of Mcllvaine his coadjutor became the diocesan of Ohio.
+- source: perry-1895
+  quote: In October, 1889, he resigned his jurisdiction
 relations:
 - type: part_of
   target: tec

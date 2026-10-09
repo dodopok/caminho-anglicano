@@ -2,6 +2,13 @@
 id: diocese-of-delaware
 name: Diocese of Delaware
 type: diocese
+description: >-
+  Diocese da TEC cujo bispo Alfred Lee foi consagrado em 12 de outubro de 1841 e morreu em 12 de abril de 1887.
+sources:
+- source: perry-1895
+  quote: He was consecrated bishop of Delaware
+- source: perry-1895
+  quote: He died at Wilmington, April 12, 1887
 relations:
 - type: part_of
   target: tec

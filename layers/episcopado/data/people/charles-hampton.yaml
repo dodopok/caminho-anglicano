@@ -1,6 +1,26 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: charles-hampton
 name: Charles Hampton
+biography: >-
+  Ordenado presbítero em 17/08/1917 por James Ingall Wedgwood e sagrado bispo em 13/07/1931, em Los Angeles, por
+  Irving Steiger Cooper, na Igreja Católica Liberal, recebeu nova sagração em 23/08/1945, com Lowell Paul Wadle,
+  e passou à Old Roman Catholic Church.
+sources:
+- source: lin-ms-hampton
+  quote: >-
+    Hampton was ordained a priest on the 17th August 1917 by James Ingall Wedgwood of the Liberal Catholic Church.
+- source: lin-ms-hampton
+  quote: >-
+    Hampton was consecrated in Los Angeles, California in 1931 by Irving Cooper of the Liberal Catholic Church.
+- source: lin-ms-hampton
+  quote: >-
+    13th July 1931 19310713 Consecrated by Irving Steiger Cooper Assisted by George S. Arundale and Ray M. Wardall.
+- source: lin-ms-hampton
+  quote: >-
+    Upon his consecration in 1945 by Lowell P. Wadle et al., Hampton left the Liberal Catholic Church and joined
+    the Old Roman Catholic Church, where he stayed until his death.
+- source: lin-ms-hampton
+  quote: 23rd August 1945 19450823 Mutual consecration Lowell Paul Wadle Mar Paulos
 ordinations:
 - order: presbyterate
   date: '1917-08-17'

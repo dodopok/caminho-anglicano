@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ordem-dos-padres-e-irmaos-samaritas
+name: Ordem dos Padres e Irmãos Samaritas
+type: religious_order
+country: BR
+description: Ordem fundada por João de Deus da Silva.
+sources:
+- source: lielb-mongesanglicanos
+  quote: fundador da Ordem dos Padres e Irmãos Samaritas

@@ -1,8 +1,31 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: aldo-dos-santos-menezes
 name: Aldo dos Santos Menezes
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Aldo dos Santos Menezes foi ordenado presbítero por Robinson Cavalcanti na Diocese Anglicana do Recife (DAR) em
+  2006, provavelmente em 01/07. Foi instituído em 03/01/2010 deão da Con-Catedral Anglicana da Ressurreição, em
+  João Pessoa (PB), e atuou como ministro auxiliar e membro da junta de capelães examinadores da diocese.
 sources:
+- source: drp2-breves-08-2006
+  quote: >-
+    Aconteceu na Paróquia Anglicana Jardim das Oliveiras o 1º Retiro do Clero, no primeiro semestre de 2006, no
+    dia 01/07.
+- source: drp2-breves-08-2006
+  quote: no Culto Solene de Ordenação Presbiteral do Rev. Aldo Menezes
+- source: darl1-9500
+  quote: >-
+    Rev. Aldo Menezes é Presbítero da Diocese do Recife; Deão da Con-Catedral Anglicana da Ressurreição, em João
+    Pessoa-PB, e que tomará posse dia 03/01/2010.
+- source: darb2-sermao-deao-conego
+  quote: >-
+    Sermão de Instituição do Deão Aldo Menezes e do Cônego Luiz Souza de França Concatedral Anglicana da Ressurreição
+    João Pessoa (PB), 03.01.2010
+- source: dard2-com-pb
+  quote: CON-CATEDRAL ANGLICANA DA RESSURREIÇÃO Revmo. Deão Aldo Menezes
+- source: dard1-com-pbrnce-2009a
+  quote: 'Ministro Encarregado: Ven. Arc. Rev. Luiz de Souza França Auxiliar: Rev. Aldo Menezes'
+- source: dard1-eletivos-2009a
+  quote: Rev. Aldo dos Santos Menezes (3 anos)
 - source: drp-boletim-oracao-2006
   quote: >-
     Orar pelos Ministros no Brasil ligados canonicamente a Diocese do Recife: Rev. Aldo Menezes e Rev. Gilberto
@@ -24,6 +47,53 @@ ordinations:
   notes: O ordenante não é nomeado; a nota é da diocese de Dom Robinson.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: deão
+  start: '2010-01-03'
+  status: confirmed
+  sources:
+  - source: darl1-9500
+    quote: >-
+      Rev. Aldo Menezes é Presbítero da Diocese do Recife; Deão da Con-Catedral Anglicana da Ressurreição, em João
+      Pessoa-PB, e que tomará posse dia 03/01/2010.
+  - source: darl1-8245
+    quote: >-
+      Revmo. Aldo dos Santos Menezes é Presbítero na Diocese do Recife; Deão na Concatedral Anglicana da Ressurreição,
+      em João Pessoa, no Arcediagado PB/CE/RN.
+  - source: darl1-4679
+    quote: >-
+      Revmo. Aldo Menezes é Presbítero na Diocese do Recife; Deão na Concatedral Anglicana da Ressurreição, em João
+      Pessoa, no Arcediagado PB/CE.
+  - source: darb2-sermao-deao-conego
+    quote: >-
+      Sermão de Instituição do Deão Aldo Menezes e do Cônego Luiz Souza de França Concatedral Anglicana da Ressurreição
+      João Pessoa (PB), 03.01.2010
+  - source: darb2-sermao-deao-conego
+    quote: hoje empossamos e instituímos o reverendo Aldo como Deão dessa Concatedral
+  - source: darb2-sermao-deao-conego
+    quote: >-
+      O Senhor chamou; a Junta Paroquial e o Cabido, como expressões do povo, reconheceram; e o Bispo, como sucessor
+      dos apóstolos e representante da instituição, homologou
+  - source: darn1-aldo10
+    quote: >-
+      Revmo. Aldo dos Santos Menezes é Presbítero na Diocese do Recife; Deão na Concatedral Anglicana da Ressurreição,
+      em João Pessoa, no Arcediagado PB/CE/RN
+  - source: darn2-aldo-posse-2010
+    quote: Posse do Rev. Aldo Menezes Como Deão da Concatedral Anglicana da Ressurreição
+  - source: darn2-throup-coadjutor-2010
+    quote: A Concatedral Anglicana da Ressurreição ( Revmo. Aldo Menezes – Deão )
+  notes: >-
+    Local: Concatedral Anglicana da Ressurreição, João Pessoa-PB. A posse foi anunciada para 2010-01-03 em texto
+    de 2009-12-08 (data de início conforme o anúncio); em 2010-06-14 já assina como deão. Em 2010-11-29 ainda é
+    deão; em 2011-10-25 o artigo o apresenta apenas como presbítero do Arcediagado PB/RN, na Região Eclesiástica
+    1. Local: Concatedral Anglicana da Ressurreição, João Pessoa, PB. Instituição e posse como deão da Concatedral
+    Anglicana da Ressurreição (João Pessoa), em culto presidido por Dom Robinson Cavalcanti, que descreve o ato
+    como "troca de guarda" na direção espiritual da comunidade. O sermão cita apenas "Aldo Menezes"; a identificação
+    com Aldo dos Santos Menezes (presbítero da diocese, ordenado em 2006) se apoia no nome. Local: Concatedral Anglicana
+    da Ressurreição (João Pessoa). Assinatura de artigo datado de 14/06/2010. Local: Concatedral Anglicana da Ressurreição,
+    João Pessoa-PB. A posse é noticiada em 24/03/2010 (com vídeo); a nota não informa a data da cerimônia. Julho
+    de 2010: a Concatedral é "uma Paróquia Emancipada da Diocese do Recife".
+- jurisdiction: diocese-anglicana-recife
   role: clergy
   status: confirmed
   sources:
@@ -37,3 +107,44 @@ affiliations:
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados. Ministro "ligado canonicamente" à Diocese do Recife
     em out/nov de 2006; o boletim não diz onde servia.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: deão
+  status: confirmed
+  sources:
+  - source: dard2-com-pb
+    quote: CON-CATEDRAL ANGLICANA DA RESSURREIÇÃO Revmo. Deão Aldo Menezes
+  notes: >-
+    Local: Con-Catedral Anglicana da Ressurreição (João Pessoa-PB). Deão da Con-Catedral da Ressurreição (Tambiá,
+    João Pessoa) na página do Arcediagado PB/RN/CE de 20/08/2009 (captura de 29/11/2010); início não informado.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: junta_de_capelaes_examinadores
+  status: probable
+  sources:
+  - source: dard1-eletivos-2009a
+    quote: Rev. Aldo dos Santos Menezes (3 anos)
+  notes: >-
+    Local: Junta de Capelães Examinadores (mandato de 3 anos). Consta na lista "Cargos Eletivos (Sugestões ao Plenário)"
+    capturada em jan/2009; são sugestões ao plenário do Concílio, e a página não informa se foram aprovadas nem
+    a data.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_auxiliar
+  status: confirmed
+  sources:
+  - source: dard1-com-pbrnce-2009a
+    quote: 'Ministro Encarregado: Ven. Arc. Rev. Luiz de Souza França Auxiliar: Rev. Aldo Menezes'
+  notes: >-
+    Local: Ponto Missionário Anglicano Santo Estevão (São Miguel de Taipu-PB). Consta na página de comunidades do
+    Arcediagado PB/RN/CE capturada em 03/01/2009 (sem data de publicação visível).
+events:
+- type: other
+  date: '2009-12-05'
+  description: >-
+    XXIX Concílio Diocesano da Diocese do Recife, em dezembro de 2009 (a oração do meio-dia de 5 de dezembro foi
+    conduzida pelo Rev. Aldo Menezes, deão designado da Concatedral da Ressurreição).
+  status: confirmed
+  sources:
+  - source: darl1-9500
+    quote: Esta meditação foi ministrada na Oração do Meio Dia, do dia 05/12/2009, no XXIX Concílio Diocesano.

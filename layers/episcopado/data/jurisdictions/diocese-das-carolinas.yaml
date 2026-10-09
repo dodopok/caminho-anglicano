@@ -2,6 +2,14 @@
 id: diocese-das-carolinas
 name: Diocese das Carolinas
 type: diocese
+description: >-
+  Diocese da ACNA que teve como primeiro bispo Stephen Dwain Wood, eleito pelo Colégio de Bispos em 5 de junho de
+  2012.
+sources:
+- source: gacl-acna-wood-bio
+  quote: >-
+    Archbishop Wood was elected as the first Bishop of the Diocese of the Carolinas by the College of Bishops on
+    June 5, 2012.
 relations:
 - type: part_of
   target: acna

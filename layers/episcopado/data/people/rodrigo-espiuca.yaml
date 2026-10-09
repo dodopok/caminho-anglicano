@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: rodrigo-espiuca
 name: Rodrigo Espiúca
+biography: >-
+  Clérigo da IEAB, listado entre as pessoas ordenadas atuantes da DAB. Por volta de 2006 integrava, como reverendo,
+  um grupo de trabalho da Diocese Anglicana do Recife.
+sources:
+- source: dab-ministerio-ordenado
+  quote: Pessoas ordenadas – Atuantes
+- source: dab-ministerio-ordenado
+  quote: Rev. Rodrigo Espiúca
+- source: costa2021
+  quote: >-
+    Este GT era composto pelos reverendos Gustavo Oliveira, Rodrigo Espiuca, Rose Cunha, Silvio Freitas, e Senomar
+    Teixeira
+  page: '238'
 affiliations:
 - jurisdiction: ieab
   role: clergy

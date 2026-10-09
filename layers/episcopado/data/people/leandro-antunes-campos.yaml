@@ -1,6 +1,21 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: leandro-antunes-campos
 name: Leandro Antunes Campos
+biography: >-
+  Leandro Antunes Campos foi ordenado presbítero em 21/04/2007 por Hiroshi Ito, na IEAB, e em 17/04/2013 figurou
+  entre os clérigos cujo abandono de comunhão com a IEAB foi declarado pelo bispo primaz Maurício Andrade.
+sources:
+- source: cant-ec-2007-03
+  quote: >-
+    Dom Ito ordena presbítero o rev. Leandro A. Campos *No* dia 21 de abril, dia de Santo Anselmo, Arcebispo de
+    Cantuária, comemorando o 89º aniversário de consagração do Templo da Paróquia de Todos os Santos, na cidade
+    de Santos, foi ordenado ao Presbiterado o então diácono rev. Leandro Antunes Campos.
+- source: cant-ec-2007-03
+  quote: D. Hiroshi Ito, bispo diocesano, celebrou a ordenação.
+- source: lbd-snieab-sinais
+  quote: >-
+    declara publicamente, em 17 de abril de 2013, o Abandono de Comunhão com a IGREJA EPISCOPAL ANGLICANA DO BRASIL/COMUNHÃO
+    ANGLICANA dos seguintes clérigos
 ordinations:
 - order: presbyterate
   date: '2007-04-21'

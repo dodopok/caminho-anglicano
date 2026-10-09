@@ -1,13 +1,35 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: lucas-schumacher
 name: Lucas Schumacher
-biography: Ex-clérigo da Igreja Anglicana Tradicional do Brasil.
+biography: >-
+  Foi clérigo da Igreja Anglicana Tradicional do Brasil, da qual se desligou. Na IEAB, foi ordenado diácono em 9/03/2025,
+  em Pomerode (SC), e presbítero em 12/04/2026, em Araranguá (SC), ambos por Humberto Maiztegui, bispo da Diocese
+  Meridional.
 sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Igreja já teve como clérigos os reverendos o frei J. Milton, Franciel Wille, Fabiano de Oliveira Ribeiro,
+    Lucas Schumacher, José Paulo Gomes Davidson Leandro, José Geraldo Alves dos Santos, Luiz Evandro Wathier, Adriano
+    Caldas Damasceno, e Hiago de Barros Pereira.
+  page: '136'
 - source: cant-novas-igrejas-2024
   quote: >-
     A Igreja já teve como clérigos os reverendos o frei J. Milton, Franciel Wille, Fabiano de Oliveira Ribeiro,
     Lucas Schumacher
   page: '136'
+- source: ieab-2025-schumacher-diac
+  quote: >-
+    No 1° Domingo da Quaresma, dia 9 de março, a cidade de Pomerode-SC foi palco de um momento especial na caminhada
+    ministerial da Igreja Episcopal Anglicana do Brasil (IEAB): a ordenação diaconal de Lucas Schumacher.
+- source: ieab-2025-schumacher-diac
+  quote: >-
+    A cerimônia aconteceu no Clube de Caça e Tiro Alto Rio do Testo, também conhecido como Salão Belz, e foi presidida
+    pelo bispo da Diocese Meridional, Humberto Maiztegui.
+- source: ieab-2026-schumacher-presb
+  quote: >-
+    No dia 12 de abril, a Paróquia Anglicana Cristo Redentor, em Araranguá (SC), acolheu com alegria a ordenação
+    presbiteral do Revdo. Lucas Schumacher. A celebração foi presidida pelo bispo diocesano, Humberto Maiztegui
+    Gonçalves
 ordinations:
 - order: diaconate
   date: '2025-03-09'

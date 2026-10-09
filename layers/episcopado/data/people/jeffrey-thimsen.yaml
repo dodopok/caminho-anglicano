@@ -1,6 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jeffrey-thimsen
 name: Jeffrey Thimsen
+biography: >-
+  Jeffrey Thimsen, de Spokane (Washington, EUA), foi ordenado diácono em 2008 e presbítero em 21 de junho de 2009,
+  ambas por Robinson Cavalcanti, na Diocese do Recife.
+sources:
+- source: drp2-novas-ordenacoes-2008-1sem
+  quote: >-
+    A Diocese do Recife agradece ao Senhor pelas novas Ordenações e a abertura de novos trabalhos ocorridos no primeiro
+    semestre de 2008.
+- source: drp2-novas-ordenacoes-2008-1sem
+  quote: Rev. Jeffrey Thimsen (Spokane, Wa, USA).
+- source: dard2-us-vi
+  quote: Diácono rev. Jeffey Thimsen, que Ordenarei Presbítero no próximo domingo
+- source: dard2-us-vii
+  quote: Culto de Ordenação Presbiteral do Rev. Jeffrey Thimsen
+- source: dard2-us-vii
+  quote: Spokane, Wa, EUA, 21 de junho de 2009
 ordinations:
 - order: diaconate
   date: '2008'
@@ -17,3 +33,20 @@ ordinations:
   notes: >-
     Ordenação diaconal no primeiro semestre de 2008, na lista da diocese; comunidade de origem: Spokane, Washington
     (EUA) (Arcediagado Norte-Americano). O ordenante não é nomeado; o bispo diocesano era Dom Robinson Cavalcanti.
+- order: presbyterate
+  date: '2009-06-21'
+  place: Spokane, Washington (EUA), Paróquia Christ the King
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: dard2-us-vi
+    quote: Diácono rev. Jeffey Thimsen, que Ordenarei Presbítero no próximo domingo
+  - source: dard2-us-vii
+    quote: Culto de Ordenação Presbiteral do Rev. Jeffrey Thimsen
+  - source: dard2-us-vii
+    quote: Spokane, Wa, EUA, 21 de junho de 2009
+  notes: >-
+    Ordenação presbiteral em Spokane no domingo 21/06/2009, no templo congregacional alugado pela Paróquia Christ
+    the King, com a presença de Paul Orrit e Roger Verhorn. A data decorre do diário de 17/06 ("no próximo domingo")
+    e do relato datado de 21/06/2009.

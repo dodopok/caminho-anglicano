@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: helena-lamego-gastal-de-castro-ramos
 name: Helena Lamego Gastal de Castro Ramos
+biography: >-
+  Helena Lamego Gastal de Castro Ramos foi ordenada diácona em 16 de dezembro de 2018 e presbítera em 12 de dezembro
+  de 2021, em Porto Alegre, pelo bispo Humberto Maiztegui, na IEAB.
+sources:
+- source: ieab-2021-helena
+  quote: >-
+    além da Catedral Nacional da Santíssima Trindade, onde foi ordenada diácona no dia 16 de dezembro de 2018.
+- source: ieab-2021-helena
+  quote: >-
+    No dia 12 de dezembro, 3º Domingo do Advento, a Igreja Episcopal Anglicana do Brasil, IEAB, ganhou mais uma
+    presbítera: Helena Lamego Gastal de Castro Ramos. A ordenação ocorreu na Paróquia do Redentor, em Porto Alegre.
+- source: ieab-2021-helena
+  quote: A liturgia, presidida pelo bispo da Diocese Meridional, Humberto Maiztegui Gonçalves
 ordinations:
 - order: diaconate
   date: '2018-12-16'

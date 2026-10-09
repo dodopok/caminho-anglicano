@@ -7,12 +7,43 @@ aliases:
 - William Atwood
 wikidata: Q85515490
 biography: >-
-  Rev. Côn. Bill Atwood, Secretário Geral da Ekklesia e da CAPAC em 2005; visitou o Recife em 27 a 29/9/2005.
+  Bill Atwood foi sagrado bispo em 30/08/2007, em Nairóbi, pelo arcebispo Benjamin Nzimbi, da Igreja Anglicana do
+  Quênia, junto com William Murdoch. Como cônego e secretário-geral da Ekklesia e da CAPAC, visitou o Recife em
+  27 a 29/09/2005 e representou o primaz do Cone Sul na entrega do credenciamento ao bispo Robinson Cavalcanti e
+  a 40 clérigos da diocese; em dezembro de 2015 participou do sínodo da Diocese do Recife, em ordenações.
 sources:
+- source: ta-2007-08-30-kenya
+  quote: >-
+    William Atwood and William Murdoch were today ordained bishops by Kenya’s Archbishop Benjamin Nzimbi (and, one
+    assumes, at least two other bishops).
+- source: mg-2007-08-31
+  quote: >-
+    Bernard Nzimbi, head of the Anglican Church in Kenya, entrenched his anti-gay position by consecrating Anglican
+    clerics Bill Atwood and Bill Murdoch as bishops last Thursday in Kenya.
+- source: nbc-ap-2007-08-30
+  quote: >-
+    American Bishops Will Atwood, right, and William Murdoch, left, are ordained at All Saints Cathedral in Nairobi,
+    Kenya on Thursday.
 - source: drp-convite-bill-2005
   quote: Com o Rev. Côn. BILL ATWOOD, Secretário Geral da Ekklesia e da CAPAC. TERÇA-FEIRA, dia 27/09
 - source: drp-convite-bill-2005
   quote: O Rev. Côn. Bill Atwood estará conosco no período de 27 a 29/09/2005.
+- source: drp2-carta-venables-2005
+  quote: >-
+    o Reverendo Cônego Bill Attwood, Secretário Geral da Ekklesia, representando o Primaz do Cone Sul, entregou
+    ao Revmo. Bispo Robinson Cavalcanti, e aos 40 clérigos dessa Diocese, cópia do documento de credenciamento
+- source: drp-carta-venables-pt-2005
+  quote: >-
+    Nós, 40 clérigos da Diocese do Recife queremos manifestar a nossa gratidão a V.Revma., por sua decisão de nos
+    ter sob a sua autoridade.
+- source: aac-2015-recife
+  quote: >-
+    On Friday, I preached at the Eucharist that opened the Synod and participated in the Ordination, laying hands
+    on one of the four Deacons. they also ordained three priests and licensed a number of lay ministers.
+- source: iabord-ancora-sinodo-2015
+  quote: >-
+    Neste mesmo evento o nosso pastor Eric (peruca) foi ordenado Diácono, e o nosso pastor Pedro Muniz foi instituído
+    Ministro Local, cerimonia presidida pelos Bispos + Miguel Uchoa, +Evilásio e + Flávio Adair, e Bill Atwood (Acna/Gafcon).
 ordinations:
 - order: episcopate
   date: '2007-08-30'
@@ -20,6 +51,8 @@ ordinations:
   jurisdiction: anglican-church-of-kenya
   office: suffragan
   principal_consecrator: benjamin-paul-mwanzia-nzimbi
+  co_consecrators:
+  - robinson-cavalcanti
   status: confirmed
   sources:
   - source: ta-2007-08-30-kenya
@@ -46,6 +79,15 @@ ordinations:
     quote: >-
       162c. Peter Hess Beckwith (1992-2010) que, em 2007, sagrou Bill Atwood como bispo sufragâneo da Diocese de
       All Saints' e, em 2012, sagrou Dom Evilásio Tenório da Silva Júnior como bispo (ver 162c).
+  - source: darl3-n4211
+    quote: >-
+      Província de Quênia Sagrou os Reverendos: Bill Attwood e Bill Murdock Bispos Sufragâneos Missionários para
+      os Estados Unidos
+  - source: darl3-n4219
+    quote: >-
+      Agora fui ao Quênia e Uganda participar da Sagração episcopal de alguns amigos e companheiros de luta, como
+      bispos missionários a congregações Anglicanas de linha ortodoxa nos Estados Unidos: Bill Attwood, Bill Murdoch
+      e John Guernesey
   discrepancies:
   - field: principal_consecrator
     value: peter-beckwith
@@ -64,7 +106,9 @@ ordinations:
     Uganda, RCA, Ruanda e Nigéria estavam presentes (M&G). Legenda de foto (OCR truncado: "Bill wood" = Bill Atwood,
     provavelmente). Corrobora pontes-estrangeiras.json (Atwood <- Nzimbi, 2007). O pôster põe Beckwith como sagrante
     principal; na sagração de Atwood no Quênia (2007) o sagrante principal provavelmente foi o arcebispo Benjamin
-    Nzimbi — verificar.
+    Nzimbi — verificar. Sagrado bispo sufragâneo missionário da Província do Quênia para os Estados Unidos, em culto
+    de cinco horas com oito primazes e trinta bispos; a notícia (31/08/2007) não dá o dia (outras fontes: 30/08/2007)
+    nem nomeia o sagrante principal. Robinson Cavalcanti foi um dos co-sagrantes.
 events:
 - type: other
   date: 2015-12
@@ -136,3 +180,30 @@ events:
     quote: >-
       o Reverendo Cônego Bill Attwood, Secretário Geral da Ekklesia, representando o Primaz do Cone Sul, entregou
       ao Revmo. Bispo Robinson Cavalcanti, e aos 40 clérigos dessa Diocese, cópia do documento de credenciamento
+- type: other
+  date: '2004-06-03'
+  description: >-
+    Robinson Cavalcanti subscreveu, entre outros, o documento "Chamados ao testemunho e à Fraternidade" (Documento
+    das Bahamas, Nassau, 03/06/2004), encaminhado à Comissão de Lambeth, que declara consumada a ruptura da Comunhão
+    Anglicana provocada pela Igreja Episcopal dos EUA e pela Igreja Anglicana do Canadá e conclama o Arcebispo de
+    Cantuária e os Primazes a responder; Robinson Cavalcanti também o traduziu.
+  status: confirmed
+  sources:
+  - source: darl2-bahamas
+    quote: Nassau, Bahamas, 03 de Junho de 2004.
+  - source: darl2-bahamas
+    quote: Robinson Cavalcanti (Brasil)
+  - source: darl2-bahamas
+    quote: '(Tradução: Dom Robinson Cavalcanti)'
+- type: other
+  date: 2005-09
+  description: >-
+    Em setembro de 2005 o bispo e os clérigos da Diocese Anglicana do Recife receberam, em cerimônia com o Cônego
+    Bill Attwood (secretário-geral da Ekklesia), uma carta-documento do Primaz da Igreja Anglicana do Cone Sul,
+    Gregory J. Venables, reconhecendo suas ordens e ministérios e colocando-os sob sua proteção e autoridade primacial.
+  status: confirmed
+  sources:
+  - source: darl3-hist6
+    quote: >-
+      Carta-Documento do Primaz da Igreja Anglicana do Cone Sul, Revmo. Gregory J. Venables , reconhecendo as suas
+      Ordens e Ministérios, e os colocando sob a sua proteção e autoridade primacial

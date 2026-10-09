@@ -1,6 +1,27 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: dinamerico-wanderley
 name: Dinamérico Wanderley
+biography: >-
+  Ministro leigo na Paróquia Anglicana do Espírito Santo em 2004, foi ordenado diácono em 16/06/2007 e presbítero
+  em fevereiro de 2008 por Robinson Cavalcanti. Atuou na Diocese Anglicana do Recife como ministro auxiliar e membro
+  da Equipe Pastoral.
+sources:
+- source: dard1-carta-bispos-2004
+  quote: Dinamérico Wanderley Ribeiro de Sousa Paróquia Anglicana do Espírito Santo
+- source: drp2-ord-diac-2007-06-16
+  quote: 'Sermão de Ordenação Diaconal de: Dinamérico Wanderley, Fábio Rego, João Peixoto e Ricardo Melo'
+- source: drp2-ord-diac-2007-06-16
+  quote: >-
+    Dom Robinson Cavalcanti, ose Bispo Diocesano Catedral Anglicana do Bom Samaritano Recife (PE), 16 de junho de
+    2007.
+- source: drp2-breves-01-2008
+  quote: 'Ordenou ao Presbiterado os Reverendos: Dinamérico Wanderley e Ricardo Melo;'
+- source: dard1-com-sul-2009a
+  quote: >-
+    Auxiliares: Rev. Geison Sávio de Holanda, Rev. Josias Junior, Rev. Dinamérico Wanderley, Rev. Ricardo Melo
+- source: darl3-n4617
+  quote: >-
+    compondo, também a Equipe Pastoral, os Reverendos: Dinamérico Wanderley, Josias Júnior e Ricardo Melo
 ordinations:
 - order: diaconate
   date: '2007-06-16'
@@ -25,4 +46,55 @@ ordinations:
     quote: Regressou das “férias” em 11.02
   - source: drp2-breves-01-2008
     quote: 'Ordenou ao Presbiterado os Reverendos: Dinamérico Wanderley e Ricardo Melo;'
-  notes: Entre 11/02/2008 e 03/03/2008, segundo o resumo das atividades do bispo; dia e local não informados.
+  - source: darb1-breves-2008
+    quote: 'Ordenou ao Presbiterado os Reverendos: Dinamérico Wanderley e Ricardo Melo;'
+  notes: >-
+    Entre 11/02/2008 e 03/03/2008, segundo o resumo das atividades do bispo; dia e local não informados. A nota
+    situa a ordenação após o retorno do bispo, em 11/02/2008, e antes do mês de março.
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: auxiliar
+  status: confirmed
+  sources:
+  - source: dard2-com-sul
+    quote: >-
+      Auxiliares: Rev. Geison Sávio de Holanda, Rev. Josias Junior, Rev. Dinamérico Wanderley, Rev. Ricardo Melo
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo (Piedade, Jaboatão dos Guararapes-PE; Arcediagado Sul). Página "Comunidades"
+    do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de
+    posse.
+- jurisdiction: ieab
+  role: other
+  role_description: ministro_leigo
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Dinamérico Wanderley Ribeiro de Sousa Paróquia Anglicana do Espírito Santo
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo. Consta na carta aberta de 17/09/2004, assinada pela Diocese do
+    Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os ministros
+    leigos / ministros encarregados (ainda não ordenado, segundo a carta).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_auxiliar
+  status: confirmed
+  sources:
+  - source: dard1-com-sul-2009a
+    quote: >-
+      Auxiliares: Rev. Geison Sávio de Holanda, Rev. Josias Junior, Rev. Dinamérico Wanderley, Rev. Ricardo Melo
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes). Consta na página de comunidades do Arcediagado
+    Sul capturada em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro da Equipe Pastoral
+  status: confirmed
+  sources:
+  - source: darl3-n4617
+    quote: >-
+      compondo, também a Equipe Pastoral, os Reverendos: Dinamérico Wanderley, Josias Júnior e Ricardo Melo
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes, PE). Integrante da Equipe Pastoral da
+    PAES em dezembro de 2008.

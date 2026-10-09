@@ -11,10 +11,28 @@ birth:
   - source: gacl-wp-davies
     quote: '| birth_date       = {{Birth date and age|1950|9|26|df=y}}'
 biography: >-
-  Ex-arcebispo de Sydney; bispo da Diocese of the Southern Cross desde 2022; conselheiro do Global Anglican Council.
+  Glenn Davies nasceu em 26/9/1950 e foi consagrado bispo em 21/12/2001, na Diocese de Sydney, da qual foi arcebispo
+  e metropolitano de Nova Gales do Sul de 23/8/2013 a 26/3/2021. Desde agosto de 2022 é bispo da Diocese da Cruz
+  do Sul e, em 2026, integra como conselheiro regional o Global Anglican Council.
 sources:
+- source: gacl-wp-davies
+  quote: '| birth_date       = {{Birth date and age|1950|9|26|df=y}}'
+- source: gacl-wp-davies
+  quote: '| consecration     = 21 December 2001'
+- source: gacl-wp-davies
+  quote: >-
+    He previously served as the Archbishop of Sydney and Metropolitan of the Province of New South Wales in the
+    Anglican Church of Australia from 23 August 2013 to 26 March 2021.
 - source: gace-gac-page
   quote: Since August 2022 he has served as bishop of the Diocese of the Southern Cross.
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    Its regional advisers all lead “extra-provincial or missionary districts connected to the GAFCON movement.”
+    They are Archbishop Kanishka Raffel of Sydney (a diocesan bishop in the Anglican Church of Australia), and Bishops
+    Andy Lines of the Anglican Network in Europe, Jay Behan of the Church of Confessing Anglicans in Aotearoa New
+    Zealand, Glenn Davies of the Diocese of the Southern Cross (which serves parishes that have broken away from
+    the Anglican Church of Australia), and Yassir Eric of EKKIOS, a missionary movement forming congregations in
+    predominantly Muslim regions.
 ordinations:
 - order: episcopate
   date: '2001-12-21'
@@ -29,6 +47,20 @@ ordinations:
     of the North Sydney from 2002 to 2014' e 'Archbishop of Sydney ... from 2003 to 2021' (o segundo ano inicial
     parece erro).
 affiliations:
+- jurisdiction: diocese-of-sydney
+  role: archbishop
+  start: '2013-08-23'
+  end: '2021-03-26'
+  status: probable
+  sources:
+  - source: gacl-wp-davies
+    quote: >-
+      He previously served as the Archbishop of Sydney and Metropolitan of the Province of New South Wales in the
+      Anglican Church of Australia from 23 August 2013 to 26 March 2021.
+  notes: >-
+    Arcebispo de Sydney e metropolita da Província de Nova Gales do Sul, na Igreja Anglicana da Austrália, antes
+    de passar à Diocese da Cruz do Sul (2022). O texto da Wikipédia dá o início como instalação em 23/08/2013 (eleito
+    arcebispo em 06/08/2013).
 - jurisdiction: dsc
   role: other
   role_description: bispo diocesano

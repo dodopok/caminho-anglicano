@@ -13,13 +13,25 @@ death:
     quote: '"Q767960": enwiki "William Sancroft"'
 wikidata: Q767960
 biography: >-
-  Arcebispo de Cantuária (sagrado em 1678), deposto em 1690 por não jurar fidelidade a Guilherme III; sagrante principal
-  de Trelawny (1685).
+  Sagrado em Lambeth, em 27/01/1678, por Henry Compton e outros bispos, foi arcebispo de Cantuária até ser suspenso
+  e deposto em 01/02/1690 por recusar o juramento de fidelidade a Guilherme III e Maria II; depois apoiou a sagração
+  de novos bispos não-juramentados. Morreu em 24/11/1693.
 sources:
 - source: stubbs-1897
+  quote: >-
+    a. d. 1678, Jan. 27. William Sancroft. Canterbury; dep. 1690, Feb. 1; d. 1693, Nov. 24 ; and William Thomas.
+    S. David's ; Worcester, 1683 ; d. 1689, June 25. Consecrated at Lambeth by Henry of London, Seth of Sarum, Joseph
+    of Peterborough, John of Rochester, Peter of Ely, Guy of Bristol, Thomas of Lincoln, and Thomas of Exeter ;
+    Reg. Sancroft, 7 ;
+- source: stubbs-1897
   quote: William Sancroft. Canterbury; dep. 1690, Feb. 1; d. 1693, Nov. 24
-- source: wikidata-api-2
-  quote: '"Q767960": enwiki "William Sancroft"'
+- source: perd10-wp-sancroft
+  quote: >-
+    Deprived of his office in 1690 for refusing to swear allegiance to [[William III of England|William III]] and
+    [[Mary II]]
+- source: perd10-wp-sancroft
+  quote: >-
+    he [[Nonjuring schism|refused to take the oath]] to them, and was accordingly suspended and deprived in 1690.
 ordinations:
 - order: episcopate
   date: '1678-01-27'
@@ -64,3 +76,18 @@ affiliations:
     quote: William Sancroft. Canterbury; dep. 1690, Feb. 1; d. 1693, Nov. 24
   notes: >-
     Datas de Stubbs: início = sagração ou ano da transferência; fim = ano da transferência seguinte, ou falecimento/deposição.
+events:
+- type: deposition
+  date: '1690'
+  description: >-
+    Suspenso e deposto do arcebispado de Cantuária em 1690 por recusar o juramento de fidelidade a Guilherme III
+    e Maria II; depois apoiou a sagração de novos bispos não-juramentados.
+  status: confirmed
+  sources:
+  - source: perd10-wp-sancroft
+    quote: >-
+      Deprived of his office in 1690 for refusing to swear allegiance to [[William III of England|William III]]
+      and [[Mary II]]
+  - source: perd10-wp-sancroft
+    quote: >-
+      he [[Nonjuring schism|refused to take the oath]] to them, and was accordingly suspended and deprived in 1690.

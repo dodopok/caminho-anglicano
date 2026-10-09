@@ -1,6 +1,12 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: lucia-dal-pont-sirtoli
 name: Lúcia Dal Pont Sirtoli
+biography: Lúcia Dal Pont Sirtoli foi ordenada diácona em 21/12/2003 e presbítera em 13/03/2005 na IEAB.
+sources:
+- source: rta-livro35
+  quote: 'Diaconato: 21 de dezembro de 2003.'
+- source: rta-livro35
+  quote: 'Presbiterado: 13 de março de 2005.'
 ordinations:
 - order: diaconate
   date: '2003-12-21'

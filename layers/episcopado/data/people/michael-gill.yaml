@@ -1,10 +1,17 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: michael-gill
 name: Michael Gill
-biography: Arcebispo (TAC) da África do Sul, de Joanesburgo; secretário do Colégio dos Bispos da TAC.
+biography: >-
+  Arcebispo da TAC na África do Sul, de Joanesburgo, e secretário do Colégio dos Bispos; contatado em 2021 pelo
+  clero de Natal, o que deu início ao diálogo com a TAC.
 sources:
 - source: cant-novas-igrejas-2024
   quote: o Arcebispo Michael Gill da África do Sul (Secretário do Colégio dos Bispos)
+  page: '81'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Junto com o reverendo Melque, em 2021 foi feito contato com o Arcebispo da África do Sul, Michael Gill, de Joanesburgo,
+    e assim, iniciou-se o diálogo com a TAC.
   page: '81'
 affiliations:
 - jurisdiction: tac

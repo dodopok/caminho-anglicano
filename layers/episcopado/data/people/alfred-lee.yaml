@@ -12,12 +12,25 @@ death:
   - source: wikidata-api-2
     quote: '"Q4723056": enwiki "Alfred Lee (bishop)"'
 wikidata: Q4723056
-biography: Primeiro bispo de Delaware (1841) e Presiding Bishop; sagrante principal de Alfred Magill Randolph.
+biography: >-
+  Alfred Lee foi sagrado bispo de Delaware em 12 de outubro de 1841, na Capela de São Paulo, em Nova York, por Alexander
+  Viets Griswold e outros bispos, e dirigiu a diocese até morrer, em Wilmington, em 12 de abril de 1887. Em 1884
+  sucedeu o bispo Smith como bispo presidente da Igreja Episcopal.
 sources:
 - source: perry-1895
+  quote: >-
+    He was consecrated bishop of Delaware in St. Paul's Chapel, New York, Oct. 12, 1 84 1, by Bishops Griswold,
+    Moore, Chase, Brownell, H. U. Onderdonk, Meade, and Mcllvaine.
+- source: wp-en-histlist
+  quote: >-
+    | [[Alfred Lee (bishop)|Alfred Lee]] | [[Alexander Viets Griswold|12]] [[Richard Channing Moore|14]] [[Philander
+    Chase|18]] | 1841
+- source: perry-1895
   quote: He died at Wilmington, April 12, 1887
-- source: wikidata-api-2
-  quote: '"Q4723056": enwiki "Alfred Lee (bishop)"'
+- source: perry-1895
+  quote: He was consecrated bishop of Delaware
+- source: perd03-wp-alfredlee
+  quote: In 1884 he succeeded Bishop Smith as presiding bishop of the Episcopal church.
 ordinations:
 - order: episcopate
   date: '1841-10-12'
@@ -61,3 +74,17 @@ affiliations:
     quote: He died at Wilmington, April 12, 1887
   notes: >-
     Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.
+- jurisdiction: tec
+  role: primate
+  start: '1884'
+  end: '1887'
+  end_reason: death
+  status: probable
+  sources:
+  - source: perd03-wp-alfredlee
+    quote: In 1884 he succeeded Bishop Smith as presiding bishop of the Episcopal church.
+  - source: perd03-wp-alfredlee
+    quote: he was chosen as the first Bishop of Delaware
+  notes: >-
+    Bispo presidente (Presiding Bishop) da Igreja Episcopal (10º). Foi também o primeiro bispo de Delaware, cargo
+    que ocupou de 1841 a 1887.

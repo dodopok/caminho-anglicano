@@ -1,6 +1,29 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ivaldo-sales
 name: Ivaldo Sales
+biography: >-
+  Ivaldo Sales foi ordenado diácono em dezembro de 2007, por Robinson Cavalcanti, no encerramento do XXVII Concílio
+  da Diocese do Recife. É presbítero dessa diocese, onde atuou como ministro auxiliar, inclusive na Paróquia Anglicana
+  São Paulo, e como assessor diocesano para Defesa da Vida e da Criação, e presidiu o CVC Pró-Vida. Integra a Ordem
+  de Santo Estevão (OSE), da qual foi secretário.
+sources:
+- source: drp2-colheita-ministerial-2007
+  quote: >-
+    Ao conferir a sagrada ordem do Diaconato aos reverendos: Ivaldo Sales (Recife), José Fernandes Filho (João Pessoa)
+    e John Nuzum (EUA) no Culto de Encerramento do XXVII Concílio da Diocese do Recife
+- source: darl1-6968
+  quote: >-
+    Rev. Ivaldo Sales da Silva é Presbítero na Diocese do Recife; Assessor Diocesano para Defesa da Vida e da Criação;
+    e membro da Ordem de Santo Estevão (OSE).
+- source: darn2-sao-paulo-casamento-2010
+  quote: >-
+    Paróquia Anglicana São Paulo (Reitora: Revda. Juciara Rodrigues ; Ministro Auxiliar: Rev. Ivaldo Sales )
+- source: darn2-consolacao-2012
+  quote: Ivaldo Sales (Assessor Especial de Defesa da Vida e da Integridade da Criação)
+- source: dard1-cvc-pro-vida
+  quote: na qualidade de presidente do CVC PRO VIDA
+- source: dard1-ose-2009a
+  quote: Rev Frei Ivaldo Sales (Secretário)
 ordinations:
 - order: diaconate
   date: 2007-12
@@ -14,3 +37,111 @@ ordinations:
       Ao conferir a sagrada ordem do Diaconato aos reverendos: Ivaldo Sales (Recife), José Fernandes Filho (João
       Pessoa) e John Nuzum (EUA) no Culto de Encerramento do XXVII Concílio da Diocese do Recife
   notes: 'Origem indicada: Recife. A nota foi publicada em 04/12/2007, antes do culto, e anuncia a ordenação.'
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: darl1-6968
+    quote: >-
+      Rev. Ivaldo Sales da Silva é Presbítero na Diocese do Recife; Assessor Diocesano para Defesa da Vida e da
+      Criação; e membro da Ordem de Santo Estevão (OSE).
+  notes: Em 2012-02-25.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: assessor diocesano para defesa da vida e da criação
+  status: confirmed
+  sources:
+  - source: darl1-6968
+    quote: >-
+      Rev. Ivaldo Sales da Silva é Presbítero na Diocese do Recife; Assessor Diocesano para Defesa da Vida e da
+      Criação; e membro da Ordem de Santo Estevão (OSE).
+  notes: Em 2012-02-25.
+- jurisdiction: ose
+  role: member
+  status: confirmed
+  sources:
+  - source: darl1-6968
+    quote: >-
+      Rev. Ivaldo Sales da Silva é Presbítero na Diocese do Recife; Assessor Diocesano para Defesa da Vida e da
+      Criação; e membro da Ordem de Santo Estevão (OSE).
+  - source: dard1-ose-2009a
+    quote: Rev. Ivaldo Sales, OSE
+  - source: dard1-ose-2010
+    quote: Rev. Ivaldo Sales, OSE
+  notes: >-
+    Membro da Ordem Evangélica de Santo Estevão Mártir em 2012-02-25. Consta na relação de membros da Ordem de Santo
+    Estevão capturada em jan/2009 e na publicada em 01/07/2009 (atualizada em 18/11/2010). Listado entre os clérigos.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro auxiliar
+  status: confirmed
+  sources:
+  - source: darn2-sao-paulo-casamento-2010
+    quote: >-
+      Paróquia Anglicana São Paulo (Reitora: Revda. Juciara Rodrigues ; Ministro Auxiliar: Rev. Ivaldo Sales )
+  notes: 'Local: Paróquia Anglicana São Paulo, Nova Descoberta, Recife. Ministro auxiliar em 28/11/2010.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: assessor especial de Defesa da Vida e da Integridade da Criação
+  status: confirmed
+  sources:
+  - source: darn2-consolacao-2012
+    quote: Ivaldo Sales (Assessor Especial de Defesa da Vida e da Integridade da Criação)
+  notes: Cargo atestado em 06/02/2012.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro auxiliar
+  status: confirmed
+  sources:
+  - source: dard2-com-centro
+    quote: 'Ministro auxiliar: Rev. Ivaldo Sales'
+  notes: >-
+    Local: Paróquia Anglicana São Paulo (Alto do Eucalipto, Recife-PE; Arcediagado Centro). Página "Comunidades"
+    do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de
+    posse.
+- jurisdiction: ose
+  role: other
+  role_description: secretario_da_ordem
+  status: confirmed
+  sources:
+  - source: dard1-ose-2009a
+    quote: Rev Frei Ivaldo Sales (Secretário)
+  - source: dard1-ose-2010
+    quote: Rev Frei Ivaldo Sales (Secretário)
+  notes: >-
+    Consta na relação de membros da Ordem de Santo Estevão capturada em jan/2009 e na publicada em 01/07/2009 (atualizada
+    em 18/11/2010). Integra o cabido da Ordem.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_auxiliar
+  status: confirmed
+  sources:
+  - source: dard1-com-sul-2009a
+    quote: 'Auxiliares: Rev. Ivaldo Sales, Rev. Hermany Soares'
+  notes: >-
+    Local: Catedral Anglicana Bom Samaritano (Recife). Consta na página de comunidades do Arcediagado Sul capturada
+    em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_auxiliar
+  status: confirmed
+  sources:
+  - source: dard1-com-sul-2009a
+    quote: 'Ministro Encarregado: Rev. Washington Franco Ministro Auxiliar: Rev. Ivaldo Sales'
+  notes: >-
+    Local: Ponto Missionário Anglicano da Santíssima Trindade (Maceió-AL). Consta na página de comunidades do Arcediagado
+    Sul capturada em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presidente_do_cvc_pro_vida
+  status: confirmed
+  sources:
+  - source: dard1-cvc-pro-vida
+    quote: na qualidade de presidente do CVC PRO VIDA
+  - source: dard1-cvc-pro-vida
+    quote: Ivaldo Sales da Silva
+  notes: >-
+    Local: Centro de Vivência Cristã Pró-Vida (Paróquia Anglicana São Paulo, Recife). Informe sem data (capturado
+    em jan/2009); o texto diz que a capela do centro funciona na Paróquia Anglicana São Paulo.

@@ -1,6 +1,16 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcos-barros-de-souza
 name: Marcos Barros de Souza
+biography: >-
+  Marcos Barros de Souza foi ordenado diácono em 17/02/2001 por Robinson Cavalcanti e consta no clero da Diocese
+  Anglicana da Amazônia (IEAB).
+sources:
+- source: rcor-drv-ord-manoel-frederico
+  quote: MANOEL, FREDERICO, CARLOS TOMÉ E MARCOS BARROS
+- source: rcor-drv-ord-manoel-frederico
+  quote: 'Local: Igreja de Cristo Pentecostal do Brasil – 17.02.2001'
+- source: daa-clero
+  quote: Revdo. Marcos Barros de Souza.
 ordinations:
 - order: diaconate
   date: '2001-02-17'

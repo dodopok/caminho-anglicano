@@ -2,6 +2,17 @@
 id: diocese-de-kigali
 name: Diocese de Kigali
 type: diocese
+description: Diocese cujo bispo, Emmanuel Kolini, foi primaz de Ruanda de 1998 a janeiro de 2011.
+sources:
+- source: gacl-wp-kolini
+  quote: '| title            = Primate of Rwanda, Bishop of Kigali
+
+    | term             = 1998 - January 2011'
+- source: gacl-newtimes-2010-shyira
+  quote: >-
+    The retired Archbishop of Anglican Church in Rwanda, Emmanuel Kolini, assisted by bishops from other dioceses
+    presided over the ceremony. Also present was the incoming Archbishop of the Anglican Church of Rwanda, Onesphore
+    Rwaje.
 relations:
 - type: part_of
   target: pear

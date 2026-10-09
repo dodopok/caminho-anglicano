@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: arcediagado-norte-americano
+name: Arcediagado Norte-Americano
+type: diocese
+tradition: anglican
+country: US
+founded:
+  date: '2005'
+  sources:
+  - source: dard2-hist6
+    quote: vindo a se constituir o Arcediagado dos EUA, sob a liderança do Venerável Arcediago Rev. Ducan Clark
+  - source: dard2-us-iii
+    quote: >-
+      o Arcediagado Norte-Americano de nossa Diocese cessa de existir a partir do próximo dia 24, para se integrar
+      à nova Província
+  - source: dard2-arc-na
+    quote: 'Arcediagado Especial da América do Norte - EUA Arcediago : Ven. Arc. Rev. Duncan Clark'
+dissolved:
+  date: '2009-06-24'
+  sources:
+  - source: dard2-hist6
+    quote: vindo a se constituir o Arcediagado dos EUA, sob a liderança do Venerável Arcediago Rev. Ducan Clark
+  - source: dard2-us-iii
+    quote: >-
+      o Arcediagado Norte-Americano de nossa Diocese cessa de existir a partir do próximo dia 24, para se integrar
+      à nova Província
+  - source: dard2-arc-na
+    quote: 'Arcediagado Especial da América do Norte - EUA Arcediago : Ven. Arc. Rev. Duncan Clark'
+description: >-
+  Arcediagado da Diocese Anglicana do Recife formado em 2005 por paróquias e missões dos Estados Unidos, sob a liderança
+  do arcediago Duncan Clark, e dissolvido em 24/06/2009.
+sources:
+- source: dard2-hist6
+  quote: vindo a se constituir o Arcediagado dos EUA, sob a liderança do Venerável Arcediago Rev. Ducan Clark
+- source: dard2-us-iii
+  quote: >-
+    o Arcediagado Norte-Americano de nossa Diocese cessa de existir a partir do próximo dia 24, para se integrar
+    à nova Província
+- source: darb2-breves-16
+  quote: >-
+    além do nosso Arcediago para os EUA, Ven. Rev. Duncan Clark, e as Diáconas Permanentes Cecelia Morris e Ann
+    Stewart Hamphill
+relations:
+- type: part_of
+  target: diocese-anglicana-recife
+  status: confirmed
+  sources:
+  - source: darb2-breves-01
+    quote: sendo recebido pelo novo Reitor da Paróquia Anglicana de St. Stephens, o canadense Rev. Paul Orrit
+  - source: darb2-breves-01
+    quote: >-
+      entreguei o Certificado de filiação da Paróquia a nossa Diocese aos Guardiãos e empossei formalmente o Rev.
+      Paul Orrit como Reitor
+  - source: darb2-breves-16
+    quote: >-
+      além do nosso Arcediago para os EUA, Ven. Rev. Duncan Clark, e as Diáconas Permanentes Cecelia Morris e Ann
+      Stewart Hamphill
+  - source: darb2-breves-05
+    quote: Dona e Cecilia (Diáconas Permanentes)
+  - source: darb2-breves-02
+    quote: Ministro Encarregado da Missão "Christ The King" (50 membros) Rev. Jerry Cimijotti
+  - source: darb2-breves-04
+    quote: >-
+      O Ponto Missionário Anglicano no Vale de Walla Walla tem apenas seis meses de funcionamento, em uma Capela
+      na casa do Rev. Roger Williams, com 15 membros
+  - source: darb2-breves-04
+    quote: aposentado da ECUSA/TEC há muitos anos
+  - source: darb2-breves-05
+    quote: >-
+      A Missão Anglicana da Palavra Viva, nossa comunidade em Eugene, Estado de Oregon, que não pude visitar, veio
+      em uma caravana de dez pessoas, liderada pelos Reverendos: Richard Haynes e Scott Browning
+  - source: darb2-breves-05
+    quote: Scott Browning (este em transferência canônica para a Diocese do Recife)
+  - source: dard2-hist6
+    quote: vindo a se constituir o Arcediagado dos EUA, sob a liderança do Venerável Arcediago Rev. Ducan Clark
+  - source: dard2-us-iii
+    quote: >-
+      As 05 Paróquias que integram o Arcediagado Norte-Americano da Diocese do Recife farão parte de 03 Dioceses
+      diferentes na nova estrutura local
+  date: '2005'
+  end: '2009-06-24'
+  led_by:
+  - duncan-clark
+  notes: >-
+    O ano 2005 vem do relato de Robinson sobre a recepção das comunidades norte-americanas naquele ano (publicado
+    em 2006); o fim, 24/06/2009, é a data anunciada por ele em junho de 2009 para a integração à ACNA, ainda futura
+    no momento do diário.

@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marcos-carvalho
+name: Marcos Carvalho
+aliases:
+- Marcos Aurélio de Araújo Carvalho
+biography: >-
+  Marcos Carvalho foi postulante ao ministério ordenado e, em 2011, secretário diocesano de Homens na Diocese Anglicana
+  do Recife.
+sources:
+- source: darn2-marcos-carvalho-2011
+  quote: Rev. Marcos Carvalho+ Secretário Diocesano de Homens
+- source: dard2-clero-post
+  quote: Postulantes ao Ministério Ordenado … Marcos Aurélio de Araújo Carvalho
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário diocesano de Homens
+  status: confirmed
+  sources:
+  - source: darn2-marcos-carvalho-2011
+    quote: Rev. Marcos Carvalho+ Secretário Diocesano de Homens
+  notes: >-
+    Convite de 30/06/2011 ao Encontro Diocesano de Homens (06/08/2011, Paróquia Anglicana do Salvador, João Pessoa).
+    Em 2012 o cargo é de outra pessoa.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: postulante
+  status: confirmed
+  sources:
+  - source: dard2-clero-post
+    quote: Postulantes ao Ministério Ordenado … Marcos Aurélio de Araújo Carvalho
+  notes: >-
+    Lista "Postulantes ao Ministério Ordenado", publicada em 13/08/2009 e atualizada em 19/01/2010 (captura de 18/02/2010);
+    o vínculo vale para esse período.

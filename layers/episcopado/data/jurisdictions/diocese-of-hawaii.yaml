@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-hawaii
+name: Diocese of Hawaii
+type: diocese
+tradition: anglican
+country: US
+description: >-
+  Diocese da Igreja Episcopal dos EUA em que Edmond Browning, eleito bispo em 1976, foi instalado em 1º de agosto
+  desse ano na Catedral de Santo André, em Honolulu.
+sources:
+- source: wp-browning
+  quote: >-
+    In 1976, he was elected Bishop of Hawaii and was installed at the Cathedral Church of Saint Andrew, Honolulu
+    on August 1 of that year.
+relations:
+- type: part_of
+  target: tec
+  status: probable
+  sources:
+  - source: wp-browning
+    quote: >-
+      In 1976, he was elected Bishop of Hawaii and was installed at the Cathedral Church of Saint Andrew, Honolulu
+      on August 1 of that year.

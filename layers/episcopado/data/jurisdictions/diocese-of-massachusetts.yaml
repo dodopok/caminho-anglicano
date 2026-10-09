@@ -2,6 +2,16 @@
 id: diocese-of-massachusetts
 name: Diocese of Massachusetts
 type: diocese
+description: >-
+  Diocese da TEC que teve William Lawrence como bispo a partir de 1893 e Henry Knox Sherrill, consagrado seu nono
+  bispo em 14 de outubro de 1930.
+sources:
+- source: wp-en-histlist
+  quote: >-
+    | [[William Lawrence (bishop)|William Lawrence]] | [[John Williams (bishop of Connecticut)|54]] [[Thomas Marsh
+    Clark|63]] [[Henry A. Neely|83]] | 1893
+- source: tlc-1930-10-25
+  quote: Dr. Henry Knox Sherrill Consecrated Ninth Bishop of Massachusetts
 relations:
 - type: part_of
   target: tec

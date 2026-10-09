@@ -13,13 +13,28 @@ death:
     quote: '"Q8005070": enwiki "William Barlow (bishop of Chichester)"'
 wikidata: Q8005070
 biography: >-
-  Bispo de St David's (1536), Bath and Wells (1549-1554) e Chichester (1559); sagrante principal de Parker. O registro
-  da sua própria sagração não foi encontrado.
+  Bispo de St David's (1536), Bath and Wells (1549-1554) e Chichester (1559 até morrer, em 10/12/1569). O registro
+  de sua sagração não foi encontrado; Stubbs fixa a data por prova indireta em junho de 1536. Presidiu a sagração
+  de Matthew Parker em 17/12/1559, objeto de controvérsia sobre o Registro de Lambeth e o caráter episcopal de Barlow.
 sources:
 - source: stubbs-1897
   quote: William Barlow. S. David's; Bath, 1 549-1554 ; Chichester, 1559 ; d. 1569, Dec. 10.
-- source: wikidata-api-2
-  quote: '"Q8005070": enwiki "William Barlow (bishop of Chichester)"'
+- source: stubbs-1897
+  quote: >-
+    Record not forthcoming ; the date is fixed, by collateral proof, to June 1 1, 18, or 26. Barlow's precedence
+    is between Norwich (Repps) and S. Asaph (Parfew);
+- source: jenkins-1922-barlow
+  quote: If Barlow was consecrated it is simpler to assume that it was on June 11 than June 18 or 25.
+  page: '20'
+- source: ce-anglican-orders
+  quote: >-
+    Mason in his "Vindiciae Ecclesiae Anglicanae" replied on the Anglican side, in 1613, and was the first to call
+    attention, at all events effectively, to the entry in Parker's "Register" of his consecration on 17 December,
+    1559, in the private chapel at Lambeth.
+- source: ce-anglican-orders
+  quote: >-
+    In regard to Barlow's episcopal character, the Anglican case is that although there is no record of his consecration
+    in the "Archiepiscopal Register", this only proves that the "Register" was very negligently kept;
 ordinations:
 - order: episcopate
   date: '1536-06-11'

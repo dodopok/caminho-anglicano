@@ -1,10 +1,62 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ian-meldrum
 name: Ian Meldrum
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Ian Meldrum foi ordinando do bispo Edmund Knox Sherrill e estudou no Núcleo de Estudos Anglicanos (NAET). Em 1997,
+  no Concílio Extraordinário da Diocese Anglicana do Recife, na Ilha de Itaparica (BA), esteve entre os três nomes
+  indicados à eleição de bispo coadjutor, ao lado de Maurício Andrade e Robinson Cavalcanti, que foi eleito. Em
+  23 de agosto de 2005 foi incluído entre os clérigos excluídos da comunhão da IEAB, tendo declarado manter plena
+  comunhão com Robinson Cavalcanti. Integrou a equipe pastoral da Paróquia Anglicana Água Viva e se aposentou em
+  maio de 2009.
 sources:
-- source: drp-boletim-oracao-2006
-  quote: 'Orar pela Paróquia Anglicana Água Viva; pelos Reverendos: Siméa e Ian Meldrum'
+- source: dard2-hist2
+  quote: >-
+    onde estudaram três dos seus ordinandos, os futuros reverendos: Ian Meldrum, Robinson Cavalcanti e Antônio Carlos
+    (da Bahia)
+- source: drv-resgatando-ii
+  quote: >-
+    onde estudaram três dos seus ordinandos, os futuros reverendos: Ian Meldrum, Robinson Cavalcanti e Antônio Carlos
+    (da Bahia)
+- source: drv-resgatando-iv
+  quote: >-
+    Na ocasião foram indicados 3 nomes: os reverendos Maurício Andrade, Ian Meldrum e Robinson Cavalcanti
+- source: drv-resgatando-iv
+  quote: >-
+    Na véspera da festa de São Pedro de 1997, foi eleito como terceiro Bispo da Diocese Anglicana do Recife (o primeiro
+    eleito aqui e o primeiro nativo) o Rev. Robinson Cavalcanti, por maioria absoluta das urnas do clero e dos leigos,
+    posteriormente homologado pela maioria dos Bispos e dos Conselhos Diocesanos da Província
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Ian Meldrum … Os clérigos não atenderam à convocação e declararam,
+    via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo plena comunhão
+    com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Ian Meldrum … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: dard2-com-norte
+  quote: Paróquia Anglicana Água Viva Revda. Siméa Meldrum Rev. Ian Meldrum
+- source: darn2-ian-meldrum-2009
+  quote: >-
+    quando da aposentadoria do Rev. Ian Meldrum , vem expressar Ações de Graças por sua vida e profícuo ministério
+ordinations:
+- order: diaconate
+  date: null
+  jurisdiction: ieab-dar
+  ordained_by: edmund-knox-sherrill
+  status: probable
+  sources:
+  - source: dard2-hist2
+    quote: >-
+      onde estudaram três dos seus ordinandos, os futuros reverendos: Ian Meldrum, Robinson Cavalcanti e Antônio
+      Carlos (da Bahia)
+  notes: >-
+    Ian Meldrum estudou no Núcleo de Estudos Anglicanos (NAET) criado pelo bispo Sherrill como ordinando, e depois
+    foi ordenado; Robinson Cavalcanti situa os ordenados da diocese no período Sherrill (1976-1985). A ordem exata
+    (aqui, diaconato, a primeira) e a data não constam; o ordenante é entendido como o bispo diocesano da época.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -24,13 +76,17 @@ affiliations:
       via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo plena comunhão
       com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
+  - source: dard1-com-norte-2009a
+    quote: Revda. Siméa Meldrum Rev. Ian Meldrum
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados. Local: Paróquia Anglicana Água Viva (Olinda). Clérigo
     citado como pastor/ministro da comunidade em out/nov de 2006 (boletim de oração da Secretaria de Intercessão).
     Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson
     Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005
-    é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
+    é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata. Local: Paróquia Anglicana Água Viva
+    (Olinda). Consta na página de comunidades do Arcediagado Norte capturada em 03/01/2009 (sem data de publicação
+    visível). A página lista os dois sem indicar função.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -49,6 +105,41 @@ affiliations:
     Brasil e, conseqüentemente, das Sagradas Ordens' por abandono de comunhão. motivo_fim 'deposicao' porque o efeito
     é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
     adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado.
+- jurisdiction: diocese-anglicana-recife
+  role: priest
+  end: 2009-05
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: darn2-ian-meldrum-2009
+    quote: >-
+      quando da aposentadoria do Rev. Ian Meldrum , vem expressar Ações de Graças por sua vida e profícuo ministério
+  notes: >-
+    Aposentadoria do ministério presbiteral comunicada em nota do bispo diocesano Robinson Cavalcanti datada de
+    22/05/2009; o mês é o da nota.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro da equipe pastoral
+  status: confirmed
+  sources:
+  - source: dard2-com-norte
+    quote: Paróquia Anglicana Água Viva Revda. Siméa Meldrum Rev. Ian Meldrum
+  notes: >-
+    Local: Paróquia Anglicana Água Viva (Olinda-PE; Arcediagado Norte). Página "Comunidades" do arcediagado, criada
+    em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse. A página lista os
+    dois nomes sob a paróquia, sem indicar o cargo.
+- jurisdiction: ieab-dar
+  role: clergy
+  status: probable
+  sources:
+  - source: darl3-hist2
+    quote: >-
+      onde estudaram três dos seus ordinandos, os futuros reverendos: Ian Meldrum, Robinson Cavalcanti e Antônio
+      Carlos (da Bahia)
+  notes: >-
+    Local: Diocese Setentrional, Recife. Ordinando do bispo Sherrill, formado no NAET (Núcleo de Estudos Anglicanos),
+    durante o período Sherrill (1976-1985). Em 1997 foi um dos três nomes indicados ao Concílio Extraordinário que
+    elegeu o bispo coadjutor. O texto não indica a ordem recebida nem a data.
 events:
 - type: other
   date: 1977/1985
@@ -125,3 +216,20 @@ events:
     quote: >-
       No décimo escrutínio, tensão para a leitura do último e decisivo voto: consegui a maioria. O Bispo Clóvis
       proclama o eleito.
+- type: other
+  date: 1997-06
+  description: >-
+    Pacto de Paudalho e eleição episcopal de 1997: o Concílio Extraordinário (final de junho de 1997, Ilha de Itaparica,
+    BA) elegeu bispo coadjutor, "na véspera da festa de São Pedro", o Rev. Robinson Cavalcanti, entre os três nomes
+    indicados (Maurício Andrade, Ian Meldrum e Robinson Cavalcanti); a eleição foi homologada pela maioria dos bispos
+    e dos Conselhos Diocesanos da Província.
+  status: confirmed
+  sources:
+  - source: darl3-hist3
+    quote: >-
+      Na ocasião foram indicados 3 nomes: os reverendos Maurício Andrade, Ian Meldrum e Robinson Cavalcanti
+  - source: darl3-hist3
+    quote: >-
+      Na véspera da festa de São Pedro de 1997, foi eleito como terceiro Bispo da Diocese Anglicana do Recife (o
+      primeiro eleito aqui e o primeiro nativo) o Rev. Robinson Cavalcanti , por maioria absoluta das urnas do clero
+      e dos leigos, posteriormente homologado pela maioria dos Bispos e dos Conselhos Diocesanos da Província

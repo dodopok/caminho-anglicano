@@ -13,13 +13,26 @@ death:
     quote: '"Q199894": enwiki "Thomas Cranmer"'
 wikidata: Q199894
 biography: >-
-  Arcebispo de Cantuária (1533-1556); sagrante principal de Scory e Coverdale (1551). Na Wikidata, a cadeia de Cranmer
-  sobe até Henry Beaufort.
+  Sagrado bispo em 30/03/1533, em Westminster, por John Longland e outros bispos, foi arcebispo de Cantuária até
+  morrer, em 21/03/1556. O registro da sagração de William Barlow, sagrante principal de Parker, não consta no registro
+  de Cranmer: Stubbs a fixa por prova indireta em junho de 1536, e autores católicos apontam a ausência dos documentos
+  que deveriam registrá-la.
 sources:
 - source: stubbs-1897
+  quote: >-
+    a. d. 1533, Mar. 30. Thomas Cranmer. Canterbury; d. 1556, March 21. Consecrated at S. Stephen's, Westminster,
+    by John of Lincoln, John of Exeter, and Henry of S. Asaph ; Reg. Cranmer, fo. 4.
+- source: stubbs-1897
   quote: Thomas Cranmer. Canterbury; d. 1556, March 21.
-- source: wikidata-api-2
-  quote: '"Q199894": enwiki "Thomas Cranmer"'
+- source: stubbs-1897
+  quote: >-
+    Record not forthcoming ; the date is fixed, by collateral proof, to June 1 1, 18, or 26. Barlow's precedence
+    is between Norwich (Repps) and S. Asaph (Parfew);
+- source: ce-anglican-orders
+  quote: >-
+    The Catholic writers, on the other hand, point out that it is not merely the absence of just a single entry
+    in Cranmer's "Register" which stands against him, but the absence of an entire set of documents which should
+    have borne reference to his consecration if it occurred;
 ordinations:
 - order: episcopate
   date: '1533-03-30'

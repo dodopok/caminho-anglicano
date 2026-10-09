@@ -1,6 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: anderson-soares-da-silva
 name: Anderson Soares da Silva
+biography: >-
+  Anderson Soares da Silva foi ordenado diácono em 01/11/2025 pelo bispo João Câncio Peixoto Filho, na Paróquia
+  do Semeador (Olinda), na Diocese Anglicana do Recife (IEAB-DAR), e em março de 2026 tornou-se ministro encarregado.
+sources:
+- source: dar-2025-asoares
+  quote: >-
+    No último sábado (01/11) o clero e o povo da Diocese Anglicana do Recife celebraram na Paróquia do Semeador
+    (Olinda/PE) a ordenação ao Diaconato do Ministro Pastoral Anderson Soares.
+- source: dar-2026-madalena
+  quote: Em novembro de 2025, foi ordenado diácono por Dom João Câncio Peixoto.
+- source: dar-2026-madalena
+  quote: em março de 2026, o diácono Anderson Soares tornou-se ministro encarregado.
 ordinations:
 - order: diaconate
   date: '2025-11-01'

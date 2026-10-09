@@ -1,10 +1,39 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: lindinalva-medeiros-de-oliveira
 name: Lindinalva Medeiros de Oliveira
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Lindinalva Medeiros de Oliveira foi ordenada diácona em 18/06/2005 e presbítera em 08/04/2006 por Robinson Cavalcanti,
+  na Diocese Anglicana do Recife (DAR). Integrou desde agosto de 2005 a equipe pastoral de uma paróquia, esteve
+  à frente de uma missão como ministra encarregada e foi pároca da Paróquia Anglicana do Salvador, em João Pessoa.
+  Também aparece como membro do tribunal eclesiástico e do conselho diocesano.
 sources:
-- source: drv-nota-esclarecimento-2006
-  quote: Lindinalva Medeiros de Oliveira
+- source: drp2-ord-diac-jp-2005
+  quote: >-
+    Sermão de Ordenações Diaconais Cláudio Brito, Flávio Adair Torres, Gustavo Leite Castello Branco, Lindinalva
+    Medeiros e Raimundo Figueiredo Con-Catedral Anglicana da Ressurreição João Pessoa (PB), 18 de Junho de 2005.
+- source: drp2-ord-diac-jp-2005
+  quote: >-
+    Este é um momento especial para o Anglicanismo na Paraíba, com a Ordenação de cinco Diáconos – todos provados
+    e aprovados – e, pela primeira vez, uma lídima representante do sexo feminino.
+- source: drp2-convite-presb-jp-2006
+  quote: >-
+    convida V.Sa. para o Culto Solene de Ordenação Presbiteral dos Reverendos: Cláudio Luiz Figueiredo de Brito
+    Flávio Adair Torres Soares Lindinalva Medeiros de Oliveira Raimundo Francisco de Figueiredo Local: Con-Catedral
+    Anglicana da Ressurreição
+- source: drp2-convite-presb-jp-2006
+  quote: 'Data: 08 de abril de 2006'
+- source: drp2-breves-06-2005
+  quote: >-
+    O Rev. Manoel Nunes, e toda a Paróquia, foram abençoados com a chegada da Revda. Lindinalva Medeiros àquela
+    equipe pastoral.
+- source: drp2-breves-03-2006
+  quote: A Revda. Lindinalva Oliveira, que está à frente da missão
+- source: dard2-com-pb
+  quote: 'PARÓQUIA ANGLICANA DO SALVADOR Pároca: Revda. Lindinalva Medeiros de Oliveira'
+- source: dard1-eletivos-2009a
+  quote: Rev. Antônio Costa de Oliveira Revda. Lindinalva Medeiros de Oliveira
+- source: dard1-eletivos-2009a
+  quote: 'Membros Clericais: Revda. Lindinalva Medeiros (4 anos)'
 ordinations:
 - order: diaconate
   date: '2005-06-18'
@@ -74,3 +103,56 @@ affiliations:
   notes: >-
     Local: Ponto Missionário Anglicano de Santo Estevão, Assentamento Antônio Conselheiro, São Miguel de Taipu-PB.
     À frente do ponto missionário em fevereiro de 2006.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco
+  status: probable
+  sources:
+  - source: darn2-salvador-2012
+    quote: PARÓQUIA ANGLICANA DO SALVADOR João Pessoa (PB) Revda. Lindinalva de Oliveira+
+  notes: >-
+    Local: Paróquia Anglicana do Salvador, João Pessoa-PB. Contato do 2º Encontro de Adolescentes com Cristo (21
+    a 23/09/2012); a nota não diz o título.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároca
+  status: confirmed
+  sources:
+  - source: dard2-com-pb
+    quote: 'PARÓQUIA ANGLICANA DO SALVADOR Pároca: Revda. Lindinalva Medeiros de Oliveira'
+  notes: >-
+    Local: Paróquia Anglicana do Salvador (João Paulo II, João Pessoa-PB; Arcediagado PB/RN/CE). Página "Comunidades"
+    do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de
+    posse.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: tribunal_eclesiastico
+  status: probable
+  sources:
+  - source: dard1-eletivos-2009a
+    quote: Rev. Antônio Costa de Oliveira Revda. Lindinalva Medeiros de Oliveira
+  notes: >-
+    Local: Tribunal Eclesiástico (mandato de 2 anos). Consta na lista "Cargos Eletivos (Sugestões ao Plenário)"
+    capturada em jan/2009; são sugestões ao plenário do Concílio, e a página não informa se foram aprovadas nem
+    a data.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: conselho_diocesano
+  status: probable
+  sources:
+  - source: dard1-eletivos-2009a
+    quote: 'Membros Clericais: Revda. Lindinalva Medeiros (4 anos)'
+  notes: >-
+    Local: Conselho Diocesano (membro clerical, mandato de 4 anos). Consta na lista "Cargos Eletivos (Sugestões
+    ao Plenário)" capturada em jan/2009; são sugestões ao plenário do Concílio, e a página não informa se foram
+    aprovadas nem a data.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_encarregado
+  status: confirmed
+  sources:
+  - source: dard1-com-pbrnce-2009a
+    quote: 'Ministra Encarregada: Revda. Lindinalva Medeiros de Oliveira'
+  notes: >-
+    Local: Paróquia Anglicana do Salvador (João Pessoa). Consta na página de comunidades do Arcediagado PB/RN/CE
+    capturada em 03/01/2009 (sem data de publicação visível).

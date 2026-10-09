@@ -1,6 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: osiel-ferreira-de-assuncao
 name: Osiel Ferreira de Assunção
+biography: >-
+  Reverendo de Batalha (PI), ingressou na IEAB em 28 de novembro de 2020, com o acolhimento da Missão Anglicana
+  São Paulo Apóstolo. Em 8 de agosto de 2026 o bispo João Peixoto reconheceu suas ordens sacerdotais, e ele passou
+  a integrar o clero da Diocese Anglicana do Recife.
+sources:
+- source: dar-2020-barbetta
+  quote: >-
+    destacamos o Reverendo Osiel Assunção, da cidade de Batalha no Piauí, que aproveitou a celebração para oficializar
+    a sua entrada para a Igreja Episcopal Anglicana do Brasil
+- source: dar-2026-osiel
+  quote: >-
+    A celebração foi marcada pelo Reconhecimento das Ordens do Rev. Osiel Ferreira de Assunção, que passa oficialmente
+    a ser parte do clero ordenado da Diocese Anglicana do Recife.
+- source: dar-2026-osiel-conv
+  quote: >-
+    No sábado (8/8), em celebração na capela da Missão, será reconhecida as ordens sacerdotais do Rev. Osiel Ferreira
+    de Assunção.
+- source: dar-2026-osiel
+  quote: que passa oficialmente a ser parte do clero ordenado da Diocese Anglicana do Recife.
 affiliations:
 - jurisdiction: ieab
   role: clergy

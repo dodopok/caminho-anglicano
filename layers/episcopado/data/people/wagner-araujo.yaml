@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: wagner-araujo
+name: Wagner Cipriano Araújo
+aliases:
+- Wagner Araújo
+- Wagner Cipriano
+biography: >-
+  Clérigo da Diocese Anglicana do Recife atuante em pontos missionários anglicanos de Santo André e de São Paulo
+  (2010-2011), em processo de incardinação para reconhecimento de ordem em fevereiro de 2011.
+sources:
+- source: darn2-sao-judas-2011
+  quote: os Reverendos Wagner Araújo e Francisco (em processo de Incardinação para Reconhecimento de Ordem)
+- source: darn2-santo-andre-2010
+  quote: os reverendos Wagner Cipriano e Sérgio Henrique ( PMA Cristo Rei )
+- source: dard2-com-extra
+  quote: >-
+    PONTO MISSIONÁRIO ANGLICANO EM SANTO ANDRÉ (INAUGURAÇÃO EM NOVEMBRO/2010) Rev. Wagner Cipriano Araújo + e Rev.
+    Sérgio Henrique +
+- source: darn2-sao-judas-2011
+  quote: O Ponto Missionário Anglicano São Judas está indo bem e fica na Zona Norte da capital paulista
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: clero em processo de reconhecimento de ordem
+  status: probable
+  sources:
+  - source: darn2-sao-judas-2011
+    quote: os Reverendos Wagner Araújo e Francisco (em processo de Incardinação para Reconhecimento de Ordem)
+  notes: >-
+    Local: Ponto Missionário Anglicano São Judas, São Paulo-SP. Nota de 24/02/2011. Pode ser o mesmo "Wagner" citado
+    em 2010 no Ponto Missionário Cristo Rei (Santo André); as notas dão sobrenomes diferentes (Cipriano e Araújo).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: clero em processo de reconhecimento de ordem
+  status: probable
+  sources:
+  - source: darn2-santo-andre-2010
+    quote: os reverendos Wagner Cipriano e Sérgio Henrique ( PMA Cristo Rei )
+  notes: >-
+    Local: Ponto Missionário Anglicano Cristo Rei, Santo André-SP. Em agosto de 2010 a diocese cita "os novos clérigos
+    em processo de reconhecimento de Ordem, reverendos Wagner e Sérgio", com projeto de nova frente na região do
+    ABC (nota de 13/08/2010); o nome completo sai da nota de 28/11/2010.
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  status: probable
+  sources:
+  - source: dard2-com-extra
+    quote: >-
+      PONTO MISSIONÁRIO ANGLICANO EM SANTO ANDRÉ (INAUGURAÇÃO EM NOVEMBRO/2010) Rev. Wagner Cipriano Araújo + e
+      Rev. Sérgio Henrique +
+  notes: >-
+    Local: Ponto Missionário Anglicano em Santo André (SP; Arcediagado Extraterritorial). Página "Comunidades" do
+    arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse.
+    A página anuncia a inauguração do ponto missionário para novembro de 2010; ele era um projeto na data da página,
+    e os dois nomes aparecem sem cargo.
+events:
+- type: other
+  date: 2011-02
+  description: >-
+    A Diocese do Recife conta com novo Ponto Missionário Anglicano, o São Judas, na Zona Norte de São Paulo (Taipas),
+    com cultos aos domingos
+  status: confirmed
+  sources:
+  - source: darn2-sao-judas-2011
+    quote: O Ponto Missionário Anglicano São Judas está indo bem e fica na Zona Norte da capital paulista

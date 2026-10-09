@@ -18,10 +18,30 @@ death:
     quote: The Rt. Rev. Edmond Lee Browning was consecrated Bishop of Okinawa, Jan. 5.
 wikidata: Q1285685
 biography: >-
-  Primeiro bispo missionário de Okinawa (1968), depois bispo do Havaí e 24º Presiding Bishop (1986–1997).
+  Edmond Browning (1929–2016) foi sagrado em 5 de janeiro de 1968 bispo missionário de Okinawa, na Igreja Episcopal
+  (TEC), tendo John Hines como sagrante principal. Foi bispo do Havaí a partir de 1976 e, de 16 de janeiro de 1986
+  a 31 de dezembro de 1997, 24º bispo presidente da TEC, sucedido por Frank Griswold.
 sources:
+- source: rtb-gc1970-journal
+  quote: >-
+    BROWNING, consecrated as Missionary Bishop of Okinawa, on the Eve of the Epiphany, being the Fifth Day of January,
+    A.D., 1968, in the Auditorium of Christ the King School, Oiana, Okinawa, by John Elbridge Hines, D.O., Presiding
+    Bishop, The Episcopal Church Michael Hinsuke Yashiro, D.D., Presiding Bishop, Nippon Sei Kokai, Harry Sherbourne
+    Kennedy, D.O., Bishop of Honolulu;
 - source: ens-1968-01-08
   quote: The Rt. Rev. Edmond Lee Browning was consecrated Bishop of Okinawa, Jan. 5.
+- source: wp-browning
+  quote: '| consecrated_by   = [[John E. Hines]]'
+- source: wp-browning
+  quote: >-
+    In 1976, he was elected Bishop of Hawaii and was installed at the Cathedral Church of Saint Andrew, Honolulu
+    on August 1 of that year.
+- source: wp-browning
+  quote: >-
+    Browning was installed at Washington National Cathedral as the 24th Presiding Bishop of the Episcopal Church
+    on January 16, 1986.
+- source: wp-browning
+  quote: Browning retired on December 31, 1997, and was succeeded by the Most Reverend Frank Griswold.
 ordinations:
 - order: episcopate
   date: '1968-01-05'
@@ -78,3 +98,30 @@ ordinations:
     A Wikipédia lista ainda como bispos assistentes James C. L. Wong, David S. Rose, Isaac H. Nosse, Benito Cabanban,
     Paul C. Lee, David M. Goto e Kenneth A. Viall (citando o Journal of the General Convention de 1970); a lista
     de sucessão da Wikipédia põe Francis C. Rowinski (PNCC) como co-sagrante, com "citation needed".
+affiliations:
+- jurisdiction: tec
+  role: diocesan_bishop
+  diocese: diocese-of-hawaii
+  start: '1976-08-01'
+  status: probable
+  sources:
+  - source: wp-browning
+    quote: >-
+      In 1976, he was elected Bishop of Hawaii and was installed at the Cathedral Church of Saint Andrew, Honolulu
+      on August 1 of that year.
+  notes: >-
+    Eleito bispo do Havaí em 1976 e empossado em 1º/08/1976. A Wikipedia não informa o fim do episcopado no Havaí.
+- jurisdiction: tec
+  role: primate
+  start: '1986-01-16'
+  end: '1997-12-31'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: wp-browning
+    quote: >-
+      Browning was installed at Washington National Cathedral as the 24th Presiding Bishop of the Episcopal Church
+      on January 16, 1986.
+  - source: wp-browning
+    quote: Browning retired on December 31, 1997, and was succeeded by the Most Reverend Frank Griswold.
+  notes: 24º Presiding Bishop da Igreja Episcopal, eleito em 19/09/1985.

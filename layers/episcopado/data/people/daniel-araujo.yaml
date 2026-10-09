@@ -6,11 +6,30 @@ aliases:
 - Daniel Marchese Araújo
 - Dom Daniel Marchese Araújo
 biography: >-
-  Recebido na DAC em 29/10/2017 (diácono), presbítero em 15/04/2018 e sagrado bispo em 26/06/2022 em Viamão (RS)
-  por Lucas Macieira; bispo prelado da Prelazia Anglicana dos Pampas.
+  Daniel Marchese Araújo foi ordenado diácono em 29 de outubro de 2017 e presbítero em 15 de abril de 2018 na DAC,
+  e sagrado bispo em 26 de junho de 2022, na Paróquia Anglicana Nossa Senhora Aparecida, em Viamão (RS), por Lucas
+  Macieira da Silva. É bispo prelado da Prelazia Anglicana dos Pampas, e a DAC o conta entre seus bispos.
 sources:
 - source: lielb-dacb-api-clero
   quote: '"nome": "Daniel Marchese Araújo", "nome_civil": "Daniel Marchese Araújo", "cargo": "Bispo Prelado"'
+- source: lielb-dacb-api-clero
+  quote: >-
+    "ordenacao_diaconal": "29/10/2017", "ordenacao_presbiteral": "15/04/2018", "sagracao_episcopal": "26/06/2022"
+- source: lielb-dacb-api-clero
+  quote: '"ordenacao_presbiteral": "15/04/2018"'
+- source: lielb-dacb-api-clero
+  quote: >-
+    "sagracao_episcopal": "26/06/2022", "local_sagracao": "Paróquia Anglicana Nossa Senhora Aparecida – Viamão/RS",
+    "bispos_consagrantes": "Dom Frei Lucas Macieira "
+- source: lielb-dacb-api-clero
+  quote: '"cargo": "Bispo Prelado", "prelazia": "Prelazia Anglicana dos Pampas"'
+- source: lielb-gaz-pampas
+  quote: presidida por Dom Daniel Araújo, bispo da Prelazia Anglicana dos Pampas
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Atualmente, a DAC possui três bispos: dom Lucas Macieira (Arcebispo e Primaz), dom João de Deus da Silva, Dom
+    Antônio Santana Neto e dom Daniel Araújo.
+  page: '102'
 ordinations:
 - order: diaconate
   date: '2017-10-29'

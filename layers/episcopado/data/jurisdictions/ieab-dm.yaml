@@ -13,6 +13,14 @@ founded:
     quote: Área 1- formada pelas Dioceses Meridional, Sul Ocidental e de Pelotas.
   - source: wp-pt-dioc-meridional
     quote: A sede diocesana está localizada na cidade de Porto Alegre.
+  - source: kickhofel-2002
+    quote: >-
+      1949 - Thomas volta aos Estados Unidos. A Convenção Geral aprova a divisão do distrito missionário em três
+      dioceses.
+  - source: costa2021
+    quote: >-
+      Em cerimônia solene, no dia 30 de maio de 2010, a Catedral da Santíssima Trindade, em Porto Alegre, foi instituída
+      como a “Catedral Nacional” da Igreja Episcopal Anglicana do Brasil.
   discrepancies:
   - field: date
     value: 1949-09
@@ -24,13 +32,55 @@ founded:
       page: '70'
 website: https://diocesemeridional.org.br/
 description: >-
-  Se em Porto Alegre (Catedral Nacional da Santissima Trindade). Uma das tres dioceses da divisao de 1949/1950.
-  Area 1.
+  A Diocese Meridional, sediada em Porto Alegre, integra a Área 1 da IEAB e foi fundada em 1950, após a aprovação
+  da divisão do distrito missionário em três dioceses. Foram bispos diocesanos Egmont Krischke (1956–1971, transferido
+  para a Meridional pela Câmara dos Bispos), Arthur Rodolpho Kratz (de sua sagração em 25 de julho de 1971 até a
+  morte, em 1984, também segundo primaz da IEAB), Cláudio Vinícius de Senna Gastal (1984–1998, sagrado em março
+  de 1984 como coadjutor), Orlando Santos de Oliveira (1998–2013) e, desde 5 de maio de 2013, Humberto Maiztegui.
+  Luiz Osório Pires Prado foi eleito bispo sufragâneo em 1987 para organizar a Diocese de Pelotas, da qual foi o
+  primeiro bispo diocesano. Em 30 de maio de 2010, a Catedral da Santíssima Trindade foi instituída Catedral Nacional
+  da IEAB.
 sources:
 - source: ieab-dioceses
   quote: Área 1- formada pelas Dioceses Meridional, Sul Ocidental e de Pelotas.
 - source: wp-pt-dioc-meridional
   quote: A sede diocesana está localizada na cidade de Porto Alegre.
+- source: kickhofel-2002
+  quote: >-
+    1949 - Thomas volta aos Estados Unidos. A Convenção Geral aprova a divisão do distrito missionário em três dioceses.
+- source: costa2021
+  quote: 1950-1971 – Egmont Valle Machado Krischke
+- source: costa2021
+  quote: >-
+    Em 1956, quando o Bispo Pithan se aposentou, a Câmara dos Bispos transferiu o Bispo Krischke para a Diocese
+    Meridional
+- source: kickhofel-1995
+  quote: >-
+    O bispo Arthur R.Kratz assumiu a direção da Diocese Meridional logo após a sua sagração ao episcopado em 25
+    de julho de 1971 … Faleceu em 1984 e foi sucedido na Diocese Meridional por Cláudio Vinicius de Senna Gastal.
+  page: '250'
+- source: wp-pt-dioc-meridional
+  quote: Terceiro bispo da Diocese Meridional e segundo primaz da IEAB
+- source: costa2021
+  quote: Atuou como Bispo Diocesano da Diocese Meridional de 1984 a 1998.
+- source: kickhofel-1995
+  quote: >-
+    Gastal foi eleito em outubro de 1983 e sagrado em março de 1984 para ser inicialmente bispo coadjutor com direito
+    a sucessão.
+  page: '251'
+- source: costa2021
+  quote: 1998-2013 – Orlando Santos de Oliveira
+- source: costa2021
+  quote: >-
+    A instituição como Bispo Diocesano aconteceu no dia 05 de maio de 2013, no encerramento do 121º Concílio Diocesano.
+- source: cant-ec-2009-11
+  quote: >-
+    Em 1987, foi eleito bispo sufragâneo da Diocese Meridional e encarregado de organi- zar a futura diocese de
+    Pelotas. Um ano de- pois, foi eleito seu primeiro bispo diocesano.
+- source: costa2021
+  quote: >-
+    Em cerimônia solene, no dia 30 de maio de 2010, a Catedral da Santíssima Trindade, em Porto Alegre, foi instituída
+    como a “Catedral Nacional” da Igreja Episcopal Anglicana do Brasil.
 relations:
 - type: part_of
   target: ieab

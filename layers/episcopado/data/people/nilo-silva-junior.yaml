@@ -1,6 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: nilo-silva-junior
 name: Nilo Silva Júnior
+biography: >-
+  Recebido na Igreja Ortodoxa em 2005 e ordenado diácono em 2012 e presbítero em 2013, teve suas ordens reconhecidas
+  em 11 de dezembro de 2022 pela Diocese Anglicana do Paraná (IEAB), em celebração presidida pela bispa Magda Guedes.
+sources:
+- source: ieab-2022-nilo
+  quote: >-
+    Em 2005 foi recebido pela Igreja Ortodoxa. Cursou seminário externo e iniciou a teologia. Em 2012 foi ordenado
+    diácono terminou os estudos teológicos.
+- source: ieab-2022-nilo
+  quote: Em 2013 foi ordenado presbítero na capela do Mosteiro Ortodoxo de Santa Catarina de Alexandria.
+- source: ieab-2022-nilo
+  quote: >-
+    Foi realizado, no dia 11 de dezembro, na Catedral Anglicana de Curitiba, o reconhecimento das Sagradas Ordens
+    do nosso irmão Nilo Silva Júnior. A celebração ocorreu sob a presidência da bispa diocesana, Magda Guedes.
 ordinations:
 - order: diaconate
   date: '2012'

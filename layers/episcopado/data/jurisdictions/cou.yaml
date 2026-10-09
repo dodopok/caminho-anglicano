@@ -5,10 +5,31 @@ name: Igreja de Uganda (Church of Uganda)
 type: province
 tradition: anglican
 country: UG
-description: Província anglicana de Uganda.
+description: >-
+  Província anglicana de Uganda, cujo primaz, Stephen Kaziimba, sagrado bispo de Mityana em 26/10/2008, foi entronizado
+  em 01/03/2020. A igreja é membro fundador do Gafcon e integra o Global Anglican Council desde março de 2026.
 sources:
+- source: gacl-monitor-2019-kaziimba
+  quote: >-
+    Kaziimba was consecrated bishop on October 26, 2008, and has served as the Bishop of Mityana Diocese for almost
+    11 years.
 - source: gace-gac-page
-  quote: Primate of the Church of Uganda
+  quote: On 1st March 2020 he was enthroned as the Primate of the Church of Uganda and Bishop of Kampala.
+- source: gacm-ai-2025-10-04-uganda
+  quote: >-
+    As a founding member of Gafcon, the Church of Uganda considers this appointment to further deepen the tear in
+    the fabric of the Anglican Communion
+- source: gace-ai-kaziimba-abuja
+  quote: >-
+    “The GAFCON Primates Council was transitioned into the newly established Global Anglican Council, which will
+    bring together primates, advisors, and guarantors to provide the oversight and the recognition of provinces
+    and dioceses within the emerging Global Anglican Communion,” he said.
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    The council’s primates are Archbishops Laurent Mbanda of Rwanda (Chair), Miguel Uchoa of the Anglican Church
+    of Brazil (Vice Chair), Henry Ndukuba of Nigeria, Stephen Kaziimba of Uganda, Enrique Lago of Chile, Presiding
+    Bishop Siegfried Ngubane of the Reformed Evangelical Anglican Church of South Africa, and Bishop Julian Dobbs,
+    acting primate of the Anglican Church in North America.
 relations:
 - type: member_of
   target: gac

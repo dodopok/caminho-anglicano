@@ -1,6 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: auderli-sidnei-schroeder
 name: Auderli Sidnei Schroeder
+biography: >-
+  Auderli Sidnei Schroeder atua como diácono da IEAB desde 2022 e foi ordenado presbítero em 15/12/2024, em Caxias
+  do Sul (RS).
+sources:
+- source: portal-schroeder
+  quote: Auderli Sidnei Schroeder, de 52 anos, atua como diácono desde 2022
+- source: jb-2024-schroeder
+  quote: >-
+    O reverendo Sidnei Schroeder, 52, se tornou no último dia 15 o primeiro sacerdote gay da Igreja Episcopal Anglicana
+    de Caxias do Sul, na Serra Gaúcha.
+- source: portal-schroeder
+  quote: >-
+    Auderli Sidnei Schroeder, de 52 anos, atua como diácono desde 2022 e assumiu o sacerdócio na cidade no dia 15
+    de dezembro.
 ordinations:
 - order: diaconate
   date: '2022'

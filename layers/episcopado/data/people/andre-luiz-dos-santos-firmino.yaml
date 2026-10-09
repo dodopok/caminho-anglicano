@@ -1,6 +1,28 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: andre-luiz-dos-santos-firmino
 name: André Luiz dos Santos Firmino
+biography: >-
+  André Luiz dos Santos Firmino foi ordenado diácono em janeiro de 2017, em Jundiaí (SP), por Roger Douglas Bird
+  e Glauco Soares de Lima, e presbítero em agosto de 2018 por Bird, no MAnB. Em 29/05/2019 um decreto de Bird declarou
+  nula, com efeito ex-tunc, sua ordenação presbiteral; em 16/10/2022 seria acolhido pelo bispo Eduardo Grillo na
+  Diocese do Rio de Janeiro (IEAB).
+sources:
+- source: rta-firmino-blog
+  quote: >-
+    Em janeiro de 2017, André recebe a ordenação diaconal na cidade de Jundiaí – SP, pelas mãos dos Reverendíssimos
+    Bispos Dom Roger Douglas Bird e Dom Glauco Soares de Lima
+- source: rta-firmino-blog
+  quote: Em agosto de 2018, recebeu das mãos de Dom Roger Douglas Bird a ordenação no grau de presbítero
+- source: lq-gazeta-machadense-2019
+  quote: São Paulo, 29 de maio de 2019.
+- source: lq-gazeta-machadense-2019
+  quote: >-
+    Declaro nula a ordenação e sagração episcopal do bispo Ronaldo Robster de Melo e a ordenação presbiteral do
+    reverendo André Luiz dos Santos Firmino, conferindo a esta decisão o efeito EX-TUNC.
+- source: rta-firmino-blog
+  quote: >-
+    No dia 16 de outubro de 2022, será acolhido pelo Bispo Eduardo Grillo da Igreja Episcopal Anglicana do Brasil
+    - IEAB (Diocese do Rio de Janeiro), como membro da Igreja
 ordinations:
 - order: diaconate
   date: 2017-01

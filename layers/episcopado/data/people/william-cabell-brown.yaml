@@ -33,15 +33,59 @@ death:
     page: '52'
 wikidata: Q10393674
 biography: >-
-  Missionário no RS a partir de 1891, tradutor da Bíblia e do Livro de Oração Comum para o português; fundou a obra
-  no Rio (1908); sagrado em 1914 bispo assistente da Virgínia, depois 7º bispo da Virgínia.
+  William Cabell Brown (22/11/1861 a 25/07/1927), natural da Virgínia e vindo do Seminário da Virgínia, foi ordenado
+  diácono em junho de 1891 e presbítero em 02/08/1891, por Francis McNeece Whittle, e chegou ao Brasil em outubro
+  de 1891. No Distrito Missionário do Sul do Brasil traduziu o Livro de Oração Comum com Américo Vespúcio Cabral,
+  recebeu dois votos na ordem clerical na eleição do primeiro bispo (1898), foi o primeiro reitor do Seminário Teológico,
+  inaugurado em 13/06/1903 em Rio Grande, e celebrou em 31/05/1908 o primeiro culto em vernáculo no Rio de Janeiro.
+  Voltou aos Estados Unidos em 1914 e foi sagrado bispo em 28/10/1914 por Daniel Tuttle; foi bispo auxiliar (1914-1919)
+  e depois diocesano (1919-1927) da Diocese da Virgínia, e morreu em Londres.
 sources:
 - source: wp-en-brown
   quote: >-
     William Cabell Brown (November 22, 1861 – July 25, 1927) was an Episcopal missionary in Brazil who returned
     to his native Virginia to become the seventh bishop of Virginia.
-- source: wd-q10393674
-  quote: William Cabell Brown | American Episcopal missionary in Brazil and bishop
+- source: liv-stokes-kinsolving
+  quote: >-
+    In the autumn of 1891 Kinsolving and Morris had been joined by the Rev. and Mrs. William Cabell Brown, and the
+    Rev. John Gaw Meem, both from Virginia Seminary, as well as by Mary Packard, the daughter of the dean of the
+    seminary.
+  page: '12'
+- source: wp-en-brown
+  quote: >-
+    Brown was ordained as a deacon by bishop Francis McNeece Whittle on June 26, 1891, and advanced to the priesthood
+    on August 2, 1891.
+- source: wp-en-brown
+  quote: advanced to the priesthood on August 2, 1891.
+- source: liv-implantacao-ieab
+  quote: O Rev. Dr. W. C. Brown que veio para o Brasil em outubro de 1891, e tendo vivido aqui por 24 anos
+  page: '14'
+- source: kickhofel-2002
+  quote: aprovar a tradução do LOC realizada por Brown e Cabral.
+- source: kickhofel-1995
+  quote: Brown teve dois votos na ordem clerical e nunhum na ordem leiga.
+  page: '93'
+- source: drv-kinsolving-ivo
+  quote: >-
+    Afinal, a 13 de Junho de 1903, justa, 13 anos após ter sido estabelecida a Igreja Episcopal Brasileira, concretizou-se
+    a sua alta pretensão.
+- source: drv-kinsolving-ivo
+  quote: >-
+    Em 31 de Maio de 1908, 20 anos depois de se fixar no Rio Grande do Sul, realizou a Igreja Episcopal o seu primeiro
+    ofício divino em vernáculo, na Capital da República.
+- source: wp-en-brown
+  quote: consecration     = October 28, 1914
+- source: wp-en-brown
+  quote: >-
+    In 1914 Virginia's Episcopalians recalled Brown to serve as assistant bishop to Bishop Whittle's successor,
+    Bishop [[Robert Atkinson Gibson]]
+- source: wp-en-brown
+  quote: Bishop Brown ultimately succeeded Bishop Gibson
+- source: costa2021
+  quote: >-
+    Em julho de 1914, despediu-se do Brasil, voltando aos Estados Unidos, onde foi eleito para se tornar Bispo Coadjutor
+    da Diocese de Virgínia. Faleceu em Londres, em 1927.
+  page: '52'
 ordinations:
 - order: diaconate
   date: '1891-06-26'
@@ -131,6 +175,33 @@ affiliations:
   notes: >-
     A monografia diz que Brown viveu 24 anos no Brasil (o que levaria a c. 1915); a duração não é confirmada por
     outras fontes aqui.
+- jurisdiction: tec
+  role: auxiliary_bishop
+  diocese: diocese-da-virginia
+  start: '1914-10-28'
+  end: '1919'
+  status: probable
+  sources:
+  - source: wp-en-brown
+    quote: >-
+      In 1914 Virginia's Episcopalians recalled Brown to serve as assistant bishop to Bishop Whittle's successor,
+      Bishop [[Robert Atkinson Gibson]]
+  - source: wp-en-brown
+    quote: '| previous_post    = Assistant Bishop of Virginia <small>''''(1914–1919)''''</small>'
+  notes: Bispo assistente da Virgínia sob Robert Atkinson Gibson.
+- jurisdiction: tec
+  role: diocesan_bishop
+  diocese: diocese-da-virginia
+  start: '1919'
+  end: '1927-07-25'
+  end_reason: death
+  status: probable
+  sources:
+  - source: wp-en-brown
+    quote: Bishop Brown ultimately succeeded Bishop Gibson
+  - source: wp-en-brown
+    quote: '| term             = 1919–1927'
+  notes: Sétimo bispo da Virgínia.
 events:
 - type: other
   date: '1892-05-23'
@@ -224,3 +295,28 @@ events:
   - source: kickhofel-1995
     quote: Brown teve dois votos na ordem clerical e nunhum na ordem leiga.
     page: '93'
+- type: other
+  date: 1896-06
+  description: >-
+    Convocação extraordinária da missão anglicana no Rio Grande do Sul aprovou a tradução do Livro de Oração Comum
+    realizada por William Cabell Brown e Américo Vespúcio Cabral, com revisão final por comissão formada por Brown,
+    Meem e Cabral; impressa nos Estados Unidos, foi usada até 1930. Em 1897 Brown e Cabral traduziram ainda a Ordem
+    para a Manhã e Vespertina, a Litania e a Santa Comunhão.
+  status: probable
+  sources:
+  - source: kickhofel-2002
+    quote: aprovar a tradução do LOC realizada por Brown e Cabral.
+  - source: kickhofel-2002
+    quote: Impressa nos Estados Unidos, esta primeira tradução foi usada até 1930.
+  - source: kickhofel-2002
+    quote: Tradução da OM e OV, Litania e SC por Brown e Cabral.
+- type: other
+  date: '1891'
+  description: >-
+    Durante os primeiros anos no Rio Grande do Sul, traduziu a Bíblia e o Livro de Oração Comum para o português.
+  status: probable
+  sources:
+  - source: wp-en-brown
+    quote: >-
+      During his early years in Brazil's southernmost state, Brown translated the Bible and [[Book of Common Prayer]]
+      into Portuguese.

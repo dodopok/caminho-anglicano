@@ -1,6 +1,21 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: roger-blankley
 name: Roger Blankley
+biography: >-
+  Missionário da IEAB que, com Stuart Broughton, pastoreou uma capelania quando esta passou à jurisdição da Diocese
+  Central e teve início o trabalho missionário entre brasileiros.
+sources:
+- source: kickhofel-1995
+  quote: >-
+    Cento e doze anos depois, a capelania passou a jurisdição da Diocese Central sob o pastorado dos missionários
+    Roger Blankley e Stuart Broughton, quando começou o trabalho missionário entre os brasileiros, surgindo as primeiras
+    conversões.
+  page: '297'
+- source: costa2021
+  quote: >-
+    Cento e doze anos depois, a capelania passou a jurisdição da Diocese Central sob o pastorado dos missionários
+    Roger Blankley e Stuart Broughton
+  page: '174'
 affiliations:
 - jurisdiction: ieab
   role: clergy

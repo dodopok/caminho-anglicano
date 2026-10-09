@@ -1,10 +1,21 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: mark-h-hansen
 name: Mark H. Hansen
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Presbítero (Rev. Dr.) recebido pela Diocese Anglicana do Recife em fevereiro de 2006, a pedido da Rede da Comunhão
+  Anglicana dos EUA, para residência canônica e lotação no Arcediagado Norte-Americano; foi reitor da Paróquia de
+  St. John.
 sources:
+- source: drp2-breves-01-2006
+  quote: >-
+    A nossa Diocese está recebendo, a pedido da Rede da Comunhão Anglicana dos EUA, para residência canônica e lotação
+    em nosso Arcediagado Norte-Americano, o Rev. Dr. Mark Hansen
+- source: drp2-breves-01-2006
+  quote: como ex-reitor da Paróquia de St. John
 - source: drv-nota-esclarecimento-2006
   quote: Mark H. Hansen
+- source: dard2-clero-na
+  quote: Rev. Mark H. Hansen (Connecticut)
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: priest
@@ -29,3 +40,13 @@ affiliations:
     quote: Mark H. Hansen
   notes: >-
     Consta em 09/11/2006 entre os clérigos residentes no exterior com domicílio canônico na Diocese do Recife.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: dard2-clero-na
+    quote: Rev. Mark H. Hansen (Connecticut)
+  notes: >-
+    Local: Arcediagado Norte-Americano (Connecticut). Lista "Ministros(as) do Arcediagado Especial da América do
+    Norte", publicada em 13/08/2009 (captura de 18/02/2010); o vínculo vale para esse período.

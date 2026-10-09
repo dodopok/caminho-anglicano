@@ -22,10 +22,47 @@ death:
   - source: ieab-irala-falecimento
     quote: ocorrido em 9 de janeiro de 2025.
 wikidata: Q138971594
-biography: Bispo de Sao Paulo (2013-2021); presidente do CONIC.
+biography: >-
+  Flávio Augusto Borges Irala nasceu em Bagé (RS) em 21/5/1954. Foi ordenado diácono em 1985 e designado para a
+  Missão em Cubatão (SP); em 2008 tornou-se deão da Catedral Anglicana de São Tiago, em Curitiba. Eleito bispo da
+  Diocese Anglicana de São Paulo em concílio extraordinário em 8/9/2012, por 19 a 18 votos na ordem leiga e 15 a
+  13 na clerical, eleição que o bispo Roger Bird declarou nula em 13/9/2012, foi sagrado em setembro de 2013, com
+  o primaz Maurício Andrade, como sexto bispo diocesano da DASP. Presidiu o Conselho Nacional de Igrejas Cristãs
+  (CONIC). Permaneceu no cargo até outubro de 2021, quando se tornou bispo emérito, e faleceu em 9/1/2025.
 sources:
 - source: ieab-irala-falecimento
   quote: Nascido em 21 de maio de 1954, em Bagé, Rio Grande do Sul
+- source: ieab-irala-falecimento
+  quote: Após sua ordenação ao diaconato, foi designado para a Missão em Cubatão, no litoral paulista
+- source: kickhofel-1995
+  quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1985 - … Flávio Augusto Borges Irala
+  page: '373'
+- source: ieab-irala-falecimento
+  quote: Em 2008, tornou-se Deão da Catedral Anglicana de São Tiago, em Curitiba, Paraná
+- source: glauco-testemunho-2013
+  quote: >-
+    No dia 08/09/12 recebi a notícia que em Concílio da DASP o Rev. Flávio Irala havia sido eleito Bispo da mesma
+    por 19 a 18 votos na ordem leiga e 15 a 13 votos na ordem clerical.
+- source: lbd-ieab-acoes
+  quote: >-
+    13 de setembro de 2012- Bispo Diocesano Dom Roger Douglas Bird emite uma Declaração de Nulidade do Concílio
+    Extraordinário de Eleição do Bispo.
+- source: snieab-2013-convite-irala
+  quote: >-
+    CONVIDAM V.SA. PARA A CERIMÔNIA DE SAGRAÇÃO E INVESTIDURA DO 6º BISPO DIOCESANO DA DIOCESE ANGLICANA DE SÃO
+    PAULO Flávio Augusto Borges Irala
+- source: snieab-2013-convite-irala
+  quote: >-
+    O BISPO PRIMAZ DA IGREJA EPISCOPAL ANGLICANA DO BRASIL, DOM MAURÍCIO JOSÉ ARAÚJO DE ANDRADE, O CLERO E POVO
+    DA DIOCESE ANGLICANA DE SÃO PAULO
+- source: perd05-camara-irala
+  quote: Dom Flávio Irala, Bispo Anglicano e Presidente do Conselho Nacional de Igrejas Cristãs-CONIC
+- source: perd05-hinologia-irala
+  quote: presidindo o Conselho Nacional de Igrejas Cristãs do Brasil (CONIC)
+- source: ieab-irala-falecimento
+  quote: Em 2021, tornou-se bispo emérito
+- source: ieab-cezar-investidura
+  quote: a celebração de Ação de Graças pela vida, ministério e início da emerência do bispo Flávio Irala
 - source: ieab-irala-falecimento
   quote: ocorrido em 9 de janeiro de 2025.
 ordinations:
@@ -225,6 +262,16 @@ affiliations:
     quote: tornando-se deão da Catedral de São Tiago, em Curitiba.
     page: '114'
   notes: 'Cargo: Deão da Catedral de São Tiago, Curitiba.'
+- jurisdiction: conic
+  role: other
+  role_description: presidente
+  status: confirmed
+  sources:
+  - source: perd05-camara-irala
+    quote: Dom Flávio Irala, Bispo Anglicano e Presidente do Conselho Nacional de Igrejas Cristãs-CONIC
+  - source: perd05-hinologia-irala
+    quote: presidindo o Conselho Nacional de Igrejas Cristãs do Brasil (CONIC)
+  notes: Datas do mandato não informadas nas fontes abertas (a notícia da Câmara é de c. 2013-2016).
 events:
 - type: other
   date: '2012-09-08'

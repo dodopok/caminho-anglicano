@@ -1,12 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: lucia-helena-mulatinho-fernandes
 name: Lúcia Helena Mulatinho Fernandes
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Lúcia Helena Mulatinho Fernandes foi ordenada diácona em 05/07/2008 por Robinson Cavalcanti, na Diocese Anglicana
+  do Recife (DAR). Atuou como ministra auxiliar, como coordenadora pedagógica do seminário e na comissão de credenciais
+  e diplomacia da diocese.
 sources:
 - source: drv-ordenacoes-diaconais-2008
   quote: >-
     apresentamos Josean, Lúcia Helena, Márcia, Márcio e Maria de Fátima para serem Ordenados ao Diaconato na Santa
     Igreja de Cristo.
+- source: drv-ordenacoes-diaconais-2008
+  quote: Recife (PE), 05 de julho de 2008
+- source: drp2-ord-diac-2008-07-05
+  quote: +Dom Robinson Cavalcanti Bispo Diocesano
+- source: dard2-com-pb
+  quote: 'Ministra Auxiliar: Revda. Lúcia Helena Mulatinho Fernandes'
+- source: dard1-cargos-2009a
+  quote: Coordenador Pedagógico Revda. Lúcia Helena Mulatinho Fernandes
+- source: dard1-comissoes-2009a
+  quote: Revda. Lúcia Helena Mulatinho Fernandes
 ordinations:
 - order: diaconate
   date: '2008-07-05'
@@ -30,3 +43,48 @@ ordinations:
   notes: >-
     Rito de ordenação diaconal de cinco pessoas presidido pelo bispo Edward Robinson de Barros Cavalcanti, que consta
     como ordinante e pregador.
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministra auxiliar
+  status: confirmed
+  sources:
+  - source: dard2-com-pb
+    quote: 'Ministra Auxiliar: Revda. Lúcia Helena Mulatinho Fernandes'
+  notes: >-
+    Local: Missão Anglicana do Cristo (João Pessoa-PB; Arcediagado PB/RN/CE). Página "Comunidades" do arcediagado,
+    criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coordenador_pedagogico_do_seminario
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2009a
+    quote: Coordenador Pedagógico Revda. Lúcia Helena Mulatinho Fernandes
+  - source: dard1-cargos-2010
+    quote: Coordenador Pedagógico Revda. Lúcia Helena Mulatinho Fernandes
+  notes: >-
+    Local: SAT-PB (Seminário Anglicano Teológico da Paraíba). Consta na lista de "Cargos Diocesanos" capturada em
+    jan/2009 e na de jul/2009 (atualizada em 28/09/2010); a página não informa a data de início.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: comissao_de_credenciais_e_diplomacia
+  status: confirmed
+  sources:
+  - source: dard1-comissoes-2009a
+    quote: Revda. Lúcia Helena Mulatinho Fernandes
+  - source: dard1-comissoes-2010
+    quote: Revda. Lúcia Helena Mulatinho Fernandes
+  notes: "Local: Comissão de Credenciais e Diplomacia. Consta nas listas de cargos designados pelo bispo sob homologação\
+    \ do Concílio, na versão de jan/2009 e na de 01/07/2009. "
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_auxiliar
+  status: confirmed
+  sources:
+  - source: dard1-com-pbrnce-2009a
+    quote: 'Ministra Auxiliar: Revda. Lúcia Mulatinho'
+  notes: >-
+    Local: Missão Anglicana do Cristo (João Pessoa). Consta na página de comunidades do Arcediagado PB/RN/CE capturada
+    em 03/01/2009 (sem data de publicação visível). O ministro encarregado aparece apenas como "Rev. Fernandes Filho",
+    sem identificação segura.

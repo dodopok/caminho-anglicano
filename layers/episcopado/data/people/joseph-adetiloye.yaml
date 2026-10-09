@@ -27,11 +27,32 @@ death:
   - source: ens-90114
     quote: The Most Rev. Joseph Abiodun Adetiloye, Archbishop of Nigeria,
 wikidata: Q6104550
-biography: Bispo de Ekiti (1970), bispo de Lagos (1985) e 2º primaz da Igreja da Nigéria (1986/88–1999).
+biography: >-
+  Joseph Abiodun Adetiloye (25/12/1929 – 14/12/2012) foi sagrado em 1970 bispo de Ekiti pelo arcebispo Moses Scott
+  e, em 1985, tornou-se bispo de Lagos, cargo que ocupou até 1999. Foi entronizado em 26/12/1986 como segundo primaz
+  da Igreja da Nigéria, até se aposentar em dezembro de 1999.
 sources:
+- source: wikidata-api
+  quote: 'Q6104550 J. Abiodun Adetiloye {''enwiki'': ''Joseph Abiodun Adetiloye''}'
 - source: con-adetiloye-2012
   quote: >-
     He was consecrated Bishop and enthroned on the see of Ekiti in 1970 succeeding the late Bishop H.A. Osanyin.
+- source: ia-arb-1970-10
+  quote: >-
+    NIGERIA Bishop Consecrated The Reverend J. A. Adetiloye has been B 1913 consecrated as Bishop of the Ekiti Anglican
+    diocese by the Archbishop of the Province of West Africa, the Right Reverend M.N.S. Scott. (NSP 4/10)
+- source: dacb-adetiloye
+  quote: >-
+    Adetiloye became the second bishop of the Ekiti Diocese in 1970 and served until 1985 when he became the sixth
+    bishop of Lagos.
+- source: wp-adetiloye
+  quote: >-
+    In August 1970, he was elected and nominated bishop of the Diocese of Ekiti, latter being transferred to the
+    Diocese of Lagos, of which he was bishop from 1985 to 1999.
+- source: wp-adetiloye
+  quote: He was enthroned as the second Primate of the Church of Nigeria on 26 December 1986
+- source: wp-adetiloye
+  quote: He retired in December 1999, after 13 years in office.
 ordinations:
 - order: episcopate
   date: '1970'
@@ -73,3 +94,18 @@ ordinations:
     outubro de 1970 e a fonte citada é de 4 de outubro; a pista de "18 de outubro de 1970" (sucessao-lacunas) fica
     em dúvida. Jurisdição: Igreja da Nigéria (Província da África Ocidental em 1970). Confirma a pista do pôster
     da IAB (Scott -> Adetiloye). Ano inferido do início do episcopado indicado no pôster (1970); verificar.
+affiliations:
+- jurisdiction: church-of-nigeria
+  role: primate
+  start: '1986-12-26'
+  end: 1999-12
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: wp-adetiloye
+    quote: He was enthroned as the second Primate of the Church of Nigeria on 26 December 1986
+  - source: wp-adetiloye
+    quote: He retired in December 1999, after 13 years in office.
+  notes: >-
+    Segundo primaz da Igreja da Nigéria, entronizado na Catedral de Lagos por seu antecessor, Timothy Olufosoye;
+    sucedido por Peter Akinola (2000). Resumos antigos davam o início como 1986 ou 1988; a fonte indica 26/12/1986.

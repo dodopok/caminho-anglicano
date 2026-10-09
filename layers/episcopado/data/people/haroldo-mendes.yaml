@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: haroldo-mendes
+name: Haroldo Mendes
+biography: >-
+  Haroldo Mendes é presbítero da Diocese Anglicana do Recife e ministro encarregado da Missão Anglicana Betesda,
+  em Belo Horizonte (MG), no Arcediagado Sul-Sudeste do Brasil.
+sources:
+- source: darl1-4849
+  quote: >-
+    Rev. Haroldo Mendes , é Presbítero da Diocese do Recife; Ministro Encarregado da Missão Anglicana Betesda ,
+    em Belo Horizonte, no Arcediagado Sul-Sudeste do Brasil;
+- source: darl1-5430
+  quote: >-
+    Rev. Haroldo Mendes , é Presbítero da Diocese do Recife; Ministro Encarregado da Missão Anglicana Betesda ,
+    em Belo Horizonte, no Arcediagado Sul-Sudeste do Brasil;
+- source: dard2-com-extra
+  quote: 'MISSÃO ANGLICANA BETESDA Ministro Encarregado: Rev. HAROLDO MENDES +'
+- source: darn2-betesda-2012
+  quote: A Missão Anglicana Betesda ( Rev. Haroldo Mendes ), em Belo Horizonte (MG)
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro encarregado
+  status: confirmed
+  sources:
+  - source: darl1-4849
+    quote: >-
+      Rev. Haroldo Mendes , é Presbítero da Diocese do Recife; Ministro Encarregado da Missão Anglicana Betesda
+      , em Belo Horizonte, no Arcediagado Sul-Sudeste do Brasil;
+  - source: darl1-5430
+    quote: >-
+      Rev. Haroldo Mendes , é Presbítero da Diocese do Recife; Ministro Encarregado da Missão Anglicana Betesda
+      , em Belo Horizonte, no Arcediagado Sul-Sudeste do Brasil;
+  - source: darn2-assembleia-sulsudeste-2009
+    quote: Rev. Haroldo Mendes – Missão Anglicana Betesda (MG)
+  - source: darn2-betesda-2012
+    quote: A Missão Anglicana Betesda ( Rev. Haroldo Mendes ), em Belo Horizonte (MG)
+  - source: darn2-haroldo-bispo-2012
+    quote: >-
+      Ministro Encarregado da Missão Anglicana Betesda , em Belo Horizonte, no Arcediagado Sul-Sudeste do Brasil
+  notes: >-
+    Local: Missão Anglicana Betesda, Belo Horizonte-MG (Arcediagado Sul-Sudeste). Nessa função de 2010-11-27 a 2012-09-19
+    (datas verificadas). Local: Missão Anglicana Betesda, Belo Horizonte-MG. Atestado em junho de 2009, junho e
+    setembro de 2012.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: darl1-4849
+    quote: >-
+      Rev. Haroldo Mendes , é Presbítero da Diocese do Recife; Ministro Encarregado da Missão Anglicana Betesda
+      , em Belo Horizonte, no Arcediagado Sul-Sudeste do Brasil;
+  - source: darl1-5430
+    quote: >-
+      Rev. Haroldo Mendes , é Presbítero da Diocese do Recife; Ministro Encarregado da Missão Anglicana Betesda
+      , em Belo Horizonte, no Arcediagado Sul-Sudeste do Brasil;
+  notes: Presbítero da diocese em 2010-11-27 e 2012-09-19; datas de ordenação não informadas.
+- jurisdiction: diocese-anglicana-recife
+  role: priest
+  status: confirmed
+  sources:
+  - source: darn2-haroldo-bispo-2012
+    quote: é Presbítero da Diocese do Recife
+  notes: Presbítero da Diocese do Recife em 19/09/2012.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro encarregado
+  status: confirmed
+  sources:
+  - source: dard2-com-extra
+    quote: 'MISSÃO ANGLICANA BETESDA Ministro Encarregado: Rev. HAROLDO MENDES +'
+  notes: >-
+    Local: Missão Anglicana Betesda (Belo Horizonte-MG; Arcediagado Extraterritorial). Página "Comunidades" do arcediagado,
+    criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse.

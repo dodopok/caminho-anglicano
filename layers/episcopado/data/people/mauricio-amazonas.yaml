@@ -1,14 +1,58 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: mauricio-amazonas
 name: Maurício Amazonas
-biography: Capelão do SAT-PE e pároco da Paróquia Jardim das Oliveiras em 2006.
+biography: >-
+  Ordenado diácono em 27 de agosto de 2005 e presbítero em 4 de fevereiro de 2006 por Robinson Cavalcanti, na Diocese
+  Anglicana do Recife (IEAB); antes, em 2004, figurava como ministro leigo da Paróquia Anglicana Bom Samaritano.
+  Membro da OSE, foi capelão do Seminário Anglicano Teológico (SAT-PE), pároco da Paróquia Anglicana Jardim das
+  Oliveiras, secretário diocesano de educação, estatístico diocesano e presidente do Conselho Diocesano, e depois
+  vigário-geral diocesano (2009 a 2011). Em 2011, foi um dos três 'episcopáveis' na eleição de bispos sufragâneos
+  da diocese.
 sources:
+- source: drp2-ordenacoes-2005-08-27
+  quote: SERMÃO DE ORDENAÇÕES Paróquia Anglicana do Mediador Recife (PE), 27/08/2005
+- source: drp2-ordenacoes-2005-08-27
+  quote: >-
+    Bem-vindos a Casa de Deus, para esse Culto de Adoração e Ações de Graças, e de Ordenação dos novos Diáconos:
+    Jeane Coelho, Maurício Amazonas e Tereza Catão, e o novo Presbítero reverendo Josias de Souza Júnior.
+- source: drp2-ord-presb-amazonas-2006
+  quote: >-
+    Sermão de Ordenação Presbiteral Reverendo Maurício Amazonas Catedral Anglicana do Bom Samaritano Recife (PE),
+    04.02.2006
+- source: dard1-carta-bispos-2004
+  quote: Maurício Amazonas Paróquia Anglicana Bom Samaritano
+- source: cant-novas-igrejas-2024
+  quote: >-
+    a Ordem ficou restrita a um círculo muito específico de clérigos, sobrevivendo através deles, até hoje, como
+    por exemplo, o reverendo Maurício Amazonas.
+  page: '28'
 - source: drp-boletim-oracao-2006
   quote: >-
     novo Seminário Anglicano Teológico (SAT-PE): Ven. Arc. Rev. Evilásio Tenório – Reitor, Rev. Maurício Amazonas,
     Capelão e a Coordenadora Pedagógica: Revda. Jeane Coelho
-- source: drp-boletim-oracao-2006
-  quote: Orar pela Paróquia Anglicana Jardim das Oliveiras; pelo Rev. Maurício Amazonas
+- source: dard2-com-sul
+  quote: >-
+    Paróquia Anglicana Jardim das Oliveiras Pároco: Rev. Maurício Amazonas Auxiliar: Revda. Keyla Camargo
+- source: darl1-189
+  quote: >-
+    Presidente do Conselho Diocesano, Capelão do Seminário Anglicano Teológico em Recife (SAT-PE), Pároco da Paróquia
+    Anglicana Jardim das Oliveiras, no bairro Setúbal, Recife-PE, e Secretário Diocesano de Educação.
+- source: dard1-comissoes-2009a
+  quote: Estatístico Diocesano Rev. Maurício Manoel Amazonas dos Santos, ose
+- source: darl1-398
+  quote: >-
+    Rev. Maurício Amazonas, ose é Presbítero na Diocese do Recife; Presidente do Conselho Diocesano, Pároco da Paróquia
+    Anglicana Jardim das Oliveiras, no Arcediagado Sul, em Recife-PE.
+- source: darn1-amazonas09
+  quote: Vigário geral da Diocese do Recife
+- source: darn1-amazonas10
+  quote: >-
+    Vigário-Geral Diocesano, Pároco da Paróquia Anglicana Jardim das Oliveiras, no Arcediagado Sul, em Recife-PE
+- source: drp2-episcopaveis-2011
+  quote: >-
+    quer na condição anterior de Presidente do Conselho Diocesano, quer na condição atual de Vigário-Geral
+- source: drp2-episcopaveis-2011
+  quote: 'Série: “O Povo Pergunta e os Episcopáveis Respondem”'
 ordinations:
 - order: diaconate
   date: '2005-08-27'
@@ -69,6 +113,13 @@ affiliations:
       a Ordem ficou restrita a um círculo muito específico de clérigos, sobrevivendo através deles, até hoje, como
       por exemplo, o reverendo Maurício Amazonas.
     page: '28'
+  - source: dard1-ose-2009a
+    quote: Rev. Maurício Amazonas dos Santos,OSE
+  - source: dard1-ose-2010
+    quote: Rev. Maurício Amazonas dos Santos,OSE
+  notes: >-
+    Consta na relação de membros da Ordem de Santo Estevão capturada em jan/2009 e na publicada em 01/07/2009 (atualizada
+    em 18/11/2010). Listado entre os clérigos.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: pároco
@@ -76,7 +127,17 @@ affiliations:
   sources:
   - source: drp2-episcopaveis-2011
     quote: Sou pastor em tempo integral na Paróquia Anglicana Jardim das Oliveiras.
-  notes: 'Local: Paróquia Anglicana Jardim das Oliveiras. Em maio de 2011.'
+  - source: dard2-com-sul
+    quote: >-
+      Paróquia Anglicana Jardim das Oliveiras Pároco: Rev. Maurício Amazonas Auxiliar: Revda. Keyla Camargo
+  - source: dard1-com-sul-2009a
+    quote: 'Pároco: Rev. Maurício Amazonas Auxiliar: Revda. Keyla Camargo'
+  notes: >-
+    Local: Paróquia Anglicana Jardim das Oliveiras. Em maio de 2011. Local: Paróquia Anglicana Jardim das Oliveiras
+    (Setúbal, Recife-PE; Arcediagado Sul). Página "Comunidades" do arcediagado, criada em 20/08/2009 e capturada
+    em 29/11/2010; cargo atestado nesse intervalo, sem data de posse. Local: Paróquia Anglicana Jardim das Oliveiras
+    (Recife). Consta na página de comunidades do Arcediagado Sul capturada em 03/01/2009 (sem data de publicação
+    visível).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: vigário geral
@@ -85,7 +146,153 @@ affiliations:
   - source: drp2-episcopaveis-2011
     quote: >-
       quer na condição anterior de Presidente do Conselho Diocesano, quer na condição atual de Vigário-Geral
-  notes: Vigário-geral em maio de 2011; antes, presidente do Conselho Diocesano.
+  - source: dard2-clero-presb2
+    quote: Rev. Maurício Amazonas dos Santos, OSE … Vigário Geral
+  notes: >-
+    Vigário-geral em maio de 2011; antes, presidente do Conselho Diocesano. Vigário geral atestado na lista de presbíteros
+    publicada em 31/08/2009 e atualizada até 14/01/2010 (captura de 17/02/2010); início do cargo não informado.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presidente do Conselho Diocesano
+  status: confirmed
+  sources:
+  - source: darl1-398
+    quote: >-
+      Rev. Maurício Amazonas, ose é Presbítero na Diocese do Recife; Presidente do Conselho Diocesano, Pároco da
+      Paróquia Anglicana Jardim das Oliveiras, no Arcediagado Sul, em Recife-PE.
+  - source: darl1-405
+    quote: >-
+      Quero agradecer ao nosso Bispo Diocesano pela honra que concede ao Presidente do seu Conselho Diocesano para
+      proferir esta palestra
+  - source: darn1-caravana09
+    quote: o Presidente do Conselho Diocesano Rev. Maurício Amazonas
+  - source: darn2-comissao-2009
+    quote: Maurício Amazonas (presidente do Conselho Diocesano)
+  - source: darn2-acao-gracas-2009
+    quote: tendo como pregador o Presidente do Conselho Diocesano, Rev. Mauricio Amazonas, ose
+  - source: darn2-caravana-2009
+    quote: o Presidente do Conselho Diocesano Rev. Maurício Amazonas
+  notes: >-
+    Nessa função em 2009-10-04 e 2009-10-06 (e nos artigos de 2009-11 do mesmo autor). Cargo atestado em 14/10/2009,
+    na caravana missionária ao Sul/Sudeste com o bispo diocesano. Presidente do Conselho Diocesano entre agosto
+    e outubro de 2009.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: vigário-geral diocesano
+  status: confirmed
+  sources:
+  - source: darl1-479
+    quote: >-
+      Rev. Maurício Amazonas, ose é Presbítero na Diocese do Recife; Vigário-Geral Diocesano, Pároco da Paróquia
+      Anglicana Jardim das Oliveiras, no Arcediagado Sul, em Recife-PE.
+  - source: darl1-5177
+    quote: >-
+      Vigário Geral Diocesano, Pároco da Paróquia Anglicana Jardim das Oliveiras , no Arcediagado Centro, em Recife
+      (PE); Capelão do Seminário Anglicano Teológico, em Recife (SAT-PE).
+  notes: >-
+    Já assina como vigário-geral em 2009-12-25; em 2009-10-06 ainda se apresentava como presidente do Conselho Diocesano.
+    Em 2012-05-05 continua vigário-geral e pároco da Paróquia Anglicana Jardim das Oliveiras, então no Arcediagado
+    Centro. Em 2012-05-05.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário diocesano de educação
+  status: confirmed
+  sources:
+  - source: darl1-189
+    quote: >-
+      Presidente do Conselho Diocesano, Capelão do Seminário Anglicano Teológico em Recife (SAT-PE), Pároco da Paróquia
+      Anglicana Jardim das Oliveiras, no bairro Setúbal, Recife-PE, e Secretário Diocesano de Educação.
+  notes: Cargo citado na nota biográfica de artigo incluído no site em 2009-07-01.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: vigário-geral
+  status: confirmed
+  sources:
+  - source: darn1-amazonas09
+    quote: Vigário geral da Diocese do Recife
+  - source: darn1-amazonas09
+    quote: >-
+      Vigário Geral da Diocese , Pároco da Paróquia Anglicana Jardim das Oliveiras, no Arcediagado Sul, em Recife-PE
+  - source: darn1-amazonas10
+    quote: >-
+      Vigário-Geral Diocesano, Pároco da Paróquia Anglicana Jardim das Oliveiras, no Arcediagado Sul, em Recife-PE
+  - source: darn2-vigario-geral-2010
+    quote: o nosso Vigário Geral, Rev. Maurício Amazonas , OSE
+  - source: darn2-hinario-2010
+    quote: Presidida pelo Vigário-Geral, Rev. Maurício Amazonas
+  - source: darn2-consolacao-2012
+    quote: Vigário Geral, Rev. Maurício Amazonas
+  notes: >-
+    Cargo atestado em 22/12/2009 e 29/06/2010 (assinaturas de artigos no site diocesano); também pároco da Paróquia
+    Anglicana Jardim das Oliveiras. Em outubro de 2009 era presidente do Conselho Diocesano. Vigário-Geral da Diocese
+    do Recife em abril de 2010 e fevereiro de 2012.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: dard2-clero-presb2
+    quote: Rev. Maurício Amazonas dos Santos, OSE
+  notes: >-
+    Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
+    de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim.
+- jurisdiction: ieab
+  role: other
+  role_description: ministro_leigo
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Maurício Amazonas Paróquia Anglicana Bom Samaritano
+  notes: >-
+    Local: Paróquia Anglicana Bom Samaritano. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife
+    (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os ministros leigos
+    / ministros encarregados (ainda não ordenado, segundo a carta).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: capelao_do_seminario
+  status: confirmed
+  sources:
+  - source: dard1-cargos-2009a
+    quote: Capelão Rev. Maurício Manoel Amazonas dos Santos, ose
+  - source: dard1-cargos-2010
+    quote: Capelão Rev. Maurício Manoel Amazonas dos Santos, ose
+  notes: >-
+    Local: SAT-PE (Seminário Anglicano Teológico de Pernambuco). Consta na lista de "Cargos Diocesanos" capturada
+    em jan/2009 e na de jul/2009 (atualizada em 28/09/2010); a página não informa a data de início.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: estatistico_diocesano
+  status: confirmed
+  sources:
+  - source: dard1-comissoes-2009a
+    quote: Estatístico Diocesano Rev. Maurício Manoel Amazonas dos Santos, ose
+  - source: dard1-comissoes-2010
+    quote: Estatístico Diocesano Rev. Maurício Manoel Amazonas dos Santos, ose
+  notes: "Local: Estatístico Diocesano. Consta nas listas de cargos designados pelo bispo sob homologação do Concílio,\
+    \ na versão de jan/2009 e na de 01/07/2009. "
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: conselho_diocesano
+  status: probable
+  sources:
+  - source: dard1-eletivos-2009a
+    quote: Rev. Maurício Manoel Amazonas dos Santos, ose (1 ano)
+  notes: >-
+    Local: Conselho Diocesano (membro clerical, mandato de 1 ano). Consta na lista "Cargos Eletivos (Sugestões ao
+    Plenário)" capturada em jan/2009; são sugestões ao plenário do Concílio, e a página não informa se foram aprovadas
+    nem a data.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: direcao_do_sat-pe
+  status: confirmed
+  sources:
+  - source: dard1-sat-livros-2008
+    quote: Rev. Maurício Amazonas
+  notes: >-
+    Local: SAT-PE (Seminário Anglicano Teológico de Pernambuco). Assina como membro da direção do SAT/PE no pedido
+    de doação de livros de 2008, que fala em reestruturação do seminário, aulas na antiga sede da Catedral do Bom
+    Samaritano e novas disciplinas para 2009.
 events:
 - type: other
   date: '2011-05-05'
@@ -98,3 +305,36 @@ events:
     quote: 'Série: “O Povo Pergunta e os Episcopáveis Respondem”'
   - source: drp2-episcopaveis-2011
     quote: Rev. Evilásio Tenório | Rev. Flávio Adair | Rev. Maurício Amazonas
+- type: other
+  date: '2009-07-31'
+  description: >-
+    O bispo diocesano Robinson Cavalcanti dá posse, em 31/07/2009, à Comissão Especial de Assessoria Institucional,
+    criada por recomendação do Encontro do Clero para encaminhar um status estável da Diocese do Recife na Comunhão
+    Anglicana; integram-na Miguel Uchoa (coordenador), Maurício Coelho, Maurício Amazonas (presidente do Conselho
+    Diocesano) e os arcediagos Luiz Souza, João Peixoto (secretário), Fred Souto, Evilásio Tenório e Carlos Alberto
+    Fernandes
+  status: confirmed
+  sources:
+  - source: darn2-comissao-2009
+    quote: >-
+      o Bispo Diocesano, Dom Robinson Cavalcanti, deu posse à Comissão Especial de Assessoria Institucional criada
+      por recomendação do recente Encontro do Clero, visando os encaminhamentos necessários a um status estável
+      para a Diocese do Recife na Comunhão Anglicana
+  - source: darn2-comissao-2009
+    quote: >-
+      Integram essa comissão os reverendos Miguel Uchoa (coordenador), Maurício Coelho, Maurício Amazonas (presidente
+      do Conselho Diocesano) e os Arcediagos Luiz Souza, João Peixoto (secretário), Fred Souto, Evilásio Tenório
+      e Carlos Alberto Fernandes
+- type: other
+  date: '2009-10-04'
+  description: >-
+    A Diocese do Recife convoca para 04/10/2009, na Paróquia Anglicana Emanuel (Olinda), culto de ação de graças
+    pelos 12 anos de episcopado de Dom Robinson Cavalcanti, tendo como pregador o presidente do Conselho Diocesano,
+    Maurício Amazonas
+  status: probable
+  sources:
+  - source: darn2-acao-gracas-2009
+    quote: Culto de Ação de Graças pelos 12 anos de Episcopado de Dom Robinson
+  - source: darn2-acao-gracas-2009
+    quote: >-
+      será celebrado no primeiro domingo de outubro, dia 04, às 18h30, na Paróquia Anglicana Emanuel, Olinda-PE

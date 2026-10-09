@@ -260,8 +260,7 @@ def _mesclar(lista, nova, chave, campos, compativel):
 arquivos = sorted({f for e in ARGS.entradas for f in (sorted(e.glob('*.json')) if e.is_dir() else [e])})
 siglas_jur = {norm(n) for j in jurisdicoes.values() for n in [j['name'], j.get('acronym'), *j['aliases']] if n}
 META = re.compile(r'(?i:\b(?:na|da|a) base\b|\bj[aá] registrad)|\bNOVO\b')
-PRIVADO = re.compile(r'\b(espos[ao]|marido|filh[oa]s? d[aeo]|(?:seus|suas|sua|seu) filh[oa]s?|casad[oa]|profiss[aã]o|trabalha como|doen[cç]a|c[aâ]ncer|'
-                     r'internad[oa]|endere[cç]o|mora em|residente)\b', re.I)
+PRIVADO = re.compile(r'\b(doen[cç]a|c[aâ]ncer|internad[oa]|tratamento|endere[cç]o|mora em|residente|sal[aá]rio|d[ií]vida)\b', re.I)
 for _arq in arquivos:
     try:
         _d = json.loads(_arq.read_text())
@@ -307,7 +306,7 @@ for arq in arquivos:
             tipo = 'book' if f.get('tipo') == 'livro' else 'official_document' if tipo == 'official_document' else tipo
         fontes[fid] = {k: v for k, v in {
             'id': fid, 'type': tipo, 'title': f.get('titulo') or fid, 'author': f.get('autor'),
-            'publisher': f.get('publicador'), 'url': url, 'archive_url': None,
+            'publisher': f.get('publicador'), 'url': url, 'archive_url': f.get('arquivo') if str(f.get('arquivo') or '').startswith('http') else None,
             'published': data(f.get('data_publicacao'), avisos, fid), 'accessed': HOJE,
             'language': f.get('idioma'), 'level': NIVEL.get(f.get('nivel'), 'secondary'), 'notes': f.get('notas')}.items()
             if v is not None or k in ('url',)}
@@ -339,6 +338,13 @@ for arq in arquivos:
         if p.get('resumo') and rs and not x.get('biography'):
             x['biography'] = p['resumo']
             x['sources'] = rs
+        elif p.get('resumo') and rs:
+            x['sources'] = mesclar_refs(x.get('sources') or [], rs)
+        # Fatos biográficos permitidos (naturalidade, formação, cônjuge clérigo…) não têm campo próprio: as citações
+        # ficam junto às fontes do resumo, e o resumo é refeito com resumos.py.
+        rb = refs(p.get('fontes_biografia'), chaves)
+        if rb:
+            x['sources'] = mesclar_refs(x.get('sources') or [], rb)
 
     for j in d.get('jurisdicoes', []):
         nome = j.get('sigla') or j['nome']
@@ -366,6 +372,9 @@ for arq in arquivos:
         if j.get('resumo') and rs and not x.get('description'):
             x['description'] = j['resumo']
             x['sources'] = rs
+        elif j.get('resumo') and rs:
+            # Já há descrição: as citações vão para as fontes do resumo, que é refeito com resumos.py.
+            x['sources'] = mesclar_refs(x.get('sources') or [], rs)
 
     for a in d.get('afirmacoes', []):
         rs = refs(a.get('fontes'), chaves)
@@ -770,3 +779,7 @@ if WRITE:
     print(f'\n{len(mudou)} arquivo(s) gravado(s) em {OUT}')
 else:
     print('\n(simulação; use --write para gravar)')
+alteradas = [k for (pasta, k) in mudou if pasta in ('people', 'jurisdictions') and k in orig[pasta]]
+if alteradas:
+    print(f'\nResumos: {len(alteradas)} ficha(s) existente(s) mudaram e o resumo delas não é refeito aqui. Depois de'
+          ' consolidar, rode resumos.py dossie (ver INSTRUCOES.md) para atualizá-los.')

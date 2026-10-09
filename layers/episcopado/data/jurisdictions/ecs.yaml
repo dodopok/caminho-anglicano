@@ -5,13 +5,38 @@ name: Igreja Episcopal do Sudão (Province of the Episcopal Church of Sudan)
 type: province
 tradition: anglican
 country: SD
-description: Província da Comunhão Anglicana.
+description: >-
+  Província anglicana do Sudão, cujo arcebispo, Ezekiel Kondo, integra o Conselho dos Primazes do GAFCON, e que
+  inclui a Diocese de Maridi, da qual Justin Badi Arama foi bispo diocesano de 2001 a 2018. Em 2026 é citada entre
+  as igrejas que afirmaram a Declaração de Jerusalém e permanecem na Global Anglican Communion, e assinou o comunicado
+  do GSFA que afirma permanecer na Comunhão Anglicana.
 sources:
 - source: gacm-tlc-2026-03-27-who-leads
   quote: >-
     They are archbishops Samy Shehata of Alexandria, Titre Ande of Congo, Jackson Ole Sapit of Kenya, Justin Badi
     Arama of South Sudan, and Ezekiel Kondo of Sudan, as well as Archbishop James Wong, the retired primate of the
     Indian Ocean.
+- source: gacl-ai-2023-uxbridge
+  quote: The Most Reverend Ezekiel Kondo – Sudan
+- source: gacl-wp-badi
+  quote: He became Bishop of the Diocese of Maridi in 2001
+- source: gacl-ai-2018-badi-entron
+  quote: who was previously the Bishop of the Anglican Diocese of Maridi in the western part of the country
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    Important omissions from the council’s list were six former Gafcon primates who did not participate in the Abuja
+    meetings. They are archbishops Samy Shehata of Alexandria, Titre Ande of Congo, Jackson Ole Sapit of Kenya,
+    Justin Badi Arama of South Sudan, and Ezekiel Kondo of Sudan, as well as Archbishop James Wong, the retired
+    primate of the Indian Ocean.
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    Because their churches have publicly affirmed the Jerusalem Declaration, they remain part of the Global Anglican
+    Communion.
+- source: gace-tlc-gsfa-2026-01
+  quote: >-
+    The meeting’s communiqué , released January 21, was signed by nine primates, representing the Anglican Communion’s
+    provinces of Alexandria, Congo, the Indian Ocean, Myanmar, South East Asia, South Sudan, Sudan, and Uganda,
+    as well as the Anglican Church of Brazil.
 relations:
 - type: member_of
   target: gac

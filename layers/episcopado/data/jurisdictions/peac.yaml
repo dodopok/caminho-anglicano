@@ -5,13 +5,59 @@ name: Igreja Anglicana do Congo (Province de l’Eglise Anglicane du Congo)
 type: province
 tradition: anglican
 country: CD
-description: Província da Comunhão Anglicana.
+description: >-
+  Província anglicana do Congo, representada no Conselho dos Primazes do GAFCON, que tem o arcebispo Titre Ande
+  entre os primazes do movimento. Em 2025 declarou que não pretende deixar a Comunhão Anglicana, mas continuar com
+  o GSFA, e que um eventual desligamento só pode ser decidido por seu Sínodo Provincial. Em março de 2026 um relato
+  a inclui na Global Anglican Communion por ter afirmado a Declaração de Jerusalém, enquanto a própria província
+  se diz membro pleno da Comunhão Anglicana.
 sources:
 - source: gacm-tlc-2026-03-27-who-leads
   quote: >-
     They are archbishops Samy Shehata of Alexandria, Titre Ande of Congo, Jackson Ole Sapit of Kenya, Justin Badi
     Arama of South Sudan, and Ezekiel Kondo of Sudan, as well as Archbishop James Wong, the retired primate of the
     Indian Ocean.
+- source: gacm-tlc-2025-10-17-analysis
+  quote: >-
+    Three of the nine other churches represented on GAFCON’s Primates’ Council are not recognized by the Anglican
+    Communion Office and have largely been formed under GAFCON’s auspices (the Anglican Church of Brazil, the Reformed
+    Evangelical Anglican Church of South Africa, and the Anglican Church in North America). But such a total severing
+    of connections with Canterbury and the Instruments of Communion would be a new development for the six other
+    provinces represented on the council (Alexandria, Chile, Congo, Kenya, Myanmar, and South Sudan).
+- source: gacm-ens-2025-10-23-little-evidence
+  quote: >-
+    The other six Anglican provinces that are represented on GAFCON’s primates’ council are Alexandria (Egypt),
+    Chile, Congo, Kenya, Myanmar and South Sudan.
+- source: gacm-ai-2026-01-30-curiouser
+  quote: >-
+    Gafcon Primates Council Covenanted GSFA Provinces + Gafcon Primates Covenanted GSFA Provinces Anglican Church
+    of Rwanda Episcopal Church of South Sudan Church of Bangladesh Church of Nigeria Anglican Church of the Congo
+    Province of the Indian Ocean Anglican Church of Kenya Anglican Church of Chile Church of the Province of South
+    East Asia Church of Uganda Episcopal Church of Sudan Episcopal/Anglican Province of Alexandria Church of the
+    Province of Myanmar Gafcon Jurisdictions Anglican Church of North America REACH-SA Anglican Church of Brazil
+- source: gacm-tlc-2025-10-30-congo
+  quote: >-
+    “The Anglican Church of Congo has no intention to leave the Anglican Communion, rather to keep working with
+    brothers and sisters of the GSFA [Global South Fellowship of Anglicans] to accomplish our common goal: to reform,
+    heal and revitalize the Anglican Communion without leaving it.
+- source: gacm-tlc-2025-10-30-congo
+  quote: >-
+    “Any disengagement of the Anglican Church of Congo from the Anglican Communion needs, not only to be made collegially
+    through respectful debate, but crucially can only be decided by our Provincial Synod.”
+- source: gacm-ens-2025-10-23-little-evidence
+  quote: >-
+    “The Church of Congo will not follow that call and remains a full member of the Anglican Communion, and also
+    a member of the Global South.”
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    Important omissions from the council’s list were six former Gafcon primates who did not participate in the Abuja
+    meetings. They are archbishops Samy Shehata of Alexandria, Titre Ande of Congo, Jackson Ole Sapit of Kenya,
+    Justin Badi Arama of South Sudan, and Ezekiel Kondo of Sudan, as well as Archbishop James Wong, the retired
+    primate of the Indian Ocean.
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    Because their churches have publicly affirmed the Jerusalem Declaration, they remain part of the Global Anglican
+    Communion.
 relations:
 - type: member_of
   target: gafcon

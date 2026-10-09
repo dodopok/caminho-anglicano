@@ -22,19 +22,25 @@ founded:
     page: '101'
 website: https://dioceseanglicanadeesmeraldas.weebly.com/
 description: >-
-  Estrutura da IELB sediada em Esmeraldas (MG), apresentada em seu site como "Diocese Anglicana de Esmeraldas -
-  Igreja Anglo-Católica", com Sé Primacial do Brasil sob Lucas Macieira e a Província Anglicana Nossa Senhora de
-  Guadalupe (Rua Santo Expedito, 650, Monte Sinai). O site (c. 2010-2015) reproduz o texto institucional e o rodapé
-  "Copyright 2010 © Igreja Episcopal Latina do Brasil - Anglicana" e exibe o selo "Comunhão Anglicana Livre".
+  A Diocese Anglicana de Esmeraldas (MG) é apresentada em seu site, com data de 2010, como estrutura da Igreja Episcopal
+  Latina do Brasil (IELB), com Sé Primacial sob o arcebispo Lucas Macieira da Silva, e exibe o selo da Comunhão
+  Anglicana Livre. É apontada como antecessora da Diocese Anglicana Católica do Brasil.
 sources:
+- source: lielb-dae-clero
+  quote: Sé Primacial do Brasil Arcebispo Anglicano de Minas Gerais Mons.Dr. Dom Lucas Macieira da Silva
 - source: lielb-dae-sucessao
   quote: Copyright 2010 © Igreja Episcopal Latina do Brasil - Anglicana
-- source: lielb-dae-provincias
-  quote: Província Anglicana Nossa Senhora de Guadalupe
+- source: lielb-dae-sucessao
+  quote: A Sucessão da IELB é ininterrupta
 - source: lielb-dae-clero
-  quote: Sé Primacial do Brasil
-- source: lielb-dae-quem
-  quote: A IELB é........
+  quote: Comunhão Anglicana Livre
+- source: lielb-dacb-site
+  quote: >-
+    Sé Primacial: Paróquia Santo Expedito e Nossa Senhora Desatadora dos Nós — Rua 1, nº 650, Bairro Monte Sinai,
+    Esmeraldas/MG.
+- source: cant-novas-igrejas-2024
+  quote: culminando na transição para a nomenclatura Diocese Anglicana Católica do Brasil
+  page: '101'
 relations:
 - type: part_of
   target: ielb

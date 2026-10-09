@@ -1,6 +1,31 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ricardo-melo
 name: Ricardo Melo
+biography: >-
+  Ricardo Antônio da Silva Melo foi ordenado diácono em 16 de junho de 2007 e presbítero em fevereiro de 2008, ambas
+  as vezes por Robinson Cavalcanti, na Diocese Anglicana do Recife. Nessa diocese atuou como ministro auxiliar,
+  integrou a Equipe Pastoral e a comissão de credenciais e diplomacia e foi secretário diocesano de educação.
+sources:
+- source: drp2-ord-diac-2007-06-16
+  quote: 'Sermão de Ordenação Diaconal de: Dinamérico Wanderley, Fábio Rego, João Peixoto e Ricardo Melo'
+- source: drp2-ord-diac-2007-06-16
+  quote: >-
+    Dom Robinson Cavalcanti, ose Bispo Diocesano Catedral Anglicana do Bom Samaritano Recife (PE), 16 de junho de
+    2007.
+- source: drp2-breves-01-2008
+  quote: 'Ordenou ao Presbiterado os Reverendos: Dinamérico Wanderley e Ricardo Melo;'
+- source: darb1-breves-2008
+  quote: 'Ordenou ao Presbiterado os Reverendos: Dinamérico Wanderley e Ricardo Melo;'
+- source: dard2-com-sul
+  quote: >-
+    Auxiliares: Rev. Geison Sávio de Holanda, Rev. Josias Junior, Rev. Dinamérico Wanderley, Rev. Ricardo Melo
+- source: darl3-n4617
+  quote: >-
+    compondo, também a Equipe Pastoral, os Reverendos: Dinamérico Wanderley, Josias Júnior e Ricardo Melo
+- source: dard1-comissoes-2009a
+  quote: Rev. Ricardo Antônio da Silva Melo
+- source: dard2-clero-presb2
+  quote: Rev. Ricardo Antônio da Silva Melo … Secretário Diocesano de Educação
 ordinations:
 - order: diaconate
   date: '2007-06-16'
@@ -25,4 +50,78 @@ ordinations:
     quote: Regressou das “férias” em 11.02
   - source: drp2-breves-01-2008
     quote: 'Ordenou ao Presbiterado os Reverendos: Dinamérico Wanderley e Ricardo Melo;'
-  notes: Entre 11/02/2008 e 03/03/2008; dia e local não informados.
+  - source: darb1-breves-2008
+    quote: 'Ordenou ao Presbiterado os Reverendos: Dinamérico Wanderley e Ricardo Melo;'
+  notes: >-
+    Entre 11/02/2008 e 03/03/2008; dia e local não informados. A nota situa a ordenação após o retorno do bispo,
+    em 11/02/2008, e antes do mês de março.
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário diocesano de educação
+  status: probable
+  sources:
+  - source: dard2-clero-presb2
+    quote: Rev. Ricardo Antônio da Silva Melo … Secretário Diocesano de Educação
+  notes: >-
+    Secretário diocesano de Educação na lista de presbíteros de 31/08/2009 (atualizada até 14/01/2010); a identificação
+    com o Rev. Ricardo Melo, auxiliar da Paróquia do Espírito Santo, vem do nome. Em 2007 o cargo constava com Raniere
+    Almeida de Oliveira.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: auxiliar
+  status: confirmed
+  sources:
+  - source: dard2-com-sul
+    quote: >-
+      Auxiliares: Rev. Geison Sávio de Holanda, Rev. Josias Junior, Rev. Dinamérico Wanderley, Rev. Ricardo Melo
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo (Piedade, Jaboatão dos Guararapes-PE; Arcediagado Sul). Página "Comunidades"
+    do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de
+    posse.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: dard2-clero-presb2
+    quote: Rev. Ricardo Antônio da Silva Melo
+  notes: >-
+    Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
+    de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim. A identificação com o Rev. Ricardo
+    Melo da Paróquia do Espírito Santo é pelo nome.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: comissao_de_credenciais_e_diplomacia
+  status: confirmed
+  sources:
+  - source: dard1-comissoes-2009a
+    quote: Rev. Ricardo Antônio da Silva Melo
+  - source: dard1-comissoes-2010
+    quote: Rev. Ricardo Antônio da Silva Melo
+  notes: >-
+    Local: Comissão de Credenciais e Diplomacia. Consta nas listas de cargos designados pelo bispo sob homologação
+    do Concílio, na versão de jan/2009 e na de 01/07/2009. A lista traz o nome completo "Ricardo Antônio da Silva
+    Melo"; a identificação com o Rev. Ricardo Melo (Paróquia do Espírito Santo) é provável, não explícita.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_auxiliar
+  status: confirmed
+  sources:
+  - source: dard1-com-sul-2009a
+    quote: >-
+      Auxiliares: Rev. Geison Sávio de Holanda, Rev. Josias Junior, Rev. Dinamérico Wanderley, Rev. Ricardo Melo
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes). Consta na página de comunidades do Arcediagado
+    Sul capturada em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro da Equipe Pastoral
+  status: confirmed
+  sources:
+  - source: darl3-n4617
+    quote: >-
+      compondo, também a Equipe Pastoral, os Reverendos: Dinamérico Wanderley, Josias Júnior e Ricardo Melo
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes, PE). Integrante da Equipe Pastoral da
+    PAES em dezembro de 2008.

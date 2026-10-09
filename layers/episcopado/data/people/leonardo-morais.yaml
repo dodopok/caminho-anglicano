@@ -1,6 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: leonardo-morais
 name: Leonardo Morais
+biography: Leonardo Morais consta como postulante na REB.
+sources:
+- source: reb-estrutura
+  quote: Postulantes
+- source: reb-estrutura
+  quote: Leonardo Morais
+- source: reb-calendario-2026
+  quote: "Postulante \nMarcela Freitas Coelho\nJader Pires Lopes\nleonardo Morais"
 affiliations:
 - jurisdiction: reb
   role: other

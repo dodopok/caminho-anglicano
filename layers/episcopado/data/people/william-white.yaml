@@ -25,11 +25,52 @@ death:
     quote: '"Q3569025": enwiki "William White (bishop of Pennsylvania)"'
 wikidata: Q3569025
 biography: >-
-  Bispo da Pensilvânia, sagrado em Lambeth em 1787; primeiro e quarto Presiding Bishop da Igreja Episcopal (EUA).
+  Nascido em 04/04/1748, William White foi sagrado bispo da Pensilvânia em 04/02/1787, na capela de Lambeth, por
+  John Moore, arcebispo de Cantuária, com outros bispos, e permaneceu na diocese até morrer, em 17/07/1836. Foi
+  o primeiro (1789) e o quarto (1795-1836) bispo presidente da Igreja Episcopal dos Estados Unidos. Participou de
+  seis sagrações episcopais, entre elas as de Alexander Viets Griswold (1811) e Thomas Church Brownell (1819).
 sources:
 - source: wp-white
   quote: >-
     | consecrated by = [[John Moore (archbishop of Canterbury)|John Moore]], ([[Archbishop of Canterbury|Canterbury]])
+- source: perry-1895
+  quote: >-
+    on the fourth day of February, 1787, at Lambeth Chapel, at the hands of the archbishop of Canterbury, Dr. Moore,
+    the archbishop of York, Dr. Markham, the bishop of Bath and Wells, Dr. Moss, and the bishop of Peterborough,
+    Dr. Hinchcliffe, William White and Samuel Provoost were duly and canonically, by the laying on of hands, made
+    bishops of the Church of God.
+- source: stubbs-1897
+  quote: >-
+    a. d. 1787, Feb. 4. William White. Pennsylvania ; d. 1836 ; and Samuel Provoost. New York ; d. 1815. Consecrated
+    at Lambeth by Archbishop Moore, William of York, Charles of Bath, and John of Peterborough ; Reg. Moore, 64.
+- source: stubbs-1897
+  quote: William White. Pennsylvania ; d. 1836
+- source: wp-white
+  quote: '1st PB: July 28{{snd}}October 3, 1789<br />4th PB: September 8, 1795{{snd}}July 17, 1836'
+- source: wp-white
+  quote: >-
+    was the first and fourth [[Presiding Bishop]] of the [[Episcopal Church (United States)|Episcopal Church of
+    the United States]] (1789; 1795–1836)
+- source: perry-1895
+  quote: >-
+    at the time of his death (July 17, 1836) he was undoubtedly the most revered and widely known of the bishops
+    of the Anglican commu
+- source: perry-1895
+  quote: >-
+    Griswold was consecrated in Trinity Church, New York, May 29, 181 1, by Bishops White, Provoost, and Jarvis,
+    at the same time with Hobart.
+- source: wp-en-histlist
+  quote: >-
+    | [[Alexander Viets Griswold]] | [[William White (Bishop of Pennsylvania)|2]] [[Samuel Provoost|3]] [[Abraham
+    Jarvis|8]]{{sfn|Perry|1895|page=[https://archive.org/stream/cu31924050995525#page/n140/mode/1up 29]}} | 1811
+- source: perry-1895
+  quote: >-
+    he was consecrated in Trinity Church, New Haven, Oct. 27, 18 19, by Bishops White, Hobart, and Griswold.
+- source: wp-en-histlist
+  quote: >-
+    | [[Thomas Church Brownell]] | [[William White (Bishop of Pennsylvania)|2]] [[John Henry Hobart|11]] [[Alexander
+    Viets Griswold|12]]{{sfn|Perry|1895|page=[https://archive.org/stream/cu31924050995525#page/n156/mode/1up 45]}}
+    | 1819
 ordinations:
 - order: episcopate
   date: '1787-02-04'
@@ -75,3 +116,27 @@ affiliations:
     quote: William White. Pennsylvania ; d. 1836
   notes: >-
     Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.
+- jurisdiction: tec
+  role: other
+  role_description: Bispo Presidente (1º mandato)
+  start: '1789-07-28'
+  end: '1789-10-03'
+  end_reason: term_end
+  status: probable
+  sources:
+  - source: wp-white
+    quote: '1st PB: July 28{{snd}}October 3, 1789<br />4th PB: September 8, 1795{{snd}}July 17, 1836'
+  notes: Primeiro Bispo Presidente da Igreja Episcopal dos EUA.
+- jurisdiction: tec
+  role: other
+  role_description: Bispo Presidente (4º mandato)
+  start: '1795-09-08'
+  end: '1836-07-17'
+  end_reason: death
+  status: probable
+  sources:
+  - source: wp-white
+    quote: >-
+      was the first and fourth [[Presiding Bishop]] of the [[Episcopal Church (United States)|Episcopal Church of
+      the United States]] (1789; 1795–1836)
+  notes: Quarto Bispo Presidente, como o bispo mais antigo, segundo a Wikipédia.

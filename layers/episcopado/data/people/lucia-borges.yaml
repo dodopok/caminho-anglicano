@@ -1,6 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: lucia-borges
 name: Lúcia Borges
+biography: >-
+  Lúcia Borges foi ordenada diácona em 2001 e presbítera em 2006 na IEAB e foi instituída cônega da Catedral da
+  Ressurreição, em Brasília.
+sources:
+- source: dab-2017-lucia
+  quote: >-
+    Mas foi em 1996 que a irmã Lucia foi recebida na Comunhão Anglicana pelo Bispo Dom Almir, na Catedral da Ressurreição
+    em Brasília. Foi ordenada Diácona em 2001 e Presbítera em 2006
+- source: dab-2017-lucia
+  quote: Foi ordenada Diácona em 2001 e Presbítera em 2006
+- source: dab-2017-lucia
+  quote: a instituição da Revda. Lucia Borges como Cônega da Catedral da Ressurreição.
 ordinations:
 - order: diaconate
   date: '2001'

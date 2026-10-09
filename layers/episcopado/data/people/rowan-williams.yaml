@@ -1,6 +1,17 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: rowan-williams
 name: Rowan Williams
+biography: >-
+  Como arcebispo de Cantuária, foi destinatário em 2005 de cartas da Diocese Anglicana do Recife (27/06/2005, pedindo
+  a revogação da deposição de Robinson Cavalcanti) e da Câmara dos Bispos da IEAB (14/11/2005), que apresentou a
+  versão oposta.
+sources:
+- source: drv-carta-cantuaria
+  quote: Recife, 27 de junho de 2005.
+- source: drv-carta-cantuaria
+  quote: Revogação imediata da deposição do Bispo Diocesano
+- source: drv-pronunciamento-ieab-2005
+  quote: acatou e homologou unanimemente a decisão do Tribunal
 events:
 - type: other
   date: '2005-06-27'

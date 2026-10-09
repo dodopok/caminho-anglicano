@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: renato-cirillo
 name: Renato Cirillo
+biography: >-
+  Ordenado diácono em 28 de maio de 2022, durante o 56º Concílio da Diocese Anglicana de São Paulo, e presbítero
+  em 6 de agosto de 2023, em Guararapes (SP), na IEAB.
+sources:
+- source: dasp-2022-cirillo-diac-conv
+  quote: >-
+    por ocasião do 56° Concílio da Diocese Anglicana de São Paulo, teremos a Ordenação Diaconal de nosso irmão Renato
+    Cirillo no dia 28 de maio de 2022, às 10h30.
+- source: dasp-2023-cirillo-presb-conv
+  quote: >-
+    convida todo o Povo de Deus para participar da Solene Celebração Eucarística de Ordenação Presbiteral do Rev.
+    Diácono Renato Cirillo, no dia 6 de agosto de 2023, às 10h, no Anfiteatro da Escola João Arruda Brasil em Guararapes,
+    SP.
 ordinations:
 - order: diaconate
   date: '2022-05-28'

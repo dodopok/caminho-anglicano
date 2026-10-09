@@ -35,6 +35,17 @@ Quando um agente termina:
 3. `--write`, `pnpm episcopado:validate`, commit por leva (`feat(episcopado): <frente> …`).
 4. Rode `pnpm episcopado:pauta` de novo e diga ao usuário quais quebras fecharam.
 
+## 3b. Atualizar os resumos das fichas tocadas
+Depois de consolidar as levas de uma frente (não a cada leva, para não refazer o mesmo resumo várias vezes),
+refaça o resumo de todas as fichas existentes que ganharam fatos: o consolidador não mexe em resumo existente e
+avisa quantas fichas mudaram.
+1. `pnpm episcopado:resumos dossie --desde <commit de antes da frente> --saida <scratchpad>/resumos-<frente>`
+   (lotes de 30 fichas; `--minimo 2` pula fichas com um fato só).
+2. Um agente (Sonnet basta) por dossiê: "Siga a seção 'Reescrever resumos' de
+   `layers/episcopado/pesquisa/INSTRUCOES.md`; leia `<dossie-NN.md>` e grave `<resumos-NN.json>`".
+3. `pnpm episcopado:resumos aplicar <resumos-NN.json>` (simulação), leia 3–4 textos ao acaso contra o dossiê,
+   depois `--write`, `pnpm episcopado:validate` e commit (`docs(episcopado): resumos atualizados — <frente>`).
+
 ## 4. Pendências manuais
 O que nenhum agente consegue ler (vídeo do YouTube, Facebook fechado, livro físico) vira uma lista curta para o
 usuário, só com o que é de fato inacessível, mais importante primeiro. Cada item tem de ser rápido de resolver:

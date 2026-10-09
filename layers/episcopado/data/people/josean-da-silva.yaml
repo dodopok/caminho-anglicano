@@ -1,12 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: josean-da-silva
 name: Josean da Silva
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Ordenado diácono em 05/07/2008 por Robinson Cavalcanti, na Catedral do Bom Samaritano (Recife), integrou a equipe
+  pastoral da Diocese do Recife.
 sources:
-- source: drv-ordenacoes-diaconais-2008
+- source: drp2-ord-diac-2008-07-05
   quote: >-
-    apresentamos Josean, Lúcia Helena, Márcia, Márcio e Maria de Fátima para serem Ordenados ao Diaconato na Santa
-    Igreja de Cristo.
+    Sermão de Ordenações Diaconais Reverendos: Josean, Lúcia Helena, Márcia Coelho, Márcio Simões e Maria de Fátima
+    Encerramento do Retiro do Clero Catedral Anglicana do Bom Samaritano Boa Viagem, Recife (PE), 05/07/2008
+- source: drp2-ord-diac-2008-07-05
+  quote: +Dom Robinson Cavalcanti Bispo Diocesano
+- source: dard2-com-pb
+  quote: 'Equipe Pastoral: Rev. Josean da Silva, Rev Marconi Alves , ofa'
 ordinations:
 - order: diaconate
   date: '2008-07-05'
@@ -30,3 +36,14 @@ ordinations:
   notes: >-
     Rito de ordenação diaconal de cinco pessoas presidido pelo bispo Edward Robinson de Barros Cavalcanti, que consta
     como ordinante e pregador.
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro da equipe pastoral
+  status: confirmed
+  sources:
+  - source: dard2-com-pb
+    quote: 'Equipe Pastoral: Rev. Josean da Silva, Rev Marconi Alves , ofa'
+  notes: >-
+    Local: Con-Catedral Anglicana da Ressurreição (João Pessoa-PB). Na equipe pastoral da Con-Catedral da Ressurreição
+    segundo a página do Arcediagado PB/RN/CE de 20/08/2009.

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: magna-barbosa
+name: Magna Barbosa
+biography: >-
+  Ministra local do Ponto Missionário Anglicano em Maceió (AL), primeira a receber o título de Ministra Local Honorária
+  da Diocese do Recife, em maio de 2012.
+sources:
+- source: darn2-ministra-honoraria-2012
+  quote: está sendo a primeira Ministra Local a receber o título de Ministra Local Honorária
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro local
+  status: confirmed
+  sources:
+  - source: darn2-ministra-honoraria-2012
+    quote: >-
+      Ministra Local do Ponto Missionário Anglicano em Maceió que, sendo homenageada, está sendo a primeira Ministra
+      Local a receber o título de Ministra Local Honorária
+  - source: darn2-maceio-visita-2012
+    quote: Ponto Missionário Anglicano em Maceió ( ML. Magna Barbosa )
+  notes: >-
+    Local: Ponto Missionário Anglicano em Maceió, AL. Ministra Local do ponto missionário em Maceió em maio de 2012;
+    recebe em 27/05/2012 o título de Ministra Local Honorária, o primeiro concedido na diocese, em reconhecimento
+    a quase quinze anos de serviço como secretária episcopal e diocesana.

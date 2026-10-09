@@ -2,6 +2,10 @@
 id: diocese-of-vermont
 name: Diocese of Vermont
 type: diocese
+description: Diocese da TEC em que John Henry Hopkins foi escolhido bispo em 1832.
+sources:
+- source: perry-1895
+  quote: Hopkins was chosen bishop of Vermont
 relations:
 - type: part_of
   target: tec

@@ -27,13 +27,29 @@ death:
       (1942–1944).
 wikidata: Q336315
 biography: >-
-  Bispo de Manchester (1921), arcebispo de York e de Cantuária (1942-1944); sagrou Geoffrey Fisher (1932). Quem
-  o sagrou NÃO foi encontrado (lacuna).
+  Nascido em 1881 e falecido em 1944, foi sagrado em 25/01/1921, em York Minster, por Cosmo Gordon Lang, como bispo
+  de Manchester (1921–1929). Foi depois arcebispo de York (1929–1942) e de Cantuária (1942–1944).
 sources:
+- source: henson-1921-01-25
+  quote: >-
+    The consecration of William Temple to be Bishop of Manchester took place in the Choir of York Minster . There
+    was a very large gathering of Bishops. The Archbishop was vested in a white cope, and performed his central
+    function with characteristic dignity.
+- source: henson-1921-01-25
+  quote: >-
+    It was observed that Archbishop Temple had consecrated Lang, & now Archbishop Lang had consecrated Temple .
+- source: wp-william-temple
+  quote: >-
+    Temple was consecrated bishop at [[York Minster]] on 25 January 1921 and enthroned at [[Manchester Cathedral]]
+    on 15 February.
 - source: wp-william-temple
   quote: Temple was consecrated bishop at [[York Minster]] on 25 January 1921
-- source: wikidata-api-2
-  quote: '"Q336315": enwiki "William Temple (bishop)"'
+- source: wp-william-temple
+  quote: >-
+    '''William Temple''' (15 October 1881 – 26 October 1944) was an English [[Anglican]] priest who served as [[Bishop
+    of Manchester]] (1921–1929), [[Archbishop of York]] (1929–1942) and [[Archbishop of Canterbury]] (1942–1944).
+- source: wikidata-api
+  quote: 'Q336315 William Temple {''enwiki'': ''William Temple (bishop)'', ''ptwiki'': ''William Temple (religioso)''}'
 ordinations:
 - order: episcopate
   date: '1921-01-25'

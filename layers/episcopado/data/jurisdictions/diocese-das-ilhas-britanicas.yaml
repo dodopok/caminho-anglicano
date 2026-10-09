@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-das-ilhas-britanicas
+name: Diocese das Ilhas Britânicas
+type: diocese
+tradition: anglican
+country: GB
+description: Primeira diocese da AIC nas Ilhas Britânicas, formada pelo bispo Norman Dutton.
+sources:
+- source: lia-aeci-about
+  quote: >-
+    introduced to the UK by Bishop Norman Dutton, who formed the first Diocese of the AIC in these islands
+relations:
+- type: part_of
+  target: aic-w
+  status: probable
+  sources:
+  - source: lia-aeci-about
+    quote: >-
+      introduced to the UK by Bishop Norman Dutton, who formed the first Diocese of the AIC in these islands

@@ -2,8 +2,37 @@
 id: simea-de-souza-meldrum
 name: Simea de Souza Meldrum
 full_name: Simea de Souza Meldrum
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Ordenada diácona em 1990 na IEAB e presbítera na Diocese Anglicana do Recife durante o episcopado de Clóvis Erly
+  Rodrigues, foi pároca da Paróquia Anglicana Água Viva, membro do Conselho Diocesano e presidente do Tribunal Eclesiástico
+  da diocese. Em 23/08/2005 foi excluída da comunhão da IEAB, com outros clérigos que declararam manter plena comunhão
+  com o bispo Robinson Cavalcanti, e permaneceu clériga da Diocese Anglicana do Recife.
 sources:
+- source: kickhofel-1995
+  quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1990 - … Simea de Souza Meldrum
+  page: '373'
+- source: dard2-hist3
+  quote: >-
+    Foram ordenados, durante o seu período os seguintes reverendos: Washington Franco e Siméa Meldrum (os únicos
+    dos seus Presbíteros que continuam conosco)
+- source: darn2-conferencia-missionaria-2012
+  quote: Paróquia Anglicana Água Viva
+- source: darl3-carta-0904
+  quote: 'Membros do Conselho Diocesano: Revda. Siméa de Souza Meldrum Paróquia Anglicana Água Viva'
+- source: dard1-eletivos-2009a
+  quote: 'Tribunal Eclesiástico: (2 anos) Revda. Siméa de Souza Meldrum – presidente'
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Revda. Siméa de Souza Meldrum … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Revda. Siméa de Souza Meldrum … Os clérigos não atenderam à convocação
+    e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo
+    plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
 - source: drp-boletim-oracao-2006
   quote: 'Orar pela Paróquia Anglicana Água Viva; pelos Reverendos: Siméa e Ian Meldrum'
 ordinations:
@@ -17,6 +46,26 @@ ordinations:
     page: '373'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: null
+  jurisdiction: ieab-dar
+  ordained_by: clovis-erly-rodrigues
+  status: probable
+  sources:
+  - source: dard2-hist3
+    quote: >-
+      Foram ordenados, durante o seu período os seguintes reverendos: Washington Franco e Siméa Meldrum (os únicos
+      dos seus Presbíteros que continuam conosco)
+  - source: darl3-hist3
+    quote: Washington Franco e Siméa Meldrum (os únicos dos seus Presbíteros que continuam conosco)
+  - source: darl3-hist3
+    quote: Foram ordenados, durante o seu período os seguintes reverendos
+  notes: >-
+    Robinson Cavalcanti lista Siméa Meldrum entre os presbíteros ordenados no período do bispo Clóvis Erly Rodrigues
+    (1986-1997); data e local não constam. O ordenante é entendido como o bispo diocesano da época. Ordenação durante
+    o episcopado de Clóvis Erly Rodrigues na diocese (1986-1997), conforme lista de Dom Robinson Cavalcanti; o texto
+    não dá data nem local e não diz expressamente "ordenado por"; ordenante inferido do período. A lista separa
+    os ordenados ao presbiterado (aqui incluídos) dos ordenados "apenas ao Diaconato".
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -45,13 +94,17 @@ affiliations:
       e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo
       plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
+  - source: dard1-com-norte-2009a
+    quote: Revda. Siméa Meldrum Rev. Ian Meldrum
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados. Local: Paróquia Anglicana Água Viva (Olinda). Clérigo
     citado como pastor/ministro da comunidade em out/nov de 2006 (boletim de oração da Secretaria de Intercessão).
     Anexo R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson
     Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005
-    é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata.
+    é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data exata. Local: Paróquia Anglicana Água Viva
+    (Olinda). Consta na página de comunidades do Arcediagado Norte capturada em 03/01/2009 (sem data de publicação
+    visível). A página lista os dois sem indicar função.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -70,3 +123,69 @@ affiliations:
     Brasil e, conseqüentemente, das Sagradas Ordens' por abandono de comunhão. motivo_fim 'deposicao' porque o efeito
     é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
     adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco
+  status: probable
+  sources:
+  - source: darn2-conferencia-missionaria-2012
+    quote: Paróquia Anglicana Água Viva
+  - source: darn2-conferencia-missionaria-2012
+    quote: Revda. Siméa Meldrum
+  notes: >-
+    Local: Paróquia Anglicana Água Viva, Olinda-PE. Identificada como a responsável pela Paróquia Água Viva no convite
+    à 1ª Conferência Missionária da Missão Sul-Americana (05 e 06/10/2012); a nota não diz o título.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro da equipe pastoral
+  status: confirmed
+  sources:
+  - source: dard2-com-norte
+    quote: Paróquia Anglicana Água Viva Revda. Siméa Meldrum Rev. Ian Meldrum
+  notes: >-
+    Local: Paróquia Anglicana Água Viva (Olinda-PE; Arcediagado Norte). Página "Comunidades" do arcediagado, criada
+    em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse. A página lista os
+    dois nomes sob a paróquia, sem indicar o cargo.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: dard2-clero-presb2
+    quote: Revda. Siméa de Souza Meldrum
+  notes: >-
+    Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
+    de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim.
+- jurisdiction: ieab
+  role: other
+  role_description: conselho_diocesano
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: dard1-carta-bispos-2004
+    quote: Revda. Siméa de Souza Meldrum Paróquia Anglicana Água Viva
+  notes: >-
+    Local: Paróquia Anglicana Água Viva. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife (então
+    ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Membro do Conselho Diocesano (nome na
+    carta: Siméa de Souza Meldrum).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presidente_do_tribunal_eclesiastico
+  status: probable
+  sources:
+  - source: dard1-eletivos-2009a
+    quote: 'Tribunal Eclesiástico: (2 anos) Revda. Siméa de Souza Meldrum – presidente'
+  notes: >-
+    Local: Tribunal Eclesiástico (mandato de 2 anos). Consta na lista "Cargos Eletivos (Sugestões ao Plenário)"
+    capturada em jan/2009; são sugestões ao plenário do Concílio, e a página não informa se foram aprovadas nem
+    a data.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro do Conselho Diocesano
+  status: confirmed
+  sources:
+  - source: darl3-carta-0904
+    quote: 'Membros do Conselho Diocesano: Revda. Siméa de Souza Meldrum Paróquia Anglicana Água Viva'
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana Água Viva. Membro do Conselho Diocesano em 17/09/2004,
+    com a Paróquia Anglicana Água Viva indicada.

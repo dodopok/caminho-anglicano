@@ -25,23 +25,56 @@ founded:
     page: '172'
 website: https://catolicaanglicana.wordpress.com/
 description: >-
-  Igreja sediada em Goiânia (GO), mantida juridicamente pela "Mitra Primacial Católica Anglicana" (CNPJ 29.104.811/0001-14,
-  atividade iniciada em 31/10/2017, tendo Orvandil Moreira Barbosa como presidente). Autodefine-se "de rito, tradição
-  e episcopado histórico católicos-anglicanos", sem subordinação ao arcebispo de Cantuária, com ênfase na teologia
-  da libertação. Dioceses declaradas: Centro Oeste, Baixo Tocantins (PA), Belém, São Paulo e Sudoeste, Santa Cruz
-  de Salvador (BA) e Mato Grosso do Sul (extinta em 2018). A situação cadastral do CNPJ consta como inapta desde
-  30/05/2019 (omissão de declarações). O site não é atualizado desde 2020.
+  Igreja mantida juridicamente pela Mitra Primacial Católica Anglicana, com sede cadastral em Goiânia, início de
+  atividades em 31 de outubro de 2017 e situação cadastral inapta desde 30 de maio de 2019 por omissão de declarações,
+  fundada por um grupo egresso da IATB liderado por Ricardo Vicente dos Anjos e Orvandil Moreira Barbosa. Descreve-se
+  como igreja de rito, tradição e episcopado histórico católicos-anglicanos, com ênfase católica. Orvandil é arcebispo
+  primaz e bispo da Diocese Católica Anglicana do Centro Oeste; há ainda as dioceses do Baixo Tocantins (Franciney
+  Rodrigues Pantoja) e de São Paulo e Sudoeste (Izaias Rodrigues dos Santos), enquanto Belém e Santa Cruz de Salvador,
+  Bahia e Nordeste constam vacantes sob responsabilidade do primaz; a Diocese de Mato Grosso do Sul foi extinta
+  e reintegrada ao Centro Oeste. Em 24 de maio de 2018, notificação declarou que Altamiro Pereira do Amaral, Jorge
+  dos Santos Costa e Ricardo Vicente dos Anjos não integravam mais a Mitra Primacial; eles formaram a ICA-Brasil,
+  em cisma.
 sources:
-- source: lica-cnpj-ica
-  quote: '"razao_social":"MITRA PRIMACIAL CATOLICA ANGLICANA"'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Parte desse grupo, liderados por Ricardo Vicente dos Anjos e Orvandil Moreira Barbosa, fundaram a Igreja Católica
+    Anglicana.
+  page: '137'
 - source: lica-cnpj-ica
   quote: '"data_inicio_atividade":"2017-10-31"'
 - source: lica-cnpj-ica
+  quote: '"municipio":"GOIANIA"'
+- source: lica-cnpj-ica
   quote: '"descricao_situacao_cadastral":"INAPTA"'
+- source: lica-cnpj-ica
+  quote: '"data_situacao_cadastral":"2019-05-30"'
+- source: lica-cnpj-ica
+  quote: '"descricao_motivo_situacao_cadastral":"OMISSAO DE DECLARACOES"'
+- source: perd02-ica-destaque
+  quote: Igreja de rito, tradição e episcopado histórico católicos-anglicanos, com ênfase católica.
 - source: lica-ica-sobre
-  quote: 'Nosso CNPJ: NÚMERO DE INSCRIÇÃO: 29.104.811/0001-14'
-- source: lica-ica-sobre
-  quote: sem, no entanto, se subordinarem ao Rei/Rainha e ao Arcebispo de Cantuária
+  quote: '++ Dom Orvandil M. Barbosa: Arcebispo Primaz e bispo da Diocese Anglicana Centro Oeste;'
+- source: lica-ica-dioceses
+  quote: 'Diocese Católica Anglicana do Baixo Tocantis: Bispo Dom Franciney Pantoja;'
+- source: lica-ica-dioceses
+  quote: Diocese de São Paulo e Sudoeste Bispo Dom Izaias Rodrigues dos Santos (Dom Frei Junípero)
+- source: lica-ica-dioceses
+  quote: >-
+    Diocese de Belém Vacante sob a responsabilidade do Arcebispo Primaz ++Dom Orvandil Moreira Barbosa. Diocese
+    de São Paulo e Sudoeste Bispo Dom Izaias Rodrigues dos Santos (Dom Frei Junípero) . Diocese de Santa Cruz de
+    Salvador, Bahia e Nordeste Vacante sob a responsabilidade do Arcebispo Primaz ++Dom Orvandil Moreira Barbosa.
+- source: lica-ica-notificacao
+  quote: >-
+    A Diocese de Mato Grosso do Sul é extinta e reintegrada à Diocese Católica Anglicana do Centro Oeste.
+- source: lica-ica-notificacao
+  quote: >-
+    os Bispos Dom Altamiro Pereira do Amaral, Dom Jorge dos Santos Costa e Dom Ricardo Vicente dos Anjos não mais
+    integram esta Mitra Primacial
+- source: lica-iaces-historia
+  quote: >-
+    depois de um Cisma, novos ideais ressurgem da Cinzas com a proposta da Criação da Província Católica Anglicana
+    do Brasil
 relations:
 - type: schism_from
   target: iatb

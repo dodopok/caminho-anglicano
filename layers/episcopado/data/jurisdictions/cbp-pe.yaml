@@ -2,6 +2,8 @@
 id: cbp-pe
 acronym: CBP-PE
 name: Capelania Britânica de Pernambuco (Holy Trinity Church, Recife)
+aliases:
+- Capelania Britânica de Pernambuco
 type: other
 country: BR
 founded:
@@ -13,13 +15,46 @@ founded:
       titular o Rev. John Penny
   - source: drv-resgatando-i
     quote: Em 20 de maio de 1976 encerra-se, definitivamente, o Ciclo da Capelania Britânica
+dissolved:
+  date: '1976-05-20'
+  sources:
+  - source: drv-resgatando-i
+    quote: >-
+      Em 20 de maio de 1976 encerra-se, definitivamente, o Ciclo da Capelania Britânica, com a criação, pelo Sínodo
+      Geral da agora Igreja Episcopal do Brasil, da Diocese Setentrional, com sede no Recife, desmembrada da Diocese
+      Central
 description: >-
-  Capelania anglicana inglesa do Recife, iniciada em 1822, que atendia os ingleses do Nordeste; em 1976 encerrou-se
-  o seu ciclo com a criação da Diocese Setentrional da Igreja Episcopal do Brasil.
+  Capelania anglicana inglesa do Recife (Holy Trinity Church), iniciada em 1822 com o Rev. John Penny como primeiro
+  titular; uma assembleia paroquial decidiu filiá-la à Igreja Episcopal do Brasil. Seu ciclo encerrou-se em 20 de
+  maio de 1976, com a criação da Diocese Setentrional, com sede no Recife, desmembrada da Diocese Central.
 sources:
 - source: drv-resgatando-i
   quote: >-
     A Capelania Britânica de Pernambuco teve início no ano da nossa Independência, 1822, tendo como seu primeiro
     titular o Rev. John Penny
+- source: darl3-hist1
+  quote: >-
+    Uma assembléia paroquial da Capelania do Recife, Holy Trinity Church, decidiu por essa filiação, enviando como
+    delegada ao Concílio da Diocese do Brasil Central a Sra. Conti
 - source: drv-resgatando-i
   quote: Em 20 de maio de 1976 encerra-se, definitivamente, o Ciclo da Capelania Britânica
+- source: drv-resgatando-i
+  quote: >-
+    Em 20 de maio de 1976 encerra-se, definitivamente, o Ciclo da Capelania Britânica, com a criação, pelo Sínodo
+    Geral da agora Igreja Episcopal do Brasil, da Diocese Setentrional, com sede no Recife, desmembrada da Diocese
+    Central
+relations:
+- type: part_of
+  target: ieab
+  date: null
+  status: confirmed
+  sources:
+  - source: darl3-hist1
+    quote: >-
+      Uma assembléia paroquial da Capelania do Recife, Holy Trinity Church, decidiu por essa filiação, enviando
+      como delegada ao Concílio da Diocese do Brasil Central a Sra. Conti
+  notes: >-
+    Década de 1960: por decisão de assembleia paroquial a Capelania do Recife (Holy Trinity Church) filiou-se à
+    Diocese do Brasil Central da Igreja Episcopal Brasileira, no processo conduzido pelo bispo Edmund Knox Sherrill;
+    a IEB assumiu o compromisso de atender os súditos britânicos. Cultos em inglês continuaram até o início da década
+    de 1990.

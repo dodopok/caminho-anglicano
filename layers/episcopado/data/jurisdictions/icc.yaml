@@ -2,15 +2,35 @@
 id: icc
 acronym: ICC
 name: Igreja Católica Carismática (Belém, PA)
+aliases:
+- Igreja Católica Carismática
 type: other
 country: BR
 description: >-
-  Igreja independente de Belém (PA), com bispo primaz Edilson Vinagre, filiada ao movimento "Padres Casados Já",
-  de Emmanuel Milingo. Sagrou Orvandil Moreira Barbosa bispo em 27/07/2008 para uma diocese em Campo Grande (MS).
-  Segundo a matéria do Midiamax, "surgiu há 40 anos na cidade de Belém do Pará através de um grupo de leigos católicos".
+  Igreja independente que, segundo o Midiamax, surgiu há 40 anos em Belém (PA) a partir de um grupo de leigos católicos,
+  tendo como bispo primaz Edilson Vinagre; é filiada ao Padres Casados Já, fundado por Emmanuel Milingo, arcebispo
+  emérito de Lusaka. Vinagre foi sagrante de Orvandil Moreira Barbosa em 27 de julho de 2008, que assumiu a Diocese
+  Nossa Senhora do Perpétuo Socorro (Campo Grande, MS) e foi seu bispo diocesano até 2009.
 sources:
 - source: lica-domomb-midiamax
   quote: >-
     A Igreja Católica Carismática surgiu há 40 anos na cidade de Belém do Pará através de um grupo de leigos católicos
 - source: lica-domomb-sagracao
   quote: Será sagrante/ordenante DOM EDILSON VINAGRE, bispo primaz da ICC
+- source: lica-domomb-sagracao
+  quote: >-
+    "PADRES CASADOS JÁ" , fundado por Dom EMMANUEL MILINGO, arcebispo emérito de LUZAKA, África, ao qual a Igreja
+    Católica Carismática é filiada.
+- source: lica-domomb-midiamax
+  quote: para assumir suas funções na Diocese Nossa Senhora do Perpétuo Socorro
+relations:
+- type: member_of
+  target: padres-casados-ja
+  date: null
+  status: confirmed
+  sources:
+  - source: lica-domomb-sagracao
+    quote: >-
+      "PADRES CASADOS JÁ" , fundado por Dom EMMANUEL MILINGO, arcebispo emérito de LUZAKA, África, ao qual a Igreja
+      Católica Carismática é filiada.
+  notes: Movimento fundado por Emmanuel Milingo.

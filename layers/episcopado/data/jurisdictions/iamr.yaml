@@ -20,10 +20,53 @@ founded:
       liderança do bispo Marcos Fradique
     page: '174'
 description: >-
-  Pequena igreja anglicana independente do Nordeste. Em novembro de 2006 aparece, com um primaz e um bispo auxiliar,
-  entre as signatárias do Manifesto Anglicano redigido em Recife (movimento "Por uma Causa Comum"). Não foram achados
-  site, redes sociais ou notícias próprias da igreja; as datas de fundação (comunidade em 1991, registro jurídico
-  em 13/12/1996) vêm apenas do livro de Costa (2024).
+  Pequena igreja anglicana independente do Nordeste, fundada como comunidade em 1991 e juridicamente em 13 de dezembro
+  de 1996 por Marcos Fradique Bezerra, eleito bispo primaz, com Antônio Pessoa Leite como bispo auxiliar. Em 2006
+  está entre as signatárias da Declaração da Boa Viagem e do Manifesto Anglicano redigido em Recife, e em 2014 Carlos
+  Augusto Alves de Souza aparece como seu bispo.
 sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Esta singela comunidade foi fundada como comunidade em 1991 e juridicamente em 13 de dezembro de 1996.
+  page: '126'
+- source: cant-novas-igrejas-2024
+  quote: fundou a comunidade, sendo eleito bispo primaz do grupo.
+  page: '126'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Juntamente com o bispo Marcos, Antonio Pessoa Leite também foi eleito bispo para auxiliar no governo da Igreja
+    do Redentor.
+  page: '126'
+- source: drv-comunicado-imprensa-2006
+  quote: Dom Marcos Fradique Bezerra, Bispo Primaz
+- source: darl3-cc-boaviagem
+  quote: >-
+    Igreja Anglicana Missionária do Redentor – IAMR : Dom Marcos Fradique Bezerra, Bispo Primaz e Dom Antonio Pessoa
+    Leite, Bispo Auxiliar
+- source: darl3-cc-boaviagem
+  quote: >-
+    assinaram ontem, 30.09.2006, a “Declaração da Boa Viagem” , criando o “Movimento Anglicano Por Uma Causa Comum”
 - source: ultimato-manifesto-2006
   quote: Igreja Anglicana Missionária do Redentor(IAMR)
+- source: cant-novas-igrejas-2024
+  quote: >-
+    uma visita de três bispos da Igreja IAMR – dom Marcos Fradique Bezerra, dom Antônio Pessoa Leite e dom Carlos
+    Augusto Alves de Souza –
+  page: '126'
+relations:
+- type: member_of
+  target: movimento-anglicano-por-uma-causa-comum
+  date: '2006-09-30'
+  status: confirmed
+  sources:
+  - source: darl3-cc-boaviagem
+    quote: >-
+      Igreja Anglicana Missionária do Redentor – IAMR : Dom Marcos Fradique Bezerra, Bispo Primaz e Dom Antonio
+      Pessoa Leite, Bispo Auxiliar
+  - source: darl3-cc-boaviagem
+    quote: >-
+      assinaram ontem, 30.09.2006, a “Declaração da Boa Viagem” , criando o “Movimento Anglicano Por Uma Causa Comum”
+  notes: >-
+    Signatária fundadora da Declaração da Boa Viagem (Catedral Anglicana do Bom Samaritano, Boa Viagem, Recife,
+    30/09/2006), que criou o Movimento Anglicano "Por Uma Causa Comum", durante o culto de ação de graças pelo nono
+    aniversário de sagração episcopal de Dom Robinson Cavalcanti.

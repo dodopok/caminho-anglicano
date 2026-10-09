@@ -2,6 +2,12 @@
 id: diocese-of-durham
 name: Diocese of Durham
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra cujo bispo Charles Thomas Longley (1856-1860) foi depois transferido para York
+  e Canterbury.
+sources:
+- source: stubbs-1897
+  quote: Charles Thomas Longley. Ripon ; Durham, 1856 ; York, i860 ; Canterbury, 1862 ; d. 1868, Oct. 27.
 relations:
 - type: part_of
   target: church-of-england

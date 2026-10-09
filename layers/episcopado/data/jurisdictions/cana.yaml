@@ -13,11 +13,34 @@ founded:
     quote: >-
       In 2019, the dual jurisdiction arrangement with the ACNA came to an end, and CANA was reformed as CONNAM
 description: >-
-  Fundada 2005 (missão da Igreja da Nigéria); em 2019 reformada como CONNAM (não registrado como extinção, é continuidade/renomeação).
-  A base inferia 2007.
+  Convocation of Anglicans in North America, fundada em 2005 como iniciativa missionária da Igreja Anglicana da
+  Nigéria para nigerianos nos Estados Unidos. Julian Dobbs foi nomeado seu bispo missionário em 17 de janeiro de
+  2014; em 2019 terminou o arranjo de dupla jurisdição com a ACNA, e a convocação foi reformada como CONNAM.
 sources:
 - source: fund-wp-en-cana
   quote: Founded in 2005 as the Convocation of Anglicans in North America
+- source: perd01-wp-connam
+  quote: >-
+    CANA was initially a missionary initiative of the Anglican Church of Nigeria for Nigerians living in the United
+    States.
+- source: gacl-ai-2014-dobbs
+  quote: >-
+    The Most Rev. Nicholas D. Okoh, Primate of all Nigeria (Anglican Communion) in consultation with the Most Rev.
+    Robert Duncan, Primate of the Anglican Church in North America, has appointed The Rt. Rev. Julian M. Dobbs as
+    Missionary Bishop of CANA. ... Bishop Dobbs will remain in his current role as Bishop of the CANA East Diocese
 - source: fund-wp-en-cana
   quote: >-
     In 2019, the dual jurisdiction arrangement with the ACNA came to an end, and CANA was reformed as CONNAM
+relations:
+- type: part_of
+  target: church-of-nigeria
+  date: '2005'
+  status: probable
+  sources:
+  - source: perd01-wp-connam
+    quote: >-
+      CANA was initially a missionary initiative of the Anglican Church of Nigeria for Nigerians living in the United
+      States.
+  notes: >-
+    A Convocation of Anglicans in North America (2005) começou como iniciativa missionária da Igreja da Nigéria;
+    em 2019 foi reformada como CONNAM.

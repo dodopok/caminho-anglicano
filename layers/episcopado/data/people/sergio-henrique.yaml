@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sergio-henrique
+name: Sérgio Henrique
+biography: >-
+  Clérigo da Diocese Anglicana do Recife em processo de reconhecimento de ordem, no Ponto Missionário Anglicano
+  Cristo Rei (Santo André, SP), inaugurado em novembro de 2010, com Wagner Cipriano Araújo.
+sources:
+- source: darn2-santo-andre-2010
+  quote: os reverendos Wagner Cipriano e Sérgio Henrique ( PMA Cristo Rei )
+- source: darn2-jorge-torres-viagem-2010
+  quote: os novos clérigos em processo de reconhecimento de Ordem, reverendos Wagner e Sérgio
+- source: dard2-com-extra
+  quote: >-
+    PONTO MISSIONÁRIO ANGLICANO EM SANTO ANDRÉ (INAUGURAÇÃO EM NOVEMBRO/2010) Rev. Wagner Cipriano Araújo + e Rev.
+    Sérgio Henrique +
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: clero em processo de reconhecimento de ordem
+  status: probable
+  sources:
+  - source: darn2-santo-andre-2010
+    quote: os reverendos Wagner Cipriano e Sérgio Henrique ( PMA Cristo Rei )
+  - source: darn2-jorge-torres-viagem-2010
+    quote: os novos clérigos em processo de reconhecimento de Ordem, reverendos Wagner e Sérgio
+  notes: >-
+    Local: Ponto Missionário Anglicano Cristo Rei, Santo André-SP. Nome citado só como "Sérgio Henrique" (sem sobrenome).
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  status: probable
+  sources:
+  - source: dard2-com-extra
+    quote: >-
+      PONTO MISSIONÁRIO ANGLICANO EM SANTO ANDRÉ (INAUGURAÇÃO EM NOVEMBRO/2010) Rev. Wagner Cipriano Araújo + e
+      Rev. Sérgio Henrique +
+  notes: >-
+    Local: Ponto Missionário Anglicano em Santo André (SP; Arcediagado Extraterritorial). Página "Comunidades" do
+    arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse.
+    A página anuncia a inauguração do ponto missionário para novembro de 2010; ele era um projeto na data da página,
+    e os dois nomes aparecem sem cargo.
