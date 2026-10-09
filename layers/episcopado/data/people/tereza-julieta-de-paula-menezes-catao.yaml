@@ -1,6 +1,9 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: tereza-julieta-de-paula-menezes-catao
 name: Tereza Julieta de Paula Menezes Catão
+aliases:
+- Teresa Catão
+- Teresa Julieta de Paula Menezes Catão
 biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
 - source: drv-nota-esclarecimento-2006
@@ -160,3 +163,27 @@ affiliations:
   notes: >-
     Local: Paróquia Anglicana do Semeador (Olinda). Consta na página de comunidades do Arcediagado Norte capturada
     em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítera
+  status: confirmed
+  sources:
+  - source: darl3-n4210
+    quote: Revda. Teresa Julieta de Paula M. Catão
+  - source: darl3-n4210
+    quote: >-
+      Presbítera na Diocese do Recife; membro da Equipe Pastoral da Paróquia Anglicana do Semeador, no Arcediagado
+      Norte da Diocese
+  notes: >-
+    Local: Paróquia Anglicana do Semeador (Arcediagado Norte). Presbítera em 30/08/2007 (artigo); a data da ordenação
+    não consta. Em 2004 constava na lista de ministros leigos da diocese (Missão Anglicana da Salvação).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretária diocesana de Ação Social
+  status: confirmed
+  sources:
+  - source: darl3-n4623
+    quote: >-
+      Presbítera na Diocese do Recife; Secretária Diocesana de Ação Social; membro da Equipe Pastoral da Paróquia
+      Anglicana do Semeador, no Arcediagado Norte da Diocese
+  notes: Cargo indicado em 22/12/2008.

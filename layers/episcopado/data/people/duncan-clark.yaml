@@ -14,6 +14,43 @@ affiliations:
   role_description: arcediago
   status: confirmed
   sources:
+  - source: drp2-memorias-decada-ix
+    quote: >-
+      Hoje são 20 clérigos e 07 Paróquias e Missões, que integram o nosso “Arcediagado Norte-Americano” (Venerável
+      Rev. Duncan Clark, Arcediago).
+  - source: drp2-breves-episcopais-01-2007
+    quote: fui recebido pelo Arcediago Rev. Duncan Clark e os seus dois guardiões
+  - source: drp2-breves-02-2006
+    quote: nosso Arcediago para as Igrejas Associadas nos EUA, o Ven. Arc. Rev. Duncan
+  - source: darl3-hist6
+    quote: vindo a se constituir o Arcediagado dos EUA, sob a liderança do Venerável Arcediago Rev. Ducan Clark
+  - source: darl3-n4177
+    quote: >-
+      Recentemente o Bispo Cavalcanti fez de Clark o Arcediago das Paróquias Norte-Americanas do Recife, que são,
+      presentemente, cinco congregações
+  notes: >-
+    Local: Arcediagado Norte-Americano. Arcediago do Arcediagado Norte-Americano em junho de 2007. Local: Arcediagado
+    Norte-Americano. Arcediago em janeiro de 2007, em Poulsbo (Washington, EUA). Local: Arcediagado Norte-Americano.
+    Em março de 2006. Local: Arcediagado dos EUA (Norte-Americano). Em 2005 comunidades e clérigos ortodoxos que
+    se desvincularam da ECUSA foram recebidos "em status de excepcionalidade" na DAR, constituindo o Arcediagado
+    dos EUA sob a liderança do arcediago Duncan Clark (grafado "Ducan" no texto). Em 2007 outra matéria diz que
+    Robinson Cavalcanti fez de Clark arcediago das Paróquias Norte-Americanas do Recife (cinco congregações). Local:
+    Arcediagado Norte-Americano. "Recentemente", segundo a matéria reproduzida no site em 2007 (sem data exata);
+    o Arcediagado Norte-Americano existia desde 2005.
+  start: '2005'
+  discrepancies:
+  - field: start
+    value: '2007'
+    sources:
+    - source: darl3-n4177
+      quote: >-
+        Recentemente o Bispo Cavalcanti fez de Clark o Arcediago das Paróquias Norte-Americanas do Recife, que são,
+        presentemente, cinco congregações
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago
+  status: confirmed
+  sources:
   - source: drp-boletim-oracao-2006
     quote: Orar pelo Arcediagado Especial da América do Norte e pelo Ven. Arc. Rev. Duncan Clark
   - source: drp-calendario-2007
@@ -41,23 +78,6 @@ affiliations:
     Consta em 09/11/2006 entre os clérigos residentes no exterior com domicílio canônico na Diocese do Recife.
 - jurisdiction: diocese-anglicana-recife
   role: other
-  role_description: arcediago
-  status: confirmed
-  sources:
-  - source: drp2-memorias-decada-ix
-    quote: >-
-      Hoje são 20 clérigos e 07 Paróquias e Missões, que integram o nosso “Arcediagado Norte-Americano” (Venerável
-      Rev. Duncan Clark, Arcediago).
-  - source: drp2-breves-episcopais-01-2007
-    quote: fui recebido pelo Arcediago Rev. Duncan Clark e os seus dois guardiões
-  - source: drp2-breves-02-2006
-    quote: nosso Arcediago para as Igrejas Associadas nos EUA, o Ven. Arc. Rev. Duncan
-  notes: >-
-    Local: Arcediagado Norte-Americano. Arcediago do Arcediagado Norte-Americano em junho de 2007. Local: Arcediagado
-    Norte-Americano. Arcediago em janeiro de 2007, em Poulsbo (Washington, EUA). Local: Arcediagado Norte-Americano.
-    Em março de 2006.
-- jurisdiction: diocese-anglicana-recife
-  role: other
   role_description: presbítero
   status: confirmed
   sources:
@@ -80,6 +100,19 @@ affiliations:
   notes: >-
     Local: Arcediagado Extraterritorial dos EUA. Consta na lista de "Cargos Diocesanos" capturada em jan/2009 e
     na de jul/2009 (atualizada em 28/09/2010); a página não informa a data de início.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: reitor
+  status: confirmed
+  sources:
+  - source: darl3-n4177
+    quote: >-
+      O Rev. Duncan Clark, Reitor da Paróquia Anglicana de St. Charles, Poulsbo, e a Paróquia Anglicana de St. Stephen,
+      Oak Harbor
+  notes: >-
+    Local: Paróquia Anglicana de St. Charles (Poulsbo, Washington, EUA). Reitor de St. Charles (Poulsbo, WA); a
+    paróquia e St. Stephen (Oak Harbor, WA) deixaram a Diocese de Olympia (Igreja Episcopal) em 2004 e passaram
+    à supervisão de Robinson Cavalcanti.
 events:
 - type: other
   date: 2006-10
@@ -135,3 +168,20 @@ events:
     quote: A noite foi o ensaio para as Confirmações e Ordenação Diaconal do próximo domingo
   - source: darb2-breves-08
     quote: Missão Anglicana da Santíssima Trindade
+- type: other
+  date: 2004-10
+  description: >-
+    Em outubro de 2004 Robinson Cavalcanti acolheu, por determinação da Rede da Comunhão Anglicana, as paróquias
+    anglicanas de St. Charles (Poulsbo, WA) e St. Stephen (Oak Harbor, WA), que haviam deixado a Diocese de Olympia
+    da Igreja Episcopal (EUA); o acordo de 2006 com a diocese de Olympia reconheceu o bispo do Recife como autoridade
+    espiritual das duas paróquias, cujo reitor, Rev. Duncan Clark, tornou-se arcediago das paróquias norte-americanas
+    do Recife.
+  status: confirmed
+  sources:
+  - source: darl3-n4177
+    quote: >-
+      A Rede (ACN) determinou que ambas as paróquias se colocassem sob a supervisão do Bispo Robinson Cavalcanti,
+      do Recife, e ele, generosamente, lhes deu as boas-vindas em outubro de 2004
+  - source: darl3-n4177
+    quote: >-
+      Conquanto o Bispo Cavalcanti foi reconhecido pelo bispo Warner como a autoridade espiritual de ambas as paróquias

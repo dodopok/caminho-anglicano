@@ -1,6 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: veronica-de-lourdes-da-silva-pereira
 name: Veronica de Lourdes da Silva Pereira
+ordinations:
+- order: diaconate
+  date: 2008-11
+  jurisdiction: diocese-anglicana-recife
+  status: probable
+  sources:
+  - source: darl3-idx-p3
+    quote: Sermão de Ordenação Diaconal da Candidata Verônica de Lourdes da Silva Pereira
+  notes: >-
+    Listagem do portal da DAR de 09/11/2008 registra o sermão da ordenação diaconal da "candidata" Verônica de Lourdes
+    da Silva Pereira; a data exata e o ordenante não constam da listagem (os sermões de ordenação do portal são
+    do bispo diocesano).
 affiliations:
 - jurisdiction: iab
   role: clergy

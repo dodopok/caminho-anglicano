@@ -29,10 +29,17 @@ ordinations:
     quote: >-
       Foram ordenados, durante o seu período os seguintes reverendos: Washington Franco e Siméa Meldrum (os únicos
       dos seus Presbíteros que continuam conosco)
+  - source: darl3-hist3
+    quote: Washington Franco e Siméa Meldrum (os únicos dos seus Presbíteros que continuam conosco)
+  - source: darl3-hist3
+    quote: Foram ordenados, durante o seu período os seguintes reverendos
   notes: >-
     Robinson Cavalcanti lista Washington Franco entre os presbíteros ordenados no período do bispo Clóvis Erly Rodrigues
     (1986-1997); data e local não constam. O texto diz apenas "durante o seu período", e o ordenante é entendido
-    como o bispo diocesano da época.
+    como o bispo diocesano da época. Ordenação durante o episcopado de Clóvis Erly Rodrigues na diocese (1986-1997),
+    conforme lista de Dom Robinson Cavalcanti; o texto não dá data nem local e não diz expressamente "ordenado por";
+    ordenante inferido do período. A lista separa os ordenados ao presbiterado (aqui incluídos) dos ordenados "apenas
+    ao Diaconato".
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -134,6 +141,25 @@ affiliations:
   notes: >-
     Local: Ponto Missionário Anglicano da Santíssima Trindade (Maceió-AL). Consta na página de comunidades do Arcediagado
     Sul capturada em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: ieab-dar
+  role: priest
+  status: confirmed
+  sources:
+  - source: darl3-carta-0904
+    quote: Rev. Côn. Washington Franco Missão Anglicana Filadélfia
+  notes: >-
+    Local: Diocese Anglicana do Recife, Missão Anglicana Filadélfia. Consta como signatário da carta aberta de 17/09/2004
+    da Diocese Anglicana do Recife ao Bispo Primaz, na lista de Presbíteros, com a comunidade indicada.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: cônego
+  status: confirmed
+  sources:
+  - source: darl3-setubal
+    quote: Rev. Côn. Washington Franco
+  notes: >-
+    Delegado clerical ao Concílio Diocesano Extraordinário de 26/02/2005 (Carta de Setúbal), com o cargo indicado
+    na lista de delegados.
 events:
 - type: other
   date: 1977/1985

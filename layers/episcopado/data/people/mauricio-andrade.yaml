@@ -47,6 +47,7 @@ ordinations:
 - order: presbyterate
   date: '1989'
   jurisdiction: ieab
+  ordained_by: clovis-erly-rodrigues
   status: contested
   sources:
   - source: dab-bispo-mauricio
@@ -55,6 +56,10 @@ ordinations:
     quote: >-
       Bispo Mauricio foi ordenado Diácono na Epifania de Nosso Senhor Jesus Cristo, 06 de janeiro de 1988 e presbítero
       em 25 de setembro do mesmo ano.
+  - source: darl3-hist3
+    quote: Maurício Andrade (Bispo de Brasília)
+  - source: darl3-hist3
+    quote: Foram ordenados, durante o seu período os seguintes reverendos
   discrepancies:
   - field: date
     value: '1988-09-25'
@@ -65,7 +70,9 @@ ordinations:
         em 25 de setembro do mesmo ano.
   notes: >-
     Ordenante não informado. Esta fonte dá o presbiterato em 25/09/1988; outra fonte (nota biográfica da Diocese
-    de Brasília) dá 1989.
+    de Brasília) dá 1989. Ordenação durante o episcopado de Clóvis Erly Rodrigues na diocese (1986-1997), conforme
+    lista de Dom Robinson Cavalcanti; o texto não dá data nem local e não diz expressamente "ordenado por"; ordenante
+    inferido do período. A lista separa os ordenados ao presbiterado (aqui incluídos) dos ordenados "apenas ao Diaconato".
 - order: episcopate
   date: '2003-08-30'
   place: Catedral Metropolitana de Brasília (Igreja Católica Romana)
@@ -694,3 +701,43 @@ events:
     quote: reunida em Porto Alegre-RS, em 16 de setembro de 2004
   - source: dard1-carta-bispos-2004
     quote: solicitar tal supervisão na pessoa do Revmo. Dom Maurício Andrade
+- type: other
+  date: 1997-06
+  description: >-
+    Pacto de Paudalho e eleição episcopal de 1997: o Concílio Extraordinário (final de junho de 1997, Ilha de Itaparica,
+    BA) elegeu bispo coadjutor, "na véspera da festa de São Pedro", o Rev. Robinson Cavalcanti, entre os três nomes
+    indicados (Maurício Andrade, Ian Meldrum e Robinson Cavalcanti); a eleição foi homologada pela maioria dos bispos
+    e dos Conselhos Diocesanos da Província.
+  status: confirmed
+  sources:
+  - source: darl3-hist3
+    quote: >-
+      Na ocasião foram indicados 3 nomes: os reverendos Maurício Andrade, Ian Meldrum e Robinson Cavalcanti
+  - source: darl3-hist3
+    quote: >-
+      Na véspera da festa de São Pedro de 1997, foi eleito como terceiro Bispo da Diocese Anglicana do Recife (o
+      primeiro eleito aqui e o primeiro nativo) o Rev. Robinson Cavalcanti , por maioria absoluta das urnas do clero
+      e dos leigos, posteriormente homologado pela maioria dos Bispos e dos Conselhos Diocesanos da Província
+- type: other
+  date: '2004-09-16'
+  description: >-
+    Em 16/09/2004 a Câmara dos Bispos da IEAB, reunida em Porto Alegre sem a presença do bispo diocesano do Recife,
+    expediu uma Carta-Resolução prevendo "supervisão episcopal especial" para parte do clero e das comunidades da
+    Diocese Anglicana do Recife, apontando o bispo de Brasília, Maurício Andrade, para exercê-la; em 17/09/2004
+    o bispo diocesano, os arcediagos, o Conselho Diocesano, o Secretariado, presbíteros, diáconos e ministros leigos
+    da DAR responderam rejeitando a medida e declarando sem legitimidade a presença de qualquer bispo nessa função.
+  status: confirmed
+  sources:
+  - source: darl3-carta-0904
+    quote: >-
+      surpreendidos com a Carta-Resolução s/n da Câmara dos Bispos, reunida em Porto Alegre-RS, em 16 de setembro
+      de 2004 – sem a presença do Bispo Diocesano da DAR
+  - source: darl3-carta-0904
+    quote: >-
+      A presença do Revmo. Dom Maurício Andrade , ou de qualquer outro Bispo, no que diz respeito ao item 2 da Carta-Resolução
+      em epígrafe, não será bem-vindo à DAR, nem considerado legítima a sua pretensa “ supervisão episcopal especial
+      ”
+  - source: darl3-hist5
+    quote: >-
+      colocando alguns clérigos, Paróquias e Missões sob a autoridade de um pretenso “Supervisor Episcopal Especial”
+      , o Bispo de Brasília

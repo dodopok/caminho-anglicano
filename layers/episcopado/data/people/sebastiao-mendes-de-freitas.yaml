@@ -54,7 +54,11 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: O bispo Sebastião Mendes de Freitas como emérito da denominação, a qual terminou extinta.
     page: '168'
-  notes: '''Por um tempo'' primaz; depois emérito; fim = extinção da igreja segundo o Apêndice 1.'
+  - source: darl3-cc-boaviagem
+    quote: Dom Sebastião Mendes de Freitas, Bispo Primaz
+  notes: >-
+    'Por um tempo' primaz; depois emérito; fim = extinção da igreja segundo o Apêndice 1. Signatário/representante
+    da jurisdição na Declaração da Boa Viagem (30/09/2006), com o título indicado na notícia.
 - jurisdiction: ier
   role: other
   role_description: presidente
@@ -64,6 +68,17 @@ affiliations:
     quote: criou, né, ele ele reativou uma uma igreja chamada Igreja Episcopal Reformada,
   - source: yt-raizes-da-fe-ep4
     quote: E ele se tornou lá o o o presidente da igreja.
+- jurisdiction: rec
+  role: other
+  role_description: cônego
+  diocese: diocese-missionaria-da-igreja-episcopal-reformada-no-brasil
+  status: confirmed
+  sources:
+  - source: darl3-fibra
+    quote: Rev. Dr. Sebastião Mendes de Freitas - Cônego
+  notes: >-
+    Cônego da Diocese Missionária da Igreja Episcopal Reformada no Brasil (REC) na carta aberta da FIBRA a Robinson
+    Cavalcanti (sem data, 2005); em 2006 já aparece como Bispo Primaz da IER.
 events:
 - type: other
   date: '2004-08-06'

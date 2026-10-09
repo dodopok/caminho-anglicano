@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-pittsburgh
+name: Diocese de Pittsburgh
+type: other
+relations:
+- type: member_of
+  target: iacs
+  date: 2008-10
+  status: probable
+  sources:
+  - source: darl3-idx-p4
+    quote: A Diocese de Pittsburgh se vincula ao Cone Sul
+  notes: >-
+    Em votação do 143º Concílio Diocesano, a Diocese de Pittsburgh deliberou desvincular-se da Igreja Episcopal
+    (EUA) e vincular-se à Igreja Anglicana do Cone Sul (notícia de 08/10/2008). Registro a partir do título/resumo
+    da listagem do portal da DAR.

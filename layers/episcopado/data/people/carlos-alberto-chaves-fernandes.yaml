@@ -70,6 +70,32 @@ ordinations:
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: other
+  role_description: pároco
+  status: confirmed
+  sources:
+  - source: darl1-5385
+    quote: >-
+      Rev. Carlos Alberto Chaves Fernandes, ofa , é Presbítero da Diocese do Recife; Pároco da Paróquia Anglicana
+      da Santíssima Trindade , em Copacabana, Rio de Janeiro; Venerável Arcediago Sul-Sudeste do Brasil; Frei da
+      Ordem Franciscana Anglicana (OFA).
+  - source: darl3-n4243
+    quote: >-
+      o Rev. Carlos Alberto Chaves Fernandes, titular da nova Paróquia Anglicana da Santíssima Trindade, em Copacabana,
+      sob a Autoridade Episcopal da Diocese do Recife
+  - source: darl3-n4243
+    quote: >-
+      tive a oportunidade de batizar, Confirmar, dar posse ao Ministro, aos Evangelistas e à Junta Paroquial
+  - source: darl3-n4227
+    quote: Seu Pároco, o Rev. Carlos Chaves
+  notes: >-
+    Local: Paróquia Anglicana da Santíssima Trindade, Copacabana, Rio de Janeiro. Em 2011-07-23. Local: Paróquia
+    Anglicana Reformada / da Santíssima Trindade (Copacabana, Rio de Janeiro). Posse como ministro/pároco da nova
+    paróquia de Copacabana (Rio de Janeiro), "a mais nova comunidade anglicana da Diocese do Recife", em culto presidido
+    por Robinson Cavalcanti em 16/09/2007; a paróquia aparece com os nomes "Paróquia Anglicana Reformada" e "Paróquia
+    Anglicana da Santíssima Trindade (Copacabana)"; funcionava sob a supervisão primacial do Cone Sul.
+  start: '2007-09-16'
+- jurisdiction: diocese-anglicana-recife
+  role: other
   role_description: arcediago
   status: confirmed
   sources:
@@ -106,6 +132,8 @@ affiliations:
     quote: 'BRASIL SUL/SULDESTE: Arcediago : Ven. Arc. Rev. Carlos Alberto Chaves Fernandes'
   - source: dard1-arcediagados-2010
     quote: 'Arcediago : Ven. Arc. Rev. Carlos Alberto Chaves Fernandes'
+  - source: darl3-n4622
+    quote: O Arcediago para o Sul-Sudeste do Brasil é o Rev. Carlos Alberto Chaves Fernandes
   notes: >-
     Local: Arcediagado Sul/Sudeste. Arcediago do Sul/Sudeste em 2010-04-09 e em 2011-07-23. Local: Arcediagado Sul-Sudeste.
     Cargo atestado em 14/10/2009, 08/05/2011 e 25/08/2011. Local: Arcediagado Extraterritorial Nacional Sul/Sudeste.
@@ -113,18 +141,10 @@ affiliations:
     capturadas em 09/10/2010; início e fim dos cargos não informados. Em 2012 (captura de 02/03/2012) o mesmo arcediago
     e o mesmo adjunto constam com o nome "Arcediagado Sul-Sudeste". Local: Arcediagado Extraterritorial Sul/Sudeste
     do Brasil. Consta na lista de "Cargos Diocesanos" capturada em jan/2009 e na de jul/2009 (atualizada em 28/09/2010);
-    a página não informa a data de início.
-- jurisdiction: diocese-anglicana-recife
-  role: other
-  role_description: pároco
-  status: confirmed
-  sources:
-  - source: darl1-5385
-    quote: >-
-      Rev. Carlos Alberto Chaves Fernandes, ofa , é Presbítero da Diocese do Recife; Pároco da Paróquia Anglicana
-      da Santíssima Trindade , em Copacabana, Rio de Janeiro; Venerável Arcediago Sul-Sudeste do Brasil; Frei da
-      Ordem Franciscana Anglicana (OFA).
-  notes: 'Local: Paróquia Anglicana da Santíssima Trindade, Copacabana, Rio de Janeiro. Em 2011-07-23.'
+    a página não informa a data de início. Local: Arcediagado Missionário Brasil Sul-Sudeste. Arcediago do novo
+    Arcediagado (sub-região eclesiástica) do Sul e Sudeste do Brasil, cuja criação foi homologada no XXVIII Concílio
+    Diocesano (dezembro de 2008).
+  start: 2008-12
 - jurisdiction: ofa
   role: other
   role_description: frei (membro)
@@ -238,3 +258,39 @@ events:
     quote: >-
       Estiveram presentes o Venerável Arcediago Sul-Sudeste, Rev. Carlos Alberto ( Paróquia Anglicana da Santíssima
       Trindade ), o Arcediago Adjunto, Rev. Ivo Oliveira ( PMA da Transfiguração )
+- type: other
+  date: '2007-09-16'
+  description: >-
+    Em 16/09/2007 Robinson Cavalcanti presidiu, na Paróquia Anglicana Reformada (Copacabana, Rio de Janeiro), culto
+    eucarístico em que o Rev. Carlos Alberto Chaves Fernandes e mais 65 pessoas foram confirmados e quatro seminaristas
+    foram instalados como evangelistas; a comunidade é descrita como a mais nova da Diocese do Recife, sob supervisão
+    primacial do Cone Sul.
+  status: confirmed
+  sources:
+  - source: darl3-n4227
+    quote: >-
+      é a mais nova Comunidade Anglicana da Diocese do Recife - Comunhão Anglicana, sob Supervisão Primacial da
+      Igreja do Cone Sul da América
+  - source: darl3-n4227
+    quote: >-
+      quando o Rev. Carlos Alberto Chaves Fernandes ( veja foto à esquerda ) e mais 65 pessoas participarão do Culto
+      Eucarístico e serão Confirmados
+- type: other
+  date: 2008-12
+  description: >-
+    O XXVIII Concílio Diocesano da Diocese do Recife (Jaboatão dos Guararapes, dezembro de 2008) homologou a criação
+    de um Arcediagado para as comunidades do Sul e Sudeste do Brasil vinculadas à diocese, com o Rev. Carlos Alberto
+    Chaves Fernandes (Rio de Janeiro) como arcediago; o território histórico da diocese é o Nordeste (9 estados),
+    mas os cânones permitem incluir comunidades de outras regiões por necessidade missionária. Durante os quatro
+    anos anteriores existiu um Arcediagado Norte-Americano (comunidades da Flórida, Oregon e Washington), vinculado
+    provisoriamente ao Recife.
+  status: confirmed
+  sources:
+  - source: darl3-n4622
+    quote: >-
+      O XXVIII Concílio da Diocese do Recife homologou a criação de um Arcediagado (sub-região eclesiástica) para
+      coordenar as comunidades das regiões sul e sudeste do Brasil que a ela estão vinculadas
+  - source: darl3-n4622
+    quote: >-
+      Durante os últimos quatro anos existiu um Arcediagado Norte-Americano para as comunidades dos Estados da Flórida,
+      Oregon e Washington que estão vinculadas provisoriamente ao Recife

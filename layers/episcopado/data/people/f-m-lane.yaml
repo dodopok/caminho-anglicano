@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: f-m-lane
+name: F. M. Lane
+affiliations:
+- jurisdiction: cbp-pe
+  role: other
+  role_description: capelão
+  start: '1900'
+  end: '1902'
+  status: confirmed
+  sources:
+  - source: darl3-hist1
+    quote: Estão registrados os seguintes Capelães que aqui serviram
+  - source: darl3-hist1
+    quote: Rev. F.M. Lane (1900-1902)
+  notes: >-
+    Lista de capelães da Capelania Britânica de Pernambuco (Holy Trinity Church, Recife) compilada por Robinson
+    Cavalcanti. Período sobreposto ao de Macray na lista do texto.

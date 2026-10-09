@@ -348,6 +348,10 @@ relations:
       prover um status de reconhecimento extra-provincial pelo meu ofício como Primaz do Cone Sul até que o Painel
       de Referência, o Arcebispo de Cantuária, ou a Comunhão Anglicana venha, de alguma maneira, a tomar soluções
       adequadas para essa crise
+  - source: darl3-hist6
+    quote: >-
+      Carta-Documento do Primaz da Igreja Anglicana do Cone Sul, Revmo. Gregory J. Venables , reconhecendo as suas
+      Ordens e Ministérios, e os colocando sob a sua proteção e autoridade primacial
   notes: >-
     A Diocese Anglicana do Recife passa a usar, em seu papel timbrado, a fórmula "Diocese do Recife – Comunhão Anglicana,
     sob Autoridade Primacial da Igreja Anglicana do Cone Sul da América". O documento de outubro de 2005 fala em
@@ -361,6 +365,9 @@ relations:
     não informada no Anexo S). A IEAB protestou contra o que chamou de ingerência em sua jurisdição. Carta do Primaz
     Gregory Venables de 24/09/2005. Os credenciamentos foram entregues ao bispo e a 40 clérigos no Centro Diocesano
     Arcebispo George Carey, no Recife, pelo Cônego Bill Atwood, secretário-geral da Ekklesia, representando o Primaz.
+    Setembro de 2005: carta-documento do Primaz da Igreja Anglicana do Cone Sul, Gregory J. Venables, reconhecendo
+    as ordens e ministérios do bispo e dos clérigos da DAR e colocando a diocese sob sua autoridade primacial (supervisão
+    primacial provisória; status de diocese extraprovincial).
 - type: in_communion_with
   target: diocese-of-springfield
   date: 2006-10
@@ -459,7 +466,7 @@ relations:
   led_by:
   - gregory-venables
   - robinson-cavalcanti
-  status: probable
+  status: contested
   sources:
   - source: costa2021
     quote: >-
@@ -475,10 +482,35 @@ relations:
     quote: posta sob a Autoridade Primacial da Igreja Anglicana no Cone Sul da América, em 2005
   - source: darn1-xxx
     quote: o novo Primaz da Igreja Anglicana do Cone Sul da América (nossa Autoridade Primacial)
+  - source: darl3-idx-p15
+    quote: Diocese do Recife aprova filiação à Igreja Anglicana do Cone Sul da América
+  - source: darl3-idx-p15
+    quote: Delegados e observadores das 44 comunidades aplaudiram de pé a decisão
+  - source: darl3-idx-p15
+    quote: >-
+      sua vinculação institucional como Diocese extraterritorial da Igreja Anglicana do Cone Sul da América
+  - source: darl3-idx-p12
+    quote: A Diocese do Recife Já Está na Igreja Anglicana do Cone Sul
   notes: >-
     Jurisdição extra-provincial ('supervisão primacial'), não diocese plena do Cone Sul. Fim = criação da IAB (inferido).
     A Diocese do Recife, desligada da IEAB em 2005, passou à autoridade primacial do Cone Sul; em 2010 e 2011 o
-    site ainda a apresenta nessa situação.
+    site ainda a apresenta nessa situação. Em dezembro de 2007 (XXVII Concílio Diocesano) os delegados aprovaram
+    a filiação institucional da diocese à Igreja Anglicana do Cone Sul como diocese extraterritorial; a visita pastoral
+    do Primaz Gregory Venables (28 a 31/03/2008) foi noticiada como "A Diocese do Recife já está na Igreja Anglicana
+    do Cone Sul". Desde setembro de 2005 a diocese estava sob a autoridade primacial do Cone Sul.
+  discrepancies:
+  - field: date
+    value: 2007-12
+    sources:
+    - source: darl3-idx-p15
+      quote: Diocese do Recife aprova filiação à Igreja Anglicana do Cone Sul da América
+    - source: darl3-idx-p15
+      quote: Delegados e observadores das 44 comunidades aplaudiram de pé a decisão
+    - source: darl3-idx-p15
+      quote: >-
+        sua vinculação institucional como Diocese extraterritorial da Igreja Anglicana do Cone Sul da América
+    - source: darl3-idx-p12
+      quote: A Diocese do Recife Já Está na Igreja Anglicana do Cone Sul
 - type: member_of
   target: gafcon
   date: '2008'
@@ -612,3 +644,19 @@ relations:
     quote: >-
       sucessora eclesiástica da Diocese Setentrional e da Diocese Anglicana do Recife, sob Autoridade Primacial
   notes: Definição do Cânon 1 dos Cânones diocesanos (versão capturada em 2007).
+- type: member_of
+  target: movimento-anglicano-por-uma-causa-comum
+  date: '2006-09-30'
+  status: confirmed
+  sources:
+  - source: darl3-cc-boaviagem
+    quote: >-
+      Diocese do Recife , sob Autoridade Primacial da Igreja Anglicana do Cone Sul da América – Comunhão Anglicana:
+      Dom Robinson Cavalcanti , Bispo Diocesano; Revmo. Estevão Menezes Chiappetta, Deão da Catedral
+  - source: darl3-cc-boaviagem
+    quote: >-
+      assinaram ontem, 30.09.2006, a “Declaração da Boa Viagem” , criando o “Movimento Anglicano Por Uma Causa Comum”
+  notes: >-
+    Signatária fundadora da Declaração da Boa Viagem (Catedral Anglicana do Bom Samaritano, Boa Viagem, Recife,
+    30/09/2006), que criou o Movimento Anglicano "Por Uma Causa Comum", durante o culto de ação de graças pelo nono
+    aniversário de sagração episcopal de Dom Robinson Cavalcanti.

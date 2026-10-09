@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: michael-la-cagnina
 name: Michael La Cagnina
+aliases:
+- Michael LaCagnina
 biography: Candidato ordenado diácono em 08/12/2006 (Conde-PB), segundo convite.
 sources:
 - source: dar-2006-convite-diaconal
@@ -83,6 +85,17 @@ affiliations:
     quote: Michael L. La Cagnina, Ministro Encarregado da Missão Anglicana do Cristo, em High Springs, Fla
   notes: >-
     Local: Arcediagado Norte-Americano — Missão Anglicana do Cristo, High Springs, Flórida. Em julho de 2007.
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  status: confirmed
+  sources:
+  - source: darl3-n4250
+    quote: >-
+      ministrou ao Cursilho Masculino (Movimento Quarto Dia), onde o nosso Rev. Michael LaCagnina era um dos diretores
+      espirituais
+  notes: >-
+    Local: Missão do Cristo (High Springs, Flórida). Citado em 03/10/2007 como "nosso Rev." (clérigo da DAR) na
+    Flórida; Dom Robinson celebrou e pregou na "nossa Missão do Cristo, em High Springs".
 events:
 - type: other
   date: '2006-12-08'

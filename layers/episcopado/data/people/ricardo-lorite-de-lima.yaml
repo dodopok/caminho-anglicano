@@ -179,8 +179,11 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: o bispo José Augusto está junto com dom Ricardo Lorite, Primaz da Igreja Anglicana do Brasil
     page: '160'
+  - source: darl3-cc-boaviagem
+    quote: Dom Ricardo Lorite de Lima, Arcebispo Primaz
   notes: >-
-    Arcebispo primaz até o encerramento da igreja (30/10/2017); primaz emérito a partir da reativação de 2023.
+    Arcebispo primaz até o encerramento da igreja (30/10/2017); primaz emérito a partir da reativação de 2023. Signatário/representante
+    da jurisdição na Declaração da Boa Viagem (30/09/2006), com o título indicado na notícia.
 - jurisdiction: ielb
   role: primate
   status: probable
@@ -226,6 +229,19 @@ affiliations:
   notes: >-
     A IAU o chama de "Arcebispo Primaz" e líder; o site da IAU o apresenta como Arcebispo Primus da FPEC, à qual
     a IAU pertence.
+- jurisdiction: iadb-lorite
+  role: other
+  role_description: bispo eleito
+  diocese: diocese-missionaria-thomas-cranmer
+  status: probable
+  sources:
+  - source: darl3-ialb
+    quote: >-
+      + Ricardo Lorite de Lima Bispo Eleito da Igreja Anglicana Latina do Brasil Diocese Missionária Thomas Cranmer
+  notes: >-
+    Carta de apoio sem data, escrita durante a crise de 2005 entre a Diocese do Recife e a IEAB; Lorite assina como
+    "Bispo Eleito da Igreja Anglicana Latina do Brasil" (Diocese Missionária Thomas Cranmer). Sua sagração episcopal
+    consta de 15/01/2006 em outras fontes.
 events:
 - type: other
   date: '2015'

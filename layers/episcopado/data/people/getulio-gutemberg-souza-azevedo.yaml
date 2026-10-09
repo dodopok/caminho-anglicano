@@ -1,6 +1,15 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: getulio-gutemberg-souza-azevedo
 name: Getúlio Gutemberg Souza Azevedo
+affiliations:
+- jurisdiction: iadb-lorite
+  role: clergy
+  status: confirmed
+  sources:
+  - source: darl3-cc-boaviagem
+    quote: Rev. Getúlio Gutemberg Souza Azevedo
+  notes: >-
+    Signatário/representante da jurisdição na Declaração da Boa Viagem (30/09/2006), com o título indicado na notícia.
 events:
 - type: other
   date: '2004'

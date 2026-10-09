@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: h-j-dobb
+name: H. J. Dobb
+affiliations:
+- jurisdiction: cbp-pe
+  role: other
+  role_description: capelão
+  start: '1940'
+  end: '1941'
+  status: confirmed
+  sources:
+  - source: darl3-hist1
+    quote: Estão registrados os seguintes Capelães que aqui serviram
+  - source: darl3-hist1
+    quote: Rev. H.J. Dobb (1940-1941)
+  notes: "Lista de capelães da Capelania Britânica de Pernambuco (Holy Trinity Church, Recife) compilada por Robinson\
+    \ Cavalcanti. "

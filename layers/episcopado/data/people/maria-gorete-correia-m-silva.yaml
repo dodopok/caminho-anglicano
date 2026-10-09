@@ -11,6 +11,17 @@ sources:
   quote: Ven. Arc. Revda. Maria Gorete Correia M. da Silva – Séc. Diocesana de Ação Social
 affiliations:
 - jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároca
+  start: '1997-11-17'
+  status: confirmed
+  sources:
+  - source: darl3-n4616
+    quote: Revda. Gorete é Pároca e Arcediaga na região Norte da Diocese
+  notes: >-
+    Local: Paróquia Anglicana da Redenção (Arcediagado Norte). Pároca da Paróquia Anglicana da Redenção desde a
+    fundação (17/11/1997, segundo o relato de 2008) e arcediaga da região Norte em dezembro de 2008.
+- jurisdiction: diocese-anglicana-recife
   role: clergy
   start: '2005'
   status: confirmed
@@ -39,9 +50,16 @@ affiliations:
   sources:
   - source: drp-calendario-2004
     quote: Ven. Arced. Revda. Maria Gorete C. M. Silva
+  - source: darl3-carta-0904
+    quote: >-
+      Ven. Arc. Revda. Maria Gorete Correia M. Silva Secretária Diocesana de Ação Social Paróquia Anglicana da Redenção
+  - source: darl3-primaz-0406
+    quote: Ven Arc Revda. Mª. Gorete C. Marques da Silva
   notes: >-
     Local: Diocese Anglicana do Recife. Título de arcediaga atestado no calendário diocesano de 2004 (publicado
-    em 2003).
+    em 2003). Local: Diocese Anglicana do Recife, Paróquia Anglicana da Redenção. Arcediago em 25/06/2004 (carta
+    ao Primaz da IEAB) e em 17/09/2004 (carta ao Bispo Primaz), com o arcediagado e a comunidade indicados quando
+    constam do documento.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago
@@ -224,3 +242,45 @@ affiliations:
   notes: >-
     Local: Paróquia Anglicana da Redenção (Olinda). Consta na página de comunidades do Arcediagado Norte capturada
     em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretária diocesana de Ação Social
+  status: confirmed
+  sources:
+  - source: darl3-setubal
+    quote: Ven. Arc. Revda. Maria Gorete Correia M. da Silva – Secretária Diocesana de Ação Social
+  notes: >-
+    Delegado clerical ao Concílio Diocesano Extraordinário de 26/02/2005 (Carta de Setúbal), com o cargo indicado
+    na lista de delegados.
+events:
+- type: other
+  date: '2004-06-25'
+  description: >-
+    Em 25/06/2004 os arcediagos da DAR (Maurício Coelho, Quintino Orengo, Maria Gorete Marques e Luiz Souza de França)
+    enviaram carta aberta ao Primaz da IEAB, Dom Orlando Santos de Oliveira, repudiando o texto da Comissão Especial
+    designada por ele para estudar a conjuntura eclesial, no que se referia ao bispo diocesano do Recife.
+  status: confirmed
+  sources:
+  - source: darl3-primaz-0406
+    quote: >-
+      vimos por meio desta explicitar de forma indignada nosso público repúdio às palavras injuriosas contidas no
+      citado documento
+  - source: darl3-primaz-0406
+    quote: Recife, 25 de junho de 2004.
+- type: other
+  date: '1997-11-17'
+  description: >-
+    A Paróquia Anglicana da Redenção (bairro de Rio Doce) foi fundada em 17/11/1997, quando o bispo Robinson Cavalcanti
+    passou o bastão à Revda. Gorete Marques, após confirmar a primeira remessa de membros; em dezembro de 2008 Gorete
+    era pároca e arcediaga da região Norte e o Rev. Tibério Marques, secretário diocesano de Homens e contador diocesano.
+  status: confirmed
+  sources:
+  - source: darl3-n4616
+    quote: Fundada em 17 de novembro de 1997
+  - source: darl3-n4616
+    quote: >-
+      quando passava o bastão para a Revda. Gorete Marques, ose, após ter Confirmado a primeira remessa de membros
+  - source: darl3-n4616
+    quote: >-
+      Revda. Gorete é Pároca e Arcediaga na região Norte da Diocese; Rev. Tibério Marques é Secretário Diocesano
+      de Homens e Contador Diocesano

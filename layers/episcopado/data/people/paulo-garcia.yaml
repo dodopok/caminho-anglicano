@@ -58,9 +58,13 @@ ordinations:
   - source: kickhofel-1995
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1970 - … Paulo Ruiz Garcia
     page: '372'
+  - source: darl3-hist2
+    quote: O Bispo Sherrill resolveu nele investir, ordenando-o Diácono e Presbítero
   notes: >-
     Ver ordenação ao presbiterato (mesma frase da fonte); data não informada. Ano tirado da lista do clero nacional
-    por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado. O texto não dá datas; diz que
+    Sherrill o ordenou diácono e presbítero e o designou para comunidades em São Paulo e no Rio de Janeiro antes
+    de enviá-lo ao Recife em março de 1975.
 - order: presbyterate
   date: '1970'
   jurisdiction: ieab
@@ -77,6 +81,8 @@ ordinations:
     quote: >-
       No último dia 28 de fevereiro de 2025, celebrou-se o Jubileu de Ouro do Pastor Paulo Garcia, líder e servo
       incansável da Igreja Episcopal Carismática. Ao longo de 50 anos de sacerdócio
+  - source: darl3-hist2
+    quote: O Bispo Sherrill resolveu nele investir, ordenando-o Diácono e Presbítero
   discrepancies:
   - field: date
     value: c.1975
@@ -93,7 +99,8 @@ ordinations:
     de 1970, mas pode tratar-se do diaconato. Ordenante não informado. Formado no Seminário Teológico Anglicano
     de São Paulo. Data inferida do jubileu de 50 anos de "sacerdócio" celebrado em 28/02/2025 (artigo de opinião);
     a fonte não dá a data da ordenação. Diverge do "Ordenado Ministro ... em 1970" da dissertação de Queiroz (2004)
-    — possivelmente 1970 = diaconato e c.1975 = presbiterato, mas nenhuma fonte diz isso.
+    — possivelmente 1970 = diaconato e c.1975 = presbiterato, mas nenhuma fonte diz isso. Ver diaconato: o texto
+    não dá as datas das ordenações.
 - order: episcopate
   date: '2003-09-08'
   place: Teatro Guararapes, Centro de Convenções – Olinda (PE)
@@ -150,6 +157,10 @@ ordinations:
       Após uma longa e tradicional cerimônia com vários pastores que vieram dos Estados Unidos exclusivamente para
       este fim
     page: '54'
+  - source: darl3-primazes-2003
+    quote: >-
+      O ex-Deão e seus seguidores se juntaram à chamada “Igreja Episcopal Carismática”, com sede em San Clemente,
+      Califórnia, USA. Ele será sagrado bispo no dia 08 de setembro de 2003.
   notes: >-
     Sucessão declarada: ICCEC (Randolph Adler). A própria Wikipédia diz 'Recife' e 'Teatro Guararapes, em Olinda'
     em trechos diferentes (o Centro de Convenções/Teatro Guararapes fica em Olinda). Co-sagrantes não informados.
@@ -166,7 +177,10 @@ ordinations:
     menciona apenas 'ministros estrangeiros' / pastores vindos dos EUA. Primeiro bispo da Igreja Episcopal Carismática
     do Brasil (ICCEC). A tese lista 12 'bispos sagrantes' sem dizer quem foi o principal; Adler aparece primeiro
     como 'Patriarca e Primaz' (atribuição do principal é inferência). Trecho da sagração citado de QUEIROZ, 2017,
-    p. 167. 'Antônio Raposo' identificado com 'Antônio José da Costa Raposo' da base (ver dúvidas).
+    p. 167. 'Antônio Raposo' identificado com 'Antônio José da Costa Raposo' da base (ver dúvidas). Fato anunciado:
+    a carta de 23/05/2003 diz que o ex-deão (não nomeado na carta; identificado como Paulo Garcia pelos demais textos
+    do site) "será sagrado bispo no dia 08 de setembro de 2003" pela Igreja Episcopal Carismática (sede em San Clemente,
+    Califórnia). A data é a anunciada na carta, anterior ao evento.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -313,6 +327,30 @@ affiliations:
   notes: >-
     Local: Paróquia da Santíssima Trindade (Recife). Segundo a contestação judicial da Diocese, a vinda foi motivada
     pelo plano da IEAB de sediar ali uma nova diocese para o Norte e Nordeste.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: pároco
+  start: 1975-03
+  status: confirmed
+  sources:
+  - source: darl3-hist1
+    quote: Em março de 1975 é designado como Pároco o Rev. Paulo Ruiz Garcia
+  notes: >-
+    Local: Capelania/Paróquia da Santíssima Trindade, Recife, PE. Designado pároco da então Holy Trinity Church/Paróquia
+    da Santíssima Trindade, no Recife, antes da criação da Diocese Setentrional.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: pároco
+  start: '1976'
+  status: confirmed
+  sources:
+  - source: darl3-hist2
+    quote: A Diocese, em seu início, era composta por apenas três Paróquias
+  - source: darl3-hist2
+    quote: SS. Trindade ( Rev. Paulo Garcia ), Recife-PE
+  notes: >-
+    Local: Diocese Setentrional, Recife. Uma das três paróquias da Diocese Setentrional na sua criação (1976); o
+    texto indica o clérigo à frente de cada uma.
 - jurisdiction: iecb
   role: bishop
   start: '2002'
@@ -476,6 +514,22 @@ affiliations:
       quando o reverendo Paulo Garcia, então deão da Catedral da Santíssima Trindade, rompeu com a Diocese e a Província.
     page: '108'
   notes: 'Cargo: Deão da Catedral da Santíssima Trindade, Recife.'
+- jurisdiction: ieab-dar
+  role: other
+  role_description: deão
+  end: 2002-09
+  end_reason: schism
+  status: confirmed
+  sources:
+  - source: darl3-hist4
+    quote: a convivência do novo Bispo Diocesano com o seu Deão e Secretário de Evangelismo
+  - source: darl3-dout-hist
+    quote: primeiro Deão, Rev. Paulo Ruiz Garcia
+  notes: >-
+    Local: Diocese Anglicana do Recife, Catedral Anglicana da Santíssima Trindade (Recife). Primeiro deão da Catedral
+    da Santíssima Trindade (Igreja Catedral criada no período 1998-2002), também secretário de Evangelismo; rompeu
+    com a diocese em setembro de 2002, filiando-se à Igreja Episcopal Carismática (ICCEC), segundo o relato de Robinson
+    Cavalcanti.
 events:
 - type: other
   date: 2002-10
@@ -1053,3 +1107,24 @@ events:
     quote: considera-se desligada da Diocese Anglicana do Recife da Igreja Episcopal Anglicana do Brasil
   - source: dard1-verdades-2002
     quote: registro, na segunda-feira, 23 de setembro de 2002
+- type: other
+  date: 2002-09
+  description: >-
+    Em setembro de 2002 o deão da Catedral da Santíssima Trindade (Recife), Rev. Paulo Garcia, rompeu com a diocese
+    e filiou-se à Igreja Episcopal Carismática, levando as comunidades do Janga, Timbaúba e Vitória de Santo Antão
+    e os reverendos Frederico, Célio, Adonias e Edgar; segundo o relato diocesano o cisma foi "trifonte": o grupo
+    do Deão (Igreja Episcopal Carismática), os reverendos Leonides e Karla com a Paróquia Betânia (Igreja Episcopal
+    Evangélica) e o Rev. Múcio com a comunidade do Parnamirim (de volta à Igreja Presbiteriana do Brasil). Parte
+    da Catedral, liderada pelo Coadjutor Sérgio, permaneceu na DAR.
+  status: confirmed
+  sources:
+  - source: darl3-hist4
+    quote: rompe com a Diocese e se filia, em setembro de 2002, àquele grupo
+  - source: darl3-hist4
+    quote: >-
+      Leva com ele as comunidades do Janga, Timbaúba e Vitória do Santo Antão-PE, e os reverendos: Frederico, Célio,
+      Adonias e Edgar
+  - source: darl3-hist4
+    quote: O cisma foi, na realidade, trifonte
+  - source: darl3-dout-hist
+    quote: primeiro Deão, Rev. Paulo Ruiz Garcia

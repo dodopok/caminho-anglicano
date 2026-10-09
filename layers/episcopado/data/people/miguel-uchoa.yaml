@@ -500,6 +500,8 @@ affiliations:
     quote: Rev. Miguel Uchôa é reitor da Paróquia Anglicana do Espírito Santo, em Jaboatão dos Guararapes-PE
   - source: dard1-com-sul-2009a
     quote: 'Reitor: Rev. Miguel Uchôa Cavalcanti'
+  - source: darl3-n4617
+    quote: A Paróquia tem como Reitor o Rev. Miguel Uchoa, como Coadjutor o Rev. Geison Vasconcellos
   notes: >-
     Local: Paróquia Anglicana do Espírito Santo, Jaboatão dos Guararapes. Reitor da Paróquia Anglicana do Espírito
     Santo (PAES) atestado em outubro de 2005 e em 21/10/2007; também é arcediago (Arcediagado Sul) em 2006. Local:
@@ -512,7 +514,8 @@ affiliations:
     Em 16/10/2004 e em 21/08/2005. Na assinatura de 2004 consta ainda como representante da agência missionária
     SOMA. Local: Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes). Consta na página de comunidades
     do Arcediagado Sul capturada em 03/01/2009 (sem data de publicação visível). A página traz "(22/08)" ao lado
-    do nome da paróquia, sem explicar (provável data de aniversário).
+    do nome da paróquia, sem explicar (provável data de aniversário). Local: Paróquia Anglicana do Espírito Santo
+    (Jaboatão dos Guararapes, PE). Reitor da PAES em dezembro de 2008 (confirmação de 23/11/2008).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago
@@ -537,13 +540,16 @@ affiliations:
     quote: Rev. Miguel Uchoa - Arcediago Sul da DAR e Reitor da Paróquia Anglicana do Espírito Santo
   - source: dard1-franca-iaeb-2005
     quote: Venerável Arcediago Rev. Miguel Uchôa
+  - source: darl3-setubal
+    quote: Ven. Arc. Rev. Miguel A. de A. Uchoa Cavalcanti
   notes: >-
     Assina a carta a Venables (17/10/2005) como arcediago. Local: Arcediagado Sul. Arcediagado Sul em out/nov de
     2006. Cargo exercido em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados. Arcediago
     em abril de 2006; arcediagado não indicado. Local: Paróquia Anglicana do Espírito Santo. Arcediago e líder da
     equipe pastoral da Paróquia do Espírito Santo em outubro de 2005. Local: Arcediagado Sul. Assina como arcediago
     da Região Sul em textos reproduzidos no site em 2009. Local: Arcediagado da Região Sul. Consta no artigo publicado
-    no Jornal do Commercio em 21/08/2005 e em textos do mesmo ano.
+    no Jornal do Commercio em 21/08/2005 e em textos do mesmo ano. Delegado clerical ao Concílio Diocesano Extraordinário
+    de 26/02/2005 (Carta de Setúbal), com o cargo indicado na lista de delegados.
 - jurisdiction: gafcon
   role: other
   role_description: membro do Conselho dos Primazes
@@ -665,6 +671,18 @@ affiliations:
     Local: Junta de Capelães Examinadores (mandato de 2 anos). Consta na lista "Cargos Eletivos (Sugestões ao Plenário)"
     capturada em jan/2009; são sugestões ao plenário do Concílio, e a página não informa se foram aprovadas nem
     a data.
+- jurisdiction: ieab-dar
+  role: priest
+  status: confirmed
+  sources:
+  - source: darl3-carta-0904
+    quote: >-
+      Rev.Miguel Ângelo de A. Uchoa Cavalcanti Paróquia Anglicana do Espírito Santo e Ponto Missionário Anglicano
+      Monte Moriá
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana do Espírito Santo e Ponto Missionário Anglicano Monte
+    Moriá. Consta como signatário da carta aberta de 17/09/2004 da Diocese Anglicana do Recife ao Bispo Primaz,
+    na lista de Presbíteros, com a comunidade indicada.
 events:
 - type: other
   date: '2017-05-06'
@@ -1415,3 +1433,19 @@ events:
     quote: 9 anos atrás estávamos, eu e cerca de 25 pessoas
   - source: dard1-uchoa-jc-2005
     quote: Artigo Publicado na Edição do Jornal do Commercio do dia 21.08.2005
+- type: other
+  date: '1997-10-19'
+  description: >-
+    Em 19/10/1997 Robinson Cavalcanti, ainda como bispo coadjutor, instalou o então Ponto Missionário do Espírito
+    Santo (Jaboatão dos Guararapes, PE), depois elevado diretamente a Paróquia Anglicana do Espírito Santo (PAES),
+    cujo reitor é o Rev. Miguel Uchoa.
+  status: confirmed
+  sources:
+  - source: darl3-n4617
+    quote: >-
+      Em seu único ato sacramental como Bispo-coadjutor, em 19.10.1997, Dom Robinson Cavalcanti instalou o então
+      Ponto Missionário do Espírito Santo
+  - source: darl3-hist4
+    quote: >-
+      reconhecer, confirmar e empossar membros e clero da Paróquia Anglicana do Espírito Santo (até então oficialmente
+      “não existente” ), que passou de Ponto Missionário Anglicano diretamente para Paróquia

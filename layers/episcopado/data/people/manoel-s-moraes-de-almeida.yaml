@@ -38,7 +38,7 @@ affiliations:
   start: '2005-02-12'
   end: 2006-08
   end_reason: term_end
-  status: confirmed
+  status: contested
   sources:
   - source: drp2-instalacao-deao-2005
     quote: >-
@@ -48,11 +48,41 @@ affiliations:
     quote: estamos dando posse ao novo Deão, o Reverendíssimo Manoel Severino Moraes de Almeida
   - source: dard2-equipe-2009
     quote: 'DEÃO : Rev. Manoel Moraes Severino Moraes de Almeida'
+  - source: darl3-hist6
+    quote: >-
+      com a elevação da Paróquia Anglicana do Bom Samaritano ( Revmo. Manuel Moraes – Deão) ao status de Igreja-Catedral
+  - source: darl3-setubal
+    quote: Revmo. Deão Manoel S. Moraes de Almeida – Secretário Diocesano de Direitos Humanos
+  - source: darl3-idx-p11
+    quote: Novo Deão da Catedral do Bom Samaritano
+  - source: darl3-idx-p11
+    quote: >-
+      Eleito, por unanimidade, pela Junta Paroquial; o Rev. Cônego Manoel Moraes é o novo Deão da Catedral Anglicana
+      do Bom Samaritano
+  - source: darl3-idx-p9
+    quote: Sermão do Culto de Posse do Deão Rev. Cônego Manoel Moraes
   notes: >-
     Local: Catedral Anglicana do Bom Samaritano, Boa Viagem, Recife. Primeiro deão da Catedral do Bom Samaritano.
     Não pleiteou reeleição; em agosto de 2006 foi instituído o deão seguinte, Estevão Chiappetta. Local: Catedral
     Anglicana do Bom Samaritano. Deão na equipe pastoral da Catedral (Boa Viagem, Recife) na página capturada em
-    02/01/2009; a posse foi em 15/06/2008. Em julho de 2009 a mesma página já trazia outro deão.
+    02/01/2009; a posse foi em 15/06/2008. Em julho de 2009 a mesma página já trazia outro deão. Local: Catedral
+    Anglicana do Bom Samaritano (Recife). Já deão em 26/02/2005 (Concílio Extraordinário de Setúbal; também Secretário
+    Diocesano de Direitos Humanos) e deão da Paróquia/Igreja-Catedral do Bom Samaritano por ocasião do XXV Concílio
+    (dezembro de 2005). Local: Catedral Anglicana do Bom Samaritano (Recife). Eleito por unanimidade pela Junta
+    Paroquial (notícia de 05/05/2008); sermão do culto de posse publicado em 18/06/2008 (a data da posse não consta
+    da listagem). Já era deão em 2005; é também cônego.
+  discrepancies:
+  - field: start
+    value: 2008-05
+    sources:
+    - source: darl3-idx-p11
+      quote: Novo Deão da Catedral do Bom Samaritano
+    - source: darl3-idx-p11
+      quote: >-
+        Eleito, por unanimidade, pela Junta Paroquial; o Rev. Cônego Manoel Moraes é o novo Deão da Catedral Anglicana
+        do Bom Samaritano
+    - source: darl3-idx-p9
+      quote: Sermão do Culto de Posse do Deão Rev. Cônego Manoel Moraes
 - jurisdiction: iacs
   role: other
   role_description: vigário geral
@@ -218,6 +248,17 @@ affiliations:
   notes: >-
     Local: Paróquia Anglicana Comunidade Jesus de Nazaré (Gaibu, Cabo de Santo Agostinho). Consta na página de comunidades
     do Arcediagado Sul capturada em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: ieab-dar
+  role: other
+  role_description: secretário diocesano de Direitos Humanos
+  status: confirmed
+  sources:
+  - source: darl3-carta-0904
+    quote: >-
+      Rev. Manoel Severino Moraes de Almeida Secretaria de Direitos Humanos Paróquia Anglicana Bom Samaritano
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana Bom Samaritano. Secretário de Direitos Humanos em 17/09/2004
+    (nome grafado "Manoel Severino Moraes de Almeida").
 events:
 - type: other
   date: '2004-07-06'
@@ -248,3 +289,16 @@ events:
       do Bom Samaritano, em Boa Viagem, como a Igreja Catedral da Diocese Anglicana do Recife
   - source: drp2-instalacao-deao-2005
     quote: Declaramos, solenemente, instalada esta Igreja Catedral Anglicana do Bom Samaritano
+- type: other
+  date: 2005-12
+  description: >-
+    No XXV Concílio Diocesano (início de dezembro de 2005, Paróquia Anglicana Emanuel, Olinda) a Paróquia Anglicana
+    do Bom Samaritano (Recife) foi elevada ao status de Igreja-Catedral, com o Rev. Manoel S. Moraes de Almeida
+    como Deão, e foram ordenados novos presbíteros e diáconos.
+  status: probable
+  sources:
+  - source: darl3-hist6
+    quote: >-
+      com a elevação da Paróquia Anglicana do Bom Samaritano ( Revmo. Manuel Moraes – Deão) ao status de Igreja-Catedral
+  - source: darl3-hist6
+    quote: além da Ordenação de novos Presbíteros e Diáconos

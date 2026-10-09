@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: j-i-packer
+name: J. I. Packer
+aliases:
+- James Innell Packer
+biography: >-
+  Teólogo anglicano (ala calvinista, editor da Bíblia de Genebra) que transferiu sua residência canônica ministerial
+  para a Igreja Anglicana do Cone Sul em dezembro de 2007 e recebeu em abril de 2008, do Primaz Gregory Venables,
+  residência canônica e reconhecimento de ordem e ministério.
+sources:
+- source: darl3-idx-p15
+  quote: transferiu a sua residência canônica ministerial para a Igreja Anglicana do Cone Sul da América
+affiliations:
+- jurisdiction: iacs
+  role: clergy
+  start: 2007-12
+  status: confirmed
+  sources:
+  - source: darl3-idx-p15
+    quote: Packer Se Transfere para a Igreja Anglicana do Cone Sul
+  - source: darl3-idx-p15
+    quote: transferiu a sua residência canônica ministerial para a Igreja Anglicana do Cone Sul da América
+  notes: >-
+    O teólogo J. I. Packer (anglicano da ala calvinista, editor da Bíblia de Genebra) transferiu sua residência
+    canônica ministerial para a Igreja Anglicana do Cone Sul (notícia de 16/12/2007); em 30/04/2008 a diocese noticiou
+    que ele recebeu residência canônica e reconhecimento de ordem e ministério do Primaz Gregory J. Venables.
+events:
+- type: other
+  date: 2008-04
+  description: >-
+    Em 30/04/2008 a Diocese do Recife noticiou que o teólogo J. I. Packer recebeu residência canônica e reconhecimento
+    de ordem e ministério do Primaz da Igreja Anglicana do Cone Sul, Gregory J. Venables (já noticiada em 16/12/2007
+    a transferência de sua residência canônica para o Cone Sul).
+  status: confirmed
+  sources:
+  - source: darl3-idx-p11
+    quote: Packer Agora é Clérigo da Igreja Anglicana do Cone Sul
+  - source: darl3-idx-p11
+    quote: >-
+      recebeu residência canônica e reconhecimento de ordem e ministério pelo Primaz da Igreja Anglicana do Cone
+      Sul da América, Revmo. Gregory J. Venables
