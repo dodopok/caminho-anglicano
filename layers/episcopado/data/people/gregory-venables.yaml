@@ -47,6 +47,18 @@ ordinations:
     Ink, Wikidata) nomeia o sagrante. A Wikipédia diz "being consecrated the first Bishop of Bolivia in 1995", mas
     trata-se de nova posse/eleição, não de nova sagração.
 affiliations:
+- jurisdiction: gafcon
+  role: other
+  role_description: presidente do Conselho dos Primazes do GAFCON/FCA
+  start: 2010-04
+  status: probable
+  sources:
+  - source: darn2-fca-venables-2010
+    quote: >-
+      O Conselho dos Primazes elegeu como seu novo Presidente o Primaz da Igreja do Cone Sul Gregory J. Venables
+  notes: >-
+    Eleição na reunião do Conselho dos Primazes do GAFCON/FCA nas Bermudas (05 a 09/04/2010); notícia de 10/04/2010
+    reproduzida de anglican-mainstream.net.
 - jurisdiction: iacs
   role: primate
   status: probable
@@ -59,7 +71,13 @@ affiliations:
       Todavia, em 23 de setembro de 2005, a Igreja Anglicana do Cone Sul, por meio do seu Primaz, o bispo Gregory
       Venables, aceitou o pedido
     page: '225'
-  notes: Primaz citado em referência a 2009. Primaz do Cone Sul em 2005.
+  - source: darn2-sinodo-cone-sul-2007
+    quote: >-
+      In his message to Bishop Robinson Cavalcanti, the clergy and the people of the Diocese of Recife, the Primate
+      of the Southern Cone commended the diocese
+  notes: >-
+    Primaz citado em referência a 2009. Primaz do Cone Sul em 2005. Primaz do Cone Sul em julho de 2007, em mensagem
+    à Diocese do Recife.
 events:
 - type: other
   date: '2008-04-03'
@@ -390,3 +408,28 @@ events:
     quote: >-
       agora sob a autoridade primacial da Igreja Anglicana do Cone Sul da América , após a decisão corajosa do Arcebispo
       Gregory Venables
+- type: other
+  date: 2007-07
+  description: >-
+    XXVII Sínodo da Diocese do Recife (julho de 2007) aprova por unanimidade a moção de filiar-se oficialmente à
+    Igreja Anglicana do Cone Sul como diocese extraterritorial, sujeita à sua autoridade, constituição e cânones,
+    e pede a aceitação; vota emendas canônicas conformes ao Cone Sul; termina com Eucaristia e ordenação de três
+    diáconos, com o bispo Peter Beckwith (Diocese de Springfield) como pregador e co-celebrante. Em agosto de 2009
+    a diocese se descreve como sob autoridade primacial do Cone Sul
+  status: confirmed
+  sources:
+  - source: darn2-sinodo-cone-sul-2007
+    quote: >-
+      we deliberate to join, officially, the Church of the Southern Cone, as an extra-territorial diocese, subject
+      to its Authority, Constitution and Canons
+  - source: darn2-sinodo-cone-sul-2007
+    quote: >-
+      The house reflected favorable on the last two years in which the diocese has been under the supervision of
+      Primate Gregory J. Venables
+  - source: darn2-cone-sul-nota-2009
+    quote: A Diocese do Recife, hoje sob autoridade primacial da Igreja Anglicana no Cone Sul da Am
+  - source: darn2-sinodo-cone-sul-2007
+    quote: >-
+      The XXVII Synod of the Diocese of Recife voted canonical amendments consonant with the Constitution and Canons
+      of the Southern Cone, concluded with a Eucaristic Service, with the ordination of three deacons. Bishop Peter
+      Beckwith of the companion diocese of Springfield (TEC) preached and co-celebrated.

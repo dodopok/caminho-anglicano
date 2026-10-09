@@ -269,10 +269,17 @@ affiliations:
     quote: O Bispo Sufragâneo da Região Eclesiástica 2, Dom Evilásio Tenório
   - source: darn1-sagr12a
     quote: Sagração dos Bispos Sufragâneos
+  - source: darn2-semana-santa-2012
+    quote: +Revmo. Dom Evilásio Tenório Bispo Sufragâneo Região Eclesiástica 2
+  - source: darn2-maceio-visita-2012
+    quote: Revmo. Dom Evilásio Tenório , Bispo Sufragâneo da Região Eclesiástica 2
   notes: >-
     Local: 2ª Região Eclesiástica. Em 2012-02-26 aparece como bispo eleito da 2ª Região Eclesiástica; em 2012-05-12
     e 2012-08-18 assina/consta como bispo sufragâneo da mesma região. Local: Região Eclesiástica 2. Início = sagração
-    em 17/03/2012. Na eleição diocesana de 15/09/2012 ele também concorreu ao cargo de bispo diocesano.
+    em 17/03/2012. Na eleição diocesana de 15/09/2012 ele também concorreu ao cargo de bispo diocesano. Bispo sufragâneo
+    da Região Eclesiástica 2 (Grande Recife), com atos documentados em 29/03/2012 (convoca o clero das Regiões 1
+    e 2 para o culto de renovação dos votos sacerdotais e lava-pés, em 04/04/2012, na Catedral do Bom Samaritano)
+    e em 29/04 a 01/05/2012 (visita episcopal ao Ponto Missionário de Maceió).
   start: '2012-03-17'
 - jurisdiction: iab
   role: bishop
@@ -414,6 +421,57 @@ affiliations:
     Local: Região Eclesiástica 2. Citado como bispo-eleito da 2ª Região Eclesiástica na barra lateral capturada
     em 01/11/2011 e em reportagem de dezembro de 2011 (visita à Paróquia Anglicana do Redentor, Brasilit, Recife).
     Sagrado em 17/03/2012.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: deão
+  status: confirmed
+  sources:
+  - source: darn2-acao-social-2009
+    quote: Catedral Anglicana do Bom Samaritano (Venerável Rev. Evilásio Tenório – Deão), Boa Viagem, Recife-PE
+  - source: darn2-louvorzao-2010
+    quote: Catedral Anglicana do Bom Samaritano ( Rev. Evilásio Tenório )
+  notes: >-
+    Local: Catedral Anglicana do Bom Samaritano, Recife. Consta como deão da Catedral em 20/06/2009; em 27/11/2010
+    a nota o cita como responsável pela Catedral.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago do Sul
+  status: confirmed
+  sources:
+  - source: darn2-arcediagado-sul-2009
+    quote: sob a liderança do seu Arcediago, Venerável Reverendo Evilásio Tenório
+  notes: >-
+    Arcediago do Arcediagado (sub-região) Sul da Diocese do Recife em 14/11/2009 (reunião do clero no Centro Diocesano
+    Arcebispo George Carey).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: reitor
+  status: confirmed
+  sources:
+  - source: darn2-mediador-2011
+    quote: >-
+      Paróquia Anglicana do Mediador ( Revmo. Evilásio Tenório ; Ministro Auxiliar: Rev. Adriano Oliveira )
+  notes: >-
+    Local: Paróquia Anglicana do Mediador, Tejipió, Recife. Em 17/07/2011, já bispo eleito, consta como responsável
+    pela Paróquia do Mediador.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: bispo sufragâneo eleito (Região Eclesiástica 2)
+  status: confirmed
+  sources:
+  - source: darn2-bispo-eleito-regiao2-2011
+    quote: o Bispo-Eleito Revmo. Evilásio Tenório visitou – pela manhã – a Paróquia Anglicana do Mediador
+  notes: >-
+    Em 23/10/2011 visita, como bispo-eleito, as paróquias do Mediador (Recife) e Cristo Redentor (Gravatá-PE), esta
+    com o sermão.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: bispo sufragâneo eleito
+  status: confirmed
+  sources:
+  - source: darn2-falecimento-2012
+    quote: Revmo. Evilásio Tenório – Bispo Sufragâneo Eleito
+  notes: Assina a nota de falecimento do bispo diocesano em 27/02/2012, antes da sagração dos sufragâneos.
 events:
 - type: other
   date: '2012-09-15'
@@ -563,3 +621,46 @@ events:
   - source: darn1-eleicao12
     quote: >-
       o Revmo. Bispo Bill Atwood, e o Dr. Jeffrey Garrety , que vistaram todas as listas de assinatura dos eleitores
+- type: other
+  date: '2009-07-31'
+  description: >-
+    O bispo diocesano Robinson Cavalcanti dá posse, em 31/07/2009, à Comissão Especial de Assessoria Institucional,
+    criada por recomendação do Encontro do Clero para encaminhar um status estável da Diocese do Recife na Comunhão
+    Anglicana; integram-na Miguel Uchoa (coordenador), Maurício Coelho, Maurício Amazonas (presidente do Conselho
+    Diocesano) e os arcediagos Luiz Souza, João Peixoto (secretário), Fred Souto, Evilásio Tenório e Carlos Alberto
+    Fernandes
+  status: confirmed
+  sources:
+  - source: darn2-comissao-2009
+    quote: >-
+      o Bispo Diocesano, Dom Robinson Cavalcanti, deu posse à Comissão Especial de Assessoria Institucional criada
+      por recomendação do recente Encontro do Clero, visando os encaminhamentos necessários a um status estável
+      para a Diocese do Recife na Comunhão Anglicana
+  - source: darn2-comissao-2009
+    quote: >-
+      Integram essa comissão os reverendos Miguel Uchoa (coordenador), Maurício Coelho, Maurício Amazonas (presidente
+      do Conselho Diocesano) e os Arcediagos Luiz Souza, João Peixoto (secretário), Fred Souto, Evilásio Tenório
+      e Carlos Alberto Fernandes
+- type: other
+  date: '2009-11-14'
+  description: >-
+    Reunião de clero do Arcediagado Sul no Centro Diocesano Arcebispo George Carey, sob a liderança do arcediago
+    Evilásio Tenório, com representantes de sete comunidades e a presença do bispo diocesano
+  status: confirmed
+  sources:
+  - source: darn2-arcediagado-sul-2009
+    quote: >-
+      Realizou-se, no Centro Diocesano Arcebispo George Carey, sob a liderança do seu Arcediago, Venerável Reverendo
+      Evilásio Tenório
+- type: other
+  date: '2012-02-26'
+  description: >-
+    Falecimento do bispo diocesano Robinson Cavalcanti, em Olinda (PE), comunicado em nota oficial da Diocese assinada
+    pelos bispos sufragâneos eleitos Evilásio Tenório e Flávio Adair e pelo presidente do Conselho Diocesano, Márcio
+    Simões
+  status: confirmed
+  sources:
+  - source: darn2-falecimento-2012
+    quote: ocorrido neste domingo 26/02/2012 por volta das 22h, na cidade de Olinda-PE
+  - source: darn2-falecimento-2012
+    quote: Oportunamente estaremos divulgando dia, horário e local do seu sepultamento

@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: sergio-henrique
+name: Sérgio Henrique
+biography: >-
+  Clérigo em processo de reconhecimento de ordem, no Ponto Missionário Anglicano Cristo Rei (Santo André-SP) em
+  novembro de 2010.
+sources:
+- source: darn2-santo-andre-2010
+  quote: os reverendos Wagner Cipriano e Sérgio Henrique ( PMA Cristo Rei )
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: clero em processo de reconhecimento de ordem
+  status: probable
+  sources:
+  - source: darn2-santo-andre-2010
+    quote: os reverendos Wagner Cipriano e Sérgio Henrique ( PMA Cristo Rei )
+  - source: darn2-jorge-torres-viagem-2010
+    quote: os novos clérigos em processo de reconhecimento de Ordem, reverendos Wagner e Sérgio
+  notes: >-
+    Local: Ponto Missionário Anglicano Cristo Rei, Santo André-SP. Nome citado só como "Sérgio Henrique" (sem sobrenome).

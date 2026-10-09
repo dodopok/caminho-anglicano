@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: paulo-quaresma
+name: Paulo Quaresma
+biography: >-
+  Ex-padre católico romano recebido pela Diocese do Recife em julho de 2010, no Ponto Missionário Anglicano da Transfiguração
+  (Mogi das Cruzes-SP), com intenção de requerer incardinação e reconhecimento de ordem.
+sources:
+- source: darn2-ex-padre-2010
+  quote: >-
+    foi recebido pela Diocese do Recife, onde pretende requerer Incardinação e posterior Reconhecimento de Ordem
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: member
+  start: 2010-07
+  status: confirmed
+  sources:
+  - source: darn2-ex-padre-2010
+    quote: >-
+      foi recebido pela Diocese do Recife, onde pretende requerer Incardinação e posterior Reconhecimento de Ordem
+  - source: darn2-santo-andre-2010
+    quote: Paulo Quaresma (também do PMA da Transfiguração )
+  notes: >-
+    Local: Ponto Missionário Anglicano da Transfiguração, Mogi das Cruzes-SP. Ex-padre católico romano e ex-reitor
+    de seminário da Diocese de Mogi das Cruzes; foi recebido em 15/07/2010, durante Visita Episcopal do bispo Robinson
+    Cavalcanti ao ponto missionário, depois de cinco anos fora do sacerdócio romano e de um tempo de estudo e discernimento.

@@ -311,9 +311,13 @@ affiliations:
     quote: Bispo Diocesano Eleito
   - source: darn1-crioulo12
     quote: O Bispo Diocesano Eleito, +Revmo. Miguel Uchoa
+  - source: darn2-carta-uchoa-2012
+    quote: Escrevo a vocês como seu 4º Bispo Diocesano Eleito
   notes: >-
     Eleito em sínodo diocesano extraordinário de 15/09/2012 (PAES), para suceder a Robinson Cavalcanti. Em 09/10/2012
     assina nota episcopal como "Bispo Diocesano Eleito". A sagração/posse é registrada em outra fonte (08/12/2012).
+    Carta episcopal de 18/09/2012 ao povo e ao clero da Diocese do Recife, na qual se apresenta como 4º bispo diocesano
+    eleito, sucessor de Robinson Cavalcanti.
 - jurisdiction: diocese-anglicana-recife
   role: diocesan_bishop
   start: '2012-12-08'
@@ -480,12 +484,15 @@ affiliations:
     quote: >-
       Ganhou Rev. Miguel Ângelo de Andrade Uchoa Cavalcanti , Reitor da Paróquia Anglicana Espírito Santo, em Jaboatão
       dos Guararapes (PE).
+  - source: darn2-haroldo-bispo-2012
+    quote: Reitor da Paróquia Anglicana Espírito Santo, em Jaboatão dos Guararapes (PE)
   notes: >-
     Local: Paróquia Anglicana do Espírito Santo, Jaboatão dos Guararapes. Reitor da Paróquia Anglicana do Espírito
     Santo (PAES) atestado em outubro de 2005 e em 21/10/2007; também é arcediago (Arcediagado Sul) em 2006. Local:
     Paróquia Anglicana do Espírito Santo, Jaboatão dos Guararapes-PE. Reitor e arcediago em junho de 2007. Local:
     Paróquia Anglicana Espírito Santo (PAES), Jaboatão dos Guararapes-PE. Reitor em 2009-07 (Arcediagado Sul), 2012-05-02
-    e 2012-09-19.
+    e 2012-09-19. Local: Paróquia Anglicana Espírito Santo, Jaboatão dos Guararapes-PE. Reitor da PAES em 19/09/2012,
+    na ocasião da eleição episcopal.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago
@@ -1290,3 +1297,23 @@ events:
       Anglicano da Ressurreição
   - source: darn1-ressurreicao11
     quote: a Paróquia Anglicana da Ressurreição ( Rev. Márcio Simões ), em Vitória de Santo Antão (PE)
+- type: other
+  date: '2009-07-31'
+  description: >-
+    O bispo diocesano Robinson Cavalcanti dá posse, em 31/07/2009, à Comissão Especial de Assessoria Institucional,
+    criada por recomendação do Encontro do Clero para encaminhar um status estável da Diocese do Recife na Comunhão
+    Anglicana; integram-na Miguel Uchoa (coordenador), Maurício Coelho, Maurício Amazonas (presidente do Conselho
+    Diocesano) e os arcediagos Luiz Souza, João Peixoto (secretário), Fred Souto, Evilásio Tenório e Carlos Alberto
+    Fernandes
+  status: confirmed
+  sources:
+  - source: darn2-comissao-2009
+    quote: >-
+      o Bispo Diocesano, Dom Robinson Cavalcanti, deu posse à Comissão Especial de Assessoria Institucional criada
+      por recomendação do recente Encontro do Clero, visando os encaminhamentos necessários a um status estável
+      para a Diocese do Recife na Comunhão Anglicana
+  - source: darn2-comissao-2009
+    quote: >-
+      Integram essa comissão os reverendos Miguel Uchoa (coordenador), Maurício Coelho, Maurício Amazonas (presidente
+      do Conselho Diocesano) e os Arcediagos Luiz Souza, João Peixoto (secretário), Fred Souto, Evilásio Tenório
+      e Carlos Alberto Fernandes

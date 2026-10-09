@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: wagner-araujo
+name: Wagner Araújo
+biography: >-
+  Clérigo em processo de incardinação para reconhecimento de ordem, no Ponto Missionário Anglicano São Judas (São
+  Paulo-SP) em fevereiro de 2011.
+sources:
+- source: darn2-sao-judas-2011
+  quote: os Reverendos Wagner Araújo e Francisco (em processo de Incardinação para Reconhecimento de Ordem)
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: clero em processo de reconhecimento de ordem
+  status: probable
+  sources:
+  - source: darn2-sao-judas-2011
+    quote: os Reverendos Wagner Araújo e Francisco (em processo de Incardinação para Reconhecimento de Ordem)
+  notes: >-
+    Local: Ponto Missionário Anglicano São Judas, São Paulo-SP. Nota de 24/02/2011. Pode ser o mesmo "Wagner" citado
+    em 2010 no Ponto Missionário Cristo Rei (Santo André); as notas dão sobrenomes diferentes (Cipriano e Araújo).
+events:
+- type: other
+  date: 2011-02
+  description: >-
+    A Diocese do Recife conta com novo Ponto Missionário Anglicano, o São Judas, na Zona Norte de São Paulo (Taipas),
+    com cultos aos domingos
+  status: confirmed
+  sources:
+  - source: darn2-sao-judas-2011
+    quote: O Ponto Missionário Anglicano São Judas está indo bem e fica na Zona Norte da capital paulista

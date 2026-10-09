@@ -14,6 +14,7 @@ aliases:
 - Flávio Adair
 - Flávio Adair T. Soares
 - Flávio Adair Torres Soares
+- Revmo. Flávio Adair
 biography: >-
   Natural de Passo Fundo (RS), radicado em João Pessoa; diácono 2005, presbítero 2006, bispo 2012; bispo missionário/auxiliar
   na Diocese do Recife e na IAB.
@@ -222,10 +223,14 @@ affiliations:
     quote: Sagração dos Bispos Sufragâneos
   - source: darn1-eleicao12
     quote: O Sínodo foi encerrado com uma oração e bênção final, pelo Bispo Flávio Adair.
+  - source: darn2-intercessao-2012
+    quote: os reverendíssimos Bispos Sufragâneos Flávio Adair e Evilásio Tenório
   notes: >-
     Local: 1ª Região Eclesiástica. Em 2012-02-26 aparece como bispo eleito da 1ª Região Eclesiástica; em 2012-05-12
     e 2012-08-18 assina/consta como bispo sufragâneo da mesma região. Local: Região Eclesiástica Missionária I.
-    Início = sagração em 17/03/2012; em 15/09/2012 conduziu a bênção final do sínodo extraordinário na PAES.
+    Início = sagração em 17/03/2012; em 15/09/2012 conduziu a bênção final do sínodo extraordinário na PAES. Bispo
+    sufragâneo (Região Eclesiástica 1, Olinda) em 28/04/2012; em 04/02/2012 já presidira, ainda como bispo-eleito,
+    a celebração eucarística de encerramento do retiro da Campanha da Consolação.
   start: '2012-03-17'
 - jurisdiction: iab
   role: bishop
@@ -338,6 +343,29 @@ affiliations:
     Local: Região Eclesiástica Missionária I. Mencionado como bispo-eleito em 24/07/2011 (primeira visita à Missão
     Anglicana Comunidade da Paz, Paulista-PE), em 17/12/2011 e em 27/12/2011 (como capelão do SAT-PB). Sagrado em
     17/03/2012. O site informa a eleição de dois bispos sufragâneos missionários em 2011, sem dar a data da eleição.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: bispo sufragâneo eleito (Região Eclesiástica 1)
+  status: confirmed
+  sources:
+  - source: darn2-bispo-eleito-regiao1-2011
+    quote: >-
+      o Bispo-Eleito Revmo. Flávio Adair, juntamente com o Venerável Arcediago Norte Rev. João Peixoto, esteve no
+      Ponto Missionário Anglicano Sarça Ardente
+  - source: darn2-edilson-2011
+    quote: assessorado pelo Bispo Sufragâneo Eleito , Revmo. Flávio Adair
+  notes: >-
+    Em 23/10/2011 faz visita à Região Eclesiástica 1 como bispo-eleito (prega no Ponto Missionário Sarça Ardente,
+    em Abreu e Lima-PE); em 30/10/2011 assessora, por delegação do bispo diocesano, a posse de um ministro encarregado
+    em João Pessoa.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: bispo sufragâneo eleito
+  status: confirmed
+  sources:
+  - source: darn2-falecimento-2012
+    quote: Revmo. Flávio Adair – Bispo Sufragâneo Eleito
+  notes: Assina a nota de falecimento do bispo diocesano em 27/02/2012, antes da sagração dos sufragâneos.
 events:
 - type: other
   date: '2011-06-04'
@@ -447,3 +475,15 @@ events:
     quote: 'Série: “O Povo Pergunta e os Episcopáveis Respondem”'
   - source: drp2-episcopaveis-2011
     quote: Rev. Evilásio Tenório | Rev. Flávio Adair | Rev. Maurício Amazonas
+- type: other
+  date: '2012-02-26'
+  description: >-
+    Falecimento do bispo diocesano Robinson Cavalcanti, em Olinda (PE), comunicado em nota oficial da Diocese assinada
+    pelos bispos sufragâneos eleitos Evilásio Tenório e Flávio Adair e pelo presidente do Conselho Diocesano, Márcio
+    Simões
+  status: confirmed
+  sources:
+  - source: darn2-falecimento-2012
+    quote: ocorrido neste domingo 26/02/2012 por volta das 22h, na cidade de Olinda-PE
+  - source: darn2-falecimento-2012
+    quote: Oportunamente estaremos divulgando dia, horário e local do seu sepultamento

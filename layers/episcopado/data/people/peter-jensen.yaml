@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: peter-jensen
+name: Peter Jensen
+affiliations:
+- jurisdiction: gafcon
+  role: other
+  role_description: secretário-geral do Conselho dos Primazes do GAFCON/FCA
+  status: probable
+  sources:
+  - source: darn2-fca-venables-2010
+    quote: >-
+      reconduzindo como Secretário Geral o Revmo. Peter Jensen da província (interna) de Sydney, na Austrália
+  notes: Reconduzido na reunião de abril de 2010.

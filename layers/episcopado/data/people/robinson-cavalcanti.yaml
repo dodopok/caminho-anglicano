@@ -236,6 +236,8 @@ ordinations:
     quote: >-
       Em 1997 foi eleito, sagrado e instituído Bispo da Diocese Anglicana do Recife, comparecendo à Conferência
       de Lambeth, de 1998
+  - source: darn2-conheca-bispo
+    quote: Em 1997 foi eleito, sagrado e instituído Bispo da Diocese Anglicana do Recife
   notes: >-
     Relato do próprio sagrado: eleito, depois homologado, sagrado com imposição de mãos de pelo menos três bispos;
     sagrantes não nomeados nestes textos. Foi bispo coadjutor por 'apenas quinze dias'. Confirma a pista dos posteres
@@ -252,7 +254,8 @@ ordinations:
     linha por Edmund Knox Sherrill e nomeia em nota os outros três bispos que impuseram as mãos: Glauco Soares de
     Lima, Almir dos Santos e Clóvis Erly Rodrigues. Não indica quem presidiu; outras fontes apontam o Primaz Glauco
     Soares de Lima como sagrante principal. Sagrado como bispo coadjutor; diocesano do Recife desde 19/10/1997.
-    A página não informa dia, local nem sagrantes.
+    A página não informa dia, local nem sagrantes. O perfil, sem data de redação, não dá o dia nem os sagrantes;
+    a data completa (05/10/1997) consta de outras fontes.
 affiliations:
 - jurisdiction: ieab
   role: member
@@ -267,10 +270,16 @@ affiliations:
     quote: >-
       filiou-se a então Igreja Episcopal do Brasil (IEB), Paróquia da Santíssima Trindade, pelas mãos do Bispo Dom
       Edmund Knox Sherril, em 21 de junho de 1976
+  - source: darn2-conheca-bispo
+    quote: >-
+      filiou-se a então Igreja Episcopal do Brasil (IEB), Paróquia da Santíssima Trindade, pelas mãos do Bispo Dom
+      Edmund Knox Sherril, em 21 de junho de 1976
   notes: >-
     Local: Paróquia da Santíssima Trindade, Recife. Filiado pelas mãos do bispo Sherrill; foi depois leitor, postulante,
     candidato, diácono e presbítero. Filiação recebida pelo bispo Edmund Knox Sherrill, na Paróquia da Santíssima
-    Trindade (Recife), então na Igreja Episcopal do Brasil (hoje IEAB).
+    Trindade (Recife), então na Igreja Episcopal do Brasil (hoje IEAB). Depois foi leitor, membro de junta paroquial,
+    postulante, candidato às Sagradas Ordens, diácono e presbítero, trabalhando nas paróquias da Santíssima Trindade,
+    Bom Samaritano, Emanuel e Redenção.
 - jurisdiction: ieab
   role: member
   diocese: ieab-dar
@@ -531,6 +540,9 @@ affiliations:
       26 de fevereiro de 2012, em Olinda, Pernambuco.
   - source: darn1-eleicao12
     quote: para suceder ao nosso saudoso Revmo. Bispo Dom Robinson Cavalcanti
+  - source: darn2-falecimento-2012
+    quote: >-
+      comunica o trágico falecimento do Reverendíssimo Bispo Diocesano, Dom Edward Robinson de Barros Cavalcanti
   notes: >-
     Bispo da Diocese Anglicana do Recife dissidente desde 2005: carta de 25/01/2005 proclamando a diocese autônoma
     (Anexo Q) e acolhida pelo Primaz do Cone Sul antes de 12/10/2005 (Anexo S). Início dado apenas como ano porque
@@ -538,7 +550,7 @@ affiliations:
     declarou suspenso o relacionamento da Diocese com a IEAB; em 23/09/2005 o Cone Sul (Venables) aceitou o pedido
     de supervisão primacial. Início pode ser datado de 25/01/2005 (ruptura) ou 23/09/2005 (acolhida pelo Cone Sul).
     Era bispo diocesano em exercício na data do falecimento (26/02/2012). Sucedido, após eleição em 15/09/2012,
-    por Miguel Uchôa.
+    por Miguel Uchôa. Bispo diocesano até o falecimento, em 26/02/2012.
 - jurisdiction: iacs
   role: diocesan_bishop
   diocese: diocese-anglicana-recife
@@ -963,6 +975,10 @@ events:
       26 de fevereiro de 2012, em Olinda, Pernambuco.
   - source: darn1-homenagem
     quote: (21/06/1944 - 26/02/2012)
+  - source: darn2-falecimento-2012
+    quote: ocorrido neste domingo 26/02/2012 por volta das 22h, na cidade de Olinda-PE
+  - source: darn2-falecimento-2012
+    quote: Oportunamente estaremos divulgando dia, horário e local do seu sepultamento
 - type: deposition
   date: '2005-06-17'
   description: >-
@@ -4245,3 +4261,183 @@ events:
     quote: Saudamos a todos os delegados clericais e laicos, bem como aos observadores
   - source: darn1-sinodo11b
     quote: Sermão do Culto de Encerramento do XXXI Sínodo Diocesano - 03/12/2011
+- type: other
+  date: 2007-07
+  description: >-
+    XXVII Sínodo da Diocese do Recife (julho de 2007) aprova por unanimidade a moção de filiar-se oficialmente à
+    Igreja Anglicana do Cone Sul como diocese extraterritorial, sujeita à sua autoridade, constituição e cânones,
+    e pede a aceitação; vota emendas canônicas conformes ao Cone Sul; termina com Eucaristia e ordenação de três
+    diáconos, com o bispo Peter Beckwith (Diocese de Springfield) como pregador e co-celebrante. Em agosto de 2009
+    a diocese se descreve como sob autoridade primacial do Cone Sul
+  status: confirmed
+  sources:
+  - source: darn2-sinodo-cone-sul-2007
+    quote: >-
+      we deliberate to join, officially, the Church of the Southern Cone, as an extra-territorial diocese, subject
+      to its Authority, Constitution and Canons
+  - source: darn2-sinodo-cone-sul-2007
+    quote: >-
+      The house reflected favorable on the last two years in which the diocese has been under the supervision of
+      Primate Gregory J. Venables
+  - source: darn2-cone-sul-nota-2009
+    quote: A Diocese do Recife, hoje sob autoridade primacial da Igreja Anglicana no Cone Sul da Am
+  - source: darn2-sinodo-cone-sul-2007
+    quote: >-
+      The XXVII Synod of the Diocese of Recife voted canonical amendments consonant with the Constitution and Canons
+      of the Southern Cone, concluded with a Eucaristic Service, with the ordination of three deacons. Bishop Peter
+      Beckwith of the companion diocese of Springfield (TEC) preached and co-celebrated.
+- type: other
+  date: '2009-05-25'
+  description: >-
+    O bispo Robinson Cavalcanti viaja aos Estados Unidos (25/05 a 27/06/2009) para visitar paróquias sob a supervisão
+    episcopal da Diocese do Recife, na Flórida e no Estado de Washington, com presença prevista na assembleia de
+    fundação da Igreja Anglicana na América do Norte (ACNA)
+  status: confirmed
+  sources:
+  - source: darn2-eua-ordenacoes-2009
+    quote: >-
+      visitará as Paróquias Christ , em High Springs, Florida; St. Charles , Poulsbo; St. Stephen , Oak Harbor;
+      Christ The King , Spokane e Trinity , Kennewick, Estado de Washington, sob jurisdição e Supervisão Episcopal
+      da Diocese do Recife
+  - source: darn2-eua-ordenacoes-2009
+    quote: >-
+      o Bispo Robinson estará presente à Assembleia de fundação da nova Província ortodoxa, a Igreja Anglicana na
+      América do Norte (ACNA), em Bedford, Texas
+- type: other
+  date: '2009-06-22'
+  description: >-
+    Assembleia de fundação da Igreja Anglicana na América do Norte (ACNA), em Bedford (Texas), em 22 de junho de
+    2009; o bispo do Recife, Robinson Cavalcanti, esteve entre os representantes de outras províncias que usaram
+    da palavra nos intervalos das sessões
+  status: confirmed
+  sources:
+  - source: darn2-acna-fundacao-2009
+    quote: >-
+      foi criada, na cidade de Bedford, Texas, esta segunda-feira, dia 22 de junho, a Igreja Anglicana na América
+      do Norte (ACNA)
+  - source: darn2-acna-fundacao-2009
+    quote: >-
+      usaram da palavra representantes de várias Províncias, inclusive o Bispo do Recife, Dom Robinson Cavalcanti
+- type: other
+  date: '2009-07-31'
+  description: >-
+    O bispo diocesano Robinson Cavalcanti dá posse, em 31/07/2009, à Comissão Especial de Assessoria Institucional,
+    criada por recomendação do Encontro do Clero para encaminhar um status estável da Diocese do Recife na Comunhão
+    Anglicana; integram-na Miguel Uchoa (coordenador), Maurício Coelho, Maurício Amazonas (presidente do Conselho
+    Diocesano) e os arcediagos Luiz Souza, João Peixoto (secretário), Fred Souto, Evilásio Tenório e Carlos Alberto
+    Fernandes
+  status: confirmed
+  sources:
+  - source: darn2-comissao-2009
+    quote: >-
+      o Bispo Diocesano, Dom Robinson Cavalcanti, deu posse à Comissão Especial de Assessoria Institucional criada
+      por recomendação do recente Encontro do Clero, visando os encaminhamentos necessários a um status estável
+      para a Diocese do Recife na Comunhão Anglicana
+  - source: darn2-comissao-2009
+    quote: >-
+      Integram essa comissão os reverendos Miguel Uchoa (coordenador), Maurício Coelho, Maurício Amazonas (presidente
+      do Conselho Diocesano) e os Arcediagos Luiz Souza, João Peixoto (secretário), Fred Souto, Evilásio Tenório
+      e Carlos Alberto Fernandes
+- type: other
+  date: 2009-10
+  description: >-
+    O bispo Robinson Cavalcanti decide que, de então em diante, só ordenará diáconos e presbíteros, e só instituirá
+    ministros locais e evangelistas, que sejam dizimistas, mediante documento endossado pelo pároco, ministro encarregado
+    ou arcediago
+  status: confirmed
+  sources:
+  - source: darn2-dizimistas-2009
+    quote: >-
+      o Bispo Robinson Cavalcanti decidiu que, de agora em diante, apenas ordenará Diáconos e Presbíteros, e instituirá
+      Ministros Locais e Evangelistas que sejam dizimistas
+- type: other
+  date: '2009-11-14'
+  description: >-
+    Reunião de clero do Arcediagado Sul no Centro Diocesano Arcebispo George Carey, sob a liderança do arcediago
+    Evilásio Tenório, com representantes de sete comunidades e a presença do bispo diocesano
+  status: confirmed
+  sources:
+  - source: darn2-arcediagado-sul-2009
+    quote: >-
+      Realizou-se, no Centro Diocesano Arcebispo George Carey, sob a liderança do seu Arcediago, Venerável Reverendo
+      Evilásio Tenório
+- type: other
+  date: 2009-12
+  description: >-
+    O XXIX Concílio da Diocese do Recife é convocado para os dias 03, 04 e 05 de dezembro de 2009, na Colônia Salesiana,
+    em Jaboatão dos Guararapes (PE)
+  status: probable
+  sources:
+  - source: darn2-concilio-xxix-2009
+    quote: >-
+      o XXIX Concílio da Diocese do Recife será realizado nos dias 03, 04 e 05 de dezembro de 2009, na Colônia Salesiana
+      em Jaboatão dos Guararapes-PE
+- type: other
+  date: '2010-04-11'
+  description: >-
+    A Diocese do Recife recebe o Ponto Missionário Anglicano São Mateus, em São Luís (Maranhão), de origem continuante,
+    em culto com Rito de Confirmação/Recepção presidido pelo bispo Robinson Cavalcanti
+  status: confirmed
+  sources:
+  - source: darn2-sao-mateus-2010
+    quote: >-
+      o Bispo Robinson Cavalcanti recebeu na jurisdição da Diocese do Recife o Ponto Missionário Anglicano São Mateus
+      , em São Luiz, Maranhão
+  - source: darn2-sao-mateus-2010
+    quote: O Ponto Missionário (originário do Movimento Continuante)
+- type: other
+  date: '2010-11-28'
+  description: >-
+    Culto inaugural do Ponto Missionário Anglicano Cristo Rei, em Santo André (SP), com o arcediago Sul-Sudeste,
+    o arcediago adjunto e os clérigos do ponto missionário; a mensagem episcopal do bispo Robinson Cavalcanti foi
+    lida na programação
+  status: confirmed
+  sources:
+  - source: darn2-santo-andre-2010
+    quote: >-
+      Aconteceu hoje (28/11), às 10h30, o Culto Inaugural do Ponto Missionário Anglicano Cristo Rei , em Santo André-SP
+  - source: darn2-santo-andre-2010
+    quote: >-
+      Estiveram presentes o Venerável Arcediago Sul-Sudeste, Rev. Carlos Alberto ( Paróquia Anglicana da Santíssima
+      Trindade ), o Arcediago Adjunto, Rev. Ivo Oliveira ( PMA da Transfiguração )
+- type: other
+  date: '2010-12-04'
+  description: >-
+    XXX Concílio Diocesano da Diocese do Recife: eleição de todos os cargos de liderança diocesana para 2011, resoluções
+    de caráter interno e internacional, Concílio Extraordinário para ajustes nos Cânones, e encerramento com Eucaristia,
+    ordenação presbiteral e diaconal e instituição de um evangelista, com cerca de cento e trinta delegados e observadores
+  status: confirmed
+  sources:
+  - source: darn2-concilio-xxx-2010
+    quote: >-
+      Depois de proceder a eleição de todos os cargos de liderança diocesana para o ano de 2011, e votar resoluções
+      de caráter interno e internacional em seu XXX Concílio Diocesano, a Diocese do Recife realizou, também, um
+      Concílio Extraordinário para ajustes e atualizações em seus Cânones.
+  - source: darn2-concilio-xxx-2010
+    quote: Ordenação Presbiteral e Diaconal, alem da Instituição de um Evangelista
+- type: other
+  date: null
+  description: >-
+    Como bispo diocesano, Robinson Cavalcanti ordenou 99 diáconos e 85 presbíteros, e, segundo o texto (redigido
+    após sete anos de episcopado), foram abertas 34 das 44 comunidades da Diocese, criados arcediagados, secretarias
+    e comissões, reformulados os cânones, criado o Diaconato Permanente e instituído o Ministério Local, com ministros
+    leigos e evangelistas
+  status: probable
+  sources:
+  - source: darn2-conheca-bispo
+    quote: Como Bispo Diocesano, ordenou 99 Diáconos e 85 Presbíteros
+  - source: darn2-conheca-bispo
+    quote: Nesses sete anos foram abertas 34 das presentes 44 comunidades da Diocese Anglicana do Recife
+- type: other
+  date: '2009-10-04'
+  description: >-
+    A Diocese do Recife convoca para 04/10/2009, na Paróquia Anglicana Emanuel (Olinda), culto de ação de graças
+    pelos 12 anos de episcopado de Dom Robinson Cavalcanti, tendo como pregador o presidente do Conselho Diocesano,
+    Maurício Amazonas
+  status: probable
+  sources:
+  - source: darn2-acao-gracas-2009
+    quote: Culto de Ação de Graças pelos 12 anos de Episcopado de Dom Robinson
+  - source: darn2-acao-gracas-2009
+    quote: >-
+      será celebrado no primeiro domingo de outubro, dia 04, às 18h30, na Paróquia Anglicana Emanuel, Olinda-PE
