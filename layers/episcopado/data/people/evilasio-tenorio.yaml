@@ -61,7 +61,7 @@ ordinations:
   notes: Ordenação na agenda do bispo diocesano publicada antes do evento.
 - order: episcopate
   date: '2012-03-17'
-  place: Paróquia Anglicana Espírito Santo (PAES), Piedade, Jaboatão dos Guararapes-PE
+  place: Paróquia Anglicana Espírito Santo (PAES), Piedade, Jaboatão dos Guararapes (PE)
   jurisdiction: iacs
   office: suffragan
   principal_consecrator: peter-beckwith
@@ -96,6 +96,18 @@ ordinations:
       África do Sul.
   - source: mu-blog-2012-07-22
     quote: o Revmo Evilásio Tenório, Bispo sufraganeo (auxiliar) da DR
+  - source: darn1-sagr12a
+    quote: Sagração dos Bispos Sufragâneos
+  - source: darn1-sagr12a
+    quote: 17/03/2012
+  - source: darn1-sagr12b
+    quote: >-
+      O Bispo Sagrante foi o Revmo. Dom Peter Beckwith (TEC – Estados Unidos) que presidiu a Cerimônia e proferiu
+      o Sermão; os Bispos Co-Sagrantes foram: Revmo. Dom Alexander Barroso (Igreja Anglicana Carismática – Venezuela)
+      e Dom Martin Morrinson (Igreja da Inglaterra na África do Sul)
+  - source: darn1-sagr12b
+    quote: >-
+      o Bispo Peter apresentou os novos bispos: Evilásio Tenório da Silva Júnior e Flávio Adair Torres Soares
   notes: >-
     Sagração conjunta com Flávio Adair Torres Soares (bispos sufragâneos eleitos em 2011, sagrados após a morte
     de Robinson Cavalcanti em fev/2012). Confirma, com fonte primária, a informação do pôster da IAB ('por Peter
@@ -103,7 +115,12 @@ ordinations:
     velório, que não trata da sagração). Mesmo dia da sagração de Flávio Adair (17/03/2012, site da IAB) — provavelmente
     cerimônia conjunta. O pôster da IAB também dá Beckwith (2012). 'Martin Marrison' (grafia da fonte) provavelmente
     = Martin Morrison, bispo da Church of England in South Africa (CESA) — identificar. Em julho/2012 Uchôa já o
-    chama 'Bispo sufraganeo (auxiliar)'.
+    chama 'Bispo sufraganeo (auxiliar)'. Sagração dos dois bispos sufragâneos da Diocese do Recife na PAES. Bispos
+    visitantes presentes, segundo a lista do site: Antônio José da Costa Raposo (Igreja Apostólica Episcopal, Portugal),
+    Antônio Pessoa Leite (Igreja Anglicana Missionária do Redentor, Recife), Francisco Buzzo Rodrigues e Josep Rosselo
+    (Igreja Anglicana Reformada, São Paulo). Alexander Barroso é identificado como da Igreja Anglicana Carismática
+    (Venezuela) e Martin Morrison como da Igreja da Inglaterra na África do Sul. Evilásio Tenório da Silva Júnior
+    foi bispo sufragâneo da Região Eclesiástica 2.
 affiliations:
 - jurisdiction: ieab
   role: other
@@ -213,6 +230,27 @@ affiliations:
     - source: costa2021
       quote: o bispo auxiliar, Evilásio Tenório, substituiu interinamente Robinson no comando.
       page: '252'
+- jurisdiction: diocese-anglicana-recife
+  role: suffragan_bishop
+  status: confirmed
+  sources:
+  - source: darl1-6964
+    quote: Bispo-Eleito – 2ª. Região Eclesiástica
+  - source: darl1-5168
+    quote: +Evilásio Tenório Bispo Sufragâneo Região Eclesiástica 2
+  - source: darl1-5324
+    quote: Revmo. Bispo Evilásio Tenório – Bispo Sufragâneo da Região Eclesiástica 2
+  - source: darn1-aniv1210
+    quote: 02 – Revmo. Dom Evilásio Tenório da Silva Júnior – Bispo Sufragâneo da Região Eclesiástica 2
+  - source: darn1-eleicao12
+    quote: O Bispo Sufragâneo da Região Eclesiástica 2, Dom Evilásio Tenório
+  - source: darn1-sagr12a
+    quote: Sagração dos Bispos Sufragâneos
+  notes: >-
+    Local: 2ª Região Eclesiástica. Em 2012-02-26 aparece como bispo eleito da 2ª Região Eclesiástica; em 2012-05-12
+    e 2012-08-18 assina/consta como bispo sufragâneo da mesma região. Local: Região Eclesiástica 2. Início = sagração
+    em 17/03/2012. Na eleição diocesana de 15/09/2012 ele também concorreu ao cargo de bispo diocesano.
+  start: '2012-03-17'
 - jurisdiction: iab
   role: bishop
   diocese: iab-diocese-recife
@@ -330,19 +368,6 @@ affiliations:
       sendo Pároco de duas comunidades (Paróquia Anglicana do Mediador e Catedral Anglicana do Bom Samaritano)
   notes: 'Local: Paróquia Anglicana do Mediador e Catedral Anglicana do Bom Samaritano. Em maio de 2011.'
 - jurisdiction: diocese-anglicana-recife
-  role: suffragan_bishop
-  status: confirmed
-  sources:
-  - source: darl1-6964
-    quote: Bispo-Eleito – 2ª. Região Eclesiástica
-  - source: darl1-5168
-    quote: +Evilásio Tenório Bispo Sufragâneo Região Eclesiástica 2
-  - source: darl1-5324
-    quote: Revmo. Bispo Evilásio Tenório – Bispo Sufragâneo da Região Eclesiástica 2
-  notes: >-
-    Local: 2ª Região Eclesiástica. Em 2012-02-26 aparece como bispo eleito da 2ª Região Eclesiástica; em 2012-05-12
-    e 2012-08-18 assina/consta como bispo sufragâneo da mesma região.
-- jurisdiction: diocese-anglicana-recife
   role: other
   role_description: deão pró-têmpore
   status: confirmed
@@ -353,6 +378,19 @@ affiliations:
       Bom Samaritano ; Pároco da Paróquia Anglicana do Mediador , em Recife-PE, Arcediago Centro da Diocese e Reitor
       do Seminário Anglicano Teológico (SAT-PE).
   notes: 'Local: Catedral Anglicana do Bom Samaritano, Recife. Em 2011-03-18.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: bispo eleito (sufragâneo)
+  status: confirmed
+  sources:
+  - source: darn1-aniv1111
+    quote: 02 – Revmo. Evilásio Tenório da Silva Júnior – Bispo-Eleito – Região Eclesiástica 2
+  - source: darn1-dez11c
+    quote: O Revmo. Evilásio Tenório , Bispo-Eleito da 2ª. Região Eclesiástica
+  notes: >-
+    Local: Região Eclesiástica 2. Citado como bispo-eleito da 2ª Região Eclesiástica na barra lateral capturada
+    em 01/11/2011 e em reportagem de dezembro de 2011 (visita à Paróquia Anglicana do Redentor, Brasilit, Recife).
+    Sagrado em 17/03/2012.
 events:
 - type: other
   date: '2012-09-15'
@@ -481,3 +519,24 @@ events:
     quote: >-
       Ganhou Rev. Miguel Ângelo de Andrade Uchoa Cavalcanti , Reitor da Paróquia Anglicana Espírito Santo, em Jaboatão
       dos Guararapes (PE).
+- type: other
+  date: '2012-09-15'
+  description: >-
+    A Diocese do Recife realiza sínodo diocesano extraordinário (15/09/2012, PAES) para eleger o bispo diocesano
+    sucessor de Robinson Cavalcanti; votam 52 delegados clericais e 58 leigos e é eleito o Rev. Miguel Uchôa, 4º
+    bispo diocesano. O bispo sufragâneo Evilásio Tenório também concorreu.
+  status: confirmed
+  sources:
+  - source: darn1-eleicao12
+    quote: >-
+      Neste sábado (15/09/2012), nas dependências da Paróquia Anglicana Espírito Santo , aconteceu o Sínodo Diocesano
+      Extraordinário para eleição do Bispo Diocesano
+  - source: darn1-eleicao12
+    quote: >-
+      O Bispo Sufragâneo da Região Eclesiástica 2, Dom Evilásio Tenório que, de forma canônica e democrática, também
+      pleiteou o cargo
+  - source: darn1-eleicao12
+    quote: Destacamos ainda, as mensagens recebidas do Arcebispo Bob Duncan (ACNA), e do Bispo Tito (Cone Sul)
+  - source: darn1-eleicao12
+    quote: >-
+      o Revmo. Bispo Bill Atwood, e o Dr. Jeffrey Garrety , que vistaram todas as listas de assinatura dos eleitores

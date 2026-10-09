@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: william-murdoch
+name: William Murdoch
+events:
+- type: other
+  date: 2010-06
+  description: >-
+    Em Amesbury (Massachusetts) é inaugurada a Diocese Anglicana da Nova Inglaterra (ACNA) e empossado seu primeiro
+    bispo, William (Bill) Murdoch, com pregação de John Guernsey; no mesmo dia o Colégio dos Bispos da ACNA cria
+    duas novas dioceses (Great Lakes e South). Durante a reunião do Colégio, Robinson Cavalcanti tem almoço de trabalho
+    com o arcebispo primaz Robert Duncan.
+  status: probable
+  sources:
+  - source: darn1-novainglaterra
+    quote: >-
+      Tratava-se da inauguração da Diocese Anglicana da Nova Inglaterra , em Amesbury, Massachussets, e a instalação
+      e posse do seu primeiro Bispo, o Revmo. William (Bill) Leo Murdoch, tendo como pregador o Revmo. John Guernsey
+  - source: darn1-novainglaterra
+    quote: >-
+      Durante o dia havia se reunido o Colégio dos Bispos da ACNA que criou duas novas Dioceses: Great lakes – Bispo
+      Robert Aemes e South – Bispo Folley Beach
+  - source: darn1-novainglaterra
+    quote: teve, a convite, um almoço privado de trabalho com o Arcebispo Primaz Robert Duncan
