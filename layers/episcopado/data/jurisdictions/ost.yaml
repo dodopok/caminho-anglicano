@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ost
+acronym: OST
+name: Ordem de São Tiago
+type: religious_order
+country: BR
+founded:
+  date: '1987-01-21'
+  sources:
+  - source: costa2021
+    quote: >-
+      Foi fundada em 21 de janeiro de 1987, na cidade de Araranguá, com a presença de sete clérigos: Almir dos Santos,
+      Elias Vergara, Flávio Irala, Francisco Machado, Jessé Ramos, Luiz Caetano e Ramacés Hartwig.
+    page: '276'
+  - source: costa2021
+    quote: >-
+      A Ordem de São Tiago de Jerusalém surgiu a partir de um grupo de seminaristas e clérigos que se reuniram para
+      compartilhar questões relativas à Igreja.
+    page: '276'
+  - source: f8ira-wp-pt
+    quote: Foi um dos fundadores da Ordem de São Tiago (OST)
+description: >-
+  Ordem religiosa de carisma anglicano e brasileiro, fundada em 21/01/1987 em Araranguá por sete clérigos da IEAB,
+  entre eles Flávio Irala.
+sources:
+- source: costa2021
+  quote: >-
+    Foi fundada em 21 de janeiro de 1987, na cidade de Araranguá, com a presença de sete clérigos: Almir dos Santos,
+    Elias Vergara, Flávio Irala, Francisco Machado, Jessé Ramos, Luiz Caetano e Ramacés Hartwig.
+  page: '276'
+- source: costa2021
+  quote: >-
+    A Ordem de São Tiago de Jerusalém surgiu a partir de um grupo de seminaristas e clérigos que se reuniram para
+    compartilhar questões relativas à Igreja.
+  page: '276'
+- source: f8ira-wp-pt
+  quote: Foi um dos fundadores da Ordem de São Tiago (OST)
+relations:
+- type: part_of
+  target: ieab
+  date: '1987-01-21'
+  status: probable
+  sources:
+  - source: costa2021
+    quote: É a única Ordem fundada na IEAB que possui um karisma essencialmente anglicano e brasileiro.
+    page: '276'
+  - source: costa2021
+    quote: >-
+      Foi fundada em 21 de janeiro de 1987, na cidade de Araranguá, com a presença de sete clérigos: Almir dos Santos,
+      Elias Vergara, Flávio Irala, Francisco Machado, Jessé Ramos, Luiz Caetano e Ramacés Hartwig.
+    page: '276'
+  notes: >-
+    Ordem religiosa de carisma anglicano e brasileiro, surgida de um grupo de seminaristas e clérigos da IEAB; a
+    tese a chama 'Ordem de São Tiago de Jerusalém (OST)'.
