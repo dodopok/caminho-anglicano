@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["R573HPN65Q.br.com.caminhoanglicano.episcopado"],
+        "components": [
+          { "/": "/episcopado", "comment": "Rede do Episcopado Histórico: abre no app quando instalado" },
+          { "/": "/episcopado/*", "comment": "Fichas, sucessão, caminho, árvore, fontes, panorama" }
+        ]
+      }
+    ]
+  }
+}
