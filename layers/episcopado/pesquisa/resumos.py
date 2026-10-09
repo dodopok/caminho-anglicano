@@ -104,11 +104,15 @@ def linhas_fatos(kind, d, N):
     for s in d.get('sources') or []:
         out.append(f"- citado no resumo atual: {codigo(s)} [{s['source']}] \"{s.get('quote') or ''}\"")
     if kind == 'person':
-        presididas = sorted([x for x in ENTRADAS.get(d['id'], []) if x[0] == 'ordenou'],
-                            key=lambda x: str(x[2].get('date') or '9999'))
-        for _, id_, o in presididas:
-            out.append(f"- {o['_papel']} de {N.get(id_, id_)}: {ORDEM[o['order']]} {o.get('date') or 's/d'}"
-                       f" [{o['status']}] | {fmt_src(o)}")
+        # Quem a pessoa ordenou ou sagrou já aparece listado na ficha: o resumo só precisa de uma síntese
+        # (quantos, e no máximo os bispos mais marcantes). Essas linhas não contam para o tamanho do resumo.
+        presididas = [x for x in ENTRADAS.get(d['id'], []) if x[0] == 'ordenou']
+        if presididas:
+            sag = sorted([x for x in presididas if x[2]['order'] == 'episcopate'], key=lambda x: str(x[2].get('date') or '9999'))
+            out.append(f"- (síntese, já listado na ficha) participou de {len(presididas)} ordenação(ões)/sagração(ões), "
+                       f"{len(sag)} episcopal(is)")
+            for _, id_, o in sag[:3]:
+                out.append(f"- (síntese) {o['_papel']} de {N.get(id_, id_)} em {o.get('date') or 's/d'} | {fmt_src(o)}")
         for campo in ('birth', 'death'):
             if d.get(campo):
                 out.append(f"- {campo}: {d[campo].get('date')} | {fmt_src(d[campo])}")
@@ -163,7 +167,7 @@ def dossie(args):
     for kind, id_ in dict.fromkeys(ids):
         _, d = carregar(kind, id_)
         fatos = linhas_fatos(kind, d, N)
-        if len(fatos) < args.minimo:
+        if len([f for f in fatos if not f.startswith('- (síntese')]) < args.minimo:
             continue
         fichas.append((kind, id_, d, fatos))
     saida = Path(args.saida)
@@ -172,7 +176,7 @@ def dossie(args):
     lotes, atual_, tam = [], [], 0
     for kind, id_, d, fatos in fichas:
         bloco = (f"## {id_} ({'pessoa' if kind == 'person' else 'jurisdição'}): {d['name']}\n"
-                 f"Fatos: {len(fatos)} — tamanho do resumo: {tamanho(len(fatos))}\n"
+                 f"Fatos: {len(fatos)} — tamanho do resumo: {tamanho(len([f for f in fatos if not f.startswith('- (síntese')]))}\n"
                  f"Resumo atual: {d.get(CAMPO[kind]) or '(nenhum)'}\n" + '\n'.join(fatos) + '\n')
         if atual_ and (tam + len(bloco) > args.chars or len(atual_) >= args.lote):
             lotes.append(atual_); atual_, tam = [], 0
