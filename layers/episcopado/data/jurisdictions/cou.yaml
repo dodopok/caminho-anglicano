@@ -1,52 +1,43 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
-id: pear
-acronym: PEAR
-name: Igreja Anglicana de Ruanda
+id: cou
+acronym: COU
+name: Igreja de Uganda (Church of Uganda)
 type: province
 tradition: anglican
-country: RW
-description: >-
-  Província anglicana de Ruanda, cujo arcebispo Laurent Mbanda preside o GAFCON (desde 2023) e o Global Anglican
-  Council (desde 2026).
+country: UG
+description: Província anglicana de Uganda.
 sources:
 - source: gace-gac-page
-  quote: >-
-    The Most Revd Dr Laurent Mbanda Archbishop of the Anglican Church of Rwanda, Chairman of Gafcon since 2023
+  quote: Primate of the Church of Uganda
 relations:
 - type: member_of
   target: gac
-  date: '2025-10-16'
+  date: 2026-03
   led_by:
-  - laurent-mbanda
+  - stephen-kaziimba
   status: confirmed
   sources:
   - source: gace-gac-page
-    quote: Archbishop of the Anglican Church of Rwanda, Chairman of Gafcon since 2023
+    quote: Primate of the Church of Uganda
   - source: gacm-tlc-2026-03-27-who-leads
     quote: >-
       The council’s primates are Archbishops Laurent Mbanda of Rwanda (Chair), Miguel Uchoa of the Anglican Church
       of Brazil (Vice Chair), Henry Ndukuba of Nigeria, Stephen Kaziimba of Uganda, Enrique Lago of Chile, Presiding
       Bishop Siegfried Ngubane of the Reformed Evangelical Anglican Church of South Africa, and Bishop Julian Dobbs,
       acting primate of the Anglican Church in North America.
-  - source: gacm-tlc-2025-10-27-inside
+  - source: gace-ai-kaziimba-abuja
     quote: >-
-      In addition to Donison, Mbanda, Jensen, and Akinola, the meeting included three other members of the GAFCON
-      Primates’ Council: Archbishop Henry Ndukuba of Nigeria and the leaders of two churches largely formed and
-      authenticated by GAFCON: Archbishop Miguel Ochoa Cavalcanti of the Anglican Church of Brazil, and Archbishop
-      Steve Wood of the ACNA.
-  - source: gacm-tlc-2025-10-27-inside
-    quote: >-
-      Only the primates of Rwanda , Nigeria , and the ACNA , all of whom helped to draft it, have made statements.
+      “The GAFCON Primates Council was transitioned into the newly established Global Anglican Council, which will
+      bring together primates, advisors, and guarantors to provide the oversight and the recognition of provinces
+      and dioceses within the emerging Global Anglican Communion,” he said.
   notes: >-
     Província cujo primaz integra o Global Anglican Council eleito em Abuja (G26, 3–6/03/2026), o que exige "desengajamento
-    por princípio" dos Instrumentos da Comunhão de Cantuária. Mbanda preside o Conselho. O primaz participou da
-    consulta de Sydney que redigiu a declaração "The Future Has Arrived" (16/10/2025), aprovada pelo Conselho de
-    Primazes do GAFCON.
+    por princípio" dos Instrumentos da Comunhão de Cantuária.
 - type: member_of
   target: gafcon
-  date: null
+  date: '2008'
   led_by:
-  - laurent-mbanda
+  - stephen-kaziimba
   status: confirmed
   sources:
   - source: gacm-tlc-2025-10-17-analysis
@@ -60,6 +51,15 @@ relations:
       Province of the Indian Ocean Anglican Church of Kenya Anglican Church of Chile Church of the Province of South
       East Asia Church of Uganda Episcopal Church of Sudan Episcopal/Anglican Province of Alexandria Church of the
       Province of Myanmar Gafcon Jurisdictions Anglican Church of North America REACH-SA Anglican Church of Brazil
+  - source: gacm-ai-2025-10-04-uganda
+    quote: >-
+      As a founding member of Gafcon, the Church of Uganda considers this appointment to further deepen the tear
+      in the fabric of the Anglican Communion
+  - source: gacm-tlc-2026-07-16-uganda-gsfa
+    quote: >-
+      GAFCON is also another place where we belong for the purpose of promoting the gospel, and we will continue
+      working together,” Kaziimba told TLC.
   notes: >-
     Província representada no Conselho de Primazes do GAFCON em out/2025 (pertença ao movimento GAFCON, anterior
-    e distinta da adesão à GAC). A data de início da pertença não consta das fontes.
+    e distinta da adesão à GAC). A data de início da pertença não consta das fontes. A Igreja de Uganda se declara
+    membro fundador do GAFCON (2008).

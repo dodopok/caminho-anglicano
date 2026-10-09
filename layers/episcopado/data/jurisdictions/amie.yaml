@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: amie
+acronym: AMiE
+name: Anglican Mission in England
+type: diocese
+tradition: anglican
+country: GB
+description: Diocese criada pelo GAFCON na Inglaterra.
+sources:
+- source: gacm-gafcon-2026-03-20-amie
+  quote: AMiE, a Gafcon-created diocese
+relations:
+- type: recognized_by
+  target: gafcon
+  date: null
+  status: confirmed
+  sources:
+  - source: gacm-gafcon-2026-03-20-amie
+    quote: >-
+      AMiE, a Gafcon-created diocese, has gathered leaders under the theme “Gospel on the Move: Together on Mission.”

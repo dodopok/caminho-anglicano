@@ -155,7 +155,28 @@ relations:
   - source: costa2021
     quote: ela não é reconhecida pela Sé da Cantuária como uma Província da Comunhão Anglicana.
     page: '253'
-  notes: Província da GAFCON – Fellowship of Confessing Anglicans (FCA).
+  - source: iab-ao-clero-2025
+    quote: >-
+      como parte do conselho de primazes e como Vice-Presidente do GAFCON, participei de uma consulta a pedido do
+      Presidente e Arcebispo de Ruanda Laurent Mbanda.
+  - source: gacm-tlc-2025-10-17-analysis
+    quote: >-
+      Three of the nine other churches represented on GAFCON’s Primates’ Council are not recognized by the Anglican
+      Communion Office and have largely been formed under GAFCON’s auspices (the Anglican Church of Brazil, the
+      Reformed Evangelical Anglican Church of South Africa, and the Anglican Church in North America). But such
+      a total severing of connections with Canterbury and the Instruments of Communion would be a new development
+      for the six other provinces represented on the council (Alexandria, Chile, Congo, Kenya, Myanmar, and South
+      Sudan).
+  - source: gacm-ai-2026-01-30-curiouser
+    quote: >-
+      Gafcon Primates Council Covenanted GSFA Provinces + Gafcon Primates Covenanted GSFA Provinces Anglican Church
+      of Rwanda Episcopal Church of South Sudan Church of Bangladesh Church of Nigeria Anglican Church of the Congo
+      Province of the Indian Ocean Anglican Church of Kenya Anglican Church of Chile Church of the Province of South
+      East Asia Church of Uganda Episcopal Church of Sudan Episcopal/Anglican Province of Alexandria Church of the
+      Province of Myanmar Gafcon Jurisdictions Anglican Church of North America REACH-SA Anglican Church of Brazil
+  notes: >-
+    Província da GAFCON – Fellowship of Confessing Anglicans (FCA). Província autenticada pelo GAFCON em 2018; Uchôa
+    é vice-presidente do GAFCON desde 21/04/2023.
   discrepancies:
   - field: date
     value: 2018-04
@@ -169,6 +190,26 @@ relations:
     - source: costa2021
       quote: ela não é reconhecida pela Sé da Cantuária como uma Província da Comunhão Anglicana.
       page: '253'
+    - source: iab-ao-clero-2025
+      quote: >-
+        como parte do conselho de primazes e como Vice-Presidente do GAFCON, participei de uma consulta a pedido
+        do Presidente e Arcebispo de Ruanda Laurent Mbanda.
+    - source: gacm-tlc-2025-10-17-analysis
+      quote: >-
+        Three of the nine other churches represented on GAFCON’s Primates’ Council are not recognized by the Anglican
+        Communion Office and have largely been formed under GAFCON’s auspices (the Anglican Church of Brazil, the
+        Reformed Evangelical Anglican Church of South Africa, and the Anglican Church in North America). But such
+        a total severing of connections with Canterbury and the Instruments of Communion would be a new development
+        for the six other provinces represented on the council (Alexandria, Chile, Congo, Kenya, Myanmar, and South
+        Sudan).
+    - source: gacm-ai-2026-01-30-curiouser
+      quote: >-
+        Gafcon Primates Council Covenanted GSFA Provinces + Gafcon Primates Covenanted GSFA Provinces Anglican Church
+        of Rwanda Episcopal Church of South Sudan Church of Bangladesh Church of Nigeria Anglican Church of the
+        Congo Province of the Indian Ocean Anglican Church of Kenya Anglican Church of Chile Church of the Province
+        of South East Asia Church of Uganda Episcopal Church of Sudan Episcopal/Anglican Province of Alexandria
+        Church of the Province of Myanmar Gafcon Jurisdictions Anglican Church of North America REACH-SA Anglican
+        Church of Brazil
 - type: recognized_by
   target: gafcon
   date: 2018-04
@@ -289,7 +330,78 @@ relations:
     quote: Archbishop of the Anglican Church in Brazil, Vice Chairman
   - source: gace-ai-council-list
     quote: The Most Rev. Miguel Uchoa, Anglican Church in Brazil, who serves as Vice Chair
+  - source: gacm-tlc-2026-03-27-who-leads
+    quote: >-
+      The council’s primates are Archbishops Laurent Mbanda of Rwanda (Chair), Miguel Uchoa of the Anglican Church
+      of Brazil (Vice Chair), Henry Ndukuba of Nigeria, Stephen Kaziimba of Uganda, Enrique Lago of Chile, Presiding
+      Bishop Siegfried Ngubane of the Reformed Evangelical Anglican Church of South Africa, and Bishop Julian Dobbs,
+      acting primate of the Anglican Church in North America.
+  - source: gacm-tlc-2025-10-27-inside
+    quote: >-
+      In addition to Donison, Mbanda, Jensen, and Akinola, the meeting included three other members of the GAFCON
+      Primates’ Council: Archbishop Henry Ndukuba of Nigeria and the leaders of two churches largely formed and
+      authenticated by GAFCON: Archbishop Miguel Ochoa Cavalcanti of the Anglican Church of Brazil, and Archbishop
+      Steve Wood of the ACNA.
+  - source: iab-ao-clero-2025
+    quote: >-
+      Historicamente, e sob a graça de Deus em 16 de outubro de 2025, dia dos Mártires Hugo Latimer e Nicholas Ridley,
+      assinamos essa decisão.
+  - source: iab-ao-clero-2025
+    quote: >-
+      Nunca deixamos a Comunhão Anglicana porque somos a herança legitima de suas raízes e a continuidade do que
+      ela sempre creu, declarou e ensinou. Na realidade… Nós somos A COMUNHÃO ANGLICANA GLOBAL
   notes: >-
     Nenhum documento de adesão formal da IAB à GAC foi encontrado. A IAB era província do GAFCON desde 2018 e seu
     primaz tem assento no Global Anglican Council como vice-presidente desde a criação do conselho (5/03/2026);
-    a G27 (abr/2027) será sediada pela IAB. Data adotada = criação do Global Anglican Council.
+    a G27 (abr/2027) será sediada pela IAB. Data adotada = criação do Global Anglican Council. Província cujo primaz
+    integra o Global Anglican Council eleito em Abuja (G26, 3–6/03/2026), o que exige "desengajamento por princípio"
+    dos Instrumentos da Comunhão de Cantuária. Uchôa é vice-presidente do Conselho. O primaz participou da consulta
+    de Sydney que redigiu a declaração "The Future Has Arrived" (16/10/2025), aprovada pelo Conselho de Primazes
+    do GAFCON.
+  discrepancies:
+  - field: date
+    value: '2025-10-16'
+    sources:
+    - source: gace-gac-page
+      quote: Archbishop of the Anglican Church in Brazil, Vice Chairman
+    - source: gacm-tlc-2026-03-27-who-leads
+      quote: >-
+        The council’s primates are Archbishops Laurent Mbanda of Rwanda (Chair), Miguel Uchoa of the Anglican Church
+        of Brazil (Vice Chair), Henry Ndukuba of Nigeria, Stephen Kaziimba of Uganda, Enrique Lago of Chile, Presiding
+        Bishop Siegfried Ngubane of the Reformed Evangelical Anglican Church of South Africa, and Bishop Julian
+        Dobbs, acting primate of the Anglican Church in North America.
+    - source: gacm-tlc-2025-10-27-inside
+      quote: >-
+        In addition to Donison, Mbanda, Jensen, and Akinola, the meeting included three other members of the GAFCON
+        Primates’ Council: Archbishop Henry Ndukuba of Nigeria and the leaders of two churches largely formed and
+        authenticated by GAFCON: Archbishop Miguel Ochoa Cavalcanti of the Anglican Church of Brazil, and Archbishop
+        Steve Wood of the ACNA.
+    - source: iab-ao-clero-2025
+      quote: >-
+        Historicamente, e sob a graça de Deus em 16 de outubro de 2025, dia dos Mártires Hugo Latimer e Nicholas
+        Ridley, assinamos essa decisão.
+    - source: iab-ao-clero-2025
+      quote: >-
+        Nunca deixamos a Comunhão Anglicana porque somos a herança legitima de suas raízes e a continuidade do que
+        ela sempre creu, declarou e ensinou. Na realidade… Nós somos A COMUNHÃO ANGLICANA GLOBAL
+- type: broke_communion_with
+  target: church-of-england
+  date: 2023-02
+  led_by:
+  - miguel-uchoa
+  status: confirmed
+  sources:
+  - source: iab-ao-clero-2025
+    quote: >-
+      Em fevereiro de 2023, após as decisões do Sínodo da Igreja da Inglaterra aprovar as mudanças na doutrina do
+      casamento fugindo dos princípios bíblicos, emitimos juntos com o GSFA uma declaração na 4ª feira de cinzas
+      que desconsiderava os instrumentos de comunhão e o arcebispo de Cantuária como líder da Comunhão. A partir
+      de então, consideramos nossos laços com a Igreja da Inglaterra apenas históricos.
+  - source: gacm-iab-2025-10-03-mullally
+    quote: >-
+      Declaramos, em fevereiro de 2023, em comunhão com as províncias filiadas ao GAFCON e ao GSFA (Global South
+      Fellowship of Anglican Churches), que não reconhecemos mais a Sé de Cantuária nem o Arcebispo de Cantuária
+      como símbolo de unidade da nossa fé.
+  notes: >-
+    Declaração de Quarta-feira de Cinzas de 2023 (com o GSFA). A IAB nunca foi província da Comunhão Anglicana de
+    Cantuária: "não mantemos qualquer vínculo institucional com a Sé de Cantuária".

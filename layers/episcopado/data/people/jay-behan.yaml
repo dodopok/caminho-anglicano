@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jay-behan
+name: Jay Behan
+biography: >-
+  Primeiro bispo da Church of Confessing Anglicans Aotearoa/New Zealand; conselheiro do Global Anglican Council.
+sources:
+- source: gace-gac-page
+  quote: Bishop Jay Behan is the first bishop of the CCAANZ.
+affiliations:
+- jurisdiction: gac
+  role: other
+  role_description: conselheiro do Global Anglican Council
+  start: 2026-03
+  status: confirmed
+  sources:
+  - source: gacm-tlc-2026-03-27-who-leads
+    quote: >-
+      Its regional advisers all lead “extra-provincial or missionary districts connected to the GAFCON movement.”
+      They are Archbishop Kanishka Raffel of Sydney (a diocesan bishop in the Anglican Church of Australia), and
+      Bishops Andy Lines of the Anglican Network in Europe, Jay Behan of the Church of Confessing Anglicans in Aotearoa
+      New Zealand, Glenn Davies of the Diocese of the Southern Cross (which serves parishes that have broken away
+      from the Anglican Church of Australia), and Yassir Eric of EKKIOS, a missionary movement forming congregations
+      in predominantly Muslim regions.
+- jurisdiction: ccaanz
+  role: other
+  role_description: bispo presidente
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: Bishop Jay Behan is the first bishop of the CCAANZ.
+  notes: Primeiro bispo da diocese.

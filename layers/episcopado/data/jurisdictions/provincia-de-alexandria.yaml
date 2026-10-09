@@ -1,33 +1,23 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
-id: anglican-church-of-kenya
-acronym: ACK
-name: Igreja Anglicana do Quênia
-aliases:
-- Anglican Church of Kenya
-- anglican-church-of-kenya
+id: provincia-de-alexandria
+acronym: Província de Alexandria
+name: Província Episcopal/Anglicana de Alexandria (Episcopal/Anglican Province of Alexandria)
 type: province
 tradition: anglican
-country: KE
-founded:
-  date: '1970'
-  sources:
-  - source: fund-wp-en-ack
-    quote: >-
-      The province was divided into two, with Festo Olang' being the first African archbishop of the new province
-      of Kenya in 1970.
-website: https://www.ackenya.org/
-description: Província do Quênia criada em 1970 por divisão da Província da África Oriental (formada em 1960).
+country: EG
+description: Província da Comunhão Anglicana.
 sources:
-- source: fund-wp-en-ack
+- source: gacm-tlc-2026-03-27-who-leads
   quote: >-
-    The province was divided into two, with Festo Olang' being the first African archbishop of the new province
-    of Kenya in 1970.
+    They are archbishops Samy Shehata of Alexandria, Titre Ande of Congo, Jackson Ole Sapit of Kenya, Justin Badi
+    Arama of South Sudan, and Ezekiel Kondo of Sudan, as well as Archbishop James Wong, the retired primate of the
+    Indian Ocean.
 relations:
 - type: member_of
   target: gafcon
   date: null
   led_by:
-  - jackson-ole-sapit
+  - samy-shehata
   status: confirmed
   sources:
   - source: gacm-tlc-2025-10-17-analysis
@@ -56,7 +46,7 @@ relations:
   target: gac
   date: 2026-03
   led_by:
-  - jackson-ole-sapit
+  - samy-shehata
   status: probable
   sources:
   - source: gacm-tlc-2026-03-27-who-leads
@@ -74,3 +64,23 @@ relations:
     por ter afirmado publicamente a Declaração de Jerusalém, mas o primaz não foi a Abuja e não integra o Global
     Anglican Council (que exige desengajamento dos Instrumentos de Cantuária); foi convidado a integrá-lo. Não se
     localizou decisão própria da província aderindo à GAC.
+- type: member_of
+  target: anglican-communion
+  date: null
+  led_by:
+  - samy-shehata
+  status: probable
+  sources:
+  - source: gacm-ai-2026-01-20-gsfa-mahe
+    quote: >-
+      GSFA is staying within the Anglican Communion, but more importantly, we are staying with Jesus to bear witness
+      that we must choose life rather than death and light rather than darkness.
+  - source: gace-tlc-gsfa-2026-01
+    quote: >-
+      The meeting’s communiqué , released January 21, was signed by nine primates, representing the Anglican Communion’s
+      provinces of Alexandria, Congo, the Indian Ocean, Myanmar, South East Asia, South Sudan, Sudan, and Uganda,
+      as well as the Anglican Church of Brazil.
+  notes: >-
+    Reafirmação de jan/2026: primaz signatário do comunicado dos primazes do GSFA (Seychelles, 14–17/01/2026), que
+    afirma que o GSFA permanece na Comunhão Anglicana e continuará a dialogar com as propostas Nairobi-Cairo. O
+    GSFA declara comunhão prejudicada com as províncias que mudaram o ensino sobre o casamento.

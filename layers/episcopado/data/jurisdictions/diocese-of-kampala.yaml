@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-kampala
+name: Diocese of Kampala
+type: diocese
+tradition: anglican
+country: UG
+relations:
+- type: part_of
+  target: cou
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: On 1st March 2020 he was enthroned as the Primate of the Church of Uganda and Bishop of Kampala.

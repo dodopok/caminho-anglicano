@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ace
+acronym: ACE
+name: Anglican Convocation in Europe (Anglican Diocese of Europe)
+type: diocese
+tradition: anglican
+description: >-
+  Diocese extraprovincial criada pelo GAFCON na Europa; bispo presidente Andy Lines. Em set/2026 seu sínodo adotou
+  o nome provisório "Anglican Diocese of Europe".
+sources:
+- source: gacm-gafcon-2026-08-28-ace
+  quote: ACE was established by Gafcon and is an extra-provincial diocese of the Global Anglican Communion.
+- source: gacm-gafcon-2026-09-24-europe
+  quote: >-
+    a fruitful Synod which adopted important new canons and the working title “Anglican Diocese of Europe.”
+relations:
+- type: member_of
+  target: gac
+  date: 2026-08
+  led_by:
+  - andy-lines
+  status: confirmed
+  sources:
+  - source: gacm-gafcon-2026-08-28-ace
+    quote: ACE was established by Gafcon and is an extra-provincial diocese of the Global Anglican Communion.
+  - source: gacm-gafcon-2026-09-24-europe
+    quote: >-
+      Please give thanks to God for the recent Conference and Synod of the Anglican Diocese of Europe, part of the
+      Global Anglican Communion.
+  notes: >-
+    Diocese extraprovincial; a data é a da primeira fonte localizada que a nomeia como parte da GAC, não a de uma
+    decisão formal.
+- type: recognized_by
+  target: gafcon
+  date: null
+  led_by:
+  - andy-lines
+  status: confirmed
+  sources:
+  - source: gacm-gafcon-2026-08-28-ace
+    quote: ACE was established by Gafcon
+  - source: gacm-gafcon-2026-09-24-europe
+    quote: Established through Gafcon as the Anglican Convocation in Europe

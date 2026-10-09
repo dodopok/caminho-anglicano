@@ -1,3 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: julian-dobbs
 name: Julian Dobbs
+affiliations:
+- jurisdiction: acna
+  role: other
+  role_description: primaz interino
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: >-
+      He currently serves as Acting Primate of the ACNA and is Gafcon Regional Secretary for North America.
+  - source: gacm-tlc-2026-03-27-who-leads
+    quote: Bishop Julian Dobbs, acting primate of the Anglican Church in North America
+  - source: gacm-gafcon-2026-07-30-reed
+    quote: >-
+      Bishop Julian Dobbs, Dean and Acting Archbishop of the ACNA, and a member of the Global Anglican Council
+  - source: gacm-ai-2026-09-28-acna-cob
+    quote: Bishop Julian M. Dobbs, Dean of the Province and Interim Ecclesiastical Authority, presided.
+  notes: >-
+    Exerce a autoridade eclesiástica interina da ACNA como deão da província enquanto o arcebispo Steve Wood está
+    afastado (inibido) e responde a julgamento eclesiástico.

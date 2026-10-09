@@ -1,57 +1,42 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
-id: iach
-acronym: IACH
-name: Igreja Anglicana do Chile
+id: reach-sa
+acronym: REACH-SA
+name: Reformed Evangelical Anglican Church of South Africa
 type: national_church
-country: CL
-founded:
-  date: '2018'
-  sources:
-  - source: fund-wp-en-chile
-    quote: Formed in 2018, the province is the 40th in the Anglican Communion.
+tradition: anglican
+country: ZA
 description: >-
-  Província autônoma de 2018 (antes diocese do Chile, desde 1963 como Diocese do Chile, Bolívia e Peru).
+  Igreja anglicana evangélica sul-africana fora da Comunhão Anglicana de Cantuária (antiga Church of England in
+  South Africa).
 sources:
-- source: fund-wp-en-chile
-  quote: Formed in 2018, the province is the 40th in the Anglican Communion.
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    the Reformed Evangelical Anglican Church of South Africa (formerly the Church of England in South Africa), which
+    dates to a 19th-century division over Tractarian liturgical practices
 relations:
 - type: member_of
   target: gac
-  date: '2026-03-05'
+  date: 2026-03
   led_by:
-  - enrique-lago-zugadi
+  - siegfried-ngubane
   status: confirmed
   sources:
   - source: gace-gac-page
-    quote: Archbishop of the Anglican Church of Chile
-  - source: gafcon-2026-01-02-sa
-    quote: Gafcon-aligned churches include the Anglican Church in Brazil and the Anglican Church of Chile
-  - source: gace-ai-council-list
-    quote: The Most Rev. Enrique Lago, Archbishop of Chile
+    quote: Presiding Bishop of the Reformed Evangelical Anglican Church of South Africa (REACH-SA)
   - source: gacm-tlc-2026-03-27-who-leads
     quote: >-
       The council’s primates are Archbishops Laurent Mbanda of Rwanda (Chair), Miguel Uchoa of the Anglican Church
       of Brazil (Vice Chair), Henry Ndukuba of Nigeria, Stephen Kaziimba of Uganda, Enrique Lago of Chile, Presiding
       Bishop Siegfried Ngubane of the Reformed Evangelical Anglican Church of South Africa, and Bishop Julian Dobbs,
       acting primate of the Anglican Church in North America.
-  - source: gacm-otherc-2026-03-28-list
-    quote: >-
-      Archbishop Enrique Lago was not present at the Abuja gathering. After receiving the Council’s decisions and
-      affirming both the Jerusalem Declaration and the requirement of principled disengagement, he was welcomed
-      into the Council’s leadership after G26 occurred.
   notes: >-
-    O arcebispo do Chile figura entre os "Primates" do Global Anglican Council na página institucional (atualizada
-    em 31/03/2026). Não foi encontrada decisão sinodal da Igreja Anglicana do Chile sobre a GAC nem sobre sair da
-    Comunhão Anglicana de Cantuária. Província cujo primaz integra o Global Anglican Council eleito em Abuja (G26,
-    3–6/03/2026), o que exige "desengajamento por princípio" dos Instrumentos da Comunhão de Cantuária. Lago não
-    esteve em Abuja (participou da reunião do conselho por Zoom, segundo Donison) e foi acolhido no Conselho depois
-    do G26, ao afirmar a Declaração de Jerusalém e o desengajamento. Um delegado chileno (Carlos Romero) ainda participou
-    da ACC-19 em Belfast (jun–jul/2026).
+    Província cujo primaz integra o Global Anglican Council eleito em Abuja (G26, 3–6/03/2026), o que exige "desengajamento
+    por princípio" dos Instrumentos da Comunhão de Cantuária.
 - type: member_of
   target: gafcon
   date: null
   led_by:
-  - enrique-lago-zugadi
+  - siegfried-ngubane
   status: confirmed
   sources:
   - source: gacm-tlc-2025-10-17-analysis
@@ -62,10 +47,6 @@ relations:
       a total severing of connections with Canterbury and the Instruments of Communion would be a new development
       for the six other provinces represented on the council (Alexandria, Chile, Congo, Kenya, Myanmar, and South
       Sudan).
-  - source: gacm-ens-2025-10-23-little-evidence
-    quote: >-
-      The other six Anglican provinces that are represented on GAFCON’s primates’ council are Alexandria (Egypt),
-      Chile, Congo, Kenya, Myanmar and South Sudan.
   - source: gacm-ai-2026-01-30-curiouser
     quote: >-
       Gafcon Primates Council Covenanted GSFA Provinces + Gafcon Primates Covenanted GSFA Provinces Anglican Church

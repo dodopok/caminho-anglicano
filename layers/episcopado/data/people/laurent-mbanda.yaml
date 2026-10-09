@@ -2,6 +2,17 @@
 id: laurent-mbanda
 name: Laurent Mbanda
 affiliations:
+- jurisdiction: pear
+  role: primate
+  start: '2018-06-10'
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: >-
+      He was then elected the fourth Archbishop and Primate of the Province of the Anglican Church of Rwanda on
+      17 January 2018. His enthronement took place on 10 June 2018.
+  notes: >-
+    Eleito em 17/01/2018. Em 11/09/2026 Manasseh Gahima foi eleito seu sucessor, com instalação marcada para 25/10/2026.
 - jurisdiction: gafcon
   role: other
   role_description: presidente do Conselho de Primazes (Chairman, Gafcon Primates Council)
@@ -37,6 +48,19 @@ affiliations:
   notes: >-
     Mandato previsto até o fim do GAFCON V (Atenas, 2028); permanece no conselho após deixar o arcebispado de Ruanda,
     conforme regra aprovada em Abuja.
+- jurisdiction: gac
+  role: other
+  role_description: presidente do Global Anglican Council
+  start: '2026-03-05'
+  status: confirmed
+  sources:
+  - source: gace-council-to-lead
+    quote: >-
+      I am also pleased to announce that Archbishop Laurent Mbanda was unanimously elected as Chairman of the Global
+      Anglican Council
+  - source: gace-abuja-affirmation
+    quote: We were delighted to hear at our gathering that Archbishop Laurent Mbanda has been elected Chair
+  notes: Mandato até o fim da GAFCON V (Atenas, 2028).
 events:
 - type: other
   date: '2026-08-23'
@@ -185,3 +209,18 @@ events:
     quote: >-
       During our time in Recife, members of the Global Anglican Council also met for important discussions as we
       continue the transition and development of the Global Anglican Communion.
+- type: other
+  date: '2026-09-11'
+  description: >-
+    Manasseh Gahima, bispo de Gahini, é eleito pela Câmara dos Bispos o quinto arcebispo e primaz da Igreja Anglicana
+    de Ruanda, sucessor de Laurent Mbanda.
+  status: confirmed
+  sources:
+  - source: gace-gahima-elected
+    quote: >-
+      I am delighted to congratulate The Rt Revd Dr Manasseh Gahima, Bishop of Gahini, on his election as the next
+      Archbishop and Primate of the Anglican Church of Rwanda.
+  - source: gacm-ai-2026-09-11-rwanda
+    quote: >-
+      The House of Bishops of the Province de l’Eglise Anglicane du Rwanda (EAR) is to meet today (11 September
+      2026) to elect the fifth Archbishop and Primate of the province

@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: stephen-kaziimba
+name: Stephen Kaziimba
+full_name: Samuel Stephen Kaziimba Mugalu
+aliases:
+- Samuel Stephen Kaziimba Mugalu
+- Stephen Kaziimba Mugalu
+- Stephen Kazimba
+biography: Primaz da Igreja de Uganda e bispo de Kampala desde 2020; membro do Global Anglican Council.
+sources:
+- source: gace-gac-page
+  quote: On 1st March 2020 he was enthroned as the Primate of the Church of Uganda and Bishop of Kampala.
+affiliations:
+- jurisdiction: cou
+  role: primate
+  diocese: diocese-of-kampala
+  start: '2020-03-01'
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: On 1st March 2020 he was enthroned as the Primate of the Church of Uganda and Bishop of Kampala.

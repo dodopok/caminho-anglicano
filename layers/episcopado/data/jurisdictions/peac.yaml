@@ -1,33 +1,23 @@
 # yaml-language-server: $schema=../../schemas/jurisdiction.json
-id: anglican-church-of-kenya
-acronym: ACK
-name: Igreja Anglicana do Quênia
-aliases:
-- Anglican Church of Kenya
-- anglican-church-of-kenya
+id: peac
+acronym: PEAC
+name: Igreja Anglicana do Congo (Province de l’Eglise Anglicane du Congo)
 type: province
 tradition: anglican
-country: KE
-founded:
-  date: '1970'
-  sources:
-  - source: fund-wp-en-ack
-    quote: >-
-      The province was divided into two, with Festo Olang' being the first African archbishop of the new province
-      of Kenya in 1970.
-website: https://www.ackenya.org/
-description: Província do Quênia criada em 1970 por divisão da Província da África Oriental (formada em 1960).
+country: CD
+description: Província da Comunhão Anglicana.
 sources:
-- source: fund-wp-en-ack
+- source: gacm-tlc-2026-03-27-who-leads
   quote: >-
-    The province was divided into two, with Festo Olang' being the first African archbishop of the new province
-    of Kenya in 1970.
+    They are archbishops Samy Shehata of Alexandria, Titre Ande of Congo, Jackson Ole Sapit of Kenya, Justin Badi
+    Arama of South Sudan, and Ezekiel Kondo of Sudan, as well as Archbishop James Wong, the retired primate of the
+    Indian Ocean.
 relations:
 - type: member_of
   target: gafcon
   date: null
   led_by:
-  - jackson-ole-sapit
+  - titre-ande
   status: confirmed
   sources:
   - source: gacm-tlc-2025-10-17-analysis
@@ -56,8 +46,8 @@ relations:
   target: gac
   date: 2026-03
   led_by:
-  - jackson-ole-sapit
-  status: probable
+  - titre-ande
+  status: contested
   sources:
   - source: gacm-tlc-2026-03-27-who-leads
     quote: >-
@@ -70,7 +60,30 @@ relations:
       Because their churches have publicly affirmed the Jerusalem Declaration, they remain part of the Global Anglican
       Communion.
   notes: >-
-    Segundo o secretário-geral Paul Donison (mar/2026), a província continua participante da Global Anglican Communion
-    por ter afirmado publicamente a Declaração de Jerusalém, mas o primaz não foi a Abuja e não integra o Global
-    Anglican Council (que exige desengajamento dos Instrumentos de Cantuária); foi convidado a integrá-lo. Não se
-    localizou decisão própria da província aderindo à GAC.
+    Paul Donison afirma (mar/2026) que a Igreja Anglicana do Congo continua participante da GAC por ter afirmado
+    a Declaração de Jerusalém; a própria província declarou em out/2025 que não deixará a Comunhão Anglicana e não
+    seguirá o chamado ao desengajamento.
+- type: member_of
+  target: anglican-communion
+  date: null
+  led_by:
+  - titre-ande
+  status: confirmed
+  sources:
+  - source: gacm-tlc-2025-10-30-congo
+    quote: >-
+      “The Anglican Church of Congo has no intention to leave the Anglican Communion, rather to keep working with
+      brothers and sisters of the GSFA [Global South Fellowship of Anglicans] to accomplish our common goal: to
+      reform, heal and revitalize the Anglican Communion without leaving it.
+  - source: gacm-tlc-2025-10-30-congo
+    quote: >-
+      “Any disengagement of the Anglican Church of Congo from the Anglican Communion needs, not only to be made
+      collegially through respectful debate, but crucially can only be decided by our Provincial Synod.”
+  - source: gacm-ens-2025-10-23-little-evidence
+    quote: >-
+      “The Church of Congo will not follow that call and remains a full member of the Anglican Communion, and also
+      a member of the Global South.”
+  notes: >-
+    Reafirmação de 30/10/2025, em resposta à declaração do GAFCON de 16/10/2025: primeira província do Conselho
+    de Primazes do GAFCON a afirmar que permanece na Comunhão Anglicana. A declaração ao ENS é do ex-primaz Zacharie
+    Masimango Katanda.

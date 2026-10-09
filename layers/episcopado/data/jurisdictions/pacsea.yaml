@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: pacsea
+acronym: PACSEA
+name: Igreja da Província do Sudeste Asiático (Province of the Anglican Church in South East Asia)
+type: province
+tradition: anglican
+country: MY
+description: Província da Comunhão Anglicana, membro do GSFA.
+sources:
+- source: gacm-tlc-2025-10-29-seasia
+  quote: >-
+    issued by the bishops of the Province of the Anglican Church of South East Asia that he leads as primate
+relations:
+- type: member_of
+  target: anglican-communion
+  date: null
+  led_by:
+  - titus-chung
+  status: probable
+  sources:
+  - source: gacm-tlc-2025-10-29-seasia
+    quote: >-
+      “Accordingly, the Province will act in consultation with its Provincial Synod, Provincial Standing Committee
+      to engage our Dioceses and members, in accordance with due canonical process.
+  - source: gacm-ai-2026-03-08-seasia
+    quote: >-
+      PACSEA seeks to balance strong doctrinal alignment with Gafcon with a declared intention to remain within
+      existing Anglican Communion structures.
+  - source: gacm-ai-2026-01-20-gsfa-mahe
+    quote: >-
+      GSFA is staying within the Anglican Communion, but more importantly, we are staying with Jesus to bear witness
+      that we must choose life rather than death and light rather than darkness.
+  - source: gace-tlc-gsfa-2026-01
+    quote: >-
+      The meeting’s communiqué , released January 21, was signed by nine primates, representing the Anglican Communion’s
+      provinces of Alexandria, Congo, the Indian Ocean, Myanmar, South East Asia, South Sudan, Sudan, and Uganda,
+      as well as the Anglican Church of Brazil.
+  notes: >-
+    Também signatário do comunicado do GSFA de jan/2026, segundo o qual "GSFA is staying within the Anglican Communion".
+    Posição reafirmada na declaração dos bispos da província (28/10/2025) em resposta ao GAFCON: questões "existenciais,
+    estruturais e eclesiológicas" exigem discernimento pelo sínodo provincial; a província segue no GSFA.

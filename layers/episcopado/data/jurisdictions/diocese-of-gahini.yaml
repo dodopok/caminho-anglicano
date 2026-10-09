@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-gahini
+name: Diocese of Gahini
+type: diocese
+tradition: anglican
+country: RW
+relations:
+- type: part_of
+  target: pear
+  status: confirmed
+  sources:
+  - source: gace-gahima-elected
+    quote: He was consecrated a bishop in 2017 and has served as Bishop of Gahini since 2019.

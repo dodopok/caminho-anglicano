@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: cpio
+acronym: CPIO
+name: Igreja da Província do Oceano Índico (Church of the Province of the Indian Ocean)
+type: province
+tradition: anglican
+country: MG
+description: Província da Comunhão Anglicana.
+sources:
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    They are archbishops Samy Shehata of Alexandria, Titre Ande of Congo, Jackson Ole Sapit of Kenya, Justin Badi
+    Arama of South Sudan, and Ezekiel Kondo of Sudan, as well as Archbishop James Wong, the retired primate of the
+    Indian Ocean.
+relations:
+- type: member_of
+  target: anglican-communion
+  date: null
+  led_by:
+  - gilbert-rateloson-rakotondravelo
+  status: probable
+  sources:
+  - source: gacm-ai-2026-01-20-gsfa-mahe
+    quote: >-
+      GSFA is staying within the Anglican Communion, but more importantly, we are staying with Jesus to bear witness
+      that we must choose life rather than death and light rather than darkness.
+  - source: gace-tlc-gsfa-2026-01
+    quote: >-
+      The meeting’s communiqué , released January 21, was signed by nine primates, representing the Anglican Communion’s
+      provinces of Alexandria, Congo, the Indian Ocean, Myanmar, South East Asia, South Sudan, Sudan, and Uganda,
+      as well as the Anglican Church of Brazil.
+  notes: >-
+    Reafirmação de jan/2026: primaz signatário do comunicado dos primazes do GSFA (Seychelles, 14–17/01/2026), que
+    afirma que o GSFA permanece na Comunhão Anglicana e continuará a dialogar com as propostas Nairobi-Cairo. O
+    GSFA declara comunhão prejudicada com as províncias que mudaram o ensino sobre o casamento.

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: henry-ndukuba
+name: Henry Ndukuba
+full_name: Henry Chukwudum Ndukuba
+aliases:
+- Henry Chukwudum Ndukuba
+- Most Revd Henry Ndukuba
+biography: Primaz da Igreja da Nigéria desde 2020; membro do Global Anglican Council.
+sources:
+- source: gace-gac-page
+  quote: was confirmed as the Primate of the Church of Nigeria (Anglican Communion) on 25th March 2020.
+affiliations:
+- jurisdiction: church-of-nigeria
+  role: primate
+  start: '2020-03-25'
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: was confirmed as the Primate of the Church of Nigeria (Anglican Communion) on 25th March 2020.
