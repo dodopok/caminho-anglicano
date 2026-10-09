@@ -1,11 +1,30 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: cecelia-gilmore-morris
 name: Cecelia Gilmore Morris
+aliases:
+- Cecelia Morris
 biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
 sources:
 - source: drv-nota-esclarecimento-2006
   quote: Cecelia Gilmore Morris
 affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: diácono permanente
+  diocese: arcediagado-norte-americano
+  start: '2007-07-21'
+  status: probable
+  sources:
+  - source: darb2-breves-16
+    quote: >-
+      além do nosso Arcediago para os EUA, Ven. Rev. Duncan Clark, e as Diáconas Permanentes Cecelia Morris e Ann
+      Stewart Hamphill
+  - source: darb2-breves-05
+    quote: Dona e Cecilia (Diáconas Permanentes)
+  notes: >-
+    Local: Paróquia St. Charles, Poulsbo (Washington). Citada como diácona permanente presente à ordenação de 21/07/2007;
+    em janeiro de 2007 uma "Cecilia" consta como diácona permanente da equipe pastoral de St. Charles (Poulsbo).
+    Vínculo canônico exato com a diocese não é dito.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: clero (domicílio canônico na diocese, residente no exterior)

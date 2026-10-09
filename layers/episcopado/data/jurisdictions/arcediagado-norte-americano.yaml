@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: arcediagado-norte-americano
+name: Arcediagado Norte-Americano
+type: diocese
+tradition: anglican
+country: US
+relations:
+- type: part_of
+  target: diocese-anglicana-recife
+  status: confirmed
+  sources:
+  - source: darb2-breves-01
+    quote: sendo recebido pelo novo Reitor da Paróquia Anglicana de St. Stephens, o canadense Rev. Paul Orrit
+  - source: darb2-breves-01
+    quote: >-
+      entreguei o Certificado de filiação da Paróquia a nossa Diocese aos Guardiãos e empossei formalmente o Rev.
+      Paul Orrit como Reitor
+  - source: darb2-breves-16
+    quote: >-
+      além do nosso Arcediago para os EUA, Ven. Rev. Duncan Clark, e as Diáconas Permanentes Cecelia Morris e Ann
+      Stewart Hamphill
+  - source: darb2-breves-05
+    quote: Dona e Cecilia (Diáconas Permanentes)
+  - source: darb2-breves-02
+    quote: Ministro Encarregado da Missão "Christ The King" (50 membros) Rev. Jerry Cimijotti
+  - source: darb2-breves-04
+    quote: >-
+      O Ponto Missionário Anglicano no Vale de Walla Walla tem apenas seis meses de funcionamento, em uma Capela
+      na casa do Rev. Roger Williams, com 15 membros
+  - source: darb2-breves-04
+    quote: aposentado da ECUSA/TEC há muitos anos
+  - source: darb2-breves-05
+    quote: >-
+      A Missão Anglicana da Palavra Viva, nossa comunidade em Eugene, Estado de Oregon, que não pude visitar, veio
+      em uma caravana de dez pessoas, liderada pelos Reverendos: Richard Haynes e Scott Browning
+  - source: darb2-breves-05
+    quote: Scott Browning (este em transferência canônica para a Diocese do Recife)
