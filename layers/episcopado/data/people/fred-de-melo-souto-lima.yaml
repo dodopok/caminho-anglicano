@@ -1,6 +1,11 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: fred-de-melo-souto-lima
 name: Fred de Melo Souto Lima
+full_name: Fred de Melo Souto Lima
+aliases:
+- Fred Souto
+- Rev. Fred Souto
+- Ven. Arc. Rev. Fred Souto
 biography: Secretário Administrativo Diocesano em 2005; pastor da Missão Gravatá em 2006.
 sources:
 - source: drp-carta-venables-pt-2005
@@ -13,7 +18,7 @@ ordinations:
   place: Catedral Anglicana da Santíssima Trindade (congregação fora do templo), Recife-PE
   jurisdiction: ieab
   ordained_by: robinson-cavalcanti
-  status: probable
+  status: confirmed
   sources:
   - source: rcor-drv-diac-daniel-fred
     quote: Ordenação Diaconal de Daniel Barbosa e Fred Souto
@@ -27,8 +32,26 @@ ordinations:
       de fevereiro de 2004
   - source: drp2-ord-diac-daniel-fred-2004
     quote: A Daniel e a Fred a minha saudação em nome do povo da nossa Diocese
+  - source: rcor-drv-diac-daniel-fred
+    quote: 15 de fevereiro de 2004
+  - source: rcor-drv-diac-daniel-fred
+    quote: A Daniel e a Fred a minha saudação em nome do povo da nossa Diocese
+  - source: ieabrecife-clero-2002
+    quote: Fred Souto
+  - source: rcid-calendario-2004
+    quote: Post. Fred de Melo Souto Lima
+  - source: rcid-carta-setubal-2005
+    quote: Rev. Fred de Melo Souto Lima – Secretário Administrativo Diocesano
+  - source: rcid-carta-clero-fred-2005
+    quote: Secretário Diocesano Administrativo
   notes: >-
-    Sermão do bispo diocesano (Robinson Cavalcanti). Identificação de 'Fred Souto' com Fred de Melo Souto Lima provável.
+    Sermão do bispo diocesano (Robinson Cavalcanti). O sermão diz 'Fred Souto'; os calendários
+    diocesanos de 2002 e 2004 listam o mesmo postulante como 'Fred Souto' e 'Fred de Melo Souto Lima'.
+    O sermão diz só "Fred Souto". Identidade documentada: na lista de jan/2002 "Fred Souto" é postulante; o calendário
+    diocesano de 2004 lista "Post. Fred de Melo Souto Lima"; em 2005 o cargo de Secretário Administrativo Diocesano
+    é atribuído a "Rev. Fred de Melo Souto Lima" (Carta de Setúbal, 26/02/2005) e a "Rev. Fred Souto" (carta ao
+    clero assinada por ele, 11/07/2005); em 2007 a nota biográfica de "Rev. Fred Souto" o dá como pároco em Gravatá
+    e Secretário Administrativo Diocesano.
 - order: presbyterate
   date: 2004-12
   place: Paróquia Anglicana Emanuel, Olinda-PE (culto de encerramento do XXIV Concílio Diocesano)
@@ -83,7 +106,17 @@ affiliations:
   sources:
   - source: drp-carta-venables-pt-2005
     quote: Rev. Fred de Melo Souto Lima – Secretário Administrativo Diocesano
-  notes: Assina a carta a Venables (17/10/2005) como Secretário Administrativo Diocesano.
+  - source: rcid-carta-setubal-2005
+    quote: Rev. Fred de Melo Souto Lima – Secretário Administrativo Diocesano
+  - source: rcid-carta-clero-fred-2005
+    quote: Secretário Diocesano Administrativo
+  - source: rcid-calendario-2006
+    quote: Rev. Fred de Melo Souto Lima – Secretário Administrativo
+  - source: rcid-novo-pentecostes-2007
+    quote: Pároco da Paróquia Anglicana de Gravatá e Secretário Administrativo Diocesano
+  notes: >-
+    Assina a carta a Venables (17/10/2005) como Secretário Administrativo Diocesano. Secretário Administrativo Diocesano
+    de fevereiro de 2005 (já no cargo) a maio de 2007, ao menos.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -134,3 +167,15 @@ affiliations:
       O Rev. Fred Souto com sua Equipe Pastoral brevemente mudarão de status... Saudemos a futura Paróquia Anglicana
       de Gravatá
   notes: 'Local: Missão Anglicana de Gravatá. Em novembro de 2005.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco
+  status: confirmed
+  sources:
+  - source: rcid-novo-pentecostes-2007
+    quote: >-
+      Rev. Fred Souto é Presbítero na Diocese do Recife; é Pároco da Paróquia Anglicana de Gravatá e Secretário
+      Administrativo Diocesano.
+  notes: >-
+    Local: Paróquia Anglicana de Gravatá. Pároco em Gravatá em maio de 2007 (em 2008 o Rev. Maurício Coelho foi
+    instituído pároco ali pelo arcediago Fred Souto).

@@ -1,9 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: estevao-menezes-chiappetta
 name: Estevão Menezes Chiappetta
+full_name: Estevão Menezes Chiappetta
 aliases:
 - Estevão Chiappetta
+- Estevão Meneses da Silva
+- Estevão Menezes
 - Estevão Menezes da Silva
+- Rev. Estevão Chiappetta
 - Rev. Estevão Menezes
 biography: Deão da Catedral Anglicana do Bom Samaritano (Recife) em 2006-2007.
 sources:
@@ -18,7 +22,7 @@ ordinations:
   place: Missão Jardim das Oliveiras, Recife-PE
   jurisdiction: ieab
   ordained_by: robinson-cavalcanti
-  status: probable
+  status: confirmed
   sources:
   - source: rcor-drv-diac-estevao
     quote: Ordenação Diaconal de Estevão Menezes, OSE
@@ -29,15 +33,27 @@ ordinations:
       Você me concede a alegria de comemorar os cinco anos de minha sagração episcopal com a 41.ª ordenação ministerial.
   - source: rcor-drv-diac-estevao
     quote: Dom Robinson Cavalcanti, OSE
+  - source: rcor-drv-diac-estevao
+    quote: Hoje ordenamos um filho espiritual de Santo Estevão, o primeiro mártir da Igreja.
+  - source: rcid-calendario-2004
+    quote: Rev. Estevão Meneses da Silva, ose
+  - source: rcor-drv-ordens-dar
+    quote: Rev. Estevão Menezes
   notes: >-
-    Sermão assinado por Dom Robinson Cavalcanti no 5º aniversário da sua sagração. Identificação de 'Estevão Menezes'
-    (no sermão presbiteral, 'Estevão Menezes da Silva') com Estevão Menezes Chiappetta é provável, não confirmada.
+    Sermão assinado por Dom Robinson Cavalcanti no 5º aniversário da sua sagração.
+    Identificação documentada: o sermão chama o ordinando "Estevão Menezes, OSE" (2002) e "Estevão Menezes da Silva"
+    (2004). Nas listas diocesanas há um único Estevão no clero: em jan/2002 "Estevão Meneses da Silva" é postulante;
+    o calendário diocesano de 2004 traz "Rev. Estevão Meneses da Silva, ose"; na mesma posição da lista de aniversariantes,
+    o calendário da Catedral de 2005 ainda traz "Rev. Estevão Meneses da Silva", e os calendários de 2006 e 2007
+    trazem "Rev. Estevão Menezes Chiappetta – Secretário Diocesano (Recife)" e "Revmo. Deão Estevão Menezes Chiappetta";
+    a Carta de Setúbal (26/02/2005) já o lista como "Rev. Estevão Menezes Chiappetta – Secretário Diocesano (Recife)".
+    A página das Ordens Religiosas (2004) o lista como membro clerical da OSE ("Rev. Estevão Menezes").
 - order: presbyterate
   date: '2004-03-07'
   place: Paróquia Anglicana Jardim das Oliveiras, Recife-PE
   jurisdiction: ieab
   ordained_by: robinson-cavalcanti
-  status: probable
+  status: confirmed
   sources:
   - source: rcor-drv-presb-estevao
     quote: Ordenação Presbiteral de Estevão Menezes da Silva
@@ -51,10 +67,20 @@ ordinations:
       Jardim das Oliveiras Recife – PE, 07 de Março de 2004
   - source: drp2-ord-presb-estevao-2004
     quote: Graças a Deus pelo Rev. Estevão (44º presbítero ordenado neste episcopado)
+  - source: rcor-drv-presb-estevao
+    quote: a realização do rito de Ordenação ao presbiterado do Diácono Rev. Estevão Menezes
+  - source: rcid-calendario-2004
+    quote: Rev. Estevão Meneses da Silva, ose
+  - source: rcid-calendario-2006
+    quote: Rev. Estevão Menezes Chiappetta – Secretário Diocesano (Recife)
+  - source: rcid-calendario-2007
+    quote: Revmo. Deão Estevão Menezes Chiappetta
   notes: >-
-    Sermão do bispo diocesano (Robinson Cavalcanti). O sermão o chama 'Estevão Menezes da Silva'; identificação
-    com Estevão Menezes Chiappetta provável, não confirmada. 44º presbítero do episcopado de Dom Robinson. O sermão
-    o chama 'Estevão Menezes da Silva'.
+    Sermão do bispo diocesano (Robinson Cavalcanti). O sermão o chama 'Estevão Menezes da Silva'; nos calendários
+    diocesanos de 2004–2005 ele aparece como 'Meneses da Silva' e, a partir de 2006, como 'Menezes Chiappetta'. 44º presbítero do episcopado de Dom Robinson. O sermão
+    o chama 'Estevão Menezes da Silva'. O sermão (do bispo diocesano Robinson Cavalcanti) dá o nome "Estevão Menezes
+    da Silva", grafia usada nas listas diocesanas até 2005; a partir de 2005 os documentos da mesma diocese passam
+    a grafar "Estevão Menezes Chiappetta" para o único Estevão do clero.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -72,12 +98,22 @@ affiliations:
       convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
       mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
+  - source: rcid-nota-desvinculacao-2007
+    quote: na terça-feira da Semana Santa, o então Rev. Estevão Menezes Chiappetta
+  - source: rcid-nota-desvinculacao-2007
+    quote: >-
+      comunicaram ao Bispo Diocesano e ao Conselho Diocesano da sua decisão de desvinculação da Diocese do Recife
+  - source: rcid-nota-desvinculacao-2007
+    quote: Recife, 26 de abril de 2007.
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados. Anexo R: o(a) clérigo(a) declarou, em resposta à convocação
     de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
     dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
-    exata.
+    exata. Desvinculação comunicada na Semana Santa de 2007 e registrada em nota diocesana de 26/04/2007; a nota
+    diz que passou a membro leigo de outra denominação.
+  end: 2007-04
+  end_reason: left
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: deão
@@ -125,9 +161,40 @@ affiliations:
   sources:
   - source: rcor-drv-ordens-dar
     quote: Rev. Estevão Menezes
+  - source: rcor-drv-diac-estevao
+    quote: Ordenação Diaconal de Estevão Menezes, OSE
+  - source: rcid-calendario-2004
+    quote: Rev. Estevão Meneses da Silva, ose
   notes: >-
     Membro clerical da OSE (nome grafado 'Estevão Menezes'). Lista da página 'Ordens Religiosas' do site da Diocese
-    do Recife, arquivada em 24/10/2004.
+    do Recife, arquivada em 24/10/2004. Membro clerical da Ordem Evangélica de Santo Estevão Mártir (OSE) em 2002-2004.
+- jurisdiction: ieab
+  role: other
+  role_description: postulante
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: ieabrecife-clero-2002
+    quote: Postulantes ao Ministério Ordenado (24)
+  - source: ieabrecife-clero-2002
+    quote: Estevão Meneses da Silva
+  - source: ieabrecife-clero-2002
+    quote: Paróquia Anglicana Bom Samaritano
+  notes: >-
+    Local: Paróquia Anglicana Bom Samaritano (Olinda-PE). Postulante ao ministério ordenado em janeiro de 2002,
+    ligado à Paróquia Anglicana Bom Samaritano (Ouro Preto, Olinda-PE).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretario_diocesano
+  status: confirmed
+  sources:
+  - source: rcid-carta-setubal-2005
+    quote: Rev. Estevão Menezes Chiappetta – Secretário Diocesano (Recife)
+  - source: rcid-calendario-2006
+    quote: Rev. Estevão Menezes Chiappetta – Secretário Diocesano (Recife)
+  notes: >-
+    Secretário Diocesano (Recife) em 26/02/2005 (delegado clerical ao Concílio Diocesano Extraordinário) e em janeiro
+    de 2006; início e fim não informados.
 events:
 - type: other
   date: 2005-06
