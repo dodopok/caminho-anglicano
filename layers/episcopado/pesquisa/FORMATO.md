@@ -8,7 +8,8 @@ YAML da base, casa nomes com quem já está registrado e mescla as afirmações.
 {
   "frente": "nome da frente",
   "fontes": [
-    { "chave": "prefixo-slug-curto-unico", "url": "https://...|null", "titulo": "...", "autor": "...|null",
+    { "chave": "prefixo-slug-curto-unico", "url": "https://...|null",
+      "arquivo": "https://web.archive.org/web/<data>/<url>|null  (cópia arquivada da página que saiu do ar)", "titulo": "...", "autor": "...|null",
       "publicador": "site/instituição|null", "data_publicacao": "AAAA-MM-DD|AAAA-MM|AAAA|null",
       "tipo": "documento_oficial|ata|noticia|livro|artigo|tese|site_institucional|rede_social|wikidata|wikipedia|blog|testemunho_pessoal|outro",
       "nivel": "primaria|secundaria|terciaria", "idioma": "pt|en|es|...", "notas": "...|null" }

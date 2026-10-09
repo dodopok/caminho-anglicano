@@ -307,7 +307,7 @@ for arq in arquivos:
             tipo = 'book' if f.get('tipo') == 'livro' else 'official_document' if tipo == 'official_document' else tipo
         fontes[fid] = {k: v for k, v in {
             'id': fid, 'type': tipo, 'title': f.get('titulo') or fid, 'author': f.get('autor'),
-            'publisher': f.get('publicador'), 'url': url, 'archive_url': None,
+            'publisher': f.get('publicador'), 'url': url, 'archive_url': f.get('arquivo') if str(f.get('arquivo') or '').startswith('http') else None,
             'published': data(f.get('data_publicacao'), avisos, fid), 'accessed': HOJE,
             'language': f.get('idioma'), 'level': NIVEL.get(f.get('nivel'), 'secondary'), 'notes': f.get('notas')}.items()
             if v is not None or k in ('url',)}
