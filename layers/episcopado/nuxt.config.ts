@@ -33,6 +33,14 @@ export default defineNuxtConfig({
     '/episcopado/jurisdicao/**': { isr: true },
     '/episcopado/fonte/**': { isr: true },
     '/api/episcopado/**': { isr: true },
+    // ISR não repassa a query ao handler por padrão. Cada consulta precisa receber
+    // seus parâmetros e ter uma entrada de cache independente.
+    '/api/episcopado/caminho': { isr: { expiration: false, allowQuery: ['de', 'para', 'modo'], passQuery: true } },
+    '/api/episcopado/busca': { isr: { expiration: false, allowQuery: ['q', 'limite'], passQuery: true } },
+    '/api/episcopado/posicoes': { isr: { expiration: false, allowQuery: ['escopo'], passQuery: true } },
+    '/api/episcopado/arvore': { isr: { expiration: false, allowQuery: ['escopo'], passQuery: true } },
+    '/api/episcopado/efemerides': { isr: { expiration: 3600, allowQuery: ['dia', 'dias'], passQuery: true } },
+    '/api/episcopado/inicio': { isr: 3600 },
     // Sugestões são POST e nunca entram em cache.
     '/api/episcopado/sugestao': { isr: false, cache: false }
   }
