@@ -25,10 +25,35 @@ ordinations:
       de Conde-PB Data: 08 de dezembro de 2006
   - source: dar-diaconos-2007
     quote: Keyla Maria Pereira Camargo
+  - source: drp2-ord-diac-xxvi-concilio-2006
+    quote: XXVI Concílio Diocesano Sermão do Culto Solene de Ordenações Diaconais Conde (PB), 08.12.2006
+  - source: drp2-ord-diac-xxvi-concilio-2006
+    quote: >-
+      às Ordenações Diaconais de: Roseno, Keyla, Maria do Carmo e Michael. E um momento histórico, quando estamos
+      procedendo à Ordenação Diaconal de Michael, a primeira para o nosso Arcediagado Norte-americano.
+  discrepancies:
+  - field: place
+    value: XXVI Concílio Diocesano, Conde-PB
+    sources:
+    - source: drp2-ord-diac-xxvi-concilio-2006
+      quote: XXVI Concílio Diocesano Sermão do Culto Solene de Ordenações Diaconais Conde (PB), 08.12.2006
+    - source: drp2-ord-diac-xxvi-concilio-2006
+      quote: >-
+        às Ordenações Diaconais de: Roseno, Keyla, Maria do Carmo e Michael. E um momento histórico, quando estamos
+        procedendo à Ordenação Diaconal de Michael, a primeira para o nosso Arcediagado Norte-americano.
   notes: >-
     Fonte: convite publicado em 29/11/2006 e lista de diáconos(as) de out/2007 que já o(a) inclui. Em 2010 já presbítera
     ('Revda. Keyla Maria Pereira Camargo' na lista de presbíteros); em 2019 coadjutora da Paróquia Jardim das Oliveiras
     (IAB).
+- order: presbyterate
+  date: '2007-06-02'
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: drp2-breves-11-2007
+    quote: 'Para o mês de Junho: dia 02/06 – Ordenação Presbiteral da Revda. Keyla Camargo'
+  notes: Agenda do bispo diocesano publicada em 15/05/2007, antes do evento.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy

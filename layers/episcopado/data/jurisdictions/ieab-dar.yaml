@@ -972,3 +972,111 @@ relations:
   - source: costa2021
     quote: Alguns meses depois, ocorreu a saída da reverenda Giselle Gomes, que auxiliava o deão.
     page: '247'
+  - source: rclv-anglicanismo-identidade
+    quote: >-
+      EDWARD ROBINSON DE BARROS CAVALCANTI Bispo Coadjutor (05.10.1997) (Diocesano do Recife desde 19.10.1997).
+    page: '162'
+  - source: rclv-anglicanismo-comparado-2008
+    quote: >-
+      74. EDWARD ROBINSON DE BARROS CAVALCANTI Bispo Coadjutor (05.10.1997) (Diocesano do Recife desde 19.10.1997).
+    page: '37'
+  - source: rclv-anglicanismo-identidade
+    quote: >-
+      Com a elevação da Diocese do Recife ao status de Autônoma, a substituição do Bispo Clóvis pelo atual Bispo
+      Diocesano já se fez por eleição local, não sem resistência de setores da Província
+    page: '114'
+  - source: drv-resgatando-iv
+    quote: >-
+      que foi Instalado e Empossado como Bispo Diocesano, na Paróquia da SS. Trindade, no dia 19 do mesmo mês.
+  - source: drv-resgatando-iv
+    quote: >-
+      foi Coadjutor e Pároco Interino da Paróquia Anglicana Emanuel, Olinda-PE; Coadjutor da Paróquia da SS. Trindade;
+      Ministro Encarregado do Ponto Missionário Anglicano da Redenção; membro do Conselho Diocesano, Delegado Sinodal
+      e membro da JUNET – Junta Nacional de Educação Teológica da IEAB, tendo se filiado a DAR EM 1976, no ano da
+      sua organização eclesiástica.
+  - source: drv-resgatando-iv
+    quote: >-
+      Como estava, por sua coerência, discriminado há 08 anos pelo “Bispo de Direito”, e há 06 anos pelo “Bispo
+      de Fato”, isolado em seu Ponto Missionário da Redenção, no Bairro da Boa Vista
+  - source: rcor-drv-diac-daniel-fred
+    quote: Instituição do Cônego Quintino Orengo
+  - source: rcor-drv-diac-daniel-fred
+    quote: ao novo Cônego, ora instalado, Venerável Rev. Quintino Orengo
+  - source: ieabrecife-clero-2002
+    quote: Postulantes ao Ministério Ordenado (24)
+  - source: ieabrecife-clero-2002
+    quote: Estevão Meneses da Silva
+  - source: ieabrecife-clero-2002
+    quote: Paróquia Anglicana Bom Samaritano
+- type: broke_communion_with
+  target: tec
+  date: '2003'
+  led_by:
+  - robinson-cavalcanti
+  status: probable
+  sources:
+  - source: rclv-anglicanismo-identidade
+    quote: >-
+      No Brasil, os Bispos – Diocesano e Sufragâneo – e o Conselho Diocesano da Diocese do Recife, publicaram a
+      “Afirmação do Recife”, reiterando o apoio à Resolução 1.10 da Conferência de Lambeth, 1998, condenando a Sagração
+      de Gene Robinson e suspendendo o seu relacionamento institucional com a Igreja Episcopal (EUA) e com a Diocese
+      de New Westminster
+    page: '149'
+  notes: >-
+    'Afirmação do Recife', publicada após a sagração de Gene Robinson (nov/2003); o livro não data o documento (ano
+    inferido do contexto). A diocese tinha então um bispo sufragâneo, não nomeado no texto.
+- type: broke_communion_with
+  target: diocese-de-new-westminster
+  date: '2003'
+  led_by:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: drp2-cronologia-2004
+    quote: >-
+      Os bispos e o Conselho Diocesano da Diocese Anglicana do Recife emitem a “Afirmação do Recife”, suspendendo
+      comunhão com New Westminster e New Hampshire
+  notes: >-
+    Suspensão de comunhão pela 'Afirmação do Recife' (2003), homologada pelo Concílio Diocesano em dezembro de 2003.
+- type: broke_communion_with
+  target: diocese-de-new-hampshire
+  date: '2003'
+  led_by:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: drp2-cronologia-2004
+    quote: >-
+      Os bispos e o Conselho Diocesano da Diocese Anglicana do Recife emitem a “Afirmação do Recife”, suspendendo
+      comunhão com New Westminster e New Hampshire
+- type: in_communion_with
+  target: diocese-de-central-pennsylvania
+  date: null
+  end: 2003-12
+  led_by:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: drp2-cronologia-2004
+    quote: >-
+      Em decorrência, é rescindido o relacionamento de companheirismo com a Diocese da Pensilvânia Central (ECUSA).
+  - source: drp2-memorias-decada-v
+    quote: >-
+      Assinamos convênios com duas Dioceses Companheiras: Fredericton, no Canadá, e Pensilvânia Central, nos Estados
+      Unidos.
+  notes: >-
+    Relação de diocese companheira (companion diocese) com a Diocese de Central Pennsylvania (Igreja Episcopal dos
+    EUA), rescindida pelo Concílio Diocesano de dezembro de 2003.
+- type: in_communion_with
+  target: diocese-de-fredericton
+  date: null
+  led_by:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-v
+    quote: >-
+      Assinamos convênios com duas Dioceses Companheiras: Fredericton, no Canadá, e Pensilvânia Central, nos Estados
+      Unidos. Os Bispos Lemmon e Craighton nos visitaram, e eu estive em seus Concílios.
+  notes: >-
+    Diocese companheira (Igreja Anglicana do Canadá), por convênio assinado no início do episcopado de Dom Robinson.

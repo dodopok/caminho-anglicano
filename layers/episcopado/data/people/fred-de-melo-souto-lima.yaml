@@ -1,12 +1,78 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: fred-de-melo-souto-lima
 name: Fred de Melo Souto Lima
+full_name: Fred de Melo Souto Lima
+aliases:
+- Fred Souto
+- Rev. Fred Souto
+- Ven. Arc. Rev. Fred Souto
 biography: Secretário Administrativo Diocesano em 2005; pastor da Missão Gravatá em 2006.
 sources:
 - source: drp-carta-venables-pt-2005
   quote: Rev. Fred de Melo Souto Lima – Secretário Administrativo Diocesano
 - source: drp-boletim-oracao-2006
   quote: Orar pela Missão Anglicana Gravatá; pelo Rev. Fred Souto e família
+ordinations:
+- order: diaconate
+  date: '2004-02-15'
+  place: Catedral Anglicana da Santíssima Trindade (congregação fora do templo), Recife-PE
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: rcor-drv-diac-daniel-fred
+    quote: Ordenação Diaconal de Daniel Barbosa e Fred Souto
+  - source: rcor-drv-diac-daniel-fred
+    quote: Catedral Anglicana da Santíssima Trindade / Recife – PE 15 de fevereiro de 2004
+  - source: rcor-drv-diac-daniel-fred
+    quote: Com eles completamos 55 Diáconos nesses seis anos e meio
+  - source: drp2-ord-diac-daniel-fred-2004
+    quote: >-
+      Ordenação Diaconal de Daniel Barbosa e Fred Souto Catedral Anglicana da Santíssima Trindade Recife – PE 15
+      de fevereiro de 2004
+  - source: drp2-ord-diac-daniel-fred-2004
+    quote: A Daniel e a Fred a minha saudação em nome do povo da nossa Diocese
+  - source: rcor-drv-diac-daniel-fred
+    quote: 15 de fevereiro de 2004
+  - source: rcor-drv-diac-daniel-fred
+    quote: A Daniel e a Fred a minha saudação em nome do povo da nossa Diocese
+  - source: ieabrecife-clero-2002
+    quote: Fred Souto
+  - source: rcid-calendario-2004
+    quote: Post. Fred de Melo Souto Lima
+  - source: rcid-carta-setubal-2005
+    quote: Rev. Fred de Melo Souto Lima – Secretário Administrativo Diocesano
+  - source: rcid-carta-clero-fred-2005
+    quote: Secretário Diocesano Administrativo
+  notes: >-
+    Sermão do bispo diocesano (Robinson Cavalcanti). O sermão diz 'Fred Souto'; os calendários
+    diocesanos de 2002 e 2004 listam o mesmo postulante como 'Fred Souto' e 'Fred de Melo Souto Lima'.
+    O sermão diz só "Fred Souto". Identidade documentada: na lista de jan/2002 "Fred Souto" é postulante; o calendário
+    diocesano de 2004 lista "Post. Fred de Melo Souto Lima"; em 2005 o cargo de Secretário Administrativo Diocesano
+    é atribuído a "Rev. Fred de Melo Souto Lima" (Carta de Setúbal, 26/02/2005) e a "Rev. Fred Souto" (carta ao
+    clero assinada por ele, 11/07/2005); em 2007 a nota biográfica de "Rev. Fred Souto" o dá como pároco em Gravatá
+    e Secretário Administrativo Diocesano.
+- order: presbyterate
+  date: 2004-12
+  place: Paróquia Anglicana Emanuel, Olinda-PE (culto de encerramento do XXIV Concílio Diocesano)
+  jurisdiction: ieab-dar
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: drp2-concilio-xxiv-2004
+    quote: >-
+      foi celebrado um Culto Eucarístico com a Ordenação Presbiteral dos Reverendos: Décio da Silva, Fred Souto,
+      Marconi Oliveira, Solange Cristina Pereira e Raniere Oliveira
+  - source: drp2-ord-presb-xxiv-concilio-2004
+    quote: Ordenação presbiteral XXIV C Diocesano- Olinda PE
+  - source: drp2-ord-presb-xxiv-concilio-2004
+    quote: hoje a igreja estará recebendo 5 novos presbíteros
+  - source: drp2-ord-presb-xxiv-concilio-2004
+    quote: Fred,Ranieri,Solange,Marconi, Décio
+  notes: >-
+    Ordenação no culto eucarístico após os Concílios Ordinário (XXIV) e Extraordinário da diocese, em Olinda. O
+    informe diocesano é datado de 02/12/2004 e fala do 'último fim de semana'; o cabeçalho do sermão do Rev. Miguel
+    Uchôa traz 10/12/2004. Dia exato incerto.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -40,7 +106,17 @@ affiliations:
   sources:
   - source: drp-carta-venables-pt-2005
     quote: Rev. Fred de Melo Souto Lima – Secretário Administrativo Diocesano
-  notes: Assina a carta a Venables (17/10/2005) como Secretário Administrativo Diocesano.
+  - source: rcid-carta-setubal-2005
+    quote: Rev. Fred de Melo Souto Lima – Secretário Administrativo Diocesano
+  - source: rcid-carta-clero-fred-2005
+    quote: Secretário Diocesano Administrativo
+  - source: rcid-calendario-2006
+    quote: Rev. Fred de Melo Souto Lima – Secretário Administrativo
+  - source: rcid-novo-pentecostes-2007
+    quote: Pároco da Paróquia Anglicana de Gravatá e Secretário Administrativo Diocesano
+  notes: >-
+    Assina a carta a Venables (17/10/2005) como Secretário Administrativo Diocesano. Secretário Administrativo Diocesano
+    de fevereiro de 2005 (já no cargo) a maio de 2007, ao menos.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -59,3 +135,47 @@ affiliations:
     Brasil e, conseqüentemente, das Sagradas Ordens' por abandono de comunhão. motivo_fim 'deposicao' porque o efeito
     é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
     adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago
+  status: confirmed
+  sources:
+  - source: drp2-instituicao-paroco-gravata-2008
+    quote: 'Celebrante: Ven. Arc. Rev. Fred Souto'
+  - source: drp2-instituicao-paroco-gravata-2008
+    quote: >-
+      sob a Autoridade Episcopal do teu Pastor e Bispo, Revmo. Dom Robinson Cavalcanti, e do seu Arcediago, Rev.
+      Fred Souto
+  notes: 'Local: Arcediagado Centro. Arcediago em junho de 2008.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário administrativo diocesano
+  status: confirmed
+  sources:
+  - source: drp2-breves-03-2006
+    quote: >-
+      O Rev. Fred Souto estará esperando por você. Qualquer dúvida é só ligar: (81) 9162.3321 ou escrever para nosso
+      Secretário Administrativo Diocesano
+  notes: Em março de 2006.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: líder da equipe pastoral
+  status: confirmed
+  sources:
+  - source: drp2-breves-09-2005
+    quote: >-
+      O Rev. Fred Souto com sua Equipe Pastoral brevemente mudarão de status... Saudemos a futura Paróquia Anglicana
+      de Gravatá
+  notes: 'Local: Missão Anglicana de Gravatá. Em novembro de 2005.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco
+  status: confirmed
+  sources:
+  - source: rcid-novo-pentecostes-2007
+    quote: >-
+      Rev. Fred Souto é Presbítero na Diocese do Recife; é Pároco da Paróquia Anglicana de Gravatá e Secretário
+      Administrativo Diocesano.
+  notes: >-
+    Local: Paróquia Anglicana de Gravatá. Pároco em Gravatá em maio de 2007 (em 2008 o Rev. Maurício Coelho foi
+    instituído pároco ali pelo arcediago Fred Souto).

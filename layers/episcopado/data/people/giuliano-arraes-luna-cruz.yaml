@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: giuliano-arraes-luna-cruz
+name: Giuliano Arraes Luna Cruz
+full_name: Giuliano Arraes Luna Cruz
+biography: >-
+  Clérigo da Diocese Anglicana do Recife (IEAB), ordenado diácono em dezembro de 2002 e presbítero em dezembro de
+  2003 por Robinson Cavalcanti.
+sources:
+- source: rcor-drv-diac-giuliano
+  quote: 'Ordenação Diaconal: Giuliano Arraes Luna Cruz'
+ordinations:
+- order: diaconate
+  date: '2002-12-28'
+  place: Paróquia Anglicana do Redentor, Recife-PE
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: rcor-drv-diac-giuliano
+    quote: 'Ordenação Diaconal: Giuliano Arraes Luna Cruz'
+  - source: rcor-drv-diac-giuliano
+    quote: Recife, 28 de dezembro de 2002
+  - source: rcor-drv-diac-giuliano
+    quote: Com Giuliano completamos 44 diáconos e 35 presbíteros ordenados
+  notes: >-
+    Sermão do bispo diocesano (Robinson Cavalcanti), que conta Giuliano entre os ordenados do seu episcopado.
+- order: presbyterate
+  date: '2003-12-28'
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: rcor-drv-ord-decio-2003
+    quote: >-
+      Amanhã, com a ordenação do Rev. Giuliano Arraes Luna Cruz, estaremos atingindo a marca de 42 Presbíteros.
+  - source: drp2-ord-diac-2003-12-27
+    quote: >-
+      Amanhã, com a ordenação do Rev. Giuliano Arraes Luna Cruz, estaremos atingindo a marca de 42 Presbíteros.
+  - source: drp2-ord-diac-2003-12-27
+    quote: Olinda/PE — 27/12/2003
+  notes: >-
+    Ordenação presbiteral anunciada no sermão de 27/12/2003 para o dia seguinte ('Amanhã'); a fonte não relata a
+    cerimônia em si. Anunciada no sermão da véspera como 42º presbítero do episcopado de Dom Robinson; o sermão
+    não confirma que a cerimônia ocorreu nem o local.

@@ -193,16 +193,26 @@ tocadas = {}  # id(afirmação) → afirmação: só estas passam por revisar()
 da_base = {id(c) for e in [*pessoas.values(), *jurisdicoes.values()]
            for lista in ('ordinations', 'affiliations', 'events', 'relations') for c in e.get(lista) or []}
 
-def mesclar_afirmacao(lista, nova, chave, campos):
+def mesclar_afirmacao(lista, nova, chave, campos, compativel=lambda a, b: True):
     """Junta afirmações equivalentes; divergências viram discrepancies."""
-    _mesclar(lista, nova, chave, campos)
+    _mesclar(lista, nova, chave, campos, compativel)
     for c in lista:
-        if c is nova or chave(c) == chave(nova):
+        if c is nova or chave(c) == chave(nova) and compativel(c, nova):
             tocadas[id(c)] = c
 
-def _mesclar(lista, nova, chave, campos):
+def local_vinculo(v):
+    """Paróquia/comunidade do vínculo, guardada nas notas como 'Local: X.'."""
+    m = re.match(r'Local: (.+?)\.(?:\s|$)', v.get('notes') or '')
+    return norm(m[1]) if m else None
+
+def mesmo_local(a, b):
+    """Vínculos em paróquias diferentes (pároco em X e depois em Y) são vínculos distintos."""
+    la, lb = local_vinculo(a), local_vinculo(b)
+    return not (la and lb) or la == lb or mesmo_lugar(la, lb)
+
+def _mesclar(lista, nova, chave, campos, compativel):
     for atual in lista:
-        if chave(atual) != chave(nova):
+        if chave(atual) != chave(nova) or not compativel(atual, nova):
             continue
         # a "principal" é a de melhor status/fonte; a que já está na base continua principal (a revisão humana já passou por ela)
         if id(atual) not in da_base and \
@@ -442,7 +452,8 @@ for arq in arquivos:
             if notas_v:
                 v['notes'] = notas_v
             mesclar_afirmacao(x.setdefault('affiliations', []), v,
-                              lambda z: (z['jurisdiction'], z.get('diocese'), z['role'], z.get('role_description')), ['start', 'end', 'end_reason'])
+                              lambda z: (z['jurisdiction'], z.get('diocese'), z['role'], z.get('role_description')), ['start', 'end', 'end_reason'],
+                              mesmo_local)
         elif tipo == 'relacao':
             o_id = jid(a['origem'])
             t_id = jid(a['alvo'])

@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: cesar-romero
+name: César Romero
+affiliations:
+- jurisdiction: ieab-dar
+  role: deacon
+  start: 2004-12
+  status: confirmed
+  sources:
+  - source: drp2-concilio-xxiv-2004
+    quote: o reconhecimento de Ordem Diaconal do Rev. César Romero
+  notes: >-
+    Local: Diocese Anglicana do Recife. Ordem diaconal recebida de outra igreja e reconhecida pela diocese no culto
+    de encerramento do XXIV Concílio.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário diocesano de missão e evangelismo
+  status: confirmed
+  sources:
+  - source: drp2-breves-06-2006
+    quote: o Encontro Diocesano de Missão e Evangelismo, sob a coordenação do secretário Rev. César Romero
+  notes: Em maio de 2006.

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ricardo-melo
+name: Ricardo Melo
+ordinations:
+- order: diaconate
+  date: '2007-06-16'
+  place: Catedral Anglicana do Bom Samaritano, Recife-PE
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: drp2-ord-diac-2007-06-16
+    quote: 'Sermão de Ordenação Diaconal de: Dinamérico Wanderley, Fábio Rego, João Peixoto e Ricardo Melo'
+  - source: drp2-ord-diac-2007-06-16
+    quote: >-
+      Dom Robinson Cavalcanti, ose Bispo Diocesano Catedral Anglicana do Bom Samaritano Recife (PE), 16 de junho
+      de 2007.
+- order: presbyterate
+  date: 2008-02
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: drp2-breves-01-2008
+    quote: Regressou das “férias” em 11.02
+  - source: drp2-breves-01-2008
+    quote: 'Ordenou ao Presbiterado os Reverendos: Dinamérico Wanderley e Ricardo Melo;'
+  notes: Entre 11/02/2008 e 03/03/2008; dia e local não informados.

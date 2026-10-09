@@ -27,8 +27,10 @@ sources:
   quote: João Câncio Peixoto Filho nasceu em Recife, em 17 de maio de 1961.
 ordinations:
 - order: diaconate
-  date: '2003'
+  date: '2003-07-26'
+  place: Paróquia Anglicana Jardim das Oliveiras, Recife-PE
   jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
   status: confirmed
   sources:
   - source: dar-2023-peixoto10
@@ -45,9 +47,16 @@ ordinations:
   - source: costa2021
     quote: No ano de 2003, João Peixoto foi ordenado ao diaconato e, em 2005, ao presbiterato.
     page: '243'
+  - source: drp2-breves-15-2003
+    quote: >-
+      Sábado (26/07): às 19h – Paróquia Anglicana Jardim das Oliveiras, Ordenação Presbiteral do Rev. Evilásio Tenório
+      da Silva e Ordenação Diaconal do ML João Câncio Peixoto Filho.
+  - source: drp2-breves-15-2003
+    quote: 'Agenda do bispo diocesano para esta semana:'
   notes: >-
     Diocese do Recife (IEAB), então sob o bispo Robinson Cavalcanti. Ordenante não informado. | Segunda fonte (mesmo
-    publicador) para o diaconato de 2003. Diocese Anglicana do Recife; ordenante não informado.
+    publicador) para o diaconato de 2003. Diocese Anglicana do Recife; ordenante não informado. Ordenação na agenda
+    do bispo diocesano publicada antes do evento.
 - order: presbyterate
   date: '2005'
   jurisdiction: ieab

@@ -25,6 +25,40 @@ sources:
 - source: ptwp-iab
   quote: como bispo auxiliar o Revmo. Evilásio Tenório da Silva Júnior
 ordinations:
+- order: diaconate
+  date: '2002-07-13'
+  place: Missão Jardim das Oliveiras (Diocese Anglicana do Recife)
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: rcor-drv-ord-vera-evilasio-claudio
+    quote: 'Ordenação Diaconal: Vera, Evilásio e Cláudio Norberto'
+  - source: rcor-drv-ord-vera-evilasio-claudio
+    quote: Missão Jardim das Oliveiras – 13/07/2002
+  - source: rcor-drv-ord-vera-evilasio-claudio
+    quote: >-
+      Nesta noite, como bispo, estou completando a ordenação de 40 (quarenta) ministros em menos de cinco anos.
+  - source: rcor-drv-ord-vera-evilasio-claudio
+    quote: Dom Robinson Cavalcanti
+  notes: >-
+    Sermão de ordenação assinado por Dom Robinson Cavalcanti, bispo diocesano, que conta esta como parte das suas
+    ordenações ('como bispo, estou completando a ordenação de 40 ministros'). Primeiro nome único no clero da diocese;
+    identificado com o futuro bispo Evilásio Tenório (postulante em jan/2002).
+- order: presbyterate
+  date: '2003-07-26'
+  place: Paróquia Anglicana Jardim das Oliveiras, Recife-PE
+  jurisdiction: ieab-dar
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: drp2-breves-15-2003
+    quote: >-
+      Sábado (26/07): às 19h – Paróquia Anglicana Jardim das Oliveiras, Ordenação Presbiteral do Rev. Evilásio Tenório
+      da Silva e Ordenação Diaconal do ML João Câncio Peixoto Filho.
+  - source: drp2-breves-15-2003
+    quote: 'Agenda do bispo diocesano para esta semana:'
+  notes: Ordenação na agenda do bispo diocesano publicada antes do evento.
 - order: episcopate
   date: '2012-03-17'
   place: Paróquia Anglicana Espírito Santo (PAES), Piedade, Jaboatão dos Guararapes-PE
@@ -228,9 +262,20 @@ affiliations:
     quote: Centro – Ven. Arc. Rev. Evilásio Tenório da Silva
   - source: drv-carta-clero-primaz
     quote: Rev. Arc. Evilásio Tenório da Silva Júnior
+  - source: drp2-breves-04-2005
+    quote: O Ven. Arc. Rev. Evilásio Tenório e a Revda. Juciara Nascimento puderam conduzir as equipes
+  - source: drp2-breves-04-2005
+    quote: Dia de Convivência do Arcediagado Centro
+  - source: drp2-episcopaveis-2011
+    quote: >-
+      sendo Pároco de duas comunidades (Paróquia Anglicana do Mediador e Catedral Anglicana do Bom Samaritano) com
+      a função de Arcediago Centro (este com cerca de dez comunidades) e Reitor do SAT-PE
   notes: >-
     Assina a carta a Venables (17/10/2005) como arcediago. Local: Arcediagado Centro. Arcediagado Centro em out/nov
     de 2006. Cargo exercido em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados.
+    Local: Arcediagado Centro. Arcediago em abril de 2005 (evento do Arcediagado Centro em Caruaru). Local: Arcediagado
+    Centro. Em maio de 2011 era também pároco da Paróquia do Mediador e da Catedral do Bom Samaritano e reitor do
+    SAT-PE.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: reitor_seminario
@@ -269,6 +314,15 @@ affiliations:
     Brasil e, conseqüentemente, das Sagradas Ordens' por abandono de comunhão. motivo_fim 'deposicao' porque o efeito
     é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
     adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco
+  status: confirmed
+  sources:
+  - source: drp2-episcopaveis-2011
+    quote: >-
+      sendo Pároco de duas comunidades (Paróquia Anglicana do Mediador e Catedral Anglicana do Bom Samaritano)
+  notes: 'Local: Paróquia Anglicana do Mediador e Catedral Anglicana do Bom Samaritano. Em maio de 2011.'
 events:
 - type: other
   date: '2012-09-15'
@@ -365,3 +419,14 @@ events:
       O presidente do Conselho Diocesano, reverendo Márcio Simões, ficou encarregado do processo, enquanto o bispo
       auxiliar, Evilásio Tenório, substituiu interinamente Robinson no comando.
     page: '252'
+- type: other
+  date: '2011-05-05'
+  description: >-
+    Na eleição de bispos sufragâneos da Diocese do Recife (Sínodo Extraordinário de 04/06/2011), os 'episcopáveis'
+    eram os reverendos Evilásio Tenório, Flávio Adair Torres Soares e Maurício Amazonas.
+  status: confirmed
+  sources:
+  - source: drp2-episcopaveis-2011
+    quote: 'Série: “O Povo Pergunta e os Episcopáveis Respondem”'
+  - source: drp2-episcopaveis-2011
+    quote: Rev. Evilásio Tenório | Rev. Flávio Adair | Rev. Maurício Amazonas

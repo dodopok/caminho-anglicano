@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: henry-morris
+name: Henry Morris
+full_name: Henry M. Morris
+aliases:
+- Henry M. Morris
+- Rev. Henry M. Morris
+biography: >-
+  Presbítero do Arcediagado Norte-Americano da Diocese do Recife (Cone Sul), ordenado por Dom Robinson Cavalcanti
+  em 2007.
+sources:
+- source: drp2-breves-16-2007
+  quote: Henry M. Morris, auxiliar na Paróquia St. Charles, em Poulsbo, Estado de Washington
+ordinations:
+- order: presbyterate
+  date: '2007-07-21'
+  place: Igreja Vineyard, Gainesville, Flórida (EUA)
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: drp2-breves-16-2007
+    quote: >-
+      tivemos no último sábado, dia 21 de julho, a Ordenação ao Presbiterado dos Reverendos: Michael L. La Cagnina,
+      Ministro Encarregado da Missão Anglicana do Cristo, em High Springs, Fla, e Henry M. Morris, auxiliar na Paróquia
+      St. Charles, em Poulsbo, Estado de Washington. Tendo como Ordenante o Bispo da Diocese do Recife, Dom Robinson
+      Cavalcanti
+  - source: drp2-breves-11-2007-06
+    quote: 'celebração da Ordenação Presbiteral dos Reverendos: Michael La Cagnina e Henry Morris'
+  notes: >-
+    Ordinal clássico anglicano; pregador Rev. Christopher Leighton; presente o arcediago para os EUA, Duncan Clark.
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero auxiliar
+  status: confirmed
+  sources:
+  - source: drp2-breves-16-2007
+    quote: Henry M. Morris, auxiliar na Paróquia St. Charles, em Poulsbo, Estado de Washington
+  notes: 'Local: Arcediagado Norte-Americano — St. Charles, Poulsbo, Washington. Em julho de 2007.'

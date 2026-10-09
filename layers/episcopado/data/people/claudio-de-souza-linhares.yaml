@@ -1,8 +1,11 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: claudio-de-souza-linhares
 name: Cláudio de Souza Linhares
+full_name: Cláudio de Souza Linhares
 aliases:
 - Cláudio Linhares
+- Diácono Cláudio Linhares
+- Rev. Claudio Linhares
 biography: >-
   Clérigo(a) da Diocese Anglicana do Recife que em 2004 pediu supervisão episcopal alternativa à Câmara dos Bispos
   da IEAB, permanecendo na IEAB.
@@ -12,6 +15,61 @@ sources:
     Considerando a solicitação dos clérigos e clérigas a seguir relacionados: … Rev. Cláudio Linhares, osf, (Paróquia
     da Reconciliação)
   page: '545'
+ordinations:
+- order: diaconate
+  date: '2000-10-29'
+  place: Paróquia da Ressurreição, João Pessoa-PB
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: rcor-drv-ord-marcio-claudio-lilian
+    quote: (Márcio, Cláudio e Lílian)
+  - source: rcor-drv-ord-marcio-claudio-lilian
+    quote: Paróquia da Ressurreição – João Pessoa, PB 29 de Outubro de 2000.
+  - source: rcor-drv-ord-marcio-claudio-lilian
+    quote: >-
+      Pela primeira vez estamos ordenando um grupo de diáconos em que todos são integrantes de Ordens Religiosas.
+      Filhos espirituais anglicanos de Santo Estevão e de Francisco de Assis.
+  - source: rcor-drv-ord-marcio-claudio-lilian
+    quote: Recebereis esta noite a ordem de diáconos para sempre
+  - source: rcor-drv-ord-marcio-claudio-lilian
+    quote: nela estão representadas a juventude, a mulher e a família
+  - source: rta-orildo-lilian-2001
+    quote: o Diácono Cláudio Linhares será ordenado somente no próximo sábado, na Paróquia Boas Novas
+  - source: rta-livro35
+    quote: 2000 – Afonsina Machado Dos Reis Lílian Pereira Da Costa Linhares
+    page: '153'
+  - source: ieabrecife-clero-2002
+    quote: Cláudio de Souza Linhares, OSF
+  notes: >-
+    Sermão do bispo diocesano (Robinson Cavalcanti) na ordenação diaconal de Márcio, Cláudio e Lílian, todos membros
+    de ordens religiosas (OSE ou franciscana). O sermão diz só 'Cláudio'; é Cláudio de Souza Linhares, osf (franciscano):
+    em dez/2001 um sermão ainda o chama 'Diácono Cláudio Linhares', e Cláudio Norberto da Silva só foi ordenado
+    diácono em 13/07/2002. Sermão do bispo diocesano Robinson
+    Cavalcanti. O "Cláudio" desta ordenação é Cláudio de Souza Linhares, OSF: em 15/12/2001 ele ainda era "Diácono
+    Cláudio Linhares", à espera do presbiterado; foi ordenado com Lílian Linhares (diácona em outubro de 2000);
+    e em janeiro de 2002 era o único Cláudio entre os reverendos da diocese, enquanto Cláudio Norberto ainda era
+    postulante. A data do cabeçalho do sermão é 29/10/2000, mas o próprio texto diz que "Neste dia a Igreja se dedica
+    a homenagear a memória e o testemunho de Simão e Judas" (festa de 28 de outubro), e o livro dos 35 anos dá 28/10/2000
+    para Lílian.
+- order: presbyterate
+  date: 2001-12
+  place: Paróquia Boas Novas, Caaporã-PB
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: rta-orildo-lilian-2001
+    quote: Natal, 15 de Dezembro de 2001
+  - source: rta-orildo-lilian-2001
+    quote: o Diácono Cláudio Linhares será ordenado somente no próximo sábado, na Paróquia Boas Novas,
+  - source: rta-orildo-lilian-2001
+    quote: na formosa Caaporã, na vizinha Paraíba, juntamente com o Reverendo Israel Cardoso
+  - source: ieabrecife-clero-2002
+    quote: Cláudio de Souza Linhares, OSF
+  notes: >-
+    Ordenação anunciada, num sermão de 15/12/2001, para o sábado seguinte (22/12/2001) em Caaporã-PB; em janeiro
+    de 2002 ele já consta como "Rev." na lista do clero. Ordenante não informado (bispo diocesano: Robinson Cavalcanti).
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -43,6 +101,18 @@ affiliations:
     não informados. Signatário de 'Não sairemos' (01/09/2004): permaneceu na IEAB na crise de 2004-2005. Tese: 'Cláudio
     Linhares' (Paróquia da Reconciliação, Caruaru); hoje arcediago do Arcediagado Oeste. Identificação com o nome
     da base é inferência.
+- jurisdiction: osf
+  role: other
+  role_description: guardião
+  status: confirmed
+  sources:
+  - source: ieabrecife-clero-2002
+    quote: Guardião da Ordem de São Francisco (Fraternidade Paraíba-Rio Grande do Norte)
+  - source: rcor-drv-ordens-dar
+    quote: 'Fraternidade Caruaru Guardião: Rev. Claudio Linhares'
+  notes: >-
+    Guardião da Fraternidade Paraíba-Rio Grande do Norte (jan/2002) e da Fraternidade Caruaru (out/2004) da ordem
+    franciscana anglicana na Diocese do Recife.
 events:
 - type: other
   date: '2004-09-01'

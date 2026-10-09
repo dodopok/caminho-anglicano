@@ -20,6 +20,15 @@ ordinations:
     o bispo diocesano, titular do culto.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: líder da equipe pastoral
+  start: '2006-07-01'
+  status: probable
+  sources:
+  - source: drp2-breves-02-2006
+    quote: quando será substituído por uma Equipe Pastoral liderada pelo Rev. André Luiz de Souza
+  notes: 'Local: Paróquia Anglicana Jardim das Oliveiras. Anunciado em fevereiro de 2006.'
+- jurisdiction: diocese-anglicana-recife
   role: clergy
   status: confirmed
   sources:
@@ -28,3 +37,15 @@ affiliations:
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coadjutor
+  end: '2008-06-15'
+  status: confirmed
+  sources:
+  - source: drp2-posse-deao-2008
+    quote: >-
+      agradecer ao Rev. André Luiz de Souza, meu Coadjutor por esse período, mas de fato o pastor de todos os dias
+  notes: >-
+    Local: Catedral Anglicana do Bom Samaritano. Coadjutor da catedral durante o período em que Dom Robinson foi
+    deão pro tempore.

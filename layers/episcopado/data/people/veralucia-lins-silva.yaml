@@ -1,10 +1,42 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: veralucia-lins-silva
 name: Veralúcia Lins Silva
+full_name: Veralúcia Lins Silva
+aliases:
+- Revda. Vera Lins
+- Vera Lins
+- Vera Lucia lins Silva
 biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
 sources:
 - source: drp-boletim-oracao-2006
   quote: 'Orar pela Paróquia Anglicana do Redentor, pelas Reverendas: Nadja e Veralúcia Lins'
+ordinations:
+- order: diaconate
+  date: '1999'
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: rcor-drv-ord-celio-filadelfo
+    quote: (Célio, Filadelfo, Juciara, Marco, Maurício, Nadja e Vera)
+  - source: rcor-drv-ord-celio-filadelfo
+    quote: seu bispo, no exercício apostólico, igualmente os reconhece, e os consagra
+  - source: rta-livro35
+    quote: 1999 – Inamar Corrêa De Souza Vera Lucia lins Silva Nadja Maria Lins Silva
+    page: '153'
+  - source: ieabrecife-clero-2002
+    quote: Veralúcia Lins Silva, OSE
+  - source: costa2021
+    quote: >-
+      Foi ordenado ao diaconato, em 28 de fevereiro de 1999, e ao presbiterato, em 17 de outubro do mesmo ano.
+    page: '106'
+  notes: >-
+    Sermão sem data sobre o diaconato (Atos 6-7), pregado pelo bispo diocesano Robinson Cavalcanti ("seu bispo ...
+    os consagra"; "penso no 'dia seguinte' ao meu episcopado"). A "Vera" do sermão é Veralúcia Lins Silva, não Vera
+    Lúcia Nascimento: o livro dos 35 anos de ordenação feminina põe "Vera Lucia lins Silva" e "Nadja Maria Lins
+    Silva" juntas em 1999, e em jan/2002 "Veralúcia Lins Silva, OSE" já era reverenda enquanto Vera Lúcia Nascimento
+    ainda era candidata (diácona só em 13/07/2002). O diaconato de Filadelfo Oliveira Neto, ordenado na mesma cerimônia,
+    é de 28/02/1999 (Costa 2021), o que data o sermão.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -31,6 +63,18 @@ affiliations:
     R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti,
     ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005 é a da exclusão
     pela IEAB, e a adesão à DAR é anterior, sem data exata.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: reitora
+  start: '2005'
+  status: confirmed
+  sources:
+  - source: drp2-breves-04-2005
+    quote: >-
+      na Paróquia Anglicana do Redentor, além do aniversário da comunidade, foi dado posse a Reitora – Revda. Vera
+      Lins, e a Coadjutora – Revda. Nadja Lins em clima festivo e acolhedor
+  notes: >-
+    Local: Paróquia Anglicana do Redentor. Empossada no primeiro trimestre de 2005, em visita de Dom Robinson.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -49,3 +93,20 @@ affiliations:
     Brasil e, conseqüentemente, das Sagradas Ordens' por abandono de comunhão. motivo_fim 'deposicao' porque o efeito
     é a perda das ordens na IEAB e a carta do Anexo S chama o grupo de 'clérigos depostos'; o fato de fundo é a
     adesão ao cisma de Robinson Cavalcanti. Início do vínculo com a IEAB não informado.
+- jurisdiction: ose
+  role: member
+  status: confirmed
+  sources:
+  - source: ieabrecife-clero-2002
+    quote: Veralúcia Lins Silva, OSE
+  - source: rcid-calendario-2004
+    quote: Revda. Veralúcia Lins Silva, ose
+  notes: Membro da OSE em 2002-2004.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: procuradora diocesana
+  status: confirmed
+  sources:
+  - source: rcid-carta-setubal-2005
+    quote: Revda. Veralúcia Lins Silva – Procuradora Diocesana
+  notes: Procuradora Diocesana em 26/02/2005.

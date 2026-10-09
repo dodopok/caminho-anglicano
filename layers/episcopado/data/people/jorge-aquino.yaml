@@ -12,7 +12,7 @@ sources:
   quote: Nascido em Natal/RN, o Reverendo Jorge é graduado, especialista e mestre em Teologia
 ordinations:
 - order: diaconate
-  date: null
+  date: '1999-07-31'
   jurisdiction: ieab
   ordained_by: robinson-cavalcanti
   status: probable
@@ -22,6 +22,17 @@ ordinations:
       O Reverendo Jorge, vem de tradição presbiteriana – onde atuou como pastor por sete (7) anos -, mas transferiu-se
       para a Igreja Episcopal Anglicana do Brasil quando da Eleição de D. Robinson Cavalcanti como seu bispo diocesano.
       Ordenado diácono e presbítero por ele
+  - source: rcor-drv-ord-ose-1999
+    quote: ORDENAÇÃO DE DIÁCONOS E INSTITUIÇÃO DA ORDEM EVANGÉLICA DE SANTO ESTEVÃO MÁRTIR - 31/07/99.
+  - source: rcor-drv-ord-ose-1999
+    quote: >-
+      Jorge Aquino, freqüentador assíduo desta catedral desde o seu tempo de seminarista, de há muito queria fazer-se
+      anglicano.
+  notes: >-
+    Ordenação diaconal de quatro 'ministros em trânsito' vindos de outras denominações (Severino Abel, ex-capuchinho;
+    Ricardo Múcio, Luiz Marcos e Jorge Aquino, ex-presbiterianos), no culto em que se instituiu a Ordem de Santo
+    Estêvão. O pregador fala como bispo diocesano ('Em 17 meses do nosso episcopado'), isto é, Robinson Cavalcanti.
+    Local não informado (o texto menciona 'esta catedral').
 - order: presbyterate
   date: '2000-04-19'
   place: Capela do Campus Universitário da UFRN, Natal (RN)
@@ -38,7 +49,18 @@ ordinations:
       O Reverendo Jorge, vem de tradição presbiteriana – onde atuou como pastor por sete (7) anos -, mas transferiu-se
       para a Igreja Episcopal Anglicana do Brasil quando da Eleição de D. Robinson Cavalcanti como seu bispo diocesano.
       Ordenado diácono e presbítero por ele
-  notes: Celebração ecumênica, com padres católicos romanos e pastores evangélicos presentes.
+  - source: rcor-drv-presb-jorge-abel
+    quote: MENSAGEM AO PRESBITERADO DE JORGE & ABEL
+  - source: rcor-drv-presb-jorge-abel
+    quote: Natal, 19/04/2000.
+  - source: rcor-drv-presb-jorge-abel
+    quote: >-
+      Como bispo, sinto-me honrado em presidir este momento histórico, das primeiras ordenações anglicanas em terras
+      potiguares.
+  notes: >-
+    Celebração ecumênica, com padres católicos romanos e pastores evangélicos presentes. Sermão do bispo diocesano
+    (Robinson Cavalcanti), que preside as primeiras ordenações anglicanas no Rio Grande do Norte. 'Jorge' e 'Abel'
+    são Jorge Aquino e Severino Abel da Silva, ordenados diáconos juntos em 31/07/1999.
 affiliations:
 - jurisdiction: manb
   role: clergy
@@ -86,6 +108,18 @@ affiliations:
   notes: >-
     Cônego teológico, responsável pelo curso de imersão no anglicanismo, pelos novos Cânones e custódio do Livro
     de Oração Comum.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: reitor do seminário
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-iv
+    quote: >-
+      atingindo, no seu apogeu, um máximo de 54 alunos, tendo como Reitor o Rev. Jorge Aquino; como coordenador
+      pedagógico o Diácono Edson Pimentel, e como Capelão o Rev. Miguel Uchoa.
+  notes: >-
+    Local: Diocese do Recife, Seminário Anglicano de Estudos Teológicos (SAET). Reitor do SAET no episcopado de
+    Dom Robinson; datas não informadas.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -118,3 +152,15 @@ events:
     quote: >-
       O Reverendo Jorge foi incardinado à Prelazia Católico Anglicana da Sagrada Família, onde atuou como Cônego
       Teológico, Chanceler e Reitor do Centro Paulista de Estudos Anglicanos (EaD).
+- type: other
+  date: 2003-07
+  description: >-
+    Em julho de 2003, Dom Robinson Cavalcanti levou sete clérigos e ministros leigos da Diocese do Recife à Consulta
+    da EFAC em Limuru, Quênia.
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-viii
+    quote: >-
+      Em julho de 2003, sete clérigos e Ministros Leigos (Reverendos: Maurício Coelho, Siméa Meldrum, Estevão Menezes,
+      Jorge Aquino e Fábio Vasconcelos, Gustavo Gilson e a ML Roberta Araújo) foram comigo a Limuru, Quênia, África,
+      para participar da Consulta da EFAC

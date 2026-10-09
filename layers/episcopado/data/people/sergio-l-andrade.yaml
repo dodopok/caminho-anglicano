@@ -1,10 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: sergio-l-andrade
 name: Sérgio L. Andrade
+full_name: Sérgio Fernando Lomeu de Andrade
 aliases:
+- Deão Sérgio
 - Rev. Sérgio Andrade
 - Sérgio Andrade
 - Sérgio F. Lomeu de Andrade
+- Sérgio Fernando Lomeu de Andrade
 - reverendo Sérgio
 - reverendo Sérgio Andrade
 biography: >-
@@ -16,7 +19,44 @@ sources:
     mantendo como coadjutor o Rev. Sérgio Andrade, que permaneceu leal à Igreja Episcopal Anglicana do Brasil
 - source: drp-calendario-2004
   quote: Revmo. Deão Sérgio Fernando L. de Andrade
+ordinations:
+- order: diaconate
+  date: 1999-10
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: rcor-drv-diac-sergio-lomeu
+    quote: >-
+      CULTO DE AÇÃO DE GRAÇAS PELA REFORMA PROTESTANTE (1517/1999) ORDENAÇÃO AO DIACONATO DE SÉRGIO LOMEU DE ANDRADE
+  - source: rcor-drv-diac-sergio-lomeu
+    quote: Em breves momentos, como teu Bispo, te conferirei a Ordem dos Diáconos.
+  notes: >-
+    Culto da Reforma de 1999; o texto fala da festa de Richard Hooker 'no dia 03/11' na 'semana que se inicia',
+    o que situa a ordenação no fim de outubro de 1999 (provavelmente 30 ou 31/10). Ex-pastor presbiteriano. Ordenante:
+    o bispo diocesano, Robinson Cavalcanti (que fala de seus 24 anos no anglicanismo).
 affiliations:
+- jurisdiction: ieab-dar
+  role: other
+  role_description: deão
+  start: 2003-08
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-viii
+    quote: >-
+      Um remanescente da Catedral, porém, liderado pelo Coadjutor Rev. Sérgio Andrade, ficou leal à Diocese
+  - source: drp2-memorias-decada-viii
+    quote: >-
+      O Deão Sérgio, presidente do Conselho Diocesano, se diz “arrependido” de ter assinado a “Afirmação do Recife”
+  - source: drp2-breves-19-2003
+    quote: >-
+      Foi a Cerimônia de Instituição do Revmo. Sérgio Fernando Lomeu de Andrade como Deão da Catedral Anglicana
+      da Santíssima Trindade, com o comparecimento de cerca de 400 pessoas
+  notes: >-
+    Local: Diocese do Recife, Catedral da Santíssima Trindade (remanescente). Coadjutor da catedral que liderou
+    o remanescente após o cisma de 2002; deão e presidente do Conselho Diocesano em dezembro de 2003. Local: Diocese
+    do Recife, Catedral Anglicana da Santíssima Trindade. Instituído na presença do bispo diocesano, do sufragâneo
+    e do ex-primaz Glauco Soares de Lima.
 - jurisdiction: ieab-dar
   role: other
   role_description: deao

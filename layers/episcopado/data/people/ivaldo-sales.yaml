@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ivaldo-sales
+name: Ivaldo Sales
+ordinations:
+- order: diaconate
+  date: 2007-12
+  place: Culto de encerramento do XXVII Concílio da Diocese do Recife
+  jurisdiction: diocese-anglicana-recife
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: drp2-colheita-ministerial-2007
+    quote: >-
+      Ao conferir a sagrada ordem do Diaconato aos reverendos: Ivaldo Sales (Recife), José Fernandes Filho (João
+      Pessoa) e John Nuzum (EUA) no Culto de Encerramento do XXVII Concílio da Diocese do Recife
+  notes: 'Origem indicada: Recife. A nota foi publicada em 04/12/2007, antes do culto, e anuncia a ordenação.'

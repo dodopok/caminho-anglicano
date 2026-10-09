@@ -8,6 +8,24 @@ sources:
     Depois houve a saída do rev. Leonides Menezes, com a rev. Karla Patriota e Adonias Ramos Souza e as paróquias
     Betânia e Calvário
   page: '65'
+ordinations:
+- order: diaconate
+  date: '2001-12-29'
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: rcor-drv-diac-karla-lilian-quintino
+    quote: ORDENAÇÕES DIACONAIS - 29/12/2001 (Karla, Lilian e Quintino)
+  - source: rcor-drv-diac-karla-lilian-quintino
+    quote: Hoje recebem o diaconato, ordem para o serviço
+  - source: rcor-drv-diac-karla-lilian-quintino
+    quote: Vocês sabem que não me chamo Edmund ou Clóvis, mas Robinson.
+  - source: testemunho-mantenedor-2026-10-09-sermoes
+    quote: Karla é a Patriota
+  notes: >-
+    Sermão assinado por Dom Robinson Cavalcanti, bispo diocesano. O sermão diz só 'Karla'; a identificação com Karla
+    Patriota foi confirmada pelo mantenedor.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -25,6 +43,18 @@ affiliations:
       Betânia e Calvário
     page: '191'
   notes: Saiu com Leônides de Menezes. Tese cita PEREIRA, 2013.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: presbítera
+  end: '2002'
+  end_reason: schism
+  status: confirmed
+  sources:
+  - source: drp2-memorias-decada-vii
+    quote: >-
+      Os Reverendos Leonides Menezes e Karla Patriota, com a Paróquia Betânia, saem também, mas, em virtude da Ordenação
+      feminina, vão para a Comunhão das Igrejas Episcopais Evangélicas = CIEE
+  notes: 'Local: Diocese do Recife, Paróquia Betânia.'
 events:
 - type: other
   date: '2002'

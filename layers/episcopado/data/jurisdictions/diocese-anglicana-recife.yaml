@@ -233,10 +233,45 @@ relations:
     quote: >-
       What at the beginning of those regrettable events of the schism in Recife was seen as a pastoral care provision
       for the deposed bishop and those who followed him, has become a formal primatial reception of those deposed.
+  - source: rclv-anglicanismo-identidade
+    quote: >-
+      Desde setembro de 2005, reconhecidas nossas Ordens e Ministérios, estamos sob a Autoridade Primacial da Igreja
+      Anglicana do Cone Sul da América, na pessoa do Revmo. Gregory J. Venables.
+    page: '115'
+  - source: rclv-anglicanismo-comparado-2008
+    quote: >-
+      de 2005, reconhecidas nossas Ordens e Ministérios, estamos sob a Autoridade Primacial da Igreja Anglicana
+      do Cone Sul da América, na pessoa do Revmo. Gregory J. Venables.
+    page: '70'
+  - source: rclv-anglicanismo-identidade
+    quote: Diocese Anglicana do Recife - IACSA
+    page: '8'
+  - source: drv-resgatando-iv
+    quote: >-
+      o Bispo e os Clérigos da Diocese Anglicana do Recife receberam Carta-Documento do Primaz da Igreja Anglicana
+      do Cone Sul, Revmo. Gregory J. Venables, reconhecendo as suas Ordens e Ministérios, e os colocando sob a sua
+      proteção e autoridade primacial
+  - source: rclv-anglicanismo-comparado-2008
+    quote: em breve seremos membros plenos – oficialmente – da Província do Cone Sul da América.
+    page: '80'
+  - source: rclv-anglicanismo-comparado-2008
+    quote: >-
+      Rev. Manoel Moraes é Presbítero, Cônego e Vigário Geral da Diocese do Recife; Secretário Diocesano de Cidadania;
+    page: '80'
+  - source: rclv-anglicanismo-comparado-2008
+    quote: Pároco da Paróquia Anglicana Jesus de Nazaré, em Gaibu-PE, no Arcediagado Norte.
+    page: '80'
+  - source: rclv-anglicanismo-comparado-2008
+    quote: >-
+      Rev. Marcus O. Throup é Presbítero da Diocese do Recife; Secretário Diocesano de Relações Internacionais;
+      professor no SAT-PB
+    page: '77'
   notes: >-
     Como diocese extra-provincial, com supervisão episcopal de Gregory Venables. Data só aproximada ('two years
     later' após 2005). Fontes posteriores divergem sobre o vínculo ter sido de fato provincial: pt-wiki diz que
-    Robinson 'tentou filiar' a diocese ao Cone Sul; Atwood (dez/2015) diz 'Lacking a Provincial affiliation'.
+    Robinson 'tentou filiar' a diocese ao Cone Sul; Atwood (dez/2015) diz 'Lacking a Provincial affiliation'. Sob
+    autoridade primacial (supervisão) desde set/2005; em mai/2008 a integração plena à Província ainda era tratada
+    como futura.
   discrepancies:
   - field: date
     value: c.2007
@@ -289,6 +324,18 @@ relations:
   - source: costa2021
     quote: Porto Alegre, 12 de outubro de 2005.
     page: '563'
+  - source: drp2-carta-venables-2005
+    quote: >-
+      decidiu reconhecer o Ministério e as Ordens do Bispo e do Clero da Diocese Anglicana do Recife, depostos e
+      excomungados pela Igreja Episcopal Anglicana do Brasil. O Bispo Primaz Gregório J. Venables, criou uma provisão
+      especial extraterritorial, pondo esses Ministros sob sua autoridade Primacial dentro da Comunhão Anglicana.
+  - source: drp2-carta-venables-2005
+    quote: 24 de Setembro de 2005.
+  - source: drp2-carta-venables-2005
+    quote: >-
+      prover um status de reconhecimento extra-provincial pelo meu ofício como Primaz do Cone Sul até que o Painel
+      de Referência, o Arcebispo de Cantuária, ou a Comunhão Anglicana venha, de alguma maneira, a tomar soluções
+      adequadas para essa crise
   notes: >-
     A Diocese Anglicana do Recife passa a usar, em seu papel timbrado, a fórmula "Diocese do Recife – Comunhão Anglicana,
     sob Autoridade Primacial da Igreja Anglicana do Cone Sul da América". O documento de outubro de 2005 fala em
@@ -299,11 +346,14 @@ relations:
     vínculo seguinte. Fim do vínculo não documentado: em dez/2015 Atwood escreve que a diocese estava sem filiação
     provincial, sob o Conselho de Primazes do GAFCON. O Primaz do Cone Sul, Gregory Venables, reconheceu e acolheu
     para supervisão Robinson Cavalcanti e o grupo de clérigos depostos, por carta anterior a 12/10/2005 (data exata
-    não informada no Anexo S). A IEAB protestou contra o que chamou de ingerência em sua jurisdição.
+    não informada no Anexo S). A IEAB protestou contra o que chamou de ingerência em sua jurisdição. Carta do Primaz
+    Gregory Venables de 24/09/2005. Os credenciamentos foram entregues ao bispo e a 40 clérigos no Centro Diocesano
+    Arcebispo George Carey, no Recife, pelo Cônego Bill Atwood, secretário-geral da Ekklesia, representando o Primaz.
 - type: in_communion_with
   target: diocese-of-springfield
   date: 2006-10
   led_by:
+  - peter-beckwith
   - robinson-cavalcanti
   status: probable
   sources:
@@ -311,9 +361,11 @@ relations:
     quote: >-
       Orar para que Deus possa firmar o companheirismo com a “Diocese de Springfield” de forma que este venha a
       dar muitos frutos.
+  - source: drp2-memorias-decada-x
+    quote: do Bispo Peter Beckwith, da Diocese de Springfield, da TEC, nossa “Diocese Companheira”
   notes: >-
     Boletim de oração de out/nov de 2006 fala em "firmar o companheirismo" com a Diocese de Springfield; o texto
-    não dá mais detalhes nem identifica a diocese.
+    não dá mais detalhes nem identifica a diocese. Diocese companheira em 2007.
 - type: in_communion_with
   target: diocese-de-springfield
   date: 2005-08
@@ -421,4 +473,25 @@ relations:
       Em 2008, o bispo Robinson participou, na cidade de Jerusalém, da Conferência Global sobre o Futuro do Anglicanismo
       (GAFCON). A Diocese do Recife tornou-se uma diocese extra-provincial da GAFCON
     page: '230'
-  notes: Filiou-se depois à Fraternidade de Confessantes Anglicanos.
+  - source: drp2-ord-diac-2008-07-05
+    quote: >-
+      Recentemente, uma delegação desta Diocese participou em Jerusalém da Conferência sobre o Futuro Global do
+      Anglicanismo e do surgimento da Fraternidade dos Anglicanos Confessantes
+  - source: drp2-ord-diac-2008-07-05
+    quote: A Diocese do Recife, participando dessa Fraternidade
+  notes: >-
+    Filiou-se depois à Fraternidade de Confessantes Anglicanos. Delegação da diocese na GAFCON de Jerusalém (2008)
+    e adesão à Fraternidade dos Anglicanos Confessantes (FCA).
+- type: in_communion_with
+  target: igreja-da-provincia-do-sudeste-da-asia
+  date: '2006-01-31'
+  led_by:
+  - robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: drp2-novo-primaz-sudeste-asia-2006
+    quote: nossa fraternidade em Cristo e a parceria no Evangelho permanecem tão forte quanto sempre
+  - source: drp2-novo-primaz-sudeste-asia-2006
+    quote: >-
+      O novo Arcebispo Primaz da Província Anglicana do Sudeste da Ásia, e Bispo de Singapura, Revmo. Dr. John Chew
+  notes: Carta de John Chew (Primaz eleito do Sudeste da Ásia) a Dom Robinson, de 31/01/2006.

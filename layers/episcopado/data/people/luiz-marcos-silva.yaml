@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: luiz-marcos-silva
+name: Luiz Marcos Silva
+aliases:
+- Luiz Marco
+- Luiz Marcos
+- Rev. Luiz Marcos
+biography: >-
+  Ex-pastor presbiteriano, membro da Ordem de Santo Estêvão; ordenado diácono (1999) e presbítero (2000, Caruaru)
+  por Robinson Cavalcanti na Diocese Anglicana do Recife (IEAB).
+sources:
+- source: rcor-drv-ordens-dar
+  quote: Rev. Luiz Marcos Silva
+ordinations:
+- order: diaconate
+  date: '1999-07-31'
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: rcor-drv-ord-ose-1999
+    quote: ORDENAÇÃO DE DIÁCONOS E INSTITUIÇÃO DA ORDEM EVANGÉLICA DE SANTO ESTEVÃO MÁRTIR - 31/07/99.
+  - source: rcor-drv-ord-ose-1999
+    quote: Luiz Marcos é cria da ABU de Maceió
+  notes: >-
+    Ordenação diaconal de quatro 'ministros em trânsito' vindos de outras denominações (Severino Abel, ex-capuchinho;
+    Ricardo Múcio, Luiz Marcos e Jorge Aquino, ex-presbiterianos), no culto em que se instituiu a Ordem de Santo
+    Estêvão. O pregador fala como bispo diocesano ('Em 17 meses do nosso episcopado'), isto é, Robinson Cavalcanti.
+    Local não informado (o texto menciona 'esta catedral').
+- order: presbyterate
+  date: '2000-05-06'
+  place: Caruaru-PE
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: rcor-drv-presb-luiz-marcos
+    quote: ORDENAÇÃO PRESBITERAL – REV. LUIZ MARCOS, CARUARÚ, 06 DE MAIO DE 2000
+  - source: rcor-drv-presb-luiz-marcos
+    quote: a primeira cerimônia de ordenação presbiteral da nossa Igreja na cidade de Caruaru
+  - source: rcor-drv-presb-luiz-marcos
+    quote: Esta cerimônia se reveste de uma alegria maior pela longa amizade que une o bispo ao ordinando
+  notes: >-
+    Sermão do bispo diocesano (Robinson Cavalcanti). Luiz Marcos, ex-pastor presbiteriano e membro da OSE, ordenado
+    diácono em 31/07/1999; sobrenome não informado.
+affiliations:
+- jurisdiction: ose
+  role: member
+  status: confirmed
+  sources:
+  - source: rcor-drv-ordens-dar
+    quote: Rev. Luiz Marcos Silva
+  notes: >-
+    Membro clerical da OSE. Lista da página 'Ordens Religiosas' do site da Diocese do Recife, arquivada em 24/10/2004.

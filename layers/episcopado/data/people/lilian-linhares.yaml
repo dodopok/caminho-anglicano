@@ -12,13 +12,40 @@ sources:
 ordinations:
 - order: diaconate
   date: '2000-10-28'
+  place: Paróquia da Ressurreição, João Pessoa-PB
   jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
   status: confirmed
   sources:
   - source: rta-livro35
     quote: 'Diaconato: 28 de outubro de 2000.'
+  - source: testemunho-mantenedor-2026-10-09-sermoes
+    quote: Pode deixar 28/10 pra Lilian
+  - source: rcor-drv-ord-marcio-claudio-lilian
+    quote: (Márcio, Cláudio e Lílian)
+  - source: rcor-drv-ord-marcio-claudio-lilian
+    quote: Paróquia da Ressurreição – João Pessoa, PB 29 de Outubro de 2000.
+  - source: rcor-drv-ord-marcio-claudio-lilian
+    quote: Como bispo, sinto-me abençoado em ter ordenado 26 novos pastores em três anos do nosso episcopado.
+  - source: rcor-drv-ord-marcio-claudio-lilian
+    quote: Recebereis esta noite a ordem de diáconos para sempre
+  discrepancies:
+  - field: date
+    value: '2000-10-29'
+    sources:
+    - source: rcor-drv-ord-marcio-claudio-lilian
+      quote: (Márcio, Cláudio e Lílian)
+    - source: rcor-drv-ord-marcio-claudio-lilian
+      quote: Paróquia da Ressurreição – João Pessoa, PB 29 de Outubro de 2000.
+    - source: rcor-drv-ord-marcio-claudio-lilian
+      quote: Como bispo, sinto-me abençoado em ter ordenado 26 novos pastores em três anos do nosso episcopado.
+    - source: rcor-drv-ord-marcio-claudio-lilian
+      quote: Recebereis esta noite a ordem de diáconos para sempre
   notes: >-
     Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+    Sermão do bispo diocesano (Robinson Cavalcanti) na ordenação diaconal de Márcio, Cláudio e Lílian, todos membros
+    de ordens religiosas (OSE ou franciscana). O sermão está datado de 29/10/2000, mas cita a festa de São Simão e São
+    Judas (28/10), a data dada pela própria Lílian; o mantenedor adotou 28/10/2000.
 - order: presbyterate
   date: '2001-12-15'
   place: Paróquia de Jesus de Nazaré, Jardim Progresso, Natal (RN)

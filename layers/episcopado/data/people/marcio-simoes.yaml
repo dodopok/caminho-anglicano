@@ -11,7 +11,7 @@ sources:
 ordinations:
 - order: diaconate
   date: '2008-07-05'
-  place: Catedral Anglicana do Bom Samaritano, Boa Viagem, Recife
+  place: Catedral Anglicana do Bom Samaritano, Boa Viagem, Recife-PE
   jurisdiction: diocese-anglicana-recife
   ordained_by: robinson-cavalcanti
   status: confirmed
@@ -27,6 +27,12 @@ ordinations:
   - source: cant-novas-igrejas-2024
     quote: Antes disso, já servia como ministro local desde 2002 e foi ordenado diácono e presbítero em 2008.
     page: '33'
+  - source: drp2-ord-diac-2008-07-05
+    quote: >-
+      Sermão de Ordenações Diaconais Reverendos: Josean, Lúcia Helena, Márcia Coelho, Márcio Simões e Maria de Fátima
+      Encerramento do Retiro do Clero Catedral Anglicana do Bom Samaritano Boa Viagem, Recife (PE), 05/07/2008
+  - source: drp2-ord-diac-2008-07-05
+    quote: +Dom Robinson Cavalcanti Bispo Diocesano
   notes: >-
     Ordenante não informado (bispo diocesano em 2008: Robinson Cavalcanti). Rito de ordenação diaconal de cinco
     pessoas presidido pelo bispo Edward Robinson de Barros Cavalcanti, que consta como ordinante e pregador.
@@ -217,3 +223,17 @@ events:
       O presidente do Conselho Diocesano, reverendo Márcio Simões, ficou encarregado do processo, enquanto o bispo
       auxiliar, Evilásio Tenório, substituiu interinamente Robinson no comando.
     page: '252'
+- type: other
+  date: '2004-07-18'
+  description: >-
+    Fundação do Ponto Missionário Anglicano Ressurreição, em Vitória de Santo Antão-PE (Arcediagado Centro), com
+    24 membros, em 18/07/2004, presidida por Dom Robinson; ficou sob a tutela da Paróquia Anglicana do Espírito
+    Santo e aos cuidados do ministro leigo Márcio Simões.
+  status: confirmed
+  sources:
+  - source: drp2-breves-10-2004
+    quote: >-
+      Em Vitória de Santo Antão-PE tivemos o retorno da presença da DAR com a fundação do “Ponto Missionário Anglicano
+      Ressurreição”, com 24 membros, em solenidade presidida pelo diocesano, no último dia 18/07.
+  - source: drp2-breves-10-2004
+    quote: sob os cuidados ministeriais do ML. Márcio Simões
