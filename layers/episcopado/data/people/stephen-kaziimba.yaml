@@ -6,11 +6,65 @@ aliases:
 - Samuel Stephen Kaziimba Mugalu
 - Stephen Kaziimba Mugalu
 - Stephen Kazimba
+- Stephen Samuel Kaziimba
+- The Most Revd Samuel Stephen Kaziimba Mugalu
+birth:
+  date: '1962-08-15'
+  sources:
+  - source: gacl-wp-kaziimba
+    quote: also spelled Kazimba; born 15 August 1962
 biography: Primaz da Igreja de Uganda e bispo de Kampala desde 2020; membro do Global Anglican Council.
 sources:
 - source: gace-gac-page
   quote: On 1st March 2020 he was enthroned as the Primate of the Church of Uganda and Bishop of Kampala.
+ordinations:
+- order: presbyterate
+  date: 1990-12
+  jurisdiction: cou
+  ordained_by: livingstone-mpalanyi-nkoyoyo
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: Kaziimba was ordained in December 1990 by Bishop Livingstone Mpalanyi Nkoyoyo.
+  - source: gacl-monitor-2019-kaziimba
+    quote: >-
+      was ordained to the priesthood in 1990 by former Archbishop Livingstone Mpalanyi Nkoyoyo (now deceased)
+  notes: >-
+    O GAFCON diz só 'ordained'; o Daily Monitor especifica o presbiterato. Nkoyoyo era então bispo de Mukono.
+- order: episcopate
+  date: '2008-10-26'
+  place: Mityana (Uganda)
+  jurisdiction: cou
+  office: diocesan
+  status: confirmed
+  sources:
+  - source: gacl-monitor-2019-kaziimba
+    quote: >-
+      Kaziimba was consecrated bishop on October 26, 2008, and has served as the Bishop of Mityana Diocese for almost
+      11 years.
+  - source: gacl-wp-kaziimba
+    quote: >-
+      Kaziimba was [[consecrated]] as a bishop and was installed as 4th Bishop of Mityana Diocese, on 26 October
+      2008 replacing Bishop Dr. ''Dunstan Kopriano Bukenya''.
+  notes: >-
+    Sagrante principal não informado pelas fontes abertas; o arcebispo de Uganda em 2008 era Henry Luke Orombi.
+    Local presumido pela sé (não declarado).
 affiliations:
+- jurisdiction: cou
+  role: diocesan_bishop
+  diocese: diocese-de-mityana
+  start: '2008-10-26'
+  end: '2020-03-01'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: gacl-monitor-2019-kaziimba
+    quote: >-
+      Kaziimba was consecrated bishop on October 26, 2008, and has served as the Bishop of Mityana Diocese for almost
+      11 years.
+  - source: gacl-wp-kaziimba
+    quote: installed as 4th Bishop of Mityana Diocese, on 26 October 2008
+  notes: Quarto bispo de Mityana, sucessor de Dunstan Kopriano Bukenya.
 - jurisdiction: cou
   role: primate
   diocese: diocese-of-kampala
@@ -19,3 +73,30 @@ affiliations:
   sources:
   - source: gace-gac-page
     quote: On 1st March 2020 he was enthroned as the Primate of the Church of Uganda and Bishop of Kampala.
+  - source: gacl-monitor-2019-kaziimba
+    quote: He will be installed as Archbishop on March 1, 2020, at St Paul’s Cathedral, Namirembe
+  notes: >-
+    Eleito nono arcebispo de Uganda em 28/08/2019 pela Câmara dos Bispos; sucedeu Stanley Ntagali; instalado na
+    Catedral de São Paulo, Namirembe.
+- jurisdiction: gac
+  role: other
+  role_description: membro do Global Anglican Council
+  start: 2026-03
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: The Most Revd Samuel Stephen Kaziimba Mugalu Primate of the Church of Uganda
+  - source: gace-ai-kaziimba-abuja
+    quote: >-
+      “The GAFCON Primates Council was transitioned into the newly established Global Anglican Council, which will
+      bring together primates, advisors, and guarantors
+- jurisdiction: gafcon
+  role: other
+  role_description: membro do Conselho dos Primazes
+  end: 2026-03
+  end_reason: term_end
+  status: confirmed
+  sources:
+  - source: gacl-ai-2023-uxbridge
+    quote: The Most Reverend Stepehen Kaziimba – Uganda
+  notes: Signatário em 9/11/2023.

@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: glenn-lyons
+name: Glenn Lyons
+affiliations:
+- jurisdiction: gafcon
+  role: other
+  role_description: membro do Conselho dos Primazes
+  end: '2024-02-10'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: gacl-ai-2023-uxbridge
+    quote: Presiding Bishop Glenn Lyons – The Provence of REACH Southern Africa
+  - source: gacl-acl-ngubane-2024
+    quote: The service is introduced by outgoing Presiding Bishop, Bishop Glenn Lyons.
+  notes: Bispo presidente da REACH-SA, sucedido por Siegfried Ngubane em 10/02/2024.

@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: provincia-eclesiastica-de-jos
+name: Província Eclesiástica de Jos
+type: diocese
+relations:
+- type: part_of
+  target: church-of-nigeria
+  status: probable
+  sources:
+  - source: gacl-ai-2019-ndukuba
+    quote: >-
+      on the 22nd September 2017, the Rt Revd Henry Chukwudum Ndukuba was elected as Archbishop of the Ecclesiastical
+      Province of Jos.
+  - source: gacl-con-primate-page
+    quote: he was elected Archbishop of Jos Ecclesiastical province and presented January 12, 2018

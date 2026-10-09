@@ -381,6 +381,23 @@ affiliations:
   notes: >-
     Fim = dissolução do Conselho de Primazes do GAFCON (5/03/2026). A data de 21/04/2023 vem da biografia na página
     do Global Anglican Council, que a reaproveita do antigo conselho.
+- jurisdiction: gafcon
+  role: other
+  role_description: vice-presidente do Conselho dos Primazes
+  start: '2023-04-21'
+  end: 2026-03
+  end_reason: term_end
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: Archbishop Miguel Uchoa assumed his position as Vice Chairman on 21 April 2023.
+  - source: ai-2023-04-22-gafcon-chair
+    quote: >-
+      Archbishop Mbanda, who served as GAFCON vice-chairman, will be succeeded by the Primate of the Anglican Church
+      of Brazil, the Most Rev. Miguel Uchoa, and a co-vice chair, the Most Rev. Kiniska Raffel, Archbishop of Sydney.
+  notes: >-
+    Covice-presidente com Kanishka Raffel (arcebispo de Sydney). Em março de 2026 passou a vice-presidente do Global
+    Anglican Council.
 - jurisdiction: gac
   role: other
   role_description: vice-presidente do Global Anglican Council (Vice Chairman / Deputy Chair)
@@ -406,6 +423,11 @@ affiliations:
     quote: likewise Archbishop Miguel Uchoa was unanimously elected as Vice- Chairman
   - source: gace-abuja-affirmation
     quote: Archbishop Miguel Uchôa has been elected Deputy Chair
+  - source: gacl-ai-dobbs-abuja
+    quote: >-
+      We celebrate the election of Archbishop Laurent Mbanda as Chair, Archbishop Miguel Uchôa as Deputy Chair
+  - source: gacl-acl-gac-2026
+    quote: Miguel Uchoa, Archbishop of the Anglican Church in Brazil, was elected Vice-Chairman
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: reitor
@@ -432,6 +454,14 @@ affiliations:
   notes: >-
     Assina a carta a Venables (17/10/2005) como arcediago. Local: Arcediagado Sul. Arcediagado Sul em out/nov de
     2006. Cargo exercido em julho de 2007 (carta do clero ao primaz do Cone Sul); início e fim não informados.
+- jurisdiction: gafcon
+  role: other
+  role_description: membro do Conselho dos Primazes
+  status: confirmed
+  sources:
+  - source: gacl-ai-2023-uxbridge
+    quote: The Most Reverend Miguel Uchoa – Brazil
+  notes: Signatário do comunicado de 9/11/2023.
 events:
 - type: other
   date: '2017-05-06'

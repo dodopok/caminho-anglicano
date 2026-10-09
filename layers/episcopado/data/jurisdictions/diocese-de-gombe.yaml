@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-gombe
+name: Diocese de Gombe
+type: diocese
+relations:
+- type: part_of
+  target: church-of-nigeria
+  status: probable
+  sources:
+  - source: gacl-ai-2019-ndukuba
+    quote: On 25 November 1999 the new diocese was inaugurated as the 71st diocese of the Church of Nigeria.
+  - source: gacl-wp-ndukuba
+    quote: Bishop of [[Anglican Diocese of Gombe]] (1999–2020)

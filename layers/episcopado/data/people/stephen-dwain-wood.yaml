@@ -1,14 +1,81 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: stephen-dwain-wood
 name: Stephen Dwain Wood
+full_name: Stephen Dwain Wood
 aliases:
 - Steve Wood
+- The Most Rev. Stephen D. Wood
+birth:
+  date: '1963-10-12'
+  sources:
+  - source: gacl-acna-wood-bio
+    quote: Born October 12, 1963, Archbishop Wood is the oldest of two sons
 biography: Eleito primaz da ACNA em junho de 2024, sucedendo Foley Beach.
 sources:
 - source: cant-novas-igrejas-2024
   quote: Stephen Dwain Wood sucedeu o arcebispo Foley Beach, na primazia da denominação
   page: '22'
+ordinations:
+- order: diaconate
+  date: '1991-06-15'
+  jurisdiction: tec
+  ordained_by: james-r-moodey
+  status: confirmed
+  sources:
+  - source: gacl-acna-wood-bio
+    quote: >-
+      Archbishop Wood was ordained to the diaconate on June 15, 1991 and to the priesthood on February 1, 1992 by
+      Bishop James R. Moodey, VIII Bishop of Ohio.
+  notes: Diocese Episcopal de Ohio.
+- order: presbyterate
+  date: '1992-02-01'
+  jurisdiction: tec
+  ordained_by: james-r-moodey
+  status: confirmed
+  sources:
+  - source: gacl-acna-wood-bio
+    quote: >-
+      Archbishop Wood was ordained to the diaconate on June 15, 1991 and to the priesthood on February 1, 1992 by
+      Bishop James R. Moodey, VIII Bishop of Ohio.
+  notes: Diocese Episcopal de Ohio.
+- order: episcopate
+  date: '2012-08-25'
+  place: St. Andrew’s Anglican Church, Mount Pleasant (Carolina do Sul, EUA)
+  jurisdiction: acna
+  office: diocesan
+  principal_consecrator: robert-duncan
+  co_consecrators:
+  - alphonza-gadsden
+  - john-guernsey
+  - roger-ames
+  status: confirmed
+  sources:
+  - source: gacl-acna-wood-bio
+    quote: >-
+      Archbishop Wood was elected as the first Bishop of the Diocese of the Carolinas by the College of Bishops
+      on June 5, 2012. He was consecrated Bishop at St. Andrew’s Anglican Church in Mt. Pleasant, SC by Archbishop
+      Robert Duncan on August 25, 2013. Co-Consecrators included ACNA Bishops Roger Ames, Alphonza Gadsen, and John
+      Guernsey.
+  - source: gacl-wp-wood
+    quote: >-
+      Wood was consecrated on August 25, 2012, at St. Andrew's by Archbishop [[Robert Duncan (bishop)|Robert Duncan]].
+      Co-consecrators included Archbishop-elect [[Stanley Ntagali]] of Uganda and Bishops Guernsey, [[Roger Ames]],
+      and [[Alphonza Gadsden]].
+  notes: >-
+    O site da ACNA dá o ano 2013, mas a eleição foi em 05/06/2012 e a Wikipédia (citando reportagem de 2012) dá
+    2012; 25/08/2012 caiu num sábado. A Wikipédia acrescenta Stanley Ntagali (arcebispo eleito de Uganda) entre
+    os co-sagrantes; a ACNA o omite.
 affiliations:
+- jurisdiction: acna
+  role: diocesan_bishop
+  diocese: diocese-das-carolinas
+  start: '2012-08-25'
+  status: confirmed
+  sources:
+  - source: gacl-acna-wood-bio
+    quote: >-
+      Archbishop Wood was elected as the first Bishop of the Diocese of the Carolinas by the College of Bishops
+      on June 5, 2012.
 - jurisdiction: acna
   role: archbishop
   start: 2024-06
@@ -19,3 +86,36 @@ affiliations:
       Em junho de 2024, o novo primaz da ACNA foi eleito durante a Assembleia Provincial. Stephen Dwain Wood sucedeu
       o arcebispo Foley Beach
     page: '22'
+- jurisdiction: acna
+  role: primate
+  start: '2024-06-28'
+  status: confirmed
+  sources:
+  - source: gacl-acna-wood-bio
+    quote: >-
+      The Most Rev. Stephen D. Wood was elected as the third Archbishop of the Province of the Anglican Church in
+      North America on June 22, 2024.
+  - source: gacl-wp-wood
+    quote: He formally took office on June 28, at the conclusion of the ACNA's provincial assembly.
+  notes: >-
+    Eleito em 22/06/2024; posse em 28/06/2024 (só pela Wikipédia, citando RNS). Inibido do exercício do ministério
+    desde 16/11/2025; as funções do arcebispo são exercidas pelo deão da província, Julian Dobbs.
+events:
+- type: other
+  date: '2025-11-16'
+  description: >-
+    Stephen Dwain Wood, arcebispo da ACNA, é inibido do exercício do ministério ordenado pelo deão da província,
+    Julian Dobbs, com o consentimento dos cinco bispos diocesanos mais antigos, após apresentação de acusações (presentment);
+    a inibição foi prorrogada em 12/01/2026 até o fim do processo. O julgamento no Tribunal para o Julgamento de
+    um Bispo terminou em 11/09/2026, com sentença prevista até 21/12/2026.
+  status: confirmed
+  sources:
+  - source: gacl-acna-trial-page
+    quote: >-
+      On Sunday, November 16 Bishop Julian Dobbs who serves as Dean of the Province, inhibited Archbishop Stephen
+      D. Wood from the exercise of ordained ministry in the Anglican Church in North America, in accordance with
+      the canons of our Church.
+  - source: gacl-acna-trial-page
+    quote: >-
+      The trial of Archbishop Stephen Wood concluded September 11, 2026, following five days of testimony from 38
+      witnesses. The Court expects ... an opinion due no later than December 21, 2026.

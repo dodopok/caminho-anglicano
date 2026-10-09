@@ -13,17 +13,37 @@ sources:
   quote: From 1994 to 2017, Archbishop Enrique was pastor of Iglesia Providencia in Santiago.
 ordinations:
 - order: episcopate
-  date: '2018'
-  place: Catedral de São Paulo, Valparaíso
-  jurisdiction: iach
+  date: '2018-07-15'
+  place: Catedral de São Paulo (St. Paul’s Cathedral), Valparaíso (Chile)
+  jurisdiction: iacs
   office: diocesan
+  principal_consecrator: gregory-venables
   status: probable
   sources:
   - source: gace-gac-page
     quote: >-
       He was consecrated to the episcopacy at St. Paul’s Cathedral, Valparaíso in 2018, and became diocesan bishop
       upon the formation of the diocese that year.
-  notes: Sagrantes não informados na fonte.
+  - source: gacl-cj-2018-chile
+    quote: >-
+      Next Sunday, July 15 at 11:00 a.m., the Ceremony of Consecration and Recognition of Diocesan Bishops of the
+      Anglican Church of Chile will be held. ... The priests who will be consecrated by laying on hands are the
+      reverends Samuel Morrison for the Diocese of Valparaíso and Enrique Lago for the Diocese of Concepción.
+  - source: gacl-stpaul-valpo-2018
+    quote: >-
+      The present Presiding bishop of the Province of the Southern Cone The Revmo. Gregory Venables will be with
+      us for the Service of celebration and thanksgiving
+  - source: gace-gac-page
+    quote: He was consecrated to the episcopacy at St. Paul’s Cathedral, Valparaíso in 2018
+  - source: gacl-wp-lago
+    quote: '| consecration     = 15 July 2018
+
+      | consecrated_by   = [[Gregory Venables]]'
+  notes: >-
+    Sagrado junto com Samuel Morrison (Valparaíso). Data e local por anúncios
+    prévios e pelo GAFCON (ano e catedral); sagrante principal Gregory Venables, então primaz do Cone Sul, pela
+    Wikipédia e pela presença anunciada no culto. Ainda sob a Igreja Anglicana da América do Sul (Cone Sul), antes
+    da criação da província do Chile em 04/11/2018.
 affiliations:
 - jurisdiction: iach
   role: diocesan_bishop
@@ -35,6 +55,10 @@ affiliations:
     quote: >-
       In 2018 he was elected as the future diocesan bishop of Concepción (later called the Diocese of the South
       of Chile).
+  - source: gace-gac-page
+    quote: >-
+      In 2018 he was elected as the future diocesan bishop of Concepción (later called the Diocese of the South
+      of Chile). ... and became diocesan bishop upon the formation of the diocese that year.
   notes: 'Local: Concepción.'
 - jurisdiction: iach
   role: archbishop
@@ -48,13 +72,22 @@ affiliations:
   notes: Sucedeu Tito Zavala como segundo arcebispo da Igreja Anglicana do Chile.
 - jurisdiction: iach
   role: primate
-  start: 2025-01
+  start: '2025-01-12'
   status: confirmed
   sources:
   - source: gace-gac-page
     quote: >-
       In January 2025, Archbishop Enrique succeeded Tito Zavala as the second archbishop of the Anglican Church
       of Chile.
+  - source: gacl-dd-2025-santiago
+    quote: >-
+      12 January 2025 ... At the same service Bishop Enrique Lago will be enthroned as Archbishop of Iglesia Anglicana
+      de Chile.
+  - source: gacl-tlc-2025-chile
+    quote: >-
+      the installation of the new Primate Bishop of the Anglican Province of Chile (the Most Rev. Enrique Lago Zugadi),
+      and a farewell to the Primate (the Most Rev. Hector Zavala Muñoz
+  notes: Instalado em Santiago no mesmo culto em que Juan Esteban Saravia foi sagrado bispo de Santiago.
 - jurisdiction: gac
   role: other
   role_description: membro do Global Anglican Council (primaz)
@@ -68,3 +101,12 @@ affiliations:
   notes: >-
     Consta da lista oficial do conselho divulgada pelo secretário-geral (noticiada em 27/03/2026); data exata de
     ingresso não informada.
+- jurisdiction: gac
+  role: other
+  role_description: membro do Global Anglican Council
+  start: 2026-03
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: The Most Revd Enrique Lago Zugadi Archbishop of the Anglican Church of Chile
+  notes: Listado entre os 'Primates'.

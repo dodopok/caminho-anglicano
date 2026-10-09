@@ -2,7 +2,14 @@
 id: paul-donison
 name: Paul Donison
 aliases:
+- Paul Danison
 - Rt Revd Paul Donison
+- The Right Revd Paul Donison
+birth:
+  date: '1977'
+  sources:
+  - source: gacl-wp-donison
+    quote: '''''''Paul Donison'''''' (born 1977) is a Canadian-born American Anglican bishop.'
 biography: >-
   Reitor e deão da Christ Church Plano (Texas); secretário-geral do GAFCON desde 2023 e do Global Anglican Council/Global
   Anglican Communion desde mar/2026; sagrado bispo em Ruanda em 2024.
@@ -13,13 +20,29 @@ sources:
     before being called to Texas in 2016
 ordinations:
 - order: episcopate
-  date: '2024'
+  date: '2024-02-04'
+  place: Holy Trinity Cathedral, Kibagabaga, Kigali (Ruanda)
   jurisdiction: pear
+  office: auxiliary
+  principal_consecrator: laurent-mbanda
   status: probable
   sources:
   - source: gace-gac-page
     quote: consecrated as a Bishop in Rwanda in 2024
-  notes: Sagrado em Ruanda; sagrantes e data exata não informados.
+  - source: gace-gac-page
+    quote: >-
+      In 2023 he was elected by the Gafcon Primates Council as General Secretary, and consecrated as a Bishop in
+      Rwanda in 2024.
+  - source: gacl-wp-donison
+    quote: >-
+      Gafcon Chairman [[Laurent Mbanda]] consecrated Donison as assistant bishop in the Diocese of Gasabo on February
+      4, 2024, at Holy Trinity Cathedral in [[Kibagabaga]], [[Kigali]].
+  - source: gacl-rwandatv-donison
+    quote: Itorero Angilikani ry’u Rwanda ryimitse Paul Danison nka musenyeri wungirije muri Diyoseze ya Gasabo
+  notes: >-
+    Sagrado em Ruanda; sagrantes e data exata não informados. Bispo assistente (musenyeri wungirije) da Diocese
+    de Gasabo, cujo bispo é Laurent Mbanda. Ano e país pelo GAFCON; data, local e sagrante pela Wikipédia, que cita
+    o vídeo da RwandaTV. Em 2024 nomeado bispo assistente do Great Plains Missionary District (ACNA).
 affiliations:
 - jurisdiction: gafcon
   role: other
@@ -34,6 +57,19 @@ affiliations:
   notes: >-
     Continua a assinar como "Gafcon General Secretary" depois de 5/03/2026; o comunicado de 1/10/2026 da "Global
     Anglican Communion (Gafcon)" o chama "its General Secretary".
+- jurisdiction: gafcon
+  role: other
+  role_description: secretário-geral
+  start: '2023-11-09'
+  end: 2026-03
+  end_reason: term_end
+  status: confirmed
+  sources:
+  - source: gacl-ai-2023-uxbridge
+    quote: >-
+      We appointed the Very Reverend Paul Donison, Rector and Dean of Christ Church Cathedral, Plano, Texas, as
+      the next General Secretary
+  notes: Sucedeu Ben Kwashi. Em março de 2026 passou a secretário-geral do Global Anglican Council.
 - jurisdiction: acna
   role: other
   role_description: bispo assistente
@@ -69,6 +105,13 @@ affiliations:
     quote: and myself, Bishop Paul Donison, as General Secretary
   - source: gace-gac-page
     quote: and in 2026 was elected as General Secretary of the Global Anglican Communion.
+  - source: gacl-ai-dobbs-abuja
+    quote: and our own Bishop Paul Donison as General Secretary of this newly constituted Council.
+  - source: gace-gac-page
+    quote: in 2026 was elected as General Secretary of the Global Anglican Communion.
+  notes: >-
+    Segundo o comunicado de Donison de 05/03/2026 (citado pelo Anglican Ink), os mandatos dos três dirigentes terminam
+    no fim do GAFCON V (Atenas, 2028).
 events:
 - type: other
   date: '2026-03-05'

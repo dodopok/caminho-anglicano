@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: anglican-diocese-of-south
+name: Anglican Diocese of the South
+type: diocese
+relations:
+- type: part_of
+  target: acna
+  status: confirmed
+  sources:
+  - source: gacl-ai-2016-beach
+    quote: On 9 Oct 2010 he was consecrated the first bishop of the ACNA’s diocese of the South.
+  - source: ai-2023-04-22-gafcon-chair
+    quote: Though he retires as archbishop, he remains Bishop of the Diocese of the South.

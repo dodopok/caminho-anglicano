@@ -4,17 +4,43 @@ name: Glenn Davies
 full_name: Glenn Naunton Davies
 aliases:
 - Glenn Naunton Davies
+- The Rt Revd Dr Glenn Naunton Davies
+birth:
+  date: '1950-09-26'
+  sources:
+  - source: gacl-wp-davies
+    quote: '| birth_date       = {{Birth date and age|1950|9|26|df=y}}'
 biography: >-
   Ex-arcebispo de Sydney; bispo da Diocese of the Southern Cross desde 2022; conselheiro do Global Anglican Council.
 sources:
 - source: gace-gac-page
   quote: Since August 2022 he has served as bishop of the Diocese of the Southern Cross.
+ordinations:
+- order: episcopate
+  date: '2001-12-21'
+  jurisdiction: diocese-of-sydney
+  office: auxiliary
+  status: probable
+  sources:
+  - source: gacl-wp-davies
+    quote: '| consecration     = 21 December 2001'
+  notes: >-
+    Bispo de North Sydney (bispo regional da Diocese de Sydney). Sagrante não informado. A página do GAFCON dá 'Bishop
+    of the North Sydney from 2002 to 2014' e 'Archbishop of Sydney ... from 2003 to 2021' (o segundo ano inicial
+    parece erro).
 affiliations:
 - jurisdiction: dsc
   role: other
   role_description: bispo diocesano
   start: 2022-08
   status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: Since August 2022 he has served as bishop of the Diocese of the Southern Cross.
+- jurisdiction: dsc
+  role: diocesan_bishop
+  start: 2022-08
+  status: probable
   sources:
   - source: gace-gac-page
     quote: Since August 2022 he has served as bishop of the Diocese of the Southern Cross.
@@ -32,3 +58,6 @@ affiliations:
       New Zealand, Glenn Davies of the Diocese of the Southern Cross (which serves parishes that have broken away
       from the Anglican Church of Australia), and Yassir Eric of EKKIOS, a missionary movement forming congregations
       in predominantly Muslim regions.
+  - source: gace-gac-page
+    quote: The Rt Revd Dr Glenn Naunton Davies Bishop of the Diocese of the Southern Cross
+  notes: Listado entre os 'Advisors'.

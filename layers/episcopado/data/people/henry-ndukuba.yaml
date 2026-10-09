@@ -5,11 +5,90 @@ full_name: Henry Chukwudum Ndukuba
 aliases:
 - Henry Chukwudum Ndukuba
 - Most Revd Henry Ndukuba
+- The Most Revd Henry Chukwudum Ndukuba
+birth:
+  date: '1961-07-18'
+  sources:
+  - source: gacl-con-primate-page
+    quote: >-
+      He was born on the 18 th July 1961, to Mr. and Mrs. Silas O. Ndukuba of Ogberuru in orlu Local Government
+      Area of Imo State.
 biography: Primaz da Igreja da Nigéria desde 2020; membro do Global Anglican Council.
 sources:
 - source: gace-gac-page
   quote: was confirmed as the Primate of the Church of Nigeria (Anglican Communion) on 25th March 2020.
+ordinations:
+- order: diaconate
+  date: '1984'
+  jurisdiction: church-of-nigeria
+  status: probable
+  sources:
+  - source: gacl-con-primate-page
+    quote: He was ordained into the Holy Order diaconate 1984, and priesthood 1985.
+  - source: gace-gac-page
+    quote: Archbishop Henry was ordained in 1984 at the age of 23
+  notes: >-
+    A biografia do Anglican Cable Network reproduzida pelo Anglican Ink (2019) diz 'ordained into the Holy Orders
+    in September, 1989' e nascimento em setembro de 1959, em conflito com o site da Igreja da Nigéria.
+- order: presbyterate
+  date: '1985'
+  jurisdiction: church-of-nigeria
+  status: probable
+  sources:
+  - source: gacl-con-primate-page
+    quote: He was ordained into the Holy Order diaconate 1984, and priesthood 1985.
+- order: episcopate
+  date: '1999-09-21'
+  jurisdiction: church-of-nigeria
+  office: diocesan
+  principal_consecrator: joseph-adetiloye
+  status: probable
+  sources:
+  - source: gacl-ai-2019-ndukuba
+    quote: >-
+      He rose though its rank and was elected Pioneer Bishop of the Diocese of Gombe. He was consecrated on the
+      21st September, 1999. On 25 November 1999 the new diocese was inaugurated as the 71st diocese of the Church
+      of Nigeria.
+  - source: gacl-con-primate-page
+    quote: >-
+      In July 1999 he was requested to return as Dean of St. Francis college Wusasa but by September 1999 he was
+      elected the Bishop of Gombe.
+  - source: gacl-wp-ndukuba
+    quote: '| consecration = September 1999
+
+      | consecrated_by = [[J. Abiodun Adetiloye]]'
+  notes: >-
+    Data pela biografia oficial (Anglican Cable Network). Sagrante principal só pela infobox da Wikipédia, sem nota;
+    Adetiloye era o primaz da Nigéria em 1999. Local não informado.
 affiliations:
+- jurisdiction: church-of-nigeria
+  role: diocesan_bishop
+  diocese: diocese-de-gombe
+  start: '1999-11-25'
+  end: '2020'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: gacl-ai-2019-ndukuba
+    quote: On 25 November 1999 the new diocese was inaugurated as the 71st diocese of the Church of Nigeria.
+  - source: gacl-wp-ndukuba
+    quote: Bishop of [[Anglican Diocese of Gombe]] (1999–2020)
+  notes: Primeiro bispo de Gombe; deixou a diocese ao assumir a primazia (sucedido por Cletus Tambari).
+- jurisdiction: church-of-nigeria
+  role: archbishop
+  diocese: provincia-eclesiastica-de-jos
+  start: '2017-09-22'
+  end: '2020'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: gacl-ai-2019-ndukuba
+    quote: >-
+      on the 22nd September 2017, the Rt Revd Henry Chukwudum Ndukuba was elected as Archbishop of the Ecclesiastical
+      Province of Jos.
+  - source: gacl-con-primate-page
+    quote: he was elected Archbishop of Jos Ecclesiastical province and presented January 12, 2018
+  notes: Eleito em 22/09/2017; apresentado em 12/01/2018.
 - jurisdiction: church-of-nigeria
   role: primate
   start: '2020-03-25'
@@ -17,3 +96,40 @@ affiliations:
   sources:
   - source: gace-gac-page
     quote: was confirmed as the Primate of the Church of Nigeria (Anglican Communion) on 25th March 2020.
+- jurisdiction: church-of-nigeria
+  role: primate
+  diocese: abuja
+  start: '2020-03-25'
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: was confirmed as the Primate of the Church of Nigeria (Anglican Communion) on 25th March 2020.
+  - source: gacl-ai-2019-ndukuba
+    quote: >-
+      September 24th 2019 in an Episcopal Synod ... The Most Revd Henry Chukwudum Ndukuba is elected, 5th Archbishop,
+      Metropolitan and Primate of All Nigeria. ... He will assume office in March 2020 at the expiration of the
+      term in office of the current Primate of the Church (The Most Revd Dr Nicholas Okoh).
+  notes: >-
+    Eleito em 24/09/2019 (Asaba); sucedeu Nicholas Okoh. O primaz da Nigéria é também arcebispo da Província de
+    Abuja e bispo de Abuja.
+- jurisdiction: gac
+  role: other
+  role_description: membro do Global Anglican Council
+  start: 2026-03
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: The Most Revd Henry Chukwudum Ndukuba Primate of the Church of Nigeria (Anglican Communion)
+  notes: Listado entre os 'Primates' do conselho.
+- jurisdiction: gafcon
+  role: other
+  role_description: membro do Conselho dos Primazes
+  end: 2026-03
+  end_reason: term_end
+  status: confirmed
+  sources:
+  - source: gacl-ai-2023-uxbridge
+    quote: The Most Reverend Henry Ndukuba – Church of All Nigeria
+  notes: >-
+    Signatário em 9/11/2023; em março de 2026 o conselho foi transformado no Global Anglican Council, do qual é
+    membro (primazes).

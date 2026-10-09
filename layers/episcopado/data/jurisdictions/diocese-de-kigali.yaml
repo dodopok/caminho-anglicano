@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-kigali
+name: Diocese de Kigali
+type: diocese
+relations:
+- type: part_of
+  target: pear
+  status: probable
+  sources:
+  - source: gacl-wp-kolini
+    quote: '| title            = Primate of Rwanda, Bishop of Kigali
+
+      | term             = 1998 - January 2011'
+  - source: gacl-newtimes-2010-shyira
+    quote: >-
+      The retired Archbishop of Anglican Church in Rwanda, Emmanuel Kolini, assisted by bishops from other dioceses
+      presided over the ceremony. Also present was the incoming Archbishop of the Anglican Church of Rwanda, Onesphore
+      Rwaje.

@@ -1,7 +1,76 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: laurent-mbanda
 name: Laurent Mbanda
+aliases:
+- The Most Revd Dr Laurent Mbanda
+birth:
+  date: '1954-10-25'
+  sources:
+  - source: gace-gac-page
+    quote: Archbishop Laurent Mbanda was born in 1954.
+  - source: gacl-wp-mbanda
+    quote: '''''''Laurent Mbanda'''''' (born 25 October 1954)'
+biography: >-
+  Bispo de Shyira (Ruanda) desde 2010; quarto arcebispo e primaz da Igreja Anglicana de Ruanda desde 2018; presidente
+  do GAFCON desde 2023 e do Global Anglican Council desde 2026.
+sources:
+- source: gace-gac-page
+  quote: Archbishop Laurent Mbanda was born in 1954.
+- source: gacl-wp-mbanda
+  quote: '''''''Laurent Mbanda'''''' (born 25 October 1954)'
+ordinations:
+- order: presbyterate
+  date: null
+  place: Burundi
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: gace-gac-page
+    quote: >-
+      He graduated at the Kenya Highlands Bible College, in Kericho, Kenya, before returning to Burundi, where he
+      was ordained an Anglican priest. He moved to the United States in 1984
+  notes: Ordenado presbítero no Burundi, antes de 1984; data e ordenante não informados.
+- order: episcopate
+  date: '2010-03-28'
+  place: Musanze (Ruanda)
+  jurisdiction: pear
+  office: coadjutor
+  principal_consecrator: emmanuel-kolini
+  status: probable
+  sources:
+  - source: gacl-kagame-2010-shyira
+    quote: >-
+      President Kagame presides over the consecration of new Shyira Diocese Bishop –Musanze, 28 March 2010 ... President
+      Kagame today presided over the consecration of the new Shyira Diocese Bishop, Dr. Laurent Mbanda, to replace
+      Bishop John Rucyahana
+  - source: gace-gac-page
+    quote: He was consecrated Bishop of the Diocese of Shyiria in March 2010.
+  - source: gacl-wp-mbanda
+    quote: '| consecration     = May 2010
+
+      | consecrated_by   = [[Emmanuel Kolini]]'
+  notes: >-
+    Data e local confirmados (site da Presidência de Ruanda, 28/03/2010; 'presided' refere-se à presença do presidente
+    da República, não ao rito). Sagrante principal Emmanuel Kolini (então arcebispo de Ruanda) só pela infobox da
+    Wikipédia, que dá 'May 2010' em contradição com o próprio texto (março). Sagrado como sucessor designado de
+    John Rucyahana; entronizado bispo de Shyira em 14/11/2010.
 affiliations:
+- jurisdiction: pear
+  role: diocesan_bishop
+  diocese: diocese-de-shyira
+  start: '2010-11-14'
+  status: confirmed
+  sources:
+  - source: gacl-newtimes-2010-shyira
+    quote: >-
+      MUSANZE - The Anglican Church of Rwanda, Sunday, enthroned Dr Laurent Mbanda as the new Bishop of Shyira Diocese,
+      replacing the retiring Bishop John Rucyahana, who has been at the helm of the Diocese since 1997. Monday,
+      November 15, 2010
+  - source: gacl-wp-mbanda
+    quote: He was the bishop of the Diocese of Shyira when he was elected the fourth archbishop and primate
+  notes: >-
+    Entronização na Catedral de São João Batista, Musanze, presidida pelo arcebispo emérito Emmanuel Kolini; presente
+    o arcebispo eleito Onesphore Rwaje. Fim não informado (a Wikipédia dá Shyira 2010–2018 e depois Gasabo).
 - jurisdiction: pear
   role: primate
   start: '2018-06-10'
@@ -11,8 +80,14 @@ affiliations:
     quote: >-
       He was then elected the fourth Archbishop and Primate of the Province of the Anglican Church of Rwanda on
       17 January 2018. His enthronement took place on 10 June 2018.
+  - source: gacl-wp-mbanda
+    quote: >-
+      elected the fourth archbishop and primate of the [[Anglican Church of Rwanda|Province of the Anglican Church
+      of Rwanda]] on 17 January 2018
   notes: >-
     Eleito em 17/01/2018. Em 11/09/2026 Manasseh Gahima foi eleito seu sucessor, com instalação marcada para 25/10/2026.
+    Eleito em 17/01/2018 pela Câmara dos Bispos na Catedral de Saint-Étienne, Kigali; entronizado em 10/06/2018;
+    sucedeu Onesphore Rwaje.
 - jurisdiction: gafcon
   role: other
   role_description: presidente do Conselho de Primazes (Chairman, Gafcon Primates Council)
@@ -29,6 +104,23 @@ affiliations:
   notes: >-
     Fim = dissolução do Conselho de Primazes do GAFCON e eleição de Mbanda para presidente do Global Anglican Council
     (5/03/2026).
+- jurisdiction: gafcon
+  role: other
+  role_description: presidente do Conselho dos Primazes
+  start: '2023-04-21'
+  end: 2026-03
+  end_reason: term_end
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: Archbishop Laurent Mbanda assumed his position as Chairman on 21 April 2023.
+  - source: ai-2023-04-22-gafcon-chair
+    quote: >-
+      the primates’ council elected Archbishop Mbanda to succeed the Most Rev. Foley Beach as leader of the Anglican
+      reform and renewal movement. Archbishop Mbanda, who served as GAFCON vice-chairman
+  notes: >-
+    Eleito no GAFCON IV (Kigali, 17–21/04/2023), sucedendo Foley Beach; antes era vice-presidente. Em março de 2026
+    o Conselho dos Primazes foi substituído pelo Global Anglican Council, que ele passou a presidir.
 - jurisdiction: gac
   role: other
   role_description: presidente do Global Anglican Council (Chairman)
@@ -60,7 +152,24 @@ affiliations:
       Anglican Council
   - source: gace-abuja-affirmation
     quote: We were delighted to hear at our gathering that Archbishop Laurent Mbanda has been elected Chair
-  notes: Mandato até o fim da GAFCON V (Atenas, 2028).
+  - source: gacl-ai-dobbs-abuja
+    quote: >-
+      We celebrate the election of Archbishop Laurent Mbanda as Chair, Archbishop Miguel Uchôa as Deputy Chair,
+      and our own Bishop Paul Donison as General Secretary of this newly constituted Council.
+  - source: gacl-acl-gac-2026
+    quote: >-
+      the council unanimously elected Laurent Mbanda, Archbishop of Rwanda, to serve as Chairman of the Global Anglican
+      Council.
+  notes: Mandato até o fim da GAFCON V (Atenas, 2028). Eleito no G26 em Abuja (3–6/03/2026).
+- jurisdiction: gafcon
+  role: other
+  role_description: membro do Conselho dos Primazes
+  status: confirmed
+  sources:
+  - source: gacl-ai-2023-uxbridge
+    quote: The Gafcon Primates Council The Most Reverend Laurent Mbanda – Rwanda
+  notes: >-
+    Composição do Conselho dos Primazes em 9/11/2023 (comunicado de Uxbridge), sob a presidência de Mbanda.
 events:
 - type: other
   date: '2026-08-23'

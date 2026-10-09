@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-mityana
+name: Diocese de Mityana
+type: diocese
+relations:
+- type: part_of
+  target: cou
+  status: confirmed
+  sources:
+  - source: gacl-monitor-2019-kaziimba
+    quote: >-
+      Kaziimba was consecrated bishop on October 26, 2008, and has served as the Bishop of Mityana Diocese for almost
+      11 years.
+  - source: gacl-wp-kaziimba
+    quote: installed as 4th Bishop of Mityana Diocese, on 26 October 2008

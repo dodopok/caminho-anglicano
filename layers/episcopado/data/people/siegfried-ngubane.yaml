@@ -4,10 +4,31 @@ name: Siegfried Ngubane
 full_name: Siegfried John Ngubane
 aliases:
 - Siegfried John Ngubane
+- The Most Revd Dr Siegfried John Ngubane
 biography: Bispo presidente da REACH-SA, eleito em 2023; membro do Global Anglican Council.
 sources:
 - source: gace-gac-page
   quote: In September 2023, the REACH-SA synod elected Ngubane as presiding bishop.
+ordinations:
+- order: episcopate
+  date: '2024-02-10'
+  place: Christ Church Midrand (África do Sul)
+  jurisdiction: reach-sa
+  office: primate
+  status: probable
+  sources:
+  - source: gacl-acl-ngubane-2024
+    quote: >-
+      We missed linking to this video in February when Dr Siegfried Ngubane was consecrated and installed as Presiding
+      Bishop of REACH-SA (The Reformed Evangelical Anglican Church of South Africa) at Christ Church Midrand.
+  - source: gacl-gafcon-ngubane-2024
+    quote: >-
+      Rev. Dr. Siegfried Ngubane will become presiding bishop of REACH-SA (The Reformed Evangelical Anglican Church
+      of South Africa) on February 10.
+  notes: >-
+    Data pela combinação das duas fontes (posse anunciada para 10/02/2024; sagração e posse no mesmo culto, em fevereiro).
+    Sagrante principal não nomeado nas fontes lidas (a Wikipédia indica Glenn Lyons, bispo presidente cessante,
+    não verificado).
 affiliations:
 - jurisdiction: reach-sa
   role: primate
@@ -16,5 +37,31 @@ affiliations:
   sources:
   - source: gace-gac-page
     quote: In September 2023, the REACH-SA synod elected Ngubane as presiding bishop.
+  - source: gacl-gafcon-ngubane-2024
+    quote: >-
+      Rev. Dr. Siegfried Ngubane will become presiding bishop of REACH-SA ... on February 10. Pray as he takes up
+      this role and joins the Gafcon Primates Council
   notes: >-
-    Título: bispo presidente (presiding bishop). A fonte dá a data da eleição pelo sínodo, não a da posse.
+    Título: bispo presidente (presiding bishop). A fonte dá a data da eleição pelo sínodo, não a da posse. Bispo
+    presidente (presiding bishop). Eleito pelo sínodo em setembro de 2023; sucedeu Glenn Lyons.
+  discrepancies:
+  - field: start
+    value: '2024-02-10'
+    sources:
+    - source: gacl-gafcon-ngubane-2024
+      quote: >-
+        Rev. Dr. Siegfried Ngubane will become presiding bishop of REACH-SA ... on February 10. Pray as he takes
+        up this role and joins the Gafcon Primates Council
+    - source: gace-gac-page
+      quote: In September 2023, the REACH-SA synod elected Ngubane as presiding bishop.
+- jurisdiction: gac
+  role: other
+  role_description: membro do Global Anglican Council
+  start: 2026-03
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: >-
+      The Most Revd Dr Siegfried John Ngubane Presiding Bishop of the Reformed Evangelical Anglican Church of South
+      Africa (REACH-SA)
+  notes: Entrou no Conselho dos Primazes do GAFCON em 2024, ao assumir a REACH-SA.

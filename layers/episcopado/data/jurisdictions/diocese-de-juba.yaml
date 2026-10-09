@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-juba
+name: Diocese de Juba
+type: diocese
+relations:
+- type: part_of
+  target: ecss
+  status: confirmed
+  sources:
+  - source: gacl-ai-2018-badi-entron
+    quote: >-
+      [Juba] Sunday the 22nd of April, 2018 was a joyous day in the south Sudanese capital of Juba, as thousands
+      of Christians gathered at All Saints Cathedral to witness the enthronement of the fifth archbishop and primate
+      of the Episcopal Church of South Sudan.
+  - source: gacl-ai-2018-badi-eleito
+    quote: >-
+      has elected the Rt. Rev. Justin Badi Arama, Bishop of Maridi, to succeed the Most Rev. Daniel Deng Bul as
+      Archbishop of Juba and Primate of South Sudan. Four candidates stood for election at the meeting held on 20
+      Jan 2018

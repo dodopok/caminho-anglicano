@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-das-carolinas
+name: Diocese das Carolinas
+type: diocese
+relations:
+- type: part_of
+  target: acna
+  status: confirmed
+  sources:
+  - source: gacl-acna-wood-bio
+    quote: >-
+      Archbishop Wood was elected as the first Bishop of the Diocese of the Carolinas by the College of Bishops
+      on June 5, 2012.
