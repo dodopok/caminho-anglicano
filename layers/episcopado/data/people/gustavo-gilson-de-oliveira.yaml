@@ -10,6 +10,38 @@ sources:
 - source: cant-novas-igrejas-2024
   quote: tendo como seu deão o reverendo Gustavo Oliveira.
   page: '112'
+ordinations:
+- order: diaconate
+  date: '2002-11-03'
+  place: Paróquia Anglicana da Natividade, Natal-RN
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: rcor-drv-diac-gustavo
+    quote: Natal, 03.11.2002.
+  - source: rcor-drv-diac-gustavo
+    quote: Gustavo Gilson se torna hoje um diácono, na 42ª ordenação ministerial do nosso episcopado.
+  - source: rcor-drv-diac-gustavo
+    quote: Dom Robinson Cavalcanti, OSE
+  notes: Sermão assinado por Dom Robinson Cavalcanti, bispo diocesano.
+- order: presbyterate
+  date: '2004-01-25'
+  place: Paróquia Anglicana da Natividade, Natal-RN
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: rcor-drv-presb-gustavo
+    quote: Paróquia Anglicana da Natividade - Natal – RN Em 25 de janeiro de 2004
+  - source: rcor-drv-presb-gustavo
+    quote: >-
+      Como Bispo e sucessor dos apóstolos, a mim me cabe, também em temor e humildade, presidir essa cerimônia,
+      e, juntamente com os Presbíteros, reconhecer a vocação, impor as mãos
+  - source: rcor-drv-presb-gustavo
+    quote: o quadragésimo terceiro (43º) do nosso episcopado
+  notes: >-
+    Sermão do bispo diocesano (Robinson Cavalcanti), que preside e impõe as mãos; 43º presbítero do seu episcopado.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -65,6 +97,14 @@ affiliations:
       seu deão o reverendo Gustavo Oliveira.
     page: '112'
   notes: 'Local: Catedral do Bom Samaritano, Recife.'
+- jurisdiction: ose
+  role: member
+  status: confirmed
+  sources:
+  - source: rcor-drv-ordens-dar
+    quote: Rev. Gustavo Gilson Souza de Oliveira
+  notes: >-
+    Membro clerical da OSE. Lista da página 'Ordens Religiosas' do site da Diocese do Recife, arquivada em 24/10/2004.
 events:
 - type: other
   date: '1998'

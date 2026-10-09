@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: arthur-cavalcante
+name: Arthur Cavalcante
+ordinations:
+- order: diaconate
+  date: '2001-02-03'
+  place: Paróquia do Bom Samaritano (Recife)
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: rcor-drv-diac-arthur-francisco
+    quote: PARÓQUIA DO BOM SAMARITANO – 03.02.2001
+  - source: rcor-drv-diac-arthur-francisco
+    quote: >-
+      Como Bispo tenho a alegria e a satisfação de conferir a ordem do diaconato a Arthur Cavalcante e Francisco
+      Sales
+  notes: >-
+    Sermão do bispo diocesano (Robinson Cavalcanti). Um dos dois seguia para o diaconato permanente e o outro para
+    o presbiterato (o texto não diz qual). Sobrenome completo não informado.

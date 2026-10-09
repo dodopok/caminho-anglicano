@@ -1,6 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: edson-alves-pimentel
 name: Edson Alves Pimentel
+ordinations:
+- order: diaconate
+  date: '1999-05-08'
+  place: Paróquia do Bom Samaritano (Recife)
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: rcor-drv-diac-edson-pimentel
+    quote: MENSAGEM DE ORDENAÇÃO AO DIACONAT0 (08/05/99)
+  - source: rcor-drv-diac-edson-pimentel
+    quote: Edson Pimentel, meu querido irmão por 15 anos
+  - source: rcor-drv-diac-edson-pimentel
+    quote: é uma satisfação e um justo reconhecimento do seu carisma, a honra de ordená-lo
+  - source: rcor-drv-diac-edson-pimentel
+    quote: Ordenação esta que se dá no esforço pluriclassista da Paróquia do Bom Samaritano
+  notes: >-
+    Ordenação ao diaconato permanente ('Ordenar um diácono permanente é outra vez tornar viva uma tradição de Igreja'),
+    pelo bispo diocesano Robinson Cavalcanti.
 affiliations:
 - jurisdiction: ieab
   role: clergy

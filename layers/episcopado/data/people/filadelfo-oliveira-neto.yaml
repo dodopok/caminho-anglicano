@@ -26,13 +26,24 @@ sources:
 ordinations:
 - order: diaconate
   date: '1999-02-28'
-  jurisdiction: ieab-dar
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
   status: probable
   sources:
   - source: costa2021
     quote: >-
       Foi ordenado ao diaconato, em 28 de fevereiro de 1999, e ao presbiterato, em 17 de outubro do mesmo ano.
     page: '106'
+  - source: rcor-drv-ord-celio-filadelfo
+    quote: (Célio, Filadelfo, Juciara, Marco, Maurício, Nadja e Vera)
+  - source: rcor-drv-ord-celio-filadelfo
+    quote: seu bispo, no exercício apostólico, igualmente os reconhece, e os consagra
+  - source: rcor-drv-ord-celio-filadelfo
+    quote: Marco Antonio, Maurício, Vera, Nadja, Filadelfo e Juciara, meus irmãos e irmãs
+  notes: >-
+    Sermão de ordenação (tema: o diaconato, Atos 6-7) pregado pelo bispo diocesano, entendido como Robinson Cavalcanti,
+    que se diz o bispo que os 'consagra'. A página não traz data; o diaconato de Filadelfo Oliveira Neto é datado
+    de 28/02/1999 por Costa (2021), o que sugere a mesma cerimônia.
 - order: presbyterate
   date: '1999-10-17'
   jurisdiction: ieab-dar
@@ -327,6 +338,14 @@ affiliations:
   notes: >-
     Anexo K: em 16/09/2004 era o Bispo Sufragâneo da Diocese Anglicana do Recife. Início e fim não informados nos
     anexos.
+- jurisdiction: ose
+  role: member
+  status: confirmed
+  sources:
+  - source: rcor-drv-ordens-dar
+    quote: Dom Filadelfo Oliveira Neto
+  notes: >-
+    Membro clerical da OSE. Lista da página 'Ordens Religiosas' do site da Diocese do Recife, arquivada em 24/10/2004.
 events:
 - type: other
   date: '2004-09-16'

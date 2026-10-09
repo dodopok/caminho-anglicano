@@ -1,6 +1,24 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcos-barros-de-souza
 name: Marcos Barros de Souza
+ordinations:
+- order: diaconate
+  date: '2001-02-17'
+  place: Templo da Igreja de Cristo Pentecostal do Brasil (Recife)
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: rcor-drv-ord-manoel-frederico
+    quote: MANOEL, FREDERICO, CARLOS TOMÉ E MARCOS BARROS
+  - source: rcor-drv-ord-manoel-frederico
+    quote: 'Local: Igreja de Cristo Pentecostal do Brasil – 17.02.2001'
+  - source: rcor-drv-ord-manoel-frederico
+    quote: Temos, nesses três anos de episcopado, compartilhado a visão de uma Diocese missionária
+  notes: >-
+    Sermão do bispo diocesano (Robinson Cavalcanti, 'nesses três anos de episcopado') na ordenação diaconal de quatro
+    candidatos, celebrada no templo da Igreja de Cristo Pentecostal do Brasil (Recife), cedido à Diocese Anglicana
+    do Recife. 'Marcos Barros' identificado, por nome, com Marcos Barros de Souza; a identidade não é confirmada.
 affiliations:
 - jurisdiction: ieab
   role: clergy
