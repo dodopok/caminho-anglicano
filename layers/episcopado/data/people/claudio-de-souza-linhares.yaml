@@ -17,7 +17,7 @@ sources:
   page: '545'
 ordinations:
 - order: diaconate
-  date: '2000-10-29'
+  date: '2000-10-28'
   place: Paróquia da Ressurreição, João Pessoa-PB
   jurisdiction: ieab
   ordained_by: robinson-cavalcanti
@@ -42,17 +42,22 @@ ordinations:
     page: '153'
   - source: ieabrecife-clero-2002
     quote: Cláudio de Souza Linhares, OSF
+  - source: testemunho-mantenedor-2026-10-09-sermoes
+    quote: Pode passar os dois pra 28/10 também
+  discrepancies:
+  - field: date
+    value: '2000-10-29'
+    sources:
+    - source: rcor-drv-ord-marcio-claudio-lilian
+      quote: Paróquia da Ressurreição – João Pessoa, PB 29 de Outubro de 2000.
   notes: >-
     Sermão do bispo diocesano (Robinson Cavalcanti) na ordenação diaconal de Márcio, Cláudio e Lílian, todos membros
-    de ordens religiosas (OSE ou franciscana). O sermão diz só 'Cláudio'; é Cláudio de Souza Linhares, osf (franciscano):
-    em dez/2001 um sermão ainda o chama 'Diácono Cláudio Linhares', e Cláudio Norberto da Silva só foi ordenado
-    diácono em 13/07/2002. Sermão do bispo diocesano Robinson
-    Cavalcanti. O "Cláudio" desta ordenação é Cláudio de Souza Linhares, OSF: em 15/12/2001 ele ainda era "Diácono
-    Cláudio Linhares", à espera do presbiterado; foi ordenado com Lílian Linhares (diácona em outubro de 2000);
-    e em janeiro de 2002 era o único Cláudio entre os reverendos da diocese, enquanto Cláudio Norberto ainda era
-    postulante. A data do cabeçalho do sermão é 29/10/2000, mas o próprio texto diz que "Neste dia a Igreja se dedica
-    a homenagear a memória e o testemunho de Simão e Judas" (festa de 28 de outubro), e o livro dos 35 anos dá 28/10/2000
-    para Lílian.
+    de ordens religiosas (OSE ou franciscana). O sermão diz só 'Cláudio'; é Cláudio de Souza Linhares, OSF: em
+    15/12/2001 um sermão ainda o chama 'Diácono Cláudio Linhares', à espera do presbiterado, e em janeiro de 2002 ele
+    era o único Cláudio entre os reverendos da diocese, enquanto Cláudio Norberto da Silva ainda era postulante (foi
+    ordenado diácono em 13/07/2002).
+    A data do cabeçalho do sermão é 29/10/2000, mas o texto cita a festa de São Simão e São Judas (28/10), a data
+    que Lílian Linhares, ordenada na mesma cerimônia, dá para o seu diaconato; o mantenedor adotou 28/10/2000.
 - order: presbyterate
   date: 2001-12
   place: Paróquia Boas Novas, Caaporã-PB
