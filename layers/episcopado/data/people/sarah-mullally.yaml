@@ -1,6 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: sarah-mullally
 name: Sarah Mullally
+biography: >-
+  Sarah Mullally, bispa de Londres, visitou o Brasil em agosto de 2024 e foi instalada em 25 de março de 2026 como
+  106ª arcebispa da Cantuária, com a presença da primaz da IEAB, Marinez Bassotto.
+sources:
+- source: f8mar-ieab-visita-mullally-2024
+  quote: >-
+    A bispa Sarah e seu esposo Eamonn Mullally desembarcaram em São Paulo na segunda-feira, 19 de agosto, e foram
+    recepcionados pela bispa Primaz da IEAB, Marinez Bassotto, e pela secretária-geral, Christina Winnischofer.
+- source: f8mar-ieab-mullally-relato-2026
+  quote: >-
+    Na tarde de 25 de março de 2026, as portas centenárias da Catedral de Cantuária se abriram para receber um momento
+    que a História não esquecerá.
+- source: f8mar-ieab-mullally-relato-2026
+  quote: Entre eles, a bispa primaz da Igreja Episcopal Anglicana do Brasil (IEAB), Marinez Bassotto.
+- source: f8mar-ieab-mullally-previa-2026
+  quote: Nossa bispa primaz, Marinez Bassotto, estará presente.
 events:
 - type: other
   date: '2026-03-25'
