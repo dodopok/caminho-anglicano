@@ -110,3 +110,38 @@ ordinations:
   notes: >-
     Sagração como bispo de Botucatu (nomeado em 4/07/1924). Catholic-Hierarchy e Wikipédia EN concordam em data,
     local, sagrante e co-sagrantes.
+affiliations:
+- jurisdiction: icab
+  role: founder
+  start: '1945'
+  status: probable
+  sources:
+  - source: lin-wp-pt-costa
+    quote: foi um bispo brasileiro que se tornou o fundador da Igreja Católica Apostólica Brasileira
+  - source: lin-wp-pt-costa
+    quote: Além disso, anunciou planos para criar sua própria Igreja Católica Apostólica Brasileira
+  notes: Em maio de 1945 anunciou a criação da ICAB, após ser excomungado em julho do mesmo ano (ver evento).
+events:
+- type: other
+  date: '1924-07-04'
+  description: Nomeado bispo de Botucatu pelo papa Pio XI, na Igreja Católica Romana.
+  status: probable
+  sources:
+  - source: lin-wp-pt-costa
+    quote: Em 4 de julho de 1924, o Papa Pio XI nomeou Duarte Costa Bispo de Botucatu.
+- type: resignation
+  date: 1937-09
+  description: Renunciou à sede de Botucatu e foi nomeado bispo titular de Maura.
+  status: probable
+  sources:
+  - source: lin-wp-pt-costa
+    quote: >-
+      Em setembro de 1937, Duarte Costa renunciou ao seu cargo episcopal e foi nomeado bispo titular de Maura.
+- type: excommunication
+  date: '1945-07-02'
+  description: >-
+    Excomungado pelo Vaticano, após acusar publicamente o núncio apostólico e anunciar a criação da ICAB.
+  status: probable
+  sources:
+  - source: lin-wp-pt-costa
+    quote: o Vaticano finalmente lhe impôs a pena de excomunhão em 2 de julho de 1945.

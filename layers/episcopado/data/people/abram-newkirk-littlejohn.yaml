@@ -49,6 +49,21 @@ ordinations:
     bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
 affiliations:
 - jurisdiction: tec
+  role: diocesan_bishop
+  diocese: diocese-de-long-island
+  start: '1869'
+  end: '1901'
+  end_reason: death
+  status: probable
+  sources:
+  - source: perd03-wp-littlejohn
+    quote: >-
+      Abram Newkirk Littlejohn (December 13, 1824 – August 3, 1901) was the first bishop of the Episcopal Diocese
+      of Long Island.
+  - source: perd03-wp-littlejohn
+    quote: He was consecrated Bishop of Long Island on January 27, 1869
+  notes: Primeiro bispo da Diocese de Long Island.
+- jurisdiction: tec
   role: bishop
   diocese: diocese-of-long-island
   start: '1869-01-27'

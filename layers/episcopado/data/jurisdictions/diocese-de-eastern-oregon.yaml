@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-eastern-oregon
+name: Diocese de Eastern Oregon
+type: diocese
+tradition: anglican
+country: US
+relations:
+- type: part_of
+  target: tec
+  status: probable
+  sources:
+  - source: cd1965
+    quote: (EO) 515 Congress, Bend, Ore R Trin 62-

@@ -60,3 +60,31 @@ affiliations:
     quote: On the death of Moore he became, without opposition, bishop of Virginia
   notes: >-
     Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.
+- jurisdiction: tec
+  role: auxiliary_bishop
+  diocese: diocese-da-virginia
+  start: '1829-08-19'
+  end: '1841'
+  status: probable
+  sources:
+  - source: perd10-wp-meade
+    quote: >-
+      In 1829, after Wilmer's unexpected death and as Bishop Moore approached retirement, Meade became assistant
+      Bishop of the [[Episcopal Diocese of Virginia]].
+  - source: perd10-wp-meade
+    quote: '| previous_post = Assistant Bishop of Virginia <small>''''(1829–1841)''''</small>'
+  notes: >-
+    Bispo assistente da Virgínia sob Richard Channing Moore, até assumir a diocese com a morte deste, em 1841.
+- jurisdiction: tec
+  role: diocesan_bishop
+  diocese: diocese-da-virginia
+  start: '1841'
+  end: '1862'
+  end_reason: death
+  status: probable
+  sources:
+  - source: perd10-wp-meade
+    quote: When Bishop Moore died later that year, Meade succeeded him as Bishop of Virginia
+  - source: perd10-wp-meade
+    quote: '| term = 1841–1862'
+  notes: Terceiro bispo da Virgínia.

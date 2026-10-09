@@ -41,3 +41,49 @@ ordinations:
   notes: >-
     Bispo de Rochester. A Wikipédia cita 'Consecration of New Bishops', The Times, 27/04/1891, p. 6 (não consultado).
     Linha alternativa de Cantuária no séc. XX (Davidson -> Benson -> Tait -> J. B. Sumner).
+affiliations:
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-rochester
+  start: '1891'
+  end: '1895'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: wp-en-davidson
+    quote: '* [[Bishop of Rochester]] (1891–1895)'
+  - source: wp-en-davidson
+    quote: >-
+      [[Bishop of Rochester]] (1891) and [[Bishop of Winchester]] (1895). In 1903 he succeeded [[Frederick Temple]]
+      as Archbishop of Canterbury, and remained in office until his retirement in November 1928.
+  notes: Sagrado em 25/04/1891; transferido para Winchester em 1895.
+- jurisdiction: church-of-england
+  role: diocesan_bishop
+  diocese: diocese-of-winchester
+  start: '1895'
+  end: '1903'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: wp-en-davidson
+    quote: '* [[Bishop of Winchester]] (1895–1903)'
+  - source: wp-en-davidson
+    quote: >-
+      [[Bishop of Rochester]] (1891) and [[Bishop of Winchester]] (1895). In 1903 he succeeded [[Frederick Temple]]
+      as Archbishop of Canterbury, and remained in office until his retirement in November 1928.
+  notes: Transferido para Cantuária em 1903.
+- jurisdiction: church-of-england
+  role: archbishop
+  diocese: diocese-of-canterbury
+  start: '1903'
+  end: 1928-11
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: wp-en-davidson
+    quote: Archbishop of Canterbury from 1903 to 1928
+  - source: wp-en-davidson
+    quote: >-
+      [[Bishop of Rochester]] (1891) and [[Bishop of Winchester]] (1895). In 1903 he succeeded [[Frederick Temple]]
+      as Archbishop of Canterbury, and remained in office until his retirement in November 1928.
+  notes: Sucedeu a Frederick Temple; aposentou-se em novembro de 1928.

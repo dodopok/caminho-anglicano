@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-episcopal-de-los-angeles
+name: Diocese Episcopal de Los Angeles
+type: diocese
+tradition: anglican
+country: US
+relations:
+- type: part_of
+  target: tec
+  status: confirmed
+  sources:
+  - source: perd08-dioc-la-2024
+    quote: who recently was named by Bishop John Harvey Taylor as bishop missioner for ministry in Spanish
+  - source: perd08-dioc-la-2024
+    quote: prepares for a Sunday service at St. Simon’s Church, San Fernando, where he is bishop-in-charge

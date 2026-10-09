@@ -7,6 +7,11 @@ aliases:
 - Patriarca Randolph Adler
 - Randolph Adler
 - Randy Adler
+death:
+  date: '2016-12-09'
+  sources:
+  - source: perd09-wp-adler
+    quote: He retired in October 2007 and died on December 9, 2016.
 wikidata: Q4823251
 biography: >-
   Sagrado em 26/06/1992 como primeiro bispo e primaz da Igreja Episcopal Carismática, por Timothy Michael Barker,
@@ -112,13 +117,16 @@ affiliations:
   role: other
   role_description: patriarca
   start: '1997'
-  end: '2007'
+  end: 2007-10
   end_reason: retirement
   status: probable
   sources:
   - source: cant-novas-igrejas-2024
     quote: instituindo, em 1997, Adler como o seu primeiro Patriarca.
     page: '44'
+  - source: perd09-wp-adler
+    quote: He retired in October 2007 and died on December 9, 2016.
+  notes: Aposentou-se em outubro de 2007.
 events:
 - type: other
   date: '2003'
@@ -162,3 +170,10 @@ events:
       bilateral com os bispos da Igreja Católica Apostólica Brasileira, estabelecendo uma nova linha de sucessão
       apostólica a partir da ICAB e instituindo, em 1997, Adler como o seu primeiro Patriarca.
     page: '134'
+- type: death
+  date: '2016-12-09'
+  description: Falecimento de Randolph Austin Adler, patriarca aposentado da ICCEC.
+  status: probable
+  sources:
+  - source: perd09-wp-adler
+    quote: He retired in October 2007 and died on December 9, 2016.

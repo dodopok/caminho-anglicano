@@ -2,6 +2,8 @@
 id: cbp-pe
 acronym: CBP-PE
 name: Capelania Britânica de Pernambuco (Holy Trinity Church, Recife)
+aliases:
+- Capelania Britânica de Pernambuco
 type: other
 country: BR
 founded:
@@ -13,6 +15,14 @@ founded:
       titular o Rev. John Penny
   - source: drv-resgatando-i
     quote: Em 20 de maio de 1976 encerra-se, definitivamente, o Ciclo da Capelania Britânica
+dissolved:
+  date: '1976-05-20'
+  sources:
+  - source: drv-resgatando-i
+    quote: >-
+      Em 20 de maio de 1976 encerra-se, definitivamente, o Ciclo da Capelania Britânica, com a criação, pelo Sínodo
+      Geral da agora Igreja Episcopal do Brasil, da Diocese Setentrional, com sede no Recife, desmembrada da Diocese
+      Central
 description: >-
   Capelania anglicana inglesa do Recife (Holy Trinity Church), iniciada em 1822; seu ciclo encerrou-se em 20/05/1976,
   e a comunidade passou à IEAB.
@@ -27,6 +37,11 @@ sources:
   quote: >-
     Uma assembléia paroquial da Capelania do Recife, Holy Trinity Church, decidiu por essa filiação, enviando como
     delegada ao Concílio da Diocese do Brasil Central a Sra. Conti
+- source: drv-resgatando-i
+  quote: >-
+    Em 20 de maio de 1976 encerra-se, definitivamente, o Ciclo da Capelania Britânica, com a criação, pelo Sínodo
+    Geral da agora Igreja Episcopal do Brasil, da Diocese Setentrional, com sede no Recife, desmembrada da Diocese
+    Central
 relations:
 - type: part_of
   target: ieab

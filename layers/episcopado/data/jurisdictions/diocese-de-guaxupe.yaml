@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-guaxupe
+name: Diocese de Guaxupé
+type: diocese
+tradition: roman_catholic
+country: BR
+relations:
+- type: part_of
+  target: icr
+  status: probable
+  sources:
+  - source: lq-g1-ronaldo-2015
+    quote: >-
+      onde foi pároco durante nove anos pela Igreja Católica. Mas em maio deste ano, ele decidiu pedir seu desligamento
+      da igreja.

@@ -63,20 +63,39 @@ sources:
     Todavia, ao deixar a Catedral, logo após a morte de dom Roger, dom Dionísio também deixou uma lacuna episcopal
     na Catedral Anglicana de São Paulo
   page: '97'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A pedra fundamental da Igreja atual foi colocada em 24 de novembro de 1963 e, finalmente em 13 de maio de 1967,
+    o Rev. G. T. Tucker consagrou nossa belíssima Igreja.
+  page: '92'
 relations:
 - type: member_of
   target: ieab
   date: '1972'
   end: '2013-04-06'
-  status: probable
+  status: contested
   sources:
   - source: cant-novas-igrejas-2024
     quote: >-
       Em 1972, nossa Igreja se associou à Igreja Episcopal do Brasil e, em 1995, se tornou a Catedral da Diocese
       Anglicana de São Paulo
     page: '92'
+  - source: lq-cat-carta-aberta
+    quote: >-
+      Em 1975 a Saint Paul's Anglican Church (atual Catedral Anglicana de São Paulo) se filia ESPIRITUALMENTE à
+      igreja nacional, permanecendo com seu patrimônio pertencente à comunidade da Catedral.
   notes: >-
-    Catedral da Diocese Anglicana de São Paulo (IEAB) a partir de 1995; desligamento formal em 06/04/2013.
+    Catedral da Diocese Anglicana de São Paulo (IEAB) a partir de 1995; desligamento formal em 06/04/2013. Versão
+    da Junta Paroquial da Catedral (carta aberta de 2013): filiação 'espiritual', sem transferência de patrimônio.
+    A obra de Costa dá 1972 para a associação à IEAB.
+  discrepancies:
+  - field: date
+    value: '1975'
+    sources:
+    - source: lq-cat-carta-aberta
+      quote: >-
+        Em 1975 a Saint Paul's Anglican Church (atual Catedral Anglicana de São Paulo) se filia ESPIRITUALMENTE
+        à igreja nacional, permanecendo com seu patrimônio pertencente à comunidade da Catedral.
 - type: broke_communion_with
   target: ieab
   date: '2013-04-06'

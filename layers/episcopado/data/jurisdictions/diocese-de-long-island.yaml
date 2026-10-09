@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-long-island
+name: Diocese de Long Island
+type: diocese
+tradition: anglican
+country: US
+relations:
+- type: part_of
+  target: tec
+  status: probable
+  sources:
+  - source: perd03-wp-littlejohn
+    quote: >-
+      Abram Newkirk Littlejohn (December 13, 1824 – August 3, 1901) was the first bishop of the Episcopal Diocese
+      of Long Island.
+  - source: perd03-wp-littlejohn
+    quote: He was consecrated Bishop of Long Island on January 27, 1869

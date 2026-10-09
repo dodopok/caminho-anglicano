@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: charles-inglis
+name: Charles Inglis
+aliases:
+- Bispo Inglis
+birth:
+  date: '1734'
+  sources:
+  - source: perd01-wp-inglis
+    quote: consecrated the first Anglican bishop in North America for the Diocese of Nova Scotia
+  - source: fund-wp-en-accan
+    quote: He became the first bishop of the diocese of Nova Scotia on 12 August 1787
+death:
+  date: '1816-02-24'
+  sources:
+  - source: perd01-wp-inglis
+    quote: consecrated the first Anglican bishop in North America for the Diocese of Nova Scotia
+  - source: fund-wp-en-accan
+    quote: He became the first bishop of the diocese of Nova Scotia on 12 August 1787
+biography: >-
+  Sagrado em 1787 como primeiro bispo anglicano da Diocese da Nova Escócia (Nova Scotia), a primeira diocese anglicana
+  fora das Ilhas Britânicas no Império Britânico.
+sources:
+- source: perd01-wp-inglis
+  quote: consecrated the first Anglican bishop in North America for the Diocese of Nova Scotia
+- source: fund-wp-en-accan
+  quote: He became the first bishop of the diocese of Nova Scotia on 12 August 1787
+- source: perd01-wp-inglis
+  quote: Born 1734 Glencolmcille , County Donegal, Ireland
+ordinations:
+- order: episcopate
+  date: '1787'
+  jurisdiction: anglican-church-of-canada
+  office: diocesan
+  status: probable
+  sources:
+  - source: perd01-wp-inglis
+    quote: consecrated the first Anglican bishop in North America for the Diocese of Nova Scotia
+  notes: >-
+    Sagrado primeiro bispo da Diocese da Nova Escócia (Church of England), anterior à organização da atual Igreja
+    Anglicana do Canadá; a fonte não indica o sagrante.
+affiliations:
+- jurisdiction: anglican-church-of-canada
+  role: diocesan_bishop
+  diocese: diocese-da-nova-escocia
+  start: '1787-08-12'
+  status: probable
+  sources:
+  - source: fund-wp-en-accan
+    quote: He became the first bishop of the diocese of Nova Scotia on 12 August 1787
+  - source: perd01-wp-inglis
+    quote: named Inglis its first bishop
+  notes: >-
+    Local: Nova Scotia. Primeiro bispo diocesano de uma diocese anglicana no atual Canadá, quando ainda integrava
+    a Igreja da Inglaterra; a atual Igreja Anglicana do Canadá realizou seu primeiro Sínodo Geral nacional em 1893.

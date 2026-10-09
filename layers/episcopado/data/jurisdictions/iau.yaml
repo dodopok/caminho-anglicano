@@ -2,6 +2,8 @@
 id: iau
 acronym: IAU
 name: Igreja Anglicana Unida – Província da América do Sul
+aliases:
+- Igreja Anglicana Unida
 type: province
 country: BR
 website: https://sites.google.com/view/igreja-anglicana-unida
@@ -34,6 +36,17 @@ sources:
 - source: cant-novas-igrejas-2024
   quote: dom Josué Augusto, da Igreja Anglicana Unida do Brasil
   page: '125'
+- source: lpq-iau-clero
+  quote: >-
+    Revmo. Obispo Cristian Vidal Obispo del Sínodo de Chile. Rector de la Comunidad del Camino en la región de Concepción.
+- source: lpq-iau-clero
+  quote: >-
+    REVERENDO RICARDO DE ALMEIDA DANTAS (Sínodo do Brasil) Missão Anglicana da Paz Presidente Prudente e Região
+    Oeste de São Paulo - Brasil
+- source: lpq-iau-clero
+  quote: Missionário em Franca - SP ( Missão Santa Maria)
+- source: perd02-iau-home
+  quote: Sede Nacional do Brasil - Ribeirão Preto/SP Sed Nacional de Chile - Concepción
 relations:
 - type: member_of
   target: fpec

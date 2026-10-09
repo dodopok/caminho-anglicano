@@ -147,6 +147,11 @@ sources:
   quote: >-
     Nós, Dom Rui Costa Barbosa, Dom José da Santa Cruz, Dom Cristiano Alves, presbíteros, diáconos e leigos da Igreja
     Anglicana Tradicional do Brasil, reunidos na Cidade de Nova Iguaçu-RJ, no mês de novembro de 2025
+- source: iatb-intercomunhoes
+  quote: >-
+    Igreja Ortodoxa Ucraniana no México Por este acordo entre as Igreja temos mais um reconhecimento internacional
+    e de acordo com seus termos, as Igrejas por meio de seus representantes declaram que compartilham a mesma fé
+    na Santa Igreja Una, Católica e Apostólica fundada por Nosso Senhor Jesus Cristo.
 relations:
 - type: in_communion_with
   target: aeci
@@ -249,3 +254,14 @@ relations:
       André.
     page: '145'
   notes: Mesma ressalva da IEEP.
+- type: in_communion_with
+  target: igreja-ortodoxa-ucraniana-no-mexico
+  date: null
+  status: confirmed
+  sources:
+  - source: iatb-intercomunhoes
+    quote: >-
+      Igreja Ortodoxa Ucraniana no México Por este acordo entre as Igreja temos mais um reconhecimento internacional
+      e de acordo com seus termos, as Igrejas por meio de seus representantes declaram que compartilham a mesma
+      fé na Santa Igreja Una, Católica e Apostólica fundada por Nosso Senhor Jesus Cristo.
+  notes: Acordo de intercomunhão (concordata); a data não consta na página.

@@ -3,6 +3,7 @@ id: church-of-nigeria
 acronym: CON
 name: Igreja da Nigéria (Comunhão Anglicana)
 aliases:
+- Church of Nigeria
 - Church of Nigeria (Anglican Communion)
 - Igreja da Nigéria
 - church-of-nigeria
@@ -110,3 +111,11 @@ relations:
   notes: >-
     Província representada no Conselho de Primazes do GAFCON em out/2025 (pertença ao movimento GAFCON, anterior
     e distinta da adesão à GAC). A data de início da pertença não consta das fontes.
+- type: schism_from
+  target: province-of-west-africa
+  date: 1979-02
+  status: probable
+  sources:
+  - source: perd03-wp-pwa
+    quote: In February 1979, the new Church of Nigeria was inaugurated as a separate province.
+  notes: Separação por desmembramento de província, sem conflito registrado na fonte.

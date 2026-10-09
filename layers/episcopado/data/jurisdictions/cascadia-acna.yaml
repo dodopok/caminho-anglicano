@@ -2,6 +2,8 @@
 id: cascadia-acna
 acronym: Cascádia (ACNA)
 name: Diocese de Cascádia (Igreja Anglicana na América do Norte)
+aliases:
+- Diocese de Cascadia
 type: diocese
 country: US
 description: >-
@@ -13,3 +15,14 @@ sources:
   quote: >-
     A Diocese de Cascádia (Leste do Estado de Washington) da Igreja Anglicana na América do Norte (ACNA), em seu
     Concílio, aprovou em 02.07 o status de “Diocese Companheira” com a Diocese do Recife
+relations:
+- type: part_of
+  target: acna
+  status: probable
+  sources:
+  - source: wp-allen
+    quote: From 2011 to 2024, he was the first bishop of the
+  - source: wp-allen
+    quote: In 2022, Allen announced he would retire as bishop.
+  - source: wp-allen
+    quote: was consecrated and seated as Allen's successor in early 2024.

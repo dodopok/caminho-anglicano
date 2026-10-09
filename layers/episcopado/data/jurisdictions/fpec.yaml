@@ -47,3 +47,25 @@ sources:
     A Igreja Anglicana Unida (IAU) é a Província Sul-Americana da The Free Episcopal Protestant Church of England
     (FPEC). Com 128 anos de história contínua, cujo o líder éo Arcebispo Primaz, Revmo. Dom Ricardo Lorite de Lima.
     A IAU tem como Bispo moderador o Revmo. Dom Virgílio Cezar Henrique Pereira Torres.
+relations:
+- type: merged_with
+  target: ancient-british-church
+  date: '1897'
+  status: probable
+  sources:
+  - source: perd01-wp-fpec
+    quote: >-
+      In 1897 his church united with two other churches, the Ancient British Church and the Nazarene Episcopal Church,
+      thus creating the Free Protestant Episcopal Church of England
+  notes: >-
+    A Free Protestant Church of England, de Leon Chechemian, uniu-se em 1897 à Ancient British Church e à Nazarene
+    Episcopal Church.
+- type: merged_with
+  target: nazarene-episcopal-church
+  date: '1897'
+  status: probable
+  sources:
+  - source: perd01-wp-fpec
+    quote: >-
+      In 1897 his church united with two other churches, the Ancient British Church and the Nazarene Episcopal Church,
+      thus creating the Free Protestant Episcopal Church of England

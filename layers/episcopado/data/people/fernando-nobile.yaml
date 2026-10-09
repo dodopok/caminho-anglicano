@@ -209,9 +209,15 @@ affiliations:
   - source: cant-novas-igrejas-2024
     quote: O bispo diocesano que atende à IAEB é dom Fernando Nobile
     page: '124'
+  - source: cant-novas-igrejas-2024
+    quote: >-
+      O bispo diocesano que atende à IAEB é dom Fernando Nobile (nome religioso de Luiz Fernando Salgado), cuja
+      catedral é a Igreja Anglicana Cristo Redentor, localizada na cidade de Ribeirão Preto.
+    page: '124'
   notes: >-
     Instituído na Paróquia Anglicana de São Jorge (Rio Claro, SP) por Patricio Viveros Robles, com James Tavares;
-    catedral: Igreja Anglicana Cristo Redentor, Ribeirão Preto.
+    catedral: Igreja Anglicana Cristo Redentor, Ribeirão Preto. Local: catedral Igreja Anglicana Cristo Redentor
+    (Ribeirão Preto). Catedral: Igreja Anglicana Cristo Redentor, Ribeirão Preto (SP).
 - jurisdiction: ieab-dasp
   role: member
   end: c.2004
@@ -273,6 +279,19 @@ affiliations:
     Redentor (Ribeirão Preto-SP; Arcediagado Extraterritorial). Página "Comunidades" do arcediagado, criada em 20/08/2009
     e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse. A página escreve "Rev. Fernando
     Salgado" (nome civil Luiz Fernando Salgado, depois dom Fernando Nobile).
+- jurisdiction: iaeb
+  role: diocesan_bishop
+  status: probable
+  sources:
+  - source: perd05-iaeb-clero
+    quote: >-
+      Estamos sob a autoridade canônica da Igreja Episcopal Anglicana do Chile, na figura do Arcebispo Provincial
+      Patrício Viveros Robles. No Brasil possuímos um Bispo Diocesano Fernando Nobile, na cidade de Ribeirão Preto/SP.
+  - source: perd05-iaeb-clero
+    quote: Clero da IAEB/IEACH
+  notes: >-
+    Local: Ribeirão Preto, SP. O site da igreja declara a IAEB sob a autoridade canônica da Igreja Episcopal Anglicana
+    do Chile (IEACH); o resumo antigo falava em bispo diocesano da Diocese Sul/Sudeste 'da IEACH'.
 events:
 - type: other
   date: 2023-07

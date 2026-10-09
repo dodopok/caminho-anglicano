@@ -309,6 +309,18 @@ affiliations:
     page: '119'
   notes: Anexo E da tese (primazes da IEAB).
 - jurisdiction: tec
+  role: missionary_bishop
+  diocese: diocese-episcopal-de-los-angeles
+  start: '2024'
+  status: confirmed
+  sources:
+  - source: perd08-dioc-la-2024
+    quote: who recently was named by Bishop John Harvey Taylor as bishop missioner for ministry in Spanish
+  notes: >-
+    Nomeado pelo bispo diocesano John Harvey Taylor como bispo missionário (bishop missioner) para o ministério
+    em espanhol e convocador do grupo de trabalho do clero latino/hispânico; sucedeu o Rev. Antonio Gallardo. A
+    notícia é de 31/07/2024 e diz 'recentemente'; data exata da nomeação não informada.
+- jurisdiction: tec
   role: clergy
   status: probable
   sources:
@@ -328,6 +340,17 @@ affiliations:
   notes: >-
     Página da Secretaria Geral, atualizada em 13 de março de 2026, que o lista entre os eméritos sem indicação de
     falecimento.
+- jurisdiction: tec
+  role: other
+  role_description: bispo encarregado (bishop-in-charge)
+  diocese: diocese-episcopal-de-los-angeles
+  status: confirmed
+  sources:
+  - source: perd08-dioc-la-2024
+    quote: prepares for a Sunday service at St. Simon’s Church, San Fernando, where he is bishop-in-charge
+  notes: >-
+    Bispo encarregado da igreja de St. Simon, em San Fernando, em julho de 2024; também consta como bispo interino
+    encarregado de St. Mark's, em Van Nuys.
 events:
 - type: other
   date: 1985-05

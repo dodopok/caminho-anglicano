@@ -13,6 +13,14 @@ founded:
     quote: Área 1- formada pelas Dioceses Meridional, Sul Ocidental e de Pelotas.
   - source: wp-pt-dioc-meridional
     quote: A sede diocesana está localizada na cidade de Porto Alegre.
+  - source: kickhofel-2002
+    quote: >-
+      1949 - Thomas volta aos Estados Unidos. A Convenção Geral aprova a divisão do distrito missionário em três
+      dioceses.
+  - source: costa2021
+    quote: >-
+      Em cerimônia solene, no dia 30 de maio de 2010, a Catedral da Santíssima Trindade, em Porto Alegre, foi instituída
+      como a “Catedral Nacional” da Igreja Episcopal Anglicana do Brasil.
   discrepancies:
   - field: date
     value: 1949-09
@@ -51,6 +59,13 @@ sources:
   quote: >-
     Em 1987, foi eleito bispo sufragâneo da Diocese Meridional e encarregado de organi- zar a futura diocese de
     Pelotas. Um ano de- pois, foi eleito seu primeiro bispo diocesano.
+- source: kickhofel-2002
+  quote: >-
+    1949 - Thomas volta aos Estados Unidos. A Convenção Geral aprova a divisão do distrito missionário em três dioceses.
+- source: costa2021
+  quote: >-
+    Em cerimônia solene, no dia 30 de maio de 2010, a Catedral da Santíssima Trindade, em Porto Alegre, foi instituída
+    como a “Catedral Nacional” da Igreja Episcopal Anglicana do Brasil.
 relations:
 - type: part_of
   target: ieab

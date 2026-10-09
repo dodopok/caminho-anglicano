@@ -26,6 +26,14 @@ sources:
     U. Onderdonk|21]] | 1832
 - source: perry-1895
   quote: was consecrated bishop of the diocese in St. Paul's Chapel, New York, Oct. 31, 1832
+- source: perd04-wp-bbsmith
+  quote: >-
+    Benjamin Bosworth Smith (June 13, 1794 – May 31, 1884) was an American Protestant Episcopal bishop, and the
+    Presiding Bishop of his Church beginning in 1868.
+- source: perd04-wp-bbsmith
+  quote: Smith was born in Bristol, Rhode Island.
+- source: perd04-wp-bbsmith
+  quote: Smith graduated from Brown University in 1816.
 ordinations:
 - order: episcopate
   date: '1832-10-31'
@@ -51,6 +59,21 @@ ordinations:
     bispo em primeiro. Co-sagrantes sem prenome em Perry ficam só com o sobrenome, como na fonte.
 affiliations:
 - jurisdiction: tec
+  role: diocesan_bishop
+  diocese: diocese-of-kentucky
+  start: '1832'
+  status: probable
+  sources:
+  - source: perd04-wp-bbsmith
+    quote: >-
+      His last rectorship, in Lexington, Kentucky, he held until 1837, though in 1832 he had become Bishop of the
+      diocese.
+  - source: perd04-wp-bbsmith
+    quote: >-
+      The Life and Ministry of Benjamin Bosworth Smith, First Bishop of Kentucky: A Memorial Discourse delivered
+      before the Fifty-sixth Annual Council of the Diocese of Kentucky
+  notes: Primeiro bispo de Kentucky (título de memorial de 1884 citado na Wikipedia).
+- jurisdiction: tec
   role: bishop
   diocese: diocese-of-kentucky
   start: '1832-10-31'
@@ -60,3 +83,13 @@ affiliations:
     quote: was consecrated bishop of the diocese in St. Paul's Chapel, New York, Oct. 31, 1832
   notes: >-
     Início = data da sagração. O fim só aparece quando a fonte o dá; se faltar, não significa que o episcopado continua.
+- jurisdiction: tec
+  role: primate
+  start: '1868'
+  status: probable
+  sources:
+  - source: perd04-wp-bbsmith
+    quote: >-
+      Benjamin Bosworth Smith (June 13, 1794 – May 31, 1884) was an American Protestant Episcopal bishop, and the
+      Presiding Bishop of his Church beginning in 1868.
+  notes: Presiding Bishop da Igreja Episcopal a partir de 1868. A Wikipedia não informa o fim do mandato.
