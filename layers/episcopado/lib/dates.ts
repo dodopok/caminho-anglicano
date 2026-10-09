@@ -60,3 +60,11 @@ export function yearOf(value: string): number {
   const { min, max } = rangeOf(value)
   return Math.round((Number(min.slice(0, 4)) + Number(max.slice(0, 4))) / 2)
 }
+
+/** Ordem de apresentação: ano nominal para circa, início para intervalos e datas ausentes por último. */
+export function compareDates(a: string | null | undefined, b: string | null | undefined): number {
+  const key = (value: string | null | undefined) => value?.replace(/^c\./, '').split('/')[0] ?? '9999-99-99'
+  const left = key(a)
+  const right = key(b)
+  return left < right ? -1 : left > right ? 1 : 0
+}

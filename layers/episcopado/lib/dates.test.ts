@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { definitelyBefore, isValidDate, rangeOf, yearOf } from './dates'
+import { compareDates, definitelyBefore, isValidDate, rangeOf, yearOf } from './dates'
 
 describe('datas parciais', () => {
   it('aceita os formatos suportados', () => {
@@ -31,5 +31,12 @@ describe('datas parciais', () => {
   it('calcula o ano médio', () => {
     expect(yearOf('2019-03-16')).toBe(2019)
     expect(yearOf('1890/1894')).toBe(1892)
+  })
+
+  it('ordena datas exatas, parciais, circa e intervalos antes dos registros sem data', () => {
+    const dates = [null, '1900', 'c.1890', '1889', '1895/1898', '1890-03-16', '1890-03', undefined]
+    expect(dates.sort(compareDates)).toEqual(['1889', 'c.1890', '1890-03', '1890-03-16', '1895/1898', '1900', null, undefined])
+    expect(compareDates('c.1890', '1890/1895')).toBe(0)
+    expect(compareDates(null, '9999-12-31')).toBeGreaterThan(0)
   })
 })
