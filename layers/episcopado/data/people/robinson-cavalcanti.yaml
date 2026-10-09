@@ -96,6 +96,7 @@ ordinations:
 - order: diaconate
   date: '1984'
   jurisdiction: ieab
+  ordained_by: edmund-knox-sherrill
   status: probable
   sources:
   - source: kickhofel-1995
@@ -111,10 +112,22 @@ ordinations:
   - source: costa2021
     quote: suas ordenações diaconal e presbiteral foram realizadas, respectivamente, em 1984 e 1985.
     page: '187'
+  - source: drv-resgatando-iv
+    quote: >-
+      onde estudaram três dos seus ordinandos, os futuros reverendos: Ian Meldrum, Robinson Cavalcanti e Antônio
+      Carlos (da Bahia), complementando suas formações em Anglicanismos.
+  - source: drv-resgatando-iv
+    quote: >-
+      Posteriormente o Bispo organizou dois núcleos de jovens vocacionados ao ministério: os mais “renovados” sob
+      a sua direção espiritual, e os mais “tradicionais” sob a direção do já Rev. Robinson Cavalcanti.
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
     O livro grafa '1894' (provável erro tipográfico; nascido em 1944). Data deixada nula. Diocese Setentrional (Recife).
-    Ordenante não informado (Sherrill era o diocesano em 1984).
+    Ordenante não informado (Sherrill era o diocesano em 1984). O texto, no capítulo 'O Período Sherrill (1976-1985)',
+    conta Robinson entre os ordinandos do Bispo Edmund Knox Sherrill, formados no NAET (Núcleo de Estudos Anglicanos).
+    Em 1984 Sherrill era o único bispo da Diocese Setentrional (Clóvis Erly Rodrigues só foi sagrado coadjutor em
+    1985), o que sustenta Sherrill como ordenante do diaconato; a fonte não dá a data nem diz expressamente 'ordenado
+    por'. Ano 1984 de outras fontes (Kickhöfel; Costa, 2021).
 - order: presbyterate
   date: '1985'
   jurisdiction: ieab
@@ -189,6 +202,27 @@ ordinations:
       Centro de Convenções de Pernambuco, pelo Primaz, Glauco Soares de Lima, tendo como co-sagrantes os bispos
       Edmund Sherrill, Almir dos Santos e Clovis Erly Rodrigues.
     page: '186'
+  - source: rclv-anglicanismo-identidade
+    quote: >-
+      73. EDMUND KNOX SHERRILL Bispo do Brasil Central, Rio de Janeiro (1976 primeiro Bispo da Diocese Setentrional,
+      Recife), que, juntamente com outros três Bispos da Igreja Episcopal Anglicana do Brasil ([2]), com Episcopado
+      histórico, em 05.10.1997, sagrou 74. EDWARD ROBINSON DE BARROS CAVALCANTI Bispo Coadjutor (05.10.1997) (Diocesano
+      do Recife desde 19.10.1997).
+    page: '162'
+  - source: rclv-anglicanismo-comparado-2008
+    quote: >-
+      Bispo Glauco S. de Lima, Almir dos Santos e Clóvis E. Rodrigues, de linha sucessória de Lucien Lee Kinsolving,
+      primeiro Bispo Anglicano do Brasil
+    page: '37'
+  - source: drv-resgatando-iv
+    quote: >-
+      tendo como oficiantes os Bispos Glauco Soares de Lima (de São Paulo) – Primaz, Clóvis Erly Rodrigues, Almir
+      dos Santos (de Brasília) e Edmundo Knox Sherrill (aposentado) se deu a Sagração do novo Bispo Coadjutor, que
+      foi Instalado e Empossado como Bispo Diocesano, na Paróquia da SS. Trindade, no dia 19 do mesmo mês.
+  - source: drv-resgatando-iv
+    quote: >-
+      com a presença do Rev. Cônego John Peterson, Secretário Geral da Comunhão Anglicana, no Centro de Convenções
+      de Pernambuco, em Olinda-PE
   notes: >-
     Relato do próprio sagrado: eleito, depois homologado, sagrado com imposição de mãos de pelo menos três bispos;
     sagrantes não nomeados nestes textos. Foi bispo coadjutor por 'apenas quinze dias'. Confirma a pista dos posteres
@@ -201,7 +235,10 @@ ordinations:
     Soares de Lima era Primaz de 1993 a 2003 segundo a mesma tese (inferência). Co-sagrantes não informados. Sagrado
     como bispo coadjutor da Diocese Anglicana do Recife; instalado como 3º diocesano em 19/10/1997. Na nota 225
     (p. 243) a própria tese diz 'Robinson Cavalcanti no Teatro Beberibe, no Recife' — divergência de local (ver
-    dúvidas).
+    dúvidas). A lista sucessória publicada pelo próprio Robinson (baseada em Aquino, 2004, p. 155-158) traça sua
+    linha por Edmund Knox Sherrill e nomeia em nota os outros três bispos que impuseram as mãos: Glauco Soares de
+    Lima, Almir dos Santos e Clóvis Erly Rodrigues. Não indica quem presidiu; outras fontes apontam o Primaz Glauco
+    Soares de Lima como sagrante principal. Sagrado como bispo coadjutor; diocesano do Recife desde 19/10/1997.
 affiliations:
 - jurisdiction: ieab
   role: member
@@ -264,6 +301,18 @@ affiliations:
     pois o anexo não diz que o primeiro ano é a sagração. Por isso não foi criada afirmação de ordenação. Anexo
     C dá 1997-2005 com '(Deposto)'; dia exato da deposição (10/06/2005) vem do Anexo Q.
 - jurisdiction: ieab
+  role: coadjutor_bishop
+  diocese: ieab-dar
+  start: '1997-10-05'
+  end: '1997-10-19'
+  status: confirmed
+  sources:
+  - source: rclv-anglicanismo-identidade
+    quote: >-
+      EDWARD ROBINSON DE BARROS CAVALCANTI Bispo Coadjutor (05.10.1997) (Diocesano do Recife desde 19.10.1997).
+    page: '162'
+  notes: Coadjutor de 05/10/1997 até assumir como diocesano em 19/10/1997.
+- jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dar
   start: '1997-10-19'
@@ -325,6 +374,22 @@ affiliations:
       Como consequência do contínuo enfrentamento às decisões da Câmara Episcopal, em 10 de junho de 2005, Edward
       Robinson de Barros Cavalcanti foi deposto de todos os seus cargos na Igreja Episcopal Anglicana do Brasil
     page: '223'
+  - source: rclv-anglicanismo-identidade
+    quote: >-
+      EDWARD ROBINSON DE BARROS CAVALCANTI Bispo Coadjutor (05.10.1997) (Diocesano do Recife desde 19.10.1997).
+    page: '162'
+  - source: rclv-anglicanismo-comparado-2008
+    quote: >-
+      74. EDWARD ROBINSON DE BARROS CAVALCANTI Bispo Coadjutor (05.10.1997) (Diocesano do Recife desde 19.10.1997).
+    page: '37'
+  - source: rclv-anglicanismo-identidade
+    quote: >-
+      Com a elevação da Diocese do Recife ao status de Autônoma, a substituição do Bispo Clóvis pelo atual Bispo
+      Diocesano já se fez por eleição local, não sem resistência de setores da Província
+    page: '114'
+  - source: drv-resgatando-iv
+    quote: >-
+      que foi Instalado e Empossado como Bispo Diocesano, na Paróquia da SS. Trindade, no dia 19 do mesmo mês.
   notes: >-
     Fonte o apresenta como terceiro bispo da diocese (após Sherrill e Clóvis Erly Rodrigues), primeiro nativo e
     primeiro eleito localmente. Instituição como titular em 19/10/1997, na Catedral da Santíssima Trindade, Recife,
@@ -333,7 +398,10 @@ affiliations:
     Q (Processo Canônico nº 001/2005). Antes disso: suspensão preventiva em 18/02/2005 (Anexo N). Eleito bispo coadjutor
     em 28/06/1997 (Concílio Extraordinário em Vera Cruz, Itaparica), sagrado 05/10/1997, instalado 19/10/1997. Suspenso
     preventivamente em 18/02/2005 (Resolução 001/2005); deposto em 10/06/2005 pelo Primaz Orlando Santos de Oliveira
-    após o Tribunal Superior Eclesiástico reconhecer sua culpabilidade (Processo Canônico 001/2005).
+    após o Tribunal Superior Eclesiástico reconhecer sua culpabilidade (Processo Canônico 001/2005). Sucedeu Clóvis
+    Erly Rodrigues; primeira eleição feita pelo concílio local, já com a diocese autônoma. O fim do vínculo com
+    a IEAB (deposição de 2005) é descrito pelo próprio autor como 'processo politicamente motivado e espúrio'. Instalado
+    e empossado na Paróquia (depois Catedral) da Santíssima Trindade, Recife.
   discrepancies:
   - field: start
     value: '1997-10-05'
@@ -433,6 +501,34 @@ affiliations:
     a ruptura foi gradual (concílio de dez/2004, carta de jan/2005, concílio extraordinário de 26/02/2005). Em 25/01/2005
     declarou suspenso o relacionamento da Diocese com a IEAB; em 23/09/2005 o Cone Sul (Venables) aceitou o pedido
     de supervisão primacial. Início pode ser datado de 25/01/2005 (ruptura) ou 23/09/2005 (acolhida pelo Cone Sul).
+- jurisdiction: iacs
+  role: diocesan_bishop
+  diocese: diocese-anglicana-recife
+  start: 2005-09
+  status: confirmed
+  sources:
+  - source: rclv-anglicanismo-identidade
+    quote: >-
+      Desde setembro de 2005, reconhecidas nossas Ordens e Ministérios, estamos sob a Autoridade Primacial da Igreja
+      Anglicana do Cone Sul da América, na pessoa do Revmo. Gregory J. Venables.
+    page: '115'
+  - source: rclv-anglicanismo-comparado-2008
+    quote: >-
+      de 2005, reconhecidas nossas Ordens e Ministérios, estamos sob a Autoridade Primacial da Igreja Anglicana
+      do Cone Sul da América, na pessoa do Revmo. Gregory J. Venables.
+    page: '70'
+  - source: rclv-anglicanismo-identidade
+    quote: Diocese Anglicana do Recife - IACSA
+    page: '8'
+  - source: drv-resgatando-iv
+    quote: >-
+      o Bispo e os Clérigos da Diocese Anglicana do Recife receberam Carta-Documento do Primaz da Igreja Anglicana
+      do Cone Sul, Revmo. Gregory J. Venables, reconhecendo as suas Ordens e Ministérios, e os colocando sob a sua
+      proteção e autoridade primacial
+  notes: >-
+    Local: Cone Sul / IAB. Diocese do Recife sob a autoridade primacial do Primaz do Cone Sul, Gregory Venables,
+    desde setembro de 2005, com reconhecimento das ordens do bispo e do clero. Em 2008 a apostila ainda falava em
+    se tornar 'membros plenos – oficialmente – da Província do Cone Sul' (p. 80).
 - jurisdiction: ieab-dar
   role: diocesan_bishop
   end: '2005'
@@ -463,6 +559,108 @@ affiliations:
   notes: >-
     Anexo Q: a deposição faz cessar 'todos os seus vínculos canônicos, sacramentais, pastorais e litúrgicos' com
     a IEAB.
+- jurisdiction: ieab
+  role: other
+  role_description: presbítero coadjutor e pároco interino
+  diocese: ieab-dar
+  end: '1997-10-05'
+  status: confirmed
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      foi Coadjutor e Pároco Interino da Paróquia Anglicana Emanuel, Olinda-PE; Coadjutor da Paróquia da SS. Trindade;
+      Ministro Encarregado do Ponto Missionário Anglicano da Redenção; membro do Conselho Diocesano, Delegado Sinodal
+      e membro da JUNET – Junta Nacional de Educação Teológica da IEAB, tendo se filiado a DAR EM 1976, no ano da
+      sua organização eclesiástica.
+  notes: >-
+    Local: Paróquia Anglicana Emanuel, Olinda-PE. Cargo anterior ao episcopado (1985-1997); datas não informadas.
+- jurisdiction: ieab
+  role: other
+  role_description: presbítero coadjutor
+  diocese: ieab-dar
+  end: '1997-10-05'
+  status: confirmed
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      foi Coadjutor e Pároco Interino da Paróquia Anglicana Emanuel, Olinda-PE; Coadjutor da Paróquia da SS. Trindade;
+      Ministro Encarregado do Ponto Missionário Anglicano da Redenção; membro do Conselho Diocesano, Delegado Sinodal
+      e membro da JUNET – Junta Nacional de Educação Teológica da IEAB, tendo se filiado a DAR EM 1976, no ano da
+      sua organização eclesiástica.
+  notes: 'Local: Paróquia da Santíssima Trindade, Recife. Cargo anterior ao episcopado; datas não informadas.'
+- jurisdiction: ieab
+  role: other
+  role_description: ministro encarregado
+  diocese: ieab-dar
+  end: '1997-10-05'
+  status: confirmed
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      foi Coadjutor e Pároco Interino da Paróquia Anglicana Emanuel, Olinda-PE; Coadjutor da Paróquia da SS. Trindade;
+      Ministro Encarregado do Ponto Missionário Anglicano da Redenção; membro do Conselho Diocesano, Delegado Sinodal
+      e membro da JUNET – Junta Nacional de Educação Teológica da IEAB, tendo se filiado a DAR EM 1976, no ano da
+      sua organização eclesiástica.
+  notes: >-
+    Local: Ponto Missionário Anglicano da Redenção, Boa Vista, Recife. Último cargo paroquial antes da eleição episcopal
+    (1997). O próprio texto diz que estava 'isolado em seu Ponto Missionário da Redenção' quando eleito, 'discriminado
+    há 08 anos' pelo bispo diocesano — o que situaria o início por volta de 1989, inferência não afirmada pela fonte.
+- jurisdiction: ieab
+  role: other
+  role_description: membro do Conselho Diocesano
+  diocese: ieab-dar
+  end: '1997-10-05'
+  status: confirmed
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      foi Coadjutor e Pároco Interino da Paróquia Anglicana Emanuel, Olinda-PE; Coadjutor da Paróquia da SS. Trindade;
+      Ministro Encarregado do Ponto Missionário Anglicano da Redenção; membro do Conselho Diocesano, Delegado Sinodal
+      e membro da JUNET – Junta Nacional de Educação Teológica da IEAB, tendo se filiado a DAR EM 1976, no ano da
+      sua organização eclesiástica.
+  - source: drv-resgatando-iv
+    quote: >-
+      Como estava, por sua coerência, discriminado há 08 anos pelo “Bispo de Direito”, e há 06 anos pelo “Bispo
+      de Fato”, isolado em seu Ponto Missionário da Redenção, no Bairro da Boa Vista
+  notes: Antes do episcopado; datas não informadas.
+- jurisdiction: ieab
+  role: other
+  role_description: delegado ao Sínodo Geral
+  diocese: ieab-dar
+  end: '1997-10-05'
+  status: confirmed
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      foi Coadjutor e Pároco Interino da Paróquia Anglicana Emanuel, Olinda-PE; Coadjutor da Paróquia da SS. Trindade;
+      Ministro Encarregado do Ponto Missionário Anglicano da Redenção; membro do Conselho Diocesano, Delegado Sinodal
+      e membro da JUNET – Junta Nacional de Educação Teológica da IEAB, tendo se filiado a DAR EM 1976, no ano da
+      sua organização eclesiástica.
+  notes: Delegado sinodal da Diocese antes do episcopado; datas não informadas.
+- jurisdiction: ieab
+  role: other
+  role_description: membro da JUNET (Junta Nacional de Educação Teológica)
+  status: confirmed
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      foi Coadjutor e Pároco Interino da Paróquia Anglicana Emanuel, Olinda-PE; Coadjutor da Paróquia da SS. Trindade;
+      Ministro Encarregado do Ponto Missionário Anglicano da Redenção; membro do Conselho Diocesano, Delegado Sinodal
+      e membro da JUNET – Junta Nacional de Educação Teológica da IEAB, tendo se filiado a DAR EM 1976, no ano da
+      sua organização eclesiástica.
+  notes: >-
+    Órgão nacional da IEAB; antes do episcopado. Já bispo, foi vogal e depois, por três anos, presidente da JUNET.
+- jurisdiction: ieab
+  role: other
+  role_description: presidente da JUNET (Junta Nacional de Educação Teológica)
+  status: confirmed
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      O Bispo do Recife tornou-se vogal e, depois, por três anos, presidente da JUNET, participando, apesar das
+      diferenças, de instâncias e eventos provinciais.
+  notes: >-
+    Já como Bispo do Recife (entre 1998 e 2002, período tratado no capítulo); anos exatos não informados.
 events:
 - type: other
   date: '1985'
@@ -2486,3 +2684,109 @@ events:
       durante o Sínodo do Centenário da IEAB, em 1990, o então reverendo Robinson encabeçou o projeto de mudança
       do nome da denominação
     page: '190'
+- type: other
+  date: '2005'
+  description: >-
+    Deposição de Robinson Cavalcanti pela IEAB, descrita pelo próprio como resultado de um processo 'politicamente
+    motivado e espúrio', acompanhada da excomunhão de 32 clérigos e da exclusão da maioria das comunidades da Diocese
+    do Recife do 24º Concílio.
+  status: confirmed
+  sources:
+  - source: rclv-anglicanismo-identidade
+    quote: >-
+      terminando pela deposição do Bispo em um processo politicamente motivado e espúrio, a excomunhão de 32 clérigos
+      e a exclusão da maioria das comunidades, não convidadas para o irregular pretenso Concílio de nº.24.
+    page: '115'
+  - source: rclv-anglicanismo-comparado-2008
+    quote: >-
+      terminando pela deposição do Bispo em um processo politcamente motvado e espúrio, a excomunhão de 32 clérigos
+    page: '69'
+- type: other
+  date: '2008'
+  description: >-
+    Robinson Cavalcanti, bispo da Diocese do Recife, não foi convidado para a Conferência de Lambeth de 2008, junto
+    com Gene Robinson, o bispo de Harare e bispos da AMiA e da CANA.
+  status: probable
+  sources:
+  - source: rclv-anglicanismo-identidade
+    quote: >-
+      Vale ressaltar que o Arcebispo de Cantuária ao não convidar o Bispo Gene Robinson; o Bispo de Harare, em Zimbábue;
+      o Bispo do Recife e os Bispos da Amia e da CANA
+    page: '151'
+- type: other
+  date: null
+  description: >-
+    Depois de desvinculado da IEAB, Robinson Cavalcanti foi recebido pelo Arcebispo de Cantuária no Palácio de Lambeth.
+  status: probable
+  sources:
+  - source: rclv-anglicanismo-identidade
+    quote: >-
+      Como falei para o Arcebispo de Cantuária, quando o mesmo me recebeu no Palácio de Lambeth, após sermos desvinculados
+      da IEAB
+    page: '143'
+- type: other
+  date: null
+  description: >-
+    Robinson Cavalcanti, então presbítero, iniciou o Ponto Missionário anglicano de Caruaru-PE, depois fechado durante
+    o episcopado de Clóvis Erly Rodrigues.
+  status: confirmed
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      como os de Caruaru (iniciado pelo Rev. Robinson Cavalcanti), Fortaleza (iniciado pelo Rev. Washington Franco)
+      e Maceió (iniciado pela Revda. Evanilza Loureiro)
+- type: other
+  date: '1997-06-28'
+  description: >-
+    Eleição de Robinson Cavalcanti como bispo coadjutor da Diocese do Recife (IEAB), por maioria absoluta do clero
+    e dos leigos, em Concílio Extraordinário na casa de retiro dos jesuítas na Ilha de Itaparica (BA); concorreram
+    também Maurício Andrade e Ian Meldrum. A eleição foi depois homologada pela maioria dos bispos e conselhos diocesanos
+    da Província.
+  status: confirmed
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      Um Concílio Extraordinário foi, então, convocado para o final de junho de 1997, na casa de retiro dos Jesuítas,
+      na Ilha de Itaparica, na Bahia, para eleger um Bispo Coadjutor (auxiliar com direito à sucessão).
+  - source: drv-resgatando-iv
+    quote: >-
+      Na ocasião foram indicados 3 nomes: os reverendos Maurício Andrade, Ian Meldrum e Robinson Cavalcanti
+  - source: drv-resgatando-iv
+    quote: >-
+      Na véspera da festa de São Pedro de 1997, foi eleito como terceiro Bispo da Diocese Anglicana do Recife (o
+      primeiro eleito aqui e o primeiro nativo) o Rev. Robinson Cavalcanti, por maioria absoluta das urnas do clero
+      e dos leigos, posteriormente homologado pela maioria dos Bispos e dos Conselhos Diocesanos da Província
+- type: other
+  date: '1985'
+  description: >-
+    Robinson Cavalcanti, presbítero da Diocese Setentrional, foi enviado pelo Bispo Edmund Knox Sherrill à sagração
+    de Clóvis Erly Rodrigues como bispo coadjutor, na Catedral de Porto Alegre, para saudar o novo bispo em nome
+    da Diocese.
+  status: probable
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      Tive, por determinação do Bispo Sherrill, juntamente com a irmã Dalila, da Paróquia Anglicana do Bom Samaritano,
+      de me deslocar para a cerimônia de Sagração na Catedral de Porto Alegre (não havia qualquer clima para que
+      a mesma se desse aqui) e saudar o consagrado na festa que se seguiu no Teresópolis Tênis Clube.
+- type: other
+  date: '1998'
+  description: >-
+    Robinson Cavalcanti representou a IEAB na Conferência de Lambeth de 1998, onde foi o único delegado brasileiro
+    a votar a favor da Resolução 1.10 sobre sexualidade humana.
+  status: confirmed
+  sources:
+  - source: drv-resgatando-iv
+    quote: foi o único delegado brasileiro a votar favoravelmente à Resolução 1.10 sobre Sexualidade Humana.
+- type: other
+  date: 2000-08
+  description: >-
+    Em culto solene, o Bispo do Recife, Robinson Cavalcanti, transmitiu ao Primaz da IEAB a jurisdição sobre os
+    estados do Norte (Amazonas, Roraima, Pará e Amapá), que passaram a formar o Distrito Missionário da Amazônia;
+    o território da Diocese do Recife ficou restrito aos nove estados do Nordeste.
+  status: confirmed
+  sources:
+  - source: drv-resgatando-iv
+    quote: >-
+      Em Agosto o Bispo da DAR em Culto Solene, transmitiu aquela jurisdição ao Bispo Primaz. Desde então o território
+      da DAR passou a ser os nove Estados da região Nordeste.
