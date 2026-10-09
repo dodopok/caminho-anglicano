@@ -641,7 +641,7 @@ interface Citation {
   claim: Omit<SupportedClaim, 'quote' | 'page'>
 }
 
-function discrepancyText(index: BaseIndex, d: { field: string; value?: string | string[] | null }): string {
+export function discrepancyText(index: BaseIndex, d: { field: string; value?: string | string[] | null }): string {
   const label = FIELD_LABEL[d.field] ?? d.field
   if (d.value === null || d.value === undefined) return `${label}: não informado`
   const values = Array.isArray(d.value) ? d.value : [d.value]
