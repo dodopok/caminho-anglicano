@@ -19,7 +19,7 @@ sources:
   quote: Márcio Medeiros Meira, OSE (28/03)
 ordinations:
 - order: diaconate
-  date: '2000-10-29'
+  date: '2000-10-28'
   place: Paróquia da Ressurreição, João Pessoa-PB
   jurisdiction: ieab
   ordained_by: robinson-cavalcanti
@@ -37,10 +37,20 @@ ordinations:
     quote: Recebereis esta noite a ordem de diáconos para sempre
   - source: testemunho-mantenedor-2026-10-09-sermoes
     quote: Márcio é o Meira sim
+  - source: testemunho-mantenedor-2026-10-09-sermoes
+    quote: Pode passar os dois pra 28/10 também
+  discrepancies:
+  - field: date
+    value: '2000-10-29'
+    sources:
+    - source: rcor-drv-ord-marcio-claudio-lilian
+      quote: Paróquia da Ressurreição – João Pessoa, PB 29 de Outubro de 2000.
   notes: >-
     Sermão do bispo diocesano (Robinson Cavalcanti) na ordenação diaconal de Márcio, Cláudio e Lílian, todos membros
     de ordens religiosas (OSE ou franciscana). O sermão diz só 'Márcio'; a identificação com Márcio Medeiros Meira,
     OSE (depois bispo de João Pessoa), foi confirmada pelo mantenedor.
+    A data do cabeçalho do sermão é 29/10/2000, mas o texto cita a festa de São Simão e São Judas (28/10), a data
+    que Lílian Linhares, ordenada na mesma cerimônia, dá para o seu diaconato; o mantenedor adotou 28/10/2000.
 - order: episcopate
   date: '2017-06-10'
   place: Catedral PAES, Recife
