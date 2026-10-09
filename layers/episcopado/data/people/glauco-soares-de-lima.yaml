@@ -30,6 +30,14 @@ birth:
   - source: costa2021
     quote: O bispo Glauco Soares de Lima faleceu no dia 27 de dezembro de 2017 na cidade de São Paulo
     page: '149'
+  - source: f8gla-dab-facebook-obit-2017
+    quote: Noticiamos, com pesar, o falecimento do Revmo. Bispo, Dom Glauco Soares de Lima.
+  - source: f8gla-conic-nota-2017
+    quote: >-
+      É com pesar que comunicamos o falecimento, na tarde de ontem, terça-feira, 26/12, de dom Glauco Soares de
+      Lima, bispo emérito da Diocese Anglicana de São Paulo.
+  - source: f8gla-tubarao-bio-2017
+    quote: Glauco Soares de Lima nasceu em 28 de janeiro de 1934, na cidade de Pelotas, Rio Grande do Sul
 death:
   date: '2017-12-26'
   sources:
@@ -42,6 +50,14 @@ death:
     page: '149'
   - source: ec-2018-04
     quote: Faleceu em dezembro de 2017 o Bispo Glauco Soares de Lima, emérito de São Paulo.
+  - source: f8gla-dab-facebook-obit-2017
+    quote: Noticiamos, com pesar, o falecimento do Revmo. Bispo, Dom Glauco Soares de Lima.
+  - source: f8gla-conic-nota-2017
+    quote: >-
+      É com pesar que comunicamos o falecimento, na tarde de ontem, terça-feira, 26/12, de dom Glauco Soares de
+      Lima, bispo emérito da Diocese Anglicana de São Paulo.
+  - source: f8gla-tubarao-bio-2017
+    quote: Glauco Soares de Lima nasceu em 28 de janeiro de 1934, na cidade de Pelotas, Rio Grande do Sul
   discrepancies:
   - field: date
     value: '2017-12-27'
@@ -155,6 +171,38 @@ sources:
   quote: Glauco Soares de Lima, 1993—2003
 - source: ec-2018-04
   quote: Faleceu em dezembro de 2017 o Bispo Glauco Soares de Lima, emérito de São Paulo.
+- source: f8gla-dab-facebook-obit-2017
+  quote: Noticiamos, com pesar, o falecimento do Revmo. Bispo, Dom Glauco Soares de Lima.
+- source: f8gla-conic-nota-2017
+  quote: >-
+    É com pesar que comunicamos o falecimento, na tarde de ontem, terça-feira, 26/12, de dom Glauco Soares de Lima,
+    bispo emérito da Diocese Anglicana de São Paulo.
+- source: f8gla-tubarao-bio-2017
+  quote: Glauco Soares de Lima nasceu em 28 de janeiro de 1934, na cidade de Pelotas, Rio Grande do Sul
+- source: f8gla-tubarao-bio-2017
+  quote: >-
+    Em 1954, iniciou os seus estudos em Teologia no Seminário Teológico, em Porto Alegre, e de Filosofia, na Universidade
+    Federal do Rio Grande do Sul (UFRGS).
+- source: f8gla-tubarao-bio-2017
+  quote: >-
+    É formado em Filosofia, Teologia e Ciências Jurídicas, tendo sido agraciado com o titulo de Honoris Causa, pela
+    Escola Episcopal de Teologia, da Universidade de Harvard, Estados Unidos, em 1991.
+- source: rta-ecd1962
+  quote: Andrews Coll Rio de Janeiro, U RGS PhB 56, Epis Theol Sem Porto Alegre, ETS BD 61.
+- source: f8gla-dab-facebook-obit-2017
+  quote: >-
+    Começou a estudar Teologia na década de 50, nesse mesmo seminário, complementando seus estudos com a graduação
+    em Filosofia pela Universidade Federal do Rio Grande do Sul. Em sua caminhada de formação teológica estou no
+    Episcopal Divinity School, Cambridge, Massachusetts.
+- source: f8gla-dab-facebook-obit-2017
+  quote: >-
+    Teve uma vida dedicada às relações inter-religiosas e ecumênicas, participando de várias comissões Inter Anglicanas.
+- source: f8gla-dasp-saolucas-2025
+  quote: Membro da Ordem de São Lucas, Dom Glauco difundiu entre nós o ministério da bênção da saúde
+- source: f8gla-caminhos-dialogo-2015
+  quote: >-
+    Carta-convite expedida pelo CONIC e assinada pelo bispo anglicano Dom Glauco Soares, pelo presidente da IECLB
+    Huberto Kirchheim
 ordinations:
 - order: diaconate
   date: '1956-11-30'
@@ -179,6 +227,12 @@ ordinations:
       Foi ordenado diácono em 30 de novembro de 1956, na Paróquia da Ascensão, em Porto Alegre, pelo bispo Egmont
       Machado Krischke.
     page: '99'
+  - source: f8gla-tubarao-bio-2017
+    quote: >-
+      Foi ordenado diácono em 30 de novembro de 1956, na Paróquia da Ascensão, Porto Alegre, pelo Revmo. Bispo Egmont
+      Machado Krischke.
+  - source: rta-ecd1962
+    quote: D Nov 56 Bp Krischke P Feb 58 Bp Simoes.
   discrepancies:
   - field: jurisdiction
     value: dmsb
@@ -190,9 +244,10 @@ ordinations:
       page: '99'
   notes: >-
     Ordenante no diretório: 'Bp Krischke'. OCR: "SimSes" = Simões. Ano tirado da lista do clero nacional por ordem
-    de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+    de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado. Confirma data, local e ordenante já conhecidos.
 - order: presbyterate
   date: 1958-02
+  place: Paróquia do Natal, Dom Pedrito
   jurisdiction: dmsob
   ordained_by: plinio-lauer-simoes
   status: confirmed
@@ -207,10 +262,17 @@ ordinations:
     page: '290'
   - source: ieablac-cd1959
     quote: D Nov 56 Bp Krischke P Feb 58 Bp Simdes.
+  - source: f8gla-tubarao-bio-2017
+    quote: >-
+      Em 1958, na Paróquia do Natal, Dom Pedrito, foi ordenado presbítero pelo Revmo. Bispo Plínio Lauer Simões.
+  - source: rta-ecd1962
+    quote: D Nov 56 Bp Krischke P Feb 58 Bp Simoes.
   notes: >-
     Ordenante no diretório: 'Bp SimSes'. OCR: "SimSes" = Simões. OCR 'Simdes' = Simões (bispo Plínio Lauer Simões,
     que à época era bispo de Southwestern/Central Brazil; ele foi sagrado em 1956). A base tem 1958 sem ordenante.
-    Confirma diaconato por Krischke (nov/1956) já na base.
+    Confirma diaconato por Krischke (nov/1956) já na base. O diretório clerical dá fevereiro de 1958 e o bispo Simões;
+    o local (Paróquia do Natal, Dom Pedrito) vem da biografia de 2013/2017. A Wikipédia em português traz 1957 no
+    quadro lateral, sem fonte.
 - order: episcopate
   date: '1989-10-01'
   place: Catedral Anglicana de Sao Paulo
@@ -237,6 +299,18 @@ ordinations:
       Em julho de 1989, o reverendo Glauco Soares de Lima 88 foi eleito bispo coadjutor na Diocese Anglicana de
       São Paulo
     page: '99'
+  - source: f8gla-dab-facebook-obit-2017
+    quote: >-
+      Depois Revmo. Deão da Catedral Anglicana de São Paulo, onde foi Sagrado (1989) como o terceiro bispo diocesano,
+      tornando-se Emérito em 2002.
+  - source: f8gla-curitiba-mab-bio-2013
+    quote: foi ordenado e sagrado, no dia 1o de julho, na Catedral de São Paulo, sucedendo Dom Sumio Takatsu.
+  - source: f8gla-caminho-glossario
+    quote: Foi consagrado bispo em 1º de julho de 1989, sucedendo Dom Sumio Takatsu.
+  - source: f8gla-tubarao-bio-2017
+    quote: >-
+      0 episcopado veio no ano de 1989, quando foi ordenado e sagrado, no dia 10 de julho, na Catedral de São Paulo,
+      sucedendo Dom Sumio Takatsu.
   discrepancies:
   - field: date
     value: '1989-07-01'
@@ -244,12 +318,29 @@ ordinations:
     - source: wp-pt-glauco
       quote: >-
         Em 1° de julho de 1989, Lima foi sagrado bispo na Catedral Anglicana de São Paulo, sucedendo Dom Sumio Takatsu.
+    - source: f8gla-curitiba-mab-bio-2013
+      quote: foi ordenado e sagrado, no dia 1o de julho, na Catedral de São Paulo, sucedendo Dom Sumio Takatsu.
+    - source: f8gla-caminho-glossario
+      quote: Foi consagrado bispo em 1º de julho de 1989, sucedendo Dom Sumio Takatsu.
+  - field: date
+    value: '1989-07-10'
+    sources:
+    - source: f8gla-tubarao-bio-2017
+      quote: >-
+        0 episcopado veio no ano de 1989, quando foi ordenado e sagrado, no dia 10 de julho, na Catedral de São
+        Paulo, sucedendo Dom Sumio Takatsu.
   notes: >-
     O livro diz que houve sete co-sagrantes, sem nomeá-los. Versao de Costa 2021: 01/10/1989, St. Paul's Church,
     eleito coadjutor em julho de 1989. Wikipedia PT diz 01/07/1989 na Catedral Anglicana de Sao Paulo (ver afirmacao
     contestada seguinte). Versao Wikipedia PT (sem fonte especifica). Conflita com Costa 2021 (eleito coadjutor
     em julho, sagrado em 1o de outubro). Coadjutor. A tese diz 'mais sete bispos' como co-sagrantes, sem nomeá-los.
-    O templo é a St. Paul's Church, onde exercia o ministério.
+    O templo é a St. Paul's Church, onde exercia o ministério. A diocese de Brasília, em nota de falecimento, situa
+    a sagração em 1989 na Catedral Anglicana de São Paulo e o descreve como terceiro bispo diocesano de São Paulo;
+    não dá dia nem sagrantes. Versão de 1º de julho de 1989 (biografia ligada ao Movimento Anglicano no Brasil,
+    de 2013, repetida no glossário Caminho Anglicano e na Wikipédia). Conflita com Kickhöfel (1995) e Costa (2021),
+    que dão 1º de outubro de 1989 e informam que julho foi o mês da eleição como coadjutor. Terceira versão de data
+    (10 de julho de 1989), na biografia publicada em 27/12/2017 por comunidade anglicana de Tubarão, com o mesmo
+    texto de 2013 mas dia diferente ("10" em vez de "1o"), possivelmente erro de transcrição.
 affiliations:
 - jurisdiction: dmsob
   role: clergy
@@ -265,6 +356,98 @@ affiliations:
   - source: cd1968
     quote: LIMA, Glauco Soares de (SwBra) Trans to Brazil Ch 25 Apr 65.
   notes: Início = ano do diaconato (convenção desta pesquisa); distrito = o do cabeçalho do verbete.
+- jurisdiction: dmsob
+  role: priest
+  start: '1957'
+  end: '1958'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: rta-ecd1962
+    quote: M-in-c Chr Jaguarao RGS 57-58, R Crucif Bage RGS 58-60, Stdt ETS 60-61*
+  - source: f8gla-dab-facebook-obit-2017
+    quote: >-
+      Seu ministério ordenado foi exercido em muitas comunidades anglicanas – começando em Jaguarão –, em várias
+      dioceses de nossa Província
+  notes: >-
+    Local: Igreja de Cristo, Jaguarão (RS). Missionário encarregado (M-in-c) da Igreja de Cristo (Christ Church),
+    Jaguarão (RS), 1957-1958, ainda como diácono (ordenado presbítero em fev./1958).
+- jurisdiction: dmsob
+  role: priest
+  start: '1958'
+  end: '1960'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: rta-ecd1962
+    quote: M-in-c Chr Jaguarao RGS 57-58, R Crucif Bage RGS 58-60, Stdt ETS 60-61*
+  - source: cd1965
+    quote: M-in-c Chr Jaguarao RGS 57-58, R Crucif Bage'RGS 58-60, Stdt ETS 60-61*
+  notes: >-
+    Local: Igreja da Crucificação, Bagé (RS). Reitor (R) da Igreja da Crucificação (Church of the Crucifixion),
+    Bagé (RS), 1958-1960.
+- jurisdiction: dmsob
+  role: other
+  role_description: estudante da Episcopal Theological School
+  start: '1960'
+  end: '1961'
+  end_reason: transfer
+  status: confirmed
+  sources:
+  - source: rta-ecd1962
+    quote: M-in-c Chr Jaguarao RGS 57-58, R Crucif Bage RGS 58-60, Stdt ETS 60-61*
+  - source: rta-ecd1962
+    quote: Andrews Coll Rio de Janeiro, U RGS PhB 56, Epis Theol Sem Porto Alegre, ETS BD 61.
+  notes: >-
+    Local: Episcopal Theological School, Cambridge (EUA). Estudante da Episcopal Theological School (ETS, Cambridge,
+    Massachusetts) em 1960-1961, ano em que consta o título de BD (bacharel em divindade); a Wikipédia e o glossário
+    Caminho Anglicano falam em mestrado em 1961.
+- jurisdiction: dmsob
+  role: priest
+  start: '1961'
+  status: confirmed
+  sources:
+  - source: cd1965
+    quote: LIMA, GLAUCO SOARES de (SwBra) Church of the Redeemer, Rio de Janeiro, Brazil Mssy 61-.
+  - source: f8gla-dab-facebook-obit-2017
+    quote: sendo pároco na Paróquia Anglicana do Redentor, no estado do Rio de Janeiro
+  notes: >-
+    Local: Igreja do Redentor, Rio de Janeiro. Missionário (Mssy) na Igreja do Redentor (Church of the Redeemer),
+    Rio de Janeiro, a partir de 1961; a nota da Diocese de Brasília o chama de pároco da Paróquia Anglicana do Redentor.
+    Fim não informado; a Wikipédia diz que serviu como reitor de várias paróquias do Rio de Janeiro.
+- jurisdiction: ieab
+  role: other
+  role_description: coordenador do Programa Nacional das Dioceses Companheiras
+  start: '1965'
+  status: probable
+  sources:
+  - source: f8gla-tubarao-bio-2017
+    quote: >-
+      Exerceu o seu ministério em diversas comunidades das Dioceses Meridional, Sul-Ocidental, Anglicana do Rio
+      de Janeiro e de São Paulo, além de ter exercido importantes funções na IEAB, tais como a coordenação do Programa
+      Nacional das Dioceses Companheiras (1965), Iecionado como professor no Seminário Nacional de São Paulo (1967)
+      e, durante 10 anos, foi o primaz da Igreja (1994-2003).
+  notes: >-
+    Cargo nacional em 1965 (ano da autonomia da Igreja Episcopal do Brasil); duração não informada. O texto original
+    tem "Iecionado" (provavelmente "lecionado").
+- jurisdiction: ieab
+  role: other
+  role_description: professor do Seminário Teológico Nacional (São Paulo)
+  start: '1967'
+  status: probable
+  sources:
+  - source: f8gla-tubarao-bio-2017
+    quote: >-
+      Exerceu o seu ministério em diversas comunidades das Dioceses Meridional, Sul-Ocidental, Anglicana do Rio
+      de Janeiro e de São Paulo, além de ter exercido importantes funções na IEAB, tais como a coordenação do Programa
+      Nacional das Dioceses Companheiras (1965), Iecionado como professor no Seminário Nacional de São Paulo (1967)
+      e, durante 10 anos, foi o primaz da Igreja (1994-2003).
+  - source: f8gla-dab-facebook-obit-2017
+    quote: Foi professor do Seminário Nacional de nossa Igreja.
+  - source: wp-pt-glauco
+    quote: Também foi professor de teologia pastoral no Seminário Teológico Nacional de sua igreja.
+  notes: >-
+    Professor no seminário nacional de São Paulo a partir de 1967 (Wikipédia: professor de teologia pastoral).
 - jurisdiction: ieab
   role: bishop
   start: '1989'
@@ -344,7 +527,7 @@ affiliations:
     explicitado.
 - jurisdiction: ieab
   role: primate
-  start: '1993'
+  start: 1993-05
   end: 2003-06
   end_reason: retirement
   status: confirmed
@@ -374,11 +557,27 @@ affiliations:
   - source: costa2021
     quote: pelo Primaz, Glauco Soares de Lima
     page: '186'
+  - source: f8gla-dab-facebook-obit-2017
+    quote: >-
+      Glauco e eu começamos a servir a Igreja como Bispo Primaz e Secretário Geral em maio de 1993, e nunca havíamos
+      trabalhado juntos
+  - source: f8gla-dab-facebook-obit-2017
+    quote: >-
+      Ele que completou 50 anos de ministério ordenado em 2006 e serviu a Igreja, como primaz, durante três mandatos
+      por dez anos consecutivos (1993, 1997, 2003).
+  - source: f8gla-ens-2003-121
+    quote: The meeting also honored Glauco Soares de Lima, the retiring primate of the Brazilian church.
+  - source: f8gla-conic-nota-2017
+    quote: >-
+      Dom Glauco esteve à frente da Igreja Episcopal Anglicana do Brasil (IEAB) de 1994-2003, exercendo três mandatos
+      consecutivos como primaz.
   notes: >-
     Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94). Em maio de 2003 a Reunião dos Primazes, em Gramado
     (RS), homenageou o primaz que se aposentava; a entronização do sucessor ocorreu em 1º de junho de 2003. O livro
     dá só o início de cada primado; o fim é o início do primado seguinte. Anexo E da tese (primazes da IEAB). Primaz
-    em outubro de 1997. Também foi um dos interinos à frente da DAR (2004-2006).
+    em outubro de 1997. Também foi um dos interinos à frente da DAR (2004-2006). Maurício Andrade (secretário-geral
+    da IEAB em todo o primado) data o início de ambos em maio de 1993, o que favorece 1993 sobre 1994 (data de outras
+    fontes, que podem registrar a posse). A nota da Diocese de Brasília fala em três mandatos (1993, 1997, 2003).
   discrepancies:
   - field: start
     value: '1994'
@@ -391,6 +590,26 @@ affiliations:
     - source: costa2021
       quote: Primazes da Igreja Episcopal Anglicana do Brasil … 1994-2003 – Glauco Soares de Lima
       page: 523-524
+- jurisdiction: ieab
+  role: other
+  role_description: bispo emérito
+  diocese: ieab-dasp
+  start: '2002'
+  end: '2013'
+  end_reason: left
+  status: confirmed
+  sources:
+  - source: f8gla-dab-facebook-obit-2017
+    quote: >-
+      Depois Revmo. Deão da Catedral Anglicana de São Paulo, onde foi Sagrado (1989) como o terceiro bispo diocesano,
+      tornando-se Emérito em 2002.
+  - source: f8gla-conic-nota-2017
+    quote: >-
+      É com pesar que comunicamos o falecimento, na tarde de ontem, terça-feira, 26/12, de dom Glauco Soares de
+      Lima, bispo emérito da Diocese Anglicana de São Paulo.
+  notes: >-
+    Emérito da Diocese Anglicana de São Paulo desde 2002; continuou chamado de emérito de São Paulo após deixar
+    a IEAB.
 - jurisdiction: ieab
   role: other
   role_description: bispo diocesano interino
@@ -504,9 +723,25 @@ affiliations:
     quote: >-
       Glauco Soares de Lima – emérito da DASP –, se desligaram formalmente da Igreja Episcopal Anglicana do Brasil.
     page: '93'
+- jurisdiction: ieab
+  role: other
+  role_description: deão
+  diocese: ieab-dasp
+  end: '1989'
+  status: probable
+  sources:
+  - source: f8gla-dab-facebook-obit-2017
+    quote: >-
+      Depois Revmo. Deão da Catedral Anglicana de São Paulo, onde foi Sagrado (1989) como o terceiro bispo diocesano,
+      tornando-se Emérito em 2002.
+  notes: >-
+    Local: Catedral Anglicana de São Paulo (Saint Paul's). A nota de falecimento da Diocese de Brasília o chama
+    de deão da Catedral Anglicana de São Paulo antes da sagração; Kickhöfel (1995) o descreve como pároco da Igreja
+    de São Paulo (Saint Paul's Church) em 1989. A igreja só foi instituída catedral da DASP em 1995, então "deão"
+    pode ser tratamento retrospectivo. Datas de início e fim não informadas.
 events:
 - type: death
-  date: 2017-12
+  date: '2017-12-26'
   description: >-
     Morte do bispo emerito Glauco Soares de Lima (dezembro de 2017), noticiada pelo orgao oficial da IEAB.
   status: confirmed
@@ -515,6 +750,12 @@ events:
     quote: Faleceu em dezembro de 2017 o Bispo Glauco Soares de Lima, emérito de São Paulo.
   - source: costa2021
     quote: Faleceu em 26 de dezembro de 2017.
+  - source: f8gla-conic-nota-2017
+    quote: >-
+      É com pesar que comunicamos o falecimento, na tarde de ontem, terça-feira, 26/12, de dom Glauco Soares de
+      Lima, bispo emérito da Diocese Anglicana de São Paulo.
+  - source: f8gla-dab-facebook-obit-2017
+    quote: Noticiamos, com pesar, o falecimento do Revmo. Bispo, Dom Glauco Soares de Lima.
 - type: other
   date: '2012-09-08'
   description: >-
@@ -701,3 +942,163 @@ events:
     quote: >-
       No décimo escrutínio, tensão para a leitura do último e decisivo voto: consegui a maioria. O Bispo Clóvis
       proclama o eleito.
+- type: other
+  date: '1998-08-07'
+  description: >-
+    Primaz Glauco Soares de Lima, então também bispo de São Paulo, preside o plenário de 7 de agosto de 1998 da
+    Conferência de Lambeth em que se discutem as resoluções IV.26 e V.23 sobre a Declaração de Kuala Lumpur; a conferência
+    passa à ordem do dia seguinte sem votar.
+  status: probable
+  sources:
+  - source: f8gla-soaj-lambeth-1998-08-07
+    quote: >-
+      It was explained by the chairman, the Bishop of Sao Paulo and Primate of Brazil, Glauco Soares de Lima, that
+      both motions IV.26 and V.23 would be taken together as a single item of business
+- type: other
+  date: '1998-09-03'
+  description: >-
+    Na Conferência de Lambeth de 1998, o arcebispo Glauco de Lima, do Brasil, comenta o relatório sobre dívida internacional
+    e justiça econômica ("To be born in debt and die in even bigger debt is the fate of a third of the world's population").
+  status: probable
+  sources:
+  - source: f8gla-ens-98-2220
+    quote: >-
+      "To be born in debt and die in even bigger debt is the fate of a third of the world's population," said Archbishop
+      Glauco de Lima of Brazil.
+- type: other
+  date: '1996'
+  description: >-
+    Em conferência regional preparatória para Lambeth realizada no Brasil, o primaz Glauco Soares de Lima lembra
+    aos bispos latino-americanos que mais da metade dos 70 milhões de anglicanos do mundo vive em países de língua
+    não inglesa.
+  status: probable
+  sources:
+  - source: f8gla-ens-96-1586
+    quote: >-
+      Speaking in Brazil at a regional preparatory conference leading up to Lambeth, Archbishop Glauco Soares of
+      Lima, primate of the Episcopal Church of Brazil, reminded Latin America's bishops that, of the world's 70
+      million Anglicans, more than 50 percent live in non-English-speaking countries.
+- type: other
+  date: 1999-09
+  description: >-
+    Na reunião do Conselho Consultivo Anglicano (ACC) em Dundee, Escócia, em 1999, o primaz Glauco Soares de Lima
+    critica o Relatório Virginia como sinal de "mente ainda colonial" nas estruturas descritas, e preocupa-se com
+    o colonialismo entre as igrejas do Norte e do Sul.
+  status: probable
+  sources:
+  - source: f8gla-ens-99-151
+    quote: >-
+      Archbishop Glauco Soares de Lima, primate of the Episcopal Church in Brazil, expressed his concern about the
+      on-going colonialism between countries and churches in the North and the South. He said that the report "is
+      a sign of a still-colonial mind, even in the structures described."
+  - source: f8gla-ens-99-173
+    quote: The consultation was announced at the ACC's meeting in Dundee, Scotland, in September.
+- type: other
+  date: 1999-11
+  description: >-
+    O arcebispo Glauco Soares de Lima, do Brasil, integra o grupo de bispos e primazes das Conversações Anglicanas
+    Internacionais sobre Sexualidade Humana, presididas por Frank Griswold (primeira reunião em novembro de 1999,
+    no Mosteiro de Holy Cross, West Park, Nova York; relatório final em 2002).
+  status: confirmed
+  sources:
+  - source: f8gla-ens-99-173
+    quote: >-
+      Besides Griswold, those present at Holy Cross Monastery were Bishop Simon Chiwanga of Tanzania, president
+      of the Anglican Consultative Council (ACC), Bishop Terence Finlay of Canada, Bishop Josiah Idowu-Fearon of
+      Nigeria, Bishop Chilton Knudsen of Maine, Archbishop Peter Kwong of Hong Kong, Archbishop Glauco Soares de
+      Lima of Brazil
+  - source: f8gla-ens-2002-183
+    quote: >-
+      Primates in the group included Griswold of ECUSA; Peter Kwong, archbishop of Hong Kong; Glauco Soares de Lima,
+      Primate of Brazil; Peter Watson, archbishop of Melbourne; and Rowan Williams, archbishop of Wales.
+- type: other
+  date: 2001-07
+  description: >-
+    O presiding bishop Frank Griswold visita o Brasil (São Paulo e Porto Alegre) em julho de 2001, em parte por
+    amizade com o primaz Glauco Soares de Lima; Glauco expressa a esperança de que a visita lembre às duas igrejas
+    que "o mundo inteiro é nosso campo missionário".
+  status: probable
+  sources:
+  - source: f8gla-ens-2001-197
+    quote: >-
+      The Most Rev. Glauco Soares de Lima, Primate of the Anglican Episcopal Church of Brazil, expressed the hope
+      that this visit would remind both churches that "the whole world is our mission field."
+  - source: f8gla-ens-2001-197
+    quote: >-
+      Griswold said that he had come to Brazil in part because of a friendship with Bishop Soares de Lima, "a wonderful,
+      wise and seasoned primate who has been a minister of encouragement to me."
+- type: other
+  date: '1999'
+  description: >-
+    O primaz Glauco Soares de Lima acompanha o primaz canadense Michael Peers numa visita de oito dias à Igreja
+    Episcopal Anglicana do Brasil (Brasília e Porto Alegre, entre outros lugares), relatada em junho de 1999.
+  status: probable
+  sources:
+  - source: lib-aj-1999-06
+    quote: They were accompanied by Bishop Glauco Soares de Lima, Bishop of Sao Paulo and Primate of Brazil.
+  - source: lib-aj-1999-06
+    quote: >-
+      Archbishop Michael Peers, left, Bishop Glauco Soares de Lima, Primate of Brazil, and Bishop Orlando Santos
+      de Oliviera of the Southern Diocese join in a Sunday service near Porto Alegre.
+- type: other
+  date: 2003-05
+  description: >-
+    Reunião dos Primazes da Comunhão Anglicana no Brasil (maio de 2003, com sessões em Porto Alegre), em que se
+    homenageia Glauco Soares de Lima, primaz que se aposentava.
+  status: confirmed
+  sources:
+  - source: f8gla-ens-2003-121
+    quote: The meeting also honored Glauco Soares de Lima, the retiring primate of the Brazilian church.
+- type: other
+  date: 1992-05
+  description: >-
+    A Igreja Episcopal e a Igreja Episcopal do Brasil, em reunião de cinco dias em Cincinnati (início de maio de
+    1992), buscam uma relação de parceria entre irmãs; o então bispo de Sul-Central Brasil (São Paulo), Glauco Soares
+    de Lima, é citado dizendo que "a velha relação passou" e que as duas igrejas discutem "talvez pela primeira
+    vez" a si mesmas e à realidade uma da outra.
+  status: probable
+  sources:
+  - source: lib-ens-92126
+    quote: >-
+      "It was a shock for the Brazilians," Bishop Glauco Soares de Lima of South-Central Brazil said in an interview.
+  - source: lib-ens-92126
+    quote: >-
+      "The old relationship is past. We are now looking for a sister-to-sister relationship," Soares de Lima said.
+- type: other
+  date: 1994-02
+  description: >-
+    O Conselho Executivo da Igreja Episcopal dos EUA dá as boas-vindas ao bispo Glauco Soares de Lima, da Diocese
+    de São Paulo, e recomenda um acordo bilateral entre a Igreja Episcopal e a Igreja Episcopal do Brasil como novo
+    modelo de missão.
+  status: probable
+  sources:
+  - source: f8gla-ens-94017
+    quote: >-
+      welcomed Bishop Glauco Soares de Lima of the Diocese of Sao Paulo, Brazil, and the Rev. Douglass Bailey of
+      Calvary Church in Memphis, Tennessee. The council commended to dioceses, congregations, institutions and individuals
+      a vision statement and bilateral agreement presented by a committee on relations between the Episcopal Church
+      and Episcopal Church in Brazil as a new model for doing mission;
+- type: other
+  date: null
+  description: >-
+    Dom Glauco Soares de Lima, com Paulo Evaristo Arns, participa da celebração ecumênica na Catedral da Sé, em
+    São Paulo, em memória do jornalista Vladimir Herzog, morto pela ditadura militar.
+  status: probable
+  sources:
+  - source: f8gla-dab-facebook-obit-2017
+    quote: >-
+      Ao lado de Dom Paulo Evaristo Arns esteve presente por ocasião da Celebração Ecumênica em memória e honra
+      a Vladimir Herzog, jornalista que foi morto pelo regime ditatorial, na Catedral da Sé.
+- type: other
+  date: '2000'
+  description: >-
+    O primaz Glauco Soares de Lima institui o Distrito Missionário da Amazônia e do Oeste (ano 2000), iniciando
+    a expansão da IEAB para o Norte e o Centro-Oeste do país.
+  status: probable
+  sources:
+  - source: f8gla-dab-facebook-obit-2017
+    quote: >-
+      Foi ele quem deu início a caminhada da Igreja para o Norte e para o Centro-Oeste do Brasil quando instituiu
+      o Distrito Missionário da Amazônia e do Oeste no ano 2000.
+  - source: f8gla-ens-2001-197
+    quote: There are seven dioceses and two newly formed missionary districts in Amazônia and Rondônia
