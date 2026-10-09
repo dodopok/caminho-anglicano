@@ -2,6 +2,10 @@
 id: diocese-of-rhode-island
 name: Diocese of Rhode Island
 type: diocese
+description: Diocese da TEC que tem James De Wolf Perry como bispo desde 6 de janeiro de 1911.
+sources:
+- source: tlc-1911-01-14
+  quote: as Bishop of Rhode Island, in St. John’s Church, Providence.
 relations:
 - type: part_of
   target: tec

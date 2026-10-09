@@ -1,10 +1,35 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: manoel-nunes-da-silva-neto
 name: Manoel Nunes da Silva Neto
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Manoel Nunes da Silva Neto era diácono da Missão Anglicana da Esperança, em João Pessoa, na Diocese Anglicana
+  do Recife (DAR), em 2004, e depois pároco da Paróquia Anglicana da Esperança e contador diocesano. Em 23/08/2005
+  foi excluído da comunhão da IEAB, tendo declarado manter comunhão com o bispo diocesano Robinson Cavalcanti.
 sources:
-- source: drv-declaracao-32
-  quote: Rev. Manoel Nunes da Silva Neto
+- source: dard1-carta-bispos-2004
+  quote: Rev. Manoel Nunes da Silva Neto Missão Anglicana da Esperança
+- source: darl3-carta-0904
+  quote: Rev. Manoel Nunes da Silva Neto Missão Anglicana da Esperança
+- source: drp2-breves-06-2005
+  quote: >-
+    Dom Robinson Cavalcanti celebrou Culto Eucarístico na Paróquia Anglicana da Esperança, em João Pessoa (PB),
+    dia 14/08
+- source: drp2-breves-06-2005
+  quote: O Rev. Manoel Nunes, e toda a Paróquia
+- source: darl3-setubal
+  quote: Rev. Manuel Nunes da S. Neto – Contador Diocesano
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Manoel Nunes da Silva Neto … Os clérigos não atenderam à convocação
+    e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo
+    plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Manoel Nunes da Silva Neto … Recife, 23 de agosto de 2005.
+  page: 560-561
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy

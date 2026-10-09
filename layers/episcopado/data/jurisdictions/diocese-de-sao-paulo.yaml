@@ -2,6 +2,11 @@
 id: diocese-de-sao-paulo
 name: Diocese de São Paulo
 type: diocese
+description: Diocese da ICA, com o bispo Izaias.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: Diocese de São Paulo, com o bispo Izaias
+  page: '138'
 relations:
 - type: part_of
   target: ica

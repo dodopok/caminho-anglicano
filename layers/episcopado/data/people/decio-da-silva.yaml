@@ -1,10 +1,39 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: decio-da-silva
 name: Décio da Silva
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Ordenado diácono em 27/12/2003 e presbítero em 04/12/2004 por Robinson Cavalcanti, em Olinda (PE), foi clérigo
+  da Diocese Anglicana do Recife e esteve à frente da Missão Anglicana Filadélfia, em Maceió. Foi excluído da Comunhão
+  da IEAB em 23/08/2005, tendo declarado manter plena comunhão com Cavalcanti.
 sources:
-- source: drp-boletim-oracao-2006
-  quote: 'Orar pela Paróquia Anglicana Emanuel; pelos Reverendos: Vera Nascimento e Décio da Silva'
+- source: rcor-drv-ord-decio-2003
+  quote: >-
+    Décio da Silva, Elias Leôncio de Brito Filho, ose, Raniere Almeida de Oliveira, Solange Cristina Pereira e Tibério
+    Marques da Silva, ose
+- source: rcor-drv-ord-decio-2003
+  quote: Paróquia Anglicana Emanuel - Olinda/PE — 27/12/2003
+- source: drp2-concilio-xxiv-2004
+  quote: >-
+    foi celebrado um Culto Eucarístico com a Ordenação Presbiteral dos Reverendos: Décio da Silva, Fred Souto, Marconi
+    Oliveira, Solange Cristina Pereira e Raniere Oliveira
+- source: drp2-ord-presb-xxiv-concilio-2004
+  quote: Ordenação presbiteral XXIV C Diocesano- Olinda PE
+- source: drp2-breves-08-2005
+  quote: >-
+    Oremos pelo trabalho evangelístico da Missão Anglicana Filadélfia, em Maceió, e pela vida do Rev. Décio da Silva
+    à frente desse trabalho
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Décio da Silva … Os clérigos não atenderam à convocação e declararam,
+    via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo plena comunhão
+    com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Décio da Silva … Recife, 23 de agosto de 2005.
+  page: 560-561
 ordinations:
 - order: diaconate
   date: '2003-12-27'

@@ -1,10 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: mark-david-haverland
 name: Mark David Haverland
-biography: Arcebispo da Anglican Catholic Church (ACC); teve Victor Manuel Cruz-Blanco entre seus consagrantes.
+biography: >-
+  Arcebispo da Anglican Catholic Church (ACC), tendo Victor Manuel Cruz-Blanco entre seus consagrantes.
 sources:
 - source: cant-novas-igrejas-2024
   quote: chegando a ser um dos consagrantes do atual arcebispo da ACC, Mark David Haverland.
+  page: '76'
+- source: cant-novas-igrejas-2024
+  quote: do atual arcebispo da ACC, Mark David Haverland.
   page: '76'
 ordinations:
 - order: episcopate

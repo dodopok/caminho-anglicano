@@ -1,6 +1,28 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: charles-richard-mccarthy
 name: Charles Richard McCarthy
+biography: >-
+  Ordenado presbítero em 26/10/1974, na Filadélfia, por Richard A. Nowak, teve a sagração episcopal registrada com
+  datas e sagrantes divergentes, entre elas 30/04/1977, sub conditione, em Mirabel (Québec), por Rainer Laufers.
+sources:
+- source: lin-tjb-mccarthy
+  quote: >-
+    Ordained a priest on 10/26/1974 at Philadelphia, Pennsylvania, by Richard A. Nowak, a bishop of xxxxx.
+- source: lin-tjb-mccarthy
+  quote: >-
+    Later consecrated a bishop, sub conditione, on 04/30/1977 at Mirabel, Québec, by Rainer Laufers, a bishop of
+    the Old Holy Catholic Church in Canada, assisted by André Leon Zotique Barbeau, a bishop of xxxxx, by André
+    LeTellier, a bishop of the Catholic Charismatic Church of Canada ,, by Patrick J. Healy, a bishop of the American
+    Orthodox Catholic Church, and by Jean Marie Breault, a bishop of the Catholic Charismatic Church of Canada.
+- source: lin-tjb-mccarthy
+  quote: >-
+    Consecrated a bishop, sub conditione, on 11/xx/1976 at xxxxx by Michel Staffiero, a bishop of the Église de
+    l'Unité Catholique et Apostolique, assisted by xxxx, a bishop of xxxx.
+- source: lin-tjb-mccarthy
+  quote: >-
+    Previously consecrated a bishop on 04/06/1975 at Philadelphia, Pennsylvania, by Francis Joseph Ryan, a bishop
+    of the Ecumenical Orthodox Catholic Church - Autocephalous, assisted by Patrick J. Healy, a bishop of the American
+    Orthodox Catholic Church.
 ordinations:
 - order: presbyterate
   date: '1974-10-26'

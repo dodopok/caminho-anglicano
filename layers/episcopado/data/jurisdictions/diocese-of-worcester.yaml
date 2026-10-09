@@ -2,6 +2,11 @@
 id: diocese-of-worcester
 name: Diocese of Worcester
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra cujo bispo John Whitgift (1577-1583) foi depois transferido para Canterbury.
+sources:
+- source: stubbs-1897
+  quote: John Whitgift. Worcester; Canterbury, 1583; d. 1604, Feb. 29.
 relations:
 - type: part_of
   target: church-of-england

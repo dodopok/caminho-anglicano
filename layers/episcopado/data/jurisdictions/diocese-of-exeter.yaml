@@ -2,6 +2,16 @@
 id: diocese-of-exeter
 name: Diocese of Exeter
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra que teve como bispos Miles Coverdale (1551-1553), Jonathan Trelawny (1689-1707)
+  e Frederick Temple (1869-1885).
+sources:
+- source: stubbs-1897
+  quote: Miles Coverdale. Exeter, 1551-3; d. 1568.
+- source: stubbs-1897
+  quote: Jonathan Trelawney. Bristol ; Exeter, 1689 ; Winchester, 1707; d. 1721, July 19.
+- source: stubbs-1897
+  quote: Frederick Temple. Exeter ; London, 1885 ; Canterbury, 1896
 relations:
 - type: part_of
   target: church-of-england

@@ -2,6 +2,14 @@
 id: diocese-de-springfield
 name: Diocese de Springfield
 type: diocese
+description: >-
+  Diocese da TEC liderada pelo bispo Peter Beckwith, que teve também como bispo Albert Arthur Chambers, hoje emérito.
+sources:
+- source: darn2-springfield-2009
+  quote: A Diocese de Springfield, liderada pelo Bispo Peter Beckwith
+- source: cant-novas-igrejas-2024
+  quote: o bispo emérito da Diocese Episcopal de Springfield, Albert Arthur Chambers.
+  page: '70'
 relations:
 - type: part_of
   target: tec

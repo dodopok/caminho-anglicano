@@ -1,10 +1,30 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: cezar-romero-leal-vieira
 name: Cézar Romero Leal Vieira
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Clérigo da Diocese Anglicana do Recife, ministro em reconhecimento de ordem e secretário diocesano de Missão e
+  Evangelismo. Foi excluído da Comunhão da IEAB e das Sagradas Ordens em 23/08/2005, tendo declarado manter plena
+  comunhão com o bispo diocesano Robinson Cavalcanti.
 sources:
 - source: drv-declaracao-32
   quote: Rev. Cézar Romero Leal Vieira
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Cézar Romero Leal Vieira … Os clérigos não atenderam à convocação
+    e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo
+    plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Cézar Romero Leal Vieira … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: darl3-carta-0904
+  quote: >-
+    Ministros em Reconhecimento de Ordem: Rev. Cézar Romero Leal Vieira Paróquia Anglicana Jardim das Oliveiras
+- source: darl3-setubal
+  quote: Rev. Cezar Romero de L. Vieira – Secretário Diocesano de Missão e Evangelismo
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy

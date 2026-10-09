@@ -2,6 +2,15 @@
 id: diocese-de-quincy
 name: Diocese de Quincy
 type: diocese
+description: Diocese da ACNA, cujo bispo é Juan Alberto Morales, vinculada ao Cone Sul desde novembro de 2008.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    mantém fortes laços com a Diocese de Quincy, da Igreja Anglicana na América do Norte (ACNA), mantendo uma boa
+    relação com o bispo, Juan Alberto Morales.
+  page: '78'
+- source: darl3-idx-p2
+  quote: A Diocese de Quincy se vincula ao Cone Sul
 relations:
 - type: part_of
   target: acna

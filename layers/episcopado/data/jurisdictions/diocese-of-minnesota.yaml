@@ -2,6 +2,10 @@
 id: diocese-of-minnesota
 name: Diocese of Minnesota
 type: diocese
+description: Diocese da TEC cujo primeiro bispo, Henry Benjamin Whipple, foi consagrado em 13 de outubro de 1859.
+sources:
+- source: perry-1895
+  quote: He was consecrated first bishop of Minnesota
 relations:
 - type: part_of
   target: tec

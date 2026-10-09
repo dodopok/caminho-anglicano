@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: josiah-idowu-fearon
 name: Josiah Idowu-Fearon
+biography: >-
+  Secretário-geral da Comunhão Anglicana, disse em 2018 que chamar a Igreja Anglicana no Brasil, lançada em 12/05/2018
+  no Recife, de parte da Comunhão é incorreto, por não estar em comunhão com Cantuária.
+sources:
+- source: rtb-ct-2018-gafcon-brazil
+  quote: >-
+    The Anglican Church in Brazil was launched on Saturday at the Paróquia Anglicana do Espírito Santo (Anglican
+    Church of the Holy Spirit), in Recife. The Most Revd Miguel Uchoa Cavalcanti was installed as its Primate.
+- source: rtb-ct-2018-gafcon-brazil
+  quote: >-
+    It is inaccurate to refer to the Anglican Church in Brazil as being part of the Episcopal Anglican Communion.
+    To be part of the Anglican Communion requires being in communion with the see of Canterbury, which this Church
+    is not.
 events:
 - type: other
   date: '2018-05-12'

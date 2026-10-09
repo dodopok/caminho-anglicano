@@ -2,6 +2,11 @@
 id: diocese-of-salisbury
 name: Diocese of Salisbury
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra cujo bispo Brian Duppa (1641-1660) foi depois transferido para Winchester.
+sources:
+- source: stubbs-1897
+  quote: Brian Duppa. Chichester; Sarum, 1641 ; Winchester, 1660 ; d. 1662, March 26.
 relations:
 - type: part_of
   target: church-of-england

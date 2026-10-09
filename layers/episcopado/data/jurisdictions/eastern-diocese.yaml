@@ -2,6 +2,12 @@
 id: eastern-diocese
 name: Eastern Diocese
 type: diocese
+description: Diocese da TEC de que Alexander Viets Griswold foi bispo desde 1811.
+sources:
+- source: wp-en-histlist
+  quote: >-
+    | [[Alexander Viets Griswold]] | [[William White (Bishop of Pennsylvania)|2]] [[Samuel Provoost|3]] [[Abraham
+    Jarvis|8]]{{sfn|Perry|1895|page=[https://archive.org/stream/cu31924050995525#page/n140/mode/1up 29]}} | 1811
 relations:
 - type: part_of
   target: tec

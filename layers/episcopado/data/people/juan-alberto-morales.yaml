@@ -1,12 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: juan-alberto-morales
 name: Juan Alberto Morales
-biography: Bispo da Diocese de Quincy (ACNA), com quem a Diocese Anglicana de Votorantim mantém boa relação.
+biography: >-
+  Bispo diocesano da Diocese de Quincy, da ACNA, com quem a Diocese Anglicana de Votorantim mantém boa relação.
 sources:
 - source: cant-novas-igrejas-2024
   quote: >-
     mantém fortes laços com a Diocese de Quincy, da Igreja Anglicana na América do Norte (ACNA), mantendo uma boa
     relação com o bispo, Juan Alberto Morales.
+  page: '78'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Desde a sua criação, mantém fortes laços com a Diocese de Quincy, da Igreja Anglicana na América do Norte (ACNA),
+    mantendo uma boa relação com o bispo, Juan Alberto Morales.
   page: '78'
 affiliations:
 - jurisdiction: acna

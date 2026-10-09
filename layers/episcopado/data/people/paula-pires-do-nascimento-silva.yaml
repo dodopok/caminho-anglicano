@@ -1,6 +1,24 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: paula-pires-do-nascimento-silva
 name: Paula Pires do Nascimento Silva
+biography: >-
+  Postulante na REB desde 20 de dezembro de 2024, foi ordenada diácona em 24 de outubro de 2025 pelo bispo Eric
+  Rodrigues. Atua como diácona na Igreja Anglicana Família, em Jacareí (SP).
+sources:
+- source: reb-portaria-01-2024
+  quote: Paula Pires do Nascimento Silva
+- source: testemunho-mantenedor-2026-10-08-reb-sinodo-2025
+  quote: >-
+    Na mesma data foi ordenado ao diaconato o Rafael Rodrigues (de Brasília), Paula Pires e Andreia Nogueira (esposa
+    do Reinaldo, de Jacareí, da Anglicana Família)
+- source: testemunho-mantenedor-2026-10-08-reb-sinodo-2025
+  quote: Elias e Joyce foram ordenados presbíteros junto comigo e Cynthia, pelo bispo Eric, mesmo dia
+- source: reb-calendario-2026
+  quote: 24/10/2025 – Aniversário de Ordenação • Revda. Paula
+- source: rbc-reb-post-jacarei
+  quote: >-
+    Dou graças a Deus pela vida e pelo ministério do Reverendo Reinaldo, da Reverenda Andreia, da Reverenda Paula
+    e de toda a equipe da Anglicana Família.
 ordinations:
 - order: diaconate
   date: '2025-10-24'

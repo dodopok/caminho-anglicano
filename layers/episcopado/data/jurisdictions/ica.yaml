@@ -25,23 +25,38 @@ founded:
     page: '172'
 website: https://catolicaanglicana.wordpress.com/
 description: >-
-  Igreja sediada em Goiânia (GO), mantida juridicamente pela "Mitra Primacial Católica Anglicana" (CNPJ 29.104.811/0001-14,
-  atividade iniciada em 31/10/2017, tendo Orvandil Moreira Barbosa como presidente). Autodefine-se "de rito, tradição
-  e episcopado histórico católicos-anglicanos", sem subordinação ao arcebispo de Cantuária, com ênfase na teologia
-  da libertação. Dioceses declaradas: Centro Oeste, Baixo Tocantins (PA), Belém, São Paulo e Sudoeste, Santa Cruz
-  de Salvador (BA) e Mato Grosso do Sul (extinta em 2018). A situação cadastral do CNPJ consta como inapta desde
-  30/05/2019 (omissão de declarações). O site não é atualizado desde 2020.
+  Igreja mantida juridicamente pela Mitra Primacial Católica Anglicana, com início de atividades em 31 de outubro
+  de 2017 e situação cadastral inapta, fundada por um grupo egresso da IATB liderado por Ricardo Vicente dos Anjos
+  e Orvandil Moreira Barbosa. Orvandil é arcebispo primaz e bispo da Diocese Católica Anglicana do Centro Oeste;
+  há ainda as dioceses do Baixo Tocantins (Franciney Rodrigues Pantoja) e de São Paulo e Sudoeste (Izaias). Em 24
+  de maio de 2018, notificação declarou que Altamiro Pereira do Amaral, Jorge dos Santos Costa e Ricardo Vicente
+  dos Anjos não integravam mais a Mitra Primacial; eles formaram a ICA-Brasil, em cisma.
 sources:
-- source: lica-cnpj-ica
-  quote: '"razao_social":"MITRA PRIMACIAL CATOLICA ANGLICANA"'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Parte desse grupo, liderados por Ricardo Vicente dos Anjos e Orvandil Moreira Barbosa, fundaram a Igreja Católica
+    Anglicana.
+  page: '137'
 - source: lica-cnpj-ica
   quote: '"data_inicio_atividade":"2017-10-31"'
 - source: lica-cnpj-ica
   quote: '"descricao_situacao_cadastral":"INAPTA"'
 - source: lica-ica-sobre
-  quote: 'Nosso CNPJ: NÚMERO DE INSCRIÇÃO: 29.104.811/0001-14'
-- source: lica-ica-sobre
-  quote: sem, no entanto, se subordinarem ao Rei/Rainha e ao Arcebispo de Cantuária
+  quote: '++ Dom Orvandil M. Barbosa: Arcebispo Primaz e bispo da Diocese Anglicana Centro Oeste;'
+- source: lica-ica-dioceses
+  quote: 'Diocese Católica Anglicana do Baixo Tocantis: Bispo Dom Franciney Pantoja;'
+- source: lica-ica-dioceses
+  quote: Diocese de São Paulo e Sudoeste Bispo Dom Izaias Rodrigues dos Santos (Dom Frei Junípero)
+- source: lica-ica-notificacao
+  quote: >-
+    os Bispos Dom Altamiro Pereira do Amaral, Dom Jorge dos Santos Costa e Dom Ricardo Vicente dos Anjos não mais
+    integram esta Mitra Primacial
+- source: lica-ica-notificacao
+  quote: não mais integram esta Mitra Primacial
+- source: lica-iaces-historia
+  quote: >-
+    depois de um Cisma, novos ideais ressurgem da Cinzas com a proposta da Criação da Província Católica Anglicana
+    do Brasil
 relations:
 - type: schism_from
   target: iatb

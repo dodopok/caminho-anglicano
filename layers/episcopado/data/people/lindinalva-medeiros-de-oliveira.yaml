@@ -1,10 +1,39 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: lindinalva-medeiros-de-oliveira
 name: Lindinalva Medeiros de Oliveira
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Lindinalva Medeiros de Oliveira foi ordenada diácona em 18/06/2005 e presbítera em 08/04/2006 por Robinson Cavalcanti,
+  na Diocese Anglicana do Recife (DAR). Integrou desde agosto de 2005 a equipe pastoral de uma paróquia, esteve
+  à frente de uma missão como ministra encarregada e foi pároca da Paróquia Anglicana do Salvador, em João Pessoa.
+  Também aparece como membro do tribunal eclesiástico e do conselho diocesano.
 sources:
-- source: drv-nota-esclarecimento-2006
-  quote: Lindinalva Medeiros de Oliveira
+- source: drp2-ord-diac-jp-2005
+  quote: >-
+    Sermão de Ordenações Diaconais Cláudio Brito, Flávio Adair Torres, Gustavo Leite Castello Branco, Lindinalva
+    Medeiros e Raimundo Figueiredo Con-Catedral Anglicana da Ressurreição João Pessoa (PB), 18 de Junho de 2005.
+- source: drp2-ord-diac-jp-2005
+  quote: >-
+    Este é um momento especial para o Anglicanismo na Paraíba, com a Ordenação de cinco Diáconos – todos provados
+    e aprovados – e, pela primeira vez, uma lídima representante do sexo feminino.
+- source: drp2-convite-presb-jp-2006
+  quote: >-
+    convida V.Sa. para o Culto Solene de Ordenação Presbiteral dos Reverendos: Cláudio Luiz Figueiredo de Brito
+    Flávio Adair Torres Soares Lindinalva Medeiros de Oliveira Raimundo Francisco de Figueiredo Local: Con-Catedral
+    Anglicana da Ressurreição
+- source: drp2-convite-presb-jp-2006
+  quote: 'Data: 08 de abril de 2006'
+- source: drp2-breves-06-2005
+  quote: >-
+    O Rev. Manoel Nunes, e toda a Paróquia, foram abençoados com a chegada da Revda. Lindinalva Medeiros àquela
+    equipe pastoral.
+- source: drp2-breves-03-2006
+  quote: A Revda. Lindinalva Oliveira, que está à frente da missão
+- source: dard2-com-pb
+  quote: 'PARÓQUIA ANGLICANA DO SALVADOR Pároca: Revda. Lindinalva Medeiros de Oliveira'
+- source: dard1-eletivos-2009a
+  quote: Rev. Antônio Costa de Oliveira Revda. Lindinalva Medeiros de Oliveira
+- source: dard1-eletivos-2009a
+  quote: 'Membros Clericais: Revda. Lindinalva Medeiros (4 anos)'
 ordinations:
 - order: diaconate
   date: '2005-06-18'

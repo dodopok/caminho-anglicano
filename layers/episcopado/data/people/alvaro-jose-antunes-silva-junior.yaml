@@ -1,6 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: alvaro-jose-antunes-silva-junior
 name: Álvaro José Antunes Silva Júnior
+biography: >-
+  Álvaro José Antunes Silva Júnior foi um dos clérigos cujo abandono de comunhão com a IEAB foi declarado pelo primaz
+  em 17/04/2013, e teve sua ordem presbiteral reconhecida pela Diocese Anglicana de São Paulo em 15/10/2022, em
+  Pereira Barreto (SP).
+sources:
+- source: lbd-snieab-sinais
+  quote: >-
+    declara publicamente, em 17 de abril de 2013, o Abandono de Comunhão com a IGREJA EPISCOPAL ANGLICANA DO BRASIL/COMUNHÃO
+    ANGLICANA dos seguintes clérigos
+- source: ieab-2022-diac-dasp
+  quote: >-
+    Depois da solene celebração Eucarística de reconhecimento da ordem presbiteral do reverendo Álvaro José Antunes
+    Silva Júnior, no dia 15 de outubro, que ocorreu na cidade de Pereira Barreto
+- source: dasp-2022-alvaro-conv
+  quote: >-
+    para a Celebração de reconhecimento da Ordem Presbiteral do Rev. Álvaro no dia 15 de outubro de 2022.
 events:
 - type: other
   date: '2022-10-15'

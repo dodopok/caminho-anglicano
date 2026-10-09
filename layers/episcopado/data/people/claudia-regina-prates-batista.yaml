@@ -1,6 +1,12 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: claudia-regina-prates-batista
 name: Cláudia Regina Prates Batista
+biography: Clériga da IEAB, ordenada diácona em 14/03/2010 e presbítera em 18/09/2011.
+sources:
+- source: rta-livro35
+  quote: 'Diaconato: 14 de março de 2010.'
+- source: rta-livro35
+  quote: 'Presbiterado: 18 de setembro de 2011.'
 ordinations:
 - order: diaconate
   date: '2010-03-14'

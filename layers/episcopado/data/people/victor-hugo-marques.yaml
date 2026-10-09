@@ -1,6 +1,22 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: victor-hugo-marques
 name: Victor Hugo Marques
+biography: >-
+  Ordenado diácono em 19/08/2018 por Naudal Alves Gomes (IEAB), foi ministro encarregado da Paróquia da Inclusão
+  a partir de maio de 2019.
+sources:
+- source: rtb-sn-2018-dma-ordenacoes
+  quote: >-
+    No dia 19/8, Bispo Naudal conferirá a ordem diaconal ao Ir. Victor Hugo, OASB (Oblatos Anglicanos de São Bento)
+    na Paróquia da Inclusão em Campo Grande/MS às 10h
+- source: rtb-dma-sobre
+  quote: >-
+    No dia 19 de agosto de 2018, nas primeiras véspera de São Bernardo de Claraval, foi Ordenado Diácono e Vigário
+    da Paroquia da Inclusão em Campo Grande (MS).
+- source: rtb-dma-sobre
+  quote: >-
+    Em maio de 2019, assumiu, como Ministro Encarregado, a Paroquia da Inclusão, da qual entrou em licença em outubro
+    de 2021.
 ordinations:
 - order: diaconate
   date: '2018-08-19'

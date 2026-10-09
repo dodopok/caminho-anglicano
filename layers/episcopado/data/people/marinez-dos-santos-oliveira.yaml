@@ -1,6 +1,12 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marinez-dos-santos-oliveira
 name: Marinez dos Santos Oliveira
+biography: Marinez dos Santos Oliveira foi ordenada diácona em 30/10/2011 e presbítera em 04/12/2016 na IEAB.
+sources:
+- source: rta-livro35
+  quote: 'Diaconato: 30 de outubro de 2011.'
+- source: rta-livro35
+  quote: 'Presbiterado: 4 de dezembro de 2016.'
 ordinations:
 - order: diaconate
   date: '2011-10-30'

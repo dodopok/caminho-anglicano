@@ -1,6 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: izaias-torquato
 name: Izaias Torquato
+biography: >-
+  Izaias Torquato foi ordenado diácono em agosto de 2017, por João Câncio Peixoto Filho, na Diocese Anglicana do
+  Recife, e em outubro de 2017 passou à Diocese Anglicana de Brasília (IEAB), em Goiânia.
+sources:
+- source: dab-2017-izaias
+  quote: >-
+    O reverendo é oriundo da Diocese Anglicana do Recife, ordenado diácono (Agosto, 2017), pelas mãos do Revmo.
+    Bispo Dom João Cancio.
+- source: dab-2017-izaias
+  quote: O reverendo é oriundo da Diocese Anglicana do Recife
+- source: dab-2017-izaias
+  quote: Izaias Torquato, nordestino, da terra dos Altos Coqueiros, periferia da cidade de Recife-PE
 ordinations:
 - order: diaconate
   date: 2017-08

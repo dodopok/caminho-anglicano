@@ -1,6 +1,16 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: raimundo-nonato-da-costa
 name: Raimundo Nonato da Costa
+biography: >-
+  Presbítero ordenado em Belém (PA), no Distrito Missionário da Amazônia, durante o episcopado de Clóvis Erly Rodrigues,
+  e clérigo emérito da Diocese Anglicana da Amazônia.
+sources:
+- source: darl3-hist3
+  quote: Raimundo Nonato (em Belém-PA, Distrito Missionário da Amazônia)
+- source: darl3-hist3
+  quote: Foram ordenados, durante o seu período os seguintes reverendos
+- source: daa-clero
+  quote: Revdo. Raimundo Nonato da Costa (emérito)
 ordinations:
 - order: presbyterate
   date: null

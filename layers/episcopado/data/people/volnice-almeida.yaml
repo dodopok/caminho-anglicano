@@ -1,6 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: volnice-almeida
 name: Volnice Almeida
+biography: >-
+  Ordenada diácona em 02/09/2018 por Naudal Alves Gomes, na Paróquia São Lucas (Londrina, Diocese Anglicana do Paraná),
+  e presbítera em 08/03/2019, na IEAB.
+sources:
+- source: cant-ec-2018-12
+  quote: >-
+    Duas ordenações diaconais foram realiza- das no primeiro e segundo domingos de setembro na Diocese Anglicana
+    do Para- ná — DAPAR, presididas pelo Revmo. Bis- po Naudal Alves Gomes, Primaz da IEAB e Diocesano do Paraná.
+    Foram ordenados ao diaconato, a Revda. Volnice Almeida, foi ordenada na Paroquia são Lucas em Londrina e o Revdo.
+    Gregó- rio Leal de Oliveira, foi ordenado na Cate- dral de São Tiago, em Curitiba.
+- source: rta-livro35
+  quote: 'Diaconato: 2 de setembro de 2018.'
+- source: rta-livro35
+  quote: 'Presbiterado: 8 de março de 2019.'
 ordinations:
 - order: diaconate
   date: '2018-09-02'

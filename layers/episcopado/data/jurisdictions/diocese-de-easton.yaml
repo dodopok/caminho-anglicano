@@ -2,6 +2,13 @@
 id: diocese-de-easton
 name: Diocese de Easton
 type: diocese
+description: >-
+  Diocese da Igreja Episcopal dos Estados Unidos (TEC) cujo bispo foi Elliott Lorenz Sorge, eleito em 1983 e aposentado
+  em 1993.
+sources:
+- source: costa2021
+  quote: sendo eleito bispo de Easton, em 1983, ocupando o cargo até sua aposentadoria em 1993.
+  page: '86'
 relations:
 - type: part_of
   target: tec

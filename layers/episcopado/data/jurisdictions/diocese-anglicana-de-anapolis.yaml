@@ -2,6 +2,19 @@
 id: diocese-anglicana-de-anapolis
 name: Diocese Anglicana de Anápolis
 type: diocese
+description: >-
+  Diocese ligada à IATB que teve o bispo Paulo Sérgio; Rafael Mendes era seu arcediago e a Paróquia Cristo Rei,
+  em Anápolis, era liderada por ele e por Eudlon Junior.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: que à época estava sob os cuidados do padre Bertoni Martins e do bispo Paulo Sérgio.
+  page: '105'
+- source: lac-yt-rmendes-2018
+  quote: Sou Pe. Rafael Mendes, Arcediago da Diocese Anglicana de Anápolis
+- source: cant-novas-igrejas-2024
+  quote: >-
+    A Paróquia Cristo Rei, localizada nesta cidade, era liderada pelos reverendos Rafael Mendes e Eudlon Junior.
+  page: '105'
 relations:
 - type: part_of
   target: iatb

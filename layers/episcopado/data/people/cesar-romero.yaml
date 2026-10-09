@@ -1,6 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: cesar-romero
 name: César Romero
+biography: >-
+  Diácono da Diocese Anglicana do Recife, cuja ordem diaconal foi reconhecida em 2004, e secretário diocesano de
+  missão e evangelismo.
+sources:
+- source: drp2-concilio-xxiv-2004
+  quote: o reconhecimento de Ordem Diaconal do Rev. César Romero
+- source: drp2-breves-06-2006
+  quote: o Encontro Diocesano de Missão e Evangelismo, sob a coordenação do secretário Rev. César Romero
 affiliations:
 - jurisdiction: ieab-dar
   role: deacon

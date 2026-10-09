@@ -2,6 +2,14 @@
 id: diocese-de-asaba
 name: Diocese de Asaba
 type: diocese
+description: >-
+  Diocese da Igreja da Nigéria cujo segundo bispo, Nicholas Okoh, foi sagrado em maio de 2001 e eleito arcebispo
+  da Província Eclesiástica de Bendel em 22 de julho de 2005.
+sources:
+- source: gacl-con-okoh
+  quote: >-
+    He was consecrated as the second bishop of the Diocese of Asaba in May 2001. He was elected the Archbishop of
+    the Ecclesiastical Province of Bendel on 22 July 2005
 relations:
 - type: part_of
   target: church-of-nigeria

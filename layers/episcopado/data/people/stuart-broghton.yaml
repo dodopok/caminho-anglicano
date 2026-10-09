@@ -1,10 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: stuart-broghton
 name: Stuart Broghton
-biography: Pároco do Bom Pastor (Salvador-BA) na fundação da Diocese Setentrional.
+biography: >-
+  Pároco da paróquia do Bom Pastor, em Salvador (BA), desde 1976, uma das três paróquias da Diocese Setentrional
+  na sua criação, com Santa Maria (Belém) e SS. Trindade (Recife).
 sources:
 - source: drv-resgatando-ii
   quote: Bom Pastor (Rev. Stuart Broghton), Salvador-BA
+- source: darl3-hist2
+  quote: A Diocese, em seu início, era composta por apenas três Paróquias
+- source: darl3-hist2
+  quote: Bom Pastor ( Rev. Stuart Broghton ), Salvador-BA
+- source: drv-resgatando-ii
+  quote: >-
+    A Diocese, em seu início, era composta por apenas três Paróquias: Santa Maria (Rev. Anselmo Stein), Belém-PA
 affiliations:
 - jurisdiction: ieab
   role: other

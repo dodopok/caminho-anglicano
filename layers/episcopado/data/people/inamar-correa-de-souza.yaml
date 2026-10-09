@@ -1,6 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: inamar-correa-de-souza
 name: Inamar Corrêa de Souza
+biography: >-
+  Inamar Corrêa de Souza teve o diaconato em 20 de junho de 1999 e o presbiterado em 26 de novembro de 2000, na
+  IEAB.
+sources:
+- source: rta-livro35
+  quote: 'Diaconato: 20 de junho de 1999.'
+- source: rta-livro35
+  quote: 'Presbiterado: 26 de novembro de 2000.'
 ordinations:
 - order: diaconate
   date: '1999-06-20'

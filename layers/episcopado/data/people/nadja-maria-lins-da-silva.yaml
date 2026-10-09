@@ -1,10 +1,33 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: nadja-maria-lins-da-silva
 name: Nadja Maria Lins da Silva
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Ordenada diácona em 1999 por Robinson Cavalcanti, atuou na Diocese Anglicana do Recife como coadjutora da Paróquia
+  Anglicana do Redentor a partir de 2005 e como coordenadora pedagógica do seminário diocesano. Em 23 de agosto
+  de 2005, foi incluída entre os clérigos excluídos da comunhão da IEAB, e declarou manter comunhão com o bispo
+  Robinson Cavalcanti.
 sources:
-- source: drp-boletim-oracao-2006
-  quote: 'Orar pela Paróquia Anglicana do Redentor, pelas Reverendas: Nadja e Veralúcia Lins'
+- source: rcor-drv-ord-celio-filadelfo
+  quote: Marco Antonio, Maurício, Vera, Nadja, Filadelfo e Juciara, meus irmãos e irmãs
+- source: rta-livro35
+  quote: 1999 – Inamar Corrêa De Souza Vera Lucia lins Silva Nadja Maria Lins Silva
+  page: '153'
+- source: drp2-breves-04-2005
+  quote: foi dado posse a Reitora – Revda. Vera Lins, e a Coadjutora – Revda. Nadja Lins
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Revda. Nadja Maria Lins da Silva … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Revda. Nadja Maria Lins da Silva … Os clérigos não atenderam à convocação
+    e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo
+    plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
+- source: dard1-cargos-2009a
+  quote: Coordenadora Pedagógica Revda. Nadja Maria Lins da Silva
 ordinations:
 - order: diaconate
   date: '1999'

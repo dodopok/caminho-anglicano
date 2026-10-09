@@ -1,10 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: eveline-teske
 name: Eveline Teske
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Consta como diácona da Diocese Anglicana do Recife, com domicílio canônico na diocese e residência no exterior
+  (Walla Walla, WA).
 sources:
 - source: drv-nota-esclarecimento-2006
   quote: Eveline Teske
+- source: dard2-clero-na
+  quote: Revda. Evelyne Teske (Wala Wala - WA)
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: other

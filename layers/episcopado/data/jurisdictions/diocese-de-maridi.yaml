@@ -2,6 +2,12 @@
 id: diocese-de-maridi
 name: Diocese de Maridi
 type: diocese
+description: Diocese de que Justin Badi Arama foi bispo de 2001 a 2018, antes de tornar-se arcebispo de Juba.
+sources:
+- source: gacl-wp-badi
+  quote: He became Bishop of the Diocese of Maridi in 2001
+- source: gacl-ai-2018-badi-entron
+  quote: who was previously the Bishop of the Anglican Diocese of Maridi in the western part of the country
 relations:
 - type: part_of
   target: ecs

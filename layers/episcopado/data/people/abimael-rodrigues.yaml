@@ -1,6 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: abimael-rodrigues
 name: Abimael Rodrigues
+biography: >-
+  Abimael Rodrigues consta nas listas históricas da Diocese Anglicana do Recife (IEAB-DAR) como ordenado ao diaconato,
+  com vínculo em Livramento (RS), na Diocese Sul-Ocidental, sem data registrada. Foi eleito reitor da Paróquia de
+  Santa Maria, em Belém (PA), a primeira eleição de reitor por uma paróquia emancipada na Diocese do Recife.
+sources:
+- source: dard2-hist3
+  quote: Abimael Rodrigues (em Livramento-RS, Diocese Sul-Ocidental)
+- source: darl3-hist3
+  quote: Abimael Rodrigues (em Livramento-RS, Diocese Sul-Ocidental)
+- source: drp2-memorias-decada-iv
+  quote: >-
+    Passamos a fazê-lo, a partir da eleição do Rev. Abimael Rodrigues para a Paróquia de Santa Maria, em Belém-PA.
 ordinations:
 - order: diaconate
   date: null

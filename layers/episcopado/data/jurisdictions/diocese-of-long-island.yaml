@@ -2,6 +2,11 @@
 id: diocese-of-long-island
 name: Diocese of Long Island
 type: diocese
+description: Diocese da TEC que tem Abram Newkirk Littlejohn como bispo desde 1869.
+sources:
+- source: wp-en-histlist
+  quote: >-
+    | [[Abram Newkirk Littlejohn]] | [[Horatio Potter|62]] [[John Johns|39]] [[William Henry Odenheimer|66]] | 1869
 relations:
 - type: part_of
   target: tec

@@ -2,6 +2,10 @@
 id: diocese-of-moray-and-ross
 name: Diocese of Moray and Ross
 type: diocese
+description: Diocese da Igreja Episcopal Escocesa cujo bispo era Arthur Petrie.
+sources:
+- source: perry-1895
+  quote: Dr. Arthur Petrie, bishop of Ross and Moray
 relations:
 - type: part_of
   target: scottish-episcopal-church

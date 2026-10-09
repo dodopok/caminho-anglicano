@@ -1,6 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: peter-briggs
 name: Peter Briggs
+biography: >-
+  Ordenado diácono em 2008 e presbítero em 7 de junho de 2009, pelo bispo Robinson Cavalcanti, da Diocese Anglicana
+  do Recife, na Paróquia de St. Charles, em Poulsbo (Washington, EUA).
+sources:
+- source: drp2-novas-ordenacoes-2008-1sem
+  quote: >-
+    A Diocese do Recife agradece ao Senhor pelas novas Ordenações e a abertura de novos trabalhos ocorridos no primeiro
+    semestre de 2008.
+- source: drp2-novas-ordenacoes-2008-1sem
+  quote: Rev. Peter Briggs (Poulsbo, Wa, USA);
+- source: darn2-eua-ordenacoes-2009
+  quote: 'Ordenará ao Presbiterato os seguintes Diáconos: Rev. Peter Briggs'
+- source: dard2-briggs
+  quote: Paróquia Anglicana de St. Charles Poulsbo, Estado de Washington, EUA, em 07.06.2009
 ordinations:
 - order: diaconate
   date: '2008'

@@ -94,6 +94,9 @@ def codigo(s):
 def linhas_fatos(kind, d, N):
     out = []
     fmt_src = lambda c: '; '.join(f"{codigo(s)} [{s['source']}] \"{s.get('quote') or ''}\"" for s in c.get('sources', [])[:4])
+    # O resumo atual pode trazer informação que só ele sustenta: as citações dele também são fatos.
+    for s in d.get('sources') or []:
+        out.append(f"- citado no resumo atual: {codigo(s)} [{s['source']}] \"{s.get('quote') or ''}\"")
     if kind == 'person':
         for campo in ('birth', 'death'):
             if d.get(campo):

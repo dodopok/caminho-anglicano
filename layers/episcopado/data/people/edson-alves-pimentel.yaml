@@ -1,6 +1,33 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: edson-alves-pimentel
 name: Edson Alves Pimentel
+biography: >-
+  Foi ordenado diácono em 8/5/1999 por Robinson Cavalcanti, na Paróquia do Bom Samaritano, e atuou como coordenador
+  pedagógico. Consta no clero da Diocese Anglicana do Recife, onde foi instituído cônego honorário da Catedral do
+  Bom Samaritano, e foi um dos membros fundadores da Ordem Evangélica de Santo Estêvão Mártir (1998).
+sources:
+- source: rcor-drv-diac-edson-pimentel
+  quote: MENSAGEM DE ORDENAÇÃO AO DIACONAT0 (08/05/99)
+- source: rcor-drv-diac-edson-pimentel
+  quote: Ordenação esta que se dá no esforço pluriclassista da Paróquia do Bom Samaritano
+- source: drp2-memorias-decada-iv
+  quote: como coordenador pedagógico o Diácono Edson Pimentel
+- source: dar-clero-diocesano
+  quote: CLERO DIOCESANO
+- source: costa2021
+  quote: >-
+    os reverendos Josafá Batista dos Santos e Edson Pimentel foram instituídos “cônegos honorários” da Catedral
+    do Bom Samaritano, por serem os clérigos mais velhos, em idade e em tempo de ordenação
+  page: '250'
+- source: costa2021
+  quote: >-
+    Teve como membros fundadores o bispo Robinson Cavalcanti e o então reverendo Filadelfo Oliveira, junto com outros
+    clérigos e clérigas, como Daniel Barbosa, Edson Pimentel, Tibério Marques, Gorete Marques, Manoel Moraes, Ivaldo
+    Sales, Estevão Menezes, Gustavo Gilson Oliveira
+  page: '211'
+- source: costa2021
+  quote: Fundada em 1998, a OSE
+  page: '211'
 ordinations:
 - order: diaconate
   date: '1999-05-08'

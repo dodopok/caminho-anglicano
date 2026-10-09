@@ -34,12 +34,13 @@ founded:
     page: '108'
 website: https://gazetadaiac.blogspot.com/
 description: >-
-  Igreja anglicana independente baseada em Brasília. O blog oficial (Gazeta da IAC), administrado pelo "Ministério
-  Amplitude" com autorização do arcebispo primaz, foi aberto em 30/12/2021 e publicou a Constituição e Cânones em
-  19/02/2022, o que é compatível com a fundação em 2022 indicada por Costa (2024). O blog lista cinco bispos, dois
-  presbíteros e três diáconos/diaconisas e afirma ter alcançado intercomunhão com a "província do Caribe e Nova
-  Granada". O CNPJ impresso no rodapé do blog (03.658.648/0001-48) pertence, na base da Receita Federal, a outra
-  entidade (ver dúvidas).
+  Igreja anglicana continuante e de rito anglo-católico no Brasil, cujo blog oficial foi aberto em 30 de dezembro
+  de 2021 e publicou a Constituição e os Cânones em 19 de fevereiro de 2022, data próxima à fundação em 2022; afirma
+  não criar uma nova igreja, mas continuar o anglicanismo histórico. O clero reúne Valdiley Abadia da Silva (bispo
+  primaz e presidente), Gleidson Antônio do Nascimento Alves (bispo eleito e vice-presidente), Sebastião Edilson
+  de Alencar (bispo de Brasília), Emival Silva Ribeiro (emérito de Goiânia) e Éric Massaro Baptista (secretário-geral).
+  Declara intercomunhão com a Província Anglicana del Caribe y la Nueva Granada e associação à Anglican Apostolic
+  Communion in the Americas, com sede na Flórida.
 sources:
 - source: lpq-iac-home
   quote: Blog em Construção by Ministério Amplitude - dezembro 30, 2021
@@ -50,11 +51,27 @@ sources:
 - source: lpq-iac-continuante
   quote: >-
     Não estamos criando uma nova igreja e sim continuando de maneira atualizada o anglicanismo histórico reformado.
-- source: lpq-iac-home
+- source: cant-novas-igrejas-2024
   quote: >-
-    IGREJA EPISCOPAL ANGLICANA DE ORIENTAÇÃO CONTINUANTE E RITO ANGLO-CATÓLICO NO BRASIL - 03.658.648/0001-48
-- source: lpq-brasilapi-cnpj-iac
-  quote: '"razao_social":"BLESSED SUSTAINABILITY INSTITUTE"'
+    O clero da Igreja Anglicana Continuante (IAC) é formado por dom Valdiley Abadia da Silva (bispo primaz e presidente),
+    monsenhor Gleidson Antônio do Nascimento Alves (bispo e vice-presidente), dom Sebastião Edilson de Alencar (bispo
+    de Brasília), dom Emival Silva Ribeiro (emérito de Gôiania-GO), dom Éric Massaro Baptista (secretário geral,
+    de Cachoeirinha-SP).
+  page: '108'
+- source: lpq-iac-bispos
+  quote: Dom Valdiley Abadia da Silva (Bispo Primaz e Presidente)
+- source: lpq-iac-bispos
+  quote: Monsenhor Gleidson Antônio Do Nascimento Alves (Bispo Eleito e Vice-Presidente)
+- source: lpq-iac-primaz
+  quote: >-
+    logrou êxito de forma espetacular em alcançar a intercomunhão com a província do Caribe e Nova Granada
+- source: cant-novas-igrejas-2024
+  quote: A Igreja afirma estar associada à Província Anglicana del Caribe y la Nueva Granada
+  page: '108'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    e também à The Anglican Apostolic Communion in the Americas, com sede na Flórida, nos Estados Unidos.
+  page: '108'
 relations:
 - type: in_communion_with
   target: pacng

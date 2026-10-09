@@ -2,6 +2,12 @@
 id: diocese-of-ripon
 name: Diocese of Ripon
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra cujo bispo Charles Thomas Longley (1836-1856) foi depois transferido para Durham,
+  York e Canterbury.
+sources:
+- source: stubbs-1897
+  quote: Charles Thomas Longley. Ripon ; Durham, 1856 ; York, i860 ; Canterbury, 1862 ; d. 1868, Oct. 27.
 relations:
 - type: part_of
   target: church-of-england

@@ -1,6 +1,29 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ivaldo-sales
 name: Ivaldo Sales
+biography: >-
+  Ivaldo Sales foi ordenado diácono em dezembro de 2007, por Robinson Cavalcanti, no encerramento do XXVII Concílio
+  da Diocese do Recife. É presbítero dessa diocese, onde atuou como ministro auxiliar, inclusive na Paróquia Anglicana
+  São Paulo, e como assessor diocesano para Defesa da Vida e da Criação, e presidiu o CVC Pró-Vida. Integra a Ordem
+  de Santo Estevão (OSE), da qual foi secretário.
+sources:
+- source: drp2-colheita-ministerial-2007
+  quote: >-
+    Ao conferir a sagrada ordem do Diaconato aos reverendos: Ivaldo Sales (Recife), José Fernandes Filho (João Pessoa)
+    e John Nuzum (EUA) no Culto de Encerramento do XXVII Concílio da Diocese do Recife
+- source: darl1-6968
+  quote: >-
+    Rev. Ivaldo Sales da Silva é Presbítero na Diocese do Recife; Assessor Diocesano para Defesa da Vida e da Criação;
+    e membro da Ordem de Santo Estevão (OSE).
+- source: darn2-sao-paulo-casamento-2010
+  quote: >-
+    Paróquia Anglicana São Paulo (Reitora: Revda. Juciara Rodrigues ; Ministro Auxiliar: Rev. Ivaldo Sales )
+- source: darn2-consolacao-2012
+  quote: Ivaldo Sales (Assessor Especial de Defesa da Vida e da Integridade da Criação)
+- source: dard1-cvc-pro-vida
+  quote: na qualidade de presidente do CVC PRO VIDA
+- source: dard1-ose-2009a
+  quote: Rev Frei Ivaldo Sales (Secretário)
 ordinations:
 - order: diaconate
   date: 2007-12

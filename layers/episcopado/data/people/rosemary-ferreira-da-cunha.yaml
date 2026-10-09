@@ -1,6 +1,12 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: rosemary-ferreira-da-cunha
 name: Rosemary Ferreira da Cunha
+biography: Ordenada diácona em 15/05/2010 e presbítera em 12/05/2012, na IEAB.
+sources:
+- source: rta-livro35
+  quote: 'Diaconato: 15 de maio de 2010.'
+- source: rta-livro35
+  quote: 'Presbiterado: 12 de maio de 2012.'
 ordinations:
 - order: diaconate
   date: '2010-05-15'

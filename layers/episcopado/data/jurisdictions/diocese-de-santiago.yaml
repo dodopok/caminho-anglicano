@@ -2,6 +2,23 @@
 id: diocese-de-santiago
 name: Diocese de Santiago
 type: diocese
+description: >-
+  Diocese chilena em que Tito Zavala foi bispo diocesano e, a partir de 4 de novembro de 2018, primaz da Igreja
+  Anglicana do Chile; em janeiro de 2025 ele se aposentou, com a sagração de Juan Esteban Saravia como bispo de
+  Santiago e a instalação de Enrique Lago como primaz.
+sources:
+- source: gacl-cj-2018-chile
+  quote: >-
+    the current Diocesan Bishop, Rv. Héctor Zavala, who will also be the Primate of the new Anglican Province of
+    Chile.
+- source: gacl-wp-zavala
+  quote: >-
+    On 4 November 2018 the four Chilean dioceses were inaugurated as a new province of the Anglican Communion, named
+    the Anglican Church of Chile. Zavala was commissioned by Archbishop Justin Welby
+- source: gacl-sydney-2025-chile
+  quote: >-
+    The occasion was the retirement of Héctor (Tito) Zavala as Primate of Chile, the consecration of Juan Esteban
+    Saravia as Bishop of Santiago, and the installation of Bishop Enrique Lago as Primate of Chile.
 relations:
 - type: part_of
   target: iach

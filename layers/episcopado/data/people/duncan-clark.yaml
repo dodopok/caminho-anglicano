@@ -1,13 +1,38 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: duncan-clark
 name: Duncan Clark
-biography: Arcediago do Arcediagado Especial da América do Norte da Diocese Anglicana do Recife em 2006-2007.
+biography: >-
+  Presbítero e reitor da Paróquia Anglicana de St. Charles (Poulsbo, WA), foi arcediago do Arcediagado Norte-Americano
+  da Diocese Anglicana do Recife a partir de 2005 e ainda em 2010, com domicílio canônico na diocese e residência
+  no exterior. O arcediagado reuniu paróquias e clérigos norte-americanos que passaram à autoridade episcopal do
+  Recife, entre eles as paróquias de St. Charles e St. Stephen, acolhidas por Robinson Cavalcanti em outubro de
+  2004.
 sources:
-- source: drp-boletim-oracao-2006
-  quote: Orar pelo Arcediagado Especial da América do Norte e pelo Ven. Arc. Rev. Duncan Clark
-- source: drp-boletim-oracao-2006
+- source: darl3-n4177
   quote: >-
-    Orar pelo Ponto Missionário Anglicano "Anglican Fellowship", High Springs, FLA, pela Revda. Cláudia Kalis
+    O Rev. Duncan Clark, Reitor da Paróquia Anglicana de St. Charles, Poulsbo, e a Paróquia Anglicana de St. Stephen,
+    Oak Harbor
+- source: drp2-memorias-decada-ix
+  quote: >-
+    Hoje são 20 clérigos e 07 Paróquias e Missões, que integram o nosso “Arcediagado Norte-Americano” (Venerável
+    Rev. Duncan Clark, Arcediago).
+- source: darl3-hist6
+  quote: vindo a se constituir o Arcediagado dos EUA, sob a liderança do Venerável Arcediago Rev. Ducan Clark
+- source: dard1-cargos-2009a
+  quote: 'EUA: Arcediago : Ven. Arc. Rev. Duncan Clark'
+- source: dard1-arcediagados-2010
+  quote: 'Arcediago : Ven. Arc. Rev. Duncan Clark'
+- source: drv-nota-esclarecimento-2006
+  quote: Duncan Clark
+- source: drp2-memorias-decada-ix
+  quote: >-
+    Naquele Congresso se dá a primeira reunião dos clérigos norte-americanos que transferem a sua residência canônica
+    para a Diocese do Recife, com suas Paróquias e Missões se colocando, em caráter especial, sob a sua Autoridade
+    Episcopal.
+- source: darl3-n4177
+  quote: >-
+    A Rede (ACN) determinou que ambas as paróquias se colocassem sob a supervisão do Bispo Robinson Cavalcanti,
+    do Recife, e ele, generosamente, lhes deu as boas-vindas em outubro de 2004
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: other

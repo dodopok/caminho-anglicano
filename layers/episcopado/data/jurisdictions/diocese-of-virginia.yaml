@@ -6,6 +6,19 @@ aliases:
 type: diocese
 tradition: anglican
 country: US
+description: >-
+  Diocese da TEC. James Madison foi bispo de 1790 a 1812; William Meade tornou-se bispo em 1829, com a morte de
+  Moore; John Johns, bispo desde 1842, tornou-se diocesano em 1862, com a morte de Meade; Francis McNeece Whittle,
+  bispo desde 1868, tornou-se diocesano em 1876, com a morte de Johns.
+sources:
+- source: stubbs-1897
+  quote: James Madison. Virginia; d. 1812.
+- source: perry-1895
+  quote: On the death of Moore he became, without opposition, bishop of Virginia
+- source: perry-1895
+  quote: On the death of Meade (1862) he became bishop of Virginia.
+- source: perry-1895
+  quote: On the death of Bishop Johns, in 1876, he became the diocesan.
 relations:
 - type: part_of
   target: tec

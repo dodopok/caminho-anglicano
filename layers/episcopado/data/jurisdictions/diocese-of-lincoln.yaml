@@ -2,6 +2,14 @@
 id: diocese-of-lincoln
 name: Diocese of Lincoln
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra que teve como bispos George Montaigne (1617-1621, depois Londres, Durham e York)
+  e John Jackson (1853-1869, depois Londres).
+sources:
+- source: stubbs-1897
+  quote: George Monteigne. Lincoln ; London, 1621 ; Durham, 1628 ; York, 1628 ; d. 1628, Nov. 6.
+- source: stubbs-1897
+  quote: John Jackson. Lincoln; London, 1869; d. 1885, Jan. 6.
 relations:
 - type: part_of
   target: church-of-england

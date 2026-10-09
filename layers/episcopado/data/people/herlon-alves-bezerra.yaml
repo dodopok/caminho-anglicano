@@ -1,6 +1,23 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: herlon-alves-bezerra
 name: Herlon Alves Bezerra
+biography: >-
+  Herlon Alves Bezerra foi ordenado diácono em 10 de dezembro de 2022 e presbítero em 11 de novembro de 2023, ambas
+  as vezes em Petrolina (PE), por João Câncio Peixoto Filho, bispo diocesano da Diocese Anglicana do Recife (IEAB),
+  da qual integra o clero.
+sources:
+- source: dar-2022-herlon
+  quote: O Revmo. Bispo Diocesano, Dom João Câncio Peixoto Filho, esteve no dia 10/12 na cidade de Petrolina
+- source: dar-2022-herlon
+  quote: Nessa data, foi ordenado ao Diaconato, o Candidato às Sagradas Ordens, Herlon Bezerra.
+- source: dar-2023-herlon-presb
+  quote: >-
+    Nesse último sábado (11/11), o Bispo Diocesano Dom João C. Peixoto esteve em Petrolina, sertão de Pernambuco,
+    para uma intensa agenda que envolveu
+- source: dar-2023-herlon-presb
+  quote: além da ordenação presbiteral do Revdo. Herlon Alves Bezerra.
+- source: dar-clero-diocesano
+  quote: Revdo. Herlon Alves Bezerra
 ordinations:
 - order: diaconate
   date: '2022-12-10'

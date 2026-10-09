@@ -2,6 +2,10 @@
 id: diocese-of-pennsylvania
 name: Diocese of Pennsylvania
 type: diocese
+description: Diocese da TEC cujo bispo William White serviu de 1787 até a morte, em 1836.
+sources:
+- source: stubbs-1897
+  quote: William White. Pennsylvania ; d. 1836
 relations:
 - type: part_of
   target: tec

@@ -1,6 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcelo
 name: Marcelo
+biography: >-
+  O pastor Marcelo foi ordenado em 19/09/2021 na Catedral Comunhão, em João Pessoa, na Igreja Anglicana no Brasil
+  (IAB).
+sources:
+- source: catedral-comunhao-lideranca
+  quote: O Pastor Marcelo foi ordenado no dia 19 de setembro de 2021.
+- source: catedral-comunhao-lideranca
+  quote: Casado com a Pastora Jackeline, que também foi ordenada na mesma data.
 ordinations:
 - order: presbyterate
   date: '2021-09-19'

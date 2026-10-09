@@ -2,6 +2,12 @@
 id: diocese-of-carlisle
 name: Diocese of Carlisle
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra cujo bispo Edward Venables-Vernon-Harcourt (1791-1808) foi depois transferido
+  para York.
+sources:
+- source: stubbs-1897
+  quote: Edward Venables Vernon (Harcourt). Carlisle ; York, 1808 ; d. 1847, Nov. 12.
 relations:
 - type: part_of
   target: church-of-england

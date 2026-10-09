@@ -1,10 +1,32 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jeane-grande-a-de-miranda-coelho
 name: Jeane Grande A. de Miranda Coelho
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Jeane Grande A. de Miranda Coelho foi ordenada diácona em 27 de agosto de 2005 e presbítera em 7 de abril de 2006,
+  ambas por Robinson Cavalcanti, na Diocese Anglicana do Recife. É pároca da Paróquia Anglicana Salvação, no Arcediagado
+  Norte, e secretária diocesana de Intercessão.
 sources:
-- source: drp-boletim-oracao-2006
-  quote: Orar pela Paróquia Anglicana da Salvação; pela Revda. Jeane Coelho
+- source: drp2-ordenacoes-2005-08-27
+  quote: SERMÃO DE ORDENAÇÕES Paróquia Anglicana do Mediador Recife (PE), 27/08/2005
+- source: drp2-ordenacoes-2005-08-27
+  quote: >-
+    Bem-vindos a Casa de Deus, para esse Culto de Adoração e Ações de Graças, e de Ordenação dos novos Diáconos:
+    Jeane Coelho, Maurício Amazonas e Tereza Catão, e o novo Presbítero reverendo Josias de Souza Júnior.
+- source: drp2-breves-04-2006
+  quote: >-
+    no dia 07/04, quando acontece as Ordenações Presbiterais das Reverendas: Jeane Coelho e Teresa Catão. A festa
+    espiritual acontecerá na Paróquia Anglicana Emanuel, às 19h, em Olinda-PE.
+- source: drp2-ord-presb-2006-04
+  quote: >-
+    Sermão de Ordenação Presbiteral Reverendos: Cláudio Brito, Flávio Adair, Jeane Coelho, Lindinalva Medeiros,
+    Raimundo Figueiredo e Teresa Catão Paróquia Anglicana Emanuel Recife (PE), 07.04.2006 Con-Catedral Anglicana
+    da Ressurreição João Pessoa (PB), 08.04.2006
+- source: darl1-387
+  quote: >-
+    Revda. Jeane Grande Arruda de Miranda Coelho é Presbítera na Diocese do Recife; Secretária Diocesana de Intercessão;
+    Pároca da Paróquia Anglicana Salvação, no Arcediagado Norte da Diocese.
+- source: dard2-com-norte
+  quote: 'Paróquia Anglicana da Salvação Paróca: Revda. Jeane Coelho'
 ordinations:
 - order: diaconate
   date: '2005-08-27'

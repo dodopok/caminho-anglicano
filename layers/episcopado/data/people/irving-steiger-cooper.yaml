@@ -1,6 +1,21 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: irving-steiger-cooper
 name: Irving Steiger Cooper
+biography: >-
+  Irving Steiger Cooper foi ordenado presbítero em 2 de fevereiro de 1918 por Charles Webster Leadbeater e sagrado
+  bispo em 13 de julho de 1919 por James Ingall Wedgwood.
+sources:
+- source: lin-ms-cooper
+  quote: >-
+    Ordained a priest on the 02nd February 1918 by Charles Webster Leadbeater of the Liberal Catholic Church.
+- source: lin-ms-cooper
+  quote: >-
+    13th July 1919 19190713 Consecrated by James Ingall Wedgwood Assisted by Charles Webster Leadbeater and the
+    Jonkheer Julian Adriaan Mazel
+- source: lin-ms-wedgwood
+  quote: >-
+    13th July 1919 19190713 Consecrated Irving Steiger Cooper Assisted by Charles Webster Leadbeater and the Jonkheer
+    Julian Adriaan Mazel
 ordinations:
 - order: presbyterate
   date: '1918-02-02'

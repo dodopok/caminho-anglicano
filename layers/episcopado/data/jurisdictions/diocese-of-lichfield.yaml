@@ -2,6 +2,14 @@
 id: diocese-of-lichfield
 name: Diocese of Lichfield
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra que teve como bispos George Abbot (1609-1610, depois Londres e Canterbury) e Frederick
+  Cornwallis (1750-1768, depois Canterbury).
+sources:
+- source: stubbs-1897
+  quote: George Abbot. Lichfield ; London, 1610 ; Canterbury, 161 1 ; d. 1633, Aug. 4
+- source: stubbs-1897
+  quote: Frederick Cornwallis. Lichfield ; Canterbury, 1768; d. 1783, March 19.
 relations:
 - type: part_of
   target: church-of-england

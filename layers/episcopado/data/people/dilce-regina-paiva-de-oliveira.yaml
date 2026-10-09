@@ -1,6 +1,12 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: dilce-regina-paiva-de-oliveira
 name: Dilce Regina Paiva de Oliveira
+biography: Clériga da IEAB, ordenada diácona em 23/04/1995 e presbítera em 20/10/1996.
+sources:
+- source: rta-livro35
+  quote: 'Diaconato: 23 de abril de 1995.'
+- source: rta-livro35
+  quote: 'Presbiterado: 20 de outubro de 1996.'
 ordinations:
 - order: diaconate
   date: '1995-04-23'

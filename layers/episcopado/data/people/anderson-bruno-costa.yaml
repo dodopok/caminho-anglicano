@@ -1,6 +1,27 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: anderson-bruno-costa
 name: Anderson Bruno Costa
+biography: >-
+  Anderson Bruno Costa, clérigo da Diocese Anglicana do Recife (IEAB-DAR), foi ordenado diácono em 21/05/2023, na
+  Paróquia Anglicana da Ascensão, e presbítero em 11/10/2025, pelo bispo João Câncio Peixoto Filho, na Capela da
+  Virgem Maria (Cemitério dos Ingleses).
+sources:
+- source: dar-2023-anderson-diac
+  quote: >-
+    a celebração de ordenação do Revdo. Anderson Bruno Costa, na tarde do último domingo (21/5), na Paróquia Anglicana
+    da Ascensão
+- source: dar-2025-anderson-presb-conv
+  quote: >-
+    tem a alegria de convidar a Vossa Senhoria, familiares e comunidade para a Ordenação Presbiteral do Rev. Anderson
+    Bruno Costa.
+- source: dar-2025-anderson-presb-conv
+  quote: 'Data: 11 de outubro de 2025'
+- source: dar-2025-anderson-presb
+  quote: >-
+    o clero e o povo da diocese testemunharam a ordenação presbiteral que aconteceu na Capela da Virgem Maria –
+    Cemitério dos Ingleses, situado na Av. Cruz Cabugá, 876 no bairro Santo Amaro.
+- source: dar-clero-diocesano
+  quote: Revdo. Anderson Bruno Costa
 ordinations:
 - order: diaconate
   date: '2023-05-21'

@@ -1,12 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: lucia-helena-mulatinho-fernandes
 name: Lúcia Helena Mulatinho Fernandes
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Lúcia Helena Mulatinho Fernandes foi ordenada diácona em 05/07/2008 por Robinson Cavalcanti, na Diocese Anglicana
+  do Recife (DAR). Atuou como ministra auxiliar, como coordenadora pedagógica do seminário e na comissão de credenciais
+  e diplomacia da diocese.
 sources:
 - source: drv-ordenacoes-diaconais-2008
   quote: >-
     apresentamos Josean, Lúcia Helena, Márcia, Márcio e Maria de Fátima para serem Ordenados ao Diaconato na Santa
     Igreja de Cristo.
+- source: drv-ordenacoes-diaconais-2008
+  quote: Recife (PE), 05 de julho de 2008
+- source: drp2-ord-diac-2008-07-05
+  quote: +Dom Robinson Cavalcanti Bispo Diocesano
+- source: dard2-com-pb
+  quote: 'Ministra Auxiliar: Revda. Lúcia Helena Mulatinho Fernandes'
+- source: dard1-cargos-2009a
+  quote: Coordenador Pedagógico Revda. Lúcia Helena Mulatinho Fernandes
+- source: dard1-comissoes-2009a
+  quote: Revda. Lúcia Helena Mulatinho Fernandes
 ordinations:
 - order: diaconate
   date: '2008-07-05'

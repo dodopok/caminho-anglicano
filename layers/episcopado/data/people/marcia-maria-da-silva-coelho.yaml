@@ -1,12 +1,34 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcia-maria-da-silva-coelho
 name: Márcia Maria da Silva Coelho
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Márcia Maria da Silva Coelho foi ordenada diácona em 05/07/2008 e presbítera em 07/03/2009 por Robinson Cavalcanti,
+  na Diocese Anglicana do Recife (DAR). Atuou como ministra encarregada do Ponto Missionário Anglicano Sarça Ardente,
+  em Abreu e Lima (PE), no Arcediagado Norte, e como secretária diocesana de Intercessão, além de integrar a comissão
+  de novas paróquias e missões.
 sources:
 - source: drv-ordenacoes-diaconais-2008
   quote: >-
     apresentamos Josean, Lúcia Helena, Márcia, Márcio e Maria de Fátima para serem Ordenados ao Diaconato na Santa
     Igreja de Cristo.
+- source: drv-ordenacoes-diaconais-2008
+  quote: Recife (PE), 05 de julho de 2008
+- source: drp2-boletim-presb-marcia-2009
+  quote: >-
+    Rito de Ordenação Presbiteral Revda. Marcia Maria da Silva Coelho Olinda (PE), 07 de março de 2009 Celebrante
+    Revmo. Bispo Dom Edward Robinson de Barros Cavalcanti Paróquia Anglicana Emanuel
+- source: drp2-boletim-presb-marcia-2009
+  quote: 'Ordinante e Pregador: Revmo. Dom Robinson Cavalcanti'
+- source: drp2-boletim-presb-marcia-2009
+  quote: 'Ministra Encarregada: Revda. Marcia Coelho'
+- source: darl1-3330
+  quote: >-
+    Revda. Márcia Maria da Silva Coelho é Presbítera na Diocese do Recife; Secretária Diocesana de Intercessão;
+    Ministra Encarregada do Ponto Missionário Anglicano Sarça Ardente, em Abreu e Lima-PE, no Arcediagado Norte.
+- source: darn2-secretarios-2012
+  quote: 'Secretaria Diocesana Anglicana de Intercessão: Revda. Márcia Maria da Silva Coelho'
+- source: dard1-comissoes-2009a
+  quote: Revda. Márcia Maria da Silva Coelho
 ordinations:
 - order: diaconate
   date: '2008-07-05'

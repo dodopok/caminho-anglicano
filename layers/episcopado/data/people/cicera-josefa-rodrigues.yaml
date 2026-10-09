@@ -1,6 +1,21 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: cicera-josefa-rodrigues
 name: Cícera Josefa Rodrigues
+biography: >-
+  Ordenada diácona em 16/11/2025 por João Câncio Peixoto Filho, bispo da Diocese Anglicana do Recife (IEAB), em
+  cujo clero consta.
+sources:
+- source: dar-2025-cicera-conv
+  quote: >-
+    participarem do Rito Ordenação Diaconal da Candidata às Sagradas Ordens Cícera Josefa Rodrigues (Santinha) que
+    acontecerá no domingo, dia 16 de novembro de 2025, às 10 horas, na Associação das Mulheres Rendeiras
+- source: dar-2025-santinha
+  quote: >-
+    o Bispo João C. Peixoto, recebeu cinco novos membros para a Missão, instituiu dois irmãos ao Ministério Leigo
+    Pastoral: Delcides Marques e Francisco Leite da Silva, além de ordenar a mais nova diácona da Diocese Anglicana
+    do Recife, a Revda. Santinha.
+- source: dar-clero-diocesano
+  quote: Revda. Cícera Josefa Rodrigues (Santinha)
 ordinations:
 - order: diaconate
   date: '2025-11-16'

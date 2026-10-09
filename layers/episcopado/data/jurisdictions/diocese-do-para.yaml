@@ -6,6 +6,26 @@ aliases:
 - Diocese do Pará
 type: diocese
 country: BR
+description: >-
+  Diocese da IATB. Eduardo Mota foi seu bispo diocesano a partir de 2009, até o falecimento noticiado em 2012; Ricardo
+  Vicente dos Anjos o sucedeu em julho de 2012 e atuou até 2017. Hélio Augusto é referido como bispo eleito, sagrado
+  em Encontro Sinodal de novembro de 2025, no Rio de Janeiro.
+sources:
+- source: lia-iatb-juris-2010
+  quote: 'DIOCESE DO PARÁ Bispo Diocesano: Dom Eduardo Mota'
+- source: lia-iatb-noticias-2012
+  quote: Com profundo pesar noticiamos o falecimento de Dom Eduardo Mota, Bispo Diocesano da Diocese do Pará.
+- source: lia-iatb-juris-2013
+  quote: 'DIOCESE DO PARÁ Bispo Diocesano: Revmo. Dom Ricardo Vicente dos Anjos'
+- source: lia-iatb-home-2017-10
+  quote: >-
+    Nós, Dom Rui Costa Barbosa, Dom X, Dom Washington Luis, Dom José Aparecido e Dom Y, respectivamente bispos das
+    Dioceses do Sudeste, do Centro-Oeste, do Sergipe, do Sul e do Pará
+- source: cant-novas-igrejas-2024
+  quote: >-
+    e Diocese do Pará, com o bispo eleito, reverendo Hélio Augusto, que sagrado ao episcopado durante o Encontro
+    Sinodal que em novembro de 2025, no Rio de Janeiro.
+  page: '136'
 relations:
 - type: part_of
   target: iatb

@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: donald-w-saint-peters
 name: Donald W. Saint Peters
+biography: >-
+  Ordenado presbítero em 28/08/1983, em Saint Louis (Missouri), por Charles David Luther, e sagrado bispo em 10/09/1989,
+  em Portage (Indiana), por Richard James Ingram, ambos bispos da Western Orthodox Church in America.
+sources:
+- source: lin-tjb-saint-peters
+  quote: >-
+    Ordained a priest on 08/28/1983 at Saint Louis, Missouri, by Charles David Luther, a bishop of the Western Orthodox
+    Church in America.
+- source: lin-tjb-saint-peters
+  quote: >-
+    Consecrated a bishop on 09/10/1989 at Portage, Indiana, by Richard James Ingram, a bishop of the Western Orthodox
+    Church in America, assisted by Patrick Michael Cronin, a bishop of the Independent Catholic Church of America,
+    and by Timothy W. Christopher Browning, a bishop of the Byzantine Orthodox Catholic Church.
 ordinations:
 - order: presbyterate
   date: '1983-08-28'

@@ -2,6 +2,14 @@
 id: diocese-of-aberdeen
 name: Diocese of Aberdeen
 type: diocese
+description: >-
+  Diocese da Igreja Episcopal Escocesa cujo bispo, Robert Kilgour, era também primus, tendo John Skinner como bispo
+  coadjutor.
+sources:
+- source: perry-1895
+  quote: Dr. Robert Kilgour, the primus, bishop of Aberdeen
+- source: perry-1895
+  quote: Dr. John Skinner, bishop coadjutor of Aberdeen
 relations:
 - type: part_of
   target: scottish-episcopal-church

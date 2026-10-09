@@ -1,6 +1,16 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: getulio-gutemberg-souza-azevedo
 name: Getúlio Gutemberg Souza Azevedo
+biography: >-
+  Getúlio Gutemberg Souza Azevedo é clérigo da Igreja Anglicana do Brasil (Lorite) e, segundo carta de 2004, foi
+  expulso de sua igreja sem acusação nem direito de defesa após encontro com bispos americanos.
+sources:
+- source: darl3-cc-boaviagem
+  quote: Rev. Getúlio Gutemberg Souza Azevedo
+- source: drv-spinelli-carta-2004
+  quote: >-
+    o Reverendo Getúlio Gutemberg apesar de ter participado do encontro religioso, foi expulso da sua Igreja sem
+    acusação e sem direito de defesa
 affiliations:
 - jurisdiction: iadb-lorite
   role: clergy

@@ -1,10 +1,41 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: solange-cristina-pereira
 name: Solange Cristina Pereira
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Ordenada diácona em 27/12/2003, na Paróquia Anglicana Emanuel (Olinda), e presbítera em 04/12/2004, no XXIV Concílio
+  Diocesano, ambas por Robinson Cavalcanti. Atuou no Ponto Missionário Anglicano da Paz e na equipe pastoral da
+  Paróquia Anglicana São Paulo e foi membro do Conselho Diocesano; em 23/08/2005 foi excluída da comunhão da IEAB,
+  permanecendo na Diocese Anglicana do Recife.
 sources:
-- source: drp-boletim-oracao-2006
-  quote: Orar pela Paróquia Anglicana São Paulo; pela Revda. Juciara Nascimento; pela Revda. Solange Pereira
+- source: rcor-drv-ord-decio-2003
+  quote: >-
+    Décio da Silva, Elias Leôncio de Brito Filho, ose, Raniere Almeida de Oliveira, Solange Cristina Pereira e Tibério
+    Marques da Silva, ose
+- source: rcor-drv-ord-decio-2003
+  quote: Paróquia Anglicana Emanuel - Olinda/PE — 27/12/2003
+- source: drp2-concilio-xxiv-2004
+  quote: >-
+    foi celebrado um Culto Eucarístico com a Ordenação Presbiteral dos Reverendos: Décio da Silva, Fred Souto, Marconi
+    Oliveira, Solange Cristina Pereira e Raniere Oliveira
+- source: dard1-carta-bispos-2004
+  quote: Revda. Solange Cristina Pereira Ponto Missionário Anglicano da Paz
+- source: drp2-breves-09-2005
+  quote: >-
+    na Paróquia Anglicana São Paulo, sob a orientação pastoral das Reverendas: Juciara Nascimento e Solange Cristina
+- source: darl3-setubal
+  quote: Revda. Solange Cristina Pereira – Membro do Conselho Diocesano
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Revda. Solange Cristina Pereira … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Revda. Solange Cristina Pereira … Os clérigos não atenderam à convocação
+    e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo
+    plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
 ordinations:
 - order: diaconate
   date: '2003-12-27'

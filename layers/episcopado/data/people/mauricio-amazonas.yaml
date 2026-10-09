@@ -1,14 +1,58 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: mauricio-amazonas
 name: Maurício Amazonas
-biography: Capelão do SAT-PE e pároco da Paróquia Jardim das Oliveiras em 2006.
+biography: >-
+  Ordenado diácono em 27 de agosto de 2005 e presbítero em 4 de fevereiro de 2006 por Robinson Cavalcanti, na Diocese
+  Anglicana do Recife (IEAB); antes, em 2004, figurava como ministro leigo da Paróquia Anglicana Bom Samaritano.
+  Membro da OSE, foi capelão do Seminário Anglicano Teológico (SAT-PE), pároco da Paróquia Anglicana Jardim das
+  Oliveiras, secretário diocesano de educação, estatístico diocesano e presidente do Conselho Diocesano, e depois
+  vigário-geral diocesano (2009 a 2011). Em 2011, foi um dos três 'episcopáveis' na eleição de bispos sufragâneos
+  da diocese.
 sources:
+- source: drp2-ordenacoes-2005-08-27
+  quote: SERMÃO DE ORDENAÇÕES Paróquia Anglicana do Mediador Recife (PE), 27/08/2005
+- source: drp2-ordenacoes-2005-08-27
+  quote: >-
+    Bem-vindos a Casa de Deus, para esse Culto de Adoração e Ações de Graças, e de Ordenação dos novos Diáconos:
+    Jeane Coelho, Maurício Amazonas e Tereza Catão, e o novo Presbítero reverendo Josias de Souza Júnior.
+- source: drp2-ord-presb-amazonas-2006
+  quote: >-
+    Sermão de Ordenação Presbiteral Reverendo Maurício Amazonas Catedral Anglicana do Bom Samaritano Recife (PE),
+    04.02.2006
+- source: dard1-carta-bispos-2004
+  quote: Maurício Amazonas Paróquia Anglicana Bom Samaritano
+- source: cant-novas-igrejas-2024
+  quote: >-
+    a Ordem ficou restrita a um círculo muito específico de clérigos, sobrevivendo através deles, até hoje, como
+    por exemplo, o reverendo Maurício Amazonas.
+  page: '28'
 - source: drp-boletim-oracao-2006
   quote: >-
     novo Seminário Anglicano Teológico (SAT-PE): Ven. Arc. Rev. Evilásio Tenório – Reitor, Rev. Maurício Amazonas,
     Capelão e a Coordenadora Pedagógica: Revda. Jeane Coelho
-- source: drp-boletim-oracao-2006
-  quote: Orar pela Paróquia Anglicana Jardim das Oliveiras; pelo Rev. Maurício Amazonas
+- source: dard2-com-sul
+  quote: >-
+    Paróquia Anglicana Jardim das Oliveiras Pároco: Rev. Maurício Amazonas Auxiliar: Revda. Keyla Camargo
+- source: darl1-189
+  quote: >-
+    Presidente do Conselho Diocesano, Capelão do Seminário Anglicano Teológico em Recife (SAT-PE), Pároco da Paróquia
+    Anglicana Jardim das Oliveiras, no bairro Setúbal, Recife-PE, e Secretário Diocesano de Educação.
+- source: dard1-comissoes-2009a
+  quote: Estatístico Diocesano Rev. Maurício Manoel Amazonas dos Santos, ose
+- source: darl1-398
+  quote: >-
+    Rev. Maurício Amazonas, ose é Presbítero na Diocese do Recife; Presidente do Conselho Diocesano, Pároco da Paróquia
+    Anglicana Jardim das Oliveiras, no Arcediagado Sul, em Recife-PE.
+- source: darn1-amazonas09
+  quote: Vigário geral da Diocese do Recife
+- source: darn1-amazonas10
+  quote: >-
+    Vigário-Geral Diocesano, Pároco da Paróquia Anglicana Jardim das Oliveiras, no Arcediagado Sul, em Recife-PE
+- source: drp2-episcopaveis-2011
+  quote: >-
+    quer na condição anterior de Presidente do Conselho Diocesano, quer na condição atual de Vigário-Geral
+- source: drp2-episcopaveis-2011
+  quote: 'Série: “O Povo Pergunta e os Episcopáveis Respondem”'
 ordinations:
 - order: diaconate
   date: '2005-08-27'

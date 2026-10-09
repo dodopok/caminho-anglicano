@@ -2,6 +2,17 @@
 id: diocese-of-new-york
 name: Diocese of New York
 type: diocese
+description: >-
+  Diocese da TEC. Samuel Provoost foi bispo a partir de 1787; Horatio Potter, bispo desde 1854, tornou-se diocesano
+  em 1861 e morreu em 2 de janeiro de 1887; Henry Codman Potter, bispo desde 1883, tornou-se diocesano em 1887.
+sources:
+- source: stubbs-1897
+  quote: Samuel Provoost. New York ; d. 1815.
+- source: perry-1895
+  quote: >-
+    On the decease of Onderdonk, in 1861, Potter became the diocesan bishop of New York. He died Jan. 2, 1887
+- source: perry-1895
+  quote: He became ■diocesan in 1887.
 relations:
 - type: part_of
   target: tec

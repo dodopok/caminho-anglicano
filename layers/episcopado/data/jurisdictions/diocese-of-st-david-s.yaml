@@ -2,6 +2,16 @@
 id: diocese-of-st-david-s
 name: Diocese of St David's
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra que teve como bispos William Barlow (desde 1536), William Laud (1621-1626) e Charles
+  Moss (1766-1774).
+sources:
+- source: stubbs-1897
+  quote: William Barlow. S. David's; Bath, 1 549-1554 ; Chichester, 1559 ; d. 1569, Dec. 10.
+- source: stubbs-1897
+  quote: William Laud. S. David's ; Bath, 1626 ; London, 1628; Canterbury, 1633; d. 1645, Jan. 10.
+- source: stubbs-1897
+  quote: Charles Moss. S. David's; Bath, 1774; d. 1802, Apr. 13.
 relations:
 - type: part_of
   target: church-of-england

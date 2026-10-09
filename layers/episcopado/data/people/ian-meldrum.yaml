@@ -1,10 +1,47 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ian-meldrum
 name: Ian Meldrum
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Ian Meldrum foi ordinando do bispo Edmund Knox Sherrill e estudou no Núcleo de Estudos Anglicanos (NAET). Em 1997,
+  no Concílio Extraordinário da Diocese Anglicana do Recife, na Ilha de Itaparica (BA), esteve entre os três nomes
+  indicados à eleição de bispo coadjutor, ao lado de Maurício Andrade e Robinson Cavalcanti, que foi eleito. Em
+  23 de agosto de 2005 foi incluído entre os clérigos excluídos da comunhão da IEAB, tendo declarado manter plena
+  comunhão com Robinson Cavalcanti. Integrou a equipe pastoral da Paróquia Anglicana Água Viva e se aposentou em
+  maio de 2009.
 sources:
-- source: drp-boletim-oracao-2006
-  quote: 'Orar pela Paróquia Anglicana Água Viva; pelos Reverendos: Siméa e Ian Meldrum'
+- source: dard2-hist2
+  quote: >-
+    onde estudaram três dos seus ordinandos, os futuros reverendos: Ian Meldrum, Robinson Cavalcanti e Antônio Carlos
+    (da Bahia)
+- source: drv-resgatando-ii
+  quote: >-
+    onde estudaram três dos seus ordinandos, os futuros reverendos: Ian Meldrum, Robinson Cavalcanti e Antônio Carlos
+    (da Bahia)
+- source: drv-resgatando-iv
+  quote: >-
+    Na ocasião foram indicados 3 nomes: os reverendos Maurício Andrade, Ian Meldrum e Robinson Cavalcanti
+- source: drv-resgatando-iv
+  quote: >-
+    Na véspera da festa de São Pedro de 1997, foi eleito como terceiro Bispo da Diocese Anglicana do Recife (o primeiro
+    eleito aqui e o primeiro nativo) o Rev. Robinson Cavalcanti, por maioria absoluta das urnas do clero e dos leigos,
+    posteriormente homologado pela maioria dos Bispos e dos Conselhos Diocesanos da Província
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Ian Meldrum … Os clérigos não atenderam à convocação e declararam,
+    via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo plena comunhão
+    com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Ian Meldrum … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: dard2-com-norte
+  quote: Paróquia Anglicana Água Viva Revda. Siméa Meldrum Rev. Ian Meldrum
+- source: darn2-ian-meldrum-2009
+  quote: >-
+    quando da aposentadoria do Rev. Ian Meldrum , vem expressar Ações de Graças por sua vida e profícuo ministério
 ordinations:
 - order: diaconate
   date: null

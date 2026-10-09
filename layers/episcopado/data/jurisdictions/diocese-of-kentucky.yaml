@@ -2,6 +2,14 @@
 id: diocese-of-kentucky
 name: Diocese of Kentucky
 type: diocese
+description: >-
+  Diocese da TEC em que Smith (B. B. Smith) foi consagrado bispo em 31 de outubro de 1832; Thomas Underwood Dudley,
+  bispo desde 1875, tornou-se diocesano em 1884, com a morte de Smith.
+sources:
+- source: perry-1895
+  quote: was consecrated bishop of the diocese in St. Paul's Chapel, New York, Oct. 31, 1832
+- source: perry-1895
+  quote: In 1884, on the death of Bishop B. B. Smith, he became the diocesan of Kentucky.
 relations:
 - type: part_of
   target: tec

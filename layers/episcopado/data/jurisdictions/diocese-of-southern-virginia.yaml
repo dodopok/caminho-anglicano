@@ -2,6 +2,13 @@
 id: diocese-of-southern-virginia
 name: Diocese of Southern Virginia
 type: diocese
+description: >-
+  Diocese da TEC criada em 1894 com a divisão da Diocese de Virginia, sede escolhida pelo bispo Alfred Magill Randolph.
+sources:
+- source: perry-1895
+  quote: >-
+    In 1894 the diocese of Virginia was divided, and Bishop Randolph chose the new see of Southern Virginia as his
+    charge.
 relations:
 - type: part_of
   target: tec

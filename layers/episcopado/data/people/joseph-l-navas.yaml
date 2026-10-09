@@ -1,10 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: joseph-l-navas
 name: Joseph L Navas
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Presbítero aposentado com domicílio canônico na Diocese do Recife, residente no exterior e vinculado à Paróquia
+  de St. Charles.
 sources:
 - source: drv-nota-esclarecimento-2006
   quote: Joseph L Navas
+- source: dard2-clero-na
+  quote: Rev. Joseph L. Navas (Paróquia de St. Charles)
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: other

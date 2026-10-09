@@ -1,6 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: jackeline
 name: Jackeline
+biography: >-
+  Jackeline foi ordenada presbítera em 19 de setembro de 2021, na Catedral Comunhão (João Pessoa), na mesma celebração
+  em que foi ordenado o pastor Marcelo.
+sources:
+- source: catedral-comunhao-lideranca
+  quote: Casado com a Pastora Jackeline, que também foi ordenada na mesma data.
+- source: catedral-comunhao-lideranca
+  quote: O Pastor Marcelo foi ordenado no dia 19 de setembro de 2021.
 ordinations:
 - order: presbyterate
   date: '2021-09-19'

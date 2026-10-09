@@ -1,10 +1,42 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: juciara-maria-r-do-nascimento
 name: Juciara Maria R. do Nascimento
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Ordenada diácona por Robinson Cavalcanti, atuou na Diocese do Recife como ministra encarregada do Ponto Missionário
+  Betesda, líder da equipe pastoral e depois pároca da Paróquia Anglicana São Paulo, e foi vice-presidente do Conselho
+  Diocesano. Em 23/08/2005 constou entre os clérigos excluídos da comunhão da IEAB por decreto, os quais declararam
+  em carta manter comunhão com Robinson Cavalcanti.
 sources:
-- source: drp-boletim-oracao-2006
-  quote: Orar pela Paróquia Anglicana São Paulo; pela Revda. Juciara Nascimento; pela Revda. Solange Pereira
+- source: rcor-drv-ord-celio-filadelfo
+  quote: Marco Antonio, Maurício, Vera, Nadja, Filadelfo e Juciara, meus irmãos e irmãs
+- source: rcor-drv-ord-celio-filadelfo
+  quote: seu bispo, no exercício apostólico, igualmente os reconhece, e os consagra
+- source: dard1-carta-bispos-2004
+  quote: >-
+    Revda. Juciara Maria Rodrigues do N. Crasto Paróquia Anglicana São Paulo Ponto Missionário Anglicano Betesda
+- source: drp2-breves-09-2005
+  quote: >-
+    na Paróquia Anglicana São Paulo, sob a orientação pastoral das Reverendas: Juciara Nascimento e Solange Cristina
+- source: darn2-sao-paulo-2008
+  quote: 'Pároca: Revda Juciara Rodrigues'
+- source: darn2-sao-paulo-casamento-2010
+  quote: >-
+    Paróquia Anglicana São Paulo (Reitora: Revda. Juciara Rodrigues ; Ministro Auxiliar: Rev. Ivaldo Sales )
+- source: drv-carta-clero-primaz
+  quote: Revda. Juciara Maria Rodrigues do Nascimento – Vice-presidente do Conselho
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Revda. Juciara Maria R. do Nascimento … Recife, 23 de agosto de
+    2005.
+  page: 560-561
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Revda. Juciara Maria R. do Nascimento … Os clérigos não atenderam
+    à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
+    mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
 ordinations:
 - order: diaconate
   date: null

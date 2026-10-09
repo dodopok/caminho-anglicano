@@ -1,11 +1,49 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: tiberio-marques-da-silva
 name: Tibério Marques da Silva
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Ordenado diácono em 27/12/2003, na Paróquia Anglicana Emanuel (Olinda), por Robinson Cavalcanti, é diácono permanente
+  da Diocese Anglicana do Recife e membro da Ordem de Santo Estevão Mártir, da qual foi ecônomo. Atuou como auxiliar
+  na Paróquia Anglicana da Redenção e como coadjutor na Paróquia Jesus de Nazaré, e foi secretário diocesano de
+  Homens e contador diocesano. Em 23/08/2005 foi excluído da comunhão da IEAB, com outros clérigos que declararam
+  manter plena comunhão com Robinson Cavalcanti, e permaneceu na Diocese Anglicana do Recife.
 sources:
-- source: drp-boletim-oracao-2006
+- source: rcor-drv-ord-decio-2003
   quote: >-
-    Orar pela Paróquia Anglicana da Redenção. Pela Ven. Arc. Revda. Gorete, pelos Reverendos: Tibério e Daniel Barbosa
+    Décio da Silva, Elias Leôncio de Brito Filho, ose, Raniere Almeida de Oliveira, Solange Cristina Pereira e Tibério
+    Marques da Silva, ose
+- source: rcor-drv-ord-decio-2003
+  quote: Paróquia Anglicana Emanuel - Olinda/PE — 27/12/2003
+- source: darl1-5548
+  quote: >-
+    Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano; membro da
+    Ordem de Santo Estevão Mártir e da Equipe Pastoral da Paróquia Anglicana da Redenção
+- source: rcor-drv-ordens-dar
+  quote: Rev. Tibério Silva (Ecônomo)
+- source: dard1-ose-2009a
+  quote: Rev Tibério Marques (Ecônomo)
+- source: dard2-com-norte
+  quote: >-
+    Paróquia Anglicana da Redenção Pároca: Revda. Maria Gorete Correia, OSE Auxiliar: Rev. Tibério Marques, OSE
+- source: dard2-com-sul
+  quote: >-
+    Paróquia Anglicana Jesus de Nazaré Reitor: Rev. Hermany Silva Soares Coadjutor : Rev. Tibério Marques
+- source: drp2-breves-08-2005
+  quote: O Secretário Diocesano de Homens, Rev. Tibério Marques, está convidando a todos
+- source: dard1-cargos-2009a
+  quote: 'Contador Diocesano: Rev. Tibério Marques da Silva, ose'
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Tibério Marques da Silva … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Tibério Marques da Silva … Os clérigos não atenderam à convocação
+    e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo
+    plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
 ordinations:
 - order: diaconate
   date: '2003-12-27'

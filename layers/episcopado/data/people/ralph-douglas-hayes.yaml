@@ -1,10 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ralph-douglas-hayes
 name: Ralph Douglas Hayes
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Presbítero da Diocese Anglicana do Recife, residente no exterior, ligado à missão Fellowship of the Living Word.
 sources:
 - source: drv-nota-esclarecimento-2006
   quote: Ralph Douglas Hayes
+- source: dard2-clero-na
+  quote: Rev. Ralph Douglas Hayes (Missão Fellowship of the Living Word)
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: other

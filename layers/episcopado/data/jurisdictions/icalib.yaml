@@ -21,11 +21,13 @@ founded:
   - source: lvc-icalib-blog-2009
     quote: A Igreja Católica Apostólica Libertadora além de ecumênica é também política
 description: >-
-  Igreja de padres casados fundada, segundo Osiel Luiz Santos, em 03/02/1989 em Goiânia, registrada em cartório
-  em 2009 (CNPJ 11.176.954/0001-76, aberto em 04/09/2009; situação 'inapta' desde 18/10/2018). Declara-se 'Sé Primacial
-  Apostólica no Brasil' e filha da Igreja Romana, com celibato opcional e ordenação de mulheres. Mantinha comunhão
-  plena com a Igreja Anglicana Ortodoxa no Brasil (2014).
+  Igreja fundada, segundo Osiel Luiz Santos, em 3 de fevereiro de 1989 e registrada em cartório em 9 de agosto de
+  2009; Osiel é seu bispo primaz. O CNPJ tem início de atividades em 4 de setembro de 2009 e situação inapta, e
+  a igreja mantinha comunhão plena com a Igreja Anglicana Ortodoxa no Brasil em 2014.
 sources:
+- source: lvc-icalib-blog-2011
+  quote: >-
+    Em 3 de fevereiro de 1989 celebrei a primeira missa e fundei a Igreja Católica Apostólica Libertadora
 - source: lvc-icalib-blog-2011
   quote: >-
     Em 3 de fevereiro de 1989 celebrei a primeira missa e fundei a Igreja Católica Apostólica Libertadora, que só
@@ -34,8 +36,14 @@ sources:
   quote: '"data_inicio_atividade":"2009-09-04"'
 - source: lvc-icalib-cnpj
   quote: '"descricao_situacao_cadastral":"INAPTA"'
-- source: lvc-icalib-blog-2009
-  quote: A Igreja Católica Apostólica Libertadora além de ecumênica é também política
+- source: lvc-icalib-blog-2011
+  quote: >-
+    IGREJA CATÓLICA APOSTÓLICA LIBERTADORA (ICAL) SÉ PRIMACIAL APOSTÓLICA NO BRASIL, TEM COMO SEU PRESIDENTE SUA
+    EMINÊNCIA REVERENDÍSSIMA MONSINHOR DOM JOÃO PAULO (Padre Osiel Santos)
+- source: drv-ata-iaob-2014
+  quote: Dom Osiel Luiz Santos, Primaz da Igreja Católica Apostólica Libertadora da cidade de Goiânia
+- source: lvc-iaob-blog-2014
+  quote: 'Alem destes Ministérios  da IAOB Temos comunhão Plena com as seguintes Igrejas:'
 relations:
 - type: in_communion_with
   target: iaob-2013

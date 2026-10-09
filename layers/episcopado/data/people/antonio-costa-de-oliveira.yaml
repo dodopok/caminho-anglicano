@@ -1,10 +1,38 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: antonio-costa-de-oliveira
 name: Antônio Costa de Oliveira
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Antônio Costa de Oliveira foi ordenado diácono em 30/11/2002 por Robinson Cavalcanti, na Paróquia Anglicana da
+  Ressurreição, em João Pessoa (PB), e atuou na Missão Anglicana do Consolador. Em 23/08/2005 foi excluído da comunhão
+  da IEAB, com outros clérigos que declararam manter comunhão com Robinson Cavalcanti, e passou a constar na Diocese
+  Anglicana do Recife como ministro encarregado, membro do tribunal eclesiástico e depois clérigo aposentado.
 sources:
-- source: drp-boletim-oracao-2006
-  quote: Orar pela Missão Anglicana do Consolador (PB); pelo Rev. Antônio Costa
+- source: rcor-drv-costa-quintino-2002
+  quote: Paróquia Anglicana da Ressurreição João Pessoa / PB – 30/11/2002
+- source: rcor-drv-costa-quintino-2002
+  quote: >-
+    Meu caríssimo Costa, O carisma do serviço tem, há muito tempo, marcado a sua vida e ministério. O rito sacramental
+    da ordem irá selar, em caráter indelével, o seu status diaconal.
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Antônio Costa de Oliveira … Os clérigos não atenderam à convocação
+    e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo
+    plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Antônio Costa de Oliveira … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: dard1-carta-bispos-2004
+  quote: Rev. Antônio Costa de Oliveira Missão Anglicana do Consolador
+- source: dard1-eletivos-2009a
+  quote: Revda. Siméa de Souza Meldrum – presidente Rev. Antônio Costa de Oliveira
+- source: dard1-com-pbrnce-2009a
+  quote: 'Ministro Encarregado: Rev. Antonio Costa de Oliveira'
+- source: dard2-clero-apos
+  quote: Clérigos Aposentado … Rev. Antonio Costa de Oliveira
 ordinations:
 - order: diaconate
   date: '2002-11-30'

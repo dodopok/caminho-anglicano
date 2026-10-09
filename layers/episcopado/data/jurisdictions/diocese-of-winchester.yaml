@@ -2,6 +2,13 @@
 id: diocese-of-winchester
 name: Diocese of Winchester
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra que teve como bispos Brian Duppa (1660-1662) e Jonathan Trelawny (1707-1721).
+sources:
+- source: stubbs-1897
+  quote: Brian Duppa. Chichester; Sarum, 1641 ; Winchester, 1660 ; d. 1662, March 26.
+- source: stubbs-1897
+  quote: Jonathan Trelawney. Bristol ; Exeter, 1689 ; Winchester, 1707; d. 1721, July 19.
 relations:
 - type: part_of
   target: church-of-england

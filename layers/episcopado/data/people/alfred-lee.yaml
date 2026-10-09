@@ -12,12 +12,22 @@ death:
   - source: wikidata-api-2
     quote: '"Q4723056": enwiki "Alfred Lee (bishop)"'
 wikidata: Q4723056
-biography: Primeiro bispo de Delaware (1841) e Presiding Bishop; sagrante principal de Alfred Magill Randolph.
+biography: >-
+  Alfred Lee foi sagrado bispo de Delaware em 12/10/1841, em Nova York, por Alexander Viets Griswold e outros bispos,
+  e dirigiu a diocese até morrer, em 12/04/1887.
 sources:
 - source: perry-1895
+  quote: >-
+    He was consecrated bishop of Delaware in St. Paul's Chapel, New York, Oct. 12, 1 84 1, by Bishops Griswold,
+    Moore, Chase, Brownell, H. U. Onderdonk, Meade, and Mcllvaine.
+- source: wp-en-histlist
+  quote: >-
+    | [[Alfred Lee (bishop)|Alfred Lee]] | [[Alexander Viets Griswold|12]] [[Richard Channing Moore|14]] [[Philander
+    Chase|18]] | 1841
+- source: perry-1895
   quote: He died at Wilmington, April 12, 1887
-- source: wikidata-api-2
-  quote: '"Q4723056": enwiki "Alfred Lee (bishop)"'
+- source: perry-1895
+  quote: He was consecrated bishop of Delaware
 ordinations:
 - order: episcopate
   date: '1841-10-12'

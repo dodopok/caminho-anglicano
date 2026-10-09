@@ -1,12 +1,46 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: quintino-jose-orengo-da-silva
 name: Quintino José Orengo da Silva
-biography: Arcediago em 2004, cônego em 2005 e 2007; pároco da Paróquia do Semeador em 2006.
+biography: >-
+  Quintino José Orengo da Silva foi ordenado diácono em 29 de dezembro de 2001 e presbítero em 30 de novembro de
+  2002, pelo bispo Robinson Cavalcanti, na Diocese Anglicana do Recife. Foi instituído cônego em 15 de fevereiro
+  de 2004, atuou como arcediago do Arcediagado Centro e foi reitor da Paróquia Anglicana do Semeador. Em 25 de junho
+  de 2004 integrou os arcediagos que enviaram carta aberta ao primaz da IEAB repudiando palavras de um documento,
+  e em 23 de agosto de 2005 foi excluído da comunhão da IEAB e das Sagradas Ordens, com outros clérigos da diocese,
+  que declararam manter comunhão com o bispo diocesano. Continuou na Diocese do Recife, como pároco do Semeador
+  e membro da Comissão de Ministério.
 sources:
-- source: drp-calendario-2004
-  quote: Ven. Arced. Rev. Quintino José Orengo da Silva
-- source: drp-carta-venables-pt-2005
-  quote: Rev. Côn. Quintino José O. da Silva
+- source: rcor-drv-diac-karla-lilian-quintino
+  quote: ORDENAÇÕES DIACONAIS - 29/12/2001 (Karla, Lilian e Quintino)
+- source: rcor-drv-costa-quintino-2002
+  quote: Paróquia Anglicana da Ressurreição João Pessoa / PB – 30/11/2002
+- source: rcor-drv-diac-daniel-fred
+  quote: Instituição do Cônego Quintino Orengo
+- source: darl3-carta-0904
+  quote: Ven. Arc. Côn. Rev. Quintino José Orengo da Silva Arcediagado Centro Paróquia Anglicana do Semeador
+- source: darl2-novo-nasc-308
+  quote: Quando o nosso Reitor, Rev. Quintino Orengo, me solicitou no domingo passado, para pregar hoje
+- source: darl3-primaz-0406
+  quote: >-
+    vimos por meio desta explicitar de forma indignada nosso público repúdio às palavras injuriosas contidas no
+    citado documento
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Quintino José Orengo da Silva … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Quintino José Orengo da Silva … Os clérigos não atenderam à
+    convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
+    mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
+- source: dard2-com-norte
+  quote: >-
+    Paróquia Anglicana do Semeador(09/08) Pároco: Rev. Côn. Quintino Orengo Coadjutor: Revda. Teresa Catão
+- source: dard1-comissoes-2009a
+  quote: Comissão de Ministério Rev. Cônego Quintino José Orengo da Silva
 ordinations:
 - order: diaconate
   date: '2001-12-29'

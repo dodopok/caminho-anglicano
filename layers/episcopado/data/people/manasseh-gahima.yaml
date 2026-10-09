@@ -1,10 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: manasseh-gahima
 name: Manasseh Gahima
-biography: Bispo de Gahini (Ruanda) desde 2019; eleito arcebispo e primaz de Ruanda em 11/09/2026.
+biography: >-
+  Manasseh Gahima foi sagrado bispo em 2017 e é bispo de Gahini, na Igreja Anglicana de Ruanda, desde 2019; em 11/09/2026
+  foi eleito pela Câmara dos Bispos quinto arcebispo e primaz da província, sucessor de Laurent Mbanda.
 sources:
 - source: gace-gahima-elected
   quote: He was consecrated a bishop in 2017 and has served as Bishop of Gahini since 2019.
+- source: gace-gahima-elected
+  quote: >-
+    I am delighted to congratulate The Rt Revd Dr Manasseh Gahima, Bishop of Gahini, on his election as the next
+    Archbishop and Primate of the Anglican Church of Rwanda.
+- source: gacm-ai-2026-09-11-rwanda
+  quote: >-
+    The House of Bishops of the Province de l’Eglise Anglicane du Rwanda (EAR) is to meet today (11 September 2026)
+    to elect the fifth Archbishop and Primate of the province
 ordinations:
 - order: episcopate
   date: '2017'

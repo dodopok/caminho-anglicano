@@ -51,7 +51,7 @@ registrados, cada citação com um código (`c1a2b3c`). Escreva um resumo NOVO p
   principais e mais altos, igrejas por onde passou, rupturas e mudanças de igreja, situação atual ou falecimento.
   Jurisdição: o que é, quando e de onde surgiu, a que pertence, quem a liderou (linhas "liderança" do dossiê),
   divisões e mudanças importantes.
-- Só o que está no dossiê. Fato `contested` entra só se o texto deixar claro que há versões; `probable` pode entrar
+- Só o que está no dossiê. As linhas "citado no resumo atual" também são fatos: não perca o que elas sustentam. Fato `contested` entra só se o texto deixar claro que há versões; `probable` pode entrar
   sem destaque. Não invente datas nem cargos; prefira a forma mais precisa que aparece.
 - `citacoes`: os códigos dos trechos que sustentam cada fato citado no texto (normalmente 3 a 8).
 - Neutro, pt-BR, sem adjetivos de valor, sem "a base", "NOVO", "segundo o dossiê". Nada de vida pessoal

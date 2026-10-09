@@ -2,6 +2,19 @@
 id: diocese-of-connecticut
 name: Diocese of Connecticut
 type: diocese
+description: >-
+  Diocese da TEC. Samuel Seabury foi seu bispo de 1784 até a morte, em 25 de fevereiro de 1796, e também bispo de
+  Rhode Island; Thomas Church Brownell foi bispo a partir de 1819 e John Williams, a partir de 1851, com a morte
+  de Brownell.
+sources:
+- source: perry-1895
+  quote: >-
+    Bishop Seabury died, suddenly on Feb. 25, 1796. For some years before his decease he had been bishop of Rhode
+    Island as well as Connecticut.
+- source: perry-1895
+  quote: The successor of Seabury and Jarvis in the episcopate of Connecticut
+- source: perry-1895
+  quote: He became bishop of Connecticut on the death of Brownell
 relations:
 - type: part_of
   target: tec

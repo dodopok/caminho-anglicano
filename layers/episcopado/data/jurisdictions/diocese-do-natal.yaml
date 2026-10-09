@@ -2,6 +2,10 @@
 id: diocese-do-natal
 name: Diocese do Natal
 type: diocese
+description: Diocese da IECB, com Alexandre Lins da Silva como bispo desde 2014.
+sources:
+- source: ptwiki-iecb
+  quote: Alexandre Lins da Silva (2014)
 relations:
 - type: part_of
   target: iecb

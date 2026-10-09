@@ -1,12 +1,41 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: raimundo-francisco-de-figueiredo
 name: Raimundo Francisco de Figueiredo
-biography: Provável coadjutor da Con-Catedral da Ressurreição (João Pessoa) em 2006.
+biography: >-
+  Raimundo Francisco de Figueiredo foi ordenado diácono em 18 de junho de 2005 e presbítero em 8 de abril de 2006
+  pelo bispo Robinson Cavalcanti, na Con-Catedral Anglicana da Ressurreição, em João Pessoa, na Diocese Anglicana
+  do Recife. Foi coadjutor da Con-Catedral em 2006, arcediago adjunto e, depois, deão e arcediago do Arcediagado
+  PB/RN, além de pároco da Paróquia Anglicana Vida Nova e membro da Comissão de Direito Canônico. Desde agosto de
+  2021 integra a equipe pastoral da Catedral Anglicana Comunhão, em João Pessoa.
 sources:
+- source: drp2-ord-diac-jp-2005
+  quote: >-
+    Sermão de Ordenações Diaconais Cláudio Brito, Flávio Adair Torres, Gustavo Leite Castello Branco, Lindinalva
+    Medeiros e Raimundo Figueiredo Con-Catedral Anglicana da Ressurreição João Pessoa (PB), 18 de Junho de 2005.
+- source: drp2-convite-presb-jp-2006
+  quote: >-
+    convida V.Sa. para o Culto Solene de Ordenação Presbiteral dos Reverendos: Cláudio Luiz Figueiredo de Brito
+    Flávio Adair Torres Soares Lindinalva Medeiros de Oliveira Raimundo Francisco de Figueiredo Local: Con-Catedral
+    Anglicana da Ressurreição
 - source: drp-boletim-oracao-2006
   quote: >-
     Orar pela Con-Catedral Anglicana da Ressurreição (PB); pelo Revmo. Deão Luiz Souza de França, pelo Coadjutor
     Rev. Raimundo
+- source: dard2-com-home-2009
+  quote: >-
+    Arcediagado PB/RN/CE Arcediago : Ven. Arc. Revmo. Deão Luiz Souza de França Adjunto : Rev. Raimundo Francisco
+    de Figueiredo
+- source: darn1-aniv1108
+  quote: 02 – Revmo. Raimundo Francisco de Figueiredo, Deão e Venerável Arcediago PB/RN
+- source: dard2-com-home-2012
+  quote: Ven. Arc. Revmo. Deão Raimundo Francisco de Figueiredo
+- source: dard2-com-pb
+  quote: 'PARÓQUIA ANGLICANA VIDA NOVA Pároco: Rev. Raimundo Figueiredo'
+- source: dard1-eletivos-2009a
+  quote: Comissão de Direito Canônico (2 anos) Rev. Raimundo Francisco de Figueiredo
+- source: catedral-comunhao-lideranca
+  quote: >-
+    A partir de agosto de 2021 passou a fazer parte da Equipe Pastoral da Catedral Anglicana Comunhão em João Pessoa.
 ordinations:
 - order: diaconate
   date: '2005-06-18'

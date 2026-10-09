@@ -2,6 +2,12 @@
 id: diocese-de-muzambinho
 name: Diocese de Muzambinho
 type: diocese
+description: Diocese a partir da qual o bispo primaz Welington Souza pastoreia a Igreja a que pertence, a IAEBr.
+sources:
+- source: cant-novas-igrejas-2024
+  quote: >-
+    O seu atual bispo primaz é dom Welington Souza, que pastoreia a Igreja a partir da denominada Diocese de Muzambinho
+  page: '122'
 relations:
 - type: part_of
   target: iaebr

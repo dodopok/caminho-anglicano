@@ -1,6 +1,27 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: dinamerico-wanderley
 name: Dinamérico Wanderley
+biography: >-
+  Ministro leigo na Paróquia Anglicana do Espírito Santo em 2004, foi ordenado diácono em 16/06/2007 e presbítero
+  em fevereiro de 2008 por Robinson Cavalcanti. Atuou na Diocese Anglicana do Recife como ministro auxiliar e membro
+  da Equipe Pastoral.
+sources:
+- source: dard1-carta-bispos-2004
+  quote: Dinamérico Wanderley Ribeiro de Sousa Paróquia Anglicana do Espírito Santo
+- source: drp2-ord-diac-2007-06-16
+  quote: 'Sermão de Ordenação Diaconal de: Dinamérico Wanderley, Fábio Rego, João Peixoto e Ricardo Melo'
+- source: drp2-ord-diac-2007-06-16
+  quote: >-
+    Dom Robinson Cavalcanti, ose Bispo Diocesano Catedral Anglicana do Bom Samaritano Recife (PE), 16 de junho de
+    2007.
+- source: drp2-breves-01-2008
+  quote: 'Ordenou ao Presbiterado os Reverendos: Dinamérico Wanderley e Ricardo Melo;'
+- source: dard1-com-sul-2009a
+  quote: >-
+    Auxiliares: Rev. Geison Sávio de Holanda, Rev. Josias Junior, Rev. Dinamérico Wanderley, Rev. Ricardo Melo
+- source: darl3-n4617
+  quote: >-
+    compondo, também a Equipe Pastoral, os Reverendos: Dinamérico Wanderley, Josias Júnior e Ricardo Melo
 ordinations:
 - order: diaconate
   date: '2007-06-16'

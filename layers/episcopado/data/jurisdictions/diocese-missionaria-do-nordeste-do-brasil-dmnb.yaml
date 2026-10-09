@@ -2,6 +2,10 @@
 id: diocese-missionaria-do-nordeste-do-brasil-dmnb
 name: Diocese Missionária do Nordeste do Brasil (DMNB), Catedral Betânia
 type: diocese
+description: Diocese da ICEB com Catedral Betânia, cujo bispo diocesano é Gervásio Cavalcante Neto.
+sources:
+- source: ciceb-quemsomos
+  quote: O corpo atual de clérigos é formado por 1 bispo diocesano (Revmo. Gervásio Neto)
 relations:
 - type: part_of
   target: iceb

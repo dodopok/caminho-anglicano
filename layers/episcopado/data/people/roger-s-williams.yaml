@@ -1,10 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: roger-s-williams
 name: Roger S. Williams
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Presbítero aposentado da ECUSA/TEC, residente em Walla Walla (WA), com domicílio canônico na Diocese Anglicana
+  do Recife, onde figurava no Arcediagado Norte-Americano e atuava, em 2007, num ponto missionário anglicano no
+  Vale de Walla Walla.
 sources:
+- source: darb2-breves-04
+  quote: >-
+    O Ponto Missionário Anglicano no Vale de Walla Walla tem apenas seis meses de funcionamento, em uma Capela na
+    casa do Rev. Roger Williams, com 15 membros
 - source: drv-nota-esclarecimento-2006
   quote: Roger S. Williams
+- source: dard2-clero-na
+  quote: Rev. Roger S. Williams (Wala Wala - WA)
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy

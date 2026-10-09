@@ -1,12 +1,41 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: josias-pereira-de-souza-junior
 name: Josias Pereira de Souza Júnior
-biography: Clérigo da Diocese Anglicana do Recife citado em documento oficial da própria Diocese.
+biography: >-
+  Ordenado diácono em 28/08/2004, em Jaboatão dos Guararapes, e presbítero em 27/08/2005, no Recife, ambos por Robinson
+  Cavalcanti, atuou na Diocese do Recife como secretário diocesano de juventude, auxiliar e membro da equipe pastoral.
+  Em 23/08/2005 constou entre os clérigos excluídos da comunhão da IEAB por decreto, e eles declararam em carta
+  manter comunhão com Robinson Cavalcanti.
 sources:
-- source: drp-boletim-oracao-2006
+- source: rcor-drv-diac-josias
+  quote: Paróquia Anglicana do Espírito Santo Jaboatão dos Guararapes, 28 de Agosto de 2004.
+- source: rcor-drv-diac-josias
+  quote: pela imposição de mãos do seu bispo, sucessor dos apóstolos
+- source: drp2-ordenacoes-2005-08-27
+  quote: SERMÃO DE ORDENAÇÕES Paróquia Anglicana do Mediador Recife (PE), 27/08/2005
+- source: drp2-ordenacoes-2005-08-27
   quote: >-
-    Orar pela Paróquia Anglicana do Espírito Santo, pelo Ven. Arc. Rev. Miguel Uchoa, pelos Reverendos: Geison Vasconcellos,
-    Fernando Acosta e Josias Júnior
+    Bem-vindos a Casa de Deus, para esse Culto de Adoração e Ações de Graças, e de Ordenação dos novos Diáconos:
+    Jeane Coelho, Maurício Amazonas e Tereza Catão, e o novo Presbítero reverendo Josias de Souza Júnior.
+- source: drp2-breves-02-2005
+  quote: O Secretário Diocesano de Juventude, Rev. Josias Júnior esteve presente.
+- source: darl3-setubal
+  quote: Rev. Josias Pereira de Souza Júnior – Secretário Diocesano de Juventude
+- source: darl3-n4617
+  quote: >-
+    compondo, também a Equipe Pastoral, os Reverendos: Dinamérico Wanderley, Josias Júnior e Ricardo Melo
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Josias Pereira de Souza Júnior … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Josias Pereira de Souza Júnior … Os clérigos não atenderam
+    à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
+    mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
 ordinations:
 - order: diaconate
   date: '2004-08-28'

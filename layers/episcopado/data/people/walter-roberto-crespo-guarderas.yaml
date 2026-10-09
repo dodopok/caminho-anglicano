@@ -1,9 +1,13 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: walter-roberto-crespo-guarderas
 name: Walter Roberto Crespo Guarderas
-biography: Pessoa citada em documentos históricos da Diocese do Recife e da IEAB (ver afirmações).
+biography: >-
+  Aparece como presidente da Câmara dos Bispos (ICAE) em documentos da Diocese do Recife, entre eles um comunicado
+  de imprensa de 2006.
 sources:
 - source: drv-comunicado-imprensa-2006
+  quote: Dom Walter Roberto Crespo Guarderas, Presidente da Câmara dos Bispos
+- source: darl3-cc-boaviagem
   quote: Dom Walter Roberto Crespo Guarderas, Presidente da Câmara dos Bispos
 affiliations:
 - jurisdiction: icae

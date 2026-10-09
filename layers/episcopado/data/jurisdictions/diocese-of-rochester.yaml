@@ -2,6 +2,13 @@
 id: diocese-of-rochester
 name: Diocese of Rochester
 type: diocese
+description: >-
+  Diocese da Igreja da Inglaterra que teve como bispos John Scory (1551-1552, depois Chichester) e John Thomas (1774-1793).
+sources:
+- source: stubbs-1897
+  quote: John Scory. Rochester; Chichester, 1552; Hereford, 1559 ; d. 1585, June 26.
+- source: stubbs-1897
+  quote: John Thomas. Rochester; d. 1793, Aug. 22.
 relations:
 - type: part_of
   target: church-of-england

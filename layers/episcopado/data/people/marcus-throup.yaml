@@ -1,12 +1,48 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcus-throup
 name: Marcus Throup
-biography: Reitor do SAT-PE em 2004-2005.
+biography: >-
+  Marcus Throup foi ordenado diácono em 26/06/2004 por Robinson Cavalcanti, na Paróquia Anglicana Jardim das Oliveiras,
+  em Recife, e atuou como reitor do Seminário Anglicano Teológico de Pernambuco (SAT-PE). Em 23/08/2005 foi excluído
+  da comunhão da IEAB, tendo declarado manter comunhão com o bispo diocesano Robinson Cavalcanti. Presbítero da
+  Diocese do Recife, foi secretário diocesano de Relações Internacionais, professor no SAT-PB e capelão do seminário,
+  e em julho de 2010 foi eleito coadjutor da Concatedral.
 sources:
-- source: drp-comissao-educacao-2004
-  quote: confirmem com o Reitor – Rev. Marcus Throup – a sua presença
-- source: drp-jornada-vocacoes-2005
-  quote: ASSUNTOS ESBOÇADOS DA FALA DO REITOR
+- source: rcor-drv-diac-throup
+  quote: Paróquia Anglicana Jardim das Oliveiras Recife (PE), 26 de Junho de 2004
+- source: drp2-breves-09-2004
+  quote: >-
+    Será no próximo sábado, dia 26, às 19h30, na Paróquia Anglicana Jardim das Oliveiras, a cerimônia de Ordenação
+    ao Diaconato do candidato Marcus Throup, professor e Capelão Adjunto do SAET.
+- source: drp-carta-venables-pt-2005
+  quote: Rev. Marcus Throup – Reitor do SAT-PE
+- source: darl3-setubal
+  quote: Rev. Marcus Throup – Reitor do SAT-PE
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Marcus Throup … Os clérigos não atenderam à convocação e declararam,
+    via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo plena comunhão
+    com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
+  page: 560-562
+- source: costa2021
+  quote: >-
+    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
+    Ordens, os clérigos a seguir mencionados: … Rev. Marcus Throup … Recife, 23 de agosto de 2005.
+  page: 560-561
+- source: rclv-anglicanismo-comparado-2008
+  quote: >-
+    Rev. Marcus O. Throup é Presbítero da Diocese do Recife; Secretário Diocesano de Relações Internacionais; professor
+    no SAT-PB
+  page: '77'
+- source: darn1-throup10
+  quote: é Presbítero da Diocese do Recife; Secretário Diocesano de Relações Internacionais
+- source: dard1-cargos-2009a
+  quote: Capelão Rev. Marcus Oliver Throup
+- source: darn2-throup-coadjutor-2010
+  quote: elegeu como seu Coadjutor o Rev. Marcus Oliver Throup
+- source: darn2-throup-coadjutor-2010
+  quote: O Bispo Robinson Cavalcanti já homologou a eleição, cuja data de posse ainda não foi marcada
 ordinations:
 - order: diaconate
   date: '2004-06-26'

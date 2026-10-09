@@ -10,12 +10,31 @@ death:
   - source: wikidata-api-2
     quote: '"Q6257034": enwiki "John Scory"'
 wikidata: Q6257034
-biography: Bispo de Rochester (1551), Chichester (1552) e Hereford (1559); co-sagrante de Parker.
+biography: >-
+  Sagrado em 30/08/1551 por Thomas Cranmer, foi bispo de Rochester (1551), de Chichester (1552) e de Hereford (1559),
+  até morrer, em 26/06/1585. Foi um dos sagrantes de Matthew Parker, em 17/12/1559, sagração cuja validade foi contestada
+  por autores católicos na controvérsia sobre o Registro de Lambeth.
 sources:
 - source: stubbs-1897
+  quote: >-
+    a. d. 1551, Aug. 30. John Scory. Rochester; Chichester, 1552; Hereford, 1559 ; d. 1585, June 26. Consecrated
+    at Croydon by Archbishop Cranmer, Nicolas of London, and John of Bedford ; Reg. Cranmer, 333 ;
+- source: stubbs-1897
   quote: John Scory. Rochester; Chichester, 1552; Hereford, 1559 ; d. 1585, June 26.
-- source: wikidata-api-2
-  quote: '"Q6257034": enwiki "John Scory"'
+- source: ce-anglican-orders
+  quote: >-
+    Mason in his "Vindiciae Ecclesiae Anglicanae" replied on the Anglican side, in 1613, and was the first to call
+    attention, at all events effectively, to the entry in Parker's "Register" of his consecration on 17 December,
+    1559, in the private chapel at Lambeth.
+- source: ce-anglican-orders
+  quote: >-
+    Champney, who wrote in 1616, suggests, what was clearly the general opinion of the Catholics at the time, that
+    the entry in question was a forgery.
+- source: ce-anglican-orders
+  quote: >-
+    there can be no question, to us who know all the lines of converging evidence that tell in its favour, but that
+    his consecration did take place on the day and in the manner described in the "Register", and that the latter
+    was a contemporary document.
 ordinations:
 - order: episcopate
   date: '1551-08-30'

@@ -2,6 +2,12 @@
 id: prelazia-anglicana-dos-pampas
 name: Prelazia Anglicana dos Pampas
 type: diocese
+description: Prelazia anglicana ligada à DAC, que tem Daniel Araújo como bispo prelado desde 26 de junho de 2022.
+sources:
+- source: lielb-dacb-api-clero
+  quote: '"cargo": "Bispo Prelado", "prelazia": "Prelazia Anglicana dos Pampas"'
+- source: lielb-gaz-pampas
+  quote: presidida por Dom Daniel Araújo, bispo da Prelazia Anglicana dos Pampas
 relations:
 - type: part_of
   target: dac

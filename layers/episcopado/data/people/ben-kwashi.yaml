@@ -1,6 +1,16 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ben-kwashi
 name: Ben Kwashi
+biography: >-
+  Ben Kwashi, arcebispo aposentado de Jos (Nigéria), foi secretário-geral da GAFCON até 09/11/2023 e continuou envolvido
+  em programas do movimento.
+sources:
+- source: ai-2023-04-22-gafcon-chair
+  quote: The Most Rev. Ben Kwashi, retired Archbishop of Jos (Nigeria) remains General Secretary of GAFCON
+- source: gacl-ai-2023-uxbridge
+  quote: >-
+    Archbishop Kwashi will continue to be involved in various programs of the Gafcon Movement. We appointed the
+    Very Reverend Paul Donison
 affiliations:
 - jurisdiction: gafcon
   role: other

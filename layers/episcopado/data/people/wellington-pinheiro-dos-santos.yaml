@@ -1,8 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: wellington-pinheiro-dos-santos
 name: Wellington Pinheiro dos Santos
-biography: Clérigo/ministro da Igreja Episcopal Anglicana Livre em 2007.
+biography: >-
+  Clérigo listado no clero diocesano da Diocese Anglicana do Recife (IEAB) e, em 2007, clérigo da Igreja Episcopal
+  Anglicana Livre.
 sources:
+- source: dar-clero-diocesano
+  quote: CLERO DIOCESANO
+- source: dar-clero-diocesano
+  quote: Revdo. Wellington Pinheiro dos Santos
 - source: cant-novas-igrejas-2024
   quote: >-
     Na época, a Igreja tinha como clérigos o bispo José Moreno, e os reverendos Leni Eunice Erdei Moreno, Álvaro

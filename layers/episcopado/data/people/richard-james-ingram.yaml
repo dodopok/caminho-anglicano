@@ -1,6 +1,25 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: richard-james-ingram
 name: Richard James Ingram
+biography: >-
+  Richard James Ingram foi sagrado bispo em 17 de junho de 1984, em Pittsburgh, por Charles David Luther, e novamente,
+  sub conditione, em 7 de junho de 1988, em Altoona (Pensilvânia), por Luís Fernando Castillo-Méndez, da Igreja
+  Católica Apostólica Brasileira.
+sources:
+- source: lin-tjb-ingram
+  quote: >-
+    Consecrated a bishop on 06/17/1984 at Pittsburgh, Pennsylvania by Charles David Luther, a bishop of the Western
+    Orthodox Church in America, assisted by Peter Paul Brennan, a bishop of the Ecumenical Catholic Diocese of the
+    Americas, and by Alan Maxwell Bain, a bishop of the Independent Catholic Church International.
+- source: lin-tjb-luther
+  quote: 4) 06/17/1984 Richard James Ingram
+- source: lin-tjb-ingram
+  quote: >-
+    Later consecrated a bishop, sub conditione, on 06/07/1988 at Altoona, Pennsylvania, by Luís Fernando Castillo-Méndez,
+    a bishop of the Igreja Católica Apostólica Brasileira, assisted by Melquiades Rosa Garcia, a bishop of the Igreja
+    Católica Apostólica Brasileira, by Josivaldo Pereira de Oliveira, a bishop of the Igreja Católica Apostólica
+    Brasileira, by Galvao Barros, a bishop of the Igreja Católica Apostólica Brasileira, and by Walbert Rommel Coehlo,
+    a bishop of the Igreja Católica Apostólica Brasileira
 ordinations:
 - order: episcopate
   date: '1984-06-17'
