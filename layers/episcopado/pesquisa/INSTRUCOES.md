@@ -54,6 +54,11 @@ registrados, cada citação com um código (`c1a2b3c`). Escreva um resumo NOVO p
 - Só o que está no dossiê. As linhas "citado no resumo atual" também são fatos: não perca o que elas sustentam. Fato `contested` entra só se o texto deixar claro que há versões; `probable` pode entrar
   sem destaque. Não invente datas nem cargos; prefira a forma mais precisa que aparece.
 - `citacoes`: os códigos dos trechos que sustentam cada fato citado no texto (normalmente 3 a 8).
-- Neutro, pt-BR, sem adjetivos de valor, sem "a base", "NOVO", "segundo o dossiê". Nada de vida pessoal
-  (família, profissão secular, saúde, endereço) — nem que esteja no resumo antigo.
+- Neutro, pt-BR, sem adjetivos de valor, sem "a base", "NOVO", "segundo o dossiê".
+- Vida pessoal: entram, com fonte e em tom neutro, naturalidade e nacionalidade, formação teológica e acadêmica,
+  profissão secular que faz parte da vida pública, cônjuge ou parente que também é clérigo, cofundador ou explica um
+  fato de ministério, e causa da morte ou orientação quando são fato público que marcou a história da igreja (ex.: o
+  assassinato de Robinson Cavalcanti; Gene Robinson como bispo abertamente gay). Ficam de fora: saúde, endereço,
+  filhos e parentes sem papel público, estado civil sem relevância, finanças, conflitos pessoais e disciplina de
+  quem não é bispo.
 - Se a ficha tiver só um ou dois fatos menores, mantenha um resumo curto; se não houver o que dizer, omita a ficha.

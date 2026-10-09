@@ -260,8 +260,7 @@ def _mesclar(lista, nova, chave, campos, compativel):
 arquivos = sorted({f for e in ARGS.entradas for f in (sorted(e.glob('*.json')) if e.is_dir() else [e])})
 siglas_jur = {norm(n) for j in jurisdicoes.values() for n in [j['name'], j.get('acronym'), *j['aliases']] if n}
 META = re.compile(r'(?i:\b(?:na|da|a) base\b|\bj[aá] registrad)|\bNOVO\b')
-PRIVADO = re.compile(r'\b(espos[ao]|marido|filh[oa]s? d[aeo]|(?:seus|suas|sua|seu) filh[oa]s?|casad[oa]|profiss[aã]o|trabalha como|doen[cç]a|c[aâ]ncer|'
-                     r'internad[oa]|endere[cç]o|mora em|residente)\b', re.I)
+PRIVADO = re.compile(r'\b(doen[cç]a|c[aâ]ncer|internad[oa]|tratamento|endere[cç]o|mora em|residente|sal[aá]rio|d[ií]vida)\b', re.I)
 for _arq in arquivos:
     try:
         _d = json.loads(_arq.read_text())
@@ -339,6 +338,11 @@ for arq in arquivos:
         if p.get('resumo') and rs and not x.get('biography'):
             x['biography'] = p['resumo']
             x['sources'] = rs
+        # Fatos biográficos permitidos (naturalidade, formação, cônjuge clérigo…) não têm campo próprio: as citações
+        # ficam junto às fontes do resumo, e o resumo é refeito com resumos.py.
+        rb = refs(p.get('fontes_biografia'), chaves)
+        if rb:
+            x['sources'] = mesclar_refs(x.get('sources') or [], rb)
 
     for j in d.get('jurisdicoes', []):
         nome = j.get('sigla') or j['nome']

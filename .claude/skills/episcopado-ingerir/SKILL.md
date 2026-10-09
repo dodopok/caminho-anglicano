@@ -26,9 +26,13 @@ As ferramentas ficam em `layers/episcopado/pesquisa/`:
    viraria só divergência, porque a base prevalece) e acrescente o testemunho como fonte; diga no commit.
 3. **Status:** `confirmed` = fonte primária ou ≥2 secundárias independentes; `probable` = uma secundária/terciária
    ou só testemunho; `contested` = divergência real entre fontes (o consolidador decide; ver abaixo).
-4. **Só ministério.** Ordenações, cargos, vínculos, fundações, cismas. Nunca cônjuge, filhos, profissão secular,
-   formação acadêmica, saúde, endereço residencial — nem em notas nem em trechos. Decretos disciplinares de quem
-   não é bispo (laicização de padre etc.) ficam de fora.
+4. **Ministério primeiro; vida pessoal só quando é pública e relevante.** Vida pessoal: entram, com fonte e em tom neutro, naturalidade e nacionalidade, formação teológica e acadêmica,
+   profissão secular que faz parte da vida pública, cônjuge ou parente que também é clérigo, cofundador ou explica um
+   fato de ministério, e causa da morte ou orientação quando são fato público que marcou a história da igreja (ex.: o
+   assassinato de Robinson Cavalcanti; Gene Robinson como bispo abertamente gay). Ficam de fora: saúde, endereço,
+   filhos e parentes sem papel público, estado civil sem relevância, finanças, conflitos pessoais e disciplina de
+   quem não é bispo.
+   Fatos biográficos vão em `fontes_biografia` da pessoa na leva (ver FORMATO.md) e aparecem no resumo.
 5. **Google Drive/Docs** nunca aparecem como link no site: cite pelo nome do documento (`url: null`). Documento
    pessoal ou privado não entra.
 6. **Nada de fato futuro.** Convite para ordenação ainda por acontecer não entra; anote e registre depois que o

@@ -17,7 +17,7 @@ YAML da base, casa nomes com quem já está registrado e mescla as afirmações.
   "pessoas": [
     { "nome": "nome de exibição", "nome_completo": "...|null", "nomes_alternativos": ["Dom X", "Rev. X"],
       "nascimento": "data|null", "falecimento": "data|null", "wikidata": "Q...|null",
-      "resumo": "1-3 frases neutras, só ministério", "fontes": [ { "chave": "...", "trecho": "citação LITERAL" } ] }
+      "resumo": "1-3 frases neutras", "fontes_biografia": [ { "chave": "...", "trecho": "..." } ], "fontes": [ { "chave": "...", "trecho": "citação LITERAL" } ] }
   ],
   "jurisdicoes": [
     { "sigla": "IAB", "nome": "...", "tipo": "comunhao|provincia|igreja_nacional|diocese|distrito_missionario|rede|ordem_religiosa|outro",
@@ -71,8 +71,14 @@ YAML da base, casa nomes com quem já está registrado e mescla as afirmações.
    reconhecível; senão, `duvidas`.
 7. Neutralidade em cismas e disputas.
 8. Notas e resumos são lidos no site: nada de "a base", "na base", "NOVO", "já registrado" — descreva o fato.
-9. Só fatos de ministério: ordenações, cargos, vínculos, fundações, cismas. Nada de cônjuge, filhos, profissão
-   secular, formação, saúde, endereço residencial. Decretos disciplinares de não-bispos ficam de fora.
+9. Foco em ministério: ordenações, cargos, vínculos, fundações, cismas. Vida pessoal: entram, com fonte e em tom neutro, naturalidade e nacionalidade, formação teológica e acadêmica,
+   profissão secular que faz parte da vida pública, cônjuge ou parente que também é clérigo, cofundador ou explica um
+   fato de ministério, e causa da morte ou orientação quando são fato público que marcou a história da igreja (ex.: o
+   assassinato de Robinson Cavalcanti; Gene Robinson como bispo abertamente gay). Ficam de fora: saúde, endereço,
+   filhos e parentes sem papel público, estado civil sem relevância, finanças, conflitos pessoais e disciplina de
+   quem não é bispo.
+   Esses fatos biográficos não têm campo próprio: registre-os em `pessoas[].fontes_biografia`
+   ([{ "chave", "trecho" }]); as citações vão para as fontes do resumo da ficha.
 10. Links do Google Drive/Docs nunca vão em `url`: cite pelo nome do documento (`titulo`), com `url: null`.
 11. Testemunho do mantenedor: fonte `testemunho_pessoal`, `nivel: primaria`, `url: null`, `data_publicacao` = data da
     conversa, e `trecho` com as palavras dele. Vídeos (YouTube, lives): `tipo: rede_social`, `trecho` com a fala
