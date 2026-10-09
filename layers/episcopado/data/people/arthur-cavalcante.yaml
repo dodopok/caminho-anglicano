@@ -1,6 +1,64 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: arthur-cavalcante
 name: Arthur Cavalcante
+full_name: Arthur Pereira Cavalcante
+aliases:
+- Arthur Pereira Cavalcante
+- Arthur Pereira Cavalcanti
+biography: >-
+  Arthur Cavalcante, graduado em Odontologia (1997), bacharel em Teologia pelo Seminário Anglicano de Estudos Teológicos
+  (2002) e mestre em Ciências da Religião pela Universidade Metodista de São Paulo (2010), foi ordenado diácono
+  em 3 de fevereiro de 2001, na Paróquia do Bom Samaritano, por Robinson Cavalcanti, e foi secretário executivo
+  da Diocese Anglicana do Recife em 2002–2003. Em São Paulo, é professor do Instituto Anglicano de Estudos Teológicos
+  desde 2004 e foi reitor da Paróquia da Santíssima Trindade a partir de 2005. Integra a Comissão Nacional de Liturgia
+  da IEAB desde 2006 e foi secretário-geral da IEAB de 2011 a 2018. Em 24 de novembro de 2018, celebrou o primeiro
+  casamento entre duas mulheres na Diocese Anglicana de São Paulo, após o Sínodo aprovar o matrimônio entre pessoas
+  do mesmo sexo na IEAB. Desde 2022 é deão da Catedral Anglicana de São Paulo.
+sources:
+- source: artc-anglicanosms-2017
+  quote: >-
+    O Rev. Arthur é graduado em Odontologia pela Faculdade de Odontologia de Caruaru (1997) e Bacharel em Teologia
+    no Seminário Anglicano de Estudos Teológicos - SAET (2002), com mestrado em Ciências da Religião pela Universidade
+    Metodista de São Paulo-UMESP (2010).
+- source: artc-ihu-secgeral-2011
+  quote: >-
+    graduado em Odontologia pela Faculdade de Caruaru, e em Teologia, desde 2002, pelo Seminário Anglicano de Estudos
+    Teológicos, e tem mestrado em Ciências da Religião pela Universidade Metodista de São Paulo
+- source: rcor-drv-diac-arthur-francisco
+  quote: PARÓQUIA DO BOM SAMARITANO – 03.02.2001
+- source: rcor-drv-diac-arthur-francisco
+  quote: >-
+    Como Bispo tenho a alegria e a satisfação de conferir a ordem do diaconato a Arthur Cavalcante e Francisco Sales
+- source: artc-anglicanosms-2017
+  quote: Foi Secretário Executivo da Diocese Anglicana do Recife (DAR) 2002-2003.
+- source: artc-anglicanosms-2017
+  quote: >-
+    Também é membro da Comissão Nacional de Liturgia da Igreja Episcopal Anglicana do Brasil desde 2006 e integrante
+    do GT Religiões – HIV/AIDS do Estado de São Paulo desde 2006, bem como professor do Instituto Anglicano de Estudos
+    Teológicos (IAET) desde 2004
+- source: artc-anglicanosms-2017
+  quote: Após mudar-se para São Paulo, veio a ser Reitor da Paróquia da Santíssima Trindade, desde 2005.
+- source: artc-ihu-secgeral-2011
+  quote: >-
+    O reitor da Paróquia da Santíssima Trindade de São Paulo, reverendo Arthur Cavalcante, 37 anos, foi escolhido
+    como novo secretário geral da Igreja Episcopal Anglicana do Brasil (IEAB)
+- source: costa2021
+  quote: Termino meu mandato como Secretário-Geral plenamente realizado (CONIC, 01 jun. 2018)
+  page: '403'
+- source: costa2021
+  quote: >-
+    O primeiro casamento entre duas mulheres ocorreu no dia 24 de novembro de 2018, na Diocese Anglicana de São
+    Paulo, com o reverendo Arthur Cavalcante como oficiante
+  page: '407'
+- source: artc-g1-casamento-2018
+  quote: >-
+    O pároco Arthur Cavalcante, que atua na paróquia da Santíssima Trindade, uma das 14 da diocese de São Paulo,
+    e que vai celebrar o casamento de Erika e Allana
+- source: artc-ieab-concilio-dasp-2022
+  quote: a instituição litúrgica do Deão reverendo Arthur Cavalcante
+- source: cabs-ieab-primazes-saopaulo-2026
+  quote: >-
+    A oração inicial foi presidida pelo Deão da Catedral Anglicana de São Paulo, Revmo. Arthur Cavalcante
 ordinations:
 - order: diaconate
   date: '2001-02-03'
@@ -15,6 +73,180 @@ ordinations:
     quote: >-
       Como Bispo tenho a alegria e a satisfação de conferir a ordem do diaconato a Arthur Cavalcante e Francisco
       Sales
+  - source: artc-ieabrecife-diac2001
+    quote: PARÓQUIA DO BOM SAMARITANO – 03.02.2001
+  - source: artc-ieabrecife-diac2001
+    quote: >-
+      Como Bispo tenho a alegria e a satisfação de conferir a ordem do diaconato a Arthur Cavalcante e Francisco
+      Sales
+  - source: artc-ieabrecife-diac2001
+    quote: >-
+      Na diversidade de suas vocações (um solteiro e um casado – o diaconato permanente e o presbiterado), são os
+      primeiros a serem ordenados neste ano
   notes: >-
     Sermão do bispo diocesano (Robinson Cavalcanti). Um dos dois seguia para o diaconato permanente e o outro para
-    o presbiterato (o texto não diz qual). Sobrenome completo não informado.
+    o presbiterato (o texto não diz qual). Sobrenome completo não informado. No sermão, um dos dois ordenados seguia
+    para o diaconato permanente e o outro para o presbiterado; o texto não diz qual.
+- order: presbyterate
+  date: null
+  jurisdiction: ieab
+  status: probable
+  sources:
+  - source: artc-anglicanosms-2017
+    quote: Após mudar-se para São Paulo, veio a ser Reitor da Paróquia da Santíssima Trindade, desde 2005.
+  - source: artc-umesp-diss2010
+    quote: um jovem sacerdote anglicano
+  - source: artc-g1-casamento-2018
+    quote: >-
+      O pároco Arthur Cavalcante, que atua na paróquia da Santíssima Trindade, uma das 14 da diocese de São Paulo,
+      e que vai celebrar o casamento de Erika e Allana
+  notes: >-
+    Data e ordenante não localizados. Exerceu como reitor/pároco da Paróquia da Santíssima Trindade (São Paulo)
+    desde 2005 e se descreveu em 2010 como 'jovem sacerdote anglicano'.
+affiliations:
+- jurisdiction: ieab
+  role: deacon
+  diocese: ieab-dar
+  start: '2001-02-03'
+  status: confirmed
+  sources:
+  - source: artc-ieabrecife-diac2001
+    quote: >-
+      Como Bispo tenho a alegria e a satisfação de conferir a ordem do diaconato a Arthur Cavalcante e Francisco
+      Sales
+  - source: costa2021
+    quote: Senti na pele a discriminação e a perseguição quando me assumi na Diocese do Recife
+    page: '403'
+  notes: >-
+    Em 2018 declarou ter acompanhado o debate sobre sexualidade na IEAB 'primeiramente como leigo e depois como
+    clérigo ordenado', vivido na Diocese do Recife.
+- jurisdiction: ieab
+  role: other
+  role_description: Secretário Executivo
+  diocese: ieab-dar
+  start: '2002'
+  end: '2003'
+  status: probable
+  sources:
+  - source: artc-anglicanosms-2017
+    quote: Foi Secretário Executivo da Diocese Anglicana do Recife (DAR) 2002-2003.
+- jurisdiction: ieab
+  role: other
+  role_description: professor do Instituto Anglicano de Estudos Teológicos (IAET)
+  diocese: ieab-dasp
+  start: '2004'
+  status: probable
+  sources:
+  - source: artc-anglicanosms-2017
+    quote: >-
+      Também é membro da Comissão Nacional de Liturgia da Igreja Episcopal Anglicana do Brasil desde 2006 e integrante
+      do GT Religiões – HIV/AIDS do Estado de São Paulo desde 2006, bem como professor do Instituto Anglicano de
+      Estudos Teológicos (IAET) desde 2004
+- jurisdiction: ieab
+  role: other
+  role_description: reitor
+  diocese: ieab-dasp
+  start: '2005'
+  end: '2022'
+  status: confirmed
+  sources:
+  - source: artc-anglicanosms-2017
+    quote: Após mudar-se para São Paulo, veio a ser Reitor da Paróquia da Santíssima Trindade, desde 2005.
+  - source: artc-ihu-secgeral-2011
+    quote: >-
+      O reitor da Paróquia da Santíssima Trindade de São Paulo, reverendo Arthur Cavalcante, 37 anos, foi escolhido
+      como novo secretário geral da Igreja Episcopal Anglicana do Brasil (IEAB)
+  - source: artc-umesp-diss2010
+    quote: Aos paroquianos e paroquianas, que compreenderam e souberam dividir o seu pároco
+  - source: artc-g1-casamento-2018
+    quote: >-
+      O pároco Arthur Cavalcante, que atua na paróquia da Santíssima Trindade, uma das 14 da diocese de São Paulo,
+      e que vai celebrar o casamento de Erika e Allana
+  - source: artc-ieab-credo-aids-2019
+    quote: >-
+      Autores: Reverendo Arthur Cavalcante da Paróquia Anglicana da Santíssima Trindade na Cidade de São Paulo-Brasil
+  notes: >-
+    Local: Paróquia da Santíssima Trindade. Reitor desde 2005 (perfil divulgado pela IEAB em 2017); a paróquia foi
+    elevada a catedral diocesana em 2022 e ele passou a deão da Catedral Anglicana da Santíssima Trindade. Mudou-se
+    para São Paulo após o período como Secretário Executivo da Diocese do Recife, permanecendo na IEAB.
+- jurisdiction: ieab
+  role: other
+  role_description: membro da Comissão Nacional de Liturgia
+  start: '2006'
+  status: probable
+  sources:
+  - source: artc-anglicanosms-2017
+    quote: >-
+      Também é membro da Comissão Nacional de Liturgia da Igreja Episcopal Anglicana do Brasil desde 2006 e integrante
+      do GT Religiões – HIV/AIDS do Estado de São Paulo desde 2006, bem como professor do Instituto Anglicano de
+      Estudos Teológicos (IAET) desde 2004
+- jurisdiction: ieab
+  role: other
+  role_description: Secretário-Geral
+  start: 2011-01
+  end: '2018'
+  end_reason: term_end
+  status: confirmed
+  sources:
+  - source: artc-ihu-secgeral-2011
+    quote: >-
+      O reitor da Paróquia da Santíssima Trindade de São Paulo, reverendo Arthur Cavalcante, 37 anos, foi escolhido
+      como novo secretário geral da Igreja Episcopal Anglicana do Brasil (IEAB)
+  - source: costa2021
+    quote: >-
+      Outras importantes decisões deste Sínodo foram a recondução do reverendo Arthur Cavalcante, para a Secretaria-Geral
+    page: '114'
+  - source: costa2021
+    quote: Termino meu mandato como Secretário-Geral plenamente realizado (CONIC, 01 jun. 2018)
+    page: '403'
+  - source: artc-dab-2018
+    quote: >-
+      ao Reverendo Arthur Cavalcante que serviu como Secretário Geral. E dá as boas vindas e oferece suas orações
+      para o novo Primaz, Bispo Naudal Gomes e a nova Secretária Geral, Revda. Magda Guedes
+  notes: >-
+    Anunciado em 7/01/2011 pelo Primaz Maurício Andrade, em substituição a Francisco de Assis (eleito bispo coadjutor
+    da Diocese Sul Ocidental); reconduzido no 32º Sínodo Geral (Rio de Janeiro, 14-17/11/2013); sucedido em 2018
+    por Magda Guedes.
+- jurisdiction: ieab
+  role: other
+  role_description: deão
+  diocese: ieab-dasp
+  start: '2022'
+  status: confirmed
+  sources:
+  - source: artc-ieab-concilio-dasp-2022
+    quote: a instituição litúrgica do Deão reverendo Arthur Cavalcante
+  - source: artc-ieab-trinity-2025
+    quote: dialogou com o deão Revdo. Arthur Cavalcante e lideranças locais
+  - source: cabs-ieab-primazes-saopaulo-2026
+    quote: >-
+      A oração inicial foi presidida pelo Deão da Catedral Anglicana de São Paulo, Revmo. Arthur Cavalcante
+  notes: >-
+    Local: Catedral Anglicana da Santíssima Trindade. O 56º Concílio da DASP (28/05/2022) aprovou a escolha da nova
+    catedral diocesana, com solenidade de elevação e instituição litúrgica do deão marcadas para 17 de julho de
+    2022; ainda deão em ago/2026.
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: rta-ier-clero-2002
+    quote: Arthur Pereira Cavalcanti (01/06)
+  notes: Consta no diretório do clero capturado em 14/01/2002; sem paróquia no texto.
+events:
+- type: other
+  date: '2018-11-24'
+  description: >-
+    Arthur Cavalcante celebrou o casamento do primeiro casal de mulheres na Diocese Anglicana de São Paulo, após
+    o Sínodo de 2018 aprovar o matrimônio entre pessoas do mesmo sexo na IEAB.
+  status: confirmed
+  sources:
+  - source: costa2021
+    quote: >-
+      O primeiro casamento entre duas mulheres ocorreu no dia 24 de novembro de 2018, na Diocese Anglicana de São
+      Paulo, com o reverendo Arthur Cavalcante como oficiante
+    page: '407'
+  - source: artc-g1-casamento-2018
+    quote: >-
+      O pároco Arthur Cavalcante, que atua na paróquia da Santíssima Trindade, uma das 14 da diocese de São Paulo,
+      e que vai celebrar o casamento de Erika e Allana

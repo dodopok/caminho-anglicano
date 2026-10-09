@@ -1,23 +1,81 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: elcemir-durans-mendonca
 name: Elcemir Durans Mendonça
+full_name: Elcemir Durans Mendonça
 aliases:
 - Bispo + Elcemir Durans
+- Dom Elcemir Durans
+- Elcemir Durans
+birth:
+  date: '1989'
+  sources:
+  - source: meel-elcemir-blog-2013
+    quote: >-
+      Recebeu a ordem sacra do Episcopado aos dez dias do mês de novembro de dois mil e doze por Bispos da linhagem
+      episcopal do Arcebispo John Moore aqui no Brasil.
+  - source: lac-cnbp-sucessao
+    quote: >-
+      Linha de Sucessão legitima devidamente apurada pelo Bispo; Teólogo e Historiador Dom + Elcemir Durans Mendonça
 biography: >-
-  Sagrando no convite de 10/11/2012 ('Bispo + Elcemir Durans'). A página de sucessão apostólica do CNBP (sem data)
-  o descreve como 'Bispo; Teólogo e Historiador' e atribui a ele a apuração da linha de sucessão ali publicada.
+  Elcemir Durans Mendonça nasceu em 1989 em Penalva (MA), é graduado em Teologia, licenciado em História e professor
+  de ensino fundamental. Foi sagrado bispo em 10 de novembro de 2012, em Belford Roxo (RJ), por Elias Batista Nogueira,
+  em sagração feita pela Ordem Anglicana Filhos da Promessa, com Josué Sousa Torres e José Demontier como
+  co-sagrantes.
+  É presidente da Igreja Última Aliança, ministério que fundou com a esposa, Vânia Durans. A página de sucessão
+  apostólica do Conselho Nacional de Bispos Protestantes do Brasil o descreve como bispo, teólogo e historiador
+  e lhe atribui a apuração da linha de sucessão ali publicada.
 sources:
+- source: meel-elcemir-blog-home
+  quote: Elcemir Durans Mendonça é brasileiro, nasceu em 1989 na cidade de Penalva, Maranhão
+- source: meel-elcemir-blog-2013
+  quote: >-
+    Além de sua vocação ministerial, é professor de ensino fundamental. Elcemir Durans é graduado em Teologia pela
+    FATEH e Licenciado em Historia pela FAFIB.
+- source: meel-elcemir-blog-2013
+  quote: >-
+    Possui pós-graduação com Especialização em Historia, Cultura Afro-brasileira e Povos Indígenas pela FATEH
+- source: lac-cnbp-convite2012
+  quote: >-
+    SAGRANTE: Monsenhor ++Elias Batista Nogueira (IEFP) CO-SAGRANTES: Monsenhor ++Josué Souza Torres (IEEP) Monsenhor
+    +Cláudio Lucena (Igreja Metodista) No dia 10 de Novembro do ano da graça de Nosso Senhor Jesus Cristo de 2012
+    às 18:30 horas na Igreja Pentecostal Caminho da Fé, sito à Rua Botânica, nº 70 – Jardim Boa Esperança – Belford
+    Roxo – Rio de Janeiro – Brasil.
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Sagração Episcopal dos seguintes postulantes: Eliane Helena da Silva Nogueira, Reinaldo da Silva Tavares, José
+    Aparecido Marques, José Kennedy de Freitas e Elcemir Durans Mendonça, a realizar-se no dia 10 de Novembro de
+    2012 na Igreja Pentecostal Caminho da Fé, sito à Rua Botânica, nº 70 – Jardim Boa Esperança – 145 NOVAS IGREJAS
+    ANGLICANAS E EPISCOPAIS NO BRASIL Belford Roxo – Rio de Janeiro - Brasil, tendo Como Sagrante Principal Sua
+    Exª Mons. Elias Batista Nogueira e como co-sagrantes: Sua Exª Bispo Josué Souza Torres e Sua Exª Bispo José
+    Demontier
+- source: cant-novas-igrejas-2024
+  quote: >-
+    Sob a Presidência de seu Venerável Irmão Elias Batista Nogueira se aprovou fazer pela OAFIP a Sagração Episcopal
+    dos seguintes postulantes: Eliane Helena da Silva Nogueira, Reinaldo da Silva Tavares, José Aparecido Marques,
+    José Kennedy de Freitas e Elcemir Durans Mendonça, a realizar-se no dia 10 de Novembro de 2012 na Igreja Pentecostal
+    Caminho da Fé
+  page: '145'
+- source: meel-elcemir-blog-2013
+  quote: >-
+    Recebeu a ordem sacra do Episcopado aos dez dias do mês de novembro de dois mil e doze por Bispos da linhagem
+    episcopal do Arcebispo John Moore aqui no Brasil.
+- source: meel-elcemir-blog-home
+  quote: >-
+    É Orador Sacro, Erudito Autor, Historiador e Educador. Presidente da Igreja Última Aliança; Membro da RMC e
+    do CIMEB.
+- source: meel-elcemir-blog-2013
+  quote: São pastores fundadores do Ministério Última Aliança, apaixonados pelo Reino de Deus.
+- source: meel-elcemir-blog-2013
+  quote: Casado com a Missionária Vânia Durans, que também é coadjutora do Ministério Última Aliança.
 - source: lac-cnbp-sucessao
   quote: >-
-    Nota: Linha de Sucessão legitima devidamente apurada pelo Bispo; Teólogo e Historiador Dom + Elcemir Durans
-    Mendonça
-- source: lac-cnbp-convite2012
-  quote: Episcopisa + Eliane Helena Bispo + Reinaldo Tavares Bispo + José Marques Bispo + Elcemir Durans
+    Linha de Sucessão legitima devidamente apurada pelo Bispo; Teólogo e Historiador Dom + Elcemir Durans Mendonça
 ordinations:
 - order: episcopate
   date: '2012-11-10'
   place: Igreja Pentecostal Caminho da Fé, Rua Botânica 70, Jardim Boa Esperança, Belford Roxo (RJ)
   jurisdiction: oafip
+  office: diocesan
   principal_consecrator: elias-batista-nogueira
   co_consecrators:
   - jose-demontier
@@ -52,6 +110,16 @@ ordinations:
       tendo Como Sagrante Principal Sua Exª Mons. Elias Batista Nogueira e como co-sagrantes: Sua Exª Bispo Josué
       Souza Torres e Sua Exª Bispo José Demontier
     page: '146'
+  - source: meel-elcemir-blog-2026
+    quote: >-
+      Em 10 de Novembro de 2012, na sede da Igreja Pentecostal Caminho da Fé, em Belford Roxo-RJ, o Bispo Elias
+      Batista Nogueira, juntamente com os bispos Josué Souza Torres e José Demontier dos Santos, sagraram Elcemir
+      Durans Mendonça como o primeiro bispo da Diocese de Penalva, da Igreja Anglicana no Maranhão.
+  - source: meel-elcemir-blog-2013
+    quote: >-
+      Obs.: A cerimônia de sagração foi realizada no Rito Anglicano, tendo como Sagrador: Elias Batista Nogueira
+      (Bispo Primaz da Igreja Episcopal Filhos da Promessa) e Co-Sagrador: Josué Souza Torres (Bispo Primaz da Igreja
+      Episcopal do Evangelho Pleno).
   notes: >-
     Fonte é o convite (imagem publicada em 09/10/2012 no blog do CNBP) para a solenidade de sagração episcopal de
     10/11/2012 às 18h30, ou seja, anúncio do ato e não relato da cerimônia. O convite nomeia como co-sagrantes Josué
@@ -61,4 +129,21 @@ ordinations:
     entre os cinco postulantes, não consta do convite. Costa (2024) transcreve a convocação da Província Brasileira
     de Confissão Anglicana (10/11/2012); é a previsão do ato, não um relato da cerimônia. O documento citado (Província
     Brasileira de Confissão Anglicana, 10/11/2012) é a aprovação da sagração 'a realizar-se' nessa data; o livro
-    não confirma explicitamente a realização.
+    não confirma explicitamente a realização. Relato do próprio sagrado, posterior à cerimônia, em dois textos do
+    seu blog: o de 2013 nomeia só Josué Souza Torres como co-sagrador; o de 2026 nomeia Josué Souza Torres e José
+    Demontier dos Santos e acrescenta o local (igreja em Belford Roxo) e o título de primeiro bispo da Diocese de
+    Penalva. O convite publicado em 09/10/2012 no blog do CNBP trazia Cláudio Lucena (Igreja Metodista) como co-sagrante
+    em lugar de José Demontier.
+affiliations:
+- jurisdiction: igreja-ultima-alianca
+  role: founder
+  status: probable
+  sources:
+  - source: meel-elcemir-blog-home
+    quote: Presidente da Igreja Última Aliança; Membro da RMC e do CIMEB.
+  - source: meel-elcemir-blog-2013
+    quote: São pastores fundadores do Ministério Última Aliança, apaixonados pelo Reino de Deus.
+  - source: meel-ig-ultima-bispo
+    quote: O nosso Bispo nos trouxe uma ministração poderosa sobre a certeza inabalável do amor de Pai.
+  notes: >-
+    Com sua esposa, Vânia (Rubervania) Durans, é fundador do Ministério Última Aliança, de que é presidente.

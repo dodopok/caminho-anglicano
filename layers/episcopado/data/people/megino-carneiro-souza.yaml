@@ -1,16 +1,81 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: megino-carneiro-souza
 name: Megino Carneiro Souza
+full_name: Megino Carneiro Souza
+aliases:
+- Bispo Megino
+- Bispo Megino Carneiro
+- Dom Megino
+- Rvdo. Megino Carneiro Souza
 biography: >-
-  Bispo da Igreja Anglicana Bom Pastor, com quem o reverendo José Carlos Berti Júnior buscou criar vínculo episcopal
-  em 2024.
+  Presbítero reconhecido em 30 de setembro de 2018 pela Iglesia Antigua – Diversidad Cristiana, que lhe concedeu
+  licença ministerial provisória no Brasil e, em outubro de 2018, criou a Missão “El Buen Pastor”, no Rio de Janeiro,
+  a seu cargo. É bispo da Igreja Anglicana Bom Pastor e da Diocese Anglicana de Nossa Senhora das Graças e São Jorge,
+  e ordenou um presbítero, Gabriel Maria. Em 2024, o reverendo José Carlos Berti Júnior buscou criar vínculo com
+  ele.
 sources:
+- source: meel-iadc-res-2018-20
+  quote: >-
+    habiendo recibido la solicitud de incardinación del Rvdo. Megino Carneiro Souza y la recomendación favorable
+    del Pbro. Gabriel Blanco, Decano de la Cámara del Clero, resuelvo: 1. Reconocer la Ordenación del Rvdo. Megino
+    Carneiro Souza incorporándolo al cuerpo presbiteral de la IADC.
+- source: meel-iadc-res-2018-20
+  quote: >-
+    3. Otorgar la licencia ministerial de forma provisoria hasta el 30 de noviembre del año 2019, autorizando la
+    práctica ministerial a partir del día de la fecha en nombre de la IADC en la República de Brasil.
+- source: meel-iadc-res-2018-25
+  quote: >-
+    1. Créanse una Misión de la Iglesia Antigua – Diversidad Cristiana denominada “El Buen Pastor” en Río de Janeiro
+    (Brasil) a cargo del Rvdo. Megino Carneiro Souza. 2. La Misión de la IADC dependerá de la Iglesia de Uruguay
+    hasta que alcancen su autonomía.
+- source: meel-fb-megino
+  quote: Diocese Anglo-católica bom pastor
+- source: meel-yt-megino
+  quote: Diocese Anglo-católica bom pastor, em São  Pedro da Aldeia Rj
+- source: meel-ig-megino-bio
+  quote: ⛪️ Diocese Anglicana  de Nossa Senhora das Graças e são Jorge
+- source: meel-ig-gabriel-pronunciamento
+  quote: Não venho falar apenas de um Bispo que um dia me ordenou Padre.
 - source: cant-novas-igrejas-2024
   quote: >-
     no ano de 2024, o reverendo Berti buscou criar este vínculo com o bispo Megino Carneiro Souza (Igreja Anglicana
     Bom Pastor)
   page: '163'
 affiliations:
+- jurisdiction: iadc
+  role: priest
+  start: '2018-09-30'
+  status: confirmed
+  sources:
+  - source: meel-iadc-res-2018-20
+    quote: >-
+      habiendo recibido la solicitud de incardinación del Rvdo. Megino Carneiro Souza y la recomendación favorable
+      del Pbro. Gabriel Blanco, Decano de la Cámara del Clero, resuelvo: 1. Reconocer la Ordenación del Rvdo. Megino
+      Carneiro Souza incorporándolo al cuerpo presbiteral de la IADC.
+  - source: meel-iadc-res-2018-20
+    quote: >-
+      3. Otorgar la licencia ministerial de forma provisoria hasta el 30 de noviembre del año 2019, autorizando
+      la práctica ministerial a partir del día de la fecha en nombre de la IADC en la República de Brasil.
+  notes: >-
+    Resolução 2018/20 do bispo Julio Vallarino (Montevidéu, 30/09/2018): reconhece a ordenação de Megino Carneiro
+    Souza (sem dizer quando nem por quem foi ordenado), incorpora-o ao presbitério da Iglesia Antigua - Diversidade
+    Cristiana (IADC) e lhe concede residência eclesiástica e licença ministerial provisórias até 30/11/2019 para
+    atuar no Brasil em nome da IADC. A ordem é reconhecida, e não conferida, pela IADC.
+- jurisdiction: iadc
+  role: other
+  role_description: missionario
+  start: 2018-10
+  status: confirmed
+  sources:
+  - source: meel-iadc-res-2018-25
+    quote: >-
+      1. Créanse una Misión de la Iglesia Antigua – Diversidad Cristiana denominada “El Buen Pastor” en Río de Janeiro
+      (Brasil) a cargo del Rvdo. Megino Carneiro Souza. 2. La Misión de la IADC dependerá de la Iglesia de Uruguay
+      hasta que alcancen su autonomía.
+  notes: >-
+    Responsável pela Missão "El Buen Pastor" (Rio de Janeiro), criada pela IADC pela Resolução 2018/25; a missão
+    dependeria da igreja do Uruguai até alcançar autonomia. O texto da resolução traz a data de 30 de outubro de
+    2018, embora o blog a tenha publicado em 02/10/2018.
 - jurisdiction: iabp
   role: bishop
   status: probable
@@ -20,6 +85,26 @@ affiliations:
       no ano de 2024, o reverendo Berti buscou criar este vínculo com o bispo Megino Carneiro Souza (Igreja Anglicana
       Bom Pastor)
     page: '163'
+- jurisdiction: iabp
+  role: bishop
+  diocese: diocese-anglicana-de-nossa-senhora-das-gracas-e-sao-jorge
+  status: confirmed
+  sources:
+  - source: meel-fb-megino
+    quote: Diocese Anglo-católica bom pastor
+  - source: meel-yt-megino
+    quote: Diocese Anglo-católica bom pastor, em São  Pedro da Aldeia Rj
+  - source: meel-ig-megino-bio
+    quote: ⛪️ Diocese Anglicana  de Nossa Senhora das Graças e são Jorge
+  - source: meel-ig-gabriel-pronunciamento
+    quote: Não venho falar apenas de um Bispo que um dia me ordenou Padre.
+  - source: meel-ig-megino-lar
+    quote: presidida pelo Padre Gabriel Maria e pelo Bispo Megino.
+  notes: >-
+    Nas redes do bispo, a diocese aparece como "Diocese Anglo-católica bom pastor" (Facebook, YouTube), "Diocese
+    Anglicana Bom pastor" (Instagram, capturas anteriores) e, na postagem de 01/09/2026, como "Diocese Anglicana
+    de Nossa Senhora das Graças e São Jorge"; sede em São Pedro da Aldeia (RJ), Tv. 13 de Maio, 205, Vinhateiro.
+    Não foi achado documento que date sua sagração nem diga quem o sagrou.
 events:
 - type: other
   date: '2024'
