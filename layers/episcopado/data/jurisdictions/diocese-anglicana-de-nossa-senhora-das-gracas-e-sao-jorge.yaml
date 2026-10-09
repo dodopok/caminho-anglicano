@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-anglicana-de-nossa-senhora-das-gracas-e-sao-jorge
+name: Diocese Anglicana de Nossa Senhora das Graças e São Jorge
+type: diocese
+relations:
+- type: part_of
+  target: iabp
+  status: confirmed
+  sources:
+  - source: meel-fb-megino
+    quote: Diocese Anglo-católica bom pastor
+  - source: meel-yt-megino
+    quote: Diocese Anglo-católica bom pastor, em São  Pedro da Aldeia Rj
+  - source: meel-ig-megino-bio
+    quote: ⛪️ Diocese Anglicana  de Nossa Senhora das Graças e são Jorge
+  - source: meel-ig-gabriel-pronunciamento
+    quote: Não venho falar apenas de um Bispo que um dia me ordenou Padre.
+  - source: meel-ig-megino-lar
+    quote: presidida pelo Padre Gabriel Maria e pelo Bispo Megino.
