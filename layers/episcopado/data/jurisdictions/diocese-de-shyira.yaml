@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-shyira
+name: Diocese de Shyira
+type: diocese
+relations:
+- type: part_of
+  target: pear
+  status: confirmed
+  sources:
+  - source: gacl-newtimes-2010-shyira
+    quote: >-
+      MUSANZE - The Anglican Church of Rwanda, Sunday, enthroned Dr Laurent Mbanda as the new Bishop of Shyira Diocese,
+      replacing the retiring Bishop John Rucyahana, who has been at the helm of the Diocese since 1997. Monday,
+      November 15, 2010
+  - source: gacl-wp-mbanda
+    quote: He was the bishop of the Diocese of Shyira when he was elected the fourth archbishop and primate

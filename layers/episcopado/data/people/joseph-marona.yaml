@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: joseph-marona
+name: Joseph Marona
+ordinations:
+- order: episcopate
+  date: '1984-04-22'
+  jurisdiction: ecs
+  office: diocesan
+  principal_consecrator: elinana-j-ngalamu
+  status: probable
+  sources:
+  - source: gacl-wp-marona
+    quote: >-
+      Marona was consecrated the first bishop of the newly created Episcopal Diocese of Maridi on April 22, 1984.
+  - source: gacl-wp-marona
+    quote: '| consecration     = April 22, 1984
+
+      | consecrated_by   = Elinana J. Ngalamu'
+  notes: >-
+    Sagrante (Elinana J. Ngalamu, arcebispo do Sudão) só pela infobox da Wikipédia. Marona foi o terceiro arcebispo
+    do Sudão (eleito em 2000) e morreu em 18/09/2009.

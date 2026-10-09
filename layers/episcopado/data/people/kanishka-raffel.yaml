@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: kanishka-raffel
+name: Kanishka Raffel
+aliases:
+- Kiniska Raffel
+- The Most Revd Kanishka Raffel
+birth:
+  date: '1964-11-06'
+  sources:
+  - source: gacl-wp-raffel
+    quote: '| birth_date       = {{birth date and age|1964|11|6|df=y}}'
+biography: Arcebispo de Sydney desde 2021; conselheiro do Global Anglican Council.
+sources:
+- source: gace-gac-page
+  quote: He was consecrated as the thirteenth Archbishop of Sydney in May 2021.
+ordinations:
+- order: diaconate
+  date: '1996'
+  place: Sydney
+  jurisdiction: diocese-of-sydney
+  ordained_by: harry-goodhew
+  status: probable
+  sources:
+  - source: gace-gac-page
+    quote: He was ordained deacon in 1996 in Sydney and priest in 1996 in Canberra-Goulburn
+  - source: gacl-wp-raffel
+    quote: 1996 (as deacon)<br>by [[Harry Goodhew]]
+  notes: Ordenante só pela Wikipédia.
+- order: presbyterate
+  date: '1996'
+  place: Diocese de Canberra-Goulburn
+  jurisdiction: null
+  ordained_by: george-browning
+  status: probable
+  sources:
+  - source: gace-gac-page
+    quote: He was ordained deacon in 1996 in Sydney and priest in 1996 in Canberra-Goulburn
+  - source: gacl-wp-raffel
+    quote: 1996 (as priest)<ref name="ACR 2021" /> <br>by [[George Browning (bishop)|George Browning]]
+  notes: Ordenante só pela Wikipédia. Igreja Anglicana da Austrália.
+- order: episcopate
+  date: '2021-05-28'
+  place: St Andrew’s Cathedral, Sydney (Austrália)
+  jurisdiction: diocese-of-sydney
+  office: diocesan
+  principal_consecrator: geoffrey-smith
+  status: probable
+  sources:
+  - source: gacl-wp-raffel
+    quote: >-
+      On 28 May 2021, Raffel was consecrated a bishop by [[Geoffrey Smith (bishop)|Geoffrey Smith]], and installed
+      as archbishop in Sydney's St Andrew's Cathedral.
+  - source: gace-gac-page
+    quote: He was consecrated as the thirteenth Archbishop of Sydney in May 2021.
+  notes: >-
+    Sagrado e instalado arcebispo de Sydney no mesmo dia; sagrante principal Geoffrey Smith (arcebispo de Adelaide
+    e primaz da Austrália) só pela Wikipédia.
+affiliations:
+- jurisdiction: diocese-of-sydney
+  role: archbishop
+  start: 2021-05
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: He was consecrated as the thirteenth Archbishop of Sydney in May 2021.
+- jurisdiction: gafcon
+  role: other
+  role_description: covice-presidente do Conselho dos Primazes
+  start: 2023-04
+  status: probable
+  sources:
+  - source: ai-2023-04-22-gafcon-chair
+    quote: >-
+      and a co-vice chair, the Most Rev. Kiniska Raffel, Archbishop of Sydney. ... Hands were laid upon Archbishops
+      Uchoa and Raffel in prayer for their new ministries by the other primates.
+  notes: >-
+    Desde 2026 aparece como conselheiro ('Advisors') do Global Anglican Council; fim da covice-presidência não informado.
+- jurisdiction: gac
+  role: other
+  role_description: conselheiro do Global Anglican Council
+  start: 2026-03
+  status: confirmed
+  sources:
+  - source: gacm-tlc-2026-03-27-who-leads
+    quote: >-
+      Its regional advisers all lead “extra-provincial or missionary districts connected to the GAFCON movement.”
+      They are Archbishop Kanishka Raffel of Sydney (a diocesan bishop in the Anglican Church of Australia), and
+      Bishops Andy Lines of the Anglican Network in Europe, Jay Behan of the Church of Confessing Anglicans in Aotearoa
+      New Zealand, Glenn Davies of the Diocese of the Southern Cross (which serves parishes that have broken away
+      from the Anglican Church of Australia), and Yassir Eric of EKKIOS, a missionary movement forming congregations
+      in predominantly Muslim regions.
+  - source: gacm-gafcon-2026-09-16-sydney
+    quote: as he serves as a member of the Global Anglican Council
+  - source: gace-gac-page
+    quote: Advisors ... The Most Revd Kanishka Raffel Archbishop of the Diocese of Sydney

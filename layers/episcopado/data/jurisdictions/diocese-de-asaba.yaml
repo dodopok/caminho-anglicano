@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-asaba
+name: Diocese de Asaba
+type: diocese
+relations:
+- type: part_of
+  target: church-of-nigeria
+  status: confirmed
+  sources:
+  - source: gacl-con-okoh
+    quote: >-
+      He was consecrated as the second bishop of the Diocese of Asaba in May 2001. He was elected the Archbishop
+      of the Ecclesiastical Province of Bendel on 22 July 2005

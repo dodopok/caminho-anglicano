@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-of-sydney
+acronym: Diocese of Sydney
+name: Diocese Anglicana de Sydney (Anglican Diocese of Sydney)
+type: diocese
+tradition: anglican
+country: AU
+description: Diocese da Igreja Anglicana da Austrália ligada ao GAFCON desde 2008.
+sources:
+- source: gacm-gafcon-2026-09-16-sydney
+  quote: flowing from its longstanding partnership with Gafcon since the lead-up to Jerusalem 2008
+relations:
+- type: in_communion_with
+  target: gac
+  date: 2026-09
+  led_by:
+  - kanishka-raffel
+  status: confirmed
+  sources:
+  - source: gacm-gafcon-2026-09-16-sydney
+    quote: >-
+      Praise God that this week the Synod of the Diocese of Sydney, Australia passed a motion formally welcoming
+      the Abuja Affirmation and giving thanks for the reordering of the Anglican Communion as the Global Anglican
+      Communion.
+  - source: gacm-gafcon-2026-09-16-sydney
+    quote: >-
+      We rejoice in the Synod’s recognition of Sydney’s “joyful partnership with the Global Anglican Communion”
+  - source: gacm-ai-2026-03-08-sydney
+    quote: >-
+      I have been enormously encouraged by the breadth and vitality of global Anglicanism displayed at the ‘G26’
+      meeting in Abuja Nigeria and I wholeheartedly welcome the shared commitment of majority-world Anglican provinces
+      to accept the stewardship of the Anglican Communion.
+  notes: >-
+    Moção do Sínodo diocesano de Sydney (set/2026) acolhendo formalmente a Afirmação de Abuja e reconhecendo a "parceria"
+    com a Global Anglican Communion; a diocese continua na Igreja Anglicana da Austrália. Seu arcebispo, Kanishka
+    Raffel, é conselheiro do Global Anglican Council.
+- type: member_of
+  target: gafcon
+  date: '2008'
+  status: probable
+  sources:
+  - source: gacm-gafcon-2026-09-16-sydney
+    quote: flowing from its longstanding partnership with Gafcon since the lead-up to Jerusalem 2008
+  notes: Parceria com o GAFCON desde a preparação de Jerusalém 2008.

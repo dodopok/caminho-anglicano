@@ -66,3 +66,83 @@ relations:
     quote: >-
       sendo oficialmente fundada a nova denominação alinhada com as demais Províncias que fazem parte da GAFCON
     page: '128'
+- type: member_of
+  target: gac
+  date: '2026-03-05'
+  led_by:
+  - julian-dobbs
+  - stephen-dwain-wood
+  status: confirmed
+  sources:
+  - source: gace-ai-dobbs-abuja
+    quote: >-
+      It has been a distinct privilege to join more than 50 bishops and clergy from North America, alongside leaders
+      from all twenty-seven Anglican provinces, for GAFCON 26
+  - source: gace-ai-dobbs-abuja
+    quote: >-
+      We celebrate the election of Archbishop Laurent Mbanda as Chair, Archbishop Miguel Uchôa as Deputy Chair,
+      and our own Bishop Paul Donison as General Secretary of this newly constituted Council.
+  - source: gace-ai-council-list
+    quote: The Rt. Rev. Julian Dobbs, Acting Archbishop of the ACNA
+  - source: gace-gac-page
+    quote: Acting Archbishop of the Anglican Church in North America
+  - source: gacm-tlc-2026-03-27-who-leads
+    quote: >-
+      The council’s primates are Archbishops Laurent Mbanda of Rwanda (Chair), Miguel Uchoa of the Anglican Church
+      of Brazil (Vice Chair), Henry Ndukuba of Nigeria, Stephen Kaziimba of Uganda, Enrique Lago of Chile, Presiding
+      Bishop Siegfried Ngubane of the Reformed Evangelical Anglican Church of South Africa, and Bishop Julian Dobbs,
+      acting primate of the Anglican Church in North America.
+  - source: gacm-tlc-2025-10-27-inside
+    quote: >-
+      In addition to Donison, Mbanda, Jensen, and Akinola, the meeting included three other members of the GAFCON
+      Primates’ Council: Archbishop Henry Ndukuba of Nigeria and the leaders of two churches largely formed and
+      authenticated by GAFCON: Archbishop Miguel Ochoa Cavalcanti of the Anglican Church of Brazil, and Archbishop
+      Steve Wood of the ACNA.
+  - source: gacm-tlc-2025-10-27-inside
+    quote: >-
+      Only the primates of Rwanda , Nigeria , and the ACNA , all of whom helped to draft it, have made statements.
+  - source: gacm-ai-2025-10-17-acna-wood
+    quote: >-
+      my brother GAFCON Primates and I, gathered as the GAFCON Primates’ Council, released a declaration that will,
+      I believe, mark a decisive moment in the life of the Anglican family.
+  - source: gacm-ai-2026-09-28-acna-cob
+    quote: >-
+      Speaking as General Secretary of the Global Anglican Communion (GAC), Bishop Donison briefed the College on
+      current relationships and partnerships around the world, including matters involving the GAC and the Global
+      South Fellowship of Anglicans (GSFA).
+  notes: >-
+    A ACNA tem assento no Global Anglican Council por meio de seu arcebispo interino, Julian Dobbs (substituindo
+    o arcebispo Steve Wood, suspenso). Província cujo primaz integra o Global Anglican Council eleito em Abuja (G26,
+    3–6/03/2026), o que exige "desengajamento por princípio" dos Instrumentos da Comunhão de Cantuária. A ACNA é
+    representada pelo primaz interino Julian Dobbs. O primaz participou da consulta de Sydney que redigiu a declaração
+    "The Future Has Arrived" (16/10/2025), aprovada pelo Conselho de Primazes do GAFCON.
+  discrepancies:
+  - field: date
+    value: '2025-10-16'
+    sources:
+    - source: gace-gac-page
+      quote: Acting Archbishop of the Anglican Church in North America
+    - source: gacm-tlc-2026-03-27-who-leads
+      quote: >-
+        The council’s primates are Archbishops Laurent Mbanda of Rwanda (Chair), Miguel Uchoa of the Anglican Church
+        of Brazil (Vice Chair), Henry Ndukuba of Nigeria, Stephen Kaziimba of Uganda, Enrique Lago of Chile, Presiding
+        Bishop Siegfried Ngubane of the Reformed Evangelical Anglican Church of South Africa, and Bishop Julian
+        Dobbs, acting primate of the Anglican Church in North America.
+    - source: gacm-tlc-2025-10-27-inside
+      quote: >-
+        In addition to Donison, Mbanda, Jensen, and Akinola, the meeting included three other members of the GAFCON
+        Primates’ Council: Archbishop Henry Ndukuba of Nigeria and the leaders of two churches largely formed and
+        authenticated by GAFCON: Archbishop Miguel Ochoa Cavalcanti of the Anglican Church of Brazil, and Archbishop
+        Steve Wood of the ACNA.
+    - source: gacm-tlc-2025-10-27-inside
+      quote: >-
+        Only the primates of Rwanda , Nigeria , and the ACNA , all of whom helped to draft it, have made statements.
+    - source: gacm-ai-2025-10-17-acna-wood
+      quote: >-
+        my brother GAFCON Primates and I, gathered as the GAFCON Primates’ Council, released a declaration that
+        will, I believe, mark a decisive moment in the life of the Anglican family.
+    - source: gacm-ai-2026-09-28-acna-cob
+      quote: >-
+        Speaking as General Secretary of the Global Anglican Communion (GAC), Bishop Donison briefed the College
+        on current relationships and partnerships around the world, including matters involving the GAC and the
+        Global South Fellowship of Anglicans (GSFA).

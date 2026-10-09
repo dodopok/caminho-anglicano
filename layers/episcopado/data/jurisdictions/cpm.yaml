@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: cpm
+acronym: CPM
+name: Igreja da Província de Mianmar (Church of the Province of Myanmar)
+type: province
+tradition: anglican
+country: MM
+description: Província da Comunhão Anglicana.
+sources:
+- source: gacm-tlc-2025-10-17-analysis
+  quote: >-
+    the six other provinces represented on the council (Alexandria, Chile, Congo, Kenya, Myanmar, and South Sudan)
+relations:
+- type: member_of
+  target: gafcon
+  date: null
+  led_by:
+  - stephen-than-myint-oo
+  status: confirmed
+  sources:
+  - source: gacm-tlc-2025-10-17-analysis
+    quote: >-
+      Three of the nine other churches represented on GAFCON’s Primates’ Council are not recognized by the Anglican
+      Communion Office and have largely been formed under GAFCON’s auspices (the Anglican Church of Brazil, the
+      Reformed Evangelical Anglican Church of South Africa, and the Anglican Church in North America). But such
+      a total severing of connections with Canterbury and the Instruments of Communion would be a new development
+      for the six other provinces represented on the council (Alexandria, Chile, Congo, Kenya, Myanmar, and South
+      Sudan).
+  - source: gacm-ens-2025-10-23-little-evidence
+    quote: >-
+      The other six Anglican provinces that are represented on GAFCON’s primates’ council are Alexandria (Egypt),
+      Chile, Congo, Kenya, Myanmar and South Sudan.
+  - source: gacm-ai-2026-01-30-curiouser
+    quote: >-
+      Gafcon Primates Council Covenanted GSFA Provinces + Gafcon Primates Covenanted GSFA Provinces Anglican Church
+      of Rwanda Episcopal Church of South Sudan Church of Bangladesh Church of Nigeria Anglican Church of the Congo
+      Province of the Indian Ocean Anglican Church of Kenya Anglican Church of Chile Church of the Province of South
+      East Asia Church of Uganda Episcopal Church of Sudan Episcopal/Anglican Province of Alexandria Church of the
+      Province of Myanmar Gafcon Jurisdictions Anglican Church of North America REACH-SA Anglican Church of Brazil
+  notes: >-
+    Província representada no Conselho de Primazes do GAFCON em out/2025 (pertença ao movimento GAFCON, anterior
+    e distinta da adesão à GAC). A data de início da pertença não consta das fontes.
+- type: member_of
+  target: anglican-communion
+  date: null
+  led_by:
+  - stephen-than-myint-oo
+  status: probable
+  sources:
+  - source: gacm-ai-2026-01-20-gsfa-mahe
+    quote: >-
+      GSFA is staying within the Anglican Communion, but more importantly, we are staying with Jesus to bear witness
+      that we must choose life rather than death and light rather than darkness.
+  - source: gace-tlc-gsfa-2026-01
+    quote: >-
+      The meeting’s communiqué , released January 21, was signed by nine primates, representing the Anglican Communion’s
+      provinces of Alexandria, Congo, the Indian Ocean, Myanmar, South East Asia, South Sudan, Sudan, and Uganda,
+      as well as the Anglican Church of Brazil.
+  notes: >-
+    Reafirmação de jan/2026: primaz signatário do comunicado dos primazes do GSFA (Seychelles, 14–17/01/2026), que
+    afirma que o GSFA permanece na Comunhão Anglicana e continuará a dialogar com as propostas Nairobi-Cairo. O
+    GSFA declara comunhão prejudicada com as províncias que mudaram o ensino sobre o casamento.

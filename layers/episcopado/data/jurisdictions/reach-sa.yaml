@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: reach-sa
+acronym: REACH-SA
+name: Reformed Evangelical Anglican Church of South Africa
+type: national_church
+tradition: anglican
+country: ZA
+description: >-
+  Igreja anglicana evangélica sul-africana fora da Comunhão Anglicana de Cantuária (antiga Church of England in
+  South Africa).
+sources:
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: >-
+    the Reformed Evangelical Anglican Church of South Africa (formerly the Church of England in South Africa), which
+    dates to a 19th-century division over Tractarian liturgical practices
+relations:
+- type: member_of
+  target: gac
+  date: 2026-03
+  led_by:
+  - siegfried-ngubane
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: Presiding Bishop of the Reformed Evangelical Anglican Church of South Africa (REACH-SA)
+  - source: gacm-tlc-2026-03-27-who-leads
+    quote: >-
+      The council’s primates are Archbishops Laurent Mbanda of Rwanda (Chair), Miguel Uchoa of the Anglican Church
+      of Brazil (Vice Chair), Henry Ndukuba of Nigeria, Stephen Kaziimba of Uganda, Enrique Lago of Chile, Presiding
+      Bishop Siegfried Ngubane of the Reformed Evangelical Anglican Church of South Africa, and Bishop Julian Dobbs,
+      acting primate of the Anglican Church in North America.
+  notes: >-
+    Província cujo primaz integra o Global Anglican Council eleito em Abuja (G26, 3–6/03/2026), o que exige "desengajamento
+    por princípio" dos Instrumentos da Comunhão de Cantuária.
+- type: member_of
+  target: gafcon
+  date: null
+  led_by:
+  - siegfried-ngubane
+  status: confirmed
+  sources:
+  - source: gacm-tlc-2025-10-17-analysis
+    quote: >-
+      Three of the nine other churches represented on GAFCON’s Primates’ Council are not recognized by the Anglican
+      Communion Office and have largely been formed under GAFCON’s auspices (the Anglican Church of Brazil, the
+      Reformed Evangelical Anglican Church of South Africa, and the Anglican Church in North America). But such
+      a total severing of connections with Canterbury and the Instruments of Communion would be a new development
+      for the six other provinces represented on the council (Alexandria, Chile, Congo, Kenya, Myanmar, and South
+      Sudan).
+  - source: gacm-ai-2026-01-30-curiouser
+    quote: >-
+      Gafcon Primates Council Covenanted GSFA Provinces + Gafcon Primates Covenanted GSFA Provinces Anglican Church
+      of Rwanda Episcopal Church of South Sudan Church of Bangladesh Church of Nigeria Anglican Church of the Congo
+      Province of the Indian Ocean Anglican Church of Kenya Anglican Church of Chile Church of the Province of South
+      East Asia Church of Uganda Episcopal Church of Sudan Episcopal/Anglican Province of Alexandria Church of the
+      Province of Myanmar Gafcon Jurisdictions Anglican Church of North America REACH-SA Anglican Church of Brazil
+  notes: >-
+    Província representada no Conselho de Primazes do GAFCON em out/2025 (pertença ao movimento GAFCON, anterior
+    e distinta da adesão à GAC). A data de início da pertença não consta das fontes.

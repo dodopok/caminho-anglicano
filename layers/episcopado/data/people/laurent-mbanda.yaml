@@ -1,6 +1,175 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: laurent-mbanda
 name: Laurent Mbanda
+aliases:
+- The Most Revd Dr Laurent Mbanda
+birth:
+  date: '1954-10-25'
+  sources:
+  - source: gace-gac-page
+    quote: Archbishop Laurent Mbanda was born in 1954.
+  - source: gacl-wp-mbanda
+    quote: '''''''Laurent Mbanda'''''' (born 25 October 1954)'
+biography: >-
+  Bispo de Shyira (Ruanda) desde 2010; quarto arcebispo e primaz da Igreja Anglicana de Ruanda desde 2018; presidente
+  do GAFCON desde 2023 e do Global Anglican Council desde 2026.
+sources:
+- source: gace-gac-page
+  quote: Archbishop Laurent Mbanda was born in 1954.
+- source: gacl-wp-mbanda
+  quote: '''''''Laurent Mbanda'''''' (born 25 October 1954)'
+ordinations:
+- order: presbyterate
+  date: null
+  place: Burundi
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: gace-gac-page
+    quote: >-
+      He graduated at the Kenya Highlands Bible College, in Kericho, Kenya, before returning to Burundi, where he
+      was ordained an Anglican priest. He moved to the United States in 1984
+  notes: Ordenado presbítero no Burundi, antes de 1984; data e ordenante não informados.
+- order: episcopate
+  date: '2010-03-28'
+  place: Musanze (Ruanda)
+  jurisdiction: pear
+  office: coadjutor
+  principal_consecrator: emmanuel-kolini
+  status: probable
+  sources:
+  - source: gacl-kagame-2010-shyira
+    quote: >-
+      President Kagame presides over the consecration of new Shyira Diocese Bishop –Musanze, 28 March 2010 ... President
+      Kagame today presided over the consecration of the new Shyira Diocese Bishop, Dr. Laurent Mbanda, to replace
+      Bishop John Rucyahana
+  - source: gace-gac-page
+    quote: He was consecrated Bishop of the Diocese of Shyiria in March 2010.
+  - source: gacl-wp-mbanda
+    quote: '| consecration     = May 2010
+
+      | consecrated_by   = [[Emmanuel Kolini]]'
+  notes: >-
+    Data e local confirmados (site da Presidência de Ruanda, 28/03/2010; 'presided' refere-se à presença do presidente
+    da República, não ao rito). Sagrante principal Emmanuel Kolini (então arcebispo de Ruanda) só pela infobox da
+    Wikipédia, que dá 'May 2010' em contradição com o próprio texto (março). Sagrado como sucessor designado de
+    John Rucyahana; entronizado bispo de Shyira em 14/11/2010.
+affiliations:
+- jurisdiction: pear
+  role: diocesan_bishop
+  diocese: diocese-de-shyira
+  start: '2010-11-14'
+  status: confirmed
+  sources:
+  - source: gacl-newtimes-2010-shyira
+    quote: >-
+      MUSANZE - The Anglican Church of Rwanda, Sunday, enthroned Dr Laurent Mbanda as the new Bishop of Shyira Diocese,
+      replacing the retiring Bishop John Rucyahana, who has been at the helm of the Diocese since 1997. Monday,
+      November 15, 2010
+  - source: gacl-wp-mbanda
+    quote: He was the bishop of the Diocese of Shyira when he was elected the fourth archbishop and primate
+  notes: >-
+    Entronização na Catedral de São João Batista, Musanze, presidida pelo arcebispo emérito Emmanuel Kolini; presente
+    o arcebispo eleito Onesphore Rwaje. Fim não informado (a Wikipédia dá Shyira 2010–2018 e depois Gasabo).
+- jurisdiction: pear
+  role: primate
+  start: '2018-06-10'
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: >-
+      He was then elected the fourth Archbishop and Primate of the Province of the Anglican Church of Rwanda on
+      17 January 2018. His enthronement took place on 10 June 2018.
+  - source: gacl-wp-mbanda
+    quote: >-
+      elected the fourth archbishop and primate of the [[Anglican Church of Rwanda|Province of the Anglican Church
+      of Rwanda]] on 17 January 2018
+  notes: >-
+    Eleito em 17/01/2018. Em 11/09/2026 Manasseh Gahima foi eleito seu sucessor, com instalação marcada para 25/10/2026.
+    Eleito em 17/01/2018 pela Câmara dos Bispos na Catedral de Saint-Étienne, Kigali; entronizado em 10/06/2018;
+    sucedeu Onesphore Rwaje.
+- jurisdiction: gafcon
+  role: other
+  role_description: presidente do Conselho de Primazes (Chairman, Gafcon Primates Council)
+  start: '2023-04-21'
+  end: '2026-03-05'
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: Archbishop Laurent Mbanda assumed his position as Chairman on 21 April 2023.
+  - source: gace-canterbury-abandons
+    quote: Chairman, Gafcon Primates Council
+  - source: gace-council-to-lead
+    quote: the Gafcon Primates have dissolved the Gafcon Primates Council
+  notes: >-
+    Fim = dissolução do Conselho de Primazes do GAFCON e eleição de Mbanda para presidente do Global Anglican Council
+    (5/03/2026).
+- jurisdiction: gafcon
+  role: other
+  role_description: presidente do Conselho dos Primazes
+  start: '2023-04-21'
+  end: 2026-03
+  end_reason: term_end
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: Archbishop Laurent Mbanda assumed his position as Chairman on 21 April 2023.
+  - source: ai-2023-04-22-gafcon-chair
+    quote: >-
+      the primates’ council elected Archbishop Mbanda to succeed the Most Rev. Foley Beach as leader of the Anglican
+      reform and renewal movement. Archbishop Mbanda, who served as GAFCON vice-chairman
+  notes: >-
+    Eleito no GAFCON IV (Kigali, 17–21/04/2023), sucedendo Foley Beach; antes era vice-presidente. Em março de 2026
+    o Conselho dos Primazes foi substituído pelo Global Anglican Council, que ele passou a presidir.
+- jurisdiction: gac
+  role: other
+  role_description: presidente do Global Anglican Council (Chairman)
+  start: '2026-03-05'
+  status: confirmed
+  sources:
+  - source: gace-council-to-lead
+    quote: Archbishop Laurent Mbanda was unanimously elected as Chairman of the Global Anglican Council
+  - source: gafcon-2026-03-04-gac
+    quote: the unanimous election of The Most Revd Dr Laurent Mbanda as Chairman
+  - source: gace-ai-kaziimba-abuja
+    quote: Archbishop Mbanda of Rwanda as chair
+  - source: gace-gahima-elected
+    quote: >-
+      I continue as Chairman of the Global Anglican Council through to GAFCON V, our next Global Anglicans Assembly
+      in Athens in April 2028.
+  notes: >-
+    Mandato previsto até o fim do GAFCON V (Atenas, 2028); permanece no conselho após deixar o arcebispado de Ruanda,
+    conforme regra aprovada em Abuja.
+- jurisdiction: gac
+  role: other
+  role_description: presidente do Global Anglican Council
+  start: '2026-03-05'
+  status: confirmed
+  sources:
+  - source: gace-council-to-lead
+    quote: >-
+      I am also pleased to announce that Archbishop Laurent Mbanda was unanimously elected as Chairman of the Global
+      Anglican Council
+  - source: gace-abuja-affirmation
+    quote: We were delighted to hear at our gathering that Archbishop Laurent Mbanda has been elected Chair
+  - source: gacl-ai-dobbs-abuja
+    quote: >-
+      We celebrate the election of Archbishop Laurent Mbanda as Chair, Archbishop Miguel Uchôa as Deputy Chair,
+      and our own Bishop Paul Donison as General Secretary of this newly constituted Council.
+  - source: gacl-acl-gac-2026
+    quote: >-
+      the council unanimously elected Laurent Mbanda, Archbishop of Rwanda, to serve as Chairman of the Global Anglican
+      Council.
+  notes: Mandato até o fim da GAFCON V (Atenas, 2028). Eleito no G26 em Abuja (3–6/03/2026).
+- jurisdiction: gafcon
+  role: other
+  role_description: membro do Conselho dos Primazes
+  status: confirmed
+  sources:
+  - source: gacl-ai-2023-uxbridge
+    quote: The Gafcon Primates Council The Most Reverend Laurent Mbanda – Rwanda
+  notes: >-
+    Composição do Conselho dos Primazes em 9/11/2023 (comunicado de Uxbridge), sob a presidência de Mbanda.
 events:
 - type: other
   date: '2026-08-23'
@@ -18,3 +187,149 @@ events:
     quote: >-
       O encerramento ocorrerá no domingo, às 10h, com um culto solene que marcará a instituição do reverendo Gabriel
       Uchoa como novo deão
+- type: other
+  date: '2025-10-03'
+  description: >-
+    O GAFCON (Laurent Mbanda, presidente do Conselho de Primazes) reage à nomeação de Sarah Mullally para arcebispo
+    de Cantuária com a carta "Canterbury Appointment Abandons Anglicans": declara que Cantuária já não pode liderar
+    a Comunhão e confirma a convocação dos bispos para a G26 em Abuja (3–6/03/2026).
+  status: confirmed
+  sources:
+  - source: gace-canterbury-abandons
+    quote: >-
+      it is with sorrow that Gafcon receives the announcement today of the appointment of Dame Sarah Mullally as
+      the next Archbishop of Canterbury.
+  - source: gace-canterbury-abandons
+    quote: >-
+      The reset of our beloved Communion is now uniquely in the hands of Gafcon, and we are ready to take the lead.
+  - source: gace-canterbury-abandons
+    quote: >-
+      Gafcon has summoned global orthodox Anglican bishops to Abuja, Nigeria, from 3 to 6 March, 2026, for the G26
+      Bishops Assembly.
+- type: other
+  date: '2025-10-16'
+  description: >-
+    Martyrs’ Day Statement ("The Future Has Arrived"): os primazes do GAFCON declaram a Comunhão Anglicana "reordenada",
+    rejeitam os quatro Instrumentos de Comunhão (arcebispo de Cantuária, Conferência de Lambeth, Conselho Consultivo
+    Anglicano, Reunião dos Primazes), proíbem as províncias de participar de reuniões convocadas por Cantuária e
+    de financiar o Conselho Consultivo Anglicano, exigem assentimento à Declaração de Jerusalém para ser membro
+    e anunciam: "we are now the Global Anglican Communion".
+  status: confirmed
+  sources:
+  - source: gace-future-has-arrived
+    quote: Our Gafcon Primates gathered this hour to fulfil our mandate to reform the Anglican Communion
+  - source: gace-future-has-arrived
+    quote: >-
+      To be a member of the Global Anglican Communion, a province or a diocese must assent to the Jerusalem Declaration
+      of 2008, the contemporary standard for Anglican identity.
+  - source: gace-future-has-arrived
+    quote: >-
+      As has been the case from the very beginning, we have not left the Anglican Communion; we are the Anglican
+      Communion.
+  - source: gace-abuja-affirmation
+    quote: >-
+      announced the inauguration of the Global Anglican Communion in the October 2025 Martyrs’ Day Statement (MDS).
+  - source: gace-we-are-gac
+    quote: We rejoice that we have not left the Communion… we are the Communion!
+  - source: gace-council-of-primates
+    quote: >-
+      the initiative approved by the Gafcon Primates’ Council on 16th October to form a new Council of Primates
+      for the Global Anglican Communion
+- type: other
+  date: '2026-03-03'
+  description: >-
+    Conferência G26 (Gafcon Global G26 Bishops Conference), em Abuja (Nigéria), 3–6/03/2026, sediada pela Igreja
+    da Nigéria em St Matthias House: 347 bispos e 121 líderes leigos e clérigos de 27 províncias; não é uma assembleia
+    GAFCON plena (a próxima, GAFCON V, está marcada para Atenas em 2028).
+  status: confirmed
+  sources:
+  - source: gace-abuja-affirmation
+    quote: >-
+      Greetings from Abuja, Nigeria where 347 Anglican bishops and 121 lay and clerical Anglican leaders from 27
+      provinces met from 3-6 March 2026, generously hosted by our brothers and sisters in the Church of Nigeria.
+  - source: gace-g26-day-two
+    quote: >-
+      the second day of the Gafcon Global G26 Conference at St Matthias House, the national headquarters of the
+      Church of Nigeria (Anglican Communion).
+  - source: gace-ai-kaziimba-abuja
+    quote: >-
+      The G26 gathering, held March 3-6 in Abuja, was a specialised bishops conference — not a full GAFCON Assembly.
+- type: other
+  date: '2026-03-05'
+  description: >-
+    Em Abuja (G26), os primazes do GAFCON dissolvem o Conselho de Primazes do GAFCON (em funcionamento desde 2008)
+    e criam o Global Anglican Council, com primazes, conselheiros (advisors) e garantidores (guarantors), todos
+    com voto; o presidente será um primaz, mas não "primus inter pares". Eleitos por unanimidade: Laurent Mbanda
+    (presidente), Miguel Uchôa (vice-presidente) e Paul Donison (secretário-geral), com mandatos até o fim do GAFCON
+    V (Atenas, 2028).
+  status: confirmed
+  sources:
+  - source: gace-council-to-lead
+    quote: >-
+      the Gafcon Primates have dissolved the Gafcon Primates Council, which has faithfully led and served the Gafcon
+      movement since 2008.
+  - source: gace-council-to-lead
+    quote: >-
+      creating the Global Anglican Council which includes primates, advisors, and guarantors, which will include
+      bishops, clergy, and lay members each with full voting privileges.
+  - source: gace-council-to-lead
+    quote: >-
+      While the Chairman of the Council will be a Primate, he will not be primus inter pares (first amongst equals).
+  - source: gace-council-to-lead
+    quote: Our terms will conclude at the end of GAFCON V in Athens in 2028.
+  - source: gafcon-2026-03-04-gac
+    quote: >-
+      We give thanks to God for a historic announcement made on Thursday in Abuja, Nigeria, on the third day of
+      the Gafcon Global G26 Conference.
+  - source: gace-ai-kaziimba-abuja
+    quote: The GAFCON Primates Council was transitioned into the newly established Global Anglican Council
+- type: other
+  date: '2026-03-06'
+  description: >-
+    Publicada a Abuja Affirmation, documento final da G26 (tema "Choose this day whom you will serve"), assinada
+    por Laurent Mbanda como presidente do Global Anglican Council: define a GAC como comunhão confessional baseada
+    na Declaração de Jerusalém, exige "principled disengagement" dos Instrumentos de Cantuária para quem ocupa cargo
+    na GAC e atribui ao Global Anglican Council reconhecer províncias e dioceses e convidar novos primazes.
+  status: confirmed
+  sources:
+  - source: gace-abuja-affirmation
+    quote: Chairman, Global Anglican Council
+  - source: gace-abuja-affirmation
+    quote: >-
+      The Global Anglican Council will also authenticate newly formed provinces and dioceses who seek recognition
+      as Global Anglicans.
+  - source: gace-abuja-affirmation
+    quote: >-
+      The Global Anglican Communion is not a new Communion, but the historic Anglican Communion reordered from within.
+  - source: gace-gazette-abuja
+    quote: >-
+      A significant administrative shift was also announced, with the “Gafcon Primates Council” being officially
+      replaced by the Global Anglican Council.
+- type: other
+  date: '2026-08-22'
+  description: >-
+    Reunido em Recife (Brasil), o Global Anglican Council decide estabelecer a sede (headquarters) da Global Anglican
+    Communion em Abuja, Nigéria.
+  status: confirmed
+  sources:
+  - source: gace-home-for-communion
+    quote: This decision was made at our meeting in Recife, Brazil, on Saturday 22 August 2026
+  - source: gace-faithfulness-brazil
+    quote: >-
+      During our time in Recife, members of the Global Anglican Council also met for important discussions as we
+      continue the transition and development of the Global Anglican Communion.
+- type: other
+  date: '2026-09-11'
+  description: >-
+    Manasseh Gahima, bispo de Gahini, é eleito pela Câmara dos Bispos o quinto arcebispo e primaz da Igreja Anglicana
+    de Ruanda, sucessor de Laurent Mbanda.
+  status: confirmed
+  sources:
+  - source: gace-gahima-elected
+    quote: >-
+      I am delighted to congratulate The Rt Revd Dr Manasseh Gahima, Bishop of Gahini, on his election as the next
+      Archbishop and Primate of the Anglican Church of Rwanda.
+  - source: gacm-ai-2026-09-11-rwanda
+    quote: >-
+      The House of Bishops of the Province de l’Eglise Anglicane du Rwanda (EAR) is to meet today (11 September
+      2026) to elect the fifth Archbishop and Primate of the province

@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: justin-badi-arama
+name: Justin Badi Arama
+full_name: Justin Badi Arama
+aliases:
+- Justin Badi
+birth:
+  date: '1964'
+  sources:
+  - source: gacl-wp-badi
+    quote: '''''''Justin Badi Arama'''''' (born 1964) is a [[South Sudan]]ese Episcopal bishop.'
+biography: Primaz da Igreja Episcopal do Sudão do Sul; presidente do GSFA.
+sources:
+- source: gacm-ai-2026-01-20-gsfa-mahe
+  quote: >-
+    The Most Rev Justin Badi Arama Chairman of GSFA and Primate of the Province of the Episcopal Church of South
+    Sudan
+ordinations:
+- order: presbyterate
+  date: '1995'
+  jurisdiction: ecs
+  status: probable
+  sources:
+  - source: gacl-wp-badi
+    quote: He was ordained an Episcopal priest in 1995.
+- order: episcopate
+  date: '2001'
+  jurisdiction: ecs
+  office: diocesan
+  principal_consecrator: joseph-marona
+  status: probable
+  sources:
+  - source: gacl-wp-badi
+    quote: '| consecration     = 2001
+
+      | consecrated_by   = [[Joseph Marona]]'
+  - source: gacl-ai-2018-badi-eleito
+    quote: >-
+      The Provincial Synod of the Episcopal Church of South Sudan has elected the Rt. Rev. Justin Badi Arama, Bishop
+      of Maridi
+  notes: >-
+    Segundo bispo da Diocese de Maridi (então Igreja Episcopal do Sudão, antes da separação do Sudão do Sul). Ano
+    e sagrante (Joseph Marona, arcebispo do Sudão) só pela Wikipédia, sem nota.
+affiliations:
+- jurisdiction: ecs
+  role: diocesan_bishop
+  diocese: diocese-de-maridi
+  start: '2001'
+  end: '2018'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: gacl-wp-badi
+    quote: He became Bishop of the Diocese of Maridi in 2001
+  - source: gacl-ai-2018-badi-entron
+    quote: who was previously the Bishop of the Anglican Diocese of Maridi in the western part of the country
+  notes: Maridi pertence hoje à Igreja Episcopal do Sudão do Sul (ECSS).
+- jurisdiction: ecss
+  role: primate
+  diocese: diocese-de-juba
+  start: '2018-04-22'
+  status: confirmed
+  sources:
+  - source: gacl-ai-2018-badi-entron
+    quote: >-
+      [Juba] Sunday the 22nd of April, 2018 was a joyous day in the south Sudanese capital of Juba, as thousands
+      of Christians gathered at All Saints Cathedral to witness the enthronement of the fifth archbishop and primate
+      of the Episcopal Church of South Sudan.
+  - source: gacl-ai-2018-badi-eleito
+    quote: >-
+      has elected the Rt. Rev. Justin Badi Arama, Bishop of Maridi, to succeed the Most Rev. Daniel Deng Bul as
+      Archbishop of Juba and Primate of South Sudan. Four candidates stood for election at the meeting held on 20
+      Jan 2018
+  notes: >-
+    Eleito em 20/01/2018 (80 a 79 contra Abraham Yel); entronizado na Catedral de Todos os Santos, Juba, em 22/04/2018;
+    mandato de dez anos (Wikipédia).

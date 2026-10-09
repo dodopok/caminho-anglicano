@@ -1,0 +1,125 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: tito-zavala
+name: Tito Zavala
+full_name: Héctor Zavala Muñoz
+aliases:
+- Archbishop Tito
+- Hector Zavala Muñoz
+- Héctor "Tito" Zavala Muñoz
+- Héctor Zavala Muñoz
+birth:
+  date: '1954-10-16'
+  sources:
+  - source: gacl-ai-2016-zavala
+    quote: Bishop Tito Zavala was born on 16 October 1954 in Chile.
+biography: >-
+  Bispo coadjutor (1998) e bispo do Chile (2000–2018) na Igreja Anglicana do Cone Sul, da qual foi bispo primaz
+  (2010–2016); primeiro primaz da Igreja Anglicana do Chile (2018–2025) e bispo de Santiago.
+sources:
+- source: gacl-ai-2016-zavala
+  quote: Bishop Tito Zavala was born on 16 October 1954 in Chile.
+ordinations:
+- order: diaconate
+  date: '1982'
+  jurisdiction: iacs
+  status: probable
+  sources:
+  - source: gacl-wp-zavala
+    quote: was ordained deacon in 1982, and priest in 1984
+  - source: gacl-ai-2016-zavala
+    quote: was ordained priest and deacon for the Diocese of Chile
+  notes: Diocese do Chile.
+- order: presbyterate
+  date: '1984'
+  jurisdiction: iacs
+  status: probable
+  sources:
+  - source: gacl-wp-zavala
+    quote: was ordained deacon in 1982, and priest in 1984
+  notes: Diocese do Chile.
+- order: episcopate
+  date: '1998'
+  jurisdiction: iacs
+  office: coadjutor
+  principal_consecrator: maurice-sinclair
+  status: probable
+  sources:
+  - source: gacl-ai-2016-zavala
+    quote: >-
+      He served as a parish priest in the diocese and was elected bishop-coadjutor in 1998 and was installed as
+      diocesan bishop in 2000.
+  - source: gacl-wp-zavala
+    quote: '| consecration = 1998
+
+      | consecrated_by = [[Maurice Sinclair]]'
+  notes: >-
+    Ano de 1998 pelas duas fontes (o Anglican Ink fala em eleição como coadjutor). Sagrante principal (Maurice Sinclair,
+    bispo do Norte da Argentina e primaz do Cone Sul) só pela infobox da Wikipédia, sem nota.
+affiliations:
+- jurisdiction: iacs
+  role: diocesan_bishop
+  diocese: diocese-do-chile
+  start: '2000'
+  end: '2018'
+  end_reason: transfer
+  status: probable
+  sources:
+  - source: gacl-ai-2016-zavala
+    quote: was installed as diocesan bishop in 2000
+  - source: gacl-wp-zavala
+    quote: >-
+      In early 2018 his diocese of Chile was split into four dioceses, whereupon he became the Bishop of Santiago.
+  notes: Em 2018 a diocese foi dividida e passou a formar a Igreja Anglicana do Chile.
+- jurisdiction: iacs
+  role: primate
+  start: '2010-11-04'
+  end: '2016'
+  end_reason: term_end
+  status: probable
+  sources:
+  - source: gacl-ai-2016-zavala
+    quote: >-
+      The province’s House of Bishops unanimously elected him the province’s first native-born Latin American primate
+      at the 10th meeting of the General Synod on 4 November 2010. He was re-elected to a second term in 2013.
+  - source: gacl-wp-zavala
+    quote: Presiding Bishop of the [[Anglican Church of South America]] (2010–2016)
+  notes: >-
+    Bispo primaz (Presiding Bishop) da Igreja Anglicana do Cone Sul da América; sucedido por Gregory Venables. Fim
+    (2016) só pela Wikipédia.
+- jurisdiction: iach
+  role: primate
+  diocese: diocese-de-santiago
+  start: '2018-11-04'
+  end: '2025-01-12'
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: gacl-wp-zavala
+    quote: >-
+      On 4 November 2018 the four Chilean dioceses were inaugurated as a new province of the Anglican Communion,
+      named the Anglican Church of Chile. Zavala was commissioned by Archbishop Justin Welby
+  - source: gacl-sydney-2025-chile
+    quote: >-
+      The occasion was the retirement of Héctor (Tito) Zavala as Primate of Chile, the consecration of Juan Esteban
+      Saravia as Bishop of Santiago, and the installation of Bishop Enrique Lago as Primate of Chile.
+  - source: gacl-cj-2018-chile
+    quote: >-
+      the current Diocesan Bishop, Rv. Héctor Zavala, who will also be the Primate of the new Anglican Province
+      of Chile.
+  notes: >-
+    Primeiro primaz da Igreja Anglicana do Chile e bispo de Santiago; sucedido como primaz por Enrique Lago e em
+    Santiago por Juan Esteban Saravia.
+- jurisdiction: gafcon
+  role: other
+  role_description: membro do Conselho dos Primazes
+  end: '2025-01-12'
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: gacl-ai-2023-uxbridge
+    quote: The Most Reverend Tito Zavala – Chile
+  - source: gacl-ai-2016-zavala
+    quote: Bishop Zavala is a member of the GAFCON primates council and the Global South primates group.
+  notes: >-
+    Membro já em 2016 (como primaz do Cone Sul) e em 9/11/2023 (pelo Chile); fim inferido da aposentadoria como
+    primaz; o Chile passou a ser representado por Enrique Lago.

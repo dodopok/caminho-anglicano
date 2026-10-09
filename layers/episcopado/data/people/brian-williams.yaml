@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: brian-williams
+name: Brian Williams
+biography: Bispo da Argentina e primaz (bispo presidente) da Igreja Anglicana da América do Sul.
+sources:
+- source: gacm-ai-2026-06-25-southamerica
+  quote: >-
+    The Anglican Church of South America, led by its primate, the Most Rev. Brian Williams, Bishop of Argentina
+events:
+- type: other
+  date: 2026-06
+  description: >-
+    A Igreja Anglicana da América do Sul, cujo primaz Brian Williams participou do G26 em Abuja, endossa as propostas
+    Nairobi-Cairo e não adere formalmente ao Global Anglican Council, permanecendo engajada nos processos da Comunhão
+    Anglicana.
+  status: probable
+  sources:
+  - source: gacm-ai-2026-06-25-southamerica
+    quote: >-
+      Bishop Williams’s visible role at GAFCON’s Abuja gathering shows the province aligning with the orthodox Global
+      South while not formally joining the new Global Anglican Council
+  - source: gacm-tlc-2026-03-08-nixes
+    quote: Presiding Bishop Brian Williams of South America, attended the gathering.

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: cou
+acronym: COU
+name: Igreja de Uganda (Church of Uganda)
+type: province
+tradition: anglican
+country: UG
+description: Província anglicana de Uganda.
+sources:
+- source: gace-gac-page
+  quote: Primate of the Church of Uganda
+relations:
+- type: member_of
+  target: gac
+  date: 2026-03
+  led_by:
+  - stephen-kaziimba
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: Primate of the Church of Uganda
+  - source: gacm-tlc-2026-03-27-who-leads
+    quote: >-
+      The council’s primates are Archbishops Laurent Mbanda of Rwanda (Chair), Miguel Uchoa of the Anglican Church
+      of Brazil (Vice Chair), Henry Ndukuba of Nigeria, Stephen Kaziimba of Uganda, Enrique Lago of Chile, Presiding
+      Bishop Siegfried Ngubane of the Reformed Evangelical Anglican Church of South Africa, and Bishop Julian Dobbs,
+      acting primate of the Anglican Church in North America.
+  - source: gace-ai-kaziimba-abuja
+    quote: >-
+      “The GAFCON Primates Council was transitioned into the newly established Global Anglican Council, which will
+      bring together primates, advisors, and guarantors to provide the oversight and the recognition of provinces
+      and dioceses within the emerging Global Anglican Communion,” he said.
+  notes: >-
+    Província cujo primaz integra o Global Anglican Council eleito em Abuja (G26, 3–6/03/2026), o que exige "desengajamento
+    por princípio" dos Instrumentos da Comunhão de Cantuária.
+- type: member_of
+  target: gafcon
+  date: '2008'
+  led_by:
+  - stephen-kaziimba
+  status: confirmed
+  sources:
+  - source: gacm-tlc-2025-10-17-analysis
+    quote: >-
+      The churches of Rwanda, Nigeria, and Uganda, key leaders in GAFCON from the beginning, have largely refused
+      to participate in meetings of the Instruments of Communion since the 2016 Primates’ Meeting.
+  - source: gacm-ai-2026-01-30-curiouser
+    quote: >-
+      Gafcon Primates Council Covenanted GSFA Provinces + Gafcon Primates Covenanted GSFA Provinces Anglican Church
+      of Rwanda Episcopal Church of South Sudan Church of Bangladesh Church of Nigeria Anglican Church of the Congo
+      Province of the Indian Ocean Anglican Church of Kenya Anglican Church of Chile Church of the Province of South
+      East Asia Church of Uganda Episcopal Church of Sudan Episcopal/Anglican Province of Alexandria Church of the
+      Province of Myanmar Gafcon Jurisdictions Anglican Church of North America REACH-SA Anglican Church of Brazil
+  - source: gacm-ai-2025-10-04-uganda
+    quote: >-
+      As a founding member of Gafcon, the Church of Uganda considers this appointment to further deepen the tear
+      in the fabric of the Anglican Communion
+  - source: gacm-tlc-2026-07-16-uganda-gsfa
+    quote: >-
+      GAFCON is also another place where we belong for the purpose of promoting the gospel, and we will continue
+      working together,” Kaziimba told TLC.
+  notes: >-
+    Província representada no Conselho de Primazes do GAFCON em out/2025 (pertença ao movimento GAFCON, anterior
+    e distinta da adesão à GAC). A data de início da pertença não consta das fontes. A Igreja de Uganda se declara
+    membro fundador do GAFCON (2008).

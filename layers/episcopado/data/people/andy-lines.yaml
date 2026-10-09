@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: andy-lines
+name: Andy Lines
+full_name: Andrew John Lines
+aliases:
+- Andrew John Lines
+- Andrew Lines
+- The Rt Revd Andrew John Lines
+birth:
+  date: '1960'
+  sources:
+  - source: gacl-wp-lines
+    quote: '''''''Andrew John Lines'''''' (born 1960) is a British [[Anglican]] bishop.'
+biography: >-
+  Bispo missionário sagrado em 2017 para a Escócia, Reino Unido e Europa; bispo presidente da Anglican Network in
+  Europe; conselheiro do Global Anglican Council.
+sources:
+- source: gace-gac-page
+  quote: >-
+    On June 30, 2017, the Anglican Church in North America’s College of Bishops was joined by 27 Primates, Archbishops,
+    Bishops from around the Anglican Communion to consecrate The Rev. Canon Andy Lines as a missionary bishop for
+    Anglicans in Scotland, the UK, and Europe.
+ordinations:
+- order: episcopate
+  date: '2017-06-30'
+  jurisdiction: acna
+  office: missionary
+  principal_consecrator: foley-beach
+  status: probable
+  sources:
+  - source: gace-gac-page
+    quote: >-
+      On June 30, 2017, the Anglican Church in North America’s College of Bishops was joined by 27 Primates, Archbishops,
+      Bishops from around the Anglican Communion to consecrate The Rev. Canon Andy Lines as a missionary bishop
+      for Anglicans in Scotland, the UK, and Europe.
+  - source: gacl-wp-lines
+    quote: '| consecration     = 30 June 2017
+
+      | consecrated_by   = [[Foley Beach]]'
+  notes: >-
+    Data pelo GAFCON; sagrante principal (Foley Beach, arcebispo da ACNA) pela Wikipédia. Co-sagrantes: o Colégio
+    de Bispos da ACNA e 27 primazes, arcebispos e bispos, não nomeados.
+affiliations:
+- jurisdiction: anie
+  role: primate
+  start: '2020'
+  status: probable
+  sources:
+  - source: gacl-wp-lines
+    quote: In 2020, he became the first presiding bishop of the [[Anglican Network in Europe]]
+  - source: gace-gac-page
+    quote: The Rt Revd Andrew John Lines Presiding Bishop Anglican Network in Europe
+  notes: Bispo presidente.
+- jurisdiction: gac
+  role: other
+  role_description: conselheiro do Global Anglican Council
+  start: 2026-03
+  status: confirmed
+  sources:
+  - source: gacm-tlc-2026-03-27-who-leads
+    quote: >-
+      Its regional advisers all lead “extra-provincial or missionary districts connected to the GAFCON movement.”
+      They are Archbishop Kanishka Raffel of Sydney (a diocesan bishop in the Anglican Church of Australia), and
+      Bishops Andy Lines of the Anglican Network in Europe, Jay Behan of the Church of Confessing Anglicans in Aotearoa
+      New Zealand, Glenn Davies of the Diocese of the Southern Cross (which serves parishes that have broken away
+      from the Anglican Church of Australia), and Yassir Eric of EKKIOS, a missionary movement forming congregations
+      in predominantly Muslim regions.
+  - source: gacm-otherc-2026-03-28-list
+    quote: The Rt. Rev. Andy Lines, Bishop of Anglican Network in Europe
+  - source: gace-gac-page
+    quote: The Rt Revd Andrew John Lines Presiding Bishop Anglican Network in Europe
+  notes: Listado entre os 'Advisors'.
+- jurisdiction: anie
+  role: other
+  role_description: bispo presidente
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: Presiding Bishop Anglican Network in Europe
+  - source: gacm-gafcon-2026-08-28-ace
+    quote: the Rt Revd Andy Lines, Presiding Bishop of ACE and a member of the Global Anglican Council
+  notes: Também bispo presidente da Anglican Convocation in Europe (ACE).

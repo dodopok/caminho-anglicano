@@ -1,0 +1,156 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: paul-donison
+name: Paul Donison
+aliases:
+- Paul Danison
+- Rt Revd Paul Donison
+- The Right Revd Paul Donison
+birth:
+  date: '1977'
+  sources:
+  - source: gacl-wp-donison
+    quote: '''''''Paul Donison'''''' (born 1977) is a Canadian-born American Anglican bishop.'
+biography: >-
+  Reitor e deão da Christ Church Plano (Texas); secretário-geral do GAFCON desde 2023 e do Global Anglican Council/Global
+  Anglican Communion desde mar/2026; sagrado bispo em Ruanda em 2024.
+sources:
+- source: gace-gac-page
+  quote: >-
+    Bishop Paul is the Rector and Dean of Christ Church Plano. Ordained in 2004, he served in several Canadian parishes
+    before being called to Texas in 2016
+ordinations:
+- order: episcopate
+  date: '2024-02-04'
+  place: Holy Trinity Cathedral, Kibagabaga, Kigali (Ruanda)
+  jurisdiction: pear
+  office: auxiliary
+  principal_consecrator: laurent-mbanda
+  status: probable
+  sources:
+  - source: gace-gac-page
+    quote: consecrated as a Bishop in Rwanda in 2024
+  - source: gace-gac-page
+    quote: >-
+      In 2023 he was elected by the Gafcon Primates Council as General Secretary, and consecrated as a Bishop in
+      Rwanda in 2024.
+  - source: gacl-wp-donison
+    quote: >-
+      Gafcon Chairman [[Laurent Mbanda]] consecrated Donison as assistant bishop in the Diocese of Gasabo on February
+      4, 2024, at Holy Trinity Cathedral in [[Kibagabaga]], [[Kigali]].
+  - source: gacl-rwandatv-donison
+    quote: Itorero Angilikani ry’u Rwanda ryimitse Paul Danison nka musenyeri wungirije muri Diyoseze ya Gasabo
+  notes: >-
+    Sagrado em Ruanda; sagrantes e data exata não informados. Bispo assistente (musenyeri wungirije) da Diocese
+    de Gasabo, cujo bispo é Laurent Mbanda. Ano e país pelo GAFCON; data, local e sagrante pela Wikipédia, que cita
+    o vídeo da RwandaTV. Em 2024 nomeado bispo assistente do Great Plains Missionary District (ACNA).
+affiliations:
+- jurisdiction: gafcon
+  role: other
+  role_description: secretário-geral (General Secretary)
+  start: '2023'
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: In 2023 he was elected by the Gafcon Primates Council as General Secretary
+  - source: gace-stand-with-bishops
+    quote: As General Secretary, I am writing to you personally for your help.
+  notes: >-
+    Continua a assinar como "Gafcon General Secretary" depois de 5/03/2026; o comunicado de 1/10/2026 da "Global
+    Anglican Communion (Gafcon)" o chama "its General Secretary".
+- jurisdiction: gafcon
+  role: other
+  role_description: secretário-geral
+  start: '2023-11-09'
+  end: 2026-03
+  end_reason: term_end
+  status: confirmed
+  sources:
+  - source: gacl-ai-2023-uxbridge
+    quote: >-
+      We appointed the Very Reverend Paul Donison, Rector and Dean of Christ Church Cathedral, Plano, Texas, as
+      the next General Secretary
+  notes: Sucedeu Ben Kwashi. Em março de 2026 passou a secretário-geral do Global Anglican Council.
+- jurisdiction: acna
+  role: other
+  role_description: bispo assistente
+  diocese: great-plains-missionary-district
+  start: '2024'
+  status: probable
+  sources:
+  - source: gace-gac-page
+    quote: In 2024 he was appointed as Assisting Bishop for the Great Plains Missionary District (ACNA)
+- jurisdiction: gac
+  role: other
+  role_description: secretário-geral (General Secretary)
+  start: '2026-03-05'
+  status: confirmed
+  sources:
+  - source: gace-council-to-lead
+    quote: >-
+      myself, Bishop Paul Donison, as General Secretary. Our terms will conclude at the end of GAFCON V in Athens
+      in 2028.
+  - source: gace-gac-page
+    quote: in 2026 was elected as General Secretary of the Global Anglican Communion
+  - source: gace-tablet-statement
+    quote: >-
+      The Global Anglican Communion (Gafcon) wishes to correct inaccurate reports published by The Tablet concerning
+      its General Secretary, the Rt Revd Paul Donison
+- jurisdiction: gac
+  role: other
+  role_description: secretário-geral
+  start: '2026-03-05'
+  status: confirmed
+  sources:
+  - source: gace-council-to-lead
+    quote: and myself, Bishop Paul Donison, as General Secretary
+  - source: gace-gac-page
+    quote: and in 2026 was elected as General Secretary of the Global Anglican Communion.
+  - source: gacl-ai-dobbs-abuja
+    quote: and our own Bishop Paul Donison as General Secretary of this newly constituted Council.
+  - source: gace-gac-page
+    quote: in 2026 was elected as General Secretary of the Global Anglican Communion.
+  notes: >-
+    Segundo o comunicado de Donison de 05/03/2026 (citado pelo Anglican Ink), os mandatos dos três dirigentes terminam
+    no fim do GAFCON V (Atenas, 2028).
+events:
+- type: other
+  date: '2026-03-05'
+  description: >-
+    Em Abuja (G26), os primazes do GAFCON dissolvem o Conselho de Primazes do GAFCON (em funcionamento desde 2008)
+    e criam o Global Anglican Council, com primazes, conselheiros (advisors) e garantidores (guarantors), todos
+    com voto; o presidente será um primaz, mas não "primus inter pares". Eleitos por unanimidade: Laurent Mbanda
+    (presidente), Miguel Uchôa (vice-presidente) e Paul Donison (secretário-geral), com mandatos até o fim do GAFCON
+    V (Atenas, 2028).
+  status: confirmed
+  sources:
+  - source: gace-council-to-lead
+    quote: >-
+      the Gafcon Primates have dissolved the Gafcon Primates Council, which has faithfully led and served the Gafcon
+      movement since 2008.
+  - source: gace-council-to-lead
+    quote: >-
+      creating the Global Anglican Council which includes primates, advisors, and guarantors, which will include
+      bishops, clergy, and lay members each with full voting privileges.
+  - source: gace-council-to-lead
+    quote: >-
+      While the Chairman of the Council will be a Primate, he will not be primus inter pares (first amongst equals).
+  - source: gace-council-to-lead
+    quote: Our terms will conclude at the end of GAFCON V in Athens in 2028.
+  - source: gafcon-2026-03-04-gac
+    quote: >-
+      We give thanks to God for a historic announcement made on Thursday in Abuja, Nigeria, on the third day of
+      the Gafcon Global G26 Conference.
+  - source: gace-ai-kaziimba-abuja
+    quote: The GAFCON Primates Council was transitioned into the newly established Global Anglican Council
+- type: other
+  date: '2026-10-01'
+  description: >-
+    A Global Anglican Communion (Gafcon) nega reportagens do The Tablet sobre negociações entre seu secretário-geral,
+    Paul Donison, e o secretário-geral do Anglican Communion Office, Anthony Poggo, e reafirma que "the time for
+    institutional negotiations with the Canterbury-led structures has passed".
+  status: confirmed
+  sources:
+  - source: gace-tablet-statement
+    quote: No such series of discussions took place.
+  - source: gace-tablet-statement
+    quote: The time for institutional negotiations with the Canterbury-led structures has passed.

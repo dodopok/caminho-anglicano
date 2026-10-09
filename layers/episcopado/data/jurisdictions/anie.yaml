@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: anie
+acronym: ANiE
+name: Anglican Network in Europe
+type: network
+tradition: anglican
+country: GB
+description: Jurisdição anglicana no Reino Unido e Europa autenticada pelo GAFCON.
+sources:
+- source: gace-abuja-affirmation
+  quote: >-
+    And we stand with those who have joined Gafcon-authenticated jurisdictions, such as The Anglican Network in
+    Europe, who are a faithful witness in the UK and Europe.
+relations:
+- type: recognized_by
+  target: gac
+  date: 2026-03
+  led_by:
+  - andy-lines
+  status: confirmed
+  sources:
+  - source: gace-abuja-affirmation
+    quote: >-
+      And we stand with those who have joined Gafcon-authenticated jurisdictions, such as The Anglican Network in
+      Europe, who are a faithful witness in the UK and Europe.
+  - source: gacm-tlc-2026-03-27-who-leads
+    quote: >-
+      Its regional advisers all lead “extra-provincial or missionary districts connected to the GAFCON movement.”
+      They are Archbishop Kanishka Raffel of Sydney (a diocesan bishop in the Anglican Church of Australia), and
+      Bishops Andy Lines of the Anglican Network in Europe, Jay Behan of the Church of Confessing Anglicans in Aotearoa
+      New Zealand, Glenn Davies of the Diocese of the Southern Cross (which serves parishes that have broken away
+      from the Anglican Church of Australia), and Yassir Eric of EKKIOS, a missionary movement forming congregations
+      in predominantly Muslim regions.
+  notes: >-
+    Citada na Afirmação de Abuja como jurisdição autenticada pelo GAFCON; seu bispo presidente Andy Lines é conselheiro
+    do Global Anglican Council.

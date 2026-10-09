@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: julian-dobbs
+name: Julian Dobbs
+full_name: Julian Mark Dobbs
+aliases:
+- Julian Mark Dobbs
+- The Rt Revd Julian Mark Dobbs
+birth:
+  date: '1968'
+  sources:
+  - source: gacl-wp-dobbs
+    quote: '''''''Julian Mark Dobbs'''''' (born 1968) is a New Zealand-born American Anglican [[bishop]].'
+biography: >-
+  Bispo da Igreja da Nigéria para a CANA desde 2011; primeiro bispo diocesano da Diocese da Palavra Viva (ACNA);
+  deão da Província da ACNA desde novembro de 2025, exercendo as funções de arcebispo, e membro do Global Anglican
+  Council.
+sources:
+- source: gacl-wp-dobbs
+  quote: '''''''Julian Mark Dobbs'''''' (born 1968) is a New Zealand-born American Anglican [[bishop]].'
+ordinations:
+- order: episcopate
+  date: '2011-09-25'
+  place: Archbishop Vining Memorial Cathedral, Lagos (Nigéria)
+  jurisdiction: church-of-nigeria
+  office: suffragan
+  principal_consecrator: nicholas-okoh
+  status: probable
+  sources:
+  - source: gacl-acna-deans
+    quote: >-
+      He was elected and consecrated as a bishop by the Church of Nigeria (Anglican Communion) in September 2011
+  - source: gacl-wp-dobbs
+    quote: >-
+      He was consecrated alongside [[Felix Orji]] by CON Primate [[Nicholas Okoh]] in [[Lagos]] on September 25.
+  notes: >-
+    Mês e igreja sagrante confirmados pela ACNA; dia, local e sagrante principal (Nicholas Okoh, primaz da Nigéria)
+    pela Wikipédia, que cita comunicado da CANA de 26/09/2011. Sagrado junto com Felix Orji, como bispo sufragâneo
+    da Igreja da Nigéria para a CANA.
+affiliations:
+- jurisdiction: cana
+  role: missionary_bishop
+  start: '2014-01-17'
+  status: confirmed
+  sources:
+  - source: gacl-ai-2014-dobbs
+    quote: >-
+      The Most Rev. Nicholas D. Okoh, Primate of all Nigeria (Anglican Communion) in consultation with the Most
+      Rev. Robert Duncan, Primate of the Anglican Church in North America, has appointed The Rt. Rev. Julian M.
+      Dobbs as Missionary Bishop of CANA. ... Bishop Dobbs will remain in his current role as Bishop of the CANA
+      East Diocese
+  notes: Já era bispo da Diocese CANA East (depois Diocese da Palavra Viva). Fim não informado.
+- jurisdiction: acna
+  role: other
+  role_description: deão da Província (exercendo as funções de arcebispo)
+  start: '2025-11-15'
+  status: confirmed
+  sources:
+  - source: gacl-acna-deans
+    quote: >-
+      when long-standing Dean of the Province, Bishop Ray Sutton, resigned as Dean on Nov 15, 2025, the College
+      of Bishops approved Bishop Dobbs’s appointment to this role. The Dean of the Province is a canonically defined
+      role that is authorized to assume the responsibilities of the Archbishop in the event that the Archbishop
+      is unable to serve.
+  - source: gace-gac-page
+    quote: >-
+      He currently serves as Acting Primate of the ACNA and is Gafcon Regional Secretary for North America.
+  notes: >-
+    Sucedeu Ray Sutton como deão. Também bispo diocesano da Diocese da Palavra Viva (Anglican Diocese of the Living
+    Word).
+- jurisdiction: gac
+  role: other
+  role_description: membro do Global Anglican Council
+  start: 2026-03
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: The Rt Revd Julian Mark Dobbs Acting Archbishop of the Anglican Church in North America
+  notes: >-
+    Listado entre os 'Primates' como arcebispo interino da ACNA; também secretário regional do GAFCON para a América
+    do Norte.
+- jurisdiction: acna
+  role: other
+  role_description: primaz interino
+  status: confirmed
+  sources:
+  - source: gace-gac-page
+    quote: >-
+      He currently serves as Acting Primate of the ACNA and is Gafcon Regional Secretary for North America.
+  - source: gacm-tlc-2026-03-27-who-leads
+    quote: Bishop Julian Dobbs, acting primate of the Anglican Church in North America
+  - source: gacm-gafcon-2026-07-30-reed
+    quote: >-
+      Bishop Julian Dobbs, Dean and Acting Archbishop of the ACNA, and a member of the Global Anglican Council
+  - source: gacm-ai-2026-09-28-acna-cob
+    quote: Bishop Julian M. Dobbs, Dean of the Province and Interim Ecclesiastical Authority, presided.
+  notes: >-
+    Exerce a autoridade eclesiástica interina da ACNA como deão da província enquanto o arcebispo Steve Wood está
+    afastado (inibido) e responde a julgamento eclesiástico.
+events:
+- type: other
+  date: '2025-11-16'
+  description: >-
+    Stephen Dwain Wood, arcebispo da ACNA, é inibido do exercício do ministério ordenado pelo deão da província,
+    Julian Dobbs, com o consentimento dos cinco bispos diocesanos mais antigos, após apresentação de acusações (presentment);
+    a inibição foi prorrogada em 12/01/2026 até o fim do processo. O julgamento no Tribunal para o Julgamento de
+    um Bispo terminou em 11/09/2026, com sentença prevista até 21/12/2026.
+  status: confirmed
+  sources:
+  - source: gacl-acna-trial-page
+    quote: >-
+      On Sunday, November 16 Bishop Julian Dobbs who serves as Dean of the Province, inhibited Archbishop Stephen
+      D. Wood from the exercise of ordained ministry in the Anglican Church in North America, in accordance with
+      the canons of our Church.
+  - source: gacl-acna-trial-page
+    quote: >-
+      The trial of Archbishop Stephen Wood concluded September 11, 2026, following five days of testimony from 38
+      witnesses. The Court expects ... an opinion due no later than December 21, 2026.

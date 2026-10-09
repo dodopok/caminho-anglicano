@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: emmanuel-kolini
+name: Emmanuel Kolini
+full_name: Emmanuel Mbona Kolini
+aliases:
+- Emmanuel Mbona Kolini
+birth:
+  date: '1945'
+  sources:
+  - source: gacl-wp-kolini
+    quote: '''''''Emmanuel Mbona Kolini'''''' (born [[Belgian Congo]], 1945) is a Congolese-Rwandan Anglican bishop.'
+biography: >-
+  Bispo assistente de Bukavu (Zaire) em 1980, bispo de Katanga (1986–1997) e segundo primaz da Igreja Episcopal
+  de Ruanda (1998–2011).
+sources:
+- source: gacl-wp-kolini
+  quote: '''''''Emmanuel Mbona Kolini'''''' (born [[Belgian Congo]], 1945) is a Congolese-Rwandan Anglican bishop.'
+ordinations:
+- order: episcopate
+  date: '1980'
+  jurisdiction: null
+  office: auxiliary
+  status: probable
+  sources:
+  - source: gacl-wp-kolini
+    quote: He was consecrated as the assistant bishop of [[Bukavu]], [[Zaire]], in 1980.
+  notes: >-
+    Bispo assistente de Bukavu (Zaire). Sagrante não informado em nenhuma fonte aberta. Então na Província da Igreja
+    de Ruanda, Burundi e Zaire.
+affiliations:
+- jurisdiction: pear
+  role: primate
+  diocese: diocese-de-kigali
+  start: '1998'
+  end: 2011-01
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: gacl-wp-kolini
+    quote: '| title            = Primate of Rwanda, Bishop of Kigali
+
+      | term             = 1998 - January 2011'
+  - source: gacl-newtimes-2010-shyira
+    quote: >-
+      The retired Archbishop of Anglican Church in Rwanda, Emmanuel Kolini, assisted by bishops from other dioceses
+      presided over the ceremony. Also present was the incoming Archbishop of the Anglican Church of Rwanda, Onesphore
+      Rwaje.
+  notes: >-
+    Segundo primaz; sucedeu Augustin Nshamihigo e foi sucedido por Onesphore Rwaje. Em novembro de 2010 o New Times
+    já o chama de 'retired'.

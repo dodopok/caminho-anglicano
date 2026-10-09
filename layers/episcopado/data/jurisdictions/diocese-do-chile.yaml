@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-do-chile
+name: Diocese do Chile
+type: diocese
+relations:
+- type: part_of
+  target: iacs
+  status: probable
+  sources:
+  - source: gacl-ai-2016-zavala
+    quote: was installed as diocesan bishop in 2000
+  - source: gacl-wp-zavala
+    quote: >-
+      In early 2018 his diocese of Chile was split into four dioceses, whereupon he became the Bishop of Santiago.

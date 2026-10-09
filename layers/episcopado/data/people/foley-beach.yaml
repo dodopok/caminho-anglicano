@@ -1,6 +1,15 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: foley-beach
 name: Foley Beach
+full_name: Foley Thomas Beach
+aliases:
+- Foley Thomas Beach
+- The Most Rev. Foley Thomas Beach
+birth:
+  date: '1958-10-31'
+  sources:
+  - source: gacl-ai-2016-beach
+    quote: Born in Atlanta, Georgia on 31 Oct 1958
 biography: Segundo arcebispo da ACNA (2014–2024).
 sources:
 - source: cant-novas-igrejas-2024
@@ -8,7 +17,57 @@ sources:
     Em 2014, Robert Duncan deixou a primazia, sendo escolhido Foley Beach para assumir o cargo como o segundo arcebispo
     da denominação.
   page: '22'
+ordinations:
+- order: diaconate
+  date: '1992'
+  jurisdiction: tec
+  status: probable
+  sources:
+  - source: gacl-ai-2016-beach
+    quote: He was ordained deacon and priest in the Episcopal Diocese of Georgia in 1992.
+  notes: Diocese Episcopal da Geórgia.
+- order: presbyterate
+  date: '1992'
+  jurisdiction: tec
+  status: probable
+  sources:
+  - source: gacl-ai-2016-beach
+    quote: He was ordained deacon and priest in the Episcopal Diocese of Georgia in 1992.
+  notes: Diocese Episcopal da Geórgia.
+- order: episcopate
+  date: '2010-10-09'
+  place: Church of the Apostles, Atlanta (Geórgia, EUA)
+  jurisdiction: acna
+  office: diocesan
+  principal_consecrator: robert-duncan
+  status: confirmed
+  sources:
+  - source: gacl-ai-2016-beach
+    quote: On 9 Oct 2010 he was consecrated the first bishop of the ACNA’s diocese of the South.
+  - source: gacl-tlc-2014-beach
+    quote: >-
+      On October 9, 2010, he was consecrated in Atlanta, Georgia as the first Bishop of the Anglican Diocese of
+      the South in the Anglican Church in North America.
+  - source: gacl-wp-beach
+    quote: '| consecrated by              = [[Robert Duncan (bishop)|Robert Duncan]]
+
+      | date of consecration        = October 9, 2010
+
+      | place of consecration       = [[Church of the Apostles (Atlanta)|Church of the Apostles]]'
+  notes: >-
+    Data e cidade confirmadas por duas fontes; sagrante principal (Robert Duncan, arcebispo da ACNA) e igreja só
+    pela Wikipédia. Co-sagrantes não encontrados.
 affiliations:
+- jurisdiction: acna
+  role: diocesan_bishop
+  diocese: anglican-diocese-of-south
+  start: '2010-10-09'
+  status: confirmed
+  sources:
+  - source: gacl-ai-2016-beach
+    quote: On 9 Oct 2010 he was consecrated the first bishop of the ACNA’s diocese of the South.
+  - source: ai-2023-04-22-gafcon-chair
+    quote: Though he retires as archbishop, he remains Bishop of the Diocese of the South.
 - jurisdiction: acna
   role: archbishop
   start: '2014'
@@ -26,3 +85,42 @@ affiliations:
       arcebispo da denominação.
     page: '128'
   notes: Cumpriu o limite de dois mandatos de cinco anos.
+- jurisdiction: acna
+  role: primate
+  start: '2014-10-09'
+  end: 2024-06
+  end_reason: term_end
+  status: confirmed
+  sources:
+  - source: gacl-ai-2016-beach
+    quote: >-
+      He was elected the second archbishop and primate of the ACNA on 21 June 2014 and installed on 9 October 2014.
+  - source: gacl-wp-wood
+    quote: >-
+      On June 22, 2024, Wood was elected by the ACNA college of bishops to succeed [[Foley Beach]] as the province's
+      third archbishop.
+  notes: Eleito em 21/06/2014; investido em 09/10/2014. Sucedido por Stephen Dwain Wood em junho de 2024.
+- jurisdiction: gafcon
+  role: other
+  role_description: presidente do Conselho dos Primazes
+  end: '2023-04-21'
+  end_reason: term_end
+  status: probable
+  sources:
+  - source: ai-2023-04-22-gafcon-chair
+    quote: >-
+      the primates’ council elected Archbishop Mbanda to succeed the Most Rev. Foley Beach as leader of the Anglican
+      reform and renewal movement.
+  notes: Sucedido por Laurent Mbanda no GAFCON IV (Kigali, abril de 2023).
+- jurisdiction: gafcon
+  role: other
+  role_description: membro do Conselho dos Primazes
+  status: confirmed
+  sources:
+  - source: gacl-ai-2023-uxbridge
+    quote: The Most Reverend Foley Beach – North America
+  - source: gacl-ai-2016-beach
+    quote: He is a member of the GAFCON primates council and the Global South primates group
+  notes: >-
+    Membro em 2016 e em 9/11/2023 (pela América do Norte); em 2026 a ACNA é representada no Global Anglican Council
+    por Julian Dobbs.

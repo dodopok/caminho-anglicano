@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: nicholas-okoh
+name: Nicholas Okoh
+full_name: Nicholas Dikeriehi Orogodo Okoh
+aliases:
+- Nicholas Dikeriehi Orogodo Okoh
+- Nicholas Orogodo Okoh
+birth:
+  date: '1952-11-10'
+  sources:
+  - source: gacl-con-okoh
+    quote: born 10 November 1952, at Owa-Alero in the Delta State.
+biography: >-
+  Segundo bispo de Asaba (2001), arcebispo de Bendel (2005) e quarto primaz da Igreja da Nigéria (2010–2020).
+sources:
+- source: gacl-con-okoh
+  quote: born 10 November 1952, at Owa-Alero in the Delta State.
+ordinations:
+- order: diaconate
+  date: 1979-07
+  jurisdiction: church-of-nigeria
+  status: confirmed
+  sources:
+  - source: gacl-con-okoh
+    quote: He was ordained a deacon in July 1979 and a priest in July 1980.
+  - source: gacl-ai-2016-okoh
+    quote: Ordained deacon in 1979 and priest in 1980
+- order: presbyterate
+  date: 1980-07
+  jurisdiction: church-of-nigeria
+  status: confirmed
+  sources:
+  - source: gacl-con-okoh
+    quote: He was ordained a deacon in July 1979 and a priest in July 1980.
+- order: episcopate
+  date: 2001-05
+  jurisdiction: church-of-nigeria
+  office: diocesan
+  principal_consecrator: peter-akinola
+  status: probable
+  sources:
+  - source: gacl-con-okoh
+    quote: He was consecrated as the second bishop of the Diocese of Asaba in May 2001.
+  - source: gacl-ai-2016-okoh
+    quote: Archbishop Okoh was elected the second bishop of Asaba and consecrated in May 2001.
+  - source: gacl-wp-okoh
+    quote: '| consecration     = May 2001
+
+      | consecrated_by   = [[Peter Akinola]]'
+  notes: >-
+    Mês confirmado pelo site da Igreja da Nigéria; sagrante principal (Peter Akinola, então primaz) só pela infobox
+    da Wikipédia.
+affiliations:
+- jurisdiction: church-of-nigeria
+  role: diocesan_bishop
+  diocese: diocese-de-asaba
+  start: 2001-05
+  status: confirmed
+  sources:
+  - source: gacl-con-okoh
+    quote: >-
+      He was consecrated as the second bishop of the Diocese of Asaba in May 2001. He was elected the Archbishop
+      of the Ecclesiastical Province of Bendel on 22 July 2005
+  notes: Segundo bispo de Asaba; arcebispo de Bendel a partir de 22/07/2005.
+- jurisdiction: church-of-nigeria
+  role: primate
+  diocese: abuja
+  start: '2010-03-25'
+  end: '2020-03-25'
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: gacl-con-okoh
+    quote: He was installed as Primate on March 25, 2010. He retired on 25 March, 2020.
+  notes: Eleito em 15/09/2009; sucedeu Peter Akinola e foi sucedido por Henry Ndukuba.

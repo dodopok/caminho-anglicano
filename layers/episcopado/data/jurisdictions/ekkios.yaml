@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: ekkios
+acronym: EKKIOS
+name: EKKIOS
+type: missionary_district
+tradition: anglican
+description: >-
+  Movimento missionário que forma congregações em regiões predominantemente muçulmanas; descrito pelo GAFCON como
+  província em formação.
+sources:
+- source: gacm-tlc-2026-03-27-who-leads
+  quote: Yassir Eric of EKKIOS, a missionary movement forming congregations in predominantly Muslim regions
+- source: gace-gac-page
+  quote: Presiding Bishop of EKKIOS, a new Province in formation for MBB’s.
+relations:
+- type: member_of
+  target: gac
+  date: 2026-03
+  led_by:
+  - yassir-eric
+  status: confirmed
+  sources:
+  - source: gacm-tlc-2026-03-27-who-leads
+    quote: >-
+      Its regional advisers all lead “extra-provincial or missionary districts connected to the GAFCON movement.”
+      They are Archbishop Kanishka Raffel of Sydney (a diocesan bishop in the Anglican Church of Australia), and
+      Bishops Andy Lines of the Anglican Network in Europe, Jay Behan of the Church of Confessing Anglicans in Aotearoa
+      New Zealand, Glenn Davies of the Diocese of the Southern Cross (which serves parishes that have broken away
+      from the Anglican Church of Australia), and Yassir Eric of EKKIOS, a missionary movement forming congregations
+      in predominantly Muslim regions.
+  - source: gace-gac-page
+    quote: Presiding Bishop of EKKIOS, a new Province in formation for MBB’s.
+  notes: Seu bispo presidente Yassir Eric é conselheiro do Global Anglican Council.
