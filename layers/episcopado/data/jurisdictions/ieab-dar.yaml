@@ -10,36 +10,49 @@ aliases:
 - Diocese Setentrional
 - Diocese Setentrional (Recife)
 - Diocese Setentrional, Recife
+- Diocese do Recife (Diocese Setentrional)
 - Diocese do Recife (IEAB)
 - Diocese do Recife (Setentrional)
 type: diocese
 country: BR
 founded:
-  date: 1975-06
+  date: '1976-05-20'
   sources:
-  - source: ieab-serie-dar
-    quote: Comemorando 45 anos de presença 17/04/1975
-  - source: costa2021
-    quote: >-
-      Já a Diocese Setentrional foi criada em 1975 e instalada em 1976, sendo desmembrada da Diocese Central.
-  - source: ptwp-dar
-    quote: Foi criada em 1975 e instalada em 1976.
   - source: kickhofel-1995
     quote: >-
-      A Diocese de Recife foi oficialmente criada pelo Sínodo em junho de 1975, que recebeu um requerimento do concílio
-      da Diocese Central, pedindo o desmembramento de uma vasta área geográfica no norte e nordeste
-    page: '296'
+      A primeira foi a Diocese Sul Central em 1969; a segunda foi a Diocese Setentrional em 1976; e a terceira a
+      Diocese Missionária de Brasília em 1982.
+    page: '305'
+  - source: darl1-5297
+    quote: 'DIOCESE DO RECIFE: 36 ANOS DE RELEVANTES SERVIÇOS À IGREJA DO SENHOR (20-05-1976 / 20-05-2012)!!!'
+  - source: dard2-hist1
+    quote: >-
+      Em 20 de maio de 1976 encerra-se, definitivamente, o Ciclo da Capelania Britânica, com a criação, pelo Sínodo
+      Geral da agora Igreja Episcopal do Brasil, da Diocese Setentrional, com sede no Recife, desmembrada da Diocese
+      Central
+  - source: dard2-hist2
+    quote: >-
+      A Diocese Setentrional foi criada pelo Sínodo Geral da Igreja Episcopal do Brasil em 20 de Maio de 1976
+  - source: dard2-aniv33
+    quote: 33 anos (20/05/1976 - 20/05/2009)
+  - source: dard2-banner36
+    quote: 'DIOCESE DO RECIFE: 36 ANOS DE RELEVANTES SERVIÇOS À IGREJA DO SENHOR (20-05-1976 / 20-05-2012)'
   discrepancies:
   - field: date
-    value: '1976-05-20'
+    value: 1975-06
     sources:
+    - source: ieab-serie-dar
+      quote: Comemorando 45 anos de presença 17/04/1975
+    - source: costa2021
+      quote: >-
+        Já a Diocese Setentrional foi criada em 1975 e instalada em 1976, sendo desmembrada da Diocese Central.
+    - source: ptwp-dar
+      quote: Foi criada em 1975 e instalada em 1976.
     - source: kickhofel-1995
       quote: >-
-        A primeira foi a Diocese Sul Central em 1969; a segunda foi a Diocese Setentrional em 1976; e a terceira
-        a Diocese Missionária de Brasília em 1982.
-      page: '305'
-    - source: darl1-5297
-      quote: 'DIOCESE DO RECIFE: 36 ANOS DE RELEVANTES SERVIÇOS À IGREJA DO SENHOR (20-05-1976 / 20-05-2012)!!!'
+        A Diocese de Recife foi oficialmente criada pelo Sínodo em junho de 1975, que recebeu um requerimento do
+        concílio da Diocese Central, pedindo o desmembramento de uma vasta área geográfica no norte e nordeste
+      page: '296'
 website: https://dioceseanglicanaderecife.com.br/
 description: >-
   Criada pelo Sinodo em 1975 (17/04/1975 segundo a IEAB), instalada em 1976; abrangia Norte e Nordeste ate a criacao

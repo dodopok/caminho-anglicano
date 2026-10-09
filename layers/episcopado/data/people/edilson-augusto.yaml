@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: edilson-augusto
 name: Edilson Augusto
+aliases:
+- Edílson Augusto Pereira dos Santos
 biography: >-
   Empossado em 30/10/2011 como ministro encarregado da Missão Anglicana do Cristo, no bairro do Cristo, em João
   Pessoa (PB); antes servia na Paróquia Anglicana Comunhão.
@@ -23,3 +25,15 @@ affiliations:
   notes: >-
     Local: Missão Anglicana do Cristo, João Pessoa-PB. Rito de posse em 30/10/2011; antes servia na Paróquia Anglicana
     Comunhão (João Pessoa).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro auxiliar
+  status: confirmed
+  sources:
+  - source: dard2-com-pb
+    quote: >-
+      PARÓQUIA ANGLICANA COMUNHÃO Pároco: Rev. Márcio Medeiros Meira Ministro Auxiliar : Rev. Edílson Augusto Pereira
+      dos Santos
+  notes: >-
+    Local: Paróquia Anglicana Comunhão (Bessa, João Pessoa-PB; Arcediagado PB/RN/CE). Página "Comunidades" do arcediagado,
+    criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse.

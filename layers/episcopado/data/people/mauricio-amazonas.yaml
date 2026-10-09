@@ -76,7 +76,13 @@ affiliations:
   sources:
   - source: drp2-episcopaveis-2011
     quote: Sou pastor em tempo integral na Paróquia Anglicana Jardim das Oliveiras.
-  notes: 'Local: Paróquia Anglicana Jardim das Oliveiras. Em maio de 2011.'
+  - source: dard2-com-sul
+    quote: >-
+      Paróquia Anglicana Jardim das Oliveiras Pároco: Rev. Maurício Amazonas Auxiliar: Revda. Keyla Camargo
+  notes: >-
+    Local: Paróquia Anglicana Jardim das Oliveiras. Em maio de 2011. Local: Paróquia Anglicana Jardim das Oliveiras
+    (Setúbal, Recife-PE; Arcediagado Sul). Página "Comunidades" do arcediagado, criada em 20/08/2009 e capturada
+    em 29/11/2010; cargo atestado nesse intervalo, sem data de posse.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: vigário geral
@@ -85,7 +91,11 @@ affiliations:
   - source: drp2-episcopaveis-2011
     quote: >-
       quer na condição anterior de Presidente do Conselho Diocesano, quer na condição atual de Vigário-Geral
-  notes: Vigário-geral em maio de 2011; antes, presidente do Conselho Diocesano.
+  - source: dard2-clero-presb2
+    quote: Rev. Maurício Amazonas dos Santos, OSE … Vigário Geral
+  notes: >-
+    Vigário-geral em maio de 2011; antes, presidente do Conselho Diocesano. Vigário geral atestado na lista de presbíteros
+    publicada em 31/08/2009 e atualizada até 14/01/2010 (captura de 17/02/2010); início do cargo não informado.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: presidente do Conselho Diocesano
@@ -161,6 +171,16 @@ affiliations:
     Cargo atestado em 22/12/2009 e 29/06/2010 (assinaturas de artigos no site diocesano); também pároco da Paróquia
     Anglicana Jardim das Oliveiras. Em outubro de 2009 era presidente do Conselho Diocesano. Vigário-Geral da Diocese
     do Recife em abril de 2010 e fevereiro de 2012.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: dard2-clero-presb2
+    quote: Rev. Maurício Amazonas dos Santos, OSE
+  notes: >-
+    Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
+    de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim.
 events:
 - type: other
   date: '2011-05-05'

@@ -193,10 +193,16 @@ affiliations:
     quote: 09 – Rev. Márcio José de S. Simões – Ven. Arc. Centro
   - source: darn1-ressurreicao11
     quote: a Paróquia Anglicana da Ressurreição ( Rev. Márcio Simões ), em Vitória de Santo Antão (PE)
+  - source: dard2-com-home-2012
+    quote: >-
+      Arcediagado Centro Arcediago : Ven. Arc. Rev. Márcio José de Sousa Simões Adjunto : Rev. Geison Sávio de Holanda
+      Vasconcellos
   notes: >-
     Local: Arcediagado Centro. Citado como arcediago do Centro em 2012-08-18. Local: Arcediagado Centro. Arcediago
     Centro na barra lateral capturada em 07/01/2012; em maio de 2011 já aparece à frente da Paróquia Anglicana da
-    Ressurreição (Vitória de Santo Antão).
+    Ressurreição (Vitória de Santo Antão). Local: Arcediagado Centro. Lista da página "Comunidades" capturada em
+    02/03/2012; no texto convertido o título do arcediagado Norte não aparece, e a atribuição Centro/Norte segue
+    a ordem idêntica de 2009-2010. Início e fim não informados.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: pároco
@@ -226,6 +232,27 @@ affiliations:
   notes: >-
     Local: Missão Anglicana da Ressurreição, Vitória de Santo Antão-PE. Ministro encarregado da missão em agosto
     de 2008; em 2009 a comunidade já é chamada de Paróquia.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro encarregado
+  status: confirmed
+  sources:
+  - source: dard2-com-centro
+    quote: 'PARÓQUIA Anglicana da Ressurreição Ministro Encarregado: Rev. Márcio Simões'
+  notes: >-
+    Local: Paróquia Anglicana da Ressurreição (Vitória de Santo Antão-PE; Arcediagado Centro). Página "Comunidades"
+    do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de
+    posse.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: dard2-clero-presb2
+    quote: Rev. Márcio José de Sousa Simões
+  notes: >-
+    Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
+    de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim.
 events:
 - type: other
   date: '2017-05-06'

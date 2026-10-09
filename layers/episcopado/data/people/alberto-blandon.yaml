@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: alberto-blandon
+name: Alberto Blandon
+biography: >-
+  Presbítero ordenado no período do bispo Clóvis Erly Rodrigues (1986-1997), segundo Robinson Cavalcanti; em 2006
+  estaria no Canadá.
+sources:
+- source: dard2-hist3
+  quote: Alberto Blandon (no Canadá)
+ordinations:
+- order: presbyterate
+  date: null
+  jurisdiction: ieab-dar
+  ordained_by: clovis-erly-rodrigues
+  status: probable
+  sources:
+  - source: dard2-hist3
+    quote: Alberto Blandon (no Canadá)
+  notes: >-
+    Citado por Robinson Cavalcanti entre os ordenados no período do bispo Clóvis Erly Rodrigues (1986-1997); em
+    2006 estaria no Canadá. Data e local não constam; o ordenante é entendido como o bispo diocesano da época.

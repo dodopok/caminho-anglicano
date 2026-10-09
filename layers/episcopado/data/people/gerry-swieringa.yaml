@@ -1,9 +1,16 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: gerry-swieringa
 name: Gerry Swieringa
+biography: >-
+  Diácono ordenado em 13/06/2009 em Bellingham (Washington), ligado ao Arcediagado Norte-Americano da Diocese do
+  Recife.
+sources:
+- source: dard2-us-v
+  quote: Ordinando ao Diaconato Gerry Swieringa
 ordinations:
 - order: diaconate
-  date: '2009'
+  date: '2009-06-13'
+  place: Bellingham, Washington (EUA), Paróquia St. Brenda's
   jurisdiction: diocese-anglicana-recife
   ordained_by: robinson-cavalcanti
   status: probable
@@ -12,6 +19,15 @@ ordinations:
     quote: >-
       a pedido da Paróquia St. Brendan's, em Bellingham, Wa (ligada a ACiC), Ordenará ao Diaconato o Candidato Gerry
       Swieringa
+  - source: dard2-us-v
+    quote: Ordinando ao Diaconato Gerry Swieringa
+  - source: dard2-us-v
+    quote: >-
+      Foi um belo culto, e o novo Diácono pediu que o ofertório fosse destinado a ajudar ao pagamento do nosso novo
+      Livro de Oração Comum Brasileiro
   notes: >-
     Ordenação anunciada em 25/05/2009, a pedido da Paróquia St. Brendan's, em Bellingham (Washington), ligada à
-    ACiC; sem data exata na nota.
+    ACiC; sem data exata na nota. Ordenação diaconal no sábado 13/06/2009, em Bellingham, na Paróquia St. Brenda's
+    (ligada à Anglican Church in Canada, Província de Ruanda), cuja coadjutora, Pamela Schmaling, e o ordinando
+    eram vinculados ao Recife. O diário não diz expressamente quem impôs as mãos; Robinson Cavalcanti, que narra
+    o culto e instalou a paróquia um ano antes, é entendido como ordenante.

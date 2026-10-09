@@ -52,6 +52,38 @@ def nomes():
     return n
 
 
+LIDERANCA = {'founder', 'primate', 'archbishop', 'diocesan_bishop', 'coadjutor_bishop', 'bishop', 'missionary_bishop'}
+
+
+def entradas():
+    """Para cada jurisdição: quem a liderou (vínculos de pessoas) e quem saiu dela ou a sucedeu (relações)."""
+    idx = {}
+    for f in (DATA / 'people').glob('*.yaml'):
+        d = yaml.load(f.read_text(), Loader=Loader)
+        for a in d.get('affiliations') or []:
+            if a['role'] in LIDERANCA or (a['role'] == 'other' and re.search(r'primaz|arcebisp|bispo|fundador|presidente',
+                                                                              a.get('role_description') or '', re.I)):
+                for j in {a['jurisdiction'], a.get('diocese')} - {None}:
+                    idx.setdefault(j, []).append(('pessoa', d['id'], a))
+    for f in (DATA / 'jurisdictions').glob('*.yaml'):
+        d = yaml.load(f.read_text(), Loader=Loader)
+        for r in d.get('relations') or []:
+            if r['type'] in ('schism_from', 'successor_of', 'merged_with', 'part_of'):
+                idx.setdefault(r['target'], []).append(('jurisdicao', d['id'], r))
+    return idx
+
+
+def tamanho(n):
+    """Tamanho sugerido do resumo conforme a quantidade de fatos da ficha."""
+    if n <= 3:
+        return 'uma frase (até ~250 caracteres)'
+    if n <= 10:
+        return '2 a 3 frases (até ~500 caracteres)'
+    if n <= 30:
+        return '4 a 6 frases (até ~900 caracteres)'
+    return '7 a 12 frases (até ~1.800 caracteres), cobrindo cada fase do ministério ou da história'
+
+
 def codigo(s):
     """Código estável de uma citação (fonte + trecho), para o resumo apontar sem copiar o trecho."""
     return 'c' + hashlib.md5(f"{s['source']}|{s.get('quote') or ''}".encode()).hexdigest()[:6]
@@ -78,6 +110,13 @@ def linhas_fatos(kind, d, N):
         for e in d.get('events') or []:
             out.append(f"- evento {e['type']} {e.get('date') or 's/d'}: {e.get('description', '')[:200]} | {fmt_src(e)}")
     else:
+        for tipo, id_, c in sorted(ENTRADAS.get(d['id'], []), key=lambda x: str(x[2].get('start') or x[2].get('date') or '9999')):
+            if tipo == 'pessoa':
+                papel = c.get('role_description') or c['role']
+                out.append(f"- liderança: {N.get(id_, id_)} como {papel} {c.get('start') or '?'}–{c.get('end') or ''}"
+                           f" [{c['status']}] | {fmt_src(c)}")
+            else:
+                out.append(f"- {N.get(id_, id_)} {c['type']} esta jurisdição {c.get('date') or '?'} [{c['status']}] | {fmt_src(c)}")
         for campo in ('founded', 'dissolved'):
             if d.get(campo):
                 out.append(f"- {campo}: {d[campo].get('date')} | {fmt_src(d[campo])}")
@@ -100,6 +139,9 @@ def dossie(args):
             p = Path(a)
             if p.parent.name in ('people', 'jurisdictions') and (AQUI.parent.parent.parent / a).exists():
                 ids.append(('person' if p.parent.name == 'people' else 'jurisdiction', p.stem))
+    if args.todas:
+        ids += [('person', f.stem) for f in sorted((DATA / 'people').glob('*.yaml'))]
+        ids += [('jurisdiction', f.stem) for f in sorted((DATA / 'jurisdictions').glob('*.yaml'))]
     N = nomes()
     fichas = []
     for kind, id_ in dict.fromkeys(ids):
@@ -110,14 +152,20 @@ def dossie(args):
         fichas.append((kind, id_, d, fatos))
     saida = Path(args.saida)
     saida.mkdir(parents=True, exist_ok=True)
-    for n in range(0, len(fichas), args.lote):
-        partes = []
-        for kind, id_, d, fatos in fichas[n:n + args.lote]:
-            atual = d.get(CAMPO[kind])
-            partes.append(f"## {id_} ({'pessoa' if kind == 'person' else 'jurisdição'}): {d['name']}\n"
-                          f"Resumo atual: {atual or '(nenhum)'}\n" + '\n'.join(fatos) + '\n')
-        (saida / f'dossie-{n // args.lote + 1:02d}.md').write_text('\n'.join(partes))
-    print(f'{len(fichas)} ficha(s) em {(len(fichas) + args.lote - 1) // args.lote} dossiê(s) em {saida}')
+    # Lotes por volume de texto, não por número de fichas: uma ficha grande (Robinson) pesa como dezenas de pequenas.
+    lotes, atual_, tam = [], [], 0
+    for kind, id_, d, fatos in fichas:
+        bloco = (f"## {id_} ({'pessoa' if kind == 'person' else 'jurisdição'}): {d['name']}\n"
+                 f"Fatos: {len(fatos)} — tamanho do resumo: {tamanho(len(fatos))}\n"
+                 f"Resumo atual: {d.get(CAMPO[kind]) or '(nenhum)'}\n" + '\n'.join(fatos) + '\n')
+        if atual_ and (tam + len(bloco) > args.chars or len(atual_) >= args.lote):
+            lotes.append(atual_); atual_, tam = [], 0
+        atual_.append(bloco); tam += len(bloco)
+    if atual_:
+        lotes.append(atual_)
+    for n, lote in enumerate(lotes, 1):
+        (saida / f'dossie-{n:02d}.md').write_text('\n'.join(lote))
+    print(f'{len(fichas)} ficha(s) em {len(lotes)} dossiê(s) em {saida}')
 
 
 def aplicar(args):
@@ -139,6 +187,8 @@ def aplicar(args):
                 for v in x:
                     junta(v)
         junta({k: v for k, v in d.items() if k != 'sources'} | {'_': d.get('sources')})
+        if kind == 'jurisdiction':
+            junta([c for _, _, c in ENTRADAS.get(id_, [])])
         fontes = []
         for c in it.get('citacoes') or []:
             if c in por_codigo:
@@ -174,10 +224,13 @@ a = sub.add_parser('dossie')
 a.add_argument('--ids', nargs='*')
 a.add_argument('--desde')
 a.add_argument('--saida', required=True)
-a.add_argument('--lote', type=int, default=30)
+a.add_argument('--todas', action='store_true', help='todas as fichas da base')
+a.add_argument('--lote', type=int, default=60, help='máximo de fichas por dossiê')
+a.add_argument('--chars', type=int, default=90000, help='tamanho máximo de um dossiê, em caracteres')
 a.add_argument('--minimo', type=int, default=2, help='mínimo de fatos para valer um resumo')
 b = sub.add_parser('aplicar')
 b.add_argument('arquivo')
 b.add_argument('--write', action='store_true')
 args = ap.parse_args()
+ENTRADAS = entradas()
 dossie(args) if args.cmd == 'dossie' else aplicar(args)

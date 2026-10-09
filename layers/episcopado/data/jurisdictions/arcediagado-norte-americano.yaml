@@ -4,6 +4,41 @@ name: Arcediagado Norte-Americano
 type: diocese
 tradition: anglican
 country: US
+founded:
+  date: '2005'
+  sources:
+  - source: dard2-hist6
+    quote: vindo a se constituir o Arcediagado dos EUA, sob a liderança do Venerável Arcediago Rev. Ducan Clark
+  - source: dard2-us-iii
+    quote: >-
+      o Arcediagado Norte-Americano de nossa Diocese cessa de existir a partir do próximo dia 24, para se integrar
+      à nova Província
+  - source: dard2-arc-na
+    quote: 'Arcediagado Especial da América do Norte - EUA Arcediago : Ven. Arc. Rev. Duncan Clark'
+dissolved:
+  date: '2009-06-24'
+  sources:
+  - source: dard2-hist6
+    quote: vindo a se constituir o Arcediagado dos EUA, sob a liderança do Venerável Arcediago Rev. Ducan Clark
+  - source: dard2-us-iii
+    quote: >-
+      o Arcediagado Norte-Americano de nossa Diocese cessa de existir a partir do próximo dia 24, para se integrar
+      à nova Província
+  - source: dard2-arc-na
+    quote: 'Arcediagado Especial da América do Norte - EUA Arcediago : Ven. Arc. Rev. Duncan Clark'
+description: >-
+  Arcediagado da Diocese Anglicana do Recife formado por paróquias e missões anglicanas dos Estados Unidos, sob
+  a liderança do arcediago Duncan Clark. Segundo Robinson Cavalcanti, deixaria de existir em 24/06/2009 para integrar-se
+  à nova Igreja Anglicana na América do Norte (ACNA), com dupla filiação provisória das comunidades.
+sources:
+- source: dard2-hist6
+  quote: vindo a se constituir o Arcediagado dos EUA, sob a liderança do Venerável Arcediago Rev. Ducan Clark
+- source: dard2-us-iii
+  quote: >-
+    o Arcediagado Norte-Americano de nossa Diocese cessa de existir a partir do próximo dia 24, para se integrar
+    à nova Província
+- source: dard2-arc-na
+  quote: 'Arcediagado Especial da América do Norte - EUA Arcediago : Ven. Arc. Rev. Duncan Clark'
 relations:
 - type: part_of
   target: diocese-anglicana-recife
@@ -35,3 +70,17 @@ relations:
       em uma caravana de dez pessoas, liderada pelos Reverendos: Richard Haynes e Scott Browning
   - source: darb2-breves-05
     quote: Scott Browning (este em transferência canônica para a Diocese do Recife)
+  - source: dard2-hist6
+    quote: vindo a se constituir o Arcediagado dos EUA, sob a liderança do Venerável Arcediago Rev. Ducan Clark
+  - source: dard2-us-iii
+    quote: >-
+      As 05 Paróquias que integram o Arcediagado Norte-Americano da Diocese do Recife farão parte de 03 Dioceses
+      diferentes na nova estrutura local
+  date: '2005'
+  end: '2009-06-24'
+  led_by:
+  - duncan-clark
+  notes: >-
+    O ano 2005 vem do relato de Robinson sobre a recepção das comunidades norte-americanas naquele ano (publicado
+    em 2006); o fim, 24/06/2009, é a data anunciada por ele em junho de 2009 para a integração à ACNA, ainda futura
+    no momento do diário.

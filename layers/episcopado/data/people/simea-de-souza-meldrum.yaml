@@ -17,6 +17,19 @@ ordinations:
     page: '373'
   notes: >-
     Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel, 1995); ordenante não informado.
+- order: presbyterate
+  date: null
+  jurisdiction: ieab-dar
+  ordained_by: clovis-erly-rodrigues
+  status: probable
+  sources:
+  - source: dard2-hist3
+    quote: >-
+      Foram ordenados, durante o seu período os seguintes reverendos: Washington Franco e Siméa Meldrum (os únicos
+      dos seus Presbíteros que continuam conosco)
+  notes: >-
+    Robinson Cavalcanti lista Siméa Meldrum entre os presbíteros ordenados no período do bispo Clóvis Erly Rodrigues
+    (1986-1997); data e local não constam. O ordenante é entendido como o bispo diocesano da época.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -82,3 +95,24 @@ affiliations:
   notes: >-
     Local: Paróquia Anglicana Água Viva, Olinda-PE. Identificada como a responsável pela Paróquia Água Viva no convite
     à 1ª Conferência Missionária da Missão Sul-Americana (05 e 06/10/2012); a nota não diz o título.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro da equipe pastoral
+  status: confirmed
+  sources:
+  - source: dard2-com-norte
+    quote: Paróquia Anglicana Água Viva Revda. Siméa Meldrum Rev. Ian Meldrum
+  notes: >-
+    Local: Paróquia Anglicana Água Viva (Olinda-PE; Arcediagado Norte). Página "Comunidades" do arcediagado, criada
+    em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse. A página lista os
+    dois nomes sob a paróquia, sem indicar o cargo.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: dard2-clero-presb2
+    quote: Revda. Siméa de Souza Meldrum
+  notes: >-
+    Lista "Clérigos(as) Presbíteros(as) Continuação", publicada em 31/08/2009 e atualizada em 14/01/2010 (captura
+    de 17/02/2010); o vínculo vale para esse período, sem datas de início e fim.

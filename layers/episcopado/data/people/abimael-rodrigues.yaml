@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: abimael-rodrigues
 name: Abimael Rodrigues
+ordinations:
+- order: diaconate
+  date: null
+  jurisdiction: ieab-dar
+  ordained_by: clovis-erly-rodrigues
+  status: probable
+  sources:
+  - source: dard2-hist3
+    quote: Abimael Rodrigues (em Livramento-RS, Diocese Sul-Ocidental)
+  notes: >-
+    Citado por Robinson Cavalcanti entre os ordenados "apenas ao Diaconato" no período do bispo Clóvis Erly Rodrigues
+    (1986-1997), e situado em 2006 em Livramento (RS), Diocese Sul-Ocidental. Data e local da ordenação não constam;
+    o ordenante é entendido como o bispo diocesano da época.
 events:
 - type: other
   date: null

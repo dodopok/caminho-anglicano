@@ -44,10 +44,13 @@ página sem ordenações nem cargos).
 Você recebe um dossiê (`dossie-NN.md`) gerado por `resumos.py`: para cada ficha, o resumo atual e os fatos
 registrados, cada citação com um código (`c1a2b3c`). Escreva um resumo NOVO para cada ficha e grave um JSON
 `[{ "id": "<id>", "texto": "...", "citacoes": ["c1a2b3c", ...] }]` no caminho indicado no prompt.
-- Pessoa: 1 a 3 frases (até ~450 caracteres) com o essencial do ministério em ordem cronológica: ordenações
-  (com quem ordenou/sagrou, se houver), cargos principais e mais altos, igrejas por onde passou, rupturas e
-  mudanças de igreja, situação atual ou falecimento. Jurisdição: o que é, quando e de onde surgiu, a que pertence,
-  quem a lidera, mudanças importantes.
+- Tamanho: siga o "tamanho do resumo" de cada ficha no dossiê (calculado pelo número de fatos): uma frase para
+  fichas com poucos fatos, um parágrafo de até ~1.800 caracteres para trajetórias longas (ex.: Robinson
+  Cavalcanti), cobrindo cada fase. Um único parágrafo, sem quebras de linha.
+- Pessoa: o essencial do ministério em ordem cronológica: ordenações (com quem ordenou/sagrou, se houver), cargos
+  principais e mais altos, igrejas por onde passou, rupturas e mudanças de igreja, situação atual ou falecimento.
+  Jurisdição: o que é, quando e de onde surgiu, a que pertence, quem a liderou (linhas "liderança" do dossiê),
+  divisões e mudanças importantes.
 - Só o que está no dossiê. Fato `contested` entra só se o texto deixar claro que há versões; `probable` pode entrar
   sem destaque. Não invente datas nem cargos; prefira a forma mais precisa que aparece.
 - `citacoes`: os códigos dos trechos que sustentam cada fato citado no texto (normalmente 3 a 8).
