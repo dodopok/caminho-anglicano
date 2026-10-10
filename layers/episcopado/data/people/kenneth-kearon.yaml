@@ -1,6 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: kenneth-kearon
 name: Kenneth Kearon
+biography: >-
+  Diretor da Escola de Ecumenismo de Dublin, foi designado em 2004 por Rowan Williams secretário-geral da Comunhão
+  Anglicana, no lugar de John Peterson, e em agosto de 2013, nesse cargo, visitou o Recife para acompanhar a situação
+  da crise de 2005.
+sources:
+- source: d2s31-not04
+  quote: >-
+    O Arcebispo de Cantuária, Sua Graça Rowan Williams, designou o Rev. Cônego Kenneth Kearon, atual diretor da
+    Escola de Ecumenismo de Dublin, Irlanda, como Secretário Geral da Comunhão Anglicana, em substituição ao Rev.
+    Cônego John Peterson.
+- source: costa2021
+  quote: >-
+    em agosto de 2013 o então Secretário-Geral da Comunhão Anglicana, o bispo Kenneth Kearon, veio ao Recife
+  page: '242'
 affiliations:
 - jurisdiction: anglican-communion
   role: other

@@ -1,6 +1,23 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: john-guernsey
 name: John Guernsey
+biography: >-
+  Sagrado bispo em setembro de 2007 por Henry Orombi, em Mbarara (Uganda), para congregações dos EUA, era reitor
+  da Paróquia de All Saints, na Virgínia; foi co-sagrante de Stephen Dwain Wood.
+sources:
+- source: darl3-n4213
+  quote: >-
+    A Igreja Anglicana de Uganda sagrou um ministro norte-americano como Bispo para liderar algumas congregações
+    daquele país que se opõem ao homossexualismo
+- source: darl3-n4213
+  quote: O Arcebispo Henri Orombi presidiu a cerimônia na Catedral de St. James, Ruharo, em Mbarara
+- source: darl3-n4213
+  quote: O novo Bispo, Rev. John Guernsey é Reitor da Paróquia de All Saints, na Virgínia, EUA
+- source: gacl-acna-wood-bio
+  quote: >-
+    Archbishop Wood was elected as the first Bishop of the Diocese of the Carolinas by the College of Bishops on
+    June 5, 2012. He was consecrated Bishop at St. Andrew’s Anglican Church in Mt. Pleasant, SC by Archbishop Robert
+    Duncan on August 25, 2013. Co-Consecrators included ACNA Bishops Roger Ames, Alphonza Gadsen, and John Guernsey.
 ordinations:
 - order: episcopate
   date: 2007-09

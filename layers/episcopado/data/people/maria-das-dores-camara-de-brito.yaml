@@ -1,9 +1,15 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: maria-das-dores-camara-de-brito
 name: Maria das Dores Câmara de Brito
-biography: Postulante ao ministério ordenado na Diocese do Recife em 2009-2010.
+biography: >-
+  Maria das Dores Câmara de Brito foi postulante e candidata às sagradas ordens na Diocese Anglicana do Recife,
+  em listas de 2009 e 2010.
 sources:
 - source: dard2-clero-post
+  quote: Maria das Dores Câmara de Brito
+- source: dard2-clero-post
+  quote: Postulantes ao Ministério Ordenado … Maria das Dores Câmara de Brito
+- source: d2s17-clero-cand-2010
   quote: Maria das Dores Câmara de Brito
 affiliations:
 - jurisdiction: diocese-anglicana-recife

@@ -1,6 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: maria-de-fatima-fonseca-de-figueiredo
 name: Maria de Fátima Fonseca de Figueiredo
+biography: >-
+  Aparece nas listas da Diocese Anglicana do Recife como postulante e ministra local, e como ministra encarregada
+  do Ponto Missionário Anglicano Redenção.
+sources:
+- source: d2s17-clero-ml-2010
+  quote: Maria de Fátima Fonseca de Figueiredo
+- source: dard2-com-pb
+  quote: 'Ministra Local: Maria de Fátima Figueiredo'
+- source: dard2-com-pb
+  quote: 'PONTO MISSIONÁRIO ANGLICANO REDENÇÃO Ministra encarregada: Ministra Local Maria de Fátima figueiredo'
+- source: dard2-clero-post
+  quote: Maria de Fátima Fonseca de Figueiredo
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: other

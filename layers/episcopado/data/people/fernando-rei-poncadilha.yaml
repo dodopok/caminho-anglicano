@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: fernando-rei-poncadilha
 name: Fernando Rei Ponçadilha
+biography: >-
+  Leigo ordenado diácono em 27/6/1998 por Robinson Cavalcanti, foi depois ordenado presbítero e atuou como ministro
+  encarregado da Missão de São João Batista.
+sources:
+- source: cant-amazonia
+  quote: >-
+    Em 27 de junho de 1998 o leigo Fernando Rei Ponçadilha é ordenado ao diaconato pelo bispo Robinson Cavalcanti
+- source: d2s28-m05
+  quote: >-
+    Instituímos Fernando Ponçadilha Ministro Leigo, e, depois, o ordenamos diácono e presbítero, Ministro Encarregado
+    da Missão de São João Batista
+- source: d2s28-m05
+  quote: o ordenamos diácono e presbítero, Ministro Encarregado da Missão de São João Batista
 ordinations:
 - order: diaconate
   date: '1998-06-27'

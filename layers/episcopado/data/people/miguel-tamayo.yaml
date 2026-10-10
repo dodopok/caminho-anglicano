@@ -1,12 +1,32 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: miguel-tamayo
 name: Miguel Tamayo
-biography: Bispo do Uruguai; presente na sagracao de Francisco de Assis da Silva (2011).
+biography: >-
+  Miguel Tamayo, bispo de nacionalidade cubana, era bispo diocesano do Uruguai, diocese da Igreja Anglicana do Cone
+  Sul desde 1988. Presidiu o Sínodo Extraordinário de Montevidéu, de 12 de novembro de 2010, que decidiu por maioria
+  simples desvincular a igreja do Cone Sul e transferi-la para outra província da Comunhão Anglicana. Em 20 de março
+  de 2011 foi co-sagrante de Francisco de Assis da Silva.
 sources:
-- source: costa2021
-  quote: Miguél Tamayo, da Diocese do Uruguai
 - source: d2s19-uruguai
   quote: sob a presidência do Bispo Miguel Tamayo (de nacionalidade cubana)
+- source: d2s19-uruguai
+  quote: >-
+    a Igreja Anglicana do Uruguai, em um Sínodo Extraordinário reunido na cidade de Montevidéu, em 12.11.2010, sob
+    a presidência do Bispo Miguel Tamayo (de nacionalidade cubana), deliberou, por maioria simples dos clérigos
+    e leigos, se desvincular da Igreja Anglicana do Cone Sul da
+- source: d2s19-uruguai
+  quote: >-
+    América (da qual era uma Diocese desde a fundação em 1988) e se transferir para uma outra Província da Comunhão
+    Anglicana.
+- source: d2s19-uruguai
+  quote: >-
+    O Uruguai demanda a anuência e o apoio do Cone Sul para se transferir para outra Província dentro de um ano.
+- source: costa2021
+  quote: Miguél Tamayo, da Diocese do Uruguai
+- source: costa2021
+  quote: >-
+    O ofício de sagração ocorreu no dia 20 de março de 2011, na Catedral do Mediador, em Santa Maria, com a presença
+    de todos os bispos em atividade no Brasil e outros convidados111.
 affiliations:
 - jurisdiction: diocese-do-uruguai
   role: diocesan_bishop

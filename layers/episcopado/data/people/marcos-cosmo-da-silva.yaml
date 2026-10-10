@@ -1,12 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcos-cosmo-da-silva
 name: Marcos Cosmo da Silva
-biography: Clérigo licenciado da Diocese do Recife em 2004.
+biography: >-
+  Marcos Cosmo da Silva constava em 2004 entre os clérigos licenciados da Diocese do Recife. Em outra lista diocesana,
+  de data não informada, aparece entre os presbíteros e como presidente da Comissão de Eleição.
 sources:
 - source: d2s28-clero04
   quote: Clérigos(as) Licenciados (as) - (05) ... Marcos Cosmo da Silva (12/12)
 - source: d2s31-clero
+  quote: Presbíteros(as) - (12)
+- source: d2s31-clero
   quote: Rev. Marcos Cosmo da Silva
+- source: d2s31-sec
+  quote: 'Comissão de Eleição : i. Rev. Marcos Cosmo da Silva (Pres.)'
 affiliations:
 - jurisdiction: ieab
   role: clergy

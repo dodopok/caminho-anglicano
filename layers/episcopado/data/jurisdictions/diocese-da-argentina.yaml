@@ -2,6 +2,13 @@
 id: diocese-da-argentina
 name: Diocese da Argentina
 type: diocese
+description: >-
+  Diocese da Igreja Anglicana do Cone Sul, em que Gregory Venables continuaria como bispo, acumulando provisoriamente
+  a Diocese do Norte da Argentina.
+sources:
+- source: d2s20-cone-sul-primaz
+  quote: >-
+    continuará como Bispo da Diocese da Argentina, acumulando, provisoriamente, a Diocese do Norte da Argentina
 relations:
 - type: part_of
   target: iacs
