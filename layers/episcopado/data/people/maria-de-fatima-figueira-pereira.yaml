@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: maria-de-fatima-figueira-pereira
 name: Maria de Fátima Figueira Pereira
+aliases:
+- Revda. Fátima F. Pereira
 death:
   date: 2009-04
   sources:
@@ -20,6 +22,10 @@ sources:
   quote: 'Ministro Encarregado: Rev. Daniel Barbosa Ministra Auxiliar: Revda. Fátima Figueira Pereira'
 - source: dard1-aniversario-2009
   quote: 'Alocução do Bispo Diocesano: Ofício Fúnebre da Revda. Maria de Fátima F. Pereira (17/04/2009)'
+- source: d2s05-fatima-gaibu
+  quote: >-
+    A Paróquia Anglicana Jesus de Nazaré em Gaibú, se solidariza com os familiares da Revda. Fátima F. Pereira e
+    permanece em oração pelas consolações do Espírito Santo de Deus
 ordinations:
 - order: diaconate
   date: '2008-07-05'
@@ -64,3 +70,9 @@ events:
   sources:
   - source: dard1-aniversario-2009
     quote: 'Alocução do Bispo Diocesano: Ofício Fúnebre da Revda. Maria de Fátima F. Pereira (17/04/2009)'
+  - source: d2s05-fatima-gaibu
+    quote: >-
+      A Paróquia Anglicana Jesus de Nazaré em Gaibú, se solidariza com os familiares da Revda. Fátima F. Pereira
+      e permanece em oração pelas consolações do Espírito Santo de Deus
+  - source: d2s05-fatima-gaibu
+    quote: Obrigado, Revda. Fátima!

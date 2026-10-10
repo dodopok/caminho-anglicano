@@ -1,6 +1,10 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: elton-roney
 name: Elton Roney
+full_name: Elton Roney Carvalho
+aliases:
+- Elton Carvalho
+- Elton Roney Carvalho
 biography: >-
   Foi ordenado diácono em 1/5/2013 por Miguel Uchôa, na Diocese Anglicana do Recife, após constar como postulante
   e ministro local.
@@ -15,6 +19,10 @@ sources:
   quote: sermão proferido pelo Nosso Bispo Diocesano, Revmo. Miguel Uchoa
 - source: dard1-com-pbrnce-2009a
   quote: 'Ministro Local: Post. Elton Roney'
+- source: d2s17-elton-33
+  quote: Estou nessa Diocese desde 2005
+- source: d2s17-elton-33
+  quote: é Postulante e, também, Seminarista do SAT-PB
 ordinations:
 - order: diaconate
   date: '2013-05-01'
@@ -45,3 +53,33 @@ affiliations:
   notes: >-
     Local: Paróquia Anglicana Cristo Libertador (João Pessoa). Consta na página de comunidades do Arcediagado PB/RN/CE
     capturada em 03/01/2009 (sem data de publicação visível). Consta como postulante ("Post.").
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: seminarista
+  status: confirmed
+  sources:
+  - source: d2s08-elton-neopent
+    quote: >-
+      Elton Roney Carvalho é Seminarista da Diocese do Recife, aluno do Seminário Anglicano Teológico – SAT-PB;
+      participa ativamente do Arcediagado Paraíba.
+  notes: >-
+    Local: Arcediagado Paraíba (SAT-PB). Descrito como seminarista da Diocese do Recife, aluno do SAT-PB, ativo
+    no Arcediagado Paraíba, em artigo escrito em maio de 2008.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: postulante
+  status: confirmed
+  sources:
+  - source: d2s17-elton-33
+    quote: é Postulante e, também, Seminarista do SAT-PB
+  notes: >-
+    Local: Paróquia Anglicana Comunhão (João Pessoa-PB; Arcediagado Paraíba). Apresentado em 01/07/2009 como postulante
+    e seminarista do SAT-PB (Seminário Anglicano Teológico), membro da equipe pastoral da Paróquia Anglicana Comunhão.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: equipe pastoral
+  status: confirmed
+  sources:
+  - source: d2s17-elton-33
+    quote: faz parte da Equipe Pastoral da Paróquia Anglicana Comunhão, no Arcediagado Paraíba
+  notes: 'Local: Paróquia Anglicana Comunhão (João Pessoa-PB; Arcediagado Paraíba). Em 01/07/2009.'

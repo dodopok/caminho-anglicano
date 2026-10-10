@@ -251,6 +251,50 @@ sources:
   quote: >-
     Ministro(a)s procedentes de Dioceses da Comunhão Anglicana, ou de Igrejas em comunhão com a mesma, serão admitidos
     na Diocese do Recife mediante apresentação de Carta Dimissória do Bispo da Diocese de origem
+- source: d2s06-canon01
+  quote: estabelecida originalmente pelo Sínodo da Igreja Episcopal Anglicana do Brasil (IEAB)
+- source: d2s06-canon01
+  quote: sucessora eclesiástica da Diocese Setentrional e da Diocese Anglicana do Recife
+- source: d2s06-canon01
+  quote: >-
+    A DR exerce a sua jurisdição nos Estados da Bahia, Sergipe, Alagoas, Pernambuco, Paraíba, Rio Grande do Norte,
+    Ceará, Maranhão e Piauí.
+- source: d2s10-c11
+  quote: O Bispo Diocesano é o presidente ex-ofício do Cabido.
+- source: d2s06-canon17
+  quote: A Diocese do Recife poderá criar Arcediagados, como sub-regiões eclesiásticas
+- source: d2s06-canon17
+  quote: designado(a) pelo Bispo dentre os(as) Presbíteros(as) da Diocese, com mandato anual, renovável
+- source: d2s06-canon08
+  quote: composto por 04 (quatro) Clérigos(as) e 04 (quatro) leigos(as)
+- source: d2s06-canon09
+  quote: >-
+    (01) Secretaria Diocesana Administrativa; (02) Secretaria Diocesana de Ação Social; (03) Secretaria Diocesana
+    de Direitos Humanos; (04) Secretaria Diocesana de Educação; (05) Secretaria Diocesana de Homens; (06) Secretaria
+    Diocesana de Intercessão; (07) Secretaria Diocesana de Juventude; (08) Secretaria Diocesana de Missão e Evangelismo;
+    (09) Secretaria Diocesana de Mulheres; (10) Tesouraria Diocesana.
+- source: d2s06-canon06
+  quote: Pode haver na Diocese até 02 (dois) Bispos Sufragâneos, que são assistentes do Bispo Diocesano
+- source: d2s06-canon07
+  quote: >-
+    dentre Presbíteros Regulares e ativos, maiores de 40 (quarenta) anos, e com um mínimo de 10 (dez) anos de Ordenação,
+    realiza-se em uma Reunião Extraordinária do Concílio
+- source: d2s06-canon03
+  quote: >-
+    O Concílio é presidido pelo Bispo e, no seu impedimento, pelo Bispo Coadjutor, pelo Bispo Sufragâneo ou pelo(a)
+    Presbítero(a) Presidente do Conselho Diocesano, nesta ordem.
+- source: d2s06-canon12
+  quote: Considera-se Ponto Missionário um núcleo de pessoas que se reúne periodicamente para a adoração
+- source: d2s06-canon12
+  quote: >-
+    Considera-se Missão um núcleo de pessoas, composto por, no mínimo, 20 (vinte) membros em plena comunhão com
+    a Igreja
+- source: d2s10-c28
+  quote: poderão ser recebidos e ter as suas Ordens reconhecidas na DR mediante requerimento
+- source: d2s06-canon36
+  quote: >-
+    O Seminário Anglicano Teológico de Pernambuco (SAT-PE) e o Seminário Anglicano Teológico da Paraíba (SAT-PB)
+    são os Seminários Diocesanos
 relations:
 - type: broke_communion_with
   target: ieab
@@ -430,6 +474,11 @@ relations:
       21. E, desde já, agradecemos a Deus pelos projetos que caminham para a concretização, muito em breve, de nossa
       saída do status de “Diocese Extraterritorial” no Cone Sul com indicativo sinodal de caráter “Permanente e
       Regular”, além da eleição de um Bispo Sufragâneo.
+  - source: d2s08-doutrina-org
+    quote: >-
+      há as exceções denominadas de Dioceses Extra-Provincial (ligadas diretamente a um Primaz, como Portugal, Espanha
+      e Bermudas, em relação ao Primaz de Cantuária, ou a Diocese do Recife, na atual conjuntura, ligada ao Primaz
+      do Cone Sul)
   notes: >-
     Como diocese extra-provincial, com supervisão episcopal de Gregory Venables. Data só aproximada ('two years
     later' após 2005). Fontes posteriores divergem sobre o vínculo ter sido de fato provincial: pt-wiki diz que
@@ -437,7 +486,9 @@ relations:
     autoridade primacial (supervisão) desde set/2005; em mai/2008 a integração plena à Província ainda era tratada
     como futura. Em outubro de 2009 a Diocese do Recife está sob a supervisão do primaz do Cone Sul com o status
     de "Diocese Extraterritorial", e o clero espera a mudança para um status sinodal "Permanente e Regular". Situação
-    descrita em out/2009 (balanço do clero ao bispo); não é a data de início.
+    descrita em out/2009 (balanço do clero ao bispo); não é a data de início. Texto de ensino da diocese (postado
+    em 18/09/2009) que descreve a Diocese do Recife como diocese extra-provincial ligada ao Primaz da Igreja Anglicana
+    do Cone Sul.
   discrepancies:
   - field: date
     value: c.2007
@@ -506,6 +557,13 @@ relations:
     quote: >-
       Carta-Documento do Primaz da Igreja Anglicana do Cone Sul, Revmo. Gregory J. Venables , reconhecendo as suas
       Ordens e Ministérios, e os colocando sob a sua proteção e autoridade primacial
+  - source: d2s08-amaz-episc2
+    quote: >-
+      Na noite do dia 24 de Setembro de 2005, a Diocese do Recife recebia a visita do Rev. Côn. Dr. Bill Attwood
+      que trazia na sua pasta os Certificados assinados por Dom Gregório Venables, nos quais ele reconhecia as nossas
+      Ordens e Ministérios de Bispo, Presbíteros e Presbíteras, Diáconos e Diáconas.
+  - source: d2s08-amaz-episc2
+    quote: Dom Gregório Venables nos acolheu na Igreja Anglicana do Cone Sul da América
   notes: >-
     A Diocese Anglicana do Recife passa a usar, em seu papel timbrado, a fórmula "Diocese do Recife – Comunhão Anglicana,
     sob Autoridade Primacial da Igreja Anglicana do Cone Sul da América". O documento de outubro de 2005 fala em
@@ -521,7 +579,9 @@ relations:
     Arcebispo George Carey, no Recife, pelo Cônego Bill Atwood, secretário-geral da Ekklesia, representando o Primaz.
     Setembro de 2005: carta-documento do Primaz da Igreja Anglicana do Cone Sul, Gregory J. Venables, reconhecendo
     as ordens e ministérios do bispo e dos clérigos da DAR e colocando a diocese sob sua autoridade primacial (supervisão
-    primacial provisória; status de diocese extraprovincial).
+    primacial provisória; status de diocese extraprovincial). Relato do Rev. Maurício Amazonas, pároco e presidente
+    do Conselho Diocesano, em artigo de 04/04/2008: depois de a diocese ter sido 'expulsa da Província do Brasil'
+    (versão da diocese), Venables a acolheu e reconheceu as ordens do bispo, presbíteros e diáconos.
 - type: in_communion_with
   target: diocese-of-springfield
   date: 2006-10
@@ -536,9 +596,16 @@ relations:
       dar muitos frutos.
   - source: drp2-memorias-decada-x
     quote: do Bispo Peter Beckwith, da Diocese de Springfield, da TEC, nossa “Diocese Companheira”
+  - source: d2s12-xxiv-b
+    quote: >-
+      A Diocese de Springfield, embora integrando a Igreja Episcopal (EUA) tem um status de Diocese Companheira
+      com Recife, aprovada sucessivamente, por unanimidade, por três anos seguidos, pelo seu Concílio, com o seu
+      Bispo vindo ao Recife e o Bispo do Recife indo ao seu Concílio.
   notes: >-
     Boletim de oração de out/nov de 2006 fala em "firmar o companheirismo" com a Diocese de Springfield; o texto
-    não dá mais detalhes nem identifica a diocese. Diocese companheira em 2007.
+    não dá mais detalhes nem identifica a diocese. Diocese companheira em 2007. Relato de fevereiro de 2011: o Concílio
+    da Diocese de Springfield (TEC) aprovou o status de Diocese Companheira com Recife três anos seguidos, com visitas
+    recíprocas dos bispos.
 - type: in_communion_with
   target: diocese-de-springfield
   date: 2005-08
@@ -650,6 +717,10 @@ relations:
       A Paróquia Anglicana da Redenção tem vínculo canônico com a DIOCESE DO RECIFE, com a Província do CONE-SUL
   - source: d2s14-igreja-denominacoes
     quote: sob a Autoridade Primacial de uma organização regional (Igreja Anglicana no Cone Sul da América)
+  - source: d2s04-gorete-13anos
+    quote: sempre apoiando seu Bispo Diocesano, Dom Edward Robinson de Barros Cavalcanti
+  - source: d2s08-doutrina-org
+    quote: ou a Diocese do Recife, na atual conjuntura, ligada ao Primaz do Cone Sul
   notes: >-
     Jurisdição extra-provincial ('supervisão primacial'), não diocese plena do Cone Sul. Fim = criação da IAB (inferido).
     A Diocese do Recife, desligada da IEAB em 2005, passou à autoridade primacial do Cone Sul; em 2010 e 2011 o
@@ -660,7 +731,10 @@ relations:
     Anglicana da Redenção e declara que a paróquia tem vínculo canônico com a Diocese do Recife e com a Província
     do Cone Sul; a ligação da diocese ao Cone Sul é inferida dessa declaração. Descrição feita pelo bispo diocesano
     em 30/06/2010: a diocese se define como parte da Comunhão Anglicana sob a autoridade primacial da Igreja Anglicana
-    no Cone Sul da América.
+    no Cone Sul da América. Em 21/11/2010, a Paróquia Anglicana da Redenção declara vínculo canônico com a Diocese
+    do Recife e com a Província do Cone Sul, e identifica Robinson Cavalcanti como seu bispo diocesano. Texto doutrinário
+    publicado em 18/09/2009 que, ao explicar as dioceses extraprovinciais (ligadas diretamente a um primaz), cita
+    a Diocese do Recife como ligada ao primaz do Cone Sul.
   discrepancies:
   - field: date
     value: 2007-12
@@ -819,9 +893,14 @@ relations:
   - source: d2s10-c01
     quote: >-
       sucessora eclesiástica da Diocese Setentrional e da Diocese Anglicana do Recife, sob Autoridade Primacial
+  - source: d2s06-canon01
+    quote: sucessora eclesiástica da Diocese Setentrional e da Diocese Anglicana do Recife
+  - source: d2s06-canon01
+    quote: estabelecida originalmente pelo Sínodo da Igreja Episcopal Anglicana do Brasil (IEAB)
   notes: >-
     Definição do Cânon 1 dos Cânones diocesanos (versão capturada em 2007). Definição do Cânon 1 dos Cânones Diocesanos,
-    na versão publicada no site da diocese em 21/09/2009 (capturada em dezembro de 2010).
+    na versão publicada no site da diocese em 21/09/2009 (capturada em dezembro de 2010). Descrição que a própria
+    Diocese faz de si no Cânon 1 dos Cânones Diocesanos de 2008.
 - type: member_of
   target: movimento-anglicano-por-uma-causa-comum
   date: '2006-09-30'

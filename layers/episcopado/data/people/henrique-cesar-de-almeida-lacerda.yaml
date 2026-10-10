@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: henrique-cesar-de-almeida-lacerda
 name: Henrique César de Almeida Lacerda
+aliases:
+- Henrique Lacerda
 biography: >-
   Henrique César de Almeida Lacerda foi ordenado diácono em 27 de novembro de 2004, em João Pessoa, por Robinson
   Cavalcanti, na Diocese Anglicana do Recife. Em 23 de agosto de 2005 foi incluído entre os clérigos excluídos da
@@ -30,6 +32,16 @@ sources:
   quote: O Secretário Diocesano de Educação, Rev. Henrique Lacerda (Paróquia Anglicana Adoração)
 - source: darn2-secretarios-2012
   quote: 'Secretaria Diocesana Anglicana de Educação: Rev. Henrique César de Almeida Lacerda'
+- source: d2s01-art-4325
+  quote: coadjutor da Paróquia Anglicana Comunhão, em João Pessoa
+- source: d2s01-art-4325
+  quote: professor do Seminário Anglicano Teológico
+- source: d2s01-art-4325
+  quote: Coordenador da Escola de Levitas
+- source: d2s08-lacerda-mover
+  quote: é coadjutor da Paróquia Anglicana Comunhão, em João Pessoa – PB
+- source: d2s08-lacerda-xeque
+  quote: Mestrando em Teologia Bíblica pelo Trinity School for Ministry, em Ambridge, PA – USA
 ordinations:
 - order: diaconate
   date: '2004-11-27'
@@ -59,12 +71,15 @@ affiliations:
       à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
       mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
+  - source: darl3-setubal
+    quote: Rev. Henrique César de A. Lacerda
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados. Anexo R: o(a) clérigo(a) declarou, em resposta à convocação
     de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
     dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
-    exata.
+    exata. Delegado(a) ao Concílio Diocesano Extraordinário de 26/02/2005 (Carta de Setúbal); a lista dá nome e,
+    para alguns, o cargo. Em exercício em fev/2005.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -107,7 +122,45 @@ affiliations:
   sources:
   - source: dard2-com-pb
     quote: 'PONTO MISSIONÁRIO ANGLICANO Adoração Ministro Encarregado: Rev. Henrique Lacerda'
+  - source: d2s01-pj-pb
+    quote: 'PONTO MISSIONÁRIO ANGLICANO Adoração Ministro Encarregado: Rev. Henrique Lacerda'
   notes: >-
     Local: Ponto Missionário Anglicano Adoração (Mangabeira VII, João Pessoa-PB; Arcediagado PB/RN/CE). Página "Comunidades"
     do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de
-    posse.
+    posse. Local: Ponto Missionário Anglicano Adoração (Mangabeira VII, João Pessoa-PB). Em exercício em ago/2010,
+    segundo a página "Um Projeto Missionário Anglicano Ortodoxo para o Brasil III – Estado da Paraíba" (publicada
+    em 26/08/2010). Local: Ponto Missionário Anglicano Adoração (Mangabeira VII, João Pessoa-PB).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coadjutor
+  status: confirmed
+  sources:
+  - source: d2s01-art-4325
+    quote: coadjutor da Paróquia Anglicana Comunhão, em João Pessoa
+  - source: d2s08-lacerda-mover
+    quote: >-
+      é coadjutor da Paróquia Anglicana Comunhão, em João Pessoa – PB; professor do Seminário Anglicano Teológico
+      – SAT-PB
+  notes: >-
+    Local: Paróquia Anglicana Comunhão (João Pessoa-PB). Assina o artigo como coadjutor da Paróquia Anglicana Comunhão.
+    O texto é posterior a 23/08/2005, data que ele próprio cita; início e fim não informados. Local: Paróquia Anglicana
+    Comunhão, João Pessoa-PB. Local: Paróquia Anglicana Comunhão (João Pessoa-PB). Coadjutor da Paróquia Anglicana
+    Comunhão e professor do SAT-PB, conforme a nota biográfica do artigo 'O Mover de Deus', escrito após 23/08/2005.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: professor do seminário
+  status: confirmed
+  sources:
+  - source: d2s01-art-4325
+    quote: professor do Seminário Anglicano Teológico
+  notes: >-
+    Local: Seminário Anglicano Teológico (SAT-PB). Assina o artigo como professor do Seminário Anglicano Teológico
+    (SAT-PB); texto posterior a 23/08/2005.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: professor do Seminário Anglicano Teológico da Paraíba (SAT-PB)
+  status: confirmed
+  sources:
+  - source: d2s08-lacerda-mover
+    quote: professor do Seminário Anglicano Teológico – SAT-PB
+  notes: Nota biográfica do artigo 'O Mover de Deus' (escrito após 23/08/2005).

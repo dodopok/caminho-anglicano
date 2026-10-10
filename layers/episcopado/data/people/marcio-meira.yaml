@@ -6,6 +6,7 @@ aliases:
 - '@bispomarciomeira'
 - Bp. Marcio
 - Márcio Medeiros Meira
+- Rev. Márcio Medeiros Meira
 - Rev. Márcio Medeiros Meira, OSE
 biography: >-
   Natural de Fortaleza (CE), foi ordenado diácono por Robinson Cavalcanti em outubro de 2000, em João Pessoa, e
@@ -158,6 +159,9 @@ sources:
   quote: Hoje, 31 de maio completa 1 ano da Sagração a Bispo auxiliar da Igreja Anglicana
 - source: anglicanismo-eleicao-2023
   quote: elegeu dois novos bispos auxiliares, Bp. Miguel Neto e Bp. Eric Rodrigues
+- source: d2s05-meira-dizimos
+  quote: >-
+    Rev. Márcio Medeiros Meira é clérigo da Diocese do Recife, Pároco da Paróquia Anglicana Comunhão, em João Pessoa
 ordinations:
 - order: diaconate
   date: '2000-10-28'
@@ -462,7 +466,11 @@ affiliations:
   sources:
   - source: darn1-feed12
     quote: Rev. Márcio Meira (Arcediago Adjunto PB/RN e Reitor do SAT-PB)
-  notes: 'Local: SAT-PB. Cargo atestado em 27/12/2011 (formatura do SAT-PB na Paróquia Cristo Libertador).'
+  - source: d2s08-meira-dizimo
+    quote: é Reitor do Seminário Anglicano Teológico (SAT-PB)
+  notes: >-
+    Local: SAT-PB. Cargo atestado em 27/12/2011 (formatura do SAT-PB na Paróquia Cristo Libertador). Nota biográfica
+    do artigo de 25/07/2008.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago adjunto do PB/RN
@@ -488,9 +496,20 @@ affiliations:
     quote: >-
       PARÓQUIA ANGLICANA COMUNHÃO Pároco: Rev. Márcio Medeiros Meira Ministro Auxiliar : Rev. Edílson Augusto Pereira
       dos Santos
+  - source: d2s01-pj-pb
+    quote: 'PARÓQUIA ANGLICANA COMUNHÃO Pároco: Rev. Márcio Medeiros Meira'
+  - source: d2s05-meira-dizimos
+    quote: >-
+      Rev. Márcio Medeiros Meira é clérigo da Diocese do Recife, Pároco da Paróquia Anglicana Comunhão, em João
+      Pessoa, e faz parte da Equipe Pastoral das comunidades em Cabedelo, Cristo, Mangabeira e Campina Grande (PB)
   notes: >-
     Local: Paróquia Anglicana Comunhão (Bessa, João Pessoa-PB; Arcediagado PB/RN/CE). Página "Comunidades" do arcediagado,
-    criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse.
+    criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse. Local: Paróquia
+    Anglicana Comunhão (Bessa, João Pessoa-PB). Em exercício em ago/2010, segundo a página "Um Projeto Missionário
+    Anglicano Ortodoxo para o Brasil III – Estado da Paraíba" (publicada em 26/08/2010). Local: Paróquia Anglicana
+    Comunhão (Bessa, João Pessoa-PB). Local: Paróquia Anglicana Comunhão, João Pessoa. Assinatura de texto de 08/08/2008,
+    republicado no site em agosto de 2009; integra também a equipe pastoral de comunidades em Cabedelo, Cristo,
+    Mangabeira e Campina Grande (PB).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: reitor do seminário
@@ -498,10 +517,15 @@ affiliations:
   sources:
   - source: dard2-sat-2009
     quote: Rev. Marcio Meira
+  - source: d2s05-meira-dizimos
+    quote: >-
+      é Reitor do Seminário Anglicano Teológico (SAT-PB); e também responsável pelo programa "Em Comunhão na TV",
+      na Band, canal 10, todos os sábados, às 8h.
   notes: >-
     Local: SAT (Seminário Anglicano Teológico), SAT-PB. Na página do SAT (13/08/2009, atualizada em 31/08/2009),
     o nome de Márcio Meira aparece com telefone de João Pessoa logo depois do reitor do SAT-PE, o que o indica como
-    responsável pelo SAT-PB; o texto convertido não traz o título.
+    responsável pelo SAT-PB; o texto convertido não traz o título. Local: Seminário Anglicano Teológico, SAT-PB.
+    Mesma assinatura (2008, republicada em 2009).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: presbítero
@@ -569,6 +593,60 @@ affiliations:
   notes: >-
     Local: Seminário Anglicano Teológico da Paraíba (SAT-PB). Delegado clerical ao Concílio Diocesano Extraordinário
     de 26/02/2005 (Carta de Setúbal), com o cargo indicado na lista de delegados.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: reitor
+  status: confirmed
+  sources:
+  - source: d2s03-hom-satpb
+    quote: Rev. Márcio Meira+ Reitor do SAT-PB
+  notes: >-
+    Local: SAT-PB (Seminário Anglicano Teológico da Paraíba). Em exercício em outubro de 2010, conforme a mensagem
+    do SAT-PB de 08/10/2010; o texto diz que o SAT-PB funciona desde 2003 sob a supervisão do bispo diocesano.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: reitor
+  status: confirmed
+  sources:
+  - source: d2s03-hom-satpb
+    quote: Reitor da Paróquia Anglicana Comunhão
+  notes: >-
+    Local: Paróquia Anglicana Comunhão (João Pessoa). Em exercício em outubro de 2010, conforme a mensagem do SAT-PB
+    de 08/10/2010
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  status: confirmed
+  sources:
+  - source: d2s03-hom-pbcern
+    quote: Rev. Márcio Medeiros Meira
+  - source: d2s03-hom-pbcern
+    quote: (Mensagem do Arcediagado PB/CE/RN)
+  notes: >-
+    Local: Arcediagado PB/CE/RN. Em exercício em outubro de 2010, conforme a mensagem publicada em 05/10/2010 no
+    site da Diocese do Recife; listado entre os signatários da mensagem do Arcediagado PB/CE/RN
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: paroco
+  status: confirmed
+  sources:
+  - source: d2s08-meira-dizimo
+    quote: >-
+      Pároco da Paróquia Anglicana Comunhão, em João Pessoa, e faz parte da Equipe Pastoral das comunidades em Cabedelo,
+      Cristo, Mangabeira e Campina Grande (PB)
+  notes: >-
+    Local: Paróquia Anglicana Comunhão (João Pessoa-PB). Pároco da Paróquia Anglicana Comunhão e integrante da equipe
+    pastoral das comunidades de Cabedelo, Cristo, Mangabeira e Campina Grande, segundo a nota biográfica do artigo
+    de 25/07/2008.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago
+  status: confirmed
+  sources:
+  - source: d2s17-com-2015
+    quote: 'Arcediagado PB/RN Arcediago : Ven. Arc. Rev. Márcio Medeiros Meira'
+  notes: >-
+    Local: Arcediagado PB/RN. Consta como arcediago (titular) do Arcediagado PB/RN na página "Comunidades" capturada
+    em 08/04/2015. Nas listas de 2011 e 2012 constava como arcediago adjunto do mesmo arcediagado.
 events:
 - type: other
   date: '2017-05-06'
@@ -707,3 +785,18 @@ events:
     quote: >-
       A fusão de duas células da Paróquia Anglicana Comunhão e o Ponto Missionário Anglicano em Mangabeira, João
       Pessoa, PB, formou a uma
+- type: other
+  date: '2002-02-22'
+  description: >-
+    Origem do Seminário Anglicano Teológico da Paraíba (SAT-PB): um curso de férias promovido pelo então SAET na
+    Paróquia Anglicana Comunhão (22 a 24/02/2002) deu início ao projeto, que, segundo o reitor, desde 2003 prepara
+    obreiros sob a supervisão do bispo diocesano, com pelo menos 13 bacharéis em Teologia e 7 teólogos ministeriais
+    até 2010.
+  status: confirmed
+  sources:
+  - source: d2s03-hom-satpb
+    quote: >-
+      através de um “Curso de férias” promovido pelo, até então, SAET, na Paróquia Anglicana Comunhão , cuja duração
+      se dava em um final de semana (22-24 de fevereiro de 2002)
+  - source: d2s03-hom-satpb
+    quote: pelo menos 13 novos Bacharéis em Teologia e 7 teólogos ministeriais

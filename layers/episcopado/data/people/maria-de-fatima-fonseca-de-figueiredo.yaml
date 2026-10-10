@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: maria-de-fatima-fonseca-de-figueiredo
+name: Maria de Fátima Fonseca de Figueiredo
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro local
+  status: confirmed
+  sources:
+  - source: d2s17-clero-ml-2010
+    quote: Maria de Fátima Fonseca de Figueiredo
+  - source: dard2-com-pb
+    quote: 'Ministra Local: Maria de Fátima Figueiredo'
+  notes: >-
+    Local: Paróquia Anglicana do Salvador (João Pessoa-PB; Arcediagado PB/RN/CE). Consta na lista "Ministros(as)
+    Locais(as)" (captura de 25/12/2010) e na página do Arcediagado PB/RN/CE (captura de 28/12/2010) como ministra
+    local da Paróquia Anglicana do Salvador; na mesma página é ministra encarregada do Ponto Missionário Anglicano
+    Redenção (João Pessoa). A página do arcediagado grafa "Maria de Fátima Figueiredo"; a identificação com a das
+    listas vem do nome e da cidade (João Pessoa). Consta também entre os postulantes (25/12/2010).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro encarregado
+  status: confirmed
+  sources:
+  - source: dard2-com-pb
+    quote: 'PONTO MISSIONÁRIO ANGLICANO REDENÇÃO Ministra encarregada: Ministra Local Maria de Fátima figueiredo'
+  notes: >-
+    Local: Ponto Missionário Anglicano Redenção (Alto do Mateus, João Pessoa-PB). Página do Arcediagado PB/RN/CE,
+    capturada em 28/12/2010 (atualizada em 28/10/2010).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: postulante
+  status: confirmed
+  sources:
+  - source: dard2-clero-post
+    quote: Maria de Fátima Fonseca de Figueiredo
+  notes: >-
+    Consta na lista "Postulantes ao Ministério Ordenado" capturada em 25/12/2010 (atualizada em 19/11/2010).

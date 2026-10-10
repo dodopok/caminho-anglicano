@@ -1,12 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: emanuel-autran
 name: Emanuel Autran
+aliases:
+- Emanuel de Albuquerque Autran
 biography: >-
   Presbítero listado(a) na equipe pastoral da diocese liderada por Márcio Simões (IAB), vinculado(a) à Igreja Anglicana
   Cristo Rei.
 sources:
 - source: dv-pastores
   quote: Rev. Emanuel Autran Igreja Anglicana Cristo Rei
+- source: darl3-setubal
+  quote: Emanuel de Albuquerque Autran – Membro do Conselho Diocesano
+- source: darl3-carta-0904
+  quote: Emanuel Autran Paróquia Anglicana da Reconciliação
 affiliations:
 - jurisdiction: iab
   role: clergy
@@ -15,3 +21,25 @@ affiliations:
   - source: dv-pastores
     quote: Rev. Emanuel Autran Igreja Anglicana Cristo Rei
   notes: 'Local: Igreja Anglicana Cristo Rei. Lista da equipe pastoral no site da diocese; sem datas.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro_do_conselho_diocesano
+  status: confirmed
+  sources:
+  - source: darl3-setubal
+    quote: Emanuel de Albuquerque Autran – Membro do Conselho Diocesano
+  notes: >-
+    Delegado(a) ao Concílio Diocesano Extraordinário de 26/02/2005 (Carta de Setúbal); a lista dá nome e, para alguns,
+    o cargo. Em exercício em fev/2005.
+- jurisdiction: ieab
+  role: other
+  role_description: membro_do_conselho_diocesano
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: darl3-carta-0904
+    quote: Emanuel Autran Paróquia Anglicana da Reconciliação
+  notes: >-
+    Local: Paróquia Anglicana da Reconciliação. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife
+    (então ainda da IEAB); a carta indica a comunidade de cada signatário. Em exercício em set/2004. Listado entre
+    os membros do Conselho Diocesano.

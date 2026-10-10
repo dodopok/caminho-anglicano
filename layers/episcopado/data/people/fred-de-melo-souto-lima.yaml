@@ -258,7 +258,9 @@ affiliations:
     quote: >-
       O Rev. Fred Souto é Clérigo e Secretário Administrativo da Diocese Anglicana do Recife; e Ministro Encarregado
       da Missão Anglicana de Gravatá.
-  notes: Em artigo do período 2005.
+  - source: d2s08-souto-simulacros
+    quote: Clérigo e Secretário Administrativo da Diocese Anglicana do Recife
+  notes: Em artigo do período 2005. Nota biográfica do artigo de 2005 em resposta a Jaci Maraschin.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: ministro encarregado
@@ -268,7 +270,11 @@ affiliations:
     quote: >-
       O Rev. Fred Souto é Clérigo e Secretário Administrativo da Diocese Anglicana do Recife; e Ministro Encarregado
       da Missão Anglicana de Gravatá.
-  notes: 'Local: Missão Anglicana de Gravatá. Em artigo do período 2005.'
+  - source: d2s08-souto-simulacros
+    quote: Ministro Encarregado da Missão Anglicana de Gravatá
+  notes: >-
+    Local: Missão Anglicana de Gravatá. Em artigo do período 2005. Local: Missão Anglicana de Gravatá. Nota biográfica
+    do artigo de 2005 em resposta a Jaci Maraschin.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago adjunto
@@ -276,10 +282,16 @@ affiliations:
   sources:
   - source: darn1-adj-centro
     quote: o Arcediago Adjunto Centro da Região Eclesiástica Missionária II
+  - source: d2s03-hom-centro
+    quote: Arcediago Adjunto Rev. Fred Souto
+  - source: d2s03-hom-centro
+    quote: Ven. Arc. Rev. Maurício Coelho (Arcediagado Centro)
   notes: >-
     Local: Arcediagado Centro (Região Eclesiástica Missionária II). Cargo atestado em 25/07/2011 (primeira visita
     ao Ponto Missionário Anglicano em Maceió). O site grafa "Rev. Fred Souto"; identificado com Fred de Melo Souto
-    Lima, arcediago do Centro em 2008.
+    Lima, arcediago do Centro em 2008. Local: Arcediagado Centro. Em exercício em outubro de 2010, conforme a mensagem
+    publicada em 05/10/2010 no site da Diocese do Recife; listado entre os signatários da mensagem do Arcediagado
+    Centro
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago adjunto
@@ -322,6 +334,27 @@ affiliations:
   notes: >-
     Local: Diocese Anglicana do Recife, Paróquia Anglicana do Espírito Santo. Consta como signatário da carta aberta
     de 17/09/2004 da Diocese Anglicana do Recife ao Bispo Primaz, na lista de Diáconos, com a comunidade indicada.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro encarregado
+  status: confirmed
+  sources:
+  - source: d2s01-pj-pe
+    quote: 'Ponto Missionário Anglicano Canaã (Recife/PE) Ministro Encarregado: Rev. Fred Souto'
+  notes: >-
+    Local: Ponto Missionário Anglicano Canaã (Madalena, Recife-PE). Em exercício em ago/2010, segundo a página "Um
+    Projeto Missionário Anglicano Ortodoxo para o Brasil IV – Estado de Pernambuco" (publicada e atualizada em 27/08/2010;
+    cópia capturada em 25/12/2010). Local: Ponto Missionário Anglicano Canaã (Madalena, Recife-PE).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretario_administrativo_diocesano
+  status: confirmed
+  sources:
+  - source: darl3-setubal
+    quote: Rev. Fred de Melo Souto Lima – Secretário Administrativo Diocesano
+  notes: >-
+    Delegado(a) ao Concílio Diocesano Extraordinário de 26/02/2005 (Carta de Setúbal); a lista dá nome e, para alguns,
+    o cargo. Em exercício em fev/2005.
 events:
 - type: other
   date: null

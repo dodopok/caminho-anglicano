@@ -58,6 +58,14 @@ sources:
   page: '124'
 - source: d2s04-ivo-arte
   quote: Mestre em Ciências da Religião pela PUC/SP, professor universitário e autor também dos livros
+- source: d2s03-ivo-diaconia
+  quote: Mestre em Ciências da Religião pela PUC/SP, professor universitário
+- source: d2s05-episc-sulsudeste
+  quote: Ven.Arc.Rev. Carlos Alberto Chaves Fernandes+ Rev. Ivo Oliveira+ Arcediagado Sul/Sudeste do Brasil
+- source: d2s08-ivo-homilia
+  quote: Ministro Encarregado do Ponto Missionário Anglicano da Transfiguração, em Mogi das Cruzes-SP
+- source: d2s08-ivo-homilia
+  quote: Mestre em Ciências da Religião pela Pontifícia Universidade Católica de São Paulo
 ordinations:
 - order: diaconate
   date: '2008-01-06'
@@ -136,6 +144,8 @@ affiliations:
     quote: >-
       Rev. Ivo Xavier de Oliveira , é Presbítero da Diocese do Recife; Ministro Encarregado do Ponto Missionário
       Anglicano da Transfiguração , em Mogi das Cruzes, SP; Arcediago Adjunto do Arcediagado Sul-Sudeste do Brasil;
+  - source: d2s08-ivo-homilia
+    quote: Ministro Encarregado do Ponto Missionário Anglicano da Transfiguração, em Mogi das Cruzes-SP
   notes: >-
     Local: Ponto Missionário Anglicano da Transfiguração, Mogi das Cruzes-SP. Em 2011-11-02 (e já em 2009-10-10
     e 2012-06-20, nos demais artigos do autor). Local: Ponto Missionário Anglicano da Transfiguração, Mogi das Cruzes-SP.
@@ -144,7 +154,8 @@ affiliations:
     2009. Local: Ponto Missionário Anglicano da Transfiguração (Mogi das Cruzes-SP; Arcediagado Extraterritorial).
     Página "Comunidades" do arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo,
     sem data de posse. Local: Ponto Missionário Anglicano da Transfiguração (Mogi das Cruzes-SP). Em exercício em
-    novembro de 2010.
+    novembro de 2010. Local: Ponto Missionário Anglicano da Transfiguração (Mogi das Cruzes-SP). Nota biográfica
+    do artigo de 19/05/2008, quando já assinava como clérigo da Diocese do Recife.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago adjunto
@@ -170,6 +181,8 @@ affiliations:
     quote: >-
       Rev. Ivo Xavier de Oliveira , é Presbítero da Diocese do Recife; Ministro Encarregado do Ponto Missionário
       Anglicano da Transfiguração , em Mogi das Cruzes, SP; Arcediago Adjunto do Arcediagado Sul-Sudeste do Brasil;
+  - source: d2s03-hom-sulsudeste
+    quote: Ven. Arc. Adj. Rev. Ivo Xavier+ (Presbítero – PMA da Transfiguração – Mogi das Cruzes-SP)
   notes: >-
     Local: Arcediagado Sul/Sudeste. Em 2011-11-02. Local: Arcediagado Sul-Sudeste. Cargo atestado em 08/05/2011
     (3ª Assembleia Anual do Arcediagado, em Mogi das Cruzes-SP). O site grafa "Ivo Xavier Oliveira"; em dezembro
@@ -177,7 +190,10 @@ affiliations:
     Extraterritorial Nacional Sul/Sudeste. Lista de arcediagos e adjuntos na página "Comunidades" capturada em 13/10/2009
     e nas páginas de cada arcediagado capturadas em 09/10/2010; início e fim dos cargos não informados. Em 2012
     (captura de 02/03/2012) o mesmo arcediago e o mesmo adjunto constam com o nome "Arcediagado Sul-Sudeste". Local:
-    Arcediagado Sul-Sudeste. Em exercício em novembro de 2010.
+    Arcediagado Sul-Sudeste. Em exercício em novembro de 2010. Local: Arcediagado Extraterritorial Sul-Sudeste;
+    Ponto Missionário Anglicano da Transfiguração (Mogi das Cruzes-SP). Em exercício em outubro de 2010, conforme
+    a mensagem publicada em 05/10/2010 no site da Diocese do Recife; signatário da mensagem do Arcediagado Extraterritorial
+    Sul-Sudeste
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago adjunto do Sul/Sudeste
@@ -219,6 +235,28 @@ affiliations:
     quote: 'Comissão de Credenciais e Diplomacia: Rev. Ivo Xavier de Oliveira'
   notes: "Local: Comissão de Credenciais e Diplomacia. Consta nas listas de cargos designados pelo bispo sob homologação\
     \ do Concílio, na versão de jan/2009 e na de 01/07/2009. "
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  status: probable
+  sources:
+  - source: d2s05-episc-sulsudeste
+    quote: Ven.Arc.Rev. Carlos Alberto Chaves Fernandes+ Rev. Ivo Oliveira+ Arcediagado Sul/Sudeste do Brasil
+  notes: >-
+    Local: Arcediagado Sul/Sudeste. Em exercício em 30 de março de 2010, como cossignatário da homenagem do Arcediagado
+    Sul/Sudeste; o texto não indica seu cargo.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago
+  status: confirmed
+  sources:
+  - source: d2s17-arc-ss-2013
+    quote: 'Arcediago : Ven. Arc. Rev. Ivo Xavier de Oliveira'
+  - source: d2s17-com-2015
+    quote: 'Arcediagado Sul-Sudeste Arcediago : Ven. Arc. Rev. Ivo Xavier de Oliveira'
+  notes: >-
+    Local: Arcediagado Sul-Sudeste. Consta como arcediago (titular) do Arcediagado Sul-Sudeste nas páginas capturadas
+    em 06/06/2013 e 08/04/2015, ambas com o campo "Adjunto : -". Nas listas de 2009 a 2012 ele constava como arcediago
+    adjunto desse arcediagado; a data da mudança de cargo não é informada.
 events:
 - type: other
   date: '2009-06-11'

@@ -23,7 +23,7 @@ sources:
 affiliations:
 - jurisdiction: iaob
   role: clergy
-  start: '2006'
+  start: '2006-09-30'
   status: probable
   sources:
   - source: cant-novas-igrejas-2024
@@ -31,7 +31,13 @@ affiliations:
       a Igreja Anglicana Ortodoxa do Brasil (IAOB), pelos reverendos Hermany Soares, Adriano Oliveira, Flávio Conti
       e Virgílio Torres
     page: '118'
-  notes: Reverendo signatário da Declaração da Boa Viagem (2006) pela IAOB.
+  - source: darl3-cc-boaviagem
+    quote: Rev. Hermany Soares, Rev. Adriano Oliveira
+  notes: >-
+    Reverendo signatário da Declaração da Boa Viagem (2006) pela IAOB. Signatário, em 30/09/2006, da Declaração
+    da Boa Viagem, que criou o Movimento Anglicano Por Uma Causa Comum; a notícia lista a jurisdição como 'Igreja
+    Anglicana Ortodoxa – IAO (Comunhão Anglicana Ortodoxa)'. Data = a da assinatura; início e fim do vínculo não
+    informados.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: ministro auxiliar
@@ -39,7 +45,13 @@ affiliations:
   sources:
   - source: darn2-mediador-2011
     quote: 'Ministro Auxiliar: Rev. Adriano Oliveira'
-  notes: 'Local: Paróquia Anglicana do Mediador, Tejipió, Recife. Ministro auxiliar em julho de 2011.'
+  - source: d2s01-pj-pe
+    quote: 'Ministro Auxiliar: Rev. Adriano Oliveira'
+  notes: >-
+    Local: Paróquia Anglicana do Mediador, Tejipió, Recife. Ministro auxiliar em julho de 2011. Local: Paróquia
+    Anglicana do Mediador (Tejipió, Recife-PE). Em exercício em ago/2010, segundo a página "Um Projeto Missionário
+    Anglicano Ortodoxo para o Brasil IV – Estado de Pernambuco" (publicada e atualizada em 27/08/2010; cópia capturada
+    em 25/12/2010). Local: Paróquia Anglicana do Mediador (Tejipió, Recife-PE).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: ministro encarregado
@@ -60,3 +72,14 @@ affiliations:
   notes: >-
     Único nome da lista "Clérigos - Em Reconhecimento de Ordens", publicada em 13/08/2009 e atualizada em 18/12/2009
     (captura de 18/02/2010): presbítero em processo de reconhecimento de ordens pela diocese.
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  status: confirmed
+  sources:
+  - source: d2s03-hom-sul
+    quote: Rev. Adriano Oliveira
+  - source: d2s03-hom-sul
+    quote: (Mensagem do Arcediagado Sul)
+  notes: >-
+    Local: Arcediagado Sul. Em exercício em outubro de 2010, conforme a mensagem publicada em 05/10/2010 no site
+    da Diocese do Recife; listado entre os signatários da mensagem do Arcediagado Sul

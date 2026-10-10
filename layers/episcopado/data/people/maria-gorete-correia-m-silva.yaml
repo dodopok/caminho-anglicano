@@ -1,6 +1,9 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: maria-gorete-correia-m-silva
 name: Maria Gorete Correia M. Silva
+aliases:
+- Maria Gorete Correia Marques da Silva
+- Revda. Maria Gorete Marques
 biography: >-
   Maria Gorete Correia M. Silva é pároca da Paróquia Anglicana da Redenção, fundada em 17/11/1997, e foi arcediaga
   da região Norte da Diocese Anglicana do Recife (DAR), além de secretária diocesana de Ação Social. Em 25/06/2004
@@ -50,6 +53,10 @@ sources:
     Arcediago : Ven. Arc. Rev. João Peixoto de Siqueira Filho Adjunto: Revda. Maria Gorete C. Marques, ose
 - source: dard1-cargos-2009a
   quote: 'Adjunto : Revda. Maria Gorete C. Marques, ose'
+- source: d2s05-redencao-12anos
+  quote: >-
+    Revda. Maria Gorete Correia Marques da Silva, ose é Presbítera na Diocese do Recife; Arcediaga Adjunta do Arcediagado
+    Norte de Recife; Reitora da Paróquia Anglicana da Redenção.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: other
@@ -159,11 +166,16 @@ affiliations:
   - source: dard2-com-norte
     quote: >-
       Paróquia Anglicana da Redenção Pároca: Revda. Maria Gorete Correia, OSE Auxiliar: Rev. Tibério Marques, OSE
+  - source: d2s01-pj-pe
+    quote: 'PARÓQUIA ANGLICANA DA REDENÇÃO Pároca: Revda. Maria Gorete Correia, OSE'
   notes: >-
     Local: Paróquia Anglicana da Redenção, Rio Doce, Olinda-PE. Em dezembro de 2008; já era a responsável pela comunidade
     desde a confirmação dos primeiros membros, em 17 de novembro de 1997, segundo o texto da própria paróquia. Local:
     Paróquia Anglicana da Redenção (Rio Doce, Olinda-PE; Arcediagado Norte). Página "Comunidades" do arcediagado,
-    criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse.
+    criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse. Local: Paróquia
+    Anglicana da Redenção (Rio Doce, Olinda-PE). Em exercício em ago/2010, segundo a página "Um Projeto Missionário
+    Anglicano Ortodoxo para o Brasil IV – Estado de Pernambuco" (publicada e atualizada em 27/08/2010; cópia capturada
+    em 25/12/2010). Local: Paróquia Anglicana da Redenção (Rio Doce, Olinda-PE).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediaga adjunta
@@ -171,7 +183,11 @@ affiliations:
   sources:
   - source: darn1-norte10
     quote: Arcediaga Adjunta Revda. Maria Gorete C. M. Silva
-  notes: 'Local: Arcediagado Norte. Cargo atestado na mensagem do Arcediagado Norte de 05/10/2010.'
+  - source: d2s04-gorete-13anos
+    quote: e Arcediaga Adjunta do Arcediagado Norte da Diocese
+  notes: >-
+    Local: Arcediagado Norte. Cargo atestado na mensagem do Arcediagado Norte de 05/10/2010. Local: Arcediagado
+    Norte. Em exercício em novembro de 2010, conforme nota biográfica de 21/11/2010.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: secretário diocesano de ação social
@@ -199,12 +215,16 @@ affiliations:
     quote: >-
       Revda. Maria Gorete Marques da Silva, ose é Presbítera na Diocese do Recife; Reitora da Paróquia Anglicana
       da Redenção , e Arcediaga Adjunta do Arcediagado Norte da Diocese.
+  - source: d2s05-redencao-12anos
+    quote: Arcediaga Adjunta do Arcediagado Norte de Recife
+  - source: d2s05-episc-norte
+    quote: Arc. Adjunto Revda. Maria Gorete Siva, OSE
   notes: >-
     Local: Arcediagado Norte. Lista de arcediagos e adjuntos na página "Comunidades" capturada em 13/10/2009 e nas
     páginas de cada arcediagado capturadas em 09/10/2010; início e fim dos cargos não informados. A página grafa
     o sobrenome como "C. Marques"; é a mesma Revda. Maria Gorete, OSE, da Paróquia da Redenção (Olinda), listada
     em outras páginas como Maria Gorete C. M. Silva. Local: Arcediagado Norte. Arcediaga Adjunta do Arcediagado
-    Norte em novembro de 2010.
+    Norte em novembro de 2010. Local: Arcediagado Norte. Em exercício em novembro de 2009 e março de 2010.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: presbítero
@@ -308,6 +328,27 @@ affiliations:
       Revda. Maria Gorete Marques da Silva, ose é Presbítera na Diocese do Recife; Reitora da Paróquia Anglicana
       da Redenção , e Arcediaga Adjunta do Arcediagado Norte da Diocese.
   notes: 'Local: Paróquia Anglicana da Redenção (Arcediagado Norte). Reitora da paróquia em novembro de 2010.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: reitora
+  status: confirmed
+  sources:
+  - source: d2s04-gorete-13anos
+    quote: >-
+      Revda. Maria Gorete Marques da Silva, ose é Presbítera na Diocese do Recife; Reitora da Paróquia Anglicana
+      da Redenção
+  notes: >-
+    Local: Paróquia Anglicana da Redenção. Em exercício em novembro de 2010, conforme nota biográfica de 21/11/2010.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: reitor
+  status: confirmed
+  sources:
+  - source: d2s05-redencao-12anos
+    quote: >-
+      Revda. Maria Gorete Correia Marques da Silva, ose é Presbítera na Diocese do Recife; Arcediaga Adjunta do
+      Arcediagado Norte de Recife; Reitora da Paróquia Anglicana da Redenção.
+  notes: 'Local: Paróquia Anglicana da Redenção, Olinda. Em exercício em novembro de 2009.'
 events:
 - type: other
   date: '2004-06-25'
@@ -353,3 +394,52 @@ events:
       e à comunidade em que está inserida.
   - source: d2s04-gorete-13anos
     quote: trabalho por ele iniciado quando, então, Presbítero
+- type: other
+  date: '1997-11-17'
+  description: >-
+    A Paróquia Anglicana da Redenção (Olinda-PE) teve seu primeiro culto público em 17 de novembro de 1997, em prédio
+    alugado em Rio Doce, com 22 confirmados (8 novos e 14 vindos da Paróquia Emanuel); no Concílio de 1997 passou
+    ao status de Missão. O texto diz que Robinson Cavalcanti foi o primeiro pároco do trabalho.
+  status: confirmed
+  sources:
+  - source: d2s05-redencao-12anos
+    quote: >-
+      A Paróquia Anglicana da Redenção teve seu primeiro culto púbico no dia 17 de novembro de 1997, em um prédio
+      alugado, situado na Av. das Garças, nº.726 – IV Etapa de Rio Doce, Olinda-PE.
+  - source: d2s05-redencao-12anos
+    quote: >-
+      formando, assim, um grupo de 22 Confirmados, passando no Concílio do mesmo ano (1997) ao status de Missão
+  - source: d2s05-redencao-12anos
+    quote: nosso Pai em Deus, que foi o primeiro Pároco deste trabalho
+- type: other
+  date: '2004'
+  description: >-
+    A Paróquia Anglicana da Redenção (Olinda-PE) passou ao status de Paróquia Subvencionada em 2000 e, em 2004,
+    à condição de Paróquia Autônoma; em 2003 mudou-se para prédio próprio, adquirido por financiamento.
+  status: confirmed
+  sources:
+  - source: d2s05-redencao-12anos
+    quote: Em 2000, passamos ao status de Paróquia Subvencionada .
+  - source: d2s05-redencao-12anos
+    quote: Em 2004, passamos à condição de Paróquia Autônoma
+  - source: d2s05-redencao-12anos
+    quote: >-
+      Em 2003, saímos deste local, para a II Etapa, no atual endereço, só que desta feita, para um prédio já de
+      propriedade da Paróquia
+- type: other
+  date: 2003-12
+  description: >-
+    Concílio Diocesano da Diocese Anglicana do Recife (provavelmente o de dezembro de 2003) recebeu documentos de
+    16 paróquias e missões com abaixo-assinado de mais de 800 membros em plena comunhão, que apoiavam o bispo diocesano,
+    o bispo sufragâneo e o Conselho Diocesano, em especial a 'Afirmação do Recife' e a Resolução 1.10 de Lambeth
+    (1998), conforme carta de arcediagos e do deão de 25/06/2004.
+  status: probable
+  sources:
+  - source: darl3-primaz-0406
+    quote: >-
+      quando foi-lhe entregue solenemente documentos oriundos de 16 paróquias e missões contendo um "abaixo-assinado"
+      com mais de 800 assinaturas de membros em plena comunhão dessas comunidades diocesanas
+  - source: darl3-primaz-0406
+    quote: >-
+      hipotecamos o mais amplo e sólido apoio às posturas e deliberações do nosso bispo diocesano, bispo sufragâneo
+      e Conselho Diocesano

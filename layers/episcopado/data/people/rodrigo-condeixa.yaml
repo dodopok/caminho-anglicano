@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rodrigo-condeixa
+name: Rodrigo Condeixa
+biography: Clérigo da Diocese Anglicana do Recife em Niterói (RJ), ligado ao Arcediagado Sul/Sudeste em 2010.
+sources:
+- source: d2s05-episc-rodrigo
+  quote: >-
+    Irmãos e irmãs do Arcediagado Sul/Sudeste e em especial ao nosso Bispo Revmo. +Dom Edward Robinson de Barros
+    Cavalcanti
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  status: probable
+  sources:
+  - source: d2s05-episc-rodrigo
+    quote: >-
+      Queridos clérigos e clérigas, Irmãos e irmãs do Arcediagado Sul/Sudeste e em especial ao nosso Bispo Revmo.
+      +Dom Edward Robinson de Barros Cavalcanti
+  - source: d2s05-episc-rodrigo
+    quote: Terrinha de Araribóia (Niterói), 30 de março de 2010.
+  notes: >-
+    Local: Arcediagado Sul/Sudeste (Niterói). Em exercício em 30 de março de 2010; assina 'Rev. Rodrigo Condeixa+'
+    em Niterói, dirigindo-se aos clérigos do Arcediagado Sul/Sudeste. O texto não informa se é diácono ou presbítero.

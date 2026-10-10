@@ -1,6 +1,10 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: marcus-throup
 name: Marcus Throup
+full_name: Marcus Oliver Throup
+aliases:
+- Marcus Oliver Throup
+- Rev. Marcus Oliver Throup
 biography: >-
   Marcus Throup foi ordenado diácono em 26/06/2004 por Robinson Cavalcanti, na Paróquia Anglicana Jardim das Oliveiras,
   em Recife, e atuou como reitor do Seminário Anglicano Teológico de Pernambuco (SAT-PE). Em 23/08/2005 foi excluído
@@ -43,6 +47,13 @@ sources:
   quote: elegeu como seu Coadjutor o Rev. Marcus Oliver Throup
 - source: darn2-throup-coadjutor-2010
   quote: O Bispo Robinson Cavalcanti já homologou a eleição, cuja data de posse ainda não foi marcada
+- source: d2s05-throup-genesis
+  quote: >-
+    Rev. Marcus Oliver Throup ; é Presbítero da Diocese do Recife; Secretário Diocesano de Relações Internacionais;
+    membro da Equipe Pastoral da Con-Catedral Anglicana da Ressurreição, João Pessoa-PB; Capelão do Seminário Teológico
+    Anglicano (SAT-PB).
+- source: d2s17-clero-presb2-2013
+  quote: Rev. Marcus Oliver Throup
 ordinations:
 - order: diaconate
   date: '2004-06-26'
@@ -86,12 +97,17 @@ affiliations:
       declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo
       plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
+  - source: d2s03-hom-pbcern
+    quote: Rev. Marcus Oliver Throup
+  - source: d2s03-hom-pbcern
+    quote: (Mensagem do Arcediagado PB/CE/RN)
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados. Anexo R: o(a) clérigo(a) declarou, em resposta à convocação
     de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti, ou seja, estava na DAR dissidente em 2005. Início
     dado só como ano (2005): a data de 23/08/2005 é a da exclusão pela IEAB, e a adesão à DAR é anterior, sem data
-    exata.
+    exata. Local: Arcediagado PB/CE/RN. Em exercício em outubro de 2010, conforme a mensagem publicada em 05/10/2010
+    no site da Diocese do Recife; listado entre os signatários da mensagem do Arcediagado PB/CE/RN
 - jurisdiction: iacs
   role: priest
   diocese: diocese-anglicana-recife
@@ -169,9 +185,14 @@ affiliations:
   sources:
   - source: dard2-com-pb
     quote: 'Coadjutor: Rev. Marcus Oliver Throup'
+  - source: d2s01-pj-pb
+    quote: 'Coadjutor: Rev. Marcus Oliver Throup'
   notes: >-
     Local: Con-Catedral Anglicana da Ressurreição (João Pessoa-PB). Coadjutor da Con-Catedral da Ressurreição na
-    página do Arcediagado PB/RN/CE de 20/08/2009 (captura de 29/11/2010); início não informado.
+    página do Arcediagado PB/RN/CE de 20/08/2009 (captura de 29/11/2010); início não informado. Local: Con-Catedral
+    Anglicana da Ressurreição (João Pessoa-PB). Em exercício em ago/2010, segundo a página "Um Projeto Missionário
+    Anglicano Ortodoxo para o Brasil III – Estado da Paraíba" (publicada em 26/08/2010). Local: Con-Catedral Anglicana
+    da Ressurreição (João Pessoa-PB).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: presbítero
@@ -278,6 +299,77 @@ affiliations:
       Rev. Marcus Oliver Throup ; é Presbítero da Diocese do Recife; Secretário Diocesano de Relações Internacionais;
       professor no SAT-PB; membro da Equipe Pastoral da Concatedral Anglicana da Ressurreição, no Arcediagado Paraíba.
   notes: 'Local: Seminário Anglicano Teológico da Paraíba (SAT-PB). Em novembro de 2010.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coadjutor
+  status: confirmed
+  sources:
+  - source: d2s01-art-4326
+    quote: coadjutor da Paróquia Anglicana do Mediador
+  notes: >-
+    Local: Paróquia Anglicana do Mediador (Tejipió, Recife-PE). Assina o artigo como coadjutor da Paróquia Anglicana
+    do Mediador (Tejipió, Recife); texto escrito na semana a que se refere (ago/2005). Local: Paróquia Anglicana
+    do Mediador.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: reitor do seminário
+  status: confirmed
+  sources:
+  - source: d2s01-art-4326
+    quote: Reitor do Seminário Anglicano Teológico
+  notes: >-
+    Local: Seminário Anglicano Teológico (SAT-PE). Assina o artigo como reitor do Seminário Anglicano Teológico
+    (SAT-PE); texto escrito em ago/2005.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro da equipe pastoral
+  status: confirmed
+  sources:
+  - source: d2s05-throup-genesis
+    quote: >-
+      Rev. Marcus Oliver Throup ; é Presbítero da Diocese do Recife; Secretário Diocesano de Relações Internacionais;
+      membro da Equipe Pastoral da Con-Catedral Anglicana da Ressurreição, João Pessoa-PB; Capelão do Seminário
+      Teológico Anglicano (SAT-PB).
+  notes: >-
+    Local: Con-Catedral Anglicana da Ressurreição, João Pessoa. Assinatura de texto de 17/10/2008, republicado no
+    site em agosto de 2009; na mesma linha: secretário diocesano de relações internacionais e capelão do SAT-PB.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coadjutor
+  status: confirmed
+  sources:
+  - source: d2s07-throup
+    quote: >-
+      O Rev. Marcus O. Throup é clérigo da Diocese Anglicana do Recife; coadjutor da Paróquia Anglicana do Mediador,
+      em Tegipió – Recife – PE; Reitor do Seminário Anglicano Teológico – SAT-PE.
+  - source: d2s08-throup-morte
+    quote: coadjutor da Paróquia Anglicana do Mediador, em Tegipió – Recife – PE
+  notes: >-
+    Local: Paróquia Anglicana do Mediador (Tegipió, Recife). Cargo indicado na assinatura do artigo, sem data própria.
+    O texto fala da exclusão de 32 clérigos pela IEAB 'nesta semana'; a exclusão de clérigos da diocese registrada
+    é de 23/08/2005. Em 2004 o mesmo clérigo constava na Paróquia Anglicana Jardim das Oliveiras. Local: Paróquia
+    Anglicana do Mediador (Tegipió, Recife-PE). Nota biográfica do artigo escrito após a decisão de 23/08/2005 da
+    IEAB.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: reitor do Seminário Anglicano Teológico de Pernambuco (SAT-PE)
+  status: confirmed
+  sources:
+  - source: d2s08-throup-morte
+    quote: Reitor do Seminário Anglicano Teológico – SAT-PE
+  notes: >-
+    Nota biográfica do artigo escrito após a decisão de 23/08/2005 da IEAB, quando já se identificava como clérigo
+    da Diocese Anglicana do Recife.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: reitor do Seminário Anglicano de Teologia (SAT-PE)
+  status: confirmed
+  sources:
+  - source: darl3-hist6
+    quote: >-
+      Os reverendos: Maurício Coelho , presidente do Conselho Diocesano, e Marcus Throup , reitor do SAT-PE também
+      estiveram em visita aos EUA
+  notes: Em exercício em novembro de 2005, segundo a ordem do texto. O texto traz apenas a sigla SAT-PE.
 events:
 - type: other
   date: '2004-12-30'
