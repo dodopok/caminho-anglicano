@@ -477,13 +477,37 @@ affiliations:
     quote: >-
       a vinda de nosso primeiro Bispo Dom Edmund Knox Sherrill, a Paróquia da Santíssima Trindade passou a desempenhar
       de fato
+  - source: d2s31-hist
+    quote: Dom Edmund Knox Sherrill (1º Bispo Diocesano) - 1975 a 1985
+  - source: d2s31-conheca
+    quote: >-
+      Nossa Diocese, criada em 1975 como Diocese Missionária, teve como primeiro bispo D. Edmund K. Sherril.
   notes: >-
     Local: Diocese Setentrional, Recife. Primeiro bispo da Diocese Setentrional (depois Diocese Anglicana do Recife),
     criada pelo Sínodo Geral em 20/05/1976; mudou-se para o Recife apenas no início de 1977. Renunciou e aposentou-se
     no início de 1986. Segundo o mesmo texto, a diocese era "missionária" (sem autonomia) e começou com três paróquias.
     Local: Diocese Anglicana do Recife. Descrito como o primeiro bispo da diocese do Recife, elevada a diocese missionária.
     O texto situa em 1975-1986 o período em que a Paróquia da Santíssima Trindade exerceu de fato as funções de
-    catedral, sem deliberação conciliar.
+    catedral, sem deliberação conciliar. Local: Diocese Anglicana do Recife. O histórico do site da IEAB dá 1975
+    a 1985 e diz que o sínodo criou a diocese em junho de 1975, com instalação em 1976; a página de 2004 da diocese
+    diz que foi criada em 1975 como Diocese Missionária.
+  discrepancies:
+  - field: start
+    value: '1975'
+    sources:
+    - source: d2s31-hist
+      quote: Dom Edmund Knox Sherrill (1º Bispo Diocesano) - 1975 a 1985
+    - source: d2s31-conheca
+      quote: >-
+        Nossa Diocese, criada em 1975 como Diocese Missionária, teve como primeiro bispo D. Edmund K. Sherril.
+  - field: end
+    value: '1985'
+    sources:
+    - source: d2s31-hist
+      quote: Dom Edmund Knox Sherrill (1º Bispo Diocesano) - 1975 a 1985
+    - source: d2s31-conheca
+      quote: >-
+        Nossa Diocese, criada em 1975 como Diocese Missionária, teve como primeiro bispo D. Edmund K. Sherril.
 - jurisdiction: ieab
   role: diocesan_bishop
   diocese: ieab-dar
@@ -1135,3 +1159,55 @@ events:
     quote: >-
       O bispo Edmund Knox Sherril permite a entrada de missionários da SAMS (South America Missionary Society) no
       Rio de Janeiro, Salvador, Recife e Belém.
+- type: other
+  date: '1975'
+  description: >-
+    Criação da Diocese do Recife em 1975 como Diocese Missionária, tendo como primeiro bispo Edmund K. Sherrill,
+    segundo o texto de apresentação da diocese.
+  status: confirmed
+  sources:
+  - source: d2s28-conheca04
+    quote: >-
+      Nossa Diocese, criada em 1975 como Diocese Missionária, teve como primeiro bispo D. Edmund K. Sherril.
+- type: other
+  date: 1984-07
+  description: >-
+    Em julho de 1984, no Sínodo Geral da IEAB (Porto Alegre), Clóvis Erly Rodrigues, então deão da Catedral de Santa
+    Maria, foi eleito bispo coadjutor da Diocese Setentrional (Recife), com direito a sucessão de Edmund Knox Sherrill,
+    que anunciara sua aposentadoria para o fim de 1985. Segundo o histórico do site da IEAB, a eleição contrariou
+    o bispo Sherrill e a delegação do Recife, que desejava eleger Paulo Ruiz Garcia.
+  status: confirmed
+  sources:
+  - source: d2s31-hist
+    quote: >-
+      Em 1984 o bispo Sherrill anuncia sua aposentadoria para o final de 1985, o que torna possível, em julho de
+      1984, durante o Sínodo Geral da IEAB realizado em Porto Alegre, a eleição do Rev. Clovis Erly Rodrigues, então
+      Deão da Catedral de Santa Maria, como bispo coadjutor da Diocese Setentrional (ainda diocese missionária)
+      com direito a sucessão.
+  - source: d2s31-hist
+    quote: >-
+      Esta eleição contrariou a vontade do bispo Sherrill e dos clérigos e leigos da delegação de Recife, que desejavam
+      a eleição do Rev. Paulo Ruiz Garcia como o sucessor de D. Sherrill.
+- type: other
+  date: '1976-10-30'
+  description: >-
+    Em 30 de outubro de 1976, o bispo Edmund Knox Sherrill inaugurou o novo templo da comunidade de Salvador (bairro
+    da Pituba), organizando seu primeiro conselho e seu arrolamento como parte da Diocese Central.
+  status: confirmed
+  sources:
+  - source: d2s31-hist
+    quote: >-
+      A inauguração do novo templo se deu a 30 de outubro do mesmo ano pelo bispo Sherrill sendo organizado o primeiro
+      conselho e seu arrolamento como parte integrante da Diocese Central.
+- type: other
+  date: '1976'
+  description: >-
+    No primeiro concílio da diocese (1976) havia quatro clérigos, três missionários, uma obreira leiga e três paróquias;
+    até a aposentadoria do bispo Sherrill os números passaram a nove clérigos, seis paróquias e duas missões.
+  status: confirmed
+  sources:
+  - source: d2s31-hist
+    quote: >-
+      Em seu primeiro concílio foi realizado em 1976, a diocese tina apenas quatro clérigos, três missionários,
+      uma obreira leiga e três paróquias. Até a aposentadoria do bispo Sherrill, estes números foram alterados para:
+      nove clérigos, seis paróquias e duas missões.

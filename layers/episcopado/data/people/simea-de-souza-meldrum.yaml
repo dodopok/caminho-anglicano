@@ -202,9 +202,12 @@ affiliations:
   sources:
   - source: darl3-carta-0904
     quote: 'Membros do Conselho Diocesano: Revda. Siméa de Souza Meldrum Paróquia Anglicana Água Viva'
+  - source: d2s31-sec
+    quote: iv. Revda. Siméa Meldrum (+ 1 ano)
   notes: >-
     Local: Diocese Anglicana do Recife, Paróquia Anglicana Água Viva. Membro do Conselho Diocesano em 17/09/2004,
-    com a Paróquia Anglicana Água Viva indicada.
+    com a Paróquia Anglicana Água Viva indicada. Local: Diocese Anglicana do Recife. Em exercício em outubro de
+    2004, segundo a lista de cargos diocesanos publicada pela Diocese Anglicana do Recife quando integrava a IEAB.
 - jurisdiction: diocese-anglicana-recife
   role: priest
   status: confirmed
@@ -243,9 +246,35 @@ affiliations:
       reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
       Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis,
       Stephen Taylor, Mitsuo Noyama e Washington Franco.
+  - source: d2s31-ress-par
+    quote: Relação de clérigos anglicanos que pregaram na Paróquia da Ressurreição nos últimos DOIS ANOS
+  - source: d2s31-ress-par
+    quote: Revda Siméa Meldrum (Missão Água Viva)
   notes: >-
     Local: Diocese do Recife. Participante do retiro do clero diocesano em Paudalho (PE), 28/02 a 01/03/1997; clérigo
-    da diocese nessa data, sem informação sobre início ou fim do vínculo.
+    da diocese nessa data, sem informação sobre início ou fim do vínculo. Local: Diocese Anglicana do Recife, Missão
+    Água Viva. Listado como clérigo da comunidade indicada entre os clérigos anglicanos que pregaram na Paróquia
+    da Ressurreição nos "últimos dois anos" (página com estatísticas do ano de 2002).
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Revda. Simêa de Souza Meldrum (05.02)
+  notes: >-
+    Em exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os presbíteros e presbíteras.
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-comun04
+    quote: PARÓQUIA ANGLICANA ÁGUA VIVA Revda. Simêa Meldrum
+  notes: >-
+    Local: Paróquia Anglicana Água Viva (Olinda-PE). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Paróquia subvencionada; a lista a põe à frente da paróquia, sem o título expresso.
 events:
 - type: other
   date: 2013-04

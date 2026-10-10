@@ -541,6 +541,10 @@ affiliations:
     quote: 'Novo Primaz: Glauco Soares de Lima.'
   - source: d2s30-catolicos
     quote: ao Primaz de nossa Província D. Glauco
+  - source: d2s28-canones-gerais
+    quote: Dom Glauco Soares de Lima Bispo Primaz
+  - source: d2s31-conf-not
+    quote: na qual Dom Glauco Soares de Lima, bispo primaz, foi o pregador
   notes: >-
     Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94). Em maio de 2003 a Reunião dos Primazes, em Gramado
     (RS), homenageou o primaz que se aposentava; a entronização do sucessor ocorreu em 1º de junho de 2003. O livro
@@ -550,7 +554,9 @@ affiliations:
     fontes, que podem registrar a posse). A nota da Diocese de Brasília fala em três mandatos (1993, 1997, 2003).
     A cronologia dá 1994 como ano do novo primaz; outras fontes divergem quanto ao início do primado. Em exercício
     na data do texto (depois de outubro de 2003, sem data exata); a fonte cita só o nome 'D. Glauco', que no contexto
-    (primaz da província, 2003-2004) corresponde a Glauco Soares de Lima.
+    (primaz da província, 2003-2004) corresponde a Glauco Soares de Lima. Local: IEAB. Assina como Bispo Primaz
+    da IEAB o certificado dos Cânones Gerais, em Porto Alegre, 19/03/1994. Atestado como bispo primaz da IEAB em
+    24/07/2002, na abertura da Confelíder 2002.
   discrepancies:
   - field: start
     value: '1994'
@@ -621,6 +627,22 @@ affiliations:
       pelos bispos Glauco Soares, Maurício Andrade e, depois, Filadelfo Oliveira. Estes postos foram ocupados entre
       os anos de 2004 e 2006
     page: '238'
+- jurisdiction: tec
+  role: other
+  role_description: bispo assistente
+  diocese: diocese-central-do-equador
+  start: 2004-08
+  status: confirmed
+  sources:
+  - source: d2s32-glauco-equador
+    quote: >-
+      foi convidado pelo Bispo Presidente da Igreja Episcopal dos Estados Unidos (ECUSA), Dom Frank Griswold, para
+      prover supervisão episcopal, na qualidade de Bispo Assistente, à Diocese Central do Equador, até que eles
+      possam eleger seu novo bispo
+  notes: >-
+    Ex-primaz da IEAB, convidado pelo Bispo Presidente da ECUSA; a notícia é de 16/08/2004 e o mês indicado é o
+    do anúncio. Continuaria residindo em São Paulo e faria visitas regulares ao Equador. A diocese pertence à IX
+    Província da ECUSA.
 - jurisdiction: manb
   role: founder
   start: '2013'
@@ -714,6 +736,18 @@ affiliations:
     de deão da Catedral Anglicana de São Paulo antes da sagração; Kickhöfel (1995) o descreve como pároco da Igreja
     de São Paulo (Saint Paul's Church) em 1989. A igreja só foi instituída catedral da DASP em 1995, então "deão"
     pode ser tratamento retrospectivo. Datas de início e fim não informadas.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: assessor da IEAB para a Diocese do Recife
+  status: confirmed
+  sources:
+  - source: d2s31-diacs
+    quote: >-
+      O pregador da noite foi o bispo Dom Glauco Soares, assessor nomeado pela IEAB para acompanhar estes tempos
+      vividos pela Igreja na região nordeste do país.
+  notes: >-
+    Local: Diocese Anglicana do Recife. Atestado em 10/09/2005 como assessor nomeado pela IEAB para acompanhar a
+    Igreja no Nordeste; a nota não dá a data da nomeação.
 events:
 - type: death
   date: '2017-12-26'
@@ -1139,3 +1173,35 @@ events:
     quote: Os primazes expressaram o seu decidido apoio aos nossos bispos e à DAR.
   - source: d2s24-cronologia
     quote: Primazes, reunidos em Gramado
+- type: other
+  date: '1994-03-19'
+  description: >-
+    Aprovação do texto atual dos Cânones Gerais da IEAB pelo Sínodo (sexta sessão, 27/03/1993), emendado em 19/03/1994
+    (26ª reunião); certificado em Porto Alegre pelo Bispo Primaz e pelo Secretário-geral.
+  status: confirmed
+  sources:
+  - source: d2s28-canones-gerais
+    quote: >-
+      foi aprovado na sexta sessão do Sínodo da Igreja Episcopal Anglicana do Brasil, reunido no dia 27 de março
+      de 1993, foi emendado pelo mesmo Sínodo em sua 26 ª Reunião em 19 de março de 1994
+- type: other
+  date: '2005-09-09'
+  description: >-
+    O XXIV Concílio da Diocese Anglicana do Recife reorganizada pela IEAB reuniu-se em 9 e 10 de setembro de 2005
+    na Catedral da Santíssima Trindade, no Recife. No culto de encerramento, presidido por Filadelfo Oliveira Neto,
+    pregou o bispo Glauco Soares de Lima, assessor nomeado pela IEAB para acompanhar a Igreja no Nordeste, e foram
+    ordenados oito diáconos. Na véspera, o retiro do clero e dos ordinandos fora marcado para 7 de setembro.
+  status: confirmed
+  sources:
+  - source: d2s31-diacs
+    quote: >-
+      O XXIV Concílio da DAR, acontecido nos dias 09 e 10 na cidade do Recife, foi encerrado com uma cerimônia emocionante
+      marcada pela adoração e pelas novas ordenações
+  - source: d2s31-diacs
+    quote: >-
+      O pregador da noite foi o bispo Dom Glauco Soares, assessor nomeado pela IEAB para acompanhar estes tempos
+      vividos pela Igreja na região nordeste do país.
+  - source: d2s31-agenda
+    quote: >-
+      07 Retiro do Clero e Ordinandos - Catedral da SS. Trindade 09 a 10 XXIV Concílio Diocesano - Catedral da SS.
+      Trindade

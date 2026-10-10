@@ -32,6 +32,12 @@ sources:
   page: '219'
 - source: ieab-2004-decreto-recife
   quote: 'Considerando a solicitação dos clérigos e clérigas a seguir relacionados:'
+- source: d2s29-m37
+  quote: 'Presbiteral: Rev. Fábio Vasconcelos Anglicana do Bom Samaritano Recife (PE), 29.03.2003'
+- source: d2s29-m37
+  quote: arquiteto por profissão e pastor por vocação
+- source: d2s29-m37
+  quote: formado no SAET
 ordinations:
 - order: diaconate
   date: '2002'
@@ -43,9 +49,15 @@ ordinations:
     quote: >-
       No ano passado, Fábio recebia a imposição de mãos do seu Bispo, sucessor dos apóstolos, invocando o Espírito
       Santo, e lhe conferindo a Ordem dos Diáconos
+  - source: d2s29-m37
+    quote: >-
+      ano passado, Fábio recebia a imposição de mãos do seu Bispo, sucessor dos apóstolos, invocando o Espírito
+      Santo, e lhe conferindo a Ordem dos Diáconos
   notes: >-
     Diaconato 'no ano passado' em relação a 29/03/2003, pelo 'seu Bispo' — o mesmo pregador, o bispo diocesano Robinson
-    Cavalcanti.
+    Cavalcanti. Diaconato referido na ordenação presbiteral de 29/03/2003 ('no ano passado'); a página não dá a
+    data nem o local. O texto é o sermão do bispo diocesano, que fala em primeira pessoa como quem confere a ordem;
+    a página não traz assinatura, e o bispo diocesano em exercício era Robinson Cavalcanti (instalado em 19/10/1997).
 - order: presbyterate
   date: '2003-03-29'
   place: Paróquia Anglicana do Bom Samaritano, Recife-PE
@@ -57,9 +69,19 @@ ordinations:
     quote: Paróquia Anglicana do Bom Samaritano Recife (PE), 29.03.2003
   - source: rcor-drv-presb-fabio
     quote: o seu Bispo e amigo, juntamente com os presbíteros presentes, iremos selar outro rito sacramental
+  - source: d2s29-m37
+    quote: 'Presbiteral: Rev. Fábio Vasconcelos Anglicana do Bom Samaritano Recife (PE), 29.03.2003'
+  - source: d2s29-m37
+    quote: >-
+      recomendado por sua Paróquia como “obreiro aprovado, que não tem do que se envergonhar”, autorizado pela autoridade
+      colegiada do Conselho Diocesano
+  - source: d2s29-m37
+    quote: Fábio, novo sacerdote dentro de alguns minutos, formado no SAET
   notes: >-
     Sermão do bispo diocesano (Robinson Cavalcanti), que menciona também o 'Bispo Sufragâneo' (Filadelfo Oliveira
-    Neto).
+    Neto). O bispo e os presbíteros presentes impõem as mãos; a página fala também em nome 'do Bispo Sufragâneo'
+    (sem nomeá-lo). O texto é o sermão do bispo diocesano, que fala em primeira pessoa como quem confere a ordem;
+    a página não traz assinatura, e o bispo diocesano em exercício era Robinson Cavalcanti (instalado em 19/10/1997).
 affiliations:
 - jurisdiction: ieab-dar
   role: other
@@ -94,6 +116,80 @@ affiliations:
     Câmara dos Bispos supervisão episcopal alternativa (decreto de 16/09/2004), mantendo a comunhão com a IEAB.
     Início e fim do vínculo não informados. Signatário de 'Não sairemos' (01/09/2004): permaneceu na IEAB na crise
     de 2004-2005. Capelão do SAET em 2004.
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Fábio de Souza Vasconcelos (06/05) ... Capelão do SAET
+  notes: >-
+    Em exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os presbíteros e presbíteras.
+- jurisdiction: ieab
+  role: other
+  role_description: capelão
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Capelão do SAET
+  - source: d2s28-insteol04
+    quote: 'Capelão: Rev. Fábio Vasconcelos'
+  notes: >-
+    Local: Seminário Teológico Anglicano do Recife (SAET). Em exercício em outubro de 2004 (página capturada em
+    24/10/2004).
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-comun04
+    quote: 'PARÓQUIA ANGLICANA DO MEDIADOR Pároco: Rev. Fábio Vasconcelos'
+  - source: d2s32-decreto-camara
+    quote: Rev. Fábio Vasconcelos (Paróquia do Mediador e Capelão do Seminário Anglicano de Estudos Teológicos)
+  notes: >-
+    Local: Paróquia Anglicana do Mediador (Recife-PE). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Paróquia subvencionada. Local: Paróquia do Mediador. Relacionado no decreto da Câmara dos Bispos da IEAB (16/09/2004)
+    entre os clérigos da Diocese Anglicana do Recife que, segundo o decreto, solicitaram supervisão episcopal especial;
+    em exercício em setembro de 2004.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: capelão do SAET
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: 'Capelão: Rev. Fábio Vasconcelos'
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB. Cargo de designação nacional (JUNET).
+- jurisdiction: ieab-dar
+  role: clergy
+  status: confirmed
+  sources:
+  - source: d2s31-sala
+    quote: >-
+      Orar pela Paróquia Anglicana do Mediador. Pela vida pessoal, ministerial e familiar do Rev. Fábio Vasconcelos,
+      ML Teodorico Neto e Rodrigo Spiuca.
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana do Mediador (Recife). Atestado no calendário de intercessão
+    da diocese de julho e agosto de 2004 (comunidade citada ao lado do nome).
+- jurisdiction: ieab
+  role: other
+  role_description: capelão do seminário
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s32-decreto-camara
+    quote: Rev. Fábio Vasconcelos (Paróquia do Mediador e Capelão do Seminário Anglicano de Estudos Teológicos)
+  - source: d2s32-eduteologica
+    quote: 'Capelão: Rev. Fábio Vasconcelos'
+  notes: >-
+    Local: Seminário Anglicano de Estudos Teológicos (SAET). Relacionado no decreto da Câmara dos Bispos da IEAB
+    (16/09/2004) entre os clérigos da Diocese Anglicana do Recife que, segundo o decreto, solicitaram supervisão
+    episcopal especial; em exercício em setembro de 2004. Local: Seminário Anglicano de Estudos Teológicos (SAET).
+    Constava na página institucional capturada em junho de 2006; a data da lista é indefinida (o texto da seção
+    é anterior à deposição de junho de 2005).
 events:
 - type: other
   date: '2004-09-01'

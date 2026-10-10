@@ -32,6 +32,31 @@ ordinations:
     o ordenante é entendido como o bispo diocesano da época. Ordenação durante o episcopado de Clóvis Erly Rodrigues
     na diocese (1986-1997), conforme lista de Dom Robinson Cavalcanti; o texto não dá data nem local e não diz expressamente
     "ordenado por"; ordenante inferido do período. Ordenado apenas ao diaconato nesse período.
+affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: arcediago
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-m05
+    quote: Criamos o Arcediagado Equatorial , tendo como titular o Rev. Abimael
+  notes: >-
+    Local: Arcediagado Equatorial (região amazônica). Titular do Arcediagado Equatorial, criado pelo bispo diocesano
+    antes de 30/07/2000, data da mensagem; o texto só diz "Rev. Abimael", identificado como Abimael Rodrigues, reitor
+    da Paróquia de Santa Maria.
+- jurisdiction: ieab
+  role: other
+  role_description: reitor
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-m05
+    quote: >-
+      Atendemos ao pleito da Paróquia de Santa Maria, com a eleição e designação do Rev. Abimael como seu reitor.
+  notes: >-
+    Local: Paróquia de Santa Maria (Belém-PA). Eleito reitor por pedido da paróquia, antes de 30/07/2000, data da
+    mensagem; o texto só diz "Rev. Abimael", identificado como Abimael Rodrigues.
 events:
 - type: other
   date: null
@@ -43,3 +68,14 @@ events:
   - source: drp2-memorias-decada-iv
     quote: >-
       Passamos a fazê-lo, a partir da eleição do Rev. Abimael Rodrigues para a Paróquia de Santa Maria, em Belém-PA.
+- type: other
+  date: '2000'
+  description: >-
+    Criação do Arcediagado Equatorial, na região amazônica da Diocese do Recife, com o Rev. Abimael como titular,
+    descrito pelo bispo diocesano como embrião da futura diocese da região.
+  status: probable
+  sources:
+  - source: d2s28-m05
+    quote: >-
+      Criamos o Arcediagado Equatorial , tendo como titular o Rev. Abimael, como ente eclesial regional, embrião
+      da futura Diocese

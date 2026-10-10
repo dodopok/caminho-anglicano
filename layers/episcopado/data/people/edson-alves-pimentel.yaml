@@ -49,6 +49,21 @@ ordinations:
     pelo bispo diocesano Robinson Cavalcanti.
 affiliations:
 - jurisdiction: ieab
+  role: other
+  role_description: coordenador da fraternidade do diaconato permanente
+  diocese: ieab-dar
+  start: '2001'
+  status: probable
+  sources:
+  - source: d2s29-m17
+    quote: >-
+      estamos designando para coordená-la neste ano o Rev. Edson Pimentel, ex-prior da Ordem Evangélica de Santo
+      Estevão Mártir
+  notes: >-
+    Designação anunciada em 03/02/2001: os cânones diocesanos preveem o diaconato permanente 'em forma de uma fraternidade',
+    coordenada em 2001 pelo Rev. Edson Pimentel. A página o chama de 'ex-prior' da OSE (sem datas). A identificação
+    com Edson Alves Pimentel é provável.
+- jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
   status: confirmed
@@ -95,6 +110,48 @@ affiliations:
   notes: >-
     Constava da página sobre os documentos para pedido de postulância ao ministério ordenado, sem data própria (página
     capturada em 29/10/2004). Identificado pelo nome "Edson Pimentel" e pelo título "Rev."
+- jurisdiction: ieab
+  role: other
+  role_description: coordenador pedagógico
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-insteol04
+    quote: 'Coordenação Pedagógica: Rev. Edson Alves Pimentel, OSF'
+  notes: >-
+    Local: Seminário Teológico Anglicano do Recife (SAET). Em exercício em outubro de 2004 (página capturada em
+    24/10/2004).
+- jurisdiction: ose
+  role: other
+  role_description: prior
+  status: probable
+  sources:
+  - source: d2s29-m17
+    quote: o Rev. Edson Pimentel, ex-prior da Ordem Evangélica de Santo Estevão Mártir
+  notes: >-
+    Já era 'ex-prior' da OSE em 03/02/2001; a página não dá as datas do priorado. Identificação com Edson Alves
+    Pimentel provável.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: coordenador pedagógico do SAET
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: 'Coordenador Pedagógico: Rev. Edson Alves Pimentel, osf'
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB. Cargo de designação nacional (JUNET).
+- jurisdiction: ieab
+  role: other
+  role_description: coordenador pedagógico do seminário
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s32-eduteologica
+    quote: 'Coordenador Pedagógico: Rev. Edson Alves Pimentel, osf'
+  notes: >-
+    Local: Seminário Anglicano de Estudos Teológicos (SAET). Constava na página institucional capturada em junho
+    de 2006; a data da lista é indefinida (o texto da seção é anterior à deposição de junho de 2005).
 events:
 - type: other
   date: '1998'

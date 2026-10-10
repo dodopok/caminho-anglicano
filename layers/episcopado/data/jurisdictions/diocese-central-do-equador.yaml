@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-central-do-equador
+name: Diocese Central do Equador
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: confirmed
+  sources:
+  - source: d2s32-glauco-equador
+    quote: >-
+      foi convidado pelo Bispo Presidente da Igreja Episcopal dos Estados Unidos (ECUSA), Dom Frank Griswold, para
+      prover supervisão episcopal, na qualidade de Bispo Assistente, à Diocese Central do Equador, até que eles
+      possam eleger seu novo bispo

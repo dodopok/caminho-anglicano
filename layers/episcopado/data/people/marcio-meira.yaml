@@ -560,10 +560,13 @@ affiliations:
   sources:
   - source: dard1-carta-bispos-2004
     quote: Rev. Márcio Medeiros Meira Paróquia Anglicana do Salvador Paróquia Anglicana Comunhão
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Márcio Medeiros Meira (28/03)
   notes: >-
     Local: Paróquia Anglicana do Salvador; Paróquia Anglicana Comunhão. Consta na carta aberta de 17/09/2004, assinada
     pela Diocese do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado
-    entre os presbíteros. Nome na carta: Márcio Medeiros Meira.
+    entre os presbíteros. Nome na carta: Márcio Medeiros Meira. Em exercício em outubro de 2004 (página capturada
+    em 24/10/2004). Listado entre os presbíteros e presbíteras.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: reitor_do_seminario
@@ -709,6 +712,50 @@ affiliations:
     Local: Paróquia Anglicana Comunhão (João Pessoa). Em exercício em dez/2010 (reverendo indicado entre parênteses
     após o nome da paróquia) e em abr/2013 (descrito como "pastor da Paróquia Anglicana Comunhão de João Pessoa
     - PB").
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-comun04
+    quote: 'PARÓQUIA ANGLICANA DO SALVADOR Márcio Medeiros Meira Auxiliar: ML. Cláudio Luiz Figueiredo de Brito'
+  notes: >-
+    Local: Paróquia Anglicana do Salvador (João Pessoa-PB). Em exercício em outubro de 2004 (página capturada em
+    24/10/2004). Paróquia subvencionada; a lista o põe à frente da paróquia, sem o título expresso.
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-comun04
+    quote: PARÓQUIA ANGLICANA COMUNHÃO Márcio Medeiros Meira
+  notes: >-
+    Local: Paróquia Anglicana Comunhão (João Pessoa-PB). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Paróquia subvencionada; a lista o põe à frente da paróquia, sem o título expresso.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: coordenador administrativo do IAT
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: 'Coordenador Administrativo: Rev. Márcio Meira'
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
+- jurisdiction: ieab-dar
+  role: clergy
+  status: confirmed
+  sources:
+  - source: d2s31-ress-par
+    quote: Relação de clérigos anglicanos que pregaram na Paróquia da Ressurreição nos últimos DOIS ANOS
+  - source: d2s31-ress-par
+    quote: Rev Márcio Meira, OSE (Missão Comunhão)
+  notes: >-
+    Local: Diocese Anglicana do Recife, Missão Comunhão. Listado como clérigo da comunidade indicada entre os clérigos
+    anglicanos que pregaram na Paróquia da Ressurreição nos "últimos dois anos" (página com estatísticas do ano
+    de 2002).
 events:
 - type: other
   date: '2017-05-06'

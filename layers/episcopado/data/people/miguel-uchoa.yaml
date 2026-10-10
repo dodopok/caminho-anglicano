@@ -890,10 +890,14 @@ affiliations:
     quote: >-
       Rev.Miguel Ângelo de A. Uchoa Cavalcanti Paróquia Anglicana do Espírito Santo e Ponto Missionário Anglicano
       Monte Moriá
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Miguel ... Uchôa Cavalcanti (29.12)
   notes: >-
     Local: Paróquia Anglicana do Espírito Santo; Ponto Missionário Anglicano Monte Moriá. Consta na carta aberta
     de 17/09/2004, assinada pela Diocese do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de
-    cada signatário. Listado entre os presbíteros. Nome na carta: Miguel Ângelo de A. Uchoa Cavalcanti.
+    cada signatário. Listado entre os presbíteros. Nome na carta: Miguel Ângelo de A. Uchoa Cavalcanti. Em exercício
+    em outubro de 2004 (página capturada em 24/10/2004). Listado entre os presbíteros e presbíteras. A lista traz
+    o nome como "Miguel ... de A Uchôa Cavalcanti" (parte do nome ilegível no texto arquivado).
 - jurisdiction: ieab
   role: other
   role_description: conselho_executivo_do_sinodo
@@ -1018,9 +1022,52 @@ affiliations:
       reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
       Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis,
       Stephen Taylor, Mitsuo Noyama e Washington Franco.
+  - source: d2s31-ress-par
+    quote: Relação de clérigos anglicanos que pregaram na Paróquia da Ressurreição nos últimos DOIS ANOS
+  - source: d2s31-ress-par
+    quote: Miguel Uchoa (Paróquia do Espírito Santo)
   notes: >-
     Local: Diocese do Recife. Participante do retiro do clero diocesano em Paudalho (PE), 28/02 a 01/03/1997; clérigo
-    da diocese nessa data, sem informação sobre início ou fim do vínculo.
+    da diocese nessa data, sem informação sobre início ou fim do vínculo. Local: Diocese Anglicana do Recife, Paróquia
+    do Espírito Santo. Listado como clérigo da comunidade indicada entre os clérigos anglicanos que pregaram na
+    Paróquia da Ressurreição nos "últimos dois anos" (página com estatísticas do ano de 2002).
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-comun04
+    quote: >-
+      PARÓQUIA ANGLICANA DO ESPÍRITO SANTO (22/08) Miguel Uchôa Cavalcanti Auxiliares: Rev. Fernando Acosta Geison
+      Sávio de Holanda
+  notes: >-
+    Local: Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes-PE). Em exercício em outubro de 2004 (página
+    capturada em 24/10/2004). Paróquia autônoma; a lista o põe à frente da paróquia, sem o título expresso.
+- jurisdiction: ieab
+  role: other
+  role_description: responsável
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-comun04
+    quote: 'PONTO MISSIONÁRIO ANGLICANO MONTE MORIÁ Miguel Uchoa Auxiliar: ML Márcio José de Sousa Simões'
+  notes: >-
+    Local: Ponto Missionário Anglicano Monte Moriá (Gravatá-PE). Em exercício em outubro de 2004 (página capturada
+    em 24/10/2004).
+- jurisdiction: ieab
+  role: other
+  role_description: arcediago
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s32-robinson-deposto
+    quote: >-
+      o Arcediago Rev. Miguel Uchoa Cavalcanti, representando conforme sua expressão "toda a Diocese Anglicana do
+      Recife"
+  notes: >-
+    Assim designado no decreto da IEAB de 10/06/2005, ao relatar sua palestra de 26/05/2005 na reunião da Anglican
+    Mainstream (Inglaterra); em exercício em maio de 2005.
 events:
 - type: other
   date: '2017-05-06'

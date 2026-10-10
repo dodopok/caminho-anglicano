@@ -28,6 +28,20 @@ sources:
 - source: d2s30-arcebispo
   quote: doutorando na London School of Economics and Political Science
 affiliations:
+- jurisdiction: ieab-dar
+  role: other
+  role_description: professor de Liturgia III no SAET
+  start: '2003'
+  status: confirmed
+  sources:
+  - source: d2s31-resol
+    quote: a disciplina LITURGIA III
+  - source: d2s31-resol
+    quote: sob a responsabilidade do Rev. Joabe Cavalcanti
+  notes: >-
+    Local: Diocese Anglicana do Recife. Resolução Diocesana nº 03/2003 (20/02/2003) institui a disciplina de pós-graduação
+    lato sensu Liturgia III no SAET, no primeiro período letivo de 2003, sob responsabilidade do Rev. Joabe Cavalcanti,
+    que a resolução cita por sua experiência internacional.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -36,9 +50,12 @@ affiliations:
   - source: costa2021
     quote: Rev. Joabe Gomes Cavalcanti
     page: '217'
+  - source: d2s28-clero04
+    quote: Clérigos(as) Licenciados (as) - (05) ... Joabe Gomes Cavalcanti (29.05)
   notes: >-
     Signatário de 'Não sairemos' (01/09/2004): permaneceu na IEAB na crise de 2004-2005. Em 2006 morava na Inglaterra
-    e declinou indicação ao episcopado.
+    e declinou indicação ao episcopado. Em exercício em outubro de 2004 (página capturada em 24/10/2004). Listado
+    entre os clérigos licenciados.
 - jurisdiction: ieab-dar
   role: clergy
   status: confirmed
@@ -78,6 +95,18 @@ affiliations:
   notes: >-
     Local: Catedral de Southwark. Em exercício na data do artigo (julho de 2002). Identificado com o clérigo da
     Diocese Anglicana do Recife de mesmo nome por 'G. Cavalcanti' e pela publicação no site da diocese; ver dúvidas.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: clérigo licenciado
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Clérigo Licenciado - (01)
+  - source: d2s31-clero
+    quote: Rev. Joabe Gomes Cavalcanti
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listado como clérigo licenciado.
 events:
 - type: other
   date: '2004-09-01'

@@ -60,10 +60,25 @@ ordinations:
   - source: rcor-drv-ord-adonias-diac
     quote: >-
       Recebi a Diocese do Recife, após 17 anos de sua existência, com 20 pastores. Hoje ordeno o 21º dos novos pastores
+  - source: d2s29-m22
+    quote: SERMÃO DE ORDENAÇÃO AO DIACONATO DE ADONIAS, EDGAR E EDMAR
+  - source: d2s29-m22
+    quote: PARÓQUIA DO ESPÍRITO SANTO – 18/12/99
+  - source: d2s29-m22
+    quote: O Bispo os ordena com satisfação.
+  - source: d2s29-m22
+    quote: >-
+      Recebi a Diocese do Recife, após 17 anos de sua existência, com 20 pastores. Hoje ordeno o 21º dos novos pastores
   notes: >-
     Sermão do bispo diocesano (Robinson Cavalcanti, que 'recebeu a Diocese do Recife' em 1997) na ordenação diaconal
     de Adonias, Edgar e Edmar. Identificação pelos primeiros nomes: Adonias Ramos de Souza e Edgar Batista Ferreira
-    Neto (ambos presbíteros da diocese em 2002 e depois bispos da IECB) e Edmar Pimentel.
+    Neto (ambos presbíteros da diocese em 2002 e depois bispos da IECB) e Edmar Pimentel. Ordenação conjunta de
+    três diáconos, citados só pelo primeiro nome (Adonias, Edgar e Edmar). A identificação de Adonias com Adonias
+    Ramos de Souza apoia-se na sua instalação como reitor da Paróquia do Calvário (Janga, Paulista) e na ordenação
+    presbiteral de 'Adonias & Edgar' em 05/08/2000. No sermão, o bispo informa que recebeu a diocese com 20 pastores
+    e 13 paróquias e missões e que, em dezembro de 1999, a diocese tinha 27 (14 novas). O texto é o sermão do bispo
+    diocesano, que fala em primeira pessoa como quem confere a ordem; a página não traz assinatura, e o bispo diocesano
+    em exercício era Robinson Cavalcanti (instalado em 19/10/1997).
 - order: presbyterate
   date: '2000-08-05'
   place: Paróquia do Calvário, Janga, Paulista-PE
@@ -84,11 +99,23 @@ ordinations:
     quote: Hoje dois ex-batistas se tornam sacerdotes anglicanos.
   - source: rcor-drv-ord-adonias-presb
     quote: Estes ordinandos, este bispo, e esta diocese em formação
+  - source: d2s29-m16
+    quote: ORDENAÇÃO AO PRESBITERADO DE ADONIAS & EDGAR
+  - source: d2s29-m16
+    quote: do Calvário – Janga, Paulista – PE ( 05/08/00)
+  - source: d2s29-m16
+    quote: Hoje dois ex-batistas se tornam sacerdotes anglicanos.
+  - source: d2s29-m16
+    quote: Agora se tornam sacerdotes para sempre, segundo a ordem de Melquisedeque.
   notes: >-
     Missão/Paróquia do Calvário (Paulista), então ligada à IEAB; data e ordenante não informados. Sermão do bispo
     diocesano (Robinson Cavalcanti) na ordenação presbiteral de Adonias e Edgar, 'dois ex-batistas', que já haviam
     servido como diáconos. Identificação: Adonias Ramos de Souza e Edgar Batista Ferreira Neto (ordenados diáconos
-    em 18/12/1999).
+    em 18/12/1999). Ordenação presbiteral conjunta de Adonias e Edgar, ambos ex-batistas e ex-diáconos da diocese
+    ('Vocês honraram o espírito de serviço do diaconato'). O bispo fala de 'estes ordinandos, este bispo, e esta
+    diocese em formação'. Edgar aparece só pelo primeiro nome. O texto é o sermão do bispo diocesano, que fala em
+    primeira pessoa como quem confere a ordem; a página não traz assinatura, e o bispo diocesano em exercício era
+    Robinson Cavalcanti (instalado em 19/10/1997).
 - order: episcopate
   date: '2007-11-30'
   jurisdiction: iecb
@@ -118,6 +145,23 @@ ordinations:
     como principal, mas a fonte não o diz explicitamente. Sagrantes não nomeados. Igreja Episcopal Carismática do
     Brasil — Diocesano de Paulista e Estado da Paraíba. A tese não informa local nem sagrantes.
 affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: reitor
+  diocese: ieab-dar
+  start: '2001-10-21'
+  status: confirmed
+  sources:
+  - source: d2s29-m23
+    quote: Anglicana do Calvário – Janga, Paulista/PE 21 de Outubro de 2001
+  - source: d2s29-m23
+    quote: formalmente empossarmos o Rev. Adonias como Reitor desta Paróquia
+  notes: >-
+    Local: Paróquia do Calvário (Janga, Paulista-PE). Posse formal como reitor, em culto do 4º aniversário de episcopado
+    do bispo diocesano. A página escreve 'Rev. Adonias' (o texto não dá sobrenome); a identificação com Adonias
+    Ramos de Souza vem do local (Calvário, Janga) e do nome. Ele já podia exercer a função antes da posse formal.
+    O texto é o sermão do bispo diocesano, que fala em primeira pessoa como quem confere a ordem; a página não traz
+    assinatura, e o bispo diocesano em exercício era Robinson Cavalcanti (instalado em 19/10/1997).
 - jurisdiction: iecb
   role: bishop
   diocese: diocese-de-paulista
@@ -174,3 +218,15 @@ events:
     quote: >-
       Depois houve a saída do rev. Leonides Menezes, com a rev. Karla Patriota e Adonias Ramos Souza e as paróquias
       Betânia e Calvário (PEREIRA, 2013, p. 28).
+- type: other
+  date: '2002'
+  description: >-
+    Segundo o histórico do site da IEAB, no segundo cisma de 2002 deixaram a Diocese Anglicana do Recife os reverendos
+    Leonides Menezes Ferreira e Adonias Ramos de Souza, a reverenda Karla Patriota e as Paróquias Betânia e do Calvário
+    (relato da fonte, que atribui os cismas à gestão do bispo diocesano).
+  status: confirmed
+  sources:
+  - source: d2s31-hist
+    quote: >-
+      No segundo cisma, deixaram a Igreja o Rev. Leonides Menezes Ferreira, Revda. Karla Patriota o Rev. Adonias
+      Ramos de Souza e as Paróquias Betânea e do Calvário.

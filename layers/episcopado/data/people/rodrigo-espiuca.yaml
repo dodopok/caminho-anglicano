@@ -14,6 +14,33 @@ sources:
     Este GT era composto pelos reverendos Gustavo Oliveira, Rodrigo Espiuca, Rose Cunha, Silvio Freitas, e Senomar
     Teixeira
   page: '238'
+ordinations:
+- order: diaconate
+  date: '2005-09-10'
+  place: Catedral Anglicana da Santíssima Trindade, Recife (PE)
+  jurisdiction: ieab-dar
+  ordained_by: filadelfo-oliveira-neto
+  status: confirmed
+  sources:
+  - source: d2s31-diacs
+    quote: a Diocese conta com oito novos diáconos ordenados por Dom Filadelfo
+  - source: d2s31-diacs
+    quote: >-
+      Rev. Rodrigo Espiúca, Rev. Senomar Teixeira, Rev. Adilson Ferreira, Rev. Fernando Gonçalves, Rev. Rodson Ricardo,
+      Rev. Júlio Gomes, Rev. Sílvio Freitas e Rev. Ricardo Domingos
+  - source: d2s31-diacs
+    quote: >-
+      estiveram na Catedral Anglicana da Santíssima Trindade e participaram do culto presidido pelo Bispo Dom Filadelfo
+      Neto
+  - source: d2s31-agenda
+    quote: Ordenações Diaconais - Catedral da SS. Trindade
+  - source: d2s31-clero
+    quote: Rev. Rodrigo Espiúca dos Anjos Siqueira, TSSF
+  notes: >-
+    Os oito diáconos aparecem juntos na nota do site, que dá o culto de encerramento do XXIV Concílio no sábado,
+    10/09/2005, na Catedral da Santíssima Trindade, presidido por Filadelfo Oliveira Neto como autoridade eclesiástica
+    da diocese que permaneceu na IEAB. A nota não cita co-ordenantes. A identificação dos nomes curtos com os nomes
+    completos vem da lista do clero do mesmo site (abril de 2006), que traz todos entre os diáconos.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -27,6 +54,52 @@ affiliations:
   notes: >-
     Listado como presbítero atuante da DAB em 2025-04 (Paróquia do Espírito Santo, Novo Gama/GO). Datas de início
     não informadas.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: secretário administrativo diocesano
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: 'Secretário Administrativo: Rev. Rodrigo Espiúca, TSSF'
+  - source: d2s31-carta
+    quote: Rev. Rodrigo Espiúca Secretário Administrativo da DAR
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Local: Diocese Anglicana do Recife. Signatário da carta aberta do Conselho
+    Diocesano da Diocese Anglicana do Recife (IEAB) de 21/09/2005, com este cargo.
+- jurisdiction: ieab-dar
+  role: deacon
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Diáconos(as) - (09)
+  - source: d2s31-clero
+    quote: Rev. Rodrigo Espiúca dos Anjos Siqueira, TSSF
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listado entre os diáconos.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: auxiliar
+  status: confirmed
+  sources:
+  - source: d2s31-comun
+    quote: 'Auxiliares : Rev. Rodrigo Espiuca, tssf/ Rev. Silvio Freitas, tssf'
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana Boas Novas (Caaporã, PB). Em exercício em abril de 2006,
+    segundo a lista de paróquias e missões da Diocese Anglicana do Recife reorganizada pela IEAB.
+- jurisdiction: ieab-dar
+  role: clergy
+  status: probable
+  sources:
+  - source: d2s31-sala
+    quote: >-
+      Orar pela Paróquia Anglicana do Mediador. Pela vida pessoal, ministerial e familiar do Rev. Fábio Vasconcelos,
+      ML Teodorico Neto e Rodrigo Spiuca.
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana do Mediador (Recife). Atestado no calendário de intercessão
+    da diocese de julho e agosto de 2004 (comunidade citada ao lado do nome). A página grafa "Rodrigo Spiuca", sem
+    título; identificação com Rodrigo Espiúca (diácono em 2005) é provável.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar

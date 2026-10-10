@@ -233,6 +233,8 @@ affiliations:
     quote: >-
       Dentre essas pessoas que permaneceram na IEAB, se encontravam os reverendos Sérgio Andrade e João Câncio Peixoto.
     page: '203'
+  - source: d2s32-decreto-camara
+    quote: Rev. Francisco Sales de Melo Silva, osf, Rev. João C. Peixoto Filho e Rev. Josafá Batista dos Santos
   notes: >-
     Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
     por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. Futuro bispo diocesano
@@ -240,7 +242,9 @@ affiliations:
     à Câmara dos Bispos supervisão episcopal alternativa (decreto de 16/09/2004), mantendo a comunhão com a IEAB.
     Início e fim do vínculo não informados. Leigo desde 1983; diácono 2003, presbítero 2005. Ficou na IEAB em 2002
     (não seguiu Paulo Garcia) e em 2004-2005 (assinou 'Para além das trincheiras' e 'Não sairemos'). Reitor do SAET
-    por sete anos no episcopado de Sebastião. Fim = sagração.
+    por sete anos no episcopado de Sebastião. Fim = sagração. Relacionado no decreto da Câmara dos Bispos da IEAB
+    (16/09/2004) entre os clérigos da Diocese Anglicana do Recife que, segundo o decreto, solicitaram supervisão
+    episcopal especial; em exercício em setembro de 2004. O decreto não indica paróquia.
 - jurisdiction: ieab
   role: bishop
   start: '2013'
@@ -302,6 +306,66 @@ affiliations:
       Samaritano
     page: '173'
   notes: Bispo diocesano em 2017. Quinto bispo da DAR; situação em 2025.
+- jurisdiction: ieab
+  role: deacon
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Diáconos (as) - (13) ... João Cáncio Peixoto Filho (17/05)
+  notes: >-
+    Em exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os diáconos e diáconas.
+- jurisdiction: ieab
+  role: other
+  role_description: ministro auxiliar
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-comun04
+    quote: 'Auxiliar: Rev. João Câncio Peixoto'
+  notes: >-
+    Local: Paróquia Anglicana Bom Samaritano (Recife-PE). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+- jurisdiction: ieab-dar
+  role: priest
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Presbíteros(as) - (12)
+  - source: d2s31-clero
+    quote: Rev. João Câncio Peixoto Filho
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listado entre os presbíteros.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: ministro responsável
+  status: confirmed
+  sources:
+  - source: d2s31-comun
+    quote: MISSÃO ANGLICANA LIBERDADE Rev. João Câncio Peixoto
+  notes: >-
+    Local: Diocese Anglicana do Recife, Missão Anglicana Liberdade (Jaboatão dos Guararapes, PE). Em exercício em
+    abril de 2006, segundo a lista de paróquias e missões da Diocese Anglicana do Recife reorganizada pela IEAB.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro da Comissão de Companheirismo e Intercâmbio
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: v. Rev. João Câncio Peixoto
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro do Conselho Diocesano
+  status: confirmed
+  sources:
+  - source: d2s31-carta
+    quote: Rev. João C. Peixoto Filho Conselheiro
+  notes: >-
+    Local: Diocese Anglicana do Recife. Signatário da carta aberta do Conselho Diocesano da Diocese Anglicana do
+    Recife (IEAB) de 21/09/2005, com este cargo.
 events:
 - type: other
   date: '2026-08-08'

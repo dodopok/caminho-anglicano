@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: ricardo-walter-domingos
+name: Ricardo Walter Domingos
+aliases:
+- Rev. Ricardo Domingos
+biography: Diácono ordenado em 10/09/2005 na Diocese Anglicana do Recife (IEAB).
+sources:
+- source: d2s31-diacs
+  quote: >-
+    Rev. Rodrigo Espiúca, Rev. Senomar Teixeira, Rev. Adilson Ferreira, Rev. Fernando Gonçalves, Rev. Rodson Ricardo,
+    Rev. Júlio Gomes, Rev. Sílvio Freitas e Rev. Ricardo Domingos
+ordinations:
+- order: diaconate
+  date: '2005-09-10'
+  place: Catedral Anglicana da Santíssima Trindade, Recife (PE)
+  jurisdiction: ieab-dar
+  ordained_by: filadelfo-oliveira-neto
+  status: confirmed
+  sources:
+  - source: d2s31-diacs
+    quote: a Diocese conta com oito novos diáconos ordenados por Dom Filadelfo
+  - source: d2s31-diacs
+    quote: >-
+      Rev. Rodrigo Espiúca, Rev. Senomar Teixeira, Rev. Adilson Ferreira, Rev. Fernando Gonçalves, Rev. Rodson Ricardo,
+      Rev. Júlio Gomes, Rev. Sílvio Freitas e Rev. Ricardo Domingos
+  - source: d2s31-diacs
+    quote: >-
+      estiveram na Catedral Anglicana da Santíssima Trindade e participaram do culto presidido pelo Bispo Dom Filadelfo
+      Neto
+  - source: d2s31-agenda
+    quote: Ordenações Diaconais - Catedral da SS. Trindade
+  - source: d2s31-clero
+    quote: Rev. Ricardo Walter Domingos, TSSF
+  notes: >-
+    Os oito diáconos aparecem juntos na nota do site, que dá o culto de encerramento do XXIV Concílio no sábado,
+    10/09/2005, na Catedral da Santíssima Trindade, presidido por Filadelfo Oliveira Neto como autoridade eclesiástica
+    da diocese que permaneceu na IEAB. A nota não cita co-ordenantes. A identificação dos nomes curtos com os nomes
+    completos vem da lista do clero do mesmo site (abril de 2006), que traz todos entre os diáconos.
+affiliations:
+- jurisdiction: ieab-dar
+  role: deacon
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Diáconos(as) - (09)
+  - source: d2s31-clero
+    quote: Rev. Ricardo Walter Domingos, TSSF
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listado entre os diáconos.

@@ -51,7 +51,7 @@ sources:
 ordinations:
 - order: diaconate
   date: '2002-10-05'
-  place: Missão Jardim das Oliveiras, Recife-PE
+  place: Paróquia Anglicana Jardim das Oliveiras, Recife-PE
   jurisdiction: ieab
   ordained_by: robinson-cavalcanti
   status: confirmed
@@ -71,6 +71,13 @@ ordinations:
     quote: Rev. Estevão Meneses da Silva, ose
   - source: rcor-drv-ordens-dar
     quote: Rev. Estevão Menezes
+  - source: d2s29-m29
+    quote: Diaconal de Estevão Menezes, OSE Jardim das Oliveiras Recife/PE – 05/10/2002
+  - source: d2s29-m29
+    quote: concedem o rito sacramental da ordem ao nosso irmão e amigo Estevão Menezes
+  - source: d2s29-m29
+    quote: >-
+      Você me concede a alegria de comemorar os cinco anos de minha sagração episcopal com a 41.ª ordenação ministerial.
   notes: >-
     Sermão assinado por Dom Robinson Cavalcanti no 5º aniversário da sua sagração. Identificação documentada: o
     sermão chama o ordinando "Estevão Menezes, OSE" (2002) e "Estevão Menezes da Silva" (2004). Nas listas diocesanas
@@ -79,7 +86,11 @@ ordinations:
     Catedral de 2005 ainda traz "Rev. Estevão Meneses da Silva", e os calendários de 2006 e 2007 trazem "Rev. Estevão
     Menezes Chiappetta – Secretário Diocesano (Recife)" e "Revmo. Deão Estevão Menezes Chiappetta"; a Carta de Setúbal
     (26/02/2005) já o lista como "Rev. Estevão Menezes Chiappetta – Secretário Diocesano (Recife)". A página das
-    Ordens Religiosas (2004) o lista como membro clerical da OSE ("Rev. Estevão Menezes").
+    Ordens Religiosas (2004) o lista como membro clerical da OSE ("Rev. Estevão Menezes"). Sermão assinado por Robinson
+    Cavalcanti, OSE, véspera de eleições gerais; ordenação de Estevão Menezes, membro da OSE, na data em que o bispo
+    comemorava cinco anos de sagração episcopal (41ª ordenação ministerial do seu episcopado). O bispo lamenta,
+    no mesmo sermão, 'a quebra da unidade da nossa família eclesial' e decisões 'precipitadas e centralizadas' de
+    grupos que deixaram a diocese.
 - order: presbyterate
   date: '2004-03-07'
   place: Paróquia Anglicana Jardim das Oliveiras, Recife-PE
@@ -107,13 +118,23 @@ ordinations:
     quote: Rev. Estevão Menezes Chiappetta – Secretário Diocesano (Recife)
   - source: rcid-calendario-2007
     quote: Revmo. Deão Estevão Menezes Chiappetta
+  - source: d2s29-m45
+    quote: >-
+      Culto em Ação de Graças – 5º Aniversário da Anglicana Jardim das Oliveiras Recife – PE, 07 de Março de 2004
+  - source: d2s29-m45
+    quote: a realização do rito de Ordenação ao presbiterado do Diácono Rev. Estevão Menezes
+  - source: d2s29-m45
+    quote: Rev. Estevão (44º presbítero ordenado neste episcopado)
   notes: >-
     Sermão do bispo diocesano (Robinson Cavalcanti). O sermão o chama 'Estevão Menezes da Silva'; nos calendários
     diocesanos de 2004–2005 ele aparece como 'Meneses da Silva' e, a partir de 2006, como 'Menezes Chiappetta'.
     44º presbítero do episcopado de Dom Robinson. O sermão o chama 'Estevão Menezes da Silva'. O sermão (do bispo
     diocesano Robinson Cavalcanti) dá o nome "Estevão Menezes da Silva", grafia usada nas listas diocesanas até
     2005; a partir de 2005 os documentos da mesma diocese passam a grafar "Estevão Menezes Chiappetta" para o único
-    Estevão do clero.
+    Estevão do clero. A ordenação coincidiu com o culto de ação de graças pelos cinco anos da Paróquia Anglicana
+    Jardim das Oliveiras. O texto é o sermão do bispo diocesano, que fala em primeira pessoa como quem confere a
+    ordem; a página não traz assinatura, e o bispo diocesano em exercício era Robinson Cavalcanti (instalado em
+    19/10/1997).
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -198,9 +219,14 @@ affiliations:
     quote: Ordenação Diaconal de Estevão Menezes, OSE
   - source: rcid-calendario-2004
     quote: Rev. Estevão Meneses da Silva, ose
+  - source: d2s29-m29
+    quote: Diaconal de Estevão Menezes, OSE
+  - source: d2s29-m29
+    quote: Hoje ordenamos um filho espiritual de Santo Estevão, o primeiro mártir da Igreja.
   notes: >-
     Membro clerical da OSE (nome grafado 'Estevão Menezes'). Lista da página 'Ordens Religiosas' do site da Diocese
     do Recife, arquivada em 24/10/2004. Membro clerical da Ordem Evangélica de Santo Estevão Mártir (OSE) em 2002-2004.
+    Em 05/10/2002 identificado como membro da Ordem Evangélica de Santo Estevão Mártir (OSE).
 - jurisdiction: ieab
   role: other
   role_description: postulante
@@ -261,6 +287,66 @@ affiliations:
   notes: >-
     Em exercício em 26/02/2005, como delegado clerical ao Concílio Diocesano Extraordinário (Setúbal, Recife); a
     carta o indica como Secretário Diocesano (Recife).
+- jurisdiction: ieab
+  role: other
+  role_description: secretário administrativo
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: 'Centro Diocesano Arcebispo George Carey Secretário Administrativo: Rev. Estevão Menezes da Silva'
+  notes: >-
+    Local: Centro Diocesano Arcebispo George Carey. Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Secretário administrativo da diocese; o nome aparece como "Estevão Menezes da Silva".
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Estevão Menezes da Silva , OSE (26/12) Secretário Administrativo da DAR
+  notes: Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+- jurisdiction: ieab
+  role: other
+  role_description: coadjutor
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-comun04
+    quote: 'Coadjutor: Rev. Estevão Menezes, OSE'
+  notes: >-
+    Local: Paróquia Anglicana Jardim das Oliveiras (Recife-PE). Em exercício em outubro de 2004 (página capturada
+    em 24/10/2004). Paróquia subvencionada.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: secretário administrativo diocesano
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: Secretaria Administrativa Estevão Menezes da Silva
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB. A página escreve Estevão Menezes da Silva.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: presidente da Comissão de Companheirismo e Intercâmbio
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: iii. Rev. Estevão Menezes, ose (Presidente)
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro da Comissão de Relações Públicas e Comunicação Social
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: 'Comissão de Relações Públicas e Comunicação Social : i. Rev. Estevão Menezes , ose'
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
 events:
 - type: other
   date: 2005-06

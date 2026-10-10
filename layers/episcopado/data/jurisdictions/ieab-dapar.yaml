@@ -10,7 +10,7 @@ aliases:
 type: diocese
 country: BR
 founded:
-  date: '2003'
+  date: '2003-07-27'
   sources:
   - source: ieab-parana-20
     quote: Ela foi organizada em 2003, partindo das sementes plantadas por décadas
@@ -28,6 +28,11 @@ founded:
   - source: lbd-wp-dasp
     quote: >-
       A DASP foi criada em 1969, abrangendo inicialmente os Estados de São Paulo, Paraná e Mato Grosso do Sul
+  - source: d2s32-noticias-p13
+    quote: Instalação da Diocese Anglicana de Curitiba
+  - source: d2s32-noticias-p13
+    quote: >-
+      No próximo dia 27 de julho, Dom Orlando Santos de Oliveira, Bispo Primaz da IEAB, presidirá a Cerimônia
 website: http://dapar.org/
 description: >-
   A Diocese Anglicana do Paraná, antes chamada Diocese Anglicana de Curitiba, foi organizada em 2003 e integra a
@@ -61,6 +66,11 @@ sources:
   quote: Revmo. Bispo Naudal Alves Gomes, Emérito
 - source: ieab-dioceses
   quote: Bispo Diocesano – Revma. Magda Guedes
+- source: d2s32-noticias-p13
+  quote: Instalação da Diocese Anglicana de Curitiba
+- source: d2s32-noticias-p13
+  quote: >-
+    No próximo dia 27 de julho, Dom Orlando Santos de Oliveira, Bispo Primaz da IEAB, presidirá a Cerimônia
 relations:
 - type: part_of
   target: ieab
@@ -138,3 +148,8 @@ relations:
     quote: >-
       Criação da Diocese Missionária de Curitiba e eleição do seu primeiro Bispo, D. Naudal Alves Gomes (atual Bispo
       Sufragâneo da Diocese Sul-Ocidental - Santa Maria /RS).
+  - source: d2s32-carta-esclarecimento
+    quote: >-
+      Rev. Carlos Eduardo Brandão Calvani (Diocese Anglicana de Curitiba, Coordenador do Centro de Estudos Anglicanos)
+  - source: d2s32-panama
+    quote: Revmo. Naudal Gomes Diocese de Curitiba

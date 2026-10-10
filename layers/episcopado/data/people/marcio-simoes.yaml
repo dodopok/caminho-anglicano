@@ -411,6 +411,30 @@ affiliations:
     corrompida na conversão do texto. Local: Arcediagado Centro. Em exercício em 21/05/2011. Local: Arcediagado
     Centro. Cargo constante da Relação dos Cargos Diocesanos 2011, publicada em 10/12/2010 (captura de 28/12/2010);
     designação para o exercício de 2011. O texto traz a palavra "Coelho" antes do nome, aparente erro de digitação.
+- jurisdiction: ieab
+  role: other
+  role_description: ministro leigo auxiliar
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-comun04
+    quote: 'Auxiliar: ML Márcio José de Sousa Simões'
+  notes: >-
+    Local: Ponto Missionário Anglicano Monte Moriá (Gravatá-PE). Em exercício em outubro de 2004 (página capturada
+    em 24/10/2004). Ministro leigo na data da página.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: ministro leigo
+  status: confirmed
+  sources:
+  - source: d2s31-not04
+    quote: >-
+      A referida comunidade, integrante do Arcediagado Centro, estará sob a tutela da Paróquia Anglicana do Espírito
+      Santo, em Jaboatão dos Guararapes-PE, e sob os cuidados ministeriais do ML. Márcio Simões.
+  notes: >-
+    Local: Diocese Anglicana do Recife, Ponto Missionário Anglicano Ressurreição (Vitória de Santo Antão, PE). Notícia
+    de julho de 2004: o ponto missionário foi fundado em 18/07/2004 e ficou sob os cuidados ministeriais do ministro
+    leigo Márcio Simões.
 events:
 - type: other
   date: '2017-05-06'
@@ -518,3 +542,16 @@ events:
     quote: >-
       Emanuel está servindo no PM Cristo Rei (Caruaru - PE) e José Roberto está servindo no PM em São Caetano –
       PE, Pontos Missionários da Paróquia Anglicana do Advento em Caruaru – PE (Rev. Fábio Rego).
+- type: other
+  date: '2004-07-18'
+  description: >-
+    Em 18 de julho de 2004, em Vitória de Santo Antão (PE), foi fundado o Ponto Missionário Anglicano Ressurreição,
+    com 24 membros, em solenidade presidida pelo bispo diocesano; a comunidade, do Arcediagado Centro, ficou sob
+    a tutela da Paróquia Anglicana do Espírito Santo (Jaboatão dos Guararapes) e sob os cuidados do ministro leigo
+    Márcio Simões.
+  status: confirmed
+  sources:
+  - source: d2s31-not04
+    quote: Em Vitória de Santo Antão-PE tivemos o retorno da presença da DAR com a fundação do
+  - source: d2s31-not04
+    quote: com 24 membros, em solenidade presidida pelo diocesano, no último dia 18/07

@@ -116,11 +116,15 @@ affiliations:
       Ven. Arc. Revda. Maria Gorete Correia M. Silva Secretária Diocesana de Ação Social Paróquia Anglicana da Redenção
   - source: darl3-primaz-0406
     quote: Ven Arc Revda. Mª. Gorete C. Marques da Silva
+  - source: d2s31-sec
+    quote: 'ii. Litoral-Norte: Revda. Maria Gorete , ose'
   notes: >-
     Local: Diocese Anglicana do Recife. Título de arcediaga atestado no calendário diocesano de 2004 (publicado
     em 2003). Local: Diocese Anglicana do Recife, Paróquia Anglicana da Redenção. Arcediago em 25/06/2004 (carta
     ao Primaz da IEAB) e em 17/09/2004 (carta ao Bispo Primaz), com o arcediagado e a comunidade indicados quando
-    constam do documento.
+    constam do documento. Local: Diocese Anglicana do Recife, Arcediagado Litoral-Norte. Em exercício em outubro
+    de 2004, segundo a lista de cargos diocesanos publicada pela Diocese Anglicana do Recife quando integrava a
+    IEAB.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago
@@ -270,10 +274,13 @@ affiliations:
   - source: dard1-carta-bispos-2004
     quote: >-
       Ven. Arc. Revda. Maria Gorete Correia M. Silva Secretária Diocesana de Ação Social Paróquia Anglicana da Redenção
+  - source: d2s28-clero04
+    quote: Ven. Arced. Revda. Maria Gorete Correia M. Silva, OSE (28.03)
   notes: >-
     Local: Paróquia Anglicana da Redenção. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife
     (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Arcediaga (título "Ven. Arc."),
-    sem arcediagado indicado na lista.
+    sem arcediagado indicado na lista. Em exercício em outubro de 2004 (página capturada em 24/10/2004). Arcediaga
+    (título "Ven. Arced."); a lista não indica o arcediagado.
 - jurisdiction: ieab
   role: other
   role_description: secretario_diocesano
@@ -437,6 +444,46 @@ affiliations:
   notes: >-
     Local: Arcediagado Norte. Em exercício em outubro de 2004 (página capturada em 24/10/2004). A página traz apenas
     "Maria Gorete, OSE"; a identificação decorre do cargo de arcediaga do Norte atestado em outras páginas da diocese.
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Ven. Arced. Revda. Maria Gorete Correia M. Silva, OSE (28.03)
+  notes: >-
+    Em exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os presbíteros e presbíteras.
+- jurisdiction: ieab
+  role: other
+  role_description: secretário diocesano
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Secretária Diocesana de Ação Social
+  notes: >-
+    Local: Secretaria Diocesana de Ação Social. Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-comun04
+    quote: PARÓQUIA ANGLICANA DA REDENÇÃO Ven. Arced. Revda. Maria Gorete Correia, OSE
+  notes: >-
+    Local: Paróquia Anglicana da Redenção (Olinda-PE). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Paróquia subvencionada; a lista a põe à frente da paróquia, sem o título expresso.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: secretária de Ação Social
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: Secretaria de Ação Social Revda. Maria Gorete, ose
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
 events:
 - type: other
   date: '2004-06-25'

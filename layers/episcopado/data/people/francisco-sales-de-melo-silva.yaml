@@ -29,10 +29,17 @@ ordinations:
     quote: >-
       Como Bispo tenho a alegria e a satisfação de conferir a ordem do diaconato a Arthur Cavalcante e Francisco
       Sales
+  - source: d2s29-m17
+    quote: PARÓQUIA DO BOM SAMARITANO – 03.02.2001
+  - source: d2s29-m17
+    quote: >-
+      Bispo tenho a alegria e a satisfação de conferir a ordem do diaconato a Arthur Cavalcante e Francisco Sales
   notes: >-
     Sermão do bispo diocesano (Robinson Cavalcanti). Um dos dois seguia para o diaconato permanente e o outro para
     o presbiterato (o texto não diz qual). Identificação com Francisco Sales de Melo Silva provável (nome completo
-    não dado).
+    não dado). Ordenação conjunta com Arthur Cavalcante; a página cita apenas 'Francisco Sales'. Ex-católico romano,
+    segundo o sermão. O texto é o sermão do bispo diocesano, que fala em primeira pessoa como quem confere a ordem;
+    a página não traz assinatura, e o bispo diocesano em exercício era Robinson Cavalcanti (instalado em 19/10/1997).
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -55,13 +62,61 @@ affiliations:
   - source: costa2021
     quote: Rev. Francisco Sales de Melo Silva, osf
     page: '217'
+  - source: d2s28-clero04
+    quote: Clérigos(as) Licenciados (as) - (05) ... Francisco Sales de Melo Silva , OSF (18/11)
+  - source: d2s32-decreto-camara
+    quote: Rev. Francisco Sales de Melo Silva, osf, Rev. João C. Peixoto Filho e Rev. Josafá Batista dos Santos
   notes: >-
     Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
     por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. OSF Listado no clero
     diocesano da DAR (página consultada em 2026-10). Anexo K: em 2004 era clérigo(a) da Diocese Anglicana do Recife
     e foi um dos 13 que pediram à Câmara dos Bispos supervisão episcopal alternativa (decreto de 16/09/2004), mantendo
     a comunhão com a IEAB. Início e fim do vínculo não informados. Signatário de 'Não sairemos' (01/09/2004): permaneceu
-    na IEAB na crise de 2004-2005.
+    na IEAB na crise de 2004-2005. Em exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre
+    os clérigos licenciados. Relacionado no decreto da Câmara dos Bispos da IEAB (16/09/2004) entre os clérigos
+    da Diocese Anglicana do Recife que, segundo o decreto, solicitaram supervisão episcopal especial; em exercício
+    em setembro de 2004. O decreto não indica paróquia.
+- jurisdiction: osf
+  role: other
+  role_description: guardião
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Guardião da Ordem de São Francisco (Fraternidade Recife)
+  notes: >-
+    Local: OSF. Em exercício em outubro de 2004 (página capturada em 24/10/2004). Guardião da Fraternidade Recife
+    da Ordem de São Francisco (OSF).
+- jurisdiction: ieab-dar
+  role: priest
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Presbíteros(as) - (12)
+  - source: d2s31-clero
+    quote: Rev. Francisco Sales de Melo Silva, osf TSSF
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listado entre os presbíteros.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: pároco
+  status: confirmed
+  sources:
+  - source: d2s31-comun
+    quote: 'Pároco : Rev. Francisco Sales, OSF'
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana Boas Novas (Caaporã, PB). Em exercício em abril de 2006,
+    segundo a lista de paróquias e missões da Diocese Anglicana do Recife reorganizada pela IEAB.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro da Junta de Capelães Examinadores
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: iii. Rev. Francisco Sales, osf (+ 1 ano)
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
 events:
 - type: other
   date: '2004-09-01'

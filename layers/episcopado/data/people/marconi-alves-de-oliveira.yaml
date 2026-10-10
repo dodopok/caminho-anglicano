@@ -199,9 +199,12 @@ affiliations:
   sources:
   - source: dard1-carta-bispos-2004
     quote: Rev. Marconi Alves de Oliveira Ponto Missionário Anglicano Nova Vida
-  notes: "Local: Ponto Missionário Anglicano Nova Vida. Consta na carta aberta de 17/09/2004, assinada pela Diocese\
-    \ do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os\
-    \ diáconos. "
+  - source: d2s28-clero04
+    quote: Diáconos (as) - (13) ... Marconi Alves de Oliveira (02/09)
+  notes: >-
+    Local: Ponto Missionário Anglicano Nova Vida. Consta na carta aberta de 17/09/2004, assinada pela Diocese do
+    Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os diáconos.  Em
+    exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os diáconos e diáconas.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: ministro_encarregado
@@ -290,3 +293,42 @@ affiliations:
   notes: >-
     Local: Missão Anglicana Água Viva (Arez-RN). Em exercício em dez/2010; reverendo indicado entre parênteses após
     o nome da missão; citado como "Rev. Marcone Alves".
+- jurisdiction: ieab
+  role: other
+  role_description: responsável
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-comun04
+    quote: PONTO MISSIONÁRIO ANGLICANO NOVA VIDA Marconi Alves de Oliveira
+  notes: >-
+    Local: Ponto Missionário Anglicano Nova Vida (João Pessoa-PB). Em exercício em outubro de 2004 (página capturada
+    em 24/10/2004).
+- jurisdiction: ieab-dar
+  role: other
+  role_description: candidato às Sagradas Ordens
+  status: confirmed
+  sources:
+  - source: d2s31-ress-not
+    quote: O PM Vida Nova está sob a responsabilidade do Candidato às Sagradas Ordens Marcone Alves de Oliveira
+  - source: d2s31-ress-not
+    quote: foi instituído em suas novas funções no Ponto Missionário Vida Nova por Dom Filadelfo
+  notes: >-
+    Local: Diocese Anglicana do Recife, Arcediagado PB/RN/CE — Ponto Missionário Vida Nova (João Pessoa, PB). Responsável
+    pelo Ponto Missionário Vida Nova (bairro dos Novais, João Pessoa), em notícia sem data própria capturada em
+    outubro de 2004; a página escreve Marcone Alves de Oliveira.
+events:
+- type: other
+  date: null
+  description: >-
+    Em notícia sem data própria (capturada em outubro de 2004), o bispo sufragâneo Filadelfo Oliveira Neto participou
+    da inauguração do Ponto Missionário Vida Nova, no bairro dos Novais, em João Pessoa (Arcediagado PB/RN/CE),
+    e instituiu o candidato às Sagradas Ordens Marcone Alves de Oliveira em suas funções à frente da comunidade.
+  status: confirmed
+  sources:
+  - source: d2s31-ress-not
+    quote: >-
+      O bispo sufragâneo D. Filadelfo esteve participando da inauguração do mais novo ponto missionário do Arcediagado
+      PB/RN/CE localizado no bairro dos Novais, na cidade de João Pessoa.
+  - source: d2s31-ress-not
+    quote: foi instituído em suas novas funções no Ponto Missionário Vida Nova por Dom Filadelfo

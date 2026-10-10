@@ -20,6 +20,10 @@ sources:
   quote: 'Considerando a solicitação dos clérigos e clérigas a seguir relacionados:'
 - source: dar-clero-diocesano
   quote: Revdo. Severino Abel da Silva
+- source: d2s28-m15
+  quote: >-
+    Gostaria de destacar a Severino Abel, o ex capuchinho e incansável evangelizador da periferia de Natal, Rio
+    Grande do Norte
 ordinations:
 - order: diaconate
   date: '1999-07-31'
@@ -92,13 +96,17 @@ affiliations:
   - source: costa2021
     quote: Rev. Severino Abel da Silva, ose (Paróquia Jesus da Nazaré)
     page: '217'
+  - source: d2s32-decreto-camara
+    quote: Rev. Severino Abel da Silva, ose (Paróquia Jesus de Nazaré)
   notes: >-
     Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
     por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. Paróquia Jesus de
     Nazaré; OSE Listado no clero diocesano da DAR (página consultada em 2026-10). Anexo K: em 2004 era clérigo(a)
     da Diocese Anglicana do Recife e foi um dos 13 que pediram à Câmara dos Bispos supervisão episcopal alternativa
     (decreto de 16/09/2004), mantendo a comunhão com a IEAB. Início e fim do vínculo não informados. Signatário
-    de 'Não sairemos' (01/09/2004): permaneceu na IEAB na crise de 2004-2005.
+    de 'Não sairemos' (01/09/2004): permaneceu na IEAB na crise de 2004-2005. Local: Paróquia Jesus de Nazaré. Relacionado
+    no decreto da Câmara dos Bispos da IEAB (16/09/2004) entre os clérigos da Diocese Anglicana do Recife que, segundo
+    o decreto, solicitaram supervisão episcopal especial; em exercício em setembro de 2004.
 - jurisdiction: ieab-dar
   role: other
   role_description: diácono, com atuação na Paróquia Jesus de Nazaré (Zona Norte, Natal)
@@ -111,6 +119,105 @@ affiliations:
   notes: >-
     Relato de Rodson Ricardo sobre seu ingresso no anglicanismo, por volta de 1999-2000 (o texto diz 'o ainda Diácono');
     sem datas precisas.
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Severino Abel Da Silva, OSF (08/08)
+  notes: >-
+    Em exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os presbíteros e presbíteras.
+- jurisdiction: osf
+  role: other
+  role_description: guardião
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Guardião da Ordem de São Francisco (Fraternidade Rio Grande do Norte)
+  notes: >-
+    Local: OSF. Em exercício em outubro de 2004 (página capturada em 24/10/2004). Guardião da Fraternidade Rio Grande
+    do Norte da Ordem de São Francisco (OSF).
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-comun04
+    quote: PARÓQUIA ANGLICANA JESUS DE NAZARÉ Severino Abel da Silva, OSF
+  notes: >-
+    Local: Paróquia Anglicana Jesus de Nazaré (Natal-RN). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Paróquia subvencionada; a lista o põe à frente da paróquia, sem o título expresso.
+- jurisdiction: ieab
+  role: other
+  role_description: responsável
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-comun04
+    quote: PONTO MISSIONÁRIO ANGLICANO SÃO FRANCISCO DE ASSIS Severino Abel da Silva, OSF
+  notes: >-
+    Local: Ponto Missionário Anglicano São Francisco de Assis (Natal-RN). Em exercício em outubro de 2004 (página
+    capturada em 24/10/2004).
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro da Comissão de Companheirismo e Intercâmbio
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: ii. Rev. Severino Abel da Silva, osf
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro do Tribunal Eclesiástico
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: ii. Rev. Severino Abel da Silva, osf
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
+- jurisdiction: ieab-dar
+  role: clergy
+  status: confirmed
+  sources:
+  - source: d2s31-sala
+    quote: Orar pela Paróquia Anglicana Jesus de Nazaré, Rev. Severino Abel, o Sem. Gecyoni
+  - source: d2s31-ress-par
+    quote: Relação de clérigos anglicanos que pregaram na Paróquia da Ressurreição nos últimos DOIS ANOS
+  - source: d2s31-ress-par
+    quote: Rev Abel Silva, OSF (Paróquia Jesus de Nazaré)
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana Jesus de Nazaré (Natal, RN). Atestado no calendário de
+    intercessão da diocese de julho e agosto de 2004 (comunidade citada ao lado do nome). Local: Diocese Anglicana
+    do Recife, Paróquia Jesus de Nazaré (Natal). Listado como clérigo da comunidade indicada entre os clérigos anglicanos
+    que pregaram na Paróquia da Ressurreição nos "últimos dois anos" (página com estatísticas do ano de 2002).
+- jurisdiction: ieab-dar
+  role: founder
+  status: confirmed
+  sources:
+  - source: d2s31-nazare
+    quote: >-
+      A Paróquia, presente no bairro há 04 anos, surgiu pela iniciativa do Rev. Severino Abel da Silva (OSF), e
+      o apoio de amigos.
+  notes: >-
+    Local: Diocese Anglicana do Recife, Missão/Paróquia Anglicana Jesus de Nazaré (Natal, RN). Segundo a página
+    (setembro de 2004), a comunidade do bairro Jardim Progresso, Zona Norte de Natal, surgiu por iniciativa do Rev.
+    Severino Abel da Silva (OSF); o primeiro salão foi construído em agosto de 1997 e a comunidade era então a Missão
+    Anglicana Jesus de Nazaré.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: pároco
+  status: confirmed
+  sources:
+  - source: d2s31-nazare
+    quote: PÁROCO Rev. Severino Abel da Silva, osf
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana Jesus de Nazaré (Natal, RN). Em exercício em setembro
+    de 2004, segundo a página da paróquia.
 events:
 - type: other
   date: '2004-09-01'
@@ -141,3 +248,15 @@ events:
     quote: >-
       Era o primeiro Domingo de 1998 e presente, para presidir a primeira Eucaristia, estava o Rev. Washington Franco,
       então reitor da Paróquia da Ressurreição em João Pessoa, Paraíba.
+- type: other
+  date: '1999-07-31'
+  description: >-
+    Recepção de quatro ministros oriundos de outras denominações, ordenados diáconos em 31/07/1999 após período
+    de retreinamento e cumprimento dos requisitos canônicos: Severino Abel (ex-capuchinho) e três ex-pastores presbiterianos,
+    entre eles Luiz Marcos e Jorge Aquino.
+  status: probable
+  sources:
+  - source: d2s28-m15
+    quote: Eles têm passado por um período de retreinamento e de cumprimento dos requisitos canônicos
+  - source: d2s28-m15
+    quote: Os outros três ordinandos são todos ex-pastores presbiterianos

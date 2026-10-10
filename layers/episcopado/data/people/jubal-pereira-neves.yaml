@@ -209,6 +209,24 @@ affiliations:
   notes: >-
     Página da Secretaria Geral, atualizada em 13 de março de 2026, que o lista entre os eméritos sem indicação de
     falecimento.
+- jurisdiction: ieab
+  role: other
+  role_description: presidente da Comissão Especial nomeada pelo Bispo Primaz
+  status: confirmed
+  sources:
+  - source: d2s32-carta-esclarecimento
+    quote: Dom Jubal Pereira Neves, presidente da Comissão
+  notes: >-
+    Comissão Especial da IEAB nomeada em 16/03/2004 pelo Bispo Primaz a pedido da Câmara dos Bispos; em exercício
+    em julho de 2004.
+- jurisdiction: ieab
+  role: bishop
+  diocese: ieab-dso
+  status: probable
+  sources:
+  - source: d2s32-panama
+    quote: Revmo. Jubal Neves Diocese Sul-Ocidental
+  notes: Signatário da Declaração do Panamá; em exercício em outubro de 2005.
 events:
 - type: other
   date: '2010-10-25'
@@ -272,3 +290,79 @@ events:
     quote: >-
       No mesmo ano, ocorreu a eleição do cônego Jubal Pereira Neves91, durante o 45º Concílio Extraordinário
     page: '101'
+- type: other
+  date: '2004-03-16'
+  description: >-
+    Em 16 de março de 2004, em Porto Alegre, reuniu-se pela primeira vez a Comissão Especial nomeada pelo Primaz
+    da IEAB para refletir sobre os sinais de crise na Comunhão Anglicana e seus desdobramentos na IEAB; presidida
+    por Dom Jubal Pereira Neves, definiu três eixos: eclesiologia anglicana (Carlos Eduardo Calvani e Joanildo Burity),
+    colegialidade (Maurício Andrade e Erika Furukawa) e implicações canônicas da sagração de Gene Robinson (Jubal
+    Pereira Neves e Francisco de Assis da Silva).
+  status: confirmed
+  sources:
+  - source: d2s31-comis
+    quote: >-
+      Reuniu-se na tarde de ontem (16/03/04), em Porto Alegre a Comissão Especial nomeada pelo Primaz da IEAB para
+      refletir sobre os sinais de crise na Comunhão Anglicana e, particularmente dos desdobramentos dessa crise
+      na IEAB.
+  - source: d2s31-comis
+    quote: A reunião foi presidida pelo Revmo Bispo Dom Jubal Pereira Neves
+  - source: d2s31-comis
+    quote: Implicações canônicas (Dom Jubal Pereira Neves e Rev. Francisco de Assis da Silva).
+- type: other
+  date: 2005-09
+  description: >-
+    Em setembro de 2005, segundo o portal da IEAB, o Primaz da Nigéria, Peter Akinola, comunicou por carta ao Primaz
+    do Brasil que a IEAB não era mais bem-vinda ao III Encontro Anglicano do Sul Global, citando declarações do
+    bispo Jubal Neves em relatório ao concílio diocesano e afirmando que a deposição de Robinson Cavalcanti fora
+    precipitada. O Primaz Orlando Santos de Oliveira respondeu, com cópia ao Arcebispo de Cantuária, que a IEAB
+    era discriminada pela organização do encontro e que Robinson Cavalcanti fora deposto por problemas disciplinares,
+    éticos e morais.
+  status: confirmed
+  sources:
+  - source: d2s32-akinola
+    quote: a IEAB foi notificada de que não é mais bem-vinda ao III Encontro Anglicano do Sul Global
+  - source: d2s32-akinola
+    quote: Akinola, afirmou que a deposição de Robinson Cavalcanti foi precipitada
+  - source: d2s32-akinola
+    quote: Bispo Cavalcanti foi deposto por problemas disciplinares, éticos e morais.
+- type: other
+  date: 2005-10
+  description: >-
+    Declaração do Panamá (outubro de 2005): bispos latino-americanos reunidos durante o Congresso Anglicano de Teologia,
+    entre eles os do Brasil (Orlando Santos de Oliveira, Jubal Neves, Naudal Gomes, Sebastião Gameleira, Filadelfo
+    de Oliveira e Maurício Andrade), comprometeram-se a retomar o Conselho Anglicano Latino-Americano (CALA), propuseram
+    uma tendência de "Centro Global" entre o Norte e o Sul Global e confiaram aos primazes do México, Brasil e IARCA
+    e ao presidente da IX Província da Igreja Episcopal a coordenação dos esforços; lamentaram a exclusão da Província
+    do Brasil da Conferência Sul Global.
+  status: confirmed
+  sources:
+  - source: d2s32-panama
+    quote: >-
+      Como bispos latino-americanos, nos comprometemos a retomar o Conselho Anglicano Latino-Americano (CALA)
+  - source: d2s32-panama
+    quote: >-
+      Os primazes do México, Brasil e IARCA, e o presidente da IX Província da Igreja Episcopal, coordenarão os
+      esforços e os mecanismos necessários para que o CALA possa dar início às suas atividades
+  - source: d2s32-panama
+    quote: >-
+      lamentamos a exclusão forçada da Província do Brasil da Conferência Sul Global, a ser realizada no Egito
+- type: other
+  date: '2004-03-16'
+  description: >-
+    Em 16/03/2004 o Primaz da IEAB nomeou, a pedido da Câmara dos Bispos, uma Comissão Especial (assessoria e recomendação
+    ao Primaz e à Câmara dos Bispos, sem poder de decisão), com ênfase em eclesiologia, colegialidade e implicações
+    canônicas; presidida por Jubal Pereira Neves e composta pelos bispos Jubal Neves e Maurício Andrade, pelos presbíteros
+    Francisco de Assis da Silva e Carlos Eduardo Brandão Calvani e por dois leigos (Joanildo Burity e Érica Furukawa).
+  status: confirmed
+  sources:
+  - source: d2s32-carta-esclarecimento
+    quote: >-
+      Desde a nomeação e início do trabalho, em 16 de março de 2004, da Comissão Especial da IEAB, nomeada pelo
+      Bispo Primaz, a pedido da Câmara dos Bispos
+  - source: d2s32-carta-esclarecimento
+    quote: >-
+      a Comissão não tem nenhum mandato de decisão, mas tão somente de assessoria e recomendação ao Bispo Primaz
+      e à Câmara dos Bispos
+  - source: d2s32-carta-esclarecimento
+    quote: 'com ênfase em três eixos: eclesiologia, colegialidade e implicações canônicas'

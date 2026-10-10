@@ -172,10 +172,13 @@ affiliations:
   - source: dard1-carta-bispos-2004
     quote: >-
       Revda. Juciara Maria Rodrigues do N. Crasto Paróquia Anglicana São Paulo Ponto Missionário Anglicano Betesda
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Revda. Juciara M. Rodrigues do N. Crasto (23/03)
   notes: >-
     Local: Paróquia Anglicana São Paulo; Ponto Missionário Anglicano Betesda. Consta na carta aberta de 17/09/2004,
     assinada pela Diocese do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário.
-    Listado entre os presbíteros. Nome na carta: Juciara Maria Rodrigues do N. Crasto.
+    Listado entre os presbíteros. Nome na carta: Juciara Maria Rodrigues do N. Crasto. Em exercício em outubro de
+    2004 (página capturada em 24/10/2004). Listado entre os presbíteros e presbíteras.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: ministro_encarregado
@@ -245,3 +248,25 @@ affiliations:
     Local: Paróquia Anglicana São Paulo (Alto do Eucalipto, Recife). Matéria de 7/07/2010 indica "Reverenda: Juciara
     Maria Rodrigues" como responsável pela Paróquia São Paulo, sem o título de pároca; identificada com Juciara
     Maria R. do Nascimento pelo mesmo cargo e paróquia.
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-comun04
+    quote: PARÓQUIA ANGLICANA SÃO PAULO Revda. Juciara Rodrigues
+  notes: >-
+    Local: Paróquia Anglicana São Paulo (Recife-PE). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Paróquia autônoma; a lista a põe à frente da paróquia, sem o título expresso.
+- jurisdiction: ieab
+  role: other
+  role_description: responsável
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-comun04
+    quote: PONTO MISSIONÁRIO ANGLICANO BETESDA Revda. Juciara Crasto
+  notes: >-
+    Local: Ponto Missionário Anglicano Betesda (Passarinho, Recife-PE). Em exercício em outubro de 2004 (página
+    capturada em 24/10/2004).

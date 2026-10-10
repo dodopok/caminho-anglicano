@@ -60,6 +60,24 @@ ordinations:
     Silva" juntas em 1999, e em jan/2002 "Veralúcia Lins Silva, OSE" já era reverenda enquanto Vera Lúcia Nascimento
     ainda era candidata (diácona só em 13/07/2002). O diaconato de Filadelfo Oliveira Neto, ordenado na mesma cerimônia,
     é de 28/02/1999 (Costa 2021), o que data o sermão.
+- order: presbyterate
+  date: 1999-10
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: probable
+  sources:
+  - source: d2s28-m02
+    quote: graças a Deus, também, pela ordenação de quatro novos presbíteros
+  - source: d2s28-m02
+    quote: V eralúcia, Nadja, Célio e Filadelfo, sede leais e vigorosos
+  - source: d2s28-m02
+    quote: graças a Deus juntamente com meus irmãos e amigos, pelos dois anos de episcopado
+  notes: >-
+    Culto de ação de graças pelos dois anos de episcopado do bispo diocesano, no qual ele agradece a ordenação de
+    quatro novos presbíteros e dirige-se a Veralúcia, Nadja, Célio e Filadelfo ("Ao vosso presbiterato aponto a
+    centralidade da mensagem da Cruz de Cristo"). A mensagem não traz data nem local; o mês (outubro de 1999) decorre
+    dos dois anos de episcopado (sagração em outubro de 1997) e do índice de mensagens, que lista o "Aniversário
+    de Sagração - 15/10/99". O texto dá só o primeiro nome de Célio, cuja identidade não ficou estabelecida.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -192,8 +210,13 @@ affiliations:
   sources:
   - source: dard1-carta-bispos-2004
     quote: Revda. Veralúcia Lins Silva Paróquia Anglicana do Redentor
-  notes: "Local: Paróquia Anglicana do Redentor. Consta na carta aberta de 17/09/2004, assinada pela Diocese do\
-    \ Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os presbíteros. "
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Revda. Veralícia Lins Silva (03/07)
+  notes: >-
+    Local: Paróquia Anglicana do Redentor. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife
+    (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os presbíteros.  Em
+    exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os presbíteros e presbíteras. A
+    lista grafa "Veralícia"; o nome é entendido como Veralúcia Lins Silva (a mesma lista de 2002 grafa Veralúcia).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: procurador_diocesano
@@ -267,3 +290,36 @@ affiliations:
   notes: >-
     Local: Paróquia Anglicana do Redentor (Brasilit, Recife). Em exercício em mar/2010; citada como "Revda. Vera
     Lins".
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-comun04
+    quote: 'PARÓQUIA ANGLICANA DO REDENTOR (11/02) Pároca: Revda. Vera Lúcia Lins Silva'
+  notes: >-
+    Local: Paróquia Anglicana do Redentor (Recife-PE). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Paróquia subvencionada. A lista grafa "Vera Lúcia Lins Silva".
+- jurisdiction: ieab-dar
+  role: other
+  role_description: procuradora diocesana
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: 'Procuradora Diocesana : Revda. Veralúcia Lins Silva, ose'
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
+- jurisdiction: ieab-dar
+  role: clergy
+  status: confirmed
+  sources:
+  - source: d2s31-ress-par
+    quote: Relação de clérigos anglicanos que pregaram na Paróquia da Ressurreição nos últimos DOIS ANOS
+  - source: d2s31-ress-par
+    quote: Revda Veralúcia Lins, OSE (Missão do Mediador)
+  notes: >-
+    Local: Diocese Anglicana do Recife, Missão do Mediador. Listado como clérigo da comunidade indicada entre os
+    clérigos anglicanos que pregaram na Paróquia da Ressurreição nos "últimos dois anos" (página com estatísticas
+    do ano de 2002).

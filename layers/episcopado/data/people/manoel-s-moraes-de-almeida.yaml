@@ -322,6 +322,46 @@ affiliations:
   notes: >-
     Local: Diocese Anglicana do Recife, Paróquia Anglicana Bom Samaritano. Secretário de Direitos Humanos em 17/09/2004
     (nome grafado "Manoel Severino Moraes de Almeida").
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Manoel Severino Moraes de Almeida, OSE (22/02)
+  notes: >-
+    Em exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os presbíteros e presbíteras.
+- jurisdiction: ieab
+  role: other
+  role_description: secretário diocesano
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Secretário Diocesano de Direitos Humanos
+  notes: >-
+    Local: Secretaria Diocesana de Direitos Humanos. Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+- jurisdiction: ieab
+  role: other
+  role_description: reitor
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-comun04
+    quote: 'PARÓQUIA ANGLICANA BOM SAMARITANO Reitor: Rev. Manoel Severino Moraes, OSE'
+  notes: >-
+    Local: Paróquia Anglicana Bom Samaritano (Recife-PE). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Paróquia autônoma.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: secretário de Direitos Humanos
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: Secretaria de Direitos Humanos Manoel Moraes, ose
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
 events:
 - type: other
   date: '2004-07-06'

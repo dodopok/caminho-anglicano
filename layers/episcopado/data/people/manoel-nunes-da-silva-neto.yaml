@@ -90,8 +90,12 @@ affiliations:
   sources:
   - source: dard1-carta-bispos-2004
     quote: Rev. Manoel Nunes da Silva Neto Missão Anglicana da Esperança
-  notes: "Local: Missão Anglicana da Esperança. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife\
-    \ (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os diáconos. "
+  - source: d2s28-clero04
+    quote: Diáconos (as) - (13) ... Manoel Nunes da Silva Neto (18.06) Contador
+  notes: >-
+    Local: Missão Anglicana da Esperança. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife
+    (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os diáconos.  Em
+    exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os diáconos e diáconas.
 - jurisdiction: ieab-dar
   role: deacon
   status: confirmed
@@ -111,3 +115,45 @@ affiliations:
   notes: >-
     Delegado clerical ao Concílio Diocesano Extraordinário de 26/02/2005 (Carta de Setúbal), com o cargo indicado
     na lista de delegados.
+- jurisdiction: ieab
+  role: other
+  role_description: ministro encarregado
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-comun04
+    quote: MISSÃO ANGLICANA DA ESPERANÇA Manoel Nunes
+  notes: >-
+    Local: Missão Anglicana da Esperança (João Pessoa-PB). Em exercício em outubro de 2004 (página capturada em
+    24/10/2004). A lista indica apenas "Manoel Nunes"; identificado como o diácono Manoel Nunes da Silva Neto, listado
+    como contador diocesano.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: contador diocesano
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: 'Contador Diocesano : i. Rev. Manoel Nunes da Silva Neto'
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro da Comissão de Credenciais e Diplomacia
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: 'Comissão de Credenciais e Diplomacia : i. Rev. Manoel Nunes da Silva Neto'
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
+- jurisdiction: ieab-dar
+  role: clergy
+  status: probable
+  sources:
+  - source: d2s31-sala
+    quote: Orar pelo Ponto Missionário Santo Estevão, em São Miguel de Taipu, PB. Rev. Manuel Nunes e ML Hélio
+  notes: >-
+    Local: Diocese Anglicana do Recife, Ponto Missionário Santo Estevão (São Miguel de Taipu, PB). Atestado no calendário
+    de intercessão da diocese de julho e agosto de 2004 (comunidade citada ao lado do nome). A página dá "Rev. Manuel
+    Nunes"; identificação com Manoel Nunes da Silva Neto, listado em comissões diocesanas, é provável.

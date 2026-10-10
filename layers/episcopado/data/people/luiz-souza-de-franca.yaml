@@ -82,6 +82,27 @@ ordinations:
     (1986-1997), conforme lista de Dom Robinson Cavalcanti; o texto não dá data nem local e não diz expressamente
     "ordenado por"; ordenante inferido do período. Ordenado apenas ao diaconato nesse período.
 affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: reitor
+  diocese: ieab-dar
+  start: '1999-11-06'
+  status: confirmed
+  sources:
+  - source: d2s29-m21
+    quote: >-
+      SERMÃO DE INSTITUIÇÃO DO REV. LUIZ SOUZA DE FRANÇA COMO REITOR DA PARÓQUIA DA RESSURREIÇÃO - JOÃO PESSOA –
+      Pb. 06/11/99
+  - source: d2s29-m21
+    quote: dou posse ao novo reitor da Paróquia da Ressurreição
+  - source: d2s29-m21
+    quote: Revd. Luiz Souza de França
+  notes: >-
+    Local: Paróquia da Ressurreição (João Pessoa-PB). Instituição em 06/11/1999, por sermão do bispo diocesano,
+    que lhe dá posse como novo reitor da Paróquia da Ressurreição, em João Pessoa. O bispo pede 'uma integração
+    fraterna desta Paróquia no conjunto do Arcediago, com suas várias missões', arcediagado que 'tem no ITAR o seu
+    centro de estudo'. O texto é o sermão do bispo diocesano, que fala em primeira pessoa como quem confere a ordem;
+    a página não traz assinatura, e o bispo diocesano em exercício era Robinson Cavalcanti (instalado em 19/10/1997).
 - jurisdiction: ieab-dar
   role: other
   role_description: arcediago
@@ -99,6 +120,12 @@ affiliations:
       Grande do Norte, Reverendo Luiz Souza de França, da Paróquia da Ressurreição em João Pessoa
   - source: d2s27-artigos-indice
     quote: Mordomia Cristã - Ven. Arced. Rev. Luiz de Souza França
+  - source: d2s31-sec
+    quote: 'Arcediagos : i. PB/RN: Revmo. Deão Luiz Souza de França'
+  - source: d2s31-sala
+    quote: Orar pelo Arcediagado PB/RN/CE, pela vida e ministério do Revmo. Deão Luiz S. de França.
+  - source: d2s31-ress-not
+    quote: Rev. Luiz de Souza França (Arcediago da Paraíba e Rio Grande do Norte)
   notes: >-
     Local: Diocese Anglicana do Recife. Título de arcediago atestado no calendário diocesano de 2004 (publicado
     em 2003). Local: Diocese Anglicana do Recife, Arcediagado PB/RN/CE; Con-Catedral Anglicana da Ressurreição (João
@@ -108,7 +135,12 @@ affiliations:
     aparece apenas como “2001-12” (limite superior). Mais adiante o sermão o descreve com a incumbência de liderar
     a expansão da Igreja Anglicana no interior da Paraíba e do Rio Grande do Norte, no Ceará e no Piauí. Local:
     Diocese Anglicana do Recife. Tratado por 'Ven. Arced. Rev.' no índice de artigos do site da diocese; em exercício
-    em agosto de 2004 (data da captura).
+    em agosto de 2004 (data da captura). Local: Diocese Anglicana do Recife, Arcediagado PB/RN. Em exercício em
+    outubro de 2004, segundo a lista de cargos diocesanos publicada pela Diocese Anglicana do Recife quando integrava
+    a IEAB. Local: Diocese Anglicana do Recife, Arcediagado PB/RN/CE. Atestado no calendário de intercessão da diocese
+    de julho e agosto de 2004 (comunidade citada ao lado do nome). Local: Diocese Anglicana do Recife, Arcediagado
+    da Paraíba e Rio Grande do Norte. Atestado como arcediago da Paraíba e Rio Grande do Norte nas notícias missionárias
+    de 2004.
   start: 2001-12
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -426,6 +458,42 @@ affiliations:
   notes: >-
     Em exercício em outubro de 2010; representou o bispo diocesano na inauguração do novo espaço de cultos do Ponto
     Missionário Anglicano Água Viva, em Arez (RN).
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Revmo. Deão Luiz Souza de França (31.08)
+  notes: >-
+    Em exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os presbíteros e presbíteras.
+- jurisdiction: ieab
+  role: other
+  role_description: deão
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Revmo. Deão Luiz Souza de França (31.08)
+  - source: d2s28-comun04
+    quote: CON-CATEDRAL ANGLICANA DA RESSURREIÇÃO (30/06) Revmo. Deão Luiz Souza de França
+  notes: >-
+    Local: Con-Catedral Anglicana da Ressurreição (João Pessoa-PB). Em exercício em outubro de 2004 (página capturada
+    em 24/10/2004). Título de deão na lista do clero; a lista de comunidades o põe à frente da Con-Catedral da Ressurreição.
+    Local: Con-Catedral Anglicana da Ressurreição (João Pessoa-PB). Em exercício em outubro de 2004 (página capturada
+    em 24/10/2004). Paróquia autônoma.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: reitor
+  status: confirmed
+  sources:
+  - source: d2s31-ress-bol
+    quote: Reitor Rev. Luiz Souza de França
+  - source: d2s31-ress-bol
+    quote: Domingo, 10 de fevereiro de 2002 - Boletim Nº 06 – Ano V.
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana da Ressurreição (João Pessoa, PB). Atestado no boletim
+    de 10/02/2002.
 events:
 - type: other
   date: 2001-12

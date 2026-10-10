@@ -173,10 +173,13 @@ affiliations:
   sources:
   - source: dard1-carta-bispos-2004
     quote: Revda. Vera Lúcia Melo do Nascimento Paróquia Anglicana Emanuel
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Revda. Vera Lúcia Melo do Nascimento (10/01)
   notes: >-
     Local: Paróquia Anglicana Emanuel. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife (então
     ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os presbíteros. Nome na
-    carta: Vera Lúcia Melo do Nascimento.
+    carta: Vera Lúcia Melo do Nascimento. Em exercício em outubro de 2004 (página capturada em 24/10/2004). Listado
+    entre os presbíteros e presbíteras.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: junta_de_capelaes_examinadores
@@ -270,3 +273,37 @@ affiliations:
   notes: >-
     Local: Instituto Anglicano Teológico (IAT) – Olinda. Cargo constante da Relação dos Cargos Diocesanos 2011,
     publicada em 10/12/2010 (captura de 28/12/2010); designação para o exercício de 2011.
+- jurisdiction: ieab
+  role: other
+  role_description: diretora
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-insteol04
+    quote: >-
+      IAT - Instituto Anglicano de Teologia - Campus I Olinda - PE Curso Oferecido: Básico em Teologia Diretora:
+      Revda. Vera Lúcia Nascimento
+  notes: >-
+    Local: Instituto Anglicano de Teologia (IAT) - Campus I, Olinda-PE. Em exercício em outubro de 2004 (página
+    capturada em 24/10/2004).
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-comun04
+    quote: 'PARÓQUIA ANGLICANA EMANUEL (05/02) Revda. Vera Nascimento Auxiliar: Rev. Décio da Silva'
+  notes: >-
+    Local: Paróquia Anglicana Emanuel (Olinda-PE). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Paróquia autônoma; a lista a põe à frente da paróquia, sem o título expresso de pároca.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro da Comissão de Ministério
+  status: probable
+  sources:
+  - source: d2s31-sec
+    quote: ii. Revda. Vera Lúcia Melo do Nascimento
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB. A página grafa Vera Lúcia Melo do Nascimento.

@@ -9,6 +9,33 @@ sources:
 - source: costa2021
   quote: Seminarista Sílvio de Freitas Barbosa
   page: '216'
+ordinations:
+- order: diaconate
+  date: '2005-09-10'
+  place: Catedral Anglicana da Santíssima Trindade, Recife (PE)
+  jurisdiction: ieab-dar
+  ordained_by: filadelfo-oliveira-neto
+  status: confirmed
+  sources:
+  - source: d2s31-diacs
+    quote: a Diocese conta com oito novos diáconos ordenados por Dom Filadelfo
+  - source: d2s31-diacs
+    quote: >-
+      Rev. Rodrigo Espiúca, Rev. Senomar Teixeira, Rev. Adilson Ferreira, Rev. Fernando Gonçalves, Rev. Rodson Ricardo,
+      Rev. Júlio Gomes, Rev. Sílvio Freitas e Rev. Ricardo Domingos
+  - source: d2s31-diacs
+    quote: >-
+      estiveram na Catedral Anglicana da Santíssima Trindade e participaram do culto presidido pelo Bispo Dom Filadelfo
+      Neto
+  - source: d2s31-agenda
+    quote: Ordenações Diaconais - Catedral da SS. Trindade
+  - source: d2s31-clero
+    quote: Rev. Sílvio de Freitas Barbosa, TSSF
+  notes: >-
+    Os oito diáconos aparecem juntos na nota do site, que dá o culto de encerramento do XXIV Concílio no sábado,
+    10/09/2005, na Catedral da Santíssima Trindade, presidido por Filadelfo Oliveira Neto como autoridade eclesiástica
+    da diocese que permaneceu na IEAB. A nota não cita co-ordenantes. A identificação dos nomes curtos com os nomes
+    completos vem da lista do clero do mesmo site (abril de 2006), que traz todos entre os diáconos.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -25,3 +52,34 @@ affiliations:
     page: '217'
   notes: >-
     Seminarista em 2004; reverendo em 2006 (identificação 'Silvio Freitas' = 'Sílvio de Freitas Barbosa' é inferência).
+- jurisdiction: ieab-dar
+  role: deacon
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Diáconos(as) - (09)
+  - source: d2s31-clero
+    quote: Rev. Sílvio de Freitas Barbosa, TSSF
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listado entre os diáconos.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: auxiliar
+  status: confirmed
+  sources:
+  - source: d2s31-comun
+    quote: 'Auxiliares : Rev. Rodrigo Espiuca, tssf/ Rev. Silvio Freitas, tssf'
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana Boas Novas (Caaporã, PB). Em exercício em abril de 2006,
+    segundo a lista de paróquias e missões da Diocese Anglicana do Recife reorganizada pela IEAB.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: seminarista
+  status: probable
+  sources:
+  - source: d2s31-sala
+    quote: Orar pelo Ponto Missionário da Liberdade, pelo ML Júlio Gomes e o Sem. Sílvio Freitas.
+  notes: >-
+    Local: Diocese Anglicana do Recife, Ponto Missionário da Liberdade. Atestado no calendário de intercessão da
+    diocese de julho e agosto de 2004 (comunidade citada ao lado do nome). A página dá só "Sem. Sílvio Freitas".
