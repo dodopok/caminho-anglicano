@@ -1,6 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: amaro-daniel-de-barros
 name: Amaro Daniel de Barros
+biography: >-
+  Reverendo que consta no clero da IEAB-DAA e foi transferido pelo bispo diocesano do Recife para reforçar o quadro
+  de ministros da região.
+sources:
+- source: daa-clero
+  quote: Revdo. Amaro Daniel de Barros.
+- source: d2s28-m05
+  quote: aqui transferimos o Rev. Amaro Daniel, reforçando o quadro de ministros da região
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -11,3 +19,13 @@ affiliations:
     quote: Revdo. Amaro Daniel de Barros.
   notes: >-
     Listado no clero diocesano da DAA (página consultada em 2026-10; Ponto Missionário da Epifania). Datas não informadas.
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-m05
+    quote: aqui transferimos o Rev. Amaro Daniel, reforçando o quadro de ministros da região
+  notes: >-
+    Local: região amazônica. Transferido pelo bispo diocesano para a região amazônica, antes de 30/07/2000, data
+    da mensagem; o texto só diz "Rev. Amaro Daniel".

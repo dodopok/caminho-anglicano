@@ -7,9 +7,12 @@ death:
   - source: drv-efemerides-reb
     quote: Fundador do Anglicanismo Brasileiro (IEAB), Sacerdote e Missionário, 1940
 biography: >-
-  Catequista que acompanhou Kinsolving e Morris a Porto Alegre em 1890, foi ordenado diácono em 28/08/1893 por Peterkin,
-  o primeiro ministro nativo, e presbítero em 1897 por Waite Hockin Stirling, entre os três primeiros presbíteros
-  brasileiros. Morreu em 1940.
+  Segundo uma fonte, acompanhou os missionários Kinsolving e Morris a Porto Alegre, onde chegaram em 21/04/1890;
+  outra o descreve como diretor de um colégio misto e membro da Igreja Presbiteriana, procurado pelos missionários
+  na chegada. Em 1892 participou, como catequista, da primeira convocação da missão, em Porto Alegre. Em 28/08/1893
+  foi ordenado diácono por George William Peterkin, bispo de Virgínia Ocidental em visita à missão, o primeiro ministro
+  nativo da igreja. Em 13/05/1897 foi ordenado presbítero por Waite Hockin Stirling, entre os três primeiros presbíteros
+  brasileiros, com Américo Vespúcio Cabral e Antônio Machado Fraga. Consta como falecido em 1940.
 sources:
 - source: wp-en-kinsolving
   quote: >-
@@ -17,6 +20,14 @@ sources:
     serve the church for many years
 - source: wp-en-kinsolving
   quote: The young Americans arrived at Porto Alegre on April 21, 1890, accompanied by four Brazilians
+- source: liv-implantacao-ieab
+  quote: >-
+    Chegaram e foram a procura do Sr Vicente Brande, diretor de un colégio misto, e também membro da Igreja presbiteriana.
+  page: '15'
+- source: kickhofel
+  quote: >-
+    Presentes: reverendos Morris, Brown, Meem e Kinsolving, e catequistas Boaventura, Brande e Cabral. Presidida
+    por Kinsolving e secretariada por Cabral.
 - source: drv-kinsolving-ivo
   quote: >-
     Em 28 de Agosto de 1893, no mesmo local, o Revmo. Peterkin ordenou diácono o Sr. Vicente Brande, o primeiro
@@ -30,6 +41,10 @@ sources:
 - source: wp-en-kinsolving
   quote: >-
     Bishop Stirling ordained three of the Brazilian deacons to the priesthood (Peterkin having deposed the fourth).
+- source: drv-kinsolving-ivo
+  quote: >-
+    Esse prelado impôs as mãos sôbre 159 convertidos, elevando para 301 o número de eclesianos; e ordenou em presbíteros
+    os diáconos Vicente Brande, Américo Vespúcio Cabral e Antônio Machado de Fraga.
 - source: drv-efemerides-reb
   quote: Fundador do Anglicanismo Brasileiro (IEAB), Sacerdote e Missionário, 1940
 ordinations:
@@ -67,13 +82,18 @@ ordinations:
       O primeiro brasileiro a ser ordenado pelo bispo George Peterkin foi Vicente Brande, na Capela do Salvador,
       em Rio Grande, no dia 28 de agosto de 1893.
     page: '53'
+  - source: d2s27-sinopse
+    quote: >-
+      dos primeiros diáconos brasileiros: Vicente Brande, Antônio Machado Fraga, Américo Vespúcio Cabral e Boaventura
+      de Souza Oliveira.
   notes: >-
     Fato (4 diáconos por Peterkin em 1893) confirmado por várias fontes; o nome deste ordenando consta só em Kickhofel.
     Visita episcopal de Peterkin; biografia de Kinsolving (1961) dá a data completa. O 'mesmo local' é a cidade
     do Rio Grande (Capela do Salvador, citada no parágrafo anterior). A monografia diz que Brande se tornou em 1893
     o primeiro 'Reverendo' brasileiro da Igreja Episcopal; interpretado aqui como a ordenação diaconal de 1893 (a
     fonte não detalha a ordem). Ano tirado da lista do clero nacional por ordem de ordenação ao diaconato (Kickhöfel,
-    1995); ordenante não informado.
+    1995); ordenante não informado. Citado entre os primeiros diáconos brasileiros da missão episcopal no Rio Grande
+    do Sul, em 1893; a cronologia não dá dia, local nem ordenante.
 - order: presbyterate
   date: '1897-05-13'
   jurisdiction: dmsb

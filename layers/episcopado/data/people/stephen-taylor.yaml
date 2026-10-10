@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: stephen-taylor
+name: Stephen Taylor
+biography: >-
+  Missionário da USPG, o Rev. Stephen Taylor foi designado pelo bispo diocesano para uma comunidade da Diocese Anglicana
+  do Recife e participou, de 28/02 a 01/03/1997, do retiro do clero diocesano em Paudalho (PE). Em documento de
+  2002, consta entre os clérigos que passaram da Diocese do Recife para a Diocese Anglicana do Rio de Janeiro, no
+  contexto de uma redução de 11 clérigos.
+sources:
+- source: d2s31-nazare
+  quote: >-
+    contamos com a presença do Missionário da USPG, Rev. Stephen Taylor, que designado por nosso Bispo Diocesano
+    para nossa comunidade
+- source: d2s25-paudalho
+  quote: >-
+    De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+    – PE
+- source: d2s25-paudalho
+  quote: >-
+    reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
+    Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis, Stephen
+    Taylor, Mitsuo Noyama e Washington Franco.
+- source: d2s24-documento-estudo
+  quote: 'Diocese Anglicana do Rio de Janeiro: Rev. Stephen Taylor;'
+- source: d2s24-documento-estudo
+  quote: Tivemos a redução de 11 clérigos
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-darj
+  status: confirmed
+  sources:
+  - source: d2s24-documento-estudo
+    quote: Tivemos a redução de 11 clérigos
+  - source: d2s24-documento-estudo
+    quote: 'Diocese Anglicana do Rio de Janeiro: Rev. Stephen Taylor;'
+  notes: >-
+    Listado no documento de estudo da Diocese Anglicana do Recife (2002) entre os 11 clérigos que deixaram a diocese
+    para outras dioceses ou jurisdições; a data da transferência não é informada.
+- jurisdiction: ieab-dar
+  role: clergy
+  status: confirmed
+  sources:
+  - source: d2s25-paudalho
+    quote: >-
+      De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+      – PE
+  - source: d2s25-paudalho
+    quote: >-
+      reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
+      Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis,
+      Stephen Taylor, Mitsuo Noyama e Washington Franco.
+  notes: >-
+    Local: Diocese do Recife. Participante do retiro do clero diocesano em Paudalho (PE), 28/02 a 01/03/1997; clérigo
+    da diocese nessa data, sem informação sobre início ou fim do vínculo.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: missionário da USPG
+  status: confirmed
+  sources:
+  - source: d2s31-nazare
+    quote: >-
+      contamos com a presença do Missionário da USPG, Rev. Stephen Taylor, que designado por nosso Bispo Diocesano
+      para nossa comunidade
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana Jesus de Nazaré (Natal, RN). Missionário da USPG designado
+    pelo bispo diocesano para a comunidade de Natal; a página não traz datas. Foi o contato dele com a USPG que
+    obteve o apoio para a construção do templo.

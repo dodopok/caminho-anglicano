@@ -1,9 +1,15 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: luiz-fernando-bernhoeft
 name: Luiz Fernando Bernhoeft
-biography: Postulante ao ministério ordenado na Diocese do Recife em 2009-2010.
+biography: >-
+  Postulante ao ministério ordenado na Diocese Anglicana do Recife em 2009-2010, também listado entre os ministros
+  locais.
 sources:
 - source: dard2-clero-post
+  quote: Luiz Fernando Bernhoeft
+- source: dard2-clero-post
+  quote: Postulantes ao Ministério Ordenado … Luiz Fernando Bernhoeft
+- source: d2s17-clero-ml-2010
   quote: Luiz Fernando Bernhoeft
 affiliations:
 - jurisdiction: diocese-anglicana-recife
@@ -16,3 +22,13 @@ affiliations:
   notes: >-
     Lista "Postulantes ao Ministério Ordenado", publicada em 13/08/2009 e atualizada em 19/01/2010 (captura de 18/02/2010);
     o vínculo vale para esse período.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro local
+  status: confirmed
+  sources:
+  - source: d2s17-clero-ml-2010
+    quote: Luiz Fernando Bernhoeft
+  notes: >-
+    Local: Recife (PE). Consta nas listas "Ministros(as) Locais(as)" e "Postulantes ao Ministério Ordenado" (atualizada
+    em 19/11/2010), capturadas em 25/12/2010.

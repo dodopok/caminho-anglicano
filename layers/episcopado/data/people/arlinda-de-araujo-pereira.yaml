@@ -1,12 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: arlinda-de-araujo-pereira
 name: Arlinda de Araújo Pereira
-biography: Arlinda de Araújo Pereira foi ordenada diácona na IEAB em 15/07/2001 e presbítera em 06/02/2011.
+biography: >-
+  Arlinda de Araújo Pereira foi ordenada diácona na IEAB em 15/07/2001 e presbítera em 06/02/2011, sem ordenante
+  registrado. Consta nas listas da Diocese do Recife como clériga visitante e como auxiliar em uma das comunidades.
 sources:
 - source: rta-livro35
   quote: 'Diaconato: 15 de julho de 2001.'
 - source: rta-livro35
   quote: 'Presbiterado: 6 de fevereiro de 2011.'
+- source: d2s31-clero
+  quote: Clérigo Visitante - (01)
+- source: d2s31-clero
+  quote: Rvda. Arlinda de Araújo Pereira
+- source: d2s31-comun
+  quote: 'Auxiliares : Rev. Claudio Norberto, TSSF/Rvda. Arlinda de A. Pereira'
 ordinations:
 - order: diaconate
   date: '2001-07-15'
@@ -26,3 +34,26 @@ ordinations:
     quote: 'Presbiterado: 6 de fevereiro de 2011.'
   notes: >-
     Datas informadas pela própria clériga no livro comemorativo '35 anos de Ordenação de Mulheres na IEAB' (2021).
+affiliations:
+- jurisdiction: ieab-dar
+  role: other
+  role_description: clérigo visitante
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Clérigo Visitante - (01)
+  - source: d2s31-clero
+    quote: Rvda. Arlinda de Araújo Pereira
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listada como clériga visitante.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: auxiliar
+  status: confirmed
+  sources:
+  - source: d2s31-comun
+    quote: 'Auxiliares : Rev. Claudio Norberto, TSSF/Rvda. Arlinda de A. Pereira'
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Anglicana da Reconciliação (Caruaru, PE). Em exercício em abril
+    de 2006, segundo a lista de paróquias e missões da Diocese Anglicana do Recife reorganizada pela IEAB.

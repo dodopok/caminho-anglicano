@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: marcos-cosmo-da-silva
+name: Marcos Cosmo da Silva
+biography: >-
+  Marcos Cosmo da Silva constava em 2004 entre os clérigos licenciados da Diocese do Recife. Em outra lista diocesana,
+  de data não informada, aparece entre os presbíteros e como presidente da Comissão de Eleição.
+sources:
+- source: d2s28-clero04
+  quote: Clérigos(as) Licenciados (as) - (05) ... Marcos Cosmo da Silva (12/12)
+- source: d2s31-clero
+  quote: Presbíteros(as) - (12)
+- source: d2s31-clero
+  quote: Rev. Marcos Cosmo da Silva
+- source: d2s31-sec
+  quote: 'Comissão de Eleição : i. Rev. Marcos Cosmo da Silva (Pres.)'
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Clérigos(as) Licenciados (as) - (05) ... Marcos Cosmo da Silva (12/12)
+  notes: >-
+    Em exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os clérigos licenciados.
+- jurisdiction: ieab-dar
+  role: priest
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Presbíteros(as) - (12)
+  - source: d2s31-clero
+    quote: Rev. Marcos Cosmo da Silva
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listado entre os presbíteros.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: presidente da Comissão de Eleição
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: 'Comissão de Eleição : i. Rev. Marcos Cosmo da Silva (Pres.)'
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.

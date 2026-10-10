@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: mary-douglas-glasspool
+name: Mary Douglas Glasspool
+aliases:
+- Mary Glasspool
+biography: >-
+  Mary Douglas Glasspool foi sagrada bispa sufragânea da Diocese de Los Angeles, da Igreja Episcopal (TEC), em 15/05/2010;
+  as fontes não informam o sagrante. A Diocese Anglicana do Recife, em nota assinada por Robinson Cavalcanti, condenou
+  a sagração, por tratar-se, nos termos da nota, de uma lésbica praticante, e pediu reunião urgente dos Primazes
+  e o reconhecimento da ACNA como província anglicana.
+sources:
+- source: d2s15-glasspool-pt
+  quote: >-
+    que foi, no dia de hoje a sagração de uma lésbica praticante, a Revda. Mary Douglas Glasspool como Bispa Sufragânea
+    da Diocese de Los Angeles, da Igreja Episcopal (TEC) dos EUA
+- source: d2s15-glasspool-en
+  quote: >-
+    with the consecration of a practicing Lesbian, Rev. Mary Douglas Glasspool as Bishop Suffragan of the Diocese
+    of Los Angeles
+- source: d2s15-glasspool-pt
+  quote: >-
+    A Diocese do Recife reafirma a sua mais veemente condenação à supracitada sagração, e se associa às correntes
+    ortodoxas do Anglicanismo em demandar uma reunião urgente do Encontro dos Primazes, a não-presença de representação
+    da TEC em instâncias oficiais da Comunhão Anglicana, o apoio à minoria fiel à palavra de Deus ainda subsistente
+    na TEC, e o reconhecimento da Igreja Anglicana na América do Norte (ACNA) como legítima Província Anglicana.
+ordinations:
+- order: episcopate
+  date: '2010-05-15'
+  jurisdiction: tec
+  office: suffragan
+  status: probable
+  sources:
+  - source: d2s15-glasspool-pt
+    quote: >-
+      que foi, no dia de hoje a sagração de uma lésbica praticante, a Revda. Mary Douglas Glasspool como Bispa Sufragânea
+      da Diocese de Los Angeles, da Igreja Episcopal (TEC) dos EUA
+  - source: d2s15-glasspool-en
+    quote: >-
+      with the consecration of a practicing Lesbian, Rev. Mary Douglas Glasspool as Bishop Suffragan of the Diocese
+      of Los Angeles
+  notes: >-
+    Sagrada bispa sufragânea da Diocese de Los Angeles (TEC). A data (15/05/2010) e o cargo vêm da nota de protesto
+    da Diocese Anglicana do Recife, que não informa o local nem os sagrantes.
+affiliations:
+- jurisdiction: tec
+  role: suffragan_bishop
+  diocese: diocese-de-los-angeles
+  start: '2010-05-15'
+  status: probable
+  sources:
+  - source: d2s15-glasspool-pt
+    quote: >-
+      que foi, no dia de hoje a sagração de uma lésbica praticante, a Revda. Mary Douglas Glasspool como Bispa Sufragânea
+      da Diocese de Los Angeles, da Igreja Episcopal (TEC) dos EUA
+  notes: Bispa sufragânea da Diocese de Los Angeles a partir da sagração, segundo a nota diocesana do Recife.
+events:
+- type: other
+  date: '2010-05-15'
+  description: >-
+    A Diocese Anglicana do Recife, por nota diocesana assinada pelo bispo Robinson Cavalcanti em Olinda (PE), protesta
+    contra a sagração de Mary Douglas Glasspool como bispa sufragânea de Los Angeles (TEC); cita o voto do bispo
+    diocesano na Resolução de Lambeth 1998 sobre sexualidade humana, o documento Afirmação do Recife e os cânones
+    diocesanos, e se associa às correntes ortodoxas do Anglicanismo em demandar reunião urgente dos Primazes, a
+    não presença de representantes da TEC em instâncias oficiais da Comunhão Anglicana, o apoio à minoria fiel na
+    TEC e o reconhecimento da ACNA como Província Anglicana legítima.
+  status: confirmed
+  sources:
+  - source: d2s15-glasspool-pt
+    quote: >-
+      A Diocese do Recife reafirma a sua mais veemente condenação à supracitada sagração, e se associa às correntes
+      ortodoxas do Anglicanismo em demandar uma reunião urgente do Encontro dos Primazes, a não-presença de representação
+      da TEC em instâncias oficiais da Comunhão Anglicana, o apoio à minoria fiel à palavra de Deus ainda subsistente
+      na TEC, e o reconhecimento da Igreja Anglicana na América do Norte (ACNA) como legítima Província Anglicana.
+  - source: d2s15-glasspool-pt
+    quote: >-
+      Coerente com o voto do seu Bispo Diocesano em favor da Resolução sobre Sexualidade Humana da Conferência de
+      Lambeth, 1998;
+- type: other
+  date: 2010-05
+  description: >-
+    Em 29/05/2010 (mensagem de Pentecostes), o arcebispo de Cantuária Rowan Williams determinou que as províncias
+    que não atenderam aos apelos dos Instrumentos da Comunhão sobre ordenação de ministros homossexuais praticantes
+    e bênção de uniões do mesmo sexo (citada a Igreja Episcopal dos Estados Unidos, que sagrou a bispa sufragânea
+    Mary Douglas Glasspool) não podem representar oficialmente a Comunhão Anglicana nem ter representantes na Comissão
+    de Fé, Ordem e Doutrina. A notícia é do site da diocese, que a intitula "Arcebispo de Cantuária Pune Províncias
+    Liberais".
+  status: confirmed
+  sources:
+  - source: d2s20-cantuaria
+    quote: 1) Que essas Províncias não podem representar oficialmente a Comunhão Anglicana
+  - source: d2s20-cantuaria
+    quote: >-
+      2) Que essas Províncias não devem ter representantes na Comissão de Fé, Ordem e Doutrina na Comunhão Anglicana

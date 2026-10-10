@@ -2,11 +2,13 @@
 id: john-shepherd
 name: John Shepherd
 biography: >-
-  Presbítero listado no diretório do clero da Diocese Anglicana do Recife em jan/2002, com endereço em Salvador
-  (BA).
+  Presbítero listado no diretório do clero da Diocese Anglicana do Recife em 2002, foi coadjutor de paróquia na
+  Bahia até voltar para a Inglaterra em julho de 2003.
 sources:
 - source: rta-ier-clero-2002
   quote: John Shepherd (17/04)
+- source: d2s23-bahia-paroquia
+  quote: Teve como coadjutor o Rev. John Shepherd, até o seu retorno para Inglaterra em Julho de 2003.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -16,3 +18,16 @@ affiliations:
   - source: rta-ier-clero-2002
     quote: John Shepherd (17/04)
   notes: Endereço em Salvador (BA) no diretório capturado em 14/01/2002.
+- jurisdiction: ieab
+  role: other
+  role_description: coadjutor
+  diocese: ieab-dar
+  end: 2003-07
+  end_reason: left
+  status: confirmed
+  sources:
+  - source: d2s23-bahia-paroquia
+    quote: Teve como coadjutor o Rev. John Shepherd, até o seu retorno para Inglaterra em Julho de 2003.
+  notes: >-
+    Local: Paróquia do Bom Pastor (Salvador-BA) e Paróquia Cristo o Salvador (Itaparica-BA). Coadjutor do pároco
+    Josafá Batista dos Santos.

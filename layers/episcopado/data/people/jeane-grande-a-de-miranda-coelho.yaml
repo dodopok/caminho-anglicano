@@ -2,9 +2,11 @@
 id: jeane-grande-a-de-miranda-coelho
 name: Jeane Grande A. de Miranda Coelho
 biography: >-
-  Jeane Grande A. de Miranda Coelho foi ordenada diácona em 27 de agosto de 2005 e presbítera em 7 de abril de 2006,
-  ambas por Robinson Cavalcanti, na Diocese Anglicana do Recife. É pároca da Paróquia Anglicana Salvação, no Arcediagado
-  Norte, e secretária diocesana de Intercessão.
+  Em 2004 constava como ministra leiga, secretária de Intercessão e ligada à Missão Anglicana Salvação, na Diocese
+  Anglicana do Recife. Foi ordenada diácona em 27 de agosto de 2005 e presbítera em 7 de abril de 2006, ambas por
+  Robinson Cavalcanti. Aparece depois como pároca da Paróquia Anglicana Salvação, em Olinda (PE), no Arcediagado
+  Norte, e como secretária diocesana de Intercessão, cargo registrado em listas de 2009 e 2010, além de coordenadora
+  pedagógica do IAT. Em 2011 constava entre os membros do Tribunal Eclesiástico.
 sources:
 - source: drp2-ordenacoes-2005-08-27
   quote: SERMÃO DE ORDENAÇÕES Paróquia Anglicana do Mediador Recife (PE), 27/08/2005
@@ -21,12 +23,16 @@ sources:
     Sermão de Ordenação Presbiteral Reverendos: Cláudio Brito, Flávio Adair, Jeane Coelho, Lindinalva Medeiros,
     Raimundo Figueiredo e Teresa Catão Paróquia Anglicana Emanuel Recife (PE), 07.04.2006 Con-Catedral Anglicana
     da Ressurreição João Pessoa (PB), 08.04.2006
-- source: darl1-387
-  quote: >-
-    Revda. Jeane Grande Arruda de Miranda Coelho é Presbítera na Diocese do Recife; Secretária Diocesana de Intercessão;
-    Pároca da Paróquia Anglicana Salvação, no Arcediagado Norte da Diocese.
 - source: dard2-com-norte
   quote: 'Paróquia Anglicana da Salvação Paróca: Revda. Jeane Coelho'
+- source: dard1-carta-bispos-2004
+  quote: ML. Jeane Grande de Miranda Arruda Coelho Secretaria de Intercessão Missão Anglicana Salvação
+- source: dard1-cargos-2010
+  quote: 'Secretaria Diocesana Anglicana de Intercessão: Revda. Jeane Grande Arruda de Miranda Coelho'
+- source: d2s20-cargos2011
+  quote: c) Revda. Jeane Grande Arruda de Miranda Coelho
+- source: d2s28-clero04
+  quote: Secretária Diocesana de Intercessão e Coordenadora Pedagógica do IAT - Campus I
 ordinations:
 - order: diaconate
   date: '2005-08-27'
@@ -61,6 +67,19 @@ ordinations:
     Cerimônia de 07/04/2006 na Paróquia Anglicana Emanuel (Olinda); o sermão único para as duas cerimônias de abril
     de 2006 diz 'Recife (PE)'.
 affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: suplente junto à Diaconia (ministra leiga)
+  diocese: ieab-dar
+  start: '2003'
+  status: probable
+  sources:
+  - source: d2s24-encontro-primazes
+    quote: 'Junto a Diaconia: Revda. Maria Gorete e Suplente ML Jeane Coelho'
+  notes: >-
+    Representação de membros da Diocese Anglicana do Recife em órgãos da IEAB e entidades ecumênicas no triênio
+    seguinte ao XXIX Sínodo Geral (2003), conforme a lista publicada pela própria diocese. Na época era ministra
+    leiga (ML); a identificação com a ordenada em 2005 decorre do nome e de ser membro da diocese.
 - jurisdiction: diocese-anglicana-recife
   role: clergy
   status: confirmed
@@ -144,3 +163,125 @@ affiliations:
   notes: >-
     Local: Paróquia Anglicana da Salvação (Olinda). Consta na página de comunidades do Arcediagado Norte capturada
     em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároca
+  status: confirmed
+  sources:
+  - source: d2s01-pj-pe
+    quote: 'PARÓQUIA ANGLICANA DA SALVAÇÃO Paróca: Revda. Jeane Coelho'
+  notes: >-
+    Local: Paróquia Anglicana da Salvação (Olinda-PE). Em exercício em ago/2010, segundo a página "Um Projeto Missionário
+    Anglicano Ortodoxo para o Brasil IV – Estado de Pernambuco" (publicada e atualizada em 27/08/2010; cópia capturada
+    em 25/12/2010). Local: Paróquia Anglicana da Salvação (Olinda-PE).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministra leiga
+  status: probable
+  sources:
+  - source: d2s01-art-4351
+    quote: M.L. Jeane Coelho
+  - source: d2s01-art-4351
+    quote: Olinda, 17 de julho de 2004.
+  notes: >-
+    Em 17/07/2004 assina artigo como "M.L." (ministra leiga), em Olinda; a identificação com Jeane Grande A. de
+    Miranda Coelho (ordenada diácona em 27/08/2005) é provável, pelo nome e pelo local.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretaria_diocesana_de_intercessao
+  status: confirmed
+  sources:
+  - source: darl3-setubal
+    quote: ML. Jeane Grande Arruda de M. Coelho – Secretária Diocesana de Intercessão
+  notes: >-
+    Delegado(a) ao Concílio Diocesano Extraordinário de 26/02/2005 (Carta de Setúbal); a lista dá nome e, para alguns,
+    o cargo. Em exercício em fev/2005. Ministra leiga (ML).
+- jurisdiction: ieab
+  role: other
+  role_description: secretaria_diocesana_de_intercessao
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: darl3-carta-0904
+    quote: ML. Jeane Grande de Miranda Arruda Coelho Secretaria de Intercessão Missão Anglicana Salvação
+  notes: >-
+    Local: Missão Anglicana Salvação. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife (então
+    ainda da IEAB); a carta indica a comunidade de cada signatário. Em exercício em set/2004.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro do Tribunal Eclesiástico
+  status: confirmed
+  sources:
+  - source: d2s20-cargos2011
+    quote: c) Revda. Jeane Grande Arruda de Miranda Coelho
+  - source: d2s22-cargos2011
+    quote: c) Revda. Jeane Grande Arruda de Miranda Coelho
+  notes: >-
+    Consta da 'Relação dos Cargos Diocesanos 2011' (publicada em 10/12/2010), seção "Cargos Eletivos", Tribunal
+    Eclesiástico; cargo designado para o ano de 2011. Designado para o ano de 2011. Local: Tribunal Eclesiástico
+    (cargo eletivo). Cargo para 2011 constante da relação de cargos diocesanos publicada em 10/12/2010 (captura
+    de dez/2010), após o XXX Concílio Diocesano. Local: Tribunal Eclesiástico. Cargo constante da Relação dos Cargos
+    Diocesanos 2011, publicada em 10/12/2010 (captura de 28/12/2010); designação para o exercício de 2011. Cargo
+    eletivo; órgão institucional da diocese.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pastora da Paróquia Anglicana Salvação
+  status: probable
+  sources:
+  - source: d2s22-salvacao
+    quote: Revda. Jeane Coelho ( Paróquia Anglicana Salvação ), em Olinda (PE)
+  notes: >-
+    Local: Paróquia Anglicana Salvação (Olinda-PE). Em exercício em dez/2010; citada como "Revda. Jeane Coelho".
+- jurisdiction: ieab
+  role: other
+  role_description: secretário diocesano
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Secretária Diocesana de Intercessão e Coordenadora Pedagógica do IAT - Campus I
+  notes: >-
+    Local: Secretaria Diocesana de Intercessão. Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Candidata às ordens sagradas e ministra leiga na data da página; Secretária Diocesana de Intercessão.
+- jurisdiction: ieab
+  role: other
+  role_description: coordenadora pedagógica
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-insteol04
+    quote: 'Coordenação Pedagógica: ML. Jeane G. Arruda de Miranda Coelho'
+  notes: >-
+    Local: Instituto Anglicano de Teologia (IAT) - Campus I, Olinda-PE. Em exercício em outubro de 2004 (página
+    capturada em 24/10/2004).
+- jurisdiction: ieab
+  role: other
+  role_description: ministro encarregado
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-comun04
+    quote: MISSÃO ANGLICANA SALVAÇÃO ML. Jeane G. Arruda de M. Coelho
+  notes: >-
+    Local: Missão Anglicana Salvação (Olinda-PE). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Ministra leiga e candidata às ordens sagradas na data da página.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: secretária de Intercessão
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: Secretaria de Intercessão ML. Jeane Grande
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB. Então ministra leiga.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: coordenadora administrativa e pedagógica do IAT
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: 'IAT : i. Coordenadora Administrativa e Pedagógica: ML. Jeane G. Arruda de Miranda Coelho'
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB. Então ministra leiga.

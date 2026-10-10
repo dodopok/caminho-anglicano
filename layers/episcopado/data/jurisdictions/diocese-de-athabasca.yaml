@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-athabasca
+acronym: Diocese de Athabasca
+name: Diocese de Athabasca (Canadá)
+type: diocese
+country: CA
+description: >-
+  Diocese no Canadá que, por decisão conciliar, reconheceu o caráter anglicano das paróquias e clérigos expulsos
+  por sua Província (Rede Anglicana) e deliberou manter comunhão com eles e com a Província do Cone Sul; Robinson
+  Cavalcanti a grafa 'Attabasca'.
+sources:
+- source: d2s12-xxiv-b
+  quote: >-
+    A Diocese de Attabasca, no Canadá, por decisão conciliar reconheceu o caráter anglicano das Paróquias e clérigos
+    expulsos por sua Província (Rede Anglicana)
+- source: d2s12-xxiv-b
+  quote: >-
+    A Diocese de Attabasca, no Canadá, por decisão conciliar reconheceu o caráter anglicano das Paróquias e clérigos
+    expulsos por sua Província (Rede Anglicana), deliberando manter comunhão com os mesmos e com a Província do
+    Cone Sul.
+relations:
+- type: in_communion_with
+  target: iacs
+  date: null
+  status: probable
+  sources:
+  - source: d2s12-xxiv-b
+    quote: >-
+      A Diocese de Attabasca, no Canadá, por decisão conciliar reconheceu o caráter anglicano das Paróquias e clérigos
+      expulsos por sua Província (Rede Anglicana), deliberando manter comunhão com os mesmos e com a Província do
+      Cone Sul.
+  notes: >-
+    Relato de Robinson Cavalcanti em fevereiro de 2011 (o texto grafa 'Attabasca'); a decisão do Concílio dessa
+    diocese canadense foi de manter comunhão com as paróquias e clérigos da Rede Anglicana no Canadá e com a Província
+    do Cone Sul. Data da decisão não informada.

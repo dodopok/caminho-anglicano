@@ -24,14 +24,13 @@ death:
     page: '106'
 wikidata: Q139501316
 biography: >-
-  Hiroshi Ito, natural de Nara (Japão), foi ordenado diácono em 1967 e presbítero em 1968, na IEAB. Eleito bispo
-  diocesano de São Paulo em Concílio Extraordinário em 6 de abril de 2002, foi sagrado em 28 de julho de 2002, na
-  Catedral Anglicana de São Paulo, tendo como sagrante o primaz Glauco Soares de Lima. Foi bispo da Diocese Anglicana
-  de São Paulo até 2006 e presidente da JUNET de 2003 a 2006; nessa função comunicou a Robinson Cavalcanti, em dezembro
-  de 2004, que a dotação mensal da junta à Diocese do Recife seria enviada à Supervisão Episcopal. Em 2005 foi um
-  dos bispos que pediram a abertura de processo disciplinar contra Robinson Cavalcanti. Faleceu em 15 de novembro
-  de 2015. Participou de duas ordenações de diáconos ou presbíteros e de uma sagração episcopal, a de Roger Douglas
-  Bird, como co-sagrante.
+  Hiroshi Ito nasceu em Nara (Japão) em 7 de setembro de 1939 e foi ordenado diácono em 1967 e presbítero em 1968,
+  na IEAB. Eleito bispo diocesano de São Paulo em Concílio Extraordinário em 6 de abril de 2002, foi sagrado em
+  28 de julho de 2002, na Catedral Anglicana de São Paulo, tendo como sagrante o primaz Glauco Soares de Lima; a
+  lista de bispos da IEAB registra seu episcopado como 2002-2006, e presidiu a JUNET de 2003 a 2006. Nessa função
+  comunicou a Robinson Cavalcanti, em dezembro de 2004, que a dotação mensal da junta à Diocese do Recife seria
+  enviada à Supervisão Episcopal, e em 2005 foi um dos dois bispos que pediram a abertura de processo disciplinar
+  contra ele. Foi co-sagrante de Roger Douglas Bird, em 7 de setembro de 2007. Faleceu em 15 de novembro de 2015.
 sources:
 - source: costa2021
   quote: Natural da cidade de Nara no Japão, Hiroshi Ito nasceu em 07 de setembro de 1939.
@@ -63,23 +62,12 @@ sources:
     a abertura de um processo disciplinar contra o Bispo do Recife, acusado de insubordinação e não cumprimento
     dos seus votos de Ordenação.
 - source: costa2021
-  quote: Faleceu em 15 de novembro de 2015
-- source: costa2021
   quote: >-
     A sagração aconteceu na sé diocesana, no feriado nacional de 07 de setembro do mesmo ano, tendo como sagrante
     principal o Bispo Primaz da IEAB, Maurício Andrade, e como co-sagrantes os bispos Hiroshi Ito, Celso Franco,
     Naudal Alves Gomes, Glauco Soares de Lima, e Nathan Baxter, da Diocese da Pensilvânia Central
-- source: wp-pt-roger-bird
-  quote: >-
-    Bird foi eleito quinto bispo da Diocese Anglicana de São Paulo (DASP) no concílio extraordinário de 7 de junho
-    de 2007 em São Paulo e foi consagrado no dia 7 de setembro do mesmo ano.
-- source: ec-2007-07
-  quote: >-
-    Seis bispos estavam na Catedral de São Paulo: o Primaz da IEAB, dom Maurício Andrade, dom Hiroshi Ito, dom Celso
-    Franco, da Darj, dom Naudal Gomes, da DAC, dom Glauco Soares de Lima, bispo emérito e dom Nathan Baxter, da
-    Diocese da Pensilvânia Central (EUA).
-- source: ec-2007-07
-  quote: era 7 de Setembro
+- source: costa2021
+  quote: Faleceu em 15 de novembro de 2015
 ordinations:
 - order: diaconate
   date: '1967'
@@ -148,7 +136,17 @@ ordinations:
       Jintaro Ueda (Diocese de Tokyo); Fernando Soares (Igreja Lusitana, Portugal); e Nathaniel Garang (Diocese
       de Bor, Sudão).
     page: '106'
-  notes: Eleito em 06/04/2002.
+  - source: d2s31-conf-not
+    quote: >-
+      Oficialmente, a Confelíder encerrou na Sagração do novo bispo diocesano da Diocese Anglicana de São Paulo,
+      Dom Hiroshi Ito.
+  - source: d2s31-conf-not
+    quote: >-
+      Começou no dia 24 de julho, no Recanto Betânia, em Embu Guaçu/SP, a sexta edição da Conferência de Lideranças
+      da IEAB.
+  notes: >-
+    Eleito em 06/04/2002. A cobertura diz que a Confelíder 2002 (24 a 28 de julho) terminou na sagração; o dia exato
+    não é dado.
 affiliations:
 - jurisdiction: ieab
   role: bishop
@@ -211,6 +209,20 @@ affiliations:
     quote: >-
       exerceu o episcopado na Diocese Anglicana de São Paulo (IEAB) até 2012, sucedendo o Bispo Hiroshi Ito.
     page: '96'
+- jurisdiction: ieab
+  role: other
+  role_description: presidente da Junta Nacional de Educação Teológica (JUNET)
+  status: probable
+  sources:
+  - source: d2s32-junet-2004
+    quote: >-
+      Sob a presidência de Dom Hiroshi Ito, reuniu-se, de 18 a 21 março p.p, a Junta Nacional de Educação Teológica
+      (JUNET)
+  - source: d2s32-eduteologica
+    quote: 'Presidente : Dom Hiroshi Ito'
+  notes: >-
+    Em exercício em março de 2004 (reunião em Itaára, RS) e constante na página institucional capturada em junho
+    de 2006.
 events:
 - type: other
   date: '2002-04-06'

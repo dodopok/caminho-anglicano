@@ -2,9 +2,11 @@
 id: josafa-batista-dos-santos
 name: Josafá Batista dos Santos
 biography: >-
-  Foi ordenado diácono em 26/06/1997 e presbítero em 07/02/1998 na IEAB, atuou como pároco entre 1998 e 2003 e consta
-  como emérito do clero da Diocese Anglicana do Recife. Está entre os clérigos relacionados no decreto da IEAB de
-  2004 sobre essa diocese.
+  Foi ordenado diácono em 26 de junho de 1997 e presbítero em 7 de fevereiro de 1998, na IEAB. Foi pároco das paróquias
+  do Bom Pastor (Pituba) e Cristo o Salvador (Itaparica), na Bahia, até se aposentar em janeiro de 2003, e consta
+  como emérito do clero da Diocese Anglicana do Recife. Também foi assessor para assuntos ecumênicos da Bahia, ministro
+  responsável do Ponto Missionário Anglicano da Natividade e membro do Tribunal Eclesiástico e do Conselho Diocesano.
+  Está entre os clérigos relacionados no decreto da IEAB de 2004 sobre essa diocese.
 sources:
 - source: costa2021
   quote: Josafá foi ordenado diácono em 26/06/1997 e presbítero em 07/02/1998
@@ -14,8 +16,20 @@ sources:
     Josafá foi ordenado diácono em 26/06/1997 e presbítero em 07/02/1998 e exerceu a função de pároco da comunidade
     entre os anos de 1998 e 2003
   page: '183'
+- source: d2s23-bahia-paroquia
+  quote: >-
+    o Rev. Josafá Batista dos Santos foi o pároco das paróquias do Bom Pastor (Pituba) e Cristo o Salvador (Itaparica/Ba),
+    até a sua aposentadoria, em Janeiro de 2003.
 - source: dar-clero-diocesano
   quote: Revdo. Josafá Batista dos Santos (Emérito)
+- source: d2s28-clero04
+  quote: Assessor para assuntos ecumênicos da Bahia
+- source: d2s31-comun
+  quote: PONTO MISSIONÁRIO ANGLICANO DA NATIVIDADE Rev. Josafá B. Santos, TSSF
+- source: d2s31-sec
+  quote: iii. Rev. Josafá Batista, osf
+- source: d2s31-carta
+  quote: Rev. Josafá Batista dos Santos Conselheiro
 - source: costa2021
   quote: >-
     Considerando a solicitação dos clérigos e clérigas a seguir relacionados: … Rev. Josafá Batista dos Santos
@@ -85,6 +99,10 @@ affiliations:
   - source: costa2021
     quote: exerceu a função de pároco da comunidade entre os anos de 1998 e 2003
     page: '183'
+  - source: d2s28-clero04
+    quote: Clérigos(as) Aposentados (as) - (04) ... Josafá Batista dos Santos, OSF (17.11)
+  - source: d2s32-decreto-camara
+    quote: Rev. Francisco Sales de Melo Silva, osf, Rev. João C. Peixoto Filho e Rev. Josafá Batista dos Santos
   notes: >-
     Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
     por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. Emérito (página consultada
@@ -92,7 +110,77 @@ affiliations:
     dos Bispos supervisão episcopal alternativa (decreto de 16/09/2004), mantendo a comunhão com a IEAB. Início
     e fim do vínculo não informados. Signatário de 'Não sairemos' (01/09/2004): permaneceu na IEAB na crise de 2004-2005.
     Cônego honorário da Catedral do Bom Samaritano (julho de 2018). Local: Paróquia do Bom Pastor, Salvador. Postulante
-    encarregado desde 23/04/1995; pároco 1998-2003. Tese cita BÍBLIA, 2015.
+    encarregado desde 23/04/1995; pároco 1998-2003. Tese cita BÍBLIA, 2015. Em exercício em outubro de 2004 (página
+    capturada em 24/10/2004). Listado entre os clérigos aposentados. Relacionado no decreto da Câmara dos Bispos
+    da IEAB (16/09/2004) entre os clérigos da Diocese Anglicana do Recife que, segundo o decreto, solicitaram supervisão
+    episcopal especial; em exercício em setembro de 2004. O decreto não indica paróquia.
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  end: 2003-01
+  end_reason: retirement
+  status: confirmed
+  sources:
+  - source: d2s23-bahia-paroquia
+    quote: >-
+      o Rev. Josafá Batista dos Santos foi o pároco das paróquias do Bom Pastor (Pituba) e Cristo o Salvador (Itaparica/Ba),
+      até a sua aposentadoria, em Janeiro de 2003.
+  notes: >-
+    Local: Paróquia do Bom Pastor (Salvador-BA) e Paróquia Cristo o Salvador (Itaparica-BA). A página situa-o depois
+    dos párocos Lauro Borba, Patrick Coghlan e Antonio Carlos P. dos Santos.
+- jurisdiction: ieab
+  role: other
+  role_description: assessor para assuntos ecumênicos
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Assessor para assuntos ecumênicos da Bahia
+  notes: >-
+    Local: Bahia. Em exercício em outubro de 2004 (página capturada em 24/10/2004). Clérigo aposentado, membro da
+    OSF.
+- jurisdiction: ieab-dar
+  role: priest
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Presbíteros(as) - (12)
+  - source: d2s31-clero
+    quote: Rev. Josafá Batista dos Santos, TSSF
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listado entre os presbíteros.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: ministro responsável
+  status: confirmed
+  sources:
+  - source: d2s31-comun
+    quote: PONTO MISSIONÁRIO ANGLICANO DA NATIVIDADE Rev. Josafá B. Santos, TSSF
+  notes: >-
+    Local: Diocese Anglicana do Recife, Ponto Missionário Anglicano da Natividade (Camaçari, BA). Em exercício em
+    abril de 2006, segundo a lista de paróquias e missões da Diocese Anglicana do Recife reorganizada pela IEAB.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro do Tribunal Eclesiástico
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: iii. Rev. Josafá Batista, osf
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro do Conselho Diocesano
+  status: confirmed
+  sources:
+  - source: d2s31-carta
+    quote: Rev. Josafá Batista dos Santos Conselheiro
+  notes: >-
+    Local: Diocese Anglicana do Recife. Signatário da carta aberta do Conselho Diocesano da Diocese Anglicana do
+    Recife (IEAB) de 21/09/2005, com este cargo.
 events:
 - type: other
   date: '2004-09-01'

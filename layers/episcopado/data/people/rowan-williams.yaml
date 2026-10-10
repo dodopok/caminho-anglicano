@@ -1,17 +1,99 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: rowan-williams
 name: Rowan Williams
+aliases:
+- Dr Rowan Williams
+birth:
+  date: '1950'
+  sources:
+  - source: d2s27-rowan
+    quote: Ele Foi ordenado diácono em 1977 e sacerdote em 1978.
+  - source: d2s30-arcebispo
+    quote: Ele Foi ordenado diácono em 1977 e sacerdote em 1978.
 biography: >-
-  Como arcebispo de Cantuária, foi destinatário em 2005 de cartas da Diocese Anglicana do Recife (27/06/2005, pedindo
-  a revogação da deposição de Robinson Cavalcanti) e da Câmara dos Bispos da IEAB (14/11/2005), que apresentou a
-  versão oposta.
+  Rowan Williams nasceu em 1950 em Swansea, no País de Gales, foi ordenado diácono em 1977 e presbítero em 1978
+  e foi professor de Divindade em Oxford de 1980 a 1992. Eleito bispo de Monmouth em 1991 e entronizado arcebispo
+  de Gales em 2000, foi apresentado em 23/07/2002 como centésimo quarto arcebispo de Cantuária, sucessor de George
+  Carey. Presidiu em 2003 o Encontro dos Primazes em Gramado (RS), em que uma sessão especial tratou do cisma do
+  Recife. Em 2005 recebeu cartas sobre a deposição de Robinson Cavalcanti, uma da Diocese Anglicana do Recife (27/06)
+  e outra da Câmara dos Bispos da IEAB (14/11), com versões opostas; segundo a diocese, o bispo Patrick Harris foi
+  um de seus enviados especiais ao Brasil para estudar o conflito.
 sources:
+- source: d2s27-rowan
+  quote: Dr Rowan Williams nasceu em 1950 na cidade de Swansea, no País de Gales
+- source: d2s27-rowan
+  quote: Ele Foi ordenado diácono em 1977 e sacerdote em 1978.
+- source: d2s27-rowan
+  quote: Foi professor de Divindade em Oxford de 1980 – 1992.
+- source: d2s30-arcebispo
+  quote: Foi eleito bispo de Monmouth em 1991, e entronizado arcebispo de Gales em 2000.
+- source: d2s27-rowan
+  quote: >-
+    No dia 23 de julho o Arcebispo do País de Gales, Dr Rowan Williams, foi oficialmente apresentado como o centésimo
+    quarto sucessor de Agostinho de Cantuária.
+- source: d2s24-encontro-primazes
+  quote: >-
+    Com a presença do Arcebispo de Cantuária e de 33 dos 38 Primazes da Comunhão Anglicana, teve lugar em Gramado-RS,
+    esse importante Encontro mundial
+- source: d2s24-encontro-primazes
+  quote: >-
+    Uma sessão especial foi, excepcionalmente, dedicada a estudar o cisma do Recife, dirigida pelo Primaz do Brasil,
+    Dom Glauco Soares de Lima.
 - source: drv-carta-cantuaria
   quote: Recife, 27 de junho de 2005.
 - source: drv-carta-cantuaria
   quote: Revogação imediata da deposição do Bispo Diocesano
 - source: drv-pronunciamento-ieab-2005
   quote: acatou e homologou unanimemente a decisão do Tribunal
+- source: d2s21-patrick-harris
+  quote: >-
+    que foi um dos “enviados especiais” do Arcebispo de Cantuária Rowan Williams ao Brasil, para estudar in loco
+    o conflito da Província (IEAB) contra a Diocese do Recife, ouvindo todas as partes (e cujo relatório nunca foi
+    divulgado pelo Palácio de Lambeth)
+ordinations:
+- order: diaconate
+  date: '1977'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: d2s27-rowan
+    quote: Ele Foi ordenado diácono em 1977 e sacerdote em 1978.
+  - source: d2s30-arcebispo
+    quote: Ele Foi ordenado diácono em 1977 e sacerdote em 1978.
+  notes: >-
+    Informação de artigo de um presbítero brasileiro em Londres; o texto não dá dia, local nem ordenante. Fonte
+    secundária (artigo de um presbítero da Diocese do Recife); sem local nem ordenante.
+- order: presbyterate
+  date: '1978'
+  jurisdiction: null
+  status: probable
+  sources:
+  - source: d2s27-rowan
+    quote: Ele Foi ordenado diácono em 1977 e sacerdote em 1978.
+  - source: d2s30-arcebispo
+    quote: Ele Foi ordenado diácono em 1977 e sacerdote em 1978.
+  notes: Fonte secundária (artigo de um presbítero da Diocese do Recife); sem local nem ordenante.
+affiliations:
+- jurisdiction: cinw
+  role: diocesan_bishop
+  diocese: diocese-de-monmouth
+  start: '1991'
+  status: probable
+  sources:
+  - source: d2s30-arcebispo
+    quote: Foi eleito bispo de Monmouth em 1991, e entronizado arcebispo de Gales em 2000.
+  notes: >-
+    O texto diz 'eleito bispo de Monmouth em 1991'; não traz a data da sagração, por isso o ano indicado é o da
+    eleição.
+- jurisdiction: cinw
+  role: other
+  role_description: arcebispo (primaz) de Gales
+  start: '2000'
+  status: probable
+  sources:
+  - source: d2s30-arcebispo
+    quote: Foi eleito bispo de Monmouth em 1991, e entronizado arcebispo de Gales em 2000.
+  notes: Ano da entronização, segundo o texto.
 events:
 - type: other
   date: '2005-06-27'
@@ -59,3 +141,157 @@ events:
       da DAR, auto denominado de Autoridade Episcopal.
   - source: drv-declaracao-32
     quote: Representamos 40 Paróquias, Missões e Pontos Missionários
+- type: other
+  date: 2010-05
+  description: >-
+    Em 29/05/2010 (mensagem de Pentecostes), o arcebispo de Cantuária Rowan Williams determinou que as províncias
+    que não atenderam aos apelos dos Instrumentos da Comunhão sobre ordenação de ministros homossexuais praticantes
+    e bênção de uniões do mesmo sexo (citada a Igreja Episcopal dos Estados Unidos, que sagrou a bispa sufragânea
+    Mary Douglas Glasspool) não podem representar oficialmente a Comunhão Anglicana nem ter representantes na Comissão
+    de Fé, Ordem e Doutrina. A notícia é do site da diocese, que a intitula "Arcebispo de Cantuária Pune Províncias
+    Liberais".
+  status: confirmed
+  sources:
+  - source: d2s20-cantuaria
+    quote: 1) Que essas Províncias não podem representar oficialmente a Comunhão Anglicana
+  - source: d2s20-cantuaria
+    quote: >-
+      2) Que essas Províncias não devem ter representantes na Comissão de Fé, Ordem e Doutrina na Comunhão Anglicana
+- type: other
+  date: '2010-08-23'
+  description: >-
+    De 23 a 29/08/2010, em Entebbe (Uganda), realizou-se a II Conferência dos Bispos Anglicanos de Toda a África
+    (CAPA), com os titulares das dioceses do continente. O presidente da CAPA, Ian Ernest, bispo de Maurício e primaz
+    da Província do Oceano Índico, afirmou que as igrejas africanas haviam rompido o relacionamento com os episcopais
+    dos Estados Unidos e do Canadá; o primaz de Uganda, Henry Orombi, era o anfitrião e o arcebispo de Cantuária,
+    Rowan Williams, enviou mensagem de abertura.
+  status: confirmed
+  sources:
+  - source: d2s20-entebbe1
+    quote: >-
+      Está se realizando, de 23 a 29.08, no Hotel Resort Imperial, em Entebbe, Uganda, a II Conferência dos Bispos
+      Anglicanos de Toda a África
+  - source: d2s20-entebbe2
+    quote: o seu presidente Revmo. Ian Ernest , Bispo da Ilha Mauritius e Primaz da Província do Oceano Índico
+  - source: d2s20-entebbe2
+    quote: >-
+      isso levou a que nós rompêssemos o relacionamento com os episcopais dos Estados Unidos e do Canadá, que permitem
+      a entrada de clérigos gays
+- type: other
+  date: 2010-10
+  description: >-
+    Em outubro de 2010 o arcebispo de Cantuária Rowan Williams convocou o Encontro dos Primazes das 38 províncias
+    da Comunhão Anglicana para 25 a 31/01/2011, em Dublin (Irlanda); os primazes do Movimento Sul-Global deviam
+    decidir se compareceriam, em razão do convite à primaz da Igreja Episcopal dos Estados Unidos, Katharine Jefferts
+    Schori.
+  status: confirmed
+  sources:
+  - source: d2s20-primazes
+    quote: >-
+      O Arcebispo de Cantuária Rowan Williams convocou o próximo Encontro dos Primazes das 38 Províncias da Comunhão
+      Anglicana para os dias 25 a 31 de janeiro de 2011
+  - source: d2s20-primazes
+    quote: >-
+      os Primazes do Movimento Sul-Global irão se reunir no próximo mês para decidir se comparecerão ou não ao Encontro
+- type: other
+  date: 2011-05
+  description: >-
+    Segundo o site da Diocese do Recife, o bispo Patrick Harris, da Igreja da Inglaterra, foi um dos enviados especiais
+    do arcebispo de Cantuária, Rowan Williams, ao Brasil para estudar no local o conflito da Província (IEAB) com
+    a Diocese do Recife, ouvindo todas as partes; segundo a mesma fonte, o relatório nunca foi divulgado pelo Palácio
+    de Lambeth. Em 22/05/2011 ele enviou ao bispo Robinson Cavalcanti uma mensagem de congratulações pelo 35º aniversário
+    da diocese.
+  status: probable
+  sources:
+  - source: d2s21-patrick-harris
+    quote: >-
+      que foi um dos “enviados especiais” do Arcebispo de Cantuária Rowan Williams ao Brasil, para estudar in loco
+      o conflito da Província (IEAB) contra a Diocese do Recife, ouvindo todas as partes (e cujo relatório nunca
+      foi divulgado pelo Palácio de Lambeth)
+- type: other
+  date: '2003-05-24'
+  description: >-
+    Encontro dos Primazes da Comunhão Anglicana em Gramado (RS), presidido pelo arcebispo de Cantuária Rowan Williams,
+    com 33 dos 38 primazes; em 24 de maio houve celebração eucarística no Cine Embaixador, presidida pelo primaz
+    da IEAB, Glauco Soares de Lima. Os bispos Robinson Cavalcanti e Filadelfo Oliveira Neto, da Diocese Anglicana
+    do Recife, participaram de reuniões e cultos; segundo o relato da diocese, houve sessão especial sobre o "cisma
+    do Recife", dirigida por Glauco Soares de Lima, e os primazes expressaram apoio aos bispos e à diocese.
+  status: confirmed
+  sources:
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Com a presença do Arcebispo de Cantuária e de 33 dos 38 Primazes da Comunhão Anglicana, teve lugar em Gramado-RS,
+      esse importante Encontro mundial
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Dom Robinson Cavalcanti e Dom Filadelfo Oliveira participaram de várias reuniões e cultos nos dois últimos
+      dias
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Uma sessão especial foi, excepcionalmente, dedicada a estudar o cisma do Recife, dirigida pelo Primaz do Brasil,
+      Dom Glauco Soares de Lima.
+  - source: d2s24-encontro-primazes
+    quote: Os primazes expressaram o seu decidido apoio aos nossos bispos e à DAR.
+  - source: d2s24-cronologia
+    quote: Primazes, reunidos em Gramado
+- type: other
+  date: '2002-07-23'
+  description: >-
+    O arcebispo de Gales, Rowan Williams, é oficialmente apresentado em 23 de julho de 2002 como centésimo quarto
+    arcebispo de Cantuária, sucessor de George Carey, que anunciara em 8 de janeiro de 2002 sua aposentadoria para
+    31 de outubro de 2002. Williams fora eleito bispo de Monmouth em 1991 e entronizado arcebispo de Gales em 2000.
+  status: probable
+  sources:
+  - source: d2s27-rowan
+    quote: >-
+      No dia 23 de julho o Arcebispo do País de Gales, Dr Rowan Williams, foi oficialmente apresentado como o centésimo
+      quarto sucessor de Agostinho de Cantuária.
+  - source: d2s27-rowan
+    quote: Foi eleito bispo de Monmouth em 1991, e entronizado arcebispo de Gales em 2000.
+  - source: d2s27-rowan
+    quote: anunciou sua aposentadoria para o dia 31 de outubro de 2002
+- type: other
+  date: '2002-07-23'
+  description: >-
+    Rowan Williams, arcebispo de Gales, foi oficialmente apresentado em 23 de julho como centésimo quarto sucessor
+    de Agostinho de Cantuária, o novo arcebispo de Cantuária, sucedendo George Carey (aposentadoria anunciada para
+    31 de outubro de 2002); o texto o descreve como o primeiro nomeado de fora da Igreja da Inglaterra desde a Reforma.
+  status: probable
+  sources:
+  - source: d2s30-arcebispo
+    quote: >-
+      No dia 23 de julho o Arcebispo do País de Gales, Dr Rowan Williams, foi oficialmente apresentado como o centésimo
+      quarto sucessor de Agostinho de Cantuária.
+  - source: d2s30-arcebispo
+    quote: anunciou sua aposentadoria para o dia 31 de outubro de 2002
+- type: other
+  date: '2004'
+  description: >-
+    O arcebispo de Cantuária, Rowan Williams, designou o cônego Kenneth Kearon, diretor da Escola de Ecumenismo
+    de Dublin, como secretário-geral da Comunhão Anglicana, em substituição ao cônego John Peterson (notícia de
+    2004 sem data própria).
+  status: confirmed
+  sources:
+  - source: d2s31-not04
+    quote: >-
+      O Arcebispo de Cantuária, Sua Graça Rowan Williams, designou o Rev. Cônego Kenneth Kearon, atual diretor da
+      Escola de Ecumenismo de Dublin, Irlanda, como Secretário Geral da Comunhão Anglicana, em substituição ao Rev.
+      Cônego John Peterson.
+- type: other
+  date: '2004-12-14'
+  description: >-
+    Em carta de 14/12/2004 ao Arcebispo de Cantuária e aos Primazes da Comunhão Anglicana, o Primaz da IEAB relatou
+    ter recebido cópia de carta do bispo Robinson Cavalcanti pedindo para ser recebido com sua diocese em outra
+    jurisdição eclesiástica que não a Província do Brasil, e informou que, após denúncia assinada por dois bispos,
+    dois clérigos e dois leigos, fora instaurado processo disciplinar contra Robinson. A carta expressa a posição
+    da IEAB.
+  status: confirmed
+  sources:
+  - source: d2s32-carta-cantuaria
+    quote: >-
+      solicitando ser recebido juntamente com sua diocese em uma outra jurisdição eclesiástica que não a Província
+      da Igreja Episcopal Anglicana do Brasil
+  - source: d2s32-carta-cantuaria
+    quote: >-
+      Diante de denúncia apresentada, assinada, por dois bispos, dois clérigos e dois leigos, seguindo os trâmites
+      legais, instaurou-se processo disciplinar contra Dom Robinson.

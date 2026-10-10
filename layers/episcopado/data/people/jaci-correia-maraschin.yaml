@@ -3,7 +3,9 @@ id: jaci-correia-maraschin
 name: Jaci Correia Maraschin
 full_name: Jaci Correia Maraschin
 aliases:
+- Jaci Maraschin
 - MARASCHIN, JACI CORREIA
+- Rev. Dr. Jaci Maraschin
 birth:
   date: '1929-12-12'
   sources:
@@ -16,15 +18,15 @@ biography: >-
   em agosto de 1954, por Egmont Krischke, no Distrito Missionário do Sul do Brasil, e foi transferido para a Igreja
   Episcopal do Brasil em 25/4/1965. Foi um dos dois mais votados no concílio extraordinário de 26/3/1977 para eleger
   o bispo da Diocese Sul Central, sem eleição após oito escrutínios, e candidato na eleição episcopal da Diocese
-  Central em 24/11/1984, vencida por Sydney Alcoba Ruiz.
+  Central em 24/11/1984, vencida por Sydney Alcoba Ruiz. Presbítero da Diocese Anglicana de São Paulo, depois aposentado,
+  é doutor em Ciências da Religião pela Universidade de Strasbourg e professor titular da Universidade Metodista
+  de São Paulo; foi assessor teológico de duas conferências de Lambeth e, em julho de 2004, recebeu homenagem pelos
+  50 anos de ministério ordenado.
 sources:
 - source: cd1965
   quote: b Bage RGS Braz 12 Dec 29
 - source: cd1965
   quote: D Nov 53 P Aug 54 Bp Krischke
-- source: kickhofel-1995
-  quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1953 - … Jaci Correia Maraschin
-  page: '370'
 - source: cd1968
   quote: MARASCHIN, Jaci Correia (SBra) Trans to Brazil Ch 25 Apr 65.
 - source: kickhofel-1995
@@ -40,6 +42,23 @@ sources:
     o número de votos necessários nas duas ordens (clérigos e leigos) no terceiro escrutínio, tendo disputado a
     eleição com os colegas Jaci Correia Maraschin e Paulo Ruiz Garcia.
   page: '278'
+- source: d2s32-jaci
+  quote: >-
+    Por Jaci Maraschin, presbítero da Diocese Anglicana de São Paulo e professor titular da Faculdade de Filosofia
+    e Ciências da Religião da Universidade Metodista de São Paulo. É doutor em Ciências da Religião pela Universidade
+    de Strasbourg , França, com pós-doutoramento no Union Theological Seminary e na Columbia University de Nova
+    York, Estados Unidos.
+- source: d2s32-jaci
+  quote: >-
+    Fui duas vezes assessor teológico das últimas conferências de Lambeth, membro do Conselho Consultivo Anglicano,
+    membro da Comissão Anglicana Internacional de Teologia e Doutrina, e, por fim, membro da Comissão Internacional
+    de Diálogo com a Igreja Católica Romana.
+- source: d2s32-jaci
+  quote: Sou clérigo aposentado da Diocese Anglicana de São Paulo
+- source: d2s32-simposio
+  quote: >-
+    As atividades do dia encerraram com uma homenagem ao Rev. Dr. Jaci Maraschin, por ocasião dos seus 50 anos de
+    ministério ordenado.
 ordinations:
 - order: diaconate
   date: 1953-11
@@ -93,6 +112,29 @@ affiliations:
     Transferência do distrito missionário (SBra) para a Igreja Episcopal do Brasil autônoma, conforme o Clerical
     Directory 1968. Transferido para a Igreja Episcopal do Brasil autônoma em 25/04/1965. Consta da lista do clero
     nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: ieab
+  role: priest
+  diocese: ieab-dasp
+  status: probable
+  sources:
+  - source: d2s08-souto-simulacros
+    quote: o Rev. Jaci Maraschin, clérigo da DASP
+  notes: >-
+    Local: DASP. Descrito pelo Rev. Fred Souto, em artigo de 2005, como 'clérigo da DASP' e autor do texto 'Simulacros
+    e Simulação em Recife'; o autor o chama de professor, doutor e presbítero.
+- jurisdiction: ieab
+  role: other
+  role_description: presbítero aposentado
+  diocese: ieab-dasp
+  status: confirmed
+  sources:
+  - source: d2s32-jaci
+    quote: Sou clérigo aposentado da Diocese Anglicana de São Paulo
+  - source: d2s32-simposio
+    quote: homenagem ao Rev. Dr. Jaci Maraschin, por ocasião dos seus 50 anos de ministério ordenado
+  notes: >-
+    Declara-se clérigo aposentado da Diocese Anglicana de São Paulo em outubro de 2005; em julho de 2004 foi homenageado
+    no I Simpósio de Teologia Anglicana pelos 50 anos de ministério ordenado.
 events:
 - type: other
   date: '1984-11-24'
@@ -120,3 +162,22 @@ events:
       Jaci Correia Maraschin e Saulo Marques da Silva, que não alcançaram o número de votos necessários nas duas
       ordens.
     page: '287'
+- type: other
+  date: '2004-07-15'
+  description: >-
+    I Simpósio de Teologia Anglicana (julho de 2004), sobre o conceito de Inclusividade: em 15/07/2004 foi prestada
+    homenagem ao Rev. Dr. Jaci Maraschin pelos 50 anos de ministério ordenado; em 16/07/2004 a Comissão de Sistematização
+    (revs. Ramacés Hartwig, Elias Vergara e Jorge Aquino, com a inclusão de Eduardo Grillo e Gustavo Gilson) apresentou
+    a versão inicial do documento final, e o Primaz concedeu entrevista a emissora de TV local.
+  status: confirmed
+  sources:
+  - source: d2s32-simposio
+    quote: >-
+      As atividades do dia encerraram com uma homenagem ao Rev. Dr. Jaci Maraschin, por ocasião dos seus 50 anos
+      de ministério ordenado.
+  - source: d2s32-simposio
+    quote: a Comissão de Sistematização, formada pelos reverendos Ramacés Hartwig, Elias Vergara e Jorge Aquino
+  - source: d2s32-simposio
+    quote: >-
+      decidiu-se pela inclusão de mais dois integrantes, Rev. Eduardo Grillo e Rev. Gustavo Gilson, para auxiliar
+      no trabalho de redação

@@ -1,11 +1,21 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: juciara-maria-r-do-nascimento
 name: Juciara Maria R. do Nascimento
+aliases:
+- Revda. Juciara Maria
+death:
+  date: 2015-03
+  sources:
+  - source: darn1-home1203
+    quote: >-
+      Oficialmente comunicamos que a partir da noite de hoje, acontecerá o velório do corpo da Revda. Juciara Maria
 biography: >-
-  Ordenada diácona por Robinson Cavalcanti, atuou na Diocese do Recife como ministra encarregada do Ponto Missionário
-  Betesda, líder da equipe pastoral e depois pároca da Paróquia Anglicana São Paulo, e foi vice-presidente do Conselho
-  Diocesano. Em 23/08/2005 constou entre os clérigos excluídos da comunhão da IEAB por decreto, os quais declararam
-  em carta manter comunhão com Robinson Cavalcanti.
+  Juciara Maria Rodrigues do Nascimento foi ordenada diácona por Robinson Cavalcanti, em data não registrada, e
+  atuou na Diocese do Recife como ministra encarregada do Ponto Missionário Betesda, líder da equipe pastoral e
+  pároca da Paróquia Anglicana São Paulo, onde em 2008 e 2010 constava como pároca ou reitora. Foi também vice-presidente
+  do Conselho Diocesano. Em 23/08/2005 constou entre os clérigos excluídos da comunhão da IEAB por decreto, os quais
+  declararam em carta manter comunhão com Robinson Cavalcanti, e passou a aparecer como clériga da Diocese Anglicana
+  do Recife. Faleceu em março de 2015.
 sources:
 - source: rcor-drv-ord-celio-filadelfo
   quote: Marco Antonio, Maurício, Vera, Nadja, Filadelfo e Juciara, meus irmãos e irmãs
@@ -17,6 +27,8 @@ sources:
 - source: drp2-breves-09-2005
   quote: >-
     na Paróquia Anglicana São Paulo, sob a orientação pastoral das Reverendas: Juciara Nascimento e Solange Cristina
+- source: dard1-com-norte-2009a
+  quote: 'Ministra Encarregada: Revda. Juciara Crasto'
 - source: darn2-sao-paulo-2008
   quote: 'Pároca: Revda Juciara Rodrigues'
 - source: darn2-sao-paulo-casamento-2010
@@ -27,16 +39,13 @@ sources:
 - source: costa2021
   quote: >-
     Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
-    Ordens, os clérigos a seguir mencionados: … Revda. Juciara Maria R. do Nascimento … Recife, 23 de agosto de
-    2005.
-  page: 560-561
-- source: costa2021
-  quote: >-
-    Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
     Ordens, os clérigos a seguir mencionados: … Revda. Juciara Maria R. do Nascimento … Os clérigos não atenderam
     à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
     mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
   page: 560-562
+- source: darn1-home1203
+  quote: >-
+    Oficialmente comunicamos que a partir da noite de hoje, acontecerá o velório do corpo da Revda. Juciara Maria
 ordinations:
 - order: diaconate
   date: null
@@ -72,13 +81,17 @@ affiliations:
       à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
       mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
+  - source: d2s03-hom-centro
+    quote: Ven. Arc. Rev. Maurício Coelho (Arcediagado Centro) … Revda. Juciara Rodrigues
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados. Local: Paróquia Anglicana São Paulo. Clérigo citado
     como pastor/ministro da comunidade em out/nov de 2006 (boletim de oração da Secretaria de Intercessão). Anexo
     R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti,
     ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005 é a da exclusão
-    pela IEAB, e a adesão à DAR é anterior, sem data exata.
+    pela IEAB, e a adesão à DAR é anterior, sem data exata. Local: Arcediagado Centro. Consta entre os clérigos
+    que assinam a mensagem do Arcediagado Centro de 05/10/2010 (grafia do site: "Revda. Juciara Rodrigues"); em
+    exercício em outubro/2010.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: vice-presidente_conselho_diocesano
@@ -157,10 +170,13 @@ affiliations:
   - source: dard1-carta-bispos-2004
     quote: >-
       Revda. Juciara Maria Rodrigues do N. Crasto Paróquia Anglicana São Paulo Ponto Missionário Anglicano Betesda
+  - source: d2s28-clero04
+    quote: Presbíteros (as) - (26) ... Revda. Juciara M. Rodrigues do N. Crasto (23/03)
   notes: >-
     Local: Paróquia Anglicana São Paulo; Ponto Missionário Anglicano Betesda. Consta na carta aberta de 17/09/2004,
     assinada pela Diocese do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário.
-    Listado entre os presbíteros. Nome na carta: Juciara Maria Rodrigues do N. Crasto.
+    Listado entre os presbíteros. Nome na carta: Juciara Maria Rodrigues do N. Crasto. Em exercício em outubro de
+    2004 (página capturada em 24/10/2004). Listado entre os presbíteros e presbíteras.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: ministro_encarregado
@@ -192,3 +208,63 @@ affiliations:
   notes: >-
     Delegado clerical ao Concílio Diocesano Extraordinário de 26/02/2005 (Carta de Setúbal), com o cargo indicado
     na lista de delegados.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároca
+  status: confirmed
+  sources:
+  - source: d2s01-pj-pe
+    quote: 'PARÓQUIA ANGLICANA SÃO PAULO Pároca: Revda Juciara Rodrigues'
+  notes: >-
+    Local: Paróquia Anglicana São Paulo (Nova Descoberta, Recife-PE). Em exercício em ago/2010, segundo a página
+    "Um Projeto Missionário Anglicano Ortodoxo para o Brasil IV – Estado de Pernambuco" (publicada e atualizada
+    em 27/08/2010; cópia capturada em 25/12/2010). A página a chama de "Revda Juciara Rodrigues". Local: Paróquia
+    Anglicana São Paulo (Nova Descoberta, Recife-PE).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministra encarregada
+  status: probable
+  sources:
+  - source: d2s01-pj-pe
+    quote: 'PONTO MISSIONÁRIO ANGLICANO betesda Ministra Encarregada: Revda. Juciara Rodi'
+  notes: >-
+    Local: Ponto Missionário Anglicano Betesda (Recife-PE). Em exercício em ago/2010, segundo a página "Um Projeto
+    Missionário Anglicano Ortodoxo para o Brasil IV – Estado de Pernambuco" (publicada e atualizada em 27/08/2010;
+    cópia capturada em 25/12/2010). A página grafa "Revda. Juciara Rodi"; a identificação com Juciara Maria R. do
+    Nascimento vem do mesmo local (Betesda), já ligado a ela em outras listas. Local: Ponto Missionário Anglicano
+    Betesda (Recife-PE).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco
+  status: probable
+  sources:
+  - source: d2s19-sp-congresso
+    quote: 'Reverenda: Juciara Maria Rodrigues'
+  - source: d2s19-sp-congresso
+    quote: Rua Alto do Eucalipto, no.20, Vasco da Gama - Recife-PE
+  notes: >-
+    Local: Paróquia Anglicana São Paulo (Alto do Eucalipto, Recife). Matéria de 7/07/2010 indica "Reverenda: Juciara
+    Maria Rodrigues" como responsável pela Paróquia São Paulo, sem o título de pároca; identificada com Juciara
+    Maria R. do Nascimento pelo mesmo cargo e paróquia.
+- jurisdiction: ieab
+  role: other
+  role_description: pároco
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-comun04
+    quote: PARÓQUIA ANGLICANA SÃO PAULO Revda. Juciara Rodrigues
+  notes: >-
+    Local: Paróquia Anglicana São Paulo (Recife-PE). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+    Paróquia autônoma; a lista a põe à frente da paróquia, sem o título expresso.
+- jurisdiction: ieab
+  role: other
+  role_description: responsável
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-comun04
+    quote: PONTO MISSIONÁRIO ANGLICANO BETESDA Revda. Juciara Crasto
+  notes: >-
+    Local: Ponto Missionário Anglicano Betesda (Passarinho, Recife-PE). Em exercício em outubro de 2004 (página
+    capturada em 24/10/2004).

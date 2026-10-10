@@ -1,6 +1,19 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: fernando-rei-poncadilha
 name: Fernando Rei Ponçadilha
+biography: >-
+  Leigo ordenado diácono em 27/6/1998 por Robinson Cavalcanti, foi depois ordenado presbítero e atuou como ministro
+  encarregado da Missão de São João Batista.
+sources:
+- source: cant-amazonia
+  quote: >-
+    Em 27 de junho de 1998 o leigo Fernando Rei Ponçadilha é ordenado ao diaconato pelo bispo Robinson Cavalcanti
+- source: d2s28-m05
+  quote: >-
+    Instituímos Fernando Ponçadilha Ministro Leigo, e, depois, o ordenamos diácono e presbítero, Ministro Encarregado
+    da Missão de São João Batista
+- source: d2s28-m05
+  quote: o ordenamos diácono e presbítero, Ministro Encarregado da Missão de São João Batista
 ordinations:
 - order: diaconate
   date: '1998-06-27'
@@ -12,3 +25,28 @@ ordinations:
   - source: cant-amazonia
     quote: >-
       Em 27 de junho de 1998 o leigo Fernando Rei Ponçadilha é ordenado ao diaconato pelo bispo Robinson Cavalcanti
+- order: presbyterate
+  date: null
+  jurisdiction: ieab
+  ordained_by: robinson-cavalcanti
+  status: confirmed
+  sources:
+  - source: d2s28-m05
+    quote: >-
+      Instituímos Fernando Ponçadilha Ministro Leigo, e, depois, o ordenamos diácono e presbítero, Ministro Encarregado
+      da Missão de São João Batista
+  notes: >-
+    O bispo diocesano relata, em 30/07/2000, que instituiu Fernando Ponçadilha ministro leigo e depois o ordenou
+    diácono e presbítero; as datas não são dadas (a ordenação diaconal é de 27/06/1998 em outras fontes).
+affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: ministro encarregado
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-m05
+    quote: o ordenamos diácono e presbítero, Ministro Encarregado da Missão de São João Batista
+  notes: >-
+    Local: Missão de São João Batista (região amazônica). Ministro encarregado da Missão de São João Batista, na
+    região amazônica, até 30/07/2000, data da mensagem.

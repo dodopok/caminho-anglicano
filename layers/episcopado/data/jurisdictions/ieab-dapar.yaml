@@ -10,7 +10,7 @@ aliases:
 type: diocese
 country: BR
 founded:
-  date: '2003'
+  date: '2003-07-27'
   sources:
   - source: ieab-parana-20
     quote: Ela foi organizada em 2003, partindo das sementes plantadas por décadas
@@ -28,13 +28,18 @@ founded:
   - source: lbd-wp-dasp
     quote: >-
       A DASP foi criada em 1969, abrangendo inicialmente os Estados de São Paulo, Paraná e Mato Grosso do Sul
+  - source: d2s32-noticias-p13
+    quote: Instalação da Diocese Anglicana de Curitiba
+  - source: d2s32-noticias-p13
+    quote: >-
+      No próximo dia 27 de julho, Dom Orlando Santos de Oliveira, Bispo Primaz da IEAB, presidirá a Cerimônia
 website: http://dapar.org/
 description: >-
-  A Diocese Anglicana do Paraná, antes chamada Diocese Anglicana de Curitiba, foi organizada em 2003 e integra a
-  Igreja Episcopal Anglicana do Brasil (IEAB). Naudal Alves Gomes foi seu primeiro bispo, eleito em 2003, e assumiu
-  a Catedral de São Tiago, em Curitiba. Magda Guedes Pereira foi sagrada bispa coadjutora em outubro de 2021. Foi
-  instalada bispa diocesana em 12 de dezembro de 2021, na catedral diocesana. Nessa data, Naudal Alves Gomes passou
-  a bispo emérito.
+  Diocese da IEAB organizada em 2003, inicialmente chamada Diocese Anglicana de Curitiba e depois Diocese Anglicana
+  do Paraná; sua instalação seria presidida em 27 de julho pelo primaz da IEAB, Orlando Santos de Oliveira. Naudal
+  Alves Gomes, eleito em 2003 seu primeiro bispo, assumiu a Catedral de São Tiago, em Curitiba, e foi bispo diocesano
+  até 12 de dezembro de 2021, quando passou a emérito. Magda Guedes Pereira foi sagrada bispa coadjutora em outubro
+  de 2021 e instalada bispa diocesana em 12 de dezembro de 2021, na catedral diocesana.
 sources:
 - source: ieab-parana-20
   quote: Ela foi organizada em 2003, partindo das sementes plantadas por décadas
@@ -49,6 +54,11 @@ sources:
     quando foi eleito o primeiro bispo da Diocese Anglicana do Paraná, quando assumiu a Catedral de São Tiago, na
     cidade de Curitiba.
   page: '105'
+- source: d2s32-noticias-p13
+  quote: Instalação da Diocese Anglicana de Curitiba
+- source: d2s32-noticias-p13
+  quote: >-
+    No próximo dia 27 de julho, Dom Orlando Santos de Oliveira, Bispo Primaz da IEAB, presidirá a Cerimônia
 - source: ieab-magda-sagrada
   quote: a reverenda Magda Guedes Pereira como bispa coadjutora.
 - source: costa2021
@@ -59,8 +69,6 @@ sources:
     é quando este se tornará bispo emérito.
 - source: ieab-secretaria
   quote: Revmo. Bispo Naudal Alves Gomes, Emérito
-- source: ieab-dioceses
-  quote: Bispo Diocesano – Revma. Magda Guedes
 relations:
 - type: part_of
   target: ieab
@@ -134,3 +142,12 @@ relations:
     quote: >-
       Representando a Diocese Anglicana de Curitiba, integra o Conselho Executivo da IEAB (CEXEC), contribuindo
       junto aos representantes das outras Dioceses com a administração da Igreja Nacional.
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Criação da Diocese Missionária de Curitiba e eleição do seu primeiro Bispo, D. Naudal Alves Gomes (atual Bispo
+      Sufragâneo da Diocese Sul-Ocidental - Santa Maria /RS).
+  - source: d2s32-carta-esclarecimento
+    quote: >-
+      Rev. Carlos Eduardo Brandão Calvani (Diocese Anglicana de Curitiba, Coordenador do Centro de Estudos Anglicanos)
+  - source: d2s32-panama
+    quote: Revmo. Naudal Gomes Diocese de Curitiba

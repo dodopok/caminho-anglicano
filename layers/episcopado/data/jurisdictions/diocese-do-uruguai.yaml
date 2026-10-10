@@ -3,14 +3,27 @@ id: diocese-do-uruguai
 name: Diocese do Uruguai
 type: diocese
 description: >-
-  Diocese da Igreja Anglicana do Cone Sul, cujo bispo diocesano, William Godfrey, foi procurado em 1996 por líderes
-  que buscavam apoio espiritual.
+  Diocese da Igreja Anglicana do Cone Sul desde a fundação, em 1988. Em 1996, William Godfrey era seu bispo diocesano
+  e foi procurado por líderes que buscavam apoio espiritual. Em 12 de novembro de 2010, um Sínodo Extraordinário
+  em Montevidéu, sob a presidência do bispo diocesano Miguel Tamayo, deliberou por maioria simples desvincular-se
+  da Igreja Anglicana do Cone Sul.
 sources:
 - source: cant-novas-igrejas-2024
   quote: >-
     Em 1996, os líderes buscaram apoio espiritual junto ao bispo William Godfrey, à época diocesano do Uruguai e
     membro da Província do Cone Sul.
   page: '123'
+- source: d2s18-home-p18-2010
+  quote: da qual era uma Diocese desde a fundação em 1988
+- source: d2s19-uruguai
+  quote: >-
+    a Igreja Anglicana do Uruguai, em um Sínodo Extraordinário reunido na cidade de Montevidéu, em 12.11.2010, sob
+    a presidência do Bispo Miguel Tamayo (de nacionalidade cubana), deliberou, por maioria simples dos clérigos
+    e leigos, se desvincular da Igreja Anglicana do Cone Sul da
+- source: d2s20-uruguai
+  quote: sob a presidência do Bispo Miguel Tamayo (de nacionalidade cubana)
+- source: d2s18-home-p18-2010
+  quote: sob a presidência do Bispo Miguel Tamayo (de nacionalidade cubana)
 relations:
 - type: part_of
   target: iacs
@@ -21,3 +34,12 @@ relations:
       Em 1996, os líderes buscaram apoio espiritual junto ao bispo William Godfrey, à época diocesano do Uruguai
       e membro da Província do Cone Sul.
     page: '123'
+  - source: d2s18-home-p18-2010
+    quote: da qual era uma Diocese desde a fundação em 1988
+  - source: d2s20-uruguai
+    quote: sob a presidência do Bispo Miguel Tamayo (de nacionalidade cubana)
+  led_by:
+  - miguel-tamayo
+  notes: >-
+    Em 12/11/2010 a diocese votou deixar a Província do Cone Sul, mas o desligamento dependia da anuência do Cone
+    Sul e de outra Província que a recebesse; a página não informa o desfecho.

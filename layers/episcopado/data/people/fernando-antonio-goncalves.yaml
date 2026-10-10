@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: fernando-antonio-goncalves
+name: Fernando Antônio Gonçalves
+aliases:
+- Rev. Fernando Gonçalves
+biography: >-
+  Fernando Antônio Gonçalves foi ordenado diácono em 10/9/2005, na Catedral Anglicana da Santíssima Trindade, por
+  Filadelfo Oliveira Neto, na Diocese Anglicana do Recife (IEAB). Nas listas da diocese consta como diácono, secretário
+  do Conselho Diocesano e ministro responsável pelo Ponto Missionário Anglicano Jesus de Nazaré.
+sources:
+- source: d2s31-diacs
+  quote: a Diocese conta com oito novos diáconos ordenados por Dom Filadelfo
+- source: d2s31-diacs
+  quote: >-
+    Rev. Rodrigo Espiúca, Rev. Senomar Teixeira, Rev. Adilson Ferreira, Rev. Fernando Gonçalves, Rev. Rodson Ricardo,
+    Rev. Júlio Gomes, Rev. Sílvio Freitas e Rev. Ricardo Domingos
+- source: d2s31-diacs
+  quote: >-
+    estiveram na Catedral Anglicana da Santíssima Trindade e participaram do culto presidido pelo Bispo Dom Filadelfo
+    Neto
+- source: d2s31-carta
+  quote: Rev. Fernando Antônio Gonçalves Secretário do Conselho Diocesano
+- source: d2s31-comun
+  quote: PONTO MISSIONÁRIO ANGLICANO JESUS DE NAZARÉ Rev. Fernando Antônio Gonçalves
+ordinations:
+- order: diaconate
+  date: '2005-09-10'
+  place: Catedral Anglicana da Santíssima Trindade, Recife (PE)
+  jurisdiction: ieab-dar
+  ordained_by: filadelfo-oliveira-neto
+  status: confirmed
+  sources:
+  - source: d2s31-diacs
+    quote: a Diocese conta com oito novos diáconos ordenados por Dom Filadelfo
+  - source: d2s31-diacs
+    quote: >-
+      Rev. Rodrigo Espiúca, Rev. Senomar Teixeira, Rev. Adilson Ferreira, Rev. Fernando Gonçalves, Rev. Rodson Ricardo,
+      Rev. Júlio Gomes, Rev. Sílvio Freitas e Rev. Ricardo Domingos
+  - source: d2s31-diacs
+    quote: >-
+      estiveram na Catedral Anglicana da Santíssima Trindade e participaram do culto presidido pelo Bispo Dom Filadelfo
+      Neto
+  - source: d2s31-agenda
+    quote: Ordenações Diaconais - Catedral da SS. Trindade
+  - source: d2s31-clero
+    quote: Rev. Fernando Antônio Gonçalves
+  notes: >-
+    Os oito diáconos aparecem juntos na nota do site, que dá o culto de encerramento do XXIV Concílio no sábado,
+    10/09/2005, na Catedral da Santíssima Trindade, presidido por Filadelfo Oliveira Neto como autoridade eclesiástica
+    da diocese que permaneceu na IEAB. A nota não cita co-ordenantes. A identificação dos nomes curtos com os nomes
+    completos vem da lista do clero do mesmo site (abril de 2006), que traz todos entre os diáconos.
+affiliations:
+- jurisdiction: ieab-dar
+  role: deacon
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Diáconos(as) - (09)
+  - source: d2s31-clero
+    quote: Rev. Fernando Antônio Gonçalves
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listado entre os diáconos.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: ministro responsável
+  status: confirmed
+  sources:
+  - source: d2s31-comun
+    quote: PONTO MISSIONÁRIO ANGLICANO JESUS DE NAZARÉ Rev. Fernando Antônio Gonçalves
+  notes: >-
+    Local: Diocese Anglicana do Recife, Ponto Missionário Anglicano Jesus de Nazaré (Recife). Em exercício em abril
+    de 2006, segundo a lista de paróquias e missões da Diocese Anglicana do Recife reorganizada pela IEAB.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: secretário do Conselho Diocesano
+  status: confirmed
+  sources:
+  - source: d2s31-carta
+    quote: Rev. Fernando Antônio Gonçalves Secretário do Conselho Diocesano
+  notes: >-
+    Local: Diocese Anglicana do Recife. Signatário da carta aberta do Conselho Diocesano da Diocese Anglicana do
+    Recife (IEAB) de 21/09/2005, com este cargo.

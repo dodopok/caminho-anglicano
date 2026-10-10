@@ -2,12 +2,17 @@
 id: gustavo-leite-castello-branco
 name: Gustavo Leite Castello Branco
 aliases:
+- Gustavo Castello Branco
 - Gustavo Leite Castelo Branco
+- Rev. Gustavo Castello Branco
 - Rev. Gustavo Leite
 biography: >-
   Gustavo Leite Castello Branco foi ordenado diácono em 18 de junho de 2005, em João Pessoa, e presbítero em agosto
-  de 2011, ambas por Robinson Cavalcanti, na Diocese Anglicana do Recife. Atuou como coadjutor da Paróquia Anglicana
-  Cristo Libertador e como secretário diocesano de Missão e Evangelismo.
+  de 2011, na Paróquia Anglicana Cristo Libertador, ambas as vezes por Robinson Cavalcanti, na Diocese Anglicana
+  do Recife. Foi coadjutor dessa paróquia, membro da equipe pastoral da Con-Catedral Anglicana da Ressurreição e
+  coordenador pedagógico do Seminário Teológico da Paraíba (SAT-PB). Em 2009 e 2010 constava como secretário diocesano
+  de Missão e Evangelismo e, em 2011, como procurador diocesano. Em fontes diocesanas aparece como diácono permanente
+  e estudante de mestrado em História da Igreja no Trinity School for Ministry, em Ambridge (PA).
 sources:
 - source: drp2-ord-diac-jp-2005
   quote: >-
@@ -26,10 +31,22 @@ sources:
   quote: >-
     PARÓQUIA ANGLICANA CRISTO LIBERTADOR Pároco: Rev. Flávio Adair Torres Soares Coadjutor: Rev. Gustavo Leite Castelo
     Branco
+- source: d2s08-castello-privat
+  quote: membro da Equipe Pastoral da Con-Catedral Anglicana da Ressurreição, no Arcediagado Paraíba
+- source: d2s08-castello-privat
+  quote: Coordenador Pedagógico do Seminário Teológico da Paraíba – SAT-PB
 - source: dard1-cargos-2009a
   quote: 'Secretaria Diocesana Anglicana de Missão e Evangelismo: Rev. Gustavo Leite Castello Branco.'
 - source: dard1-cargos-2010
   quote: 'Secretaria Diocesana Anglicana de Missão e Evangelismo: Rev. Gustavo Leite Castello Branco.'
+- source: d2s20-cargos2011
+  quote: '3. Procurador Diocesano : Rev. Gustavo Leite Castello Branco'
+- source: d2s01-art-4207
+  quote: Rev. Gustavo Leite Castello Branco é Diácono Permanente na Diocese do Recife
+- source: d2s01-art-4207
+  quote: >-
+    estudante de tempo integral no Programa MAR (Master of Arts in Religion), Mestrando em História da Igreja, no
+    Trinity School for Ministry, em Ambridge, PA
 ordinations:
 - order: diaconate
   date: '2005-06-18'
@@ -88,10 +105,15 @@ affiliations:
     quote: >-
       PARÓQUIA ANGLICANA CRISTO LIBERTADOR Pároco: Rev. Flávio Adair Torres Soares Coadjutor: Rev. Gustavo Leite
       Castelo Branco
+  - source: d2s01-pj-pb
+    quote: 'Coadjutor: Rev. Gustavo Leite Castelo Branco'
   notes: >-
     Local: Paróquia Anglicana Cristo Libertador (João Pessoa-PB; Arcediagado PB/RN/CE). Página "Comunidades" do
     arcediagado, criada em 20/08/2009 e capturada em 29/11/2010; cargo atestado nesse intervalo, sem data de posse.
-    A página grafa "Castelo Branco".
+    A página grafa "Castelo Branco". Local: Paróquia Anglicana Cristo Libertador (João Pessoa-PB). Em exercício
+    em ago/2010, segundo a página "Um Projeto Missionário Anglicano Ortodoxo para o Brasil III – Estado da Paraíba"
+    (publicada em 26/08/2010). A página grafa "Castelo Branco" e o trata por "Rev.", embora a ordenação presbiteral
+    dele esteja registrada em 2011. Local: Paróquia Anglicana Cristo Libertador (João Pessoa-PB).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: secretario_diocesano
@@ -114,3 +136,67 @@ affiliations:
   notes: >-
     Local: Con-Catedral Anglicana da Ressurreição (João Pessoa). Consta na página de comunidades do Arcediagado
     PB/RN/CE capturada em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: diácono permanente
+  status: confirmed
+  sources:
+  - source: d2s01-art-4207
+    quote: Rev. Gustavo Leite Castello Branco é Diácono Permanente na Diocese do Recife
+  notes: >-
+    Assina o artigo como diácono permanente da Diocese do Recife. O texto não traz data, mas cita uma consulta de
+    07/09/2006 e a cópia foi capturada em 15/10/2007; a ordenação diaconal consta de 18/06/2005.
+- jurisdiction: diocese-anglicana-recife
+  role: deacon
+  status: confirmed
+  sources:
+  - source: d2s08-castello-reforma
+    quote: Rev. Gustavo Leite Castello Branco é Diácono Permanente na Diocese do Recife
+  - source: d2s06-gustavo-reforma
+    quote: Rev. Gustavo Leite Castello Branco é Diácono Permanente na Diocese do Recife
+  notes: >-
+    Descrito como diácono permanente da Diocese do Recife, estudante em tempo integral nos EUA, em artigo sem data
+    própria; em abril de 2008 a nota o chama de clérigo. Consta como diácono permanente da Diocese do Recife na
+    nota do autor; a página foi postada em agosto de 2009 e arquivada em maio de 2010; a data original do texto
+    não consta.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário diocesano de Missão e Evangelismo
+  status: confirmed
+  sources:
+  - source: d2s08-castello-privat
+    quote: Secretário Diocesano de Missão e Evangelismo
+  notes: Nota biográfica do artigo de 30/04/2008.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coordenador pedagógico do Seminário Anglicano Teológico da Paraíba (SAT-PB)
+  status: confirmed
+  sources:
+  - source: d2s08-castello-privat
+    quote: Coordenador Pedagógico do Seminário Teológico da Paraíba – SAT-PB
+  notes: Nota biográfica do artigo de 30/04/2008.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro da equipe pastoral
+  status: confirmed
+  sources:
+  - source: d2s08-castello-privat
+    quote: membro da Equipe Pastoral da Con-Catedral Anglicana da Ressurreição, no Arcediagado Paraíba
+  notes: >-
+    Local: Con-Catedral Anglicana da Ressurreição (Arcediagado Paraíba). Nota biográfica do artigo de 30/04/2008.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: procurador diocesano
+  status: confirmed
+  sources:
+  - source: d2s20-cargos2011
+    quote: '3. Procurador Diocesano : Rev. Gustavo Leite Castello Branco'
+  - source: d2s22-cargos2011
+    quote: '3. Procurador Diocesano : Rev. Gustavo Leite Castello Branco'
+  notes: >-
+    Consta da 'Relação dos Cargos Diocesanos 2011' (publicada em 10/12/2010), seção "Cargos Designados pelo Bispo,
+    sob Homologação do Concílio Diocesano"; cargo designado para o ano de 2011. Designado para o ano de 2011. Local:
+    Procuradoria. Cargo para 2011 constante da relação de cargos diocesanos publicada em 10/12/2010 (captura de
+    dez/2010), após o XXX Concílio Diocesano. Cargo constante da Relação dos Cargos Diocesanos 2011, publicada em
+    10/12/2010 (captura de 28/12/2010); designação para o exercício de 2011. Cargo designado pelo bispo sob homologação
+    do Concílio Diocesano.

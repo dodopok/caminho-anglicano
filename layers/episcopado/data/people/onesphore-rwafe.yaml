@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: onesphore-rwafe
+name: Onesphore Rwafe
+biography: >-
+  Bispo da Diocese de Byumba e deão provincial da Igreja Anglicana de Ruanda, foi eleito arcebispo primaz da província
+  pela Câmara dos Bispos em 17 de setembro de 2010, em substituição a Emmanuel Musaba Kolini, bispo de Kigali.
+sources:
+- source: d2s20-ruanda
+  quote: >-
+    elegeu em sessão dia 17.09 o Revmo. Onesphore Rwafe , Bispo da Diocese de Byumba e Deão Provincial como seu
+    novo Arcebispo Primaz
+- source: d2s20-ruanda
+  quote: >-
+    A Câmara dos Bispos da Igreja Anglicana de Ruanda elegeu em sessão dia 17.09 o Revmo. Onesphore Rwafe
+- source: d2s20-ruanda
+  quote: substituindo o Revmo. Emmanuel Musaba Kolini , Bispo da Diocese de Kigali
+- source: d2s20-ruanda
+  quote: Bispo da Diocese de Byumba e Deão Provincial
+affiliations:
+- jurisdiction: pear
+  role: other
+  role_description: primaz (eleito)
+  status: confirmed
+  sources:
+  - source: d2s20-ruanda
+    quote: >-
+      elegeu em sessão dia 17.09 o Revmo. Onesphore Rwafe , Bispo da Diocese de Byumba e Deão Provincial como seu
+      novo Arcebispo Primaz
+  notes: >-
+    Eleito pela Câmara dos Bispos da Igreja Anglicana de Ruanda em 17/09/2010 para suceder Emmanuel Musaba Kolini;
+    a notícia não informa a data de posse.
+- jurisdiction: pear
+  role: other
+  role_description: bispo diocesano de Byumba e deão provincial
+  diocese: diocese-de-byumba
+  status: confirmed
+  sources:
+  - source: d2s20-ruanda
+    quote: Bispo da Diocese de Byumba e Deão Provincial
+  notes: Em exercício em setembro de 2010.
+events:
+- type: other
+  date: '2010-09-17'
+  description: >-
+    A Câmara dos Bispos da Igreja Anglicana de Ruanda elegeu, em 17/09/2010, o bispo de Byumba e deão provincial
+    Onesphore Rwafe como novo arcebispo primaz, em substituição a Emmanuel Musaba Kolini, bispo de Kigali.
+  status: confirmed
+  sources:
+  - source: d2s20-ruanda
+    quote: >-
+      A Câmara dos Bispos da Igreja Anglicana de Ruanda elegeu em sessão dia 17.09 o Revmo. Onesphore Rwafe
+  - source: d2s20-ruanda
+    quote: substituindo o Revmo. Emmanuel Musaba Kolini , Bispo da Diocese de Kigali

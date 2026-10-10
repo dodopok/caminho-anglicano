@@ -18,10 +18,12 @@ biography: >-
   Eduardo Coelho Grillo nasceu em Porto Alegre em 19/11/1964, em família anglicana. Foi ordenado diácono em 8/1/1989
   por Cláudio Gastal, na Diocese Meridional, e presbítero em 20/8/1989 por Luiz Osório Pires Prado, em Pelotas,
   onde foi ministro encarregado da Paróquia do Divino Semeador por quatro anos. De 1993 a 2001 foi pároco da Paróquia
-  da Ressurreição, em Porto Alegre, e de março de 2001 a setembro de 2017 foi reitor da Paróquia de São Lucas, na
-  Diocese Anglicana do Rio de Janeiro, a convite de Celso Franco de Oliveira. Eleito bispo coadjutor em 2/11/2016,
-  após a renúncia de Filadelfo Oliveira, foi sagrado em 8/4/2017 na Catedral do Redentor, com Francisco de Assis
-  da Silva como sagrante principal, e instituído bispo diocesano em 29/7/2017.
+  da Ressurreição, em Porto Alegre. A convite de Celso Franco de Oliveira, foi reitor da Paróquia de São Lucas,
+  na Diocese Anglicana do Rio de Janeiro, de março de 2001 a setembro de 2017, e em 2004 constava no Comitê Executivo
+  da JUNET. Eleito bispo coadjutor em 2/11/2016, após a renúncia de Filadelfo Oliveira, foi sagrado em 8/4/2017
+  na Catedral do Redentor, com o primaz Francisco de Assis da Silva como sagrante principal, e instituído bispo
+  diocesano em 29/7/2017. Em maio de 2021 esclareceu publicamente que um padre preso em Nova Friburgo (RJ) não pertencia
+  à IEAB.
 sources:
 - source: darj-episcopado
   quote: >-
@@ -53,6 +55,13 @@ sources:
     foi convidado pelo mesmo para substituí-lo como reitor na Paróquia de São Lucas, cargo que ocupou de março de
     2001 a setembro de 2017
   page: '117'
+- source: d2s32-junet-2004
+  quote: um clérigo, Rev. Eduardo Grillo (Diocese Anglicana do Rio de Janeiro)
+- source: costa2021
+  quote: >-
+    Em 02 de novembro de 2016, o reverendo Eduardo Coelho Grillo117 foi eleito bispo coadjutor pelo Concílio extraordinário
+    da DARJ, após a resignação do bispo Filadelfo Oliveira.
+  page: '117'
 - source: darj-episcopado
   quote: >-
     Eduardo foi eleito bispo coadjutor em 02 de novembro de 2016, pelo Concílio extraordinário da Diocese Anglicana
@@ -68,12 +77,17 @@ sources:
     Em 29 de julho de 2017, Eduardo foi instituído bispo diocesano da Diocese Anglicana do Rio de Janeiro, pelo
     Bispo Primaz da IEAB, à época, o Revmo Francisco de Assis da Silva.
 - source: costa2021
-  quote: >-
-    Em 02 de novembro de 2016, o reverendo Eduardo Coelho Grillo117 foi eleito bispo coadjutor pelo Concílio extraordinário
-    da DARJ, após a resignação do bispo Filadelfo Oliveira.
-  page: '117'
-- source: costa2021
   quote: Em 29 de julho de 2017, Eduardo foi instituído como o novo diocesano.
+- source: cant-novas-igrejas-2024
+  quote: >-
+    No dia seguinte, o bispo Eduardo Grillo, da Diocese Anglicana do Rio de Janeiro, veio a público esclarecer
+  page: '89'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    No dia seguinte, o bispo Eduardo Grillo, da Diocese Anglicana do Rio de Janeiro, veio a público esclarecer,
+    tanto para membros da Igreja, de grupos ecumênicos e da sociedade em geral, que o referido sacerdote não fazia
+    parte da Igreja Episcopal Anglicana do Brasil.
+  page: '89'
 ordinations:
 - order: diaconate
   date: '1989-01-08'
@@ -176,7 +190,9 @@ affiliations:
       Em 2000, recebeu um convite do Bispo Celso Franco de Oliveira para se transferir para a Diocese Anglicana
       do Rio de Janeiro e substituí-lo como reitor na Paróquia de São Lucas, o que aconteceu de março de 2001 e
       setembro de 2017.
-  notes: Reitor da Paróquia de São Lucas, sucedendo Celso Franco de Oliveira.
+  - source: d2s32-junet-2004
+    quote: um clérigo, Rev. Eduardo Grillo (Diocese Anglicana do Rio de Janeiro)
+  notes: Reitor da Paróquia de São Lucas, sucedendo Celso Franco de Oliveira. Em exercício em março de 2004.
 - jurisdiction: ieab
   role: clergy
   start: 2001-03
@@ -273,6 +289,16 @@ affiliations:
     quote: o bispo Eduardo Grillo, da Diocese Anglicana do Rio de Janeiro
     page: '89'
   notes: Bispo diocesano em 2021 e na data do livro.
+- jurisdiction: ieab
+  role: other
+  role_description: membro do Comitê Executivo da JUNET
+  status: confirmed
+  sources:
+  - source: d2s32-junet-2004
+    quote: um clérigo, Rev. Eduardo Grillo (Diocese Anglicana do Rio de Janeiro)
+  notes: >-
+    Integrante do Comitê Executivo da Junta Nacional de Educação Teológica (JUNET), criado na reunião de 18 a 21/03/2004,
+    como representante do clero; em exercício em março de 2004.
 events:
 - type: other
   date: '2016-11-02'
@@ -325,3 +351,22 @@ events:
       tanto para membros da Igreja, de grupos ecumênicos e da sociedade em geral, que o referido sacerdote não fazia
       parte da Igreja Episcopal Anglicana do Brasil.
     page: '89'
+- type: other
+  date: '2004-07-15'
+  description: >-
+    I Simpósio de Teologia Anglicana (julho de 2004), sobre o conceito de Inclusividade: em 15/07/2004 foi prestada
+    homenagem ao Rev. Dr. Jaci Maraschin pelos 50 anos de ministério ordenado; em 16/07/2004 a Comissão de Sistematização
+    (revs. Ramacés Hartwig, Elias Vergara e Jorge Aquino, com a inclusão de Eduardo Grillo e Gustavo Gilson) apresentou
+    a versão inicial do documento final, e o Primaz concedeu entrevista a emissora de TV local.
+  status: confirmed
+  sources:
+  - source: d2s32-simposio
+    quote: >-
+      As atividades do dia encerraram com uma homenagem ao Rev. Dr. Jaci Maraschin, por ocasião dos seus 50 anos
+      de ministério ordenado.
+  - source: d2s32-simposio
+    quote: a Comissão de Sistematização, formada pelos reverendos Ramacés Hartwig, Elias Vergara e Jorge Aquino
+  - source: d2s32-simposio
+    quote: >-
+      decidiu-se pela inclusão de mais dois integrantes, Rev. Eduardo Grillo e Rev. Gustavo Gilson, para auxiliar
+      no trabalho de redação

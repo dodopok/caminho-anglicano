@@ -1,7 +1,120 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: miguel-tamayo
 name: Miguel Tamayo
-biography: Bispo do Uruguai; presente na sagracao de Francisco de Assis da Silva (2011).
+biography: >-
+  Miguel Tamayo, bispo de nacionalidade cubana, era bispo diocesano do Uruguai, diocese da Igreja Anglicana do Cone
+  Sul desde 1988. Presidiu o Sínodo Extraordinário de Montevidéu, de 12 de novembro de 2010, que decidiu por maioria
+  simples desvincular a igreja do Cone Sul e transferi-la para outra província da Comunhão Anglicana. Em 20 de março
+  de 2011 foi co-sagrante de Francisco de Assis da Silva.
 sources:
+- source: d2s19-uruguai
+  quote: sob a presidência do Bispo Miguel Tamayo (de nacionalidade cubana)
+- source: d2s19-uruguai
+  quote: >-
+    a Igreja Anglicana do Uruguai, em um Sínodo Extraordinário reunido na cidade de Montevidéu, em 12.11.2010, sob
+    a presidência do Bispo Miguel Tamayo (de nacionalidade cubana), deliberou, por maioria simples dos clérigos
+    e leigos, se desvincular da Igreja Anglicana do Cone Sul da
+- source: d2s19-uruguai
+  quote: >-
+    América (da qual era uma Diocese desde a fundação em 1988) e se transferir para uma outra Província da Comunhão
+    Anglicana.
+- source: d2s19-uruguai
+  quote: >-
+    O Uruguai demanda a anuência e o apoio do Cone Sul para se transferir para outra Província dentro de um ano.
 - source: costa2021
   quote: Miguél Tamayo, da Diocese do Uruguai
+- source: costa2021
+  quote: >-
+    O ofício de sagração ocorreu no dia 20 de março de 2011, na Catedral do Mediador, em Santa Maria, com a presença
+    de todos os bispos em atividade no Brasil e outros convidados111.
+affiliations:
+- jurisdiction: diocese-do-uruguai
+  role: diocesan_bishop
+  status: confirmed
+  sources:
+  - source: d2s18-home-p18-2010
+    quote: sob a presidência do Bispo Miguel Tamayo (de nacionalidade cubana)
+  notes: Presidia o Sínodo Extraordinário do Uruguai em 12/11/2010; a matéria o descreve como cubano.
+- jurisdiction: diocese-do-uruguai
+  role: bishop
+  status: confirmed
+  sources:
+  - source: d2s19-uruguai
+    quote: >-
+      a Igreja Anglicana do Uruguai, em um Sínodo Extraordinário reunido na cidade de Montevidéu, em 12.11.2010,
+      sob a presidência do Bispo Miguel Tamayo (de nacionalidade cubana), deliberou, por maioria simples dos clérigos
+      e leigos, se desvincular da Igreja Anglicana do Cone Sul da
+  notes: >-
+    Local: Igreja Anglicana do Uruguai. Matéria de 15/11/2010, que reproduz o ACNS: presidiu o Sínodo Extraordinário
+    de 12/11/2010; o texto o diz de nacionalidade cubana e de linha "católico-liberal". Em exercício em nov/2010.
+- jurisdiction: iacs
+  role: other
+  role_description: bispo diocesano do Uruguai
+  diocese: diocese-do-uruguai
+  status: confirmed
+  sources:
+  - source: d2s20-uruguai
+    quote: sob a presidência do Bispo Miguel Tamayo (de nacionalidade cubana)
+  notes: >-
+    Em exercício em 12/11/2010, ao presidir o Sínodo Extraordinário da Igreja Anglicana do Uruguai, então diocese
+    do Cone Sul. A notícia o apresenta como "Bispo do Uruguai".
+events:
+- type: other
+  date: '2010-11-12'
+  description: >-
+    Em 12/11/2010 a Igreja Anglicana do Uruguai, em Sínodo Extraordinário em Montevidéu sob a presidência do bispo
+    Miguel Tamayo, delibera por maioria simples de clérigos e leigos se desvincular da Igreja Anglicana do Cone
+    Sul e se transferir para outra Província da Comunhão Anglicana; pede a anuência do Cone Sul em até um ano ou,
+    do contrário, uma Supervisão Primacial Alternativa. A decisão veio uma semana depois de o Sínodo Provincial
+    do Cone Sul rejeitar a moção que permitia a 'solução local' (diocesana) para a ordenação feminina.
+  status: confirmed
+  sources:
+  - source: d2s18-home-p18-2010
+    quote: >-
+      em um Sínodo Extraordinário reunido na cidade de Montevidéu, em 12.11.2010, sob a presidência do Bispo Miguel
+      Tamayo (de nacionalidade cubana)
+  - source: d2s18-home-p18-2010
+    quote: se desvincular da Igreja Anglicana do Cone Sul da América
+  - source: d2s18-home-p18-2010
+    quote: irá pedir à Comunhão Anglicana uma Supervisão Primacial Alternativa
+  - source: d2s18-home-p18-2010
+    quote: >-
+      A decisão do Uruguai foi tomada uma semana após o Sínodo Provincial do Cone Sul ter derrotado a moção
+- type: other
+  date: '2010-11-12'
+  description: >-
+    Sínodo Extraordinário da Igreja Anglicana do Uruguai (Montevidéu), presidido pelo bispo Miguel Tamayo, delibera
+    por maioria simples de clérigos e leigos desvincular-se da Igreja Anglicana do Cone Sul (da qual era diocese
+    desde 1988) e transferir-se para outra província da Comunhão Anglicana; a decisão foi comunicada ao primaz e
+    aos bispos do Cone Sul e, sem a anuência do Cone Sul em um ano, o Uruguai pediria supervisão primacial alternativa
+    à Comunhão Anglicana
+  status: confirmed
+  sources:
+  - source: d2s19-uruguai
+    quote: >-
+      a Igreja Anglicana do Uruguai, em um Sínodo Extraordinário reunido na cidade de Montevidéu, em 12.11.2010,
+      sob a presidência do Bispo Miguel Tamayo (de nacionalidade cubana), deliberou, por maioria simples dos clérigos
+      e leigos, se desvincular da Igreja Anglicana do Cone Sul da
+  - source: d2s19-uruguai
+    quote: >-
+      América (da qual era uma Diocese desde a fundação em 1988) e se transferir para uma outra Província da Comunhão
+      Anglicana.
+  - source: d2s19-uruguai
+    quote: >-
+      O Uruguai demanda a anuência e o apoio do Cone Sul para se transferir para outra Província dentro de um ano.
+- type: other
+  date: '2010-11-12'
+  description: >-
+    Em Sínodo Extraordinário reunido em Montevidéu em 12/11/2010, sob a presidência do bispo Miguel Tamayo, a Igreja
+    Anglicana do Uruguai deliberou por maioria simples de clérigos e leigos desvincular-se da Igreja Anglicana do
+    Cone Sul, da qual era diocese desde a fundação em 1988, e transferir-se para outra província da Comunhão Anglicana,
+    pedindo a anuência do Cone Sul em até um ano ou, na falta dela, supervisão primacial alternativa. A decisão
+    veio uma semana depois de o Sínodo do Cone Sul rejeitar a solução local para a ordenação feminina.
+  status: confirmed
+  sources:
+  - source: d2s20-uruguai
+    quote: >-
+      deliberou, por maioria simples dos clérigos e leigos, se desvincular da Igreja Anglicana do Cone Sul da América
+      (da qual era uma Diocese desde a fundação em 1988) e se transferir para uma outra Província da Comunhão Anglicana
+  - source: d2s20-uruguai
+    quote: sob a presidência do Bispo Miguel Tamayo (de nacionalidade cubana)

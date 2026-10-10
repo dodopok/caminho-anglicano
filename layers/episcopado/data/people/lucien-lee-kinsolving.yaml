@@ -54,18 +54,21 @@ death:
     page: '62'
 wikidata: Q22018805
 biography: >-
-  Lucien Lee Kinsolving (1862-1929) foi ordenado diácono em 29/06/1889 e presbítero em 04/08/1889 por Francis McNeece
-  Whittle, na Igreja Episcopal dos EUA, e partiu para o Brasil com James Watson Morris em setembro de 1889. Os dois
-  estudaram português por seis meses no interior paulista, chegaram a Porto Alegre em 21/04/1890 e realizaram ali
-  o primeiro culto anglicano em português, no Domingo da Trindade de 1890. Foi reitor da Igreja do Salvador (Church
-  of Our Saviour). Em 30/05/1898 a convocação de Porto Alegre o elegeu bispo, eleição confirmada pela Câmara dos
-  Bispos em outubro de 1898, e em 06/01/1899 foi sagrado em Nova York, tendo Thomas Underwood Dudley como sagrante
-  principal, primeiro bispo da Igreja Episcopal para o Brasil. Em 13/06/1903 foi inaugurado o Seminário Teológico,
-  em Rio Grande, e a Convenção Geral estabeleceu o distrito missionário do Brasil (1905 ou 1907, conforme a fonte),
-  tendo-o como bispo. Aposentou-se por volta de 1928 (outra fonte indica 1927), sucedido por William M. M. Thomas,
-  e morreu em 18/12/1929, em Forest Hills (Nova York). Participou de 20 ordenações de diáconos ou presbíteros e
-  de uma sagração episcopal, a de William M. M. Thomas (1925).
+  Lucien Lee Kinsolving nasceu em 14/05/1862, em Middleburg, Virgínia, e foi ordenado diácono em 29/06/1889 e presbítero
+  em 04/08/1889 por Francis McNeece Whittle, bispo da Virgínia, na Igreja Episcopal dos EUA. Em 01/09/1889 partiu
+  para o Brasil com James Watson Morris, colega do Seminário da Virgínia; estudaram português por seis meses em
+  um vilarejo do interior paulista, chegaram a Porto Alegre em 21/04/1890 e realizaram ali o primeiro culto anglicano
+  em português, no Domingo da Trindade de 1890. Foi reitor da Igreja do Salvador (Church of Our Saviour), no Rio
+  Grande do Sul. Eleito em 30/05/1898 pela convocação de Porto Alegre, foi confirmado pela Câmara dos Bispos em
+  outubro de 1898 e sagrado em 06/01/1899, em Nova York, tendo Thomas Underwood Dudley como sagrante principal,
+  primeiro bispo da Igreja Episcopal para o Brasil. Em 13/06/1903 foi inaugurado o Seminário Teológico, em Rio Grande,
+  e a Convenção Geral estabeleceu o distrito missionário do Brasil (1905 ou 1907, conforme a fonte), tendo-o como
+  bispo; em 1913 dividiu o distrito em três arcediagados. Foi co-sagrante de William M. M. Thomas em 1925. Aposentou-se
+  em 1928 (outra fonte indica 1927), sucedido por Thomas, e morreu em 18/12/1929, em Forest Hills (Nova York).
 sources:
+- source: liv-stokes-kinsolving
+  quote: Lucien was born on May 14, 1862, at the rectory at Middleburg, Virginia
+  page: '7'
 - source: wp-en-kinsolving
   quote: >-
     Virginia's bishop, Francis McNeece Whittle, ordained Kinsolving and fellow Virginia Seminary graduate James
@@ -134,10 +137,14 @@ sources:
   page: '16'
 - source: drv-kinsolving-ivo
   quote: Esse arranjo efetuou-se em 1º de Janeiro de 1905.
-- source: drv-kinsolving-ivo
+- source: d2s27-sinopse
+  quote: Divide o Distrito Missionário em três arcediagados (Rio de Janeiro, Porto Alegre e Rio Grande).
+- source: lc-1926-01-09
   quote: >-
-    a Convenção Geral criou um distrito missionário no Brasil Meridional, e designou o mesmo Revmo. Kinsolving como
-    seu primeiro Bispo
+    Monday December 28, 1925, in St. Paul's Church, Baltimore, the Rev. William Matthew's Merrick Thomas, D.D.,
+    was consecrated a Bishop in the Church of God, by the Most Rey. Ethelbert Talbot, D.D., LL.D., Bishop of Bethlehem
+    and Presiding Bishop of the American Church, assisted by the Rt. Rev. Drs. Joseph Blount Cheshire, Bishop of
+    North Carolina, and Lucien Lee Kinsolving, Bishop of South- ern Brazil.
 - source: wit-1952-03-20
   quote: >-
     Bishop Kinsolving retired in 1928 and was succeeded by Bishop William M. M. Thomas who had come out to Brazil
@@ -147,29 +154,6 @@ sources:
   page: '62'
 - source: drv-kinsolving-ivo
   quote: A 18 de Dezembro de 1929, em Forest Hills, passou dos trabalhos da terra
-- source: wp-en-kinsolving
-  quote: >-
-    Lucien Lee Kinsolving (May 14, 1862 – December 18, 1929) was first bishop of the missionary diocese that eventually
-    became the Anglican Episcopal Church of Brazil.
-- source: liv-stokes-kinsolving
-  quote: In 1928 his health failed. He retired to live on Long Island
-  page: '19'
-- source: wp-en-kinsolving
-  quote: The young Americans arrived at Porto Alegre on April 21, 1890, accompanied by four Brazilians
-- source: kickhofel
-  quote: >-
-    Assunto: eleição de Kinsolving. A eleição dos brasileiros era apenas um indicação. Kinsolving foi oficialmente
-    eleito pela igreja americana.
-- source: som-1926-01
-  quote: >-
-    The Right Rev. William M. M. Thomas, Suffragan for Southern Brazil, was consecrated on Holy Innocents Day in
-    St. Paul's Church, Baltimore, by Bishops. Talbot, Kinsolving and Che­ shire.
-- source: lc-1926-01-09
-  quote: >-
-    Monday December 28, 1925, in St. Paul's Church, Baltimore, the Rev. William Matthew's Merrick Thomas, D.D.,
-    was consecrated a Bishop in the Church of God, by the Most Rey. Ethelbert Talbot, D.D., LL.D., Bishop of Bethlehem
-    and Presiding Bishop of the American Church, assisted by the Rt. Rev. Drs. Joseph Blount Cheshire, Bishop of
-    North Carolina, and Lucien Lee Kinsolving, Bishop of South- ern Brazil.
 ordinations:
 - order: diaconate
   date: '1889-06-29'
@@ -729,3 +713,25 @@ events:
       Alegre em uma Convocação extraordinária e elegeram Lucien Lee Kinsolving para ser o primeiro bispo da Missão
       da Igreja Episcopal no Brasil43.
     page: '55'
+- type: other
+  date: 1890-06
+  description: >-
+    Em junho de 2010 a Diocese do Recife comemorou 200 anos da abertura das primeiras capelanias inglesas no Brasil
+    (1810) e 120 anos do primeiro culto anglicano em português para brasileiros, celebrado em Porto Alegre no primeiro
+    domingo de junho de 1890 pelos missionários Lucien Lee Kinsolving e James Watson Morris; a diocese se apresenta
+    como "herdeira de Kinsolving".
+  status: confirmed
+  sources:
+  - source: d2s21-kinsolving-2010
+    quote: >-
+      No primeiro domingo de junho de 1890, os missionários pioneiros Lucien Lee Kinsolving (que viria a ser o primeiro
+      Bispo) e James Watson Morris
+- type: other
+  date: '1913'
+  description: >-
+    Em 1913 o bispo missionário Lucien Lee Kinsolving divide o Distrito Missionário em três arcediagados (Rio de
+    Janeiro, Porto Alegre e Rio Grande).
+  status: probable
+  sources:
+  - source: d2s27-sinopse
+    quote: Divide o Distrito Missionário em três arcediagados (Rio de Janeiro, Porto Alegre e Rio Grande).

@@ -1,10 +1,36 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: elton-roney
 name: Elton Roney
+full_name: Elton Roney Carvalho
+aliases:
+- Elton Carvalho
+- Elton Roney Carvalho
 biography: >-
-  Foi ordenado diácono em 1/5/2013 por Miguel Uchôa, na Diocese Anglicana do Recife, após constar como postulante
-  e ministro local.
+  Elton Roney (Carvalho) está na Diocese Anglicana do Recife desde 2005 e foi seminarista do Seminário Anglicano
+  Teológico da Paraíba (SAT-PB) e postulante. Em 15/12/2010, na Concatedral da Ressurreição, em João Pessoa, foi
+  instituído ministro local pelo bispo Robinson Cavalcanti, e em 2011 constava como coordenador pedagógico do SAT-PB.
+  Integrou a equipe pastoral da Paróquia Anglicana Comunhão, no Arcediagado Paraíba. Foi ordenado diácono em 1/5/2013
+  por Miguel Uchôa, em culto com outros três novos diáconos da diocese.
 sources:
+- source: d2s17-elton-33
+  quote: Estou nessa Diocese desde 2005
+- source: d2s17-elton-33
+  quote: é Postulante e, também, Seminarista do SAT-PB
+- source: d2s08-elton-neopent
+  quote: >-
+    Elton Roney Carvalho é Seminarista da Diocese do Recife, aluno do Seminário Anglicano Teológico – SAT-PB; participa
+    ativamente do Arcediagado Paraíba.
+- source: d2s20-elton
+  quote: o Bispo Instituiu Elton Roney ao Ministério Local
+- source: d2s20-elton
+  quote: >-
+    Além do Rito de Confirmações, no Culto festivo Eucarístico, o Bispo Instituiu Elton Roney ao Ministério Local.
+- source: d2s20-cargos2011
+  quote: '2. Coordenador Pedagógico: Elton Roney'
+- source: d2s22-cargos2011
+  quote: '2. Coordenador Pedagógico: Elton Roney'
+- source: d2s17-elton-33
+  quote: faz parte da Equipe Pastoral da Paróquia Anglicana Comunhão, no Arcediagado Paraíba
 - source: dar-2013-ordenacoes-1maio
   quote: >-
     deu-se inicio o Culto de ordenação dos novos 04 Diáconos de nossa Diocese, por ordem: Rev. Elton Roney, Revda.
@@ -13,8 +39,6 @@ sources:
   quote: o culto de ordenação Presidido pelo nosso Bispo Diocesano
 - source: dar-2013-ordenacoes-1maio
   quote: sermão proferido pelo Nosso Bispo Diocesano, Revmo. Miguel Uchoa
-- source: dard1-com-pbrnce-2009a
-  quote: 'Ministro Local: Post. Elton Roney'
 ordinations:
 - order: diaconate
   date: '2013-05-01'
@@ -37,6 +61,22 @@ ordinations:
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: other
+  role_description: ministro local
+  start: '2010-12-15'
+  status: confirmed
+  sources:
+  - source: d2s20-elton
+    quote: o Bispo Instituiu Elton Roney ao Ministério Local
+  - source: d2s20-elton
+    quote: >-
+      Além do Rito de Confirmações, no Culto festivo Eucarístico, o Bispo Instituiu Elton Roney ao Ministério Local.
+  notes: >-
+    Instituído ao Ministério Local pelo bispo Robinson Cavalcanti em 15/12/2010, na Concatedral Anglicana da Ressurreição
+    (João Pessoa-PB), durante confirmações conjuntas no Arcediagado PB/RN. Local: Concatedral Anglicana da Ressurreição
+    (João Pessoa). Instituído ao Ministério Local pelo bispo Robinson Cavalcanti durante o culto unificado de confirmações
+    de 15/12/2010, na Concatedral Anglicana da Ressurreição (com as paróquias Cristo Libertador e Comunhão).
+- jurisdiction: diocese-anglicana-recife
+  role: other
   role_description: ministro_local
   status: confirmed
   sources:
@@ -45,3 +85,70 @@ affiliations:
   notes: >-
     Local: Paróquia Anglicana Cristo Libertador (João Pessoa). Consta na página de comunidades do Arcediagado PB/RN/CE
     capturada em 03/01/2009 (sem data de publicação visível). Consta como postulante ("Post.").
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: seminarista
+  status: confirmed
+  sources:
+  - source: d2s08-elton-neopent
+    quote: >-
+      Elton Roney Carvalho é Seminarista da Diocese do Recife, aluno do Seminário Anglicano Teológico – SAT-PB;
+      participa ativamente do Arcediagado Paraíba.
+  notes: >-
+    Local: Arcediagado Paraíba (SAT-PB). Descrito como seminarista da Diocese do Recife, aluno do SAT-PB, ativo
+    no Arcediagado Paraíba, em artigo escrito em maio de 2008.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: postulante
+  status: confirmed
+  sources:
+  - source: d2s17-elton-33
+    quote: é Postulante e, também, Seminarista do SAT-PB
+  notes: >-
+    Local: Paróquia Anglicana Comunhão (João Pessoa-PB; Arcediagado Paraíba). Apresentado em 01/07/2009 como postulante
+    e seminarista do SAT-PB (Seminário Anglicano Teológico), membro da equipe pastoral da Paróquia Anglicana Comunhão.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: equipe pastoral
+  status: confirmed
+  sources:
+  - source: d2s17-elton-33
+    quote: faz parte da Equipe Pastoral da Paróquia Anglicana Comunhão, no Arcediagado Paraíba
+  notes: 'Local: Paróquia Anglicana Comunhão (João Pessoa-PB; Arcediagado Paraíba). Em 01/07/2009.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coordenador pedagógico do Seminário Anglicano Teológico da Paraíba (SAT-PB)
+  status: confirmed
+  sources:
+  - source: d2s20-cargos2011
+    quote: '2. Coordenador Pedagógico: Elton Roney'
+  notes: >-
+    Local: SAT-PB. Cargo para 2011 constante da relação de cargos diocesanos publicada em 10/12/2010 (captura de
+    dez/2010), após o XXX Concílio Diocesano. A relação não traz título de clero para o nome.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coordenador pedagógico do SAT-PB
+  status: confirmed
+  sources:
+  - source: d2s22-cargos2011
+    quote: '2. Coordenador Pedagógico: Elton Roney'
+  notes: >-
+    Local: Seminário Anglicano Teológico da Paraíba (SAT-PB). Cargo constante da Relação dos Cargos Diocesanos 2011,
+    publicada em 10/12/2010 (captura de 28/12/2010); designação para o exercício de 2011. O texto não traz título
+    (Rev./ML.) antes do nome.
+events:
+- type: other
+  date: '2010-12-15'
+  description: >-
+    Em 15/12/2010, na Concatedral Anglicana da Ressurreição (João Pessoa-PB), o bispo Robinson Cavalcanti confirmou
+    43 novos membros num culto unificado das comunidades Concatedral da Ressurreição, Cristo Libertador e Comunhão,
+    e instituiu Elton Roney ao Ministério Local.
+  status: confirmed
+  sources:
+  - source: d2s20-elton
+    quote: >-
+      o Bispo Robinson Cavalcanti confirmou hoje (quarta-feira), 15.12, no Arcediagado PB/RN, 43 (quarenta e três)
+      novos membros
+  - source: d2s20-elton
+    quote: >-
+      Além do Rito de Confirmações, no Culto festivo Eucarístico, o Bispo Instituiu Elton Roney ao Ministério Local.

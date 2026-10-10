@@ -1,11 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: flavio-conti
 name: Flávio Conti
-biography: Reverendo da Igreja Anglicana Ortodoxa do Brasil, signatário da Declaração da Boa Viagem (2006).
+biography: >-
+  Reverendo da Igreja Anglicana Ortodoxa do Brasil (IAOB), signatário da Declaração da Boa Viagem em 2006, na qual
+  figura como cooperador fraterno.
 sources:
 - source: cant-novas-igrejas-2024
   quote: pelos reverendos Hermany Soares, Adriano Oliveira, Flávio Conti e Virgílio Torres
   page: '118'
+- source: cant-novas-igrejas-2024
+  quote: >-
+    a Igreja Anglicana Ortodoxa do Brasil (IAOB), pelos reverendos Hermany Soares, Adriano Oliveira, Flávio Conti
+    e Virgílio Torres
+  page: '118'
+- source: darl3-cc-boaviagem
+  quote: 'Reverendos: Flávio Conti e Virgílio Torres (cooperadores fraternos)'
 affiliations:
 - jurisdiction: iaob
   role: clergy
@@ -18,3 +27,15 @@ affiliations:
       e Virgílio Torres
     page: '118'
   notes: Reverendo signatário da Declaração da Boa Viagem (2006) pela IAOB.
+- jurisdiction: iaob
+  role: other
+  role_description: cooperador fraterno
+  start: '2006-09-30'
+  status: confirmed
+  sources:
+  - source: darl3-cc-boaviagem
+    quote: 'Reverendos: Flávio Conti e Virgílio Torres (cooperadores fraternos)'
+  notes: >-
+    Signatário, em 30/09/2006, da Declaração da Boa Viagem, que criou o Movimento Anglicano Por Uma Causa Comum;
+    a notícia lista a jurisdição como 'Igreja Anglicana Ortodoxa – IAO (Comunhão Anglicana Ortodoxa)'. Data = a
+    da assinatura; início e fim do vínculo não informados. Citado como cooperador fraterno, não como dirigente.

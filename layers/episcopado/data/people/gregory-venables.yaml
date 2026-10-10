@@ -16,18 +16,19 @@ birth:
       of that year.
 wikidata: Q5607196
 biography: >-
-  Gregory Venables foi sagrado bispo em novembro de 1993, como bispo auxiliar do Peru e Bolívia, e é primaz da Igreja
-  Anglicana do Cone Sul da América; uma fonte o indica também como primeiro bispo da Bolívia, em 1995. Em 23 de
-  setembro de 2005 aceitou o pedido de supervisão primacial de Robinson Cavalcanti, reconhecendo as ordens do bispo
-  e do clero que haviam deixado a Diocese Anglicana do Recife e passando a exercer jurisdição extraprovincial sobre
-  eles; em 12 de outubro de 2005 o primaz da IEAB, Orlando Santos de Oliveira, protestou por carta contra essa acolhida.
-  No mesmo mês, 40 clérigos do Recife lhe agradeceram por carta, e o encontro Sul-Sul no Egito apoiou sua ação.
-  Em maio de 2006 foi representado pelo bispo Donald Harvey nos 30 anos da diocese e, em dezembro, enviou mensagem
-  ao XXVI Concílio. O XXVII Sínodo do Recife aprovou, em julho de 2007, a filiação ao Cone Sul como diocese extraterritorial,
-  e o Sínodo do Cone Sul recomendou, em novembro, a recepção permanente da diocese. Visitou o Recife de 27 de março
-  a 1º de abril de 2008, e a Câmara dos Bispos da IEAB repudiou a visita. Em 2009, na fundação da ACNA, foi anunciada
-  a passagem das comunidades sob sua autoridade à supervisão da ACNA. Em abril de 2010 foi eleito presidente do
-  Conselho dos Primazes do GAFCON/FCA.
+  Gregory Venables foi sagrado bispo em novembro de 1993, como bispo auxiliar do Peru e Bolívia; uma fonte o indica
+  também como primeiro bispo da Bolívia, em 1995. Foi primaz da Igreja Anglicana do Cone Sul da América, cargo registrado
+  até novembro de 2010, e consta como bispo da Diocese da Argentina, acumulando provisoriamente a do Norte da Argentina.
+  Em 23 de setembro de 2005 aceitou o pedido de supervisão primacial de Robinson Cavalcanti, reconhecendo as ordens
+  do bispo e do clero que haviam deixado a Diocese Anglicana do Recife e exercendo jurisdição extraprovincial sobre
+  eles; em 12 de outubro o primaz da IEAB, Orlando Santos de Oliveira, protestou por carta, enquanto 40 clérigos
+  do Recife lhe agradeceram e o encontro Sul-Sul, no Egito, apoiou sua ação. Em 2006 foi representado pelo bispo
+  Donald Harvey nos 30 anos da diocese e enviou mensagem ao XXVI Concílio. Em julho de 2007 o XXVII Sínodo do Recife
+  aprovou a filiação ao Cone Sul como diocese extraterritorial, e em novembro o Sínodo do Cone Sul recomendou a
+  recepção permanente. Visitou o Recife de 27 de março a 1º de abril de 2008, e a Câmara dos Bispos da IEAB repudiou
+  a visita. Em 2009, na fundação da ACNA, foi anunciada a passagem das comunidades sob sua autoridade à supervisão
+  da ACNA, e em abril de 2010 foi eleito presidente do Conselho dos Primazes do GAFCON/FCA. Sagrou um bispo, Enrique
+  Lago Zugadi, em 2018.
 sources:
 - source: ink-venables-2016
   quote: >-
@@ -89,6 +90,13 @@ sources:
 - source: darn2-fca-venables-2010
   quote: >-
     O Conselho dos Primazes elegeu como seu novo Presidente o Primaz da Igreja do Cone Sul Gregory J. Venables
+- source: d2s20-cone-sul-primaz
+  quote: >-
+    continuará como Bispo da Diocese da Argentina, acumulando, provisoriamente, a Diocese do Norte da Argentina
+- source: gacl-stpaul-valpo-2018
+  quote: >-
+    The present Presiding bishop of the Province of the Southern Cone The Revmo. Gregory Venables will be with us
+    for the Service of celebration and thanksgiving
 ordinations:
 - order: episcopate
   date: 1993-11
@@ -137,9 +145,27 @@ affiliations:
     quote: >-
       In his message to Bishop Robinson Cavalcanti, the clergy and the people of the Diocese of Recife, the Primate
       of the Southern Cone commended the diocese
+  - source: d2s14-dia-episcopado-2007
+    quote: por nosso Primaz Gregory J. Venables
+  - source: d2s20-cone-sul-primaz
+    quote: O ex-Primaz, Revmo. Gregory Venables
   notes: >-
     Primaz citado em referência a 2009. Primaz do Cone Sul em 2005. Primaz do Cone Sul em julho de 2007, em mensagem
-    à Diocese do Recife.
+    à Diocese do Recife. Em mensagem de 30/03/2007, o bispo do Recife designa Gregory Venables como "nosso Primaz".
+    O Sínodo Provincial de 01 a 05/11/2010 elegeu Héctor (Tito) Zavala como novo primaz; a notícia chama Venables
+    de "ex-Primaz".
+  end: 2010-11
+  end_reason: term_end
+- jurisdiction: iacs
+  role: other
+  role_description: bispo diocesano da Diocese da Argentina (com a Diocese do Norte da Argentina provisoriamente)
+  diocese: diocese-da-argentina
+  status: confirmed
+  sources:
+  - source: d2s20-cone-sul-primaz
+    quote: >-
+      continuará como Bispo da Diocese da Argentina, acumulando, provisoriamente, a Diocese do Norte da Argentina
+  notes: Em exercício em novembro de 2010, após deixar o cargo de primaz.
 events:
 - type: other
   date: '2008-04-03'
@@ -583,3 +609,41 @@ events:
     quote: >-
       recebeu residência canônica e reconhecimento de ordem e ministério pelo Primaz da Igreja Anglicana do Cone
       Sul da América, Revmo. Gregory J. Venables
+- type: other
+  date: '2005-09-24'
+  description: >-
+    Bill Attwood entrega à Diocese do Recife, em 24/09/2005, certificados assinados pelo primaz do Cone Sul, Gregory
+    Venables, reconhecendo as ordens e ministérios do bispo, dos presbíteros e dos diáconos da diocese.
+  status: confirmed
+  sources:
+  - source: d2s08-amaz-episc2
+    quote: >-
+      Na noite do dia 24 de Setembro de 2005, a Diocese do Recife recebia a visita do Rev. Côn. Dr. Bill Attwood
+      que trazia na sua pasta os Certificados assinados por Dom Gregório Venables
+- type: other
+  date: '2008-04-04'
+  description: >-
+    Culto do Dia do Episcopado na Paróquia Anglicana Jardim das Oliveiras (Recife), com a presença do bispo diocesano
+    Robinson Cavalcanti e do primaz do Cone Sul, Gregory Venables, segundo o pároco Maurício Amazonas.
+  status: probable
+  sources:
+  - source: d2s08-amaz-episc2
+    quote: >-
+      Nossa Paróquia tem hoje a honra de contar com as presenças do nosso Bispo Diocesano e do nosso Bispo Primaz.
+  - source: d2s08-amaz-episc2
+    quote: Vamos receber, com alegria, os nossos Bispos, nesta noite de festa.
+- type: other
+  date: 2010-10
+  description: >-
+    Em outubro de 2010, três clérigos da Diocese do Recife (Geison Vasconcellos, presidente do Conselho Diocesano;
+    Maurício Amazonas, vigário-geral; e Maurício Coelho, arcediago) participaram em Assunção, no Paraguai, da consulta
+    "Crescendo Juntos", com delegações de outras dioceses da Igreja Anglicana do Cone Sul, representantes da CMS/SAMS
+    e do SOMA e o primaz Gregory Venables.
+  status: confirmed
+  sources:
+  - source: d2s20-paraguai
+    quote: >-
+      estiveram, na semana passada, presentes em Assunção, no Paraguai, onde participaram da Consulta “Crescendo
+      Juntos” , ao lado de outras delegações de Dioceses da Igreja Anglicana do Cone Sul da América
+  - source: d2s20-paraguai
+    quote: Dentre os participantes estava o Primaz Revmo. Gregory Venables

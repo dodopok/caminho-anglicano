@@ -1,3 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: katharine-jefferts-schori
 name: Katharine Jefferts Schori
+events:
+- type: other
+  date: 2010-10
+  description: >-
+    Em outubro de 2010 o arcebispo de Cantuária Rowan Williams convocou o Encontro dos Primazes das 38 províncias
+    da Comunhão Anglicana para 25 a 31/01/2011, em Dublin (Irlanda); os primazes do Movimento Sul-Global deviam
+    decidir se compareceriam, em razão do convite à primaz da Igreja Episcopal dos Estados Unidos, Katharine Jefferts
+    Schori.
+  status: confirmed
+  sources:
+  - source: d2s20-primazes
+    quote: >-
+      O Arcebispo de Cantuária Rowan Williams convocou o próximo Encontro dos Primazes das 38 Províncias da Comunhão
+      Anglicana para os dias 25 a 31 de janeiro de 2011
+  - source: d2s20-primazes
+    quote: >-
+      os Primazes do Movimento Sul-Global irão se reunir no próximo mês para decidir se comparecerão ou não ao Encontro

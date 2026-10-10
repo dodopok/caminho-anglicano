@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: patrick-harris
+name: Patrick Harris
+biography: >-
+  Bispo da Igreja da Inglaterra que foi um dos enviados especiais do arcebispo de Cantuária, Rowan Williams, ao
+  Brasil para estudar o conflito entre a IEAB e a Diocese do Recife, segundo o site da diocese.
+sources:
+- source: d2s21-patrick-harris
+  quote: O Bispo da Igreja da Inglaterra, Revmo. Patrick Harris
+- source: d2s21-patrick-harris
+  quote: >-
+    que foi um dos “enviados especiais” do Arcebispo de Cantuária Rowan Williams ao Brasil, para estudar in loco
+    o conflito da Província (IEAB) contra a Diocese do Recife, ouvindo todas as partes (e cujo relatório nunca foi
+    divulgado pelo Palácio de Lambeth)
+affiliations:
+- jurisdiction: church-of-england
+  role: bishop
+  status: probable
+  sources:
+  - source: d2s21-patrick-harris
+    quote: O Bispo da Igreja da Inglaterra, Revmo. Patrick Harris
+  notes: A página de 22/05/2011 o chama de "Bispo da Igreja da Inglaterra"; não informa a diocese.
+events:
+- type: other
+  date: 2011-05
+  description: >-
+    Segundo o site da Diocese do Recife, o bispo Patrick Harris, da Igreja da Inglaterra, foi um dos enviados especiais
+    do arcebispo de Cantuária, Rowan Williams, ao Brasil para estudar no local o conflito da Província (IEAB) com
+    a Diocese do Recife, ouvindo todas as partes; segundo a mesma fonte, o relatório nunca foi divulgado pelo Palácio
+    de Lambeth. Em 22/05/2011 ele enviou ao bispo Robinson Cavalcanti uma mensagem de congratulações pelo 35º aniversário
+    da diocese.
+  status: probable
+  sources:
+  - source: d2s21-patrick-harris
+    quote: >-
+      que foi um dos “enviados especiais” do Arcebispo de Cantuária Rowan Williams ao Brasil, para estudar in loco
+      o conflito da Província (IEAB) contra a Diocese do Recife, ouvindo todas as partes (e cujo relatório nunca
+      foi divulgado pelo Palácio de Lambeth)

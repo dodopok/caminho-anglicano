@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jose-fabio-virginio-correia
+name: José Fábio Virgínio Correia
+biography: >-
+  Candidato às Sagradas Ordens, foi anunciado para ordenação ao diaconato em 16 de maio de 2015, em Gravatá (PE),
+  na Diocese Anglicana do Recife.
+sources:
+- source: d2s22-gravata-2015
+  quote: >-
+    Na ocasião também acontece a Ordenação ao Diaconato do candidato às Sagradas Ordens, José Fábio Virgínio Correia
+- source: d2s22-gravata-2015
+  quote: A abertura acontece no próximo dia 16 de maio às 20 horas
+ordinations:
+- order: diaconate
+  date: '2015-05-16'
+  place: Paróquia Anglicana Cristo Redentor, Gravatá (PE)
+  jurisdiction: diocese-anglicana-recife
+  status: probable
+  sources:
+  - source: d2s22-gravata-2015
+    quote: >-
+      Na ocasião também acontece a Ordenação ao Diaconato do candidato às Sagradas Ordens, José Fábio Virgínio Correia
+  - source: d2s22-gravata-2015
+    quote: A abertura acontece no próximo dia 16 de maio às 20 horas
+  notes: >-
+    Ordenação apenas anunciada na notícia de 01/05/2015 para a cerimônia de inauguração e consagração do novo templo
+    em 16/05/2015; a página não informa o ordenante e não confirma a realização (captura de 10/05/2015, anterior
+    à data).

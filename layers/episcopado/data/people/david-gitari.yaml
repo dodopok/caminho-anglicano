@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: david-gitari
+name: David Gitari
+aliases:
+- David Guitari
+biography: >-
+  Bispo anglicano queniano, bispo da Diocese de Monte Quênia-Leste e presidente da EFAC (Associação dos Evangélicos
+  na Comunhão Anglicana). Segundo Robinson Cavalcanti, foi arcebispo primaz da Província do Quênia até 2002, e presidia
+  a EFAC numa consulta teológica e reunião do Comitê Executivo no Quênia, por volta de 1992, da qual Cavalcanti
+  participou.
+sources:
+- source: d2s26-quenia
+  quote: >-
+    Esteve todo tempo conosco o bispo David Guitari , que presidia a EFAC, era bispo da Diocese de Monte Quênia-Leste
+- source: d2s26-quenia
+  quote: até o ano passado viria a ser o Arcebispo (Primaz) daquela Província
+- source: d2s26-quenia
+  quote: >-
+    estive em Quênia, para uma consulta teológica e reunião do Comitê Executivo da Associação dos Evangélicos na
+    Comunhão Anglicana (EFAC)
+- source: d2s26-quenia
+  quote: Há pouco mais de 10 (dez) anos
+affiliations:
+- jurisdiction: efac
+  role: other
+  role_description: presidente
+  status: probable
+  sources:
+  - source: d2s26-quenia
+    quote: >-
+      Esteve todo tempo conosco o bispo David Guitari , que presidia a EFAC, era bispo da Diocese de Monte Quênia-Leste
+  notes: >-
+    Presidia a EFAC na época da reunião no Quênia relatada por Robinson Cavalcanti, mais de dez anos antes de janeiro
+    de 2003.
+- jurisdiction: anglican-church-of-kenya
+  role: diocesan_bishop
+  status: probable
+  sources:
+  - source: d2s26-quenia
+    quote: >-
+      Esteve todo tempo conosco o bispo David Guitari , que presidia a EFAC, era bispo da Diocese de Monte Quênia-Leste
+  notes: >-
+    Local: Monte Quênia-Leste. Bispo da Diocese de Monte Quênia-Leste na época da reunião da EFAC relatada por Robinson
+    Cavalcanti (mais de dez anos antes de janeiro de 2003).
+- jurisdiction: anglican-church-of-kenya
+  role: primate
+  end: '2002'
+  status: probable
+  sources:
+  - source: d2s26-quenia
+    quote: até o ano passado viria a ser o Arcebispo (Primaz) daquela Província
+  notes: >-
+    Frase de redação confusa; Robinson Cavalcanti, em texto de 25/01/2003, indica que Gitari foi arcebispo (primaz)
+    da Província do Quênia até o ano anterior (2002).
+events:
+- type: other
+  date: c.1992
+  description: >-
+    Robinson Cavalcanti participa, no Quênia (c. 1992), de consulta teológica e reunião do Comitê Executivo da EFAC,
+    na qual atua como presidente o bispo David Gitari; prega na catedral anglicana de Mombaça.
+  status: probable
+  sources:
+  - source: d2s26-quenia
+    quote: >-
+      estive em Quênia, para uma consulta teológica e reunião do Comitê Executivo da Associação dos Evangélicos
+      na Comunhão Anglicana (EFAC)
+  - source: d2s26-quenia
+    quote: Há pouco mais de 10 (dez) anos

@@ -1,12 +1,18 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: tiberio-marques-da-silva
 name: Tibério Marques da Silva
+aliases:
+- Rev. Tibério Marques, OSE
 biography: >-
-  Ordenado diácono em 27/12/2003, na Paróquia Anglicana Emanuel (Olinda), por Robinson Cavalcanti, é diácono permanente
-  da Diocese Anglicana do Recife e membro da Ordem de Santo Estevão Mártir, da qual foi ecônomo. Atuou como auxiliar
-  na Paróquia Anglicana da Redenção e como coadjutor na Paróquia Jesus de Nazaré, e foi secretário diocesano de
-  Homens e contador diocesano. Em 23/08/2005 foi excluído da comunhão da IEAB, com outros clérigos que declararam
-  manter plena comunhão com Robinson Cavalcanti, e permaneceu na Diocese Anglicana do Recife.
+  Ordenado diácono em 27/12/2003, na Paróquia Anglicana Emanuel (Olinda-PE), por Robinson Cavalcanti, ainda na IEAB,
+  tornou-se diácono permanente da Diocese Anglicana do Recife. É membro da Ordem de Santo Estevão Mártir (OSE),
+  da qual constava como ecônomo em listas de 2009 e 2010. Em agosto de 2005 aparece como secretário diocesano de
+  Homens. Em 23/08/2005 foi incluído entre os clérigos excluídos da Comunhão da IEAB, que responderam por carta
+  continuar a honrar seus votos e manter plena comunhão com Robinson Cavalcanti, e passou a integrar a Diocese Anglicana
+  do Recife (DAR). Na DAR foi auxiliar da Paróquia Anglicana da Redenção (Olinda-PE), cuja pároca era a Revda. Maria
+  Gorete Correia, e coadjutor da Paróquia Jesus de Nazaré, em Gaibu (PE); também atuou como auxiliar na Catedral
+  Anglicana do Bom Samaritano, em Recife, e no Ponto Missionário Anglicano em Maceió (AL). Em listas de 2009 e 2010
+  era contador diocesano, e outra fonte o apresenta também como capelão de hospital em Recife.
 sources:
 - source: rcor-drv-ord-decio-2003
   quote: >-
@@ -18,20 +24,10 @@ sources:
   quote: >-
     Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano; membro da
     Ordem de Santo Estevão Mártir e da Equipe Pastoral da Paróquia Anglicana da Redenção
-- source: rcor-drv-ordens-dar
-  quote: Rev. Tibério Silva (Ecônomo)
 - source: dard1-ose-2009a
   quote: Rev Tibério Marques (Ecônomo)
-- source: dard2-com-norte
-  quote: >-
-    Paróquia Anglicana da Redenção Pároca: Revda. Maria Gorete Correia, OSE Auxiliar: Rev. Tibério Marques, OSE
-- source: dard2-com-sul
-  quote: >-
-    Paróquia Anglicana Jesus de Nazaré Reitor: Rev. Hermany Silva Soares Coadjutor : Rev. Tibério Marques
 - source: drp2-breves-08-2005
   quote: O Secretário Diocesano de Homens, Rev. Tibério Marques, está convidando a todos
-- source: dard1-cargos-2009a
-  quote: 'Contador Diocesano: Rev. Tibério Marques da Silva, ose'
 - source: costa2021
   quote: >-
     Art. 1º – Ficam excluídos da Comunhão da Igreja Episcopal Anglicana do Brasil e, conseqüentemente, das Sagradas
@@ -44,6 +40,24 @@ sources:
     e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação, mantendo
     plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
   page: 560-562
+- source: dard2-com-norte
+  quote: >-
+    Paróquia Anglicana da Redenção Pároca: Revda. Maria Gorete Correia, OSE Auxiliar: Rev. Tibério Marques, OSE
+- source: dard2-com-sul
+  quote: >-
+    Paróquia Anglicana Jesus de Nazaré Reitor: Rev. Hermany Silva Soares Coadjutor : Rev. Tibério Marques
+- source: dard1-cargos-2009a
+  quote: 'Contador Diocesano: Rev. Tibério Marques da Silva, ose'
+- source: d2s04-gorete-13anos
+  quote: >-
+    Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano e membro da
+    Coadjutor da Paróquia Anglicana da Redenção , no Arcediagado Norte da Diocese, e auxiliar na Equipe Pastoral
+    na Catedral Anglicana do Bom Samaritano , em Recife (PE); da Paróquia Anglicana Jesus de Nazaré , em Gaibu (PE);
+    e no Ponto Missionário Anglicano em Maceió (AL).
+- source: d2s05-redencao-12anos
+  quote: >-
+    Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife, é Contador Diocesano, Capelão
+    de Hospital em Recife
 ordinations:
 - order: diaconate
   date: '2003-12-27'
@@ -71,11 +85,21 @@ ordinations:
     quote: >-
       que optaram pelo diaconato permanente, os candidatos: Leôncio e Tibério. E estou diante de três outros candidatos
       que aspiram o presbiterato: Décio, Raniere e Solange
+  - source: d2s29-m41
+    quote: >-
+      Décio da Silva, Elias Leôncio de Brito Filho, ose, Raniere Almeida de Oliveira, Solange Cristina Pereira e
+      Tibério Marques da Silva, ose Anglicana Emanuel - Olinda/PE – 27/12/2003
+  - source: d2s29-m41
+    quote: >-
+      dois filhos espirituais de Santo Estevão, como irmãos da Ordem Religiosa Anglicana que o tem como patrono,
+      e que optaram pelo diaconato permanente, os candidatos: Leôncio e Tibério
   notes: >-
     Sermão do bispo diocesano (Robinson Cavalcanti, 'seis anos depois da nossa instituição como Diocesano'), que
     anuncia impor as mãos sobre os ordinandos. Elias Leôncio e Tibério optaram pelo diaconato permanente; Décio,
     Raniere e Solange aspiravam ao presbiterato. Diaconato permanente; irmão da Ordem Evangélica de Santo Estevão
-    Mártir (OSE).
+    Mártir (OSE). Diácono permanente, membro da OSE ('Tibério Marques da Silva, ose'). O texto é o sermão do bispo
+    diocesano, que fala em primeira pessoa como quem confere a ordem; a página não traz assinatura, e o bispo diocesano
+    em exercício era Robinson Cavalcanti (instalado em 19/10/1997).
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -132,10 +156,15 @@ affiliations:
     quote: Rev. Tibério Marques da Silva, OSE
   - source: dard1-ose-2010
     quote: Rev. Tibério Marques da Silva, OSE
+  - source: d2s29-m41
+    quote: Tibério Marques da Silva, ose
+  - source: d2s29-m41
+    quote: irmãos da Ordem Religiosa Anglicana que o tem como patrono
   notes: >-
     Ecônomo da OSE (nome grafado 'Tibério Silva'). Lista da página 'Ordens Religiosas' do site da Diocese do Recife,
     arquivada em 24/10/2004. Consta na relação de membros da Ordem de Santo Estevão capturada em jan/2009 e na publicada
-    em 01/07/2009 (atualizada em 18/11/2010). Listado entre os clérigos.
+    em 01/07/2009 (atualizada em 18/11/2010). Listado entre os clérigos. Membro da Ordem Evangélica de Santo Estevão
+    Mártir em 27/12/2003.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: secretário diocesano de homens
@@ -159,8 +188,29 @@ affiliations:
       Ordem de Santo Estevão Mártir e da Equipe Pastoral da Paróquia Anglicana da Redenção
   - source: darn2-consolacao-2012
     quote: Tibério Marques (Contador Diocesano)
+  - source: d2s04-gorete-13anos
+    quote: >-
+      Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano e membro
+      da Coadjutor da Paróquia Anglicana da Redenção , no Arcediagado Norte da Diocese, e auxiliar na Equipe Pastoral
+      na Catedral Anglicana do Bom Samaritano , em Recife (PE); da Paróquia Anglicana Jesus de Nazaré , em Gaibu
+      (PE); e no Ponto Missionário Anglicano em Maceió (AL).
+  - source: d2s03-hom-tiberio
+    quote: Contador Diocesano
+  - source: d2s04-gorete-13anos
+    quote: Contador Diocesano
+  - source: d2s20-cargos2011
+    quote: 'd) Contador Diocesano: Rev. Tibério Marques da Silva'
+  - source: d2s22-cargos2011
+    quote: 'd) Contador Diocesano: Rev. Tibério Marques da Silva'
   notes: >-
     Em 2011-03-19; em 2008-12 constava também como secretário diocesano de homens. Cargo atestado em 06/02/2012.
+    Em exercício em novembro de 2010; diácono permanente na mesma nota. Em exercício em outubro de 2010, conforme
+    a mensagem de 07/10/2010 Cargo indicado em outubro e novembro de 2010. Consta da 'Relação dos Cargos Diocesanos
+    2011' (publicada em 10/12/2010), seção "Cargos Diocesanos designados pelo Bispo, com ciência pelo Concílio Diocesano",
+    Assessores; cargo designado para o ano de 2011. Designado para o ano de 2011. Local: Assessoria. Cargo para
+    2011 constante da relação de cargos diocesanos publicada em 10/12/2010 (captura de dez/2010), após o XXX Concílio
+    Diocesano. Cargo constante da Relação dos Cargos Diocesanos 2011, publicada em 10/12/2010 (captura de 28/12/2010);
+    designação para o exercício de 2011.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: diácono permanente
@@ -170,7 +220,18 @@ affiliations:
     quote: >-
       Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano; membro da
       Ordem de Santo Estevão Mártir e da Equipe Pastoral da Paróquia Anglicana da Redenção
-  notes: Em 2011-03-19.
+  - source: d2s04-gorete-13anos
+    quote: >-
+      Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano e membro
+      da Coadjutor da Paróquia Anglicana da Redenção
+  - source: d2s04-gorete-13anos
+    quote: Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano
+  - source: d2s05-redencao-12anos
+    quote: Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife
+  notes: >-
+    Em 2011-03-19. Local: Paróquia Anglicana da Redenção. Em exercício em novembro de 2010, conforme nota biográfica
+    de 21/11/2010; atua também como auxiliar na Catedral do Bom Samaritano, na Paróquia Jesus de Nazaré (Gaibu)
+    e no Ponto Missionário de Maceió. Diácono permanente em novembro de 2009 e novembro de 2010.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: auxiliar
@@ -201,8 +262,12 @@ affiliations:
   sources:
   - source: dard1-carta-bispos-2004
     quote: Rev. Tibério Marques da Silva Paróquia Anglicana da Redenção
-  notes: "Local: Paróquia Anglicana da Redenção. Consta na carta aberta de 17/09/2004, assinada pela Diocese do\
-    \ Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os diáconos. "
+  - source: d2s28-clero04
+    quote: Diáconos (as) - (13) ... Tibério Marques da Silva, OSE (25/03)
+  notes: >-
+    Local: Paróquia Anglicana da Redenção. Consta na carta aberta de 17/09/2004, assinada pela Diocese do Recife
+    (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Listado entre os diáconos.  Em
+    exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os diáconos e diáconas.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: contador_diocesano
@@ -212,9 +277,11 @@ affiliations:
     quote: 'Contador Diocesano: Rev. Tibério Marques da Silva, ose'
   - source: dard1-cargos-2010
     quote: 'Contador Diocesano: Rev. Tibério Marques da Silva, ose'
-  notes: >-
-    Local: Contador Diocesano. Consta na lista de "Cargos Diocesanos" capturada em jan/2009 e na de jul/2009 (atualizada
-    em 28/09/2010); a página não informa a data de início.
+  - source: d2s19-gorete-13anos
+    quote: Contador Diocesano
+  notes: "Local: Contador Diocesano. Consta na lista de \"Cargos Diocesanos\" capturada em jan/2009 e na de jul/2009\
+    \ (atualizada em 28/09/2010); a página não informa a data de início. Em exercício em nov/2010 (data da matéria:\
+    \ 21/11/2010). "
 - jurisdiction: ose
   role: other
   role_description: economo
@@ -245,9 +312,22 @@ affiliations:
     quote: Revdos. Tibério Marques e Maria Gorete
   - source: dard1-locomotiva-2008
     quote: Um Diácono de peso e uma Presbítera de garra
+  - source: d2s05-redencao-12anos
+    quote: >-
+      Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife, é Contador Diocesano, Capelão
+      de Hospital em Recife e faz parte das Equipes Pastorais da Paróquia Anglicana da Redenção
+  - source: d2s19-gorete-13anos
+    quote: >-
+      Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano e membro
+      da Coadjutor da Paróquia Anglicana da Redenção , no Arcediagado Norte da Diocese, e auxiliar na Equipe Pastoral
+      na Catedral Anglicana do Bom Samaritano , em Recife (PE); da Paróquia Anglicana Jesus de Nazaré , em Gaibu
+      (PE); e no Ponto Missionário Anglicano em Maceió
   notes: >-
     Prêmio "Locomotiva Diocesana" de 2008: o texto descreve o par de homenageados como "um diácono" e "uma presbítera";
-    a ordem dos dois substantivos sugere que o diácono é Tibério Marques.
+    a ordem dos dois substantivos sugere que o diácono é Tibério Marques. Em exercício em novembro de 2009: diácono
+    permanente e contador diocesano; capelão de hospital em Recife; integra as equipes pastorais da Paróquia da
+    Redenção (Olinda), da Paróquia Jesus de Nazaré (Gaibu) e da Catedral Anglicana do Bom Samaritano (Recife). Local:
+    diácono permanente. Em exercício em nov/2010 (data da matéria: 21/11/2010). Diácono permanente.
 - jurisdiction: ieab-dar
   role: deacon
   status: confirmed
@@ -271,6 +351,116 @@ affiliations:
     na lista de delegados. Local: Paróquia Anglicana da Redenção (Arcediagado Norte). Secretário Diocesano de Homens
     e Contador Diocesano em dezembro de 2008; integra a Equipe Pastoral da Paróquia da Redenção com a Revda. Gorete
     Marques.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coadjutor
+  status: confirmed
+  sources:
+  - source: d2s04-gorete-13anos
+    quote: >-
+      Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano e membro
+      da Coadjutor da Paróquia Anglicana da Redenção , no Arcediagado Norte da Diocese, e auxiliar na Equipe Pastoral
+      na Catedral Anglicana do Bom Samaritano , em Recife (PE); da Paróquia Anglicana Jesus de Nazaré , em Gaibu
+      (PE); e no Ponto Missionário Anglicano em Maceió (AL).
+  - source: d2s19-gorete-13anos
+    quote: >-
+      Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano e membro
+      da Coadjutor da Paróquia Anglicana da Redenção , no Arcediagado Norte da Diocese, e auxiliar na Equipe Pastoral
+      na Catedral Anglicana do Bom Samaritano , em Recife (PE); da Paróquia Anglicana Jesus de Nazaré , em Gaibu
+      (PE); e no Ponto Missionário Anglicano em Maceió
+  notes: >-
+    Local: Paróquia Anglicana da Redenção (Arcediagado Norte). Em novembro de 2010. Local: Paróquia Anglicana da
+    Redenção (Arcediagado Norte). Em exercício em nov/2010 (data da matéria: 21/11/2010). Também auxiliar na equipe
+    pastoral da Catedral Anglicana do Bom Samaritano (Recife), da Paróquia Anglicana Jesus de Nazaré (Gaibu) e do
+    Ponto Missionário Anglicano em Maceió.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: auxiliar
+  status: confirmed
+  sources:
+  - source: d2s04-gorete-13anos
+    quote: >-
+      Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano e membro
+      da Coadjutor da Paróquia Anglicana da Redenção , no Arcediagado Norte da Diocese, e auxiliar na Equipe Pastoral
+      na Catedral Anglicana do Bom Samaritano , em Recife (PE); da Paróquia Anglicana Jesus de Nazaré , em Gaibu
+      (PE); e no Ponto Missionário Anglicano em Maceió (AL).
+  notes: >-
+    Local: Catedral Anglicana do Bom Samaritano (Recife-PE). Auxiliar na Equipe Pastoral da catedral em novembro
+    de 2010.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: auxiliar
+  status: confirmed
+  sources:
+  - source: d2s04-gorete-13anos
+    quote: >-
+      Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano e membro
+      da Coadjutor da Paróquia Anglicana da Redenção , no Arcediagado Norte da Diocese, e auxiliar na Equipe Pastoral
+      na Catedral Anglicana do Bom Samaritano , em Recife (PE); da Paróquia Anglicana Jesus de Nazaré , em Gaibu
+      (PE); e no Ponto Missionário Anglicano em Maceió (AL).
+  notes: >-
+    Local: Paróquia Anglicana Jesus de Nazaré (Gaibu-PE). Auxiliar na Equipe Pastoral em novembro de 2010.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: auxiliar
+  status: confirmed
+  sources:
+  - source: d2s04-gorete-13anos
+    quote: >-
+      Rev. Tibério Marques da Silva, ose é Diácono Permanente na Diocese do Recife; Contador Diocesano e membro
+      da Coadjutor da Paróquia Anglicana da Redenção , no Arcediagado Norte da Diocese, e auxiliar na Equipe Pastoral
+      na Catedral Anglicana do Bom Samaritano , em Recife (PE); da Paróquia Anglicana Jesus de Nazaré , em Gaibu
+      (PE); e no Ponto Missionário Anglicano em Maceió (AL).
+  notes: >-
+    Local: Ponto Missionário Anglicano em Maceió-AL. Auxiliar no ponto missionário de Maceió em novembro de 2010;
+    o nome do ponto missionário não consta na nota.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro auxiliar
+  status: confirmed
+  sources:
+  - source: d2s01-pj-pe
+    quote: 'Ministro Auxiliar: Rev. Tibério Marques, OSE'
+  notes: >-
+    Local: Paróquia Anglicana da Redenção (Rio Doce, Olinda-PE). Em exercício em ago/2010, segundo a página "Um
+    Projeto Missionário Anglicano Ortodoxo para o Brasil IV – Estado de Pernambuco" (publicada e atualizada em 27/08/2010;
+    cópia capturada em 25/12/2010). Local: Paróquia Anglicana da Redenção (Rio Doce, Olinda-PE).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro auxiliar
+  status: confirmed
+  sources:
+  - source: d2s01-pj-pe
+    quote: 'Ministro Auxiliar: Rev. Tibério Marques Local: Av. Águas Compridas'
+  notes: >-
+    Local: Paróquia Anglicana Jesus de Nazaré (Gaibu, Cabo de Santo Agostinho-PE). Em exercício em ago/2010, segundo
+    a página "Um Projeto Missionário Anglicano Ortodoxo para o Brasil IV – Estado de Pernambuco" (publicada e atualizada
+    em 27/08/2010; cópia capturada em 25/12/2010). Na mesma página também aparece como ministro auxiliar da Paróquia
+    da Redenção (Olinda). Local: Paróquia Anglicana Jesus de Nazaré (Gaibu, Cabo de Santo Agostinho-PE).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro auxiliar
+  status: confirmed
+  sources:
+  - source: d2s03-hom-tiberio
+    quote: >-
+      Ministro Auxiliar nas Paróquias Anglicanas: da Redenção e Jesus de Nazaré, e apoiador nos trabalhos da Catedral
+      Anglicana do Bom Samaritano e Ponto Missionário Anglicano em Maceió
+  - source: d2s04-gorete-13anos
+    quote: auxiliar na Equipe Pastoral na Catedral Anglicana do Bom Samaritano
+  notes: >-
+    Local: Paróquias Anglicanas da Redenção e Jesus de Nazaré. Em exercício em outubro de 2010, conforme a mensagem
+    de 07/10/2010; a mesma página o apresenta como Contador Diocesano. Local: Paróquias Anglicanas da Redenção (Olinda)
+    e Jesus de Nazaré (Gaibu); apoio à Catedral do Bom Samaritano e ao Ponto Missionário em Maceió. Indicações de
+    07/10/2010 e 21/11/2010.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro da equipe pastoral da Paróquia Anglicana da Redenção (Olinda-PE)
+  status: confirmed
+  sources:
+  - source: d2s20-redencao
+    quote: A Equipe Pastoral da Paróquia Anglicana da Redenção - Revda. Gorete e Rev. Tibério Marques
+  notes: 'Local: Paróquia Anglicana da Redenção (Olinda-PE). Em exercício em novembro de 2010.'
 events:
 - type: other
   date: '1997-11-17'
@@ -289,3 +479,16 @@ events:
     quote: >-
       Revda. Gorete é Pároca e Arcediaga na região Norte da Diocese; Rev. Tibério Marques é Secretário Diocesano
       de Homens e Contador Diocesano
+- type: other
+  date: '1997-11-17'
+  description: >-
+    A Paróquia Anglicana da Redenção (Olinda-PE) completou treze anos em 17/11/2010 (fundação em 17/11/1997); o
+    texto de 21/11/2010 diz que o trabalho foi iniciado por Robinson Cavalcanti quando ainda era presbítero.
+  status: probable
+  sources:
+  - source: d2s04-gorete-13anos
+    quote: >-
+      A Paróquia Anglicana da Redenção completou dia 17 de novembro de 2010, treze anos de bem servir a DEUS-PAI
+      e à comunidade em que está inserida.
+  - source: d2s04-gorete-13anos
+    quote: trabalho por ele iniciado quando, então, Presbítero

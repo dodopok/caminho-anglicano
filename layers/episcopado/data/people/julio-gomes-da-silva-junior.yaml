@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: julio-gomes-da-silva-junior
+name: Júlio Gomes da Silva Júnior
+aliases:
+- Júlio Gomes
+- Rev. Júlio Gomes
+biography: >-
+  Em 2004, Júlio Gomes da Silva Júnior era ministro leigo e postulante ao ministério ordenado na Diocese Anglicana
+  do Recife, secretário diocesano de Jovens e responsável pela Missão Anglicana Liberdade. Foi ordenado diácono
+  em 10/09/2005, na Catedral Anglicana da Santíssima Trindade, por Filadelfo Oliveira Neto, junto com outros sete,
+  e consta da lista do clero diocesano como diácono.
+sources:
+- source: d2s28-clero04
+  quote: JÚLIO GOMES DA SILVA JÚNIOR (30/09) - Postulante Secretário Diocesano de Jovens
+- source: d2s28-comun04
+  quote: MISSÃO ANGLICANA LIBERDADE ML. Júlio Gomes
+- source: d2s31-sec
+  quote: Secretaria de Jovens ML. Júlio Gomes
+- source: d2s31-diacs
+  quote: a Diocese conta com oito novos diáconos ordenados por Dom Filadelfo
+- source: d2s31-diacs
+  quote: >-
+    Rev. Rodrigo Espiúca, Rev. Senomar Teixeira, Rev. Adilson Ferreira, Rev. Fernando Gonçalves, Rev. Rodson Ricardo,
+    Rev. Júlio Gomes, Rev. Sílvio Freitas e Rev. Ricardo Domingos
+- source: d2s31-diacs
+  quote: >-
+    estiveram na Catedral Anglicana da Santíssima Trindade e participaram do culto presidido pelo Bispo Dom Filadelfo
+    Neto
+ordinations:
+- order: diaconate
+  date: '2005-09-10'
+  place: Catedral Anglicana da Santíssima Trindade, Recife (PE)
+  jurisdiction: ieab-dar
+  ordained_by: filadelfo-oliveira-neto
+  status: confirmed
+  sources:
+  - source: d2s31-diacs
+    quote: a Diocese conta com oito novos diáconos ordenados por Dom Filadelfo
+  - source: d2s31-diacs
+    quote: >-
+      Rev. Rodrigo Espiúca, Rev. Senomar Teixeira, Rev. Adilson Ferreira, Rev. Fernando Gonçalves, Rev. Rodson Ricardo,
+      Rev. Júlio Gomes, Rev. Sílvio Freitas e Rev. Ricardo Domingos
+  - source: d2s31-diacs
+    quote: >-
+      estiveram na Catedral Anglicana da Santíssima Trindade e participaram do culto presidido pelo Bispo Dom Filadelfo
+      Neto
+  - source: d2s31-agenda
+    quote: Ordenações Diaconais - Catedral da SS. Trindade
+  - source: d2s31-clero
+    quote: Rev. Júlio Gomes da Silva Júnior
+  notes: >-
+    Os oito diáconos aparecem juntos na nota do site, que dá o culto de encerramento do XXIV Concílio no sábado,
+    10/09/2005, na Catedral da Santíssima Trindade, presidido por Filadelfo Oliveira Neto como autoridade eclesiástica
+    da diocese que permaneceu na IEAB. A nota não cita co-ordenantes. A identificação dos nomes curtos com os nomes
+    completos vem da lista do clero do mesmo site (abril de 2006), que traz todos entre os diáconos.
+affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: secretário diocesano
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: JÚLIO GOMES DA SILVA JÚNIOR (30/09) - Postulante Secretário Diocesano de Jovens
+  notes: >-
+    Local: Secretaria Diocesana de Jovens. Em exercício em outubro de 2004 (página capturada em 24/10/2004). Postulante
+    ao ministério ordenado e ministro leigo na data da página.
+- jurisdiction: ieab
+  role: other
+  role_description: ministro encarregado
+  diocese: ieab-dar
+  status: probable
+  sources:
+  - source: d2s28-comun04
+    quote: MISSÃO ANGLICANA LIBERDADE ML. Júlio Gomes
+  notes: >-
+    Local: Missão Anglicana Liberdade (Jaboatão dos Guararapes-PE). Em exercício em outubro de 2004 (página capturada
+    em 24/10/2004). Ministro leigo na data da página; a lista indica apenas "ML. Júlio Gomes" (o mesmo nome consta,
+    com o sobrenome completo, entre os postulantes).
+- jurisdiction: ieab-dar
+  role: deacon
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Diáconos(as) - (09)
+  - source: d2s31-clero
+    quote: Rev. Júlio Gomes da Silva Júnior
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listado entre os diáconos.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: secretário de Jovens
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: Secretaria de Jovens ML. Júlio Gomes
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB. Então ministro leigo.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: ministro leigo
+  status: probable
+  sources:
+  - source: d2s31-sala
+    quote: Orar pelo Ponto Missionário da Liberdade, pelo ML Júlio Gomes e o Sem. Sílvio Freitas.
+  notes: >-
+    Local: Diocese Anglicana do Recife, Ponto Missionário da Liberdade. Atestado no calendário de intercessão da
+    diocese de julho e agosto de 2004 (comunidade citada ao lado do nome). A página dá só "ML Júlio Gomes"; a lista
+    de cargos de outubro de 2004 o traz como ML. Júlio Gomes (Secretaria de Jovens).

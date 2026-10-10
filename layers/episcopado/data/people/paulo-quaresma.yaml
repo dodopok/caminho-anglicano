@@ -1,13 +1,24 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: paulo-quaresma
 name: Paulo Quaresma
+full_name: Paulo da Silva Quaresma
+aliases:
+- Paulo da Silva Quaresma
 biography: >-
-  Ex-padre católico romano recebido pela Diocese do Recife em julho de 2010, no Ponto Missionário Anglicano da Transfiguração
-  (Mogi das Cruzes-SP), com intenção de requerer incardinação e reconhecimento de ordem.
+  Ex-padre católico romano, foi recebido pela Diocese do Recife em julho de 2010, no Ponto Missionário Anglicano
+  da Transfiguração (Mogi das Cruzes-SP), com a intenção de requerer incardinação e, depois, reconhecimento de ordem.
+  Em 2013 listas do clero diocesano o incluíam, como Rev. Paulo da Silva Quaresma, entre os clérigos em reconhecimento
+  de ordens, com referência a Itaquaquecetuba (SP).
 sources:
 - source: darn2-ex-padre-2010
   quote: >-
     foi recebido pela Diocese do Recife, onde pretende requerer Incardinação e posterior Reconhecimento de Ordem
+- source: darn2-santo-andre-2010
+  quote: Paulo Quaresma (também do PMA da Transfiguração )
+- source: d2s17-clero-recon-2013
+  quote: Rev. Paulo Quaresma Itaquaquecetuba- SP
+- source: d2s17-clero-presb2-2013
+  quote: Revdo. Paulo da Silva Quaresma
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: member
@@ -23,3 +34,16 @@ affiliations:
     Local: Ponto Missionário Anglicano da Transfiguração, Mogi das Cruzes-SP. Ex-padre católico romano e ex-reitor
     de seminário da Diocese de Mogi das Cruzes; foi recebido em 15/07/2010, durante Visita Episcopal do bispo Robinson
     Cavalcanti ao ponto missionário, depois de cinco anos fora do sacerdócio romano e de um tempo de estudo e discernimento.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: clérigo em reconhecimento de ordens
+  status: confirmed
+  sources:
+  - source: d2s17-clero-recon-2013
+    quote: Rev. Paulo Quaresma Itaquaquecetuba- SP
+  - source: d2s17-clero-presb2-2013
+    quote: Revdo. Paulo da Silva Quaresma
+  notes: >-
+    Local: Itaquaquecetuba (SP). Consta na lista "Clérigos - Em Reconhecimento de Ordens" capturada em 08/06/2013,
+    ligado a Itaquaquecetuba (SP); na mesma data aparece também na lista de presbíteros como Revdo. Paulo da Silva
+    Quaresma. Em dezembro de 2010 não constava em nenhuma das duas listas.

@@ -4,9 +4,24 @@ name: Senomar Teixeira Júnior
 aliases:
 - Senomar Teixeira
 biography: >-
-  Reverendo da Diocese Anglicana do Recife (IEAB) e advogado da diocese, autor da nota "A Verdade Canônica na DAR",
-  que defende o amparo canônico das medidas da Câmara Episcopal.
+  Advogado (OAB-PE, DF e SP) especialista em Direito Processual Civil, Senomar Teixeira Júnior foi ordenado diácono
+  em 10/09/2005 por Filadelfo Oliveira Neto, na Diocese Anglicana do Recife (IEAB), e atuou como advogado da IEAB
+  e da diocese. É autor da nota de esclarecimento "A Verdade Canônica na DAR", que defende o amparo canônico das
+  medidas da Câmara Episcopal.
 sources:
+- source: d2s31-diacs
+  quote: a Diocese conta com oito novos diáconos ordenados por Dom Filadelfo
+- source: d2s31-diacs
+  quote: >-
+    Rev. Rodrigo Espiúca, Rev. Senomar Teixeira, Rev. Adilson Ferreira, Rev. Fernando Gonçalves, Rev. Rodson Ricardo,
+    Rev. Júlio Gomes, Rev. Sílvio Freitas e Rev. Ricardo Domingos
+- source: d2s31-liminar
+  quote: Para o Rev. Senomar Teixeira, advogado da IEAB e da Diocese
+- source: costa2021
+  quote: >-
+    Fonte: Bel. Senomar Teixeira Júnior (Advogado, OAB-PE – DF – SP, especialista em Direito Processual Civil, seminarista
+    do SAET)
+  page: '550'
 - source: costa2021
   quote: advogado da Diocese, Senomar Teixeira Júnior, detalhando os acontecimentos
   page: '221'
@@ -23,6 +38,33 @@ sources:
     o Dr. Senomar Teixeira, que está acompanhando juridicamente a situação vivida na DAR, divulgou a seguinte nota
     de esclarecimento
   page: '547'
+ordinations:
+- order: diaconate
+  date: '2005-09-10'
+  place: Catedral Anglicana da Santíssima Trindade, Recife (PE)
+  jurisdiction: ieab-dar
+  ordained_by: filadelfo-oliveira-neto
+  status: confirmed
+  sources:
+  - source: d2s31-diacs
+    quote: a Diocese conta com oito novos diáconos ordenados por Dom Filadelfo
+  - source: d2s31-diacs
+    quote: >-
+      Rev. Rodrigo Espiúca, Rev. Senomar Teixeira, Rev. Adilson Ferreira, Rev. Fernando Gonçalves, Rev. Rodson Ricardo,
+      Rev. Júlio Gomes, Rev. Sílvio Freitas e Rev. Ricardo Domingos
+  - source: d2s31-diacs
+    quote: >-
+      estiveram na Catedral Anglicana da Santíssima Trindade e participaram do culto presidido pelo Bispo Dom Filadelfo
+      Neto
+  - source: d2s31-agenda
+    quote: Ordenações Diaconais - Catedral da SS. Trindade
+  - source: d2s31-clero
+    quote: Rev. Senomar Teixeita
+  notes: >-
+    Os oito diáconos aparecem juntos na nota do site, que dá o culto de encerramento do XXIV Concílio no sábado,
+    10/09/2005, na Catedral da Santíssima Trindade, presidido por Filadelfo Oliveira Neto como autoridade eclesiástica
+    da diocese que permaneceu na IEAB. A nota não cita co-ordenantes. A identificação dos nomes curtos com os nomes
+    completos vem da lista do clero do mesmo site (abril de 2006), que traz todos entre os diáconos.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -44,6 +86,27 @@ affiliations:
     page: '238'
   notes: >-
     Seminarista em 2004 (signatário); reverendo e advogado da diocese (texto 'A Verdade Canônica na DAR').
+- jurisdiction: ieab-dar
+  role: deacon
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Diáconos(as) - (09)
+  - source: d2s31-clero
+    quote: Rev. Senomar Teixeita
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listado entre os diáconos.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: advogado da diocese
+  status: confirmed
+  sources:
+  - source: d2s31-liminar
+    quote: Para o Rev. Senomar Teixeira, advogado da IEAB e da Diocese
+  notes: >-
+    Local: Diocese Anglicana do Recife. Apresentado na nota de 14/09/2005 como advogado da IEAB e da Diocese Anglicana
+    do Recife.
 events:
 - type: other
   date: null
@@ -68,3 +131,23 @@ events:
       Fonte: Bel. Senomar Teixeira Júnior (Advogado, OAB-PE – DF – SP, especialista em Direito Processual Civil,
       seminarista do SAET)
     page: '550'
+- type: other
+  date: '2005-09-12'
+  description: >-
+    Em 12 de setembro de 2005, a juíza da 31ª Vara Cível do Recife revogou a liminar com que Robinson Cavalcanti
+    pedia a suspensão do XXIV Concílio da Diocese Anglicana do Recife; segundo a nota do Departamento de Comunicação
+    da diocese reorganizada pela IEAB, ele não informou à juíza que fora deposto, e decisões anteriores da 16ª Vara
+    da Capital e do Tribunal de Justiça de Pernambuco já reconheciam seu afastamento das funções episcopais. A nota
+    dá voz ao advogado da diocese, Rev. Senomar Teixeira, e traduz a posição desse lado do conflito.
+  status: confirmed
+  sources:
+  - source: d2s31-liminar
+    quote: >-
+      a liminar apresentada por Robinson Cavalcanti com o objetivo de suspender o XXIV Concílio da DAR caiu nesta
+      segunda-feira, 12 de setembro
+  - source: d2s31-liminar
+    quote: >-
+      que reconheceram sua suspensão e seu afastamento das funções episcopais e de representação como tal da Diocese
+      Anglicana do Recife
+  - source: d2s31-liminar
+    quote: O Bispo Dom Filadelfo Neto é a legítima autoridade da Diocese e tem poderes para convocar Concílios.

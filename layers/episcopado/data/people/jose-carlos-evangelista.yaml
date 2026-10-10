@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: jose-carlos-evangelista
+name: José Carlos Evangelista
+aliases:
+- Frei Carlos Evangelista
+biography: >-
+  Seminarista do SAT-PE, frei da Ordem de Santo Estevão e ministro local da Paróquia Anglicana Jesus de Nazaré (Gaibu)
+  em 2008.
+sources:
+- source: d2s08-jc-marketing
+  quote: Ministro Local faz parte da Equipe Pastoral da Paróquia Anglicana Jesus de Nazaré
+- source: d2s08-jc-marketing
+  quote: Frei da Ordem de Santo Estevão (OSE)
+- source: d2s08-jc-marketing
+  quote: ML. Frei Carlos Evangelista, ose
+affiliations:
+- jurisdiction: ose
+  role: other
+  role_description: frade
+  status: confirmed
+  sources:
+  - source: d2s08-jc-marketing
+    quote: Frei da Ordem de Santo Estevão (OSE)
+  - source: d2s08-jc-marketing
+    quote: ML. Frei Carlos Evangelista, ose
+  notes: Frei da Ordem de Santo Estevão (OSE) e seminarista do SAT-PE em 14/11/2008.

@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: rodrigo-condeixa
+name: Rodrigo Condeixa
+biography: >-
+  Clérigo ligado à Diocese Anglicana do Recife em Niterói (RJ). Em 2010 era responsável pelo Ponto Missionário Anglicano
+  Pão e Vinho, no Arcediagado Sul/Sudeste, sob o bispo Edward Robinson de Barros Cavalcanti, e constava como postulante
+  e como ministro local encarregado em reconhecimento de ordem.
+sources:
+- source: d2s05-episc-rodrigo
+  quote: >-
+    Irmãos e irmãs do Arcediagado Sul/Sudeste e em especial ao nosso Bispo Revmo. +Dom Edward Robinson de Barros
+    Cavalcanti
+- source: d2s03-hom-sulsudeste
+  quote: Rev. Rodrigo Condeixa+ (Postulante – PMA Pão e Vinho – Niterói-RJ)
+- source: d2s19-consulta-rj
+  quote: >-
+    A Revda. Silvana Venâncio, os Postulantes Igor Lazari e Elion Campos , e o ministro em Reconhecimento de Ordem,
+    Rodrigo Condeixa, estiveram acompanhando o nosso Bispo
+- source: d2s20-niteroi
+  quote: >-
+    Pontos Missionários Anglicanos Caminho de Emaús e Pão e Vinho , em Niterói-RJ ( Revda. Silvana e Rev. Rodrigo
+    Condeixa, respectivamente)
+- source: d2s21-condeixa
+  quote: tendo como Ministro Local Encarregado o Rev. Rodrigo Condeixa (em Reconhecimento de Ordem)
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  status: probable
+  sources:
+  - source: d2s05-episc-rodrigo
+    quote: >-
+      Queridos clérigos e clérigas, Irmãos e irmãs do Arcediagado Sul/Sudeste e em especial ao nosso Bispo Revmo.
+      +Dom Edward Robinson de Barros Cavalcanti
+  - source: d2s05-episc-rodrigo
+    quote: Terrinha de Araribóia (Niterói), 30 de março de 2010.
+  notes: >-
+    Local: Arcediagado Sul/Sudeste (Niterói). Em exercício em 30 de março de 2010; assina 'Rev. Rodrigo Condeixa+'
+    em Niterói, dirigindo-se aos clérigos do Arcediagado Sul/Sudeste. O texto não informa se é diácono ou presbítero.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: postulante
+  status: confirmed
+  sources:
+  - source: d2s03-hom-sulsudeste
+    quote: Rev. Rodrigo Condeixa+ (Postulante – PMA Pão e Vinho – Niterói-RJ)
+  - source: d2s05-episc-rodrigo
+    quote: Rev. Rodrigo Condeixa+
+  notes: >-
+    Local: Ponto Missionário Anglicano Pão e Vinho (Niterói, RJ). Postulante do Ponto Missionário Pão e Vinho em
+    04/10/2010; em 30/03/2010 assina "Rev. Rodrigo Condeixa" e saúda os "irmãos e irmãs do Arcediagado Sul/Sudeste"
+    de Niterói.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_em_reconhecimento_de_ordem
+  status: confirmed
+  sources:
+  - source: d2s19-consulta-rj
+    quote: >-
+      A Revda. Silvana Venâncio, os Postulantes Igor Lazari e Elion Campos , e o ministro em Reconhecimento de Ordem,
+      Rodrigo Condeixa, estiveram acompanhando o nosso Bispo
+  notes: >-
+    Matéria de 3/06/2010: citado como "ministro em Reconhecimento de Ordem" que acompanhou o bispo Robinson Cavalcanti
+    à consulta teológica da FTL-B (Rio de Janeiro); o texto não informa a igreja de origem. Em jun/2010.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: responsável pelo Ponto Missionário Anglicano Pão e Vinho (Niterói-RJ)
+  status: confirmed
+  sources:
+  - source: d2s20-niteroi
+    quote: >-
+      Pontos Missionários Anglicanos Caminho de Emaús e Pão e Vinho , em Niterói-RJ ( Revda. Silvana e Rev. Rodrigo
+      Condeixa, respectivamente)
+  notes: >-
+    Local: Ponto Missionário Anglicano Pão e Vinho (Niterói-RJ). Em exercício em setembro de 2010. O texto o designa
+    "Rev. Rodrigo Condeixa"; outra notícia da mesma semana o descreve como "Responsável" pelo ponto missionário
+    (bairro de Santa Rosa).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro local encarregado (em reconhecimento de ordem)
+  status: probable
+  sources:
+  - source: d2s21-condeixa
+    quote: tendo como Ministro Local Encarregado o Rev. Rodrigo Condeixa (em Reconhecimento de Ordem)
+  notes: >-
+    Local: Ponto Missionário Anglicano Pão e Vinho (Niterói-RJ; Arcediagado Sul/Sudeste). Página de 25/06/2010.
+    O primeiro culto do novo ponto missionário estava marcado para 04/07/2010 (fato posterior à página, não registrado
+    como ocorrido); o ponto missionário integra o Arcediagado Sul/Sudeste (arcediago: Carlos Alberto Fernandes).

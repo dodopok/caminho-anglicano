@@ -1,10 +1,20 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: aldo-dos-santos-menezes
 name: Aldo dos Santos Menezes
+full_name: Aldo dos Santos Menezes
+aliases:
+- Aldo Menezes
+- Deão Aldo Menezes
+- Rev. Aldo Menezes
+- Revmo. Aldo Menezes
+- Revmo. Deão Aldo Menezes
 biography: >-
-  Aldo dos Santos Menezes foi ordenado presbítero por Robinson Cavalcanti na Diocese Anglicana do Recife (DAR) em
-  2006, provavelmente em 01/07. Foi instituído em 03/01/2010 deão da Con-Catedral Anglicana da Ressurreição, em
-  João Pessoa (PB), e atuou como ministro auxiliar e membro da junta de capelães examinadores da diocese.
+  Aldo dos Santos Menezes é formado em Filosofia pela Universidade de São Paulo, professor de Religiões e Crenças,
+  autor e antigo editor das editoras Vida Nova e Mundo Cristão. Foi ordenado presbítero por Robinson Cavalcanti
+  na Diocese Anglicana do Recife em 2006, provavelmente em 01/07. Atuou como ministro auxiliar em João Pessoa (PB)
+  e, em 2009, constava na junta de capelães examinadores da diocese. Foi instituído em 03/01/2010 deão da Con-Catedral
+  Anglicana da Ressurreição, em João Pessoa. Fontes posteriores o descrevem também como ministro ordenado da Igreja
+  Anglicana do Cone Sul da América.
 sources:
 - source: drp2-breves-08-2006
   quote: >-
@@ -12,6 +22,16 @@ sources:
     dia 01/07.
 - source: drp2-breves-08-2006
   quote: no Culto Solene de Ordenação Presbiteral do Rev. Aldo Menezes
+- source: d2s04-aldo-esperanza
+  quote: >-
+    Formado em Filosofia pela Universidade de São Paulo (USP), é professor de Religiões e Crenças, pesquisador e
+    palestrante no campo da religião.
+- source: d2s22-aldo-livro
+  quote: Aldo também teve passagens importantes como editor pelas editoras Vida Nova e Mundo Cristão.
+- source: dard1-com-pbrnce-2009a
+  quote: 'Ministro Encarregado: Ven. Arc. Rev. Luiz de Souza França Auxiliar: Rev. Aldo Menezes'
+- source: dard1-eletivos-2009a
+  quote: Rev. Aldo dos Santos Menezes (3 anos)
 - source: darl1-9500
   quote: >-
     Rev. Aldo Menezes é Presbítero da Diocese do Recife; Deão da Con-Catedral Anglicana da Ressurreição, em João
@@ -20,16 +40,12 @@ sources:
   quote: >-
     Sermão de Instituição do Deão Aldo Menezes e do Cônego Luiz Souza de França Concatedral Anglicana da Ressurreição
     João Pessoa (PB), 03.01.2010
-- source: dard2-com-pb
-  quote: CON-CATEDRAL ANGLICANA DA RESSURREIÇÃO Revmo. Deão Aldo Menezes
-- source: dard1-com-pbrnce-2009a
-  quote: 'Ministro Encarregado: Ven. Arc. Rev. Luiz de Souza França Auxiliar: Rev. Aldo Menezes'
-- source: dard1-eletivos-2009a
-  quote: Rev. Aldo dos Santos Menezes (3 anos)
-- source: drp-boletim-oracao-2006
+- source: darl1-8245
   quote: >-
-    Orar pelos Ministros no Brasil ligados canonicamente a Diocese do Recife: Rev. Aldo Menezes e Rev. Gilberto
-    Hinkel
+    Revmo. Aldo dos Santos Menezes é Presbítero na Diocese do Recife; Deão na Concatedral Anglicana da Ressurreição,
+    em João Pessoa, no Arcediagado PB/CE/RN.
+- source: d2s22-aldo-livro
+  quote: Ministro Ordenado da Igreja Anglicana do Cone Sul da América
 ordinations:
 - order: presbyterate
   date: '2006-07-01'
@@ -82,6 +98,22 @@ affiliations:
     quote: Posse do Rev. Aldo Menezes Como Deão da Concatedral Anglicana da Ressurreição
   - source: darn2-throup-coadjutor-2010
     quote: A Concatedral Anglicana da Ressurreição ( Revmo. Aldo Menezes – Deão )
+  - source: d2s04-aldo-esperanza
+    quote: >-
+      Revmo. Aldo Menezes é Presbítero na Diocese do Recife; Deão na Concatedral Anglicana da Ressurreição, em João
+      Pessoa, no Arcediagado PB/CE.
+  - source: d2s04-aldo-politica
+    quote: >-
+      Revmo. Aldo Menezes é Presbítero na Diocese do Recife; Deão na Concatedral Anglicana da Ressurreição, em João
+      Pessoa, no Arcediagado PB/CE.
+  - source: d2s13-lausanne-avaliando
+    quote: “A Verdade, Nada Mais Que a Verdade” - Revmo. Deão Aldo Menezes
+  - source: darl1-8245
+    quote: Deão na Concatedral Anglicana da Ressurreição, em João Pessoa
+  - source: d2s04-aldo-esperanza
+    quote: Deão na Concatedral Anglicana da Ressurreição, em João Pessoa, no Arcediagado PB/CE
+  - source: darl1-9500
+    quote: Deão da Con-Catedral Anglicana da Ressurreição, em João Pessoa-PB, e que tomará posse dia 03/01/2010
   notes: >-
     Local: Concatedral Anglicana da Ressurreição, João Pessoa-PB. A posse foi anunciada para 2010-01-03 em texto
     de 2009-12-08 (data de início conforme o anúncio); em 2010-06-14 já assina como deão. Em 2010-11-29 ainda é
@@ -92,7 +124,13 @@ affiliations:
     com Aldo dos Santos Menezes (presbítero da diocese, ordenado em 2006) se apoia no nome. Local: Concatedral Anglicana
     da Ressurreição (João Pessoa). Assinatura de artigo datado de 14/06/2010. Local: Concatedral Anglicana da Ressurreição,
     João Pessoa-PB. A posse é noticiada em 24/03/2010 (com vídeo); a nota não informa a data da cerimônia. Julho
-    de 2010: a Concatedral é "uma Paróquia Emancipada da Diocese do Recife".
+    de 2010: a Concatedral é "uma Paróquia Emancipada da Diocese do Recife". Local: Concatedral Anglicana da Ressurreição
+    (João Pessoa-PB; Arcediagado PB/CE). Em exercício em outubro e novembro de 2010 (a posse como deão fora em 03/01/2010).
+    Em exercício em outubro/novembro de 2010: a página de 30/10/2010, capturada em 01/11/2010, lista matéria assinada
+    pelo Revmo. Deão Aldo Menezes. Local: Concatedral Anglicana da Ressurreição (João Pessoa, PB); Arcediagado PB/CE/RN.
+    Assina como deão da Concatedral da Ressurreição em artigos de junho a novembro de 2010 (o site grafa o arcediagado
+    como PB/CE ou PB/CE/RN). Local: Concatedral Anglicana da Ressurreição (João Pessoa, PB). Em 08/12/2009 a página
+    anuncia que tomará posse como deão em 03/01/2010; a data é anterior ao fato e consta aqui como anúncio da época.
 - jurisdiction: diocese-anglicana-recife
   role: clergy
   status: confirmed
@@ -103,10 +141,19 @@ affiliations:
     quote: >-
       Orar pelos Ministros no Brasil ligados canonicamente a Diocese do Recife: Rev. Aldo Menezes e Rev. Gilberto
       Hinkel
+  - source: d2s03-hom-pbcern
+    quote: Rev. Aldo Menezes
+  - source: d2s03-hom-pbcern
+    quote: (Mensagem do Arcediagado PB/CE/RN)
+  - source: d2s03-hom-pbcern
+    quote: Ven. Arc. Rev. Côn. Luiz Souza de França (Arcediagado PB/CE/RN) … Rev. Aldo Menezes
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados. Ministro "ligado canonicamente" à Diocese do Recife
-    em out/nov de 2006; o boletim não diz onde servia.
+    em out/nov de 2006; o boletim não diz onde servia. Local: Arcediagado PB/CE/RN. Em exercício em outubro de 2010,
+    conforme a mensagem publicada em 05/10/2010 no site da Diocese do Recife; listado entre os signatários da mensagem
+    do Arcediagado PB/CE/RN Local: Arcediagado PB/CE/RN. Consta entre os clérigos que assinam a mensagem do Arcediagado
+    PB/CE/RN de 05/10/2010 (grafia do site: "Rev. Aldo Menezes"); em exercício em outubro/2010.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: deão
@@ -114,9 +161,14 @@ affiliations:
   sources:
   - source: dard2-com-pb
     quote: CON-CATEDRAL ANGLICANA DA RESSURREIÇÃO Revmo. Deão Aldo Menezes
+  - source: d2s01-pj-pb
+    quote: CON-CATEDRAL ANGLICANA DA RESSURREIÇÃO Revmo. Deão Aldo Menezes
   notes: >-
     Local: Con-Catedral Anglicana da Ressurreição (João Pessoa-PB). Deão da Con-Catedral da Ressurreição (Tambiá,
     João Pessoa) na página do Arcediagado PB/RN/CE de 20/08/2009 (captura de 29/11/2010); início não informado.
+    Local: Con-Catedral Anglicana da Ressurreição (João Pessoa-PB). Em exercício em ago/2010, segundo a página "Um
+    Projeto Missionário Anglicano Ortodoxo para o Brasil III – Estado da Paraíba" (publicada em 26/08/2010). Local:
+    Con-Catedral Anglicana da Ressurreição (João Pessoa-PB).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: junta_de_capelaes_examinadores
@@ -138,6 +190,48 @@ affiliations:
   notes: >-
     Local: Ponto Missionário Anglicano Santo Estevão (São Miguel de Taipu-PB). Consta na página de comunidades do
     Arcediagado PB/RN/CE capturada em 03/01/2009 (sem data de publicação visível).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: deao
+  status: confirmed
+  sources:
+  - source: d2s19-aldo-zoroastro
+    quote: >-
+      Revmo. Aldo Menezes é Presbítero na Diocese do Recife; Deão na Concatedral Anglicana da Ressurreição, em João
+      Pessoa, no Arcediagado PB/CE.
+  - source: d2s19-aldo-cabeca
+    quote: >-
+      Revmo. Aldo Menezes é Presbítero na Diocese do Recife; Deão na Concatedral Anglicana da Ressurreição, em João
+      Pessoa, no Arcediagado PB/CE.
+  notes: >-
+    Local: Concatedral Anglicana da Ressurreição (João Pessoa-PB; Arcediagado PB/CE). Em exercício em nov/2010 (artigos
+    de 24/11 e 29/11/2010, assinados "Revmo. Deão Aldo Menezes").
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: deão da Concatedral Anglicana da Ressurreição (João Pessoa-PB)
+  status: confirmed
+  sources:
+  - source: d2s20-elton
+    quote: Concatedral Anglicana da Ressurreição ( Revmo. Deão Aldo Menezes )
+  notes: 'Local: Concatedral Anglicana da Ressurreição (João Pessoa-PB). Em exercício em 15/12/2010.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: deão da Concatedral Anglicana da Ressurreição
+  status: confirmed
+  sources:
+  - source: d2s20-elton
+    quote: Concatedral Anglicana da Ressurreição ( Revmo. Deão Aldo Menezes )
+  notes: 'Local: Concatedral Anglicana da Ressurreição (João Pessoa). Em exercício em dez/2010.'
+- jurisdiction: iacs
+  role: other
+  role_description: ministro ordenado
+  status: confirmed
+  sources:
+  - source: d2s22-aldo-livro
+    quote: Ministro Ordenado da Igreja Anglicana do Cone Sul da América
+  notes: >-
+    Local: Igreja Anglicana do Cone Sul da América. Nota biográfica do autor em divulgação de seu livro, publicada
+    em 11/03/2010; a diocese estava então sob a supervisão primacial do Cone Sul.
 events:
 - type: other
   date: '2009-12-05'

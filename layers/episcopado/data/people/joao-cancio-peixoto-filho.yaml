@@ -22,14 +22,17 @@ birth:
     page: '243'
 wikidata: Q47537839
 biography: >-
-  Nascido no Recife em 17/05/1961, ingressou na IEAB em março de 1983 e foi ordenado diácono em 26/07/2003, por
-  Robinson Cavalcanti, e presbítero em 2005. Em 2004 esteve entre os signatários de "Para além das trincheiras",
-  que pedia reconciliação na Diocese Anglicana do Recife. Eleito bispo da diocese em novembro de 2013, foi sagrado
-  em 14/12/2013, na Catedral da Santíssima Trindade, em cerimônia presidida pelo primaz Francisco de Assis da Silva,
-  com Sebastião Gameleira, Maurício Andrade, Saulo de Barros e Filadelfo Oliveira como co-sagrantes, e é bispo diocesano
-  desde então. Descreve a diocese recebida como fragilizada após o cisma, e em 2016 cinco templos ocupados pelo
-  grupo de Robinson foram devolvidos à IEAB. Reconheceu as ordens de Martorelli Dantas da Silva (2023) e de Osiel
-  Ferreira de Assunção (agosto de 2026).
+  Nascido no Recife em 17 de maio de 1961, ingressou na IEAB em março de 1983, por meio de um Encontro de Jovens
+  com Cristo da Catedral da Santíssima Trindade. Foi ordenado diácono em 26 de julho de 2003, por Robinson Cavalcanti,
+  e presbítero em 2005, e foi reitor do Seminário Anglicano de Estudos Teológicos (SAET). Em 2004 esteve entre os
+  signatários de "Para além das trincheiras", que pedia reconciliação na Diocese Anglicana do Recife. Eleito em
+  novembro de 2013, foi sagrado bispo em 14 de dezembro de 2013, na Catedral da Santíssima Trindade, em cerimônia
+  presidida pelo primaz Francisco de Assis da Silva, com Sebastião Gameleira, Maurício Andrade, Saulo de Barros
+  e Filadelfo Oliveira como co-sagrantes, e é bispo diocesano desde então. Descreve a diocese recebida como fragilizada
+  após o cisma, sem patrimônio e em crise financeira; em 2016 cinco templos ocupados pelo grupo de Robinson foram
+  devolvidos à IEAB, e em 29 de maio daquele ano o Bom Samaritano foi reaberto sob sua liderança. Participou de
+  19 ordenações de diáconos ou presbíteros e reconheceu as ordens de Martorelli Dantas da Silva (4 de junho de 2023)
+  e de Osiel Ferreira de Assunção (agosto de 2026).
 sources:
 - source: costa2021
   quote: João Câncio Peixoto Filho nasceu em Recife, em 17 de maio de 1961.
@@ -42,8 +45,9 @@ sources:
   quote: >-
     Ordenado ao diaconato no ano de 2003 e ao presbiterato em 2005, João Peixoto também foi reitor do Seminário
     Anglicano de Estudos Teológicos (SAET).
-- source: dar-2023-peixoto10
-  quote: Ordenado ao diaconato no ano de 2003 e ao presbiterato em 2005
+- source: costa2021
+  quote: No ano de 2003, foi ordenado ao diaconato e, em 2005, ao presbiterato.
+  page: '115'
 - source: costa2021
   quote: >-
     Assinaram este documento: Rev. Gustavo Gilson S. de Oliveira, ose; Rev. Fábio S. Vasconcelos; Rev. Elias Leôncio
@@ -72,6 +76,10 @@ sources:
     A reintegração de posse dos templos foi concretizada somente em 2016, após uma longa batalha judicial para o
     cumprimento da sentença.
   page: '244'
+- source: f8gil-dar-catedral-10anos
+  quote: >-
+    Em 29 de maio de 2016, já sob a liderança do Bispo João Câncio Peixoto e do Rev. Gustavo Gilson Oliveira, a
+    Paróquia do Bom Samaritano foi oficialmente reaberta
 - source: dar-2023-martorelli
   quote: >-
     No último dia 04 de junho, o nosso Bispo Diocesano Dom João Cancio Peixoto Filho, em solenidade celebrada nas
@@ -233,6 +241,8 @@ affiliations:
     quote: >-
       Dentre essas pessoas que permaneceram na IEAB, se encontravam os reverendos Sérgio Andrade e João Câncio Peixoto.
     page: '203'
+  - source: d2s32-decreto-camara
+    quote: Rev. Francisco Sales de Melo Silva, osf, Rev. João C. Peixoto Filho e Rev. Josafá Batista dos Santos
   notes: >-
     Clérigo(a) da DAR em setembro de 2004, entre os 13 que pediram à Câmara dos Bispos supervisão episcopal especial
     por divergência com o bispo Robinson Cavalcanti — isto é, o grupo que permaneceu na IEAB. Futuro bispo diocesano
@@ -240,7 +250,9 @@ affiliations:
     à Câmara dos Bispos supervisão episcopal alternativa (decreto de 16/09/2004), mantendo a comunhão com a IEAB.
     Início e fim do vínculo não informados. Leigo desde 1983; diácono 2003, presbítero 2005. Ficou na IEAB em 2002
     (não seguiu Paulo Garcia) e em 2004-2005 (assinou 'Para além das trincheiras' e 'Não sairemos'). Reitor do SAET
-    por sete anos no episcopado de Sebastião. Fim = sagração.
+    por sete anos no episcopado de Sebastião. Fim = sagração. Relacionado no decreto da Câmara dos Bispos da IEAB
+    (16/09/2004) entre os clérigos da Diocese Anglicana do Recife que, segundo o decreto, solicitaram supervisão
+    episcopal especial; em exercício em setembro de 2004. O decreto não indica paróquia.
 - jurisdiction: ieab
   role: bishop
   start: '2013'
@@ -302,6 +314,66 @@ affiliations:
       Samaritano
     page: '173'
   notes: Bispo diocesano em 2017. Quinto bispo da DAR; situação em 2025.
+- jurisdiction: ieab
+  role: deacon
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-clero04
+    quote: Diáconos (as) - (13) ... João Cáncio Peixoto Filho (17/05)
+  notes: >-
+    Em exercício em outubro de 2004 (página capturada em 24/10/2004). Listado entre os diáconos e diáconas.
+- jurisdiction: ieab
+  role: other
+  role_description: ministro auxiliar
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s28-comun04
+    quote: 'Auxiliar: Rev. João Câncio Peixoto'
+  notes: >-
+    Local: Paróquia Anglicana Bom Samaritano (Recife-PE). Em exercício em outubro de 2004 (página capturada em 24/10/2004).
+- jurisdiction: ieab-dar
+  role: priest
+  status: confirmed
+  sources:
+  - source: d2s31-clero
+    quote: Presbíteros(as) - (12)
+  - source: d2s31-clero
+    quote: Rev. João Câncio Peixoto Filho
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em abril de 2006, segundo a lista do clero da Diocese Anglicana
+    do Recife reorganizada pela IEAB. Listado entre os presbíteros.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: ministro responsável
+  status: confirmed
+  sources:
+  - source: d2s31-comun
+    quote: MISSÃO ANGLICANA LIBERDADE Rev. João Câncio Peixoto
+  notes: >-
+    Local: Diocese Anglicana do Recife, Missão Anglicana Liberdade (Jaboatão dos Guararapes, PE). Em exercício em
+    abril de 2006, segundo a lista de paróquias e missões da Diocese Anglicana do Recife reorganizada pela IEAB.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro da Comissão de Companheirismo e Intercâmbio
+  status: confirmed
+  sources:
+  - source: d2s31-sec
+    quote: v. Rev. João Câncio Peixoto
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em outubro de 2004, segundo a lista de cargos diocesanos publicada
+    pela Diocese Anglicana do Recife quando integrava a IEAB.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: membro do Conselho Diocesano
+  status: confirmed
+  sources:
+  - source: d2s31-carta
+    quote: Rev. João C. Peixoto Filho Conselheiro
+  notes: >-
+    Local: Diocese Anglicana do Recife. Signatário da carta aberta do Conselho Diocesano da Diocese Anglicana do
+    Recife (IEAB) de 21/09/2005, com este cargo.
 events:
 - type: other
   date: '2026-08-08'
