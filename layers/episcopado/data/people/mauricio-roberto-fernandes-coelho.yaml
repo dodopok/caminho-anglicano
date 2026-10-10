@@ -142,6 +142,23 @@ affiliations:
     do nome da paróquia, sem explicar.
 - jurisdiction: diocese-anglicana-recife
   role: other
+  role_description: arcipreste honorário (Venerável Arcipreste)
+  start: '2010-05-27'
+  status: confirmed
+  sources:
+  - source: d2s20-arcipreste
+    quote: >-
+      foi concedido o Título Honorífico de Venerável Arcipreste (= Arquipresbítero) ao Rev. Maurício Roberto Fernandes
+      Coelho
+  - source: d2s20-arcipreste
+    quote: >-
+      Esse título é concedido a Presbíteros Anglicanos Aposentados, considerados exemplos de vida e ministério.
+  notes: >-
+    O título foi concedido por iniciativa do bispo Robinson Cavalcanti, homologada por unanimidade pelo Conselho
+    Diocesano em reunião de 27/05/2010. O culto de solenização estava marcado para 21/08/2010, na Paróquia Anglicana
+    Cristo Redentor, em Gravatá-PE.
+- jurisdiction: diocese-anglicana-recife
+  role: other
   role_description: arcipreste
   start: '2010-08-21'
   status: confirmed
@@ -281,7 +298,13 @@ affiliations:
   sources:
   - source: darn1-aniv1108
     quote: 18 – Rev. Maurício Roberto F. Coelho - Assessor Diocesano de Relações Internacionais
-  notes: Cargo atestado na barra lateral capturada em 25/08/2011.
+  - source: d2s20-cargos2011
+    quote: 'b) Assessor Diocesano de Relações Internacionais: Rev. Maurício Roberto Fernandes Coelho'
+  notes: >-
+    Cargo atestado na barra lateral capturada em 25/08/2011. Consta da 'Relação dos Cargos Diocesanos 2011' (publicada
+    em 10/12/2010), seção "Cargos Diocesanos designados pelo Bispo, com ciência pelo Concílio Diocesano", Assessores;
+    cargo designado para o ano de 2011. Designado para o ano de 2011. Local: Assessoria. Cargo para 2011 constante
+    da relação de cargos diocesanos publicada em 10/12/2010 (captura de dez/2010), após o XXX Concílio Diocesano.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago adjunto
@@ -328,9 +351,12 @@ affiliations:
       Jardim das Oliveiras
   - source: dard1-carta-primaz-2004-06
     quote: Ven Arc Rev Maurício R Fernandes Coelho Presidente do Conselho Diocesano Arcediagado Sul
+  - source: d2s23-arcediagos
+    quote: Arcediagado Sul - Ven. Arced. Rev. Maurício Roberto Fernandes Coelho
   notes: >-
     Local: Arcediagado Sul; Paróquia Anglicana Jardim das Oliveiras. Consta na carta aberta de 17/09/2004, assinada
-    pela Diocese do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário.
+    pela Diocese do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Local:
+    Arcediagado Sul. Em exercício em outubro de 2004 (página capturada em 24/10/2004).
 - jurisdiction: ieab
   role: other
   role_description: presidente_do_conselho_diocesano
@@ -416,10 +442,63 @@ affiliations:
     quote: Dia do Episcopado - Homenagem do Arcediagado Centro
   - source: d2s05-episc-centro
     quote: Ven. Arc. Rev. Maurício Coelho+ Rev. Fred Souto+
+  - source: d2s05-episc-centro
+    quote: Ven. Arc. Rev. Maurício Coelho+
+  - source: d2s02-peregrinacao-50anos
+    quote: 'todos os outros Arcediagos usaram da palavra: Rev. Maurício Coelho , Rev. Evilásio e Rev. Peixoto'
+  - source: d2s19-semana-unidade
+    quote: Maurício Coelho (Arcediago Centro e Pároco na Paróquia Anglicana Cristo Redentor )
+  - source: d2s19-cursilho-centro
+    quote: com os Reverendos Maurício Coelho (Arcediago)
+  - source: d2s20-paraguai
+    quote: Maurício Coelho (Arcediago)
   notes: >-
     Local: Arcediagado Centro. Em exercício em outubro de 2010, conforme a mensagem publicada em 05/10/2010 no site
     da Diocese do Recife; assina a mensagem do Arcediagado Centro Local: Arcediagado Centro. Em exercício em 30
     de março de 2010; assina a homenagem do Arcediagado Centro com o Rev. Fred Souto, cujo cargo o texto não indica.
+    Local: Arcediagado Centro. Assina como Venerável Arcediago do Arcediagado Centro em 30/03/2010 e em 05/10/2010
+    (grafia "Maurício Coelho"); em 21/04/2010 é citado entre os arcediagos que saudaram o bispo em Garanhuns. Local:
+    Arcediagado Centro. Em exercício em mai/2010 (matérias de 14 e 21/05/2010). Em exercício em novembro de 2010,
+    conforme a notícia sobre a consulta no Paraguai.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco
+  status: confirmed
+  sources:
+  - source: d2s19-semana-unidade
+    quote: Maurício Coelho (Arcediago Centro e Pároco na Paróquia Anglicana Cristo Redentor )
+  - source: d2s19-caruaru
+    quote: Cristo Redentor , Gravatá
+  notes: >-
+    Local: Paróquia Anglicana Cristo Redentor (Gravatá-PE). Em exercício em mai/2010 (matéria de 21/05/2010).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago do Centro e pároco da Paróquia Anglicana Cristo Redentor
+  status: confirmed
+  sources:
+  - source: d2s19-semana-unidade
+    quote: Maurício Coelho (Arcediago Centro e Pároco na Paróquia Anglicana Cristo Redentor )
+  notes: >-
+    Local: Paróquia Anglicana Cristo Redentor (Gravatá-PE). Em exercício em maio de 2010, na celebração ecumênica
+    em Gravatá-PE.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: assessor diocesano de Relações Internacionais
+  status: confirmed
+  sources:
+  - source: d2s22-cargos2011
+    quote: 'b) Assessor Diocesano de Relações Internacionais: Rev. Maurício Roberto Fernandes Coelho'
+  notes: >-
+    Cargo constante da Relação dos Cargos Diocesanos 2011, publicada em 10/12/2010 (captura de 28/12/2010); designação
+    para o exercício de 2011.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco da Paróquia Anglicana Cristo Redentor (Gravatá-PE)
+  status: confirmed
+  sources:
+  - source: d2s22-gravata-2015
+    quote: De acordo com o Reverendo Maurício Roberto Fernandes Coelho (Pároco)
+  notes: 'Local: Paróquia Anglicana Cristo Redentor (Gravatá-PE). Em exercício em maio/2015.'
 events:
 - type: other
   date: '2005-06-27'
@@ -603,3 +682,18 @@ events:
     quote: >-
       hipotecamos o mais amplo e sólido apoio às posturas e deliberações do nosso bispo diocesano, bispo sufragâneo
       e Conselho Diocesano
+- type: other
+  date: 2010-10
+  description: >-
+    Em outubro de 2010, três clérigos da Diocese do Recife (Geison Vasconcellos, presidente do Conselho Diocesano;
+    Maurício Amazonas, vigário-geral; e Maurício Coelho, arcediago) participaram em Assunção, no Paraguai, da consulta
+    "Crescendo Juntos", com delegações de outras dioceses da Igreja Anglicana do Cone Sul, representantes da CMS/SAMS
+    e do SOMA e o primaz Gregory Venables.
+  status: confirmed
+  sources:
+  - source: d2s20-paraguai
+    quote: >-
+      estiveram, na semana passada, presentes em Assunção, no Paraguai, onde participaram da Consulta “Crescendo
+      Juntos” , ao lado de outras delegações de Dioceses da Igreja Anglicana do Cone Sul da América
+  - source: d2s20-paraguai
+    quote: Dentre os participantes estava o Primaz Revmo. Gregory Venables

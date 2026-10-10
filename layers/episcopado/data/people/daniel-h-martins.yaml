@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: daniel-h-martins
+name: Daniel H. Martins
+full_name: Daniel H. Martins
+aliases:
+- Daniel Martins
+biography: >-
+  Sacerdote da Igreja Episcopal dos Estados Unidos eleito, em setembro de 2010, bispo da Diocese de Springfield
+  (Illinois).
+sources:
+- source: d2s20-springfield
+  quote: >-
+    foi eleito o novo bispo da Diocese de Springfield, Illinois, da Igreja Episcopal (TEC) dos Estados Unidos
+- source: d2s20-springfield
+  quote: >-
+    O Rev. Daniel H. Martins , um brasileiro, nascido no Rio de Janeiro e criado em Chicago, um ex-batista formado
+    no Seminário Nashotah House (anglo-católico)
+- source: d2s22-springfield-eleito
+  quote: >-
+    O Rev. Daniel H. Martins , um brasileiro, nascido no Rio de Janeiro e criado em Chicago, um ex-batista formado
+    no Seminário Nashotah House (anglo-católico) foi eleito o novo bispo da Diocese de Springfield
+affiliations:
+- jurisdiction: tec
+  role: other
+  role_description: bispo diocesano eleito
+  diocese: diocese-of-springfield
+  status: confirmed
+  sources:
+  - source: d2s20-springfield
+    quote: >-
+      foi eleito o novo bispo da Diocese de Springfield, Illinois, da Igreja Episcopal (TEC) dos Estados Unidos
+  - source: d2s20-springfield
+    quote: O Bispo-Eleito ainda terá que ser homologado pela Província antes de sua sagração.
+  notes: >-
+    Eleição noticiada em 21/09/2010 como sucessor de Peter Beckwith; a notícia observa que o bispo eleito ainda
+    precisaria ser homologado pela Província antes da sagração. Eleição noticiada em 21/09/2010, sem data própria
+    da eleição; o texto diz que ainda faltava a homologação pela Província antes da sagração.
+- jurisdiction: tec
+  role: other
+  role_description: bispo eleito da Diocese de Springfield
+  diocese: diocese-of-springfield
+  status: confirmed
+  sources:
+  - source: d2s22-springfield-eleito
+    quote: >-
+      O Rev. Daniel H. Martins , um brasileiro, nascido no Rio de Janeiro e criado em Chicago, um ex-batista formado
+      no Seminário Nashotah House (anglo-católico) foi eleito o novo bispo da Diocese de Springfield, Illinois,
+      da Igreja Episcopal (TEC) dos Estados Unidos
+  notes: >-
+    Eleição noticiada em 21/09/2010; segundo a notícia, o bispo eleito ainda dependia de homologação pela Província
+    antes da sagração (sagração não registrada nesta página).

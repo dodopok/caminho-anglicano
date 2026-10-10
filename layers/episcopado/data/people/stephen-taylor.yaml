@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: stephen-taylor
+name: Stephen Taylor
+biography: >-
+  Presbítero listado pela Diocese Anglicana do Recife, em documento de 2002, entre os clérigos que passaram da diocese
+  para a Diocese Anglicana do Rio de Janeiro.
+sources:
+- source: d2s24-documento-estudo
+  quote: 'Diocese Anglicana do Rio de Janeiro: Rev. Stephen Taylor;'
+- source: d2s25-paudalho
+  quote: >-
+    De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+    – PE
+- source: d2s25-paudalho
+  quote: >-
+    reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
+    Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis, Stephen
+    Taylor, Mitsuo Noyama e Washington Franco.
+affiliations:
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-darj
+  status: confirmed
+  sources:
+  - source: d2s24-documento-estudo
+    quote: Tivemos a redução de 11 clérigos
+  - source: d2s24-documento-estudo
+    quote: 'Diocese Anglicana do Rio de Janeiro: Rev. Stephen Taylor;'
+  notes: >-
+    Listado no documento de estudo da Diocese Anglicana do Recife (2002) entre os 11 clérigos que deixaram a diocese
+    para outras dioceses ou jurisdições; a data da transferência não é informada.
+- jurisdiction: ieab-dar
+  role: clergy
+  status: confirmed
+  sources:
+  - source: d2s25-paudalho
+    quote: >-
+      De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+      – PE
+  - source: d2s25-paudalho
+    quote: >-
+      reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
+      Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis,
+      Stephen Taylor, Mitsuo Noyama e Washington Franco.
+  notes: >-
+    Local: Diocese do Recife. Participante do retiro do clero diocesano em Paudalho (PE), 28/02 a 01/03/1997; clérigo
+    da diocese nessa data, sem informação sobre início ou fim do vínculo.

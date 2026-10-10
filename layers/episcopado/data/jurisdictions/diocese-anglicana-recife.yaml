@@ -601,11 +601,25 @@ relations:
       A Diocese de Springfield, embora integrando a Igreja Episcopal (EUA) tem um status de Diocese Companheira
       com Recife, aprovada sucessivamente, por unanimidade, por três anos seguidos, pelo seu Concílio, com o seu
       Bispo vindo ao Recife e o Bispo do Recife indo ao seu Concílio.
+  - source: d2s20-springfield
+    quote: Springfield mantém, há cinco anos, o status de Diocese Companheira com a Diocese do Recife
+  - source: d2s22-springfield-eleito
+    quote: Springfield mantém, há cinco anos, o status de Diocese Companheira com a Diocese do Recife
   notes: >-
     Boletim de oração de out/nov de 2006 fala em "firmar o companheirismo" com a Diocese de Springfield; o texto
     não dá mais detalhes nem identifica a diocese. Diocese companheira em 2007. Relato de fevereiro de 2011: o Concílio
     da Diocese de Springfield (TEC) aprovou o status de Diocese Companheira com Recife três anos seguidos, com visitas
-    recíprocas dos bispos.
+    recíprocas dos bispos. Informação de 21/09/2010: a Diocese de Springfield (TEC, Illinois) mantinha há cinco
+    anos o status de diocese companheira da Diocese do Recife; a data é aproximada (cinco anos antes de setembro
+    de 2010). Relação de diocese companheira entre Springfield (TEC) e a Diocese do Recife; em setembro de 2010
+    o site fala em "há cinco anos". Em setembro de 2010 a Diocese de Springfield (TEC, Illinois) mantinha havia
+    cinco anos o status de 'Diocese Companheira' da Diocese do Recife, segundo o site da própria DAR.
+  discrepancies:
+  - field: date
+    value: c.2005
+    sources:
+    - source: d2s20-springfield
+      quote: Springfield mantém, há cinco anos, o status de Diocese Companheira com a Diocese do Recife
 - type: in_communion_with
   target: diocese-de-springfield
   date: 2005-08
@@ -721,6 +735,8 @@ relations:
     quote: sempre apoiando seu Bispo Diocesano, Dom Edward Robinson de Barros Cavalcanti
   - source: d2s08-doutrina-org
     quote: ou a Diocese do Recife, na atual conjuntura, ligada ao Primaz do Cone Sul
+  - source: d2s20-zavala
+    quote: nossa Autoridade Primacial
   notes: >-
     Jurisdição extra-provincial ('supervisão primacial'), não diocese plena do Cone Sul. Fim = criação da IAB (inferido).
     A Diocese do Recife, desligada da IEAB em 2005, passou à autoridade primacial do Cone Sul; em 2010 e 2011 o
@@ -734,7 +750,8 @@ relations:
     no Cone Sul da América. Em 21/11/2010, a Paróquia Anglicana da Redenção declara vínculo canônico com a Diocese
     do Recife e com a Província do Cone Sul, e identifica Robinson Cavalcanti como seu bispo diocesano. Texto doutrinário
     publicado em 18/09/2009 que, ao explicar as dioceses extraprovinciais (ligadas diretamente a um primaz), cita
-    a Diocese do Recife como ligada ao primaz do Cone Sul.
+    a Diocese do Recife como ligada ao primaz do Cone Sul. Em dezembro de 2010 a diocese chama o primaz do Cone
+    Sul de "nossa Autoridade Primacial".
   discrepancies:
   - field: date
     value: 2007-12
@@ -754,6 +771,11 @@ relations:
     - source: d2s04-gorete-13anos
       quote: >-
         A Paróquia Anglicana da Redenção tem vínculo canônico com a DIOCESE DO RECIFE, com a Província do CONE-SUL
+  - field: date
+    value: 2010-12
+    sources:
+    - source: d2s20-zavala
+      quote: nossa Autoridade Primacial
 - type: member_of
   target: gafcon
   date: '2008'
@@ -853,6 +875,18 @@ relations:
       Dia de São Barnabé, 2010 A.D.
   - source: d2s14-igreja-denominacoes
     quote: em mútuo reconhecimento com outra organização regional (Igreja Anglicana na América do Norte)
+  - source: d2s19-eua
+    quote: objetivando um estreitamento de relações institucionais
+  - source: d2s19-acna-concilio
+    quote: >-
+      Ao plenário o Primaz expressou sua afetividade para com a Diocese do Recife, expressando desejo de se encontrar
+      formas de contínuo relacionamento
+  - source: d2s19-i24
+    quote: >-
+      O Arcebispo Foley Beach, Primaz da Igreja Anglicana da América do Norte (ACNA) enviou uma mensagem a todos
+      os presentes, manifestando apoio a Diocese.
+  - source: d2s21-acna-volta
+    quote: quando assinou um Memorando de Entendimento e Cooperação
   notes: >-
     Memorando de Compreensão e Entendimento 2010 entre a ACNA e a Diocese do Recife: observadores nos concílios
     anuais, aceitação mútua das ordens ministeriais, parcerias entre dioceses e paróquias e exame de um pedido do
@@ -861,7 +895,11 @@ relations:
     não a plena comunhão; a relação foi classificada como em_comunhao_com por falta de tipo mais próximo. O mesmo
     colégio decidiu não aceitar filiação de organizações de fora da América do Norte (esclarecimento de 20/06/2010).
     Relação descrita pelo bispo diocesano em 30/06/2010, como reconhecimento mútuo com a Igreja Anglicana na América
-    do Norte.
+    do Norte. Em jun/2010 o bispo Robinson Cavalcanti participou como observador de reuniões da ACNA, e o primaz
+    Robert Duncan manifestou desejo de formas de relacionamento contínuo com a Diocese do Recife; em dez/2014 o
+    primaz Foley Beach enviou mensagem de apoio ao sínodo diocesano. Memorando de Entendimento e Cooperação assinado
+    pelo bispo Robinson Cavalcanti durante o sínodo provincial e o Colégio dos Bispos da ACNA, em Amesbury (Massachusetts),
+    em junho de 2010; o site da diocese o descreve como assinado na ocasião da viagem de 07 a 17/06/2010.
 - type: in_communion_with
   target: cascadia-acna
   date: '2010-07-02'
@@ -877,11 +915,17 @@ relations:
     quote: >-
       O Bispo Robinson Cavalcanti por quatro anos exerceu Supervisão Episcopal sobre comunidades dessa nova Diocese
       da ACNA, e que constituíam o “Arcediagado Norte-Americano” da Diocese do Recife.
+  - source: d2s19-cascadia
+    quote: >-
+      aprovou em 02.07 o status de “Diocese Companheira” com a Diocese do Recife, que já havia tomado idêntica deliberação
+      em seu Concílio Diocesano, em dezembro do ano passado
   notes: >-
     Status de "Diocese Companheira": aprovado pelo concílio diocesano do Recife em dezembro de 2009 e pelo concílio
     da Diocese de Cascádia (leste do estado de Washington, ACNA) em 02/07/2010. As comunidades de Cascádia formaram
     antes o Arcediagado Norte-Americano da Diocese do Recife, sob supervisão episcopal de Robinson Cavalcanti por
-    quatro anos.
+    quatro anos. A Diocese de Cascádia (ACNA) aprovou em 2/07/2010, em seu Concílio, o status de "Diocese Companheira"
+    da Diocese do Recife, que havia tomado deliberação idêntica no Concílio Diocesano de dez/2009. Em dez/2014 o
+    bispo de Cascádia, Kevin Bond Allen, pregou no sínodo da Diocese do Recife.
 - type: successor_of
   target: ieab-dar
   date: null

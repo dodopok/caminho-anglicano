@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-southwark
+name: Diocese de Southwark
+type: diocese
+relations:
+- type: part_of
+  target: church-of-england
+  status: probable
+  sources:
+  - source: d2s30-arcebispo
+    quote: >-
+      Revd Joabe G. Cavalcanti é capelão na Catedral de Southwark, Londres, e doutorando na London School of Economics
+      and Political Science.

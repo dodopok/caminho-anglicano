@@ -120,6 +120,19 @@ sources:
   quote: >-
     Bird foi eleito quinto bispo da Diocese Anglicana de São Paulo (DASP) no concílio extraordinário de 7 de junho
     de 2007 em São Paulo e foi consagrado no dia 7 de setembro do mesmo ano.
+- source: d2s25-paudalho
+  quote: >-
+    De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+    – PE
+- source: d2s25-paudalho
+  quote: >-
+    a escolha do novo bispo entre um dos clérigos diocesanos, a sugestão de três nomes: Revs. Ian Meldrum, Robinson
+    Cavalcanti e Maurício Andrade e a aprovação unânime de um documento intitulado “Reflexões e Compromissos”
+- source: d2s25-paudalho
+  quote: >-
+    reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
+    Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis, Stephen
+    Taylor, Mitsuo Noyama e Washington Franco.
 ordinations:
 - order: diaconate
   date: '1988-01-06'
@@ -301,7 +314,13 @@ affiliations:
   - source: costa2021
     quote: Nomear o Revmo. Bispo Dom Mauricio Andrade, bispo diocesano de Brasília
     page: '218'
-  notes: Anexo D da tese (bispos por diocese). Bispo diocesano de Brasília em 2004.
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Eleição do novo Bispo da Diocese Missionária de Brasília, Rev. Côn. Maurício J. A. de Andrade (atual Secretário
+      Geral da IEAB).
+  notes: >-
+    Anexo D da tese (bispos por diocese). Bispo diocesano de Brasília em 2004. Eleito bispo da Diocese Missionária
+    de Brasília pelo XXIX Sínodo Geral da IEAB (2003); na ocasião era cônego e secretário-geral da IEAB.
   discrepancies:
   - field: start
     value: '2003-08-31'
@@ -420,6 +439,44 @@ affiliations:
     quote: Diocese Anglicana de Brasília, pastoreada pelo bispo Maurício Andrade
     page: '158'
   notes: Período não informado; contexto da transferência de Magela (após 2017).
+- jurisdiction: ieab
+  role: other
+  role_description: secretário-geral da IEAB
+  end: '2003'
+  status: probable
+  sources:
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Eleição do novo Bispo da Diocese Missionária de Brasília, Rev. Côn. Maurício J. A. de Andrade (atual Secretário
+      Geral da IEAB).
+  notes: Secretário-geral da IEAB na data do XXIX Sínodo Geral (2003).
+- jurisdiction: ieab-dar
+  role: clergy
+  status: confirmed
+  sources:
+  - source: d2s25-paudalho
+    quote: >-
+      De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+      – PE
+  - source: d2s25-paudalho
+    quote: >-
+      reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
+      Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis,
+      Stephen Taylor, Mitsuo Noyama e Washington Franco.
+  notes: >-
+    Local: Diocese do Recife. Participante do retiro do clero diocesano em Paudalho (PE), 28/02 a 01/03/1997; clérigo
+    da diocese nessa data, sem informação sobre início ou fim do vínculo.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: cônego
+  status: probable
+  sources:
+  - source: d2s27-igreja-catedral
+    quote: Por sugestão do Rev. Cônego Maurício Andrade
+  notes: >-
+    Local: Diocese Anglicana do Recife. Citado como 'Rev. Cônego' ao ser creditado com a sugestão de transformar
+    a Paróquia da Santíssima Trindade em Catedral, aprovada pelo Concílio de dezembro de 1997. O texto não diz se
+    o título é o da época da sugestão ou o do momento da redação, e não indica a data da nomeação.
 events:
 - type: other
   date: '2008'
@@ -857,3 +914,53 @@ events:
     quote: >-
       Ainda tentamos reverter a inusitada situação, em reunião com o Deão e com a Junta da Catedral, porém, o compromisso
       assumido pelos mesmos naquela ocasião também não foi cumprido.
+- type: other
+  date: '2003'
+  description: >-
+    XXIX Sínodo Geral da IEAB: criação da Diocese Missionária de Curitiba e eleição de seu primeiro bispo, Naudal
+    Alves Gomes; eleição de Maurício José Araújo de Andrade como bispo da Diocese Missionária de Brasília; eleição
+    de Orlando Santos de Oliveira como bispo primaz; eleição de Cristina Winnishofer como secretária-geral; decisão
+    de convocar um sínodo extraordinário para reformas canônicas, inclusive adequação ao novo Código Civil.
+  status: probable
+  sources:
+  - source: d2s24-encontro-primazes
+    quote: Principais Resoluções do XXIX Sínodo Geral
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Criação da Diocese Missionária de Curitiba e eleição do seu primeiro Bispo, D. Naudal Alves Gomes (atual Bispo
+      Sufragâneo da Diocese Sul-Ocidental - Santa Maria /RS).
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Decisão de convocar um Sínodo Extraordinário para reformas canônicas, inclusive para a adequação ao Novo Código
+      Civil.
+- type: other
+  date: '1997-02-28'
+  description: >-
+    Retiro do clero da Diocese Anglicana do Recife em Paudalho (PE), de 28/02 a 01/03/1997, que definiu que o novo
+    bispo seria escolhido entre os clérigos diocesanos, indicou três nomes (Ian Meldrum, Robinson Cavalcanti e Maurício
+    Andrade) e aprovou o documento “Reflexões e Compromissos” (a Carta de Paudalho).
+  status: confirmed
+  sources:
+  - source: d2s25-paudalho
+    quote: >-
+      De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+      – PE
+  - source: d2s25-paudalho
+    quote: >-
+      a escolha do novo bispo entre um dos clérigos diocesanos, a sugestão de três nomes: Revs. Ian Meldrum, Robinson
+      Cavalcanti e Maurício Andrade e a aprovação unânime de um documento intitulado “Reflexões e Compromissos”
+- type: other
+  date: 1997-12
+  description: >-
+    O Concílio Diocesano aprova, em dezembro de 1997, o Cânon 10, art. 2º, dos Cânones Diocesanos, que faz da Igreja
+    Catedral da Santíssima Trindade, em Recife, a Sé da Diocese Anglicana do Recife, regida por um Cabido; no encerramento
+    do Concílio realiza-se o culto solene de instalação da Catedral e do seu Deão. A proposta, apresentada pelo
+    bispo diocesano Robinson Cavalcanti, partiu de sugestão do Rev. Cônego Maurício Andrade.
+  status: confirmed
+  sources:
+  - source: d2s27-igreja-catedral
+    quote: o Concílio Diocesano aprovou, em dezembro de 1997, o Art.2º, Cânon 10, dos Cânones Diocesanos
+  - source: d2s27-igreja-catedral
+    quote: No encerramento daquele Concílio se deu o Culto Solene de Instalação da Catedral e do seu Deão.
+  - source: d2s27-igreja-catedral
+    quote: Por sugestão do Rev. Cônego Maurício Andrade

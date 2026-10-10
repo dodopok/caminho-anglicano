@@ -286,12 +286,18 @@ affiliations:
       Porém, outro candidato surgiu: Naudal Alves Gomes, bispo auxiliar da Diocese Sul-Ocidental. No decorrer do
       processo eleitoral, Sebastião declinou a indicação e Naudal foi eleito para a sé de Curitiba.
     page: '238'
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Criação da Diocese Missionária de Curitiba e eleição do seu primeiro Bispo, D. Naudal Alves Gomes (atual Bispo
+      Sufragâneo da Diocese Sul-Ocidental - Santa Maria /RS).
   notes: >-
     Primeiro bispo da Diocese de Curitiba (depois Diocese Anglicana do Parana). Anexo D da tese (bispos por diocese).
     O anexo deixa o período aberto, embora liste Magda Guedes Pereira a partir de 2021; o fim do mandato de Naudal
     no Paraná não é informado. Fim = instalação de Magda Guedes (12/12/2021). A tese também diz que a sagração dele
     como bispo de Curitiba (sic, instalação) foi na catedral católica da cidade. Local: Paraná. Antes bispo auxiliar
     da Diocese Sul-Ocidental. Data inferida do contexto (eleição contemporânea à de Sebastião para o Recife, 2006).
+    Eleito primeiro bispo da Diocese Missionária de Curitiba pelo XXIX Sínodo Geral da IEAB (2003), quando era bispo
+    sufragâneo da Diocese Sul-Ocidental.
   discrepancies:
   - field: start
     value: c.2006
@@ -390,6 +396,17 @@ affiliations:
   notes: >-
     Bispo encarregado da igreja de St. Simon, em San Fernando, em julho de 2024; também consta como bispo interino
     encarregado de St. Mark's, em Van Nuys.
+- jurisdiction: ieab
+  role: suffragan_bishop
+  status: probable
+  sources:
+  - source: d2s24-eleicao-sufra
+    quote: >-
+      111 anos de história da IEAB tivemos apenas três eleições de bispos sufragâneos (Pithan, Prado e Naudal)
+  notes: >-
+    Citado pelo bispo diocesano do Recife, em 12/06/2001, entre os três bispos sufragâneos eleitos até então na
+    história da IEAB; o texto dá apenas o sobrenome (Pithan, Prado) ou o prenome (Naudal), e a identificação é a
+    dos bispos brasileiros com esses nomes que foram sufragâneos.
 events:
 - type: other
   date: 1985-05
@@ -446,3 +463,22 @@ events:
     quote: >-
       Bassotto, who will continue to serve as bishop of the Diocese of the Amazon, succeeds the Most Rev. Naudal
       Gomes, who has been presiding bishop of the IEAB since 2018.
+- type: other
+  date: '2003'
+  description: >-
+    XXIX Sínodo Geral da IEAB: criação da Diocese Missionária de Curitiba e eleição de seu primeiro bispo, Naudal
+    Alves Gomes; eleição de Maurício José Araújo de Andrade como bispo da Diocese Missionária de Brasília; eleição
+    de Orlando Santos de Oliveira como bispo primaz; eleição de Cristina Winnishofer como secretária-geral; decisão
+    de convocar um sínodo extraordinário para reformas canônicas, inclusive adequação ao novo Código Civil.
+  status: probable
+  sources:
+  - source: d2s24-encontro-primazes
+    quote: Principais Resoluções do XXIX Sínodo Geral
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Criação da Diocese Missionária de Curitiba e eleição do seu primeiro Bispo, D. Naudal Alves Gomes (atual Bispo
+      Sufragâneo da Diocese Sul-Ocidental - Santa Maria /RS).
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Decisão de convocar um Sínodo Extraordinário para reformas canônicas, inclusive para a adequação ao Novo Código
+      Civil.

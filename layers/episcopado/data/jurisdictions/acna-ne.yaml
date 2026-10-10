@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: acna-ne
+acronym: ACNA-NE
+name: Diocese Anglicana da Nova Inglaterra (ACNA)
+type: diocese
+country: US
+founded:
+  date: 2010-06
+  sources:
+  - source: d2s21-acna-nova-inglaterra
+    quote: >-
+      Tratava-se da inauguração da Diocese Anglicana da Nova Inglaterra , em Amesbury, Massachussets, e a instalação
+      e posse do seu primeiro Bispo, o Revmo. William (Bill) Leo Murdoch
+description: >-
+  Diocese da Igreja Anglicana na América do Norte (ACNA) com sede em Amesbury, Massachusetts, inaugurada em junho
+  de 2010 com a instalação do seu primeiro bispo, William (Bill) Leo Murdoch.
+sources:
+- source: d2s21-acna-nova-inglaterra
+  quote: >-
+    Tratava-se da inauguração da Diocese Anglicana da Nova Inglaterra , em Amesbury, Massachussets, e a instalação
+    e posse do seu primeiro Bispo, o Revmo. William (Bill) Leo Murdoch
+relations:
+- type: part_of
+  target: acna
+  date: 2010-06
+  status: probable
+  sources:
+  - source: d2s21-acna-nova-inglaterra
+    quote: Durante o dia havia se reunido o Colégio dos Bispos da ACNA
+  notes: >-
+    Inaugurada durante a reunião do Colégio dos Bispos da ACNA em Amesbury, segundo o relato do site da Diocese
+    do Recife; a página não dá a data exata da cerimônia (o Colégio terminaria a reunião na sexta-feira, 11/06/2010).

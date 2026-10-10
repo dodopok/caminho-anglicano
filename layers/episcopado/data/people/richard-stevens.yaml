@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: richard-stevens
+name: Richard Stevens
+biography: >-
+  Pastor norte-americano, ex-batista e depois ministro episcopaliano e metodista, acolhido pela Diocese do Recife
+  e restaurado ao ministério anglicano (relato de junho de 2009).
+sources:
+- source: dard2-us-iv
+  quote: Recife o acolheu, e ele nos é profundamente agradecido.
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: clergy
+  diocese: arcediagado-norte-americano
+  status: probable
+  sources:
+  - source: dard2-us-iv
+    quote: o seu maior sonho era ser restaurado ao Ministério Anglicano em uma jurisdição ortodoxa
+  - source: dard2-us-iv
+    quote: Recife o acolheu, e ele nos é profundamente agradecido.
+  - source: dard2-us-iv
+    quote: O Rev. Stevens foi um pastor batista
+  - source: dard2-us-iv
+    quote: Paróquia de St. Charles
+  notes: >-
+    Local: Paróquia de St. Charles. Em visita pastoral de 08/06/2009, o bispo Robinson Cavalcanti descreve o Rev.
+    Richard Stevens, ex-pastor batista e depois ministro episcopaliano e metodista, como restaurado ao ministério
+    anglicano por acolhimento da Diocese do Recife; a paróquia citada é a de St. Charles (nos Estados Unidos). A
+    data da recepção não é informada.

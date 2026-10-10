@@ -148,11 +148,26 @@ affiliations:
     quote: Arcediago Adjunto Rev. Raimundo Figueiredo
   - source: d2s03-hom-pbcern
     quote: (Mensagem do Arcediagado PB/CE/RN)
+  - source: d2s18-home-p18-2010
+    quote: Rev. Côn. Luiz Souza de França , do Arcediago Adjunto, Rev. Raimundo Figueiredo
+  - source: d2s20-cargos2011
+    quote: 'Adjunto: Rev. Raimundo Francisco de Figueiredo'
+  - source: d2s20-vida-renovada
+    quote: Arcediago Adjunto, Rev. Raimundo Figueiredo
+  - source: d2s22-cargos2011
+    quote: 'Adjunto: Rev. Raimundo Francisco de Figueiredo'
   notes: >-
     Local: Arcediagado PB/RN/CE. Lista de arcediagos e adjuntos na página "Comunidades" capturada em 13/10/2009
     e nas páginas de cada arcediagado capturadas em 09/10/2010; início e fim dos cargos não informados. Local: Arcediagado
     PB/CE/RN. Em exercício em outubro de 2010, conforme a mensagem publicada em 05/10/2010 no site da Diocese do
-    Recife; listado entre os signatários da mensagem do Arcediagado PB/CE/RN
+    Recife; listado entre os signatários da mensagem do Arcediagado PB/CE/RN Local: Arcediagado PB/CE/RN. Arcediago
+    adjunto do Arcediagado PB/CE/RN em 05/10/2010 (grafia "Raimundo Figueiredo"). Em exercício em 13/11/2010, na
+    inauguração do Ponto Missionário Anglicano Vida Renovada (Conde-PB). A matéria diz apenas 'Rev. Raimundo Figueiredo';
+    a identificação com Raimundo Francisco de Figueiredo (arcediago adjunto da Paraíba/Rio Grande do Norte nas listas
+    da diocese) é provável. Local: Arcediagado PB/RN. Cargo para 2011 constante da relação de cargos diocesanos
+    publicada em 10/12/2010 (captura de dez/2010), após o XXX Concílio Diocesano. Local: Arcediagado PB/RN. Em exercício
+    em 13/11/2010. Local: Arcediagado PB/RN. Cargo constante da Relação dos Cargos Diocesanos 2011, publicada em
+    10/12/2010 (captura de 28/12/2010); designação para o exercício de 2011.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: deão
@@ -213,6 +228,43 @@ affiliations:
     Local: Comissão de Direito Canônico (mandato de 2 anos). Consta na lista "Cargos Eletivos (Sugestões ao Plenário)"
     capturada em jan/2009; são sugestões ao plenário do Concílio, e a página não informa se foram aprovadas nem
     a data.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: arcediago adjunto do PB/RN
+  status: confirmed
+  sources:
+  - source: d2s20-cargos2011
+    quote: 'Adjunto: Rev. Raimundo Francisco de Figueiredo'
+  notes: >-
+    Consta da 'Relação dos Cargos Diocesanos 2011' (publicada em 10/12/2010), seção "Cargos Diocesanos designados
+    pelo Bispo, com ciência pelo Concílio Diocesano", Arcediagos (adjunto do Arcediagado PB/RN); cargo designado
+    para o ano de 2011. Designado para o ano de 2011.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro da Junta de Capelães Examinadores
+  status: confirmed
+  sources:
+  - source: d2s20-cargos2011
+    quote: c) Rev. Raimundo Francisco de Figueiredo
+  - source: d2s22-cargos2011
+    quote: c) Rev. Raimundo Francisco de Figueiredo 6. Conselho Diocesano
+  notes: >-
+    Consta da 'Relação dos Cargos Diocesanos 2011' (publicada em 10/12/2010), seção "Cargos Eletivos", Junta de
+    Capelães Examinadores; cargo designado para o ano de 2011. Designado para o ano de 2011. Local: Junta de Capelães
+    Examinadores (cargo eletivo). Cargo para 2011 constante da relação de cargos diocesanos publicada em 10/12/2010
+    (captura de dez/2010), após o XXX Concílio Diocesano. Local: Junta de Capelães Examinadores. Cargo constante
+    da Relação dos Cargos Diocesanos 2011, publicada em 10/12/2010 (captura de 28/12/2010); designação para o exercício
+    de 2011. Cargo eletivo.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: responsável pela Concatedral Anglicana da Ressurreição
+  status: probable
+  sources:
+  - source: d2s22-assembleia-pbrn-2015
+    quote: Concatedral da Ressurreição (Rev. Raimundo Figueiredo) em João Pessoa - PB
+  notes: >-
+    Local: Concatedral Anglicana da Ressurreição (João Pessoa). Em maio/2015, com o reverendo indicado entre parênteses
+    após o nome da concatedral.
 events:
 - type: other
   date: '2005-06-18'
@@ -230,3 +282,48 @@ events:
     quote: >-
       A partir de agosto de 2021 passou a fazer parte da Equipe Pastoral da Catedral Anglicana Comunhão em João
       Pessoa.
+- type: other
+  date: '2010-11-13'
+  description: >-
+    Em 13/11/2010 nasce o Ponto Missionário Anglicano Vida Renovada, em Mituaçú (município de Conde, PB), primeiro
+    'filho' da futura Paróquia Anglicana do Consolador (Rev. Côn. Souza). O culto de inauguração contou com o arcediago,
+    Rev. Côn. Luiz Souza de França, e com o arcediago adjunto, Rev. Raimundo Figueiredo.
+  status: confirmed
+  sources:
+  - source: d2s18-home-p18-2010
+    quote: neste sábado, 13.11, nasceu o Ponto Missionário Anglicano Vida Renovada
+  - source: d2s18-home-p18-2010
+    quote: primeiro filho da futura Paróquia Anglicana do Consolador (Rev. Côn. Souza)
+  - source: d2s18-home-p18-2010
+    quote: Rev. Côn. Luiz Souza de França , do Arcediago Adjunto, Rev. Raimundo Figueiredo
+- type: other
+  date: '2010-11-13'
+  description: >-
+    Em 13/11/2010 foi inaugurado, no quilombola de Mituaçu (Conde-PB), o Ponto Missionário Anglicano Vida Renovada,
+    primeiro filho da futura Paróquia Anglicana do Consolador (Rev. Côn. Souza). Estiveram presentes o arcediago
+    Luiz Souza de França e o arcediago adjunto Raimundo Figueiredo.
+  status: confirmed
+  sources:
+  - source: d2s20-vida-renovada
+    quote: >-
+      neste sábado, 13.11, nasceu o Ponto Missionário Anglicano Vida Renovada , primeiro filho da futura Paróquia
+      Anglicana do Consolador (Rev. Côn. Souza)
+  - source: d2s20-vida-renovada
+    quote: >-
+      contou com a presença do Venerável Arcediago, Rev. Côn. Luiz Souza de França , do Arcediago Adjunto, Rev.
+      Raimundo Figueiredo
+- type: other
+  date: '2010-11-13'
+  description: >-
+    Em 13/11/2010 foi inaugurado o Ponto Missionário Anglicano Vida Renovada, no quilombola de Mituaçu (Conde-PB),
+    descrito como primeiro filho da futura Paróquia Anglicana do Consolador (Rev. Cônego Souza); o culto de inauguração
+    contou com o arcediago Luiz Souza de França e o arcediago adjunto Raimundo Figueiredo.
+  status: confirmed
+  sources:
+  - source: d2s20-vida-renovada
+    quote: >-
+      neste sábado, 13.11, nasceu o Ponto Missionário Anglicano Vida Renovada , primeiro filho da futura Paróquia
+      Anglicana do Consolador (Rev. Côn. Souza)
+  - source: d2s20-vida-renovada
+    quote: >-
+      do Venerável Arcediago, Rev. Côn. Luiz Souza de França , do Arcediago Adjunto, Rev. Raimundo Figueiredo

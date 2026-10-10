@@ -106,7 +106,12 @@ affiliations:
   sources:
   - source: drp2-noticia-alpha-2011
     quote: O Secretário Diocesano de Educação, Rev. Henrique Lacerda (Paróquia Anglicana Adoração)
-  notes: 'Local: Paróquia Anglicana Adoração. Em junho de 2011.'
+  - source: d2s20-cargos2011
+    quote: 'Secretaria Diocesana Anglicana de Educação: Rev. Henrique César de Almeida Lacerda'
+  notes: >-
+    Local: Paróquia Anglicana Adoração. Em junho de 2011. Consta da 'Relação dos Cargos Diocesanos 2011' (publicada
+    em 10/12/2010), seção "Cargos Diocesanos designados pelo Bispo, com ciência pelo Concílio Diocesano", Secretários;
+    cargo designado para o ano de 2011. Designado para o ano de 2011.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: secretário diocesano de Educação
@@ -114,7 +119,11 @@ affiliations:
   sources:
   - source: darn2-secretarios-2012
     quote: 'Secretaria Diocesana Anglicana de Educação: Rev. Henrique César de Almeida Lacerda'
-  notes: Secretário diocesano em abril de 2012.
+  - source: d2s22-cargos2011
+    quote: 'd) Secretaria Diocesana Anglicana de Educação: Rev. Henrique César de Almeida Lacerda'
+  notes: >-
+    Secretário diocesano em abril de 2012. Cargo constante da Relação dos Cargos Diocesanos 2011, publicada em 10/12/2010
+    (captura de 28/12/2010); designação para o exercício de 2011.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: ministro encarregado
@@ -164,3 +173,46 @@ affiliations:
   - source: d2s08-lacerda-mover
     quote: professor do Seminário Anglicano Teológico – SAT-PB
   notes: Nota biográfica do artigo 'O Mover de Deus' (escrito após 23/08/2005).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro encarregado do Ponto Missionário Anglicano Adoração
+  status: confirmed
+  sources:
+  - source: d2s20-adoracao-visita
+    quote: Ponto Missionário Anglicano Adoração ( Rev. Henrique Lacerda – Ministro Encarregado)
+  - source: d2s20-paraiba09
+    quote: >-
+      Ponto Missionário Anglicano Adoração , bairro Mangabeira VII (quando se encontrou com uma delegação da Diocese
+      de Pittsburgh/ACNA-USA) onde o Rev. Henrique Lacerda é o Ministro Encarregado
+  notes: >-
+    Local: Ponto Missionário Anglicano Adoração (João Pessoa-PB). Em exercício em setembro de 2010; em 19/09/2010
+    o bispo Robinson Cavalcanti fez visita episcopal e confirmou dezoito pessoas. Local: Ponto Missionário Anglicano
+    Adoração (João Pessoa-PB). Em exercício em novembro de 2009; nessa visita, o bispo Robinson Cavalcanti encontrou-se
+    com uma delegação da Diocese de Pittsburgh (ACNA).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário diocesano de educação
+  status: confirmed
+  sources:
+  - source: d2s20-cargos2011
+    quote: 'd) Secretaria Diocesana Anglicana de Educação: Rev. Henrique César de Almeida Lacerda'
+  - source: d2s21-educacao-2011
+    quote: organizado pelo Rev. Henrique Lacerda , Secretário Diocesano de Educação
+  notes: >-
+    Local: Secretaria Diocesana Anglicana de Educação. Cargo para 2011 constante da relação de cargos diocesanos
+    publicada em 10/12/2010 (captura de dez/2010), após o XXX Concílio Diocesano. Local: Secretaria Diocesana de
+    Educação. Em exercício em 21/05/2011 (Encontro Diocesano de Educação, Paróquia Anglicana Comunhão, João Pessoa).
+events:
+- type: other
+  date: '2007-09-16'
+  description: >-
+    O Ponto Missionário Anglicano Adoração (bairro de Mangabeira VII, João Pessoa-PB), cujo ministro encarregado
+    era o Rev. Henrique Lacerda, completou três anos de fundação em 16/09/2010.
+  status: probable
+  sources:
+  - source: d2s20-adoracao-convite
+    quote: >-
+      No próximo dia 16/09 , o Ponto Missionário Anglicano Adoração , no bairro de Mangabeira VII, estará completando
+      três anos de fundação .
+  - source: d2s20-adoracao-convite
+    quote: Rev. Henrique Lacerda+ Ministro Encarregado

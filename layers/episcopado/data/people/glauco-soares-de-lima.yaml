@@ -537,6 +537,10 @@ affiliations:
     quote: >-
       Dom Glauco esteve à frente da Igreja Episcopal Anglicana do Brasil (IEAB) de 1994-2003, exercendo três mandatos
       consecutivos como primaz.
+  - source: d2s27-sinopse
+    quote: 'Novo Primaz: Glauco Soares de Lima.'
+  - source: d2s30-catolicos
+    quote: ao Primaz de nossa Província D. Glauco
   notes: >-
     Anexo E de Costa da 1994-2003 (com Gastal interino 1993-94). Em maio de 2003 a Reunião dos Primazes, em Gramado
     (RS), homenageou o primaz que se aposentava; a entronização do sucessor ocorreu em 1º de junho de 2003. O livro
@@ -544,6 +548,9 @@ affiliations:
     em outubro de 1997. Também foi um dos interinos à frente da DAR (2004-2006). Maurício Andrade (secretário-geral
     da IEAB em todo o primado) data o início de ambos em maio de 1993, o que favorece 1993 sobre 1994 (data de outras
     fontes, que podem registrar a posse). A nota da Diocese de Brasília fala em três mandatos (1993, 1997, 2003).
+    A cronologia dá 1994 como ano do novo primaz; outras fontes divergem quanto ao início do primado. Em exercício
+    na data do texto (depois de outubro de 2003, sem data exata); a fonte cita só o nome 'D. Glauco', que no contexto
+    (primaz da província, 2003-2004) corresponde a Glauco Soares de Lima.
   discrepancies:
   - field: start
     value: '1994'
@@ -556,6 +563,8 @@ affiliations:
     - source: costa2021
       quote: Primazes da Igreja Episcopal Anglicana do Brasil … 1994-2003 – Glauco Soares de Lima
       page: 523-524
+    - source: d2s27-sinopse
+      quote: 'Novo Primaz: Glauco Soares de Lima.'
 - jurisdiction: ieab
   role: other
   role_description: bispo emérito
@@ -1085,3 +1094,48 @@ events:
     quote: >-
       finalmente obteve-se a maioria canônica exigida e o Primaz Dom Glauco declarou oficialmente vitória do candidato
       Robinson
+- type: other
+  date: '1997'
+  description: >-
+    Eleição de Robinson Cavalcanti ao episcopado da Diocese Anglicana do Recife (1997), no Concílio realizado em
+    um convento romano quase desativado na Ilha de Itaparica (BA), local escolhido pelo bispo diocesano Clóvis Erly
+    Rodrigues. Segundo o relato do Arcediagado PB/CE/RN, houve 10 escrutínios entre três candidatos; no último,
+    obteve-se a maioria canônica exigida e o primaz Glauco Soares de Lima declarou oficialmente a vitória de Robinson.
+  status: confirmed
+  sources:
+  - source: d2s03-hom-pbcern
+    quote: Depois de uma sofrida maratona de 10 escrutínios
+  - source: d2s03-hom-pbcern
+    quote: o Primaz Dom Glauco declarou oficialmente vitória do candidato Robinson
+  - source: d2s03-hom-pbcern
+    quote: >-
+      o local escolhido pelo Bispo Clóvis Erly Rodrigues , Diocesano antecessor ao eleito, para realização do Concílio,
+      era quase inacessível
+  - source: d2s03-hom-pbcern
+    quote: um convento romano quase desativado em um ermo local no interior da ilha de Itaparica – Bahia
+- type: other
+  date: '2003-05-24'
+  description: >-
+    Encontro dos Primazes da Comunhão Anglicana em Gramado (RS), presidido pelo arcebispo de Cantuária Rowan Williams,
+    com 33 dos 38 primazes; em 24 de maio houve celebração eucarística no Cine Embaixador, presidida pelo primaz
+    da IEAB, Glauco Soares de Lima. Os bispos Robinson Cavalcanti e Filadelfo Oliveira Neto, da Diocese Anglicana
+    do Recife, participaram de reuniões e cultos; segundo o relato da diocese, houve sessão especial sobre o "cisma
+    do Recife", dirigida por Glauco Soares de Lima, e os primazes expressaram apoio aos bispos e à diocese.
+  status: confirmed
+  sources:
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Com a presença do Arcebispo de Cantuária e de 33 dos 38 Primazes da Comunhão Anglicana, teve lugar em Gramado-RS,
+      esse importante Encontro mundial
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Dom Robinson Cavalcanti e Dom Filadelfo Oliveira participaram de várias reuniões e cultos nos dois últimos
+      dias
+  - source: d2s24-encontro-primazes
+    quote: >-
+      Uma sessão especial foi, excepcionalmente, dedicada a estudar o cisma do Recife, dirigida pelo Primaz do Brasil,
+      Dom Glauco Soares de Lima.
+  - source: d2s24-encontro-primazes
+    quote: Os primazes expressaram o seu decidido apoio aos nossos bispos e à DAR.
+  - source: d2s24-cronologia
+    quote: Primazes, reunidos em Gramado

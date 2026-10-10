@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: quintino-jose-orengo-da-silva
 name: Quintino José Orengo da Silva
+aliases:
+- Quintino Orengo
 biography: >-
   Quintino José Orengo da Silva foi ordenado diácono em 29 de dezembro de 2001 e presbítero em 30 de novembro de
   2002, pelo bispo Robinson Cavalcanti, na Diocese Anglicana do Recife. Foi instituído cônego em 15 de fevereiro
@@ -41,6 +43,9 @@ sources:
     Paróquia Anglicana do Semeador(09/08) Pároco: Rev. Côn. Quintino Orengo Coadjutor: Revda. Teresa Catão
 - source: dard1-comissoes-2009a
   quote: Comissão de Ministério Rev. Cônego Quintino José Orengo da Silva
+- source: d2s25-pastores
+  quote: >-
+    Ven. Arc. Côn. Rev. Quintino José Orengo da Silva Rev. Raniere Almeida de Oliveira Paróquia Anglicana do Semeador
 ordinations:
 - order: diaconate
   date: '2001-12-29'
@@ -114,13 +119,17 @@ affiliations:
       à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
       mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
+  - source: d2s21-cursilho-masc
+    quote: Rev. Quintino Orengo ( Paróquia do Semeador )
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados. Local: Paróquia Anglicana do Semeador. Clérigo citado
     como pastor/ministro da comunidade em out/nov de 2006 (boletim de oração da Secretaria de Intercessão). Anexo
     R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti,
     ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005 é a da exclusão
-    pela IEAB, e a adesão à DAR é anterior, sem data exata.
+    pela IEAB, e a adesão à DAR é anterior, sem data exata. Local: Paróquia Anglicana do Semeador (Olinda-PE). Em
+    21/11/2010 aparece vinculado à Paróquia do Semeador; em 06/11/2010 a mesma paróquia é citada com "(Rev. Quintino
+    Orengo)" na matéria do encontro das secretarias.
 - jurisdiction: ieab-dar
   role: other
   role_description: arcediago
@@ -222,6 +231,12 @@ affiliations:
     quote: 'Pároco: Rev. Côn. Quintino Orengo Coadjutor: Revda. Teresa Catão'
   - source: d2s01-pj-pe
     quote: 'PARÓQUIA ANGLICANA DO SEMEADOR Pároco: Rev. Côn. Quintino Orengo'
+  - source: d2s19-semeador-time
+    quote: >-
+      Local: Paróquia Anglicana do Semeador Pároco: Rev. Quintino Orengo Av. Antônio da Costa Azevedo, 1487 – Jd.
+      Brasil 2 – Olinda-PE
+  - source: d2s19-encontro-secretarias
+    quote: Paróquia Anglicana do Semeador (Rev. Quintino Orengo)
   notes: >-
     Local: Paróquia Anglicana do Semeador, Olinda-PE. Assina como responsável pela paróquia em convite de 31/05/2012;
     a nota não diz o título. Local: Paróquia Anglicana do Semeador (Jardim Brasil II, Olinda-PE; Arcediagado Norte).
@@ -231,7 +246,8 @@ affiliations:
     sem explicar. Local: Paróquia Anglicana do Semeador (Jardim Brasil II, Olinda-PE). Em exercício em ago/2010,
     segundo a página "Um Projeto Missionário Anglicano Ortodoxo para o Brasil IV – Estado de Pernambuco" (publicada
     e atualizada em 27/08/2010; cópia capturada em 25/12/2010). A página o chama de "Rev. Côn. Quintino Orengo"
-    (cônego). Local: Paróquia Anglicana do Semeador (Jardim Brasil II, Olinda-PE).
+    (cônego). Local: Paróquia Anglicana do Semeador (Jardim Brasil II, Olinda-PE). Local: Paróquia Anglicana do
+    Semeador (Olinda-PE). Em exercício em mai/2010 (matéria de 7/05/2010, "Pároco: Rev. Quintino Orengo") e nov/2010.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: presbítero
@@ -252,9 +268,12 @@ affiliations:
     quote: Ven. Arc. Côn. Rev. Quintino José Orengo da Silva Arcediagado Centro Paróquia Anglicana do Semeador
   - source: dard1-carta-primaz-2004-06
     quote: Ven Arc Rev Côn Quintino José Orengo da Silva Arcedigado Centro
+  - source: d2s23-arcediagos
+    quote: Arcediagado Centro - Ven. Arced. Rev. Quintino José Orengo da Silva
   notes: >-
     Local: Arcediagado Centro; Paróquia Anglicana do Semeador. Consta na carta aberta de 17/09/2004, assinada pela
-    Diocese do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário.
+    Diocese do Recife (então ainda da IEAB); a carta indica a paróquia ou missão de cada signatário. Local: Arcediagado
+    Centro. Em exercício em outubro de 2004 (página capturada em 24/10/2004).
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: comissao_de_ministerio
@@ -273,9 +292,16 @@ affiliations:
   sources:
   - source: d2s03-hom-ministerio
     quote: Rev. Quintino José Orengo da Silva Rev. Flávio Adair Torres Eurípedes Paus Comissão de Ministério
+  - source: d2s20-cargos2011
+    quote: a. Rev. Cônego Quintino José Orengo da Silva
   notes: >-
     Local: Comissão de Ministério. Assina, em 05/10/2010, a mensagem da Comissão de Ministério junto com Eurípedes
-    Paus (sem título clerical na página).
+    Paus (sem título clerical na página). Assina a mensagem da Comissão de Ministério de 05/10/2010 (o terceiro
+    signatário, Eurípedes Paus, aparece sem título). Consta da 'Relação dos Cargos Diocesanos 2011' (publicada em
+    10/12/2010), seção "Cargos Designados pelo Bispo, sob Homologação do Concílio Diocesano", Comissão de Ministério;
+    cargo designado para o ano de 2011. Consta com o título de cônego. Designado para o ano de 2011. Local: Comissão
+    de Ministério. Cargo para 2011 constante da relação de cargos diocesanos publicada em 10/12/2010 (captura de
+    dez/2010), após o XXX Concílio Diocesano.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: arcediago
@@ -288,6 +314,51 @@ affiliations:
   notes: >-
     Local: Paróquia Anglicana do Semeador. Assina o texto como arcediago e cônego, com a indicação da Paróquia Anglicana
     do Semeador; a página foi postada em agosto de 2009 e arquivada em dezembro de 2010.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco da Paróquia Anglicana do Semeador
+  status: confirmed
+  sources:
+  - source: d2s20-acao-social
+    quote: Paróquia Anglicana do Semeador (Rev. Quintino Orengo)
+  - source: d2s22-semeador
+    quote: O Rev. Quintino Orengo ( Paróquia Anglicana do Semeador )
+  notes: >-
+    Local: Paróquia Anglicana do Semeador. Em exercício em novembro de 2010. O texto grafa "Rev. Quintino Orengo".
+    Local: Paróquia Anglicana do Semeador. Em exercício em dez/2010.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro da Comissão de Ministério e cônego
+  status: confirmed
+  sources:
+  - source: d2s22-cargos2011
+    quote: '8. Comissão de Ministério : a. Rev. Cônego Quintino José Orengo da Silva'
+  notes: >-
+    Local: Comissão de Ministério. Cargo constante da Relação dos Cargos Diocesanos 2011, publicada em 10/12/2010
+    (captura de 28/12/2010); designação para o exercício de 2011. Cargo designado pelo bispo sob homologação do
+    Concílio Diocesano; o texto lhe dá o título de cônego.
+- jurisdiction: ieab
+  role: other
+  role_description: membro da Comissão de Ministério
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s24-postulancia
+    quote: Comissão de Ministério – Rev. Quintino Orengo, Rev. Edson Pimentel, Frei Jocelenilton Gomes
+  notes: >-
+    Constava da página sobre os documentos para pedido de postulância ao ministério ordenado, sem data própria (página
+    capturada em 29/10/2004).
+- jurisdiction: ieab-dar
+  role: other
+  role_description: arcediago, cônego e clérigo da Paróquia Anglicana do Semeador
+  status: confirmed
+  sources:
+  - source: d2s25-pastores
+    quote: >-
+      Ven. Arc. Côn. Rev. Quintino José Orengo da Silva Rev. Raniere Almeida de Oliveira Paróquia Anglicana do Semeador
+  notes: >-
+    Local: Diocese do Recife, Paróquia Anglicana do Semeador. Assina como “Ven. Arc. Côn. Rev.” (venerável, arcediago,
+    cônego) pela Paróquia Anglicana do Semeador em artigo capturado em 13/08/2004, sem data de redação.
 events:
 - type: other
   date: '2004-06-25'

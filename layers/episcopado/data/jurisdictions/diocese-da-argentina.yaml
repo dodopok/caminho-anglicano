@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-da-argentina
+name: Diocese da Argentina
+type: diocese
+relations:
+- type: part_of
+  target: iacs
+  status: confirmed
+  sources:
+  - source: d2s20-cone-sul-primaz
+    quote: >-
+      continuará como Bispo da Diocese da Argentina, acumulando, provisoriamente, a Diocese do Norte da Argentina

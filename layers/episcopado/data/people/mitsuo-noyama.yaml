@@ -7,6 +7,15 @@ sources:
 - source: kickhofel-1995
   quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1994 - … Mitsuo Noyama
   page: '374'
+- source: d2s25-paudalho
+  quote: >-
+    De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+    – PE
+- source: d2s25-paudalho
+  quote: >-
+    reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
+    Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis, Stephen
+    Taylor, Mitsuo Noyama e Washington Franco.
 ordinations:
 - order: diaconate
   date: '1994'
@@ -28,3 +37,31 @@ affiliations:
     quote: CLERO NACIONAL POR ORDEM DE ORDENAÇÃO AO DIACONATO … 1994 - … Mitsuo Noyama
     page: '374'
   notes: Consta da lista do clero nacional da IEAB (Kickhöfel, 1995); início = ano do diaconato.
+- jurisdiction: ieab
+  role: clergy
+  diocese: ieab-dasp
+  status: confirmed
+  sources:
+  - source: d2s24-documento-estudo
+    quote: Tivemos a redução de 11 clérigos
+  - source: d2s24-documento-estudo
+    quote: 'Diocese Anglicana de São Paulo: Rev. Mitsuo Noyama;'
+  notes: >-
+    Listado no documento de estudo da Diocese Anglicana do Recife (2002) entre os 11 clérigos que deixaram a diocese
+    para outras dioceses ou jurisdições; a data da transferência não é informada.
+- jurisdiction: ieab-dar
+  role: clergy
+  status: confirmed
+  sources:
+  - source: d2s25-paudalho
+    quote: >-
+      De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+      – PE
+  - source: d2s25-paudalho
+    quote: >-
+      reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
+      Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis,
+      Stephen Taylor, Mitsuo Noyama e Washington Franco.
+  notes: >-
+    Local: Diocese do Recife. Participante do retiro do clero diocesano em Paudalho (PE), 28/02 a 01/03/1997; clérigo
+    da diocese nessa data, sem informação sobre início ou fim do vínculo.

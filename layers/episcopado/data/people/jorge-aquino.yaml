@@ -65,6 +65,21 @@ sources:
     de seu Livro de OraçãoComum, na condiçãode Custódio do Livro.
 - source: testemunho-mantenedor-2026-10-08-aquino
   quote: Hoje aquino está na IGREJA ANGLICANA ORTODOXA MISSIONÁRIA, do Bispo Jonas Santana Moreira
+- source: d2s25-maria
+  quote: >-
+    O Rev. Jorge Aquino é Presbítero da Igreja Episcopal Anglicana do Brasil, servindo à Diocese Anglicana do Recife.
+    É membro da Ordem Evangélica de Santo Estevão Mártir e Reitor do Seminário Teológico Anglicano do Recife.
+- source: d2s30-maria
+  quote: >-
+    É Presbítero da Igreja Episcopal Anglicana do Brasil. É Pároco da Paróquia Anglicana da Natividade, em Natal
+- source: d2s30-historia
+  quote: >-
+    O rev. Jorge Aquino, então ministro presbiteriano, desde os tempos em que estudava no Seminário Presbiteriano
+    do Norte, em Recife
+- source: d2s30-direitoshumanos
+  quote: >-
+    também vice-presidente do Centro de Direitos Humanos e Memória Popular e Secretário da Comissão Ecumênica Nacional
+    de Combate ao Racismo
 ordinations:
 - order: diaconate
   date: '1999-07-31'
@@ -112,11 +127,30 @@ ordinations:
     quote: >-
       Como bispo, sinto-me honrado em presidir este momento histórico, das primeiras ordenações anglicanas em terras
       potiguares.
+  - source: d2s30-historia
+    quote: >-
+      que mais marcou o Rev. Jorge Aquino nesse período foi a Ordenação Presbiteral na Capela do Campus da UFRN,
+      com a presença de clérigos anglicanos e romanos
   notes: >-
     Celebração ecumênica, com padres católicos romanos e pastores evangélicos presentes. Sermão do bispo diocesano
     (Robinson Cavalcanti), que preside as primeiras ordenações anglicanas no Rio Grande do Norte. 'Jorge' e 'Abel'
-    são Jorge Aquino e Severino Abel da Silva, ordenados diáconos juntos em 31/07/1999.
+    são Jorge Aquino e Severino Abel da Silva, ordenados diáconos juntos em 31/07/1999. O texto não traz a data
+    nem o nome do ordenante; confirma o local e a presença de clérigos anglicanos e católicos romanos.
 affiliations:
+- jurisdiction: ieab-dar
+  role: other
+  role_description: fundador (Missão da Natividade, Natal, RN)
+  start: '1998'
+  status: probable
+  sources:
+  - source: d2s30-historia
+    quote: >-
+      Rev. Jorge Aquino e o Rev. Severino Abel empreenderam mensalmente, durante todo o ano de 1998, viagens a Recife
+      onde fizeram sua formação teológica específica no anglicanismo e trabalharam em paralelo na formação de duas
+      comunidades que nasceriam unidas à Missão da Natividade 1 e à Missão da Natividade 2
+  notes: >-
+    O texto descreve os dois como responsáveis pela formação das comunidades que deram origem à Missão (depois Paróquia)
+    da Natividade e ao Ponto Missionário São Francisco, no bairro do Areado, em Natal.
 - jurisdiction: manb
   role: clergy
   status: probable
@@ -188,6 +222,86 @@ affiliations:
   notes: >-
     Organizador da coletânea Ritos Ocasionais, da Comissão Diocesana de Liturgia (prefácio de 28/08/2002).
 - jurisdiction: ieab
+  role: other
+  role_description: reitor do SAET
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s23-bispo-evangelico
+    quote: Rev. Jorge Luiz Freire de Aquino, OSE , presbítero, é reitor do SAET.
+  notes: >-
+    Local: SAET (Seminário Anglicano de Estudos Teológicos). Em exercício em 2004 (página capturada em 15/08/2004);
+    a página o nomeia Rev. Jorge Luiz Freire de Aquino, OSE.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: reitor do seminário
+  status: confirmed
+  sources:
+  - source: d2s25-maria
+    quote: >-
+      O Rev. Jorge Aquino é Presbítero da Igreja Episcopal Anglicana do Brasil, servindo à Diocese Anglicana do
+      Recife. É membro da Ordem Evangélica de Santo Estevão Mártir e Reitor do Seminário Teológico Anglicano do
+      Recife.
+  notes: >-
+    Local: Diocese do Recife, Seminário Teológico Anglicano do Recife. Nota biográfica do autor em palestra escrita
+    entre 2001 e a captura de 13/08/2004; o seminário é o hoje denominado Seminário Anglicano de Estudos Teológicos
+    (SAET).
+- jurisdiction: ose
+  role: member
+  status: confirmed
+  sources:
+  - source: d2s30-maria
+    quote: membro da Ordem Evangélica de Santo Estevão Mártir
+  - source: d2s25-maria
+    quote: >-
+      O Rev. Jorge Aquino é Presbítero da Igreja Episcopal Anglicana do Brasil, servindo à Diocese Anglicana do
+      Recife. É membro da Ordem Evangélica de Santo Estevão Mártir e Reitor do Seminário Teológico Anglicano do
+      Recife.
+  notes: Membro da Ordem Evangélica de Santo Estêvão Mártir segundo nota do texto (2001–2004).
+- jurisdiction: ieab-dar
+  role: other
+  role_description: pároco da Paróquia Anglicana da Natividade (Natal, RN)
+  status: confirmed
+  sources:
+  - source: d2s30-maria
+    quote: >-
+      É Pároco da Paróquia Anglicana da Natividade, em Natal; membro da Ordem Evangélica de Santo Estevão Mártir
+      e Reitor do Seminário Teológico Anglicano do Recife.
+  - source: d2s30-catolicos
+    quote: Em submissão ao meu pároco Rev. Jorge Aquino
+  notes: >-
+    Em exercício na data dos textos (2003-2004, sem data exata). A Paróquia da Natividade funciona na Capela Ecumênica
+    do Campus da UFRN.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: ministro-encarregado da Missão da Natividade (Natal, RN)
+  status: probable
+  sources:
+  - source: d2s30-lambeth
+    quote: >-
+      Jorge Aquino, OSE, Reitor do Seminário Teológico Anglicano do Recife, e Ministro-Encarregado da Missão da
+      Natividade, Natal, RN.
+  notes: >-
+    Assinatura do texto, sem data; a Missão da Natividade foi elevada a paróquia entre dezembro de 2000 e dezembro
+    de 2001, segundo a história da paróquia, portanto o texto seria desse período ou anterior.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: reitor do Seminário Teológico Anglicano do Recife
+  status: confirmed
+  sources:
+  - source: d2s30-maria
+    quote: >-
+      É Pároco da Paróquia Anglicana da Natividade, em Natal; membro da Ordem Evangélica de Santo Estevão Mártir
+      e Reitor do Seminário Teológico Anglicano do Recife.
+  - source: d2s30-lambeth
+    quote: Reitor do Seminário Teológico Anglicano do Recife
+  - source: d2s30-direitoshumanos
+    quote: Rev. Jorge Aquino, ose Reitor do Seminário Anglicano de Recife.
+  - source: d2s30-protomartires
+    quote: Reitor do Seminário Anglicano de Estudos Teológicos – Recife/PE
+  notes: >-
+    Em exercício na data dos textos, que não trazem ano; os artigos aparecem no site da diocese capturado em 2004.
+- jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
   start: c.2000
@@ -245,3 +359,78 @@ events:
       e colocadas à disposição de toda a Província.
   - source: d2s26-ritos-ocasionais
     quote: Recife (PE), 28 de Agosto de 2002.
+- type: other
+  date: 1997-12
+  description: >-
+    Segundo a história da Paróquia da Natividade, a transferência do Rev. Jorge Aquino da Igreja Presbiteriana para
+    a IEAB estava prevista para a reunião do Presbitério em dezembro de 1997, com a eleição de Robinson Cavalcanti
+    como bispo da Diocese Anglicana do Recife apresentada como o momento adequado.
+  status: probable
+  sources:
+  - source: d2s30-historia
+    quote: >-
+      o ano de 1996 passará em branco, sendo 1997, e particularmente, com a eleição do Rev. Robinson Cavalcanti
+      para Bispo da Diocese Anglicana do Recife, o momento adequado para a transferência do Rev. Aquino, o que se
+      dará na Reunião do Presbitério em dezembro daquele ano
+- type: other
+  date: 1998-01
+  description: >-
+    Primeira eucaristia anglicana do grupo que formaria a Paróquia da Natividade, em Natal (RN), na Igreja Metodista
+    do Natal, presidida pelo Rev. Washington Franco, com a presença do Rev. Jorge Aquino e de Frei Severino Abel.
+  status: probable
+  sources:
+  - source: d2s30-historia
+    quote: >-
+      Era o primeiro Domingo de 1998 e presente, para presidir a primeira Eucaristia, estava o Rev. Washington Franco,
+      então reitor da Paróquia da Ressurreição em João Pessoa, Paraíba.
+- type: other
+  date: '1998-03-15'
+  description: >-
+    Primeira celebração anglicana da Missão da Natividade na Capela Ecumênica do Campus Universitário da UFRN (Lagoa
+    Nova, Natal), com 8 pessoas; a capela passou a ser a sede da comunidade.
+  status: probable
+  sources:
+  - source: d2s30-historia
+    quote: celebração na Capela do Campus ocorreu no dia 15 de Março de 1998, com a presença de 8 pessoas
+- type: other
+  date: 2000-12
+  description: >-
+    A Missão Anglicana da Natividade (Natal, RN) passou de Ponto Missionário a Missão em dezembro de 2000, quando
+    foram apresentados os nomes dos confirmados no Concílio Diocesano de 2000, em Recife.
+  status: probable
+  sources:
+  - source: d2s30-historia
+    quote: >-
+      transição de Ponto Missionário para Missão, ocorreu em Dezembro de 2000, Quando foram apresentados os nomes
+      dos Confirmados no Concílio Diocesano de 2000 em Recife – PE.
+- type: other
+  date: 2001-12
+  description: >-
+    A Missão da Natividade (Natal, RN) tornou-se Paróquia Subvencionada em dezembro de 2001, segundo uma passagem
+    da história da paróquia.
+  status: contested
+  sources:
+  - source: d2s30-historia
+    quote: Já a transição de Missão para Paróquia Subvencionada ocorreu em Dezembro de 2001.
+- type: other
+  date: 2000-12
+  description: >-
+    A Missão da Natividade (Natal, RN) tornou-se paróquia no Concílio Diocesano de dezembro de 2000, segundo outra
+    passagem da mesma história da paróquia.
+  status: contested
+  sources:
+  - source: d2s30-historia
+    quote: >-
+      Missão da Natividade se tornou paróquia no Concílio Diocesano de dezembro de 2000 e é composta hoje de quarenta
+      membros confirmados.
+- type: other
+  date: null
+  description: >-
+    A Paróquia da Natividade (Natal, RN) abriu um novo Ponto Missionário em Fortaleza (CE), capital do Ceará, pouco
+    antes de outubro de 2004.
+  status: probable
+  sources:
+  - source: d2s30-historia
+    quote: >-
+      Sua ação missionária está, neste momento, se estendendo até a capital do estado do Ceará, onde abrimos recentemente
+      um novo Ponto Missionário.

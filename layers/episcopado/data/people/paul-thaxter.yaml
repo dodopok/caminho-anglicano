@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: paul-thaxter
+name: Paul Thaxter
+events:
+- type: other
+  date: '2009-10-28'
+  description: >-
+    Visita ao Centro Diocesano Arcebispo George Carey, em 28/10/2009, do bispo Henry Scriven (diretor de missão
+    da CMS para a América Latina) e do Rev. Paul Thaxter (diretor de missão transcultural da CMS), recebidos pelo
+    bispo Robinson Cavalcanti, para avaliar a conjuntura da Comunhão Anglicana e o futuro da relação entre a CMS
+    e a Diocese do Recife; a CMS incorporara a antiga Sociedade Missionária Sul Americana (SAMS), agência que colabora
+    com a diocese desde o início.
+  status: confirmed
+  sources:
+  - source: d2s22-cms-visita
+    quote: >-
+      sendo recebidos pelo Bispo Diocesano Dom Robinson Cavalcanti , o Bispo Henry Scriven , Diretor de Missão para
+      a América Latina e o reverendo Paul Thaxter , Diretor de Missão Transcultural
+  - source: d2s22-cms-visita
+    quote: >-
+      à qual se juntou a antiga Sociedade Missionária Sul Americana (SAMS), que tem colaborado, como agências, desde
+      o início com a Diocese do Recife

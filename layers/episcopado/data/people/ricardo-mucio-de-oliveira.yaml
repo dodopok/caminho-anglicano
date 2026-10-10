@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ricardo-mucio-de-oliveira
 name: Ricardo Múcio de Oliveira
+aliases:
+- Ricardo Mácio
 biography: >-
   Ricardo Múcio de Oliveira foi ordenado diácono em 31 de julho de 1999 por Robinson Cavalcanti, atuou como presbítero
   na Diocese Anglicana do Recife e em 2002 retornou com a Paróquia do Parnamirim à Igreja Presbiteriana do Brasil.
@@ -16,6 +18,10 @@ sources:
   quote: >-
     o Rev. Ricardo Múcio, com a Paróquia do Parnamirim, regressa à Igreja Presbiteriana do Brasil – IPB. Um cisma
     tríplice.
+- source: d2s25-cismas
+  quote: >-
+    O Rev. Ricardo Mácio sai com a Paróquia de Casa Forte para se tornarem “independentes”. Leigos informam que
+    assinaram a desfiliação sem saber exatamente do que se tratava.
 ordinations:
 - order: diaconate
   date: '1999-07-31'
@@ -55,3 +61,17 @@ affiliations:
   notes: >-
     Local: Diocese do Recife, Paróquia do Parnamirim. Voltou em 2002 à Igreja Presbiteriana do Brasil com a Paróquia
     do Parnamirim.
+- jurisdiction: ieab-dar
+  role: priest
+  end: '2002'
+  end_reason: left
+  status: probable
+  sources:
+  - source: d2s25-cismas
+    quote: >-
+      O Rev. Ricardo Mácio sai com a Paróquia de Casa Forte para se tornarem “independentes”. Leigos informam que
+      assinaram a desfiliação sem saber exatamente do que se tratava.
+  notes: >-
+    Local: Diocese do Recife, Paróquia de Casa Forte. Versão do bispo diocesano em artigo de 28/05/2002 (grafia
+    “Mácio”); outras fontes situam a saída da Paróquia do Parnamirim em 2002, de volta à Igreja Presbiteriana do
+    Brasil. A página diz que ele saía “com a Paróquia”, e o motivo declarado é o desejo de se tornarem independentes.

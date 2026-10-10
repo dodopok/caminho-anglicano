@@ -37,9 +37,13 @@ ordinations:
   - source: costa2021
     quote: Bruno foi ordenado diácono em 25/10/2003 e presbítero em 25/01/2005
     page: '190'
+  - source: d2s23-bahia-paroquia
+    quote: >-
+      tendo como auxiliar o Rev. Bruno Luiz Teles de Almeida, osf, ordenado ao diaconato no dia 25/10/2003.
   notes: >-
     Diocese Anglicana do Recife (Salvador, BA). Ordenante não informado (Robinson era o diocesano). Tese cita BÍBLIA,
-    2015, p. 3. A tese grafa 'Bruno Luiz Teles de Almeida'.
+    2015, p. 3. A tese grafa 'Bruno Luiz Teles de Almeida'. A página não informa local nem ordenante; grafa o nome
+    como Bruno Luiz Teles de Almeida, osf.
 - order: presbyterate
   date: '2005-01-25'
   jurisdiction: ieab
@@ -54,6 +58,23 @@ ordinations:
     Ordenante não informado explicitamente; no mesmo dia foi nomeado pároco pelo bispo Filadelfo Oliveira (possível
     ordenante, não afirmado). Tese cita BÍBLIA, 2015, p. 3.
 affiliations:
+- jurisdiction: ieab
+  role: other
+  role_description: auxiliar do pároco / responsável pelo Ponto Missionário da Natividade
+  diocese: ieab-dar
+  start: '2002-07-13'
+  status: confirmed
+  sources:
+  - source: d2s23-bahia-paroquia
+    quote: >-
+      13 de julho de 2002 foram iniciados os trabalhos do Ponto Missionário da Natividade do Nosso Senhor Jesus
+      Cristo em Camaçarí-Bahia pelo Frei Bruno Luiz Teles de Almeida
+  - source: d2s23-bahia-paroquia
+    quote: Continuam os trabalhos sob a direção do Rev. Bruno Luiz Teles de Almeida, osf.
+  notes: >-
+    Local: Ponto Missionário da Natividade do Nosso Senhor Jesus Cristo (Camaçari-BA). A data é a do início dos
+    trabalhos do ponto missionário; em outubro de 2004 a direção continuava com ele, já diácono, e ele era auxiliar
+    do pároco das paróquias do Bom Pastor e Cristo o Salvador. A página traz a sigla osf após o nome.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar

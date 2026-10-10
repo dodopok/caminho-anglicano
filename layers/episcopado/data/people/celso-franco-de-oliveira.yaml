@@ -84,9 +84,9 @@ ordinations:
   date: '2000-02-27'
   place: Christ Church, Rio de Janeiro
   jurisdiction: ieab
-  office: diocesan
+  office: coadjutor
   principal_consecrator: glauco-soares-de-lima
-  status: confirmed
+  status: contested
   sources:
   - source: drv-sagracao-celso-sermao
     quote: Rio de Janeiro, 27 de Fevereiro de 2000.
@@ -105,11 +105,26 @@ ordinations:
       Sua sagração ocorreu na Christ Church, no dia 27 de fevereiro de 2000, pelas mãos do Bispo Primaz, Glauco
       Soares de Lima, e dos demais bispos da Câmara Episcopal.
     page: '104'
+  - source: d2s23-celso-sagracao
+    quote: >-
+      pregar no Culto de Sagração do novo bispo-coadjutor da Diocese Anglicana, D. Celso Franco de Oliveira, em
+      nossa histórica igreja da rua Real Grandeza, no Botafogo
+  discrepancies:
+  - field: place
+    value: igreja da rua Real Grandeza, Botafogo, Rio de Janeiro
+    sources:
+    - source: d2s23-celso-sagracao
+      quote: >-
+        pregar no Culto de Sagração do novo bispo-coadjutor da Diocese Anglicana, D. Celso Franco de Oliveira, em
+        nossa histórica igreja da rua Real Grandeza, no Botafogo
   notes: >-
     Sermão da sagração, proferido por representante da Diocese Anglicana do Recife a convite do bispo Celso, no
     8º domingo depois da Epifania; o texto cita o primaz Glauco Soares de Lima na abertura, sem identificar o sagrante
     principal. Eleito em Concilio Extraordinario de 06/11/1999 para a Diocese Anglicana do Rio de Janeiro. Co-sagrantes:
-    'os demais bispos da Câmara Episcopal' (não nomeados).
+    'os demais bispos da Câmara Episcopal' (não nomeados). Robinson Cavalcanti narra que foi ao Rio de Janeiro para
+    pregar no culto de sagração do novo bispo-coadjutor, num sábado de verão; o texto não traz a data (a sagração
+    consta em fevereiro de 2000) nem sagrantes, e a identificação da diocese como a do Rio de Janeiro decorre do
+    local.
 affiliations:
 - jurisdiction: ieab
   role: diocesan_bishop

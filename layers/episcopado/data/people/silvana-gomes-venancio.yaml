@@ -61,7 +61,7 @@ ordinations:
     do bispo diocesano, que presidia o culto; a data fina (05/12) é inferida do dia do culto.
 - order: presbyterate
   date: '2010-07-31'
-  place: Paróquia Anglicana Santíssima Trindade, Copacabana, Rio de Janeiro-RJ
+  place: Paróquia Anglicana da Santíssima Trindade, Copacabana, Rio de Janeiro-RJ
   jurisdiction: diocese-anglicana-recife
   ordained_by: robinson-cavalcanti
   status: probable
@@ -86,13 +86,23 @@ ordinations:
       na velha Província brasileira
   - source: darb2-sermao-silvana
     quote: +Bispo Robinson Cavalcanti
+  - source: d2s20-silvana-niteroi
+    quote: Depois de ter Ordenado ao Presbiterado a Reverenda Silvana Venancio
+  - source: d2s21-silvana-convite
+    quote: 'Local: Paróquia Anglicana Santíssima Trindade'
+  - source: d2s21-silvana-convite
+    quote: 'Data: 31 de julho de 2010'
   notes: >-
     Fonte é o convite (anúncio prévio). Em fev/2010 constava como diácona (PMA Caminho de Emaús, Niterói). Em ago/2010
     o site diz que Robinson 'em apenas um mês Ordenou o segundo Presbítero no Arcediagado sul-sudeste' (Jorge Torres),
     compatível com esta ordenação ter ocorrido. Em 2013 aparece como 'Rev.' Silvana Venâncio. Sermão proferido pelo
     bispo diocesano na própria cerimônia, que ele descreve como a ordenação de uma presbítera no Rio de Janeiro;
     a página traz local e data (31/07/2010) e é assinada por Dom Robinson Cavalcanti, que preside o rito. Confirma,
-    com o relato do próprio ato, a ordenação antes conhecida só pelo convite.
+    com o relato do próprio ato, a ordenação antes conhecida só pelo convite. Notícia de 01/08/2010 relata a ordenação
+    presbiteral de Silvana Venancio pelo bispo Robinson Cavalcanti como fato já ocorrido; a data e o local vêm do
+    convite publicado pela diocese. A matéria de 01/08/2010 relata, no passado, que o bispo Robinson Cavalcanti
+    ordenou ao presbiterado a Revda. Silvana Venancio antes de seguir para Niterói; local e data (31/07/2010) vêm
+    do convite oficial publicado em 22/07/2010. O relato não repete a data.
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: priest
@@ -130,6 +140,69 @@ affiliations:
     Local: Arcediagado Extraterritorial Sul-Sudeste; Ponto Missionário Anglicano Caminho de Emaús (Niterói-RJ).
     Em exercício em outubro de 2010, conforme a mensagem publicada em 05/10/2010 no site da Diocese do Recife; signatário
     da mensagem do Arcediagado Extraterritorial Sul-Sudeste
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: presbítero
+  status: confirmed
+  sources:
+  - source: d2s03-hom-sulsudeste
+    quote: Revda. Silvana Venâncio+ (Presbítera – PMA Caminho de Emaús – Niterói-RJ)
+  notes: >-
+    Local: Ponto Missionário Anglicano Caminho de Emaús (Niterói, RJ). Presbítera em 04/10/2010, ligada ao Arcediagado
+    Sul-Sudeste.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministro_encarregado
+  status: probable
+  sources:
+  - source: d2s19-viagem-miss
+    quote: >-
+      Ponto Missionário Anglicano Caminho de Emaús ( Revda. Silvana Cabral – Ministra Encarregada), em Niterói-RJ
+  notes: >-
+    Local: Ponto Missionário Anglicano Caminho de Emaús (Niterói-RJ). Matéria de 22/05/2010 grafa "Revda. Silvana
+    Cabral"; em nov/2010 o mesmo ponto missionário aparece sob a Revda. Silvana Venancio (Arcediagado Sul-Sudeste).
+    Em exercício em mai/2010.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: membro da Comissão de Credenciais e Diplomacia
+  status: confirmed
+  sources:
+  - source: d2s20-cargos2011
+    quote: a) Revda. Silvana Gomes Venancio
+  - source: d2s22-cargos2011
+    quote: '2. Comissão de Credenciais e Diplomacia : a) Revda. Silvana Gomes Venancio'
+  notes: >-
+    Consta da 'Relação dos Cargos Diocesanos 2011' (publicada em 10/12/2010), seção "Cargos Designados pelo Bispo,
+    sob Homologação do Concílio Diocesano", Comissão de Credenciais e Diplomacia; cargo designado para o ano de
+    2011. Designado para o ano de 2011. Local: Comissão de Credenciais e Diplomacia (designada pelo bispo, sob homologação
+    do Concílio). Cargo para 2011 constante da relação de cargos diocesanos publicada em 10/12/2010 (captura de
+    dez/2010), após o XXX Concílio Diocesano. Local: Comissão de Credenciais e Diplomacia. Cargo constante da Relação
+    dos Cargos Diocesanos 2011, publicada em 10/12/2010 (captura de 28/12/2010); designação para o exercício de
+    2011. Cargo designado pelo bispo sob homologação do Concílio Diocesano.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: >-
+    ministra local, candidata às Sagradas Ordens e dirigente do Ponto Missionário Anglicano Caminho de Emaús (Niterói-RJ)
+  status: confirmed
+  sources:
+  - source: d2s20-caravana-bh
+    quote: dirigido pela dedicada Ministra Local (ML) e Candidata às Sagradas Ordens Silvana Venâncio
+  notes: >-
+    Local: Ponto Missionário Anglicano Caminho de Emaús (Niterói-RJ). Em exercício em 18/10/2009 (bairro de Itaipu,
+    Niterói), durante visita do bispo Robinson Cavalcanti, que realizou confirmações.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: ministra encarregada do Ponto Missionário Anglicano Caminho de Emaús (Niterói-RJ)
+  status: confirmed
+  sources:
+  - source: d2s20-niteroi
+    quote: >-
+      Pontos Missionários Anglicanos Caminho de Emaús e Pão e Vinho , em Niterói-RJ ( Revda. Silvana e Rev. Rodrigo
+      Condeixa, respectivamente)
+  notes: >-
+    Local: Ponto Missionário Anglicano Caminho de Emaús (Niterói-RJ). Em exercício em setembro de 2010; em 25/09/2010
+    o bispo Robinson Cavalcanti fez visita episcopal e confirmou cinco pessoas em culto conjunto com o Ponto Missionário
+    Anglicano Pão e Vinho.
 events:
 - type: other
   date: 2009-12
@@ -149,3 +222,17 @@ events:
     quote: cujo reconhecimento deu-se no último Concílio
   - source: darn1-concilio09
     quote: as eleições foram todas por aclamação e todos os relatórios foram aprovados quase que na íntegra
+- type: other
+  date: '2010-11-30'
+  description: >-
+    Em 30/11/2010, na Assembleia de Fundação da Aliança Cristã Evangélica do Brasil (ACEB), em São Paulo, o bispo
+    Robinson Cavalcanti foi eleito para o Conselho de Referência da entidade; a Diocese do Recife enviou pedido
+    de filiação como entidade fundadora e foi representada também pela Revda. Silvana Venancio.
+  status: confirmed
+  sources:
+  - source: d2s21-aceb
+    quote: >-
+      foi eleito, juntamente com outras personalidades, para integrar o Conselho de Referência da nova instituição
+      aglutinadora e representativa de evangélicos brasileiros
+  - source: d2s21-aceb
+    quote: Já foi encaminhado o pedido de filiação da Diocese do Recife como uma das entidades fundadoras!

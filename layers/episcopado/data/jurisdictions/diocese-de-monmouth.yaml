@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-monmouth
+name: Diocese de Monmouth
+type: diocese
+relations:
+- type: part_of
+  target: cinw
+  status: probable
+  sources:
+  - source: d2s30-arcebispo
+    quote: Foi eleito bispo de Monmouth em 1991, e entronizado arcebispo de Gales em 2000.

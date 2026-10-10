@@ -173,11 +173,17 @@ ordinations:
     quote: >-
       Thomas arrived in Brazil in 1904 after his VTS graduation and ordination as deacon. He was ordained a priest
       the following year.
+  - source: d2s27-sinopse
+    quote: ordenado presbítero por Kingsolving.
+  notes: >-
+    Na cronologia do 'período Thomas', a entrada de 1904 diz que chegou ao Brasil como diácono; a de 1905, que foi
+    ordenado presbítero por Kingsolving e feito professor do Seminário e coadjutor da Igreja do Salvador, em Rio
+    Grande.
 - order: episcopate
   date: '1925-12-28'
   place: Igreja de São Paulo, Baltimore (EUA)
   jurisdiction: tec
-  office: suffragan
+  office: coadjutor
   principal_consecrator: ethelbert-talbot
   co_consecrators:
   - joseph-blount-cheshire
@@ -224,6 +230,8 @@ ordinations:
       em cerimônia presidida pelo bispo presidente da Igreja Protestante Episcopal dos Estados Unidos, Ethelbert
       Talbot, sendo co-sagrantes Joseph Blount Cherise, de Carolina do Norte, e Lucien Lee Kinsolving, do Brasil.
     page: '61'
+  - source: d2s27-sinopse
+    quote: Coadjutor de Kingsolving (sagrado na Igreja de São Paulo, Baltimore).
   discrepancies:
   - field: place
     value: Igreja de São Bartolomeu, Nova York (EUA)
@@ -286,6 +294,21 @@ affiliations:
       pastoral, foi escolhido o reverendo William Matthew Merrick Thomas44.
     page: '61'
   notes: 'Local/função: Distrito Missionário do Brasil (sufragâneo).'
+- jurisdiction: ieab
+  role: diocesan_bishop
+  start: '1928'
+  end: '1948'
+  end_reason: retirement
+  status: probable
+  sources:
+  - source: d2s27-sinopse
+    quote: eleito bispo titular para o Brasil.
+  - source: d2s27-sinopse
+    quote: se aposenta, após 45 anos como missionário e 24 como bispo.
+  notes: >-
+    A cronologia dá a eleição como bispo titular em 1928 (ele respondia pela igreja desde a aposentadoria de Kingsolving,
+    em 1927) e a aposentadoria em 1948, após 45 anos como missionário e 24 como bispo; outras fontes dão datas ligeiramente
+    diferentes.
 - jurisdiction: dmsb
   role: diocesan_bishop
   diocese: southern-brazil

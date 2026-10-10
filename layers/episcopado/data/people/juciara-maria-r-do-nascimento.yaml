@@ -1,6 +1,14 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: juciara-maria-r-do-nascimento
 name: Juciara Maria R. do Nascimento
+aliases:
+- Revda. Juciara Maria
+death:
+  date: 2015-03
+  sources:
+  - source: darn1-home1203
+    quote: >-
+      Oficialmente comunicamos que a partir da noite de hoje, acontecerá o velório do corpo da Revda. Juciara Maria
 biography: >-
   Ordenada diácona por Robinson Cavalcanti, atuou na Diocese do Recife como ministra encarregada do Ponto Missionário
   Betesda, líder da equipe pastoral e depois pároca da Paróquia Anglicana São Paulo, e foi vice-presidente do Conselho
@@ -37,6 +45,9 @@ sources:
     à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
     mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
   page: 560-562
+- source: darn1-home1203
+  quote: >-
+    Oficialmente comunicamos que a partir da noite de hoje, acontecerá o velório do corpo da Revda. Juciara Maria
 ordinations:
 - order: diaconate
   date: null
@@ -72,13 +83,17 @@ affiliations:
       à convocação e declararam, via carta (anexo III), resposta que: continuamos a honrar os nossos votos de ordenação,
       mantendo plena comunhão com o bispo diocesano Revmo. Dom Edward Robinson Cavalcanti
     page: 560-562
+  - source: d2s03-hom-centro
+    quote: Ven. Arc. Rev. Maurício Coelho (Arcediagado Centro) … Revda. Juciara Rodrigues
   notes: >-
     Consta como clérigo da Diocese Anglicana do Recife em 29/08/2005 (Declaração dos 32) e/ou 09/11/2006 (Nota de
     Esclarecimento); início e fim do vínculo não informados. Local: Paróquia Anglicana São Paulo. Clérigo citado
     como pastor/ministro da comunidade em out/nov de 2006 (boletim de oração da Secretaria de Intercessão). Anexo
     R: o(a) clérigo(a) declarou, em resposta à convocação de 04/07/2005, manter 'plena comunhão' com Robinson Cavalcanti,
     ou seja, estava na DAR dissidente em 2005. Início dado só como ano (2005): a data de 23/08/2005 é a da exclusão
-    pela IEAB, e a adesão à DAR é anterior, sem data exata.
+    pela IEAB, e a adesão à DAR é anterior, sem data exata. Local: Arcediagado Centro. Consta entre os clérigos
+    que assinam a mensagem do Arcediagado Centro de 05/10/2010 (grafia do site: "Revda. Juciara Rodrigues"); em
+    exercício em outubro/2010.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: vice-presidente_conselho_diocesano
@@ -217,3 +232,16 @@ affiliations:
     cópia capturada em 25/12/2010). A página grafa "Revda. Juciara Rodi"; a identificação com Juciara Maria R. do
     Nascimento vem do mesmo local (Betesda), já ligado a ela em outras listas. Local: Ponto Missionário Anglicano
     Betesda (Recife-PE).
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: pároco
+  status: probable
+  sources:
+  - source: d2s19-sp-congresso
+    quote: 'Reverenda: Juciara Maria Rodrigues'
+  - source: d2s19-sp-congresso
+    quote: Rua Alto do Eucalipto, no.20, Vasco da Gama - Recife-PE
+  notes: >-
+    Local: Paróquia Anglicana São Paulo (Alto do Eucalipto, Recife). Matéria de 7/07/2010 indica "Reverenda: Juciara
+    Maria Rodrigues" como responsável pela Paróquia São Paulo, sem o título de pároca; identificada com Juciara
+    Maria R. do Nascimento pelo mesmo cargo e paróquia.

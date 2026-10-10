@@ -45,6 +45,22 @@ ordinations:
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: other
+  role_description: ministro local
+  start: '2010-12-15'
+  status: confirmed
+  sources:
+  - source: d2s20-elton
+    quote: o Bispo Instituiu Elton Roney ao Ministério Local
+  - source: d2s20-elton
+    quote: >-
+      Além do Rito de Confirmações, no Culto festivo Eucarístico, o Bispo Instituiu Elton Roney ao Ministério Local.
+  notes: >-
+    Instituído ao Ministério Local pelo bispo Robinson Cavalcanti em 15/12/2010, na Concatedral Anglicana da Ressurreição
+    (João Pessoa-PB), durante confirmações conjuntas no Arcediagado PB/RN. Local: Concatedral Anglicana da Ressurreição
+    (João Pessoa). Instituído ao Ministério Local pelo bispo Robinson Cavalcanti durante o culto unificado de confirmações
+    de 15/12/2010, na Concatedral Anglicana da Ressurreição (com as paróquias Cristo Libertador e Comunhão).
+- jurisdiction: diocese-anglicana-recife
+  role: other
   role_description: ministro_local
   status: confirmed
   sources:
@@ -83,3 +99,40 @@ affiliations:
   - source: d2s17-elton-33
     quote: faz parte da Equipe Pastoral da Paróquia Anglicana Comunhão, no Arcediagado Paraíba
   notes: 'Local: Paróquia Anglicana Comunhão (João Pessoa-PB; Arcediagado Paraíba). Em 01/07/2009.'
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coordenador pedagógico do Seminário Anglicano Teológico da Paraíba (SAT-PB)
+  status: confirmed
+  sources:
+  - source: d2s20-cargos2011
+    quote: '2. Coordenador Pedagógico: Elton Roney'
+  notes: >-
+    Local: SAT-PB. Cargo para 2011 constante da relação de cargos diocesanos publicada em 10/12/2010 (captura de
+    dez/2010), após o XXX Concílio Diocesano. A relação não traz título de clero para o nome.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: coordenador pedagógico do SAT-PB
+  status: confirmed
+  sources:
+  - source: d2s22-cargos2011
+    quote: '2. Coordenador Pedagógico: Elton Roney'
+  notes: >-
+    Local: Seminário Anglicano Teológico da Paraíba (SAT-PB). Cargo constante da Relação dos Cargos Diocesanos 2011,
+    publicada em 10/12/2010 (captura de 28/12/2010); designação para o exercício de 2011. O texto não traz título
+    (Rev./ML.) antes do nome.
+events:
+- type: other
+  date: '2010-12-15'
+  description: >-
+    Em 15/12/2010, na Concatedral Anglicana da Ressurreição (João Pessoa-PB), o bispo Robinson Cavalcanti confirmou
+    43 novos membros num culto unificado das comunidades Concatedral da Ressurreição, Cristo Libertador e Comunhão,
+    e instituiu Elton Roney ao Ministério Local.
+  status: confirmed
+  sources:
+  - source: d2s20-elton
+    quote: >-
+      o Bispo Robinson Cavalcanti confirmou hoje (quarta-feira), 15.12, no Arcediagado PB/RN, 43 (quarenta e três)
+      novos membros
+  - source: d2s20-elton
+    quote: >-
+      Além do Rito de Confirmações, no Culto festivo Eucarístico, o Bispo Instituiu Elton Roney ao Ministério Local.

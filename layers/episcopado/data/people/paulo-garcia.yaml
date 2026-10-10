@@ -187,6 +187,15 @@ sources:
     vinculou-se, depois, à Comunhão Internacional da Igreja Episcopal Carismática, e fundou, no Recife, a Igreja
     Episcopal Carismática do Brasil (IECB).
   page: '197'
+- source: d2s25-paudalho
+  quote: >-
+    De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+    – PE
+- source: d2s25-paudalho
+  quote: >-
+    reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
+    Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis, Stephen
+    Taylor, Mitsuo Noyama e Washington Franco.
 ordinations:
 - order: diaconate
   date: '1970'
@@ -302,6 +311,8 @@ ordinations:
     quote: >-
       O ex-Deão e seus seguidores se juntaram à chamada “Igreja Episcopal Carismática”, com sede em San Clemente,
       Califórnia, USA. Ele será sagrado bispo no dia 08 de setembro de 2003.
+  - source: d2s23-carta-primazes-2003
+    quote: Ele será sagrado bispo no dia 08 de setembro de 2003.
   notes: >-
     Sucessão declarada: ICCEC (Randolph Adler). A própria Wikipédia diz 'Recife' e 'Teatro Guararapes, em Olinda'
     em trechos diferentes (o Centro de Convenções/Teatro Guararapes fica em Olinda). Co-sagrantes não informados.
@@ -321,7 +332,9 @@ ordinations:
     p. 167. 'Antônio Raposo' identificado com 'Antônio José da Costa Raposo' da base (ver dúvidas). Fato anunciado:
     a carta de 23/05/2003 diz que o ex-deão (não nomeado na carta; identificado como Paulo Garcia pelos demais textos
     do site) "será sagrado bispo no dia 08 de setembro de 2003" pela Igreja Episcopal Carismática (sede em San Clemente,
-    Califórnia). A data é a anunciada na carta, anterior ao evento.
+    Califórnia). A data é a anunciada na carta, anterior ao evento. Fato futuro em relação à carta (23/05/2003):
+    o bispo diocesano anuncia a sagração do ex-deão, na Igreja Episcopal Carismática, para 08/09/2003; a carta não
+    indica local nem sagrante.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -357,6 +370,17 @@ affiliations:
     reverendo Saulo Marques da Silva (Costa, 2021, p. 173). Queiroz (2004) acrescenta que, em 1973, auxiliou também
     a Igreja Presbiteriana Betânia. Costa observa que, "por conta de sua origem Reformada", Garcia chegou a atender
     ao mesmo tempo a paróquia anglicana e uma congregação presbiteriana.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: pároco
+  start: '1975'
+  status: confirmed
+  sources:
+  - source: d2s27-sinopse
+    quote: Chega ao Recife, para assumir a Paróquia da Santíssima Trindade, o Rev. Paulo Ruiz Garcia.
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia da Santíssima Trindade. A cronologia da IEAB registra, em 1975,
+    a chegada ao Recife do Rev. Paulo Ruiz Garcia para assumir a Paróquia da Santíssima Trindade.
 - jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
@@ -680,6 +704,51 @@ affiliations:
     da Santíssima Trindade (Igreja Catedral criada no período 1998-2002), também secretário de Evangelismo; rompeu
     com a diocese em setembro de 2002, filiando-se à Igreja Episcopal Carismática (ICCEC), segundo o relato de Robinson
     Cavalcanti.
+- jurisdiction: ieab
+  role: other
+  role_description: deão
+  diocese: ieab-dar
+  end: 2002-09
+  end_reason: left
+  status: confirmed
+  sources:
+  - source: d2s23-carta-pastoral-2002
+    quote: precipitada e injustificada decisão do agora ex-deão da Catedral
+  - source: d2s23-carta-pastoral-2002
+    quote: >-
+      lamentamos sua opção por se desvincular da Diocese Anglicana do Recife, da IEAB, e, decorrentemente, da Comunhão
+      Anglicana.
+  notes: >-
+    Local: Catedral da Santíssima Trindade. Segundo a carta pastoral do bispo diocesano (01/10/2002), o deão Paulo
+    Ruiz Garcia optou por se desvincular da diocese e da IEAB em setembro de 2002 (carta de desvinculação de 22/09/2002);
+    a carta apresenta a posição do bispo diocesano.
+- jurisdiction: iccec
+  role: clergy
+  status: probable
+  sources:
+  - source: d2s23-carta-primazes-2003
+    quote: >-
+      O ex-Deão e seus seguidores se juntaram à chamada “Igreja Episcopal Carismática”, com sede em San Clemente,
+      Califórnia, USA.
+  notes: >-
+    Segundo carta do bispo diocesano de 23/05/2003; a data de ingresso não é informada (a carta de 01/10/2002 fala
+    em possibilidade de vinculação com essa igreja).
+- jurisdiction: ieab-dar
+  role: clergy
+  status: confirmed
+  sources:
+  - source: d2s25-paudalho
+    quote: >-
+      De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+      – PE
+  - source: d2s25-paudalho
+    quote: >-
+      reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
+      Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis,
+      Stephen Taylor, Mitsuo Noyama e Washington Franco.
+  notes: >-
+    Local: Diocese do Recife. Participante do retiro do clero diocesano em Paudalho (PE), 28/02 a 01/03/1997; clérigo
+    da diocese nessa data, sem informação sobre início ou fim do vínculo.
 events:
 - type: other
   date: 2002-10
@@ -1290,3 +1359,42 @@ events:
     quote: datada de 22 de setembro de 2002, em que esse Pastor e nove outras pessoas simplesmente
   - source: d2s06-verdades
     quote: considera-se desligada da Diocese Anglicana do Recife da Igreja Episcopal Anglicana do Brasil
+- type: other
+  date: 2002-09
+  description: >-
+    Em 22/09/2002 foi redigida carta de desvinculação do deão da Catedral da Santíssima Trindade (Recife), Rev.
+    Paulo Ruiz Garcia, da Diocese Anglicana do Recife e da IEAB; em 29/09/2002 o culto dominical da Catedral foi
+    convertido em assembleia que homologou a decisão. O bispo diocesano nomeou o bispo sufragâneo Filadelfo Oliveira
+    Neto deão pro tempore, manteve como coadjutor o Rev. Sérgio Andrade, que permaneceu leal à IEAB, e relatou que
+    o Primaz Dom Glauco Soares de Lima e o Secretário Geral da Província estiveram no Recife de 25 a 27/09/2002
+    tentando reverter a decisão. A descrição é a da carta pastoral do bispo diocesano Robinson Cavalcanti (01/10/2002).
+  status: confirmed
+  sources:
+  - source: d2s23-carta-pastoral-2002
+    quote: >-
+      22 de setembro passado, foi redigida uma carta de desvinculação, assinada pelo revmo. Deão e por meia dúzia
+      de pessoas
+  - source: d2s23-carta-pastoral-2002
+    quote: O Bispo Diocesano nomeou o Bispo Sufragâneo como seu deão
+  - source: d2s23-carta-pastoral-2002
+    quote: >-
+      mantendo como coadjutor o Rev. Sérgio Andrade, que permaneceu leal à Igreja Episcopal Anglicana do Brasil
+  - source: d2s23-carta-pastoral-2002
+    quote: >-
+      Dos dias 25 a 27 de setembro, o Revmo. Primaz Dom Glauco Soares de Lima e o Secretário Geral da Província
+      se deslocaram ao Recife
+- type: other
+  date: '2003-04-20'
+  description: >-
+    Em 20/04/2003, o bispo diocesano Robinson Cavalcanti interpretou a saída do deão da Catedral como conflito entre
+    modelos eclesiológicos (personalismo e congregacionalismo, de um lado, e a estrutura episcopal da IEAB, de outro),
+    e disse que, quando do cisma, encontrou entre o clero três situações quanto aos votos de ordenação: os que permaneceram
+    leais, os que os revogaram abandonando a IEAB e os que os mantinham seletivamente; alguns pastores e comunidades
+    seguiram o deão e outros foram para outras denominações.
+  status: confirmed
+  sources:
+  - source: d2s23-cisma-passado
+    quote: O CISMA É PASSADO. E AGORA?
+  - source: d2s23-cisma-passado
+    quote: >-
+      Alguns desses pastores e suas comunidades seguiram o cisma do líder maior, outros foram para outras denominações

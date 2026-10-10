@@ -115,6 +115,23 @@ affiliations:
     page: '254'
   notes: Fundou a Missão da Ressurreição em Passo Fundo (1951).
 - jurisdiction: ieab
+  role: other
+  role_description: ministro encarregado / pároco
+  diocese: ieab-dar
+  start: 1977-04
+  status: confirmed
+  sources:
+  - source: d2s23-bahia-paroquia
+    quote: >-
+      foi criada a Missão do Bom Pastor, sendo empossado como seu primeiro Ministro Encarregado, o Rev. Lauro Borba.
+  - source: d2s23-bahia-paroquia
+    quote: sendo o Rev. Lauro Borba o seu primeiro pároco.
+  notes: >-
+    Local: Paróquia do Bom Pastor (Salvador-BA). Empossado primeiro ministro encarregado da Missão do Bom Pastor
+    no 2º Concílio da diocese (abril de 1977, Salvador) e primeiro pároco da Paróquia do Bom Pastor a partir do
+    3º Concílio (outubro de 1979). Esta página atribui a ele a Missão do Bom Pastor e ao Rev. Stuart a Missão de
+    Cristo o Redentor.
+- jurisdiction: ieab
   role: clergy
   diocese: ieab-dar
   start: '1977-05-13'
@@ -149,3 +166,30 @@ events:
       Em março de 1967, o reverendo Lauro Borba da Silva foi enviado para trabalhar em Lisboa como missionário na
       Igreja Lusitana
     page: '89'
+- type: other
+  date: 1977-04
+  description: >-
+    Na história da comunidade anglicana de Salvador (BA), o 2º Concílio da diocese, realizado em Salvador em abril
+    de 1977, criou a Missão do Bom Pastor, tendo como primeiro ministro encarregado o Rev. Lauro Borba; a Missão
+    de Cristo o Redentor foi transferida para a capela do cemitério dos ingleses, na Ladeira da Barra, sob o Rev.
+    Stuart.
+  status: confirmed
+  sources:
+  - source: d2s23-bahia-paroquia
+    quote: >-
+      2º Concílio realizado de 17 a 16/04/77 aqui em Salvador (rua Ceará 1230), foi criada a Missão do Bom Pastor,
+      sendo empossado como seu primeiro Ministro Encarregado, o Rev. Lauro Borba.
+- type: other
+  date: 1979-10
+  description: >-
+    No 3º Concílio da diocese (Recife, 16 a 18 de outubro de 1979, 5ª sessão), a Missão do Bom Pastor, de Salvador,
+    foi elevada à categoria de paróquia subvencionada, com o Rev. Lauro Borba como primeiro pároco, e foi criada
+    a Missão Cristo o Salvador, em Itaparica (BA), hoje paróquia.
+  status: confirmed
+  sources:
+  - source: d2s23-bahia-paroquia
+    quote: >-
+      3º Concílio realizado em Recife, de 16 a 18 de outubro de 1979 na sua 5 a sessão, a nossa missão foi elevada
+      à categoria de paróquia subvencionada com o nome de Paróquia do Bom Pastor
+  - source: d2s23-bahia-paroquia
+    quote: Ainda no 3 o Concílio foi criada a Missão Cristo o Salvador em Itaparica/Bahia , hoje paróquia.

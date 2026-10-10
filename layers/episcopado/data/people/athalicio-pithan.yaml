@@ -262,6 +262,10 @@ ordinations:
       O motivo foi o atraso do avião que trazia os bispos Alexander Hugo Blankingship, de Cuba, e Efrayn Salinas
       y Velasco, do México.
     page: '69'
+  - source: d2s27-sinopse
+    quote: >-
+      Athalício Theodoro Pithon é sagrado bispo sufragâneo (o primeiro bispo anglicano brasileiro) para auxiliar
+      o bispo Thomas.
   notes: >-
     Sagração: 'Suffr Bp of SBra' no verbete. O diretório não nomeia sagrante nem local. Anúncio (Witness 18/04/1940)
     e relato pós-evento (Living Church 08/05/1940: 'took place as scheduled, April 21st') concordam. Salinas também
@@ -270,7 +274,9 @@ ordinations:
     com Blankingship e Salinas y Velasco só pousou às 11h30; à noite pregou o bispo de Cuba. Trecho citado pela
     tese de KICKHÖFEL, Notas para uma História da IEAB (1995), pp. 191-192. A tese não nomeia o sagrante principal;
     Blankingship e Salinas y Velasco são os bispos cuja chegada era necessária para a cerimônia (listados como co-sagrantes
-    por inferência). O bispo Thomas presidiu o culto do dia.
+    por inferência). O bispo Thomas presidiu o culto do dia. A cronologia grafa o nome como Athalício Theodoro Pithon
+    e o apresenta como o primeiro bispo anglicano brasileiro, sagrado em 1940 (cinquentenário da igreja) para auxiliar
+    o bispo Thomas.
 affiliations:
 - jurisdiction: dmsb
   role: bishop
@@ -395,6 +401,17 @@ affiliations:
   notes: >-
     Local: Reitor da Igreja do Crucificado, Bagé. Kickhofel: em 1933 Pithan fundou o Colégio Independência em Bagé
     ('Fundação do Colégio Independência), em Bagé, por A. T. Pithan').
+- jurisdiction: ieab
+  role: suffragan_bishop
+  status: probable
+  sources:
+  - source: d2s24-eleicao-sufra
+    quote: >-
+      111 anos de história da IEAB tivemos apenas três eleições de bispos sufragâneos (Pithan, Prado e Naudal)
+  notes: >-
+    Citado pelo bispo diocesano do Recife, em 12/06/2001, entre os três bispos sufragâneos eleitos até então na
+    história da IEAB; o texto dá apenas o sobrenome (Pithan, Prado) ou o prenome (Naudal), e a identificação é a
+    dos bispos brasileiros com esses nomes que foram sufragâneos.
 events:
 - type: other
   date: 1939-11
@@ -556,3 +573,16 @@ events:
       recebendo cada um o mesmo número de votos, porém, menos da metade necessária para conquistar a eleição. Embora
       não fosse o costume, a decisão coube ao bispo Thomas que escolheu este último.
     page: '69'
+- type: other
+  date: '1950'
+  description: >-
+    Com a saída do bispo Thomas, o distrito missionário foi dividido em três dioceses: Brasil Meridional (Porto
+    Alegre), sob Athalício Pithan; Brasil Sul-Ocidental (Santa Maria), sob Egmont Krischke; e Brasil Central (Rio
+    de Janeiro), sob Louis Chester Melcher, descrito como o primeiro bispo missionário anglo-católico. A cronologia
+    data a nova estrutura (três dioceses, um sínodo, um conselho nacional) de 1950.
+  status: probable
+  sources:
+  - source: d2s27-sinopse
+    quote: Com a saída do Bispo Thomas o distrito missionário do Brasil foi em três dioceses
+  - source: d2s27-sinopse
+    quote: 'Nova Estrutura: 3 dioceses, um sínodo, um conselho nacional.'

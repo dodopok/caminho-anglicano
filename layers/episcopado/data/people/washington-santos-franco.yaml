@@ -2,6 +2,8 @@
 id: washington-santos-franco
 name: Washington Santos Franco
 full_name: Washington Santos Franco
+aliases:
+- Washington Franco
 biography: >-
   Ordenado diácono em 1986, na IEAB, e presbítero na Diocese Anglicana do Recife pelo bispo Clóvis Erly Rodrigues.
   Em outubro de 1996, com Miguel Uchoa, propôs o nome de Robinson Cavalcanti na escolha de um coadjutor. Cônego
@@ -40,6 +42,15 @@ sources:
   quote: Rev. Côn. Washington Franco, OSE
 - source: dard1-com-sul-2009a
   quote: 'Ministro Encarregado: Rev. Washington Franco Ministro Auxiliar: Rev. Ivaldo Sales'
+- source: d2s25-paudalho
+  quote: >-
+    De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+    – PE
+- source: d2s25-paudalho
+  quote: >-
+    reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
+    Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis, Stephen
+    Taylor, Mitsuo Noyama e Washington Franco.
 ordinations:
 - order: diaconate
   date: '1986'
@@ -91,9 +102,12 @@ affiliations:
   - source: drp2-ord-diac-daniel-fred-2004
     quote: >-
       Gostaria de estender o meu abraço ao Cônego Washington Franco, por seu retorno à atividade ministerial
+  - source: d2s27-artigos-indice
+    quote: Anglicanismo em Missão - Rev. Cón. Washington Franco, OSE
   notes: >-
     Local: Diocese do Recife, Cabido da Catedral da Santíssima Trindade. Citado como cônego na instalação do Cabido,
-    retornando à atividade ministerial.
+    retornando à atividade ministerial. Local: Diocese Anglicana do Recife. Tratado por 'Rev. Cón.' no índice de
+    artigos do site da diocese; em exercício em agosto de 2004 (data da captura).
 - jurisdiction: diocese-anglicana-recife
   role: clergy
   start: '2005'
@@ -192,6 +206,43 @@ affiliations:
   notes: >-
     Delegado clerical ao Concílio Diocesano Extraordinário de 26/02/2005 (Carta de Setúbal), com o cargo indicado
     na lista de delegados.
+- jurisdiction: ieab
+  role: other
+  role_description: cônego
+  diocese: ieab-dar
+  status: confirmed
+  sources:
+  - source: d2s23-anglicanismo-missao
+    quote: Côn. Washington Franco, OSE
+  notes: >-
+    Assina o texto como Cônego Washington Franco, OSE; o texto não é datado (escrito, pelo conteúdo, alguns anos
+    após 1997).
+- jurisdiction: ieab-dar
+  role: clergy
+  status: confirmed
+  sources:
+  - source: d2s25-paudalho
+    quote: >-
+      De 28/02 a 01/03 de 1997, em uma fazenda de propriedade do Sr. Carlos Alberto Gueiros, no município de Paudalho
+      – PE
+  - source: d2s25-paudalho
+    quote: >-
+      reuniu-se o clero diocesano para um retiro, Revs. Maurício Andrade, Robinson Cavalcanti, Miguel Uchôa, Sebastião
+      Gameleira, Alberto Blandón, Paulo Garcia, Ian Meldrum, Simêa Meldrum, Evanilza Barros, Francisco de Assis,
+      Stephen Taylor, Mitsuo Noyama e Washington Franco.
+  notes: >-
+    Local: Diocese do Recife. Participante do retiro do clero diocesano em Paudalho (PE), 28/02 a 01/03/1997; clérigo
+    da diocese nessa data, sem informação sobre início ou fim do vínculo.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: reitor da Paróquia da Ressurreição (João Pessoa, PB)
+  status: probable
+  sources:
+  - source: d2s30-historia
+    quote: estava o Rev. Washington Franco, então reitor da Paróquia da Ressurreição em João Pessoa, Paraíba
+  notes: >-
+    Local: Diocese Anglicana do Recife. Em exercício em janeiro de 1998, quando presidiu a primeira eucaristia anglicana
+    do grupo de Natal.
 events:
 - type: other
   date: 1977/1985
@@ -253,3 +304,32 @@ events:
       um coadjutor), até a minha sagração e posterior instituição e posse, em outubro de 1997
   - source: d2s26-projeto-ameacado
     quote: Concílio Extraordinário de Itaparica (onde houve a eleição)
+- type: other
+  date: '1997'
+  description: >-
+    Segundo o Cônego Washington Franco, ele e o Rev. Miguel Uchoa formalizaram, no processo sucessório anterior
+    ao Concílio de junho de 1997, a indicação de Robinson Cavalcanti para suceder o bispo Clóvis Erly Rodrigues,
+    apoiados depois pelos Revs. Souza e Paulo Garcia; no balanço do episcopado, o autor registra a redação dos Cânones
+    Diocesanos, a implantação do Secretariado e dos Arcediagos, a instituição do Ministério Leigo, do Diaconato
+    Permanente e do Ministério Local e convênios com Fredericton, Boston e Pensilvânia Central.
+  status: probable
+  sources:
+  - source: d2s23-anglicanismo-missao
+    quote: >-
+      Juntamente com o Rev. Miguel Uchoa, formalizamos essa indicação no processo Sucessório, posteriormente apoiados
+      pelos Rev. Souza e Revmº. Paulo Garcia.
+  - source: d2s23-anglicanismo-missao
+    quote: Nossos Cânones Diocesanos foram redigidos. O Secretariado e os Arcediagos foram implantados.
+  - source: d2s23-anglicanismo-missao
+    quote: bem como os convênios com Fredericton, Boston e Pensilvânia Central
+- type: other
+  date: 1998-01
+  description: >-
+    Primeira eucaristia anglicana do grupo que formaria a Paróquia da Natividade, em Natal (RN), na Igreja Metodista
+    do Natal, presidida pelo Rev. Washington Franco, com a presença do Rev. Jorge Aquino e de Frei Severino Abel.
+  status: probable
+  sources:
+  - source: d2s30-historia
+    quote: >-
+      Era o primeiro Domingo de 1998 e presente, para presidir a primeira Eucaristia, estava o Rev. Washington Franco,
+      então reitor da Paróquia da Ressurreição em João Pessoa, Paraíba.

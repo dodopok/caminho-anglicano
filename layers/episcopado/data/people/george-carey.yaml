@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: george-carey
+name: George Carey
+events:
+- type: other
+  date: '2002-07-23'
+  description: >-
+    Rowan Williams, arcebispo de Gales, foi oficialmente apresentado em 23 de julho como centésimo quarto sucessor
+    de Agostinho de Cantuária, o novo arcebispo de Cantuária, sucedendo George Carey (aposentadoria anunciada para
+    31 de outubro de 2002); o texto o descreve como o primeiro nomeado de fora da Igreja da Inglaterra desde a Reforma.
+  status: probable
+  sources:
+  - source: d2s30-arcebispo
+    quote: >-
+      No dia 23 de julho o Arcebispo do País de Gales, Dr Rowan Williams, foi oficialmente apresentado como o centésimo
+      quarto sucessor de Agostinho de Cantuária.
+  - source: d2s30-arcebispo
+    quote: anunciou sua aposentadoria para o dia 31 de outubro de 2002

@@ -27,6 +27,15 @@ sources:
   quote: Guardião da Ordem de São Francisco (Fraternidade Paraíba-Rio Grande do Norte)
 - source: rcor-drv-ordens-dar
   quote: 'Fraternidade Caruaru Guardião: Rev. Claudio Linhares'
+- source: d2s25-orildo
+  quote: >-
+    agradecer o convite e a honra que me foram concedidas pela Reverenda Lílian, pelo Reverendo Cláudio e pelo Reverendo
+    Abel, reitor e coadjutores desta bela Casa de Deus.
+- source: d2s25-orildo
+  quote: >-
+    Pela vontade de Deus, e do Conselho Diocesano, o Diácono Cláudio Linhares será ordenado somente no próximo sábado,
+    na Paróquia Boas Novas, na formosa Caaporã, na vizinha Paraíba, juntamente com o Reverendo Israel Cardoso, autor
+    deste primeiro rito litúrgico anglicano com coração nordestino.
 ordinations:
 - order: diaconate
   date: '2000-10-28'
@@ -71,8 +80,8 @@ ordinations:
     São Judas (28/10), a data que Lílian Linhares, ordenada na mesma cerimônia, dá para o seu diaconato; o mantenedor
     adotou 28/10/2000.
 - order: presbyterate
-  date: 2001-12
-  place: Paróquia Boas Novas, Caaporã-PB
+  date: '2001-12-22'
+  place: Paróquia Boas Novas, Caaporã (PB)
   jurisdiction: ieab
   status: probable
   sources:
@@ -84,9 +93,17 @@ ordinations:
     quote: na formosa Caaporã, na vizinha Paraíba, juntamente com o Reverendo Israel Cardoso
   - source: ieabrecife-clero-2002
     quote: Cláudio de Souza Linhares, OSF
+  - source: d2s25-orildo
+    quote: >-
+      Pela vontade de Deus, e do Conselho Diocesano, o Diácono Cláudio Linhares será ordenado somente no próximo
+      sábado, na Paróquia Boas Novas, na formosa Caaporã, na vizinha Paraíba, juntamente com o Reverendo Israel
+      Cardoso, autor deste primeiro rito litúrgico anglicano com coração nordestino.
   notes: >-
     Ordenação anunciada, num sermão de 15/12/2001, para o sábado seguinte (22/12/2001) em Caaporã-PB; em janeiro
     de 2002 ele já consta como "Rev." na lista do clero. Ordenante não informado (bispo diocesano: Robinson Cavalcanti).
+    Cerimônia anunciada no sermão de 15/12/2001 (sábado) para “o próximo sábado”, isto é, 22/12/2001; o texto é
+    anterior ao ato e não confirma que ele ocorreu nessa data nem nomeia o ordenante. O sermão associa o evento
+    ao Rev. Israel Cardoso, autor do rito, sem dizer que este também seria ordenado.
 affiliations:
 - jurisdiction: ieab
   role: clergy
@@ -130,6 +147,18 @@ affiliations:
   notes: >-
     Guardião da Fraternidade Paraíba-Rio Grande do Norte (jan/2002) e da Fraternidade Caruaru (out/2004) da ordem
     franciscana anglicana na Diocese do Recife.
+- jurisdiction: ieab-dar
+  role: other
+  role_description: coadjutor
+  status: confirmed
+  sources:
+  - source: d2s25-orildo
+    quote: >-
+      agradecer o convite e a honra que me foram concedidas pela Reverenda Lílian, pelo Reverendo Cláudio e pelo
+      Reverendo Abel, reitor e coadjutores desta bela Casa de Deus.
+  notes: >-
+    Local: Diocese do Recife, Paróquia de Jesus de Nazaré (Natal-RN). Em 15/12/2001 era diácono (o próprio sermão
+    o chama de “Diácono Cláudio Linhares”); o sermão o inclui entre os coadjutores da paróquia.
 events:
 - type: other
   date: '2004-09-01'
