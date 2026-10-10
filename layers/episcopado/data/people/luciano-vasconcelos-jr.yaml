@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schemas/person.json
+id: luciano-vasconcelos-jr
+name: Luciano Vasconcelos Jr.
+aliases:
+- Frei Luciano Vasconcelos Jr., OSE
+- Sem. Frei Luciano Vasconcelos Jr.
+biography: >-
+  Seminarista do SAT-PE e frade da Ordem de Santo Estevão Mártir (OSE), foi nomeado pelo bispo Robinson Cavalcanti
+  Secretário Diocesano de Juventude da Diocese Anglicana do Recife, cargo que exercia em abril e maio de 2008.
+sources:
+- source: d2s09-meu-proposito
+  quote: No Concílio Diocesano passado, fui nomeado Secretário Diocesano de Juventude pelo Bispo.
+- source: d2s09-calendario-liturgico
+  quote: >-
+    Sem. Frei Luciano Vasconcelos Jr. , OSE é membro da Diocese do Recife; Frade da Ordem de Santo Estevão Mártir
+    (OSE), Seminarista do SAT-PE e Secretário Diocesano de Juventude. Colabora com a Paróquia Anglicana do Redentor
+    e Paróquia Anglicana do Semeador.
+affiliations:
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: secretário diocesano de juventude
+  status: confirmed
+  sources:
+  - source: d2s09-meu-proposito
+    quote: No Concílio Diocesano passado, fui nomeado Secretário Diocesano de Juventude pelo Bispo.
+  - source: d2s09-meu-proposito
+    quote: >-
+      Desde que ocupei o cargo de Secretário, estou a visitar nossas Paróquias, Missões e Pontos Missionários
+  - source: d2s09-calendario-liturgico
+    quote: >-
+      Sem. Frei Luciano Vasconcelos Jr. , OSE é membro da Diocese do Recife; Frade da Ordem de Santo Estevão Mártir
+      (OSE), Seminarista do SAT-PE e Secretário Diocesano de Juventude. Colabora com a Paróquia Anglicana do Redentor
+      e Paróquia Anglicana do Semeador.
+  notes: >-
+    Nomeado pelo bispo diocesano (Robinson Cavalcanti) no Concílio Diocesano anterior a abril de 2008; o texto não
+    data o concílio. Exercia o cargo em 07/04/2008 e em 12/05/2008, datas das matérias no site da diocese; ainda
+    seminarista.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: seminarista
+  status: confirmed
+  sources:
+  - source: d2s09-calendario-liturgico
+    quote: >-
+      Sem. Frei Luciano Vasconcelos Jr. , OSE é membro da Diocese do Recife; Frade da Ordem de Santo Estevão Mártir
+      (OSE), Seminarista do SAT-PE e Secretário Diocesano de Juventude. Colabora com a Paróquia Anglicana do Redentor
+      e Paróquia Anglicana do Semeador.
+  - source: d2s09-meu-proposito
+    quote: >-
+      em um texto onde eu me posicionava no tocante às inquietações de um simples Seminarista que, no breve caminhar
+      de quatro anos dentro desta Diocese
+  notes: >-
+    Seminarista do SAT-PE em abril e maio de 2008, com quatro anos na diocese segundo o próprio texto. Colaborava
+    com as paróquias anglicanas do Redentor e do Semeador.
+- jurisdiction: ose
+  role: member
+  status: confirmed
+  sources:
+  - source: d2s09-calendario-liturgico
+    quote: >-
+      Sem. Frei Luciano Vasconcelos Jr. , OSE é membro da Diocese do Recife; Frade da Ordem de Santo Estevão Mártir
+      (OSE), Seminarista do SAT-PE e Secretário Diocesano de Juventude. Colabora com a Paróquia Anglicana do Redentor
+      e Paróquia Anglicana do Semeador.
+  notes: Frade da Ordem de Santo Estevão Mártir em maio de 2008.

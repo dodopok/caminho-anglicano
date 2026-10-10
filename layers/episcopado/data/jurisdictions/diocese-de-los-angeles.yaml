@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../schemas/jurisdiction.json
+id: diocese-de-los-angeles
+name: Diocese de Los Angeles
+type: diocese
+relations:
+- type: part_of
+  target: tec
+  status: probable
+  sources:
+  - source: d2s15-glasspool-pt
+    quote: >-
+      que foi, no dia de hoje a sagração de uma lésbica praticante, a Revda. Mary Douglas Glasspool como Bispa Sufragânea
+      da Diocese de Los Angeles, da Igreja Episcopal (TEC) dos EUA

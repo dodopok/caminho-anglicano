@@ -1,6 +1,10 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: ivaldo-sales
 name: Ivaldo Sales
+full_name: Ivaldo Sales da Silva
+aliases:
+- Frei Ivaldo Sales da Silva
+- Ivaldo Sales da Silva
 biography: >-
   Ivaldo Sales foi ordenado diácono em dezembro de 2007, por Robinson Cavalcanti, no encerramento do XXVII Concílio
   da Diocese do Recife. É presbítero dessa diocese, onde atuou como ministro auxiliar, inclusive na Paróquia Anglicana
@@ -24,6 +28,14 @@ sources:
   quote: na qualidade de presidente do CVC PRO VIDA
 - source: dard1-ose-2009a
   quote: Rev Frei Ivaldo Sales (Secretário)
+- source: darl2-novo-nasc-308
+  quote: >-
+    Frei Ivaldo Sales da Silva é membro da Diocese do Recife, da Ordem de Santo Estevão – ose, e Postulante ao Ministério
+    Ordenado; é da Equipe Pastoral da Paróquia Anglicana do Semeador, no Arcediagado Norte
+- source: d2s09-signo-amor
+  quote: Quando entrei para o Seminário em obediência a Cristo em 1986, o fiz a todo custo.
+- source: d2s09-signo-amor
+  quote: E quando me decidi pela Comunhão Anglicana em 2000
 ordinations:
 - order: diaconate
   date: 2007-12
@@ -70,9 +82,14 @@ affiliations:
     quote: Rev. Ivaldo Sales, OSE
   - source: dard1-ose-2010
     quote: Rev. Ivaldo Sales, OSE
+  - source: darl2-novo-nasc-308
+    quote: >-
+      Frei Ivaldo Sales da Silva é membro da Diocese do Recife, da Ordem de Santo Estevão – ose, e Postulante ao
+      Ministério Ordenado; é da Equipe Pastoral da Paróquia Anglicana do Semeador, no Arcediagado Norte
   notes: >-
     Membro da Ordem Evangélica de Santo Estevão Mártir em 2012-02-25. Consta na relação de membros da Ordem de Santo
     Estevão capturada em jan/2009 e na publicada em 01/07/2009 (atualizada em 18/11/2010). Listado entre os clérigos.
+    Frade da Ordem de Santo Estevão em março de 2007.
 - jurisdiction: diocese-anglicana-recife
   role: other
   role_description: ministro auxiliar
@@ -145,3 +162,17 @@ affiliations:
   notes: >-
     Local: Centro de Vivência Cristã Pró-Vida (Paróquia Anglicana São Paulo, Recife). Informe sem data (capturado
     em jan/2009); o texto diz que a capela do centro funciona na Paróquia Anglicana São Paulo.
+- jurisdiction: diocese-anglicana-recife
+  role: other
+  role_description: postulante ao ministério ordenado e membro da equipe pastoral da Paróquia Anglicana do Semeador
+  status: confirmed
+  sources:
+  - source: darl2-novo-nasc-308
+    quote: >-
+      Frei Ivaldo Sales da Silva é membro da Diocese do Recife, da Ordem de Santo Estevão – ose, e Postulante ao
+      Ministério Ordenado; é da Equipe Pastoral da Paróquia Anglicana do Semeador, no Arcediagado Norte
+  - source: darl2-novo-nasc-308
+    quote: (*) Sermão entregue no dia 18 de março de 2007 na Paróquia Anglicana do Semeador.
+  notes: >-
+    Em exercício em março de 2007 (sermão de 18/03/2007); local: Paróquia Anglicana do Semeador, Arcediagado Norte.
+    Foi ordenado diácono em dezembro de 2007.

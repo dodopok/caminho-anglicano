@@ -181,6 +181,76 @@ sources:
   quote: >-
     Depois disso, durante 14 anos a Diocese Anglicana do Recife funcionou como uma diocese sem uma Província a que
     filiar-se.
+- source: darl2-canon-44
+  quote: >-
+    Art.1º – A Diocese do Recife manterá comunhão, companheirismo, parceria, acordos e intercâmbios apenas com Províncias,
+    Dioceses, Agências Missionárias, Entidades e Movimentos da Comunhão Anglicana que, em fidelidade às Sagradas
+    Escrituras e à Tradição da Igreja, não incluam em suas normas e deliberações, a licitude da prática homoerótica
+    e/ou a benção de uniões entre pessoas do mesmo sexo, afirmando os princípios contidos na Resolução 1.10 da Conferência
+    de Lambeth de 1998.
+- source: darl2-canon-44
+  quote: >-
+    Art.2º – Consoante postura ecumênica do Anglicanismo, a Diocese do Recife se propõe a manter uma atitude de
+    diálogo, convivência respeitosa e cooperação possível, com outras denominações cristãs que confessem as doutrinas
+    dos Credos históricos.
+- source: d2s10-c01
+  quote: >-
+    sucessora eclesiástica da Diocese Setentrional e da Diocese Anglicana do Recife, sob Autoridade Primacial
+- source: d2s10-c01
+  quote: >-
+    A DR exerce a sua jurisdição sobre os Estados do Nordeste Legal, e sobre comunidades eclesiásticas situadas
+    em outras unidades da Federação.
+- source: d2s10-c01
+  quote: A sede e foro da DR é a cidade do Recife, no Estado de Pernambuco.
+- source: d2s10-c03
+  quote: >-
+    Sínodo é a assembléia constituída do Bispo Diocesano e, se houver, dos Bispos Coadjutor e Sufragâneo e das representações
+    clericais e leigas das Paróquias, Paróquias Subvencionadas e Missões
+- source: d2s10-c03
+  quote: >-
+    Reconhecer, receber e arrolar uma comunidade eclesial como Paróquia, Paróquia Subvencionada ou Missão, na forma
+    destes Cânones
+- source: d2s10-c06
+  quote: Pode haver na Diocese até 02 (dois) Bispos Sufragâneos, que são assistentes do Bispo Diocesano
+- source: d2s10-c06
+  quote: >-
+    os bispos aposentados, denominados de Bispos Eméritos, terão, em caráter vitalício assento e voz no Sínodo Diocesano
+- source: d2s10-c08
+  quote: >-
+    O Conselho Diocesano é um órgão de caráter administrativo e consultivo, composto por 04 (quatro) Clérigos(as)
+    e 04 (quatro) leigos(as)
+- source: d2s10-c09
+  quote: (08) Secretaria Diocesana de Missão e Evangelismo;
+- source: d2s10-c10
+  quote: >-
+    O(a) Vigário(a) Geral é o(a) assessor(a) executivo(a) e religioso(a) escolhido(a) e nomeado(a) pelo Bispo Diocesano
+- source: d2s10-c11
+  quote: >-
+    A Igreja Catedral do Bom Samaritano, Boa Viagem, em Recife-PE, é a Sé da Diocese do Recife, e a Paróquia do
+    mesmo nome, regida por um Cabido.
+- source: d2s10-c11
+  quote: >-
+    O(a) Deão(ã) é o(a) Reitor(a) da Igreja Catedral, salvo nos casos em que o(a) Bispo Diocesano exercer esta função.
+- source: d2s10-c12
+  quote: >-
+    Considera-se Paróquia Emancipada a Paróquia Subvencionada, ou Missão, que seja reconhecida como tal pelo Sínodo
+- source: d2s10-c17
+  quote: A Diocese do Recife poderá criar Arcediagados, como sub-regiões eclesiásticas
+- source: d2s10-c17
+  quote: >-
+    Cada Arcediagado terá como titular 01 (um(a)) Arcediago(a), designado(a) pelo Bispo dentre os(as) Presbíteros(as)
+    da Diocese, com mandato anual, renovável
+- source: d2s10-c30
+  quote: >-
+    É instituído nesta Diocese o Diaconato Permanente , como categoria especial e auxiliar de Clérigo(a)s
+- source: d2s10-c31
+  quote: >-
+    É instituído na Diocese do Recife o Ministério Ordenado Auxiliar (MOA), que se constitui em uma categoria especial
+    e auxiliar de Clérigos(as)
+- source: d2s10-c28
+  quote: >-
+    Ministro(a)s procedentes de Dioceses da Comunhão Anglicana, ou de Igrejas em comunhão com a mesma, serão admitidos
+    na Diocese do Recife mediante apresentação de Carta Dimissória do Bispo da Diocese de origem
 relations:
 - type: broke_communion_with
   target: ieab
@@ -195,9 +265,14 @@ relations:
     quote: >-
       In 2005, the Bishop of Recife, The Rt. Rev. Robinson Cavalcanti, and ninety percent of the clergy of the diocese
       were excommunicated by the liberal Episcopal Church of Brazil.
+  - source: d2s14-igreja-denominacoes
+    quote: >-
+      está desvinculada de uma organização regional (Igreja Episcopal Anglicana do Brasil), não integrando mais
+      essa “denominação’”
   notes: >-
     Anglican Ink (2018-04-17) e Wikipedia datam a saída em 2004; IAB e Anglican Ink (2018-05-15) falam em excomunhão
-    em 2005.
+    em 2005. Segundo a própria diocese, em texto do bispo diocesano de 30/06/2010, a diocese deixou de integrar
+    a IEAB e se constitui como outra "denominação" em sentido sociológico e jurídico, de projeção nacional.
 - type: schism_from
   target: ieab
   date: '2005-01-25'
@@ -570,13 +645,22 @@ relations:
       sua vinculação institucional como Diocese extraterritorial da Igreja Anglicana do Cone Sul da América
   - source: darl3-idx-p12
     quote: A Diocese do Recife Já Está na Igreja Anglicana do Cone Sul
+  - source: d2s04-gorete-13anos
+    quote: >-
+      A Paróquia Anglicana da Redenção tem vínculo canônico com a DIOCESE DO RECIFE, com a Província do CONE-SUL
+  - source: d2s14-igreja-denominacoes
+    quote: sob a Autoridade Primacial de uma organização regional (Igreja Anglicana no Cone Sul da América)
   notes: >-
     Jurisdição extra-provincial ('supervisão primacial'), não diocese plena do Cone Sul. Fim = criação da IAB (inferido).
     A Diocese do Recife, desligada da IEAB em 2005, passou à autoridade primacial do Cone Sul; em 2010 e 2011 o
     site ainda a apresenta nessa situação. Em dezembro de 2007 (XXVII Concílio Diocesano) os delegados aprovaram
     a filiação institucional da diocese à Igreja Anglicana do Cone Sul como diocese extraterritorial; a visita pastoral
     do Primaz Gregory Venables (28 a 31/03/2008) foi noticiada como "A Diocese do Recife já está na Igreja Anglicana
-    do Cone Sul". Desde setembro de 2005 a diocese estava sob a autoridade primacial do Cone Sul.
+    do Cone Sul". Desde setembro de 2005 a diocese estava sob a autoridade primacial do Cone Sul. O texto é da Paróquia
+    Anglicana da Redenção e declara que a paróquia tem vínculo canônico com a Diocese do Recife e com a Província
+    do Cone Sul; a ligação da diocese ao Cone Sul é inferida dessa declaração. Descrição feita pelo bispo diocesano
+    em 30/06/2010: a diocese se define como parte da Comunhão Anglicana sob a autoridade primacial da Igreja Anglicana
+    no Cone Sul da América.
   discrepancies:
   - field: date
     value: 2007-12
@@ -590,6 +674,12 @@ relations:
         sua vinculação institucional como Diocese extraterritorial da Igreja Anglicana do Cone Sul da América
     - source: darl3-idx-p12
       quote: A Diocese do Recife Já Está na Igreja Anglicana do Cone Sul
+  - field: date
+    value: '2010-11-21'
+    sources:
+    - source: d2s04-gorete-13anos
+      quote: >-
+        A Paróquia Anglicana da Redenção tem vínculo canônico com a DIOCESE DO RECIFE, com a Província do CONE-SUL
 - type: member_of
   target: gafcon
   date: '2008'
@@ -687,6 +777,8 @@ relations:
     quote: >-
       Aceito pelo Colégio dos Bispos da Igreja Anglicana na América do Norte, reunido em Amesbury, Massachusetts,
       Dia de São Barnabé, 2010 A.D.
+  - source: d2s14-igreja-denominacoes
+    quote: em mútuo reconhecimento com outra organização regional (Igreja Anglicana na América do Norte)
   notes: >-
     Memorando de Compreensão e Entendimento 2010 entre a ACNA e a Diocese do Recife: observadores nos concílios
     anuais, aceitação mútua das ordens ministeriais, parcerias entre dioceses e paróquias e exame de um pedido do
@@ -694,6 +786,8 @@ relations:
     (pelo Colégio) e Robinson Cavalcanti (pela Diocese); a diocese ainda devia ratificá-lo. O texto descreve cooperação,
     não a plena comunhão; a relação foi classificada como em_comunhao_com por falta de tipo mais próximo. O mesmo
     colégio decidiu não aceitar filiação de organizações de fora da América do Norte (esclarecimento de 20/06/2010).
+    Relação descrita pelo bispo diocesano em 30/06/2010, como reconhecimento mútuo com a Igreja Anglicana na América
+    do Norte.
 - type: in_communion_with
   target: cascadia-acna
   date: '2010-07-02'
@@ -722,7 +816,12 @@ relations:
   - source: dard1-canon-01
     quote: >-
       sucessora eclesiástica da Diocese Setentrional e da Diocese Anglicana do Recife, sob Autoridade Primacial
-  notes: Definição do Cânon 1 dos Cânones diocesanos (versão capturada em 2007).
+  - source: d2s10-c01
+    quote: >-
+      sucessora eclesiástica da Diocese Setentrional e da Diocese Anglicana do Recife, sob Autoridade Primacial
+  notes: >-
+    Definição do Cânon 1 dos Cânones diocesanos (versão capturada em 2007). Definição do Cânon 1 dos Cânones Diocesanos,
+    na versão publicada no site da diocese em 21/09/2009 (capturada em dezembro de 2010).
 - type: member_of
   target: movimento-anglicano-por-uma-causa-comum
   date: '2006-09-30'
@@ -739,3 +838,16 @@ relations:
     Signatária fundadora da Declaração da Boa Viagem (Catedral Anglicana do Bom Samaritano, Boa Viagem, Recife,
     30/09/2006), que criou o Movimento Anglicano "Por Uma Causa Comum", durante o culto de ação de graças pelo nono
     aniversário de sagração episcopal de Dom Robinson Cavalcanti.
+- type: in_communion_with
+  target: gafcon
+  date: '2013-10-26'
+  status: confirmed
+  sources:
+  - source: d2s10-gafcon2013
+    quote: O GFCA também impediu que a Original Diocese de Recife fosse isolada da Comunhão Anglicana.
+  - source: d2s10-gafcon2013
+    quote: Nós nos encontramos com muita alegria em Nairobi nos dias 21 à 26 de Outubro de 2013.
+  notes: >-
+    O Comunicado de Nairobi (GAFCON 2013), republicado no site da própria diocese, afirma que a Comunhão Global
+    de Anglicanos Confessantes impediu que a 'Original Diocese de Recife' fosse isolada da Comunhão Anglicana. A
+    data é a do comunicado; o texto não data o episódio a que se refere.

@@ -1,6 +1,16 @@
 # yaml-language-server: $schema=../../schemas/person.json
 id: mauricio-roberto-fernandes-coelho
 name: Maurício Roberto Fernandes Coelho
+aliases:
+- Rev. Maurício Coelho
+- Ven. Arc. Rev. Maurício Coelho
+birth:
+  date: c.1940
+  sources:
+  - source: d2s16-arcipreste-print
+    quote: >-
+      Hoje celebramos esse Culto de Ação de Graças pelos 70 anos de vida do nosso querido irmão reverendo Maurício
+      Coelho
 biography: >-
   Clérigo da Diocese Anglicana do Recife, foi arcediago do Arcediagado Sul, pároco da Paróquia Anglicana Jardim
   das Oliveiras e várias vezes presidente do Conselho Diocesano, função em que presidiu a assembleia diocesana de
@@ -65,6 +75,10 @@ sources:
   quote: 'Assessor Diocesano de Relações Internacionais: Rev. Maurício Roberto Fernandes Coelho'
 - source: dard1-fale-conosco-2009a
   quote: 'Secretário Administrativo: Rev. Maurício Coelho'
+- source: d2s16-arcipreste-print
+  quote: >-
+    Hoje celebramos esse Culto de Ação de Graças pelos 70 anos de vida do nosso querido irmão reverendo Maurício
+    Coelho
 affiliations:
 - jurisdiction: diocese-anglicana-recife
   role: clergy
@@ -526,3 +540,21 @@ events:
     quote: >-
       o apelo aos Instrumentos de Unidade da Comunhão Anglicana, por uma “Supervisão Episcopal Primacial Adequada
       Alternativa com Jurisdição”
+- type: other
+  date: '2011'
+  description: >-
+    Robinson Cavalcanti, acompanhado dos presbíteros Maurício Coelho e Geison Vasconcellos, participa como observador
+    (nos termos do Memorando de Entendimento e Cooperação) do Concílio Provincial da Igreja Anglicana na América
+    do Norte (ACNA), em Palm Beach, e, nos dois dias seguintes, como Consultor da reunião do Colégio dos Bispos
+    da ACNA; em seguida viaja à Nigéria. Relato de 04/07/2011; o mês do concílio não é indicado.
+  status: confirmed
+  sources:
+  - source: d2s14-viagem-missionaria-i
+    quote: >-
+      onde participaríamos como observadores (nos termos do nosso “Memorando de Entendimento e Cooperação” ) do
+      Concílio Provincial da Igreja Anglicana na América do Norte (ACNA)
+  - source: d2s14-viagem-missionaria-i
+    quote: Nos dois dias seguintes, pude participar como Consultor da reunião do Colégio dos Bispos
+  - source: d2s14-viagem-missionaria-i
+    quote: >-
+      os reverendos Maurício Coelho (pela American) e Geison Vasconcellos (pela Continental) regressaram ao Brasil
