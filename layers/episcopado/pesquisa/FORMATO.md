@@ -75,8 +75,8 @@ YAML da base, casa nomes com quem já está registrado e mescla as afirmações.
    profissão secular que faz parte da vida pública, cônjuge ou parente que também é clérigo, cofundador ou explica um
    fato de ministério, e causa da morte ou orientação quando são fato público que marcou a história da igreja (ex.: o
    assassinato de Robinson Cavalcanti; Gene Robinson como bispo abertamente gay). Ficam de fora: saúde, endereço,
-   filhos e parentes sem papel público, estado civil sem relevância, finanças, conflitos pessoais e disciplina de
-   quem não é bispo.
+   filhos e parentes sem papel público, estado civil sem relevância, finanças, conflitos pessoais. Disciplina
+   eclesiástica de qualquer clérigo (suspensão, afastamento de cargo, deposição, exclusão) é fato de ministério e entra.
    Esses fatos biográficos não têm campo próprio: registre-os em `pessoas[].fontes_biografia`
    ([{ "chave", "trecho" }]); as citações vão para as fontes do resumo da ficha.
 10. Links do Google Drive/Docs nunca vão em `url`: cite pelo nome do documento (`titulo`), com `url: null`.

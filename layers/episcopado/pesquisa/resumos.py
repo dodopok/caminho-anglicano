@@ -97,6 +97,17 @@ def codigo(s):
     return 'c' + hashlib.md5(f"{s['source']}|{s.get('quote') or ''}".encode()).hexdigest()[:6]
 
 
+COMUNS = set('''A As O Os Em No Na Nos Nas Do Da Dos Das De Ao Aos À Às Com Por Pelo Pela Para Após Antes Depois Desde
+Entre Como Foi Foram Era É Sua Seu Suas Seus Ele Ela Nessa Nesse Naquele Naquela Essa Esse Este Esta Também Segundo
+Dom Revdo Rev Revmo Bispo Bispa Igreja Diocese Diocesano Paróquia Catedral Anglicana Anglicano Episcopal Brasil'''.split())
+
+def termos(texto, inicio_de_frase=False):
+    """Nomes próprios, siglas e anos de um resumo, para apontar o que sumiu na reescrita."""
+    if not inicio_de_frase:
+        texto = re.sub(r'(^|[.;:!?]\s+)[A-ZÀ-Ý][\wÀ-ÿ\-]*', r'\1', texto)  # a maiúscula de início de frase não é nome
+    return {t for t in re.findall(r'\b(?:1[5-9]\d\d|20\d\d|[A-ZÀ-Ý][\wÀ-ÿ\-]+)\b', texto) if t not in COMUNS}
+
+
 def linhas_fatos(kind, d, N):
     out = []
     fmt_src = lambda c: '; '.join(f"{codigo(s)} [{s['source']}] \"{s.get('quote') or ''}\"" for s in c.get('sources', [])[:4])
@@ -192,7 +203,7 @@ def dossie(args):
 
 def aplicar(args):
     itens = json.loads(Path(args.arquivo).read_text())
-    erros, gravar = [], []
+    erros, avisos, gravar = [], [], []
     for it in itens:
         id_ = it['id']
         kind = 'person' if (DATA / 'people' / f'{id_}.yaml').exists() else 'jurisdiction'
@@ -202,17 +213,21 @@ def aplicar(args):
         arq, d = carregar(kind, id_)
         texto = re.sub(r'\s+', ' ', it.get('texto') or '').strip()
         por_codigo = {}
-        def junta(x):
+        def junta(x, acc):
             if isinstance(x, dict):
                 if isinstance(x.get('source'), str):
-                    por_codigo.setdefault(codigo(x), {k: v for k, v in x.items() if k in ('source', 'quote', 'page')})
+                    acc.setdefault(codigo(x), {k: v for k, v in x.items() if k in ('source', 'quote', 'page')})
                 for v in x.values():
-                    junta(v)
+                    junta(v, acc)
             elif isinstance(x, list):
                 for v in x:
-                    junta(v)
-        junta({k: v for k, v in d.items() if k != 'sources'} | {'_': d.get('sources')})
-        junta([{k: v for k, v in c.items() if k != '_papel'} for _, _, c in ENTRADAS.get(id_, [])])
+                    junta(v, acc)
+        # Citações das afirmações (ordenações, vínculos, eventos…): continuam na ficha qualquer que seja o resumo.
+        nas_afirmacoes = {}
+        junta({k: v for k, v in d.items() if k != 'sources'}, nas_afirmacoes)
+        junta([{k: v for k, v in c.items() if k != '_papel'} for _, _, c in ENTRADAS.get(id_, [])], nas_afirmacoes)
+        por_codigo = dict(nas_afirmacoes)
+        junta(d.get('sources'), por_codigo)
         fontes = []
         for c in it.get('citacoes') or []:
             if c in por_codigo:
@@ -226,6 +241,26 @@ def aplicar(args):
         if re.search(r'\b(na base|da base|a base|NOVO|já registrad)', texto):
             erros.append(f'{id_}: o texto fala da base/do processo')
             continue
+        # Uma citação que só o resumo atual tinha sairia da ficha junto com ele: o novo texto tem de citá-la ou o
+        # descarte tem de ser explícito, com motivo ("descartes": [{"codigo", "motivo"}]).
+        descartes = {x.get('codigo'): (x.get('motivo') or '').strip() for x in it.get('descartes') or []}
+        so_no_resumo = [s for s in d.get('sources') or [] if codigo(s) not in nas_afirmacoes]
+        perdidas = [s for s in so_no_resumo if codigo(s) not in (it.get('citacoes') or []) and not descartes.get(codigo(s))]
+        if perdidas:
+            erros.append(f'{id_}: o novo resumo tiraria da ficha {len(perdidas)} citação(ões) que só o resumo atual tem; '
+                         'cite-as ou descarte com motivo em "descartes": '
+                         + '; '.join(f"{codigo(s)} [{s['source']}] \"{(s.get('quote') or '')[:80]}\"" for s in perdidas))
+            continue
+        for s in so_no_resumo:
+            if codigo(s) in descartes and codigo(s) not in (it.get('citacoes') or []):
+                avisos.append(f"{id_}: citação descartada {codigo(s)} [{s['source']}] — {descartes[codigo(s)]}")
+        # Fatos do resumo atual sem citação nenhuma na ficha não têm código para conferir: o redator lista o que
+        # deixou de fora em "omitidos", e os nomes e anos que sumiram do texto vão para a revisão humana.
+        for o in it.get('omitidos') or []:
+            avisos.append(f'{id_}: omitido do resumo atual — {o}')
+        sumidos = termos(d.get(CAMPO[kind]) or '') - termos(texto, inicio_de_frase=True)
+        if sumidos:
+            avisos.append(f'{id_}: nomes e anos do resumo atual que não aparecem no novo: {", ".join(sorted(sumidos))}')
         d[CAMPO[kind]] = texto
         d['sources'] = fontes
         ordem = ORDEM_P if kind == 'person' else ORDEM_J
@@ -235,7 +270,9 @@ def aplicar(args):
                        + yaml.dump(d, Dumper=Dumper, sort_keys=False, allow_unicode=True, width=110)))
     for e in erros:
         print('  ! ' + e)
-    print(f'{len(gravar)} resumo(s) prontos, {len(erros)} problema(s)')
+    for a in avisos:
+        print('  ? ' + a)
+    print(f'{len(gravar)} resumo(s) prontos, {len(erros)} problema(s), {len(avisos)} aviso(s) para conferir')
     if args.write:
         for arq, txt in gravar:
             arq.write_text(txt)
