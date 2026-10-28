@@ -166,3 +166,13 @@ describe('base real', () => {
     expect(prompt).toContain('ieab = IEAB')
   })
 })
+
+describe('exemplos', () => {
+  it('troca o nome nas perguntas de pessoa e monta o link com contexto', async () => {
+    const { EXEMPLOS, exemplosDaFicha, perguntaLink } = await import('./exemplos')
+    expect(EXEMPLOS.gerais.flatMap((g) => g.perguntas).length).toBeGreaterThanOrEqual(10)
+    expect(exemplosDaFicha('person', 'Ana')[0]).toBe('Quem sagrou ou ordenou Ana?')
+    expect(exemplosDaFicha('jurisdiction', 'IN').every((q) => !q.includes('{nome}'))).toBe(true)
+    expect(perguntaLink('Quem sagrou Ana?', 'p:a')).toBe('/episcopado/pergunte?q=Quem+sagrou+Ana%3F&p=p%3Aa')
+  })
+})

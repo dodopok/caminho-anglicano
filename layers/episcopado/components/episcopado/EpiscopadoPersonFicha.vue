@@ -140,6 +140,7 @@
         </ul>
       </section>
 
+      <EpiscopadoPerguntaExemplos :node-id="`p:${person.id}`" kind="person" :nome="person.name" />
       <EpiscopadoFootnotes :footnotes="person.footnotes" />
       <EpiscopadoHowToRead />
     </article>

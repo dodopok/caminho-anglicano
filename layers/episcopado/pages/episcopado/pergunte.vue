@@ -14,12 +14,17 @@
 
       <p v-if="indisponivel" class="mb-6 rounded-ep border border-ep-line bg-ep-card px-4 py-3 text-sm text-ep-body" role="status">{{ indisponivel }}</p>
 
-      <div v-if="!turnos.length" class="mb-8">
-        <p class="mb-2 text-xs font-medium uppercase tracking-[.06em] text-ep-muted">Experimente</p>
-        <div class="flex flex-wrap gap-2">
-          <button v-for="q in exemplos" :key="q" type="button" class="ep-chip text-left" :disabled="busy" @click="enviar(q)">{{ q }}</button>
+      <section v-if="!turnos.length" class="mb-8" aria-labelledby="exemplos-titulo">
+        <p id="exemplos-titulo" class="mb-3 text-xs font-medium uppercase tracking-[.06em] text-ep-muted">Experimente</p>
+        <div class="grid gap-5 min-[700px]:grid-cols-2">
+          <div v-for="g in grupos" :key="g.tema">
+            <p class="mb-2 font-ep-serif text-[15px] font-semibold text-ep-ink">{{ g.tema }}</p>
+            <div class="flex flex-col items-start gap-2">
+              <button v-for="q in g.perguntas" :key="q" type="button" class="ep-chip text-left" :disabled="busy" @click="enviar(q)">{{ q }}</button>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
       <ol class="flex flex-col gap-8" aria-live="polite">
         <li v-for="(t, i) in turnos" :key="t.id" class="flex flex-col gap-3">
@@ -38,6 +43,13 @@
           </article>
         </li>
       </ol>
+
+      <details v-if="turnos.length && !busy" class="mt-8 text-sm text-ep-body">
+        <summary class="cursor-pointer select-none text-xs font-medium uppercase tracking-[.06em] text-ep-muted hover:text-ep-ink">Mais exemplos de perguntas</summary>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <button v-for="q in todos" :key="q" type="button" class="ep-chip text-left" @click="enviar(q)">{{ q }}</button>
+        </div>
+      </details>
     </main>
 
     <div class="pointer-events-none fixed inset-x-0 bottom-0 z-20 bg-gradient-to-t from-ep-paper via-ep-paper to-transparent pb-[max(1rem,env(safe-area-inset-bottom))] pt-6">
@@ -74,6 +86,7 @@
 </template>
 
 <script setup lang="ts">
+import { EXEMPLOS, exemplosDaFicha, type TemaExemplos } from '../../lib/pergunta/exemplos'
 import { nodeRoute } from '../../lib/style'
 
 definePageMeta({ layout: false })
@@ -91,21 +104,12 @@ const entrada = ref(typeof route.query.q === 'string' ? route.query.q : '')
 const input = ref<HTMLTextAreaElement | null>(null)
 const indisponivel = ref<string | null>(null)
 
-const exemplosGerais = [
-  'Quantas sagrações a IEAB registra por década?',
-  'Quais igrejas saíram da IEAB por cisma, e quem liderou cada uma?',
-  'Como Miguel Uchôa se liga a Thomas Cranmer?',
-  'Quem Robinson Cavalcanti ordenou ou sagrou?',
-  'Qual a linha de sucessão de Márcio Meira?',
-  'Quais bispos a Igreja Anglicana no Brasil registra hoje?'
-]
-const exemplos = computed(() => {
+/** Exemplos da lista única (`lib/pergunta/exemplos.ts`); com uma ficha como contexto, os da ficha vêm primeiro. */
+const grupos = computed<TemaExemplos[]>(() => {
   const n = contextoNode.value
-  if (!n) return exemplosGerais
-  return n.kind === 'person'
-    ? [`Quem sagrou ou ordenou ${n.label}?`, `Por quais igrejas ${n.label} passou?`, `Qual a linha de sucessão de ${n.label}?`, `Quem ${n.label} ordenou?`]
-    : [`De onde veio a ${n.label}?`, `Quem foram os bispos da ${n.label}?`, `Quais igrejas saíram da ${n.label}?`, `Linha do tempo da ${n.label}`]
+  return n ? [{ tema: `Sobre ${n.label}`, perguntas: exemplosDaFicha(n.kind, n.label) }, ...EXEMPLOS.gerais] : EXEMPLOS.gerais
 })
+const todos = computed(() => grupos.value.flatMap((g) => g.perguntas))
 
 function autosize() {
   const el = input.value
