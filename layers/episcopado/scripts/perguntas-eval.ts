@@ -170,7 +170,8 @@ function grade(caso: Caso, r: Resposta): { ok: boolean; falhas: string[] } {
   if (c.nomes?.length) {
     const hay = norm(`${text}\n${blocks}`)
     // "SIGLA|Nome completo": basta uma das formas.
-    const found = c.nomes.filter((n) => n.split('|').filter(Boolean).some((alt) => hay.includes(norm(alt))))
+    // O qualificador entre parênteses no fim ("… (Recife)") é opcional no texto.
+    const found = c.nomes.filter((n) => n.split('|').filter(Boolean).some((alt) => hay.includes(norm(alt)) || hay.includes(norm(alt.replace(/\s*\([^)]*\)$/, '')))))
     const min = c.min ?? c.nomes.length
     if (found.length < min) falhas.push(`nomes ${found.length}/${min}: faltam ${c.nomes.filter((n) => !found.includes(n)).slice(0, 4).join(', ')}`)
   }
