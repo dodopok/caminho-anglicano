@@ -124,6 +124,7 @@
         </ul>
       </section>
 
+      <EpiscopadoPerguntaExemplos :node-id="`j:${j.id}`" kind="jurisdiction" :nome="j.acronym ?? j.name" />
       <EpiscopadoFootnotes :footnotes="j.footnotes" />
       <EpiscopadoHowToRead />
     </article>

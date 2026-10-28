@@ -72,6 +72,8 @@ Eventos SSE, nesta ordem (os três primeiros se repetem):
 
 Erros antes do streaming: `400` (validação), `429` com `Retry-After` (20 perguntas por hora por IP, 400 por dia no total), `503` (sem `ANTHROPIC_API_KEY`, Supabase configurado e fora do ar, ou mais de 8 perguntas simultâneas na instância). `GET /api/episcopado/pergunta/aquecer` carrega a base e o banco SQLite da instância sem chamar o modelo (`{ ok, version }`); a página chama ao abrir.
 
+`GET /api/episcopado/pergunta/exemplos`: as perguntas de exemplo do site, para o app mostrar as mesmas: `{ gerais: [{ tema, perguntas }], pessoa: string[], jurisdicao: string[] }`. Nas de pessoa, `{nome}` vira o nome da ficha; as de jurisdição falam de "esta jurisdição" e vão com `contexto: "j:<id>"`. Fonte: `lib/pergunta/exemplos.ts`.
+
 ## Exemplos
 
 ```
