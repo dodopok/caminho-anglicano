@@ -1,0 +1,705 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "markdown": {
+      "description": "Texto final; \"[1, 2]\" são chamadas para `notas`; \"[[bloco N]]\" posiciona um bloco",
+      "type": "string"
+    },
+    "notas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "n": {
+            "type": "number"
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "author": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "publisher": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "url": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "archive_url": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "published": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "level": {
+                "type": "string",
+                "enum": [
+                  "primary",
+                  "secondary",
+                  "tertiary"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "title",
+              "level"
+            ],
+            "additionalProperties": false
+          },
+          "quote": {
+            "type": "string"
+          },
+          "page": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "n",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "blocos": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "tipo": {
+                "type": "string",
+                "const": "tabela"
+              },
+              "titulo": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "colunas": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "linhas": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              },
+              "total": {
+                "description": "Linhas da consulta até o limite de 501 (\"mais de 500\")",
+                "type": "number"
+              },
+              "truncado": {
+                "type": "boolean"
+              },
+              "consulta": {
+                "description": "SQL que gerou o bloco",
+                "type": "string"
+              }
+            },
+            "required": [
+              "tipo",
+              "titulo",
+              "colunas",
+              "linhas",
+              "total",
+              "truncado",
+              "consulta"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "tipo": {
+                "type": "string",
+                "const": "grafico"
+              },
+              "forma": {
+                "type": "string",
+                "enum": [
+                  "barras",
+                  "linha"
+                ]
+              },
+              "titulo": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "x": {
+                "type": "string"
+              },
+              "y": {
+                "type": "string"
+              },
+              "labels": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "data": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              },
+              "consulta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "tipo",
+              "forma",
+              "titulo",
+              "x",
+              "y",
+              "labels",
+              "data",
+              "consulta"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "tipo": {
+                "type": "string",
+                "const": "linha_do_tempo"
+              },
+              "titulo": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "itens": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "string"
+                    },
+                    "texto": {
+                      "type": "string"
+                    },
+                    "claim": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "texto",
+                    "claim"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "consulta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "tipo",
+              "titulo",
+              "itens",
+              "consulta"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "tipo": {
+                "type": "string",
+                "const": "sucessao"
+              },
+              "titulo": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "view": {
+                "type": "object",
+                "properties": {
+                  "person": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "name"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "steps": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "person": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "date": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "confirmed",
+                            "probable",
+                            "contested"
+                          ]
+                        },
+                        "via": {
+                          "type": "string",
+                          "enum": [
+                            "principal",
+                            "co"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "person",
+                        "date"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "end": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "unknown_consecrator",
+                          "no_episcopate",
+                          "cycle"
+                        ]
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "origin": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "type": "string"
+                          },
+                          "person": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "name"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "person"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "alt": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "person": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "date": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "confirmed",
+                            "probable",
+                            "contested"
+                          ]
+                        },
+                        "via": {
+                          "type": "string",
+                          "enum": [
+                            "principal",
+                            "co"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "person",
+                        "date"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "altOrigin": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "type": "string"
+                          },
+                          "person": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "name"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "person"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "person",
+                  "steps",
+                  "end",
+                  "origin",
+                  "alt",
+                  "altOrigin"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "tipo",
+              "titulo",
+              "view"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "tipo": {
+                "type": "string",
+                "const": "caminho"
+              },
+              "titulo": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "de": {
+                "type": "string"
+              },
+              "para": {
+                "type": "string"
+              },
+              "modo": {
+                "type": "string",
+                "enum": [
+                  "sagracoes",
+                  "tudo"
+                ]
+              },
+              "steps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "person",
+                        "jurisdiction"
+                      ]
+                    },
+                    "year": {
+                      "type": "number"
+                    },
+                    "claim": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "via": {
+                      "type": "object",
+                      "properties": {
+                        "kind": {
+                          "type": "string"
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "confirmed",
+                            "probable",
+                            "contested"
+                          ]
+                        },
+                        "year": {
+                          "type": "number"
+                        },
+                        "reversed": {
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "status",
+                        "reversed"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label",
+                    "kind"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "tipo",
+              "titulo",
+              "de",
+              "para",
+              "modo",
+              "steps"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "resumo": {
+      "description": "Devolva em `historico` na próxima pergunta da conversa",
+      "type": "string"
+    },
+    "cache": {
+      "type": "boolean"
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "resultado": {
+          "type": "string",
+          "enum": [
+            "ok",
+            "nao_sabe",
+            "recusa",
+            "parcial",
+            "abortada",
+            "erro"
+          ]
+        },
+        "rodadas": {
+          "type": "number"
+        },
+        "duracaoMs": {
+          "type": "number"
+        },
+        "citacoesRemovidas": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "resultado",
+        "rodadas",
+        "duracaoMs",
+        "citacoesRemovidas"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "markdown",
+    "notas",
+    "blocos",
+    "resumo"
+  ],
+  "additionalProperties": false
+}

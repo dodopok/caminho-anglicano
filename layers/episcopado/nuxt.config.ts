@@ -42,6 +42,9 @@ export default defineNuxtConfig({
     '/api/episcopado/efemerides': { isr: false, cache: false },
     '/api/episcopado/inicio': { isr: 3600 },
     // Sugestões são POST e nunca entram em cache.
-    '/api/episcopado/sugestao': { isr: false, cache: false }
+    '/api/episcopado/sugestao': { isr: false, cache: false },
+    // Pergunte à Rede: POST em streaming e aquecimento da instância; nunca em cache.
+    '/api/episcopado/pergunta': { isr: false, cache: false },
+    '/api/episcopado/pergunta/**': { isr: false, cache: false }
   }
 })
