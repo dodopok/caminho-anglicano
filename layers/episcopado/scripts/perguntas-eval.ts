@@ -54,6 +54,8 @@ interface Check {
   regex?: RegExp[]
   proibido?: RegExp[]
   blocos?: string[]
+  /** Listas de pessoas: nas tabelas, nenhuma pessoa (id ou nome) em mais de uma linha. */
+  umaLinhaPorPessoa?: boolean
   /** Fora do escopo: não pode consultar a base nem afirmar fatos. */
   fora?: boolean
   /** A base não tem: resultado 'nao_sabe' ou texto dizendo que não registra. */
@@ -102,7 +104,7 @@ const CASOS: Caso[] = [
   { id: 24, tipo: 'nomes', perguntas: ['Quem sagrou Francisco de Assis da Silva?'], check: { nomes: [consecrator('francisco-de-assis-da-silva')] } },
   { id: 25, tipo: 'nomes', perguntas: ['Quem foi sagrado no mesmo dia que Márcio Meira?'], check: { nomes: ['Márcio Simões'] } },
   { id: 26, tipo: 'nomes', perguntas: ['Quem sagrou Sumio Takatsu?'], check: { nomes: [consecrator('sumio-takatsu')] } },
-  { id: 27, tipo: 'nomes', perguntas: ['Liste os bispos da IAB.'], check: { nomes: iabBishops, min: Math.max(1, iabBishops.length - 2) } },
+  { id: 27, tipo: 'nomes', perguntas: ['Liste os bispos da IAB.'], check: { nomes: iabBishops, min: Math.max(1, iabBishops.length - 2), umaLinhaPorPessoa: true } },
   { id: 28, tipo: 'nomes', perguntas: ['Qual a linha de sucessão de Robinson Cavalcanti?'], check: { nomes: [consecrator('robinson-cavalcanti'), consecrator('glauco-soares-de-lima')], blocos: ['sucessao'] } },
   { id: 29, tipo: 'nomes', perguntas: ['Como Márcio Meira se liga a Cantuária?'], check: { nomes: ['Miguel Uchôa'], regex: [/cantu[aá]ria|canterbury/i], blocos: ['sucessao'] } },
   { id: 30, tipo: 'nomes', perguntas: ['Qual a ligação entre Robinson Cavalcanti e Miguel Uchôa?'], check: { nomes: ['Robinson Cavalcanti', 'Miguel Uchôa', 'Bill Atwood'], proibido: [/Cavalcanti[^.]{0,80}co-sagra[^.]{0,60}(de|na sagração de) (Miguel )?Uch[oô]a/i] } },
@@ -167,6 +169,14 @@ function grade(caso: Caso, r: Resposta): { ok: boolean; falhas: string[] } {
   for (const re of c.regex ?? []) if (!re.test(`${text}\n${blocks}`)) falhas.push(`sem ${re}`)
   for (const re of c.proibido ?? []) if (re.test(text)) falhas.push(`proibido ${re}`)
   for (const t of c.blocos ?? []) if (!r.blocos.some((b) => b.tipo === t)) falhas.push(`sem bloco ${t}`)
+  if (c.umaLinhaPorPessoa) {
+    for (const b of r.blocos) {
+      if (b.tipo !== 'tabela') continue
+      const col = [/^(person|pessoa)$/, /^(name|nome)$/].map((re) => b.colunas.findIndex((n) => re.test(n))).find((i) => i >= 0)
+      const vals = col === undefined ? [] : b.linhas.map((l) => l[col])
+      if (new Set(vals).size < vals.length) falhas.push(`pessoa repetida na tabela (${vals.length} linhas, ${new Set(vals).size} pessoas)`)
+    }
+  }
   if (c.fora && r.meta.ferramentas.some((f) => f.nome !== 'buscar')) falhas.push('consultou a base fora do escopo')
   if (c.naoSabe && r.meta.resultado !== 'nao_sabe' && !/n[aã]o (registra|tem|traz|possui|cont[eé]m|h[aá])/i.test(text)) falhas.push('não disse que a base não tem')
   if (r.meta.resultado === 'erro' || r.meta.resultado === 'parcial') falhas.push(`resultado ${r.meta.resultado}`)

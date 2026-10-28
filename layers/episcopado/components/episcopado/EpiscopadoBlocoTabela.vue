@@ -4,7 +4,7 @@
       <table class="w-full border-collapse text-left text-[13px]">
         <thead class="bg-ep-paper-2">
           <tr>
-            <th v-for="c in visible" :key="c.i" scope="col" class="whitespace-nowrap border-b border-ep-line px-3 py-2 font-ep-mono text-[11px] font-medium uppercase tracking-[.05em] text-ep-muted">{{ COLUMN_LABEL[c.name] ?? c.name.replace(/_/g, ' ') }}</th>
+            <th v-for="c in visible" :key="c.i" scope="col" class="whitespace-nowrap border-b border-ep-line px-3 py-2 font-ep-mono text-[11px] font-medium uppercase tracking-[.05em] text-ep-muted">{{ columnLabel(c.name) }}</th>
           </tr>
         </thead>
         <tbody>
@@ -14,7 +14,7 @@
               <NuxtLink v-else-if="c.linkFrom !== undefined && nodeOf(c.linkCol!, row[c.linkFrom])" :to="nodeRoute(nodeOf(c.linkCol!, row[c.linkFrom])!.id)" class="ep-link">{{ row[c.i] }}</NuxtLink>
               <NuxtLink v-else-if="nodeOf(c.name, row[c.i])" :to="nodeRoute(nodeOf(c.name, row[c.i])!.id)" class="ep-link">{{ nodeOf(c.name, row[c.i])!.label }}</NuxtLink>
               <template v-else-if="row[c.i] === null || row[c.i] === ''"><span class="text-ep-faint">—</span></template>
-              <template v-else>{{ display(c.name, row[c.i]) }}</template>
+              <template v-else>{{ displayValue(c.name, row[c.i]) }}</template>
             </td>
           </tr>
         </tbody>
@@ -30,8 +30,8 @@
 
 <script setup lang="ts">
 import type { GraphNode } from '../../lib/graph'
-import { END_REASON_LABEL, EVENT_LABEL, JURISDICTION_TYPE_LABEL, ORDER_LABEL, RELATION_LABEL, ROLE_LABEL, formatDate } from '../../lib/labels'
 import type { Bloco } from '../../lib/pergunta/blocos'
+import { columnLabel, displayValue } from '../../lib/pergunta/tabela'
 import { nodeRoute } from '../../lib/style'
 
 /** Bloco de tabela do Pergunte à Rede: ids viram links para as fichas; `claim_id` só vai no CSV. */
@@ -40,27 +40,11 @@ const props = defineProps<{ bloco: Extract<Bloco, { tipo: 'tabela' }> }>()
 const PAGE = 25
 const all = ref(false)
 const PERSON_COLS = /^(person|pessoa|principal_consecrator|ordained_by|consecrator|ordainer|sagrante|ordenante|leader|lider|bishop|bispo|co_consecrator)$/
-const JURISDICTION_COLS = /^(jurisdiction|jurisdicao|diocese|source_jurisdiction|target|ancestor|igreja|church|origem|alvo)$/
+const JURISDICTION_COLS = /^(jurisdiction|jurisdicao|diocese|source_jurisdiction|target|ancestor|igreja|church|origem|alvo|onde)$/
 const HIDDEN = new Set(['claim_id'])
 
 const { data: graph } = useEpiscopadoGraph()
 const nodes = computed(() => new Map((graph.value?.nodes ?? []).map((n) => [n.id, n])))
-
-/** Cabeçalhos comuns em pt-BR; os demais aparecem como o modelo os nomeou. */
-const COLUMN_LABEL: Record<string, string> = {
-  name: 'Nome', nome: 'Nome', person: 'Pessoa', order: 'Ordem', date: 'Data', year: 'Ano', status: 'Status',
-  jurisdiction: 'Jurisdição', diocese: 'Diocese', role: 'Papel', start_date: 'Início', end_date: 'Fim',
-  start_year: 'Início', end_year: 'Fim', end_reason: 'Motivo do fim', principal_consecrator: 'Sagrante principal',
-  ordained_by: 'Ordenante', type: 'Tipo', target: 'Alvo', source_jurisdiction: 'Jurisdição', acronym: 'Sigla', place: 'Local'
-}
-const VALUE_LABEL: Record<string, Record<string, string>> = {
-  order: ORDER_LABEL, role: ROLE_LABEL, end_reason: END_REASON_LABEL, type: { ...RELATION_LABEL, ...EVENT_LABEL, ...JURISDICTION_TYPE_LABEL }
-}
-const display = (col: string, v: unknown) => {
-  if (typeof v !== 'string') return v
-  if (/(^|_)date$|^data$/.test(col)) return formatDate(v) || v
-  return VALUE_LABEL[col]?.[v] ?? v
-}
 
 interface Col { name: string; i: number; linkFrom?: number; linkCol?: string }
 
