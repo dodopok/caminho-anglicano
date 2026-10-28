@@ -30,8 +30,8 @@ As ferramentas ficam em `layers/episcopado/pesquisa/`:
    profissão secular que faz parte da vida pública, cônjuge ou parente que também é clérigo, cofundador ou explica um
    fato de ministério, e causa da morte ou orientação quando são fato público que marcou a história da igreja (ex.: o
    assassinato de Robinson Cavalcanti; Gene Robinson como bispo abertamente gay). Ficam de fora: saúde, endereço,
-   filhos e parentes sem papel público, estado civil sem relevância, finanças, conflitos pessoais e disciplina de
-   quem não é bispo.
+   filhos e parentes sem papel público, estado civil sem relevância, finanças, conflitos pessoais. Disciplina
+   eclesiástica de qualquer clérigo (suspensão, afastamento de cargo, deposição, exclusão) é fato de ministério e entra.
    Fatos biográficos vão em `fontes_biografia` da pessoa na leva (ver FORMATO.md) e aparecem no resumo.
 5. **Google Drive/Docs** nunca aparecem como link no site: cite pelo nome do documento (`url: null`). Documento
    pessoal ou privado não entra.
@@ -105,8 +105,11 @@ pnpm episcopado:resumos dossie --ids <id>... --saida <scratchpad>/resumos      #
 # escreva [{ "id", "texto", "citacoes": ["c…"] }] seguindo INSTRUCOES.md ("Reescrever resumos")
 pnpm episcopado:resumos aplicar <arquivo.json> [--write]
 ```
-O `aplicar` só aceita códigos de citação que já estão na ficha (os trechos ficam literais) e recusa texto
-de bastidor. Para muitas fichas, despache agentes com os dossiês (skill `episcopado-pesquisar`, passo 3b).
+O `aplicar` só aceita códigos de citação que já estão na ficha (os trechos ficam literais), recusa texto
+de bastidor e recusa o resumo que tiraria da ficha uma citação que só o resumo atual tinha (cite-a ou ponha-a em
+`descartes` com motivo). Os avisos `?` listam citações descartadas, fatos `omitidos` (sem fonte na ficha) e nomes
+ou anos que sumiram do texto: confira cada um antes do `--write`; fato omitido por falta de fonte merece uma busca
+rápida, e o que tiver fonte volta ao resumo com o trecho. Para muitas fichas, despache agentes com os dossiês (skill `episcopado-pesquisar`, passo 3b).
 Ao usuário, diga quantos resumos foram refeitos.
 
 ### 4. Validar

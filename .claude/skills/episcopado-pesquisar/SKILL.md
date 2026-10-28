@@ -43,8 +43,9 @@ avisa quantas fichas mudaram.
    (lotes de 30 fichas; `--minimo 2` pula fichas com um fato só).
 2. Um agente (Sonnet basta) por dossiê: "Siga a seção 'Reescrever resumos' de
    `layers/episcopado/pesquisa/INSTRUCOES.md`; leia `<dossie-NN.md>` e grave `<resumos-NN.json>`".
-3. `pnpm episcopado:resumos aplicar <resumos-NN.json>` (simulação), leia 3–4 textos ao acaso contra o dossiê,
-   depois `--write`, `pnpm episcopado:validate` e commit (`docs(episcopado): resumos atualizados — <frente>`).
+3. `pnpm episcopado:resumos aplicar <resumos-NN.json>` (simulação), leia 3–4 textos ao acaso contra o dossiê e
+   confira TODOS os avisos `?` (citação descartada, fato omitido sem fonte, nome ou ano que sumiu do texto): o que
+   tiver fonte volta ao resumo; o que não tiver, faça uma busca rápida antes de deixar sair. Depois `--write`, `pnpm episcopado:validate` e commit (`docs(episcopado): resumos atualizados — <frente>`).
 
 ## 4. Pendências manuais
 O que nenhum agente consegue ler (vídeo do YouTube, Facebook fechado, livro físico) vira uma lista curta para o
