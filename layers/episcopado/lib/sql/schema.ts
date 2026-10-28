@@ -62,7 +62,17 @@ CREATE TABLE sources (id TEXT PRIMARY KEY, type TEXT NOT NULL, title TEXT NOT NU
 CREATE TABLE claim_sources (claim_id TEXT NOT NULL, source TEXT NOT NULL, quote TEXT, page TEXT);
 -- Versões divergentes de um campo de uma afirmação (status 'contested' costuma tê-las).
 CREATE TABLE discrepancies (claim_id TEXT NOT NULL, field TEXT NOT NULL, value TEXT, source TEXT NOT NULL,
-  notes TEXT);`
+  notes TEXT);
+
+-- Busca no TEXTO LIVRE (FTS5): notas, descrições, biografias, papéis "other" e os trechos citados das fontes.
+-- Muitos fatos só existem aqui (quem ficou ou saiu num cisma, signatários de cartas, excluídos por decreto).
+-- sujeito = 'p:<id>' ou 'j:<id>'; campo = de onde veio o texto (notes, description, biography, role, quote).
+-- Busca sem acento nem caixa; prefixo com * (permanec*), AND/OR/NOT, "frase exata"; ORDER BY rank = relevância.
+-- snippet() não funciona dentro de GROUP BY: busque num WITH x AS MATERIALIZED (...) e agrupe fora.
+-- Ex.: SELECT t.sujeito, t.claim_id, snippet(textos, 3, '«', '»', '…', 12) AS trecho FROM textos t
+--      WHERE textos MATCH 'permanec* AND ieab' ORDER BY rank LIMIT 30
+CREATE VIRTUAL TABLE textos USING fts5(claim_id UNINDEXED, sujeito UNINDEXED, campo UNINDEXED, texto,
+  tokenize='unicode61 remove_diacritics 2');`
 
 /** Índices: fora do texto do prompt (não ajudam o modelo a escrever SQL). */
 export const SCHEMA_INDEXES = `CREATE INDEX i_alias ON person_aliases(person);
@@ -89,5 +99,6 @@ export const TABLES = [
   'events',
   'sources',
   'claim_sources',
-  'discrepancies'
+  'discrepancies',
+  'textos'
 ] as const

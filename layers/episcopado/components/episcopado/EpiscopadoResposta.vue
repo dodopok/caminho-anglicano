@@ -9,11 +9,19 @@
       <ol v-else-if="b.type === 'ol'" class="my-3 list-decimal space-y-1 pl-5 marker:text-ep-faint">
         <li v-for="(item, j) in b.items" :key="j"><EpiscopadoInline :nodes="item" /></li>
       </ol>
-      <EpiscopadoBloco v-else-if="b.type === 'bloco' && blocos[b.n - 1]" :bloco="blocos[b.n - 1]" :n="b.n" />
+      <EpiscopadoBloco v-else-if="b.type === 'bloco' && !streaming && blocos[b.n - 1]" :bloco="blocos[b.n - 1]" :n="b.n" />
     </template>
     <span v-if="streaming" class="ml-0.5 inline-block h-4 w-1.5 animate-pulse bg-ep-garnet align-middle" aria-hidden="true" />
 
-    <EpiscopadoBloco v-for="n in trailing" :key="`b${n}`" :bloco="blocos[n - 1]" :n="n" />
+    <!-- Durante o streaming os blocos ficam só anunciados: aparecem inteiros com o texto final, sem empurrar o texto. -->
+    <ul v-if="streaming && blocos.length" class="my-3 flex flex-wrap gap-2" aria-label="Blocos prontos">
+      <li v-for="(b, i) in blocos" :key="`p${i}`" class="inline-flex items-center gap-1.5 rounded-full border border-ep-line bg-ep-paper-2 px-3 py-1 text-xs text-ep-ink-3">
+        <span class="h-1.5 w-1.5 rounded-full bg-ep-green" aria-hidden="true" />{{ PRONTO[b.tipo] }}<template v-if="b.titulo">: {{ b.titulo }}</template>
+      </li>
+    </ul>
+    <template v-else>
+      <EpiscopadoBloco v-for="n in trailing" :key="`b${n}`" :bloco="blocos[n - 1]" :n="n" />
+    </template>
 
     <details v-if="notas.length" class="mt-4 rounded-ep border border-ep-line-2 bg-ep-paper-2 px-3 py-2" :open="openNotes">
       <summary class="cursor-pointer select-none text-sm font-medium text-ep-ink-3">Fontes desta resposta ({{ notas.length }})</summary>
@@ -45,6 +53,14 @@ const props = withDefaults(defineProps<{ markdown: string; notas?: Footnote[]; b
 
 const notasRef = computed(() => props.notas)
 provideEpiscopadoFootnotes(notasRef)
+
+const PRONTO: Record<Bloco['tipo'], string> = {
+  tabela: 'Tabela pronta',
+  grafico: 'Gráfico pronto',
+  linha_do_tempo: 'Linha do tempo pronta',
+  sucessao: 'Linha de sucessão pronta',
+  caminho: 'Caminho pronto'
+}
 
 const parsed = computed(() => parseMarkdown(props.streaming ? stripRawCites(props.markdown) : props.markdown))
 const trailing = computed(() => {

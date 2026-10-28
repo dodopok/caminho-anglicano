@@ -56,6 +56,10 @@ interface Check {
   blocos?: string[]
   /** Listas de pessoas: nas tabelas, nenhuma pessoa (id ou nome) em mais de uma linha. */
   umaLinhaPorPessoa?: boolean
+  /** No máximo N blocos: consultas exploratórias não podem virar bloco. */
+  maxBlocos?: number
+  /** Tabelas com no máximo N linhas (uma "aproximação ampla" não é a resposta). */
+  maxLinhas?: number
   /** Fora do escopo: não pode consultar a base nem afirmar fatos. */
   fora?: boolean
   /** A base não tem: resultado 'nao_sabe' ou texto dizendo que não registra. */
@@ -73,6 +77,8 @@ const ieabSchisms = col("SELECT COALESCE(j.acronym, '') || '|' || j.name FROM re
 const ieabSchismsAfter2010 = col("SELECT COALESCE(j.acronym, '') || '|' || j.name FROM relations r JOIN jurisdictions j ON j.id = r.source_jurisdiction WHERE r.type = 'schism_from' AND r.target = 'ieab' AND r.year > 2010")
 const iabBishops = col(`SELECT DISTINCT p.name FROM affiliations a JOIN jurisdiction_ancestors ja ON ja.jurisdiction = COALESCE(a.diocese, a.jurisdiction) JOIN people p ON p.id = a.person WHERE ja.ancestor = 'iab' AND a.role IN ${EPISCOPAL}`)
 const ieabByDecade = (from: number) => col(`SELECT count(*) FROM ordinations o JOIN jurisdiction_ancestors ja ON ja.jurisdiction = o.jurisdiction WHERE o."order" = 'episcopate' AND ja.ancestor = 'ieab' AND o.year >= ${from} GROUP BY (o.year / 10) ORDER BY 1`).map(Number)
+// Quem ficou na IEAB no cisma do Recife: só está no texto livre (notas dos vínculos).
+const ficaramIeab = col(`SELECT DISTINCT p.name FROM affiliations a JOIN people p ON p.id = a.person WHERE a.notes LIKE '%13 que pediram%'`)
 const consecrator = (id: string) => name(String((db.prepare(`SELECT principal_consecrator AS c FROM ordinations WHERE person = '${id}' AND "order" = 'episcopate'`).get() as { c: string }).c))
 
 const CASOS: Caso[] = [
@@ -121,7 +127,9 @@ const CASOS: Caso[] = [
   { id: 38, tipo: 'continuacao', perguntas: ['Quem Robinson Cavalcanti ordenou presbítero?', 'E quantos foram?'], check: { numeros: [one(`SELECT count(*) FROM ordinations WHERE ordained_by = 'robinson-cavalcanti' AND "order" = 'presbyterate'`)] } },
   { id: 39, tipo: 'continuacao', perguntas: ['Quais igrejas saíram da IEAB por cisma?', 'Dessas, quais saíram depois de 2010?'], check: { nomes: ieabSchismsAfter2010 } },
   { id: 40, tipo: 'continuacao', perguntas: ['Quem sagrou Márcio Meira?', 'E quem sagrou essa pessoa?'], check: { nomes: [consecrator('miguel-uchoa')] } },
-  { id: 41, tipo: 'continuacao', perguntas: ['Quantas sagrações a IEAB registra por década?', 'Mostre só a partir de 1990.'], check: { numeros: ieabByDecade(1990), numerosNosBlocos: true } }
+  { id: 41, tipo: 'continuacao', perguntas: ['Quantas sagrações a IEAB registra por década?', 'Mostre só a partir de 1990.'], check: { numeros: ieabByDecade(1990), numerosNosBlocos: true } },
+  // Fato só no texto livre, sem mostrar aproximações
+  { id: 42, tipo: 'nomes', perguntas: ['Quais clérigos ficaram na IEAB quando a Diocese do Recife saiu?'], check: { nomes: ficaramIeab, min: Math.max(1, ficaramIeab.length - 3), umaLinhaPorPessoa: true, maxBlocos: 1, maxLinhas: 40 } }
 ]
 
 const norm = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
@@ -169,6 +177,8 @@ function grade(caso: Caso, r: Resposta): { ok: boolean; falhas: string[] } {
   for (const re of c.regex ?? []) if (!re.test(`${text}\n${blocks}`)) falhas.push(`sem ${re}`)
   for (const re of c.proibido ?? []) if (re.test(text)) falhas.push(`proibido ${re}`)
   for (const t of c.blocos ?? []) if (!r.blocos.some((b) => b.tipo === t)) falhas.push(`sem bloco ${t}`)
+  if (c.maxBlocos !== undefined && r.blocos.length > c.maxBlocos) falhas.push(`${r.blocos.length} blocos (máx. ${c.maxBlocos})`)
+  for (const b of r.blocos) if (c.maxLinhas !== undefined && b.tipo === 'tabela' && b.linhas.length > c.maxLinhas) falhas.push(`tabela com ${b.linhas.length} linhas (máx. ${c.maxLinhas})`)
   if (c.umaLinhaPorPessoa) {
     for (const b of r.blocos) {
       if (b.tipo !== 'tabela') continue

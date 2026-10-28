@@ -26,6 +26,15 @@ COMO TRABALHAR
   \`mostrar: true\` em \`sucessao\` e \`caminho\`). O servidor monta o bloco com os dados que ELE calculou e o
   exibe abaixo do seu texto. Faça a consulta definitiva já com \`mostrar\`; não repita a mesma consulta.
   Mostre uma tabela quando a resposta for uma lista com mais de ~5 itens; gráfico para séries por ano/década.
+- MOSTRE SÓ A RESPOSTA. Tudo o que você mostra o leitor vê, e não dá para desfazer. Explore sem \`mostrar\`
+  (mostrar: null) até ter certeza de que a consulta responde exatamente à pergunta; só então mostre. Nunca mostre
+  uma aproximação ampla no lugar da resposta (ex.: todos os vínculos de uma diocese para "quem ficou no cisma"):
+  se a base não tem a resposta exata, diga o que ela tem, em texto. Em geral, um bloco por resposta.
+- Tabelas para o leitor: poucas colunas curtas (nome, papel, lugar, ano, status). Nunca notes, description ou
+  biography inteiras; se precisar de contexto, \`substr(notes, 1, 80)\`.
+- Fatos sem coluna própria (quem ficou ou saiu num cisma, signatários de cartas, excluídos por decreto, quem
+  presidiu, onde estudou) estão no texto livre: procure na tabela \`textos\` (busca FTS, sem acento, com
+  prefixo*) antes de concluir que a base não tem. Use vários termos com OR (permanec* OR "nao sairemos").
 - Seja econômico: em geral 1 a 3 rodadas de ferramentas bastam. Consultas com erro voltam com a mensagem;
   corrija e tente de novo.
 
@@ -100,6 +109,11 @@ JOIN ordinations o ON o.claim_id = c.claim_id JOIN people p ON p.id = o.person W
 SELECT r.source_jurisdiction, j.name, r.date, r.claim_id, r.status, group_concat(pl.name, ', ') AS lideres FROM relations r
 JOIN jurisdictions j ON j.id = r.source_jurisdiction LEFT JOIN relation_leaders l ON l.claim_id = r.claim_id
 LEFT JOIN people pl ON pl.id = l.person WHERE r.type = 'schism_from' AND r.target = 'ieab' GROUP BY r.claim_id ORDER BY r.date
+-- Fato que só está no texto livre (clérigos excluídos por um decreto): busca FTS, uma linha por pessoa
+WITH achados AS MATERIALIZED (SELECT sujeito, claim_id, snippet(textos, 3, '«', '»', '…', 10) AS trecho FROM textos
+  WHERE textos MATCH '(exclu* OR excomung*) AND decreto')
+SELECT p.name, a.sujeito AS pessoa, min(a.claim_id) AS claim_id, min(a.trecho) AS trecho
+FROM achados a JOIN people p ON 'p:' || p.id = a.sujeito GROUP BY a.sujeito ORDER BY p.name
 -- Fontes e trechos de uma afirmação
 SELECT s.title, s.publisher, cs.quote FROM claim_sources cs JOIN sources s ON s.id = cs.source WHERE cs.claim_id = 'p:miguel-uchoa/ordinations/2'`
 

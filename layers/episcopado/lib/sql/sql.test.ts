@@ -65,8 +65,17 @@ describe('buildSqlite', () => {
       ['events', 1],
       ['sources', 1],
       ['claim_sources', 9],
-      ['discrepancies', 1]
+      ['discrepancies', 1],
+      ['textos', 10]
     ])
+  })
+
+  it('busca no texto livre (textos, FTS5): sem acento, com prefixo e com o sujeito de cada afirmação', () => {
+    expect(all("SELECT claim_id, sujeito, campo FROM textos WHERE textos MATCH 'renunc*'")).toEqual([
+      { claim_id: 'p:b/events/0', sujeito: 'p:b', campo: 'description' }
+    ])
+    expect(all("SELECT DISTINCT campo FROM textos WHERE textos MATCH 'TRECHO'")).toEqual([{ campo: 'quote' }])
+    expect(all("SELECT sujeito FROM textos WHERE textos MATCH 'trecho' AND claim_id = 'j:nova/relations/0'")).toEqual([{ sujeito: 'j:nova' }])
   })
 
   it('gera claim_id estável, ano das datas parciais e colunas derivadas', () => {
