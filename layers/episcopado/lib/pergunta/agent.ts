@@ -104,6 +104,8 @@ export function costOf(model: string, u: Usage): number {
 const SQL_ROWS_FOR_MODEL = 100
 const SQL_ROWS_WHEN_SHOWN = 20
 const SQL_CHARS_FOR_MODEL = 16_000
+/** Lembrete no resultado da ferramenta: o bloco já mostra os itens; o texto resume. */
+const SHOWN_NOTE = 'O leitor já vê todos os itens no bloco: no texto, NÃO os liste um a um; resuma em poucas frases (quantos, extremos, o que chama atenção) e cite só os casos que nomear.'
 
 const STATUS_DEFAULT: Record<string, string> = {
   buscar: 'Procurando nomes na base…',
@@ -231,7 +233,7 @@ export async function perguntar(
           }
           const n = show(bloco)
           const shown = Math.min(result.rows.length, SQL_ROWS_WHEN_SHOWN)
-          return `bloco ${n} mostrado ao leitor (${mostrar.forma}, ${count}${result.truncated ? `; o bloco exibe ${result.rows.length}` : ''}). Primeiras ${shown} linhas:\n${head(SQL_ROWS_WHEN_SHOWN)}`
+          return `bloco ${n} mostrado ao leitor (${mostrar.forma}, ${count}${result.truncated ? `; o bloco exibe ${result.rows.length}` : ''}). ${SHOWN_NOTE} Primeiras ${shown} linhas:\n${head(SQL_ROWS_WHEN_SHOWN)}`
         }
         const shown = Math.min(result.rows.length, SQL_ROWS_FOR_MODEL)
         return `${count}${result.total > shown ? `; mostrando ${shown}` : ''}:\n${head(SQL_ROWS_FOR_MODEL)}`
@@ -287,7 +289,7 @@ export async function perguntar(
         if (view.alt.length) {
           parts.push(`LINHA ALTERNATIVA (por co-sagrantes, até a sagração mais antiga alcançável): ${view.altOrigin ? `alcança ${view.altOrigin.label}` : 'sem origem reconhecida'}`, line(view.alt))
         }
-        if (mostrar) parts.push(`bloco ${show({ tipo: 'sucessao', titulo: `Sucessão de ${view.person.name}`, view })} mostrado ao leitor.`)
+        if (mostrar) parts.push(`bloco ${show({ tipo: 'sucessao', titulo: `Sucessão de ${view.person.name}`, view })} mostrado ao leitor. ${SHOWN_NOTE}`)
         return parts.join('\n')
       })
   })
@@ -318,7 +320,7 @@ export async function perguntar(
         const text = steps
           .map((s, i) => (i === 0 ? nodeLabel(s.id) : `  —${s.via!.kind}${s.via!.reversed ? ' (inverso)' : ''}${s.via!.year ? ` ${s.via!.year}` : ''}, ${s.via!.status}${s.claim ? ` [${s.claim}]` : ''}→ ${nodeLabel(s.id)}`))
           .join('\n')
-        const tail = mostrar ? `\nbloco ${show({ tipo: 'caminho', titulo: null, de: a, para: b, modo, steps })} mostrado ao leitor.` : ''
+        const tail = mostrar ? `\nbloco ${show({ tipo: 'caminho', titulo: null, de: a, para: b, modo, steps })} mostrado ao leitor. ${SHOWN_NOTE}` : ''
         return `CAMINHO (${steps.length - 1} ligações):\n${text}${tail}`
       })
   })

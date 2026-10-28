@@ -9,12 +9,12 @@
         <EpiscopadoBrand />
       </NuxtLink>
 
-      <nav aria-label="Seções da rede" class="ml-auto flex h-14 min-w-0 gap-3 overflow-x-auto min-[420px]:gap-3.5 min-[700px]:ml-0 min-[700px]:gap-[18px]">
+      <nav aria-label="Seções da rede" class="ml-auto flex h-14 min-w-0 gap-2.5 overflow-x-auto min-[420px]:gap-3.5 min-[700px]:ml-0 min-[700px]:gap-[18px]">
         <NuxtLink
           v-for="item in NAV"
           :key="item.to"
           :to="item.to"
-          class="flex items-center whitespace-nowrap border-b-2 px-0.5 text-sm"
+          class="flex items-center whitespace-nowrap border-b-2 px-0.5 text-[13px] min-[420px]:text-sm"
           :class="isActive(item.to) ? 'border-ep-ink font-medium text-ep-ink' : 'border-transparent text-ep-body hover:text-ep-ink'"
           :aria-current="isActive(item.to) ? 'page' : undefined"
         >{{ item.label }}</NuxtLink>

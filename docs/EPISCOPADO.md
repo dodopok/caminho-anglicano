@@ -188,6 +188,7 @@ Com sucessão completa estimamos de alguns milhares a ~20 mil pessoas: viável c
 | `/episcopado/sucessao/[id]` | **Linha de sucessão:** cadeia vertical de sagrantes principais até o ponto mais antigo conhecido; os co-sagrantes expandem como ramos |
 | `/episcopado/arvore` | **Árvore das jurisdições:** linha do tempo horizontal com uma faixa por jurisdição; cismas aparecem como ramificações e filiações a comunhões como chaves |
 | `/episcopado/caminho?de=X&para=Y` | **Como X e Y se ligam:** caminho mais curto (ex.: um bispo brasileiro → Arcebispo de Cantuária) |
+| `/episcopado/pergunte` | **Pergunte à Rede:** perguntas em linguagem natural respondidas por um agente só com a base, com texto citado, tabelas, gráficos, linhas do tempo, sucessão e caminho. `?p=p:<id>` pergunta sobre uma ficha. Ver [`EPISCOPADO-PERGUNTE.md`](./EPISCOPADO-PERGUNTE.md) |
 | `/episcopado/fontes` | Bibliografia completa, filtrável por texto, nível e tipo, com quantas afirmações cada fonte sustenta |
 | `/episcopado/fonte/[id]` | **Ficha da fonte:** metadados, links (original e arquivo) e tudo o que ela sustenta, por ficha, com o trecho citado e as versões divergentes |
 | `/episcopado/lacunas` | (admin/beta) O que falta pesquisar, priorizado |
@@ -304,7 +305,9 @@ layers/episcopado/
   data/{people,people/historical,jurisdictions,sources}/*.yaml
   lib/                  # schemas zod, datas EDTF, carga, validação, grafo (sem auto-import do Nuxt)
   schemas/              # JSON Schema gerado a partir do zod
-  scripts/              # validate, search, schemas, pauta
+  lib/sql/              # base achatada em SQLite (esquema, montagem, guarda, processo filho)
+  lib/pergunta/         # agente do Pergunte à Rede (ferramentas, citações, blocos, prompt)
+  scripts/              # validate, search, schemas, pauta, sql, pergunta, perguntas-eval
   pesquisa/             # consolidar.py, mapa.json, FORMATO.md, INSTRUCOES.md; entrada/ (levas, fora do git)
   composables/          # useEpiscopadoGrafo, useEpiscopadoBusca
   components/episcopado/ # GrafoSigma, PainelNo, BarraBusca, LinhaTempo, ArvoreJurisdicoes, FonteRef...

@@ -71,7 +71,7 @@ export function useEpiscopadoPergunta(contexto: Ref<string | null>) {
       })
       if (!res.ok || !res.body) {
         const data = await res.json().catch(() => null)
-        throw new Error(data?.message || data?.statusMessage || `Erro ${res.status}`)
+        throw new Error(data?.data?.[0]?.message || data?.message || data?.statusMessage || `Erro ${res.status}`)
       }
       const reader = res.body.pipeThrough(new TextDecoderStream()).getReader()
       let buffer = ''
