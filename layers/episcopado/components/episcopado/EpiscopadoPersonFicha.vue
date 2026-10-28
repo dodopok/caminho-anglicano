@@ -1,6 +1,6 @@
 <template>
   <div>
-    <EpiscopadoFichaBar kind="Pessoa" :toc="toc" :sheet="sheet" :graph-link="`/episcopado?no=p:${person.id}`" @back="emit('back')" @close="emit('close')" />
+    <EpiscopadoFichaBar kind="Pessoa" :toc="toc" :sheet="sheet" :graph-link="`/episcopado?no=p:${person.id}`" :ask-link="`/episcopado/pergunte?p=p:${person.id}`" @back="emit('back')" @close="emit('close')" />
 
     <article class="px-5 pb-12 pt-7 min-[700px]:px-8" :class="sheet ? 'max-w-[720px]' : 'mx-auto max-w-[760px]'">
       <!-- Cabeçalho -->

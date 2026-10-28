@@ -5,7 +5,7 @@
       <span class="font-ep-mono text-[9px] uppercase leading-none tracking-[.14em] text-ep-faint">Caminho Anglicano</span>
       <span class="flex items-center gap-[7px] leading-none">
         <span class="whitespace-nowrap font-ep-serif text-base font-medium min-[700px]:text-lg tracking-[-.01em] text-ep-ink">Rede do Episcopado</span>
-        <span class="rounded-ep border border-ep-rule px-1 py-px font-ep-mono text-[9px] uppercase tracking-[.1em] text-ep-muted">beta</span>
+        <span class="rounded-ep border border-ep-rule px-1 py-px font-ep-mono text-[9px] uppercase tracking-[.1em] text-ep-muted max-[419px]:hidden">beta</span>
       </span>
     </span>
   </span>

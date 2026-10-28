@@ -24,10 +24,14 @@
     "episcopado:search": "tsx layers/episcopado/scripts/search.ts",
     "episcopado:schemas": "tsx layers/episcopado/scripts/schemas.ts",
     "episcopado:pauta": "tsx layers/episcopado/scripts/pauta.ts",
+    "episcopado:sql": "NODE_NO_WARNINGS=1 tsx layers/episcopado/scripts/sql.ts",
+    "episcopado:pergunta": "NODE_NO_WARNINGS=1 tsx layers/episcopado/scripts/pergunta.ts",
+    "episcopado:perguntas-eval": "NODE_NO_WARNINGS=1 tsx layers/episcopado/scripts/perguntas-eval.ts",
     "episcopado:consolidar": "python3 -I layers/episcopado/pesquisa/consolidar.py",
     "episcopado:resumos": "python3 -I layers/episcopado/pesquisa/resumos.py"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.3.0",
     "@supabase/supabase-js": "^2.81.1",
     "@svg-maps/world": "^2.0.0",
     "@types/dompurify": "^3.0.5",

@@ -49,6 +49,29 @@ Convenções: ids de nó têm prefixo `p:` (pessoa) ou `j:` (jurisdição); data
 
 Resposta `201 { ok: true, issueUrl, delivered: "github" | "telegram" }`. A sugestão vira uma issue no repositório (`EPISCOPADO_GITHUB_TOKEN`, token com permissão de escrever issues; `EPISCOPADO_GITHUB_REPO` opcional) no formato que a skill `episcopado-ingerir` consome, e um aviso no bot do Telegram do Localizador. Sem nenhum dos dois configurados: `503`. Erros de validação: `400` com `data` listando os campos.
 
+## Pergunte à Rede
+
+`POST /api/episcopado/pergunta` (JSON, resposta em `text/event-stream`). Um agente responde em linguagem natural só com a base, usando ferramentas de leitura (busca, SQL só-leitura, fichas, sucessão, caminho). Funcionamento, custos e operação em [`EPISCOPADO-PERGUNTE.md`](./EPISCOPADO-PERGUNTE.md). Corpo:
+
+| Campo | Obrigatório | Descrição |
+|---|---|---|
+| `pergunta` | sim | 3 a 1000 caracteres |
+| `historico` | não | Até 6 turnos anteriores da conversa: `[{ pergunta, resumo }]`, com o `resumo` que o servidor devolveu em cada `resposta` |
+| `contexto` | não | `p:<id>` ou `j:<id>`: a ficha em que o leitor está ("quem o sagrou?") |
+| `app` | não | Origem, para o log ("ios/0.2.0") |
+
+Eventos SSE, nesta ordem (os três primeiros se repetem):
+
+| Evento | `data` (JSON) |
+|---|---|
+| `status` | `{ type, ferramenta, texto }`: o que o agente está consultando ("Contando sagrações por década…") |
+| `bloco` | `{ type, n, bloco }`: um bloco pronto (`tabela`, `grafico`, `linha_do_tempo`, `sucessao`, `caminho`), montado pelo servidor com dados que ele calculou |
+| `texto` | `{ type, rodada, delta }`: trecho do texto do modelo em streaming. Quando `rodada` muda, o texto anterior era provisório: recomece |
+| `resposta` | Uma vez, no fim: `{ markdown, notas, blocos, resumo, meta }`. `markdown` traz `[1, 2]` (chamadas para `notas`, no formato `Footnote` das fichas) e `[[bloco N]]` (posição de um bloco no texto; os não posicionados vão ao fim). Acerto de cache: `{ …, cache: true }` sem `meta`. Schema: `schemas/pergunta-resposta.json` |
+| `erro` | `{ mensagem }` |
+
+Erros antes do streaming: `400` (validação), `429` com `Retry-After` (20 perguntas por hora por IP, 400 por dia no total), `503` (sem `ANTHROPIC_API_KEY`, Supabase configurado e fora do ar, ou mais de 8 perguntas simultâneas na instância). `GET /api/episcopado/pergunta/aquecer` carrega a base e o banco SQLite da instância sem chamar o modelo (`{ ok, version }`); a página chama ao abrir.
+
 ## Exemplos
 
 ```
@@ -72,3 +95,4 @@ Resposta `201 { ok: true, issueUrl, delivered: "github" | "telegram" }`. A suges
 - `routeRules['/api/episcopado/**'] = { isr: true }`: cada URL (inclusive a query string) fica em cache na Vercel até o próximo deploy.
 - `posicoes` roda o layout uma vez por instância do servidor (cerca de 2 s para o Brasil e 3 s para a rede inteira); o resultado fica em memória e no cache da borda.
 - Nenhum endpoint escreve na base. Correções entram como issue (`sugestao`) e viram PR pela skill `episcopado-ingerir`.
+- `pergunta` e `pergunta/aquecer` ficam fora do ISR (`{ isr: false, cache: false }`); o cache das perguntas é o exato, no Supabase, por versão da base.

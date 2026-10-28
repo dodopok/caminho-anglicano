@@ -9,12 +9,12 @@
         <EpiscopadoBrand />
       </NuxtLink>
 
-      <nav aria-label="Seções da rede" class="ml-auto flex h-14 gap-3.5 min-[700px]:ml-0 min-[700px]:gap-[18px]">
+      <nav aria-label="Seções da rede" class="ml-auto flex h-14 min-w-0 gap-3 overflow-x-auto min-[420px]:gap-3.5 min-[700px]:ml-0 min-[700px]:gap-[18px]">
         <NuxtLink
           v-for="item in NAV"
           :key="item.to"
           :to="item.to"
-          class="flex items-center border-b-2 px-0.5 text-sm"
+          class="flex items-center whitespace-nowrap border-b-2 px-0.5 text-sm"
           :class="isActive(item.to) ? 'border-ep-ink font-medium text-ep-ink' : 'border-transparent text-ep-body hover:text-ep-ink'"
           :aria-current="isActive(item.to) ? 'page' : undefined"
         >{{ item.label }}</NuxtLink>
@@ -49,6 +49,7 @@ const emit = defineEmits<{ select: [node: GraphNode]; open: [node: GraphNode]; h
 
 const NAV = [
   { to: '/episcopado', label: 'Explorar' },
+  { to: '/episcopado/pergunte', label: 'Pergunte' },
   { to: '/episcopado/fontes', label: 'Fontes' }
 ]
 
@@ -58,7 +59,10 @@ const route = useRoute()
 /** "Explorar" vale para o explorador e as fichas; "Fontes" para a bibliografia e as fichas de fonte. */
 function isActive(to: string) {
   const fontes = route.path.startsWith('/episcopado/fonte')
-  return to === '/episcopado/fontes' ? fontes : !fontes
+  const pergunte = route.path.startsWith('/episcopado/pergunte')
+  if (to === '/episcopado/fontes') return fontes
+  if (to === '/episcopado/pergunte') return pergunte
+  return !fontes && !pergunte
 }
 
 function onSelect(n: GraphNode) {

@@ -277,6 +277,12 @@ export default defineNuxtConfig({
     // Rede do Episcopado: sugestões de correção viram issues no GitHub (ver docs/EPISCOPADO-API.md)
     episcopadoGithubToken: process.env.EPISCOPADO_GITHUB_TOKEN,
     episcopadoGithubRepo: process.env.EPISCOPADO_GITHUB_REPO,
+    // Pergunte à Rede (docs/EPISCOPADO-PERGUNTE.md): sem a chave, o endpoint responde 503
+    anthropicApiKey: process.env.ANTHROPIC_API_KEY,
+    episcopadoPerguntaModel: process.env.EPISCOPADO_PERGUNTA_MODEL,
+    episcopadoPerguntaEffort: process.env.EPISCOPADO_PERGUNTA_EFFORT,
+    episcopadoPerguntaThinking: process.env.EPISCOPADO_PERGUNTA_THINKING,
+    episcopadoIpSalt: process.env.EPISCOPADO_IP_SALT,
 
     public: {
       siteUrl: 'https://caminhoanglicano.com.br',
