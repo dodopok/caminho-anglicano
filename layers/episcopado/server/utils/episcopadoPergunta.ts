@@ -75,7 +75,7 @@ function supabase(): SupabaseClient | null {
 
 function supabaseFalhou(onde: string, message: string): void {
   supabaseForaAte = Date.now() + SUPABASE_PAUSA_MS
-  console.error(`[episcopado] Supabase falhou (${onde}): ${message}. Limites em memória, sem cache nem log, pelos próximos ${SUPABASE_PAUSA_MS / 60_000} min.`)
+  console.error(`[episcopado] Supabase falhou (${onde}): ${message.replace(/\.$/, '')}. Limites em memória, sem cache nem log, pelos próximos ${SUPABASE_PAUSA_MS / 60_000} min.`)
 }
 
 const timeout = () => AbortSignal.timeout(SUPABASE_TIMEOUT_MS)
