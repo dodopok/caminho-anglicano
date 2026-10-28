@@ -6,7 +6,7 @@ import { loadBase } from '../load'
 import type { Base } from '../schemas'
 import type { SqlResult } from '../sql/runner'
 import { indexBase } from '../views'
-import { blocoFromSql, BlocoError } from './blocos'
+import { blocoFromSql, BlocoError, blocosAbaixo } from './blocos'
 import { createBriefs } from './briefs'
 import { BlocoSchema, RespostaEventSchema } from './contrato'
 import { claimInfo, CLAIM_PATTERN, consecrationClaim, edgeClaim } from './claims'
@@ -81,11 +81,30 @@ describe('finalizeText', () => {
     expect(r.removidas).toEqual(['p:a', 'p:z/events/0'])
   })
 
+  it('junta citações vizinhas num só grupo de notas', () => {
+    const seen = new Set(['p:b/ordinations/1', 'j:nova/relations/0'])
+    expect(finalizeText('Fato [c:j:nova/relations/0] [c:p:b/ordinations/1].', seen, index, exists).markdown).toBe('Fato [1, 2].')
+    expect(finalizeText('Fato [c:j:nova/relations/0][c:p:b/ordinations/1][c:j:nova/relations/0].', seen, index, exists).markdown).toBe('Fato [1, 2].')
+  })
+
   it('mantém links internos válidos e tira os demais', () => {
     const r = finalizeText('[Bento](/episcopado/pessoa/b), [X](/episcopado/pessoa/x), [site](https://exemplo.org), [rede](/episcopado?no=p:b)', new Set(), index, exists)
     expect(r.markdown).toBe('[Bento](/episcopado/pessoa/b), X, site, [rede](/episcopado?no=p:b)')
     expect(internalLinkOk('/episcopado/jurisdicao/nova', exists)).toBe(true)
     expect(internalLinkOk('/episcopado?no=p:nada', exists)).toBe(false)
+  })
+})
+
+describe('blocosAbaixo', () => {
+  it('troca "acima" por "abaixo" quando os blocos vão todos depois do texto', () => {
+    expect(blocosAbaixo('Eles estão na tabela acima. O gráfico 2 acima mostra a série.', 2)).toBe('Eles estão na tabela abaixo. O gráfico 2 abaixo mostra a série.')
+    expect(blocosAbaixo('A Tabela acima.', 1)).toBe('A Tabela abaixo.')
+  })
+
+  it('não mexe quando não há blocos, quando um bloco está no meio do texto ou em outras frases', () => {
+    expect(blocosAbaixo('Veja a tabela acima.', 0)).toBe('Veja a tabela acima.')
+    expect(blocosAbaixo('[[bloco 1]]\nNa tabela acima, os nomes.', 1)).toBe('[[bloco 1]]\nNa tabela acima, os nomes.')
+    expect(blocosAbaixo('Ficou acima da média.', 1)).toBe('Ficou acima da média.')
   })
 })
 

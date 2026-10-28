@@ -101,6 +101,12 @@ export function finalizeText(text: string, seen: Set<string>, index: BaseIndex, 
   raw += text.slice(last)
   markdown += text.slice(last)
 
+  // Citações vizinhas ("[c:a][c:b]") viram um só grupo de notas: "[1, 2][1, 3]" → "[1, 2, 3]".
+  const GRUPOS = /\[(\d+(?:, \d+)*)\]\s*\[(\d+(?:, \d+)*)\]/
+  while (GRUPOS.test(markdown)) {
+    markdown = markdown.replace(GRUPOS, (_, a: string, b: string) => `[${[...new Set(`${a}, ${b}`.split(', ').map(Number))].sort((x, y) => x - y).join(', ')}]`)
+  }
+
   const fixLinks = (s: string) => s.replace(LINK, (whole, label: string, href: string) => (internalLinkOk(href, exists) ? whole : label))
   // Citações apagadas deixam espaço antes da pontuação ("frase [c:x]." → "frase .").
   const tidy = (s: string) => fixLinks(s).replace(/[ \t]+([.,;:!?])/g, '$1').replace(/[ \t]{2,}/g, ' ')

@@ -9,7 +9,7 @@ import { searchNodes } from '../search'
 import { toTsv } from '../sql/child'
 import { createSqlRunner, type SqlResult } from '../sql/runner'
 import type { BaseIndex, Footnote } from '../views'
-import { blocoFromSql, BlocoError, type Bloco, type PathStepView } from './blocos'
+import { blocoFromSql, BlocoError, blocosAbaixo, type Bloco, type PathStepView } from './blocos'
 import type { Briefs } from './briefs'
 import { CLAIM_PATTERN, consecrationClaim, edgeClaim } from './claims'
 import { finalizeText } from './citacoes'
@@ -400,7 +400,7 @@ export async function perguntar(
 
   if (resultado === 'recusa') finalText = 'Não consigo responder a esta pergunta. Tente reformular.'
   if (!finalText.trim()) finalText = NO_ANSWER
-  const fin = finalizeText(finalText, seen, index, (id) => nodeIds.has(id))
+  const fin = finalizeText(blocosAbaixo(finalText, blocos.length), seen, index, (id) => nodeIds.has(id))
   if (resultado === 'ok' && /^\s*A base não registra/i.test(fin.markdown)) resultado = 'nao_sabe'
   return {
     markdown: fin.markdown,
