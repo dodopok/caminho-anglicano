@@ -36,6 +36,15 @@ export class BlocoError extends Error {}
 
 const isNumeric = (v: unknown) => v === null || (typeof v === 'number' && Number.isFinite(v)) || (typeof v === 'string' && v.trim() !== '' && Number.isFinite(Number(v)))
 
+/**
+ * Os blocos aparecem abaixo do texto (salvo os posicionados com [[bloco N]]); o modelo às vezes escreve "a tabela
+ * acima" por tê-los mostrado antes de escrever. Sem bloco no meio do texto, toda referência a eles é "abaixo".
+ */
+export function blocosAbaixo(text: string, blocos: number): string {
+  if (!blocos || /\[\[bloco \d+\]\]/i.test(text)) return text
+  return text.replace(/\b(tabela|gr[aá]fico|lista|linha do tempo|linha de sucess[aã]o|caminho|bloco)(\s+\d+)?\s+acima\b/gi, '$1$2 abaixo')
+}
+
 /** Tabela que o leitor consegue ler: as recusas voltam ao modelo como erro, para ele corrigir a consulta. */
 export const TABELA_MAX_LINHAS = 200
 const TEXTO_LONGO = 140
