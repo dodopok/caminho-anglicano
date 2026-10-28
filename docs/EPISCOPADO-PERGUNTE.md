@@ -8,7 +8,7 @@ Um agente responde perguntas em linguagem natural sobre a Rede do Episcopado His
 
 ```
 navegador / app ── POST /api/episcopado/pergunta { pergunta, historico?, contexto? } ──► função Nitro (SSE)
-  1. valida (zod); cache exato e limites no Supabase; semáforo de 8 perguntas por instância
+  1. valida (zod); cache exato e limites no Supabase (sem ele: limites em memória); semáforo de 8 perguntas por instância
   2. base em memória (useEpiscopado) + /tmp/episcopado-<versão>.sqlite (gravado uma vez por instância)
   3. Claude + 5 ferramentas só de leitura (Tool Runner do @anthropic-ai/sdk, streaming, thread: false)
        buscar · sql · ficha · sucessao · caminho
@@ -99,7 +99,7 @@ O plano passou por três revisões de arquitetura antes da implementação; a im
 7. **Ferramentas estritas.** `strict: true` em todas; campos opcionais como `.nullable()` (o `.optional()` do Zod sai de `required` e quebra o modo estrito) e sem `.int()`/`min`/`max` (o modo estrito recusa esses limites).
 8. **`thread: false` no Tool Runner.** O SDK 1.3 abre por padrão um thread no servidor da API; aqui cada rodada manda o histórico, com uso por rodada interpretável.
 9. **Conversa sem estado.** O cliente devolve, por turno, a pergunta e o `resumo` que o servidor gerou (texto com `[c:id]` e as consultas dos blocos). Nada de resultados de ferramenta crus.
-10. **Limites e log no Supabase**, numa função SQL que reserva a pergunta com trava (o `rateLimit` em memória do projeto não vale entre instâncias). Supabase configurado e fora do ar → 503 (não se roda sem teto).
+10. **Limites e log no Supabase**, numa função SQL que reserva a pergunta com trava (o `rateLimit` em memória do projeto não vale entre instâncias). **Sem depender dele:** com o Supabase não configurado, fora do ar ou suspenso (erro, ou mais de 2,5 s sem resposta), a pergunta segue com limites em memória (`lib/pergunta/limites.ts`: os mesmos 20 por hora por IP e 400 por dia, contados por instância), sem cache nem log. Depois de uma falha, o Supabase fica 5 minutos de fora antes de ser tentado de novo, para nenhuma pergunta pagar o timeout. O teto do dia vira 400 × instâncias vivas, o que é aceitável como modo de emergência.
 
 ## 4. Operação
 
@@ -112,9 +112,9 @@ O plano passou por três revisões de arquitetura antes da implementação; a im
 | `EPISCOPADO_PERGUNTA_EFFORT` | Padrão `medium` (`low`, `high`) |
 | `EPISCOPADO_PERGUNTA_THINKING` | `between_tools` desliga o thinking do Sonnet (o eval não mostrou ganho) |
 | `EPISCOPADO_IP_SALT` | Sal do hash do IP no log |
-| `NUXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_KEY` | Já existentes; ligam limites, cache e log |
+| `NUXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_KEY` | Já existentes; ligam limites entre instâncias, cache e log (opcionais: sem eles, limites em memória) |
 
-**Antes de abrir:** aplicar `supabase/migrations/episcopado_perguntas.sql`; definir `ANTHROPIC_API_KEY`; abrir `/episcopado/pergunte` num preview e fazer uma pergunta (confirma Node 22 com `node:sqlite`, `/tmp` gravável e o streaming SSE no deploy real; o build de produção já foi testado localmente).
+**Antes de abrir:** definir `ANTHROPIC_API_KEY`; aplicar `supabase/migrations/episcopado_perguntas.sql` quando o Supabase estiver disponível (sem ela, vale o modo em memória); abrir `/episcopado/pergunte` num preview e fazer uma pergunta (confirma Node 22 com `node:sqlite`, `/tmp` gravável e o streaming SSE no deploy real; o build de produção já foi testado localmente).
 
 **Limites:** 20 perguntas por hora por IP, 400 por dia no total, 8 simultâneas por instância, 60 s por pergunta, 8 rodadas de ferramentas, pergunta de até 1000 caracteres, histórico de até 6 turnos. Constantes em `server/utils/episcopadoPergunta.ts`.
 

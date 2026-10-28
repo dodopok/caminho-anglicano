@@ -70,7 +70,7 @@ Eventos SSE, nesta ordem (os três primeiros se repetem):
 | `resposta` | Uma vez, no fim: `{ markdown, notas, blocos, resumo, meta }`. `markdown` traz `[1, 2]` (chamadas para `notas`, no formato `Footnote` das fichas) e `[[bloco N]]` (posição de um bloco no texto; os não posicionados vão ao fim). Acerto de cache: `{ …, cache: true }` sem `meta`. Schema: `schemas/pergunta-resposta.json` |
 | `erro` | `{ mensagem }` |
 
-Erros antes do streaming: `400` (validação), `429` com `Retry-After` (20 perguntas por hora por IP, 400 por dia no total), `503` (sem `ANTHROPIC_API_KEY`, Supabase configurado e fora do ar, ou mais de 8 perguntas simultâneas na instância). `GET /api/episcopado/pergunta/aquecer` carrega a base e o banco SQLite da instância sem chamar o modelo (`{ ok, version }`); a página chama ao abrir.
+Erros antes do streaming: `400` (validação), `429` com `Retry-After` (20 perguntas por hora por IP, 400 por dia no total; sem Supabase, os mesmos limites contados por instância), `503` (sem `ANTHROPIC_API_KEY` ou mais de 8 perguntas simultâneas na instância). O Supabase fora do ar não derruba o endpoint: ficam de fora só o cache e o log. `GET /api/episcopado/pergunta/aquecer` carrega a base e o banco SQLite da instância sem chamar o modelo (`{ ok, version }`); a página chama ao abrir.
 
 `GET /api/episcopado/pergunta/exemplos`: as perguntas de exemplo do site, para o app mostrar as mesmas: `{ gerais: [{ tema, perguntas }], pessoa: string[], jurisdicao: string[] }`. Nas de pessoa, `{nome}` vira o nome da ficha; as de jurisdição falam de "esta jurisdição" e vão com `contexto: "j:<id>"`. Fonte: `lib/pergunta/exemplos.ts`.
 
