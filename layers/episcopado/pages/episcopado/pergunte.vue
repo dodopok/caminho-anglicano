@@ -118,11 +118,35 @@ function autosize() {
   el.style.height = `${Math.min(el.scrollHeight, 160)}px`
 }
 
+/**
+ * Rolagem que acompanha a resposta: ao perguntar, a pergunta vai para a vista; enquanto o texto chega, a página
+ * segue o fim, mas só se o leitor já está lá embaixo (quem subiu para ler não é puxado de volta). Na resposta
+ * final os blocos aparecem abaixo do texto sem mover a página.
+ */
+const SEGUIR_MARGEM = 160
+const pertoDoFim = () => window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - SEGUIR_MARGEM
+const irAoFim = (behavior: ScrollBehavior = 'auto') => window.scrollTo({ top: document.documentElement.scrollHeight, behavior })
+
+watch(
+  () => {
+    const t = turnos.value.at(-1)
+    return t && !t.done ? `${t.texto.length}:${t.blocos.length}:${t.status}` : null
+  },
+  (sinal) => {
+    // flush 'pre': mede antes de o texto novo crescer a página.
+    if (sinal && pertoDoFim()) nextTick(() => irAoFim())
+  },
+  { flush: 'pre' }
+)
+
 async function enviar(q: string) {
   if (!q.trim() || busy.value) return
   entrada.value = ''
   nextTick(autosize)
-  await perguntar(q)
+  const resposta = perguntar(q)
+  await nextTick()
+  irAoFim(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth')
+  await resposta
 }
 
 function removerContexto() {

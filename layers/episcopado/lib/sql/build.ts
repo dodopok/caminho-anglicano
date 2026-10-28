@@ -45,10 +45,18 @@ export function buildSqlite(base: Base, graph: Graph, db: SqlDatabase): void {
     event: insert('events', 9),
     source: insert('sources', 9),
     cite: insert('claim_sources', 4),
-    discrepancy: insert('discrepancies', 5)
+    discrepancy: insert('discrepancies', 5),
+    texto: insert('textos', 4)
+  }
+  /** Texto livre para a busca (tabela `textos`): só o que tem conteúdo. */
+  const texto = (claim: string, sujeito: string, campo: string, value: string | null | undefined) => {
+    if (value?.trim()) ins.texto.run(claim, sujeito, campo, value)
   }
   const cite = (claim: string, refs: TSourceRef[] | undefined) => {
-    for (const r of refs ?? []) ins.cite.run(claim, r.source, r.quote ?? null, r.page ?? null)
+    for (const r of refs ?? []) {
+      ins.cite.run(claim, r.source, r.quote ?? null, r.page ?? null)
+      texto(claim, claim.split('/')[0]!, 'quote', r.quote)
+    }
   }
   type Disc = { field: string; value?: unknown; sources: TSourceRef[]; notes?: string }
   const discrepancies = (claim: string, list: Disc[] | undefined) => {
@@ -68,6 +76,7 @@ export function buildSqlite(base: Base, graph: Graph, db: SqlDatabase): void {
       p.wikidata ?? null, p.biography ?? null, node?.brazil ? 1 : 0, node?.order ?? null
     )
     for (const a of p.aliases ?? []) ins.alias.run(p.id, a)
+    texto(`p:${p.id}`, `p:${p.id}`, 'biography', p.biography)
     cite(`p:${p.id}`, p.sources)
     if (p.birth) cite(`p:${p.id}/birth`, p.birth.sources)
     if (p.death) cite(`p:${p.id}/death`, p.death.sources)
@@ -78,6 +87,7 @@ export function buildSqlite(base: Base, graph: Graph, db: SqlDatabase): void {
         o.principal_consecrator ?? null, o.ordained_by ?? null, o.office ?? null, o.mode ?? 'normal', o.status, o.notes ?? null
       )
       for (const cc of o.co_consecrators ?? []) ins.co.run(c, cc)
+      texto(c, `p:${p.id}`, 'notes', o.notes)
       cite(c, o.sources)
       discrepancies(c, o.discrepancies)
     })
@@ -87,12 +97,16 @@ export function buildSqlite(base: Base, graph: Graph, db: SqlDatabase): void {
         c, p.id, a.jurisdiction, a.diocese ?? null, a.role, a.role_description ?? null,
         a.start ?? null, year(a.start), a.end ?? null, year(a.end), a.end_reason ?? null, a.status, a.notes ?? null
       )
+      texto(c, `p:${p.id}`, 'role', a.role_description)
+      texto(c, `p:${p.id}`, 'notes', a.notes)
       cite(c, a.sources)
       discrepancies(c, a.discrepancies)
     })
     p.events?.forEach((e, i) => {
       const c = claimIds.event(p.id, i)
       ins.event.run(c, p.id, e.type, e.date, year(e.date), e.jurisdiction ?? null, e.description, e.status, e.notes ?? null)
+      texto(c, `p:${p.id}`, 'description', e.description)
+      texto(c, `p:${p.id}`, 'notes', e.notes)
       cite(c, e.sources)
       discrepancies(c, e.discrepancies)
     })
@@ -125,6 +139,7 @@ export function buildSqlite(base: Base, graph: Graph, db: SqlDatabase): void {
       }
     }
     for (const [ancestor, d] of depth) ins.ancestor.run(j.id, ancestor, d)
+    texto(`j:${j.id}`, `j:${j.id}`, 'description', j.description)
     cite(`j:${j.id}`, j.sources)
     if (j.founded) cite(`j:${j.id}/founded`, j.founded.sources)
     if (j.dissolved) cite(`j:${j.id}/dissolved`, j.dissolved.sources)
@@ -132,6 +147,7 @@ export function buildSqlite(base: Base, graph: Graph, db: SqlDatabase): void {
       const c = claimIds.relation(j.id, i)
       ins.relation.run(c, j.id, r.type, r.target, r.date ?? null, year(r.date), r.end ?? null, year(r.end), r.status, r.notes ?? null)
       for (const l of r.led_by ?? []) ins.leader.run(c, l)
+      texto(c, `j:${j.id}`, 'notes', r.notes)
       cite(c, r.sources)
       discrepancies(c, r.discrepancies)
     })

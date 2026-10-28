@@ -36,6 +36,27 @@ export class BlocoError extends Error {}
 
 const isNumeric = (v: unknown) => v === null || (typeof v === 'number' && Number.isFinite(v)) || (typeof v === 'string' && v.trim() !== '' && Number.isFinite(Number(v)))
 
+/** Tabela que o leitor consegue ler: as recusas voltam ao modelo como erro, para ele corrigir a consulta. */
+export const TABELA_MAX_LINHAS = 200
+const TEXTO_LONGO = 140
+
+function checkTabela({ columns, rows, total }: SqlResult): void {
+  if (total > TABELA_MAX_LINHAS) {
+    throw new BlocoError(
+      `${total > 500 ? 'mais de 500' : total} linhas é demais para o leitor: filtre, agregue (uma linha por pessoa?) ou confira se a consulta responde mesmo à pergunta. ` +
+        `Se o leitor pediu a lista completa, use LIMIT ${TABELA_MAX_LINHAS} e diga o total no texto.`
+    )
+  }
+  columns.forEach((name, i) => {
+    if (name === 'claim_id') return
+    const cells = rows.map((r) => r[i]).filter((v): v is string => typeof v === 'string' && v !== '')
+    const longas = cells.filter((v) => v.length > TEXTO_LONGO).length
+    if (cells.length && longas * 4 > cells.length) {
+      throw new BlocoError(`a coluna "${name}" tem texto longo demais para uma tabela: tire-a ou use substr(${name}, 1, 80)`)
+    }
+  })
+}
+
 export function blocoFromSql(mostrar: Mostrar, result: SqlResult, consulta: string): Bloco {
   const { columns, rows } = result
   const col = (name: string | null | undefined, role: string) => {
@@ -47,6 +68,7 @@ export function blocoFromSql(mostrar: Mostrar, result: SqlResult, consulta: stri
   if (!rows.length && mostrar.forma !== 'tabela') throw new BlocoError('a consulta não devolveu linhas: não há o que mostrar')
   switch (mostrar.forma) {
     case 'tabela':
+      checkTabela(result)
       return { tipo: 'tabela', titulo: mostrar.titulo ?? null, colunas: columns, linhas: rows, total: result.total, truncado: result.truncated, consulta }
     case 'barras':
     case 'linha': {

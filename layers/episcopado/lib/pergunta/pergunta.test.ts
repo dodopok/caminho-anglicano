@@ -98,6 +98,19 @@ describe('blocoFromSql', () => {
     expect(blocoFromSql({ forma: 'linha_do_tempo', titulo: null, x: 'decada', y: 'n' }, result, 'q')).toMatchObject({ itens: [{ data: '1990', texto: '2', claim: 'p:a/ordinations/0' }, { data: '2000', texto: '3', claim: null }] })
   })
 
+  it('recusa tabelas que o leitor não consegue ler, com a correção para o modelo', () => {
+    const tabela = { forma: 'tabela' as const, titulo: null, x: null, y: null }
+    const longo = 'x'.repeat(200)
+    const notas: SqlResult = { columns: ['name', 'notes', 'claim_id'], rows: [['A', longo, longo], ['B', 'curta', null]], total: 2, truncated: false, ms: 1 }
+    expect(() => blocoFromSql(tabela, notas, 'q')).toThrow(/coluna "notes" tem texto longo.*substr\(notes, 1, 80\)/)
+    const poucas: SqlResult = { ...notas, rows: [['A', longo, null], ...Array.from({ length: 4 }, () => ['B', 'curta', null])] }
+    expect(blocoFromSql(tabela, poucas, 'q')).toMatchObject({ tipo: 'tabela' })
+    const muitas: SqlResult = { columns: ['name'], rows: Array.from({ length: 300 }, (_, i) => [`p${i}`]), total: 300, truncated: false, ms: 1 }
+    expect(() => blocoFromSql(tabela, muitas, 'q')).toThrow(/300 linhas é demais.*LIMIT 200/)
+    expect(() => blocoFromSql(tabela, { ...muitas, total: 501, truncated: true }, 'q')).toThrow(/mais de 500 linhas/)
+    expect(blocoFromSql({ forma: 'barras', titulo: null, x: 'name', y: 'n' }, { columns: ['name', 'n'], rows: Array.from({ length: 100 }, (_, i) => [`d${i}`, i]), total: 100, truncated: false, ms: 1 }, 'q')).toMatchObject({ tipo: 'grafico' })
+  })
+
   it('segue o contrato público dos blocos', () => {
     for (const forma of ['tabela', 'barras', 'linha_do_tempo'] as const) {
       expect(BlocoSchema.safeParse(blocoFromSql({ forma, titulo: null, x: 'decada', y: 'n' }, result, 'q')).success).toBe(true)
