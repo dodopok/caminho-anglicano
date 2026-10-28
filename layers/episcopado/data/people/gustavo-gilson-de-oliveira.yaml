@@ -410,6 +410,24 @@ affiliations:
     episcopal especial; em exercício em setembro de 2004. Local: Seminário Anglicano de Estudos Teológicos (SAET).
     Constava na página institucional capturada em junho de 2006; a data da lista é indefinida (o texto da seção
     é anterior à deposição de junho de 2005).
+- jurisdiction: ieab-dar
+  role: other
+  role_description: coadjutor
+  end: 2004-09
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      o último sermão do reitor do SAET, o reverendo Gustavo Gilson de Oliveira, proferido na Paróquia Emanuel,
+      em Olinda, na qual ele era coadjutor.
+    page: '218'
+  - source: costa2021
+    quote: Na segunda feira, o reverendo recebeu a sua carta de suspensão, e foi destituído do cargo paroquial.
+    page: '218'
+  notes: >-
+    Local: Diocese Anglicana do Recife, Paróquia Emanuel (Olinda). Coadjutor da Paróquia Emanuel (Olinda) até receber
+    carta de suspensão do bispo Robinson Cavalcanti e ser destituído do cargo paroquial, em setembro de 2004, pouco
+    antes da 'Noite de São Bartolomeu'.
 events:
 - type: other
   date: '1998'
@@ -471,18 +489,6 @@ events:
       de B. Filho, ose; Rev. João Câncio Peixoto Filho; Rev. Manoel S. Moraes de Almeida, ose; Rev. Sérgio F. Lomeu
       de Andrade
     page: '216'
-- type: other
-  date: '2004-09-19'
-  description: >-
-    'Noite de São Bartolomeu': confronto na Paróquia do Mediador (Tejipió, Jaboatão) entre o grupo de Robinson e
-    lideranças do SAET (revs. Fábio Vasconcelos e Gustavo Oliveira), com agressões físicas.
-  status: probable
-  sources:
-  - source: costa2021
-    quote: >-
-      Na noite de 19 de setembro, os reverendos Fábio Vasconcelos e Gustavo Oliveira e o então secretário do SAET,
-      Joelson Félix, se preparavam para iniciar a celebração.
-    page: '219'
 - type: other
   date: '2017-06-18'
   description: >-
@@ -610,3 +616,76 @@ events:
     quote: >-
       decidiu-se pela inclusão de mais dois integrantes, Rev. Eduardo Grillo e Rev. Gustavo Gilson, para auxiliar
       no trabalho de redação
+- type: other
+  date: '2004-09-19'
+  description: >-
+    'Noite de São Bartolomeu' (19/09/2004): na Paróquia do Mediador (Tejipió), que se tornara ponto de reunião das
+    lideranças destituídas de seus cargos na Diocese Anglicana do Recife, os revs. Fábio Vasconcelos e Gustavo Gilson
+    de Oliveira e o secretário do SAET, Joelson Félix, preparavam a celebração quando o bispo Robinson Cavalcanti
+    chegou com um grupo de clérigos e leigos para atrair a comunidade; segundo a tese de Costa, os membros do SAET
+    foram levados para fora do templo, houve agressões, e as lideranças do Seminário se retiraram e avisaram outros
+    clérigos. O apelido remete ao massacre de protestantes na França em 1572.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      O mais grave desses episódios ficou conhecido, na Diocese Anglicana do Recife, como “Noite de São Bartolomeu”
+    page: '219'
+  - source: costa2021
+    quote: >-
+      A Paróquia do Mediador – localizada em Tejipió, bairro periférico de Jaboatão dos Guararapes –, havia se tornado
+      um reduto para as lideranças da Diocese que foram destituídas de seus cargos, passando a frequentar as celebrações
+      naquele templo.
+    page: 219-220
+  - source: costa2021
+    quote: >-
+      Na noite de 19 de setembro, os reverendos Fábio Vasconcelos e Gustavo Oliveira e o então secretário do SAET,
+      Joelson Félix, se preparavam para iniciar a celebração.
+    page: '220'
+  - source: costa2021
+    quote: >-
+      Um pouco antes do início, Robinson chegou com um grupo de clérigos e leigos, com o intuito de conseguir arrebanhar
+      os membros dessa comunidade, para se somarem às outras que o apoiavam.
+    page: '220'
+  - source: costa2021
+    quote: >-
+      os membros do SAET foram expulsos para a área externa, onde as palavras logo se transformaram em ameaças,
+      não demorando para as primeiras agressões físicas começarem entre eles.
+    page: '220'
+  - source: costa2021
+    quote: as lideranças do Seminário decidiram se retirar do local e avisar outros clérigos.
+    page: '220'
+  - source: costa2021
+    quote: >-
+      Ocorrido entre 23 e 24 de agosto de 1572, na noite da Festa de São Bartolomeu, este massacre marcou a história
+      da França
+    page: 219, nota 205
+- type: other
+  date: 2004-08
+  description: >-
+    Na última semana de agosto de 2004, o bispo Robinson Cavalcanti trocou as chaves do Seminário Anglicano de Estudos
+    Teológicos (SAET), impedindo a entrada de suas lideranças, que antes haviam retirado livros e materiais para
+    uma casa alugada em Casa Amarela; Costa descreve o fato como o primeiro ato de espólio das propriedades da diocese
+    e decisivo para o fechamento do SAET.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: aconteceu o primeiro ato de espólio das propriedades da Diocese Anglicana do Recife.
+    page: '217'
+  - source: costa2021
+    quote: >-
+      antes que o bispo trocasse as chaves, impedindo-os de entrar, o que aconteceu na última semana de agosto.
+      Este ataque ao SAET seria decisivo para o seu desmonte e posterior fechamento.
+    page: '217'
+- type: other
+  date: 2004-08
+  description: >-
+    Nota de esclarecimento do reitor do SAET, Gustavo Gilson de Oliveira, após a Semana de Reflexão Teológica de
+    2004, denunciando o boicote e os termos usados pelo bispo Robinson Cavalcanti contra seus opositores.
+  status: probable
+  sources:
+  - source: costa2021
+    quote: >-
+      Após o evento, foi publicada uma “Nota de esclarecimento”, em que o Reitor do SAET, o reverendo Gustavo de
+      Oliveira, denunciava o movimento de boicote
+    page: '217'
