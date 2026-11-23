@@ -36,13 +36,25 @@
           <div class="flex flex-col">
             <!-- Capa do livro -->
             <div class="w-full aspect-[3/4] bg-slate-200 flex items-center justify-center overflow-hidden">
-              <img
+              <picture
                 v-if="loc.thumbnailUrl"
-                :src="loc.thumbnailUrl"
-                :alt="`Capa de ${loc.title}`"
-                class="w-full h-full object-cover"
-                @error="handleImageError"
+                class="w-full h-full"
               >
+                <source
+                  :srcset="loc.thumbnailUrl.replace(/\.(png|jpe?g)$/i, '.webp')"
+                  type="image/webp"
+                >
+                <img
+                  :src="loc.thumbnailUrl"
+                  :alt="`Capa de ${loc.title}`"
+                  width="480"
+                  height="640"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover"
+                  @error="handleImageError"
+                >
+              </picture>
               <svg
                 v-else
                 class="w-16 h-16 text-slate-400"
