@@ -80,20 +80,32 @@ export interface OfficeMeta {
 
 // The colours of the hours in the app: morning blue, midday orange, evening
 // green, compline purple. Checked for colour-blind separation with labels.
+// The Little Hours (prima, terça, noa) come from books that print the
+// monastic course; they sit between the main offices in the order the day
+// runs, the same order as `DailyOffice::OfficeTypes::ALL` in the API.
 export const OFFICE_META: Record<string, OfficeMeta> = {
   morning: { label: 'Manhã', icon: 'morning', color: 'var(--op-s1)', tint: 'rgba(23, 84, 207, .1)', order: 1 },
-  midday: { label: 'Meio-dia', icon: 'midday', color: 'var(--op-s2)', tint: 'rgba(196, 112, 31, .12)', order: 2 },
-  evening: { label: 'Noite', icon: 'evening', color: 'var(--op-s3)', tint: 'rgba(61, 143, 95, .12)', order: 3 },
-  compline: { label: 'Completas', icon: 'compline', color: 'var(--op-s4)', tint: 'rgba(122, 85, 176, .12)', order: 4 },
-  late_evening: { label: 'Fim da noite', icon: 'late', color: 'var(--op-s5)', tint: 'rgba(208, 69, 122, .12)', order: 5 }
+  prime: { label: 'Prima', icon: 'prime', color: 'var(--op-s7)', tint: 'rgba(168, 128, 26, .13)', order: 2 },
+  terce: { label: 'Terça', icon: 'terce', color: 'var(--op-s6)', tint: 'rgba(43, 127, 142, .12)', order: 3 },
+  midday: { label: 'Meio-dia', icon: 'midday', color: 'var(--op-s2)', tint: 'rgba(196, 112, 31, .12)', order: 4 },
+  none: { label: 'Noa', icon: 'none', color: 'var(--op-s8)', tint: 'rgba(95, 111, 134, .13)', order: 5 },
+  evening: { label: 'Noite', icon: 'evening', color: 'var(--op-s3)', tint: 'rgba(61, 143, 95, .12)', order: 6 },
+  compline: { label: 'Completas', icon: 'compline', color: 'var(--op-s4)', tint: 'rgba(122, 85, 176, .12)', order: 7 },
+  late_evening: { label: 'Fim da noite', icon: 'late', color: 'var(--op-s5)', tint: 'rgba(208, 69, 122, .12)', order: 8 }
 }
 
-export const officeMeta = (key: string): OfficeMeta => OFFICE_META[key] || {
-  label: key.replaceAll('_', ' '),
-  icon: 'book',
-  color: 'var(--op-ink-soft)',
-  tint: 'rgba(13, 39, 68, .06)',
-  order: 9
+/** An office the API learns before the panel does still reads as words, after the known ones. */
+export const officeMeta = (key: string): OfficeMeta => {
+  const known = OFFICE_META[key]
+  if (known) return known
+  const words = key.replaceAll('_', ' ').trim()
+  return {
+    label: words ? words.charAt(0).toLocaleUpperCase('pt-BR') + words.slice(1) : 'Sem tipo',
+    icon: 'clock',
+    color: 'var(--op-ink-soft)',
+    tint: 'rgba(13, 39, 68, .06)',
+    order: 99
+  }
 }
 
 export const SERIES_COLORS = ['var(--op-s1)', 'var(--op-s2)', 'var(--op-s4)', 'var(--op-s3)', 'var(--op-s5)']

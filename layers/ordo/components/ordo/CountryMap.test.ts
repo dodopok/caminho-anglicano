@@ -38,6 +38,8 @@ describe('CountryMap', () => {
     expect(wrapper.find('button[aria-pressed="false"]').exists()).toBe(true)
 
     await wrapper.find('path[aria-label^="Brasil:"]').trigger('focus')
+    // The hint stays in the flow (only hidden) so the map does not jump under the cursor.
+    expect(wrapper.find('.ordo-country-map__hint').classes()).toContain('is-hidden')
     expect(wrapper.find('[role="status"]').text()).toContain('Brasil')
     expect(wrapper.find('[role="status"]').text()).toContain('40%')
   })

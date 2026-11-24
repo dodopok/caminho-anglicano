@@ -139,7 +139,8 @@ const toggleSelected = (code: string) => {
             <span>{{ displayCount(activeCountry.count) }} {{ activeCountry.count === 1 ? 'pessoa' : 'pessoas' }}</span>
             <small>{{ displayPercent(activeCountry.percent) }} da base</small>
           </div>
-          <p v-else class="ordo-country-map__hint">Passe o cursor ou use Tab para consultar um país.</p>
+          <!-- Always in the flow, only hidden: removing it made the map jump up under the cursor. -->
+          <p class="ordo-country-map__hint" :class="{ 'is-hidden': activeCountry }" :aria-hidden="activeCountry ? 'true' : undefined">Passe o cursor ou use Tab para consultar um país.</p>
         </div>
       </div>
 
@@ -214,7 +215,8 @@ const toggleSelected = (code: string) => {
 .ordo-country-map__tooltip strong { font-size: 13.5px; }
 .ordo-country-map__tooltip span { font-family: var(--op-font-display); font-size: 18px; font-weight: 600; }
 .ordo-country-map__tooltip small { color: var(--op-rail-soft); font-size: 12px; }
-.ordo-country-map__hint { margin: 8px 0 0; color: var(--op-ink-faint); font-size: 12.5px; text-align: center; }
+.ordo-country-map__hint { margin: 8px 0 0; color: var(--op-ink-faint); font-size: 12.5px; text-align: center; transition: opacity 120ms ease; }
+.ordo-country-map__hint.is-hidden { visibility: hidden; opacity: 0; }
 .ordo-country-map__ranking { min-width: 0; }
 .ordo-country-map__ranking-header > span { color: var(--op-ink-faint); font-size: 12.5px; white-space: nowrap; }
 .ordo-country-map__list { display: grid; gap: 2px; margin: 12px 0 0; padding: 0; list-style: none; }

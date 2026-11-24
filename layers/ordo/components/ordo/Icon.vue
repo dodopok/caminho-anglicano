@@ -38,6 +38,11 @@ const PATHS = {
   evening: 'M19.5 14.2A7.5 7.5 0 1 1 9.8 4.5a6 6 0 0 0 9.7 9.7z',
   compline: 'M15.5 15.6A6.5 6.5 0 1 1 7.4 7.5a5.2 5.2 0 0 0 8.1 8.1zM17.5 3.5v3M16 5h3M20.5 9v2M19.5 10h2',
   late: 'M12 4.5a7.5 7.5 0 1 1 0 15a7.5 7.5 0 1 1 0-15zM12 8v4l2.5 1.5',
+  // The Little Hours are named for the hour they keep, so each is a dial set
+  // to it: prime at six, terce at nine, none at three in the afternoon.
+  prime: 'M12 3.5a8.5 8.5 0 1 1 0 17a8.5 8.5 0 1 1 0-17zM12 7v5M12 12v4.5',
+  terce: 'M12 3.5a8.5 8.5 0 1 1 0 17a8.5 8.5 0 1 1 0-17zM12 7v5M12 12H7.5',
+  none: 'M12 3.5a8.5 8.5 0 1 1 0 17a8.5 8.5 0 1 1 0-17zM12 7v5M12 12h4.5',
   filter: 'M4 5.5h16M7 12h10M10 18.5h4',
   external: 'M7 17 17 7M9 7h8v8'
 } as const
