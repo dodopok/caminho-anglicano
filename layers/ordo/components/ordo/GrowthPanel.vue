@@ -92,7 +92,7 @@ const weekRows = computed(() => (retention.value.cohorts || []).map(cohort => ({
 
 const segmentRows = (segments: RetentionSegment[] | undefined, kind: 'book' | 'mode') => (segments || []).map(segment => ({
   key: `${kind}-${segment.prayer_book_code || segment.mode || 'none'}`,
-  label: kind === 'book' ? (segment.prayer_book_name || 'Sem livro') : humanizeKey(segment.mode || 'basic'),
+  label: kind === 'book' ? (segment.prayer_book_name || 'Sem livro') : (segment.mode ? humanizeKey(segment.mode) : 'Sem configuração'),
   code: kind === 'book' ? segment.prayer_book_code || null : null,
   users: segment.users || 0,
   cells: [heatCell(segment.d1), heatCell(segment.d7), heatCell(segment.d30)]

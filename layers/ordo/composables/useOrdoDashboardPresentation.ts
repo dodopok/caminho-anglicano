@@ -99,6 +99,8 @@ export const useOrdoDashboardPresentation = () => {
       failed: 'Falhou',
       invalid: 'Inválido',
       basic: 'Básico',
+      advanced: 'Avançado',
+      simplified: 'Simplificado',
       traditional: 'Tradicional',
       streak_reminder: 'Lembrete de sequência',
       announcement: 'Anúncio',
