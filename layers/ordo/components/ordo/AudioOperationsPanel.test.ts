@@ -124,6 +124,34 @@ describe('AudioOperationsPanel', () => {
     )
   })
 
+  it('narrates the window in the Bible chosen for the readings', async () => {
+    const wrapper = await mountPanel()
+    await openSection(wrapper, 'Gerar')
+
+    const bibleSelect = wrapper.findAll('select').find(select => select.findAll('option').some(option => option.text() === 'Padrão do livro'))
+    expect(bibleSelect?.findAll('option').map(option => option.text())).toEqual([
+      'Padrão do livro', 'NVT · Nova Versão Transformadora', 'NVI · Nova Versão Internacional'
+    ])
+
+    await bibleSelect?.setValue('nvt')
+    await wrapper.findAll('button').find(button => button.text() === 'Estimar')?.trigger('click')
+    await flushPromises()
+
+    expect(api.estimateAudioGeneration).toHaveBeenLastCalledWith(
+      expect.objectContaining({ prayer_book_code: 'loc_2019', preferences: { bible_version: 'nvt' } })
+    )
+  })
+
+  it('keeps the book default when no Bible is chosen for the window', async () => {
+    const wrapper = await mountPanel()
+    await openSection(wrapper, 'Gerar')
+
+    await wrapper.findAll('button').find(button => button.text() === 'Estimar')?.trigger('click')
+    await flushPromises()
+
+    expect(api.estimateAudioGeneration).toHaveBeenLastCalledWith(expect.objectContaining({ preferences: {} }))
+  })
+
   const catalogButton = (wrapper: Awaited<ReturnType<typeof mountPanel>>, label: string) =>
     wrapper.findAll('button').find(button => button.text().includes(label))
 

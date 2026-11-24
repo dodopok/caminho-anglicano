@@ -78,6 +78,11 @@ const generation = reactive<AudioGenerationRequest>({
   offices: [...DEFAULT_OFFICES],
   preferences: {}
 })
+// The Bible the window's readings are narrated in. Empty means the book's own
+// default, which is what readers who never chose a Bible get.
+const generationBible = ref('')
+const generationBibles = ref<AudioCatalogTranslation[]>([])
+let generationBiblesRequest = 0
 const estimate = ref<AudioEstimate | null>(null)
 const generationLoading = ref(false)
 const generationError = ref<string | null>(null)
@@ -265,8 +270,29 @@ const generationPayload = (): AudioGenerationRequest => ({
   start_date: generation.start_date,
   days: Math.min(Math.max(Number(generation.days) || 1, 1), 31),
   ...(generation.offices?.length ? { offices: [...generation.offices] } : {}),
-  preferences: generation.preferences || {}
+  preferences: {
+    ...(generation.preferences || {}),
+    ...(generationBible.value ? { bible_version: generationBible.value } : {})
+  }
 })
+
+const loadGenerationBibles = async () => {
+  const code = generation.prayer_book_code
+  const requestId = ++generationBiblesRequest
+  generationBibles.value = []
+  generationBible.value = ''
+  if (!code) return
+
+  try {
+    const response = await fetchAudioCatalogTranslations(code)
+    if (requestId === generationBiblesRequest) {
+      generationBibles.value = (response.translations || []).filter(corpus => corpus.kind === 'bible')
+    }
+  } catch {
+    // Without the list the window still narrates the book's default Bible.
+    if (requestId === generationBiblesRequest) generationBibles.value = []
+  }
+}
 
 const clipFilters = (): AudioClipFilters => ({
   limit: CLIP_PAGE_SIZE,
@@ -688,6 +714,17 @@ const reindexCatalog = async () => {
 const shortFingerprint = (value?: string | null) => value ? value.slice(0, 12) : '—'
 
 watch(
+  () => [generation.prayer_book_code, prayerBooks.value.length] as const,
+  ([code, books], previous) => {
+    if (!books || (previous && previous[0] === code && previous[1])) return
+    estimate.value = null
+    loadGenerationBibles()
+  }
+)
+
+watch(generationBible, () => { estimate.value = null })
+
+watch(
   () => [catalog.prayer_book_code, prayerBooks.value.length] as const,
   ([code, books], previous) => {
     if (!books || (previous && previous[0] === code && previous[1])) return
@@ -841,6 +878,12 @@ onUnmounted(stopPolling)
           </label>
           <label>Dias
             <input v-model.number="generation.days" type="number" min="1" max="31">
+          </label>
+          <label>Bíblia das leituras
+            <select v-model="generationBible">
+              <option value="">Padrão do livro</option>
+              <option v-for="bible in generationBibles" :key="bible.code" :value="bible.code">{{ bible.name }} · {{ bible.full_name || bible.code }}</option>
+            </select>
           </label>
         </div>
         <fieldset class="audio-ops__offices">
