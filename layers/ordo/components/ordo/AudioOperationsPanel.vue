@@ -204,6 +204,24 @@ const hasActiveOperations = computed(() => operations.value.some(operation => ['
 const LIVE_JOB_STATES = ['running', 'ready', 'scheduled', 'blocked']
 const liveJobs = computed(() => queueJobs.value.filter(job => LIVE_JOB_STATES.includes(job.state || (job.claimed ? 'running' : 'ready'))).length)
 const hasActiveWork = computed(() => hasActiveOperations.value || liveJobs.value > 0)
+// A run waiting for the voice provider to come back has nothing to show for
+// up to half an hour, so the panel checks on it once a minute, not every 4 s.
+const isWaitingRetry = (operation: AudioOperation) => operation.status === 'queued' && Boolean(operation.next_attempt_at)
+const waitingOperations = computed(() => operations.value.filter(isWaitingRetry))
+const onlyWaiting = computed(() => hasActiveOperations.value
+  && operations.value.filter(operation => ['queued', 'running'].includes(operation.status)).every(isWaitingRetry)
+  && !queueJobs.value.some(job => ['running', 'ready'].includes(job.state || (job.claimed ? 'running' : 'ready'))))
+const minutesUntil = (value?: string | null) => {
+  if (!value) return null
+  const minutes = Math.round((new Date(value).getTime() - Date.now()) / 60_000)
+  return Number.isFinite(minutes) ? Math.max(0, minutes) : null
+}
+const retryText = (operation: AudioOperation) => {
+  const minutes = minutesUntil(operation.next_attempt_at)
+  const when = minutes === null ? '' : minutes < 1 ? 'a qualquer momento' : `em ${formatNumber(minutes)} min`
+  const reason = operation.error_message || 'O provedor de voz não respondeu.'
+  return when ? `${reason} · ${when}` : reason
+}
 const pendingCandidateCount = computed(() => summary.value?.pending_candidates || 0)
 const lastEnqueued = computed(() => lastEnqueuedId.value == null
   ? null
@@ -223,6 +241,7 @@ const sections = computed<Array<{ id: AudioSection; label: string; count?: numbe
 const attentionItems = computed(() => [
   ...(pendingCandidateCount.value ? [{ key: 'candidates', text: `${plural(pendingCandidateCount.value, 'tentativa aguarda', 'tentativas aguardam')} revisão`, section: 'clips' as AudioSection, action: 'Abrir clips' }] : []),
   ...(deadJobs.value ? [{ key: 'dead', text: `${plural(deadJobs.value, 'tarefa travada', 'tarefas travadas')} na fila de processamento`, section: null, action: null }] : []),
+  ...(waitingOperations.value.length ? [{ key: 'waiting', text: `${plural(waitingOperations.value.length, 'geração espera', 'gerações esperam')} o provedor de voz voltar; tentam de novo sozinhas`, section: null, action: null }] : []),
   ...(failedOperations.value ? [{ key: 'failed', text: `${plural(failedOperations.value, 'operação falhou', 'operações falharam')} nas últimas 24 horas`, section: null, action: null }] : [])
 ])
 
@@ -619,7 +638,7 @@ const pollOperations = async () => {
 
 const startPolling = () => {
   if (pollingTimer || !hasActiveWork.value) return
-  pollingTimer = setInterval(() => void pollOperations(), 4_000)
+  pollingTimer = setInterval(() => void pollOperations(), onlyWaiting.value ? 60_000 : 4_000)
 }
 
 const stopPolling = () => {
@@ -628,9 +647,9 @@ const stopPolling = () => {
   pollingTimer = null
 }
 
-watch(hasActiveWork, active => {
+watch([hasActiveWork, onlyWaiting], ([active]) => {
+  stopPolling()
   if (active) startPolling()
-  else stopPolling()
 }, { immediate: true })
 
 const applyClipFilters = async () => {
@@ -833,7 +852,7 @@ onUnmounted(stopPolling)
 
     <div v-if="lastEnqueued && activeSection !== 'overview'" class="audio-ops__tracked" aria-live="polite">
       <div class="audio-ops__tracked-copy">
-        <span class="audio-ops__badge" :class="`audio-ops__badge--${lastEnqueued.status}`">{{ statusLabel(lastEnqueued.status) }}</span>
+        <span class="audio-ops__badge" :class="isWaitingRetry(lastEnqueued) ? 'audio-ops__badge--waiting' : `audio-ops__badge--${lastEnqueued.status}`">{{ isWaitingRetry(lastEnqueued) ? 'Nova tentativa' : statusLabel(lastEnqueued.status) }}</span>
         <strong>{{ operationLabel(lastEnqueued.kind) }}</strong>
         <small>{{ lastEnqueued.prayer_book_code || 'Todos os LOCs' }} · {{ stageText(lastEnqueued) || progressText(lastEnqueued) }}</small>
       </div>
@@ -914,7 +933,7 @@ onUnmounted(stopPolling)
             <article v-for="operation in operations.slice(0, 8)" :key="operation.id" class="audio-ops__operation">
               <div class="audio-ops__operation-topline">
                 <strong>{{ operationLabel(operation.kind) }}</strong>
-                <span class="audio-ops__badge" :class="`audio-ops__badge--${operation.status}`">{{ statusLabel(operation.status) }}</span>
+                <span class="audio-ops__badge" :class="isWaitingRetry(operation) ? 'audio-ops__badge--waiting' : `audio-ops__badge--${operation.status}`">{{ isWaitingRetry(operation) ? 'Nova tentativa' : statusLabel(operation.status) }}</span>
               </div>
               <small>{{ operation.prayer_book_code || 'Todos os LOCs' }} · {{ formatTimestamp(operation.created_at) }}</small>
               <div v-if="operation.total_items && countsLines(operation)" class="audio-ops__progress"><i :style="{ width: `${operation.progress_percentage || 0}%` }" /></div>
@@ -931,7 +950,8 @@ onUnmounted(stopPolling)
                 <span>{{ formatNumber(catalogReport(operation)?.ready) }} clips resolvidos · {{ formatNumber(catalogReport(operation)?.generated) }} gerados · {{ formatNumber(catalogReport(operation)?.missingCharacters) }} caracteres a gerar em {{ formatNumber(catalogReport(operation)?.sources) }} fontes</span>
               </div>
               <small v-if="catalogCorporaLabel(operation)" class="audio-ops__operation-corpora">{{ catalogCorporaLabel(operation) }}</small>
-              <p v-if="operation.error_message" class="audio-ops__operation-error">{{ operation.error_message }}</p>
+              <p v-if="isWaitingRetry(operation)" class="audio-ops__operation-retry" role="status">{{ retryText(operation) }}</p>
+              <p v-else-if="operation.error_message" class="audio-ops__operation-error">{{ operation.error_message }}</p>
               <button v-if="isLive(operation)" type="button" class="audio-ops__link" @click="refreshOperation(operation)">Atualizar agora</button>
             </article>
           </div>
@@ -1282,6 +1302,8 @@ onUnmounted(stopPolling)
 .audio-ops__progress { height: 5px; margin-top: 10px; overflow: hidden; border-radius: 99px; background: rgba(13, 39, 68, .06); }
 .audio-ops__progress i { display: block; height: 100%; border-radius: inherit; background: var(--op-action); transition: width 300ms ease; }
 .audio-ops__operation-meta { justify-content: flex-start; flex-wrap: wrap; margin-top: 6px; color: var(--op-ink-faint); font-size: 11.5px; }
+.audio-ops__operation-retry { margin: 7px 0 0; padding: 7px 10px; border-radius: 9px; background: var(--op-warn-wash); color: var(--op-warn); font-size: 12px; line-height: 1.45; }
+.audio-ops__badge--waiting { background: var(--op-warn-wash); color: var(--op-warn); }
 .audio-ops__operation-error { margin: 7px 0 0; color: var(--op-danger); font-size: 12px; line-height: 1.4; }
 .audio-ops__link { padding: 0; border: 0; background: transparent; color: var(--op-action); cursor: pointer; font: inherit; font-size: 13px; font-weight: 700; }
 .audio-ops__link:disabled { cursor: not-allowed; opacity: .45; }
