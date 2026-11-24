@@ -1,254 +1,243 @@
 <script setup lang="ts">
+import OrdoBarList, { type BarListItem } from './BarList.vue'
 import OrdoChartCard from './ChartCard.vue'
 import OrdoCountryMap from './CountryMap.vue'
-import OrdoDataExplorerModal from './DataExplorerModal.vue'
-import OrdoLineChart from './LineChart.vue'
+import OrdoLocBadge from './LocBadge.vue'
 import OrdoMetricCard from './MetricCard.vue'
+import OrdoTrendChart from './TrendChart.vue'
 import { useOrdoDashboardPresentation } from '../../composables/useOrdoDashboardPresentation'
-import type { DashboardData, DashboardPeriod } from '../../types/dashboard'
-import type { ExplorerColumn, ExplorerFilter, ExplorerRow, ExplorerValue } from '../../types/explorer'
+import { buildSeries, SERIES_COLORS } from '../../utils/series'
+import { periodShortLabel, type PeriodValue } from '../../utils/period'
+import type { DashboardData, RetentionSegment, RetentionWindow } from '../../types/dashboard'
 
 const props = defineProps<{
   dashboard: DashboardData
-  period?: DashboardPeriod | null
-  startDate: string
-  endDate: string
-  allTime: boolean
+  period: PeriodValue
+  monthly: boolean
 }>()
 
-const {
-  asNumber,
-  formatNumber,
-  formatDecimal,
-  formatPercent,
-  formatDate,
-  mapItems,
-  maxItemValue,
-  createDateRange,
-  createMonthRange,
-  aggregateCountMapByMonth,
-  formatChartLabel,
-  formatMonthLabel,
-  formatExplorerValue
-} = useOrdoDashboardPresentation()
+const { formatNumber, formatPercent, formatDuration, humanizeKey, formatDate, languageLabel } = useOrdoDashboardPresentation()
 
-type ExplorerName = 'newUsers' | 'onboarding' | 'retention' | 'geography' | null
+const users = computed(() => props.dashboard.users || {})
+const onboarding = computed(() => props.dashboard.onboarding || {})
+const retention = computed(() => props.dashboard.retention || {})
+const geography = computed(() => props.dashboard.geography)
+const shortPeriod = computed(() => periodShortLabel(props.period))
 
-const activeExplorer = ref<ExplorerName>(null)
-const chartBuckets = computed(() => props.allTime
-  ? createMonthRange(props.startDate, props.endDate)
-  : createDateRange(props.startDate, props.endDate))
-const dailyNewUsers = computed(() => {
-  const values = props.allTime
-    ? aggregateCountMapByMonth(props.dashboard.users?.daily_new_users)
-    : props.dashboard.users?.daily_new_users || {}
-  return chartBuckets.value.map(date => asNumber(values[date]))
+const firstPrayer = computed(() => onboarding.value.time_to_first_prayer)
+
+const arrivals = computed(() => buildSeries(users.value.daily_new_users || {}, props.period.start, props.period.end, { monthly: props.monthly }))
+const arrivalsAverage = computed(() => {
+  const points = arrivals.value.length
+  return points ? arrivals.value.reduce((sum, point) => sum + point.value, 0) / points : 0
 })
-const dailyNewUserLabels = computed(() => chartBuckets.value.map(props.allTime ? formatMonthLabel : formatChartLabel))
-const onboardingChoiceItems = computed(() => mapItems(props.dashboard.onboarding?.choices?.prayer_books))
-const languageItems = computed(() => mapItems(props.dashboard.geography?.by_language))
-const geographyCoverage = computed(() => props.dashboard.geography?.coverage)
-const explicitCountryPercentage = computed(() => geographyCoverage.value?.explicit_country_percentage ?? props.dashboard.geography?.explicit_country_percentage ?? props.dashboard.geography?.country_coverage_percentage)
-const resolvedCountryPercentage = computed(() => geographyCoverage.value?.resolved_country_percentage ?? props.dashboard.geography?.resolved_country_coverage_percentage)
-const retentionRows = computed(() => props.dashboard.retention?.cohorts || [])
-const activeCohort = computed(() => retentionRows.value[retentionRows.value.length - 1])
 
-const onboardingSteps = computed(() => {
-  const funnel = props.dashboard.onboarding?.funnel
-  if (!funnel) return []
-
-  return [
-    { label: 'Registrados', value: asNumber(funnel.registered), rate: funnel.rates?.registered },
-    { label: 'Onboarding concluído', value: asNumber(funnel.onboarding_completed), rate: funnel.rates?.onboarding_completed },
-    { label: 'Primeiro ofício', value: asNumber(funnel.first_prayer), rate: funnel.rates?.first_prayer },
-    { label: 'Sete orações', value: asNumber(funnel.prayed_seven_times), rate: funnel.rates?.prayed_seven_times }
+const funnel = computed(() => {
+  const data = onboarding.value.funnel || {}
+  const registered = data.registered || 0
+  const steps = [
+    { key: 'registered', label: 'Criaram a conta', value: registered },
+    { key: 'onboarding_completed', label: 'Terminaram a configuração', value: data.onboarding_completed || 0 },
+    { key: 'first_prayer', label: 'Rezaram o primeiro ofício', value: data.first_prayer || 0 },
+    { key: 'prayed_seven_times', label: 'Chegaram a sete orações', value: data.prayed_seven_times || 0 }
   ]
+  let biggest = { index: -1, loss: 0 }
+  steps.forEach((step, index) => {
+    if (!index) return
+    const loss = steps[index - 1].value - step.value
+    if (loss > biggest.loss) biggest = { index, loss }
+  })
+  return steps.map((step, index) => ({
+    ...step,
+    pct: registered ? step.value / registered * 100 : 0,
+    rate: registered ? formatPercent(Math.round(step.value / registered * 1000) / 10) : '—',
+    drop: index === biggest.index && biggest.loss > 0 ? `A maior perda: ${formatNumber(biggest.loss)} pessoas ficam entre “${steps[index - 1].label.toLowerCase()}” e este passo.` : ''
+  }))
 })
 
-const newUserColumns: ExplorerColumn[] = [
-  { key: 'date', label: 'Data', sortable: true },
-  { key: 'new_users', label: 'Novos usuários', sortable: true, align: 'right' }
+type RetentionView = 'weeks' | 'books' | 'modes'
+const retentionView = ref<RetentionView>('weeks')
+
+const HEAT = [
+  { below: 8, bg: 'var(--op-seq-1)', ink: 'var(--op-ink)' },
+  { below: 20, bg: 'var(--op-seq-2)', ink: 'var(--op-ink)' },
+  { below: 32, bg: 'var(--op-seq-3)', ink: 'var(--op-ink)' },
+  { below: 45, bg: 'var(--op-seq-4)', ink: '#fff' },
+  { below: Infinity, bg: 'var(--op-seq-5)', ink: '#fff' }
 ]
-const newUserRows = computed<ExplorerRow[]>(() => Object.entries(props.dashboard.users?.daily_new_users || {}).map(([date, value]) => ({
-  id: date,
-  values: { date, new_users: asNumber(value) }
+
+interface HeatCell { label: string; detail: string; open: boolean; bg?: string; ink?: string }
+const heatCell = (window?: RetentionWindow): HeatCell => {
+  if (!window || window.eligible === 0) return { label: 'ainda não', detail: '', open: true }
+  const rate = window.eligible_rate ?? window.rate
+  if (rate == null) return { label: '—', detail: '', open: true }
+  const tone = HEAT.find(step => rate < step.below) || HEAT[HEAT.length - 1]
+  const base = window.eligible ?? null
+  return {
+    label: formatPercent(rate),
+    detail: base != null ? `${formatNumber(window.users)} de ${formatNumber(base)}` : `${formatNumber(window.users)} pessoas`,
+    open: false,
+    bg: tone.bg,
+    ink: tone.ink
+  }
+}
+
+const weekRows = computed(() => (retention.value.cohorts || []).map(cohort => ({
+  key: cohort.week_start,
+  label: `Semana de ${formatDate(cohort.week_start)}`,
+  code: null as string | null,
+  users: cohort.users || 0,
+  cells: [heatCell(cohort.d1), heatCell(cohort.d7), heatCell(cohort.d30)]
 })))
 
-const retentionColumns: ExplorerColumn[] = [
-  { key: 'week_start', label: 'Semana', sortable: true },
-  { key: 'users', label: 'Pessoas', sortable: true, align: 'right' },
-  { key: 'd1_users', label: 'D1 pessoas', sortable: true, align: 'right' },
-  { key: 'd1_rate', label: 'D1', sortable: true, align: 'right' },
-  { key: 'd7_users', label: 'D7 pessoas', sortable: true, align: 'right' },
-  { key: 'd7_rate', label: 'D7', sortable: true, align: 'right' },
-  { key: 'd30_users', label: 'D30 pessoas', sortable: true, align: 'right' },
-  { key: 'd30_rate', label: 'D30', sortable: true, align: 'right' }
-]
-const retentionExplorerRows = computed<ExplorerRow[]>(() => retentionRows.value.map(cohort => ({
-  id: cohort.week_start,
-  values: {
-    week_start: cohort.week_start,
-    users: asNumber(cohort.users),
-    d1_users: asNumber(cohort.d1?.users),
-    d1_rate: asNumber(cohort.d1?.rate),
-    d7_users: asNumber(cohort.d7?.users),
-    d7_rate: asNumber(cohort.d7?.rate),
-    d30_users: asNumber(cohort.d30?.users),
-    d30_rate: asNumber(cohort.d30?.rate)
-  }
-})))
+const segmentRows = (segments: RetentionSegment[] | undefined, kind: 'book' | 'mode') => (segments || []).map(segment => ({
+  key: `${kind}-${segment.prayer_book_code || segment.mode || 'none'}`,
+  label: kind === 'book' ? (segment.prayer_book_name || 'Sem livro') : humanizeKey(segment.mode || 'basic'),
+  code: kind === 'book' ? segment.prayer_book_code || null : null,
+  users: segment.users || 0,
+  cells: [heatCell(segment.d1), heatCell(segment.d7), heatCell(segment.d30)]
+}))
 
-const countMapRows = (category: string, values?: Record<string, number>): ExplorerRow[] =>
-  mapItems(values).map(item => ({
-    id: `${category}-${item.key}`,
-    values: { category, item: item.label, code: item.key, value: item.value }
-  }))
+const retentionRows = computed(() => {
+  if (retentionView.value === 'books') return segmentRows(retention.value.by_prayer_book, 'book')
+  if (retentionView.value === 'modes') return segmentRows(retention.value.by_mode, 'mode')
+  return weekRows.value
+})
+const segmentsAvailable = computed(() => Boolean(retention.value.by_prayer_book || retention.value.by_mode))
 
-const onboardingColumns: ExplorerColumn[] = [
-  { key: 'category', label: 'Grupo', sortable: true },
-  { key: 'item', label: 'Escolha', sortable: true },
-  { key: 'code', label: 'Código', sortable: true },
-  { key: 'value', label: 'Usuários', sortable: true, align: 'right' }
-]
-const onboardingFilters: ExplorerFilter[] = [
-  {
-    key: 'category',
-    label: 'Grupo',
-    options: [
-      { value: 'Modo', label: 'Modo' },
-      { value: 'Prayer book', label: 'Prayer book' },
-      { value: 'Bíblia', label: 'Bíblia' },
-      { value: 'Idioma', label: 'Idioma' }
-    ]
-  }
-]
-const onboardingRows = computed<ExplorerRow[]>(() => [
-  ...countMapRows('Modo', props.dashboard.onboarding?.choices?.modes),
-  ...countMapRows('Prayer book', props.dashboard.onboarding?.choices?.prayer_books),
-  ...countMapRows('Bíblia', props.dashboard.onboarding?.choices?.bible_versions),
-  ...countMapRows('Idioma', props.dashboard.onboarding?.choices?.languages)
-])
+const modes = computed(() => {
+  const map = onboarding.value.choices?.modes || {}
+  const total = Object.values(map).reduce((sum, value) => sum + (value || 0), 0)
+  return Object.entries(map)
+    .sort((a, b) => (b[1] || 0) - (a[1] || 0))
+    .map(([key, value], index) => ({ key, label: humanizeKey(key), value: value || 0, share: total ? Math.round((value || 0) / total * 100) : 0, color: SERIES_COLORS[index] || 'var(--op-ink-faint)' }))
+})
 
-const geographyColumns: ExplorerColumn[] = [
-  { key: 'category', label: 'Grupo', sortable: true },
-  { key: 'item', label: 'Item', sortable: true },
-  { key: 'code', label: 'Código', sortable: true },
-  { key: 'value', label: 'Valor', sortable: true, align: 'right' }
-]
-const geographyFilters: ExplorerFilter[] = [
-  {
-    key: 'category',
-    label: 'Grupo',
-    options: [
-      { value: 'Resumo', label: 'Resumo' },
-      { value: 'País', label: 'País' },
-      { value: 'Idioma', label: 'Idioma' }
-    ]
-  }
-]
-const geographyRows = computed<ExplorerRow[]>(() => [
-  { id: 'summary-total', values: { category: 'Resumo', item: 'Usuários totais', code: 'total_users', value: asNumber(geographyCoverage.value?.total_users ?? props.dashboard.geography?.total_users) } },
-  { id: 'summary-explicit', values: { category: 'Resumo', item: 'País declarado', code: 'explicit_country_users', value: asNumber(geographyCoverage.value?.explicit_country_users ?? props.dashboard.geography?.explicit_country_users) } },
-  { id: 'summary-explicit-percentage', values: { category: 'Resumo', item: 'Cobertura declarada', code: 'explicit_country_percentage', value: asNumber(explicitCountryPercentage.value), value_kind: 'percentage' } },
-  ...(resolvedCountryPercentage.value == null ? [] : [{ id: 'summary-resolved-percentage', values: { category: 'Resumo', item: 'Cobertura resolvida', code: 'resolved_country_percentage', value: asNumber(resolvedCountryPercentage.value), value_kind: 'percentage' } }]),
-  ...(geographyCoverage.value?.timezone_inferred_country_users == null && props.dashboard.geography?.derived_country_users == null ? [] : [{ id: 'summary-timezone-inferred', values: { category: 'Resumo', item: 'País inferido por timezone', code: 'timezone_inferred_country_users', value: asNumber(geographyCoverage.value?.timezone_inferred_country_users ?? props.dashboard.geography?.derived_country_users) } }]),
-  ...(geographyCoverage.value?.resolved_country_users == null ? [] : [{ id: 'summary-resolved-users', values: { category: 'Resumo', item: 'País resolvido', code: 'resolved_country_users', value: asNumber(geographyCoverage.value.resolved_country_users) } }]),
-  ...(geographyCoverage.value?.unresolved_country_users == null && props.dashboard.geography?.ambiguous_or_unknown_timezone_users == null ? [] : [{ id: 'summary-unresolved-users', values: { category: 'Resumo', item: 'Sem localização', code: 'unresolved_country_users', value: asNumber(geographyCoverage.value?.unresolved_country_users ?? props.dashboard.geography?.ambiguous_or_unknown_timezone_users) } }]),
-  { id: 'summary-default-timezone', values: { category: 'Resumo', item: 'Timezone padrão', code: 'default_timezone_users', value: asNumber(props.dashboard.geography?.default_timezone_users) } },
-  ...countMapRows('País', props.dashboard.geography?.by_country),
-  ...countMapRows('Idioma', props.dashboard.geography?.by_language)
-])
+const chosenBooks = computed<BarListItem[]>(() => {
+  const named = props.dashboard.prayer_books?.onboarding_choices_by_prayer_book
+  const list = named?.length
+    ? named.map(item => ({ code: item.code, name: item.name, value: item.users || 0 }))
+    : Object.entries(onboarding.value.choices?.prayer_books || {}).map(([code, value]) => ({ code, name: code, value: value || 0 }))
+  const total = list.reduce((sum, item) => sum + item.value, 0)
+  return list
+    .sort((a, b) => b.value - a.value)
+    .map(item => ({ key: item.code, label: item.name, code: item.name === item.code ? null : item.code, value: item.value, display: formatNumber(item.value), share: total ? formatPercent(Math.round(item.value / total * 1000) / 10) : undefined, color: 'var(--op-ink)' }))
+})
 
-const formatGrowthExplorerValue = (value: ExplorerValue, key: string, row: ExplorerRow) =>
-  value == null ? '—' : row.values.value_kind === 'percentage' ? formatPercent(typeof value === 'number' ? value : Number(value)) : formatExplorerValue(value, key)
+const languages = computed<BarListItem[]>(() => {
+  const map = onboarding.value.choices?.languages || geography.value?.by_language || {}
+  return Object.entries(map)
+    .sort((a, b) => (b[1] || 0) - (a[1] || 0))
+    .map(([key, value]) => ({ key, label: languageLabel(key), value: value || 0, display: formatNumber(value), color: 'var(--op-s2)' }))
+})
 </script>
 
 <template>
-  <section class="ordo-content-stack">
-    <div class="ordo-section-intro"><div><p class="ordo-kicker">Aquisição & hábito</p><h2>Onde uma pessoa começa — e decide continuar.</h2></div><span class="ordo-scope-label">coortes do período</span></div>
+  <div style="display: flex; flex-direction: column; gap: 26px">
+    <section class="op-grid" style="--op-min: 240px" aria-label="Resumo">
+      <OrdoMetricCard title="Contas novas" :value="formatNumber(users.new_users_in_period)" scope="period" :scope-label="shortPeriod" subtitle="criadas no período" />
+      <OrdoMetricCard title="Pessoas que rezaram" :value="formatNumber(users.active_users_in_period)" scope="period" :scope-label="shortPeriod" subtitle="ao menos um ofício no período" />
+      <OrdoMetricCard
+        title="Até a primeira oração"
+        :value="firstPrayer?.median_seconds != null ? formatDuration(firstPrayer.median_seconds) : '—'"
+        scope="period"
+        :scope-label="shortPeriod"
+        :subtitle="firstPrayer ? `metade reza antes disso · ${formatPercent(firstPrayer.within_1_hour_rate)} na primeira hora, ${formatPercent(firstPrayer.within_1_day_rate)} no primeiro dia` : 'Aparece quando a API publicar este número.'"
+      />
+      <OrdoMetricCard title="Aparelhos com lembretes" :value="formatNumber(users.active_fcm_tokens)" scope="lifetime" subtitle="usados nos últimos 60 dias" />
+    </section>
 
-    <div v-if="dashboard.users" class="ordo-metrics-grid ordo-metrics-grid--four">
-      <OrdoMetricCard title="Novas pessoas" :value="formatNumber(dashboard.users.new_users_in_period)" subtitle="criadas no período" color="blue" icon="＋" eyebrow="Entrada" />
-      <OrdoMetricCard title="Ativas no período" :value="formatNumber(dashboard.users.active_users_in_period)" subtitle="com ao menos um ofício" color="green" icon="◉" eyebrow="Presença" />
-      <OrdoMetricCard title="Streak atual médio" :value="`${formatDecimal(dashboard.users.avg_current_streak)} d`" :subtitle="`maior médio ${formatDecimal(dashboard.users.avg_longest_streak)} d`" color="orange" icon="⌁" eyebrow="Constância" />
-      <OrdoMetricCard title="Tokens ativos" :value="formatNumber(dashboard.users.active_fcm_tokens)" subtitle="atualizados nos últimos 60 dias" color="purple" icon="⌑" eyebrow="Alcance" />
-    </div>
-
-    <div class="ordo-grid-2">
-      <OrdoChartCard v-if="dashboard.users" :title="allTime ? 'Chegadas ao longo dos meses' : 'Chegadas ao longo dos dias'" :description="allTime ? 'Histórico agrupado por mês para manter a leitura leve.' : 'Dias sem registro são preenchidos com zero para manter a linha contínua.'" icon="＋" icon-color="blue" eyebrow="Novos usuários">
-        <template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'newUsers'">Ver dados ↗</button></template>
-        <OrdoLineChart :labels="dailyNewUserLabels" :data="dailyNewUsers" label="Novos usuários" color="#457180" />
+    <section class="op-row">
+      <OrdoChartCard class="op-grow-2" eyebrow="Chegada" :title="monthly ? 'Contas novas por mês' : 'Contas novas por dia'" :description="monthly ? 'Soma das contas criadas em cada mês.' : 'Dias sem nenhuma conta nova aparecem como zero.'">
+        <template #actions>
+          <div style="text-align: right">
+            <strong class="op-display" style="font-size: 26px">{{ formatNumber(users.new_users_in_period) }}</strong>
+            <span class="op-faint" style="display: block; font-size: 12.5px">média de {{ formatNumber(Math.round(arrivalsAverage)) }} por {{ monthly ? 'mês' : 'dia' }}</span>
+          </div>
+        </template>
+        <OrdoTrendChart :points="arrivals" variant="bars" unit="contas" :height="210" aria-label="Contas novas no período" />
+        <template v-if="!monthly" #footer><span>Barras mais escuras são domingos.</span></template>
       </OrdoChartCard>
-      <OrdoChartCard v-if="dashboard.onboarding" title="Funil de primeiros passos" description="Contagens cumulativas para os usuários criados no intervalo." icon="↓" icon-color="orange" eyebrow="Onboarding">
-        <template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'onboarding'">Ver escolhas ↗</button></template>
-        <div class="ordo-funnel">
-          <div v-for="(step, index) in onboardingSteps" :key="step.label" class="ordo-funnel__step">
-            <div class="ordo-funnel__label"><span>{{ String(index + 1).padStart(2, '0') }} · {{ step.label }}</span><strong>{{ formatNumber(step.value) }}</strong></div>
-            <div class="ordo-bar-track"><span :style="{ width: `${(step.value / maxItemValue(onboardingSteps)) * 100}%` }" /></div>
-            <small v-if="step.rate !== undefined">{{ formatPercent(step.rate) }} da entrada</small>
+
+      <OrdoChartCard class="op-grow-1" eyebrow="Primeiros passos" title="Do cadastro ao hábito" description="Quem chegou no período, passo a passo." scope="period" :scope-label="shortPeriod">
+        <ol style="display: flex; flex-direction: column; gap: 14px; margin: 0; padding: 0; list-style: none">
+          <li v-for="(step, index) in funnel" :key="step.key" style="display: flex; flex-direction: column; gap: 6px">
+            <div class="op-barlist__line">
+              <span class="op-barlist__label"><span class="op-display op-faint">{{ index + 1 }}</span>{{ step.label }}</span>
+              <span class="op-barlist__value"><strong>{{ formatNumber(step.value) }}</strong> · {{ step.rate }}</span>
+            </div>
+            <div class="op-track" style="height: 20px; border-radius: 6px" aria-hidden="true">
+              <span :style="{ width: `${step.pct}%`, borderRadius: '6px', background: index ? 'var(--op-action)' : 'var(--op-ink)' }" />
+            </div>
+            <span v-if="step.drop" style="color: var(--op-warn); font-size: 12.5px">{{ step.drop }}</span>
+          </li>
+        </ol>
+        <template v-if="firstPrayer" #footer>
+          <span>Quem reza, reza cedo: metade faz o primeiro ofício em até <strong style="color: var(--op-ink)">{{ formatDuration(firstPrayer.median_seconds) }}</strong>; três em cada quatro, em até {{ formatDuration(firstPrayer.p75_seconds) }}.</span>
+        </template>
+      </OrdoChartCard>
+    </section>
+
+    <OrdoChartCard eyebrow="Retorno" title="Quem volta a rezar" description="Parte de quem chegou que rezou de novo no dia seguinte, depois de uma semana e depois de um mês. Só conta quem já teve tempo para voltar.">
+      <template #actions>
+        <div class="op-seg op-seg--small" role="group" aria-label="Agrupar retorno">
+          <button type="button" :class="{ 'is-on': retentionView === 'weeks' }" :aria-pressed="retentionView === 'weeks'" @click="retentionView = 'weeks'">Por semana</button>
+          <button type="button" :class="{ 'is-on': retentionView === 'books' }" :aria-pressed="retentionView === 'books'" :disabled="!segmentsAvailable" @click="retentionView = 'books'">Por livro</button>
+          <button type="button" :class="{ 'is-on': retentionView === 'modes' }" :aria-pressed="retentionView === 'modes'" :disabled="!segmentsAvailable" @click="retentionView = 'modes'">Por modo</button>
+        </div>
+      </template>
+      <div class="op-table-wrap">
+        <table class="op-table op-heat" style="min-width: 560px">
+          <thead>
+            <tr>
+              <th scope="col">{{ retentionView === 'weeks' ? 'Chegaram' : retentionView === 'books' ? 'Livro escolhido' : 'Modo do app' }}</th>
+              <th scope="col" class="is-num">Pessoas</th>
+              <th scope="col" style="text-align: center">No dia seguinte</th>
+              <th scope="col" style="text-align: center">Após 1 semana</th>
+              <th scope="col" style="text-align: center">Após 1 mês</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="row in retentionRows" :key="row.key">
+              <th scope="row" style="white-space: nowrap"><span style="display: inline-flex; align-items: center; gap: 8px">{{ row.label }} <OrdoLocBadge :code="row.code" /></span></th>
+              <td class="is-num">{{ formatNumber(row.users) }}</td>
+              <td v-for="(cell, index) in row.cells" :key="index" class="op-heat__cell" :class="{ 'is-open': cell.open }" :style="cell.open ? undefined : { background: cell.bg, color: cell.ink }">
+                {{ cell.label }}<small v-if="cell.detail">{{ cell.detail }}</small>
+              </td>
+            </tr>
+            <tr v-if="!retentionRows.length"><td colspan="5" class="op-faint">Ninguém chegou neste período.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <template #footer>
+        <span>“Ainda não” quer dizer que ninguém do grupo teve tempo de voltar.</span>
+        <span class="op-legend" aria-hidden="true">
+          <span>0%</span>
+          <span style="display: flex; gap: 2px"><i v-for="tone in HEAT" :key="tone.bg" class="op-swatch" style="width: 18px" :style="{ background: tone.bg }" /></span>
+          <span>60%</span>
+        </span>
+      </template>
+    </OrdoChartCard>
+
+    <OrdoCountryMap v-if="geography" :geography="geography" />
+
+    <section class="op-grid" style="--op-min: 320px">
+      <OrdoChartCard eyebrow="Primeiro acesso" title="O que escolhem ao chegar" description="A escolha inicial, que pode mudar depois." scope="period" :scope-label="shortPeriod">
+        <div v-if="modes.length" style="display: flex; flex-direction: column; gap: 8px">
+          <span class="op-eyebrow">Modo do app</span>
+          <div class="op-stack" aria-hidden="true">
+            <span v-for="mode in modes" :key="mode.key" :style="{ flex: `${mode.value} 1 0`, background: mode.color }" />
+          </div>
+          <div class="op-legend">
+            <span v-for="mode in modes" :key="mode.key"><i class="op-swatch" :style="{ background: mode.color }" />{{ mode.label }} <strong style="color: var(--op-ink)">{{ mode.share }}%</strong></span>
           </div>
         </div>
+        <span class="op-eyebrow" style="margin-top: 6px">Livro de oração</span>
+        <OrdoBarList :items="chosenBooks" :limit="6" :thickness="6" />
       </OrdoChartCard>
-    </div>
-
-    <div v-if="dashboard.retention" class="ordo-table-card">
-      <div class="ordo-table-card__header"><div><p class="ordo-kicker">Retenção</p><h2>Coortes por semana de criação</h2></div><div class="ordo-table-card__header-actions"><span v-if="activeCohort" class="ordo-scope-label">última coorte: {{ formatDate(activeCohort.week_start) }}</span><button type="button" class="ordo-card-action" @click="activeExplorer = 'retention'">Abrir tabela ↗</button></div></div>
-      <div class="ordo-table-wrap"><table><thead><tr><th>Semana</th><th>Pessoas</th><th>D1</th><th>D7</th><th>D30</th></tr></thead><tbody><tr v-for="cohort in retentionRows" :key="cohort.week_start"><td>{{ formatDate(cohort.week_start) }}</td><td>{{ formatNumber(cohort.users) }}</td><td><strong>{{ formatPercent(cohort.d1?.rate) }}</strong><span>{{ formatNumber(cohort.d1?.users) }} pessoas</span></td><td><strong>{{ formatPercent(cohort.d7?.rate) }}</strong><span>{{ formatNumber(cohort.d7?.users) }} pessoas</span></td><td><strong>{{ formatPercent(cohort.d30?.rate) }}</strong><span>{{ formatNumber(cohort.d30?.users) }} pessoas</span></td></tr></tbody></table></div>
-    </div>
-
-    <OrdoCountryMap v-if="dashboard.geography" :geography="dashboard.geography" />
-
-    <div class="ordo-grid-2">
-      <OrdoChartCard v-if="dashboard.prayer_books || dashboard.onboarding" title="Escolhas no onboarding" description="Preferências iniciais, separadas do uso real nas completions." icon="⌂" icon-color="purple" eyebrow="Preferências">
-        <template #actions><button type="button" class="ordo-card-action" @click="activeExplorer = 'onboarding'">Ver tudo ↗</button></template>
-        <div class="ordo-mini-bars"><div v-for="item in onboardingChoiceItems.slice(0, 6)" :key="item.key"><span>{{ item.label }}</span><strong>{{ formatNumber(item.value) }}</strong><i><b :style="{ width: `${(item.value / maxItemValue(onboardingChoiceItems)) * 100}%` }" /></i></div><div v-for="item in languageItems.slice(0, 3)" :key="`lang-${item.key}`"><span>{{ item.label }}</span><strong>{{ formatNumber(item.value) }}</strong><i><b class="is-ochre" :style="{ width: `${(item.value / maxItemValue(languageItems)) * 100}%` }" /></i></div></div>
+      <OrdoChartCard eyebrow="Idiomas" title="Em que língua rezam" description="O idioma do livro escolhido no primeiro acesso.">
+        <OrdoBarList :items="languages" :limit="6" :thickness="6" />
       </OrdoChartCard>
-    </div>
-  </section>
-
-  <OrdoDataExplorerModal
-    v-if="activeExplorer === 'newUsers'"
-    title="Novos usuários"
-    description="Valores diários originais de daily_new_users; a linha principal pode agrupá-los por mês no modo histórico."
-    :columns="newUserColumns"
-    :rows="newUserRows"
-    default-sort-key="date"
-    default-sort-direction="asc"
-    @close="activeExplorer = null"
-  />
-  <OrdoDataExplorerModal
-    v-else-if="activeExplorer === 'onboarding'"
-    title="Escolhas do onboarding"
-    description="A API entrega modos, prayer books, versões bíblicas e idiomas; todos ficam pesquisáveis aqui."
-    :columns="onboardingColumns"
-    :rows="onboardingRows"
-    :filters="onboardingFilters"
-    search-placeholder="Buscar escolha ou código…"
-    default-sort-key="value"
-    :format-value="formatGrowthExplorerValue"
-    @close="activeExplorer = null"
-  />
-  <OrdoDataExplorerModal
-    v-else-if="activeExplorer === 'retention'"
-    title="Retenção por coorte"
-    description="Todas as coortes e taxas D1, D7 e D30 retornadas para o período."
-    :columns="retentionColumns"
-    :rows="retentionExplorerRows"
-    default-sort-key="week_start"
-    default-sort-direction="asc"
-    :format-value="formatGrowthExplorerValue"
-    @close="activeExplorer = null"
-  />
-  <OrdoDataExplorerModal
-    v-else-if="activeExplorer === 'geography'"
-    title="Geografia e idioma"
-    description="Resumo de cobertura e a distribuição completa por país e idioma."
-    :columns="geographyColumns"
-    :rows="geographyRows"
-    :filters="geographyFilters"
-    search-placeholder="Buscar país, idioma ou código…"
-    default-sort-key="value"
-    :format-value="formatGrowthExplorerValue"
-    @close="activeExplorer = null"
-  />
+    </section>
+  </div>
 </template>

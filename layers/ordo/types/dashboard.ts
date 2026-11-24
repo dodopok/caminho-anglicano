@@ -19,7 +19,8 @@ export const DASHBOARD_SECTION_NAMES = [
   'weekly_prayers',
   'favorites',
   'api',
-  'developers'
+  'developers',
+  'liturgical_today'
 ] as const
 
 export type DashboardSectionName = typeof DASHBOARD_SECTION_NAMES[number]
@@ -65,6 +66,7 @@ export interface DashboardUsers extends DashboardSectionMeta {
   top_streakers?: TopStreaker[]
   avg_current_streak?: number
   avg_longest_streak?: number
+  current_streak_buckets?: Array<{ min_days: number; users?: number }>
 }
 
 export interface TopCompleter {
@@ -444,6 +446,17 @@ export interface DashboardNotifications extends DashboardSectionMeta {
   failures_last_24_hours?: number
   delivery_status_counts?: CountMap
   delivery_status_by_platform?: Record<string, CountMap>
+  conversion_by_type?: NotificationConversion[]
+  reminder_conversion?: NotificationConversion | null
+}
+
+/** Notifications of a type followed by an office from the same person within the window. */
+export interface NotificationConversion {
+  notification_type: string
+  sent?: number
+  followed_by_prayer?: number
+  rate?: number
+  window_minutes?: number
 }
 
 export interface TopAdoptedRule {
@@ -497,6 +510,13 @@ export interface DashboardEngagement extends DashboardSectionMeta {
   dau_wau_ratio?: number
   wau_mau_ratio?: number
   daily_active_trend?: DailyActiveUser[]
+  /** People who prayed on at least `min_active_days` of the last `window_days`. */
+  core_users?: {
+    count?: number
+    window_days?: number
+    min_active_days?: number
+    share_of_wau?: number
+  }
 }
 
 export interface DashboardModerationRosaries {
@@ -510,6 +530,9 @@ export interface DashboardModerationRosaries {
   reentries_in_period?: number
   total_reentries?: number
   approved_without_strapi?: number
+  reviewed_per_day?: Array<{ date: string; approved?: number; rejected?: number }>
+  average_reviews_per_day?: number
+  estimated_days_to_clear?: number | null
 }
 
 export interface DashboardModerationLifeRules {
@@ -552,16 +575,40 @@ export interface DashboardHealth extends DashboardSectionMeta {
   }
 }
 
+/**
+ * `eligible` counts who has been around long enough for the window to have
+ * closed; `eligible_rate` divides by them, so a week that arrived yesterday
+ * does not read as zero retention.
+ */
+export interface RetentionWindow {
+  users?: number
+  rate?: number
+  eligible?: number
+  eligible_rate?: number | null
+}
+
+export interface RetentionSegment {
+  prayer_book_code?: string | null
+  prayer_book_name?: string
+  mode?: string
+  users?: number
+  d1?: RetentionWindow
+  d7?: RetentionWindow
+  d30?: RetentionWindow
+}
+
 export interface RetentionCohort {
   week_start: string
   users?: number
-  d1?: { users?: number; rate?: number }
-  d7?: { users?: number; rate?: number }
-  d30?: { users?: number; rate?: number }
+  d1?: RetentionWindow
+  d7?: RetentionWindow
+  d30?: RetentionWindow
 }
 
 export interface DashboardRetention extends DashboardSectionMeta {
   cohorts?: RetentionCohort[]
+  by_prayer_book?: RetentionSegment[]
+  by_mode?: RetentionSegment[]
 }
 
 export interface DashboardOnboarding extends DashboardSectionMeta {
@@ -578,6 +625,14 @@ export interface DashboardOnboarding extends DashboardSectionMeta {
     bible_versions?: CountMap
     languages?: CountMap
   }
+  /** From account creation to the first office, for people who arrived in the period. */
+  time_to_first_prayer?: {
+    users_with_first_prayer?: number
+    median_seconds?: number | null
+    p75_seconds?: number | null
+    within_1_hour_rate?: number
+    within_1_day_rate?: number
+  }
 }
 
 export interface DashboardPremium extends DashboardSectionMeta {
@@ -591,6 +646,25 @@ export interface DashboardPremium extends DashboardSectionMeta {
   renewal_rate?: number | null
   renewal_rate_available?: boolean
   renewal_rate_note?: string | null
+  /** Ordo+ among the people who actually prayed in the period. */
+  active_users_in_period?: number
+  premium_among_active?: number
+  premium_share_of_active?: number
+}
+
+/** Today in the default prayer book, for the season card in the rail. */
+export interface DashboardLiturgicalToday extends DashboardSectionMeta {
+  date?: string
+  prayer_book_code?: string
+  season?: string | null
+  color_code?: string | null
+  color_label?: string | null
+  week?: number | null
+  proper?: number | null
+  cycle?: string | null
+  season_ends_on?: string | null
+  days_remaining_in_season?: number | null
+  celebration_name?: string | null
 }
 
 export interface CountryBreakdown {
@@ -738,6 +812,7 @@ export interface DashboardData {
   favorites?: DashboardFavorites
   api?: DashboardApi
   developers?: DashboardDevelopers
+  liturgical_today?: DashboardLiturgicalToday
 }
 
 export interface DashboardResponse {
@@ -828,6 +903,20 @@ export interface CustomRosaryAuthor {
   id: number | string
   name: string
   email?: string
+  /** Everything this person has asked to share, across the whole history. */
+  submissions_count?: number
+  approved_count?: number
+  rejected_count?: number
+  pending_count?: number
+}
+
+/** A title that looks like the same prayer, found by the API. */
+export interface CustomRosarySimilarTitle {
+  title: string
+  source: 'catalog' | 'community' | 'queue' | string
+  score?: number
+  id?: number | string | null
+  strapi_slug?: string | null
 }
 
 export interface CustomRosaryStep {
@@ -876,6 +965,7 @@ export interface CustomRosaryPrayer {
   expanded_steps_count?: number
   blocks?: CustomRosaryBlock[]
   expanded_steps?: CustomRosaryStep[]
+  similar_titles?: CustomRosarySimilarTitle[]
 }
 
 export interface CustomRosaryListResponse {

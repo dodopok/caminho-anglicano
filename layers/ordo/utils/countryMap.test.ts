@@ -28,9 +28,9 @@ describe('country map helpers', () => {
   })
 
   it('never paints zero as a data color and uses a continuous scale', () => {
-    expect(countryFill(0, 10)).toBe('#f7faf7')
+    expect(countryFill(0, 10)).toBe('#e9e5da')
     expect(countryFill(1, 10)).not.toBe(countryFill(2, 10))
-    expect(countryFill(10, 10)).toBe('rgb(25, 87, 126)')
+    expect(countryFill(10, 10)).toBe('rgb(23, 69, 168)')
     expect(countryPercent(0, 0)).toBe(0)
   })
 })

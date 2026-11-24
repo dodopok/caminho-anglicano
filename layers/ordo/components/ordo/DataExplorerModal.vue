@@ -263,8 +263,8 @@ watch(() => props.remoteSearch, value => {
   align-items: flex-end;
   gap: 10px;
   padding: 17px 26px 13px;
-  border-bottom: 1px solid #e2e9df;
-  background: #f3f7f1;
+  border-bottom: 1px solid var(--op-hair);
+  background: var(--op-paper);
 }
 
 .ordo-data-modal__search,
@@ -272,8 +272,8 @@ watch(() => props.remoteSearch, value => {
   display: grid;
   min-width: 0;
   gap: 5px;
-  color: #718073;
-  font-size: 10px;
+  color: var(--op-ink-soft);
+  font-size: 12px;
   font-weight: 800;
 }
 
@@ -289,13 +289,13 @@ watch(() => props.remoteSearch, value => {
 .ordo-data-modal__filter select {
   min-width: 0;
   padding: 9px 10px;
-  border: 1px solid #dbe4d8;
+  border: 1px solid rgba(13, 39, 68, .16);
   border-radius: 9px;
   outline: 0;
   background: #fff;
-  color: #233328;
+  color: var(--op-ink);
   font: inherit;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .ordo-data-modal__count {
@@ -303,13 +303,13 @@ watch(() => props.remoteSearch, value => {
   flex: 0 0 auto;
   gap: 2px;
   min-width: 90px;
-  color: #8d998e;
-  font-size: 10px;
+  color: var(--op-ink-faint);
+  font-size: 12px;
   text-align: right;
 }
 
 .ordo-data-modal__count strong {
-  color: #496451;
+  color: var(--op-action);
   font-family: 'Fraunces', Georgia, serif;
   font-size: 20px;
   font-weight: 600;
@@ -317,8 +317,8 @@ watch(() => props.remoteSearch, value => {
 
 .ordo-data-modal__loading {
   padding: 8px 26px 0;
-  color: #9a6c36;
-  font-size: 10px;
+  color: var(--op-gold-ink);
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: .06em;
   text-transform: uppercase;
@@ -326,8 +326,8 @@ watch(() => props.remoteSearch, value => {
 
 .ordo-data-modal__error {
   margin: 8px 26px 0;
-  color: #a15f57;
-  font-size: 11px;
+  color: var(--op-danger);
+  font-size: 13px;
   line-height: 1.4;
 }
 
@@ -348,10 +348,10 @@ watch(() => props.remoteSearch, value => {
   z-index: 1;
   top: 0;
   padding: 11px 10px;
-  border-bottom: 1px solid #dfe7dd;
-  background: #f8faf5;
-  color: #97a296;
-  font-size: 10px;
+  border-bottom: 1px solid var(--op-hair);
+  background: var(--op-card-quiet);
+  color: var(--op-ink-faint);
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: .1em;
   text-align: left;
@@ -375,7 +375,7 @@ watch(() => props.remoteSearch, value => {
 }
 
 .ordo-data-modal__table th button span {
-  color: #c19258;
+  color: var(--op-gold);
   font-size: 13px;
   letter-spacing: 0;
 }
@@ -387,8 +387,8 @@ watch(() => props.remoteSearch, value => {
 
 .ordo-data-modal__table td {
   padding: 12px 10px;
-  border-bottom: 1px solid #edf1eb;
-  color: #59685b;
+  border-bottom: 1px solid var(--op-paper);
+  color: var(--op-ink-soft);
   font-size: 12px;
   line-height: 1.35;
   vertical-align: top;
@@ -402,31 +402,31 @@ watch(() => props.remoteSearch, value => {
   padding: 0;
   border: 0;
   background: transparent;
-  color: var(--moss-deep);
+  color: var(--op-ink);
   cursor: pointer;
   font: inherit;
   font-weight: 700;
   text-align: left;
   text-decoration: underline;
-  text-decoration-color: rgba(73, 100, 81, .28);
+  text-decoration-color: rgba(23, 84, 207, .3);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
 .ordo-data-modal__row-link:hover,
 .ordo-data-modal__row-link:focus-visible {
-  color: #9a6c36;
+  color: var(--op-gold-ink);
   text-decoration-color: currentColor;
 }
 
 .ordo-data-modal__row-link span {
-  color: #c19258;
+  color: var(--op-gold);
   font-size: 13px;
   text-decoration: none;
 }
 
 .ordo-data-modal__table td:first-child {
-  color: #233328;
+  color: var(--op-ink);
   font-weight: 700;
 }
 
@@ -436,10 +436,10 @@ watch(() => props.remoteSearch, value => {
 
 .ordo-data-modal__pagination {
   margin: 0 26px;
-  border-top: 1px solid #edf1eb;
+  border-top: 1px solid var(--op-paper);
 }
 
-@media (max-width: 720px) {
+@media (max-width:720px) {
   .ordo-data-modal__toolbar {
     align-items: stretch;
     flex-wrap: wrap;

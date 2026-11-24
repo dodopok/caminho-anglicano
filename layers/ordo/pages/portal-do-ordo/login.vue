@@ -1,7 +1,19 @@
 <script setup lang="ts">
+import '../../assets/portal.css'
+
 definePageMeta({
   middleware: 'ordo-auth',
   layout: false
+})
+
+useHead({
+  title: 'Entrar · Portal do Ordo',
+  meta: [{ name: 'robots', content: 'noindex, nofollow' }],
+  link: [
+    { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Raleway:wght@400;500;600;700&display=swap' }
+  ]
 })
 
 const { loginWithGoogle, error, loading } = useFirebaseAuth()
@@ -18,32 +30,95 @@ const handleGoogleLogin = async () => {
 
 <template>
   <div class="ordo-login">
-    <div class="ordo-login__texture" aria-hidden="true" />
-    <div class="ordo-login__shell">
-      <aside class="ordo-login__aside">
-        <div class="ordo-login__brand"><span>✦</span><div><small>Caminho Anglicano</small><strong>Portal do Ordo</strong></div></div>
-        <div class="ordo-login__quote"><span class="ordo-login__quote-mark">“</span><p>Uma leitura cuidadosa transforma números em cuidado.</p><small>Painel administrativo · acesso restrito</small></div>
-        <div class="ordo-login__seal"><span>⌁</span><small>Ad maiorem<br>Dei gloriam</small></div>
-      </aside>
+    <section class="login-aside" aria-label="Ordo">
+      <svg class="login-aside__arch" viewBox="0 0 400 560" aria-hidden="true">
+        <defs>
+          <clipPath id="login-arch"><path d="M24 560V262C24 132 104 48 200 8c96 40 176 124 176 254v298z" /></clipPath>
+        </defs>
+        <g clip-path="url(#login-arch)">
+          <rect width="400" height="560" fill="#112e50" />
+          <circle cx="200" cy="250" r="230" fill="#14365e" />
+          <circle cx="200" cy="250" r="160" fill="#18406e" />
+          <circle cx="200" cy="250" r="92" fill="#1d4b80" />
+        </g>
+        <path d="M24 560V262C24 132 104 48 200 8c96 40 176 124 176 254v298z" fill="none" stroke="#a8801a" stroke-width="2" stroke-opacity=".55" />
+        <path d="M200 8v552M24 300h352" stroke="#0d2744" stroke-width="16" />
+      </svg>
 
-      <main class="ordo-login__card">
-        <div class="ordo-login__card-top"><span class="ordo-login__eyebrow">Acesso seguro</span><span class="ordo-login__status"><i /> Firebase</span></div>
-        <div class="ordo-login__heading"><span class="ordo-login__glyph">◒</span><h1>Bem-vindo<br>de volta.</h1><p>Entre com a conta Google autorizada para acompanhar o ritmo do Ordo.</p></div>
-        <div v-if="error" class="ordo-login__error" role="alert"><span>!</span>{{ error }}</div>
-        <button type="button" class="ordo-login__google" :disabled="loading" @click="handleGoogleLogin"><span v-if="!loading" class="ordo-login__google-content"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Continuar com Google</span><span v-else class="ordo-login__loading"><i /> Autenticando…</span></button>
-        <p class="ordo-login__privacy">O token é enviado apenas à API administrativa do Ordo.<br>Você pode sair a qualquer momento.</p>
-      </main>
-    </div>
+      <div class="login-aside__brand">
+        <img src="/ordo/icon.png" alt="" width="48" height="48">
+        <div>
+          <strong>Ordo</strong>
+          <span>Portal · Caminho Anglicano</span>
+        </div>
+      </div>
+
+      <div class="login-aside__quote">
+        <p>Uma leitura cuidadosa transforma números em cuidado.</p>
+        <i aria-hidden="true" />
+        <span>O painel de quem cuida do Ordo: o ritmo da oração, as filas de revisão e a narração do ofício, num só lugar.</span>
+      </div>
+    </section>
+
+    <main class="login-main" aria-labelledby="login-title">
+      <div class="login-main__inner">
+        <div class="login-main__head">
+          <span class="op-pill op-pill--info">Acesso restrito</span>
+          <h1 id="login-title">Bem-vindo de volta.</h1>
+          <p>Entre com a conta Google autorizada para acompanhar o ritmo do Ordo.</p>
+        </div>
+
+        <div class="op-card login-main__card">
+          <button type="button" class="login-google" :disabled="loading" @click="handleGoogleLogin">
+            <span v-if="loading" class="login-google__spinner" aria-hidden="true" />
+            <svg v-else viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" /><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" /><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" /><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" /></svg>
+            {{ loading ? 'Entrando…' : 'Continuar com Google' }}
+          </button>
+          <div v-if="error" class="op-inline-error" role="alert">{{ error }}</div>
+        </div>
+
+        <p class="login-main__privacy">O token vai só para a API administrativa do Ordo. Você pode sair a qualquer momento.</p>
+        <div class="login-main__foot">
+          <span>Ordo · Caminho Anglicano</span>
+          <a href="https://www.oficio.app" class="op-link">Ir para oficio.app</a>
+        </div>
+      </div>
+    </main>
   </div>
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap');
-.ordo-login { --ink: #233328; --moss: #496451; --deep: #20372a; position: relative; display: grid; min-height: 100vh; overflow: hidden; place-items: center; background: #dfe7dc; color: var(--ink); font-family: 'DM Sans', sans-serif; }
-.ordo-login__texture { position: absolute; inset: 0; opacity: .38; background-image: linear-gradient(rgba(73,100,81,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(73,100,81,.06) 1px, transparent 1px); background-size: 48px 48px; mask-image: radial-gradient(circle at center, black, transparent 78%); }
-.ordo-login__shell { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(260px, .78fr) minmax(350px, 1fr); width: min(900px, calc(100% - 36px)); min-height: 525px; overflow: hidden; border: 1px solid rgba(255,255,255,.65); border-radius: 26px; background: rgba(248,250,245,.72); box-shadow: 0 30px 90px rgba(32,55,42,.16); }
-.ordo-login__aside { position: relative; display: flex; flex-direction: column; justify-content: space-between; padding: 31px; overflow: hidden; background: var(--deep); color: #f3f6ef; }.ordo-login__aside::before { position: absolute; right: -100px; bottom: -100px; width: 320px; height: 320px; border: 1px solid rgba(234,212,162,.24); border-radius: 50%; box-shadow: 0 0 0 24px rgba(234,212,162,.05), 0 0 0 50px rgba(234,212,162,.04); content: ''; }.ordo-login__brand,.ordo-login__brand div { display: flex; }.ordo-login__brand { position: relative; z-index: 1; align-items: center; gap: 11px; }.ordo-login__brand>span { display: grid; width: 35px; height: 35px; place-items: center; border: 1px solid rgba(234,212,162,.45); border-radius: 11px; color: #e7cf9f; }.ordo-login__brand div { flex-direction: column; gap: 3px; }.ordo-login__brand small { color: #a8b9a7; font-size: 8px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }.ordo-login__brand strong { font-family: 'Fraunces', Georgia, serif; font-size: 18px; font-weight: 600; letter-spacing: -.03em; }.ordo-login__quote { position: relative; z-index: 1; max-width: 255px; }.ordo-login__quote-mark { display: block; height: 34px; color: #e7cf9f; font-family: Georgia, serif; font-size: 58px; line-height: .9; }.ordo-login__quote p { margin: 5px 0 14px; font-family: 'Fraunces', Georgia, serif; font-size: 29px; font-weight: 500; letter-spacing: -.04em; line-height: 1.02; }.ordo-login__quote small { color: #a8b9a7; font-size: 10px; }.ordo-login__seal { position: relative; z-index: 1; display: flex; align-items: center; gap: 9px; color: #a8b9a7; }.ordo-login__seal span { display: grid; width: 27px; height: 27px; place-items: center; border: 1px solid rgba(234,212,162,.35); border-radius: 50%; color: #e7cf9f; }.ordo-login__seal small { font-size: 9px; line-height: 1.25; }
-.ordo-login__card { display: flex; flex-direction: column; justify-content: center; padding: 45px 58px; background: rgba(251,252,248,.82); }.ordo-login__card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }.ordo-login__eyebrow { color: #829082; font-size: 9px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }.ordo-login__status { display: inline-flex; align-items: center; gap: 6px; padding: 6px 8px; border: 1px solid #dbe5d9; border-radius: 99px; color: #7f8d80; font-size: 9px; font-weight: 700; }.ordo-login__status i { width: 6px; height: 6px; border-radius: 50%; background: #6d9b72; }.ordo-login__heading { margin: 45px 0 28px; }.ordo-login__glyph { display: grid; width: 38px; height: 38px; margin-bottom: 16px; place-items: center; border-radius: 13px; background: #e7f0e5; color: var(--moss); font-size: 20px; }.ordo-login__heading h1 { margin: 0; color: var(--deep); font-family: 'Fraunces', Georgia, serif; font-size: clamp(42px, 5vw, 58px); font-weight: 600; letter-spacing: -.06em; line-height: .89; }.ordo-login__heading p { max-width: 340px; margin: 18px 0 0; color: #7d8a7f; font-size: 12px; line-height: 1.55; }.ordo-login__error { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; padding: 10px 11px; border: 1px solid #efd8d1; border-radius: 10px; background: #fdf3f0; color: #a5675e; font-size: 11px; line-height: 1.4; }.ordo-login__error span { display: grid; flex: 0 0 auto; width: 18px; height: 18px; place-items: center; border-radius: 50%; background: #f3d8d0; color: #a35c50; font-weight: 800; }.ordo-login__google { width: 100%; min-height: 48px; border: 1px solid #d4ddd2; border-radius: 11px; background: #fff; color: #3c4043; cursor: pointer; font: inherit; font-size: 12px; font-weight: 700; box-shadow: 0 6px 14px rgba(38,55,44,.06); transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease; }.ordo-login__google:hover:not(:disabled) { background: #f9fbf8; box-shadow: 0 10px 22px rgba(38,55,44,.1); transform: translateY(-1px); }.ordo-login__google:disabled { cursor: wait; opacity: .65; }.ordo-login__google-content,.ordo-login__loading { display: inline-flex; align-items: center; justify-content: center; gap: 10px; }.ordo-login__google svg { width: 18px; height: 18px; }.ordo-login__loading i { width: 15px; height: 15px; border: 2px solid #cbd8c9; border-top-color: var(--moss); border-radius: 50%; animation: ordo-login-spin 800ms linear infinite; }.ordo-login__privacy { margin: 20px 0 0; color: #a0aaa0; font-size: 9px; line-height: 1.5; text-align: center; }
-@keyframes ordo-login-spin { to { transform: rotate(360deg); } }
-@media (max-width: 680px) { .ordo-login__shell { grid-template-columns: 1fr; width: min(440px, calc(100% - 24px)); min-height: 0; }.ordo-login__aside { min-height: 190px; padding: 23px; }.ordo-login__quote { margin-top: 35px; }.ordo-login__quote p { font-size: 23px; }.ordo-login__seal { display: none; }.ordo-login__card { padding: 31px 25px 29px; }.ordo-login__heading { margin: 33px 0 24px; } }
+.login-aside { position: relative; display: flex; flex: 1 1 520px; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 100vh; overflow: hidden; padding: 48px 56px; background: var(--op-rail); color: var(--op-rail-ink); }
+.login-aside__arch { position: absolute; right: -150px; bottom: -40px; width: 460px; height: 644px; opacity: .85; }
+.login-aside__brand { position: relative; display: flex; align-items: center; gap: 14px; }
+.login-aside__brand img { width: 48px; height: 48px; border-radius: 12px; box-shadow: 0 0 0 1px rgba(251, 248, 240, .2); }
+.login-aside__brand div { display: flex; flex-direction: column; gap: 4px; }
+.login-aside__brand strong { font-family: var(--op-font-display); font-size: 30px; font-weight: 600; line-height: 1; }
+.login-aside__brand span { color: var(--op-gold-light); font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+.login-aside__quote { position: relative; display: flex; flex-direction: column; gap: 18px; max-width: 400px; margin-bottom: 40px; }
+.login-aside__quote p { margin: 0; font-family: var(--op-font-display); font-size: 40px; font-style: italic; font-weight: 500; line-height: 1.15; }
+.login-aside__quote i { width: 56px; height: 3px; background: var(--op-gold); }
+.login-aside__quote span { color: var(--op-rail-soft); font-size: 15px; line-height: 1.6; }
+.login-main { display: grid; flex: 1 1 460px; place-items: center; padding: 48px 24px; }
+.login-main__inner { display: flex; flex-direction: column; gap: 26px; width: 100%; max-width: 420px; }
+.login-main__head { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.login-main__head h1 { margin: 0; font-family: var(--op-font-display); font-size: 44px; font-weight: 500; line-height: 1.08; letter-spacing: -.02em; }
+.login-main__head p { margin: 0; color: var(--op-ink-soft); font-size: 16px; line-height: 1.6; }
+.login-main__card { display: flex; flex-direction: column; gap: 14px; }
+.login-google { display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; min-height: 54px; padding: 0 22px; border: 1.5px solid rgba(13, 39, 68, .16); border-radius: 999px; background: var(--op-card); color: var(--op-ink); cursor: pointer; font-size: 15.5px; font-weight: 600; transition: transform .15s, border-color .15s, box-shadow .15s; }
+.login-google:hover { border-color: var(--op-action); box-shadow: 0 10px 24px -14px rgba(23, 84, 207, .6); transform: translateY(-1px); }
+.login-google:disabled { cursor: wait; opacity: .7; transform: none; }
+.login-google__spinner { width: 18px; height: 18px; border: 2px solid var(--op-wash); border-top-color: var(--op-action); border-radius: 999px; animation: login-spin .8s linear infinite; }
+.login-main__privacy { margin: 0; color: var(--op-ink-faint); font-size: 13px; line-height: 1.6; }
+.login-main__foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-top: 20px; border-top: 1px solid var(--op-hair); color: var(--op-ink-faint); font-size: 13px; }
+@keyframes login-spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 900px) {
+  .login-aside { min-height: 0; padding: 28px 24px; }
+  .login-aside__arch { width: 260px; height: 364px; right: -60px; bottom: -80px; opacity: .6; }
+  .login-aside__quote { margin-bottom: 0; }
+  .login-aside__quote p { font-size: 28px; }
+  .login-aside__quote span { display: none; }
+  .login-main__head h1 { font-size: 34px; }
+}
 </style>

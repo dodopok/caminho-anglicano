@@ -73,7 +73,7 @@ const countryAriaLabel = (location: WorldLocation) => {
   const datum = dataByCode.value.get(location.id.toLowerCase())
   const count = datum?.count || 0
   const percent = datum?.percent || 0
-  return `${countryLabel(location)}: ${displayCount(count)} ${count === 1 ? 'usuário' : 'usuários'}, ${displayPercent(percent)} da base`
+  return `${countryLabel(location)}: ${displayCount(count)} ${count === 1 ? 'pessoa' : 'pessoas'}, ${displayPercent(percent)} da base`
 }
 
 const setHovered = (code: string | null) => { hoveredCode.value = code }
@@ -88,26 +88,26 @@ const toggleSelected = (code: string) => {
     <header class="ordo-country-map__header">
       <div>
         <p class="ordo-kicker">Geografia</p>
-        <h2 id="ordo-country-map-title">De onde as pessoas rezam.</h2>
-        <p class="ordo-country-map__description">País declarado tem prioridade; o timezone só entra quando aponta para um único país.</p>
+        <h2 id="ordo-country-map-title">De onde se reza</h2>
+        <p class="ordo-country-map__description">Vale o país que a pessoa informou. Quando ela não informou, usamos o fuso horário, mas só se ele apontar para um único país.</p>
       </div>
-      <span class="ordo-scope-label">{{ geography.scope === 'lifetime' ? 'base total' : 'resumo disponível' }}</span>
+      <span class="op-tag op-tag--lifetime"><i aria-hidden="true" />Base total</span>
     </header>
 
     <div class="ordo-country-map__metrics" aria-label="Resumo da cobertura geográfica">
-      <div><span>Cobertura declarada</span><strong>{{ explicitCoverage == null ? '—' : displayPercent(explicitCoverage) }}</strong><small>país informado pela pessoa</small></div>
-      <div><span>Cobertura resolvida</span><strong>{{ resolvedCoverage == null ? '—' : displayPercent(resolvedCoverage) }}</strong><small>declarada + timezone unívoco</small></div>
-      <div><span>País declarado</span><strong>{{ displayCount(explicitCountryUsers) }}</strong><small>pessoas na base</small></div>
-      <div><span>País inferido</span><strong>{{ displayCount(timezoneInferredUsers) }}</strong><small>timezone unívoco</small></div>
-      <div><span>Sem localização</span><strong>{{ displayCount(unresolvedCountryUsers) }}</strong><small>ambíguo ou desconhecido</small></div>
+      <div><span>Informaram o país</span><strong>{{ explicitCoverage == null ? '—' : displayPercent(explicitCoverage) }}</strong><small>da base</small></div>
+      <div><span>Com país conhecido</span><strong>{{ resolvedCoverage == null ? '—' : displayPercent(resolvedCoverage) }}</strong><small>informado ou pelo fuso</small></div>
+      <div><span>Informaram</span><strong>{{ displayCount(explicitCountryUsers) }}</strong><small>pessoas</small></div>
+      <div><span>Pelo fuso horário</span><strong>{{ displayCount(timezoneInferredUsers) }}</strong><small>pessoas</small></div>
+      <div><span>Sem localização</span><strong>{{ displayCount(unresolvedCountryUsers) }}</strong><small>fuso ambíguo ou ausente</small></div>
     </div>
 
     <div class="ordo-country-map__body">
       <div class="ordo-country-map__visual">
-        <div class="ordo-country-map__legend" aria-label="Legenda: branco representa nenhum usuário e azul mais escuro representa mais usuários">
-          <span>0 usuários</span>
+        <div class="ordo-country-map__legend" aria-label="Legenda: bege representa ninguém e azul mais escuro representa mais pessoas">
+          <span>Nenhuma</span>
           <i aria-hidden="true" />
-          <span>{{ displayCount(maximumCount) }} no máximo</span>
+          <span>{{ displayCount(maximumCount) }} pessoas</span>
         </div>
 
         <div class="ordo-country-map__canvas">
@@ -136,7 +136,7 @@ const toggleSelected = (code: string) => {
 
           <div v-if="activeCountry" class="ordo-country-map__tooltip" role="status" aria-live="polite">
             <strong>{{ activeCountry.name }}</strong>
-            <span>{{ displayCount(activeCountry.count) }} {{ activeCountry.count === 1 ? 'usuário' : 'usuários' }}</span>
+            <span>{{ displayCount(activeCountry.count) }} {{ activeCountry.count === 1 ? 'pessoa' : 'pessoas' }}</span>
             <small>{{ displayPercent(activeCountry.percent) }} da base</small>
           </div>
           <p v-else class="ordo-country-map__hint">Passe o cursor ou use Tab para consultar um país.</p>
@@ -146,10 +146,10 @@ const toggleSelected = (code: string) => {
       <aside class="ordo-country-map__ranking" aria-labelledby="ordo-country-ranking-title">
         <div class="ordo-country-map__ranking-header">
           <div>
-            <p class="ordo-kicker">Ranking</p>
-            <h3 id="ordo-country-ranking-title">Países com usuários</h3>
+            <p class="ordo-kicker">Onde há mais gente</p>
+            <h3 id="ordo-country-ranking-title">Países</h3>
           </div>
-          <span>{{ displayCount(totalUsers) }} total</span>
+          <span>{{ displayCount(totalUsers) }} na base</span>
         </div>
 
         <ol v-if="hasCountryData" class="ordo-country-map__list">
@@ -164,7 +164,7 @@ const toggleSelected = (code: string) => {
               @focus="setFocused(country.code)"
               @blur="setFocused(null)"
             >
-              <span class="ordo-country-map__rank">{{ String(index + 1).padStart(2, '0') }}</span>
+              <span class="ordo-country-map__rank">{{ index + 1 }}</span>
               <span class="ordo-country-map__country-copy"><strong>{{ country.name }}</strong><small>{{ country.code === 'other' ? 'sem geometria no mapa' : country.code.toUpperCase() }}</small></span>
               <span class="ordo-country-map__country-value"><strong>{{ displayCount(country.count) }}</strong><small>{{ displayPercent(country.percent) }}</small></span>
             </button>
@@ -175,11 +175,11 @@ const toggleSelected = (code: string) => {
     </div>
 
     <details class="ordo-country-map__table">
-      <summary>Consultar dados em tabela acessível</summary>
+      <summary>Ver todos os países em tabela</summary>
       <div class="ordo-table-wrap">
         <table>
-          <caption class="sr-only">Usuários agregados por país</caption>
-          <thead><tr><th scope="col">País</th><th scope="col">Código</th><th scope="col">Usuários</th><th scope="col">Parcela da base</th></tr></thead>
+          <caption class="sr-only">Pessoas por país</caption>
+          <thead><tr><th scope="col">País</th><th scope="col">Código</th><th scope="col">Pessoas</th><th scope="col">Parcela da base</th></tr></thead>
           <tbody>
             <tr v-for="country in countryData" :key="`table-${country.code}`"><th scope="row">{{ country.name }}</th><td>{{ country.code === 'other' ? '—' : country.code.toUpperCase() }}</td><td>{{ displayCount(country.count) }}</td><td>{{ displayPercent(country.percent) }}</td></tr>
             <tr v-if="!hasCountryRows"><td colspan="4">Sem dados de país para exibir.</td></tr>
@@ -191,81 +191,62 @@ const toggleSelected = (code: string) => {
 </template>
 
 <style scoped>
-.ordo-country-map {
-  overflow: hidden;
-  border: 1px solid rgba(50, 73, 56, .12);
-  border-radius: 22px;
-  background: rgba(251, 252, 248, .88);
-  box-shadow: 0 12px 30px rgba(38, 55, 44, .05);
-}
-
-.ordo-country-map__header,
-.ordo-country-map__ranking-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.ordo-country-map__header { padding: 22px 24px 14px; }
-.ordo-country-map h2 { margin: 7px 0 0; color: var(--moss-deep); font-family: 'Fraunces', Georgia, serif; font-size: 29px; font-weight: 600; letter-spacing: -.04em; }
-.ordo-country-map h3 { margin: 7px 0 0; color: var(--moss-deep); font-family: 'Fraunces', Georgia, serif; font-size: 22px; font-weight: 600; letter-spacing: -.035em; }
-.ordo-country-map__description { max-width: 590px; margin: 9px 0 0; color: #7e8b80; font-size: 11px; line-height: 1.5; }
-.ordo-country-map__metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 0 24px 18px; }
-.ordo-country-map__metrics > div { min-width: 0; padding: 12px; border: 1px solid #e0e7dd; border-radius: 12px; background: #f4f7f1; }
-.ordo-country-map__metrics span,
-.ordo-country-map__metrics small { display: block; overflow: hidden; color: #859185; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
-.ordo-country-map__metrics strong { display: block; margin: 5px 0 3px; color: var(--moss-deep); font-family: 'Fraunces', Georgia, serif; font-size: 20px; font-weight: 600; }
-.ordo-country-map__metrics small { color: #9aa49a; font-size: 9px; }
-.ordo-country-map__body { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(250px, .75fr); gap: 22px; padding: 0 24px 22px; }
+.ordo-country-map { overflow: hidden; border: 1px solid var(--op-hair); border-radius: var(--op-radius); background: var(--op-card); box-shadow: var(--op-shadow); }
+.ordo-country-map__header, .ordo-country-map__ranking-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.ordo-country-map__header { flex-wrap: wrap; padding: 24px 24px 14px; }
+.ordo-country-map h2 { margin: 4px 0 0; font-family: var(--op-font-display); font-size: 22px; font-weight: 600; }
+.ordo-country-map h3 { margin: 4px 0 0; font-family: var(--op-font-display); font-size: 18px; font-weight: 600; }
+.ordo-country-map__description { max-width: 620px; margin: 6px 0 0; color: var(--op-ink-soft); font-size: 13.5px; line-height: 1.5; }
+.ordo-country-map__metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; margin: 0 24px 18px; }
+.ordo-country-map__metrics > div { min-width: 0; padding: 12px 14px; border-radius: 14px; background: var(--op-paper); }
+.ordo-country-map__metrics span, .ordo-country-map__metrics small { display: block; overflow: hidden; color: var(--op-ink-faint); font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+.ordo-country-map__metrics strong { display: block; margin: 4px 0 2px; font-family: var(--op-font-display); font-size: 22px; font-weight: 600; }
+.ordo-country-map__metrics small { font-size: 11.5px; }
+.ordo-country-map__body { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(250px, .8fr); gap: 24px; padding: 0 24px 22px; }
 .ordo-country-map__visual { min-width: 0; }
-.ordo-country-map__legend { display: flex; align-items: center; gap: 8px; color: #879387; font-size: 9px; font-weight: 700; }
-.ordo-country-map__legend i { flex: 1; height: 8px; border: 1px solid #dce8de; border-radius: 99px; background: linear-gradient(90deg, #f7faf7, #e0eff7, #19577e); }
-.ordo-country-map__canvas { position: relative; min-height: 300px; margin-top: 6px; }
+.ordo-country-map__legend { display: flex; align-items: center; gap: 8px; color: var(--op-ink-faint); font-size: 12px; }
+.ordo-country-map__legend i { flex: 0 1 160px; height: 8px; border-radius: 99px; background: linear-gradient(90deg, #c9d8f1, #8da9e3, #4f79d6, #1745a8); }
+.ordo-country-map__canvas { position: relative; min-height: 300px; margin-top: 8px; border-radius: 16px; background: #f7f9fc; }
 .ordo-country-map__canvas svg { display: block; width: 100%; height: auto; overflow: visible; }
-.ordo-country-map__canvas path { stroke: #fff; stroke-width: .7; vector-effect: non-scaling-stroke; outline: none; transition: fill 180ms ease, stroke 180ms ease, stroke-width 180ms ease; }
-.ordo-country-map__canvas path:hover,
-.ordo-country-map__canvas path:focus-visible,
-.ordo-country-map__canvas path.is-active { stroke: var(--moss-deep); stroke-width: 1.7; }
-.ordo-country-map__tooltip { position: absolute; top: 10px; left: 12px; display: grid; gap: 2px; min-width: 150px; padding: 10px 12px; border: 1px solid rgba(50, 73, 56, .14); border-radius: 12px; background: rgba(255, 255, 255, .94); box-shadow: 0 8px 20px rgba(38, 55, 44, .12); pointer-events: none; }
-.ordo-country-map__tooltip strong { color: var(--moss-deep); font-size: 12px; }
-.ordo-country-map__tooltip span { color: var(--ink); font-size: 11px; font-weight: 700; }
-.ordo-country-map__tooltip small { color: #879387; font-size: 9px; }
-.ordo-country-map__hint { margin: 0; color: #9aa49a; font-size: 10px; text-align: center; }
-.ordo-country-map__ranking { min-width: 0; padding: 0 0 0 2px; }
-.ordo-country-map__ranking-header > span { color: #8a968b; font-size: 9px; font-weight: 800; white-space: nowrap; }
-.ordo-country-map__list { display: grid; gap: 2px; margin: 16px 0 0; padding: 0; list-style: none; }
-.ordo-country-map__list button { display: flex; align-items: center; width: 100%; gap: 9px; padding: 9px 7px; border: 1px solid transparent; border-radius: 11px; background: transparent; color: inherit; cursor: pointer; font: inherit; text-align: left; }
-.ordo-country-map__list button:hover,
-.ordo-country-map__list button:focus-visible,
-.ordo-country-map__list button.is-active { border-color: #d9e5d7; background: #f3f7f1; outline: none; }
-.ordo-country-map__rank { display: grid; flex: 0 0 auto; width: 25px; height: 25px; place-items: center; border-radius: 8px; background: #e7eef3; color: #51788a; font-size: 9px; font-weight: 800; }
+.ordo-country-map__canvas path { stroke: #fff; stroke-width: .6; vector-effect: non-scaling-stroke; outline: none; transition: fill 160ms ease, stroke 160ms ease; cursor: pointer; }
+.ordo-country-map__canvas path:hover, .ordo-country-map__canvas path:focus-visible, .ordo-country-map__canvas path.is-active { stroke: var(--op-ink); stroke-width: 1.6; }
+.ordo-country-map__tooltip { position: absolute; top: 12px; left: 12px; display: grid; gap: 2px; min-width: 170px; padding: 10px 14px; border-radius: 12px; background: var(--op-ink); color: var(--op-rail-ink); box-shadow: 0 12px 28px -14px rgba(13, 39, 68, .6); pointer-events: none; }
+.ordo-country-map__tooltip strong { font-size: 13.5px; }
+.ordo-country-map__tooltip span { font-family: var(--op-font-display); font-size: 18px; font-weight: 600; }
+.ordo-country-map__tooltip small { color: var(--op-rail-soft); font-size: 12px; }
+.ordo-country-map__hint { margin: 8px 0 0; color: var(--op-ink-faint); font-size: 12.5px; text-align: center; }
+.ordo-country-map__ranking { min-width: 0; }
+.ordo-country-map__ranking-header > span { color: var(--op-ink-faint); font-size: 12.5px; white-space: nowrap; }
+.ordo-country-map__list { display: grid; gap: 2px; margin: 12px 0 0; padding: 0; list-style: none; }
+.ordo-country-map__list button { display: flex; align-items: center; width: 100%; gap: 10px; padding: 9px 8px; border: 1px solid transparent; border-radius: 12px; background: transparent; cursor: pointer; text-align: left; }
+.ordo-country-map__list button:hover, .ordo-country-map__list button:focus-visible, .ordo-country-map__list button.is-active { border-color: rgba(23, 84, 207, .35); background: var(--op-paper); outline: none; }
+.ordo-country-map__rank { display: grid; flex: 0 0 auto; width: 26px; height: 26px; place-items: center; border-radius: 8px; background: var(--op-wash); color: var(--op-action-hover); font: 700 11px/1 var(--op-font-mono); }
 .ordo-country-map__country-copy { display: grid; flex: 1; min-width: 0; gap: 2px; }
-.ordo-country-map__country-copy strong { overflow: hidden; color: #334538; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
-.ordo-country-map__country-copy small { color: #9aa49a; font-size: 9px; text-transform: uppercase; }
+.ordo-country-map__country-copy strong { overflow: hidden; font-size: 14px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.ordo-country-map__country-copy small { color: var(--op-ink-faint); font-size: 11.5px; text-transform: uppercase; }
 .ordo-country-map__country-value { display: grid; flex: 0 0 auto; justify-items: end; gap: 2px; }
-.ordo-country-map__country-value strong { color: var(--moss-deep); font-family: 'Fraunces', Georgia, serif; font-size: 15px; font-weight: 600; }
-.ordo-country-map__country-value small { color: #8b978b; font-size: 9px; }
-.ordo-country-map__empty { margin: 20px 0; color: #8b958b; font-size: 11px; line-height: 1.5; }
-.ordo-country-map__table { border-top: 1px solid #e5ece3; }
-.ordo-country-map__table summary { padding: 13px 24px; color: var(--moss); cursor: pointer; font-size: 10px; font-weight: 800; list-style-position: inside; }
-.ordo-country-map__table .ordo-table-wrap { padding-bottom: 6px; }
-.ordo-country-map__table th { font-weight: 800; }
+.ordo-country-map__country-value strong { font-family: var(--op-font-display); font-size: 17px; font-weight: 600; }
+.ordo-country-map__country-value small { color: var(--op-ink-faint); font-size: 12px; }
+.ordo-country-map__empty { margin: 20px 0; color: var(--op-ink-faint); font-size: 13.5px; line-height: 1.5; }
+.ordo-country-map__table { border-top: 1px solid var(--op-hair-soft); }
+.ordo-country-map__table summary { padding: 14px 24px; color: var(--op-action); cursor: pointer; font-size: 13.5px; font-weight: 600; list-style-position: inside; }
+.ordo-country-map__table .ordo-table-wrap { padding: 0 24px 12px; }
+.ordo-country-map__table table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.ordo-country-map__table th, .ordo-country-map__table td { padding: 8px 10px; border-top: 1px solid var(--op-hair-soft); text-align: left; }
+.ordo-country-map__table thead th { color: var(--op-ink-faint); font-size: 12px; font-weight: 600; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
 
 @media (max-width: 760px) {
   .ordo-country-map__body { grid-template-columns: 1fr; }
-  .ordo-country-map__ranking { padding-top: 2px; }
   .ordo-country-map__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 560px) {
-  .ordo-country-map__header { display: block; padding-right: 16px; padding-left: 16px; }
-  .ordo-country-map__header .ordo-scope-label { display: block; margin-top: 10px; }
-  .ordo-country-map__metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-right: 16px; margin-left: 16px; }
+  .ordo-country-map__header { padding-right: 16px; padding-left: 16px; }
+  .ordo-country-map__metrics { margin-right: 16px; margin-left: 16px; }
   .ordo-country-map__body { padding-right: 16px; padding-left: 16px; }
   .ordo-country-map__canvas { min-height: 190px; }
-  .ordo-country-map__table summary { padding-right: 16px; padding-left: 16px; }
+  .ordo-country-map__list { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

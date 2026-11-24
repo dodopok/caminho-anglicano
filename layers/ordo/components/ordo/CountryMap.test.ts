@@ -30,8 +30,8 @@ describe('CountryMap', () => {
 
     expect(wrapper.find('svg').exists()).toBe(true)
     expect(wrapper.findAll('path').length).toBeGreaterThan(100)
-    expect(wrapper.find('path[aria-label^="Brasil:"]').attributes('fill')).not.toBe('#f7faf7')
-    expect(wrapper.find('path[aria-label^="Estados Unidos:"]').attributes('fill')).toBe('#f7faf7')
+    expect(wrapper.find('path[aria-label^="Brasil:"]').attributes('fill')).not.toBe('#e9e5da')
+    expect(wrapper.find('path[aria-label^="Estados Unidos:"]').attributes('fill')).toBe('#e9e5da')
     expect(wrapper.find('table').text()).toContain('Ambíguo ou desconhecido')
     expect(wrapper.find('.ordo-country-map__list').text()).not.toContain('Ambíguo ou desconhecido')
     expect(wrapper.text()).toContain('90%')
@@ -45,7 +45,7 @@ describe('CountryMap', () => {
   it('keeps the map neutral and explains the empty state without data', () => {
     const wrapper = mount(CountryMap, { props: { geography: { coverage: { total_users: 0 }, country_breakdown: [] } } })
 
-    expect(wrapper.find('path[aria-label^="Brasil:"]').attributes('fill')).toBe('#f7faf7')
+    expect(wrapper.find('path[aria-label^="Brasil:"]').attributes('fill')).toBe('#e9e5da')
     expect(wrapper.text()).toContain('Ainda não há países resolvidos para colorir')
     expect(wrapper.find('table').text()).toContain('Sem dados de país para exibir.')
   })
