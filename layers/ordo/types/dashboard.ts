@@ -225,11 +225,23 @@ export interface AudioOperation {
   failed_items?: number
   generated_characters?: number
   result?: Record<string, unknown> | null
+  /** Where a catalogue run is now: the source and how many of its lines are done. */
+  progress?: AudioOperationProgress | null
   error_message?: string | null
   requested_by?: string | null
   created_at?: string | null
   started_at?: string | null
   completed_at?: string | null
+}
+
+export interface AudioOperationProgress {
+  source?: string
+  source_kind?: 'bible' | 'psalter' | 'liturgical_texts' | 'collects' | 'prayer_book_psalter' | string
+  source_code?: string | null
+  source_index?: number
+  sources_total?: number
+  source_processed?: number
+  source_total?: number
 }
 
 export interface AudioOperationsResponse {
