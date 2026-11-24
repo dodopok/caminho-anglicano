@@ -20,6 +20,8 @@ import {
   type AudioOperationsResponse,
   type AudioPrayerBooksResponse,
   type AudioWorkerQueue,
+  type AudioFailuresAcknowledgement,
+  type DeveloperUsageResponse,
   type AudioWorkerQueuePurge,
   type AudioWorkerQueuePurgeScope,
   type DashboardAudio,
@@ -194,6 +196,16 @@ export const useOrdoApi = () => {
       body: { scope }
     })
 
+  // One developer's keys, day by day, for the drill-down on the Negócio tab.
+  const fetchDeveloperUsage = async (id: number | string, period: { start_date: string; end_date: string }): Promise<DeveloperUsageResponse> => {
+    const params = new URLSearchParams({ start_date: period.start_date, end_date: period.end_date })
+    return request<DeveloperUsageResponse>(`/api/v1/dashboard/developers/${encodeURIComponent(String(id))}?${params}`)
+  }
+
+  // "Seen it": the failures stop counting toward the warning, for everyone.
+  const acknowledgeAudioFailures = async (): Promise<AudioFailuresAcknowledgement> =>
+    request<AudioFailuresAcknowledgement>('/api/v1/admin/audio/operations/acknowledge_failures', { method: 'POST' })
+
   const reindexAudioCatalog = async (prayerBookCode?: string): Promise<AudioOperationResponse> =>
     request<AudioOperationResponse>('/api/v1/admin/audio/catalog/reindex', {
       method: 'POST',
@@ -276,6 +288,8 @@ export const useOrdoApi = () => {
     fetchAudioCatalogTranslations,
     fetchAudioWorkerQueue,
     purgeAudioWorkerQueue,
+    acknowledgeAudioFailures,
+    fetchDeveloperUsage,
     reindexAudioCatalog,
     fetchAudioPrayerBooks,
     fetchLifeRules,

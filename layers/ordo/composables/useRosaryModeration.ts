@@ -77,17 +77,27 @@ const errorMessage = (error: unknown) => error instanceof Error ? error.message 
  * next detail is fetched ahead so walking a long queue does not wait on every
  * click.
  */
-export const useRosaryModeration = () => {
+export interface ModerationInitialState {
+  status?: ModerationStatus
+  order?: ModerationOrder
+  search?: string
+  page?: number
+  /** Opened on the first load if it is on that page (a reload keeps the rosary in review). */
+  selectedId?: string | null
+}
+
+export const useRosaryModeration = (initial: ModerationInitialState = {}) => {
   const { fetchCustomRosaries, fetchCustomRosary, fetchRosaryCategories, approveCustomRosary, rejectCustomRosary } = useOrdoApi()
 
   const items = ref<CustomRosaryPrayer[]>([])
   const pagination = ref<CustomRosaryPagination | null>(null)
   const loading = ref(false)
   const error = ref<string | null>(null)
-  const status = ref<ModerationStatus>('pending_review')
-  const search = ref('')
-  const order = ref<ModerationOrder>('oldest')
-  const offset = ref(0)
+  const status = ref<ModerationStatus>(initial.status || 'pending_review')
+  const search = ref(initial.search || '')
+  const order = ref<ModerationOrder>(initial.order || 'oldest')
+  const offset = ref(Math.max(0, Math.floor((initial.page || 1) - 1)) * PAGE_SIZE)
+  let preferredId = initial.selectedId || null
 
   const selectedId = ref<string | null>(null)
   const detail = ref<CustomRosaryPrayer | null>(null)
@@ -227,7 +237,11 @@ export const useRosaryModeration = () => {
         return
       }
       const stillThere = keepSelection && items.value.some(item => String(item.id) === selectedId.value)
-      if (!stillThere) await select(items.value[0])
+      if (!stillThere) {
+        const preferred = preferredId ? items.value.find(item => String(item.id) === preferredId) : undefined
+        preferredId = null
+        await select(preferred || items.value[0])
+      }
     } catch (caught) {
       if (requestId === listRequest && !isSessionError(caught)) error.value = errorMessage(caught)
     } finally {

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import '../../assets/portal.css'
+import { portalReturnPath } from '../../utils/portalRoute'
 
 definePageMeta({
   middleware: 'ordo-auth',
@@ -17,11 +18,12 @@ useHead({
 })
 
 const { loginWithGoogle, error, loading } = useFirebaseAuth()
+const route = useRoute()
 
 const handleGoogleLogin = async () => {
   try {
     await loginWithGoogle()
-    await navigateTo('/portal-do-ordo')
+    await navigateTo(portalReturnPath(route.query.voltar))
   } catch (err) {
     console.error('Login error:', err)
   }

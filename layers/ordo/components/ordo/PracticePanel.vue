@@ -4,7 +4,9 @@ import OrdoChartCard from './ChartCard.vue'
 import OrdoMetricCard from './MetricCard.vue'
 import OrdoTopList from './TopList.vue'
 import OrdoTrendChart, { type TrendPoint } from './TrendChart.vue'
+import { useDashboardContext } from '../../composables/useDashboardContext'
 import { useOrdoDashboardPresentation } from '../../composables/useOrdoDashboardPresentation'
+import { comparePeriods } from '../../utils/compare'
 import { buildSeries, officeMeta } from '../../utils/series'
 import { periodShortLabel, type PeriodValue } from '../../utils/period'
 import type { CountMap, DashboardData } from '../../types/dashboard'
@@ -23,6 +25,14 @@ const shared = computed(() => props.dashboard.shared_offices)
 const weekly = computed(() => props.dashboard.weekly_prayers)
 const favorites = computed(() => props.dashboard.favorites)
 const shortPeriod = computed(() => periodShortLabel(props.period))
+
+const { isPending, previous, previousLabel, isPreviousPending } = useDashboardContext()
+const deltas = computed(() => ({
+  completions: comparePeriods(completions.value.total_in_period, previous.value?.completions?.total_in_period),
+  journals: comparePeriods(journals.value?.total_in_period, previous.value?.journals?.total_in_period),
+  shared: comparePeriods(shared.value?.total_in_period, previous.value?.shared_offices?.total_in_period),
+  weekly: comparePeriods(weekly.value?.weekly_prayers_generated, previous.value?.weekly_prayers?.weekly_prayers_generated)
+}))
 
 const daily = computed(() => buildSeries(
   (completions.value.daily_completions || []).map(item => ({ date: item.date, value: item.count })),
@@ -104,26 +114,26 @@ const entryItems = computed(() => mapToItems(journals.value?.by_entry_type, 'var
 <template>
   <div style="display: flex; flex-direction: column; gap: 26px">
     <section class="op-grid" style="--op-min: 240px" aria-label="Resumo">
-      <OrdoMetricCard title="Ofícios rezados" :value="formatNumber(completions.total_in_period)" scope="period" :scope-label="shortPeriod" :subtitle="completions.avg_duration_seconds ? `cada um dura ${formatDuration(completions.avg_duration_seconds)}, em média` : 'no período escolhido'" />
-      <OrdoMetricCard title="Diários escritos" :value="formatNumber(journals?.total_in_period)" scope="period" :scope-label="shortPeriod" :subtitle="`${formatNumber(journals?.users_with_journals)} pessoas escrevendo`" />
-      <OrdoMetricCard title="Ofícios compartilhados" :value="formatNumber(shared?.total_in_period)" scope="period" :scope-label="shortPeriod" :subtitle="`por ${formatNumber(shared?.unique_users_sharing)} pessoas`" />
-      <OrdoMetricCard title="Orações semanais" :value="formatNumber(weekly?.weekly_prayers_generated)" scope="period" :scope-label="shortPeriod" :subtitle="`geradas a partir de ${formatNumber(weekly?.prayer_requests_created)} pedidos de oração`" />
+      <OrdoMetricCard :loading="isPending('completions')" :delta="deltas.completions" :delta-label="previousLabel" :delta-loading="isPreviousPending('completions')" title="Ofícios rezados" :value="formatNumber(completions.total_in_period)" scope="period" :scope-label="shortPeriod" :subtitle="completions.avg_duration_seconds ? `cada um dura ${formatDuration(completions.avg_duration_seconds)}, em média` : 'no período escolhido'" />
+      <OrdoMetricCard :loading="isPending('journals')" :delta="deltas.journals" :delta-label="previousLabel" :delta-loading="isPreviousPending('journals')" title="Diários escritos" :value="formatNumber(journals?.total_in_period)" scope="period" :scope-label="shortPeriod" :subtitle="`${formatNumber(journals?.users_with_journals)} pessoas escrevendo`" />
+      <OrdoMetricCard :loading="isPending('shared_offices')" :delta="deltas.shared" :delta-label="previousLabel" :delta-loading="isPreviousPending('shared_offices')" title="Ofícios compartilhados" :value="formatNumber(shared?.total_in_period)" scope="period" :scope-label="shortPeriod" :subtitle="`por ${formatNumber(shared?.unique_users_sharing)} pessoas`" />
+      <OrdoMetricCard :loading="isPending('weekly_prayers')" :delta="deltas.weekly" :delta-label="previousLabel" :delta-loading="isPreviousPending('weekly_prayers')" title="Orações semanais" :value="formatNumber(weekly?.weekly_prayers_generated)" scope="period" :scope-label="shortPeriod" :subtitle="`geradas a partir de ${formatNumber(weekly?.prayer_requests_created)} pedidos de oração`" />
     </section>
 
     <section class="op-row">
-      <OrdoChartCard class="op-grow-2" eyebrow="Ritmo" :title="monthly ? 'Ofícios rezados por mês' : 'Ofícios rezados por dia'" :description="monthly ? 'Soma de ofícios em cada mês.' : 'Contados pelo dia a que o ofício pertence. Dias sem ofícios aparecem como zero.'">
+      <OrdoChartCard :loading="isPending('completions')" :skeleton-height="240" class="op-grow-2" eyebrow="Ritmo" :title="monthly ? 'Ofícios rezados por mês' : 'Ofícios rezados por dia'" :description="monthly ? 'Soma de ofícios em cada mês.' : 'Contados pelo dia a que o ofício pertence. Dias sem ofícios aparecem como zero.'">
         <OrdoTrendChart :points="daily" unit="ofícios" aria-label="Ofícios rezados no período" />
       </OrdoChartCard>
-      <OrdoChartCard class="op-grow-1" eyebrow="Horas" title="Horas do ofício" description="Ofícios rezados por tipo, na ordem do dia." scope="period" :scope-label="shortPeriod">
+      <OrdoChartCard :loading="isPending('completions')" :skeleton-height="220" class="op-grow-1" eyebrow="Horas" title="Horas do ofício" description="Ofícios rezados por tipo, na ordem do dia." scope="period" :scope-label="shortPeriod">
         <OrdoBarList :items="officeItems(completions.by_office_type)" />
       </OrdoChartCard>
     </section>
 
     <section class="op-row">
-      <OrdoChartCard class="op-grow-2" eyebrow="Horário" title="A que horas se reza" :description="`Ofícios por hora no relógio de cada pessoa. O pico é ${peakHour?.title.toLowerCase() || '—'}.`">
+      <OrdoChartCard :loading="isPending('completions')" class="op-grow-2" eyebrow="Horário" title="A que horas se reza" :description="`Ofícios por hora no relógio de cada pessoa. O pico é ${peakHour?.title.toLowerCase() || '—'}.`">
         <OrdoTrendChart :points="hours" variant="bars" unit="ofícios" :height="180" aria-label="Ofícios por hora do dia" />
       </OrdoChartCard>
-      <OrdoChartCard class="op-grow-1" eyebrow="Livros de oração" title="Em uso no período" description="Ofícios rezados em cada livro." scope="period" :scope-label="shortPeriod">
+      <OrdoChartCard :loading="isPending('prayer_books', 'completions')" class="op-grow-1" eyebrow="Livros de oração" title="Em uso no período" description="Ofícios rezados em cada livro." scope="period" :scope-label="shortPeriod">
         <OrdoBarList :items="books" :limit="7" :thickness="6" />
         <template v-if="dashboard.prayer_books?.unattributed_completions" #footer>
           <span>Sem livro registrado: <strong style="color: var(--op-ink)">{{ formatNumber(dashboard.prayer_books?.unattributed_completions) }}</strong> ofícios antigos.</span>
@@ -132,11 +142,11 @@ const entryItems = computed(() => mapToItems(journals.value?.by_entry_type, 'var
     </section>
 
     <section class="op-grid" style="--op-min: 320px">
-      <OrdoChartCard eyebrow="Comunidade" title="Quem mais rezou" scope="period" :scope-label="shortPeriod">
+      <OrdoChartCard :loading="isPending('completions')" eyebrow="Comunidade" title="Quem mais rezou" scope="period" :scope-label="shortPeriod">
         <OrdoTopList :items="completers" empty-message="Ninguém rezou neste período." />
         <template #footer><span>Sem e-mail: só nome e número da conta.</span></template>
       </OrdoChartCard>
-      <OrdoChartCard eyebrow="Diários" title="Quem mais escreveu" scope="period" :scope-label="shortPeriod">
+      <OrdoChartCard :loading="isPending('journals')" eyebrow="Diários" title="Quem mais escreveu" scope="period" :scope-label="shortPeriod">
         <OrdoTopList :items="writers" empty-message="Ninguém escreveu neste período." />
         <template v-if="entryItems.length" #footer>
           <span>Tipos de entrada: {{ entryItems.map(item => `${item.label} ${item.display}`).join(' · ') }}</span>
@@ -145,13 +155,13 @@ const entryItems = computed(() => mapToItems(journals.value?.by_entry_type, 'var
     </section>
 
     <section class="op-grid" style="--op-min: 300px">
-      <OrdoChartCard eyebrow="Compartilhamentos" title="Ofícios enviados a alguém" :description="`${formatNumber(shared?.total_in_period)} links, por ${formatNumber(shared?.unique_users_sharing)} pessoas.`">
+      <OrdoChartCard :loading="isPending('shared_offices')" eyebrow="Compartilhamentos" title="Ofícios enviados a alguém" :description="`${formatNumber(shared?.total_in_period)} links, por ${formatNumber(shared?.unique_users_sharing)} pessoas.`">
         <OrdoBarList :items="sharedItems" :thickness="6" />
       </OrdoChartCard>
-      <OrdoChartCard eyebrow="Favoritos" title="O que guardaram" :description="`${formatNumber(favorites?.created_in_period)} favoritos de ${formatNumber(favorites?.users_with_favorites)} pessoas.`">
+      <OrdoChartCard :loading="isPending('favorites')" eyebrow="Favoritos" title="O que guardaram" :description="`${formatNumber(favorites?.created_in_period)} favoritos de ${formatNumber(favorites?.users_with_favorites)} pessoas.`">
         <OrdoBarList :items="favoriteItems" :limit="5" :thickness="6" />
       </OrdoChartCard>
-      <OrdoChartCard eyebrow="Orações semanais" title="Pedidos que viram oração" :description="`${formatNumber(weekly?.weekly_prayer_users)} pessoas receberam orações geradas a partir de ${formatNumber(weekly?.prayer_requests_created)} pedidos.`">
+      <OrdoChartCard :loading="isPending('weekly_prayers')" eyebrow="Orações semanais" title="Pedidos que viram oração" :description="`${formatNumber(weekly?.weekly_prayer_users)} pessoas receberam orações geradas a partir de ${formatNumber(weekly?.prayer_requests_created)} pedidos.`">
         <OrdoBarList :items="languageItems" :limit="5" :thickness="6" empty-message="Nenhuma oração gerada no período." />
         <template #footer><span>Cada oração gerada é uma chamada à IA; o custo real não aparece aqui.</span></template>
       </OrdoChartCard>

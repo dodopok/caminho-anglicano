@@ -13,6 +13,9 @@ interface Props {
   icon?: string
   iconColor?: string
   headingLevel?: 'h2' | 'h3'
+  /** The card's section is still loading: the title stays, the body is a skeleton. */
+  loading?: boolean
+  skeletonHeight?: number
 }
 
 withDefaults(defineProps<Props>(), {
@@ -22,12 +25,14 @@ withDefaults(defineProps<Props>(), {
   scopeLabel: undefined,
   icon: undefined,
   iconColor: undefined,
-  headingLevel: 'h3'
+  headingLevel: 'h3',
+  loading: false,
+  skeletonHeight: 180
 })
 </script>
 
 <template>
-  <section class="op-card op-panel">
+  <section class="op-card op-panel" :aria-busy="loading || undefined">
     <div class="op-panel__head">
       <div class="op-panel__heading">
         <p v-if="eyebrow" class="op-eyebrow">{{ eyebrow }}</p>
@@ -36,11 +41,14 @@ withDefaults(defineProps<Props>(), {
       </div>
       <div v-if="scope || $slots.actions" style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
         <OrdoScopeTag v-if="scope" :scope="scope" :label="scopeLabel" />
-        <slot name="actions" />
+        <slot v-if="!loading" name="actions" />
       </div>
     </div>
-    <slot />
-    <div v-if="$slots.footer" class="op-panel__foot">
+    <div v-if="loading" class="op-panel__skeleton" aria-hidden="true">
+      <span class="op-skeleton" :style="{ height: `${skeletonHeight}px` }" />
+    </div>
+    <slot v-else />
+    <div v-if="$slots.footer && !loading" class="op-panel__foot">
       <slot name="footer" />
     </div>
   </section>

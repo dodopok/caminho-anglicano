@@ -5,7 +5,10 @@ import OrdoCountryMap from './CountryMap.vue'
 import OrdoLocBadge from './LocBadge.vue'
 import OrdoMetricCard from './MetricCard.vue'
 import OrdoTrendChart from './TrendChart.vue'
+import { useDashboardContext } from '../../composables/useDashboardContext'
 import { useOrdoDashboardPresentation } from '../../composables/useOrdoDashboardPresentation'
+import { comparePeriods } from '../../utils/compare'
+import { useQueryParam } from '../../composables/usePortalQuery'
 import { buildSeries, SERIES_COLORS } from '../../utils/series'
 import { periodShortLabel, type PeriodValue } from '../../utils/period'
 import type { DashboardData, RetentionSegment, RetentionWindow } from '../../types/dashboard'
@@ -25,6 +28,14 @@ const geography = computed(() => props.dashboard.geography)
 const shortPeriod = computed(() => periodShortLabel(props.period))
 
 const firstPrayer = computed(() => onboarding.value.time_to_first_prayer)
+
+const { isPending, previous, previousLabel, isPreviousPending } = useDashboardContext()
+const deltas = computed(() => ({
+  newUsers: comparePeriods(users.value.new_users_in_period, previous.value?.users?.new_users_in_period),
+  active: comparePeriods(users.value.active_users_in_period, previous.value?.users?.active_users_in_period),
+  // Less time between the account and the first office is the good direction.
+  firstPrayer: comparePeriods(firstPrayer.value?.median_seconds, previous.value?.onboarding?.time_to_first_prayer?.median_seconds, { kind: 'duration', format: formatDuration })
+}))
 
 const arrivals = computed(() => buildSeries(users.value.daily_new_users || {}, props.period.start, props.period.end, { monthly: props.monthly }))
 const arrivalsAverage = computed(() => {
@@ -56,7 +67,12 @@ const funnel = computed(() => {
 })
 
 type RetentionView = 'weeks' | 'books' | 'modes'
-const retentionView = ref<RetentionView>('weeks')
+const RETENTION_SLUGS: Record<RetentionView, string> = { weeks: 'semanas', books: 'livros', modes: 'modos' }
+const retentionSlug = useQueryParam('retencao', RETENTION_SLUGS.weeks, Object.values(RETENTION_SLUGS))
+const retentionView = computed<RetentionView>({
+  get: () => (Object.entries(RETENTION_SLUGS).find(([, slug]) => slug === retentionSlug.value)?.[0] as RetentionView | undefined) || 'weeks',
+  set: value => { retentionSlug.value = RETENTION_SLUGS[value] }
+})
 
 const HEAT = [
   { below: 8, bg: 'var(--op-seq-1)', ink: 'var(--op-ink)' },
@@ -135,20 +151,24 @@ const languages = computed<BarListItem[]>(() => {
 <template>
   <div style="display: flex; flex-direction: column; gap: 26px">
     <section class="op-grid" style="--op-min: 240px" aria-label="Resumo">
-      <OrdoMetricCard title="Contas novas" :value="formatNumber(users.new_users_in_period)" scope="period" :scope-label="shortPeriod" subtitle="criadas no período" />
-      <OrdoMetricCard title="Pessoas que rezaram" :value="formatNumber(users.active_users_in_period)" scope="period" :scope-label="shortPeriod" subtitle="ao menos um ofício no período" />
+      <OrdoMetricCard :loading="isPending('users')" :delta="deltas.newUsers" :delta-label="previousLabel" :delta-loading="isPreviousPending('users')" title="Contas novas" :value="formatNumber(users.new_users_in_period)" scope="period" :scope-label="shortPeriod" subtitle="criadas no período" />
+      <OrdoMetricCard :loading="isPending('users')" :delta="deltas.active" :delta-label="previousLabel" :delta-loading="isPreviousPending('users')" title="Pessoas que rezaram" :value="formatNumber(users.active_users_in_period)" scope="period" :scope-label="shortPeriod" subtitle="ao menos um ofício no período" />
       <OrdoMetricCard
+        :loading="isPending('onboarding')"
+        :delta="deltas.firstPrayer"
+        :delta-label="previousLabel"
+        :delta-loading="isPreviousPending('onboarding')"
         title="Até a primeira oração"
         :value="firstPrayer?.median_seconds != null ? formatDuration(firstPrayer.median_seconds) : '—'"
         scope="period"
         :scope-label="shortPeriod"
         :subtitle="firstPrayer ? `metade reza antes disso · ${formatPercent(firstPrayer.within_1_hour_rate)} na primeira hora, ${formatPercent(firstPrayer.within_1_day_rate)} no primeiro dia` : 'Aparece quando a API publicar este número.'"
       />
-      <OrdoMetricCard title="Aparelhos com lembretes" :value="formatNumber(users.active_fcm_tokens)" scope="lifetime" subtitle="usados nos últimos 60 dias" />
+      <OrdoMetricCard :loading="isPending('users')" title="Aparelhos com lembretes" :value="formatNumber(users.active_fcm_tokens)" scope="lifetime" subtitle="usados nos últimos 60 dias" />
     </section>
 
     <section class="op-row">
-      <OrdoChartCard class="op-grow-2" eyebrow="Chegada" :title="monthly ? 'Contas novas por mês' : 'Contas novas por dia'" :description="monthly ? 'Soma das contas criadas em cada mês.' : 'Dias sem nenhuma conta nova aparecem como zero.'">
+      <OrdoChartCard :loading="isPending('users')" :skeleton-height="240" class="op-grow-2" eyebrow="Chegada" :title="monthly ? 'Contas novas por mês' : 'Contas novas por dia'" :description="monthly ? 'Soma das contas criadas em cada mês.' : 'Dias sem nenhuma conta nova aparecem como zero.'">
         <template #actions>
           <div style="text-align: right">
             <strong class="op-display" style="font-size: 26px">{{ formatNumber(users.new_users_in_period) }}</strong>
@@ -159,7 +179,7 @@ const languages = computed<BarListItem[]>(() => {
         <template v-if="!monthly" #footer><span>Barras mais escuras são domingos.</span></template>
       </OrdoChartCard>
 
-      <OrdoChartCard class="op-grow-1" eyebrow="Primeiros passos" title="Do cadastro ao hábito" description="Quem chegou no período, passo a passo." scope="period" :scope-label="shortPeriod">
+      <OrdoChartCard :loading="isPending('onboarding')" :skeleton-height="240" class="op-grow-1" eyebrow="Primeiros passos" title="Do cadastro ao hábito" description="Quem chegou no período, passo a passo." scope="period" :scope-label="shortPeriod">
         <ol style="display: flex; flex-direction: column; gap: 14px; margin: 0; padding: 0; list-style: none">
           <li v-for="(step, index) in funnel" :key="step.key" style="display: flex; flex-direction: column; gap: 6px">
             <div class="op-barlist__line">
@@ -178,7 +198,7 @@ const languages = computed<BarListItem[]>(() => {
       </OrdoChartCard>
     </section>
 
-    <OrdoChartCard eyebrow="Retorno" title="Quem volta a rezar" description="Parte de quem chegou que rezou de novo no dia seguinte, depois de uma semana e depois de um mês. Só conta quem já teve tempo para voltar.">
+    <OrdoChartCard :loading="isPending('retention')" :skeleton-height="280" eyebrow="Retorno" title="Quem volta a rezar" description="Parte de quem chegou que rezou de novo no dia seguinte, depois de uma semana e depois de um mês. Só conta quem já teve tempo para voltar.">
       <template #actions>
         <div class="op-seg op-seg--small" role="group" aria-label="Agrupar retorno">
           <button type="button" :class="{ 'is-on': retentionView === 'weeks' }" :aria-pressed="retentionView === 'weeks'" @click="retentionView = 'weeks'">Por semana</button>
@@ -220,9 +240,10 @@ const languages = computed<BarListItem[]>(() => {
     </OrdoChartCard>
 
     <OrdoCountryMap v-if="geography" :geography="geography" />
+    <span v-else-if="isPending('geography')" class="op-skeleton" style="height: 420px; border-radius: 20px" aria-hidden="true" />
 
     <section class="op-grid" style="--op-min: 320px">
-      <OrdoChartCard eyebrow="Primeiro acesso" title="O que escolhem ao chegar" description="A escolha inicial, que pode mudar depois." scope="period" :scope-label="shortPeriod">
+      <OrdoChartCard :loading="isPending('onboarding', 'prayer_books')" eyebrow="Primeiro acesso" title="O que escolhem ao chegar" description="A escolha inicial, que pode mudar depois." scope="period" :scope-label="shortPeriod">
         <div v-if="modes.length" style="display: flex; flex-direction: column; gap: 8px">
           <span class="op-eyebrow">Modo do app</span>
           <div class="op-stack" aria-hidden="true">
@@ -235,7 +256,7 @@ const languages = computed<BarListItem[]>(() => {
         <span class="op-eyebrow" style="margin-top: 6px">Livro de oração</span>
         <OrdoBarList :items="chosenBooks" :limit="6" :thickness="6" />
       </OrdoChartCard>
-      <OrdoChartCard eyebrow="Idiomas" title="Em que língua rezam" description="O idioma do livro escolhido no primeiro acesso.">
+      <OrdoChartCard :loading="isPending('onboarding')" eyebrow="Idiomas" title="Em que língua rezam" description="O idioma do livro escolhido no primeiro acesso.">
         <OrdoBarList :items="languages" :limit="6" :thickness="6" />
       </OrdoChartCard>
     </section>

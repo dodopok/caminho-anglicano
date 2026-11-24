@@ -9,8 +9,19 @@ import OrdoPeriodPicker from '../../components/ordo/PeriodPicker.vue'
 import OrdoPlatformPanel from '../../components/ordo/PlatformPanel.vue'
 import OrdoPracticePanel from '../../components/ordo/PracticePanel.vue'
 import OrdoRail, { type RailTab } from '../../components/ordo/Rail.vue'
+import { provideDashboardContext } from '../../composables/useDashboardContext'
+import { createPortalQuery, providePortalQuery } from '../../composables/usePortalQuery'
+import { previousLabel as previousLabelFor, previousPeriod } from '../../utils/compare'
 import { liturgicalTheme } from '../../utils/liturgical'
-import { groupsByMonth, periodShortLabel, rangeForPreset, type PeriodValue } from '../../utils/period'
+import { groupsByMonth, periodShortLabel, type PeriodValue } from '../../utils/period'
+import {
+  periodFromQuery,
+  periodToQuery,
+  queryForLocation,
+  tabFromSlug,
+  type PortalLocation,
+  type PortalTab
+} from '../../utils/portalRoute'
 import {
   isSessionError,
   type DashboardAudio,
@@ -33,7 +44,7 @@ useHead({
   ]
 })
 
-type DashboardTab = 'overview' | 'growth' | 'practice' | 'platform' | 'operations' | 'audio'
+type DashboardTab = PortalTab
 
 interface TabDefinition {
   id: DashboardTab
@@ -66,11 +77,39 @@ const SECTIONS: Record<DashboardTab, DashboardSectionName[][]> = {
   audio: [[]]
 }
 
+// The sections whose period numbers a card compares with the window just
+// before. Read after the tab has painted, and only for the reading tabs.
+const COMPARED: Record<DashboardTab, DashboardSectionName[]> = {
+  overview: ['users', 'completions', 'notifications'],
+  growth: ['users', 'onboarding'],
+  practice: ['completions', 'journals', 'shared_offices', 'weekly_prayers'],
+  platform: ['premium', 'api'],
+  operations: [],
+  audio: []
+}
+
 const { user, logout, ready: authReady } = useFirebaseAuth()
 const { fetchDashboard, fetchAudioSummary } = useOrdoApi()
 
-const activeTab = ref<DashboardTab>('overview')
-const period = ref<PeriodValue>(rangeForPreset('30d'))
+// The URL is the source of truth for where the operator is: a reload, a
+// bookmark or a link from the attention band opens the same tab, period and
+// sub-tab. Changing tab adds a history entry; filters replace it.
+const route = useRoute()
+const router = useRouter()
+const portalQuery = providePortalQuery(createPortalQuery({
+  read: () => route.query,
+  write: (query, push) => push ? router.push({ query }) : router.replace({ query })
+}))
+watch(() => route.query, query => portalQuery.sync(query))
+
+const activeTab = computed<DashboardTab>(() => tabFromSlug(portalQuery.values.value.aba))
+const period = computed<PeriodValue>({
+  get: () => periodFromQuery(portalQuery.values.value),
+  set: value => portalQuery.set(periodToQuery(value))
+})
+// The period object is rebuilt whenever any key changes; only its dates mean
+// the data must be read again.
+const periodKey = computed(() => `${period.value.preset}|${period.value.start}|${period.value.end}`)
 const dashboard = ref<DashboardData>({})
 const apiPeriod = ref<DashboardPeriod | null>(null)
 const loadedSections = ref<DashboardSectionName[]>([])
@@ -79,6 +118,19 @@ const dashboardError = ref<string | null>(null)
 const lastUpdatedAt = ref<Date | null>(null)
 const audioSummary = ref<DashboardAudio | null>(null)
 let generation = 0
+
+// How many requests are reading each section right now. A section that is
+// not loaded and has one on its way is "pending": its cards draw a skeleton.
+const inFlight = ref<Partial<Record<DashboardSectionName, number>>>({})
+const track = (sections: DashboardSectionName[], step: 1 | -1) => {
+  const next = { ...inFlight.value }
+  sections.forEach(section => { next[section] = Math.max(0, (next[section] || 0) + step) })
+  inFlight.value = next
+}
+
+const previous = ref<DashboardData>({})
+const previousLoaded = ref<DashboardSectionName[]>([])
+const previousInFlight = ref<DashboardSectionName[]>([])
 
 const activeDefinition = computed(() => TABS.find(tab => tab.id === activeTab.value) || TABS[0])
 const activeLoading = computed(() => loadingTabs.value.includes(activeTab.value))
@@ -90,12 +142,38 @@ const errorMessage = (error: unknown) => error instanceof Error ? error.message 
 const fetchSections = async (sections: DashboardSectionName[], requestGeneration: number) => {
   const missing = sections.filter(section => !loadedSections.value.includes(section))
   if (!missing.length) return
-  const response = await fetchDashboard({ start_date: period.value.start, end_date: period.value.end, sections: missing })
-  if (requestGeneration !== generation) return
-  dashboard.value = { ...dashboard.value, ...response.data }
-  apiPeriod.value = response.period
-  loadedSections.value = Array.from(new Set([...loadedSections.value, ...response.sections]))
-  lastUpdatedAt.value = new Date()
+  track(missing, 1)
+  try {
+    const response = await fetchDashboard({ start_date: period.value.start, end_date: period.value.end, sections: missing })
+    if (requestGeneration !== generation) return
+    dashboard.value = { ...dashboard.value, ...response.data }
+    apiPeriod.value = response.period
+    loadedSections.value = Array.from(new Set([...loadedSections.value, ...response.sections]))
+    lastUpdatedAt.value = new Date()
+  } finally {
+    track(missing, -1)
+  }
+}
+
+const comparedWindow = computed(() => previousPeriod(period.value))
+
+// The same sections for the window just before the period. A failure here
+// only costs the arrows, never the tab.
+const fetchPrevious = async (tab: DashboardTab, requestGeneration: number) => {
+  const window = comparedWindow.value
+  const missing = COMPARED[tab].filter(section => !previousLoaded.value.includes(section) && !previousInFlight.value.includes(section))
+  if (!window || !missing.length) return
+  previousInFlight.value = [...previousInFlight.value, ...missing]
+  try {
+    const response = await fetchDashboard({ start_date: window.start, end_date: window.end, sections: missing })
+    if (requestGeneration !== generation) return
+    previous.value = { ...previous.value, ...response.data }
+    previousLoaded.value = Array.from(new Set([...previousLoaded.value, ...response.sections]))
+  } catch {
+    // Without the previous window the cards simply show no comparison.
+  } finally {
+    if (requestGeneration === generation) previousInFlight.value = previousInFlight.value.filter(section => !missing.includes(section))
+  }
 }
 
 const loadAudioSummary = async () => {
@@ -114,7 +192,10 @@ const loadTab = async (tab: DashboardTab) => {
     const [first, ...rest] = SECTIONS[tab]
     if (tab === 'overview' && !audioSummary.value) loadAudioSummary()
     await fetchSections(first, requestGeneration)
-    await Promise.all(rest.map(group => fetchSections(group, requestGeneration)))
+    await Promise.all([
+      ...rest.map(group => fetchSections(group, requestGeneration)),
+      fetchPrevious(tab, requestGeneration)
+    ])
   } catch (error) {
     if (!isSessionError(error) && requestGeneration === generation) dashboardError.value = errorMessage(error)
   } finally {
@@ -128,6 +209,9 @@ const reloadAll = async () => {
   generation += 1
   dashboard.value = { liturgical_today: dashboard.value.liturgical_today }
   loadedSections.value = dashboard.value.liturgical_today ? ['liturgical_today'] : []
+  previous.value = {}
+  previousLoaded.value = []
+  previousInFlight.value = []
   await loadTab(activeTab.value)
 }
 
@@ -142,9 +226,24 @@ const refresh = async () => {
   await loadTab(activeTab.value)
 }
 
+// Before the first answer nothing is in flight yet, but nothing is loaded
+// either: that is loading too, not a screen of zeros.
+const booting = computed(() => !hasData.value && !dashboardError.value)
+provideDashboardContext({
+  isPending: (...sections) => sections.some(section => !loadedSections.value.includes(section) && ((inFlight.value[section] || 0) > 0 || booting.value)),
+  previous: computed(() => comparedWindow.value ? previous.value : null),
+  previousLabel: computed(() => previousLabelFor(period.value)),
+  isPreviousPending: (...sections) => Boolean(comparedWindow.value) && sections.some(section => !previousLoaded.value.includes(section) && (previousInFlight.value.includes(section) || booting.value))
+})
+
+const navigate = (location: PortalLocation) => {
+  const changesTab = location.tab !== activeTab.value
+  portalQuery.set(queryForLocation(portalQuery.values.value, location), { push: true })
+  if (changesTab && import.meta.client) window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
 const selectTab = (id: string) => {
-  activeTab.value = id as DashboardTab
-  if (import.meta.client) window.scrollTo({ top: 0, behavior: 'smooth' })
+  if (id !== activeTab.value) navigate({ tab: id as DashboardTab })
 }
 
 const season = computed(() => {
@@ -175,15 +274,19 @@ const railTabs = computed<RailTab[]>(() => TABS.map(tab => ({
 })))
 
 const todayLabel = computed(() => new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }))
-const updatedLabel = computed(() => lastUpdatedAt.value
-  ? `Dados de ${lastUpdatedAt.value.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })} · atualizam a cada 10 min`
-  : 'Lendo os dados…')
+const updatedLabel = computed(() => {
+  // Áudio reads its own data and keeps it fresh while there is work queued.
+  if (activeTab.value === 'audio') return 'Ao vivo enquanto houver trabalho na fila'
+  return lastUpdatedAt.value
+    ? `Dados de ${lastUpdatedAt.value.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })} · atualizam a cada 10 min`
+    : 'Lendo os dados…'
+})
 
 watch(activeTab, tab => {
   if (authReady.value && user.value) loadTab(tab)
 })
 
-watch(period, () => {
+watch(periodKey, () => {
   if (authReady.value && user.value) reloadAll()
 })
 
@@ -234,14 +337,8 @@ watch([authReady, user], ([isReady, currentUser]) => {
 
         <OrdoAudioOperationsPanel v-if="activeTab === 'audio'" />
         <OrdoOperationsPanel v-else-if="activeTab === 'operations'" :dashboard="dashboard" :loading="activeLoading" :period-label="periodShortLabel(period)" />
-        <template v-else-if="!hasData && activeLoading">
-          <div class="op-grid" style="--op-min: 240px" aria-hidden="true">
-            <span v-for="n in 4" :key="n" class="op-skeleton" style="height: 150px" />
-          </div>
-          <span class="op-skeleton" style="height: 360px" aria-hidden="true" />
-        </template>
         <template v-else>
-          <OrdoOverviewPanel v-if="activeTab === 'overview'" :dashboard="dashboard" :audio="audioSummary" :period="period" :monthly="monthly" @navigate="selectTab" />
+          <OrdoOverviewPanel v-if="activeTab === 'overview'" :dashboard="dashboard" :audio="audioSummary" :period="period" :monthly="monthly" @navigate="navigate" />
           <OrdoGrowthPanel v-else-if="activeTab === 'growth'" :dashboard="dashboard" :period="period" :monthly="monthly" />
           <OrdoPracticePanel v-else-if="activeTab === 'practice'" :dashboard="dashboard" :period="period" :monthly="monthly" />
           <OrdoPlatformPanel v-else-if="activeTab === 'platform'" :dashboard="dashboard" :period="period" />

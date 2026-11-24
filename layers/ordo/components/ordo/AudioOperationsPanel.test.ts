@@ -47,7 +47,8 @@ const api = {
   fetchAudioCatalogTranslations: vi.fn(),
   purgeAudioWorkerQueue: vi.fn(),
   reindexAudioCatalog: vi.fn(),
-  fetchAudioPrayerBooks: vi.fn()
+  fetchAudioPrayerBooks: vi.fn(),
+  acknowledgeAudioFailures: vi.fn()
 }
 
 vi.mock('../../composables/useOrdoApi', () => ({ useOrdoApi: () => api }))
@@ -90,6 +91,7 @@ const openSection = async (wrapper: Awaited<ReturnType<typeof mountPanel>>, labe
 describe('AudioOperationsPanel', () => {
   beforeEach(() => {
     vi.clearAllMocks()
+    window.localStorage.clear()
     api.fetchAudioSummary.mockResolvedValue(summary)
     api.fetchAudioOperations.mockResolvedValue({ operations: [] })
     api.fetchAudioClips.mockResolvedValue({ clips: [], pagination: { total: 0, limit: 20, offset: 0, count: 0 } })
@@ -156,7 +158,7 @@ describe('AudioOperationsPanel', () => {
     wrapper.findAll('button').find(button => button.text().includes(label))
 
   const checkCorpus = async (wrapper: Awaited<ReturnType<typeof mountPanel>>, label: string) => {
-    await wrapper.findAll('label.audio-ops__check').find(item => item.text().includes(label))?.find('input').trigger('change')
+    await wrapper.findAll('.corpus-picker__card').find(item => item.text().includes(label))?.trigger('click')
     await flushPromises()
   }
 
@@ -165,9 +167,12 @@ describe('AudioOperationsPanel', () => {
     await openSection(wrapper, 'Gerar')
 
     expect(api.fetchAudioCatalogTranslations).toHaveBeenCalledWith('loc_2019')
-    expect(wrapper.text()).toContain('NVT · nvt')
-    expect(wrapper.text()).toContain('IEAB_2015 · ieab_2015 · saltério')
-    expect(wrapper.text()).toContain('Somente textos e coletas (sem Bíblia)')
+    const cards = wrapper.findAll('.corpus-picker__card').map(card => card.text())
+    expect(cards.find(text => text.includes('NVT'))).toContain('Nova Versão Transformadora')
+    // A psalter named after its code is spelled out, not repeated as a badge.
+    expect(cards.find(text => text.includes('IEAB 2015'))).not.toContain('ieab_2015 ')
+    expect(wrapper.find('.corpus-picker').text()).toContain('Saltérios')
+    expect(cards.some(text => text.includes('Só os textos do livro'))).toBe(true)
   })
 
   it('never enqueues the catalogue before the corpora are chosen', async () => {
@@ -176,7 +181,7 @@ describe('AudioOperationsPanel', () => {
 
     expect(catalogButton(wrapper, 'Gerar catálogo')?.attributes('disabled')).toBeDefined()
     expect(catalogButton(wrapper, 'Simular catálogo')?.attributes('disabled')).toBeDefined()
-    expect(wrapper.text()).toContain('Escolha as Bíblias ou "somente textos"')
+    expect(wrapper.text()).toContain('Escolha ao menos uma Bíblia')
 
     await catalogButton(wrapper, 'Gerar catálogo')?.trigger('click')
     await flushPromises()
@@ -202,7 +207,7 @@ describe('AudioOperationsPanel', () => {
     const wrapper = await mountPanel()
     await openSection(wrapper, 'Gerar')
     await checkCorpus(wrapper, 'NVT')
-    await checkCorpus(wrapper, 'Somente textos e coletas')
+    await checkCorpus(wrapper, 'Só os textos do livro')
 
     await catalogButton(wrapper, 'Simular catálogo')?.trigger('click')
     await flushPromises()
@@ -255,6 +260,43 @@ describe('AudioOperationsPanel', () => {
     expect(attention).toContain('1 operação falhou nas últimas 24 horas')
     expect(wrapper.text()).not.toContain('Enfileirar geração')
     expect(wrapper.find('.audio-ops__clips').exists()).toBe(false)
+  })
+
+  it('does not assemble four weeks of offices until asked', async () => {
+    api.estimateAudioGeneration.mockResolvedValue({ estimate: { ready_clips: 90, missing_clips: 10, missing_characters: 1200, estimated_cost: null } })
+    const wrapper = await mountPanel()
+
+    expect(api.estimateAudioGeneration).not.toHaveBeenCalled()
+
+    await wrapper.findAll('button').find(button => button.text().includes('Calcular agora'))?.trigger('click')
+    await flushPromises()
+
+    expect(api.estimateAudioGeneration).toHaveBeenCalledWith(expect.objectContaining({ prayer_book_code: 'loc_2019', days: 28 }))
+    expect(wrapper.text()).toContain('90%')
+    expect(wrapper.text()).toContain('Recalcular')
+  })
+
+  it('lists the failures and clears the warning once seen', async () => {
+    api.fetchAudioSummary.mockResolvedValue({
+      ...summary,
+      operations: {
+        ...summary.operations,
+        failed_last_24_hours: 1,
+        recent_failures: [{ id: 9, kind: 'generate_catalog', prayer_book_code: 'loc_2019', error_message: 'SolidQueue::Processes::ProcessPrunedError', completed_at: '2026-11-24T16:34:43Z' }]
+      }
+    })
+    api.acknowledgeAudioFailures.mockResolvedValue({ acknowledged: 1 })
+    const wrapper = await mountPanel()
+
+    expect(wrapper.find('.audio-ops__failures').text()).toContain('Catálogo fixo')
+    expect(wrapper.find('.audio-ops__failures').text()).toContain('ProcessPrunedError')
+
+    await wrapper.findAll('button').find(button => button.text() === 'Limpar aviso')?.trigger('click')
+    await flushPromises()
+
+    expect(api.acknowledgeAudioFailures).toHaveBeenCalled()
+    expect(wrapper.find('.audio-ops__attention').text()).not.toContain('falhou')
+    expect(wrapper.find('.audio-ops__failures').exists()).toBe(false)
   })
 
   it('says so when nothing needs attention', async () => {

@@ -282,11 +282,26 @@ export interface AudioPrayerBookCoverage {
   sources?: number
 }
 
+/** A failed operation nobody has dismissed yet (last 24 hours, at most five). */
+export interface AudioRecentFailure {
+  id: number | string
+  kind: string
+  prayer_book_code?: string | null
+  error_message?: string | null
+  completed_at?: string | null
+}
+
 export interface AudioOperationTotals {
   by_status?: Record<string, number>
   by_kind?: Record<string, number>
+  /** Failed in the last 24 hours and not yet dismissed. */
   failed_last_24_hours?: number
+  recent_failures?: AudioRecentFailure[]
   last_completed_at?: string | null
+}
+
+export interface AudioFailuresAcknowledgement {
+  acknowledged: number
 }
 
 export interface AudioUserUsageSummary {
@@ -789,6 +804,84 @@ export interface DashboardDevelopers extends DashboardSectionMeta {
     inactive?: number
   }
   keys_by_developer?: DeveloperKeyCount[]
+  /** Period-scoped: every developer with a key, busiest first. */
+  usage_by_developer?: {
+    scope?: DashboardScope
+    developers?: DeveloperUsageRow[]
+  }
+}
+
+export interface DeveloperUsageRow {
+  id: number
+  name?: string | null
+  company_name?: string | null
+  keys?: number
+  active_keys?: number
+  requests_in_period?: number
+  /** Same-length window just before the period; null for "Desde sempre". */
+  previous_period_requests?: number | null
+  active_days_in_period?: number
+  last_used_at?: string | null
+}
+
+export interface DeveloperPlan {
+  code?: string | null
+  status?: string | null
+  interval?: string | null
+  trial_ends_at?: string | null
+  current_period_end?: string | null
+  cancel_at_period_end?: boolean | null
+}
+
+export interface DeveloperUsageKey {
+  id: number
+  name: string
+  key_preview?: string | null
+  active?: boolean
+  billing_active?: boolean
+  expires_at?: string | null
+  created_at?: string | null
+  last_used_at?: string | null
+  lifetime_requests?: number
+  requests_in_period?: number
+  active_days_in_period?: number
+  rate_limit_multiplier?: number
+  daily_limit?: number | null
+  /** Sparse: only days with requests. */
+  daily?: Record<string, number>
+}
+
+export interface DeveloperUsageResponse {
+  period: { start_date: string; end_date: string }
+  developer: {
+    id: number
+    name?: string | null
+    email?: string | null
+    company_name?: string | null
+    website?: string | null
+    use_case_description?: string | null
+    approved?: boolean
+    legacy_free?: boolean
+    max_keys?: number
+    created_at?: string | null
+    plan?: DeveloperPlan | null
+  }
+  totals: {
+    requests_in_period?: number
+    previous_period_requests?: number | null
+    active_days_in_period?: number
+    keys_used_in_period?: number
+    lifetime_requests?: number
+    last_used_at?: string | null
+    peak_day?: { date: string; requests: number } | null
+    daily_limit?: number | null
+    days_near_limit?: number
+  }
+  daily?: Record<string, number>
+  keys?: DeveloperUsageKey[]
+  endpoints?: Array<{ endpoint: string; requests: number; keys?: number }>
+  /** 0 = Sunday. */
+  weekdays?: Record<string, number>
 }
 
 export interface DashboardData {
