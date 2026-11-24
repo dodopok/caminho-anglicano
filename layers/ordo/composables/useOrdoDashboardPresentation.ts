@@ -99,10 +99,35 @@ export const useOrdoDashboardPresentation = () => {
       failed: 'Falhou',
       invalid: 'Inválido',
       basic: 'Básico',
-      traditional: 'Tradicional'
+      traditional: 'Tradicional',
+      streak_reminder: 'Lembrete de sequência',
+      announcement: 'Anúncio',
+      new_feature: 'Novidade no app',
+      broadcast: 'Aviso para todos',
+      custom: 'Mensagem avulsa',
+      post: 'Artigos',
+      collect: 'Coletas',
+      psalm: 'Salmos',
+      reading: 'Leituras',
+      reflection: 'Reflexão',
+      prayer: 'Oração'
     }
 
     return labels[value] || value.replaceAll('_', ' ')
+  }
+
+  const languageNames = typeof Intl !== 'undefined' && 'DisplayNames' in Intl
+    ? new Intl.DisplayNames(['pt-BR'], { type: 'language' })
+    : null
+
+  /** "pt-BR" → "português (Brasil)", so language codes never reach the screen raw. */
+  const languageLabel = (code: string) => {
+    try {
+      const name = languageNames?.of(code)
+      return name ? name.charAt(0).toLocaleUpperCase('pt-BR') + name.slice(1) : code
+    } catch {
+      return code
+    }
   }
 
   const scopeLabel = (scope?: string) => {
@@ -206,6 +231,7 @@ export const useOrdoDashboardPresentation = () => {
     formatDate,
     formatTimestamp,
     humanizeKey,
+    languageLabel,
     scopeLabel,
     mapItems,
     maxItemValue,

@@ -12,8 +12,11 @@ export interface CountryMapDatum {
   hasGeometry: boolean
 }
 
-const BLUE_LOW = [224, 239, 247] as const
-const BLUE_HIGH = [25, 87, 126] as const
+// The Ordo's blue ramp, from a pale wash to the deep action blue. Countries
+// with nobody are drawn in the warm paper tone so they read as empty land.
+const BLUE_LOW = [201, 216, 241] as const
+const BLUE_HIGH = [23, 69, 168] as const
+export const EMPTY_COUNTRY_FILL = '#e9e5da'
 
 export const normalizeCountryCode = (value: unknown): string | null => {
   if (typeof value !== 'string') return null
@@ -39,7 +42,7 @@ export const countryPercent = (count: number, total: number) => {
 }
 
 export const countryFill = (count: number, maximum: number) => {
-  if (count <= 0 || maximum <= 0) return '#f7faf7'
+  if (count <= 0 || maximum <= 0) return EMPTY_COUNTRY_FILL
 
   // Square-root scaling keeps smaller communities visible while preserving
   // the continuous relationship between count and color.

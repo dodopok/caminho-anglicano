@@ -26,25 +26,39 @@ Accept: application/json
 
 Se a API retornar `401` (`AUTHENTICATION_REQUIRED` ou `AUTHENTICATION_FAILED`), o cliente encerra a sessão Firebase local, limpa o usuário e redireciona para `/portal-do-ordo/login`. Um `403` (`ADMIN_ACCESS_REQUIRED`) permanece como erro de autorização, sem fingir que a sessão expirou.
 
+## Identidade
+
+O portal usa a identidade do Ordo, a mesma do app, do site (oficio.app) e do Ordo Web: tinta marinho `#0D2744` no lugar do preto, um único azul de ação `#1754CF`, papel quente, ouro para o que espera alguém, Playfair Display nos títulos e números, Raleway na interface e EB Garamond no texto das orações. Tudo está em `assets/portal.css`, preso a `.ordo-shell` (e `.ordo-login`) para não vazar para o resto do site.
+
+A cor litúrgica do dia (seção `liturgical_today`) vira o acento do portal, como a barra de tempo do app: o marcador da aba ativa, o selo do tempo no topo e o cartão "Hoje no calendário" no trilho. `utils/liturgical.ts` traduz a cor da API para a paleta.
+
+Os ícones são de traço (`components/ordo/Icon.vue`), no lugar dos glifos Unicode que o painel usava. Os códigos dos livros (`loc_2015`) aparecem como badge ao lado do nome (`LocBadge.vue`).
+
 ## O que o painel cobre
 
-- Visão geral, DAU/WAU/MAU, sequências e atividade diária.
-- Aquisição, funil de onboarding, retenção D1/D7/D30 e geografia.
-- Completions, atribuição real por prayer book, diários, favoritos, compartilhamentos e weekly prayers.
-- Áudio, notificações, saúde operacional, regras de vida e moderação.
-- Fila paginada de `GET /api/v1/admin/life_rules`.
-- Fila paginada no front-end de `GET /api/v1/admin/custom_rosary_prayers`, detalhe expandido e ações de aprovar/rejeitar.
-- Premium, chaves de API, limites diários e desenvolvedores.
-- Modais de exploração para os arrays e mapas completos do dashboard, com busca, filtros e ordenação local.
-- O filtro `Desde sempre` consulta o histórico desde `1970-01-01`; séries temporais são agrupadas por mês para manter a leitura responsiva.
+A navegação separa **Leitura** (Visão geral, Pessoas & hábito, Prática & conteúdo, Negócio & API) de **Cuidado** (Operação e Áudio), com contadores em tudo que espera alguém. Cada número diz se é do período escolhido ou da base total (`ScopeTag.vue`), e o período aplica ao clicar (`PeriodPicker.vue`, `utils/period.ts`). Períodos longos (12 meses, desde sempre ou mais de 120 dias) são agrupados por mês.
 
-O painel trata `null` como estado válido, exibe o escopo efetivo de cada seção e não usa e-mail nos rankings. Séries esparsas são preenchidas com zero quando precisam formar uma linha contínua. O retorno da API pode ter até 10 minutos de cache.
+- **Visão geral**: a faixa "Pede uma decisão" (rosários na fila e previsão de quando ela zera, tentativas de narração, tarefas de áudio travadas, chaves vencendo, regras de vida novas), pessoas na base, quem rezou, núcleo fiel (4 ou mais dias dos últimos 7), ofícios, presença por dia com cursor, horas do ofício nas cores do app, dias seguidos por faixa, lembretes que viram oração em até 2 h, aparelhos e livros em uso.
+- **Pessoas & hábito**: contas novas, tempo até a primeira oração, funil, retorno por semana de chegada, por livro e por modo (só conta quem já teve tempo de voltar), mapa-múndi e escolhas do primeiro acesso.
+- **Prática & conteúdo**: ofícios por dia, as 24 horas em ordem, livros em uso, quem mais rezou e escreveu, compartilhamentos, favoritos e orações semanais.
+- **Negócio & API**: Ordo+ agora e entre quem reza, ciclo de assinaturas, requisições, endereços mais consultados, chaves perto do limite e desenvolvedores.
+- **Operação**: a bancada de revisão de rosários, a fila de regras de vida (só leitura) e os sinais da plataforma.
 
-A fila de regras de vida é somente leitura no contrato atual: existe apenas o endpoint `GET /api/v1/admin/life_rules`, sem ação administrativa de aprovação. Rosários compartilhados possuem revisão detalhada e as ações `approve`/`reject` no modal editorial.
+A linguagem é a de quem lê, não a da API: "rezaram hoje, em 7 e em 30 dias" no lugar de DAU/WAU/MAU, "aparelhos com lembretes" no lugar de tokens FCM, "tarefas travadas" no lugar de jobs mortos.
 
-## Operação e moderação
+O painel trata `null` como estado válido e não usa e-mail nos rankings. Séries esparsas são preenchidas com zero. O retorno da API pode ter até 10 minutos de cache. Um número que a API ainda não publica aparece como "—" com a explicação, sem quebrar o cartão.
 
-A aba **Operação** começa pelas filas que pedem decisão — rosários compartilhados (acionáveis) e regras de vida (somente leitura) — e resume a pendência numa linha só na introdução, em vez de repetir as contagens em cartões. Abaixo vêm a qualidade da moderação no período e os sinais da plataforma (notificações, saúde operacional, regras de vida e exames) em listas compactas, com o detalhamento completo nos modais de exploração. O volume de rosários do período (criados, públicos, médias de blocos e passos, pessoas perto do limite) fica no modal **Abrir métricas**, não no cartão da fila.
+## Revisão de rosários
+
+A revisão é uma bancada com três colunas, não um modal (`ReviewWorkbench.vue`, com a lógica em `composables/useRosaryModeration.ts`):
+
+- **Fila**: busca, situação (em revisão, aprovados, rejeitados), ordem (mais antigos, mais novos, A–Z, enviada à API como `sort`/`direction`), páginas de 20, selo "parecido" e "reenvio" em cada item, e o atalho "Série de Salmos" quando a página tem vários.
+- **Rosário**: título, descrição, quem enviou com o histórico de envios (`author.submissions_count` etc.), a checagem automática (contas, contas vazias, títulos parecidos vindos de `similar_titles`, reenvio após rejeição, categoria sugerida) e as contas agrupadas: contas seguidas com o mesmo texto viram uma linha com "× 7".
+- **Decisão**: categoria (sugerida pelo título, `suggestCategory`), endereço no CMS gerado do título (um endereço escrito à mão nunca é sobrescrito), aprovar e ir ao próximo, rejeitar com motivo num passo à parte, deixar para depois.
+
+↑/↓ (ou J/K) navegam, A aprova e R abre a rejeição. Decidir abre o próximo da mesma lista; o detalhe do próximo já vem carregado em segundo plano, e a página se completa sozinha quando um item sai dela.
+
+A fila de regras de vida é somente leitura: existe apenas o endpoint `GET /api/v1/admin/life_rules`, sem ação administrativa de aprovação.
 
 ## Operação de áudio
 
@@ -62,44 +76,40 @@ O pipeline de narração tem duas metades, que são operações distintas na API
 
 `GET /api/v1/admin/audio/worker_queue` classifica cada job do Solid Queue pelo que o sustenta — `running`, `ready`, `scheduled`, `blocked`, `failed` ou `orphaned`. Um job órfão não tem execução registrada e nunca será executado; `POST .../worker_queue/purge` apaga os mortos (`scope=dead`, padrão) ou tudo que ainda não começou (`scope=all`), cancelando as operações que esperavam por eles. O polling de 4 segundos só continua enquanto houver job vivo, e não mais enquanto houver job morto na lista.
 
-## Revisão de rosários
-
-O modal de revisão é o mesmo para a fila resumida e para a fila completa, mas guarda de qual das duas foi aberto:
-
-- a fila completa continua montada atrás do modal, então fechar a revisão devolve o moderador à lista com filtro, ordenação e página intactos;
-- o cabeçalho traz a posição na fila e navegação `←`/`→`, que vira de página sozinha ao chegar no fim da atual;
-- aprovar ou rejeitar abre o próximo item automaticamente. Quando a decisão tira a oração do filtro ativo, a página é recarregada e o item que ocupou o mesmo índice é o próximo;
-- o slug do Strapi é sugerido a partir do título (`utils/slug.ts`) quando a revisão abre sem um, e um slug escrito à mão nunca é sobrescrito.
-
 ## Componentes
 
 ```text
 layers/ordo/
+├── assets/portal.css               sistema visual (tokens, casca, componentes)
 ├── components/ordo/
+│   ├── Rail.vue                    trilho de navegação e barra do celular
+│   ├── PeriodPicker.vue            período que aplica ao clicar
 │   ├── OverviewPanel.vue
 │   ├── GrowthPanel.vue
 │   ├── PracticePanel.vue
-│   ├── OperationsPanel.vue
 │   ├── PlatformPanel.vue
-│   ├── LifeRulesQueue.vue
-│   ├── CustomRosaryQueue.vue
-│   ├── DataExplorerModal.vue
-│   ├── RosaryReviewModal.vue
+│   ├── OperationsPanel.vue         fila de cuidado e sinais da plataforma
+│   ├── ReviewWorkbench.vue         bancada de revisão de rosários
 │   ├── AudioOperationsPanel.vue
-│   └── MetricCard / StatList / ChartCard / TopList / charts
+│   ├── AudioReadiness.vue          narração pronta nas próximas 4 semanas
+│   ├── CountryMap.vue
+│   ├── DataExplorerModal.vue
+│   └── MetricCard / ChartCard / StatList / TopList / BarList / TrendChart / Sparkline / ScopeTag / LocBadge / Icon
 ├── composables/
 │   ├── useFirebaseAuth.ts
 │   ├── useOrdoApi.ts
-│   └── useOrdoDashboardPresentation.ts
+│   ├── useOrdoDashboardPresentation.ts
+│   └── useRosaryModeration.ts
 ├── middleware/ordo-auth.ts
 ├── pages/portal-do-ordo/
 │   ├── login.vue
 │   └── index.vue
 ├── types/dashboard.ts
-└── types/explorer.ts
+├── types/explorer.ts
+└── utils/                          period, series, liturgical, countryMap, slug
 ```
 
-`pages/portal-do-ordo/index.vue` coordena autenticação, filtros, carregamento e navegação. As telas de domínio ficam nos componentes de painel, mantendo o admin responsivo sem concentrar todo o contrato da API em uma única página.
+`pages/portal-do-ordo/index.vue` coordena autenticação, período, carregamento e navegação. Cada aba carrega suas seções em duas levas: a primeira desenha a tela, a segunda completa logo depois. As telas de domínio ficam nos componentes de painel; a Operação busca a própria fila.
 
 ## Desenvolvimento
 

@@ -222,26 +222,26 @@ describe('AudioOperationsPanel', () => {
   it('shows the state of each worker job instead of a flat list', async () => {
     const wrapper = await mountPanel()
 
-    expect(wrapper.text()).toContain('morto · 2')
+    expect(wrapper.text()).toContain('travada · 2')
     expect(wrapper.text()).toContain('em execução · 1')
   })
 
   it('clears the jobs nothing will ever run', async () => {
     const wrapper = await mountPanel()
 
-    const purge = wrapper.findAll('button').find(button => button.text().includes('Apagar 2 mortos'))
+    const purge = wrapper.findAll('button').find(button => button.text().includes('Apagar 2 travadas'))
     await purge?.trigger('click')
     await flushPromises()
 
     expect(api.purgeAudioWorkerQueue).toHaveBeenCalledWith('dead')
-    expect(wrapper.text()).toContain('2 jobs removidos')
+    expect(wrapper.text()).toContain('2 tarefas removidas')
   })
 
   it('surfaces the metrics the operator asked for', async () => {
     const wrapper = await mountPanel()
 
-    expect(wrapper.text()).toContain('Tentativas a revisar')
-    expect(wrapper.text()).toContain('Jobs mortos')
+    expect(wrapper.text()).toContain('Tentativas para ouvir')
+    expect(wrapper.text()).toContain('Tarefas travadas')
     expect(wrapper.text()).toContain('Novos em 7 dias')
     expect(wrapper.text()).toContain('loc_2019')
   })
@@ -251,7 +251,7 @@ describe('AudioOperationsPanel', () => {
 
     const attention = wrapper.find('.audio-ops__attention').text()
     expect(attention).toContain('2 tentativas aguardam revisão')
-    expect(attention).toContain('2 jobs mortos na fila do worker')
+    expect(attention).toContain('2 tarefas travadas na fila de processamento')
     expect(attention).toContain('1 operação falhou nas últimas 24 horas')
     expect(wrapper.text()).not.toContain('Enfileirar geração')
     expect(wrapper.find('.audio-ops__clips').exists()).toBe(false)
@@ -273,7 +273,7 @@ describe('AudioOperationsPanel', () => {
     const wrapper = await mountPanel()
 
     const details = wrapper.find('.audio-ops__queue-details')
-    expect(details.find('summary').text()).toBe('Ver 3 jobs')
+    expect(details.find('summary').text()).toBe('Ver 3 tarefas')
     expect(details.attributes('open')).toBeUndefined()
   })
 
