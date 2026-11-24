@@ -44,6 +44,7 @@ const api = {
   previewAudioCleanup: vi.fn(),
   enqueueAudioCleanup: vi.fn(),
   enqueueAudioCatalog: vi.fn(),
+  fetchAudioCatalogTranslations: vi.fn(),
   purgeAudioWorkerQueue: vi.fn(),
   reindexAudioCatalog: vi.fn(),
   fetchAudioPrayerBooks: vi.fn()
@@ -96,6 +97,14 @@ describe('AudioOperationsPanel', () => {
       data: [{ id: '1', code: 'loc_2019', name: 'LOC 2019', available_offices: ['morning'], is_recommended: true }]
     })
     api.enqueueAudioCatalog.mockResolvedValue({ operation })
+    api.fetchAudioCatalogTranslations.mockResolvedValue({
+      prayer_book_code: 'loc_2019',
+      translations: [
+        { code: 'nvt', name: 'NVT', full_name: 'Nova Versão Transformadora', language: 'pt-BR', is_recommended: true, kind: 'bible' },
+        { code: 'nvi', name: 'NVI', full_name: 'Nova Versão Internacional', language: 'pt-BR', is_recommended: true, kind: 'bible' },
+        { code: 'ieab_2015', name: 'IEAB_2015', full_name: 'Saltério ieab_2015', language: 'pt-BR', is_recommended: false, kind: 'psalter' }
+      ]
+    })
     api.estimateAudioGeneration.mockResolvedValue({ estimate: { ready_clips: 3, missing_clips: 1 } })
     api.purgeAudioWorkerQueue.mockResolvedValue({ scope: 'dead', purged_jobs: 2, cancelled_operations: 1 })
     window.confirm = vi.fn(() => true)
@@ -115,25 +124,71 @@ describe('AudioOperationsPanel', () => {
     )
   })
 
-  it('enqueues the fixed catalogue of the selected book', async () => {
+  const catalogButton = (wrapper: Awaited<ReturnType<typeof mountPanel>>, label: string) =>
+    wrapper.findAll('button').find(button => button.text().includes(label))
+
+  const checkCorpus = async (wrapper: Awaited<ReturnType<typeof mountPanel>>, label: string) => {
+    await wrapper.findAll('label.audio-ops__check').find(item => item.text().includes(label))?.find('input').trigger('change')
+    await flushPromises()
+  }
+
+  it('loads the corpora of the selected book and offers each one', async () => {
     const wrapper = await mountPanel()
     await openSection(wrapper, 'Gerar')
 
-    await wrapper.findAll('button').find(button => button.text().includes('Gerar catálogo'))?.trigger('click')
+    expect(api.fetchAudioCatalogTranslations).toHaveBeenCalledWith('loc_2019')
+    expect(wrapper.text()).toContain('NVT · nvt')
+    expect(wrapper.text()).toContain('IEAB_2015 · ieab_2015 · saltério')
+    expect(wrapper.text()).toContain('Somente textos e coletas (sem Bíblia)')
+  })
+
+  it('never enqueues the catalogue before the corpora are chosen', async () => {
+    const wrapper = await mountPanel()
+    await openSection(wrapper, 'Gerar')
+
+    expect(catalogButton(wrapper, 'Gerar catálogo')?.attributes('disabled')).toBeDefined()
+    expect(catalogButton(wrapper, 'Simular catálogo')?.attributes('disabled')).toBeDefined()
+    expect(wrapper.text()).toContain('Escolha as Bíblias ou "somente textos"')
+
+    await catalogButton(wrapper, 'Gerar catálogo')?.trigger('click')
     await flushPromises()
 
-    expect(api.enqueueAudioCatalog).toHaveBeenCalledWith({ prayer_book_code: 'loc_2019', dry_run: false })
+    expect(api.enqueueAudioCatalog).not.toHaveBeenCalled()
+  })
+
+  it('enqueues the fixed catalogue with only the selected Bibles', async () => {
+    const wrapper = await mountPanel()
+    await openSection(wrapper, 'Gerar')
+    await checkCorpus(wrapper, 'NVT')
+
+    expect(catalogButton(wrapper, 'Gerar catálogo')?.attributes('disabled')).toBeUndefined()
+
+    await catalogButton(wrapper, 'Gerar catálogo')?.trigger('click')
+    await flushPromises()
+
+    expect(api.enqueueAudioCatalog).toHaveBeenCalledWith({ prayer_book_code: 'loc_2019', dry_run: false, translations: ['nvt'] })
     expect(wrapper.text()).toContain('Catálogo fixo')
   })
 
-  it('simulates the catalogue without buying anything', async () => {
+  it('narrates only texts and collects when asked for no Bible', async () => {
     const wrapper = await mountPanel()
     await openSection(wrapper, 'Gerar')
+    await checkCorpus(wrapper, 'NVT')
+    await checkCorpus(wrapper, 'Somente textos e coletas')
 
-    await wrapper.findAll('button').find(button => button.text() === 'Simular catálogo')?.trigger('click')
+    await catalogButton(wrapper, 'Simular catálogo')?.trigger('click')
     await flushPromises()
 
-    expect(api.enqueueAudioCatalog).toHaveBeenCalledWith({ prayer_book_code: 'loc_2019', dry_run: true })
+    expect(api.enqueueAudioCatalog).toHaveBeenCalledWith({ prayer_book_code: 'loc_2019', dry_run: true, translations: [] })
+  })
+
+  it('shows which corpora a catalogue run asked for', async () => {
+    api.fetchAudioOperations.mockResolvedValue({
+      operations: [{ ...operation, status: 'completed', parameters: { prayer_book_code: 'loc_2019', translations: ['nvt'], generate: true } }]
+    })
+    const wrapper = await mountPanel()
+
+    expect(wrapper.text()).toContain('Corpora: NVT')
   })
 
   it('shows the state of each worker job instead of a flat list', async () => {
@@ -197,6 +252,7 @@ describe('AudioOperationsPanel', () => {
   it('follows the operation it just enqueued from the section that asked for it', async () => {
     const wrapper = await mountPanel()
     await openSection(wrapper, 'Gerar')
+    await checkCorpus(wrapper, 'NVT')
 
     await wrapper.findAll('button').find(button => button.text().includes('Gerar catálogo'))?.trigger('click')
     await flushPromises()
