@@ -590,7 +590,8 @@ export interface RetentionWindow {
 export interface RetentionSegment {
   prayer_book_code?: string | null
   prayer_book_name?: string
-  mode?: string
+  /** basic, advanced or simplified; null for people who never finished onboarding. */
+  mode?: string | null
   users?: number
   d1?: RetentionWindow
   d7?: RetentionWindow
