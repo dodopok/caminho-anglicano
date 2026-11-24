@@ -9,6 +9,7 @@ import {
   type DashboardFilters,
   type DashboardResponse,
   type AudioCatalogRequest,
+  type AudioCatalogTranslationsResponse,
   type AudioCleanupPreview,
   type AudioClip,
   type AudioClipFilters,
@@ -179,6 +180,11 @@ export const useOrdoApi = () => {
       body: { catalog }
     })
 
+  const fetchAudioCatalogTranslations = async (prayerBookCode: string): Promise<AudioCatalogTranslationsResponse> =>
+    request<AudioCatalogTranslationsResponse>(
+      `/api/v1/admin/audio/catalog/translations?prayer_book_code=${encodeURIComponent(prayerBookCode)}`
+    )
+
   const fetchAudioWorkerQueue = async (): Promise<AudioWorkerQueue> =>
     request<AudioWorkerQueue>('/api/v1/admin/audio/worker_queue')
 
@@ -267,6 +273,7 @@ export const useOrdoApi = () => {
     previewAudioCleanup,
     enqueueAudioCleanup,
     enqueueAudioCatalog,
+    fetchAudioCatalogTranslations,
     fetchAudioWorkerQueue,
     purgeAudioWorkerQueue,
     reindexAudioCatalog,

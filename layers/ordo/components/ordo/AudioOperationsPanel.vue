@@ -6,6 +6,7 @@ import { useOrdoApi } from '../../composables/useOrdoApi'
 import type {
   AudioActiveJob,
   AudioCatalogRequest,
+  AudioCatalogTranslation,
   AudioCleanupPreview,
   AudioClip,
   AudioClipCandidate,
@@ -33,6 +34,7 @@ const {
   previewAudioCleanup,
   enqueueAudioCleanup,
   enqueueAudioCatalog,
+  fetchAudioCatalogTranslations,
   purgeAudioWorkerQueue,
   reindexAudioCatalog,
   fetchAudioPrayerBooks
@@ -83,6 +85,14 @@ const generationError = ref<string | null>(null)
 const catalog = reactive<AudioCatalogRequest>({ prayer_book_code: 'loc_2015', dry_run: false })
 const catalogLoading = ref(false)
 const catalogError = ref<string | null>(null)
+// The corpora are chosen explicitly: an absent list would make the API narrate
+// every Bible of the book's language, tens of millions of characters.
+const catalogCorpora = ref<AudioCatalogTranslation[]>([])
+const catalogCorporaLoading = ref(false)
+const catalogCorporaError = ref<string | null>(null)
+const catalogSelection = ref<string[]>([])
+const catalogTextsOnly = ref(false)
+let catalogCorporaRequest = 0
 
 const queueLoading = ref(false)
 const queueError = ref<string | null>(null)
@@ -381,11 +391,56 @@ const trackOperation = (operation: AudioOperation) => {
 
 const isLive = (operation: AudioOperation) => ['queued', 'running'].includes(operation.status)
 
+const catalogReady = computed(() => catalogTextsOnly.value || catalogSelection.value.length > 0)
+
+const loadCatalogCorpora = async () => {
+  const code = catalog.prayer_book_code
+  const requestId = ++catalogCorporaRequest
+  catalogCorpora.value = []
+  catalogSelection.value = []
+  catalogTextsOnly.value = false
+  catalogCorporaError.value = null
+  if (!code) return
+
+  catalogCorporaLoading.value = true
+  try {
+    const response = await fetchAudioCatalogTranslations(code)
+    if (requestId === catalogCorporaRequest) catalogCorpora.value = response.translations || []
+  } catch (reason) {
+    if (requestId === catalogCorporaRequest) catalogCorporaError.value = errorMessage(reason)
+  } finally {
+    if (requestId === catalogCorporaRequest) catalogCorporaLoading.value = false
+  }
+}
+
+const toggleCatalogCorpus = (code: string) => {
+  catalogTextsOnly.value = false
+  catalogSelection.value = catalogSelection.value.includes(code)
+    ? catalogSelection.value.filter(item => item !== code)
+    : [...catalogSelection.value, code]
+}
+
+const toggleCatalogTextsOnly = () => {
+  catalogTextsOnly.value = !catalogTextsOnly.value
+  if (catalogTextsOnly.value) catalogSelection.value = []
+}
+
+const selectAllCatalogCorpora = () => {
+  catalogTextsOnly.value = false
+  catalogSelection.value = catalogCorpora.value.map(corpus => corpus.code)
+}
+
 const enqueueCatalog = async (dryRun: boolean) => {
+  if (!catalogReady.value) return
+
   catalogLoading.value = true
   catalogError.value = null
   try {
-    const response = await enqueueAudioCatalog({ prayer_book_code: catalog.prayer_book_code, dry_run: dryRun })
+    const response = await enqueueAudioCatalog({
+      prayer_book_code: catalog.prayer_book_code,
+      dry_run: dryRun,
+      translations: catalogTextsOnly.value ? [] : [...catalogSelection.value]
+    })
     trackOperation(response.operation)
   } catch (reason) {
     catalogError.value = errorMessage(reason)
@@ -428,6 +483,17 @@ const catalogReport = (operation: AudioOperation) => {
     missingCharacters: asCount(result.missing_characters),
     sources: Array.isArray(result.sources) ? result.sources.length : null
   }
+}
+
+// Which corpora a catalogue run asked for, from the parameters it was
+// enqueued with. Runs from before the choice existed carry no list.
+const catalogCorporaLabel = (operation: AudioOperation) => {
+  if (operation.kind !== 'generate_catalog' || !operation.parameters) return null
+
+  const translations = operation.parameters.translations
+  if (!Array.isArray(translations)) return 'Corpora: todas as Bíblias do idioma'
+  if (!translations.length) return 'Corpora: somente textos e coletas'
+  return `Corpora: ${translations.map(code => String(code).toUpperCase()).join(', ')}`
 }
 
 const refreshOperation = async (operation: AudioOperation) => {
@@ -621,6 +687,14 @@ const reindexCatalog = async () => {
 
 const shortFingerprint = (value?: string | null) => value ? value.slice(0, 12) : '—'
 
+watch(
+  () => [catalog.prayer_book_code, prayerBooks.value.length] as const,
+  ([code, books], previous) => {
+    if (!books || (previous && previous[0] === code && previous[1])) return
+    loadCatalogCorpora()
+  }
+)
+
 onMounted(loadAll)
 onUnmounted(stopPolling)
 </script>
@@ -720,6 +794,7 @@ onUnmounted(stopPolling)
                 <strong>{{ catalogReport(operation)?.dryRun ? 'Simulação do catálogo' : 'Catálogo gerado' }}</strong>
                 <span>{{ formatNumber(catalogReport(operation)?.ready) }} clips resolvidos · {{ formatNumber(catalogReport(operation)?.generated) }} gerados · {{ formatNumber(catalogReport(operation)?.missingCharacters) }} caracteres a gerar em {{ formatNumber(catalogReport(operation)?.sources) }} fontes</span>
               </div>
+              <small v-if="catalogCorporaLabel(operation)" class="audio-ops__operation-corpora">{{ catalogCorporaLabel(operation) }}</small>
               <p v-if="operation.error_message" class="audio-ops__operation-error">{{ operation.error_message }}</p>
               <button v-if="isLive(operation)" type="button" class="audio-ops__link" @click="refreshOperation(operation)">Atualizar agora</button>
             </article>
@@ -796,12 +871,32 @@ onUnmounted(stopPolling)
             </select>
           </label>
         </div>
+        <fieldset class="audio-ops__offices audio-ops__corpora">
+          <legend>Bíblias e saltérios</legend>
+          <span v-if="catalogCorporaLoading" class="audio-ops__corpora-status">Carregando corpora…</span>
+          <div v-else-if="catalogCorporaError" class="audio-ops__alert audio-ops__alert--error">Não foi possível carregar as Bíblias deste livro: {{ catalogCorporaError }}</div>
+          <template v-else>
+            <label v-for="corpus in catalogCorpora" :key="corpus.code" class="audio-ops__check" :title="corpus.full_name || corpus.name">
+              <input type="checkbox" :value="corpus.code" :checked="catalogSelection.includes(corpus.code)" @change="toggleCatalogCorpus(corpus.code)">
+              <span>{{ corpus.name }} <small>· {{ corpus.code }}{{ corpus.kind === 'psalter' ? ' · saltério' : '' }}</small></span>
+            </label>
+            <label class="audio-ops__check audio-ops__check--texts-only">
+              <input type="checkbox" :checked="catalogTextsOnly" @change="toggleCatalogTextsOnly">
+              <span>Somente textos e coletas (sem Bíblia)</span>
+            </label>
+          </template>
+        </fieldset>
+        <p v-if="catalogCorpora.length > 1 && !catalogCorporaLoading" class="audio-ops__note">
+          <button type="button" class="audio-ops__link" @click="selectAllCatalogCorpora">Selecionar todas</button>
+          · cada Bíblia inteira soma milhões de caracteres; todas juntas podem esgotar a cota do provedor.
+        </p>
         <p class="audio-ops__note">A contagem percorre corpora inteiros e roda no worker. A simulação não compra nada: ela relata quantos clips faltariam.</p>
         <div v-if="catalogError" class="audio-ops__alert audio-ops__alert--error">{{ catalogError }}</div>
         <div class="audio-ops__actions">
-          <button type="button" class="ordo-button ordo-button--quiet" :disabled="catalogLoading || !prayerBooks.length" @click="enqueueCatalog(true)">{{ catalogLoading ? 'Enfileirando…' : 'Simular catálogo' }}</button>
-          <button type="button" class="ordo-button ordo-button--primary" :disabled="catalogLoading || !prayerBooks.length" @click="enqueueCatalog(false)">Gerar catálogo <span>→</span></button>
+          <button type="button" class="ordo-button ordo-button--quiet" :disabled="catalogLoading || !prayerBooks.length || !catalogReady" @click="enqueueCatalog(true)">{{ catalogLoading ? 'Enfileirando…' : 'Simular catálogo' }}</button>
+          <button type="button" class="ordo-button ordo-button--primary" :disabled="catalogLoading || !prayerBooks.length || !catalogReady" @click="enqueueCatalog(false)">Gerar catálogo <span>→</span></button>
         </div>
+        <p v-if="!catalogReady" class="audio-ops__note audio-ops__catalog-hint">Escolha as Bíblias ou "somente textos".</p>
       </OrdoChartCard>
     </div>
 
@@ -1052,6 +1147,12 @@ onUnmounted(stopPolling)
 .audio-ops__offices legend { width: 100%; margin-bottom: 2px; color: #718073; font-size: 10px; font-weight: 800; }
 .audio-ops__check { display: inline-flex; align-items: center; gap: 6px; padding: 7px 9px; border: 1px solid #dce5da; border-radius: 9px; background: #f7faf5; color: #596b5b; font-size: 11px; }
 .audio-ops__check input { accent-color: #496451; }
+.audio-ops__check small { color: #8b978c; font-size: 10px; }
+.audio-ops__check--texts-only { border-style: dashed; }
+.audio-ops__corpora-status { color: #8b978c; font-size: 11px; }
+.audio-ops__corpora .audio-ops__alert { width: 100%; }
+.audio-ops__catalog-hint { text-align: right; }
+.audio-ops__operation-corpora { display: block; margin-top: 6px; color: #71806f; font-size: 10px; }
 .audio-ops__estimate { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-top: 17px; padding: 12px; border: 1px solid #e2e8df; border-radius: 12px; background: #f7faf5; }
 .audio-ops__estimate span, .audio-ops__estimate strong { display: block; }
 .audio-ops__estimate span { color: #8b988c; font-size: 9px; }

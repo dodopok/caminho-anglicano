@@ -374,10 +374,29 @@ export interface AudioGenerationRequest {
 // The fixed catalogue is not a window: it narrates everything the book can
 // ever say, so it takes no date. `dry_run` walks the same sources and reports
 // what a real run would have to buy.
+// `translations` absent means every corpus of the book (the API's historical
+// default); `[]` means texts and collects only. The panel always sends it.
 export interface AudioCatalogRequest {
   prayer_book_code: string
   dry_run?: boolean
   translations?: string[]
+}
+
+export type AudioCatalogTranslationKind = 'bible' | 'psalter' | string
+
+// One corpus (a Bible version or a psalter) the fixed catalogue can narrate.
+export interface AudioCatalogTranslation {
+  code: string
+  name: string
+  full_name?: string | null
+  language?: string | null
+  is_recommended?: boolean
+  kind: AudioCatalogTranslationKind
+}
+
+export interface AudioCatalogTranslationsResponse {
+  prayer_book_code: string
+  translations: AudioCatalogTranslation[]
 }
 
 export interface AudioEstimateRow {
