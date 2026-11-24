@@ -51,6 +51,7 @@ const {
   formatNumber,
   formatDecimal,
   formatDuration,
+  formatPercent,
   formatTimestamp,
   humanizeKey
 } = useOrdoDashboardPresentation()
@@ -521,11 +522,13 @@ const purgeQueue = async (scope: AudioWorkerQueuePurgeScope) => {
   }
 }
 
-// A completed catalogue run — especially a dry run, whose only product is the
-// report — carries its totals in `result`.
+// A finished catalogue run — especially a dry run, whose only product is the
+// report — carries its totals in `result`. While it runs, `result` is empty and
+// the box used to announce "0 clips resolvidos em 0 fontes" next to a bar
+// that was moving.
 const catalogReport = (operation: AudioOperation) => {
   const result = operation.result
-  if (!result || operation.kind !== 'generate_catalog') return null
+  if (!result || operation.kind !== 'generate_catalog' || isLive(operation) || typeof result.clips !== 'number') return null
 
   const asCount = (value: unknown) => typeof value === 'number' ? value : null
   return {
@@ -546,6 +549,41 @@ const catalogCorporaLabel = (operation: AudioOperation) => {
   if (!Array.isArray(translations)) return 'Corpora: todas as Bíblias do idioma'
   if (!translations.length) return 'Corpora: somente textos e coletas'
   return `Corpora: ${translations.map(code => String(code).toUpperCase()).join(', ')}`
+}
+
+// A catalogue run used to count progress in sources: the book's texts and
+// collects finish in seconds, a whole Bible takes hours, so "2 de 3" sat at
+// 66,67% for the entire run. An API that reports lines sends `progress`; one
+// that does not is described as the step it is on, without a misleading bar.
+const SOURCE_LABELS: Record<string, string> = {
+  liturgical_texts: 'Textos do livro',
+  collects: 'Coletas',
+  prayer_book_psalter: 'Saltério do livro'
+}
+
+const sourceLabel = (progress: NonNullable<AudioOperation['progress']>) => {
+  const code = progress.source_code ? progress.source_code.replaceAll('_', ' ').toUpperCase() : ''
+  if (progress.source_kind === 'bible') return `Bíblia ${code}`.trim()
+  if (progress.source_kind === 'psalter') return `Saltério ${code}`.trim()
+  return SOURCE_LABELS[progress.source_kind || ''] || progress.source || 'Fonte'
+}
+
+const countsLines = (operation: AudioOperation) => operation.kind !== 'generate_catalog' || Boolean(operation.progress?.source_total)
+
+const progressText = (operation: AudioOperation) => {
+  if (operation.progress_percentage == null) return 'aguardando início'
+  if (!countsLines(operation) && isLive(operation) && operation.total_items) {
+    return `fonte ${formatNumber(Math.min((operation.processed_items || 0) + 1, operation.total_items))} de ${formatNumber(operation.total_items)}`
+  }
+  return formatPercent(operation.progress_percentage)
+}
+
+const stageText = (operation: AudioOperation) => {
+  const progress = operation.progress
+  if (!progress?.source || !isLive(operation)) return null
+  const step = progress.sources_total && progress.sources_total > 1 ? `Etapa ${progress.source_index} de ${progress.sources_total} · ` : ''
+  const lines = progress.source_total ? ` · ${formatNumber(progress.source_processed)} de ${formatNumber(progress.source_total)} linhas` : ''
+  return `${step}${sourceLabel(progress)}${lines}`
 }
 
 const refreshOperation = async (operation: AudioOperation) => {
@@ -797,7 +835,7 @@ onUnmounted(stopPolling)
       <div class="audio-ops__tracked-copy">
         <span class="audio-ops__badge" :class="`audio-ops__badge--${lastEnqueued.status}`">{{ statusLabel(lastEnqueued.status) }}</span>
         <strong>{{ operationLabel(lastEnqueued.kind) }}</strong>
-        <small>{{ lastEnqueued.prayer_book_code || 'Todos os LOCs' }} · {{ lastEnqueued.progress_percentage == null ? 'aguardando início' : `${lastEnqueued.progress_percentage}%` }}</small>
+        <small>{{ lastEnqueued.prayer_book_code || 'Todos os LOCs' }} · {{ stageText(lastEnqueued) || progressText(lastEnqueued) }}</small>
       </div>
       <div class="audio-ops__tracked-actions">
         <button type="button" class="audio-ops__link" @click="activeSection = 'overview'">Ver operações →</button>
@@ -879,11 +917,13 @@ onUnmounted(stopPolling)
                 <span class="audio-ops__badge" :class="`audio-ops__badge--${operation.status}`">{{ statusLabel(operation.status) }}</span>
               </div>
               <small>{{ operation.prayer_book_code || 'Todos os LOCs' }} · {{ formatTimestamp(operation.created_at) }}</small>
-              <div v-if="operation.total_items" class="audio-ops__progress"><i :style="{ width: `${operation.progress_percentage || 0}%` }" /></div>
+              <div v-if="operation.total_items && countsLines(operation)" class="audio-ops__progress"><i :style="{ width: `${operation.progress_percentage || 0}%` }" /></div>
+              <p v-if="stageText(operation)" class="audio-ops__operation-stage">{{ stageText(operation) }}</p>
               <div class="audio-ops__operation-meta">
-                <span>{{ operation.progress_percentage == null ? 'aguardando início' : `${operation.progress_percentage}%` }}</span>
+                <span>{{ progressText(operation) }}</span>
                 <span v-if="operation.generated_clips">{{ formatNumber(operation.generated_clips) }} clips novos</span>
-                <span v-if="operation.skipped_clips">{{ formatNumber(operation.skipped_clips) }} preservados</span>
+                <span v-if="operation.generated_characters">{{ formatNumber(operation.generated_characters) }} caracteres narrados</span>
+                <span v-if="operation.skipped_clips">{{ formatNumber(operation.skipped_clips) }} já existiam</span>
                 <span v-if="operation.failed_items">{{ formatNumber(operation.failed_items) }} {{ operation.kind === 'generate_catalog' ? 'faltando' : 'falhas' }}</span>
               </div>
               <div v-if="catalogReport(operation)" class="audio-ops__operation-report">
@@ -1191,6 +1231,7 @@ onUnmounted(stopPolling)
 .audio-ops__usage-row i { grid-column: 1 / -1; height: 5px; overflow: hidden; border-radius: 99px; background: rgba(13, 39, 68, .06); }
 .audio-ops__usage-row i b { display: block; height: 100%; border-radius: inherit; background: var(--op-action); }
 
+.audio-ops__operation-stage { margin: 7px 0 0; color: var(--op-ink); font-size: 12.5px; font-weight: 600; font-variant-numeric: tabular-nums; }
 .audio-ops__operation-report { margin-top: 9px; padding: 9px 10px; border: 1px solid var(--op-hair); border-radius: 10px; background: var(--op-ok-wash); }
 .audio-ops__operation-report strong { display: block; color: var(--op-ok); font-size: 12px; }
 .audio-ops__operation-report span { display: block; margin-top: 3px; color: var(--op-ink-soft); font-size: 12px; line-height: 1.45; }

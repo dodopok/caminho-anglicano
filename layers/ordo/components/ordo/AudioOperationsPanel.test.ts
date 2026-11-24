@@ -224,6 +224,55 @@ describe('AudioOperationsPanel', () => {
     expect(wrapper.text()).toContain('Corpora: NVT')
   })
 
+  it('does not call a whole Bible two thirds done because the small sources finished', async () => {
+    api.fetchAudioOperations.mockResolvedValue({
+      operations: [{ ...operation, status: 'running', total_items: 3, processed_items: 2, progress_percentage: 66.67, skipped_clips: 281, result: {} }]
+    })
+    const wrapper = await mountPanel()
+    const card = wrapper.find('.audio-ops__operation')
+
+    expect(card.text()).toContain('fonte 3 de 3')
+    expect(card.text()).not.toContain('66')
+    expect(card.find('.audio-ops__progress').exists()).toBe(false)
+    expect(card.text()).toContain('281 já existiam')
+    // The final report waits for the end of the run.
+    expect(card.text()).not.toContain('Catálogo gerado')
+  })
+
+  it('follows a catalogue run line by line when the API reports it', async () => {
+    api.fetchAudioOperations.mockResolvedValue({
+      operations: [{
+        ...operation,
+        status: 'running',
+        total_items: 31_402,
+        processed_items: 12_700,
+        progress_percentage: 40.44,
+        generated_clips: 52,
+        generated_characters: 6_240,
+        skipped_clips: 281,
+        result: {},
+        progress: { source: 'scripture:nvt', source_kind: 'bible', source_code: 'nvt', source_index: 3, sources_total: 3, source_processed: 12_400, source_total: 31_102 }
+      }]
+    })
+    const wrapper = await mountPanel()
+    const card = wrapper.find('.audio-ops__operation')
+
+    expect(card.find('.audio-ops__operation-stage').text()).toBe('Etapa 3 de 3 · Bíblia NVT · 12.400 de 31.102 linhas')
+    expect(card.text()).toContain('40,4%')
+    expect(card.text()).toContain('52 clips novos')
+    expect(card.text()).toContain('6.240 caracteres narrados')
+    expect(card.find('.audio-ops__progress').exists()).toBe(true)
+  })
+
+  it('shows the report once a catalogue run is over', async () => {
+    api.fetchAudioOperations.mockResolvedValue({
+      operations: [{ ...operation, status: 'completed', result: { clips: 31_383, generated: 31_102, missing_characters: 0, sources: ['liturgical_texts', 'collects', 'scripture:nvt'], generate: true } }]
+    })
+    const wrapper = await mountPanel()
+
+    expect(wrapper.find('.audio-ops__operation-report').text()).toContain('31.383 clips resolvidos · 31.102 gerados')
+  })
+
   it('shows the state of each worker job instead of a flat list', async () => {
     const wrapper = await mountPanel()
 
