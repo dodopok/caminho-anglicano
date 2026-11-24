@@ -2,9 +2,13 @@
 import OrdoChartCard from './ChartCard.vue'
 import OrdoStatList from './StatList.vue'
 import OrdoAudioReadiness from './AudioReadiness.vue'
+import OrdoBookPicker from './BookPicker.vue'
+import OrdoCorpusPicker from './CorpusPicker.vue'
 import OrdoLocBadge from './LocBadge.vue'
 import { useOrdoDashboardPresentation, type DashboardStatItem } from '../../composables/useOrdoDashboardPresentation'
 import { useOrdoApi } from '../../composables/useOrdoApi'
+import { officeMeta } from '../../utils/series'
+import { usePortalQuery, useQueryParam } from '../../composables/usePortalQuery'
 import type {
   AudioActiveJob,
   AudioCatalogRequest,
@@ -38,6 +42,7 @@ const {
   enqueueAudioCatalog,
   fetchAudioCatalogTranslations,
   purgeAudioWorkerQueue,
+  acknowledgeAudioFailures,
   reindexAudioCatalog,
   fetchAudioPrayerBooks
 } = useOrdoApi()
@@ -62,7 +67,15 @@ const todayInput = () => {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`
 }
 
-const activeSection = ref<AudioSection>('overview')
+// The section is part of the address (`?aba=audio&secao=clips`), so a reload
+// or a link from the overview's attention band lands on it.
+const SECTION_SLUGS: Record<AudioSection, string> = { overview: 'visao-geral', generate: 'gerar', clips: 'clips', maintenance: 'manutencao' }
+const portalQuery = usePortalQuery()
+const sectionSlug = useQueryParam('secao', SECTION_SLUGS.overview, Object.values(SECTION_SLUGS), { query: portalQuery })
+const activeSection = computed<AudioSection>({
+  get: () => (Object.entries(SECTION_SLUGS).find(([, slug]) => slug === sectionSlug.value)?.[0] as AudioSection | undefined) || 'overview',
+  set: section => { sectionSlug.value = SECTION_SLUGS[section] }
+})
 const summary = ref<DashboardAudio | null>(null)
 const prayerBooks = ref<AudioPrayerBook[]>([])
 const operations = ref<AudioOperation[]>([])
@@ -155,7 +168,30 @@ const openGenerationFor = (code: string) => {
 const recentWindow = computed(() => summary.value?.recent || null)
 const userUsage = computed(() => summary.value?.user_usage || null)
 const topBackgroundTracks = computed(() => userUsage.value?.top_background_tracks?.slice(0, 10) || [])
-const failedOperations = computed(() => summary.value?.operations?.failed_last_24_hours || 0)
+// Failures the operator has already seen are cleared on the API, for every
+// device. Until the summary's short cache catches up, the moment of the click
+// keeps them hidden here; a failure that happens after it still shows.
+const failuresAcknowledgedAt = ref<number | null>(null)
+const acknowledgingFailures = ref(false)
+const acknowledgeError = ref<string | null>(null)
+const recentFailures = computed(() => (summary.value?.operations?.recent_failures || [])
+  .filter(failure => !failuresAcknowledgedAt.value || new Date(failure.completed_at || 0).getTime() > failuresAcknowledgedAt.value))
+const failedOperations = computed(() => failuresAcknowledgedAt.value
+  ? recentFailures.value.length
+  : summary.value?.operations?.failed_last_24_hours || 0)
+
+const acknowledgeFailures = async () => {
+  acknowledgingFailures.value = true
+  acknowledgeError.value = null
+  try {
+    await acknowledgeAudioFailures()
+    failuresAcknowledgedAt.value = Date.now()
+  } catch (reason) {
+    acknowledgeError.value = errorMessage(reason)
+  } finally {
+    acknowledgingFailures.value = false
+  }
+}
 const providerOptions = computed(() => [...new Set(profileOptions.value.map(profile => profile.provider).filter(Boolean))] as string[])
 const voiceOptions = computed(() => [...new Set(profileOptions.value.map(profile => profile.voice).filter(Boolean))] as string[])
 const currentProfiles = computed(() => profileOptions.value.filter(profile => profile.profile_status === 'current'))
@@ -446,23 +482,6 @@ const loadCatalogCorpora = async () => {
   }
 }
 
-const toggleCatalogCorpus = (code: string) => {
-  catalogTextsOnly.value = false
-  catalogSelection.value = catalogSelection.value.includes(code)
-    ? catalogSelection.value.filter(item => item !== code)
-    : [...catalogSelection.value, code]
-}
-
-const toggleCatalogTextsOnly = () => {
-  catalogTextsOnly.value = !catalogTextsOnly.value
-  if (catalogTextsOnly.value) catalogSelection.value = []
-}
-
-const selectAllCatalogCorpora = () => {
-  catalogTextsOnly.value = false
-  catalogSelection.value = catalogCorpora.value.map(corpus => corpus.code)
-}
-
 const enqueueCatalog = async (dryRun: boolean) => {
   if (!catalogReady.value) return
 
@@ -730,6 +749,7 @@ watch(
 )
 
 watch(generationBible, () => { estimate.value = null })
+watch(() => generation.prayer_book_code, syncOffices)
 
 watch(
   () => [catalog.prayer_book_code, prayerBooks.value.length] as const,
@@ -739,7 +759,20 @@ watch(
   }
 )
 
-onMounted(loadAll)
+// A link that asked for a card (`foco=fila`) scrolls to it once the data is
+// there, then drops the key so later reloads open the section from the top.
+const focusRequestedCard = async () => {
+  const focus = portalQuery.get('foco')
+  if (!focus) return
+  await nextTick()
+  if (import.meta.client) document.getElementById(`audio-${focus}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  portalQuery.set({ foco: null })
+}
+
+onMounted(async () => {
+  await loadAll()
+  focusRequestedCard()
+})
 onUnmounted(stopPolling)
 </script>
 
@@ -773,17 +806,34 @@ onUnmounted(stopPolling)
     </div>
 
     <template v-if="activeSection === 'overview'">
+      <div v-if="!summary && loading" class="audio-ops__skeleton" aria-hidden="true">
+        <span class="op-skeleton" style="height: 52px" />
+        <span class="op-skeleton" style="height: 170px" />
+        <span class="op-skeleton" style="height: 240px" />
+      </div>
       <div v-if="summary" class="audio-ops__attention" :class="{ 'is-calm': !attentionItems.length }">
         <template v-if="attentionItems.length">
-          <div v-for="item in attentionItems" :key="item.key" class="audio-ops__attention-item">
-            <i aria-hidden="true">!</i>
-            <span>{{ item.text }}</span>
-            <button v-if="item.section" type="button" class="audio-ops__link" @click="activeSection = item.section">{{ item.action }} →</button>
-          </div>
+          <template v-for="item in attentionItems" :key="item.key">
+            <div class="audio-ops__attention-item">
+              <i aria-hidden="true">!</i>
+              <span>{{ item.text }}</span>
+              <button v-if="item.section" type="button" class="audio-ops__link" @click="activeSection = item.section">{{ item.action }} →</button>
+              <button v-if="item.key === 'failed'" type="button" class="audio-ops__link" :disabled="acknowledgingFailures" @click="acknowledgeFailures">{{ acknowledgingFailures ? 'Limpando…' : 'Limpar aviso' }}</button>
+            </div>
+            <ul v-if="item.key === 'failed' && recentFailures.length" class="audio-ops__failures">
+              <li v-for="failure in recentFailures" :key="failure.id">
+                <strong>{{ operationLabel(failure.kind) }}</strong>
+                <OrdoLocBadge v-if="failure.prayer_book_code" :code="failure.prayer_book_code" />
+                <span class="audio-ops__failure-time">{{ formatTimestamp(failure.completed_at) }}</span>
+                <small v-if="failure.error_message" :title="failure.error_message">{{ failure.error_message }}</small>
+              </li>
+            </ul>
+          </template>
+          <p v-if="acknowledgeError" class="audio-ops__failure-error" role="alert">{{ acknowledgeError }}</p>
         </template>
         <div v-else class="audio-ops__attention-item">
           <i aria-hidden="true">✓</i>
-          <span>Nada pede atenção: sem tentativas para ouvir, tarefas travadas ou erros nas últimas 24 horas.</span>
+          <span>Nada pede atenção: sem tentativas para ouvir, tarefas travadas ou erros novos nas últimas 24 horas.</span>
         </div>
       </div>
 
@@ -847,7 +897,7 @@ onUnmounted(stopPolling)
           </div>
         </OrdoChartCard>
 
-        <OrdoChartCard title="Fila de processamento" description="As tarefas de áudio esperando para rodar. Uma tarefa sem execução registrada está travada e nunca vai terminar." eyebrow="Processamento">
+        <OrdoChartCard id="audio-fila" title="Fila de processamento" description="As tarefas de áudio esperando para rodar. Uma tarefa sem execução registrada está travada e nunca vai terminar." eyebrow="Processamento">
           <div v-if="queueStateItems.length" class="audio-ops__queue-states">
             <span v-for="item in queueStateItems" :key="item.state" class="audio-ops__badge" :class="`audio-ops__badge--job-${item.state}`">{{ jobStateLabel(item.state) }} · {{ formatNumber(item.count) }}</span>
           </div>
@@ -877,11 +927,7 @@ onUnmounted(stopPolling)
     <div v-else-if="activeSection === 'generate'" class="audio-ops__grid">
       <OrdoChartCard title="Gerar por datas" description="Monta os ofícios reais de cada dia. Reaproveita os clips que já existem e só narra o que falta." icon="＋" icon-color="blue" eyebrow="Janela de datas">
         <div class="audio-ops__form audio-ops__form--three">
-          <label>Prayer Book
-            <select v-model="generation.prayer_book_code" @change="syncOffices">
-              <option v-for="book in prayerBooks" :key="book.code" :value="book.code">{{ book.code }} · {{ book.name }}</option>
-            </select>
-          </label>
+          <OrdoBookPicker v-model="generation.prayer_book_code" class="audio-ops__book" :books="prayerBooks" :disabled="!prayerBooks.length" />
           <label>Data inicial
             <input v-model="generation.start_date" type="date">
           </label>
@@ -899,7 +945,7 @@ onUnmounted(stopPolling)
           <legend>Ofícios</legend>
           <label v-for="office in officeOptions" :key="office" class="audio-ops__check">
             <input type="checkbox" :checked="generation.offices?.includes(office)" @change="toggleOffice(office)">
-            <span>{{ humanizeKey(office) }}</span>
+            <span>{{ officeMeta(office).label }}</span>
           </label>
         </fieldset>
         <div v-if="generationError" class="audio-ops__alert audio-ops__alert--error">{{ generationError }}</div>
@@ -917,38 +963,16 @@ onUnmounted(stopPolling)
 
       <OrdoChartCard title="Livro inteiro" description="Todo texto, coleta, saltério e corpus bíblico que o livro pode ler, independente de data." icon="◫" icon-color="green" eyebrow="Livro inteiro">
         <div class="audio-ops__form audio-ops__form--single">
-          <label>Prayer Book
-            <select v-model="catalog.prayer_book_code">
-              <option v-for="book in prayerBooks" :key="book.code" :value="book.code">{{ book.code }} · {{ book.name }}</option>
-            </select>
-          </label>
+          <OrdoBookPicker v-model="catalog.prayer_book_code" :books="prayerBooks" :disabled="!prayerBooks.length" />
         </div>
-        <fieldset class="audio-ops__offices audio-ops__corpora">
-          <legend>Bíblias e saltérios</legend>
-          <span v-if="catalogCorporaLoading" class="audio-ops__corpora-status">Carregando corpora…</span>
-          <div v-else-if="catalogCorporaError" class="audio-ops__alert audio-ops__alert--error">Não foi possível carregar as Bíblias deste livro: {{ catalogCorporaError }}</div>
-          <template v-else>
-            <label v-for="corpus in catalogCorpora" :key="corpus.code" class="audio-ops__check" :title="corpus.full_name || corpus.name">
-              <input type="checkbox" :value="corpus.code" :checked="catalogSelection.includes(corpus.code)" @change="toggleCatalogCorpus(corpus.code)">
-              <span>{{ corpus.name }} <small>· {{ corpus.code }}{{ corpus.kind === 'psalter' ? ' · saltério' : '' }}</small></span>
-            </label>
-            <label class="audio-ops__check audio-ops__check--texts-only">
-              <input type="checkbox" :checked="catalogTextsOnly" @change="toggleCatalogTextsOnly">
-              <span>Somente textos e coletas (sem Bíblia)</span>
-            </label>
-          </template>
-        </fieldset>
-        <p v-if="catalogCorpora.length > 1 && !catalogCorporaLoading" class="audio-ops__note">
-          <button type="button" class="audio-ops__link" @click="selectAllCatalogCorpora">Selecionar todas</button>
-          · cada Bíblia inteira soma milhões de caracteres; todas juntas podem esgotar a cota do provedor.
-        </p>
+        <OrdoCorpusPicker v-model="catalogSelection" v-model:texts-only="catalogTextsOnly" :corpora="catalogCorpora" :loading="catalogCorporaLoading" :error="catalogCorporaError" />
         <p class="audio-ops__note">A contagem percorre corpora inteiros e roda em segundo plano. A simulação não compra nada: ela relata quantos clips faltariam.</p>
         <div v-if="catalogError" class="audio-ops__alert audio-ops__alert--error">{{ catalogError }}</div>
         <div class="audio-ops__actions">
           <button type="button" class="ordo-button ordo-button--quiet" :disabled="catalogLoading || !prayerBooks.length || !catalogReady" @click="enqueueCatalog(true)">{{ catalogLoading ? 'Enfileirando…' : 'Simular catálogo' }}</button>
           <button type="button" class="ordo-button ordo-button--primary" :disabled="catalogLoading || !prayerBooks.length || !catalogReady" @click="enqueueCatalog(false)">Gerar catálogo <span>→</span></button>
         </div>
-        <p v-if="!catalogReady" class="audio-ops__note audio-ops__catalog-hint">Escolha as Bíblias ou "somente textos".</p>
+        <p v-if="!catalogReady && !catalogCorporaLoading" class="audio-ops__note audio-ops__catalog-hint">Escolha ao menos uma Bíblia ou “Só os textos do livro”.</p>
       </OrdoChartCard>
     </div>
 
@@ -958,12 +982,7 @@ onUnmounted(stopPolling)
         <label class="audio-ops__filter-wide">Texto
           <input v-model="clipSearch" type="search" placeholder="ex.: Pai nosso…" @keyup.enter="applyClipFilters">
         </label>
-        <label>Livro de oração
-          <select v-model="clipBookFilter" @change="applyClipFilters">
-            <option value="">Todos</option>
-            <option v-for="book in prayerBooks" :key="book.code" :value="book.code">{{ book.code }}</option>
-          </select>
-        </label>
+        <OrdoBookPicker v-model="clipBookFilter" compact empty-label="Todos os livros" :books="prayerBooks" @update:model-value="applyClipFilters" />
         <label>Versão da voz
           <select v-model="clipProfileFilter" @change="applyClipFilters">
             <option value="all">Todos</option>
@@ -1085,12 +1104,7 @@ onUnmounted(stopPolling)
               <option value="stale">Instruções antigas</option>
             </select>
           </label>
-          <label>Só neste livro
-            <select v-model="cleanupBookCode">
-              <option value="">Todos</option>
-              <option v-for="book in prayerBooks" :key="book.code" :value="book.code">{{ book.code }}</option>
-            </select>
-          </label>
+          <OrdoBookPicker v-model="cleanupBookCode" label="Só neste livro" empty-label="Todos os livros" :books="prayerBooks" />
         </div>
         <div v-if="cleanupError" class="audio-ops__alert audio-ops__alert--error">{{ cleanupError }}</div>
         <div v-if="cleanupPreview" class="audio-ops__cleanup-preview">
@@ -1112,11 +1126,7 @@ onUnmounted(stopPolling)
         </div>
         <div v-else class="audio-ops__empty">A voz atual aparece depois do primeiro catálogo indexado.</div>
         <div class="audio-ops__reindex">
-          <label>Livro a reindexar
-            <select v-model="reindexBookCode">
-              <option v-for="book in prayerBooks" :key="book.code" :value="book.code">{{ book.code }}</option>
-            </select>
-          </label>
+          <OrdoBookPicker v-model="reindexBookCode" label="Livro a reindexar" :books="prayerBooks" :disabled="!prayerBooks.length" />
           <button type="button" class="ordo-button ordo-button--quiet" :disabled="reindexLoading || !prayerBooks.length" @click="reindexCatalog">{{ reindexLoading ? 'Indexando…' : 'Reindexar usos' }}</button>
         </div>
       </OrdoChartCard>
@@ -1154,6 +1164,13 @@ onUnmounted(stopPolling)
 .audio-ops__attention-item { display: flex; align-items: center; gap: 9px; min-width: 0; color: var(--op-ink); font-size: 12px; font-weight: 600; }
 .audio-ops__attention-item > span { min-width: 0; flex: 1; }
 .audio-ops__attention-item > i { display: grid; flex: 0 0 auto; width: 18px; height: 18px; place-items: center; border-radius: 50%; background: var(--op-card); color: var(--op-gold-ink); font-size: 12px; font-style: normal; font-weight: 800; }
+.audio-ops__attention-item .audio-ops__link:disabled { cursor: wait; opacity: .6; }
+.audio-ops__failures { display: grid; gap: 4px; margin: 0 0 2px 27px; padding: 0; list-style: none; }
+.audio-ops__failures li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; padding: 6px 10px; border-radius: 9px; background: var(--op-card); color: var(--op-ink); font-size: 12px; }
+.audio-ops__failures strong { font-weight: 700; }
+.audio-ops__failure-time { color: var(--op-ink-faint); font-variant-numeric: tabular-nums; }
+.audio-ops__failures small { overflow: hidden; flex-basis: 100%; color: var(--op-danger-ink); font-family: var(--op-font-mono); font-size: 11.5px; text-overflow: ellipsis; white-space: nowrap; }
+.audio-ops__failure-error { margin: 0 0 0 27px; color: var(--op-danger-ink); font-size: 12px; }
 .audio-ops__attention.is-calm { border-color: rgba(47, 106, 55, .2); background: var(--op-ok-wash); }
 .audio-ops__attention.is-calm .audio-ops__attention-item { color: var(--op-ok); font-weight: 500; }
 .audio-ops__attention.is-calm .audio-ops__attention-item > i { background: var(--op-card); color: var(--op-ok); }
@@ -1191,7 +1208,7 @@ onUnmounted(stopPolling)
 .audio-ops__badge--job-orphaned, .audio-ops__badge--job-failed { background: var(--op-danger-wash); color: var(--op-danger); }
 
 .audio-ops__form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
-.audio-ops__form--three { grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr) minmax(70px, .7fr); }
+.audio-ops__form--three { grid-template-columns: minmax(0, 1.2fr) minmax(76px, .55fr) minmax(0, 1.5fr); }
 .audio-ops__form--single { grid-template-columns: minmax(0, 1fr); }
 .audio-ops__form label, .audio-ops__filters label, .audio-ops__reindex label { display: grid; gap: 5px; min-width: 0; color: var(--op-ink-soft); font-size: 12px; font-weight: 800; }
 .audio-ops__form input, .audio-ops__form select, .audio-ops__filters input, .audio-ops__filters select, .audio-ops__reindex select { width: 100%; box-sizing: border-box; min-width: 0; padding: 9px 10px; border: 1px solid var(--op-hair); border-radius: 9px; outline: 0; background: #fff; color: var(--op-ink); font: inherit; font-size: 13px; }
@@ -1200,9 +1217,8 @@ onUnmounted(stopPolling)
 .audio-ops__check { display: inline-flex; align-items: center; gap: 6px; padding: 7px 9px; border: 1px solid var(--op-hair); border-radius: 9px; background: var(--op-paper); color: var(--op-ink-soft); font-size: 13px; }
 .audio-ops__check input { accent-color: var(--op-action); }
 .audio-ops__check small { color: var(--op-ink-faint); font-size: 12px; }
-.audio-ops__check--texts-only { border-style: dashed; }
-.audio-ops__corpora-status { color: var(--op-ink-faint); font-size: 13px; }
-.audio-ops__corpora .audio-ops__alert { width: 100%; }
+.audio-ops__book { grid-column: 1 / -1; }
+.audio-ops__skeleton { display: grid; gap: 14px; }
 .audio-ops__catalog-hint { text-align: right; }
 .audio-ops__operation-corpora { display: block; margin-top: 6px; color: var(--op-ink-soft); font-size: 12px; }
 .audio-ops__estimate { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-top: 17px; padding: 12px; border: 1px solid var(--op-hair); border-radius: 12px; background: var(--op-paper); }

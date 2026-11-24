@@ -41,8 +41,14 @@ A navegação separa **Leitura** (Visão geral, Pessoas & hábito, Prática & co
 - **Visão geral**: a faixa "Pede uma decisão" (rosários na fila e previsão de quando ela zera, tentativas de narração, tarefas de áudio travadas, chaves vencendo, regras de vida novas), pessoas na base, quem rezou, núcleo fiel (4 ou mais dias dos últimos 7), ofícios, presença por dia com cursor, horas do ofício nas cores do app, dias seguidos por faixa, lembretes que viram oração em até 2 h, aparelhos e livros em uso.
 - **Pessoas & hábito**: contas novas, tempo até a primeira oração, funil, retorno por semana de chegada, por livro e por modo (só conta quem já teve tempo de voltar), mapa-múndi e escolhas do primeiro acesso.
 - **Prática & conteúdo**: ofícios por dia, as 24 horas em ordem, livros em uso, quem mais rezou e escreveu, compartilhamentos, favoritos e orações semanais.
-- **Negócio & API**: Ordo+ agora e entre quem reza, ciclo de assinaturas, requisições, endereços mais consultados, chaves perto do limite e desenvolvedores.
+- **Negócio & API**: Ordo+ agora e entre quem reza, ciclo de assinaturas, requisições, endereços mais consultados (com o nome da documentação, `utils/endpoints.ts`), chaves perto do limite e quem usa a API: cada desenvolvedor abre um painel lateral (`DeveloperDetail.vue`, `GET /api/v1/dashboard/developers/:id`) com requisições por dia, cada chave (estado, uso, último acesso, limite), endereços, dias da semana e dias perto do limite.
 - **Operação**: a bancada de revisão de rosários, a fila de regras de vida (só leitura) e os sinais da plataforma.
+
+**Endereço.** Onde a pessoa está fica na URL, em português, e um F5 ou um link reabre o mesmo lugar: `?aba=operacao&vista=regras`, `?aba=operacao&situacao=aprovados&ordem=novos&rosario=42`, `?aba=audio&secao=gerar`, `?aba=negocio&dev=12`, `?periodo=7d` ou `?de=2026-01-01&ate=2026-03-31`. O padrão (Visão geral, 30 dias) nunca é escrito. Trocar de aba cria uma entrada no histórico; filtros só a substituem. Cada item da faixa "Pede uma decisão" abre o lugar exato que o resolve, e o login devolve ao endereço pedido (`?voltar=`, só dentro do portal). A loja é `composables/usePortalQuery.ts` (agrupa as mudanças de um mesmo instante numa navegação só), e o mapa de chaves é `utils/portalRoute.ts`.
+
+**Comparação.** Os cartões do período dizem se o número subiu ou desceu contra a janela de mesmo tamanho logo antes ("+20% vs. 30 dias anteriores (1.077)"): contas novas, quem rezou, ofícios, tempo até a primeira oração (que é bom quando cai), diários, compartilhamentos, orações semanais, lembretes que viram oração, Ordo+ entre quem reza, renovação e requisições da API. Contagens mudam em %, taxas em pontos percentuais, e mudanças pequenas aparecem como "estável" (`utils/compare.ts`). A janela anterior é lida depois que a aba aparece e não existe em "Desde sempre".
+
+**Carregamento.** Cada cartão mostra o próprio esqueleto enquanto a seção dele não chegou, em vez de um zero (`composables/useDashboardContext.ts`).
 
 A linguagem é a de quem lê, não a da API: "rezaram hoje, em 7 e em 30 dias" no lugar de DAU/WAU/MAU, "aparelhos com lembretes" no lugar de tokens FCM, "tarefas travadas" no lugar de jobs mortos.
 
@@ -64,8 +70,8 @@ A fila de regras de vida é somente leitura: existe apenas o endpoint `GET /api/
 
 O áudio tem aba própria, fora de Operação, e não depende do período de leitura (a barra de período fica oculta nela). O painel é dividido por tarefa:
 
-- **Visão geral**: só o que pede decisão aparece no topo (tentativas a revisar, jobs mortos, falhas nas últimas 24 horas); os números ficam em três listas — catálogo, qualidade e fila — com os clips por livro no rodapé; e as operações recentes ao lado da fila do worker, cuja lista de jobs fica recolhida atrás das contagens por estado.
-- **Gerar**: janela de datas e catálogo fixo. A operação enfileirada por último é acompanhada numa faixa no topo da seção que a pediu, sem voltar à visão geral.
+- **Visão geral**: só o que pede decisão aparece no topo (tentativas a revisar, jobs mortos, falhas nas últimas 24 horas, com o que falhou e um "Limpar aviso" que marca as falhas como vistas na API); a narração pronta para as próximas 4 semanas só é calculada ao pedir (a conta monta 28 dias de ofícios), e o último resultado de cada livro fica guardado no aparelho com a hora; os números ficam em três listas — catálogo, qualidade e fila — com os clips por livro no rodapé; e as operações recentes ao lado da fila do worker, cuja lista de jobs fica recolhida atrás das contagens por estado.
+- **Gerar**: janela de datas e catálogo fixo. O livro é escolhido numa lista com busca (`BookPicker.vue`: nome, código, idioma e ano), e as Bíblias e saltérios do catálogo são cartões separados por tipo, com "Só os textos do livro" como escolha à parte (`CorpusPicker.vue`). A operação enfileirada por último é acompanhada numa faixa no topo da seção que a pediu, sem voltar à visão geral.
 - **Clips**: cada clip é uma linha compacta (texto em até duas linhas, player e uso resumido). Tentativas pendentes continuam visíveis na linha, porque pedem decisão; perfil, fingerprints, todos os usos, a observação específica e a regeneração ficam em **Detalhes**. Provedor, voz e textos curtos ficam em **Mais filtros**, e os selects aplicam o filtro ao mudar.
 - **Manutenção**: limpeza de perfis antigos e reindexação, com o LOC escolhido no próprio cartão.
 
@@ -92,6 +98,10 @@ layers/ordo/
 │   ├── ReviewWorkbench.vue         bancada de revisão de rosários
 │   ├── AudioOperationsPanel.vue
 │   ├── AudioReadiness.vue          narração pronta nas próximas 4 semanas
+│   ├── BookPicker.vue              escolha de livro com busca
+│   ├── CorpusPicker.vue            Bíblias e saltérios do catálogo
+│   ├── DeveloperDetail.vue         uso das chaves de um desenvolvedor
+│   ├── DeltaChip.vue               variação contra o período anterior
 │   ├── CountryMap.vue
 │   ├── DataExplorerModal.vue
 │   └── MetricCard / ChartCard / StatList / TopList / BarList / TrendChart / Sparkline / ScopeTag / LocBadge / Icon
@@ -99,6 +109,8 @@ layers/ordo/
 │   ├── useFirebaseAuth.ts
 │   ├── useOrdoApi.ts
 │   ├── useOrdoDashboardPresentation.ts
+│   ├── usePortalQuery.ts           o lugar do portal na URL
+│   ├── useDashboardContext.ts      seções carregando e janela anterior
 │   └── useRosaryModeration.ts
 ├── middleware/ordo-auth.ts
 ├── pages/portal-do-ordo/
@@ -106,10 +118,10 @@ layers/ordo/
 │   └── index.vue
 ├── types/dashboard.ts
 ├── types/explorer.ts
-└── utils/                          period, series, liturgical, countryMap, slug
+└── utils/                          period, series, liturgical, countryMap, slug, portalRoute, compare, endpoints
 ```
 
-`pages/portal-do-ordo/index.vue` coordena autenticação, período, carregamento e navegação. Cada aba carrega suas seções em duas levas: a primeira desenha a tela, a segunda completa logo depois. As telas de domínio ficam nos componentes de painel; a Operação busca a própria fila.
+`pages/portal-do-ordo/index.vue` coordena autenticação, período, carregamento e navegação. Cada aba carrega suas seções em duas levas: a primeira desenha a tela, a segunda completa logo depois, junto com a janela anterior usada nas comparações. As telas de domínio ficam nos componentes de painel; a Operação busca a própria fila.
 
 ## Desenvolvimento
 

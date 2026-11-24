@@ -6,7 +6,9 @@ import OrdoReviewWorkbench from './ReviewWorkbench.vue'
 import OrdoSparkline from './Sparkline.vue'
 import { useOrdoApi } from '../../composables/useOrdoApi'
 import { useOrdoDashboardPresentation } from '../../composables/useOrdoDashboardPresentation'
-import { useRosaryModeration } from '../../composables/useRosaryModeration'
+import { useDashboardContext } from '../../composables/useDashboardContext'
+import { usePortalQuery } from '../../composables/usePortalQuery'
+import { useRosaryModeration, type ModerationOrder, type ModerationStatus } from '../../composables/useRosaryModeration'
 import {
   isSessionError,
   type DashboardData,
@@ -23,10 +25,68 @@ const props = defineProps<{
 
 const { formatNumber, formatPercent, formatDuration, formatDate, humanizeKey } = useOrdoDashboardPresentation()
 const { fetchLifeRules } = useOrdoApi()
-const moderation = useRosaryModeration()
+const { isPending } = useDashboardContext()
+
+// Everything that says where the operator is lives in the URL, so a reload
+// reopens the same queue, filters and rosary:
+//   ?aba=operacao&situacao=aprovados&ordem=novos&busca=salmo&pagina=2&rosario=42
+//   ?aba=operacao&vista=regras&situacao=todas&busca=jejum
+const query = usePortalQuery()
+const slugOf = <T extends string>(map: Record<T, string>, value: T) => map[value]
+const valueOf = <T extends string>(map: Record<T, string>, slug: string | undefined, fallback: T) =>
+  (Object.entries(map).find(([, item]) => item === slug)?.[0] as T | undefined) || fallback
+const pageOf = (raw?: string) => Math.max(1, Number.parseInt(raw || '1', 10) || 1)
+
+const ROSARY_STATUS: Record<ModerationStatus, string> = { pending_review: 'em-revisao', approved: 'aprovados', rejected: 'rejeitados' }
+const ROSARY_ORDER: Record<ModerationOrder, string> = { oldest: 'antigos', newest: 'novos', title: 'titulo' }
+const RULE_STATUS: Record<LifeRuleStatus, string> = { pending: 'novas', approved: 'aprovadas', all: 'todas' }
+const VIEW_KEYS = ['situacao', 'ordem', 'busca', 'pagina', 'rosario']
 
 type View = 'rosaries' | 'rules'
-const view = ref<View>('rosaries')
+const view = computed<View>({
+  get: () => query.values.value.vista === 'regras' ? 'rules' : 'rosaries',
+  set: value => {
+    if (value === view.value) return
+    query.set({ ...Object.fromEntries(VIEW_KEYS.map(key => [key, null])), vista: value === 'rules' ? 'regras' : null }, { push: true })
+    if (value === 'rosaries') writeRosaryQuery()
+    else {
+      ruleStatus.value = 'pending'
+      ruleSearch.value = ''
+      ruleOffset.value = 0
+      loadRules()
+    }
+  }
+})
+
+const initial = query.values.value
+const onRosaries = initial.vista !== 'regras'
+const moderation = useRosaryModeration(onRosaries
+  ? {
+      status: valueOf(ROSARY_STATUS, initial.situacao, 'pending_review'),
+      order: valueOf(ROSARY_ORDER, initial.ordem, 'oldest'),
+      search: initial.busca || '',
+      page: pageOf(initial.pagina),
+      selectedId: initial.rosario || null
+    }
+  : {})
+
+function writeRosaryQuery () {
+  const { status, order, search, page, selectedId } = moderation
+  query.set({
+    situacao: status.value === 'pending_review' ? null : slugOf(ROSARY_STATUS, status.value),
+    ordem: order.value === 'oldest' ? null : slugOf(ROSARY_ORDER, order.value),
+    busca: search.value.trim() || null,
+    pagina: page.value > 1 ? page.value : null,
+    rosario: selectedId.value
+  })
+}
+
+watch(
+  () => [moderation.status.value, moderation.order.value, moderation.search.value, moderation.page.value, moderation.selectedId.value],
+  () => {
+    if (view.value === 'rosaries') writeRosaryQuery()
+  }
+)
 
 const rosaryStats = computed(() => props.dashboard.moderation?.custom_rosaries)
 const lifeRuleStats = computed(() => props.dashboard.moderation?.life_rules)
@@ -54,14 +114,21 @@ const rules = ref<LifeRule[]>([])
 const rulesPagination = ref<LifeRulePagination | null>(null)
 const rulesLoading = ref(false)
 const rulesError = ref<string | null>(null)
-const ruleStatus = ref<LifeRuleStatus>('pending')
-const ruleSearch = ref('')
-const ruleOffset = ref(0)
 const RULE_LIMIT = 8
+const ruleStatus = ref<LifeRuleStatus>(onRosaries ? 'pending' : valueOf(RULE_STATUS, initial.situacao, 'pending'))
+const ruleSearch = ref(onRosaries ? '' : initial.busca || '')
+const ruleOffset = ref(onRosaries ? 0 : (pageOf(initial.pagina) - 1) * RULE_LIMIT)
 const ruleTotalPages = computed(() => Math.max(1, Math.ceil((rulesPagination.value?.total || 0) / RULE_LIMIT)))
 const rulePage = computed(() => Math.floor(ruleOffset.value / RULE_LIMIT) + 1)
 
 const loadRules = async () => {
+  if (view.value === 'rules') {
+    query.set({
+      situacao: ruleStatus.value === 'pending' ? null : slugOf(RULE_STATUS, ruleStatus.value),
+      busca: ruleSearch.value.trim() || null,
+      pagina: ruleOffset.value ? Math.floor(ruleOffset.value / RULE_LIMIT) + 1 : null
+    })
+  }
   rulesLoading.value = true
   rulesError.value = null
   try {
@@ -210,7 +277,7 @@ onMounted(() => {
         <p>Contados no período escolhido nas abas de leitura ({{ periodLabel || '30 dias' }}).</p>
       </div>
       <div class="op-grid" style="--op-min: 240px">
-        <OrdoChartCard eyebrow="Revisões" title="Como as decisões andam" scope="period">
+        <OrdoChartCard :loading="isPending('moderation')" :skeleton-height="150" eyebrow="Revisões" title="Como as decisões andam" scope="period">
           <dl class="op-kv">
             <div><dt>Aprovados</dt><dd>{{ formatNumber(rosaryStats?.approved_in_period) }}</dd></div>
             <div><dt>Rejeitados</dt><dd>{{ formatNumber(rosaryStats?.rejected_in_period) }}</dd></div>
@@ -223,7 +290,7 @@ onMounted(() => {
           </template>
         </OrdoChartCard>
 
-        <OrdoChartCard eyebrow="Lembretes" title="Entrega e efeito" scope="period">
+        <OrdoChartCard :loading="isPending('notifications')" :skeleton-height="150" eyebrow="Lembretes" title="Entrega e efeito" scope="period">
           <div v-if="notifications?.success_rate != null" style="display: flex; align-items: baseline; gap: 10px">
             <span class="op-metric__value" style="font-size: 32px">{{ formatPercent(notifications.success_rate) }}</span>
             <span class="op-faint" style="font-size: 13px">entregues de {{ formatNumber(notifications.total_in_period) }} enviados</span>
@@ -235,7 +302,7 @@ onMounted(() => {
           </template>
         </OrdoChartCard>
 
-        <OrdoChartCard v-if="lifeRuleData" eyebrow="Regras de vida" title="Adoção e exames">
+        <OrdoChartCard v-if="lifeRuleData || isPending('life_rules')" :loading="isPending('life_rules')" :skeleton-height="150" eyebrow="Regras de vida" title="Adoção e exames">
           <dl class="op-kv">
             <div><dt>Regras públicas</dt><dd>{{ formatNumber(lifeRuleData.public_rules) }}</dd></div>
             <div><dt>Adoções, ao todo</dt><dd>{{ formatNumber(lifeRuleData.total_adoptions) }}</dd></div>
@@ -248,7 +315,7 @@ onMounted(() => {
           </template>
         </OrdoChartCard>
 
-        <OrdoChartCard eyebrow="Saúde" title="O que pode estar quebrado">
+        <OrdoChartCard :loading="isPending('health')" :skeleton-height="150" eyebrow="Saúde" title="O que pode estar quebrado">
           <ul style="display: flex; flex-direction: column; gap: 12px; margin: 0; padding: 0; list-style: none">
             <li v-for="row in healthRows" :key="row.key" style="display: flex; align-items: center; gap: 10px; font-size: 14px">
               <span class="op-attn__icon" :class="row.value ? 'op-tone-warn' : 'op-tone-ok'" style="width: 24px; height: 24px; border-radius: 999px" aria-hidden="true">

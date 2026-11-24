@@ -1,5 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { flushPromises, mount } from '@vue/test-utils'
+import { defineComponent, h } from 'vue'
+import { createPortalQuery, providePortalQuery, type PortalQuery } from '../../composables/usePortalQuery'
 import type { CustomRosaryPrayer, DashboardData } from '../../types/dashboard'
 
 const rosaries: CustomRosaryPrayer[] = [
@@ -85,6 +87,21 @@ const mountPanel = async () => {
   return wrapper
 }
 
+// The panel inside a page that owns the URL, as `/portal-do-ordo?…` would be.
+const mountAt = async (url: Record<string, string>) => {
+  const writes: Array<Record<string, string>> = []
+  let query: PortalQuery | null = null
+  const Page = defineComponent({
+    setup () {
+      query = providePortalQuery(createPortalQuery({ read: () => url, write: next => { writes.push(next) } }))
+      return () => h(OperationsPanel, { dashboard, periodLabel: '30 dias' })
+    }
+  })
+  const wrapper = mount(Page, { attachTo: document.body })
+  await flushPromises()
+  return { wrapper, writes, query: query! }
+}
+
 beforeEach(() => {
   vi.clearAllMocks()
   api.fetchCustomRosaries.mockResolvedValue({ custom_rosary_prayers: rosaries, pagination: { total: 200, limit: 20, offset: 0, count: 2 } })
@@ -98,6 +115,31 @@ beforeEach(() => {
 })
 
 describe('OperationsPanel', () => {
+  it('reopens the life rules with their filter after a reload', async () => {
+    const { wrapper } = await mountAt({ aba: 'operacao', vista: 'regras', situacao: 'todas', busca: 'jejum' })
+
+    expect(wrapper.find('[aria-label="Regras de vida"]').exists()).toBe(true)
+    expect(api.fetchLifeRules).toHaveBeenCalledWith(expect.objectContaining({ status: 'all', search: 'jejum' }))
+  })
+
+  it('reopens the rosary that was in review, with the queue as it was', async () => {
+    const { wrapper } = await mountAt({ aba: 'operacao', ordem: 'novos', rosario: '2' })
+
+    expect(api.fetchCustomRosaries).toHaveBeenCalledWith(expect.objectContaining({ sort: 'created_at', direction: 'desc' }))
+    expect(wrapper.find('.op-bench__review h2').text()).toBe('Salmo 6')
+  })
+
+  it('writes the open rosary and the sub-tab into the URL', async () => {
+    const { wrapper, writes } = await mountAt({ aba: 'operacao' })
+    await new Promise(resolve => setTimeout(resolve, 0))
+    expect(writes.at(-1)).toMatchObject({ aba: 'operacao', rosario: '1' })
+
+    await wrapper.findAll('[role="tab"]').find(tab => tab.text().includes('Regras de vida'))?.trigger('click')
+    await flushPromises()
+    await new Promise(resolve => setTimeout(resolve, 0))
+    expect(writes.at(-1)).toEqual({ aba: 'operacao', vista: 'regras' })
+  })
+
   it('says what is waiting in one line', async () => {
     const wrapper = await mountPanel()
 

@@ -80,6 +80,23 @@ export const useOrdoDashboardPresentation = () => {
     })
   }
 
+  /** "há 5 min", "há 3 h", "ontem", "há 12 dias", "há 4 meses". */
+  const formatRelative = (value?: string | null, now = new Date()) => {
+    if (!value) return '—'
+    const date = new Date(value)
+    if (Number.isNaN(date.getTime())) return '—'
+    const minutes = Math.max(0, Math.round((now.getTime() - date.getTime()) / 60_000))
+    if (minutes < 1) return 'agora'
+    if (minutes < 60) return `há ${minutes} min`
+    const hours = Math.round(minutes / 60)
+    if (hours < 24) return `há ${hours} h`
+    const days = Math.round(hours / 24)
+    if (days === 1) return 'ontem'
+    if (days < 60) return `há ${days} dias`
+    const months = Math.round(days / 30)
+    return months < 24 ? `há ${months} meses` : `há ${Math.round(months / 12)} anos`
+  }
+
   const humanizeKey = (value: string) => {
     const labels: Record<string, string> = {
       morning: 'Manhã',
@@ -232,6 +249,7 @@ export const useOrdoDashboardPresentation = () => {
     formatDuration,
     formatDate,
     formatTimestamp,
+    formatRelative,
     humanizeKey,
     languageLabel,
     scopeLabel,
