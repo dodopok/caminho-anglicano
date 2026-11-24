@@ -273,6 +273,21 @@ describe('AudioOperationsPanel', () => {
     expect(wrapper.find('.audio-ops__operation-report').text()).toContain('31.383 clips resolvidos · 31.102 gerados')
   })
 
+  it('shows a run waiting for the voice provider as a retry, not as a failure', async () => {
+    const nextAttempt = new Date(Date.now() + 12 * 60_000).toISOString()
+    api.fetchAudioOperations.mockResolvedValue({
+      operations: [{ ...operation, status: 'queued', next_attempt_at: nextAttempt, error_message: 'Fish Audio fora do ar (503); nova tentativa às 18:40 (tentativa 2 de 4)' }]
+    })
+    const wrapper = await mountPanel()
+    const card = wrapper.find('.audio-ops__operation')
+
+    expect(card.find('.audio-ops__badge').text()).toBe('Nova tentativa')
+    expect(card.find('.audio-ops__operation-retry').text()).toContain('nova tentativa às 18:40')
+    expect(card.find('.audio-ops__operation-retry').text()).toMatch(/em 1[12] min/)
+    expect(card.find('.audio-ops__operation-error').exists()).toBe(false)
+    expect(wrapper.find('.audio-ops__attention').text()).toContain('1 geração espera o provedor de voz voltar')
+  })
+
   it('shows the state of each worker job instead of a flat list', async () => {
     const wrapper = await mountPanel()
 

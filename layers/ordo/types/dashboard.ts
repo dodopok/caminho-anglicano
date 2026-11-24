@@ -227,6 +227,8 @@ export interface AudioOperation {
   result?: Record<string, unknown> | null
   /** Where a catalogue run is now: the source and how many of its lines are done. */
   progress?: AudioOperationProgress | null
+  /** Set while a run waits to try again after the voice provider was down. */
+  next_attempt_at?: string | null
   error_message?: string | null
   requested_by?: string | null
   created_at?: string | null
