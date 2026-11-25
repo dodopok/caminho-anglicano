@@ -1,4 +1,5 @@
 import type { Loc } from '../types/loc'
+import { locPdfApiUrl } from './pdf-redirects'
 
 export const locs: Loc[] = [
   {
@@ -13,14 +14,14 @@ export const locs: Loc[] = [
     title: 'Livro de Oração Comum - 1987',
     description: 'Versão do LOC da Igreja Episcopal Anglicana do Brasil de 1984 - Revisão de Julho de 1987',
     thumbnailUrl: '/locs/thumbs/loc-1987.png',
-    pdfUrl: '/locs/pdfs/loc-1987.pdf'
+    pdfUrl: locPdfApiUrl('loc_1987')
   },
   {
     id: 'locb-2008',
     title: 'Livro de Oração Comum Brasileiro - 2008',
     description: 'Adotado pela Diocese do Recife - Comunhão Anglicana Sob Autoridade Primacial da Igreja Anglicana do Cone Sul da América',
     thumbnailUrl: '/locs/thumbs/locb-2008.png',
-    pdfUrl: '/locs/pdfs/locb-2008.pdf'
+    pdfUrl: locPdfApiUrl('locb_2008')
   },
   {
     id: 'loc-2009',
@@ -34,6 +35,6 @@ export const locs: Loc[] = [
     title: 'Livro de Oração Comum - IEAB - 2015',
     description: 'LOC atual da IEAB, parte de uma nova geração de Livros de Oração',
     thumbnailUrl: '/locs/thumbs/loc-2015.png',
-    pdfUrl: '/locs/pdfs/loc-2015.pdf'
+    pdfUrl: locPdfApiUrl('loc_2015')
   }
 ]
