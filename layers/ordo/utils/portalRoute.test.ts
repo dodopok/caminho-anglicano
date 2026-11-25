@@ -7,6 +7,7 @@ describe('portal route', () => {
   it('reads the tab from its Portuguese slug and falls back to the overview', () => {
     expect(tabFromSlug('operacao')).toBe('operations')
     expect(tabFromSlug('negocio')).toBe('platform')
+    expect(tabFromSlug('uso')).toBe('usage')
     expect(tabFromSlug('nada-disso')).toBe('overview')
     expect(tabFromSlug(undefined)).toBe('overview')
   })
