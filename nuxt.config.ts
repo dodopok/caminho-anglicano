@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { createClient } from '@supabase/supabase-js'
 import { isValidStateCode } from './layers/localizador/utils/states'
+import { locPdfRedirectRoutes } from './layers/locs/data/pdf-redirects'
 
 // Simple slugify for build-time use
 function slugify(text: string): string {
@@ -193,6 +194,13 @@ export default defineNuxtConfig({
   // Configuração do Nitro para deploy na Vercel
   nitro: {
     preset: 'vercel',
+    // PDFs dos LOCs que foram para a API do Ordo: redirecionam antes de a
+    // Vercel servir o arquivo de public/ (ver layers/locs/data/pdf-redirects.ts).
+    vercel: {
+      config: {
+        routes: locPdfRedirectRoutes()
+      }
+    },
     prerender: {
       crawlLinks: true,
       routes: ['/glossario']
