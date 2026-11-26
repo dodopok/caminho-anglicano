@@ -16,6 +16,9 @@ if (process.env.VERCEL || process.env.VERCEL_ENV || process.env.NOW_BUILDER) {
 // requests to this server, where server/routes/api/v1 answers from mocks/.
 // An exported real URL would only meet the fake token with a 401.
 delete process.env.NUXT_PUBLIC_ORDO_API_BASE_URL
+// The CMS's public routes (Livros: a book's documents) are answered by
+// server/routes/__mock/cms from mocks/books.mjs.
+delete process.env.NUXT_PUBLIC_ORDO_CMS_BASE_URL
 
 const ordoLayer = fileURLToPath(new URL('..', import.meta.url))
 const firebasePlugin = fileURLToPath(new URL('../plugins/firebase.client.ts', import.meta.url))
@@ -54,6 +57,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       ordoApiBaseUrl: '',
+      ordoCmsBaseUrl: '/__mock/cms',
       // Read by plugins/mock-auth.client.ts; nothing outside this folder knows it.
       ordoPortalMock: true
     }
