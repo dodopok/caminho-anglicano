@@ -35,7 +35,8 @@ const items = computed(() => {
       const name = day.celebration_name || day.week_name || ''
       const sunday = new Date(`${day.date}T12:00:00`).getDay() === 0
       const slug = slugify(name)
-      const rank = props.saints.findIndex(item => item.slug === slug || item.slug.startsWith(`${slug}-`) || slug.startsWith(item.slug))
+      // By the CMS title when the API sends it, by the slug otherwise.
+      const rank = props.saints.findIndex(item => (item.title && slugify(item.title) === slug) || item.slug === slug || item.slug.startsWith(`${slug}-`) || slug.startsWith(item.slug))
       const left = daysBetween(start, day.date) - 1
       const when = left === 0 ? 'É hoje' : left === 1 ? 'É amanhã' : `Faltam ${left} dias`
       const detail = rank >= 0

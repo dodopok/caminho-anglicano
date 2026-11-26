@@ -9,11 +9,13 @@ import {
   comparedWindow,
   compactNumber,
   contentTitle,
+  groupContent,
   dateInWindow,
   dayStates,
   featureEvents,
   funnelView,
   humanizeSlug,
+  seriesTitle,
   movingAverage,
   periodPhrase,
   rankFeatures,
@@ -105,6 +107,7 @@ describe('honest partial data', () => {
     expect(beforeFirstRollup(null, { period: empty.period, series: [point('2026-11-25', 0)] }, empty)).toBe(true)
     expect(beforeFirstRollup(null, null, null)).toBe(false)
   })
+
 
   it('says until when the numbers go', () => {
     const window = { start_date: '2026-10-27', end_date: '2026-11-25' }
@@ -228,6 +231,27 @@ describe('content and events', () => {
     expect(humanizeSlug('santo-andre-apostolo')).toBe('Santo Andre Apostolo')
     expect(humanizeSlug('todos-os-santos')).toBe('Todos os Santos')
     expect(contentTitle({ content_slug: 'todos-os-santos', title: 'Todos os Santos' })).toBe('Todos os Santos')
+  })
+
+  it('shows the API\'s title when it sends one and the slug read as words when it is null', () => {
+    expect(contentTitle({ content_slug: 'santo-andre-apostolo', title: 'Santo André, Apóstolo' })).toBe('Santo André, Apóstolo')
+    expect(contentTitle({ content_slug: 'santo-andre-apostolo', title: null })).toBe('Santo Andre Apostolo')
+    expect(contentTitle({ content_slug: 'santo-andre-apostolo', title: '  ' })).toBe('Santo Andre Apostolo')
+    expect(contentTitle({ content_slug: 'santo-andre-apostolo' })).toBe('Santo Andre Apostolo')
+    // Two events of the same slug: the line keeps the title one of them has.
+    const groups = groupContent([
+      { content_kind: 'saint', content_slug: 'santo-andre-apostolo', event: 'post_opened', count: 3, user_days: 2, title: null },
+      { content_kind: 'saint', content_slug: 'santo-andre-apostolo', event: 'post_shared', count: 1, user_days: 1, title: 'Santo André, Apóstolo' }
+    ])
+    expect(groups.saints).toHaveLength(1)
+    expect(groups.saints[0]).toMatchObject({ count: 4, title: 'Santo André, Apóstolo' })
+  })
+
+  it('reads the title of the `content?slug=` answer, or of its rows', () => {
+    expect(seriesTitle({ title: 'Todos os Santos', rows: [] })).toBe('Todos os Santos')
+    expect(seriesTitle({ title: null, rows: [{ content_kind: 'saint', content_slug: 'todos-os-santos', event: 'post_opened', count: 1, user_days: 1, title: 'Todos os Santos' }] })).toBe('Todos os Santos')
+    expect(seriesTitle({ title: null })).toBeNull()
+    expect(seriesTitle(null)).toBeNull()
   })
 
   it('reads a feast inside the window from a spike in its opens, not from a climb at the end', () => {

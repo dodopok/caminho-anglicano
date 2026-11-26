@@ -366,4 +366,60 @@ describe('UsagePanel · sections', () => {
     expect(text).toContain('Já é o 2º mais aberto')
     expect(text).toContain('Trinta e Nove Artigos')
   })
+
+  it('names content by the title the API sends, and by the slug when the title is null', async () => {
+    routes.set('/api/v1/admin/usage/content', query => query.get('slug')
+      ? new OrdoApiError('Not found', 404)
+      : {
+          period: {},
+          filter: {},
+          rows: [
+            { content_kind: 'saint', content_slug: 'santo-andre-apostolo', event: 'post_opened', count: 90, user_days: 70, title: 'Santo André, Apóstolo' },
+            { content_kind: 'saint', content_slug: 'todos-os-santos', event: 'post_opened', count: 120, user_days: 100, title: null },
+            { content_kind: null, content_slug: 'trinta-e-nove-artigos', event: 'document_opened', count: 12, user_days: 10, title: 'Os Trinta e Nove Artigos de Religião' }
+          ]
+        })
+    const { wrapper } = await mountPanel({ aba: 'uso', secao: 'conteudo' })
+    const names = wrapper.findAll('.op-rank tbody .op-rank__name').map(cell => cell.text())
+
+    expect(names[0]).toContain('Todos os Santos')
+    expect(names[1]).toContain('Santo André, Apóstolo')
+    expect(names[1]).toContain('santo-andre-apostolo')
+    expect(wrapper.text()).not.toContain('Santo Andre Apostolo')
+    expect(wrapper.find('.op-ranklist').text()).toContain('Os Trinta e Nove Artigos de Religião')
+    // The search finds the title too.
+    await wrapper.find('input[type="search"]').setValue('andré')
+    expect(wrapper.findAll('.op-rank tbody tr')).toHaveLength(1)
+  })
+
+  it('takes the title from `content?slug=` when the list has none', async () => {
+    routes.set('/api/v1/admin/usage/content', query => {
+      const slug = query.get('slug')
+      if (slug) {
+        return {
+          period: {},
+          filter: { content_slug: slug },
+          title: slug === 'santo-andre-apostolo' ? 'Santo André, Apóstolo' : null,
+          rows: [{ content_kind: 'saint', content_slug: slug, event: 'post_opened', count: 1, user_days: 1, title: null }],
+          series: days(WINDOW.start, 7).map(date => ({ date, count: 3 }))
+        }
+      }
+      return {
+        period: {},
+        filter: {},
+        rows: [
+          { content_kind: 'saint', content_slug: 'santo-andre-apostolo', event: 'post_opened', count: 90, user_days: 70 },
+          { content_kind: 'saint', content_slug: 'todos-os-santos', event: 'post_opened', count: 120, user_days: 100 }
+        ]
+      }
+    })
+    const { wrapper } = await mountPanel({ aba: 'uso', secao: 'conteudo' })
+    await flushPromises()
+    const text = wrapper.text()
+
+    expect(calls('/api/v1/admin/usage/content').some(url => url.searchParams.get('slug') === 'santo-andre-apostolo')).toBe(true)
+    expect(text).toContain('Santo André, Apóstolo')
+    expect(text).toContain('Todos os Santos')
+    expect(wrapper.find('.op-rank thead .op-soon').exists()).toBe(false)
+  })
 })

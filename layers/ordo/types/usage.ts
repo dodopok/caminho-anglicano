@@ -136,7 +136,11 @@ export interface UsageContentRow {
   event: string | null
   count: number
   user_days: number
-  /** Resolved by an API that reads the CMS; the portal cannot (the CMS needs a token). */
+  /**
+   * The content's name, resolved by the API from the CMS (the portal cannot:
+   * the CMS needs a token). Null when the API does not know it; an API from
+   * before the field leaves it out. Either way the slug is read as words.
+   */
   title?: string | null
   /** The feast day of a saint or a liturgical date (`YYYY-MM-DD` or `MM-DD`). */
   date?: string | null
@@ -147,7 +151,11 @@ export interface UsageContentRow {
 /** `content?slug=`: one slug's daily opens (item 5). */
 export interface UsageContentSeriesResponse {
   period: UsagePeriod
-  slug: string
+  slug?: string
+  filter?: { content_kind?: string; content_slug?: string }
+  /** The slug's name, as in the list's rows (null when the API does not know it). */
+  title?: string | null
+  rows?: UsageContentRow[]
   series: Array<{ date: string; count: number; user_days?: number; users?: number }>
 }
 

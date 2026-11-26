@@ -8,12 +8,13 @@ import { errorText, isNotDeployed } from '../../composables/useReport'
 import { useUsageApi } from '../../composables/useUsageApi'
 import { useUsageContext, useWindowReport } from '../../composables/useUsageContext'
 import { comparePeriods } from '../../utils/compare'
-import { contentTitle, dailyValues, dateInWindow, daysBetween, groupContent, shortDate, spikeInside, type ContentGroup, type ContentItem } from '../../utils/usage'
+import { contentTitle, dailyValues, seriesTitle, dateInWindow, daysBetween, groupContent, shortDate, spikeInside, type ContentGroup, type ContentItem } from '../../utils/usage'
 
 // Conteúdo: saints and dates, documents, articles and rosaries most opened,
-// with their trend and the change against the window before. The usage API
-// returns slugs; a name comes from the API when it resolves it (the CMS needs
-// a token the browser does not have), otherwise the slug is read as words.
+// with their trend and the change against the window before. Each row's name
+// is the `title` the API resolves from the CMS (the browser has no token for
+// it), from the list or from `content?slug=`; when it is null, the slug is
+// read as words.
 const api = useUsageApi()
 const { window, previous, reloadKey } = useUsageContext()
 const content = useWindowReport(range => api.content(range, 100, true))
@@ -36,10 +37,14 @@ watch([tab, search], () => { expanded.value = false })
 const tabMeta = computed(() => TABS.find(item => item.id === tab.value) || TABS[0])
 
 const normalize = (value: string) => value.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+// Titles that came only with `content?slug=` (an API that names the slug
+// but not the list's rows).
+const fetchedTitles = ref<Record<string, string>>({})
+const nameOf = (item: ContentItem) => contentTitle({ content_slug: item.slug, title: item.title || fetchedTitles.value[item.slug] })
 const rows = computed(() => {
   const query = normalize(search.value.trim())
   const list = groups.value[tab.value]
-  return (query ? list.filter(item => normalize(`${contentTitle({ content_slug: item.slug, title: item.title })} ${item.slug}`).includes(query)) : list).slice(0, 25)
+  return (query ? list.filter(item => normalize(`${nameOf(item)} ${item.slug}`).includes(query)) : list).slice(0, 25)
 })
 
 // Each row's daily series comes with the list (`with_series=true`); an API
@@ -61,6 +66,8 @@ const loadSparks = async () => {
     try {
       const response = await api.contentSeries(window.value, slug)
       if (current !== request) return
+      const title = seriesTitle(response)
+      if (title && fetchedTitles.value[slug] !== title) fetchedTitles.value = { ...fetchedTitles.value, [slug]: title }
       if (!Array.isArray(response?.series)) { sparksSoon.value = true; return }
       next[slug] = dailyValues(response.series, window.value, point => point.count || 0)
     } catch (error) {
@@ -112,7 +119,7 @@ const topDocuments = computed(() => groups.value.documents.slice(0, 3))
               <td class="op-rank__n">{{ index + 1 }}</td>
               <td>
                 <span class="op-rank__name">
-                  <span>{{ contentTitle({ content_slug: item.slug, title: item.title }) }}<small><template v-if="caption(item)">{{ caption(item) }} · </template><span class="op-mono">{{ item.slug }}</span></small></span>
+                  <span>{{ nameOf(item) }}<small><template v-if="caption(item)">{{ caption(item) }} · </template><span class="op-mono">{{ item.slug }}</span></small></span>
                 </span>
               </td>
               <td class="is-num"><strong>{{ fmt(item.count) }}</strong></td>
@@ -130,7 +137,7 @@ const topDocuments = computed(() => groups.value.documents.slice(0, 3))
       <p v-else class="op-empty">{{ errorText(content.error) || (search ? 'Nada com esse nome.' : tabMeta.empty) }}</p>
       <button v-if="rows.length > SHORT && !expanded" type="button" class="op-btn op-btn--small" style="align-self: flex-start" @click="expanded = true">Mostrar os {{ rows.length }}</button>
       <template #footer>
-        <span>A API de uso devolve o slug; enquanto ela não trouxer o nome do CMS, o slug é lido como nome. “—”: a data caiu dentro do período, comparar não diz nada.</span>
+        <span>O nome vem do CMS pela API; quando ela não o conhece, o slug é lido como nome. “—”: a data caiu dentro do período, comparar não diz nada.</span>
       </template>
     </OrdoChartCard>
 
@@ -140,7 +147,7 @@ const topDocuments = computed(() => groups.value.documents.slice(0, 3))
         <ol v-if="topDocuments.length" class="op-ranklist">
           <li v-for="(item, index) in topDocuments" :key="item.slug">
             <span class="op-ranklist__n">{{ index + 1 }}</span>
-            <span class="op-ranklist__copy"><strong>{{ contentTitle({ content_slug: item.slug, title: item.title }) }}</strong><span class="op-mono">{{ item.slug }}</span></span>
+            <span class="op-ranklist__copy"><strong>{{ nameOf(item) }}</strong><span class="op-mono">{{ item.slug }}</span></span>
             <span class="op-ranklist__value">{{ fmt(item.count) }}</span>
           </li>
         </ol>
