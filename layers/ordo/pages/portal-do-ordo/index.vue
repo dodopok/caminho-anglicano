@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import '../../assets/portal.css'
-import OrdoAudioOperationsPanel from '../../components/ordo/AudioOperationsPanel.vue'
+import OrdoAudioPanel from '../../components/ordo/AudioPanel.vue'
 import OrdoGrowthPanel from '../../components/ordo/GrowthPanel.vue'
 import OrdoIcon, { type OrdoIconName } from '../../components/ordo/Icon.vue'
 import OrdoOperationsPanel from '../../components/ordo/OperationsPanel.vue'
@@ -11,6 +11,7 @@ import OrdoPracticePanel from '../../components/ordo/PracticePanel.vue'
 import OrdoRail, { type RailTab } from '../../components/ordo/Rail.vue'
 import OrdoUsagePanel from '../../components/ordo/UsagePanel.vue'
 import { provideDashboardContext } from '../../composables/useDashboardContext'
+import { createPortalHead, providePortalHead } from '../../composables/usePortalHead'
 import { createPortalQuery, providePortalQuery } from '../../composables/usePortalQuery'
 import { previousLabel as previousLabelFor, previousPeriod } from '../../utils/compare'
 import { liturgicalTheme } from '../../utils/liturgical'
@@ -63,9 +64,9 @@ const TABS: TabDefinition[] = [
   { id: 'growth', label: 'Pessoas & hábito', shortLabel: 'Pessoas', icon: 'people', group: 'reading', title: 'Pessoas que permanecem', description: 'Onde uma pessoa começa e o que a faz voltar no dia seguinte.', usesPeriod: true },
   { id: 'practice', label: 'Prática & conteúdo', shortLabel: 'Prática', icon: 'book', group: 'reading', title: 'O que está sendo rezado', description: 'Ofícios, livros, horários, diários e o que a comunidade compartilha.', usesPeriod: true },
   { id: 'platform', label: 'Negócio & API', shortLabel: 'Negócio', icon: 'layers', group: 'reading', title: 'Ordo+ e integrações', description: 'Assinaturas, chaves de API e quem constrói em cima do Ordo.', usesPeriod: true },
-  { id: 'usage', label: 'Uso', shortLabel: 'Uso', icon: 'activity', group: 'reading', title: 'O que as pessoas usam', description: 'Recursos, eventos, pessoas ativas e funis do app e da web, pela telemetria própria do Ordo.', usesPeriod: true },
+  { id: 'usage', label: 'Uso', shortLabel: 'Uso', icon: 'activity', group: 'reading', title: 'O que as pessoas usam', description: 'Quem usou o Ordo, o que usou e o que mudou desde o período anterior, pela telemetria própria do app e da web.', usesPeriod: true },
   { id: 'operations', label: 'Operação', shortLabel: 'Operação', icon: 'inbox', group: 'care', title: 'Fila de cuidado', description: 'Rosários enviados pela comunidade e os sinais da plataforma que pedem alguém.', usesPeriod: false },
-  { id: 'audio', label: 'Áudio', shortLabel: 'Áudio', icon: 'audio', group: 'care', title: 'Narração do ofício', description: 'Gerar, ouvir e manter o catálogo de clips narrados.', usesPeriod: false }
+  { id: 'audio', label: 'Áudio', shortLabel: 'Áudio', icon: 'audio', group: 'care', title: 'Narração do ofício', description: 'O que os ofícios vão tocar nas próximas semanas, o que está sendo gerado agora e o que pede você.', usesPeriod: false }
 ]
 
 // The first group paints the screen; the second fills in right after, so the
@@ -106,6 +107,9 @@ const portalQuery = providePortalQuery(createPortalQuery({
   write: (query, push) => push ? router.push({ query }) : router.replace({ query })
 }))
 watch(() => route.query, query => portalQuery.sync(query))
+// A panel with sections may retitle the page ("Cobertura · loc_2015") and put
+// its own actions in the head; the tab's defaults fill whatever it leaves out.
+const pageHead = providePortalHead(createPortalHead())
 
 const activeTab = computed<DashboardTab>(() => tabFromSlug(portalQuery.values.value.aba))
 const period = computed<PeriodValue>({
@@ -122,8 +126,9 @@ const loadingTabs = ref<DashboardTab[]>([])
 const dashboardError = ref<string | null>(null)
 const lastUpdatedAt = ref<Date | null>(null)
 const audioSummary = ref<DashboardAudio | null>(null)
-// Bumped by the refresh button; the Uso panel reloads its reports on change.
+// Bumped by the refresh button; the Uso and Áudio panels reload on change.
 const usageReload = ref(0)
+const audioReload = ref(0)
 let generation = 0
 
 // How many requests are reading each section right now. A section that is
@@ -224,7 +229,7 @@ const reloadAll = async () => {
 
 const refresh = async () => {
   if (activeTab.value === 'audio') {
-    await loadAudioSummary()
+    audioReload.value += 1
     return
   }
   if (activeTab.value === 'usage') {
@@ -269,7 +274,9 @@ const shellStyle = computed(() => season.value
 const audioAttention = computed(() => {
   const summary = audioSummary.value
   if (!summary) return 0
-  return (summary.pending_candidates || 0) + (summary.worker_queue?.purgeable || 0)
+  // What asks for someone: attempts to listen to, failures nobody has seen
+  // yet and jobs that will never finish.
+  return (summary.pending_candidates || 0) + (summary.operations?.failed_last_24_hours || 0) + (summary.worker_queue?.purgeable || 0)
 })
 
 const railTabs = computed<RailTab[]>(() => TABS.map(tab => ({
@@ -285,6 +292,11 @@ const railTabs = computed<RailTab[]>(() => TABS.map(tab => ({
 })))
 
 const todayLabel = computed(() => new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }))
+const headTitle = computed(() => pageHead.head.value.title || activeDefinition.value.title)
+const headDescription = computed(() => pageHead.head.value.description || activeDefinition.value.description)
+const headActions = computed(() => pageHead.head.value.actions || [])
+const headLive = computed(() => pageHead.head.value.live || null)
+
 const updatedLabel = computed(() => {
   // Áudio reads its own data and keeps it fresh while there is work queued.
   if (activeTab.value === 'audio') return 'Ao vivo enquanto houver trabalho na fila'
@@ -296,6 +308,7 @@ const updatedLabel = computed(() => {
 })
 
 watch(activeTab, tab => {
+  pageHead.clear()
   if (authReady.value && user.value) loadTab(tab)
 })
 
@@ -318,9 +331,14 @@ watch([authReady, user], ([isReady, currentUser]) => {
           <span>{{ activeDefinition.group === 'care' ? 'Cuidado' : 'Leitura' }}</span>
           <OrdoIcon name="chevron-right" :size="14" />
           <strong>{{ activeDefinition.label }}</strong>
+          <template v-if="pageHead.head.value.crumb">
+            <OrdoIcon name="chevron-right" :size="14" />
+            <strong>{{ pageHead.head.value.crumb }}</strong>
+          </template>
         </nav>
         <div class="op-topbar__status">
-          <span class="op-live" :class="{ 'is-loading': activeLoading }"><i aria-hidden="true" />{{ activeLoading ? 'Lendo os dados…' : updatedLabel }}</span>
+          <span v-if="headLive && !activeLoading" class="op-live" :class="{ 'is-loading': headLive.tone === 'busy' }"><i aria-hidden="true" :style="headLive.tone === 'warn' ? { background: 'var(--op-gold)' } : undefined" />{{ headLive.text }}</span>
+          <span v-else class="op-live" :class="{ 'is-loading': activeLoading }"><i aria-hidden="true" />{{ activeLoading ? 'Lendo os dados…' : updatedLabel }}</span>
           <button type="button" class="op-icon-btn" aria-label="Atualizar dados" :disabled="activeLoading" @click="refresh">
             <OrdoIcon name="refresh" :size="18" />
           </button>
@@ -334,11 +352,34 @@ watch([authReady, user], ([isReady, currentUser]) => {
               <span class="op-eyebrow">{{ todayLabel }}</span>
               <span v-if="season" class="op-pill op-pill--lit"><i aria-hidden="true" />{{ season.name }}</span>
             </div>
-            <h1>{{ activeDefinition.title }}</h1>
-            <p>{{ activeDefinition.description }}</p>
+            <h1>{{ headTitle }}</h1>
+            <p>{{ headDescription }}</p>
           </div>
-          <div v-if="activeDefinition.usesPeriod" class="op-page-head__tools">
-            <OrdoPeriodPicker v-model="period" :disabled="activeLoading" />
+          <div v-if="activeDefinition.usesPeriod || headActions.length" class="op-page-head__tools">
+            <OrdoPeriodPicker v-if="activeDefinition.usesPeriod" v-model="period" :disabled="activeLoading" />
+            <div v-if="headActions.length" class="op-page-head__actions">
+              <template v-for="action in headActions" :key="action.key">
+                <button
+                  v-if="action.variant === 'link'"
+                  type="button"
+                  class="op-link"
+                  :disabled="action.disabled"
+                  @click="action.onClick()"
+                >
+                  <OrdoIcon v-if="action.icon" :name="action.icon" :size="16" />{{ action.label }}
+                </button>
+                <button
+                  v-else
+                  type="button"
+                  class="op-btn"
+                  :class="{ 'op-btn--primary': action.variant === 'primary' || !action.variant, 'op-btn--ghost': action.variant === 'ghost' }"
+                  :disabled="action.disabled"
+                  @click="action.onClick()"
+                >
+                  <OrdoIcon v-if="action.icon" :name="action.icon" :size="16" />{{ action.label }}
+                </button>
+              </template>
+            </div>
           </div>
         </section>
 
@@ -348,7 +389,7 @@ watch([authReady, user], ([isReady, currentUser]) => {
           <button type="button" class="op-btn op-btn--small" @click="refresh">Tentar de novo</button>
         </div>
 
-        <OrdoAudioOperationsPanel v-if="activeTab === 'audio'" />
+        <OrdoAudioPanel v-if="activeTab === 'audio'" :reload-key="audioReload" @summary="audioSummary = $event" />
         <OrdoOperationsPanel v-else-if="activeTab === 'operations'" :dashboard="dashboard" :loading="activeLoading" :period-label="periodShortLabel(period)" />
         <template v-else>
           <OrdoOverviewPanel v-if="activeTab === 'overview'" :dashboard="dashboard" :audio="audioSummary" :period="period" :monthly="monthly" @navigate="navigate" />

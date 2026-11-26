@@ -2,6 +2,11 @@
 // A single-series chart drawn in SVG: a line with a light area, or columns.
 // Hover or Tab moves a cursor across the days and shows the exact value, so
 // nobody has to guess a number from the height of a line.
+//
+// `previous` draws the window just before as a dashed line, day aligned with
+// day. `gaps` marks the days that have no data at all (before the telemetry
+// existed): they are striped and left out of the line instead of reading as
+// zero. `closing` shades the last days the nightly rollup may still change.
 export interface TrendPoint {
   key: string
   /** Short label for the x axis, e.g. "24 nov". */
@@ -20,11 +25,24 @@ const props = withDefaults(defineProps<{
   height?: number
   ariaLabel?: string
   format?: (value: number) => string
+  /** The previous window, index by index with `points`. */
+  previous?: Array<number | null> | null
+  previousLabel?: string
+  /** `true` where the day has no data at all. */
+  gaps?: boolean[] | null
+  gapLabel?: string
+  /** How many of the last points are still closing. */
+  closing?: number
 }>(), {
   variant: 'area',
   unit: '',
   height: 240,
   ariaLabel: undefined,
+  previous: null,
+  previousLabel: 'período anterior',
+  gaps: null,
+  gapLabel: 'sem dados',
+  closing: 0,
   format: (value: number) => Math.round(value).toLocaleString('pt-BR')
 })
 
@@ -42,15 +60,68 @@ const niceCeil = (value: number) => {
   return nice * 10 ** exponent
 }
 
-const yMax = computed(() => niceCeil(Math.max(...props.points.map(point => point.value), 0) * 1.08))
+// Round marks (500, 1 mil, 1,5 mil): the step is nice, the top is three steps.
+const yMax = computed(() => {
+  const values = [...props.points.map(point => point.value), ...(props.previous || []).map(value => value ?? 0)]
+  return niceCeil(Math.max(...values, 0) * 1.08 / 3) * 3
+})
+const isGap = (index: number) => Boolean(props.gaps?.[index])
 const count = computed(() => props.points.length)
 const xOf = (index: number) => count.value <= 1 ? VIEW_W / 2 : index / (count.value - 1) * VIEW_W
 const yOf = (value: number) => BOTTOM - value / yMax.value * (BOTTOM - TOP)
 
-const lineD = computed(() => props.points
-  .map((point, index) => `${index ? 'L' : 'M'}${xOf(index).toFixed(1)} ${yOf(point.value).toFixed(1)}`)
+// The line breaks where the data stops; each run of days gets its own area.
+const runs = computed(() => {
+  const out: number[][] = []
+  let current: number[] = []
+  props.points.forEach((_, index) => {
+    if (isGap(index)) {
+      if (current.length) out.push(current)
+      current = []
+    } else current.push(index)
+  })
+  if (current.length) out.push(current)
+  return out
+})
+const pathOf = (indexes: number[], value: (index: number) => number) => indexes
+  .map((index, position) => `${position ? 'L' : 'M'}${xOf(index).toFixed(1)} ${yOf(value(index)).toFixed(1)}`)
+  .join(' ')
+const lineD = computed(() => runs.value.map(run => pathOf(run, index => props.points[index].value)).join(' '))
+const areaD = computed(() => runs.value
+  .map(run => `${pathOf(run, index => props.points[index].value)} L${xOf(run[run.length - 1]).toFixed(1)} ${BOTTOM} L${xOf(run[0]).toFixed(1)} ${BOTTOM} Z`)
   .join(' '))
-const areaD = computed(() => lineD.value ? `${lineD.value} L${VIEW_W} ${BOTTOM} L0 ${BOTTOM} Z` : '')
+const previousD = computed(() => {
+  const previous = props.previous
+  if (!previous?.length) return ''
+  const indexes = props.points.map((_, index) => index).filter(index => previous[index] !== null && previous[index] !== undefined)
+  return indexes.length > 1 ? pathOf(indexes, index => previous[index] as number) : ''
+})
+
+// Spans of consecutive gap days, as a share of the plot's width.
+const gapBands = computed(() => {
+  const total = count.value
+  if (!props.gaps || total < 2) return []
+  const bands: Array<{ left: number; width: number }> = []
+  let start: number | null = null
+  for (let index = 0; index <= total; index += 1) {
+    const gap = index < total && isGap(index)
+    if (gap && start === null) start = index
+    if (!gap && start !== null) {
+      const left = Math.max(0, (start - .5) / (total - 1) * 100)
+      const right = Math.min(100, (index - .5) / (total - 1) * 100)
+      bands.push({ left, width: right - left })
+      start = null
+    }
+  }
+  return bands
+})
+const closingBand = computed(() => {
+  const total = count.value
+  const closing = Math.min(props.closing || 0, total)
+  if (!closing || total < 2) return null
+  const left = Math.max(0, (total - closing - .5) / (total - 1) * 100)
+  return { left, width: 100 - left }
+})
 
 const compact = (value: number) => {
   if (value >= 1_000_000) return `${(value / 1_000_000).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} mi`
@@ -90,16 +161,25 @@ const tip = computed(() => {
     : xOf(index) / VIEW_W * 100
   const top = yOf(point.value) / VIEW_H * 100
   const shiftX = left > 82 ? 'calc(-100% + 14px)' : left < 14 ? '-14px' : '-50%'
+  const previous = props.previous?.[index]
+  const gap = isGap(index)
   return {
     left,
     top,
-    style: { left: `${left}%`, top: `${top}%`, transform: `translate(${shiftX}, calc(-100% - 16px))` },
+    gap,
+    style: { left: `${left}%`, top: `${gap ? 50 : top}%`, transform: `translate(${shiftX}, calc(-100% - 16px))` },
     title: point.title,
-    value: props.format(point.value)
+    value: gap ? props.gapLabel : props.format(point.value),
+    previous: previous === null || previous === undefined ? null : props.format(previous)
   }
 })
 
-const pointLabel = (point: TrendPoint) => `${point.title}: ${props.format(point.value)}${props.unit ? ` ${props.unit}` : ''}`
+const pointLabel = (point: TrendPoint, index: number) => {
+  if (isGap(index)) return `${point.title}: ${props.gapLabel}`
+  const previous = props.previous?.[index]
+  const was = previous === null || previous === undefined ? '' : `; ${props.previousLabel}: ${props.format(previous)}`
+  return `${point.title}: ${props.format(point.value)}${props.unit ? ` ${props.unit}` : ''}${was}`
+}
 </script>
 
 <template>
@@ -117,8 +197,11 @@ const pointLabel = (point: TrendPoint) => `${point.title}: ${props.format(point.
           :style="{ top: `${tick.top}%` }"
           aria-hidden="true"
         />
+        <span v-for="(band, index) in gapBands" :key="`gap-${index}`" class="op-chart__gap" :style="{ left: `${band.left}%`, width: `${band.width}%` }" aria-hidden="true"><span v-if="band.width > 20">{{ gapLabel }}</span></span>
+        <span v-if="closingBand" class="op-chart__closing" :style="{ left: `${closingBand.left}%`, width: `${closingBand.width}%` }" aria-hidden="true"><span>fechando</span></span>
         <svg v-if="variant === 'area'" class="op-chart__svg" :viewBox="`0 0 ${VIEW_W} ${VIEW_H}`" preserveAspectRatio="none" aria-hidden="true">
           <path :d="areaD" fill="rgba(23, 84, 207, .07)" />
+          <path v-if="previousD" :d="previousD" fill="none" stroke="rgba(13, 39, 68, .4)" stroke-width="1.5" stroke-dasharray="5 5" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
           <path :d="lineD" fill="none" stroke="var(--op-action)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" />
         </svg>
         <div v-else class="op-chart__bars" aria-hidden="true">
@@ -131,10 +214,11 @@ const pointLabel = (point: TrendPoint) => `${point.title}: ${props.format(point.
         </div>
         <template v-if="tip">
           <span v-if="variant === 'area'" class="op-chart__cross" :style="{ left: `${tip.left}%` }" aria-hidden="true" />
-          <span v-if="variant === 'area'" class="op-chart__dot" :style="{ left: `${tip.left}%`, top: `${tip.top}%` }" aria-hidden="true" />
+          <span v-if="variant === 'area' && !tip.gap" class="op-chart__dot" :style="{ left: `${tip.left}%`, top: `${tip.top}%` }" aria-hidden="true" />
           <div class="op-tooltip" :style="tip.style" role="status">
             <small>{{ tip.title }}</small>
-            <strong>{{ tip.value }}<small v-if="unit">{{ unit }}</small></strong>
+            <strong>{{ tip.value }}<small v-if="unit && !tip.gap">{{ unit }}</small></strong>
+            <small v-if="tip.previous !== null">{{ previousLabel }}: {{ tip.previous }}</small>
           </div>
         </template>
         <div class="op-chart__hits">
@@ -142,7 +226,7 @@ const pointLabel = (point: TrendPoint) => `${point.title}: ${props.format(point.
             v-for="(point, index) in points"
             :key="`hit-${point.key}`"
             type="button"
-            :aria-label="pointLabel(point)"
+            :aria-label="pointLabel(point, index)"
             @mouseenter="hover = index"
             @focus="hover = index"
             @blur="hover = null"
