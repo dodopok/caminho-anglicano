@@ -35,9 +35,11 @@ export default defineNuxtConfig({
     './layers/episcopado'
   ],
 
+  // O vue-tsc não roda mais dentro do `nuxt build` (custava ~40 s por deploy e
+  // deixava o `nuxt dev` mais lento); o typecheck é o `pnpm typecheck`.
   typescript: {
     strict: true,
-    typeCheck: true
+    typeCheck: false
   },
 
   modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxtjs/sitemap'],
@@ -182,6 +184,12 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap' }
       ]
     }
+  },
+
+  // Sem sourcemaps no build de produção (o padrão do Nuxt gera os do servidor):
+  // o deploy fica mais rápido e nada muda para quem visita o site. O dev segue igual.
+  $production: {
+    sourcemap: { server: false, client: false }
   },
 
   // Otimizações de build para CSS
