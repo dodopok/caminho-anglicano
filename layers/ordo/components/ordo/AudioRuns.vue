@@ -52,11 +52,13 @@ const localFilter = (runs: AudioRun[]) => runs.filter(run => matches(run, tab.va
   && (!bookFilter.value || run.prayer_book_code === bookFilter.value))
 
 let request = 0
-const load = async (more = false) => {
+// `background` is the poll's reread: the list stays as it is (no dimming, no
+// error flash) and is swapped in place when the answer arrives.
+const load = async (more = false, background = false) => {
   const id = ++request
   if (more) loadingMore.value = true
-  else loading.value = true
-  error.value = null
+  else if (!background) loading.value = true
+  if (!background) error.value = null
   try {
     const status = TABS.find(item => item.id === tab.value)?.status || ''
     const page = await api.fetchRuns({
@@ -67,6 +69,7 @@ const load = async (more = false) => {
       limit: paged.value ? 20 : 100
     })
     if (id !== request) return
+    error.value = null
     paged.value = Boolean(page.pagination)
     if (page.pagination) {
       list.value = more ? [...list.value, ...page.operations] : page.operations
@@ -95,7 +98,7 @@ const load = async (more = false) => {
 
 watch([tab, kind, bookFilter], () => load())
 // A refresh rereads the first page; pages loaded with "Carregar mais" stay as they are.
-watch(() => store.tick.value, () => { if (list.value.length <= 20) void load() })
+watch(() => store.tick.value, () => { if (list.value.length <= 20) void load(false, true) })
 onMounted(() => load())
 
 const groups = computed(() => groupRunsByDay(list.value, store.now.value))
