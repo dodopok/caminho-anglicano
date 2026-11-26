@@ -34,5 +34,12 @@ export default [
   { name: 'uso-antes-do-resumo', path: '/portal-do-ordo?aba=uso&periodo=7d', scenario: { usage: 'antes-do-resumo' }, widths: [1440] },
   { name: 'uso-dias-faltando', path: '/portal-do-ordo?aba=uso', scenario: { usage: 'dias-faltando' }, widths: [1440] },
 
+  { name: 'livros-galeria', path: '/portal-do-ordo?aba=livros' },
+  { name: 'livros-detalhe', path: '/portal-do-ordo?aba=livros&livro=loc_2015' },
+  { name: 'livros-ranking', path: '/portal-do-ordo?aba=livros&vista=ranking' },
+  { name: 'livros-pre-lancamento', path: '/portal-do-ordo?aba=livros&livro=loc_2027' },
+  { name: 'livros-sem-api', path: '/portal-do-ordo?aba=livros', scenario: { books: 'sem-api' } },
+  { name: 'livros-sem-api-detalhe', path: '/portal-do-ordo?aba=livros&livro=loc_2015', scenario: { books: 'sem-api' }, widths: [1440] },
+
   { name: 'login', path: '/portal-do-ordo/login?mock=sem-sessao' }
 ]

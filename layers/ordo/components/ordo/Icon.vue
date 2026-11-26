@@ -53,7 +53,11 @@ const PATHS = {
   trend: 'M3.5 16.5 9 11l4 4 7.5-7.5M15 7.5h5.5V13',
   // Áudio
   // Uso
-  dash: 'M6 12h12'
+  dash: 'M6 12h12',
+  // Livros
+  shelf: 'M4 4.5h4v15.5H4zM8 7h4v13H8zM13.2 6.2l3.7-1 4 14.2-3.7 1zM3 20h18.5',
+  flag: 'M5.5 21V4M5.5 4.5h12l-2.5 4.25 2.5 4.25h-12',
+  file: 'M6.5 3.5h7.5l4.5 4.5v12.5h-12zM14 3.5V8h4.5M9 13h6M9 16.5h6'
 } as const
 
 export type OrdoIconName = keyof typeof PATHS

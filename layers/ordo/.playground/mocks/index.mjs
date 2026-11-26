@@ -9,22 +9,25 @@
 //   dashboard  normal | vazio                       main tabs and Operação (dashboard.mjs)
 //   audio      normal | provedor-fora               Áudio (audio.mjs)
 //   usage      normal | antes-do-resumo | dias-faltando | status-nulo   Uso (usage.mjs)
+//   books      normal | sem-api                    Livros (books.mjs; sem-api: /admin/prayer_books 404)
 //
 // Each fixture is pinned to one instant (2026-11-26, afternoon, Brasília); the
 // playground pins the browser clock to it too (server/plugins/mock-clock.ts),
 // so "hoje", "há 5 min" and the charts read the same in dev and in the shots.
 
 import { handle as audio, NOW as AUDIO_NOW } from './audio.mjs'
+import { handle as books, cms as booksCms } from './books.mjs'
 import { handle as dashboard } from './dashboard.mjs'
 import { handle as usage } from './usage.mjs'
 
 export const SCENARIOS = {
   dashboard: ['normal', 'vazio'],
   audio: ['normal', 'provedor-fora'],
-  usage: ['normal', 'antes-do-resumo', 'dias-faltando', 'status-nulo']
+  usage: ['normal', 'antes-do-resumo', 'dias-faltando', 'status-nulo'],
+  books: ['normal', 'sem-api']
 }
 
-export const DEFAULT_SCENARIO = { dashboard: 'normal', audio: 'normal', usage: 'normal' }
+export const DEFAULT_SCENARIO = { dashboard: 'normal', audio: 'normal', usage: 'normal', books: 'normal' }
 
 // The instant the browser clock is pinned to, by the tab the page opens on
 // (`?aba=`): Áudio's stories happen at 15:10 (14:05 with the provider down),
@@ -42,14 +45,20 @@ const notFound = pathname => ({
 
 /**
  * Order matters: the dashboard answers /api/v1/dashboard (all sections, the
- * Uso tab's completions included), Áudio answers /admin/audio/* and the
- * narration series, Uso the rest of /admin/usage/*, the calendar and the books.
+ * Uso tab's completions included), Áudio answers /admin/audio/*, the
+ * narration series and the public catalog, Livros /admin/prayer_books and the
+ * PDF and document opens by book, Uso the rest of /admin/usage/* and the
+ * calendar.
  */
 export function respond ({ method = 'GET', pathname, query, body = null, scenario = DEFAULT_SCENARIO }) {
   const params = query instanceof URLSearchParams ? query : new URLSearchParams(query || '')
   const args = { method, pathname, query: params, body }
   return dashboard({ ...args, scenario: scenario.dashboard })
     || audio({ ...args, scenario: scenario.audio })
+    || books({ ...args, scenario: scenario.books })
     || usage({ ...args, scenario: scenario.usage })
     || notFound(pathname)
 }
+
+/** The CMS's public routes the portal reads (Livros: a book's documents), served under /__mock/cms. */
+export const respondCms = pathname => booksCms(pathname) || notFound(pathname)

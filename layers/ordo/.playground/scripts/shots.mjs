@@ -94,6 +94,7 @@ if (baseUrl) {
   if (!await answers(baseUrl)) throw new Error('O build do playground não subiu')
 }
 
+const { DEFAULT_SCENARIO } = await import(pathToFileURL(join(PLAYGROUND, 'mocks/index.mjs')).href)
 const { chromium } = await import('@playwright/test')
 mkdirSync(args.out, { recursive: true })
 const browser = await chromium.launch()
@@ -101,7 +102,7 @@ let failures = 0
 
 try {
   for (const route of routes) {
-    const scenario = new URLSearchParams({ dashboard: 'normal', audio: 'normal', usage: 'normal', ...route.scenario })
+    const scenario = new URLSearchParams({ ...DEFAULT_SCENARIO, ...route.scenario })
     const switched = await fetch(`${baseUrl}/__mock/scenario?${scenario}`)
     if (!switched.ok) throw new Error(`Cenário inválido em ${route.name}: ${await switched.text()}`)
 
@@ -145,7 +146,7 @@ try {
 } finally {
   await browser.close()
   // Back to the defaults, so the dev server isn't left on a story.
-  await fetch(`${baseUrl}/__mock/scenario?dashboard=normal&audio=normal&usage=normal`).catch(() => {})
+  await fetch(`${baseUrl}/__mock/scenario?${new URLSearchParams(DEFAULT_SCENARIO)}`).catch(() => {})
   server?.kill()
 }
 
