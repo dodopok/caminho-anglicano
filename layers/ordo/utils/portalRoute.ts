@@ -5,7 +5,7 @@ import type { QueryPatch } from '../composables/usePortalQuery'
  * The portal's address: `/portal-do-ordo?aba=operacao&vista=regras`. Keys and
  * values are Portuguese so a copied link reads like the screen it opens.
  */
-export type PortalTab = 'overview' | 'growth' | 'practice' | 'platform' | 'usage' | 'operations' | 'audio'
+export type PortalTab = 'overview' | 'growth' | 'practice' | 'platform' | 'usage' | 'operations' | 'audio' | 'flags'
 
 export const TAB_SLUGS: Record<PortalTab, string> = {
   overview: 'visao-geral',
@@ -14,7 +14,8 @@ export const TAB_SLUGS: Record<PortalTab, string> = {
   platform: 'negocio',
   usage: 'uso',
   operations: 'operacao',
-  audio: 'audio'
+  audio: 'audio',
+  flags: 'flags'
 }
 
 export const DEFAULT_TAB: PortalTab = 'overview'

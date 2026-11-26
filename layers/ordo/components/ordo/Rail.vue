@@ -42,6 +42,20 @@ const grouped = computed(() => GROUPS.map(group => ({
 
 const initial = computed(() => (props.user?.displayName || props.user?.email || 'A').charAt(0).toUpperCase())
 const countLabel = (tab: RailTab) => tab.count ? `${tab.count.toLocaleString('pt-BR')} esperando` : ''
+
+// On a phone the tabs scroll sideways; the active one is brought into view,
+// so a tab at the end (Feature flags) is not hidden off screen.
+const mobileNav = ref<HTMLElement | null>(null)
+const revealActive = () => nextTick(() => {
+  const nav = mobileNav.value
+  const item = nav?.querySelector<HTMLElement>('.is-active')
+  if (!nav || !item || nav.scrollWidth <= nav.clientWidth) return
+  const navBox = nav.getBoundingClientRect()
+  const itemBox = item.getBoundingClientRect()
+  nav.scrollLeft += itemBox.left - navBox.left - (navBox.width - itemBox.width) / 2
+})
+onMounted(revealActive)
+watch(() => props.active, revealActive)
 </script>
 
 <template>
@@ -116,7 +130,7 @@ const countLabel = (tab: RailTab) => tab.count ? `${tab.count.toLocaleString('pt
         <OrdoIcon name="logout" :size="18" />
       </button>
     </div>
-    <nav class="op-mobile-bar__nav" aria-label="Seções do portal">
+    <nav ref="mobileNav" class="op-mobile-bar__nav" aria-label="Seções do portal">
       <button
         v-for="tab in tabs"
         :key="tab.id"

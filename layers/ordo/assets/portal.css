@@ -842,6 +842,94 @@ select.op-field { padding-right: 40px; appearance: none; background-image: url("
   .op-kv { --op-kv-cols: 2; }
 }
 
+/* ---------- Feature flags: peças desta aba ----------
+   Cartões neutros, sem borda colorida: a cor fica no interruptor, nos selos e
+   nos pontos de estado. Avisos de impacto são só texto. */
+
+/* Interruptor de uma flag. Verde só ligado; azul quando parcial. */
+.op-switch { position: relative; display: inline-flex; flex: 0 0 auto; align-items: center; width: 44px; height: 26px; padding: 0; border: 0; border-radius: 999px; background: rgba(13, 39, 68, .18); cursor: pointer; transition: background .15s; }
+.op-switch::after { position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 999px; background: #fff; box-shadow: 0 1px 3px rgba(13, 39, 68, .3); content: ''; transition: transform .15s; }
+.op-switch.is-on { background: var(--op-ok); }
+.op-switch.is-on::after { transform: translateX(18px); }
+.op-switch.is-partial { background: var(--op-action); }
+.op-switch.is-partial::after { transform: translateX(9px); }
+.op-switch:disabled { cursor: progress; opacity: .6; }
+.op-switch:focus-visible { outline: 2px solid var(--op-action); outline-offset: 2px; }
+.op-switch-label { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; white-space: nowrap; }
+
+/* Uma flag na lista do celular (e onde a tabela não cabe). */
+.op-mlist { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.op-mlist > li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 6px 12px; padding: 13px 0; border-top: 1px solid var(--op-hair-soft); }
+.op-mlist > li:first-child { border-top: 0; }
+.op-mlist__copy { display: flex; flex-direction: column; gap: 4px; min-width: 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.op-mlist__copy strong { font-size: 14.5px; }
+.op-mlist__copy small { color: var(--op-ink-faint); font-size: 12.5px; line-height: 1.4; overflow-wrap: anywhere; }
+.op-mlist__copy .op-mono { color: var(--op-ink-faint); overflow-wrap: anywhere; }
+.op-mlist__when { color: var(--op-action) !important; }
+
+/* Escolha entre duas opções com explicação (tipo da flag). */
+.op-choice { display: flex; gap: 12px; padding: 14px; border: 1.5px solid var(--op-hair); border-radius: 14px; background: var(--op-card); color: var(--op-ink); cursor: pointer; text-align: left; }
+.op-choice.is-on { border-color: var(--op-action); box-shadow: 0 0 0 3px rgba(23, 84, 207, .1); }
+.op-choice__radio { flex: 0 0 auto; width: 20px; height: 20px; margin-top: 1px; border: 2px solid rgba(13, 39, 68, .3); border-radius: 999px; }
+.op-choice.is-on .op-choice__radio { border: 6px solid var(--op-action); }
+.op-choice__copy { display: flex; flex-direction: column; gap: 3px; min-width: 0; font-size: 13.5px; line-height: 1.45; }
+.op-choice__copy strong { font-size: 14.5px; }
+.op-choice__copy span { color: var(--op-ink-soft); }
+
+/* Porcentagem da regra geral: o número, a barra e os atalhos. */
+.op-pct { display: grid; grid-template-columns: auto minmax(160px, 1fr) auto; align-items: center; gap: 12px 18px; }
+.op-pct__value { display: inline-flex; align-items: center; gap: 6px; font-family: var(--op-font-display); font-size: 26px; font-weight: 600; }
+.ordo-shell .op-pct__value .op-field { width: 84px; font-family: var(--op-font-display); font-size: 22px; font-weight: 600; text-align: right; }
+.op-pct__bar { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.op-pct__bar .op-track { height: 10px; }
+.op-pct__marks { display: flex; justify-content: space-between; color: var(--op-ink-faint); font-size: 11px; }
+.op-pct__chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* Lista de texto simples (explicações, o que acontece). */
+.ordo-shell .op-plain { display: flex; flex-direction: column; gap: 6px; margin: 6px 0 0; padding-left: 18px; list-style: disc; font-size: 13.5px; line-height: 1.5; }
+.op-plain li::marker { color: var(--op-ink-faint); }
+
+/* Diálogo de confirmação. No celular vira uma folha que sobe de baixo. */
+.op-dialog-backdrop { position: fixed; inset: 0; z-index: 50; display: grid; padding: 24px; place-items: center; background: rgba(13, 39, 68, .45); }
+.op-dialog { display: flex; flex-direction: column; gap: 18px; width: min(620px, 100%); max-height: calc(100vh - 48px); overflow: auto; padding: 26px; border-radius: 24px; background: var(--op-card); box-shadow: 0 30px 80px -30px rgba(13, 39, 68, .6); }
+.op-dialog--wide { width: min(660px, 100%); }
+.op-dialog__grip { display: none; }
+.op-dialog__title { margin: 2px 0 6px; font-family: var(--op-font-display); font-size: 25px; font-weight: 600; line-height: 1.2; overflow-wrap: anywhere; }
+.op-dialog__lead { margin: 0; color: var(--op-ink-soft); font-size: 14px; line-height: 1.5; }
+.op-dialog__title .op-mono { font-size: .8em; font-weight: 600; }
+.op-dialog__actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.op-confirm { display: flex; flex-direction: column; gap: 8px; padding: 14px; border-radius: 14px; background: var(--op-paper); }
+.op-confirm > strong, .op-confirm label { font-size: 13.5px; font-weight: 600; }
+.op-confirm code { padding: 1px 6px; border-radius: 6px; background: var(--op-card); font: 700 12.5px var(--op-font-mono); overflow-wrap: anywhere; }
+.op-confirm__field { position: relative; }
+.op-confirm__field .op-field { padding-right: 40px; }
+.op-confirm__field svg { position: absolute; top: 13px; right: 14px; color: var(--op-ok); }
+
+/* Uma mudança no histórico, com Desfazer. */
+.op-moves__copy { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.op-moves__copy small { display: block; color: var(--op-ink-faint); font-size: 12px; }
+.op-moves li.is-undone .op-moves__copy { color: var(--op-ink-faint); text-decoration: line-through; }
+
+/* Uma coluna de cartões dentro de .op-row. */
+.op-col { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+
+/* Um bloco de papel dentro do cartão (agendamento marcado, prévia). */
+.op-paperbox { display: flex; flex-direction: column; gap: 8px; padding: 12px 14px; border-radius: 14px; background: var(--op-paper); font-size: 14px; }
+
+@media (max-width: 900px) {
+  .op-pct { grid-template-columns: auto minmax(0, 1fr); }
+  .op-pct__chips { grid-column: 1 / -1; }
+  /* The three rules side by side across the card, a long label on two lines. */
+  .ordo-shell .op-seg--fill { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-self: stretch !important; overflow: visible; }
+  .op-seg--fill button { min-width: 0; padding: 4px 6px; line-height: 1.15; white-space: normal; }
+  .op-dialog-backdrop { align-items: end; padding: 0; place-items: end stretch; }
+  .op-dialog, .op-dialog--wide { width: 100%; max-height: 92vh; gap: 16px; padding: 10px 18px 24px; border-radius: 22px 22px 0 0; }
+  .op-dialog__grip { display: block; width: 40px; height: 5px; margin: 0 auto 4px; border-radius: 999px; background: rgba(13, 39, 68, .18); }
+  .op-dialog__title { font-size: 22px; }
+  .op-dialog__actions { flex-direction: column-reverse; }
+  .op-dialog__actions .op-btn { width: 100%; }
+}
+
 /* iOS Safari zooms into any field whose text is under 16px when it gets focus.
    On phones every field gets 16px, so the page stays put; pinch zoom is not
    disabled. */

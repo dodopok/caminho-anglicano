@@ -9,6 +9,7 @@
 //   dashboard  normal | vazio                       main tabs and Operação (dashboard.mjs)
 //   audio      normal | provedor-fora               Áudio (audio.mjs)
 //   usage      normal | antes-do-resumo | dias-faltando | status-nulo   Uso (usage.mjs)
+//   flags      normal | agendadas | porcentagem | sem-api              Feature flags (flags.mjs)
 //
 // Each fixture is pinned to one instant (2026-11-26, afternoon, Brasília); the
 // playground pins the browser clock to it too (server/plugins/mock-clock.ts),
@@ -16,15 +17,17 @@
 
 import { handle as audio, NOW as AUDIO_NOW } from './audio.mjs'
 import { handle as dashboard } from './dashboard.mjs'
+import { handle as flags } from './flags.mjs'
 import { handle as usage } from './usage.mjs'
 
 export const SCENARIOS = {
   dashboard: ['normal', 'vazio'],
   audio: ['normal', 'provedor-fora'],
-  usage: ['normal', 'antes-do-resumo', 'dias-faltando', 'status-nulo']
+  usage: ['normal', 'antes-do-resumo', 'dias-faltando', 'status-nulo'],
+  flags: ['normal', 'agendadas', 'porcentagem', 'sem-api']
 }
 
-export const DEFAULT_SCENARIO = { dashboard: 'normal', audio: 'normal', usage: 'normal' }
+export const DEFAULT_SCENARIO = { dashboard: 'normal', audio: 'normal', usage: 'normal', flags: 'normal' }
 
 // The instant the browser clock is pinned to, by the tab the page opens on
 // (`?aba=`): Áudio's stories happen at 15:10 (14:05 with the provider down),
@@ -43,7 +46,8 @@ const notFound = pathname => ({
 /**
  * Order matters: the dashboard answers /api/v1/dashboard (all sections, the
  * Uso tab's completions included), Áudio answers /admin/audio/* and the
- * narration series, Uso the rest of /admin/usage/*, the calendar and the books.
+ * narration series, Uso the rest of /admin/usage/*, the calendar and the books,
+ * Feature flags /admin/feature_flags*, /admin/feature_flag_changes* and /admin/users.
  */
 export function respond ({ method = 'GET', pathname, query, body = null, scenario = DEFAULT_SCENARIO }) {
   const params = query instanceof URLSearchParams ? query : new URLSearchParams(query || '')
@@ -51,5 +55,6 @@ export function respond ({ method = 'GET', pathname, query, body = null, scenari
   return dashboard({ ...args, scenario: scenario.dashboard })
     || audio({ ...args, scenario: scenario.audio })
     || usage({ ...args, scenario: scenario.usage })
+    || flags({ ...args, scenario: scenario.flags })
     || notFound(pathname)
 }

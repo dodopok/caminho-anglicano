@@ -101,7 +101,7 @@ let failures = 0
 
 try {
   for (const route of routes) {
-    const scenario = new URLSearchParams({ dashboard: 'normal', audio: 'normal', usage: 'normal', ...route.scenario })
+    const scenario = new URLSearchParams({ dashboard: 'normal', audio: 'normal', usage: 'normal', flags: 'normal', ...route.scenario })
     const switched = await fetch(`${baseUrl}/__mock/scenario?${scenario}`)
     if (!switched.ok) throw new Error(`Cenário inválido em ${route.name}: ${await switched.text()}`)
 
@@ -125,12 +125,14 @@ try {
         await page.goto(`${baseUrl}${route.path}`, { waitUntil: 'networkidle', timeout: 30_000 })
         await page.evaluate(() => document.fonts.ready)
         if (route.click) {
-          await page.getByRole('button', { name: route.click }).first().click({ timeout: 5_000 })
+          // A button by its name, or { role, name } for another control (a switch).
+          const target = typeof route.click === 'string' ? { role: 'button', name: route.click } : route.click
+          await page.getByRole(target.role, { name: target.name }).first().click({ timeout: 5_000 })
           await page.waitForLoadState('networkidle')
         }
         await page.waitForTimeout(600)
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)
-        await page.screenshot({ path: file, fullPage: true })
+        await page.screenshot({ path: file, fullPage: route.fullPage !== false })
         const height = await page.evaluate(() => document.documentElement.scrollHeight)
         if (errors.length) failures++
         console.log(`${relative(ROOT, file)} ${width}x${height}${overflow ? ' OVERFLOW-X' : ''}${errors.length ? `  ERROS: ${errors.slice(0, 3).join(' | ')}` : ''}`)
@@ -145,7 +147,7 @@ try {
 } finally {
   await browser.close()
   // Back to the defaults, so the dev server isn't left on a story.
-  await fetch(`${baseUrl}/__mock/scenario?dashboard=normal&audio=normal&usage=normal`).catch(() => {})
+  await fetch(`${baseUrl}/__mock/scenario?dashboard=normal&audio=normal&usage=normal&flags=normal`).catch(() => {})
   server?.kill()
 }
 

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import '../../assets/portal.css'
 import OrdoAudioPanel from '../../components/ordo/AudioPanel.vue'
+import OrdoFlagsPanel from '../../components/ordo/FlagsPanel.vue'
 import OrdoGrowthPanel from '../../components/ordo/GrowthPanel.vue'
 import OrdoIcon, { type OrdoIconName } from '../../components/ordo/Icon.vue'
 import OrdoOperationsPanel from '../../components/ordo/OperationsPanel.vue'
@@ -66,7 +67,8 @@ const TABS: TabDefinition[] = [
   { id: 'platform', label: 'Negócio & API', shortLabel: 'Negócio', icon: 'layers', group: 'reading', title: 'Ordo+ e integrações', description: 'Assinaturas, chaves de API e quem constrói em cima do Ordo.', usesPeriod: true },
   { id: 'usage', label: 'Uso', shortLabel: 'Uso', icon: 'activity', group: 'reading', title: 'O que as pessoas usam', description: 'Quem usou o Ordo, o que usou e o que mudou desde o período anterior, pela telemetria própria do app e da web.', usesPeriod: true },
   { id: 'operations', label: 'Operação', shortLabel: 'Operação', icon: 'inbox', group: 'care', title: 'Fila de cuidado', description: 'Rosários enviados pela comunidade e os sinais da plataforma que pedem alguém.', usesPeriod: false },
-  { id: 'audio', label: 'Áudio', shortLabel: 'Áudio', icon: 'audio', group: 'care', title: 'Narração do ofício', description: 'O que os ofícios vão tocar nas próximas semanas, o que está sendo gerado agora e o que pede você.', usesPeriod: false }
+  { id: 'audio', label: 'Áudio', shortLabel: 'Áudio', icon: 'audio', group: 'care', title: 'Narração do ofício', description: 'O que os ofícios vão tocar nas próximas semanas, o que está sendo gerado agora e o que pede você.', usesPeriod: false },
+  { id: 'flags', label: 'Feature flags', shortLabel: 'Flags', icon: 'flag', group: 'care', title: 'Feature flags', description: 'O que está ligado e para quem, o que muda sozinho em breve e os livros em pré-lançamento.', usesPeriod: false }
 ]
 
 // The first group paints the screen; the second fills in right after, so the
@@ -79,7 +81,9 @@ const SECTIONS: Record<DashboardTab, DashboardSectionName[][]> = {
   // Uso reads its own reports (/api/v1/admin/usage/*), not /dashboard.
   usage: [[]],
   operations: [['moderation', 'notifications', 'health', 'life_rules', 'custom_rosaries']],
-  audio: [[]]
+  audio: [[]],
+  // Feature flags reads /api/v1/admin/feature_flags, not /dashboard.
+  flags: [[]]
 }
 
 // The sections whose period numbers a card compares with the window just
@@ -91,7 +95,8 @@ const COMPARED: Record<DashboardTab, DashboardSectionName[]> = {
   platform: ['premium', 'api'],
   usage: [],
   operations: [],
-  audio: []
+  audio: [],
+  flags: []
 }
 
 const { user, logout, ready: authReady } = useFirebaseAuth()
@@ -129,6 +134,7 @@ const audioSummary = ref<DashboardAudio | null>(null)
 // Bumped by the refresh button; the Uso and Áudio panels reload on change.
 const usageReload = ref(0)
 const audioReload = ref(0)
+const flagsReload = ref(0)
 let generation = 0
 
 // How many requests are reading each section right now. A section that is
@@ -241,6 +247,10 @@ const refresh = async () => {
     usageReload.value += 1
     return
   }
+  if (activeTab.value === 'flags') {
+    flagsReload.value += 1
+    return
+  }
   const sections = SECTIONS[activeTab.value].flat()
   loadedSections.value = loadedSections.value.filter(section => !sections.includes(section))
   if (activeTab.value === 'overview') loadAudioSummary()
@@ -307,6 +317,8 @@ const updatedLabel = computed(() => {
   if (activeTab.value === 'audio') return 'Ao vivo enquanto houver trabalho na fila'
   // Uso reads the nightly rollups: a day closes in the early hours of the next.
   if (activeTab.value === 'usage') return 'Resumos diários, fechados toda madrugada'
+  // A flag change reaches the server within its 1-minute cache.
+  if (activeTab.value === 'flags') return 'Valem no app em até 1 min'
   return lastUpdatedAt.value
     ? `Dados de ${lastUpdatedAt.value.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })} · atualizam a cada 10 min`
     : 'Lendo os dados…'
@@ -395,6 +407,7 @@ watch([authReady, user], ([isReady, currentUser]) => {
         </div>
 
         <OrdoAudioPanel v-if="activeTab === 'audio'" :reload-key="audioReload" @summary="audioSummary = $event" />
+        <OrdoFlagsPanel v-else-if="activeTab === 'flags'" :reload-key="flagsReload" />
         <OrdoOperationsPanel v-else-if="activeTab === 'operations'" :dashboard="dashboard" :loading="activeLoading" :period-label="periodShortLabel(period)" />
         <template v-else>
           <OrdoOverviewPanel v-if="activeTab === 'overview'" :dashboard="dashboard" :audio="audioSummary" :period="period" :monthly="monthly" @navigate="navigate" />
