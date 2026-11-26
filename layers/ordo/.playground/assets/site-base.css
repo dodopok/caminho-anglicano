@@ -1,0 +1,5 @@
+/* The site's global base under the portal: Tailwind's preflight (the root
+   app imports it through @nuxtjs/tailwindcss) and the utilities of app.vue's
+   wrapper. Tailwind only scans app.vue here. */
+@tailwind base;
+@tailwind utilities;
