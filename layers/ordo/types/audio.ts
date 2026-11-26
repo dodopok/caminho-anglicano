@@ -86,9 +86,19 @@ export interface AudioSourceCount {
   missing_characters: number
 }
 
+/** The day in the book's own calendar: "1º Domingo do Advento", its colour and rank. */
+export interface AudioLiturgicalDay {
+  name: string
+  /** The book's colour code (`green`, `purple`, `white`…); null when it has none. */
+  color: string | null
+  rank: string | null
+}
+
 export interface AudioCalendarDay {
   date: string
   offices: Record<AudioOffice, AudioCoverageCount>
+  /** An API from before the field leaves it out: the day shows by its date only. */
+  liturgical_day?: AudioLiturgicalDay | null
 }
 
 export interface AudioReadinessDetail {

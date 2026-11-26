@@ -16,6 +16,7 @@ import {
   coverageText,
   costOf,
   firstGap,
+  liturgicalDaysFrom,
   number,
   officeOrder,
   percentOf,
@@ -141,6 +142,10 @@ const sourceMax = computed(() => Math.max(...(bySource.value || []).map(item => 
 const book = computed(() => store.bookOf(code.value))
 const offices = computed(() => officeOrder(stored.value?.offices?.length ? stored.value.offices : estimateData.value?.offices?.length ? estimateData.value.offices : book.value?.available_offices?.length ? book.value.available_offices : ['morning', 'midday', 'evening', 'compline']))
 const cells = computed(() => stored.value ? calendarFromDays(stored.value.calendar) : calendarFromRows(estimateData.value?.rows || []))
+// The day's name in the book's calendar comes with the stored detail; the
+// estimate and an API from before the field have none, and the day shows by
+// its date.
+const liturgical = computed(() => liturgicalDaysFrom(stored.value?.calendar))
 const start = computed(() => stored.value?.start_date || today)
 const columns = computed(() => calendarColumns(start.value, days.value, today))
 const pick = computed(() => picked.value || firstGap(cells.value, columns.value, offices.value))
@@ -193,7 +198,7 @@ const loading = computed(() => !source.value && !failed.value)
       <span v-if="source === 'stored'" class="op-pill op-pill--quiet"><OrdoIcon name="clock" :size="14" />Calculado às {{ clock(stored?.computed_at) }}</span>
       <span v-else class="op-pill op-pill--ok"><OrdoIcon name="check" :size="14" />Calculado agora pela estimativa</span>
     </div>
-    <OrdoAudioCoverageCalendar :columns="columns" :offices="offices" :cells="cells" :picked="pick" @pick="(date, office) => picked = { date, office }" />
+    <OrdoAudioCoverageCalendar :columns="columns" :offices="offices" :cells="cells" :liturgical="liturgical" :picked="pick" @pick="(date, office) => picked = { date, office }" />
     <div class="op-panel__foot">
       <span class="op-legend">
         <span><i class="op-swatch op-c4" />tudo pronto</span>
@@ -234,6 +239,7 @@ const loading = computed(() => !source.value && !failed.value)
       :date="pick.date"
       :office="pick.office"
       :cell="pickedCell"
+      :liturgical-day="liturgical[pick.date] || null"
       @generate="generateDay"
     />
   </section>

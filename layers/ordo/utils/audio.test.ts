@@ -11,11 +11,13 @@ import {
   coverageRows,
   coverageText,
   dayLabel,
+  dayTitle,
   estimateFinish,
   failureCopy,
   firstGap,
   groupRunsByDay,
   hiddenBibleCount,
+  liturgicalDaysFrom,
   retrySchedule,
   runningNowCount,
   runningNowText,
@@ -29,6 +31,7 @@ import {
   weeklyCost,
   worstFirst
 } from './audio'
+import { liturgicalColor, liturgicalColorName } from './liturgical'
 import type { AudioReadinessBible, AudioReadinessResponse, AudioRun } from '../types/audio'
 
 process.env.TZ = 'America/Sao_Paulo'
@@ -271,5 +274,34 @@ describe('ordering a generation', () => {
     expect(runningNowText(1)).toBe('1 geração rodando agora — esta vai dividir o worker e pode demorar mais')
     expect(runningNowText(2)).toBe('2 gerações rodando agora — esta vai dividir o worker e pode demorar mais')
     expect(runningNowText(0)).toBeNull()
+  })
+})
+
+describe('the liturgical day of the coverage calendar', () => {
+  it('keeps the days the API names, by date, and leaves the others out', () => {
+    const days = liturgicalDaysFrom([
+      { date: '2026-11-29', offices: {}, liturgical_day: { name: ' 1º Domingo do Advento ', color: 'purple', rank: 'sunday' } },
+      { date: '2026-11-30', offices: {}, liturgical_day: { name: '', color: 'red', rank: null } },
+      { date: '2026-12-01', offices: {}, liturgical_day: null },
+      { date: '2026-12-02', offices: {} }
+    ])
+    expect(days).toEqual({ '2026-11-29': { name: '1º Domingo do Advento', color: 'purple', rank: 'sunday' } })
+    expect(liturgicalDaysFrom(undefined)).toEqual({})
+  })
+
+  it('writes the date with the name, or the date alone', () => {
+    expect(dayTitle('2026-11-29', { name: '1º Domingo do Advento', color: 'purple', rank: null })).toBe('Domingo, 29 de novembro · 1º Domingo do Advento')
+    expect(dayTitle('2026-11-29', null)).toBe('Domingo, 29 de novembro')
+    expect(dayTitle('2026-11-29')).toBe('Domingo, 29 de novembro')
+  })
+
+  it('draws the colour code as the portal does, in English or Portuguese', () => {
+    expect(liturgicalColor('purple')).toBe('#6b4a93')
+    expect(liturgicalColor('Roxo')).toBe('#6b4a93')
+    expect(liturgicalColor('white')).toBe('#c9a227')
+    expect(liturgicalColor(null)).toBeNull()
+    expect(liturgicalColor('turquoise')).toBeNull()
+    expect(liturgicalColorName('violet')).toBe('roxo')
+    expect(liturgicalColorName(undefined)).toBeNull()
   })
 })

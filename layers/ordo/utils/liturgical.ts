@@ -35,6 +35,24 @@ const COLOR_ALIASES: Record<string, string> = {
   preto: 'black'
 }
 
+/** A liturgical colour code (English or Portuguese) as the portal draws it; null when unknown. */
+export const liturgicalColor = (code?: string | null): string | null => {
+  const raw = (code || '').trim().toLocaleLowerCase('pt-BR')
+  if (!raw) return null
+  return PALETTE[COLOR_ALIASES[raw] || raw]?.color || null
+}
+
+const COLOR_NAMES: Record<string, string> = {
+  green: 'verde', purple: 'roxo', violet: 'roxo', white: 'branco', gold: 'dourado', red: 'vermelho', rose: 'rosa', blue: 'azul', black: 'preto'
+}
+
+/** "roxo", for the screen reader and the tooltip; null when unknown. */
+export const liturgicalColorName = (code?: string | null): string | null => {
+  const raw = (code || '').trim().toLocaleLowerCase('pt-BR')
+  if (!raw) return null
+  return COLOR_NAMES[COLOR_ALIASES[raw] || raw] || null
+}
+
 const shortDate = (value?: string | null) => {
   if (!value) return ''
   const date = new Date(`${value}T12:00:00`)
