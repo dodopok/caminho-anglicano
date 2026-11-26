@@ -203,6 +203,11 @@ const loadTab = async (tab: DashboardTab) => {
   try {
     const [first, ...rest] = SECTIONS[tab]
     if (tab === 'overview' && !audioSummary.value) loadAudioSummary()
+    // Uso and Áudio read their own reports, but the day's season still tints
+    // the page and fills the rail; without it they simply stay neutral.
+    if (!first.length && !loadedSections.value.includes('liturgical_today')) {
+      fetchSections(['liturgical_today'], requestGeneration).catch(() => {})
+    }
     await fetchSections(first, requestGeneration)
     await Promise.all([
       ...rest.map(group => fetchSections(group, requestGeneration)),

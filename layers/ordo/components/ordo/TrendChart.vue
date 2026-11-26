@@ -47,6 +47,17 @@ const props = withDefaults(defineProps<{
 })
 
 const hover = ref<number | null>(null)
+// The plot's width decides how many dates fit under it: five on a wide card,
+// two or three on a phone, so the labels never run into each other.
+const plot = ref<HTMLElement | null>(null)
+const plotWidth = ref(0)
+let observer: ResizeObserver | null = null
+onMounted(() => {
+  if (!plot.value || typeof ResizeObserver === 'undefined') return
+  observer = new ResizeObserver(entries => { plotWidth.value = entries[0]?.contentRect.width || 0 })
+  observer.observe(plot.value)
+})
+onBeforeUnmount(() => observer?.disconnect())
 const VIEW_W = 1000
 const VIEW_H = 260
 const TOP = 8
@@ -137,7 +148,8 @@ const yTicks = computed(() => [0, 1, 2, 3].map(step => {
 const xTicks = computed(() => {
   const total = count.value
   if (!total) return []
-  const steps = Math.min(5, total - 1)
+  const fit = plotWidth.value ? Math.max(1, Math.floor(plotWidth.value / 76)) : 5
+  const steps = Math.min(5, fit, total - 1)
   if (steps <= 0) return [{ index: 0, left: 50, label: props.points[0].tick, shift: '-50%' }]
   const seen = new Set<number>()
   return Array.from({ length: steps + 1 }, (_, step) => Math.round(step * (total - 1) / steps))
@@ -188,7 +200,7 @@ const pointLabel = (point: TrendPoint, index: number) => {
       <span v-for="tick in yTicks" :key="tick.value" :style="{ top: `${tick.top}%` }">{{ tick.label }}</span>
     </div>
     <div class="op-chart__plot-wrap">
-      <div class="op-chart__plot" :style="{ height: `${height}px` }" @mouseleave="hover = null">
+      <div ref="plot" class="op-chart__plot" :style="{ height: `${height}px` }" @mouseleave="hover = null">
         <span
           v-for="tick in yTicks"
           :key="`grid-${tick.value}`"
@@ -198,7 +210,7 @@ const pointLabel = (point: TrendPoint, index: number) => {
           aria-hidden="true"
         />
         <span v-for="(band, index) in gapBands" :key="`gap-${index}`" class="op-chart__gap" :style="{ left: `${band.left}%`, width: `${band.width}%` }" aria-hidden="true"><span v-if="band.width > 20">{{ gapLabel }}</span></span>
-        <span v-if="closingBand" class="op-chart__closing" :style="{ left: `${closingBand.left}%`, width: `${closingBand.width}%` }" aria-hidden="true"><span>fechando</span></span>
+        <span v-if="closingBand" class="op-chart__closing" :style="{ left: `${closingBand.left}%`, width: `${closingBand.width}%` }" aria-hidden="true"><span :style="closingBand.width < 14 ? { left: 'auto', right: '4px' } : undefined">fechando</span></span>
         <svg v-if="variant === 'area'" class="op-chart__svg" :viewBox="`0 0 ${VIEW_W} ${VIEW_H}`" preserveAspectRatio="none" aria-hidden="true">
           <path :d="areaD" fill="rgba(23, 84, 207, .07)" />
           <path v-if="previousD" :d="previousD" fill="none" stroke="rgba(13, 39, 68, .4)" stroke-width="1.5" stroke-dasharray="5 5" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
