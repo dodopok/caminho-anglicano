@@ -573,7 +573,7 @@ select.op-field { padding-right: 40px; appearance: none; background-image: url("
 .op-split--tall > span { display: flex; align-items: center; overflow: hidden; padding: 0 14px; color: #fff; font-size: 13px; font-weight: 700; white-space: nowrap; }
 
 .op-cal { width: 100%; border-collapse: separate; border-spacing: 3px; table-layout: fixed; }
-.op-cal th { color: var(--op-ink-faint); font-size: 11px; font-weight: 600; text-align: center; white-space: nowrap; }
+.op-cal th { position: relative; color: var(--op-ink-faint); font-size: 11px; font-weight: 600; text-align: center; white-space: nowrap; }
 .op-cal th.op-cal__row { width: 112px; color: var(--op-ink); font-size: 13px; text-align: left; }
 .op-cal th.op-cal__row span { display: inline-flex; align-items: center; gap: 6px; }
 .op-cal th.is-sun { color: var(--op-rubric); }
@@ -581,6 +581,10 @@ select.op-field { padding-right: 40px; appearance: none; background-image: url("
 .op-cal td button { display: block; width: 100%; height: 100%; padding: 0; border: 0; border-radius: 6px; background: transparent; cursor: pointer; }
 .op-cal td.is-today { box-shadow: inset 0 0 0 2px var(--op-ink); }
 .op-cal td.is-picked { box-shadow: inset 0 0 0 3px var(--op-action); }
+.op-cal__lit { display: block; width: 5px; height: 5px; margin: 3px auto 0; border-radius: 999px; }
+/* The day's name in the book's calendar, over a day's trechos. */
+.op-panel__heading p.op-litday { display: inline-flex; align-items: center; gap: 7px; color: var(--op-ink); font-size: 14px; font-weight: 600; }
+.op-litday__dot { flex: 0 0 auto; width: 9px; height: 9px; border-radius: 999px; box-shadow: 0 0 0 3px rgba(13, 39, 68, .06); }
 .op-c4 { background: #b9dbb5; }
 .op-c3 { background: #e4efe3; }
 .op-c2 { background: #f2e2b4; }
@@ -814,6 +818,12 @@ select.op-field { padding-right: 40px; appearance: none; background-image: url("
   .op-page-head__tools { align-items: stretch; width: 100%; }
   .op-period { align-items: stretch; }
   .op-seg { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  /* The period: five equal slots across the width, nothing to scroll. A label
+     too long for its slot breaks in two lines instead of pushing the row. */
+  .op-period .op-seg { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); overflow: visible; }
+  .op-period .op-seg button { min-width: 0; padding: 4px 2px; font-size: 12.5px; line-height: 1.15; white-space: normal; }
+  .op-period__range { justify-content: center; min-width: 0; }
+  .op-period__range > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .op-card { padding: 18px; }
   .op-metric__value { font-size: 32px; }
   .op-bench__queue, .op-bench__review { max-height: none; }
@@ -821,6 +831,9 @@ select.op-field { padding-right: 40px; appearance: none; background-image: url("
   .op-bench__list { max-height: 340px; }
   .op-band { padding: 16px; }
   .op-steps__label { flex-basis: 84px; }
+  /* The coverage calendar keeps squares wide enough to read the dates and
+     scrolls inside its card instead of squeezing 28 days into the phone. */
+  .op-cal { min-width: calc(112px + var(--op-cal-cols, 7) * 26px); }
 }
 
 @media (max-width: 520px) {

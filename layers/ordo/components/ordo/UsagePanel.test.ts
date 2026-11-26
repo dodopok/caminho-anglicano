@@ -118,13 +118,13 @@ const install = () => {
   routes.set('/api/v1/calendar/2026/12', () => [])
 }
 
-const mountPanel = async (url: Record<string, string> = { aba: 'uso' }) => {
+const mountPanel = async (url: Record<string, string> = { aba: 'uso' }, chosen: { preset: '7d' | '30d' | '90d' | '12m' | 'all' | 'custom'; start: string; end: string } = period) => {
   const writes: Array<Record<string, string>> = []
   let current = { ...url }
   const Page = defineComponent({
     setup () {
       providePortalQuery(createPortalQuery({ read: () => current, write: query => { current = query; writes.push(query) } }))
-      return () => h(UsagePanel, { period, monthly: false, reloadKey: 0, now: NOW })
+      return () => h(UsagePanel, { period: chosen, monthly: false, reloadKey: 0, now: NOW })
     }
   })
   const wrapper = mount(Page, { attachTo: document.body })
@@ -223,6 +223,7 @@ describe('UsagePanel · honest states', () => {
     }))
     routes.set('/api/v1/admin/usage/active_users', () => ({ period: {}, series: [] }))
     routes.set('/api/v1/admin/usage/top', () => ({ ...top(1), features: [], events: [] }))
+    routes.set('/api/v1/admin/usage/series', () => ({ period: {}, filter: {}, series: [] }))
     const { wrapper } = await mountPanel()
     const text = wrapper.text()
 
@@ -234,10 +235,37 @@ describe('UsagePanel · honest states', () => {
     expect(text).toContain('primeiro número em 27 nov.')
   })
 
+  // Production after a deploy: the status lost its bookkeeping and reports
+  // `last_closed_day: null`, but the reports have the numbers. Data wins, and
+  // every period reads it the same way.
+  it.each([
+    ['7 dias', { preset: '7d' as const, start: '2026-11-20', end: '2026-11-26' }],
+    ['Sempre', { preset: 'all' as const, start: '2025-01-01', end: '2026-11-26' }]
+  ])('shows the numbers when the status says null but the reports have data (%s)', async (_, chosen) => {
+    routes.set('/api/v1/admin/usage/status', () => ({ rollup: { first_day: null, last_closed_day: null, next_run_at: '2026-11-27T00:30:00-03:00' }, sources: [], days: [] }))
+    const { wrapper } = await mountPanel({ aba: 'uso' }, chosen)
+    const text = wrapper.text()
+
+    expect(text).not.toContain('O Uso começa a contar nesta madrugada.')
+    expect(wrapper.find('.op-usage__kpis').exists()).toBe(true)
+    expect(text).toContain('usaram o Ordo')
+  })
+
+  it('keeps the first-rollup state when the status says null and the reports are empty', async () => {
+    routes.set('/api/v1/admin/usage/status', () => ({ rollup: { first_day: null, last_closed_day: null }, sources: [], days: [] }))
+    routes.set('/api/v1/admin/usage/active_users', () => ({ period: {}, series: activeSeries(WINDOW.start, 0) }))
+    routes.set('/api/v1/admin/usage/top', () => ({ ...top(1), features: [], events: [] }))
+    routes.set('/api/v1/admin/usage/series', () => ({ period: {}, filter: {}, series: [] }))
+    const { wrapper } = await mountPanel()
+
+    expect(wrapper.text()).toContain('O Uso começa a contar nesta madrugada.')
+  })
+
   it('infers the same state from empty reports when the status endpoint is not deployed', async () => {
     routes.set('/api/v1/admin/usage/status', () => new OrdoApiError('Not found', 404))
     routes.set('/api/v1/admin/usage/active_users', () => ({ period: {}, series: [] }))
     routes.set('/api/v1/admin/usage/top', () => ({ ...top(1), features: [], events: [] }))
+    routes.set('/api/v1/admin/usage/series', () => ({ period: {}, filter: {}, series: [] }))
     const { wrapper } = await mountPanel()
 
     expect(wrapper.text()).toContain('O Uso começa a contar nesta madrugada.')
@@ -365,5 +393,61 @@ describe('UsagePanel · sections', () => {
     expect(text).toContain('30 nov. · Santo André, apóstolo.')
     expect(text).toContain('Já é o 2º mais aberto')
     expect(text).toContain('Trinta e Nove Artigos')
+  })
+
+  it('names content by the title the API sends, and by the slug when the title is null', async () => {
+    routes.set('/api/v1/admin/usage/content', query => query.get('slug')
+      ? new OrdoApiError('Not found', 404)
+      : {
+          period: {},
+          filter: {},
+          rows: [
+            { content_kind: 'saint', content_slug: 'santo-andre-apostolo', event: 'post_opened', count: 90, user_days: 70, title: 'Santo André, Apóstolo' },
+            { content_kind: 'saint', content_slug: 'todos-os-santos', event: 'post_opened', count: 120, user_days: 100, title: null },
+            { content_kind: null, content_slug: 'trinta-e-nove-artigos', event: 'document_opened', count: 12, user_days: 10, title: 'Os Trinta e Nove Artigos de Religião' }
+          ]
+        })
+    const { wrapper } = await mountPanel({ aba: 'uso', secao: 'conteudo' })
+    const names = wrapper.findAll('.op-rank tbody .op-rank__name').map(cell => cell.text())
+
+    expect(names[0]).toContain('Todos os Santos')
+    expect(names[1]).toContain('Santo André, Apóstolo')
+    expect(names[1]).toContain('santo-andre-apostolo')
+    expect(wrapper.text()).not.toContain('Santo Andre Apostolo')
+    expect(wrapper.find('.op-ranklist').text()).toContain('Os Trinta e Nove Artigos de Religião')
+    // The search finds the title too.
+    await wrapper.find('input[type="search"]').setValue('andré')
+    expect(wrapper.findAll('.op-rank tbody tr')).toHaveLength(1)
+  })
+
+  it('takes the title from `content?slug=` when the list has none', async () => {
+    routes.set('/api/v1/admin/usage/content', query => {
+      const slug = query.get('slug')
+      if (slug) {
+        return {
+          period: {},
+          filter: { content_slug: slug },
+          title: slug === 'santo-andre-apostolo' ? 'Santo André, Apóstolo' : null,
+          rows: [{ content_kind: 'saint', content_slug: slug, event: 'post_opened', count: 1, user_days: 1, title: null }],
+          series: days(WINDOW.start, 7).map(date => ({ date, count: 3 }))
+        }
+      }
+      return {
+        period: {},
+        filter: {},
+        rows: [
+          { content_kind: 'saint', content_slug: 'santo-andre-apostolo', event: 'post_opened', count: 90, user_days: 70 },
+          { content_kind: 'saint', content_slug: 'todos-os-santos', event: 'post_opened', count: 120, user_days: 100 }
+        ]
+      }
+    })
+    const { wrapper } = await mountPanel({ aba: 'uso', secao: 'conteudo' })
+    await flushPromises()
+    const text = wrapper.text()
+
+    expect(calls('/api/v1/admin/usage/content').some(url => url.searchParams.get('slug') === 'santo-andre-apostolo')).toBe(true)
+    expect(text).toContain('Santo André, Apóstolo')
+    expect(text).toContain('Todos os Santos')
+    expect(wrapper.find('.op-rank thead .op-soon').exists()).toBe(false)
   })
 })

@@ -4,7 +4,8 @@ import OrdoSoonState from './SoonState.vue'
 import { useAudioApi } from '../../composables/useAudioApi'
 import { createReport } from '../../composables/useReport'
 import { longDay, number, OFFICE_TITLES, sourceShort } from '../../utils/audio'
-import type { AudioCoverageCount, AudioEstimateDetail, AudioEstimateItem } from '../../types/audio'
+import { liturgicalColor, liturgicalColorName } from '../../utils/liturgical'
+import type { AudioCoverageCount, AudioEstimateDetail, AudioEstimateItem, AudioLiturgicalDay } from '../../types/audio'
 
 // The trechos of one office on one day, in the order the office says them:
 // which have voice (with a play button) and which are missing. The list
@@ -17,7 +18,13 @@ const props = defineProps<{
   date: string
   office: string
   cell?: AudioCoverageCount | null
+  /** The day's name in the book's calendar; without it the header shows the date only. */
+  liturgicalDay?: AudioLiturgicalDay | null
 }>()
+
+const dayName = computed(() => props.liturgicalDay?.name?.trim() || null)
+const dayColor = computed(() => liturgicalColor(props.liturgicalDay?.color))
+const dayColorName = computed(() => liturgicalColorName(props.liturgicalDay?.color))
 
 const emit = defineEmits<{ generate: [date: string, office: string] }>()
 
@@ -76,6 +83,11 @@ onBeforeUnmount(() => player?.pause())
     <div class="op-panel__head">
       <div class="op-panel__heading">
         <p class="op-eyebrow">{{ longDay(date) }}</p>
+        <p v-if="dayName" class="op-litday">
+          <i v-if="dayColor" class="op-litday__dot" :style="{ background: dayColor }" :title="dayColorName ? `Cor litúrgica: ${dayColorName}` : undefined" aria-hidden="true" />
+          <span>{{ dayName }}</span>
+          <span v-if="dayColorName" class="op-sr-only">, cor litúrgica {{ dayColorName }}</span>
+        </p>
         <h3>{{ OFFICE_TITLES[office] || office }}</h3>
         <p>{{ number(totals.total) }} trechos · {{ number(totals.ready) }} prontos<template v-if="totals.missing"> · <strong style="color: var(--op-warn)">{{ number(totals.missing) }} faltando</strong></template></p>
       </div>
@@ -83,20 +95,22 @@ onBeforeUnmount(() => player?.pause())
 
     <span v-if="report.state.loading && !report.state.data" class="op-skeleton" style="height: 220px" aria-hidden="true" />
     <OrdoSoonState v-else-if="report.state.settled && !items" title="Em breve: os trechos de cada ofício" text=" Esta API devolve só os totais por dia e ofício; a lista de trechos chega com a próxima versão." />
-    <table v-else-if="items?.length" class="op-table">
-      <thead><tr><th scope="col">Trecho</th><th scope="col">Fonte</th><th scope="col">Situação</th><th scope="col" class="is-num">Ouvir</th></tr></thead>
-      <tbody>
-        <tr v-for="item in shown" :key="item.section">
-          <th scope="row">{{ item.label }}</th>
-          <td>{{ sourceShort(item.source, bibleName) }}</td>
-          <td><span class="op-pill" :class="`op-pill--${STATUS[item.status]?.tone || 'quiet'}`">{{ STATUS[item.status]?.label || item.status }}</span></td>
-          <td class="is-num">
-            <button v-if="item.audio_url" type="button" class="op-icon-btn" style="width: 32px; height: 32px" :aria-label="`${playing === item.section ? 'Parar' : 'Ouvir'} ${item.label}`" @click="play(item)"><OrdoIcon :name="playing === item.section ? 'close' : 'play'" :size="14" /></button>
-            <span v-else class="op-faint">—</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div v-else-if="items?.length" class="op-table-wrap">
+      <table class="op-table">
+        <thead><tr><th scope="col">Trecho</th><th scope="col">Fonte</th><th scope="col">Situação</th><th scope="col" class="is-num">Ouvir</th></tr></thead>
+        <tbody>
+          <tr v-for="item in shown" :key="item.section">
+            <th scope="row">{{ item.label }}</th>
+            <td>{{ sourceShort(item.source, bibleName) }}</td>
+            <td><span class="op-pill" :class="`op-pill--${STATUS[item.status]?.tone || 'quiet'}`">{{ STATUS[item.status]?.label || item.status }}</span></td>
+            <td class="is-num">
+              <button v-if="item.audio_url" type="button" class="op-icon-btn" style="width: 32px; height: 32px" :aria-label="`${playing === item.section ? 'Parar' : 'Ouvir'} ${item.label}`" @click="play(item)"><OrdoIcon :name="playing === item.section ? 'close' : 'play'" :size="14" /></button>
+              <span v-else class="op-faint">—</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <p v-else-if="items" class="op-empty">Este ofício não tem trechos narráveis neste dia.</p>
 
     <div class="op-panel__foot">

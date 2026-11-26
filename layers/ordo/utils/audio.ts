@@ -5,6 +5,7 @@ import type {
   AudioAttempt,
   AudioCalendarDay,
   AudioCoverageCount,
+  AudioLiturgicalDay,
   AudioOffice,
   AudioProviderHealth,
   AudioReadinessBible,
@@ -284,6 +285,18 @@ export type CalendarCells = Record<string, Partial<Record<AudioOffice, AudioCove
 /** The calendar from the stored detail, or from the estimate's rows (summed over variants). */
 export const calendarFromDays = (days: AudioCalendarDay[]): CalendarCells =>
   Object.fromEntries(days.map(day => [day.date.slice(0, 10), { ...day.offices }]))
+
+/** Each day's name in the book's calendar, by date; days the API does not name are left out. */
+export type LiturgicalDays = Record<string, AudioLiturgicalDay>
+
+export const liturgicalDaysFrom = (days: AudioCalendarDay[] | null | undefined): LiturgicalDays =>
+  Object.fromEntries((days || [])
+    .filter(day => day.liturgical_day?.name?.trim())
+    .map(day => [day.date.slice(0, 10), { ...day.liturgical_day!, name: day.liturgical_day!.name.trim() }]))
+
+/** "Domingo, 29 de novembro · 1º Domingo do Advento", or just the date when the day has no name. */
+export const dayTitle = (date: string, liturgical?: AudioLiturgicalDay | null) =>
+  liturgical?.name ? `${longDay(date)} · ${liturgical.name}` : longDay(date)
 
 export const calendarFromRows = (rows: AudioEstimateRow[]): CalendarCells => {
   const cells: CalendarCells = {}

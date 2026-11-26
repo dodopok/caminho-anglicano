@@ -5,9 +5,11 @@ import type {
   UsageActiveUsersResponse,
   UsageBreakdownRow,
   UsageContentRow,
+  UsageContentSeriesResponse,
   UsageFunnel,
   UsageQuery,
   UsageDayState,
+  UsageSeriesResponse,
   UsageStatusResponse,
   UsageTopFeature,
   UsageTopResponse
@@ -263,7 +265,7 @@ export const groupContent = (rows: UsageContentRow[]) => {
     }
     current.count += row.count || 0
     current.userDays += row.user_days || 0
-    current.title = current.title || row.title || null
+    current.title = current.title || row.title?.trim() || null
     current.date = current.date || row.date || null
     groups[group].set(row.content_slug, current)
   })
@@ -820,7 +822,12 @@ export const humanizeSlug = (slug: string) => slug
   .map((word, index) => index && SMALL_WORDS.has(word) ? word : word.charAt(0).toLocaleUpperCase('pt-BR') + word.slice(1))
   .join(' ')
 
+/** The name the API sends (`title`), or the slug read as words when it is null or missing. */
 export const contentTitle = (row: Pick<UsageContentRow, 'content_slug' | 'title'>) => row.title?.trim() || humanizeSlug(row.content_slug)
+
+/** `content?slug=`'s name: the response's `title`, or the first of its rows that has one. */
+export const seriesTitle = (response: Pick<UsageContentSeriesResponse, 'title' | 'rows'> | null | undefined) =>
+  response?.title?.trim() || response?.rows?.find(row => row.title?.trim())?.title?.trim() || null
 
 /** A feast day inside the window: comparing it with the window before says nothing. */
 export const dateInWindow = (date: string | null | undefined, window: UsageQuery) => {
@@ -846,14 +853,26 @@ export const spikeInside = (values: number[] | null | undefined) => {
 }
 
 /**
- * Before the first nightly rollup every report is empty. With the API's
- * status that is certain; without it, an empty people series and no feature
- * in the top say the same.
+ * Before the first nightly rollup every report is empty. Data wins: when the
+ * people series, the top features or a series has any count in the window,
+ * the rollup has run, whatever the status says (after a deploy the status can
+ * lose its bookkeeping and report `last_closed_day: null` over real numbers).
+ * Only when the reports are empty does the status decide; without it, the
+ * empty reports say the same.
  */
-export const beforeFirstRollup = (status: UsageStatusResponse | null, active: UsageActiveUsersResponse | null, top: UsageTopResponse | null) => {
+export const beforeFirstRollup = (
+  status: UsageStatusResponse | null,
+  active: UsageActiveUsersResponse | null,
+  top: UsageTopResponse | null,
+  series: Array<UsageSeriesResponse | null> = []
+) => {
+  const hasData = Boolean(latestActiveDay(active?.series || []))
+    || (top?.features || []).some(row => (row.count || 0) > 0 || (row.user_days || 0) > 0)
+    || series.some(response => (response?.series || []).some(point => (point.count || 0) > 0))
+  if (hasData) return false
   if (status?.rollup && 'last_closed_day' in status.rollup) return !status.rollup.last_closed_day
   if (!active || !top) return false
-  return !latestActiveDay(active.series || []) && !(top.features || []).length
+  return true
 }
 
 const timeOf = (value?: string | null) => {

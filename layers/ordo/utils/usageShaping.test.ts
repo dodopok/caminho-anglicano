@@ -9,11 +9,13 @@ import {
   comparedWindow,
   compactNumber,
   contentTitle,
+  groupContent,
   dateInWindow,
   dayStates,
   featureEvents,
   funnelView,
   humanizeSlug,
+  seriesTitle,
   movingAverage,
   periodPhrase,
   rankFeatures,
@@ -104,6 +106,26 @@ describe('honest partial data', () => {
     expect(beforeFirstRollup({ rollup: { last_closed_day: '2026-11-25' } }, { period: empty.period, series: [] }, empty)).toBe(false)
     expect(beforeFirstRollup(null, { period: empty.period, series: [point('2026-11-25', 0)] }, empty)).toBe(true)
     expect(beforeFirstRollup(null, null, null)).toBe(false)
+  })
+
+  it('lets the data win over a status that says the rollup never ran', () => {
+    const period = { start_date: '2026-11-19', end_date: '2026-11-25' }
+    const empty = { period, features: [], events: [], counters: [] }
+    const nullStatus = { rollup: { last_closed_day: null } }
+    const people = { period, series: [point('2026-11-24', 0), point('2026-11-25', 120)] }
+    const noPeople = { period, series: [point('2026-11-25', 0)] }
+    const used = { ...empty, features: [{ feature: 'office', count: 900, errors: 0, user_days: 300 }] }
+    const unused = { ...empty, features: [{ feature: 'office', count: 0, errors: 0, user_days: 0 }] }
+    const offices = { period, filter: {}, series: [{ date: '2026-11-25', count: 40, users: 30 }] }
+    // Status null + data present: the numbers show.
+    expect(beforeFirstRollup(nullStatus, people, empty)).toBe(false)
+    expect(beforeFirstRollup(nullStatus, noPeople, used)).toBe(false)
+    expect(beforeFirstRollup(nullStatus, noPeople, unused, [offices])).toBe(false)
+    // Status null + nothing anywhere: the partial state.
+    expect(beforeFirstRollup(nullStatus, noPeople, unused, [{ ...offices, series: [] }, null])).toBe(true)
+    // Status with a closed day: normal, even with empty reports.
+    expect(beforeFirstRollup({ rollup: { last_closed_day: '2026-11-25' } }, noPeople, unused)).toBe(false)
+    expect(beforeFirstRollup({ rollup: { last_closed_day: '2026-11-25' } }, people, used)).toBe(false)
   })
 
   it('says until when the numbers go', () => {
@@ -228,6 +250,27 @@ describe('content and events', () => {
     expect(humanizeSlug('santo-andre-apostolo')).toBe('Santo Andre Apostolo')
     expect(humanizeSlug('todos-os-santos')).toBe('Todos os Santos')
     expect(contentTitle({ content_slug: 'todos-os-santos', title: 'Todos os Santos' })).toBe('Todos os Santos')
+  })
+
+  it('shows the API\'s title when it sends one and the slug read as words when it is null', () => {
+    expect(contentTitle({ content_slug: 'santo-andre-apostolo', title: 'Santo André, Apóstolo' })).toBe('Santo André, Apóstolo')
+    expect(contentTitle({ content_slug: 'santo-andre-apostolo', title: null })).toBe('Santo Andre Apostolo')
+    expect(contentTitle({ content_slug: 'santo-andre-apostolo', title: '  ' })).toBe('Santo Andre Apostolo')
+    expect(contentTitle({ content_slug: 'santo-andre-apostolo' })).toBe('Santo Andre Apostolo')
+    // Two events of the same slug: the line keeps the title one of them has.
+    const groups = groupContent([
+      { content_kind: 'saint', content_slug: 'santo-andre-apostolo', event: 'post_opened', count: 3, user_days: 2, title: null },
+      { content_kind: 'saint', content_slug: 'santo-andre-apostolo', event: 'post_shared', count: 1, user_days: 1, title: 'Santo André, Apóstolo' }
+    ])
+    expect(groups.saints).toHaveLength(1)
+    expect(groups.saints[0]).toMatchObject({ count: 4, title: 'Santo André, Apóstolo' })
+  })
+
+  it('reads the title of the `content?slug=` answer, or of its rows', () => {
+    expect(seriesTitle({ title: 'Todos os Santos', rows: [] })).toBe('Todos os Santos')
+    expect(seriesTitle({ title: null, rows: [{ content_kind: 'saint', content_slug: 'todos-os-santos', event: 'post_opened', count: 1, user_days: 1, title: 'Todos os Santos' }] })).toBe('Todos os Santos')
+    expect(seriesTitle({ title: null })).toBeNull()
+    expect(seriesTitle(null)).toBeNull()
   })
 
   it('reads a feast inside the window from a spike in its opens, not from a climb at the end', () => {
