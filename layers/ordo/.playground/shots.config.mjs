@@ -5,8 +5,10 @@
 //   name       file name (without .png); a filter argument matches on it
 //   path       the portal address, as an operator would open it
 //   scenario   mock scenario per tab (mocks/index.mjs SCENARIOS); unset tabs are `normal`
-//   click      optional: the accessible name of a button to press before the photo
+//   click      optional: the accessible name of a button to press before the photo,
+//              or { role, name } for another control (a switch)
 //   widths     optional: only these widths for this entry
+//   fullPage   optional: false photographs only the screen (a dialog over the page)
 
 export default [
   { name: 'visao-geral', path: '/portal-do-ordo' },
@@ -40,6 +42,16 @@ export default [
   { name: 'livros-pre-lancamento', path: '/portal-do-ordo?aba=livros&livro=loc_2027' },
   { name: 'livros-sem-api', path: '/portal-do-ordo?aba=livros', scenario: { books: 'sem-api' } },
   { name: 'livros-sem-api-detalhe', path: '/portal-do-ordo?aba=livros&livro=loc_2015', scenario: { books: 'sem-api' }, widths: [1440] },
+
+  { name: 'flags-lista', path: '/portal-do-ordo?aba=flags' },
+  { name: 'flags-detalhe', path: '/portal-do-ordo?aba=flags&flag=prayer_groups' },
+  { name: 'flags-nova', path: '/portal-do-ordo?aba=flags&vista=nova' },
+  { name: 'flags-apagar', path: '/portal-do-ordo?aba=flags&flag=prayer_groups', click: 'Apagar', fullPage: false },
+  { name: 'flags-lancar-livro', path: '/portal-do-ordo?aba=flags&flag=prayer_book_loc_2027', click: 'Lançar…', fullPage: false },
+  { name: 'flags-desligar', path: '/portal-do-ordo?aba=flags', click: { role: 'switch', name: 'Narração do ofício: ligada. Mudar a regra geral' }, fullPage: false },
+  { name: 'flags-agendadas', path: '/portal-do-ordo?aba=flags', scenario: { flags: 'agendadas' } },
+  { name: 'flags-porcentagem', path: '/portal-do-ordo?aba=flags&flag=new_calendar', scenario: { flags: 'porcentagem' } },
+  { name: 'flags-sem-api', path: '/portal-do-ordo?aba=flags', scenario: { flags: 'sem-api' } },
 
   { name: 'login', path: '/portal-do-ordo/login?mock=sem-sessao' }
 ]

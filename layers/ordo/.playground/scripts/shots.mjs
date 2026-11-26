@@ -126,12 +126,14 @@ try {
         await page.goto(`${baseUrl}${route.path}`, { waitUntil: 'networkidle', timeout: 30_000 })
         await page.evaluate(() => document.fonts.ready)
         if (route.click) {
-          await page.getByRole('button', { name: route.click }).first().click({ timeout: 5_000 })
+          // A button by its name, or { role, name } for another control (a switch).
+          const target = typeof route.click === 'string' ? { role: 'button', name: route.click } : route.click
+          await page.getByRole(target.role, { name: target.name }).first().click({ timeout: 5_000 })
           await page.waitForLoadState('networkidle')
         }
         await page.waitForTimeout(600)
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)
-        await page.screenshot({ path: file, fullPage: true })
+        await page.screenshot({ path: file, fullPage: route.fullPage !== false })
         const height = await page.evaluate(() => document.documentElement.scrollHeight)
         if (errors.length) failures++
         console.log(`${relative(ROOT, file)} ${width}x${height}${overflow ? ' OVERFLOW-X' : ''}${errors.length ? `  ERROS: ${errors.slice(0, 3).join(' | ')}` : ''}`)

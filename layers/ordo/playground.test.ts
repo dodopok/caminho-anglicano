@@ -54,6 +54,8 @@ describe('modo mock do playground', () => {
     expect(get('/api/v1/admin/audio/summary').status).toBe(200)
     expect(get('/api/v1/admin/usage/active_users?start_date=2026-10-28&end_date=2026-11-25').status).toBe(200)
     expect(get('/api/v1/admin/custom_rosary_prayers?limit=20&offset=0').status).toBe(200)
+    expect(get('/api/v1/admin/feature_flags').status).toBe(200)
+    expect(respond({ pathname: '/api/v1/admin/feature_flags', query: '', scenario: { flags: 'sem-api' } }).status).toBe(404)
     const books = get('/api/v1/admin/prayer_books?start_date=2026-10-28&end_date=2026-11-26&compare=previous')
     expect(books.status).toBe(200)
     expect(books.json.prayer_books.some((book: { release_gated: boolean }) => book.release_gated)).toBe(true)
