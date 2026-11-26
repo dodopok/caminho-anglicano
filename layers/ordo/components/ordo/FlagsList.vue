@@ -13,7 +13,7 @@ import {
   flagSchedules,
   flagState,
   formatBrasilia,
-  formatCount,
+  formatFlagCount,
   isPrerelease,
   isScheduled,
   KIND_LABEL,
@@ -81,7 +81,7 @@ const KIND_OPTIONS = [
 ]
 
 // ---------- Summary ----------
-const plural = (count: number, one: string, many: string) => `${formatCount(count)} ${count === 1 ? one : many}`
+const plural = (count: number, one: string, many: string) => `${formatFlagCount(count)} ${count === 1 ? one : many}`
 const headline = computed(() => {
   const c = counts.value
   if (!c) return `${plural(flags.value.length, 'flag', 'flags')}`
@@ -89,7 +89,7 @@ const headline = computed(() => {
     plural(c.total, 'flag', 'flags'),
     c.partial ? plural(c.partial, 'parcial', 'parciais') : null,
     // `scheduled` counts flags (one may have both times): "com agendamento".
-    c.scheduled ? `${formatCount(c.scheduled)} com agendamento` : null,
+    c.scheduled ? `${formatFlagCount(c.scheduled)} com agendamento` : null,
     c.overdue ? plural(c.overdue, 'agendamento não aplicado', 'agendamentos não aplicados') : null
   ].filter(Boolean).join(' · ')
 })
@@ -156,22 +156,22 @@ watch(() => props.data, () => { if (showAll.value) allChanges.load() })
   <section class="op-tiles op-tiles--4" aria-label="Estado das flags">
     <article class="op-card op-metric">
       <div class="op-metric__top"><span class="op-metric__label">Ligadas para todos</span><span class="op-dot" /></div>
-      <span class="op-metric__value">{{ formatCount(counts?.on ?? 0) }}</span>
+      <span class="op-metric__value">{{ formatFlagCount(counts?.on ?? 0) }}</span>
       <span class="op-metric__sub">regra geral ligada</span>
     </article>
     <article class="op-card op-metric">
       <div class="op-metric__top"><span class="op-metric__label">Parciais</span><span class="op-dot op-dot--info" /></div>
-      <span class="op-metric__value">{{ formatCount(counts?.partial ?? 0) }}</span>
+      <span class="op-metric__value">{{ formatFlagCount(counts?.partial ?? 0) }}</span>
       <span class="op-metric__sub">porcentagem ou pessoas escolhidas<template v-if="counts?.user_rules"> · {{ plural(counts.user_rules, 'regra', 'regras') }} por pessoa</template></span>
     </article>
     <article class="op-card op-metric">
       <div class="op-metric__top"><span class="op-metric__label">Desligadas</span><span class="op-dot op-dot--quiet" /></div>
-      <span class="op-metric__value">{{ formatCount(counts?.off ?? 0) }}</span>
+      <span class="op-metric__value">{{ formatFlagCount(counts?.off ?? 0) }}</span>
       <span class="op-metric__sub">ninguém vê</span>
     </article>
     <article class="op-card op-metric">
       <div class="op-metric__top"><span class="op-metric__label">Livros em pré-lançamento</span><span class="op-dot op-dot--warn" /></div>
-      <span class="op-metric__value">{{ formatCount(books.length) }}</span>
+      <span class="op-metric__value">{{ formatFlagCount(books.length) }}</span>
       <span class="op-metric__sub">
         <template v-if="books.length"><template v-for="(book, index) in books" :key="book.key"><template v-if="index">, </template><span class="op-loc">{{ book.prayer_book_code }}</span> · {{ peopleCount(book.reach_estimate ?? book.users_count) }}</template></template>
         <template v-else>nenhum escondido no catálogo</template>
@@ -202,7 +202,7 @@ watch(() => props.data, () => { if (showAll.value) allChanges.load() })
           :aria-pressed="stateFilter === option.id"
           @click="setState(option.id)"
         >
-          {{ option.label }} {{ formatCount(option.count) }}
+          {{ option.label }} {{ formatFlagCount(option.count) }}
         </button>
       </div>
       <div class="op-seg op-seg--small" role="group" aria-label="Tipo">

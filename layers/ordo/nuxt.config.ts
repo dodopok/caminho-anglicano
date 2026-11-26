@@ -26,7 +26,9 @@ export default defineNuxtConfig({
       firebaseStorageBucket: process.env.NUXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
       firebaseMessagingSenderId: process.env.NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
       firebaseAppId: process.env.NUXT_PUBLIC_FIREBASE_APP_ID,
-      ordoApiBaseUrl: process.env.NUXT_PUBLIC_ORDO_API_BASE_URL || 'https://api.oficio.app'
+      ordoApiBaseUrl: process.env.NUXT_PUBLIC_ORDO_API_BASE_URL || 'https://api.oficio.app',
+      // The CMS's public routes (Livros reads each book's published documents).
+      ordoCmsBaseUrl: process.env.NUXT_PUBLIC_ORDO_CMS_BASE_URL || 'https://cms.caminhoanglicano.com.br/api'
     }
   }
 })

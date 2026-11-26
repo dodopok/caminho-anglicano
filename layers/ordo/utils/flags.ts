@@ -27,8 +27,8 @@ export const UNDO_DAYS = 30
 export const PERCENT_CHIPS = [1, 5, 10, 25, 50] as const
 
 const DAY = 86_400_000
-export const formatCount = (value: number) => value.toLocaleString('pt-BR')
-const plural = (count: number, one: string, many: string) => `${formatCount(count)} ${count === 1 ? one : many}`
+export const formatFlagCount = (value: number) => value.toLocaleString('pt-BR')
+const plural = (count: number, one: string, many: string) => `${formatFlagCount(count)} ${count === 1 ? one : many}`
 export const peopleCount = (count: number) => plural(count, 'pessoa', 'pessoas')
 
 /** The API sends `state`; an older answer without it is read from the rule. */

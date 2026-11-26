@@ -56,8 +56,22 @@ describe('modo mock do playground', () => {
     expect(get('/api/v1/admin/custom_rosary_prayers?limit=20&offset=0').status).toBe(200)
     expect(get('/api/v1/admin/feature_flags').status).toBe(200)
     expect(respond({ pathname: '/api/v1/admin/feature_flags', query: '', scenario: { flags: 'sem-api' } }).status).toBe(404)
+    const books = get('/api/v1/admin/prayer_books?start_date=2026-10-28&end_date=2026-11-26&compare=previous')
+    expect(books.status).toBe(200)
+    expect(books.json.prayer_books.some((book: { release_gated: boolean }) => book.release_gated)).toBe(true)
+    expect(get('/api/v1/admin/prayer_books/loc_2015?start_date=2026-10-28&end_date=2026-11-26').json.series).toHaveLength(30)
+    expect(get('/api/v1/admin/prayer_books/nao_existe').status).toBe(404)
     const missing = get('/api/v1/nao-existe')
     expect(missing.status).toBe(404)
     expect(missing.json.error).toContain('/api/v1/nao-existe')
+  })
+
+  it('o cenário sem-api de Livros responde 404 no endpoint novo e mantém o catálogo público', async () => {
+    // @ts-expect-error plain ES module without types
+    const { respond, DEFAULT_SCENARIO } = await import('./.playground/mocks/index.mjs')
+    const scenario = { ...DEFAULT_SCENARIO, books: 'sem-api' }
+    expect(respond({ pathname: '/api/v1/admin/prayer_books', query: '', scenario }).status).toBe(404)
+    expect(respond({ pathname: '/api/v1/admin/prayer_books/loc_2015', query: '', scenario }).status).toBe(404)
+    expect(respond({ pathname: '/api/v1/prayer_books', query: '', scenario }).status).toBe(200)
   })
 })

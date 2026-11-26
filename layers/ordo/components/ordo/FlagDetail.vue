@@ -14,7 +14,7 @@ import {
   flagSchedules,
   flagState,
   formatBrasilia,
-  formatCount,
+  formatFlagCount,
   fromBrasiliaInput,
   isFutureBrasilia,
   isPrerelease,
@@ -78,7 +78,7 @@ const statement = computed(() => {
   if (state.value === 'on') return `Ligada para ${everyoneLabel(f).toLowerCase()}.`
   if (state.value === 'off') return 'Desligada: ninguém vê.'
   const percentage = f.rule === 'percentage' ? f.percentage : null
-  if (percentage && f.users_count) return `Ligada para ${percentage}% das pessoas e para ${formatCount(f.users_count)} ${f.users_count === 1 ? 'escolhida' : 'escolhidas'}.`
+  if (percentage && f.users_count) return `Ligada para ${percentage}% das pessoas e para ${formatFlagCount(f.users_count)} ${f.users_count === 1 ? 'escolhida' : 'escolhidas'}.`
   if (percentage) return `Ligada para ${percentage}% das pessoas.`
   return `Ligada só para ${peopleCount(f.users_count)} ${f.users_count === 1 ? 'escolhida' : 'escolhidas'}.`
 })
@@ -262,7 +262,7 @@ watch(() => flag.value.key, () => { check.value = null; checkError.value = null 
           </div>
           <p v-if="!percentageValid" class="op-note" role="alert" style="color: var(--op-danger-ink)">Use um número inteiro de 1 a 99. Para 0 ou 100, escolha Desligada ou Ligada para todos.</p>
           <p v-else class="op-note">
-            Ligada para <b>{{ draftPercentage }}% das pessoas</b><template v-if="draftReach !== null && base !== null">: ≈ {{ formatCount(draftReach) }} das {{ formatCount(base) }} {{ baseLabel }}<template v-if="flag.users_count">, contando as {{ formatCount(flag.users_count) }} escolhidas</template></template>.
+            Ligada para <b>{{ draftPercentage }}% das pessoas</b><template v-if="draftReach !== null && base !== null">: ≈ {{ formatFlagCount(draftReach) }} das {{ formatFlagCount(base) }} {{ baseLabel }}<template v-if="flag.users_count">, contando as {{ formatFlagCount(flag.users_count) }} escolhidas</template></template>.
           </p>
           <div class="op-inline-note" data-explain="percentage">
             <OrdoIcon name="info" :size="18" />
@@ -322,8 +322,8 @@ watch(() => flag.value.key, () => { check.value = null; checkError.value = null 
           <div class="op-panel__heading">
             <p class="op-eyebrow">Regras por pessoa</p>
             <h3 id="flag-people-title">
-              {{ usersTotal === 1 ? '1 pessoa com regra própria' : `${formatCount(usersTotal)} pessoas com regra própria` }}
-              <span v-if="withPremium !== null && flag.requires_premium" class="op-faint" style="font-family: var(--op-font-ui); font-size: 14px; font-weight: 500">· {{ formatCount(withPremium) }} com Ordo+</span>
+              {{ usersTotal === 1 ? '1 pessoa com regra própria' : `${formatFlagCount(usersTotal)} pessoas com regra própria` }}
+              <span v-if="withPremium !== null && flag.requires_premium" class="op-faint" style="font-family: var(--op-font-ui); font-size: 14px; font-weight: 500">· {{ formatFlagCount(withPremium) }} com Ordo+</span>
             </h3>
             <p>Adicionar ou tirar vale na hora, com Desfazer.</p>
           </div>
@@ -358,8 +358,8 @@ watch(() => flag.value.key, () => { check.value = null; checkError.value = null 
           </div>
         </template>
         <div v-if="usersTotal > users.length" class="op-panel__foot">
-          <span>Mostrando {{ formatCount(users.length) }} de {{ formatCount(usersTotal) }}</span>
-          <button type="button" class="op-link" @click="emit('more')">Ver as {{ formatCount(usersTotal) }} <OrdoIcon name="arrow" :size="14" /></button>
+          <span>Mostrando {{ formatFlagCount(users.length) }} de {{ formatFlagCount(usersTotal) }}</span>
+          <button type="button" class="op-link" @click="emit('more')">Ver as {{ formatFlagCount(usersTotal) }} <OrdoIcon name="arrow" :size="14" /></button>
         </div>
       </section>
     </div>
@@ -374,7 +374,7 @@ watch(() => flag.value.key, () => { check.value = null; checkError.value = null 
         <ol class="op-funnel">
           <li class="op-funnel__step"><span class="op-funnel__n">1</span><span class="op-funnel__label">Tem Ordo+?</span><span class="op-pill" :class="flag.requires_premium ? 'op-pill--gold' : 'op-pill--quiet'">{{ flag.requires_premium ? 'exige' : 'não exige' }}</span></li>
           <li class="op-funnel__step"><span class="op-funnel__n">2</span><span class="op-funnel__label">Entrou na conta?</span><span class="op-pill op-pill--quiet">{{ flag.targeted ? 'exige' : 'não exige' }}</span></li>
-          <li class="op-funnel__step"><span class="op-funnel__n">3</span><span class="op-funnel__label">Regra própria</span><span class="op-funnel__value">{{ formatCount(flag.users_count + flag.users_off_count) }}</span></li>
+          <li class="op-funnel__step"><span class="op-funnel__n">3</span><span class="op-funnel__label">Regra própria</span><span class="op-funnel__value">{{ formatFlagCount(flag.users_count + flag.users_off_count) }}</span></li>
           <li class="op-funnel__step"><span class="op-funnel__n">4</span><span class="op-funnel__label">Regra geral</span><span class="op-funnel__value">{{ flag.rule === 'percentage' ? `${flag.percentage}%` : flag.rule === 'on' ? 'ligada' : 'desligada' }}</span></li>
         </ol>
         <hr class="op-hr">

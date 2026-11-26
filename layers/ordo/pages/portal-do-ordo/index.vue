@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import '../../assets/portal.css'
 import OrdoAudioPanel from '../../components/ordo/AudioPanel.vue'
+import OrdoBooksPanel from '../../components/ordo/BooksPanel.vue'
 import OrdoFlagsPanel from '../../components/ordo/FlagsPanel.vue'
 import OrdoGrowthPanel from '../../components/ordo/GrowthPanel.vue'
 import OrdoIcon, { type OrdoIconName } from '../../components/ordo/Icon.vue'
@@ -66,6 +67,7 @@ const TABS: TabDefinition[] = [
   { id: 'practice', label: 'Prática & conteúdo', shortLabel: 'Prática', icon: 'book', group: 'reading', title: 'O que está sendo rezado', description: 'Ofícios, livros, horários, diários e o que a comunidade compartilha.', usesPeriod: true },
   { id: 'platform', label: 'Negócio & API', shortLabel: 'Negócio', icon: 'layers', group: 'reading', title: 'Ordo+ e integrações', description: 'Assinaturas, chaves de API e quem constrói em cima do Ordo.', usesPeriod: true },
   { id: 'usage', label: 'Uso', shortLabel: 'Uso', icon: 'activity', group: 'reading', title: 'O que as pessoas usam', description: 'Quem usou o Ordo, o que usou e o que mudou desde o período anterior, pela telemetria própria do app e da web.', usesPeriod: true },
+  { id: 'books', label: 'Livros', shortLabel: 'Livros', icon: 'shelf', group: 'reading', title: 'Os livros do Ordo', description: 'Cada livro de oração com quem reza com ele, quem chegou agora e o que falta para ele estar completo: voz, PDF e documentos.', usesPeriod: true },
   { id: 'operations', label: 'Operação', shortLabel: 'Operação', icon: 'inbox', group: 'care', title: 'Fila de cuidado', description: 'Rosários enviados pela comunidade e os sinais da plataforma que pedem alguém.', usesPeriod: false },
   { id: 'audio', label: 'Áudio', shortLabel: 'Áudio', icon: 'audio', group: 'care', title: 'Narração do ofício', description: 'O que os ofícios vão tocar nas próximas semanas, o que está sendo gerado agora e o que pede você.', usesPeriod: false },
   { id: 'flags', label: 'Feature flags', shortLabel: 'Flags', icon: 'flag', group: 'care', title: 'Feature flags', description: 'O que está ligado e para quem, o que muda sozinho em breve e os livros em pré-lançamento.', usesPeriod: false }
@@ -80,6 +82,9 @@ const SECTIONS: Record<DashboardTab, DashboardSectionName[][]> = {
   platform: [['premium', 'api'], ['developers']],
   // Uso reads its own reports (/api/v1/admin/usage/*), not /dashboard.
   usage: [[]],
+  // Livros reads /admin/prayer_books first; these fill what it does not have
+  // (and everything, before it is deployed).
+  books: [['users', 'onboarding', 'prayer_books', 'completions'], ['retention', 'shared_offices', 'weekly_prayers']],
   operations: [['moderation', 'notifications', 'health', 'life_rules', 'custom_rosaries']],
   audio: [[]],
   // Feature flags reads /api/v1/admin/feature_flags, not /dashboard.
@@ -94,6 +99,7 @@ const COMPARED: Record<DashboardTab, DashboardSectionName[]> = {
   practice: ['completions', 'journals', 'shared_offices', 'weekly_prayers'],
   platform: ['premium', 'api'],
   usage: [],
+  books: ['users', 'onboarding', 'completions'],
   operations: [],
   audio: [],
   flags: []
@@ -133,6 +139,7 @@ const lastUpdatedAt = ref<Date | null>(null)
 const audioSummary = ref<DashboardAudio | null>(null)
 // Bumped by the refresh button; the Uso and Áudio panels reload on change.
 const usageReload = ref(0)
+const booksReload = ref(0)
 const audioReload = ref(0)
 const flagsReload = ref(0)
 let generation = 0
@@ -251,6 +258,7 @@ const refresh = async () => {
     flagsReload.value += 1
     return
   }
+  if (activeTab.value === 'books') booksReload.value += 1
   const sections = SECTIONS[activeTab.value].flat()
   loadedSections.value = loadedSections.value.filter(section => !sections.includes(section))
   if (activeTab.value === 'overview') loadAudioSummary()
@@ -415,6 +423,7 @@ watch([authReady, user], ([isReady, currentUser]) => {
           <OrdoPracticePanel v-else-if="activeTab === 'practice'" :dashboard="dashboard" :period="period" :monthly="monthly" />
           <OrdoPlatformPanel v-else-if="activeTab === 'platform'" :dashboard="dashboard" :period="period" />
           <OrdoUsagePanel v-else-if="activeTab === 'usage'" :period="period" :monthly="monthly" :reload-key="usageReload" />
+          <OrdoBooksPanel v-else-if="activeTab === 'books'" :dashboard="dashboard" :period="period" :reload-key="booksReload" @navigate="navigate" />
         </template>
       </main>
     </div>

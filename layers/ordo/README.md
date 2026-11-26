@@ -36,13 +36,14 @@ Os ícones são de traço (`components/ordo/Icon.vue`), no lugar dos glifos Unic
 
 ## O que o painel cobre
 
-A navegação separa **Leitura** (Visão geral, Pessoas & hábito, Prática & conteúdo, Negócio & API, Uso) de **Cuidado** (Operação, Áudio e Feature flags), com contadores em tudo que espera alguém. Cada número diz se é do período escolhido ou da base total (`ScopeTag.vue`), e o período aplica ao clicar (`PeriodPicker.vue`, `utils/period.ts`). Períodos longos (12 meses, desde sempre ou mais de 120 dias) são agrupados por mês.
+A navegação separa **Leitura** (Visão geral, Pessoas & hábito, Prática & conteúdo, Negócio & API, Uso, Livros) de **Cuidado** (Operação, Áudio e Feature flags), com contadores em tudo que espera alguém. Cada número diz se é do período escolhido ou da base total (`ScopeTag.vue`), e o período aplica ao clicar (`PeriodPicker.vue`, `utils/period.ts`). Períodos longos (12 meses, desde sempre ou mais de 120 dias) são agrupados por mês.
 
 - **Visão geral**: a faixa "Pede uma decisão" (rosários na fila e previsão de quando ela zera, tentativas de narração, tarefas de áudio travadas, chaves vencendo, regras de vida novas), pessoas na base, quem rezou, núcleo fiel (4 ou mais dias dos últimos 7), ofícios, presença por dia com cursor, horas do ofício nas cores do app, dias seguidos por faixa, lembretes que viram oração em até 2 h, aparelhos e livros em uso.
 - **Pessoas & hábito**: contas novas, tempo até a primeira oração, funil, retorno por semana de chegada, por livro e por modo (só conta quem já teve tempo de voltar), mapa-múndi e escolhas do primeiro acesso.
 - **Prática & conteúdo**: ofícios por dia, as 24 horas em ordem, livros em uso, quem mais rezou e escreveu, compartilhamentos, favoritos e orações semanais.
 - **Negócio & API**: Ordo+ agora e entre quem reza, ciclo de assinaturas, requisições, endereços mais consultados (com o nome da documentação, `utils/endpoints.ts`), chaves perto do limite e quem usa a API: cada desenvolvedor abre um painel lateral (`DeveloperDetail.vue`, `GET /api/v1/dashboard/developers/:id`) com requisições por dia, cada chave (estado, uso, último acesso, limite), endereços, dias da semana e dias perto do limite.
 - **Uso**: a telemetria própria do app e da web, lida de `GET /api/v1/admin/usage/*` (estevao-api, `docs/USAGE_TELEMETRY.md`), não do `/dashboard`. Pessoas ativas no dia, em 7 e em 30 dias (e quem usa app **e** web), do último dia que o resumo noturno fechou; recursos e eventos mais usados; a série diária de um recurso (`?serie=office`, em vezes ou pessoas); os funis ofício aberto → concluído, compartilhamento e Ordo+; recortes por cliente, plataforma, livro, idioma e versão do app; e os slugs públicos do CMS mais abertos (santos, documentos, artigos). A API aceita no máximo 366 dias, então "Desde sempre" e períodos maiores são cortados aos últimos 366, com aviso. Cada relatório carrega sozinho: um que falha vira um aviso no próprio cartão, e se todos respondem 404 (a API ainda sem os relatórios) a aba diz isso numa tela só.
+- **Livros**: a galeria de capas por idioma (o número grande é "usam hoje", a preferência de hoje), o ranking com a parte de quem reza, a comparação de até 4 livros dia a dia e a exportação em CSV, e a página de cada livro (`?aba=livros&livro=loc_2015`): fatos e atalhos (Áudio, Uso, PDF, CMS, flag), cinco números, a série diária, o retorno, a hora do ofício, as trocas entre livros, a narração por Bíblia, o PDF e os documentos, e o que a comunidade faz com ele. Lê `GET /api/v1/admin/prayer_books` e `/:code` (estevao-api, com os livros em pré-lançamento); enquanto eles respondem 404, a aba usa o catálogo público, o `readers` de `admin/audio/readiness`, o `/dashboard`, `usage/breakdown?dimension=book` e os documentos do CMS (`prayer-book-documents/by-code`), com "em breve" no que ainda não existe.
 - **Operação**: a bancada de revisão de rosários, a fila de regras de vida (só leitura) e os sinais da plataforma.
 - **Feature flags** (`?aba=flags`): o que está ligado e para quem, lido de `GET /api/v1/admin/feature_flags` (estevao-api; contrato em `notes/painel-flags-livros/API-flags.md`). Um resumo feito só de dados (contagens, as próximas mudanças agendadas com a descrição da flag, livros em pré-lançamento), a lista com busca e filtros (`estado=`, `tipo=`, `busca=`), o detalhe de uma flag (`flag=<chave>`: regra geral desligada, porcentagem ou ligada para todos, com a porcentagem explicada na tela; agendamento; regras por pessoa; "Testar uma pessoa") e a criação (`vista=nova`). Todo horário é de Brasília. Mudar a regra geral de uma flag que alcança mais de 100 pessoas, apagar e lançar um livro em pré-lançamento pedem a chave (ou o código) digitada; toda escrita sai uma vez só (`composables/useFlagActions.ts`) e volta com Desfazer, que vale por 30 dias em Últimas mudanças. Enquanto a API responder 404, a aba diz "em breve".
 
@@ -105,6 +106,8 @@ layers/ordo/
 │   ├── DeveloperDetail.vue         uso das chaves de um desenvolvedor
 │   ├── UsagePanel.vue              aba Uso (telemetria própria)
 │   ├── UsageFunnel.vue             um funil da aba Uso
+│   ├── BooksPanel.vue              aba Livros (galeria, ranking, livro)
+│   ├── BookDetail.vue / BooksGallery.vue / BooksRanking.vue / BookCard.vue / BookCover.vue
 │   ├── FlagsPanel.vue              aba Feature flags (lista, detalhe, criar)
 │   ├── FlagConfirm.vue             confirmação só de texto, com a chave digitada
 │   ├── DeltaChip.vue               variação contra o período anterior
@@ -126,8 +129,9 @@ layers/ordo/
 ├── types/dashboard.ts
 ├── types/explorer.ts
 ├── types/usage.ts                  contrato de /api/v1/admin/usage/*
+├── types/books.ts                  contrato de /api/v1/admin/prayer_books
 ├── types/flags.ts                  contrato de /api/v1/admin/feature_flags*
-└── utils/                          period, series, liturgical, countryMap, slug, portalRoute, compare, endpoints, usage, flags
+└── utils/                          period, series, liturgical, countryMap, slug, portalRoute, compare, endpoints, usage, books, flags
 ```
 
 `pages/portal-do-ordo/index.vue` coordena autenticação, período, carregamento e navegação. Cada aba carrega suas seções em duas levas: a primeira desenha a tela, a segunda completa logo depois, junto com a janela anterior usada nas comparações. As telas de domínio ficam nos componentes de painel; a Operação busca a própria fila.
@@ -144,7 +148,7 @@ pnpm portal:test                # só os testes Vitest de layers/ordo
 pnpm portal:build               # compila só o playground (o portal:shots faz isso sozinho)
 ```
 
-**Modo mock.** O playground troca o plugin do Firebase por uma sessão falsa (`.playground/plugins/mock-auth.client.ts`) e manda as chamadas da API para o próprio servidor, onde `server/routes/api/v1` responde com as fixtures de `.playground/mocks/` (visão geral, pessoas, prática, negócio, operação, áudio, uso e feature flags), no formato dos contratos (`types/dashboard.ts`, `types/audio.ts`, `types/usage.ts`, `types/flags.ts`). As fixtures são de 2026-11-26 e o relógio do navegador é fixado nesse instante (`?agora=real` desliga, `?agora=2026-11-20T09:00:00-03:00` escolhe outro). Cada aba tem cenários, trocados com `GET /__mock/scenario?audio=provedor-fora` (a lista sai em `GET /__mock/scenario`). As flags (`flags=normal|agendadas|porcentagem|sem-api`) guardam estado: criar, mudar, apagar e desfazer funcionam até o cenário mudar. `?mock=sem-sessao` abre a tela de login. Uma rota sem fixture responde 404 com o caminho, para saber o que falta.
+**Modo mock.** O playground troca o plugin do Firebase por uma sessão falsa (`.playground/plugins/mock-auth.client.ts`) e manda as chamadas da API para o próprio servidor, onde `server/routes/api/v1` responde com as fixtures de `.playground/mocks/` (visão geral, pessoas, prática, negócio, operação, áudio, uso, livros e feature flags), no formato dos contratos (`types/dashboard.ts`, `types/audio.ts`, `types/usage.ts`, `types/flags.ts`). As fixtures são de 2026-11-26 e o relógio do navegador é fixado nesse instante (`?agora=real` desliga, `?agora=2026-11-20T09:00:00-03:00` escolhe outro). Cada aba tem cenários, trocados com `GET /__mock/scenario?audio=provedor-fora` (a lista sai em `GET /__mock/scenario`). As flags (`flags=normal|agendadas|porcentagem|sem-api`) guardam estado: criar, mudar, apagar e desfazer funcionam até o cenário mudar. `?mock=sem-sessao` abre a tela de login. Os documentos do CMS são respondidos em `/__mock/cms`, e as capas vêm de `public/locs` do site. Uma rota sem fixture responde 404 com o caminho, para saber o que falta.
 
 O modo mock só existe no playground: o site estende `./layers/ordo` e nunca `.playground`, a configuração do playground se recusa a rodar na Vercel, a sessão falsa só entra em `localhost`, e `playground.test.ts` falha se algo fora do playground passar a citar os mocks.
 
