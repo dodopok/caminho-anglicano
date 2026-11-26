@@ -5,7 +5,8 @@ describe('comparePeriods', () => {
   it('reads a count as a percentage, good when it grows', () => {
     expect(comparePeriods(265, 200)).toMatchObject({ direction: 'up', tone: 'good', text: '+33%', previousText: '200' })
     expect(comparePeriods(180, 200)).toMatchObject({ direction: 'down', tone: 'bad', text: '−10%' })
-    expect(comparePeriods(105, 100)).toMatchObject({ text: '+5,0%' })
+    expect(comparePeriods(105, 100)).toMatchObject({ text: '+5%' })
+    expect(comparePeriods(102.4, 100)).toMatchObject({ text: '+2,4%' })
   })
 
   it('calls small moves stable instead of a trend', () => {

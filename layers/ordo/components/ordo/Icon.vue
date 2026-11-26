@@ -45,7 +45,15 @@ const PATHS = {
   none: 'M12 3.5a8.5 8.5 0 1 1 0 17a8.5 8.5 0 1 1 0-17zM12 7v5M12 12h4.5',
   filter: 'M4 5.5h16M7 12h10M10 18.5h4',
   activity: 'M3 12h4l3-7.5 4 15 3-7.5h4',
-  external: 'M7 17 17 7M9 7h8v8'
+  external: 'M7 17 17 7M9 7h8v8',
+  plus: 'M12 5v14M5 12h14',
+  play: 'M8 5.5v13l10.5-6.5z',
+  copy: 'M9 9h10.5v10.5H9zM15 9V4.5H4.5V15H9',
+  funnel: 'M4 5h16l-6 7.5V19l-4 1.5v-8z',
+  trend: 'M3.5 16.5 9 11l4 4 7.5-7.5M15 7.5h5.5V13',
+  // Áudio
+  // Uso
+  dash: 'M6 12h12'
 } as const
 
 export type OrdoIconName = keyof typeof PATHS

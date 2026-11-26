@@ -12,12 +12,12 @@ const props = defineProps<{
 
 const emit = defineEmits<{ 'update:modelValue': [value: PeriodValue] }>()
 
-const PRESETS: Array<{ id: Exclude<PeriodPreset, 'custom'>; label: string }> = [
+const PRESETS: Array<{ id: Exclude<PeriodPreset, 'custom'>; label: string; short?: string }> = [
   { id: '7d', label: '7 dias' },
   { id: '30d', label: '30 dias' },
   { id: '90d', label: '90 dias' },
   { id: '12m', label: '12 meses' },
-  { id: 'all', label: 'Desde sempre' }
+  { id: 'all', label: 'Desde sempre', short: 'Sempre' }
 ]
 
 const open = ref(false)
@@ -87,7 +87,7 @@ onBeforeUnmount(() => {
         :aria-pressed="modelValue.preset === preset.id"
         :disabled="disabled"
         @click="pick(preset.id)"
-      >{{ preset.label }}</button>
+      ><template v-if="preset.short"><span class="op-only-wide">{{ preset.label }}</span><span class="op-only-narrow">{{ preset.short }}</span></template><template v-else>{{ preset.label }}</template></button>
     </div>
     <button type="button" class="op-period__range" :aria-expanded="open" aria-haspopup="dialog" @click="open = !open">
       <OrdoIcon name="calendar" :size="16" />

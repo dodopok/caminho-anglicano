@@ -26,6 +26,9 @@ const FLAT_POINTS = 0.5
 
 const number = (value: number, digits = 0) => value.toLocaleString('pt-BR', { minimumFractionDigits: digits, maximumFractionDigits: digits })
 
+// One decimal below 10% ("+2,4%"), none above; a whole number drops its ",0" ("+9%").
+const percent = (size: number) => size.toLocaleString('pt-BR', { maximumFractionDigits: size < 10 ? 1 : 0 })
+
 export const comparePeriods = (
   current: number | null | undefined,
   previous: number | null | undefined,
@@ -61,7 +64,7 @@ export const comparePeriods = (
   return {
     direction,
     tone: tone(direction),
-    text: direction === 'flat' ? 'estável' : `${change > 0 ? '+' : '−'}${number(size, size < 10 ? 1 : 0)}%`,
+    text: direction === 'flat' ? 'estável' : `${change > 0 ? '+' : '−'}${percent(size)}%`,
     previousText
   }
 }

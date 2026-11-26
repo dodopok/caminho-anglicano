@@ -42,10 +42,10 @@ describe('usage dashboard helpers', () => {
       { content_kind: null, content_slug: 'catecismo', event: 'document_opened', count: 1, user_days: 1 }
     ])
     expect(groups.saints).toEqual([
-      { slug: 'santo-agostinho', count: 7, userDays: 6 },
-      { slug: 'santa-monica', count: 5, userDays: 5 }
+      { slug: 'santo-agostinho', count: 7, userDays: 6, title: null, date: null, series: null },
+      { slug: 'santa-monica', count: 5, userDays: 5, title: null, date: null, series: null }
     ])
-    expect(groups.documents).toEqual([{ slug: 'catecismo', count: 1, userDays: 1 }])
+    expect(groups.documents).toEqual([{ slug: 'catecismo', count: 1, userDays: 1, title: null, date: null, series: null }])
     expect(groups.posts).toEqual([])
   })
 
