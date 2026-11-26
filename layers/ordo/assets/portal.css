@@ -818,6 +818,12 @@ select.op-field { padding-right: 40px; appearance: none; background-image: url("
   .op-page-head__tools { align-items: stretch; width: 100%; }
   .op-period { align-items: stretch; }
   .op-seg { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  /* The period: five equal slots across the width, nothing to scroll. A label
+     too long for its slot breaks in two lines instead of pushing the row. */
+  .op-period .op-seg { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); overflow: visible; }
+  .op-period .op-seg button { min-width: 0; padding: 4px 2px; font-size: 12.5px; line-height: 1.15; white-space: normal; }
+  .op-period__range { justify-content: center; min-width: 0; }
+  .op-period__range > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .op-card { padding: 18px; }
   .op-metric__value { font-size: 32px; }
   .op-bench__queue, .op-bench__review { max-height: none; }
