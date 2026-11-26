@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { flushPromises, mount } from '@vue/test-utils'
-import { defineComponent, h } from 'vue'
+import { defineComponent, h, ref } from 'vue'
 import { createPortalHead, providePortalHead, type PortalHeadStore } from '../../composables/usePortalHead'
 import { createPortalQuery, providePortalQuery, type PortalQuery } from '../../composables/usePortalQuery'
 import { OrdoApiError } from '../../types/dashboard'
@@ -528,5 +528,47 @@ describe('AudioPanel · Leituras ao vivo', () => {
     expect(audio.fetchRuns.mock.calls.length).toBe(runs + 1)
     await vi.advanceTimersByTimeAsync(4_000)
     expect(audio.fetchRuns.mock.calls.length).toBe(runs + 2)
+  })
+})
+
+describe('AudioPanel · Atualização ao vivo', () => {
+  it('rereads the runs in place, without dimming the list or flashing the error', async () => {
+    const reloadKey = ref(0)
+    query = createPortalQuery()
+    query.set({ aba: 'audio', secao: 'execucoes' })
+    head = createPortalHead()
+    const Page = defineComponent({
+      setup () {
+        providePortalQuery(query)
+        providePortalHead(head)
+        return () => h('main', [h(AudioPanel, { reloadKey: reloadKey.value })])
+      }
+    })
+    const wrapper = mount(Page, { attachTo: document.body })
+    await flushPromises()
+    await flushPromises()
+
+    const list = () => wrapper.find('.op-runs')
+    expect(list().exists()).toBe(true)
+    const calls = audio.fetchRuns.mock.calls.length
+
+    // The store's own reread answers; the list's reread (the next call) hangs,
+    // as a poll does while the API answers.
+    const page = { operations: [failedRun], pagination: { limit: 20, count: 1, has_more: false, next_before: null }, counts: { all: 1, failed: 1, running: 0, waiting: 0 } }
+    let answer: (value: unknown) => void = () => {}
+    audio.fetchRuns
+      .mockImplementationOnce(() => Promise.resolve(page))
+      .mockImplementationOnce(() => new Promise(resolve => { answer = resolve }))
+    reloadKey.value += 1
+    await flushPromises()
+
+    expect(audio.fetchRuns.mock.calls.length).toBeGreaterThanOrEqual(calls + 2)
+    expect((list().element as HTMLElement).style.opacity).not.toBe('0.6')
+    expect(wrapper.text()).toContain('bas_1985_en')
+
+    answer(page)
+    await flushPromises()
+    expect((list().element as HTMLElement).style.opacity).not.toBe('0.6')
+    wrapper.unmount()
   })
 })

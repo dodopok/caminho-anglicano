@@ -42,11 +42,13 @@ export const createReport = <T>(read: () => Promise<T>, { lazy = true } = {}) =>
   const load = async (reader: () => Promise<T> = read) => {
     const current = ++generation
     state.loading = true
-    state.error = null
+    // The error stays until the new answer arrives, so a reread (the live poll)
+    // does not flash it away and back.
     try {
       const data = await reader()
       if (current !== generation) return
       state.data = data
+      state.error = null
       state.soon = false
     } catch (error) {
       if (current !== generation) return

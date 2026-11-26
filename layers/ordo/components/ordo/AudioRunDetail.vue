@@ -38,10 +38,14 @@ let request = 0
 const load = async () => {
   const id = ++request
   loading.value = !run.value
-  error.value = null
+  // A reread keeps what is on screen, error included, until its answer arrives.
+  if (!run.value) error.value = null
   try {
     const response = await api.fetchRun(props.id)
-    if (id === request) run.value = response.operation
+    if (id === request) {
+      run.value = response.operation
+      error.value = null
+    }
   } catch (caught) {
     if (id === request && !isSessionError(caught)) error.value = errorText(caught) || 'Não foi possível ler esta execução.'
   } finally {
