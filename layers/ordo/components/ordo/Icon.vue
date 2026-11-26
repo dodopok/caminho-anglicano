@@ -44,6 +44,7 @@ const PATHS = {
   terce: 'M12 3.5a8.5 8.5 0 1 1 0 17a8.5 8.5 0 1 1 0-17zM12 7v5M12 12H7.5',
   none: 'M12 3.5a8.5 8.5 0 1 1 0 17a8.5 8.5 0 1 1 0-17zM12 7v5M12 12h4.5',
   filter: 'M4 5.5h16M7 12h10M10 18.5h4',
+  activity: 'M3 12h4l3-7.5 4 15 3-7.5h4',
   external: 'M7 17 17 7M9 7h8v8'
 } as const
 

@@ -9,6 +9,7 @@ import OrdoPeriodPicker from '../../components/ordo/PeriodPicker.vue'
 import OrdoPlatformPanel from '../../components/ordo/PlatformPanel.vue'
 import OrdoPracticePanel from '../../components/ordo/PracticePanel.vue'
 import OrdoRail, { type RailTab } from '../../components/ordo/Rail.vue'
+import OrdoUsagePanel from '../../components/ordo/UsagePanel.vue'
 import { provideDashboardContext } from '../../composables/useDashboardContext'
 import { createPortalQuery, providePortalQuery } from '../../composables/usePortalQuery'
 import { previousLabel as previousLabelFor, previousPeriod } from '../../utils/compare'
@@ -62,6 +63,7 @@ const TABS: TabDefinition[] = [
   { id: 'growth', label: 'Pessoas & hábito', shortLabel: 'Pessoas', icon: 'people', group: 'reading', title: 'Pessoas que permanecem', description: 'Onde uma pessoa começa e o que a faz voltar no dia seguinte.', usesPeriod: true },
   { id: 'practice', label: 'Prática & conteúdo', shortLabel: 'Prática', icon: 'book', group: 'reading', title: 'O que está sendo rezado', description: 'Ofícios, livros, horários, diários e o que a comunidade compartilha.', usesPeriod: true },
   { id: 'platform', label: 'Negócio & API', shortLabel: 'Negócio', icon: 'layers', group: 'reading', title: 'Ordo+ e integrações', description: 'Assinaturas, chaves de API e quem constrói em cima do Ordo.', usesPeriod: true },
+  { id: 'usage', label: 'Uso', shortLabel: 'Uso', icon: 'activity', group: 'reading', title: 'O que as pessoas usam', description: 'Recursos, eventos, pessoas ativas e funis do app e da web, pela telemetria própria do Ordo.', usesPeriod: true },
   { id: 'operations', label: 'Operação', shortLabel: 'Operação', icon: 'inbox', group: 'care', title: 'Fila de cuidado', description: 'Rosários enviados pela comunidade e os sinais da plataforma que pedem alguém.', usesPeriod: false },
   { id: 'audio', label: 'Áudio', shortLabel: 'Áudio', icon: 'audio', group: 'care', title: 'Narração do ofício', description: 'Gerar, ouvir e manter o catálogo de clips narrados.', usesPeriod: false }
 ]
@@ -73,6 +75,8 @@ const SECTIONS: Record<DashboardTab, DashboardSectionName[][]> = {
   growth: [['users', 'engagement', 'onboarding'], ['retention', 'geography', 'prayer_books']],
   practice: [['completions', 'prayer_books'], ['journals', 'shared_offices', 'weekly_prayers', 'favorites']],
   platform: [['premium', 'api'], ['developers']],
+  // Uso reads its own reports (/api/v1/admin/usage/*), not /dashboard.
+  usage: [[]],
   operations: [['moderation', 'notifications', 'health', 'life_rules', 'custom_rosaries']],
   audio: [[]]
 }
@@ -84,6 +88,7 @@ const COMPARED: Record<DashboardTab, DashboardSectionName[]> = {
   growth: ['users', 'onboarding'],
   practice: ['completions', 'journals', 'shared_offices', 'weekly_prayers'],
   platform: ['premium', 'api'],
+  usage: [],
   operations: [],
   audio: []
 }
@@ -117,6 +122,8 @@ const loadingTabs = ref<DashboardTab[]>([])
 const dashboardError = ref<string | null>(null)
 const lastUpdatedAt = ref<Date | null>(null)
 const audioSummary = ref<DashboardAudio | null>(null)
+// Bumped by the refresh button; the Uso panel reloads its reports on change.
+const usageReload = ref(0)
 let generation = 0
 
 // How many requests are reading each section right now. A section that is
@@ -220,6 +227,10 @@ const refresh = async () => {
     await loadAudioSummary()
     return
   }
+  if (activeTab.value === 'usage') {
+    usageReload.value += 1
+    return
+  }
   const sections = SECTIONS[activeTab.value].flat()
   loadedSections.value = loadedSections.value.filter(section => !sections.includes(section))
   if (activeTab.value === 'overview') loadAudioSummary()
@@ -277,6 +288,8 @@ const todayLabel = computed(() => new Date().toLocaleDateString('pt-BR', { weekd
 const updatedLabel = computed(() => {
   // Áudio reads its own data and keeps it fresh while there is work queued.
   if (activeTab.value === 'audio') return 'Ao vivo enquanto houver trabalho na fila'
+  // Uso reads the nightly rollups: a day closes in the early hours of the next.
+  if (activeTab.value === 'usage') return 'Resumos diários, fechados toda madrugada'
   return lastUpdatedAt.value
     ? `Dados de ${lastUpdatedAt.value.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })} · atualizam a cada 10 min`
     : 'Lendo os dados…'
@@ -342,6 +355,7 @@ watch([authReady, user], ([isReady, currentUser]) => {
           <OrdoGrowthPanel v-else-if="activeTab === 'growth'" :dashboard="dashboard" :period="period" :monthly="monthly" />
           <OrdoPracticePanel v-else-if="activeTab === 'practice'" :dashboard="dashboard" :period="period" :monthly="monthly" />
           <OrdoPlatformPanel v-else-if="activeTab === 'platform'" :dashboard="dashboard" :period="period" />
+          <OrdoUsagePanel v-else-if="activeTab === 'usage'" :period="period" :monthly="monthly" :reload-key="usageReload" />
         </template>
       </main>
     </div>

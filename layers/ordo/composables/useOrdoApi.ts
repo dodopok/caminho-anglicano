@@ -29,6 +29,16 @@ import {
   type LifeRulesResponse,
   type OrdoApiErrorPayload
 } from '../types/dashboard'
+import type {
+  UsageActiveUsersResponse,
+  UsageBreakdownResponse,
+  UsageContentResponse,
+  UsageDimension,
+  UsageFunnelsResponse,
+  UsageQuery,
+  UsageSeriesResponse,
+  UsageTopResponse
+} from '../types/usage'
 
 interface RequestOptions extends Omit<RequestInit, 'body'> {
   body?: unknown
@@ -270,8 +280,42 @@ export const useOrdoApi = () => {
       body: reason?.trim() ? { reason: reason.trim() } : undefined
     })
 
+  // Usage dashboard (first-party telemetry). Every report takes the same
+  // inclusive period; the API caps it at 366 days.
+  const usagePath = (report: string, period: UsageQuery, extra: Record<string, string | number | undefined> = {}) => {
+    const params = new URLSearchParams({ start_date: period.start_date, end_date: period.end_date })
+    Object.entries(extra).forEach(([key, value]) => {
+      if (value !== undefined && value !== '') params.set(key, String(value))
+    })
+    return `/api/v1/admin/usage/${report}?${params.toString()}`
+  }
+
+  const fetchUsageTop = async (period: UsageQuery, limit = 20): Promise<UsageTopResponse> =>
+    request<UsageTopResponse>(usagePath('top', period, { limit: Math.min(Math.max(limit, 1), 100) }))
+
+  const fetchUsageSeries = async (period: UsageQuery, filter: { feature?: string; event?: string } = {}): Promise<UsageSeriesResponse> =>
+    request<UsageSeriesResponse>(usagePath('series', period, filter))
+
+  const fetchUsageBreakdown = async (period: UsageQuery, dimension: UsageDimension): Promise<UsageBreakdownResponse> =>
+    request<UsageBreakdownResponse>(usagePath('breakdown', period, { dimension }))
+
+  const fetchUsageActiveUsers = async (period: UsageQuery): Promise<UsageActiveUsersResponse> =>
+    request<UsageActiveUsersResponse>(usagePath('active_users', period))
+
+  const fetchUsageFunnels = async (period: UsageQuery): Promise<UsageFunnelsResponse> =>
+    request<UsageFunnelsResponse>(usagePath('funnels', period))
+
+  const fetchUsageContent = async (period: UsageQuery, limit = 100): Promise<UsageContentResponse> =>
+    request<UsageContentResponse>(usagePath('content', period, { limit: Math.min(Math.max(limit, 1), 100) }))
+
   return {
     fetchDashboard,
+    fetchUsageTop,
+    fetchUsageSeries,
+    fetchUsageBreakdown,
+    fetchUsageActiveUsers,
+    fetchUsageFunnels,
+    fetchUsageContent,
     fetchAudioSummary,
     fetchAudioClips,
     fetchAudioClipUrl,
