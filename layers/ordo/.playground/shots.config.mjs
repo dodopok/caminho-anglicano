@@ -17,6 +17,8 @@ export default [
   { name: 'operacao-regras', path: '/portal-do-ordo?aba=operacao&vista=regras', widths: [1440] },
 
   { name: 'audio-visao-geral', path: '/portal-do-ordo?aba=audio' },
+  { name: 'audio-cobertura', path: '/portal-do-ordo?aba=audio&secao=cobertura' },
+  { name: 'audio-nova-geracao', path: '/portal-do-ordo?aba=audio&secao=nova-geracao' },
   { name: 'audio-cobertura-livro', path: '/portal-do-ordo?aba=audio&secao=cobertura&livro=loc_2015&biblia=naa' },
   { name: 'audio-execucoes', path: '/portal-do-ordo?aba=audio&secao=execucoes&execucao=1842' },
   { name: 'audio-nova-geracao-confirmar', path: '/portal-do-ordo?aba=audio&secao=nova-geracao&livro=loc_2015&biblia=naa', click: 'Conferir custo', widths: [1440] },

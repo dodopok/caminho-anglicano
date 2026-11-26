@@ -2,6 +2,7 @@
 import OrdoAudioBookCoverage from './AudioBookCoverage.vue'
 import OrdoAudioClips from './AudioClips.vue'
 import OrdoAudioCoverageMatrix from './AudioCoverageMatrix.vue'
+import OrdoAudioCoverageList from './AudioCoverageList.vue'
 import OrdoAudioMaintenance from './AudioMaintenance.vue'
 import OrdoAudioNewGeneration from './AudioNewGeneration.vue'
 import OrdoAudioOverview from './AudioOverview.vue'
@@ -140,7 +141,7 @@ const changeBook = (event: Event) => {
     </div>
     <label v-if="section === 'cobertura'" class="op-flex">
       <span class="op-faint" style="font-size: 13px">Livro</span>
-      <select class="op-field" style="width: 300px; min-height: 38px" :value="store.book.value" aria-label="Livro" @change="changeBook">
+      <select class="op-field" style="width: min(300px, 100%); min-height: 38px" :value="store.book.value" aria-label="Livro" @change="changeBook">
         <option value="">Todos os livros</option>
         <option v-for="book in store.books.value" :key="book.code" :value="book.code">{{ book.code }} · {{ book.name }}</option>
       </select>
@@ -152,7 +153,12 @@ const changeBook = (event: Event) => {
   <OrdoAudioOverview v-if="section === 'visao-geral'" />
   <template v-else-if="section === 'cobertura'">
     <OrdoAudioBookCoverage v-if="store.book.value" :key="store.book.value" />
-    <OrdoAudioCoverageMatrix v-else />
+    <template v-else>
+      <!-- The book × Bible × office table is wider than a phone; phones get the
+           same list the overview uses, so the page never grows sideways. -->
+      <div class="op-only-wide"><OrdoAudioCoverageMatrix /></div>
+      <div class="op-only-narrow"><OrdoAudioCoverageList :limit="999" /></div>
+    </template>
   </template>
   <OrdoAudioRuns v-else-if="section === 'execucoes'" />
   <OrdoAudioClips v-else-if="section === 'clips'" />

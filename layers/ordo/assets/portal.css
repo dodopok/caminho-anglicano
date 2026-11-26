@@ -841,3 +841,14 @@ select.op-field { padding-right: 40px; appearance: none; background-image: url("
   .op-steps__label { flex-direction: row; gap: 8px; flex-basis: auto; }
   .op-kv { --op-kv-cols: 2; }
 }
+
+/* iOS Safari zooms into any field whose text is under 16px when it gets focus.
+   On phones every field gets 16px, so the page stays put; pinch zoom is not
+   disabled. */
+@media (max-width: 900px) {
+  .ordo-shell :is(input, select, textarea),
+  .ordo-shell .op-field,
+  .ordo-shell .op-filters .op-field,
+  .ordo-shell .op-field--mono,
+  .ordo-login :is(input, select, textarea) { font-size: 16px; }
+}

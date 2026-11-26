@@ -222,6 +222,8 @@ onBeforeUnmount(() => document.removeEventListener('pointerdown', onPointerDown)
 .book-picker__pop { position: absolute; z-index: 40; top: calc(100% + 6px); left: 0; display: flex; flex-direction: column; width: max(100%, 340px); max-width: min(440px, calc(100vw - 32px)); overflow: hidden; border: 1px solid var(--op-hair); border-radius: 14px; background: var(--op-card); box-shadow: 0 24px 48px -24px rgba(13, 39, 68, .45), 0 2px 6px rgba(13, 39, 68, .06); }
 .book-picker__search { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-bottom: 1px solid var(--op-hair); color: var(--op-ink-faint); }
 .book-picker__search input { flex: 1; min-width: 0; border: 0; background: transparent; color: var(--op-ink); font-size: 14px; outline: none; }
+/* iOS zooms into a field under 16px when it is focused (and the picker focuses its search). */
+@media (max-width: 900px) { .book-picker__search input { font-size: 16px; } }
 .book-picker__list { max-height: 340px; overflow-y: auto; padding: 6px; overscroll-behavior: contain; }
 .book-picker__group { position: sticky; top: -6px; z-index: 1; margin: 0; padding: 10px 8px 6px; background: var(--op-card); color: var(--op-ink-faint); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .book-picker__option { display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 10px; cursor: pointer; }
