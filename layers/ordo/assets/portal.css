@@ -573,7 +573,7 @@ select.op-field { padding-right: 40px; appearance: none; background-image: url("
 .op-split--tall > span { display: flex; align-items: center; overflow: hidden; padding: 0 14px; color: #fff; font-size: 13px; font-weight: 700; white-space: nowrap; }
 
 .op-cal { width: 100%; border-collapse: separate; border-spacing: 3px; table-layout: fixed; }
-.op-cal th { color: var(--op-ink-faint); font-size: 11px; font-weight: 600; text-align: center; white-space: nowrap; }
+.op-cal th { position: relative; color: var(--op-ink-faint); font-size: 11px; font-weight: 600; text-align: center; white-space: nowrap; }
 .op-cal th.op-cal__row { width: 112px; color: var(--op-ink); font-size: 13px; text-align: left; }
 .op-cal th.op-cal__row span { display: inline-flex; align-items: center; gap: 6px; }
 .op-cal th.is-sun { color: var(--op-rubric); }
@@ -831,6 +831,9 @@ select.op-field { padding-right: 40px; appearance: none; background-image: url("
   .op-bench__list { max-height: 340px; }
   .op-band { padding: 16px; }
   .op-steps__label { flex-basis: 84px; }
+  /* The coverage calendar keeps squares wide enough to read the dates and
+     scrolls inside its card instead of squeezing 28 days into the phone. */
+  .op-cal { min-width: calc(112px + var(--op-cal-cols, 7) * 26px); }
 }
 
 @media (max-width: 520px) {

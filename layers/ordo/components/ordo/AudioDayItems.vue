@@ -95,20 +95,22 @@ onBeforeUnmount(() => player?.pause())
 
     <span v-if="report.state.loading && !report.state.data" class="op-skeleton" style="height: 220px" aria-hidden="true" />
     <OrdoSoonState v-else-if="report.state.settled && !items" title="Em breve: os trechos de cada ofício" text=" Esta API devolve só os totais por dia e ofício; a lista de trechos chega com a próxima versão." />
-    <table v-else-if="items?.length" class="op-table">
-      <thead><tr><th scope="col">Trecho</th><th scope="col">Fonte</th><th scope="col">Situação</th><th scope="col" class="is-num">Ouvir</th></tr></thead>
-      <tbody>
-        <tr v-for="item in shown" :key="item.section">
-          <th scope="row">{{ item.label }}</th>
-          <td>{{ sourceShort(item.source, bibleName) }}</td>
-          <td><span class="op-pill" :class="`op-pill--${STATUS[item.status]?.tone || 'quiet'}`">{{ STATUS[item.status]?.label || item.status }}</span></td>
-          <td class="is-num">
-            <button v-if="item.audio_url" type="button" class="op-icon-btn" style="width: 32px; height: 32px" :aria-label="`${playing === item.section ? 'Parar' : 'Ouvir'} ${item.label}`" @click="play(item)"><OrdoIcon :name="playing === item.section ? 'close' : 'play'" :size="14" /></button>
-            <span v-else class="op-faint">—</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div v-else-if="items?.length" class="op-table-wrap">
+      <table class="op-table">
+        <thead><tr><th scope="col">Trecho</th><th scope="col">Fonte</th><th scope="col">Situação</th><th scope="col" class="is-num">Ouvir</th></tr></thead>
+        <tbody>
+          <tr v-for="item in shown" :key="item.section">
+            <th scope="row">{{ item.label }}</th>
+            <td>{{ sourceShort(item.source, bibleName) }}</td>
+            <td><span class="op-pill" :class="`op-pill--${STATUS[item.status]?.tone || 'quiet'}`">{{ STATUS[item.status]?.label || item.status }}</span></td>
+            <td class="is-num">
+              <button v-if="item.audio_url" type="button" class="op-icon-btn" style="width: 32px; height: 32px" :aria-label="`${playing === item.section ? 'Parar' : 'Ouvir'} ${item.label}`" @click="play(item)"><OrdoIcon :name="playing === item.section ? 'close' : 'play'" :size="14" /></button>
+              <span v-else class="op-faint">—</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <p v-else-if="items" class="op-empty">Este ofício não tem trechos narráveis neste dia.</p>
 
     <div class="op-panel__foot">

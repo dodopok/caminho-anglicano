@@ -308,6 +308,8 @@ describe('AudioPanel · Cobertura de um livro', () => {
     const sunday = wrapper.findAll('.op-cal thead th').find(th => th.attributes('title')?.startsWith('Domingo, 29'))
     expect(sunday?.attributes('title')).toBe('Domingo, 29 de novembro · 1º Domingo do Advento (roxo)')
     expect(sunday?.find('.op-cal__lit').exists()).toBe(true)
+    // On a phone the calendar scrolls in its card with a width per day.
+    expect(wrapper.find('.op-cal').attributes('style')).toContain('--op-cal-cols: 28')
     // A day the API does not name shows by its date.
     const monday = wrapper.findAll('.op-cal thead th').find(th => th.attributes('title')?.startsWith('Segunda, 30'))
     expect(monday?.attributes('title')).toBe('Segunda, 30 de novembro')
@@ -322,6 +324,21 @@ describe('AudioPanel · Cobertura de um livro', () => {
     expect(wrapper.find('.op-cal__lit').exists()).toBe(false)
     expect(wrapper.text()).toContain('Domingo, 29 de novembro')
     expect(wrapper.find('.op-cal button[aria-label^="Domingo, 29 de novembro"]').attributes('title')).toBe('Domingo, 29 de novembro, Manhã: 68% com voz, 7 trechos faltando')
+  })
+
+  it('keeps the day\'s trechos table inside the card on a phone', async () => {
+    audio.fetchReadinessBook.mockResolvedValue(storedDetail(true))
+    audio.estimate.mockImplementation(async (body: { include_items?: boolean }) => body.include_items
+      ? { estimate: { ready_clips: 1, missing_clips: 1, rows: [{ date: '2026-11-29', office_type: 'morning', ready_clips: 1, missing_clips: 1, items: [
+          { section: 'venite', label: 'Venite', source: 'office_texts', status: 'ready', ready_clips: 1, missing_clips: 0, missing_characters: 0 },
+          { section: 'reading_1', label: 'Isaías 2.1-5', source: 'scripture', status: 'missing', ready_clips: 0, missing_clips: 1, missing_characters: 400 }
+        ] }] } }
+      : { estimate: {} })
+    const wrapper = await mountPanel({ aba: 'audio', secao: 'cobertura', livro: 'loc_2015', biblia: 'naa' })
+
+    const table = wrapper.find('.op-table-wrap > table.op-table')
+    expect(table.exists()).toBe(true)
+    expect(table.text()).toContain('Isaías 2.1-5')
   })
 
   it('switches the Bible through the URL and keeps the default out of it', async () => {

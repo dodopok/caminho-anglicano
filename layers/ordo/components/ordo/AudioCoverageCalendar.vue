@@ -35,7 +35,7 @@ const label = (date: string, office: string) => {
 
 <template>
   <div class="op-table-wrap">
-    <table class="op-cal">
+    <table class="op-cal" :style="{ '--op-cal-cols': columns.length }">
       <thead>
         <tr>
           <th class="op-cal__row" scope="col"><span class="op-sr-only">Ofício</span></th>
