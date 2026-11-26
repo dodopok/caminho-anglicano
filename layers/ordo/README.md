@@ -129,10 +129,28 @@ layers/ordo/
 
 ## Desenvolvimento
 
+Para mexer no portal não é preciso subir nem compilar o site inteiro: o playground (`layers/ordo/.playground`) é um app Nuxt mínimo que estende só esta layer, com a API e o login simulados.
+
 ```bash
-npm run dev
-npx eslint layers/ordo
-npm run typecheck
+pnpm portal:dev                 # playground + mocks em http://localhost:3100 (HMR)
+pnpm portal:shots               # capturas de shots.config.mjs a 1440 e 390 px
+pnpm portal:shots audio uso     # só as entradas cujo nome contém "audio" ou "uso"
+pnpm portal:test                # só os testes Vitest de layers/ordo
+pnpm portal:build               # compila só o playground (o portal:shots faz isso sozinho)
+```
+
+**Modo mock.** O playground troca o plugin do Firebase por uma sessão falsa (`.playground/plugins/mock-auth.client.ts`) e manda as chamadas da API para o próprio servidor, onde `server/routes/api/v1` responde com as fixtures de `.playground/mocks/` (visão geral, pessoas, prática, negócio, operação, áudio e uso), no formato dos contratos (`types/dashboard.ts`, `types/audio.ts`, `types/usage.ts`). As fixtures são de 2026-11-26 e o relógio do navegador é fixado nesse instante (`?agora=real` desliga, `?agora=2026-11-20T09:00:00-03:00` escolhe outro). Cada aba tem cenários, trocados com `GET /__mock/scenario?audio=provedor-fora` (a lista sai em `GET /__mock/scenario`). `?mock=sem-sessao` abre a tela de login. Uma rota sem fixture responde 404 com o caminho, para saber o que falta.
+
+O modo mock só existe no playground: o site estende `./layers/ordo` e nunca `.playground`, a configuração do playground se recusa a rodar na Vercel, a sessão falsa só entra em `localhost`, e `playground.test.ts` falha se algo fora do playground passar a citar os mocks.
+
+**Capturas.** `pnpm portal:shots` usa o `portal:dev` se ele estiver de pé; senão sobe o build do playground em cache (`.playground/.output`), recompilando antes se algo em `layers/ordo` mudou desde o último. As imagens vão para `.playground/.shots/<nome>-<largura>.png` (fora do git); a lista de rotas, cenários e cliques fica em `.playground/shots.config.mjs`. Opções: `--out <pasta>`, `--widths 1440,390`, `--url <servidor>`, `--routes <lista.mjs>`, `--build`. O Chromium é o do Playwright do repositório (`pnpm exec playwright install chromium` se faltar).
+
+Para o site inteiro, como antes:
+
+```bash
+pnpm dev
+pnpm exec eslint layers/ordo
+pnpm typecheck
 ```
 
 O typecheck global atual ainda aponta incompatibilidades preexistentes entre os tipos DOM do Chart.js/Google Maps em outras layers (`layers/dashboard` e `layers/localizador`); os arquivos do Ordo passam no lint e não adicionam erros nessa lista.
