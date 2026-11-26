@@ -129,7 +129,10 @@ const existing = computed(() => [core.active, core.top])
 const settled = computed(() => existing.value.every(report => report.settled && !report.loading))
 const notDeployed = computed(() => settled.value && existing.value.every(report => report.soon))
 const allFailed = computed(() => settled.value && existing.value.every(report => report.error && !report.soon && !isSessionError(report.error)))
-const firstRollupPending = computed(() => beforeFirstRollup(core.status.data, core.active.data, core.top.data))
+// The same rule for every period (7, 30, 90 days, 12 months or "Sempre"):
+// decided once the people and the top have answered, and the data wins over
+// the status (see `beforeFirstRollup`).
+const firstRollupPending = computed(() => settled.value && beforeFirstRollup(core.status.data, core.active.data, core.top.data, [core.offices.data]))
 
 // --- Head -------------------------------------------------------------------------
 

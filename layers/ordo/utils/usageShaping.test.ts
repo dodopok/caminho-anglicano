@@ -108,6 +108,25 @@ describe('honest partial data', () => {
     expect(beforeFirstRollup(null, null, null)).toBe(false)
   })
 
+  it('lets the data win over a status that says the rollup never ran', () => {
+    const period = { start_date: '2026-11-19', end_date: '2026-11-25' }
+    const empty = { period, features: [], events: [], counters: [] }
+    const nullStatus = { rollup: { last_closed_day: null } }
+    const people = { period, series: [point('2026-11-24', 0), point('2026-11-25', 120)] }
+    const noPeople = { period, series: [point('2026-11-25', 0)] }
+    const used = { ...empty, features: [{ feature: 'office', count: 900, errors: 0, user_days: 300 }] }
+    const unused = { ...empty, features: [{ feature: 'office', count: 0, errors: 0, user_days: 0 }] }
+    const offices = { period, filter: {}, series: [{ date: '2026-11-25', count: 40, users: 30 }] }
+    // Status null + data present: the numbers show.
+    expect(beforeFirstRollup(nullStatus, people, empty)).toBe(false)
+    expect(beforeFirstRollup(nullStatus, noPeople, used)).toBe(false)
+    expect(beforeFirstRollup(nullStatus, noPeople, unused, [offices])).toBe(false)
+    // Status null + nothing anywhere: the partial state.
+    expect(beforeFirstRollup(nullStatus, noPeople, unused, [{ ...offices, series: [] }, null])).toBe(true)
+    // Status with a closed day: normal, even with empty reports.
+    expect(beforeFirstRollup({ rollup: { last_closed_day: '2026-11-25' } }, noPeople, unused)).toBe(false)
+    expect(beforeFirstRollup({ rollup: { last_closed_day: '2026-11-25' } }, people, used)).toBe(false)
+  })
 
   it('says until when the numbers go', () => {
     const window = { start_date: '2026-10-27', end_date: '2026-11-25' }

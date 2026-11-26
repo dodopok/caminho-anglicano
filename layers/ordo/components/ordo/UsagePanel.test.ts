@@ -118,13 +118,13 @@ const install = () => {
   routes.set('/api/v1/calendar/2026/12', () => [])
 }
 
-const mountPanel = async (url: Record<string, string> = { aba: 'uso' }) => {
+const mountPanel = async (url: Record<string, string> = { aba: 'uso' }, chosen: { preset: '7d' | '30d' | '90d' | '12m' | 'all' | 'custom'; start: string; end: string } = period) => {
   const writes: Array<Record<string, string>> = []
   let current = { ...url }
   const Page = defineComponent({
     setup () {
       providePortalQuery(createPortalQuery({ read: () => current, write: query => { current = query; writes.push(query) } }))
-      return () => h(UsagePanel, { period, monthly: false, reloadKey: 0, now: NOW })
+      return () => h(UsagePanel, { period: chosen, monthly: false, reloadKey: 0, now: NOW })
     }
   })
   const wrapper = mount(Page, { attachTo: document.body })
@@ -223,6 +223,7 @@ describe('UsagePanel · honest states', () => {
     }))
     routes.set('/api/v1/admin/usage/active_users', () => ({ period: {}, series: [] }))
     routes.set('/api/v1/admin/usage/top', () => ({ ...top(1), features: [], events: [] }))
+    routes.set('/api/v1/admin/usage/series', () => ({ period: {}, filter: {}, series: [] }))
     const { wrapper } = await mountPanel()
     const text = wrapper.text()
 
@@ -234,10 +235,37 @@ describe('UsagePanel · honest states', () => {
     expect(text).toContain('primeiro número em 27 nov.')
   })
 
+  // Production after a deploy: the status lost its bookkeeping and reports
+  // `last_closed_day: null`, but the reports have the numbers. Data wins, and
+  // every period reads it the same way.
+  it.each([
+    ['7 dias', { preset: '7d' as const, start: '2026-11-20', end: '2026-11-26' }],
+    ['Sempre', { preset: 'all' as const, start: '2025-01-01', end: '2026-11-26' }]
+  ])('shows the numbers when the status says null but the reports have data (%s)', async (_, chosen) => {
+    routes.set('/api/v1/admin/usage/status', () => ({ rollup: { first_day: null, last_closed_day: null, next_run_at: '2026-11-27T00:30:00-03:00' }, sources: [], days: [] }))
+    const { wrapper } = await mountPanel({ aba: 'uso' }, chosen)
+    const text = wrapper.text()
+
+    expect(text).not.toContain('O Uso começa a contar nesta madrugada.')
+    expect(wrapper.find('.op-usage__kpis').exists()).toBe(true)
+    expect(text).toContain('usaram o Ordo')
+  })
+
+  it('keeps the first-rollup state when the status says null and the reports are empty', async () => {
+    routes.set('/api/v1/admin/usage/status', () => ({ rollup: { first_day: null, last_closed_day: null }, sources: [], days: [] }))
+    routes.set('/api/v1/admin/usage/active_users', () => ({ period: {}, series: activeSeries(WINDOW.start, 0) }))
+    routes.set('/api/v1/admin/usage/top', () => ({ ...top(1), features: [], events: [] }))
+    routes.set('/api/v1/admin/usage/series', () => ({ period: {}, filter: {}, series: [] }))
+    const { wrapper } = await mountPanel()
+
+    expect(wrapper.text()).toContain('O Uso começa a contar nesta madrugada.')
+  })
+
   it('infers the same state from empty reports when the status endpoint is not deployed', async () => {
     routes.set('/api/v1/admin/usage/status', () => new OrdoApiError('Not found', 404))
     routes.set('/api/v1/admin/usage/active_users', () => ({ period: {}, series: [] }))
     routes.set('/api/v1/admin/usage/top', () => ({ ...top(1), features: [], events: [] }))
+    routes.set('/api/v1/admin/usage/series', () => ({ period: {}, filter: {}, series: [] }))
     const { wrapper } = await mountPanel()
 
     expect(wrapper.text()).toContain('O Uso começa a contar nesta madrugada.')
